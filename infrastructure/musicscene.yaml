@@ -1,8 +1,8 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: |
-  Static‑site stack for musicscene.com.au:
+  Complete static‑site stack for musicscene.com.au:
   • Route 53 Hosted Zone
-  • S3 bucket (website hosting)
+  • S3 bucket (website hosting, public)
   • CloudFront distribution (PriceClass_200)
   • DNS A‑alias record
 
@@ -25,13 +25,19 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref DomainName
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
 
-  # 3) Public‑read bucket policy (or restrict to CloudFront OAI later)
+  # 3) Public‑read bucket policy (runs after bucket exists)
   WebsiteBucketPolicy:
     Type: AWS::S3::BucketPolicy
+    DependsOn: WebsiteBucket
     Properties:
       Bucket: !Ref WebsiteBucket
       PolicyDocument:
@@ -41,7 +47,12 @@ Resources:
             Effect: Allow
             Principal: '*'
             Action: 's3:GetObject'
-            Resource: !Sub 'arn:aws:s3:::${DomainName}/*'
+            Resource:
+              Fn::Join:
+                - ''
+                - - 'arn:aws:s3:::'
+                  - Ref: DomainName
+                  - '/*'
 
   # 4) CloudFront Origin Access Identity
   CloudFrontOAI:
@@ -50,9 +61,13 @@ Resources:
       CloudFrontOriginAccessIdentityConfig:
         Comment: !Sub 'OAI for ${DomainName}'
 
-  # 5) CloudFront Distribution
+  # 5) CloudFront Distribution (waits for bucket & OAI)
   WebsiteDistribution:
     Type: AWS::CloudFront::Distribution
+    DependsOn:
+      - WebsiteBucket
+      - CloudFrontOAI
+      - WebsiteBucketPolicy
     Properties:
       DistributionConfig:
         Enabled: true
@@ -85,7 +100,7 @@ Resources:
       Type: A
       AliasTarget:
         DNSName: !GetAtt WebsiteDistribution.DomainName
-        HostedZoneId: Z2FDTNDATAQYW2  # CloudFront global zone ID
+        HostedZoneId: Z2FDTNDATAQYW2  # CloudFront global hosted zone ID
 
 Outputs:
   HostedZoneId:
