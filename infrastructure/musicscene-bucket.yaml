@@ -3,6 +3,7 @@ Description: >
   Creates an S3 bucket configured for static website hosting and a CloudFront
   distribution to serve the content. NOTE: The bucket name 'musicscene.com.au'
   must be globally unique. If it's already taken, stack creation will fail.
+  (v2: Added DependsOn attributes to fix potential timing issues).
 
 Parameters:
   BucketName:
@@ -41,6 +42,8 @@ Resources:
   # 3. S3 Bucket Policy granting CloudFront OAI read access
   S3BucketPolicy:
     Type: AWS::S3::BucketPolicy
+    # Ensure the bucket exists before applying the policy
+    DependsOn: S3Bucket
     Properties:
       Bucket: !Ref S3Bucket
       PolicyDocument:
@@ -55,6 +58,10 @@ Resources:
   # 4. CloudFront Distribution
   CloudFrontDistribution:
     Type: AWS::CloudFront::Distribution
+    # Ensure the bucket and its policy (allowing OAI access) exist before creating the distribution
+    DependsOn:
+      - S3Bucket
+      - S3BucketPolicy
     Properties:
       DistributionConfig:
         Comment: !Sub 'CloudFront distribution for ${BucketName}'

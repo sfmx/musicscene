@@ -26,7 +26,8 @@ jobs:
             --stack-name musicscene-bucket \
             --template-file infrastructure/musicscene-bucket.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
-            --capabilities CAPABILITY_NAMED_IAM
+            --capabilities CAPABILITY_NAMED_IAM \
+            --region ap-southeast-2
 
       - name: Build site
         run: |
