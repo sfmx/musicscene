@@ -1,6 +1,7 @@
 name: Deploy MusicScene Site
 
 on:
+  workflow_dispatch:
   push:
     branches: [master]
 
