@@ -26,13 +26,33 @@ Resources:
     Properties:
       BucketName: !Ref DomainName
       PublicAccessBlockConfiguration:
-        BlockPublicAcls: false
-        BlockPublicPolicy: false
-        IgnorePublicAcls: false
-        RestrictPublicBuckets: false
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
+
+  # Create ACM Certificate
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      ValidationMethod: DNS
+      DomainValidationOptions:
+        - DomainName: !Ref DomainName
+          HostedZoneId: !Ref HostedZone
+
+  # Replace OAI with OAC
+  CloudFrontOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${AWS::StackName}-OAC'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
 
   # 3) Public‑read bucket policy (runs after bucket exists)
   WebsiteBucketPolicy:
@@ -43,23 +63,15 @@ Resources:
       PolicyDocument:
         Version: '2012-10-17'
         Statement:
-          - Sid: PublicReadGetObject
+          - Sid: AllowCloudFrontServicePrincipal
             Effect: Allow
-            Principal: '*'
+            Principal:
+              Service: cloudfront.amazonaws.com
             Action: 's3:GetObject'
-            Resource:
-              Fn::Join:
-                - ''
-                - - 'arn:aws:s3:::'
-                  - Ref: DomainName
-                  - '/*'
-
-  # 4) CloudFront Origin Access Identity
-  CloudFrontOAI:
-    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
-    Properties:
-      CloudFrontOriginAccessIdentityConfig:
-        Comment: !Sub 'OAI for ${DomainName}'
+            Resource: !Sub 'arn:aws:s3:::${WebsiteBucket}/*'
+            Condition:
+              StringLike:
+                'aws:SourceAccount': !Ref AWS::AccountId
 
   # 5) CloudFront Distribution (waits for bucket & policy & OAI)
   WebsiteDistribution:
@@ -67,16 +79,15 @@ Resources:
     DependsOn:
       - WebsiteBucket
       - WebsiteBucketPolicy
-      - CloudFrontOAI
     Properties:
       DistributionConfig:
         Enabled: true
         DefaultRootObject: index.html
         Origins:
           - Id: S3Origin
-            DomainName: !GetAtt WebsiteBucket.DomainName    # <- uses the actual bucket REST endpoint
-            S3OriginConfig:
-              OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOAI}'
+            DomainName: !GetAtt WebsiteBucket.RegionalDomainName
+            OriginAccessControlId: !GetAtt CloudFrontOAC.Id
+            S3OriginConfig: {}
         DefaultCacheBehavior:
           TargetOriginId: S3Origin
           ViewerProtocolPolicy: redirect-to-https
@@ -86,9 +97,43 @@ Resources:
             QueryString: false
             Cookies:
               Forward: none
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 404
+            ResponsePagePath: /404.html
+          - ErrorCode: 403
+            ResponseCode: 404
+            ResponsePagePath: /404.html
         ViewerCertificate:
-          CloudFrontDefaultCertificate: true
-        PriceClass: PriceClass_200
+          AcmCertificateArn: !Ref Certificate
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+        Aliases:
+          - !Ref DomainName
+        ResponseHeadersPolicy:
+          ResponseHeadersPolicyId: !Ref SecurityHeadersPolicy
+
+  SecurityHeadersPolicy:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: !Sub '${AWS::StackName}-security-headers'
+        SecurityHeadersConfig:
+          ContentSecurityPolicy:
+            Override: true
+            ContentSecurityPolicy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+          StrictTransportSecurity:
+            Override: true
+            AccessControlMaxAgeSec: 63072000
+            IncludeSubdomains: true
+            Preload: true
+          XSSProtection:
+            Override: true
+            Protection: true
+            ModeBlock: true
+          ReferrerPolicy:
+            Override: true
+            ReferrerPolicy: strict-origin-when-cross-origin
 
   # 6) DNS A‑alias record in the new hosted zone
   DNSRecord:
