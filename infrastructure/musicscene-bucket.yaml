@@ -1,30 +1,113 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Create S3 bucket for musicscene.com.au (Sydney)
+Description: 'CloudFormation template for S3 static website with CloudFront distribution'
 
 Parameters:
-  DomainName:
+  BucketName:
+    Description: 'Name of the S3 bucket (must be globally unique)'
     Type: String
-    Default: musicscene.com.au
+    Default: 'musiscene.com.au'
+  WebsiteIndexDocument:
+    Description: 'Index document for the website'
+    Type: String
+    Default: 'index.html'
+  WebsiteErrorDocument:
+    Description: 'Error document for the website'
+    Type: String
+    Default: 'error.html'
+  CertificateArn:
+    Description: 'ARN of the ACM certificate for HTTPS (optional)'
+    Type: String
+    Default: ''
+  DomainNames:
+    Description: 'List of domain names for the CloudFront distribution (optional)'
+    Type: CommaDelimitedList
+    Default: ''
 
 Resources:
-  MusicSceneBucket:
+  S3Bucket:
     Type: AWS::S3::Bucket
-    DeletionPolicy: Retain
     Properties:
-      BucketName: !Ref DomainName
+      BucketName: !Ref BucketName
+      AccessControl: Private
       WebsiteConfiguration:
-        IndexDocument: index.html
-        ErrorDocument: error.html
+        IndexDocument: !Ref WebsiteIndexDocument
+        ErrorDocument: !Ref WebsiteErrorDocument
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  S3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: 's3:GetObject'
+            Resource: !Sub 'arn:aws:s3:::${S3Bucket}/*'
+            Condition:
+              StringEquals:
+                'aws:SourceArn': !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}'
+
+  CloudFrontOriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: !Sub 'OAI for ${S3Bucket}'
+
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: !Sub 'CloudFront distribution for ${S3Bucket}'
+        DefaultRootObject: !Ref WebsiteIndexDocument
+        Aliases: !Ref DomainNames
+        Origins:
+          - DomainName: !GetAtt S3Bucket.DomainName
+            Id: S3Origin
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
+        DefaultCacheBehavior:
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods:
+            - GET
+            - HEAD
+          CachedMethods:
+            - GET
+            - HEAD
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: !If 
+            - HasCustomDomain
+            - false
+            - true
+          AcmCertificateArn: !If 
+            - HasCustomDomain
+            - !Ref CertificateArn
+            - !Ref 'AWS::NoValue'
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+
+Conditions:
+  HasCustomDomain: !Not [!Equals [!Join ['', !Ref DomainNames], '']]
 
 Outputs:
-  BucketName:
-    Description: The name of the S3 bucket created
-    Value: !Ref MusicSceneBucket
-
-  BucketRegion:
-    Description: The region where the bucket lives
-    Value: !Ref AWS::Region
-
-  BucketEndpoint:
-    Description: The REST endpoint for the bucket
-    Value: !GetAtt MusicSceneBucket.DomainName
+  WebsiteURL:
+    Description: 'URL of the website'
+    Value: !GetAtt S3Bucket.WebsiteURL
+  CloudFrontDomain:
+    Description: 'CloudFront domain name'
+    Value: !GetAtt CloudFrontDistribution.DomainName
+  S3BucketName:
+    Description: 'Name of the S3 bucket'
+    Value: !Ref S3Bucket
