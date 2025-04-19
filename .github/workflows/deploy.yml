@@ -20,70 +20,20 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-2
 
-      - name: Deploy Main CloudFormation Stack
+      - name: Deploy S3 Bucket
         run: |
-          if ! aws cloudformation deploy \
-            --stack-name musicscene \
-            --template-file infrastructure/musicscene.yaml \
+          aws cloudformation deploy \
+            --stack-name musicscene-bucket \
+            --template-file infrastructure/musicscene-bucket.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
-            --capabilities CAPABILITY_NAMED_IAM; then
-            echo "Failed to deploy main stack"
-            exit 1
-          fi
+            --capabilities CAPABILITY_NAMED_IAM
 
-      - name: Wait for main stack
-        run: |
-          aws cloudformation wait stack-create-complete --stack-name musicscene || \
-          aws cloudformation wait stack-update-complete --stack-name musicscene
-
-      - name: Deploy Static Site Stack
-        run: |
-          if ! aws cloudformation deploy \
-            --stack-name musicscene-static-site \
-            --template-file infrastructure/static-site.yaml \
-            --parameter-overrides DomainName=musicscene.com.au \
-            --capabilities CAPABILITY_NAMED_IAM; then
-            echo "Failed to deploy static site stack"
-            exit 1
-          fi
-
-      - name: Wait for static site stack
-        run: |
-          aws cloudformation wait stack-create-complete --stack-name musicscene-static-site || \
-          aws cloudformation wait stack-update-complete --stack-name musicscene-static-site
-
-      - name: Install dependencies and build site
+      - name: Build site
         run: |
           npm ci
           npm run build
           npm run export || true
 
-      - name: Upload static site to S3
+      - name: Sync to S3
         run: |
-          S3_BUCKET=$(aws cloudformation describe-stacks \
-            --stack-name musicscene-static-site \
-            --query "Stacks[0].Outputs[?OutputKey=='MusicSceneBucket'].OutputValue" \
-            --output text)
-          
-          if [ -n "$S3_BUCKET" ]; then
-            aws s3 sync ./out s3://$S3_BUCKET --delete
-          else
-            echo "S3 bucket not found in stack outputs"
-            exit 1
-          fi
-
-      - name: Invalidate CloudFront Cache
-        run: |
-          DISTRIBUTION_ID=$(aws cloudformation describe-stacks \
-            --stack-name musicscene-static-site \
-            --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" \
-            --output text)
-
-          if [ -n "$DISTRIBUTION_ID" ]; then
-            aws cloudfront create-invalidation \
-              --distribution-id "$DISTRIBUTION_ID" \
-              --paths "/*"
-          else
-            echo "CloudFront distribution ID not found in stack outputs"
-            exit 1
-          fi
+          aws s3 sync ./out s3://musicscene.com.au --delete
