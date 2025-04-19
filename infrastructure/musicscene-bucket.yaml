@@ -1,19 +1,112 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Create S3 bucket for musicscene.com.au
+Description: >
+  Creates an S3 bucket configured for static website hosting and a CloudFront
+  distribution to serve the content. NOTE: The bucket name 'musicscene.com.au'
+  must be globally unique. If it's already taken, stack creation will fail.
 
 Parameters:
-  DomainName:
+  BucketName:
+    Description: The name of the S3 bucket (must be globally unique).
     Type: String
-    Default: musicscene.com.au
+    Default: musicscene.com.au # User requested name
 
 Resources:
-  MusicSceneBucket:
+  # 1. S3 Bucket for website content
+  S3Bucket:
     Type: AWS::S3::Bucket
-    DeletionPolicy: Retain
     Properties:
-      BucketName: !Ref DomainName
+      BucketName: !Ref BucketName
+      # AccessControl: PublicRead # Keep bucket private, access via CloudFront OAI
+      WebsiteConfiguration:
+        IndexDocument: index.html # Default page
+        ErrorDocument: error.html # Optional error page
+      PublicAccessBlockConfiguration: # Block direct public access
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Name
+          Value: !Ref BucketName
+        - Key: Purpose
+          Value: Static Website Hosting
+
+  # 2. Origin Access Identity (OAI) for CloudFront to access the private S3 bucket
+  CloudFrontOAI:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: !Sub 'OAI for ${BucketName}'
+
+  # 3. S3 Bucket Policy granting CloudFront OAI read access
+  S3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Statement:
+          - Sid: Grant CloudFront OAI GetObject access
+            Effect: Allow
+            Principal:
+              CanonicalUser: !GetAtt CloudFrontOAI.S3CanonicalUserId
+            Action: s3:GetObject
+            Resource: !Sub 'arn:aws:s3:::${BucketName}/*' # Access to all objects in the bucket
+
+  # 4. CloudFront Distribution
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: !Sub 'CloudFront distribution for ${BucketName}'
+        Enabled: true
+        HttpVersion: http2 # Use HTTP/2 for better performance
+        DefaultRootObject: index.html # Serve index.html by default
+        Origins:
+          - Id: !Sub 'S3-${BucketName}'
+            DomainName: !GetAtt S3Bucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOAI}'
+        DefaultCacheBehavior:
+          TargetOriginId: !Sub 'S3-${BucketName}'
+          ViewerProtocolPolicy: redirect-to-https # Enforce HTTPS
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          CachedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          Compress: true # Enable compression for faster loading
+          ForwardedValues:
+            QueryString: false # Don't forward query strings unless needed
+            Cookies:
+              Forward: none # Don't forward cookies unless needed
+          DefaultTTL: 86400 # Cache objects for 1 day by default (in seconds)
+          MaxTTL: 31536000 # Max cache time: 1 year
+          MinTTL: 0 # Minimum cache time
+        # PriceClass: PriceClass_All # Optional: Use PriceClass_100 for US/EU only to save cost
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: true # Use the default *.cloudfront.net certificate
+          # To use your custom domain (e.g., musicscene.com.au), you'll need:
+          # 1. An ACM certificate in us-east-1 for 'musicscene.com.au'
+          # 2. Uncomment and configure the following:
+          # AcmCertificateArn: 'arn:aws:acm:us-east-1:ACCOUNT_ID:certificate/CERTIFICATE_ID'
+          # SslSupportMethod: 'sni-only'
+          # MinimumProtocolVersion: 'TLSv1.2_2021' # Recommended security level
+        # Aliases: # Add your custom domain here after setting up DNS (Route 53) and ACM
+        #   - !Ref BucketName
+      Tags:
+        - Key: Name
+          Value: !Sub 'CF Distro for ${BucketName}'
 
 Outputs:
   BucketName:
-    Description: "The name of the S3 bucket"
-    Value: !Ref MusicSceneBucket
+    Description: Name of the S3 bucket created
+    Value: !Ref S3Bucket
+  CloudFrontDomainName:
+    Description: Domain name of the CloudFront distribution
+    Value: !GetAtt CloudFrontDistribution.DomainName
+  CloudFrontDistributionId:
+    Description: ID of the CloudFront distribution
+    Value: !Ref CloudFrontDistribution
