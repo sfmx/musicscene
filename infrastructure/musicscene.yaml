@@ -20,20 +20,6 @@ Resources:
     Properties:
       Name: !Ref DomainName
 
-  # 2) S3 Bucket for website
-  WebsiteBucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      BucketName: !Ref DomainName
-      PublicAccessBlockConfiguration:
-        BlockPublicAcls: true
-        BlockPublicPolicy: true
-        IgnorePublicAcls: true
-        RestrictPublicBuckets: true
-      WebsiteConfiguration:
-        IndexDocument: index.html
-        ErrorDocument: error.html
-
   # Create ACM Certificate
   Certificate:
     Type: AWS::CertificateManager::Certificate
@@ -54,25 +40,6 @@ Resources:
         SigningBehavior: always
         SigningProtocol: sigv4
 
-  # 3) Public‑read bucket policy (runs after bucket exists)
-  WebsiteBucketPolicy:
-    Type: AWS::S3::BucketPolicy
-    DependsOn: WebsiteBucket
-    Properties:
-      Bucket: !Ref WebsiteBucket
-      PolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Sid: AllowCloudFrontServicePrincipal
-            Effect: Allow
-            Principal:
-              Service: cloudfront.amazonaws.com
-            Action: 's3:GetObject'
-            Resource: !Sub 'arn:aws:s3:::${WebsiteBucket}/*'
-            Condition:
-              StringLike:
-                'aws:SourceAccount': !Ref AWS::AccountId
-
   # 5) CloudFront Distribution (waits for bucket & policy & OAI)
   WebsiteDistribution:
     Type: AWS::CloudFront::Distribution
@@ -85,7 +52,7 @@ Resources:
         DefaultRootObject: index.html
         Origins:
           - Id: S3Origin
-            DomainName: !GetAtt WebsiteBucket.RegionalDomainName
+            DomainName: !ImportValue bucket-RegionalDomainName
             OriginAccessControlId: !GetAtt CloudFrontOAC.Id
             S3OriginConfig: {}
         DefaultCacheBehavior:
@@ -151,14 +118,6 @@ Outputs:
   HostedZoneId:
     Description: The Route 53 Hosted Zone ID
     Value: !Ref HostedZone
-
-  S3BucketName:
-    Description: The S3 bucket for static content
-    Value: !Ref WebsiteBucket
-
-  WebsiteURL:
-    Description: S3 website endpoint (http)
-    Value: !GetAtt WebsiteBucket.WebsiteURL
 
   CloudFrontURL:
     Description: CloudFront domain (https)

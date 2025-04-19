@@ -20,11 +20,19 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-2
 
-      - name: Deploy CloudFormation Stack
+      - name: Deploy Main CloudFormation Stack
         run: |
           aws cloudformation deploy \
             --stack-name musicscene \
             --template-file infrastructure/musicscene.yaml \
+            --parameter-overrides DomainName=musicscene.com.au \
+            --capabilities CAPABILITY_NAMED_IAM
+
+      - name: Deploy Static Site Stack
+        run: |
+          aws cloudformation deploy \
+            --stack-name musicscene-static-site \
+            --template-file infrastructure/static-site.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
             --capabilities CAPABILITY_NAMED_IAM
 
@@ -36,17 +44,23 @@ jobs:
 
       - name: Upload static site to S3
         run: |
-          aws s3 sync ./out s3://musicscene.com.au --delete
+          S3_BUCKET=$(aws cloudformation describe-stacks \
+            --stack-name musicscene-static-site \
+            --query "Stacks[0].Outputs[?OutputKey=='MusicSceneBucket'].OutputValue" \
+            --output text)
+          
+          if [ -n "$S3_BUCKET" ]; then
+            aws s3 sync ./out s3://$S3_BUCKET --delete
+          else
+            echo "S3 bucket not found in stack outputs"
+            exit 1
+          fi
 
       - name: Invalidate CloudFront Cache
         run: |
-          DISTRIBUTION_DOMAIN=$(aws cloudformation describe-stacks \
+          DISTRIBUTION_ID=$(aws cloudformation describe-stacks \
             --stack-name musicscene-static-site \
-            --query "Stacks[0].Outputs[?OutputKey=='CloudFrontURL'].OutputValue" \
-            --output text)
-
-          DISTRIBUTION_ID=$(aws cloudfront list-distributions \
-            --query "DistributionList.Items[?DomainName=='$DISTRIBUTION_DOMAIN'].Id" \
+            --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" \
             --output text)
 
           if [ -n "$DISTRIBUTION_ID" ]; then
@@ -54,5 +68,6 @@ jobs:
               --distribution-id "$DISTRIBUTION_ID" \
               --paths "/*"
           else
-            echo "CloudFront distribution not found"
+            echo "CloudFront distribution ID not found in stack outputs"
+            exit 1
           fi
