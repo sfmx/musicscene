@@ -1,6 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create S3 bucket for musicscene.com.au
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: musicscene.com.au
+
 Resources:
-  S3Bucket:
-    Type: 'AWS::S3::Bucket'
+  MusicSceneBucket:
+    Type: AWS::S3::Bucket
     DeletionPolicy: Retain
     Properties:
-      BucketName: musicscene.com.au
+      BucketName: !Ref DomainName
+
+Outputs:
+  BucketName:
+    Description: "The name of the S3 bucket"
+    Value: !Ref MusicSceneBucket
