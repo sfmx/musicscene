@@ -23,7 +23,7 @@ jobs:
         run: |
           aws cloudformation deploy \
             --stack-name musicscene \
-            --template-file musicscene.yaml \
+            --template-file infrastructure/musicscene.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
             --capabilities CAPABILITY_NAMED_IAM
 
