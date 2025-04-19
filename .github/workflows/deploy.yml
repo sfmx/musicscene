@@ -22,19 +22,35 @@ jobs:
 
       - name: Deploy Main CloudFormation Stack
         run: |
-          aws cloudformation deploy \
+          if ! aws cloudformation deploy \
             --stack-name musicscene \
             --template-file infrastructure/musicscene.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
-            --capabilities CAPABILITY_NAMED_IAM
+            --capabilities CAPABILITY_NAMED_IAM; then
+            echo "Failed to deploy main stack"
+            exit 1
+          fi
+
+      - name: Wait for main stack
+        run: |
+          aws cloudformation wait stack-create-complete --stack-name musicscene || \
+          aws cloudformation wait stack-update-complete --stack-name musicscene
 
       - name: Deploy Static Site Stack
         run: |
-          aws cloudformation deploy \
+          if ! aws cloudformation deploy \
             --stack-name musicscene-static-site \
             --template-file infrastructure/static-site.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
-            --capabilities CAPABILITY_NAMED_IAM
+            --capabilities CAPABILITY_NAMED_IAM; then
+            echo "Failed to deploy static site stack"
+            exit 1
+          fi
+
+      - name: Wait for static site stack
+        run: |
+          aws cloudformation wait stack-create-complete --stack-name musicscene-static-site || \
+          aws cloudformation wait stack-update-complete --stack-name musicscene-static-site
 
       - name: Install dependencies and build site
         run: |
