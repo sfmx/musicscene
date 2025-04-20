@@ -5,12 +5,16 @@ Parameters:
     Type: String
     Default: musicscene.com.au
     Description: The bucket name (and website domain)
+  BucketName:
+    Description: 'Name of the S3 bucket (must be globally unique)'
+    Type: String
+    Default: 'musiscene'    
 
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Ref DomainName
+      BucketName: !Ref BucketName
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
         BlockPublicPolicy: false
