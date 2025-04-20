@@ -16,7 +16,7 @@ Parameters:
   BucketName:
     Description: 'Name of the S3 bucket (must be globally unique)'
     Type: String
-    Default: 'musicscene'   
+    Default: 'MusicScene'   
 
 
 Resources:
@@ -78,7 +78,7 @@ Resources:
     Type: AWS::CloudFront::OriginAccessControl
     Properties:
       OriginAccessControlConfig:
-        Name: !Sub '${DomainName}-OAC'
+        Name: !Sub '${BucketName}OAC'
         OriginAccessControlOriginType: s3
         SigningBehavior: always
         SigningProtocol: sigv4
@@ -88,7 +88,7 @@ Resources:
     Type: AWS::CloudFront::ResponseHeadersPolicy
     Properties:
       ResponseHeadersPolicyConfig:
-        Name: !Sub '${DomainName}-SecurityHeaders'
+        Name: !Sub '${BucketName}-SecurityHeaders'
         SecurityHeadersConfig:
           ContentSecurityPolicy:
             Override: true
