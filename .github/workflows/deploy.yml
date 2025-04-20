@@ -23,8 +23,8 @@ jobs:
       - name: Deploy S3 Bucket
         run: |
           aws cloudformation deploy \
-            --stack-name musicscene-bucket \
-            --template-file infrastructure/musicscene-bucket.yaml \
+            --stack-name musicscene-test-bucket \
+            --template-file infrastructure/test-bucket.yaml \
             --parameter-overrides DomainName=musicscene.com.au \
             --capabilities CAPABILITY_NAMED_IAM \
             --region ap-southeast-2

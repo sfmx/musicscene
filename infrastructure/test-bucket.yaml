@@ -24,7 +24,7 @@ Resources:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
       PolicyDocument:
-        Id: MyPolicy
+        Id: MusicSceneBucketPolicy
         Version: 2012-10-17
         Statement:
           - Sid: PublicReadForGetBucketObjects
