@@ -10,6 +10,7 @@ Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
+      BucketName: !Ref DomainName
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
         BlockPublicPolicy: false
