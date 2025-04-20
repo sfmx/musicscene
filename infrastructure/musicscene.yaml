@@ -13,6 +13,11 @@ Parameters:
     Type: String
     Default: musicscene.com.au
     Description: The domain to host (must match your registrar)
+  BucketName:
+    Description: 'Name of the S3 bucket (must be globally unique)'
+    Type: String
+    Default: 'musicscene'   
+
 
 Resources:
   # 1) S3 bucket for static website
