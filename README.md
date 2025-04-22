@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+aws acm resend-validation-email --certificate-arn arn:aws:acm:ap-southeast-2:093473372869:certificate/a5fa3ee0-58b0-4ec8-96be-9cd2f80ba940 --domain musicscene.com.au --validation-domain musicscene.com.au
+
+aws acm describe-certificate --certificate-arn arn:aws:acm:ap-southeast-2:093473372869:certificate/a5fa3ee0-58b0-4ec8-96be-9cd2f80ba940 --region ap-southeast-2 --query "Certificate.DomainValidationOptions[?DomainName=='musicscene.com.au'].ResourceRecord" --output json
+
+
+aws route53 change-resource-record-sets --hosted-zone-id ZONEID_OF_YOUR_HOSTED_ZONE --change-batch '{ "Comment": "ACM DNS validation record", "Changes": [   {     Action": "UPSERT",  "ResourceRecordSet": {   "Name": "_54eed078e6308d993dcc0f06d00e9664.musicscene.com.au.",     "Type": "CNAME",      "TTL": 300, "ResourceRecords": [{ "Value": "_56afffdd7545773b078333c341a0c428.xlfgrmvvlj.acm-validations.aws." }]     }    }   ]  }'
+
+
+# Define the JSON change‑batch in a here‑string
+$changeBatch = @'
+{
+  "Comment": "ACM DNS validation record",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_54eed078e6308d993dcc0f06d00e9664.musicscene.com.au.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "_56afffdd7545773b078333c341a0c428.xlfgrmvvlj.acm-validations.aws." }
+        ]
+      }
+    }
+  ]
+}
+'@
+
+# Run the Route 53 change
+aws route53 change-resource-record-sets `
+  --hosted-zone-id ZONEID_OF_YOUR_HOSTED_ZONE `
+  --change-batch $changeBatch

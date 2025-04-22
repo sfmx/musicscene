@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: ACM cert for musicscene.com.au (us-east-1)
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: musicscene.com.au
+
+Resources:
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      ValidationMethod: DNS
+Outputs:
+  CertificateArn:
+    Description: ARN of the us‑east‑1 ACM cert
+    Value: !Ref Certificate
+    Export:
+      Name: MusicSceneCertificateArn
+      Description: ARN of the us-east-1 ACM cert
+      Value: !Ref Certificate
+      Region: us-east-1
