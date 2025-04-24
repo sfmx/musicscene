@@ -28,7 +28,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync ./out https://musicscene.s3.amazonaws.com --delete
+           aws s3 sync ./out s3://musicscene --delete
 
       - name: Invalidate CloudFront Cache
         env:
