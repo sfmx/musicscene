@@ -22,7 +22,7 @@ jobs:
 
       - name: Build & Export Next.js
         run: |
-          npm ci
+          npm install
           npm run build
           npm run export
 
