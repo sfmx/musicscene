@@ -41,7 +41,9 @@ Resources:
         SecurityHeadersConfig:
           ContentSecurityPolicy:
             Override: true
-            ContentSecurityPolicy: "default-src 'self';"
+            ContentSecurityPolicy: >
+              default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
+              style-src 'self' 'unsafe-inline'; img-src 'self' data:;
           StrictTransportSecurity:
             Override: true
             AccessControlMaxAgeSec: 63072000
