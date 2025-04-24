@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: ACM certificate for musicscene.com.au (us-east-1) with DNS validation via Route 53
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: musicscene.com.au
+
+  HostedZoneId:
+    Type: String
+    Description: Route 53 Hosted Zone ID for musicscene.com.au
+
+Resources:
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      ValidationMethod: DNS
+      DomainValidationOptions:
+        - DomainName: !Ref DomainName
+          HostedZoneId: !Ref HostedZoneId
+
+Outputs:
+  CertificateArn:
+    Description: ARN of the us-east-1 ACM certificate
+    Value: !Ref Certificate
+    Export:
+      Name: MusicSceneUsEast1CertificateArn

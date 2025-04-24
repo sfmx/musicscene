@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Route 53 Hosted Zone for musicscene.com.au
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: musicscene.com.au
+
+Resources:
+  HostedZone:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: !Ref DomainName
+
+Outputs:
+  HostedZoneId:
+    Description: The ID of the new hosted zone
+    Value: !Ref HostedZone
+    Export:
+      Name: MusicSceneHostedZoneId
+      Description: The ID of the new hosted zone
+      Value: !Ref HostedZone
+      Region: ap-southeast-2
+      

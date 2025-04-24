@@ -1,0 +1,116 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFront + DNS for musicscene.com.au
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: musicscene.com.au
+
+  HostedZoneId:
+    Type: String
+    Description: Existing Route 53 Hosted Zone ID
+
+  CertificateArn:
+    Type: String
+    Description: ACM cert ARN (must be in us-east-1)
+
+  S3OriginDomain:
+    Type: String
+    Description: Your S3 bucket REST endpoint, e.g. musicscene.com.au.s3.amazonaws.com
+
+  ResourcePrefix:
+    Description: 'Prefix for all resources'
+    Type: String
+    Default: MusicScene    
+
+Resources:
+  CloudFrontOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${ResourcePrefix}OAC'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  SecurityHeaders:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: !Sub '${ResourcePrefix}SecurityHeaders'
+        SecurityHeadersConfig:
+          ContentSecurityPolicy:
+            Override: true
+            ContentSecurityPolicy: "default-src 'self';"
+          StrictTransportSecurity:
+            Override: true
+            AccessControlMaxAgeSec: 63072000
+            IncludeSubdomains: true
+            Preload: true
+          XSSProtection:
+            Override: true
+            Protection: true
+            ModeBlock: true
+          ReferrerPolicy:
+            Override: true
+            ReferrerPolicy: strict-origin-when-cross-origin
+
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+      - CloudFrontOAC
+      - SecurityHeaders
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        DefaultRootObject: index.html
+        PriceClass: PriceClass_200
+
+        Origins:
+          - Id: S3Origin
+            DomainName: !ImportValue MusicSceneS3BucketDomainName
+            OriginAccessControlId: !GetAtt CloudFrontOAC.Id
+            S3OriginConfig: {}
+
+        DefaultCacheBehavior:
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: ['GET','HEAD']
+          CachedMethods: ['GET','HEAD']
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+          ResponseHeadersPolicyId: !Ref SecurityHeaders
+
+        ViewerCertificate:
+          AcmCertificateArn: !Ref CertificateArn
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+
+        Aliases:
+          - !Ref DomainName
+
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 404
+            ResponsePagePath: /404.html
+          - ErrorCode: 403
+            ResponseCode: 404
+            ResponsePagePath: /404.html
+
+  DNSRecord:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref DomainName
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+
+Outputs:
+  DistributionId:
+    Value: !Ref CloudFrontDistribution
+  DistributionDomain:
+    Value: !GetAtt CloudFrontDistribution.DomainName

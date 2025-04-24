@@ -8,7 +8,7 @@ Parameters:
   BucketName:
     Description: 'Name of the S3 bucket (must be globally unique)'
     Type: String
-    Default: 'musiscene'    
+    Default: 'musicscene'    
 
 Resources:
   S3Bucket:
@@ -43,12 +43,15 @@ Resources:
                 - /*
       Bucket: !Ref S3Bucket
 Outputs:
-  WebsiteURL:
+  MusicSceneWebsiteURL:
     Value: !GetAtt 
       - S3Bucket
       - WebsiteURL
     Description: URL for website hosted on S3
-  S3BucketSecureURL:
+    Export:
+      Name: MusicSceneWebsiteURL
+
+  MusicSceneS3BucketSecureURL:
     Value: !Join 
       - ''
       - - 'https://'
@@ -56,3 +59,17 @@ Outputs:
           - S3Bucket
           - DomainName
     Description: Name of S3 bucket to hold website content
+    Export:
+      Name: MusicSceneS3BucketSecureURL
+ 
+  MusicSceneS3BucketName: 
+    Value: !Ref S3Bucket
+    Description: Name of S3 bucket to hold website content
+    Export:
+      Name: MusicSceneS3BucketName
+
+  MusicSceneS3BucketDomainName:
+    Description: "S3 bucket REST endpoint (regional)"
+    Value: !GetAtt S3Bucket.RegionalDomainName
+    Export:
+      Name: MusicSceneS3BucketDomainName
