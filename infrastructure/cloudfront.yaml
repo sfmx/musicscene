@@ -41,8 +41,7 @@ Resources:
         SecurityHeadersConfig:
           ContentSecurityPolicy:
             Override: true
-            ContentSecurityPolicy: >
-              default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;
+            ContentSecurityPolicy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;
           StrictTransportSecurity:
             Override: true
             AccessControlMaxAgeSec: 63072000
@@ -55,6 +54,33 @@ Resources:
           ReferrerPolicy:
             Override: true
             ReferrerPolicy: strict-origin-when-cross-origin
+
+  RedirectWwwFunction:
+    Type: AWS::CloudFront::Function
+    Properties:
+      Name: !Sub '${ResourcePrefix}-RedirectWww'
+      AutoPublish: true
+      FunctionCode: |
+        function handler(event) {
+          var request = event.request;
+          var headers = request.headers;
+          var host = headers['host'].value;
+          // if someone came in on www.musicscene.com.au, redirect to apex
+          if (host === 'www.${DomainName}') {
+            return {
+              statusCode: 301,
+              statusDescription: 'Moved Permanently',
+              headers: {
+                "location": { "value": `https://${DomainName}${request.uri}` }
+              }
+            };
+          }
+          return request;
+        }
+      FunctionConfig:
+        Comment: "Redirect www to apex"
+        Runtime: cloudfront-js-1.0
+
 
   CloudFrontDistribution:
     Type: AWS::CloudFront::Distribution
@@ -83,6 +109,9 @@ Resources:
             Cookies:
               Forward: none
           ResponseHeadersPolicyId: !Ref SecurityHeaders
+          FunctionAssociations:
+            - EventType: viewer-request
+              FunctionARN: !GetAtt RedirectWwwFunction.FunctionARN
 
         ViewerCertificate:
           AcmCertificateArn: !Ref CertificateArn
@@ -90,7 +119,8 @@ Resources:
           MinimumProtocolVersion: TLSv1.2_2021
 
         Aliases:
-          - !Ref DomainName
+          - !Ref DomainName  
+          - !Sub 'www.${DomainName}'
 
         CustomErrorResponses:
           - ErrorCode: 404
