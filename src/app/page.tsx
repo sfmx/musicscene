@@ -1,103 +1,122 @@
-import Image from "next/image";
+
+// src/app/page.tsx (or App.tsx)
+
+import React from 'react'
+import SimpleFretboardDiagram from './components/SimpleFretboardDiagram'
+import Image from 'next/image' // or just <img> if CRA
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="font-sans">
+      {/* 1) Hero */}
+      <header className="relative h-screen bg-gray-900 text-white">
+        {/* <Image
+          src="/music-scene-hero.jpg" 
+          alt="Music Scene Lessons & Theory"
+          layout="fill"
+          objectFit="cover"
+          quality={80}
+          className="opacity-50"
+        /> */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+          <h1 className="text-5xl font-bold">MusicScene</h1>
+          <p className="mt-4 text-xl max-w-2xl">
+            Lessons & Theory for real guitarists—go beyond tabs and master the music.
+          </p>
+          <div className="mt-8 space-x-4">
+            <a
+              href="#tracks"
+              className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-md"
+            >
+              Browse Lessons
+            </a>
+            <a
+              href="#featured"
+              className="px-6 py-3 border border-white rounded-md hover:bg-white hover:text-gray-900"
+            >
+              Start with a Song
+            </a>
+          </div>
         </div>
+      </header>
+
+      <main className="space-y-20 py-16">
+
+        {/* 2) Lesson Tracks */}
+        <section id="tracks" className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8">
+            Lesson Categories
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {[
+              { title: 'Theory Lessons', href: '/lessons/theory', icon: '🎼' },
+              { title: 'Song Analysis', href: '/lessons/songs', icon: '🎸' },
+              { title: 'Gear & Effects', href: '/lessons/gear', icon: '⚙️' },
+            ].map((t) => (
+              <a
+                key={t.href}
+                href={t.href}
+                className="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition"
+              >
+                <div className="text-5xl mb-4">{t.icon}</div>
+                <h3 className="text-xl font-medium">{t.title}</h3>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* 3) Featured Song Path */}
+        <section id="featured" className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-6">
+            Learning Path: “We’re Not Gonna Take It”
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { title: 'Chords Used', href: '/songs/were-not-gonna-take-it/chords' },
+              { title: 'Key & Progression', href: '/songs/were-not-gonna-take-it/key' },
+              { title: 'Scales & Riffs', href: '/songs/were-not-gonna-take-it/scales' },
+              { title: 'Effects & Tone', href: '/songs/were-not-gonna-take-it/effects' },
+            ].map((step) => (
+              <a
+                key={step.href}
+                href={step.href}
+                className="block p-4 bg-white rounded-lg border hover:bg-gray-50 transition"
+              >
+                {step.title}
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* 4) Interactive Teaser */}
+        <section className="max-w-2xl mx-auto px-4">
+          <h2 className="text-2xl font-semibold mb-4 text-center">
+            Try it out!
+          </h2>
+          <div className="border p-4 rounded-lg">
+            {/* <SimpleFretboardDiagram chord="C" /> */}
+          </div>
+        </section>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* 5) Footer / Subscribe */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-md mx-auto text-center">
+          <h3 className="text-xl mb-2">Stay in Tune</h3>
+          <p className="mb-4">Get new lessons straight to your inbox.</p>
+          <form className="flex">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              className="flex-grow px-4 py-2 rounded-l border-none"
+            />
+            <button type="submit" className="px-4 bg-indigo-500 hover:bg-indigo-600 rounded-r">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </footer>
     </div>
-  );
+  )
 }

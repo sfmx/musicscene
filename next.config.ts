@@ -3,15 +3,15 @@ import type { NextConfig } from 'next';
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
+  options: {
+    providerImportSource: "@mdx-js/react"
+  }
 });
 
 const nextConfig: NextConfig = {
-  // ← makes `next export` work
-  output: 'export',
-  // if you want URLs like /about/ instead of /about.html
-  // trailingSlash: true,
-
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  // output: 'export',
+  trailingSlash: true, 
+  pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
 };
 
 export default withMDX(nextConfig);

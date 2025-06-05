@@ -24,10 +24,15 @@ Define and record functional, technical, and project requirements for musicscene
    - Guitar theory lessons (keys, scales, chord progressions).
    - Practical application: analyzing popular songs (theory-based, not just tabs).
    - Recommendations on guitar gear and effects to match song sounds.
+   - Visual diagrams (fretboard visualizer React component)
+   - Affiliate link placeholders (gear recommendations)
+   - Interactive content placeholders (future quizzes)
+   - React components for theory visualization (simple fretboard diagram)
 
 2. **Static Site Publishing**  
    - Next.js + MDX to manage rich content (lessons, diagrams, interactive visuals).
    - Incremental Static Regeneration (ISR) for content freshness.
+   - GitHub Actions → AWS S3 + CloudFront
 
 3. **Monetization Strategy**  
    - Affiliate marketing (guitars, pedals, music gear).

@@ -1,45 +1,34 @@
-// src/app/lessons/page.tsx
-import fs from 'fs';
-import path from 'path';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import rehypeSlug from 'rehype-slug';
-import remarkGfm from 'remark-gfm';
-import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import Link from 'next/link';
-import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-// (Optional) any React components you want to expose to MDX:
-const components = {
-  // You can add `<MyChart />` or `<Fretboard />` here later
-};
+import Link from 'next/link';
+import React from 'react';
 
 const categories = [
   {
-    title: 'Theory Lessons',
-    href: '/lessons/theory',
-    icon: '🎼',
+    title: 'Warm-ups',
+    href: '/lessons/practice/warmups',
+    icon: '🤲',
   },
   {
-    title: 'Song Analysis',
-    href: '/lessons/songs',
-    icon: '🎸',
+    title: 'Technique',
+    href: '/lessons/practice/technique',
+    icon: '🎯',
   },
   {
-    title: 'Gear & Effects',
-    href: '/lessons/gear',
-    icon: '⚙️',
+    title: 'Improvisation',
+    href: '/lessons/practice/improv',
+    icon: '🎶',
   },
+  // Add more practice categories as needed
 ];
 
-export default function LessonsPage() {
+export default function PracticePage() {
   return (
     <Layout>
       <Header
-        title="Lessons"
-        subtitle="Choose your path: theory, song analysis, or gear. Start learning and playing smarter!"
+        title="Practice"
+        subtitle="Choose a practice focus: warm-ups, technique, improvisation, and more!"
       />
       <main className="max-w-4xl mx-auto px-4 py-12">
         <section className="grid gap-8 grid-cols-1 sm:grid-cols-3">
@@ -56,7 +45,7 @@ export default function LessonsPage() {
         </section>
         <section className="mt-16 text-center">
           <p className="text-gray-700">
-            Select a category above to get started with your guitar journey!
+            Select a practice category above to improve your skills!
           </p>
         </section>
       </main>

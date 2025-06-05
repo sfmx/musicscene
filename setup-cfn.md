@@ -46,3 +46,9 @@ aws cloudformation deploy --stack-name musicscene-cloudfront --template-file inf
 ```
 aws cloudformation list-exports --query "Exports[?starts_with(Name,'MusicScene')]" --output table
 ```
+
+```
+npm run build
+s3 sync ./out s3://musicscene --delete
+aws cloudfront create-invalidation --distribution-id EMEO566RGP4JE --paths "/*"
+```
