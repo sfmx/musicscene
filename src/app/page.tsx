@@ -3,42 +3,20 @@
 
 import React from 'react'
 import SimpleFretboardDiagram from './components/SimpleFretboardDiagram'
+import Layout from '@/components/Layout'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Image from 'next/image' // or just <img> if CRA
 
 export default function Home() {
   return (
-    <div className="font-sans">
+    <Layout>
       {/* 1) Hero */}
-      <header className="relative h-screen bg-gray-900 text-white">
-        {/* <Image
-          src="/music-scene-hero.jpg" 
-          alt="Music Scene Lessons & Theory"
-          layout="fill"
-          objectFit="cover"
-          quality={80}
-          className="opacity-50"
-        /> */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-          <h1 className="text-5xl font-bold">MusicScene</h1>
-          <p className="mt-4 text-xl max-w-2xl">
-            Lessons & Theory for real guitarists—go beyond tabs and master the music.
-          </p>
-          <div className="mt-8 space-x-4">
-            <a
-              href="#tracks"
-              className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-md"
-            >
-              Browse Lessons
-            </a>
-            <a
-              href="#featured"
-              className="px-6 py-3 border border-white rounded-md hover:bg-white hover:text-gray-900"
-            >
-              Start with a Song
-            </a>
-          </div>
-        </div>
-      </header>
+      <Header
+        className="h-screen"
+        title="MusicScene"
+        subtitle="Lessons & Theory for real guitarists—go beyond tabs and master the music."
+      />
 
       <main className="space-y-20 py-16">
 
@@ -101,22 +79,7 @@ export default function Home() {
       </main>
 
       {/* 5) Footer / Subscribe */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-md mx-auto text-center">
-          <h3 className="text-xl mb-2">Stay in Tune</h3>
-          <p className="mb-4">Get new lessons straight to your inbox.</p>
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="flex-grow px-4 py-2 rounded-l border-none"
-            />
-            <button type="submit" className="px-4 bg-indigo-500 hover:bg-indigo-600 rounded-r">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </footer>
-    </div>
+      <Footer />
+    </Layout>
   )
 }
