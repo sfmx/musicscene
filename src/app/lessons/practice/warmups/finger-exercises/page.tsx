@@ -41,6 +41,38 @@ export default function FingerExercisesPage() {
     { timing: 9, string: 2, fret: 4, note: 'C#' },
   ];
 
+  // Finger independence example (1-3-2-4 pattern)
+  const independenceTab = [
+    { string: 1, fret: 1, idx: 2 },
+    { string: 1, fret: 3, idx: 3 },
+    { string: 1, fret: 2, idx: 4 },
+    { string: 1, fret: 4, idx: 5 },
+    { string: 2, fret: 1, idx: 6 },
+    { string: 2, fret: 3, idx: 7 },
+    { string: 2, fret: 2, idx: 8 },
+    { string: 2, fret: 4, idx: 9 },
+  ];
+  const independenceNotes = [
+    { name: 'F', idx: 2 },
+    { name: 'G', idx: 3 },
+    { name: 'F#', idx: 4 },
+    { name: 'G#', idx: 5 },
+    { name: 'A#', idx: 6 },
+    { name: 'C', idx: 7 },
+    { name: 'B', idx: 8 },
+    { name: 'C#', idx: 9 },
+  ];
+  const independenceData = [
+    { timing: 2, string: 1, fret: 1, note: 'F' },
+    { timing: 3, string: 1, fret: 3, note: 'G' },
+    { timing: 4, string: 1, fret: 2, note: 'F#' },
+    { timing: 5, string: 1, fret: 4, note: 'G#' },
+    { timing: 6, string: 2, fret: 1, note: 'A#' },
+    { timing: 7, string: 2, fret: 3, note: 'C' },
+    { timing: 8, string: 2, fret: 2, note: 'B' },
+    { timing: 9, string: 2, fret: 4, note: 'C#' },
+  ];
+
   return (
     <Layout>
       <Header
@@ -52,13 +84,20 @@ export default function FingerExercisesPage() {
         <p>
           Finger exercises are essential for developing the strength, flexibility, and independence needed to play guitar smoothly and accurately. Use these exercises as part of your daily warmup routine.
         </p>
+        <p>
+          Spending just a few minutes with these patterns will wake up your hands and get your mind focused before tackling songs or complex riffs.
+        </p>
 
         <h2>1. Chromatic Exercise (1-2-3-4)</h2>
         <p>
           Place your index (1), middle (2), ring (3), and pinky (4) fingers on consecutive frets of a string. Play each note in order, then move to the next string. Try ascending and descending.
         </p>
-        <TabAndNoteVisualizer tabNotes={chromaticTab} notes={chromaticNotes} beatsPerBar={4} />
-        {/* Updated: Pass combined data to MusicNotationVisualizer for both notation and tab */}
+        <TabAndNoteVisualizer
+          tabNotes={chromaticTab}
+          notes={chromaticNotes}
+          beatsPerBar={4}
+          title="Chromatic Exercise (1-2-3-4)"
+        />
         <div className="mt-4">
           <MusicNotationVisualizer data={chromaticData} beatsPerBar={4} />
         </div>
@@ -72,6 +111,15 @@ export default function FingerExercisesPage() {
         <p>
           Play patterns that skip fingers, such as 1-3-2-4 or 1-4-2-3, to challenge your coordination. Move the pattern across all strings.
         </p>
+        <TabAndNoteVisualizer
+          tabNotes={independenceTab}
+          notes={independenceNotes}
+          beatsPerBar={4}
+          title="Finger Independence (1-3-2-4)"
+        />
+        <div className="mt-4">
+          <MusicNotationVisualizer data={independenceData} beatsPerBar={4} />
+        </div>
         <FretboardHighlight
           root="E2"
           interval="independence_1324"
@@ -80,7 +128,10 @@ export default function FingerExercisesPage() {
 
         <h2>3. Spider Exercise</h2>
         <p>
-          Place your fingers on different frets and strings in a "spider" pattern, e.g.:
+          Place your fingers on different frets and strings in a "spider" pattern. This creates a wide stretch and forces each finger to move independently.
+        </p>
+        <p>
+          Start slowly so each note rings clearly, then work the pattern up and down the neck.
         </p>
         <FretboardHighlight
           root="E2"
@@ -91,6 +142,9 @@ export default function FingerExercisesPage() {
         <h2>4. Major Scale Exercise</h2>
         <p>
           Practice the major scale in different positions to improve your knowledge of the fretboard.
+        </p>
+        <p>
+          Run the pattern with alternate picking and aim for consistent tone on each note. Shift the starting fret over time to cover the entire neck.
         </p>
          <FretboardHighlight
           root="E2"
@@ -104,6 +158,8 @@ export default function FingerExercisesPage() {
           <li>Keep your fingers close to the fretboard for efficiency.</li>
           <li>Practice with alternate picking for both hands.</li>
           <li>Gradually increase speed as you gain control.</li>
+          <li>Relax your fretting hand to avoid unnecessary tension.</li>
+          <li>Try these exercises at different areas of the neck for variety.</li>
         </ul>
 
         <h2>Why Finger Exercises Matter</h2>
