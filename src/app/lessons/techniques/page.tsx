@@ -1,10 +1,50 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+
+// Internal VexTab loader component just for this page
+function VexTabLoader({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    // Function to load the VexTab script
+    const loadVexTabScript = () => {
+      // Check if already loaded
+      if (typeof window !== 'undefined' && window.VexTabDiv) {
+        setTimeout(() => {
+          if (window.VexTabDiv.autoRender) {
+            window.VexTabDiv.autoRender();
+          }
+        }, 0);
+        return;
+      }
+
+      // Add VEXTAB_USE_SVG flag first
+      const svgConfig = document.createElement('script');
+      svgConfig.textContent = 'VEXTAB_USE_SVG = true;';
+      document.head.appendChild(svgConfig);
+      
+      // Load the actual script
+      const script = document.createElement('script');
+      script.src = '/vextab-div.js';
+      script.async = true;
+      script.onload = () => {
+        console.log('VexTab script loaded successfully');
+        setTimeout(() => {
+          if (window.VexTabDiv && window.VexTabDiv.autoRender) {
+            window.VexTabDiv.autoRender();
+          }
+        }, 0);
+      };
+      document.head.appendChild(script);
+    };
+    
+    loadVexTabScript();
+  }, []);
+
+  return children;
+}
 
 export default function GuitarTechniquesPage() {
   return (
@@ -29,8 +69,7 @@ export default function GuitarTechniquesPage() {
             <p className="mt-2 text-sm text-gray-600">
               Practice hammer-ons using your index and ring fingers. Focus on clean articulation.
             </p>
-            
-            <VexTabScriptLoader>
+              <VexTabLoader>
               <div
                 dangerouslySetInnerHTML={{
                   __html: `<div class='vex-tabdiv' width='600' scale='1.0'>
@@ -42,7 +81,7 @@ notes :q 5/2h7/2 5/2h7/2 | :q 5/2h7/2 5/2h7/2
 </div>`
                 }}
               />
-            </VexTabScriptLoader>
+            </VexTabLoader>
           </div>
         </section>
       </main>
