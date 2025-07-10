@@ -18,12 +18,13 @@ import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 
 export default function FingerExercisesClient() {
   return (
-    <Layout>
+    <>
       <VexTabScriptLoader />
-      <Header
-        title="Finger Exercises"
-        subtitle="Build finger strength, independence, and dexterity with these fundamental exercises."
-      />
+      <Layout>
+        <Header
+          title="Finger Exercises"
+          subtitle="Build finger strength, independence, and dexterity with these fundamental exercises."
+        />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
         {/* Hero Section */}
@@ -323,37 +324,50 @@ notes :q 3/5 0/4 2/4 3/4 | 0/3 2/3 4/3 5/3 | 5/3 4/3 2/3 0/3 | 3/4 2/4 0/4 3/5`,
               <div className="w-8 h-8 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center font-semibold text-sm">
                 ★
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Jazz Chord with Techniques</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Advanced Legato Exercise</h3>
               <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Advanced</span>
             </div>
             
             <div className="mb-4">
               <p className="text-gray-700 leading-relaxed">
-                This example demonstrates how finger exercises translate to real music with an A7#9 chord 
-                featuring hammer-on techniques.
+                This advanced exercise combines finger independence with legato techniques (hammer-ons and pull-offs).
+                It challenges both fretting hand coordination and smooth note transitions without picking every note.
               </p>
             </div>
             
             <MusicScore
-              title="A7#9 Chord with Hammer-ons"
+              title="Advanced Legato Pattern"
               staves={[{
-                id: 'chord-example',
-                notation: `options space=40 font-size=14
-tabstave notation=true key=A
-notes :q (5/2.5/3.7/4) $A7#9$ 15h16/1 20/1`,
-                width: 550,
+                id: 'legato-exercise',
+                notation: `options space=20 font-size=14
+tabstave notation=true time=4/4 key=C
+notes :8 5/6 8h10/6 8p5/6 7/6 | 5/5 8h10/5 8p5/5 7/5 | 5/4 8h10/4 8p5/4 7/4 | 5/3 8h10/3 8p5/3 7/3`,
+                width: 650,
                 scale: 1.0,
-                title: 'Jazz Chord with Techniques'
+                title: 'Advanced Legato Finger Exercise'
               }]}
             />
             
             <div className="mt-6 bg-slate-50 rounded-lg p-4 border border-slate-200">
-              <h4 className="font-medium text-slate-900 mb-2">About This Example</h4>
-              <p className="text-slate-800 text-sm leading-relaxed">
-                Advanced chord voicings like this A7#9 require the finger independence and strength developed 
-                through regular practice of the exercises above. The hammer-on technique adds expression 
-                while challenging your finger coordination.
+              <h4 className="font-medium text-slate-900 mb-2">Practice Notes</h4>
+              <p className="text-slate-800 text-sm leading-relaxed mb-3">
+                <strong>Advanced Technique:</strong> This exercise develops smooth legato playing. Use finger 1 on the 5th fret,
+                finger 2 on the 7th fret, finger 3 on the 8th fret, and finger 4 on the 10th fret. The "h" indicates 
+                hammer-ons (strike the first note and hammer the second without picking), and "p" indicates pull-offs 
+                (pull the finger off to sound the lower note). Focus on making the legato notes as clear as picked notes.
               </p>
+              <div className="flex items-center justify-center bg-slate-100 rounded-md py-2 px-4">
+                <span className="text-slate-700 font-medium text-sm">🎵 Suggested starting tempo: 40 BPM</span>
+              </div>
+              
+              <div className="mt-4">
+                <h4 className="font-medium text-slate-900 mb-2">About This Exercise</h4>
+                <p className="text-slate-800 text-sm leading-relaxed">
+                  This advanced legato pattern requires the finger independence and strength developed 
+                  through regular practice of the exercises above. The hammer-on and pull-off techniques add expression 
+                  while challenging your finger coordination and control.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -400,5 +414,6 @@ notes :q (5/2.5/3.7/4) $A7#9$ 15h16/1 20/1`,
         </main>
         <Footer />
       </Layout>
-    );
+    </>
+  );
 }
