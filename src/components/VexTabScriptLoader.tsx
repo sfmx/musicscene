@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-const VexTabScriptLoader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const VexTabScriptLoader: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
