@@ -63,17 +63,7 @@ export default function ChordsPage() {
             </Link>
           ))}
         </div>
-        <h2>Examples</h2>
-        <p>Compare some common intervals below:</p>
-        <h3>Minor 2nd vs Major 2nd</h3>
-        <p>Minor 2nd = 1 semitone; Major 2nd = 2 semitones</p>
-        <FretboardHighlight root="C4" interval="m2" label="Minor 2nd (1 semitone)" />
-        <FretboardHighlight root="C4" interval="M2" label="Major 2nd (2 semitones)" />
 
-        <h3>Perfect 4th & Octave</h3>
-        <p>Perfect 4th = 5 semitones; Octave = 12 semitones</p>
-        <FretboardHighlight root="C4" interval="P4" label="Perfect 4th (5 semitones)" />
-        <FretboardHighlight root="C4" interval="P8" label="Octave (12 semitones)" />
       </main>
       <Footer />
     </Layout>
