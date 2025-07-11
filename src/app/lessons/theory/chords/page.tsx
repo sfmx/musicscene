@@ -27,7 +27,7 @@ const chordTypes = [
   {
     name: 'Suspended',
     icon: <span style={{ fontSize: 32 }}>🔄</span>,
-    href: '/lessons/theory/chords/sus',
+    href: '/lessons/theory/chords/suspended',
     description: 'Neither major nor minor. Creates a sense of suspense.',
   },
   {
@@ -52,10 +52,6 @@ export default function ChordsPage() {
         subtitle="Explore chord types, shapes, and their musical uses. Click a chord type to learn more."
       />
       <main className="prose mx-auto px-4 py-8">
-        <h1>Guitar Chords</h1>
-        <p>
-          Learn about major, minor, seventh, and other chord types. Click a chord type below to explore shapes, theory, and examples.
-        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-8">
           {chordTypes.map((chord) => (
             <Link
@@ -69,10 +65,6 @@ export default function ChordsPage() {
             </Link>
           ))}
         </div>
-        <h2>Chord Examples</h2>
-        <p>Here are the major and minor chords in the key of C:</p>
-        <SimpleFretboardDiagram chord="C_major" />
-        <SimpleFretboardDiagram chord="C_minor" />
       </main>
       <Footer />
     </Layout>
