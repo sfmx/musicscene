@@ -46,10 +46,7 @@ export default function ChordsPage() {
         subtitle="Explore the building blocks of melody and harmony. Click an interval to learn more."
       />
       <main className="prose mx-auto px-4 py-8">
-        <h1>Musical Intervals</h1>
-        <p>
-          An <strong>interval</strong> is the distance between two notes. Click an interval type below to explore its sound, shape, and musical uses.
-        </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-8">
           {intervalTypes.map((interval) => (
             <Link
