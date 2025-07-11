@@ -119,7 +119,7 @@ export default function ChordChangesPage() {
                   id: 'g-to-c-changes',
                   notation: `options space=20 font-size=14
 tabstave notation=true time=4/4 key=C
-notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (0/5.1/4.0/3.2/2.1/1) | (3/6.0/5.0/4.0/3.2/2.3/1) | (0/5.1/4.0/3.2/2.1/1)`,
+notes :w (3/6.2/5.0/4.0/3.3/2.3/1) | (3/5.2/4.0/3.1/2.0/1) | (3/6.2/5.0/4.0/3.3/2.3/1) | (3/5.2/4.0/3.1/2.0/1)`,
                   width: 550,
                   scale: 1.0,
                   title: 'G - C - G - C Progression'
@@ -178,7 +178,7 @@ notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (0/5.1/4.0/3.2/2.1/1) | (3/6.0/5.0/4.0/3.2/
                   id: 'g-d-c-progression',
                   notation: `options space=20 font-size=14
 tabstave notation=true time=4/4 key=G
-notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (2/6.3/5.2/4.0/3.1/2.2/1) | (0/5.1/4.0/3.2/2.1/1) | (3/6.0/5.0/4.0/3.2/2.3/1)`,
+notes :w (3/6.2/5.0/4.0/3.3/2.3/1) | (2/4.3/3.2/2.2/1) | (3/5.2/4.0/3.1/2.0/1) | (3/6.2/5.0/4.0/3.3/2.3/1)`,
                   width: 550,
                   scale: 1.0,
                   title: 'G - D - C - G Progression'
@@ -242,7 +242,7 @@ notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (2/6.3/5.2/4.0/3.1/2.2/1) | (0/5.1/4.0/3.2/
                   id: 'i-v-vi-iv-progression',
                   notation: `options space=20 font-size=14
 tabstave notation=true time=4/4 key=G
-notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (2/6.3/5.2/4.0/3.1/2.2/1) | (0/6.0/5.0/4.0/3.2/2.0/1) | (0/5.1/4.0/3.2/2.1/1)`,
+notes :w (3/6.2/5.0/4.0/3.3/2.3/1) | (2/4.3/3.2/2.2/1) | (0/6.2/5.2/4.0/3.0/2.0/1) | (3/5.2/4.0/3.1/2.0/1)`,
                   width: 550,
                   scale: 1.0,
                   title: 'G - D - Em - C Progression'
@@ -315,7 +315,7 @@ notes :w (3/6.0/5.0/4.0/3.2/2.3/1) | (2/6.3/5.2/4.0/3.1/2.2/1) | (0/6.0/5.0/4.0/
                   id: 'barre-chord-transitions',
                   notation: `options space=20 font-size=14
 tabstave notation=true time=4/4 key=F
-notes :w (1/6.1/5.3/4.3/3.2/2.1/1) | (0/5.0/4.2/3.2/2.1/1) | (1/6.3/5.2/4.0/3.1/2) | (3/6.0/5.0/4.0/3.2/2.3/1)`,
+notes :w (1/6.1/5.3/4.3/3.2/2.1/1) | (0/5.2/4.2/3.1/2.0/1) | (0/4.2/3.3/2.1/1) | (3/6.2/5.0/4.0/3.3/2.3/1)`,
                   width: 550,
                   scale: 1.0,
                   title: 'F - Am - Dm - G Progression'
@@ -399,7 +399,7 @@ notes :w (3/6.2/5.0/4.0/3.1/2.0/1) | (2/6.0/5.2/4.1/3.2/2.0/1) | (0/6.2/5.0/4.2/
                   id: 'rapid-chord-changes',
                   notation: `options space=20 font-size=14
 tabstave notation=true time=4/4 key=C
-notes :h (3/6.0/5.0/4.0/3.2/2.3/1) (0/5.1/4.0/3.2/2.1/1) | :h (2/6.3/5.2/4.0/3.1/2.2/1) (0/6.0/5.0/4.0/3.2/2.0/1)`,
+notes :h (3/6.2/5.0/4.0/3.3/2.3/1) (3/5.2/4.0/3.1/2.0/1) | :h (2/4.3/3.2/2.2/1) (0/6.2/5.2/4.0/3.0/2.0/1)`,
                   width: 550,
                   scale: 1.0,
                   title: 'G-C-D-Em Changes at Double Speed'
