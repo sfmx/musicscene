@@ -6,8 +6,22 @@ type FretboardProps = {
 
 const chordShapes: Record<string, number[]> = {
   // EADGBE (low to high), -1 means muted, 0 means open
-  C: [-1, 3, 2, 0, 1, 0],
-  // Add more chords as needed
+  'C': [-1, 3, 2, 0, 1, 0],
+  'C_major': [-1, 3, 2, 0, 1, 0],
+  'G': [3, 2, 0, 0, 3, 3],
+  'G_major': [3, 2, 0, 0, 3, 3],
+  'D': [-1, -1, 0, 2, 3, 2],
+  'D_major': [-1, -1, 0, 2, 3, 2],
+  'Em': [0, 2, 2, 0, 0, 0],
+  'E_minor': [0, 2, 2, 0, 0, 0],
+  'Am': [-1, 0, 2, 2, 1, 0],
+  'A_minor': [-1, 0, 2, 2, 1, 0],
+  'F': [1, 3, 3, 2, 1, 1],
+  'F_major': [1, 3, 3, 2, 1, 1],
+  'Dm': [-1, -1, 0, 2, 3, 1],
+  'D_minor': [-1, -1, 0, 2, 3, 1],
+  'Bm': [-1, 2, 4, 4, 3, 2],
+  'B_minor': [-1, 2, 4, 4, 3, 2],
 };
 
 const stringNames = ['E', 'A', 'D', 'G', 'B', 'e'];
