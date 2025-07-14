@@ -304,79 +304,44 @@ export default function SeventhChordsPage() {
           </div>
         </div>
 
-        {/* Common Progressions */}
+        {/* Common Chord Progressions */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Seventh Chord Progressions</h2>
-          
-          <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-green-800 mb-3">🎵 Essential Progressions</h3>
-            <p className="text-green-700">These progressions showcase the unique harmonic colors of seventh chords.</p>
-          </div>
-
-          <div className="grid gap-6 mb-6">
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Jazz and Blues Progressions</h3>
-              
-              <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">ii-V-I Jazz Progression</h4>
-                  <p className="text-sm mb-2"><strong>In C Major:</strong> Dm7 - G7 - CMaj7</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="ii-V-I Jazz Progression"
-                      staves={[{
-                        id: 'ii-v-i-jazz',
-                        notation: `options space=20 font-size=14
-tabstave notation=true key=C time=4/4
-notes :w (1/4.0/3.2/2.3/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1) | :w (0/6.3/5.2/4.0/3.0/2.0/1)`,
-                        width: 450,
-                        scale: 1.0,
-                        title: 'Dm7 - G7 - CMaj7'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Most important progression in jazz</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">12-Bar Blues with 7ths</h4>
-                  <p className="text-sm mb-2"><strong>In A:</strong> A7 - A7 - A7 - A7 | D7 - D7 - A7 - A7 | E7 - D7 - A7 - E7</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Blues with Seventh Chords"
-                      staves={[{
-                        id: 'blues-7ths',
-                        notation: `options space=20 font-size=14
-tabstave notation=true key=A time=4/4
-notes :w (0/5.2/4.0/3.2/2.0/1) | :w (2/4.1/3.2/2.3/1) | :w (0/6.2/5.1/4.0/3.0/2.0/1)`,
-                        width: 450,
-                        scale: 1.0,
-                        title: 'A7 - D7 - E7'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Classic blues progression with authentic 7th chords</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Circle of Fifths with 7ths</h4>
-                  <p className="text-sm mb-2"><strong>Example:</strong> CMaj7 - A7 - Dm7 - G7</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Circle of Fifths Progression"
-                      staves={[{
-                        id: 'circle-fifths-7th',
-                        notation: `options space=20 font-size=14
-tabstave notation=true key=C time=4/4
-notes :w (0/6.3/5.2/4.0/3.0/2.0/1) | :w (0/5.2/4.0/3.2/2.0/1) | :w (1/4.0/3.2/2.3/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)`,
-                        width: 600,
-                        scale: 1.0,
-                        title: 'CMaj7 - A7 - Dm7 - G7'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Smooth voice leading through the circle of fifths</p>
-                </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold mb-4">ii⁷ - V⁷ - I^Maj7</h3>
+              <p className="text-gray-600 mb-4">The foundation of jazz harmony and sophisticated progressions.</p>
+              <div className="space-y-2">
+                <p><strong>In C major:</strong> Dm7 - G7 - CMaj7</p>
+                <p><strong>Songs:</strong> &quot;Autumn Leaves&quot;, &quot;All of Me&quot;</p>
+                <p className="text-sm text-gray-500">Creates smooth voice leading and harmonic sophistication</p>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold mb-4">I⁷ - IV⁷ - V⁷</h3>
+              <p className="text-gray-600 mb-4">Classic blues progression with authentic seventh chord sound.</p>
+              <div className="space-y-2">
+                <p><strong>In A:</strong> A7 - D7 - E7</p>
+                <p><strong>Songs:</strong> &quot;Sweet Home Chicago&quot;, &quot;Stormy Monday&quot;</p>
+                <p className="text-sm text-gray-500">Foundation of blues and early rock &apos;n&apos; roll</p>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold mb-4">I^Maj7 - vi⁷ - ii⁷ - V⁷</h3>
+              <p className="text-gray-600 mb-4">Elegant circle of fifths progression with seventh chord color.</p>
+              <div className="space-y-2">
+                <p><strong>In C major:</strong> CMaj7 - Am7 - Dm7 - G7</p>
+                <p><strong>Songs:</strong> &quot;Fly Me to the Moon&quot;, &quot;Girl from Ipanema&quot;</p>
+                <p className="text-sm text-gray-500">Creates elegant harmonic movement and jazz sophistication</p>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold mb-4">I^Maj7 - IV^Maj7 - vi⁷ - V⁷</h3>
+              <p className="text-gray-600 mb-4">Modern pop progression enhanced with seventh chord sophistication.</p>
+              <div className="space-y-2">
+                <p><strong>In C major:</strong> CMaj7 - FMaj7 - Am7 - G7</p>
+                <p><strong>Songs:</strong> &quot;Don&apos;t Look Back in Anger&quot;, &quot;Wonderful Tonight&quot;</p>
+                <p className="text-sm text-gray-500">Adds sophistication to popular music harmony</p>
               </div>
             </div>
           </div>

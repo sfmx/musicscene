@@ -4,529 +4,481 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import Link from 'next/link';
 
 export default function SuspendedChordsPage() {
   return (
     <Layout>
       <Header
         title="Suspended Chord Theory"
-        subtitle="Create tension, movement, and unique harmonic colors with suspended chords"
+        subtitle="Discover the tension and beauty of suspended chords - the harmonies that create anticipation and release through their unique interval structures."
       />
       
-      <main className="prose mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/chords" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Chord Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-lg p-8 mb-8">
-          <h1 className="text-3xl font-bold mb-4">Suspended Chords</h1>
-          <p className="text-xl opacity-90 mb-4">
-            Suspended chords replace the third with either the second or fourth, creating ambiguous harmony that's neither major nor minor.
+        <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl p-8 mb-12 border border-purple-200">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Suspended Chords</h1>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+            Suspended chords create musical tension through the deliberate avoidance of the traditional major or minor third, 
+            replacing it with either the second or fourth degree of the scale. This substitution creates a floating, unresolved 
+            quality that yearns for harmonic resolution. Whether it's the dramatic sus4 that wants to resolve down to the third, 
+            or the ethereal sus2 that adds brightness without committing to major or minor, suspended chords are essential tools 
+            for creating emotional depth, smooth voice leading, and sophisticated harmonic movement across all musical styles.
           </p>
-          <div className="flex flex-wrap gap-4 text-sm">
-            <span className="bg-white/20 px-3 py-1 rounded">Neither Major nor Minor</span>
-            <span className="bg-white/20 px-3 py-1 rounded">Creates Tension</span>
-            <span className="bg-white/20 px-3 py-1 rounded">Wants Resolution</span>
-            <span className="bg-white/20 px-3 py-1 rounded">Rock & Folk</span>
+        </div>
+
+        {/* Theory Fundamentals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Theory Fundamentals</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">What Are Suspended Chords?</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Definition:</strong> Chords where the 3rd is replaced by the 2nd or 4th</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Sus4 Formula:</strong> Root + Perfect 4th + Perfect 5th</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Sus2 Formula:</strong> Root + Major 2nd + Perfect 5th</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Sound Quality:</strong> Floating, unresolved, tension</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Function:</strong> Creates motion, delays resolution</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Musical Applications</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Rock/Pop:</strong> Dramatic chord changes and hooks</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Folk:</strong> Open, ringing acoustic textures</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Jazz:</strong> Smooth voice leading and tensions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Classical:</strong> Suspension and resolution patterns</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        {/* Theory Section */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Suspended Chord Theory</h2>
+        {/* Understanding Suspended Chord Construction */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Understanding Suspended Chord Construction</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">Dsus4 Example</h3>
+              <ul className="text-purple-700 text-sm space-y-2">
+                <li>• <strong>Root:</strong> D (1st degree)</li>
+                <li>• <strong>Perfect 4th:</strong> G (4th degree)</li>
+                <li>• <strong>Perfect 5th:</strong> A (5th degree)</li>
+                <li>• <strong>Missing:</strong> F# (major 3rd)</li>
+                <li>• <strong>Result:</strong> Tension seeking resolution</li>
+              </ul>
+            </div>
+            <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+              <h3 className="text-lg font-semibold text-pink-800 mb-3">Dsus2 Example</h3>
+              <ul className="text-pink-700 text-sm space-y-2">
+                <li>• <strong>Root:</strong> D (1st degree)</li>
+                <li>• <strong>Major 2nd:</strong> E (2nd degree)</li>
+                <li>• <strong>Perfect 5th:</strong> A (5th degree)</li>
+                <li>• <strong>Missing:</strong> F# (major 3rd)</li>
+                <li>• <strong>Result:</strong> Open, floating quality</li>
+              </ul>
+            </div>
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">Resolution Tendency</h3>
+              <ul className="text-indigo-700 text-sm space-y-2">
+                <li>• <strong>Sus4:</strong> Wants to resolve down to 3rd</li>
+                <li>• <strong>Sus2:</strong> Can move up to 3rd</li>
+                <li>• <strong>Tension:</strong> Created by avoiding 3rd</li>
+                <li>• <strong>Release:</strong> Resolution to major/minor</li>
+                <li>• <strong>Voice Leading:</strong> Smooth stepwise motion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Essential Sus4 Chords */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Essential Sus4 Chords</h2>
           
-          <div className="bg-teal-50 border-l-4 border-teal-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">What Makes a Chord Suspended?</h3>
-            <p className="mb-2">Suspended chords replace the third (which determines major/minor) with either the 2nd or 4th degree of the scale.</p>
-            <p className="text-sm text-gray-600">This creates harmonic ambiguity and tension that typically resolves to a major or minor chord.</p>
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-6">
+            <h3 className="text-lg font-semibold text-purple-800 mb-3">🎸 Sus4 Fundamentals</h3>
+            <p className="text-purple-700">These sus4 chords create tension that naturally wants to resolve to the major chord.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-cyan-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">Sus2 Chords</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="font-medium">Root (1st):</span>
-                  <span>C</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Second (2nd):</span>
-                  <span className="text-teal-600 font-bold">D</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Perfect Fifth (5th):</span>
-                  <span>G</span>
-                </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Dsus4</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Dsus4" />
               </div>
-              <div className="bg-white rounded p-3 mt-4">
-                <p className="text-sm"><strong>Formula:</strong> 1 - 2 - 5</p>
-                <p className="text-sm"><strong>Example:</strong> Csus2 = C-D-G</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> D-G-A</p>
+                <p><strong>Fingering:</strong> Easy, common shape</p>
+                <p><strong>Resolves to:</strong> D major</p>
               </div>
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">Sus4 Chords</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="font-medium">Root (1st):</span>
-                  <span>C</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Fourth (4th):</span>
-                  <span className="text-blue-600 font-bold">F</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Perfect Fifth (5th):</span>
-                  <span>G</span>
-                </div>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Asus4</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Asus4" />
               </div>
-              <div className="bg-white rounded p-3 mt-4">
-                <p className="text-sm"><strong>Formula:</strong> 1 - 4 - 5</p>
-                <p className="text-sm"><strong>Example:</strong> Csus4 = C-F-G</p>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> A-D-E</p>
+                <p><strong>Fingering:</strong> Add one finger to Am</p>
+                <p><strong>Resolves to:</strong> A major</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Esus4</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Esus4" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> E-A-B</p>
+                <p><strong>Fingering:</strong> Add finger to Em</p>
+                <p><strong>Resolves to:</strong> E major</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Essential Suspended Chord Shapes */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Essential Suspended Chord Shapes</h2>
+        {/* Essential Sus2 Chords */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Essential Sus2 Chords</h2>
           
-          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">🎸 Start with These Shapes</h3>
-            <p>These common suspended chord forms are easy to play and sound great in many musical contexts.</p>
+          <div className="bg-pink-50 border border-pink-200 rounded-lg p-6 mb-6">
+            <h3 className="text-lg font-semibold text-pink-800 mb-3">🎵 Sus2 Fundamentals</h3>
+            <p className="text-pink-700">These sus2 chords create an open, floating quality perfect for atmospheric playing.</p>
           </div>
 
-          <div className="grid gap-6 mb-6">
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Open Sus4 Chords</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Dsus4</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Dsus4" />
-                  </div>
-                  <p className="text-sm text-gray-600">Add pinky to D chord</p>
-                </div>
-
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Asus4</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Asus4" />
-                  </div>
-                  <p className="text-sm text-gray-600">Add one finger to A chord</p>
-                </div>
-
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Esus4</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Esus4" />
-                  </div>
-                  <p className="text-sm text-gray-600">Add finger to E chord</p>
-                </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Dsus2</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Dsus2" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> D-E-A</p>
+                <p><strong>Fingering:</strong> Simple two-finger shape</p>
+                <p><strong>Character:</strong> Bright and open</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Open Sus2 Chords</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Dsus2</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Dsus2" />
-                  </div>
-                  <p className="text-sm text-gray-600">Remove middle finger from D</p>
-                </div>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Asus2</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Asus2" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> A-B-E</p>
+                <p><strong>Fingering:</strong> Remove one finger from A</p>
+                <p><strong>Character:</strong> Ethereal and spacious</p>
+              </div>
+            </div>
 
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Asus2</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Asus2" />
-                  </div>
-                  <p className="text-sm text-gray-600">Just two fingers needed</p>
-                </div>
-
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Esus2</h4>
-                  <div className="mb-3">
-                    <SimpleFretboardDiagram chord="Esus2" />
-                  </div>
-                  <p className="text-sm text-gray-600">Gentle resolution potential</p>
-                </div>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Esus2</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="Esus2" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> E-F#-B</p>
+                <p><strong>Fingering:</strong> Higher fret alternative</p>
+                <p><strong>Character:</strong> Modern, ambient</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Resolution and Movement */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Resolution and Movement</h2>
+        {/* Common Suspended Chord Progressions */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Suspended Chord Progressions</h2>
           
-          <div className="bg-purple-50 border-l-4 border-purple-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">🎵 The Power of Resolution</h3>
-            <p className="mb-2">Suspended chords create tension that naturally wants to resolve. This movement is fundamental to their musical power.</p>
-            <p className="text-sm text-gray-600">The suspended note typically moves by step to complete the resolution.</p>
+          <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-6 mb-6">
+            <h3 className="text-lg font-semibold text-cyan-800 mb-3">🎵 Essential Progressions</h3>
+            <p className="text-cyan-700">These progressions demonstrate how suspended chords create tension and release in different musical contexts.</p>
           </div>
 
-          <div className="grid gap-6 mb-6">
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Common Resolutions</h3>
-              
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Sus4 Resolution Patterns</h3>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Sus4 to Major</h4>
-                  <p className="text-sm mb-2">The 4th resolves down to the 3rd</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Sus4 to Major Resolution"
-                      staves={[{
-                        id: 'sus4-major-resolution',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (2/4.0/3.3/2.3/1) :h (2/4.1/3.2/2.3/1)`,
-                        width: 300,
-                        scale: 1.0,
-                        title: 'Dsus4 to D'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Classic resolution: tension to release</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Classic Sus4 → Major</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> Dsus4 - D - G - A</p>
+                  <p className="text-sm text-gray-600">Immediate resolution creates satisfaction</p>
                 </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Sus4 to Minor</h4>
-                  <p className="text-sm mb-2">The 4th can also resolve to minor third</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Sus4 to Minor Resolution"
-                      staves={[{
-                        id: 'sus4-minor-resolution',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (0/5.2/4.2/3.3/2.0/1) :h (0/5.2/4.2/3.1/2.0/1)`,
-                        width: 300,
-                        scale: 1.0,
-                        title: 'Asus4 to Am'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">More unexpected, emotional resolution</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Delayed Resolution</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> Asus4 - Am - F - G</p>
+                  <p className="text-sm text-gray-600">Sus4 to minor creates different color</p>
                 </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Sus2 to Major</h4>
-                  <p className="text-sm mb-2">The 2nd resolves up to the 3rd</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Sus2 to Major Resolution"
-                      staves={[{
-                        id: 'sus2-major-resolution',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (0/5.2/4.2/3.0/2.0/1) :h (0/5.2/4.2/3.2/2.0/1)`,
-                        width: 300,
-                        scale: 1.0,
-                        title: 'Asus2 to A'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Gentle, upward resolution</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Rock Progression</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> Esus4 - E - A - B</p>
+                  <p className="text-sm text-gray-600">Common in rock and pop music</p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Musical Applications */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Musical Applications</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-teal-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎵 Genre Applications</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• <strong>Rock:</strong> Power chords and emotional builds</li>
-                <li>• <strong>Folk:</strong> Gentle, acoustic progressions</li>
-                <li>• <strong>Pop:</strong> Catchy hooks and transitions</li>
-                <li>• <strong>Country:</strong> Open, ringing chords</li>
-                <li>• <strong>Alternative:</strong> Atmospheric textures</li>
-              </ul>
-            </div>
-
-            <div className="bg-cyan-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎭 Emotional Character</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• <strong>Sus4:</strong> Anticipation, yearning</li>
-                <li>• <strong>Sus2:</strong> Openness, lightness</li>
-                <li>• <strong>Resolution:</strong> Satisfaction, completion</li>
-                <li>• <strong>Non-resolution:</strong> Mystery, ambiguity</li>
-                <li>• <strong>Movement:</strong> Forward momentum</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Suspended Chord Progressions */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Common Suspended Chord Progressions</h2>
-          
-          <div className="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">🎵 Essential Progressions</h3>
-            <p>These progressions showcase the movement and resolution power of suspended chords.</p>
-          </div>
-
-          <div className="grid gap-6 mb-6">
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Classic Suspended Progressions</h3>
-              
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Sus2 Atmospheric Progressions</h3>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">The "Wonderwall" Progression</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Em7 - Cadd9 - Dsus4 - D</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Wonderwall-Style Progression"
-                      staves={[{
-                        id: 'wonderwall-progression',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.2/5.0/4.0/3.0/2.0/1) | :w (0/5.1/4.0/3.2/2.3/1) | :w (2/4.0/3.3/2.3/1) | :w (2/4.1/3.2/2.3/1)`,
-                        width: 600,
-                        scale: 1.0,
-                        title: 'Em7 - Cadd9 - Dsus4 - D'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Made famous by Oasis, used in countless songs</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Open String Magic</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> Dsus2 - Asus2 - G - Em</p>
+                  <p className="text-sm text-gray-600">Creates floating, ethereal atmosphere</p>
                 </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Suspended Resolution Chain</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Asus4 - A - Dsus2 - D</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Suspended Resolution Chain"
-                      staves={[{
-                        id: 'sus-resolution-chain',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/5.2/4.2/3.3/2.0/1) | :w (0/5.2/4.2/3.2/2.0/1) | :w (2/4.0/3.2/2.3/1) | :w (2/4.1/3.2/2.3/1)`,
-                        width: 600,
-                        scale: 1.0,
-                        title: 'Asus4 - A - Dsus2 - D'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Chain of tensions and resolutions</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Modern Folk</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> G - Dsus2 - Em - Csus2</p>
+                  <p className="text-sm text-gray-600">Contemporary acoustic sound</p>
                 </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Folk Sus Progression</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Gsus4 - G - Cadd9 - Dsus4 - D</p>
-                  <div className="mb-3">
-                    <MusicScore
-                      title="Folk Sus Progression"
-                      staves={[{
-                        id: 'folk-sus-progression',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.0/5.0/4.0/3.1/2.3/1) | :w (3/6.2/5.0/4.0/3.0/2.3/1) | :w (0/5.1/4.0/3.2/2.3/1) | :w (2/4.0/3.3/2.3/1) | :w (2/4.1/3.2/2.3/1)`,
-                        width: 750,
-                        scale: 1.0,
-                        title: 'Gsus4 - G - Cadd9 - Dsus4 - D'
-                      }]}
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600">Common in folk and acoustic music</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-medium mb-2">Ambient Progression</h4>
+                  <p className="text-sm mb-2"><strong>Pattern:</strong> Asus2 - Esus2 - F#sus2 - Dsus2</p>
+                  <p className="text-sm text-gray-600">Sustained, contemplative mood</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Famous Examples */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Famous Songs Using Suspended Chords</h2>
+        {/* Famous Songs with Suspended Chords */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Famous Songs Using Suspended Chords</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-teal-100 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎸 Rock & Alternative</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• "Wonderwall" - Oasis (Dsus4)</li>
-                <li>• "The One I Love" - R.E.M. (Gsus4)</li>
-                <li>• "Pinball Wizard" - The Who (Bsus4)</li>
-                <li>• "Tom Sawyer" - Rush (Csus2/Csus4)</li>
-                <li>• "Iris" - Goo Goo Dolls (Dsus2)</li>
+            <div className="bg-purple-100 rounded-lg p-6 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">🎸 Rock & Pop Classics</h3>
+              <ul className="space-y-2 text-sm text-purple-700">
+                <li>• "Pinball Wizard" - The Who (Dsus4-D progression)</li>
+                <li>• "Crazy Little Thing Called Love" - Queen (sus4 embellishments)</li>
+                <li>• "The Scientist" - Coldplay (Dsus2, Asus2)</li>
+                <li>• "Black" - Pearl Jam (Esus2, Asus2)</li>
+                <li>• "More Than Words" - Extreme (sus2 and sus4)</li>
               </ul>
             </div>
 
-            <div className="bg-cyan-100 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎵 Folk & Pop</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• "Landslide" - Fleetwood Mac (Csus4)</li>
-                <li>• "Dust in the Wind" - Kansas (Csus2/Asus2)</li>
-                <li>• "Blackbird" - The Beatles (Gsus4)</li>
-                <li>• "More Than Words" - Extreme (Csus2)</li>
-                <li>• "Wild World" - Cat Stevens (Dsus4)</li>
+            <div className="bg-pink-100 rounded-lg p-6 border border-pink-200">
+              <h3 className="text-lg font-semibold text-pink-800 mb-3">🎵 Folk & Alternative</h3>
+              <ul className="space-y-2 text-sm text-pink-700">
+                <li>• "Dust in the Wind" - Kansas (Dsus2, Asus2)</li>
+                <li>• "Behind Blue Eyes" - The Who (sus4 resolutions)</li>
+                <li>• "Disarm" - Smashing Pumpkins (Dsus2 featured)</li>
+                <li>• "Interstate Love Song" - Stone Temple Pilots</li>
+                <li>• "Good Riddance" - Green Day (Gsus4, Dsus4)</li>
               </ul>
             </div>
           </div>
-        </section>
-
-        {/* Advanced Suspended Concepts */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Advanced Suspended Concepts</h2>
-          
-          <div className="bg-purple-50 border-l-4 border-purple-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">🎯 Beyond Basic Sus Chords</h3>
-            <p>Explore more sophisticated suspended chord variations and applications.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Extended Suspended Chords</h3>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded p-3">
-                  <p className="font-medium">Sus7 Chords</p>
-                  <p className="text-sm text-gray-600">Add 7th to suspended chords</p>
-                  <p className="text-sm">Example: Gsus47 = G-C-D-F</p>
-                </div>
-                <div className="bg-gray-50 rounded p-3">
-                  <p className="font-medium">Sus9 Chords</p>
-                  <p className="text-sm text-gray-600">Suspend the 3rd, add 9th</p>
-                  <p className="text-sm">Example: Gsus9 = G-A-D</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Compositional Techniques</h3>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded p-3">
-                  <p className="font-medium">Delayed Resolution</p>
-                  <p className="text-sm text-gray-600">Hold the tension longer than expected</p>
-                  <p className="text-sm">Creates anticipation and drama</p>
-                </div>
-                <div className="bg-gray-50 rounded p-3">
-                  <p className="font-medium">Non-Resolution</p>
-                  <p className="text-sm text-gray-600">Move to different chord without resolving</p>
-                  <p className="text-sm">Creates ambiguity and modern sound</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Playing Techniques */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Playing Techniques</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-yellow-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎸 Fingerpicking</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• Sus chords sound beautiful fingerpicked</li>
-                <li>• Emphasize the suspended note</li>
-                <li>• Use open strings for resonance</li>
-                <li>• Practice smooth chord transitions</li>
-                <li>• Experiment with arpeggiation patterns</li>
-              </ul>
-            </div>
-
-            <div className="bg-orange-50 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3">🎵 Strumming</h3>
-              <ul className="space-y-2 text-sm">
-                <li>• Let chords ring out for full effect</li>
-                <li>• Use dynamics to emphasize resolution</li>
-                <li>• Practice quick chord changes</li>
-                <li>• Try different picking attacks</li>
-                <li>• Experiment with partial chord voicings</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        </div>
 
         {/* Practice Exercises */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Practice Exercises</h2>
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
           
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-6">
-            <h3 className="font-bold text-lg mb-2">🎯 Building Suspended Chord Skills</h3>
-            <p>These exercises will help you master suspended chords and their resolutions.</p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+            <h3 className="text-lg font-semibold text-blue-800 mb-3">🎯 Building Suspended Chord Skills</h3>
+            <p className="text-blue-700">These exercises will help you master suspended chords and their unique harmonic functions.</p>
           </div>
 
           <div className="space-y-6">
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Exercise 1: Basic Resolutions</h3>
-              <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                <p className="font-medium mb-2">Practice: Dsus4 - D, Asus4 - A, Gsus4 - G</p>
-                <p className="text-sm text-gray-600 mb-2">Focus on smooth voice leading and clear resolution</p>
-                <p className="text-sm">Listen to the tension and release</p>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 1: Sus4 Resolution Practice</h3>
+              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
+                <p className="font-medium mb-2">Pattern: Dsus4-D, Asus4-A, Esus4-E</p>
+                <p className="text-sm text-gray-600 mb-2">Practice clean transitions from suspended to resolved chords</p>
+                <p className="text-sm">Focus on the voice leading of the suspended note</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Exercise 2: Sus2 to Major</h3>
-              <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                <p className="font-medium mb-2">Practice: Asus2 - A, Dsus2 - D, Esus2 - E</p>
-                <p className="text-sm text-gray-600 mb-2">Practice the gentler sus2 resolutions</p>
-                <p className="text-sm">Notice the upward movement of the suspended note</p>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 2: Sus2 Atmospheric Playing</h3>
+              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
+                <p className="font-medium mb-2">Progression: Dsus2 - Asus2 - G - Em</p>
+                <p className="text-sm text-gray-600 mb-2">Create floating, ambient textures</p>
+                <p className="text-sm">Let chords ring out, focus on open string resonance</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Exercise 3: Mixed Progressions</h3>
-              <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                <p className="font-medium mb-2">Progression: Gsus4 - G - Cadd9 - Dsus4 - D</p>
-                <p className="text-sm text-gray-600 mb-2">Combine suspended chords with added tone chords</p>
-                <p className="text-sm">Practice common folk/rock progression patterns</p>
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 3: Mixed Suspension Progressions</h3>
+              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
+                <p className="font-medium mb-2">Pattern: G - Dsus4 - D - Asus2 - Am</p>
+                <p className="text-sm text-gray-600 mb-2">Combine sus2 and sus4 in one progression</p>
+                <p className="text-sm">Notice the different tension qualities and resolutions</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Related Topics */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Related Topics</h2>
+        {/* Advanced Suspended Chord Concepts */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Advanced Suspended Chord Concepts</h2>
           
-          <div className="bg-gray-100 rounded-lg p-6">
-            <h3 className="font-bold text-lg mb-4">Continue Your Learning Journey</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-medium mb-2">Chord Theory</h4>
-                <ul className="text-sm space-y-1">
-                  <li>• Add9 and Add11 Chords</li>
-                  <li>• Voice Leading</li>
-                  <li>• Non-Chord Tones</li>
-                  <li>• Tension and Resolution</li>
-                </ul>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-indigo-50 rounded-lg p-6 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">🎸 Extended Suspensions</h3>
+              <ul className="space-y-2 text-sm text-indigo-700">
+                <li>• <strong>7sus4:</strong> Sus4 with added 7th (G7sus4)</li>
+                <li>• <strong>9sus4:</strong> Sus4 with added 9th (C9sus4)</li>
+                <li>• <strong>Add9sus2:</strong> Sus2 with added 9th</li>
+                <li>• <strong>11th Chords:</strong> Natural sus4 extensions</li>
+                <li>• <strong>Jazz Applications:</strong> Sophisticated voicings</li>
+              </ul>
+            </div>
+
+            <div className="bg-orange-50 rounded-lg p-6 border border-orange-200">
+              <h3 className="text-lg font-semibold text-orange-800 mb-3">🎵 Compositional Techniques</h3>
+              <ul className="space-y-2 text-sm text-orange-700">
+                <li>• <strong>Retardation:</strong> Sus4 resolving down</li>
+                <li>• <strong>Anticipation:</strong> Sus2 resolving up</li>
+                <li>• <strong>Neighboring Tones:</strong> Brief suspensions</li>
+                <li>• <strong>Pedal Points:</strong> Sustained notes with suspensions</li>
+                <li>• <strong>Modal Harmony:</strong> Suspensions in modes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Continue Your Chord Journey */}
+        <section className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Continue Your Chord Journey</h2>
+          <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+            Now that you&apos;ve mastered suspended chords, explore more chord types to expand your harmonic vocabulary 
+            and emotional expression. Each lesson builds upon your foundation to create more sophisticated and beautiful music.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/lessons/theory/chords/major" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-blue-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Major Chords</h3>
+                <p className="text-gray-600 text-sm">Review the bright, happy foundation of harmony</p>
               </div>
-              <div>
-                <h4 className="font-medium mb-2">Practical Application</h4>
-                <ul className="text-sm space-y-1">
-                  <li>• Songwriting with Sus Chords</li>
-                  <li>• Fingerpicking Patterns</li>
-                  <li>• Folk Guitar Techniques</li>
-                  <li>• Modern Pop Harmony</li>
-                </ul>
+            </Link>
+
+            <Link href="/lessons/theory/chords/minor" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-green-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Minor Chords</h3>
+                <p className="text-gray-600 text-sm">Explore the emotional depth of minor harmony</p>
               </div>
+            </Link>
+
+            <Link href="/lessons/theory/chords/seventh" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-purple-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2C7 1.448 7.448 1 8 1s1 .448 1 1v2M17 4V2c0-.552.448-1 1-1s1 .448 1 1v2M3 10h18M5 6h14c1.105 0 2 .895 2 2v11c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Seventh Chords</h3>
+                <p className="text-gray-600 text-sm">Add sophistication with jazzy four-note harmonies</p>
+              </div>
+            </Link>
+
+            <Link href="/lessons/theory/chords/extended" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-orange-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Extended Chords</h3>
+                <p className="text-gray-600 text-sm">Master complex jazz harmony with 9ths, 11ths, and 13ths</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4 mt-6">
+            <div>
+              <h4 className="font-medium mb-2">Theory Mastery</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Suspension Types</li>
+                <li>• Resolution Patterns</li>
+                <li>• Voice Leading</li>
+                <li>• Harmonic Function</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Technical Skills</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Smooth Transitions</li>
+                <li>• Finger Independence</li>
+                <li>• Open String Resonance</li>
+                <li>• Fingerpicking</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Practical Application</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Atmospheric Playing</li>
+                <li>• Tension & Release</li>
+                <li>• Song Analysis</li>
+                <li>• Songwriting</li>
+              </ul>
             </div>
           </div>
         </section>
 
         {/* Navigation */}
         <div className="flex justify-between items-center pt-8 border-t">
-          <a 
-            href="/lessons/theory/chords/seventh" 
+          <Link 
+            href="/lessons/theory/chords/minor" 
             className="text-blue-600 hover:text-blue-800 font-medium"
           >
-            ← Previous: Seventh Chords
-          </a>
-          <a 
-            href="/lessons/theory/chords/diminished" 
+            ← Previous: Minor Chords
+          </Link>
+          <Link 
+            href="/lessons/theory/chords/extended" 
             className="text-blue-600 hover:text-blue-800 font-medium"
           >
-            Next: Diminished Chords →
-          </a>
+            Next: Extended Chords →
+          </Link>
         </div>
       </main>
       
