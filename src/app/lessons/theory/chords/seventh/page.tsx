@@ -523,26 +523,94 @@ notes :w (0/6.3/5.2/4.0/3.0/2.0/1) | :w (0/5.2/4.0/3.2/2.0/1) | :w (1/4.0/3.2/2.
           </div>
         </div>
 
-        {/* Next Steps */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-8 border border-amber-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Your Chord Journey</h2>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Now that you understand seventh chords, explore how they connect to more advanced harmonic concepts and extended chords.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/lessons/theory/chords/extended" className="bg-rose-600 text-white px-6 py-3 rounded-lg hover:bg-rose-700 transition-colors">
-                Study Extended Chords
-              </Link>
-              <Link href="/lessons/theory/chords/suspended" className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                Learn Suspended Chords
-              </Link>
-              <Link href="/lessons/theory/chords/augmented" className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
-                Explore Augmented Chords
-              </Link>
+        {/* Continue Your Chord Journey */}
+        <section className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Continue Your Chord Journey</h2>
+          <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+            Now that you&apos;ve mastered seventh chords, explore more advanced chord types to expand your harmonic vocabulary 
+            and emotional expression. Each lesson builds upon your foundation to create more sophisticated and beautiful music.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/lessons/theory/chords/major" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-blue-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Major Chords</h3>
+                <p className="text-gray-600 text-sm">Review the bright, happy foundation of harmony</p>
+              </div>
+            </Link>
+
+            <Link href="/lessons/theory/chords/minor" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-purple-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2C7 1.448 7.448 1 8 1s1 .448 1 1v2M17 4V2c0-.552.448-1 1-1s1 .448 1 1v2M3 10h18M5 6h14c1.105 0 2 .895 2 2v11c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Minor Chords</h3>
+                <p className="text-gray-600 text-sm">Explore emotional depth and melancholic beauty</p>
+              </div>
+            </Link>
+
+            <Link href="/lessons/theory/chords/suspended" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-green-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Suspended Chords</h3>
+                <p className="text-gray-600 text-sm">Create tension and release with suspended harmony</p>
+              </div>
+            </Link>
+
+            <Link href="/lessons/theory/chords/extended" className="group">
+              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-blue-300">
+                <div className="text-orange-600 mb-3">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Extended Chords</h3>
+                <p className="text-gray-600 text-sm">Master complex jazz harmony with 9ths, 11ths, and 13ths</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4 mt-6">
+            <div>
+              <h4 className="font-medium mb-2">Theory Mastery</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Chord Construction</li>
+                <li>• Roman Numeral Analysis</li>
+                <li>• Voice Leading</li>
+                <li>• Harmonic Function</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Technical Skills</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Smooth Transitions</li>
+                <li>• Barre Techniques</li>
+                <li>• Rhythm Patterns</li>
+                <li>• Fingerpicking</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">Practical Application</h4>
+              <ul className="text-sm space-y-1">
+                <li>• Strumming Patterns</li>
+                <li>• Fingerpicking</li>
+                <li>• Song Analysis</li>
+                <li>• Songwriting</li>
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
       </main>
       
       <Footer />
