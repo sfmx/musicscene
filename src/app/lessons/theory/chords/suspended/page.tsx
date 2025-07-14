@@ -103,18 +103,7 @@ export default function SuspendedChordsPage() {
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Dsus4</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Dsus4 Chord"
-                      staves={[{
-                        id: 'dsus4-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (2/4.0/3.3/2.3/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Most common sus4 chord'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Dsus4" />
                   </div>
                   <p className="text-sm text-gray-600">Add pinky to D chord</p>
                 </div>
@@ -122,18 +111,7 @@ notes :w (2/4.0/3.3/2.3/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Asus4</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Asus4 Chord"
-                      staves={[{
-                        id: 'asus4-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/5.2/4.2/3.3/2.0/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Easy and versatile'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Asus4" />
                   </div>
                   <p className="text-sm text-gray-600">Add one finger to A chord</p>
                 </div>
@@ -141,18 +119,7 @@ notes :w (0/5.2/4.2/3.3/2.0/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Esus4</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Esus4 Chord"
-                      staves={[{
-                        id: 'esus4-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.2/5.2/4.2/3.0/2.0/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Rich, full sound'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Esus4" />
                   </div>
                   <p className="text-sm text-gray-600">Add finger to E chord</p>
                 </div>
@@ -165,18 +132,7 @@ notes :w (0/6.2/5.2/4.2/3.0/2.0/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Dsus2</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Dsus2 Chord"
-                      staves={[{
-                        id: 'dsus2-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (2/4.0/3.2/2.3/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Bright, open sound'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Dsus2" />
                   </div>
                   <p className="text-sm text-gray-600">Remove middle finger from D</p>
                 </div>
@@ -184,18 +140,7 @@ notes :w (2/4.0/3.2/2.3/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Asus2</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Asus2 Chord"
-                      staves={[{
-                        id: 'asus2-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/5.2/4.2/3.0/2.0/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Very easy to play'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Asus2" />
                   </div>
                   <p className="text-sm text-gray-600">Just two fingers needed</p>
                 </div>
@@ -203,18 +148,7 @@ notes :w (0/5.2/4.2/3.0/2.0/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">Esus2</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Esus2 Chord"
-                      staves={[{
-                        id: 'esus2-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.2/5.1/4.1/3.0/2.0/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Delicate, pretty sound'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Esus2" />
                   </div>
                   <p className="text-sm text-gray-600">Gentle resolution potential</p>
                 </div>

@@ -99,18 +99,7 @@ export default function SeventhChordsPage() {
                     <div className="text-center">
                       <h5 className="font-medium mb-2">G7</h5>
                       <div className="mb-3">
-                        <MusicScore
-                          title="G7 Chord"
-                          staves={[{
-                            id: 'g7-chord',
-                            notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.2/5.0/4.0/3.0/2.1/1)`,
-                            width: 180,
-                            scale: 1.0,
-                            title: 'Most common 7th chord'
-                          }]}
-                        />
+                        <SimpleFretboardDiagram chord="G7" />
                       </div>
                       <p className="text-sm text-gray-600">Essential blues and rock chord</p>
                     </div>
@@ -118,18 +107,7 @@ notes :w (3/6.2/5.0/4.0/3.0/2.1/1)`,
                     <div className="text-center">
                       <h5 className="font-medium mb-2">E7</h5>
                       <div className="mb-3">
-                        <MusicScore
-                          title="E7 Chord"
-                          staves={[{
-                            id: 'e7-chord',
-                            notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.2/5.0/4.1/3.0/2.0/1)`,
-                            width: 180,
-                            scale: 1.0,
-                            title: 'Easy open E7'
-                          }]}
-                        />
+                        <SimpleFretboardDiagram chord="E7" />
                       </div>
                       <p className="text-sm text-gray-600">One finger change from E major</p>
                     </div>
@@ -142,18 +120,7 @@ notes :w (0/6.2/5.0/4.1/3.0/2.0/1)`,
                     <div className="text-center">
                       <h5 className="font-medium mb-2">Am7</h5>
                       <div className="mb-3">
-                        <MusicScore
-                          title="Am7 Chord"
-                          staves={[{
-                            id: 'am7-chord',
-                            notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.0/5.2/4.0/3.1/2.0/1)`,
-                            width: 180,
-                            scale: 1.0,
-                            title: 'Easiest m7 chord'
-                          }]}
-                        />
+                        <SimpleFretboardDiagram chord="Am7" />
                       </div>
                       <p className="text-sm text-gray-600">Remove one finger from Am</p>
                     </div>
@@ -161,18 +128,7 @@ notes :w (0/6.0/5.2/4.0/3.1/2.0/1)`,
                     <div className="text-center">
                       <h5 className="font-medium mb-2">Em7</h5>
                       <div className="mb-3">
-                        <MusicScore
-                          title="Em7 Chord"
-                          staves={[{
-                            id: 'em7-chord',
-                            notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.2/5.0/4.0/3.0/2.0/1)`,
-                            width: 180,
-                            scale: 1.0,
-                            title: 'Very easy Em7'
-                          }]}
-                        />
+                        <SimpleFretboardDiagram chord="Em7" />
                       </div>
                       <p className="text-sm text-gray-600">Same as Em, easier fingering</p>
                     </div>
@@ -187,18 +143,7 @@ notes :w (0/6.2/5.0/4.0/3.0/2.0/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">CMaj7</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="CMaj7 Chord"
-                      staves={[{
-                        id: 'cmaj7-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.3/5.2/4.0/3.0/2.0/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Beautiful, dreamy sound'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="CMaj7" />
                   </div>
                   <p className="text-sm text-gray-600">Sophisticated, jazzy character</p>
                 </div>
@@ -206,18 +151,7 @@ notes :w (0/6.3/5.2/4.0/3.0/2.0/1)`,
                 <div className="text-center">
                   <h4 className="font-medium mb-3">FMaj7</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="FMaj7 Chord"
-                      staves={[{
-                        id: 'fmaj7-chord',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (1/6.3/5.2/4.1/3.0/2.x/1)`,
-                        width: 180,
-                        scale: 1.0,
-                        title: 'Rich, warm sound'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="FMaj7" />
                   </div>
                   <p className="text-sm text-gray-600">Alternative to F barre chord</p>
                 </div>
@@ -242,18 +176,7 @@ notes :w (1/6.3/5.2/4.1/3.0/2.x/1)`,
                 <div>
                   <h4 className="font-medium mb-3">Major 7th (6th string root)</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="BMaj7 Barre Chord"
-                      staves={[{
-                        id: 'bmaj7-barre',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (2/6.4/5.3/4.2/3.2/2.2/1)`,
-                        width: 200,
-                        scale: 1.0,
-                        title: 'Moveable Major 7th form'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="BMaj7_barre" />
                   </div>
                   <p className="text-sm text-gray-600">Root on 6th string, 2nd fret = BMaj7</p>
                 </div>
@@ -261,18 +184,7 @@ notes :w (2/6.4/5.3/4.2/3.2/2.2/1)`,
                 <div>
                   <h4 className="font-medium mb-3">Dominant 7th (6th string root)</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="B7 Barre Chord"
-                      staves={[{
-                        id: 'b7-barre',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (2/6.4/5.2/4.2/3.0/2.2/1)`,
-                        width: 200,
-                        scale: 1.0,
-                        title: 'Moveable Dominant 7th form'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="B7_barre" />
                   </div>
                   <p className="text-sm text-gray-600">Root on 6th string, 2nd fret = B7</p>
                 </div>
@@ -285,18 +197,7 @@ notes :w (2/6.4/5.2/4.2/3.0/2.2/1)`,
                 <div>
                   <h4 className="font-medium mb-3">Minor 7th (5th string root)</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="Dm7 Barre Chord"
-                      staves={[{
-                        id: 'dm7-barre',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (5/5.6/4.5/3.5/2.3/1)`,
-                        width: 200,
-                        scale: 1.0,
-                        title: 'Moveable Minor 7th form'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="Dm7_barre" />
                   </div>
                   <p className="text-sm text-gray-600">Root on 5th string, 5th fret = Dm7</p>
                 </div>
@@ -304,18 +205,7 @@ notes :w (5/5.6/4.5/3.5/2.3/1)`,
                 <div>
                   <h4 className="font-medium mb-3">Dominant 7th (5th string root)</h4>
                   <div className="mb-3">
-                    <MusicScore
-                      title="D7 Barre Chord"
-                      staves={[{
-                        id: 'd7-barre-5th',
-                        notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (5/5.6/4.7/3.5/2.3/1)`,
-                        width: 200,
-                        scale: 1.0,
-                        title: 'Alternative D7 form'
-                      }]}
-                    />
+                    <SimpleFretboardDiagram chord="D7_barre_5th" />
                   </div>
                   <p className="text-sm text-gray-600">Root on 5th string, 5th fret = D7</p>
                 </div>

@@ -31,6 +31,29 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'G_augmented': { frets: [3, 2, 1, 0, 0, 3], fingers: [4, 3, 1, 0, 0, 2] },
   'D+': { frets: [-1, -1, 0, 3, 3, 2], fingers: [-1, -1, 0, 2, 3, 1] },
   'D_augmented': { frets: [-1, -1, 0, 3, 3, 2], fingers: [-1, -1, 0, 2, 3, 1] },
+  // Seventh chords
+  'G7': { frets: [3, 2, 0, 0, 0, 1], fingers: [3, 2, 0, 0, 0, 1] },
+  'E7': { frets: [0, 2, 0, 1, 0, 0], fingers: [0, 2, 0, 1, 0, 0] },
+  'Am7': { frets: [-1, 0, 2, 0, 1, 0], fingers: [-1, 0, 2, 0, 1, 0] },
+  'Em7': { frets: [0, 2, 0, 0, 0, 0], fingers: [0, 2, 0, 0, 0, 0] },
+  'CMaj7': { frets: [-1, 3, 2, 0, 0, 0], fingers: [-1, 3, 2, 0, 0, 0] },
+  'FMaj7': { frets: [1, 3, 2, 1, 0, -1], fingers: [1, 3, 2, 1, 0, -1] },
+  'DMaj7': { frets: [-1, -1, 0, 2, 2, 2], fingers: [-1, -1, 0, 1, 1, 1] },
+  'BMaj7': { frets: [-1, 2, 4, 3, 4, -1], fingers: [-1, 1, 3, 2, 4, -1] },
+  'Dm7': { frets: [-1, -1, 0, 2, 1, 1], fingers: [-1, -1, 0, 2, 1, 1] },
+  'Bm7': { frets: [-1, 2, 0, 2, 0, 2], fingers: [-1, 1, 0, 2, 0, 3] },
+  // Suspended chords
+  'Dsus4': { frets: [-1, -1, 0, 2, 3, 3], fingers: [-1, -1, 0, 1, 2, 3] },
+  'Asus4': { frets: [-1, 0, 2, 2, 3, 0], fingers: [-1, 0, 1, 2, 3, 0] },
+  'Esus4': { frets: [0, 2, 2, 2, 0, 0], fingers: [0, 1, 2, 3, 0, 0] },
+  'Dsus2': { frets: [-1, -1, 0, 2, 3, 0], fingers: [-1, -1, 0, 1, 2, 0] },
+  'Asus2': { frets: [-1, 0, 2, 2, 0, 0], fingers: [-1, 0, 1, 2, 0, 0] },
+  'Esus2': { frets: [0, 2, 4, 4, 0, 0], fingers: [0, 1, 2, 3, 0, 0] },
+  // Barre chord forms (examples shown at specific frets)
+  'BMaj7_barre': { frets: [2, 4, 3, 2, 2, 2], fingers: [1, 4, 3, 1, 1, 2] },
+  'B7_barre': { frets: [2, 4, 2, 2, 0, 2], fingers: [1, 3, 1, 1, 0, 2] },
+  'Dm7_barre': { frets: [-1, 5, 6, 5, 5, 3], fingers: [-1, 1, 3, 1, 1, 1] },
+  'D7_barre_5th': { frets: [-1, 5, 6, 7, 5, 3], fingers: [-1, 1, 2, 4, 1, 1] },
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {
