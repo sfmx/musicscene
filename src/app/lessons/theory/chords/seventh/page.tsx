@@ -29,16 +29,18 @@ export default function SeventhChordsPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-xl p-8 mb-12 border border-amber-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Seventh Chords</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-amber-600 to-orange-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Seventh Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
             Seventh chords add the fourth note to triads, creating richer harmony and sophisticated musical 
-            colors essential in jazz, blues, and modern music. These four-note chords bridge the gap between 
-            simple triads and complex extended harmony, providing the foundation for professional-sounding 
-            progressions. From the dreamy sound of major sevenths in ballads to the bluesy tension of 
-            dominant sevenths, these chords are indispensable tools for any serious musician seeking to 
-            expand their harmonic vocabulary and create more sophisticated musical expressions.
+            colors essential in jazz, blues, and modern music.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Rich Harmony</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Jazz Essential</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Sophisticated Color</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Professional Sound</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}

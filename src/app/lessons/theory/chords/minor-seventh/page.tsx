@@ -28,17 +28,18 @@ export default function MinorSeventhChordsPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-slate-50 to-gray-100 rounded-xl p-8 mb-12 border border-gray-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Minor Seventh Chords</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
-            Minor seventh chords represent the perfect marriage of emotional depth and harmonic sophistication. 
-            By adding the minor seventh to a minor triad, these four-note chords create the smooth, contemplative 
-            sound that defines jazz, R&B, soul, and modern popular music. With their mellow character and rich 
-            harmonic texture, minor seventh chords provide the essential vocabulary for expressing complex emotions 
-            while maintaining sophisticated musical elegance. From intimate ballads to smooth jazz progressions, 
-            these chords offer musicians the tools to create music that is both emotionally resonant and 
-            harmonically advanced.
+        <div className="bg-gradient-to-r from-slate-700 to-gray-800 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Minor Seventh Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
+            Minor seventh chords represent the perfect marriage of emotional depth and harmonic sophistication, 
+            creating the smooth, contemplative sound that defines jazz, R&B, and modern music.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Emotional Sophistication</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Smooth Character</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Jazz Foundation</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Harmonic Elegance</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}

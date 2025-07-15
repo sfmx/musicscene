@@ -49,11 +49,31 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'Dsus2': { frets: [-1, -1, 0, 2, 3, 0], fingers: [-1, -1, 0, 1, 2, 0] },
   'Asus2': { frets: [-1, 0, 2, 2, 0, 0], fingers: [-1, 0, 1, 2, 0, 0] },
   'Esus2': { frets: [0, 2, 4, 4, 0, 0], fingers: [0, 1, 2, 3, 0, 0] },
-  // Barre chord forms (examples shown at specific frets)
-  'BMaj7_barre': { frets: [2, 4, 3, 2, 2, 2], fingers: [1, 4, 3, 1, 1, 2] },
-  'B7_barre': { frets: [2, 4, 2, 2, 0, 2], fingers: [1, 3, 1, 1, 0, 2] },
-  'Dm7_barre': { frets: [-1, 5, 6, 5, 5, 3], fingers: [-1, 1, 3, 1, 1, 1] },
-  'D7_barre_5th': { frets: [-1, 5, 6, 7, 5, 3], fingers: [-1, 1, 2, 4, 1, 1] },
+  // Diminished chords
+  'Adim': { frets: [-1, 0, 1, 2, 1, -1], fingers: [-1, 0, 1, 3, 2, -1] },
+  'A°': { frets: [-1, 0, 1, 2, 1, -1], fingers: [-1, 0, 1, 3, 2, -1] },
+  'Bdim': { frets: [-1, 2, 3, 4, 3, -1], fingers: [-1, 1, 2, 4, 3, -1] },
+  'B°': { frets: [-1, 2, 3, 4, 3, -1], fingers: [-1, 1, 2, 4, 3, -1] },
+  'Cdim': { frets: [-1, 3, 1, 2, 1, -1], fingers: [-1, 4, 1, 3, 2, -1] },
+  'C°': { frets: [-1, 3, 1, 2, 1, -1], fingers: [-1, 4, 1, 3, 2, -1] },
+  'Ddim': { frets: [-1, -1, 0, 1, 0, 1], fingers: [-1, -1, 0, 1, 0, 2] },
+  'D°': { frets: [-1, -1, 0, 1, 0, 1], fingers: [-1, -1, 0, 1, 0, 2] },
+  'Edim': { frets: [0, 1, 2, 0, 2, 0], fingers: [0, 1, 3, 0, 4, 0] },
+  'E°': { frets: [0, 1, 2, 0, 2, 0], fingers: [0, 1, 3, 0, 4, 0] },
+  'Fdim': { frets: [1, 2, 3, 1, 3, 1], fingers: [1, 2, 4, 1, 3, 1] },
+  'F°': { frets: [1, 2, 3, 1, 3, 1], fingers: [1, 2, 4, 1, 3, 1] },
+  'Gdim': { frets: [3, 1, 2, 0, 2, 0], fingers: [4, 1, 2, 0, 3, 0] },
+  'G°': { frets: [3, 1, 2, 0, 2, 0], fingers: [4, 1, 2, 0, 3, 0] },
+  // Diminished 7th chords
+  'Gdim7': { frets: [3, 4, 3, 4, 3, -1], fingers: [1, 3, 1, 4, 2, -1] },
+  'G°7': { frets: [3, 4, 3, 4, 3, -1], fingers: [1, 3, 1, 4, 2, -1] },
+  'Adim7': { frets: [5, 6, 5, 6, 5, -1], fingers: [1, 3, 1, 4, 2, -1] },
+  'A°7': { frets: [5, 6, 5, 6, 5, -1], fingers: [1, 3, 1, 4, 2, -1] },
+  // Half-diminished chords
+  'Am7b5': { frets: [-1, 0, 1, 0, 1, 0], fingers: [-1, 0, 1, 0, 2, 0] },
+  'Aø7': { frets: [-1, 0, 1, 0, 1, 0], fingers: [-1, 0, 1, 0, 2, 0] },
+  'Bm7b5': { frets: [-1, 2, 3, 2, 3, -1], fingers: [-1, 1, 3, 2, 4, -1] },
+  'Bø7': { frets: [-1, 2, 3, 2, 3, -1], fingers: [-1, 1, 3, 2, 4, -1] },
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

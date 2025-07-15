@@ -28,15 +28,18 @@ export default function SuspendedChordsPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl p-8 mb-12 border border-purple-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Suspended Chords</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-purple-600 to-pink-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Suspended Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
             Suspended chords create musical tension through the deliberate avoidance of the traditional major or minor third, 
-            replacing it with either the second or fourth degree of the scale. This substitution creates a floating, unresolved 
-            quality that yearns for harmonic resolution. Whether it's the dramatic sus4 that wants to resolve down to the third, 
-            or the ethereal sus2 that adds brightness without committing to major or minor, suspended chords are essential tools 
-            for creating emotional depth, smooth voice leading, and sophisticated harmonic movement across all musical styles.
+            replacing it with either the second or fourth degree of the scale.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Musical Tension</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Yearning Resolution</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Floating Quality</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Emotional Depth</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}

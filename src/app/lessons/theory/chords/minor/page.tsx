@@ -28,16 +28,18 @@ export default function MinorChordsPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-slate-50 to-gray-100 rounded-xl p-8 mb-12 border border-gray-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Minor Chords</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-slate-600 to-gray-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Minor Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
             Minor chords provide the emotional counterpoint to major chords, bringing depth, introspection, 
-            and melancholic beauty to music. Built by lowering the third degree of a major chord by a semitone, 
-            these three-note triads create the characteristic &quot;sad&quot; or contemplative sound that defines countless 
-            songs across all genres. From haunting ballads to powerful rock anthems, minor chords are essential 
-            tools for expressing the full spectrum of human emotion, offering composers and songwriters the 
-            harmonic language needed to convey complexity, yearning, and profound musical meaning.
+            and melancholic beauty to music.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Emotional Depth</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Introspective Beauty</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Melancholic Power</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Human Expression</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}

@@ -28,16 +28,18 @@ export default function MajorChordsPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-xl p-8 mb-12 border border-blue-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Major Chords</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-blue-600 to-cyan-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Major Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
             Major chords are the foundation of Western harmony, providing the bright, stable, and universally 
-            pleasant sound that defines countless songs across all genres. Built from the first, third, and 
-            fifth degrees of the major scale, these three-note triads create an immediate sense of resolution 
-            and happiness. From the very first chords beginners learn to the sophisticated voicings used by 
-            professional musicians, major chords remain essential tools for creating uplifting, consonant 
-            harmony that forms the backbone of popular music, classical compositions, and everything in between.
+            pleasant sound that defines countless songs across all genres.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Foundation of Harmony</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Bright & Stable</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Universal Appeal</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Essential Building Block</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
