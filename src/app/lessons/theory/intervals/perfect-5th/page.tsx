@@ -4,31 +4,41 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import Link from 'next/link';
 
 export default function Perfect5thPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Perfect 5th Interval"
         subtitle="The most consonant interval after the octave - 7 semitones that forms the foundation of power chords and harmonic relationships."
       />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/intervals" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Interval Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-emerald-50 to-green-100 rounded-xl p-8 mb-12 border border-emerald-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Perfect 5th Interval</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Perfect 5th Interval</h1>
+          <p className="text-xl opacity-90 mb-4">
             The perfect 5th is the most consonant interval after the octave, spanning 7 semitones 
-            and creating a pure, stable, and harmonious sound. This interval forms the foundation 
-            of power chords in rock music, the basis of traditional triads, and is fundamental to 
-            Western harmony. The perfect 5th has a strong, authoritative quality that reinforces 
-            the root note while adding harmonic richness. It's so stable that it barely sounds 
-            like two separate notes, making it essential for creating strong harmonic foundations 
-            in all musical styles.
+            and creating a pure, stable, and harmonious sound that forms the foundation of all harmony.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">7 Semitones</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Perfect Consonance</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Power Chords</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Harmonic Foundation</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
@@ -121,93 +131,57 @@ export default function Perfect5thPage() {
             </div>
           </div>
 
-          {/* Musical Notation */}
-          <div className="bg-white rounded-xl border border-emerald-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Musical Notation Examples</h3>
-            
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Ascending Perfect 5ths</h4>
-                <MusicScore
-                  title="Ascending Perfect 5th Intervals"
-                  staves={[{
-                    id: 'ascending-perfect-5th',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 3/6 3/5 | :h 0/5 0/4 | :h 2/5 2/4 | :h 3/5 3/4`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'G→D, A→E, B→F#, C→G'
-                  }]}
-                />
+        {/* Guitar Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Power Chords</h3>
+              <div className="space-y-4">
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <h4 className="font-semibold text-green-800 mb-2">Basic Power Chords</h4>
+                  <p className="text-sm text-green-700 mb-2">Perfect 5th intervals form the foundation of rock music:</p>
+                  <ul className="text-xs text-green-600 space-y-1">
+                    <li>• E5: E (6th string) + B (5th string)</li>
+                    <li>• A5: A (5th string) + E (4th string)</li>
+                    <li>• G5: G (6th string, 3rd fret) + D (5th string, 3rd fret)</li>
+                  </ul>
+                </div>
+                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
+                  <h4 className="font-semibold text-emerald-800 mb-2">Fretboard Patterns</h4>
+                  <p className="text-sm text-emerald-700 mb-2">Perfect 5ths across string pairs:</p>
+                  <ul className="text-xs text-emerald-600 space-y-1">
+                    <li>• Same string: 7 frets apart</li>
+                    <li>• Adjacent strings: Same fret (except G-B strings)</li>
+                    <li>• Power chord shapes: Moveable patterns</li>
+                  </ul>
+                </div>
               </div>
-
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Power Chord Examples</h4>
-                <MusicScore
-                  title="Power Chords (Perfect 5th Harmonies)"
-                  staves={[{
-                    id: 'power-chords',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.0/5) | :w (3/6.3/5) | :w (5/6.5/5) | :w (7/6.7/5)`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'E5, G5, A5, B5 power chords'
-                  }]}
-                />
-              </div>
-
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Triadic Foundation</h4>
-                <MusicScore
-                  title="Perfect 5th in Major Triads"
-                  staves={[{
-                    id: 'triadic-foundation',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.3/5.0/4) | :w (0/5.0/4.0/3) | :w (2/5.2/4.2/3) | :w (3/5.3/4.0/2)`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'G, A, B, C major triads - 5th provides stability'
-                  }]}
-                />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Harmonic Applications</h3>
+              <div className="space-y-4">
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-semibold text-blue-800 mb-2">Chord Construction</h4>
+                  <ul className="text-sm text-blue-700 space-y-2">
+                    <li>• <strong>Triads:</strong> Root + 3rd + 5th = complete chord</li>
+                    <li>• <strong>Sus4 chords:</strong> Root + 4th + 5th</li>
+                    <li>• <strong>Add9 chords:</strong> 5th provides stability for extensions</li>
+                    <li>• <strong>Open tunings:</strong> Natural 5ths in alternate tunings</li>
+                  </ul>
+                </div>
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <h4 className="font-semibold text-green-800 mb-2">Lead Guitar</h4>
+                  <ul className="text-sm text-green-700 space-y-2">
+                    <li>• <strong>Pentatonic scales:</strong> Built on 5th relationships</li>
+                    <li>• <strong>Melodic intervals:</strong> Strong, stable leaps</li>
+                    <li>• <strong>Harmonics:</strong> Natural harmonics at 7th fret</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Practical Applications Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Practical Applications
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-orange-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Rock & Metal Applications</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Power chords:</strong> Root + 5th foundation of rock rhythm</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Riff construction:</strong> 5ths create powerful melodic intervals</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Distorted harmony:</strong> 5ths stay clear under distortion</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Drop tunings:</strong> Easier access to low 5th intervals</span>
-                </li>
-              </ul>
-              
-              <div className="mt-6">
-                <MusicScore
-                  title="Rock Power Chord Riff"
+        </div>
                   staves={[{
                     id: 'rock-riff',
                     notation: `options space=20 font-size=14

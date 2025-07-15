@@ -4,17 +4,14 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 import Link from 'next/link';
 
 export default function Major3rdPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Major 3rd Interval"
-        subtitle="The happy interval - 4 semitones that defines major chords and creates the bright, joyful sound characteristic of major tonality."
+        subtitle="The bright interval - 4 semitones that defines major chords and creates the joyful, optimistic sound characteristic of major tonality."
       />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
@@ -25,22 +22,23 @@ export default function Major3rdPage() {
             className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
             <span className="mr-2">←</span>
-            Back to Intervals
+            Back to Interval Theory
           </Link>
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-yellow-50 to-amber-100 rounded-xl p-8 mb-12 border border-yellow-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Major 3rd Interval</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
-            The major 3rd is one of the most important intervals in Western music, spanning 4 semitones 
-            and creating the characteristic "happy" sound of major chords and scales. This interval is 
-            the defining feature that distinguishes major from minor tonality, giving major chords their 
-            bright, optimistic quality. Found in every major triad, the major 3rd is essential for 
-            understanding chord construction, harmonic progressions, and the emotional impact of major 
-            versus minor tonalities. Its warm, consonant sound makes it fundamental to genres from 
-            classical to pop music.
+        <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Major 3rd Interval</h1>
+          <p className="text-xl opacity-90 mb-4">
+            The major 3rd is the defining interval of major tonality, spanning 4 semitones and creating 
+            the characteristic bright, joyful sound that distinguishes major from minor harmony.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">4 Semitones</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Major Chord Foundation</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Bright & Happy</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Consonant</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
@@ -277,24 +275,57 @@ export default function Major3rdPage() {
           </div>
         </div>
 
-        {/* Next Steps */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl p-8 border border-yellow-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Your Interval Journey</h2>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Now that you understand the major 3rd, explore its companion intervals and learn how they work together in harmony.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/lessons/theory/intervals/minor-3rd" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                Learn Minor 3rd
-              </Link>
-              <Link href="/lessons/theory/intervals/perfect-5th" className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                Study Perfect 5th
-              </Link>
-              <Link href="/lessons/theory/intervals/major-6th" className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
-                Explore Major 6th
-              </Link>
-            </div>
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-yellow-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand the major 3rd, explore its companion intervals and learn how they work together in harmony.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/minor-3rd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">🌙</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 3rd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Compare the melancholic sound of minor 3rds against the bright major 3rd quality.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Explore the contrast →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/perfect-5th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Perfect 5th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Learn the stable foundation that completes major chords when combined with the major 3rd.
+                </p>
+                <span className="text-green-600 font-medium text-sm group-hover:text-green-700">
+                  Build stability →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/major-6th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">✨</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Major 6th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Discover how the major 3rd relates to its inversion and creates extended harmonies.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Add extensions →
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </main>

@@ -1,34 +1,44 @@
-"use client";
+'use client';
 
 import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
-import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import Link from 'next/link';
 
 export default function Minor2ndPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Minor 2nd Interval"
         subtitle="The smallest interval in Western music - 1 semitone that creates tension and dissonance in melodies and harmonies."
       />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/intervals" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Interval Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-red-50 to-pink-100 rounded-xl p-8 mb-12 border border-red-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Minor 2nd Interval</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
-            The minor 2nd is the smallest interval in Western music, spanning just 1 semitone (half step). 
-            This interval creates significant tension and dissonance, making it one of the most emotionally 
-            powerful intervals in music. Found in chromatic passages, blues scales, and dramatic classical 
-            compositions, the minor 2nd demands resolution and creates a sense of urgency or unease. 
-            Understanding this interval is crucial for creating tension in melodies and recognizing its 
-            distinctive sound in various musical contexts.
+        <div className="bg-gradient-to-r from-red-600 to-pink-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Minor 2nd Interval</h1>
+          <p className="text-xl opacity-90 mb-4">
+            The minor 2nd is the smallest interval in Western music, spanning just 1 semitone and creating 
+            significant tension and dissonance that demands resolution.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">1 Semitone</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Maximum Tension</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Demands Resolution</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Chromatic Foundation</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
@@ -120,39 +130,42 @@ export default function Minor2ndPage() {
 
           {/* Musical Notation */}
           <div className="bg-white rounded-xl border border-red-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Musical Notation Examples</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Musical Examples</h3>
             
             <div className="space-y-6">
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Ascending Minor 2nds</h4>
-                <MusicScore
-                  title="Ascending Minor 2nd Intervals"
-                  staves={[{
-                    id: 'ascending-minor-2nd',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 0/6 1/6 | :h 4/6 5/6 | :h 0/5 1/5 | :h 0/1 1/1`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'E→F, G#→A, A→A#, E→F (octave higher)'
-                  }]}
-                />
+              <div className="bg-red-50 rounded-lg p-4 border border-red-200">
+                <h4 className="text-lg font-medium text-red-800 mb-3">Ascending Minor 2nds</h4>
+                <div className="space-y-2 text-sm text-red-700">
+                  <div className="flex justify-between items-center">
+                    <span>E (open) → F (1st fret)</span>
+                    <span className="font-mono bg-red-100 px-2 py-1 rounded">Low E string</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>G# (4th fret) → A (5th fret)</span>
+                    <span className="font-mono bg-red-100 px-2 py-1 rounded">Low E string</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>A (open) → A# (1st fret)</span>
+                    <span className="font-mono bg-red-100 px-2 py-1 rounded">A string</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>E (open) → F (1st fret)</span>
+                    <span className="font-mono bg-red-100 px-2 py-1 rounded">High E string</span>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Harmonic Minor 2nds</h4>
-                <MusicScore
-                  title="Harmonic Minor 2nd Intervals"
-                  staves={[{
-                    id: 'harmonic-minor-2nd',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.1/6) | :w (0/5.1/5) | :w (4/4.5/4) | :w (0/1.1/1)`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'Simultaneous minor 2nds - notice the dissonance'
-                  }]}
-                />
+              <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                <h4 className="text-lg font-medium text-purple-800 mb-3">Harmonic Minor 2nds (Dissonance)</h4>
+                <p className="text-purple-700 text-sm mb-3">
+                  Playing minor 2nds simultaneously creates maximum harmonic tension. These intervals 
+                  are rarely used in traditional harmony except as passing tones or for special effect.
+                </p>
+                <div className="space-y-1 text-xs text-purple-600">
+                  <div>• Try playing adjacent frets on two strings simultaneously</div>
+                  <div>• Notice how the dissonance demands resolution</div>
+                  <div>• Used in modern classical and jazz for color</div>
+                </div>
               </div>
             </div>
           </div>
@@ -186,19 +199,18 @@ notes :w (0/6.1/6) | :w (0/5.1/5) | :w (4/4.5/4) | :w (0/1.1/1)`,
                 </li>
               </ul>
               
-              <div className="mt-6">
-                <MusicScore
-                  title="Chromatic Passing Tone"
-                  staves={[{
-                    id: 'chromatic-passing',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/5 4/5 5/5 6/5 | :q 7/5 8/5 9/5 10/5`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'Chromatic passing tones in melody'
-                  }]}
-                />
+              <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">
+                <h4 className="font-medium text-orange-800 mb-3">Chromatic Passing Tone Example</h4>
+                <p className="text-orange-700 text-sm mb-2">
+                  <strong>Guitar Exercise:</strong> Play ascending chromatic line on the A string
+                </p>
+                <div className="space-y-1 text-xs text-orange-600 font-mono">
+                  <div>3rd fret → 4th fret → 5th fret → 6th fret → 7th fret → 8th fret → 9th fret → 10th fret</div>
+                  <div>(C → C# → D → D# → E → F → F# → G)</div>
+                </div>
+                <p className="text-orange-700 text-xs mt-2">
+                  Each step is a minor 2nd interval creating smooth chromatic movement
+                </p>
               </div>
             </div>
             
@@ -223,19 +235,19 @@ notes :q 3/5 4/5 5/5 6/5 | :q 7/5 8/5 9/5 10/5`,
                 </li>
               </ul>
 
-              <div className="mt-6">
-                <MusicScore
-                  title="Minor 2nd in Harmony"
-                  staves={[{
-                    id: 'minor-2nd-harmony',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.3/5.4/4.3/3) | :w (3/6.3/5.3/4.3/3)`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'Cluster chord with minor 2nd tension'
-                  }]}
-                />
+              <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
+                <h4 className="font-medium text-purple-800 mb-3">Minor 2nd in Harmony Example</h4>
+                <p className="text-purple-700 text-sm mb-2">
+                  <strong>Cluster Chord Exercise:</strong> Create tension with close intervals
+                </p>
+                <div className="space-y-2 text-xs text-purple-600">
+                  <div><strong>Frets:</strong> 3rd fret (low E), 3rd fret (A), 4th fret (D), 3rd fret (G)</div>
+                  <div><strong>Notes:</strong> G - C - F# - Bb (contains multiple minor 2nds)</div>
+                  <div><strong>Effect:</strong> Dense, dissonant cluster requiring resolution</div>
+                </div>
+                <p className="text-purple-700 text-xs mt-2">
+                  This type of harmony is common in jazz and modern classical music
+                </p>
               </div>
             </div>
           </div>
@@ -365,18 +377,14 @@ notes :w (3/6.3/5.4/4.3/3) | :w (3/6.3/5.3/4.3/3)`,
               <p className="text-gray-700 mb-4">
                 Practice playing chromatic scales to familiarize yourself with consecutive minor 2nd intervals.
               </p>
-              <MusicScore
-                title="Chromatic Scale Exercise"
-                staves={[{
-                  id: 'chromatic-scale',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 0/6 1/6 2/6 3/6 4/6 5/6 6/6 7/6 | :8 8/6 9/6 10/6 11/6 12/6 11/6 10/6 9/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Chromatic scale on low E string'
-                }]}
-              />
+              <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+                <h4 className="font-medium text-amber-800 mb-3">Chromatic Scale on Low E String</h4>
+                <div className="space-y-2 text-sm text-amber-700">
+                  <div><strong>Ascending:</strong> Open → 1st → 2nd → 3rd → 4th → 5th → 6th → 7th → 8th → 9th → 10th → 11th → 12th frets</div>
+                  <div><strong>Notes:</strong> E → F → F# → G → G# → A → A# → B → C → C# → D → D# → E (octave)</div>
+                  <div><strong>Practice:</strong> Play slowly, focusing on the tense sound of each minor 2nd step</div>
+                </div>
+              </div>
             </div>
 
             <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
@@ -384,22 +392,47 @@ notes :8 0/6 1/6 2/6 3/6 4/6 5/6 6/6 7/6 | :8 8/6 9/6 10/6 11/6 12/6 11/6 10/6 9
               <p className="text-gray-700 mb-4">
                 Practice identifying minor 2nds by ear. Play these examples and listen to the characteristic dissonance.
               </p>
-              <MusicScore
-                title="Minor 2nd Recognition"
-                staves={[{
-                  id: 'minor-2nd-recognition',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (0/6.1/6) (4/5.5/5) | :h (0/4.1/4) (0/1.1/1)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Practice playing these harmonic minor 2nds'
-                }]}
-              />
+              <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+                <h4 className="font-medium text-amber-800 mb-3">Harmonic Minor 2nd Practice</h4>
+                <div className="space-y-2 text-sm text-amber-700">
+                  <div><strong>Example 1:</strong> Low E open + Low E 1st fret (E and F together)</div>
+                  <div><strong>Example 2:</strong> A string 4th fret + A string 5th fret (C# and D together)</div>
+                  <div><strong>Example 3:</strong> D string open + D string 1st fret (D and D# together)</div>
+                  <div><strong>Practice:</strong> Play each pair together, then resolve to consonant intervals</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+        {/* Continue Your Interval Journey */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Continue Your Interval Journey</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/lessons/theory/intervals/unison" className="group">
+              <div className="bg-gradient-to-br from-gray-50 to-indigo-50 rounded-lg p-4 border border-gray-200 hover:border-gray-300 transition-colors">
+                <h3 className="font-medium text-gray-800 group-hover:text-gray-900 mb-2">Unison</h3>
+                <p className="text-sm text-gray-600">Perfect unity - explore the foundation of musical pitch</p>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/major-2nd" className="group">
+              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg p-4 border border-orange-200 hover:border-orange-300 transition-colors">
+                <h3 className="font-medium text-orange-800 group-hover:text-orange-900 mb-2">Major 2nd</h3>
+                <p className="text-sm text-orange-600">Smooth melodic movement - the next step up</p>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/minor-3rd" className="group">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200 hover:border-blue-300 transition-colors">
+                <h3 className="font-medium text-blue-800 group-hover:text-blue-900 mb-2">Minor 3rd</h3>
+                <p className="text-sm text-blue-600">Sad and beautiful - foundation of minor chords</p>
+              </div>
+            </Link>
+          </div>
+        </div>
       </main>
+      
       <Footer />
     </Layout>
   );
