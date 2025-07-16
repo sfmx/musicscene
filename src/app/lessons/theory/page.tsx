@@ -221,22 +221,57 @@ export default function TheoryLessonsPage() {
           </section>
 
           {/* Getting Started */}
-          <section className="text-center">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Begin?</h2>
-              <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <section>
+            <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-xl p-8 border border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Ready to Begin?</h2>
+              <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
                 Start your music theory journey today. Whether you're a complete beginner or looking to fill gaps in your knowledge, 
                 these lessons will enhance your musical understanding and guitar playing.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/lessons/theory/intervals" className="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
-                  Start with Intervals
+              <div className="grid md:grid-cols-3 gap-6">
+                <Link href="/lessons/theory/intervals" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                      <span className="text-2xl">🎵</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Start with Intervals</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Master the building blocks of harmony and melody - the foundation of all music theory.
+                    </p>
+                    <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                      Build your foundation →
+                    </span>
+                  </div>
                 </Link>
-                <Link href="/lessons/theory/scales" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
-                  Explore Scales
+                
+                <Link href="/lessons/theory/scales" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                      <span className="text-2xl">🎼</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Explore Scales</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Understand the patterns that form melodies and create different musical moods.
+                    </p>
+                    <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                      Discover patterns →
+                    </span>
+                  </div>
                 </Link>
-                <Link href="/lessons/theory/chords" className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
-                  Learn Chords
+                
+                <Link href="/lessons/theory/chords" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                      <span className="text-2xl">🎸</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Learn Chords</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Build and understand chord structures that create the harmony in your music.
+                    </p>
+                    <span className="text-green-600 font-medium text-sm group-hover:text-green-700">
+                      Create harmony →
+                    </span>
+                  </div>
                 </Link>
               </div>
             </div>
