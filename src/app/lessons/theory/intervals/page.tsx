@@ -486,22 +486,57 @@ export default function IntervalsPage() {
           </section>
 
           {/* Get Started */}
-          <section className="text-center">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Start Your Interval Journey</h2>
-              <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <section>
+            <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Start Your Interval Journey</h2>
+              <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
                 Begin with the fundamental intervals and gradually work your way through the complete chromatic spectrum. 
                 Understanding intervals is key to unlocking harmony, melody, and musical expression.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/lessons/theory/intervals/perfect-5th" className="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
-                  Start with Perfect 5th
+              <div className="grid md:grid-cols-3 gap-6">
+                <Link href="/lessons/theory/intervals/unison" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 transition-colors">
+                      <span className="text-2xl">🎯</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Start with Unison</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Begin with perfect unity - the foundation of all musical intervals and harmony.
+                    </p>
+                    <span className="text-gray-600 font-medium text-sm group-hover:text-gray-700">
+                      Perfect foundation →
+                    </span>
+                  </div>
                 </Link>
-                <Link href="/lessons/theory/intervals/major-3rd" className="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors">
-                  Learn Major 3rd
+                
+                <Link href="/lessons/theory/intervals/perfect-5th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-emerald-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
+                      <span className="text-2xl">⚡</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Perfect 5th Power</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Discover the backbone of rock and the foundation of powerful guitar sounds.
+                    </p>
+                    <span className="text-emerald-600 font-medium text-sm group-hover:text-emerald-700">
+                      Feel the power →
+                    </span>
+                  </div>
                 </Link>
-                <Link href="/lessons/theory/intervals/octave" className="bg-violet-600 text-white px-6 py-3 rounded-lg hover:bg-violet-700 transition-colors">
-                  Master the Octave
+                
+                <Link href="/lessons/theory/intervals/major-3rd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-yellow-300 hover:shadow-lg transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors">
+                      <span className="text-2xl">☀️</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Bright Major 3rd</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Learn the interval that creates happiness and joy in major chords.
+                    </p>
+                    <span className="text-yellow-600 font-medium text-sm group-hover:text-yellow-700">
+                      Brighten your sound →
+                    </span>
+                  </div>
                 </Link>
               </div>
             </div>
