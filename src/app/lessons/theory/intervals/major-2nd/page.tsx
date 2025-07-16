@@ -379,85 +379,92 @@ export default function Major2ndPage() {
           </div>
         </section>
 
-        {/* Practice Exercises Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Practice Exercises
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 1: Major Scale Steps</h3>
-              <p className="text-gray-700 mb-4">
-                Practice major scales focusing on the major 2nd intervals within them.
-              </p>
-              <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
-                <h4 className="font-medium text-amber-800 mb-3">C Major Scale - Major 2nd Steps</h4>
-                <div className="space-y-2 text-sm text-amber-700">
-                  <div><strong>A String Pattern:</strong> 3rd → 5th → 6th → 8th → 10th → 12th → 14th → 15th frets</div>
-                  <div><strong>Notes:</strong> C → D → E → F → G → A → B → C (octave)</div>
-                  <div><strong>Major 2nds:</strong> C→D, D→E, F→G, G→A, A→B (5 major 2nds out of 7 steps)</div>
-                  <div><strong>Minor 2nds:</strong> E→F, B→C (only 2 minor 2nds)</div>
-                </div>
-              </div>
+        {/* Practice Exercises */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
+              <h3 className="text-lg font-semibold text-orange-800 mb-3">👂 Ear Training</h3>
+              <ul className="text-orange-700 text-sm space-y-2">
+                <li>• Use "Happy Birthday" as reference</li>
+                <li>• Practice major 2nd vs. minor 2nd</li>
+                <li>• Study major scale step patterns</li>
+                <li>• Listen to diatonic melodies</li>
+                <li>• Compare whole step vs. half step</li>
+              </ul>
             </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 2: Interval Recognition</h3>
-              <p className="text-gray-700 mb-4">
-                Practice playing and recognizing major 2nds both melodically and harmonically.
-              </p>
-              <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
-                <h4 className="font-medium text-amber-800 mb-3">Major 2nd Recognition Practice</h4>
-                <div className="space-y-2 text-sm text-amber-700">
-                  <div><strong>Harmonic Example 1:</strong> Low E 3rd fret + Low E 5th fret (G and A together)</div>
-                  <div><strong>Harmonic Example 2:</strong> A string open + A string 2nd fret (A and B together)</div>
-                  <div><strong>Harmonic Example 3:</strong> A string 3rd fret + A string 5th fret (C and D together)</div>
-                  <div><strong>Practice:</strong> Compare the pleasant sound with minor 2nds (adjacent frets)</div>
-                </div>
-              </div>
+            <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+              <h3 className="text-lg font-semibold text-yellow-800 mb-3">🎸 Technical Practice</h3>
+              <ul className="text-yellow-700 text-sm space-y-2">
+                <li>• Master major scales (2-fret steps)</li>
+                <li>• Practice C-D, D-E, F-G, G-A, A-B</li>
+                <li>• Work on smooth melodic lines</li>
+                <li>• Study diatonic scale patterns</li>
+                <li>• Practice major 2nd harmonies</li>
+              </ul>
             </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 3: Melodic Patterns</h3>
-              <p className="text-gray-700 mb-4">
-                Create flowing melodies using major 2nd intervals as the primary melodic movement.
-              </p>
-              <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
-                <h4 className="font-medium text-amber-800 mb-3">Melodic Pattern Using Major 2nds</h4>
-                <div className="space-y-2 text-sm text-amber-700">
-                  <div><strong>Pattern 1:</strong> 3rd → 5th → 3rd → 5th → 6th → 8th → 6th → 8th (A string)</div>
-                  <div><strong>Pattern 2:</strong> 10th → 8th → 6th → 5th → 3rd → 5th → 6th → 8th (A string)</div>
-                  <div><strong>Notes:</strong> C-D-C-D-E-F-E-F, then G-F-E-D-C-D-E-F</div>
-                  <div><strong>Focus:</strong> Smooth melodic movement emphasizing major 2nd steps</div>
-                </div>
-              </div>
+            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">🎵 Musical Application</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li>• Create flowing melodic phrases</li>
+                <li>• Study folk melody patterns</li>
+                <li>• Explore diatonic harmonization</li>
+                <li>• Practice scale-based improvisation</li>
+                <li>• Analyze stepwise motion in songs</li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Continue Your Interval Journey */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Continue Your Interval Journey</h2>
-          <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/lessons/theory/intervals/minor-2nd" className="group">
-              <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-lg p-4 border border-red-200 hover:border-red-300 transition-colors">
-                <h3 className="font-medium text-red-800 group-hover:text-red-900 mb-2">Minor 2nd</h3>
-                <p className="text-sm text-red-600">Explore tension and dissonance - the smallest interval</p>
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-orange-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            From smooth melodic movement, explore intervals that add emotion and harmonic color.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/minor-2nd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <span className="text-2xl">😬</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 2nd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Step back to explore tension and dissonance - the smallest interval.
+                </p>
+                <span className="text-red-600 font-medium text-sm group-hover:text-red-700">
+                  Feel the tension →
+                </span>
               </div>
             </Link>
             
-            <Link href="/lessons/theory/intervals/minor-3rd" className="group">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200 hover:border-blue-300 transition-colors">
-                <h3 className="font-medium text-blue-800 group-hover:text-blue-900 mb-2">Minor 3rd</h3>
-                <p className="text-sm text-blue-600">Sad and beautiful - foundation of minor chords</p>
+            <Link href="/lessons/theory/intervals/minor-3rd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">😢</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 3rd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Step forward to sad beauty - the foundation of minor chords.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Explore emotion →
+                </span>
               </div>
             </Link>
             
-            <Link href="/lessons/theory/intervals/major-3rd" className="group">
-              <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-lg p-4 border border-yellow-200 hover:border-yellow-300 transition-colors">
-                <h3 className="font-medium text-yellow-800 group-hover:text-yellow-900 mb-2">Major 3rd</h3>
-                <p className="text-sm text-yellow-600">Bright and happy - foundation of major chords</p>
+            <Link href="/lessons/theory/intervals/major-3rd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-yellow-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors">
+                  <span className="text-2xl">😊</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Major 3rd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Continue to bright happiness - the foundation of major chords.
+                </p>
+                <span className="text-yellow-600 font-medium text-sm group-hover:text-yellow-700">
+                  Find joy →
+                </span>
               </div>
             </Link>
           </div>
