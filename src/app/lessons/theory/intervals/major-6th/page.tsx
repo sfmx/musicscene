@@ -4,14 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 import Link from 'next/link';
 
 export default function Major6thPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Major 6th Interval"
         subtitle="The sweet interval - 9 semitones that creates warm, romantic harmony and is the inversion of the minor 3rd."
@@ -25,21 +22,23 @@ export default function Major6thPage() {
             className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
             <span className="mr-2">←</span>
-            Back to Intervals
+            Back to Interval Theory
           </Link>
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-teal-50 to-cyan-100 rounded-xl p-8 mb-12 border border-teal-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Major 6th Interval</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Major 6th Interval</h1>
+          <p className="text-xl opacity-90 mb-4">
             The major 6th is one of the most beautiful and emotionally resonant intervals in music, spanning 
-            9 semitones and creating a warm, sweet harmonic color. This interval is the inversion of the 
-            minor 3rd, which gives it a complex relationship between brightness and depth. The major 6th 
-            appears in major 6th chords, adds romantic character to melodies, and creates some of the most 
-            memorable moments in popular music. Its open, expansive sound makes it perfect for creating 
-            feelings of longing, romance, and nostalgic beauty across all musical genres.
+            9 semitones and creating warm, sweet harmonic color that evokes romance and nostalgia.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">9 Semitones</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Sweet & Romantic</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Minor 3rd Inversion</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Warm Harmony</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
@@ -50,24 +49,24 @@ export default function Major6thPage() {
               <h3 className="text-lg font-medium text-gray-800 mb-3">Interval Properties</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
+                  <span className="text-emerald-500 mt-1">•</span>
                   <span><strong>Size:</strong> 9 semitones (4½ whole steps)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
+                  <span className="text-emerald-500 mt-1">•</span>
                   <span><strong>Quality:</strong> Major</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
+                  <span className="text-emerald-500 mt-1">•</span>
                   <span><strong>Sound:</strong> Sweet, warm, romantic</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>Consonance:</strong> Imperfect consonance</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>Consonance:</strong> Moderately consonant</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>Function:</strong> Adds warmth, creates 6th chords</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>Inversion:</strong> Minor 3rd (3 semitones)</span>
                 </li>
               </ul>
             </div>
@@ -75,54 +74,22 @@ export default function Major6thPage() {
               <h3 className="text-lg font-medium text-gray-800 mb-3">Common Examples</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>C to A:</strong> Classic major 6th</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>C to A:</strong> Major 6th</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>F to D:</strong> In F6 chord</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>F to D:</strong> Major 6th</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>G to E:</strong> In G6 chord</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>"My Bonnie Lies Over the Ocean":</strong> Opening leap</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-1">•</span>
-                  <span><strong>Do to La:</strong> 1st to 6th scale degree</span>
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span><strong>"Nobody Knows the Trouble I've Seen":</strong> "No-bo-dy"</span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Interval Inversion */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Interval Inversion Relationship</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Major 6th ↔ Minor 3rd</h3>
-              <div className="bg-teal-50 rounded-lg p-6 border border-teal-200">
-                <h4 className="font-semibold text-teal-800 mb-3">Inversion Properties</h4>
-                <ul className="text-sm text-teal-700 space-y-2">
-                  <li>• <strong>Major 6th:</strong> 9 semitones up = 3 semitones down</li>
-                  <li>• <strong>Minor 3rd:</strong> 3 semitones up = 9 semitones down</li>
-                  <li>• <strong>Combined:</strong> 9 + 3 = 12 semitones (octave)</li>
-                  <li>• <strong>Emotional complement:</strong> Bright warmth ↔ Dark beauty</li>
-                </ul>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Implications</h3>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Chord Voicing</h4>
-                  <p className="text-sm text-gray-600">A C major chord (C-E-G) inverted becomes E-G-C, where C-A creates a major 6th.</p>
-                </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Harmonic Color</h4>
-                  <p className="text-sm text-gray-600">The same notes create different emotional effects depending on which note is in the bass.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -132,46 +99,47 @@ export default function Major6thPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Construction</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
               <div className="space-y-4">
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="font-semibold text-teal-800 mb-2">Major 6th Chords</h4>
-                  <p className="text-sm text-teal-700 mb-2">Add the major 6th to basic triads:</p>
-                  <ul className="text-xs text-teal-600 space-y-1">
-                    <li>• C6: C-E-G-A (major 6th: C to A)</li>
-                    <li>• Am6: A-C-E-F# (major 6th: A to F#)</li>
-                    <li>• F6: F-A-C-D (major 6th: F to D)</li>
+                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
+                  <h4 className="font-semibold text-emerald-800 mb-2">9-Fret Pattern</h4>
+                  <p className="text-sm text-emerald-700 mb-2">Major 6th = 9 frets apart:</p>
+                  <ul className="text-xs text-emerald-600 space-y-1">
+                    <li>• Same string: 9 frets apart</li>
+                    <li>• Cross-string: root on 6th string, 6th on 4th string (+2 frets)</li>
+                    <li>• Open string to 9th fret relationships</li>
+                    <li>• Chord inversion patterns</li>
                   </ul>
                 </div>
-                <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
-                  <h4 className="font-semibold text-cyan-800 mb-2">Jazz Harmony</h4>
-                  <p className="text-sm text-cyan-700 mb-2">Major 6ths in sophisticated voicings:</p>
-                  <ul className="text-xs text-cyan-600 space-y-1">
-                    <li>• 6/9 chords: Add both 6th and 9th</li>
-                    <li>• Minor 6th chords: Minor triad + major 6th</li>
-                    <li>• Quartal harmony: Stacked 4ths create 6th relationships</li>
+                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
+                  <h4 className="font-semibold text-teal-800 mb-2">Major 6th Chord Voicings</h4>
+                  <p className="text-sm text-teal-700 mb-2">Adding the 6th to major chords:</p>
+                  <ul className="text-xs text-teal-600 space-y-1">
+                    <li>• C6: C-E-G-A (root, 3rd, 5th, 6th)</li>
+                    <li>• Am6: A-C-E-F# (minor with major 6th)</li>
+                    <li>• Jazz and folk chord extensions</li>
                   </ul>
                 </div>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Applications</h3>
               <div className="space-y-4">
-                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                  <h4 className="font-semibold text-emerald-800 mb-2">Common Positions</h4>
-                  <ul className="text-sm text-emerald-700 space-y-2">
-                    <li>• <strong>Same string:</strong> 9 frets apart</li>
-                    <li>• <strong>Adjacent strings:</strong> 4 frets up (standard tuning)</li>
-                    <li>• <strong>Open chords:</strong> Am6, Em6, Dm6 shapes</li>
-                    <li>• <strong>Barre chords:</strong> Adding 6th to moveable shapes</li>
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-semibold text-blue-800 mb-2">Major 6th Chords</h4>
+                  <ul className="text-sm text-blue-700 space-y-2">
+                    <li>• <strong>Jazz standards:</strong> Sophisticated harmony</li>
+                    <li>• <strong>Folk music:</strong> Warm, open sound</li>
+                    <li>• <strong>Gospel:</strong> Soulful chord extensions</li>
+                    <li>• <strong>Pop ballads:</strong> Romantic atmosphere</li>
                   </ul>
                 </div>
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="font-semibold text-teal-800 mb-2">Scale Applications</h4>
-                  <ul className="text-sm text-teal-700 space-y-2">
-                    <li>• <strong>Major scale:</strong> 1st to 6th degree relationship</li>
-                    <li>• <strong>Pentatonic:</strong> Major 6th intervals within patterns</li>
-                    <li>• <strong>Dorian mode:</strong> Natural major 6th in minor context</li>
+                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
+                  <h4 className="font-semibold text-emerald-800 mb-2">Melodic Applications</h4>
+                  <ul className="text-sm text-emerald-700 space-y-2">
+                    <li>• <strong>Romantic melodies:</strong> Expressive leaps</li>
+                    <li>• <strong>Modal interchange:</strong> Dorian mode color</li>
+                    <li>• <strong>Country music:</strong> Pedal steel guitar sounds</li>
                   </ul>
                 </div>
               </div>
@@ -184,32 +152,32 @@ export default function Major6thPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Musical Examples & Famous Uses</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Classical Examples</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Classical & Traditional</h3>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Debussy's "Clair de Lune"</h4>
-                  <p className="text-sm text-gray-600 mb-2">Beautiful major 6th harmonies create impressionist color</p>
-                  <p className="text-xs text-gray-500">Demonstrates the romantic, dreamy quality of major 6ths</p>
+                  <h4 className="font-semibold text-gray-800">"My Bonnie Lies Over the Ocean"</h4>
+                  <p className="text-sm text-gray-600 mb-2">Opening major 6th leap creates yearning, expansive feeling</p>
+                  <p className="text-xs text-gray-500">Classic example of major 6th's romantic character</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Mozart's Piano Sonatas</h4>
-                  <p className="text-sm text-gray-600 mb-2">Graceful melodic major 6ths in classical style</p>
-                  <p className="text-xs text-gray-500">Elegant use of 6th intervals for melodic beauty</p>
+                  <h4 className="font-semibold text-gray-800">"Nobody Knows the Trouble I've Seen"</h4>
+                  <p className="text-sm text-gray-600 mb-2">"No-bo-dy" features distinctive major 6th interval</p>
+                  <p className="text-xs text-gray-500">Spiritual demonstrates interval's emotional depth</p>
                 </div>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Popular Music</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Modern Music</h3>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">"My Way" - Frank Sinatra</h4>
-                  <p className="text-sm text-gray-600 mb-2">Opens with a memorable major 6th leap</p>
-                  <p className="text-xs text-gray-500">Classic example of major 6th's emotional impact</p>
+                  <h4 className="font-semibold text-gray-800">Jazz Standards & Ballads</h4>
+                  <p className="text-sm text-gray-600 mb-2">Major 6th chords in "The Way You Look Tonight", "Misty"</p>
+                  <p className="text-xs text-gray-500">Essential for sophisticated jazz harmony</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">"Music Box Dancer" - Frank Mills</h4>
-                  <p className="text-sm text-gray-600 mb-2">Built around major 6th chord progressions</p>
-                  <p className="text-xs text-gray-500">Showcases the sweet, nostalgic quality of 6th chords</p>
+                  <h4 className="font-semibold text-gray-800">Country & Folk Music</h4>
+                  <p className="text-sm text-gray-600 mb-2">Pedal steel guitar and major 6th chord progressions</p>
+                  <p className="text-xs text-gray-500">Creates characteristic country and folk warmth</p>
                 </div>
               </div>
             </div>
@@ -220,99 +188,66 @@ export default function Major6thPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-              <h3 className="text-lg font-semibold text-teal-800 mb-3">👂 Ear Training</h3>
-              <ul className="text-teal-700 text-sm space-y-2">
-                <li>• Practice major 6th interval recognition</li>
-                <li>• Compare with minor 6th and perfect 5th</li>
-                <li>• Listen to 6th chord progressions</li>
-                <li>• Use "My Way" as reference (opening interval)</li>
-                <li>• Study inversion relationship with minor 3rd</li>
-              </ul>
-            </div>
-            <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
-              <h3 className="text-lg font-semibold text-cyan-800 mb-3">🎸 Technical Practice</h3>
-              <ul className="text-cyan-700 text-sm space-y-2">
-                <li>• Play major 6ths across all string pairs</li>
-                <li>• Practice 6th chord voicings and progressions</li>
-                <li>• Work on major scale 1-6 relationships</li>
-                <li>• Study jazz 6/9 chord voicings</li>
-                <li>• Practice major 6th arpeggios</li>
-              </ul>
-            </div>
             <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-              <h3 className="text-lg font-semibold text-emerald-800 mb-3">🎵 Musical Application</h3>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-3">👂 Ear Training</h3>
               <ul className="text-emerald-700 text-sm space-y-2">
-                <li>• Compose melodies featuring major 6th leaps</li>
-                <li>• Analyze songs using 6th chords</li>
-                <li>• Practice harmonizing with major 6ths</li>
-                <li>• Study Dorian mode (natural 6th)</li>
-                <li>• Experiment with 6th chord substitutions</li>
+                <li>• Use "My Bonnie" as reference</li>
+                <li>• Practice major 6th vs. minor 6th</li>
+                <li>• Listen to major 6th chord progressions</li>
+                <li>• Study jazz ballad harmony</li>
+                <li>• Compare with perfect 5th and minor 7th</li>
+              </ul>
+            </div>
+            <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
+              <h3 className="text-lg font-semibold text-teal-800 mb-3">🎸 Technical Practice</h3>
+              <ul className="text-teal-700 text-sm space-y-2">
+                <li>• Master 9-fret same-string 6ths</li>
+                <li>• Practice C-A, F-D, G-E intervals</li>
+                <li>• Work on major 6th chord shapes</li>
+                <li>• Study cross-string 6th patterns</li>
+                <li>• Practice major 6th melodic leaps</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">🎵 Musical Application</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li>• Create romantic melodic phrases</li>
+                <li>• Study jazz major 6th chord usage</li>
+                <li>• Explore country/folk 6th harmony</li>
+                <li>• Practice modal interchange (Dorian)</li>
+                <li>• Analyze major 6th in favorite songs</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Emotional Character */}
+        {/* Theory & Harmony */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Emotional Character & Expression</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Theory & Harmonic Function</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Emotional Qualities</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Inversion Relationship</h3>
               <div className="space-y-3">
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Romance & Nostalgia</h4>
-                  <p className="text-sm text-gray-600">The major 6th creates a bittersweet feeling that's perfect for romantic ballads and nostalgic themes.</p>
+                  <h4 className="font-semibold text-gray-800">Minor 3rd Inversion</h4>
+                  <p className="text-sm text-gray-600">The major 6th inverts to a minor 3rd. When you flip a C-A major 6th, you get A-C (minor 3rd), creating an interesting harmonic duality.</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Warmth & Comfort</h4>
-                  <p className="text-sm text-gray-600">Unlike the brightness of major 3rds, major 6ths provide warmth without being overly cheerful.</p>
+                  <h4 className="font-semibold text-gray-800">Harmonic Series Position</h4>
+                  <p className="text-sm text-gray-600">The major 6th appears later in the harmonic series, giving it a more complex but still consonant character.</p>
                 </div>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Stylistic Applications</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Functions</h3>
               <div className="space-y-3">
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Jazz Standards</h4>
-                  <p className="text-sm text-gray-600">Major 6th chords are essential in jazz for their sophisticated, mature harmonic color.</p>
+                  <h4 className="font-semibold text-gray-800">Major 6th Chords</h4>
+                  <p className="text-sm text-gray-600">Add warmth without the pull of dominant 7th chords. Often used as tonic substitutes in jazz and as color chords in folk music.</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Folk Music</h4>
-                  <p className="text-sm text-gray-600">Natural major 6ths in folk melodies create an authentic, earthy quality.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Harmonic Function */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Harmonic Function & Theory</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Extensions</h3>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Add6 Chords</h4>
-                  <p className="text-sm text-gray-600">Adding the major 6th to triads creates rich, full harmonies without the pull of 7th chords.</p>
-                </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">6/9 Chords</h4>
-                  <p className="text-sm text-gray-600">Combining 6th and 9th creates sophisticated jazz voicings with open, spacious sound.</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Voice Leading</h3>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Smooth Motion</h4>
-                  <p className="text-sm text-gray-600">Major 6ths resolve beautifully to perfect 5ths, creating elegant voice leading patterns.</p>
-                </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-800">Modal Harmony</h4>
-                  <p className="text-sm text-gray-600">Essential in Dorian mode, where the natural 6th distinguishes it from natural minor.</p>
+                  <h4 className="font-semibold text-gray-800">Modal Color</h4>
+                  <p className="text-sm text-gray-600">The major 6th gives Dorian mode its characteristic sound, distinguishing it from natural minor.</p>
                 </div>
               </div>
             </div>
@@ -324,41 +259,74 @@ export default function Major6thPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Related Intervals & Comparisons</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-              <h3 className="font-semibold text-blue-800 mb-2">Minor 3rd</h3>
-              <p className="text-sm text-blue-700 mb-2">3 semitones - inversion of major 6th</p>
-              <p className="text-xs text-blue-600">Same notes in different octaves create contrasting emotions</p>
-            </div>
-            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-              <h3 className="font-semibold text-indigo-800 mb-2">Minor 6th</h3>
-              <p className="text-sm text-indigo-700 mb-2">8 semitones - darker, more melancholic</p>
-              <p className="text-xs text-indigo-600">Half-step difference creates very different emotional quality</p>
+              <h3 className="font-semibold text-blue-800 mb-2">Minor 6th</h3>
+              <p className="text-sm text-blue-700 mb-2">8 semitones - one semitone smaller</p>
+              <p className="text-xs text-blue-600">Sad vs. sweet - same interval quality, different emotion</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="font-semibold text-green-800 mb-2">Perfect 5th</h3>
-              <p className="text-sm text-green-700 mb-2">7 semitones - more stable resolution target</p>
-              <p className="text-xs text-green-600">Major 6ths often resolve down to perfect 5ths</p>
+              <p className="text-sm text-green-700 mb-2">7 semitones - two semitones smaller</p>
+              <p className="text-xs text-green-600">Rock solid vs. romantically expansive</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="font-semibold text-purple-800 mb-2">Minor 7th</h3>
+              <p className="text-sm text-purple-700 mb-2">10 semitones - one semitone larger</p>
+              <p className="text-xs text-purple-600">Sweet vs. bluesy - different harmonic functions</p>
             </div>
           </div>
         </div>
 
-        {/* Next Steps */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-8 border border-teal-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Explore Warm Harmony</h2>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              The major 6th adds warmth and sophistication to your harmonic palette. Discover how it relates to other intervals and enhances musical expression.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/lessons/theory/intervals/minor-3rd" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                Study Minor 3rd (Inversion)
-              </Link>
-              <Link href="/lessons/theory/intervals/minor-6th" className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors">
-                Compare Minor 6th
-              </Link>
-              <Link href="/lessons/theory/intervals/major-7th" className="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors">
-                Learn Major 7th
-              </Link>
-            </div>
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-emerald-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            From sweet romance, explore intervals that add different emotional colors and harmonic functions.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/minor-6th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">😢</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 6th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Compare the sad beauty - explore the minor 6th's melancholic character.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Feel the sadness →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/perfect-5th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Perfect 5th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Step back to rock-solid stability - the foundation of power chords.
+                </p>
+                <span className="text-green-600 font-medium text-sm group-hover:text-green-700">
+                  Find power →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/minor-7th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🎵</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 7th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Step up to bluesy sophistication - essential for dominant 7th chords.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Add blues →
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </main>
