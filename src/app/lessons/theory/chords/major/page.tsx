@@ -406,23 +406,56 @@ export default function MajorChordsPage() {
         </div>
 
         {/* Continue Your Chord Journey */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Continue Your Chord Journey</h2>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Now that you've mastered major chords, explore how they connect to other chord types and advanced harmonic concepts.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/lessons/theory/chords/minor" className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                Learn Minor Chords
-              </Link>
-              <Link href="/lessons/theory/chords/seventh" className="bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-colors">
-                Study Seventh Chords
-              </Link>
-              <Link href="/lessons/theory/chords/suspended" className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
-                Explore Suspended Chords
-              </Link>
-            </div>
+        <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Chord Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand major chords, explore how they connect to other chord types and advanced harmonic concepts.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/chords/minor" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🌙</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Explore emotional depth and melancholic beauty in harmony.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Feel the emotion →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/chords/seventh" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-amber-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-200 transition-colors">
+                  <span className="text-2xl">🎵</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Seventh Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Add rich color and jazz sophistication to your playing.
+                </p>
+                <span className="text-amber-600 font-medium text-sm group-hover:text-amber-700">
+                  Add sophistication →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/chords/suspended" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Suspended Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Create tension and release with suspended harmony.
+                </p>
+                <span className="text-green-600 font-medium text-sm group-hover:text-green-700">
+                  Build tension →
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </main>
