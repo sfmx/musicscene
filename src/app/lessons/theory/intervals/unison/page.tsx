@@ -320,58 +320,89 @@ export default function UnisonPage() {
         {/* Practice Exercises */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
-          
-          <div className="space-y-6">
-            <div className="bg-indigo-50 rounded-lg p-6 border border-indigo-200">
-              <h3 className="text-lg font-medium text-indigo-800 mb-4">Exercise 1: Finding Unisons</h3>
-              <p className="text-indigo-700 mb-4">
-                Practice finding the same note on different strings and positions.
-              </p>
-              <ol className="list-decimal list-inside space-y-2 text-sm text-indigo-600">
-                <li>Play an open string note</li>
-                <li>Find the same pitch on another string</li>
-                <li>Compare the timbral differences</li>
-                <li>Practice smooth transitions between unison positions</li>
-              </ol>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">👂 Ear Training</h3>
+              <ul className="text-indigo-700 text-sm space-y-2">
+                <li>• Compare unison notes on different strings</li>
+                <li>• Listen for timbral differences in unisons</li>
+                <li>• Practice identifying perfect unisons</li>
+                <li>• Train ear for slight tuning variations</li>
+                <li>• Study harmonic reinforcement effects</li>
+              </ul>
             </div>
-            
-            <div className="bg-purple-50 rounded-lg p-6 border border-purple-200">
-              <h3 className="text-lg font-medium text-purple-800 mb-4">Exercise 2: Unison Scales</h3>
-              <p className="text-purple-700 mb-4">
-                Play scales using unison notes on different strings for smooth voice leading.
-              </p>
-              <ol className="list-decimal list-inside space-y-2 text-sm text-purple-600">
-                <li>Start with a simple C major scale</li>
-                <li>Use unison positions to create smoother fingerings</li>
-                <li>Focus on maintaining consistent tone</li>
-                <li>Experiment with different string combinations</li>
-              </ol>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">🎸 Technical Practice</h3>
+              <ul className="text-purple-700 text-sm space-y-2">
+                <li>• Master unison positions across strings</li>
+                <li>• Practice smooth unison transitions</li>
+                <li>• Work on consistent tone in unisons</li>
+                <li>• Study unison scales and patterns</li>
+                <li>• Develop unison fingering alternatives</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">🎵 Musical Application</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li>• Create melodies using unison doubling</li>
+                <li>• Practice unison harmonization</li>
+                <li>• Study classical unison techniques</li>
+                <li>• Explore different unison timbres</li>
+                <li>• Analyze unison usage in favorite songs</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        {/* Continue Your Interval Journey */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Continue Your Interval Journey</h2>
-          <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/lessons/theory/intervals/minor-2nd" className="group">
-              <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-lg p-4 border border-red-200 hover:border-red-300 transition-colors">
-                <h3 className="font-medium text-red-800 group-hover:text-red-900 mb-2">Minor 2nd</h3>
-                <p className="text-sm text-red-600">The tightest interval - explore dissonance and resolution</p>
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-indigo-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            From perfect unity, explore the intervals that add tension, movement, and harmony to music.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/minor-2nd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <span className="text-2xl">😬</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Minor 2nd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Take the first step - explore the tightest, most dissonant interval.
+                </p>
+                <span className="text-red-600 font-medium text-sm group-hover:text-red-700">
+                  Feel the tension →
+                </span>
               </div>
             </Link>
             
-            <Link href="/lessons/theory/intervals/major-2nd" className="group">
-              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg p-4 border border-orange-200 hover:border-orange-300 transition-colors">
-                <h3 className="font-medium text-orange-800 group-hover:text-orange-900 mb-2">Major 2nd</h3>
-                <p className="text-sm text-orange-600">The stepping stone - discover melodic movement</p>
+            <Link href="/lessons/theory/intervals/major-2nd" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-orange-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
+                  <span className="text-2xl">🚶</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Major 2nd</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  The foundation of scales - discover how melodies move step by step.
+                </p>
+                <span className="text-orange-600 font-medium text-sm group-hover:text-orange-700">
+                  Start moving →
+                </span>
               </div>
             </Link>
             
-            <Link href="/lessons/theory/intervals/octave" className="group">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200 hover:border-blue-300 transition-colors">
-                <h3 className="font-medium text-blue-800 group-hover:text-blue-900 mb-2">Octave</h3>
-                <p className="text-sm text-blue-600">The perfect complement - same note, different register</p>
+            <Link href="/lessons/theory/intervals/octave" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🔄</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Octave</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Return to unity - the same note in a different register completes the circle.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Complete the cycle →
+                </span>
               </div>
             </Link>
           </div>

@@ -4,31 +4,41 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import Link from 'next/link';
 
 export default function OctavePage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Octave Interval"
         subtitle="The most consonant interval - 12 semitones that creates perfect unity while doubling the frequency, fundamental to all musical scales and harmony."
       />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/intervals" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Interval Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-indigo-50 to-blue-100 rounded-xl p-8 mb-12 border border-indigo-200">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Octave Interval</h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Octave Interval</h1>
+          <p className="text-xl opacity-90 mb-4">
             The octave is the most consonant and fundamental interval in music, spanning 12 semitones 
-            and representing the completion of the chromatic cycle. When you play an octave, you're 
-            playing the same note name but at exactly double (or half) the frequency, creating perfect 
-            acoustic unity. The octave forms the foundation of all scales, defines the range of musical 
-            instruments, and provides the framework for understanding pitch relationships. This interval 
-            sounds so unified that many cultures consider octave notes to be the "same" note, making 
-            it the cornerstone of musical organization worldwide.
+            and representing perfect unity - the same note name at exactly double the frequency.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">12 Semitones</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Perfect Consonance</span>
+            <span className="bg-white/20 px-3 py-1 rounded">2:1 Frequency Ratio</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Foundation of Music</span>
+          </div>
         </div>
 
         {/* Theory Fundamentals */}
@@ -39,525 +49,286 @@ export default function OctavePage() {
               <h3 className="text-lg font-medium text-gray-800 mb-3">Interval Properties</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
+                  <span className="text-purple-500 mt-1">•</span>
                   <span><strong>Size:</strong> 12 semitones (6 whole steps)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
+                  <span className="text-purple-500 mt-1">•</span>
                   <span><strong>Quality:</strong> Perfect</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Sound:</strong> Perfect unity, complete consonance</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Sound:</strong> Perfect unity, same note name</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Function:</strong> Defines pitch classes and scale boundaries</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Consonance:</strong> Most consonant interval</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Function:</strong> Defines pitch classes and scales</span>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-3">Physical Properties</h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Common Examples</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Frequency ratio:</strong> 2:1 (upper note = 2× frequency)</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>C to C:</strong> Perfect octave (any C)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Wavelength:</strong> Half the wavelength of lower note</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Open strings:</strong> 12th fret harmonics</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Harmonic series:</strong> Second harmonic of fundamental</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Do to Do:</strong> Scale completion</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-indigo-500 mt-1">•</span>
-                  <span><strong>Perception:</strong> Sounds like the "same" note</span>
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>"Somewhere Over the Rainbow":</strong> Opening leap</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Visual Examples Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Visual Examples
-          </h2>
-          
-          {/* Guitar Octave Patterns */}
-          <div className="bg-white rounded-xl border border-indigo-200 shadow-sm p-6 mb-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Guitar Octave Patterns</h3>
-            <div className="space-y-6">
-              <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-                <h4 className="text-lg font-medium text-indigo-800 mb-3">Twelve-Fret Rule</h4>
-                <p className="text-indigo-700 text-sm mb-2">
-                  <strong>Same String:</strong> 12 frets apart creates an octave
-                </p>
-                <p className="text-indigo-700 text-sm mb-2">
-                  <strong>Example:</strong> Open string to 12th fret = octave
-                </p>
-                <p className="text-indigo-700 text-sm">
-                  <strong>Pattern:</strong> Works on any string, any position
-                </p>
+        {/* Guitar Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
+              <div className="space-y-4">
+                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                  <h4 className="font-semibold text-purple-800 mb-2">12-Fret Pattern</h4>
+                  <p className="text-sm text-purple-700 mb-2">Octaves across the fretboard:</p>
+                  <ul className="text-xs text-purple-600 space-y-1">
+                    <li>• Same string: 12 frets apart</li>
+                    <li>• 6th to 4th string: +2 frets, +2 strings</li>
+                    <li>• 5th to 3rd string: +2 frets, +2 strings</li>
+                    <li>• 4th to 2nd string: +3 frets, +2 strings (G-B adjustment)</li>
+                  </ul>
+                </div>
+                <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+                  <h4 className="font-semibold text-indigo-800 mb-2">Natural Harmonics</h4>
+                  <p className="text-sm text-indigo-700 mb-2">12th fret harmonics:</p>
+                  <ul className="text-xs text-indigo-600 space-y-1">
+                    <li>• 12th fret: Perfect octave harmonics</li>
+                    <li>• Bell-like tone quality</li>
+                    <li>• Same pitch as 12th fret fretted notes</li>
+                  </ul>
+                </div>
               </div>
-              
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Cross-String Octaves</h4>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>6th to 4th string:</strong> 2 frets up (due to tuning intervals)
-                </p>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>5th to 3rd string:</strong> 2 frets up (same pattern)
-                </p>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>4th to 2nd string:</strong> 3 frets up (compensates for G-B interval)
-                </p>
-                <p className="text-blue-700 text-sm">
-                  <strong>3rd to 1st string:</strong> 3 frets up (same as above)
-                </p>
-              </div>
-              
-              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <h4 className="text-lg font-medium text-green-800 mb-3">Scale Octaves</h4>
-                <p className="text-green-700 text-sm mb-2">
-                  <strong>Scale completion:</strong> 8th note of major scale = octave of 1st
-                </p>
-                <p className="text-green-700 text-sm mb-2">
-                  <strong>C major example:</strong> C-D-E-F-G-A-B-C (octave C)
-                </p>
-                <p className="text-green-700 text-sm">
-                  <strong>All scales:</strong> Complete when reaching the octave
-                </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Applications</h3>
+              <div className="space-y-4">
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-semibold text-blue-800 mb-2">Scale Patterns</h4>
+                  <ul className="text-sm text-blue-700 space-y-2">
+                    <li>• <strong>Scale completion:</strong> From root back to root</li>
+                    <li>• <strong>Position playing:</strong> High and low versions</li>
+                    <li>• <strong>Chord inversions:</strong> Bass notes an octave apart</li>
+                    <li>• <strong>Melody doubling:</strong> Thickening melodic lines</li>
+                  </ul>
+                </div>
+                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                  <h4 className="font-semibold text-purple-800 mb-2">Lead Guitar</h4>
+                  <ul className="text-sm text-purple-700 space-y-2">
+                    <li>• <strong>Octave displacement:</strong> Same melody, different registers</li>
+                    <li>• <strong>Harmonic content:</strong> 12th fret harmonics</li>
+                    <li>• <strong>Range extension:</strong> Accessing higher/lower notes</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Musical Notation */}
-          <div className="bg-white rounded-xl border border-indigo-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Musical Notation Examples</h3>
+        {/* Musical Examples */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Musical Examples & Famous Uses</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Classical Examples</h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">"Somewhere Over the Rainbow"</h4>
+                  <p className="text-sm text-gray-600 mb-2">Opening octave leap creates sense of yearning and expansion</p>
+                  <p className="text-xs text-gray-500">Perfect example of octave's emotional impact</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Bach's "Well-Tempered Clavier"</h4>
+                  <p className="text-sm text-gray-600 mb-2">Octave relationships define key centers and harmonic structure</p>
+                  <p className="text-xs text-gray-500">Demonstrates octave equivalence in classical harmony</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Popular Music</h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Rock Guitar Solos</h4>
+                  <p className="text-sm text-gray-600 mb-2">Octave doubling for powerful melodic emphasis</p>
+                  <p className="text-xs text-gray-500">Creates fuller, more impactful lead guitar sounds</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Bass and Melody Doubling</h4>
+                  <p className="text-sm text-gray-600 mb-2">Bass notes doubled an octave higher for harmonic richness</p>
+                  <p className="text-xs text-gray-500">Common in arrangement and orchestration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Practice Exercises */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">👂 Ear Training</h3>
+              <ul className="text-purple-700 text-sm space-y-2">
+                <li>• Practice recognizing octaves vs. other intervals</li>
+                <li>• Use "Somewhere Over the Rainbow" as reference</li>
+                <li>• Listen to 12th fret harmonics</li>
+                <li>• Compare octaves with perfect 5ths</li>
+                <li>• Study scale patterns from root to root</li>
+              </ul>
+            </div>
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">🎸 Technical Practice</h3>
+              <ul className="text-indigo-700 text-sm space-y-2">
+                <li>• Master 12-fret octave patterns</li>
+                <li>• Practice string-to-string octave shapes</li>
+                <li>• Work on 12th fret natural harmonics</li>
+                <li>• Study major scale octave relationships</li>
+                <li>• Practice octave doubling in melodies</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">🎵 Musical Application</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li>• Create melodies using octave leaps</li>
+                <li>• Practice octave doubling in arrangements</li>
+                <li>• Study how octaves define key centers</li>
+                <li>• Work on bass line octave displacement</li>
+                <li>• Analyze octave usage in favorite songs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Physics and Acoustics */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Physics & Acoustics</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Frequency Relationships</h3>
+              <div className="space-y-3">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">2:1 Ratio</h4>
+                  <p className="text-sm text-gray-600">The octave has the simplest frequency relationship possible - exactly double or half the frequency, creating perfect acoustic unity.</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Harmonic Series</h4>
+                  <p className="text-sm text-gray-600">The octave appears as the 2nd harmonic in the natural harmonic series, making it the first and strongest overtone.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Cultural Universality</h3>
+              <div className="space-y-3">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Universal Recognition</h4>
+                  <p className="text-sm text-gray-600">Every musical culture recognizes octave equivalence - notes an octave apart are considered the "same" note.</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Perceptual Unity</h4>
+                  <p className="text-sm text-gray-600">The brain processes octaves as so similar that they create a sense of completion and return.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Related Intervals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Related Intervals & Comparisons</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+              <h3 className="font-semibold text-green-800 mb-2">Perfect 5th</h3>
+              <p className="text-sm text-green-700 mb-2">7 semitones - second most consonant</p>
+              <p className="text-xs text-green-600">Octave = Perfect 5th + Perfect 4th</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+              <h3 className="font-semibold text-blue-800 mb-2">Perfect 4th</h3>
+              <p className="text-sm text-blue-700 mb-2">5 semitones - complements perfect 5th</p>
+              <p className="text-xs text-blue-600">Perfect 4th + Perfect 5th = Octave</p>
+            </div>
+            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
+              <h3 className="font-semibold text-orange-800 mb-2">Compound Intervals</h3>
+              <p className="text-sm text-orange-700 mb-2">9th, 11th, 13th - octave + simple intervals</p>
+              <p className="text-xs text-orange-600">All intervals larger than octave are "compound"</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand the octave, explore how it relates to other fundamental intervals and creates musical structure.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/perfect-5th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Perfect 5th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Study the second most consonant interval and how it builds toward the octave.
+                </p>
+                <span className="text-green-600 font-medium text-sm group-hover:text-green-700">
+                  Build harmony →
+                </span>
+              </div>
+            </Link>
             
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Guitar Octave Patterns</h4>
-                <MusicScore
-                  title="Guitar Octave Intervals"
-                  staves={[{
-                    id: 'guitar-octaves',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 0/6 12/6 | :h 3/6 15/6 | :h 0/5 12/5 | :h 2/5 14/5`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'Same-string octaves: 12 frets apart'
-                  }]}
-                />
+            <Link href="/lessons/theory/intervals/unison" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 transition-colors">
+                  <span className="text-2xl">🎵</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Unison</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Return to the starting point - the interval of perfect identity and unity.
+                </p>
+                <span className="text-gray-600 font-medium text-sm group-hover:text-gray-700">
+                  Start simple →
+                </span>
               </div>
-
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Cross-String Octaves</h4>
-                <MusicScore
-                  title="Cross-String Octave Patterns"
-                  staves={[{
-                    id: 'cross-string-octaves',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (3/6.5/4) (0/6.2/4) | :h (0/5.2/3) (3/5.5/3) | :h (2/4.5/2) (0/4.3/2) | :h (0/3.3/1) (2/3.5/1)`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'Cross-string octave patterns'
-                  }]}
-                />
-              </div>
-
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Scale Octaves</h4>
-                <MusicScore
-                  title="Major Scale Octave Completion"
-                  staves={[{
-                    id: 'scale-octaves',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/5 5/5 6/5 8/5 | :q 10/5 12/5 13/5 15/5`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'C Major Scale: C to C (octave)'
-                  }]}
-                />
-              </div>
-
-              <div>
-                <h4 className="text-lg font-medium text-gray-800 mb-3">Harmonic Octaves</h4>
-                <MusicScore
-                  title="Harmonic Octave Intervals"
-                  staves={[{
-                    id: 'harmonic-octaves',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.12/6) | :w (3/6.15/6) | :w (0/5.12/5) | :w (2/5.14/5)`,
-                    width: 550,
-                    scale: 1.0,
-                    title: 'Simultaneous octaves - perfect unity'
-                  }]}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Practical Applications Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Practical Applications
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-orange-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Melodic Applications</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Scale construction:</strong> Defines the completion point of scales</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Melodic leaps:</strong> Dramatic but stable melodic intervals</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Range extension:</strong> Playing melodies in different octaves</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Voice leading:</strong> Octave displacement in arrangements</span>
-                </li>
-              </ul>
-              
-              <div className="mt-6">
-                <MusicScore
-                  title="Melodic Octave Leaps"
-                  staves={[{
-                    id: 'melodic-octaves',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/5 15/5 3/5 10/5 | :q 8/5 8/4 5/5 5/4`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'Melodic patterns using octave leaps'
-                  }]}
-                />
-              </div>
-            </div>
+            </Link>
             
-            <div className="bg-white rounded-xl border border-purple-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Harmonic Applications</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Octave doubling:</strong> Reinforcing notes in different octaves</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Bass and melody:</strong> Same note in different ranges</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Orchestration:</strong> Distributing notes across instruments</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Harmonic richness:</strong> Creating fullness without dissonance</span>
-                </li>
-              </ul>
-
-              <div className="mt-6">
-                <MusicScore
-                  title="Octave Doubling"
-                  staves={[{
-                    id: 'octave-doubling',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.3/5.0/4.3/2) | :w (0/6.0/5.0/3.0/1)`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'Chords with octave doubling'
-                  }]}
-                />
+            <Link href="/lessons/theory/intervals/major-7th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <span className="text-2xl">🔥</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Major 7th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Explore the tense interval that leads powerfully into the octave resolution.
+                </p>
+                <span className="text-red-600 font-medium text-sm group-hover:text-red-700">
+                  Feel the tension →
+                </span>
               </div>
-            </div>
+            </Link>
           </div>
-        </section>
-
-        {/* Guitar Techniques Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Guitar-Specific Techniques
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-green-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fingering Patterns</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>12th fret harmonics:</strong> Natural octave harmonics</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Octave chords:</strong> Power chords with octave doubling</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Scale patterns:</strong> Learning scales across octaves</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Single-note melodies:</strong> Playing in different octaves</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Practice Applications</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Tuning reference:</strong> 12th fret = octave of open string</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Interval training:</strong> Most recognizable interval</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Fretboard mapping:</strong> Understanding note relationships</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Scale practice:</strong> Playing scales in multiple octaves</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Ear Training Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Ear Training & Recognition
-          </h2>
-          
-          <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Recognition Tips</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Sound Characteristics</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Perfect unity and consonance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Sounds like the "same" note</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>No beating or dissonance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Reinforces the original pitch</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Practice Exercises</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Use 12th fret harmonics</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Practice cross-string octave patterns</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Sing scales focusing on octave completion</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Use piano to understand frequency doubling</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
-              <h4 className="font-medium text-blue-900 mb-2">Memory Aid</h4>
-              <p className="text-blue-800 text-sm leading-relaxed">
-                The octave is the "Somewhere Over the Rainbow" interval - the first two notes create 
-                that soaring, dreamlike leap. It's also easily recognized as the "same note, higher pitch" 
-                - like a man and woman singing the same melody together naturally harmonize an octave apart. 
-                On guitar, the 12th fret always produces the octave harmonic, making it a perfect reference 
-                point for tuning and understanding this fundamental interval.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Famous Examples Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Famous Musical Examples
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-green-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Classical & Traditional</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>"Somewhere Over the Rainbow"</strong><br />
-                  <span className="text-gray-600 text-sm">Opening octave leap creates soaring feeling</span>
-                </li>
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>Bach's Brandenburg Concertos</strong><br />
-                  <span className="text-gray-600 text-sm">Frequent octave doublings in orchestration</span>
-                </li>
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>Chopin's Etudes</strong><br />
-                  <span className="text-gray-600 text-sm">Octave passages for technical development</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-xl border border-red-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Guitar & Popular Music</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Rock guitar solos</strong><br />
-                  <span className="text-gray-600 text-sm">Octave displacement for dramatic effect</span>
-                </li>
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Jazz guitar comping</strong><br />
-                  <span className="text-gray-600 text-sm">Octave doublings in chord voicings</span>
-                </li>
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Folk and country melodies</strong><br />
-                  <span className="text-gray-600 text-sm">Natural octave relationships in songs</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Practice Exercises Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Practice Exercises
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 1: Same-String Octaves</h3>
-              <p className="text-gray-700 mb-4">
-                Practice the fundamental 12-fret octave pattern on each string.
-              </p>
-              <MusicScore
-                title="Same-String Octave Practice"
-                staves={[{
-                  id: 'same-string-octaves',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.12/6) | :w (0/5.12/5) | :w (0/4.12/4) | :w (0/3.12/3)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Open string to 12th fret octaves'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 2: Cross-String Octave Patterns</h3>
-              <p className="text-gray-700 mb-4">
-                Learn the essential cross-string octave patterns for efficient fretboard navigation.
-              </p>
-              <MusicScore
-                title="Cross-String Octave Patterns"
-                staves={[{
-                  id: 'cross-string-patterns',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h (3/6.5/4) (0/6.2/4) | :h (0/5.2/3) (3/5.5/3) | :h (2/4.5/2) (0/4.3/2) | :h (0/3.3/1) (2/3.5/1)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Standard cross-string octave shapes'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 3: Scale Octave Completion</h3>
-              <p className="text-gray-700 mb-4">
-                Practice major scales emphasizing the octave completion at the 8th degree.
-              </p>
-              <MusicScore
-                title="Scale Octave Exercise"
-                staves={[{
-                  id: 'scale-octave-completion',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/5 5/5 6/5 8/5 | :q 10/5 12/5 13/5 15/5 | :q 15/5 13/5 12/5 10/5 | :q 8/5 6/5 5/5 3/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'C Major scale with octave completion'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 4: Octave Harmonics</h3>
-              <p className="text-gray-700 mb-4">
-                Practice natural harmonics at the 12th fret to hear pure octave intervals.
-              </p>
-              <MusicScore
-                title="12th Fret Harmonic Exercise"
-                staves={[{
-                  id: 'octave-harmonics',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w 12h/6 | :w 12h/5 | :w 12h/4 | :w 12h/3`,
-                  width: 550,
-                  scale: 1.0,
-                  title: '12th fret harmonics (natural octaves)'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 5: Melodic Octave Application</h3>
-              <p className="text-gray-700 mb-4">
-                Apply octave knowledge to create melodies that span different octave ranges.
-              </p>
-              <MusicScore
-                title="Melodic Octave Exercise"
-                staves={[{
-                  id: 'melodic-octave-application',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/5 5/5 15/5 13/5 | :q 12/5 10/5 8/5 15/4 | :q 13/4 12/4 10/4 8/4 | :q 6/4 5/4 3/5 3/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Melody using octave displacement techniques'
-                }]}
-              />
-            </div>
-          </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </Layout>

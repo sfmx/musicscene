@@ -49,20 +49,24 @@ export default function Perfect5thPage() {
               <h3 className="text-lg font-medium text-gray-800 mb-3">Interval Properties</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
+                  <span className="text-green-500 mt-1">•</span>
                   <span><strong>Size:</strong> 7 semitones (3½ whole steps)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
+                  <span className="text-green-500 mt-1">•</span>
                   <span><strong>Quality:</strong> Perfect</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span><strong>Sound:</strong> Pure, stable, powerful</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Sound:</strong> Strong, stable, consonant</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span><strong>Function:</strong> Harmonic foundation, chord building</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Consonance:</strong> Perfect consonance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Function:</strong> Harmonic foundation</span>
                 </li>
               </ul>
             </div>
@@ -70,66 +74,25 @@ export default function Perfect5thPage() {
               <h3 className="text-lg font-medium text-gray-800 mb-3">Common Examples</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span>C to G</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>C to G:</strong> Classic perfect 5th</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span>G to D</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>G to D:</strong> In all major scales</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span>D to A</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Power chords:</strong> All rock progressions</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-emerald-500 mt-1">•</span>
-                  <span>All power chord intervals</span>
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>"Star Wars":</strong> Opening theme</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        {/* Visual Examples Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Visual Examples
-          </h2>
-          
-          {/* Power Chord Connection */}
-          <div className="bg-white rounded-xl border border-emerald-200 shadow-sm p-6 mb-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Power Chord Foundation</h3>
-            <div className="space-y-6">
-              <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                <h4 className="text-lg font-medium text-emerald-800 mb-3">Two-String Power Chords</h4>
-                <p className="text-emerald-700 text-sm mb-2">
-                  <strong>Root + 5th:</strong> The basic power chord structure
-                </p>
-                <p className="text-emerald-700 text-sm mb-2">
-                  <strong>6th + 5th strings:</strong> Root on 6th, 5th on 5th string (same fret)
-                </p>
-                <p className="text-emerald-700 text-sm mb-2">
-                  <strong>5th + 4th strings:</strong> Root on 5th, 5th on 4th string (same fret)
-                </p>
-                <p className="text-emerald-700 text-sm">
-                  <strong>Exception:</strong> Adjust for G-B string interval difference
-                </p>
-              </div>
-              
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Seven-Fret Pattern</h4>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>Same String:</strong> 7 frets apart creates a perfect 5th
-                </p>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>Example:</strong> 3rd fret to 10th fret on same string
-                </p>
-                <p className="text-blue-700 text-sm">
-                  <strong>Octave relationship:</strong> 5th + 4th = octave (12 frets)
-                </p>
-              </div>
-            </div>
-          </div>
 
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
@@ -182,309 +145,189 @@ export default function Perfect5thPage() {
             </div>
           </div>
         </div>
-                  staves={[{
-                    id: 'rock-riff',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q (0/6.0/5) (3/6.3/5) (0/6.0/5) (5/6.5/5) | :q (3/6.3/5) (0/6.0/5) (3/6.3/5) (0/6.0/5)`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'Classic rock power chord progression'
-                  }]}
-                />
+
+        {/* Musical Examples */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Musical Examples & Famous Uses</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Classical Examples</h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">"Star Wars" Main Theme</h4>
+                  <p className="text-sm text-gray-600 mb-2">Opening perfect 5th creates heroic character</p>
+                  <p className="text-xs text-gray-500">Demonstrates the powerful, stable quality of perfect 5ths</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">"Twinkle, Twinkle, Little Star"</h4>
+                  <p className="text-sm text-gray-600 mb-2">First two notes demonstrate perfect 5th</p>
+                  <p className="text-xs text-gray-500">Simple example of perfect 5th's consonant nature</p>
+                </div>
               </div>
             </div>
-            
-            <div className="bg-white rounded-xl border border-purple-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Classical & Traditional Uses</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Triadic harmony:</strong> Essential component of major/minor chords</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Melodic intervals:</strong> Strong, heroic melodic leaps</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Voice leading:</strong> Stable harmonic foundation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Cadential patterns:</strong> Dominant to tonic relationships</span>
-                </li>
-              </ul>
-
-              <div className="mt-6">
-                <MusicScore
-                  title="Classical Perfect 5th"
-                  staves={[{
-                    id: 'classical-5th',
-                    notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (3/6.3/5.0/4.3/3) | :w (3/6.3/5.2/4.3/3)`,
-                    width: 400,
-                    scale: 0.9,
-                    title: 'G major chord - perfect 5th provides stability'
-                  }]}
-                />
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Rock & Popular Music</h3>
+              <div className="space-y-4">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Classic Rock Power Chords</h4>
+                  <p className="text-sm text-gray-600 mb-2">Foundation of rock rhythm guitar in all genres</p>
+                  <p className="text-xs text-gray-500">Perfect 5ths create the driving force of rock music</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Metal & Heavy Music</h4>
+                  <p className="text-sm text-gray-600 mb-2">Low-tuned perfect 5ths for heavy, powerful sound</p>
+                  <p className="text-xs text-gray-500">Perfect consonance cuts through distortion clearly</p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Guitar-Specific Techniques */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Guitar-Specific Techniques
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-green-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Power Chord Variations</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Root position:</strong> Root on lower string, 5th above</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Octave doubling:</strong> Adding octave of root above 5th</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Multiple string sets:</strong> Different positions for same chord</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span><strong>Single-note emphasis:</strong> Playing 5ths as melodic intervals</span>
-                </li>
+        {/* Practice Exercises */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+              <h3 className="text-lg font-semibold text-green-800 mb-3">👂 Ear Training</h3>
+              <ul className="text-green-700 text-sm space-y-2">
+                <li>• Practice power chord recognition</li>
+                <li>• Use "Star Wars" theme as reference</li>
+                <li>• Compare with perfect 4th intervals</li>
+                <li>• Listen to 7-fret patterns on guitar</li>
+                <li>• Study triadic harmony progressions</li>
               </ul>
             </div>
-            
-            <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fingering Strategies</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Index finger barre:</strong> Cover both strings with one finger</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Two-finger approach:</strong> Index and ring for clarity</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>Moveable shapes:</strong> Same fingering, different positions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>String muting:</strong> Control unwanted string noise</span>
-                </li>
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">🎸 Technical Practice</h3>
+              <ul className="text-blue-700 text-sm space-y-2">
+                <li>• Master basic power chord shapes</li>
+                <li>• Practice 7-fret pattern on all strings</li>
+                <li>• Work on power chord progressions</li>
+                <li>• Study perfect 5ths in major scales</li>
+                <li>• Practice harmonic and melodic 5ths</li>
+              </ul>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">🎵 Musical Application</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li>• Create rock riffs using power chords</li>
+                <li>• Analyze classic rock progressions</li>
+                <li>• Practice perfect 5th melodic leaps</li>
+                <li>• Study circle of 5ths relationships</li>
+                <li>• Work on sus4 chord progressions</li>
               </ul>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Ear Training Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Ear Training & Recognition
-          </h2>
-          
-          <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Recognition Tips</h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Sound Characteristics</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Extremely consonant and stable</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Pure, clear harmonic relationship</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Strong, powerful sound</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Almost sounds like one note</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Practice Exercises</h4>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Practice power chords extensively</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Use seven-fret pattern on single strings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Compare with tritone (diminished 5th)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span>Listen to major chord progressions</span>
-                  </li>
-                </ul>
+        {/* Physics and Acoustics */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Physics & Acoustics</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Harmonic Series</h3>
+              <div className="space-y-3">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Natural Resonance</h4>
+                  <p className="text-sm text-gray-600">The perfect 5th appears as the 3rd harmonic in the natural harmonic series, making it inherently consonant and stable.</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Frequency Ratio</h4>
+                  <p className="text-sm text-gray-600">Perfect 5th has a 3:2 frequency ratio, creating a simple mathematical relationship that the ear perceives as stable.</p>
+                </div>
               </div>
             </div>
-
-            <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
-              <h4 className="font-medium text-blue-900 mb-2">Memory Aid</h4>
-              <p className="text-blue-800 text-sm leading-relaxed">
-                Think of the perfect 5th as the "Star Wars" theme interval - the opening two notes 
-                create that heroic, powerful sound. It's also the foundation of every power chord 
-                in rock music. The interval is so consonant that it barely sounds like two separate 
-                notes, creating a sense of unity and strength. "Twinkle, Twinkle, Little Star" 
-                also starts with a perfect 5th, demonstrating its natural, stable quality.
-              </p>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Guitar Physics</h3>
+              <div className="space-y-3">
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">String Resonance</h4>
+                  <p className="text-sm text-gray-600">Perfect 5ths create sympathetic resonance between strings, making power chords ring naturally on guitar.</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-800">Distortion Clarity</h4>
+                  <p className="text-sm text-gray-600">The simple frequency ratio means perfect 5ths stay clear under heavy distortion, unlike more complex intervals.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Famous Examples Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Famous Musical Examples
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-green-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Classical & Traditional</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>"Star Wars" Main Theme</strong><br />
-                  <span className="text-gray-600 text-sm">Opening perfect 5th creates heroic character</span>
-                </li>
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>"Twinkle, Twinkle, Little Star"</strong><br />
-                  <span className="text-gray-600 text-sm">First two notes demonstrate perfect 5th</span>
-                </li>
-                <li className="border-l-4 border-green-400 pl-3">
-                  <strong>Bach's Well-Tempered Clavier</strong><br />
-                  <span className="text-gray-600 text-sm">Perfect 5ths in harmonic progressions</span>
-                </li>
-              </ul>
+        {/* Related Intervals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Related Intervals & Comparisons</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+              <h3 className="font-semibold text-blue-800 mb-2">Perfect 4th</h3>
+              <p className="text-sm text-blue-700 mb-2">5 semitones - inversion of perfect 5th</p>
+              <p className="text-xs text-blue-600">5th + 4th = octave (12 semitones)</p>
             </div>
+            <div className="bg-red-50 rounded-lg p-4 border border-red-200">
+              <h3 className="font-semibold text-red-800 mb-2">Tritone</h3>
+              <p className="text-sm text-red-700 mb-2">6 semitones - diminished 5th</p>
+              <p className="text-xs text-red-600">Contrasts perfectly with perfect 5th stability</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="font-semibold text-purple-800 mb-2">Octave</h3>
+              <p className="text-sm text-purple-700 mb-2">12 semitones - most consonant interval</p>
+              <p className="text-xs text-purple-600">Perfect 5th is 2nd most consonant after octave</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-green-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Interval Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand the perfect 5th, explore how it relates to other intervals and creates harmonic foundations.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/intervals/perfect-4th" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">🔄</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Perfect 4th</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Learn the inversion of the perfect 5th and how they complement each other.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Study inversions →
+                </span>
+              </div>
+            </Link>
             
-            <div className="bg-white rounded-xl border border-red-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Rock & Popular Music</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Classic rock power chords</strong><br />
-                  <span className="text-gray-600 text-sm">Foundation of rock rhythm guitar</span>
-                </li>
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Metal riffs</strong><br />
-                  <span className="text-gray-600 text-sm">Low tuned perfect 5ths for heavy sound</span>
-                </li>
-                <li className="border-l-4 border-red-400 pl-3">
-                  <strong>Folk and country music</strong><br />
-                  <span className="text-gray-600 text-sm">Strong melodic intervals and harmony</span>
-                </li>
-              </ul>
-            </div>
+            <Link href="/lessons/theory/intervals/tritone" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Tritone</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Explore the "devil's interval" that contrasts dramatically with the perfect 5th.
+                </p>
+                <span className="text-red-600 font-medium text-sm group-hover:text-red-700">
+                  Feel the tension →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/intervals/octave" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Octave</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Discover the most consonant interval and how it relates to the perfect 5th.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Reach completion →
+                </span>
+              </div>
+            </Link>
           </div>
-        </section>
-
-        {/* Practice Exercises Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Practice Exercises
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 1: Power Chord Fundamentals</h3>
-              <p className="text-gray-700 mb-4">
-                Master the basic power chord shapes using perfect 5th intervals.
-              </p>
-              <MusicScore
-                title="Power Chord Practice"
-                staves={[{
-                  id: 'power-chord-fundamentals',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.0/5) | :w (3/6.3/5) | :w (5/6.5/5) | :w (7/6.7/5)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'E5, G5, A5, B5 power chords'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 2: Seven-Fret Pattern</h3>
-              <p className="text-gray-700 mb-4">
-                Practice finding perfect 5ths using the seven-fret rule on single strings.
-              </p>
-              <MusicScore
-                title="Seven-Fret Perfect 5th Pattern"
-                staves={[{
-                  id: 'seven-fret-pattern',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 0/6 7/6 | :h 3/6 10/6 | :h 0/5 7/5 | :h 2/5 9/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Perfect 5ths seven frets apart'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 3: Melodic Perfect 5ths</h3>
-              <p className="text-gray-700 mb-4">
-                Practice perfect 5ths as melodic intervals to develop ear recognition.
-              </p>
-              <MusicScore
-                title="Melodic Perfect 5th Exercise"
-                staves={[{
-                  id: 'melodic-5ths',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 3/6 3/5 3/6 3/5 | :q 0/5 0/4 0/5 0/4 | :q 2/5 2/4 2/5 2/4 | :q 3/5 3/4 3/5 3/4`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Melodic perfect 5th patterns'
-                }]}
-              />
-            </div>
-
-            <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Exercise 4: Power Chord Progressions</h3>
-              <p className="text-gray-700 mb-4">
-                Combine perfect 5ths in common rock progressions to develop musical context.
-              </p>
-              <MusicScore
-                title="Power Chord Progression"
-                staves={[{
-                  id: 'power-progressions',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w (0/6.0/5) | :w (5/6.5/5) | :w (3/6.3/5) | :w (0/6.0/5) |
-notes :w (2/5.2/4) | :w (0/5.0/4) | :w (3/5.3/4) | :w (2/5.2/4)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'E5-A5-G5-E5 and B5-A5-C5-B5 progressions'
-                }]}
-              />
-            </div>
-          </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </Layout>
