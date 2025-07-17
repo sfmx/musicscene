@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function SuspendedChordsPage() {
@@ -232,50 +233,279 @@ export default function SuspendedChordsPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Suspended Chord Progressions</h2>
           
-          <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-cyan-800 mb-3">🎵 Essential Progressions</h3>
-            <p className="text-cyan-700">These progressions demonstrate how suspended chords create tension and release in different musical contexts.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid gap-8 mb-6">
             <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Sus4 Resolution Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Classic Sus4 → Major</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Dsus4 - D - G - A</p>
-                  <p className="text-sm text-gray-600">Immediate resolution creates satisfaction</p>
+              
+              {/* Sus4 Resolution Pattern */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Classic Sus4 Resolution</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dsus4" />
+                        <p className="text-sm font-medium mt-1">Dsus4</p>
+                        <p className="text-xs text-gray-600">Tension</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="D" />
+                        <p className="text-sm font-medium mt-1">D</p>
+                        <p className="text-xs text-gray-600">Resolution</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="A" />
+                        <p className="text-sm font-medium mt-1">A</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D - D - DU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Emphasize the resolution</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 100-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Satisfying resolution</p>
+                      <p><strong>Genre:</strong> Rock, Pop, Country</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Delayed Resolution</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Asus4 - Am - F - G</p>
-                  <p className="text-sm text-gray-600">Sus4 to minor creates different color</p>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Rock Progression</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Esus4 - E - A - B</p>
-                  <p className="text-sm text-gray-600">Common in rock and pop music</p>
-                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=D
+notes :w (X/6.X/5.0/4.2/3.3/2.3/1) | :w (X/6.X/5.0/4.2/3.3/2.2/1) | :w (3/6.2/5.0/4.0/3.0/2.3/1) | :w (-1/6.0/5.2/4.2/3.2/2.0/1)
+text :w,Dsus4,:w,D,:w,G,:w,A
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  The fundamental suspended chord movement - tension to resolution creates instant musical satisfaction
+                </p>
               </div>
-            </div>
 
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Sus2 Atmospheric Progressions</h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Open String Magic</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Dsus2 - Asus2 - G - Em</p>
-                  <p className="text-sm text-gray-600">Creates floating, ethereal atmosphere</p>
+              {/* Sus2 Atmospheric Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Open String Sus2 Magic</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dsus2" />
+                        <p className="text-sm font-medium mt-1">Dsus2</p>
+                        <p className="text-xs text-gray-600">Open</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Asus2" />
+                        <p className="text-sm font-medium mt-1">Asus2</p>
+                        <p className="text-xs text-gray-600">Floating</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">Stable</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Em" />
+                        <p className="text-sm font-medium mt-1">Em</p>
+                        <p className="text-xs text-gray-600">Minor</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Light, airy feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-110 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Ethereal, floating</p>
+                      <p><strong>Genre:</strong> Folk, Indie, Acoustic</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Modern Folk</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> G - Dsus2 - Em - Csus2</p>
-                  <p className="text-sm text-gray-600">Contemporary acoustic sound</p>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=D
+notes :w (X/6.X/5.0/4.2/3.3/2.0/1) | :w (X/6.0/5.2/4.2/3.0/2.0/1) | :w (3/6.2/5.0/4.0/3.0/2.3/1) | :w (0/6.2/5.2/4.0/3.0/2.0/1)
+text :w,Dsus2,:w,Asus2,:w,G,:w,Em
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Utilizing open strings for atmospheric suspended harmonies - creates modern, ethereal soundscapes
+                </p>
+              </div>
+
+              {/* Modern Folk Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Contemporary Folk Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dsus2" />
+                        <p className="text-sm font-medium mt-1">Dsus2</p>
+                        <p className="text-xs text-gray-600">Vsus2</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Em" />
+                        <p className="text-sm font-medium mt-1">Em</p>
+                        <p className="text-xs text-gray-600">vi</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Csus2" />
+                        <p className="text-sm font-medium mt-1">Csus2</p>
+                        <p className="text-xs text-gray-600">IVsus2</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♪♪ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - DU - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Modern acoustic feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 90-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Contemporary, open</p>
+                      <p><strong>Genre:</strong> Modern Folk, Indie Pop</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">Ambient Progression</h4>
-                  <p className="text-sm mb-2"><strong>Pattern:</strong> Asus2 - Esus2 - F#sus2 - Dsus2</p>
-                  <p className="text-sm text-gray-600">Sustained, contemplative mood</p>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=G
+notes :w (3/6.2/5.0/4.0/3.0/2.3/1) | :w (X/6.X/5.0/4.2/3.3/2.0/1) | :w (0/6.2/5.2/4.0/3.0/2.0/1) | :w (X/6.3/5.0/4.0/3.1/2.0/1)
+text :w,G,:w,Dsus2,:w,Em,:w,Csus2
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Contemporary acoustic progression mixing standard and suspended chords for modern harmonic color
+                </p>
+              </div>
+
+              {/* Ambient Sus2 Cycle */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+                <h4 className="text-xl font-semibold mb-4 text-center text-orange-700">Ambient Sus2 Cycle</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Asus2" />
+                        <p className="text-sm font-medium mt-1">Asus2</p>
+                        <p className="text-xs text-gray-600">Open</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Esus2" />
+                        <p className="text-sm font-medium mt-1">Esus2</p>
+                        <p className="text-xs text-gray-600">Float</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F#sus2" />
+                        <p className="text-sm font-medium mt-1">F#sus2</p>
+                        <p className="text-xs text-gray-600">Rise</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dsus2" />
+                        <p className="text-sm font-medium mt-1">Dsus2</p>
+                        <p className="text-xs text-gray-600">Rest</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩. ♪ ♩. ♪</p>
+                      <p className="text-xs text-gray-600 text-center">D. U - D. U</p>
+                      <p className="text-xs text-gray-600 text-center">Spacious, contemplative</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 60-80 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Meditative, floating</p>
+                      <p><strong>Genre:</strong> Ambient, Post-Rock, Soundtrack</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=A
+notes :w (X/6.0/5.2/4.2/3.0/2.0/1) | :w (0/6.2/5.2/4.1/3.0/2.0/1) | :w (2/6.4/5.4/4.1/3.2/2.2/1) | :w (X/6.X/5.0/4.2/3.3/2.0/1)
+text :w,Asus2,:w,Esus2,:w,F#sus2,:w,Dsus2
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Sustained suspended harmony creates contemplative, meditative atmosphere without traditional resolution
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-cyan-50 rounded-lg p-6 border border-cyan-200 mt-6">
+                <h4 className="text-lg font-semibold text-cyan-800 mb-4">🎯 Practice Tips for Suspended Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-cyan-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-cyan-700 space-y-1">
+                      <li>• Feel the tension in sus4 before resolution</li>
+                      <li>• Let sus2 chords ring and breathe</li>
+                      <li>• Practice smooth transitions</li>
+                      <li>• Use dynamics to emphasize tension/release</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-cyan-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-cyan-700 space-y-1">
+                      <li>• Great for creating anticipation</li>
+                      <li>• Perfect for open, spacious sounds</li>
+                      <li>• Use in intros and bridges</li>
+                      <li>• Excellent for fingerpicking patterns</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

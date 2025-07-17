@@ -63,6 +63,20 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'G°7': { frets: [3, 4, 5, 3, 6, 3], fingers: [1, 2, 3, 1, 4, 1] },
   // Half-diminished (minor 7b5)
   'Bm7b5': { frets: [-1, 2, 3, 2, 3, -1], fingers: [-1, 1, 3, 2, 4, -1] },
+  // Suspended chords
+  'Dsus4': { frets: [-1, -1, 0, 2, 3, 3], fingers: [-1, -1, 0, 1, 2, 3] },
+  'Dsus2': { frets: [-1, -1, 0, 2, 3, 0], fingers: [-1, -1, 0, 1, 2, 0] },
+  'Asus4': { frets: [-1, 0, 2, 2, 3, 0], fingers: [-1, 0, 1, 2, 3, 0] },
+  'Asus2': { frets: [-1, 0, 2, 2, 0, 0], fingers: [-1, 0, 1, 2, 0, 0] },
+  'Esus4': { frets: [0, 2, 2, 2, 0, 0], fingers: [0, 1, 2, 3, 0, 0] },
+  'Esus2': { frets: [0, 2, 2, 1, 0, 0], fingers: [0, 2, 3, 1, 0, 0] },
+  'Gsus4': { frets: [3, 3, 0, 0, 1, 3], fingers: [2, 3, 0, 0, 1, 4] },
+  'Gsus2': { frets: [3, 0, 0, 0, 3, 3], fingers: [2, 0, 0, 0, 3, 4] },
+  'Csus4': { frets: [-1, 3, 3, 0, 1, 1], fingers: [-1, 3, 4, 0, 1, 2] },
+  'Csus2': { frets: [-1, 3, 0, 0, 1, 0], fingers: [-1, 3, 0, 0, 1, 0] },
+  'Fsus4': { frets: [1, 3, 3, 3, 1, 1], fingers: [1, 3, 4, 2, 1, 1] },
+  'Fsus2': { frets: [1, 3, 3, 0, 1, 1], fingers: [1, 3, 4, 0, 1, 2] },
+  'F#sus2': { frets: [2, 4, 4, 1, 2, 2], fingers: [1, 3, 4, 1, 2, 2] },
   // Seventh chords
   'G7': { frets: [3, 2, 0, 0, 0, 1], fingers: [3, 2, 0, 0, 0, 1] },
   'E7': { frets: [0, 2, 0, 1, 0, 0], fingers: [0, 2, 0, 1, 0, 0] },
@@ -72,6 +86,10 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'FMaj7': { frets: [1, 3, 2, 1, 0, -1], fingers: [1, 3, 2, 1, 0, -1] },
   'DMaj7': { frets: [-1, -1, 0, 2, 2, 2], fingers: [-1, -1, 0, 1, 1, 1] },
   'BMaj7': { frets: [-1, 2, 4, 3, 4, -1], fingers: [-1, 1, 3, 2, 4, -1] },
+  'AMaj7': { frets: [-1, 0, 2, 1, 2, 0], fingers: [-1, 0, 2, 1, 3, 0] },
+  'GMaj7': { frets: [3, 2, 0, 0, 0, 2], fingers: [3, 2, 0, 0, 0, 1] },
+  'EMaj7': { frets: [0, 2, 1, 1, 0, 0], fingers: [0, 2, 1, 1, 0, 0] },
+  'F#m7': { frets: [2, 4, 2, 2, 2, 2], fingers: [1, 3, 1, 1, 1, 1] },
   'Dm7': { frets: [-1, -1, 0, 2, 1, 1], fingers: [-1, -1, 0, 2, 1, 1] },
   'Bm7': { frets: [-1, 2, 0, 2, 0, 2], fingers: [-1, 1, 0, 2, 0, 3] },
   // Ninth chords (for extended harmony)
