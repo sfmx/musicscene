@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function ExtendedChordsPage() {
@@ -272,37 +273,94 @@ export default function ExtendedChordsPage() {
             <p className="text-green-700">Eleventh chords add the 11th degree (same as the 4th, but an octave higher), creating suspension and harmonic tension.</p>
           </div>
 
-          <div className="grid gap-6 mb-6">
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Types of Eleventh Chords</h3>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Types of Eleventh Chords</h3>
+            <div className="grid md:grid-cols-2 gap-8">
               
-              <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Minor 11th (m11)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9 - 11</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Am11 = A-C-E-G-B-D</p>
-                  <p className="text-sm text-gray-600">Very stable, no conflict with 3rd</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Dominant 11th (11)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - ♭7 - 9 - 11</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> G11 = G-B-D-F-A-C</p>
-                  <p className="text-sm text-gray-600">Creates tension (11th conflicts with 3rd)</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Major 11th (Maj11)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9 - 11</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> CMaj11 = C-E-G-B-D-F</p>
-                  <p className="text-sm text-gray-600">Rare due to harsh dissonance</p>
-                </div>
-
-                <div className="bg-yellow-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">💡 Important Note</h4>
-                  <p className="text-sm text-gray-600">In major and dominant 11th chords, the 3rd is often omitted to avoid the harsh dissonance between the 3rd and 11th (a minor 9th interval).</p>
+              {/* Am11 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Minor 11th (Am11)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Am11" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: A - C - E - G - B - D</h5>
+                    <p className="text-gray-600 mb-3">Very stable with no harsh dissonance between 3rd and 11th.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9 - 11</p>
+                      <p><strong>Use in:</strong> Jazz, ambient, neo-soul</p>
+                      <p><strong>Character:</strong> Floating and atmospheric</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              {/* Dm11 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Minor 11th (Dm11)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Dm11" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: D - F - A - C - E - G</h5>
+                    <p className="text-gray-600 mb-3">Rich, contemplative sound perfect for ballads.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9 - 11</p>
+                      <p><strong>Use in:</strong> Jazz ballads, contemplative music</p>
+                      <p><strong>Character:</strong> Deep and introspective</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Em11 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Minor 11th (Em11)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Em11" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: E - G - B - D - F# - A</h5>
+                    <p className="text-gray-600 mb-3">Open, resonant sound using all open strings.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9 - 11</p>
+                      <p><strong>Use in:</strong> Ambient music, drone effects</p>
+                      <p><strong>Character:</strong> Ethereal and open</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* C11 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Dominant 11th (C11)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="C11" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: C - F - G - Bb - D - F</h5>
+                    <p className="text-gray-600 mb-3">Often played without the 3rd to avoid dissonance.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - (♭3) - 5 - ♭7 - 9 - 11</p>
+                      <p><strong>Use in:</strong> Jazz, funk, modal harmony</p>
+                      <p><strong>Character:</strong> Suspended and driving</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mt-6">
+              <h4 className="text-lg font-semibold text-yellow-800 mb-3">💡 Important Note About 11th Chords</h4>
+              <p className="text-yellow-700">
+                In major and dominant 11th chords, the 3rd is often omitted to avoid the harsh dissonance 
+                between the 3rd and 11th (a minor 9th interval). Minor 11th chords don't have this problem 
+                since the minor 3rd creates a consonant major 6th with the 11th.
+              </p>
             </div>
           </div>
         </div>
@@ -318,28 +376,37 @@ export default function ExtendedChordsPage() {
 
           <div className="grid gap-6 mb-6">
             <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Types of Thirteenth Chords</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Types of Thirteenth Chords</h3>
               
-              <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Dominant 13th (13)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - ♭7 - 9 - 11 - 13</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> G13 = G-B-D-F-A-C-E</p>
-                  <p className="text-sm text-gray-600">Ultimate jazz chord - rich and complex</p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex flex-col items-center">
+                    <SimpleFretboardDiagram chord="G13" />
+                    <h4 className="font-medium mb-2">Dominant 13th (13)</h4>
+                    <p className="text-sm mb-1"><strong>Formula:</strong> 1-3-5-♭7-9-11-13</p>
+                    <p className="text-sm mb-1"><strong>Example:</strong> G13</p>
+                    <p className="text-xs text-gray-600">Ultimate jazz chord</p>
+                  </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Minor 13th (m13)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9 - 11 - 13</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Am13 = A-C-E-G-B-D-F#</p>
-                  <p className="text-sm text-gray-600">Lush, sophisticated minor harmony</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex flex-col items-center">
+                    <SimpleFretboardDiagram chord="Am13" />
+                    <h4 className="font-medium mb-2">Minor 13th (m13)</h4>
+                    <p className="text-sm mb-1"><strong>Formula:</strong> 1-♭3-5-♭7-9-11-13</p>
+                    <p className="text-sm mb-1"><strong>Example:</strong> Am13</p>
+                    <p className="text-xs text-gray-600">Lush minor harmony</p>
+                  </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Major 13th (Maj13)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9 - 11 - 13</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> CMaj13 = C-E-G-B-D-F-A</p>
-                  <p className="text-sm text-gray-600">Extremely rich, often with omissions</p>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex flex-col items-center">
+                    <SimpleFretboardDiagram chord="CMaj13" />
+                    <h4 className="font-medium mb-2">Major 13th (Maj13)</h4>
+                    <p className="text-sm mb-1"><strong>Formula:</strong> 1-3-5-7-9-11-13</p>
+                    <p className="text-sm mb-1"><strong>Example:</strong> CMaj13</p>
+                    <p className="text-xs text-gray-600">Extremely rich sound</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -422,34 +489,270 @@ export default function ExtendedChordsPage() {
             <p className="text-green-700">These progressions showcase the rich harmonic possibilities of extended chords.</p>
           </div>
 
-          <div className="grid gap-6 mb-6">
+          <div className="grid gap-8 mb-6">
             <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Jazz and Contemporary Progressions</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Jazz and Contemporary Progressions</h3>
               
-              <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Extended ii-V-I</h4>
-                  <p className="text-sm mb-2"><strong>Basic:</strong> Dm7 - G7 - CMaj7</p>
-                  <p className="text-sm mb-2"><strong>Extended:</strong> Dm9 - G13 - CMaj9</p>
-                  <p className="text-sm text-gray-600">Jazz standard with maximum harmonic sophistication</p>
+              {/* Extended ii-V-I Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Extended ii-V-I Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="flex justify-center space-x-4 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm9" />
+                        <p className="text-sm font-medium mt-1">Dm9</p>
+                        <p className="text-xs text-gray-600">ii9</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G13" />
+                        <p className="text-sm font-medium mt-1">G13</p>
+                        <p className="text-xs text-gray-600">V13</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="CMaj9" />
+                        <p className="text-sm font-medium mt-1">CMaj9</p>
+                        <p className="text-xs text-gray-600">IMaj9</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Smooth jazz feel, emphasize beat 1 and 3</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 120-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Swing 8ths</p>
+                      <p><strong>Genre:</strong> Jazz, Neo-Soul, R&B</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Add9 Pop Progression</h4>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Cadd9 - Gadd9 - Am7 - Fadd9</p>
-                  <p className="text-sm text-gray-600">Contemporary pop/rock with extended color</p>
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/X.10/5.12/4.10/3.10/2) | :w (3/6.3/5.5/4.3/3.5/2) | :w (X/6.3/5.2/4.4/3.5/2)
+text :w,Dm9,:w,G13,:w,CMaj9
+                  `}
+                  width={600}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  The cornerstone of jazz harmony - extended ii-V-I with 9th and 13th tensions for sophisticated color
+                </p>
+              </div>
+
+              {/* Add9 Pop Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Add9 Pop Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Cadd9" />
+                        <p className="text-sm font-medium mt-1">Cadd9</p>
+                        <p className="text-xs text-gray-600">I add9</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Gadd9" />
+                        <p className="text-sm font-medium mt-1">Gadd9</p>
+                        <p className="text-xs text-gray-600">V add9</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am7" />
+                        <p className="text-sm font-medium mt-1">Am7</p>
+                        <p className="text-xs text-gray-600">vi7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Fadd9" />
+                        <p className="text-sm font-medium mt-1">Fadd9</p>
+                        <p className="text-xs text-gray-600">IV add9</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♪♪ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - DU - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Modern pop/rock feel with steady drive</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Straight 8ths</p>
+                      <p><strong>Genre:</strong> Pop, Indie Rock, Alternative</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Neo-Soul Progression</h4>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Am11 - Dm9 - G13 - CMaj9</p>
-                  <p className="text-sm text-gray-600">Rich, sophisticated R&B harmony</p>
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/X.3/5.2/4.0/3.3/2.0/1) | :w (3/6.0/5.0/4.2/3.0/2.3/1) | :w (X/X.0/5.2/4.0/3.1/2.0/1) | :w (1/6.0/5.3/4.0/3.1/2.1/1)
+text :w,Cadd9,:w,Gadd9,:w,Am7,:w,Fadd9
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Contemporary pop progression with add9 extensions - creates open, airy sound perfect for modern songwriting
+                </p>
+              </div>
+
+              {/* Neo-Soul Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Neo-Soul Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am11" />
+                        <p className="text-sm font-medium mt-1">Am11</p>
+                        <p className="text-xs text-gray-600">vi11</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm9" />
+                        <p className="text-sm font-medium mt-1">Dm9</p>
+                        <p className="text-xs text-gray-600">ii9</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G13" />
+                        <p className="text-sm font-medium mt-1">G13</p>
+                        <p className="text-xs text-gray-600">V13</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="CMaj9" />
+                        <p className="text-sm font-medium mt-1">CMaj9</p>
+                        <p className="text-xs text-gray-600">IMaj9</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Syncopated neo-soul groove</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 70-95 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Laid-back groove</p>
+                      <p><strong>Genre:</strong> Neo-Soul, R&B, Contemporary Jazz</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Modal Jazz</h4>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Dm11 - Em11 - Dm11 - Gm11</p>
-                  <p className="text-sm text-gray-600">Floating, modal quality with 11th extensions</p>
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/X.0/5.0/4.0/3.1/2.0/1) | :w (X/X.10/5.12/4.10/3.10/2) | :w (3/6.3/5.5/4.3/3.5/2) | :w (X/6.3/5.2/4.4/3.5/2)
+text :w,Am11,:w,Dm9,:w,G13,:w,CMaj9
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Rich, sophisticated R&B harmony with extended tensions - perfect for creating lush, emotional soundscapes
+                </p>
+              </div>
+
+              {/* Modal Jazz */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+                <h4 className="text-xl font-semibold mb-4 text-center text-red-700">Modal Jazz Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="flex justify-center space-x-4 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm11" />
+                        <p className="text-sm font-medium mt-1">Dm11</p>
+                        <p className="text-xs text-gray-600">i11</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Em11" />
+                        <p className="text-sm font-medium mt-1">Em11</p>
+                        <p className="text-xs text-gray-600">ii11</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Gm11" />
+                        <p className="text-sm font-medium mt-1">Gm11</p>
+                        <p className="text-xs text-gray-600">iv11</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩. ♪ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D. U - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Floating, spacious modal feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 60-80 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Open, floating</p>
+                      <p><strong>Genre:</strong> Modal Jazz, Ambient, Film Score</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=D
+notes :w (X/X.0/5.0/4.0/3.1/2.1/1) | :w (0/6.0/5.0/4.0/3.0/2.0/1) | :w (X/X.0/5.0/4.0/3.1/2.1/1) | :w (3/6.3/5.3/4.3/3.3/2.3/1)
+text :w,Dm11,:w,Em11,:w,Dm11,:w,Gm11
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Floating modal harmony with 11th extensions - creates mysterious, open soundscapes without traditional resolution
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-6">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎯 Practice Tips for Extended Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Practice chord transitions slowly</li>
+                      <li>• Focus on minimal finger movement</li>
+                      <li>• Use a metronome for timing</li>
+                      <li>• Let rings sustain between changes</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Start with simple strumming patterns</li>
+                      <li>• Experiment with fingerpicking</li>
+                      <li>• Try different voicings up the neck</li>
+                      <li>• Record yourself for timing analysis</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

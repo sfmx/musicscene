@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function DiminishedChordsPage() {
@@ -280,36 +281,234 @@ export default function DiminishedChordsPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
           
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-blue-800 mb-3">🎯 Building Diminished Chord Skills</h3>
-            <p className="text-blue-700">These exercises will help you master diminished chords and their dramatic harmonic applications.</p>
-          </div>
-
-          <div className="space-y-6">
+          <div className="grid gap-8 mb-6">
             <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 1: Chromatic Passing Practice</h3>
-              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
-                <p className="font-medium mb-2">Pattern: C - C#° - Dm - D#° - Em</p>
-                <p className="text-sm text-gray-600 mb-2">Practice smooth transitions using diminished passing chords</p>
-                <p className="text-sm">Focus on clean chord changes and voice leading</p>
+              
+              {/* Exercise 1: Chromatic Passing Practice */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-red-700">Chromatic Passing Practice</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-2 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C#°" />
+                        <p className="text-sm font-medium mt-1">C#°</p>
+                        <p className="text-xs text-gray-600">Pass</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm" />
+                        <p className="text-sm font-medium mt-1">Dm</p>
+                        <p className="text-xs text-gray-600">ii</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="D#°" />
+                        <p className="text-sm font-medium mt-1">D#°</p>
+                        <p className="text-xs text-gray-600">Pass</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Em" />
+                        <p className="text-sm font-medium mt-1">Em</p>
+                        <p className="text-xs text-gray-600">iii</p>
+                      </div>
+                      <div className="text-center text-xs text-gray-400 flex items-center justify-center">
+                        +
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Smooth, connected movement</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-100 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Legato, flowing</p>
+                      <p><strong>Genre:</strong> Jazz, Classical, Ballads</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.4/5.5/4.3/3.5/2.3/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (X/6.X/5.1/4.2/3.1/2.2/1) | :w (0/6.0/5.0/4.0/3.0/2.0/1)
+text :w,C,:w,C#°,:w,Dm,:w,D#°,:w,Em
+                  `}
+                  width={900}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Classic chromatic passing technique - diminished chords create smooth voice leading between diatonic chords
+                </p>
               </div>
-            </div>
 
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 2: Diminished 7th Symmetry</h3>
-              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
-                <p className="font-medium mb-2">Pattern: G°7 (3rd fret) - Same shape at 6th, 9th, 12th frets</p>
-                <p className="text-sm text-gray-600 mb-2">Explore the symmetrical nature of diminished 7th chords</p>
-                <p className="text-sm">Notice how the same shape creates different chord names</p>
+              {/* Exercise 2: Diminished 7th Symmetry */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Diminished 7th Symmetry</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Same Shape, Different Names</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G°7" />
+                        <p className="text-sm font-medium mt-1">G°7</p>
+                        <p className="text-xs text-gray-600">3rd fret</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G°7" />
+                        <p className="text-sm font-medium mt-1">Bb°7</p>
+                        <p className="text-xs text-gray-600">6th fret</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G°7" />
+                        <p className="text-sm font-medium mt-1">Db°7</p>
+                        <p className="text-xs text-gray-600">9th fret</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G°7" />
+                        <p className="text-sm font-medium mt-1">E°7</p>
+                        <p className="text-xs text-gray-600">12th fret</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Practice Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D - D - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Move shape up 3 frets each time</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 60-80 BPM</p>
+                      <p className="mb-2"><strong>Goal:</strong> Understand symmetry</p>
+                      <p><strong>Focus:</strong> Same fingering, different chord names</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (3/6.4/5.5/4.3/3.6/2.3/1) | :w (6/6.7/5.8/4.6/3.9/2.6/1) | :w (9/6.10/5.11/4.9/3.12/2.9/1) | :w (12/6.13/5.14/4.12/3.15/2.12/1)
+text :w,G°7,:w,Bb°7,:w,Db°7,:w,E°7
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Exploiting diminished 7th symmetry - the same shape creates four different chord names every 3 frets
+                </p>
               </div>
-            </div>
 
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Exercise 3: Jazz Progression Integration</h3>
-              <div className="bg-white rounded-lg p-4 mb-4 border border-gray-200">
-                <p className="font-medium mb-2">Pattern: Am - A#° - Bm7b5 - E7 - Am</p>
-                <p className="text-sm text-gray-600 mb-2">Practice incorporating diminished chords into jazz progressions</p>
-                <p className="text-sm">Work on smooth voice leading between chords</p>
+              {/* Exercise 3: Jazz Progression Integration */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Jazz Progression Integration</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-2 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="A#°" />
+                        <p className="text-sm font-medium mt-1">A#°</p>
+                        <p className="text-xs text-gray-600">Pass</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Bm7b5" />
+                        <p className="text-sm font-medium mt-1">Bm7b5</p>
+                        <p className="text-xs text-gray-600">ii°7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E7" />
+                        <p className="text-sm font-medium mt-1">E7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                      <div className="text-center text-xs text-gray-400 flex items-center justify-center">
+                        +
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Sophisticated jazz swing</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 120-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Swing 8ths</p>
+                      <p><strong>Genre:</strong> Jazz, Bossa Nova, Standards</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=Am
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (X/6.1/5.2/4.3/3.2/2.3/1) | :w (X/6.2/5.3/4.2/3.3/2.X/1) | :w (0/6.2/5.0/4.1/3.0/2.0/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1)
+text :w,Am,:w,A#°,:w,Bm7b5,:w,E7,:w,Am
+                  `}
+                  width={900}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Classic minor jazz progression with diminished passing chord and half-diminished ii chord
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-red-50 rounded-lg p-6 border border-red-200 mt-6">
+                <h4 className="text-lg font-semibold text-red-800 mb-4">🎯 Practice Tips for Diminished Chords</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-red-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-red-700 space-y-1">
+                      <li>• Practice clean chord transitions</li>
+                      <li>• Listen for the distinctive tense sound</li>
+                      <li>• Work on smooth voice leading</li>
+                      <li>• Use light touch - avoid heavy strumming</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-red-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-red-700 space-y-1">
+                      <li>• Perfect for creating dramatic moments</li>
+                      <li>• Use as passing chords between stable chords</li>
+                      <li>• Essential for jazz and classical harmony</li>
+                      <li>• Great for modulation and key changes</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

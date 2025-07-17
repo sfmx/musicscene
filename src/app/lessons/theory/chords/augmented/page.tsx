@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function AugmentedChordsPage() {
@@ -220,32 +221,213 @@ export default function AugmentedChordsPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Augmented Progressions</h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
-              <h3 className="text-lg font-semibold text-purple-800 mb-4">Chromatic Ascent</h3>
-              <div className="space-y-3">
-                <div className="bg-white rounded p-3">
-                  <p className="font-mono text-center">C - C+ - F - F+</p>
+          <div className="grid gap-8 mb-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              
+              {/* Chromatic Ascent Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Chromatic Ascent</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">I+</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F+" />
+                        <p className="text-sm font-medium mt-1">F+</p>
+                        <p className="text-xs text-gray-600">IV+</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D - D - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Dramatic, building tension</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-100 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Steady, building</p>
+                      <p><strong>Genre:</strong> Classical, Film Score, Progressive</p>
+                    </div>
+                  </div>
                 </div>
-                <ul className="text-sm text-purple-700 space-y-1">
-                  <li>• <strong>Function:</strong> Chromatic bass line</li>
-                  <li>• <strong>Feel:</strong> Building tension</li>
-                  <li>• <strong>Use:</strong> Classical, film music</li>
-                </ul>
-              </div>
-            </div>
 
-            <div className="bg-gradient-to-br from-indigo-50 to-pink-50 rounded-lg p-6 border border-indigo-200">
-              <h3 className="text-lg font-semibold text-indigo-800 mb-4">Jazz Substitution</h3>
-              <div className="space-y-3">
-                <div className="bg-white rounded p-3">
-                  <p className="font-mono text-center">C - A+ - Dm - G7</p>
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (1/6.0/5.3/4.2/3.2/2.1/1)
+text :w,C,:w,C+,:w,F,:w,F+
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Classic chromatic bass line movement - creates dramatic tension through systematic pitch raising
+                </p>
+              </div>
+
+              {/* Jazz Substitution Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-indigo-700">Jazz Substitution</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="A+" />
+                        <p className="text-sm font-medium mt-1">A+</p>
+                        <p className="text-xs text-gray-600">VI+</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm" />
+                        <p className="text-sm font-medium mt-1">Dm</p>
+                        <p className="text-xs text-gray-600">ii</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G7" />
+                        <p className="text-sm font-medium mt-1">G7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Syncopated jazz swing</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 120-160 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Swing 8ths</p>
+                      <p><strong>Genre:</strong> Jazz, Bebop, Standards</p>
+                    </div>
+                  </div>
                 </div>
-                <ul className="text-sm text-indigo-700 space-y-1">
-                  <li>• <strong>Function:</strong> Chromatic approach</li>
-                  <li>• <strong>Feel:</strong> Sophisticated movement</li>
-                  <li>• <strong>Use:</strong> Jazz standards, bebop</li>
-                </ul>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
+text :w,C,:w,A+,:w,Dm,:w,G7
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Sophisticated jazz substitution - the A+ creates chromatic approach to Dm in classic ii-V progression
+                </p>
+              </div>
+
+              {/* Symmetrical Augmented Cycle */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-red-700">Symmetrical Augmented Cycle</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="flex justify-center space-x-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">I+</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E+" />
+                        <p className="text-sm font-medium mt-1">E+</p>
+                        <p className="text-xs text-gray-600">III+</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G+" />
+                        <p className="text-sm font-medium mt-1">G+</p>
+                        <p className="text-xs text-gray-600">V+</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩. ♪ ♩. ♪</p>
+                      <p className="text-xs text-gray-600 text-center">D. U - D. U</p>
+                      <p className="text-xs text-gray-600 text-center">Floating, mysterious</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 60-90 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Ethereal, floating</p>
+                      <p><strong>Genre:</strong> Ambient, Film Score, Experimental</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (0/6.3/5.2/4.1/3.1/2.0/1) | :w (3/6.2/5.1/4.0/3.0/2.3/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1)
+text :w,C+,:w,E+,:w,G+,:w,C+
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Exploiting augmented chord symmetry - each chord is a major third apart, creating endless harmonic circles
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-purple-50 rounded-lg p-6 border border-purple-200 mt-6">
+                <h4 className="text-lg font-semibold text-purple-800 mb-4">🎯 Practice Tips for Augmented Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-purple-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-purple-700 space-y-1">
+                      <li>• Practice smooth voice leading between chords</li>
+                      <li>• Listen for the #5 creating tension</li>
+                      <li>• Use light touch - let chords breathe</li>
+                      <li>• Experiment with different voicings</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-purple-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-purple-700 space-y-1">
+                      <li>• Use for creating dramatic moments</li>
+                      <li>• Perfect for modulation between keys</li>
+                      <li>• Great for chromatic bass lines</li>
+                      <li>• Try resolving to stable major/minor chords</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -255,22 +437,238 @@ export default function AugmentedChordsPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-              <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 1: Symmetrical Cycle</h3>
-              <div className="space-y-2 text-sm text-purple-700">
-                <p className="font-medium mb-2">Practice: C+ - E+ - G#+ - C+</p>
-                <p>Notice how each chord is a major third apart</p>
-                <p>Listen for the mysterious, floating quality</p>
+          <div className="grid gap-8 mb-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              
+              {/* Exercise 1: Symmetrical Cycle */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Exercise 1: Symmetrical Cycle</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">Root</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E+" />
+                        <p className="text-sm font-medium mt-1">E+</p>
+                        <p className="text-xs text-gray-600">Maj 3rd</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G#+" />
+                        <p className="text-sm font-medium mt-1">G#+</p>
+                        <p className="text-xs text-gray-600">Aug 5th</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">Return</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Practice Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">Slow, even strums</p>
+                      <p className="text-xs text-gray-600 text-center">Focus on listening to symmetry</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 60-80 BPM</p>
+                      <p className="mb-2"><strong>Goal:</strong> Hear the symmetry</p>
+                      <p><strong>Focus:</strong> Each chord identical, different root</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (0/6.3/5.2/4.1/3.1/2.0/1) | :w (4/6.3/5.2/4.1/3.1/2.4/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1)
+text :w,C+,:w,E+,:w,G#+,:w,C+
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <p className="text-sm text-blue-800 mb-2"><strong>🎯 Learning Objective:</strong></p>
+                  <p className="text-sm text-blue-700">Notice how each augmented chord is a major third apart. This creates an endless cycle - you can keep going C+ → E+ → G#+ → C+ infinitely. This symmetry is unique to augmented and diminished chords.</p>
+                </div>
               </div>
-            </div>
-            
-            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-              <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 2: Chromatic Movement</h3>
-              <div className="space-y-2 text-sm text-indigo-700">
-                <p className="font-medium mb-2">Play: C - C+ - F - F+ - Bb</p>
-                <p>Focus on smooth voice leading</p>
-                <p>Practice resolving tension to stable chords</p>
+
+              {/* Exercise 2: Chromatic Movement */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-indigo-700">Exercise 2: Chromatic Movement</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-2 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">Stable</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">Tension</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">Stable</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F+" />
+                        <p className="text-sm font-medium mt-1">F+</p>
+                        <p className="text-xs text-gray-600">Tension</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Bb" />
+                        <p className="text-sm font-medium mt-1">Bb</p>
+                        <p className="text-xs text-gray-600">Resolution</p>
+                      </div>
+                      <div className="text-center text-xs text-gray-400 flex items-center justify-center">
+                        +
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Practice Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Emphasize voice leading</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-100 BPM</p>
+                      <p className="mb-2"><strong>Goal:</strong> Smooth transitions</p>
+                      <p><strong>Focus:</strong> Chromatic bass movement</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (1/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.1/5.3/4.3/3.3/2.1/1)
+text :w,C,:w,C+,:w,F,:w,F+,:w,Bb
+                  `}
+                  width={900}
+                  className="mb-4"
+                />
+                
+                <div className="bg-green-50 rounded-lg p-4">
+                  <p className="text-sm text-green-800 mb-2"><strong>🎯 Learning Objective:</strong></p>
+                  <p className="text-sm text-green-700">Practice the classic chromatic ascent pattern. Listen how the augmented chords create tension that wants to resolve upward. The bass line moves chromatically: C → C# → F → F# → Bb, creating smooth voice leading.</p>
+                </div>
+              </div>
+
+              {/* Exercise 3: Augmented to Minor Resolution */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Exercise 3: Augmented to Minor Resolution</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C+" />
+                        <p className="text-sm font-medium mt-1">C+</p>
+                        <p className="text-xs text-gray-600">Tension</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm" />
+                        <p className="text-sm font-medium mt-1">Dm</p>
+                        <p className="text-xs text-gray-600">Resolution</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="A+" />
+                        <p className="text-sm font-medium mt-1">A+</p>
+                        <p className="text-xs text-gray-600">Tension</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm" />
+                        <p className="text-sm font-medium mt-1">Dm</p>
+                        <p className="text-xs text-gray-600">Home</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Practice Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩. ♪ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D. U - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Feel the tension-release</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 70-90 BPM</p>
+                      <p className="mb-2"><strong>Goal:</strong> Feel resolution</p>
+                      <p><strong>Focus:</strong> Tension → Release pattern</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (X/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1)
+text :w,C+,:w,Dm,:w,A+,:w,Dm
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <div className="bg-orange-50 rounded-lg p-4">
+                  <p className="text-sm text-orange-800 mb-2"><strong>🎯 Learning Objective:</strong></p>
+                  <p className="text-sm text-orange-700">Practice feeling how augmented chords naturally want to resolve to minor chords a semitone higher. This is because the #5 in the augmented chord wants to move up to the root of the next chord.</p>
+                </div>
+              </div>
+
+              {/* Practice Schedule */}
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-6">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">📅 Weekly Practice Schedule</h4>
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Days 1-2: Foundation</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Master Exercise 1 slowly</li>
+                      <li>• Focus on clean chord changes</li>
+                      <li>• Listen for symmetrical quality</li>
+                      <li>• Practice with metronome</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Days 3-4: Movement</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Add Exercise 2 chromatic movement</li>
+                      <li>• Practice smooth voice leading</li>
+                      <li>• Work on strumming patterns</li>
+                      <li>• Connect exercises together</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Days 5-7: Resolution</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Master Exercise 3 resolutions</li>
+                      <li>• Feel tension and release</li>
+                      <li>• Experiment with own progressions</li>
+                      <li>• Apply to songs you know</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
