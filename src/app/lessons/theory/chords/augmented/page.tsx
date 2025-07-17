@@ -1,395 +1,334 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import MusicScore from '@/components/MusicScore';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-const augmentedProgression = `
-stave
-notes :q C/5 E/5 G#/5 C/6
-options space=20
-stave
-notes :q F/5 A/5 C#/6 F/6
-options space=20
-stave
-notes :q G/5 B/5 D#/6 G/6
-options space=20
-`;
-
-const augmentedExercise = `
-tabstave notation=true key=C time=4/4
-notes :q 8/3 0/2 1/1 8/3 | 13/4 9/3 10/2 13/4
-text :w,.1,C+,:w,.2,F+,:w,.3,G+,:w,.4,C+
-`;
-
-const chromaticMovement = `
-tabstave notation=true key=C time=4/4
-notes :q 8/3 9/3 10/3 11/3 | 0/2 1/2 2/2 3/2 | 1/1 2/1 3/1 4/1
-text ++,.1,C+ to Db+ to D+ to Eb+
-`;
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import Link from 'next/link';
 
 export default function AugmentedChordsPage() {
   return (
     <Layout>
       <Header
-        title="Augmented Chords"
-        subtitle="Master the mysterious and colorful world of augmented harmony"
+        title="Augmented Chord Theory"
+        subtitle="Master the mysterious and colorful world of augmented harmony - the unsettling, dramatic chords that create tension and anticipation."
       />
       
-      <main className="prose mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/chords" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Chord Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-8 mb-8 not-prose">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Augmented Chords: The Sound of Mystery
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              Explore the unique, floating quality of augmented chords and their dramatic harmonic possibilities.
-            </p>
-            <div className="bg-purple-50 rounded-lg p-4">
-              <h3 className="font-semibold text-purple-800 mb-2">What You&apos;ll Learn:</h3>
-              <ul className="text-purple-700 space-y-1">
-                <li>• Augmented chord construction and theory</li>
-                <li>• Common fingerings and chord shapes</li>
-                <li>• Musical applications and stylistic uses</li>
-                <li>• Practice progressions and exercises</li>
+        <div className="bg-gradient-to-r from-purple-700 to-indigo-800 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Augmented Chords</h1>
+          <p className="text-xl opacity-90 mb-4">
+            Augmented chords create an unsettling, mysterious quality through their symmetrical structure and raised fifth. 
+            They're essential for dramatic effect, film scoring, and sophisticated harmonic movement.
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Mysterious Sound</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Symmetrical Structure</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Dramatic Effect</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Film Scoring</span>
+          </div>
+        </div>
+
+        {/* Theory Fundamentals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Theory Fundamentals</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">What Are Augmented Chords?</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Definition:</strong> Three-note chords with raised (augmented) fifth</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Formula:</strong> Root + Major 3rd + Augmented 5th</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Interval Pattern:</strong> 4 + 4 semitones</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Sound Quality:</strong> Unsettling, mysterious, unstable</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Function:</strong> Transition chord, dramatic effect</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Musical Applications</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Classical:</strong> Romantic era, modulation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Jazz:</strong> Chromatic movement, substitutions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Film Music:</strong> Suspense, drama, mystery</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong>Rock/Metal:</strong> Dissonant color, tension</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Theory Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Understanding Augmented Chords</h2>
-          
-          <div className="bg-blue-50 rounded-lg p-6 mb-6">
-            <h3 className="text-xl font-semibold mb-4 text-blue-800">Construction</h3>
-            <p className="mb-4">
-              An augmented chord is built with:
-            </p>
-            <ul className="space-y-2">
-              <li><strong>Root:</strong> The foundation note</li>
-              <li><strong>Major Third:</strong> 4 semitones above the root</li>
-              <li><strong>Augmented Fifth:</strong> 8 semitones above the root (raised 5th)</li>
-            </ul>
-          </div>
-
-          <div className="bg-green-50 rounded-lg p-6 mb-6">
-            <h3 className="text-xl font-semibold mb-4 text-green-800">Unique Properties</h3>
-            <ul className="space-y-2">
-              <li>• Contains only major thirds (4 semitones each)</li>
-              <li>• Symmetrical structure creates harmonic ambiguity</li>
-              <li>• Each note can function as the root</li>
-              <li>• Creates a floating, unresolved sound</li>
-              <li>• Only 4 unique augmented chords exist (due to symmetry)</li>
-            </ul>
-          </div>
-
-          <div className="my-8">
-            <h3 className="text-xl font-semibold mb-4">Basic Augmented Chords</h3>
-            <MusicScore 
-              staves={[{
-                id: 'augmented-progression',
-                notation: augmentedProgression,
-                title: 'Basic Augmented Chords'
-              }]}
-            />
-          </div>
-        </section>
-
-        {/* Chord Shapes Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Chord Shapes</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-slate-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Root Position Shapes</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium mb-2">C Augmented (C+)</h4>
-                  <SimpleFretboardDiagram chord="C_augmented" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-2">F Augmented (F+)</h4>
-                  <SimpleFretboardDiagram chord="F_augmented" />
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-slate-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Higher Position Shapes</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium mb-2">G Augmented (G+)</h4>
-                  <SimpleFretboardDiagram chord="G_augmented" />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-2">D Augmented (D+)</h4>
-                  <SimpleFretboardDiagram chord="D_augmented" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-yellow-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-3 text-yellow-800">💡 Fingering Tips</h3>
-            <ul className="space-y-2 text-yellow-700">
-              <li>• Use your index finger to barre when possible</li>
-              <li>• Practice the symmetrical patterns across the fretboard</li>
-              <li>• Focus on clean fretting to avoid muddy sounds</li>
-              <li>• Experiment with different inversions and voicings</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Musical Applications */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Musical Applications</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-purple-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-purple-800">Common Uses</h3>
-              <ul className="space-y-2">
-                <li>• <strong>Chromatic passing chords:</strong> Smooth voice leading</li>
-                <li>• <strong>Tension and release:</strong> Creating harmonic drama</li>
-                <li>• <strong>Modulation aid:</strong> Transitioning between keys</li>
-                <li>• <strong>Jazz harmony:</strong> Extended chord progressions</li>
-                <li>• <strong>Film scoring:</strong> Mysterious or supernatural moods</li>
+        {/* Understanding Augmented Chord Construction */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Understanding Augmented Chord Construction</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">C+ Example</h3>
+              <ul className="text-purple-700 text-sm space-y-2">
+                <li>• <strong>Root:</strong> C (1st degree)</li>
+                <li>• <strong>Major 3rd:</strong> E (3rd degree)</li>
+                <li>• <strong>Aug 5th:</strong> G# (raised 5th)</li>
+                <li>• <strong>Semitones:</strong> C→E (4), E→G# (4)</li>
+                <li>• <strong>Result:</strong> Unstable, mysterious triad</li>
               </ul>
             </div>
-            
-            <div className="bg-pink-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-pink-800">Style Applications</h3>
-              <ul className="space-y-2">
-                <li>• <strong>Jazz:</strong> Extended harmonies and substitutions</li>
-                <li>• <strong>Classical:</strong> Romantic period harmony</li>
-                <li>• <strong>Film music:</strong> Suspense and mystery</li>
-                <li>• <strong>Progressive rock:</strong> Unconventional harmonies</li>
-                <li>• <strong>Neo-soul:</strong> Colorful chord progressions</li>
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">Symmetrical Structure</h3>
+              <ul className="text-indigo-700 text-sm space-y-2">
+                <li>• <strong>Equal Intervals:</strong> Two major thirds</li>
+                <li>• <strong>Symmetry:</strong> Divides octave equally</li>
+                <li>• <strong>Inversions:</strong> Sound identical</li>
+                <li>• <strong>Enharmonic:</strong> Multiple names possible</li>
+                <li>• <strong>Ambiguity:</strong> No clear tonal center</li>
+              </ul>
+            </div>
+            <div className="bg-pink-50 rounded-lg p-4 border border-pink-200">
+              <h3 className="text-lg font-semibold text-pink-800 mb-3">Harmonic Function</h3>
+              <ul className="text-pink-700 text-sm space-y-2">
+                <li>• <strong>Purpose:</strong> Creates instability</li>
+                <li>• <strong>Resolution:</strong> Usually moves to stable chord</li>
+                <li>• <strong>Voice leading:</strong> Smooth chromatic motion</li>
+                <li>• <strong>Usage:</strong> Passing chord, modulation</li>
+                <li>• <strong>Effect:</strong> Dramatic, unsettling</li>
               </ul>
             </div>
           </div>
+        </div>
 
-          <div className="bg-red-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-3 text-red-800">🎵 Famous Examples</h3>
-            <ul className="space-y-2 text-red-700">
-              <li>• "Oh! Darling" by The Beatles (chromatic movement)</li>
-              <li>• "All of Me" by Gerald Marks (jazz standard)</li>
-              <li>• Classical composers like Liszt and Wagner</li>
-              <li>• Film scores by John Williams and Danny Elfman</li>
-            </ul>
+        {/* Essential Augmented Chord Shapes */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Essential Augmented Chord Shapes</h2>
+          
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-6">
+            <h3 className="text-lg font-semibold text-purple-800 mb-3">🎸 Start Here</h3>
+            <p className="text-purple-700">These augmented shapes will add mysterious drama to your playing.</p>
           </div>
-        </section>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">C+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="C+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> C-E-G#</p>
+                <p><strong>Fingering:</strong> Compact shape</p>
+                <p><strong>Use:</strong> Classical, film music</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">F+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="F+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> F-A-C#</p>
+                <p><strong>Fingering:</strong> Barre variation</p>
+                <p><strong>Use:</strong> Jazz, passing chord</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">A+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="A+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> A-C#-E#(F)</p>
+                <p><strong>Fingering:</strong> Moveable shape</p>
+                <p><strong>Use:</strong> Dramatic transitions</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">D+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="D+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> D-F#-A#</p>
+                <p><strong>Fingering:</strong> Upper fret access</p>
+                <p><strong>Use:</strong> Chromatic sequences</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">G+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="G+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> G-B-D#</p>
+                <p><strong>Fingering:</strong> Open string variant</p>
+                <p><strong>Use:</strong> Rock, metal accents</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">E+</h3>
+              <div className="text-center mb-4">
+                <SimpleFretboardDiagram chord="E+" />
+              </div>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><strong>Notes:</strong> E-G#-B#(C)</p>
+                <p><strong>Fingering:</strong> Modified E major</p>
+                <p><strong>Use:</strong> Suspense, mystery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Common Progressions */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Augmented Progressions</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-4">Chromatic Ascent</h3>
+              <div className="space-y-3">
+                <div className="bg-white rounded p-3">
+                  <p className="font-mono text-center">C - C+ - F - F+</p>
+                </div>
+                <ul className="text-sm text-purple-700 space-y-1">
+                  <li>• <strong>Function:</strong> Chromatic bass line</li>
+                  <li>• <strong>Feel:</strong> Building tension</li>
+                  <li>• <strong>Use:</strong> Classical, film music</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-50 to-pink-50 rounded-lg p-6 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-4">Jazz Substitution</h3>
+              <div className="space-y-3">
+                <div className="bg-white rounded p-3">
+                  <p className="font-mono text-center">C - A+ - Dm - G7</p>
+                </div>
+                <ul className="text-sm text-indigo-700 space-y-1">
+                  <li>• <strong>Function:</strong> Chromatic approach</li>
+                  <li>• <strong>Feel:</strong> Sophisticated movement</li>
+                  <li>• <strong>Use:</strong> Jazz standards, bebop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Practice Exercises */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Practice Exercises</h2>
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
           
-          <div className="space-y-8">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Exercise 1: Basic Augmented Chords</h3>
-              <p className="mb-4">Practice these fundamental augmented chord shapes:</p>
-              <MusicScore 
-                staves={[{
-                  id: 'augmented-exercise',
-                  notation: augmentedExercise,
-                  title: 'Basic Augmented Exercise'
-                }]}
-              />
-              <div className="mt-4 space-y-2">
-                <p><strong>Practice Tips:</strong></p>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Start slowly and focus on clean chord changes</li>
-                  <li>Listen to the unique floating quality of each chord</li>
-                  <li>Practice with a metronome at 60-80 BPM</li>
-                </ul>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 1: Symmetrical Cycle</h3>
+              <div className="space-y-2 text-sm text-purple-700">
+                <p className="font-medium mb-2">Practice: C+ - E+ - G#+ - C+</p>
+                <p>Notice how each chord is a major third apart</p>
+                <p>Listen for the mysterious, floating quality</p>
               </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Exercise 2: Chromatic Movement</h3>
-              <p className="mb-4">Practice chromatic movement using augmented chords:</p>
-              <MusicScore 
-                staves={[{
-                  id: 'chromatic-movement',
-                  notation: chromaticMovement,
-                  title: 'Chromatic Movement Exercise'
-                }]}
-              />
-              <div className="mt-4 space-y-2">
-                <p><strong>Practice Focus:</strong></p>
-                <ul className="list-disc ml-6 space-y-1">
-                  <li>Smooth voice leading between chords</li>
-                  <li>Minimal finger movement when possible</li>
-                  <li>Notice the symmetrical patterns</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Exercise 3: Resolution Practice</h3>
-              <div className="mb-4">
-                <h4 className="font-medium mb-2">Common Resolutions:</h4>
-                <ul className="space-y-2">
-                  <li>• <strong>C+ → F:</strong> Augmented to major (up a 4th)</li>
-                  <li>• <strong>C+ → F#:</strong> Augmented to major (up a tritone)</li>
-                  <li>• <strong>C+ → Am:</strong> Augmented to minor (down a 3rd)</li>
-                  <li>• <strong>C+ → Dm:</strong> Augmented to minor (up a 2nd)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Practice Strategy */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Practice Strategy</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-green-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-green-800">Week 1-2: Foundation</h3>
-              <ul className="space-y-2">
-                <li>• Learn basic augmented chord shapes</li>
-                <li>• Practice chord construction theory</li>
-                <li>• Work on clean fretting technique</li>
-                <li>• Explore the symmetrical patterns</li>
-              </ul>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-blue-800">Week 3-4: Application</h3>
-              <ul className="space-y-2">
-                <li>• Practice chromatic movement</li>
-                <li>• Work on common resolutions</li>
-                <li>• Integrate into progressions</li>
-                <li>• Experiment with different voicings</li>
-              </ul>
+            <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 2: Chromatic Movement</h3>
+              <div className="space-y-2 text-sm text-indigo-700">
+                <p className="font-medium mb-2">Play: C - C+ - F - F+ - Bb</p>
+                <p>Focus on smooth voice leading</p>
+                <p>Practice resolving tension to stable chords</p>
+              </div>
             </div>
           </div>
-
-          <div className="bg-orange-50 rounded-lg p-6 mt-6">
-            <h3 className="text-lg font-semibold mb-3 text-orange-800">🎯 Practice Goals</h3>
-            <ul className="space-y-2 text-orange-700">
-              <li>• Memorize at least 4 augmented chord shapes</li>
-              <li>• Understand the symmetrical structure</li>
-              <li>• Practice smooth resolutions to major/minor chords</li>
-              <li>• Incorporate into improvisation and composition</li>
-            </ul>
-          </div>
-        </section>
+        </div>
 
         {/* Continue Your Chord Journey */}
-        <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200 mb-12 not-prose">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Continue Your Chord Journey</h2>
-          <p className="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
-            Now that you&apos;ve mastered augmented chords, explore other chord types to expand your harmonic vocabulary 
-            and colorful expression. Each lesson builds upon your foundation to create more sophisticated and mysterious music.
+        <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Chord Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand augmented chords, explore how they connect to other chord types and harmonic concepts.
           </p>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Link href="/lessons/theory/chords/major" className="group">
-              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-purple-300">
-                <div className="text-blue-600 mb-3">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                  </svg>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/chords/diminished" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
+                  <span className="text-2xl">⚫</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Major Chords</h3>
-                <p className="text-gray-600 text-sm">Master the foundation of harmonic stability</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Diminished Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Explore maximum tension and dramatic effect.
+                </p>
+                <span className="text-red-600 font-medium text-sm group-hover:text-red-700">
+                  Add drama →
+                </span>
               </div>
             </Link>
-
-            <Link href="/lessons/theory/chords/minor" className="group">
-              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-purple-300">
-                <div className="text-slate-600 mb-3">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                  </svg>
+            
+            <Link href="/lessons/theory/chords/extended" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-orange-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
+                  <span className="text-2xl">🎼</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Minor Chords</h3>
-                <p className="text-gray-600 text-sm">Master emotional depth with minor harmony</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Extended Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Master complex jazz harmony with 9ths, 11ths, and 13ths.
+                </p>
+                <span className="text-orange-600 font-medium text-sm group-hover:text-orange-700">
+                  Expand harmony →
+                </span>
               </div>
             </Link>
-
-            <Link href="/lessons/theory/chords/seventh" className="group">
-              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-purple-300">
-                <div className="text-amber-600 mb-3">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2C7 1.448 7.448 1 8 1s1 .448 1 1v2M17 4V2c0-.552.448-1 1-1s1 .448 1 1v2M3 10h18M5 6h14c1.105 0 2 .895 2 2v11c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V8c0-1.105.895-2 2-2z" />
-                  </svg>
+            
+            <Link href="/lessons/theory/chords/major" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">☀️</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Seventh Chords</h3>
-                <p className="text-gray-600 text-sm">Add sophistication with jazzy four-note harmonies</p>
-              </div>
-            </Link>
-
-            <Link href="/lessons/theory/chords/diminished" className="group">
-              <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all duration-200 group-hover:border-purple-300">
-                <div className="text-red-600 mb-3">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Diminished Chords</h3>
-                <p className="text-gray-600 text-sm">Create maximum tension and dramatic effect</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Major Chords</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Return to the bright, stable foundation of harmony.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Back to basics →
+                </span>
               </div>
             </Link>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-4 mt-6">
-            <div>
-              <h4 className="font-medium mb-2">Theory Mastery</h4>
-              <ul className="text-sm space-y-1">
-                <li>• Chord Construction</li>
-                <li>• Symmetrical Properties</li>
-                <li>• Voice Leading</li>
-                <li>• Harmonic Function</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">Technical Skills</h4>
-              <ul className="text-sm space-y-1">
-                <li>• Smooth Transitions</li>
-                <li>• Chromatic Movement</li>
-                <li>• Color and Texture</li>
-                <li>• Advanced Voicings</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">Practical Application</h4>
-              <ul className="text-sm space-y-1">
-                <li>• Impressionistic Harmony</li>
-                <li>• Jazz Substitutions</li>
-                <li>• Film Scoring</li>
-                <li>• Mysterious Atmosphere</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Navigation */}
-        <section className="border-t pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <Link 
-              href="/lessons/theory/chords/diminished" 
-              className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-            >
-              <span className="mr-2">←</span>
-              Previous: Diminished Chords
-            </Link>
-            <Link 
-              href="/lessons/theory/chords" 
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Back to Chords Overview
-            </Link>
-            <div className="text-gray-500">End of Chord Theory</div>
-          </div>
-        </section>
+        </div>
       </main>
       
       <Footer />

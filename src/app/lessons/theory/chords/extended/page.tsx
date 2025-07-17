@@ -142,53 +142,121 @@ export default function ExtendedChordsPage() {
             <p className="text-blue-700">Ninth chords add the 9th degree (same as the 2nd, but an octave higher) to seventh chords, creating open, colorful harmony.</p>
           </div>
 
-          <div className="grid gap-6 mb-6">
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Types of Ninth Chords</h3>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Types of Ninth Chords</h3>
+            <div className="grid md:grid-cols-2 gap-8">
               
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2 text-gray-800">Major 9th (Maj9)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> CMaj9 = C-E-G-B-D</p>
-                  <p className="text-sm text-gray-600">Dreamy, sophisticated, floating quality</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Minor 9th (m9)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Am9 = A-C-E-G-B</p>
-                  <p className="text-sm text-gray-600">Mellow, contemplative, jazzy</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Dominant 9th (9)</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - ♭7 - 9</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> G9 = G-B-D-F-A</p>
-                  <p className="text-sm text-gray-600">Bluesy, funky, with forward motion</p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Add9 Chords</h4>
-                  <p className="text-sm mb-2"><strong>Formula:</strong> 1 - 3 - 5 - 9 (no 7th)</p>
-                  <p className="text-sm mb-2"><strong>Example:</strong> Cadd9 = C-E-G-D</p>
-                  <p className="text-sm text-gray-600">Open, bright, contemporary pop sound</p>
+              {/* Cmaj9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Major 9th (Cmaj9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Cmaj9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: C - E - G - B - D</h5>
+                    <p className="text-gray-600 mb-3">Dreamy, sophisticated, floating quality perfect for jazz ballads.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9</p>
+                      <p><strong>Use in:</strong> Jazz standards, bossa nova, contemporary pop</p>
+                      <p><strong>Character:</strong> Bright and sophisticated</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="font-bold text-lg mb-4">Common 9th Chord Shapes</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Cadd9</h4>
-                  <SimpleFretboardDiagram chord="C" />
-                  <p className="text-sm text-gray-600 mt-2">Simple add9 shape - very popular</p>
+              {/* Dm9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Minor 9th (Dm9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Dm9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: D - F - A - C - E</h5>
+                    <p className="text-gray-600 mb-3">Smooth and melancholic with atmospheric quality.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9</p>
+                      <p><strong>Use in:</strong> Neo-soul, ambient jazz, R&B</p>
+                      <p><strong>Character:</strong> Mellow and contemplative</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <h4 className="font-medium mb-3">Em9</h4>
-                  <SimpleFretboardDiagram chord="Em7" />
-                  <p className="text-sm text-gray-600 mt-2">Easy open Em9 voicing</p>
+              </div>
+
+              {/* C9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Dominant 9th (C9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="C9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: C - E - G - Bb - D</h5>
+                    <p className="text-gray-600 mb-3">Bluesy and driving sound with forward motion.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - 3 - 5 - ♭7 - 9</p>
+                      <p><strong>Use in:</strong> Blues, funk, soul, rock</p>
+                      <p><strong>Character:</strong> Bluesy with tension</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Am9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Minor 9th (Am9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Am9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: A - C - E - G - B</h5>
+                    <p className="text-gray-600 mb-3">Smooth and contemplative with rich harmonic color.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - ♭3 - 5 - ♭7 - 9</p>
+                      <p><strong>Use in:</strong> Jazz, neo-soul, contemporary pop</p>
+                      <p><strong>Character:</strong> Jazzy and sophisticated</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fmaj9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Major 9th (Fmaj9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Fmaj9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: F - A - C - E - G</h5>
+                    <p className="text-gray-600 mb-3">Warm and sophisticated with dreamy quality.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9</p>
+                      <p><strong>Use in:</strong> Jazz standards, bossa nova</p>
+                      <p><strong>Character:</strong> Warm and floating</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Gmaj9 Chord */}
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h4 className="text-xl font-semibold mb-4">Major 9th (Gmaj9)</h4>
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1">
+                    <SimpleFretboardDiagram chord="Gmaj9" />
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-medium mb-2">Notes: G - B - D - F# - A</h5>
+                    <p className="text-gray-600 mb-3">Open and airy sound perfect for contemporary music.</p>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Formula:</strong> 1 - 3 - 5 - 7 - 9</p>
+                      <p><strong>Use in:</strong> Contemporary folk, indie pop</p>
+                      <p><strong>Character:</strong> Open and bright</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
