@@ -12,6 +12,8 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'G_major': { frets: [3, 2, 0, 0, 3, 3], fingers: [3, 1, 0, 0, 2, 4] },
   'D': { frets: [-1, -1, 0, 2, 3, 2], fingers: [-1, -1, 0, 1, 3, 2] },
   'D_major': { frets: [-1, -1, 0, 2, 3, 2], fingers: [-1, -1, 0, 1, 3, 2] },
+  'E': { frets: [0, 2, 2, 1, 0, 0], fingers: [0, 2, 3, 1, 0, 0] },
+  'E_major': { frets: [0, 2, 2, 1, 0, 0], fingers: [0, 2, 3, 1, 0, 0] },
   'Em': { frets: [0, 2, 2, 0, 0, 0], fingers: [0, 2, 3, 0, 0, 0] },
   'E_minor': { frets: [0, 2, 2, 0, 0, 0], fingers: [0, 2, 3, 0, 0, 0] },
   'Am': { frets: [-1, 0, 2, 2, 1, 0], fingers: [-1, 0, 2, 3, 1, 0] },
@@ -80,6 +82,8 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   // Seventh chords
   'G7': { frets: [3, 2, 0, 0, 0, 1], fingers: [3, 2, 0, 0, 0, 1] },
   'E7': { frets: [0, 2, 0, 1, 0, 0], fingers: [0, 2, 0, 1, 0, 0] },
+  'A7': { frets: [-1, 0, 2, 0, 2, 0], fingers: [-1, 0, 2, 0, 3, 0] },
+  'D7': { frets: [-1, -1, 0, 2, 1, 2], fingers: [-1, -1, 0, 2, 1, 3] },
   'Am7': { frets: [-1, 0, 2, 0, 1, 0], fingers: [-1, 0, 2, 0, 1, 0] },
   'Em7': { frets: [0, 2, 0, 0, 0, 0], fingers: [0, 2, 0, 0, 0, 0] },
   'CMaj7': { frets: [-1, 3, 2, 0, 0, 0], fingers: [-1, 3, 2, 0, 0, 0] },
@@ -115,6 +119,15 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'Cadd9': { frets: [-1, 3, 2, 0, 3, 0], fingers: [-1, 2, 1, 0, 3, 0] },
   'Gadd9': { frets: [3, 0, 0, 2, 0, 3], fingers: [2, 0, 0, 1, 0, 3] },
   'Fadd9': { frets: [1, 0, 3, 0, 1, 1], fingers: [1, 0, 3, 0, 2, 4] },
+  // Power chords (5th intervals)
+  'E5': { frets: [0, 2, 2, -1, -1, -1], fingers: [0, 1, 2, -1, -1, -1] },
+  'A5': { frets: [-1, 0, 2, 2, -1, -1], fingers: [-1, 0, 1, 2, -1, -1] },
+  'D5': { frets: [-1, -1, 0, 2, 3, -1], fingers: [-1, -1, 0, 1, 2, -1] },
+  'G5': { frets: [3, 5, 5, -1, -1, -1], fingers: [1, 3, 4, -1, -1, -1] },
+  'C5': { frets: [-1, 3, 5, 5, -1, -1], fingers: [-1, 1, 3, 4, -1, -1] },
+  'F5': { frets: [1, 3, 3, -1, -1, -1], fingers: [1, 3, 4, -1, -1, -1] },
+  'B5': { frets: [-1, 2, 4, 4, -1, -1], fingers: [-1, 1, 3, 4, -1, -1] },
+  'Bb5': { frets: [-1, 1, 3, 3, -1, -1], fingers: [-1, 1, 3, 4, -1, -1] },
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function SeventhChordsPage() {
@@ -309,41 +310,271 @@ export default function SeventhChordsPage() {
         {/* Common Chord Progressions */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Seventh Chord Progressions</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">ii⁷ - V⁷ - I^Maj7</h3>
-              <p className="text-gray-600 mb-4">The foundation of jazz harmony and sophisticated progressions.</p>
-              <div className="space-y-2">
-                <p><strong>In C major:</strong> Dm7 - G7 - CMaj7</p>
-                <p><strong>Songs:</strong> &quot;Autumn Leaves&quot;, &quot;All of Me&quot;</p>
-                <p className="text-sm text-gray-500">Creates smooth voice leading and harmonic sophistication</p>
+          
+          <div className="grid gap-8 mb-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              
+              {/* ii-V-I Jazz Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Classic ii-V-I Jazz Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm7" />
+                        <p className="text-sm font-medium mt-1">Dm7</p>
+                        <p className="text-xs text-gray-600">ii7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G7" />
+                        <p className="text-sm font-medium mt-1">G7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="CMaj7" />
+                        <p className="text-sm font-medium mt-1">CMaj7</p>
+                        <p className="text-xs text-gray-600">IMaj7</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Sophisticated jazz ballad feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 100-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Swing 8ths</p>
+                      <p><strong>Genre:</strong> Jazz Standards, Ballads</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1) | :w (X/6.3/5.2/4.0/3.0/2.0/1)
+text :w,Dm7,:w,G7,:w,CMaj7
+                  `}
+                  width={600}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  The foundation of jazz harmony - creates smooth voice leading found in "Autumn Leaves" and "All of Me"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">I⁷ - IV⁷ - V⁷</h3>
-              <p className="text-gray-600 mb-4">Classic blues progression with authentic seventh chord sound.</p>
-              <div className="space-y-2">
-                <p><strong>In A:</strong> A7 - D7 - E7</p>
-                <p><strong>Songs:</strong> &quot;Sweet Home Chicago&quot;, &quot;Stormy Monday&quot;</p>
-                <p className="text-sm text-gray-500">Foundation of blues and early rock &apos;n&apos; roll</p>
+
+              {/* Blues Progression */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-amber-700">Classic Blues Progression</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="A7" />
+                        <p className="text-sm font-medium mt-1">A7</p>
+                        <p className="text-xs text-gray-600">I7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="D7" />
+                        <p className="text-sm font-medium mt-1">D7</p>
+                        <p className="text-xs text-gray-600">IV7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E7" />
+                        <p className="text-sm font-medium mt-1">E7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Classic blues shuffle feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Swing/Shuffle</p>
+                      <p><strong>Genre:</strong> Blues, Early Rock, Country</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=A
+notes :w (X/6.0/5.2/4.0/3.2/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.2/1) | :w (0/6.2/5.0/4.1/3.0/2.0/1)
+text :w,A7,:w,D7,:w,E7
+                  `}
+                  width={600}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Authentic blues sound with dominant sevenths - foundation of "Sweet Home Chicago" and "Stormy Monday"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">I^Maj7 - vi⁷ - ii⁷ - V⁷</h3>
-              <p className="text-gray-600 mb-4">Elegant circle of fifths progression with seventh chord color.</p>
-              <div className="space-y-2">
-                <p><strong>In C major:</strong> CMaj7 - Am7 - Dm7 - G7</p>
-                <p><strong>Songs:</strong> &quot;Fly Me to the Moon&quot;, &quot;Girl from Ipanema&quot;</p>
-                <p className="text-sm text-gray-500">Creates elegant harmonic movement and jazz sophistication</p>
+
+              {/* Circle of Fifths Jazz */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Circle of Fifths Jazz Movement</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="CMaj7" />
+                        <p className="text-sm font-medium mt-1">CMaj7</p>
+                        <p className="text-xs text-gray-600">IMaj7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am7" />
+                        <p className="text-sm font-medium mt-1">Am7</p>
+                        <p className="text-xs text-gray-600">vi7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm7" />
+                        <p className="text-sm font-medium mt-1">Dm7</p>
+                        <p className="text-xs text-gray-600">ii7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G7" />
+                        <p className="text-sm font-medium mt-1">G7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♪♪ ♪♪ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">UU - UU - UU - UU</p>
+                      <p className="text-xs text-gray-600 text-center">Light jazz comp style</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 120-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Smooth, flowing</p>
+                      <p><strong>Genre:</strong> Jazz Standards, Bossa Nova</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.0/3.0/2.0/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
+text :w,CMaj7,:w,Am7,:w,Dm7,:w,G7
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Elegant harmonic movement following the circle of fifths - heard in "Fly Me to the Moon" and "Girl from Ipanema"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">I^Maj7 - IV^Maj7 - vi⁷ - V⁷</h3>
-              <p className="text-gray-600 mb-4">Modern pop progression enhanced with seventh chord sophistication.</p>
-              <div className="space-y-2">
-                <p><strong>In C major:</strong> CMaj7 - FMaj7 - Am7 - G7</p>
-                <p><strong>Songs:</strong> &quot;Don&apos;t Look Back in Anger&quot;, &quot;Wonderful Tonight&quot;</p>
-                <p className="text-sm text-gray-500">Adds sophistication to popular music harmony</p>
+
+              {/* Pop Ballad with Sevenths */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Sophisticated Pop Ballad</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="CMaj7" />
+                        <p className="text-sm font-medium mt-1">CMaj7</p>
+                        <p className="text-xs text-gray-600">IMaj7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="FMaj7" />
+                        <p className="text-sm font-medium mt-1">FMaj7</p>
+                        <p className="text-xs text-gray-600">IVMaj7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am7" />
+                        <p className="text-sm font-medium mt-1">Am7</p>
+                        <p className="text-xs text-gray-600">vi7</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G7" />
+                        <p className="text-sm font-medium mt-1">G7</p>
+                        <p className="text-xs text-gray-600">V7</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Emotional ballad feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 70-90 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Heartfelt, flowing</p>
+                      <p><strong>Genre:</strong> Pop Ballads, Soft Rock</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.0/3.0/2.0/1) | :w (1/6.3/5.2/4.1/3.0/2.X/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
+text :w,CMaj7,:w,FMaj7,:w,Am7,:w,G7
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Modern pop progression enhanced with seventh chord sophistication - adds depth to "Don't Look Back in Anger" style ballads
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-6">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎯 Practice Tips for Seventh Chord Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Practice smooth voice leading between chords</li>
+                      <li>• Focus on clean seventh intervals</li>
+                      <li>• Use light touch for jazzy sophistication</li>
+                      <li>• Work on chord transitions at slow tempo</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Essential foundation of jazz harmony</li>
+                      <li>• Perfect for blues and early rock styles</li>
+                      <li>• Adds sophistication to pop progressions</li>
+                      <li>• Creates smooth harmonic movement</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

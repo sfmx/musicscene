@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Perfect5thPage() {
   return (
@@ -97,48 +99,150 @@ export default function Perfect5thPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Power Chords</h3>
-              <div className="space-y-4">
-                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                  <h4 className="font-semibold text-green-800 mb-2">Basic Power Chords</h4>
-                  <p className="text-sm text-green-700 mb-2">Perfect 5th intervals form the foundation of rock music:</p>
-                  <ul className="text-xs text-green-600 space-y-1">
-                    <li>• E5: E (6th string) + B (5th string)</li>
-                    <li>• A5: A (5th string) + E (4th string)</li>
-                    <li>• G5: G (6th string, 3rd fret) + D (5th string, 3rd fret)</li>
-                  </ul>
+          
+          {/* Power Chords Section */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Power Chords - Perfect 5th Foundation</h3>
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* E5 Power Chord */}
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-5 border border-red-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-red-800 mb-2">E5 Power Chord</h4>
+                  <p className="text-sm text-red-700 mb-3">Root: E, Fifth: B (7 semitones)</p>
+                  <div className="flex justify-center mb-3">
+                    <SimpleFretboardDiagram chord="E5" />
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q 0/6 2/5" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-red-600">Frets: 0-2-2 (low E, A, D strings)</p>
                 </div>
-                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                  <h4 className="font-semibold text-emerald-800 mb-2">Fretboard Patterns</h4>
-                  <p className="text-sm text-emerald-700 mb-2">Perfect 5ths across string pairs:</p>
-                  <ul className="text-xs text-emerald-600 space-y-1">
-                    <li>• Same string: 7 frets apart</li>
-                    <li>• Adjacent strings: Same fret (except G-B strings)</li>
-                    <li>• Power chord shapes: Moveable patterns</li>
-                  </ul>
+              </div>
+
+              {/* A5 Power Chord */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">A5 Power Chord</h4>
+                  <p className="text-sm text-blue-700 mb-3">Root: A, Fifth: E (7 semitones)</p>
+                  <div className="flex justify-center mb-3">
+                    <SimpleFretboardDiagram chord="A5" />
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q 0/5 2/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-blue-600">Frets: x-0-2-2 (A, D strings)</p>
+                </div>
+              </div>
+
+              {/* G5 Power Chord */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-5 border border-green-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">G5 Power Chord</h4>
+                  <p className="text-sm text-green-700 mb-3">Root: G, Fifth: D (7 semitones)</p>
+                  <div className="flex justify-center mb-3">
+                    <SimpleFretboardDiagram chord="G5" />
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q 3/6 5/5" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-green-600">Frets: 3-5-5 (low E, A strings)</p>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Harmonic Applications</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Chord Construction</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Triads:</strong> Root + 3rd + 5th = complete chord</li>
-                    <li>• <strong>Sus4 chords:</strong> Root + 4th + 5th</li>
-                    <li>• <strong>Add9 chords:</strong> 5th provides stability for extensions</li>
-                    <li>• <strong>Open tunings:</strong> Natural 5ths in alternate tunings</li>
+          </div>
+
+          {/* Fretboard Patterns */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Perfect 5th Fretboard Patterns</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 border border-purple-200">
+                <h4 className="text-lg font-semibold text-purple-800 mb-4">🎯 Same String Pattern</h4>
+                <div className="bg-white rounded-lg p-4 mb-4">
+                  <VexTabRenderer 
+                    vextab="tabstave notation=true tablature=false\nnotes :q 0/6 7/6 | 3/6 10/6" 
+                    width={300} 
+                    scale={0.9}
+                  />
+                </div>
+                <ul className="text-sm text-purple-700 space-y-2">
+                  <li>• <strong>7 frets apart:</strong> Any string, perfect 5th</li>
+                  <li>• <strong>E string:</strong> 0 (E) → 7 (B), 3 (G) → 10 (D)</li>
+                  <li>• <strong>Practice:</strong> Play intervals across all strings</li>
+                  <li>• <strong>Memory aid:</strong> Always exactly 7 frets</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🔄 Cross-String Pattern</h4>
+                <div className="bg-white rounded-lg p-4 mb-4">
+                  <VexTabRenderer 
+                    vextab="tabstave notation=true tablature=false\nnotes :q 0/6 2/5 | 3/6 5/5 | 5/6 7/5" 
+                    width={300} 
+                    scale={0.9}
+                  />
+                </div>
+                <ul className="text-sm text-orange-700 space-y-2">
+                  <li>• <strong>Adjacent strings:</strong> +2 frets (except G-B)</li>
+                  <li>• <strong>E to A:</strong> 0 → 2, 3 → 5, 5 → 7</li>
+                  <li>• <strong>Power chords:</strong> Built on this pattern</li>
+                  <li>• <strong>Exception:</strong> G-B strings need +3 frets</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Musical Applications */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Harmonic & Melodic Applications</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🏗️ Chord Construction</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-emerald-700 mb-2">Basic Triad (C Major)</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 E/4 G/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">Root + 3rd + 5th = Complete harmony</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>5th provides:</strong> Harmonic stability</li>
+                    <li>• <strong>Foundation:</strong> All chords built on perfect 5th</li>
+                    <li>• <strong>Sus4 chords:</strong> 4th replaces 3rd, 5th remains</li>
                   </ul>
                 </div>
-                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                  <h4 className="font-semibold text-green-800 mb-2">Lead Guitar</h4>
-                  <ul className="text-sm text-green-700 space-y-2">
-                    <li>• <strong>Pentatonic scales:</strong> Built on 5th relationships</li>
-                    <li>• <strong>Melodic intervals:</strong> Strong, stable leaps</li>
-                    <li>• <strong>Harmonics:</strong> Natural harmonics at 7th fret</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎵 Melodic Applications</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-teal-700 mb-2">Perfect 5th Melodic Leap</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 G/4 C/5 G/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">Strong, heroic melodic intervals</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>Character:</strong> Heroic, stable, strong</li>
+                    <li>• <strong>Pentatonic:</strong> Built on 5th relationships</li>
+                    <li>• <strong>Natural harmonics:</strong> 7th fret produces 5th</li>
                   </ul>
                 </div>
               </div>

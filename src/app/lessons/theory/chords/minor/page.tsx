@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function MinorChordsPage() {
@@ -220,41 +221,281 @@ export default function MinorChordsPage() {
         {/* Common Chord Progressions */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Minor Chord Progressions</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">vi - IV - I - V (Natural Minor)</h3>
-              <p className="text-gray-600 mb-4">One of the most popular progressions in modern music.</p>
-              <div className="space-y-2">
-                <p><strong>In A minor:</strong> Am - F - C - G</p>
-                <p><strong>Songs:</strong> &quot;Despacito&quot;, &quot;Someone Like You&quot;</p>
-                <p className="text-sm text-gray-500">Creates a bittersweet, emotional feeling</p>
+          
+          <div className="grid gap-8 mb-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
+              
+              {/* Natural Minor vi-IV-I-V */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">Natural Minor vi-IV-I-V</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">vi (i)</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">IV (♭VI)</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I (♭III)</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">V (♭VII)</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Emotional pop ballad feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 70-100 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Bittersweet, emotional</p>
+                      <p><strong>Genre:</strong> Pop, Ballads, Folk</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=Am
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
+text :w,Am,:w,F,:w,C,:w,G
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  One of the most popular progressions in modern music - creates bittersweet emotion in "Someone Like You" and "Despacito"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">i - VI - III - VII</h3>
-              <p className="text-gray-600 mb-4">A haunting, descending progression.</p>
-              <div className="space-y-2">
-                <p><strong>In A minor:</strong> Am - F - C - G</p>
-                <p><strong>Songs:</strong> &quot;Hit the Road Jack&quot;, &quot;Stairway to Heaven&quot;</p>
-                <p className="text-sm text-gray-500">Creates tension and forward motion</p>
+
+              {/* Classical Minor i-iv-V-i */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Classical Minor i-iv-V-i</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Dm" />
+                        <p className="text-sm font-medium mt-1">Dm</p>
+                        <p className="text-xs text-gray-600">iv</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E" />
+                        <p className="text-sm font-medium mt-1">E</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Traditional, flowing</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Classical, resolved</p>
+                      <p><strong>Genre:</strong> Classical, Folk, Traditional</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=Am
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (0/6.2/5.2/4.1/3.0/2.0/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1)
+text :w,Am,:w,Dm,:w,E,:w,Am
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Traditional minor progression with strong resolution - foundation of "Greensleeves" and "Black Magic Woman"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">i - iv - V - i</h3>
-              <p className="text-gray-600 mb-4">Classical minor progression with strong resolution.</p>
-              <div className="space-y-2">
-                <p><strong>In A minor:</strong> Am - Dm - E - Am</p>
-                <p><strong>Songs:</strong> &quot;Greensleeves&quot;, &quot;Black Magic Woman&quot;</p>
-                <p className="text-sm text-gray-500">Traditional, creates strong harmonic pull</p>
+
+              {/* Descending i-VII-VI-VII */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Rock Power Progression i-VII-VI-VII</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">♭VII</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">♭VI</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">♭VII</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D - D - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Driving rock power</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 100-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Powerful, driving</p>
+                      <p><strong>Genre:</strong> Rock, Metal, Alternative</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=Am
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
+text :w,Am,:w,G,:w,F,:w,G
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Driving rock progression with powerful motion - heard in "Sultans of Swing" and "Another Brick in the Wall"
+                </p>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">i - VII - VI - VII</h3>
-              <p className="text-gray-600 mb-4">Rock and metal favorite for its power.</p>
-              <div className="space-y-2">
-                <p><strong>In A minor:</strong> Am - G - F - G</p>
-                <p><strong>Songs:</strong> &quot;Sultans of Swing&quot;, &quot;Another Brick in the Wall&quot;</p>
-                <p className="text-sm text-gray-500">Driving, powerful feeling</p>
+
+              {/* Andalusian Cadence */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+                <h4 className="text-xl font-semibold mb-4 text-center text-orange-700">Andalusian Cadence i-VII-VI-V</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">i</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">♭VII</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">♭VI</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="E" />
+                        <p className="text-sm font-medium mt-1">E</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♪♪ ♪♪ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">UU - UU - UU - UU</p>
+                      <p className="text-xs text-gray-600 text-center">Flowing, descending</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 90-130 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Mysterious, haunting</p>
+                      <p><strong>Genre:</strong> Flamenco, Classical, Prog Rock</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=Am
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (0/6.2/5.2/4.1/3.0/2.0/1)
+text :w,Am,:w,G,:w,F,:w,E
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Haunting descending progression - creates tension and forward motion in "Hit the Road Jack" and "Stairway to Heaven"
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-purple-50 rounded-lg p-6 border border-purple-200 mt-6">
+                <h4 className="text-lg font-semibold text-purple-800 mb-4">🎯 Practice Tips for Minor Chord Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-purple-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-purple-700 space-y-1">
+                      <li>• Practice smooth chord transitions slowly</li>
+                      <li>• Focus on clean minor third intervals</li>
+                      <li>• Work on consistent rhythm patterns</li>
+                      <li>• Use metronome for steady timing</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-purple-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-purple-700 space-y-1">
+                      <li>• Perfect for emotional and dramatic songs</li>
+                      <li>• Essential for ballads and introspective music</li>
+                      <li>• Foundation of rock and metal progressions</li>
+                      <li>• Creates powerful storytelling in folk music</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

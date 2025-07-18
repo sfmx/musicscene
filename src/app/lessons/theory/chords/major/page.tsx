@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Link from 'next/link';
 
 export default function MajorChordsPage() {
@@ -258,50 +259,274 @@ export default function MajorChordsPage() {
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Major Chord Progressions</h2>
           
-          <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-cyan-800 mb-3">🎵 Essential Progressions</h3>
-            <p className="text-cyan-700">These progressions use major chords to create the foundation of countless songs.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid gap-8 mb-6">
             <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Pop & Rock Progressions</h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">I-V-vi-IV (Pop Progression)</h4>
-                  <p className="text-sm mb-2"><strong>Key of C:</strong> C - G - Am - F</p>
-                  <p className="text-sm text-gray-600">Used in thousands of pop songs</p>
+              
+              {/* Pop Progression I-V-vi-IV */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-blue-700">Pop Progression I-V-vi-IV</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">vi</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♪♪ ♩ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">D - DU - D - DU</p>
+                      <p className="text-xs text-gray-600 text-center">Classic pop rhythm</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 80-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Uplifting, emotional</p>
+                      <p><strong>Genre:</strong> Pop, Rock, Ballads</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">I-IV-V (Three-Chord Song)</h4>
-                  <p className="text-sm mb-2"><strong>Key of G:</strong> G - C - D</p>
-                  <p className="text-sm text-gray-600">Foundation of folk and country</p>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">vi-IV-I-V (Emotional)</h4>
-                  <p className="text-sm mb-2"><strong>Key of C:</strong> Am - F - C - G</p>
-                  <p className="text-sm text-gray-600">Starts minor, resolves major</p>
-                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1)
+text :w,C,:w,G,:w,Am,:w,F
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  The most popular progression in modern music - used in thousands of songs from "Let It Be" to "Don't Stop Believin'"
+                </p>
               </div>
-            </div>
 
-            <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">Classical & Traditional</h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">I-vi-IV-V (50s Progression)</h4>
-                  <p className="text-sm mb-2"><strong>Key of C:</strong> C - Am - F - G</p>
-                  <p className="text-sm text-gray-600">Doo-wop and 1950s style</p>
+              {/* Three-Chord Song I-IV-V */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-green-700">Three-Chord Song I-IV-V</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="D" />
+                        <p className="text-sm font-medium mt-1">D</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♩ ♪♪ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">UU - D - UU - D</p>
+                      <p className="text-xs text-gray-600 text-center">Country/folk feel</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 100-140 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Simple, authentic</p>
+                      <p><strong>Genre:</strong> Folk, Country, Rock</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">I-V-I (Perfect Cadence)</h4>
-                  <p className="text-sm mb-2"><strong>Key of G:</strong> G - D - G</p>
-                  <p className="text-sm text-gray-600">Strongest resolution in music</p>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=G
+notes :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.3/2.2/1)
+text :w,G,:w,C,:w,D
+                  `}
+                  width={600}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Foundation of folk and country music - simple yet powerful progression in "Blowin' in the Wind" and "Ring of Fire"
+                </p>
+              </div>
+
+              {/* 50s Doo-Wop I-vi-IV-V */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+                <h4 className="text-xl font-semibold mb-4 text-center text-purple-700">50s Doo-Wop I-vi-IV-V</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">vi</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♩ ♩ ♩ ♩</p>
+                      <p className="text-xs text-gray-600 text-center">D - D - D - D</p>
+                      <p className="text-xs text-gray-600 text-center">Classic doo-wop rhythm</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 90-120 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Nostalgic, smooth</p>
+                      <p><strong>Genre:</strong> Doo-Wop, Oldies, Pop</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200">
-                  <h4 className="font-medium mb-2">IV-V-I (Plagal Cadence)</h4>
-                  <p className="text-sm mb-2"><strong>Key of C:</strong> F - G - C</p>
-                  <p className="text-sm text-gray-600">"Amen" cadence in hymns</p>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
+text :w,C,:w,Am,:w,F,:w,G
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Classic 1950s progression with smooth circular motion - heard in "Stand By Me" and countless doo-wop classics
+                </p>
+              </div>
+
+              {/* Emotional vi-IV-I-V */}
+              <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+                <h4 className="text-xl font-semibold mb-4 text-center text-orange-700">Emotional vi-IV-I-V</h4>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h5 className="font-medium mb-3">Chord Sequence</h5>
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Am" />
+                        <p className="text-sm font-medium mt-1">Am</p>
+                        <p className="text-xs text-gray-600">vi</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="F" />
+                        <p className="text-sm font-medium mt-1">F</p>
+                        <p className="text-xs text-gray-600">IV</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="C" />
+                        <p className="text-sm font-medium mt-1">C</p>
+                        <p className="text-xs text-gray-600">I</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="G" />
+                        <p className="text-sm font-medium mt-1">G</p>
+                        <p className="text-xs text-gray-600">V</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-medium mb-3">Strumming Pattern</h5>
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                      <p className="text-sm font-mono text-center mb-2">♪♪ ♪♪ ♪♪ ♪♪</p>
+                      <p className="text-xs text-gray-600 text-center">UU - UU - UU - UU</p>
+                      <p className="text-xs text-gray-600 text-center">Gentle, flowing ballad</p>
+                    </div>
+                    <div className="text-sm text-gray-700">
+                      <p className="mb-2"><strong>Tempo:</strong> 70-100 BPM</p>
+                      <p className="mb-2"><strong>Feel:</strong> Melancholy to hopeful</p>
+                      <p><strong>Genre:</strong> Ballads, Folk, Singer-Songwriter</p>
+                    </div>
+                  </div>
+                </div>
+
+                <VexTabRenderer
+                  vextab={`
+options space=25 font-size=12
+tabstave notation=true time=4/4 key=C
+notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
+text :w,Am,:w,F,:w,C,:w,G
+                  `}
+                  width={700}
+                  className="mb-4"
+                />
+                
+                <p className="text-sm text-gray-600 italic text-center">
+                  Starts minor and resolves to major - creates emotional journey from sadness to hope in "Hallelujah" and "Country Roads"
+                </p>
+              </div>
+
+              {/* Practice Tips */}
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-6">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎯 Practice Tips for Major Chord Progressions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Technique Focus</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Practice smooth chord transitions slowly</li>
+                      <li>• Focus on clean major third intervals</li>
+                      <li>• Use consistent strumming patterns</li>
+                      <li>• Keep steady tempo with metronome</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-blue-700 mb-2">Musical Application</h5>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Foundation of most popular music</li>
+                      <li>• Essential for songwriting and jamming</li>
+                      <li>• Creates bright, uplifting moods</li>
+                      <li>• Perfect for sing-alongs and campfire songs</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
