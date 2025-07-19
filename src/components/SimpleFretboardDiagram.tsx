@@ -215,6 +215,25 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'F_from_G_m7': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F (6th string 1st fret)
   'D_to_C_m7': { frets: [-1, -1, 0, -1, -1, -1], fingers: [-1, -1, 0, -1, -1, -1] }, // D (4th string open)
   'C_from_D_m7': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  // Major 7th interval examples
+  'C_to_B_M7': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'B_from_C_M7': { frets: [-1, 2, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // B (5th string 2nd fret)
+  'F_to_E_M7': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F (6th string 1st fret)
+  'E_from_F_M7': { frets: [0, -1, -1, -1, -1, -1], fingers: [0, -1, -1, -1, -1, -1] }, // E (6th string open)
+  'G_to_Fs_M7': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'Fs_from_G_M7': { frets: [2, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F# (6th string 2nd fret)
+  // Octave interval examples
+  'E_low_octave': { frets: [0, -1, -1, -1, -1, -1], fingers: [0, -1, -1, -1, -1, -1] }, // E (6th string open)
+  'E_high_octave': { frets: [12, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // E (6th string 12th fret)
+  'A_low_octave': { frets: [-1, 0, -1, -1, -1, -1], fingers: [-1, 0, -1, -1, -1, -1] }, // A (5th string open)
+  'A_high_octave': { frets: [-1, 12, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // A (5th string 12th fret)
+  'D_low_octave': { frets: [-1, -1, -1, 0, -1, -1], fingers: [-1, -1, -1, 0, -1, -1] }, // D (4th string open)
+  'D_high_octave': { frets: [-1, -1, -1, 12, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // D (4th string 12th fret)
+  // Cross-string octave patterns
+  'C_5th_string': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'C_3rd_string': { frets: [-1, -1, 5, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // C (3rd string 5th fret)
+  'G_6th_string': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'G_4th_string': { frets: [-1, -1, -1, 5, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // G (4th string 5th fret)
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

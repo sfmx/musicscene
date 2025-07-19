@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function OctavePage() {
   return (
@@ -97,49 +99,202 @@ export default function OctavePage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-semibold text-purple-800 mb-2">12-Fret Pattern</h4>
-                  <p className="text-sm text-purple-700 mb-2">Octaves across the fretboard:</p>
-                  <ul className="text-xs text-purple-600 space-y-1">
-                    <li>• Same string: 12 frets apart</li>
-                    <li>• 6th to 4th string: +2 frets, +2 strings</li>
-                    <li>• 5th to 3rd string: +2 frets, +2 strings</li>
-                    <li>• 4th to 2nd string: +3 frets, +2 strings (G-B adjustment)</li>
+          
+          {/* Octave Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Octave Intervals - Perfect Unity</h3>
+            <p className="text-gray-600 mb-6">
+              The octave (12 semitones) represents perfect consonance and unity - the same note name at exactly double the frequency, fundamental to all musical structure.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* E Low to High Octave */}
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-5 border border-purple-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-purple-800 mb-2">E → E Octave</h4>
+                  <p className="text-sm text-purple-700 mb-3">Same string, 12 frets apart</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_low_octave" />
+                      <p className="text-xs text-purple-600 mt-1">E (6th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_high_octave" />
+                      <p className="text-xs text-purple-600 mt-1">E (6th string 12th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 E/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-purple-600">Perfect unity, same note name</p>
+                </div>
+              </div>
+
+              {/* A Low to High Octave */}
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-5 border border-indigo-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-indigo-800 mb-2">A → A Octave</h4>
+                  <p className="text-sm text-indigo-700 mb-3">12th fret harmonic relationship</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_low_octave" />
+                      <p className="text-xs text-indigo-600 mt-1">A (5th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_high_octave" />
+                      <p className="text-xs text-indigo-600 mt-1">A (5th string 12th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q A/2 A/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-indigo-600">Natural harmonic at 12th fret</p>
+                </div>
+              </div>
+
+              {/* D Low to High Octave */}
+              <div className="bg-gradient-to-br from-violet-50 to-violet-100 rounded-lg p-5 border border-violet-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-violet-800 mb-2">D → D Octave</h4>
+                  <p className="text-sm text-violet-700 mb-3">Scale completion pattern</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_low_octave" />
+                      <p className="text-xs text-violet-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_high_octave" />
+                      <p className="text-xs text-violet-600 mt-1">D (4th string 12th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 D/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-violet-600">Root to root completion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cross-String Octave Patterns */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Cross-String Octave Patterns - Fretboard Navigation</h3>
+            
+            <div className="grid lg:grid-cols-2 gap-6">
+              {/* C Octave Pattern */}
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎸 C Octave Pattern</h4>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_5th_string" />
+                      <p className="text-xs text-emerald-600 mt-2">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_3rd_string" />
+                      <p className="text-xs text-emerald-600 mt-2">C (3rd string 5th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 C/5" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">5th string to 3rd string: +2 frets, +2 strings</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Pattern:</strong> 5th to 3rd string octave</li>
+                    <li>• <strong>Fretboard navigation:</strong> Cross-string movement</li>
+                    <li>• <strong>Scale work:</strong> Position playing applications</li>
                   </ul>
                 </div>
-                <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-                  <h4 className="font-semibold text-indigo-800 mb-2">Natural Harmonics</h4>
-                  <p className="text-sm text-indigo-700 mb-2">12th fret harmonics:</p>
-                  <ul className="text-xs text-indigo-600 space-y-1">
-                    <li>• 12th fret: Perfect octave harmonics</li>
-                    <li>• Bell-like tone quality</li>
-                    <li>• Same pitch as 12th fret fretted notes</li>
+              </div>
+
+              {/* G Octave Pattern */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎸 G Octave Pattern</h4>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_6th_string" />
+                      <p className="text-xs text-blue-600 mt-2">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_4th_string" />
+                      <p className="text-xs text-blue-600 mt-2">G (4th string 5th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w G/3 G/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-blue-600 mt-2">6th string to 4th string: +2 frets, +2 strings</p>
+                  </div>
+                  <ul className="text-sm text-blue-700 space-y-1">
+                    <li>• <strong>Pattern:</strong> 6th to 4th string octave</li>
+                    <li>• <strong>Chord work:</strong> Bass note doubling</li>
+                    <li>• <strong>Lead guitar:</strong> Register displacement</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Applications</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Scale Patterns</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Scale completion:</strong> From root back to root</li>
-                    <li>• <strong>Position playing:</strong> High and low versions</li>
-                    <li>• <strong>Chord inversions:</strong> Bass notes an octave apart</li>
-                    <li>• <strong>Melody doubling:</strong> Thickening melodic lines</li>
+          </div>
+
+          {/* Musical Applications & Harmonics */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Musical Applications & Natural Harmonics</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg p-6 border border-amber-200">
+                <h4 className="text-lg font-semibold text-amber-800 mb-4">🎯 12th Fret Harmonics</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-amber-700 mb-2">Natural Octave Harmonics</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w E/2 E/3 A/2 A/3 D/3 D/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-amber-600 mt-2">12th fret harmonics: Perfect octave above open strings</p>
+                  </div>
+                  <ul className="text-sm text-amber-700 space-y-1">
+                    <li>• <strong>Bell-like tone:</strong> Pure harmonic content</li>
+                    <li>• <strong>Same pitch:</strong> As 12th fret fretted notes</li>
+                    <li>• <strong>Physics:</strong> String vibrating in halves</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-semibold text-purple-800 mb-2">Lead Guitar</h4>
-                  <ul className="text-sm text-purple-700 space-y-2">
-                    <li>• <strong>Octave displacement:</strong> Same melody, different registers</li>
-                    <li>• <strong>Harmonic content:</strong> 12th fret harmonics</li>
-                    <li>• <strong>Range extension:</strong> Accessing higher/lower notes</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-lg p-6 border border-rose-200">
+                <h4 className="text-lg font-semibold text-rose-800 mb-4">🎵 "Somewhere Over the Rainbow"</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-rose-700 mb-2">Classic Octave Leap</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 C/5" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-rose-600 mt-2">"Somewhere" opening - most famous octave leap in music</p>
+                  </div>
+                  <ul className="text-sm text-rose-700 space-y-1">
+                    <li>• <strong>Emotional impact:</strong> Yearning and expansion</li>
+                    <li>• <strong>Ear training:</strong> Perfect octave reference</li>
+                    <li>• <strong>Musical theater:</strong> Wizard of Oz classic</li>
                   </ul>
                 </div>
               </div>
