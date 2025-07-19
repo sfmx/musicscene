@@ -99,50 +99,214 @@ export default function Perfect4thPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="font-semibold text-teal-800 mb-2">Standard Tuning Foundation</h4>
-                  <p className="text-sm text-teal-700 mb-2">Guitar strings tuned in perfect 4ths:</p>
-                  <ul className="text-xs text-teal-600 space-y-1">
-                    <li>• E to A (6th to 5th string)</li>
-                    <li>• A to D (5th to 4th string)</li>
-                    <li>• D to G (4th to 3rd string)</li>
-                    <li>• Exception: G to B (major 3rd)</li>
-                    <li>• B to E (3rd to 1st string - 4th again)</li>
+          
+          {/* Perfect 4th Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Perfect 4th Intervals - Guitar Tuning Foundation</h3>
+            <p className="text-gray-600 mb-6">
+              The perfect 4th (5 semitones) forms the foundation of guitar tuning and creates stable, open-sounding intervals essential to guitar harmony.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C to F Perfect 4th */}
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-5 border border-teal-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-teal-800 mb-2">C → F Perfect 4th</h4>
+                  <p className="text-sm text-teal-700 mb-3">Classic perfect 4th relationship</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_to_F_P4" />
+                      <p className="text-xs text-teal-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="F_from_C_P4" />
+                      <p className="text-xs text-teal-600 mt-1">F (4th string 3rd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 F/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-teal-600">Stable, consonant interval</p>
+                </div>
+              </div>
+
+              {/* G to C Perfect 4th */}
+              <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-lg p-5 border border-cyan-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-cyan-800 mb-2">G → C Perfect 4th</h4>
+                  <p className="text-sm text-cyan-700 mb-3">Guitar tuning interval</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_to_C_P4" />
+                      <p className="text-xs text-cyan-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_from_G_P4" />
+                      <p className="text-xs text-cyan-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 C/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-cyan-600">Foundation of guitar tuning</p>
+                </div>
+              </div>
+
+              {/* D to G Perfect 4th */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">D → G Perfect 4th</h4>
+                  <p className="text-sm text-blue-700 mb-3">Open string relationship</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_to_G_P4" />
+                      <p className="text-xs text-blue-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_from_D_P4" />
+                      <p className="text-xs text-blue-600 mt-1">G (3rd string open)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 G/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-blue-600">Natural guitar harmony</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sus4 Chord Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Sus4 Chord Applications - 4th Replaces 3rd</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* Dsus4 Chord */}
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎸 Dsus4 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Dsus4" />
+                    <p className="text-xs text-orange-600 mt-2">D-G-A suspended 4th chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 G/3 A/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">D-G-A: Root, perfect 4th, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Perfect 4th:</strong> D → G (replaces F# major 3rd)</li>
+                    <li>• <strong>Suspension:</strong> Creates anticipation for resolution</li>
+                    <li>• <strong>Open fingering:</strong> Easy guitar chord</li>
                   </ul>
                 </div>
-                <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
-                  <h4 className="font-semibold text-cyan-800 mb-2">5-Fret Pattern</h4>
-                  <p className="text-sm text-cyan-700 mb-2">Perfect 4th = 5 frets up same string:</p>
-                  <ul className="text-xs text-cyan-600 space-y-1">
-                    <li>• Open string to 5th fret</li>
-                    <li>• Cross-string: same fret, next higher string</li>
-                    <li>• Power chord roots separated by 4ths</li>
+              </div>
+
+              {/* Gsus4 Chord */}
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎸 Gsus4 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Gsus4" />
+                    <p className="text-xs text-emerald-600 mt-2">G-C-D suspended 4th chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (G/2 C/4 D/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">G-C-D: Root, perfect 4th, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Perfect 4th:</strong> G → C (replaces B major 3rd)</li>
+                    <li>• <strong>Folk favorite:</strong> Common in acoustic music</li>
+                    <li>• <strong>Smooth resolution:</strong> Sus4 → major</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Csus4 Chord */}
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-6 border border-indigo-200">
+                <h4 className="text-lg font-semibold text-indigo-800 mb-4">🎸 Csus4 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Csus4" />
+                    <p className="text-xs text-indigo-600 mt-2">C-F-G suspended 4th chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 F/4 G/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-indigo-600 mt-2">C-F-G: Root, perfect 4th, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-indigo-700 space-y-1">
+                    <li>• <strong>Perfect 4th:</strong> C → F (replaces E major 3rd)</li>
+                    <li>• <strong>Neither major nor minor:</strong> Ambiguous quality</li>
+                    <li>• <strong>Rock ballads:</strong> Emotional suspension effect</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Applications</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Sus4 Chords</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Csus4:</strong> C-F-G (4th replaces 3rd)</li>
-                    <li>• <strong>Tension and release:</strong> Sus4 → major</li>
-                    <li>• <strong>Open sound:</strong> Neither major nor minor</li>
-                    <li>• <strong>Common in:</strong> Folk, rock, ambient music</li>
+          </div>
+
+          {/* Quartal Harmony and Guitar Tuning */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Quartal Harmony & Guitar Tuning Foundation</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎯 Guitar Tuning System</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-teal-700 mb-2">Standard Tuning Pattern</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 A/2 D/3 G/3 | B/3 E/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">Mostly perfect 4ths: E-A-D-G, then major 3rd G-B, then 4th B-E</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>4 out of 5 intervals:</strong> Perfect 4ths</li>
+                    <li>• <strong>Exception:</strong> G to B (major 3rd)</li>
+                    <li>• <strong>Cross-string patterns:</strong> Same fret, different strings</li>
                   </ul>
                 </div>
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="font-semibold text-teal-800 mb-2">Quartal Harmony</h4>
-                  <ul className="text-sm text-teal-700 space-y-2">
-                    <li>• <strong>4th-based chords:</strong> C-F-Bb-Eb</li>
-                    <li>• <strong>Modern jazz:</strong> McCoy Tyner style</li>
-                    <li>• <strong>Ambient textures:</strong> Open, floating sounds</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎵 Quartal Harmony</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-blue-700 mb-2">Stacked 4ths Harmony</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 F/4 Bb/4 Eb/5)" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-blue-600 mt-2">Modern jazz voicings built from perfect 4ths</p>
+                  </div>
+                  <ul className="text-sm text-blue-700 space-y-1">
+                    <li>• <strong>Open sound:</strong> Neither major nor minor</li>
+                    <li>• <strong>Jazz applications:</strong> McCoy Tyner, Bill Evans</li>
+                    <li>• <strong>Ambient textures:</strong> Floating, spacious harmony</li>
                   </ul>
                 </div>
               </div>

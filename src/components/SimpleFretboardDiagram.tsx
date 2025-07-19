@@ -167,6 +167,29 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'A_from_G': { frets: [5, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // A (6th string 5th fret)
   'D_to_E': { frets: [-1, -1, -1, 0, -1, -1], fingers: [-1, -1, -1, 0, -1, -1] }, // D (4th string open)
   'E_from_D': { frets: [-1, -1, -1, 2, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // E (4th string 2nd fret)
+  // Tritone interval examples
+  'F_to_B': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F (6th string 1st fret)
+  'B_from_F': { frets: [-1, 2, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // B (5th string 2nd fret)
+  'C_to_Fs': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'Fs_from_C': { frets: [-1, -1, -1, 4, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // F# (4th string 4th fret)
+  'G_to_Db': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'Db_from_G': { frets: [-1, 4, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // Db (5th string 4th fret)
+  // Perfect 4th interval examples
+  'C_to_F_P4': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'F_from_C_P4': { frets: [-1, -1, -1, 3, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // F (4th string 3rd fret)
+  'G_to_C_P4': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'C_from_G_P4': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'D_to_G_P4': { frets: [-1, -1, -1, 0, -1, -1], fingers: [-1, -1, -1, 0, -1, -1] }, // D (4th string open)
+  'G_from_D_P4': { frets: [-1, -1, 0, -1, -1, -1], fingers: [-1, -1, 0, -1, -1, -1] }, // G (3rd string open)
+  // Unison interval examples
+  'E_1st_open': { frets: [-1, -1, -1, -1, -1, 0], fingers: [-1, -1, -1, -1, -1, 0] }, // E (1st string open)
+  'E_2nd_5th': { frets: [-1, -1, -1, -1, 5, -1], fingers: [-1, -1, -1, -1, 1, -1] }, // E (2nd string 5th fret)
+  'A_5th_open': { frets: [-1, 0, -1, -1, -1, -1], fingers: [-1, 0, -1, -1, -1, -1] }, // A (5th string open)
+  'A_1st_5th': { frets: [-1, -1, -1, -1, -1, 5], fingers: [-1, -1, -1, -1, -1, 1] }, // A (1st string 5th fret)
+  'D_4th_open': { frets: [-1, -1, -1, 0, -1, -1], fingers: [-1, -1, -1, 0, -1, -1] }, // D (4th string open)
+  'D_3rd_7th': { frets: [-1, -1, 7, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // D (3rd string 7th fret)
+  // Additional seventh chords for tritone examples
+  'C7': { frets: [-1, 3, 2, 3, 1, 0], fingers: [-1, 3, 2, 4, 1, 0] },
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function UnisonPage() {
   return (
@@ -94,87 +96,182 @@ export default function UnisonPage() {
           </div>
         </div>
 
-        {/* Guitar Applications */}
+        {/* Unison on Guitar */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Unison on Guitar</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-medium text-gray-800 mb-4">Same Note, Different Strings</h3>
-              <p className="text-gray-600 mb-6">
-                The guitar's tuning allows you to play the same pitch on multiple strings, 
-                creating unison intervals with different timbres and fingering options.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-                  <h4 className="font-medium text-indigo-800 mb-2">E Note Examples (E4 - 329.6 Hz)</h4>
-                  <ul className="text-sm text-indigo-700 space-y-1">
-                    <li>• 1st string open (high E)</li>
-                    <li>• 2nd string, 5th fret</li>
-                    <li>• 3rd string, 9th fret</li>
-                    <li>• 4th string, 14th fret</li>
+          {/* Same Note, Different Strings */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Same Pitch, Different Timbres</h3>
+            <p className="text-gray-600 mb-6">
+              The guitar's tuning allows you to play the same pitch on multiple strings, creating unison intervals with different timbres and fingering options.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* E Note Unisons */}
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-5 border border-indigo-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-indigo-800 mb-2">E Note Unisons</h4>
+                  <p className="text-sm text-indigo-700 mb-3">Same E note on different strings</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_1st_open" />
+                      <p className="text-xs text-indigo-600 mt-1">E (1st string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_2nd_5th" />
+                      <p className="text-xs text-indigo-600 mt-1">E (2nd string 5th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w E/4 E/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-indigo-600">Different timbres, same pitch</p>
+                </div>
+              </div>
+
+              {/* A Note Unisons */}
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-5 border border-purple-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-purple-800 mb-2">A Note Unisons</h4>
+                  <p className="text-sm text-purple-700 mb-3">Concert A (440 Hz) locations</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_5th_open" />
+                      <p className="text-xs text-purple-600 mt-1">A (5th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_1st_5th" />
+                      <p className="text-xs text-purple-600 mt-1">A (1st string 5th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w A/2 A/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-purple-600">Reference pitch standard</p>
+                </div>
+              </div>
+
+              {/* D Note Unisons */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">D Note Unisons</h4>
+                  <p className="text-sm text-blue-700 mb-3">Common fingering options</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_4th_open" />
+                      <p className="text-xs text-blue-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_3rd_7th" />
+                      <p className="text-xs text-blue-600 mt-1">D (3rd string 7th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w D/3 D/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-blue-600">Flexible positioning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Timbral Differences and Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Timbral Differences & Musical Applications</h3>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Timbral Characteristics */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border border-green-200">
+                <h4 className="text-lg font-semibold text-green-800 mb-4">🎯 Timbral Characteristics</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-green-700 mb-2">String Thickness Effects</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :h E/4 E/4 | :h A/2 A/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-green-600 mt-2">Same pitch, different timbres from string thickness</p>
+                  </div>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• <strong>Thicker strings:</strong> Warmer, fuller tone</li>
+                    <li>• <strong>Thinner strings:</strong> Brighter, more focused tone</li>
+                    <li>• <strong>Fretted vs open:</strong> Sustain and harmonic differences</li>
                   </ul>
                 </div>
-                
-                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-medium text-purple-800 mb-2">A Note Examples (A4 - 440 Hz)</h4>
-                  <ul className="text-sm text-purple-700 space-y-1">
-                    <li>• 1st string, 5th fret</li>
-                    <li>• 2nd string, 10th fret</li>
-                    <li>• 3rd string, 14th fret</li>
-                    <li>• 5th string open</li>
+              </div>
+
+              {/* Musical Applications */}
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎵 Musical Applications</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-orange-700 mb-2">Melodic Doubling</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q E/4 F/4 G/4 A/4 | E/5 F/5 G/5 A/5" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">Same melody in unison across octaves</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Lead doubling:</strong> Thicker melodic lines</li>
+                    <li>• <strong>Harmonic reinforcement:</strong> Stronger presence</li>
+                    <li>• <strong>Orchestral effects:</strong> Section unisons</li>
                   </ul>
                 </div>
               </div>
             </div>
-            
-            <div>
-              <h3 className="text-xl font-medium text-gray-800 mb-4">Fretboard Unison Examples</h3>
-              <div className="space-y-6">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-medium text-blue-800 mb-3">E Note Unison Positions</h4>
-                  <div className="space-y-2 text-sm text-blue-700">
-                    <div className="flex justify-between">
-                      <span>1st string, open fret</span>
-                      <span className="font-mono bg-blue-100 px-2 py-1 rounded">E (high)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>2nd string, 5th fret</span>
-                      <span className="font-mono bg-blue-100 px-2 py-1 rounded">E</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>3rd string, 9th fret</span>
-                      <span className="font-mono bg-blue-100 px-2 py-1 rounded">E</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>4th string, 14th fret</span>
-                      <span className="font-mono bg-blue-100 px-2 py-1 rounded">E</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-medium text-purple-800 mb-3">A Note Unison Positions</h4>
-                  <div className="space-y-2 text-sm text-purple-700">
-                    <div className="flex justify-between">
-                      <span>5th string, open fret</span>
-                      <span className="font-mono bg-purple-100 px-2 py-1 rounded">A</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>1st string, 5th fret</span>
-                      <span className="font-mono bg-purple-100 px-2 py-1 rounded">A (high)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>2nd string, 10th fret</span>
-                      <span className="font-mono bg-purple-100 px-2 py-1 rounded">A</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>3rd string, 14th fret</span>
-                      <span className="font-mono bg-purple-100 px-2 py-1 rounded">A</span>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          {/* Technical Applications */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Technical Applications & Techniques</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-4 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-3">🎸 Guitar Techniques</h4>
+                <ul className="text-sm text-teal-700 space-y-2">
+                  <li>• <strong>Octave doubling:</strong> Fuller melodic sound</li>
+                  <li>• <strong>String bending:</strong> Reaching unison pitches</li>
+                  <li>• <strong>Harmonics:</strong> Natural unison overtones</li>
+                  <li>• <strong>Slide techniques:</strong> Smooth unison transitions</li>
+                  <li>• <strong>Fingering options:</strong> Different positions, same note</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-lg p-4 border border-rose-200">
+                <h4 className="text-lg font-semibold text-rose-800 mb-3">🎼 Ensemble Playing</h4>
+                <ul className="text-sm text-rose-700 space-y-2">
+                  <li>• <strong>Choir sections:</strong> Voices in unison</li>
+                  <li>• <strong>Guitar layers:</strong> Multiple guitar parts</li>
+                  <li>• <strong>Bass doubling:</strong> Root note reinforcement</li>
+                  <li>• <strong>Orchestral unisons:</strong> Section strength</li>
+                  <li>• <strong>Power and unity:</strong> Collective sound</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg p-4 border border-amber-200">
+                <h4 className="text-lg font-semibold text-amber-800 mb-3">🎚️ Production Uses</h4>
+                <ul className="text-sm text-amber-700 space-y-2">
+                  <li>• <strong>Track layering:</strong> Identical parts for thickness</li>
+                  <li>• <strong>Stereo doubling:</strong> Left/right placement</li>
+                  <li>• <strong>Dynamic emphasis:</strong> Important melodic lines</li>
+                  <li>• <strong>Harmonic clarity:</strong> Reinforcing key notes</li>
+                  <li>• <strong>Mix density:</strong> Fuller arrangements</li>
+                </ul>
               </div>
             </div>
           </div>
