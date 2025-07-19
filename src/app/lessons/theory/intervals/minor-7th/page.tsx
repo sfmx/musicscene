@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor7thPage() {
   return (
@@ -97,48 +99,214 @@ export default function Minor7thPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Dominant 7th Chords</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">V7 Function</h4>
-                  <p className="text-sm text-blue-700 mb-2">Minor 7th in dominant 7th chords:</p>
-                  <ul className="text-xs text-blue-600 space-y-1">
-                    <li>• G7: G-B-D-F (minor 7th: G to F)</li>
-                    <li>• C7: C-E-G-Bb (minor 7th: C to Bb)</li>
-                    <li>• Essential for blues and jazz progressions</li>
+          
+          {/* Minor 7th Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Minor 7th Intervals - Jazz Foundation</h3>
+            <p className="text-gray-600 mb-6">
+              The minor 7th (10 semitones) creates a smooth, mellow dissonance that's essential for jazz harmony and sophisticated chord progressions.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C to Bb Minor 7th */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">C → Bb Minor 7th</h4>
+                  <p className="text-sm text-blue-700 mb-3">Classic minor 7th relationship</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_to_Bb_m7" />
+                      <p className="text-xs text-blue-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="Bb_from_C_m7" />
+                      <p className="text-xs text-blue-600 mt-1">Bb (5th string 1st fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 Bb/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-blue-600">Smooth, mellow dissonance</p>
+                </div>
+              </div>
+
+              {/* G to F Minor 7th */}
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-5 border border-indigo-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-indigo-800 mb-2">G → F Minor 7th</h4>
+                  <p className="text-sm text-indigo-700 mb-3">G7 chord essential interval</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_to_F_m7" />
+                      <p className="text-xs text-indigo-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="F_from_G_m7" />
+                      <p className="text-xs text-indigo-600 mt-1">F (6th string 1st fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q G/3 F/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-indigo-600">Dominant 7th chord tension</p>
+                </div>
+              </div>
+
+              {/* D to C Minor 7th */}
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-5 border border-purple-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-purple-800 mb-2">D → C Minor 7th</h4>
+                  <p className="text-sm text-purple-700 mb-3">Jazz progression application</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_to_C_m7" />
+                      <p className="text-xs text-purple-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_from_D_m7" />
+                      <p className="text-xs text-purple-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q D/4 C/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-purple-600">Sophisticated harmonic movement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Dominant 7th Chord Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Dominant 7th Chord Applications - V7 Function</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* G7 Chord */}
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6 border border-red-200">
+                <h4 className="text-lg font-semibold text-red-800 mb-4">🎸 G7 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="G7" />
+                    <p className="text-xs text-red-600 mt-2">G7 with minor 7th (F)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (G/3 B/3 D/4 F/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-red-600 mt-2">G-B-D-F: Major triad + minor 7th</p>
+                  </div>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• <strong>Minor 7th:</strong> G → F (smooth tension)</li>
+                    <li>• <strong>Dominant function:</strong> Resolves to C</li>
+                    <li>• <strong>Blues/jazz:</strong> Essential V7 chord</li>
                   </ul>
                 </div>
-                <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-                  <h4 className="font-semibold text-indigo-800 mb-2">Minor 7th Chords</h4>
-                  <p className="text-sm text-indigo-700 mb-2">Minor 7th in minor seventh chords:</p>
-                  <ul className="text-xs text-indigo-600 space-y-1">
-                    <li>• Am7: A-C-E-G (minor 7th: A to G)</li>
-                    <li>• Dm7: D-F-A-C (minor 7th: D to C)</li>
-                    <li>• Jazz ii-V-I progressions</li>
+              </div>
+
+              {/* C7 Chord */}
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎸 C7 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="C7" />
+                    <p className="text-xs text-orange-600 mt-2">C7 with minor 7th (Bb)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 Bb/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">C-E-G-Bb: Major triad + minor 7th</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Minor 7th:</strong> C → Bb (jazz sophistication)</li>
+                    <li>• <strong>Blues progression:</strong> I7 chord function</li>
+                    <li>• <strong>Secondary dominant:</strong> V7/V applications</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Minor 7th Chords */}
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎸 Am7 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Am7" />
+                    <p className="text-xs text-teal-600 mt-2">Am7 with minor 7th (G)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 C/4 E/4 G/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">A-C-E-G: Minor triad + minor 7th</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>Minor 7th:</strong> A → G (mellow sophistication)</li>
+                    <li>• <strong>ii chord:</strong> ii-V-I progressions</li>
+                    <li>• <strong>Jazz harmony:</strong> Essential minor 7th sound</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
-                  <h4 className="font-semibold text-cyan-800 mb-2">Common Positions</h4>
-                  <ul className="text-sm text-cyan-700 space-y-2">
-                    <li>• <strong>Same string:</strong> 10 frets apart</li>
-                    <li>• <strong>Adjacent strings:</strong> 5th fret difference</li>
-                    <li>• <strong>Chord voicings:</strong> Various fingerings</li>
-                    <li>• <strong>Scale patterns:</strong> Mixolydian relationships</li>
+          </div>
+
+          {/* Jazz Applications & Voice Leading */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Jazz Applications & Voice Leading</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎯 ii-V-I Progression</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-emerald-700 mb-2">Jazz Standard Movement</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/4 A/3 C/4) (G/3 B/3 D/4 F/3) (C/4 E/4 G/4)" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">Dm7 - G7 - C: Minor 7th in both ii and V chords</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Dm7:</strong> D → C minor 7th</li>
+                    <li>• <strong>G7:</strong> G → F minor 7th</li>
+                    <li>• <strong>Smooth voice leading:</strong> Essential jazz movement</li>
                   </ul>
                 </div>
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Jazz Guitar Techniques</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Drop 2 voicings:</strong> Smooth voice leading</li>
-                    <li>• <strong>Chord-melody:</strong> Harmonic sophistication</li>
-                    <li>• <strong>Bebop scales:</strong> Dominant 7th applications</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-violet-50 to-violet-100 rounded-lg p-6 border border-violet-200">
+                <h4 className="text-lg font-semibold text-violet-800 mb-4">🎵 "Somewhere" Reference</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-violet-700 mb-2">Classic Minor 7th Leap</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 Bb/3" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-violet-600 mt-2">"Somewhere" opening - most famous minor 7th in music</p>
+                  </div>
+                  <ul className="text-sm text-violet-700 space-y-1">
+                    <li>• <strong>Ear training:</strong> Perfect reference interval</li>
+                    <li>• <strong>Melodic leap:</strong> Expressive, yearning quality</li>
+                    <li>• <strong>Broadway classic:</strong> West Side Story</li>
                   </ul>
                 </div>
               </div>
