@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major3rdPage() {
   return (
@@ -97,48 +99,214 @@ export default function Major3rdPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Construction</h3>
-              <div className="space-y-4">
-                <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Major Triads</h4>
-                  <p className="text-sm text-yellow-700 mb-2">Every major chord contains a major 3rd from the root:</p>
-                  <ul className="text-xs text-yellow-600 space-y-1">
-                    <li>• C Major: C-E-G (major 3rd: C to E)</li>
-                    <li>• G Major: G-B-D (major 3rd: G to B)</li>
-                    <li>• D Major: D-F#-A (major 3rd: D to F#)</li>
+          
+          {/* Major 3rd Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Major 3rd Intervals - Foundation of Major Harmony</h3>
+            <p className="text-gray-600 mb-6">
+              The major 3rd (4 semitones) is the defining interval that creates major chord quality and the bright, optimistic character of major tonality.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C to E Major 3rd */}
+              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-5 border border-yellow-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-yellow-800 mb-2">C → E Major 3rd</h4>
+                  <p className="text-sm text-yellow-700 mb-3">Foundation of C major chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_to_E" />
+                      <p className="text-xs text-yellow-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_from_C" />
+                      <p className="text-xs text-yellow-600 mt-1">E (4th string 2nd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 E/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-yellow-600">Bright, happy quality</p>
+                </div>
+              </div>
+
+              {/* F to A Major 3rd */}
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-5 border border-orange-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-orange-800 mb-2">F → A Major 3rd</h4>
+                  <p className="text-sm text-orange-700 mb-3">Foundation of F major chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="F_to_A" />
+                      <p className="text-xs text-orange-600 mt-1">F (4th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_from_F" />
+                      <p className="text-xs text-orange-600 mt-1">A (5th string open)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 A/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-orange-600">Warm, optimistic character</p>
+                </div>
+              </div>
+
+              {/* G to B Major 3rd */}
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg p-5 border border-amber-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-amber-800 mb-2">G → B Major 3rd</h4>
+                  <p className="text-sm text-amber-700 mb-3">Foundation of G major chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_to_B" />
+                      <p className="text-xs text-amber-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="B_from_G" />
+                      <p className="text-xs text-amber-600 mt-1">B (5th string 2nd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 B/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-amber-600">Strong, confident sound</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Major Chord Construction */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Major Chord Construction with Major 3rds</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C Major Chord */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border border-green-200">
+                <h4 className="text-lg font-semibold text-green-800 mb-4">🎸 C Major Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="C_chord_M3" />
+                    <p className="text-xs text-green-600 mt-2">Complete C major chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-green-600 mt-2">C-E-G: Root, major 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• <strong>Major 3rd:</strong> C → E (defines major quality)</li>
+                    <li>• <strong>Perfect 5th:</strong> C → G (provides stability)</li>
+                    <li>• <strong>Open fingering:</strong> Natural guitar chord</li>
                   </ul>
                 </div>
-                <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
-                  <h4 className="font-semibold text-amber-800 mb-2">Extended Chords</h4>
-                  <p className="text-sm text-amber-700 mb-2">Major 3rds in jazz and extended harmony:</p>
-                  <ul className="text-xs text-amber-600 space-y-1">
-                    <li>• Maj7 chords: Root + Major 3rd + Perfect 5th + Major 7th</li>
-                    <li>• 6th chords: Root + Major 3rd + Perfect 5th + Major 6th</li>
-                    <li>• Add9 chords: Basic triad + Major 9th</li>
+              </div>
+
+              {/* G Major Chord */}
+              <div className="bg-gradient-to-br from-lime-50 to-lime-100 rounded-lg p-6 border border-lime-200">
+                <h4 className="text-lg font-semibold text-lime-800 mb-4">🎸 G Major Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="G_chord_M3" />
+                    <p className="text-xs text-lime-600 mt-2">Complete G major chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (G/2 B/3 D/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-lime-600 mt-2">G-B-D: Root, major 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-lime-700 space-y-1">
+                    <li>• <strong>Major 3rd:</strong> G → B (creates major brightness)</li>
+                    <li>• <strong>Perfect 5th:</strong> G → D (harmonic foundation)</li>
+                    <li>• <strong>Four-finger chord:</strong> Full open position</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* D Major Chord */}
+              <div className="bg-gradient-to-br from-sky-50 to-sky-100 rounded-lg p-6 border border-sky-200">
+                <h4 className="text-lg font-semibold text-sky-800 mb-4">🎸 D Major Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="D_chord_M3" />
+                    <p className="text-xs text-sky-600 mt-2">Complete D major chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F#/3 A/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-sky-600 mt-2">D-F#-A: Root, major 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-sky-700 space-y-1">
+                    <li>• <strong>Major 3rd:</strong> D → F# (major character)</li>
+                    <li>• <strong>Perfect 5th:</strong> D → A (structural support)</li>
+                    <li>• <strong>Compact voicing:</strong> Three-finger triangle</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
-                  <h4 className="font-semibold text-orange-800 mb-2">Common Positions</h4>
-                  <ul className="text-sm text-orange-700 space-y-2">
+          </div>
+
+          {/* Fretboard Patterns and Applications */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Fretboard Patterns & Musical Applications</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6 border border-yellow-200">
+                <h4 className="text-lg font-semibold text-yellow-800 mb-4">🎯 Fretboard Navigation</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-yellow-700 mb-2">Major 3rd Patterns</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 E/4 | F/4 A/4 | G/4 B/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-yellow-600 mt-2">Major 3rd intervals: 4 semitones apart</p>
+                  </div>
+                  <ul className="text-sm text-yellow-700 space-y-1">
                     <li>• <strong>Same string:</strong> 4 frets apart</li>
-                    <li>• <strong>Adjacent strings:</strong> Root on 6th, 3rd on 4th string (2 frets down)</li>
-                    <li>• <strong>Octave shapes:</strong> Standard chord fingerings</li>
-                    <li>• <strong>Barre chords:</strong> Major 3rd in standard positions</li>
+                    <li>• <strong>Cross strings:</strong> Various fingering options</li>
+                    <li>• <strong>Scale context:</strong> 1st to 3rd degree in major scales</li>
                   </ul>
                 </div>
-                <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Scale Degrees</h4>
-                  <ul className="text-sm text-yellow-700 space-y-2">
-                    <li>• <strong>1st to 3rd degree:</strong> Defines major scale character</li>
-                    <li>• <strong>Major pentatonic:</strong> Contains multiple major 3rds</li>
-                    <li>• <strong>Chord tones:</strong> Essential for outlining changes</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎵 Musical Expression</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-orange-700 mb-2">Harmonic Character</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :h C/4 E/4 | :h G/4 B/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">Major 3rds create bright, optimistic moods</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Pop/Rock context:</strong> Foundation of major progressions</li>
+                    <li>• <strong>Major scales:</strong> Ionian, Lydian modes</li>
+                    <li>• <strong>Jazz applications:</strong> Major 7th, 6th chord extensions</li>
                   </ul>
                 </div>
               </div>

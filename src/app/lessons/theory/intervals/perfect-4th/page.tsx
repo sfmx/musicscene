@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Perfect4thPage() {
   return (

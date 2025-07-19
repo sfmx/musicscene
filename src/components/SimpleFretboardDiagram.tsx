@@ -128,6 +128,45 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'F5': { frets: [1, 3, 3, -1, -1, -1], fingers: [1, 3, 4, -1, -1, -1] },
   'B5': { frets: [-1, 2, 4, 4, -1, -1], fingers: [-1, 1, 3, 4, -1, -1] },
   'Bb5': { frets: [-1, 1, 3, 3, -1, -1], fingers: [-1, 1, 3, 4, -1, -1] },
+  // Minor 2nd interval examples
+  'E_to_F': { frets: [0, -1, -1, -1, -1, -1], fingers: [0, -1, -1, -1, -1, -1] }, // E open
+  'F_from_E': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F 1st fret
+  'B_to_C': { frets: [-1, 0, -1, -1, -1, -1], fingers: [-1, 0, -1, -1, -1, -1] }, // B open
+  'C_from_B': { frets: [-1, 1, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C 1st fret
+  'Chromatic_C': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C 3rd fret A string
+  'Chromatic_Cs': { frets: [-1, 4, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C# 4th fret A string
+  'Chromatic_D': { frets: [-1, 5, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // D 5th fret A string
+  // Cluster chord (contains minor 2nds)
+  'Minor2nd_Cluster': { frets: [3, 3, 4, 3, -1, -1], fingers: [1, 2, 4, 3, -1, -1] }, // G-C-F#-Bb cluster
+  // Minor 3rd interval examples
+  'A_to_C': { frets: [-1, -1, -1, -1, 0, -1], fingers: [-1, -1, -1, -1, 0, -1] }, // A (5th string open)
+  'C_from_A': { frets: [-1, -1, -1, 2, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // C (4th string 2nd fret)
+  'E_to_G': { frets: [0, -1, -1, -1, -1, -1], fingers: [0, -1, -1, -1, -1, -1] }, // E (6th string open)
+  'G_from_E': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'D_to_F': { frets: [-1, -1, 0, -1, -1, -1], fingers: [-1, -1, 0, -1, -1, -1] }, // D (4th string open)
+  'F_from_D': { frets: [-1, -1, 3, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // F (4th string 3rd fret)
+  // Minor 3rd chord demonstration
+  'Am_chord_m3': { frets: [-1, 0, 2, 2, 1, 0], fingers: [-1, 0, 2, 3, 1, 0] }, // A minor highlighting the A-C minor 3rd
+  'Em_chord_m3': { frets: [0, 2, 2, 0, 0, 0], fingers: [0, 2, 3, 0, 0, 0] }, // E minor highlighting the E-G minor 3rd
+  'Dm_chord_m3': { frets: [-1, -1, 0, 2, 3, 1], fingers: [-1, -1, 0, 2, 3, 1] }, // D minor highlighting the D-F minor 3rd
+  // Major 3rd interval examples
+  'C_to_E': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'E_from_C': { frets: [-1, -1, 2, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // E (4th string 2nd fret)
+  'F_to_A': { frets: [-1, -1, -1, 3, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // F (4th string 3rd fret)
+  'A_from_F': { frets: [-1, -1, -1, -1, 0, -1], fingers: [-1, -1, -1, -1, 0, -1] }, // A (5th string open)
+  'G_to_B': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'B_from_G': { frets: [-1, 2, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // B (5th string 2nd fret)
+  // Major 3rd chord demonstration
+  'C_chord_M3': { frets: [-1, 3, 2, 0, 1, 0], fingers: [-1, 3, 2, 0, 1, 0] }, // C major highlighting the C-E major 3rd
+  'G_chord_M3': { frets: [3, 2, 0, 0, 3, 3], fingers: [3, 1, 0, 0, 2, 4] }, // G major highlighting the G-B major 3rd
+  'D_chord_M3': { frets: [-1, -1, 0, 2, 3, 2], fingers: [-1, -1, 0, 1, 3, 2] }, // D major highlighting the D-F# major 3rd
+  // Major 2nd interval examples
+  'C_to_D': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'D_from_C': { frets: [-1, 5, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // D (5th string 5th fret)
+  'G_to_A': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'A_from_G': { frets: [5, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // A (6th string 5th fret)
+  'D_to_E': { frets: [-1, -1, -1, 0, -1, -1], fingers: [-1, -1, -1, 0, -1, -1] }, // D (4th string open)
+  'E_from_D': { frets: [-1, -1, -1, 2, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // E (4th string 2nd fret)
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

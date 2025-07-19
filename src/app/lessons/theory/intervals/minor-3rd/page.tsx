@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor3rdPage() {
   return (
@@ -97,48 +99,214 @@ export default function Minor3rdPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Chord Construction</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Minor Triads</h4>
-                  <p className="text-sm text-blue-700 mb-2">Every minor chord contains a minor 3rd from the root:</p>
-                  <ul className="text-xs text-blue-600 space-y-1">
-                    <li>• A Minor: A-C-E (minor 3rd: A to C)</li>
-                    <li>• D Minor: D-F-A (minor 3rd: D to F)</li>
-                    <li>• E Minor: E-G-B (minor 3rd: E to G)</li>
+          
+          {/* Minor 3rd Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Minor 3rd Intervals - Foundation of Minor Harmony</h3>
+            <p className="text-gray-600 mb-6">
+              The minor 3rd (3 semitones) is the defining interval that creates minor chord quality and the emotional character of minor tonality.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* A to C Minor 3rd */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">A → C Minor 3rd</h4>
+                  <p className="text-sm text-blue-700 mb-3">Foundation of A minor chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_to_C" />
+                      <p className="text-xs text-blue-600 mt-1">A (5th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_from_A" />
+                      <p className="text-xs text-blue-600 mt-1">C (4th string 2nd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q A/3 C/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-blue-600">Melancholic, introspective quality</p>
+                </div>
+              </div>
+
+              {/* E to G Minor 3rd */}
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-5 border border-indigo-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-indigo-800 mb-2">E → G Minor 3rd</h4>
+                  <p className="text-sm text-indigo-700 mb-3">Foundation of E minor chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_to_G" />
+                      <p className="text-xs text-indigo-600 mt-1">E (6th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_from_E" />
+                      <p className="text-xs text-indigo-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 G/2" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-indigo-600">Dark, emotional depth</p>
+                </div>
+              </div>
+
+              {/* D to F Minor 3rd */}
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-5 border border-purple-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-purple-800 mb-2">D → F Minor 3rd</h4>
+                  <p className="text-sm text-purple-700 mb-3">Foundation of D minor chord</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_to_F" />
+                      <p className="text-xs text-purple-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="F_from_D" />
+                      <p className="text-xs text-purple-600 mt-1">F (4th string 3rd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 F/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-purple-600">Contemplative, sophisticated</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Minor Chord Construction */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Minor Chord Construction with Minor 3rds</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* A Minor Chord */}
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎸 A Minor Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Am_chord_m3" />
+                    <p className="text-xs text-emerald-600 mt-2">Complete A minor chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (A/3 C/4 E/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">A-C-E: Root, minor 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Minor 3rd:</strong> A → C (defines minor quality)</li>
+                    <li>• <strong>Perfect 5th:</strong> A → E (provides stability)</li>
+                    <li>• <strong>Open fingering:</strong> Natural guitar chord</li>
                   </ul>
                 </div>
-                <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
-                  <h4 className="font-semibold text-indigo-800 mb-2">Blues Harmony</h4>
-                  <p className="text-sm text-indigo-700 mb-2">Minor 3rds in blues and rock contexts:</p>
-                  <ul className="text-xs text-indigo-600 space-y-1">
-                    <li>• Blue notes: ♭3 over major progression</li>
-                    <li>• Minor pentatonic scales</li>
-                    <li>• Power chord + minor 3rd additions</li>
+              </div>
+
+              {/* E Minor Chord */}
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎸 E Minor Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Em_chord_m3" />
+                    <p className="text-xs text-teal-600 mt-2">Complete E minor chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (E/2 G/2 B/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">E-G-B: Root, minor 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>Minor 3rd:</strong> E → G (creates minor mood)</li>
+                    <li>• <strong>Perfect 5th:</strong> E → B (harmonic foundation)</li>
+                    <li>• <strong>Easy fingering:</strong> Two-finger chord</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* D Minor Chord */}
+              <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-lg p-6 border border-rose-200">
+                <h4 className="text-lg font-semibold text-rose-800 mb-4">🎸 D Minor Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Dm_chord_m3" />
+                    <p className="text-xs text-rose-600 mt-2">Complete D minor chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/3 A/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-rose-600 mt-2">D-F-A: Root, minor 3rd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-rose-700 space-y-1">
+                    <li>• <strong>Minor 3rd:</strong> D → F (minor character)</li>
+                    <li>• <strong>Perfect 5th:</strong> D → A (structural support)</li>
+                    <li>• <strong>Compact voicing:</strong> Three-finger chord</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                  <h4 className="font-semibold text-slate-800 mb-2">Common Positions</h4>
-                  <ul className="text-sm text-slate-700 space-y-2">
+          </div>
+
+          {/* Fretboard Patterns and Applications */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Fretboard Patterns & Musical Applications</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-6 border border-slate-200">
+                <h4 className="text-lg font-semibold text-slate-800 mb-4">🎯 Fretboard Navigation</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-slate-700 mb-2">Minor 3rd Patterns</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 Eb/4 | F/4 Ab/4 | G/4 Bb/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-slate-600 mt-2">Minor 3rd intervals: 3 semitones apart</p>
+                  </div>
+                  <ul className="text-sm text-slate-700 space-y-1">
                     <li>• <strong>Same string:</strong> 3 frets apart</li>
-                    <li>• <strong>Adjacent strings:</strong> Root on 6th, ♭3 on 4th string (1 fret down)</li>
-                    <li>• <strong>Barre chords:</strong> Minor shapes and variations</li>
-                    <li>• <strong>Open chords:</strong> Em, Am, Dm patterns</li>
+                    <li>• <strong>Cross strings:</strong> Various fingering options</li>
+                    <li>• <strong>Scale context:</strong> 1st to 3rd degree in minor scales</li>
                   </ul>
                 </div>
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Scale Relationships</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Natural minor:</strong> 1-♭3 relationship</li>
-                    <li>• <strong>Minor pentatonic:</strong> Built on minor 3rd intervals</li>
-                    <li>• <strong>Dorian mode:</strong> Minor 3rd with raised 6th</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-200">
+                <h4 className="text-lg font-semibold text-gray-800 mb-4">🎵 Musical Expression</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-gray-700 mb-2">Emotional Character</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :h A/3 C/4 | :h E/4 G/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-gray-600 mt-2">Minor 3rds create introspective, melancholic moods</p>
+                  </div>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• <strong>Blues context:</strong> ♭3 over major progressions</li>
+                    <li>• <strong>Minor scales:</strong> Natural minor, harmonic minor</li>
+                    <li>• <strong>Modal applications:</strong> Dorian, Aeolian modes</li>
                   </ul>
                 </div>
               </div>

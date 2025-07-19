@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major2ndPage() {
   return (
@@ -90,99 +92,223 @@ export default function Major2ndPage() {
           </div>
         </div>
 
-        {/* Visual Examples Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-3 border-b border-gray-300">
-            Visual Examples
-          </h2>
+        {/* Guitar Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
           
-          {/* Fretboard Examples */}
-          <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6 mb-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Fretboard Locations</h3>
-            <div className="space-y-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Two-Fret Rule</h4>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>Universal Rule:</strong> Skip one fret to create a major 2nd
-                </p>
-                <p className="text-blue-700 text-sm mb-2">
-                  <strong>Examples:</strong> 0th to 2nd fret, 3rd to 5th fret, 7th to 9th fret
-                </p>
-                <p className="text-blue-700 text-sm">
-                  This pattern works on any string, anywhere on the neck!
-                </p>
-              </div>
-              
-              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <h4 className="text-lg font-medium text-green-800 mb-3">Scale Context</h4>
-                <p className="text-green-700 text-sm mb-2">
-                  <strong>Major Scale Pattern:</strong> W-W-H-W-W-W-H (W = major 2nd, H = minor 2nd)
-                </p>
-                <p className="text-green-700 text-sm mb-2">
-                  <strong>First major 2nd:</strong> Root to 2nd degree (C to D in C major)
-                </p>
-                <p className="text-green-700 text-sm">
-                  Most steps in major scales are major 2nds!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Musical Examples */}
-          <div className="bg-white rounded-xl border border-blue-200 shadow-sm p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Musical Examples</h3>
+          {/* Major 2nd Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Major 2nd Intervals - The Fundamental Melodic Step</h3>
+            <p className="text-gray-600 mb-6">
+              The major 2nd (2 semitones) is the most common interval in melodies, providing smooth, natural movement between notes.
+            </p>
             
-            <div className="space-y-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h4 className="text-lg font-medium text-blue-800 mb-3">Ascending Major 2nds</h4>
-                <div className="space-y-2 text-sm text-blue-700">
-                  <div className="flex justify-between items-center">
-                    <span>G (3rd fret) → A (5th fret)</span>
-                    <span className="font-mono bg-blue-100 px-2 py-1 rounded">Low E string</span>
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C to D Major 2nd */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-5 border border-blue-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">C → D Major 2nd</h4>
+                  <p className="text-sm text-blue-700 mb-3">Classic whole step movement</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_to_D" />
+                      <p className="text-xs text-blue-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_from_C" />
+                      <p className="text-xs text-blue-600 mt-1">D (5th string 5th fret)</p>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span>A (open) → B (2nd fret)</span>
-                    <span className="font-mono bg-blue-100 px-2 py-1 rounded">A string</span>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 D/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span>C (3rd fret) → D (5th fret)</span>
-                    <span className="font-mono bg-blue-100 px-2 py-1 rounded">A string</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>D (open) → E (2nd fret)</span>
-                    <span className="font-mono bg-blue-100 px-2 py-1 rounded">D string</span>
-                  </div>
+                  <p className="text-xs text-blue-600">Natural melodic movement</p>
                 </div>
               </div>
 
-              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <h4 className="text-lg font-medium text-green-800 mb-3">Harmonic Major 2nds (Consonant)</h4>
-                <p className="text-green-700 text-sm mb-3">
-                  Unlike minor 2nds, major 2nds sound pleasant when played together harmonically.
-                  They create a stable, consonant sound that doesn't demand resolution.
-                </p>
-                <div className="space-y-1 text-xs text-green-600">
-                  <div>• Try playing 3rd and 5th frets on the same string simultaneously</div>
-                  <div>• Notice the pleasant, stable sound compared to minor 2nds</div>
-                  <div>• Common in sus2 chords and add9 harmonies</div>
+              {/* G to A Major 2nd */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-5 border border-green-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">G → A Major 2nd</h4>
+                  <p className="text-sm text-green-700 mb-3">Open string to 2nd fret</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_to_A" />
+                      <p className="text-xs text-green-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_from_G" />
+                      <p className="text-xs text-green-600 mt-1">A (6th string 5th fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 A/2" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-green-600">Smooth scale movement</p>
                 </div>
               </div>
 
-              <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
-                <h4 className="text-lg font-medium text-yellow-800 mb-3">Major Scale Context</h4>
-                <p className="text-yellow-700 text-sm mb-2">
-                  <strong>C Major Scale on A string:</strong> 3rd → 5th → 6th → 8th → 10th → 12th → 14th → 15th frets
-                </p>
-                <p className="text-yellow-700 text-sm mb-2">
-                  <strong>Notes:</strong> C → D → E → F → G → A → B → C (octave)
-                </p>
-                <p className="text-yellow-700 text-xs">
-                  Most steps in this scale are major 2nds (except E→F and B→C which are minor 2nds)
-                </p>
+              {/* D to E Major 2nd */}
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-5 border border-purple-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-purple-800 mb-2">D → E Major 2nd</h4>
+                  <p className="text-sm text-purple-700 mb-3">Common in scale patterns</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_to_E" />
+                      <p className="text-xs text-purple-600 mt-1">D (4th string open)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_from_D" />
+                      <p className="text-xs text-purple-600 mt-1">E (4th string 2nd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 E/3" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-purple-600">Foundation of major scales</p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+
+          {/* Sus2 and Add9 Chord Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Harmonic Applications - Sus2 & Add9 Chords</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* Dsus2 Chord */}
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎸 Dsus2 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Dsus2" />
+                    <p className="text-xs text-orange-600 mt-2">D-E-A suspended 2nd chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 E/3 A/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">D-E-A: Root, major 2nd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Major 2nd:</strong> D → E (creates open, airy sound)</li>
+                    <li>• <strong>Perfect 5th:</strong> D → A (provides stability)</li>
+                    <li>• <strong>Open voicing:</strong> Natural guitar fingering</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Asus2 Chord */}
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎸 Asus2 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Asus2" />
+                    <p className="text-xs text-teal-600 mt-2">A-B-E suspended 2nd chord</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 B/3 E/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">A-B-E: Root, major 2nd, perfect 5th</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>Major 2nd:</strong> A → B (sweet suspension)</li>
+                    <li>• <strong>Perfect 5th:</strong> A → E (harmonic foundation)</li>
+                    <li>• <strong>Easy fingering:</strong> Minimal hand movement</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Cadd9 Chord */}
+              <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-lg p-6 border border-rose-200">
+                <h4 className="text-lg font-semibold text-rose-800 mb-4">🎸 Cadd9 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Cadd9" />
+                    <p className="text-xs text-rose-600 mt-2">C major with added 9th (D)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 D/5)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-rose-600 mt-2">C-E-G-D: Major triad + 9th</p>
+                  </div>
+                  <ul className="text-sm text-rose-700 space-y-1">
+                    <li>• <strong>Major 9th:</strong> C → D (octave + major 2nd)</li>
+                    <li>• <strong>Color tone:</strong> Adds brightness and richness</li>
+                    <li>• <strong>Pop/folk favorite:</strong> Modern acoustic sound</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Scale Applications and Musical Expression */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Scale Applications & Musical Expression</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎯 Major Scale Foundation</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-blue-700 mb-2">C Major Scale Pattern</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 D/4 E/4 F/4 | G/4 A/4 B/4 C/5" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-blue-600 mt-2">Major 2nds: C-D, D-E, F-G, G-A, A-B</p>
+                  </div>
+                  <ul className="text-sm text-blue-700 space-y-1">
+                    <li>• <strong>5 out of 7 steps:</strong> Most intervals in major scales</li>
+                    <li>• <strong>Natural movement:</strong> Easy to sing and play</li>
+                    <li>• <strong>Melodic foundation:</strong> Basis for countless melodies</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border border-green-200">
+                <h4 className="text-lg font-semibold text-green-800 mb-4">🎵 Melodic Expression</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-green-700 mb-2">Smooth Melodic Movement</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :h C/4 D/4 | :h E/4 F/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-green-600 mt-2">Natural, flowing melodic motion</p>
+                  </div>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• <strong>Vocal music:</strong> Comfortable singing intervals</li>
+                    <li>• <strong>Instrumental lines:</strong> Smooth finger movement</li>
+                    <li>• <strong>Connecting notes:</strong> Bridges between chord tones</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Practical Applications Section */}
         <section className="mb-16">

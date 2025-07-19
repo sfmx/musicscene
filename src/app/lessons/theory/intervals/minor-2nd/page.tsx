@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor2ndPage() {
   return (
@@ -177,77 +179,181 @@ export default function Minor2ndPage() {
             Practical Applications
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl border border-orange-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Melodic Uses</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Chromatic passing tones:</strong> Smooth voice leading between chord tones</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Blues and jazz:</strong> Characteristic bend and chromatic approach</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Classical music:</strong> Leading tones resolving to tonic</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 mt-1">•</span>
-                  <span><strong>Horror film scores:</strong> Creates unease and tension</span>
-                </li>
-              </ul>
-              
-              <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">
-                <h4 className="font-medium text-orange-800 mb-3">Chromatic Passing Tone Example</h4>
-                <p className="text-orange-700 text-sm mb-2">
-                  <strong>Guitar Exercise:</strong> Play ascending chromatic line on the A string
-                </p>
-                <div className="space-y-1 text-xs text-orange-600 font-mono">
-                  <div>3rd fret → 4th fret → 5th fret → 6th fret → 7th fret → 8th fret → 9th fret → 10th fret</div>
-                  <div>(C → C# → D → D# → E → F → F# → G)</div>
+          {/* Natural Minor 2nds */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Natural Minor 2nds - E→F and B→C</h3>
+            <p className="text-gray-600 mb-6">
+              These are the only minor 2nd intervals that occur naturally in the major scale (no sharps or flats needed).
+            </p>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* E to F Examples */}
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6 border border-red-200">
+                <h4 className="text-lg font-semibold text-red-800 mb-4">🎵 E → F Natural Semitone</h4>
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="text-center">
+                    <h5 className="text-sm font-semibold text-red-700 mb-2">E (Open)</h5>
+                    <SimpleFretboardDiagram chord="E_to_F" />
+                    <p className="text-xs text-red-600 mt-2">1st string open</p>
+                  </div>
+                  <div className="text-center">
+                    <h5 className="text-sm font-semibold text-red-700 mb-2">F (1st Fret)</h5>
+                    <SimpleFretboardDiagram chord="F_from_E" />
+                    <p className="text-xs text-red-600 mt-2">1st string, 1st fret</p>
+                  </div>
                 </div>
-                <p className="text-orange-700 text-xs mt-2">
-                  Each step is a minor 2nd interval creating smooth chromatic movement
-                </p>
+                <div className="bg-white rounded-lg p-4 mb-3">
+                  <VexTabRenderer 
+                    vextab="tabstave notation=true tablature=false\nnotes :q E/5 F/5" 
+                    width={240} 
+                    scale={0.8}
+                  />
+                </div>
+                <ul className="text-sm text-red-700 space-y-1">
+                  <li>• <strong>No accidentals needed:</strong> Natural in major scale</li>
+                  <li>• <strong>Leading tone:</strong> F resolves up to G or down to E</li>
+                  <li>• <strong>Guitar advantage:</strong> Easy adjacent fret technique</li>
+                </ul>
+              </div>
+
+              {/* B to C Examples */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎵 B → C Natural Semitone</h4>
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="text-center">
+                    <h5 className="text-sm font-semibold text-blue-700 mb-2">B (Open)</h5>
+                    <SimpleFretboardDiagram chord="B_to_C" />
+                    <p className="text-xs text-blue-600 mt-2">2nd string open</p>
+                  </div>
+                  <div className="text-center">
+                    <h5 className="text-sm font-semibold text-blue-700 mb-2">C (1st Fret)</h5>
+                    <SimpleFretboardDiagram chord="C_from_B" />
+                    <p className="text-xs text-blue-600 mt-2">2nd string, 1st fret</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 mb-3">
+                  <VexTabRenderer 
+                    vextab="tabstave notation=true tablature=false\nnotes :q B/4 C/5" 
+                    width={240} 
+                    scale={0.8}
+                  />
+                </div>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• <strong>Leading tone to C:</strong> Strong resolution tendency</li>
+                  <li>• <strong>Scale degrees:</strong> 7→1 (ti→do) in C major</li>
+                  <li>• <strong>Harmonic function:</strong> Creates dominant tension</li>
+                </ul>
               </div>
             </div>
-            
-            <div className="bg-white rounded-xl border border-purple-200 shadow-sm p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Harmonic Uses</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Cluster chords:</strong> Dense, dissonant harmonies</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Suspended resolutions:</strong> Creating and releasing tension</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Jazz voicings:</strong> Adding color and sophistication</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong>Modern classical:</strong> 20th-century harmonic language</span>
-                </li>
-              </ul>
+          </div>
 
-              <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
-                <h4 className="font-medium text-purple-800 mb-3">Minor 2nd in Harmony Example</h4>
-                <p className="text-purple-700 text-sm mb-2">
-                  <strong>Cluster Chord Exercise:</strong> Create tension with close intervals
-                </p>
-                <div className="space-y-2 text-xs text-purple-600">
-                  <div><strong>Frets:</strong> 3rd fret (low E), 3rd fret (A), 4th fret (D), 3rd fret (G)</div>
-                  <div><strong>Notes:</strong> G - C - F# - Bb (contains multiple minor 2nds)</div>
-                  <div><strong>Effect:</strong> Dense, dissonant cluster requiring resolution</div>
+          {/* Chromatic Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Chromatic Minor 2nd Applications</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
+                <h4 className="text-lg font-semibold text-orange-800 mb-4">🎸 Melodic Chromatic Passing Tones</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-orange-700 mb-2">Chromatic Ascent: C → C# → D</h5>
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Chromatic_C" />
+                        <p className="text-xs text-orange-600 mt-1">C (3rd fret)</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Chromatic_Cs" />
+                        <p className="text-xs text-orange-600 mt-1">C# (4th fret)</p>
+                      </div>
+                      <div className="text-center">
+                        <SimpleFretboardDiagram chord="Chromatic_D" />
+                        <p className="text-xs text-orange-600 mt-1">D (5th fret)</p>
+                      </div>
+                    </div>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 C#/4 D/4" 
+                      width={260} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-orange-600 mt-2">Smooth voice leading using minor 2nds</p>
+                  </div>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• <strong>Technique:</strong> Adjacent frets create smooth lines</li>
+                    <li>• <strong>Usage:</strong> Jazz, blues, classical voice leading</li>
+                    <li>• <strong>Effect:</strong> Eliminates melodic leaps</li>
+                  </ul>
                 </div>
-                <p className="text-purple-700 text-xs mt-2">
-                  This type of harmony is common in jazz and modern classical music
-                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 border border-purple-200">
+                <h4 className="text-lg font-semibold text-purple-800 mb-4">🎹 Harmonic Cluster Chords</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-purple-700 mb-2">Dissonant Cluster Example</h5>
+                    <div className="text-center mb-3">
+                      <SimpleFretboardDiagram chord="Minor2nd_Cluster" />
+                      <p className="text-xs text-purple-600 mt-2">G-C-F#-Bb cluster (contains multiple minor 2nds)</p>
+                    </div>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (G/3 C/4 F#/4 Bb/4)" 
+                      width={260} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-purple-600 mt-2">Dense harmony creating maximum tension</p>
+                  </div>
+                  <ul className="text-sm text-purple-700 space-y-1">
+                    <li>• <strong>Modern usage:</strong> Jazz, contemporary classical</li>
+                    <li>• <strong>Effect:</strong> Creates urgency and discomfort</li>
+                    <li>• <strong>Resolution:</strong> Demands movement to consonance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical Guitar Applications */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Technical Guitar Applications</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎯 Fretboard Navigation</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-emerald-700 mb-2">Universal Rule: Adjacent Frets = Minor 2nd</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :8 C/4 C#/4 D/4 D#/4 E/4 F/4 F#/4 G/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">Chromatic scale: all minor 2nd intervals</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Any string:</strong> Each fret = 1 semitone higher</li>
+                    <li>• <strong>Practice tip:</strong> Use for chromatic scale exercises</li>
+                    <li>• <strong>Theory connection:</strong> Foundation of equal temperament</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-6 border border-teal-200">
+                <h4 className="text-lg font-semibold text-teal-800 mb-4">🎵 Musical Tension & Resolution</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-teal-700 mb-2">Leading Tone Resolution</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q B/4 C/5 | F/4 E/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-teal-600 mt-2">B→C (up) and F→E (down) resolutions</p>
+                  </div>
+                  <ul className="text-sm text-teal-700 space-y-1">
+                    <li>• <strong>Upward resolution:</strong> Leading tone to tonic</li>
+                    <li>• <strong>Downward resolution:</strong> 4th degree to 3rd</li>
+                    <li>• <strong>Harmonic drive:</strong> Creates forward motion</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
