@@ -1,381 +1,370 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import MusicScore from '@/components/MusicScore';
+import VexTabRenderer from '@/components/VexTabRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-const viIVIVProgression = `
-tabstave notation=true key=C time=4/4
-notes :w (0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
-text ++,.1,vi (Am),:++,.2,IV (F),:++,.3,I (C),:++,.4,V (G)
-`;
-
-const withSevenths = `
-tabstave notation=true key=C time=4/4
-notes :w (x/6.0/5.1/4.0/3.0/2.x/1) | :w (1/6.x/5.2/4.1/3.1/2.x/1) | :w (x/6.3/5.2/4.4/3.5/2.x/1) | :w (3/6.x/5.4/4.3/3.4/2.x/1)
-text ++,.1,Am7,:++,.2,Fmaj7,:++,.3,Cmaj7,:++,.4,G7
-`;
-
-const alternateVoicings = `
-tabstave notation=true key=C time=4/4
-notes :w (5/5.5/4.5/3.5/2.5/1) | :w (1/6.1/5.2/4.3/3.3/2.1/1) | :w (8/6.8/5.9/4.10/3.10/2.8/1) | :w (3/6.3/5.4/4.5/3.5/2.3/1)
-text ++,.1,Am (5th fret),:++,.2,F (1st fret),:++,.3,C (8th fret),:++,.4,G (3rd fret)
-`;
-
-const keyOfGProgression = `
-tabstave notation=true key=G time=4/4
-notes :w (2/5.0/4.0/3.2/2.0/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (2/5.1/4.0/3.0/2.0/1)
-text ++,.1,vi (Em),:++,.2,IV (C),:++,.3,I (G),:++,.4,V (D)
-`;
 
 export default function ViIVIVProgressionPage() {
   return (
     <Layout>
       <Header
         title="vi-IV-I-V Progression"
-        subtitle="The emotional journey of modern pop and alternative rock"
+        subtitle="The emotional powerhouse of modern pop - starting with melancholy and ending with anticipation, this progression creates a compelling emotional arc."
       />
       
-      <main className="prose mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Navigation */}
+        <div className="mb-8">
+          <Link 
+            href="/lessons/theory/progressions" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Back to Progressions Theory
+          </Link>
+        </div>
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-rose-100 to-orange-100 rounded-lg p-8 mb-8 not-prose">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              vi-IV-I-V: The Modern Pop Formula
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              Discover the progression that creates emotional depth and has become a staple of contemporary music.
-            </p>
-            <div className="bg-rose-50 rounded-lg p-4">
-              <h3 className="font-semibold text-rose-800 mb-2">What You&apos;ll Learn:</h3>
-              <ul className="text-rose-700 space-y-1">
-                <li>• Why this progression feels so emotionally powerful</li>
-                <li>• How it differs from I-V-vi-IV</li>
-                <li>• Voice leading and smooth transitions</li>
-                <li>• Modern applications in pop and rock</li>
-                <li>• Creative variations and substitutions</li>
+        <div className="bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">vi-IV-I-V Progression</h1>
+          <p className="text-xl opacity-90 mb-4">
+            The vi-IV-I-V progression starts with emotional depth and creates a powerful journey from 
+            melancholy through comfort to resolution and anticipation.
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Emotional Journey</span>
+            <span className="bg-white/20 px-3 py-1 rounded">4 Chords</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Modern Pop Staple</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Minor Start</span>
+          </div>
+        </div>
+
+        {/* Theory Fundamentals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Theory Fundamentals</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Emotional Journey</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li><strong>vi:</strong> Melancholy, introspection, emotional depth</li>
+                <li><strong>IV:</strong> Comfort, familiarity, warmth</li>
+                <li><strong>I:</strong> Home, resolution, stability</li>
+                <li><strong>V:</strong> Tension, anticipation, forward motion</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Key of C Major</h3>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <div className="grid grid-cols-4 gap-2 text-center text-sm">
+                  <div className="font-medium">vi</div>
+                  <div className="font-medium">IV</div>
+                  <div className="font-medium">I</div>
+                  <div className="font-medium">V</div>
+                </div>
+                <div className="grid grid-cols-4 gap-2 text-center">
+                  <div className="text-lg font-bold text-purple-600">Am</div>
+                  <div className="text-lg font-bold text-blue-600">F</div>
+                  <div className="text-lg font-bold text-green-600">C</div>
+                  <div className="text-lg font-bold text-orange-600">G</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Guitar Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
+          
+          <div className="grid md:grid-cols-4 gap-6 mb-8">
+            <div className="text-center">
+              <h3 className="text-lg font-medium text-gray-800 mb-2">vi - A Minor</h3>
+              <SimpleFretboardDiagram chord="A_minor" />
+              <p className="text-sm text-gray-600 mt-2">Melancholy starting point</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-medium text-gray-800 mb-2">IV - F Major</h3>
+              <SimpleFretboardDiagram chord="F_major" />
+              <p className="text-sm text-gray-600 mt-2">Comforting support</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-medium text-gray-800 mb-2">I - C Major</h3>
+              <SimpleFretboardDiagram chord="C_major" />
+              <p className="text-sm text-gray-600 mt-2">Home and resolution</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-medium text-gray-800 mb-2">V - G Major</h3>
+              <SimpleFretboardDiagram chord="G_major" />
+              <p className="text-sm text-gray-600 mt-2">Building anticipation</p>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 rounded-lg p-4">
+            <h3 className="font-medium text-blue-800 mb-2">Playing Tips</h3>
+            <ul className="text-blue-700 text-sm space-y-1">
+              <li>• Start with clean chord changes before adding rhythm</li>
+              <li>• Focus on the emotional transition from minor to major</li>
+              <li>• Practice smooth voice leading between chords</li>
+              <li>• Experiment with different strumming patterns to enhance the mood</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Advanced Voicings */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Advanced Voicings</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Seventh Chord Extensions</h3>
+              <div className="grid grid-cols-4 gap-4 mb-4">
+                <div className="text-center">
+                  <div className="text-sm font-medium mb-1">Am7</div>
+                  <SimpleFretboardDiagram chord="A_minor_7" />
+                </div>
+                <div className="text-center">
+                  <div className="text-sm font-medium mb-1">Fmaj7</div>
+                  <SimpleFretboardDiagram chord="F_major_7" />
+                </div>
+                <div className="text-center">
+                  <div className="text-sm font-medium mb-1">Cmaj7</div>
+                  <SimpleFretboardDiagram chord="C_major_7" />
+                </div>
+                <div className="text-center">
+                  <div className="text-sm font-medium mb-1">G7</div>
+                  <SimpleFretboardDiagram chord="G_7" />
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Seventh chords add sophistication and are perfect for indie and alternative styles.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Upper Fret Voicings</h3>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <div className="text-sm space-y-2">
+                  <div><strong>Am (5th fret):</strong> Barre chord voicing for smoother transitions</div>
+                  <div><strong>F (1st fret):</strong> Standard barre position</div>
+                  <div><strong>C (8th fret):</strong> Higher voicing with rich harmonics</div>
+                  <div><strong>G (3rd fret):</strong> Compact barre chord form</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Musical Examples */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Musical Examples</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Famous Songs</h3>
+              <div className="bg-green-50 rounded-lg p-4">
+                <ul className="space-y-2 text-green-800">
+                  <li>• "Somebody That I Used to Know" - Gotye</li>
+                  <li>• "Grenade" - Bruno Mars</li>
+                  <li>• "Let Her Go" - Passenger</li>
+                  <li>• "Torn" - Natalie Imbruglia</li>
+                  <li>• "Zombie" - The Cranberries</li>
+                  <li>• "What's Up?" - 4 Non Blondes</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Genre Applications</h3>
+              <div className="bg-purple-50 rounded-lg p-4">
+                <ul className="space-y-2 text-purple-800">
+                  <li>• <strong>Pop:</strong> Emotional ballads and mid-tempo songs</li>
+                  <li>• <strong>Alternative Rock:</strong> Introspective and atmospheric</li>
+                  <li>• <strong>Indie Folk:</strong> Storytelling and emotional depth</li>
+                  <li>• <strong>Contemporary Christian:</strong> Worship and reflection</li>
+                  <li>• <strong>Singer-Songwriter:</strong> Personal and intimate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Practice Exercises */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-yellow-50 rounded-lg p-4">
+              <h3 className="font-medium text-yellow-800 mb-3">🎯 Progressive Practice Plan</h3>
+              <ol className="space-y-2 text-yellow-700 text-sm">
+                <li><strong>1. Basic Changes:</strong> Master clean transitions between open chords</li>
+                <li><strong>2. Rhythm Patterns:</strong> Start with simple down-strums, add complexity</li>
+                <li><strong>3. Different Keys:</strong> Learn in G, D, and A major</li>
+                <li><strong>4. Voice Leading:</strong> Practice alternate voicings for smoother changes</li>
+                <li><strong>5. Song Application:</strong> Play along with famous songs using this progression</li>
+                <li><strong>6. Creative Variations:</strong> Experiment with extensions and substitutions</li>
+              </ol>
+            </div>
+            
+            <div className="bg-orange-50 rounded-lg p-4">
+              <h3 className="font-medium text-orange-800 mb-3">💡 Practice Tips</h3>
+              <ul className="space-y-2 text-orange-700 text-sm">
+                <li>• Focus on the emotional character of each chord</li>
+                <li>• Practice with a metronome to develop steady timing</li>
+                <li>• Record yourself to hear the progression objectively</li>
+                <li>• Try different tempos from ballad to uptempo</li>
+                <li>• Experiment with dynamics (loud/soft) for emotional effect</li>
+                <li>• Learn to loop the progression smoothly</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Theory Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Understanding vi-IV-I-V</h2>
+        {/* VexTab Notation Examples */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Notation Examples</h2>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-blue-800">Emotional Journey</h3>
-              <p className="text-blue-700 mb-4">
-                Starting on the vi chord creates an immediate sense of longing and melancholy. 
-                The progression then journeys through comfort (IV), resolution (I), and anticipation (V).
-              </p>
-              <div className="space-y-2 text-blue-700">
-                <div>• <strong>vi:</strong> Melancholy, introspection</div>
-                <div>• <strong>IV:</strong> Comfort, familiarity</div>
-                <div>• <strong>I:</strong> Home, resolution</div>
-                <div>• <strong>V:</strong> Tension, anticipation</div>
-              </div>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Basic vi-IV-I-V Progression (Key of C)</h3>
+              <VexTabRenderer 
+                vextab="tabstave notation=true key=C time=4/4
+notes :w (0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
+text ++,.1,vi (Am),:++,.2,IV (F),:++,.3,I (C),:++,.4,V (G)"
+              />
             </div>
             
-            <div className="bg-green-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-green-800">Difference from I-V-vi-IV</h3>
-              <p className="text-green-700 mb-4">
-                While I-V-vi-IV starts confidently and moves to melancholy, vi-IV-I-V starts with emotion and resolves optimistically.
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">With Seventh Chords</h3>
+              <VexTabRenderer 
+                vextab="tabstave notation=true key=C time=4/4
+notes :w (x/6.0/5.1/4.0/3.0/2.x/1) | :w (1/6.x/5.2/4.1/3.1/2.x/1) | :w (x/6.3/5.2/4.4/3.5/2.x/1) | :w (3/6.x/5.4/4.3/3.4/2.x/1)
+text ++,.1,Am7,:++,.2,Fmaj7,:++,.3,Cmaj7,:++,.4,G7"
+              />
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">In Key of G Major</h3>
+              <VexTabRenderer 
+                vextab="tabstave notation=true key=G time=4/4
+notes :w (2/5.0/4.0/3.2/2.0/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (2/5.1/4.0/3.0/2.0/1)
+text ++,.1,vi (Em),:++,.2,IV (C),:++,.3,I (G),:++,.4,V (D)"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Harmonic Relationships */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Harmonic Relationships</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Comparison with I-V-vi-IV</h3>
+              <div className="bg-blue-50 rounded-lg p-4 mb-4">
+                <div className="text-blue-800 text-sm space-y-2">
+                  <div><strong>I-V-vi-IV:</strong> Confident → Tension → Melancholy → Comfort</div>
+                  <div><strong>vi-IV-I-V:</strong> Melancholy → Comfort → Home → Anticipation</div>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm">
+                While I-V-vi-IV starts confidently and moves to melancholy, vi-IV-I-V starts 
+                with emotion and resolves optimistically.
               </p>
-              <div className="bg-white rounded p-4">
-                <div className="text-sm">
-                  <div className="font-semibold">I-V-vi-IV:</div>
-                  <div className="text-gray-600">Confident → Tension → Melancholy → Comfort</div>
-                  <div className="font-semibold mt-2">vi-IV-I-V:</div>
-                  <div className="text-gray-600">Melancholy → Comfort → Home → Anticipation</div>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Common Keys</h3>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <div className="grid grid-cols-5 gap-2 text-xs">
+                  <div className="font-medium">Key</div>
+                  <div className="font-medium">vi</div>
+                  <div className="font-medium">IV</div>
+                  <div className="font-medium">I</div>
+                  <div className="font-medium">V</div>
+                  
+                  <div>C</div><div>Am</div><div>F</div><div>C</div><div>G</div>
+                  <div>G</div><div>Em</div><div>C</div><div>G</div><div>D</div>
+                  <div>D</div><div>Bm</div><div>G</div><div>D</div><div>A</div>
+                  <div>A</div><div>F#m</div><div>D</div><div>A</div><div>E</div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Basic Progression */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Basic vi-IV-I-V Progression (Key of C)</h2>
-          
-          <div className="bg-gray-50 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold mb-4">Standard Voicings</h3>
-            <MusicScore 
-              staves={[{
-                id: 'vi-iv-i-v-basic',
-                notation: viIVIVProgression,
-                title: 'vi-IV-I-V in C Major'
-              }]}
-            />
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-4 mb-6">
-            <div className="text-center">
-              <h4 className="font-semibold mb-2">vi - A Minor</h4>
-              <SimpleFretboardDiagram chord="A_minor" />
-              <p className="text-sm text-gray-600 mt-2">Melancholy starting point</p>
-            </div>
-            <div className="text-center">
-              <h4 className="font-semibold mb-2">IV - F Major</h4>
-              <SimpleFretboardDiagram chord="F_major" />
-              <p className="text-sm text-gray-600 mt-2">Comforting support</p>
-            </div>
-            <div className="text-center">
-              <h4 className="font-semibold mb-2">I - C Major</h4>
-              <SimpleFretboardDiagram chord="C_major" />
-              <p className="text-sm text-gray-600 mt-2">Home and resolution</p>
-            </div>
-            <div className="text-center">
-              <h4 className="font-semibold mb-2">V - G Major</h4>
-              <SimpleFretboardDiagram chord="G_major" />
-              <p className="text-sm text-gray-600 mt-2">Building anticipation</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Extended Harmony */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Extended Harmony</h2>
-          
-          <div className="bg-purple-50 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold mb-4 text-purple-800">Adding Seventh Chords</h3>
-            <p className="text-purple-700 mb-4">
-              Adding 7th extensions creates a more sophisticated, modern sound that&apos;s perfect for indie and alternative styles.
-            </p>
-            <MusicScore 
-              staves={[{
-                id: 'vi-iv-i-v-sevenths',
-                notation: withSevenths,
-                title: 'vi-IV-I-V with 7th Chords'
-              }]}
-            />
-          </div>
-        </section>
-
-        {/* Voice Leading and Alternate Voicings */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Voice Leading & Alternate Voicings</h2>
-          
-          <div className="bg-yellow-50 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold mb-4 text-yellow-800">Smooth Transitions</h3>
-            <p className="text-yellow-700 mb-4">
-              Using different chord voicings up the neck creates smoother voice leading and a more professional sound.
-            </p>
-            <MusicScore 
-              staves={[{
-                id: 'vi-iv-i-v-voicings',
-                notation: alternateVoicings,
-                title: 'Alternate Voicings for Smooth Voice Leading'
-              }]}
-            />
-            <div className="mt-4 text-sm text-yellow-700">
-              <strong>Tip:</strong> Notice how the top voices move smoothly between chords with minimal jumps.
-            </div>
-          </div>
-        </section>
-
-        {/* Different Keys */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">vi-IV-I-V in Different Keys</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-green-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-4 text-green-800">Key of G Major</h3>
-              <MusicScore 
-                staves={[{
-                  id: 'vi-iv-i-v-g-major',
-                  notation: keyOfGProgression,
-                  title: 'vi-IV-I-V in G Major'
-                }]}
-              />
-              <div className="mt-4 text-sm text-green-700">
-                Em - C - G - D
+        {/* Continue Your Progressions Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Progressions Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand the vi-IV-I-V progression, explore other essential progressions that build on these harmonic foundations.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/progressions/i-v-vi-iv" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">I-V-vi-IV Progression</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Explore the confident cousin with stronger resolution.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Learn the assertive version →
+                </span>
               </div>
-            </div>
+            </Link>
             
-            <div className="bg-blue-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-4 text-blue-800">Common Keys Table</h3>
-              <div className="overflow-x-auto">
-                <table className="min-w-full bg-white border border-gray-200 rounded text-sm">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Key</th>
-                      <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">vi</th>
-                      <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">IV</th>
-                      <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">I</th>
-                      <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">V</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-3 py-2 font-medium">C</td>
-                      <td className="px-3 py-2">Am</td>
-                      <td className="px-3 py-2">F</td>
-                      <td className="px-3 py-2">C</td>
-                      <td className="px-3 py-2">G</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-3 py-2 font-medium">G</td>
-                      <td className="px-3 py-2">Em</td>
-                      <td className="px-3 py-2">C</td>
-                      <td className="px-3 py-2">G</td>
-                      <td className="px-3 py-2">D</td>
-                    </tr>
-                    <tr>
-                      <td className="px-3 py-2 font-medium">D</td>
-                      <td className="px-3 py-2">Bm</td>
-                      <td className="px-3 py-2">G</td>
-                      <td className="px-3 py-2">D</td>
-                      <td className="px-3 py-2">A</td>
-                    </tr>
-                    <tr className="bg-gray-50">
-                      <td className="px-3 py-2 font-medium">A</td>
-                      <td className="px-3 py-2">F#m</td>
-                      <td className="px-3 py-2">D</td>
-                      <td className="px-3 py-2">A</td>
-                      <td className="px-3 py-2">E</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <Link href="/lessons/theory/progressions/ii-v-i" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🎷</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">ii-V-I Progression</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Master the cornerstone of jazz harmony with smooth voice leading.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Learn jazz harmony →
+                </span>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Musical Applications */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Musical Applications</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-indigo-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-4 text-indigo-800">Famous Songs</h3>
-              <ul className="space-y-2 text-indigo-700">
-                <li>• "Somebody That I Used to Know" - Gotye</li>
-                <li>• "Grenade" - Bruno Mars</li>
-                <li>• "Let Her Go" - Passenger</li>
-                <li>• "Torn" - Natalie Imbruglia</li>
-                <li>• "Zombie" - The Cranberries</li>
-                <li>• "What&apos;s Up?" - 4 Non Blondes</li>
-              </ul>
-            </div>
+            </Link>
             
-            <div className="bg-teal-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-4 text-teal-800">Genre Applications</h3>
-              <ul className="space-y-2 text-teal-700">
-                <li>• <strong>Pop:</strong> Emotional ballads and mid-tempo songs</li>
-                <li>• <strong>Alternative Rock:</strong> Introspective and atmospheric</li>
-                <li>• <strong>Indie Folk:</strong> Storytelling and emotional depth</li>
-                <li>• <strong>Contemporary Christian:</strong> Worship and reflection</li>
-                <li>• <strong>Singer-Songwriter:</strong> Personal and intimate</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Songwriting Tips */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Songwriting with vi-IV-I-V</h2>
-          
-          <div className="bg-orange-50 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold mb-4 text-orange-800">Creative Variations</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold mb-2 text-orange-700">Rhythm Variations</h4>
-                <ul className="space-y-1 text-orange-700 text-sm">
-                  <li>• Change chord duration (2 bars each vs 1 bar each)</li>
-                  <li>• Add syncopation and off-beat changes</li>
-                  <li>• Use different strumming patterns</li>
-                  <li>• Incorporate fingerpicking patterns</li>
-                </ul>
+            <Link href="/lessons/theory/progressions/12-bar-blues" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-amber-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-200 transition-colors">
+                  <span className="text-2xl">🎸</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">12-Bar Blues</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Learn the backbone of blues and rock music.
+                </p>
+                <span className="text-amber-600 font-medium text-sm group-hover:text-amber-700">
+                  Master the blues →
+                </span>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2 text-orange-700">Harmonic Variations</h4>
-                <ul className="space-y-1 text-orange-700 text-sm">
-                  <li>• Add passing chords between main chords</li>
-                  <li>• Use slash chords for bass movement</li>
-                  <li>• Substitute with related chords (iii for I, etc.)</li>
-                  <li>• Add 7ths, 9ths, and other extensions</li>
-                </ul>
-              </div>
-            </div>
+            </Link>
           </div>
-          
-          <div className="bg-pink-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-pink-800">Melodic Considerations</h3>
-            <p className="text-pink-700 mb-4">
-              The vi-IV-I-V progression works particularly well with melodies that:
-            </p>
-            <ul className="space-y-2 text-pink-700">
-              <li>• Start on scale degrees 6, 1, or 3 (chord tones of vi)</li>
-              <li>• Use stepwise motion to connect chord changes</li>
-              <li>• Emphasize the emotional journey from minor to major</li>
-              <li>• Leave space for the harmony to breathe</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Practice Strategies */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Practice Strategies</h2>
-          
-          <div className="bg-green-50 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold mb-3 text-green-800">🎯 Progressive Practice Plan</h3>
-            <ol className="space-y-3 text-green-700">
-              <li><strong>1. Basic Changes:</strong> Master clean transitions between open chords</li>
-              <li><strong>2. Rhythm Patterns:</strong> Start with simple down-strums, add complexity</li>
-              <li><strong>3. Different Keys:</strong> Learn in G, D, and A major</li>
-              <li><strong>4. Voice Leading:</strong> Practice alternate voicings for smoother changes</li>
-              <li><strong>5. Song Application:</strong> Play along with famous songs using this progression</li>
-              <li><strong>6. Creative Variations:</strong> Experiment with extensions and substitutions</li>
-            </ol>
-          </div>
-          
-          <div className="bg-yellow-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-3 text-yellow-800">💡 Practice Tips</h3>
-            <ul className="space-y-2 text-yellow-700">
-              <li>• Focus on the emotional character of each chord</li>
-              <li>• Practice with a metronome to develop steady timing</li>
-              <li>• Record yourself to hear the progression objectively</li>
-              <li>• Try different tempos from ballad to uptempo</li>
-              <li>• Experiment with dynamics (loud/soft) for emotional effect</li>
-              <li>• Learn to loop the progression smoothly</li>
-            </ul>
-          </div>
-        </section>
+        </div>
 
         {/* Navigation */}
-        <section className="mb-12">
-          <div className="bg-gray-100 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4">Continue Learning</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link 
-                href="/lessons/theory/progressions/12-bar-blues" 
-                className="block bg-white rounded-lg p-4 hover:shadow-md transition-shadow"
-              >
-                <h4 className="font-semibold text-blue-600 mb-2">← 12 Bar Blues</h4>
-                <p className="text-sm text-gray-600">Master the backbone of blues and rock</p>
-              </Link>
-              <Link 
-                href="/lessons/theory/progressions/circle-of-fifths" 
-                className="block bg-white rounded-lg p-4 hover:shadow-md transition-shadow"
-              >
-                <h4 className="font-semibold text-blue-600 mb-2">Circle of Fifths →</h4>
-                <p className="text-sm text-gray-600">Explore advanced harmonic movement</p>
-              </Link>
-            </div>
-            <div className="mt-4">
-              <Link 
-                href="/lessons/theory/progressions" 
-                className="text-blue-600 hover:text-blue-800 font-medium"
-              >
-                ← Back to All Progressions
-              </Link>
-            </div>
-          </div>
-        </section>
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-gray-200">
+          <Link 
+            href="/lessons/theory/progressions/i-v-vi-iv" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-4 sm:mb-0"
+          >
+            <span className="mr-2">←</span>
+            Previous: I-V-vi-IV Progression
+          </Link>
+          <Link 
+            href="/lessons/theory/progressions" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+          >
+            All Progressions
+            <span className="ml-2">→</span>
+          </Link>
+        </div>
       </main>
       
       <Footer />

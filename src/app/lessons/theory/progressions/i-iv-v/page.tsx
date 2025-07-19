@@ -405,6 +405,60 @@ export default function IIVVProgressionPage() {
           </div>
         </div>
 
+        {/* Continue Your Progressions Journey */}
+        <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Continue Your Progressions Journey</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Now that you understand the I-IV-V progression, explore more sophisticated harmonic sequences and advanced progressions.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/lessons/theory/progressions/ii-v-i" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-2xl">🎷</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">ii-V-I Progression</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Master the cornerstone of jazz harmony with smooth voice leading.
+                </p>
+                <span className="text-purple-600 font-medium text-sm group-hover:text-purple-700">
+                  Learn jazz harmony →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/progressions/i-v-vi-iv" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-pink-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-200 transition-colors">
+                  <span className="text-2xl">🎵</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">I-V-vi-IV Progression</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Discover the "axis progression" that powers countless pop hits.
+                </p>
+                <span className="text-pink-600 font-medium text-sm group-hover:text-pink-700">
+                  Explore pop harmony →
+                </span>
+              </div>
+            </Link>
+            
+            <Link href="/lessons/theory/progressions/12-bar-blues" className="group bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-2xl">🎸</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">12-Bar Blues</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Learn the foundational form that shaped modern music.
+                </p>
+                <span className="text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                  Master the blues →
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+
         {/* Navigation */}
         <section className="border-t pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
