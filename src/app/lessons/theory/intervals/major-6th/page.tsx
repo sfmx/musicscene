@@ -5,6 +5,8 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import VexTabRenderer from '@/components/VexTabRenderer';
+import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major6thPage() {
   return (
@@ -97,49 +99,214 @@ export default function Major6thPage() {
         {/* Guitar Applications */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Guitar Applications</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Fretboard Patterns</h3>
-              <div className="space-y-4">
-                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                  <h4 className="font-semibold text-emerald-800 mb-2">9-Fret Pattern</h4>
-                  <p className="text-sm text-emerald-700 mb-2">Major 6th = 9 frets apart:</p>
-                  <ul className="text-xs text-emerald-600 space-y-1">
-                    <li>• Same string: 9 frets apart</li>
-                    <li>• Cross-string: root on 6th string, 6th on 4th string (+2 frets)</li>
-                    <li>• Open string to 9th fret relationships</li>
-                    <li>• Chord inversion patterns</li>
+          
+          {/* Major 6th Interval Examples */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Major 6th Intervals - Sweet & Romantic</h3>
+            <p className="text-gray-600 mb-6">
+              The major 6th (9 semitones) creates one of music's most beautiful and emotionally resonant intervals, evoking warmth, romance, and nostalgia.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C to A Major 6th */}
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-5 border border-emerald-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-emerald-800 mb-2">C → A Major 6th</h4>
+                  <p className="text-sm text-emerald-700 mb-3">Classic major 6th relationship</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="C_to_A_M6" />
+                      <p className="text-xs text-emerald-600 mt-1">C (5th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="A_from_C_M6" />
+                      <p className="text-xs text-emerald-600 mt-1">A (5th string open)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 A/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-emerald-600">Sweet, romantic harmonic color</p>
+                </div>
+              </div>
+
+              {/* F to D Major 6th */}
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-5 border border-teal-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-teal-800 mb-2">F → D Major 6th</h4>
+                  <p className="text-sm text-teal-700 mb-3">Folk and country music staple</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="F_to_D_M6" />
+                      <p className="text-xs text-teal-600 mt-1">F (6th string 1st fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="D_from_F_M6" />
+                      <p className="text-xs text-teal-600 mt-1">D (4th string open)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 D/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-teal-600">Warm, open folk harmony</p>
+                </div>
+              </div>
+
+              {/* G to E Major 6th */}
+              <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-lg p-5 border border-cyan-200">
+                <div className="text-center mb-4">
+                  <h4 className="text-lg font-semibold text-cyan-800 mb-2">G → E Major 6th</h4>
+                  <p className="text-sm text-cyan-700 mb-3">Jazz and ballad application</p>
+                  <div className="grid grid-cols-2 gap-2 mb-3">
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="G_to_E_M6" />
+                      <p className="text-xs text-cyan-600 mt-1">G (6th string 3rd fret)</p>
+                    </div>
+                    <div className="text-center">
+                      <SimpleFretboardDiagram chord="E_from_G_M6" />
+                      <p className="text-xs text-cyan-600 mt-1">E (4th string 2nd fret)</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3 mb-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :q G/3 E/4" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                  </div>
+                  <p className="text-xs text-cyan-600">Sophisticated melodic movement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 6th Chord Applications */}
+          <div className="mb-10">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">6th Chord Applications - Adding Sweetness</h3>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* C6 Chord */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+                <h4 className="text-lg font-semibold text-blue-800 mb-4">🎸 C6 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="C6" />
+                    <p className="text-xs text-blue-600 mt-2">C6 with added major 6th (A)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 A/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-blue-600 mt-2">C-E-G-A: Major triad + major 6th</p>
+                  </div>
+                  <ul className="text-sm text-blue-700 space-y-1">
+                    <li>• <strong>Major 6th:</strong> C → A (romantic sweetness)</li>
+                    <li>• <strong>Jazz standard:</strong> Final resolution chord</li>
+                    <li>• <strong>Folk/country:</strong> Warm, open sound</li>
                   </ul>
                 </div>
-                <div className="bg-teal-50 rounded-lg p-4 border border-teal-200">
-                  <h4 className="font-semibold text-teal-800 mb-2">Major 6th Chord Voicings</h4>
-                  <p className="text-sm text-teal-700 mb-2">Adding the 6th to major chords:</p>
-                  <ul className="text-xs text-teal-600 space-y-1">
-                    <li>• C6: C-E-G-A (root, 3rd, 5th, 6th)</li>
-                    <li>• Am6: A-C-E-F# (minor with major 6th)</li>
-                    <li>• Jazz and folk chord extensions</li>
+              </div>
+
+              {/* Am6 Chord */}
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 border border-emerald-200">
+                <h4 className="text-lg font-semibold text-emerald-800 mb-4">🎸 Am6 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Am6" />
+                    <p className="text-xs text-emerald-600 mt-2">Am6 with added major 6th (F#)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 C/4 E/4 F#/4)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-emerald-600 mt-2">A-C-E-F#: Minor triad + major 6th</p>
+                  </div>
+                  <ul className="text-sm text-emerald-700 space-y-1">
+                    <li>• <strong>Major 6th:</strong> A → F# (brightens minor)</li>
+                    <li>• <strong>Bossa nova:</strong> Essential Brazilian sound</li>
+                    <li>• <strong>Jazz ballads:</strong> Sophisticated minor harmony</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Dm6 Chord */}
+              <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-lg p-6 border border-rose-200">
+                <h4 className="text-lg font-semibold text-rose-800 mb-4">🎸 Dm6 Chord</h4>
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <SimpleFretboardDiagram chord="Dm6" />
+                    <p className="text-xs text-rose-600 mt-2">Dm6 with added major 6th (B)</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/4 A/3 B/3)" 
+                      width={200} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-rose-600 mt-2">D-F-A-B: Minor triad + major 6th</p>
+                  </div>
+                  <ul className="text-sm text-rose-700 space-y-1">
+                    <li>• <strong>Major 6th:</strong> D → B (complex sweetness)</li>
+                    <li>• <strong>Classical:</strong> Romantic period harmony</li>
+                    <li>• <strong>Film music:</strong> Nostalgic, expressive quality</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Applications</h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Major 6th Chords</h4>
-                  <ul className="text-sm text-blue-700 space-y-2">
-                    <li>• <strong>Jazz standards:</strong> Sophisticated harmony</li>
-                    <li>• <strong>Folk music:</strong> Warm, open sound</li>
-                    <li>• <strong>Gospel:</strong> Soulful chord extensions</li>
-                    <li>• <strong>Pop ballads:</strong> Romantic atmosphere</li>
+          </div>
+
+          {/* Melodic Applications & Genre Contexts */}
+          <div className="mb-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-6">Melodic Applications & Genre Contexts</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg p-6 border border-amber-200">
+                <h4 className="text-lg font-semibold text-amber-800 mb-4">🎯 "My Bonnie" Reference</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-amber-700 mb-2">Classic Major 6th Leap</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 A/4" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-amber-600 mt-2">"My Bonnie lies over the ocean" - iconic major 6th</p>
+                  </div>
+                  <ul className="text-sm text-amber-700 space-y-1">
+                    <li>• <strong>Yearning quality:</strong> Expansive, reaching emotion</li>
+                    <li>• <strong>Melodic leap:</strong> Creates dramatic musical moment</li>
+                    <li>• <strong>Traditional song:</strong> Perfect ear training reference</li>
                   </ul>
                 </div>
-                <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
-                  <h4 className="font-semibold text-emerald-800 mb-2">Melodic Applications</h4>
-                  <ul className="text-sm text-emerald-700 space-y-2">
-                    <li>• <strong>Romantic melodies:</strong> Expressive leaps</li>
-                    <li>• <strong>Modal interchange:</strong> Dorian mode color</li>
-                    <li>• <strong>Country music:</strong> Pedal steel guitar sounds</li>
+              </div>
+
+              <div className="bg-gradient-to-br from-violet-50 to-violet-100 rounded-lg p-6 border border-violet-200">
+                <h4 className="text-lg font-semibold text-violet-800 mb-4">🎵 Jazz & Modern Applications</h4>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <h5 className="font-medium text-violet-700 mb-2">Sophisticated Harmony</h5>
+                    <VexTabRenderer 
+                      vextab="tabstave notation=true tablature=false\nnotes :h (C/4 E/4 G/4 A/4) (F/3 A/3 C/5 D/5)" 
+                      width={280} 
+                      scale={0.8}
+                    />
+                    <p className="text-xs text-violet-600 mt-2">C6 to F6 progression - jazz standard movement</p>
+                  </div>
+                  <ul className="text-sm text-violet-700 space-y-1">
+                    <li>• <strong>Ballad endings:</strong> Non-dominant resolution</li>
+                    <li>• <strong>Country music:</strong> Pedal steel guitar effects</li>
+                    <li>• <strong>Bossa nova:</strong> Minor 6th chord sophistication</li>
                   </ul>
                 </div>
               </div>

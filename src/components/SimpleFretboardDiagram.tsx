@@ -190,6 +190,24 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'D_3rd_7th': { frets: [-1, -1, 7, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // D (3rd string 7th fret)
   // Additional seventh chords for tritone examples
   'C7': { frets: [-1, 3, 2, 3, 1, 0], fingers: [-1, 3, 2, 4, 1, 0] },
+  // Minor 6th interval examples
+  'C_to_Ab_m6': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'Ab_from_C_m6': { frets: [-1, -1, -1, 6, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // Ab (4th string 6th fret)
+  'F_to_Db_m6': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F (6th string 1st fret)
+  'Db_from_F_m6': { frets: [-1, 4, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // Db (5th string 4th fret)
+  'A_to_F_m6': { frets: [-1, 0, -1, -1, -1, -1], fingers: [-1, 0, -1, -1, -1, -1] }, // A (5th string open)
+  'F_from_A_m6': { frets: [-1, -1, -1, 3, -1, -1], fingers: [-1, -1, -1, 1, -1, -1] }, // F (4th string 3rd fret)
+  // 6th chord applications
+  'C6': { frets: [-1, 3, 2, 2, 1, 0], fingers: [-1, 3, 2, 2, 1, 0] }, // C6 chord (C-E-G-A)
+  'Am6': { frets: [-1, 0, 2, 2, 1, 2], fingers: [-1, 0, 2, 3, 1, 4] }, // Am6 chord (A-C-E-F#)
+  'Dm6': { frets: [-1, -1, 0, 2, 0, 1], fingers: [-1, -1, 0, 2, 0, 1] }, // Dm6 chord (D-F-A-B)
+  // Major 6th interval examples
+  'C_to_A_M6': { frets: [-1, 3, -1, -1, -1, -1], fingers: [-1, 1, -1, -1, -1, -1] }, // C (5th string 3rd fret)
+  'A_from_C_M6': { frets: [-1, 0, -1, -1, -1, -1], fingers: [-1, 0, -1, -1, -1, -1] }, // A (5th string open)
+  'F_to_D_M6': { frets: [1, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // F (6th string 1st fret)
+  'D_from_F_M6': { frets: [-1, -1, 0, -1, -1, -1], fingers: [-1, -1, 0, -1, -1, -1] }, // D (4th string open)
+  'G_to_E_M6': { frets: [3, -1, -1, -1, -1, -1], fingers: [1, -1, -1, -1, -1, -1] }, // G (6th string 3rd fret)
+  'E_from_G_M6': { frets: [-1, -1, 2, -1, -1, -1], fingers: [-1, -1, 1, -1, -1, -1] }, // E (4th string 2nd fret)
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {
