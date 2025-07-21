@@ -1,8 +1,11 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { VexTab } from '@/components/VexTab';
 
 const phrasingConcepts = [
   {
@@ -118,157 +121,175 @@ export default function PhrasingPage() {
     <Layout>
       <Header
         title="Musical Phrasing"
-        subtitle="Learn to speak fluently with your guitar - the art of musical sentences and expression"
+        subtitle="Master the art of musical sentences and expression - learn to speak fluently with your guitar through natural phrasing concepts."
       />
       
-      <main className="prose mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
         {/* Navigation */}
-        <nav className="mb-8">
+        <div className="mb-8">
           <Link 
             href="/lessons/practice/improv" 
-            className="text-purple-600 hover:text-purple-800 font-medium"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
-            ← Back to Improvisation
+            <span className="mr-2">←</span>
+            Back to Improvisation
           </Link>
-        </nav>
+        </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg p-8 mb-8 not-prose">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Musical Phrasing: Your Guitar's Voice
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              Great solos aren't just collections of notes - they're musical conversations. 
-              Learn to shape your playing with the natural flow of musical speech.
-            </p>
-            <div className="bg-cyan-50 rounded-lg p-4">
-              <h3 className="font-semibold text-cyan-800 mb-2">In This Guide:</h3>
-              <ul className="text-cyan-700 space-y-1">
-                <li>• Understanding musical sentences and punctuation</li>
-                <li>• Question and answer phrasing techniques</li>
-                <li>• The power of strategic silence and space</li>
-                <li>• Dynamic expression and articulation</li>
-                <li>• Practical exercises for natural phrasing</li>
-                <li>• Learning from vocal-influenced masters</li>
+        <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Musical Phrasing</h1>
+          <p className="text-xl opacity-90 mb-4">
+            Great solos aren't just collections of notes - they're musical conversations. 
+            Learn to shape your playing with the natural flow of musical speech.
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Musical Sentences</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Question & Answer</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Strategic Silence</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Dynamic Expression</span>
+          </div>
+        </div>
+
+        {/* Theory Fundamentals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Theory Fundamentals</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Speech Parallels</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Sentences:</strong> Complete musical thoughts</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Commas:</strong> Short pauses within phrases</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Questions:</strong> Rising tension and expectation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Answers:</strong> Resolution and completion</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Breathing:</strong> Natural pause points</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Musical Elements</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Dynamics:</strong> Volume changes for emphasis</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Articulation:</strong> How notes are attacked</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Timing:</strong> Rhythmic placement and space</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Direction:</strong> Melodic rise and fall</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* What is Phrasing */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Understanding Musical Phrasing</h2>
+        {/* Musical Examples */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Musical Examples</h2>
           
-          <div className="bg-green-50 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-semibold mb-4 text-green-800">Phrasing is Musical Grammar</h3>
-            <p className="text-green-700 mb-4">
-              Just as spoken language has sentences, commas, and periods, music has phrases, 
-              pauses, and resolutions. Good phrasing makes your solos sound conversational 
-              and natural rather than like technical exercises.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-green-700 mb-2">Speech Parallels</h4>
-                <ul className="space-y-1 text-green-700 text-sm">
-                  <li>• <strong>Sentences:</strong> Complete musical thoughts</li>
-                  <li>• <strong>Commas:</strong> Short pauses within phrases</li>
-                  <li>• <strong>Periods:</strong> Phrase endings and resolutions</li>
-                  <li>• <strong>Questions:</strong> Rising tension and expectation</li>
-                  <li>• <strong>Answers:</strong> Resolution and completion</li>
-                </ul>
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-gray-800 mb-4">Question and Answer Phrasing</h3>
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200 mb-4">
+              <p className="text-blue-800 text-sm mb-3">
+                Question phrase (ascending, creates tension) followed by answer phrase (descending, resolves)
+              </p>
+              <VexTab 
+                notation={`
+                  options space=20 font-size=14
+                  tabstave notation=true time=4/4
+                  notes :q 5/6 7/5 8/6 10/6 | :w 8/6 | :q 10/6 8/6 7/5 5/6 | :w 5/6
+                `}
+                width={600}
+                scale={0.8}
+              />
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Sentence Structure</h3>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200 mb-4">
+              <p className="text-purple-800 text-sm mb-3">
+                4-bar phrase: Statement - Development - Climax - Resolution
+              </p>
+              <VexTab 
+                notation={`
+                  options space=20 font-size=14
+                  tabstave notation=true time=4/4
+                  notes :q 5/6 7/5 8/6 5/6 | :q 7/5 :8 8/6 7/5 :q 8/6 10/6 | :q 10/6 :8 8/6 10/6 :q 12/6 10/6 | :h 8/6 5/6
+                `}
+                width={600}
+                scale={0.8}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Practice Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Applications</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Essential Exercises</h3>
+              <div className="space-y-4">
+                {phrasingExercises.map((exercise, index) => (
+                  <div key={index} className="bg-green-50 rounded-lg p-4 border border-green-200">
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="font-semibold text-green-800">{exercise.title}</h4>
+                      <span className={`px-2 py-1 rounded text-xs font-medium ${
+                        exercise.level === 'Beginner' ? 'bg-green-100 text-green-800' :
+                        exercise.level === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
+                        'bg-red-100 text-red-800'
+                      }`}>
+                        {exercise.level}
+                      </span>
+                    </div>
+                    <p className="text-sm text-green-700 mb-2">{exercise.description}</p>
+                    <p className="text-xs text-green-600 bg-green-100 p-2 rounded italic">{exercise.tips}</p>
+                  </div>
+                ))}
               </div>
-              
-              <div>
-                <h4 className="font-semibold text-green-700 mb-2">Musical Elements</h4>
-                <ul className="space-y-1 text-green-700 text-sm">
-                  <li>• <strong>Breathing:</strong> Natural pause points</li>
-                  <li>• <strong>Dynamics:</strong> Volume changes for emphasis</li>
-                  <li>• <strong>Articulation:</strong> How notes are attacked</li>
-                  <li>• <strong>Timing:</strong> Rhythmic placement and space</li>
-                  <li>• <strong>Direction:</strong> Melodic rise and fall</li>
-                </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Core Concepts</h3>
+              <div className="space-y-4">
+                {phrasingConcepts.map((concept, index) => (
+                  <div key={index} className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                    <h4 className="font-semibold text-blue-800 mb-2">{concept.concept}</h4>
+                    <p className="text-sm text-blue-700 mb-2">{concept.description}</p>
+                    <p className="text-xs text-blue-600 italic">{concept.examples}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Core Concepts */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Phrasing Concepts</h2>
-          
-          <div className="space-y-6">
-            {phrasingConcepts.map((concept, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{concept.concept}</h3>
-                <p className="text-gray-600 mb-4">{concept.description}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Techniques</h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {concept.techniques.map((technique, i) => (
-                        <li key={i}>• {technique}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Musical Examples</h4>
-                    <p className="text-sm text-gray-600">{concept.examples}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Practice Exercises */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Phrasing Development Exercises</h2>
-          
-          <div className="space-y-6">
-            {phrasingExercises.map((exercise, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-semibold text-gray-800">{exercise.title}</h3>
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    exercise.level === 'Beginner' ? 'bg-green-100 text-green-800' :
-                    exercise.level === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
-                    'bg-red-100 text-red-800'
-                  }`}>
-                    {exercise.level}
-                  </span>
-                </div>
-                
-                <p className="text-gray-600 mb-4">{exercise.description}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Steps</h4>
-                    <ol className="text-sm text-gray-600 space-y-1">
-                      {exercise.steps.map((step, i) => (
-                        <li key={i}>{i + 1}. {step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Pro Tip</h4>
-                    <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">{exercise.tips}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        </div>
 
         {/* Common Mistakes */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Common Phrasing Mistakes</h2>
-          
-          <div className="bg-red-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-red-800">Avoid These Pitfalls</h3>
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Phrasing Mistakes</h2>
+          <div className="bg-red-50 rounded-lg p-6 border border-red-200">
+            <h3 className="text-lg font-semibold text-red-800 mb-4">Avoid These Pitfalls</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-red-700 mb-2">Technical Traps</h4>
@@ -279,7 +300,6 @@ export default function PhrasingPage() {
                   <li>• <strong>One Dynamic:</strong> Playing everything at same volume</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-red-700 mb-2">Musical Problems</h4>
                 <ul className="space-y-2 text-red-700 text-sm">
@@ -291,32 +311,39 @@ export default function PhrasingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Famous Phrasers */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Masters of Musical Phrasing</h2>
-          
+        {/* Masters of Phrasing */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Masters of Musical Phrasing</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {famousPhrasing.map((artist, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">{artist.artist}</h3>
+              <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{artist.artist}</h3>
                 <div className="space-y-2">
-                  <p className="text-sm text-gray-600"><strong>Style:</strong> {artist.style}</p>
-                  <p className="text-sm text-gray-600"><strong>Signature:</strong> {artist.signature}</p>
-                  <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded"><strong>Lesson:</strong> {artist.lesson}</p>
+                  <div className="flex justify-between">
+                    <span className="text-sm font-medium text-gray-700">Style:</span>
+                    <span className="text-sm text-gray-600">{artist.style}</span>
+                  </div>
+                  <div className="mt-3">
+                    <span className="text-sm font-medium text-gray-700">Signature:</span>
+                    <p className="text-sm text-gray-600 mt-1">{artist.signature}</p>
+                  </div>
+                  <div className="mt-3">
+                    <span className="text-sm font-medium text-gray-700">Lesson:</span>
+                    <p className="text-sm text-gray-600 mt-1 bg-blue-50 p-2 rounded italic">{artist.lesson}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
 
-        {/* Practice Routine */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Daily Phrasing Practice Routine</h2>
-          
-          <div className="bg-purple-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-purple-800">15-Minute Phrasing Workout</h3>
+        {/* Daily Practice Routine */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Daily Phrasing Practice Routine</h2>
+          <div className="bg-purple-50 rounded-lg p-6 border border-purple-200">
+            <h3 className="text-lg font-semibold text-purple-800 mb-4">15-Minute Phrasing Workout</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <h4 className="font-semibold text-purple-700 mb-2">Warm-up (5 min)</h4>
@@ -327,7 +354,6 @@ export default function PhrasingPage() {
                   <li>• Match vocal phrasing</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-purple-700 mb-2">Development (7 min)</h4>
                 <ul className="space-y-1 text-purple-700 text-sm">
@@ -337,7 +363,6 @@ export default function PhrasingPage() {
                   <li>• Use strategic silence</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-purple-700 mb-2">Application (3 min)</h4>
                 <ul className="space-y-1 text-purple-700 text-sm">
@@ -349,38 +374,38 @@ export default function PhrasingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Related Topics */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Related Improvisation Topics</h2>
-          
-          <div className="grid md:grid-cols-3 gap-4">
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200 p-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Continue Your Improvisation Journey</h2>
+          <div className="grid md:grid-cols-3 gap-6">
             <Link 
               href="/lessons/practice/improv/call-response"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Call & Response</h3>
+              <div className="text-3xl mb-3">🔁</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Call & Response</h3>
               <p className="text-sm text-gray-600">Musical conversations and dialogue</p>
             </Link>
-            
             <Link 
               href="/lessons/practice/improv/motif-development"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Motif Development</h3>
+              <div className="text-3xl mb-3">🎼</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Motif Development</h3>
               <p className="text-sm text-gray-600">Build solos from small ideas</p>
             </Link>
-            
             <Link 
               href="/lessons/practice/improv/rhythm"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Rhythmic Variation</h3>
+              <div className="text-3xl mb-3">🥁</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">Rhythmic Variation</h3>
               <p className="text-sm text-gray-600">Add groove to your phrases</p>
             </Link>
           </div>
-        </section>
+        </div>
       </main>
       
       <Footer />
