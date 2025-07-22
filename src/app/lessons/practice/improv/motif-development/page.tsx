@@ -1,35 +1,8 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import VexTabRenderer from '@/components/VexTabRenderer';
-
-const motifExamples = [
-  {
-    title: 'Simple Melodic Motif',
-    description: 'A basic 3-note motif and its development through sequence',
-    originalMotif: 'tabstave notation=true\nnotes 5-3/4 5-5/4 5-3/4 | :w',
-    development: 'tabstave notation=true\nnotes 5-5/4 5-7/4 5-5/4 | 5-7/4 5-9/4 5-7/4',
-    technique: 'Sequence (moving up by whole steps)',
-  },
-  {
-    title: 'Rhythmic Motif Development',
-    description: 'Developing a syncopated rhythm with different pitches',
-    originalMotif: 'tabstave notation=true\nnotes :8 5-3/4 :8r 5-3/4 :q 5-5/4 | :w',
-    development: 'tabstave notation=true\nnotes :8 5-7/4 :8r 5-7/4 :q 5-9/4 | :8 5-5/4 :8r 5-5/4 :q 5-7/4',
-    technique: 'Rhythmic repetition with pitch variation',
-  },
-  {
-    title: 'Intervallic Development',
-    description: 'Perfect 4th interval motif developed through different positions',
-    originalMotif: 'tabstave notation=true\nnotes 5-3/4 5-8/4 | :w',
-    development: 'tabstave notation=true\nnotes 5-5/4 5-10/4 | 5-7/4 5-12/4 | 5-2/4 5-7/4',
-    technique: 'Interval preservation with position changes',
-  },
-];
 
 const motifTypes = [
   {
@@ -268,46 +241,6 @@ export default function MotifDevelopmentPage() {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Musical Examples */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Motif Development in Action</h2>
-          
-          <div className="space-y-8">
-            {motifExamples.map((example, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{example.title}</h3>
-                <p className="text-gray-600 mb-6">{example.description}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-orange-700 mb-3">Original Motif</h4>
-                    <div className="bg-orange-50 p-4 rounded-lg">
-                      <VexTabRenderer 
-                        vextab={example.originalMotif}
-                        scale={0.8}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-red-700 mb-3">Development</h4>
-                    <div className="bg-red-50 p-4 rounded-lg">
-                      <VexTabRenderer 
-                        vextab={example.development}
-                        scale={0.8}
-                      />
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="mt-4 bg-gray-50 p-3 rounded">
-                  <p className="text-sm text-gray-700"><strong>Technique Used:</strong> {example.technique}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 
@@ -645,61 +578,6 @@ export default function MotifDevelopmentPage() {
             >
               <h3 className="font-semibold text-gray-800 mb-2">Scales in Improvisation</h3>
               <p className="text-sm text-gray-600">Source material for motifs</p>
-            </Link>
-          </div>
-        </section>
-
-        {/* Continue Your Improvisation Journey */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Continue Your Improvisation Journey</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link 
-              href="/lessons/practice/improv"
-              className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-blue-800 mb-2">Improvisation Overview</h3>
-              <p className="text-blue-700 text-sm">Master the fundamentals of creative guitar improvisation</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/call-response"
-              className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-green-800 mb-2">Call & Response</h3>
-              <p className="text-green-700 text-sm">Master musical conversation and interactive improvisation</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/phrasing"
-              className="bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-purple-800 mb-2">Musical Phrasing</h3>
-              <p className="text-purple-700 text-sm">Shape your musical sentences with natural flow and expression</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/target-notes"
-              className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-orange-800 mb-2">Target Notes</h3>
-              <p className="text-orange-700 text-sm">Use harmonic anchor points to guide your improvisation</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/rhythm"
-              className="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-red-800 mb-2">Rhythmic Variation</h3>
-              <p className="text-red-700 text-sm">Add groove and timing sophistication to your solos</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/arpeggios"
-              className="bg-gradient-to-r from-teal-50 to-teal-100 border border-teal-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-teal-800 mb-2">Arpeggio Application</h3>
-              <p className="text-teal-700 text-sm">Use chord tones effectively in your solos</p>
             </Link>
           </div>
         </section>

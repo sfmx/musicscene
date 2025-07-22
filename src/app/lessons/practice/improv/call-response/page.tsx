@@ -1,32 +1,8 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import VexTabRenderer from '@/components/VexTabRenderer';
-
-const callResponseExamples = [
-  {
-    title: 'Basic Call and Response',
-    description: 'Simple question and answer phrase in G major',
-    callNotation: 'tabstave notation=true\nnotes 3-0/5 3-2/5 3-3/5 3-2/5 | 3-0/5 :w',
-    responseNotation: 'tabstave notation=true\nnotes 3-0/4 3-2/4 3-0/4 3-2/4 | 3-3/4 :w',
-  },
-  {
-    title: 'Contrasting Response',
-    description: 'High call gets a low response - register contrast',
-    callNotation: 'tabstave notation=true\nnotes 12-10/2 12-12/2 12-14/2 12-12/2 | 12-10/2 :w',
-    responseNotation: 'tabstave notation=true\nnotes 3-3/6 3-0/6 3-3/6 3-1/6 | 3-3/6 :w',
-  },
-  {
-    title: 'Echo Response',
-    description: 'Response echoes the call with slight variation',
-    callNotation: 'tabstave notation=true\nnotes 5-3/4 5-5/4 5-3/4 5-0/4 | 5-2/4 :w',
-    responseNotation: 'tabstave notation=true\nnotes 5-3/4 5-5/4 5-7/4 5-5/4 | 5-3/4 :w',
-  },
-];
 
 const callResponseTypes = [
   {
@@ -248,42 +224,6 @@ export default function CallResponsePage() {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Musical Examples */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Call & Response in Action</h2>
-          
-          <div className="space-y-8">
-            {callResponseExamples.map((example, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{example.title}</h3>
-                <p className="text-gray-600 mb-6">{example.description}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-green-700 mb-3">Call (Question)</h4>
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <VexTabRenderer 
-                        vextab={example.callNotation}
-                        scale={0.8}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-blue-700 mb-3">Response (Answer)</h4>
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <VexTabRenderer 
-                        vextab={example.responseNotation}
-                        scale={0.8}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 
@@ -532,6 +472,46 @@ export default function CallResponsePage() {
           </div>
         </section>
 
+        {/* Practice Routine */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Daily Call & Response Practice Routine</h2>
+          
+          <div className="bg-green-50 rounded-lg p-6">
+            <h3 className="text-lg font-semibold mb-4 text-green-800">15-Minute Call & Response Workout</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-semibold text-green-700 mb-2">Warm-up (5 min)</h4>
+                <ul className="space-y-1 text-green-700 text-sm">
+                  <li>• Practice active listening</li>
+                  <li>• Echo simple phrases</li>
+                  <li>• Focus on timing</li>
+                  <li>• Match the style</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold text-green-700 mb-2">Development (7 min)</h4>
+                <ul className="space-y-1 text-green-700 text-sm">
+                  <li>• Practice trading fours</li>
+                  <li>• Respond with variations</li>
+                  <li>• Build conversations</li>
+                  <li>• Use different textures</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="font-semibold text-green-700 mb-2">Application (3 min)</h4>
+                <ul className="space-y-1 text-green-700 text-sm">
+                  <li>• Jam with backing tracks</li>
+                  <li>• Record call-response solos</li>
+                  <li>• Focus on musical dialogue</li>
+                  <li>• Evaluate responses</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Topics */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Related Improvisation Topics</h2>
@@ -559,61 +539,6 @@ export default function CallResponsePage() {
             >
               <h3 className="font-semibold text-gray-800 mb-2">Rhythmic Variation</h3>
               <p className="text-sm text-gray-600">Add groove to your responses</p>
-            </Link>
-          </div>
-        </section>
-
-        {/* Continue Your Improvisation Journey */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Continue Your Improvisation Journey</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link 
-              href="/lessons/practice/improv"
-              className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-blue-800 mb-2">Improvisation Overview</h3>
-              <p className="text-blue-700 text-sm">Master the fundamentals of creative guitar improvisation</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/phrasing"
-              className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-green-800 mb-2">Musical Phrasing</h3>
-              <p className="text-green-700 text-sm">Shape your musical sentences with natural flow and expression</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/motif-development"
-              className="bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-purple-800 mb-2">Motif Development</h3>
-              <p className="text-purple-700 text-sm">Build compelling solos from small musical ideas</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/target-notes"
-              className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-orange-800 mb-2">Target Notes</h3>
-              <p className="text-orange-700 text-sm">Use harmonic anchor points to guide your improvisation</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/rhythm"
-              className="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-red-800 mb-2">Rhythmic Variation</h3>
-              <p className="text-red-700 text-sm">Add groove and timing sophistication to your solos</p>
-            </Link>
-            
-            <Link 
-              href="/lessons/practice/improv/scales"
-              className="bg-gradient-to-r from-teal-50 to-teal-100 border border-teal-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-teal-800 mb-2">Scale Application</h3>
-              <p className="text-teal-700 text-sm">Apply scales musically in your improvisation</p>
             </Link>
           </div>
         </section>
