@@ -6,58 +6,172 @@ import Footer from '@/components/Footer'
 
 const topics = [
   {
+    title: 'Song Analysis Method',
+    href: '/lessons/songs/analysis-method',
+    icon: '🔬',
+    description: 'Learn our systematic approach to breaking down songs with music theory'
+  },
+  {
     title: 'Song Breakdowns',
     href: '/lessons/songs/breakdowns',
     icon: '🔍',
+    description: 'Complete song analysis with theory, techniques, and practice tips'
   },
   {
-    title: 'Riffs & Licks',
-    href: '/lessons/songs/riffs',
-    icon: '🎸',
-  },
-  {
-    title: 'Chords in Songs',
-    href: '/lessons/songs/chords',
-    icon: '🎼',
-  },
-  {
-    title: 'Song Structures',
+    title: 'Song Structure Analysis',
     href: '/lessons/songs/structure',
     icon: '🧩',
+    description: 'Understanding how verses, choruses, and bridges work together'
   },
   {
-    title: 'Techniques',
-    href: '/lessons/songs/techniques',
-    icon: '🤘',
+    title: 'Chord Progressions in Songs',
+    href: '/lessons/songs/chords',
+    icon: '🎼',
+    description: 'Identify and understand chord progressions in real songs'
   },
+  {
+    title: 'Riffs & Melodic Analysis',
+    href: '/lessons/songs/riffs',
+    icon: '🎸',
+    description: 'Break down riffs, licks, and melodies with scale and mode theory'
+  },
+  {
+    title: 'Guitar Techniques in Context',
+    href: '/lessons/songs/techniques',
+    icon: '�',
+    description: 'Learn techniques through real song applications'
+  },
+  {
+    title: 'Rhythm & Strumming Patterns',
+    href: '/lessons/songs/rhythm',
+    icon: '🥁',
+    description: 'Master rhythm patterns and strumming techniques from songs'
+  },
+  {
+    title: 'Lead Guitar & Solos',
+    href: '/lessons/songs/lead',
+    icon: '🎤',
+    description: 'Analyze lead guitar parts and solo construction'
+  },
+  {
+    title: 'Effects & Tone Analysis',
+    href: '/lessons/songs/effects',
+    icon: '🎛️',
+    description: 'Understand how effects shape the sound of famous songs'
+  }
 ]
 
 export default function SongLessonsPage() {
   return (
     <Layout>
       <Header
-        title="Song Analysis Lessons"
-        subtitle="Learn how to break down, play, and understand your favorite songs—beyond just tabs!"
+        title="Song Learning with Music Theory"
+        subtitle="Master your favorite songs while understanding the theory behind them"
       />
-      <main className="max-w-5xl mx-auto px-4 py-12">
-        <section className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {topics.map((t) => (
+      
+      <main className="max-w-6xl mx-auto px-4 py-8">
+        {/* Introduction Section */}
+        <section className="mb-12">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Beyond Just Tablature: Theory-Based Song Learning
+            </h2>
+            <div className="prose prose-lg text-gray-700 max-w-none">
+              <p>
+                Learning songs is one of the most enjoyable aspects of playing guitar, but simply reading 
+                tablature only scratches the surface. Our approach teaches you to understand <em>why</em> 
+                songs work the way they do, connecting every riff, chord, and technique to fundamental 
+                music theory concepts.
+              </p>
+              <p>
+                By analyzing songs through the lens of theory, you'll develop the skills to:
+              </p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                <li>• Identify chord progressions by ear</li>
+                <li>• Understand why certain scales work over progressions</li>
+                <li>• Learn songs faster by recognizing patterns</li>
+                <li>• Improvise confidently over song structures</li>
+                <li>• Transpose songs to different keys</li>
+                <li>• Write your own songs using proven formulas</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Learning Path */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Recommended Learning Path</h2>
+          <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+            <div className="flex flex-wrap gap-3">
+              <div className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                1. Analysis Method
+              </div>
+              <div className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                2. Song Structure
+              </div>
+              <div className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
+                3. Chord Progressions
+              </div>
+              <div className="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+                4. Song Breakdowns
+              </div>
+              <div className="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">
+                5. Advanced Techniques
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Topic Cards */}
+        <section className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {topics.map((topic) => (
             <Link
-              key={t.href}
-              href={t.href}
-              className="flex flex-col items-center justify-center space-y-2 p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+              key={topic.href}
+              href={topic.href}
+              className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-blue-300 hover:shadow-lg transition-all duration-200"
             >
-              <div className="text-5xl">{t.icon}</div>
-              <div className="text-lg font-medium">{t.title}</div>
+              <div className="flex items-start space-x-4">
+                <div className="text-4xl group-hover:scale-110 transition-transform">
+                  {topic.icon}
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    {topic.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                    {topic.description}
+                  </p>
+                </div>
+              </div>
             </Link>
           ))}
         </section>
-        <section className="mt-16 text-center">
-          <p className="text-gray-700">
-            Click a card above to explore song-based lessons!
-          </p>
+
+        {/* Featured Songs */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Song Analyses</h2>
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <Link 
+              href="/lessons/songs/breakdowns/were-not-gonna-take-it"
+              className="bg-white rounded-lg border border-gray-200 p-4 hover:border-blue-300 hover:shadow-md transition-all"
+            >
+              <div className="flex items-center space-x-3">
+                <div className="text-2xl">🤘</div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">We're Not Gonna Take It</h3>
+                  <p className="text-sm text-gray-600">Twisted Sister • I-IV-V Progression • Power Chords</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="mt-4 text-center">
+            <p className="text-gray-600 text-sm">
+              More song analyses coming soon! Each breakdown includes theory, techniques, and practice tips.
+            </p>
+          </div>
         </section>
       </main>
+      
       <Footer />
     </Layout>
   )
