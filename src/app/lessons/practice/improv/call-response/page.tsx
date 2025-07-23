@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
@@ -159,84 +161,101 @@ export default function CallResponsePage() {
     <Layout>
       <Header
         title="Call & Response"
-        subtitle="Master musical conversation - the foundation of interactive improvisation"
+        subtitle="Master musical conversation and interactive improvisation - learn to listen, react, and create meaningful musical dialogues with natural phrasing."
       />
       
-      <main className="prose mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8">
         {/* Navigation */}
-        <nav className="mb-8">
+        <div className="mb-8">
           <Link 
             href="/lessons/practice/improv" 
-            className="text-purple-600 hover:text-purple-800 font-medium"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
-            ← Back to Improvisation
+            <span className="mr-2">←</span>
+            Back to Improvisation
           </Link>
-        </nav>
+        </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-8 mb-8 not-prose">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Call & Response: Musical Conversation
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              The foundation of musical interaction, call and response teaches you to listen, 
-              react, and create meaningful musical dialogues. Essential for jamming, soloing, and composition.
-            </p>
-            <div className="bg-emerald-50 rounded-lg p-4">
-              <h3 className="font-semibold text-emerald-800 mb-2">Master These Skills:</h3>
-              <ul className="text-emerald-700 space-y-1">
-                <li>• Musical listening and response techniques</li>
-                <li>• Creating meaningful phrase relationships</li>
-                <li>• Solo and ensemble call & response</li>
-                <li>• Rhythmic, melodic, and harmonic dialogue</li>
-                <li>• Professional jamming and improvisation</li>
-                <li>• Building musical tension and release</li>
+        <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-8 mb-12">
+          <h1 className="text-3xl font-bold mb-4">Call & Response</h1>
+          <p className="text-xl opacity-90 mb-4">
+            Master the art of musical conversation - the foundation of interactive improvisation, 
+            jam sessions, and ensemble playing. Learn to listen, react, and create meaningful dialogue.
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-white/20 px-3 py-1 rounded">Musical Dialogue</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Interactive Playing</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Ensemble Skills</span>
+            <span className="bg-white/20 px-3 py-1 rounded">Jamming Techniques</span>
+          </div>
+        </div>
+        {/* Theory Fundamentals */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Call & Response Fundamentals</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Essential Elements</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Listening:</strong> Really hear what comes before</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Space:</strong> Allow silence between call and response</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Relationship:</strong> Response should relate to call</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Variety:</strong> Mix echoing and contrasting responses</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Development:</strong> Build and evolve musical ideas</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-3">Musical Benefits</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Develops ears:</strong> Improves listening skills</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Creates structure:</strong> Organizes improvisation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Builds interaction:</strong> Essential for ensemble playing</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Teaches restraint:</strong> Not everything needs filling</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">•</span>
+                  <span><strong>Professional skills:</strong> Essential for jamming</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Fundamentals */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Call & Response Fundamentals</h2>
-          
-          <div className="bg-blue-50 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-semibold mb-4 text-blue-800">What Makes Great Musical Conversation?</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-blue-700 mb-2">Essential Elements</h4>
-                <ul className="space-y-2 text-blue-700">
-                  <li>• <strong>Listening:</strong> Really hear what comes before</li>
-                  <li>• <strong>Space:</strong> Allow silence between call and response</li>
-                  <li>• <strong>Relationship:</strong> Response should relate to call</li>
-                  <li>• <strong>Variety:</strong> Mix echoing and contrasting responses</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-blue-700 mb-2">Musical Benefits</h4>
-                <ul className="space-y-2 text-blue-700">
-                  <li>• <strong>Develops ears:</strong> Improves listening skills</li>
-                  <li>• <strong>Creates structure:</strong> Organizes improvisation</li>
-                  <li>• <strong>Builds interaction:</strong> Essential for ensemble playing</li>
-                  <li>• <strong>Teaches restraint:</strong> Not everything needs filling</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Types of Call & Response */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Types of Call & Response</h2>
-          
-          <div className="space-y-6">
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Types of Call & Response</h2>
+          <div className="grid md:grid-cols-2 gap-6">
             {callResponseTypes.map((type, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800">{type.type}</h3>
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+              <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-lg font-semibold text-gray-800">{type.type}</h3>
+                  <span className={`px-2 py-1 rounded text-xs font-medium ${
                     type.difficulty === 'Beginner' ? 'bg-green-100 text-green-800' :
                     type.difficulty === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
                     'bg-red-100 text-red-800'
@@ -244,124 +263,104 @@ export default function CallResponsePage() {
                     {type.difficulty}
                   </span>
                 </div>
-                
-                <p className="text-gray-600 mb-4">{type.description}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Structure</h4>
-                    <p className="text-sm text-gray-600 bg-gray-50 p-3 rounded">{type.structure}</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Musical Examples</h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {type.examples.map((example, i) => (
-                        <li key={i}>• {example}</li>
-                      ))}
-                    </ul>
-                  </div>
+                <p className="text-sm text-gray-600 mb-3">{type.description}</p>
+                <div className="mb-3">
+                  <h4 className="font-semibold text-gray-700 text-sm mb-1">Structure</h4>
+                  <p className="text-xs text-gray-600 bg-white p-2 rounded">{type.structure}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-700 text-sm mb-1">Examples</h4>
+                  <ul className="text-xs text-gray-600 space-y-1">
+                    {type.examples.map((example, i) => (
+                      <li key={i}>• {example}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
 
-        {/* Musical Elements */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Elements of Musical Dialogue</h2>
-          
-          <div className="bg-purple-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-purple-800">Creating Contrast and Connection</h3>
-            <div className="space-y-4">
-              {musicalElements.map((element, index) => (
-                <div key={index} className="bg-white rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-semibold text-purple-800 mb-2">{element.element}</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div>
-                      <p className="text-sm text-purple-700"><strong>Call Example:</strong></p>
-                      <p className="text-sm text-purple-600">{element.callExample}</p>
+        {/* Practice Applications */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Applications</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Essential Exercises</h3>
+              <div className="space-y-4">
+                {practiceExercises.map((exercise, index) => (
+                  <div key={index} className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="font-semibold text-blue-800">{exercise.title}</h4>
+                      <span className={`px-2 py-1 rounded text-xs font-medium ${
+                        exercise.level === 'Beginner' ? 'bg-green-100 text-green-800' :
+                        exercise.level === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
+                        'bg-red-100 text-red-800'
+                      }`}>
+                        {exercise.level}
+                      </span>
                     </div>
-                    <div>
-                      <p className="text-sm text-purple-700"><strong>Response Example:</strong></p>
-                      <p className="text-sm text-purple-600">{element.responseExample}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-purple-700"><strong>Technique:</strong></p>
-                      <p className="text-sm text-purple-600">{element.technique}</p>
-                    </div>
+                    <p className="text-sm text-blue-700 mb-2">{exercise.description}</p>
+                    <p className="text-xs text-blue-600 bg-blue-100 p-2 rounded italic">{exercise.tips}</p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-gray-800 mb-4">Musical Elements</h3>
+              <div className="space-y-4">
+                {musicalElements.map((element, index) => (
+                  <div key={index} className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                    <h4 className="font-semibold text-purple-800 mb-2">{element.element}</h4>
+                    <div className="grid grid-cols-2 gap-2 text-xs">
+                      <div>
+                        <p className="text-purple-700 font-medium">Call:</p>
+                        <p className="text-purple-600">{element.callExample}</p>
+                      </div>
+                      <div>
+                        <p className="text-purple-700 font-medium">Response:</p>
+                        <p className="text-purple-600">{element.responseExample}</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-purple-600 mt-2 italic">{element.technique}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Practice Exercises */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Call & Response Exercises</h2>
-          
-          <div className="space-y-6">
-            {practiceExercises.map((exercise, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-semibold text-gray-800">{exercise.title}</h3>
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    exercise.level === 'Beginner' ? 'bg-green-100 text-green-800' :
-                    exercise.level === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
-                    'bg-red-100 text-red-800'
-                  }`}>
-                    {exercise.level}
-                  </span>
-                </div>
-                
-                <p className="text-gray-600 mb-3">{exercise.description}</p>
-                <p className="text-sm text-gray-500 mb-4"><strong>Setup:</strong> {exercise.setup}</p>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Practice Steps</h4>
-                    <ol className="text-sm text-gray-600 space-y-1">
-                      {exercise.steps.map((step, i) => (
-                        <li key={i}>{i + 1}. {step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-2">Pro Tip</h4>
-                    <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">{exercise.tips}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Famous Examples */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Masters of Call & Response</h2>
-          
+        {/* Masters of Call & Response */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Masters of Call & Response</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {famousExamples.map((example, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold mb-2 text-gray-800">{example.artist}</h3>
+              <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{example.artist}</h3>
                 <div className="space-y-2">
-                  <p className="text-sm text-gray-600"><strong>Context:</strong> {example.context}</p>
-                  <p className="text-sm text-gray-600">{example.description}</p>
-                  <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded"><strong>Technique:</strong> {example.technique}</p>
+                  <div className="flex justify-between">
+                    <span className="text-sm font-medium text-gray-700">Context:</span>
+                    <span className="text-sm text-gray-600">{example.context}</span>
+                  </div>
+                  <div className="mt-3">
+                    <span className="text-sm font-medium text-gray-700">Description:</span>
+                    <p className="text-sm text-gray-600 mt-1">{example.description}</p>
+                  </div>
+                  <div className="mt-3">
+                    <span className="text-sm font-medium text-gray-700">Technique:</span>
+                    <p className="text-sm text-gray-600 mt-1 bg-blue-50 p-2 rounded italic">{example.technique}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
 
         {/* Common Mistakes */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Common Call & Response Mistakes</h2>
-          
-          <div className="bg-red-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-red-800">Avoid These Pitfalls</h3>
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Call & Response Mistakes</h2>
+          <div className="bg-red-50 rounded-lg p-6 border border-red-200">
+            <h3 className="text-lg font-semibold text-red-800 mb-4">Avoid These Pitfalls</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-red-700 mb-2">Listening Problems</h4>
@@ -372,7 +371,6 @@ export default function CallResponsePage() {
                   <li>• <strong>No space:</strong> Filling every moment with sound</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-red-700 mb-2">Musical Issues</h4>
                 <ul className="space-y-2 text-red-700 text-sm">
@@ -384,100 +382,13 @@ export default function CallResponsePage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Ensemble Applications */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Call & Response in Ensembles</h2>
-          
-          <div className="bg-orange-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-orange-800">Playing with Others</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div>
-                <h4 className="font-semibold text-orange-700 mb-2">Jam Sessions</h4>
-                <ul className="space-y-1 text-orange-700 text-sm">
-                  <li>• Listen before you play</li>
-                  <li>• Leave space for others</li>
-                  <li>• Support the current soloist</li>
-                  <li>• Take turns in the spotlight</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-orange-700 mb-2">Jazz Contexts</h4>
-                <ul className="space-y-1 text-orange-700 text-sm">
-                  <li>• Trading fours and eights</li>
-                  <li>• Comping behind soloists</li>
-                  <li>• Ensemble hits and stops</li>
-                  <li>• Building group dynamics</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-orange-700 mb-2">Rock & Blues</h4>
-                <ul className="space-y-1 text-orange-700 text-sm">
-                  <li>• Guitar-vocal interplay</li>
-                  <li>• Lead guitar fills</li>
-                  <li>• Call-response riffs</li>
-                  <li>• Building solo sections</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Practice Routine */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Daily Call & Response Practice</h2>
-          
-          <div className="bg-teal-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-teal-800">10-Minute Conversation Practice</h3>
-            <div className="grid md:grid-cols-4 gap-4">
-              <div>
-                <h4 className="font-semibold text-teal-700 mb-2">Warm-up (2 min)</h4>
-                <ul className="space-y-1 text-teal-700 text-sm">
-                  <li>• Simple call phrases</li>
-                  <li>• Echo responses</li>
-                  <li>• Focus on timing</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-teal-700 mb-2">Contrast (3 min)</h4>
-                <ul className="space-y-1 text-teal-700 text-sm">
-                  <li>• High/low responses</li>
-                  <li>• Fast/slow contrasts</li>
-                  <li>• Loud/soft dynamics</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-teal-700 mb-2">Development (3 min)</h4>
-                <ul className="space-y-1 text-teal-700 text-sm">
-                  <li>• Build on previous ideas</li>
-                  <li>• Extend phrases</li>
-                  <li>• Create variations</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold text-teal-700 mb-2">Application (2 min)</h4>
-                <ul className="space-y-1 text-teal-700 text-sm">
-                  <li>• Use backing track</li>
-                  <li>• Apply all techniques</li>
-                  <li>• Record and review</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Practice Routine */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Daily Call & Response Practice Routine</h2>
-          
-          <div className="bg-green-50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4 text-green-800">15-Minute Call & Response Workout</h3>
+        {/* Daily Practice Routine */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Daily Call & Response Practice Routine</h2>
+          <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+            <h3 className="text-lg font-semibold text-green-800 mb-4">15-Minute Call & Response Workout</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <h4 className="font-semibold text-green-700 mb-2">Warm-up (5 min)</h4>
@@ -488,7 +399,6 @@ export default function CallResponsePage() {
                   <li>• Match the style</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-green-700 mb-2">Development (7 min)</h4>
                 <ul className="space-y-1 text-green-700 text-sm">
@@ -498,7 +408,6 @@ export default function CallResponsePage() {
                   <li>• Use different textures</li>
                 </ul>
               </div>
-              
               <div>
                 <h4 className="font-semibold text-green-700 mb-2">Application (3 min)</h4>
                 <ul className="space-y-1 text-green-700 text-sm">
@@ -510,38 +419,38 @@ export default function CallResponsePage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Related Topics */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Related Improvisation Topics</h2>
-          
-          <div className="grid md:grid-cols-3 gap-4">
+        {/* Continue Your Journey */}
+        <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200 p-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Continue Your Improvisation Journey</h2>
+          <div className="grid md:grid-cols-3 gap-6">
             <Link 
               href="/lessons/practice/improv/phrasing"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Musical Phrasing</h3>
+              <div className="text-3xl mb-3">🎵</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600">Musical Phrasing</h3>
               <p className="text-sm text-gray-600">Shape your musical sentences</p>
             </Link>
-            
             <Link 
               href="/lessons/practice/improv/motif-development"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Motif Development</h3>
-              <p className="text-sm text-gray-600">Build from small musical ideas</p>
+              <div className="text-3xl mb-3">🎼</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600">Motif Development</h3>
+              <p className="text-sm text-gray-600">Build solos from small ideas</p>
             </Link>
-            
             <Link 
-              href="/lessons/practice/improv/rhythm"
-              className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              href="/lessons/practice/improv/target-notes"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center group"
             >
-              <h3 className="font-semibold text-gray-800 mb-2">Rhythmic Variation</h3>
-              <p className="text-sm text-gray-600">Add groove to your responses</p>
+              <div className="text-3xl mb-3">🎯</div>
+              <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-green-600">Target Notes</h3>
+              <p className="text-sm text-gray-600">Strategic note placement</p>
             </Link>
           </div>
-        </section>
+        </div>
       </main>
       
       <Footer />
