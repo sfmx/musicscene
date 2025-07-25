@@ -167,9 +167,8 @@ export default function ThunderstruckAnalysis() {
                   <p className="text-sm text-purple-700 mb-3">Single-note fingerpicking in B major:</p>
                   <VexTab 
                     notation={`
-                      options space=20 font-size=14
-                      tabstave notation=true time=4/4
-                      notes :8 2/5 2/5 | :8 0/4 0/4 | :8 2/4 2/4 | :8 2/5 :8r
+                      tabstave notation=true
+                      notes 2/5 2/5 0/4 0/4 | 2/4 2/4 2/5 ##
                     `}
                     width={500}
                     scale={0.8}
@@ -236,9 +235,8 @@ export default function ThunderstruckAnalysis() {
                   <p className="text-sm text-red-700 mb-3">Full band arrangement with driving rhythm:</p>
                   <VexTab 
                     notation={`
-                      options space=20 font-size=14
-                      tabstave notation=true time=4/4
-                      notes :q (2/5.4/4) | :q (0/4.2/3) | :q (2/4.4/3) | :q (2/5.4/4)
+                      tabstave notation=true
+                      notes (2/5.4/4) (0/4.2/3) (2/4.4/3) (2/5.4/4)
                     `}
                     width={500}
                     scale={0.8}

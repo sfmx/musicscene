@@ -178,7 +178,7 @@ export default function ForThoseAboutToRockBreakdown() {
                     notation={`
                       options space=20 font-size=14
                       tabstave notation=true time=4/4
-                      notes :q (0/6.2/5) | :q (0/5.2/4) | :q (2/5.4/4) | :qr
+                      notes :w (0/6.2/5) | :w (0/5.2/4) | :w (2/5.4/4) | 
                     `}
                     width={500}
                     scale={0.8}
