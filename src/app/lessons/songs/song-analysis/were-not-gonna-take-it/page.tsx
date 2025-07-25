@@ -20,8 +20,8 @@ export default function WereNotGonnaTakeItBreakdown() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Navigation */}
         <nav className="mb-8 text-sm">
-          <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
-            ← Back to Song Analysis
+          <Link href="/lessons/songs/breakdowns" className="text-cyan-600 hover:text-cyan-800">
+            ← Back to Song Breakdowns
           </Link>
         </nav>
 
@@ -175,284 +175,310 @@ export default function WereNotGonnaTakeItBreakdown() {
           </div>
         </section>
 
-        {/* Playing Techniques */}
+        {/* Technique Analysis */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Playing Techniques</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Rhythm Guitar Techniques */}
-            <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
-              <h3 className="text-xl font-semibold text-orange-900 mb-4">Rhythm Guitar Techniques</h3>
-              
-              {/* Main Riff */}
-              <div className="mb-6">
-                <h4 className="font-semibold text-orange-800 mb-3">Main Riff Pattern</h4>
-                <div className="bg-white rounded-lg p-4 mb-3">
+          {/* Main Riff */}
+          <div className="bg-white rounded-xl p-6 shadow-sm border mb-6">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Main Riff Pattern</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <div className="bg-red-50 rounded-lg p-4 border border-red-200">
+                  <h4 className="font-semibold text-red-800 mb-2">Main Riff - Power Chord Progression</h4>
+                  <p className="text-sm text-red-700 mb-3">E5 - A5 - B5 pattern with palm muting:</p>
                   <VexTab 
-                    notation="tabstave notation=true tablature=true\nnotes :q 0/6 3/5 5/4 | :q 0/6 3/5 5/4 3/5" 
-                    width={400} 
+                    notation={`
+                      options space=20 font-size=14
+                      tabstave notation=true time=4/4
+                      notes :w (0/6.2/5) | :w (0/5.2/4) | :w (2/5.4/4) | 
+                    `}
+                    width={500}
                     scale={0.8}
                   />
+                  <div className="mt-3">
+                    <p className="text-xs text-red-600 font-medium mb-1">Playing Notes:</p>
+                    <ul className="text-xs text-red-600 space-y-1">
+                      <li>• E5: 6th string open + 5th string 2nd fret</li>
+                      <li>• A5: 5th string open + 4th string 2nd fret</li>
+                      <li>• B5: 5th string 2nd fret + 4th string 4th fret</li>
+                      <li>• Use downstrokes for power and aggression</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="text-sm text-orange-700 space-y-2">
-                  <p><strong>Fret Pattern:</strong> Open E string, 3rd fret A string, 5th fret D string</p>
-                  <p><strong>Technique:</strong> Strong downstrokes with palm muting on E string</p>
-                  <p><strong>Timing:</strong> Syncopated rhythm emphasizing off-beats</p>
+                <div className="mt-4 text-sm text-gray-600">
+                  <p><strong>Pattern:</strong> E5 - A5 - B5 power chord progression</p>
+                  <p><strong>Rhythm:</strong> Straight eighth notes with emphasis on downbeats</p>
+                </div>
+                
+                {/* Power Chord Diagrams */}
+                <div className="mt-6">
+                  <h4 className="font-medium text-gray-700 mb-3">Power Chord Shapes:</h4>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">E5</h5>
+                      <SimpleFretboardDiagram chord="E5" />
+                      <p className="text-xs text-gray-500 mt-1">6th & 5th string</p>
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">A5</h5>
+                      <SimpleFretboardDiagram chord="A5" />
+                      <p className="text-xs text-gray-500 mt-1">5th & 4th string</p>
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">B5</h5>
+                      <SimpleFretboardDiagram chord="B5" />
+                      <p className="text-xs text-gray-500 mt-1">5th & 4th string</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* Power Chord Sections */}
-              <div className="mb-6">
-                <h4 className="font-semibold text-orange-800 mb-3">Power Chord Sections</h4>
-                <div className="space-y-3 text-sm">
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium">Em Power Chord (Main)</p>
-                    <p className="text-orange-700">7th fret A string, 9th fret D string</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium">C Power Chord</p>
-                    <p className="text-orange-700">3rd fret A string, 5th fret D string</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium">G Power Chord</p>
-                    <p className="text-orange-700">5th fret E string, 7th fret A string</p>
-                  </div>
+              <div className="space-y-4 text-sm">
+                <div>
+                  <h4 className="font-medium text-gray-700">Picking Technique:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Primary: Downstrokes for power and aggression</li>
+                    <li>• Palm muting on verses for tightness</li>
+                    <li>• Clean chord changes between power chords</li>
+                    <li>• Strong attack on beat 1 and 3</li>
+                  </ul>
                 </div>
-              </div>
-
-              {/* Rhythm Patterns */}
-              <div>
-                <h4 className="font-semibold text-orange-800 mb-3">Strumming Patterns</h4>
-                <div className="space-y-2 text-sm text-orange-700">
-                  <p><strong>Verse:</strong> D-D-U-D-U (emphasis on downstrokes)</p>
-                  <p><strong>Chorus:</strong> D-D-U-D-U-D-U (driving rhythm)</p>
-                  <p><strong>Pre-Chorus:</strong> D-U-D-U (lighter, building tension)</p>
+                <div>
+                  <h4 className="font-medium text-gray-700">Voicing Notes:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• E5: Root and fifth (E-B)</li>
+                    <li>• A5: Root and fifth (A-E)</li>
+                    <li>• B5: Root and fifth (B-F#)</li>
+                    <li>• Octave doubling for fullness</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-700">Fingering Tips:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Use index finger for root note</li>
+                    <li>• Ring finger for fifth (2 frets up)</li>
+                    <li>• Keep pinky available for octave</li>
+                    <li>• Mute unused strings with fretting hand</li>
+                  </ul>
                 </div>
               </div>
             </div>
+            <div className="mt-4">
+              <Link href="/lessons/songs/techniques/power-chords" className="text-cyan-600 hover:text-cyan-800 text-sm">
+                → Master Power Chord Techniques
+              </Link>
+            </div>
+          </div>
 
-            {/* Lead Guitar Techniques */}
-            <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
-              <h3 className="text-xl font-semibold text-purple-900 mb-4">Lead Guitar Techniques</h3>
-
-              {/* Solo Section */}
-              <div className="mb-6">
-                <h4 className="font-semibold text-purple-800 mb-3">Guitar Solo Breakdown</h4>
-                <div className="bg-white rounded-lg p-4 mb-3">
+          {/* Verse Riff */}
+          <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
+            <h3 className="text-xl font-semibold text-purple-900 mb-4">Verse Riff Analysis</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <div className="bg-purple-100 rounded-lg p-4 border border-purple-300">
+                  <h4 className="font-semibold text-purple-800 mb-2">Verse Riff - E Minor Pentatonic</h4>
+                  <p className="text-sm text-purple-700 mb-3">Single-note melodic pattern:</p>
                   <VexTab 
-                    notation="tabstave notation=true tablature=true\nnotes :q 7/3 9/3 10/3 | :q 7/2 9/2 10/2" 
-                    width={400} 
+                    notation={`
+                      options space=20 font-size=14
+                      tabstave notation=true time=4/4
+                      notes :q 0/6 | :q 3/6 | :q 0/5 | :q 2/5 2/4
+                    `}
+                    width={500}
                     scale={0.8}
                   />
-                </div>
-                <div className="space-y-3 text-sm">
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium text-purple-800">Position: 7th-12th Fret</p>
-                    <p className="text-purple-700">Primary scale position for E minor pentatonic</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium text-purple-800">Key Techniques:</p>
-                    <ul className="text-purple-700 space-y-1">
-                      <li>• String bending (whole and half steps)</li>
-                      <li>• Vibrato on sustained notes</li>
-                      <li>• Hammer-ons and pull-offs</li>
-                      <li>• Pentatonic scale runs</li>
+                  <div className="mt-3">
+                    <p className="text-xs text-purple-600 font-medium mb-1">Note Sequence:</p>
+                    <ul className="text-xs text-purple-600 space-y-1">
+                      <li>• E (6th string open) → G (6th string 3rd fret)</li>
+                      <li>• A (5th string open) → B (5th string 2nd fret)</li>
+                      <li>• High E (4th string 2nd fret) for octave</li>
+                      <li>• Classic pentatonic box pattern movement</li>
                     </ul>
                   </div>
                 </div>
               </div>
-
-              {/* Scale Patterns */}
-              <div>
-                <h4 className="font-semibold text-purple-800 mb-3">Essential Scale Patterns</h4>
-                <div className="space-y-2 text-sm">
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium">E Minor Pentatonic (Box 1)</p>
-                    <p className="text-purple-700">Frets 12-15: Classic lead guitar position</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3">
-                    <p className="font-medium">E Minor Pentatonic (Box 2)</p>
-                    <p className="text-purple-700">Frets 7-10: Lower register melodic phrases</p>
-                  </div>
+              <div className="space-y-3 text-sm">
+                <p className="text-purple-800 font-medium">E Minor Pentatonic Movement</p>
+                <ul className="text-purple-700 space-y-1">
+                  <li>• Uses open position E minor pentatonic</li>
+                  <li>• Single-note melodic approach over power chords</li>
+                  <li>• Creates vocal-like phrasing</li>
+                  <li>• Combines single notes with chord stabs</li>
+                </ul>
+                <div className="mt-3">
+                  <Link href="/lessons/songs/scales/pentatonic-patterns" className="text-purple-600 hover:text-purple-800 text-sm">
+                    → Pentatonic Pattern Library
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Equipment & Tone Analysis */}
+        {/* Equipment & Tone */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Equipment & Tone Analysis</h2>
-          
           <div className="grid lg:grid-cols-3 gap-6">
+            
             {/* Guitar Setup */}
-            <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
-              <h3 className="text-lg font-semibold text-blue-900 mb-4">Guitar Setup</h3>
-              <div className="space-y-4 text-sm">
+            <div className="bg-amber-50 rounded-xl p-6 border border-amber-200">
+              <h3 className="text-xl font-semibold text-amber-900 mb-4">🎸 Guitar Setup</h3>
+              <div className="space-y-3 text-sm">
                 <div>
-                  <p className="font-medium text-blue-800">Dee Snider's Guitar</p>
-                  <p className="text-blue-700">B.C. Rich Mockingbird</p>
-                </div>
-                <div>
-                  <p className="font-medium text-blue-800">Alternative Guitars</p>
-                  <ul className="text-blue-700 space-y-1">
-                    <li>• Les Paul Standard</li>
-                    <li>• Gibson SG</li>
-                    <li>• Any humbucker-equipped guitar</li>
+                  <p className="text-amber-800 font-medium">Dee Snider's Setup:</p>
+                  <ul className="text-amber-700 space-y-1">
+                    <li>• BC Rich Mockingbird</li>
+                    <li>• Humbucking pickups</li>
+                    <li>• Bridge pickup primarily</li>
+                    <li>• Standard tuning (E-A-D-G-B-E)</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-medium text-blue-800">Pickup Configuration</p>
-                  <p className="text-blue-700">High-output humbuckers for thick distortion</p>
+                  <p className="text-amber-800 font-medium">Alternative Guitars:</p>
+                  <ul className="text-amber-700 space-y-1">
+                    <li>• Gibson Les Paul</li>
+                    <li>• ESP Eclipse</li>
+                    <li>• Any humbucker-equipped rock guitar</li>
+                  </ul>
                 </div>
-                <div>
-                  <p className="font-medium text-blue-800">String Gauge</p>
-                  <p className="text-blue-700">Medium (.010-.046) for balance of tone and playability</p>
+                <div className="mt-3">
+                  <Link href="/lessons/songs/gear/guitar-selection" className="text-amber-600 hover:text-amber-800 text-sm">
+                    → Guitar Selection Guide
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* Amplifier Settings */}
+            {/* Amplifier */}
             <div className="bg-red-50 rounded-xl p-6 border border-red-200">
-              <h3 className="text-lg font-semibold text-red-900 mb-4">Amplifier & Effects</h3>
-              <div className="space-y-4 text-sm">
+              <h3 className="text-xl font-semibold text-red-900 mb-4">🔊 Amplifier</h3>
+              <div className="space-y-3 text-sm">
                 <div>
-                  <p className="font-medium text-red-800">Amplifier Type</p>
-                  <p className="text-red-700">High-gain tube amp (Marshall JCM800 style)</p>
+                  <p className="text-red-800 font-medium">Classic '80s Tone:</p>
+                  <ul className="text-red-700 space-y-1">
+                    <li>• Marshall JCM800 series</li>
+                    <li>• High gain, moderate mids</li>
+                    <li>• Bright, cutting treble</li>
+                    <li>• Tight low end</li>
+                  </ul>
                 </div>
                 <div>
-                  <p className="font-medium text-red-800">Gain Structure</p>
+                  <p className="text-red-800 font-medium">Settings Guide:</p>
                   <ul className="text-red-700 space-y-1">
                     <li>• Gain: 7-8/10</li>
                     <li>• Bass: 6/10</li>
                     <li>• Mids: 7/10</li>
                     <li>• Treble: 8/10</li>
+                    <li>• Presence: 6/10</li>
                   </ul>
                 </div>
-                <div>
-                  <p className="font-medium text-red-800">Essential Effects</p>
-                  <ul className="text-red-700 space-y-1">
-                    <li>• Overdrive/Distortion (primary tone)</li>
-                    <li>• Chorus (clean sections)</li>
-                    <li>• Delay (lead guitar)</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-red-800">Cabinet</p>
-                  <p className="text-red-700">4x12 with Celestion V30 or G12T-75 speakers</p>
+                <div className="mt-3">
+                  <Link href="/lessons/songs/gear/amp-settings" className="text-red-600 hover:text-red-800 text-sm">
+                    → Amp Settings Guide
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* Recording Techniques */}
-            <div className="bg-green-50 rounded-xl p-6 border border-green-200">
-              <h3 className="text-lg font-semibold text-green-900 mb-4">Production Notes</h3>
-              <div className="space-y-4 text-sm">
+            {/* Effects */}
+            <div className="bg-cyan-50 rounded-xl p-6 border border-cyan-200">
+              <h3 className="text-xl font-semibold text-cyan-900 mb-4">🎛️ Effects Chain</h3>
+              <div className="space-y-3 text-sm">
                 <div>
-                  <p className="font-medium text-green-800">Recording Approach</p>
-                  <p className="text-green-700">Double-tracked rhythm guitars for thickness</p>
-                </div>
-                <div>
-                  <p className="font-medium text-green-800">Mixing Elements</p>
-                  <ul className="text-green-700 space-y-1">
-                    <li>• Panned rhythm guitars (L/R)</li>
-                    <li>• Center lead guitar</li>
-                    <li>• Compressed drums for punch</li>
+                  <p className="text-cyan-800 font-medium">Essential Effects:</p>
+                  <ul className="text-cyan-700 space-y-1">
+                    <li>• Overdrive/Distortion boost</li>
+                    <li>• Light compression</li>
+                    <li>• Subtle chorus (chorus sections)</li>
+                    <li>• Hall reverb (ambient)</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-medium text-green-800">Signature Sound</p>
-                  <p className="text-green-700">Thick, compressed distortion with clear note separation</p>
+                  <p className="text-cyan-800 font-medium">Signal Chain:</p>
+                  <p className="text-cyan-700 text-xs font-mono">
+                    Guitar → Compressor → Overdrive → Amp → [FX Loop: Chorus → Reverb]
+                  </p>
                 </div>
                 <div>
-                  <p className="font-medium text-green-800">Home Recording Tips</p>
-                  <ul className="text-green-700 space-y-1">
-                    <li>• Use amp simulation plugins</li>
-                    <li>• Layer multiple guitar tracks</li>
-                    <li>• EQ to cut through mix</li>
+                  <p className="text-cyan-800 font-medium">Recommended Pedals:</p>
+                  <ul className="text-cyan-700 space-y-1">
+                    <li>• Boss SD-1 Super Overdrive</li>
+                    <li>• MXR Dyna Comp</li>
+                    <li>• Boss CE-2 Chorus</li>
                   </ul>
+                </div>
+                <div className="mt-3">
+                  <Link href="/lessons/songs/effects/distortion" className="text-cyan-600 hover:text-cyan-800 text-sm">
+                    → Effects Chain Guide
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Song Structure Analysis */}
+        {/* Song Structure */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Song Structure Analysis</h2>
-          
-          <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Structure Breakdown */}
+          <div className="bg-gray-50 rounded-xl p-6">
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Complete Song Form</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">Timeline Structure</h3>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-blue-500">
-                    <p className="font-medium">Intro (8 bars)</p>
-                    <p className="text-gray-700">Main riff establishes key and energy</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">0:00-0:08</span>
+                    <span>Intro Riff</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-green-500">
-                    <p className="font-medium">Verse 1 (16 bars)</p>
-                    <p className="text-gray-700">Em-C-G-D progression, verse melody</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">0:08-0:32</span>
+                    <span>Verse 1</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-orange-500">
-                    <p className="font-medium">Pre-Chorus (8 bars)</p>
-                    <p className="text-gray-700">G-A-B build-up, tension creation</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">0:32-0:40</span>
+                    <span>Pre-Chorus</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-red-500">
-                    <p className="font-medium">Chorus (16 bars)</p>
-                    <p className="text-gray-700">Main hook, anthemic vocal line</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">0:40-1:04</span>
+                    <span>Chorus</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-green-500">
-                    <p className="font-medium">Verse 2 (16 bars)</p>
-                    <p className="text-gray-700">Same as verse 1, new lyrics</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">1:04-1:28</span>
+                    <span>Verse 2</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-orange-500">
-                    <p className="font-medium">Pre-Chorus (8 bars)</p>
-                    <p className="text-gray-700">Building tension again</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">1:28-1:52</span>
+                    <span>Chorus</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-red-500">
-                    <p className="font-medium">Chorus (16 bars)</p>
-                    <p className="text-gray-700">Second iteration of main hook</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">1:52-2:16</span>
+                    <span>Guitar Solo</span>
                   </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-purple-500">
-                    <p className="font-medium">Guitar Solo (16 bars)</p>
-                    <p className="text-gray-700">E minor pentatonic over verse progression</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-red-500">
-                    <p className="font-medium">Final Chorus (16 bars)</p>
-                    <p className="text-gray-700">Climactic ending with extensions</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 border-l-4 border-gray-500">
-                    <p className="font-medium">Outro (8 bars)</p>
-                    <p className="text-gray-700">Fade out on main riff</p>
+                  <div className="flex justify-between border-b border-gray-300 pb-1">
+                    <span className="font-medium">2:16-3:38</span>
+                    <span>Final Chorus/Outro</span>
                   </div>
                 </div>
               </div>
-
-              {/* Analysis Points */}
+              
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Structural Analysis</h3>
-                <div className="space-y-4 text-sm">
-                  <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                    <h4 className="font-medium text-blue-800 mb-2">Verse Strategy</h4>
-                    <p className="text-blue-700">Lower energy, conversational vocal delivery builds anticipation for explosive chorus</p>
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">Arrangement Notes</h3>
+                <div className="space-y-3 text-sm text-gray-700">
+                  <div>
+                    <p className="font-medium text-gray-800">Dynamic Build:</p>
+                    <p>Song builds from verse intimacy to chorus power through arrangement layers</p>
                   </div>
-                  <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                    <h4 className="font-medium text-green-800 mb-2">Pre-Chorus Function</h4>
-                    <p className="text-green-700">Ascending chord progression (G-A-B) creates harmonic tension and melodic lift</p>
+                  <div>
+                    <p className="font-medium text-gray-800">Guitar Layers:</p>
+                    <ul className="space-y-1">
+                      <li>• Rhythm guitar: Power chords throughout</li>
+                      <li>• Lead guitar: Melodic fills and solo</li>
+                      <li>• Overdubs: Harmony lines in chorus</li>
+                    </ul>
                   </div>
-                  <div className="bg-red-50 rounded-lg p-4 border border-red-200">
-                    <h4 className="font-medium text-red-800 mb-2">Chorus Impact</h4>
-                    <p className="text-red-700">Same chord progression as verse but with octave leap in melody and full arrangement</p>
-                  </div>
-                  <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
-                    <h4 className="font-medium text-purple-800 mb-2">Solo Placement</h4>
-                    <p className="text-purple-700">Traditional 3rd position allows guitar to shine without disrupting song flow</p>
-                  </div>
-                  <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
-                    <h4 className="font-medium text-orange-800 mb-2">Dynamic Arc</h4>
-                    <p className="text-orange-700">Classic arena rock structure: build → release → build → bigger release</p>
+                  <div>
+                    <p className="font-medium text-gray-800">Production Style:</p>
+                    <p>Classic '80s metal production with clear separation, punchy drums, and upfront vocals</p>
                   </div>
                 </div>
               </div>
@@ -460,212 +486,164 @@ export default function WereNotGonnaTakeItBreakdown() {
           </div>
         </section>
 
-        {/* Learning Path & Difficulty Progression */}
+        {/* Learning Path */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Learning Path & Difficulty Progression</h2>
-          
-          <div className="grid lg:grid-cols-3 gap-6">
-            {/* Beginner Path */}
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Learning Path & Prerequisites</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            
             <div className="bg-green-50 rounded-xl p-6 border border-green-200">
-              <h3 className="text-lg font-semibold text-green-900 mb-4">🟢 Beginner Approach</h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-medium text-green-800">Start With:</p>
-                  <ul className="text-green-700 space-y-1">
-                    <li>• Basic Em, C, G, D chord shapes</li>
-                    <li>• Simple strumming patterns</li>
-                    <li>• Power chord versions</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-green-800">Focus Areas:</p>
-                  <ul className="text-green-700 space-y-1">
-                    <li>• Clean chord transitions</li>
-                    <li>• Steady rhythm keeping</li>
-                    <li>• Basic palm muting</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-green-800">Practice Routine:</p>
-                  <ul className="text-green-700 space-y-1">
-                    <li>• 10 min chord practice</li>
-                    <li>• 10 min rhythm patterns</li>
-                    <li>• 10 min play-along</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-3">
-                  <p className="font-medium text-green-800">Estimated Timeline:</p>
-                  <p className="text-green-700">2-3 months to play basic version</p>
-                </div>
+              <h3 className="text-lg font-semibold text-green-900 mb-4">📚 Prerequisites</h3>
+              <ul className="space-y-2 text-sm text-green-700">
+                <li>• Basic power chord knowledge</li>
+                <li>• Downstroke picking technique</li>
+                <li>• Minor scale familiarity</li>
+                <li>• Palm muting control</li>
+                <li>• Basic chord transitions</li>
+              </ul>
+              <div className="mt-4">
+                <Link href="/lessons/songs/techniques/fundamentals" className="text-green-600 hover:text-green-800 text-sm">
+                  → Review Fundamentals
+                </Link>
               </div>
             </div>
 
-            {/* Intermediate Path */}
-            <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
-              <h3 className="text-lg font-semibold text-orange-900 mb-4">🟡 Intermediate Approach</h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-medium text-orange-800">Add to Foundation:</p>
-                  <ul className="text-orange-700 space-y-1">
-                    <li>• Full chord voicings</li>
-                    <li>• Dynamic strumming</li>
-                    <li>• Lead guitar basics</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-orange-800">Technical Skills:</p>
-                  <ul className="text-orange-700 space-y-1">
-                    <li>• E minor pentatonic scale</li>
-                    <li>• Basic string bending</li>
-                    <li>• Vibrato technique</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-orange-800">Song Elements:</p>
-                  <ul className="text-orange-700 space-y-1">
-                    <li>• Main riff accuracy</li>
-                    <li>• Pre-chorus build-up</li>
-                    <li>• Simple solo phrases</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-3">
-                  <p className="font-medium text-orange-800">Estimated Timeline:</p>
-                  <p className="text-orange-700">3-4 months to master main parts</p>
-                </div>
+            <div className="bg-yellow-50 rounded-xl p-6 border border-yellow-200">
+              <h3 className="text-lg font-semibold text-yellow-900 mb-4">🎯 Practice Focus</h3>
+              <ul className="space-y-2 text-sm text-yellow-700">
+                <li>• Clean power chord changes</li>
+                <li>• Consistent downstroke rhythm</li>
+                <li>• Palm muting control</li>
+                <li>• Minor pentatonic phrases</li>
+                <li>• Dynamic contrast (verse/chorus)</li>
+              </ul>
+              <div className="mt-4">
+                <Link href="/lessons/songs/exercises/rhythm-guitar" className="text-yellow-600 hover:text-yellow-800 text-sm">
+                  → Practice Exercises
+                </Link>
               </div>
             </div>
 
-            {/* Advanced Path */}
-            <div className="bg-red-50 rounded-xl p-6 border border-red-200">
-              <h3 className="text-lg font-semibold text-red-900 mb-4">🔴 Advanced Mastery</h3>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="font-medium text-red-800">Professional Elements:</p>
-                  <ul className="text-red-700 space-y-1">
-                    <li>• Complete guitar solo</li>
-                    <li>• Tone matching</li>
-                    <li>• Performance energy</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-red-800">Advanced Techniques:</p>
-                  <ul className="text-red-700 space-y-1">
-                    <li>• Full pentatonic patterns</li>
-                    <li>• Advanced bending</li>
-                    <li>• Improvisation skills</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-red-800">Performance Skills:</p>
-                  <ul className="text-red-700 space-y-1">
-                    <li>• Stage presence</li>
-                    <li>• Audience interaction</li>
-                    <li>• Band dynamics</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-3">
-                  <p className="font-medium text-red-800">Mastery Timeline:</p>
-                  <p className="text-red-700">6+ months for complete mastery</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Similar Songs & Related Learning */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Similar Songs & Related Learning</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Similar Songs */}
-            <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
-              <h3 className="text-xl font-semibold text-purple-900 mb-4">Songs with Similar Elements</h3>
-              
-              <div className="space-y-4 text-sm">
-                <div className="bg-white rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-medium text-purple-800">Em-C-G-D Progression</h4>
-                  <ul className="text-purple-700 space-y-1 mt-2">
-                    <li>• "Horse with No Name" - America</li>
-                    <li>• "Zombie" - The Cranberries</li>
-                    <li>• "When I Come Around" - Green Day</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-medium text-purple-800">Similar Energy/Style</h4>
-                  <ul className="text-purple-700 space-y-1 mt-2">
-                    <li>• "I Love Rock 'N Roll" - Joan Jett</li>
-                    <li>• "Cum on Feel the Noize" - Quiet Riot</li>
-                    <li>• "Rock You Like a Hurricane" - Scorpions</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-purple-200">
-                  <h4 className="font-medium text-purple-800">Same Key (E minor)</h4>
-                  <ul className="text-purple-700 space-y-1 mt-2">
-                    <li>• "Losing My Religion" - R.E.M.</li>
-                    <li>• "The Thrill Is Gone" - B.B. King</li>
-                    <li>• "Black" - Pearl Jam</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Learning Resources */}
             <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
-              <h3 className="text-xl font-semibold text-blue-900 mb-4">Recommended Learning Path</h3>
-              
-              <div className="space-y-4 text-sm">
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-medium text-blue-800">Theory Foundations</h4>
-                  <ul className="text-blue-700 space-y-1 mt-2">
-                    <li>• <Link href="/lessons/theory/scales/minor" className="text-blue-600 hover:underline">Natural Minor Scale</Link></li>
-                    <li>• <Link href="/lessons/theory/progressions/vi-IV-I-V" className="text-blue-600 hover:underline">vi-IV-I-V Progressions</Link></li>
-                    <li>• <Link href="/lessons/theory/scales/minor-pentatonic" className="text-blue-600 hover:underline">Minor Pentatonic Scale</Link></li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-medium text-blue-800">Technique Development</h4>
-                  <ul className="text-blue-700 space-y-1 mt-2">
-                    <li>• <Link href="/lessons/technique/rhythm-guitar" className="text-blue-600 hover:underline">Rhythm Guitar Mastery</Link></li>
-                    <li>• <Link href="/lessons/technique/power-chords" className="text-blue-600 hover:underline">Power Chord Techniques</Link></li>
-                    <li>• <Link href="/lessons/technique/lead-guitar-basics" className="text-blue-600 hover:underline">Lead Guitar Fundamentals</Link></li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <h4 className="font-medium text-blue-800">Gear & Tone</h4>
-                  <ul className="text-blue-700 space-y-1 mt-2">
-                    <li>• <Link href="/lessons/gear/amplifiers/tube-amps" className="text-blue-600 hover:underline">Tube Amplifier Guide</Link></li>
-                    <li>• <Link href="/lessons/gear/effects/distortion" className="text-blue-600 hover:underline">Distortion Pedals</Link></li>
-                    <li>• <Link href="/lessons/gear/guitars/rock-guitars" className="text-blue-600 hover:underline">Rock Guitar Selection</Link></li>
-                  </ul>
-                </div>
+              <h3 className="text-lg font-semibold text-blue-900 mb-4">🚀 Next Steps</h3>
+              <ul className="space-y-2 text-sm text-blue-700">
+                <li>• Learn the guitar solo</li>
+                <li>• Add harmony guitar parts</li>
+                <li>• Explore related songs</li>
+                <li>• Study '80s metal style</li>
+                <li>• Write similar progressions</li>
+              </ul>
+              <div className="mt-4">
+                <Link href="/lessons/songs/styles/80s-metal" className="text-blue-600 hover:text-blue-800 text-sm">
+                  → Explore '80s Metal Style
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section className="text-center py-12 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border-2 border-orange-300">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Master the Glam Metal Catalog</h2>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Ready to tackle more arena rock anthems? Check out our complete song analysis collection 
-            featuring the greatest hits of the 80s metal scene.
-          </p>
-          <div className="space-x-4">
+        {/* Similar Songs */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Similar Songs & Study Recommendations</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            
+            <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-900 mb-4">Same Progression/Style</h3>
+              <div className="space-y-3 text-sm">
+                <div className="border-b border-purple-200 pb-2">
+                  <p className="font-medium text-purple-800">"I Love Rock 'N Roll" - Joan Jett</p>
+                  <p className="text-purple-700">Similar Em-C-G-D progression, simpler arrangement</p>
+                </div>
+                <div className="border-b border-purple-200 pb-2">
+                  <p className="font-medium text-purple-800">"Zombie" - The Cranberries</p>
+                  <p className="text-purple-700">Same chord progression, different rhythm and feel</p>
+                </div>
+                <div className="border-b border-purple-200 pb-2">
+                  <p className="font-medium text-purple-800">"What's Up?" - 4 Non Blondes</p>
+                  <p className="text-purple-700">G-Am-C-G (relative major version)</p>
+                </div>
+                <div>
+                  <p className="font-medium text-purple-800">"Horse with No Name" - America</p>
+                  <p className="text-purple-700">Em-D6add9 variation of the same harmonic movement</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
+              <h3 className="text-lg font-semibold text-orange-900 mb-4">Same Era/Genre</h3>
+              <div className="space-y-3 text-sm">
+                <div className="border-b border-orange-200 pb-2">
+                  <p className="font-medium text-orange-800">"Cum on Feel the Noize" - Quiet Riot</p>
+                  <p className="text-orange-700">Similar '80s glam metal energy and simplicity</p>
+                </div>
+                <div className="border-b border-orange-200 pb-2">
+                  <p className="font-medium text-orange-800">"You're My Best Friend" - Queen</p>
+                  <p className="text-orange-700">Similar anthemic quality, different complexity</p>
+                </div>
+                <div className="border-b border-orange-200 pb-2">
+                  <p className="font-medium text-orange-800">"We Will Rock You" - Queen</p>
+                  <p className="text-orange-700">Similar crowd participation, simpler chord structure</p>
+                </div>
+                <div>
+                  <p className="font-medium text-orange-800">"Eye of the Tiger" - Survivor</p>
+                  <p className="text-orange-700">Similar motivational theme, more complex arrangement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-6 text-center">
             <Link 
-              href="/lessons/songs/song-analysis" 
-              className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
+              href="/lessons/songs/breakdowns" 
+              className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors"
             >
-              Explore More Song Analyses
-            </Link>
-            <Link 
-              href="/lessons/theory/progressions" 
-              className="inline-block bg-white text-orange-600 px-6 py-3 rounded-lg font-medium border border-orange-600 hover:bg-orange-50 transition-colors"
-            >
-              Learn More Progressions
+              Explore More Song Breakdowns →
             </Link>
           </div>
         </section>
 
+        {/* Theory Deep Dive */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Theory Deep Dive</h2>
+          <div className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-indigo-900 mb-4">Why This Progression Works</h3>
+                <div className="space-y-3 text-sm text-indigo-800">
+                  <p>
+                    The Em-C-G-D progression is one of the most powerful in Western music because:
+                  </p>
+                  <ul className="space-y-2 text-indigo-700">
+                    <li>• <strong>Strong Root Movement:</strong> Roots move in fourths and fifths</li>
+                    <li>• <strong>Common Tones:</strong> Each chord shares notes with neighbors</li>
+                    <li>• <strong>Modal Character:</strong> Natural minor with Mixolydian ♭VII</li>
+                    <li>• <strong>Circular Motion:</strong> D wants to resolve back to Em</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-semibold text-indigo-900 mb-4">Advanced Analysis</h3>
+                <div className="space-y-3 text-sm text-indigo-800">
+                  <p>
+                    From a functional harmony perspective:
+                  </p>
+                  <ul className="space-y-2 text-indigo-700">
+                    <li>• <strong>Em (i):</strong> Tonic function, home base</li>
+                    <li>• <strong>C (♭VI):</strong> Submediant, plagal motion</li>
+                    <li>• <strong>G (♭III):</strong> Modal mediant, relative major</li>
+                    <li>• <strong>D (♭VII):</strong> Subtonic, Mixolydian character</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-6 text-center">
+              <Link href="/lessons/songs/theory/chord-functions" className="text-indigo-600 hover:text-indigo-800 text-sm">
+                → Learn More About Chord Functions
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </Layout>
