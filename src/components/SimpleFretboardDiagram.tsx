@@ -92,6 +92,14 @@ const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
   'D_minor_7_flat_5': { frets: [-1, -1, 0, 1, 1, 1], fingers: [-1, -1, 0, 1, 1, 1] },
   'Cm': { frets: [-1, 3, 5, 5, 4, 3], fingers: [-1, 1, 3, 4, 2, 1] },
   'C_minor': { frets: [-1, 3, 5, 5, 4, 3], fingers: [-1, 1, 3, 4, 2, 1] },
+  // Power chords (5th chords)
+  'E5': { frets: [0, 2, -1, -1, -1, -1], fingers: [0, 2, -1, -1, -1, -1] },
+  'A5': { frets: [-1, 0, 2, -1, -1, -1], fingers: [-1, 0, 2, -1, -1, -1] },
+  'B5': { frets: [-1, 2, 4, -1, -1, -1], fingers: [-1, 1, 3, -1, -1, -1] },
+  'D5': { frets: [-1, -1, 0, 2, -1, -1], fingers: [-1, -1, 0, 2, -1, -1] },
+  'G5': { frets: [3, 5, -1, -1, -1, -1], fingers: [1, 3, -1, -1, -1, -1] },
+  'C5': { frets: [-1, 3, 5, -1, -1, -1], fingers: [-1, 1, 3, -1, -1, -1] },
+  'F5': { frets: [1, 3, -1, -1, -1, -1], fingers: [1, 3, -1, -1, -1, -1] },
 };
 
 export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {

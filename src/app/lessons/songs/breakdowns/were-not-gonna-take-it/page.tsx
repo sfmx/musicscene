@@ -1,45 +1,13 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TabAndNoteVisualizer from "@/components/TabAndNoteVisualizer";
-
-// Main riff patterns
-const mainRiffTab = [
-  { string: 6, fret: 0, idx: 0 }, // E5
-  { string: 5, fret: 2, idx: 0 },
-  
-  { string: 6, fret: 0, idx: 1 }, // A5 
-  { string: 5, fret: 0, idx: 1 },
-  { string: 4, fret: 2, idx: 1 },
-  
-  { string: 5, fret: 2, idx: 2 }, // B5
-  { string: 4, fret: 4, idx: 2 },
-];
-
-const mainRiffNotes = [
-  { name: 'E5', idx: 0 },
-  { name: 'A5', idx: 1 },
-  { name: 'B5', idx: 2 }
-];
-
-// Verse riff in E minor pentatonic
-const verseRiffTab = [
-  { string: 6, fret: 0, idx: 0 }, // E
-  { string: 6, fret: 3, idx: 1 }, // G
-  { string: 5, fret: 0, idx: 2 }, // A
-  { string: 5, fret: 2, idx: 3 }, // B
-  { string: 4, fret: 2, idx: 4 }, // E (octave)
-];
-
-const verseRiffNotes = [
-  { name: 'E', idx: 0 },
-  { name: 'G', idx: 1 },
-  { name: 'A', idx: 2 },
-  { name: 'B', idx: 3 },
-  { name: 'E', idx: 4 }
-];
+import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
+import { VexTab } from '@/components/VexTab';
 
 export default function WereNotGonnaTakeItBreakdown() {
   return (
@@ -131,18 +99,63 @@ export default function WereNotGonnaTakeItBreakdown() {
             {/* Chord Progression Analysis */}
             <div className="bg-green-50 rounded-xl p-6 border border-green-200">
               <h3 className="text-xl font-semibold text-green-900 mb-4">Chord Progressions</h3>
+              
+              {/* Main Progression with Diagrams */}
+              <div className="mb-6">
+                <p className="text-green-800 font-medium mb-3">Main Progression: Em - C - G - D</p>
+                <p className="text-green-700 text-sm mb-4">i - ♭VI - ♭III - ♭VII (classic minor progression)</p>
+                
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                  <div className="text-center">
+                    <h5 className="font-medium text-sm mb-2">Em (i)</h5>
+                    <SimpleFretboardDiagram chord="E_minor" />
+                    <p className="text-xs text-green-600 mt-1">Tonic Minor</p>
+                  </div>
+                  <div className="text-center">
+                    <h5 className="font-medium text-sm mb-2">C (♭VI)</h5>
+                    <SimpleFretboardDiagram chord="C_major" />
+                    <p className="text-xs text-green-600 mt-1">Submediant</p>
+                  </div>
+                  <div className="text-center">
+                    <h5 className="font-medium text-sm mb-2">G (♭III)</h5>
+                    <SimpleFretboardDiagram chord="G_major" />
+                    <p className="text-xs text-green-600 mt-1">Mediant</p>
+                  </div>
+                  <div className="text-center">
+                    <h5 className="font-medium text-sm mb-2">D (♭VII)</h5>
+                    <SimpleFretboardDiagram chord="D_major" />
+                    <p className="text-xs text-green-600 mt-1">Subtonic</p>
+                  </div>
+                </div>
+              </div>
+              
               <div className="space-y-4 text-sm">
                 <div>
                   <p className="text-green-800 font-medium">Verse: Em - C - G - D</p>
-                  <p className="text-green-700">i - ♭VI - ♭III - ♭VII (classic minor progression)</p>
+                  <p className="text-green-700">Creates strong emotional pull with minor tonic</p>
                 </div>
                 <div>
                   <p className="text-green-800 font-medium">Chorus: Em - C - G - D - Em</p>
                   <p className="text-green-700">Same progression with resolution back to Em</p>
                 </div>
                 <div>
-                  <p className="text-green-800 font-medium">Pre-Chorus: G - A - B</p>
-                  <p className="text-green-700">♭III - IV - V (building tension to chorus)</p>
+                  <p className="text-green-800 font-medium mb-3">Pre-Chorus: G - A - B</p>
+                  <p className="text-green-700 text-sm mb-3">♭III - IV - V (building tension to chorus)</p>
+                  
+                  <div className="grid grid-cols-3 gap-4 mb-2">
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-1">G (♭III)</h5>
+                      <SimpleFretboardDiagram chord="G_major" />
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-1">A (IV)</h5>
+                      <SimpleFretboardDiagram chord="A_major" />
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-1">B (V)</h5>
+                      <SimpleFretboardDiagram chord="B_major" />
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <p className="text-green-800 font-medium">Function Analysis:</p>
@@ -171,15 +184,53 @@ export default function WereNotGonnaTakeItBreakdown() {
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Main Riff Pattern</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <TabAndNoteVisualizer
-                  tabNotes={mainRiffTab}
-                  notes={mainRiffNotes}
-                  beatsPerBar={4}
-                  title="Core Power Chord Progression"
-                />
+                <div className="bg-red-50 rounded-lg p-4 border border-red-200">
+                  <h4 className="font-semibold text-red-800 mb-2">Main Riff - Power Chord Progression</h4>
+                  <p className="text-sm text-red-700 mb-3">E5 - A5 - B5 pattern with palm muting:</p>
+                  <VexTab 
+                    notation={`
+                      options space=20 font-size=14
+                      tabstave notation=true time=4/4
+                      notes :w (0/6.2/5) | :w (0/5.2/4) | :w (2/5.4/4) | 
+                    `}
+                    width={500}
+                    scale={0.8}
+                  />
+                  <div className="mt-3">
+                    <p className="text-xs text-red-600 font-medium mb-1">Playing Notes:</p>
+                    <ul className="text-xs text-red-600 space-y-1">
+                      <li>• E5: 6th string open + 5th string 2nd fret</li>
+                      <li>• A5: 5th string open + 4th string 2nd fret</li>
+                      <li>• B5: 5th string 2nd fret + 4th string 4th fret</li>
+                      <li>• Use downstrokes for power and aggression</li>
+                    </ul>
+                  </div>
+                </div>
                 <div className="mt-4 text-sm text-gray-600">
                   <p><strong>Pattern:</strong> E5 - A5 - B5 power chord progression</p>
                   <p><strong>Rhythm:</strong> Straight eighth notes with emphasis on downbeats</p>
+                </div>
+                
+                {/* Power Chord Diagrams */}
+                <div className="mt-6">
+                  <h4 className="font-medium text-gray-700 mb-3">Power Chord Shapes:</h4>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">E5</h5>
+                      <SimpleFretboardDiagram chord="E5" />
+                      <p className="text-xs text-gray-500 mt-1">6th & 5th string</p>
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">A5</h5>
+                      <SimpleFretboardDiagram chord="A5" />
+                      <p className="text-xs text-gray-500 mt-1">5th & 4th string</p>
+                    </div>
+                    <div className="text-center">
+                      <h5 className="font-medium text-xs mb-2">B5</h5>
+                      <SimpleFretboardDiagram chord="B5" />
+                      <p className="text-xs text-gray-500 mt-1">5th & 4th string</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="space-y-4 text-sm">
@@ -201,6 +252,15 @@ export default function WereNotGonnaTakeItBreakdown() {
                     <li>• Octave doubling for fullness</li>
                   </ul>
                 </div>
+                <div>
+                  <h4 className="font-medium text-gray-700">Fingering Tips:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Use index finger for root note</li>
+                    <li>• Ring finger for fifth (2 frets up)</li>
+                    <li>• Keep pinky available for octave</li>
+                    <li>• Mute unused strings with fretting hand</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="mt-4">
@@ -215,12 +275,28 @@ export default function WereNotGonnaTakeItBreakdown() {
             <h3 className="text-xl font-semibold text-purple-900 mb-4">Verse Riff Analysis</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <TabAndNoteVisualizer
-                  tabNotes={verseRiffTab}
-                  notes={verseRiffNotes}
-                  beatsPerBar={4}
-                  title="Verse Pentatonic Pattern"
-                />
+                <div className="bg-purple-100 rounded-lg p-4 border border-purple-300">
+                  <h4 className="font-semibold text-purple-800 mb-2">Verse Riff - E Minor Pentatonic</h4>
+                  <p className="text-sm text-purple-700 mb-3">Single-note melodic pattern:</p>
+                  <VexTab 
+                    notation={`
+                      options space=20 font-size=14
+                      tabstave notation=true time=4/4
+                      notes :q 0/6 | :q 3/6 | :q 0/5 | :q 2/5 2/4
+                    `}
+                    width={500}
+                    scale={0.8}
+                  />
+                  <div className="mt-3">
+                    <p className="text-xs text-purple-600 font-medium mb-1">Note Sequence:</p>
+                    <ul className="text-xs text-purple-600 space-y-1">
+                      <li>• E (6th string open) → G (6th string 3rd fret)</li>
+                      <li>• A (5th string open) → B (5th string 2nd fret)</li>
+                      <li>• High E (4th string 2nd fret) for octave</li>
+                      <li>• Classic pentatonic box pattern movement</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div className="space-y-3 text-sm">
                 <p className="text-purple-800 font-medium">E Minor Pentatonic Movement</p>
