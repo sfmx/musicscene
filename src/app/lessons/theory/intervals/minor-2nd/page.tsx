@@ -417,10 +417,10 @@ export default function Minor2ndPage() {
             <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-900 mb-2">Memory Aid</h4>
               <p className="text-blue-800 text-sm leading-relaxed">
-                Think of the minor 2nd as the sound of suspense in a horror movie - it's the musical 
-                equivalent of tension that demands resolution. The theme from "Jaws" features prominent 
-                minor 2nds that create that sense of impending danger. In classical music, it's often 
-                called a "semitone" and is fundamental to chromatic harmony and voice leading.
+                Think of the minor 2nd as the sound of suspense in a horror movie - it&apos;s the musical 
+                equivalent of tension that demands resolution. The theme from &quot;Jaws&quot; features prominent 
+                minor 2nds that create that sense of impending danger. In classical music, it&apos;s often 
+                called a &quot;semitone&quot; and is fundamental to chromatic harmony and voice leading.
               </p>
             </div>
           </div>

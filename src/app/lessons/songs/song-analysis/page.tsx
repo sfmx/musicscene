@@ -30,22 +30,62 @@ const songAnalyses = [
     description: 'Deep dive into AC/DC\'s masterpiece with I-IV-V progression, Malcolm Young\'s rhythm style, and Angus Young\'s lead techniques.',
     techniques: ['I-IV-V Progression', 'Blues Scale', 'Marshall Tone', 'Classic Rock Rhythm'],
     color: 'from-yellow-50 to-orange-50 border-yellow-200'
+  },
+  {
+    title: 'Thunderstruck',
+    artist: 'AC/DC',
+    href: '/lessons/songs/song-analysis/thunderstruck',
+    genre: 'Hard Rock / Heavy Metal',
+    year: '1990',
+    difficulty: 'Advanced',
+    keySignature: 'B major',
+    tempo: '133 BPM',
+    description: 'Master the iconic fingerpicked intro and driving power chord sections of this AC/DC classic with detailed technique analysis.',
+    techniques: ['Fingerpicking', 'Power Chords', 'Alternate Picking', 'B Major Scale'],
+    color: 'from-purple-50 to-blue-50 border-purple-200'
+  },
+  {
+    title: 'Back in Black',
+    artist: 'AC/DC',
+    href: '/lessons/songs/song-analysis/back-in-black',
+    genre: 'Hard Rock / Heavy Metal',
+    year: '1980',
+    difficulty: 'Intermediate',
+    keySignature: 'E major',
+    tempo: '94 BPM',
+    description: 'Learn the signature riff and classic I-IV-V progression that defines AC/DC\'s sound with complete gear and tone analysis.',
+    techniques: ['I-IV-V Progression', 'Palm Muting', 'E Pentatonic', 'Marshall Crunch'],
+    color: 'from-gray-50 to-slate-50 border-gray-300'
+  },
+  {
+    title: 'Highway to Hell',
+    artist: 'AC/DC',
+    href: '/lessons/songs/song-analysis/highway-to-hell',
+    genre: 'Hard Rock / Heavy Metal',
+    year: '1979',
+    difficulty: 'Intermediate',
+    keySignature: 'A major',
+    tempo: '115 BPM',
+    description: 'Driving rhythm guitar mastery with A-D-G progression and Malcolm Young\'s legendary rhythm guitar approach.',
+    techniques: ['Rhythm Guitar', 'A Major Scale', 'Downstroke Power', 'Classic Rock Groove'],
+    color: 'from-red-50 to-orange-50 border-red-200'
+  },
+  {
+    title: 'You Shook Me All Night Long',
+    artist: 'AC/DC',
+    href: '/lessons/songs/song-analysis/you-shook-me-all-night-long',
+    genre: 'Hard Rock / Heavy Metal',
+    year: '1980',
+    difficulty: 'Intermediate',
+    keySignature: 'G major',
+    tempo: '120 BPM',
+    description: 'Groove-based rock perfection with shuffle feel, G major progressions, and AC/DC\'s signature rhythm guitar style.',
+    techniques: ['Shuffle Rhythm', 'G Major Scale', 'Groove Guitar', 'Blues Influence'],
+    color: 'from-green-50 to-teal-50 border-green-200'
   }
 ];
 
 const upcomingSongs = [
-  {
-    title: 'Thunderstruck',
-    artist: 'AC/DC',
-    status: 'Coming Soon',
-    description: 'Open string technique mastery and signature AC/DC energy'
-  },
-  {
-    title: 'Back in Black',
-    artist: 'AC/DC', 
-    status: 'Coming Soon',
-    description: 'Classic rock rhythm guitar and tone fundamentals'
-  },
   {
     title: 'Smoke on the Water',
     artist: 'Deep Purple',
@@ -57,6 +97,18 @@ const upcomingSongs = [
     artist: 'Guns N\' Roses',
     status: 'Coming Soon',
     description: 'Advanced lead guitar techniques and complex arrangements'
+  },
+  {
+    title: 'Enter Sandman',
+    artist: 'Metallica',
+    status: 'Coming Soon',
+    description: 'Heavy metal fundamentals and downpicking mastery'
+  },
+  {
+    title: 'Paranoid',
+    artist: 'Black Sabbath',
+    status: 'Coming Soon',
+    description: 'Heavy metal origins and Tony Iommi\'s revolutionary style'
   }
 ];
 

@@ -69,6 +69,10 @@ const lessonLinks: LessonLink[] = [
       { href: '/lessons/songs/song-analysis', label: 'Song Analysis' },
       { href: '/lessons/songs/song-analysis/were-not-gonna-take-it', label: "We're Not Gonna Take It" },
       { href: '/lessons/songs/song-analysis/for-those-about-to-rock', label: 'For Those About to Rock' },
+      { href: '/lessons/songs/song-analysis/thunderstruck', label: 'Thunderstruck' },
+      { href: '/lessons/songs/song-analysis/back-in-black', label: 'Back in Black' },
+      { href: '/lessons/songs/song-analysis/highway-to-hell', label: 'Highway to Hell' },
+      { href: '/lessons/songs/song-analysis/you-shook-me-all-night-long', label: 'You Shook Me All Night Long' },
     ]
   },
   // Add more lesson categories as needed
