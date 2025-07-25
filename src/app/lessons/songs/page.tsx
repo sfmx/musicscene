@@ -12,10 +12,10 @@ const topics = [
     description: 'Learn our systematic approach to breaking down songs with music theory'
   },
   {
-    title: 'Song Breakdowns',
-    href: '/lessons/songs/breakdowns',
-    icon: '🔍',
-    description: 'Complete song analysis with theory, techniques, and practice tips'
+    title: 'Complete Song Analysis',
+    href: '/lessons/songs/song-analysis',
+    icon: '🎵',
+    description: 'In-depth breakdowns of iconic songs with theory, technique, and equipment analysis'
   },
   {
     title: 'Song Structure Analysis',
