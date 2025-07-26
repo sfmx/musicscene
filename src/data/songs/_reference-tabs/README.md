@@ -40,6 +40,7 @@ Files should follow this naming convention: `[song-slug].tab`
 - `thunderstruck.tab` - AC/DC Thunderstruck (left-hand tapping, power chords)
 - `for-those-about-to-rock.tab` - AC/DC For Those About to Rock (power chord progressions)
 - `back-in-black.tab` - AC/DC Back in Black (palm muting, rhythm patterns)
+- `highway-to-hell.tab` - AC/DC Highway to Hell (power chord progressions, pocket timing)
 
 ## Guidelines
 

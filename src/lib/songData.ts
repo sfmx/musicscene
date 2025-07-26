@@ -1,6 +1,7 @@
 import thunderstruckData from '@/data/songs/thunderstruck.json';
 import forThoseAboutToRockData from '@/data/songs/for-those-about-to-rock.json';
 import backInBlackData from '@/data/songs/back-in-black.json';
+import highwayToHellData from '@/data/songs/highway-to-hell.json';
 
 export interface SongData {
   songInfo: {
@@ -116,6 +117,7 @@ export function getSongData(songSlug: string): SongData | null {
     'thunderstruck': thunderstruckData as SongData,
     'for-those-about-to-rock': forThoseAboutToRockData as SongData,
     'back-in-black': backInBlackData as SongData,
+    'highway-to-hell': highwayToHellData as SongData,
     // Add more songs here as they're created
   };
   
@@ -123,5 +125,5 @@ export function getSongData(songSlug: string): SongData | null {
 }
 
 export function getAllSongSlugs(): string[] {
-  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black'];
+  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell'];
 }

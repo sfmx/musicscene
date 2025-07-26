@@ -1,0 +1,296 @@
+{
+  "songInfo": {
+    "title": "Highway to Hell",
+    "artist": "AC/DC",
+    "album": "Highway to Hell",
+    "released": "1979",
+    "genre": "Hard Rock / Heavy Metal",
+    "tempo": "115 BPM",
+    "duration": "3:28",
+    "key": "A major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner+",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Power Chords",
+      "description": "Classic rock power chord progression forming the song's foundation",
+      "difficulty": "Beginner+",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["A5", "D5", "G5"],
+        "progression": "A5 - D5 - G5 - D5 - A5",
+        "notes": [
+          "I - IV - ♭VII - IV - I progression",
+          "Simple three-chord rock foundation",
+          "Clean power chord voicings",
+          "Steady eighth note rhythm"
+        ],
+        "tips": [
+          "Focus on clean chord changes",
+          "Use consistent downstrokes",
+          "Keep power chords tight and percussive",
+          "Practice chord transitions slowly first"
+        ]
+      }
+    },
+    {
+      "name": "Palm Muting",
+      "description": "Essential palm muting technique for tight, controlled rhythm",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Light palm contact with strings near bridge",
+          "Creates percussive, controlled sound",
+          "Essential for Malcolm Young's rhythm style",
+          "Used throughout verse sections"
+        ],
+        "tips": [
+          "Rest palm lightly on strings near bridge pickup",
+          "Don't press too hard - should still hear pitch",
+          "Practice with metronome for consistency",
+          "Combine with downstroke picking"
+        ]
+      }
+    },
+    {
+      "name": "Pentatonic Lead",
+      "description": "Simple pentatonic scale runs for lead guitar sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "A minor pentatonic scale (5th fret position)",
+          "Simple, melodic lead lines",
+          "Classic AC/DC lead guitar approach",
+          "Focus on note clarity over speed"
+        ],
+        "tips": [
+          "Start with 5th fret pentatonic box",
+          "Use alternate picking for smoother runs",
+          "Focus on bending accuracy",
+          "Keep leads simple and melodic"
+        ]
+      }
+    },
+    {
+      "name": "Rhythm Guitar",
+      "description": "Driving eighth note rhythm pattern with pocket timing",
+      "difficulty": "Beginner+",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Steady eighth note rhythm",
+          "Malcolm Young's 'pocket' playing style",
+          "Slightly behind the beat feel",
+          "Consistent downstroke attack"
+        ],
+        "tips": [
+          "Play slightly behind the beat for groove",
+          "Use all downstrokes for consistency",
+          "Focus on staying in the pocket",
+          "Practice with metronome at slower tempos"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Power Chords",
+      "key": "A major",
+      "description": "Simple A5 power chord with driving rhythm",
+      "chords": ["A5"],
+      "progression": "A5",
+      "vexTab": "tabstave notation=true\nnotes 2/5 2/5 2/5 2/5 | 2/5 2/5 2/5 2/5",
+      "notes": [
+        "Sets the driving rhythm for the entire song",
+        "Clean A5 power chord with palm muting",
+        "Establishes the pocket feel"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:45",
+      "technique": "Power Chords",
+      "key": "A major",
+      "description": "Alternating A5 and D5 power chords",
+      "chords": ["A5", "D5"],
+      "progression": "A5 - D5 - A5 - D5",
+      "vexTab": "tabstave notation=true\nnotes 2/5 2/5 7/4 7/4 | 2/5 2/5 7/4 7/4",
+      "notes": [
+        "Simple I-IV alternation",
+        "A5 - D5 - A5 - D5 pattern",
+        "Palm muted eighth notes",
+        "Pocket timing essential"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:45-1:15",
+      "technique": "Power Chords",
+      "key": "A major",
+      "description": "Extended progression with G5 adding rock edge",
+      "chords": ["A5", "D5", "G5"],
+      "progression": "A5 - D5 - G5 - D5 - A5",
+      "vexTab": "tabstave notation=true\nnotes 2/5 7/4 12/3 7/4 | 2/5 2/5 2/5 2/5",
+      "notes": [
+        "A5 - D5 - G5 - D5 - A5 progression",
+        "♭VII chord (G5) adds classic rock character",
+        "More open, driving feel than verse",
+        "Strong downbeat emphasis"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:15-2:45",
+      "technique": "Pentatonic Lead",
+      "key": "A major",
+      "description": "Melodic pentatonic lead lines over chord progression",
+      "chords": ["A5", "D5", "G5"],
+      "progression": "A5 - D5 - G5 - D5 - A5",
+      "vexTab": "tabstave notation=true\nnotes 5/1 7/1 8/1 8/1 | 7/1 5/1 5/1 8/1",
+      "notes": [
+        "A minor pentatonic scale (5th fret position)",
+        "Simple, melodic approach",
+        "Classic AC/DC lead style",
+        "Rhythm guitar continues underneath"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:45-3:00",
+      "technique": "Power Chords",
+      "key": "A major",
+      "description": "Building section with D5 - G5 - A5 progression",
+      "chords": ["D5", "G5", "A5"],
+      "progression": "D5 - G5 - A5",
+      "vexTab": "tabstave notation=true\nnotes 7/4 7/4 12/3 12/3 | 2/5 2/5 2/5 2/5",
+      "notes": [
+        "IV - ♭VII - I ascending progression",
+        "Builds energy toward final chorus",
+        "Same rhythm approach as other sections",
+        "Sets up return to main progression"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard",
+      "alternatives": ["Epiphone SG", "Gibson Les Paul Standard", "Gretsch G6120"],
+      "pickup": "Bridge humbucker pickup for lead, both pickups for rhythm"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45/100",
+      "alternatives": ["Marshall Plexi", "Marshall JCM800"],
+      "settings": {
+        "gain": "7/10",
+        "bass": "6/10",
+        "middle": "8/10", 
+        "treble": "7/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Amp distortion only",
+      "reverb": "No reverb",
+      "other": "Pure tube amp overdrive - no pedals"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Basic Power Chords",
+      "skills": [
+        "Learn basic A5, D5, G5 power chords",
+        "Practice simple downstroke rhythm patterns",
+        "Develop basic palm muting technique",
+        "Master clean chord transitions"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Song Structure & Rhythm",
+      "skills": [
+        "Play full song structure with timing",
+        "Master pocket rhythm playing",
+        "Learn basic pentatonic lead lines",
+        "Achieve performance-ready tempo (115 BPM)"
+      ],
+      "timeEstimate": "4-6 weeks"
+    },
+    "advanced": {
+      "title": "Performance Mastery",
+      "skills": [
+        "Master the 'pocket' timing feel",
+        "Improvise lead lines in A minor pentatonic",
+        "Achieve authentic AC/DC tone",
+        "Perform with confidence and energy"
+      ],
+      "timeEstimate": "2-3 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Back in Black",
+        "link": "/lessons/songs/song-analysis/back-in-black",
+        "similarity": "Similar power chord approach and rhythm style"
+      },
+      {
+        "title": "Thunderstruck",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "similarity": "AC/DC classic with more advanced techniques"
+      },
+      {
+        "title": "For Those About to Rock",
+        "link": "/lessons/songs/song-analysis/for-those-about-to-rock",
+        "similarity": "Similar chord progressions and AC/DC rhythm style"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Power Chords",
+        "similarity": "Classic rock power chord progression"
+      },
+      {
+        "title": "Wild Thing", 
+        "artist": "The Troggs",
+        "technique": "Simple Progressions",
+        "similarity": "I-bVII-IV progression foundation"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the rhythm - stay in the pocket",
+      "Over-palm muting - should still hear note pitch",
+      "Using upstrokes - AC/DC style is all downstrokes",
+      "Playing too fast initially - master timing first",
+      "Sloppy chord changes - practice transitions slowly"
+    ],
+    "practiceRoutine": [
+      "Warm up with power chord exercises",
+      "Practice A5-D5 changes with metronome",
+      "Work on palm muting technique",
+      "Play along with backing track",
+      "Practice complete song structure"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM for chord changes",
+      "Gradually increase to 115 BPM",
+      "Practice with subdivision clicks",
+      "Focus on staying slightly behind beat",
+      "Use different time signatures for variety"
+    ]
+  }
+}
