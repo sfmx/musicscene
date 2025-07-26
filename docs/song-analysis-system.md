@@ -469,3 +469,27 @@ See existing reference files:
 - `thunderstruck.tab` - Left-hand tapping technique
 - `back-in-black.tab` - Palm muting and rhythm patterns  
 - `for-those-about-to-rock.tab` - Power chord progressions
+
+## Recent Updates
+
+### Internal Reference Tab System Implementation
+- **Removed references sections** from all song JSON files (Thunderstruck, For Those About to Rock, Back in Black, and template)
+- **Created internal reference tab files** with accurate tablature sourced from Ultimate Guitar
+- **Updated documentation** to include the new internal reference tab workflow
+- **Added reference tab directory** with README.md for guidelines and legal notices
+
+### Benefits of New System
+- **Improved accuracy** - Direct reference to verified tablature during content creation
+- **Legal compliance** - External tabs kept private and not published
+- **Consistent workflow** - Standardized process for new song analysis creation
+- **Better content quality** - Technical details verified against accurate source material
+
+### Files Updated
+- `src/data/songs/thunderstruck.json` - References section removed
+- `src/data/songs/for-those-about-to-rock.json` - References section removed  
+- `src/data/songs/back-in-black.json` - References section removed
+- `src/data/songs/_template.json` - References section removed
+- `docs/song-analysis-system.md` - Added internal reference tab documentation
+- `src/data/songs/_reference-tabs/` - New directory with reference files and README
+
+## Troubleshooting
