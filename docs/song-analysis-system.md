@@ -2,7 +2,23 @@
 
 ## Overview
 
-This system separates song analysis content from presentation by using JSON data files and reusable React components. This makes it easy to:
+This system separates song analysis content ### Step 2: Create JSON Data File
+
+1. Copy `src/data/songs/_template.json`
+2. Rename to `[song-slug].json` (e.g., `back-in-black.json`)
+3. Fill in all placeholders with accurate information
+4. **Use your internal reference tab file** to ensure technical accuracy
+5. Cross-reference with the internal tab file for chord progressions and techniques
+6. Validate JSON syntax
+
+**Example:**
+```bash
+cp src/data/songs/_template.json src/data/songs/back-in-black.json
+```
+
+**Note:** No longer include a "references" section in the JSON file. External sources are now handled through internal reference tab files.
+
+### Step 3: Create Page Using Templateion by using JSON data files and reusable React components. This makes it easy to:
 - Create consistent song analysis pages
 - Maintain accurate content in one place
 - Update design across all songs simultaneously
@@ -13,7 +29,14 @@ This system separates song analysis content from presentation by using JSON data
 ### 1. Data Layer (`src/data/songs/`)
 - **JSON files** containing all song information
 - **Template file** (`_template.json`) for creating new songs
-- **External references** to Ultimate Guitar and other sources
+- **Internal reference tabs** (`_reference-tabs/`) for accurate tablature sourced from Ultimate Guitar and other reliable sources
+
+### 1.5 Internal Reference Tabs (`src/data/songs/_reference-tabs/`)
+- **Private reference files** not published on the website
+- **Accurate tablature** sourced from Ultimate Guitar, official sources, and verified transcriptions
+- **Technical notation** in standard tab format with chord progressions and key techniques
+- **Used for verification** when creating song analysis content
+- **File naming convention:** `[song-slug].tab` (e.g., `thunderstruck.tab`)
 
 ### 2. Component Layer (`src/components/SongAnalysis/`)
 - **Reusable components** for each section of a song analysis
@@ -103,7 +126,54 @@ This will:
 cp src/data/songs/_template.json src/data/songs/back-in-black.json
 ```
 
-### Step 2: Create Page Using Template
+### Step 2: Create Internal Reference Tab File
+
+Before creating the JSON data file, create an accurate reference tab file for internal use:
+
+1. **Source accurate tablature** from Ultimate Guitar, official songbooks, or verified transcriptions
+2. **Cross-reference multiple sources** to ensure accuracy
+3. **Create reference file** at `src/data/songs/_reference-tabs/[song-slug].tab`
+4. **Include essential elements:**
+   - Main riffs and chord progressions
+   - Verse/chorus patterns
+   - Solo sections and key positions
+   - Rhythm notation and techniques
+   - Tempo, key, and tuning information
+
+**Example process:**
+```bash
+# Research accurate tabs from Ultimate Guitar
+# Search: "Back in Black AC/DC tabs"
+# Look for highly-rated versions (4+ stars)
+# Cross-reference official sources when available
+
+# Create reference file
+touch src/data/songs/_reference-tabs/back-in-black.tab
+```
+
+**Reference tab format:**
+```
+# Back in Black - AC/DC
+# Internal Reference Tab
+# Key: E major, Tempo: 94 BPM, Tuning: Standard
+
+## Main Riff (Opening/Verse)
+e|----------------------------------
+B|----------------------------------
+G|--9--9--x--x--9--9--x--x----------
+D|--9--9--x--x--9--9--x--x----------
+A|--7--7--x--x--7--7--x--x----------
+E|----------------------------------
+
+## Key Techniques
+# 1. Tight palm muting
+# 2. Consistent downstroke rhythm
+# 3. "Pocket" timing (slightly behind)
+```
+
+**Important:** These reference files are for internal use only and help ensure accurate content creation. They are not published on the website.
+
+### Step 3: Create Page Using Template
 
 1. Create new song directory
 2. Copy the page template
@@ -129,7 +199,7 @@ export default function BackInBlackAnalysis() {
 }
 ```
 
-### Step 3: Add Song to Data Registry
+### Step 4: Add Song to Data Registry
 
 Update `src/lib/songData.ts`:
 
@@ -150,7 +220,7 @@ export function getAllSongSlugs(): string[] {
 }
 ```
 
-### Step 4: Update Navigation
+### Step 5: Update Navigation
 
 Add the new song to relevant navigation:
 - `src/app/lessons/songs/song-analysis/page.tsx` (main index)
@@ -228,12 +298,18 @@ Add the new song to relevant navigation:
 
 ## Data Accuracy Guidelines
 
-### 1. Reference Ultimate Guitar
-- Always check Ultimate Guitar for accurate tabs
-- Look for highly-rated versions
-- Cross-reference multiple sources
+### 1. Use Internal Reference Tabs
+- **Always create reference tab file first** before writing JSON content
+- Cross-reference your internal tab file when writing techniques and sections
+- Ensure chord progressions match the reference tablature
+- Use reference file to verify tempo, key, and technical details
 
-### 2. Verify Technical Details
+### 2. Reference Ultimate Guitar for Source Material
+- Look for highly-rated versions (4+ stars preferred)
+- Cross-reference multiple sources for accuracy
+- Focus on consensus across top-rated tabs
+
+### 3. Verify Technical Details
 - Ensure technique descriptions are accurate
 - Check equipment specifications
 - Validate tempo and key information
@@ -341,3 +417,55 @@ Add the new song to relevant navigation:
 - Components use Tailwind CSS classes
 - Responsive design should work automatically
 - Check console for any CSS warnings
+
+## Internal Reference Tab System
+
+### Purpose and Workflow
+The internal reference tab system ensures accuracy while keeping external sources private and not published on the website.
+
+### Creating Reference Tabs
+
+#### 1. Source Research
+- **Primary source:** Ultimate Guitar (look for 4+ star ratings)
+- **Secondary sources:** Official songbooks, verified transcriptions
+- **Cross-reference:** Compare multiple sources for accuracy
+- **Focus areas:** Main riffs, chord progressions, solos, rhythm patterns
+
+#### 2. Reference File Creation
+**Location:** `src/data/songs/_reference-tabs/[song-slug].tab`
+**Format:** Plain text with standard guitar tablature notation
+
+**Required sections:**
+```
+# [Song Title] - [Artist]
+# Internal Reference Tab
+# Key: [Key], Tempo: [BPM], Tuning: [Tuning]
+
+## Main Riff/Intro
+[Tablature notation]
+
+## Verse/Chorus Progressions
+[Chord progressions and patterns]
+
+## Key Techniques
+# 1. [Technique description]
+# 2. [Technique description]
+```
+
+#### 3. Quality Standards
+- **Accurate timing and notation**
+- **Clear technique descriptions**
+- **Complete song structure coverage**
+- **Cross-verified with multiple sources**
+
+#### 4. Usage Guidelines
+- **Internal use only** - Never publish these files
+- **Reference during content creation** for JSON data accuracy
+- **Update as needed** when better sources are found
+- **Maintain consistency** in notation style across all reference files
+
+### Examples
+See existing reference files:
+- `thunderstruck.tab` - Left-hand tapping technique
+- `back-in-black.tab` - Palm muting and rhythm patterns  
+- `for-those-about-to-rock.tab` - Power chord progressions
