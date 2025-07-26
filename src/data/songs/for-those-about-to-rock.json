@@ -1,0 +1,282 @@
+{
+  "songInfo": {
+    "title": "For Those About to Rock (We Salute You)",
+    "artist": "AC/DC",
+    "album": "For Those About to Rock We Salute You",
+    "released": "1981",
+    "genre": "Hard Rock / Heavy Metal",
+    "tempo": "116 BPM",
+    "duration": "5:44",
+    "key": "E major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Power Chords",
+      "description": "Classic I-IV-V power chord progression with signature AC/DC rhythm",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: Open E + 2nd fret A string",
+          "A5: Open A + 2nd fret D string", 
+          "B5: 2nd fret A + 4th fret D string",
+          "Strong downstrokes on each chord"
+        ],
+        "tips": [
+          "Focus on clean chord changes",
+          "Use consistent down-picking",
+          "Palm muting for tighter sound",
+          "Lock in with the drums"
+        ],
+        "chords": ["E5", "A5", "B5"],
+        "progression": "E5 - A5 - B5 - E5"
+      }
+    },
+    {
+      "name": "Rhythm Guitar",
+      "description": "Malcolm Young's signature rhythm guitar style with tight, percussive attack",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Quarter note emphasis on strong beats",
+          "Minimal sustain for clarity",
+          "Driving, consistent attack",
+          "Lock with bass and drums"
+        ],
+        "tips": [
+          "Keep right hand relaxed but firm",
+          "Focus on timing over speed",
+          "Use metronome for precision",
+          "Practice with backing tracks"
+        ]
+      }
+    },
+    {
+      "name": "Lead Guitar",
+      "description": "Angus Young's blues-based lead guitar with pentatonic scales",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "E minor pentatonic scale",
+          "E blues scale for color tones",
+          "String bending and vibrato",
+          "Classic rock phrasing"
+        ],
+        "tips": [
+          "Start with pentatonic patterns",
+          "Work on string bending accuracy",
+          "Develop strong vibrato",
+          "Study classic rock lead style"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "Power Chords",
+      "key": "E major",
+      "description": "Iconic opening riff with E5-A5-B5 progression",
+      "vexTab": "tabstave notation=true time=4/4\nnotes :w (0/6.2/5) | :w (0/5.2/4) | :w (2/5.4/4)",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "E5 | A5 | B5 | E5",
+      "notes": [
+        "Strong quarter-note rhythm",
+        "Clean chord changes essential",
+        "Build energy for verse entry",
+        "Classic I-IV-V progression"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:45",
+      "technique": "Power Chords",
+      "key": "E major",
+      "description": "Modified I-IV-I-V progression creates tension without resolution",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "E5 | A5 | E5 | B5",
+      "notes": [
+        "Modified progression builds tension",
+        "Vocal melody over power chords",
+        "Steady quarter-note rhythm",
+        "Prepare for chorus resolution"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:45-2:30",
+      "technique": "Power Chords",
+      "key": "E major", 
+      "description": "Complete I-IV-V-I provides satisfying resolution",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "E5 | A5 | B5 | E5",
+      "notes": [
+        "Classic I-IV-V-I resolution",
+        "Anthemic vocal melody",
+        "Full band arrangement",
+        "Most memorable section"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "3:30-4:15",
+      "technique": "Power Chords",
+      "key": "E major",
+      "description": "♭VI-♭III-♭VII-IV progression borrowed from parallel minor",
+      "chords": ["C5", "G5", "D5", "A5"],
+      "progression": "C5 | G5 | D5 | A5",
+      "notes": [
+        "Borrowed chords from E minor",
+        "Creates darker harmonic color",
+        "Builds tension for final chorus",
+        "Chromatic movement in bass"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gretsch G6120 (Malcolm) / Gibson SG (Angus)",
+      "alternatives": ["Gibson Les Paul", "Epiphone SG", "Any humbucker-equipped guitar"],
+      "pickup": "Humbucker pickups for thick, sustaining tone"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead (Plexi era) / Marshall JTM45/100",
+      "alternatives": ["Marshall JCM800", "Orange OR15/30", "Friedman BE-OD pedal"],
+      "settings": {
+        "gain": "6-7/10",
+        "treble": "7/10",
+        "middle": "8/10",
+        "bass": "7/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "Natural amp overdrive, moderate crunch",
+      "reverb": "Minimal - studio reverb only",
+      "other": "Direct guitar to amp - no pedals needed"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started",
+      "skills": [
+        "Learn E5, A5, B5 power chords",
+        "Practice basic chord changes slowly",
+        "Work on consistent down-picking",
+        "Master simple I-IV-V progression"
+      ],
+      "timeEstimate": "1-3 weeks"
+    },
+    "intermediate": {
+      "title": "Building Skills",
+      "skills": [
+        "Master complete song structure",
+        "Work on rhythm guitar precision",
+        "Learn bridge section chord changes",
+        "Play along with original recording"
+      ],
+      "timeEstimate": "3-6 weeks"
+    },
+    "advanced": {
+      "title": "Mastery Goals",
+      "skills": [
+        "Add lead guitar solos",
+        "Perfect Malcolm Young rhythm style",
+        "Master complete arrangement",
+        "Perform with AC/DC energy and attitude"
+      ],
+      "timeEstimate": "6-10 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Thunderstruck",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "similarity": "Classic AC/DC power chord approach and energy"
+      },
+      {
+        "title": "Back in Black",
+        "link": "/lessons/songs/song-analysis/back-in-black", 
+        "similarity": "Similar power chord progressions and rhythm"
+      },
+      {
+        "title": "Highway to Hell",
+        "link": "/lessons/songs/song-analysis/highway-to-hell",
+        "similarity": "Anthemic chorus and classic rock structure"
+      },
+      {
+        "title": "You Shook Me All Night Long",
+        "link": "/lessons/songs/song-analysis/you-shook-me-all-night-long",
+        "similarity": "E major key and similar chord progressions"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Power chord riffs",
+        "similarity": "Classic power chord progression and rhythm"
+      },
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "technique": "I-IV-V progression",
+        "similarity": "Same basic chord progression structure"
+      },
+      {
+        "title": "Louie Louie",
+        "artist": "The Kingsmen",
+        "technique": "Simple power chords",
+        "similarity": "Three-chord rock progression"
+      },
+      {
+        "title": "Born to Be Wild",
+        "artist": "Steppenwolf",
+        "technique": "Classic rock rhythm",
+        "similarity": "Similar driving rhythm and energy"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the chord changes",
+      "Over-saturating the amp tone",
+      "Playing too fast for the groove",
+      "Missing the rhythmic pocket with drums"
+    ],
+    "practiceRoutine": [
+      "Warm up with chromatic exercises",
+      "Practice chord changes slowly",
+      "Work on down-picking consistency",
+      "Play along with backing track",
+      "Record yourself for timing assessment"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM for chord changes",
+      "Gradually increase to 116 BPM",
+      "Practice with quarter-note click",
+      "Focus on staying in the pocket"
+    ]
+  },
+  "references": {
+    "ultimateGuitar": "https://www.ultimate-guitar.com/search.php?title=for+those+about+to+rock+ac+dc",
+    "officialTab": "Available on Ultimate Guitar with high ratings",
+    "videoLessons": [
+      "Multiple AC/DC rhythm guitar tutorials available",
+      "Focus on Malcolm Young's rhythm technique",
+      "Classic rock power chord masterclasses"
+    ]
+  }
+}

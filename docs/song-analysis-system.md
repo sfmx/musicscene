@@ -25,6 +25,69 @@ This system separates song analysis content from presentation by using JSON data
 - **Easy to create** new song pages
 - **Consistent navigation** and layout
 
+## Quick Start with Page Template
+
+The fastest way to create a new song analysis page is using the standardized page template:
+
+### Step 1: Use the Page Template
+
+Copy the template from `src/components/SongAnalysis/_page-template.tsx` to your new song directory:
+
+```bash
+# Create new song directory
+mkdir -p src/app/lessons/songs/song-analysis/your-song-slug
+
+# Copy template (then edit the copied file)
+cp src/components/SongAnalysis/_page-template.tsx src/app/lessons/songs/song-analysis/your-song-slug/page.tsx
+```
+
+### Step 2: Customize the Template
+
+Replace the placeholders in your new `page.tsx`:
+
+```typescript
+"use client";
+
+import React from "react";
+import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
+
+export default function YourSongNameAnalysis() {
+  return (
+    <SongAnalysisPageTemplate 
+      songSlug="your-song-slug" 
+      displayName="Your Song Display Name" 
+    />
+  );
+}
+```
+
+**Examples:**
+- **Back in Black**: `BackInBlackAnalysis()`, `songSlug="back-in-black"`, `displayName="Back in Black"`
+- **Sweet Child O' Mine**: `SweetChildOMineAnalysis()`, `songSlug="sweet-child-o-mine"`, `displayName="Sweet Child O' Mine"`
+
+### Step 3: Benefits of the Template
+
+- **Automatic error handling** - Professional error pages for missing data
+- **Consistent structure** - All pages follow the same pattern
+- **Helpful error messages** - Clear debugging information for developers
+- **Zero boilerplate** - Just 3 lines of actual code per page
+- **Type safety** - Full TypeScript support
+
+### Option A: Automated Script (Recommended)
+
+Use the song page generator script for fastest setup:
+
+```bash
+node scripts/create-song-page.js "Back in Black" "AC/DC"
+```
+
+This will:
+- Create the song directory
+- Generate the page component with correct naming
+- Provide step-by-step instructions for remaining setup
+
+### Option B: Manual Setup
+
 ## Creating a New Song Analysis
 
 ### Step 1: Create JSON Data File
@@ -40,7 +103,33 @@ This system separates song analysis content from presentation by using JSON data
 cp src/data/songs/_template.json src/data/songs/back-in-black.json
 ```
 
-### Step 2: Add Song to Data Registry
+### Step 2: Create Page Using Template
+
+1. Create new song directory
+2. Copy the page template
+3. Customize the template with your song information
+
+```bash
+# Create directory
+mkdir -p src/app/lessons/songs/song-analysis/back-in-black
+
+# Copy and edit template
+cp src/components/SongAnalysis/_page-template.tsx src/app/lessons/songs/song-analysis/back-in-black/page.tsx
+```
+
+**Template customization:**
+```typescript
+export default function BackInBlackAnalysis() {
+  return (
+    <SongAnalysisPageTemplate 
+      songSlug="back-in-black" 
+      displayName="Back in Black" 
+    />
+  );
+}
+```
+
+### Step 3: Add Song to Data Registry
 
 Update `src/lib/songData.ts`:
 
@@ -58,35 +147,6 @@ export function getSongData(songSlug: string): SongData | null {
 
 export function getAllSongSlugs(): string[] {
   return ['thunderstruck', 'back-in-black']; // Add new song
-}
-```
-
-### Step 3: Create Page Component
-
-Create `src/app/lessons/songs/song-analysis/[song-slug]/page.tsx`:
-
-```typescript
-"use client";
-
-import React from "react";
-import SongAnalysisPage from '@/components/SongAnalysis/SongAnalysisPage';
-import { getSongData } from '@/lib/songData';
-
-export default function BackInBlackAnalysis() {
-  const songData = getSongData('back-in-black');
-  
-  if (!songData) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-600 mb-4">Song Data Not Found</h1>
-          <p className="text-gray-600">Unable to load Back in Black analysis data.</p>
-        </div>
-      </div>
-    );
-  }
-
-  return <SongAnalysisPage songData={songData} />;
 }
 ```
 

@@ -1,4 +1,5 @@
 import thunderstruckData from '@/data/songs/thunderstruck.json';
+import forThoseAboutToRockData from '@/data/songs/for-those-about-to-rock.json';
 
 export interface SongData {
   songInfo: {
@@ -112,6 +113,7 @@ export interface SongData {
 export function getSongData(songSlug: string): SongData | null {
   const songDataMap: Record<string, SongData> = {
     'thunderstruck': thunderstruckData as SongData,
+    'for-those-about-to-rock': forThoseAboutToRockData as SongData,
     // Add more songs here as they're created
   };
   
@@ -119,5 +121,5 @@ export function getSongData(songSlug: string): SongData | null {
 }
 
 export function getAllSongSlugs(): string[] {
-  return ['thunderstruck'];
+  return ['thunderstruck', 'for-those-about-to-rock'];
 }
