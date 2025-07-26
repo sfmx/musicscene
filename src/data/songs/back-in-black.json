@@ -1,0 +1,284 @@
+{
+  "songInfo": {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "album": "Back in Black",
+    "released": "1980",
+    "genre": "Hard Rock / Heavy Metal",
+    "tempo": "94 BPM",
+    "duration": "4:15",
+    "key": "E major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Power Chords",
+      "description": "Foundation of the song using classic E5-D5-A5-E5 progression",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["E5", "D5", "A5"],
+        "progression": "E5 - D5 - A5 - E5",
+        "notes": [
+          "Classic AC/DC power chord sound",
+          "Simple two-note chord shapes",
+          "Focus on clean transitions"
+        ],
+        "tips": [
+          "Use consistent downstrokes for maximum impact",
+          "Mute unused strings to prevent noise",
+          "Keep chord changes tight and precise"
+        ]
+      }
+    },
+    {
+      "name": "Palm Muting",
+      "description": "Essential rhythm technique for the chunky, percussive sound",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Light palm contact with bridge",
+          "Creates tight, controlled sound",
+          "Essential for AC/DC rhythm tone"
+        ],
+        "tips": [
+          "Don't press too hard with palm",
+          "Find the sweet spot near the bridge",
+          "Practice clean/muted contrast"
+        ]
+      }
+    },
+    {
+      "name": "Downstroke Picking",
+      "description": "All rhythm parts use consistent downstrokes for power and groove",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Exclusive downstroke approach",
+          "Creates heavier, more powerful sound",
+          "Malcolm Young's signature technique"
+        ],
+        "tips": [
+          "Keep pick angle consistent",
+          "Use arm motion, not just wrist",
+          "Build up stamina gradually"
+        ]
+      }
+    },
+    {
+      "name": "Blues Scale Lead",
+      "description": "Solo sections use E minor pentatonic and blues scale patterns",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "E minor pentatonic foundation",
+          "12th fret position primarily",
+          "String bending and vibrato essential"
+        ],
+        "tips": [
+          "Master the box pattern first",
+          "Focus on note choice over speed",
+          "Develop strong vibrato technique"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:12",
+      "technique": "Power Chords",
+      "key": "E major",
+      "description": "Iconic opening riff that defines the song",
+      "chords": ["E5", "D5", "A5"],
+      "progression": "E5 - D5 - A5 - E5",
+      "vexTab": "options space=20\ntabstave notation=true time=4/4\nnotes :q (0/6.2/5) :q (10/6.12/5) :q (5/5.7/4) :q (0/6.2/5)",
+      "notes": [
+        "Play with strong downstrokes",
+        "Let each chord ring briefly",
+        "Focus on clean transitions",
+        "Sets the tempo and mood"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:12-1:05",
+      "technique": "Palm Muted Power Chords", 
+      "key": "E major",
+      "description": "Verses use palm-muted power chords with vocal melody space",
+      "chords": ["E5", "D5", "A5"],
+      "progression": "E5 - E5 - D5 - A5 - E5",
+      "notes": [
+        "Light palm muting throughout",
+        "Leave space for vocal melody",
+        "Maintain steady groove",
+        "Simple but effective progression"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:05-1:35",
+      "technique": "Power Chords",
+      "key": "E major", 
+      "description": "Anthemic chorus with full power chord attack",
+      "chords": ["E5", "D5", "A5"],
+      "progression": "E5 - D5 - A5 - E5 (repeat)",
+      "notes": [
+        "Full power chord attack",
+        "No palm muting",
+        "Drive the energy forward",
+        "Iconic hook section"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:35-3:15",
+      "technique": "Blues Scale Lead",
+      "key": "E major/minor",
+      "description": "Classic Angus Young solo using E minor pentatonic",
+      "vexTab": "options space=20\ntabstave notation=true time=4/4\nnotes :8 12/1 15/1 12/1 14/1 | :q 12/2 :8 14/2 15/2 12/2",
+      "notes": [
+        "E minor pentatonic scale",
+        "12th fret position focus",
+        "String bending and vibrato",
+        "Melodic over technical"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "3:15-3:45",
+      "technique": "Power Chords",
+      "key": "E major",
+      "description": "Dynamic bridge section building to final chorus",
+      "chords": ["E5", "D5", "A5", "B5"],
+      "progression": "E5 - D5 - A5 - B5 - E5",
+      "notes": [
+        "Slight progression variation",
+        "Builds energy for finale",
+        "Add B5 for tension",
+        "Setup for final chorus"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard",
+      "alternatives": ["Gibson Les Paul", "Epiphone SG", "Gretsch G6120"],
+      "pickup": "Humbuckers (bridge pickup primarily)"
+    },
+    "amp": {
+      "recommended": "Marshall Plexi Super Lead",
+      "alternatives": ["Marshall JCM800", "Orange OR15", "Friedman BE-OD"],
+      "settings": {
+        "gain": "6/10",
+        "bass": "7/10", 
+        "middle": "8/10",
+        "treble": "7/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Amp distortion only",
+      "reverb": "Minimal spring reverb",
+      "other": "No effects - pure amp tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Basic Power Chords",
+      "skills": [
+        "Learn basic E5, D5, A5 power chords",
+        "Practice chord changes slowly",
+        "Develop consistent downstroke technique",
+        "Play intro riff cleanly"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Rhythm Mastery",
+      "skills": [
+        "Master palm muting technique",
+        "Play complete song structure",
+        "Develop proper AC/DC rhythm feel",
+        "Learn basic lead guitar fills"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "advanced": {
+      "title": "Lead Guitar Skills",
+      "skills": [
+        "Play complete guitar solo",
+        "Master Angus Young lead style",
+        "Improvise in the blues scale",
+        "Perform with full band energy"
+      ],
+      "timeEstimate": "8-12 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Highway to Hell",
+        "similarity": "Same chord progression and techniques"
+      },
+      {
+        "title": "For Those About to Rock",
+        "link": "/lessons/songs/song-analysis/for-those-about-to-rock",
+        "similarity": "Similar power chord approach"
+      },
+      {
+        "title": "Thunderstruck",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "similarity": "AC/DC style with more complex techniques"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Power Chords",
+        "similarity": "Classic power chord foundation"
+      },
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "technique": "Simple Progressions",
+        "similarity": "I-bVII-IV progression foundation"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing through chord changes",
+      "Not using consistent downstrokes",
+      "Palm muting too heavily",
+      "Playing too fast initially"
+    ],
+    "practiceRoutine": [
+      "Start with the intro riff - it's the foundation of the song",
+      "Focus on clean chord changes before adding speed",
+      "Practice palm muting separately from chord changes",
+      "Master the rhythm guitar before attempting lead parts"
+    ],
+    "metronomeWork": [
+      "Use a metronome to develop steady timing",
+      "Start at 70 BPM and gradually increase",
+      "Record yourself to check for timing issues",
+      "Study Malcolm Young's rhythm style - pocket playing is key"
+    ]
+  },
+  "references": {
+    "ultimateGuitar": "https://www.ultimate-guitar.com/search.php?title=back+in+black+ac+dc",
+    "videoLessons": ["https://www.youtube.com/results?search_query=back+in+black+guitar+lesson"]
+  }
+}
