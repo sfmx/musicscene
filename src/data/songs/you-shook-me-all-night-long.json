@@ -1,0 +1,287 @@
+{
+  "songInfo": {
+    "title": "You Shook Me All Night Long",
+    "artist": "AC/DC",
+    "album": "Back in Black",
+    "released": "1980",
+    "genre": "Hard Rock",
+    "tempo": "120 BPM",
+    "duration": "3:30",
+    "key": "G major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Groove-Based Power Chords",
+      "description": "Malcolm Young's signature pocket rhythm playing with emphasis on groove over speed",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Focus on the groove rather than strict timing",
+          "Slight swing feel creates the characteristic AC/DC pocket",
+          "Clean chord transitions are essential for the flow"
+        ],
+        "sequence": [
+          "Master basic G5, C5, D5 power chord shapes",
+          "Practice chord transitions slowly and cleanly",
+          "Add groove and pocket timing gradually",
+          "Incorporate selective palm muting for dynamics"
+        ],
+        "tips": [
+          "Practice with a metronome but allow for slight timing variations",
+          "Use selective palm muting to create dynamics",
+          "Keep the right hand relaxed for the groove feel"
+        ],
+        "chords": ["G5", "C5", "D5"],
+        "progression": "G5 - C5 - G5 - D5"
+      }
+    },
+    {
+      "name": "Pentatonic Lead Fills",
+      "description": "Simple but effective pentatonic runs in the style of Angus Young",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "12th fret position is the sweet spot for this song",
+          "Focus on melodic phrasing over technical complexity",
+          "Use slight bends and vibrato for expression"
+        ],
+        "sequence": [
+          "Learn G major pentatonic scale in 12th position",
+          "Practice simple ascending and descending runs",
+          "Add bends and vibrato for expression",
+          "Incorporate fills between rhythm sections"
+        ],
+        "tips": [
+          "Start with simple runs before attempting complex fills",
+          "Listen to the original recording for phrasing ideas",
+          "Practice the pentatonic scale until it's automatic"
+        ],
+        "chords": ["G5"],
+        "progression": "G major pentatonic scale - 12th fret position"
+      }
+    },
+    {
+      "name": "Selective Palm Muting",
+      "description": "Strategic use of palm muting to create dynamic contrast",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Not full palm muting - just touch the strings lightly",
+          "Use during verses for contrast with open choruses",
+          "Creates the chunky rhythm sound AC/DC is known for"
+        ],
+        "sequence": [
+          "Practice basic palm muting technique",
+          "Learn to switch between muted and open quickly",
+          "Apply selectively during verse sections",
+          "Maintain chord clarity while muting"
+        ],
+        "tips": [
+          "Practice switching between muted and open quickly",
+          "Keep the muting consistent across all strings",
+          "Don't over-mute - you still want chord clarity"
+        ],
+        "chords": ["G5", "C5", "D5"],
+        "progression": "Applied to rhythm sections for tonal variety"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Riff/Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Groove-Based Power Chords",
+      "key": "G major",
+      "description": "The iconic opening riff that establishes the groove and sets up the entire song",
+      "tab": "G|--12--12--12--12--\\nD|--12--12--12--12--\\nA|--10--10--10--10--",
+      "chords": ["G5"],
+      "progression": "G5 groove pattern",
+      "notes": [
+        "Establishes the pocket groove that defines the song",
+        "Use consistent downstrokes for the chunky sound",
+        "Focus on the rhythm more than the notes themselves"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:45",
+      "technique": "Groove-Based Power Chords",
+      "key": "G major",
+      "description": "Classic verse progression with selective palm muting creating dynamic interest",
+      "tab": "G|--12---5----12---7--\\nD|--12---5----12---7--\\nA|--10---3----10---5--",
+      "chords": ["G5", "C5", "D5"],
+      "progression": "G5 - C5 - G5 - D5",
+      "notes": [
+        "Use selective palm muting on the G5 for verses",
+        "Keep chord transitions clean and smooth",
+        "Maintain the groove pocket throughout"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:45-1:15",
+      "technique": "Groove-Based Power Chords",
+      "key": "G major",
+      "description": "Open, driving chorus with the classic AC/DC power chord progression",
+      "tab": "G|--12---5----7----12--\\nD|--12---5----7----12--\\nA|--10---3----5----10--",
+      "chords": ["G5", "C5", "D5"],
+      "progression": "G5 - C5 - D5 - G5",
+      "notes": [
+        "Open, ringing chords without palm muting",
+        "Emphasize the D5 to G5 resolution",
+        "Stronger attack on chorus for dynamic lift"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:30-2:45",
+      "technique": "Groove-Based Power Chords",
+      "key": "G major",
+      "description": "Breakdown section that builds tension before returning to the main groove",
+      "tab": "G|--5----7----12---12--\\nD|--5----7----12---12--\\nA|--3----5----10---10--",
+      "chords": ["C5", "D5", "G5"],
+      "progression": "C5 - D5 - G5 - G5",
+      "notes": [
+        "Slightly different chord order creates tension",
+        "Build intensity through the progression",
+        "Sets up the return to the main riff perfectly"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "1:45-2:30",
+      "technique": "Pentatonic Lead Fills",
+      "key": "G major",
+      "description": "Classic Angus Young solo featuring G major pentatonic runs with melodic phrasing",
+      "tab": "e|--12-15--12-15--12-14--12-15--\\nB|--12-15--12-15--12-15--------",
+      "chords": ["G5"],
+      "progression": "G major pentatonic - 12th fret position",
+      "notes": [
+        "Focus on the 12th fret pentatonic position",
+        "Use bends and vibrato for expression",
+        "Melodic phrasing over technical complexity"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG (Angus Young signature)",
+      "alternatives": ["Epiphone SG", "Any double-cutaway guitar with humbuckers"],
+      "pickup": "Humbucker pickups for full, warm tone"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 or JCM800",
+      "alternatives": ["Marshall DSL40C", "Orange Rocker 30", "Fender Hot Rod DeVille"],
+      "settings": {
+        "gain": "5/10",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Natural tube amp overdrive only",
+      "reverb": "Minimal room reverb from amp",
+      "other": "None - guitar straight into amp for pure tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Power Chord Foundations",
+      "skills": [
+        "Master G5, C5, and D5 power chord shapes",
+        "Practice basic eighth-note rhythm patterns",
+        "Work on clean chord transitions",
+        "Develop basic palm muting technique"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "title": "Groove Development",
+      "skills": [
+        "Practice with slight swing feel and timing variations",
+        "Master selective palm muting techniques",
+        "Play along with the original recording",
+        "Learn basic G major pentatonic scale"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "advanced": {
+      "title": "Style Mastery",
+      "skills": [
+        "Perfect the AC/DC pocket groove feel",
+        "Add simple lead fills between rhythm sections",
+        "Develop personal expression within the AC/DC framework",
+        "Master the complete song arrangement"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Back in Black",
+        "link": "/lessons/songs/song-analysis/back-in-black",
+        "similarity": "Similar groove-based power chord approach and tempo"
+      },
+      {
+        "title": "Highway to Hell",
+        "link": "/lessons/songs/song-analysis/highway-to-hell",
+        "similarity": "Comparable difficulty level and chord progression complexity"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "La Grange",
+        "artist": "ZZ Top",
+        "technique": "Groove-Based Power Chords",
+        "similarity": "Similar focus on groove and pocket timing over complexity"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Simple but Effective Riffs",
+        "similarity": "Demonstrates how simple riffs can be incredibly effective"
+      },
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "technique": "Basic Chord Progressions",
+        "similarity": "Shows the power of simple chord progressions in rock music"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing too rigidly - the groove requires slight timing variations",
+      "Over-muting with palm muting - should be selective and light",
+      "Rushing the tempo - the pocket groove sits slightly behind the beat",
+      "Focusing too much on technique over groove and feel"
+    ],
+    "practiceRoutine": [
+      "Start by practicing chord transitions slowly and cleanly",
+      "Work with a metronome but allow for slight groove variations",
+      "Practice switching between palm muted and open playing",
+      "Play along with the original recording to internalize the groove",
+      "Focus on one section at a time before putting it all together"
+    ],
+    "metronomeWork": [
+      "Practice at 100 BPM initially, then work up to 120 BPM",
+      "Try playing slightly behind the beat to get the pocket feel",
+      "Practice chord progressions with and without palm muting",
+      "Work on maintaining groove consistency across different sections"
+    ]
+  }
+}

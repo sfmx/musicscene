@@ -152,7 +152,7 @@ export default function SongLessonsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Song Analyses</h2>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <Link 
-              href="/lessons/songs/breakdowns/were-not-gonna-take-it"
+              href="/lessons/songs/song-analysis/were-not-gonna-take-it"
               className="bg-white rounded-lg border border-gray-200 p-4 hover:border-blue-300 hover:shadow-md transition-all"
             >
               <div className="flex items-center space-x-3">

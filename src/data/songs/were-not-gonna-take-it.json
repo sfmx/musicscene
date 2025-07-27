@@ -1,0 +1,287 @@
+{
+  "songInfo": {
+    "title": "We're Not Gonna Take It",
+    "artist": "Twisted Sister",
+    "album": "Stay Hungry",
+    "released": "1984",
+    "genre": "Heavy Metal",
+    "tempo": "140 BPM",
+    "duration": "3:38",
+    "key": "E major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Descending Power Chord Progressions",
+      "description": "Classic chromatic descending power chord pattern that creates tension and release",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Creates dramatic effect through chromatic descent",
+          "Requires clean chord transitions between positions",
+          "Foundation of the song's memorable hook"
+        ],
+        "sequence": [
+          "Master individual power chord shapes (E5, D#5, C#5, B5)",
+          "Practice transitions slowly and cleanly",
+          "Build up speed while maintaining clarity",
+          "Add rhythmic emphasis and timing"
+        ],
+        "tips": [
+          "Keep consistent finger pressure across all chords",
+          "Use economy of motion between chord changes",
+          "Practice with a metronome to maintain timing"
+        ],
+        "chords": ["E5", "D#5", "C#5", "B5"],
+        "progression": "E5 - D#5 - C#5 - B5"
+      }
+    },
+    {
+      "name": "Heavy Palm Muting",
+      "description": "Aggressive palm muting technique for chunky, percussive rhythm sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Creates the tight, percussive sound essential to metal rhythm",
+          "Applied primarily during verse sections",
+          "Contrasts with open chorus sections for dynamics"
+        ],
+        "sequence": [
+          "Practice basic palm muting technique",
+          "Apply to simple power chord patterns",
+          "Work on switching between muted and open",
+          "Develop consistent muting pressure"
+        ],
+        "tips": [
+          "Rest palm edge lightly on strings near bridge",
+          "Maintain consistent pressure for even tone",
+          "Practice switching between muted and open quickly"
+        ],
+        "chords": ["E5", "B5", "A5"],
+        "progression": "E5 - B5 - E5 - A5 (all palm muted)"
+      }
+    },
+    {
+      "name": "Whammy Bar Effects",
+      "description": "Tremolo arm techniques for expressive lead guitar and solo sections",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Adds expressive elements to lead guitar sections",
+          "Requires guitar with tremolo bridge system",
+          "Used for pitch bending and vibrato effects"
+        ],
+        "sequence": [
+          "Learn basic tremolo bridge operation",
+          "Practice subtle vibrato effects",
+          "Work on pitch bending techniques",
+          "Integrate with pentatonic scale runs"
+        ],
+        "tips": [
+          "Use gentle pressure for subtle effects",
+          "Keep guitar in tune after whammy use",
+          "Practice returning to pitch accurately"
+        ],
+        "chords": ["E5"],
+        "progression": "E major pentatonic with whammy effects"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro/Main Riff",
+      "timeStamp": "0:00-0:15",
+      "technique": "Descending Power Chord Progressions",
+      "key": "E major",
+      "description": "The iconic descending chromatic power chord pattern that defines the song",
+      "tab": "D|--14--13--11--9--\\nA|--14--13--11--9--\\nE|--12--11--9---7--",
+      "chords": ["E5", "D#5", "C#5", "B5"],
+      "progression": "E5 - D#5 - C#5 - B5",
+      "notes": [
+        "Play with authority and clean chord transitions",
+        "Emphasize the downbeat of each chord change",
+        "This riff repeats throughout as the main hook"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:45",
+      "technique": "Heavy Palm Muting",
+      "key": "E major",
+      "description": "Palm muted power chord pattern creating tight, percussive rhythm foundation",
+      "tab": "D|--14-14-14-14--9-9-9-9--\\nA|--14-14-14-14--9-9-9-9--\\nE|--12-12-12-12--7-7-7-7--",
+      "chords": ["E5", "B5"],
+      "progression": "E5 - B5 (palm muted pattern)",
+      "notes": [
+        "Heavy palm muting throughout for chunky tone",
+        "Consistent eighth-note rhythm pattern",
+        "Keep chord changes tight and percussive"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:45-1:15",
+      "technique": "Descending Power Chord Progressions",
+      "key": "E major",
+      "description": "Open power chord progression with the signature descending ending",
+      "tab": "D|--14--9--14--7--14--9--14-13-11-9--\\nA|--14--9--14--7--14--9--14-13-11-9--\\nE|--12--7--12--5--12--7--12-11-9--7--",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - B5 - E5 - A5 - E5 - B5 - descending pattern",
+      "notes": [
+        "Open, ringing chords without palm muting",
+        "Build energy through the progression",
+        "End with the signature descending chromatic run"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:30-2:45",
+      "technique": "Descending Power Chord Progressions",
+      "key": "E major",
+      "description": "Ascending power chord pattern that builds tension before the final chorus",
+      "tab": "D|--14-15-16--9-9-9-9--\\nA|--14-15-16--9-9-9-9--\\nE|--12-13-14--7-7-7-7--",
+      "chords": ["E5", "F5", "F#5", "B5"],
+      "progression": "E5 - F5 - F#5 - B5",
+      "notes": [
+        "Ascending pattern creates building tension",
+        "Contrasts with the usual descending patterns",
+        "Sets up the return to the main chorus effectively"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "1:45-2:30",
+      "technique": "Whammy Bar Effects",
+      "key": "E major",
+      "description": "Pentatonic-based solo with whammy bar effects and expressive bending",
+      "tab": "e|--12-15-12-15-12-14-12-15--\\nB|--12-15-12-15-12-15--------",
+      "chords": ["E5"],
+      "progression": "E major pentatonic - 12th fret position",
+      "notes": [
+        "Focus on E major pentatonic scale patterns",
+        "Use whammy bar for expressive pitch bending",
+        "Simple but effective melodic phrasing"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul or similar solid body with humbuckers",
+      "alternatives": ["ESP/LTD Eclipse", "Epiphone Les Paul", "Any solid body with humbucker pickups"],
+      "pickup": "Humbucker pickups for high-gain distortion tone"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 or high-gain tube amplifier",
+      "alternatives": ["Marshall DSL40C", "Orange Rockerverb", "Mesa Boogie Rectifier"],
+      "settings": {
+        "gain": "8/10",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "High-gain tube amp distortion or overdrive pedal",
+      "reverb": "Minimal reverb for clarity",
+      "other": "Whammy bar/tremolo bridge system for solo effects"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Power Chord Foundation",
+      "skills": [
+        "Master basic power chord shapes (E5, B5, A5)",
+        "Practice simple chord transitions",
+        "Learn basic palm muting technique",
+        "Work on consistent rhythm patterns"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "intermediate": {
+      "title": "Technique Development",
+      "skills": [
+        "Master the descending chromatic progression",
+        "Develop heavy palm muting for metal rhythm",
+        "Practice switching between muted and open sections",
+        "Learn the complete song structure"
+      ],
+      "timeEstimate": "4-5 weeks"
+    },
+    "advanced": {
+      "title": "Expression and Lead Work",
+      "skills": [
+        "Learn E major pentatonic scale for solos",
+        "Master whammy bar techniques and effects",
+        "Develop personal expression within the metal framework",
+        "Perfect timing and dynamics throughout the song"
+      ],
+      "timeEstimate": "5-6 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Thunderstruck",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "similarity": "Similar high-energy metal approach with signature riffs"
+      },
+      {
+        "title": "Back in Black",
+        "link": "/lessons/songs/song-analysis/back-in-black",
+        "similarity": "Power chord foundation and palm muting techniques"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "technique": "Descending Power Chord Progressions",
+        "similarity": "Famous for its descending chromatic riff pattern"
+      },
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "technique": "Heavy Palm Muting",
+        "similarity": "Demonstrates advanced palm muting in metal rhythm"
+      },
+      {
+        "title": "Eruption",
+        "artist": "Van Halen",
+        "technique": "Whammy Bar Effects",
+        "similarity": "Showcases advanced tremolo arm techniques"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the descending chord progression - take time for clean transitions",
+      "Inconsistent palm muting pressure causing uneven tone",
+      "Over-using the whammy bar - subtle effects are more musical",
+      "Not contrasting verse and chorus dynamics properly"
+    ],
+    "practiceRoutine": [
+      "Start with slow practice of the descending progression",
+      "Work on palm muting with simple patterns before full song",
+      "Practice verse and chorus sections separately before combining",
+      "Use metronome to maintain consistent timing throughout",
+      "Focus on clean chord transitions at slower tempos first"
+    ],
+    "metronomeWork": [
+      "Practice at 100 BPM initially, work up to full 140 BPM",
+      "Focus on downbeat emphasis in the descending progression",
+      "Practice palm muted sections with steady eighth-note feel",
+      "Work on timing consistency between different song sections"
+    ]
+  }
+}

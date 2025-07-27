@@ -1,0 +1,268 @@
+{
+  "songInfo": {
+    "title": "Sweet Home Alabama",
+    "artist": "Lynyrd Skynyrd",
+    "album": "Second Helping",
+    "released": "1974",
+    "genre": "Southern Rock",
+    "tempo": "98 BPM",
+    "duration": "4:43",
+    "key": "D Major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "techniques": [
+    {
+      "name": "Open Chord Strumming",
+      "description": "Full cowboy chords played with relaxed southern rock rhythm",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["D", "C", "G"],
+        "progression": "D - C - G - D",
+        "notes": [
+          "Use full open chord shapes",
+          "Emphasize downbeats for southern rock feel",
+          "Let chords ring between changes"
+        ],
+        "tips": [
+          "Keep strumming relaxed and laid-back",
+          "Focus on clean chord changes",
+          "Practice the D-C-G progression slowly first"
+        ]
+      }
+    },
+    {
+      "name": "Fingerpicking Intro",
+      "description": "Classical fingerpicking pattern over the main chord progression",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "chords": ["D", "C", "G"],
+        "progression": "D - C - G (repeating)",
+        "notes": [
+          "Thumb plays bass notes on beats 1 and 3",
+          "Fingers alternate on treble strings",
+          "Maintain steady rhythm throughout"
+        ],
+        "tips": [
+          "Start with thumb-only bass pattern",
+          "Add treble notes gradually",
+          "Keep fingernails short for clear tone"
+        ]
+      }
+    },
+    {
+      "name": "D Major Pentatonic Lead",
+      "description": "Simple pentatonic phrases for guitar solos and fills",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "D Major Pentatonic: D-E-F#-A-B",
+          "Primary positions: 2nd, 5th, and 7th frets",
+          "Focus on bending and vibrato"
+        ],
+        "tips": [
+          "Learn the scale pattern first",
+          "Practice bends on B string 8th fret",
+          "Use space between phrases effectively"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:25",
+      "technique": "Fingerpicking Intro",
+      "key": "D Major",
+      "description": "Iconic fingerpicked introduction establishing the main progression",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D",
+      "vexTab": "options space=20 font-size=14\ntabstave notation=true time=4/4\nnotes :q 2/4 3/3 2/2 | :q 0/5 1/3 0/2 | :q 3/6 0/3 0/2 | :q 2/4 3/3 2/2",
+      "notes": [
+        "Uses classical fingerpicking technique",
+        "Thumb alternates on bass strings",
+        "Creates rhythmic foundation for entire song"
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "0:25-1:15",
+      "technique": "Open Chord Strumming",
+      "key": "D Major",
+      "description": "First verse with laid-back strumming over D-C-G progression",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D",
+      "vexTab": "options space=20 font-size=14\ntabstave notation=true time=4/4\nnotes :w (2/4.3/3.2/2.0/1) | :w (0/5.1/4.0/3.1/2.0/1) | :w (3/6.0/5.0/4.0/3.2/2.3/1) | :w (2/4.3/3.2/2.0/1)",
+      "notes": [
+        "Relaxed strumming pattern",
+        "Let chords ring naturally",
+        "Vocal melody follows chord progression"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:45",
+      "technique": "Open Chord Strumming",
+      "key": "D Major",
+      "description": "Main chorus with fuller arrangement and vocal harmonies",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D",
+      "notes": [
+        "Same progression as verse",
+        "Fuller strumming for emphasis",
+        "Three-part vocal harmony arrangement"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:30-3:15",
+      "technique": "D Major Pentatonic Lead",
+      "key": "D Major",
+      "description": "Lead guitar solo using D major pentatonic scale",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D",
+      "notes": [
+        "Uses D major pentatonic scale (D-E-F#-A-B)",
+        "Features string bending and vibrato",
+        "Melodic phrases with southern rock character"
+      ]
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "4:00-4:43",
+      "technique": "Open Chord Strumming",
+      "key": "D Major",
+      "description": "Extended outro with vocal ad-libs over repeated progression",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D (repeat to fade)",
+      "notes": [
+        "Repeated D-C-G progression",
+        "Vocal improvisations and call-and-response",
+        "Gradual fade-out ending"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard",
+      "alternatives": ["Fender Stratocaster", "Gibson SG", "Epiphone Les Paul"],
+      "pickup": "Humbucker or single-coil, neck position for warmth"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 or Fender Twin Reverb",
+      "alternatives": ["Fender Deluxe Reverb", "Vox AC30", "Marshall Plexi"],
+      "settings": {
+        "gain": "3-4/10 (clean to light breakup)",
+        "treble": "6/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "None required - amp breakup only",
+      "reverb": "Spring reverb, medium decay",
+      "other": "Light compression for lead parts"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Basic Chord Progression",
+      "skills": [
+        "Open D, C, and G chord shapes",
+        "Basic down-up strumming pattern",
+        "Smooth chord transitions",
+        "Consistent tempo and rhythm"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "title": "Fingerpicking and Lead Elements",
+      "skills": [
+        "Classical fingerpicking technique",
+        "D major pentatonic scale patterns",
+        "Basic string bending",
+        "Coordination between bass and treble"
+      ],
+      "timeEstimate": "1-2 months"
+    },
+    "advanced": {
+      "title": "Performance and Improvisation",
+      "skills": [
+        "Seamless transitions between techniques",
+        "Lead guitar improvisation",
+        "Southern rock style and feel",
+        "Three-guitar arrangement parts"
+      ],
+      "timeEstimate": "2-3 months"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [],
+    "similarTechniques": [
+      {
+        "title": "Free Bird",
+        "artist": "Lynyrd Skynyrd",
+        "technique": "D-C-G progression and southern rock style",
+        "similarity": "Same band, similar chord progression and techniques"
+      },
+      {
+        "title": "American Pie",
+        "artist": "Don McLean",
+        "technique": "Fingerpicking over simple chord progression",
+        "similarity": "Similar fingerpicking approach and chord movement"
+      },
+      {
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
+        "technique": "Classical fingerpicking patterns",
+        "similarity": "Similar fingerpicking technique and complexity level"
+      },
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "technique": "Fingerpicking and chord melody",
+        "similarity": "Advanced fingerpicking technique and musical arrangement"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo - song has a laid-back feel",
+      "Over-strumming - let chords breathe naturally",
+      "Neglecting the bass line in fingerpicking",
+      "Playing lead parts too aggressively - maintain southern smoothness"
+    ],
+    "practiceRoutine": [
+      "Start with chord progression at slow tempo",
+      "Practice fingerpicking bass pattern first",
+      "Add treble notes gradually to fingerpicking",
+      "Work on D major pentatonic scale separately",
+      "Combine all elements at performance tempo"
+    ],
+    "metronomeWork": [
+      "Practice chord changes at 80 BPM first",
+      "Gradually increase to 98 BPM performance tempo",
+      "Use metronome for fingerpicking coordination",
+      "Practice lead scale runs with metronome"
+    ]
+  },
+  "references": {
+    "ultimateGuitar": "https://www.ultimate-guitar.com/search.php?title=sweet+home+alabama+lynyrd+skynyrd",
+    "officialTab": "Available in official Lynyrd Skynyrd songbooks",
+    "videoLessons": [
+      "JustinGuitar Sweet Home Alabama lesson",
+      "Marty Schwartz fingerpicking tutorial",
+      "GuitarLessons365 complete breakdown"
+    ]
+  }
+}

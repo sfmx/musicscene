@@ -1,0 +1,276 @@
+{
+  "songInfo": {
+    "title": "Sweet Child O' Mine",
+    "artist": "Guns N' Roses",
+    "album": "Appetite for Destruction",
+    "released": "1987",
+    "genre": "Hard Rock",
+    "tempo": "125 BPM",
+    "duration": "5:03",
+    "key": "Db Major",
+    "tuning": "Eb tuning (Eb-Ab-Db-Gb-Bb-Eb) - Half-step down"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Arpeggiated Single-Note Patterns",
+      "description": "The iconic intro riff using single notes to outline chord progressions",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["D", "C", "G"],
+        "progression": "D - C - G - D",
+        "notes": [
+          "Single notes played in sequence to create chord outlines",
+          "Requires precise alternate picking technique",
+          "High register playing on 12th-15th frets"
+        ],
+        "tips": [
+          "Start slowly and focus on clean single-note execution",
+          "Use strict alternate picking for consistency",
+          "Practice chord shapes to understand the harmonic structure"
+        ]
+      }
+    },
+    {
+      "name": "Power Chord Transitions",
+      "description": "Dynamic shifts from arpeggiated patterns to power chord sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["G5", "D5", "Em", "C"],
+        "progression": "G - D - Em - C - G - D - C - D",
+        "notes": [
+          "Clean transitions between single notes and power chords",
+          "Palm muting for tighter rhythm sections",
+          "Open chord variations mixed with power chords"
+        ],
+        "tips": [
+          "Practice switching between picking styles smoothly",
+          "Use palm muting to control the power chord sections",
+          "Focus on timing during dynamic changes"
+        ]
+      }
+    },
+    {
+      "name": "Lead Guitar Techniques",
+      "description": "Advanced lead techniques including bends, vibrato, and legato playing",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "D major scale and D major pentatonic patterns",
+          "String bending with precise pitch control",
+          "Wide vibrato and sustain techniques",
+          "Legato runs and hammer-on/pull-off combinations"
+        ],
+        "tips": [
+          "Master basic D major pentatonic scale first",
+          "Practice bending to exact pitches",
+          "Develop finger strength for wide vibrato",
+          "Use light guitar strings for easier bending"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:22",
+      "technique": "Arpeggiated Single-Note Patterns",
+      "key": "Db Major",
+      "description": "Iconic arpeggiated intro riff outlining Db-Cb-Gb chord progression in Eb tuning",
+      "chords": ["Db", "Cb", "Gb"],
+      "progression": "Db - Cb - Gb - Db",
+      "vexTab": "options space=20 font-size=14\ntabstave notation=true time=4/4\nnotes :8 14/1 12/1 14/1 12/1 15/1 12/1 14/1 12/1 | :8 15/2 12/2 15/2 12/2 15/2 12/2 15/2 12/2",
+      "notes": [
+        "Single notes played at 12th-15th frets on high E and B strings",
+        "Creates harmonic outline of chord progression",
+        "Requires precise alternate picking and timing"
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "0:22-1:30",
+      "technique": "Arpeggiated Single-Note Patterns",
+      "key": "D Major",
+      "description": "Continues arpeggiated pattern under vocals with subtle variations",
+      "chords": ["D", "C", "G"],
+      "progression": "D - C - G - D",
+      "notes": [
+        "Maintains intro pattern with slight melodic variations",
+        "Supports vocal melody without overwhelming",
+        "Clean tone with light reverb"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:30-2:15",
+      "technique": "Power Chord Transitions",
+      "key": "D Major",
+      "description": "Dynamic shift to power chords and open chord strumming",
+      "chords": ["G", "D", "Em", "C"],
+      "progression": "G - D - Em - C - G - D - C - D",
+      "vexTab": "options space=20 font-size=14\ntabstave notation=true time=4/4\nnotes :w (3/6.0/5.0/4.0/3.2/2.3/1) | :w (2/4.3/3.2/2.0/1) | :w (0/6.2/5.2/4.0/3.0/2.0/1) | :w (0/5.1/4.0/3.2/2.1/1)",
+      "notes": [
+        "Full power chord and open chord strumming",
+        "Increased dynamics and energy",
+        "Classic rock chord progression"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:25-4:45",
+      "technique": "Lead Guitar Techniques",
+      "key": "D Major",
+      "description": "Extended guitar solo featuring advanced lead techniques",
+      "chords": ["G", "D", "Em", "C"],
+      "progression": "G - D - Em - C (repeating)",
+      "notes": [
+        "Uses D major and D major pentatonic scales",
+        "Features signature Slash-style bending and vibrato",
+        "High register melodic phrases with emotional expression"
+      ]
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "4:45-5:03",
+      "technique": "Power Chord Transitions",
+      "key": "D Major",
+      "description": "Final chorus repetition with gradual fade",
+      "chords": ["G", "D", "Em", "C"],
+      "progression": "G - D - Em - C - G - D - C - D",
+      "notes": [
+        "Maintains full arrangement energy",
+        "Vocal ad-libs over chord progression",
+        "Fade-out ending"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard",
+      "alternatives": ["Epiphone Les Paul", "Gibson SG", "PRS SE"],
+      "pickup": "Humbucker pickups, bridge position for lead, neck for rhythm"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 100W",
+      "alternatives": ["Marshall DSL40C", "Orange OR15", "Mesa Boogie Express"],
+      "settings": {
+        "gain": "7-8/10 (high gain for sustain)",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "High-gain amp distortion, possible overdrive boost",
+      "reverb": "Hall reverb, medium decay for ambience",
+      "other": "Light delay (200-300ms) for solo sections, possible wah pedal"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Basic Chord Foundation",
+      "skills": [
+        "Open D, C, G, and Em chord shapes",
+        "Basic strumming patterns",
+        "Simple chord progressions",
+        "Clean chord transitions"
+      ],
+      "timeEstimate": "2-3 months"
+    },
+    "intermediate": {
+      "title": "Arpeggiated Patterns and Power Chords",
+      "skills": [
+        "Single-note alternate picking",
+        "Basic arpeggiated patterns",
+        "Power chord shapes and transitions",
+        "Rhythm and lead integration"
+      ],
+      "timeEstimate": "3-6 months"
+    },
+    "advanced": {
+      "title": "Complete Song Performance",
+      "skills": [
+        "Full intro riff execution",
+        "Seamless technique transitions",
+        "Lead guitar solo techniques",
+        "Performance-level dynamics and expression"
+      ],
+      "timeEstimate": "6-12 months"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "Thunderstruck",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "similarity": "Advanced single-note picking techniques and high-energy dynamics"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "technique": "Arpeggiated intro building to power chord sections",
+        "similarity": "Similar dynamic progression from fingerpicked arpeggios to full rock arrangement"
+      },
+      {
+        "title": "More Than a Feeling",
+        "artist": "Boston",
+        "technique": "Arpeggiated patterns and harmonic progressions",
+        "similarity": "Similar use of arpeggiated single notes to create chord outlines"
+      },
+      {
+        "title": "November Rain",
+        "artist": "Guns N' Roses",
+        "technique": "Complex arrangements and lead guitar work",
+        "similarity": "Same band, similar complexity and guitar techniques"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "technique": "Emotional lead guitar and string bending",
+        "similarity": "Similar approach to melodic lead guitar and emotional expression"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the intro riff - maintain steady timing",
+      "Inconsistent alternate picking - develop strict down-up pattern",
+      "Over-bending strings in solo - practice pitch accuracy",
+      "Neglecting dynamics - contrast between sections is crucial"
+    ],
+    "practiceRoutine": [
+      "Start with chord progression at slow tempo",
+      "Practice intro riff with metronome at 80 BPM",
+      "Work on clean alternate picking technique",
+      "Practice power chord transitions separately",
+      "Combine all elements gradually increasing to 125 BPM"
+    ],
+    "metronomeWork": [
+      "Intro riff: Start at 80 BPM, build to 125 BPM",
+      "Power chord sections: Practice at 100 BPM first",
+      "Solo sections: Work individual phrases at 90 BPM",
+      "Full song integration at performance tempo"
+    ]
+  },
+  "references": {
+    "ultimateGuitar": "https://www.ultimate-guitar.com/search.php?title=sweet+child+o+mine+guns+n+roses",
+    "officialTab": "Available in official Guns N' Roses songbooks",
+    "videoLessons": [
+      "JustinGuitar Sweet Child O' Mine complete lesson",
+      "Marty Schwartz intro riff breakdown",
+      "Steve Stine lead guitar techniques"
+    ]
+  }
+}

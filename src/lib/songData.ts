@@ -2,6 +2,10 @@ import thunderstruckData from '@/data/songs/thunderstruck.json';
 import forThoseAboutToRockData from '@/data/songs/for-those-about-to-rock.json';
 import backInBlackData from '@/data/songs/back-in-black.json';
 import highwayToHellData from '@/data/songs/highway-to-hell.json';
+import youShookMeAllNightLongData from '@/data/songs/you-shook-me-all-night-long.json';
+import wereNotGonnaTakeItData from '@/data/songs/were-not-gonna-take-it.json';
+import sweetHomeAlabamaData from '@/data/songs/sweet-home-alabama.json';
+import sweetChildOMineData from '@/data/songs/sweet-child-o-mine.json';
 
 export interface SongData {
   songInfo: {
@@ -118,6 +122,10 @@ export function getSongData(songSlug: string): SongData | null {
     'for-those-about-to-rock': forThoseAboutToRockData as SongData,
     'back-in-black': backInBlackData as SongData,
     'highway-to-hell': highwayToHellData as SongData,
+    'you-shook-me-all-night-long': youShookMeAllNightLongData as SongData,
+    'were-not-gonna-take-it': wereNotGonnaTakeItData as SongData,
+    'sweet-home-alabama': sweetHomeAlabamaData as SongData,
+    'sweet-child-o-mine': sweetChildOMineData as SongData,
     // Add more songs here as they're created
   };
   
@@ -125,5 +133,5 @@ export function getSongData(songSlug: string): SongData | null {
 }
 
 export function getAllSongSlugs(): string[] {
-  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell'];
+  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell', 'you-shook-me-all-night-long', 'were-not-gonna-take-it', 'sweet-home-alabama', 'sweet-child-o-mine'];
 }

@@ -3,11 +3,11 @@
 import React from "react";
 import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
 
-export default function YouShookMeAllNightLongAnalysis() {
+export default function SweetHomeAlabamaAnalysis() {
   return (
     <SongAnalysisPageTemplate 
-      songSlug="you-shook-me-all-night-long" 
-      displayName="You Shook Me All Night Long" 
+      songSlug="sweet-home-alabama" 
+      displayName="Sweet Home Alabama" 
     />
   );
 }
