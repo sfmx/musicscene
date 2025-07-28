@@ -1,0 +1,40 @@
+# AlphaTex Introduction
+
+In this section you find all details about how to write music notation using AlphaTex. AlphaTex is a text format for writing music notation for AlphaTab. AlphaTex loading can be enabled by setting the `tex` option or loading it via `tex()` method on the API. AlphaTab will load the tex code from the element contents and parse it. You can also load it from a file like other formats. AlphaTex supports most of the features alphaTab supports overall. If you find anything missing you would like to see, feel free to initiate a Discussion on GitHub so we can find a good solution together.
+
+## Showcase
+
+Here is an example score fully rendered using alphaTex.
+
+```
+\title "Canon Rock" 
+\subtitle "JerryC" 
+\tempo 90 
+. 
+:2 19.2{v f} 17.2{v f} |
+15.2{v f} 14.2{v f} | 
+12.2{v f} 10.2{v f} | 
+12.2{v f} 14.2{v f}.4 :8 15.2 17.2 |
+14.1.2 :8 17.2 15.1 14.1{h} 17.2 | 
+15.2{v d}.4 :16 17.2{h} 15.2 :8 14.2 14.1 17.1{b (0 4 4 0)}.4 | 
+15.1.8 :16 14.1{tu 3} 15.1{tu 3} 14.1{tu 3} :8 17.2 15.1 14.1 :16 12.1{tu 3} 14.1{tu 3} 12.1{tu 3} :8 15.2 14.2 | 
+12.2 14.3 12.3 15.2 :32 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h} 14.2{h} 15.2{h}
+```
+
+## General Song Structure
+
+alphaTex has the following structure variations. Comments are supported in C-style comments via `// Single Line` and `/* Multi Line */`.
+
+```
+/* Song Metadata */
+.
+/* Song Contents */
+.
+/* Sync Points */
+```
+
+The Song Metadata and Sync Points are optional but the dots are mandatory to separate the sections in case there is any content filled.
+
+- **Song Metadata**: This section contains all information generally about the song like title.
+- **Song Contents**: This section contains defines the whole song contents with all the tracks, staves, bars, beats, notes that alphaTab supports. Bars are separated by `|` symbols.
+- **Sync Points**: alphaTab can be synchronized with external media like audio backing tracks or videos. To have the correct cursor display and highlighting, songs have to be synchronized. This section defines such markers.

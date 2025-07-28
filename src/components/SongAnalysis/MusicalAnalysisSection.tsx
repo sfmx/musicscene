@@ -1,5 +1,6 @@
 import React from 'react';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
+import SimpleAlphaTabScale from "@/components/SimpleAlphaTabScale";
 import { SongData } from '@/lib/songData';
 
 interface MusicalAnalysisSectionProps {
@@ -42,10 +43,20 @@ export default function MusicalAnalysisSection({ songData }: MusicalAnalysisSect
           {/* Scales Used */}
           <div className="mb-4">
             <h4 className="text-lg font-semibold text-gray-800 mb-2">Scales Used</h4>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {keyAndScale.scalesUsed.map((scale, index) => (
                 <div key={index} className="bg-white rounded-lg p-4">
-                  <h5 className="font-medium text-gray-800 mb-1">{scale.scale}</h5>
+                  <h5 className="font-medium text-gray-800 mb-2">{scale.scale}</h5>
+                  
+                  {/* AlphaTab Scale Rendering - Using working SimpleAlphaTabScale */}
+                  <div className="mb-3">
+                    <SimpleAlphaTabScale 
+                      scaleName={scale.scale}
+                      notes={scale.notes}
+                    />
+                  </div>
+                  
+                  {/* Notes as fallback/additional info */}
                   <p className="text-sm font-mono text-gray-600 mb-2">{scale.notes}</p>
                   <p className="text-xs text-gray-600">{scale.application}</p>
                 </div>
