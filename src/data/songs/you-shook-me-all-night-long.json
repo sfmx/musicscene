@@ -17,6 +17,58 @@
     "bass": "Beginner",
     "drums": "Intermediate"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major scale",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E - G",
+          "application": "Lead guitar fills and solo sections"
+        }
+      ],
+      "modalCharacter": "Pure major tonality with strong resolution to G, creating an uplifting, driving character typical of classic rock anthems",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["G5", "C5", "D5"],
+        "progression": "I - IV - V",
+        "description": "Classic rock I-IV-V progression in G major"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "G5 - C5 - G5 - D5",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Modified progression that avoids immediate resolution, building tension"
+        },
+        {
+          "section": "Chorus", 
+          "progression": "G5 - C5 - D5 - G5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Complete resolution with satisfying return to tonic"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C5 - D5 - G5 - G5",
+          "romanNumerals": "IV - V - I - I",
+          "description": "Builds tension through IV-V movement before resolving to extended tonic"
+        }
+      ],
+      "harmonicFunction": [
+        "G5 (I) - Establishes tonal center and provides stability",
+        "C5 (IV) - Creates harmonic movement away from tonic", 
+        "D5 (V) - Builds tension and demands resolution back to I"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Groove-Based Power Chords",

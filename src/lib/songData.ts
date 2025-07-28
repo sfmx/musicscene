@@ -6,6 +6,7 @@ import youShookMeAllNightLongData from '@/data/songs/you-shook-me-all-night-long
 import wereNotGonnaTakeItData from '@/data/songs/were-not-gonna-take-it.json';
 import sweetHomeAlabamaData from '@/data/songs/sweet-home-alabama.json';
 import sweetChildOMineData from '@/data/songs/sweet-child-o-mine.json';
+import enterSandmanData from '@/data/songs/enter-sandman.json';
 
 export interface SongData {
   songInfo: {
@@ -25,6 +26,33 @@ export interface SongData {
     leadGuitar: string;
     bass: string;
     drums: string;
+  };
+  musicalAnalysis?: {
+    keyAndScale: {
+      primaryKey: string;
+      scalesUsed: Array<{
+        scale: string;
+        notes: string;
+        application: string;
+      }>;
+      modalCharacter: string;
+      keySignature: string;
+      relativeMinor: string;
+    };
+    chordProgressions: {
+      mainProgression: {
+        chords: string[];
+        progression: string;
+        description: string;
+      };
+      sectionProgressions: Array<{
+        section: string;
+        progression: string;
+        romanNumerals: string;
+        description: string;
+      }>;
+      harmonicFunction: string[];
+    };
   };
   techniques: Array<{
     name: string;
@@ -126,6 +154,7 @@ export function getSongData(songSlug: string): SongData | null {
     'were-not-gonna-take-it': wereNotGonnaTakeItData as SongData,
     'sweet-home-alabama': sweetHomeAlabamaData as SongData,
     'sweet-child-o-mine': sweetChildOMineData as SongData,
+    'enter-sandman': enterSandmanData as SongData,
     // Add more songs here as they're created
   };
   
@@ -133,5 +162,5 @@ export function getSongData(songSlug: string): SongData | null {
 }
 
 export function getAllSongSlugs(): string[] {
-  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell', 'you-shook-me-all-night-long', 'were-not-gonna-take-it', 'sweet-home-alabama', 'sweet-child-o-mine'];
+  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell', 'you-shook-me-all-night-long', 'were-not-gonna-take-it', 'sweet-home-alabama', 'sweet-child-o-mine', 'enter-sandman'];
 }

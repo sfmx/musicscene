@@ -1,0 +1,333 @@
+{
+  "songInfo": {
+    "title": "Enter Sandman",
+    "artist": "Metallica",
+    "album": "Metallica (The Black Album)",
+    "released": "1991",
+    "genre": "Heavy Metal",
+    "tempo": "123 BPM",
+    "duration": "5:31",
+    "key": "E minor",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Palm Muting",
+      "description": "Heavy palm muting technique essential for the authentic Enter Sandman sound, used throughout the main riff and rhythm sections.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rest palm lightly on bridge, maintaining consistent pressure",
+          "Too much pressure will completely mute strings - find the sweet spot",
+          "Use consistent downstrokes for power and attack"
+        ],
+        "sequence": [
+          "Place palm edge on bridge near saddles",
+          "Apply light but consistent pressure",
+          "Strike strings with downstrokes",
+          "Maintain palm position throughout riff"
+        ],
+        "tips": [
+          "Practice slowly to develop consistent palm pressure",
+          "Focus on the low E and A strings for maximum impact",
+          "Combine with power chord shapes for full effect"
+        ],
+        "chords": ["Em", "Em/D"],
+        "progression": "Em - Em/D pattern with palm muting"
+      }
+    },
+    {
+      "name": "Power Chord Progressions",
+      "description": "Foundation power chord progressions using root and fifth intervals, providing the harmonic structure for verse and chorus sections.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Use only root and fifth for maximum power and clarity",
+          "Mute unused strings to avoid unwanted noise",
+          "Strong downstrokes for rhythmic emphasis"
+        ],
+        "sequence": [
+          "Form power chord shape (root on 6th string)",
+          "Add fifth on 5th string",
+          "Mute remaining strings with fretting hand",
+          "Execute with confident downstrokes"
+        ],
+        "tips": [
+          "Keep fretting hand close to frets for clear notes",
+          "Use pick attack for aggressive sound",
+          "Practice smooth transitions between chord changes"
+        ],
+        "chords": ["Em", "C5", "G5", "D5"],
+        "progression": "Em - C5 - G5 - D5 - Em"
+      }
+    },
+    {
+      "name": "String Bending",
+      "description": "Lead guitar technique featuring controlled string bending for expressive solo phrases, primarily in the 12th-15th fret area using E minor pentatonic scale.",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Use multiple fingers for support during bends",
+          "Focus on accurate pitch - aim for specific intervals",
+          "Combine with vibrato for sustained notes"
+        ],
+        "sequence": [
+          "Position in 12th fret E minor pentatonic box",
+          "Use ring finger for primary bends",
+          "Support with middle and index fingers",
+          "Apply controlled pressure for half-step or whole-step bends"
+        ],
+        "tips": [
+          "Practice bending to pitch with a tuner",
+          "Start with lighter gauge strings if struggling",
+          "Develop finger strength gradually"
+        ],
+        "chords": ["Em"],
+        "progression": "E minor pentatonic scale patterns"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro/Main Riff",
+      "timeStamp": "0:00-0:50",
+      "technique": "Palm Muting",
+      "key": "E minor",
+      "description": "The iconic opening riff that defines the song, featuring heavy palm muting on the low E string with syncopated rhythm patterns.",
+      "vexTab": "tabstave notation=true\nnotes 0/6 0/6 2/5 2/5 2/5 2/5 0/6 0/6 0/5 0/5 0/5 0/5",
+      "tab": "E|--------------------------------|\nB|--------------------------------|\nG|--------------------------------|\nD|--------------------------------|\nA|--2-2-2-2-2-2-0-0-0-0-0-0-------|\nE|0-0-0-0-0-0-0-0-0-0-0-0-0-------|\n  PM------------------------",
+      "chords": ["Em", "Em/D"],
+      "progression": "Em - Em/D (i chord with bass note variation)",
+      "notes": [
+        "Heavy palm muting throughout the entire riff",
+        "Emphasize downstrokes for maximum attack",
+        "Keep tempo steady at 123 BPM",
+        "Focus on the syncopated rhythm pattern"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:51-1:20",
+      "technique": "Power Chord Progressions",
+      "key": "E minor",
+      "description": "Verse section featuring Em-C chord progression with lighter palm muting, allowing chords to ring more than the intro.",
+      "vexTab": "tabstave notation=true\nnotes 0/6 3/5 | 0/6 3/5",
+      "tab": "Em:      C:\nE|-0-      -0-|\nB|-0-      -1-|\nG|-0-      -0-|\nD|-2-      -2-|\nA|-2-      -3-|\nE|-0-      ---|",
+      "chords": ["Em", "C"],
+      "progression": "Em - C - Em - C (i - ♭VI - i - ♭VI)",
+      "notes": [
+        "Lighter palm muting than intro section",
+        "Let chords ring more for harmonic content", 
+        "Maintain steady strumming pattern",
+        "Emphasize chord changes on beat one"
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:21-1:35",
+      "technique": "Palm Muting",
+      "key": "E minor",
+      "description": "Building tension section that returns to heavy palm muting, creating dynamic contrast before the chorus.",
+      "vexTab": "tabstave notation=true\nnotes 2/4 2/5 0/6 | 2/4 2/5 0/6",
+      "tab": "E|----------------|\nB|----------------|\nG|----------------|\nD|-2-2-2-2--------|\nA|-2-2-2-2--------|\nE|-0-0-0-0--------|\n  PM------",
+      "chords": ["Em"],
+      "progression": "Em (i chord with rhythmic variation)",
+      "notes": [
+        "Gradual dynamic increase building to chorus",
+        "Return to heavy palm muting technique",
+        "Maintain rhythmic precision",
+        "Create tension through repetition"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:36-2:05",
+      "technique": "Power Chord Progressions",
+      "key": "E minor",
+      "description": "Main chorus featuring the complete Em-C-G-D-Em progression with full power chord voicings and open strumming.",
+      "vexTab": "tabstave notation=true\nnotes 0/6 3/5 3/6 5/5 | 0/6",
+      "tab": "Em    C5    G5    D5    Em\nE|-----|-----|-----|-----|-----|\nB|-----|-----|-----|-----|-----|\nG|-----|--5--|-----|--7--|-----|\nD|--2--|--5--|--5--|--7--|--2--|\nA|--2--|--3--|--5--|--5--|--2--|\nE|--0--|-----|--3--|-----|--0--|",
+      "chords": ["Em", "C5", "G5", "D5"],
+      "progression": "Em - C5 - G5 - D5 - Em (i - ♭VI - ♭III - ♭VII - i)",
+      "notes": [
+        "Full volume with open strumming",
+        "Emphasize chord changes with strong attacks",
+        "No palm muting - let chords ring fully",
+        "Create sense of resolution returning to Em"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "3:15-3:45",
+      "technique": "Power Chord Progressions",
+      "key": "E minor",
+      "description": "Bridge section featuring C-G-D-Em progression with cleaner tone and arpeggiated approach.",
+      "vexTab": "tabstave notation=true\nnotes 3/5 3/6 5/5 0/6",
+      "tab": "C      G      D      Em\nE|-0---|-3---|-2---|-0---|\nB|-1---|-0---|-3---|-0---|\nG|-0---|-0---|-2---|-0---|\nD|-2---|-0---|-0---|-2---|\nA|-3---|-2---|-----|-2---|\nE|-----|-3---|-----|-0---|",
+      "chords": ["C", "G", "D", "Em"],
+      "progression": "C - G - D - Em (♭VI - ♭III - ♭VII - i)",
+      "notes": [
+        "Cleaner tone compared to other sections",
+        "Arpeggiated or lighter strumming approach",
+        "Focus on harmonic movement",
+        "Creates contrast before guitar solo"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:46-4:30",
+      "technique": "String Bending",
+      "key": "E minor",
+      "description": "Lead guitar solo featuring E minor pentatonic scale in the 12th-15th fret area with string bending and vibrato techniques.",
+      "vexTab": "tabstave notation=true\nnotes 12/2 15b17/2 15/2 12/2 | 14/3 12/3",
+      "tab": "E|-----------------------------|\nB|-15b17-15-12----12-15-12-----|\nG|-------------14----------14--|\nD|-----------------------------|\nA|-----------------------------|\nE|-----------------------------|",
+      "chords": ["Em"],
+      "progression": "E minor pentatonic scale patterns over Em chord",
+      "notes": [
+        "Primary position: 12th fret E minor pentatonic box",
+        "Focus on string bending accuracy and vibrato",
+        "Use multiple fingers for bending support",
+        "Combine legato and picked notes for variety"
+      ]
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "4:31-5:31",
+      "technique": "Palm Muting",
+      "key": "E minor", 
+      "description": "Return to the main riff with variations, gradually fading out while maintaining the heavy palm-muted character.",
+      "vexTab": "tabstave notation=true\nnotes 0/6 0/6 2/5 2/5 0/6 0/6 0/5 0/5",
+      "tab": "E|--------------------------------|\nB|--------------------------------|\nG|--------------------------------|\nD|--------------------------------|\nA|--2-2-2-2-0-0-0-0---------------|\nE|0-0-0-0-0-0-0-0-0-------fade----|\n  PM-----------------",
+      "chords": ["Em", "Em/D"],
+      "progression": "Em - Em/D (return to main riff pattern)",
+      "notes": [
+        "Return to main riff with slight variations",
+        "Gradual dynamic decrease for fade out",
+        "Maintain heavy palm muting throughout",
+        "Keep consistent tempo until final fade"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard",
+      "alternatives": ["ESP Explorer", "Epiphone Les Paul Standard", "ESP LTD EC-1000"],
+      "pickup": "EMG 81/60 active humbuckers or high-output passive humbuckers"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Mark IIC+",
+      "alternatives": ["Mesa/Boogie Mark V", "Marshall JCM800", "Boss Katana 100"],
+      "settings": {
+        "gain": "7/10",
+        "treble": "6/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "High-gain amp distortion preferred over pedals",
+      "reverb": "Minimal - studio reverb or short room reverb",
+      "other": "Noise gate recommended for tight palm-muted sections"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Enter Sandman",
+      "skills": [
+        "Learn basic Em and C chord shapes",
+        "Practice palm muting technique slowly",
+        "Master simple down-stroke picking",
+        "Work on chord transitions between Em and C"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Building Metal Guitar Skills",
+      "skills": [
+        "Master the complete main riff with proper palm muting",
+        "Learn all power chord shapes and progressions",
+        "Develop consistent picking technique",
+        "Practice playing along with the original recording"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "advanced": {
+      "title": "Mastery and Lead Guitar",
+      "skills": [
+        "Master the complete song including all sections",
+        "Learn the guitar solo with proper bending technique",
+        "Develop stage-worthy performance ability",
+        "Create your own variations and improvisations"
+      ],
+      "timeEstimate": "8-12 weeks"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [
+      {
+        "title": "For Those About to Rock",
+        "link": "/lessons/songs/song-analysis/for-those-about-to-rock",
+        "similarity": "Similar heavy rhythm guitar approach and power chord progressions"
+      },
+      {
+        "title": "Back in Black",
+        "link": "/lessons/songs/song-analysis/back-in-black",
+        "similarity": "Comparable palm muting techniques and metal rhythm patterns"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "technique": "Palm Muting",
+        "similarity": "Advanced palm muting techniques and heavy rhythm guitar work"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "technique": "String Bending",
+        "similarity": "Similar lead guitar techniques and pentatonic scale usage"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Power Chord Progressions",
+        "similarity": "Classic power chord progressions and heavy rock foundation"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Too much palm pressure causing complete string muting",
+      "Inconsistent picking attack leading to uneven rhythm",
+      "Rushing the tempo during the main riff",
+      "Not muting unused strings during power chord sections",
+      "Overbending strings during solo sections"
+    ],
+    "practiceRoutine": [
+      "Start with palm muting exercises at slow tempo",
+      "Practice main riff slowly with metronome",
+      "Work on chord transitions between sections",
+      "Practice solo phrases individually before combining",
+      "Play along with original recording for timing"
+    ],
+    "metronomeWork": [
+      "Begin practicing main riff at 80-90 BPM",
+      "Gradually increase tempo to full speed (123 BPM)",
+      "Use metronome clicks on beats 1 and 3 for emphasis",
+      "Practice with subdivision clicks for complex rhythms",
+      "Work on staying locked with metronome during palm-muted sections"
+    ]
+  }
+}
