@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import TabAndNoteVisualizer from "@/components/TabAndNoteVisualizer";
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
 import { VexTab } from '@/components/VexTab';
@@ -20,8 +19,8 @@ export default function WereNotGonnaTakeItBreakdown() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Navigation */}
         <nav className="mb-8 text-sm">
-          <Link href="/lessons/songs/breakdowns" className="text-cyan-600 hover:text-cyan-800">
-            ← Back to Song Breakdowns
+          <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
+            ← Back to Song Analysis
           </Link>
         </nav>
 
@@ -645,7 +644,6 @@ export default function WereNotGonnaTakeItBreakdown() {
           </div>
         </section>
       </main>
-      <Footer />
     </Layout>
   );
 }
