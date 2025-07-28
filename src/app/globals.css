@@ -1,21 +1,44 @@
 @import "tailwindcss";
 
 :root {
+  /* Base theme colors */
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Music Scene theme colors */
+  --primary: #1f2937;           /* Gray-800 */
+  --primary-light: #374151;     /* Gray-700 */
+  --secondary: #f3f4f6;         /* Gray-100 */
+  --accent: #3b82f6;            /* Blue-500 */
+  --accent-hover: #2563eb;      /* Blue-600 */
+  
+  /* Category colors - consistent with lesson pages */
+  --theory-bg: #fef3c7;         /* Yellow-100 */
+  --theory-border: #fde047;     /* Yellow-300 */
+  --theory-text: #a16207;       /* Yellow-700 */
+  
+  --songs-bg: #fed7aa;          /* Orange-200 */
+  --songs-border: #fb923c;      /* Orange-400 */
+  --songs-text: #c2410c;        /* Orange-700 */
+  
+  --gear-bg: #e9d5ff;           /* Purple-200 */
+  --gear-border: #c084fc;       /* Purple-400 */
+  --gear-text: #7c3aed;         /* Purple-600 */
+  
+  --practice-bg: #d1fae5;       /* Green-200 */
+  --practice-border: #4ade80;   /* Green-400 */
+  --practice-text: #059669;     /* Green-600 */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #1f2937;
+    --secondary: #374151;
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
   }
 }
 

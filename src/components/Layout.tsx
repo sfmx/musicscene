@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Footer from './Footer'
 
 interface LessonLink {
   href: string;
@@ -142,6 +143,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </nav>
       </header>
       {children}
+      <Footer />
     </div>
   )
 }
