@@ -44,7 +44,8 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName, no
             stretchForce: 0.8 // Allow slight stretching for responsiveness
           },
           notation: {
-            rhythmMode: 'showwithbars' // Show rhythm with bar lines
+            rhythmMode: 'hidden', // Hide rhythm stems in tablature
+            notationMode: 'songbook' // Clean tablature style
           }
         });
 
@@ -67,15 +68,14 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName, no
 
         setStatus(`Loading tex for ${scaleName}...`);
 
-        // Create proper scale-specific AlphaTex notation with explicit fret positions
-        let simpleTex = `3.3 3.3 5.3 5.3 |`; // default
+        // Create proper scale-specific AlphaTex notation (stems hidden by rhythmMode)
+        let simpleTex = `3.3 3.3 5.3 5.3 |`; // default notation
         
         if (scaleName.toLowerCase().includes('g major scale')) {
-          // G major scale with explicit fret positions: G(3rd fret, 6th string) through G(5th fret, 4th string)
-          // Format: fret.string for each note
+          // G major scale: G(3rd fret, 6th string) through G(5th fret, 4th string)
           simpleTex = `3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 |`;
         } else if (scaleName.toLowerCase().includes('g major pentatonic') || scaleName.toLowerCase().includes('g pentatonic')) {
-          // G major pentatonic with explicit fret positions
+          // G major pentatonic scale
           simpleTex = `3.6 5.6 2.5 5.5 2.4 5.4 |`;
         }
         
