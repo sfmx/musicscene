@@ -416,7 +416,7 @@ export default function Major2ndPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-500 mt-1">•</span>
-                    <span>Stable, doesn&apos;t need resolution</span>
+                    <span>Stable, doesn't need resolution</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-500 mt-1">•</span>
@@ -451,9 +451,9 @@ export default function Major2ndPage() {
             <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-900 mb-2">Memory Aid</h4>
               <p className="text-blue-800 text-sm leading-relaxed">
-                Think of the major 2nd as the "do-re" from "Do-Re-Mi" (Sound of Music). It&apos;s the first 
+                Think of the major 2nd as the "do-re" from "Do-Re-Mi" (Sound of Music). It's the first 
                 step up the major scale and sounds natural and pleasant. Unlike the tense minor 2nd, 
-                the major 2nd feels stable and doesn&apos;t create any urge to resolve. On guitar, it&apos;s 
+                the major 2nd feels stable and doesn't create any urge to resolve. On guitar, it's 
                 always two frets apart on the same string, making it easy to find and practice.
               </p>
             </div>
