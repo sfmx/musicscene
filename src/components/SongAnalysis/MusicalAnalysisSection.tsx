@@ -1,6 +1,5 @@
 import React from 'react';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
-import SimpleAlphaTabScale from "@/components/SimpleAlphaTabScale";
 import { SongData } from '@/lib/songData';
 
 interface MusicalAnalysisSectionProps {
@@ -17,17 +16,17 @@ export default function MusicalAnalysisSection({ songData }: MusicalAnalysisSect
 
   return (
     <section className="mb-12">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Musical Analysis</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">Musical Analysis Summary</h2>
       
       <div className="grid md:grid-cols-2 gap-8">
-        {/* Key & Scale Structure - Left Side */}
+        {/* Key & Scale Overview - Left Side */}
         <div className="bg-blue-50 rounded-xl p-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Key & Scale Structure</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Key & Scale Overview</h3>
           
           {/* Primary Key */}
           <div className="mb-4">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">Primary Key</h4>
             <div className="bg-white rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-gray-800 mb-2">Primary Key</h4>
               <p className="text-gray-700 mb-2">
                 <strong>{keyAndScale.primaryKey}</strong>
               </p>
@@ -40,34 +39,30 @@ export default function MusicalAnalysisSection({ songData }: MusicalAnalysisSect
             </div>
           </div>
 
-          {/* Scales Used */}
+          {/* Scales Summary */}
           <div className="mb-4">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">Scales Used</h4>
-            <div className="space-y-4">
-              {keyAndScale.scalesUsed.map((scale, index) => (
-                <div key={index} className="bg-white rounded-lg p-4">
-                  <h5 className="font-medium text-gray-800 mb-2">{scale.scale}</h5>
-                  
-                  {/* AlphaTab Scale Rendering - Using working SimpleAlphaTabScale */}
-                  <div className="mb-3">
-                    <SimpleAlphaTabScale 
-                      scaleName={scale.scale}
-                      notes={scale.notes}
-                    />
+            <div className="bg-white rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Scales Used</h4>
+              <div className="space-y-2">
+                {keyAndScale.scalesUsed.map((scale, index) => (
+                  <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
+                    <span className="font-medium text-gray-800">{scale.scale}</span>
+                    <span className="text-xs text-gray-500 text-right">{scale.application}</span>
                   </div>
-                  
-                  {/* Notes as fallback/additional info */}
-                  <p className="text-sm font-mono text-gray-600 mb-2">{scale.notes}</p>
-                  <p className="text-xs text-gray-600">{scale.application}</p>
-                </div>
-              ))}
+                ))}
+              </div>
+              <div className="mt-3 pt-3 border-t border-gray-200">
+                <p className="text-xs text-blue-600 font-medium">
+                  → View detailed scale visualization in the Scale Analysis section below
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Modal Character */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">Modal Character</h4>
             <div className="bg-white rounded-lg p-4">
+              <h4 className="text-lg font-semibold text-gray-800 mb-2">Modal Character</h4>
               <p className="text-sm text-gray-600">{keyAndScale.modalCharacter}</p>
             </div>
           </div>

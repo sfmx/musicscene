@@ -10,6 +10,7 @@ import { VexTab } from '@/components/VexTab';
 import { getSongData, SongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import MusicalAnalysisSection from './MusicalAnalysisSection';
+import MusicalAnalysisScales from './MusicalAnalysisScales';
 
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
@@ -79,6 +80,9 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         {/* Musical Analysis */}
         <MusicalAnalysisSection songData={songData} />
+
+        {/* Detailed Scale Analysis */}
+        <MusicalAnalysisScales songData={songData} />
 
         {/* Key Techniques */}
         <section className="mb-12">

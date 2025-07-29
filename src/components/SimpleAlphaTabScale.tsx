@@ -6,10 +6,9 @@ import React, { useEffect, useRef, useState } from 'react';
 
 interface SimpleAlphaTabScaleProps {
   scaleName: string;
-  notes: string;
 }
 
-const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName, notes }) => {
+const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState('Starting...');
 
@@ -77,6 +76,15 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName, no
         } else if (scaleName.toLowerCase().includes('g major pentatonic') || scaleName.toLowerCase().includes('g pentatonic')) {
           // G major pentatonic scale
           simpleTex = `3.6 5.6 2.5 5.5 2.4 5.4 |`;
+        } else if (scaleName.toLowerCase().includes('g minor pentatonic')) {
+          // G minor pentatonic scale: G-Bb-C-D-F-G
+          simpleTex = `3.6 1.5 3.5 5.5 3.4 6.4 |`;
+        } else if (scaleName.toLowerCase().includes('g blues scale')) {
+          // G blues scale: G-Bb-C-Db-D-F-G (adds flat 5th)
+          simpleTex = `3.6 1.5 3.5 4.5 5.5 3.4 6.4 |`;
+        } else if (scaleName.toLowerCase().includes('c major scale')) {
+          // C major scale: C-D-E-F-G-A-B-C
+          simpleTex = `8.6 10.6 7.5 8.5 10.5 7.4 9.4 10.4 |`;
         }
         
         console.log(`Loading for ${scaleName}:`, simpleTex);
@@ -105,7 +113,7 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName, no
     return () => {
       isMounted = false;
     };
-  }, [scaleName, notes]);
+  }, [scaleName]);
 
   return (
     <div className="w-full mb-4">
