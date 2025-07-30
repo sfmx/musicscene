@@ -11,6 +11,7 @@ import { getSongData, SongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import MusicalAnalysisSection from './MusicalAnalysisSection';
 import MusicalAnalysisScales from './MusicalAnalysisScales';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
@@ -185,9 +186,12 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                 {section.tab && (
                   <div className="mb-4">
                     <h4 className="font-medium text-gray-800 mb-2">Tablature:</h4>
-                    <pre className="text-xs bg-gray-50 p-4 rounded overflow-x-auto font-mono">
-                      {section.tab}
-                    </pre>
+                    <AlphaTexRenderer
+                      alphaTex={section.tab}
+                      title={`${section.name} - ${section.technique}`}
+                      showValidation={false}
+                      className="bg-gray-50 rounded-lg p-4"
+                    />
                   </div>
                 )}
 
