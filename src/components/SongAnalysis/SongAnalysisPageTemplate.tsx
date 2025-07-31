@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
 import { VexTab } from '@/components/VexTab';
 import { getSongData, SongData } from '@/lib/songData';
@@ -37,7 +36,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             </Link>
           </div>
         </main>
-        <Footer />
       </Layout>
     );
   }
@@ -419,8 +417,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
           </Link>
         </nav>
       </main>
-      
-      <Footer />
     </Layout>
   );
 }

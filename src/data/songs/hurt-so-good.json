@@ -1,0 +1,340 @@
+{
+  "songInfo": {
+    "title": "Hurt So Good",
+    "artist": "John Cougar Mellencamp",
+    "album": "American Fool",
+    "released": "April 1982",
+    "genre": "Pop rock / Heartland rock",
+    "tempo": "128 BPM",
+    "duration": "3:39",
+    "key": "E Major",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E Major",
+      "scalesUsed": [
+        {
+          "scale": "E Major Scale",
+          "notes": "E-F#-G#-A-B-C#-D#",
+          "application": "Main chord progressions and melodic content"
+        },
+        {
+          "scale": "E Major Pentatonic",
+          "notes": "E-F#-G#-B-C#",
+          "application": "Guitar solo and lead lines"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# Minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["E5", "B5", "A5"],
+        "progression": "I - V - IV",
+        "description": "Classic rock progression using power chords in E major"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "E5 - E5 - B5 - B5 - A5 - A5 - E5 - E5",
+          "romanNumerals": "I - I - V - V - IV - IV - I - I",
+          "description": "Extended verse progression with longer chord durations"
+        },
+        {
+          "section": "Chorus", 
+          "progression": "E5 - B5 - A5 - E5",
+          "romanNumerals": "I - V - IV - I",
+          "description": "Driving chorus progression with quick changes"
+        }
+      ],
+      "harmonicFunction": ["Tonic (E5)", "Dominant (B5)", "Subdominant (A5)"]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Power Chords",
+      "description": "The backbone of the song - E5, B5, and A5 power chords form the main progression. Essential for achieving the authentic rock sound.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["E5", "B5", "A5"],
+        "positions": ["7th fret", "2nd fret", "5th fret"],
+        "fingeringTips": "Use index and ring finger for 2-string power chords, keep pinky relaxed"
+      }
+    },
+    {
+      "name": "Palm Muting",
+      "description": "Critical for the 'choppy fuzz tone' described in contemporary reviews. Creates the percussive, tight sound characteristic of early 80s rock.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "technique": "Rest palm edge lightly on strings near bridge",
+        "application": "Use throughout verse and chorus rhythm parts",
+        "soundGoal": "Tight, percussive attack without ringing sustain"
+      }
+    },
+    {
+      "name": "Rock Strumming Patterns",
+      "description": "Steady eighth-note patterns with emphasis on beats 1 and 3. Down-down-up-down-up pattern creates the driving rhythm.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "pattern": "Down-down-up-down-up",
+        "emphasis": "Beats 1 and 3",
+        "tempo": "128 BPM steady"
+      }
+    },
+    {
+      "name": "Basic Lead Guitar",
+      "description": "Solo section requires intermediate to advanced lead techniques including bends, hammer-ons, and melodic phrasing in E major.",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "scale": "E Major pentatonic",
+        "techniques": ["String bending", "Hammer-ons", "Pull-offs"],
+        "position": "12th fret area"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "00:00-00:15",
+      "technique": "Power chord riff",
+      "key": "E Major",
+      "description": "Eight-bar introduction featuring the main E5-B5-A5 power chord progression with palm-muted attack.",
+      "tab": "7.2 9.3 9.4 7.2 9.3 9.4 2.2 4.3 4.4 0.2 2.3 2.4 |",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - E5 - B5 - A5",
+      "notes": [
+        "Start with clean attack, build intensity",
+        "Palm muting throughout for choppy sound",
+        "Steady eighth-note rhythm"
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "00:15-00:45",
+      "technique": "Rhythm guitar with vocals",
+      "key": "E Major",
+      "description": "Sixteen-bar verse section using the same power chord progression, supporting lead vocals with rhythmic foundation.",
+      "tab": "7.2 9.3 9.4 7.2 9.3 9.4 2.2 4.3 4.4 2.2 4.3 4.4 |",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - E5 - B5 - B5 - A5 - A5 - E5 - E5",
+      "notes": [
+        "Maintain consistent palm muting",
+        "Leave space for vocal melody",
+        "Keep dynamics moderate"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "00:45-01:00",
+      "technique": "Full band arrangement",
+      "key": "E Major",
+      "description": "Eight-bar chorus featuring the signature 'Hurt so good' vocal hook over driving power chord progression.",
+      "tab": "7.2 9.3 9.4 2.2 4.3 4.4 0.2 2.3 2.4 7.2 9.3 9.4 |",
+      "chords": ["E5", "B5", "A5", "E5"],
+      "progression": "E5 - B5 - A5 - E5",
+      "notes": [
+        "Increase intensity from verse",
+        "Strong downbeats on chord changes",
+        "Full band arrangement - add energy"
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "01:00-01:30",
+      "technique": "Rhythm guitar development",
+      "key": "E Major",
+      "description": "Second verse with slight variations in rhythm guitar approach, building toward bridge section.",
+      "tab": "(7.2 9.3 9.4).4 (7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (2.2 4.3 4.4).4 |",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - E5 - B5 - B5 - A5 - A5 - E5 - E5",
+      "notes": [
+        "Similar to Verse 1 but with subtle variations",
+        "Build energy toward bridge",
+        "Maintain rhythmic consistency"
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "timeStamp": "01:30-01:45",
+      "technique": "Enhanced arrangement",
+      "key": "E Major", 
+      "description": "Second chorus with fuller arrangement, leading into the bridge/solo section.",
+      "tab": "(7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 (7.2 9.3 9.4).4 |",
+      "chords": ["E5", "B5", "A5", "E5"],
+      "progression": "E5 - B5 - A5 - E5",
+      "notes": [
+        "Higher energy than first chorus",
+        "Prepare for guitar solo transition",
+        "Full band intensity"
+      ]
+    },
+    {
+      "name": "Bridge/Solo",
+      "timeStamp": "01:45-02:15", 
+      "technique": "Lead guitar solo",
+      "key": "E Major",
+      "description": "Sixteen-bar instrumental bridge featuring guitar solo over the main chord progression. Advanced techniques required.",
+      "tab": "12.6 12.6 14.5 12.6 14.6 12.6 7.2 9.3 9.4 |",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - B5 - A5 - E5 (repeated)",
+      "notes": [
+        "Solo uses E major pentatonic scale",
+        "12th fret position primary area",
+        "Bend, hammer-on, pull-off techniques",
+        "Advanced difficulty level"
+      ]
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "02:15-02:30",
+      "technique": "Climax arrangement",
+      "key": "E Major",
+      "description": "Final chorus with maximum energy and full band arrangement.",
+      "tab": "(7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 (7.2 9.3 9.4).4 |",
+      "chords": ["E5", "B5", "A5", "E5"],
+      "progression": "E5 - B5 - A5 - E5",
+      "notes": [
+        "Peak energy and intensity",
+        "Strong vocal performance support",
+        "Full arrangement"
+      ]
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "02:30-03:39",
+      "technique": "Resolution and fade",
+      "key": "E Major",
+      "description": "Extended outro section returning to main riff pattern with gradual fade.",
+      "tab": "(7.2 9.3 9.4).4 (7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 |",
+      "chords": ["E5", "B5", "A5"],
+      "progression": "E5 - E5 - B5 - A5 (repeat and fade)",
+      "notes": [
+        "Return to intro riff pattern",
+        "Gradual volume fade",
+        "End on E5 resolution"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Gibson Les Paul", 
+        "Any solid-body electric guitar"
+      ],
+      "pickup": "Humbucker or single-coil pickups work well"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb",
+      "alternatives": [
+        "Marshall JCM800",
+        "Vox AC30"
+      ],
+      "settings": {
+        "gain": "4-6/10",
+        "treble": "6/10",
+        "middle": "7/10", 
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Light overdrive/fuzz for 'choppy' tone",
+      "reverb": "Amp reverb sufficient",
+      "other": "Optional delay for solo section"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Basic power chord shapes and simple strumming",
+      "skills": [
+        "Learn E5, B5, and A5 power chord shapes",
+        "Practice clean chord transitions",
+        "Master basic down-up strumming pattern",
+        "Work on palm muting technique slowly"
+      ],
+      "timeEstimate": "2-4 weeks with regular practice"
+    },
+    "intermediate": {
+      "title": "Full rhythm guitar performance with proper technique",
+      "skills": [
+        "Master the complete rhythm guitar part",
+        "Develop consistent palm muting throughout",
+        "Work with metronome at 128 BPM",
+        "Learn to play along with original recording",
+        "Practice smooth verse-to-chorus transitions"
+      ],
+      "timeEstimate": "3-6 weeks for solid performance"
+    },
+    "advanced": {
+      "title": "Lead guitar solo and performance polish",
+      "skills": [
+        "Learn the complete guitar solo section",
+        "Master E major pentatonic scale (12th fret position)",
+        "Develop bending, hammer-on, and pull-off techniques",
+        "Work on solo phrasing and expression",
+        "Combine rhythm and lead parts for complete performance"
+      ],
+      "timeEstimate": "4-8 weeks for full mastery"
+    }
+  },
+  "relatedSongs": {
+    "acdc": [],
+    "similarTechniques": [
+      {
+        "title": "Jack & Diane",
+        "artist": "John Cougar Mellencamp",
+        "similarity": "Same artist, similar power chord approach and heartland rock style",
+        "link": "/lessons/songs/song-analysis/jack-and-diane"
+      },
+      {
+        "title": "Born to Run",
+        "artist": "Bruce Springsteen", 
+        "similarity": "Similar heartland rock style and power chord progressions",
+        "link": "/lessons/songs/song-analysis/born-to-run"
+      },
+      {
+        "title": "American Pie",
+        "artist": "Don McLean",
+        "similarity": "Classic American rock with similar chord progression elements",
+        "link": "/lessons/songs/song-analysis/american-pie"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Not using enough palm muting - loses the characteristic 'choppy' sound",
+      "Rushing the tempo - 128 BPM should feel steady and controlled",
+      "Power chord fingering too tense - keep hand relaxed for clean changes",
+      "Not emphasizing beats 1 and 3 - loses the driving rock feel",
+      "Solo section too fast - focus on clean phrasing over speed"
+    ],
+    "practiceRoutine": [
+      "Start with slow power chord changes (80 BPM)",
+      "Add palm muting once chord changes are clean",
+      "Practice with metronome at target tempo (128 BPM)",
+      "Play along with original recording for timing",
+      "Work on solo section separately before combining"
+    ],
+    "metronomeWork": [
+      "Begin practice at 80-90 BPM for technique development",
+      "Gradually increase to 100 BPM for comfortable playing",
+      "Target tempo: 128 BPM for performance level",
+      "Practice emphasis on beats 1 and 3 with metronome accents",
+      "Use subdivision practice (quarter notes, then eighth notes)"
+    ]
+  }
+}

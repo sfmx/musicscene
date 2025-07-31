@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Song Analysis Schema",
+  "type": "object",
+  "properties": {
+    "songInfo": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "artist": { "type": "string" },
+        "album": { "type": "string" },
+        "released": { "type": "string" },
+        "genre": { "type": "string" },
+        "tempo": { "type": "string" },
+        "duration": { "type": "string" },
+        "key": { "type": "string" },
+        "tuning": { "type": "string" }
+      },
+      "required": ["title", "artist", "album", "released", "genre", "key"]
+    },
+    "difficulty": {
+      "type": "object",
+      "properties": {
+        "overall": { "type": "string" },
+        "rhythmGuitar": { "type": "string" },
+        "leadGuitar": { "type": "string" },
+        "bass": { "type": "string" },
+        "drums": { "type": "string" }
+      },
+      "required": ["overall"]
+    },
+    "musicalAnalysis": {
+      "type": "object",
+      "properties": {
+        "keyAndScale": { "type": "object" },
+        "chordProgressions": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "techniques": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "difficulty": { "type": "string" },
+          "primaryTechnique": { "type": "boolean" },
+          "details": { "type": "object" }
+        },
+        "required": ["name", "description", "difficulty"]
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "timeStamp": { "type": "string" },
+          "technique": { "type": "string" },
+          "key": { "type": "string" },
+          "description": { "type": "string" },
+          "tab": { "type": "string" },
+          "vexTab": { "type": "string" },
+          "chords": { "type": "array", "items": { "type": "string" } },
+          "progression": { "type": "string" },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["name", "description"]
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "properties": {
+        "guitar": { "type": "object" },
+        "amp": { "type": "object" },
+        "effects": { "type": "object" }
+      }
+    },
+    "learningPath": {
+      "type": "object",
+      "properties": {
+        "beginner": { "type": "object" },
+        "intermediate": { "type": "object" },
+        "advanced": { "type": "object" }
+      }
+    },
+    "relatedSongs": {
+      "type": "object",
+      "properties": {
+        "acdc": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "link": { "type": "string" },
+              "similarity": { "type": "string" }
+            }
+          }
+        },
+        "similarTechniques": { "type": "array" }
+      }
+    },
+    "practiceNotes": {
+      "type": "object",
+      "properties": {
+        "commonMistakes": { "type": "array", "items": { "type": "string" } },
+        "practiceRoutine": { "type": "array", "items": { "type": "string" } },
+        "metronomeWork": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "required": ["songInfo", "difficulty", "techniques", "sections", "equipment", "learningPath", "relatedSongs", "practiceNotes"],
+  "additionalProperties": false
+}

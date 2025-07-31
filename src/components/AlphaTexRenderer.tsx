@@ -155,11 +155,13 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         </div>
       )}
 
-      {/* AlphaTex String Display */}
-      <div className="bg-gray-50 rounded-lg p-3 mb-3">
-        <h5 className="text-sm font-medium text-gray-800 mb-1">AlphaTex:</h5>
-        <code className="text-xs text-gray-700 font-mono break-all">{alphaTex}</code>
-      </div>
+      {/* AlphaTex String Display - Hidden by default */}
+      {showValidation && (
+        <div className="bg-gray-50 rounded-lg p-3 mb-3">
+          <h5 className="text-sm font-medium text-gray-800 mb-1">AlphaTex:</h5>
+          <code className="text-xs text-gray-700 font-mono break-all">{alphaTex}</code>
+        </div>
+      )}
 
       {/* Render Container */}
       <div 
@@ -168,7 +170,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         style={{ minHeight: '250px', width: '100%' }}
       />
       
-      {/* Status Display */}
+      {/* Status Display - Hidden for cleaner UI */}
+      {/* 
       {status !== 'Render complete!' && (
         <div className="mt-2 text-xs text-gray-500 text-center">
           {status}
@@ -180,6 +183,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           rendered by alphaTab
         </div>
       )}
+      */}
     </div>
   );
 };

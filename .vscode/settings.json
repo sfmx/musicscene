@@ -1,0 +1,54 @@
+{
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/vexflow/**": true,
+    "**/vextab/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.next/**": true,
+    "**/coverage/**": true,
+    "**/temp/**": true,
+    "**/out/**": true,
+    "**/.swc/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/vexflow": true,
+    "**/vextab": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/coverage": true,
+    "**/temp": true,
+    "**/out": true,
+    "**/.swc": true
+  },
+  "files.exclude": {
+    "**/vexflow": true,
+    "**/vextab": true,
+    "**/temp": true
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.suggest.autoImports": false,
+  "typescript.maxTsServerMemory": 4096,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "files.watcherUsePolling": false,
+  "files.hotExit": "off",
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+  "telemetry.telemetryLevel": "off",
+  "workbench.startupEditor": "none",
+  "git.autoRepositoryDetection": false,
+  "git.enabled": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showSnippets": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "intelliSense.enable": false
+}

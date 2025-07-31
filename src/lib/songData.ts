@@ -7,6 +7,7 @@ import wereNotGonnaTakeItData from '@/data/songs/were-not-gonna-take-it.json';
 import sweetHomeAlabamaData from '@/data/songs/sweet-home-alabama.json';
 import sweetChildOMineData from '@/data/songs/sweet-child-o-mine.json';
 import enterSandmanData from '@/data/songs/enter-sandman.json';
+import hurtSoGoodData from '@/data/songs/hurt-so-good.json';
 
 export interface SongData {
   songInfo: {
@@ -155,6 +156,7 @@ export function getSongData(songSlug: string): SongData | null {
     'sweet-home-alabama': sweetHomeAlabamaData as SongData,
     'sweet-child-o-mine': sweetChildOMineData as SongData,
     'enter-sandman': enterSandmanData as SongData,
+    'hurt-so-good': hurtSoGoodData as SongData,
     // Add more songs here as they're created
   };
   
@@ -162,5 +164,5 @@ export function getSongData(songSlug: string): SongData | null {
 }
 
 export function getAllSongSlugs(): string[] {
-  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell', 'you-shook-me-all-night-long', 'were-not-gonna-take-it', 'sweet-home-alabama', 'sweet-child-o-mine', 'enter-sandman'];
+  return ['thunderstruck', 'for-those-about-to-rock', 'back-in-black', 'highway-to-hell', 'you-shook-me-all-night-long', 'were-not-gonna-take-it', 'sweet-home-alabama', 'sweet-child-o-mine', 'enter-sandman', 'hurt-so-good'];
 }

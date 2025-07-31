@@ -68,9 +68,15 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) 
         setStatus(`Loading tex for ${scaleName}...`);
 
         // Create proper scale-specific AlphaTex notation (stems hidden by rhythmMode)
-        let simpleTex = `3.3 3.3 5.3 5.3 |`; // default notation
+        let simpleTex = `0.6 2.6 4.6 |`; // default notation
         
-        if (scaleName.toLowerCase().includes('g major scale')) {
+        if (scaleName.toLowerCase().includes('e major scale')) {
+          // E major scale: E-F#-G#-A-B-C#-D#-E (open position)
+          simpleTex = `0.6 2.6 4.6 5.5 7.5 9.5 6.4 7.4 |`;
+        } else if (scaleName.toLowerCase().includes('e major pentatonic') || scaleName.toLowerCase().includes('e pentatonic')) {
+          // E major pentatonic scale: E-F#-G#-B-C# (open position)
+          simpleTex = `0.6 2.6 4.6 7.5 9.5 |`;
+        } else if (scaleName.toLowerCase().includes('g major scale')) {
           // G major scale: G(3rd fret, 6th string) through G(5th fret, 4th string)
           simpleTex = `3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 |`;
         } else if (scaleName.toLowerCase().includes('g major pentatonic') || scaleName.toLowerCase().includes('g pentatonic')) {
@@ -122,11 +128,13 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) 
         className="alphatab-container bg-white border rounded overflow-hidden"
         style={{ minHeight: '250px', width: '100%' }} // Increased height for TAB visibility
       />
+      {/* Status display hidden for cleaner UI
       {status !== 'Render complete!' && status.includes('Render complete') && (
         <div className="mt-2 text-xs text-gray-500 text-center">
           rendered by alphaTab
         </div>
       )}
+      */}
     </div>
   );
 };
