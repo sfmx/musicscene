@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import Layout from '@/components/Layout'
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 
 const topics = [
   {
@@ -149,30 +148,37 @@ export default function SongLessonsPage() {
 
         {/* Featured Songs */}
         <section className="mt-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Song Analyses</h2>
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900">Featured Song Analyses</h2>
             <Link 
-              href="/lessons/songs/breakdowns/were-not-gonna-take-it"
-              className="bg-white rounded-lg border border-gray-200 p-4 hover:border-blue-300 hover:shadow-md transition-all"
+              href="/lessons/songs/song-analysis"
+              className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              <div className="flex items-center space-x-3">
-                <div className="text-2xl">🤘</div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">We're Not Gonna Take It</h3>
-                  <p className="text-sm text-gray-600">Twisted Sister • I-IV-V Progression • Power Chords</p>
-                </div>
-              </div>
+              View All →
             </Link>
           </div>
-          <div className="mt-4 text-center">
-            <p className="text-gray-600 text-sm">
-              More song analyses coming soon! Each breakdown includes theory, techniques, and practice tips.
-            </p>
+          
+          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-8 border border-purple-100">
+            <div className="text-center">
+              <div className="text-6xl mb-4">🎵</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Complete Song Breakdowns Available
+              </h3>
+              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                Dive deep into classic songs with our comprehensive analysis system. Each breakdown includes 
+                chord progressions, scale analysis, techniques, and equipment insights.
+              </p>
+              <Link 
+                href="/lessons/songs/song-analysis"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              >
+                Explore Song Analyses
+                <span className="ml-2">→</span>
+              </Link>
+            </div>
           </div>
         </section>
       </main>
-      
-      <Footer />
     </Layout>
   )
 }

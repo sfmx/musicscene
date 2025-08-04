@@ -85,26 +85,29 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         {/* Key Techniques */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Key Techniques</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Key Techniques</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {songData.techniques.map((technique, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <div className="flex items-center justify-between mb-3">
+              <div key={index} className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
+                <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold text-gray-900">{technique.name}</h3>
                   <span className={`px-2 py-1 rounded-full text-xs ${getDifficultyColor(technique.difficulty)}`}>
                     {technique.difficulty}
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">{technique.description}</p>
+                <p className="text-gray-600 text-sm mb-6">{technique.description}</p>
                 
                 {technique.details.chords && technique.details.chords.length > 0 && (
                   <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Chords Used:</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
+                    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-3">
                       {technique.details.chords.map((chord, chordIndex) => (
-                        <span key={chordIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">
-                          {chord}
-                        </span>
+                        <div key={chordIndex} className="text-center">
+                          <div className="scale-75 origin-center">
+                            <SimpleFretboardDiagram chord={chord} />
+                          </div>
+                          <p className="text-sm font-mono mt-2 text-gray-700">{chord}</p>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -152,12 +155,15 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
                 {section.chords && section.chords.length > 0 && (
                   <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Chords:</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                       {section.chords.map((chord, chordIndex) => (
-                        <span key={chordIndex} className="bg-gray-100 text-gray-700 px-3 py-1 rounded font-mono">
-                          {chord}
-                        </span>
+                        <div key={chordIndex} className="text-center">
+                          <div className="scale-75 origin-center">
+                            <SimpleFretboardDiagram chord={chord} />
+                          </div>
+                          <p className="text-sm font-mono mt-1 text-gray-700">{chord}</p>
+                        </div>
                       ))}
                     </div>
                   </div>

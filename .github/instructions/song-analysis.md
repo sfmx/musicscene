@@ -242,11 +242,38 @@ import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 />
 
 <SimpleFretboardDiagram 
-  chord="B5"
-  frets={[null, 2, 4, 4, null, null]}
-  fingers={[0, 1, 3, 4, 0, 0]}
+  chord="B5"  // Component supports major chords, minors, 7ths, power chords, etc.
 />
+
+// For chord progressions in techniques and song sections:
+{technique.details.chords && technique.details.chords.length > 0 && (
+  <div className="mb-4">
+    <h4 className="font-medium text-gray-800 mb-2">Chord Shapes:</h4>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {technique.details.chords.map((chord, chordIndex) => (
+        <div key={chordIndex} className="text-center">
+          <SimpleFretboardDiagram chord={chord} />
+          <p className="text-sm font-mono mt-1">{chord}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 ```
+
+**Supported Chord Types in SimpleFretboardDiagram:**
+- **Power Chords**: E5, A5, B5, D5, G5, C5, F5
+- **Major Chords**: C, G, D, E, F, Bb (also C_major, G_major, etc.)
+- **Minor Chords**: Em, Am, Dm, Bm, Cm (also E_minor, A_minor, etc.)
+- **7th Chords**: G7, E7, A7, B7, D7, C7, Am7, Em7, CMaj7, FMaj7, etc.
+- **Diminished**: Cdim, C°, Ddim, etc.
+- **Augmented**: C+, F+, G+, etc.
+
+**Component Integration Guidelines:**
+- Use SimpleFretboardDiagram for **visual chord reference** in techniques and song sections
+- Display chord diagrams in responsive grids (2-4 columns depending on screen size)
+- Always include chord name labels below diagrams for clarity
+- Combine with AlphaTab notation for complete musical representation
 
 **Component Responsibilities:**
 
@@ -258,23 +285,27 @@ import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 2. **TechniquesSection** 
    - List all techniques from JSON with descriptions
    - **Auto-generate chord diagrams** when `chords` array present in technique details
-   - **Use SimpleFretboardDiagram** for visual chord representations
+   - **Use SimpleFretboardDiagram** for visual chord representations in responsive grid layout
    - Show difficulty levels and learning tips
+   - Display chord progressions with both text and visual fretboard diagrams
 
 3. **SongSections**
    - Display song structure (intro, verse, chorus, etc.)
    - **Integrate SimpleAlphaTab** for musical notation
-   - **Auto-generate chord diagrams** for section chord progressions
+   - **Auto-generate chord diagrams** for section chord progressions using SimpleFretboardDiagram
    - Show timing information and performance notes
+   - Combine tablature notation with visual chord references
 
 4. **Component Integration Checklist:**
    - [ ] All section components render without errors
    - [ ] SimpleAlphaTab renders all notation correctly
-   - [ ] SimpleFretboardDiagram shows all chord shapes accurately
-   - [ ] Responsive design works on mobile, tablet, desktop
+   - [ ] SimpleFretboardDiagram shows all chord shapes accurately in responsive grid layouts
+   - [ ] Chord diagrams auto-generate from JSON chord arrays in techniques and sections
+   - [ ] Responsive design works on mobile, tablet, desktop (2-4 column grids for chord diagrams)
    - [ ] Data flows correctly from JSON to components
-   - [ ] Error handling for missing data
+   - [ ] Error handling for missing data and unsupported chord types
    - [ ] Loading states for heavy notation rendering
+   - [ ] Chord names display clearly below each fretboard diagram
 
 ### Step B6: Content Review
 - [ ] Technical accuracy verification against reference materials
