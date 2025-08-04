@@ -11,7 +11,12 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "clean": "rm -rf .next out dist .tsbuildinfo node_modules/.cache",
+    "clean:all": "npm run clean && rm -rf node_modules && npm install",
+    "type-check": "tsc --noEmit --incremental",
+    "lint:cache": "next lint --cache",
+    "build:fast": "npm run clean && npm run type-check && next build"
   },
   "dependencies": {
     "@coderline/alphatab": "^1.6.1",

@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "skipDefaultLibCheck": true,
     "plugins": [
       {
         "name": "next"
@@ -23,5 +25,17 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "storybook-static",
+    ".storybook",
+    "**/_reference-tabs/**",
+    "**/_research-notes/**"
+  ]
 }

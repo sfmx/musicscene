@@ -46,3 +46,30 @@ setenv.bat
 
 *storybook.log
 storybook-static
+
+# Performance optimization
+.tsbuildinfo
+*.tsbuildinfo
+.eslintcache
+
+# VS Code workspace settings that can cause issues
+.vscode/settings.json
+
+# Build artifacts
+.next/
+out/
+dist/
+build/
+
+# Storybook
+storybook-static/
+
+# Large data files that might cause issues
+src/data/songs/_reference-tabs/
+src/data/songs/_research-notes/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
