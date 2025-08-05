@@ -14,50 +14,66 @@
     "keyAndScale": {
       "key": "D major",
       "scale": "D major pentatonic",
+      "scalesUsed": [
+        {
+          "scale": "D major scale",
+          "notes": "D - E - F# - G - A - B - C# - D",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "D major pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Lead guitar solos and melodic phrases"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Alternative melodic approach over G chord sections"
+        }
+      ],
       "mood": "Warm and nostalgic"
     },
     "chordProgressions": {
-      "mainProgression": [
-        { "chord": "D", "roman": "I", "function": "Tonic" },
-        { "chord": "C", "roman": "♭VII", "function": "Subtonic" },
-        { "chord": "G", "roman": "IV", "function": "Subdominant" },
-        { "chord": "D", "roman": "I", "function": "Tonic" }
+      "mainProgression": {
+        "chords": ["D", "C", "G", "D"],
+        "progression": "I - ♭VII - IV - I",
+        "description": "Iconic I-♭VII-IV-I progression that became one of the most recognizable in rock music"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "D - C - G - D",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Sets up the hypnotic foundation with the main progression"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - C - G - D",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Same progression supporting the vocal melody"
+        },
+        {
+          "section": "Chorus",
+          "progression": "D - C - G - D",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Consistent progression maintaining the song's cyclical nature"
+        },
+        {
+          "section": "Solo",
+          "progression": "D - C - G - D",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Foundation for the iconic guitar solos"
+        }
       ],
-      "sectionProgressions": {
-        "intro": [
-          { "chord": "D", "roman": "I", "function": "Tonic" },
-          { "chord": "C", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "G", "roman": "IV", "function": "Subdominant" },
-          { "chord": "D", "roman": "I", "function": "Tonic" }
-        ],
-        "verse": [
-          { "chord": "D", "roman": "I", "function": "Tonic" },
-          { "chord": "C", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "G", "roman": "IV", "function": "Subdominant" },
-          { "chord": "D", "roman": "I", "function": "Tonic" }
-        ],
-        "chorus": [
-          { "chord": "D", "roman": "I", "function": "Tonic" },
-          { "chord": "C", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "G", "roman": "IV", "function": "Subdominant" },
-          { "chord": "D", "roman": "I", "function": "Tonic" }
-        ],
-        "solo": [
-          { "chord": "D", "roman": "I", "function": "Tonic" },
-          { "chord": "C", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "G", "roman": "IV", "function": "Subdominant" },
-          { "chord": "D", "roman": "I", "function": "Tonic" }
-        ]
-      }
-    },
-    "harmonicFunction": [
-      "The song uses the same I-♭VII-IV-I progression throughout, creating a hypnotic and memorable foundation",
-      "The ♭VII chord (C major) is borrowed from D natural minor, giving the progression its distinctive Southern rock flavor",
-      "The progression moves from tonic stability (D) through the warm subtonic (C) to the subdominant (G) and back home",
-      "This chord pattern became one of the most iconic progressions in rock music",
-      "The simplicity of using the same progression throughout allows focus on the melody and guitar solos",
-      "The progression creates a sense of cyclical motion that perfectly supports the song's nostalgic theme"
-    ]
+      "harmonicFunction": [
+        "The song uses the same I-♭VII-IV-I progression throughout, creating a hypnotic and memorable foundation",
+        "The ♭VII chord (C major) is borrowed from D natural minor, giving the progression its distinctive Southern rock flavor",
+        "The progression moves from tonic stability (D) through the warm subtonic (C) to the subdominant (G) and back home",
+        "This chord pattern became one of the most iconic progressions in rock music",
+        "The simplicity of using the same progression throughout allows focus on the melody and guitar solos",
+        "The progression creates a sense of cyclical motion that perfectly supports the song's nostalgic theme"
+      ]
+    }
   },
   "difficulty": {
     "overall": "Beginner",

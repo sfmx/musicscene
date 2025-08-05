@@ -14,43 +14,54 @@
     "keyAndScale": {
       "key": "E major",
       "scale": "E major pentatonic",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Main melodic content and guitar riffs"
+        }
+      ],
       "mood": "Anthemic and defiant"
     },
     "chordProgressions": {
-      "mainProgression": [
-        { "chord": "E5", "roman": "I", "function": "Tonic" },
-        { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
-        { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
-        { "chord": "B5", "roman": "V", "function": "Dominant" }
+      "mainProgression": {
+        "chords": ["E5", "D5", "C5", "B5"],
+        "progression": "I - ♭VII - ♭VI - V",
+        "description": "Classic chromatic descending power chord sequence that creates strong forward momentum"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "E5 - D5 - A5 - E5",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Traditional I-♭VII-IV-I progression that provides stability"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - D5 - C5 - B5",
+          "romanNumerals": "I - ♭VII - ♭VI - V",
+          "description": "Main chromatic descending progression with anthemic energy"
+        },
+        {
+          "section": "Bridge",
+          "progression": "A5 - B5 - E5 - E5",
+          "romanNumerals": "IV - V - I - I",
+          "description": "Classic IV-V-I cadence that builds tension before returning to the main theme"
+        }
       ],
-      "sectionProgressions": {
-        "verse": [
-          { "chord": "E5", "roman": "I", "function": "Tonic" },
-          { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "A5", "roman": "IV", "function": "Subdominant" },
-          { "chord": "E5", "roman": "I", "function": "Tonic" }
-        ],
-        "chorus": [
-          { "chord": "E5", "roman": "I", "function": "Tonic" },
-          { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
-          { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
-          { "chord": "B5", "roman": "V", "function": "Dominant" }
-        ],
-        "bridge": [
-          { "chord": "A5", "roman": "IV", "function": "Subdominant" },
-          { "chord": "B5", "roman": "V", "function": "Dominant" },
-          { "chord": "E5", "roman": "I", "function": "Tonic" },
-          { "chord": "E5", "roman": "I", "function": "Tonic" }
-        ]
-      }
-    },
-    "harmonicFunction": [
-      "The main progression uses a chromatic descending power chord sequence that creates strong forward momentum",
-      "The ♭VII (D5) and ♭VI (C5) chords are borrowed from E natural minor, giving the song its aggressive edge",
-      "The verse uses a more traditional I-♭VII-IV-I progression that provides stability",
-      "The bridge employs a classic IV-V-I cadence that builds tension before returning to the main theme",
-      "Power chords throughout maintain the heavy, anthemic character typical of 80s metal"
-    ]
+      "harmonicFunction": [
+        "The main progression uses a chromatic descending power chord sequence that creates strong forward momentum",
+        "The ♭VII (D5) and ♭VI (C5) chords are borrowed from E natural minor, giving the song its aggressive edge",
+        "The verse uses a more traditional I-♭VII-IV-I progression that provides stability",
+        "The bridge employs a classic IV-V-I cadence that builds tension before returning to the main theme",
+        "Power chords throughout maintain the heavy, anthemic character typical of 80s metal"
+      ]
+    }
   },
   "difficulty": {
     "overall": "Intermediate",

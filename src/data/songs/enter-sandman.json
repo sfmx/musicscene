@@ -14,50 +14,61 @@
     "keyAndScale": {
       "key": "E minor",
       "scale": "E natural minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary harmonic foundation and main riff structure"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar solos and melodic fills"
+        }
+      ],
       "mood": "Dark and ominous"
     },
     "chordProgressions": {
-      "mainProgression": [
-        { "chord": "Em", "roman": "i", "function": "Tonic" },
-        { "chord": "G5", "roman": "♭III", "function": "Mediant" },
-        { "chord": "F#5", "roman": "ii°", "function": "Supertonic" },
-        { "chord": "Em", "roman": "i", "function": "Tonic" }
+      "mainProgression": {
+        "chords": ["Em", "G5", "F#5", "Em"],
+        "progression": "i - ♭III - ii° - i",
+        "description": "Distinctive chromatic progression from Em to G5 to F#5 back to Em creating dark atmosphere"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "Em - Em - Em - Em",
+          "romanNumerals": "i - i - i - i",
+          "description": "Single chord foundation establishing the dark E minor tonality"
+        },
+        {
+          "section": "Verse",
+          "progression": "Em - G5 - F#5 - Em",
+          "romanNumerals": "i - ♭III - ii° - i",
+          "description": "Main riff with chromatic progression creating harmonic tension"
+        },
+        {
+          "section": "Chorus",
+          "progression": "B5 - Em - G5 - Em",
+          "romanNumerals": "V - i - ♭III - i",
+          "description": "Dominant to tonic movement with strong resolution"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C5 - Am - Em - Em",
+          "romanNumerals": "♭VI - iv - i - i",
+          "description": "Classic minor key progression with submediant and subdominant"
+        }
       ],
-      "sectionProgressions": {
-        "intro": [
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" }
-        ],
-        "verse": [
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "G5", "roman": "♭III", "function": "Mediant" },
-          { "chord": "F#5", "roman": "ii°", "function": "Supertonic" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" }
-        ],
-        "chorus": [
-          { "chord": "B5", "roman": "V", "function": "Dominant" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "G5", "roman": "♭III", "function": "Mediant" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" }
-        ],
-        "bridge": [
-          { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
-          { "chord": "Am", "roman": "iv", "function": "Subdominant" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" },
-          { "chord": "Em", "roman": "i", "function": "Tonic" }
-        ]
-      }
-    },
-    "harmonicFunction": [
-      "The song is built on the E natural minor scale, creating a dark and heavy atmosphere",
-      "The main riff uses a distinctive chromatic progression from Em to G5 to F#5 back to Em",
-      "The F#5 chord (ii°) creates harmonic tension that resolves back to the tonic",
-      "The chorus uses a dominant (B5) to tonic (Em) movement for strong resolution",
-      "The bridge introduces the ♭VI (C5) and iv (Am) chords, common in minor key progressions",
-      "The single-note intro riff establishes the dark mood before the full chord progression enters"
-    ]
+      "harmonicFunction": [
+        "The song is built on the E natural minor scale, creating a dark and heavy atmosphere",
+        "The main riff uses a distinctive chromatic progression from Em to G5 to F#5 back to Em",
+        "The F#5 chord (ii°) creates harmonic tension that resolves back to the tonic",
+        "The chorus uses a dominant (B5) to tonic (Em) movement for strong resolution",
+        "The bridge introduces the ♭VI (C5) and iv (Am) chords, common in minor key progressions",
+        "The single-note intro riff establishes the dark mood before the full chord progression enters"
+      ]
+    }
   },
   "difficulty": {
     "overall": "Intermediate",
