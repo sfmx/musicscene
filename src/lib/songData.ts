@@ -8,6 +8,7 @@ import sweetHomeAlabamaData from '@/data/songs/sweet-home-alabama.json';
 import sweetChildOMineData from '@/data/songs/sweet-child-o-mine.json';
 import enterSandmanData from '@/data/songs/enter-sandman.json';
 import hurtSoGoodData from '@/data/songs/hurt-so-good.json';
+import johnnyBGoodeData from '@/data/songs/johnny-b-goode.json';
 
 export interface SongData {
   songInfo: {
@@ -205,6 +206,7 @@ const songDatabase: Record<string, SongData> = {
   'sweet-child-o-mine': sweetChildOMineData as unknown as SongData,
   'enter-sandman': enterSandmanData as unknown as SongData,
   'hurt-so-good': hurtSoGoodData as unknown as SongData,
+  'johnny-b-goode': johnnyBGoodeData as unknown as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {
@@ -444,7 +446,12 @@ function getDefaultPopularity(slug: string): number {
 }
 
 function getDecadeFromYear(year: string): string {
-  const yearNum = parseInt(year);
+  // Extract year from various formats like "1982", "April 1982", "1982-05-15", etc.
+  const yearMatch = year.match(/\b(19|20)\d{2}\b/);
+  const yearNum = yearMatch ? parseInt(yearMatch[0]) : parseInt(year);
+  
+  if (isNaN(yearNum)) return '1970s'; // Default fallback
+  
   if (yearNum >= 2020) return '2020s';
   if (yearNum >= 2010) return '2010s';
   if (yearNum >= 2000) return '2000s';
@@ -452,7 +459,9 @@ function getDecadeFromYear(year: string): string {
   if (yearNum >= 1980) return '1980s';
   if (yearNum >= 1970) return '1970s';
   if (yearNum >= 1960) return '1960s';
-  return '1960s';
+  if (yearNum >= 1950) return '1950s';
+  if (yearNum >= 1940) return '1940s';
+  return '1950s';
 }
 
 function generateDefaultTags(data: any): string[] {

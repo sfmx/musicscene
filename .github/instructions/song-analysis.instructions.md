@@ -1,413 +1,478 @@
+````instructions
 ---
 applyTo: "src/app/lessons/songs/song-analysis/**/*.tsx"
 ---
 
-# Song Analysis Process Instructions
+# Song Analysis Creation & Migration Instructions
 
-## Process Prompt
+## Quick Start Process
 
-**Use this prompt to initiate the song analysis creation or migration process:**
-
-```
-I need to [create a new song analysis / migrate an existing song analysis] for "[SONG TITLE]" by [ARTIST]. 
-
-For new songs: Please guide me through the complete song analysis creation process, starting with research and reference material gathering, through to JSON schema-compliant data creation, AlphaTab notation implementation, and final page generation using our standardized components.
-
-For existing songs: Please guide me through the migration process to ensure the page is schema-compliant, uses our standardized components, and has been converted from VexTab to AlphaTab notation.
-
-The song analysis should be valuable for both budding guitarists and professional musicians, with accurate technical information, progressive learning paths, and proper musical notation.
-```
-
-## Target Audience Segmentation
-
-### Primary Segments
-
-#### **1. Developing Guitarists (Beginner to Intermediate)**
-
-**Sub-segments:**
-- **Absolute Beginners (0-6 months)**: Just picked up a guitar, learning basic chords
-- **Developing Players (6 months - 2 years)**: Can play basic songs, want to learn favorites
-- **Intermediate Students (2-5 years)**: Solid fundamentals, ready for technique challenges
-
-**Shared Characteristics:**
-- Learn best through songs they already love and know
-- Need clear, step-by-step progression to avoid overwhelm
-- Visual learners who benefit from diagrams and notation
-- Want to avoid developing bad habits early
-- Motivated by measurable progress and achievement
-
-**Pain Points:**
-- "I can play basic chords but this song seems impossible"
-- "I'm playing it but it doesn't sound right"
-- "I don't know which techniques to learn next"
-- "The tabs online are confusing or inaccurate"
-
-**Success Metrics:**
-- Can successfully play through entire song at target tempo
-- Demonstrates proper technique without bad habits
-- Understands why techniques work (not just how)
-- Can apply learned techniques to similar songs
-
-#### **2. Advanced Players & Music Professionals**
-
-**Sub-segments:**
-- **Advanced Hobbyists**: 5+ years experience, want to master challenging material
-- **Music Instructors**: Teaching guitar, need reliable reference material
-- **Working Musicians**: Performing/recording, need accurate arrangements
-- **Music Students**: Formal education, analyzing songs for theory/technique
-
-**Shared Characteristics:**
-- Value technical accuracy and authoritative sources
-- Need efficient access to detailed information
-- Want professional-grade analysis and insights
-- Appreciate equipment specifications and tone details
-- Use content for teaching or performance preparation
-
-**Pain Points:**
-- "The tabs online are simplified or wrong"
-- "I need the actual amp settings and effects used"
-- "My students need better structured learning material"
-- "I need to learn this song quickly for a gig"
-
-**Success Metrics:**
-- Achieves professional-quality performance accuracy
-- Successfully teaches techniques to students
-- Adapts arrangements for different contexts (live/studio)
-- Understands musical theory and harmonic analysis
-
-## Process Decision Tree
+**Use this prompt to initiate song analysis creation:**
 
 ```
-START: Song Analysis Request
-├── Existing Song Analysis Page?
-│   ├── YES → Follow "Migration Process" (Steps A1-A5)
-│   └── NO → Follow "New Song Creation Process" (Steps B1-B7)
+I need to create a comprehensive song analysis page for "[SONG_TITLE]" by [ARTIST_NAME] following the MusicScene standardized workflow. Please guide me through: research & validation, JSON data creation, AlphaTab notation conversion, component integration, and quality assurance. The analysis should serve both developing guitarists and advanced players with accurate technical information, progressive learning paths, and proper integration with our existing component architecture.
 ```
 
-## Migration Process (Existing Pages)
+## Current Architecture Overview
 
-### Step A1: Content Audit
-- [ ] Validate current content against JSON schema
-- [ ] Identify VexTab → AlphaTab conversion requirements
-- [ ] Document current component usage gaps
-- [ ] List missing required schema fields
+### **Data-Driven System**
+- **Schema**: `src/schemas/song-analysis.schema.json` - Strict validation for all song data
+- **JSON Files**: `src/data/songs/[song-slug].json` - Schema-compliant data files
+- **Page Template**: `src/components/SongAnalysis/SongAnalysisPageTemplate.tsx` - Reusable page component
+- **Song Registry**: `src/lib/songData.ts` - Central data management and utility functions
 
-### Step A2: Data Extraction
-- [ ] Extract existing content to JSON format
-- [ ] Create/update internal reference tab file
-- [ ] Cross-reference with multiple sources for accuracy
-- [ ] Document research sources in _research_notes
+### **Component Architecture**  
+- **Pages**: 6-line implementations using `SongAnalysisPageTemplate`
+- **Auto-Generated Visuals**: Chord diagrams from JSON chord arrays via `SimpleFretboardDiagram`
+- **Musical Notation**: AlphaTab integration via `AlphaTexRenderer` and `SimpleAlphaTab`
+- **Responsive Design**: 2-4 column grid layouts with mobile-first approach
 
-### Step A3: Schema Compliance
-- [ ] Ensure JSON structure matches song-analysis.schema.json
-- [ ] Add all missing required fields
-- [ ] Standardize data formats (difficulty levels, time stamps, etc.)
-- [ ] Validate JSON syntax and schema compliance
+### **Discovery System**
+- **SongDiscoveryHub**: Enhanced search and categorization interface
+- **Metadata-Driven**: Popularity scoring, decade classification, featured content
+- **Advanced Filtering**: Multi-criteria search by difficulty, genre, decade, tags
 
-### Step A4: Component Migration
-- [ ] Replace custom implementations with standardized components
-- [ ] Convert VexTab notation to AlphaTab format
-- [ ] Update chord diagrams using SimpleFretboardDiagram
-- [ ] Implement responsive layouts
+## Step-by-Step Creation Process
 
-### Step A5: Validation & Testing
-- [ ] Run automated schema validation
-- [ ] Verify component rendering in Storybook
-- [ ] Cross-reference accuracy with internal reference tabs
-- [ ] Test responsive design on multiple devices
+### Step 1: Research & Technical Validation
 
-## New Song Creation Process
+#### **Primary Sources (Use Only These)**
+1. **Guitar World** - Official transcriptions and artist interviews  
+2. **Songsterr** - Interactive tablature verification
+3. **TabsGuru** - Cross-reference accuracy
+4. **911Tabs** - Additional verification for complex sections
 
-### Step B1: Research & Reference Creation
-- [ ] **Follow the comprehensive research guide**: `.github/instructions/song-analysis/song-analysis-research-and-references.md`
-- [ ] **Use primary sources only**: Guitar World, Songsterr, TabsGuru, 911Tabs (Ultimate Guitar as fallback only)
-- [ ] **Create research summary**: `src/data/songs/_research_notes/[song-slug]-research.md`
-- [ ] **Create internal reference tab**: `src/data/songs/_reference-tabs/[song-slug].tab`
-- [ ] **Cross-verify all technical details** (tempo, key, tuning) across minimum 3 sources
-- [ ] **Document equipment specifications** from authoritative interviews/sources
-- [ ] **Test all source links** for accessibility and accuracy
+#### **Research Validation Checklist**
+- [ ] **Song Metadata**: Title, artist, album, release year, duration verified across sources
+- [ ] **Technical Details**: Key, tempo (BPM), tuning confirmed
+- [ ] **Chord Progressions**: Main progression and section variations documented
+- [ ] **Equipment Research**: Guitar, amp, effects from artist interviews/sources
+- [ ] **Genre Classification**: Primary genre and sub-genre tags established
+- [ ] **Difficulty Assessment**: Realistic ratings for rhythm/lead guitar parts
 
-### Step B2: JSON Data File Creation
-- [ ] **Create new JSON file**: `src/data/songs/[song-slug].json` (start from scratch or copy template)
-- [ ] **Reference the research summary** for all song metadata and technical details
-- [ ] **Cross-reference internal tab file** for accuracy verification
-- [ ] **Structure according to schema**: `src/schemas/song-analysis.schema.json`
-- [ ] **Fill all required fields** per schema requirements:
-  - `songInfo` (title, artist, album, released, genre, key - all required)
-  - `difficulty` (overall required, rhythmGuitar, leadGuitar, bass, drums optional)
-  - `techniques` (array with name, description, difficulty required)
-  - `sections` (array with name, description required)
-  - `equipment`, `learningPath`, `relatedSongs`, `practiceNotes` (all required objects)
-- [ ] **Validate JSON syntax and schema compliance** using VS Code or online validator
-- [ ] **Cross-verify technical accuracy** against internal reference tab file
+#### **Research Documentation** (Optional but Recommended)
+- Create `src/data/songs/_research_notes/[song-slug]-research.md`
+- Document sources, technical conflicts, resolution decisions
+- Include links to authoritative interviews/equipment specs
 
-#### Schema Validation Process (from Step A3)
-- [ ] **Ensure JSON structure matches** `song-analysis.schema.json` exactly
-- [ ] **Validate all required fields** are present and properly formatted
-- [ ] **Standardize data formats**:
-  - Difficulty levels: "Beginner", "Intermediate", "Advanced", "Expert"
-  - Time stamps: "MM:SS-MM:SS" format
-  - Chord names: Standard notation (e.g., "B5", "E5", "F#5")
-- [ ] **Test JSON parsing** in development environment
+### Step 2: JSON Data File Creation
 
-### Step B3: AlphaTab Notation Conversion
-- [ ] **Reference AlphaTab test cases**: `src/components/stories/AlphaTexRenderer.stories.tsx`
-- [ ] **Convert signature riffs** from ASCII tabs to AlphaTab format
-- [ ] **Convert chord progressions** using AlphaTab chord notation
-- [ ] **Convert strumming patterns** using AlphaTab rhythm notation
-- [ ] **Convert key techniques** (power chords, palm muting, etc.)
-- [ ] **Test all AlphaTab notation** in SimpleAlphaTab component
-- [ ] **Validate rendering** in Storybook before integration
+#### **File Setup**
+1. **Create**: `src/data/songs/[song-slug].json`
+2. **Reference**: Use `src/data/songs/_template.json` as starting point
+3. **Validate**: Against `src/schemas/song-analysis.schema.json`
 
-#### AlphaTab Conversion Guidelines
-
-**Basic Note Conversion:**
-- ASCII: `e|--3--5--7--|` → AlphaTab: `3.6 5.5 7.4 |`
-- Fret number.string number format
-- String numbers: 6=high E, 5=B, 4=G, 3=D, 2=A, 1=low E
-
-**Chord Conversion:**
-- ASCII Power Chord: `e|-----|B|-----|G|--9--|D|--9--|A|--7--|E|-----|` 
-- AlphaTab: `(7.2 9.3 9.4).4 |` (fret.string format in parentheses)
-
-**Rhythm Notation:**
-- Quarter note: `.4` 
-- Eighth note: `.8`
-- Half note: `.2`
-- Whole note: `.1`
-
-**Common Techniques:**
-- **Palm Muting**: Add `\dead` before notes
-- **Hammer-on**: `3.6h5.6` (3rd fret hammer to 5th fret, 6th string)
-- **Pull-off**: `5.6p3.6` (5th fret pull to 3rd fret, 6th string)
-- **Bend**: `7.3b9` (7th fret bend to 9th fret pitch)
-
-**Reference Examples from Stories:**
+#### **Required Schema Sections**
 ```typescript
-// Basic notation
-alphaTex: '3.6 5.5 7.4 |'
-
-// Open string chord  
-alphaTex: '(0.3 0.4).4 |'
-
-// Chord progression
-alphaTex: '(0.2 2.3 2.4).4 (3.2 0.3 0.4).4 |'
+{
+  "songInfo": {
+    "title": "Song Title",                    // ✅ Required
+    "artist": "Artist Name",                  // ✅ Required  
+    "album": "Album Name",                    // ✅ Required
+    "released": "1958",                       // ✅ Required (year or "Month Year")
+    "genre": "Rock and Roll / Blues Rock",    // ✅ Required
+    "key": "Bb major",                        // ✅ Required
+    "tempo": "145 BPM",                       // Recommended
+    "duration": "2:41",                       // Recommended
+    "tuning": "Standard (E-A-D-G-B-E)"       // Optional, defaults to standard
+  },
+  "difficulty": {
+    "overall": "Intermediate",                // ✅ Required - Beginner|Intermediate|Advanced|Expert
+    "rhythmGuitar": "Intermediate",           // Recommended
+    "leadGuitar": "Advanced",                 // Recommended
+    "bass": "Beginner",                       // Optional
+    "drums": "Intermediate"                   // Optional
+  },
+  "musicalAnalysis": {                        // ✅ Required - Critical for educational value
+    "keyAndScale": {
+      "primaryKey": "Bb major",               // ✅ Required
+      "scalesUsed": [                         // Recommended - Array of scale objects
+        {
+          "scale": "Bb major pentatonic",
+          "notes": "Bb - C - D - F - G",
+          "application": "Lead guitar fills and Chuck Berry techniques"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",     // ✅ Required
+      "keySignature": "2 flats (Bb, Eb)",    // Recommended
+      "relativeMinor": "G minor"              // Recommended
+    },
+    "chordProgressions": {                    // ✅ Required
+      "mainProgression": {                    // ✅ Required
+        "chords": ["Bb", "Eb", "F"],         // ✅ Required
+        "progression": "I - IV - V",          // ✅ Required
+        "description": "Classic 12-bar blues progression" // ✅ Required
+      },
+      "sectionProgressions": [                // Recommended - Detailed section analysis
+        {
+          "section": "Verse",                 // ✅ Required
+          "progression": "Bb - Eb - Bb - F",  // ✅ Required
+          "romanNumerals": "I - IV - I - V",  // ✅ Required
+          "description": "Standard progression" // ✅ Required
+        }
+      ],
+      "harmonicFunction": [                   // Optional - Advanced harmonic analysis
+        "Bb (I) - Establishes tonic center",
+        "Eb (IV) - Subdominant movement"
+      ]
+    }
+  },
+  "techniques": [                             // ✅ Required - Array of technique objects
+    {
+      "name": "Chuck Berry Style Double Stops", // ✅ Required
+      "description": "Signature technique...",   // ✅ Required
+      "difficulty": "Advanced",                  // ✅ Required
+      "primaryTechnique": true,                  // Optional - marks main technique
+      "details": {                               // Optional - technique specifics
+        "chords": ["Bb", "Eb", "F"],            // Auto-generates chord diagrams
+        "progression": "I - IV - V",             // Chord progression
+        "alphaTab": "(3.3 3.2).4 (5.3 5.2).4 |", // Musical notation
+        "scalePattern": "Bb major pentatonic",   // Scale information
+        "fretboardPositions": {                  // Specific fret positions
+          "position1": "3rd fret double stops (Bb-D)"
+        },
+        "musicalFunction": "Creates harmony while maintaining single-note feel",
+        "notes": ["Practice slowly first", "..."], // Practice tips
+        "sequence": ["Step 1", "Step 2"],       // Learning sequence
+        "tips": ["Performance tip 1", "..."]    // Performance tips
+      }
+    }
+  ],
+  "sections": [                               // ✅ Required - Array of song sections
+    {
+      "name": "Intro",                        // ✅ Required
+      "description": "Opening guitar riff",   // ✅ Required  
+      "timeStamp": "0:00-0:08",              // Optional - MM:SS-MM:SS format
+      "technique": "Chuck Berry Style",       // Optional - primary technique
+      "key": "Bb",                           // Optional - section key
+      "alphaTab": "3.6 5.6 3.6 5.6 |",      // Optional - AlphaTab notation
+      "tab": "ASCII tablature if needed",    // Optional - fallback notation
+      "vexTab": "VexTab notation",           // Optional - legacy notation
+      "chords": ["Bb", "Eb"],               // Optional - auto-generates diagrams
+      "progression": "I - IV",              // Optional - chord progression
+      "riffAnalysis": {                      // Optional - detailed riff breakdown
+        "technique": "Alternating single notes with double stops",
+        "scale": "Bb major pentatonic",
+        "fretPositions": "3rd and 5th frets primarily",
+        "rhythmPattern": "Eighth notes with syncopated accents",
+        "musicalFunction": "Establishes key and Chuck Berry style"
+      },
+      "keyTechniques": [                     // Optional - specific techniques used
+        "Double stops on 2nd and 3rd strings",
+        "String bending on 3rd string"
+      ],
+      "notes": ["Performance notes"]        // Optional - section-specific tips
+    }
+  ],
+  "equipment": {                            // ✅ Required
+    "guitar": {
+      "recommended": "Gibson ES-355",
+      "alternatives": ["Epiphone Casino", "Gretsch G6120"],
+      "pickup": "Humbucker"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb",
+      "alternatives": ["Vox AC30", "Marshall JTM45"],
+      "settings": {
+        "gain": "3/10",
+        "treble": "7/10", 
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "4/10"
+      }
+    },
+    "effects": {
+      "distortion": "Light tube overdrive",
+      "reverb": "Spring reverb",
+      "other": "None - clean Chuck Berry tone"
+    }
+  },
+  "learningPath": {                         // ✅ Required
+    "beginner": {
+      "title": "Getting Started",              // ✅ Required
+      "steps": ["Basic barre chords", "Simple strumming"], // ✅ Required - Array of strings
+      "timeEstimate": "2-3 weeks",            // ✅ Required
+      "goals": "Play basic chord progression" // Optional - Learning objectives
+    },
+    "intermediate": {
+      "title": "Building Skills",             // ✅ Required
+      "steps": ["Double stops", "Chuck Berry rhythm"], // ✅ Required - Array of strings
+      "timeEstimate": "1-2 months",           // ✅ Required
+      "goals": "Play rhythm parts confidently" // Optional - Learning objectives
+    },
+    "advanced": {
+      "title": "Mastery Goals",               // ✅ Required
+      "steps": ["Lead fills", "Performance tempo"], // ✅ Required - Array of strings
+      "timeEstimate": "2-3 months",           // ✅ Required
+      "goals": "Master all guitar parts"      // Optional - Learning objectives
+    }
+  },
+  "relatedSongs": {                         // ✅ Required
+    "sameArtist": [                         // Optional but recommended
+      {
+        "title": "Roll Over Beethoven",
+        "link": "/lessons/songs/song-analysis/roll-over-beethoven",
+        "similarity": "Similar Chuck Berry style and techniques"
+      }
+    ],
+    "similarTechniques": [                  // Optional but recommended
+      {
+        "title": "Good Golly Miss Molly",
+        "artist": "Little Richard", 
+        "technique": "Double stops",
+        "similarity": "Classic rock and roll double stop technique"
+      }
+    ]
+  },
+  "practiceNotes": {                        // ✅ Required
+    "commonMistakes": [                     // ✅ Required
+      "Rushing the tempo during the intro",
+      "Muddy double stops from poor fretting"
+    ],
+    "practiceRoutine": [                    // ✅ Required  
+      "Start with chord progression at slow tempo",
+      "Practice double stops separately before combining"
+    ],
+    "focusAreas": [                         // ✅ Required
+      "Clean chord transitions",
+      "Consistent rhythm timing"
+    ],
+    "metronomeWork": [                      // ✅ Required
+      "Practice at 100 BPM first", 
+      "Gradually increase to 145 BPM"
+    ]
+  },
+  "metadata": {                             // ✅ Required - Analytics/categorization
+    "popularity": 95,                       // ✅ Required - Score 1-100
+    "dateAdded": "2025-08-06",             // ✅ Required - YYYY-MM-DD
+    "featured": true,                       // ✅ Required - Homepage feature
+    "decade": "1950s",                      // ✅ Required - From approved enum
+    "iconicRiff": true,                     // Optional - Has memorable riff
+    "tags": ["Classic Rock", "Chuck Berry", "Double Stops", "Blues Rock"], // Optional
+    "learningValue": "HIGH",                // Optional - Educational value
+    "estimatedLearningTime": "2-3 months"   // Optional - Time estimate
+  }
+}
 ```
 
-### Step B4: Page Generation
-- [ ] Create song directory: `src/app/lessons/songs/song-analysis/[song-slug]/`
-- [ ] Copy and customize page template
-- [ ] Configure component mapping and props
-- [ ] Set up proper routing and metadata
+#### **Schema Validation**
+- [ ] **JSON Syntax**: Valid formatting without syntax errors
+- [ ] **Required Fields**: All required sections present and populated
+- [ ] **Data Types**: Numbers, strings, booleans, arrays correctly typed
+- [ ] **Enum Values**: Difficulty levels from approved list (Beginner|Intermediate|Advanced|Expert)
+- [ ] **Decade Values**: From approved enum (1940s|1950s|1960s|1970s|1980s|1990s|2000s|2010s|2020s)
+- [ ] **Time Stamps**: MM:SS-MM:SS format if provided
 
-### Step B5: Component Integration
-- [ ] **Use existing component architecture**: `src/components/SongAnalysis/`
-- [ ] **Page template**: Copy `SongAnalysis/_page-template.tsx` to song directory
-- [ ] **Component mapping**: Ensure all required sections have corresponding components
-- [ ] **Integrate SimpleAlphaTab.tsx** for AlphaTab notation rendering
-- [ ] **Integrate SimpleFretboardDiagram.tsx** for chord diagrams
-- [ ] **Configure responsive layouts** using existing component grid system
-- [ ] **Test component rendering** in isolation before page integration
+### Step 3: AlphaTab Notation Integration
 
-#### Required Component Structure
-
-**Core Page Components:**
+#### **AlphaTab Conversion Guidelines**
 ```typescript
-// Main page template (copy and customize)
-SongAnalysisPageTemplate.tsx
+// String Numbering (AlphaTab uses guitar string numbers)
+// 1 = High E (1st string)
+// 2 = B (2nd string)  
+// 3 = G (3rd string)
+// 4 = D (4th string)
+// 5 = A (5th string)
+// 6 = Low E (6th string)
 
-// Section components (ensure all exist)
-SongInfoHeader.tsx          // Song metadata and difficulty ratings
-TechniquesSection.tsx       // Technique breakdowns with chord diagrams  
-SongSections.tsx           // Song structure with AlphaTab notation
-EquipmentSection.tsx       // Gear recommendations and settings
-LearningPathSection.tsx    // Progressive skill development
-PracticeNotesSection.tsx   // Practice guidance and common mistakes
-RelatedSongsSection.tsx    // Cross-references to similar songs
+// Basic Notation Format: fret.string
+"3.6 5.5 7.4 |"  // 3rd fret 6th string, 5th fret 5th string, 7th fret 4th string
+
+// Chord Notation: (fret.string fret.string).duration
+"(7.2 9.3 9.4).4 |"  // Power chord, quarter note duration
+
+// Rhythm Values:
+// .1 = Whole note
+// .2 = Half note  
+// .4 = Quarter note
+// .8 = Eighth note
+// .16 = Sixteenth note
 ```
 
-**Visual Components Integration:**
+#### **Integration Points**
+- [ ] **Song Sections**: Add AlphaTab to signature riffs in sections array
+- [ ] **Technique Examples**: Include notation in technique details
+- [ ] **Component Testing**: Verify rendering in SimpleAlphaTab component
+
+#### **AlphaTab Examples for Johnny B. Goode**
 ```typescript
-// AlphaTab notation (use for signature riffs, chord progressions)
-import SimpleAlphaTab from '@/components/SimpleAlphaTab';
+// Main Riff (Intro)
+"3.6 5.6 3.6 5.6 3.6 5.6 3.6 |"
 
-// Chord diagrams (use for technique examples, song sections)
-import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+// Chuck Berry Double Stops  
+"(3.3 3.2).8 (5.3 5.2).8 (3.3 3.2).8 |"
 
-// Usage examples:
-<SimpleAlphaTab 
-  title="Main Riff"
-  alphaTex="3.6 5.5 7.4 |"
-  showValidation={false}
-/>
-
-<SimpleFretboardDiagram 
-  chord="B5"  // Component supports major chords, minors, 7ths, power chords, etc.
-/>
-
-// For chord progressions in techniques and song sections:
-{technique.details.chords && technique.details.chords.length > 0 && (
-  <div className="mb-4">
-    <h4 className="font-medium text-gray-800 mb-2">Chord Shapes:</h4>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {technique.details.chords.map((chord, chordIndex) => (
-        <div key={chordIndex} className="text-center">
-          <SimpleFretboardDiagram chord={chord} />
-          <p className="text-sm font-mono mt-1">{chord}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
+// Chord Progression
+"(1.2 3.3 3.4).4 (1.2 3.3 3.4).4 |"  // Bb to Eb progression
 ```
 
-**Supported Chord Types in SimpleFretboardDiagram:**
-- **Power Chords**: E5, A5, B5, D5, G5, C5, F5
-- **Major Chords**: C, G, D, E, F, Bb (also C_major, G_major, etc.)
-- **Minor Chords**: Em, Am, Dm, Bm, Cm (also E_minor, A_minor, etc.)
-- **7th Chords**: G7, E7, A7, B7, D7, C7, Am7, Em7, CMaj7, FMaj7, etc.
-- **Diminished**: Cdim, C°, Ddim, etc.
-- **Augmented**: C+, F+, G+, etc.
+### Step 4: Page Generation & Component Integration
 
-**Component Integration Guidelines:**
-- Use SimpleFretboardDiagram for **visual chord reference** in techniques and song sections
-- Display chord diagrams in responsive grids (2-4 columns depending on screen size)
-- Always include chord name labels below diagrams for clarity
-- Combine with AlphaTab notation for complete musical representation
+#### **Page File Creation**
+1. **Create Directory**: `src/app/lessons/songs/song-analysis/johnny-b-goode/`
+2. **Create Page**: `src/app/lessons/songs/song-analysis/johnny-b-goode/page.tsx`
 
-**Component Responsibilities:**
+#### **Page Implementation**
+```typescript
+"use client";
 
-1. **SongInfoHeader**
-   - Display song metadata from JSON
-   - Show difficulty ratings with color coding
-   - Responsive layout for all device sizes
+import React from "react";
+import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
 
-2. **TechniquesSection** 
-   - List all techniques from JSON with descriptions
-   - **Auto-generate chord diagrams** when `chords` array present in technique details
-   - **Use SimpleFretboardDiagram** for visual chord representations in responsive grid layout
-   - Show difficulty levels and learning tips
-   - Display chord progressions with both text and visual fretboard diagrams
+export default function JohnnyBGoodeAnalysis() {
+  return (
+    <SongAnalysisPageTemplate 
+      songSlug="johnny-b-goode" 
+      displayName="Johnny B. Goode" 
+    />
+  );
+}
+```
 
-3. **SongSections**
-   - Display song structure (intro, verse, chorus, etc.)
-   - **Integrate SimpleAlphaTab** for musical notation
-   - **Auto-generate chord diagrams** for section chord progressions using SimpleFretboardDiagram
-   - Show timing information and performance notes
-   - Combine tablature notation with visual chord references
+#### **Component Features (Automatic)**
+- **SongInfoSection**: Displays metadata with difficulty color coding
+- **TechniquesSection**: Auto-generates chord diagrams from `chords` arrays in technique details
+- **SongSections**: Integrates AlphaTab notation and chord progressions
+- **EquipmentSection**: Shows gear recommendations and amp settings
+- **LearningPathSection**: Progressive skill development paths
+- **PracticeNotesSection**: Practice guidance and common mistakes
+- **RelatedSongsSection**: Cross-references to similar content
 
-4. **Component Integration Checklist:**
-   - [ ] All section components render without errors
-   - [ ] SimpleAlphaTab renders all notation correctly
-   - [ ] SimpleFretboardDiagram shows all chord shapes accurately in responsive grid layouts
-   - [ ] Chord diagrams auto-generate from JSON chord arrays in techniques and sections
-   - [ ] Responsive design works on mobile, tablet, desktop (2-4 column grids for chord diagrams)
-   - [ ] Data flows correctly from JSON to components
-   - [ ] Error handling for missing data and unsupported chord types
-   - [ ] Loading states for heavy notation rendering
-   - [ ] Chord names display clearly below each fretboard diagram
+### Step 5: Song Registry Integration
 
-### Step B6: Content Review
-- [ ] Technical accuracy verification against reference materials
-- [ ] Educational content quality review
-- [ ] Cross-reference links with existing song analyses
-- [ ] Spell check and grammar review
+#### **Add to Data Registry**
+Update `src/lib/songData.ts`:
 
-### Step B7: Publication & Integration
-- [ ] Add song to data registry (`src/lib/songData.ts`)
-- [ ] Update navigation menus and indexes
-- [ ] Create links in related song analyses
-- [ ] Test full user journey from discovery to learning
+```typescript
+// 1. Add import
+import johnnyBGoodeData from '@/data/songs/johnny-b-goode.json';
 
-## Research Artifacts Required
+// 2. Add to songDatabase object
+const songDatabase: Record<string, SongData> = {
+  // ... existing songs ...
+  'johnny-b-goode': johnnyBGoodeData as unknown as SongData,
+};
+```
 
-### src/data/songs/_reference-tabs/[song-slug].tab
-**Purpose**: Internal accuracy reference for technical validation
-**Content**: 
-- Accurate tablature from verified primary sources (Guitar World, Songsterr, TabsGuru)
-- Key, tempo, tuning information
-- Main riffs and chord progressions
-- Technical notes and timing markers
+#### **Discovery Integration (Automatic)**
+Once registered, the song automatically appears in:
+- **SongDiscoveryHub**: Categorized by decade, difficulty, and tags
+- **Search Interface**: Searchable by title, artist, techniques, and tags  
+- **Analytics Dashboard**: Included in statistics and breakdowns
 
-### src/data/songs/_research_notes/[song-slug]-research.md
-**Purpose**: Document research process and source validation
-**Content**:
-- Primary source URLs and quality ratings (Guitar World, Songsterr, TabsGuru, 911Tabs)
-- Cross-reference notes between sources
-- Equipment research from official interviews/sources
-- Technical accuracy verification notes
-- Any discrepancies found and resolution decisions
+### Step 6: Quality Assurance & Testing
 
-### src/data/songs/[song-slug].json
-**Purpose**: Schema-compliant data for page generation
-**Content**:
-- All required fields per song-analysis.schema.json
-- AlphaTab notation in appropriate sections
-- Progressive difficulty breakdowns
-- Equipment specifications and alternatives
-- Practice routines and learning paths
+#### **Automated Validation**
+```bash
+# Schema validation
+node scripts/validate-song-schema.js
 
-## Quality Assurance Requirements
+# TypeScript compilation
+npm run type-check
 
-### Automated Validation
-- [ ] JSON schema validation passes
-- [ ] TypeScript compilation successful
-- [ ] Component tests pass in Jest
-- [ ] Storybook renders without errors
+# Component testing  
+npm run test
 
-### Content Quality Gates
-- [ ] All required schema fields populated
-- [ ] AlphaTab notation renders correctly
-- [ ] Chord diagrams display properly
-- [ ] Responsive design works on mobile/tablet/desktop
-- [ ] Educational progression is logical and complete
+# Development server
+npm run dev
+```
 
-### Technical Accuracy Standards
-- [ ] Cross-referenced with at least 2 high-quality sources
-- [ ] Internal reference tab matches published content
-- [ ] Equipment recommendations are current and accurate
-- [ ] Difficulty ratings are consistent with similar songs
+#### **Manual Testing Checklist**
+- [ ] **Page Loads**: Navigate to `/lessons/songs/song-analysis/johnny-b-goode`
+- [ ] **Component Rendering**: All sections display without errors
+- [ ] **Chord Diagrams**: Auto-generated from JSON chord arrays
+- [ ] **AlphaTab Notation**: Musical notation renders correctly
+- [ ] **Responsive Design**: Works on mobile, tablet, desktop
+- [ ] **Navigation**: Accessible through SongDiscoveryHub search/filters
 
-## Next Steps for Process Refinement
+#### **Content Quality Review**
+- [ ] **Technical Accuracy**: Cross-referenced with research sources
+- [ ] **Educational Value**: Clear progression for different skill levels
+- [ ] **Completeness**: All required sections meaningfully populated
+- [ ] **Consistency**: Follows patterns from existing songs like Thunderstruck
 
-### ✅ COMPLETED Areas:
+## Target Audience Considerations
 
-1. **✅ Step B1 (Research & Reference Creation)** - Comprehensive research guide created in `docs/song-analysis-research-and-references.md`
-2. **✅ Step B3 (AlphaTab Notation)** - Conversion guidelines added with examples from Storybook test cases
-3. **✅ Component Integration Specifics** - Detailed component architecture and integration guide
+### **Developing Guitarists (Primary)**
+- **Clear progression**: Beginner → Intermediate → Advanced
+- **Visual learning**: Chord diagrams and tablature notation
+- **Practice guidance**: Specific routines and common mistake avoidance
+- **Equipment recommendations**: Accessible alternatives to professional gear
 
-### 🔄 REMAINING Priority Areas for Detailed Definition:
+### **Advanced Players & Instructors (Secondary)**  
+- **Technical accuracy**: Authoritative source material and equipment specs
+- **Performance details**: Exact amp settings and technique specifications
+- **Teaching resources**: Well-structured content for instruction use
+- **Professional context**: Historical significance and influence
 
-4. **Quality Automation Pipeline** - Specify automated validation commands and pass/fail criteria
-5. **Content Strategy Implementation** - Layered information architecture for different skill levels
-6. **Migration Process Refinement** - Detailed VexTab → AlphaTab conversion for existing pages
+## Common Implementation Patterns
 
-### Immediate Action Items:
+### **Chord Diagram Auto-Generation**
+Any array named `chords` in technique details or song sections automatically generates responsive chord diagram grids:
 
-- [x] ✅ Define detailed B1 research methodology
-- [x] ✅ Create AlphaTab conversion guidelines for B3  
-- [x] ✅ Document component integration patterns
-- [ ] 🔄 Establish automated validation pipeline (JSON schema, TypeScript, Jest, Storybook)
-- [ ] 🔄 Test complete process with a sample song creation
-- [ ] 🔄 Refine migration process for existing pages (A1-A5)
+```typescript
+// In JSON data
+"details": {
+  "chords": ["Bb", "Eb", "F"]  // Triggers auto-generation
+}
 
-### Process Readiness Assessment:
+// Rendered as:
+// [Bb Diagram] [Eb Diagram] [F Diagram]
+// 2-4 column responsive grid layout
+```
 
-**✅ Ready for Autonomous Execution:**
-- Research and reference creation (B1)
-- AlphaTab notation conversion (B3)  
-- Component integration (B5)
-- Page generation workflow (B4)
+### **Difficulty Color Coding (Automatic)**
+- **Beginner**: Green
+- **Intermediate**: Orange  
+- **Advanced**: Red
+- **Expert**: Purple
 
-**🔄 Needs Additional Definition:**
-- Automated quality validation pipeline
-- Complete migration workflow for existing pages
-- Content layering strategy for different skill levels
+### **Responsive Grid Layouts**
+- **Mobile**: 2 columns for chord diagrams
+- **Tablet**: 3 columns for chord diagrams
+- **Desktop**: 4 columns for chord diagrams
 
-### Testing Protocol:
+## Current System Capabilities
 
-**Next Steps**: Test the complete process with a sample song:
-1. Execute: `"Follow the instructions in #file:song-analysis.md to create a page for 'Hurt So Good' by John Cougar Mellencamp"`
-2. Identify any gaps or unclear instructions
-3. Refine process based on real execution results
-4. Establish quality validation automation
+### **Supported Chord Types in SimpleFretboardDiagram**
+- **Power Chords**: E5, A5, B5, D5, G5, C5, F5, Bb5
+- **Major Chords**: C, G, D, E, F, Bb, Eb, Ab
+- **Minor Chords**: Em, Am, Dm, Bm, Cm, Gm, Fm
+- **7th Chords**: G7, E7, A7, B7, D7, C7, Am7, Em7, CMaj7, FMaj7
+- **Extended**: Cdim, C+, sus2, sus4 variations
+
+### **AlphaTab Integration Points**
+- **SimpleAlphaTab Component**: For standalone notation blocks
+- **AlphaTexRenderer**: For integrated notation within sections
+- **Automatic Rendering**: From `vexTab` fields in sections (legacy support)
+- **Responsive Containers**: Full-width with minimum height constraints
+
+### **Discovery & Search Features**
+- **Multi-Criteria Search**: Text across title, artist, techniques, tags
+- **Advanced Filtering**: Difficulty, genre, decade, tags, featured status
+- **Category Browsing**: Popular, recent, iconic riffs, beginner-friendly
+- **Analytics Dashboard**: Statistics and distribution breakdowns
+
+## Process Validation
+
+### **Schema Compliance Check**
+- All required fields present and correctly typed
+- Enum values from approved lists
+- Date formats (YYYY-MM-DD) and time stamps (MM:SS-MM:SS) valid
+- JSON syntax error-free
+
+### **Component Integration Check**  
+- Page template renders without errors
+- All song sections display correctly
+- Chord diagrams auto-generate from JSON data
+- AlphaTab notation renders properly
+- Responsive layouts work across device sizes
+
+### **Content Quality Check**
+- Technical details cross-referenced with authoritative sources
+- Educational progression logical and comprehensive
+- Equipment recommendations current and accessible
+- Practice guidance specific and actionable
+
+This process ensures consistent, high-quality song analysis pages that serve both developing and advanced guitarists while maintaining technical accuracy and educational value.
+````

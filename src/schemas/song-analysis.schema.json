@@ -127,10 +127,47 @@
     "learningPath": {
       "type": "object",
       "properties": {
-        "beginner": { "type": "object" },
-        "intermediate": { "type": "object" },
-        "advanced": { "type": "object" }
-      }
+        "beginner": { 
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "steps": { 
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "timeEstimate": { "type": "string" },
+            "goals": { "type": "string" }
+          },
+          "required": ["title", "steps", "timeEstimate"]
+        },
+        "intermediate": { 
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "steps": { 
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "timeEstimate": { "type": "string" },
+            "goals": { "type": "string" }
+          },
+          "required": ["title", "steps", "timeEstimate"]
+        },
+        "advanced": { 
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "steps": { 
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "timeEstimate": { "type": "string" },
+            "goals": { "type": "string" }
+          },
+          "required": ["title", "steps", "timeEstimate"]
+        }
+      },
+      "required": ["beginner", "intermediate", "advanced"]
     },
     "relatedSongs": {
       "type": "object",
@@ -200,7 +237,7 @@
         },
         "decade": { 
           "type": "string",
-          "enum": ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
+          "enum": ["1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"],
           "description": "Decade the song was released"
         },
         "subGenre": { 

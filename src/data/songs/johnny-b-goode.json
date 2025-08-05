@@ -1,0 +1,384 @@
+{
+  "songInfo": {
+    "title": "Johnny B. Goode",
+    "artist": "Chuck Berry",
+    "album": "Single Release",
+    "released": "1958",
+    "genre": "Rock and Roll / Blues Rock",
+    "key": "Bb major",
+    "tempo": "145 BPM",
+    "duration": "2:41",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "Bb major",
+      "scalesUsed": [
+        {
+          "scale": "Bb major scale",
+          "notes": "Bb - C - D - Eb - F - G - A - Bb",
+          "application": "Primary harmonic foundation and melodic content"
+        },
+        {
+          "scale": "Bb major pentatonic",
+          "notes": "Bb - C - D - F - G",
+          "application": "Chuck Berry's lead guitar fills and double stops"
+        },
+        {
+          "scale": "G minor pentatonic (relative minor)",
+          "notes": "G - Bb - C - D - F",
+          "application": "Additional lead guitar phrasing and blues inflections"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "2 flats (Bb, Eb)",
+      "relativeMinor": "G minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["Bb", "Eb", "F"],
+        "progression": "I - IV - V",
+        "description": "Classic 12-bar blues progression in Bb major, the foundation of rock and roll"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Bb - Bb - Bb - Bb - Eb - Eb - Bb - Bb - F - Eb - Bb - F",
+          "romanNumerals": "I - I - I - I - IV - IV - I - I - V - IV - I - V",
+          "description": "Standard 12-bar blues progression with the classic turnaround"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Bb - Eb - Bb - F",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Simplified progression emphasizing the primary chords"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Bb - Bb - Bb - Bb - Eb - Eb - Bb - Bb - F - Eb - Bb - F",
+          "romanNumerals": "I - I - I - I - IV - IV - I - I - V - IV - I - V",
+          "description": "Same 12-bar structure as verse, providing framework for Chuck Berry's lead work"
+        }
+      ],
+      "harmonicFunction": [
+        "Bb (I) - Establishes the tonic center and home chord",
+        "Eb (IV) - Provides subdominant movement and harmonic lift",
+        "F (V) - Creates dominant tension that resolves back to Bb",
+        "12-bar structure creates cyclical harmonic motion typical of blues and early rock"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Chuck Berry Double Stops",
+      "description": "Chuck Berry's signature technique using two-note harmonies played simultaneously on adjacent strings. This creates the distinctive 'duckwalk' sound that defined early rock and roll guitar.",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["Bb", "Eb", "F"],
+        "progression": "I - IV - V",
+        "alphaTab": "(3.3 3.2).4 (5.3 5.2).4 (3.3 3.2).4 |",
+        "scalePattern": "Bb major pentatonic - intervals of 3rds and 6ths",
+        "fretboardPositions": {
+          "position1": "3rd fret double stops (Bb-D on strings 3-2)",
+          "position2": "5th fret double stops (D-F on strings 3-2)",
+          "position3": "6th fret double stops (Eb-G on strings 3-2)",
+          "position4": "8th fret double stops (F-A on strings 3-2)"
+        },
+        "musicalFunction": "Creates harmony while maintaining single-note feel",
+        "notes": [
+          "Practice slowly with clean tone first",
+          "Focus on clean fretting to avoid muted notes",
+          "Use alternate picking for clarity",
+          "Keep fingers curved to avoid touching other strings"
+        ],
+        "sequence": [
+          "Master basic double stop shapes",
+          "Practice the main riff pattern",
+          "Add rhythmic variations",
+          "Integrate with chord changes"
+        ],
+        "tips": [
+          "Keep fingers curved for clean notes",
+          "Mute unused strings with palm",
+          "Start at slower tempo and build speed",
+          "Focus on the 'snap' of each double stop"
+        ]
+      }
+    },
+    {
+      "name": "Johnny B. Goode Main Riff",
+      "description": "The iconic opening and recurring riff pattern that combines single notes with Chuck Berry's signature style. This riff became one of the most recognizable in rock history.",
+      "difficulty": "Intermediate",
+      "details": {
+        "alphaTab": "3.6 5.6 3.6 5.6 3.6 0.6 3.6 5.6 | (3.4 5.3).4 (3.4 5.3).4 |",
+        "scalePattern": "Bb major pentatonic (Bb-C-D-F-G)",
+        "keyNotes": ["Bb (3rd fret, 6th string)", "D (5th fret, 6th string)", "F (3rd fret, 4th string)", "Bb (5th fret, 3rd string)"],
+        "rhythmPattern": "Syncopated eighth notes with open string accents",
+        "technique": "Alternating picking with palm muting",
+        "musicalFunction": "Establishes key center and rhythmic drive",
+        "fingering": {
+          "3rdFret": "Index finger (1st finger)",
+          "5thFret": "Ring finger (3rd finger)",
+          "openStrings": "Natural resonance for rhythm"
+        },
+        "practiceSteps": [
+          "Play slowly with metronome at 100 BPM",
+          "Focus on clean single notes first",
+          "Add the syncopated rhythm feel", 
+          "Practice the open string 'snap'",
+          "Build up to 145 BPM performance tempo"
+        ],
+        "notes": [
+          "Use thumb and index finger picking or alternate picking",
+          "Emphasize beat 1 and 3 for strong rhythm foundation",
+          "Keep bass notes ringing for full sound",
+          "The open 6th string provides rhythmic punctuation"
+        ]
+      }
+    },
+    {
+      "name": "Alternating Bass Lines",
+      "description": "Walking bass patterns on the lower strings that provide the driving rhythm foundation characteristic of Chuck Berry's style.",
+      "difficulty": "Intermediate",
+      "details": {
+        "notes": [
+          "Use thumb and index finger picking",
+          "Emphasize beat 1 and 3 for strong rhythm",
+          "Keep bass notes ringing for full sound"
+        ],
+        "sequence": [
+          "Practice basic root-fifth patterns",
+          "Add chromatic passing tones",
+          "Coordinate with chord changes"
+        ]
+      }
+    },
+    {
+      "name": "Lead Guitar Fills",
+      "description": "Single-note runs and fills played between vocal phrases, using pentatonic scales and blues-based phrasing.",
+      "difficulty": "Advanced",
+      "details": {
+        "notes": [
+          "Based on Bb major pentatonic scale",
+          "Use bend and release techniques",
+          "Focus on rhythmic placement between vocals"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "description": "The iconic opening riff that immediately establishes the Chuck Berry sound with double stops and driving rhythm. This riff became the template for countless rock and roll songs.",
+      "timeStamp": "0:00-0:08",
+      "technique": "Chuck Berry Double Stops",
+      "key": "Bb",
+      "alphaTab": "3.6 5.6 3.6 5.6 3.6 0.6 3.6 5.6 | (3.4 5.3).4 (3.4 5.3).4 (3.4 5.3).4 |",
+      "chords": ["Bb"],
+      "progression": "I",
+      "riffAnalysis": {
+        "technique": "Alternating single notes with double stops",
+        "scale": "Bb major pentatonic (Bb-C-D-F-G)",
+        "fretPositions": "3rd and 5th frets primarily",
+        "rhythmPattern": "Eighth notes with syncopated accents",
+        "musicalFunction": "Establishes key, tempo, and Chuck Berry style"
+      },
+      "notes": [
+        "Start with clean attack on the 3rd fret",
+        "Emphasize the syncopated rhythm - slightly ahead of the beat",
+        "Build energy for the vocal entry",
+        "The open 6th string provides rhythmic punctuation"
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "description": "Establishes the main chord progression with rhythm guitar supporting the vocal melody.",
+      "timeStamp": "0:08-0:41",
+      "technique": "Rhythm Guitar",
+      "key": "Bb",
+      "chords": ["Bb", "Eb", "F"],
+      "progression": "I - IV - I - V - IV - I",
+      "notes": [
+        "Use muted strumming technique",
+        "Keep steady eighth-note feel",
+        "Leave space for vocal phrasing"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "description": "Chuck Berry's signature lead guitar work featuring double stops, bends, and pentatonic runs. This solo established the template for rock guitar solos.",
+      "timeStamp": "1:15-1:48",
+      "technique": "Lead Guitar Fills",
+      "key": "Bb",
+      "alphaTab": "(3.3 3.2).8 (5.3 5.2).8 (3.3 3.2).8 (5.3 5.2).8 | 6.3 8.3 6.3 8.3 6.3 8.3 6.3 | 8.3{b}.4 8.3 6.3 8.3 6.3 |",
+      "riffAnalysis": {
+        "technique": "Double stops, single note runs, string bending",
+        "scale": "Bb major pentatonic with blues inflections",
+        "fretPositions": "3rd to 8th frets, primarily 6th and 8th positions",
+        "rhythmPattern": "Eighth notes with triplet fills",
+        "musicalFunction": "Melodic development over 12-bar blues changes"
+      },
+      "keyTechniques": [
+        "Double stops on 2nd and 3rd strings",
+        "String bending on 3rd string (8th fret)",
+        "Chuck Berry 'duck walk' phrasing",
+        "Call and response with rhythm section"
+      ],
+      "notes": [
+        "Focus on rhythmic placement - play slightly ahead of beat",
+        "Use alternate picking for clarity and attack",
+        "Build intensity throughout the solo",
+        "Bend the 8th fret on 3rd string for classic Chuck Berry sound"
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "description": "Returns to the main progression with added energy and guitar embellishments.",
+      "timeStamp": "1:48-2:21",
+      "technique": "Rhythm Guitar",
+      "key": "Bb",
+      "chords": ["Bb", "Eb", "F"],
+      "progression": "I - IV - I - V - IV - I"
+    },
+    {
+      "name": "Outro",
+      "description": "Drives to the conclusion with repeated riff patterns and final chord resolution.",
+      "timeStamp": "2:21-2:41",
+      "technique": "Chuck Berry Double Stops",
+      "key": "Bb",
+      "chords": ["Bb"],
+      "progression": "I"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson ES-355",
+      "alternatives": ["Gibson ES-335", "Epiphone Casino", "Gretsch G6120"],
+      "pickup": "Humbucker or P90"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb",
+      "alternatives": ["Fender Deluxe Reverb", "Vox AC30", "Marshall JTM45"],
+      "settings": {
+        "gain": "4/10",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "5/10",
+        "reverb": "3/10"
+      }
+    },
+    "effects": {
+      "distortion": "Light tube overdrive",
+      "reverb": "Spring reverb",
+      "other": "Minimal effects - focus on clean Chuck Berry tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Rock and Roll",
+      "steps": [
+        "Basic open chords (Bb, Eb, F)",
+        "Simple strumming patterns",
+        "Understanding 12-bar blues structure"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Play basic chord progression and understand song structure"
+    },
+    "intermediate": {
+      "title": "Building Chuck Berry Style",
+      "steps": [
+        "Barre chord mastery",
+        "Basic double stop technique",
+        "Rhythm guitar with muting",
+        "Chord progression timing"
+      ],
+      "timeEstimate": "2-3 months",
+      "goals": "Play rhythm parts confidently and begin double stop work"
+    },
+    "advanced": {
+      "title": "Mastering the Lead Work",
+      "steps": [
+        "Advanced double stops",
+        "Lead guitar fills and runs",
+        "Performance tempo and dynamics",
+        "Chuck Berry performance style"
+      ],
+      "timeEstimate": "3-4 months",
+      "goals": "Master all guitar parts and perform with authentic Chuck Berry style"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Roll Over Beethoven",
+        "link": "/lessons/songs/song-analysis/roll-over-beethoven",
+        "similarity": "Similar Chuck Berry double stops and rock and roll style"
+      },
+      {
+        "title": "Memphis Tennessee",
+        "artist": "Chuck Berry",
+        "similarity": "Same guitar techniques and musical approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "technique": "Lead guitar work",
+        "similarity": "Iconic riffs and lead guitar techniques"
+      },
+      {
+        "title": "Good Golly Miss Molly",
+        "artist": "Little Richard",
+        "technique": "Rock and roll rhythm",
+        "similarity": "Early rock and roll energy and chord progressions"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo during the intro riff",
+      "Muddy double stops from poor fretting technique",
+      "Playing too loudly and losing the clean Chuck Berry tone",
+      "Missing the syncopated rhythm feel"
+    ],
+    "practiceRoutine": [
+      "Start with chord progression at slow tempo (100 BPM)",
+      "Practice double stops separately before combining with rhythm",
+      "Work on clean transitions between sections",
+      "Use metronome for consistent timing"
+    ],
+    "focusAreas": [
+      "Clean chord transitions without buzz",
+      "Consistent rhythm timing throughout",
+      "Clear articulation of double stops",
+      "Dynamic control for different sections"
+    ],
+    "metronomeWork": [
+      "Practice at 100 BPM initially",
+      "Gradually increase to 120 BPM",
+      "Master at 145 BPM performance tempo",
+      "Work on playing slightly ahead of beat for rock feel"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2025-08-06",
+    "featured": true,
+    "decade": "1950s",
+    "iconicRiff": true,
+    "tags": ["Classic Rock", "Chuck Berry", "Double Stops", "Rock and Roll", "Blues Rock", "Iconic Riff"],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "3-4 months"
+  }
+}
