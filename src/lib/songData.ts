@@ -106,17 +106,17 @@ export interface SongData {
   learningPath: {
     beginner: {
       title: string;
-      skills: string[];
+      steps: string[];
       timeEstimate: string;
     };
     intermediate: {
       title: string;
-      skills: string[];
+      steps: string[];
       timeEstimate: string;
     };
     advanced: {
       title: string;
-      skills: string[];
+      steps: string[];
       timeEstimate: string;
     };
   };
@@ -196,7 +196,7 @@ export function getAllSongs(): SongListItem[] {
     title: data.songInfo.title,
     artist: data.songInfo.artist,
     genre: data.songInfo.genre,
-    difficulty: data.difficulty.overall,
+    difficulty: data.difficulty?.overall,
     year: data.songInfo.released,
     tempo: data.songInfo.tempo,
     key: data.songInfo.key,

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
-import { VexTab } from '@/components/VexTab';
 import { getSongData, SongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import MusicalAnalysisSection from './MusicalAnalysisSection';
@@ -178,14 +177,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   </div>
                 )}
 
-                {section.vexTab && (
-                  <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Notation:</h4>
-                    <div className="bg-gray-50 p-4 rounded">
-                      <VexTab notation={section.vexTab} />
-                    </div>
-                  </div>
-                )}
+
 
                 {section.tab && (
                   <div className="mb-4">
@@ -304,8 +296,8 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               <h3 className="text-lg font-semibold text-green-900 mb-3">{songData.learningPath.beginner.title}</h3>
               <p className="text-sm text-green-800 mb-4">Time Estimate: {songData.learningPath.beginner.timeEstimate}</p>
               <ul className="text-sm text-green-700 space-y-2">
-                {songData.learningPath.beginner.skills.map((skill, index) => (
-                  <li key={index}>• {skill}</li>
+                {songData.learningPath.beginner.steps.map((step, index) => (
+                  <li key={index}>• {step}</li>
                 ))}
               </ul>
             </div>
@@ -315,8 +307,8 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               <h3 className="text-lg font-semibold text-orange-900 mb-3">{songData.learningPath.intermediate.title}</h3>
               <p className="text-sm text-orange-800 mb-4">Time Estimate: {songData.learningPath.intermediate.timeEstimate}</p>
               <ul className="text-sm text-orange-700 space-y-2">
-                {songData.learningPath.intermediate.skills.map((skill, index) => (
-                  <li key={index}>• {skill}</li>
+                {songData.learningPath.intermediate.steps.map((step: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) => (
+                  <li key={index}>• {step}</li>
                 ))}
               </ul>
             </div>
@@ -326,8 +318,8 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               <h3 className="text-lg font-semibold text-red-900 mb-3">{songData.learningPath.advanced.title}</h3>
               <p className="text-sm text-red-800 mb-4">Time Estimate: {songData.learningPath.advanced.timeEstimate}</p>
               <ul className="text-sm text-red-700 space-y-2">
-                {songData.learningPath.advanced.skills.map((skill, index) => (
-                  <li key={index}>• {skill}</li>
+                {songData.learningPath.advanced.steps.map((step, index) => (
+                  <li key={index}>• {step}</li>
                 ))}
               </ul>
             </div>

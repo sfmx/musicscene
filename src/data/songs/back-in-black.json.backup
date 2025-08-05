@@ -1,0 +1,290 @@
+{
+  "songInfo": {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "album": "Back in Black",
+    "released": "1980",
+    "genre": "Hard Rock",
+    "tempo": "93 BPM",
+    "duration": "4:14",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "techniques": [
+    {
+      "name": "Downstroke Power Chords",
+      "description": "Essential AC/DC technique using exclusively downstrokes for power chords to achieve the characteristic attack and sustain",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Use exclusively downstrokes for all power chord changes",
+          "Maintain consistent attack strength across all strokes",
+          "Slight palm edge contact with bridge for control",
+          "Clean attack without heavy palm muting"
+        ],
+        "sequence": [
+          "Position picking hand over bridge area",
+          "Use wrist motion for downstroke attack",
+          "Follow through completely on each stroke",
+          "Maintain rhythm precision at 93 BPM"
+        ],
+        "tips": [
+          "Practice slowly to build stamina and consistency",
+          "Focus on the low E and A strings for power chord foundation",
+          "Keep unused strings slightly muted to avoid noise",
+          "Build up speed gradually to maintain clean attack"
+        ],
+        "chords": ["E5", "D5", "A5", "B5", "G5"],
+        "progression": "E5 - D5 - A5 - E5 (Main Riff)"
+      }
+    },
+    {
+      "name": "I-♭VII-IV Progression",
+      "description": "Classic rock progression using the characteristic ♭VII chord (D major in key of E) that defines the AC/DC sound",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The ♭VII chord creates the classic rock sound",
+          "Simple but effective harmonic movement",
+          "Foundation for countless AC/DC songs",
+          "Easy to learn but requires precise timing"
+        ],
+        "sequence": [
+          "Start with E5 power chord",
+          "Move to D5 (♭VII) for tension",
+          "Resolve through A5 (IV) back to E5 (I)",
+          "Maintain steady quarter-note rhythm"
+        ],
+        "tips": [
+          "Practice chord changes slowly at first",
+          "Focus on clean transitions between power chords",
+          "Use minimal finger movement between changes",
+          "Keep the same picking hand rhythm throughout"
+        ],
+        "chords": ["E5", "D5", "A5"],
+        "progression": "I - ♭VII - IV - I in E Major"
+      }
+    },
+    {
+      "name": "Simple Lead Lines",
+      "description": "Pentatonic-based melodic phrases that complement the rhythm guitar without overcomplicating the arrangement",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based on E minor pentatonic scale",
+          "Uses whole-step bends for expression",
+          "Sparse placement for maximum impact",
+          "Complements rather than competes with rhythm"
+        ],
+        "sequence": [
+          "Position in 12th fret area for lead tones",
+          "Execute whole-step bends on high B string",
+          "Use vibrato on sustained notes",
+          "Return to rhythm playing between phrases"
+        ],
+        "tips": [
+          "Less is more - don't overplay",
+          "Focus on tone quality over complexity",
+          "Practice bends to reach exact pitch",
+          "Listen to original for phrase placement"
+        ],
+        "chords": [],
+        "progression": "Over E5 - A5 verse progression"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Riff",
+      "timeStamp": "0:00-0:16",
+      "technique": "Downstroke Power Chords",
+      "key": "E Major",
+      "description": "The iconic opening riff that establishes the song's energy and showcases the I-♭VII-IV-I progression",
+      "tab": "3.6 3.6 3.6 3.6 | 0.5 0.5 0.5 0.5 | 2.4 2.4 2.4 2.4 | 3.6 3.6 3.6 3.6",
+      "chords": ["E5", "D5", "A5", "E5"],
+      "progression": "E5 - D5 - A5 - E5",
+      "notes": [
+        "Four quarter notes per chord",
+        "All downstrokes with consistent attack",
+        "Clean power chord voicings",
+        "Establishes the song's driving rhythm"
+      ]
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:16-0:47",
+      "technique": "Simple Power Chord Movement",
+      "key": "E Major",
+      "description": "Verse section with simple I-IV movement providing space for lead guitar phrases",
+      "tab": "3.6 3.6 3.6 3.6 | 2.4 2.4 2.4 2.4 | 3.6 3.6 3.6 3.6 | 3.6 3.6 3.6 3.6",
+      "chords": ["E5", "A5", "E5", "E5"],
+      "progression": "E5 - A5 - E5 - E5",
+      "notes": [
+        "Simplified chord progression for vocal space",
+        "Lead guitar adds melodic elements over rhythm",
+        "Maintains downstroke consistency",
+        "Creates dynamic contrast with main riff"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:47-1:03",
+      "technique": "Main Riff Return",
+      "key": "E Major", 
+      "description": "Return of the main riff with full intensity and the characteristic I-♭VII-IV-I progression",
+      "tab": "3.6 3.6 3.6 3.6 | 0.5 0.5 0.5 0.5 | 2.4 2.4 2.4 2.4 | 3.6 3.6 3.6 3.6",
+      "chords": ["E5", "D5", "A5", "E5"],
+      "progression": "E5 - D5 - A5 - E5",
+      "notes": [
+        "Identical to main riff with full band intensity",
+        "Emphasizes the ♭VII chord tension and release",
+        "Peak energy section of the song",
+        "Signature AC/DC progression showcased"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:15-2:31",
+      "technique": "Descending Power Chord Sequence",
+      "key": "E Major",
+      "description": "Bridge section with descending power chord movement creating tension before return to main theme",
+      "tab": "9.2 9.2 9.2 9.2 | 7.2 7.2 7.2 7.2 | 5.2 5.2 5.2 5.2 | 3.6 3.6 3.6 3.6",
+      "chords": ["B5", "A5", "G5", "E5"],
+      "progression": "B5 - A5 - G5 - E5",
+      "notes": [
+        "Descending sequence builds tension",
+        "Higher register power chords for contrast",
+        "Leads back to familiar E5 resolution",
+        "Creates dynamic lift before final choruses"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard",
+      "alternatives": ["Epiphone SG", "Gibson Les Paul", "Any solid-body electric with humbuckers"],
+      "pickup": "Humbuckers for thick, sustained power chord tone"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 Super Lead",
+      "alternatives": ["Marshall JCM800", "Marshall DSL40CR", "Vox AC30"],
+      "settings": {
+        "gain": "7-8 (natural tube overdrive)",
+        "treble": "7 (bright, cutting tone)",
+        "middle": "6-7 (present mids for power chords)",
+        "bass": "4-5 (tight low end)",
+        "presence": "8 (cut through mix)"
+      }
+    },
+    "effects": {
+      "distortion": "None - natural amp overdrive only",
+      "delay": "None",
+      "reverb": "Natural amp reverb",
+      "other": "No effects pedals - pure guitar and amp tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord shapes and simple chord changes",
+      "steps": [
+        "Master E5, A5, and D5 power chord shapes",
+        "Practice downstroke technique slowly",
+        "Learn the main riff chord progression",
+        "Work on clean chord transitions"
+      ],
+      "timeEstimate": "2-4 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Develop consistent downstroke technique and rhythm precision",
+      "steps": [
+        "Build stamina for consistent downstrokes",
+        "Practice at full tempo (93 BPM)",
+        "Add bridge section power chords",
+        "Work on dynamic control between sections"
+      ],
+      "timeEstimate": "4-6 weeks for solid performance"
+    },
+    "advanced": {
+      "focus": "Add lead guitar elements and perfect tone reproduction",
+      "steps": [
+        "Learn simple lead guitar phrases",
+        "Master whole-step bending technique",
+        "Achieve authentic amp tone settings",
+        "Combine rhythm and lead playing"
+      ],
+      "timeEstimate": "6-8 weeks for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using upstrokes instead of consistent downstrokes",
+      "Over-palm muting the power chords",
+      "Playing too fast initially without building stamina",
+      "Not maintaining consistent attack strength"
+    ],
+    "practiceRoutine": [
+      "Warm up with simple E5 downstrokes for 5 minutes",
+      "Practice chord changes slowly: E5-D5-A5-E5",
+      "Build tempo gradually from 60 BPM to 93 BPM",
+      "Work on stamina with extended downstroke practice"
+    ],
+    "focusAreas": [
+      "Downstroke consistency and power",
+      "Clean power chord voicings",
+      "Rhythm precision and timing",
+      "Stamina building for sustained downstrokes"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Highway to Hell",
+        "difficulty": "Intermediate",
+        "similarity": "Similar downstroke technique and power chord approach"
+      },
+      {
+        "title": "Thunderstruck",
+        "difficulty": "Advanced",
+        "similarity": "More complex but uses same fundamental AC/DC techniques"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Classic rock power chord progression"
+      },
+      {
+        "title": "You Shook Me All Night Long",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Similar chord progressions and downstroke technique"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "difficulty": "Beginner",
+        "similarity": "Simple progression to build foundation"
+      },
+      {
+        "title": "For Those About to Rock",
+        "artist": "AC/DC",
+        "difficulty": "Advanced",
+        "similarity": "Next level AC/DC complexity"
+      }
+    ]
+  }
+}

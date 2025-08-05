@@ -89,7 +89,7 @@
     "relatedSongs": {
       "type": "object",
       "properties": {
-        "acdc": {
+        "sameArtist": {
           "type": "array",
           "items": {
             "type": "object",
@@ -108,6 +108,7 @@
       "properties": {
         "commonMistakes": { "type": "array", "items": { "type": "string" } },
         "practiceRoutine": { "type": "array", "items": { "type": "string" } },
+        "focusAreas": { "type": "array", "items": { "type": "string" } },
         "metronomeWork": { "type": "array", "items": { "type": "string" } }
       }
     }

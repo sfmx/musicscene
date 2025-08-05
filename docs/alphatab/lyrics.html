@@ -1,234 +1,0 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlphaTab Documentation - Lyrics</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1, h2, h3 { color: #2c3e50; }
-        code {
-            background: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-        }
-        pre {
-            background: #f8f8f8;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            overflow-x: auto;
-        }
-        pre code {
-            background: none;
-            padding: 0;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .nav {
-            background: #34495e;
-            color: white;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        .nav a {
-            color: #ecf0f1;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-        .nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="nav">
-        <a href="README.html">Index</a>
-        <a href="introduction.html">Introduction</a>
-        <a href="metadata.html">Metadata</a>
-        <a href="stylesheet.html">Stylesheet</a>
-        <a href="tracks-staves.html">Tracks & Staves</a>
-        <a href="notes.html">Notes</a>
-        <a href="beat-effects.html">Beat Effects</a>
-        <a href="note-effects.html">Note Effects</a>
-        <a href="percussion.html">Percussion</a>
-        <a href="bar-metadata.html">Bar Metadata</a>
-        <a href="lyrics.html">Lyrics</a>
-        <a href="sync-points.html">Sync Points</a>
-    </div>
-
-<h1>AlphaTex Lyrics</h1>
-
-<p>Since alphaTab 1.2 there is support for lyrics in the AlphaTex format. You can attach lyrics to individual beats and alphaTab will show them on the music sheet.</p>
-
-<h2>Basic Syntax</h2>
-
-<p>To specify lyrics for a note, you can use the <code>\lyrics "text"</code> command right before the note:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "Hel" 1.4 </p>
-<p>\lyrics "lo" 2.4 </p>
-<p>\lyrics "world!" 3.4 4.4 |</p>
-</code></pre>
-
-<p>This will show "Hel" under the first beat, "lo" under the second beat, and "world!" under the third beat.</p>
-
-<h2>Syllable Separation</h2>
-
-<p>For longer words that span multiple beats, you can separate syllables manually:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "Hel" 1.4 </p>
-<p>\lyrics "lo" 2.4 </p>
-<p>\lyrics "my" 3.4 </p>
-<p>\lyrics "friend" 4.4 |</p>
-<p>\lyrics "How" 1.4 </p>
-<p>\lyrics "are" 2.4 </p>
-<p>\lyrics "you" 3.4 </p>
-<p>\lyrics "to" 4.4 |</p>
-<p>\lyrics "day?" 1.2 r.2 |</p>
-</code></pre>
-
-<h2>Beat Alignment</h2>
-
-<p>Lyrics are automatically aligned to the beat they are assigned to. If you have multiple notes per beat (like 8th notes), the lyric will align to the first note of that beat:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "Sing" 1.8 2.8 </p>
-<p>\lyrics "a" 3.8 </p>
-<p>\lyrics "song" 4.8 |</p>
-<p>\lyrics "of" 1.8 2.8 </p>
-<p>\lyrics "joy" 3.4 4.4 |</p>
-</code></pre>
-
-<h2>Multi-line Lyrics</h2>
-
-<p>You can specify multiple verses by using numbered lyrics commands:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "First" 1.4 </p>
-<p>\lyrics "verse" 2.4 </p>
-<p>\lyrics "here" 3.4 4.4 |</p>
-<p>\lyrics2 "Se" 1.4 </p>
-<p>\lyrics2 "cond" 2.4 </p>
-<p>\lyrics2 "verse" 3.4 4.4 |</p>
-</code></pre>
-
-<h2>Hyphenation</h2>
-
-<p>For words that span multiple notes, you can use hyphens to indicate syllable breaks:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "Hap" 1.4 </p>
-<p>\lyrics "py" 2.4 </p>
-<p>\lyrics "birth" 3.4 </p>
-<p>\lyrics "day" 4.4 |</p>
-<p>\lyrics "to" 1.4 </p>
-<p>\lyrics "you!" 2.2 r.2 |</p>
-</code></pre>
-
-<h2>Melismas</h2>
-
-<p>When multiple notes are sung on the same syllable, you can use underscores or leave lyrics empty for continuation:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>\lyrics "Ahhh" 1.8 2.8 3.8 4.8 |</p>
-<p>\lyrics "Yeah" 1.4 2.8 3.8 4.4 |</p>
-</code></pre>
-
-<h2>Comments in Lyrics</h2>
-
-<p>You can add comments that won't be displayed using <code>//</code>:</p>
-
-<pre><code>
-<p>\track "Voice"</p>
-<p>// Verse 1</p>
-<p>\lyrics "Once" 1.4 </p>
-<p>\lyrics "up" 2.4 </p>
-<p>\lyrics "on" 3.4 </p>
-<p>\lyrics "a" 4.4 |</p>
-<p>\lyrics "time" 1.2 r.2 |</p>
-<p>// Chorus</p>
-<p>\lyrics "La" 1.8 2.8 </p>
-<p>\lyrics "la" 3.8 4.8 |</p>
-</code></pre>
-
-<h2>Extended Example</h2>
-
-<p>Here's a more complete example showing various lyrics features:</p>
-
-<pre><code>
-<p>\title "Example Song"</p>
-<p>\subtitle "With Lyrics"</p>
-<p>\artist "AlphaTab"</p>
-
-<p>\track "Vocals"</p>
-<p>\lyrics "Verse" 1.4 </p>
-<p>\lyrics "one" 2.4 </p>
-<p>\lyrics "start" 3.4 </p>
-<p>\lyrics "ing" 4.4 |</p>
-<p>\lyrics "here" 1.4 </p>
-<p>\lyrics "with" 2.4 </p>
-<p>\lyrics "this" 3.4 </p>
-<p>\lyrics "line" 4.4 |</p>
-<p>\lyrics "Now" 1.4 </p>
-<p>\lyrics "the" 2.4 </p>
-<p>\lyrics "cho" 3.8 4.8 |</p>
-<p>\lyrics "rus" 1.4 </p>
-<p>\lyrics "sings" 2.2 r.2 |</p>
-
-<p>// Second verse</p>
-<p>\lyrics2 "Verse" 1.4 </p>
-<p>\lyrics2 "two" 2.4 </p>
-<p>\lyrics2 "dif" 3.4 </p>
-<p>\lyrics2 "ferent" 4.4 |</p>
-<p>\lyrics2 "words" 1.4 </p>
-<p>\lyrics2 "but" 2.4 </p>
-<p>\lyrics2 "same" 3.4 </p>
-<p>\lyrics2 "tune" 4.4 |</p>
-<p>\lyrics2 "Cho" 1.4 </p>
-<p>\lyrics2 "rus" 2.4 </p>
-<p>\lyrics2 "a" 3.8 4.8 |</p>
-<p>\lyrics2 "gain" 1.4 </p>
-<p>\lyrics2 "here" 2.2 r.2 |</p>
-</code></pre>
-
-<h2>Lyrics Display</h2>
-
-<p>When lyrics are present, alphaTab will:</p>
-
-<p> </p>
-<p>        param($match)</p>
-<p>        '<ul>' + $match.Groups[0].Value.Replace('<ul>', '').Replace('</ul>', '') + '</ul>'</p>
-<p>    The lyrics system in alphaTab provides a clean way to display song text alongside the musical notation, making it easier to follow along with vocal parts or understand the structure of songs with words.</p>
-
-
-</body>
-</html>

@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true,
+    "**/build/**": true
+  },
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+  "git.autorefresh": false,
+  "git.enableSmartCommit": false
+}
