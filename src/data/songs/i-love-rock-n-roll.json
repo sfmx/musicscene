@@ -1,0 +1,359 @@
+{
+  "songInfo": {
+    "title": "I Love Rock 'n' Roll",
+    "artist": "Joan Jett & the Blackhearts",
+    "album": "I Love Rock 'n' Roll",
+    "released": "November 1981",
+    "genre": "Rock / Hard Rock",
+    "key": "E major",
+    "tempo": "114 BPM",
+    "duration": "2:55",
+    "tuning": "Standard (E-A-D-G-B-E)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Simple lead guitar fills and melodic embellishments"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["E5", "A5", "B5"],
+        "progression": "I - IV - V",
+        "description": "Classic three-chord rock progression, the foundation of countless rock songs"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "E5 - A5 - B5 - E5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Simple four-chord loop that repeats throughout the verse"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - A5 - B5 - E5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Same progression as verse, emphasizing the simplicity and power"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Establishes the tonic center and home chord",
+        "A5 (IV) - Provides subdominant lift and harmonic movement",
+        "B5 (V) - Creates dominant tension that resolves back to E5",
+        "Cyclical progression creates forward momentum and sing-along quality"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Power Chord Foundation",
+      "description": "The backbone of rock guitar - simple two-note power chords that create the driving force behind the song. Perfect introduction to rock rhythm guitar.",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "chords": ["E5", "A5", "B5"],
+        "progression": "I - IV - V",
+        "alphaTab": "(0.6 2.5).4 (5.6 7.5).4 (7.6 9.5).4 (0.6 2.5).4 |",
+        "fretboardPositions": {
+          "E5": "Open 6th string with 2nd fret 5th string",
+          "A5": "5th fret 6th string with 7th fret 5th string",
+          "B5": "7th fret 6th string with 9th fret 5th string"
+        },
+        "musicalFunction": "Creates harmonic foundation with powerful, distorted sound",
+        "notes": [
+          "Use index finger to barre both strings",
+          "Keep unused strings muted with palm or fingers",
+          "Focus on clean chord changes"
+        ],
+        "sequence": [
+          "Master individual power chord shapes",
+          "Practice smooth transitions between chords",
+          "Add consistent strumming rhythm",
+          "Build up to performance tempo"
+        ],
+        "tips": [
+          "Arch fingers to avoid touching other strings",
+          "Use downstrokes for heavier sound",
+          "Keep fretting hand relaxed but firm"
+        ]
+      }
+    },
+    {
+      "name": "Palm Muted Rhythm",
+      "description": "Essential rock technique using the palm to partially mute strings while playing, creating a tight, percussive rhythm sound.",
+      "difficulty": "Intermediate",
+      "details": {
+        "alphaTab": "(0.6 2.5).8 (0.6 2.5).8 (0.6 2.5).8 (0.6 2.5).8 |",
+        "technique": "Rest palm edge lightly on strings near bridge",
+        "rhythmPattern": "Steady eighth notes with palm muting",
+        "musicalFunction": "Creates tight, controlled rhythm that drives the song",
+        "notes": [
+          "Palm should barely touch strings near bridge",
+          "Too much pressure kills the notes completely",
+          "Practice with metronome for consistent timing"
+        ],
+        "sequence": [
+          "Practice open string palm muting first",
+          "Add power chords with palm muting",
+          "Work on consistent eighth-note rhythm",
+          "Coordinate with chord changes"
+        ]
+      }
+    },
+    {
+      "name": "Simple Lead Fills",
+      "description": "Basic single-note runs and fills played between chord changes, using the E major pentatonic scale for melodic embellishments.",
+      "difficulty": "Intermediate",
+      "details": {
+        "alphaTab": "0.6 2.6 4.6 0.5 2.5 |",
+        "scalePattern": "E major pentatonic (E-F#-G#-B-C#)",
+        "fretPositions": "Open position and 2nd-4th frets",
+        "musicalFunction": "Adds melodic interest between vocal phrases",
+        "notes": [
+          "Keep fills simple and tasteful",
+          "Use alternate picking for clarity",
+          "Leave space - don't overplay"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "description": "Iconic opening with the main power chord riff that immediately establishes the rock energy and gets listeners pumped up.",
+      "timeStamp": "0:00-0:08",
+      "technique": "Power Chord Foundation",
+      "key": "E",
+      "alphaTab": "(0.6 2.5).4 (5.6 7.5).4 (7.6 9.5).4 (0.6 2.5).4 |",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "I - IV - V - I",
+      "riffAnalysis": {
+        "technique": "Power chords with strong downstrokes",
+        "rhythmPattern": "Quarter note emphasis on chord changes",
+        "fretPositions": "Open, 5th fret, and 7th fret positions",
+        "musicalFunction": "Establishes key, tempo, and rock attitude"
+      },
+      "notes": [
+        "Play with confidence and attitude",
+        "Strong downstrokes for maximum impact",
+        "Set the energy level for the entire song"
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "description": "Continues the main progression with palm-muted rhythm guitar supporting the vocal melody about rock and roll passion.",
+      "timeStamp": "0:08-0:33",
+      "technique": "Palm Muted Rhythm",
+      "key": "E",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "I - IV - V - I (repeated)",
+      "notes": [
+        "Use palm muting for tighter sound",
+        "Keep steady eighth-note feel",
+        "Support the vocal without overpowering"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "description": "The anthemic chorus with the iconic hook, using the same chord progression but with more open, ringing power chords.",
+      "timeStamp": "0:33-0:58",
+      "technique": "Power Chord Foundation",
+      "key": "E",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "I - IV - V - I",
+      "notes": [
+        "Open up the palm muting for bigger sound",
+        "Let the chords ring out more",
+        "Match the energy of the vocal hook"
+      ]
+    },
+    {
+      "name": "Guitar Solo",
+      "description": "Simple but effective guitar solo using E major pentatonic scale, staying true to the song's accessible rock spirit.",
+      "timeStamp": "1:33-1:58",
+      "technique": "Simple Lead Fills",
+      "key": "E",
+      "alphaTab": "0.6 2.6 4.6 0.5 2.5 4.5 0.4 2.4 |",
+      "riffAnalysis": {
+        "technique": "Single-note runs with occasional bends",
+        "scale": "E major pentatonic",
+        "fretPositions": "Open position through 4th fret",
+        "rhythmPattern": "Mix of eighth and quarter notes",
+        "musicalFunction": "Melodic break that maintains song energy"
+      },
+      "keyTechniques": [
+        "E major pentatonic scale runs",
+        "Simple string bending on 2nd fret",
+        "Alternate picking for clean articulation"
+      ],
+      "notes": [
+        "Keep it simple and melodic",
+        "Focus on note clarity over speed",
+        "Build intensity gradually throughout solo"
+      ]
+    },
+    {
+      "name": "Final Chorus",
+      "description": "Climactic final chorus with maximum energy, potentially adding power chord variations or fills.",
+      "timeStamp": "1:58-2:23",
+      "technique": "Power Chord Foundation",
+      "key": "E",
+      "chords": ["E5", "A5", "B5"],
+      "progression": "I - IV - V - I"
+    },
+    {
+      "name": "Outro",
+      "description": "Powerful ending that drives the main riff home one final time with attitude and conviction.",
+      "timeStamp": "2:23-2:55",
+      "technique": "Power Chord Foundation",
+      "key": "E",
+      "chords": ["E5"],
+      "progression": "I"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Melody Maker",
+      "alternatives": ["Gibson Les Paul Junior", "Fender Telecaster", "Epiphone Les Paul Special"],
+      "pickup": "Humbucker or high-output single coil"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800",
+      "alternatives": ["Marshall DSL40CR", "Fender Hot Rod Deluxe", "Orange Crush Pro"],
+      "settings": {
+        "gain": "6/10",
+        "treble": "7/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "5/10",
+        "volume": "Adjust for room/venue"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate overdrive/distortion",
+      "reverb": "Minimal - maybe spring reverb",
+      "other": "Keep it simple - the power comes from the amp distortion"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Rock Fundamentals",
+      "steps": [
+        "Learn E5, A5, B5 power chord shapes",
+        "Practice chord progression slowly",
+        "Master basic downstroke strumming",
+        "Work on clean chord transitions"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Play the basic song structure with confidence"
+    },
+    "intermediate": {
+      "title": "Rock Rhythm Mastery",
+      "steps": [
+        "Add palm muting technique",
+        "Practice consistent eighth-note rhythm",
+        "Learn simple lead fills",
+        "Coordinate strumming and muting"
+      ],
+      "timeEstimate": "1-2 months",
+      "goals": "Play with proper rock rhythm technique and attitude"
+    },
+    "advanced": {
+      "title": "Performance Ready",
+      "steps": [
+        "Master the guitar solo",
+        "Add dynamic variations",
+        "Practice with backing tracks",
+        "Develop stage presence and attitude"
+      ],
+      "timeEstimate": "1-2 months",
+      "goals": "Perform the complete song with rock star confidence"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Bad Reputation",
+        "artist": "Joan Jett & the Blackhearts",
+        "similarity": "Similar power chord approach and Joan Jett attitude"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "technique": "Three-chord rock progression",
+        "similarity": "Same I-IV-V progression and simple rock structure"
+      },
+      {
+        "title": "Louie Louie",
+        "artist": "The Kingsmen",
+        "technique": "Power chord foundation",
+        "similarity": "Classic three-chord rock progression"
+      },
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "link": "/lessons/songs/song-analysis/thunderstruck",
+        "technique": "Power chord progression",
+        "similarity": "Rock power chord techniques and energy"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo - keep it steady at 114 BPM",
+      "Sloppy chord changes - practice transitions slowly",
+      "Too much palm muting - find the right balance",
+      "Playing without attitude - this song requires confidence"
+    ],
+    "practiceRoutine": [
+      "Start with chord progression at slow tempo (80 BPM)",
+      "Practice each power chord shape until clean",
+      "Work on palm muting with open strings first",
+      "Gradually add full chord progression with muting"
+    ],
+    "focusAreas": [
+      "Clean power chord shapes without buzzing",
+      "Consistent palm muting pressure",
+      "Smooth chord transitions",
+      "Steady rhythm timing"
+    ],
+    "metronomeWork": [
+      "Practice at 80 BPM initially",
+      "Gradually increase to 100 BPM",
+      "Master at 114 BPM performance tempo",
+      "Practice playing slightly ahead of beat for rock feel"
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2025-08-06",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": ["Classic Rock", "Power Chords", "Beginner Friendly", "Joan Jett", "Rock Anthem"],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

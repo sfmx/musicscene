@@ -9,6 +9,8 @@ import sweetChildOMineData from '@/data/songs/sweet-child-o-mine.json';
 import enterSandmanData from '@/data/songs/enter-sandman.json';
 import hurtSoGoodData from '@/data/songs/hurt-so-good.json';
 import johnnyBGoodeData from '@/data/songs/johnny-b-goode.json';
+import iLoveRockNRollData from '@/data/songs/i-love-rock-n-roll.json';
+import noSecretsData from '@/data/songs/no-secrets.json';
 
 export interface SongData {
   songInfo: {
@@ -207,6 +209,8 @@ const songDatabase: Record<string, SongData> = {
   'enter-sandman': enterSandmanData as unknown as SongData,
   'hurt-so-good': hurtSoGoodData as unknown as SongData,
   'johnny-b-goode': johnnyBGoodeData as unknown as SongData,
+  'i-love-rock-n-roll': iLoveRockNRollData as unknown as SongData,
+  'no-secrets': noSecretsData as unknown as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {
