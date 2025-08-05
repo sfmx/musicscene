@@ -137,6 +137,7 @@ export interface SongData {
     commonMistakes: string[];
     practiceRoutine: string[];
     metronomeWork: string[];
+    focusAreas?: string[];
   };
   references?: {
     ultimateGuitar?: string;

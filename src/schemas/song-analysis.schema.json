@@ -32,9 +32,55 @@
     "musicalAnalysis": {
       "type": "object",
       "properties": {
-        "keyAndScale": { "type": "object" },
-        "chordProgressions": { "type": "object" }
+        "keyAndScale": { 
+          "type": "object",
+          "properties": {
+            "primaryKey": { "type": "string" },
+            "scalesUsed": { "type": "array" },
+            "modalCharacter": { "type": "string" },
+            "keySignature": { "type": "string" },
+            "relativeMinor": { "type": "string" }
+          },
+          "required": ["primaryKey", "modalCharacter"]
+        },
+        "chordProgressions": { 
+          "type": "object",
+          "properties": {
+            "mainProgression": {
+              "type": "object",
+              "properties": {
+                "chords": { 
+                  "type": "array", 
+                  "items": { "type": "string" },
+                  "minItems": 1
+                },
+                "progression": { "type": "string" },
+                "description": { "type": "string" }
+              },
+              "required": ["chords", "progression", "description"]
+            },
+            "sectionProgressions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "section": { "type": "string" },
+                  "progression": { "type": "string" },
+                  "romanNumerals": { "type": "string" },
+                  "description": { "type": "string" }
+                },
+                "required": ["section", "progression", "romanNumerals", "description"]
+              }
+            },
+            "harmonicFunction": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["mainProgression"]
+        }
       },
+      "required": ["keyAndScale", "chordProgressions"],
       "additionalProperties": true
     },
     "techniques": {
@@ -106,11 +152,28 @@
     "practiceNotes": {
       "type": "object",
       "properties": {
-        "commonMistakes": { "type": "array", "items": { "type": "string" } },
-        "practiceRoutine": { "type": "array", "items": { "type": "string" } },
-        "focusAreas": { "type": "array", "items": { "type": "string" } },
-        "metronomeWork": { "type": "array", "items": { "type": "string" } }
-      }
+        "commonMistakes": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "practiceRoutine": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "focusAreas": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "metronomeWork": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      },
+      "required": ["commonMistakes", "practiceRoutine", "focusAreas", "metronomeWork"]
     }
   },
   "required": ["songInfo", "difficulty", "techniques", "sections", "equipment", "learningPath", "relatedSongs", "practiceNotes"],

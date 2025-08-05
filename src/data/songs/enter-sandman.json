@@ -10,6 +10,55 @@
     "key": "E minor",
     "tuning": "Standard (E-A-D-G-B-E)"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "key": "E minor",
+      "scale": "E natural minor",
+      "mood": "Dark and ominous"
+    },
+    "chordProgressions": {
+      "mainProgression": [
+        { "chord": "Em", "roman": "i", "function": "Tonic" },
+        { "chord": "G5", "roman": "♭III", "function": "Mediant" },
+        { "chord": "F#5", "roman": "ii°", "function": "Supertonic" },
+        { "chord": "Em", "roman": "i", "function": "Tonic" }
+      ],
+      "sectionProgressions": {
+        "intro": [
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" }
+        ],
+        "verse": [
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "G5", "roman": "♭III", "function": "Mediant" },
+          { "chord": "F#5", "roman": "ii°", "function": "Supertonic" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" }
+        ],
+        "chorus": [
+          { "chord": "B5", "roman": "V", "function": "Dominant" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "G5", "roman": "♭III", "function": "Mediant" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" }
+        ],
+        "bridge": [
+          { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
+          { "chord": "Am", "roman": "iv", "function": "Subdominant" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" },
+          { "chord": "Em", "roman": "i", "function": "Tonic" }
+        ]
+      }
+    },
+    "harmonicFunction": [
+      "The song is built on the E natural minor scale, creating a dark and heavy atmosphere",
+      "The main riff uses a distinctive chromatic progression from Em to G5 to F#5 back to Em",
+      "The F#5 chord (ii°) creates harmonic tension that resolves back to the tonic",
+      "The chorus uses a dominant (B5) to tonic (Em) movement for strong resolution",
+      "The bridge introduces the ♭VI (C5) and iv (Am) chords, common in minor key progressions",
+      "The single-note intro riff establishes the dark mood before the full chord progression enters"
+    ]
+  },
   "difficulty": {
     "overall": "Intermediate",
     "rhythmGuitar": "Intermediate",

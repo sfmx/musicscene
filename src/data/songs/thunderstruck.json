@@ -17,6 +17,54 @@
     "bass": "Intermediate",
     "drums": "Advanced"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B major",
+      "scalesUsed": [
+        {
+          "scale": "B major scale",
+          "notes": "B - C# - D# - E - F# - G# - A# - B",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "B minor pentatonic",
+          "notes": "B - D - E - F# - A",
+          "application": "Lead guitar fills and solo sections"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "5 sharps (F#, C#, G#, D#, A#)",
+      "relativeMinor": "G# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["B5", "E5", "F#5"],
+        "progression": "I - IV - V",
+        "description": "Classic I-IV-V power chord progression forming the backbone of the song"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "B5 - A5 - E5 - B5",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Modified progression with ♭VII adding rock edge and tension"
+        },
+        {
+          "section": "Chorus",
+          "progression": "B5 - G5 - A5 - B5",
+          "romanNumerals": "I - ♭VI - ♭VII - I",
+          "description": "Uses borrowed chords from parallel minor for heavier sound"
+        }
+      ],
+      "harmonicFunction": [
+        "B5 (I) - Establishes strong tonic center in B major",
+        "E5 (IV) - Provides subdominant movement and harmonic contrast",
+        "F#5 (V) - Creates dominant tension that resolves back to B5",
+        "A5 (♭VII) - Borrowed from B minor, adds classic rock character",
+        "G5 (♭VI) - Another borrowed chord creating darker harmonic color"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Left-Hand Tapping",

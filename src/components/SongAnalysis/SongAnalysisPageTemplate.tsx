@@ -9,6 +9,7 @@ import { getSongData, SongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import MusicalAnalysisSection from './MusicalAnalysisSection';
 import MusicalAnalysisScales from './MusicalAnalysisScales';
+import ChordProgressionVisualization from './ChordProgressionVisualization';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 interface SongAnalysisPageTemplateProps {
@@ -78,6 +79,9 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         {/* Musical Analysis */}
         <MusicalAnalysisSection songData={songData} />
+
+        {/* Chord Progressions & Visualization */}
+        <ChordProgressionVisualization songData={songData} />
 
         {/* Detailed Scale Analysis */}
         <MusicalAnalysisScales songData={songData} />
@@ -329,7 +333,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         {/* Practice Notes */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Practice Notes</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Common Mistakes */}
             <div className="bg-red-50 rounded-xl p-6 border border-red-200">
               <h3 className="text-lg font-semibold text-red-900 mb-4">Common Mistakes</h3>
@@ -350,15 +354,29 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               </ul>
             </div>
 
+            {/* Focus Areas */}
+            {songData.practiceNotes.focusAreas && songData.practiceNotes.focusAreas.length > 0 && (
+              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                <h3 className="text-lg font-semibold text-green-900 mb-4">Focus Areas</h3>
+                <ul className="text-sm text-green-700 space-y-2">
+                  {songData.practiceNotes.focusAreas.map((area, index) => (
+                    <li key={index}>• {area}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Metronome Work */}
-            <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
-              <h3 className="text-lg font-semibold text-purple-900 mb-4">Metronome Work</h3>
-              <ul className="text-sm text-purple-700 space-y-2">
-                {songData.practiceNotes.metronomeWork.map((work, index) => (
-                  <li key={index}>• {work}</li>
-                ))}
-              </ul>
-            </div>
+            {songData.practiceNotes.metronomeWork && songData.practiceNotes.metronomeWork.length > 0 && (
+              <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
+                <h3 className="text-lg font-semibold text-purple-900 mb-4">Metronome Work</h3>
+                <ul className="text-sm text-purple-700 space-y-2">
+                  {songData.practiceNotes.metronomeWork.map((work, index) => (
+                    <li key={index}>• {work}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </section>
 

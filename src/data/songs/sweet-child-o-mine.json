@@ -17,6 +17,53 @@
     "bass": "Intermediate",
     "drums": "Intermediate"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "Db major",
+      "scalesUsed": [
+        {
+          "scale": "Db major scale",
+          "notes": "Db - Eb - F - Gb - Ab - Bb - C - Db",
+          "application": "Primary harmonic foundation for chord progressions and arpeggiated intro"
+        },
+        {
+          "scale": "Bb minor pentatonic",
+          "notes": "Bb - Db - Eb - F - Ab",
+          "application": "Lead guitar solos and melodic fills"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "5 flats (Bb, Eb, Ab, Db, Gb)",
+      "relativeMinor": "Bb minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["Db", "Ab", "Bb", "Gb"],
+        "progression": "I - V - vi - IV",
+        "description": "Classic pop progression adapted for rock with arpeggiated single-note approach"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "Db - Ab - Bb - Gb",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "Arpeggiated single notes outlining the chord progression"
+        },
+        {
+          "section": "Verse/Chorus",
+          "progression": "Gb - Ab - Bb - Ab - Gb - Ab - Db - Ab",
+          "romanNumerals": "IV - V - vi - V - IV - V - I - V",
+          "description": "Power chord version of the progression with extended movement"
+        }
+      ],
+      "harmonicFunction": [
+        "Db (I) - Establishes tonic center in Db major",
+        "Ab (V) - Provides dominant function and forward momentum",
+        "Bb (vi) - Relative minor adds emotional depth",
+        "Gb (IV) - Subdominant creates warm harmonic movement"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Arpeggiated Single-Note Patterns",

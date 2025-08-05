@@ -17,6 +17,54 @@
     "bass": "Beginner",
     "drums": "Intermediate"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar fills and occasional melodic elements"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["E5", "D5", "A5", "E5"],
+        "progression": "I - ♭VII - IV - I",
+        "description": "Classic AC/DC progression using ♭VII chord for rock edge and tension-release"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "E5 - A5 - E5 - E5",
+          "romanNumerals": "I - IV - I - I",
+          "description": "Simplified I-IV movement providing space for vocal melody and lead guitar"
+        },
+        {
+          "section": "Bridge",
+          "progression": "B5 - A5 - G5 - E5",
+          "romanNumerals": "V - IV - ♭III - I",
+          "description": "Descending sequence building tension before return to main theme"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Establishes strong tonic center in E major",
+        "D5 (♭VII) - Borrowed from E minor, creates classic rock character",
+        "A5 (IV) - Provides subdominant movement and harmonic contrast",
+        "B5 (V) - Creates dominant tension for resolution",
+        "G5 (♭III) - Another borrowed chord adding darker harmonic color"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Downstroke Power Chords",

@@ -17,6 +17,58 @@
     "bass": "Beginner",
     "drums": "Intermediate"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major",
+      "scalesUsed": [
+        {
+          "scale": "A major scale",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Lead guitar solos and melodic fills"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["A5", "D5", "G5"],
+        "progression": "I - IV - ♭VII",
+        "description": "Classic rock progression using ♭VII chord for signature AC/DC sound"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "A5 - D5 - G5 - D5 - A5",
+          "romanNumerals": "I - IV - ♭VII - IV - I",
+          "description": "Extended progression with ♭VII adding rock edge and harmonic interest"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A5 - D5 - G5 - D5 - A5",
+          "romanNumerals": "I - IV - ♭VII - IV - I",
+          "description": "Same progression with full band arrangement and anthemic energy"
+        },
+        {
+          "section": "Bridge",
+          "progression": "D5 - G5 - A5",
+          "romanNumerals": "IV - ♭VII - I",
+          "description": "Building section emphasizing the subdominant and ♭VII resolution"
+        }
+      ],
+      "harmonicFunction": [
+        "A5 (I) - Establishes strong tonic center in A major",
+        "D5 (IV) - Provides subdominant movement and harmonic departure",
+        "G5 (♭VII) - Borrowed from A minor, creates classic rock character and tension"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Power Chords",

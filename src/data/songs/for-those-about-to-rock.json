@@ -17,6 +17,61 @@
     "bass": "Beginner",
     "drums": "Intermediate"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for chord progressions"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar fills and blues-based melodic elements"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": ["E5", "A5", "B5"],
+        "progression": "I - IV - V",
+        "description": "Classic I-IV-V power chord progression - the foundation of rock music"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro/Verse",
+          "progression": "E5 - A5 - B5 - E5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Complete I-IV-V-I cadence providing strong resolution"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - A5 - B5 - E5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Same progression with anthemic vocal melody and full band intensity"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C5 - G5 - D5 - A5",
+          "romanNumerals": "♭VI - ♭III - ♭VII - IV",
+          "description": "Borrowed chords from parallel minor creating darker harmonic color"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Establishes strong tonic center in E major",
+        "A5 (IV) - Provides subdominant movement and harmonic contrast",
+        "B5 (V) - Creates dominant tension that resolves back to E5",
+        "C5 (♭VI) - Borrowed from E minor for darker color",
+        "G5 (♭III) - Another borrowed chord adding tension",
+        "D5 (♭VII) - Classic rock chord borrowed from minor"
+      ]
+    }
+  },
   "techniques": [
     {
       "name": "Power Chords",

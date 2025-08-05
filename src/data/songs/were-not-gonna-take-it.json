@@ -10,6 +10,48 @@
     "key": "E major",
     "tuning": "Standard (E-A-D-G-B-E)"
   },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "key": "E major",
+      "scale": "E major pentatonic",
+      "mood": "Anthemic and defiant"
+    },
+    "chordProgressions": {
+      "mainProgression": [
+        { "chord": "E5", "roman": "I", "function": "Tonic" },
+        { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
+        { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
+        { "chord": "B5", "roman": "V", "function": "Dominant" }
+      ],
+      "sectionProgressions": {
+        "verse": [
+          { "chord": "E5", "roman": "I", "function": "Tonic" },
+          { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
+          { "chord": "A5", "roman": "IV", "function": "Subdominant" },
+          { "chord": "E5", "roman": "I", "function": "Tonic" }
+        ],
+        "chorus": [
+          { "chord": "E5", "roman": "I", "function": "Tonic" },
+          { "chord": "D5", "roman": "♭VII", "function": "Subtonic" },
+          { "chord": "C5", "roman": "♭VI", "function": "Submediant" },
+          { "chord": "B5", "roman": "V", "function": "Dominant" }
+        ],
+        "bridge": [
+          { "chord": "A5", "roman": "IV", "function": "Subdominant" },
+          { "chord": "B5", "roman": "V", "function": "Dominant" },
+          { "chord": "E5", "roman": "I", "function": "Tonic" },
+          { "chord": "E5", "roman": "I", "function": "Tonic" }
+        ]
+      }
+    },
+    "harmonicFunction": [
+      "The main progression uses a chromatic descending power chord sequence that creates strong forward momentum",
+      "The ♭VII (D5) and ♭VI (C5) chords are borrowed from E natural minor, giving the song its aggressive edge",
+      "The verse uses a more traditional I-♭VII-IV-I progression that provides stability",
+      "The bridge employs a classic IV-V-I cadence that builds tension before returning to the main theme",
+      "Power chords throughout maintain the heavy, anthemic character typical of 80s metal"
+    ]
+  },
   "difficulty": {
     "overall": "Intermediate",
     "rhythmGuitar": "Intermediate",
