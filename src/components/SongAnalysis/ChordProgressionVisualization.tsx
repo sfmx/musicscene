@@ -45,21 +45,8 @@ export default function ChordProgressionVisualization({ songData }: ChordProgres
       <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm mb-8">
         <h3 className="text-xl font-semibold text-gray-900 mb-6">Main Progression</h3>
         
-        {/* Chord Diagrams */}
-        <div className="mb-6">
-          <h4 className="text-lg font-medium text-gray-800 mb-4">Chord Shapes</h4>
-          <div className="flex flex-wrap gap-8 justify-center md:justify-start">
-            {mainProgression.chords.map((chord, index) => (
-              <div key={index} className="text-center">
-                <SimpleFretboardDiagram chord={chord} />
-                <p className="mt-2 text-sm font-medium text-gray-700">{chord}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Progression Info */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div className="bg-blue-50 rounded-lg p-4">
             <h4 className="font-medium text-blue-900 mb-2">Progression</h4>
             <p className="text-blue-800 text-sm mb-2">
@@ -72,6 +59,18 @@ export default function ChordProgressionVisualization({ songData }: ChordProgres
           <div className="bg-green-50 rounded-lg p-4">
             <h4 className="font-medium text-green-900 mb-2">Analysis</h4>
             <p className="text-green-800 text-sm">{mainProgression.description}</p>
+          </div>
+        </div>
+
+        {/* Chord Diagrams */}
+        <div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
+            {mainProgression.chords.map((chord, index) => (
+              <div key={index} className="text-center w-full">
+                <SimpleFretboardDiagram chord={chord} />
+                <p className="mt-2 text-sm font-medium text-gray-700">{chord}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -92,27 +91,26 @@ export default function ChordProgressionVisualization({ songData }: ChordProgres
                   </div>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <p className="text-sm text-gray-600 mb-2">
-                      <strong>Progression:</strong> {section.progression}
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      {section.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-6 justify-center md:justify-start">
-                    {section.progression.split(' - ').map((chord, chordIndex) => {
-                      // Extract chord name (remove any extra formatting)
-                      const cleanChord = chord.trim();
-                      return (
-                        <div key={chordIndex} className="text-center">
-                          <SimpleFretboardDiagram chord={cleanChord} />
-                          <p className="text-xs mt-2 text-gray-600">{cleanChord}</p>
-                        </div>
-                      );
-                    })}
-                  </div>
+                <div className="mb-4">
+                  <p className="text-sm text-gray-600 mb-2">
+                    <strong>Progression:</strong> {section.progression}
+                  </p>
+                  <p className="text-sm text-gray-600 mb-4">
+                    {section.description}
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
+                  {section.progression.split(' - ').map((chord, chordIndex) => {
+                    // Extract chord name (remove any extra formatting)
+                    const cleanChord = chord.trim();
+                    return (
+                      <div key={chordIndex} className="text-center w-full">
+                        <SimpleFretboardDiagram chord={cleanChord} />
+                        <p className="text-xs mt-2 text-gray-600">{cleanChord}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             ))}
