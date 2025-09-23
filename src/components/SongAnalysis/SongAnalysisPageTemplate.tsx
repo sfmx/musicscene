@@ -89,7 +89,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             "Scale Patterns",
             "Chord Progressions",
             "Key Techniques",
-            "Song Sections",
             "Equipment & Tone",
             "Learning Path",
             "Practice Notes",
@@ -139,10 +138,10 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         </div>
 
-        {/* Chord Progressions & Visualization */}
-        <div id="chord-progressions">
-        <ImprovedChordProgressionVisualization songData={songData} />
-        </div>
+        {/* Chord Progressions */}
+        <section id="chord-progressions" className="mb-12">
+          <ImprovedChordProgressionVisualization songData={songData} />
+        </section>
 
         {/* Key Techniques */}
         <section id="key-techniques" className="mb-12">
@@ -185,75 +184,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     <ul className="text-sm text-gray-600 space-y-1">
                       {technique.details.tips.map((tip, tipIndex) => (
                         <li key={tipIndex}>• {tip}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Song Sections */}
-        <section id="song-sections" className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Song Sections</h2>
-          <div className="space-y-6">
-            {songData.sections.map((section, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-gray-900">{section.name}</h3>
-                  <div className="flex items-center space-x-4 text-sm text-gray-600">
-                    <span>{section.timeStamp}</span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                      {section.technique}
-                    </span>
-                  </div>
-                </div>
-                
-                <p className="text-gray-600 mb-4">{section.description}</p>
-
-                {section.chords && section.chords.length > 0 && (
-                  <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Chords:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {Array.from(new Set(section.chords)).map((chord, chordIndex) => (
-                        <span key={chordIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-mono">
-                          {chord}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {section.progression && (
-                  <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Progression:</h4>
-                    <p className="text-sm text-gray-600 font-mono bg-gray-50 p-2 rounded">
-                      {section.progression}
-                    </p>
-                  </div>
-                )}
-
-
-
-                {(section as { alphaTab?: string }).alphaTab && (
-                  <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Tablature:</h4>
-                    <AlphaTexRenderer
-                      alphaTex={(section as { alphaTab?: string }).alphaTab || ''}
-                      title={`${section.name} - ${section.technique}`}
-                      showValidation={false}
-                      className="bg-gray-50 rounded-lg p-4"
-                    />
-                  </div>
-                )}
-
-                {section.notes && section.notes.length > 0 && (
-                  <div>
-                    <h4 className="font-medium text-gray-800 mb-2">Performance Notes:</h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {section.notes.map((note, noteIndex) => (
-                        <li key={noteIndex}>• {note}</li>
                       ))}
                     </ul>
                   </div>
