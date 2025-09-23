@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function PowerChordsPage() {
@@ -90,14 +90,9 @@ export default function PowerChordsPage() {
             
             <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
               <h4 className="font-semibold text-red-800 mb-2">6th String Pattern in Tab</h4>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :q (0/6.2/5) | :q (1/6.3/5) | :q (3/6.5/5) | :qr
-                `}
-                width={500}
-                scale={0.8}
+              <AlphaTexRenderer
+                alphaTex="(0.6 2.5) (1.6 3.5) (3.6 5.5) r"
+                className="scale-75"
               />
               <p className="text-sm text-red-700 mt-2">
                 <strong>Pattern:</strong> Root on 6th string, fifth is 2 frets higher on 5th string
@@ -137,14 +132,9 @@ export default function PowerChordsPage() {
             
             <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-semibold text-blue-800 mb-2">5th String Pattern in Tab</h4>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :q (0/5.2/4) | :q (2/5.4/4) | :q (3/5.5/4) | :qr
-                `}
-                width={500}
-                scale={0.8}
+              <AlphaTexRenderer
+                alphaTex="(0.5 2.4) (2.5 4.4) (3.5 5.4) r"
+                className="scale-75"
               />
               <p className="text-sm text-blue-700 mt-2">
                 <strong>Pattern:</strong> Root on 5th string, fifth is 2 frets higher on 4th string
@@ -312,14 +302,9 @@ export default function PowerChordsPage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Classic Rock: E5 - A5 - B5</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <VexTab 
-                  notation={`
-                    options space=20 font-size=14
-                    tabstave notation=true time=4/4
-                    notes :q (0/6.2/5) | :q (0/5.2/4) | :q (2/5.4/4) | :qr
-                  `}
-                  width={500}
-                  scale={0.8}
+                <AlphaTexRenderer
+                  alphaTex="(0.6 2.5) (0.5 2.4) (2.5 4.4) r"
+                  className="scale-75"
                 />
               </div>
               <div className="space-y-3 text-sm">
@@ -344,14 +329,9 @@ export default function PowerChordsPage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Metal: E5 - G5 - D5 - C5</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <VexTab 
-                  notation={`
-                    options space=20 font-size=14
-                    tabstave notation=true time=4/4
-                    notes :q (0/6.2/5) | :q (3/6.5/5) | :q (10/6.12/5) | :q (8/6.10/5)
-                  `}
-                  width={500}
-                  scale={0.8}
+                <AlphaTexRenderer
+                  alphaTex="(0.6 2.5) (3.6 5.5) (10.6 12.5) (8.6 10.5)"
+                  className="scale-75"
                 />
               </div>
               <div className="space-y-3 text-sm">

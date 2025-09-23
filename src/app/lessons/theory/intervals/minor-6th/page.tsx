@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor6thPage() {
@@ -124,10 +124,10 @@ export default function Minor6thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 Ab/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 6.4.4" 
+                      title="C to Ab Minor 6th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Rich, complex harmonic color</p>
@@ -150,10 +150,10 @@ export default function Minor6thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 Db/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="1.6.4 4.5.4" 
+                      title="F to Db Minor 6th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-violet-600">Natural minor scale relationship</p>
@@ -176,10 +176,10 @@ export default function Minor6thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q A/2 F/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.5.4 3.4.4" 
+                      title="A to F Minor 6th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-indigo-600">Sophisticated harmonic movement</p>
@@ -202,10 +202,10 @@ export default function Minor6thPage() {
                     <p className="text-xs text-blue-600 mt-2">C6 with added major 6th (A)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 A/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3 5.5).1" 
+                      title="C6 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-blue-600 mt-2">C-E-G-A: Major triad + major 6th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Minor6thPage() {
                     <p className="text-xs text-emerald-600 mt-2">Am6 with added major 6th (F#)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 C/4 E/4 F#/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.5 3.4 2.4 2.1).1" 
+                      title="Am6 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">A-C-E-F#: Minor triad + major 6th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Minor6thPage() {
                     <p className="text-xs text-rose-600 mt-2">Dm6 with added major 6th (B)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/4 A/3 B/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.4 1.4 2.5 4.6).1" 
+                      title="Dm6 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-rose-600 mt-2">D-F-A-B: Minor triad + major 6th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Minor6thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-purple-700 mb-2">i-♭VI Progression</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 C/4 E/4) (F/3 A/3 C/5)" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.5 3.4 2.4).1 | (1.6 5.5 3.2).1" 
+                      title="Am to F Progression" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-purple-600 mt-2">Am to F: Root to ♭VI (minor 6th relationship)</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Minor6thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-indigo-700 mb-2">Voice Leading with 6ths</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h C/4 A/4 | :h Bb/4 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.2 5.5.2 | 1.4.2 3.3.2" 
+                      title="Voice Leading with 6ths" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-indigo-600 mt-2">Smooth voice leading using 6th intervals</p>
                   </div>

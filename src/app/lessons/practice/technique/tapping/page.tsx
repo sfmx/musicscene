@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function TappingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Tapping Technique"
         subtitle="Master the advanced two-handed technique that extends your fretboard range and creates lightning-fast legato passages with unique tonal characteristics."

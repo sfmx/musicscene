@@ -1,4 +1,24 @@
-import { ExerciseData } from '@/components/ExerciseRendererWithVexTabSyntax';
+// Simple interface for finger exercises
+interface Position {
+  string: number;
+  fret: number;
+  finger: number;
+  rightHand: string;
+}
+
+interface Measure {
+  timeSignature?: string;
+  positions: Position[];
+  beamGroups?: number[][];
+}
+
+interface ExerciseData {
+  id: string;
+  title: string;
+  description: string;
+  bpm: number;
+  measures: Measure[];
+}
 
 export const fingerExercises: ExerciseData[] = [
   {

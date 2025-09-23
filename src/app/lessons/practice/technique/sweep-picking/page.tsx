@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function SweepPickingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Sweep Picking Technique"
         subtitle="Master the advanced arpeggio technique that creates fluid, cascading runs through coordinated picking and fretting motions."

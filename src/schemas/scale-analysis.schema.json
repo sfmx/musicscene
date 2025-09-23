@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scale Analysis Schema",
+  "type": "object",
+  "properties": {
+    "scaleInfo": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "alternateName": { "type": "string" },
+        "scaleType": { "type": "string" },
+        "noteCount": { "type": "integer" },
+        "intervalPattern": { "type": "string" },
+        "character": { "type": "string" },
+        "mood": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["name", "scaleType", "noteCount", "intervalPattern", "character"]
+    },
+    "theory": {
+      "type": "object",
+      "properties": {
+        "intervalsFromRoot": { "type": "string" },
+        "scaleDegrees": { "type": "array", "items": { "type": "string" } },
+        "mode": { "type": "string" },
+        "relativeScale": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "relationship": { "type": "string" },
+            "intervalDistance": { "type": "string" }
+          }
+        },
+        "parallelScale": {
+          "type": "object", 
+          "properties": {
+            "name": { "type": "string" },
+            "differences": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      },
+      "required": ["intervalsFromRoot", "scaleDegrees"]
+    },
+    "keyExamples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": { "type": "string" },
+          "notes": { "type": "string" },
+          "keySignature": { "type": "string" },
+          "accidentals": { "type": "string" },
+          "commonUse": { "type": "string" }
+        },
+        "required": ["key", "notes"]
+      }
+    },
+    "guitarFretboard": {
+      "type": "object",
+      "properties": {
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "patternNumber": { "type": "integer" },
+              "position": { "type": "string" },
+              "description": { "type": "string" },
+              "fretDiagram": { "type": "string" },
+              "alphaTex": { "type": "string" },
+              "applications": { "type": "array", "items": { "type": "string" } }
+            },
+            "required": ["patternNumber", "position", "alphaTex"]
+          }
+        },
+        "commonPositions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "position": { "type": "string" },
+              "frets": { "type": "string" },
+              "difficulty": { "type": "string" },
+              "usage": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "harmonicApplications": {
+      "type": "object",
+      "properties": {
+        "diatonicChords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "degree": { "type": "string" },
+              "chord": { "type": "string" },
+              "quality": { "type": "string" },
+              "function": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "required": ["degree", "chord", "quality"]
+          }
+        },
+        "commonProgressions": {
+          "type": "array",
+          "items": {
+            "type": "object", 
+            "properties": {
+              "name": { "type": "string" },
+              "chords": { "type": "array", "items": { "type": "string" } },
+              "romanNumerals": { "type": "string" },
+              "description": { "type": "string" },
+              "genre": { "type": "string" },
+              "alphaTex": { "type": "string" }
+            },
+            "required": ["chords", "romanNumerals", "description"]
+          }
+        }
+      }
+    },
+    "genreApplications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "genre": { "type": "string" },
+          "usage": { "type": "string" },
+          "characteristics": { "type": "array", "items": { "type": "string" } },
+          "examples": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["genre", "usage"]
+      }
+    },
+    "famousSongs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "artist": { "type": "string" },
+          "key": { "type": "string" },
+          "genre": { "type": "string" },
+          "usage": { "type": "string" },
+          "difficulty": { "type": "string" },
+          "learningValue": { "type": "string" }
+        },
+        "required": ["title", "artist", "key"]
+      }
+    },
+    "practiceExercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "difficulty": { "type": "string" },
+          "description": { "type": "string" },
+          "alphaTex": { "type": "string" },
+          "tempo": { "type": "string" },
+          "focus": { "type": "array", "items": { "type": "string" } },
+          "instructions": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["name", "type", "difficulty", "description"]
+      }
+    },
+    "relatedScales": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scale": { "type": "string" },
+          "relationship": { "type": "string" },
+          "differences": { "type": "string" },
+          "usage": { "type": "string" }
+        },
+        "required": ["scale", "relationship"]
+      }
+    },
+    "learningPath": {
+      "type": "object",
+      "properties": {
+        "difficulty": { "type": "string" },
+        "prerequisites": { "type": "array", "items": { "type": "string" } },
+        "nextSteps": { "type": "array", "items": { "type": "string" } },
+        "practiceRoutine": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "phase": { "type": "string" },
+              "duration": { "type": "string" },
+              "focus": { "type": "string" },
+              "exercises": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object", 
+      "properties": {
+        "slug": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "category": { "type": "string" },
+        "subcategory": { "type": "string" },
+        "lastUpdated": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["slug", "category", "lastUpdated"]
+    }
+  },
+  "required": [
+    "scaleInfo", 
+    "theory", 
+    "keyExamples", 
+    "guitarFretboard", 
+    "harmonicApplications", 
+    "genreApplications", 
+    "famousSongs", 
+    "practiceExercises", 
+    "relatedScales",
+    "metadata"
+  ]
+}

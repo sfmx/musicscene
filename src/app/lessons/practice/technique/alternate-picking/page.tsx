@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function AlternatePickingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Alternate Picking Technique"
         subtitle="Master the fundamental picking technique that forms the foundation of lead guitar playing and speed development."
@@ -103,18 +101,10 @@ export default function AlternatePickingPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Single String Alternate Picking"
-                staves={[{
-                  id: 'single-string-alternate',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 5/6 5/6 5/6 6/6 6/6 6/6 6/6 7/6 7/6 7/6 7/6 8/6 8/6 8/6 8/6 |
-notes :16 7/6 7/6 7/6 7/6 6/6 6/6 6/6 6/6 5/6 5/6 5/6 5/6 4/6 4/6 4/6 4/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: '6th String: Frets 5-8 Ascending and Descending'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 5.6 5.6 5.6 6.6 6.6 6.6 6.6 7.6 7.6 7.6 7.6 8.6 8.6 8.6 8.6 | 7.6 7.6 7.6 7.6 6.6 6.6 6.6 6.6 5.6 5.6 5.6 5.6 4.6 4.6 4.6 4.6"
+                title="6th String: Frets 5-8 Ascending and Descending"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -149,18 +139,10 @@ notes :16 7/6 7/6 7/6 7/6 6/6 6/6 6/6 6/6 5/6 5/6 5/6 5/6 4/6 4/6 4/6 4/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Chromatic Scale Exercise"
-                staves={[{
-                  id: 'chromatic-scale',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 6/6 7/6 8/6 5/5 6/5 7/5 8/5 5/4 6/4 7/4 8/4 5/3 6/3 7/3 8/3 |
-notes :16 5/2 6/2 7/2 8/2 5/1 6/1 7/1 8/1 7/1 6/1 5/1 4/1 8/2 7/2 6/2 5/2`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Chromatic Scale: Position 5 Ascending and Descending'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 6.6 7.6 8.6 5.5 6.5 7.5 8.5 5.4 6.4 7.4 8.4 5.3 6.3 7.3 8.3 | 5.2 6.2 7.2 8.2 5.1 6.1 7.1 8.1 7.1 6.1 5.1 4.1 8.2 7.2 6.2 5.2"
+                title="Chromatic Scale: Position 5 Ascending and Descending"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -195,18 +177,10 @@ notes :16 5/2 6/2 7/2 8/2 5/1 6/1 7/1 8/1 7/1 6/1 5/1 4/1 8/2 7/2 6/2 5/2`,
                 </div>
               </div>
               
-              <MusicScore
-                title="G Major Scale Exercise"
-                staves={[{
-                  id: 'g-major-scale',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4 key=G
-notes :8 3/6 5/6 2/5 3/5 5/5 2/4 4/4 5/4 2/3 4/3 5/3 2/2 4/2 5/2 3/1 5/1 |
-notes :8 5/1 3/1 5/2 4/2 2/2 5/3 4/3 2/3 5/4 4/4 2/4 5/5 3/5 2/5 5/6 3/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'G Major Scale: Two Octaves Ascending and Descending'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 2.2 4.2 5.2 3.1 5.1 | 5.1 3.1 5.2 4.2 2.2 5.3 4.3 2.3 5.4 4.4 2.4 5.5 3.5 2.5 5.6 3.6"
+                title="G Major Scale: Two Octaves Ascending and Descending"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -250,18 +224,10 @@ notes :8 5/1 3/1 5/2 4/2 2/2 5/3 4/3 2/3 5/4 4/4 2/4 5/5 3/5 2/5 5/6 3/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="String Skipping Exercise"
-                staves={[{
-                  id: 'string-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 5/4 7/6 7/4 5/6 5/4 7/6 7/4 5/5 5/3 7/5 7/3 5/5 5/3 7/5 7/3 |
-notes :8 5/4 5/2 7/4 7/2 5/4 5/2 7/4 7/2 5/3 5/1 7/3 7/1 5/3 5/1 7/3 7/1`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'String Skipping: 6th-4th, 5th-3rd, 4th-2nd, 3rd-1st Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 5.4 7.6 7.4 5.6 5.4 7.6 7.4 5.5 5.3 7.5 7.3 5.5 5.3 7.5 7.3 | 5.4 5.2 7.4 7.2 5.4 5.2 7.4 7.2 5.3 5.1 7.3 7.1 5.3 5.1 7.3 7.1"
+                title="String Skipping: 6th-4th, 5th-3rd, 4th-2nd, 3rd-1st Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -296,18 +262,10 @@ notes :8 5/4 5/2 7/4 7/2 5/4 5/2 7/4 7/2 5/3 5/1 7/3 7/1 5/3 5/1 7/3 7/1`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Triplet Alternate Picking"
-                staves={[{
-                  id: 'triplet-picking',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8t 5/6 6/6 7/6 6/6 7/6 8/6 7/6 8/6 9/6 8/6 7/6 6/6 |
-notes :8t 5/5 6/5 7/5 6/5 7/5 8/5 7/5 8/5 9/5 8/5 7/5 6/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Three-Note Ascending and Descending Triplet Patterns'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 6.6 7.6 6.6 7.6 8.6 7.6 8.6 9.6 8.6 7.6 6.6 | 5.5 6.5 7.5 6.5 7.5 8.5 7.5 8.5 9.5 8.5 7.5 6.5"
+                title="Three-Note Ascending and Descending Triplet Patterns"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -342,18 +300,10 @@ notes :8t 5/5 6/5 7/5 6/5 7/5 8/5 7/5 8/5 9/5 8/5 7/5 6/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Speed Building Exercise"
-                staves={[{
-                  id: 'speed-building',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 6/6 7/6 8/6 5/5 6/5 7/5 8/5 5/4 6/4 7/4 8/4 5/3 6/3 7/3 8/3 |
-notes :16 9/3 8/3 7/3 6/3 9/4 8/4 7/4 6/4 9/5 8/5 7/5 6/5 9/6 8/6 7/6 6/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Four-Note Patterns for Speed Development'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 6.6 7.6 8.6 5.5 6.5 7.5 8.5 5.4 6.4 7.4 8.4 5.3 6.3 7.3 8.3 | 9.3 8.3 7.3 6.3 9.4 8.4 7.4 6.4 9.5 8.5 7.5 6.5 9.6 8.6 7.6 6.6"
+                title="Four-Note Patterns for Speed Development"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">

@@ -1,0 +1,428 @@
+{
+  "scaleInfo": {
+    "name": "Natural Minor Scale",
+    "alternateName": "Aeolian Mode",
+    "scaleType": "Heptatonic",
+    "noteCount": 7,
+    "intervalPattern": "W-H-W-W-H-W-W",
+    "character": "Dark, emotional, contemplative",
+    "mood": ["melancholic", "introspective", "dramatic", "haunting"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - ♭3 - 4 - 5 - ♭6 - ♭7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Minor 3rd (Mediant)", 
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Minor 6th (Submediant)",
+      "Minor 7th (Leading Tone)",
+      "Octave"
+    ],
+    "mode": "Aeolian (7th mode of major scale)",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Relative Major",
+      "intervalDistance": "Minor 3rd up from minor root"
+    },
+    "parallelScale": {
+      "name": "Major Scale",
+      "differences": ["Raised 3rd", "Raised 6th", "Raised 7th"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "A Minor",
+      "notes": "A - B - C - D - E - F - G - A",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most common minor key, easiest to learn"
+    },
+    {
+      "key": "E Minor", 
+      "notes": "E - F# - G - A - B - C - D - E",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "F#",
+      "commonUse": "Very common in rock and pop music"
+    },
+    {
+      "key": "D Minor",
+      "notes": "D - E - F - G - A - B♭ - C - D", 
+      "keySignature": "1 flat (B♭)",
+      "accidentals": "B♭",
+      "commonUse": "Classical music favorite, 'saddest key'"
+    },
+    {
+      "key": "G Minor",
+      "notes": "G - A - B♭ - C - D - E♭ - F - G",
+      "keySignature": "2 flats (B♭, E♭)",
+      "accidentals": "B♭, E♭", 
+      "commonUse": "Common in baroque and metal music"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (A Minor)",
+        "description": "Open position fingering, most accessible for beginners",
+        "fretDiagram": "5th fret A, open strings utilized",
+        "alphaTex": "5.6 7.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3 1.2 3.2 0.1 1.1 3.1",
+        "applications": ["beginner learning", "folk music", "acoustic playing"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position",
+        "description": "Moveable pattern based on CAGED system",
+        "fretDiagram": "5th-8th frets, box pattern",
+        "alphaTex": "5.6 7.6 5.5 7.5 4.4 6.4 4.3 6.3 5.2 7.2 5.1 7.1",
+        "applications": ["rock music", "lead guitar", "improvisation"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "7th Position", 
+        "description": "Higher register pattern for lead work",
+        "fretDiagram": "7th-10th frets, extended range",
+        "alphaTex": "7.6 9.6 7.5 9.5 7.4 9.4 7.3 9.3 8.2 10.2 7.1 9.1",
+        "applications": ["solos", "high-register melodies", "advanced techniques"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open",
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Learning fundamentals, acoustic music"
+      },
+      {
+        "position": "5th Fret",
+        "frets": "5-8", 
+        "difficulty": "Intermediate",
+        "usage": "Rock, pop, general lead playing"
+      },
+      {
+        "position": "12th Fret",
+        "frets": "12-15",
+        "difficulty": "Intermediate", 
+        "usage": "Higher octave, solos, advanced playing"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Tonic - Home chord",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "ii°",
+        "chord": "Bdim",
+        "quality": "Diminished",
+        "function": "Supertonic - Unstable, resolves to dominant",
+        "notes": "B - D - F"
+      },
+      {
+        "degree": "III",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Mediant - Relative major tonic",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "iv", 
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Subdominant - Pre-dominant function",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "v",
+        "chord": "Em",
+        "quality": "Minor", 
+        "function": "Dominant - Weak resolution (often raised to E7)",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "VI",
+        "chord": "F",
+        "quality": "Major",
+        "function": "Submediant - Deceptive resolution",
+        "notes": "F - A - C"
+      },
+      {
+        "degree": "VII",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Subtonic - Leading to tonic",
+        "notes": "G - B - D"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Natural Minor i-VI-VII",
+        "chords": ["Am", "F", "G", "Am"],
+        "romanNumerals": "i - VI - VII - i", 
+        "description": "Classic minor progression with strong resolution",
+        "genre": "Rock/Pop",
+        "alphaTex": "(0.5 3.4 0.3).1 (1.6 3.5 1.4).1 (3.6 0.4 3.3).1 (0.5 3.4 0.3).1"
+      },
+      {
+        "name": "Minor iv-v Progression",
+        "chords": ["Am", "Dm", "Em", "Am"],
+        "romanNumerals": "i - iv - v - i",
+        "description": "Pure natural minor with weak dominant resolution", 
+        "genre": "Folk/Classical",
+        "alphaTex": "(0.5 3.4 0.3).1 (2.4 1.3 2.2).1 (0.4 2.3 0.2).1 (0.5 3.4 0.3).1"
+      },
+      {
+        "name": "Harmonic Minor Influence",
+        "chords": ["Am", "Dm", "E7", "Am"],
+        "romanNumerals": "i - iv - V7 - i",
+        "description": "Raised 7th creates stronger dominant resolution",
+        "genre": "Classical/Jazz",
+        "alphaTex": "(0.5 3.4 0.3).1 (2.4 1.3 2.2).1 (0.4 2.3 0.2 3.1).1 (0.5 3.4 0.3).1"
+      },
+      {
+        "name": "Rock Minor Progression", 
+        "chords": ["Am", "G", "F", "G"],
+        "romanNumerals": "i - VII - VI - VII",
+        "description": "Popular rock progression with strong motion",
+        "genre": "Rock/Metal",
+        "alphaTex": "(0.5 3.4 0.3).1 (3.6 0.4 3.3).1 (1.6 3.5 1.4).1 (3.6 0.4 3.3).1"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Classical",
+      "usage": "Foundation for minor key compositions and emotional expression",
+      "characteristics": ["sophisticated harmony", "counterpoint", "modulation"],
+      "examples": ["Bach's minor inventions", "Chopin's nocturnes", "Beethoven's minor sonatas"]
+    },
+    {
+      "genre": "Rock/Metal", 
+      "usage": "Creating dark, heavy atmospheres and powerful emotional impact",
+      "characteristics": ["power chords", "aggressive rhythms", "dramatic dynamics"],
+      "examples": ["Black Sabbath riffs", "Minor key metal anthems", "Gothic rock progressions"]
+    },
+    {
+      "genre": "Blues",
+      "usage": "Minor blues progressions and emotional depth",
+      "characteristics": ["bent notes", "blue notes", "call and response"],
+      "examples": ["Minor blues progressions", "Slow blues ballads", "Jazz-influenced minor blues"]
+    },
+    {
+      "genre": "Folk", 
+      "usage": "Traditional songs and storytelling with emotional weight",
+      "characteristics": ["simple harmonies", "modal inflections", "narrative focus"],
+      "examples": ["Traditional ballads", "Celtic music", "American folk songs"]
+    },
+    {
+      "genre": "Jazz",
+      "usage": "Minor jazz standards and sophisticated harmonic progressions", 
+      "characteristics": ["complex chords", "improvisation", "modal harmony"],
+      "examples": ["Autumn Leaves", "Summertime", "Minor swing tunes"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin", 
+      "key": "A Minor",
+      "genre": "Rock",
+      "usage": "Opening section and emotional build",
+      "difficulty": "Intermediate",
+      "learningValue": "Classic minor progression and arpeggios"
+    },
+    {
+      "title": "House of the Rising Sun",
+      "artist": "The Animals",
+      "key": "A Minor",
+      "genre": "Folk Rock",
+      "usage": "Entire song in natural minor",
+      "difficulty": "Beginner",
+      "learningValue": "Perfect introduction to minor progressions"
+    },
+    {
+      "title": "Mad World", 
+      "artist": "Gary Jules / Tears for Fears",
+      "key": "E Minor",
+      "genre": "Alternative",
+      "usage": "Haunting minor melody and harmony",
+      "difficulty": "Beginner",
+      "learningValue": "Emotional expression in minor keys"
+    },
+    {
+      "title": "Losing My Religion",
+      "artist": "R.E.M.", 
+      "key": "A Minor",
+      "genre": "Alternative Rock",
+      "usage": "Arpeggiated minor progressions",
+      "difficulty": "Intermediate", 
+      "learningValue": "Mandolin-style arpeggios in minor"
+    },
+    {
+      "title": "Scarred",
+      "artist": "Papa Roach",
+      "key": "D Minor",
+      "genre": "Nu Metal",
+      "usage": "Heavy minor progressions and emotional intensity",
+      "difficulty": "Intermediate",
+      "learningValue": "Modern rock minor applications"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "Basic Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner", 
+      "description": "Ascending and descending natural minor scales",
+      "alphaTex": "5.6 7.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3 1.2 3.2 0.1 1.1 3.1 | 3.1 1.1 0.1 3.2 1.2 2.3 0.3 3.4 2.4 0.4 3.5 2.5 0.5 7.6 5.6",
+      "tempo": "60-120 BPM",
+      "focus": ["finger independence", "picking accuracy", "scale memorization"],
+      "instructions": [
+        "Start slowly with metronome",
+        "Focus on clean articulation", 
+        "Practice both alternate and economy picking",
+        "Gradually increase tempo"
+      ]
+    },
+    {
+      "name": "Interval Exercises",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Playing the scale in 3rds, 4ths, and 5ths",
+      "alphaTex": "5.6 0.5 7.6 2.5 0.5 3.5 2.5 0.4 | 5.6 3.5 7.6 0.4 0.5 2.4 2.5 3.4",
+      "tempo": "80-140 BPM",
+      "focus": ["interval recognition", "harmonic understanding", "advanced fingering"],
+      "instructions": [
+        "Practice intervals systematically",
+        "Listen to harmonic relationships",
+        "Use different picking patterns",
+        "Work on smooth voice leading"
+      ]
+    },
+    {
+      "name": "Chord Arpeggio Practice",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Playing diatonic chord arpeggios from the natural minor scale",
+      "alphaTex": "(0.5 3.4 0.3) (2.4 1.3 2.2) (0.4 2.3 0.2) (0.5 3.4 0.3)",
+      "tempo": "70-110 BPM",
+      "focus": ["chord understanding", "arpeggio technique", "harmonic progression"],
+      "instructions": [
+        "Practice each chord arpeggio separately",
+        "Connect smoothly between chords", 
+        "Work on different arpeggio patterns",
+        "Apply to common progressions"
+      ]
+    },
+    {
+      "name": "Minor Scale Sequences",
+      "type": "Musical",
+      "difficulty": "Advanced",
+      "description": "Sequential patterns through the minor scale",
+      "alphaTex": "5.6 7.6 0.5 | 7.6 0.5 2.5 | 0.5 2.5 3.5 | 2.5 3.5 0.4",
+      "tempo": "90-160 BPM",
+      "focus": ["pattern recognition", "musical phrasing", "advanced technique"],
+      "instructions": [
+        "Master basic 3-note sequences first",
+        "Expand to 4-note and 5-note patterns",
+        "Work on rhythmic variations",
+        "Apply sequences to improvisation"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Harmonic Minor",
+      "relationship": "Altered version",
+      "differences": "Raised 7th degree (G# in A minor)",
+      "usage": "Classical music, creates stronger dominant resolution"
+    },
+    {
+      "scale": "Melodic Minor", 
+      "relationship": "Altered version",
+      "differences": "Raised 6th and 7th ascending, natural descending",
+      "usage": "Jazz, classical melodies, smooth voice leading"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Modal variation", 
+      "differences": "Raised 6th degree (F# in A minor becomes A Dorian)",
+      "usage": "Jazz, rock, modal harmony"
+    },
+    {
+      "scale": "Phrygian Mode",
+      "relationship": "Modal variation",
+      "differences": "Lowered 2nd degree (B♭ in A minor becomes A Phrygian)", 
+      "usage": "Spanish music, metal, exotic flavors"
+    },
+    {
+      "scale": "Major Scale (Relative)",
+      "relationship": "Relative major",
+      "differences": "Same notes, different tonal center (C major)",
+      "usage": "Major key music, modulation, contrast"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Beginner to Intermediate",
+    "prerequisites": [
+      "Basic guitar technique",
+      "Understanding of major scales", 
+      "Basic chord knowledge",
+      "Ability to read tablature"
+    ],
+    "nextSteps": [
+      "Harmonic minor scale",
+      "Melodic minor scale", 
+      "Modal scales (Dorian, Phrygian)",
+      "Advanced minor key harmony",
+      "Jazz minor scales"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and basic technique",
+        "exercises": ["Basic scale runs", "Open position practice", "Simple chord progressions"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)", 
+        "duration": "20-30 minutes daily",
+        "focus": "Musical application and multiple positions",
+        "exercises": ["Position playing", "Interval exercises", "Song applications"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily", 
+        "focus": "Advanced techniques and improvisation",
+        "exercises": ["Sequence patterns", "Modal variations", "Composition/improvisation"]
+      },
+      {
+        "phase": "Mastery (Ongoing)",
+        "duration": "20-30 minutes daily maintenance",
+        "focus": "Musical expression and advanced applications", 
+        "exercises": ["Advanced progressions", "Style studies", "Performance preparation"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "minor",
+    "tags": ["minor", "natural-minor", "aeolian", "scales", "theory", "essential"],
+    "category": "scales",
+    "subcategory": "diatonic",
+    "lastUpdated": "2025-08-06",
+    "sources": [
+      "Berklee College of Music Theory Handbook",
+      "Hal Leonard Guitar Method",
+      "Classical harmony textbooks", 
+      "Popular music analysis",
+      "Guitar World educational content"
+    ]
+  }
+}

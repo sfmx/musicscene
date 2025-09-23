@@ -5,12 +5,10 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 
 export default function ScalesModesPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Scales & Modes"
         subtitle="Master fundamental scales and modal patterns to expand your musical vocabulary and improvisational skills."

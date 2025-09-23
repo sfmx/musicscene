@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function PhrygianModePage() {
@@ -105,14 +105,13 @@ export default function PhrygianModePage() {
                 <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                   <h4 className="font-semibold text-red-800 mb-2">E Phrygian - Open Position</h4>
                   <p className="text-sm text-red-700 mb-3">Natural fingering emphasizing ♭2:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/6 1/6 3/6 0/5 2/5 | :q 0/4 2/4 0/3 2/3 0/2 | :q 1/2 3/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-red-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function PhrygianModePage() {
                 <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
                   <h4 className="font-semibold text-orange-800 mb-2">A Phrygian - 5th Position</h4>
                   <p className="text-sm text-orange-700 mb-3">Alternative fingering pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 5/6 6/6 8/6 5/5 7/5 | :q 5/4 7/4 5/3 7/3 5/2 | :q 6/2 8/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
                   <h4 className="font-semibold text-amber-800 mb-2">B Phrygian - 7th Position</h4>
                   <p className="text-sm text-amber-700 mb-3">Higher register application:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 7/6 8/6 10/6 7/5 9/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2 10/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function PhrygianModePage() {
             <div className="bg-red-50 rounded-lg p-4 border border-red-200">
               <h3 className="text-lg font-semibold text-red-800 mb-3">Exercise 1: E Phrygian Scale</h3>
               <p className="text-red-700 text-sm mb-3">Practice the E phrygian scale - feel the ♭2 interval:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/6 1/6 3/6 0/5 2/5 0/4 2/4 0/3 | :8 0/3 2/4 0/4 2/5 0/5 3/6 1/6 0/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <h3 className="text-lg font-semibold text-orange-800 mb-3">Exercise 2: Spanish Sequences</h3>
               <p className="text-orange-700 text-sm mb-3">Practice phrygian in Spanish-style patterns:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/6 3/6 1/6 0/5 3/6 2/5 0/5 0/4 | :8 2/5 2/4 0/4 0/3 2/4 2/3 0/3 0/2
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
               <h3 className="text-lg font-semibold text-amber-800 mb-3">Exercise 3: Exotic Melody</h3>
               <p className="text-amber-700 text-sm mb-3">Simple Spanish-flavored phrase emphasizing ♭2:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/6 1/6 :h 3/6 :q 0/5 | :q 2/5 0/4 :h 2/4 | :q 1/6 0/6 :h 2/5 | :q 0/6 :w 0/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,10 +369,10 @@ export default function PhrygianModePage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">A Phrygian - 5th Position</h3>
               <p className="text-sm text-green-700 mb-3">Common metal key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 5/6 6/6 8/6 5/5 7/5 | :q 5/4 7/4 5/3 7/3 5/2 | :q 6/2 8/2
                 `}
                 width={500}
@@ -390,10 +384,10 @@ export default function PhrygianModePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">D Phrygian - 10th Position</h3>
               <p className="text-sm text-blue-700 mb-3">Higher register pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 10/6 11/6 13/6 10/5 12/5 | :q 10/4 12/4 10/3 12/3 10/2 | :q 11/2 13/2
                 `}
                 width={500}
@@ -405,10 +399,10 @@ export default function PhrygianModePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">F# Phrygian - 2nd Position</h3>
               <p className="text-sm text-purple-700 mb-3">Alternative fingering:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 2/6 3/6 5/6 2/5 4/5 | :q 2/4 4/4 2/3 4/3 2/2 | :q 3/2 5/2
                 `}
                 width={500}
@@ -420,10 +414,10 @@ export default function PhrygianModePage() {
             <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <h3 className="text-lg font-semibold text-orange-800 mb-3">B Phrygian - 7th Position</h3>
               <p className="text-sm text-orange-700 mb-3">Metal-friendly position:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 7/6 8/6 10/6 7/5 9/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2 10/2
                 `}
                 width={500}

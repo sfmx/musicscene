@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -352,11 +352,11 @@ export default function ProgressionsPage() {
 								<div className="bg-yellow-50 rounded-lg p-6 border border-yellow-200">
 									<h3 className="text-xl font-semibold text-yellow-900 mb-4 text-center">I-IV-V Progression in C</h3>
 									<div className="flex justify-center mb-4">
-										<VexTabRenderer 
-											vextab="tabstave notation=true key=C time=4/4
+										<AlphaTexRenderer 
+											alphaTex="tabstave notation=true key=C time=4/4
 												notes :w C/5 F/4 G/5 C/5" 
-											width={600} 
-											scale={1.0}
+											className="scale-75" 
+											
 										/>
 									</div>
 									<p className="text-yellow-800 text-center">

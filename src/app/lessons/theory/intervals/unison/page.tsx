@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function UnisonPage() {
@@ -124,10 +124,10 @@ export default function UnisonPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w E/4 E/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{w} 4.1{w}" 
+                      title="E Note Unison"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-indigo-600">Different timbres, same pitch</p>
@@ -150,10 +150,10 @@ export default function UnisonPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w A/2 A/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.1{w} 4.1{w}" 
+                      title="A Note Unison"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Reference pitch standard</p>
@@ -176,10 +176,10 @@ export default function UnisonPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w D/3 D/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.1{w} 4.1{w}" 
+                      title="D Note Unison"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-blue-600">Flexible positioning</p>
@@ -199,10 +199,10 @@ export default function UnisonPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-green-700 mb-2">String Thickness Effects</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h E/4 E/4 | :h A/2 A/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{h} 4.1{h} | 2.1{h} 4.1{h}" 
+                      title="String Thickness Timbral Differences"
+                      className="scale-75"
                     />
                     <p className="text-xs text-green-600 mt-2">Same pitch, different timbres from string thickness</p>
                   </div>
@@ -220,10 +220,10 @@ export default function UnisonPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-orange-700 mb-2">Melodic Doubling</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q E/4 F/4 G/4 A/4 | E/5 F/5 G/5 A/5" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{q} 4.2{q} 4.3{q} 4.4{q} | 5.1{q} 5.2{q} 5.3{q} 5.4{q}" 
+                      title="Melodic Doubling - Unison Across Octaves"
+                      className="scale-75"
                     />
                     <p className="text-xs text-orange-600 mt-2">Same melody in unison across octaves</p>
                   </div>

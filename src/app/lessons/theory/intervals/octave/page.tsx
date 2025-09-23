@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function OctavePage() {
@@ -124,10 +124,9 @@ export default function OctavePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 E/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.1{q} 3.1{q}" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Perfect unity, same note name</p>
@@ -150,10 +149,9 @@ export default function OctavePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q A/2 A/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.1{q} 3.1{q}" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-indigo-600">Natural harmonic at 12th fret</p>
@@ -176,10 +174,9 @@ export default function OctavePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 D/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.1{q} 4.1{q}" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-violet-600">Root to root completion</p>
@@ -208,10 +205,9 @@ export default function OctavePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 C/5" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{w} 5.1{w}" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">5th string to 3rd string: +2 frets, +2 strings</p>
                   </div>
@@ -238,10 +234,9 @@ export default function OctavePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w G/3 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.1{w} 4.1{w}" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-blue-600 mt-2">6th string to 4th string: +2 frets, +2 strings</p>
                   </div>
@@ -264,10 +259,9 @@ export default function OctavePage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-amber-700 mb-2">Natural Octave Harmonics</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w E/2 E/3 A/2 A/3 D/3 D/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.1{w} 3.1{w} 2.1{w} 3.1{w} 3.1{w} 4.1{w}" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-amber-600 mt-2">12th fret harmonics: Perfect octave above open strings</p>
                   </div>
@@ -284,10 +278,9 @@ export default function OctavePage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-rose-700 mb-2">Classic Octave Leap</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 C/5" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{w} 5.1{w}" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-rose-600 mt-2">"Somewhere" opening - most famous octave leap in music</p>
                   </div>

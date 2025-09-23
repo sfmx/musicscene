@@ -4,9 +4,8 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function SeventhChordsPage() {
@@ -355,15 +354,10 @@ export default function SeventhChordsPage() {
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1) | :w (X/6.3/5.2/4.0/3.0/2.0/1)
-text :w,Dm7,:w,G7,:w,CMaj7
-                  `}
-                  width={600}
-                  className="mb-4"
+                <AlphaTexRenderer
+                  alphaTex="1.2 1.3 1.1 | 3.6 0.4 0.3 0.2 1.1 | 3.5 2.4 0.3 0.2 0.1"
+                  title="ii-V-I Jazz Progression: Dm7 - G7 - CMaj7"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -412,15 +406,10 @@ text :w,Dm7,:w,G7,:w,CMaj7
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=A
-notes :w (X/6.0/5.2/4.0/3.2/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.2/1) | :w (0/6.2/5.0/4.1/3.0/2.0/1)
-text :w,A7,:w,D7,:w,E7
-                  `}
-                  width={600}
-                  className="mb-4"
+                <AlphaTexRenderer
+                  alphaTex="0.5 2.4 0.3 2.2 0.1 | 0.4 2.3 1.2 2.1 | 0.6 2.5 0.4 1.3 0.2 0.1"
+                  title="Classic Blues Progression: A7 - D7 - E7"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -474,15 +463,10 @@ text :w,A7,:w,D7,:w,E7
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.0/3.0/2.0/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
-text :w,CMaj7,:w,Am7,:w,Dm7,:w,G7
-                  `}
-                  width={700}
-                  className="mb-4"
+                <AlphaTexRenderer
+                  alphaTex="3.5 2.4 0.3 0.2 0.1 | 0.5 2.4 0.3 1.2 0.1 | 1.2 1.3 1.1 | 3.6 0.4 0.3 0.2 1.1"
+                  title="Circle of Fifths Jazz Movement: CMaj7 - Am7 - Dm7 - G7"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -536,15 +520,10 @@ text :w,CMaj7,:w,Am7,:w,Dm7,:w,G7
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.0/3.0/2.0/1) | :w (1/6.3/5.2/4.1/3.0/2.X/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
-text :w,CMaj7,:w,FMaj7,:w,Am7,:w,G7
-                  `}
-                  width={700}
-                  className="mb-4"
+                <AlphaTexRenderer
+                  alphaTex="3.5 2.4 0.3 0.2 0.1 | 1.6 3.5 2.4 1.3 0.2 | 0.5 2.4 0.3 1.2 0.1 | 3.6 0.4 0.3 0.2 1.1"
+                  title="Sophisticated Pop Ballad: CMaj7 - FMaj7 - Am7 - G7"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">

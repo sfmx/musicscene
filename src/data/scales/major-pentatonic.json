@@ -1,0 +1,368 @@
+{
+  "scaleInfo": {
+    "name": "Major Pentatonic Scale",
+    "alternateName": "Major Pentatonic",
+    "scaleType": "Pentatonic", 
+    "noteCount": 5,
+    "intervalPattern": "1-2-3-5-6",
+    "character": "Safe, melodic, versatile",
+    "mood": ["bright", "happy", "safe", "melodic", "versatile", "accessible"]
+  },
+  "theory": {
+    "intervalsFromRoot": "Root - Major 2nd - Major 3rd - Perfect 5th - Major 6th",
+    "scaleDegrees": ["1", "2", "3", "5", "6"],
+    "mode": "Derived from Major Scale",
+    "relativeScale": {
+      "name": "Minor Pentatonic",
+      "relationship": "Same notes, different tonal center",
+      "intervalDistance": "Minor 3rd below (relative minor)"
+    },
+    "parallelScale": {
+      "name": "Minor Pentatonic",
+      "differences": ["Uses ♭3, ♭7 instead of natural 3, 6"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "C Major Pentatonic",
+      "notes": "C - D - E - G - A",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most common for teaching and reference"
+    },
+    {
+      "key": "G Major Pentatonic",
+      "notes": "G - A - B - D - E",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "None in pentatonic",
+      "commonUse": "Great for country and folk styles"
+    },
+    {
+      "key": "D Major Pentatonic",
+      "notes": "D - E - F# - A - B",
+      "keySignature": "2 sharps (F#, C#)",
+      "accidentals": "F#",
+      "commonUse": "Bright, cheerful sound"
+    },
+    {
+      "key": "A Major Pentatonic",
+      "notes": "A - B - C# - E - F#",
+      "keySignature": "3 sharps",
+      "accidentals": "C#, F#",
+      "commonUse": "Popular key for guitar"
+    },
+    {
+      "key": "E Major Pentatonic",
+      "notes": "E - F# - G# - B - C#",
+      "keySignature": "4 sharps",
+      "accidentals": "F#, G#, C#",
+      "commonUse": "Fundamental guitar key"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "8th Fret (C Major Pentatonic)",
+        "description": "Most common and accessible pattern",
+        "fretDiagram": "Classic pentatonic box pattern",
+        "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2",
+        "applications": ["Lead guitar", "Country solos", "Pop melodies", "Beginner friendly"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "Position 2 - Higher Pattern",
+        "description": "Extended range pattern for more options",
+        "fretDiagram": "Higher register pentatonic pattern",
+        "alphaTex": "5.5 7.5 5.4 7.4 5.3 7.3 5.2 8.2",
+        "applications": ["Advanced solos", "Lead lines", "Melodic phrases"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "Complete Pattern - Two Octaves",
+        "description": "Full range major pentatonic scale",
+        "fretDiagram": "Two-octave pentatonic pattern",
+        "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2 5.2 8.2 10.2 8.1 10.1 12.1",
+        "applications": ["Full range improvisation", "Advanced techniques", "Complete melodies"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open Position",
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Great starting point with open strings"
+      },
+      {
+        "position": "5th Fret",
+        "frets": "5-8",
+        "difficulty": "Beginner",
+        "usage": "Standard pentatonic position"
+      },
+      {
+        "position": "7th-10th Fret",
+        "frets": "7-10",
+        "difficulty": "Intermediate",
+        "usage": "Higher register melodies and solos"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "I",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Tonic",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "ii",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Supertonic",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "iii",
+        "chord": "Em",
+        "quality": "Minor", 
+        "function": "Mediant",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "V",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Dominant",
+        "notes": "G - B - D"
+      },
+      {
+        "degree": "vi",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Submediant",
+        "notes": "A - C - E"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "I-V-vi-IV",
+        "chords": ["C", "G", "Am", "F"],
+        "romanNumerals": "I - V - vi - IV",
+        "description": "Most popular progression in Western music",
+        "genre": "Pop",
+        "alphaTex": "(3.5 0.4 1.3) (3.6 0.4 0.3) (0.5 2.4 3.3) (1.6 3.5 3.4)"
+      },
+      {
+        "name": "Country Progression",
+        "chords": ["C", "F", "G", "C"],
+        "romanNumerals": "I - IV - V - I", 
+        "description": "Classic country chord progression",
+        "genre": "Country"
+      },
+      {
+        "name": "Pop Ballad",
+        "chords": ["Am", "F", "C", "G"],
+        "romanNumerals": "vi - IV - I - V",
+        "description": "Emotional pop ballad progression",
+        "genre": "Pop"
+      },
+      {
+        "name": "Folk Pattern",
+        "chords": ["C", "Am", "F", "G"],
+        "romanNumerals": "I - vi - IV - V",
+        "description": "Traditional folk progression",
+        "genre": "Folk"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Country",
+      "usage": "Clean, bright solos and melodic lines",
+      "characteristics": ["Chicken picking", "Double stops", "Clean tones", "Pedal steel emulation"],
+      "examples": ["Brad Paisley", "Keith Urban", "Vince Gill"]
+    },
+    {
+      "genre": "Pop",
+      "usage": "Catchy, memorable melodies and hooks",
+      "characteristics": ["Simple melodies", "Accessible phrases", "Emotional content", "Sing-along quality"],
+      "examples": ["Ed Sheeran", "John Mayer", "Taylor Swift"]
+    },
+    {
+      "genre": "Folk",
+      "usage": "Natural, singing melodic lines",
+      "characteristics": ["Acoustic guitar", "Simple arrangements", "Storytelling melodies", "Traditional sounds"],
+      "examples": ["James Taylor", "Simon & Garfunkel", "Bob Dylan"]
+    },
+    {
+      "genre": "Rock Ballads",
+      "usage": "Emotional lead lines and solos",
+      "characteristics": ["Sustained notes", "Vibrato", "Bending", "Clean to overdriven tones"],
+      "examples": ["Eagles", "Fleetwood Mac", "Journey"]
+    },
+    {
+      "genre": "Blues Rock",
+      "usage": "Mixed with minor pentatonic for contrast",
+      "characteristics": ["Major/minor contrasts", "Call and response", "Bending techniques", "Mix with blues scale"],
+      "examples": ["Eric Clapton", "Stevie Ray Vaughan", "Joe Bonamassa"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "My Girl",
+      "artist": "The Temptations",
+      "key": "C major pentatonic",
+      "genre": "Soul",
+      "usage": "Classic major pentatonic melody line",
+      "difficulty": "Beginner",
+      "learningValue": "Perfect example of pentatonic melodic beauty"
+    },
+    {
+      "title": "Blackbird",
+      "artist": "The Beatles", 
+      "key": "G major pentatonic",
+      "genre": "Folk Rock",
+      "usage": "Fingerpicked pentatonic patterns",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows pentatonic in acoustic context"
+    },
+    {
+      "title": "Country Guitar Solos",
+      "artist": "Various (Paisley, Urban, Gill)",
+      "key": "Various",
+      "genre": "Country",
+      "usage": "Clean, bright pentatonic lead playing",
+      "difficulty": "Intermediate",
+      "learningValue": "Modern country pentatonic techniques"
+    },
+    {
+      "title": "Pop Ballads",
+      "artist": "Ed Sheeran, John Mayer",
+      "key": "Various",
+      "genre": "Pop",
+      "usage": "Emotional, accessible melodic content",
+      "difficulty": "Beginner",
+      "learningValue": "Contemporary pop pentatonic application"
+    },
+    {
+      "title": "Rock Solos",
+      "artist": "Various Rock Artists",
+      "key": "Various",
+      "genre": "Rock",
+      "usage": "Mixed with minor pentatonic",
+      "difficulty": "Intermediate",
+      "learningValue": "Creates major/minor contrast in rock context"
+    },
+    {
+      "title": "Singer-Songwriter Style",
+      "artist": "Taylor Swift, James Taylor",
+      "key": "Various",
+      "genre": "Folk/Pop",
+      "usage": "Natural, singing melodic lines",
+      "difficulty": "Beginner",
+      "learningValue": "Accessible, natural melodic approach"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "Basic Pattern Practice",
+      "type": "Scale Practice",
+      "difficulty": "Beginner",
+      "description": "Practice the C major pentatonic ascending and descending",
+      "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2 5.2 3.2 0.2 2.3 0.3 2.4 0.4 3.5",
+      "tempo": "60-120 BPM",
+      "focus": ["Finger positioning", "Clean notes", "Rhythm accuracy"],
+      "instructions": ["Start slowly with metronome", "Focus on clean articulation", "Practice ascending and descending", "Memorize fret positions"]
+    },
+    {
+      "name": "Sequence Practice",
+      "type": "Technique",
+      "difficulty": "Intermediate",
+      "description": "Practice pentatonic sequences in thirds",
+      "alphaTex": "3.5 2.4 0.4 0.3 2.4 2.3 0.3 0.2 2.3 3.2 0.2 5.2 3.2 3.2 0.2 2.3",
+      "tempo": "80-140 BPM",
+      "focus": ["Sequence patterns", "Intervallic relationships", "Smooth execution"],
+      "instructions": ["Practice patterns slowly", "Build speed gradually", "Focus on smooth legato", "Learn different sequence patterns"]
+    },
+    {
+      "name": "Melodic Phrases",
+      "type": "Musical Application",
+      "difficulty": "Intermediate",
+      "description": "Simple pentatonic melody over C-Am-F-G progression",
+      "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2 0.2 2.3 0.3 2.4 0.4 3.5",
+      "tempo": "100-160 BPM",
+      "focus": ["Phrasing", "Musical expression", "Chord relationships"],
+      "instructions": ["Play with backing track", "Focus on musical phrasing", "Target chord tones", "Add personal expression"]
+    },
+    {
+      "name": "Position Connections",
+      "type": "Advanced Technique",
+      "difficulty": "Advanced",
+      "description": "Connect different pentatonic positions smoothly",
+      "tempo": "80-130 BPM",
+      "focus": ["Position shifts", "Fretboard knowledge", "Smooth transitions"],
+      "instructions": ["Practice position changes slowly", "Memorize connecting notes", "Build smooth transitions", "Develop fretboard vision"]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Major Scale",
+      "relationship": "Parent Scale",
+      "differences": "Major pentatonic removes 4th and 7th degrees",
+      "usage": "Add back for complete harmonic possibilities"
+    },
+    {
+      "scale": "Minor Pentatonic",
+      "relationship": "Relative Scale",
+      "differences": "Same notes, different tonal center (minor 3rd below)",
+      "usage": "Darker, bluesier alternative with same fingerings"
+    },
+    {
+      "scale": "Blues Scale",
+      "relationship": "Extended Scale", 
+      "differences": "Minor pentatonic + ♭5 blue note",
+      "usage": "Adds bluesy character and tension"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Modal Alternative",
+      "differences": "Natural minor with raised 6th - contains major pentatonic",
+      "usage": "Jazzy alternative with more harmonic color"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Beginner",
+    "prerequisites": ["Basic guitar technique", "Open chords", "Basic strumming"],
+    "nextSteps": ["Minor pentatonic scale", "Blues scale", "Full major scale", "Advanced techniques"],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation",
+        "duration": "2-3 weeks",
+        "focus": "Learn basic pattern and finger positioning",
+        "exercises": ["Basic scale runs", "Pattern memorization", "Clean articulation"]
+      },
+      {
+        "phase": "Development",
+        "duration": "4-6 weeks",
+        "focus": "Develop technique and multiple positions",
+        "exercises": ["Sequence patterns", "Position connections", "Backing track practice"]
+      },
+      {
+        "phase": "Application",
+        "duration": "8+ weeks",
+        "focus": "Musical application and improvisation",
+        "exercises": ["Improvisation over progressions", "Learn famous melodies", "Create original phrases"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "major-pentatonic",
+    "tags": ["essential", "beginner-friendly", "country", "pop", "folk", "safe", "versatile"],
+    "category": "essential",
+    "subcategory": "pentatonic",
+    "lastUpdated": "2025-08-06",
+    "sources": ["Guitar method books", "Country music analysis", "Pop music theory", "Traditional pentatonic systems"]
+  }
+}

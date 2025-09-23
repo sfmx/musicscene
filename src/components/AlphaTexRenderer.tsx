@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef, useState } from 'react';
 import { AlphaTexValidator } from '@/lib/alphaTexValidator';
 
@@ -87,9 +89,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         setStatus(`Loading AlphaTex for ${title}...`);
         
-        // Use the provided AlphaTex string directly
-        console.log(`Loading AlphaTex for ${title}:`, alphaTex);
-        api.tex(alphaTex);
+        // Process the AlphaTex string to handle escape sequences
+        const processedAlphaTex = alphaTex.replace(/\\n/g, '\n');
+        console.log(`Loading AlphaTex for ${title}:`, processedAlphaTex);
+        api.tex(processedAlphaTex);
 
         // Force render after a delay if needed
         setTimeout(() => {
@@ -166,7 +169,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       {/* Render Container */}
       <div 
         ref={containerRef}
-        className="alphatab-container bg-white border rounded overflow-hidden"
+        className="alphatab-container"
         style={{ minHeight: '250px', width: '100%' }}
       />
       

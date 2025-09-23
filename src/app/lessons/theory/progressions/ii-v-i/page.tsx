@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -125,11 +125,11 @@ export default function IIVIProgressionPage() {
                       <p className="text-xs text-purple-600 mt-1">Tonic - Resolution</p>
                     </div>
                   </div>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=C time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=C time=4/4
                       notes :w (2/4.3/3.2/2.1/1) (3/6.2/5.0/4.0/3.3/2.3/1) C/5" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                   <div className="mt-3">
                     <p className="text-xs text-purple-600 font-medium mb-1">Practice Notes:</p>
@@ -159,11 +159,11 @@ export default function IIVIProgressionPage() {
                       <SimpleFretboardDiagram chord="C_major_7" />
                     </div>
                   </div>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=C time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=C time=4/4
                       notes :w (x/6.5/5.3/4.5/3.5/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.3/5.2/4.4/3.5/2.x/1)" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                 </div>
                 
@@ -184,11 +184,11 @@ export default function IIVIProgressionPage() {
                       <SimpleFretboardDiagram chord="C_minor" />
                     </div>
                   </div>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=Cm time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=Cm time=4/4
                       notes :w (x/6.x/5.1/4.2/3.1/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.x/5.1/4.1/3.0/2.x/1)" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                 </div>
               </div>
@@ -325,11 +325,11 @@ export default function IIVIProgressionPage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 1: Basic ii-V-I</h3>
               <p className="text-purple-700 text-sm mb-3">Practice the fundamental progression in C major:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
                   notes :w (2/4.3/3.2/2.1/1) (3/6.2/5.0/4.0/3.3/2.3/1) C/5" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
               <div className="mt-3">
                 <p className="text-xs text-purple-600 font-medium mb-1">Practice Tips:</p>
@@ -345,22 +345,22 @@ export default function IIVIProgressionPage() {
             <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
               <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 2: Jazz Seventh Chords</h3>
               <p className="text-indigo-700 text-sm mb-3">Practice with professional jazz voicings:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
                   notes :w (x/6.5/5.3/4.5/3.5/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.3/5.2/4.4/3.5/2.x/1)" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
             </div>
             
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">Exercise 3: Minor ii-V-i</h3>
               <p className="text-blue-700 text-sm mb-3">Practice ii-V-i in C minor:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=Cm time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=Cm time=4/4
                   notes :w (x/6.x/5.1/4.2/3.1/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.x/5.1/4.1/3.0/2.x/1)" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
             </div>
           </div>

@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor2ndPage() {
@@ -203,10 +203,10 @@ export default function Minor2ndPage() {
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 mb-3">
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true tablature=false\nnotes :q E/5 F/5" 
-                    width={240} 
-                    scale={0.8}
+                  <AlphaTexRenderer 
+                    alphaTex="0.2 1.2" 
+                    title="E to F Natural Semitone" 
+                    className="scale-75"
                   />
                 </div>
                 <ul className="text-sm text-red-700 space-y-1">
@@ -232,10 +232,10 @@ export default function Minor2ndPage() {
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 mb-3">
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true tablature=false\nnotes :q B/4 C/5" 
-                    width={240} 
-                    scale={0.8}
+                  <AlphaTexRenderer 
+                    alphaTex="0.2 1.2" 
+                    title="B to C Natural Semitone" 
+                    className="scale-75"
                   />
                 </div>
                 <ul className="text-sm text-blue-700 space-y-1">
@@ -271,10 +271,10 @@ export default function Minor2ndPage() {
                         <p className="text-xs text-orange-600 mt-1">D (5th fret)</p>
                       </div>
                     </div>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 C#/4 D/4" 
-                      width={260} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 4.5 5.5" 
+                      title="Chromatic Ascent: C → C# → D" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-orange-600 mt-2">Smooth voice leading using minor 2nds</p>
                   </div>
@@ -295,10 +295,10 @@ export default function Minor2ndPage() {
                       <SimpleFretboardDiagram chord="Minor2nd_Cluster" />
                       <p className="text-xs text-purple-600 mt-2">G-C-F#-Bb cluster (contains multiple minor 2nds)</p>
                     </div>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/3 C/4 F#/4 Bb/4)" 
-                      width={260} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6 3.5 2.4 1.3" 
+                      title="Dissonant Cluster Example" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-purple-600 mt-2">Dense harmony creating maximum tension</p>
                   </div>
@@ -321,10 +321,10 @@ export default function Minor2ndPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-emerald-700 mb-2">Universal Rule: Adjacent Frets = Minor 2nd</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :8 C/4 C#/4 D/4 D#/4 E/4 F/4 F#/4 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 4.5 5.5 6.5 7.5 8.5 9.5 10.5" 
+                      title="Chromatic scale: all minor 2nd intervals" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">Chromatic scale: all minor 2nd intervals</p>
                   </div>
@@ -341,10 +341,10 @@ export default function Minor2ndPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-teal-700 mb-2">Leading Tone Resolution</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q B/4 C/5 | F/4 E/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.2 1.2 | 1.4 0.1" 
+                      title="B→C (up) and F→E (down) resolutions" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">B→C (up) and F→E (down) resolutions</p>
                   </div>

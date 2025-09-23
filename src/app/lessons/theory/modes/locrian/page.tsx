@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function LocrianModePage() {
@@ -105,14 +105,13 @@ export default function LocrianModePage() {
                 <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                   <h4 className="font-semibold text-gray-800 mb-2">B Locrian - Open Position</h4>
                   <p className="text-sm text-gray-700 mb-3">Natural fingering with open strings:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 2/5 3/5 0/4 2/4 | :q 1/4 3/4 1/3 3/3 | :q 0/2 2/2 0/1
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-gray-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function LocrianModePage() {
                 <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
                   <h4 className="font-semibold text-slate-800 mb-2">F# Locrian - 2nd Position</h4>
                   <p className="text-sm text-slate-700 mb-3">Alternative fingering pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 2/6 3/6 5/6 2/5 | :q 4/5 5/5 2/4 4/4 | :q 2/3 4/3 2/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                   <h4 className="font-semibold text-red-800 mb-2">C# Locrian - 9th Position</h4>
                   <p className="text-sm text-red-700 mb-3">Higher register application:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 9/6 10/6 12/6 9/5 | :q 11/5 12/5 9/4 11/4 | :q 9/3 11/3 9/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function LocrianModePage() {
             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Exercise 1: B Locrian Scale</h3>
               <p className="text-gray-700 text-sm mb-3">Practice the B locrian scale - notice the instability:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 2/5 3/5 0/4 2/4 1/4 3/4 1/3 3/3 | :8 3/3 1/3 3/4 1/4 2/4 0/4 3/5 2/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
               <h3 className="text-lg font-semibold text-slate-800 mb-3">Exercise 2: Tension and Release</h3>
               <p className="text-slate-700 text-sm mb-3">Brief locrian passage resolving to natural minor:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 2/5 3/5 1/4 :q 2/4 | :8 2/5 4/5 0/4 :q 2/4 | :h 2/5 | :w 2/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-red-50 rounded-lg p-4 border border-red-200">
               <h3 className="text-lg font-semibold text-red-800 mb-3">Exercise 3: Chromatic Application</h3>
               <p className="text-red-700 text-sm mb-3">Using locrian as chromatic approach:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 2/5 :8 3/5 1/4 :q 0/4 | :q 2/5 :8 3/5 1/4 :q 0/4 | :h 0/4 | :w 0/4
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,10 +369,10 @@ export default function LocrianModePage() {
             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">F# Locrian - 2nd Position</h3>
               <p className="text-sm text-gray-700 mb-3">Alternative key center:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 2/6 3/6 5/6 2/5 4/5 | :q 5/5 2/4 4/4 2/3 | :q 4/3 2/2
                 `}
                 width={500}
@@ -390,10 +384,10 @@ export default function LocrianModePage() {
             <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
               <h3 className="text-lg font-semibold text-slate-800 mb-3">C# Locrian - 9th Position</h3>
               <p className="text-sm text-slate-700 mb-3">Higher register pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 9/6 10/6 12/6 9/5 11/5 | :q 12/5 9/4 11/4 9/3 | :q 11/3 9/2
                 `}
                 width={500}
@@ -405,10 +399,10 @@ export default function LocrianModePage() {
             <div className="bg-red-50 rounded-lg p-4 border border-red-200">
               <h3 className="text-lg font-semibold text-red-800 mb-3">G# Locrian - 4th Position</h3>
               <p className="text-sm text-red-700 mb-3">Metal-friendly key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 4/6 5/6 7/6 4/5 6/5 | :q 7/5 4/4 6/4 4/3 | :q 6/3 4/2
                 `}
                 width={500}
@@ -420,10 +414,10 @@ export default function LocrianModePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">D# Locrian - 11th Position</h3>
               <p className="text-sm text-purple-700 mb-3">Upper register application:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 11/6 12/6 14/6 11/5 13/5 | :q 14/5 11/4 13/4 11/3 | :q 13/3 11/2
                 `}
                 width={500}

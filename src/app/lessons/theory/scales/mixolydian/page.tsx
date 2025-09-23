@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function MixolydianScalePage() {
@@ -105,14 +105,13 @@ export default function MixolydianScalePage() {
                 <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
                   <h4 className="font-semibold text-orange-800 mb-2">G Mixolydian - Open Position</h4>
                   <p className="text-sm text-orange-700 mb-3">Perfect for blues and rock:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 3/6 0/5 2/5 3/5 | :q 0/4 2/4 3/4 1/3 | :q 3/3 0/2 1/2 3/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-orange-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function MixolydianScalePage() {
                 <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                   <h4 className="font-semibold text-red-800 mb-2">A Mixolydian - 5th Position</h4>
                   <p className="text-sm text-red-700 mb-3">Rock and blues favorite:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 5/6 7/6 9/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 5/3 7/3 5/2 7/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
                   <h4 className="font-semibold text-amber-800 mb-2">D Mixolydian - Open/2nd Position</h4>
                   <p className="text-sm text-amber-700 mb-3">Country and folk applications:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/4 2/4 4/4 0/3 | :q 2/3 4/3 0/2 2/2 | :q 3/2 0/1 2/1 3/1
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function MixolydianScalePage() {
             <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <h3 className="text-lg font-semibold text-orange-800 mb-3">Exercise 1: G Mixolydian Scale</h3>
               <p className="text-orange-700 text-sm mb-3">Practice the G mixolydian scale ascending and descending:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 3/6 0/5 2/5 3/5 0/4 2/4 3/4 1/3 | :8 1/3 3/4 2/4 0/4 3/5 2/5 0/5 3/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-red-50 rounded-lg p-4 border border-red-200">
               <h3 className="text-lg font-semibold text-red-800 mb-3">Exercise 2: Dominant 7th Emphasis</h3>
               <p className="text-red-700 text-sm mb-3">Emphasize the flat 7th to hear the mixolydian character:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/6 1/3 :h 1/3 :q 3/6 | :q 0/5 1/3 :h 1/3 :q 0/5 | :q 2/5 1/3 :h 1/3 :q 2/5 | :w 3/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
               <h3 className="text-lg font-semibold text-amber-800 mb-3">Exercise 3: Blues Rock Lick</h3>
               <p className="text-amber-700 text-sm mb-3">Classic mixolydian blues rock phrase:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 3/6 0/5 2/5 0/4 :q 3/4 1/3 | :q 3/3 0/2 :8 1/2 3/2 1/3 | :q 3/4 2/4 :h 0/5 | :w 3/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,14 +369,13 @@ export default function MixolydianScalePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">A Mixolydian - 5th Position</h3>
               <p className="text-sm text-blue-700 mb-3">Popular rock key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 9/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 5/3 7/3 5/2 7/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: A-B-C#-D-E-F#-G-A</p>
             </div>
@@ -390,14 +383,13 @@ export default function MixolydianScalePage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">E Mixolydian - Open Position</h3>
               <p className="text-sm text-green-700 mb-3">Natural guitar key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 4/6 0/5 | :q 2/5 4/5 0/4 2/4 | :q 0/3 2/3 0/2 3/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: E-F#-G#-A-B-C#-D-E</p>
             </div>
@@ -405,14 +397,13 @@ export default function MixolydianScalePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">C Mixolydian - Open Position</h3>
               <p className="text-sm text-purple-700 mb-3">Easy to visualize:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 8/6 10/6 12/6 8/5 | :q 10/5 12/5 8/4 10/4 | :q 8/3 10/3 8/2 10/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: C-D-E-F-G-A-B♭-C</p>
             </div>
@@ -420,14 +411,13 @@ export default function MixolydianScalePage() {
             <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
               <h3 className="text-lg font-semibold text-yellow-800 mb-3">F Mixolydian - 1st Position</h3>
               <p className="text-sm text-yellow-700 mb-3">Country and folk favorite:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 1/6 3/6 5/6 1/5 | :q 3/5 5/5 1/4 3/4 | :q 1/3 3/3 1/2 4/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-yellow-600 mt-2">Notes: F-G-A-B♭-C-D-E♭-F</p>
             </div>

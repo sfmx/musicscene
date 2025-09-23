@@ -80,9 +80,9 @@
       "primaryTechnique": true,
       "details": {
         "notes": [
-          "E5: Open E + 2nd fret A string",
-          "A5: Open A + 2nd fret D string", 
-          "B5: 2nd fret A + 4th fret D string",
+          "E5: 0-2-X-X-X-X (Open E string + 2nd fret A string)",
+          "A5: X-0-2-X-X-X (Open A string + 2nd fret D string)",
+          "B5: X-2-4-X-X-X (2nd fret A string + 4th fret D string)",
           "Strong downstrokes on each chord"
         ],
         "tips": [
@@ -143,7 +143,7 @@
       "technique": "Power Chords",
       "key": "E major",
       "description": "Iconic opening riff with E5-A5-B5 progression",
-      "vexTab": "tabstave notation=true time=4/4\nnotes :w (0/6.2/5) | :w (0/5.2/4) | :w (2/5.4/4)",
+      "alphaTab": "0.6 2.5 | 0.5 2.4 | 2.5 4.4 | 0.6 2.5",
       "chords": ["E5", "A5", "B5"],
       "progression": "E5 | A5 | B5 | E5",
       "notes": [
@@ -159,6 +159,7 @@
       "technique": "Power Chords",
       "key": "E major",
       "description": "Modified I-IV-I-V progression creates tension without resolution",
+      "alphaTab": "0.6 2.5 | 0.5 2.4 | 0.6 2.5 | 2.5 4.4",
       "chords": ["E5", "A5", "B5"],
       "progression": "E5 | A5 | E5 | B5",
       "notes": [
@@ -174,6 +175,7 @@
       "technique": "Power Chords",
       "key": "E major", 
       "description": "Complete I-IV-V-I provides satisfying resolution",
+      "alphaTab": "0.6 2.5 | 0.5 2.4 | 2.5 4.4 | 0.6 2.5",
       "chords": ["E5", "A5", "B5"],
       "progression": "E5 | A5 | B5 | E5",
       "notes": [
@@ -189,6 +191,7 @@
       "technique": "Power Chords",
       "key": "E major",
       "description": "♭VI-♭III-♭VII-IV progression borrowed from parallel minor",
+      "alphaTab": "3.5 5.4 | 3.6 5.5 | 0.4 2.3 | 0.5 2.4",
       "chords": ["C5", "G5", "D5", "A5"],
       "progression": "C5 | G5 | D5 | A5",
       "notes": [

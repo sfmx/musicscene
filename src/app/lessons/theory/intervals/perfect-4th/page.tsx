@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Perfect4thPage() {
@@ -124,10 +124,10 @@ export default function Perfect4thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 F/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="4.1{q} 4.4{q}" 
+                       
+                      
                     />
                   </div>
                   <p className="text-xs text-teal-600">Stable, consonant interval</p>
@@ -150,10 +150,10 @@ export default function Perfect4thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 C/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="tabstave notation=true tablature=false\nnotes :q G/2 C/4" 
+                       
+                      
                     />
                   </div>
                   <p className="text-xs text-cyan-600">Foundation of guitar tuning</p>
@@ -176,10 +176,10 @@ export default function Perfect4thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 G/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="tabstave notation=true tablature=false\nnotes :q D/3 G/3" 
+                       
+                      
                     />
                   </div>
                   <p className="text-xs text-blue-600">Natural guitar harmony</p>
@@ -202,10 +202,10 @@ export default function Perfect4thPage() {
                     <p className="text-xs text-orange-600 mt-2">D-G-A suspended 4th chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 G/3 A/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex=" (D/3 G/3 A/3)" 
+                       
+                      
                     />
                     <p className="text-xs text-orange-600 mt-2">D-G-A: Root, perfect 4th, perfect 5th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Perfect4thPage() {
                     <p className="text-xs text-emerald-600 mt-2">G-C-D suspended 4th chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/2 C/4 D/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex=" (G/2 C/4 D/4)" 
+                       
+                      
                     />
                     <p className="text-xs text-emerald-600 mt-2">G-C-D: Root, perfect 4th, perfect 5th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Perfect4thPage() {
                     <p className="text-xs text-indigo-600 mt-2">C-F-G suspended 4th chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 F/4 G/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex=" (C/4 F/4 G/4)" 
+                       
+                      
                     />
                     <p className="text-xs text-indigo-600 mt-2">C-F-G: Root, perfect 4th, perfect 5th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Perfect4thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-teal-700 mb-2">Standard Tuning Pattern</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 A/2 D/3 G/3 | B/3 E/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="tabstave notation=true tablature=false\nnotes :q E/2 A/2 D/3 G/3 | B/3 E/4" 
+                       
+                      
                     />
                     <p className="text-xs text-teal-600 mt-2">Mostly perfect 4ths: E-A-D-G, then major 3rd G-B, then 4th B-E</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Perfect4thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-blue-700 mb-2">Stacked 4ths Harmony</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 F/4 Bb/4 Eb/5)" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex=" (C/4 F/4 Bb/4 Eb/5)" 
+                       
+                      
                     />
                     <p className="text-xs text-blue-600 mt-2">Modern jazz voicings built from perfect 4ths</p>
                   </div>

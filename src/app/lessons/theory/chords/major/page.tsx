@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function MajorChordsPage() {
@@ -308,14 +308,9 @@ export default function MajorChordsPage() {
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1)
-text :w,C,:w,G,:w,Am,:w,F
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1 | (0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1"
+                  title="I-V-vi-IV Progression (C-G-Am-F)"
                   className="mb-4"
                 />
                 
@@ -365,14 +360,9 @@ text :w,C,:w,G,:w,Am,:w,F
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=G
-notes :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.3/2.2/1)
-text :w,G,:w,C,:w,D
-                  `}
-                  width={600}
+                <AlphaTexRenderer
+                  alphaTex="(3.6 2.5 0.4 0.3 3.2 3.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (2.4 3.3 2.2).1"
+                  title="I-IV-V Progression (G-C-D)"
                   className="mb-4"
                 />
                 
@@ -427,14 +417,9 @@ text :w,G,:w,C,:w,D
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
-text :w,C,:w,Am,:w,F,:w,G
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 0.3 1.2 0.1).1 | (0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1"
+                  title="Doo-Wop Progression (C-Am-F-G)"
                   className="mb-4"
                 />
                 
@@ -489,14 +474,9 @@ text :w,C,:w,Am,:w,F,:w,G
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (X/6.3/5.2/4.0/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
-text :w,Am,:w,F,:w,C,:w,G
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1"
+                  title="Emotional Progression (Am-F-C-G)"
                   className="mb-4"
                 />
                 

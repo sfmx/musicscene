@@ -5,12 +5,10 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 
 export default function StretchingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Stretching Exercises"
         subtitle="Essential stretches and warm-up exercises to prevent injury and improve playing comfort."

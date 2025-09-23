@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -228,8 +228,8 @@ export default function ViIVIVProgressionPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-3">Basic vi-IV-I-V Progression (Key of C)</h3>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
 notes :w (0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
 text ++,.1,vi (Am),:++,.2,IV (F),:++,.3,I (C),:++,.4,V (G)"
               />
@@ -237,8 +237,8 @@ text ++,.1,vi (Am),:++,.2,IV (F),:++,.3,I (C),:++,.4,V (G)"
             
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-3">With Seventh Chords</h3>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
 notes :w (x/6.0/5.1/4.0/3.0/2.x/1) | :w (1/6.x/5.2/4.1/3.1/2.x/1) | :w (x/6.3/5.2/4.4/3.5/2.x/1) | :w (3/6.x/5.4/4.3/3.4/2.x/1)
 text ++,.1,Am7,:++,.2,Fmaj7,:++,.3,Cmaj7,:++,.4,G7"
               />
@@ -246,8 +246,8 @@ text ++,.1,Am7,:++,.2,Fmaj7,:++,.3,Cmaj7,:++,.4,G7"
             
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-3">In Key of G Major</h3>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=G time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=G time=4/4
 notes :w (2/5.0/4.0/3.2/2.0/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (2/5.1/4.0/3.0/2.0/1)
 text ++,.1,vi (Em),:++,.2,IV (C),:++,.3,I (G),:++,.4,V (D)"
               />

@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function ExtendedChordsPage() {
@@ -534,14 +534,14 @@ export default function ExtendedChordsPage() {
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
 options space=25 font-size=12
 tabstave notation=true time=4/4 key=C
 notes :w (X/X.10/5.12/4.10/3.10/2) | :w (3/6.3/5.5/4.3/3.5/2) | :w (X/6.3/5.2/4.4/3.5/2)
 text :w,Dm9,:w,G13,:w,CMaj9
                   `}
-                  width={600}
+                  className="scale-75"
                   className="mb-4"
                 />
                 
@@ -596,14 +596,14 @@ text :w,Dm9,:w,G13,:w,CMaj9
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
 options space=25 font-size=12
 tabstave notation=true time=4/4 key=C
 notes :w (X/X.3/5.2/4.0/3.3/2.0/1) | :w (3/6.0/5.0/4.2/3.0/2.3/1) | :w (X/X.0/5.2/4.0/3.1/2.0/1) | :w (1/6.0/5.3/4.0/3.1/2.1/1)
 text :w,Cadd9,:w,Gadd9,:w,Am7,:w,Fadd9
                   `}
-                  width={700}
+                  className="scale-75"
                   className="mb-4"
                 />
                 
@@ -658,14 +658,14 @@ text :w,Cadd9,:w,Gadd9,:w,Am7,:w,Fadd9
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
 options space=25 font-size=12
 tabstave notation=true time=4/4 key=C
 notes :w (X/X.0/5.0/4.0/3.1/2.0/1) | :w (X/X.10/5.12/4.10/3.10/2) | :w (3/6.3/5.5/4.3/3.5/2) | :w (X/6.3/5.2/4.4/3.5/2)
 text :w,Am11,:w,Dm9,:w,G13,:w,CMaj9
                   `}
-                  width={700}
+                  className="scale-75"
                   className="mb-4"
                 />
                 
@@ -715,14 +715,14 @@ text :w,Am11,:w,Dm9,:w,G13,:w,CMaj9
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
 options space=25 font-size=12
 tabstave notation=true time=4/4 key=D
 notes :w (X/X.0/5.0/4.0/3.1/2.1/1) | :w (0/6.0/5.0/4.0/3.0/2.0/1) | :w (X/X.0/5.0/4.0/3.1/2.1/1) | :w (3/6.3/5.3/4.3/3.3/2.3/1)
 text :w,Dm11,:w,Em11,:w,Dm11,:w,Gm11
                   `}
-                  width={700}
+                  className="scale-75"
                   className="mb-4"
                 />
                 

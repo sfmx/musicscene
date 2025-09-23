@@ -1,0 +1,428 @@
+{
+  "scaleInfo": {
+    "name": "Major Scale",
+    "alternateName": "Ionian Mode",
+    "scaleType": "Heptatonic",
+    "noteCount": 7,
+    "intervalPattern": "W-W-H-W-W-W-H",
+    "character": "Bright, happy, uplifting, optimistic",
+    "mood": ["joyful", "uplifting", "bright", "stable", "optimistic"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - 3 - 4 - 5 - 6 - 7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Major 3rd (Mediant)", 
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Major 6th (Submediant)",
+      "Major 7th (Leading Tone)",
+      "Octave"
+    ],
+    "mode": "Ionian (1st mode of major scale)",
+    "relativeScale": {
+      "name": "Natural Minor Scale",
+      "relationship": "Relative Minor",
+      "intervalDistance": "Minor 3rd down from major root"
+    },
+    "parallelScale": {
+      "name": "Natural Minor Scale",
+      "differences": ["Lowered 3rd", "Lowered 6th", "Lowered 7th"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "C Major",
+      "notes": "C - D - E - F - G - A - B - C",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most fundamental key, easiest to understand"
+    },
+    {
+      "key": "G Major", 
+      "notes": "G - A - B - C - D - E - F# - G",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "F#",
+      "commonUse": "Very common in folk and country music"
+    },
+    {
+      "key": "F Major",
+      "notes": "F - G - A - B♭ - C - D - E - F", 
+      "keySignature": "1 flat (B♭)",
+      "accidentals": "B♭",
+      "commonUse": "Popular in classical and jazz music"
+    },
+    {
+      "key": "D Major",
+      "notes": "D - E - F# - G - A - B - C# - D",
+      "keySignature": "2 sharps (F#, C#)",
+      "accidentals": "F#, C#", 
+      "commonUse": "Bright key, common in rock and pop"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (C Major)",
+        "description": "Open position fingering using open strings, most accessible for beginners",
+        "fretDiagram": "Uses open strings and first 5 frets",
+        "alphaTex": "3.6 5.6 7.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 1.2 3.2 5.2 1.1 3.1",
+        "applications": ["beginner learning", "acoustic playing", "folk music"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position",
+        "description": "Moveable CAGED pattern, most versatile for all styles",
+        "fretDiagram": "5th-9th frets, box pattern",
+        "alphaTex": "5.6 7.6 9.6 5.5 7.5 9.5 5.4 7.4 9.4 5.3 7.3 9.3 6.2 8.2 10.2 5.1 7.1 9.1",
+        "applications": ["rock music", "lead guitar", "improvisation", "all genres"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "7th Position", 
+        "description": "Higher register pattern excellent for melodic playing",
+        "fretDiagram": "7th-11th frets, extended range",
+        "alphaTex": "7.6 9.6 11.6 7.5 9.5 10.5 7.4 9.4 11.4 7.3 9.3 11.3 8.2 10.2 12.2 7.1 9.1 11.1",
+        "applications": ["lead guitar", "solos", "melodic playing", "jazz"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open",
+        "frets": "0-5",
+        "difficulty": "Beginner",
+        "usage": "Learning fundamentals, acoustic music, folk"
+      },
+      {
+        "position": "5th Fret",
+        "frets": "5-9", 
+        "difficulty": "Beginner",
+        "usage": "Most important pattern, all styles of music"
+      },
+      {
+        "position": "12th Fret",
+        "frets": "12-16",
+        "difficulty": "Intermediate", 
+        "usage": "Higher octave, solos, advanced playing"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "I",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Tonic - Home chord, stable resolution",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "ii",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Supertonic - Pre-dominant, leads to dominant",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "iii",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Mediant - Tonic substitute, emotional color",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "IV", 
+        "chord": "F",
+        "quality": "Major",
+        "function": "Subdominant - Strong pre-dominant function",
+        "notes": "F - A - C"
+      },
+      {
+        "degree": "V",
+        "chord": "G",
+        "quality": "Major", 
+        "function": "Dominant - Strong pull back to tonic",
+        "notes": "G - B - D"
+      },
+      {
+        "degree": "vi",
+        "chord": "Am",
+        "quality": "Major",
+        "function": "Submediant - Tonic substitute, relative minor",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "vii°",
+        "chord": "Bdim",
+        "quality": "Diminished",
+        "function": "Leading tone - Strong pull to tonic",
+        "notes": "B - D - F"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Pop Progression (I-V-vi-IV)",
+        "chords": ["C", "G", "Am", "F"],
+        "romanNumerals": "I - V - vi - IV", 
+        "description": "Most popular progression in Western music, used in countless hits",
+        "genre": "Pop/Rock",
+        "alphaTex": "(3.5 2.4 0.3).1 (3.6 0.4 3.3).1 (0.5 3.4 0.3).1 (1.6 3.5 1.4).1"
+      },
+      {
+        "name": "Doo-Wop Progression (I-vi-IV-V)",
+        "chords": ["C", "Am", "F", "G"],
+        "romanNumerals": "I - vi - IV - V",
+        "description": "Classic 1950s progression, emotional and nostalgic", 
+        "genre": "Doo-Wop/Classic Pop",
+        "alphaTex": "(3.5 2.4 0.3).1 (0.5 3.4 0.3).1 (1.6 3.5 1.4).1 (3.6 0.4 3.3).1"
+      },
+      {
+        "name": "Perfect Cadence (I-IV-V-I)",
+        "chords": ["C", "F", "G", "C"],
+        "romanNumerals": "I - IV - V - I",
+        "description": "Traditional classical cadence with strong resolution",
+        "genre": "Classical/Traditional",
+        "alphaTex": "(3.5 2.4 0.3).1 (1.6 3.5 1.4).1 (3.6 0.4 3.3).1 (3.5 2.4 0.3).1"
+      },
+      {
+        "name": "Emotional Progression (vi-IV-I-V)",
+        "chords": ["Am", "F", "C", "G"],
+        "romanNumerals": "vi - IV - I - V",
+        "description": "Starts with minor chord for emotional impact, builds to resolution",
+        "genre": "Ballads/Emotional",
+        "alphaTex": "(0.5 3.4 0.3).1 (1.6 3.5 1.4).1 (3.5 2.4 0.3).1 (3.6 0.4 3.3).1"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Classical",
+      "usage": "Foundation of Western classical harmony and composition",
+      "characteristics": ["sophisticated harmony", "formal structure", "complex development"],
+      "examples": ["Mozart sonatas", "Bach inventions", "Beethoven symphonies"]
+    },
+    {
+      "genre": "Pop", 
+      "usage": "Dominant scale in popular music for creating catchy, accessible melodies",
+      "characteristics": ["simple progressions", "memorable hooks", "mass appeal"],
+      "examples": ["Beatles songs", "Top 40 hits", "Commercial music"]
+    },
+    {
+      "genre": "Rock",
+      "usage": "Bright rock anthems and uplifting songs, often mixed with pentatonic",
+      "characteristics": ["power chords", "driving rhythms", "anthemic choruses"],
+      "examples": ["Classic rock hits", "Arena rock", "Indie rock"]
+    },
+    {
+      "genre": "Country", 
+      "usage": "Storytelling songs with bright, optimistic character",
+      "characteristics": ["simple harmonies", "narrative focus", "traditional values"],
+      "examples": ["Classic country", "Country pop", "Bluegrass"]
+    },
+    {
+      "genre": "Jazz",
+      "usage": "Jazz standards and swing tunes, foundation for chord extensions", 
+      "characteristics": ["complex chords", "improvisation", "swing rhythm"],
+      "examples": ["Standards", "Big band", "Bebop heads"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Let It Be",
+      "artist": "The Beatles", 
+      "key": "C Major",
+      "genre": "Rock/Pop",
+      "usage": "Entire song built on major scale harmony",
+      "difficulty": "Beginner",
+      "learningValue": "Perfect introduction to major key progressions"
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "key": "C Major",
+      "genre": "Pop",
+      "usage": "Classic major key anthem with simple progression",
+      "difficulty": "Beginner",
+      "learningValue": "Demonstrates power of simple major progressions"
+    },
+    {
+      "title": "Don't Stop Believin'", 
+      "artist": "Journey",
+      "key": "E Major",
+      "genre": "Rock",
+      "usage": "Iconic major key rock anthem",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows how major scales create uplifting energy"
+    },
+    {
+      "title": "Imagine",
+      "artist": "John Lennon",
+      "key": "C Major", 
+      "genre": "Pop/Rock",
+      "usage": "Simple major key melody with emotional depth",
+      "difficulty": "Beginner",
+      "learningValue": "Proves simplicity can be profound"
+    },
+    {
+      "title": "Hey Jude",
+      "artist": "The Beatles",
+      "key": "F Major",
+      "genre": "Rock/Pop",
+      "usage": "Major key with emotional journey and resolution",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows major scale's emotional range"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "Basic Major Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner", 
+      "description": "Ascending and descending major scale patterns",
+      "alphaTex": "3.6 5.6 7.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 1.2 3.2 5.2 1.1 3.1 | 3.1 1.1 5.2 3.2 1.2 5.3 4.3 2.3 5.4 4.4 2.4 5.5 3.5 2.5 7.6 5.6 3.6",
+      "tempo": "60-120 BPM",
+      "focus": ["finger independence", "picking accuracy", "scale memorization"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM",
+        "Focus on clean, even articulation", 
+        "Practice both alternate and economy picking",
+        "Gradually increase tempo as accuracy improves"
+      ]
+    },
+    {
+      "name": "Major Scale Intervals",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Playing the major scale in intervals (3rds, 4ths, 5ths)",
+      "alphaTex": "3.6 2.5 5.6 3.5 7.6 5.5 2.5 2.4 3.5 4.4 5.5 5.4 2.4 2.3 4.4 4.3",
+      "tempo": "80-140 BPM",
+      "focus": ["interval recognition", "harmonic understanding", "advanced fingering"],
+      "instructions": [
+        "Practice intervals systematically (3rds, then 4ths, then 5ths)",
+        "Listen carefully to harmonic relationships",
+        "Use different picking patterns for variety",
+        "Work on smooth voice leading between intervals"
+      ]
+    },
+    {
+      "name": "Major Scale Chord Arpeggios",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Playing diatonic major scale chord arpeggios",
+      "alphaTex": "(3.5 2.4 0.3) (2.4 1.3 0.2) (0.4 2.3 0.2) (1.6 3.5 1.4)",
+      "tempo": "70-110 BPM",
+      "focus": ["chord understanding", "arpeggio technique", "harmonic progression"],
+      "instructions": [
+        "Practice each chord arpeggio separately first",
+        "Connect smoothly between chord changes", 
+        "Work on different arpeggio patterns (ascending, descending, mixed)",
+        "Apply to common major progressions"
+      ]
+    },
+    {
+      "name": "Major Scale Sequences",
+      "type": "Musical",
+      "difficulty": "Advanced",
+      "description": "Sequential patterns through the major scale",
+      "alphaTex": "3.6 5.6 7.6 | 5.6 7.6 2.5 | 7.6 2.5 3.5 | 2.5 3.5 5.5",
+      "tempo": "90-160 BPM",
+      "focus": ["pattern recognition", "musical phrasing", "advanced technique"],
+      "instructions": [
+        "Master basic 3-note sequences first",
+        "Expand to 4-note and 5-note patterns",
+        "Work on rhythmic variations of sequences",
+        "Apply sequences to improvisation and composition"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor",
+      "relationship": "Relative minor",
+      "differences": "Same notes, different tonal center (A minor = C major)",
+      "usage": "Contrasting emotional character, common modulation target"
+    },
+    {
+      "scale": "Major Pentatonic", 
+      "relationship": "Subset scale",
+      "differences": "Uses 5 notes from major scale (1,2,3,5,6)",
+      "usage": "Simplified version for soloing, always sounds good"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Modal variation", 
+      "differences": "Major scale starting from the 2nd degree",
+      "usage": "Jazz, rock, modal harmony with minor character"
+    },
+    {
+      "scale": "Mixolydian Mode",
+      "relationship": "Modal variation",
+      "differences": "Major scale starting from the 5th degree", 
+      "usage": "Blues, rock, dominant chord soloing"
+    },
+    {
+      "scale": "Lydian Mode",
+      "relationship": "Modal variation",
+      "differences": "Major scale starting from the 4th degree",
+      "usage": "Dreamy, floating sound, film music, jazz"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Beginner",
+    "prerequisites": [
+      "Basic guitar technique",
+      "Ability to read tablature", 
+      "Understanding of frets and strings",
+      "Basic chord knowledge helpful"
+    ],
+    "nextSteps": [
+      "Major pentatonic scale",
+      "Natural minor scale", 
+      "Modal scales (Dorian, Mixolydian, Lydian)",
+      "Advanced major key harmony",
+      "Jazz extensions and alterations"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and basic technique",
+        "exercises": ["Basic scale runs", "Open position practice", "Simple chord progressions"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)", 
+        "duration": "20-30 minutes daily",
+        "focus": "Multiple positions and musical application",
+        "exercises": ["Position playing", "Interval exercises", "Song applications"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily", 
+        "focus": "Advanced techniques and improvisation",
+        "exercises": ["Sequence patterns", "Modal exploration", "Composition/improvisation"]
+      },
+      {
+        "phase": "Mastery (Ongoing)",
+        "duration": "20-30 minutes daily maintenance",
+        "focus": "Musical expression and advanced applications", 
+        "exercises": ["Advanced progressions", "Style studies", "Performance preparation"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "major",
+    "tags": ["major", "ionian", "scales", "theory", "essential", "beginner"],
+    "category": "scales",
+    "subcategory": "diatonic",
+    "lastUpdated": "2025-08-06",
+    "sources": [
+      "Berklee College of Music Theory Handbook",
+      "Hal Leonard Guitar Method",
+      "Classical harmony textbooks", 
+      "Popular music analysis",
+      "Music education pedagogical research"
+    ]
+  }
+}

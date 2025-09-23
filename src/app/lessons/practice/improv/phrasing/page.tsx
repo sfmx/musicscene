@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 const phrasingConcepts = [
   {
@@ -214,14 +214,10 @@ export default function PhrasingPage() {
               <p className="text-blue-800 text-sm mb-3">
                 Question phrase (ascending, creates tension) followed by answer phrase (descending, resolves)
               </p>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :q 5/6 7/5 8/6 10/6 | :w 8/6 | :q 10/6 8/6 7/5 5/6 | :w 5/6
-                `}
-                width={600}
-                scale={0.8}
+              <AlphaTexRenderer 
+                alphaTex="5.6{q} 7.5{q} 8.6{q} 10.6{q} | 8.6{w} | 10.6{q} 8.6{q} 7.5{q} 5.6{q} | 5.6{w}"
+                title="Question and Answer Phrasing: Rising (question) then Falling (answer)"
+                className="scale-75"
               />
             </div>
           </div>
@@ -232,14 +228,10 @@ export default function PhrasingPage() {
               <p className="text-purple-800 text-sm mb-3">
                 4-bar phrase: Statement - Development - Climax - Resolution
               </p>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :q 5/6 7/5 8/6 5/6 | :q 7/5 :8 8/6 7/5 :q 8/6 10/6 | :q 10/6 :8 8/6 10/6 :q 12/6 10/6 | :h 8/6 5/6
-                `}
-                width={600}
-                scale={0.8}
+              <AlphaTexRenderer 
+                alphaTex="5.6{q} 7.5{q} 8.6{q} 5.6{q} | 7.5{q} 8.6{e} 7.5{e} 8.6{q} 10.6{q} | 10.6{q} 8.6{e} 10.6{e} 12.6{q} 10.6{q} | 8.6{h} 5.6{h}"
+                title="4-Bar Musical Sentence: Statement - Development - Climax - Resolution"
+                className="scale-75"
               />
             </div>
           </div>

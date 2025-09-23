@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function TritonePage() {
@@ -125,10 +125,10 @@ export default function TritonePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 B/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.4 2.5" 
+                      title="F to B Tritone" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-red-600">Maximum dissonance, demands resolution</p>
@@ -151,10 +151,10 @@ export default function TritonePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 F#/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 2.1.4" 
+                      title="C to F# Tritone" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-orange-600">Unstable, seeks resolution</p>
@@ -177,10 +177,10 @@ export default function TritonePage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 Db/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 4.4.4" 
+                      title="G to Db Tritone" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Symmetrical division of octave</p>
@@ -203,10 +203,10 @@ export default function TritonePage() {
                     <p className="text-xs text-blue-600 mt-2">G7 with tritone B-F</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/2 B/3 D/4 F/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 4.5 0.4 1.4).1" 
+                      title="G7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-blue-600 mt-2">G-B-D-F: 3rd to 7th = tritone</p>
                   </div>
@@ -227,10 +227,10 @@ export default function TritonePage() {
                     <p className="text-xs text-green-600 mt-2">C7 with tritone E-Bb</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 Bb/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3 1.4).1" 
+                      title="C7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-green-600 mt-2">C-E-G-Bb: 3rd to 7th = tritone</p>
                   </div>
@@ -251,10 +251,10 @@ export default function TritonePage() {
                     <p className="text-xs text-yellow-600 mt-2">E7 with tritone G#-D</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (E/4 G#/4 B/3 D/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(2.4 1.3 4.5 0.4).1" 
+                      title="E7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-yellow-600 mt-2">E-G#-B-D: 3rd to 7th = tritone</p>
                   </div>
@@ -277,10 +277,10 @@ export default function TritonePage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-red-700 mb-2">Built from Tritones</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 Eb/4 Gb/4 A/4)" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 1.4 2.3 5.4).1" 
+                      title="Fully Diminished Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-red-600 mt-2">Cdim7: All intervals are tritones or minor 3rds</p>
                   </div>
@@ -297,10 +297,10 @@ export default function TritonePage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-purple-700 mb-2">Tension & Resolution</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h F/3 B/3 | :h E/4 C/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="1.6.2 4.6.2 | 2.4.2 3.5.2" 
+                      title="Tritone Resolution" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-purple-600 mt-2">Tritone resolves outward by semitone</p>
                   </div>

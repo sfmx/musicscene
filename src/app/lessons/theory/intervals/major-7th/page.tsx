@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major7thPage() {
@@ -124,10 +124,10 @@ export default function Major7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 B/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 2.5.4" 
+                      title="C to B Major 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-amber-600">Sophisticated, elegant tension</p>
@@ -150,10 +150,10 @@ export default function Major7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 E/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="1.6.4 0.6.4" 
+                      title="F to E Major 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-orange-600">Jazz chord essential harmony</p>
@@ -176,10 +176,10 @@ export default function Major7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/3 F#/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6.4 2.6.4" 
+                      title="G to F# Major 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-yellow-600">Sophisticated tonic harmony</p>
@@ -202,10 +202,10 @@ export default function Major7thPage() {
                     <p className="text-xs text-blue-600 mt-2">Cmaj7 with major 7th (B)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 B/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3 2.5).1" 
+                      title="Cmaj7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-blue-600 mt-2">C-E-G-B: Major triad + major 7th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Major7thPage() {
                     <p className="text-xs text-emerald-600 mt-2">Fmaj7 with major 7th (E)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (F/3 A/3 C/5 E/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(1.6 5.5 3.2 0.6).1" 
+                      title="Fmaj7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">F-A-C-E: Major triad + major 7th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Major7thPage() {
                     <p className="text-xs text-teal-600 mt-2">Gmaj7 with major 7th (F#)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/3 B/3 D/4 F#/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.6 4.5 0.4 2.6).1" 
+                      title="Gmaj7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">G-B-D-F#: Major triad + major 7th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Major7thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-purple-700 mb-2">I - vi - ii - V with maj7</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 B/3) (A/2 C/4 E/4 G/3) (D/3 F/4 A/3 C/4) (G/3 B/3 D/4 F/3)" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3 2.5).1 | (0.5 3.4 2.4 1.6).1 | (0.4 1.4 2.5 3.4).1 | (3.6 4.5 0.4 1.6).1" 
+                      title="Jazz Progression with maj7" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-purple-600 mt-2">Cmaj7 - Am7 - Dm7 - G7: Major 7th sophistication</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Major7thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-indigo-700 mb-2">Major 7th to Octave Resolution</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h B/3 C/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.5.2 3.5.2" 
+                      title="Major 7th to Octave Resolution" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-indigo-600 mt-2">Natural upward resolution tendency of major 7th</p>
                   </div>

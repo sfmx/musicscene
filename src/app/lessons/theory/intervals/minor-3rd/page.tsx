@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor3rdPage() {
@@ -124,10 +124,10 @@ export default function Minor3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q A/3 C/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.5 2.4" 
+                      title="A to C Minor 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-blue-600">Melancholic, introspective quality</p>
@@ -150,10 +150,10 @@ export default function Minor3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q E/2 G/2" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.6 3.6" 
+                      title="E to G Minor 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-indigo-600">Dark, emotional depth</p>
@@ -176,10 +176,10 @@ export default function Minor3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 F/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.4 3.4" 
+                      title="D to F Minor 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Contemplative, sophisticated</p>
@@ -202,10 +202,10 @@ export default function Minor3rdPage() {
                     <p className="text-xs text-emerald-600 mt-2">Complete A minor chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (A/3 C/4 E/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.5 2.4 0.4" 
+                      title="A Minor Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">A-C-E: Root, minor 3rd, perfect 5th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Minor3rdPage() {
                     <p className="text-xs text-teal-600 mt-2">Complete E minor chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (E/2 G/2 B/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.6 3.6 0.5" 
+                      title="E Minor Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">E-G-B: Root, minor 3rd, perfect 5th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Minor3rdPage() {
                     <p className="text-xs text-rose-600 mt-2">Complete D minor chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/3 A/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.4 3.4 0.5" 
+                      title="D Minor Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-rose-600 mt-2">D-F-A: Root, minor 3rd, perfect 5th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Minor3rdPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-slate-700 mb-2">Minor 3rd Patterns</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 Eb/4 | F/4 Ab/4 | G/4 Bb/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 6.5 | 3.4 4.5 | 3.6 6.6" 
+                      title="Minor 3rd intervals: 3 semitones apart" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-slate-600 mt-2">Minor 3rd intervals: 3 semitones apart</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Minor3rdPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-gray-700 mb-2">Emotional Character</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h A/3 C/4 | :h E/4 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.5 2.4 | 0.4 3.4" 
+                      title="Minor 3rds create introspective, melancholic moods" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-gray-600 mt-2">Minor 3rds create introspective, melancholic moods</p>
                   </div>

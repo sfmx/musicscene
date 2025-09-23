@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Perfect5thPage() {
@@ -113,10 +113,10 @@ export default function Perfect5thPage() {
                     <SimpleFretboardDiagram chord="E5" />
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q 0/6 2/5" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.6.4 2.5.4" 
+                      title="E to B Perfect 5th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-red-600">Frets: 0-2-2 (low E, A, D strings)</p>
@@ -132,10 +132,10 @@ export default function Perfect5thPage() {
                     <SimpleFretboardDiagram chord="A5" />
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q 0/5 2/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.5.4 2.4.4" 
+                      title="A to E Perfect 5th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-blue-600">Frets: x-0-2-2 (A, D strings)</p>
@@ -151,10 +151,10 @@ export default function Perfect5thPage() {
                     <SimpleFretboardDiagram chord="G5" />
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q 3/6 5/5" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6.4 5.5.4" 
+                      title="G to D Perfect 5th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-green-600">Frets: 3-5-5 (low E, A strings)</p>
@@ -170,10 +170,10 @@ export default function Perfect5thPage() {
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 border border-purple-200">
                 <h4 className="text-lg font-semibold text-purple-800 mb-4">🎯 Same String Pattern</h4>
                 <div className="bg-white rounded-lg p-4 mb-4">
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true tablature=false\nnotes :q 0/6 7/6 | 3/6 10/6" 
-                    width={300} 
-                    scale={0.9}
+                  <AlphaTexRenderer 
+                    alphaTex="0.6.4 7.6.4 | 3.6.4 10.6.4" 
+                    title="Same String Perfect 5ths" 
+                    className="scale-90"
                   />
                 </div>
                 <ul className="text-sm text-purple-700 space-y-2">
@@ -187,10 +187,10 @@ export default function Perfect5thPage() {
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border border-orange-200">
                 <h4 className="text-lg font-semibold text-orange-800 mb-4">🔄 Cross-String Pattern</h4>
                 <div className="bg-white rounded-lg p-4 mb-4">
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true tablature=false\nnotes :q 0/6 2/5 | 3/6 5/5 | 5/6 7/5" 
-                    width={300} 
-                    scale={0.9}
+                  <AlphaTexRenderer 
+                    alphaTex="0.6.4 2.5.4 | 3.6.4 5.5.4 | 5.6.4 7.5.4" 
+                    title="Cross String Perfect 5ths" 
+                    className="scale-90"
                   />
                 </div>
                 <ul className="text-sm text-orange-700 space-y-2">
@@ -212,10 +212,10 @@ export default function Perfect5thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-emerald-700 mb-2">Basic Triad (C Major)</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 E/4 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3).1" 
+                      title="C Major Triad" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">Root + 3rd + 5th = Complete harmony</p>
                   </div>
@@ -232,10 +232,10 @@ export default function Perfect5thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-teal-700 mb-2">Perfect 5th Melodic Leap</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 G/4 C/5 G/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 3.3.4 3.2.4 3.3.4" 
+                      title="Perfect 5th Arpeggios" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">Strong, heroic melodic intervals</p>
                   </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 const targetNoteTypes = [
   {
@@ -249,15 +249,10 @@ export default function TargetNotesPage() {
               <p className="text-blue-800 text-sm mb-3">
                 ii-V-I progression showing smooth connection of 3rds and 7ths
               </p>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :w 3/6 | :w 3/5 | :w 3/5
-                  text :w,.1,Dm7(F),:w,.1,G7(F),:w,.1,Cmaj7(E)
-                `}
-                width={600}
-                scale={0.8}
+              <AlphaTexRenderer 
+                alphaTex="3.1 3.1 3.1 | 3.2 3.2 3.2 | 3.2 3.2 3.2"
+                title="Guide Tone Line: Dm7(F) - G7(F) - Cmaj7(E)"
+                className="scale-75"
               />
             </div>
           </div>
@@ -268,15 +263,10 @@ export default function TargetNotesPage() {
               <p className="text-green-800 text-sm mb-3">
                 Landing chord tones on strong beats (1 and 3) over C major chord
               </p>
-              <VexTab 
-                notation={`
-                  options space=20 font-size=14
-                  tabstave notation=true time=4/4
-                  notes :q 8/6 10/6 8/6 7/5 | :q 5/6 7/5 8/6 10/6
-                  text :q,.1,C,:q,.1,pass,:q,.1,G,:q,.1,pass,:q,.1,E,:q,.1,pass,:q,.1,C,:q,.1,pass
-                `}
-                width={600}
-                scale={0.8}
+              <AlphaTexRenderer 
+                alphaTex="8.6 10.6 8.6 7.5 | 5.6 7.5 8.6 10.6"
+                title="Chord Tone Targeting: C(8) - G(8) - E(7) - C(10) over C Major"
+                className="scale-75"
               />
             </div>
           </div>

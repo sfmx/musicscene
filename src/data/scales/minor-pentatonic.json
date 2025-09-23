@@ -1,0 +1,389 @@
+{
+  "scaleInfo": {
+    "name": "Minor Pentatonic Scale",
+    "alternateName": "Minor Pentatonic",
+    "scaleType": "Pentatonic",
+    "noteCount": 5,
+    "intervalPattern": "1-♭3-4-5-♭7",
+    "character": "Dark, powerful, emotional",
+    "mood": ["dark", "powerful", "emotional", "bluesy", "expressive", "soulful"]
+  },
+  "theory": {
+    "intervalsFromRoot": "Root - Minor 3rd - Perfect 4th - Perfect 5th - Minor 7th",
+    "scaleDegrees": ["1", "♭3", "4", "5", "♭7"],
+    "mode": "Derived from Natural Minor Scale",
+    "relativeScale": {
+      "name": "Major Pentatonic",
+      "relationship": "Same notes, different tonal center",
+      "intervalDistance": "Major 3rd above (relative major)"
+    },
+    "parallelScale": {
+      "name": "Major Pentatonic",
+      "differences": ["Uses natural 3, 6 instead of ♭3, ♭7"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "A Minor Pentatonic",
+      "notes": "A - C - D - E - G",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most famous guitar scale pattern ever"
+    },
+    {
+      "key": "E Minor Pentatonic", 
+      "notes": "E - G - A - B - D",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most natural key for guitar using open strings"
+    },
+    {
+      "key": "G Minor Pentatonic",
+      "notes": "G - B♭ - C - D - F",
+      "keySignature": "2 flats",
+      "accidentals": "B♭",
+      "commonUse": "Higher register option, rock standard"
+    },
+    {
+      "key": "D Minor Pentatonic",
+      "notes": "D - F - G - A - C", 
+      "keySignature": "1 flat",
+      "accidentals": "F natural (no sharp)",
+      "commonUse": "Upper fretboard access, lead guitar"
+    },
+    {
+      "key": "C Minor Pentatonic",
+      "notes": "C - E♭ - F - G - B♭",
+      "keySignature": "3 flats",
+      "accidentals": "E♭, B♭",
+      "commonUse": "Alternative fingering approach"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "5th Fret (A Minor Pentatonic)",
+        "description": "The most famous guitar pattern ever - Position 1",
+        "fretDiagram": "Classic box pattern covering 4 frets",
+        "alphaTex": "5.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1",
+        "applications": ["Lead guitar", "Rock solos", "Blues improvisation", "Foundation pattern"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "Extension Pattern - Higher Register",
+        "description": "Position 2 extending into higher register",
+        "fretDiagram": "Higher register extension pattern",
+        "alphaTex": "8.6 10.6 7.5 10.5 7.4 10.4 8.3 10.3 8.2 10.2 8.1 10.1",
+        "applications": ["Advanced solos", "High register leads", "Pattern connections"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "Complete Two-Octave Pattern",
+        "description": "Full range minor pentatonic across two octaves",
+        "fretDiagram": "Two-octave complete pattern",
+        "alphaTex": "5.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 10.1 12.1",
+        "applications": ["Full range improvisation", "Advanced techniques", "Complete melodic phrases"]
+      },
+      {
+        "patternNumber": 4,
+        "position": "Open Position (E Minor Pentatonic)",
+        "description": "Using open strings for natural guitar approach",
+        "fretDiagram": "Open position using natural guitar tuning",
+        "alphaTex": "0.6 3.6 0.5 2.5 0.4 2.4 0.3 2.3 0.2 3.2 0.1 3.1",
+        "applications": ["Beginner friendly", "Natural fingering", "Acoustic guitar", "Open string techniques"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open Position",
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Most natural for guitar, uses open strings"
+      },
+      {
+        "position": "5th Fret (Box 1)",
+        "frets": "5-8",
+        "difficulty": "Beginner",
+        "usage": "Most famous and essential guitar pattern"
+      },
+      {
+        "position": "7th-10th Fret",
+        "frets": "7-10",
+        "difficulty": "Intermediate", 
+        "usage": "Higher register leads and extended range"
+      },
+      {
+        "position": "12th Fret",
+        "frets": "12-15",
+        "difficulty": "Intermediate",
+        "usage": "Higher octave, bright lead tones"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Tonic",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "♭III",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Relative Major",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "iv",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Subdominant",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "v",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Minor Dominant",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "♭VII",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Subtonic",
+        "notes": "G - B - D"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "i-VII-VI Progression",
+        "chords": ["Am", "G", "F"],
+        "romanNumerals": "i - ♭VII - ♭VI",
+        "description": "Classic rock and blues progression",
+        "genre": "Rock",
+        "alphaTex": "(5.5 8.4 5.3) (3.6 3.4 0.3) (1.6 1.5 1.4)"
+      },
+      {
+        "name": "12-Bar Minor Blues",
+        "chords": ["Am", "Am", "Am", "Am", "Dm", "Dm", "Am", "Am", "Em", "Dm", "Am", "Am"],
+        "romanNumerals": "i - i - i - i - iv - iv - i - i - v - iv - i - i",
+        "description": "Classic minor key blues progression",
+        "genre": "Blues"
+      },
+      {
+        "name": "Rock Progression",
+        "chords": ["Am", "F", "C", "G"],
+        "romanNumerals": "i - ♭VI - ♭III - ♭VII",
+        "description": "Popular rock chord sequence",
+        "genre": "Rock"
+      },
+      {
+        "name": "Minor Rock Ballad",
+        "chords": ["Am", "C", "G", "F"],
+        "romanNumerals": "i - ♭III - ♭VII - ♭VI",
+        "description": "Emotional rock ballad progression",
+        "genre": "Rock Ballad"
+      },
+      {
+        "name": "Heavy Rock/Metal",
+        "chords": ["Em", "C", "G", "D"],
+        "romanNumerals": "i - ♭VI - ♭III - ♭VII",
+        "description": "Heavy rock and metal progression",
+        "genre": "Metal"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Rock",
+      "usage": "Foundation for rock guitar solos and riffs",
+      "characteristics": ["Power bends", "Fast alternate picking", "Palm-muted riffs", "Distorted tones"],
+      "examples": ["Led Zeppelin", "Guns N' Roses", "AC/DC"]
+    },
+    {
+      "genre": "Blues",
+      "usage": "Essential for blues expression and improvisation",
+      "characteristics": ["String bends", "Vibrato", "Call and response", "Emotional phrasing"],
+      "examples": ["B.B. King", "Eric Clapton", "Stevie Ray Vaughan"]
+    },
+    {
+      "genre": "Hard Rock/Metal",
+      "usage": "Power and aggression in heavy music",
+      "characteristics": ["Heavy distortion", "Fast runs", "Aggressive bending", "Power chord backing"],
+      "examples": ["Black Sabbath", "Metallica", "Iron Maiden"]
+    },
+    {
+      "genre": "Alternative Rock",
+      "usage": "Grunge and alternative foundation",
+      "characteristics": ["Raw expression", "Simple but powerful", "Emotional content", "Distorted clean mix"],
+      "examples": ["Nirvana", "Pearl Jam", "Soundgarden"]
+    },
+    {
+      "genre": "Modern Blues Rock",
+      "usage": "Contemporary blues expression",
+      "characteristics": ["Technical precision", "Modern tones", "Fusion techniques", "Extended techniques"],
+      "examples": ["Joe Bonamassa", "Gary Clark Jr.", "John Mayer"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "key": "A minor pentatonic",
+      "genre": "Rock",
+      "usage": "Jimmy Page's iconic solo heavily uses minor pentatonic",
+      "difficulty": "Advanced",
+      "learningValue": "Perfect example of emotional rock expression"
+    },
+    {
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "key": "Various minor pentatonic",
+      "genre": "Hard Rock",
+      "usage": "Slash's memorable solos rooted in minor pentatonic",
+      "difficulty": "Advanced",
+      "learningValue": "Modern rock guitar at its finest"
+    },
+    {
+      "title": "B.B. King Blues Style",
+      "artist": "B.B. King",
+      "key": "Various",
+      "genre": "Blues",
+      "usage": "Master of minor pentatonic expression",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows the emotional power of simple scales"
+    },
+    {
+      "title": "Alternative Rock Songs",
+      "artist": "Nirvana, Pearl Jam, Soundgarden",
+      "key": "Various",
+      "genre": "Alternative Rock", 
+      "usage": "Grunge and alternative foundation",
+      "difficulty": "Intermediate",
+      "learningValue": "Raw, powerful expression with simple scales"
+    },
+    {
+      "title": "Hard Rock/Metal Anthems",
+      "artist": "Black Sabbath, Metallica, Iron Maiden",
+      "key": "Various",
+      "genre": "Metal",
+      "usage": "Power and aggression in heavy music",
+      "difficulty": "Advanced",
+      "learningValue": "Heavy, aggressive applications"
+    },
+    {
+      "title": "Modern Blues Rock",
+      "artist": "Joe Bonamassa, Gary Clark Jr.",
+      "key": "Various",
+      "genre": "Blues Rock",
+      "usage": "Contemporary blues expression",
+      "difficulty": "Advanced",
+      "learningValue": "Modern technical approach to traditional blues"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "Basic Box Pattern",
+      "type": "Scale Practice",
+      "difficulty": "Beginner",
+      "description": "Practice the A minor pentatonic box pattern ascending and descending",
+      "alphaTex": "5.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 5.2 5.3 7.4 5.4 7.5 5.5 8.6 5.6",
+      "tempo": "60-120 BPM",
+      "focus": ["Finger positioning", "Box pattern mastery", "Rhythm accuracy"],
+      "instructions": ["Start slowly with metronome", "Focus on clean articulation", "Memorize the box shape", "Practice ascending and descending"]
+    },
+    {
+      "name": "Classic Rock Lick",
+      "type": "Licks & Phrases",
+      "difficulty": "Intermediate",
+      "description": "Essential rock guitar phrase with bends",
+      "alphaTex": "5.4 7.4 5.3 7.3 5.3 7.4 5.4 8.5 5.5 7.5 5.5",
+      "tempo": "80-140 BPM",
+      "focus": ["String bending", "Rock phrasing", "Articulation"],
+      "instructions": ["Focus on bend accuracy", "Add vibrato to sustained notes", "Practice with rock backing tracks", "Develop personal variations"]
+    },
+    {
+      "name": "Blues Phrasing",
+      "type": "Musical Expression",
+      "difficulty": "Intermediate",
+      "description": "Expressive blues phrases with bends and vibrato",
+      "alphaTex": "8.6 8.6 5.5 7.5 5.5 7.4 5.4 7.3 5.3 8.2",
+      "tempo": "70-120 BPM",
+      "focus": ["Emotional expression", "Vibrato control", "Bend accuracy"],
+      "instructions": ["Focus on feeling and expression", "Use call and response", "Listen to blues masters", "Develop personal voice"]
+    },
+    {
+      "name": "Position Connections",
+      "type": "Advanced Technique", 
+      "difficulty": "Advanced",
+      "description": "Connect different minor pentatonic positions smoothly",
+      "tempo": "80-130 BPM",
+      "focus": ["Position shifts", "Fretboard knowledge", "Smooth transitions"],
+      "instructions": ["Practice position changes slowly", "Learn connecting patterns", "Build fretboard vision", "Develop seamless transitions"]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor",
+      "relationship": "Parent Scale",
+      "differences": "Minor pentatonic removes 2nd and 6th degrees",
+      "usage": "Add back for complete harmonic possibilities"
+    },
+    {
+      "scale": "Major Pentatonic",
+      "relationship": "Relative Scale",
+      "differences": "Same notes, different tonal center (major 3rd above)",
+      "usage": "Brighter, happier alternative with same fingerings"
+    },
+    {
+      "scale": "Blues Scale",
+      "relationship": "Extended Scale",
+      "differences": "Minor pentatonic + ♭5 blue note",
+      "usage": "Adds bluesy character and tension"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Modal Alternative",
+      "differences": "Natural minor with raised 6th - contains minor pentatonic",
+      "usage": "Jazzy alternative with more harmonic color"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Beginner to Intermediate",
+    "prerequisites": ["Basic guitar technique", "Basic fretting", "Open chords knowledge"],
+    "nextSteps": ["Major pentatonic scale", "Blues scale", "Full natural minor scale", "Advanced bending techniques"],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation",
+        "duration": "2-3 weeks",
+        "focus": "Master the basic box pattern and finger positioning",
+        "exercises": ["Box pattern memorization", "Clean articulation", "Basic bending technique"]
+      },
+      {
+        "phase": "Development",
+        "duration": "4-6 weeks", 
+        "focus": "Develop technique and learn classic licks",
+        "exercises": ["String bending accuracy", "Classic rock licks", "Vibrato control", "Position connections"]
+      },
+      {
+        "phase": "Application",
+        "duration": "8+ weeks",
+        "focus": "Musical application and personal expression",
+        "exercises": ["Improvisation over backing tracks", "Learn famous solos", "Create original phrases", "Develop personal style"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "minor-pentatonic",
+    "tags": ["essential", "beginner-friendly", "rock", "blues", "fundamental", "expressive"],
+    "category": "essential",
+    "subcategory": "pentatonic",
+    "lastUpdated": "2025-08-06",
+    "sources": ["Rock guitar method books", "Blues guitar analysis", "Guitar legends study", "Traditional pentatonic systems"]
+  }
+}

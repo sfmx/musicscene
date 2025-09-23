@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { VexTab } from './VexTab';
+import AlphaTexRenderer from './AlphaTexRenderer';
 
 interface Stave {
   /** Unique identifier for the stave */
   id: string;
-  /** The VexTab notation for this stave */
-  notation: string;
+  /** The AlphaTex notation for this stave */
+  alphaTex: string;
   /** Optional title for the stave */
   title?: string;
   /** Custom width for this stave (optional) */
@@ -88,10 +88,10 @@ const MusicScore: React.FC<MusicScoreProps> = ({
       
       {staves.map((stave) => (
         <div key={stave.id} style={staveContainerStyle}>          {stave.title && <h3 style={staveTitleStyle}>{stave.title}</h3>}
-          <VexTab
-            notation={stave.notation}
-            width={stave.width || responsiveWidth}
-            scale={stave.scale || responsiveScale}
+          <AlphaTexRenderer
+            alphaTex={stave.alphaTex}
+            title={stave.title}
+            className="scale-75"
           />
         </div>
       ))}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -125,11 +125,11 @@ export default function IIVVProgressionPage() {
                       <p className="text-xs text-blue-600 mt-1">Dominant - Tension</p>
                     </div>
                   </div>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=C time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=C time=4/4
                       notes :w C/5 F/4 G/5 C/5" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                   <div className="mt-3">
                     <p className="text-xs text-blue-600 font-medium mb-1">Practice Notes:</p>
@@ -159,22 +159,22 @@ export default function IIVVProgressionPage() {
                       <SimpleFretboardDiagram chord="D_major" />
                     </div>
                   </div>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=G time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=G time=4/4
                       notes :w G/6 C/5 D/4 G/6" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                 </div>
                 
                 <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                   <h4 className="font-semibold text-purple-800 mb-2">Common Strumming Pattern</h4>
                   <p className="text-sm text-purple-700 mb-3">Down-Up pattern for I-IV-V:</p>
-                  <VexTabRenderer 
-                    vextab="tabstave notation=true key=C time=4/4
+                  <AlphaTexRenderer 
+                    alphaTex="tabstave notation=true key=C time=4/4
                       notes :8d (3/5.3/4.2/3.1/2.0/1) :8u ## :8d ## :8u :8d ## :8u :8d ## :8u" 
-                    width={450} 
-                    scale={0.8}
+                    className="scale-75" 
+                    
                   />
                   <p className="text-xs text-purple-600 mt-2">D-D-U-D-U-D-U-D-U pattern</p>
                 </div>
@@ -312,11 +312,11 @@ export default function IIVVProgressionPage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">Exercise 1: Basic I-IV-V-I</h3>
               <p className="text-blue-700 text-sm mb-3">Practice the fundamental progression in C major:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
                   notes :w C/5 F/4 G/5 C/5" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
               <div className="mt-3">
                 <p className="text-xs text-blue-600 font-medium mb-1">Practice Tips:</p>
@@ -332,22 +332,22 @@ export default function IIVVProgressionPage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">Exercise 2: Rhythmic Variation</h3>
               <p className="text-green-700 text-sm mb-3">Practice with quarter note rhythmic patterns:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=C time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=C time=4/4
                   notes :q C/5 C/5 C/5 C/5 | :q F/4 F/4 F/4 F/4 | :q G/5 G/5 G/5 G/5 | :q C/5 C/5 C/5 C/5" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
             </div>
             
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 3: Key of G Major</h3>
               <p className="text-purple-700 text-sm mb-3">Practice I-IV-V-I in G major:</p>
-              <VexTabRenderer 
-                vextab="tabstave notation=true key=G time=4/4
+              <AlphaTexRenderer 
+                alphaTex="tabstave notation=true key=G time=4/4
                   notes :w G/6 C/5 D/4 G/6" 
-                width={550} 
-                scale={0.9}
+                className="scale-75" 
+                
               />
             </div>
           </div>

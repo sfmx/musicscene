@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function PalmMutingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Palm Muting Technique"
         subtitle="Master the essential rhythm guitar technique that creates percussive, controlled tones and is fundamental to rock, metal, and many contemporary guitar styles."
@@ -114,18 +112,10 @@ export default function PalmMutingPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic Palm Muting Exercise"
-                staves={[{
-                  id: 'basic-palm-muting',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 0/6 0/6 0/6 0/6 | :q 3/6 3/6 3/6 3/6 |
-notes :q 0/5 0/5 0/5 0/5 | :q 2/5 2/5 2/5 2/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Basic Palm Muted Quarter Notes: Low E and A Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{q} 0.6{q} 0.6{q} 0.6{q} | 3.6{q} 3.6{q} 3.6{q} 3.6{q} | 0.5{q} 0.5{q} 0.5{q} 0.5{q} | 2.5{q} 2.5{q} 2.5{q} 2.5{q}"
+                title="Basic Palm Muted Quarter Notes: Low E and A Strings"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -160,18 +150,10 @@ notes :q 0/5 0/5 0/5 0/5 | :q 2/5 2/5 2/5 2/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Palm Muting with Alternate Picking"
-                staves={[{
-                  id: 'palm-muting-alternate',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 0/6 0/6 0/6 0/6 0/6 0/6 0/6 0/6 |
-notes :8 3/6 3/6 5/6 5/6 3/6 3/6 0/6 0/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Eighth Note Palm Muting with Movement'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{e} 0.6{e} 0.6{e} 0.6{e} 0.6{e} 0.6{e} 0.6{e} 0.6{e} | 3.6{e} 3.6{e} 5.6{e} 5.6{e} 3.6{e} 3.6{e} 0.6{e} 0.6{e}"
+                title="Eighth Note Palm Muting with Movement"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -206,18 +188,10 @@ notes :8 3/6 3/6 5/6 5/6 3/6 3/6 0/6 0/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Palm Muting On/Off Exercise"
-                staves={[{
-                  id: 'palm-muting-transitions',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 0/6 3/6 0/6 3/6 | :8 0/6 0/6 3/6 3/6 0/6 0/6 3/6 3/6 |
-notes :q 0/5 2/5 0/5 2/5 | :8 0/5 0/5 2/5 2/5 0/5 0/5 2/5 2/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Alternating Palm Muted (PM) and Open Notes'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{q} 3.6{q} 0.6{q} 3.6{q} | 0.6{e} 0.6{e} 3.6{e} 3.6{e} 0.6{e} 0.6{e} 3.6{e} 3.6{e} | 0.5{q} 2.5{q} 0.5{q} 2.5{q} | 0.5{e} 0.5{e} 2.5{e} 2.5{e} 0.5{e} 0.5{e} 2.5{e} 2.5{e}"
+                title="Alternating Palm Muted (PM) and Open Notes"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -261,18 +235,10 @@ notes :q 0/5 2/5 0/5 2/5 | :8 0/5 0/5 2/5 2/5 0/5 0/5 2/5 2/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Power Chord Palm Muting"
-                staves={[{
-                  id: 'power-chord-muting',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q (0/6.0/5) (3/6.3/5) (0/6.0/5) (3/6.3/5) |
-notes :8 (0/6.0/5) (0/6.0/5) (3/6.3/5) (3/6.3/5) (0/6.0/5) (0/6.0/5) (3/6.3/5) (3/6.3/5)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Palm Muted Power Chords: E5 and G5'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="(0.6 0.5){q} (3.6 3.5){q} (0.6 0.5){q} (3.6 3.5){q} | (0.6 0.5){e} (0.6 0.5){e} (3.6 3.5){e} (3.6 3.5){e} (0.6 0.5){e} (0.6 0.5){e} (3.6 3.5){e} (3.6 3.5){e}"
+                title="Palm Muted Power Chords: E5 and G5"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -307,18 +273,10 @@ notes :8 (0/6.0/5) (0/6.0/5) (3/6.3/5) (3/6.3/5) (0/6.0/5) (0/6.0/5) (3/6.3/5) (
                 </div>
               </div>
               
-              <MusicScore
-                title="Syncopated Palm Muting"
-                staves={[{
-                  id: 'syncopated-muting',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 0/6 ## 0/6 ## :q 0/6 :8 0/6 0/6 |
-notes :16 0/6 0/6 ## 0/6 :8 0/6 ## :16 0/6 0/6 ## 0/6 :8 0/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Syncopated Palm Muted Rhythm Patterns'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{e} r{e} 0.6{e} r{e} 0.6{q} 0.6{e} 0.6{e} | 0.6{s} 0.6{s} r{e} 0.6{s} 0.6{e} r{e} 0.6{s} 0.6{s} r{e} 0.6{s} 0.6{e}"
+                title="Syncopated Palm Muted Rhythm Patterns"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -353,18 +311,10 @@ notes :16 0/6 0/6 ## 0/6 :8 0/6 ## :16 0/6 0/6 ## 0/6 :8 0/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Gallop Rhythm Palm Muting"
-                staves={[{
-                  id: 'gallop-muting',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8t 0/6 0/6 0/6 :8t 0/6 0/6 0/6 :8t 0/6 0/6 0/6 :8t 0/6 0/6 0/6 |
-notes :8t (0/6.0/5) (0/6.0/5) (0/6.0/5) :8t (0/6.0/5) (0/6.0/5) (0/6.0/5) :8t (0/6.0/5) (0/6.0/5) (0/6.0/5) :8t (0/6.0/5) (0/6.0/5) (0/6.0/5)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Classic Metal Gallop Rhythm with Palm Muting'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} 0.6{et} | (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et} (0.6 0.5){et}"
+                title="Classic Metal Gallop Rhythm with Palm Muting"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">
@@ -408,18 +358,10 @@ notes :8t (0/6.0/5) (0/6.0/5) (0/6.0/5) :8t (0/6.0/5) (0/6.0/5) (0/6.0/5) :8t (0
                 </div>
               </div>
               
-              <MusicScore
-                title="Variable Muting Pressure"
-                staves={[{
-                  id: 'variable-muting',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 0/6 :h 0/6 | :h 0/6 :h 0/6 |
-notes :q 0/6 0/6 0/6 0/6 | :q 0/6 0/6 0/6 0/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Gradual Pressure Changes: Light → Medium → Heavy → Off'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{h} 0.6{h} | 0.6{h} 0.6{h} | 0.6{q} 0.6{q} 0.6{q} 0.6{q} | 0.6{q} 0.6{q} 0.6{q} 0.6{q}"
+                title="Gradual Pressure Changes: Light → Medium → Heavy → Off"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -454,18 +396,10 @@ notes :q 0/6 0/6 0/6 0/6 | :q 0/6 0/6 0/6 0/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Complex Rhythm Integration"
-                staves={[{
-                  id: 'complex-rhythm',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 (0/6.0/5) (0/6.0/5) ## (0/6.0/5) :8 (3/6.3/5) :16 (3/6.3/5) (3/6.3/5) ## (3/6.3/5) :8 (5/6.5/5) |
-notes :8 (7/6.7/5) ## (7/6.7/5) (5/6.5/5) :16 (5/6.5/5) (5/6.5/5) :8 (3/6.3/5) (0/6.0/5)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Advanced Rhythm Pattern: E5-G5-A5-B5 Progression'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="(0.6 0.5){s} (0.6 0.5){s} r{e} (0.6 0.5){s} (3.6 3.5){e} (3.6 3.5){s} (3.6 3.5){s} r{e} (3.6 3.5){s} (5.6 5.5){e} | (7.6 7.5){e} r{e} (7.6 7.5){e} (5.6 5.5){e} (5.6 5.5){s} (5.6 5.5){s} (3.6 3.5){e} (0.6 0.5){e}"
+                title="Advanced Rhythm Pattern: E5-G5-A5-B5 Progression"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">

@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Minor7thPage() {
@@ -124,10 +124,10 @@ export default function Minor7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 Bb/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.4 1.6.4" 
+                      title="C to Bb Minor 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-blue-600">Smooth, mellow dissonance</p>
@@ -150,10 +150,10 @@ export default function Minor7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/3 F/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6.4 1.6.4" 
+                      title="G to F Minor 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-indigo-600">Dominant 7th chord tension</p>
@@ -176,10 +176,10 @@ export default function Minor7thPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q D/4 C/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.4.4 3.5.4" 
+                      title="D to C Minor 7th" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Sophisticated harmonic movement</p>
@@ -202,10 +202,10 @@ export default function Minor7thPage() {
                     <p className="text-xs text-red-600 mt-2">G7 with minor 7th (F)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/3 B/3 D/4 F/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.6 4.5 0.4 1.6).1" 
+                      title="G7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-red-600 mt-2">G-B-D-F: Major triad + minor 7th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Minor7thPage() {
                     <p className="text-xs text-orange-600 mt-2">C7 with minor 7th (Bb)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 Bb/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 2.4 3.3 1.6).1" 
+                      title="C7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-orange-600 mt-2">C-E-G-Bb: Major triad + minor 7th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Minor7thPage() {
                     <p className="text-xs text-teal-600 mt-2">Am7 with minor 7th (G)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 C/4 E/4 G/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.5 3.4 2.4 1.6).1" 
+                      title="Am7 Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">A-C-E-G: Minor triad + minor 7th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Minor7thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-emerald-700 mb-2">Jazz Standard Movement</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F/4 A/3 C/4) (G/3 B/3 D/4 F/3) (C/4 E/4 G/4)" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.4 1.4 2.5 3.4).1 | (3.6 4.5 0.4 1.6).1 | (3.5 2.4 3.3).1" 
+                      title="ii-V-I Progression" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-emerald-600 mt-2">Dm7 - G7 - C: Minor 7th in both ii and V chords</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Minor7thPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-violet-700 mb-2">Classic Minor 7th Leap</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w C/4 Bb/3" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.1 1.6.1" 
+                      title="Downward Minor 7th" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-violet-600 mt-2">"Somewhere" opening - most famous minor 7th in music</p>
                   </div>

@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function HybridPickingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Hybrid Picking Technique"
         subtitle="Master the versatile combination of pick and fingers that unlocks fluid arpeggios, complex patterns, and expressive playing across all musical styles."
@@ -116,18 +114,10 @@ export default function HybridPickingPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic Pick and Finger Coordination"
-                staves={[{
-                  id: 'basic-hybrid-coordination',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 0/6 0/3 0/6 0/3 | :q 0/5 0/2 0/5 0/2 |
-notes :8 0/6 0/3 0/6 0/3 0/6 0/3 0/6 0/3 | :8 0/5 0/2 0/5 0/2 0/5 0/2 0/5 0/2`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Pick (P) on bass strings, Middle finger (M) on treble strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{q} 0.3{q} 0.6{q} 0.3{q} | 0.5{q} 0.2{q} 0.5{q} 0.2{q} | 0.6{e} 0.3{e} 0.6{e} 0.3{e} 0.6{e} 0.3{e} 0.6{e} 0.3{e} | 0.5{e} 0.2{e} 0.5{e} 0.2{e} 0.5{e} 0.2{e} 0.5{e} 0.2{e}"
+                title="Basic Pick and Finger Coordination - Pick (P) on bass strings, Middle finger (M) on treble strings"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -162,19 +152,10 @@ notes :8 0/6 0/3 0/6 0/3 0/6 0/3 0/6 0/3 | :8 0/5 0/2 0/5 0/2 0/5 0/2 0/5 0/2`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Three-String Arpeggios"
-                staves={[{
-                  id: 'three-string-arpeggios',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 0/6 0/3 0/1 0/3 0/6 0/3 0/1 0/3 |
-notes :8 3/6 0/3 1/1 0/3 3/6 0/3 1/1 0/3 |
-notes :8 2/5 0/2 1/1 0/2 2/5 0/2 1/1 0/2`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'C Major, G Major, and D Major Arpeggios'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{e} 0.3{e} 0.1{e} 0.3{e} 0.6{e} 0.3{e} 0.1{e} 0.3{e} | 3.6{e} 0.3{e} 1.1{e} 0.3{e} 3.6{e} 0.3{e} 1.1{e} 0.3{e} | 2.5{e} 0.2{e} 1.1{e} 0.2{e} 2.5{e} 0.2{e} 1.1{e} 0.2{e}"
+                title="Three-String Arpeggios - C Major, G Major, and D Major Arpeggios"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -209,19 +190,10 @@ notes :8 2/5 0/2 1/1 0/2 2/5 0/2 1/1 0/2`,
                 </div>
               </div>
               
-              <MusicScore
-                title="String Skipping Patterns"
-                staves={[{
-                  id: 'string-skipping-hybrid',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q (0/6.0/3) (2/6.2/3) (3/6.0/3) (0/6.2/3) |
-notes :8 (0/6.0/2) (2/6.1/2) (3/6.0/2) (0/6.1/2) (0/6.0/2) (2/6.1/2) (3/6.0/2) (0/6.1/2) |
-notes :q (0/5.0/1) (2/5.1/1) (3/5.0/1) (0/5.1/1)`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Simultaneous Bass and Treble String Attacks'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="(0.6 0.3){q} (2.6 2.3){q} (3.6 0.3){q} (0.6 2.3){q} | (0.6 0.2){e} (2.6 1.2){e} (3.6 0.2){e} (0.6 1.2){e} (0.6 0.2){e} (2.6 1.2){e} (3.6 0.2){e} (0.6 1.2){e} | (0.5 0.1){q} (2.5 1.1){q} (3.5 0.1){q} (0.5 1.1){q}"
+                title="String Skipping Patterns - Simultaneous Bass and Treble String Attacks"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -265,19 +237,10 @@ notes :q (0/5.0/1) (2/5.1/1) (3/5.0/1) (0/5.1/1)`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Country Chicken Picking"
-                staves={[{
-                  id: 'chicken-picking',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 0/4 0/3 0/2 0/3 0/4 0/3 0/2 0/3 0/4 0/3 0/2 0/3 0/4 0/3 0/2 0/3 |
-notes :8 2/4 ## 2/3 ## 2/2 2/3 2/2 ## |
-notes :16 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Classic Country Chicken Picking Pattern'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.4{s} 0.3{s} 0.2{s} 0.3{s} 0.4{s} 0.3{s} 0.2{s} 0.3{s} 0.4{s} 0.3{s} 0.2{s} 0.3{s} 0.4{s} 0.3{s} 0.2{s} 0.3{s} | 2.4{e} r{e} 2.3{e} r{e} 2.2{e} 2.3{e} 2.2{e} r{e} | 0.4{s} 2.3{s} 0.2{s} 2.3{s} 0.4{s} 2.3{s} 0.2{s} 2.3{s} 0.4{s} 2.3{s} 0.2{s} 2.3{s} 0.4{s} 2.3{s} 0.2{s} 2.3{s}"
+                title="Country Chicken Picking - Classic Country Chicken Picking Pattern"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -312,19 +275,10 @@ notes :16 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3 0/4 2/3 0/2 2/3`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Jazz Chord Comping"
-                staves={[{
-                  id: 'jazz-comping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q (3/6.3/4.4/3.3/2) ## (3/6.3/4.4/3.3/2) ## |
-notes :8 3/6 (3/4.4/3.3/2) 5/6 (3/4.4/3.3/2) 3/6 (3/4.4/3.3/2) 2/6 (3/4.4/3.3/2) |
-notes :q (0/6.2/4.1/3.0/2) ## (0/6.2/4.1/3.0/2) ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Jazz Comping: Bass Note + Chord Voicings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="(3.6 3.4 4.3 3.2){q} r{q} (3.6 3.4 4.3 3.2){q} r{q} | 3.6{e} (3.4 4.3 3.2){e} 5.6{e} (3.4 4.3 3.2){e} 3.6{e} (3.4 4.3 3.2){e} 2.6{e} (3.4 4.3 3.2){e} | (0.6 2.4 1.3 0.2){q} r{q} (0.6 2.4 1.3 0.2){q} r{q}"
+                title="Jazz Comping: Bass Note + Chord Voicings"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -359,19 +313,10 @@ notes :q (0/6.2/4.1/3.0/2) ## (0/6.2/4.1/3.0/2) ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Rock Arpeggio Patterns"
-                staves={[{
-                  id: 'rock-arpeggios',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 0/6 3/4 0/3 3/1 0/3 3/4 0/6 3/4 |
-notes :16 0/6 3/4 0/3 3/1 5/1 3/1 0/3 3/4 0/6 3/4 0/3 3/1 5/1 3/1 0/3 3/4 |
-notes :8 2/5 0/4 2/3 0/2 2/3 0/4 2/5 0/4`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Flowing Rock Arpeggios Across String Sets'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{e} 3.4{e} 0.3{e} 3.1{e} 0.3{e} 3.4{e} 0.6{e} 3.4{e} | 0.6{s} 3.4{s} 0.3{s} 3.1{s} 5.1{s} 3.1{s} 0.3{s} 3.4{s} 0.6{s} 3.4{s} 0.3{s} 3.1{s} 5.1{s} 3.1{s} 0.3{s} 3.4{s} | 2.5{e} 0.4{e} 2.3{e} 0.2{e} 2.3{e} 0.4{e} 2.5{e} 0.4{e}"
+                title="Flowing Rock Arpeggios Across String Sets"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">
@@ -415,19 +360,10 @@ notes :8 2/5 0/4 2/3 0/2 2/3 0/4 2/5 0/4`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Four-Finger Independence"
-                staves={[{
-                  id: 'four-finger-independence',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 0/6 0/4 0/3 0/1 0/6 0/4 0/3 0/1 0/6 0/4 0/3 0/1 0/6 0/4 0/3 0/1 |
-notes :8 (0/6.0/4.0/3.0/1) ## (0/6.0/4.0/3.0/1) ## (0/6.0/4.0/3.0/1) ## (0/6.0/4.0/3.0/1) ## |
-notes :16 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Pick (P), Middle (M), Ring (A), Pinky (C) Patterns'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="0.6{s} 0.4{s} 0.3{s} 0.1{s} 0.6{s} 0.4{s} 0.3{s} 0.1{s} 0.6{s} 0.4{s} 0.3{s} 0.1{s} 0.6{s} 0.4{s} 0.3{s} 0.1{s} | (0.6 0.4 0.3 0.1){e} r{e} (0.6 0.4 0.3 0.1){e} r{e} (0.6 0.4 0.3 0.1){e} r{e} (0.6 0.4 0.3 0.1){e} r{e} | 3.6{s} 0.4{s} 2.3{s} 0.1{s} 3.6{s} 0.4{s} 2.3{s} 0.1{s} 3.6{s} 0.4{s} 2.3{s} 0.1{s} 3.6{s} 0.4{s} 2.3{s} 0.1{s}"
+                title="Pick (P), Middle (M), Ring (A), Pinky (C) Patterns"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -462,19 +398,10 @@ notes :16 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1 3/6 0/4 2/3 0/1`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Complex Musical Integration"
-                staves={[{
-                  id: 'complex-integration',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 3/6 (0/4.2/3) :16 5/6 3/1 :8 (0/4.2/3) :16 3/6 0/1 :8 (0/4.2/3) |
-notes :16 0/6 2/4 0/3 3/1 2/6 0/4 2/3 0/1 0/6 2/4 0/3 3/1 2/6 0/4 2/3 0/1 |
-notes :8 (3/6.0/4.2/3.0/1) ## (2/6.2/4.0/3.1/1) ## (0/6.0/4.2/3.0/1) ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Complete Musical Integration: Bass, Chords, and Melody'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="3.6{e} (0.4 2.3){e} 5.6{s} 3.1{s} (0.4 2.3){e} 3.6{s} 0.1{s} (0.4 2.3){e} | 0.6{s} 2.4{s} 0.3{s} 3.1{s} 2.6{s} 0.4{s} 2.3{s} 0.1{s} 0.6{s} 2.4{s} 0.3{s} 3.1{s} 2.6{s} 0.4{s} 2.3{s} 0.1{s} | (3.6 0.4 2.3 0.1){e} r{e} (2.6 2.4 0.3 1.1){e} r{e} (0.6 0.4 2.3 0.1){e} r{e}"
+                title="Complete Musical Integration: Bass, Chords, and Melody"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">

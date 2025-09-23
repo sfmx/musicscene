@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function IonianModePage() {
@@ -105,14 +105,13 @@ export default function IonianModePage() {
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <h4 className="font-semibold text-blue-800 mb-2">C Ionian - Open Position</h4>
                   <p className="text-sm text-blue-700 mb-3">Classic open C major scale:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 3/5 0/4 2/4 3/4 | :q 0/3 2/3 0/2 1/2 | :q 3/2 1/2 0/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-blue-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function IonianModePage() {
                 <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
                   <h4 className="font-semibold text-cyan-800 mb-2">G Ionian - 3rd Position</h4>
                   <p className="text-sm text-cyan-700 mb-3">Popular key for guitar:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 3/6 5/6 2/5 3/5 | :q 5/5 2/4 4/4 2/3 | :q 4/3 2/2 4/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-semibold text-sky-800 mb-2">D Ionian - 7th Position</h4>
                   <p className="text-sm text-sky-700 mb-3">Higher register pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 10/6 12/6 9/5 10/5 | :q 12/5 9/4 11/4 9/3 | :q 11/3 9/2 11/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function IonianModePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">Exercise 1: C Major Scale</h3>
               <p className="text-blue-700 text-sm mb-3">Practice the fundamental C major scale:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 3/5 0/4 2/4 3/4 0/3 2/3 0/2 1/2 | :8 1/2 0/2 2/3 0/3 3/4 2/4 0/4 3/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
               <h3 className="text-lg font-semibold text-cyan-800 mb-3">Exercise 2: Major Scale Melody</h3>
               <p className="text-cyan-700 text-sm mb-3">Simple major scale melody in C:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/5 0/4 2/4 :q 3/4 | :q 0/3 2/3 :q 0/2 | :h 1/2 | :w 3/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
               <h3 className="text-lg font-semibold text-sky-800 mb-3">Exercise 3: Chord Tone Arpeggios</h3>
               <p className="text-sky-700 text-sm mb-3">Major triad arpeggios from the major scale:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/5 2/4 0/3 :q 1/2 | :q 1/2 0/3 :q 2/4 | :h 3/5 | :w 3/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,10 +369,10 @@ export default function IonianModePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">G Ionian - 3rd Position</h3>
               <p className="text-sm text-blue-700 mb-3">Popular guitar key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/6 5/6 2/5 3/5 5/5 | :q 2/4 4/4 2/3 | :q 4/3 2/2 4/2
                 `}
                 width={500}
@@ -390,10 +384,10 @@ export default function IonianModePage() {
             <div className="bg-cyan-50 rounded-lg p-4 border border-cyan-200">
               <h3 className="text-lg font-semibold text-cyan-800 mb-3">D Ionian - 7th Position</h3>
               <p className="text-sm text-cyan-700 mb-3">Higher register pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 10/6 12/6 9/5 10/5 12/5 | :q 9/4 11/4 9/3 | :q 11/3 9/2 11/2
                 `}
                 width={500}
@@ -405,10 +399,10 @@ export default function IonianModePage() {
             <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
               <h3 className="text-lg font-semibold text-sky-800 mb-3">A Ionian - 5th Position</h3>
               <p className="text-sm text-sky-700 mb-3">Rock and pop favorite:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 4/5 5/5 7/5 | :q 4/4 6/4 4/3 | :q 6/3 4/2 6/2
                 `}
                 width={500}
@@ -420,10 +414,10 @@ export default function IonianModePage() {
             <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
               <h3 className="text-lg font-semibold text-indigo-800 mb-3">E Ionian - Open/12th Position</h3>
               <p className="text-sm text-indigo-700 mb-3">Open position alternative:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 1/5 2/5 4/5 | :q 1/4 3/4 1/3 | :q 3/3 1/2 3/2
                 `}
                 width={500}

@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major3rdPage() {
@@ -124,10 +124,10 @@ export default function Major3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 E/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 2.4" 
+                      title="C to E Major 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-yellow-600">Bright, happy quality</p>
@@ -150,10 +150,10 @@ export default function Major3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q F/3 A/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.4 0.5" 
+                      title="F to A Major 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-orange-600">Warm, optimistic character</p>
@@ -176,10 +176,10 @@ export default function Major3rdPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 B/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6 2.5" 
+                      title="G to B Major 3rd" 
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-amber-600">Strong, confident sound</p>
@@ -202,10 +202,10 @@ export default function Major3rdPage() {
                     <p className="text-xs text-green-600 mt-2">Complete C major chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 2.4 3.3" 
+                      title="C Major Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-green-600 mt-2">C-E-G: Root, major 3rd, perfect 5th</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Major3rdPage() {
                     <p className="text-xs text-lime-600 mt-2">Complete G major chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (G/2 B/3 D/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6 2.5 2.4" 
+                      title="G Major Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-lime-600 mt-2">G-B-D: Root, major 3rd, perfect 5th</p>
                   </div>
@@ -250,10 +250,10 @@ export default function Major3rdPage() {
                     <p className="text-xs text-sky-600 mt-2">Complete D major chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 F#/3 A/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="2.3 2.4 2.5" 
+                      title="D Major Chord" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-sky-600 mt-2">D-F#-A: Root, major 3rd, perfect 5th</p>
                   </div>
@@ -276,10 +276,10 @@ export default function Major3rdPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-yellow-700 mb-2">Major 3rd Patterns</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 E/4 | F/4 A/4 | G/4 B/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 2.4 | 3.4 0.5 | 3.6 2.5" 
+                      title="Major 3rd intervals: 4 semitones apart" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-yellow-600 mt-2">Major 3rd intervals: 4 semitones apart</p>
                   </div>
@@ -296,10 +296,10 @@ export default function Major3rdPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-orange-700 mb-2">Harmonic Character</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h C/4 E/4 | :h G/4 B/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 2.4 | 3.3 2.5" 
+                      title="Major 3rds create bright, optimistic moods" 
+                      className="scale-75"
                     />
                     <p className="text-xs text-orange-600 mt-2">Major 3rds create bright, optimistic moods</p>
                   </div>

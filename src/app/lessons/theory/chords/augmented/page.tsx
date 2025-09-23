@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function AugmentedChordsPage() {
@@ -270,14 +270,9 @@ export default function AugmentedChordsPage() {
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (1/6.0/5.3/4.2/3.2/2.1/1)
-text :w,C,:w,C+,:w,F,:w,F+
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 0.3 1.2 0.1).1 | (3.5 2.4 1.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (1.6 0.5 3.4 2.3 2.2 1.1).1"
+                  title="Chromatic Ascent: C - C+ - F - F+"
                   className="mb-4"
                 />
                 
@@ -332,14 +327,9 @@ text :w,C,:w,C+,:w,F,:w,F+
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
-text :w,C,:w,A+,:w,Dm,:w,G7
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 0.3 1.2 0.1).1 | (0.5 3.4 2.3 2.2 1.1).1 | (0.4 2.3 3.2 1.1).1 | (3.6 2.5 0.4 0.3 0.2 1.1).1"
+                  title="Jazz Substitution: C - A+ - Dm - G7"
                   className="mb-4"
                 />
                 
@@ -389,14 +379,9 @@ text :w,C,:w,A+,:w,Dm,:w,G7
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (0/6.3/5.2/4.1/3.1/2.0/1) | :w (3/6.2/5.1/4.0/3.0/2.3/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1)
-text :w,C+,:w,E+,:w,G+,:w,C+
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 1.3 1.2 0.1).1 | (0.6 3.5 2.4 1.3 1.2 0.1).1 | (3.6 2.5 1.4 0.3 0.2 3.1).1 | (3.5 2.4 1.3 1.2 0.1).1"
+                  title="Symmetrical Augmented Cycle: C+ - E+ - G+ - C+"
                   className="mb-4"
                 />
                 
@@ -486,14 +471,9 @@ text :w,C+,:w,E+,:w,G+,:w,C+
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (0/6.3/5.2/4.1/3.1/2.0/1) | :w (4/6.3/5.2/4.1/3.1/2.4/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1)
-text :w,C+,:w,E+,:w,G#+,:w,C+
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 1.3 1.2 0.1).1 | (0.6 3.5 2.4 1.3 1.2 0.1).1 | (4.6 3.5 2.4 1.3 1.2 4.1).1 | (3.5 2.4 1.3 1.2 0.1).1"
+                  title="Symmetrical Cycle Exercise: C+ - E+ - G#+ - C+"
                   className="mb-4"
                 />
                 
@@ -557,14 +537,9 @@ text :w,C+,:w,E+,:w,G#+,:w,C+
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (3/5.2/4.0/3.1/2.0/1) | :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (1/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.1/5.3/4.3/3.3/2.1/1)
-text :w,C,:w,C+,:w,F,:w,F+,:w,Bb
-                  `}
-                  width={900}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 0.3 1.2 0.1).1 | (3.5 2.4 1.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (1.6 0.5 3.4 2.3 2.2 1.1).1 | (1.5 3.4 3.3 3.2 1.1).1"
+                  title="Chromatic Movement Exercise: C - C+ - F - F+ - Bb"
                   className="mb-4"
                 />
                 
@@ -620,14 +595,9 @@ text :w,C,:w,C+,:w,F,:w,F+,:w,Bb
                   </div>
                 </div>
 
-                <VexTabRenderer
-                  vextab={`
-options space=25 font-size=12
-tabstave notation=true time=4/4 key=C
-notes :w (X/6.3/5.2/4.1/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1) | :w (X/6.0/5.3/4.2/3.2/2.1/1) | :w (X/6.X/5.0/4.2/3.3/2.1/1)
-text :w,C+,:w,Dm,:w,A+,:w,Dm
-                  `}
-                  width={700}
+                <AlphaTexRenderer
+                  alphaTex="(3.5 2.4 1.3 1.2 0.1).1 | (0.4 2.3 3.2 1.1).1 | (0.5 3.4 2.3 2.2 1.1).1 | (0.4 2.3 3.2 1.1).1"
+                  title="Augmented to Minor Resolution: C+ - Dm - A+ - Dm"
                   className="mb-4"
                 />
                 

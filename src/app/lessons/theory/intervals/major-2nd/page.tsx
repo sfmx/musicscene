@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 
 export default function Major2ndPage() {
@@ -120,10 +120,10 @@ export default function Major2ndPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 D/4" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="1.4 3.4" 
+                      title="C to D"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-blue-600">Natural melodic movement</p>
@@ -146,10 +146,10 @@ export default function Major2ndPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q G/2 A/2" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.6 5.6" 
+                      title="G to A"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-green-600">Smooth scale movement</p>
@@ -172,10 +172,10 @@ export default function Major2ndPage() {
                     </div>
                   </div>
                   <div className="bg-white rounded-lg p-3 mb-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q D/3 E/3" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="0.4 2.4" 
+                      title="D to E"
+                      className="scale-75"
                     />
                   </div>
                   <p className="text-xs text-purple-600">Foundation of major scales</p>
@@ -198,10 +198,10 @@ export default function Major2ndPage() {
                     <p className="text-xs text-orange-600 mt-2">D-E-A suspended 2nd chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (D/3 E/3 A/3)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.4 2.4 0.5).1" 
+                      title="Dsus2 Chord"
+                      className="scale-75"
                     />
                     <p className="text-xs text-orange-600 mt-2">D-E-A: Root, major 2nd, perfect 5th</p>
                   </div>
@@ -222,10 +222,10 @@ export default function Major2ndPage() {
                     <p className="text-xs text-teal-600 mt-2">A-B-E suspended 2nd chord</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (A/2 B/3 E/4)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(0.5 2.4 0.1).1" 
+                      title="Asus2 Chord"
+                      className="scale-75"
                     />
                     <p className="text-xs text-teal-600 mt-2">A-B-E: Root, major 2nd, perfect 5th</p>
                   </div>
@@ -246,10 +246,10 @@ export default function Major2ndPage() {
                     <p className="text-xs text-rose-600 mt-2">C major with added 9th (D)</p>
                   </div>
                   <div className="bg-white rounded-lg p-3">
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :w (C/4 E/4 G/4 D/5)" 
-                      width={200} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="(3.5 0.4 3.6 2.3).1" 
+                      title="Cadd9 Chord"
+                      className="scale-75"
                     />
                     <p className="text-xs text-rose-600 mt-2">C-E-G-D: Major triad + 9th</p>
                   </div>
@@ -272,10 +272,10 @@ export default function Major2ndPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-blue-700 mb-2">C Major Scale Pattern</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :q C/4 D/4 E/4 F/4 | G/4 A/4 B/4 C/5" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5 5.5 2.4 3.4 | 5.4 2.3 4.3 5.3" 
+                      title="C Major Scale"
+                      className="scale-75"
                     />
                     <p className="text-xs text-blue-600 mt-2">Major 2nds: C-D, D-E, F-G, G-A, A-B</p>
                   </div>
@@ -292,10 +292,10 @@ export default function Major2ndPage() {
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4">
                     <h5 className="font-medium text-green-700 mb-2">Smooth Melodic Movement</h5>
-                    <VexTabRenderer 
-                      vextab="tabstave notation=true tablature=false\nnotes :h C/4 D/4 | :h E/4 F/4" 
-                      width={280} 
-                      scale={0.8}
+                    <AlphaTexRenderer 
+                      alphaTex="3.5.2 5.5.2 | 2.4.2 3.4.2" 
+                      title="Melodic Movement"
+                      className="scale-75"
                     />
                     <p className="text-xs text-green-600 mt-2">Natural, flowing melodic motion</p>
                   </div>

@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function BendingVibratoPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Bending & Vibrato Technique"
         subtitle="Master the expressive techniques that bring emotion and personality to your playing through controlled pitch manipulation and musical vibrato."
@@ -113,18 +111,10 @@ export default function BendingVibratoPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Half-Step Bending Exercise"
-                staves={[{
-                  id: 'half-step-bends',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 7/3 7b8/3 7/3 ## | :q 9/2 9b10/2 9/2 ## |
-notes :q 10/1 10b11/1 10/1 ## | :q ## ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Half-Step Bends: 3rd, 2nd, and 1st Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7.3 7b8.3 7.3 r | 9.2 9b10.2 9.2 r | 10.1 10b11.1 10.1 r | r r r r"
+                title="Half-Step Bends: 3rd, 2nd, and 1st Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -159,18 +149,10 @@ notes :q 10/1 10b11/1 10/1 ## | :q ## ## ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Whole-Step Bending Exercise"
-                staves={[{
-                  id: 'whole-step-bends',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4 key=G
-notes :q 7/3 7b9/3 7/3 ## | :q 8/2 8b10/2 8/2 ## |
-notes :q 8/1 8b10/1 8/1 ## | :q ## ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Whole-Step Bends: Major Scale Context'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7.3 7b9.3 7.3 r | 8.2 8b10.2 8.2 r | 8.1 8b10.1 8.1 r | r r r r"
+                title="Whole-Step Bends: Major Scale Context"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -205,18 +187,10 @@ notes :q 8/1 8b10/1 8/1 ## | :q ## ## ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Pre-Bend and Release Exercise"
-                staves={[{
-                  id: 'prebend-release',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 7b9r7/3 ## 8b10r8/2 ## | :q 8b10r8/1 ## ## ## |
-notes :q 7b9r7/3 8b10r8/2 7/3 ## | :q ## ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Pre-Bends with Releases: Descending Pitch Effects'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7b9r7.3 r 8b10r8.2 r | 8b10r8.1 r r r | 7b9r7.3 8b10r8.2 7.3 r | r r r r"
+                title="Pre-Bends with Releases: Descending Pitch Effects"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -260,18 +234,10 @@ notes :q 7b9r7/3 8b10r8/2 7/3 ## | :q ## ## ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Multiple String Bending"
-                staves={[{
-                  id: 'multiple-string-bends',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q (7/3.7/2) (7b9/3.7b9/2) (7/3.7/2) ## | :q (8/2.8/1) (8b10/2.8b10/1) (8/2.8/1) ## |
-notes :q 7/3 7b9/3 8/2 8b10/2 | :q 7/3 ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Unison and Octave Double Bends'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="(7.3 7.2) (7b9.3 7b9.2) (7.3 7.2) r | (8.2 8.1) (8b10.2 8b10.1) (8.2 8.1) r | 7.3 7b9.3 8.2 8b10.2 | 7.3 r r r"
+                title="Unison and Octave Double Bends"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -306,18 +272,10 @@ notes :q 7/3 7b9/3 8/2 8b10/2 | :q 7/3 ## ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Bend and Hold with Vibrato"
-                staves={[{
-                  id: 'bend-vibrato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 7b9v/3 ## | :h 8b10v/2 ## |
-notes :h 10b12v/1 ## | :h ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Sustained Bends with Vibrato Application'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7b9v.3{h} r{h} | 8b10v.2{h} r{h} | 10b12v.1{h} r{h} | r{h} r{h}"
+                title="Sustained Bends with Vibrato Application"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -361,18 +319,10 @@ notes :h 10b12v/1 ## | :h ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic Vibrato Exercise"
-                staves={[{
-                  id: 'basic-vibrato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :w 7v/3 | :w 10v/2 |
-notes :w 12v/1 | :w 15v/1`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Sustained Notes with Vibrato on Different Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7v.3{w} | 10v.2{w} | 12v.1{w} | 15v.1{w}"
+                title="Sustained Notes with Vibrato on Different Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">
@@ -407,18 +357,10 @@ notes :w 12v/1 | :w 15v/1`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Delayed Vibrato Exercise"
-                staves={[{
-                  id: 'delayed-vibrato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 12/1 :q 12v/1 :h 15/1 | :q 15v/1 :h. 12v/1 |
-notes :q 10/2 :q 10v/2 :h 12/2 | :q 12v/2 :h. ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Progressive Vibrato Introduction'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="12.1 12v.1 15.1{h} | 15v.1 12v.1{h.} | 10.2 10v.2 12.2{h} | 12v.2 r{h.}"
+                title="Progressive Vibrato Introduction"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -453,18 +395,10 @@ notes :q 10/2 :q 10v/2 :h 12/2 | :q 12v/2 :h. ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Vibrato Width Variations"
-                staves={[{
-                  id: 'vibrato-width',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :h 12v/1 :h 12v/1 | :h 10v/2 :h 10v/2 |
-notes :h 7v/3 :h 7v/3 | :h ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Narrow vs. Wide Vibrato Comparison'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="12v.1{h} 12v.1{h} | 10v.2{h} 10v.2{h} | 7v.3{h} 7v.3{h} | r{h} r{h}"
+                title="Narrow vs. Wide Vibrato Comparison"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">

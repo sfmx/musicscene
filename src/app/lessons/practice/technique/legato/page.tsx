@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function LegatoPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Legato Technique"
         subtitle="Master the art of smooth, connected playing through hammer-ons, pull-offs, and advanced legato combinations."
@@ -112,18 +110,10 @@ export default function LegatoPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic Hammer-On Exercise"
-                staves={[{
-                  id: 'basic-hammer-ons',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 5/6 5h7/6 5/5 5h7/5 5/4 5h7/4 5/3 5h7/3 |
-notes :q 5/2 5h7/2 5/1 5h7/1 7/6 7h9/6 7/5 7h9/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Two-Fret Hammer-Ons on All Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6 5h7.6 5.5 5h7.5 5.4 5h7.4 5.3 5h7.3 | 5.2 5h7.2 5.1 5h7.1 7.6 7h9.6 7.5 7h9.5"
+                title="Two-Fret Hammer-Ons on All Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -158,18 +148,10 @@ notes :q 5/2 5h7/2 5/1 5h7/1 7/6 7h9/6 7/5 7h9/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic Pull-Off Exercise"
-                staves={[{
-                  id: 'basic-pull-offs',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :q 7p5/6 7p5/6 7p5/5 7p5/5 7p5/4 7p5/4 7p5/3 7p5/3 |
-notes :q 7p5/2 7p5/2 7p5/1 7p5/1 9p7/6 9p7/6 9p7/5 9p7/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Two-Fret Pull-Offs on All Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="7p5.6 7p5.6 7p5.5 7p5.5 7p5.4 7p5.4 7p5.3 7p5.3 | 7p5.2 7p5.2 7p5.1 7p5.1 9p7.6 9p7.6 9p7.5 9p7.5"
+                title="Two-Fret Pull-Offs on All Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -204,18 +186,10 @@ notes :q 7p5/2 7p5/2 7p5/1 7p5/1 9p7/6 9p7/6 9p7/5 9p7/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Hammer-On Pull-Off Combinations"
-                staves={[{
-                  id: 'hammer-pull-combinations',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 5h7p5/6 5/5 5h7p5/5 5/4 5h7p5/4 5/3 5h7p5/3 |
-notes :8 5/2 5h7p5/2 5/1 5h7p5/1 7/6 7h9p7/6 7/5 7h9p7/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Three-Note Legato Groups on All Strings'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{8} 5h7p5.6{8} 5.5{8} 5h7p5.5{8} 5.4{8} 5h7p5.4{8} 5.3{8} 5h7p5.3{8} | 5.2{8} 5h7p5.2{8} 5.1{8} 5h7p5.1{8} 7.6{8} 7h9p7.6{8} 7.5{8} 7h9p7.5{8}"
+                title="Three-Note Legato Groups on All Strings"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -259,18 +233,10 @@ notes :8 5/2 5h7p5/2 5/1 5h7p5/1 7/6 7h9p7/6 7/5 7h9p7/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Four-Note Legato Exercise"
-                staves={[{
-                  id: 'four-note-legato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 5h7h9p7/6 5/5 5h7h9p7/5 5/4 5h7h9p7/4 5/3 5h7h9p7/3 |
-notes :16 5/2 5h7h9p7/2 5/1 5h7h9p7/1 7/6 7h9h10p9/6 7/5 7h9h10p9/5`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Four-Note Legato Groups: Ascending and Descending'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{16} 5h7h9p7.6{16} 5.5{16} 5h7h9p7.5{16} 5.4{16} 5h7h9p7.4{16} 5.3{16} 5h7h9p7.3{16} | 5.2{16} 5h7h9p7.2{16} 5.1{16} 5h7h9p7.1{16} 7.6{16} 7h9h10p9.6{16} 7.5{16} 7h9h10p9.5{16}"
+                title="Four-Note Legato Groups: Ascending and Descending"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -305,18 +271,10 @@ notes :16 5/2 5h7h9p7/2 5/1 5h7h9p7/1 7/6 7h9h10p9/6 7/5 7h9h10p9/5`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Scale-Based Legato Exercise"
-                staves={[{
-                  id: 'scale-legato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4 key=Am
-notes :8 5/6 5h8/6 5/5 5h7/5 5/4 5h7/4 5/3 5h7/3 |
-notes :8 5/2 5h8/2 5/1 5h8/1 8p5/1 8p5/2 7p5/3 7p5/4`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'A Minor Pentatonic with Legato Connections'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{8} 5h8.6{8} 5.5{8} 5h7.5{8} 5.4{8} 5h7.4{8} 5.3{8} 5h7.3{8} | 5.2{8} 5h8.2{8} 5.1{8} 5h8.1{8} 8p5.1{8} 8p5.2{8} 7p5.3{8} 7p5.4{8}"
+                title="A Minor Pentatonic with Legato Connections"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -351,18 +309,10 @@ notes :8 5/2 5h8/2 5/1 5h8/1 8p5/1 8p5/2 7p5/3 7p5/4`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Cross-String Legato Exercise"
-                staves={[{
-                  id: 'cross-string-legato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 5h7h9/6 7/5 7h9/5 7h9/4 7/4 7h9/3 7/3 |
-notes :16 7h9/2 7/2 7h9/1 9p7/1 9p7/2 7/2 9p7/3 7/3`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Flowing Cross-String Legato Patterns'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{16} 5h7h9.6{16} 7.5{16} 7h9.5{16} 7h9.4{16} 7.4{16} 7h9.3{16} 7.3{16} | 7h9.2{16} 7.2{16} 7h9.1{16} 9p7.1{16} 9p7.2{16} 7.2{16} 9p7.3{16} 7.3{16}"
+                title="Flowing Cross-String Legato Patterns"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">
@@ -406,18 +356,10 @@ notes :16 7h9/2 7/2 7h9/1 9p7/1 9p7/2 7/2 9p7/3 7/3`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Slides with Legato Exercise"
-                staves={[{
-                  id: 'slides-legato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 5s7h9p7/6 5/5 5s7h9p7/5 7/4 7s9h12p9/4 7/3 7s9h12p9/3 |
-notes :q 12p9s7/3 12p9s7/4 12p9s7/5 12p9s7/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Expressive Slides Combined with Hammer-Ons and Pull-Offs'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{8} 5s7h9p7.6{8} 5.5{8} 5s7h9p7.5{8} 7.4{8} 7s9h12p9.4{8} 7.3{8} 7s9h12p9.3{8} | 12p9s7.3 12p9s7.4 12p9s7.5 12p9s7.6"
+                title="Expressive Slides Combined with Hammer-Ons and Pull-Offs"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -452,18 +394,10 @@ notes :q 12p9s7/3 12p9s7/4 12p9s7/5 12p9s7/6`,
                 </div>
               </div>
               
-              <MusicScore
-                title="High-Speed Legato Runs"
-                staves={[{
-                  id: 'speed-legato',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 12/1 12h15h17h19p17p15p12/1 12/2 12h15h17h19p17p15p12/2 |
-notes :16 12/3 12h15h17h19p17p15p12/3 12/4 12h15h17h19p17p15p12/4`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Extended Legato Runs for Speed Development'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="12.1{16} 12h15h17h19p17p15p12.1{16} 12.2{16} 12h15h17h19p17p15p12.2{16} | 12.3{16} 12h15h17h19p17p15p12.3{16} 12.4{16} 12h15h17h19p17p15p12.4{16}"
+                title="Extended Legato Runs for Speed Development"
+                className="scale-75"
               />
               
               <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">

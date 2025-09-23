@@ -6,12 +6,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 
 export default function RhythmDrillsPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Rhythm Drills"
         subtitle="Develop precise timing, groove, and rhythmic accuracy with essential strumming and timing exercises."

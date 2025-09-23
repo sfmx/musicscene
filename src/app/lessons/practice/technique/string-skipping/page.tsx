@@ -4,13 +4,11 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import MusicScore from '@/components/MusicScore';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export default function StringSkippingPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="String Skipping Technique"
         subtitle="Master the advanced picking technique that creates wide interval jumps and unique melodic patterns through strategic string selection."
@@ -112,18 +110,10 @@ export default function StringSkippingPage() {
                 </div>
               </div>
               
-              <MusicScore
-                title="Basic String Skipping Exercise"
-                staves={[{
-                  id: 'basic-string-skips',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 5/4 5/6 5/4 5/6 5/4 5/6 5/4 |
-notes :8 7/5 7/3 7/5 7/3 7/5 7/3 7/5 7/3`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'One-String Skip: 6th to 4th String, 5th to 3rd String'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{e} 5.4{e} 5.6{e} 5.4{e} 5.6{e} 5.4{e} 5.6{e} 5.4{e} | 7.5{e} 7.3{e} 7.5{e} 7.3{e} 7.5{e} 7.3{e} 7.5{e} 7.3{e}"
+                title="One-String Skip: 6th to 4th String, 5th to 3rd String"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
@@ -158,18 +148,10 @@ notes :8 7/5 7/3 7/5 7/3 7/5 7/3 7/5 7/3`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Two-String Skip Exercise"
-                staves={[{
-                  id: 'two-string-skips',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 5/3 7/6 7/3 5/6 5/3 7/6 7/3 |
-notes :8 8/5 8/2 10/5 10/2 8/5 8/2 10/5 10/2`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Two-String Skip: 6th to 3rd String, 5th to 2nd String'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{e} 5.3{e} 7.6{e} 7.3{e} 5.6{e} 5.3{e} 7.6{e} 7.3{e} | 8.5{e} 8.2{e} 10.5{e} 10.2{e} 8.5{e} 8.2{e} 10.5{e} 10.2{e}"
+                title="Two-String Skip: 6th to 3rd String, 5th to 2nd String"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -204,18 +186,10 @@ notes :8 8/5 8/2 10/5 10/2 8/5 8/2 10/5 10/2`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Mixed Skip Pattern Exercise"
-                staves={[{
-                  id: 'mixed-skip-patterns',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 7/4 5/6 8/3 7/5 10/2 7/5 5/6 8/4 5/6 7/3 10/5 7/3 8/2 5/6 7/4 |
-notes :16 8/2 7/3 10/5 7/3 5/6 8/4 5/6 7/5 10/2 7/5 8/3 5/6 7/4 5/6 ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Mixed Skip Patterns: Combining One and Two-String Skips'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{s} 7.4{s} 5.6{s} 8.3{s} 7.5{s} 10.2{s} 7.5{s} 5.6{s} 8.4{s} 5.6{s} 7.3{s} 10.5{s} 7.3{s} 8.2{s} 5.6{s} 7.4{s} | 8.2{s} 7.3{s} 10.5{s} 7.3{s} 5.6{s} 8.4{s} 5.6{s} 7.5{s} 10.2{s} 7.5{s} 8.3{s} 5.6{s} 7.4{s} 5.6{s} r{e}"
+                title="Mixed Skip Patterns: Combining One and Two-String Skips"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
@@ -259,18 +233,10 @@ notes :16 8/2 7/3 10/5 7/3 5/6 8/4 5/6 7/5 10/2 7/5 8/3 5/6 7/4 5/6 ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Pentatonic String Skipping"
-                staves={[{
-                  id: 'pentatonic-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4 key=Am
-notes :8 5/6 8/4 5/6 7/3 8/5 10/2 8/5 5/6 |
-notes :8 10/2 8/5 7/3 5/6 8/4 5/6 ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'A Minor Pentatonic with String Skipping'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{e} 8.4{e} 5.6{e} 7.3{e} 8.5{e} 10.2{e} 8.5{e} 5.6{e} | 10.2{e} 8.5{e} 7.3{e} 5.6{e} 8.4{e} 5.6{e} r{q}"
+                title="A Minor Pentatonic with String Skipping"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-amber-50 rounded-lg p-4 border border-amber-200">
@@ -305,18 +271,10 @@ notes :8 10/2 8/5 7/3 5/6 8/4 5/6 ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Diatonic Scale Skipping"
-                staves={[{
-                  id: 'diatonic-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4 key=G
-notes :16 3/6 5/4 5/6 7/4 7/6 9/4 9/6 10/4 10/6 12/4 12/6 14/4 14/6 15/4 15/6 17/4 |
-notes :16 17/4 15/6 15/4 14/6 14/4 12/6 12/4 10/6 10/4 9/6 9/4 7/6 7/4 5/6 5/4 3/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'G Major Scale with String Skipping Patterns'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="3.6{s} 5.4{s} 5.6{s} 7.4{s} 7.6{s} 9.4{s} 9.6{s} 10.4{s} 10.6{s} 12.4{s} 12.6{s} 14.4{s} 14.6{s} 15.4{s} 15.6{s} 17.4{s} | 17.4{s} 15.6{s} 15.4{s} 14.6{s} 14.4{s} 12.6{s} 12.4{s} 10.6{s} 10.4{s} 9.6{s} 9.4{s} 7.6{s} 7.4{s} 5.6{s} 5.4{s} 3.6{s}"
+                title="G Major Scale with String Skipping Patterns"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-red-50 rounded-lg p-4 border border-red-200">
@@ -351,18 +309,10 @@ notes :16 17/4 15/6 15/4 14/6 14/4 12/6 12/4 10/6 10/4 9/6 9/4 7/6 7/4 5/6 5/4 3
                 </div>
               </div>
               
-              <MusicScore
-                title="Arpeggiated String Skipping"
-                staves={[{
-                  id: 'arpeggio-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :8 5/6 8/4 7/5 10/3 10/6 13/4 12/5 15/3 |
-notes :8 15/6 17/4 17/5 20/3 20/6 ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Jazz Chord Progression with Arpeggiated String Skipping'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{e} 8.4{e} 7.5{e} 10.3{e} 10.6{e} 13.4{e} 12.5{e} 15.3{e} | 15.6{e} 17.4{e} 17.5{e} 20.3{e} 20.6{e} r{e.}"
+                title="Jazz Chord Progression with Arpeggiated String Skipping"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-indigo-50 rounded-lg p-4 border border-indigo-200">
@@ -406,18 +356,10 @@ notes :8 15/6 17/4 17/5 20/3 20/6 ## ## ##`,
                 </div>
               </div>
               
-              <MusicScore
-                title="Chromatic String Skipping"
-                staves={[{
-                  id: 'chromatic-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 5/6 6/4 7/6 8/4 9/6 10/4 11/6 12/4 13/6 14/4 15/6 16/4 17/6 18/4 19/6 20/4 |
-notes :16 20/4 19/6 18/4 17/6 16/4 15/6 14/4 13/6 12/4 11/6 10/4 9/6 8/4 7/6 6/4 5/6`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'Chromatic Ascending and Descending with String Skipping'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="5.6{s} 6.4{s} 7.6{s} 8.4{s} 9.6{s} 10.4{s} 11.6{s} 12.4{s} 13.6{s} 14.4{s} 15.6{s} 16.4{s} 17.6{s} 18.4{s} 19.6{s} 20.4{s} | 20.4{s} 19.6{s} 18.4{s} 17.6{s} 16.4{s} 15.6{s} 14.4{s} 13.6{s} 12.4{s} 11.6{s} 10.4{s} 9.6{s} 8.4{s} 7.6{s} 6.4{s} 5.6{s}"
+                title="Chromatic Ascending and Descending with String Skipping"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-cyan-50 rounded-lg p-4 border border-cyan-200">
@@ -452,18 +394,10 @@ notes :16 20/4 19/6 18/4 17/6 16/4 15/6 14/4 13/6 12/4 11/6 10/4 9/6 8/4 7/6 6/4
                 </div>
               </div>
               
-              <MusicScore
-                title="High-Speed String Skipping"
-                staves={[{
-                  id: 'speed-skipping',
-                  notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
-notes :16 12/6 12/4 12/6 12/4 15/6 15/4 15/6 15/4 17/6 17/4 17/6 17/4 19/6 19/4 19/6 19/4 |
-notes :16 19/4 19/6 17/4 17/6 15/4 15/6 12/4 12/6 ## ## ## ## ## ## ## ##`,
-                  width: 550,
-                  scale: 1.0,
-                  title: 'High-Speed Repetitive String Skipping Pattern'
-                }]}
+              <AlphaTexRenderer
+                alphaTex="12.6{s} 12.4{s} 12.6{s} 12.4{s} 15.6{s} 15.4{s} 15.6{s} 15.4{s} 17.6{s} 17.4{s} 17.6{s} 17.4{s} 19.6{s} 19.4{s} 19.6{s} 19.4{s} | 19.4{s} 19.6{s} 17.4{s} 17.6{s} 15.4{s} 15.6{s} 12.4{s} 12.6{s} r{h}"
+                title="High-Speed Repetitive String Skipping Pattern"
+                className="scale-90"
               />
               
               <div className="mt-6 bg-orange-50 rounded-lg p-4 border border-orange-200">

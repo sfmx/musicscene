@@ -1,0 +1,348 @@
+{
+  "scaleInfo": {
+    "name": "Blues Scale",
+    "alternateName": "Minor Blues Scale",
+    "scaleType": "Hexatonic",
+    "noteCount": 6,
+    "intervalPattern": "1-♭3-4-♭5-5-♭7",
+    "character": "Gritty, emotional, soulful",
+    "mood": ["gritty", "emotional", "soulful", "raw", "bluesy"]
+  },
+  "theory": {
+    "intervalsFromRoot": "Root - Minor 3rd - Perfect 4th - Tritone - Perfect 5th - Minor 7th",
+    "scaleDegrees": ["1", "♭3", "4", "♭5", "5", "♭7"],
+    "mode": "Based on Minor Pentatonic",
+    "relativeScale": {
+      "name": "Minor Pentatonic",
+      "relationship": "Blues scale = Minor Pentatonic + blue note (♭5)",
+      "intervalDistance": "Same root, adds tritone"
+    },
+    "parallelScale": {
+      "name": "Major Blues",
+      "differences": ["Uses major pentatonic + ♭3 blue note instead of minor pentatonic + ♭5"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "A Blues",
+      "notes": "A - C - D - D#/E♭ - E - G",
+      "keySignature": "No key signature",
+      "accidentals": "D# (blue note)",
+      "commonUse": "Most common blues key for guitar"
+    },
+    {
+      "key": "E Blues",
+      "notes": "E - G - A - A#/B♭ - B - D",
+      "keySignature": "No key signature", 
+      "accidentals": "A# (blue note)",
+      "commonUse": "Great for beginners, uses open strings"
+    },
+    {
+      "key": "G Blues",
+      "notes": "G - B♭ - C - C#/D♭ - D - F",
+      "keySignature": "1 flat",
+      "accidentals": "C# (blue note)",
+      "commonUse": "Popular key for rock and blues"
+    },
+    {
+      "key": "C Blues",
+      "notes": "C - E♭ - F - F#/G♭ - G - B♭",
+      "keySignature": "3 flats",
+      "accidentals": "F# (blue note)",
+      "commonUse": "Higher register, great for leads"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "5th Fret (A Blues)",
+        "description": "Box 1 - Most common blues position",
+        "fretDiagram": "Most fundamental blues scale pattern",
+        "alphaTex": "5.6 8.6 5.5 7.5 5.4 6.4 7.4 5.3 7.3 5.2 8.2",
+        "applications": ["Lead guitar", "Rock solos", "Blues improvisation", "Beginner friendly"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "Extended Pattern",
+        "description": "Two octave range for fuller leads",
+        "fretDiagram": "Extended range blues pattern",
+        "alphaTex": "5.6 8.6 5.5 7.5 5.4 6.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 5.2 8.2 7.3 5.3",
+        "applications": ["Advanced solos", "Full range improvisation", "Rock leads"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "Open Position (E Blues)",
+        "description": "Great for beginners using open strings",
+        "fretDiagram": "Beginner-friendly open position",
+        "alphaTex": "0.6 3.6 0.5 2.5 0.4 1.4 2.4 0.3 2.3 0.2 3.2",
+        "applications": ["Beginner practice", "Acoustic blues", "Open string techniques"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "5th Fret",
+        "frets": "5-8",
+        "difficulty": "Beginner",
+        "usage": "Primary blues scale position"
+      },
+      {
+        "position": "Open Position", 
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Great starting point for new players"
+      },
+      {
+        "position": "8th-10th Fret",
+        "frets": "8-12",
+        "difficulty": "Intermediate",
+        "usage": "Higher register leads and solos"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Tonic",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "♭III",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Relative Major",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "iv",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Subdominant",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "v",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Minor Dominant",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "♭VII",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Subtonic",
+        "notes": "G - B - D"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "12-Bar Blues",
+        "chords": ["A7", "A7", "A7", "A7", "D7", "D7", "A7", "A7", "E7", "D7", "A7", "E7"],
+        "romanNumerals": "I7 - I7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+        "description": "Classic 12-bar blues progression",
+        "genre": "Blues",
+        "alphaTex": "(5.6 8.6 5.5) (5.6 8.6 5.5) (10.6 13.6 10.5) (5.6 8.6 5.5)"
+      },
+      {
+        "name": "Rock Progression",
+        "chords": ["Am", "F", "C", "G"],
+        "romanNumerals": "i - ♭VI - ♭III - ♭VII",
+        "description": "Common rock progression using blues scale",
+        "genre": "Rock"
+      },
+      {
+        "name": "Minor Blues",
+        "chords": ["Am", "Am", "Am", "Am", "Dm", "Dm", "Am", "Am", "Em", "Dm", "Am", "Am"],
+        "romanNumerals": "i - i - i - i - iv - iv - i - i - v - iv - i - i",
+        "description": "Minor key blues progression",
+        "genre": "Blues"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Blues",
+      "usage": "Foundation scale for all blues styles",
+      "characteristics": ["Blue note bending", "Call and response", "Emotional expression", "String vibrato"],
+      "examples": ["B.B. King", "Muddy Waters", "Robert Johnson"]
+    },
+    {
+      "genre": "Rock",
+      "usage": "Primary scale for rock guitar solos",
+      "characteristics": ["Power chord backing", "Distorted tones", "Aggressive bending", "High energy"],
+      "examples": ["Black Sabbath", "Led Zeppelin", "Deep Purple"]
+    },
+    {
+      "genre": "Hard Rock",
+      "usage": "Drives heavy rock riffs and solos",
+      "characteristics": ["Heavy distortion", "Palm muting", "Chromatic approaches", "Power chord emphasis"],
+      "examples": ["AC/DC", "Guns N' Roses", "Aerosmith"]
+    },
+    {
+      "genre": "Southern Rock",
+      "usage": "Signature sound of Southern rock",
+      "characteristics": ["Dual guitar harmonies", "Slide guitar", "Country inflections", "Storytelling"],
+      "examples": ["Lynyrd Skynyrd", "The Allman Brothers", "ZZ Top"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "The Thrill Is Gone",
+      "artist": "B.B. King",
+      "key": "B minor blues",
+      "genre": "Blues",
+      "usage": "Masterful use of blues scale with bending",
+      "difficulty": "Intermediate",
+      "learningValue": "Blue notes create emotional expression"
+    },
+    {
+      "title": "Mannish Boy", 
+      "artist": "Muddy Waters",
+      "key": "E blues",
+      "genre": "Electric Blues",
+      "usage": "Classic electric blues riff",
+      "difficulty": "Beginner",
+      "learningValue": "Simple but powerful blues scale usage"
+    },
+    {
+      "title": "Cross Road Blues",
+      "artist": "Robert Johnson", 
+      "key": "A blues",
+      "genre": "Delta Blues",
+      "usage": "Delta blues foundation",
+      "difficulty": "Intermediate",
+      "learningValue": "Acoustic blues scale applications"
+    },
+    {
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "key": "E blues",
+      "genre": "Heavy Metal",
+      "usage": "Heavy rock riffs from blues scale",
+      "difficulty": "Intermediate", 
+      "learningValue": "Blues scale drives hard rock"
+    },
+    {
+      "title": "Black Dog",
+      "artist": "Led Zeppelin",
+      "key": "A blues",
+      "genre": "Hard Rock",
+      "usage": "Blues-rock fusion mastery",
+      "difficulty": "Advanced",
+      "learningValue": "Complex rhythms with blues scale"
+    },
+    {
+      "title": "Pride and Joy",
+      "artist": "Stevie Ray Vaughan",
+      "key": "E blues",
+      "genre": "Blues Rock",
+      "usage": "Modern blues guitar virtuosity", 
+      "difficulty": "Advanced",
+      "learningValue": "Technical precision with blues scale"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "Basic Blues Scale",
+      "type": "Scale Practice",
+      "difficulty": "Beginner",
+      "description": "Practice the A blues scale ascending and descending",
+      "alphaTex": "5.6 8.6 5.5 7.5 5.4 6.4 7.4 5.3 7.3 5.2 8.2 7.3 5.3 7.4 6.4 5.4 7.5 5.5 8.6 5.6",
+      "tempo": "60-120 BPM",
+      "focus": ["Finger positioning", "String crossing", "Rhythm accuracy"],
+      "instructions": ["Start slowly with metronome", "Focus on clean notes", "Practice ascending and descending", "Memorize fret positions"]
+    },
+    {
+      "name": "Blue Note Focus",
+      "type": "Technique",
+      "difficulty": "Intermediate", 
+      "description": "Practice emphasizing the blue note (♭5)",
+      "alphaTex": "5.6 6.4 7.4 6.4 5.6 6.4 7.4 8.2 5.6 6.4 5.6",
+      "tempo": "80-140 BPM",
+      "focus": ["Blue note emphasis", "String bending", "Vibrato control"],
+      "instructions": ["Bend blue note slightly sharp", "Add vibrato to sustained notes", "Practice resolving to natural 5th", "Listen to pitch carefully"]
+    },
+    {
+      "name": "Classic Blues Lick",
+      "type": "Licks & Phrases",
+      "difficulty": "Intermediate",
+      "description": "Essential blues lick pattern using blues scale",
+      "alphaTex": "8.6 5.5 7.5 6.4 7.4 5.3 7.3 5.2",
+      "tempo": "100-160 BPM",
+      "focus": ["Phrasing", "Articulation", "Musical expression"],
+      "instructions": ["Practice with feeling", "Add slight bends", "Use hammer-ons and pull-offs", "Vary the rhythm"]
+    },
+    {
+      "name": "Box Pattern Connection",
+      "type": "Advanced Technique",
+      "difficulty": "Advanced",
+      "description": "Connect different blues scale positions",
+      "tempo": "80-130 BPM",
+      "focus": ["Position shifts", "Fretboard knowledge", "Smooth transitions"],
+      "instructions": ["Practice position changes slowly", "Keep smooth legato", "Memorize connecting notes", "Build muscle memory"]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Minor Pentatonic",
+      "relationship": "Parent Scale",
+      "differences": "Blues scale adds the blue note (♭5)",
+      "usage": "Foundation scale - remove blue note for cleaner sound"
+    },
+    {
+      "scale": "Major Blues", 
+      "relationship": "Parallel Mode",
+      "differences": "Uses major pentatonic + ♭3 blue note instead",
+      "usage": "Brighter but still bluesy alternative"
+    },
+    {
+      "scale": "Natural Minor",
+      "relationship": "Extended Scale",
+      "differences": "Contains all blues scale notes plus 2nd and 6th",
+      "usage": "Fuller melodic options with blues scale subset"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Modal Alternative", 
+      "differences": "Natural minor with raised 6th - no blue note",
+      "usage": "Jazzy alternative to blues scale"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Beginner to Intermediate",
+    "prerequisites": ["Basic guitar technique", "Minor pentatonic scale", "Basic bending technique"],
+    "nextSteps": ["Major blues scale", "Full minor scale", "Blues chord progressions", "Advanced bending techniques"],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation",
+        "duration": "2-3 weeks",
+        "focus": "Learn basic box pattern and blue note location",
+        "exercises": ["Basic scale runs", "Blue note identification", "Simple bends"]
+      },
+      {
+        "phase": "Development", 
+        "duration": "4-6 weeks",
+        "focus": "Develop bending technique and basic licks",
+        "exercises": ["String bending accuracy", "Classic blues licks", "12-bar blues jamming"]
+      },
+      {
+        "phase": "Application",
+        "duration": "8+ weeks", 
+        "focus": "Musical application and expression",
+        "exercises": ["Improvisation over blues", "Learn famous solos", "Create original licks"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "blues",
+    "tags": ["essential", "beginner-friendly", "rock", "blues", "pentatonic", "bending"],
+    "category": "essential",
+    "subcategory": "pentatonic-based",
+    "lastUpdated": "2025-08-06",
+    "sources": ["Traditional blues theory", "Guitar method books", "Blues masters analysis"]
+  }
+}

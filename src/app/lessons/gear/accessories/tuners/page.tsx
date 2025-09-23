@@ -220,7 +220,7 @@ export default function TunersPage() {
                 <li>• <strong>±3 cents:</strong> Very good accuracy</li>
                 <li>• <strong>±5 cents:</strong> Acceptable for most uses</li>
                 <li>• <strong>±10 cents:</strong> Noticeable but usable</li>
-                <li>• <strong>>10 cents:</strong> Obviously out of tune</li>
+                <li>• <strong>&gt;10 cents:</strong> Obviously out of tune</li>
               </ul>
             </div>
             <div>

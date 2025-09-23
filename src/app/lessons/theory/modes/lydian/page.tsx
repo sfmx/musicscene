@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function LydianModePage() {
@@ -105,14 +105,13 @@ export default function LydianModePage() {
                 <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                   <h4 className="font-semibold text-purple-800 mb-2">F Lydian - 1st Position</h4>
                   <p className="text-sm text-purple-700 mb-3">Natural fingering emphasizing #4:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 1/6 3/6 5/6 1/5 3/5 | :q 0/4 2/4 0/3 2/3 0/2 | :q 1/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-purple-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function LydianModePage() {
                 <div className="bg-violet-50 rounded-lg p-4 border border-violet-200">
                   <h4 className="font-semibold text-violet-800 mb-2">C Lydian - 8th Position</h4>
                   <p className="text-sm text-violet-700 mb-3">Higher register pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 8/6 10/6 12/6 8/5 10/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
                   <h4 className="font-semibold text-indigo-800 mb-2">G Lydian - 3rd Position</h4>
                   <p className="text-sm text-indigo-700 mb-3">Alternative fingering pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 3/6 5/6 7/6 3/5 5/5 | :q 2/4 4/4 2/3 4/3 2/2 | :q 3/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function LydianModePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 1: F Lydian Scale</h3>
               <p className="text-purple-700 text-sm mb-3">Practice the F lydian scale - feel the #4 interval:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 1/6 3/6 5/6 1/5 3/5 0/4 2/4 0/3 | :8 0/3 2/4 0/4 3/5 1/5 5/6 3/6 1/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-violet-50 rounded-lg p-4 border border-violet-200">
               <h3 className="text-lg font-semibold text-violet-800 mb-3">Exercise 2: Lydian Sequences</h3>
               <p className="text-violet-700 text-sm mb-3">Practice lydian in thirds to hear the floating character:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 1/6 5/6 3/6 1/5 5/6 3/5 1/5 0/4 | :8 3/5 2/4 0/4 0/3 2/4 2/3 0/3 0/2
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
               <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 3: Dreamy Melody</h3>
               <p className="text-indigo-700 text-sm mb-3">Simple ethereal phrase emphasizing #4:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 1/6 5/6 :h 2/4 :q 0/3 | :q 2/3 0/2 :h 1/2 | :q 2/4 0/3 :h 3/5 | :q 1/6 :w 1/6
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,10 +369,10 @@ export default function LydianModePage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">C Lydian - 8th Position</h3>
               <p className="text-sm text-green-700 mb-3">Higher register pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 8/6 10/6 12/6 8/5 10/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2
                 `}
                 width={500}
@@ -390,10 +384,10 @@ export default function LydianModePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">G Lydian - 3rd Position</h3>
               <p className="text-sm text-blue-700 mb-3">Common rock key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/6 5/6 7/6 3/5 5/5 | :q 2/4 4/4 2/3 4/3 2/2 | :q 3/2
                 `}
                 width={500}
@@ -405,10 +399,10 @@ export default function LydianModePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">D Lydian - 10th Position</h3>
               <p className="text-sm text-purple-700 mb-3">Alternative fingering:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 10/6 12/6 14/6 10/5 12/5 | :q 9/4 11/4 9/3 11/3 9/2 | :q 10/2
                 `}
                 width={500}
@@ -420,10 +414,10 @@ export default function LydianModePage() {
             <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <h3 className="text-lg font-semibold text-orange-800 mb-3">A Lydian - 5th Position</h3>
               <p className="text-sm text-orange-700 mb-3">Alternative pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 9/6 5/5 7/5 | :q 4/4 6/4 4/3 6/3 4/2 | :q 5/2
                 `}
                 width={500}

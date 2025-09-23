@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabRenderer from '@/components/VexTabRenderer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -302,8 +302,8 @@ export default function IVviIVProgressionPage() {
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-4">Basic I-V-vi-IV Progression in C Major</h3>
               <div className="bg-gray-50 rounded-lg p-4">
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
                     tabstave notation=true key=C time=4/4
                     notes :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1) | :w (0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1)
                     text ++,.1,I (C),:++,.2,V (G),:++,.3,vi (Am),:++,.4,IV (F)
@@ -315,8 +315,8 @@ export default function IVviIVProgressionPage() {
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-4">vi-IV-I-V Variation (Emotional Start)</h3>
               <div className="bg-gray-50 rounded-lg p-4">
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
                     tabstave notation=true key=C time=4/4
                     notes :w (0/5.2/4.2/3.1/2.0/1) | :w (1/6.3/5.3/4.2/3.1/2.1/1) | :w (3/5.3/4.2/3.1/2.0/1) | :w (3/6.2/5.0/4.0/3.3/2.3/1)
                     text ++,.1,vi (Am),:++,.2,IV (F),:++,.3,I (C),:++,.4,V (G)
@@ -328,8 +328,8 @@ export default function IVviIVProgressionPage() {
             <div>
               <h3 className="text-lg font-medium text-gray-800 mb-4">With Seventh Chords</h3>
               <div className="bg-gray-50 rounded-lg p-4">
-                <VexTabRenderer
-                  vextab={`
+                <AlphaTexRenderer
+                  alphaTex={`
                     tabstave notation=true key=C time=4/4
                     notes :w (x/6.3/5.2/4.0/3.0/2.x/1) | :w (3/6.x/5.0/4.0/3.0/2.1/1) | :w (x/6.0/5.2/4.0/3.1/2.x/1) | :w (1/6.x/5.2/4.1/3.0/2.x/1)
                     text ++,.1,Cmaj7,:++,.2,G7,:++,.3,Am7,:++,.4,Fmaj7

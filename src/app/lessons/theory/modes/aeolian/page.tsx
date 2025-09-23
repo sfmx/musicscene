@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function AeolianModePage() {
@@ -105,14 +105,13 @@ export default function AeolianModePage() {
                 <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
                   <h4 className="font-semibold text-indigo-800 mb-2">A Aeolian - Open Position</h4>
                   <p className="text-sm text-indigo-700 mb-3">Natural fingering with open strings:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/5 2/5 3/5 0/4 2/4 | :q 0/3 1/3 3/3 0/2 1/2 | :q 3/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-indigo-600 font-medium mb-1">Pattern Notes:</p>
@@ -128,28 +127,26 @@ export default function AeolianModePage() {
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <h4 className="font-semibold text-blue-800 mb-2">E Aeolian - Open Position</h4>
                   <p className="text-sm text-blue-700 mb-3">Alternative natural fingering:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/6 2/6 3/6 0/5 2/5 | :q 0/4 2/4 0/3 2/3 0/2 | :q 1/2 3/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
                   <h4 className="font-semibold text-slate-800 mb-2">D Aeolian - 5th Position</h4>
                   <p className="text-sm text-slate-700 mb-3">Barre chord position pattern:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 5/5 7/5 8/5 5/4 7/4 | :q 5/3 6/3 8/3 5/2 6/2 | :q 8/2
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -286,42 +283,39 @@ export default function AeolianModePage() {
             <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
               <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 1: A Aeolian Scale</h3>
               <p className="text-indigo-700 text-sm mb-3">Practice the A aeolian scale - feel the emotional character:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/5 2/5 3/5 0/4 2/4 0/3 1/3 3/3 | :8 3/3 1/3 0/3 2/4 0/4 3/5 2/5 0/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">Exercise 2: Minor Scale Sequences</h3>
               <p className="text-blue-700 text-sm mb-3">Practice aeolian in thirds to hear the minor character:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/5 3/5 2/5 0/4 3/5 2/4 0/4 1/3 | :8 2/4 3/3 0/3 0/2 1/3 1/2 3/3 3/2
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 3: Emotional Melody</h3>
               <p className="text-purple-700 text-sm mb-3">Simple emotional phrase in A minor:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/5 3/5 :h 1/3 :q 0/3 | :q 3/3 0/2 :h 1/2 | :q 3/3 1/3 :h 0/4 | :q 2/5 0/5 :w 0/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -375,10 +369,10 @@ export default function AeolianModePage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">E Aeolian - Open Position</h3>
               <p className="text-sm text-green-700 mb-3">Natural guitar key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 3/6 0/5 2/5 | :q 0/4 2/4 0/3 2/3 0/2 | :q 1/2 3/2
                 `}
                 width={500}
@@ -390,10 +384,10 @@ export default function AeolianModePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">D Aeolian - 5th Position</h3>
               <p className="text-sm text-blue-700 mb-3">Common rock key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 5/5 7/5 8/5 5/4 7/4 | :q 5/3 6/3 8/3 5/2 6/2 | :q 8/2
                 `}
                 width={500}
@@ -405,10 +399,10 @@ export default function AeolianModePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">F# Aeolian - 2nd Position</h3>
               <p className="text-sm text-purple-700 mb-3">Alternative fingering:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 2/6 4/6 5/6 2/5 4/5 | :q 2/4 3/4 5/4 2/3 3/3 | :q 5/3
                 `}
                 width={500}
@@ -420,10 +414,10 @@ export default function AeolianModePage() {
             <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <h3 className="text-lg font-semibold text-orange-800 mb-3">B Aeolian - 7th Position</h3>
               <p className="text-sm text-orange-700 mb-3">Higher register pattern:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 7/6 9/6 10/6 7/5 9/5 | :q 7/4 8/4 10/4 7/3 8/3 | :q 10/3
                 `}
                 width={500}

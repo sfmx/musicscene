@@ -6,12 +6,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
-import VexTabScriptLoader from '@/components/VexTabScriptLoader';
 
 export default function ChordChangesPage() {
   return (
     <Layout>
-      <VexTabScriptLoader />
       <Header
         title="Chord Changes"
         subtitle="Master smooth and musical transitions between chords with precision and timing."

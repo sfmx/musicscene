@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { VexTab } from '@/components/VexTab';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import Link from 'next/link';
 
 export default function HarmonicMinorScalePage() {
@@ -106,14 +106,13 @@ export default function HarmonicMinorScalePage() {
                 <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                   <h4 className="font-semibold text-purple-800 mb-2">A Harmonic Minor - Open Position</h4>
                   <p className="text-sm text-purple-700 mb-3">Natural guitar key with open strings:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/5 2/5 3/5 0/4 | :q 2/4 3/4 0/3 1/3 | :q 4/3 1/3 0/3 3/4 | :q 2/4 0/4 3/5 2/5 0/5
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                   <div className="mt-3">
                     <p className="text-xs text-purple-600 font-medium mb-1">Pattern Notes:</p>
@@ -129,28 +128,26 @@ export default function HarmonicMinorScalePage() {
                 <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
                   <h4 className="font-semibold text-indigo-800 mb-2">E Harmonic Minor - Open Position</h4>
                   <p className="text-sm text-indigo-700 mb-3">Another natural guitar key:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 0/6 2/6 3/6 0/5 | :q 2/5 3/5 0/4 1/4 | :q 4/4 1/4 0/4 3/5 | :q 2/5 0/5 3/6 2/6 0/6
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
                 
                 <div className="bg-violet-50 rounded-lg p-4 border border-violet-200">
                   <h4 className="font-semibold text-violet-800 mb-2">D Harmonic Minor - 5th Position</h4>
                   <p className="text-sm text-violet-700 mb-3">Higher position for lead work:</p>
-                  <VexTab 
-                    notation={`
+                  <AlphaTexRenderer 
+                    alphaTex={`
                       options space=20 font-size=14
-                      tabstave notation=true time=4/4
+                      tabstave alphaTex=true time=4/4
                       notes :q 5/5 7/5 8/5 5/4 | :q 7/4 8/4 5/3 6/3 | :q 9/3 6/3 5/3 8/4 | :q 7/4 5/4 8/5 7/5 5/5
                     `}
-                    width={500}
-                    scale={0.8}
+                    className="scale-75"
                   />
                 </div>
               </div>
@@ -287,42 +284,39 @@ export default function HarmonicMinorScalePage() {
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <h3 className="text-lg font-semibold text-purple-800 mb-3">Exercise 1: A Harmonic Minor Scale</h3>
               <p className="text-purple-700 text-sm mb-3">Practice the A harmonic minor scale with emphasis on the augmented 2nd:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/5 2/5 3/5 0/4 2/4 3/4 0/3 4/3 | :8 4/3 0/3 3/4 2/4 0/4 3/5 2/5 0/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-indigo-50 rounded-lg p-4 border border-indigo-200">
               <h3 className="text-lg font-semibold text-indigo-800 mb-3">Exercise 2: Augmented 2nd Focus</h3>
               <p className="text-indigo-700 text-sm mb-3">Isolate and practice the characteristic augmented 2nd interval:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 3/4 4/3 :h 4/3 :q 3/4 | :q 3/5 4/3 :h 4/3 :q 3/5 | :q 0/4 4/3 :h 4/3 :q 0/4 | :w 0/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
             
             <div className="bg-violet-50 rounded-lg p-4 border border-violet-200">
               <h3 className="text-lg font-semibold text-violet-800 mb-3">Exercise 3: Classical Arpeggio</h3>
               <p className="text-violet-700 text-sm mb-3">Practice broken chord patterns in harmonic minor:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :8 0/5 3/5 2/4 4/3 3/5 2/4 4/3 0/3 | :8 4/3 2/4 3/5 4/3 2/4 3/5 0/5 | :w 0/5
                 `}
-                width={550}
-                scale={0.9}
+                className="scale-75"
               />
             </div>
           </div>
@@ -376,14 +370,13 @@ export default function HarmonicMinorScalePage() {
             <div className="bg-red-50 rounded-lg p-4 border border-red-200">
               <h3 className="text-lg font-semibold text-red-800 mb-3">E Harmonic Minor - Open Position</h3>
               <p className="text-sm text-red-700 mb-3">Natural guitar key:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 3/6 0/5 | :q 2/5 3/5 0/4 4/4 | :q 4/4 0/4 3/5 2/5 | :q 0/5 3/6 2/6 0/6
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-red-600 mt-2">Notes: E-F#-G-A-B-C-D#-E</p>
             </div>
@@ -391,14 +384,13 @@ export default function HarmonicMinorScalePage() {
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">B Harmonic Minor - 7th Position</h3>
               <p className="text-sm text-blue-700 mb-3">Higher position for lead:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 7/6 9/6 10/6 7/5 | :q 9/5 10/5 7/4 10/4 | :q 10/4 7/4 10/5 9/5 | :q 7/5 10/6 9/6 7/6
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: B-C#-D-E-F#-G-A#-B</p>
             </div>
@@ -406,14 +398,13 @@ export default function HarmonicMinorScalePage() {
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <h3 className="text-lg font-semibold text-green-800 mb-3">F# Harmonic Minor - 2nd Position</h3>
               <p className="text-sm text-green-700 mb-3">Alternative fingering:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 2/6 4/6 5/6 2/5 | :q 4/5 5/5 2/4 5/4 | :q 5/4 2/4 5/5 4/5 | :q 2/5 5/6 4/6 2/6
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: F#-G#-A-B-C#-D-E#-F#</p>
             </div>
@@ -421,14 +412,13 @@ export default function HarmonicMinorScalePage() {
             <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
               <h3 className="text-lg font-semibold text-yellow-800 mb-3">C Harmonic Minor - 8th Position</h3>
               <p className="text-sm text-yellow-700 mb-3">Classical position:</p>
-              <VexTab 
-                notation={`
+              <AlphaTexRenderer 
+                alphaTex={`
                   options space=20 font-size=14
-                  tabstave notation=true time=4/4
+                  tabstave alphaTex=true time=4/4
                   notes :q 8/6 10/6 11/6 8/5 | :q 10/5 11/5 8/4 11/4 | :q 11/4 8/4 11/5 10/5 | :q 8/5 11/6 10/6 8/6
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-yellow-600 mt-2">Notes: C-D-E♭-F-G-A♭-B-C</p>
             </div>

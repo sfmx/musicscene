@@ -22,6 +22,21 @@ interface ChordProgressionVisualizationProps {
   };
 }
 
+// Utility function to remove consecutive duplicate chords while preserving order
+const removeConsecutiveDuplicates = (chords: string[]): string[] => {
+  if (chords.length === 0) return [];
+  
+  const result = [chords[0]];
+  for (let i = 1; i < chords.length; i++) {
+    const currentChord = chords[i].trim();
+    const previousChord = chords[i - 1].trim();
+    if (currentChord !== previousChord) {
+      result.push(chords[i]);
+    }
+  }
+  return result;
+};
+
 export default function ChordProgressionVisualization({ songData }: ChordProgressionVisualizationProps) {
   // Check if the required data exists
   if (!songData.musicalAnalysis || !songData.musicalAnalysis.chordProgressions) {
@@ -64,8 +79,9 @@ export default function ChordProgressionVisualization({ songData }: ChordProgres
 
         {/* Chord Diagrams */}
         <div>
+          <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
-            {mainProgression.chords.map((chord, index) => (
+            {removeConsecutiveDuplicates(mainProgression.chords).map((chord, index) => (
               <div key={index} className="text-center w-full">
                 <SimpleFretboardDiagram chord={chord} />
                 <p className="mt-2 text-sm font-medium text-gray-700">{chord}</p>
@@ -100,17 +116,20 @@ export default function ChordProgressionVisualization({ songData }: ChordProgres
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
-                  {section.progression.split(' - ').map((chord, chordIndex) => {
-                    // Extract chord name (remove any extra formatting)
-                    const cleanChord = chord.trim();
-                    return (
-                      <div key={chordIndex} className="text-center w-full">
-                        <SimpleFretboardDiagram chord={cleanChord} />
-                        <p className="text-xs mt-2 text-gray-600">{cleanChord}</p>
-                      </div>
-                    );
-                  })}
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
+                    {removeConsecutiveDuplicates(section.progression.split(' - ')).map((chord, chordIndex) => {
+                      // Extract chord name (remove any extra formatting)
+                      const cleanChord = chord.trim();
+                      return (
+                        <div key={chordIndex} className="text-center w-full">
+                          <SimpleFretboardDiagram chord={cleanChord} />
+                          <p className="text-xs mt-2 text-gray-600">{cleanChord}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             ))}

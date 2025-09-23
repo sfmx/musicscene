@@ -5,17 +5,35 @@ import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
-import { getSongData, SongData } from '@/lib/songData';
+import { getSongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import MusicalAnalysisSection from './MusicalAnalysisSection';
 import MusicalAnalysisScales from './MusicalAnalysisScales';
 import ChordProgressionVisualization from './ChordProgressionVisualization';
+import ChordReferenceBox from './ChordReferenceBox';
+import ScaleVisualization from './ScaleVisualization';
+import SectionNavigation from './SectionNavigation';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
   displayName: string;
 }
+
+// Utility function to remove consecutive duplicate chords while preserving order
+const removeConsecutiveDuplicates = (chords: string[]): string[] => {
+  if (chords.length === 0) return [];
+  
+  const result = [chords[0]];
+  for (let i = 1; i < chords.length; i++) {
+    const currentChord = chords[i].trim();
+    const previousChord = chords[i - 1].trim();
+    if (currentChord !== previousChord) {
+      result.push(chords[i]);
+    }
+  }
+  return result;
+};
 
 export default function SongAnalysisPageTemplate({ songSlug, displayName }: SongAnalysisPageTemplateProps) {
   const songData = getSongData(songSlug);
@@ -30,7 +48,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         <main className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">Song Analysis Not Found</h1>
-            <p className="text-gray-600 mb-8">The song "{songSlug}" could not be found in our database.</p>
+            <p className="text-gray-600 mb-8">The song &quot;{songSlug}&quot; could not be found in our database.</p>
             <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
               ← Back to Song Analysis
             </Link>
@@ -63,6 +81,23 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
       />
       
       <main className="max-w-6xl mx-auto px-4 py-12">
+        {/* Section Navigation */}
+        <SectionNavigation
+          sections={[
+            "Song Info",
+            "Musical Analysis",
+            "Chord Reference",
+            "Scale Patterns",
+            "Chord Progressions",
+            "Key Techniques",
+            "Song Sections",
+            "Equipment & Tone",
+            "Learning Path",
+            "Practice Notes",
+            "Related Songs"
+          ]}
+        />
+
         {/* Navigation */}
         <nav className="mb-8 text-sm">
           <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
@@ -71,23 +106,50 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </nav>
 
         {/* Song Header */}
+        <div id="song-info">
         <SongInfoSection 
           songData={songData} 
           displayName={displayName} 
           getDifficultyColor={getDifficultyColor} 
         />
 
+        </div>
+
         {/* Musical Analysis */}
+        <div id="musical-analysis">
         <MusicalAnalysisSection songData={songData} />
+        </div>
+
+        {/* Chord Reference */}
+        <div id="chord-reference">
+        <ChordReferenceBox
+          chords={[
+            ...songData.musicalAnalysis.chordProgressions.mainProgression.chords,
+            ...songData.musicalAnalysis.chordProgressions.sectionProgressions.flatMap(section => section.progression.split(' - ').map(chord => chord.trim()))
+          ]}
+        />
+
+        </div>
+
+        {/* Scale Visualization */}
+        <div id="scale-patterns">
+        <ScaleVisualization
+          scales={songData.musicalAnalysis.keyAndScale.scalesUsed}
+          primaryKey={songData.musicalAnalysis.keyAndScale.primaryKey}
+        />
+
+        </div>
 
         {/* Chord Progressions & Visualization */}
+        <div id="chord-progressions">
         <ChordProgressionVisualization songData={songData} />
+        </div>
 
         {/* Detailed Scale Analysis */}
         <MusicalAnalysisScales songData={songData} />
 
         {/* Key Techniques */}
-        <section className="mb-12">
+        <section id="key-techniques" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Key Techniques</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {songData.techniques.map((technique, index) => (
@@ -104,7 +166,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <div className="mb-4">
                     <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
                     <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-3">
-                      {technique.details.chords.map((chord, chordIndex) => (
+                      {removeConsecutiveDuplicates(technique.details.chords).map((chord, chordIndex) => (
                         <div key={chordIndex} className="text-center">
                           <div className="scale-75 origin-center">
                             <SimpleFretboardDiagram chord={chord} />
@@ -139,7 +201,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </section>
 
         {/* Song Sections */}
-        <section className="mb-12">
+        <section id="song-sections" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Song Sections</h2>
           <div className="space-y-6">
             {songData.sections.map((section, index) => (
@@ -160,7 +222,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <div className="mb-4">
                     <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                      {section.chords.map((chord, chordIndex) => (
+                      {Array.from(new Set(section.chords)).map((chord, chordIndex) => (
                         <div key={chordIndex} className="text-center">
                           <div className="scale-75 origin-center">
                             <SimpleFretboardDiagram chord={chord} />
@@ -183,11 +245,11 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
 
 
-                {section.tab && (
+                {(section as { alphaTab?: string }).alphaTab && (
                   <div className="mb-4">
                     <h4 className="font-medium text-gray-800 mb-2">Tablature:</h4>
                     <AlphaTexRenderer
-                      alphaTex={section.tab}
+                      alphaTex={(section as { alphaTab?: string }).alphaTab || ''}
                       title={`${section.name} - ${section.technique}`}
                       showValidation={false}
                       className="bg-gray-50 rounded-lg p-4"
@@ -211,7 +273,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </section>
 
         {/* Equipment */}
-        <section className="mb-12">
+        <section id="equipment-&-tone" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Equipment & Tone</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Guitar */}
@@ -292,7 +354,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </section>
 
         {/* Learning Path */}
-        <section className="mb-12">
+        <section id="learning-path" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Learning Path</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Beginner */}
@@ -331,7 +393,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </section>
 
         {/* Practice Notes */}
-        <section className="mb-12">
+        <section id="practice-notes" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Practice Notes</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {/* Common Mistakes */}
@@ -381,7 +443,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </section>
 
         {/* Related Songs */}
-        <section className="mb-12">
+        <section id="related-songs" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Songs</h2>
           
           {/* AC/DC Songs */}

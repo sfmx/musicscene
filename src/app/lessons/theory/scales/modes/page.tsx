@@ -114,7 +114,7 @@ export default function ModesPage() {
                   staves={[{
                     id: 'a-dorian',
                     notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
+tabstave alphaTex=true time=4/4
 notes :q 5/6 7/6 8/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 8/4 7/4 5/4 9/5 | :q 7/5 5/5 8/6 7/6 5/6`,
                     width: 450,
                     scale: 1.0,
@@ -149,7 +149,7 @@ notes :q 5/6 7/6 8/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 8/4 7/4 5/4 9/5 | :q 7/5 5/5 
                   staves={[{
                     id: 'g-mixolydian',
                     notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
+tabstave alphaTex=true time=4/4
 notes :q 3/6 5/6 7/6 3/5 | :q 5/5 7/5 3/4 5/4 | :q 7/4 5/4 3/4 7/5 | :q 5/5 3/5 7/6 5/6 3/6`,
                     width: 450,
                     scale: 1.0,
@@ -184,7 +184,7 @@ notes :q 3/6 5/6 7/6 3/5 | :q 5/5 7/5 3/4 5/4 | :q 7/4 5/4 3/4 7/5 | :q 5/5 3/5 
                   staves={[{
                     id: 'c-lydian',
                     notation: `options space=20 font-size=14
-tabstave notation=true time=4/4
+tabstave alphaTex=true time=4/4
 notes :q 8/6 10/6 12/6 9/5 | :q 10/5 12/5 9/4 10/4 | :q 12/4 10/4 9/4 12/5 | :q 10/5 9/5 12/6 10/6 8/6`,
                     width: 450,
                     scale: 1.0,
@@ -218,7 +218,7 @@ notes :q 8/6 10/6 12/6 9/5 | :q 10/5 12/5 9/4 10/4 | :q 12/4 10/4 9/4 12/5 | :q 
                     staves={[{
                       id: 'dorian-exercise',
                       notation: `options space=20 font-size=14
-tabstave notation=true key=Am time=4/4
+tabstave alphaTex=true key=Am time=4/4
 notes :q 5/6 8/6 9/5 8/6 | :q 5/6 9/5 8/6 5/6`,
                       width: 400,
                       scale: 1.0,
@@ -235,7 +235,7 @@ notes :q 5/6 8/6 9/5 8/6 | :q 5/6 9/5 8/6 5/6`,
                     staves={[{
                       id: 'mixolydian-exercise',
                       notation: `options space=20 font-size=14
-tabstave notation=true key=G time=4/4
+tabstave alphaTex=true key=G time=4/4
 notes :q 3/6 7/6 8/5 7/6 | :q 3/6 8/5 7/6 3/6`,
                       width: 400,
                       scale: 1.0,
@@ -252,7 +252,7 @@ notes :q 3/6 7/6 8/5 7/6 | :q 3/6 8/5 7/6 3/6`,
                     staves={[{
                       id: 'lydian-exercise',
                       notation: `options space=20 font-size=14
-tabstave notation=true key=C time=4/4
+tabstave alphaTex=true key=C time=4/4
 notes :q 8/6 12/6 11/5 12/6 | :q 8/6 11/5 12/6 8/6`,
                       width: 400,
                       scale: 1.0,
