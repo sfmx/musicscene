@@ -7,9 +7,8 @@ import Header from '@/components/Header';
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
 import { getSongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
-import MusicalAnalysisSection from './MusicalAnalysisSection';
-import MusicalAnalysisScales from './MusicalAnalysisScales';
-import ChordProgressionVisualization from './ChordProgressionVisualization';
+import ConsolidatedMusicalAnalysis from './ConsolidatedMusicalAnalysis';
+import ImprovedChordProgressionVisualization from './ImprovedChordProgressionVisualization';
 import ChordReferenceBox from './ChordReferenceBox';
 import ScaleVisualization from './ScaleVisualization';
 import SectionNavigation from './SectionNavigation';
@@ -117,7 +116,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         {/* Musical Analysis */}
         <div id="musical-analysis">
-        <MusicalAnalysisSection songData={songData} />
+        <ConsolidatedMusicalAnalysis songData={songData} />
         </div>
 
         {/* Chord Reference */}
@@ -142,11 +141,8 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
         {/* Chord Progressions & Visualization */}
         <div id="chord-progressions">
-        <ChordProgressionVisualization songData={songData} />
+        <ImprovedChordProgressionVisualization songData={songData} />
         </div>
-
-        {/* Detailed Scale Analysis */}
-        <MusicalAnalysisScales songData={songData} />
 
         {/* Key Techniques */}
         <section id="key-techniques" className="mb-12">
@@ -164,17 +160,15 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                 
                 {technique.details.chords && technique.details.chords.length > 0 && (
                   <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
-                    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-3">
-                      {removeConsecutiveDuplicates(technique.details.chords).map((chord, chordIndex) => (
-                        <div key={chordIndex} className="text-center">
-                          <div className="scale-75 origin-center">
-                            <SimpleFretboardDiagram chord={chord} />
-                          </div>
-                          <p className="text-sm font-mono mt-2 text-gray-700">{chord}</p>
-                        </div>
+                    <h4 className="font-medium text-gray-800 mb-2">Uses chords:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {Array.from(new Set(technique.details.chords)).map((chord, chordIndex) => (
+                        <span key={chordIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-mono">
+                          {chord}
+                        </span>
                       ))}
                     </div>
+                    <p className="text-xs text-gray-500 mt-2">See chord diagrams in the Chord Reference section above</p>
                   </div>
                 )}
 
@@ -220,15 +214,12 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
 
                 {section.chords && section.chords.length > 0 && (
                   <div className="mb-4">
-                    <h4 className="font-medium text-gray-800 mb-3">Chord Shapes:</h4>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <h4 className="font-medium text-gray-800 mb-2">Chords:</h4>
+                    <div className="flex flex-wrap gap-2">
                       {Array.from(new Set(section.chords)).map((chord, chordIndex) => (
-                        <div key={chordIndex} className="text-center">
-                          <div className="scale-75 origin-center">
-                            <SimpleFretboardDiagram chord={chord} />
-                          </div>
-                          <p className="text-sm font-mono mt-1 text-gray-700">{chord}</p>
-                        </div>
+                        <span key={chordIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-mono">
+                          {chord}
+                        </span>
                       ))}
                     </div>
                   </div>

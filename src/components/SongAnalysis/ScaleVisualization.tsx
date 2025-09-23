@@ -97,25 +97,26 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
     return (
       <div className="bg-amber-900 p-4 rounded-lg shadow-lg" style={{ backgroundImage: 'linear-gradient(90deg, #8B4513 0%, #A0522D 100%)' }}>
         {/* Fret markers */}
-        <div className="flex justify-center mb-2">
+        <div className="flex mb-2">
+          <div className="w-8"></div> {/* Space for string labels */}
           <div className="flex">
-            <div className="w-8"></div> {/* Space for string labels */}
+            {/* Fret numbers - positioned in the center of each fret space */}
             {Array.from({ length: numFrets + 1 }, (_, i) => (
               <div key={i} className="w-12 text-center">
-                {i === 0 ? '' : (
-                  <div className={`text-xs font-medium ${
-                    [3, 5, 7, 9].includes(i) ? 'text-white' : 'text-gray-300'
-                  }`}>
-                    {i}
-                    {[3, 5, 7, 9].includes(i) && (
-                      <div className="w-2 h-2 bg-white rounded-full mx-auto mt-1 opacity-60"></div>
-                    )}
-                    {i === 12 && (
-                      <div className="flex gap-1 justify-center mt-1">
-                        <div className="w-1 h-1 bg-white rounded-full opacity-60"></div>
-                        <div className="w-1 h-1 bg-white rounded-full opacity-60"></div>
-                      </div>
-                    )}
+                <div className={`text-xs font-medium ${
+                  i === 0 ? 'text-gray-400' :
+                  [3, 5, 7, 9].includes(i) ? 'text-white' : 'text-gray-300'
+                }`}>
+                  {i === 0 ? '' : i}
+                </div>
+                {/* Fret position markers */}
+                {[3, 5, 7, 9].includes(i) && (
+                  <div className="w-2 h-2 bg-white rounded-full mx-auto mt-1 opacity-60"></div>
+                )}
+                {i === 12 && (
+                  <div className="flex gap-1 justify-center mt-1">
+                    <div className="w-1 h-1 bg-white rounded-full opacity-60"></div>
+                    <div className="w-1 h-1 bg-white rounded-full opacity-60"></div>
                   </div>
                 )}
               </div>
@@ -151,9 +152,9 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 
                   return (
                     <div key={fret} className="w-12 h-8 flex items-center justify-center relative z-10">
-                      {/* Fret line */}
+                      {/* Fret line - positioned at the right edge for frets 1-12 */}
                       {fret > 0 && (
-                        <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-600"></div>
+                        <div className="absolute right-0 top-0 bottom-0 w-0.5 bg-gray-600"></div>
                       )}
 
                       {/* Note dot */}
