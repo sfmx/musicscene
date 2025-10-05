@@ -159,19 +159,18 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 
                       {/* Note dot */}
                       {isInScale && (
-                        <div className="relative group">
-                          <div
-                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-medium transition-all cursor-pointer ${
-                              isRoot
-                                ? 'bg-red-500 border-red-300 text-white shadow-lg'
-                                : 'bg-blue-500 border-blue-300 text-white hover:scale-110'
-                            }`}
-                          >
-                            {noteAtFret}
-                          </div>
-                          {/* Tooltip */}
-                          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-20">
-                            {noteAtFret} {isRoot ? '(Root)' : ''}
+                        <div
+                          className={`group/note relative w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-medium transition-all cursor-pointer ${
+                            isRoot
+                              ? 'bg-red-500 border-red-300 text-white shadow-lg'
+                              : 'bg-blue-500 border-blue-300 text-white hover:scale-110'
+                          }`}
+                          title={`${noteAtFret}${isRoot ? ' (Root)' : ''}`}
+                        >
+                          {noteAtFret}
+                          {/* Tooltip - positioned above, only appears when hovering the note circle */}
+                          <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover/note:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-30">
+                            {noteAtFret} {isRoot ? ' (Root)' : ''}
                           </div>
                         </div>
                       )}
