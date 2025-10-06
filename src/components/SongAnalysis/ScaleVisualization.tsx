@@ -96,25 +96,21 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 
     return (
       <div className="bg-gray-50 p-4 rounded-xl">
-        {/* Fret markers */}
+        {/* Fret number row */}
         <div className="flex mb-3">
           <div className="w-8"></div> {/* Space for string labels */}
           <div className="flex flex-1">
-            {/* Open position spacer (no number) */}
-            <div className="flex-1"></div>
-            {/* Fret numbers - one for each fret space */}
-            {Array.from({ length: numFrets }, (_, i) => {
-              const fretNum = i + 1;
-              return (
-                <div key={fretNum} className="flex-1 text-center">
+            {Array.from({ length: numFrets + 1 }, (_, i) => (
+              <div key={i} className="flex-1 text-center">
+                {i > 0 && (
                   <div className={`text-xs font-semibold whitespace-nowrap ${
-                    [3, 5, 7, 9, 12, 15, 17, 19, 21, 24].includes(fretNum) ? 'text-amber-200' : 'text-amber-300'
+                    [3, 5, 7, 9, 12, 15, 17, 19, 21, 24].includes(i) ? 'text-amber-200' : 'text-amber-300'
                   }`}>
-                    {fretNum}
+                    {i}
                   </div>
-                </div>
-              );
-            })}
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -191,7 +187,6 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 
           {/* Fretboard content */}
           <div className="relative z-10 p-3">
-            {/* Container for strings and frets */}
             <div className="flex">
               {/* String labels column */}
               <div className="w-8 flex flex-col justify-around">
