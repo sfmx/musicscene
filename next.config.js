@@ -2,20 +2,15 @@
 const nextConfig = {
   // ...existing code...
   
-  // Performance optimizations
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
+  // Turbopack configuration (moved from experimental.turbo in Next.js 15)
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
       },
     },
   },
-  
-  // Faster builds
-  swcMinify: true,
   
   // Reduce bundle size
   modularizeImports: {

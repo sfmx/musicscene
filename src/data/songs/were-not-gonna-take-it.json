@@ -12,8 +12,7 @@
   },
   "musicalAnalysis": {
     "keyAndScale": {
-      "key": "E major",
-      "scale": "E major pentatonic",
+      "primaryKey": "E major",
       "scalesUsed": [
         {
           "scale": "E major scale",
@@ -26,7 +25,9 @@
           "application": "Main melodic content and guitar riffs"
         }
       ],
-      "mood": "Anthemic and defiant"
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
     },
     "chordProgressions": {
       "mainProgression": {
@@ -78,6 +79,11 @@
       "primaryTechnique": true,
       "details": {
         "notes": [
+          "E5: 0-2-2-X-X-X (Open E string + 2nd fret A and D strings)",
+          "D#5: X-6-8-X-X-X (6th fret A string + 8th fret D string)",
+          "C#5: X-4-6-X-X-X (4th fret A string + 6th fret D string)",
+          "B5: X-2-4-X-X-X (2nd fret A string + 4th fret D string)",
+          "A5: X-0-2-X-X-X (Open A string + 2nd fret D string)",
           "Creates dramatic effect through chromatic descent",
           "Requires clean chord transitions between positions",
           "Foundation of the song's memorable hook"
@@ -157,7 +163,7 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "The iconic descending chromatic power chord pattern that defines the song",
-      "tab": "(12.1 14.2 14.3).4 (11.1 13.2 13.3).4 (9.1 11.2 11.3).4 (7.1 9.2 9.3).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (11.5 13.4).4 (9.5 11.4).4 (7.5 9.4).4",
       "chords": ["E5", "D#5", "C#5", "B5"],
       "progression": "E5 - D#5 - C#5 - B5",
       "notes": [
@@ -172,7 +178,7 @@
       "technique": "Heavy Palm Muting",
       "key": "E major",
       "description": "Palm muted power chord pattern creating tight, percussive rhythm foundation",
-      "tab": "(12.1 14.2 14.3).8*4 (7.1 9.2 9.3).8*4 |",
+      "alphaTab": "(0.6 2.5 2.4).8 (0.6 2.5 2.4).8 (0.6 2.5 2.4).8 (0.6 2.5 2.4).8 | (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8",
       "chords": ["E5", "B5"],
       "progression": "E5 - B5 (palm muted pattern)",
       "notes": [
@@ -187,7 +193,7 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "Open power chord progression with the signature descending ending",
-      "tab": "(12.1 14.2 14.3).4 (7.1 9.2 9.3).4 (12.1 14.2 14.3).4 (5.1 7.2 7.3).4 (12.1 14.2 14.3).4 (7.1 9.2 9.3).4 (12.1 14.2 14.3).4 (11.1 13.2 13.3).4 (9.1 11.2 11.3).4 (7.1 9.2 9.3).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (7.5 9.4).4 (0.6 2.5 2.4).4 (0.5 2.4).4 (0.6 2.5 2.4).4 (7.5 9.4).4 (0.6 2.5 2.4).4 (11.5 13.4).4 (9.5 11.4).4 (7.5 9.4).4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - B5 - E5 - A5 - E5 - B5 - descending pattern",
       "notes": [
@@ -202,7 +208,7 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "Ascending power chord pattern that builds tension before the final chorus",
-      "tab": "(12.1 14.2 14.3).4 (13.1 15.2 15.3).4 (14.1 16.2 16.3).4 (7.1 9.2 9.3).8*4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (1.6 3.5 3.4).4 (2.6 4.5 4.4).4 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8",
       "chords": ["E5", "F5", "F#5", "B5"],
       "progression": "E5 - F5 - F#5 - B5",
       "notes": [
@@ -217,7 +223,7 @@
       "technique": "Whammy Bar Effects",
       "key": "E major",
       "description": "Pentatonic-based solo with whammy bar effects and expressive bending",
-      "tab": "12.2 15.2 12.2 15.2 12.2 14.2 12.2 15.2 | 12.1 15.1 12.1 15.1 12.1 15.1 |",
+      "alphaTab": "12.2 15.2 12.2 15.2 12.2 14.2 12.2 15.2 | 12.1 15.1 12.1 15.1 12.1 15.1",
       "chords": ["E5"],
       "progression": "E major pentatonic - 12th fret position",
       "notes": [

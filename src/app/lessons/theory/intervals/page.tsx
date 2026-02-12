@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { FretboardHighlight } from '@/components/FretboardHighlight';
+// TODO: FretboardHighlight needs to be updated to work with SimpleFretboardDiagram's current interface
+// import { FretboardHighlight } from '@/components/FretboardHighlight';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';

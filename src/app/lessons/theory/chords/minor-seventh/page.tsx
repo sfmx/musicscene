@@ -239,8 +239,7 @@ tabstave notation=true time=4/4 key=Am
 notes :w (X/6.2/5.0/4.2/3.0/2.2/1) | :w (0/6.2/5.0/4.1/3.0/2.0/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1)
 text :w,Bm7♭5,:w,E7,:w,Am7
                   `}
-                  className="scale-75"
-                  className="mb-4"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -301,8 +300,7 @@ tabstave notation=true time=4/4 key=Am
 notes :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (0/6.2/5.2/4.0/3.0/2.0/1) | :w (X/6.0/5.2/4.0/3.1/2.0/1)
 text :w,Am7,:w,Dm7,:w,Em7,:w,Am7
                   `}
-                  className="scale-75"
-                  className="mb-4"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -363,8 +361,7 @@ tabstave notation=true time=4/4 key=C
 notes :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1) | :w (X/6.3/5.2/4.0/3.0/2.0/1)
 text :w,Am7,:w,Dm7,:w,G7,:w,CMaj7
                   `}
-                  className="scale-75"
-                  className="mb-4"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">
@@ -425,8 +422,7 @@ tabstave notation=true time=4/4 key=Am
 notes :w (X/6.0/5.2/4.0/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.0/1) | :w (X/6.X/5.0/4.2/3.1/2.1/1) | :w (3/6.2/5.0/4.0/3.0/2.1/1)
 text :w,Am7,:w,D7,:w,Dm7,:w,G7
                   `}
-                  className="scale-75"
-                  className="mb-4"
+                  className="scale-75 mb-4"
                 />
                 
                 <p className="text-sm text-gray-600 italic text-center">

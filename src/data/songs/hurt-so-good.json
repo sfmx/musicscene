@@ -68,7 +68,12 @@
       "details": {
         "chords": ["E5", "B5", "A5"],
         "positions": ["7th fret", "2nd fret", "5th fret"],
-        "fingeringTips": "Use index and ring finger for 2-string power chords, keep pinky relaxed"
+        "fingeringTips": "Use index and ring finger for 2-string power chords, keep pinky relaxed",
+        "notes": [
+          "E5: 0-2-2-X-X-X (Open E string + 2nd fret A and D strings)",
+          "B5: X-2-4-X-X-X (2nd fret A string + 4th fret D string)",
+          "A5: X-0-2-X-X-X (Open A string + 2nd fret D string)"
+        ]
       }
     },
     {
@@ -112,7 +117,7 @@
       "technique": "Power chord riff",
       "key": "E Major",
       "description": "Eight-bar introduction featuring the main E5-B5-A5 power chord progression with palm-muted attack.",
-      "tab": "7.2 9.3 9.4 7.2 9.3 9.4 2.2 4.3 4.4 0.2 2.3 2.4 |",
+      "alphaTab": "0.6 2.5 2.4 | 0.6 2.5 2.4 | 7.5 9.4 | 0.5 2.4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - E5 - B5 - A5",
       "notes": [
@@ -127,7 +132,7 @@
       "technique": "Rhythm guitar with vocals",
       "key": "E Major",
       "description": "Sixteen-bar verse section using the same power chord progression, supporting lead vocals with rhythmic foundation.",
-      "tab": "7.2 9.3 9.4 7.2 9.3 9.4 2.2 4.3 4.4 2.2 4.3 4.4 |",
+      "alphaTab": "0.6 2.5 2.4 | 0.6 2.5 2.4 | 7.5 9.4 | 7.5 9.4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - E5 - B5 - B5 - A5 - A5 - E5 - E5",
       "notes": [
@@ -142,7 +147,7 @@
       "technique": "Full band arrangement",
       "key": "E Major",
       "description": "Eight-bar chorus featuring the signature 'Hurt so good' vocal hook over driving power chord progression.",
-      "tab": "7.2 9.3 9.4 2.2 4.3 4.4 0.2 2.3 2.4 7.2 9.3 9.4 |",
+      "alphaTab": "0.6 2.5 2.4 | 7.5 9.4 | 0.5 2.4 | 0.6 2.5 2.4",
       "chords": ["E5", "B5", "A5", "E5"],
       "progression": "E5 - B5 - A5 - E5",
       "notes": [
@@ -157,7 +162,7 @@
       "technique": "Rhythm guitar development",
       "key": "E Major",
       "description": "Second verse with slight variations in rhythm guitar approach, building toward bridge section.",
-      "tab": "(7.2 9.3 9.4).4 (7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (2.2 4.3 4.4).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (0.6 2.5 2.4).4 (7.5 9.4).4 (7.5 9.4).4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - E5 - B5 - B5 - A5 - A5 - E5 - E5",
       "notes": [
@@ -172,7 +177,7 @@
       "technique": "Enhanced arrangement",
       "key": "E Major", 
       "description": "Second chorus with fuller arrangement, leading into the bridge/solo section.",
-      "tab": "(7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 (7.2 9.3 9.4).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (7.5 9.4).4 (0.5 2.4).4 (0.6 2.5 2.4).4",
       "chords": ["E5", "B5", "A5", "E5"],
       "progression": "E5 - B5 - A5 - E5",
       "notes": [
@@ -187,7 +192,7 @@
       "technique": "Lead guitar solo",
       "key": "E Major",
       "description": "Sixteen-bar instrumental bridge featuring guitar solo over the main chord progression. Advanced techniques required.",
-      "tab": "12.6 12.6 14.5 12.6 14.6 12.6 7.2 9.3 9.4 |",
+      "alphaTab": "12.6 12.6 14.5 12.6 14.6 12.6 | 0.6 2.5 2.4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - B5 - A5 - E5 (repeated)",
       "notes": [
@@ -203,7 +208,7 @@
       "technique": "Climax arrangement",
       "key": "E Major",
       "description": "Final chorus with maximum energy and full band arrangement.",
-      "tab": "(7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 (7.2 9.3 9.4).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (7.5 9.4).4 (0.5 2.4).4 (0.6 2.5 2.4).4",
       "chords": ["E5", "B5", "A5", "E5"],
       "progression": "E5 - B5 - A5 - E5",
       "notes": [
@@ -218,7 +223,7 @@
       "technique": "Resolution and fade",
       "key": "E Major",
       "description": "Extended outro section returning to main riff pattern with gradual fade.",
-      "tab": "(7.2 9.3 9.4).4 (7.2 9.3 9.4).4 (2.2 4.3 4.4).4 (0.2 2.3 2.4).4 |",
+      "alphaTab": "(0.6 2.5 2.4).4 (0.6 2.5 2.4).4 (7.5 9.4).4 (0.5 2.4).4",
       "chords": ["E5", "B5", "A5"],
       "progression": "E5 - E5 - B5 - A5 (repeat and fade)",
       "notes": [

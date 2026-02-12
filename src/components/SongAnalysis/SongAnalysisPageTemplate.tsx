@@ -119,6 +119,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         </div>
 
         {/* Chord Reference */}
+        {songData.musicalAnalysis && (
         <div id="chord-reference">
         <ChordReferenceBox
           chords={[
@@ -128,8 +129,10 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         />
 
         </div>
+        )}
 
         {/* Scale Visualization */}
+        {songData.musicalAnalysis && (
         <div id="scale-patterns">
         <ScaleVisualization
           scales={songData.musicalAnalysis.keyAndScale.scalesUsed}
@@ -137,6 +140,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         />
 
         </div>
+        )}
 
         {/* Chord Progressions */}
         <section id="chord-progressions" className="mb-12">

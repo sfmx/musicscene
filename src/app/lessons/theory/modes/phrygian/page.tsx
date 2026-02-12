@@ -375,8 +375,7 @@ export default function PhrygianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 5/6 6/6 8/6 5/5 7/5 | :q 5/4 7/4 5/3 7/3 5/2 | :q 6/2 8/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: A-B♭-C-D-E-F-G-A</p>
             </div>
@@ -390,8 +389,7 @@ export default function PhrygianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 10/6 11/6 13/6 10/5 12/5 | :q 10/4 12/4 10/3 12/3 10/2 | :q 11/2 13/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: D-E♭-F-G-A-B♭-C-D</p>
             </div>
@@ -405,8 +403,7 @@ export default function PhrygianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 2/6 3/6 5/6 2/5 4/5 | :q 2/4 4/4 2/3 4/3 2/2 | :q 3/2 5/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: F#-G-A-B-C#-D-E-F#</p>
             </div>
@@ -420,8 +417,7 @@ export default function PhrygianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 7/6 8/6 10/6 7/5 9/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2 10/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-orange-600 mt-2">Notes: B-C-D-E-F#-G-A-B</p>
             </div>

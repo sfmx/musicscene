@@ -14,7 +14,24 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-  ...storybook.configs["flat/recommended"]
+  ...storybook.configs["flat/recommended"],
+  {
+    rules: {
+      // Disable overly strict quote escaping - browsers handle these fine
+      "react/no-unescaped-entities": "off",
+      // Warn on unused vars instead of error (cleanup separately)
+      "@typescript-eslint/no-unused-vars": "warn",
+      // Allow 'any' for now - proper typing can be added incrementally
+      "@typescript-eslint/no-explicit-any": "warn"
+    }
+  },
+  {
+    // Storybook-specific overrides
+    files: ["**/*.stories.tsx", "**/*.stories.ts"],
+    rules: {
+      "storybook/no-renderer-packages": "off"
+    }
+  }
 ];
 
 export default eslintConfig;

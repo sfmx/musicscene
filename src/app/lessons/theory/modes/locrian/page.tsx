@@ -375,8 +375,7 @@ export default function LocrianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 2/6 3/6 5/6 2/5 4/5 | :q 5/5 2/4 4/4 2/3 | :q 4/3 2/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-gray-600 mt-2">Notes: F#-G-A-B-C-D-E-F#</p>
             </div>
@@ -390,8 +389,7 @@ export default function LocrianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 9/6 10/6 12/6 9/5 11/5 | :q 12/5 9/4 11/4 9/3 | :q 11/3 9/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-slate-600 mt-2">Notes: C#-D-E-F#-G-A-B-C#</p>
             </div>
@@ -405,8 +403,7 @@ export default function LocrianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 4/6 5/6 7/6 4/5 6/5 | :q 7/5 4/4 6/4 4/3 | :q 6/3 4/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-red-600 mt-2">Notes: G#-A-B-C#-D-E-F#-G#</p>
             </div>
@@ -420,8 +417,7 @@ export default function LocrianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 11/6 12/6 14/6 11/5 13/5 | :q 14/5 11/4 13/4 11/3 | :q 13/3 11/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: D#-E-F#-G#-A-B-C#-D#</p>
             </div>

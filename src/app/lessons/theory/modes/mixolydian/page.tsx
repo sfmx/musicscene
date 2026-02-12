@@ -375,8 +375,7 @@ export default function MixolydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 9/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 5/3 7/3 5/2 7/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: A-B-C#-D-E-F#-G-A</p>
             </div>
@@ -390,8 +389,7 @@ export default function MixolydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 4/6 0/5 | :q 2/5 4/5 0/4 2/4 | :q 0/3 2/3 0/2 3/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: E-F#-G#-A-B-C#-D-E</p>
             </div>
@@ -405,8 +403,7 @@ export default function MixolydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 8/6 10/6 12/6 8/5 | :q 10/5 12/5 8/4 10/4 | :q 8/3 10/3 8/2 10/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: C-D-E-F-G-A-B♭-C</p>
             </div>
@@ -420,8 +417,7 @@ export default function MixolydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 1/6 3/6 5/6 1/5 | :q 3/5 5/5 1/4 3/4 | :q 1/3 3/3 1/2 4/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-yellow-600 mt-2">Notes: F-G-A-B♭-C-D-E♭-F</p>
             </div>

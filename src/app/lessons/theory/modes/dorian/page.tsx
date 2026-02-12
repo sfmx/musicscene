@@ -375,8 +375,7 @@ export default function DorianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 3/6 0/5 2/5 | :q 0/4 2/4 0/3 2/3 4/3 | :q 0/2 2/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: E-F#-G-A-B-C#-D-E</p>
             </div>
@@ -390,8 +389,7 @@ export default function DorianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 8/6 5/5 7/5 | :q 5/4 7/4 5/3 7/3 9/3 | :q 5/2 7/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: A-B-C-D-E-F#-G-A</p>
             </div>
@@ -405,8 +403,7 @@ export default function DorianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 7/6 9/6 10/6 7/5 9/5 | :q 7/4 9/4 7/3 9/3 11/3 | :q 7/2 9/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: B-C#-D-E-F#-G#-A-B</p>
             </div>
@@ -420,8 +417,7 @@ export default function DorianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 1/6 3/6 4/6 1/5 3/5 | :q 1/4 3/4 1/3 3/3 5/3 | :q 1/2 3/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-orange-600 mt-2">Notes: F-G-A♭-B♭-C-D-E♭-F</p>
             </div>

@@ -12,8 +12,7 @@
   },
   "musicalAnalysis": {
     "keyAndScale": {
-      "key": "E minor",
-      "scale": "E natural minor",
+      "primaryKey": "E minor",
       "scalesUsed": [
         {
           "scale": "E natural minor",
@@ -26,7 +25,9 @@
           "application": "Lead guitar solos and melodic fills"
         }
       ],
-      "mood": "Dark and ominous"
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor (is the primary key)"
     },
     "chordProgressions": {
       "mainProgression": {
@@ -85,6 +86,8 @@
       "primaryTechnique": true,
       "details": {
         "notes": [
+          "Em: 0-2-2-0-0-0 (Open Em chord)",
+          "Em/D: 0-2-2-0-X-X (Em with D bass note)",
           "Rest palm lightly on bridge, maintaining consistent pressure",
           "Too much pressure will completely mute strings - find the sweet spot",
           "Use consistent downstrokes for power and attack"
@@ -111,6 +114,10 @@
       "primaryTechnique": false,
       "details": {
         "notes": [
+          "Em: 0-2-2-X-X-X (Open low E + 2nd fret A and D strings)",
+          "C5: X-3-5-X-X-X (3rd fret A string + 5th fret D string)",
+          "G5: 3-5-5-X-X-X (3rd fret low E string + 5th fret A and D strings)",
+          "D5: X-5-7-X-X-X (5th fret A string + 7th fret D string)",
           "Use only root and fifth for maximum power and clarity",
           "Mute unused strings to avoid unwanted noise",
           "Strong downstrokes for rhythmic emphasis"
@@ -164,8 +171,7 @@
       "technique": "Palm Muting",
       "key": "E minor",
       "description": "The iconic opening riff that defines the song, featuring heavy palm muting on the low E string with syncopated rhythm patterns.",
-      "vexTab": "tabstave notation=true\nnotes 0/6 0/6 2/5 2/5 2/5 2/5 0/6 0/6 0/5 0/5 0/5 0/5",
-      "tab": "E|--------------------------------|\nB|--------------------------------|\nG|--------------------------------|\nD|--------------------------------|\nA|--2-2-2-2-2-2-0-0-0-0-0-0-------|\nE|0-0-0-0-0-0-0-0-0-0-0-0-0-------|\n  PM------------------------",
+      "alphaTab": "0.6 0.6 2.5 2.5 2.5 2.5 0.6 0.6 0.5 0.5 0.5 0.5",
       "chords": ["Em", "Em/D"],
       "progression": "Em - Em/D (i chord with bass note variation)",
       "notes": [
@@ -181,8 +187,7 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Verse section featuring Em-C chord progression with lighter palm muting, allowing chords to ring more than the intro.",
-      "vexTab": "tabstave notation=true\nnotes 0/6 3/5 | 0/6 3/5",
-      "tab": "Em:      C:\nE|-0-      -0-|\nB|-0-      -1-|\nG|-0-      -0-|\nD|-2-      -2-|\nA|-2-      -3-|\nE|-0-      ---|",
+      "alphaTab": "0.6 3.5 | 0.6 3.5",
       "chords": ["Em", "C"],
       "progression": "Em - C - Em - C (i - ♭VI - i - ♭VI)",
       "notes": [
@@ -198,8 +203,7 @@
       "technique": "Palm Muting",
       "key": "E minor",
       "description": "Building tension section that returns to heavy palm muting, creating dynamic contrast before the chorus.",
-      "vexTab": "tabstave notation=true\nnotes 2/4 2/5 0/6 | 2/4 2/5 0/6",
-      "tab": "E|----------------|\nB|----------------|\nG|----------------|\nD|-2-2-2-2--------|\nA|-2-2-2-2--------|\nE|-0-0-0-0--------|\n  PM------",
+      "alphaTab": "2.4 2.5 0.6 | 2.4 2.5 0.6",
       "chords": ["Em"],
       "progression": "Em (i chord with rhythmic variation)",
       "notes": [
@@ -215,8 +219,7 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Main chorus featuring the complete Em-C-G-D-Em progression with full power chord voicings and open strumming.",
-      "vexTab": "tabstave notation=true\nnotes 0/6 3/5 3/6 5/5 | 0/6",
-      "tab": "Em    C5    G5    D5    Em\nE|-----|-----|-----|-----|-----|\nB|-----|-----|-----|-----|-----|\nG|-----|--5--|-----|--7--|-----|\nD|--2--|--5--|--5--|--7--|--2--|\nA|--2--|--3--|--5--|--5--|--2--|\nE|--0--|-----|--3--|-----|--0--|",
+      "alphaTab": "0.6 3.5 | 3.6 5.5 | 5.5 7.4 | 0.6",
       "chords": ["Em", "C5", "G5", "D5"],
       "progression": "Em - C5 - G5 - D5 - Em (i - ♭VI - ♭III - ♭VII - i)",
       "notes": [
@@ -232,8 +235,7 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Bridge section featuring C-G-D-Em progression with cleaner tone and arpeggiated approach.",
-      "vexTab": "tabstave notation=true\nnotes 3/5 3/6 5/5 0/6",
-      "tab": "C      G      D      Em\nE|-0---|-3---|-2---|-0---|\nB|-1---|-0---|-3---|-0---|\nG|-0---|-0---|-2---|-0---|\nD|-2---|-0---|-0---|-2---|\nA|-3---|-2---|-----|-2---|\nE|-----|-3---|-----|-0---|",
+      "alphaTab": "3.5 | 3.6 | 5.5 | 0.6",
       "chords": ["C", "G", "D", "Em"],
       "progression": "C - G - D - Em (♭VI - ♭III - ♭VII - i)",
       "notes": [
@@ -249,8 +251,7 @@
       "technique": "String Bending",
       "key": "E minor",
       "description": "Lead guitar solo featuring E minor pentatonic scale in the 12th-15th fret area with string bending and vibrato techniques.",
-      "vexTab": "tabstave notation=true\nnotes 12/2 15b17/2 15/2 12/2 | 14/3 12/3",
-      "tab": "E|-----------------------------|\nB|-15b17-15-12----12-15-12-----|\nG|-------------14----------14--|\nD|-----------------------------|\nA|-----------------------------|\nE|-----------------------------|",
+      "alphaTab": "12.2 15.2{b} 15.2 12.2 | 14.3 12.3",
       "chords": ["Em"],
       "progression": "E minor pentatonic scale patterns over Em chord",
       "notes": [
@@ -266,8 +267,7 @@
       "technique": "Palm Muting",
       "key": "E minor", 
       "description": "Return to the main riff with variations, gradually fading out while maintaining the heavy palm-muted character.",
-      "vexTab": "tabstave notation=true\nnotes 0/6 0/6 2/5 2/5 0/6 0/6 0/5 0/5",
-      "tab": "E|--------------------------------|\nB|--------------------------------|\nG|--------------------------------|\nD|--------------------------------|\nA|--2-2-2-2-0-0-0-0---------------|\nE|0-0-0-0-0-0-0-0-0-------fade----|\n  PM-----------------",
+      "alphaTab": "0.6 0.6 2.5 2.5 0.6 0.6 0.5 0.5",
       "chords": ["Em", "Em/D"],
       "progression": "Em - Em/D (return to main riff pattern)",
       "notes": [

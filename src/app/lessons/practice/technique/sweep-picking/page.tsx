@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
+import MusicScore from '@/components/MusicScore';
 
 export default function SweepPickingPage() {
   return (

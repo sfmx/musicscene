@@ -375,8 +375,7 @@ export default function LydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 8/6 10/6 12/6 8/5 10/5 | :q 7/4 9/4 7/3 9/3 7/2 | :q 8/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: C-D-E-F#-G-A-B-C</p>
             </div>
@@ -390,8 +389,7 @@ export default function LydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 3/6 5/6 7/6 3/5 5/5 | :q 2/4 4/4 2/3 4/3 2/2 | :q 3/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: G-A-B-C#-D-E-F#-G</p>
             </div>
@@ -405,8 +403,7 @@ export default function LydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 10/6 12/6 14/6 10/5 12/5 | :q 9/4 11/4 9/3 11/3 9/2 | :q 10/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: D-E-F#-G#-A-B-C#-D</p>
             </div>
@@ -420,8 +417,7 @@ export default function LydianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 5/6 7/6 9/6 5/5 7/5 | :q 4/4 6/4 4/3 6/3 4/2 | :q 5/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-orange-600 mt-2">Notes: A-B-C#-D#-E-F#-G#-A</p>
             </div>

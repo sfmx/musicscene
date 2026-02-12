@@ -13,9 +13,7 @@ function VexTabLoader({ children }: { children: React.ReactNode }) {
       // Check if already loaded
       if (typeof window !== 'undefined' && window.VexTabDiv) {
         setTimeout(() => {
-          if (window.VexTabDiv.autoRender) {
-            window.VexTabDiv.autoRender();
-          }
+          window.VexTabDiv?.autoRender();
         }, 0);
         return;
       }
@@ -32,9 +30,7 @@ function VexTabLoader({ children }: { children: React.ReactNode }) {
       script.onload = () => {
         console.log('VexTab script loaded successfully');
         setTimeout(() => {
-          if (window.VexTabDiv && window.VexTabDiv.autoRender) {
-            window.VexTabDiv.autoRender();
-          }
+          window.VexTabDiv?.autoRender();
         }, 0);
       };
       document.head.appendChild(script);

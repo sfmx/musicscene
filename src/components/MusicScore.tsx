@@ -7,12 +7,14 @@ interface Stave {
   /** Unique identifier for the stave */
   id: string;
   /** The AlphaTex notation for this stave */
-  alphaTex: string;
+  alphaTex?: string;
+  /** Legacy notation field (alias for alphaTex, used by older pages) */
+  notation?: string;
   /** Optional title for the stave */
   title?: string;
-  /** Custom width for this stave (optional) */
+  /** Custom width for this stave (optional, kept for compatibility) */
   width?: number;
-  /** Custom scale for this stave (optional) */
+  /** Custom scale for this stave (optional, kept for compatibility) */
   scale?: number;
 }
 
@@ -39,9 +41,13 @@ const MusicScore: React.FC<MusicScoreProps> = ({
   className = '',
   style = {}
 }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // Initialize with a default value for SSR, update on client
+  const [windowWidth, setWindowWidth] = useState(1024);
 
   useEffect(() => {
+    // Set initial width on client
+    setWindowWidth(window.innerWidth);
+    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -86,15 +92,27 @@ const MusicScore: React.FC<MusicScoreProps> = ({
     <div className={`music-score ${className}`} style={scoreStyle}>
       {title && <h1 style={titleStyle}>{title}</h1>}
       
-      {staves.map((stave) => (
-        <div key={stave.id} style={staveContainerStyle}>          {stave.title && <h3 style={staveTitleStyle}>{stave.title}</h3>}
-          <AlphaTexRenderer
-            alphaTex={stave.alphaTex}
-            title={stave.title}
-            className="scale-75"
-          />
-        </div>
-      ))}
+      {staves.map((stave) => {
+        // Support both alphaTex and legacy notation field
+        const notationContent = stave.alphaTex || stave.notation || '';
+        
+        return (
+          <div key={stave.id} style={staveContainerStyle}>
+            {stave.title && <h3 style={staveTitleStyle}>{stave.title}</h3>}
+            {notationContent ? (
+              <AlphaTexRenderer
+                alphaTex={notationContent}
+                title={stave.title}
+                className="scale-75"
+              />
+            ) : (
+              <div className="text-gray-500 italic text-center py-4">
+                No notation content provided
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };

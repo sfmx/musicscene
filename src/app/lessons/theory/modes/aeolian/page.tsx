@@ -375,8 +375,7 @@ export default function AeolianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 0/6 2/6 3/6 0/5 2/5 | :q 0/4 2/4 0/3 2/3 0/2 | :q 1/2 3/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-green-600 mt-2">Notes: E-F#-G-A-B-C-D-E</p>
             </div>
@@ -390,8 +389,7 @@ export default function AeolianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 5/5 7/5 8/5 5/4 7/4 | :q 5/3 6/3 8/3 5/2 6/2 | :q 8/2
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-blue-600 mt-2">Notes: D-E-F-G-A-B♭-C-D</p>
             </div>
@@ -405,8 +403,7 @@ export default function AeolianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 2/6 4/6 5/6 2/5 4/5 | :q 2/4 3/4 5/4 2/3 3/3 | :q 5/3
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-purple-600 mt-2">Notes: F#-G#-A-B-C#-D-E-F#</p>
             </div>
@@ -420,8 +417,7 @@ export default function AeolianModePage() {
                   tabstave alphaTex=true time=4/4
                   notes :q 7/6 9/6 10/6 7/5 9/5 | :q 7/4 8/4 10/4 7/3 8/3 | :q 10/3
                 `}
-                width={500}
-                scale={0.8}
+                className="scale-75"
               />
               <p className="text-xs text-orange-600 mt-2">Notes: B-C#-D-E-F#-G-A-B</p>
             </div>
