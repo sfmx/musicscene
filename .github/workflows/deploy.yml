@@ -23,7 +23,7 @@ jobs:
       - name: Build & Export Next.js
         run: |
           npm install
-          npm install lightningcss-linux-x64-gnu@1.29.2 --no-save
+          npm install lightningcss-linux-x64-gnu@1.29.2 @tailwindcss/oxide-linux-x64-gnu@4.1.4 --no-save
           npm run build
 
       - name: Sync to S3
