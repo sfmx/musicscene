@@ -23,6 +23,7 @@ jobs:
       - name: Build & Export Next.js
         run: |
           npm install
+          npm install lightningcss-linux-x64-gnu@1.29.2 --no-save
           npm run build
 
       - name: Sync to S3
