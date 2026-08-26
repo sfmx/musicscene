@@ -1,0 +1,331 @@
+{
+  "slug": "fingerpicking",
+  "category": "rhythm",
+  "pageTitle": "Fingerpicking Rhythms",
+  "subtitle": "Master the art of fingerpicking through traditional and contemporary patterns. Develop independence and create rich, complex textures.",
+  "heroGradient": "bg-gradient-to-r from-purple-50 to-pink-50",
+  "backLink": { "href": "/lessons/songs/rhythm", "label": "Back to Rhythm & Strumming" },
+  "introduction": {
+    "title": "The Art of Fingerpicking",
+    "text": "Fingerpicking allows you to play bass, harmony, and melody simultaneously, creating rich, orchestral textures on a single guitar.",
+    "columns": [
+      {
+        "title": "Multi-Voice Texture",
+        "text": "Fingerpicking allows you to play bass, harmony, and melody simultaneously, creating rich, orchestral textures on a single guitar."
+      },
+      {
+        "title": "Rhythmic Sophistication",
+        "text": "Advanced fingerpicking patterns create complex polyrhythms and syncopated feels that add depth to musical arrangements."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Essential Fingerpicking Patterns",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Travis Picking",
+          "description": "Classic alternating bass pattern with melody notes",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "T-I-T-M or T-I-T-A" },
+            { "label": "Finger Assignment", "value": "Thumb (T), Index (I), Middle (M), Ring/Annular (A)" },
+            { "label": "Theory", "value": "Bass-melody independence, alternating bass, syncopated melody" }
+          ],
+          "items": ["Dust in the Wind - Kansas", "Blackbird - Beatles", "The Boxer - Simon & Garfunkel"]
+        },
+        {
+          "title": "Classical Arpeggios",
+          "description": "Traditional classical guitar fingerpicking patterns",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "P-I-M-A-M-I" },
+            { "label": "Finger Assignment", "value": "Thumb (P), Index (I), Middle (M), Ring/Annular (A)" },
+            { "label": "Theory", "value": "Arpeggiated harmony, classical technique, chord voicing" }
+          ],
+          "items": ["Nothing Else Matters - Metallica", "Stairway to Heaven - Led Zeppelin", "Tears in Heaven - Clapton"]
+        },
+        {
+          "title": "Folk Fingerpicking",
+          "description": "Simple alternating pattern for folk and country",
+          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "T-I-M-I" },
+            { "label": "Finger Assignment", "value": "Thumb bass, index and middle alternating" },
+            { "label": "Theory", "value": "Folk tradition, simple harmony support, vocal accompaniment" }
+          ],
+          "items": ["House of the Rising Sun - Animals", "Scarborough Fair", "The Water is Wide"]
+        },
+        {
+          "title": "Bossa Nova Pattern",
+          "description": "Sophisticated Latin fingerpicking with syncopation",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "T-I-T-M-T-I-M-I" },
+            { "label": "Finger Assignment", "value": "Complex thumb/finger coordination" },
+            { "label": "Theory", "value": "Latin rhythm, syncopated bass, jazz harmony" }
+          ],
+          "items": ["Girl from Ipanema", "Corcovado", "Wave - Jobim"]
+        },
+        {
+          "title": "Celtic Picking",
+          "description": "Irish/Scottish patterns with drone strings",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "T-I-T-M-I-T-M-A" },
+            { "label": "Finger Assignment", "value": "Open string drones with melody" },
+            { "label": "Theory", "value": "Modal harmony, drone accompaniment, Celtic ornamentation" }
+          ],
+          "items": ["Celtic Woman", "Danny Boy", "Wild Mountain Thyme"]
+        },
+        {
+          "title": "Blues Fingerpicking",
+          "description": "Delta blues style with walking bass",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "Variable with walking bass" },
+            { "label": "Finger Assignment", "value": "Thumb walking bass, fingers melody" },
+            { "label": "Theory", "value": "Blues harmony, walking bass lines, call-and-response" }
+          ],
+          "items": ["Dust My Broom - Robert Johnson", "Come on in My Kitchen", "Me and the Devil Blues"]
+        },
+        {
+          "title": "Contemporary Fingerstyle",
+          "description": "Modern percussive fingerstyle techniques",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "Complex with percussion" },
+            { "label": "Finger Assignment", "value": "All fingers plus palm percussion" },
+            { "label": "Theory", "value": "Extended techniques, percussive elements, compositional approach" }
+          ],
+          "items": ["Drifting - Andy McKee", "Rylynn - Andy McKee", "Indaba - Andy McKee"]
+        },
+        {
+          "title": "Flamenco Rasgueado",
+          "description": "Spanish flamenco strumming and picking combination",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "Rasgueado + picado" },
+            { "label": "Finger Assignment", "value": "All fingers in flamenco technique" },
+            { "label": "Theory", "value": "Flamenco harmony, Phrygian mode, Spanish rhythm" }
+          ],
+          "items": ["Malaguena", "Asturias", "Entre Dos Aguas - Paco de Lucia"]
+        }
+      ]
+    },
+    {
+      "title": "Technical Fundamentals",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Hand Position",
+          "icon": "✋",
+          "description": "Proper right-hand positioning for fingerpicking",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Technique", "value": "Wrist straight, fingers curved, thumb forward of fingers" },
+            { "label": "Development", "value": "Practice basic finger independence exercises daily" }
+          ]
+        },
+        {
+          "title": "Finger Assignment",
+          "icon": "👆",
+          "description": "Traditional finger-to-string assignments",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Technique", "value": "Thumb: bass strings (E, A, D), Fingers: treble strings (G, B, E)" },
+            { "label": "Development", "value": "Start with simple patterns, gradually increase complexity" }
+          ]
+        },
+        {
+          "title": "Nail vs. Flesh",
+          "icon": "💅",
+          "description": "Sound production using fingertips",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Technique", "value": "Combination of nail and flesh for warm, full tone" },
+            { "label": "Development", "value": "Experiment with nail length and shape for optimal sound" }
+          ]
+        },
+        {
+          "title": "Independence",
+          "icon": "🤲",
+          "description": "Developing finger independence",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Technique", "value": "Practice each finger separately, then in combinations" },
+            { "label": "Development", "value": "Daily technical exercises, gradually increase tempo" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Rhythmic Concepts",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Bass-Melody Independence",
+          "description": "Playing different rhythms simultaneously",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Application", "value": "Thumb maintains steady bass while fingers play syncopated melody" },
+            { "label": "Practice Approach", "value": "Start with simple bass, add melody gradually" }
+          ],
+          "items": ["Travis picking patterns", "Classical guitar pieces", "Folk accompaniments"]
+        },
+        {
+          "title": "Polyrhythm",
+          "description": "Multiple rhythmic patterns occurring simultaneously",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Application", "value": "Creates complex, sophisticated rhythmic textures" },
+            { "label": "Practice Approach", "value": "Practice each rhythm separately, then combine slowly" }
+          ],
+          "items": ["Bossa nova patterns", "African-influenced fingerstyle", "Progressive fingerstyle"]
+        },
+        {
+          "title": "Syncopation",
+          "description": "Emphasizing off-beats and weak beats",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Application", "value": "Creates forward motion and rhythmic interest" },
+            { "label": "Practice Approach", "value": "Use metronome to feel syncopated accents clearly" }
+          ],
+          "items": ["Jazz fingerpicking", "Latin patterns", "Contemporary fingerstyle"]
+        },
+        {
+          "title": "Rhythmic Displacement",
+          "description": "Shifting patterns to create variation",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Application", "value": "Develops sophisticated rhythmic vocabulary" },
+            { "label": "Practice Approach", "value": "Learn basic pattern first, then explore displacements" }
+          ],
+          "items": ["Celtic variations", "Flamenco compas", "Modern fingerstyle"]
+        }
+      ]
+    },
+    {
+      "title": "Learning Progression",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Foundation Building",
+          "description": "Typical timeframe: 2-4 weeks",
+          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Goals", "value": "Proper hand position, Basic finger assignment, Simple alternating patterns" },
+            { "label": "Exercises", "value": "P-I alternation, P-I-M patterns, Simple arpeggios" },
+            { "label": "Repertoire", "value": "Simple folk songs, Basic chord progressions" }
+          ]
+        },
+        {
+          "title": "Pattern Development",
+          "description": "Typical timeframe: 3-6 months",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Goals", "value": "Travis picking mastery, Classical arpeggios, Bass-melody independence" },
+            { "label": "Exercises", "value": "Travis variations, Classical etudes, Song accompaniments" },
+            { "label": "Repertoire", "value": "Dust in the Wind, Blackbird, Nothing Else Matters" }
+          ]
+        },
+        {
+          "title": "Style Specialization",
+          "description": "Typical timeframe: 6+ months",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Goals", "value": "Genre-specific techniques, Complex polyrhythms, Compositional skills" },
+            { "label": "Exercises", "value": "Flamenco techniques, Jazz comping, Contemporary percussive" },
+            { "label": "Repertoire", "value": "Bossa nova standards, Flamenco pieces, Modern fingerstyle" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Progressive Song Study",
+      "bgColor": "bg-gradient-to-r from-amber-50 to-orange-50",
+      "borderColor": "border-gray-200",
+      "layout": "numbered-steps",
+      "cards": [
+        {
+          "title": "\"House of the Rising Sun\" - Basic Fingerpicking",
+          "description": "Start with simple alternating bass and treble patterns in Am",
+          "number": 1,
+          "badge": { "text": "1", "color": "bg-green-100 text-green-800" }
+        },
+        {
+          "title": "\"Dust in the Wind\" - Travis Picking",
+          "description": "Master the classic Travis picking pattern with melody integration",
+          "number": 2,
+          "badge": { "text": "2", "color": "bg-yellow-100 text-yellow-800" }
+        },
+        {
+          "title": "\"Blackbird\" - Advanced Independence",
+          "description": "Develop complex bass-melody independence with chromatic movement",
+          "number": 3,
+          "badge": { "text": "3", "color": "bg-orange-100 text-orange-800" }
+        },
+        {
+          "title": "\"Girl from Ipanema\" - Bossa Nova Style",
+          "description": "Master sophisticated Latin rhythms and jazz harmony",
+          "number": 4,
+          "badge": { "text": "4", "color": "bg-red-100 text-red-800" }
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Fingerpicking Practice Tips",
+    "bgColor": "bg-blue-50",
+    "items": [
+      "Start Slow: Begin all patterns at very slow tempos to build accuracy and muscle memory before increasing speed.",
+      "Separate Hands: Practice left-hand chord changes and right-hand patterns separately before combining them.",
+      "Focus on Independence: Work on bass-melody independence daily. The thumb should be completely independent of the fingers.",
+      "Use a Metronome: Even with rubato pieces, practice with a metronome to develop solid internal timing."
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Strumming Patterns", "href": "/lessons/songs/rhythm/strumming", "description": "Master essential strumming patterns for rhythm guitar." },
+    { "title": "Syncopation", "href": "/lessons/songs/rhythm/syncopation", "description": "Learn syncopated rhythm techniques." },
+    { "title": "Rhythm Guitar Overview", "href": "/lessons/songs/rhythm", "description": "Return to the main Rhythm & Strumming page." }
+  ]
+}

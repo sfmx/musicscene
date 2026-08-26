@@ -1,0 +1,435 @@
+{
+  "songInfo": {
+    "title": "Superstition",
+    "artist": "Stevie Wonder",
+    "album": "Talking Book",
+    "released": "1972",
+    "genre": "Funk",
+    "tempo": "100 BPM",
+    "duration": "4:26",
+    "key": "Eb Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Advanced",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "Eb minor",
+      "scalesUsed": [
+        {
+          "scale": "Eb minor pentatonic",
+          "notes": "Eb - Gb - Ab - Bb - Db - Eb",
+          "application": "Primary scale for the main clavinet riff adapted for guitar"
+        },
+        {
+          "scale": "Eb natural minor (Aeolian)",
+          "notes": "Eb - F - Gb - Ab - Bb - Cb - Db - Eb",
+          "application": "Fills and melodic passages between riff statements"
+        },
+        {
+          "scale": "Eb blues scale",
+          "notes": "Eb - Gb - Ab - A - Bb - Db - Eb",
+          "application": "Added blue note for funk inflections in solo and fills"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "6 flats (Bb, Eb, Ab, Db, Gb, Cb)",
+      "relativeMinor": "Eb minor is the relative minor of Gb major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Ebm",
+          "Bb7"
+        ],
+        "progression": "i - V7",
+        "description": "Simple but deeply funky two-chord vamp that drives the entire song, creating tension between minor tonic and dominant seventh"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Ebm - Bb7",
+          "romanNumerals": "i - V7",
+          "description": "Repeating two-chord funk vamp with syncopated rhythm anchoring the verse vocals"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Ebm - Bb7 - Ebm",
+          "romanNumerals": "i - V7 - i",
+          "description": "Same harmonic foundation as the verse but with more rhythmic emphasis on the resolution back to Ebm"
+        },
+        {
+          "section": "Bridge",
+          "progression": "B - Gb - B - Gb - Ebm - Bb7",
+          "romanNumerals": "bVI - III - bVI - III - i - V7",
+          "description": "Introduces contrasting chords before returning to the main vamp, adding harmonic variety"
+        }
+      ],
+      "harmonicFunction": [
+        "Ebm (i) - Tonic minor chord providing the dark, funky foundation",
+        "Bb7 (V7) - Dominant seventh creating forward motion and tension that resolves back to Ebm",
+        "B (bVI) - Flat sixth chord in the bridge providing harmonic contrast",
+        "Gb (III) - Mediant chord adding modal brightness in bridge sections"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Funk Rhythm Guitar",
+      "description": "Staccato funk strumming pattern adapted from the iconic clavinet riff, featuring muted strings, syncopated accents, and tight 16th-note rhythmic feel",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The clavinet riff translates to guitar as a single-note line on the low strings: Eb-Gb-Ab-Bb pattern",
+          "Use heavy palm muting between notes for staccato articulation",
+          "Muted string scratches (ghost notes) fill the gaps between pitched notes",
+          "Keep the picking hand moving in constant 16th-note motion for consistent groove",
+          "Accent placement on the and-of-beat-two and beat-four drives the funk feel",
+          "Fretting hand lifts slightly for muted scratches without fully releasing the strings"
+        ],
+        "sequence": [
+          "Establish constant 16th-note picking motion with the right hand",
+          "Play the note at the correct fret position with a sharp staccato attack",
+          "Follow with muted ghost strums to maintain the 16th-note pulse",
+          "Play the note at the correct fret position, then Ab on the 11th fret with same staccato approach",
+          "Complete the phrase with Bb on the 1st fret of the D string",
+          "Return to the Eb and repeat the pattern with variations in accent placement"
+        ],
+        "tips": [
+          "Practice the muted strum technique separately before adding pitched notes",
+          "Use a metronome at 80 BPM and gradually work up to 100 BPM",
+          "Keep your wrist loose and relaxed for fluid 16th-note motion",
+          "Listen to the original clavinet part closely to internalize the rhythmic feel",
+          "Record yourself and compare accents to the original groove"
+        ],
+        "chords": [
+          "Ebm",
+          "Bb7"
+        ],
+        "progression": "Ebm - Bb7 (Funk vamp)"
+      }
+    },
+    {
+      "name": "Wah-Wah Pedal Technique",
+      "description": "Using the wah pedal to emulate the vowel-like tonal shifts of the original clavinet, adding expressive filter sweeps to rhythm and lead playing",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Rock the wah pedal in sync with the rhythmic accents of the riff",
+          "Toe-down position emphasizes treble for sharp, cutting accents",
+          "Heel-down position warms the tone for background texture",
+          "Half-cocked (partially open) wah position creates a nasally, clavinet-like tone",
+          "Coordinate foot movement with picking hand for musical expression"
+        ],
+        "sequence": [
+          "Start with heel-down position during muted ghost strums",
+          "Rock to toe-down on accented notes for a sharp, bright punch",
+          "Return to heel-down between accents for rhythmic contrast",
+          "Experiment with half-cocked positions during sustained notes",
+          "Combine wah sweeps with volume dynamics for deeper expression"
+        ],
+        "tips": [
+          "Practice wah control without guitar first to build foot coordination",
+          "Sync the wah sweep to quarter notes initially, then try 8th notes",
+          "A half-cocked wah position can approximate the clavinet's nasal tone",
+          "Don't overuse the wah - let some phrases play clean for contrast",
+          "Try a slow sweep during held notes for a vocal quality"
+        ],
+        "chords": [],
+        "progression": "Applied over Ebm - Bb7 vamp"
+      }
+    },
+    {
+      "name": "Single-Note Funk Riff",
+      "description": "Translating the clavinet melody into a guitar single-note riff using staccato picking and precise fretting on the lower strings",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "the note at the correct fret position",
+          "the note at the correct fret position",
+          "the note at the correct fret position",
+          "the note at the correct fret position",
+          "Use alternate picking for speed and consistency",
+          "Palm mute between notes for tight staccato articulation"
+        ],
+        "sequence": [
+          "Start with the Eb note, picking with a downstroke and immediately muting",
+          "Slide or shift to Gb with an upstroke",
+          "Continue ascending to Ab with a downstroke",
+          "Reach the Bb and let it ring slightly longer as the phrase peak",
+          "Descend back through the pattern with reverse picking",
+          "Add rhythmic variations with ghost notes between pitched notes"
+        ],
+        "tips": [
+          "Keep fingers close to the fretboard for quick transitions",
+          "Practice the riff as straight 8th notes first, then add syncopation",
+          "Use the bridge pickup for a brighter, more cutting single-note tone",
+          "Focus on even note duration - each staccato note should be the same length",
+          "Try palm muting all notes equally before varying the articulation"
+        ],
+        "chords": [
+          "Ebm"
+        ],
+        "progression": "Single-note riff over Ebm tonality"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:18",
+      "technique": "Single-Note Funk Riff",
+      "key": "Eb Minor",
+      "description": "The iconic clavinet riff opens the song, adapted for guitar as a single-note funk line on the lower strings with staccato articulation and syncopated timing",
+      "chords": [
+        "Ebm"
+      ],
+      "progression": "Ebm vamp",
+      "notes": [
+        "The riff is the signature hook - nail the staccato feel",
+        "Keep ghost notes between pitched notes for consistent groove",
+        "Start with the drums-only intro feel, then lock in with the bass",
+        "Use bridge pickup and slight wah for an authentic tone"
+      ],
+      "alphaTab": "11.6 13.6 14.6 16.6 | 11.5 13.5 14.5 16.5 | 11.4 13.4 14.4 16.4 | 11.3 13.3 11.2 14.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:18-1:05",
+      "technique": "Funk Rhythm Guitar",
+      "key": "Eb Minor",
+      "description": "The verse maintains the two-chord Ebm-Bb7 vamp underneath the vocals, with the guitar providing rhythmic comping and occasional single-note fills",
+      "chords": [
+        "Ebm",
+        "Bb7"
+      ],
+      "progression": "Ebm - Bb7",
+      "notes": [
+        "Pull back the intensity slightly to leave room for vocals",
+        "Use muted strums more heavily during vocal phrases",
+        "Accent the chord changes to mark the harmonic rhythm",
+        "Keep the wah subtle during verses to avoid competing with the voice"
+      ],
+      "alphaTab": "11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 | 11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:05-1:30",
+      "technique": "Funk Rhythm Guitar",
+      "key": "Eb Minor",
+      "description": "The chorus builds intensity with the same chord progression but more aggressive rhythmic accents and fuller strumming",
+      "chords": [
+        "Ebm",
+        "Bb7"
+      ],
+      "progression": "Ebm - Bb7 - Ebm",
+      "notes": [
+        "Increase strumming intensity for the chorus lift",
+        "Play fuller chord voicings rather than single notes",
+        "Add more aggressive wah pedal movement for energy",
+        "Emphasize the downbeat resolution back to Ebm"
+      ],
+      "alphaTab": "11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 | 11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:20-2:55",
+      "technique": "Funk Rhythm Guitar",
+      "key": "Eb Minor",
+      "description": "The bridge introduces the B and Gb chords for harmonic contrast, shifting away from the Ebm-Bb7 vamp before returning to it",
+      "chords": [
+        "B",
+        "Gb",
+        "Ebm",
+        "Bb7"
+      ],
+      "progression": "B - Gb - B - Gb - Ebm - Bb7",
+      "notes": [
+        "The chord change to B and Gb provides a welcome contrast",
+        "Use barre chord voicings for the B chord with clean strumming",
+        "Transition smoothly back to the Ebm vamp after the bridge",
+        "Build rhythmic intensity through the bridge to set up the return"
+      ],
+      "alphaTab": "11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 | 11.6 13.5 13.4 12.3 11.2 11.1 | 16.6 18.5 18.4 17.3 16.2 16.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:50-4:26",
+      "technique": "Single-Note Funk Riff",
+      "key": "Eb Minor",
+      "description": "The song rides out on the main riff with increasing intensity, improvisational fills, and a fade-out that keeps the groove locked in",
+      "chords": [
+        "Ebm",
+        "Bb7"
+      ],
+      "progression": "Ebm - Bb7",
+      "notes": [
+        "Add improvisational variations to the main riff",
+        "Increase wah pedal activity for excitement",
+        "Maintain tight rhythmic feel even as intensity increases",
+        "The groove must stay locked even during ad-lib sections"
+      ],
+      "alphaTab": "11.6 13.6 14.6 16.6 | 11.5 13.5 14.5 16.5 | 11.4 13.4 14.4 16.4 | 11.3 13.3 11.2 14.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Fender Telecaster",
+        "Fender Jazzmaster",
+        "Any single-coil equipped guitar"
+      ],
+      "pickup": "Bridge single-coil pickup for bright, cutting funk tone with clear note definition"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Roland JC-120",
+        "Fender Hot Rod Deluxe"
+      ],
+      "settings": {
+        "gain": "3-4 (clean to slight edge of breakup)",
+        "treble": "7 (bright, snappy tone for funk)",
+        "middle": "5 (balanced mids)",
+        "bass": "4 (tight low end for clarity)",
+        "presence": "6 (cut through the mix)"
+      }
+    },
+    "effects": {
+      "distortion": "None to very slight overdrive - keep the tone clean and punchy",
+      "reverb": "Minimal spring reverb for subtle ambience",
+      "other": "Wah pedal (Dunlop Cry Baby or Vox V847) is essential for the clavinet-inspired tone; optional auto-wah/envelope filter for more authentic clavinet emulation"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic single-note riff pattern and Ebm chord shape",
+      "steps": [
+        "Learn the Eb minor pentatonic scale in the 6th position on the A string",
+        "Practice the four-note riff pattern (Eb-Gb-Ab-Bb) slowly without syncopation",
+        "Master the Ebm and Bb7 chord shapes for the basic progression",
+        "Practice strumming the Ebm-Bb7 vamp at a slow tempo with a metronome"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "focus": "Develop the funk rhythm feel with ghost notes, staccato, and wah pedal integration",
+      "steps": [
+        "Add ghost notes (muted strums) between pitched notes in the riff",
+        "Practice the 16th-note strumming pattern with syncopated accents",
+        "Introduce the wah pedal and practice coordinating foot and hand movement",
+        "Learn all song sections including the bridge chord changes (B and Gb)"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "advanced": {
+      "focus": "Master the complete performance with improvisational fills and authentic funk feel",
+      "steps": [
+        "Perfect the tight staccato funk feel at full tempo (100 BPM)",
+        "Add improvisational pentatonic fills over the verse sections",
+        "Master wah pedal expression with varied sweep speeds and positions",
+        "Perform the entire song with dynamics, building from verse to chorus to outro"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing notes too long - staccato articulation is essential for the funk feel",
+      "Neglecting ghost notes between pitched notes, which kills the groove",
+      "Overusing the wah pedal instead of using it musically and rhythmically",
+      "Playing the riff with too much gain or distortion, losing the clean punch"
+    ],
+    "practiceRoutine": [
+      "Warm up with Eb minor pentatonic scale runs at moderate tempo for 5 minutes",
+      "Practice the four-note riff pattern slowly focusing on staccato articulation",
+      "Work on 16th-note ghost note strumming at 80 BPM for 10 minutes",
+      "Combine pitched notes and ghost notes at gradually increasing tempos",
+      "Run through full song sections with a backing track"
+    ],
+    "focusAreas": [
+      "Staccato articulation and muting technique",
+      "16th-note rhythmic consistency and ghost note placement",
+      "Wah pedal coordination with picking hand rhythm",
+      "Clean funk tone with tight low-end control"
+    ],
+    "metronomeWork": [
+      "Start at 70 BPM with straight 16th-note ghost strums only",
+      "Add pitched notes at 80 BPM while maintaining the ghost note pulse",
+      "Increase to 90 BPM focusing on syncopated accent placement",
+      "Reach target tempo of 100 BPM with full groove and dynamics"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Higher Ground",
+        "difficulty": "Intermediate",
+        "similarity": "Similar funk-driven clavinet riff adapted for guitar with syncopated rhythm"
+      },
+      {
+        "title": "I Wish",
+        "difficulty": "Advanced",
+        "similarity": "Complex funk groove with chromatic bass movement and similar rhythmic intensity"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Play That Funky Music",
+        "artist": "Wild Cherry",
+        "difficulty": "Intermediate",
+        "similarity": "Funk guitar riff with similar staccato rhythm and single-note approach"
+      },
+      {
+        "title": "Get Up (I Feel Like Being a) Sex Machine",
+        "artist": "James Brown",
+        "difficulty": "Intermediate",
+        "similarity": "Master class in funk guitar with muted strums and syncopated accents"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "difficulty": "Beginner",
+        "similarity": "Simpler single-note riff with similar funk-influenced rhythm feel"
+      },
+      {
+        "title": "Thank You (Falettinme Be Mice Elf Agin)",
+        "artist": "Sly and the Family Stone",
+        "difficulty": "Advanced",
+        "similarity": "More complex funk guitar with advanced syncopation and rhythmic sophistication"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "funk",
+      "rhythm",
+      "syncopation",
+      "wah"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}

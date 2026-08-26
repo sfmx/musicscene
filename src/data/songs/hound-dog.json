@@ -1,0 +1,372 @@
+{
+  "songInfo": {
+    "title": "Hound Dog",
+    "artist": "Elvis Presley",
+    "album": "Single",
+    "released": "1956",
+    "genre": "Rock & Roll / Blues",
+    "tempo": "176 BPM",
+    "duration": "2:15",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major",
+      "scalesUsed": [
+        {
+          "scale": "A major pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Melodic framework for the vocal line and guitar fills"
+        },
+        {
+          "scale": "A blues scale",
+          "notes": "A - C - D - Eb - E - G",
+          "application": "Used in guitar fills and turnarounds between verses"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Blues tonality with dominant 7th chord flavor throughout",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "I - IV - V",
+        "description": "Classic 12-bar blues progression using the three primary chords of the key. The foundation of rock and roll guitar."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse (12-Bar Blues)",
+          "progression": "A - A - A - A - D - D - A - A - E - D - A - E",
+          "romanNumerals": "I - I - I - I - IV - IV - I - I - V - IV - I - V",
+          "description": "Standard 12-bar blues form with a quick-change variation. Each chord lasts one bar at the brisk 176 BPM tempo."
+        },
+        {
+          "section": "Turnaround",
+          "progression": "A - E",
+          "romanNumerals": "I - V",
+          "description": "The final two bars of each 12-bar cycle create a turnaround that drives back to the top of the form."
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic chord providing the home base and dominant feel of the song",
+        "D (IV) - Subdominant chord creating movement away from tonic in bars 5-6",
+        "E (V) - Dominant chord creating tension and resolution back to the tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "12-Bar Blues Rhythm",
+      "description": "The fundamental 12-bar blues shuffle rhythm pattern that underpins all of rock and roll, played with a driving downstroke feel at a fast tempo",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0 (open A major chord)",
+          "D: X-X-0-2-3-2 (open D major chord)",
+          "E: 0-2-2-1-0-0 (open E major chord)",
+          "Can also be played as A7, D7, E7 for authentic blues color",
+          "The shuffle feel gives each beat a triplet swing: long-short, long-short"
+        ],
+        "sequence": [
+          "Learn the three open chord shapes: A, D, and E",
+          "Practice the 12-bar form: 4 bars A, 2 bars D, 2 bars A, 1 bar E, 1 bar D, 2 bars A",
+          "Add the shuffle rhythm feel with accented downstrokes",
+          "Build up to the fast 176 BPM tempo gradually"
+        ],
+        "tips": [
+          "Start at half tempo (88 BPM) and work up gradually",
+          "Focus on strong downstrokes with a percussive attack",
+          "Keep your strumming hand loose to maintain the fast tempo without fatigue",
+          "Count the 12 bars carefully until the form becomes second nature"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - A - A - A - D - D - A - A - E - D - A - E"
+      }
+    },
+    {
+      "name": "Shuffle Strumming",
+      "description": "A swung eighth-note strumming pattern that gives the song its driving rock and roll groove, emphasizing beats 2 and 4 for the classic backbeat",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The shuffle feel swings the eighth notes into a triplet-based rhythm",
+          "Accent beats 2 and 4 for the classic backbeat feel",
+          "Use all downstrokes for maximum power at high tempo",
+          "Palm muting can be added lightly on the lower strings for tighter sound"
+        ],
+        "sequence": [
+          "Practice the shuffle rhythm on muted strings first",
+          "Add the A chord and strum the shuffle pattern for 4 bars",
+          "Practice transitioning to D at bar 5 without losing the groove",
+          "Work through the full 12-bar form maintaining the shuffle feel"
+        ],
+        "tips": [
+          "Listen to the original recording to internalize the shuffle feel",
+          "Tap your foot on beats 1 and 3 while accenting strums on 2 and 4",
+          "Keep your wrist relaxed - tension will slow you down at this tempo",
+          "The groove matters more than perfect chord voicings"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "Shuffle rhythm applied to all chord changes"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:08",
+      "technique": "12-Bar Blues Rhythm",
+      "key": "A Major",
+      "description": "Brief guitar and band intro establishing the fast shuffle groove in A",
+      "chords": [
+        "A"
+      ],
+      "progression": "A",
+      "notes": [
+        "Band kicks in together with a driving shuffle rhythm",
+        "Establish the tempo immediately - this song is fast at 176 BPM",
+        "Strong downstrokes on the A chord set the energy level"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse (12-Bar Blues)",
+      "timeStamp": "0:08-0:50",
+      "technique": "12-Bar Blues Rhythm",
+      "key": "A Major",
+      "description": "The main verse follows a standard 12-bar blues form with the iconic 'You ainthe signature lyric",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - A - A - A - D - D - A - A - E - D - A - E",
+      "notes": [
+        "Standard 12-bar blues form repeated for each verse",
+        "Maintain steady shuffle rhythm throughout all 12 bars",
+        "The chord changes follow the words naturally",
+        "Keep the energy high and the tempo driving"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "0:50-1:12",
+      "technique": "Shuffle Strumming",
+      "key": "A Major",
+      "description": "Scotty Moore's guitar solo over the 12-bar blues form, using blues scale licks and double stops",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - A - A - A - D - D - A - A - E - D - A - E",
+      "notes": [
+        "For beginners, continue strumming the 12-bar blues rhythm during the solo section",
+        "The solo follows the same 12-bar chord structure",
+        "Advanced players can learn Scotty Moore's blues-influenced solo licks",
+        "The rhythm guitar maintains the shuffle pattern underneath"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Final Verse / Outro",
+      "timeStamp": "1:12-2:15",
+      "technique": "12-Bar Blues Rhythm",
+      "key": "A Major",
+      "description": "Repeated verses building energy to the final ending with a classic rock and roll stop-time finish",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - A - A - A - D - D - A - A - E - D - A - A",
+      "notes": [
+        "Final verses repeat the same 12-bar form with increasing intensity",
+        "The ending resolves firmly on the A chord (tonic)",
+        "Band stops together on the final hit",
+        "Keep the shuffle groove locked in right to the end"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson ES-295 or any semi-hollow electric guitar",
+      "alternatives": [
+        "Any acoustic guitar with steel strings",
+        "Epiphone Casino",
+        "Fender Telecaster",
+        "Any guitar with a warm, clean tone"
+      ],
+      "pickup": "Neck pickup or P-90 style for warm, round tone"
+    },
+    "amp": {
+      "recommended": "Fender Deluxe (vintage-style clean amp)",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Any clean tube amp",
+        "Vox AC15",
+        "Acoustic amp for unplugged version"
+      ],
+      "settings": {
+        "gain": "3-4 (light breakup at high volume)",
+        "treble": "5-6 (balanced brightness)",
+        "middle": "5 (even midrange)",
+        "bass": "5-6 (warm low end)",
+        "presence": "5 (natural presence)"
+      }
+    },
+    "effects": {
+      "distortion": "None - clean to mild tube breakup",
+      "delay": "Light slapback echo (80-120ms) for authentic 1950s Sun Studio sound",
+      "reverb": "Light spring reverb for vintage ambiance",
+      "other": "No effects pedals needed. The raw, clean guitar tone is essential to the sound."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three open chords and the 12-bar blues form",
+      "steps": [
+        "Learn open A, D, and E chord shapes individually",
+        "Practice switching between A and D, then D and E, then A and E",
+        "Memorize the 12-bar blues form: 4 bars A, 2 bars D, 2 bars A, 1 bar E, 1 bar D, 2 bars A",
+        "Strum quarter notes at a slow tempo through the entire form"
+      ],
+      "timeEstimate": "1-2 weeks with daily practice"
+    },
+    "intermediate": {
+      "focus": "Add the shuffle rhythm and build up to performance tempo",
+      "steps": [
+        "Learn the shuffle strumming pattern with swung eighth notes",
+        "Practice the shuffle feel on each chord individually",
+        "Play through the full 12-bar form with shuffle rhythm at 120 BPM",
+        "Gradually increase tempo toward 176 BPM over several practice sessions"
+      ],
+      "timeEstimate": "2-3 weeks for confident performance"
+    },
+    "advanced": {
+      "focus": "Master the full tempo with authentic feel and optional soloing",
+      "steps": [
+        "Play the complete song at 176 BPM with tight, driving shuffle rhythm",
+        "Add dynamics and vocal accompaniment while strumming",
+        "Learn basic blues scale licks in A for the solo section",
+        "Experiment with dominant 7th chord voicings (A7, D7, E7) for authentic blues color"
+      ],
+      "timeEstimate": "3-5 weeks for polished full performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Losing count of the 12 bars - the form is the foundation, count carefully",
+      "Playing straight eighth notes instead of shuffle feel - listen to the swing",
+      "Tensing up the strumming hand at fast tempo - stay relaxed",
+      "Missing the chord change to D at bar 5 - anticipate the change"
+    ],
+    "practiceRoutine": [
+      "Warm up with A, D, E chord changes for 3 minutes",
+      "Practice the shuffle strum on muted strings for 2 minutes to build the groove",
+      "Play through one 12-bar cycle slowly, counting each bar out loud",
+      "Gradually increase tempo by 10 BPM increments each pass",
+      "Run through the complete song structure at target tempo"
+    ],
+    "focusAreas": [
+      "12-bar blues form memorization",
+      "Shuffle rhythm feel and consistency",
+      "Quick chord transitions at fast tempo",
+      "Maintaining steady tempo throughout"
+    ],
+    "metronomeWork": [
+      "Start at 100 BPM with the shuffle pattern on a single chord",
+      "Increase by 10 BPM increments as comfort builds",
+      "Practice at 140 BPM with full chord changes before pushing to 176 BPM",
+      "Set the metronome to click on beats 2 and 4 for authentic backbeat feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Jailhouse Rock",
+        "difficulty": "Beginner",
+        "similarity": "Same era Elvis rocker with 12-bar blues form and simple chord structure"
+      },
+      {
+        "title": "Blue Suede Shoes",
+        "difficulty": "Beginner",
+        "similarity": "Classic 12-bar blues rock and roll with the same I-IV-V chord structure"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "difficulty": "Intermediate",
+        "similarity": "12-bar blues form with shuffle rhythm in the same rock and roll style"
+      },
+      {
+        "title": "Folsom Prison Blues",
+        "artist": "Johnny Cash",
+        "difficulty": "Beginner",
+        "similarity": "Simple I-IV-V country blues progression with boom-chicka rhythm"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Gloria",
+        "artist": "Them",
+        "difficulty": "Beginner",
+        "similarity": "Another iconic 3-chord song to expand your beginner repertoire"
+      },
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to more complex 12-bar blues with Chuck Berry-style licks"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1950s",
+    "iconicRiff": false,
+    "tags": [
+      "rock-and-roll",
+      "beginner",
+      "3-chord-song",
+      "blues",
+      "12-bar-blues",
+      "elvis"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

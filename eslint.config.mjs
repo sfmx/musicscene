@@ -21,7 +21,7 @@ const eslintConfig = [
       "react/no-unescaped-entities": "off",
       // Warn on unused vars instead of error (cleanup separately)
       "@typescript-eslint/no-unused-vars": "warn",
-      // Allow 'any' for now - proper typing can be added incrementally
+      // Enforce explicit types over 'any' - warn for now, target error after cleanup
       "@typescript-eslint/no-explicit-any": "warn"
     }
   },

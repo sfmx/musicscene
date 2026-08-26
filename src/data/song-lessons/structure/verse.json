@@ -1,0 +1,211 @@
+{
+  "slug": "verse",
+  "category": "structure",
+  "pageTitle": "Verse Structure Analysis",
+  "subtitle": "Understanding how verses function as the narrative and harmonic foundation of songs",
+  "heroGradient": "bg-gradient-to-r from-green-50 to-blue-50",
+  "backLink": { "href": "/lessons/songs/structure", "label": "Back to Song Structure" },
+  "introduction": {
+    "title": "The Verse: Foundation of Song Narrative",
+    "text": "Verses serve as the narrative backbone of songs, providing story development while maintaining harmonic stability. They establish the key center, introduce melodic themes, and create a comfortable foundation for the more dramatic sections that follow.",
+    "columns": [
+      {
+        "title": "Harmonic Home",
+        "icon": "\ud83c\udfe0",
+        "text": "Establishes and reinforces the tonic key center"
+      },
+      {
+        "title": "Story Development",
+        "icon": "\ud83d\udcd6",
+        "text": "Provides lyrical content and narrative progression"
+      },
+      {
+        "title": "Musical Balance",
+        "icon": "\u2696\ufe0f",
+        "text": "Creates stability that contrasts with dynamic sections"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Verse Characteristics",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Harmonic Function",
+          "description": "Usually establishes and reinforces the tonic key",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Often uses I-vi-IV-V or similar progressions that feel stable" },
+            { "label": "Example", "value": "C-Am-F-G in C major maintains tonal center" }
+          ]
+        },
+        {
+          "title": "Melodic Contour",
+          "description": "Moderate range, comfortable for vocals",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Stays within an octave, avoids extreme leaps" },
+            { "label": "Example", "value": "Stepwise motion with occasional thirds and fourths" }
+          ]
+        },
+        {
+          "title": "Rhythmic Character",
+          "description": "Steady, predictable patterns that support lyrics",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Simple subdivision patterns, clear beat emphasis" },
+            { "label": "Example", "value": "Quarter note emphasis in 4/4 with consistent phrasing" }
+          ]
+        },
+        {
+          "title": "Textural Density",
+          "description": "Moderate arrangement allowing vocal clarity",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Balance between support and space" },
+            { "label": "Example", "value": "Rhythm guitar, bass, light drums, minimal lead elements" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Verse Structures",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Traditional Verse",
+          "description": "Story development, harmonic establishment",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "AABA or ABAB" },
+            { "label": "Harmonic Approach", "value": "Tonic-centered progressions" }
+          ],
+          "badges": [
+            { "text": "Many folk and country songs", "color": "bg-green-100 text-green-700" },
+            { "text": "Classic rock ballads", "color": "bg-green-100 text-green-700" }
+          ]
+        },
+        {
+          "title": "Progressive Verse",
+          "description": "Continuous development, building energy",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "ABCD (through-composed)" },
+            { "label": "Harmonic Approach", "value": "Modulating or chromatic movement" }
+          ],
+          "badges": [
+            { "text": "Progressive rock", "color": "bg-green-100 text-green-700" },
+            { "text": "Some pop songs", "color": "bg-green-100 text-green-700" }
+          ]
+        },
+        {
+          "title": "Call and Response Verse",
+          "description": "Interactive feel, rhythmic interest",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "AB-AB pattern" },
+            { "label": "Harmonic Approach", "value": "Question-answer harmonic movement" }
+          ],
+          "badges": [
+            { "text": "Blues songs", "color": "bg-green-100 text-green-700" },
+            { "text": "Gospel-influenced tracks", "color": "bg-green-100 text-green-700" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Verse Progressions",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "I-vi-IV-V (Pop Progression)",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Chords", "value": "C - Am - F - G" },
+            { "label": "Function", "value": "I (tonic) \u2192 vi (relative minor) \u2192 IV (subdominant) \u2192 V (dominant)" }
+          ],
+          "items": ["Extremely stable, feels like \"home.\" The vi chord provides mild contrast while IV-V creates gentle forward motion back to I."]
+        },
+        {
+          "title": "ii-V-I (Jazz Influence)",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Chords", "value": "Dm - G - C" },
+            { "label": "Function", "value": "ii (subdominant) \u2192 V (dominant) \u2192 I (tonic)" }
+          ],
+          "items": ["Strong sense of resolution. The ii-V motion creates expectation that resolves satisfyingly to I, making verses feel complete."]
+        }
+      ]
+    },
+    {
+      "title": "Verse Analysis Framework",
+      "bgColor": "bg-blue-50",
+      "borderColor": "border-blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Musical Elements",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "Key center: What key is established?",
+            "Chord progression: What functional harmony is used?",
+            "Melodic range: How wide is the vocal melody?",
+            "Rhythm: What subdivision and feel?",
+            "Texture: How dense is the arrangement?"
+          ]
+        },
+        {
+          "title": "Structural Elements",
+          "icon": "\ud83d\udcdd",
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "Form: AABA, ABAB, or through-composed?",
+            "Length: How many measures per verse?",
+            "Repetition: What elements repeat vs. develop?",
+            "Contrast: How does it differ from chorus?",
+            "Connection: How does it lead to the next section?"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "bgColor": "bg-blue-50",
+    "items": [
+      "Listening Analysis: Choose a song and isolate just the verse sections",
+      "Listening Analysis: Identify the chord progression by ear",
+      "Listening Analysis: Notice the melodic range and contour",
+      "Listening Analysis: Count measures and identify the formal structure",
+      "Listening Analysis: Compare multiple verses\u2014what stays the same vs. what changes?",
+      "Playing Practice: Learn verse chord progressions from different genres",
+      "Playing Practice: Practice transitioning from verse to chorus smoothly",
+      "Playing Practice: Experiment with different strumming patterns for verses",
+      "Playing Practice: Try playing verse progressions in different keys",
+      "Playing Practice: Write your own verse using common progressions"
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Chorus Structure", "href": "/lessons/songs/structure/chorus", "description": "Learn how choruses create emotional peaks." },
+    { "title": "Song Structure Overview", "href": "/lessons/songs/structure", "description": "Return to the main Song Structure page." }
+  ]
+}

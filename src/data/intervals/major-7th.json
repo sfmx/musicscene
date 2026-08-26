@@ -1,0 +1,377 @@
+{
+  "slug": "major-7th",
+  "intervalInfo": {
+    "name": "Major 7th Interval",
+    "pageTitle": "Major 7th Interval",
+    "subtitle": "The sophisticated interval - 11 semitones that creates rich jazz harmony and adds elegant tension that resolves beautifully to the octave.",
+    "colorScheme": "amber",
+    "heroGradient": "bg-gradient-to-r from-amber-500 to-orange-600",
+    "tags": [
+      "11 Semitones",
+      "Jazz Essential",
+      "Elegant Tension",
+      "Sophisticated"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "11 semitones (5\u00bd whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Major"
+      },
+      {
+        "label": "Sound",
+        "value": "Sophisticated, elegant tension"
+      },
+      {
+        "label": "Consonance",
+        "value": "Mild dissonance seeking resolution"
+      },
+      {
+        "label": "Function",
+        "value": "Jazz harmony and sophisticated extensions"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to B",
+        "value": "Classic major 7th"
+      },
+      {
+        "label": "Cmaj7",
+        "value": "C-E-G-B chord"
+      },
+      {
+        "label": "Jazz standards",
+        "value": "Essential harmony"
+      },
+      {
+        "label": "\"Take Five\"",
+        "value": "Dave Brubeck classic"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Major 7th Intervals - Elegant Tension",
+      "description": "The major 7th (11 semitones) creates sophisticated, elegant tension that defines jazz harmony and adds refined color to any musical context.",
+      "examples": [
+        {
+          "title": "C \u2192 B Major 7th",
+          "subtitle": "Classic major 7th relationship",
+          "chord1": "C_to_B_M7",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "B_from_C_M7",
+          "chord2Label": "B (5th string 2nd fret)",
+          "alphaTex": "3.5.4 2.5.4",
+          "alphaTexTitle": "C to B Major 7th",
+          "caption": "Sophisticated, elegant tension",
+          "colorBg": "bg-gradient-to-br from-amber-50 to-amber-100",
+          "colorBorder": "border border-amber-200",
+          "colorTitle": "text-amber-800",
+          "colorSubtitle": "text-amber-700",
+          "colorCaption": "text-amber-600"
+        },
+        {
+          "title": "F \u2192 E Major 7th",
+          "subtitle": "Fmaj7 chord essential interval",
+          "chord1": "F_to_E_M7",
+          "chord1Label": "F (6th string 1st fret)",
+          "chord2": "E_from_F_M7",
+          "chord2Label": "E (6th string open)",
+          "alphaTex": "1.6.4 0.6.4",
+          "alphaTexTitle": "F to E Major 7th",
+          "caption": "Jazz chord essential harmony",
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorSubtitle": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "G \u2192 F# Major 7th",
+          "subtitle": "Gmaj7 chord application",
+          "chord1": "G_to_Fs_M7",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "Fs_from_G_M7",
+          "chord2Label": "F# (6th string 2nd fret)",
+          "alphaTex": "3.6.4 2.6.4",
+          "alphaTexTitle": "G to F# Major 7th",
+          "caption": "Sophisticated tonic harmony",
+          "colorBg": "bg-gradient-to-br from-yellow-50 to-yellow-100",
+          "colorBorder": "border border-yellow-200",
+          "colorTitle": "text-yellow-800",
+          "colorSubtitle": "text-yellow-700",
+          "colorCaption": "text-yellow-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Major 7th Chord Applications - Jazz Sophistication",
+      "items": [
+        {
+          "title": "Cmaj7 Chord",
+          "chord": "CMaj7",
+          "chordLabel": "Cmaj7 with major 7th (B)",
+          "alphaTex": "(3.5 2.4 3.3 2.5).1",
+          "alphaTexTitle": "Cmaj7 Chord",
+          "alphaTexCaption": "C-E-G-B: Major triad + major 7th",
+          "bullets": [
+            "Major 7th: C \u2192 B (elegant sophistication)",
+            "Jazz tonic: Sophisticated I chord",
+            "Ballads: Refined harmonic color"
+          ],
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        },
+        {
+          "title": "Fmaj7 Chord",
+          "chord": "FMaj7",
+          "chordLabel": "Fmaj7 with major 7th (E)",
+          "alphaTex": "(1.6 5.5 3.2 0.6).1",
+          "alphaTexTitle": "Fmaj7 Chord",
+          "alphaTexCaption": "F-A-C-E: Major triad + major 7th",
+          "bullets": [
+            "Major 7th: F \u2192 E (smooth jazz harmony)",
+            "IV chord: Sophisticated subdominant",
+            "Bossa nova: Essential Brazilian sound"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorCaption": "text-emerald-600"
+        },
+        {
+          "title": "Gmaj7 Chord",
+          "chord": "GMaj7",
+          "chordLabel": "Gmaj7 with major 7th (F#)",
+          "alphaTex": "(3.6 4.5 0.4 2.6).1",
+          "alphaTexTitle": "Gmaj7 Chord",
+          "alphaTexCaption": "G-B-D-F#: Major triad + major 7th",
+          "bullets": [
+            "Major 7th: G \u2192 F# (bright sophistication)",
+            "V chord: Non-dominant resolution",
+            "Modal jazz: Lydian and Ionian applications"
+          ],
+          "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+          "colorBorder": "border border-teal-200",
+          "colorTitle": "text-teal-800",
+          "colorText": "text-teal-700",
+          "colorCaption": "text-teal-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Jazz Standard Progressions",
+        "subtitle": "I - vi - ii - V with maj7",
+        "alphaTex": "(3.5 2.4 3.3 2.5).1 | (0.5 3.4 2.4 1.6).1 | (0.4 1.4 2.5 3.4).1 | (3.6 4.5 0.4 1.6).1",
+        "alphaTexTitle": "Jazz Progression with maj7",
+        "alphaTexCaption": "Cmaj7 - Am7 - Dm7 - G7: Major 7th sophistication",
+        "bullets": [
+          "Cmaj7: Sophisticated tonic resolution",
+          "Voice leading: Smooth major 7th movement",
+          "Jazz ballads: Essential harmonic color"
+        ],
+        "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+        "colorBorder": "border border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700",
+        "colorCaption": "text-purple-600"
+      },
+      {
+        "title": "Resolution & Tension",
+        "subtitle": "Major 7th to Octave Resolution",
+        "alphaTex": "2.5.2 3.5.2",
+        "alphaTexTitle": "Major 7th to Octave Resolution",
+        "alphaTexCaption": "Natural upward resolution tendency of major 7th",
+        "bullets": [
+          "Leading tone: Wants to resolve up",
+          "Elegant tension: Sophisticated dissonance",
+          "Chord melody: Beautiful voice leading"
+        ],
+        "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+        "colorBorder": "border border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "colorCaption": "text-indigo-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"Take Five\" - Dave Brubeck",
+        "description": "Classic jazz piece featuring prominent maj7 harmony",
+        "detail": "Demonstrates sophisticated major 7th chord usage"
+      },
+      {
+        "title": "\"Giant Steps\" - John Coltrane",
+        "description": "Complex jazz harmony with multiple maj7 chords",
+        "detail": "Advanced application of major 7th intervals"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Fly Me to the Moon\"",
+        "description": "Beautiful major 7th harmonies in classic ballad",
+        "detail": "Elegant use of maj7 chords for sophisticated color"
+      },
+      {
+        "title": "Modern Jazz-influenced Pop",
+        "description": "Contemporary songs using maj7 chords for sophistication",
+        "detail": "Neo-soul and jazz-fusion applications"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Practice maj7 vs dominant 7th recognition",
+        "Use jazz standards as reference",
+        "Study maj7 chord progressions",
+        "Listen to resolution to octave",
+        "Compare with minor 7th intervals"
+      ],
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border border-amber-200",
+      "colorTitle": "text-amber-800",
+      "colorText": "text-amber-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master maj7 chord voicings",
+        "Practice jazz comping patterns",
+        "Work on smooth voice leading",
+        "Study chord melody applications",
+        "Practice extended harmony (maj9, maj13)"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Learn jazz standards with maj7 chords",
+        "Practice reharmonization with maj7",
+        "Compose using sophisticated harmony",
+        "Study modal jazz applications",
+        "Work on tension and resolution"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Tonic Function",
+        "description": "Major 7th chords often serve as sophisticated tonic harmony in jazz"
+      },
+      {
+        "title": "Color Tones",
+        "description": "The major 7th adds elegant color without changing the chord's basic function"
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Upward Resolution",
+        "description": "Major 7th naturally wants to resolve up to the octave (root)"
+      },
+      {
+        "title": "Voice Leading",
+        "description": "Smooth movement of major 7th in chord progressions creates sophisticated harmony"
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Minor 7th",
+      "description": "10 semitones - one semitone smaller",
+      "detail": "Compare elegant maj7 vs bluesy min7 qualities",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Octave",
+      "description": "12 semitones - natural resolution point",
+      "detail": "Major 7th wants to resolve up to octave",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    },
+    {
+      "title": "Minor 2nd",
+      "description": "1 semitone - inversion of major 7th",
+      "detail": "Sharp dissonance vs elegant tension",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the major 7th, explore its relationships and applications in sophisticated harmony.",
+    "links": [
+      {
+        "slug": "minor-7th",
+        "title": "Minor 7th",
+        "description": "Compare the bluesy minor 7th against the elegant major 7th quality.",
+        "actionText": "Feel the contrast",
+        "icon": "musical-note",
+        "colorBg": "bg-blue-100",
+        "colorBgHover": "group-hover:bg-blue-200",
+        "colorBorder": "hover:border-blue-300",
+        "colorText": "text-blue-600",
+        "colorTextHover": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "octave",
+        "title": "Octave",
+        "description": "Study the natural resolution point of the major 7th interval.",
+        "actionText": "Find resolution",
+        "icon": "target",
+        "colorBg": "bg-purple-100",
+        "colorBgHover": "group-hover:bg-purple-200",
+        "colorBorder": "hover:border-purple-300",
+        "colorText": "text-purple-600",
+        "colorTextHover": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "minor-2nd",
+        "title": "Minor 2nd",
+        "description": "Explore the inversion relationship between major 7th and minor 2nd.",
+        "actionText": "Study inversions",
+        "icon": "cycle",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      }
+    ]
+  }
+}

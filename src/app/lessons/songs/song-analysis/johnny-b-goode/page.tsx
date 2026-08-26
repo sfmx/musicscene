@@ -1,7 +1,8 @@
-"use client";
-
-import React from "react";
+import { getSongAnalysisMetadata } from '@/lib/seo';
 import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
+
+
+export const metadata = getSongAnalysisMetadata('johnny-b-goode');
 
 export default function JohnnyBGoodeAnalysis() {
   return (

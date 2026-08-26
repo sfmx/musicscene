@@ -1,0 +1,284 @@
+{
+  "slug": "pitch",
+  "category": "effects",
+  "pageTitle": "Octave & Pitch Effects",
+  "subtitle": "Explore pitch shifting, octave effects, and harmonizers for creating unique harmonic textures",
+  "heroGradient": "from-violet-50 to-purple-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Understanding Pitch Effects",
+    "text": "Pitch effects manipulate the fundamental frequency of your guitar signal, creating everything from subtle detuning to dramatic octave shifts. These effects can double your guitar parts with harmony lines, create bass-like low octaves, or transport your sound into entirely new frequency ranges. From the classic octave fuzz of Hendrix to the complex harmonies of modern metal, pitch effects open up new sonic territories.",
+    "quote": "Pitch effects don't just change what you play\u2014they multiply it, creating ensembles from single notes and transforming your guitar into an orchestra of harmonic possibilities."
+  },
+  "sections": [
+    {
+      "title": "How Pitch Detection Works",
+      "bgColor": "blue-50",
+      "borderColor": "blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Detection Methods",
+          "description": "Pitch effects first detect the fundamental frequency of your guitar signal, then generate new frequencies based on mathematical relationships to create harmony, octaves, or entirely different pitches.",
+          "items": [
+            "Analog Frequency Doubling: Simple, fast, vintage character",
+            "Digital Pitch Tracking: Accurate, complex harmonies possible",
+            "Polyphonic Detection: Tracks multiple notes simultaneously",
+            "Monophonic Detection: Single note at a time, more reliable"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "items": [
+            "Tracking speed and accuracy",
+            "Handling complex chords",
+            "Maintaining natural sound quality",
+            "Avoiding glitches and artifacts"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Pitch Effects",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Octave Effects",
+          "description": "Generate a signal exactly one octave (12 semitones) above or below your original note. Octave up doubles the frequency, octave down halves it.",
+          "fields": [
+            { "label": "Common Types", "value": "Octave Up: Adds brightness and presence. Octave Down: Creates bass-like low end. Dual Octave: Both up and down simultaneously." },
+            { "label": "Musical Applications", "value": "Lead guitar: Adding sparkle and cutting power. Bass simulation: Creating low-end thickness. Organ-like textures: Multiple octaves together. 12-string guitar simulation." },
+            { "label": "Famous Example", "value": "Jimi Hendrix's \"Purple Haze\" intro uses octave fuzz." }
+          ]
+        },
+        {
+          "title": "Pitch Shifters",
+          "description": "Shift pitch by any interval\u2014not just octaves. Can create harmonies in specific keys, detune effects, or dramatic pitch bends.",
+          "fields": [
+            { "label": "Key Features", "value": "Variable pitch intervals, real-time pitch bending, multiple voices simultaneously, mix control for blend with dry signal" },
+            { "label": "Musical Applications", "value": "Harmonized guitar solos, detuning for alternative tunings, creating interval harmonies (3rds, 5ths, etc.), special effects and sound design" },
+            { "label": "Pro Tip", "value": "Use expression pedal control for smooth pitch bends and dives." }
+          ]
+        },
+        {
+          "title": "Intelligent Harmonizers",
+          "description": "Analyze your playing and automatically generate harmonies based on selected keys and scales. More musically intelligent than simple pitch shifters.",
+          "fields": [
+            { "label": "Advanced Features", "value": "Key and scale selection, multiple harmony voices, voice leading and chord progressions, real-time key changes" },
+            { "label": "Musical Applications", "value": "Professional studio harmonies, live performance enhancement, complex arrangement creation, jazz and fusion harmony" },
+            { "label": "Example Units", "value": "TC Electronic VoiceLive, Eventide H9 Harmonizer" }
+          ]
+        },
+        {
+          "title": "Whammy/Dive Bomb Effects",
+          "description": "Real-time pitch shifting controlled by an expression pedal, simulating the effect of a whammy bar or creating dramatic pitch dives and climbs.",
+          "fields": [
+            { "label": "Control Options", "value": "Expression pedal for real-time control, preset intervals (octave, fifth, etc.), momentary footswitch triggering, customizable pitch ranges" },
+            { "label": "Musical Applications", "value": "Rock and metal lead effects, simulating extreme whammy bar use, creating impossible pitch intervals, sound effects and noise music" },
+            { "label": "Famous User", "value": "Tom Morello (Rage Against the Machine) signature technique" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Musical Theory for Pitch Effects",
+      "bgColor": "amber-50",
+      "borderColor": "amber-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Common Intervals",
+          "items": [
+            "Perfect 5th (+7 semitones): Strong, stable harmony",
+            "Major 3rd (+4 semitones): Sweet, consonant harmony",
+            "Minor 3rd (+3 semitones): Darker, more complex",
+            "Perfect 4th (+5 semitones): Open, suspended sound",
+            "Octave (+12 semitones): Same note, different register"
+          ]
+        },
+        {
+          "title": "Key-Based Harmonies",
+          "items": [
+            "Diatonic Harmonies: Stay within the key signature",
+            "Parallel Intervals: Same interval throughout",
+            "Voice Leading: Smooth movement between chords",
+            "Modal Harmonies: Based on different modes",
+            "Example: In C major, harmonizing with 3rds: C\u2192E, D\u2192F, E\u2192G, F\u2192A, etc."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pitch Effects in Famous Songs",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Purple Haze\" - Jimi Hendrix",
+          "description": "Octavia octave-up fuzz on the intro riff",
+          "badge": { "text": "Octave Fuzz", "color": "purple" },
+          "fields": [
+            { "label": "Settings", "value": "Octave-up frequency doubling, combined with fuzz distortion, full wet signal (no dry blend), analog frequency multiplication" },
+            { "label": "Musical Effect", "value": "Creates otherworldly psychedelic texture, adds cutting treble presence, defines the song's alien character, influenced generations of rock guitarists" }
+          ]
+        },
+        {
+          "title": "\"My Sharona\" - The Knack",
+          "description": "Octave-down effect on the bass line",
+          "badge": { "text": "Octave Down", "color": "blue" },
+          "fields": [
+            { "label": "Settings", "value": "Octave-down pitch shifting, blended with original guitar, clean signal path, simulates bass guitar" },
+            { "label": "Musical Effect", "value": "Creates thick low-end foundation, adds harmonic richness, fills out the arrangement, demonstrates octave-down utility" }
+          ]
+        },
+        {
+          "title": "\"Bulls on Parade\" - Rage Against the Machine",
+          "description": "DigiTech Whammy for radical pitch bends",
+          "badge": { "text": "Whammy", "color": "green" },
+          "fields": [
+            { "label": "Settings", "value": "Expression pedal controlled, wide pitch range (2+ octaves), aggressive digital character, used for rhythmic emphasis" },
+            { "label": "Musical Effect", "value": "Creates aggressive modern sound, adds rhythmic and melodic interest, defines Tom Morello's signature style, influences alternative and nu-metal" }
+          ]
+        },
+        {
+          "title": "\"The Spirit of Radio\" - Rush",
+          "description": "Harmonized guitar solos (Alex Lifeson)",
+          "badge": { "text": "Harmonizer", "color": "orange" },
+          "fields": [
+            { "label": "Settings", "value": "Intelligent harmonizer, perfect 5th and 3rd intervals, key-based harmony generation, mixed with original signal" },
+            { "label": "Musical Effect", "value": "Creates full orchestral guitar sound, adds sophistication to solos, supports progressive rock complexity, demonstrates musical harmony usage" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technical Considerations",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Tracking Challenges",
+          "bgColor": "red-50",
+          "fields": [
+            { "label": "Clean Signal Input", "value": "Pitch detection works best with clean, undistorted signals. Place pitch effects early in your chain." },
+            { "label": "Single Note Playing", "value": "Monophonic pitch effects track single notes more reliably than chords or complex intervals." },
+            { "label": "Attack Sensitivity", "value": "Consistent pick attack helps tracking accuracy. Compression before pitch effects can help." }
+          ]
+        },
+        {
+          "title": "Optimization Tips",
+          "bgColor": "blue-50",
+          "fields": [
+            { "label": "Signal Chain Position", "value": "Guitar \u2192 Compression \u2192 Pitch Effects \u2192 Distortion \u2192 Modulation \u2192 Time Effects" },
+            { "label": "Playing Technique", "value": "Clean, articulate playing improves tracking. Avoid overlapping notes when possible." },
+            { "label": "Latency Awareness", "value": "Digital pitch effects introduce small delays. Account for this in timing-critical situations." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creative Pitch Effect Techniques",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Layering Techniques",
+          "description": "Combine multiple pitch effects for complex textures",
+          "fields": [
+            { "label": "Octave Stacking", "value": "Original + Octave up + Octave down creates organ-like textures with massive, full-frequency sound. Great for power chords and riffs." },
+            { "label": "Interval Combinations", "value": "Mix multiple harmony intervals. Create chord-like textures from single notes. Build complex harmonic structures. Experiment with dissonant intervals." }
+          ]
+        },
+        {
+          "title": "Expression Control",
+          "description": "Real-time pitch manipulation for dynamic performances",
+          "fields": [
+            { "label": "Real-Time Pitch Bending", "value": "Expression pedal for smooth transitions, create impossible pitch ranges, simulate extreme whammy bar effects, add movement to sustained notes" },
+            { "label": "Momentary Effects", "value": "Quick octave jumps for emphasis, temporary harmonies on key notes, rhythmic pitch accents, dynamic arrangement enhancement" }
+          ]
+        },
+        {
+          "title": "Feedback and Self-Oscillation",
+          "description": "Some pitch effects can create feedback loops and self-generating tones",
+          "items": [
+            "Set up regenerative feedback circuits",
+            "Create evolving harmonic drones",
+            "Use for ambient and experimental music",
+            "Control with expression for dynamic textures"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Pitch Effect Mistakes",
+      "bgColor": "red-50",
+      "borderColor": "red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "items": [
+            "Using pitch effects on overly distorted signals",
+            "Playing complex chords through monophonic pitch shifters",
+            "Ignoring the musical context and key",
+            "Over-relying on effects instead of developing technique",
+            "Not considering mix implications of frequency doubling",
+            "Using harmonies that clash with other instruments"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Start with clean signals for best tracking",
+            "Understand basic music theory for harmony",
+            "Use pitch effects to enhance, not replace, musical ideas",
+            "Practice clean playing technique first",
+            "Consider how effects fit in the full mix",
+            "Learn when NOT to use pitch effects"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Pitch Effect Practice Exercises",
+    "exercises": [
+      {
+        "title": "Exercise 1: Interval Recognition",
+        "items": [
+          "Practice single notes with different pitch shift intervals",
+          "Play C note, add perfect 5th (G) harmony",
+          "Try major 3rd (E), minor 3rd (E\u266d), perfect 4th (F)",
+          "Notice how each interval creates different emotional colors",
+          "Practice with different root notes to hear interval consistency"
+        ]
+      },
+      {
+        "title": "Exercise 2: Octave Layering",
+        "items": [
+          "Experiment with octave combinations on power chords",
+          "Play a simple power chord (E5, A5, D5)",
+          "Add octave up for brightness",
+          "Add octave down for bass foundation",
+          "Try all three together for massive sound"
+        ]
+      },
+      {
+        "title": "Exercise 3: Melody Harmonization",
+        "items": [
+          "Take a simple melody and practice adding harmonies",
+          "Start with Mary Had a Little Lamb or similar simple melody",
+          "Set harmonizer to key of G major",
+          "Try different harmony intervals (3rd, 5th, 6th)",
+          "Notice how some intervals work better than others"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/modulation", "label": "Modulation Effects" },
+    { "href": "/lessons/songs/effects/distortion", "label": "Distortion & Overdrive" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain & Multi-Effects" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects & Tone Overview" }
+  ]
+}

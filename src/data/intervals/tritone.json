@@ -1,0 +1,377 @@
+{
+  "slug": "tritone",
+  "intervalInfo": {
+    "name": "Tritone Interval",
+    "pageTitle": "Tritone Interval",
+    "subtitle": "The Devil's Interval - 6 semitones of maximum tension that demands resolution and drives harmonic motion in Western music.",
+    "colorScheme": "red",
+    "heroGradient": "bg-gradient-to-r from-red-700 to-orange-800",
+    "tags": [
+      "6 Semitones",
+      "Maximum Dissonance",
+      "Devil's Interval",
+      "Harmonic Driver"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "6 semitones (3 whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Augmented 4th / Diminished 5th"
+      },
+      {
+        "label": "Sound",
+        "value": "Maximum dissonance, unstable"
+      },
+      {
+        "label": "Consonance",
+        "value": "Most dissonant interval"
+      },
+      {
+        "label": "Function",
+        "value": "Demands resolution"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "F to B",
+        "value": "Augmented 4th"
+      },
+      {
+        "label": "B to F",
+        "value": "Diminished 5th"
+      },
+      {
+        "label": "\"The Simpsons\"",
+        "value": "Opening theme"
+      },
+      {
+        "label": "\"Maria\" (West Side Story)",
+        "value": "Opening leap"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Tritone Intervals - The Devil's Interval",
+      "description": "The tritone (6 semitones) is the most dissonant interval, creating maximum tension that demands resolution. It's essential in dominant chords and drives harmonic motion.",
+      "examples": [
+        {
+          "title": "F \u2192 B Tritone",
+          "subtitle": "Augmented 4th - Classic devil's interval",
+          "chord1": "F_to_B",
+          "chord1Label": "F (6th string 1st fret)",
+          "chord2": "B_from_F",
+          "chord2Label": "B (5th string 2nd fret)",
+          "alphaTex": "3.4 2.5",
+          "alphaTexTitle": "F to B Tritone",
+          "caption": "Maximum dissonance, demands resolution",
+          "colorBg": "bg-gradient-to-br from-red-50 to-red-100",
+          "colorBorder": "border border-red-200",
+          "colorTitle": "text-red-800",
+          "colorSubtitle": "text-red-700",
+          "colorCaption": "text-red-600"
+        },
+        {
+          "title": "C \u2192 F# Tritone",
+          "subtitle": "Augmented 4th in C major",
+          "chord1": "C_to_Fs",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "Fs_from_C",
+          "chord2Label": "F# (4th string 4th fret)",
+          "alphaTex": "3.5.4 2.1.4",
+          "alphaTexTitle": "C to F# Tritone",
+          "caption": "Unstable, seeks resolution",
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorSubtitle": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "G \u2192 Db Tritone",
+          "subtitle": "Diminished 5th relationship",
+          "chord1": "G_to_Db",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "Db_from_G",
+          "chord2Label": "Db (5th string 4th fret)",
+          "alphaTex": "3.5.4 4.4.4",
+          "alphaTexTitle": "G to Db Tritone",
+          "caption": "Symmetrical division of octave",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorSubtitle": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Dominant 7th Chords - Tritone in Action",
+      "items": [
+        {
+          "title": "G7 Chord",
+          "chord": "G7",
+          "chordLabel": "G7 with tritone B-F",
+          "alphaTex": "(3.5 4.5 0.4 1.4).1",
+          "alphaTexTitle": "G7 Chord",
+          "alphaTexCaption": "G-B-D-F: 3rd to 7th = tritone",
+          "bullets": [
+            "Tritone: B \u2192 F (creates tension)",
+            "Resolution: Wants to resolve to C major",
+            "Blues foundation: Essential blues chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        },
+        {
+          "title": "C7 Chord",
+          "chord": "C7",
+          "chordLabel": "C7 with tritone E-Bb",
+          "alphaTex": "(3.5 2.4 3.3 1.4).1",
+          "alphaTexTitle": "C7 Chord",
+          "alphaTexCaption": "C-E-G-Bb: 3rd to 7th = tritone",
+          "bullets": [
+            "Tritone: E \u2192 Bb (dominant tension)",
+            "Jazz staple: Essential jazz chord",
+            "Voice leading: Smooth to F major"
+          ],
+          "colorBg": "bg-gradient-to-br from-green-50 to-green-100",
+          "colorBorder": "border border-green-200",
+          "colorTitle": "text-green-800",
+          "colorText": "text-green-700",
+          "colorCaption": "text-green-600"
+        },
+        {
+          "title": "E7 Chord",
+          "chord": "E7",
+          "chordLabel": "E7 with tritone G#-D",
+          "alphaTex": "(2.4 1.3 4.5 0.4).1",
+          "alphaTexTitle": "E7 Chord",
+          "alphaTexCaption": "E-G#-B-D: 3rd to 7th = tritone",
+          "bullets": [
+            "Tritone: G# \u2192 D (drives to A)",
+            "Open position: Easy fingering",
+            "Rock/blues: Classic rock chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-yellow-50 to-yellow-100",
+          "colorBorder": "border border-yellow-200",
+          "colorTitle": "text-yellow-800",
+          "colorText": "text-yellow-700",
+          "colorCaption": "text-yellow-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Diminished Harmony",
+        "subtitle": "Built from Tritones",
+        "alphaTex": "(3.5 1.4 2.3 5.4).1",
+        "alphaTexTitle": "Fully Diminished Chord",
+        "alphaTexCaption": "Cdim7: All intervals are tritones or minor 3rds",
+        "bullets": [
+          "Symmetrical: Equal divisions of octave",
+          "Chromatic passing: Connect diatonic chords",
+          "Maximum tension: Multiple tritones"
+        ],
+        "colorBg": "bg-gradient-to-br from-red-50 to-red-100",
+        "colorBorder": "border border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "colorCaption": "text-red-600"
+      },
+      {
+        "title": "Harmonic Function",
+        "subtitle": "Tension & Resolution",
+        "alphaTex": "1.6.2 4.6.2 | 2.4.2 3.5.2",
+        "alphaTexTitle": "Tritone Resolution",
+        "alphaTexCaption": "Tritone resolves outward by semitone",
+        "bullets": [
+          "Leading tone function: Pulls to resolution",
+          "Voice leading: Smooth contrary motion",
+          "Modal interchange: Borrowed chord effects"
+        ],
+        "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+        "colorBorder": "border border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700",
+        "colorCaption": "text-purple-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"Maria\" (West Side Story)",
+        "description": "Opening tritone leap expresses intense longing",
+        "detail": "Bernstein uses tritone for emotional impact"
+      },
+      {
+        "title": "Medieval \"Diabolus in Musica\"",
+        "description": "Forbidden in medieval music due to dissonance",
+        "detail": "Church considered it evil and unstable"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"The Simpsons\" Theme",
+        "description": "Distinctive tritone creates quirky, unsettling character",
+        "detail": "Danny Elfman's use of classical dissonance in TV"
+      },
+      {
+        "title": "Blues and Jazz Standards",
+        "description": "Dominant 7th chords rely on tritone tension",
+        "detail": "Essential for authentic blues and jazz harmony"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Use \"The Simpsons\" as reference",
+        "Practice tritone vs. perfect 4th/5th",
+        "Listen to dominant 7th resolutions",
+        "Study jazz and blues progressions",
+        "Compare augmented 4th vs. diminished 5th"
+      ],
+      "colorBg": "bg-red-50",
+      "colorBorder": "border border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master 6-fret same-string tritones",
+        "Practice F-B and B-F intervals",
+        "Work on dominant 7th chord shapes",
+        "Study diminished chord patterns",
+        "Practice tritone substitutions"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create tension with tritone leaps",
+        "Study V7-I resolution patterns",
+        "Explore jazz tritone substitutions",
+        "Practice blues dominant progressions",
+        "Analyze dissonance in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "\"Diabolus in Musica\"",
+        "description": "Medieval church considered the tritone so dissonant and unstable that it was forbidden in sacred music, earning the nickname \"the devil in music.\""
+      },
+      {
+        "title": "Theoretical Foundation",
+        "description": "The tritone perfectly divides the octave in half, creating maximum distance from consonant perfect intervals."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Tonal Harmony Driver",
+        "description": "In tonal music, the tritone creates the tension that drives harmonic progression, especially in dominant 7th chords resolving to tonic."
+      },
+      {
+        "title": "Jazz and Blues Essential",
+        "description": "Modern jazz and blues rely heavily on tritone harmony for their characteristic sound and harmonic sophistication."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Perfect 4th",
+      "description": "5 semitones - one semitone smaller",
+      "detail": "Stable vs. unstable - consonant vs. dissonant",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - one semitone larger",
+      "detail": "Tritone sits exactly between perfect 4th and 5th",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Octave Division",
+      "description": "6 + 6 = 12 semitones",
+      "detail": "Perfectly divides the octave - maximum distance from consonance",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "From maximum dissonance, explore intervals that offer resolution and harmonic stability.",
+    "links": [
+      {
+        "slug": "perfect-4th",
+        "title": "Perfect 4th",
+        "description": "Step back to stability - explore the consonant interval just below the tritone.",
+        "actionText": "Find stability",
+        "icon": "shield",
+        "colorBg": "bg-teal-100",
+        "colorBgHover": "group-hover:bg-teal-200",
+        "colorBorder": "hover:border-teal-300",
+        "colorText": "text-teal-600",
+        "colorTextHover": "group-hover:text-teal-700"
+      },
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Step up to consonance - the stable interval just above the tritone.",
+        "actionText": "Find resolution",
+        "icon": "target",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      },
+      {
+        "slug": "minor-7th",
+        "title": "Minor 7th",
+        "description": "Explore another dissonant interval essential to dominant 7th chords.",
+        "actionText": "Add complexity",
+        "icon": "musical-note",
+        "colorBg": "bg-purple-100",
+        "colorBgHover": "group-hover:bg-purple-200",
+        "colorBorder": "hover:border-purple-300",
+        "colorText": "text-purple-600",
+        "colorTextHover": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

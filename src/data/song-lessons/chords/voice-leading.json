@@ -1,0 +1,223 @@
+{
+  "slug": "voice-leading",
+  "category": "chords",
+  "pageTitle": "Voice Leading",
+  "subtitle": "Master the art of smooth chord connections and harmonic motion",
+  "heroGradient": "from-green-50 to-teal-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "The Flow Between Chords",
+    "text": "Voice leading is how individual notes move from chord to chord. Good voice leading makes chord progressions sound smooth and connected rather than choppy and disconnected. It's the difference between beautiful, flowing harmony and awkward harmonic leaps.",
+    "columns": [
+      { "title": "Independent Lines", "text": "Each voice (soprano, alto, tenor, bass) has its own melodic line. Good voice leading creates 4 beautiful melodies happening simultaneously." },
+      { "title": "Smooth Connection", "text": "Minimize large leaps. When voices move smoothly (by steps or small intervals), the harmony flows naturally." }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Voice Leading Principles",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Contrary Motion",
+          "description": "When one voice goes up, another goes down",
+          "badge": { "text": "Core Rule", "color": "green" },
+          "fields": [
+            { "label": "Example", "value": "C to F: Bass C\u2192F (up), Soprano G\u2192A (up) - better if Soprano G\u2192F (down)" }
+          ]
+        },
+        {
+          "title": "Smooth Voice Leading",
+          "description": "Move each voice by the smallest possible interval",
+          "badge": { "text": "Core Rule", "color": "green" },
+          "fields": [
+            { "label": "Example", "value": "C to Am: C-E-G to A-E-G (only one note changes)" }
+          ]
+        },
+        {
+          "title": "Avoid Parallel 5ths/8ves",
+          "description": "Don't move voices in parallel perfect intervals",
+          "badge": { "text": "Core Rule", "color": "green" },
+          "fields": [
+            { "label": "Example", "value": "C-G moving to D-A creates parallel 5ths (avoid this)" }
+          ]
+        },
+        {
+          "title": "Resolve Leading Tones",
+          "description": "Leading tone (7th scale degree) should resolve up to tonic",
+          "badge": { "text": "Core Rule", "color": "green" },
+          "fields": [
+            { "label": "Example", "value": "In G7 to C: B should move to C" }
+          ]
+        },
+        {
+          "title": "Common Tones",
+          "description": "Keep common tones in the same voice when possible",
+          "badge": { "text": "Core Rule", "color": "green" },
+          "fields": [
+            { "label": "Example", "value": "C to F: both have C - keep C in same voice" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Voice Leading Analysis",
+      "bgColor": "blue-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I - vi (C to Am)",
+          "description": "Perfect voice leading example",
+          "badge": { "text": "Perfect voice leading example", "color": "blue" },
+          "fields": [
+            { "label": "Soprano", "value": "G \u2192 G (common tone)" },
+            { "label": "Alto", "value": "E \u2192 E (common tone)" },
+            { "label": "Tenor", "value": "C \u2192 C (common tone)" },
+            { "label": "Bass", "value": "C \u2192 A (down a 3rd)" },
+            { "label": "Why It Works", "value": "Three voices stay the same, only bass moves. Creates smooth, connected sound." }
+          ]
+        },
+        {
+          "title": "V - I (G to C)",
+          "description": "Classic resolution with leading tone",
+          "badge": { "text": "Classic resolution with leading tone", "color": "blue" },
+          "fields": [
+            { "label": "Soprano", "value": "B \u2192 C (leading tone resolution)" },
+            { "label": "Alto", "value": "D \u2192 E (step up)" },
+            { "label": "Tenor", "value": "G \u2192 G (common tone)" },
+            { "label": "Bass", "value": "G \u2192 C (down a 5th)" },
+            { "label": "Why It Works", "value": "Leading tone resolves up, bass moves by 5th (strong), other voices move smoothly." }
+          ]
+        },
+        {
+          "title": "IV - V (F to G)",
+          "description": "Smooth voice leading sets up dominant",
+          "badge": { "text": "Smooth voice leading sets up dominant", "color": "blue" },
+          "fields": [
+            { "label": "Soprano", "value": "A \u2192 B (step up)" },
+            { "label": "Alto", "value": "F \u2192 D (down a 3rd)" },
+            { "label": "Tenor", "value": "C \u2192 G (up a 5th)" },
+            { "label": "Bass", "value": "F \u2192 G (step up)" },
+            { "label": "Why It Works", "value": "Contrary motion between soprano and alto creates balance. Sets up strong V-I resolution." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instrument-Specific Applications",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Piano/Keyboard",
+          "items": [
+            "Practice chord progressions with close voicings (notes within an octave)",
+            "Focus on which fingers stay on the same keys between chords",
+            "Use voice leading to determine chord inversions",
+            "Practice scales in 4-part harmony to internalize smooth motion"
+          ]
+        },
+        {
+          "title": "Guitar",
+          "items": [
+            "Use chord inversions to create bass lines that connect smoothly",
+            "Practice moveable chord shapes that share common tones",
+            "Learn how to voice chords across different string sets",
+            "Focus on the top note (melody) of chord progressions"
+          ]
+        },
+        {
+          "title": "Songwriting",
+          "items": [
+            "Choose chord inversions based on the bass line you want",
+            "Consider the melody when selecting chord voicings",
+            "Use voice leading to create harmonic rhythm",
+            "Think about how chord tones connect to create secondary melodies"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Voice Leading in \"Let It Be\"",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Analyzing the Classic Progression: C - G - Am - F",
+          "fields": [
+            { "label": "Top Voice (Melody) Movement", "value": "C \u2192 B \u2192 A \u2192 A - Beautiful descending line that creates forward motion" },
+            { "label": "Bass Movement", "value": "C \u2192 G \u2192 A \u2192 F - Strong root movement by 4ths and 5ths" }
+          ],
+          "items": [
+            "Stepwise motion in the top voice (C\u2192B\u2192A)",
+            "Strong bass movement with clear harmonic direction",
+            "Inner voices move smoothly with minimal leaps",
+            "Common tones where possible (A held between Am and F)",
+            "Result: A progression that feels inevitable and emotionally satisfying"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Voice Leading Problems",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "bgColor": "red-50",
+          "items": [
+            "Parallel 5ths and octaves between voices",
+            "Large leaps when small steps would work",
+            "Unresolved leading tones",
+            "Crossing voices unnecessarily",
+            "Ignoring common tones between chords"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "bgColor": "green-50",
+          "items": [
+            "Move voices by the smallest possible distance",
+            "Keep common tones in the same voice",
+            "Use contrary motion when possible",
+            "Resolve tendency tones properly",
+            "Think melodically about each voice"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Exercises",
+        "items": [
+          "Practice I-V-I with smooth voice leading",
+          "Play chord progressions focusing on the top note",
+          "Identify common tones between adjacent chords",
+          "Practice the same progression with different chord inversions"
+        ]
+      },
+      {
+        "title": "Advanced Exercises",
+        "items": [
+          "Compose 4-part harmony for simple melodies",
+          "Analyze voice leading in Bach chorales",
+          "Practice smooth voice leading with extended chords",
+          "Create bass lines that connect chord changes smoothly"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/inversions", "label": "Chord Inversions" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords/extended", "label": "Extended Chords" },
+    { "href": "/lessons/songs/chords/roman-numerals", "label": "Roman Numeral Analysis" },
+    { "href": "/lessons/songs/chords/progressions", "label": "Common Chord Progressions" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "songInfo": {
+    "title": "The Devil Went Down to Georgia",
+    "artist": "Charlie Daniels Band",
+    "album": "Million Mile Reflections",
+    "released": "1979",
+    "genre": "Country Rock / Southern Rock",
+    "tempo": "138 BPM",
+    "duration": "3:36",
+    "key": "D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Expert",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Expert",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D natural minor (Aeolian)",
+          "notes": "D - E - F - G - A - Bb - C - D",
+          "application": "Primary scale for rhythm guitar and the dark verse sections"
+        },
+        {
+          "scale": "D harmonic minor",
+          "notes": "D - E - F - G - A - Bb - C# - D",
+          "application": "Fiddle solo sections and fast runs, the raised 7th (C#) creates dramatic tension"
+        },
+        {
+          "scale": "D Dorian",
+          "notes": "D - E - F - G - A - B - C - D",
+          "application": "Used in transitional passages and some melodic fills, the raised 6th (B natural) adds brightness"
+        },
+        {
+          "scale": "D minor pentatonic",
+          "notes": "D - F - G - A - C",
+          "application": "Foundation for rock-oriented guitar riffs and power chord sections"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with Harmonic Minor inflections",
+      "keySignature": "1 flat (Bb)",
+      "relativeMinor": "D minor is the relative minor of F major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "C",
+          "Bb",
+          "A"
+        ],
+        "progression": "i - VII - VI - V",
+        "description": "Dramatic descending minor progression creating the dark, driving energy of the verses"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse (Narrative)",
+          "progression": "Dm - C - Bb - A",
+          "romanNumerals": "i - VII - VI - V",
+          "description": "Descending diatonic progression supporting the spoken narrative, A major serves as V with raised third for dominant function"
+        },
+        {
+          "section": "Johnny's Solo (Fast Section)",
+          "progression": "Dm - Dm - Gm - Dm - A - Dm",
+          "romanNumerals": "i - i - iv - i - V - i",
+          "description": "Minor i-iv-V progression providing harmonic foundation for the virtuosic fiddle/guitar passages"
+        },
+        {
+          "section": "Devil's Solo",
+          "progression": "Dm - Bb - C - Dm",
+          "romanNumerals": "i - VI - VII - i",
+          "description": "Darker progression with VI-VII movement representing the devil's sinister playing"
+        },
+        {
+          "section": "Chorus/Hook",
+          "progression": "Dm - F - C - Dm",
+          "romanNumerals": "i - III - VII - i",
+          "description": "Hook section using the relative major (F) for brief harmonic brightness before returning to minor"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm (i) - Dark tonic center establishing the story's tension and drama",
+        "C (VII) - Subtonic providing unstable movement away from tonic",
+        "Bb (VI) - Submediant creating a half-step tension above the dominant",
+        "A (V) - Dominant chord using the raised 3rd (C#) from harmonic minor for strong resolution to Dm",
+        "Gm (iv) - Subdominant minor adding depth during the solo sections",
+        "F (III) - Relative major providing brief moments of harmonic brightness in the chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fast Alternate Picking",
+      "description": "Rapid alternate picking technique required to execute the fiddle-inspired melody lines at 138 BPM, demanding precision and speed",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The fiddle melody adapted for guitar requires picking speeds of 8-12 notes per beat",
+          "Uses strict alternate (down-up-down-up) picking for efficiency at speed",
+          "Primary positions: 5th fret (D minor position), 10th fret (upper position)",
+          "Sixteenth note runs through D harmonic minor scale patterns",
+          "String crossing between adjacent strings (1st-2nd, 2nd-3rd) at high speed"
+        ],
+        "sequence": [
+          "Begin with D minor scale runs starting on the 10th fret of the high E string",
+          "Descend through the scale pattern: D-C#-C-Bb-A-G-F-E-D",
+          "Execute rapid string crosses between B and high E strings",
+          "Use position shifts to maintain scale patterns across the neck",
+          "Build speed incrementally from quarter notes to sixteenth notes"
+        ],
+        "tips": [
+          "Start at 50% tempo (70 BPM) and build speed over weeks/months",
+          "Focus on pick economy - keep pick strokes small and controlled",
+          "Anchor your picking hand lightly on the bridge for stability",
+          "Practice with a metronome and only increase tempo when clean at current speed",
+          "The key to speed is relaxation - tension kills velocity and accuracy",
+          "Use thin picks (0.60-0.73mm) for faster string response"
+        ],
+        "chords": [
+          "Dm",
+          "Gm",
+          "A"
+        ],
+        "progression": "Over Dm - Gm - Dm - A - Dm solo section"
+      }
+    },
+    {
+      "name": "String Skipping Passages",
+      "description": "Fiddle-inspired passages requiring skipping over strings to replicate the wide intervallic leaps of the violin melody",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The fiddle can leap between intervals easily; guitar requires string skipping",
+          "Common skips: 1st to 3rd string, 2nd to 4th string",
+          "Uses intervals of 5ths, 6ths, and octaves that require non-adjacent strings",
+          "Combines string skipping with rapid alternate picking",
+          "Requires precise right-hand control to avoid hitting skipped strings"
+        ],
+        "sequence": [
+          "Practice isolated string skipping patterns (e.g., 1st string to 3rd string and back)",
+          "Add left-hand scale patterns while maintaining the skip",
+          "Combine skips with alternate picking at slow tempo",
+          "Build speed gradually while maintaining clean string isolation",
+          "Integrate into the full solo passages"
+        ],
+        "tips": [
+          "Mute skipped strings with available left-hand fingers",
+          "Keep the pick angle consistent through string skips",
+          "Practice string skipping exercises separately from the song",
+          "Use rest strokes on the target string to develop accuracy",
+          "This technique takes months of dedicated practice to master at full speed"
+        ],
+        "chords": [],
+        "progression": "Over Dm solo section"
+      }
+    },
+    {
+      "name": "Power Chord Rhythm",
+      "description": "Driving power chord rhythm guitar part that supports the vocal narrative and solo sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "D5: X-5-7-7-X-X (5th fret A string root)",
+          "C5: X-3-5-5-X-X (3rd fret A string root)",
+          "Bb5: X-1-3-3-X-X (1st fret A string root)",
+          "A5: X-0-2-2-X-X (Open A string root)",
+          "Eighth note driving rhythm with palm muting",
+          "Occasional open chord voicings for dynamic contrast"
+        ],
+        "sequence": [
+          "Palm-muted eighth notes on the root power chord",
+          "Release palm mute on accent beats for dynamic punch",
+          "Follow the i-VII-VI-V progression with steady driving rhythm",
+          "Add slight rhythmic variation during transitions between sections"
+        ],
+        "tips": [
+          "Keep the palm muting consistent for the driving feel",
+          "Accent the first beat of each chord change",
+          "This part is the backbone - keep it steady and locked with the drums",
+          "Use downstrokes exclusively for heavier attack"
+        ],
+        "chords": [
+          "D5",
+          "C5",
+          "Bb5",
+          "A5"
+        ],
+        "progression": "D5 - C5 - Bb5 - A5"
+      }
+    },
+    {
+      "name": "Rapid Position Shifts",
+      "description": "Quick left-hand position changes necessary to cover the wide range of the fiddle melody across the fretboard",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The fiddle melody spans over two octaves, requiring multiple fretboard positions",
+          "Key positions: open/1st position, 5th position, 10th position, 12th position",
+          "Shift points must align with rhythmic subdivisions for seamless transitions",
+          "Use guide fingers to slide between positions smoothly"
+        ],
+        "sequence": [
+          "Practice the melody in each position independently",
+          "Identify the optimal shift points in each phrase",
+          "Use guide fingers (a finger that slides to the new position) for smooth transitions",
+          "Practice shift timing with a metronome at slow tempo"
+        ],
+        "tips": [
+          "Map out all position shifts before attempting to play the full passage",
+          "Keep left-hand thumb mobile behind the neck during shifts",
+          "Look ahead in the music - anticipate the next position before you need to be there",
+          "Smooth shifts come from practicing the motion, not just the notes"
+        ],
+        "chords": [],
+        "progression": "Throughout solo sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:20",
+      "technique": "Power Chord Rhythm",
+      "key": "D Minor",
+      "description": "Dramatic opening with driving minor key rhythm establishing the dark narrative atmosphere",
+      "chords": [
+        "Dm",
+        "C",
+        "Bb",
+        "A"
+      ],
+      "progression": "Dm - C - Bb - A",
+      "notes": [
+        "Driving eighth-note rhythm sets the intense pace",
+        "Descending chord progression creates dramatic tension",
+        "Palm-muted power chords with accent hits",
+        "Establishes the 138 BPM tempo immediately"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse (Narrative)",
+      "timeStamp": "0:20-1:00",
+      "technique": "Power Chord Rhythm",
+      "key": "D Minor",
+      "description": "The storytelling verse sections with spoken/sung narrative over the driving minor chord progression",
+      "chords": [
+        "Dm",
+        "Dm",
+        "C",
+        "Bb",
+        "A",
+        "Dm"
+      ],
+      "progression": "Dm - C - Bb - A - Dm",
+      "notes": [
+        "Charlie Daniels' vocal delivery is half-spoken, half-sung",
+        "Rhythm guitar provides the harmonic bed under the narrative",
+        "The descending progression builds dramatic momentum",
+        "Band dynamics support the storytelling arc"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Devil's Solo",
+      "timeStamp": "1:00-1:30",
+      "technique": "Fast Alternate Picking",
+      "key": "D Minor",
+      "description": "The devil's fiddle solo section - dark, aggressive runs through D harmonic minor adapted for guitar",
+      "chords": [
+        "Dm",
+        "Bb",
+        "C",
+        "Dm"
+      ],
+      "progression": "Dm - Bb - C - Dm",
+      "notes": [
+        "Dark, aggressive fiddle runs adapted for guitar",
+        "Uses D harmonic minor with emphasis on the raised 7th (C#) for sinister tension",
+        "Rapid sixteenth-note passages with chromatic embellishments",
+        "This section demands expert-level alternate picking speed"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Johnny's Solo",
+      "timeStamp": "1:30-2:20",
+      "technique": "Fast Alternate Picking",
+      "key": "D Minor",
+      "description": "Johnny's triumphant fiddle response - the most demanding section with blazing fast runs through D minor and harmonic minor scales",
+      "chords": [
+        "Dm",
+        "Dm",
+        "Gm",
+        "Dm",
+        "A",
+        "Dm"
+      ],
+      "progression": "Dm - Gm - Dm - A - Dm",
+      "notes": [
+        "The most technically demanding section of the entire song",
+        "Wide-ranging runs spanning two octaves with rapid position shifts",
+        "Combines D natural minor, D harmonic minor, and D minor pentatonic",
+        "String skipping passages replicate the fiddle's intervallic leaps",
+        "Must convey the triumphant, virtuosic spirit of Johnny's playing"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Chorus/Hook",
+      "timeStamp": "2:20-2:50",
+      "technique": "Power Chord Rhythm",
+      "key": "D Minor",
+      "description": "The memorable chorus hook the iconic vocal hook with the full band driving the energy",
+      "chords": [
+        "Dm",
+        "F",
+        "C",
+        "Dm"
+      ],
+      "progression": "Dm - F - C - Dm",
+      "notes": [
+        "The most singable, memorable section of the song",
+        "Brief lift to F major (III) provides harmonic brightness",
+        "Full band unison creates maximum energy",
+        "Returns to Dm tonic for resolution"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:50-3:36",
+      "technique": "Fast Alternate Picking",
+      "key": "D Minor",
+      "description": "Final section with Johnny's victory theme, reprising solo material and ending on a triumphant Dm resolution",
+      "chords": [
+        "Dm",
+        "Gm",
+        "Dm",
+        "Dm"
+      ],
+      "progression": "Dm - Gm - Dm (final resolution)",
+      "notes": [
+        "Reprises Johnny's solo material as a victory lap",
+        "Combination of fast runs and rhythmic hook material",
+        "Band builds to final climax",
+        "Ends with definitive Dm chord resolution"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard or Gibson ES-335",
+      "alternatives": [
+        "Fender Telecaster Deluxe",
+        "PRS Custom 24",
+        "Epiphone Les Paul",
+        "Any versatile electric guitar with fast neck"
+      ],
+      "pickup": "Humbuckers for rhythm; bridge pickup for lead runs with clarity at speed"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800",
+      "alternatives": [
+        "Fender Twin Reverb (for cleaner lead tone)",
+        "Mesa Boogie Dual Rectifier",
+        "Peavey Classic 30",
+        "Marshall DSL40CR"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate crunch for rhythm, boost for solos)",
+        "treble": "7 (clarity for fast runs)",
+        "middle": "6 (presence without mud)",
+        "bass": "5 (tight low end for palm-muted rhythms)",
+        "presence": "7 (articulate note definition at speed)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate overdrive for rhythm; boost pedal for solos (e.g., Ibanez Tube Screamer)",
+      "reverb": "Light room reverb - too much reverb blurs fast passages",
+      "other": "Compression helps even out dynamics during fast runs; noise gate useful for high-gain sections"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord rhythm progression and song structure",
+      "steps": [
+        "Master Dm, C, Bb, and A power chord shapes",
+        "Practice the i-VII-VI-V rhythm progression with palm muting",
+        "Learn the song structure and chord changes for each section",
+        "Develop basic eighth-note rhythm at slow tempo (90 BPM)"
+      ],
+      "timeEstimate": "2-3 weeks for rhythm part basics"
+    },
+    "intermediate": {
+      "focus": "Develop the technical foundation needed for the solo sections",
+      "steps": [
+        "Learn D natural minor and D harmonic minor scale patterns across the neck",
+        "Practice alternate picking exercises at increasing tempos",
+        "Learn simplified versions of the solo melodies at 50% speed",
+        "Work on position shifts between key fretboard areas"
+      ],
+      "timeEstimate": "2-4 months for simplified lead parts"
+    },
+    "advanced": {
+      "focus": "Master the full solo sections at performance tempo with all techniques",
+      "steps": [
+        "Build alternate picking speed to handle sixteenth notes at 138 BPM",
+        "Master string skipping passages with clean execution",
+        "Achieve seamless position shifts across the full fretboard range",
+        "Develop the stamina to perform the extended solo sections without fatigue",
+        "Work on expressive dynamics that convey the narrative's drama"
+      ],
+      "timeEstimate": "6-12 months for full performance-quality execution"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Attempting the solos at full speed too early - this leads to sloppy technique habits",
+      "Neglecting the rhythm guitar part - it must be rock-solid before adding lead",
+      "Using too much gain, which masks sloppy picking technique",
+      "Ignoring the harmonic minor raised 7th (C#) which gives the solos their characteristic sound",
+      "Tensing up during fast passages - relaxation is critical for speed",
+      "Not learning the melody accurately - approximating notes instead of playing exact pitches"
+    ],
+    "practiceRoutine": [
+      "Warm up with D minor scale runs at comfortable tempo for 10 minutes",
+      "Alternate picking exercises on single strings at increasing tempos for 10 minutes",
+      "String skipping patterns isolated from the song context for 10 minutes",
+      "Work on one 4-bar phrase of the solo at 50% tempo, building to 75%",
+      "Practice the rhythm guitar part to maintain balance between lead and rhythm skills",
+      "End with full song play-through of sections you can execute cleanly"
+    ],
+    "focusAreas": [
+      "Alternate picking speed and accuracy",
+      "D harmonic minor scale fluency across all positions",
+      "String skipping precision at increasing tempos",
+      "Position shift smoothness and timing",
+      "Right-hand and left-hand synchronization at speed",
+      "Endurance for sustained fast playing sections"
+    ],
+    "metronomeWork": [
+      "Start solo passages at 70 BPM (50% of performance tempo)",
+      "Increase by 5 BPM increments only when current tempo is clean and relaxed",
+      "Target milestones: 90 BPM, 110 BPM, 125 BPM, then full 138 BPM",
+      "Practice rhythm guitar at 100 BPM building to full tempo",
+      "Use subdivisions (eighth notes, then sixteenth notes) to build speed incrementally"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Long Haired Country Boy",
+        "difficulty": "Intermediate",
+        "similarity": "Southern rock style with fiddle-guitar interplay"
+      },
+      {
+        "title": "The South's Gonna Do It Again",
+        "difficulty": "Advanced",
+        "similarity": "Fast southern rock with similar instrumental energy"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Eruption",
+        "artist": "Van Halen",
+        "difficulty": "Expert",
+        "similarity": "Virtuosic speed and alternate picking demands"
+      },
+      {
+        "title": "Free Bird (Solo)",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Advanced",
+        "similarity": "Extended southern rock solo requiring speed and stamina"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Start with basic minor key power chord riffs before tackling this"
+      },
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "difficulty": "Expert",
+        "similarity": "Similar demands for fast alternate picking and position shifts"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "country-rock",
+      "southern-rock",
+      "fast-picking",
+      "virtuoso"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "6-12 months"
+  }
+}

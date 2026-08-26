@@ -1,0 +1,315 @@
+{
+  "slug": "sixth",
+  "chordInfo": {
+    "name": "Sixth Chords",
+    "pageTitle": "Sixth Chord Theory",
+    "subtitle": "Discover the warm, polished sound of sixth chords - a vintage harmonic color essential for jazz, swing, country, and Hawaiian music.",
+    "colorScheme": "amber",
+    "tags": ["Jazz Standard", "Swing", "Country", "Vintage Tone"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Sixth Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Four-note chords adding a major 6th interval to a major triad" },
+      { "label": "Formula", "value": "Root + Major 3rd + Perfect 5th + Major 6th (1-3-5-6)" },
+      { "label": "Relationship", "value": "C6 contains the same notes as Am7 (C-E-G-A)" },
+      { "label": "Sound Quality", "value": "Warm, resolved, polished - less tension than a seventh chord" },
+      { "label": "Function", "value": "Tonic resolution, jazz endings, vintage color" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Jazz & Swing", "value": "Standard tonic chord in jazz standards and big band arrangements" },
+      { "label": "Country & Western Swing", "value": "Signature chord for classic country and pedal steel harmony" },
+      { "label": "Hawaiian & Surf", "value": "Defining sound of slack-key guitar and vintage surf music" },
+      { "label": "Pop & R&B", "value": "Adds sophistication and warmth to pop progressions" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Sixth Chord Construction",
+    "boxes": [
+      {
+        "title": "C6 (Major Sixth) Example",
+        "items": [
+          "Root: C (1st degree)",
+          "Major 3rd: E (3rd degree)",
+          "Perfect 5th: G (5th degree)",
+          "Major 6th: A (6th degree)",
+          "Result: Warm, resolved sound with gentle color"
+        ]
+      },
+      {
+        "title": "The Am7 Connection",
+        "items": [
+          "C6 = C-E-G-A, Am7 = A-C-E-G",
+          "Same four notes, different root",
+          "Context determines which name applies",
+          "Bass note and chord function decide the label",
+          "This interchangeability is key to jazz voice leading"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Built from: Major scale degrees 1-3-5-6",
+          "The 6th replaces the 7th for a more settled feel",
+          "Common on I and IV chords in jazz progressions",
+          "Works beautifully as a final tonic chord",
+          "Creates less forward motion than seventh chords"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Open Position Sixth Chords",
+      "tipTitle": "Start Here",
+      "tipDescription": "These open voicings are the most common sixth chord shapes and a great starting point for adding sixth chords to your playing.",
+      "voicings": [
+        { "name": "C6", "chord": "C_major", "notes": "C-E-G-A", "fingering": "Based on open C shape with added 6th", "use": "Jazz in C, tonic resolution" },
+        { "name": "G6", "chord": "G_major", "notes": "G-B-D-E", "fingering": "Based on open G shape with added 6th", "use": "Country, folk, jazz in G" },
+        { "name": "D6", "chord": "D_major", "notes": "D-F#-A-B", "fingering": "Based on open D shape with added 6th", "use": "Country and swing in D" },
+        { "name": "E6", "chord": "E_major", "notes": "E-G#-B-C#", "fingering": "Based on open E shape with added 6th", "use": "Blues and jazz in E" },
+        { "name": "A6", "chord": "A_minor", "notes": "A-C#-E-F#", "fingering": "Based on open A shape with added 6th", "use": "Jazz standards, swing in A" }
+      ]
+    },
+    {
+      "title": "Moveable Sixth Chord Shapes",
+      "tipTitle": "Expand Your Range",
+      "tipDescription": "These barre-based shapes can be moved up and down the neck to play sixth chords in any key, giving you full fretboard coverage.",
+      "voicings": [
+        { "name": "F6 (E-shape barre)", "chord": "E_major", "notes": "F-A-C-D", "fingering": "E-shape barre at 1st fret with 6th added", "use": "Jazz and bossa nova in F" },
+        { "name": "Bb6 (A-shape barre)", "chord": "Bb", "notes": "Bb-D-F-G", "fingering": "A-shape barre at 1st fret with 6th added", "use": "Swing and big band in Bb" },
+        { "name": "Eb6 (compact voicing)", "chord": "CMaj7", "notes": "Eb-G-Bb-C", "fingering": "Compact mid-register voicing", "use": "Jazz comping, smooth harmony" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Sixth Chord Progressions",
+    "items": [
+      {
+        "title": "Jazz Turnaround: I6 - vi7 - ii7 - V7",
+        "titleColor": "text-amber-700",
+        "chords": [
+          { "chord": "C_major", "label": "C6", "numeral": "I6" },
+          { "chord": "Am7", "label": "Am7", "numeral": "vi7" },
+          { "chord": "Dm7", "label": "Dm7", "numeral": "ii7" },
+          { "chord": "G7", "label": "G7", "numeral": "V7" }
+        ],
+        "strumming": {
+          "pattern": "D - DU DU DU",
+          "description": "Smooth jazz comping rhythm",
+          "tempo": "100-130 BPM",
+          "feel": "Swinging, sophisticated",
+          "genre": "Jazz, Swing"
+        },
+        "alphaTex": "(0.5 3.4 2.3 0.2 0.1).1 | (0.5 0.4 2.3 1.2 0.1).1 | (1.4 0.3 2.2 1.1).1 | (3.6 2.5 0.4 0.3 0.2 1.1).1",
+        "alphaTexTitle": "Jazz Turnaround (C6-Am7-Dm7-G7)",
+        "description": "A classic jazz turnaround using C6 as the tonic chord. Notice how C6 and Am7 share the same notes - the progression creates smooth voice leading through the cycle."
+      },
+      {
+        "title": "Country Swing: I6 - IV6 - V7 - I6",
+        "titleColor": "text-amber-700",
+        "chords": [
+          { "chord": "G_major", "label": "G6", "numeral": "I6" },
+          { "chord": "C_major", "label": "C6", "numeral": "IV6" },
+          { "chord": "D7", "label": "D7", "numeral": "V7" },
+          { "chord": "G_major", "label": "G6", "numeral": "I6" }
+        ],
+        "strumming": {
+          "pattern": "D - D - DU DU",
+          "description": "Country boom-chick with swing feel",
+          "tempo": "110-140 BPM",
+          "feel": "Bouncy, bright, vintage",
+          "genre": "Country, Western Swing"
+        },
+        "alphaTex": "(3.6 0.5 0.4 0.3 0.2 0.1).1 | (0.5 3.4 2.3 0.2 0.1).1 | (2.4 1.3 2.2 0.1).1 | (3.6 0.5 0.4 0.3 0.2 0.1).1",
+        "alphaTexTitle": "Country Swing (G6-C6-D7-G6)",
+        "description": "A bright country swing progression where sixth chords on I and IV create that classic vintage country sound, resolving through the dominant V7."
+      },
+      {
+        "title": "Vintage Jazz Ending: IVMaj7 - iv6 - I6",
+        "titleColor": "text-amber-700",
+        "chords": [
+          { "chord": "FMaj7", "label": "FMaj7", "numeral": "IVMaj7" },
+          { "chord": "F_major", "label": "Fm6", "numeral": "iv6" },
+          { "chord": "C_major", "label": "C6", "numeral": "I6" }
+        ],
+        "strumming": {
+          "pattern": "D - - DU - -",
+          "description": "Slow ballad ending",
+          "tempo": "60-80 BPM",
+          "feel": "Elegant, final, nostalgic",
+          "genre": "Jazz Ballad, Standards"
+        },
+        "alphaTex": "(1.6 0.5 2.4 2.3 1.2).1 | (1.6 0.5 1.4 2.3 1.2).1 | (0.5 3.4 2.3 0.2 0.1).1",
+        "alphaTexTitle": "Jazz Ending (FMaj7-Fm6-C6)",
+        "description": "The classic jazz ballad ending. The IV to iv to I6 movement is one of the most beautiful cadences in harmony, ending on a sixth chord for warmth without tension."
+      },
+      {
+        "title": "Hawaiian Vamp: I6 - IV6",
+        "titleColor": "text-amber-700",
+        "chords": [
+          { "chord": "C_major", "label": "C6", "numeral": "I6" },
+          { "chord": "F_major", "label": "F6", "numeral": "IV6" }
+        ],
+        "strumming": {
+          "pattern": "D DU UDU",
+          "description": "Island strum pattern",
+          "tempo": "90-110 BPM",
+          "feel": "Relaxed, tropical, warm",
+          "genre": "Hawaiian, Surf"
+        },
+        "alphaTex": "(0.5 3.4 2.3 0.2 0.1).1 | (1.6 0.5 2.4 2.3 1.2).1",
+        "alphaTexTitle": "Hawaiian Vamp (C6-F6)",
+        "description": "A simple two-chord vamp that captures the essence of Hawaiian slack-key guitar. Sixth chords are the signature sound of traditional Hawaiian music."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Let all four notes ring clearly, especially the added 6th",
+        "Practice switching between a major chord and its sixth to hear the color change",
+        "Play C6 then Am7 back to back to internalize their relationship",
+        "Use a relaxed strumming hand for the characteristic warm tone"
+      ],
+      "applicationItems": [
+        "Replace any tonic major chord with a sixth for instant vintage flavor",
+        "Use sixth chords as smooth jazz endings instead of plain major chords",
+        "Combine with dominant sevenths for authentic swing and country sounds",
+        "Try alternating between the sixth and major seventh on the same root"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Sixth Chords",
+    "categories": [
+      {
+        "title": "Jazz & Swing Standards",
+        "colorBg": "bg-amber-100",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "songs": [
+          "\"Fly Me to the Moon\" - Frank Sinatra (Am7/C6 interchange)",
+          "\"Take the 'A' Train\" - Duke Ellington (C6 openings)",
+          "\"Satin Doll\" - Duke Ellington (Dm7-G7 to C6 resolution)",
+          "\"Moonlight Serenade\" - Glenn Miller (sweeping sixth chord pads)",
+          "\"Dream a Little Dream of Me\" - The Mamas & The Papas (C6 color)"
+        ]
+      },
+      {
+        "title": "Country, Hawaiian & Pop",
+        "colorBg": "bg-yellow-100",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700",
+        "songs": [
+          "\"Crazy\" - Patsy Cline (sixth chords throughout country waltz)",
+          "\"Hey Good Lookin'\" - Hank Williams (classic country sixth usage)",
+          "\"Sleepwalk\" - Santo & Johnny (iconic sixth chord melody)",
+          "\"Aloha 'Oe\" - Traditional Hawaiian (defining sixth chord sound)",
+          "\"Beyond the Sea\" - Bobby Darin (swing-era sixth chord movement)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Sixth Chord Skills",
+    "tipDescription": "These exercises will help you master sixth chords and integrate their warm, vintage sound into your playing across multiple styles.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Major to Sixth Comparison",
+        "content": "Progression: C - C6 - F - F6 - G - G6",
+        "detail": "Play each major chord, then add the 6th to hear the tonal shift. Hold each chord for two beats and listen to how the added note changes the character.",
+        "tip": "Focus on which finger adds the 6th and keep the rest of the chord ringing cleanly."
+      },
+      {
+        "title": "Exercise 2: Sixth and Minor Seventh Interchange",
+        "content": "Alternation: C6 - Am7 - F6 - Dm7 - G6 - Em7",
+        "detail": "Play each pair back to back. Since they share the same notes, practice hearing when the sound functions as a sixth chord versus a minor seventh by emphasizing different bass notes.",
+        "tip": "Accent the bass note on beat 1 to establish the root and hear the chord identity shift."
+      },
+      {
+        "title": "Exercise 3: Swing Rhythm Comping",
+        "content": "Progression: G6 - C6 - D7 - G6 (swing eighths)",
+        "detail": "Comp through this country-swing progression using a shuffle feel. Focus on smooth transitions and keeping the swing rhythm steady with a relaxed right hand.",
+        "tip": "Use a metronome with a swing setting and gradually increase tempo from 100 to 140 BPM."
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Sixth Chord Concepts",
+    "concepts": [
+      {
+        "title": "Sixth vs. Seventh: When to Use Each",
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "items": [
+          "Sixth chords resolve and settle; seventh chords create tension and motion",
+          "Use a 6th on the I chord for a final, resting sound (C6 ending a tune)",
+          "Use a 7th on the V chord for forward motion (G7 pulling to C)",
+          "In jazz, I6 and IMaj7 are often interchangeable on tonic chords",
+          "Sixth chords avoid the half-step dissonance present in major seventh chords"
+        ]
+      },
+      {
+        "title": "Sixth Chord Variations and Extensions",
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700",
+        "items": [
+          "Minor 6th (Cm6): Minor triad + major 6th - dark, dramatic sound",
+          "6/9 chord (C6/9): Adds both the 6th and 9th for a lush modern jazz voicing",
+          "Sixth chords can substitute for minor 7th chords (and vice versa)",
+          "In chord-melody arrangements, sixth voicings keep the melody note accessible",
+          "Walking bass lines pair naturally with sixth chord comping"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand sixth chords, explore related chord types that expand your harmonic palette and connect to new styles.",
+    "links": [
+      {
+        "slug": "major-seventh",
+        "title": "Major Seventh Chords",
+        "description": "Compare the lush, dreamy major seventh sound with the warm resolution of sixth chords.",
+        "linkText": "Explore major sevenths",
+        "icon": "M7",
+        "hoverBorder": "hover:border-rose-300",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "slug": "minor-seventh",
+        "title": "Minor Seventh Chords",
+        "description": "Explore the minor seventh - the relative twin of the sixth chord sharing the same notes.",
+        "linkText": "Explore minor sevenths",
+        "icon": "m7",
+        "hoverBorder": "hover:border-sky-300",
+        "iconBg": "bg-sky-100",
+        "iconHoverBg": "group-hover:bg-sky-200",
+        "linkColor": "text-sky-600",
+        "linkHoverColor": "group-hover:text-sky-700"
+      },
+      {
+        "slug": "seventh",
+        "title": "Dominant Seventh Chords",
+        "description": "Learn the dominant seventh - the tension-filled counterpart to the resolved sixth chord.",
+        "linkText": "Explore dominant sevenths",
+        "icon": "7",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  }
+}

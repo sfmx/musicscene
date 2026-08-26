@@ -1,0 +1,404 @@
+{
+  "songInfo": {
+    "title": "We Will Rock You",
+    "artist": "Queen",
+    "album": "News of the World",
+    "released": "1977",
+    "genre": "Arena Rock",
+    "tempo": "81 BPM",
+    "duration": "2:01",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major, established primarily by the guitar solo section since the body of the song is percussion and vocals only",
+      "scalesUsed": [
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Brian May's guitar solo is built on A minor pentatonic with expressive bends, giving the solo its bluesy, anthemic character"
+        },
+        {
+          "scale": "A major pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Mixed into the solo for bright, triumphant moments, particularly on the high bends and resolution phrases"
+        },
+        {
+          "scale": "A Mixolydian",
+          "notes": "A - B - C# - D - E - F# - G - A",
+          "application": "The underlying chord movement A-D-A-E fits Mixolydian tonality with the natural seventh (G) appearing in passing"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Blues-rock hybrid in the solo section; the stomping body is essentially atonal percussion",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "I - IV - I - V",
+        "description": "The guitar only enters for the solo section at the end. The chord progression is a classic rock I-IV-I-V pattern played by Brian May with his signature layered guitar tone."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Stomp Section (Body of Song)",
+          "progression": "No guitar chords",
+          "romanNumerals": "N/A",
+          "description": "The famous stomp-stomp-clap rhythm with no guitar or bass. The entire body of the song is built on the iconic percussion pattern with vocals."
+        },
+        {
+          "section": "Guitar Solo / Outro",
+          "progression": "A - D - A - E",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Brian May's blazing guitar solo enters over a I-IV-I-V progression, building from controlled phrases to explosive bends and multi-tracked harmony guitar lines"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic chord anchoring the solo section, providing the triumphant home key",
+        "D (IV) - Subdominant lifting the harmony and creating forward motion",
+        "E (V) - Dominant chord creating tension before resolving back to A"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Stomp-Stomp-Clap Rhythm",
+      "description": "The iconic body percussion pattern that forms the entire rhythmic foundation of the song - two foot stomps followed by a hand clap, repeated throughout",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Beat 1: Stomp (foot on floor)",
+          "Beat 2: Stomp (foot on floor)",
+          "Beat 3: Clap (hands together)",
+          "Beat 4: Rest (silence)",
+          "This pattern repeats for the entire song until the guitar solo",
+          "The rhythm is in half-time feel at 81 BPM"
+        ],
+        "sequence": [
+          "Stand or sit with feet flat on the floor",
+          "Stomp your foot firmly on beats 1 and 2",
+          "Clap your hands sharply on beat 3",
+          "Rest on beat 4 - the silence is as important as the sounds",
+          "Maintain this pattern with absolute precision throughout"
+        ],
+        "tips": [
+          "The power of this rhythm is in its precision and simplicity",
+          "Every stomp and clap must be exactly on the beat - use a metronome at 81 BPM",
+          "The rest on beat 4 creates the hypnotic, driving feel",
+          "In a group, synchronization is everything - listen to others and lock in"
+        ],
+        "chords": [],
+        "progression": "Stomp - Stomp - Clap - Rest (repeated)"
+      }
+    },
+    {
+      "name": "Brian May Guitar Solo",
+      "description": "The legendary outro guitar solo using the Red Special's distinctive tone with layered harmonies, expressive bends, and pentatonic-based rock phrasing",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Solo is played primarily in A minor pentatonic at the 5th and 12th positions",
+          "Extensive use of whole-step and one-and-a-half-step bends on the B and high E strings",
+          "Brian May uses a sixpence coin as a pick for his unique attack and tone",
+          "The solo builds in intensity from deliberate phrases to rapid-fire pentatonic runs",
+          "Harmony guitar parts are layered in thirds in the original recording"
+        ],
+        "sequence": [
+          "Solo enters on the A chord after the final vocal verse",
+          "Opens with deliberate, vocal-like bending phrases in A minor pentatonic",
+          "Builds through ascending pentatonic runs with increasing speed",
+          "Reaches the climax with sustained high bends and vibrato",
+          "Resolves on a big A chord to end the song"
+        ],
+        "tips": [
+          "Focus on the bending intonation - Brian May's bends are always perfectly pitched",
+          "Use your ring finger backed by middle and index for strong, controlled bends",
+          "Vibrato should be wide and even, applied after the bend reaches pitch",
+          "The tone requires a bright, slightly overdriven sound - not heavy distortion",
+          "Practice the solo in phrases, not as one continuous run"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - D - A - E (solo played over this progression)"
+      }
+    },
+    {
+      "name": "Open Chord Accompaniment for Solo Section",
+      "description": "Simple open A, D, and E chord strumming that accompanies the guitar solo, providing the harmonic foundation for the climactic ending",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0 (standard open A major)",
+          "D: X-X-0-2-3-2 (standard open D major)",
+          "E: 0-2-2-1-0-0 (standard open E major)",
+          "Strum with full downstrokes in a steady eighth-note pattern",
+          "This is the rhythm guitar part underneath the Brian May solo"
+        ],
+        "sequence": [
+          "Enter with a big A chord when the guitar section begins",
+          "Strum A for two bars",
+          "Move to D for two bars",
+          "Return to A for two bars",
+          "Hit E for the turnaround, then back to A"
+        ],
+        "tips": [
+          "Keep the strumming steady and powerful - you are the foundation for the solo",
+          "Do not try to compete with the lead guitar - stay solid and rhythmic",
+          "Full, open chord voicings work best for the big arena sound",
+          "The final A chord should ring out fully for the song's conclusion"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - D - A - E"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verse 1 (Stomp Section)",
+      "timeStamp": "0:00-0:30",
+      "technique": "Stomp-Stomp-Clap Rhythm",
+      "key": "N/A (percussion only)",
+      "description": "Opening verse with the iconic stomp-stomp-clap rhythm, vocals telling the story of a boy. No guitar in this section.",
+      "chords": [],
+      "progression": "No chords - body percussion only",
+      "notes": [
+        "No guitar in this section - purely vocals and body percussion",
+        "The stomp-stomp-clap pattern at 81 BPM is the entire musical foundation",
+        "Freddie Mercury's vocal commands the space with just the rhythm behind it",
+        "Guitarists can stomp and clap along while waiting for their entrance"
+      ],
+      "alphaTab": "0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2 (Stomp Section)",
+      "timeStamp": "0:30-1:00",
+      "technique": "Stomp-Stomp-Clap Rhythm",
+      "key": "N/A (percussion only)",
+      "description": "Second verse continuing the stomp-stomp-clap with the story of a young man. Still no guitar.",
+      "chords": [],
+      "progression": "No chords - body percussion only",
+      "notes": [
+        "Same percussion pattern continues through the second verse",
+        "Vocal intensity builds slightly from the first verse",
+        "The repetition of the rhythm creates an increasingly hypnotic effect",
+        "Audience participation grows through each verse in live performance"
+      ],
+      "alphaTab": "0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 3 (Stomp Section)",
+      "timeStamp": "1:00-1:26",
+      "technique": "Stomp-Stomp-Clap Rhythm",
+      "key": "N/A (percussion only)",
+      "description": "Third and final verse with the story of an old man, building maximum anticipation for the guitar entrance.",
+      "chords": [],
+      "progression": "No chords - body percussion only",
+      "notes": [
+        "Maximum vocal intensity as the final verse builds to the climax",
+        "The tension of three verses without guitar creates enormous anticipation",
+        "Freddiethe iconic vocal hookWe will rock you'",
+        "This section relies on the restraint of holding back the guitars"
+      ],
+      "alphaTab": "0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 0.6 2.5 2.4 1.3 0.2 0.1 | 5.6 7.5 7.4 6.3 5.2 5.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo / Outro",
+      "timeStamp": "1:26-2:01",
+      "technique": "Brian May Guitar Solo",
+      "key": "A Major",
+      "description": "Brian May's legendary guitar solo finally enters - a blazing, emotional tour de force over A-D-A-E that releases all the built-up tension",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "A - D - A - E",
+      "notes": [
+        "The guitar entrance is one of rock's greatest dramatic moments",
+        "Solo uses A minor pentatonic with major pentatonic inflections",
+        "Expressive bends, vibrato, and building intensity throughout",
+        "Ends with a massive sustained A chord that rings to silence"
+      ],
+      "alphaTab": "5.6 7.6 4.5 7.5 4.4 7.4 | 4.3 6.3 5.2 7.2 5.1 7.1 | 7.1 5.1 7.2 5.2 6.3 4.3 | 7.4 4.4 7.5 4.5 7.6 5.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Brian May Red Special or similar semi-hollow guitar",
+      "alternatives": [
+        "Gibson SG Standard",
+        "Burns Brian May Signature",
+        "Any guitar with bright single-coil or low-output humbucker pickups",
+        "Fender Stratocaster (bridge + middle position)"
+      ],
+      "pickup": "All three pickups in phase for the Brian May signature tone; bridge pickup alone for a brighter approximation"
+    },
+    "amp": {
+      "recommended": "Vox AC30 (the definitive Brian May amp)",
+      "alternatives": [
+        "Vox AC15",
+        "Fender Twin Reverb",
+        "Marshall Bluesbreaker",
+        "Any bright, chimey tube amp"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate crunch, not high gain)",
+        "treble": "7-8 (bright and cutting, signature May sparkle)",
+        "middle": "5 (balanced)",
+        "bass": "4 (tight low end, not boomy)",
+        "presence": "7 (high presence for clarity and sustain)"
+      }
+    },
+    "effects": {
+      "distortion": "Treble booster (like a Dallas Rangemaster or BSM treble booster) into the Vox AC30 for Brian May's signature crunch tone",
+      "delay": "Short slapback delay or tape echo for added depth and the layered feel",
+      "reverb": "Medium hall reverb simulating the multi-tracked layering of the original",
+      "other": "A sixpence coin was used as a pick by Brian May for his distinctive attack. A heavy, rigid pick can approximate this tone."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the stomp-stomp-clap rhythm and the basic A-D-E chord shapes for the solo section accompaniment",
+      "steps": [
+        "Master the stomp-stomp-clap rhythm at exactly 81 BPM",
+        "Learn the open A, D, and E major chord shapes",
+        "Practice strumming A-D-A-E as an accompaniment for the solo section",
+        "Play along with the recording, entering at the correct moment"
+      ],
+      "timeEstimate": "1 week for rhythm accompaniment"
+    },
+    "intermediate": {
+      "focus": "Learn the guitar solo melody and basic bending technique",
+      "steps": [
+        "Learn the A minor pentatonic scale at the 5th position",
+        "Practice whole-step bends on the B and high E strings",
+        "Learn the main solo phrases note-by-note from the recording",
+        "Work on connecting phrases with smooth transitions"
+      ],
+      "timeEstimate": "3-4 weeks for the solo with proper technique"
+    },
+    "advanced": {
+      "focus": "Master the complete solo with authentic tone and expressive nuance",
+      "steps": [
+        "Perfect the bending intonation - every bend must hit the exact target pitch",
+        "Develop wide, controlled vibrato for sustained notes",
+        "Learn the harmony guitar parts for multi-tracked recording",
+        "Dial in the Brian May treble booster into AC30 tone"
+      ],
+      "timeEstimate": "4-6 weeks for a polished, expressive solo performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the stomp-stomp-clap rhythm - it must be precise and unhurried at 81 BPM",
+      "Overbending notes in the solo - Brian May's bends are accurate to exact pitches",
+      "Using too much distortion for the solo - May's tone is crunchy, not saturated",
+      "Entering the guitar too early - the dramatic impact depends on the long percussion buildup"
+    ],
+    "practiceRoutine": [
+      "Practice the stomp-stomp-clap rhythm with a metronome for 3 minutes",
+      "Run through A-D-A-E chord changes for the solo section (3 minutes)",
+      "Practice A minor pentatonic bends at the 5th position (5 minutes)",
+      "Work on the solo phrases in small sections (10 minutes)",
+      "Play through the complete song from stomp to solo finish (3 minutes)"
+    ],
+    "focusAreas": [
+      "Rhythmic precision of the stomp-stomp-clap pattern",
+      "Bending accuracy and vibrato control for the solo",
+      "Dynamic building from the quiet percussion to the explosive guitar entrance",
+      "Tone control - achieving the bright, singing May guitar sound"
+    ],
+    "metronomeWork": [
+      "Lock in the body percussion at exactly 81 BPM",
+      "Practice chord changes at 81 BPM (this is actually quite slow, so precision matters)",
+      "Work on solo phrases at 60 BPM and gradually build to 81 BPM",
+      "The slow tempo means every note and bend is exposed - accuracy is paramount"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "We Are the Champions",
+        "difficulty": "Intermediate",
+        "similarity": "The companion anthem from the same album, famously paired on the single release"
+      },
+      {
+        "title": "Bohemian Rhapsody",
+        "difficulty": "Advanced",
+        "similarity": "Queen's magnum opus featuring Brian May's guitar work and multi-tracked arrangements"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Rock and Roll All Nite",
+        "artist": "KISS",
+        "difficulty": "Beginner",
+        "similarity": "Arena rock anthem with simple chord structure designed for audience participation"
+      },
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Arena anthem built on audience participation with iconic guitar entrance"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Rock and Roll All Nite",
+        "artist": "KISS",
+        "difficulty": "Beginner",
+        "similarity": "Start with basic arena rock strumming before tackling the We Will Rock You solo"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Progress to David Gilmour's expressive pentatonic soloing with similar bend-heavy approach"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "arena-rock",
+      "beginner",
+      "anthem",
+      "queen",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-4 weeks depending on solo"
+  }
+}

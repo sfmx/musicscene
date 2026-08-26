@@ -1,0 +1,221 @@
+{
+  "slug": "solo",
+  "category": "breakdowns",
+  "pageTitle": "Solo Analysis",
+  "subtitle": "Breaking down solo construction, scale choices, and how leads interact with underlying progressions",
+  "heroGradient": "bg-gradient-to-r from-indigo-50 to-purple-50",
+  "backLink": { "href": "/lessons/songs/breakdowns", "label": "Back to Song Breakdowns" },
+  "introduction": {
+    "title": "Guitar Solos: Where Theory Meets Expression",
+    "text": "Guitar solos represent the perfect marriage of technical skill, music theory knowledge, and personal expression. By analyzing great solos, we can understand how theory informs melodic choices, how scales relate to chord progressions, and how musical ideas develop over time to create compelling instrumental narratives."
+  },
+  "sections": [
+    {
+      "title": "What Solos Accomplish",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Musical Expression",
+          "icon": "\ud83c\udfad",
+          "description": "Solos provide a platform for individual musical expression within the context of the song's harmonic and structural framework.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Personal melodic interpretation", "Emotional intensity and dynamics", "Unique phrasing and timing", "Technical virtuosity display"]
+        },
+        {
+          "title": "Harmonic Exploration",
+          "icon": "\ud83c\udfbc",
+          "description": "Solos explore the harmonic possibilities within the song's chord progression, revealing new melodic potential.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Chord tone targeting", "Scale choice over progressions", "Tension and resolution patterns", "Modal interchange exploration"]
+        },
+        {
+          "title": "Structural Development",
+          "icon": "\ud83c\udfd7\ufe0f",
+          "description": "Great solos have their own internal structure, developing musical ideas through repetition, variation, and climax.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Motivic development and variation", "Call and response patterns", "Dynamic and register progression", "Rhythmic complexity evolution"]
+        },
+        {
+          "title": "Song Integration",
+          "icon": "\ud83d\udd04",
+          "description": "Effective solos connect to the song's themes, complementing rather than competing with the vocal melody and overall arrangement.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Thematic references to vocal melody", "Appropriate energy and mood", "Stylistic consistency", "Harmonic support of song structure"]
+        }
+      ]
+    },
+    {
+      "title": "Scale Choices Over Chord Progressions",
+      "bgColor": "bg-gray-50",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Diatonic Approach",
+          "icon": "\ud83c\udfbc",
+          "description": "Using scales that belong to the song's key center, following the natural harmonic relationships.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Hotel California\" Solo" },
+            { "label": "Key", "value": "B minor" },
+            { "label": "Progression", "value": "Bm-F#-A-E-G-D-Em-F#" },
+            { "label": "Scale Choice", "value": "B natural minor throughout" },
+            { "label": "Approach", "value": "Single scale over entire progression" },
+            { "label": "Strength", "value": "Cohesive, melodic sound" },
+            { "label": "Character", "value": "Smooth, flowing melodic lines" }
+          ]
+        },
+        {
+          "title": "Chord-by-Chord Approach",
+          "icon": "\ud83c\udfaf",
+          "description": "Changing scales or modes to match each chord, creating more sophisticated harmonic colors and tensions.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Cmaj7", "value": "C Ionian (major scale)" },
+            { "label": "Am7", "value": "A Dorian mode" },
+            { "label": "Dm7", "value": "D Dorian mode" },
+            { "label": "G7", "value": "G Mixolydian mode" },
+            { "label": "Approach", "value": "Mode per chord" },
+            { "label": "Strength", "value": "Rich harmonic colors" },
+            { "label": "Character", "value": "Sophisticated, jazz-influenced sound" }
+          ]
+        },
+        {
+          "title": "Pentatonic Foundation",
+          "icon": "\ud83c\udfb8",
+          "description": "Using pentatonic scales as a foundation, adding chromatic passing tones and blue notes for expression and character.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Foundation", "value": "Minor pentatonic scale" },
+            { "label": "Additions", "value": "Blue notes (b5, b3)" },
+            { "label": "Passing Tones", "value": "Chromatic connections" },
+            { "label": "Approach", "value": "Pentatonic + expression" },
+            { "label": "Strength", "value": "Emotional, bluesy character" },
+            { "label": "Character", "value": "Rock and blues authenticity" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solo Construction and Development",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Building Intensity",
+          "icon": "\ud83d\udcc8",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Register", "value": "Start low/mid, build to higher notes" },
+            { "label": "Rhythm", "value": "Begin simple, add complexity" },
+            { "label": "Dynamics", "value": "Gradual volume and intensity increase" },
+            { "label": "Density", "value": "Sparse to dense note patterns" }
+          ]
+        },
+        {
+          "title": "Motivic Development",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Statement", "value": "Introduce a simple musical idea" },
+            { "label": "Repetition", "value": "Repeat for familiarity" },
+            { "label": "Variation", "value": "Modify rhythm, pitch, or harmony" },
+            { "label": "Development", "value": "Extend and elaborate the idea" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Case Study: Analyzing Great Solos",
+      "bgColor": "bg-gray-50",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Stairway to Heaven\" Solo Analysis",
+          "icon": "\ud83c\udfb8",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "A minor" },
+            { "label": "Scale Choice", "value": "A minor pentatonic + natural minor" },
+            { "label": "Structure", "value": "3 distinct sections with building intensity" },
+            { "label": "Techniques", "value": "Bending, vibrato, legato phrasing" },
+            { "label": "Section 1", "value": "Melodic, song-like phrases" },
+            { "label": "Section 2", "value": "Increased rhythmic activity" },
+            { "label": "Section 3", "value": "Climactic high register passages" },
+            { "label": "Resolution", "value": "Returns to song's main theme" }
+          ]
+        },
+        {
+          "title": "\"Comfortably Numb\" Solo Analysis",
+          "icon": "\ud83c\udfba",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "B minor" },
+            { "label": "Scale Choice", "value": "B minor pentatonic primarily" },
+            { "label": "Approach", "value": "Melodic storytelling over virtuosity" },
+            { "label": "Techniques", "value": "Sustain, bending, space usage" },
+            { "label": "Character", "value": "Emotional expression over speed" },
+            { "label": "Phrasing", "value": "Vocal-like melodic lines" },
+            { "label": "Development", "value": "Simple motifs expanded gradually" },
+            { "label": "Impact", "value": "Every note serves the emotional content" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Analyze Any Solo",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Harmonic Analysis",
+          "icon": "\ud83d\udd0d",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Identify the underlying chord progression", "Determine the key center and any modulations", "Analyze scale choices over each chord", "Note chord tone vs. non-chord tone usage"]
+        },
+        {
+          "title": "Structural Analysis",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Map the solo's internal structure", "Identify main musical motifs", "Trace the development of ideas", "Analyze the climax and resolution"]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercise",
+    "bgColor": "bg-amber-50",
+    "items": [
+      "Choose a guitar solo from a song you love and analyze its construction.",
+      "Learn the underlying chord progression by ear or research.",
+      "Identify the primary scale(s) used in the solo.",
+      "Map out the solo's structure - where are the main sections?",
+      "Note how the soloist builds intensity throughout.",
+      "Identify the main musical motifs and how they develop.",
+      "Analyze what makes this solo memorable and effective.",
+      "This exercise will help you understand how great solos combine technical skill with musical knowledge to create compelling instrumental narratives."
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Outro Analysis", "href": "/lessons/songs/breakdowns/outro", "description": "Understanding endings and closure", "icon": "\ud83d\udea6" },
+    { "title": "Complete Song Analysis", "href": "/lessons/songs/breakdowns/full", "description": "Full song breakdown methods", "icon": "\ud83d\udd0d" }
+  ]
+}

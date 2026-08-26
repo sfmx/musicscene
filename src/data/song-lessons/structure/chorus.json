@@ -1,0 +1,283 @@
+{
+  "slug": "chorus",
+  "category": "structure",
+  "pageTitle": "Chorus Structure Analysis",
+  "subtitle": "Understanding how choruses create emotional peaks through harmonic tension and melodic climax",
+  "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
+  "backLink": { "href": "/lessons/songs/structure", "label": "Back to Song Structure" },
+  "introduction": {
+    "title": "The Chorus: Emotional Heart of the Song",
+    "text": "The chorus represents the emotional and musical peak of a song. It's where all the harmonic, melodic, and rhythmic elements combine to create maximum impact. Understanding chorus construction reveals how composers manipulate tension and release to create memorable, emotionally powerful moments.",
+    "columns": [
+      {
+        "title": "Emotional Peak",
+        "icon": "\u26a1",
+        "text": "Maximum harmonic tension and melodic climax"
+      },
+      {
+        "title": "Memorable Hook",
+        "icon": "\ud83c\udfaf",
+        "text": "Catchy melodies and lyrics that stick with listeners"
+      },
+      {
+        "title": "Harmonic Release",
+        "icon": "\ud83d\udd04",
+        "text": "Resolution of tension built in verses and pre-choruses"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Chorus Characteristics",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Harmonic Function",
+          "description": "Creates emotional peaks through strategic harmonic tension",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Often moves away from tonic, uses dominant preparation, modal interchange" },
+            { "label": "Example", "value": "vi-IV-I-V creates emotional lift, \u266dVII-IV-I adds modal color" }
+          ]
+        },
+        {
+          "title": "Melodic Contour",
+          "description": "Higher register, wider intervals, more dramatic leaps",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Expands beyond verse range, uses climactic high notes" },
+            { "label": "Example", "value": "Octave jumps, ascending sequences, peak notes on strong beats" }
+          ]
+        },
+        {
+          "title": "Rhythmic Energy",
+          "description": "Increased subdivision, syncopation, or metric emphasis",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Shorter note values, accented off-beats, polyrhythmic elements" },
+            { "label": "Example", "value": "Eighth note strumming vs quarter note verse, snare accents" }
+          ]
+        },
+        {
+          "title": "Textural Density",
+          "description": "Fuller arrangement with added instrumental layers",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Orchestral build-up, harmonic doubling, additional voices" },
+            { "label": "Example", "value": "Add strings, backing vocals, lead guitar, fuller drum kit" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Powerful Chorus Progressions",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "VI-IV-I-V (Emotional Arc)",
+          "description": "Starts dark (minor), moves through stability to strong resolution",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Chord Progression", "value": "Am - F - C - G" },
+            { "label": "Function", "value": "vi - IV - I - V" },
+            { "label": "Common In", "value": "Pop, rock ballads, emotional peaks" },
+            { "label": "Theory Analysis", "value": "Minor vi creates tension, IV provides stability, I-V creates strong cadential motion" }
+          ]
+        },
+        {
+          "title": "I-V-vi-IV (Pop Formula)",
+          "description": "Bright start, dramatic minor turn, stable resolution",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Chord Progression", "value": "C - G - Am - F" },
+            { "label": "Function", "value": "I - V - vi - IV" },
+            { "label": "Common In", "value": "Modern pop, indie rock, anthemic choruses" },
+            { "label": "Theory Analysis", "value": "Strong tonic start, dominant motion, deceptive resolution to vi, plagal motion" }
+          ]
+        },
+        {
+          "title": "\u266dVII-IV-I (Modal Power)",
+          "description": "Borrowed from minor mode, creates powerful drive to tonic",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Chord Progression", "value": "B\u266d - F - C" },
+            { "label": "Function", "value": "\u266dVII - IV - I" },
+            { "label": "Common In", "value": "Rock anthems, power ballads, triumphant choruses" },
+            { "label": "Theory Analysis", "value": "Mixolydian \u266dVII creates modal flavor, strong plagal-authentic motion" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Chorus Structures",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Anthemic Chorus",
+          "description": "Maximum emotional impact and sing-along appeal",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Harmonic Approach", "value": "Strong I-V relationships, modal interchange" }
+          ],
+          "items": ["High energy", "Wide vocal range", "Power chords", "Full arrangement"],
+          "badges": [
+            { "text": "Arena rock", "color": "bg-orange-100 text-orange-700" },
+            { "text": "Pop anthems", "color": "bg-orange-100 text-orange-700" },
+            { "text": "Worship songs", "color": "bg-orange-100 text-orange-700" }
+          ]
+        },
+        {
+          "title": "Intimate Chorus",
+          "description": "Emotional depth without overwhelming dynamics",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Harmonic Approach", "value": "Jazz-influenced progressions, extended chords" }
+          ],
+          "items": ["Moderate dynamics", "Closer harmonies", "Subtle builds", "Focused arrangement"],
+          "badges": [
+            { "text": "Singer-songwriter", "color": "bg-orange-100 text-orange-700" },
+            { "text": "Indie folk", "color": "bg-orange-100 text-orange-700" },
+            { "text": "Soft rock", "color": "bg-orange-100 text-orange-700" }
+          ]
+        },
+        {
+          "title": "Dynamic Chorus",
+          "description": "Continuous development and building excitement",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Harmonic Approach", "value": "Modulating progressions, sequential patterns" }
+          ],
+          "items": ["Builds throughout", "Layered vocals", "Progressive arrangement", "Multiple peaks"],
+          "badges": [
+            { "text": "Progressive rock", "color": "bg-orange-100 text-orange-700" },
+            { "text": "Gospel", "color": "bg-orange-100 text-orange-700" },
+            { "text": "R&B", "color": "bg-orange-100 text-orange-700" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Harmonic Techniques",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Modal Interchange",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "I - \u266dVII - \u266dVI - \u266dVII - I" },
+            { "label": "Detail", "value": "Mixolydian flavor in major key" }
+          ],
+          "items": ["Borrowing chords from parallel modes creates unexpected harmonic color and emotional depth in choruses."]
+        },
+        {
+          "title": "Sequential Progressions",
+          "icon": "\ud83d\udd04",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "vi - IV - I - V / v - \u266dIII - \u266dVII - IV" },
+            { "label": "Detail", "value": "Sequential pattern with key change" }
+          ],
+          "items": ["Repeating harmonic patterns at different pitch levels creates building excitement and forward momentum."]
+        },
+        {
+          "title": "Modulation",
+          "icon": "\u2b06\ufe0f",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "C \u2192 D (up a whole step)" },
+            { "label": "Detail", "value": "Classic key change for final chorus" }
+          ],
+          "items": ["Strategic key changes lift choruses to new emotional heights, especially effective in final repetitions."]
+        },
+        {
+          "title": "Deceptive Resolution",
+          "icon": "\ud83c\udfad",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "V - vi (instead of V - I)" },
+            { "label": "Detail", "value": "Delays gratification" }
+          ],
+          "items": ["Avoiding expected resolutions creates surprise and extends emotional tension for greater impact."]
+        }
+      ]
+    },
+    {
+      "title": "Chorus Analysis Framework",
+      "bgColor": "bg-red-50",
+      "borderColor": "border-red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Musical Analysis",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-red-200",
+          "bgColor": "bg-red-50",
+          "items": [
+            "Harmonic motion: How does it differ from verse?",
+            "Melodic peak: Where is the highest note?",
+            "Rhythmic energy: How does subdivision change?",
+            "Dynamic build: How does volume/intensity grow?",
+            "Textural density: What instruments are added?"
+          ]
+        },
+        {
+          "title": "Emotional Analysis",
+          "icon": "\ud83c\udfaf",
+          "borderColor": "border-red-200",
+          "bgColor": "bg-red-50",
+          "items": [
+            "Tension creation: How is emotional tension built?",
+            "Resolution: What provides harmonic/lyrical payoff?",
+            "Memorability: What makes it stick in memory?",
+            "Contrast: How does it differ from other sections?",
+            "Repetition: What elements return vs. develop?"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "bgColor": "bg-blue-50",
+    "items": [
+      "Analysis Practice: Compare verse and chorus harmonies in the same song",
+      "Analysis Practice: Identify the emotional peak moment in choruses",
+      "Analysis Practice: Notice how arrangement changes from verse to chorus",
+      "Analysis Practice: Find the harmonic \"lift\" points that create excitement",
+      "Analysis Practice: Track how choruses develop through the song",
+      "Playing Practice: Learn powerful chorus progressions in multiple keys",
+      "Playing Practice: Practice dynamic builds with strumming intensity",
+      "Playing Practice: Experiment with modal interchange chords",
+      "Playing Practice: Try modulating choruses up by half or whole steps",
+      "Playing Practice: Write choruses using emotional progression templates"
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Verse Structure", "href": "/lessons/songs/structure/verse", "description": "Learn how verses build the narrative foundation." },
+    { "title": "Bridge Structure", "href": "/lessons/songs/structure/bridge", "description": "Understand how bridges provide contrast." },
+    { "title": "Song Structure Overview", "href": "/lessons/songs/structure", "description": "Return to the main Song Structure page." }
+  ]
+}

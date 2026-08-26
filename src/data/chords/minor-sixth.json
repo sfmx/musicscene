@@ -1,0 +1,315 @@
+{
+  "slug": "minor-sixth",
+  "chordInfo": {
+    "name": "Minor Sixth Chords",
+    "pageTitle": "Minor Sixth Chord Theory",
+    "subtitle": "Discover the bittersweet sophistication of minor sixth chords - the tonic minor of jazz, essential for bossa nova and film noir harmony.",
+    "colorScheme": "indigo",
+    "tags": ["Jazz Essential", "Minor Color", "Bossa Nova", "Sophisticated"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Minor Sixth Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Four-note chords combining a minor triad with a major 6th" },
+      { "label": "Formula", "value": "Root + Minor 3rd + Perfect 5th + Major 6th (1-b3-5-6)" },
+      { "label": "Interval Pattern", "value": "3 semitones + 4 semitones + 2 semitones" },
+      { "label": "Sound Quality", "value": "Bittersweet, sophisticated, nostalgic" },
+      { "label": "Function", "value": "Tonic minor in jazz, melodic minor harmony" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Jazz", "value": "Tonic minor chord in jazz minor keys" },
+      { "label": "Bossa Nova", "value": "Signature chord for Brazilian jazz" },
+      { "label": "Film Noir", "value": "Dark, sophisticated underscore harmony" },
+      { "label": "Swing", "value": "Classic big band minor voicings" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Minor Sixth Chord Construction",
+    "boxes": [
+      {
+        "title": "Am6 Example",
+        "items": [
+          "Root: A (1st degree)",
+          "Minor 3rd: C (b3rd degree)",
+          "Perfect 5th: E (5th degree)",
+          "Major 6th: F# (6th degree)",
+          "Result: Bittersweet, jazz-inflected minor"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "Minor 3rd: Dark, emotional foundation",
+          "Perfect 5th: Stability and grounding",
+          "Major 6th: Brightness within minor context",
+          "No 7th: Lighter and more resolved than m7",
+          "Psychology: Nostalgic, bittersweet elegance"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Derived from: Melodic minor scale (ascending)",
+          "Scale degrees: 1-b3-5-6 of melodic minor",
+          "Key insight: Am6 = F#m7b5 in first inversion",
+          "Equivalent: Half-diminished chord rearranged",
+          "Function: Stable minor tonic in jazz harmony"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Minor Sixth Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These fundamental open-position minor sixth voicings are the easiest way to begin playing m6 chords on guitar.",
+      "voicings": [
+        { "name": "Am6", "chord": "Am7", "notes": "A-C-E-F#", "fingering": "Based on Am shape, add F# on 1st string (2nd fret)", "use": "Jazz tonic minor, bossa nova in A minor" },
+        { "name": "Dm6", "chord": "Dm7", "notes": "D-F-A-B", "fingering": "Based on Dm shape, add B on 1st string (open)", "use": "Jazz tonic minor, film noir harmony" },
+        { "name": "Em6", "chord": "Em7", "notes": "E-G-B-C#", "fingering": "Based on Em shape, add C# on 2nd string (2nd fret)", "use": "Jazz minor voicings, swing era comping" }
+      ]
+    },
+    {
+      "title": "Barre and Moveable Voicings",
+      "tipTitle": "Level Up",
+      "tipDescription": "These moveable shapes let you play minor sixth chords in any key across the fretboard.",
+      "voicings": [
+        { "name": "Cm6 (barre)", "chord": "C_minor", "notes": "C-Eb-G-A", "fingering": "6th string root barre shape with added 6th", "use": "Any key using E-form barre, full voicing" },
+        { "name": "Bm6", "chord": "B_minor", "notes": "B-D-F#-G#", "fingering": "Based on Bm barre shape with added 6th", "use": "Jazz progressions, moveable form" },
+        { "name": "F#m6", "chord": "F#m7", "notes": "F#-A-C#-D#", "fingering": "Based on F#m7 shape, raise b7 to 6th", "use": "Jazz minor ii-V-i, bossa nova keys" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Minor Sixth Chord Progressions",
+    "items": [
+      {
+        "title": "Jazz Minor Tonic (im6-iv7-V7)",
+        "titleColor": "text-indigo-700",
+        "chords": [
+          { "chord": "Am7", "label": "Am6", "numeral": "im6" },
+          { "chord": "Dm7", "label": "Dm7", "numeral": "iv7" },
+          { "chord": "E7", "label": "E7", "numeral": "V7" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - D - DU",
+          "description": "Jazz comping rhythm with syncopation",
+          "tempo": "100-130 BPM",
+          "feel": "Smooth, sophisticated",
+          "genre": "Jazz, Bossa Nova"
+        },
+        "alphaTex": "(0.5 2.4 1.3 2.2 0.1).1 | (2.4 1.3 1.2 1.1).1 | (0.6 2.5 1.4 0.3 0.2 0.1).1",
+        "alphaTexTitle": "im6-iv7-V7 (Am6-Dm7-E7)",
+        "description": "The minor sixth chord serves as a stable tonic in jazz minor keys, replacing the standard minor or minor seventh chord for a more refined, melodic minor sound."
+      },
+      {
+        "title": "Bossa Nova Pattern (im6-iim7b5-V7-im6)",
+        "titleColor": "text-indigo-700",
+        "chords": [
+          { "chord": "Am7", "label": "Am6", "numeral": "im6" },
+          { "chord": "Bm7b5", "label": "Bm7b5", "numeral": "iim7b5" },
+          { "chord": "E7", "label": "E7", "numeral": "V7" },
+          { "chord": "Am7", "label": "Am6", "numeral": "im6" }
+        ],
+        "strumming": {
+          "pattern": "D - U - DU - U",
+          "description": "Bossa nova syncopated rhythm",
+          "tempo": "120-140 BPM",
+          "feel": "Gentle, swaying",
+          "genre": "Bossa Nova, Brazilian Jazz"
+        },
+        "alphaTex": "(0.5 2.4 1.3 2.2 0.1).1 | (2.5 1.4 2.3 1.2).1 | (0.6 2.5 1.4 0.3 0.2 0.1).1 | (0.5 2.4 1.3 2.2 0.1).1",
+        "alphaTexTitle": "Bossa Nova (Am6-Bm7b5-E7-Am6)",
+        "description": "Classic bossa nova progression where the minor sixth chord provides the warm, sophisticated tonic sound that defines the genre. Note the iim7b5 is the enharmonic equivalent of a m6 chord on a different root."
+      },
+      {
+        "title": "Film Noir Descent (im6-bVIMaj7-V7-im6)",
+        "titleColor": "text-indigo-700",
+        "chords": [
+          { "chord": "Am7", "label": "Am6", "numeral": "im6" },
+          { "chord": "FMaj7", "label": "FMaj7", "numeral": "bVIMaj7" },
+          { "chord": "E7", "label": "E7", "numeral": "V7" },
+          { "chord": "Am7", "label": "Am6", "numeral": "im6" }
+        ],
+        "strumming": {
+          "pattern": "D - D - D - D",
+          "description": "Slow, atmospheric arpeggiated strumming",
+          "tempo": "70-90 BPM",
+          "feel": "Dark, mysterious, cinematic",
+          "genre": "Film Noir, Cinematic Jazz"
+        },
+        "alphaTex": "(0.5 2.4 1.3 2.2 0.1).1 | (1.6 3.5 2.4 0.3 1.2 0.1).1 | (0.6 2.5 1.4 0.3 0.2 0.1).1 | (0.5 2.4 1.3 2.2 0.1).1",
+        "alphaTexTitle": "Film Noir (Am6-FMaj7-E7-Am6)",
+        "description": "The m6 chord's bittersweet quality perfectly captures the shadowy atmosphere of film noir soundtracks, descending through the flat sixth major seventh before resolving."
+      },
+      {
+        "title": "Swing Turnaround (im6-bVI7-iim7b5-V7)",
+        "titleColor": "text-indigo-700",
+        "chords": [
+          { "chord": "Dm7", "label": "Dm6", "numeral": "im6" },
+          { "chord": "Bb", "label": "Bb7", "numeral": "bVI7" },
+          { "chord": "Em7", "label": "Em7b5", "numeral": "iim7b5" },
+          { "chord": "A7", "label": "A7", "numeral": "V7" }
+        ],
+        "strumming": {
+          "pattern": "DU DU DU DU",
+          "description": "Swing rhythm comping",
+          "tempo": "130-160 BPM",
+          "feel": "Bouncy, driving",
+          "genre": "Swing, Big Band Jazz"
+        },
+        "alphaTex": "(2.4 1.3 1.2 1.1).1 | (1.6 1.5 3.4 3.3 3.2).1 | (0.6 2.5 0.4 0.3 0.2 0.1).1 | (0.5 2.4 0.3 2.2 0.1).1",
+        "alphaTexTitle": "Swing Turnaround (Dm6-Bb7-Em7b5-A7)",
+        "description": "Classic swing-era turnaround using the minor sixth as a departure point, cycling through related harmony back to the dominant for resolution. Common in big band arrangements."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice the difference between m6 and m7 shapes on the same root",
+        "Focus on clean voicings and muting unused strings carefully",
+        "Use fingerpicking for bossa nova m6 comping patterns",
+        "Practice voice leading from m6 to its half-diminished equivalent"
+      ],
+      "applicationItems": [
+        "Use m6 as a jazz minor tonic instead of plain minor chords",
+        "Essential for authentic bossa nova and Brazilian jazz styles",
+        "Creates film noir atmosphere at slower tempos",
+        "Interchangeable with half-diminished chords for reharmonization"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Minor Sixth Chords",
+    "categories": [
+      {
+        "title": "Jazz & Bossa Nova Standards",
+        "colorBg": "bg-indigo-100",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "songs": [
+          "\"The Girl from Ipanema\" - Antonio Carlos Jobim (Fm6 as tonic minor)",
+          "\"Black Orpheus (Manha de Carnaval)\" - Luiz Bonfa (Am6 throughout)",
+          "\"My Funny Valentine\" - Rodgers & Hart (Cm6 opening tonic)",
+          "\"Round Midnight\" - Thelonious Monk (Ebm6 jazz voicings)",
+          "\"Blue in Green\" - Miles Davis (Dm6 color chord)"
+        ]
+      },
+      {
+        "title": "Film Scores, Pop & Classic Recordings",
+        "colorBg": "bg-violet-100",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-800",
+        "colorText": "text-violet-700",
+        "songs": [
+          "\"Cry Me a River\" - Julie London (Cm6 opening vamp)",
+          "\"Harlem Nocturne\" - Earle Hagen (Gm6 noir theme)",
+          "\"Pink Panther Theme\" - Henry Mancini (Em6 motif)",
+          "\"Fever\" - Peggy Lee (Am6 hypnotic vamp)",
+          "\"Chinatown\" - Jerry Goldsmith (Fm6 film noir underscore)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Minor Sixth Skills",
+    "tipDescription": "These exercises develop your ability to voice, hear, and apply minor sixth chords across musical contexts.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Minor 6th vs Minor 7th Comparison",
+        "content": "Pattern: Am6 - Am7 - Dm6 - Dm7 - Em6 - Em7",
+        "detail": "Alternate between minor sixth and minor seventh on the same root to train your ear to the subtle but important difference in color",
+        "tip": "The m6 sounds brighter and more resolved than the m7 - the raised 6th adds a melodic minor sweetness"
+      },
+      {
+        "title": "Exercise 2: Bossa Nova Comping Pattern",
+        "content": "Pattern: Am6 (2 bars) - Bm7b5 (1 bar) - E7 (1 bar)",
+        "detail": "Practice a classic bossa nova syncopated rhythm using the ii-V-i in A minor with m6 as the tonic chord",
+        "tip": "Keep the rhythm gentle and relaxed - bossa nova should feel effortless, with the thumb handling bass notes"
+      },
+      {
+        "title": "Exercise 3: m6 and Half-Diminished Equivalents",
+        "content": "Pattern: Am6 then F#m7b5, Dm6 then Bm7b5, Em6 then C#m7b5",
+        "detail": "Play each minor sixth chord, then revoice the same four notes as its enharmonic half-diminished equivalent to hear the inversion relationship",
+        "tip": "Same four notes, different bass note - understanding this unlocks advanced reharmonization and substitution possibilities"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Minor Sixth Concepts",
+    "concepts": [
+      {
+        "title": "The m6 / Half-Diminished Relationship",
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "items": [
+          "Am6 (A-C-E-F#) = F#m7b5 (F#-A-C-E) rearranged",
+          "Every m6 chord is a half-diminished chord in first inversion",
+          "Dm6 (D-F-A-B) = Bm7b5 (B-D-F-A) rearranged",
+          "Jazz players exploit this equivalence to find new voicings on familiar shapes",
+          "This relationship is the key to understanding melodic minor harmony"
+        ]
+      },
+      {
+        "title": "Minor Sixth in Melodic Minor Harmony",
+        "colorBg": "bg-violet-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-800",
+        "colorText": "text-violet-700",
+        "items": [
+          "Melodic minor ascending: 1-2-b3-4-5-6-7",
+          "The m6 chord is the tonic (first degree) of melodic minor",
+          "Jazz minor = melodic minor ascending used in both directions",
+          "Contains both major 6th and major 7th over a minor triad",
+          "Foundation for altered dominants, lydian dominant, and superlocrian scales"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand minor sixth chords, explore the related chord types that connect to this sophisticated corner of harmony.",
+    "links": [
+      {
+        "slug": "sixth",
+        "title": "Sixth Chords",
+        "description": "Explore major sixth chords and their warm, jazzy applications.",
+        "linkText": "Learn sixth chords",
+        "icon": "6",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      },
+      {
+        "slug": "minor-seventh",
+        "title": "Minor Seventh Chords",
+        "description": "Compare the smooth minor seventh with the brighter minor sixth.",
+        "linkText": "Learn minor sevenths",
+        "icon": "m7",
+        "hoverBorder": "hover:border-slate-300",
+        "iconBg": "bg-slate-100",
+        "iconHoverBg": "group-hover:bg-slate-200",
+        "linkColor": "text-slate-600",
+        "linkHoverColor": "group-hover:text-slate-700"
+      },
+      {
+        "slug": "half-diminished",
+        "title": "Half-Diminished Chords",
+        "description": "Discover the m7b5 chord - the minor sixth's enharmonic twin.",
+        "linkText": "Learn half-diminished",
+        "icon": "\u00f8",
+        "hoverBorder": "hover:border-red-300",
+        "iconBg": "bg-red-100",
+        "iconHoverBg": "group-hover:bg-red-200",
+        "linkColor": "text-red-600",
+        "linkHoverColor": "group-hover:text-red-700"
+      }
+    ]
+  }
+}

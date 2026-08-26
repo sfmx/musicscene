@@ -1,0 +1,355 @@
+{
+  "slug": "i-v",
+  "progressionInfo": {
+    "name": "I-V Progression",
+    "pageTitle": "I-V Two-Chord Rock Progression",
+    "subtitle": "The simplest and most powerful chord pairing in music - a two-chord pattern built on dominant tension and tonic resolution that drives punk rock, folk, and countless campfire singalongs.",
+    "heroGradient": "bg-gradient-to-r from-red-500 to-rose-600",
+    "tags": [
+      "Two-Chord",
+      "Rock",
+      "Minimal",
+      "Dominant-Tonic"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Harmonic Functions",
+    "properties": [
+      { "label": "I (Tonic)", "value": "Home base, stability, the point of rest" },
+      { "label": "V (Dominant)", "value": "Maximum tension, strongest pull back to tonic" },
+      { "label": "Relationship", "value": "The simplest tension-resolution cycle in harmony" },
+      { "label": "Interval", "value": "Root movement of a perfect fifth (or fourth)" },
+      { "label": "Why It Works", "value": "The dominant chord contains the leading tone that resolves to the tonic root" }
+    ],
+    "exampleTitle": "G Major Example",
+    "examples": [
+      { "label": "I", "value": "G Major (G-B-D)" },
+      { "label": "V", "value": "D Major (D-F#-A)" },
+      { "label": "Chord Progression", "value": "G - D - G - D" },
+      { "label": "Roman Numerals", "value": "I - V - I - V" },
+      { "label": "Leading Tone", "value": "F# in D major resolves up to G" }
+    ],
+    "bulletColor": "text-red-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "I-V in G Major",
+        "description": "Open position chords:",
+        "chords": [
+          { "label": "I - G Major", "chord": "G_major", "subtitle": "Tonic - Home" },
+          { "label": "V - D Major", "chord": "D_major", "subtitle": "Dominant - Tension" }
+        ],
+        "alphaTex": "",
+        "practiceNotes": [
+          "These two chords are among the easiest open shapes",
+          "Focus on quick, clean transitions between G and D",
+          "Try alternating every 2 beats, then every beat",
+          "Listen for the pull from D back to G"
+        ],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "colorDetail": "text-red-600"
+      },
+      {
+        "title": "I-V in E Major",
+        "description": "Using B7 as a common open-position substitute for B major:",
+        "chords": [
+          { "label": "I - E Major", "chord": "E_major", "subtitle": "Tonic - Home" },
+          { "label": "V7 - B7", "chord": "B7", "subtitle": "Dominant 7th - Tension" }
+        ],
+        "alphaTex": "",
+        "practiceNotes": [
+          "B7 is the standard open-position voicing for the V chord in E",
+          "The added b7 (A) strengthens the pull back to E",
+          "Great key for blues and rock riffs"
+        ],
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-800",
+        "colorText": "text-rose-700",
+        "colorDetail": "text-rose-600"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Common Variations",
+        "description": "Ways to expand the I-V framework:",
+        "items": [
+          "I-V-V-I (extended dominant before resolution)",
+          "I-V-I-V (steady alternation, great for verses)",
+          "I-V7 (add the 7th for stronger pull)",
+          "I5-V5 (power chord version for punk and rock)",
+          "I-V with bass pedal (keep root in bass throughout)"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-600"
+      },
+      {
+        "title": "Key Transposition",
+        "description": "I-V in common guitar keys:",
+        "items": [
+          "C Major: C - G",
+          "D Major: D - A",
+          "E Major: E - B (or B7)",
+          "A Major: A - E",
+          "G Major: G - D"
+        ],
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-600"
+      },
+      {
+        "title": "Rhythm & Strumming Ideas",
+        "description": "Two chords means rhythm carries the song:",
+        "items": [
+          "Driving eighth-note strums for punk energy",
+          "Boom-chick alternating bass for country feel",
+          "Syncopated upstroke pattern for reggae influence",
+          "Palm-muted power chords for heavy rock",
+          "Fingerpicked arpeggios for folk ballads"
+        ],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Rock & Country Classics",
+      "examples": [
+        {
+          "title": "\"Achy Breaky Heart\" - Billy Ray Cyrus",
+          "description": "Entire song built on I-V in A major",
+          "detail": "A - E alternation throughout, proving two chords is enough"
+        },
+        {
+          "title": "\"Jambalaya\" - Hank Williams",
+          "description": "Classic country I-V in C major",
+          "detail": "C - G7 pattern with infectious Cajun rhythm"
+        },
+        {
+          "title": "\"Something\" (Verse) - The Beatles",
+          "description": "George Harrison's masterpiece uses I-V movement",
+          "detail": "Elegant melodic writing over the simplest harmonic frame"
+        }
+      ]
+    },
+    "right": {
+      "title": "Punk & Minimalist Rock",
+      "examples": [
+        {
+          "title": "Punk Rock Anthems",
+          "description": "The Ramones, Sex Pistols, and countless punk bands",
+          "detail": "Power chord I-V progressions at breakneck tempos"
+        },
+        {
+          "title": "Folk & Campfire Songs",
+          "description": "Traditional tunes passed down through generations",
+          "detail": "Many folk melodies harmonize with just I and V"
+        },
+        {
+          "title": "Blues Turnarounds",
+          "description": "The V-I resolution is the core of every blues ending",
+          "detail": "The final two bars of 12-bar blues are V-IV-I (or V-I)"
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Chord Transitions",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Alternate I-V every 4 beats at 60 BPM",
+        "Increase speed to change every 2 beats",
+        "Practice one-beat chord changes at tempo",
+        "Work on lifting and placing all fingers together",
+        "Try in at least 3 different keys"
+      ],
+      "colorBg": "bg-red-50",
+      "colorBorder": "border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700"
+    },
+    {
+      "title": "Rhythm Mastery",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Practice steady downstrokes at 120 BPM",
+        "Add upstrokes for eighth-note strumming",
+        "Try palm-muted power chord alternation",
+        "Experiment with syncopated rhythms",
+        "Play along with recordings of I-V songs"
+      ],
+      "colorBg": "bg-rose-50",
+      "colorBorder": "border-rose-200",
+      "colorTitle": "text-rose-800",
+      "colorText": "text-rose-700"
+    },
+    {
+      "title": "Creative Application",
+      "icon": "\ud83c\udfad",
+      "items": [
+        "Write a melody using only I and V chords",
+        "Try different strum patterns over the same changes",
+        "Record a I-V loop and improvise over it",
+        "Explore how dynamics change the feel",
+        "Combine I-V with a vocal melody or riff"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: Basic I-V Alternation",
+      "description": "Practice the fundamental two-chord change in G major:",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Hold each chord for 4 beats (whole notes)",
+        "Focus on clean, immediate chord changes",
+        "Listen for the tension on D resolving to G",
+        "Repeat until transitions are automatic"
+      ],
+      "colorBg": "bg-red-50",
+      "colorBorder": "border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700",
+      "colorDetail": "text-red-600"
+    },
+    {
+      "title": "Exercise 2: Punk Rock Power Chords",
+      "description": "Fast eighth-note power chord changes in E:",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Use downstrokes only for authentic punk feel",
+        "Palm mute for tighter, punchier sound",
+        "Start at 100 BPM, work up to 160+ BPM",
+        "Keep wrist loose and relaxed"
+      ],
+      "colorBg": "bg-rose-50",
+      "colorBorder": "border-rose-200",
+      "colorTitle": "text-rose-800",
+      "colorText": "text-rose-700",
+      "colorDetail": "text-rose-600"
+    },
+    {
+      "title": "Exercise 3: Country Boom-Chick Pattern",
+      "description": "Alternating bass with chord stabs in G major:",
+      "alphaTex": "",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700",
+      "colorDetail": "text-orange-600"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Harmonic Foundation",
+      "sections": [
+        {
+          "title": "Scale Degrees",
+          "items": [
+            "I (G): 1st degree - Tonic, point of rest",
+            "V (D): 5th degree - Dominant, point of tension",
+            "Root movement by perfect 5th (G to D)",
+            "Strongest harmonic relationship in tonal music",
+            "Foundation for all other progressions"
+          ]
+        },
+        {
+          "title": "Why V Resolves to I",
+          "items": [
+            "The V chord contains the leading tone (7th scale degree)",
+            "Leading tone is a half step below the tonic",
+            "This half-step pull creates the sensation of resolution",
+            "Adding a 7th to V (V7) strengthens the pull further"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Voice Leading & Theory",
+      "sections": [
+        {
+          "title": "Common Tones (G and D major)",
+          "items": [
+            "G major (G-B-D) and D major (D-F#-A)",
+            "D is the common tone between both chords",
+            "B moves down to A (whole step)",
+            "G moves to F# (half step) or leaps to A",
+            "F# (leading tone) resolves up to G"
+          ]
+        },
+        {
+          "title": "The Dominant-Tonic Axis",
+          "items": [
+            "I and V are the two most important chords in any key",
+            "Every cadence ultimately relies on V to I motion",
+            "The authentic cadence (V-I) is the strongest resolution",
+            "All other progressions elaborate on this fundamental relationship"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the I-V two-chord foundation, explore more complex progressions that build on this dominant-tonic relationship.",
+    "links": [
+      {
+        "slug": "i-iv-v",
+        "title": "I-IV-V Progression",
+        "description": "Add the subdominant chord for the most popular three-chord progression in music.",
+        "linkText": "Add the IV chord",
+        "icon": "\ud83c\udfaf",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "i-v-vi-iv",
+        "title": "I-V-vi-IV Progression",
+        "description": "Discover the four-chord progression that powers countless pop hits.",
+        "linkText": "Explore pop harmony",
+        "icon": "\ud83c\udfb5",
+        "hoverBorder": "hover:border-pink-300",
+        "iconBg": "bg-pink-100",
+        "iconHoverBg": "group-hover:bg-pink-200",
+        "linkColor": "text-pink-600",
+        "linkHoverColor": "group-hover:text-pink-700"
+      },
+      {
+        "slug": "12-bar-blues",
+        "title": "12-Bar Blues",
+        "description": "See how the I-V relationship expands into the foundational blues form.",
+        "linkText": "Master the blues",
+        "icon": "\ud83c\udfb8",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      }
+    ]
+  },
+  "navigation": {
+    "next": {
+      "href": "/lessons/theory/progressions/i-iv-v",
+      "label": "Next: I-IV-V Progression"
+    }
+  }
+}

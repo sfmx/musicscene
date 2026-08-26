@@ -1,0 +1,252 @@
+{
+  "slug": "effects-chorus",
+  "category": "effects",
+  "pageTitle": "Chorus Effects",
+  "subtitle": "Creates lush, shimmering textures by blending your dry signal with modulated copies. From subtle thickening to dramatic ensemble effects.",
+  "heroGradient": "bg-gradient-to-r from-cyan-50 to-blue-50",
+  "backLink": {
+    "href": "/lessons/gear/effects",
+    "label": "Back to Effects Overview"
+  },
+  "introduction": {
+    "title": "What is Chorus?",
+    "text": "Chorus creates the illusion of multiple instruments playing the same part by mixing your dry signal with one or more delayed copies that are modulated in pitch and timing. This mimics the natural variations that occur when multiple musicians play together.",
+    "columns": [
+      {
+        "title": "How It Works",
+        "text": "Delays signal by 15-35ms. Modulates delay time with LFO. Creates pitch variations. Blends with dry signal. Multiple delay lines possible. Phase differences create width."
+      },
+      {
+        "title": "Musical Applications",
+        "text": "Clean guitar thickening. 80s pop and rock textures. Jazz and fusion smoothness. Country guitar sparkle. Ambient and atmospheric sounds. Bass guitar enhancement."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Chorus Effects",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Analog Chorus",
+          "description": "Uses bucket brigade delay (BBD) chips to create warm, musical modulation. Known for their organic sound and subtle imperfections.",
+          "fields": [
+            { "label": "Examples", "value": "Boss CE-1, MXR Analog Chorus, TC Electronic Corona" }
+          ]
+        },
+        {
+          "title": "Digital Chorus",
+          "description": "Provides clean, pristine modulation with precise control. Often includes multiple chorus types and extensive parameter control.",
+          "fields": [
+            { "label": "Examples", "value": "Boss CH-1, Strymon Mobius, Eventide TimeFactor" }
+          ]
+        },
+        {
+          "title": "Stereo Chorus",
+          "description": "Outputs to two amps or channels, creating wide, spacious soundscapes. Essential for achieving classic 80s guitar tones.",
+          "fields": [
+            { "label": "Examples", "value": "Boss CE-5, Roland JC-120 amp, rack processors" }
+          ]
+        },
+        {
+          "title": "Multi-Voice Chorus",
+          "description": "Uses multiple delay lines and LFOs to create ensemble effects, simulating large groups of instruments.",
+          "fields": [
+            { "label": "Examples", "value": "EHX Small Clone, Boss CE-20, vintage string machines" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Understanding Chorus Parameters",
+      "subtitle": "Key Controls",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Primary Controls",
+          "fields": [
+            { "label": "Rate/Speed", "value": "LFO frequency (how fast the modulation cycles)" },
+            { "label": "Depth/Intensity", "value": "Amount of pitch modulation" },
+            { "label": "Level/Mix", "value": "Balance between dry and effected signal" },
+            { "label": "Tone/EQ", "value": "Frequency shaping of the effect" }
+          ]
+        },
+        {
+          "title": "Advanced Parameters",
+          "fields": [
+            { "label": "Delay Time", "value": "Base delay before modulation" },
+            { "label": "Feedback", "value": "Amount of processed signal fed back" },
+            { "label": "Phase", "value": "Relationship between multiple voices" },
+            { "label": "Waveform", "value": "Shape of the modulating LFO" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Chorus Pedals",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Boss CE-1 Chorus Ensemble",
+          "description": "The first chorus pedal ever made, adapted from the Roland JC-120 amplifier. Warm, lush, and musical with both chorus and vibrato modes.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Warm, analog modulation with rich harmonic content and smooth transitions" }
+          ],
+          "items": [
+            "Andy Summers - The Police",
+            "John Scofield - Jazz fusion",
+            "Robert Smith - The Cure",
+            "Many 80s session players",
+            "Jazz and fusion guitarists"
+          ]
+        },
+        {
+          "title": "Electro-Harmonix Small Clone",
+          "description": "Simple, affordable chorus with a distinctive sound. Made famous by Kurt Cobain and the grunge movement, but also beloved by clean-tone players.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Rich, deep chorus with a slightly dark character and smooth modulation" }
+          ],
+          "items": [
+            "Kurt Cobain - Nirvana clean tones",
+            "John Frusciante - Red Hot Chili Peppers",
+            "Many indie and alternative artists",
+            "Clean tone specialists",
+            "Lo-fi and bedroom pop musicians"
+          ]
+        },
+        {
+          "title": "Boss CE-5 Chorus Ensemble",
+          "description": "Modern stereo chorus with extensive control options. High-frequency cut filter and stereo outputs make it perfect for studio and live use.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Clean, precise digital chorus with wide stereo imaging and flexible control" }
+          ],
+          "items": [
+            "Session musicians worldwide",
+            "Country and pop guitarists",
+            "Clean tone enthusiasts",
+            "Studio professionals",
+            "Cover band musicians"
+          ]
+        },
+        {
+          "title": "TC Electronic Corona Chorus",
+          "description": "Modern digital chorus with TonePrint technology for custom sounds. Combines classic algorithms with modern flexibility.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Versatile digital chorus with multiple classic and modern algorithms" }
+          ],
+          "items": [
+            "TonePrint custom programming",
+            "Multiple chorus types",
+            "High-quality digital processing",
+            "Compact pedalboard footprint",
+            "Artist signature settings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chorus in Different Musical Genres",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "80s Pop & Rock",
+          "description": "Defining sound of the decade. Wide stereo chorus on clean tones, often combined with reverb for spacious soundscapes.",
+          "fields": [
+            { "label": "Settings", "value": "Deep, slow rate, stereo spread" },
+            { "label": "Artists", "value": "The Police, The Cure, U2" }
+          ]
+        },
+        {
+          "title": "Jazz & Fusion",
+          "description": "Subtle chorus adds warmth and dimension to clean jazz tones without overwhelming the natural guitar sound.",
+          "fields": [
+            { "label": "Settings", "value": "Subtle depth, medium rate" },
+            { "label": "Artists", "value": "John Scofield, Pat Metheny, Bill Frisell" }
+          ]
+        },
+        {
+          "title": "Country & Folk",
+          "description": "Light chorus adds sparkle to clean tones and fingerpicked passages, enhancing the natural beauty of acoustic-style playing.",
+          "fields": [
+            { "label": "Settings", "value": "Light depth, faster rate" },
+            { "label": "Artists", "value": "Brad Paisley, Keith Urban, many session players" }
+          ]
+        },
+        {
+          "title": "Alternative & Indie",
+          "description": "From subtle enhancement to dramatic texture, chorus helps create the dreamy, atmospheric sounds of alternative rock.",
+          "fields": [
+            { "label": "Settings", "value": "Various, often deep and slow" },
+            { "label": "Artists", "value": "Nirvana, My Bloody Valentine, Radiohead" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Using Chorus Effectively",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Best Practices",
+          "bgColor": "bg-cyan-50",
+          "items": [
+            "Start with subtle settings",
+            "Works best with clean tones",
+            "Use stereo outputs when possible",
+            "Combine with reverb for depth",
+            "Adjust for room acoustics",
+            "Less is often more"
+          ]
+        },
+        {
+          "title": "Signal Chain Position",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "After distortion/overdrive",
+            "Before delay and reverb",
+            "Can go in amp effects loop",
+            "Stereo chorus benefits from dual amps",
+            "Consider buffer placement",
+            "Experiment with position"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chorus Settings Guide",
+      "layout": "grid-3",
+      "warningText": "Chorus sounds different at various volumes and in different rooms. What sounds perfect at bedroom levels might be too much in a band mix. Always adjust for the musical context.",
+      "cards": [
+        {
+          "title": "Subtle Enhancement",
+          "items": [
+            "Rate: 9-11 o'clock",
+            "Depth: 9-10 o'clock",
+            "Level: 10-12 o'clock",
+            "Use: Clean tone thickening"
+          ]
+        },
+        {
+          "title": "80s Style",
+          "items": [
+            "Rate: 10-1 o'clock",
+            "Depth: 12-2 o'clock",
+            "Level: 12-2 o'clock",
+            "Use: Dramatic texture"
+          ]
+        },
+        {
+          "title": "Vibrato Effect",
+          "items": [
+            "Rate: 11-1 o'clock",
+            "Depth: 2-4 o'clock",
+            "Level: Dry signal off",
+            "Use: Warbling texture"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

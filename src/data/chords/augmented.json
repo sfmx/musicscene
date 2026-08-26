@@ -1,0 +1,182 @@
+{
+  "slug": "augmented",
+  "chordInfo": {
+    "name": "Augmented Chords",
+    "pageTitle": "Augmented Chord Theory",
+    "subtitle": "Explore the mysterious, ascending quality of augmented chords - symmetrical harmony that creates tension and chromatic movement.",
+    "colorScheme": "indigo",
+    "tags": ["Symmetrical Harmony", "Chromatic Movement", "Tension Builder", "Mysterious Sound"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Augmented Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Three-note chords with a raised (augmented) 5th" },
+      { "label": "Formula", "value": "Root + Major 3rd + Augmented 5th" },
+      { "label": "Interval Pattern", "value": "4 semitones + 4 semitones" },
+      { "label": "Sound Quality", "value": "Tense, mysterious, ascending" },
+      { "label": "Function", "value": "Chromatic passing chord, dominant alteration" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Classical", "value": "Chromatic voice leading" },
+      { "label": "Jazz", "value": "Altered dominant chords" },
+      { "label": "Film Scores", "value": "Mystery and suspense" },
+      { "label": "Rock", "value": "Beatles-style chromatic lines" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Augmented Chord Construction",
+    "boxes": [
+      {
+        "title": "Caug (C+) Example",
+        "items": [
+          "Root: C (1st degree)",
+          "Major 3rd: E (3rd degree)",
+          "Augmented 5th: G# (raised 5th degree)",
+          "Semitones: C->E (4), E->G# (4)",
+          "Result: Symmetrical, tense triad"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "Two major 3rds: Equal division of octave",
+          "Augmented 5th: Creates upward pull",
+          "Symmetrical: Only 4 unique augmented triads",
+          "Enharmonic: C+ = E+ = G#+ (same notes)",
+          "Psychology: Unsettled, dreamlike"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Built from: Whole-tone scale",
+          "Derived from: Major triad with raised 5th",
+          "Chromatic: Links major chords chromatically",
+          "Altered dominant: V+ resolving to I",
+          "Whole-tone: All notes from whole-tone scale"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Augmented Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are the fundamental augmented chord voicings for guitar.",
+      "voicings": [
+        { "name": "Caug (C+)", "chord": "Caug", "notes": "C-E-G#", "fingering": "Based on C major shape", "use": "Chromatic passing, Beatles-style" },
+        { "name": "Eaug (E+)", "chord": "Eaug", "notes": "E-G#-B#(C)", "fingering": "Based on E major shape", "use": "Altered dominant, jazz" },
+        { "name": "Gaug (G+)", "chord": "Gaug", "notes": "G-B-D#", "fingering": "Open position variation", "use": "Chromatic bass lines" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Augmented Chord Progressions",
+    "items": [
+      {
+        "title": "Chromatic Bass Line with Augmented",
+        "titleColor": "text-indigo-700",
+        "chords": [
+          { "chord": "C", "label": "C", "numeral": "I" },
+          { "chord": "Caug", "label": "C+", "numeral": "I+" },
+          { "chord": "F", "label": "F", "numeral": "IV" },
+          { "chord": "Fm", "label": "Fm", "numeral": "iv" }
+        ],
+        "strumming": {
+          "pattern": "D - D - D - D",
+          "description": "Slow, deliberate movement",
+          "tempo": "70-100 BPM",
+          "feel": "Dramatic, ascending",
+          "genre": "Classic Rock, Pop Ballads, Film"
+        },
+        "alphaTex": "(3.5 2.4 0.3 1.2 0.1).1 | (3.5 2.4 1.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (1.6 3.5 3.4 1.3 1.2 1.1).1",
+        "alphaTexTitle": "Chromatic Line (C-C+-F-Fm)",
+        "description": "Classic chromatic ascending line using the augmented chord as a passing chord - heard in Beatles songs like \"Oh! Darling\"."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice the small finger movement from major to augmented",
+        "Focus on smooth chromatic voice leading",
+        "Listen for the ascending quality of the augmented 5th",
+        "Use augmented chords sparingly for maximum effect"
+      ],
+      "applicationItems": [
+        "Creates dramatic chromatic movement",
+        "Adds mystery and tension to progressions",
+        "Essential for Beatles and classic rock styles",
+        "Perfect for building suspense in arrangements"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Augmented Chords",
+    "categories": [
+      {
+        "title": "Classic & Rock",
+        "colorBg": "bg-indigo-100",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "songs": [
+          "\"Oh! Darling\" - The Beatles (E-E+)",
+          "\"Crying\" - Roy Orbison (C-C+)",
+          "\"All My Loving\" - The Beatles (C#m-C+)",
+          "\"James Bond Theme\" - Monty Norman (augmented chords throughout)",
+          "\"Sitting on the Dock of the Bay\" - Otis Redding (G-G+)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Augmented Chord Skills",
+    "tipDescription": "These exercises will help you master augmented chords and their applications.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Major to Augmented Transitions",
+        "content": "Pattern: C-C+, E-E+, G-G+, A-A+",
+        "detail": "Practice raising the 5th by one fret from each major chord",
+        "tip": "Listen for the characteristic ascending tension of the augmented 5th"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Augmented Chord Concepts",
+    "concepts": [
+      {
+        "title": "Augmented Chord Symmetry",
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "items": [
+          "Only 4 unique augmented triads exist (due to symmetry)",
+          "C+ = E+ = G#+ (same pitch classes)",
+          "Whole-tone scale: Contains 2 augmented triads",
+          "Augmented 7th: C+7 used as altered dominant",
+          "Coltrane Changes: Augmented triads divide the octave"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand augmented chords, explore how they connect to other chord types and advanced harmonic concepts.",
+    "links": [
+      {
+        "slug": "diminished",
+        "title": "Diminished Chords",
+        "description": "Explore the dark, tense counterpart to augmented harmony.",
+        "linkText": "Learn diminished chords",
+        "icon": "o",
+        "hoverBorder": "hover:border-red-300",
+        "iconBg": "bg-red-100",
+        "iconHoverBg": "group-hover:bg-red-200",
+        "linkColor": "text-red-600",
+        "linkHoverColor": "group-hover:text-red-700"
+      }
+    ]
+  }
+}

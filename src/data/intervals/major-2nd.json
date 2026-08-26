@@ -1,0 +1,354 @@
+{
+  "slug": "major-2nd",
+  "intervalInfo": {
+    "name": "Major 2nd Interval",
+    "pageTitle": "Major 2nd Interval",
+    "subtitle": "The fundamental melodic step - 2 semitones that form the backbone of scales and create smooth, natural melodic movement.",
+    "colorScheme": "orange",
+    "heroGradient": "bg-gradient-to-r from-orange-600 to-yellow-700",
+    "tags": ["2 Semitones", "Whole Step", "Scale Foundation", "Natural Movement"]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      { "label": "Size", "value": "2 semitones (whole step)" },
+      { "label": "Quality", "value": "Major" },
+      { "label": "Sound", "value": "Consonant, stable, melodic" },
+      { "label": "Function", "value": "Fundamental scalar step" }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      { "label": "C to D", "value": "(do-re)" },
+      { "label": "F to G", "value": "Natural whole step" },
+      { "label": "G to A", "value": "Natural whole step" },
+      { "label": "A to B", "value": "Natural whole step" }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Major 2nd Intervals - The Fundamental Melodic Step",
+      "description": "The major 2nd (2 semitones) is the most common interval in melodies, providing smooth, natural movement between notes.",
+      "examples": [
+        {
+          "title": "C \u2192 D Major 2nd",
+          "subtitle": "Classic whole step movement",
+          "chord1": "C_to_D",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "D_from_C",
+          "chord2Label": "D (5th string 5th fret)",
+          "alphaTex": "1.4 3.4",
+          "alphaTexTitle": "C to D",
+          "caption": "Natural melodic movement",
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorSubtitle": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        },
+        {
+          "title": "G \u2192 A Major 2nd",
+          "subtitle": "Open string to 2nd fret",
+          "chord1": "G_to_A",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "A_from_G",
+          "chord2Label": "A (6th string 5th fret)",
+          "alphaTex": "3.6 5.6",
+          "alphaTexTitle": "G to A",
+          "caption": "Smooth scale movement",
+          "colorBg": "bg-gradient-to-br from-green-50 to-green-100",
+          "colorBorder": "border border-green-200",
+          "colorTitle": "text-green-800",
+          "colorSubtitle": "text-green-700",
+          "colorCaption": "text-green-600"
+        },
+        {
+          "title": "D \u2192 E Major 2nd",
+          "subtitle": "Common in scale patterns",
+          "chord1": "D_to_E",
+          "chord1Label": "D (4th string open)",
+          "chord2": "E_from_D",
+          "chord2Label": "E (4th string 2nd fret)",
+          "alphaTex": "0.4 2.4",
+          "alphaTexTitle": "D to E",
+          "caption": "Foundation of major scales",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorSubtitle": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Harmonic Applications - Sus2 & Add9 Chords",
+      "items": [
+        {
+          "title": "Dsus2 Chord",
+          "chord": "Dsus2",
+          "chordLabel": "D-E-A suspended 2nd chord",
+          "alphaTex": "(0.4 2.4 0.5).1",
+          "alphaTexTitle": "Dsus2 Chord",
+          "alphaTexCaption": "D-E-A: Root, major 2nd, perfect 5th",
+          "bullets": [
+            "Major 2nd: D \u2192 E (creates open, airy sound)",
+            "Perfect 5th: D \u2192 A (provides stability)",
+            "Open voicing: Natural guitar fingering"
+          ],
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorText": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "Asus2 Chord",
+          "chord": "Asus2",
+          "chordLabel": "A-B-E suspended 2nd chord",
+          "alphaTex": "(0.5 2.4 0.1).1",
+          "alphaTexTitle": "Asus2 Chord",
+          "alphaTexCaption": "A-B-E: Root, major 2nd, perfect 5th",
+          "bullets": [
+            "Major 2nd: A \u2192 B (sweet suspension)",
+            "Perfect 5th: A \u2192 E (harmonic foundation)",
+            "Easy fingering: Minimal hand movement"
+          ],
+          "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+          "colorBorder": "border border-teal-200",
+          "colorTitle": "text-teal-800",
+          "colorText": "text-teal-700",
+          "colorCaption": "text-teal-600"
+        },
+        {
+          "title": "Cadd9 Chord",
+          "chord": "Cadd9",
+          "chordLabel": "C major with added 9th (D)",
+          "alphaTex": "(3.5 0.4 3.6 2.3).1",
+          "alphaTexTitle": "Cadd9 Chord",
+          "alphaTexCaption": "C-E-G-D: Major triad + 9th",
+          "bullets": [
+            "Major 9th: C \u2192 D (octave + major 2nd)",
+            "Color tone: Adds brightness and richness",
+            "Pop/folk favorite: Modern acoustic sound"
+          ],
+          "colorBg": "bg-gradient-to-br from-rose-50 to-rose-100",
+          "colorBorder": "border border-rose-200",
+          "colorTitle": "text-rose-800",
+          "colorText": "text-rose-700",
+          "colorCaption": "text-rose-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Major Scale Foundation",
+        "subtitle": "C Major Scale Pattern",
+        "alphaTex": "3.5 5.5 2.4 3.4 | 5.4 2.3 4.3 5.3",
+        "alphaTexTitle": "C Major Scale",
+        "alphaTexCaption": "Major 2nds: C-D, D-E, F-G, G-A, A-B",
+        "bullets": [
+          "5 out of 7 steps: Most intervals in major scales",
+          "Natural movement: Easy to sing and play",
+          "Melodic foundation: Basis for countless melodies"
+        ],
+        "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+        "colorBorder": "border border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "colorCaption": "text-blue-600"
+      },
+      {
+        "title": "Melodic Expression",
+        "subtitle": "Smooth Melodic Movement",
+        "alphaTex": "3.5.2 5.5.2 | 2.4.2 3.4.2",
+        "alphaTexTitle": "Melodic Movement",
+        "alphaTexCaption": "Natural, flowing melodic motion",
+        "bullets": [
+          "Vocal music: Comfortable singing intervals",
+          "Instrumental lines: Smooth finger movement",
+          "Connecting notes: Bridges between chord tones"
+        ],
+        "colorBg": "bg-gradient-to-br from-green-50 to-green-100",
+        "colorBorder": "border border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700",
+        "colorCaption": "text-green-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"Do-Re-Mi\" (Sound of Music)",
+        "description": "Perfect example of major 2nd movement",
+        "detail": "The iconic opening interval teaches this step"
+      },
+      {
+        "title": "Bach's Inventions",
+        "description": "Scalar passages with major 2nd steps",
+        "detail": "Contrapuntal writing built on stepwise motion"
+      },
+      {
+        "title": "Mozart's Piano Sonatas",
+        "description": "Elegant melodic lines using stepwise motion",
+        "detail": "Classical elegance through natural melodic movement"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Twinkle, Twinkle, Little Star\"",
+        "description": "Opening notes demonstrate major 2nd",
+        "detail": "One of the most familiar major 2nd examples"
+      },
+      {
+        "title": "\"Happy Birthday\"",
+        "description": "First two notes are a major 2nd",
+        "detail": "Universal song showcasing the whole step"
+      },
+      {
+        "title": "Folk Songs and Children's Songs",
+        "description": "Natural melodic movement patterns",
+        "detail": "Major 2nds form the backbone of singable melodies"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Use \"Happy Birthday\" as reference",
+        "Practice major 2nd vs. minor 2nd",
+        "Study major scale step patterns",
+        "Listen to diatonic melodies",
+        "Compare whole step vs. half step"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master major scales (2-fret steps)",
+        "Practice C-D, D-E, F-G, G-A, A-B",
+        "Work on smooth melodic lines",
+        "Study diatonic scale patterns",
+        "Practice major 2nd harmonies"
+      ],
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border border-yellow-200",
+      "colorTitle": "text-yellow-800",
+      "colorText": "text-yellow-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create flowing melodic phrases",
+        "Study folk melody patterns",
+        "Explore diatonic harmonization",
+        "Practice scale-based improvisation",
+        "Analyze stepwise motion in songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Sound Characteristics",
+        "description": "Pleasant and consonant. Natural melodic movement. Stable, doesn't need resolution. Familiar \"do-re\" sound that is easy to sing and natural to the ear."
+      },
+      {
+        "title": "Memory Aid",
+        "description": "Think of the major 2nd as the \"do-re\" from \"Do-Re-Mi\" (Sound of Music). It's the first step up the major scale and sounds natural and pleasant. Unlike the tense minor 2nd, the major 2nd feels stable and doesn't create any urge to resolve. On guitar, it's always two frets apart on the same string, making it easy to find and practice."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Melodic Uses",
+        "description": "Scale construction: Primary interval in major and minor scales. Melodic movement: Natural, flowing melodic steps. Vocal music: Easy to sing and natural to the ear. Arpeggios: Connecting chord tones smoothly."
+      },
+      {
+        "title": "Harmonic Uses",
+        "description": "Sus2 chords: Adding the 2nd degree to triads. Add9 chords: Color tones in jazz and pop. Voice leading: Smooth harmonic progressions. Polyphonic music: Independent melodic lines moving in parallel or contrary motion."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Melodic Major 2nds",
+      "description": "Smooth Melodic Line Exercise on A string pattern",
+      "detail": "Ascending: 3rd \u2192 5th \u2192 6th \u2192 8th \u2192 10th frets (C \u2192 D \u2192 E \u2192 F \u2192 G). Notice how natural and flowing this melodic movement sounds.",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700",
+      "colorDetail": "text-orange-600"
+    },
+    {
+      "title": "Sus2 Chord Application",
+      "description": "C major to Csus2 progression: Adding the major 2nd for color",
+      "detail": "The major 2nd (D) replaces the major 3rd (E) creating an open, airy sound. Move the C note (3rd fret A string) to D (5th fret A string).",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    },
+    {
+      "title": "Diatonic Scale Steps",
+      "description": "Five of seven steps in the major scale are major 2nds",
+      "detail": "C-D, D-E, F-G, G-A, A-B are all whole steps, making the major 2nd the most common interval in Western scales.",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "From smooth melodic movement, explore intervals that add emotion and harmonic color.",
+    "links": [
+      {
+        "slug": "minor-2nd",
+        "title": "Minor 2nd",
+        "description": "Step back to explore tension and dissonance - the smallest interval.",
+        "actionText": "Feel the tension",
+        "icon": "grimace",
+        "colorBg": "bg-red-100",
+        "colorBgHover": "group-hover:bg-red-200",
+        "colorBorder": "hover:border-red-300",
+        "colorText": "text-red-600",
+        "colorTextHover": "group-hover:text-red-700"
+      },
+      {
+        "slug": "minor-3rd",
+        "title": "Minor 3rd",
+        "description": "Step forward to sad beauty - the foundation of minor chords.",
+        "actionText": "Explore emotion",
+        "icon": "sad",
+        "colorBg": "bg-blue-100",
+        "colorBgHover": "group-hover:bg-blue-200",
+        "colorBorder": "hover:border-blue-300",
+        "colorText": "text-blue-600",
+        "colorTextHover": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "major-3rd",
+        "title": "Major 3rd",
+        "description": "Continue to bright happiness - the foundation of major chords.",
+        "actionText": "Find joy",
+        "icon": "happy",
+        "colorBg": "bg-yellow-100",
+        "colorBgHover": "group-hover:bg-yellow-200",
+        "colorBorder": "hover:border-yellow-300",
+        "colorText": "text-yellow-600",
+        "colorTextHover": "group-hover:text-yellow-700"
+      }
+    ]
+  }
+}

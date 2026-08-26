@@ -1,0 +1,511 @@
+{
+  "songInfo": {
+    "title": "Wanted Dead or Alive",
+    "artist": "Bon Jovi",
+    "album": "Slippery When Wet",
+    "released": "1986",
+    "genre": "Arena Rock / Power Ballad",
+    "tempo": "74 BPM",
+    "duration": "5:08",
+    "key": "D Major / D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major / D minor (the song blurs the line between major and minor, using both D major and D minor tonalities)",
+      "scalesUsed": [
+        {
+          "scale": "D Mixolydian",
+          "notes": "D - E - F# - G - A - B - C - D",
+          "application": "Primary scale for the verse sections; the flatted seventh (C natural) over the D chord creates the cowboy rock character"
+        },
+        {
+          "scale": "D minor pentatonic",
+          "notes": "D - F - G - A - C",
+          "application": "Guitar solo (talk box) and lead fills; the minor pentatonic gives the solo its bluesy edge"
+        },
+        {
+          "scale": "D natural minor",
+          "notes": "D - E - F - G - A - Bb - C - D",
+          "application": "Chorus and bridge sections where the song shifts toward a darker, more dramatic minor feel"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Aeolian blend - the song uniquely straddles major and minor, giving it the outlaw cowboy duality",
+      "keySignature": "Variable - D major (2 sharps) for verses, D minor (1 flat) for chorus sections",
+      "relativeMinor": "B minor (relative minor of D major)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "Cadd9",
+          "G"
+        ],
+        "progression": "I - bVII - IV",
+        "description": "The open-position acoustic progression that drives the verse, using the characteristic bVII (Cadd9) for the cowboy rock sound. The 12-string acoustic voicing is essential to the song's character."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Intro",
+          "progression": "D - Cadd9 - G",
+          "romanNumerals": "I - bVII - IV",
+          "description": "The iconic 12-string acoustic intro establishing the wide-open Americana feel with arpeggiated open chords"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - Cadd9 - G - D",
+          "romanNumerals": "I - bVII - IV - I",
+          "description": "Acoustic strumming pattern with the 12-string creating a shimmering texture beneath the storytelling vocal"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "F - Cadd9 - D",
+          "romanNumerals": "bIII - bVII - I",
+          "description": "The F chord introduces a minor key element, building tension as the song shifts from acoustic to electric"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Dm - C - G - F - Dm",
+          "romanNumerals": "i - bVII - IV - bIII - i",
+          "description": "The chorus shifts to D minor with full electric power, creating dramatic contrast with the major-key verses"
+        },
+        {
+          "section": "Guitar Solo (Talk Box)",
+          "progression": "Dm - C - G - F",
+          "romanNumerals": "i - bVII - IV - bIII",
+          "description": "The talk box solo rides over the chorus chord changes, adding the signature vocal guitar effect"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Major tonic for verses, establishing the open, storytelling character",
+        "Cadd9 (bVII) - Flatted seventh providing the rootless, wandering cowboy quality",
+        "G (IV) - Subdominant adding harmonic warmth and movement",
+        "F (bIII) - Borrowed from the parallel minor, introducing darkness for the pre-chorus",
+        "Dm (i) - Minor tonic for the chorus, representing the dangerous, darker side of the narrative"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "12-String Acoustic Strumming",
+      "description": "The song's signature sound comes from the 12-string acoustic guitar with its doubled strings creating a shimmering, full-bodied tone that fills the sonic space during verses and the intro",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D: X-X-0-2-3-2 (standard open D chord)",
+          "Cadd9: X-3-2-0-3-0 (rich open voicing with the added 9th)",
+          "G: 3-2-0-0-3-3 (open G with high G on the 1st string)",
+          "The 12-string doubles each string an octave higher (for lower 4 strings) and in unison (for upper 2)",
+          "Let all strings ring as long as possible for the shimmering 12-string effect",
+          "A standard 6-string can approximate the sound with chorus pedal or by strumming more strings open"
+        ],
+        "sequence": [
+          "Begin with a fingerpicked arpeggio on the D chord",
+          "Transition to a strumming pattern mixing arpeggiation and full strums",
+          "Move to Cadd9 letting the open strings ring through the change",
+          "Resolve to G with emphasis on the bass note",
+          "Return to D to complete the progression cycle"
+        ],
+        "tips": [
+          "If you do not have a 12-string, a chorus pedal on a 6-string can approximate the doubled effect",
+          "Let open strings ring as much as possible - the sustained overlap is the 12-string magic",
+          "Use a medium pick for balanced tone between bass and treble strings",
+          "The strumming pattern combines fingerpicking and strumming - start with just strumming if needed"
+        ],
+        "chords": [
+          "D",
+          "Cadd9",
+          "G"
+        ],
+        "progression": "D - Cadd9 - G (I - bVII - IV)"
+      }
+    },
+    {
+      "name": "Acoustic-to-Electric Dynamic Build",
+      "description": "The song builds from intimate 12-string acoustic through to full electric band, requiring the guitarist to switch instruments or dial in a dramatically different tone for the chorus and solo sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Verses use the 12-string acoustic with arpeggiated/strummed open chords",
+          "The pre-chorus introduces electric guitar with light overdrive",
+          "The chorus uses full power chords with moderate distortion",
+          "Dm: X-X-0-2-3-1 (open Dm) or D5 power chord: X-5-7-7-X-X",
+          "F: 1-3-3-2-1-1 (barre chord) or F5: 1-3-3-X-X-X",
+          "The transition requires either switching guitars or using volume/gain controls"
+        ],
+        "sequence": [
+          "Start with clean 12-string acoustic for the verse",
+          "As the pre-chorus begins, switch to or add electric guitar",
+          "Increase gain/volume for the chorus power chords",
+          "Drop back to acoustic for the next verse",
+          "Build again for each subsequent chorus with increasing intensity"
+        ],
+        "tips": [
+          "In a live setting, use two guitars or an acoustic-electric with volume control",
+          "For practice, focus on one instrument at a time and learn both parts separately",
+          "The dynamic contrast is the song's emotional engine - do not underplay it",
+          "A clean-to-crunch channel switch on your amp can simulate the guitar change"
+        ],
+        "chords": [
+          "D",
+          "Cadd9",
+          "G",
+          "Dm",
+          "F",
+          "C"
+        ],
+        "progression": "Acoustic: D - Cadd9 - G / Electric: Dm - C - G - F"
+      }
+    },
+    {
+      "name": "Talk Box Solo Technique",
+      "description": "Richie Sambora's famous talk box guitar solo where the guitar signal is routed through a tube into the player's mouth, creating vocal-like vowel shapes on the guitar tone",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The talk box routes the amplified guitar signal through a plastic tube to the player's mouth",
+          "The player shapes vowel sounds ('wah', 'wow', 'yeah') while picking notes",
+          "The shaped sound is captured by a microphone positioned near the player's mouth",
+          "Without a talk box, a wah pedal or envelope filter can approximate the effect",
+          "The solo uses D minor pentatonic with bends and sustained notes"
+        ],
+        "sequence": [
+          "Play a note on the guitar and hold",
+          "Shape the mouth from closed to open to create the 'wah' vowel change",
+          "Move between notes while changing vowel shapes for conversational phrasing",
+          "Bend notes while shaping vowels for expressive combination effects",
+          "Build to a climactic sustained bend with wide-open vowel"
+        ],
+        "tips": [
+          "A talk box is not required to learn this song - it is only for the solo effect",
+          "A wah pedal rocked slowly can approximate the talk box vowel shaping",
+          "Without any effects, play the solo notes with clean tone and focus on phrasing",
+          "If using a talk box, practice with short notes first before attempting sustained phrases"
+        ],
+        "chords": [],
+        "progression": "Solo over Dm - C - G - F chorus changes"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "12-String Acoustic Strumming",
+      "key": "D Major",
+      "description": "The iconic 12-string acoustic intro that immediately evokes wide-open plains and the outlaw cowboy narrative, one of rock's most recognizable acoustic openings",
+      "chords": [
+        "D",
+        "Cadd9",
+        "G"
+      ],
+      "progression": "D - Cadd9 - G",
+      "notes": [
+        "Fingerpicked arpeggios open the song with a spacious, atmospheric feel",
+        "Let the open strings ring and overlap for maximum 12-string shimmer",
+        "The pattern gradually shifts from picking to strumming as intensity builds",
+        "A slight reverb or room sound enhances the acoustic character"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:22",
+      "technique": "12-String Acoustic Strumming",
+      "key": "D Major",
+      "description": "Storytelling verse with the 12-string acoustic strumming the main progression, creating the wandering cowboy atmosphere beneath the vocal narrative",
+      "chords": [
+        "D",
+        "Cadd9",
+        "G"
+      ],
+      "progression": "D - Cadd9 - G - D",
+      "notes": [
+        "Maintain the open, ringing acoustic strumming pattern from the intro",
+        "Support the vocal without overpowering - the lyrics tell the story",
+        "The tempo is slow at 74 BPM - resist the urge to rush",
+        "Each chord change falls on the downbeat of a two-bar phrase"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:22-1:40",
+      "technique": "Acoustic-to-Electric Dynamic Build",
+      "key": "D Major / D Minor",
+      "description": "The transition section where the F chord introduces a darker element and the electric guitar begins to emerge, building toward the full-band chorus",
+      "chords": [
+        "F",
+        "Cadd9",
+        "D"
+      ],
+      "progression": "F - Cadd9 - D",
+      "notes": [
+        "The F chord is the first hint of the minor tonality that dominates the chorus",
+        "Electric guitar enters with light overdrive, layering over the acoustic",
+        "Build strumming intensity to prepare for the chorus impact",
+        "The transition from major to minor feel is the emotional pivot of the song"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:40-2:15",
+      "technique": "Acoustic-to-Electric Dynamic Build",
+      "key": "D Minor",
+      "description": "The full-band chorus shifting to D minor with electric power chords, delivering the anthemic 'Wanted dead or alive' hook with arena-rock intensity",
+      "chords": [
+        "Dm",
+        "C",
+        "G",
+        "F"
+      ],
+      "progression": "Dm - C - G - F - Dm",
+      "notes": [
+        "Full electric power chords with moderate gain for the chorus",
+        "The shift to D minor creates dramatic contrast with the major-key verse",
+        "Strumming is powerful and sustained - let each chord ring",
+        "The 'dead or alive' vocal hook lands on the Dm resolution"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "2:15-3:00",
+      "technique": "12-String Acoustic Strumming",
+      "key": "D Major",
+      "description": "Return to the acoustic verse texture with the storytelling continuing, pulling the dynamics back down after the chorus intensity",
+      "chords": [
+        "D",
+        "Cadd9",
+        "G"
+      ],
+      "progression": "D - Cadd9 - G - D",
+      "notes": [
+        "Pull the dynamics back to acoustic intimacy after the electric chorus",
+        "The contrast between verse and chorus is the song's primary emotional tool",
+        "Second verse can add subtle electric guitar underneath for forward momentum",
+        "Maintain the slow 74 BPM tempo throughout"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo (Talk Box)",
+      "timeStamp": "3:30-4:10",
+      "technique": "Talk Box Solo Technique",
+      "key": "D Minor",
+      "description": "Richie Sambora's legendary talk box guitar solo - the guitar 'speaks' through the tube-in-mouth technique over the chorus chord changes, one of rock's most distinctive solo sounds",
+      "chords": [
+        "Dm",
+        "C",
+        "G",
+        "F"
+      ],
+      "progression": "Dm - C - G - F",
+      "notes": [
+        "The talk box creates a vocal quality that makes the guitar seem to speak",
+        "Without a talk box, play the solo melody with a wah pedal for approximation",
+        "The solo uses D minor pentatonic with sustained bends and vowel shaping",
+        "Each phrase imitates vocal syllables - think of it as the guitar singing"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "4:10-5:08",
+      "technique": "Acoustic-to-Electric Dynamic Build",
+      "key": "D Minor",
+      "description": "Extended final chorus with increasing intensity, building to the song's climax with full band power and the crowd-singalong hook repeating to the fade",
+      "chords": [
+        "Dm",
+        "C",
+        "G",
+        "F"
+      ],
+      "progression": "Dm - C - G - F - Dm",
+      "notes": [
+        "Maximum energy with full power chords and sustained ringing",
+        "The chorus repeats and builds, adding layers of intensity each time",
+        "The song fades on repeated chorus iterations",
+        "End with a powerful sustained Dm chord if playing live"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Guild F-512 12-string acoustic (for verses) + Gibson Les Paul (for chorus/solo)",
+      "alternatives": [
+        "Taylor 150e 12-string acoustic",
+        "Martin D12-28 12-string acoustic",
+        "Epiphone DR-212 12-string (budget option)",
+        "Any 6-string acoustic with chorus pedal as approximation"
+      ],
+      "pickup": "Acoustic piezo for clean sections; humbucker bridge pickup for electric chorus and solo"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 for electric sections",
+      "alternatives": [
+        "Fender Twin Reverb (clean acoustic amplification)",
+        "Marshall DSL40CR",
+        "Soldano SLO-100",
+        "Boss Katana 100 (multi-channel versatility)"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate crunch for chorus, not heavy saturation)",
+        "treble": "6 (warm but clear)",
+        "middle": "7 (strong midrange for vocal-like solo tone)",
+        "bass": "5 (balanced low end)",
+        "presence": "6 (clear without harshness)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate amp overdrive for chorus; boost pedal for solo. Clean tone for acoustic sections.",
+      "delay": "Medium delay (350-500ms) for the talk box solo and lead sections",
+      "reverb": "Hall reverb for spacious arena sound, heavier on acoustic sections",
+      "other": "Talk box (Heil Talk Box or Rocktron Banshee) for the iconic guitar solo. Wah pedal as substitute. Chorus pedal helpful if using 6-string instead of 12-string."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the open chord shapes and basic strumming pattern for the acoustic verse",
+      "steps": [
+        "Master the D, Cadd9, and G open chord shapes",
+        "Practice transitioning between the three chords smoothly",
+        "Learn a basic strumming pattern at 74 BPM",
+        "Play along with the verse sections on acoustic guitar"
+      ],
+      "timeEstimate": "1-2 weeks for the acoustic verse"
+    },
+    "intermediate": {
+      "focus": "Add the chorus power chords, dynamic transitions, and complete song structure",
+      "steps": [
+        "Learn the Dm, C, G, F chord progression for the chorus",
+        "Practice the dynamic transition from acoustic verse to electric chorus",
+        "Work on the pre-chorus F chord introduction as the tonal pivot",
+        "Play through the complete song structure with appropriate dynamics"
+      ],
+      "timeEstimate": "3-4 weeks for the full arrangement"
+    },
+    "advanced": {
+      "focus": "Master the talk box solo, 12-string fingerpicking, and live performance dynamics",
+      "steps": [
+        "Learn the solo melody using D minor pentatonic",
+        "Experiment with talk box or wah pedal for the solo effect",
+        "Develop the fingerpicking intro pattern on 12-string or 6-string",
+        "Practice seamless transitions between acoustic and electric sections"
+      ],
+      "timeEstimate": "4-6 weeks for complete performance mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the slow 74 BPM tempo - this song requires patience and feel",
+      "Not enough dynamic contrast between the quiet acoustic verse and loud electric chorus",
+      "Fumbling the F barre chord in the pre-chorus transition",
+      "Overplaying the acoustic sections instead of letting the open strings ring naturally"
+    ],
+    "practiceRoutine": [
+      "Warm up with open D, Cadd9, G chord transitions on acoustic (5 minutes)",
+      "Practice the verse strumming pattern at 74 BPM with metronome (5 minutes)",
+      "Work on the pre-chorus F chord transition and chorus power chords (5 minutes)",
+      "Practice the solo melody at half speed without effects (5 minutes)",
+      "Full song structure run-through focusing on dynamic contrast (5 minutes)"
+    ],
+    "focusAreas": [
+      "Open chord voicings that let strings ring for the shimmering 12-string effect",
+      "Dynamic contrast between acoustic verse and electric chorus sections",
+      "The F barre chord transition in the pre-chorus",
+      "Solo phrasing and talk box / wah technique for the lead section"
+    ],
+    "metronomeWork": [
+      "Practice acoustic strumming pattern at 74 BPM - resist speeding up",
+      "Work on chord changes with metronome on beats 1 and 3 only for the slow feel",
+      "Practice the chorus power chord progression at 74 BPM with full sustain",
+      "Solo phrases at half tempo (37 BPM) for accurate pitch and phrasing"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Livin' on a Prayer",
+        "difficulty": "Intermediate",
+        "similarity": "Same album with shared arena rock energy; contrasts with the electric-driven arrangement"
+      },
+      {
+        "title": "You Give Love a Bad Name",
+        "difficulty": "Intermediate",
+        "similarity": "Same album with the opposite approach - all electric power chords versus acoustic-to-electric build"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Every Rose Has Its Thorn",
+        "artist": "Poison",
+        "difficulty": "Beginner",
+        "similarity": "Power ballad with acoustic foundation and simple open chord progression"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Advanced",
+        "similarity": "Acoustic-to-electric build with iconic lead guitar and storytelling structure"
+      },
+      {
+        "title": "More Than a Feeling",
+        "artist": "Boston",
+        "difficulty": "Intermediate",
+        "similarity": "Arpeggiated acoustic intro building to full electric rock arrangement"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Free Fallin'",
+        "artist": "Tom Petty",
+        "difficulty": "Beginner",
+        "similarity": "Start with this simpler acoustic progression to build open chord confidence"
+      },
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Progress to the ultimate acoustic-to-electric building song"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-05",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "arena-rock",
+      "power-ballad",
+      "acoustic",
+      "12-string",
+      "talk-box",
+      "intermediate",
+      "80s-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 weeks"
+  }
+}

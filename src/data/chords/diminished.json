@@ -1,0 +1,182 @@
+{
+  "slug": "diminished",
+  "chordInfo": {
+    "name": "Diminished Chords",
+    "pageTitle": "Diminished Chord Theory",
+    "subtitle": "Master the dark, tense sound of diminished chords - symmetrical harmony that creates dramatic tension and chromatic passing motion.",
+    "colorScheme": "red",
+    "tags": ["Dark Tension", "Symmetrical Harmony", "Chromatic Passing", "Dramatic Sound"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Diminished Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Chords built entirely from minor 3rd intervals" },
+      { "label": "Formula (triad)", "value": "Root + Minor 3rd + Diminished 5th" },
+      { "label": "Formula (dim7)", "value": "Root + Minor 3rd + Dim 5th + Dim 7th" },
+      { "label": "Sound Quality", "value": "Dark, tense, unstable" },
+      { "label": "Function", "value": "Passing chord, dominant substitute, tension" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Jazz", "value": "Passing diminished chords" },
+      { "label": "Classical", "value": "vii-diminished resolution to tonic" },
+      { "label": "Film Scores", "value": "Suspense and horror" },
+      { "label": "Blues/Rock", "value": "Chromatic passing motion" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Diminished Chord Construction",
+    "boxes": [
+      {
+        "title": "Bdim Example",
+        "items": [
+          "Root: B (1st degree)",
+          "Minor 3rd: D (3rd degree)",
+          "Diminished 5th: F (5th degree)",
+          "Semitones: B->D (3), D->F (3)",
+          "Result: Dark, unstable triad"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "Minor 3rd: Dark quality",
+          "Diminished 5th (tritone): Maximum tension",
+          "Symmetrical: Stacked minor 3rds",
+          "Tritone: The 'devil's interval'",
+          "Psychology: Unsettled, anxious"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Built from: 7th degree of major scale (vii dim)",
+          "Diminished scale: Alternating half/whole steps",
+          "Function: Leading tone chord resolves to I",
+          "Passing: Chromatic connector between chords",
+          "Symmetry: Only 3 unique dim7 chords exist"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Diminished Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are the fundamental diminished chord voicings for guitar.",
+      "voicings": [
+        { "name": "Bdim", "chord": "Bdim", "notes": "B-D-F", "fingering": "Common open shape", "use": "vii in key of C, passing chord" },
+        { "name": "C#dim7", "chord": "C#dim7", "notes": "C#-E-G-Bb", "fingering": "Moveable shape", "use": "Passing between C and Dm" },
+        { "name": "Edim", "chord": "Edim", "notes": "E-G-Bb", "fingering": "Based on open E shape", "use": "Chromatic passing motion" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Diminished Chord Progressions",
+    "items": [
+      {
+        "title": "Passing Diminished Pattern",
+        "titleColor": "text-red-700",
+        "chords": [
+          { "chord": "C", "label": "C", "numeral": "I" },
+          { "chord": "C#dim7", "label": "C#dim7", "numeral": "#Idim7" },
+          { "chord": "Dm", "label": "Dm", "numeral": "ii" },
+          { "chord": "G7", "label": "G7", "numeral": "V7" }
+        ],
+        "strumming": {
+          "pattern": "D - D - D - D",
+          "description": "Deliberate chromatic movement",
+          "tempo": "80-110 BPM",
+          "feel": "Dramatic, chromatic",
+          "genre": "Jazz, Classical, Film"
+        },
+        "alphaTex": "(3.5 2.4 0.3 1.2 0.1).1 | (4.5 2.4 1.3 2.2).1 | (2.4 3.3 1.2).1 | (3.6 2.5 0.4 0.3 0.2 1.1).1",
+        "alphaTexTitle": "Passing Diminished (C-C#dim7-Dm-G7)",
+        "description": "The diminished chord creates smooth chromatic voice leading between C and Dm - a classic jazz and pop technique."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice the moveable diminished 7th shape",
+        "Focus on smooth chromatic transitions",
+        "Listen for the tritone tension in each voicing",
+        "Use diminished chords sparingly for dramatic effect"
+      ],
+      "applicationItems": [
+        "Creates dramatic tension in any style",
+        "Smooth chromatic passing motion",
+        "Essential for jazz and classical harmony",
+        "Perfect for building suspense in music"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Diminished Chords",
+    "categories": [
+      {
+        "title": "Classic & Jazz",
+        "colorBg": "bg-red-100",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "songs": [
+          "\"Michelle\" - The Beatles (Fdim-E)",
+          "\"God Only Knows\" - Beach Boys (Bb/D-Bbm/Db)",
+          "\"Misty\" - Erroll Garner (diminished passing chords)",
+          "\"Jaws Theme\" - John Williams (chromatic tension)",
+          "\"SOS\" - ABBA (Bb-Bbdim-F)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Diminished Chord Skills",
+    "tipDescription": "These exercises will help you master diminished chords and their applications.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Diminished Passing Chord Practice",
+        "content": "Pattern: C-C#dim7-Dm, D-D#dim7-Em, E-E#dim7-F#m",
+        "detail": "Practice using diminished chords as chromatic passing chords",
+        "tip": "Notice how the diminished chord smoothly connects the two chords a whole step apart"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Diminished Chord Concepts",
+    "concepts": [
+      {
+        "title": "Diminished Chord Symmetry",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "items": [
+          "Only 3 unique dim7 chords exist (due to symmetry)",
+          "Cdim7 = Ebdim7 = Gbdim7 = Adim7",
+          "Diminished scale: Half-whole or whole-half",
+          "Dominant substitute: dim7 can replace V7",
+          "Tritone substitution: Related diminished concept"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand diminished chords, explore how they connect to other chord types and advanced harmonic concepts.",
+    "links": [
+      {
+        "slug": "augmented",
+        "title": "Augmented Chords",
+        "description": "Explore the symmetrical counterpart - augmented harmony.",
+        "linkText": "Learn augmented chords",
+        "icon": "+",
+        "hoverBorder": "hover:border-indigo-300",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "slug": "ionian",
+  "modeInfo": {
+    "name": "Ionian Mode",
+    "pageTitle": "Ionian Mode",
+    "subtitle": "The foundational and bright mode - the familiar major scale that forms the basis of Western music harmony.",
+    "heroGradient": "bg-gradient-to-r from-blue-600 to-cyan-700",
+    "tags": [
+      "W-W-H-W-W-W-H",
+      "7 Notes",
+      "Natural Scale",
+      "Bright & Stable"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Scale Properties",
+    "properties": [
+      {
+        "label": "Formula",
+        "value": "1-2-3-4-5-6-7"
+      },
+      {
+        "label": "Intervals",
+        "value": "W-W-H-W-W-W-H"
+      },
+      {
+        "label": "Key characteristics",
+        "value": "Natural major scale intervals"
+      },
+      {
+        "label": "Character",
+        "value": "Bright, happy, stable, familiar"
+      },
+      {
+        "label": "Function",
+        "value": "Foundation of Western harmony"
+      }
+    ],
+    "exampleTitle": "C Ionian Example",
+    "examples": [
+      {
+        "label": "Notes",
+        "value": "C-D-E-F-G-A-B-C"
+      },
+      {
+        "label": "Parent scale",
+        "value": "C major (starting on C)"
+      },
+      {
+        "label": "Signature sound",
+        "value": "Bright, familiar major scale"
+      },
+      {
+        "label": "Perfect for",
+        "value": "Pop, rock, classical, country, folk"
+      }
+    ],
+    "bulletColor": "text-gray-500"
+  },
+  "guitarApplications": {
+    "fretboardPatterns": [
+      {
+        "title": "C Ionian - Open Position",
+        "description": "Classic open C major scale:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 3/5 0/4 2/4 3/4 | :q 0/3 2/3 0/2 1/2 | :q 3/2 1/2 0/2\n                    ",
+        "notes": [
+          "Root on 5th string, 3rd fret (C)",
+          "Perfect 5th (G) on open 3rd string",
+          "Major 3rd (E) on open 1st string",
+          "Natural intervals create bright sound"
+        ],
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "colorDetail": "text-blue-600"
+      },
+      {
+        "title": "G Ionian - 3rd Position",
+        "description": "Popular key for guitar:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 3/6 5/6 2/5 3/5 | :q 5/5 2/4 4/4 2/3 | :q 4/3 2/2 4/2\n                    ",
+        "notes": [],
+        "colorBg": "bg-cyan-50",
+        "colorBorder": "border-cyan-200",
+        "colorTitle": "text-cyan-800",
+        "colorText": "text-cyan-700",
+        "colorDetail": "text-cyan-600"
+      },
+      {
+        "title": "D Ionian - 7th Position",
+        "description": "Higher register pattern:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 10/6 12/6 9/5 10/5 | :q 12/5 9/4 11/4 9/3 | :q 11/3 9/2 11/2\n                    ",
+        "notes": [],
+        "colorBg": "bg-sky-50",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-800",
+        "colorText": "text-sky-700",
+        "colorDetail": "text-sky-600"
+      }
+    ],
+    "musicalApplications": [
+      {
+        "title": "Pop & Rock",
+        "description": "Foundation of popular music:",
+        "items": [
+          "Verse and chorus melodies",
+          "Lead guitar solos",
+          "Harmonic progressions (I-V-vi-IV)",
+          "Acoustic strumming patterns",
+          "Classic rock anthems"
+        ],
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700"
+      },
+      {
+        "title": "Classical & Traditional",
+        "description": "Foundation of Western music:",
+        "items": [
+          "Classical compositions",
+          "Folk melodies",
+          "Hymns and spirituals",
+          "Children's songs",
+          "Traditional ballads"
+        ],
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700"
+      },
+      {
+        "title": "Country & Folk",
+        "description": "Americana and roots music:",
+        "items": [
+          "Country song melodies",
+          "Bluegrass fiddle tunes",
+          "Folk guitar fingerpicking",
+          "Americana songwriter style",
+          "Traditional dance music"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classic": [
+      {
+        "title": "The Beatles - \"Let It Be\"",
+        "description": "Perfect example of C major songwriting",
+        "detail": "Simple, effective major scale melodies"
+      },
+      {
+        "title": "Eagles - \"Hotel California\"",
+        "description": "Bm ionian in the famous solo",
+        "detail": "Classic rock guitar application"
+      },
+      {
+        "title": "Bach - Brandenburg Concertos",
+        "description": "Classical major scale mastery",
+        "detail": "Baroque period harmonic foundation"
+      }
+    ],
+    "modern": [
+      {
+        "title": "Ed Sheeran - \"Perfect\"",
+        "description": "Modern pop songwriting",
+        "detail": "G major ionian throughout"
+      },
+      {
+        "title": "John Mayer - \"Gravity\"",
+        "description": "Blues-influenced major scale",
+        "detail": "Contemporary guitar application"
+      },
+      {
+        "title": "Taylor Swift - Various Hits",
+        "description": "Country-pop major scale melodies",
+        "detail": "Modern songwriter approach"
+      }
+    ]
+  },
+  "practiceCategories": [
+    {
+      "title": "Ear Training",
+      "icon": "\ud83d\udc42",
+      "items": [
+        "Identify major scale intervals",
+        "Recognize Do-Re-Mi patterns",
+        "Practice with familiar songs",
+        "Sing scale degrees (1-2-3-4-5-6-7-8)",
+        "Compare to minor scales"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Technical Practice",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Master all five CAGED positions",
+        "Practice ascending and descending",
+        "Work on string-by-string patterns",
+        "Connect different positions",
+        "Practice in all 12 keys"
+      ],
+      "colorBg": "bg-cyan-50",
+      "colorBorder": "border-cyan-200",
+      "colorTitle": "text-cyan-800",
+      "colorText": "text-cyan-700"
+    },
+    {
+      "title": "Musical Application",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Create simple melodies",
+        "Practice over major chords",
+        "Study popular song melodies",
+        "Work on improvisation",
+        "Compose using major scale"
+      ],
+      "colorBg": "bg-sky-50",
+      "colorBorder": "border-sky-200",
+      "colorTitle": "text-sky-800",
+      "colorText": "text-sky-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: C Major Scale",
+      "description": "Practice the fundamental C major scale:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :8 3/5 0/4 2/4 3/4 0/3 2/3 0/2 1/2 | :8 1/2 0/2 2/3 0/3 3/4 2/4 0/4 3/5\n                ",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Exercise 2: Major Scale Melody",
+      "description": "Simple major scale melody in C:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 3/5 0/4 2/4 :q 3/4 | :q 0/3 2/3 :q 0/2 | :h 1/2 | :w 3/5\n                ",
+      "colorBg": "bg-cyan-50",
+      "colorBorder": "border-cyan-200",
+      "colorTitle": "text-cyan-800",
+      "colorText": "text-cyan-700"
+    },
+    {
+      "title": "Exercise 3: Chord Tone Arpeggios",
+      "description": "Major triad arpeggios from the major scale:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 3/5 2/4 0/3 :q 1/2 | :q 1/2 0/3 :q 2/4 | :h 3/5 | :w 3/5\n                ",
+      "colorBg": "bg-sky-50",
+      "colorBorder": "border-sky-200",
+      "colorTitle": "text-sky-800",
+      "colorText": "text-sky-700"
+    }
+  ],
+  "scaleRelationships": {
+    "relationships": [
+      {
+        "title": "Natural Minor (Aeolian)",
+        "description": "Same notes, different starting point"
+      },
+      {
+        "title": "Relative Minor",
+        "description": "Starts on the 6th degree of major"
+      },
+      {
+        "title": "Parallel Minor",
+        "description": "Same root note, different intervals"
+      }
+    ],
+    "relatedModes": [
+      {
+        "title": "Dorian (2nd mode)",
+        "description": "Minor with natural 6th"
+      },
+      {
+        "title": "Phrygian (3rd mode)",
+        "description": "Minor with flat 2nd"
+      },
+      {
+        "title": "Lydian (4th mode)",
+        "description": "Major with raised 4th"
+      }
+    ]
+  },
+  "keyVariants": [
+    {
+      "title": "G Ionian - 3rd Position",
+      "description": "Popular guitar key:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 3/6 5/6 2/5 3/5 5/5 | :q 2/4 4/4 2/3 | :q 4/3 2/2 4/2\n                ",
+      "notesLabel": "Notes: G-A-B-C-D-E-F#-G",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "D Ionian - 7th Position",
+      "description": "Higher register pattern:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 10/6 12/6 9/5 10/5 12/5 | :q 9/4 11/4 9/3 | :q 11/3 9/2 11/2\n                ",
+      "notesLabel": "Notes: D-E-F#-G-A-B-C#-D",
+      "colorBg": "bg-cyan-50",
+      "colorBorder": "border-cyan-200",
+      "colorTitle": "text-cyan-800",
+      "colorText": "text-cyan-700",
+      "colorDetail": "text-cyan-600"
+    },
+    {
+      "title": "A Ionian - 5th Position",
+      "description": "Rock and pop favorite:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 5/6 7/6 4/5 5/5 7/5 | :q 4/4 6/4 4/3 | :q 6/3 4/2 6/2\n                ",
+      "notesLabel": "Notes: A-B-C#-D-E-F#-G#-A",
+      "colorBg": "bg-sky-50",
+      "colorBorder": "border-sky-200",
+      "colorTitle": "text-sky-800",
+      "colorText": "text-sky-700",
+      "colorDetail": "text-sky-600"
+    },
+    {
+      "title": "E Ionian - Open/12th Position",
+      "description": "Open position alternative:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 0/6 2/6 1/5 2/5 4/5 | :q 1/4 3/4 1/3 | :q 3/3 1/2 3/2\n                ",
+      "notesLabel": "Notes: E-F#-G#-A-B-C#-D#-E",
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700",
+      "colorDetail": "text-indigo-600"
+    }
+  ],
+  "relatedScales": [
+    {
+      "title": "Natural Minor",
+      "description": "Relative minor - same notes different order",
+      "detail": "A minor is relative to C major"
+    },
+    {
+      "title": "Pentatonic Major",
+      "description": "Five-note subset of major scale",
+      "detail": "Removes 4th and 7th degrees"
+    },
+    {
+      "title": "Lydian Mode",
+      "description": "Major scale with raised 4th",
+      "detail": "Dreamy, ethereal variation"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Modal Journey",
+    "description": "Now that you understand the foundational major scale, explore other modes to expand your musical vocabulary and add different colors to your playing.",
+    "gradientFrom": "from-blue-50",
+    "gradientTo": "to-cyan-50",
+    "borderColor": "border-blue-200",
+    "links": [
+      {
+        "slug": "dorian",
+        "title": "Dorian Mode",
+        "description": "Explore the jazzy minor mode with natural 6th.",
+        "linkText": "Jazz minor",
+        "icon": "\ud83c\udfb7",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "hoverBorder": "hover:border-green-300",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "slug": "lydian",
+        "title": "Lydian Mode",
+        "description": "Discover the dreamy major mode with raised 4th.",
+        "linkText": "Dreamy major",
+        "icon": "\u2728",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "hoverBorder": "hover:border-yellow-300",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      },
+      {
+        "slug": "modes",
+        "title": "All Modes",
+        "description": "Explore all seven modes of the major scale.",
+        "linkText": "Complete journey",
+        "icon": "\ud83c\udfad",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "hoverBorder": "hover:border-purple-300",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

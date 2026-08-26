@@ -1,0 +1,302 @@
+{
+  "slug": "recording-preamps",
+  "category": "recording",
+  "pageTitle": "Microphone Preamps",
+  "subtitle": "The crucial first step in your signal chain. Preamps boost weak microphone signals to line level while adding character, warmth, and often defining the sonic signature of your recordings.",
+  "heroGradient": "bg-gradient-to-r from-red-50 to-orange-50",
+  "backLink": {
+    "href": "/lessons/gear/recording",
+    "label": "Back to Recording Gear"
+  },
+  "introduction": {
+    "title": "What is a Microphone Preamp?",
+    "text": "A microphone preamp (pre-amplifier) boosts the very weak signal from microphones to line level, making it strong enough for further processing and recording. The preamp is often the most crucial component affecting the character and quality of your recordings.",
+    "columns": [
+      {
+        "title": "Primary Functions",
+        "text": "Amplification: Boost mic signal 40-60dB. Impedance Matching: Optimize signal transfer. Phantom Power: Supply +48V for condensers. Gain Control: Adjust input sensitivity. Signal Conditioning: Shape tone and character. Noise Control: Maintain high signal-to-noise ratio."
+      },
+      {
+        "title": "Why Quality Matters",
+        "text": "First component in recording chain. Sets noise floor for entire recording. Adds distinctive tonal character. Affects dynamic response and transients. Influences harmonic content. Cannot be \"fixed\" later in mix."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Tube Preamps",
+      "bgColor": "bg-amber-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "Warm, musical harmonic distortion",
+            "Natural compression and saturation",
+            "Smooth high-frequency response",
+            "Enhanced midrange presence",
+            "Vintage, classic sound character",
+            "Responds dynamically to input levels"
+          ]
+        },
+        {
+          "title": "Best Applications",
+          "items": [
+            "Vocals (especially for warmth)",
+            "Acoustic instruments",
+            "Electric guitar recording",
+            "Vintage-style productions",
+            "Adding character to digital recordings",
+            "Sources that benefit from compression"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Tube Preamps",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Manley VOXBOX", "value": "All-in-one vocal channel" },
+            { "label": "Universal Audio 610", "value": "Classic tube warmth" },
+            { "label": "ART Pro MPA II", "value": "Affordable tube option" },
+            { "label": "Avalon VT-737sp", "value": "High-end vocal chain" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solid State Preamps",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "Clean, transparent sound",
+            "Wide frequency response",
+            "Low noise and distortion",
+            "High headroom and dynamic range",
+            "Consistent performance",
+            "Often more affordable"
+          ]
+        },
+        {
+          "title": "Best Applications",
+          "items": [
+            "Classical and acoustic recording",
+            "High-resolution digital recording",
+            "Sources requiring transparency",
+            "Percussion and transient-rich material",
+            "Modern pop and electronic music",
+            "Multi-mic setups requiring consistency"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Solid State Preamps",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Focusrite ISA series", "value": "Clean and detailed" },
+            { "label": "SSL VHD Pre", "value": "Console-style transparency" },
+            { "label": "Grace Design m101", "value": "Ultra-clean reference" },
+            { "label": "Millennia HV-3", "value": "High-voltage discrete design" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transformer-Based Preamps",
+      "bgColor": "bg-green-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "Rich harmonic saturation",
+            "Enhanced low-end weight",
+            "Vintage console character",
+            "Natural compression effect",
+            "Excellent for drums and bass",
+            "Classic analog sound"
+          ]
+        },
+        {
+          "title": "Transformer Types",
+          "fields": [
+            { "label": "Neve-style", "value": "Warm, musical character" },
+            { "label": "API-style", "value": "Punchy, forward sound" },
+            { "label": "SSL-style", "value": "Clean but with character" },
+            { "label": "Vintage Telefunken", "value": "Classic German sound" },
+            { "label": "Custom Designs", "value": "Boutique transformers" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Transformer Preamps",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Neve 1073", "value": "Legendary British sound" },
+            { "label": "API 512c", "value": "American punch and clarity" },
+            { "label": "BAE 1073", "value": "Hand-wired Neve recreation" },
+            { "label": "Chandler Limited TG2", "value": "Abbey Road console sound" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Preamp Features",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Basic Controls",
+          "fields": [
+            { "label": "Gain Control", "value": "Input sensitivity adjustment" },
+            { "label": "Phantom Power", "value": "+48V for condenser mics" },
+            { "label": "Phase Invert", "value": "180 degree polarity reversal" },
+            { "label": "HPF (High-Pass Filter)", "value": "Remove low frequencies" },
+            { "label": "Pad", "value": "Attenuate hot input signals" },
+            { "label": "Output Level", "value": "Control signal to DAW" }
+          ]
+        },
+        {
+          "title": "Advanced Features",
+          "fields": [
+            { "label": "Impedance Selection", "value": "Match different microphones" },
+            { "label": "Saturation Control", "value": "Adjustable harmonic content" },
+            { "label": "EQ Section", "value": "Built-in tone shaping" },
+            { "label": "Compressor", "value": "Integrated dynamics control" },
+            { "label": "Direct Input", "value": "High-impedance instrument input" },
+            { "label": "Multiple Outputs", "value": "Send to different destinations" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Standalone vs. Built-in Preamps",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Interface Preamps",
+          "bgColor": "bg-purple-50",
+          "items": [
+            "Integrated, convenient solution",
+            "No additional cabling required",
+            "Often adequate for most applications",
+            "Cost-effective for multi-channel recording",
+            "Consistent gain staging",
+            "Usually clean/neutral character",
+            "Limited character options"
+          ]
+        },
+        {
+          "title": "External Preamps",
+          "bgColor": "bg-teal-50",
+          "items": [
+            "Dedicated design for optimal performance",
+            "Distinctive sonic character options",
+            "Higher quality components",
+            "Modular upgrade path",
+            "Professional studio standard",
+            "Additional cost and complexity",
+            "Requires line inputs on interface"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iconic Preamp Sounds in Music",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Classic Rock & Pop",
+          "bgColor": "bg-yellow-50",
+          "fields": [
+            { "label": "Neve 1073 (Beatles, Led Zeppelin)", "value": "Warm, musical midrange with sweet high-end" },
+            { "label": "API 512 (Nirvana, Red Hot Chili Peppers)", "value": "Punchy, forward sound with excellent transients" },
+            { "label": "SSL E/G Series (Whitney Houston, Phil Collins)", "value": "Clean but characterful, perfect for 80s pop" }
+          ]
+        },
+        {
+          "title": "Modern Productions",
+          "bgColor": "bg-indigo-50",
+          "fields": [
+            { "label": "Focusrite ISA (Adele, Ed Sheeran)", "value": "Clean, detailed sound perfect for modern vocals" },
+            { "label": "Universal Audio 610 (John Mayer, Norah Jones)", "value": "Tube warmth ideal for singer-songwriter material" },
+            { "label": "Chandler TG2 (Radiohead, Coldplay)", "value": "Abbey Road console sound with British character" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preamp Buying Guide",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Budget Option ($200-500)",
+          "items": [
+            "ART Pro MPA II (tube character)",
+            "Behringer Ultragain Pro (clean)",
+            "PreSonus BlueTube DP V2",
+            "Golden Age Project PRE-73",
+            "Focus on single-channel quality"
+          ]
+        },
+        {
+          "title": "Professional ($500-1500)",
+          "items": [
+            "Focusrite ISA One/Two",
+            "Universal Audio Solo/610",
+            "Warm Audio WA12/WA273",
+            "API 512c/512v",
+            "Consider 2-channel options"
+          ]
+        },
+        {
+          "title": "High-End ($1500+)",
+          "items": [
+            "Neve 1073 SPX/DPX",
+            "Chandler Limited TG2",
+            "Millennia HV-3D",
+            "Avalon VT-737sp",
+            "Boutique and vintage options"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preamp Setup & Usage",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Proper Gain Staging",
+          "description": "Set preamp gain for optimal signal level without clipping. Aim for -18 to -12 dBFS peaks for most digital systems, leaving headroom for dynamics and processing."
+        },
+        {
+          "title": "Impedance Matching",
+          "description": "Most microphones work best with preamp input impedances 5-10 times higher than the mic's output impedance. Some preamps offer selectable impedance for different colors."
+        },
+        {
+          "title": "Signal Chain Position",
+          "description": "External preamps go between microphone and audio interface line input. Bypass interface preamps when using external units to avoid double-amplification."
+        },
+        {
+          "title": "Warming Up Tube Preamps",
+          "description": "Tube preamps need 15-30 minutes to reach optimal operating temperature. The sound will stabilize and reach full warmth after proper warm-up time."
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

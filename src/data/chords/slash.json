@@ -1,0 +1,324 @@
+{
+  "slug": "slash",
+  "chordInfo": {
+    "name": "Slash Chords",
+    "pageTitle": "Slash Chord Theory & Inversions",
+    "subtitle": "Master slash chords to create smooth bass lines, elegant inversions, and professional voice leading that transforms simple progressions into polished arrangements.",
+    "colorScheme": "sky",
+    "tags": ["Bass Movement", "Inversions", "Voice Leading", "Smooth Transitions"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Slash Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "A chord with a specified bass note different from the root, written as Chord/Bass (e.g., C/G)" },
+      { "label": "Inversions", "value": "When the bass note is a chord tone: C/E = 1st inversion, C/G = 2nd inversion" },
+      { "label": "Non-Chord-Tone Bass", "value": "Bass note outside the chord (e.g., C/Bb) creates hybrid harmony" },
+      { "label": "Sound Quality", "value": "Smooth, connected, flowing bass movement between chords" },
+      { "label": "Function", "value": "Voice leading, walking bass lines, pedal points, and chromatic bass motion" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Classic Rock", "value": "Stairway to Heaven intro (Am - Am/G# - C/G - D/F#)" },
+      { "label": "Pop & Folk", "value": "Descending bass lines (C - C/B - Am - Am/G)" },
+      { "label": "Singer-Songwriter", "value": "Beatles-style arrangements with moving inner voices" },
+      { "label": "Worship & Ballads", "value": "Pedal bass tones creating sustained harmonic depth" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Slash Chord Construction",
+    "boxes": [
+      {
+        "title": "Inversion Types",
+        "items": [
+          "Root position: Bass note = root (C with C in bass)",
+          "1st inversion: Bass note = 3rd (C/E has E in bass)",
+          "2nd inversion: Bass note = 5th (C/G has G in bass)",
+          "Non-chord bass: Any note outside the triad (C/Bb)",
+          "Notation: Chord name / Bass note (always read left/right)"
+        ]
+      },
+      {
+        "title": "D/F# - Most Common Slash Chord",
+        "items": [
+          "D major triad: D - F# - A",
+          "Bass note: F# (the major 3rd)",
+          "This is D in 1st inversion",
+          "Guitar voicing: 2-0-0-2-3-2 (thumb wraps for F# on low E)",
+          "Used in countless songs as a passing chord between G and Em"
+        ]
+      },
+      {
+        "title": "Bass Line Movement Patterns",
+        "items": [
+          "Descending: C - C/B - Am - Am/G - F (stepwise bass drop)",
+          "Ascending: Am - Am/B - C - C/D - G (bass climbs up)",
+          "Chromatic: A - A/G# - A/G - A/F# (half-step bass motion)",
+          "Pedal point: G - C/G - D/G - Em/G (bass stays on G)",
+          "Walking: G - G/F# - Em - Em/D - C (bass walks down scale)"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Slash Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are the most common and practical slash chord voicings on guitar. D/F# is by far the most used slash chord - learn it first.",
+      "voicings": [
+        { "name": "D/F#", "chord": "D_major", "notes": "F#-D-A-D-F#", "fingering": "Thumb wraps low E string, fret 2", "use": "Passing chord between G and Em, smooth bass line" },
+        { "name": "C/E", "chord": "C_major", "notes": "E-C-E-G-C-E", "fingering": "Standard C shape, lowest note is open E", "use": "1st inversion C, softer landing than root position" },
+        { "name": "C/G", "chord": "C_major", "notes": "G-C-E-G-C-E", "fingering": "Add 3rd fret low E string to C shape", "use": "2nd inversion C, strong bass for fingerpicking" },
+        { "name": "Am/E", "chord": "A_minor", "notes": "E-A-E-A-C-E", "fingering": "Standard Am with open low E string", "use": "Full sound, common in arpeggiated passages" },
+        { "name": "G/B", "chord": "G_major", "notes": "B-D-G-B-D-G", "fingering": "G shape starting from 2nd fret A string", "use": "Walking bass from Am to C, essential connector" },
+        { "name": "Am/G", "chord": "Am7", "notes": "G-A-E-A-C-E", "fingering": "Am with 3rd fret low E or open G bass", "use": "Descending bass lines, adds 7th color" }
+      ]
+    },
+    {
+      "title": "Intermediate & Advanced Slash Voicings",
+      "tipTitle": "Expand Your Palette",
+      "tipDescription": "Once comfortable with the essentials, these voicings open up more sophisticated bass movement possibilities.",
+      "voicings": [
+        { "name": "F/C", "chord": "F_major", "notes": "C-F-A-C-F", "fingering": "F barre with C on A string, 3rd fret", "use": "2nd inversion F, strong bass foundation" },
+        { "name": "Em/D", "chord": "Em7", "notes": "D-E-B-E-G-B", "fingering": "Em with open D string as bass", "use": "Adds minor 7th feel, descending from G" },
+        { "name": "G/F#", "chord": "GMaj7", "notes": "F#-G-B-D-G-B", "fingering": "G shape with 2nd fret low E string", "use": "Chromatic bass walk G to Em, Beatles style" },
+        { "name": "E/G#", "chord": "E_major", "notes": "G#-E-B-E-G#-B", "fingering": "E shape with 4th fret low E string", "use": "1st inversion E, classic country and pop" },
+        { "name": "Dm/F", "chord": "D_minor", "notes": "F-D-A-D-F", "fingering": "Dm with 1st fret low E string", "use": "1st inversion Dm, rich bass tone" },
+        { "name": "Bb/D", "chord": "Bb", "notes": "D-Bb-F-Bb-D", "fingering": "Bb shape starting from D on A string", "use": "1st inversion Bb, avoids heavy barre" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Slash Chord Progressions",
+    "items": [
+      {
+        "title": "Descending Bass Line (C Down to F)",
+        "titleColor": "text-sky-700",
+        "chords": [
+          { "chord": "C_major", "label": "C", "numeral": "I" },
+          { "chord": "G_major", "label": "C/B", "numeral": "I/7" },
+          { "chord": "A_minor", "label": "Am", "numeral": "vi" },
+          { "chord": "Am7", "label": "Am/G", "numeral": "vi/b7" },
+          { "chord": "F_major", "label": "F", "numeral": "IV" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - DU - DU",
+          "description": "Gentle fingerpicking or slow strumming",
+          "tempo": "70-100 BPM",
+          "feel": "Flowing, elegant",
+          "genre": "Pop, Ballads, Singer-Songwriter"
+        },
+        "alphaTex": "(0.5 1.4 0.3 0.2 0.1).2 | (2.5 1.4 0.3 0.2 0.1).2 | (0.5 2.4 2.3 1.2 0.1).2 | (3.6 0.5 2.4 2.3 1.2 0.1).2 | (1.2 1.1 2.3 3.4).1",
+        "alphaTexTitle": "Descending Bass: C - C/B - Am - Am/G - F",
+        "description": "The classic descending bass line heard in countless pop ballads. The bass walks smoothly down C-B-A-G-F while chords change above."
+      },
+      {
+        "title": "D/F# Walking Bass (G Major Key)",
+        "titleColor": "text-sky-700",
+        "chords": [
+          { "chord": "G_major", "label": "G", "numeral": "I" },
+          { "chord": "D_major", "label": "D/F#", "numeral": "V/3" },
+          { "chord": "E_minor", "label": "Em", "numeral": "vi" },
+          { "chord": "C_major", "label": "C", "numeral": "IV" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - DU - DU",
+          "description": "Alternating bass with strumming",
+          "tempo": "80-120 BPM",
+          "feel": "Warm, pastoral",
+          "genre": "Folk, Country, Worship"
+        },
+        "alphaTex": "(3.6 0.5 0.4 0.3 0.2 3.1).2 | (2.6 0.4 2.3 3.2 2.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).2 | (0.5 1.4 0.3 0.2 0.1).1",
+        "alphaTexTitle": "Walking Bass: G - D/F# - Em - C",
+        "description": "The most common slash chord progression on guitar. D/F# creates a smooth stepwise bass walk from G down to Em, avoiding the leap from D to E."
+      },
+      {
+        "title": "Stairway-Style Descending (Am)",
+        "titleColor": "text-sky-700",
+        "chords": [
+          { "chord": "A_minor", "label": "Am", "numeral": "i" },
+          { "chord": "A_minor", "label": "Am/G#", "numeral": "i/7" },
+          { "chord": "C_major", "label": "C/G", "numeral": "III/5" },
+          { "chord": "D_major", "label": "D/F#", "numeral": "IV/3" },
+          { "chord": "F_major", "label": "F", "numeral": "VI" }
+        ],
+        "strumming": {
+          "pattern": "Fingerpick: p-i-m-a",
+          "description": "Arpeggiated fingerpicking pattern",
+          "tempo": "60-80 BPM",
+          "feel": "Mysterious, building",
+          "genre": "Classic Rock, Progressive"
+        },
+        "alphaTex": "(0.5 2.4 2.3 1.2 0.1).2 | (4.6 0.5 2.4 2.3 1.2).2 | (3.6 0.5 1.4 0.3 0.2).2 | (2.6 0.4 2.3 3.2 2.1).2 | (1.2 1.1 2.3 3.4).1",
+        "alphaTexTitle": "Chromatic Descent: Am - Am/G# - C/G - D/F# - F",
+        "description": "Inspired by the Stairway to Heaven intro. The bass descends chromatically (A-G#-G-F#-F) while upper voices shift between chords, creating a hypnotic effect."
+      },
+      {
+        "title": "Pedal Bass Pattern (G Pedal)",
+        "titleColor": "text-sky-700",
+        "chords": [
+          { "chord": "G_major", "label": "G", "numeral": "I" },
+          { "chord": "C_major", "label": "C/G", "numeral": "IV/5" },
+          { "chord": "D_major", "label": "D/G", "numeral": "V/4" },
+          { "chord": "E_minor", "label": "Em", "numeral": "vi" }
+        ],
+        "strumming": {
+          "pattern": "D - D - DU - DU",
+          "description": "Steady bass note with changing chords above",
+          "tempo": "85-110 BPM",
+          "feel": "Grounded, hypnotic",
+          "genre": "Rock, Ambient, Film Scores"
+        },
+        "alphaTex": "(3.6 0.5 0.4 0.3 0.2 3.1).2 | (3.6 0.5 1.4 0.3 0.2 0.1).2 | (3.6 0.4 2.3 3.2 2.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).1",
+        "alphaTexTitle": "Pedal Bass: G - C/G - D/G - Em",
+        "description": "A pedal bass pattern where G stays in the bass throughout. The static bass creates a drone effect while upper chord movements add harmonic interest above."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice thumb-wrap technique for bass notes on the low E string",
+        "Focus on clean bass note separation from upper chord tones",
+        "Use alternating bass fingerpicking to highlight the slash bass note",
+        "Practice bass note transitions slowly before adding full chord strums"
+      ],
+      "applicationItems": [
+        "Use slash chords to create stepwise bass motion between root-position chords",
+        "Replace abrupt chord changes with inversions for smoother voice leading",
+        "Apply descending bass lines to ballads and singer-songwriter arrangements",
+        "Combine with fingerpicking for professional-sounding arpeggiated passages"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Slash Chords",
+    "categories": [
+      {
+        "title": "Classic Rock & Pop Essentials",
+        "colorBg": "bg-sky-100",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-800",
+        "colorText": "text-sky-700",
+        "songs": [
+          "\"Stairway to Heaven\" - Led Zeppelin (Am-Am/G#-C/G-D/F#, iconic descending bass)",
+          "\"Something\" - The Beatles (C-C/B-Am, George Harrison's masterful bass lines)",
+          "\"Let It Be\" - The Beatles (C-G/B-Am-F, smooth walking bass)",
+          "\"Tears in Heaven\" - Eric Clapton (A-E/G#-F#m-D/F#, emotional inversions)",
+          "\"Dust in the Wind\" - Kansas (C-C/B-Am, fingerpicked descending line)"
+        ]
+      },
+      {
+        "title": "Modern Rock, Folk & Worship",
+        "colorBg": "bg-sky-50",
+        "colorBorder": "border-sky-100",
+        "colorTitle": "text-sky-700",
+        "colorText": "text-sky-600",
+        "songs": [
+          "\"Wonderwall\" - Oasis (Em-G-D/F#-A7sus4, endless use of D/F#)",
+          "\"Good Riddance\" - Green Day (G-C-D/F#, punk with slash chords)",
+          "\"Fast Car\" - Tracy Chapman (C-G/B-Am-Em, bass line drives the song)",
+          "\"Hallelujah\" - Leonard Cohen (C-Am-C/E-Am, subtle inversion movement)",
+          "\"Under the Bridge\" - RHCP (E-B/D#-C#m-A, descending chromatic bass)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Slash Chord Fluency",
+    "tipDescription": "These exercises develop your ability to play smooth bass lines and clean inversions across common slash chord shapes.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Descending Bass Line Drill",
+        "content": "Pattern: C - C/B - Am - Am/G - F - F/E - Dm - G",
+        "detail": "Play each chord for 2 beats, focusing on the bass note stepping down smoothly (C-B-A-G-F-E-D-G). Use fingerpicking with the thumb on bass notes and fingers on upper strings.",
+        "tip": "Keep your thumb independent from your fingers - the bass note should ring clearly beneath the chord"
+      },
+      {
+        "title": "Exercise 2: D/F# Transition Mastery",
+        "content": "Pattern: G - D/F# - Em - C (repeat), then G - D/F# - Em - D/F# - G",
+        "detail": "Focus on the thumb-wrap technique for D/F#. Your thumb reaches over the neck to fret the 2nd fret on the low E string while fingers form the D chord shape above.",
+        "tip": "If thumb-wrap is difficult, use your index finger on the 2nd fret low E and rearrange upper fingers accordingly"
+      },
+      {
+        "title": "Exercise 3: Ascending & Descending Bass Walk",
+        "content": "Ascending: Am - Am/B - C - C/D - G | Descending: G - G/F# - Em - Em/D - C",
+        "detail": "Combine ascending and descending bass walks in one exercise. The bass steps up (A-B-C-D-G) then walks back down (G-F#-E-D-C), creating a complete bass journey.",
+        "tip": "Practice with a metronome at 60 BPM first, then gradually increase tempo while maintaining clean bass note transitions"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Slash Chord Concepts",
+    "concepts": [
+      {
+        "title": "Chromatic Bass Movement & Hybrid Chords",
+        "colorBg": "bg-sky-50",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-800",
+        "colorText": "text-sky-700",
+        "items": [
+          "Chromatic bass: A - A/G# - A/G - A/F# creates tension through half-step descent",
+          "Non-chord-tone bass: C/Bb places the b7 in bass, implying C dominant function",
+          "Hybrid chords: Am/D can function as D11 or Dsus, blurring chord identity",
+          "Polychords: Em/C can be heard as CMaj7, revealing hidden extended harmony",
+          "Upper structure triads: Play one triad over a different bass for complex jazz voicings"
+        ]
+      },
+      {
+        "title": "Arranging with Slash Chords",
+        "colorBg": "bg-sky-50",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-800",
+        "colorText": "text-sky-700",
+        "items": [
+          "Voice leading rule: Move the bass by step (not leap) for smoothest transitions",
+          "Pedal point technique: Hold one bass note while chords change above for grounded feel",
+          "Contrary motion: Bass moves down while melody moves up for maximum tension",
+          "Line cliche: Chromatic inner-voice movement (Am - Am/Maj7 - Am7 - Am6)",
+          "Ensemble arranging: Slash notation tells the bassist exactly which note to play"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Slash chords connect directly to understanding chord inversions, extended harmony, and professional voice leading. Explore these related topics to deepen your harmonic knowledge.",
+    "links": [
+      {
+        "slug": "major",
+        "title": "Major Chords",
+        "description": "Review the root-position major chords that slash chords invert and transform.",
+        "linkText": "Review major chords",
+        "icon": "M",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "minor",
+        "title": "Minor Chords",
+        "description": "Understand the minor chords that form the basis of many slash chord bass lines.",
+        "linkText": "Explore minor chords",
+        "icon": "m",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "extended",
+        "title": "Extended Chords",
+        "description": "Discover how slash chords relate to 7ths, 9ths, and other extensions in advanced harmony.",
+        "linkText": "Learn extended chords",
+        "icon": "E",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  }
+}

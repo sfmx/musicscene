@@ -1,0 +1,280 @@
+{
+  "slug": "inversions",
+  "category": "chords",
+  "pageTitle": "Chord Inversions",
+  "subtitle": "Understand how bass note choice affects harmonic stability and melodic bass lines",
+  "heroGradient": "from-emerald-50 to-green-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "The Power of the Bass Note",
+    "text": "A chord inversion is simply putting a different chord tone in the bass. This small change dramatically affects the chord's stability, function, and how it connects to other chords. It's the difference between choppy chord changes and smooth, professional-sounding progressions.",
+    "columns": [
+      { "title": "Voice Leading", "text": "Inversions create smooth bass lines and better voice leading between chords" },
+      { "title": "Stability Control", "text": "Choose stability levels: root position = stable, inversions = less stable" },
+      { "title": "Melodic Bass", "text": "Turn your bass line into a melody that supports the harmony" }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Inversions",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Root Position",
+          "description": "C",
+          "fields": [
+            { "label": "Bass Note", "value": "Root (C)" },
+            { "label": "Formula", "value": "1-3-5" },
+            { "label": "Notes", "value": "C-E-G" },
+            { "label": "Stability", "value": "Most Stable" },
+            { "label": "Usage", "value": "Strong, decisive, foundational" },
+            { "label": "Common Use", "value": "Beginnings, endings, strong beats" }
+          ]
+        },
+        {
+          "title": "First Inversion",
+          "description": "C/E",
+          "fields": [
+            { "label": "Bass Note", "value": "3rd (E)" },
+            { "label": "Formula", "value": "3-5-1" },
+            { "label": "Notes", "value": "E-G-C" },
+            { "label": "Stability", "value": "Moderately Stable" },
+            { "label": "Usage", "value": "Smooth bass lines, lighter feel" },
+            { "label": "Common Use", "value": "Connecting chords, melodic bass" }
+          ]
+        },
+        {
+          "title": "Second Inversion",
+          "description": "C/G",
+          "fields": [
+            { "label": "Bass Note", "value": "5th (G)" },
+            { "label": "Formula", "value": "5-1-3" },
+            { "label": "Notes", "value": "G-C-E" },
+            { "label": "Stability", "value": "Unstable" },
+            { "label": "Usage", "value": "Passing chord, creates motion" },
+            { "label": "Common Use", "value": "Between chords, cadential 6/4" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creating Melodic Bass Lines",
+      "bgColor": "blue-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Chromatic Bass Line",
+          "fields": [
+            { "label": "Basic progression", "value": "C - Am - F - G" },
+            { "label": "With inversions", "value": "C - Am/C - F/A - G/B" },
+            { "label": "Bass line", "value": "C - C - A - B" },
+            { "label": "Analysis", "value": "Chromatic bass line using inversions" },
+            { "label": "Effect", "value": "Smooth, connected bass movement" },
+            { "label": "Genre", "value": "Pop, Folk" }
+          ]
+        },
+        {
+          "title": "Descending Bass Line",
+          "fields": [
+            { "label": "Progression", "value": "F - C/E - Dm - G" },
+            { "label": "Bass line", "value": "F - E - D - G" },
+            { "label": "Analysis", "value": "Descending bass line in F major" },
+            { "label": "Effect", "value": "Strong melodic bass, sophisticated sound" },
+            { "label": "Genre", "value": "Singer-songwriter, Ballads" }
+          ]
+        },
+        {
+          "title": "Ascending Bass Line",
+          "fields": [
+            { "label": "Progression", "value": "C - C/E - F - F/A - Bb - C" },
+            { "label": "Bass line", "value": "C - E - F - A - Bb - C" },
+            { "label": "Analysis", "value": "Ascending bass line with inversions" },
+            { "label": "Effect", "value": "Building momentum, cinematic quality" },
+            { "label": "Genre", "value": "Film music, Progressive" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "When and Why to Use Inversions",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Smoother Voice Leading",
+          "badge": { "text": "Solution", "color": "emerald" },
+          "fields": [
+            { "label": "Problem", "value": "Chord changes sound choppy or disconnected" },
+            { "label": "Solution", "value": "Use inversions to create stepwise bass motion" },
+            { "label": "Example", "value": "C - F becomes C - F/A (bass moves C-A instead of C-F)" },
+            { "label": "Benefit", "value": "More professional, flowing sound" }
+          ]
+        },
+        {
+          "title": "Melodic Bass Lines",
+          "badge": { "text": "Solution", "color": "emerald" },
+          "fields": [
+            { "label": "Problem", "value": "Bass line lacks interest or direction" },
+            { "label": "Solution", "value": "Choose inversions to create singable bass melodies" },
+            { "label": "Example", "value": "I - vi - IV - V becomes I - vi/I - IV - V/VII" },
+            { "label": "Benefit", "value": "Bass becomes a counter-melody" }
+          ]
+        },
+        {
+          "title": "Harmonic Rhythm",
+          "badge": { "text": "Solution", "color": "emerald" },
+          "fields": [
+            { "label": "Problem", "value": "All chords feel equally important" },
+            { "label": "Solution", "value": "Use root position for strong beats, inversions for weak" },
+            { "label": "Example", "value": "Strong beat = root position, passing beat = inversion" },
+            { "label": "Benefit", "value": "Creates rhythmic hierarchy" }
+          ]
+        },
+        {
+          "title": "Genre Appropriateness",
+          "badge": { "text": "Solution", "color": "emerald" },
+          "fields": [
+            { "label": "Problem", "value": "Chord voicings don't fit the style" },
+            { "label": "Solution", "value": "Match inversion usage to genre expectations" },
+            { "label": "Example", "value": "Folk: more inversions, Rock: more root position" },
+            { "label": "Benefit", "value": "Authentic style implementation" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis: \"Let It Be\" Verse",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Paul McCartney's Masterful Use of Inversions",
+          "fields": [
+            { "label": "Progression", "value": "C - G/B - Am - F" },
+            { "label": "Analysis", "value": "I - V/VII - vi - IV (with G/B inversion)" },
+            { "label": "Bass line", "value": "C - B - A - F" }
+          ],
+          "items": [
+            "The G/B (first inversion) creates a beautiful descending bass line C-B-A-F",
+            "Creates melodic bass line that supports the vocal",
+            "G/B is less stable than G, keeps motion flowing",
+            "Descending line mirrors emotional content",
+            "Smooth voice leading throughout",
+            "Alternative: C - G - Am - F would have bass line C-G-A-F (awkward leap)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instrument-Specific Approaches",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Piano",
+          "fields": [
+            { "label": "Practice Techniques", "value": "Practice inversions across the entire keyboard; Use left hand for bass note, right for upper structure; Learn common voicing patterns; Practice scales using different inversion patterns" }
+          ],
+          "items": [
+            "Spread voicings across both hands for rich sound",
+            "Use pedal to connect inverted chords smoothly",
+            "Practice \"walking\" bass lines with right hand chords"
+          ]
+        },
+        {
+          "title": "Guitar",
+          "fields": [
+            { "label": "Practice Techniques", "value": "Learn moveable inversion shapes up the neck; Practice bass note on lowest available string; Use partial chords; Combine open strings with fretted inversions" }
+          ],
+          "items": [
+            "Focus on clarity - not all notes need to sound",
+            "Use thumb for bass notes when necessary",
+            "Learn which chord tones are most important"
+          ]
+        },
+        {
+          "title": "Bass Guitar",
+          "fields": [
+            { "label": "Practice Techniques", "value": "Think about the harmonic function of your note choice; Use chord tones other than root for sophistication; Practice walking bass lines using inversions; Coordinate with other instruments' voicings" }
+          ],
+          "items": [
+            "Root position for stability, inversions for movement",
+            "Use inversions to outline chord progressions",
+            "Consider the melody when choosing bass notes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Inversion Patterns",
+      "bgColor": "yellow-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Descending Bass Lines",
+          "items": [
+            "I - V/VII - vi - V/II - IV",
+            "C - G/B - Am - F/A - F",
+            "Creates smooth descending motion"
+          ]
+        },
+        {
+          "title": "Ascending Bass Lines",
+          "items": [
+            "I - I/III - IV - IV/VI",
+            "C - C/E - F - F/A",
+            "Builds momentum and energy"
+          ]
+        },
+        {
+          "title": "Chromatic Bass Motion",
+          "items": [
+            "I - I/III - IV - #iv\u00b0 - V",
+            "C - C/E - F - F#\u00b0 - G",
+            "Sophisticated chromatic movement"
+          ]
+        },
+        {
+          "title": "Pedal Point Bass",
+          "items": [
+            "I - IV/I - V/I - I",
+            "C - F/C - G/C - C",
+            "Harmony changes over static bass"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Practice",
+        "items": [
+          "Learn all inversions of major and minor triads",
+          "Practice I-V-vi-IV with different bass notes",
+          "Play simple melodies, harmonize with inversions",
+          "Focus on smooth bass line movement"
+        ]
+      },
+      {
+        "title": "Advanced Practice",
+        "items": [
+          "Practice inversions with 7th chords",
+          "Create bass lines that tell musical stories",
+          "Reharmonize songs using strategic inversions",
+          "Study classical voice leading principles"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading" },
+    { "href": "/lessons/songs/chords/extended", "label": "Extended Chord Inversions" },
+    { "href": "/lessons/songs/chords/progressions", "label": "Common Chord Progressions" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/analysis-method", "label": "Song Analysis Method" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

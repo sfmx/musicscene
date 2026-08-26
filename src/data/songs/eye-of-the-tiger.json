@@ -1,0 +1,512 @@
+{
+  "songInfo": {
+    "title": "Eye of the Tiger",
+    "artist": "Survivor",
+    "album": "Eye of the Tiger",
+    "released": "1982",
+    "genre": "Arena Rock / Classic Rock",
+    "tempo": "109 BPM",
+    "duration": "4:04",
+    "key": "C Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C minor throughout, with power chords creating a modal ambiguity between natural minor and blues-inflected minor",
+      "scalesUsed": [
+        {
+          "scale": "C natural minor (Aeolian)",
+          "notes": "C - D - Eb - F - G - Ab - Bb - C",
+          "application": "Primary scale for the song; the minor key combined with the relentless rhythm creates the intense, determined character perfectly suited to the Rocky III theme"
+        },
+        {
+          "scale": "C minor pentatonic",
+          "notes": "C - Eb - F - G - Bb",
+          "application": "The iconic single-note intro riff and guitar solo both draw from the minor pentatonic, giving the riffs their raw, aggressive simplicity"
+        },
+        {
+          "scale": "C blues scale",
+          "notes": "C - Eb - F - F#/Gb - G - Bb",
+          "application": "The added blue note (F#/Gb) appears in the guitar solo and some melodic fills, adding gritty tension to the minor pentatonic framework"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with a raw, aggressive quality driven by the palm-muted single-note riff and power chord rhythm",
+      "keySignature": "3 flats (Bb, Eb, Ab)",
+      "relativeMinor": "C minor is the relative minor of Eb major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Cm",
+          "Bb",
+          "Ab",
+          "Gm"
+        ],
+        "progression": "i - VII - VI - v",
+        "description": "The descending minor key progression that drives the verse and chorus, with the stepwise downward motion creating the relentless, determined momentum that defines the song."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Riff",
+          "progression": "Cm (single notes)",
+          "romanNumerals": "i",
+          "description": "The legendary single-note palm-muted riff on the low C string, one of the most instantly recognizable guitar intros in rock history"
+        },
+        {
+          "section": "Verse",
+          "progression": "Cm - Bb - Ab - Bb",
+          "romanNumerals": "i - VII - VI - VII",
+          "description": "Palm-muted power chords with the descending C-Bb-Ab motion creating forward momentum, resolving back up to Bb for the turnaround"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "Ab - Bb - Cm",
+          "romanNumerals": "VI - VII - i",
+          "description": "Ascending power chord build from Ab through Bb to Cm, creating the rising tension that launches into the explosive chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Cm - Bb - Ab - Gm - Ab - Bb",
+          "romanNumerals": "i - VII - VI - v - VI - VII",
+          "description": "Full power chord chorus with the classic descending-then-ascending motion and the anthemic 'It's the eye of the tiger' vocal hook"
+        },
+        {
+          "section": "Interlude",
+          "progression": "Cm (single-note riff)",
+          "romanNumerals": "i",
+          "description": "Return of the iconic single-note intro riff between verse-chorus cycles, resetting the energy before building again"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Cm - Bb - Ab - Bb",
+          "romanNumerals": "i - VII - VI - VII",
+          "description": "Frankie Sullivan's lead guitar over the verse progression, using C minor pentatonic with aggressive bends and rhythmic phrasing"
+        }
+      ],
+      "harmonicFunction": [
+        "Cm (i) - Tonic minor chord, the dark, powerful foundation representing determination and intensity",
+        "Bb (VII) - Subtonic major, providing upward momentum and a sense of strength within the minor key",
+        "Ab (VI) - Submediant major, offering brightness and hope within the otherwise dark minor progression",
+        "Gm (v) - Dominant minor (instead of major V), maintaining the minor key character and avoiding too much brightness"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Palm-Muted Single Note Riff",
+      "description": "The legendary intro riff built on palm-muted single notes on the low strings, using rhythmic precision and muting control to create one of the most recognizable guitar hooks in rock history",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The riff is played entirely on the low A and D strings around the 3rd fret area",
+          "Primary notes: C (3rd fret A string), Eb (1st fret D string), F (3rd fret D string)",
+          "All notes are heavily palm muted for the tight, percussive 'chunka-chunka' sound",
+          "The rhythm uses syncopated eighth notes with rests creating the signature pattern",
+          "The riff resolves with an accented unmuted power chord hit on the downbeat"
+        ],
+        "sequence": [
+          "Place your palm firmly on the strings near the bridge for heavy muting",
+          "Pick the C note on the A string (3rd fret) with a sharp downstroke",
+          "Follow the rhythmic pattern: C-C-Eb-C-F-Eb-C with specific rhythmic spacing",
+          "Keep all notes short and percussive from the palm muting",
+          "End the riff phrase with an unmuted C5 power chord accent for the dynamic punch"
+        ],
+        "tips": [
+          "The palm muting is the most important element - without it, the riff loses its character",
+          "Keep the muting pressure consistent so all notes have the same short, percussive quality",
+          "Use all downstrokes for the heaviest, most aggressive attack",
+          "Practice the rhythmic pattern slowly with a metronome until it is completely locked in",
+          "This riff is beginner-friendly in terms of fretting but requires good right-hand muting control"
+        ],
+        "chords": [
+          "Cm (single notes)"
+        ],
+        "progression": "C minor single-note riff pattern"
+      }
+    },
+    {
+      "name": "Power Chord Verse and Chorus",
+      "description": "Driving power chord rhythm using Cm, Bb, Ab, and Gm shapes that provide the harmonic backdrop for verse and chorus, played with a mix of palm muting and open strumming",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C5: X-3-5-5-X-X (A-string root) or 8-10-10-X-X-X (E-string root)",
+          "Bb5: 6-8-8-X-X-X (E-string root) or X-1-3-3-X-X (A-string root)",
+          "Ab5: 4-6-6-X-X-X (E-string root)",
+          "G5: 3-5-5-X-X-X (E-string root)",
+          "The verse uses palm-muted power chords while the chorus opens up to full strumming"
+        ],
+        "sequence": [
+          "Play the verse with palm-muted downstroke power chords on C5-Bb5-Ab5",
+          "Use the descending power chord motion to create forward momentum",
+          "Release palm muting for accent hits on the last beat of phrases",
+          "Open up completely for the chorus with full, ringing power chord strumming",
+          "Return to the palm-muted single-note riff for interludes"
+        ],
+        "tips": [
+          "The E-string root power chord shapes allow easy sliding between Cm, Bb, Ab, and Gm",
+          "Keep the verse power chords tight and percussive with palm muting",
+          "The chorus should feel like a release of all the tension built in the verse",
+          "Practice the three-fret and two-fret power chord slides for smooth transitions"
+        ],
+        "chords": [
+          "C5",
+          "Bb5",
+          "Ab5",
+          "G5"
+        ],
+        "progression": "C5 - Bb5 - Ab5 - G5 (descending power chord sequence)"
+      }
+    },
+    {
+      "name": "Rhythmic Accents and Dynamic Control",
+      "description": "The precise rhythmic accent patterns that give the song its driving, determined feel - alternating between muted and accented notes to create the signature pumping rhythm",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The song alternates between palm-muted passages and sharp accent hits",
+          "Accents typically fall on beats 1 and 3 for a strong, march-like feel",
+          "The pre-chorus uses ascending accented chords for the energy build",
+          "Dynamics shift dramatically between the muted verse riff and the open chorus",
+          "The interlude riff returns to palm-muted single notes resetting the dynamic level"
+        ],
+        "sequence": [
+          "During the verse, accent the first beat of each power chord change",
+          "Keep the in-between beats tightly palm muted for contrast",
+          "In the pre-chorus, increase both volume and accent intensity progressively",
+          "Hit the chorus with full, unrestrained power chord strumming",
+          "Return to the dynamic starting point for each verse-chorus cycle"
+        ],
+        "tips": [
+          "Think of the dynamics as a boxer's training montage - start restrained, build to peak energy",
+          "The contrast between muted and accented hits is what creates the song's iconic pump",
+          "Use your picking hand to control dynamics rather than relying solely on pedal or amp settings",
+          "The song should feel relentless but controlled - never sloppy or out of control"
+        ],
+        "chords": [
+          "C5",
+          "Bb5",
+          "Ab5"
+        ],
+        "progression": "Accented C5 - Bb5 - Ab5 with palm-muted fills"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:25",
+      "technique": "Palm-Muted Single Note Riff",
+      "key": "C Minor",
+      "description": "The legendary palm-muted single-note riff that opens the song. Instantly recognizable from the Rocky III soundtrack, this riff is one of the most iconic guitar hooks in rock history.",
+      "chords": [
+        "Cm"
+      ],
+      "progression": "Cm (single-note riff)",
+      "notes": [
+        "Heavy palm muting creates the tight, percussive character",
+        "All notes played on the A and D strings in the 1st-3rd fret area",
+        "The syncopated rhythm with rests is as important as the notes themselves",
+        "The riff builds with the band entering gradually over the repeated pattern"
+      ],
+      "alphaTab": "8.6 10.6 11.6 13.6 | 8.5 10.5 11.5 13.5 | 8.4 10.4 11.4 13.4 | 8.3 10.3 8.2 11.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:00",
+      "technique": "Power Chord Verse and Chorus",
+      "key": "C Minor",
+      "description": "Palm-muted power chords drive the verse with the descending C-Bb-Ab progression, creating the determined, forward-moving feel beneath the vocal story.",
+      "chords": [
+        "Cm",
+        "Bb",
+        "Ab",
+        "Bb"
+      ],
+      "progression": "Cm - Bb - Ab - Bb",
+      "notes": [
+        "Palm-muted power chords maintain the tight, controlled verse energy",
+        "The descending chord motion mirrors the fighter's determination",
+        "Keep dynamics restrained compared to the chorus for proper contrast",
+        "The turnaround back to Bb sets up the return to Cm"
+      ],
+      "alphaTab": "8.6 10.5 10.4 8.6 10.5 10.4 | 13.6 15.5 15.4 13.6 15.5 15.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 8.6 10.5 10.4 8.6 10.5 10.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:00-1:15",
+      "technique": "Rhythmic Accents and Dynamic Control",
+      "key": "C Minor",
+      "description": "The ascending power chord build from Ab through Bb to Cm, increasing in intensity and volume to launch into the massive chorus.",
+      "chords": [
+        "Ab",
+        "Bb",
+        "Cm"
+      ],
+      "progression": "Ab - Bb - Cm",
+      "notes": [
+        "Release palm muting progressively as the section builds",
+        "The ascending Ab-Bb-Cm motion creates natural rising energy",
+        "Increase strumming intensity and volume with each chord change",
+        "The final Cm hit should ring full and unmuted to launch the chorus"
+      ],
+      "alphaTab": "8.6 10.5 10.4 9.3 8.2 8.1 | 13.6 15.5 15.4 14.3 13.2 13.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 13.6 15.5 15.4 14.3 13.2 13.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:50",
+      "technique": "Power Chord Verse and Chorus",
+      "key": "C Minor",
+      "description": "The explosive arena rock chorus with full power chord strumming and the iconic 'It's the eye of the tiger' vocal hook at maximum energy.",
+      "chords": [
+        "Cm",
+        "Bb",
+        "Ab",
+        "Gm",
+        "Ab",
+        "Bb"
+      ],
+      "progression": "Cm - Bb - Ab - Gm - Ab - Bb",
+      "notes": [
+        "Full, unmuted power chord strumming at maximum intensity",
+        "The descending Cm-Bb-Ab-Gm creates the dramatic chorus sweep",
+        "The ascending Ab-Bb turnaround propels back into the next section",
+        "This is the crowd singalong moment - play with full arena-filling energy"
+      ],
+      "alphaTab": "8.6 10.5 10.4 8.6 10.5 10.4 | 13.6 15.5 15.4 13.6 15.5 15.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 8.6 10.5 10.4 8.6 10.5 10.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Interlude",
+      "timeStamp": "1:50-2:10",
+      "technique": "Palm-Muted Single Note Riff",
+      "key": "C Minor",
+      "description": "Return of the iconic single-note intro riff between verse-chorus cycles, resetting the dynamic energy level before the next build.",
+      "chords": [
+        "Cm"
+      ],
+      "progression": "Cm (single-note riff)",
+      "notes": [
+        "Return to the palm-muted single-note riff from the intro",
+        "The dynamic drop from the chorus to the riff creates effective contrast",
+        "Maintain the tight, percussive palm muting quality",
+        "This interlude resets the energy for the next verse-chorus cycle"
+      ],
+      "alphaTab": "8.6 10.6 11.6 13.6 | 8.5 10.5 11.5 13.5 | 8.4 10.4 11.4 13.4 | 8.3 10.3 8.2 11.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:45-3:15",
+      "technique": "Rhythmic Accents and Dynamic Control",
+      "key": "C Minor",
+      "description": "Frankie Sullivan's guitar solo over the verse progression, using C minor pentatonic with aggressive bends, rhythmic phrasing, and blues-inflected lead lines.",
+      "chords": [
+        "Cm",
+        "Bb",
+        "Ab",
+        "Bb"
+      ],
+      "progression": "Cm - Bb - Ab - Bb (solo over verse changes)",
+      "notes": [
+        "Solo uses C minor pentatonic primarily at the 8th and 11th positions",
+        "Aggressive bends and fast vibrato define the intense phrasing",
+        "The lead lines mirror the determined, aggressive character of the song",
+        "Rhythm guitar maintains palm-muted power chord support underneath"
+      ],
+      "alphaTab": "8.6 10.5 10.4 9.3 8.2 8.1 | 13.6 15.5 15.4 14.3 13.2 13.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 13.6 15.5 15.4 14.3 13.2 13.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:15-4:04",
+      "technique": "Power Chord Verse and Chorus",
+      "key": "C Minor",
+      "description": "The final chorus repetitions at peak intensity, building to the climactic ending with repeated vocal hooks and full-power instrumentation.",
+      "chords": [
+        "Cm",
+        "Bb",
+        "Ab",
+        "Gm",
+        "Ab",
+        "Bb"
+      ],
+      "progression": "Cm - Bb - Ab - Gm - Ab - Bb",
+      "notes": [
+        "Maximum energy maintained through multiple chorus repetitions",
+        "The vocal hooks repeat with increasing intensity and crowd participation",
+        "Full power chord strumming with no restraint through the final section",
+        "The song ends with a final emphatic Cm power chord hit and cymbal crash"
+      ],
+      "alphaTab": "8.6 10.5 10.4 8.6 10.5 10.4 | 13.6 15.5 15.4 13.6 15.5 15.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 8.6 10.5 10.4 8.6 10.5 10.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul or Gibson SG for the warm, thick humbucker tone",
+      "alternatives": [
+        "Epiphone Les Paul Standard",
+        "Gibson Explorer",
+        "PRS SE Custom 24",
+        "Any dual-humbucker solid body guitar"
+      ],
+      "pickup": "Bridge humbucker for the tight palm-muted riff and power chord rhythm; the thick humbucker tone is essential for the heavy muted sound"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 for the tight, punchy early-80s rock tone",
+      "alternatives": [
+        "Marshall Plexi",
+        "Fender Bassman (cranked)",
+        "Peavey Classic series",
+        "Orange Rockerverb"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate gain for defined palm muting without excessive saturation)",
+        "treble": "6 (bright enough for note definition in muted passages)",
+        "middle": "7 (strong midrange for the punchy, aggressive tone)",
+        "bass": "5 (solid but tight - too much bass will blur the palm-muted riff)",
+        "presence": "6 (clear and present for the picking attack to cut through)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate gain from the amp. The riff needs enough crunch for power but enough clarity for the palm-muted single notes to be defined.",
+      "delay": "Minimal or no delay for the rhythm parts. Short delay (200ms) can enhance the solo tone.",
+      "reverb": "Short to medium room reverb for natural ambiance without washing out the tight muted rhythm",
+      "other": "A noise gate can help keep the palm-muted riff clean by eliminating string noise between notes. A compressor can even out the dynamics between muted and accented passages."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the iconic single-note intro riff and basic power chord shapes",
+      "steps": [
+        "Master the palm-muted single-note intro riff at slow tempo",
+        "Learn C5, Bb5, Ab5, and G5 power chord shapes on the E string",
+        "Practice transitioning between the single-note riff and power chords",
+        "Play the verse progression (Cm-Bb-Ab-Bb) with simple palm-muted strumming"
+      ],
+      "timeEstimate": "1-2 weeks for intro riff and basic progression"
+    },
+    "intermediate": {
+      "focus": "Add the full song structure with dynamic accents and complete verse-chorus pattern",
+      "steps": [
+        "Refine the palm muting control for consistent verse rhythm",
+        "Learn the pre-chorus ascending build with increasing dynamics",
+        "Practice the full chorus power chord progression with open strumming",
+        "Play through the complete song structure with proper dynamic contrast"
+      ],
+      "timeEstimate": "2-3 weeks for full song with dynamics"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo, rhythmic precision, and performance-level energy",
+      "steps": [
+        "Learn the guitar solo using C minor pentatonic and blues scale at the 8th position",
+        "Practice aggressive bending and vibrato techniques for the solo style",
+        "Refine the rhythmic accent patterns for maximum groove and impact",
+        "Perform the complete song with seamless transitions and stage-level energy"
+      ],
+      "timeEstimate": "3-5 weeks for complete performance-ready rendition"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Insufficient palm muting on the intro riff - the muting is what makes the riff iconic, not just the notes",
+      "Using too much gain which blurs the palm-muted riff into an indistinct chug",
+      "Not enough dynamic contrast between the muted verse and open chorus sections",
+      "Playing the riff with upstrokes or alternate picking instead of aggressive all-downstrokes"
+    ],
+    "practiceRoutine": [
+      "Warm up with the palm-muted single-note riff at 80 BPM, focusing on muting consistency (5 minutes)",
+      "Practice C5-Bb5-Ab5 power chord transitions on the E string at 90 BPM (5 minutes)",
+      "Work on the verse-to-chorus dynamic transition with tone and volume changes (5 minutes)",
+      "Practice the pre-chorus ascending build with proper accent placement (5 minutes)",
+      "Play through the complete song with a backing track at 109 BPM (5 minutes)"
+    ],
+    "focusAreas": [
+      "Tight, consistent palm muting for the intro riff and verse sections",
+      "Clean power chord transitions sliding along the E string",
+      "Dynamic contrast between the four main dynamic levels: riff, verse, pre-chorus, chorus",
+      "Rhythmic precision at 109 BPM with locked-in downstroke timing"
+    ],
+    "metronomeWork": [
+      "Start the palm-muted riff at 80 BPM, building to 109 BPM in 5-10 BPM increments",
+      "Practice power chord verse rhythm at 109 BPM with accent on beat 1",
+      "Work on the full dynamic cycle (riff-verse-prechorus-chorus) at 100 BPM before full tempo",
+      "Full song run-through at 109 BPM once all sections are locked in"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Burning Heart",
+        "difficulty": "Intermediate",
+        "similarity": "Another Survivor Rocky soundtrack hit with similar arena rock energy and power chord drive"
+      },
+      {
+        "title": "Is This Love",
+        "difficulty": "Intermediate",
+        "similarity": "Survivor's other major hit with similar straightforward power chord approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Beginner",
+        "similarity": "Iconic palm-muted riff opening building to power chord verse and chorus"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Simple, iconic single-note riff that defines the entire song"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Master a simple single-note riff before adding the palm muting complexity of Eye of the Tiger"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to a more complex palm-muted riff with darker minor key power chord work"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-05",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "arena-rock",
+      "beginner-intermediate",
+      "palm-muting",
+      "power-chords",
+      "iconic-riff",
+      "80s-rock",
+      "classic-rock",
+      "anthem"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

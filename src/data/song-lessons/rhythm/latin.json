@@ -1,0 +1,367 @@
+{
+  "slug": "latin",
+  "category": "rhythm",
+  "pageTitle": "Latin Rhythms",
+  "subtitle": "Explore the rich rhythmic traditions of Latin America and Spain. Master clave patterns, syncopation, and the passionate rhythms of Latin music.",
+  "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
+  "backLink": { "href": "/lessons/songs/rhythm", "label": "Back to Rhythm & Strumming" },
+  "introduction": {
+    "title": "The Soul of Latin Rhythm",
+    "text": "Latin rhythms are built on the clave, a rhythmic pattern that serves as the rhythmic foundation for most Latin music styles.",
+    "columns": [
+      {
+        "title": "Clave Foundation",
+        "text": "Latin rhythms are built on the clave, a rhythmic pattern that serves as the rhythmic foundation for most Latin music styles."
+      },
+      {
+        "title": "Cultural Richness",
+        "text": "Each Latin rhythm carries the cultural heritage of its origin, from the passionate flamenco of Spain to the sophisticated bossa nova of Brazil."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Essential Latin Rhythms",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Bossa Nova",
+          "description": "Syncopated fingerpicking with subtle swing",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Brazil" },
+            { "label": "Clave Pattern", "value": "3-2 or 2-3 son clave" },
+            { "label": "Theory", "value": "Brazilian rhythm with jazz influences, complex harmonic progressions" }
+          ],
+          "items": ["Soft dynamics", "Jazz harmony", "Subtle syncopation", "Fingerpicking technique", "Girl from Ipanema - Jobim", "Corcovado - Jobim", "Wave - Jobim", "Desafinado - Jobim"]
+        },
+        {
+          "title": "Samba",
+          "description": "Driving 2/4 rhythm with strong accents",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Brazil" },
+            { "label": "Clave Pattern", "value": "Partido alto pattern" },
+            { "label": "Theory", "value": "Fast Brazilian rhythm with African influences, polyrhythmic complexity" }
+          ],
+          "items": ["Energetic tempo", "Strong accents", "Percussive elements", "Carnival feel", "Mas Que Nada", "Aquarela do Brasil", "Copacabana - Barry Manilow"]
+        },
+        {
+          "title": "Rhumba/Bolero",
+          "description": "Slow, romantic 4/4 with Cuban influence",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Cuba" },
+            { "label": "Clave Pattern", "value": "Son clave variations" },
+            { "label": "Theory", "value": "Slow Cuban rhythm emphasizing melody and romantic expression" }
+          ],
+          "items": ["Romantic tempo", "Expressive phrasing", "Cuban harmony", "Melodic emphasis", "Besame Mucho", "Historia de un Amor", "La Vida es un Sueno"]
+        },
+        {
+          "title": "Salsa/Son",
+          "description": "Complex syncopated rhythm",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Cuba/Caribbean" },
+            { "label": "Clave Pattern", "value": "3-2 or 2-3 son clave" },
+            { "label": "Theory", "value": "Complex Cuban rhythm with African and Spanish influences" }
+          ],
+          "items": ["Complex syncopation", "Montuno patterns", "Call and response", "Dance rhythm", "Oye Como Va - Santana", "Smooth - Santana", "El Cuarto de Tula"]
+        },
+        {
+          "title": "Tango",
+          "description": "Dramatic 2/4 or 4/4 with staccato elements",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Argentina" },
+            { "label": "Clave Pattern", "value": "Distinctive tango rhythm" },
+            { "label": "Theory", "value": "Argentine rhythm with European and African influences" }
+          ],
+          "items": ["Dramatic dynamics", "Staccato articulation", "Passionate expression", "Dance emphasis", "La Cumparsita", "Por Una Cabeza", "El Choclo"]
+        },
+        {
+          "title": "Reggaeton",
+          "description": "Modern Latin urban rhythm",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Puerto Rico" },
+            { "label": "Clave Pattern", "value": "Dembow rhythm pattern" },
+            { "label": "Theory", "value": "Contemporary Latin rhythm with hip-hop and electronic influences" }
+          ],
+          "items": ["Urban feel", "Electronic influence", "Strong beat", "Modern production", "Gasolina - Daddy Yankee", "Despacito - Luis Fonsi", "Modern reggaeton hits"]
+        },
+        {
+          "title": "Flamenco Compas",
+          "description": "Complex rhythmic cycles (12-beat, 8-beat, etc.)",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Spain" },
+            { "label": "Clave Pattern", "value": "Various compas patterns" },
+            { "label": "Theory", "value": "Spanish gypsy rhythm with complex meter and passionate expression" }
+          ],
+          "items": ["Complex meter", "Percussive technique", "Passionate expression", "Virtuosic playing", "Malaguena", "Asturias", "Entre Dos Aguas - Paco de Lucia"]
+        },
+        {
+          "title": "Latin Rock Fusion",
+          "description": "Latin rhythms in rock context",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Origin", "value": "Contemporary" },
+            { "label": "Clave Pattern", "value": "Adapted traditional patterns" },
+            { "label": "Theory", "value": "Integration of Latin rhythms with rock and jazz elements" }
+          ],
+          "items": ["Rock instrumentation", "Latin percussion", "Electric guitar", "Fusion harmony", "Black Magic Woman - Santana", "Evil Ways - Santana", "Latin rock standards"]
+        }
+      ]
+    },
+    {
+      "title": "Understanding Clave",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "3-2 Son Clave",
+          "description": "Three hits in first measure, two in second",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "X - X - X - - X - X -" },
+            { "label": "Usage", "value": "Fundamental to Cuban music, salsa, and Latin jazz" },
+            { "label": "Feel", "value": "Forward-moving, energetic" }
+          ]
+        },
+        {
+          "title": "2-3 Son Clave",
+          "description": "Two hits in first measure, three in second",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "X - X - - X - X - X -" },
+            { "label": "Usage", "value": "Reverse of 3-2, common in contemporary Latin music" },
+            { "label": "Feel", "value": "More laid-back, modern feel" }
+          ]
+        },
+        {
+          "title": "Rhumba Clave",
+          "description": "Similar to son clave but with different spacing",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "X - - X - X - - X - X -" },
+            { "label": "Usage", "value": "Traditional Afro-Cuban music, modern Latin styles" },
+            { "label": "Feel", "value": "More syncopated, African influence" }
+          ]
+        },
+        {
+          "title": "Bossa Nova Pattern",
+          "description": "Less aggressive than Cuban clave",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "Subtle syncopated feel" },
+            { "label": "Usage", "value": "Brazilian bossa nova and samba" },
+            { "label": "Feel", "value": "Subtle, sophisticated, jazzy" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technical Approaches",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Fingerpicking Style",
+          "icon": "🤚",
+          "description": "Classical and contemporary fingerpicking for Latin music",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Genre Application", "value": "Bossa nova, classical guitar, Spanish guitar" },
+            { "label": "Practice Approach", "value": "Start with basic patterns, add complexity gradually" }
+          ],
+          "items": ["Thumb bass patterns", "Finger independence", "Tremolo picking", "Arpeggiated chords"]
+        },
+        {
+          "title": "Percussive Elements",
+          "icon": "🥁",
+          "description": "Adding rhythmic percussion to guitar playing",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Genre Application", "value": "Flamenco, contemporary Latin, fusion" },
+            { "label": "Practice Approach", "value": "Learn basic percussion, integrate with rhythm" }
+          ],
+          "items": ["Palm slaps", "String muting", "Body percussion", "Rasgueado"]
+        },
+        {
+          "title": "Strumming Patterns",
+          "icon": "🎸",
+          "description": "Adapted strumming for Latin rhythms",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Genre Application", "value": "Latin rock, salsa, contemporary Latin pop" },
+            { "label": "Practice Approach", "value": "Focus on accent placement and rhythmic precision" }
+          ],
+          "items": ["Syncopated strumming", "Dynamic control", "Accent placement", "Muted strums"]
+        },
+        {
+          "title": "Harmonic Approach",
+          "icon": "🎼",
+          "description": "Chord voicings and progressions in Latin music",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Genre Application", "value": "Bossa nova, Latin jazz, contemporary Latin" },
+            { "label": "Practice Approach", "value": "Learn chord voicings, practice smooth transitions" }
+          ],
+          "items": ["Extended chords", "Chromatic movement", "Modal harmony", "Jazz influences"]
+        }
+      ]
+    },
+    {
+      "title": "Progressive Practice Plan",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Clave Internalization",
+          "description": "Learn to feel basic clave patterns",
+          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Clap clave patterns while counting" },
+            { "label": "Focus", "value": "Internalizing the rhythmic foundation" },
+            { "label": "Progression", "value": "Add foot tapping, then guitar patterns" }
+          ]
+        },
+        {
+          "title": "Basic Bossa Nova",
+          "description": "Simple bossa nova fingerpicking",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Basic thumb-finger pattern over jazz chords" },
+            { "label": "Focus", "value": "Smooth, subtle rhythm with proper feel" },
+            { "label": "Progression", "value": "Add melody, increase complexity" }
+          ]
+        },
+        {
+          "title": "Salsa Montuno",
+          "description": "Piano-style montuno adapted for guitar",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Syncopated chord patterns following clave" },
+            { "label": "Focus", "value": "Complex syncopation and harmonic movement" },
+            { "label": "Progression", "value": "Improvisation, call-and-response" }
+          ]
+        },
+        {
+          "title": "Flamenco Compas",
+          "description": "Basic flamenco rhythmic cycles",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Simple 12-beat compas with rasgueado" },
+            { "label": "Focus", "value": "Complex meter and passionate expression" },
+            { "label": "Progression", "value": "Advanced techniques, improvisation" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cultural Understanding",
+      "bgColor": "bg-gradient-to-r from-amber-50 to-orange-50",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Historical Roots",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": [
+            "African rhythmic traditions brought through slavery",
+            "Spanish and Portuguese colonial influences",
+            "Indigenous American musical elements",
+            "Modern jazz and popular music integration"
+          ]
+        },
+        {
+          "title": "Musical Elements",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": [
+            "Complex polyrhythmic structures",
+            "Call-and-response patterns",
+            "Syncopation and cross-rhythms",
+            "Dance-oriented rhythmic feel"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Progressive Song Study",
+      "bgColor": "bg-red-50",
+      "borderColor": "border-red-200",
+      "layout": "numbered-steps",
+      "cards": [
+        {
+          "title": "\"La Bamba\" - Basic Latin Rock",
+          "description": "Learn fundamental Latin rhythm in rock context",
+          "number": 1,
+          "badge": { "text": "1", "color": "bg-green-100 text-green-800" }
+        },
+        {
+          "title": "\"Girl from Ipanema\" - Bossa Nova",
+          "description": "Master sophisticated Brazilian fingerpicking",
+          "number": 2,
+          "badge": { "text": "2", "color": "bg-yellow-100 text-yellow-800" }
+        },
+        {
+          "title": "\"Oye Como Va\" - Salsa Feel",
+          "description": "Develop complex syncopated Latin rock rhythm",
+          "number": 3,
+          "badge": { "text": "3", "color": "bg-orange-100 text-orange-800" }
+        },
+        {
+          "title": "\"Entre Dos Aguas\" - Flamenco",
+          "description": "Master complex flamenco compas and technique",
+          "number": 4,
+          "badge": { "text": "4", "color": "bg-red-100 text-red-800" }
+        }
+      ]
+    }
+  ],
+  "relatedTopics": [
+    { "title": "Shuffle & Swing", "href": "/lessons/songs/rhythm/shuffle", "description": "Explore shuffle and swing rhythm patterns." },
+    { "title": "Reggae & Ska", "href": "/lessons/songs/rhythm/reggae", "description": "Learn reggae and ska rhythm guitar." },
+    { "title": "Rhythm Guitar Overview", "href": "/lessons/songs/rhythm", "description": "Return to the main Rhythm & Strumming page." }
+  ]
+}

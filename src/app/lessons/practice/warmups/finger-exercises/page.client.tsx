@@ -3,7 +3,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import MusicScore from '@/components/MusicScore';
 
 export default function FingerExercisesClient() {
@@ -184,9 +183,9 @@ export default function FingerExercisesClient() {
                 staves={[{
                   id: 'spider-exercise',
                   alphaTex: `\\ts 4 4
-                    1.1.8 2.2.8 3.3.8 4.4.8 | 2.1.8 3.2.8 4.3.8 5.4.8 |
-                    3.1.8 4.2.8 5.3.8 6.4.8 | 4.1.8 5.2.8 6.3.8 7.4.8`,
-                  title: 'Diagonal Movement Pattern'
+                    1.1.8 2.2.8 3.3.8 4.4.8 2.1.8 3.2.8 4.3.8 5.4.8 |
+                    3.1.8 4.2.8 5.3.8 6.4.8 4.1.8 5.2.8 6.3.8 7.4.8`,
+                  title: 'Diagonal Movement Pattern - Ascending Across Strings'
                 }]}
               />
               
@@ -233,9 +232,9 @@ export default function FingerExercisesClient() {
                 staves={[{
                   id: 'finger-trills',
                   alphaTex: `\\ts 4 4
-                    5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 |
-                    5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 |
-                    5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16`,
+                    5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 |
+                    5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 |
+                    5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16`,
                   title: 'Index-Middle, Index-Ring, Index-Pinky Trills'
                 }]}
               />
@@ -274,8 +273,10 @@ export default function FingerExercisesClient() {
                 staves={[{
                   id: 'permutation',
                   alphaTex: `\\ts 4 4
-                    1.1.8 2.1.8 4.1.8 3.1.8 | 1.1.8 3.1.8 2.1.8 4.1.8 |
-                    1.1.8 3.1.8 4.1.8 2.1.8 | 1.1.8 4.1.8 2.1.8 3.1.8`,
+                    1.1.8 2.1.8 4.1.8 3.1.8 1.1.8 2.1.8 4.1.8 3.1.8 |
+                    1.1.8 3.1.8 2.1.8 4.1.8 1.1.8 3.1.8 2.1.8 4.1.8 |
+                    1.1.8 3.1.8 4.1.8 2.1.8 1.1.8 3.1.8 4.1.8 2.1.8 |
+                    1.1.8 4.1.8 2.1.8 3.1.8 1.1.8 4.1.8 2.1.8 3.1.8`,
                   title: 'Sample Permutations: 1-2-4-3, 1-3-2-4, 1-3-4-2, 1-4-2-3'
                 }]}
               />
@@ -335,7 +336,6 @@ export default function FingerExercisesClient() {
           </div>
         </section>
       </main>
-      <Footer />
     </Layout>
   );
 }

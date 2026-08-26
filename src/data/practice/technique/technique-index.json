@@ -1,0 +1,89 @@
+{
+  "pageTitle": "Guitar Technique Mastery",
+  "subtitle": "Develop precision, speed, and expression through systematic technique practice",
+  "heroIcon": "🎸",
+  "heroTitle": "Master Guitar Technique",
+  "heroDescription": "Build the foundation for expressive playing through systematic development of essential guitar techniques. From basic picking patterns to advanced two-handed tapping, develop the skills that will unlock your musical potential.",
+  "backLink": { "href": "/lessons/practice", "label": "Back to Practice" },
+  "heroGradient": "bg-gradient-to-br from-blue-50 to-indigo-50",
+  "introSection": {
+    "title": "Why Technique Practice Matters",
+    "items": [
+      { "icon": "🎯", "title": "Precision & Control", "description": "Develop the accuracy and consistency needed to execute complex musical ideas cleanly and reliably." },
+      { "icon": "⚡", "title": "Speed & Fluidity", "description": "Build the physical foundation to play at any tempo while maintaining musical expression and clarity." },
+      { "icon": "🎨", "title": "Expression & Style", "description": "Unlock advanced techniques that allow you to express complex musical ideas and develop your unique voice." }
+    ],
+    "progressiveSteps": [
+      { "number": 1, "colorBg": "bg-blue-100", "colorText": "text-blue-600", "title": "Foundation Techniques", "description": "Start with alternate picking, palm muting, and basic bending for solid fundamentals." },
+      { "number": 2, "colorBg": "bg-green-100", "colorText": "text-green-600", "title": "Intermediate Skills", "description": "Progress to legato, hybrid picking, and string skipping for expanded vocabulary." },
+      { "number": 3, "colorBg": "bg-red-100", "colorText": "text-red-600", "title": "Advanced Mastery", "description": "Master sweep picking and tapping for virtuosic expression and technical excellence." }
+    ]
+  },
+  "itemTypes": [
+    { "name": "Alternate Picking", "icon": "🎸", "href": "/lessons/practice/technique/alternate-picking", "description": "Master precision and speed with alternating up and down strokes.", "difficulty": "Beginner", "color": "bg-blue-50 border-blue-200 hover:bg-blue-100", "iconColor": "text-blue-600" },
+    { "name": "Legato", "icon": "➰", "href": "/lessons/practice/technique/legato", "description": "Create smooth, flowing lines with hammer-ons, pull-offs, and slides.", "difficulty": "Intermediate", "color": "bg-green-50 border-green-200 hover:bg-green-100", "iconColor": "text-green-600" },
+    { "name": "Sweep Picking", "icon": "🧹", "href": "/lessons/practice/technique/sweep-picking", "description": "Execute lightning-fast arpeggios with fluid sweeping motions.", "difficulty": "Advanced", "color": "bg-red-50 border-red-200 hover:bg-red-100", "iconColor": "text-red-600" },
+    { "name": "String Skipping", "icon": "⏭️", "href": "/lessons/practice/technique/string-skipping", "description": "Create wide intervallic lines by jumping across non-adjacent strings.", "difficulty": "Intermediate", "color": "bg-purple-50 border-purple-200 hover:bg-purple-100", "iconColor": "text-purple-600" },
+    { "name": "Bending & Vibrato", "icon": "🎶", "href": "/lessons/practice/technique/bending-vibrato", "description": "Add soul and expression through controlled pitch bending and vibrato.", "difficulty": "Beginner", "color": "bg-orange-50 border-orange-200 hover:bg-orange-100", "iconColor": "text-orange-600" },
+    { "name": "Tapping", "icon": "👆", "href": "/lessons/practice/technique/tapping", "description": "Utilize both hands for spectacular runs and impossible intervals.", "difficulty": "Advanced", "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100", "iconColor": "text-indigo-600" },
+    { "name": "Palm Muting", "icon": "✋", "href": "/lessons/practice/technique/palm-muting", "description": "Control dynamics and create punchy, percussive tones.", "difficulty": "Beginner", "color": "bg-gray-50 border-gray-200 hover:bg-gray-100", "iconColor": "text-gray-600" },
+    { "name": "Hybrid Picking", "icon": "🤚", "href": "/lessons/practice/technique/hybrid-picking", "description": "Combine pick and fingers for complex rhythms and textures.", "difficulty": "Intermediate", "color": "bg-teal-50 border-teal-200 hover:bg-teal-100", "iconColor": "text-teal-600" },
+    { "name": "Slides & Glissando", "icon": "↗️", "href": "/lessons/practice/technique/slide-techniques", "description": "Add smooth, expressive transitions between notes with slides.", "difficulty": "Beginner", "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100", "iconColor": "text-emerald-600" },
+    { "name": "Harmonics", "icon": "🔔", "href": "/lessons/practice/technique/harmonics", "description": "Produce bell-like tones with natural and artificial harmonics.", "difficulty": "Intermediate", "color": "bg-violet-50 border-violet-200 hover:bg-violet-100", "iconColor": "text-violet-600" }
+  ],
+  "practiceGuidelines": {
+    "title": "Effective Practice Guidelines",
+    "bestPractices": {
+      "title": "Best Practices",
+      "icon": "✓",
+      "items": [
+        "Start slowly and focus on perfect execution",
+        "Use a metronome to develop timing and consistency",
+        "Practice in short, focused sessions (15-30 minutes)",
+        "Gradually increase tempo while maintaining accuracy",
+        "Record yourself to identify areas for improvement"
+      ]
+    },
+    "commonMistakes": {
+      "title": "Common Mistakes",
+      "icon": "✗",
+      "items": [
+        "Playing too fast before mastering slow execution",
+        "Ignoring proper hand position and posture",
+        "Practicing mistakes repeatedly without correction",
+        "Neglecting to warm up before intense practice",
+        "Focusing only on speed without musical application"
+      ]
+    }
+  },
+  "famousPlayers": {
+    "title": "Masters of Technique",
+    "description": "Study these guitarists who have pushed the boundaries of what's possible on the instrument through dedicated technique development.",
+    "players": [
+      { "name": "Steve Vai", "techniques": ["Legato", "Tapping", "String Skipping"], "genre": "Rock/Metal" },
+      { "name": "John Petrucci", "techniques": ["Alternate Picking", "Sweep Picking"], "genre": "Progressive Metal" },
+      { "name": "Paul Gilbert", "techniques": ["Alternate Picking", "String Skipping"], "genre": "Rock/Shred" },
+      { "name": "Frank Gambale", "techniques": ["Sweep Picking", "Legato"], "genre": "Fusion" },
+      { "name": "Brett Garsed", "techniques": ["Hybrid Picking", "Legato"], "genre": "Fusion" },
+      { "name": "Yngwie Malmsteen", "techniques": ["Alternate Picking", "Sweep Picking"], "genre": "Neoclassical" }
+    ]
+  },
+  "dailyRoutine": {
+    "title": "Daily Technique Routine",
+    "steps": [
+      { "icon": "🔥", "title": "Warm-up", "duration": "5-10 minutes", "detail": "Chromatic exercises, stretches" },
+      { "icon": "🎯", "title": "Focus Technique", "duration": "15-20 minutes", "detail": "Concentrate on one technique" },
+      { "icon": "🎵", "title": "Musical Application", "duration": "10-15 minutes", "detail": "Apply to songs and solos" },
+      { "icon": "❄️", "title": "Cool-down", "duration": "5 minutes", "detail": "Gentle stretches, relaxation" }
+    ]
+  },
+  "journeySection": {
+    "title": "Ready to Begin?",
+    "description": "Start with the fundamentals and work your way up. Remember: consistent, focused practice is more valuable than speed. Choose a technique that matches your current level and commit to daily practice.",
+    "links": [
+      { "href": "/lessons/practice/technique/alternate-picking", "label": "Start with Alternate Picking", "colorBg": "bg-blue-600", "colorText": "text-white", "colorHover": "hover:bg-blue-700" },
+      { "href": "/lessons/practice/technique/palm-muting", "label": "Learn Palm Muting", "colorBg": "bg-gray-600", "colorText": "text-white", "colorHover": "hover:bg-gray-700" },
+      { "href": "/lessons/practice/technique/bending-vibrato", "label": "Master Bending & Vibrato", "colorBg": "bg-orange-600", "colorText": "text-white", "colorHover": "hover:bg-orange-700" }
+    ]
+  }
+}

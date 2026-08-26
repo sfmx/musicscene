@@ -1,0 +1,377 @@
+{
+  "songInfo": {
+    "title": "Gloria",
+    "artist": "Them (Van Morrison)",
+    "album": "The Angry Young Them",
+    "released": "1964",
+    "genre": "Garage Rock",
+    "tempo": "132 BPM",
+    "duration": "2:37",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Core melodic framework for the vocal chant and guitar riffs"
+        },
+        {
+          "scale": "E mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D - E",
+          "application": "The use of the D chord (bVII) suggests a mixolydian flavor common in rock music"
+        }
+      ],
+      "modalCharacter": "Mixolydian-influenced with the bVII (D) chord lending a raw, bluesy rock feel",
+      "keySignature": "4 sharps (F#, C#, G#, D#) in strict E major, but the D natural in D chord gives mixolydian color",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "D",
+          "A"
+        ],
+        "progression": "I - bVII - IV",
+        "description": "A raw, powerful three-chord riff that defines garage rock. The E to D movement creates the mixolydian character, while A provides the subdominant lift."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse / Main Riff",
+          "progression": "E - D - A - E",
+          "romanNumerals": "I - bVII - IV - I",
+          "description": "The repeating four-chord riff that drives the entire song, played with aggressive strumming and raw energy"
+        },
+        {
+          "section": "Chorus / Chant",
+          "progression": "E - D - A - E",
+          "romanNumerals": "I - bVII - IV - I",
+          "description": "Same chord progression as the verse but with the iconic 'G-L-O-R-I-A' vocal chant over the top"
+        },
+        {
+          "section": "Build-Up",
+          "progression": "E - E - E - E",
+          "romanNumerals": "I - I - I - I",
+          "description": "Sections where the band vamps on the E chord, building tension before releasing into the full riff"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Tonic chord and the home base, played with aggressive open strumming",
+        "D (bVII) - Flatted seventh chord creating the mixolydian rock sound and forward motion",
+        "A (IV) - Subdominant chord providing harmonic lift before resolving back to E"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Three-Chord Garage Rock Riff",
+      "description": "The driving E-D-A riff pattern that became the template for garage rock, played with raw, aggressive downstrokes",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E: 0-2-2-1-0-0 (open E major chord)",
+          "D: X-X-0-2-3-2 (open D major chord)",
+          "A: X-0-2-2-2-0 (open A major chord)",
+          "Each chord gets two beats in the main riff pattern",
+          "The riff repeats throughout the entire song with no variation needed"
+        ],
+        "sequence": [
+          "Learn the three open chord shapes: E, D, and A",
+          "Practice the riff pattern: E (2 beats) - D (2 beats) - A (2 beats) - E (2 beats)",
+          "Use strong, confident downstrokes on every strum",
+          "Build up to 132 BPM with steady timing"
+        ],
+        "tips": [
+          "This song is all about attitude - play with energy and confidence",
+          "Keep your strumming aggressive with mostly downstrokes",
+          "Do not overthink the chord changes - keep it simple and raw",
+          "The D chord transition from E is the trickiest - practice it in isolation"
+        ],
+        "chords": [
+          "E",
+          "D",
+          "A"
+        ],
+        "progression": "E - D - A - E (repeating)"
+      }
+    },
+    {
+      "name": "Rhythmic Chanting Build-Up",
+      "description": "The technique of vamping on a single chord while building intensity, then releasing into the full riff with the vocal chant",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Vamp on the open E chord with steady eighth-note strumming",
+          "Gradually increase strumming intensity and volume",
+          "The build creates tension that releases when the D and A chords enter",
+          "This dynamic contrast is central to the song's excitement"
+        ],
+        "sequence": [
+          "Start strumming the E chord quietly with light eighth notes",
+          "Gradually increase volume and attack over 4-8 bars",
+          "Launch into the full E-D-A riff at peak intensity",
+          "Maintain high energy through the chorus chant"
+        ],
+        "tips": [
+          "Think of the build-up as going from a whisper to a shout",
+          "The contrast between quiet and loud is what makes this song exciting",
+          "Practice controlling your strumming dynamics from soft to loud",
+          "Time the peak of the build to coincide with the vocal entry"
+        ],
+        "chords": [
+          "E"
+        ],
+        "progression": "E (vamp) building to E - D - A full riff"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse",
+      "timeStamp": "0:00-0:48",
+      "technique": "Three-Chord Garage Rock Riff",
+      "key": "E Major",
+      "description": "The song opens with the hypnotic E chord vamp before launching into the three-chord riff with Van Morrison's spoken-word verses",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ],
+      "progression": "E - D - A - E",
+      "notes": [
+        "Start with the E chord vamp building intensity",
+        "Launch into the three-chord riff when the band comes in fully",
+        "Keep the strumming driving and rhythmic throughout",
+        "The verse is essentially the same riff repeating under the vocals"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Chorus (G-L-O-R-I-A Chant)",
+      "timeStamp": "0:48-1:20",
+      "technique": "Three-Chord Garage Rock Riff",
+      "key": "E Major",
+      "description": "The iconic spelling chant 'G-L-O-R-I-A' sung over the same three-chord riff with maximum energy",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ],
+      "progression": "E - D - A - E",
+      "notes": [
+        "Same chord progression as verse but with full band intensity",
+        "The chant the iconic vocal hook drives the energy to its peak",
+        "Strum with maximum power and confidence during the chorus",
+        "Each letter of the chant aligns with the strumming rhythm"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse 2 / Build-Up",
+      "timeStamp": "1:20-1:52",
+      "technique": "Rhythmic Chanting Build-Up",
+      "key": "E Major",
+      "description": "Second verse returns to the E chord vamp and spoken vocals before building back to the chorus",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ],
+      "progression": "E (vamp) - E - D - A - E",
+      "notes": [
+        "Dynamics drop back down for the verse",
+        "Build intensity gradually through the verse",
+        "The E chord vamp sections allow for dynamic contrast",
+        "Drive toward the chorus with increasing volume"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Final Chorus / Outro",
+      "timeStamp": "1:52-2:37",
+      "technique": "Three-Chord Garage Rock Riff",
+      "key": "E Major",
+      "description": "Extended final chorus with repeated G-L-O-R-I-A chant building to the explosive ending",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ],
+      "progression": "E - D - A - E",
+      "notes": [
+        "Maximum energy throughout the final chorus",
+        "The chant repeats with building intensity",
+        "Keep the riff driving and consistent to the end",
+        "Final resolution on a big, sustained E chord"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Telecaster or any solid-body electric guitar",
+      "alternatives": [
+        "Fender Stratocaster",
+        "Gibson SG",
+        "Epiphone Les Paul",
+        "Any electric guitar with single-coil or humbucker pickups"
+      ],
+      "pickup": "Bridge pickup for bright, aggressive tone"
+    },
+    "amp": {
+      "recommended": "Fender Bassman or Vox AC30 (cranked for natural overdrive)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC15",
+        "Marshall JTM45",
+        "Any tube amp with natural breakup"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate overdrive from cranked tube amp)",
+        "treble": "7 (bright and cutting)",
+        "middle": "6 (present midrange)",
+        "bass": "5 (full but not muddy)",
+        "presence": "7 (aggressive attack)"
+      }
+    },
+    "effects": {
+      "distortion": "None needed - use amp overdrive from cranked volume",
+      "delay": "None",
+      "reverb": "Light spring reverb from the amp",
+      "other": "No pedals needed. Raw, cranked amp tone is the authentic garage rock sound."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three chord shapes and the basic riff pattern",
+      "steps": [
+        "Learn open E, D, and A chord shapes individually",
+        "Practice switching between E and D (the most important transition)",
+        "Practice the riff pattern: E - D - A - E at slow tempo",
+        "Strum with strong, confident downstrokes"
+      ],
+      "timeEstimate": "1 week with daily practice"
+    },
+    "intermediate": {
+      "focus": "Add dynamics, energy, and play through the full song",
+      "steps": [
+        "Build up to 132 BPM with the full riff pattern",
+        "Add dynamic variation between quiet verses and loud choruses",
+        "Practice the single-chord vamp build-ups",
+        "Play through the entire song structure without stopping"
+      ],
+      "timeEstimate": "1-2 weeks for confident performance"
+    },
+    "advanced": {
+      "focus": "Perform with attitude, sing along, and add lead embellishments",
+      "steps": [
+        "Sing the G-L-O-R-I-A chant while strumming the riff",
+        "Add blues scale embellishments between chord changes",
+        "Experiment with power chord versions (E5, D5, A5) for heavier sound",
+        "Practice performing with a band or backing track"
+      ],
+      "timeEstimate": "2-3 weeks for polished band-ready performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing too cleanly - this song should sound raw and energetic",
+      "Losing the tempo when switching between E and D chords",
+      "Not enough dynamic contrast between verse build-ups and chorus",
+      "Overcomplicating the strumming - keep it simple with driving downstrokes"
+    ],
+    "practiceRoutine": [
+      "Warm up with E, D, A chord switches for 3 minutes",
+      "Practice the riff pattern at 100 BPM for 3 minutes",
+      "Build tempo up to 132 BPM gradually over several passes",
+      "Work on dynamics: play the E vamp softly, then explode into the full riff",
+      "Play through the entire song from start to finish"
+    ],
+    "focusAreas": [
+      "Clean transitions between E, D, and A chords",
+      "Driving downstroke rhythm consistency",
+      "Dynamic control from soft builds to loud releases",
+      "Maintaining steady tempo at 132 BPM"
+    ],
+    "metronomeWork": [
+      "Start at 90 BPM with the three-chord riff pattern",
+      "Increase by 10 BPM until reaching 132 BPM",
+      "Practice the E chord vamp at various tempos to build timing",
+      "Use the metronome on beats 2 and 4 for a rock backbeat feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Here Comes the Night",
+        "difficulty": "Beginner",
+        "similarity": "Early Them single with Van Morrison's raw vocal style and simple chord structure"
+      },
+      {
+        "title": "Baby Please Don't Go",
+        "difficulty": "Beginner",
+        "similarity": "Blues-based Them classic with similarly raw, garage rock energy"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Louie Louie",
+        "artist": "The Kingsmen",
+        "difficulty": "Beginner",
+        "similarity": "The quintessential 3-chord garage rock song with the same raw energy"
+      },
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "difficulty": "Beginner",
+        "similarity": "Another iconic 3-chord garage rock anthem with simple open chords"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Louie Louie",
+        "artist": "The Kingsmen",
+        "difficulty": "Beginner",
+        "similarity": "Another essential 3-chord garage rock song to build your repertoire"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Progress to power chord riffs with another iconic rock song"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 85,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "garage-rock",
+      "beginner",
+      "3-chord-song",
+      "rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}

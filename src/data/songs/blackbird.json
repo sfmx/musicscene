@@ -1,0 +1,449 @@
+{
+  "songInfo": {
+    "title": "Blackbird",
+    "artist": "The Beatles",
+    "album": "The White Album",
+    "released": "1968",
+    "genre": "Folk/Acoustic",
+    "tempo": "96 BPM",
+    "duration": "2:18",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "N/A",
+    "bass": "N/A",
+    "drums": "N/A"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major scale",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Provides the diatonic framework for the melody and chord voicings throughout the piece"
+        },
+        {
+          "scale": "Chromatic passing tones",
+          "notes": "G - G# - A - A# - B - C - C# - D",
+          "application": "The ascending chromatic bass line from G through G# to A and beyond, creating the signature walking bass movement"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with chromatic bass movement",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "Am7",
+          "G/B",
+          "G"
+        ],
+        "progression": "I - ii7 - I/3 - I",
+        "description": "Deceptively simple progression built on an ascending chromatic bass line from G to B, with the melody carried simultaneously by the treble notes"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse (ascending)",
+          "progression": "G - Am7/G - G/B - G - C - C#dim - D - D#dim - Em - Eb+ - D - C#dim - C - Cm",
+          "romanNumerals": "I - ii7/I - I/3 - I - IV - #IVdim - V - #Vdim - vi - bVI+ - V - #IVdim - IV - iv",
+          "description": "Chromatic bass ascent from G up through A, B, C, C#, D, D# to Em, then descending back through chromatic alterations to a minor IV resolution"
+        },
+        {
+          "section": "Bridge (Blackbird fly)",
+          "progression": "F - Em - Dm - C - Bb6 - C - F - Em - Dm - C",
+          "romanNumerals": "bVII - vi - v - IV - bIII6 - IV - bVII - vi - v - IV",
+          "description": "Descending diatonic movement from F through Em and Dm to C, with Bb6 adding a modal mixture color before resolution"
+        },
+        {
+          "section": "Outro",
+          "progression": "G - Am7 - G/B - C - G/B - A7 - D7 - G",
+          "romanNumerals": "I - ii7 - I/3 - IV - I/3 - V7/V - V7 - I",
+          "description": "Final statement with the chromatic bass ascent resolving through a secondary dominant (A7) to D7 and final G resolution"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Tonic center, established in both bass and treble simultaneously",
+        "Am7 (ii7) - Part of the chromatic bass ascent, A in the bass with G ringing on top",
+        "G/B (I/3) - First inversion tonic continuing the chromatic bass climb to B",
+        "C (IV) - Subdominant providing harmonic contrast and the next bass note in the ascent",
+        "C#dim (#IVdim) - Chromatic passing diminished chord connecting C to D in the bass",
+        "D (V) - Dominant providing resolution tension",
+        "Em (vi) - Relative minor, the emotional peak of the chromatic bass ascent",
+        "Cm (iv) - Minor subdominant borrowed from G minor, adding poignant color at phrase endings"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerpicking Independence",
+      "description": "The core technique of Blackbird: thumb plays an independent bass line on the low strings while index and middle fingers simultaneously carry the melody on the higher strings, creating a two-part counterpoint on a single guitar",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb (p) handles all bass notes on strings 5 and 6, maintaining the chromatic walking bass line",
+          "Index (i) and middle (m) fingers play melody notes on strings 1 and 2 simultaneously",
+          "Bass and melody move in contrary motion and parallel motion at different points",
+          "The two parts must sound like independent voices, not strummed chords",
+          "Paul McCartney originally played this with thumb and two-finger picking, not classical technique"
+        ],
+        "sequence": [
+          "Practice the bass line alone with thumb until it is automatic",
+          "Practice the melody notes alone with index and middle fingers",
+          "Combine bass and melody at very slow tempo (40 BPM), focusing on independence",
+          "Gradually increase speed while maintaining clear separation of voices",
+          "Add the rhythmic coordination: bass on beat 1, melody on beat 2, together on beat 3"
+        ],
+        "tips": [
+          "Isolate each hand's part and master it independently before combining",
+          "Use rest strokes on the bass notes for fuller tone and better thumb control",
+          "Keep the picking hand anchored lightly on the guitar body for stability",
+          "Think of it as playing two instruments at once - bass guitar and lead guitar",
+          "Start at half speed and resist the urge to speed up until both parts are clean"
+        ],
+        "chords": [
+          "G",
+          "Am7",
+          "G/B"
+        ],
+        "progression": "Chromatic bass: G - G# - A - A# - B ascending under melody"
+      }
+    },
+    {
+      "name": "Chromatic Bass Line",
+      "description": "The ascending and descending chromatic bass movement that gives Blackbird its distinctive character, walking stepwise through notes that create passing diminished chords and unexpected harmonic colors",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bass line ascends chromatically: G(3rd fret E string) - G#(4th fret) - A(5th fret) - Bb(6th fret) - B(7th fret)",
+          "Continues upward: C(3rd fret A string) - C#(4th fret) - D(5th fret) - D#(6th fret) - E(7th fret)",
+          "Then descends back through the same chromatic path",
+          "Each bass note creates a different chord quality against the sustained treble melody",
+          "The chromatic movement provides constant harmonic motion even though only one note changes"
+        ],
+        "sequence": [
+          "Learn the ascending bass line on the low E string: the sequential fret positions",
+          "Continue on the A string: the sequential fret positions",
+          "Practice the descending return path",
+          "Add the corresponding treble notes above each bass note",
+          "Coordinate the full two-voice texture at slow tempo"
+        ],
+        "tips": [
+          "Use a consistent thumb attack for even bass note volume throughout the line",
+          "Let bass notes ring as long as possible before moving to the next",
+          "The chromatic movement should feel smooth and connected, like a cello line",
+          "Mark the strong beats (G, A, B, C, D, E) vs passing tones (G#, Bb, C#, D#)",
+          "Practice the bass line while humming the melody to develop independence"
+        ],
+        "chords": [
+          "G",
+          "Am7",
+          "G/B",
+          "C",
+          "C#dim",
+          "D",
+          "D#dim",
+          "Em"
+        ],
+        "progression": "G - Am7 - G/B - C - C#dim - D - D#dim - Em (ascending)"
+      }
+    },
+    {
+      "name": "Open String Voicings",
+      "description": "Using open strings as pedal tones within fretted chord shapes to create rich, harp-like voicings that sustain and ring together, giving the arrangement its full, orchestral quality from a single guitar",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Open G and B strings (strings 3 and 2) ring as pedal tones throughout many chord shapes",
+          "The open high E string provides a constant soprano voice",
+          "Fretted notes on the bass strings move underneath the sustained open strings",
+          "Creates the effect of a much larger instrument, similar to a 12-string guitar",
+          "Some chord shapes are unconventional because they are designed for open string interaction"
+        ],
+        "sequence": [
+          "Learn each chord shape noting which strings are open vs fretted",
+          "Practice holding fretted notes while ensuring open strings ring clearly",
+          "Check each chord for buzzing or muted strings",
+          "Transition between chords while keeping open strings sustaining",
+          "Listen for the harp-like ringing quality as notes overlap"
+        ],
+        "tips": [
+          "Arch fretting fingers high to avoid touching adjacent open strings",
+          "Use fingertips, not finger pads, for precise fretting",
+          "Check each chord by playing one string at a time to ensure clarity",
+          "Keep spare fingers off the fretboard when not needed to allow open string ringing",
+          "The open strings are the glue that connects the chord shapes smoothly"
+        ],
+        "chords": [
+          "G",
+          "Am7",
+          "G/B",
+          "C"
+        ],
+        "progression": "Various voicings with open string pedal tones"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verse 1 - Ascending Bass",
+      "timeStamp": "0:00-0:39",
+      "technique": "Fingerpicking Independence / Chromatic Bass Line",
+      "key": "G Major",
+      "description": "The opening verse establishing the two-voice fingerpicking texture with the chromatic bass line ascending from G through to Em while melody notes dance above on the treble strings",
+      "chords": [
+        "G",
+        "Am7",
+        "G/B",
+        "C",
+        "C#dim",
+        "D"
+      ],
+      "progression": "G - Am7 - G/B - C - C#dim - D",
+      "notes": [
+        "Thumb plays ascending chromatic bass on low E string: the sequential fret positions",
+        "Index and middle fingers maintain melody on strings 1 and 2",
+        "Each bass-melody pair is played as a pinch (simultaneous thumb + finger)",
+        "The tapping foot sound in the original recording helps establish tempo"
+      ],
+      "alphaTab": "3.5 3.4 5.3 3.2 5.3 3.4 | 3.5 5.4 5.3 3.2 5.3 5.4 | 8.5 8.4 10.3 8.2 10.3 8.4 | 3.5 3.4 5.3 3.2 5.3 3.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Verse 2 - Continuation and Descent",
+      "timeStamp": "0:39-1:06",
+      "technique": "Fingerpicking Independence / Chromatic Bass Line",
+      "key": "G Major",
+      "description": "Second verse continuing the chromatic bass ascent to its peak on Em, then descending back through chromatic alterations with the melody shifting to match the emotional contour",
+      "chords": [
+        "C",
+        "C#dim",
+        "D",
+        "D#dim",
+        "Em",
+        "Eb+",
+        "D",
+        "C#dim",
+        "C",
+        "Cm"
+      ],
+      "progression": "C - C#dim - D - D#dim - Em - Eb+ - D - C#dim - C - Cm",
+      "notes": [
+        "Bass line continues ascending on A string: the sequential fret positions reaching Em",
+        "Em is the emotional peak before the descent begins",
+        "Descending chromatic bass creates a mirror of the ascending phrase",
+        "Cm (minor IV) provides a poignant color shift at the end of the descent"
+      ],
+      "alphaTab": "3.5 3.4 5.3 3.2 5.3 3.4 | 3.5 5.4 5.3 3.2 5.3 5.4 | 8.5 8.4 10.3 8.2 10.3 8.4 | 3.5 3.4 5.3 3.2 5.3 3.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Bridge - Blackbird Fly",
+      "timeStamp": "1:06-1:35",
+      "technique": "Open String Voicings",
+      "key": "G Major / Shifting",
+      "description": "The bridge section with the signature lyric, shifting to barre chord movement descending from F through Em and Dm to C with a contrasting Bb6 adding modal color",
+      "chords": [
+        "F",
+        "Em",
+        "Dm",
+        "C",
+        "Bb6"
+      ],
+      "progression": "F - Em - Dm - C - Bb6 - C",
+      "notes": [
+        "Shifts from fingerpicking to more strummed chord movement",
+        "Descending bass and chord movement creates sense of release and flight",
+        "Bb6 chord adds unexpected color from Mixolydian mode",
+        "Tempo may be felt slightly more freely in this section"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro - Final Statement",
+      "timeStamp": "1:35-2:18",
+      "technique": "Fingerpicking Independence / Chromatic Bass Line",
+      "key": "G Major",
+      "description": "Return of the main fingerpicking theme with a final chromatic bass ascent resolving through a secondary dominant chain (A7-D7) to the conclusive G major chord",
+      "chords": [
+        "G",
+        "Am7",
+        "G/B",
+        "C",
+        "G/B",
+        "A7",
+        "D7",
+        "G"
+      ],
+      "progression": "G - Am7 - G/B - C - G/B - A7 - D7 - G",
+      "notes": [
+        "Repeats the ascending chromatic bass theme from the opening",
+        "A7 functions as V/V (secondary dominant of D7)",
+        "D7 resolves firmly to the final G major chord",
+        "The ending G chord can be arpeggiated for a gentle, conclusive finish",
+        "Bird sounds in the original recording fade out over the final chord"
+      ],
+      "alphaTab": "3.5 3.4 5.3 3.2 5.3 3.4 | 3.5 5.4 5.3 3.2 5.3 5.4 | 8.5 8.4 10.3 8.2 10.3 8.4 | 3.5 3.4 5.3 3.2 5.3 3.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Martin D-28 acoustic guitar",
+      "alternatives": [
+        "Gibson J-45",
+        "Martin 000-28",
+        "Any quality steel-string acoustic with a wide nut for fingerpicking"
+      ],
+      "pickup": "No amplification needed - purely acoustic performance"
+    },
+    "amp": {
+      "recommended": "No amplifier required",
+      "alternatives": [
+        "If amplifying for live performance: acoustic amp or PA with pickup/microphone",
+        "Condenser microphone for recording",
+        "LR Baggs Anthem pickup system for live use"
+      ],
+      "settings": {
+        "gain": "N/A (acoustic)",
+        "treble": "Flat EQ if amplifying",
+        "middle": "Flat EQ if amplifying",
+        "bass": "Flat EQ if amplifying",
+        "presence": "Flat EQ if amplifying"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "None (natural room acoustics only)",
+      "other": "No effects needed - pure acoustic guitar tone. A quality acoustic guitar with good intonation is the only requirement."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic chord shapes and understand the chromatic bass concept",
+      "steps": [
+        "Master open G, Am7, C, and Em chord shapes",
+        "Understand the chromatic bass line concept: G-G#-A-A#-B ascending on low E string",
+        "Practice basic thumb picking on bass strings in steady rhythm",
+        "Work on finger independence: thumb on string 6, index on string 2, middle on string 1"
+      ],
+      "timeEstimate": "2-4 weeks for basic chord shapes and bass line concept"
+    },
+    "intermediate": {
+      "focus": "Combine the bass line with melody into the full two-voice arrangement",
+      "steps": [
+        "Practice bass line and melody independently until each is automatic",
+        "Combine both voices at 50% tempo (48 BPM) with metronome",
+        "Learn the bridge section chord shapes and transitions",
+        "Build speed gradually to full 96 BPM while maintaining voice independence"
+      ],
+      "timeEstimate": "4-8 weeks for full arrangement at tempo"
+    },
+    "advanced": {
+      "focus": "Refine dynamics, tone quality, and musical expression for performance",
+      "steps": [
+        "Polish the dynamic arc: soft opening building to bridge, gentle conclusion",
+        "Develop consistent fingerpicking tone across all positions",
+        "Memorize the entire piece for confident performance without hesitation",
+        "Practice with a recording to match phrasing, rubato, and breath points"
+      ],
+      "timeEstimate": "6-8 weeks for performance-ready polish"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting open strings with fretting fingers during chord transitions",
+      "Playing the bass and melody at the same volume instead of balancing voices",
+      "Rushing through the chromatic bass line without letting notes sustain",
+      "Neglecting to practice bass and melody parts independently before combining",
+      "Treating it as strumming with a bass line rather than two independent voices"
+    ],
+    "practiceRoutine": [
+      "Thumb-only bass line exercise: play the chromatic bass ascending and descending for 5 minutes",
+      "Finger-only melody exercise: play the treble melody notes in rhythm for 5 minutes",
+      "Combine both parts at 50% speed with metronome for 10 minutes",
+      "Bridge section chord transitions at slow tempo for 5 minutes",
+      "Full run-through at comfortable speed for 10 minutes, prioritizing clean voice separation"
+    ],
+    "focusAreas": [
+      "Thumb and finger independence for two-voice counterpoint",
+      "Chromatic bass line smoothness and even volume",
+      "Open string clarity: no buzzing or muted strings during position changes",
+      "Dynamic control: bringing out melody over bass when needed",
+      "Musical phrasing and breath points between verse lines"
+    ],
+    "metronomeWork": [
+      "Start at 48 BPM (half speed) with the full two-voice arrangement",
+      "Increase by 4 BPM increments when both voices are clean and independent",
+      "Practice the bridge at 60 BPM, focusing on smooth chord transitions",
+      "Target 80 BPM as an intermediate milestone before reaching full 96 BPM",
+      "At full tempo, practice with slight rubato to match the original recording's natural feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Here Comes the Sun",
+        "difficulty": "Intermediate",
+        "similarity": "Fingerpicking-based arrangement with open chord voicings and melodic bass movement"
+      },
+      {
+        "title": "Norwegian Wood",
+        "difficulty": "Beginner",
+        "similarity": "Simple fingerpicking with folk-influenced acoustic arrangement and modal harmony"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Advanced",
+        "similarity": "Fingerpicking independence with melodic sensitivity and dynamic expression on acoustic-style guitar"
+      },
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic fingerpicking with open chord voicings and emotional melodic content in G major"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Hurt So Good",
+        "artist": "John Mellencamp",
+        "difficulty": "Beginner",
+        "similarity": "Simple chord-based song to build basic chord transition skills before fingerpicking"
+      },
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "G-C-D chord family foundation with simple picking patterns as a stepping stone"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-03-02",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "fingerpicking",
+      "acoustic",
+      "folk"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

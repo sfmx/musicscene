@@ -1,0 +1,351 @@
+{
+  "slug": "forms",
+  "category": "structure",
+  "pageTitle": "Song Forms Analysis",
+  "subtitle": "Understanding common song structures and their theoretical foundations",
+  "heroGradient": "bg-gradient-to-r from-violet-50 to-purple-50",
+  "backLink": { "href": "/lessons/songs/structure", "label": "Back to Song Structure" },
+  "introduction": {
+    "title": "Song Forms: The Architecture of Music",
+    "text": "Song form is the large-scale organization of musical material that creates coherent structures listeners can follow and remember. These forms represent time-tested solutions to the challenge of balancing repetition (for familiarity) with contrast (for interest). Understanding form helps us analyze how songs create their emotional journeys and structural logic.",
+    "columns": [
+      {
+        "title": "Structural Templates",
+        "icon": "\ud83c\udfdb\ufe0f",
+        "text": "Time-tested patterns for organizing musical material"
+      },
+      {
+        "title": "Unity vs. Variety",
+        "icon": "\u2696\ufe0f",
+        "text": "Balance repetition for familiarity with contrast for interest"
+      },
+      {
+        "title": "Listener Guidance",
+        "icon": "\ud83c\udfaf",
+        "text": "Predictable patterns help listeners follow musical narratives"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Common Song Forms",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "AABA (32-bar Song Form)",
+          "description": "Classic American popular song form with contrasting bridge",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "A - A - B - A" },
+            { "label": "Bars", "value": "8 - 8 - 8 - 8" },
+            { "label": "Theory", "value": "A sections establish main theme, B section provides harmonic and melodic contrast" },
+            { "label": "Harmonic Approach", "value": "A: tonic-centered, B: modulation or relative keys" }
+          ],
+          "items": ["Symmetrical structure", "Strong melodic themes", "Clear contrast in bridge"],
+          "badges": [
+            { "text": "Jazz standards", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Tin Pan Alley songs", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Many Beatles songs", "color": "bg-violet-100 text-violet-700" }
+          ]
+        },
+        {
+          "title": "Verse-Chorus Form",
+          "description": "Modern popular song form with alternating verse and chorus",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "V - C - V - C - B - C" },
+            { "label": "Bars", "value": "Variable length sections" },
+            { "label": "Theory", "value": "Verses develop narrative, choruses provide emotional/harmonic climax" },
+            { "label": "Harmonic Approach", "value": "Verses: stable progressions, Choruses: climactic harmony" }
+          ],
+          "items": ["Contrasting energy levels", "Memorable chorus hooks", "Flexible section lengths"],
+          "badges": [
+            { "text": "Most pop songs", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Rock music", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Country music", "color": "bg-violet-100 text-violet-700" }
+          ]
+        },
+        {
+          "title": "Binary Form (AB)",
+          "description": "Two contrasting sections, each typically repeated",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "A - B" },
+            { "label": "Bars", "value": "Each section repeated" },
+            { "label": "Theory", "value": "A section establishes key, B section provides contrast and return" },
+            { "label": "Harmonic Approach", "value": "A: tonic to dominant, B: explores related keys, returns to tonic" }
+          ],
+          "items": ["Simple structure", "Clear contrast", "Often with repeats"],
+          "badges": [
+            { "text": "Baroque dances", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Folk songs", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Some popular songs", "color": "bg-violet-100 text-violet-700" }
+          ]
+        },
+        {
+          "title": "Ternary Form (ABA)",
+          "description": "Three-part form with return to opening material",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "A - B - A" },
+            { "label": "Bars", "value": "Sections can vary in length" },
+            { "label": "Theory", "value": "A establishes main theme, B contrasts, A returns (often varied)" },
+            { "label": "Harmonic Approach", "value": "A: home key, B: contrasting key, A: return to home key" }
+          ],
+          "items": ["Symmetrical return", "Strong sense of closure", "Clear three-part structure"],
+          "badges": [
+            { "text": "Classical minuets", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Many ballads", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Art songs", "color": "bg-violet-100 text-violet-700" }
+          ]
+        },
+        {
+          "title": "Twelve-Bar Blues Form",
+          "description": "Foundational blues structure with set harmonic progression",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "AAB (lyrically)" },
+            { "label": "Bars", "value": "12 bars with specific chord pattern" },
+            { "label": "Theory", "value": "I-I-I-I-IV-IV-I-I-V-IV-I-I pattern with variations" },
+            { "label": "Harmonic Approach", "value": "Built on I-IV-V relationships with blues-specific extensions" }
+          ],
+          "items": ["Fixed harmonic pattern", "AAB lyrical structure", "Built-in tension and release"],
+          "badges": [
+            { "text": "Traditional blues", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Rock and roll", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Jazz blues", "color": "bg-violet-100 text-violet-700" }
+          ]
+        },
+        {
+          "title": "Through-Composed",
+          "description": "Continuously developing form without exact repetition",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Structure", "value": "ABCD... (no repetition)" },
+            { "label": "Bars", "value": "Continuously variable" },
+            { "label": "Theory", "value": "Each section introduces new material, constant development" },
+            { "label": "Harmonic Approach", "value": "Continuously modulating or developing harmonic language" }
+          ],
+          "items": ["Continuous development", "No exact repeats", "Complex narratives"],
+          "badges": [
+            { "text": "Art songs", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Progressive rock", "color": "bg-violet-100 text-violet-700" },
+            { "text": "Some folk ballads", "color": "bg-violet-100 text-violet-700" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Form Analysis Framework",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Sectional Relationships",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Questions", "value": "How do sections contrast? What creates unity? How does each section serve the overall form?" }
+          ],
+          "items": ["Harmonic relationships", "Melodic connections", "Rhythmic consistency", "Dynamic contrasts"]
+        },
+        {
+          "title": "Harmonic Architecture",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Questions", "value": "What is the tonal plan? How do key relationships create structure? Where do modulations occur?" }
+          ],
+          "items": ["Home key establishment", "Departure and return patterns", "Circle of fifths relationships", "Modal interchange"]
+        },
+        {
+          "title": "Phrase Structure",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Questions", "value": "How are phrases organized within sections? What phrase lengths are used? How do phrases relate?" }
+          ],
+          "items": ["Regular vs. irregular phrases", "Antecedent-consequent pairs", "Extension and compression techniques"]
+        },
+        {
+          "title": "Motivic Development",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Questions", "value": "What musical ideas unify the form? How are motifs developed? What provides melodic coherence?" }
+          ],
+          "items": ["Recurring melodic fragments", "Rhythmic patterns", "Harmonic motifs", "Transformation techniques"]
+        }
+      ]
+    },
+    {
+      "title": "Modern Form Variations",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Pre-Chorus Addition",
+          "description": "Builds energy and expectation before choruses",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Traditional", "value": "V - C - V - C" },
+            { "label": "Modern", "value": "V - PC - C - V - PC - C" },
+            { "label": "Common In", "value": "Contemporary pop, rock, when additional build is needed" }
+          ]
+        },
+        {
+          "title": "Multiple Bridges",
+          "description": "Provides multiple contrast points and development",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Traditional", "value": "V - C - V - C - B - C" },
+            { "label": "Modern", "value": "V - C - V - C - B1 - C - B2 - C" },
+            { "label": "Common In", "value": "Progressive rock, complex pop songs, extended forms" }
+          ]
+        },
+        {
+          "title": "Verse Variations",
+          "description": "Maintains interest while preserving familiarity",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Traditional", "value": "V1 - C - V2 - C" },
+            { "label": "Modern", "value": "V1 - C - V2 (different harmony) - C" },
+            { "label": "Common In", "value": "Folk adaptations, development-focused songs" }
+          ]
+        },
+        {
+          "title": "Extended Outros",
+          "description": "Allows for gradual fade or extended development",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Traditional", "value": "V - C - V - C - End" },
+            { "label": "Modern", "value": "V - C - V - C - C - C (fade/extend)" },
+            { "label": "Common In", "value": "Radio-friendly songs, jam-based music" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Form Design Principles",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Repetition & Return",
+          "icon": "\ud83d\udd04",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Function", "value": "Creates familiarity and memorability" },
+            { "label": "Examples", "value": "Choruses, recurring themes, AABA returns" }
+          ],
+          "items": ["Repetition gives listeners musical anchors and creates the satisfaction of return to familiar material."]
+        },
+        {
+          "title": "Contrast & Development",
+          "icon": "\ud83c\udfad",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Function", "value": "Prevents monotony, maintains interest" },
+            { "label": "Examples", "value": "Bridges, modulations, new themes" }
+          ],
+          "items": ["Contrast provides variety and emotional development, keeping listeners engaged throughout the song."]
+        },
+        {
+          "title": "Proportion & Balance",
+          "icon": "\u2696\ufe0f",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Function", "value": "Creates satisfying structural relationships" },
+            { "label": "Examples", "value": "Equal-length sections, golden ratio proportions" }
+          ],
+          "items": ["Well-proportioned sections create a sense of architectural balance and structural inevitability."]
+        },
+        {
+          "title": "Goal-Direction",
+          "icon": "\ud83c\udfaf",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Function", "value": "Creates forward momentum and expectation" },
+            { "label": "Examples", "value": "Build-ups to choruses, climactic moments" }
+          ],
+          "items": ["Good forms create expectation and direct listener attention toward important structural moments."]
+        }
+      ]
+    },
+    {
+      "title": "Practical Form Analysis Steps",
+      "bgColor": "bg-violet-50",
+      "borderColor": "border-violet-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Step-by-Step Process",
+          "icon": "\ud83d\udccb",
+          "borderColor": "border-violet-200",
+          "bgColor": "bg-violet-50",
+          "items": [
+            "1. Listen for section changes and repetitions",
+            "2. Map the sections using letters (A, B, C)",
+            "3. Count measures in each section",
+            "4. Identify the overall form template",
+            "5. Analyze how sections relate harmonically"
+          ]
+        },
+        {
+          "title": "What to Listen For",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-violet-200",
+          "bgColor": "bg-violet-50",
+          "items": [
+            "Melodic returns: Same or similar melodies",
+            "Harmonic patterns: Repeated chord progressions",
+            "Rhythmic changes: Different feels or grooves",
+            "Textural shifts: Instrumentation changes",
+            "Dynamic contrasts: Energy level changes",
+            "Lyrical patterns: Verse vs. chorus content"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "bgColor": "bg-blue-50",
+    "items": [
+      "Analysis Practice: Map the form of 10 different songs using letter notation",
+      "Analysis Practice: Compare songs in the same form but different genres",
+      "Analysis Practice: Find examples of each major song form type",
+      "Analysis Practice: Analyze how modern songs modify traditional forms",
+      "Analysis Practice: Study the proportional relationships in successful songs",
+      "Composition Practice: Write songs in each of the major form types",
+      "Composition Practice: Take a simple song and try it in different forms",
+      "Composition Practice: Practice creating effective section contrasts",
+      "Composition Practice: Experiment with modern variations of traditional forms",
+      "Composition Practice: Focus on balancing repetition with variety"
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Pre-Chorus Structure", "href": "/lessons/songs/structure/pre-chorus", "description": "Learn how pre-choruses build momentum." },
+    { "title": "Transitions", "href": "/lessons/songs/structure/transitions", "description": "Master the art of connecting song sections." },
+    { "title": "Song Structure Overview", "href": "/lessons/songs/structure", "description": "Return to the main Song Structure page." }
+  ]
+}

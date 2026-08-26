@@ -31,7 +31,12 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["Em", "G5", "F#5", "Em"],
+        "chords": [
+          "Em",
+          "G5",
+          "F#5",
+          "Em"
+        ],
         "progression": "i - ♭III - ii° - i",
         "description": "Distinctive chromatic progression from Em to G5 to F#5 back to Em creating dark atmosphere"
       },
@@ -103,7 +108,10 @@
           "Focus on the low E and A strings for maximum impact",
           "Combine with power chord shapes for full effect"
         ],
-        "chords": ["Em", "Em/D"],
+        "chords": [
+          "Em",
+          "Em/D"
+        ],
         "progression": "Em - Em/D pattern with palm muting"
       }
     },
@@ -133,7 +141,12 @@
           "Use pick attack for aggressive sound",
           "Practice smooth transitions between chord changes"
         ],
-        "chords": ["Em", "C5", "G5", "D5"],
+        "chords": [
+          "Em",
+          "C5",
+          "G5",
+          "D5"
+        ],
         "progression": "Em - C5 - G5 - D5 - Em"
       }
     },
@@ -159,7 +172,9 @@
           "Start with lighter gauge strings if struggling",
           "Develop finger strength gradually"
         ],
-        "chords": ["Em"],
+        "chords": [
+          "Em"
+        ],
         "progression": "E minor pentatonic scale patterns"
       }
     }
@@ -171,15 +186,19 @@
       "technique": "Palm Muting",
       "key": "E minor",
       "description": "The iconic opening riff that defines the song, featuring heavy palm muting on the low E string with syncopated rhythm patterns.",
-      "alphaTab": "0.6 0.6 2.5 2.5 2.5 2.5 0.6 0.6 0.5 0.5 0.5 0.5",
-      "chords": ["Em", "Em/D"],
+      "chords": [
+        "Em",
+        "Em/D"
+      ],
       "progression": "Em - Em/D (i chord with bass note variation)",
       "notes": [
         "Heavy palm muting throughout the entire riff",
         "Emphasize downstrokes for maximum attack",
         "Keep tempo steady at 123 BPM",
         "Focus on the syncopated rhythm pattern"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
     },
     {
       "name": "Verse",
@@ -187,15 +206,19 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Verse section featuring Em-C chord progression with lighter palm muting, allowing chords to ring more than the intro.",
-      "alphaTab": "0.6 3.5 | 0.6 3.5",
-      "chords": ["Em", "C"],
+      "chords": [
+        "Em",
+        "C"
+      ],
       "progression": "Em - C - Em - C (i - ♭VI - i - ♭VI)",
       "notes": [
         "Lighter palm muting than intro section",
-        "Let chords ring more for harmonic content", 
+        "Let chords ring more for harmonic content",
         "Maintain steady strumming pattern",
         "Emphasize chord changes on beat one"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Pre-Chorus",
@@ -203,15 +226,18 @@
       "technique": "Palm Muting",
       "key": "E minor",
       "description": "Building tension section that returns to heavy palm muting, creating dynamic contrast before the chorus.",
-      "alphaTab": "2.4 2.5 0.6 | 2.4 2.5 0.6",
-      "chords": ["Em"],
+      "chords": [
+        "Em"
+      ],
       "progression": "Em (i chord with rhythmic variation)",
       "notes": [
         "Gradual dynamic increase building to chorus",
         "Return to heavy palm muting technique",
         "Maintain rhythmic precision",
         "Create tension through repetition"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
     },
     {
       "name": "Chorus",
@@ -219,15 +245,21 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Main chorus featuring the complete Em-C-G-D-Em progression with full power chord voicings and open strumming.",
-      "alphaTab": "0.6 3.5 | 3.6 5.5 | 5.5 7.4 | 0.6",
-      "chords": ["Em", "C5", "G5", "D5"],
+      "chords": [
+        "Em",
+        "C5",
+        "G5",
+        "D5"
+      ],
       "progression": "Em - C5 - G5 - D5 - Em (i - ♭VI - ♭III - ♭VII - i)",
       "notes": [
         "Full volume with open strumming",
         "Emphasize chord changes with strong attacks",
         "No palm muting - let chords ring fully",
         "Create sense of resolution returning to Em"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Bridge",
@@ -235,15 +267,21 @@
       "technique": "Power Chord Progressions",
       "key": "E minor",
       "description": "Bridge section featuring C-G-D-Em progression with cleaner tone and arpeggiated approach.",
-      "alphaTab": "3.5 | 3.6 | 5.5 | 0.6",
-      "chords": ["C", "G", "D", "Em"],
+      "chords": [
+        "C",
+        "G",
+        "D",
+        "Em"
+      ],
       "progression": "C - G - D - Em (♭VI - ♭III - ♭VII - i)",
       "notes": [
         "Cleaner tone compared to other sections",
         "Arpeggiated or lighter strumming approach",
         "Focus on harmonic movement",
         "Creates contrast before guitar solo"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Guitar Solo",
@@ -251,42 +289,57 @@
       "technique": "String Bending",
       "key": "E minor",
       "description": "Lead guitar solo featuring E minor pentatonic scale in the 12th-15th fret area with string bending and vibrato techniques.",
-      "alphaTab": "12.2 15.2{b} 15.2 12.2 | 14.3 12.3",
-      "chords": ["Em"],
+      "chords": [
+        "Em"
+      ],
       "progression": "E minor pentatonic scale patterns over Em chord",
       "notes": [
         "Primary position: 12th fret E minor pentatonic box",
         "Focus on string bending accuracy and vibrato",
         "Use multiple fingers for bending support",
         "Combine legato and picked notes for variety"
-      ]
+      ],
+      "alphaTab": "12.3 14.3 12.2 15.2 | 15.1 12.1 15.2 12.2 | 12.3 14.3 14.2 12.2 | 15.1 12.1 14.3 12.3 |",
+      "exerciseLabel": "Bending & Phrasing Exercise"
     },
     {
       "name": "Outro",
       "timeStamp": "4:31-5:31",
       "technique": "Palm Muting",
-      "key": "E minor", 
+      "key": "E minor",
       "description": "Return to the main riff with variations, gradually fading out while maintaining the heavy palm-muted character.",
-      "alphaTab": "0.6 0.6 2.5 2.5 0.6 0.6 0.5 0.5",
-      "chords": ["Em", "Em/D"],
+      "chords": [
+        "Em",
+        "Em/D"
+      ],
       "progression": "Em - Em/D (return to main riff pattern)",
       "notes": [
         "Return to main riff with slight variations",
         "Gradual dynamic decrease for fade out",
         "Maintain heavy palm muting throughout",
         "Keep consistent tempo until final fade"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson Les Paul Standard",
-      "alternatives": ["ESP Explorer", "Epiphone Les Paul Standard", "ESP LTD EC-1000"],
+      "alternatives": [
+        "ESP Explorer",
+        "Epiphone Les Paul Standard",
+        "ESP LTD EC-1000"
+      ],
       "pickup": "EMG 81/60 active humbuckers or high-output passive humbuckers"
     },
     "amp": {
       "recommended": "Mesa/Boogie Mark IIC+",
-      "alternatives": ["Mesa/Boogie Mark V", "Marshall JCM800", "Boss Katana 100"],
+      "alternatives": [
+        "Mesa/Boogie Mark V",
+        "Marshall JCM800",
+        "Boss Katana 100"
+      ],
       "settings": {
         "gain": "7/10",
         "treble": "6/10",
@@ -389,5 +442,18 @@
       "Practice with subdivision clicks for complex rhythms",
       "Work on staying locked with metronome during palm-muted sections"
     ]
+  },
+  "metadata": {
+    "popularity": 89,
+    "dateAdded": "2024-01-01",
+    "featured": false,
+    "decade": "1990s",
+    "iconicRiff": false,
+    "tags": [
+      "power-chords",
+      "metal"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
   }
 }

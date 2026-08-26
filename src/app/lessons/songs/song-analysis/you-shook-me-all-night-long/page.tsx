@@ -1,7 +1,8 @@
-"use client";
-
-import React from "react";
+import { getSongAnalysisMetadata } from '@/lib/seo';
 import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
+
+
+export const metadata = getSongAnalysisMetadata('you-shook-me-all-night-long');
 
 export default function YouShookMeAllNightLongAnalysis() {
   return (

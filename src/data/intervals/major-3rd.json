@@ -1,0 +1,377 @@
+{
+  "slug": "major-3rd",
+  "intervalInfo": {
+    "name": "Major 3rd Interval",
+    "pageTitle": "Major 3rd Interval",
+    "subtitle": "The bright interval - 4 semitones that defines major chords and creates the joyful, optimistic sound characteristic of major tonality.",
+    "colorScheme": "yellow",
+    "heroGradient": "bg-gradient-to-r from-yellow-400 to-orange-500",
+    "tags": [
+      "4 Semitones",
+      "Major Chord Foundation",
+      "Bright & Happy",
+      "Consonant"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "4 semitones (2 whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Major"
+      },
+      {
+        "label": "Sound",
+        "value": "Bright, happy, consonant"
+      },
+      {
+        "label": "Consonance",
+        "value": "Imperfect consonance"
+      },
+      {
+        "label": "Function",
+        "value": "Defines major chord quality"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to E",
+        "value": "Classic major 3rd"
+      },
+      {
+        "label": "F to A",
+        "value": "In F major chord"
+      },
+      {
+        "label": "G to B",
+        "value": "In G major chord"
+      },
+      {
+        "label": "Do to Mi",
+        "value": "In solfege system"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Major 3rd Intervals - Foundation of Major Harmony",
+      "description": "The major 3rd (4 semitones) is the defining interval that creates major chord quality and the bright, optimistic character of major tonality.",
+      "examples": [
+        {
+          "title": "C \u2192 E Major 3rd",
+          "subtitle": "Foundation of C major chord",
+          "chord1": "C_to_E",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "E_from_C",
+          "chord2Label": "E (4th string 2nd fret)",
+          "alphaTex": "3.5 2.4",
+          "alphaTexTitle": "C to E Major 3rd",
+          "caption": "Bright, happy quality",
+          "colorBg": "bg-gradient-to-br from-yellow-50 to-yellow-100",
+          "colorBorder": "border border-yellow-200",
+          "colorTitle": "text-yellow-800",
+          "colorSubtitle": "text-yellow-700",
+          "colorCaption": "text-yellow-600"
+        },
+        {
+          "title": "F \u2192 A Major 3rd",
+          "subtitle": "Foundation of F major chord",
+          "chord1": "F_to_A",
+          "chord1Label": "F (4th string 3rd fret)",
+          "chord2": "A_from_F",
+          "chord2Label": "A (5th string open)",
+          "alphaTex": "3.4 0.5",
+          "alphaTexTitle": "F to A Major 3rd",
+          "caption": "Warm, optimistic character",
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorSubtitle": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "G \u2192 B Major 3rd",
+          "subtitle": "Foundation of G major chord",
+          "chord1": "G_to_B",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "B_from_G",
+          "chord2Label": "B (5th string 2nd fret)",
+          "alphaTex": "3.6 2.5",
+          "alphaTexTitle": "G to B Major 3rd",
+          "caption": "Strong, confident sound",
+          "colorBg": "bg-gradient-to-br from-amber-50 to-amber-100",
+          "colorBorder": "border border-amber-200",
+          "colorTitle": "text-amber-800",
+          "colorSubtitle": "text-amber-700",
+          "colorCaption": "text-amber-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Major Chord Construction with Major 3rds",
+      "items": [
+        {
+          "title": "C Major Chord",
+          "chord": "C_chord_M3",
+          "chordLabel": "Complete C major chord",
+          "alphaTex": "3.5 2.4 3.3",
+          "alphaTexTitle": "C Major Chord",
+          "alphaTexCaption": "C-E-G: Root, major 3rd, perfect 5th",
+          "bullets": [
+            "Major 3rd: C \u2192 E (defines major quality)",
+            "Perfect 5th: C \u2192 G (provides stability)",
+            "Open fingering: Natural guitar chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-green-50 to-green-100",
+          "colorBorder": "border border-green-200",
+          "colorTitle": "text-green-800",
+          "colorText": "text-green-700",
+          "colorCaption": "text-green-600"
+        },
+        {
+          "title": "G Major Chord",
+          "chord": "G_chord_M3",
+          "chordLabel": "Complete G major chord",
+          "alphaTex": "3.6 2.5 2.4",
+          "alphaTexTitle": "G Major Chord",
+          "alphaTexCaption": "G-B-D: Root, major 3rd, perfect 5th",
+          "bullets": [
+            "Major 3rd: G \u2192 B (creates major brightness)",
+            "Perfect 5th: G \u2192 D (harmonic foundation)",
+            "Four-finger chord: Full open position"
+          ],
+          "colorBg": "bg-gradient-to-br from-lime-50 to-lime-100",
+          "colorBorder": "border border-lime-200",
+          "colorTitle": "text-lime-800",
+          "colorText": "text-lime-700",
+          "colorCaption": "text-lime-600"
+        },
+        {
+          "title": "D Major Chord",
+          "chord": "D_chord_M3",
+          "chordLabel": "Complete D major chord",
+          "alphaTex": "2.3 2.4 2.5",
+          "alphaTexTitle": "D Major Chord",
+          "alphaTexCaption": "D-F#-A: Root, major 3rd, perfect 5th",
+          "bullets": [
+            "Major 3rd: D \u2192 F# (major character)",
+            "Perfect 5th: D \u2192 A (structural support)",
+            "Compact voicing: Three-finger triangle"
+          ],
+          "colorBg": "bg-gradient-to-br from-sky-50 to-sky-100",
+          "colorBorder": "border border-sky-200",
+          "colorTitle": "text-sky-800",
+          "colorText": "text-sky-700",
+          "colorCaption": "text-sky-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Fretboard Navigation",
+        "subtitle": "Major 3rd Patterns",
+        "alphaTex": "3.5 2.4 | 3.4 0.5 | 3.6 2.5",
+        "alphaTexTitle": "Major 3rd intervals: 4 semitones apart",
+        "alphaTexCaption": "Major 3rd intervals: 4 semitones apart",
+        "bullets": [
+          "Same string: 4 frets apart",
+          "Cross strings: Various fingering options",
+          "Scale context: 1st to 3rd degree in major scales"
+        ],
+        "colorBg": "bg-gradient-to-br from-yellow-50 to-yellow-100",
+        "colorBorder": "border border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700",
+        "colorCaption": "text-yellow-600"
+      },
+      {
+        "title": "Musical Expression",
+        "subtitle": "Harmonic Character",
+        "alphaTex": "3.5 2.4 | 3.3 2.5",
+        "alphaTexTitle": "Major 3rds create bright, optimistic moods",
+        "alphaTexCaption": "Major 3rds create bright, optimistic moods",
+        "bullets": [
+          "Pop/Rock context: Foundation of major progressions",
+          "Major scales: Ionian, Lydian modes",
+          "Jazz applications: Major 7th, 6th chord extensions"
+        ],
+        "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+        "colorBorder": "border border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "colorCaption": "text-orange-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "Beethoven's \"Ode to Joy\"",
+        "description": "Opens with major 3rd movement (E to G# in E major)",
+        "detail": "Demonstrates the uplifting quality of major 3rds"
+      },
+      {
+        "title": "Bach's Major Preludes",
+        "description": "Abundant use of major 3rds in arpeggiated passages",
+        "detail": "Shows structural importance in Baroque harmony"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Let It Be\" - The Beatles",
+        "description": "Major chord progressions built on major 3rds",
+        "detail": "C-G-Am-F progression showcases major 3rd harmony"
+      },
+      {
+        "title": "\"Don't Stop Believin'\" - Journey",
+        "description": "Classic major chord progression with prominent 3rds",
+        "detail": "E-B-C#m-A progression relies on major 3rd relationships"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Sing major scales focusing on 1-3 relationship",
+        "Practice interval recognition (major vs minor 3rd)",
+        "Listen to major chord progressions",
+        "Use \"When the Saints Go Marching In\" (starts with major 3rd)",
+        "Compare with minor 3rd examples"
+      ],
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border border-yellow-200",
+      "colorTitle": "text-yellow-800",
+      "colorText": "text-yellow-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Play major 3rds across all string pairs",
+        "Practice major chord arpeggios",
+        "Work on major scale patterns emphasizing 3rds",
+        "Practice major chord progressions (I-IV-V-I)",
+        "Play major 3rd intervals in different positions"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Compose melodies using major 3rd leaps",
+        "Analyze major chord progressions in songs",
+        "Practice harmonizing melodies with major 3rds",
+        "Study major pentatonic scales",
+        "Work on major chord voicings"
+      ],
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border border-amber-200",
+      "colorTitle": "text-amber-800",
+      "colorText": "text-amber-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Chord Quality Determinant",
+        "description": "The major 3rd is what makes a chord \"major\" - it's the defining interval that creates the bright, stable character we associate with major harmony."
+      },
+      {
+        "title": "Tonal Center Establishment",
+        "description": "Major 3rds help establish and confirm key centers, especially in cadential progressions and tonic chord resolutions."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Just Intonation",
+        "description": "In pure tuning, the major 3rd has a frequency ratio of 5:4, which creates the sweetest possible consonance for this interval."
+      },
+      {
+        "title": "Equal Temperament",
+        "description": "Modern tuning slightly compresses the major 3rd, but it remains one of the most consonant and stable intervals in music."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Minor 3rd",
+      "description": "3 semitones - creates minor chord quality",
+      "detail": "Compare the emotional difference between major and minor 3rds",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - completes the major triad",
+      "detail": "Root + Major 3rd + Perfect 5th = Major chord",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Major 6th",
+      "description": "9 semitones - inversion of minor 3rd",
+      "detail": "Interval inversion relationship: Major 3rd inverts to Minor 6th",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the major 3rd, explore its companion intervals and learn how they work together in harmony.",
+    "links": [
+      {
+        "slug": "minor-3rd",
+        "title": "Minor 3rd",
+        "description": "Compare the melancholic sound of minor 3rds against the bright major 3rd quality.",
+        "actionText": "Explore the contrast",
+        "icon": "moon",
+        "colorBg": "bg-blue-100",
+        "colorBgHover": "group-hover:bg-blue-200",
+        "colorBorder": "hover:border-blue-300",
+        "colorText": "text-blue-600",
+        "colorTextHover": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Learn the stable foundation that completes major chords when combined with the major 3rd.",
+        "actionText": "Build stability",
+        "icon": "target",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      },
+      {
+        "slug": "major-6th",
+        "title": "Major 6th",
+        "description": "Discover how the major 3rd relates to its inversion and creates extended harmonies.",
+        "actionText": "Add extensions",
+        "icon": "sparkle",
+        "colorBg": "bg-purple-100",
+        "colorBgHover": "group-hover:bg-purple-200",
+        "colorBorder": "hover:border-purple-300",
+        "colorText": "text-purple-600",
+        "colorTextHover": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

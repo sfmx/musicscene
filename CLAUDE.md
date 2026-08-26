@@ -18,6 +18,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run lint` - Run ESLint
 - `npm run type-check` - Run TypeScript type checking
 
+### Content & Revenue
+- `npm run content:index` - Rebuild content index from all data files
+- `npm run content:validate` - Validate all content JSON against schemas
+- `npm run affiliate:audit` - Audit affiliate link coverage across gear and song pages
+
 ### Storybook
 - `npm run storybook` - Start Storybook development server at http://localhost:6006
 - `npm run build-storybook` - Build Storybook for production
@@ -91,6 +96,47 @@ The app follows a hierarchical lesson structure:
 - **Legacy Notation**: VexFlow/VexTab (being phased out)
 - **Testing**: Jest with Testing Library, Storybook for component development
 - **Deployment**: AWS (S3 + CloudFront) via GitHub Actions
+
+### Affiliate & Revenue System
+
+The site monetizes product mentions through Amazon Associates affiliate links. The system is designed to be fully automated — no manual link maintenance is required.
+
+**How it works:**
+
+1. Product names in gear pages and song equipment sections are wrapped with the `AffiliateLink` component
+2. The component calls `getAffiliateLinkWithFallback()` which tries two strategies:
+   - **Curated match**: Checks `src/data/affiliate-products.json` for an explicit pattern match (case-insensitive substring). These take priority.
+   - **Auto-fallback**: If no curated match, checks if the text contains a known brand from `src/lib/affiliateBrands.ts`. If so, generates an Amazon search URL (`amazon.com/s?k={product}&tag={tag}`).
+3. If neither matches, the text renders as plain text (no link).
+
+**Key files:**
+
+| File | Purpose |
+|------|---------|
+| `src/lib/affiliateBrands.ts` | ~80 known gear brand names (Fender, Shure, Boss, etc.) |
+| `src/lib/affiliateLinks.ts` | Core logic: `getAffiliateLinkWithFallback()`, `looksLikeProduct()`, `extractProductName()` |
+| `src/lib/revenueConfig.ts` | Amazon Associates tag from `NEXT_PUBLIC_AMAZON_TAG` env var (default: `musicscene202-22`) |
+| `src/data/affiliate-products.json` | ~150 curated product entries with optimized Amazon search URLs |
+| `src/components/Revenue/AffiliateLink.tsx` | Client component wrapping product names as affiliate links |
+| `src/components/Revenue/SmartAffiliateText.tsx` | Handles comma-separated product lists (splits and links each) |
+| `src/components/Revenue/AdSlot.tsx` | Ad network placeholder (disabled by default) |
+| `src/components/Revenue/NewsletterSignup.tsx` | Email capture component (needs endpoint configuration) |
+| `scripts/audit-affiliate-coverage.ts` | Reports which product mentions have links vs. gaps |
+
+**Where affiliate links appear:**
+- **Gear lesson pages** (`GearLessonDetailPageTemplate.tsx`): card titles, field labels, field values, list items, and table cells are all affiliate-aware
+- **Song analysis pages** (`SongAnalysisPageTemplate.tsx`): equipment section (recommended guitar/amp and alternatives)
+
+**Adding new brands or products:**
+- To add a brand: add its name to the `AFFILIATE_BRANDS` array in `src/lib/affiliateBrands.ts`. All mentions of that brand across the site will automatically become affiliate links.
+- To add a curated product link: add an entry to `src/data/affiliate-products.json`. Entries are ordered most-specific-first (e.g., "Gibson Les Paul Standard" before "Gibson Les Paul"). Use `{tag}` placeholder in URLs.
+- Run `npm run affiliate:audit` to see coverage gaps and suggested additions.
+
+**False-positive prevention:**
+- Short brand names (4 chars or fewer like "ART", "DOD") require word-boundary matching
+- Strings starting with verbs ("Start with...", "Try using...") are excluded
+- Strings containing "artist(s)" are excluded (avoids "Taylor" matching in "Taylor Swift")
+- Pure numbers, prices, and spec-like strings are excluded
 
 ### Development Workflow
 

@@ -1,0 +1,374 @@
+{
+  "songInfo": {
+    "title": "Louie Louie",
+    "artist": "The Kingsmen",
+    "album": "The Kingsmen in Person",
+    "released": "1963",
+    "genre": "Rock / Garage Rock",
+    "tempo": "120 BPM",
+    "duration": "2:42",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major",
+      "scalesUsed": [
+        {
+          "scale": "A major",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "The primary harmonic framework, though the simplicity of the song keeps the melody pentatonic"
+        },
+        {
+          "scale": "A major pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Vocal melody and guitar riff notes draw from this simpler scale"
+        }
+      ],
+      "modalCharacter": "Straightforward major tonality with a I-IV-v progression giving a slightly raw, garage quality",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "Em"
+        ],
+        "progression": "I - IV - v",
+        "description": "The iconic three-chord riff that loops throughout the entire song. The minor v chord (Em) gives it a slightly unexpected, raw quality compared to a standard I-IV-V."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff / Verse",
+          "progression": "A - D - Em - D",
+          "romanNumerals": "I - IV - v - IV",
+          "description": "The endlessly repeating riff pattern that forms both the verse and chorus. Each chord gets two beats in the pattern."
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "A - D - Em - D",
+          "romanNumerals": "I - IV - v - IV",
+          "description": "The same chord progression continues under the famously sloppy, energetic guitar solo."
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic chord providing the major-key home base",
+        "D (IV) - Subdominant chord creating the characteristic rising motion from A",
+        "Em (v) - Minor dominant adding a raw, garage rock edge to the progression"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "The Louie Louie Riff",
+      "description": "The most famous three-chord riff in rock history, a repeating A-D-Em-D pattern that can be played with open chords or power chords",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0 (open A major) or A5: X-0-2-2-X-X (power chord)",
+          "D: X-X-0-2-3-2 (open D major) or D5: X-5-7-7-X-X (power chord)",
+          "Em: 0-2-2-0-0-0 (open E minor) or E5: 0-2-2-X-X-X (power chord)",
+          "The rhythm follows a distinctive da-da-da, da-da pattern on each chord",
+          "The riff repeats identically for the entire song with no variation"
+        ],
+        "sequence": [
+          "Learn A, D, and Em open chord shapes",
+          "Practice the riff pattern: A (2 beats) - D (2 beats) - Em (2 beats) - D (2 beats)",
+          "Add the signature rhythm: strum on beat 1, skip beat 2, strum-strum on the 'and' of 2 and beat 3",
+          "Loop the riff continuously without stopping"
+        ],
+        "tips": [
+          "The rhythm is more important than clean chord voicings in this song",
+          "Listen to the original recording to learn the distinctive strum pattern",
+          "Power chord versions (A5, D5, E5) are even easier and sound authentic",
+          "Keep it loose and fun - this is not a song about precision"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "Em"
+        ],
+        "progression": "A - D - Em - D (repeating)"
+      }
+    },
+    {
+      "name": "Power Chord Version",
+      "description": "Playing the Louie Louie riff using power chords instead of open chords, which simplifies the left hand and adds a heavier, more aggressive tone",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "A5: 5-7-7-X-X-X (5th fret barre on low E string)",
+          "D5: X-5-7-7-X-X (5th fret on A string)",
+          "E5: 0-2-2-X-X-X (open power chord)",
+          "Power chords use only two or three strings, making transitions faster",
+          "The same rhythm pattern applies to the power chord version"
+        ],
+        "sequence": [
+          "Learn the A5 power chord shape at the 5th fret",
+          "Slide down to D5 on the A string at the 5th fret",
+          "Drop to the open E5 power chord",
+          "Practice transitioning between the three shapes with the song rhythm"
+        ],
+        "tips": [
+          "Mute unused strings with your fretting hand to avoid unwanted noise",
+          "Use palm muting on the bridge for a tighter, punchier sound",
+          "The power chord version is great for playing with distortion",
+          "This is the version most punk and garage bands use"
+        ],
+        "chords": [
+          "A5",
+          "D5",
+          "E5"
+        ],
+        "progression": "A5 - D5 - E5 - D5 (repeating)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:12",
+      "technique": "The Louie Louie Riff",
+      "key": "A Major",
+      "description": "The iconic riff kicks in immediately, establishing the groove that will drive the entire song",
+      "chords": [
+        "A",
+        "D",
+        "Em"
+      ],
+      "progression": "A - D - Em - D",
+      "notes": [
+        "The riff starts immediately with no count-in",
+        "Establish the groove from the very first strum",
+        "The same riff pattern will repeat for the entire song",
+        "Lock in with the rhythm section right away"
+      ],
+      "alphaTab": "5.6 7.6 8.6 10.6 | 5.5 7.5 8.5 10.5 | 5.4 7.4 8.4 10.4 | 5.3 7.3 5.2 8.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:12-0:54",
+      "technique": "The Louie Louie Riff",
+      "key": "A Major",
+      "description": "The verse uses the same repeating riff under the famously garbled, barely intelligible vocals",
+      "chords": [
+        "A",
+        "D",
+        "Em"
+      ],
+      "progression": "A - D - Em - D",
+      "notes": [
+        "Identical riff pattern continues through the verse",
+        "The guitar part does not change between sections",
+        "Focus on keeping the rhythm steady and the groove locked",
+        "The vocal melody rides on top of the unvarying riff"
+      ],
+      "alphaTab": "5.6 7.6 8.6 10.6 | 5.5 7.5 8.5 10.5 | 5.4 7.4 8.4 10.4 | 5.3 7.3 5.2 8.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "0:54-1:30",
+      "technique": "The Louie Louie Riff",
+      "key": "A Major",
+      "description": "The infamously loose, energetic guitar solo played over the same three-chord riff pattern",
+      "chords": [
+        "A",
+        "D",
+        "Em"
+      ],
+      "progression": "A - D - Em - D",
+      "notes": [
+        "For beginners, simply keep strumming the riff during the solo section",
+        "The original solo is famously imperfect - do not worry about precision",
+        "The chord progression remains identical under the solo",
+        "Advanced players can improvise using A major pentatonic over the riff"
+      ],
+      "alphaTab": "5.6 7.6 8.6 10.6 | 5.5 7.5 8.5 10.5 | 5.4 7.4 8.4 10.4 | 5.3 7.3 5.2 8.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Final Verse / Outro",
+      "timeStamp": "1:30-2:42",
+      "technique": "The Louie Louie Riff",
+      "key": "A Major",
+      "description": "Final verse repetitions and the outro, maintaining the same riff to the very end",
+      "chords": [
+        "A",
+        "D",
+        "Em"
+      ],
+      "progression": "A - D - Em - D",
+      "notes": [
+        "Same riff continues unbroken through the final verses",
+        "Energy builds slightly toward the ending",
+        "The song ends with a final A chord resolution",
+        "Maintain steady rhythm right to the last note"
+      ],
+      "alphaTab": "5.6 7.6 8.6 10.6 | 5.5 7.5 8.5 10.5 | 5.4 7.4 8.4 10.4 | 5.3 7.3 5.2 8.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Any electric guitar with single-coil pickups",
+      "alternatives": [
+        "Fender Stratocaster",
+        "Fender Telecaster",
+        "Any solid-body electric guitar",
+        "Acoustic guitar works fine for practice"
+      ],
+      "pickup": "Bridge or middle pickup for a bright, cutting tone"
+    },
+    "amp": {
+      "recommended": "Fender Bassman or similar tube amp cranked for natural overdrive",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC15",
+        "Any small tube combo amp",
+        "Solid-state practice amp with overdrive"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate overdrive)",
+        "treble": "6 (bright and present)",
+        "middle": "5 (balanced)",
+        "bass": "5 (full but controlled)",
+        "presence": "6 (cutting through the mix)"
+      }
+    },
+    "effects": {
+      "distortion": "Light overdrive from amp or mild overdrive pedal",
+      "delay": "None",
+      "reverb": "Light spring reverb",
+      "other": "No effects pedals needed. The lo-fi, raw tone is part of the charm."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three chords and the basic riff pattern",
+      "steps": [
+        "Learn open A, D, and Em chord shapes",
+        "Practice switching between all three chords smoothly",
+        "Learn the riff rhythm: A - D - Em - D with two beats per chord",
+        "Loop the riff continuously at a slow tempo"
+      ],
+      "timeEstimate": "3-5 days with daily practice"
+    },
+    "intermediate": {
+      "focus": "Play the full song at tempo with the authentic rhythm feel",
+      "steps": [
+        "Build up to 120 BPM with the riff pattern",
+        "Add the signature strum pattern for each chord",
+        "Play through the entire song structure without stopping",
+        "Practice with the original recording as a backing track"
+      ],
+      "timeEstimate": "1-2 weeks for confident performance"
+    },
+    "advanced": {
+      "focus": "Add power chords, sing along, and improvise over the riff",
+      "steps": [
+        "Learn the power chord version (A5-D5-E5) for heavier performances",
+        "Sing while strumming the riff pattern",
+        "Improvise a solo using A major pentatonic during the solo section",
+        "Perform with a band or backing track at full energy"
+      ],
+      "timeEstimate": "2-3 weeks for polished band performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Making it too complicated - this song is supposed to be dead simple",
+      "Losing the groove when switching to the Em chord",
+      "Playing too cleanly and precisely - embrace the loose, garage feel",
+      "Speeding up or slowing down during the repetitive riff"
+    ],
+    "practiceRoutine": [
+      "Warm up with A, D, Em chord switches for 2 minutes",
+      "Practice the riff pattern at 80 BPM for 3 minutes",
+      "Increase tempo to 100 BPM and play 3 full cycles",
+      "Play at full 120 BPM for several minutes without stopping",
+      "Run through the entire song with the recording"
+    ],
+    "focusAreas": [
+      "Steady tempo without rushing or dragging",
+      "Clean chord transitions within the riff",
+      "Consistent strumming rhythm pattern",
+      "Endurance for playing the same riff for the entire song"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM and play 8 cycles of the riff without stopping",
+      "Increase by 10 BPM increments up to 120 BPM",
+      "Practice at 120 BPM for 3 minutes straight for endurance",
+      "Try playing with the metronome on beats 2 and 4 for a natural feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Money (That's What I Want)",
+        "difficulty": "Beginner",
+        "similarity": "Another Kingsmen cover with raw garage energy and simple chord structure"
+      },
+      {
+        "title": "Jolly Green Giant",
+        "difficulty": "Beginner",
+        "similarity": "Novelty follow-up single with the same garage rock style"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Gloria",
+        "artist": "Them",
+        "difficulty": "Beginner",
+        "similarity": "Another essential 3-chord garage rock anthem with the same raw energy"
+      },
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "difficulty": "Beginner",
+        "similarity": "Iconic 3-chord rock song with an equally simple and catchy riff"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "difficulty": "Beginner",
+        "similarity": "Another easy 3-chord classic to add to your beginner repertoire"
+      },
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "difficulty": "Beginner",
+        "similarity": "Progress to faster power chord songs with punk rock energy"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "rock",
+      "beginner",
+      "3-chord-song",
+      "garage-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}

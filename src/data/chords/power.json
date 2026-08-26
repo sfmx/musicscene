@@ -1,0 +1,326 @@
+{
+  "slug": "power",
+  "chordInfo": {
+    "name": "Power Chords",
+    "pageTitle": "Power Chord Theory",
+    "subtitle": "Master the driving force behind rock, punk, metal, and grunge with power chords - the raw, aggressive two-note shapes that define electric guitar.",
+    "colorScheme": "red",
+    "tags": ["Rock Essential", "Two-Note", "Distortion-Friendly", "Genre-Defining"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Power Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Two-note chords containing only a root and perfect 5th" },
+      { "label": "Formula", "value": "Root + Perfect 5th (often doubled with octave)" },
+      { "label": "Interval Pattern", "value": "7 semitones from root to 5th" },
+      { "label": "Sound Quality", "value": "Neutral, powerful, aggressive with distortion" },
+      { "label": "Function", "value": "Neither major nor minor - ambiguous tonality" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Rock & Metal", "value": "Driving riffs, palm-muted chugging, heavy rhythm" },
+      { "label": "Punk", "value": "Fast chord changes, raw energy, three-chord songs" },
+      { "label": "Grunge", "value": "Dirty tones, drop tunings, angular riffs" },
+      { "label": "Pop-Rock", "value": "Chorus power, dynamic contrast with clean verses" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Power Chord Construction",
+    "boxes": [
+      {
+        "title": "E5 Power Chord Example",
+        "items": [
+          "Root: E (1st degree)",
+          "Perfect 5th: B (5th degree)",
+          "Octave: E (optional doubling)",
+          "Semitones: E to B = 7 semitones",
+          "Result: Neutral, powerful dyad"
+        ]
+      },
+      {
+        "title": "Why No Third?",
+        "items": [
+          "No major 3rd: Not bright or happy",
+          "No minor 3rd: Not dark or sad",
+          "Ambiguous quality: Works over anything",
+          "Distortion-friendly: Fewer overtone clashes",
+          "Versatile: Fits major and minor keys"
+        ]
+      },
+      {
+        "title": "Moveable Shape Advantage",
+        "items": [
+          "Two shapes: 6th-string and 5th-string root",
+          "Same fingering everywhere on the neck",
+          "No open strings needed after learning shapes",
+          "Easy transposition: slide up or down frets",
+          "Full neck coverage with just two forms"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Open Power Chords",
+      "tipTitle": "Start Here",
+      "tipDescription": "These open-position power chords are the easiest to play and appear in countless rock songs. Focus on clean two- or three-string voicings.",
+      "voicings": [
+        { "name": "E5", "chord": "E5", "notes": "E-B", "fingering": "Open 6th + 2nd fret 5th string", "use": "Rock anthems, metal riffs, drop D staple" },
+        { "name": "A5", "chord": "A5", "notes": "A-E", "fingering": "Open 5th + 2nd fret 4th string", "use": "Punk progressions, blues-rock riffs" },
+        { "name": "B5", "chord": "B5", "notes": "B-F#", "fingering": "2nd fret 5th + 4th fret 4th string", "use": "Transitions, classic rock bridges" },
+        { "name": "D5", "chord": "D5", "notes": "D-A", "fingering": "Open 4th + 2nd fret 3rd string", "use": "Folk-rock, acoustic power chord parts" },
+        { "name": "G5", "chord": "G5", "notes": "G-D", "fingering": "3rd fret 6th + 5th fret 5th string", "use": "Pop-punk, pop-rock progressions" },
+        { "name": "C5", "chord": "C5", "notes": "C-G", "fingering": "3rd fret 5th + 5th fret 4th string", "use": "Grunge, alternative rock rhythm parts" },
+        { "name": "F5", "chord": "F5", "notes": "F-C", "fingering": "1st fret 6th + 3rd fret 5th string", "use": "Punk rock, metal breakdowns" }
+      ]
+    },
+    {
+      "title": "Moveable Power Chord Forms",
+      "tipTitle": "The Key to Rock Guitar",
+      "tipDescription": "Once you learn the 6th-string root and 5th-string root shapes, you can play any power chord anywhere on the neck. These two forms are the foundation of rock rhythm guitar.",
+      "voicings": [
+        { "name": "6th-String Root Form", "chord": "F5", "notes": "Root on 6th string + 5th on 5th string", "fingering": "Index on root, ring finger two frets up on next string", "use": "E5 through Eb5 - covers all notes on the 6th string" },
+        { "name": "5th-String Root Form", "chord": "B5", "notes": "Root on 5th string + 5th on 4th string", "fingering": "Index on root, ring finger two frets up on next string", "use": "A5 through Ab5 - covers all notes on the 5th string" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Power Chord Progressions",
+    "items": [
+      {
+        "title": "Classic Rock I-IV-V",
+        "titleColor": "text-red-700",
+        "chords": [
+          { "chord": "E5", "label": "E5", "numeral": "I" },
+          { "chord": "A5", "label": "A5", "numeral": "IV" },
+          { "chord": "B5", "label": "B5", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "D D - D DU",
+          "description": "Driving rock rhythm with palm muting",
+          "tempo": "120-140 BPM",
+          "feel": "Powerful, driving, anthemic",
+          "genre": "Classic Rock, Hard Rock"
+        },
+        "alphaTex": "0.6.2 0.6.2 r.4 0.6.2 0.6.4 | 0.5.2 0.5.2 r.4 0.5.2 0.5.4 | 2.5.2 2.5.2 r.4 2.5.2 2.5.4 | 2.5.1 0.6.1",
+        "alphaTexTitle": "Rock I-IV-V Progression (E5-A5-B5)",
+        "description": "The backbone of rock and roll - this three-chord power chord progression drives songs like \"Johnny B. Goode\" and \"Back in Black\""
+      },
+      {
+        "title": "Punk Progression I-V-vi-IV",
+        "titleColor": "text-green-700",
+        "chords": [
+          { "chord": "G5", "label": "G5", "numeral": "I" },
+          { "chord": "D5", "label": "D5", "numeral": "V" },
+          { "chord": "E5", "label": "E5", "numeral": "vi" },
+          { "chord": "C5", "label": "C5", "numeral": "IV" }
+        ],
+        "strumming": {
+          "pattern": "D D D D D D D D",
+          "description": "Fast all-downstrokes punk rhythm",
+          "tempo": "160-200 BPM",
+          "feel": "Aggressive, relentless, energetic",
+          "genre": "Punk, Pop-Punk, Skate Punk"
+        },
+        "alphaTex": "3.6.2 3.6.2 3.6.2 3.6.2 | 5.5.2 5.5.2 5.5.2 5.5.2 | 0.6.2 0.6.2 0.6.2 0.6.2 | 3.5.2 3.5.2 3.5.2 3.5.2",
+        "alphaTexTitle": "Punk Power Chord Progression (G5-D5-E5-C5)",
+        "description": "Fast downstrokes with distortion create the driving intensity of punk rock - used in countless Ramones, Green Day, and Blink-182 songs"
+      },
+      {
+        "title": "Metal Riff i-bVI-bVII-i",
+        "titleColor": "text-purple-700",
+        "chords": [
+          { "chord": "E5", "label": "E5", "numeral": "i" },
+          { "chord": "C5", "label": "C5", "numeral": "bVI" },
+          { "chord": "D5", "label": "D5", "numeral": "bVII" },
+          { "chord": "E5", "label": "E5", "numeral": "i" }
+        ],
+        "strumming": {
+          "pattern": "D - D - D D - D",
+          "description": "Syncopated heavy metal rhythm",
+          "tempo": "100-130 BPM",
+          "feel": "Heavy, dark, menacing",
+          "genre": "Metal, Hard Rock, Thrash"
+        },
+        "alphaTex": "0.6.2 r.4 0.6.2 r.4 | 3.5.2 r.4 5.5.2 r.4 | 0.6.2 0.6.4 r.4 0.6.2 | r.4 0.6.1",
+        "alphaTexTitle": "Metal Power Chord Riff (E5-C5-D5-E5)",
+        "description": "The minor-key power chord progression that defines heavy metal - heard in Iron Maiden, Black Sabbath, and Metallica riffs"
+      },
+      {
+        "title": "Grunge Verse-Chorus i-iv-i-V",
+        "titleColor": "text-orange-700",
+        "chords": [
+          { "chord": "A5", "label": "A5", "numeral": "i" },
+          { "chord": "D5", "label": "D5", "numeral": "iv" },
+          { "chord": "A5", "label": "A5", "numeral": "i" },
+          { "chord": "E5", "label": "E5", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "D - D D - DU -",
+          "description": "Loose, gritty grunge feel",
+          "tempo": "90-110 BPM",
+          "feel": "Raw, angsty, dynamic",
+          "genre": "Grunge, Alternative Rock, Indie"
+        },
+        "alphaTex": "0.5.2 r.4 0.5.2 0.5.4 | 0.4.2 r.4 0.5.2 0.5.4 | 0.5.2 r.4 0.5.2 0.5.4 | 0.6.2 r.4 0.6.2 0.6.4",
+        "alphaTexTitle": "Grunge Progression (A5-D5-A5-E5)",
+        "description": "The raw, unpolished power chord movement that defined 90s grunge - characteristic of Nirvana, Pearl Jam, and Soundgarden"
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Keep your fretting hand fingers arched to mute unused strings",
+        "Practice palm muting for tight, percussive rhythm",
+        "Use all downstrokes for punk-style intensity",
+        "Slide between chord positions for smooth transitions"
+      ],
+      "applicationItems": [
+        "The universal language of rock guitar since the 1950s",
+        "Works with any level of distortion or gain",
+        "Perfect for writing riffs and song ideas quickly",
+        "Essential for playing along with almost any rock song"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Power Chords",
+    "categories": [
+      {
+        "title": "Rock & Metal Anthems",
+        "colorBg": "bg-red-100",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "songs": [
+          "\"Smoke on the Water\" - Deep Purple (G5-Bb5-C5)",
+          "\"Iron Man\" - Black Sabbath (B5-D5-E5-G5)",
+          "\"Back in Black\" - AC/DC (E5-D5-A5)",
+          "\"Enter Sandman\" - Metallica (E5-G5-F#5)",
+          "\"You Really Got Me\" - The Kinks (G5-F5-G5)"
+        ]
+      },
+      {
+        "title": "Punk & Alternative",
+        "colorBg": "bg-orange-100",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "songs": [
+          "\"Blitzkrieg Bop\" - Ramones (A5-D5-E5)",
+          "\"Smells Like Teen Spirit\" - Nirvana (F5-Bb5-Ab5-Db5)",
+          "\"American Idiot\" - Green Day (Ab5-Db5-Eb5-Ab5)",
+          "\"Seven Nation Army\" - The White Stripes (E5-G5-A5)",
+          "\"Brain Stew\" - Green Day (Ab5-G5-F#5-F5-E5)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Power Chord Technique",
+    "tipDescription": "Focus on clean string muting, precise fretting, and rhythmic accuracy. Power chords sound sloppy if extra strings ring out.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Chromatic Power Chord Walk",
+        "content": "Pattern: F5 - F#5 - G5 - Ab5 - A5 (1st fret to 5th fret, 6th-string root)",
+        "detail": "Play each chord for four beats, moving up one fret at a time on the 6th string root form. Then descend back down.",
+        "tip": "Keep your index and ring fingers locked in the same shape - only your arm position should change as you slide up the neck"
+      },
+      {
+        "title": "Exercise 2: String-Switching Drill",
+        "content": "Pattern: E5 - A5 - D5 - A5 - E5 (alternating 6th and 5th string roots)",
+        "detail": "Practice switching between 6th-string root chords and 5th-string root chords while maintaining a steady eighth-note rhythm.",
+        "tip": "Mute unused strings with the underside of your index finger to prevent unwanted noise when switching string sets"
+      },
+      {
+        "title": "Exercise 3: Palm-Muted Riff Building",
+        "content": "Pattern: E5 (muted) - E5 (open) - G5 - A5 - E5 with palm muting",
+        "detail": "Alternate between palm-muted and open power chords to create dynamics. Rest the edge of your picking hand on the bridge.",
+        "tip": "Adjust palm mute pressure for different levels of tightness - light pressure for a chunky sound, firm pressure for a muted percussive tick"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Power Chord Concepts",
+    "concepts": [
+      {
+        "title": "Drop Tunings & Extended Voicings",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "items": [
+          "Drop D: Tune 6th string to D for one-finger power chords",
+          "Drop C / Drop B: Heavier tunings for modern metal tones",
+          "Octave doubling: Add the octave with your pinky for a fuller sound",
+          "Root-5th-octave-5th: Four-string voicing for massive walls of sound",
+          "Inverted power chords: Put the 5th in the bass for a different character"
+        ]
+      },
+      {
+        "title": "Rhythmic Techniques & Textures",
+        "colorBg": "bg-gray-50",
+        "colorBorder": "border-gray-200",
+        "colorTitle": "text-gray-800",
+        "colorText": "text-gray-700",
+        "items": [
+          "Palm muting: Control sustain and create chugging rhythms",
+          "Gallop picking: Down-down-up pattern for driving metal riffs",
+          "Syncopation: Accent off-beats for funk-rock and groove metal feels",
+          "Staccato hits: Short, punchy chords with quick muting for tight passages",
+          "Harmonics layering: Natural harmonics over power chord shapes for shimmering effects"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Power chords are the gateway to rock guitar. Expand your harmonic vocabulary by exploring major and minor triads, then add color with seventh chords.",
+    "links": [
+      {
+        "slug": "major",
+        "title": "Major Chords",
+        "description": "Add the major 3rd to hear the bright, full sound that power chords leave out.",
+        "linkText": "Learn major chords",
+        "icon": "M",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "minor",
+        "title": "Minor Chords",
+        "description": "Discover the dark, emotional side by adding a minor 3rd to your root and 5th.",
+        "linkText": "Explore minor chords",
+        "icon": "m",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "seventh",
+        "title": "Seventh Chords",
+        "description": "Extend your power chords with 7ths for blues, jazz, and sophisticated rock tones.",
+        "linkText": "Add seventh chords",
+        "icon": "7",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Power Chords",
+    "items": [
+      { "category": "Pedal", "product": "Boss DS-1 Distortion", "reason": "Classic distortion pedal that makes power chords sound huge and aggressive" },
+      { "category": "Strings", "product": "Ernie Ball Power Slinky", "reason": "Heavier gauge strings (11-48) give power chords extra thickness and sustain" },
+      { "category": "Amp", "product": "Marshall DSL40CR", "reason": "Iconic British crunch tone that defined the power chord sound in rock and metal" }
+    ]
+  }
+}

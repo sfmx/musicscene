@@ -1,0 +1,443 @@
+{
+  "songInfo": {
+    "title": "Brown Eyed Girl",
+    "artist": "Van Morrison",
+    "album": "Blowin' Your Mind!",
+    "released": "1967",
+    "genre": "Rock",
+    "tempo": "150 BPM",
+    "duration": "3:03",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Harmonic foundation for the chord progression and vocal melody"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "The iconic intro riff and lead fills are built from this scale"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with a bright, upbeat feel",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "C",
+          "G",
+          "D"
+        ],
+        "progression": "I - IV - I - V",
+        "description": "A timeless I-IV-I-V progression that drives the verse with bright, upbeat energy. This is one of the most common and memorable progressions in pop-rock music, with the vi chord adding depth in the chorus."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "G - C - G - D",
+          "romanNumerals": "I - IV - I - V",
+          "description": "The main verse uses this four-chord cycle with two bars per chord, creating a rolling, feel-good momentum"
+        },
+        {
+          "section": "Chorus (Sha La La)",
+          "progression": "G - C - G - D",
+          "romanNumerals": "I - IV - I - V",
+          "description": "The 'sha la la la la' chorus uses the same progression but with more energetic, sing-along delivery"
+        },
+        {
+          "section": "Bridge",
+          "progression": "Em - C - G - D",
+          "romanNumerals": "vi - IV - I - V",
+          "description": "The bridge introduces Em for a brief reflective moment before returning to the upbeat main progression"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Bright, stable tonic that establishes the cheerful character",
+        "C (IV) - Subdominant providing gentle harmonic motion away from home",
+        "D (V) - Dominant chord that creates the pull back to G, driving the progression forward",
+        "Em (vi) - Relative minor adding a brief wistful quality in the bridge"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Open Chord Strumming",
+      "description": "Bright, energetic strumming of open G, C, D, and Em chords with a driving eighth-note rhythm that carries the entire song",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G: 320003 (or 320033 with pinky) - standard open G major",
+          "C: X32010 - standard open C major",
+          "D: XX0232 - standard open D major",
+          "Em: 022000 - standard open E minor",
+          "Use a bright, consistent down-up strumming pattern",
+          "Emphasize downbeats to match the song's energetic feel"
+        ],
+        "sequence": [
+          "Strum G major for two bars",
+          "Transition to C major for two bars",
+          "Return to G major for two bars",
+          "Move to D major for two bars",
+          "Repeat the pattern for each verse and chorus"
+        ],
+        "tips": [
+          "Practice chord changes G-to-C and G-to-D separately before combining",
+          "Keep the strumming wrist relaxed at 150 BPM to avoid fatigue",
+          "Anchor the ring finger on the 3rd fret of the B string for G-to-C transitions",
+          "Strum all six strings on G and Em, avoid the lowest string on C and D"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D",
+          "Em"
+        ],
+        "progression": "G - C - G - D (verse) / Em - C - G - D (bridge)"
+      }
+    },
+    {
+      "name": "Intro Riff (Optional)",
+      "description": "The iconic guitar riff that opens the song, one of the most recognizable intros in rock history, based on the G major pentatonic scale",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based on G major pentatonic scale on the D, G, and B strings around frets 0-4",
+          "Uses a bouncy, rhythmic pattern that mirrors the vocal melody",
+          "The riff follows the chord tones of G-C-G-D",
+          "Can be simplified by just playing the chord changes instead",
+          "Uses alternate picking for the quick single-note passages"
+        ],
+        "sequence": [
+          "Start on the G note sliding into position",
+          "Walk up through G major scale tones over the G chord",
+          "Transition to C chord tones for the IV chord section",
+          "Return to G chord tones before walking to D chord tones",
+          "End the riff pattern on the D chord leading back to G"
+        ],
+        "tips": [
+          "Learn the strumming version first before tackling the riff",
+          "The riff uses alternate picking for the quick passages",
+          "Keep the notes crisp and clean with good fretting hand pressure",
+          "Practice the riff slowly and gradually increase to 150 BPM"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "G - C - G - D (single-note riff over chord changes)"
+      }
+    },
+    {
+      "name": "Quick Chord Transitions at Speed",
+      "description": "Rapidly switching between G, C, D, and Em chords at 150 BPM, building the speed and accuracy needed for uptempo rock strumming",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "G to C: Middle and ring fingers shift from 5th and 6th strings to 5th and 4th strings",
+          "C to G: Reverse the above movement, adding pinky on 1st string",
+          "G to D: Lift off G shape and reform D shape on strings 1-3",
+          "D to Em: Simple transition - place two fingers onto 5th and 4th strings",
+          "The fast tempo demands efficient, minimal finger movement"
+        ],
+        "sequence": [
+          "Practice G to C transition 20 times slowly",
+          "Practice G to D transition 20 times slowly",
+          "Practice C to D transition 20 times slowly",
+          "Practice D to Em transition 20 times slowly",
+          "Chain them together: G-C-G-D then Em-C-G-D"
+        ],
+        "tips": [
+          "Keep fingers close to the fretboard during transitions",
+          "Use common anchor fingers where possible between shapes",
+          "Start at half tempo (75 BPM) and gradually increase speed",
+          "The faster tempo will come naturally with muscle memory"
+        ],
+        "chords": [],
+        "progression": "G - C - G - D - Em - C - G - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:12",
+      "technique": "Intro Riff (Optional)",
+      "key": "G Major",
+      "description": "The famous opening riff that sets the upbeat tone - one of the most instantly recognizable guitar intros in rock history",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D",
+      "notes": [
+        "Iconic riff built on G major pentatonic",
+        "Establishes the bright, nostalgic mood",
+        "Beginners can substitute with strumming the chord progression",
+        "Riff repeats twice before the verse begins"
+      ],
+      "alphaTab": "3.6 5.6 6.6 8.6 | 3.5 5.5 6.5 8.5 | 3.4 5.4 6.4 8.4 | 3.3 5.3 3.2 6.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:12-0:48",
+      "technique": "Open Chord Strumming",
+      "key": "G Major",
+      "description": "Upbeat verse with steady strumming over the G-C-G-D progression supporting the nostalgic storytelling lyrics",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D",
+      "notes": [
+        "Two bars per chord at 150 BPM",
+        "Keep strumming bright and consistent",
+        "Leave space for the vocal melody to breathe",
+        "The verse progression repeats for each lyrical phrase"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus (Sha La La)",
+      "timeStamp": "0:48-1:12",
+      "technique": "Open Chord Strumming",
+      "key": "G Major",
+      "description": "The iconic the signature singalong section - one of rock's greatest audience participation moments",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D",
+      "notes": [
+        "Same chord progression as the verse",
+        "Strumming gets slightly more energetic",
+        "the signature vocal melody is the hook everyone knows",
+        "Great section for audience participation at gigs"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "1:40-2:00",
+      "technique": "Open Chord Strumming",
+      "key": "G Major",
+      "description": "A brief reflective bridge introducing the Em chord for emotional contrast before returning to the verse energy",
+      "chords": [
+        "Em",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "Em - C - G - D",
+      "notes": [
+        "Em introduces a wistful, reflective quality",
+        "Provides dynamic contrast to the bright verses",
+        "Transitions back into the upbeat chorus",
+        "Only appears once in the song structure"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:30-3:03",
+      "technique": "Open Chord Strumming",
+      "key": "G Major",
+      "description": "Final chorus repetitions with the signature refrain building energy to the song's joyful conclusion",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D (repeat to end)",
+      "notes": [
+        "Repeated chorus progression building to finale",
+        "Full energy strumming with sing-along vocals",
+        "Maintain steady tempo through the final repetitions",
+        "Classic fade-out ending in the original recording"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Any steel-string acoustic guitar",
+      "alternatives": [
+        "Fender Stratocaster (for the recorded electric tone)",
+        "Any dreadnought acoustic for campfire version",
+        "Gibson SG or Les Paul",
+        "Nylon string classical guitar works in a pinch"
+      ],
+      "pickup": "Acoustic preferred; if electric, use middle or bridge pickup for brightness"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or any clean-tone amp",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Deluxe Reverb",
+        "Vox AC15",
+        "Any amp set to a clean channel"
+      ],
+      "settings": {
+        "gain": "2-3 (clean with minimal breakup)",
+        "treble": "7 (bright and jangly)",
+        "middle": "5 (balanced)",
+        "bass": "4-5 (tight low end to keep strumming defined)",
+        "presence": "6 (airy sparkle)"
+      }
+    },
+    "effects": {
+      "distortion": "None - clean tone throughout",
+      "delay": "None needed",
+      "reverb": "Light spring reverb for classic 1960s vibe",
+      "other": "No capo needed. No effects required - plug in and play."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the four open chord shapes and basic strumming at a moderate tempo",
+      "steps": [
+        "Learn open G, C, and D chord shapes individually until clean",
+        "Practice switching between G and C smoothly",
+        "Practice switching between G and D smoothly",
+        "Combine into the full G-C-G-D progression at slow tempo (75 BPM)"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Play at full tempo with the Em bridge section and confident strumming",
+      "steps": [
+        "Learn the Em chord and practice the bridge section (Em-C-G-D)",
+        "Gradually build speed toward 150 BPM with a metronome",
+        "Play through the full song structure without stopping",
+        "Learn the simplified version of the intro riff"
+      ],
+      "timeEstimate": "2-3 weeks for confident full performance"
+    },
+    "advanced": {
+      "focus": "Master the full intro riff, add vocals, and perform the complete arrangement",
+      "steps": [
+        "Learn the full intro riff at tempo with clean alternate picking",
+        "Add dynamics between verse and chorus sections",
+        "Practice singing while strumming the full song",
+        "Play along with the original Van Morrison recording"
+      ],
+      "timeEstimate": "3-5 weeks for polished performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Slowing down during chord transitions at the fast 150 BPM tempo",
+      "Strumming too hard - keep it bright and bouncy, not aggressive",
+      "Forgetting the Em in the bridge and playing G instead",
+      "Trying to learn the intro riff before mastering the chords - chords first"
+    ],
+    "practiceRoutine": [
+      "Warm up with G-C-D chord changes for 5 minutes",
+      "Practice the full verse progression (G-C-G-D) with a metronome at 120 BPM",
+      "Increase tempo gradually toward 150 BPM",
+      "Add the bridge section (Em-C-G-D) and practice transitions",
+      "Run through the full song structure without stopping"
+    ],
+    "focusAreas": [
+      "Fast and clean chord transitions at 150 BPM",
+      "Consistent strumming rhythm without slowing at chord changes",
+      "Bright, jangly tone quality",
+      "Song form awareness - knowing where each section starts"
+    ],
+    "metronomeWork": [
+      "Start chord changes at 100 BPM",
+      "Increase by 10 BPM increments until reaching 150 BPM",
+      "Practice strumming pattern alone on muted strings at full tempo",
+      "Play through full song at 150 BPM with metronome for timing accuracy"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Gloria",
+        "difficulty": "Beginner",
+        "similarity": "Another Van Morrison classic with simple, repetitive chord progressions"
+      },
+      {
+        "title": "Moondance",
+        "difficulty": "Intermediate",
+        "similarity": "More complex jazz-influenced chords but similar singable Van Morrison style"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Beginner",
+        "similarity": "Classic open-chord strumming song with a similar feel-good vibe"
+      },
+      {
+        "title": "Twist and Shout",
+        "artist": "The Beatles",
+        "difficulty": "Beginner",
+        "similarity": "Energetic three-chord rocker with driving strumming at a fast tempo"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "difficulty": "Beginner",
+        "similarity": "Start with this slower strumming song to build chord change confidence"
+      },
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to this classic for shuffle rhythm and basic lead playing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "beginner",
+      "strumming",
+      "van-morrison",
+      "campfire-song"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

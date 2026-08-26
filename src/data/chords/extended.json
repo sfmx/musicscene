@@ -1,0 +1,182 @@
+{
+  "slug": "extended",
+  "chordInfo": {
+    "name": "Extended Chords",
+    "pageTitle": "Extended Chord Theory",
+    "subtitle": "Explore the rich, colorful world of extended chords - 9ths, 11ths, and 13ths that add depth and sophistication to your harmony.",
+    "colorScheme": "pink",
+    "tags": ["Rich Harmony", "Jazz Colors", "Advanced Voicings", "Colorful Extensions"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Extended Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Chords that extend beyond the 7th to include 9th, 11th, and 13th" },
+      { "label": "9th Chord", "value": "Root + 3rd + 5th + 7th + 9th" },
+      { "label": "11th Chord", "value": "Root + 3rd + 5th + 7th + 9th + 11th" },
+      { "label": "13th Chord", "value": "Root + 3rd + 5th + 7th + 9th + 11th + 13th" },
+      { "label": "Sound Quality", "value": "Lush, complex, colorful" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Jazz", "value": "Standard jazz voicings and comping" },
+      { "label": "Neo-Soul", "value": "Rich, modern harmony" },
+      { "label": "R&B", "value": "Smooth, sophisticated grooves" },
+      { "label": "Funk", "value": "9th chords for rhythmic comping" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Extended Chord Construction",
+    "boxes": [
+      {
+        "title": "C9 (Dominant 9th) Example",
+        "items": [
+          "Root: C (1st degree)",
+          "Major 3rd: E (3rd degree)",
+          "Perfect 5th: G (5th degree)",
+          "Minor 7th: Bb (7th degree)",
+          "Major 9th: D (9th degree)"
+        ]
+      },
+      {
+        "title": "Interval Stacking",
+        "items": [
+          "9th = Octave + 2nd (compound interval)",
+          "11th = Octave + 4th (compound interval)",
+          "13th = Octave + 6th (compound interval)",
+          "Guitar: Usually omit some notes",
+          "Voice leading: Choose most important tones"
+        ]
+      },
+      {
+        "title": "Practical Voicings",
+        "items": [
+          "Guitar has 6 strings: Omit notes as needed",
+          "Common omissions: 5th, root (if bass plays it)",
+          "Shell voicings: 3rd, 7th, plus extension",
+          "Drop 2 voicings: Practical guitar shapes",
+          "Rootless voicings: Assume bass covers root"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Extended Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are practical extended chord voicings that work well on guitar.",
+      "voicings": [
+        { "name": "E9", "chord": "E9", "notes": "E-G#-B-D-F#", "fingering": "Classic funk shape", "use": "Funk, blues, R&B grooves" },
+        { "name": "Cmaj9", "chord": "Cmaj9", "notes": "C-E-G-B-D", "fingering": "Open position", "use": "Jazz ballads, neo-soul" },
+        { "name": "Am11", "chord": "Am11", "notes": "A-C-E-G-D", "fingering": "Open strings help", "use": "Modal jazz, ambient" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Extended Chord Progressions",
+    "items": [
+      {
+        "title": "Funk 9th Chord Groove",
+        "titleColor": "text-pink-700",
+        "chords": [
+          { "chord": "E9", "label": "E9", "numeral": "I9" },
+          { "chord": "A9", "label": "A9", "numeral": "IV9" },
+          { "chord": "E9", "label": "E9", "numeral": "I9" },
+          { "chord": "B9", "label": "B9", "numeral": "V9" }
+        ],
+        "strumming": {
+          "pattern": "D - UDU - D - UDU",
+          "description": "Funky 16th-note rhythm",
+          "tempo": "90-120 BPM",
+          "feel": "Funky, groovy",
+          "genre": "Funk, R&B, Blues"
+        },
+        "alphaTex": "(0.6 2.5 0.4 1.3 2.2 2.1).1 | (0.5 2.4 0.3 1.2 2.1).1 | (0.6 2.5 0.4 1.3 2.2 2.1).1 | (2.6 1.5 2.4 1.3 2.2 2.1).1",
+        "alphaTexTitle": "Funk 9th Groove (E9-A9-E9-B9)",
+        "description": "Classic funk progression using dominant 9th chords - the foundation of funk guitar heard in James Brown and Prince songs."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice muting unused strings for clean voicings",
+        "Focus on the most important chord tones (3, 7, extension)",
+        "Use rhythmic strumming to bring extended chords to life",
+        "Build from 7th chords by adding one extension at a time"
+      ],
+      "applicationItems": [
+        "Essential for jazz, funk, and R&B styles",
+        "Adds richness and color to any progression",
+        "Creates sophisticated, professional sound",
+        "Foundation for modern harmony and arranging"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Extended Chords",
+    "categories": [
+      {
+        "title": "Funk, Jazz & R&B Classics",
+        "colorBg": "bg-pink-100",
+        "colorBorder": "border-pink-200",
+        "colorTitle": "text-pink-800",
+        "colorText": "text-pink-700",
+        "songs": [
+          "\"Get Up (I Feel Like Being a) Sex Machine\" - James Brown (E9)",
+          "\"Kiss\" - Prince (A9 funk groove)",
+          "\"Maiden Voyage\" - Herbie Hancock (Dm11, Cm11)",
+          "\"Electric Feel\" - MGMT (9th chord voicings)",
+          "\"Isn't She Lovely\" - Stevie Wonder (extended chord harmony)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Extended Chord Skills",
+    "tipDescription": "These exercises will help you master extended chords and their applications.",
+    "exercises": [
+      {
+        "title": "Exercise 1: 9th Chord Funk Groove",
+        "content": "Pattern: E9 strumming with muted strings",
+        "detail": "Practice clean 9th chord voicings with funky rhythm",
+        "tip": "Mute the strings you are not fretting for a tight, percussive sound"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Extended Chord Concepts",
+    "concepts": [
+      {
+        "title": "Extended Chord Alterations",
+        "colorBg": "bg-pink-50",
+        "colorBorder": "border-pink-200",
+        "colorTitle": "text-pink-800",
+        "colorText": "text-pink-700",
+        "items": [
+          "Altered extensions: #9, b9, #11, b13",
+          "The 'Hendrix chord': 7#9 (E7#9)",
+          "Lydian dominant: 7#11 for jazz",
+          "Altered scale: All altered tensions",
+          "Upper structure triads: Triads over bass notes"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand extended chords, explore how they connect to other chord types and advanced harmonic concepts.",
+    "links": [
+      {
+        "slug": "seventh",
+        "title": "Seventh Chords",
+        "description": "Review the foundation that extended chords build upon.",
+        "linkText": "Review seventh chords",
+        "icon": "7",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  }
+}

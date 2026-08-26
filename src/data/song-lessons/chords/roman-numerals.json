@@ -1,0 +1,225 @@
+{
+  "slug": "roman-numerals",
+  "category": "chords",
+  "pageTitle": "Roman Numeral Analysis",
+  "subtitle": "Learn the universal language for understanding harmonic function and chord relationships",
+  "heroGradient": "from-blue-50 to-indigo-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "The Universal Language of Harmony",
+    "text": "Roman numeral analysis is like having X-ray vision for music. Instead of just seeing chord names, you'll understand harmonic function - why chords work together and how they create emotional movement. This system works across all keys and genres.",
+    "columns": [
+      { "title": "Key Independence", "text": "Learn patterns once, apply them in any key. I-V-vi-IV works in C major, G major, or any major key." },
+      { "title": "Functional Understanding", "text": "See how chords have jobs: I = home, V = tension, IV = departure. Understanding function predicts resolution." }
+    ]
+  },
+  "sections": [
+    {
+      "title": "The Roman Numeral System",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I - Major",
+          "description": "Example: C",
+          "fields": [
+            { "label": "Function", "value": "Tonic" },
+            { "label": "Stability", "value": "Very Stable" }
+          ]
+        },
+        {
+          "title": "ii - minor",
+          "description": "Example: Dm",
+          "fields": [
+            { "label": "Function", "value": "Subdominant" },
+            { "label": "Stability", "value": "Moderately Stable" }
+          ]
+        },
+        {
+          "title": "iii - minor",
+          "description": "Example: Em",
+          "fields": [
+            { "label": "Function", "value": "Tonic (weak)" },
+            { "label": "Stability", "value": "Unstable" }
+          ]
+        },
+        {
+          "title": "IV - Major",
+          "description": "Example: F",
+          "fields": [
+            { "label": "Function", "value": "Subdominant" },
+            { "label": "Stability", "value": "Stable" }
+          ]
+        },
+        {
+          "title": "V - Major",
+          "description": "Example: G",
+          "fields": [
+            { "label": "Function", "value": "Dominant" },
+            { "label": "Stability", "value": "Unstable (resolves to I)" }
+          ]
+        },
+        {
+          "title": "vi - minor",
+          "description": "Example: Am",
+          "fields": [
+            { "label": "Function", "value": "Tonic (relative)" },
+            { "label": "Stability", "value": "Moderately Stable" }
+          ]
+        },
+        {
+          "title": "vii\u00b0 - diminished",
+          "description": "Example: B\u00b0",
+          "fields": [
+            { "label": "Function", "value": "Dominant" },
+            { "label": "Stability", "value": "Very Unstable" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Notation Rules",
+      "bgColor": "yellow-50",
+      "borderColor": "yellow-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Case Rules",
+          "items": [
+            "Uppercase = Major chords: I, IV, V",
+            "Lowercase = minor chords: ii, iii, vi",
+            "\u00b0 = diminished chord: vii\u00b0"
+          ]
+        },
+        {
+          "title": "Extensions & Modifiers",
+          "items": [
+            "Extensions: V7, ii7, IM7",
+            "Inversions: V6 (first inversion), V64 (second inversion)",
+            "Secondary dominants: V/V (five of five)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Progressions in Roman Numerals",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I-V-vi-IV",
+          "description": "The \"pop progression\" - stable to tension to departure to return preparation",
+          "badge": { "text": "Universal Pattern", "color": "blue" },
+          "fields": [
+            { "label": "Numerals", "value": "I - V - vi - IV" },
+            { "label": "Example in C", "value": "C - G - Am - F" }
+          ]
+        },
+        {
+          "title": "vi-IV-I-V",
+          "description": "Emotional journey from introspection to resolution to tension",
+          "badge": { "text": "Universal Pattern", "color": "blue" },
+          "fields": [
+            { "label": "Numerals", "value": "vi - IV - I - V" },
+            { "label": "Example in C", "value": "Am - F - C - G" }
+          ]
+        },
+        {
+          "title": "I-vi-IV-V",
+          "description": "Classic 50s progression - smooth voice leading with strong functional movement",
+          "badge": { "text": "Universal Pattern", "color": "blue" },
+          "fields": [
+            { "label": "Numerals", "value": "I - vi - IV - V" },
+            { "label": "Example in C", "value": "C - Am - F - G" }
+          ]
+        },
+        {
+          "title": "ii-V-I",
+          "description": "Jazz standard cadence - subdominant preparation to dominant resolution",
+          "badge": { "text": "Universal Pattern", "color": "blue" },
+          "fields": [
+            { "label": "Numerals", "value": "ii - V - I" },
+            { "label": "Example in C", "value": "Dm - G - C" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis in Action: \"Wonderwall\" by Oasis",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Verse Progression Analysis",
+          "description": "Em - G - D - C (Key of G: vi - I - V - IV)",
+          "fields": [
+            { "label": "vi (Em)", "value": "Relative minor - introspective, emotional" },
+            { "label": "I (G)", "value": "Tonic - home, resolution" },
+            { "label": "V (D)", "value": "Dominant - tension, forward motion" },
+            { "label": "IV (C)", "value": "Subdominant - departure, sets up return" }
+          ],
+          "items": [
+            "Starts with emotional vulnerability (vi)",
+            "Moves to stability (I)",
+            "Creates forward momentum (V)",
+            "Leaves us hanging on IV, wanting resolution back to vi",
+            "Emotional Arc: Melancholy \u2192 Hope \u2192 Tension \u2192 Yearning (perfect for the lyrics!)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quick Reference Guide",
+      "bgColor": "gray-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Stable Functions",
+          "description": "I (tonic), vi (relative minor), iii (weak tonic) - these feel like \"home\" or resting points",
+          "bgColor": "white"
+        },
+        {
+          "title": "Departure Functions",
+          "description": "IV (subdominant), ii (subdominant) - these move away from home, create motion",
+          "bgColor": "white"
+        },
+        {
+          "title": "Dominant Functions",
+          "description": "V (dominant), vii\u00b0 (leading tone) - these create tension that wants to resolve to I",
+          "bgColor": "white"
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Practice",
+        "items": [
+          "Practice I-V-vi-IV in 3 different keys",
+          "Identify the Roman numerals in simple pop songs",
+          "Play the major scale and identify each chord's numeral",
+          "Listen to progressions and predict where they'll resolve"
+        ]
+      },
+      {
+        "title": "Advanced Practice",
+        "items": [
+          "Analyze Beatles songs using Roman numerals",
+          "Practice secondary dominants (V/V, V/vi)",
+          "Identify borrowed chords from parallel minor",
+          "Transpose complex progressions to new keys"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/progressions", "label": "Common Chord Progressions" },
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading Principles" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords/secondary-dominants", "label": "Secondary Dominants" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

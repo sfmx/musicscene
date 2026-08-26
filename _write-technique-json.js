@@ -1,0 +1,58 @@
+const fs = require('fs');
+const path = require('path');
+
+const outDir = path.join(__dirname, 'src/data/practice/technique');
+
+// 1. alternate-picking.json
+fs.writeFileSync(path.join(outDir, 'alternate-picking.json'), JSON.stringify({
+  "slug": "alternate-picking",
+  "category": "technique",
+  "pageInfo": {
+    "pageTitle": "Alternate Picking Technique",
+    "subtitle": "Master the fundamental picking technique that forms the foundation of lead guitar playing and speed development.",
+    "heroGradient": "bg-gradient-to-br from-blue-50 to-indigo-100",
+    "heroTitle": "Alternate Picking Mastery",
+    "heroDescription": "Alternate picking is the cornerstone technique for achieving speed, accuracy, and fluidity in guitar playing. By strictly alternating between downstrokes and upstrokes, you'll develop the muscle memory and coordination needed for advanced lead guitar techniques, lightning-fast scales, and complex melodic passages."
+  },
+  "guidelines": {
+    "title": "Fundamental Principles",
+    "columns": [
+      { "title": "Pick Motion", "items": [
+        { "bulletColor": "text-blue-500", "text": "Use primarily wrist motion, not arm" },
+        { "bulletColor": "text-blue-500", "text": "Keep consistent pick angle (45-90 degrees)" },
+        { "bulletColor": "text-blue-500", "text": "Minimize pick depth into strings" },
+        { "bulletColor": "text-blue-500", "text": "Maintain relaxed grip pressure" }
+      ]},
+      { "title": "Timing & Rhythm", "items": [
+        { "bulletColor": "text-indigo-500", "text": "Always practice with a metronome" },
+        { "bulletColor": "text-indigo-500", "text": "Start slow and gradually increase tempo" },
+        { "bulletColor": "text-indigo-500", "text": "Focus on evenness before speed" },
+        { "bulletColor": "text-indigo-500", "text": "Practice both legato and staccato articulations" }
+      ]}
+    ]
+  },
+  "sections": [
+    { "title": "Foundation Exercises", "exercises": [
+      { "number": 1, "title": "Single String Patterns", "difficulty": "Foundation", "borderColor": "border-green-200", "difficultyBg": "bg-green-100", "difficultyText": "text-green-700", "numberBg": "bg-green-100", "numberText": "text-green-600", "description": "Start with simple single-string exercises to establish proper alternate picking motion. Focus on consistency and evenness rather than speed.", "patternNote": { "colorBg": "bg-green-50", "colorText": "text-green-800", "text": "Pattern: Down-Up-Down-Up on each fret (strict alternation)" }, "notation": { "title": "6th String: Frets 5-8 Ascending and Descending", "alphaTex": "5.6 5.6 5.6 5.6 6.6 6.6 6.6 6.6 7.6 7.6 7.6 7.6 8.6 8.6 8.6 8.6 | 7.6 7.6 7.6 7.6 6.6 6.6 6.6 6.6 5.6 5.6 5.6 5.6 4.6 4.6 4.6 4.6" }, "practiceNotes": { "colorBg": "bg-green-50", "colorBorder": "border-green-200", "colorTitle": "text-green-900", "colorText": "text-green-800", "colorAccent": "bg-green-100", "title": "Practice Notes", "text": "Use a metronome and start at 60 BPM. Focus on clean, even notes with consistent pick attack. Practice on all strings, then try the pattern starting on different frets.", "tempo": "60 BPM (16th notes)" } },
+      { "number": 2, "title": "Chromatic Scale Patterns", "difficulty": "Essential", "borderColor": "border-blue-200", "difficultyBg": "bg-blue-100", "difficultyText": "text-blue-700", "numberBg": "bg-blue-100", "numberText": "text-blue-600", "description": "The chromatic scale is the ultimate test of alternate picking consistency. Every note is picked alternately, making it perfect for developing evenness and speed.", "patternNote": { "colorBg": "bg-blue-50", "colorText": "text-blue-800", "text": "Pattern: Four frets per string, strict alternate picking throughout" }, "notation": { "title": "Chromatic Scale: Position 5 Ascending and Descending", "alphaTex": "5.6 6.6 7.6 8.6 5.5 6.5 7.5 8.5 5.4 6.4 7.4 8.4 5.3 6.3 7.3 8.3 | 5.2 6.2 7.2 8.2 5.1 6.1 7.1 8.1 7.1 6.1 5.1 4.1 8.2 7.2 6.2 5.2" }, "practiceNotes": { "colorBg": "bg-blue-50", "colorBorder": "border-blue-200", "colorTitle": "text-blue-900", "colorText": "text-blue-800", "colorAccent": "bg-blue-100", "title": "Practice Notes", "text": "This exercise challenges your coordination between both hands. Keep the alternate picking strict - never use two consecutive downstrokes or upstrokes. Practice in different positions.", "tempo": "50 BPM (16th notes)" } },
+      { "number": 3, "title": "Scale-Based Patterns", "difficulty": "Musical", "borderColor": "border-purple-200", "difficultyBg": "bg-purple-100", "difficultyText": "text-purple-700", "numberBg": "bg-purple-100", "numberText": "text-purple-600", "description": "Apply alternate picking to musical scales. This bridges the gap between technical exercises and real musical application while maintaining strict picking discipline.", "patternNote": { "colorBg": "bg-purple-50", "colorText": "text-purple-800", "text": "Pattern: G Major scale, two octaves with alternate picking" }, "notation": { "title": "G Major Scale: Two Octaves Ascending and Descending", "alphaTex": "3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 2.2 4.2 5.2 3.1 5.1 | 5.1 3.1 5.2 4.2 2.2 5.3 4.3 2.3 5.4 4.4 2.4 5.5 3.5 2.5 5.6 3.6" }, "practiceNotes": { "colorBg": "bg-purple-50", "colorBorder": "border-purple-200", "colorTitle": "text-purple-900", "colorText": "text-purple-800", "colorAccent": "bg-purple-100", "title": "Practice Notes", "text": "Focus on smooth position shifts while maintaining alternate picking. Practice this pattern in all major scales and their relative minors. Listen for musical phrasing.", "tempo": "70 BPM (8th notes)" } }
+    ]},
+    { "title": "Advanced Applications", "exercises": [
+      { "number": 4, "title": "String Skipping Patterns", "difficulty": "Challenging", "borderColor": "border-amber-200", "difficultyBg": "bg-amber-100", "difficultyText": "text-amber-700", "numberBg": "bg-amber-100", "numberText": "text-amber-600", "description": "String skipping with alternate picking develops precision and control. This technique is essential for arpeggios, wide interval melodies, and advanced lead passages.", "patternNote": { "colorBg": "bg-amber-50", "colorText": "text-amber-800", "text": "Pattern: Skip one string between each note, maintain alternate picking" }, "notation": { "title": "String Skipping: 6th-4th, 5th-3rd, 4th-2nd, 3rd-1st Strings", "alphaTex": "5.6 5.4 7.6 7.4 5.6 5.4 7.6 7.4 5.5 5.3 7.5 7.3 5.5 5.3 7.5 7.3 | 5.4 5.2 7.4 7.2 5.4 5.2 7.4 7.2 5.3 5.1 7.3 7.1 5.3 5.1 7.3 7.1" }, "practiceNotes": { "colorBg": "bg-amber-50", "colorBorder": "border-amber-200", "colorTitle": "text-amber-900", "colorText": "text-amber-800", "colorAccent": "bg-amber-100", "title": "Practice Notes", "text": "Start very slowly to ensure clean string skips. The pick must clear the middle string without touching it. This builds precision for complex arpeggio passages.", "tempo": "40 BPM (8th notes)" } },
+      { "number": 5, "title": "Triplet Alternate Picking", "difficulty": "Rhythmic", "borderColor": "border-red-200", "difficultyBg": "bg-red-100", "difficultyText": "text-red-700", "numberBg": "bg-red-100", "numberText": "text-red-600", "description": "Triplets present unique challenges for alternate picking because the pattern shifts which beat gets the downstroke. This develops rhythmic independence and flexibility.", "patternNote": { "colorBg": "bg-red-50", "colorText": "text-red-800", "text": "Pattern: Three-note groups with strict alternate picking" }, "notation": { "title": "Three-Note Ascending and Descending Triplet Patterns", "alphaTex": "5.6 6.6 7.6 6.6 7.6 8.6 7.6 8.6 9.6 8.6 7.6 6.6 | 5.5 6.5 7.5 6.5 7.5 8.5 7.5 8.5 9.5 8.5 7.5 6.5" }, "practiceNotes": { "colorBg": "bg-red-50", "colorBorder": "border-red-200", "colorTitle": "text-red-900", "colorText": "text-red-800", "colorAccent": "bg-red-100", "title": "Practice Notes", "text": "Pay attention to which beat gets the downstroke - it changes with each triplet group. This is crucial for developing rhythmic accuracy in complex time signatures.", "tempo": "60 BPM (triplets)" } },
+      { "number": 6, "title": "Speed Development Drill", "difficulty": "Advanced", "borderColor": "border-indigo-200", "difficultyBg": "bg-indigo-100", "difficultyText": "text-indigo-700", "numberBg": "bg-indigo-100", "numberText": "text-indigo-600", "description": "This exercise combines all previous elements into a comprehensive speed-building routine. Focus on gradual tempo increases while maintaining perfect technique.", "patternNote": { "colorBg": "bg-indigo-50", "colorText": "text-indigo-800", "text": "Pattern: Four-note sequences across multiple strings" }, "notation": { "title": "Four-Note Patterns for Speed Development", "alphaTex": "5.6 6.6 7.6 8.6 5.5 6.5 7.5 8.5 5.4 6.4 7.4 8.4 5.3 6.3 7.3 8.3 | 9.3 8.3 7.3 6.3 9.4 8.4 7.4 6.4 9.5 8.5 7.5 6.5 9.6 8.6 7.6 6.6" }, "practiceNotes": { "colorBg": "bg-indigo-50", "colorBorder": "border-indigo-200", "colorTitle": "text-indigo-900", "colorText": "text-indigo-800", "colorAccent": "bg-indigo-100", "title": "Practice Notes", "text": "Use a progressive tempo approach: play 4 times at 60 BPM, then 4 times at 65 BPM, continue increasing by 5 BPM until you reach your maximum clean tempo.", "tempo": "Progressive tempo: 60-140+ BPM" } }
+    ]}
+  ],
+  "tips": {
+    "title": "Practice Strategy & Tips",
+    "items": [
+      { "title": "Technical Focus", "colorBg": "bg-gradient-to-br from-green-50 to-emerald-50", "colorBorder": "border-green-200", "colorTitle": "text-green-900", "colorText": "text-green-800", "bulletColor": "text-green-500", "items": ["Always use a metronome for consistent timing", "Start every practice session slowly and gradually increase tempo", "Never sacrifice accuracy for speed - clean technique comes first", "Practice with different pick materials and thicknesses", "Record yourself to identify timing and consistency issues"] },
+      { "title": "Common Challenges", "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50", "colorBorder": "border-blue-200", "colorTitle": "text-blue-900", "colorText": "text-blue-800", "challenges": [
+        { "title": "Tension Issues", "text": "If you feel tension in your wrist or forearm, slow down and focus on relaxation. Practice short bursts with rest periods between." },
+        { "title": "Timing Problems", "text": "Uneven timing often comes from rushing or inconsistent pick attack. Use a metronome and focus on matching each click perfectly." },
+        { "title": "String Noise", "text": "Unwanted string noise can be reduced by proper muting technique with both hands and controlling pick depth and angle." }
+      ]}
+    ]
+  }
+}, null, 2));
+console.log('Done: alternate-picking.json');

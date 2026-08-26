@@ -1,0 +1,109 @@
+{
+  "pageTitle": "Guitar Improvisation & Soloing",
+  "subtitle": "Master the art of musical expression through systematic development of improvisational skills",
+  "heroIcon": "🎨",
+  "heroTitle": "Master Guitar Improvisation",
+  "heroDescription": "Develop your unique musical voice through the art of improvisation. From basic phrasing concepts to advanced harmonic techniques, learn to express yourself spontaneously and musically. Transform scales and theory into living, breathing musical conversations.",
+  "backLink": { "href": "/lessons/practice", "label": "Back to Practice" },
+  "heroGradient": "bg-gradient-to-br from-purple-50 to-indigo-50",
+  "introSection": {
+    "title": "Why Improvisation Is Essential",
+    "items": [
+      { "icon": "🎨", "title": "Creative Expression", "description": "Develop your unique musical voice and artistic identity" },
+      { "icon": "🧠", "title": "Musical Intelligence", "description": "Strengthen ear training, theory knowledge, and musical instincts" },
+      { "icon": "⚡", "title": "Real-Time Skills", "description": "Build confidence for live performance and jam sessions" },
+      { "icon": "🎯", "title": "Harmonic Understanding", "description": "Deepen comprehension of chord progressions and song structure" },
+      { "icon": "💪", "title": "Technical Integration", "description": "Apply practiced techniques in musical contexts" },
+      { "icon": "🌟", "title": "Spontaneous Creativity", "description": "Learn to create compelling music in the moment" }
+    ],
+    "tips": [
+      { "icon": "👂", "title": "Listen First", "description": "Always listen to the music around you. Improvisation is musical conversation, not monologue." },
+      { "icon": "🎯", "title": "Start Simple", "description": "Begin with simple ideas you can execute cleanly. Complexity comes with confidence." },
+      { "icon": "🎙️", "title": "Record Yourself", "description": "Recording reveals what really happened versus what you thought you played." },
+      { "icon": "📚", "title": "Learn Solos", "description": "Transcribe and learn great solos note-for-note to internalize professional vocabulary." }
+    ],
+    "progressiveSteps": [
+      {
+        "icon": "🌱",
+        "title": "Foundation",
+        "items": [
+          "Learn pentatonic scales thoroughly",
+          "Practice basic phrasing concepts",
+          "Understand target notes and resolution",
+          "Simple call and response exercises",
+          "Basic blues and rock progressions"
+        ]
+      },
+      {
+        "icon": "🌿",
+        "title": "Development",
+        "items": [
+          "Add major and modal scales",
+          "Develop motifs and variations",
+          "Incorporate chord tone concepts",
+          "Explore rhythmic displacement",
+          "Study jazz and fusion vocabulary"
+        ]
+      },
+      {
+        "icon": "🌳",
+        "title": "Mastery",
+        "items": [
+          "Advanced harmonic substitutions",
+          "Complex rhythmic patterns",
+          "Personal style development",
+          "Genre-specific approaches",
+          "Real-time composition skills"
+        ]
+      }
+    ]
+  },
+  "itemTypes": [
+    { "name": "Phrasing", "icon": "🗣️", "href": "/lessons/practice/improv/phrasing", "description": "Shape your solos with musical sentences and pauses, creating natural breathing spaces.", "difficulty": "Beginner", "duration": "10-15 min", "color": "bg-blue-50 border-blue-200 hover:bg-blue-100", "iconColor": "text-blue-600" },
+    { "name": "Call & Response", "icon": "🔁", "href": "/lessons/practice/improv/call-response", "description": "Create conversations in your improvisation, establishing musical dialogue.", "difficulty": "Beginner", "duration": "8-12 min", "color": "bg-green-50 border-green-200 hover:bg-green-100", "iconColor": "text-green-600" },
+    { "name": "Motif Development", "icon": "🎼", "href": "/lessons/practice/improv/motif-development", "description": "Build cohesive solos by repeating and varying short melodic ideas.", "difficulty": "Intermediate", "duration": "12-18 min", "color": "bg-purple-50 border-purple-200 hover:bg-purple-100", "iconColor": "text-purple-600" },
+    { "name": "Target Notes", "icon": "🎯", "href": "/lessons/practice/improv/target-notes", "description": "Land on strong chord tones for melodic resolution and harmonic clarity.", "difficulty": "Intermediate", "duration": "15-20 min", "color": "bg-orange-50 border-orange-200 hover:bg-orange-100", "iconColor": "text-orange-600" },
+    { "name": "Improvising with Scales", "icon": "🎶", "href": "/lessons/practice/improv/scales", "description": "Use major, minor, and modal scales as vocabulary for expressive soloing.", "difficulty": "Intermediate", "duration": "20-25 min", "color": "bg-teal-50 border-teal-200 hover:bg-teal-100", "iconColor": "text-teal-600" },
+    { "name": "Improvising with Arpeggios", "icon": "🔔", "href": "/lessons/practice/improv/arpeggios", "description": "Outline chord progressions and add sophisticated color to your melodic lines.", "difficulty": "Advanced", "duration": "15-20 min", "color": "bg-red-50 border-red-200 hover:bg-red-100", "iconColor": "text-red-600" },
+    { "name": "Rhythmic Variation", "icon": "🥁", "href": "/lessons/practice/improv/rhythm", "description": "Create compelling solos through rhythmic displacement and creative timing.", "difficulty": "Advanced", "duration": "10-15 min", "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100", "iconColor": "text-indigo-600" },
+    { "name": "Chord Tone Soloing", "icon": "🎹", "href": "/lessons/practice/improv/chord-tone-soloing", "description": "Target chord tones for melodic, intentional solos that outline the harmony.", "difficulty": "Intermediate", "duration": "15-20 min", "color": "bg-teal-50 border-teal-200 hover:bg-teal-100", "iconColor": "text-teal-600" },
+    { "name": "Modal Improvisation", "icon": "🌈", "href": "/lessons/practice/improv/modal-improvisation", "description": "Improvise using modes to create unique colors and moods beyond major and minor.", "difficulty": "Advanced", "duration": "15-25 min", "color": "bg-violet-50 border-violet-200 hover:bg-violet-100", "iconColor": "text-violet-600" }
+  ],
+  "famousPlayers": {
+    "title": "Masters of Improvisation",
+    "description": "Study these legendary improvisers to understand different approaches to spontaneous musical creation. Each brought unique concepts and vocabulary to the art of improvisation.",
+    "players": [
+      { "name": "B.B. King", "strength": "Expressive Phrasing", "genre": "Blues", "signature": "Emotional vibrato and space" },
+      { "name": "Eric Clapton", "strength": "Melodic Storytelling", "genre": "Blues/Rock", "signature": "Song-like solos" },
+      { "name": "David Gilmour", "strength": "Atmospheric Soloing", "genre": "Progressive Rock", "signature": "Space and texture" },
+      { "name": "John Scofield", "strength": "Modern Jazz Language", "genre": "Jazz/Fusion", "signature": "Harmonic sophistication" },
+      { "name": "Pat Metheny", "strength": "Lyrical Innovation", "genre": "Jazz", "signature": "Melodic invention" },
+      { "name": "Wes Montgomery", "strength": "Octave Technique", "genre": "Jazz", "signature": "Thumb picking and phrasing" }
+    ]
+  },
+  "practicePhilosophy": {
+    "title": "The Art of Musical Conversation",
+    "description": "Improvisation is not about playing fast or showing off technique\u2014it's about having a musical conversation. Like any language, it requires vocabulary (scales, arpeggios), grammar (harmony, rhythm), and most importantly, something meaningful to say.",
+    "dailyRoutine": {
+      "title": "Daily Practice Routine",
+      "sections": [
+        {
+          "title": "Technical Foundation (10 min)",
+          "items": [
+            "Scale patterns and sequences",
+            "Arpeggio exercises",
+            "Technique integration"
+          ]
+        },
+        {
+          "title": "Musical Application (15 min)",
+          "items": [
+            "Backing track improvisation",
+            "Motif development exercises",
+            "Call and response practice"
+          ]
+        }
+      ]
+    }
+  }
+}

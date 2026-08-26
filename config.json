@@ -1,0 +1,24 @@
+{
+    "Name":  "MusicSceneSecurityHeaders",
+    "SecurityHeadersConfig":  {
+                                  "XSSProtection":  {
+                                                        "Override":  true,
+                                                        "Protection":  true,
+                                                        "ModeBlock":  true
+                                                    },
+                                  "ReferrerPolicy":  {
+                                                         "Override":  true,
+                                                         "ReferrerPolicy":  "strict-origin-when-cross-origin"
+                                                     },
+                                  "ContentSecurityPolicy":  {
+                                                                "Override":  true,
+                                                                "ContentSecurityPolicy":  "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: https://pagead2.googlesyndication.com https://adservice.google.com https://www.googletagservices.com https://tpc.googlesyndication.com; style-src \u0027self\u0027 \u0027unsafe-inline\u0027; img-src \u0027self\u0027 data: https://pagead2.googlesyndication.com https://www.google.com; font-src \u0027self\u0027; worker-src \u0027self\u0027 blob:; connect-src \u0027self\u0027 blob: data: https://pagead2.googlesyndication.com https://adservice.google.com; media-src \u0027self\u0027 blob: data:; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com;"
+                                                            },
+                                  "StrictTransportSecurity":  {
+                                                                  "Override":  true,
+                                                                  "IncludeSubdomains":  true,
+                                                                  "Preload":  true,
+                                                                  "AccessControlMaxAgeSec":  63072000
+                                                              }
+                              }
+}

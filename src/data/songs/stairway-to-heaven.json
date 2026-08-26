@@ -1,0 +1,441 @@
+{
+  "songInfo": {
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin IV",
+    "released": "1971",
+    "genre": "Hard Rock / Folk Rock",
+    "tempo": "Varies (63-98 BPM)",
+    "duration": "8:02",
+    "key": "A minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G",
+          "application": "Foundation for the intro fingerpicking arpeggios and the descending chromatic bass line"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Primary scale for the iconic guitar solo, providing the bluesy melodic framework"
+        },
+        {
+          "scale": "A blues scale",
+          "notes": "A - C - D - Eb - E - G",
+          "application": "Used in the solo for added grit with the blue note (Eb) on bends and passing tones"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with chromatic bass movement",
+      "keySignature": "No sharps or flats (A natural minor / C major)",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "G#aug/G#",
+          "C/G",
+          "D/F#",
+          "Fmaj7",
+          "G",
+          "Am"
+        ],
+        "progression": "i - (chromatic bass) - III/7 - IV/6 - VI7 - VII - i",
+        "description": "The legendary intro progression featuring a chromatic descending bass line (A - G# - G - F# - F) under held chord voicings, creating one of rock's most recognized musical passages"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Verse 1 (Fingerpicked)",
+          "progression": "Am - E+/G# - C/G - D/F# - Fmaj7 - G - Am",
+          "romanNumerals": "i - V+/7 - III/7 - IV/6 - VI7 - VII - i",
+          "description": "Delicate fingerpicked arpeggios with the signature descending chromatic bass line from A down through G#, G, F#, and F"
+        },
+        {
+          "section": "Mid-Section (Strummed)",
+          "progression": "Am - G - F - G - Am",
+          "romanNumerals": "i - VII - VI - VII - i",
+          "description": "Transition to strummed acoustic chords with a folk-rock feel, building energy toward the electric section"
+        },
+        {
+          "section": "Chorus / Fanfare",
+          "progression": "Am - G - F",
+          "romanNumerals": "i - VII - VI",
+          "description": "Powerful descending progression from Am through G to F, supporting the 'And she's buying a stairway to heaven' lyric"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Am - G - F - Am",
+          "romanNumerals": "i - VII - VI - i",
+          "description": "The solo section uses the i - VII - VI progression as a launching pad for Page's iconic pentatonic-based solo"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Tonic minor center anchoring the entire song structure",
+        "E+/G# (V+) - Augmented dominant with chromatic bass note creating the descending line",
+        "C/G (III) - Relative major with bass note continuing the descending chromatic movement",
+        "D/F# (IV) - Subdominant with inverted bass extending the chromatic descent",
+        "Fmaj7 (VI) - Submediant major 7th adding warmth at the bottom of the bass line",
+        "G (VII) - Subtonic providing momentum back to the tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerpicked Arpeggio Intro",
+      "description": "The iconic fingerpicking pattern that opens the song, featuring arpeggiated chords over a descending chromatic bass line - one of the most recognizable guitar passages in rock music",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Am: X-0-2-2-1-0 (arpeggiated with descending bass)",
+          "E+/G#: X-X-1-0-0-0 (augmented chord with G# bass)",
+          "C/G: 3-3-2-0-1-0 (C major with G bass note)",
+          "D/F#: 2-0-0-2-3-2 (D major with F# bass note)",
+          "Fmaj7: 1-X-2-2-1-0 (F major 7th voicing)",
+          "Fingerpick using thumb (bass) and index/middle fingers (treble)",
+          "The bass line descends chromatically: A - G# - G - F# - F"
+        ],
+        "sequence": [
+          "Thumb plays bass note on the beat",
+          "Index and middle fingers pick the upper chord tones",
+          "Maintain even spacing between all picked notes",
+          "Bass note must ring clearly to outline the chromatic descent"
+        ],
+        "tips": [
+          "Practice the bass line separately before adding upper notes",
+          "Use the thumb exclusively for bass notes (strings 4-6)",
+          "Keep fingers close to the strings for quick, clean attacks",
+          "Practice at very slow tempo - accuracy is more important than speed",
+          "Record yourself and listen for even note volume"
+        ],
+        "chords": [
+          "Am",
+          "E+/G#",
+          "C/G",
+          "D/F#",
+          "Fmaj7",
+          "G"
+        ],
+        "progression": "Am - E+/G# - C/G - D/F# - Fmaj7 - G - Am"
+      }
+    },
+    {
+      "name": "Iconic Guitar Solo",
+      "description": "Jimmy Page's legendary guitar solo, widely regarded as one of the greatest in rock history, built on A minor pentatonic with blues inflections, bends, and rapid-fire runs",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Based primarily in A minor pentatonic at the 5th position",
+          "Opens with a series of rapid-fire descending runs",
+          "Whole-step and 1.5-step bends are featured throughout",
+          "Builds from melodic phrases to intense scalic runs",
+          "Uses slides, hammer-ons, and pull-offs for fluidity",
+          "Incorporates blues scale passing tones (Eb) for grit"
+        ],
+        "sequence": [
+          "Begin with the opening ascending phrase at the 5th fret",
+          "Execute rapid descending pentatonic runs",
+          "Build intensity with bends and vibrato at higher positions",
+          "Climax with fast legato runs returning to the root"
+        ],
+        "tips": [
+          "Break the solo into 4-bar phrases and learn each separately",
+          "Focus on the rhythmic placement of each phrase",
+          "Practice bends to ensure accurate pitch",
+          "Build speed gradually - the fast runs require clean legato technique",
+          "Use a warm, slightly overdriven tone with the neck pickup"
+        ],
+        "chords": [],
+        "progression": "Over Am - G - F - Am progression"
+      }
+    },
+    {
+      "name": "Dynamic Song Building",
+      "description": "The progressive buildup from delicate fingerpicking to full electric intensity, requiring mastery of dynamic control and the ability to transition between acoustic and electric guitar styles",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Song progresses through distinct dynamic stages over 8 minutes",
+          "Stage 1: Quiet fingerpicked arpeggios (acoustic feel)",
+          "Stage 2: Strummed acoustic chords with building intensity",
+          "Stage 3: Electric guitar enters with power and drive",
+          "Stage 4: Full band intensity with the guitar solo",
+          "Stage 5: Slower, powerful conclusion"
+        ],
+        "sequence": [
+          "Begin with soft, precise fingerpicking",
+          "Transition to confident strumming in the mid-section",
+          "Switch to electric guitar for the hard rock section",
+          "Build to maximum intensity for the solo",
+          "Bring the energy down for the final vocal section"
+        ],
+        "tips": [
+          "Plan your dynamic levels before playing through",
+          "Practice each section transition repeatedly",
+          "If playing live with one guitar, consider a volume pedal",
+          "The contrast between sections is what makes the song powerful"
+        ],
+        "chords": [
+          "Am",
+          "G",
+          "F"
+        ],
+        "progression": "Full song dynamic arc from quiet to loud and back"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Fingerpicked Arpeggios)",
+      "timeStamp": "0:00-2:14",
+      "technique": "Fingerpicked Arpeggio Intro",
+      "key": "A minor",
+      "description": "The legendary fingerpicked intro featuring the descending chromatic bass line under arpeggiated chord voicings - one of the most iconic openings in rock music history",
+      "chords": [
+        "Am",
+        "E+/G#",
+        "C/G",
+        "D/F#",
+        "Fmaj7"
+      ],
+      "progression": "Am - E+/G# - C/G - D/F# - Fmaj7 - G - Am",
+      "notes": [
+        "Use fingerpicking (no pick) for the authentic sound",
+        "Bass line descends chromatically: A - G# - G - F# - F",
+        "Let all notes ring as long as possible",
+        "Maintain a gentle, meditative tempo around 63 BPM"
+      ],
+      "alphaTab": "5.5 5.4 7.3 5.2 7.3 5.4 | 5.5 7.4 7.3 5.2 7.3 7.4 | 10.5 10.4 12.3 10.2 12.3 10.4 | 5.5 5.4 7.3 5.2 7.3 5.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Mid-Section (Strummed Build)",
+      "timeStamp": "2:14-4:18",
+      "technique": "Dynamic Song Building",
+      "key": "A minor",
+      "description": "The folk-rock strummed section where the song begins to build energy, transitioning from gentle fingerpicking to more assertive acoustic strumming",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G"
+      ],
+      "progression": "Am - G - F - G - Am",
+      "notes": [
+        "Transition from fingerpicking to confident strumming",
+        "Folk-rock feel with steady eighth-note rhythm",
+        "Tempo gradually increases from 63 toward 80 BPM",
+        "This section bridges the quiet intro and the electric climax"
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Electric Section / Hard Rock Build",
+      "timeStamp": "4:18-5:33",
+      "technique": "Dynamic Song Building",
+      "key": "A minor",
+      "description": "The explosive transition to full electric guitar, where the band kicks in with power and drive, building toward the guitar solo",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Full band enters with electric guitar at around 98 BPM",
+        "Power chord movement with aggressive strumming",
+        "The energy level jumps dramatically from the acoustic section",
+        "Sets up the tension that will be released in the guitar solo"
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "5:33-6:44",
+      "technique": "Iconic Guitar Solo",
+      "key": "A minor",
+      "description": "Jimmy Page's legendary guitar solo - consistently voted one of the greatest guitar solos of all time - built on A minor pentatonic with blues scale inflections, soaring bends, and rapid runs",
+      "chords": [
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "Am - G - F - Am",
+      "notes": [
+        "Position primarily at the 5th fret in A minor pentatonic",
+        "Opens with rapid ascending phrases that set the intensity",
+        "Features both precise bent notes and fast legato runs",
+        "Widely considered one of the greatest guitar solos ever recorded"
+      ],
+      "alphaTab": "5.6 8.6 5.5 7.5 5.4 7.4 | 5.3 7.3 5.2 8.2 5.1 8.1 | 8.1 5.1 8.2 5.2 7.3 5.3 | 7.4 5.4 7.5 5.5 8.6 5.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson EDS-1275 Double-Neck (6-string and 12-string)",
+      "alternatives": [
+        "Fender Telecaster (used for recording the solo)",
+        "Gibson Les Paul Standard",
+        "Epiphone Les Paul with humbuckers"
+      ],
+      "pickup": "Humbuckers - neck pickup for warm solo tone, bridge for rhythm sections"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead 1959",
+      "alternatives": [
+        "Marshall JCM800",
+        "Supro Thunderbolt (used on some Led Zeppelin recordings)",
+        "Fender Twin Reverb for clean passages"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate overdrive for electric sections)",
+        "treble": "7 (bright and cutting for the solo)",
+        "middle": "6 (present mids for lead definition)",
+        "bass": "5 (balanced low end)",
+        "presence": "7 (open top end for solo clarity)"
+      }
+    },
+    "effects": {
+      "distortion": "Natural amp overdrive, no pedals on the original recording",
+      "delay": "Slight room ambience from the recording space",
+      "reverb": "Natural room reverb, moderate amount",
+      "other": "No effects pedals were used - tone comes entirely from guitar and amp interaction"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic chord shapes and simplified versions of the intro pattern",
+      "steps": [
+        "Master open chord shapes: Am, C, G, D, F, Fmaj7",
+        "Practice basic fingerpicking patterns on each chord",
+        "Learn the descending bass line notes separately",
+        "Work on the Am - G - F strummed section"
+      ],
+      "timeEstimate": "4-6 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Develop the complete fingerpicked intro and practice the dynamic transitions",
+      "steps": [
+        "Learn the full intro fingerpicking pattern with chromatic bass line",
+        "Master chord voicings with proper bass notes (inversions)",
+        "Practice the mid-section strumming with building dynamics",
+        "Begin learning the solo melody in simplified form"
+      ],
+      "timeEstimate": "8-12 weeks for intro and mid-section mastery"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo note-for-note and perform the complete 8-minute song",
+      "steps": [
+        "Learn the guitar solo phrase by phrase with accurate bends and timing",
+        "Develop fast legato technique for the rapid pentatonic runs",
+        "Master the complete dynamic arc from fingerpicking to full electric",
+        "Perform the entire song seamlessly with all transitions"
+      ],
+      "timeEstimate": "12-16 weeks for complete song mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the fingerpicked intro - patience and precision are essential",
+      "Not voicing the chromatic bass line clearly in the intro chords",
+      "Failing to build dynamics gradually - the song is a slow crescendo",
+      "Playing the solo too fast without nailing the phrasing and bends",
+      "Ignoring the tempo changes between sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with A minor pentatonic scale across all positions (5 minutes)",
+      "Practice the intro fingerpicking pattern slowly at 50 BPM (15 minutes)",
+      "Work on chord inversions and the chromatic bass line separately (10 minutes)",
+      "Isolate solo phrases: 4 bars at a time at half speed (15 minutes)",
+      "Dynamic transition practice: move between sections smoothly (10 minutes)"
+    ],
+    "focusAreas": [
+      "Clean fingerpicking with independent thumb and finger movement",
+      "Accurate chord inversions for the descending bass line",
+      "Dynamic control across the full song arc",
+      "Fast legato runs in A minor pentatonic for the solo",
+      "Precise string bending in the guitar solo"
+    ],
+    "metronomeWork": [
+      "Intro fingerpicking: start at 45 BPM, work up to 63 BPM",
+      "Mid-section strumming: practice at 70 BPM, build to 80 BPM",
+      "Electric section: start at 85 BPM, build to 98 BPM",
+      "Solo: practice phrases at half speed first, then gradually increase tempo"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Whole Lotta Love",
+        "difficulty": "Intermediate",
+        "similarity": "Classic Led Zeppelin riff with pentatonic-based guitar work"
+      },
+      {
+        "title": "Kashmir",
+        "difficulty": "Advanced",
+        "similarity": "Epic song structure with building dynamics and orchestral scope"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Similar dynamic arc from quiet arpeggios to powerful climactic guitar solo"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Advanced",
+        "similarity": "Iconic arpeggiated intro leading to a melodic pentatonic-based solo"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "The Thrill Is Gone",
+        "artist": "B.B. King",
+        "difficulty": "Intermediate",
+        "similarity": "Learn minor key phrasing and bending fundamentals before tackling the Stairway solo"
+      },
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Advanced",
+        "similarity": "Similarly epic song structure with fingerpicked passages and emotional lead work"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "fingerpicking",
+      "guitar-solos",
+      "acoustic"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 months"
+  }
+}

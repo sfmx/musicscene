@@ -1,0 +1,521 @@
+{
+  "songInfo": {
+    "title": "The Final Countdown",
+    "artist": "Europe",
+    "album": "The Final Countdown",
+    "released": "1986",
+    "genre": "Arena Rock / Synth Rock",
+    "tempo": "118 BPM",
+    "duration": "5:09",
+    "key": "F# Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# minor, with the synth melody driving the harmonic content and guitar providing rhythmic and harmonic support",
+      "scalesUsed": [
+        {
+          "scale": "F# natural minor (Aeolian)",
+          "notes": "F# - G# - A - B - C# - D - E - F#",
+          "application": "Primary scale for the song; the minor key creates the dramatic, urgent quality that gives the song its cinematic intensity"
+        },
+        {
+          "scale": "F# minor pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "Guitar solo and riff fills; John Norum's lead work draws from the minor pentatonic for raw, expressive phrasing"
+        },
+        {
+          "scale": "F# harmonic minor",
+          "notes": "F# - G# - A - B - C# - D - E# - F#",
+          "application": "Select passages in the guitar solo where the raised 7th (E#/F) creates classical tension and neoclassical lead lines"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with dramatic, cinematic urgency and occasional harmonic minor inflections in the lead guitar",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "i - VI - III - VII",
+        "description": "The driving minor key progression that underpins the verse and chorus, with the VI-III-VII movement creating the dramatic, uplifting quality against the minor tonic."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Synth Intro",
+          "progression": "F#m - D - Bm - E",
+          "romanNumerals": "i - VI - iv - VII",
+          "description": "The iconic synthesizer fanfare that opens the song, one of the most recognizable intros in rock history. Guitar either rests or provides subtle harmonic support."
+        },
+        {
+          "section": "Verse",
+          "progression": "F#m - D - A - E",
+          "romanNumerals": "i - VI - III - VII",
+          "description": "Power chord rhythm driving the verse with palm-muted eighth notes, the guitar providing the rhythmic backbone behind the vocal melody"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "Bm - D - E",
+          "romanNumerals": "iv - VI - VII",
+          "description": "Building tension with ascending chord motion, the iv chord adding gravity before the lift of VI-VII into the chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "F#m - D - A - E - Bm - D - E",
+          "romanNumerals": "i - VI - III - VII - iv - VI - VII",
+          "description": "The triumphant chorus with full power chords and the synth melody returning. The extended progression builds dramatic arc across the full vocal hook."
+        },
+        {
+          "section": "Interlude / Synth Break",
+          "progression": "F#m - D - Bm - E",
+          "romanNumerals": "i - VI - iv - VII",
+          "description": "Return of the synth fanfare with guitar providing rhythmic power chord accents, building toward the guitar solo section"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "F#m - D - A - E",
+          "romanNumerals": "i - VI - III - VII",
+          "description": "John Norum's blazing lead over the verse progression, mixing minor pentatonic wailing with neoclassical harmonic minor runs"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m (i) - Tonic minor chord, creating the dramatic, urgent foundation of the song",
+        "D (VI) - Submediant major, providing brightness and hope within the minor key",
+        "A (III) - Mediant major (relative major), adding warmth and uplift to the progression",
+        "E (VII) - Subtonic major, creating strong forward momentum and drive",
+        "Bm (iv) - Subdominant minor, adding weight and gravitas in the pre-chorus and chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Power Chord Rhythm Behind Synth",
+      "description": "Solid, driving power chord rhythm guitar that provides the harmonic and rhythmic foundation beneath the iconic keyboard melody, requiring precise timing and consistent energy",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "F#5: 2-4-4-X-X-X (E-string root power chord)",
+          "D5: X-5-7-7-X-X (A-string root) or 10-12-12-X-X-X (E-string root)",
+          "A5: 5-7-7-X-X-X (E-string root power chord)",
+          "E5: 0-2-2-X-X-X (open power chord for maximum low-end)",
+          "Bm5: 7-9-9-X-X-X (E-string root) or X-2-4-4-X-X (A-string root)"
+        ],
+        "sequence": [
+          "During the synth intro, provide rhythmic power chord accents on downbeats",
+          "In the verse, play driving eighth-note power chord rhythm with palm muting",
+          "Build intensity in the pre-chorus with ascending Bm5-D5-E5 power chords",
+          "Open up to full strumming for the chorus power chords",
+          "Return to rhythmic accents during the synth interlude breaks"
+        ],
+        "tips": [
+          "The guitar is supportive rather than dominant during the synth sections - do not overpower the keyboard",
+          "Use palm muting during verses to keep the rhythm tight and controlled",
+          "The power chord changes need to be precise because the synth provides a clear harmonic reference",
+          "Match the energy level of the keyboards - when they are big, play big; when they drop, ease back"
+        ],
+        "chords": [
+          "F#5",
+          "D5",
+          "A5",
+          "E5",
+          "Bm5"
+        ],
+        "progression": "F#5 - D5 - A5 - E5 (verse) / F#5 - D5 - A5 - E5 - Bm5 - D5 - E5 (chorus)"
+      }
+    },
+    {
+      "name": "Palm Muting with Rhythmic Drive",
+      "description": "Tight palm-muted power chord rhythm that drives the verses forward with consistent eighth notes, creating the propulsive energy beneath the vocal melody and synth textures",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Apply consistent palm muting across all verse power chord changes",
+          "Eighth-note chugging on the low strings creates the driving rhythmic feel",
+          "Accent beats 1 and 3 slightly louder for rhythmic emphasis",
+          "The palm mute should be firm enough to control sustain but loose enough to hear pitch",
+          "Release the muting on chord accents for dynamic punch"
+        ],
+        "sequence": [
+          "Begin with palm-muted eighth notes on F#5 at the start of the verse",
+          "Maintain the palm muting through the D5 and A5 chord changes",
+          "Accent the first beat of each new chord slightly for definition",
+          "Release the palm muting progressively as the verse builds toward the pre-chorus",
+          "Transition to open, unmuted chords for the chorus impact"
+        ],
+        "tips": [
+          "Keep the right hand relaxed even while maintaining consistent palm mute pressure",
+          "The driving eighth notes should lock tightly with the drummer's hi-hat pattern",
+          "Practice the palm-muted rhythm on each individual chord before connecting them",
+          "The verse energy is restrained but urgent - think of a controlled burn rather than an explosion"
+        ],
+        "chords": [
+          "F#5",
+          "D5",
+          "A5",
+          "E5"
+        ],
+        "progression": "F#5 - D5 - A5 - E5 (palm-muted verse rhythm)"
+      }
+    },
+    {
+      "name": "Melodic Lead Lines",
+      "description": "Guitar lead lines and fills that complement the synth melody, plus John Norum's fiery solo combining minor pentatonic expressiveness with neoclassical harmonic minor technique",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The guitar occasionally doubles or harmonizes with the synth melody line",
+          "The synth melody in F# minor: F#-G#-A-B-C#-D-C#-B-A-G#-F#",
+          "Solo uses F# minor pentatonic at the 14th position for expressive bends",
+          "Harmonic minor (E# instead of E) creates classical-sounding ascending runs",
+          "Fast alternate picking and legato techniques define the solo's intensity"
+        ],
+        "sequence": [
+          "Learn the synth melody on guitar for introductions and interludes",
+          "Play the melody in the 2nd position or 14th position depending on the register",
+          "For the solo, start with F# minor pentatonic phrases with expressive bends",
+          "Add harmonic minor ascending runs for the neoclassical passages",
+          "Build to the solo climax with fast alternate-picked sequences"
+        ],
+        "tips": [
+          "Learning the synth melody on guitar is essential for playing this song without a keyboard player",
+          "The solo requires strong alternate picking and legato technique - practice fundamental exercises first",
+          "Bend accuracy is critical - bends should reach the target note precisely",
+          "Use the bridge pickup with moderate to high gain for the cutting lead tone"
+        ],
+        "chords": [
+          "F#m",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "F#m - D - A - E (solo over verse changes)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Synth Intro",
+      "timeStamp": "0:00-0:50",
+      "technique": "Power Chord Rhythm Behind Synth",
+      "key": "F# Minor",
+      "description": "The legendary synthesizer fanfare - one of the most iconic intros in rock music. Guitar provides subtle rhythmic accents or can play the melody line on guitar if no keyboardist is present.",
+      "chords": [
+        "F#m",
+        "D",
+        "Bm",
+        "E"
+      ],
+      "progression": "F#m - D - Bm - E",
+      "notes": [
+        "The synth melody is the star here - guitar should support, not compete",
+        "If playing without keys, learn the melody on guitar at the 14th position",
+        "Use clean or lightly overdriven tone for the rhythmic chord accents",
+        "The intro builds in intensity with the band entering gradually"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:50-1:25",
+      "technique": "Palm Muting with Rhythmic Drive",
+      "key": "F# Minor",
+      "description": "Driving palm-muted power chord rhythm under the vocal melody, providing the propulsive energy that counterbalances the synth textures.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "F#m - D - A - E",
+      "notes": [
+        "Palm-muted eighth notes on power chords create the driving verse rhythm",
+        "Keep dynamics controlled to leave room for the chorus explosion",
+        "Lock in tightly with the bass and drums for the rhythmic groove",
+        "The minor key progression creates urgency that pairs with the countdown theme"
+      ],
+      "alphaTab": "2.6 4.5 4.4 4.5 | 2.6 2.6 4.5 4.4 | 7.6 9.5 9.4 9.5 | 2.6 4.5 4.4 4.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:25-1:40",
+      "technique": "Power Chord Rhythm Behind Synth",
+      "key": "F# Minor",
+      "description": "Building section with ascending power chords creating tension and momentum toward the explosive chorus.",
+      "chords": [
+        "Bm",
+        "D",
+        "E"
+      ],
+      "progression": "Bm - D - E",
+      "notes": [
+        "Release the palm muting as the energy builds toward the chorus",
+        "The ascending Bm-D-E motion creates strong upward momentum",
+        "Increase strumming intensity and volume progressively",
+        "The pre-chorus should feel like a launch sequence counting down to the chorus"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:40-2:15",
+      "technique": "Power Chord Rhythm Behind Synth",
+      "key": "F# Minor",
+      "description": "The triumphant chorus with the synth fanfare returning and full power chord strumming, the iconic 'It's the final countdown' vocal hook soaring over the full band.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E",
+        "Bm"
+      ],
+      "progression": "F#m - D - A - E - Bm - D - E",
+      "notes": [
+        "Full, unmuted power chord strumming at maximum intensity",
+        "The synth returns with the main melody - complement it with full chords",
+        "The extended progression creates a dramatic arc through the chorus",
+        "This is the peak energy section - play with maximum conviction"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Interlude",
+      "timeStamp": "2:50-3:25",
+      "technique": "Power Chord Rhythm Behind Synth",
+      "key": "F# Minor",
+      "description": "The synth fanfare returns for an extended instrumental break, with guitar providing rhythmic support and building toward the solo section.",
+      "chords": [
+        "F#m",
+        "D",
+        "Bm",
+        "E"
+      ],
+      "progression": "F#m - D - Bm - E",
+      "notes": [
+        "Return to the intro-style rhythmic guitar accents behind the synth",
+        "The interlude serves as a breath before the guitar solo",
+        "Gradually increase intensity as the section progresses",
+        "Prepare for the transition from rhythm support to lead guitar"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:25-4:10",
+      "technique": "Melodic Lead Lines",
+      "key": "F# Minor",
+      "description": "John Norum's fiery guitar solo combining expressive minor pentatonic bends with neoclassical harmonic minor runs, showcasing technical virtuosity over the verse progression.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "F#m - D - A - E (extended solo section)",
+      "notes": [
+        "Solo opens with expressive bends and vibrato in F# minor pentatonic",
+        "Mid-solo features faster alternate-picked runs using harmonic minor",
+        "The climax builds to high-register sustained bends with wide vibrato",
+        "Rhythm guitar maintains power chord support underneath throughout"
+      ],
+      "alphaTab": "2.6 5.6 2.5 4.5 2.4 4.4 | 2.3 4.3 2.2 5.2 2.1 5.1 | 5.1 2.1 5.2 2.2 4.3 2.3 | 4.4 2.4 4.5 2.5 5.6 2.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "4:10-5:09",
+      "technique": "Power Chord Rhythm Behind Synth",
+      "key": "F# Minor",
+      "description": "The extended final chorus with repeated vocal hooks, synth fanfare, and full band at peak intensity building to the dramatic ending.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E",
+        "Bm"
+      ],
+      "progression": "F#m - D - A - E - Bm - D - E",
+      "notes": [
+        "Maintain maximum intensity through the repeated final chorus",
+        "The synth and guitar together create the massive wall of sound",
+        "Extended repetitions build ecstatic energy for the live crowd experience",
+        "The song ends with the synth fanfare fading over sustained guitar chords"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or similar single-coil/humbucker combination",
+      "alternatives": [
+        "Charvel/Jackson Superstrat",
+        "Ibanez RG series",
+        "ESP Horizon",
+        "Any HSS or HSH configured Strat-style guitar"
+      ],
+      "pickup": "Bridge humbucker for power chord rhythm sections; bridge single-coil or humbucker for the bright lead tone in the solo"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 for the classic 1980s European rock tone",
+      "alternatives": [
+        "Marshall Plexi",
+        "Marshall JVM410",
+        "Peavey 5150",
+        "Laney Ironheart"
+      ],
+      "settings": {
+        "gain": "6 (moderate to high gain for tight rhythm and smooth lead)",
+        "treble": "7 (bright and cutting for clarity against the keyboards)",
+        "middle": "6 (good midrange presence to cut through the synth-heavy mix)",
+        "bass": "4-5 (tight low end that does not conflict with the bass and keyboards)",
+        "presence": "7 (high for maximum clarity and note definition)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate to high gain from the amp. The rhythm tone needs to be tight and defined to work alongside the keyboards without muddying the mix.",
+      "delay": "Short digital delay (250-350ms) for lead tone enhancement and subtle thickness on rhythm parts",
+      "reverb": "Medium hall reverb for the arena rock spaciousness, especially on lead guitar",
+      "other": "If playing without a keyboard player, a synth pedal or keyboard sound module can replicate the iconic synth fanfare. A noise gate helps keep palm-muted sections tight."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord shapes and the verse strumming pattern",
+      "steps": [
+        "Master F#5, D5, A5, E5, and Bm5 power chord shapes on the E and A strings",
+        "Practice basic eighth-note strumming at 118 BPM with a metronome",
+        "Learn the verse progression with simple down-stroke power chord strumming",
+        "Play along with the chorus sections using full power chord strumming"
+      ],
+      "timeEstimate": "2-3 weeks for basic rhythm guitar"
+    },
+    "intermediate": {
+      "focus": "Add palm muting, dynamic contrast, and the synth melody on guitar",
+      "steps": [
+        "Learn palm-muted verse rhythm with proper accent placement",
+        "Practice the dynamic transition from muted verse to open chorus",
+        "Learn the iconic synth melody on guitar for playing without a keyboardist",
+        "Play through the complete song structure with all dynamic changes"
+      ],
+      "timeEstimate": "3-5 weeks for full song with dynamics"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo and performance-level execution of all parts",
+      "steps": [
+        "Learn John Norum's guitar solo phrase by phrase in F# minor pentatonic and harmonic minor",
+        "Practice fast alternate picking and legato runs required for the solo",
+        "Refine the interplay between rhythm support and lead moments",
+        "Perform the complete song with seamless transitions between all sections"
+      ],
+      "timeEstimate": "5-7 weeks for complete performance with solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Overpowering the synth parts with too-loud guitar - the keyboard is the star during intros and interludes",
+      "Inconsistent palm muting that causes the verse rhythm to lose its tight, driving feel",
+      "Playing the wrong key - the song is in F# minor, not A minor, which catches many players off guard",
+      "Rushing the tempo during the energy build from verse to chorus"
+    ],
+    "practiceRoutine": [
+      "Warm up with F#5-D5-A5-E5 power chord transitions at 90 BPM (5 minutes)",
+      "Practice palm-muted verse rhythm at 100 BPM, building to 118 BPM (5 minutes)",
+      "Work on the synth melody on guitar at slow tempo for note accuracy (5 minutes)",
+      "Practice the dynamic build from verse palm muting to chorus full strumming (5 minutes)",
+      "Play through the complete song with a backing track at 118 BPM (5 minutes)"
+    ],
+    "focusAreas": [
+      "Tight, consistent palm muting during verse sections at 118 BPM",
+      "Smooth power chord transitions on the E and A strings",
+      "Dynamic balance between guitar and (imagined or real) keyboard parts",
+      "Clean execution of the synth melody on guitar if needed"
+    ],
+    "metronomeWork": [
+      "Start palm-muted rhythm at 90 BPM, building to 118 BPM in 7 BPM increments",
+      "Practice power chord changes with metronome on beats 2 and 4 for backbeat feel",
+      "Work on the synth melody at 80 BPM for accurate note placement before speeding up",
+      "Full song run-through at 118 BPM once all sections are comfortable"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Carrie",
+        "difficulty": "Intermediate",
+        "similarity": "Same album power ballad showcasing Europe's melodic songwriting with similar key and chord work"
+      },
+      {
+        "title": "Rock the Night",
+        "difficulty": "Intermediate",
+        "similarity": "Same album uptempo rocker with similar synth-rock combination and power chord rhythm approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "difficulty": "Intermediate",
+        "similarity": "1986 arena rock anthem with similar power chord rhythm, minor key, and dramatic build structure"
+      },
+      {
+        "title": "Rebel Yell",
+        "artist": "Billy Idol",
+        "difficulty": "Intermediate",
+        "similarity": "1980s arena rock with driving power chord rhythm and synth-rock combination"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Beginner",
+        "similarity": "Master fundamental power chord rhythm before the faster tempo and synth coordination demands"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to more complex minor key riffing with similar palm muting technique"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-05",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "arena-rock",
+      "intermediate",
+      "power-chords",
+      "synth-rock",
+      "80s-rock",
+      "anthem",
+      "palm-muting",
+      "iconic-intro"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 weeks"
+  }
+}

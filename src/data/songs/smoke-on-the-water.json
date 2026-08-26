@@ -1,0 +1,430 @@
+{
+  "songInfo": {
+    "title": "Smoke on the Water",
+    "artist": "Deep Purple",
+    "album": "Machine Head",
+    "released": "1972",
+    "genre": "Hard Rock",
+    "tempo": "112 BPM",
+    "duration": "5:40",
+    "key": "G Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G minor",
+      "scalesUsed": [
+        {
+          "scale": "G natural minor",
+          "notes": "G - A - Bb - C - D - Eb - F - G",
+          "application": "Foundation for the iconic riff and chord progressions throughout the song"
+        },
+        {
+          "scale": "G minor pentatonic",
+          "notes": "G - Bb - C - D - F",
+          "application": "Solo sections and lead guitar fills, especially the extended solo"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "2 flats (Bb, Eb)",
+      "relativeMinor": "N/A (already minor key)",
+      "relativeMajor": "Bb major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G5",
+          "Bb5",
+          "C5"
+        ],
+        "progression": "i - III - IV",
+        "description": "The iconic riff built on parallel fourths moving through the natural minor scale, creating the most recognizable guitar riff in rock history"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff",
+          "progression": "G5 - Bb5 - C5 | G5 - Bb5 - Db5 - C5",
+          "romanNumerals": "i - III - IV | i - III - bV - IV",
+          "description": "Two-bar riff using parallel fourth intervals, with the chromatic Db5 passing chord adding tension in the second bar"
+        },
+        {
+          "section": "Verse",
+          "progression": "G5 - F5 - G5",
+          "romanNumerals": "i - VII - i",
+          "description": "Simpler movement between tonic and subtonic, providing space for vocals"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C5 - G5 - C5 - Bb5 - G5",
+          "romanNumerals": "IV - i - IV - III - i",
+          "description": "More expansive harmonic movement with the IV chord adding brightness before resolving to the tonic"
+        }
+      ],
+      "harmonicFunction": [
+        "G5 (i) - Tonic power chord establishing the dark minor tonality",
+        "Bb5 (III) - Major mediant providing modal brightness within minor key",
+        "C5 (IV) - Subdominant creating upward harmonic motion and tension",
+        "Db5 (bV) - Chromatic passing chord adding dissonance and forward motion",
+        "F5 (VII) - Subtonic chord reinforcing the natural minor sound"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Parallel Fourth Intervals",
+      "description": "The signature technique of the main riff, playing two notes a perfect fourth apart simultaneously on adjacent strings, creating a thick, powerful sound without a full chord",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G5 interval: 3rd fret D string + 3rd fret G string (G and C notes)",
+          "Bb5 interval: 6th fret D string + 6th fret G string (Bb and Eb notes)",
+          "C5 interval: 8th fret D string + 8th fret G string (C and F notes)",
+          "Db5 interval: 9th fret D string + 9th fret G string (Db and Gb notes)",
+          "All shapes use the same two-string fingering moved up the neck",
+          "Use index finger barred across both strings at each fret position"
+        ],
+        "sequence": [
+          "Place your finger at the correct fret position",
+          "Strike both strings simultaneously with a downstroke",
+          "Slide to the next chord position",
+          "Move through the chord positions in sequence",
+          "Return to the starting position to complete the phrase"
+        ],
+        "tips": [
+          "Keep your fretting hand relaxed - you only need two strings",
+          "Mute surrounding strings with light finger contact to avoid noise",
+          "Practice the sliding motion between fret positions slowly at first",
+          "Focus on even volume between both strings in each interval",
+          "Let the notes ring slightly before moving to the next position"
+        ],
+        "chords": [
+          "G5",
+          "Bb5",
+          "C5",
+          "Db5"
+        ],
+        "progression": "G5 - Bb5 - C5 | G5 - Bb5 - Db5 - C5 (Main Riff)"
+      }
+    },
+    {
+      "name": "Power Chord Rhythm",
+      "description": "Standard power chord shapes used in the verse and chorus sections, providing the harmonic foundation beneath the vocals",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G5: 3-5-5-X-X-X (3rd fret low E, 5th fret A and D strings)",
+          "Bb5: 6-8-8-X-X-X (6th fret low E, 8th fret A and D strings)",
+          "C5: 8-10-10-X-X-X (8th fret low E, 10th fret A and D strings)",
+          "F5: 1-3-3-X-X-X (1st fret low E, 3rd fret A and D strings)",
+          "Use root-fifth-octave voicing for fuller sound",
+          "Consistent downstroke picking for driving rhythm"
+        ],
+        "sequence": [
+          "Position fretting hand in standard power chord shape",
+          "Play rhythm pattern with steady downstrokes",
+          "Transition smoothly between chord positions",
+          "Maintain consistent strumming velocity throughout"
+        ],
+        "tips": [
+          "Keep your wrist loose for relaxed downstrokes",
+          "Mute unused high strings by lightly resting fingers across them",
+          "Practice shifting between G5 and F5 positions until smooth",
+          "Use the full power chord shape for verse sections, intervals for the riff"
+        ],
+        "chords": [
+          "G5",
+          "Bb5",
+          "C5",
+          "F5"
+        ],
+        "progression": "G5 - F5 - G5 (Verse)"
+      }
+    },
+    {
+      "name": "Minor Pentatonic Solo Phrases",
+      "description": "Ritchie Blackmore's solo uses G minor pentatonic with expressive bends and vibrato, showcasing a blues-rock solo approach over a minor key",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based primarily on G minor pentatonic at the 3rd and 15th fret positions",
+          "Uses whole-step and half-step bends for expression",
+          "Incorporates fast pull-offs and hammer-ons",
+          "Vibrato applied to sustained bent notes for vocal-like quality"
+        ],
+        "sequence": [
+          "Begin in 3rd position G minor pentatonic",
+          "Use bending on the B and high E strings for melodic phrases",
+          "Transition to 15th position for higher register climax",
+          "Resolve phrases back to G root note"
+        ],
+        "tips": [
+          "Start by learning the G minor pentatonic box shapes",
+          "Practice bending in tune before attempting the solo",
+          "Focus on Blackmore's phrasing and note choices over speed",
+          "Use the backing track to practice timing and feel"
+        ],
+        "chords": [],
+        "progression": "Over G5 - Bb5 - C5 chord changes"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Riff (Intro)",
+      "timeStamp": "0:00-0:30",
+      "technique": "Parallel Fourth Intervals",
+      "key": "G Minor",
+      "description": "The most iconic guitar riff ever written, using parallel fourth intervals on the D and G strings to create a massive, memorable melody",
+      "chords": [
+        "G5",
+        "Bb5",
+        "C5",
+        "Db5"
+      ],
+      "progression": "G5 - Bb5 - C5 | G5 - Bb5 - Db5 - C5",
+      "notes": [
+        "Play on the D and G strings (4th and 3rd strings)",
+        "Each interval is a quarter note with slight separation",
+        "Second bar adds the chromatic Db5 passing tone before resolving to C5",
+        "Let notes ring briefly but with controlled sustain"
+      ],
+      "alphaTab": "3.6 6.6 3.5 5.5 3.4 5.4 | 3.3 5.3 3.2 6.2 3.1 6.1 | 6.1 3.1 6.2 3.2 5.3 3.3 | 5.4 3.4 5.5 3.5 6.6 3.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:15",
+      "technique": "Power Chord Rhythm",
+      "key": "G Minor",
+      "description": "Verse section drops to simpler power chord movement, creating space for the vocal melody while maintaining the dark minor tonality",
+      "chords": [
+        "G5",
+        "F5",
+        "G5"
+      ],
+      "progression": "G5 - F5 - G5 - G5",
+      "notes": [
+        "Switch from fourth intervals to full power chords",
+        "Simpler harmonic movement leaves room for vocals",
+        "Maintain driving downstroke rhythm throughout",
+        "The VII-i movement creates a strong rock cadence"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:50",
+      "technique": "Power Chord Rhythm",
+      "key": "G Minor",
+      "description": "The chorus expands the harmonic palette with more chord changes, building energy and intensity before returning to the main riff",
+      "chords": [
+        "C5",
+        "G5",
+        "Bb5"
+      ],
+      "progression": "C5 - G5 - C5 - Bb5 - G5",
+      "notes": [
+        "More chord changes than verse section",
+        "C5 to G5 movement creates a plagal (IV-i) feel",
+        "Bb5 adds color before final resolution to G5",
+        "Builds intensity heading back into the riff"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:00-4:15",
+      "technique": "Minor Pentatonic Solo Phrases",
+      "key": "G Minor",
+      "description": "Ritchie Blackmore's extended solo showcasing blues-rock phrasing with expressive bending, vibrato, and position shifts across the G minor pentatonic scale",
+      "chords": [
+        "G5",
+        "Bb5",
+        "C5"
+      ],
+      "progression": "G5 - Bb5 - C5 (repeating)",
+      "notes": [
+        "Solo is based on G minor pentatonic scale",
+        "Uses expressive whole-step bends on the B and high E strings",
+        "Combines fast legato runs with sustained bent notes",
+        "One of the most celebrated guitar solos in rock history"
+      ],
+      "alphaTab": "3.6 6.6 3.5 5.5 3.4 5.4 | 3.3 5.3 3.2 6.2 3.1 6.1 | 6.1 3.1 6.2 3.2 5.3 3.3 | 5.4 3.4 5.5 3.5 6.6 3.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Squier Classic Vibe Stratocaster",
+        "Fender Player Stratocaster",
+        "Any single-coil electric guitar"
+      ],
+      "pickup": "Neck pickup for the warm, thick riff tone; bridge pickup for solo brightness"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead 1959",
+      "alternatives": [
+        "Marshall JCM800",
+        "Marshall DSL40CR",
+        "Fender Hot Rod Deluxe with overdrive pedal"
+      ],
+      "settings": {
+        "gain": "6-7 (medium overdrive, not too saturated)",
+        "treble": "6 (present but not harsh)",
+        "middle": "7 (strong mids for the riff to cut through)",
+        "bass": "5 (moderate low end, keep it tight)",
+        "presence": "6 (enough presence to define notes clearly)"
+      }
+    },
+    "effects": {
+      "distortion": "None originally - natural amp overdrive from Marshall cranked up",
+      "delay": "None",
+      "reverb": "Light natural room reverb from amp",
+      "other": "No effects pedals - Blackmore used guitar volume knob for dynamics"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the main riff using parallel fourth intervals on two strings",
+      "steps": [
+        "Memorize the fret positions: 3, 6, 8, and 9 on the D and G strings",
+        "Practice the two-bar riff pattern slowly without a metronome",
+        "Work on clean interval shapes with both notes ringing evenly",
+        "Build up to 112 BPM tempo gradually with a metronome"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Add verse and chorus power chord sections with proper rhythm",
+      "steps": [
+        "Learn the full power chord shapes for G5, Bb5, C5, and F5",
+        "Practice transitioning between the riff and verse sections",
+        "Work on the chorus chord progression with correct timing",
+        "Play along with the full track maintaining consistent rhythm"
+      ],
+      "timeEstimate": "2-4 weeks for complete rhythm guitar part"
+    },
+    "advanced": {
+      "focus": "Learn the guitar solo and perfect the overall tone and dynamics",
+      "steps": [
+        "Master G minor pentatonic scale in multiple positions",
+        "Learn the solo phrase by phrase with attention to bending accuracy",
+        "Work on vibrato technique for sustained notes",
+        "Combine all sections into a complete performance with dynamic control"
+      ],
+      "timeEstimate": "4-8 weeks for complete mastery including solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the riff with full power chords instead of two-note fourth intervals",
+      "Not muting the surrounding strings, causing unwanted noise",
+      "Rushing the rhythm - each note needs its full rhythmic value",
+      "Uneven volume between the two strings in each interval",
+      "Sliding too quickly between positions without letting notes ring"
+    ],
+    "practiceRoutine": [
+      "Warm up with chromatic exercises on the D and G strings for 5 minutes",
+      "Practice the main riff slowly at 60 BPM, focusing on clean intervals",
+      "Increase tempo by 10 BPM increments until reaching 112 BPM",
+      "Work on verse power chord transitions for 10 minutes",
+      "Play through entire song structure with backing track"
+    ],
+    "focusAreas": [
+      "Clean two-note interval technique on adjacent strings",
+      "Accurate fret position changes along the neck",
+      "Consistent rhythm and timing at 112 BPM",
+      "String muting to keep unused strings silent",
+      "Smooth transitions between riff and chord sections"
+    ],
+    "metronomeWork": [
+      "Start at 60 BPM playing the riff with quarter notes",
+      "Gradually increase to 80 BPM once clean at lower tempo",
+      "Work through 90, 100, 110 BPM in stages",
+      "Target 112 BPM for full-speed performance",
+      "Practice verse chord changes with metronome at half tempo first"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Highway Star",
+        "difficulty": "Advanced",
+        "similarity": "Same album (Machine Head), showcases Blackmore's faster playing style"
+      },
+      {
+        "title": "Burn",
+        "difficulty": "Advanced",
+        "similarity": "Classic Deep Purple riff-based song with similar power chord foundation"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Classic rock power chord riff with similar rhythmic approach"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic riff-driven song using power chords and minor tonality"
+      },
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Another iconic single-idea riff that every guitarist learns"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Even simpler iconic riff - great starting point"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to full power chord riffs with more complex rhythm"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Advanced",
+        "similarity": "More complex iconic riff requiring greater fretting hand dexterity"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "power-chords",
+      "iconic-riff"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

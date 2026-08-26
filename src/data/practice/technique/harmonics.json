@@ -1,0 +1,288 @@
+{
+  "slug": "harmonics",
+  "category": "technique",
+  "pageInfo": {
+    "pageTitle": "Harmonics",
+    "subtitle": "Learn natural and artificial harmonics to add bell-like tones and ethereal textures to your playing.",
+    "heroGradient": "bg-gradient-to-br from-violet-50 to-purple-100",
+    "heroTitle": "Natural & Artificial Harmonics",
+    "heroDescription": "Harmonics produce bell-like, chiming tones that ring differently from normal fretted notes. They're created by lightly touching the string at specific nodal points. From Jimi Hendrix to metallica's intro harmonics, this technique adds a magical, otherworldly dimension to your guitar playing."
+  },
+  "guidelines": {
+    "title": "Harmonics Guidelines",
+    "columns": [
+      {
+        "title": "Natural Harmonics",
+        "items": [
+          { "bulletColor": "text-violet-500", "text": "Touch the string lightly directly over the fret wire (not between frets)" },
+          { "bulletColor": "text-violet-500", "text": "Lift your finger off immediately after picking" },
+          { "bulletColor": "text-violet-500", "text": "The strongest harmonics are at frets 12, 7, and 5" },
+          { "bulletColor": "text-violet-500", "text": "Use the bridge pickup for clearer harmonic tone" }
+        ]
+      },
+      {
+        "title": "Artificial Harmonics",
+        "items": [
+          { "bulletColor": "text-purple-500", "text": "Fret a note normally, then touch 12 frets higher with picking hand" },
+          { "bulletColor": "text-purple-500", "text": "Pinch harmonics: catch the string with thumb edge after picking" },
+          { "bulletColor": "text-purple-500", "text": "Tap harmonics: tap 12 frets above the fretted note" },
+          { "bulletColor": "text-purple-500", "text": "Add distortion to make harmonics speak more easily" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Natural Harmonics",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "12th Fret Harmonics",
+          "difficulty": "Beginner",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "Lightly touch each string directly above the 12th fret wire and pick. The 12th fret harmonic produces the same note as the open string, one octave higher. These are the easiest harmonics to produce.",
+          "notation": {
+            "title": "12th Fret Natural Harmonics",
+            "alphaTex": "\\ts 4 4\n12.6.4 12.5.4 12.4.4 12.3.4 | 12.2.4 12.1.4 12.2.4 12.3.4 | 12.4.4 12.5.4 12.6.4 r.4",
+            "staveTitle": "Natural Harmonics at Fret 12"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
+            "title": "Practice Notes",
+            "text": "Position your fretting finger directly over the fret wire, not between frets as with normal playing. Barely touch the string - use the lightest possible pressure. Pick near the bridge for brightest tone.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "7th and 5th Fret Harmonics",
+          "difficulty": "Beginner",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "The 7th fret produces harmonics one octave plus a fifth above the open string. The 5th fret produces harmonics two octaves above. These require slightly more precise finger placement than 12th fret harmonics.",
+          "notation": {
+            "title": "7th and 5th Fret Harmonics",
+            "alphaTex": "\\ts 4 4\n7.6.4 7.5.4 7.4.4 7.3.4 | 7.2.4 7.1.4 r.2 | 5.6.4 5.5.4 5.4.4 5.3.4 | 5.2.4 5.1.4 r.2",
+            "staveTitle": "Harmonics at Frets 7 and 5"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "The 7th fret harmonic should match the 12th fret on the next thinner string (e.g., 7th fret on string 6 = same pitch as 12th fret on string 5). Use this to tune your guitar.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Harmonic Chime Patterns",
+          "difficulty": "Intermediate",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Combine harmonics from different frets to create bell-like melodic patterns. Mix 12th, 7th, and 5th fret harmonics across strings to build chiming arpeggiated textures. Let notes ring into each other.",
+          "notation": {
+            "title": "Harmonic Chime Pattern",
+            "alphaTex": "\\ts 4 4\n12.6.4 12.5.4 7.4.4 5.3.4 | 7.2.4 12.1.4 7.1.4 5.1.4 | 12.1.4 7.2.4 5.3.4 7.4.4 | 12.5.4 12.6.4 r.2",
+            "staveTitle": "Mixed Harmonic Chimes"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Let every harmonic ring as long as possible. Add reverb for a beautiful atmospheric effect. This style is used by players like Andy McKee, Michael Hedges, and in many movie soundtracks.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Artificial Harmonics",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Pinch Harmonics",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Hold the pick with very little exposed, then strike the string so your thumb flesh catches the string immediately after the pick. This produces a squealing harmonic. Common in rock and metal. Use the bridge pickup with distortion for best results.",
+          "notation": {
+            "title": "Pinch Harmonic Practice",
+            "alphaTex": "\\ts 4 4\n7.4.2 r.2 | 5.5.2 r.2 | 7.3.2 r.2 | 9.4.2 r.2",
+            "staveTitle": "Pinch Harmonics on Various Strings"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Experiment with pick position between neck and bridge pickup. Each position produces a different harmonic pitch. Adding vibrato to pinch harmonics (like Zakk Wylde) makes them scream.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Tap Harmonics",
+          "difficulty": "Advanced",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Fret a note with your left hand, then tap the string sharply at 12 frets above the fretted note with a right-hand finger. Immediately pull the tapping finger off. This produces a harmonic one octave above the fretted note.",
+          "notation": {
+            "title": "Tap Harmonics",
+            "alphaTex": "\\ts 4 4\n5.2.4 r.4 7.2.4 r.4 | 5.3.4 r.4 7.3.4 r.4 | 3.1.4 r.4 5.1.4 r.4 | 7.1.4 r.4 8.1.4 r.4",
+            "staveTitle": "Tap Harmonics - Fret + 12"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
+            "title": "Practice Notes",
+            "text": "The tap must be quick and precise - like a hummingbird touching down and immediately lifting off. Too slow or too hard and you get a fretted note instead of a harmonic.",
+            "tempo": "50 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Harmonic Melody",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Combine natural and artificial harmonics to play a simple melody. This exercises your ability to switch between harmonic types while maintaining a musical context. Use natural harmonics for sustained notes and pinch harmonics for accents.",
+          "notation": {
+            "title": "Harmonic Melody - Amazing Grace Fragment",
+            "alphaTex": "\\ts 3 4\n12.4.4 12.2.4 12.1.4 | 12.2.2 12.3.4 | 12.4.2 7.4.4 | 5.5.2 r.4",
+            "staveTitle": "Melody Using Natural Harmonics"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "When playing melodies with harmonics, focus on making each note speak clearly and letting them sustain. Not all notes are available as natural harmonics, so plan your fingering around harmonic positions.",
+            "tempo": "60 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Harmonics Mastery Tips",
+    "items": [
+      {
+        "title": "Getting Clear Harmonics",
+        "colorBg": "bg-gradient-to-br from-violet-50 to-purple-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-900",
+        "colorText": "text-violet-800",
+        "bulletColor": "text-violet-500",
+        "items": [
+          "Fresh strings produce much clearer harmonics than old, dead strings",
+          "Picking closer to the bridge yields brighter, more defined harmonics",
+          "Use the lightest possible touch for natural harmonics",
+          "A little compression or overdrive helps harmonics sustain longer"
+        ]
+      },
+      {
+        "title": "Famous Harmonics Moments",
+        "colorBg": "bg-gradient-to-br from-purple-50 to-fuchsia-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-900",
+        "colorText": "text-purple-800",
+        "bulletColor": "text-purple-500",
+        "items": [
+          "Metallica 'Nothing Else Matters' intro - natural harmonics melody",
+          "Tool uses extensive natural harmonics for atmospheric intros",
+          "Zakk Wylde is the king of pinch harmonics in heavy rock",
+          "Yes 'Roundabout' intro features cascading natural harmonics"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Explore More Techniques",
+    "description": "Expand your technique repertoire with related skills.",
+    "gradientFrom": "from-violet-50",
+    "gradientTo": "to-purple-50",
+    "borderColor": "border-violet-200",
+    "links": [
+      {
+        "href": "/lessons/practice/technique/tapping",
+        "title": "Tapping",
+        "description": "Combine tapping with harmonics for advanced two-hand techniques.",
+        "linkText": "Learn tapping",
+        "icon": "👆",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "href": "/lessons/practice/technique/bending-vibrato",
+        "title": "Bending & Vibrato",
+        "description": "Add vibrato to harmonics for sustain and expression.",
+        "linkText": "Add vibrato",
+        "icon": "〰️",
+        "hoverBorder": "hover:border-rose-300",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "href": "/lessons/practice/technique/alternate-picking",
+        "title": "Alternate Picking",
+        "description": "Develop the picking precision needed for clean harmonic articulation.",
+        "linkText": "Precise picking",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Harmonics Practice",
+    "items": [
+      { "category": "Guitar", "product": "PRS SE Custom 24", "reason": "Excellent sustain and intonation make harmonics ring out clearly across the fretboard" },
+      { "category": "Strings", "product": "Ernie Ball Regular Slinky", "reason": "Nickel-wound strings produce bright harmonics with good sustain" },
+      { "category": "Pedal", "product": "Boss CH-1 Super Chorus", "reason": "Chorus effect enhances and thickens harmonic overtones beautifully" }
+    ]
+  }
+}

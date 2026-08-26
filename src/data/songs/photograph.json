@@ -1,0 +1,505 @@
+{
+  "songInfo": {
+    "title": "Photograph",
+    "artist": "Def Leppard",
+    "album": "Pyromania",
+    "released": "1983",
+    "genre": "Arena Rock / Hard Rock",
+    "tempo": "128 BPM",
+    "duration": "4:08",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for the bright, soaring chord progressions and layered guitar harmonies"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar fills and solo sections; the minor pentatonic against the major key creates the classic rock tension"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Harmony guitar lines and the brighter lead passages in the dual guitar arrangement"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with a bright, anthemic quality driven by the dual guitar layering and Mutt Lange's polished production",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "A5",
+          "B5",
+          "C#5"
+        ],
+        "progression": "I - IV - V - vi",
+        "description": "Driving power chord progression with the vi chord (C#5/C#m) adding emotional depth to the bright major key. Def Leppard's layered production makes these simple power chords sound massive."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "E5 - B5 - A5 - E5",
+          "romanNumerals": "I - V - IV - I",
+          "description": "The opening riff with dual guitars playing tight, interlocking power chord parts with rhythmic precision"
+        },
+        {
+          "section": "Verse",
+          "progression": "E5 - A5 - B5 - E5",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Simplified I-IV-V movement providing space for the vocal melody while maintaining driving energy"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "A5 - B5 - C#5 - A5 - B5",
+          "romanNumerals": "IV - V - vi - IV - V",
+          "description": "Ascending progression building tension with the C#5 minor quality adding emotional urgency before the chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - B5 - A5 - B5 - E5",
+          "romanNumerals": "I - V - IV - V - I",
+          "description": "The massive anthem chorus with layered guitars, all power chords ringing with maximum sustain and the Mutt Lange wall-of-sound production"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "E5 - A5 - B5 - A5",
+          "romanNumerals": "I - IV - V - IV",
+          "description": "Dual-harmony lead lines over the verse progression, showcasing Steve Clark and Phil Collen's signature interplay"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Tonic power chord, the bright, energetic foundation of the song",
+        "A5 (IV) - Subdominant adding warmth and harmonic movement",
+        "B5 (V) - Dominant chord providing forward drive and resolution to the tonic",
+        "C#5 (vi) - Minor quality chord adding emotional depth and pre-chorus tension"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Tight Rhythmic Power Chords",
+      "description": "Precisely timed power chord rhythm playing with two guitars interlocking to create Def Leppard's signature wall of sound, requiring rhythmic accuracy and tight palm muting",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (open E power chord)",
+          "A5: X-0-2-2-X-X (open A power chord)",
+          "B5: X-2-4-4-X-X (barre power chord at 2nd fret)",
+          "C#5: X-4-6-6-X-X (barre power chord at 4th fret)",
+          "Two rhythm guitar parts interlock: one plays straight power chords, the other adds accents and variations",
+          "Tom Scholz-influenced Rockman tone creates the compressed, layered sound"
+        ],
+        "sequence": [
+          "Establish the E5 power chord with tight, controlled strumming",
+          "Move to A5 using the same rhythmic pattern",
+          "Slide up to B5 maintaining rhythmic precision",
+          "Return to E5 completing the cycle",
+          "Layer a second guitar part with complementary rhythm accents"
+        ],
+        "tips": [
+          "Rhythmic precision is more important than aggressive strumming in Def Leppard's style",
+          "Both guitars must lock in tightly - practice with a metronome obsessively",
+          "The production-heavy tone can be approximated with moderate gain and compression",
+          "Keep power chords clean without extra string noise for the polished sound"
+        ],
+        "chords": [
+          "E5",
+          "A5",
+          "B5",
+          "C#5"
+        ],
+        "progression": "E5 - A5 - B5 - E5 (I - IV - V - I)"
+      }
+    },
+    {
+      "name": "Dual Guitar Harmonies",
+      "description": "The signature Def Leppard technique where two lead guitars play harmonized lines a third or sixth apart, creating the massive, orchestral sound that defines their arena rock style",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Guitar 1 plays the primary melody line in E major pentatonic",
+          "Guitar 2 harmonizes a third above (or sixth below) following the key signature",
+          "The harmonies follow the chord tones so they shift between major and minor thirds",
+          "Classic harmonized line: Guitar 1 plays E-F#-G#-A while Guitar 2 plays G#-A-B-C#",
+          "Both parts must match rhythm and vibrato exactly for the unified sound"
+        ],
+        "sequence": [
+          "Learn the primary melody line first in isolation",
+          "Identify the harmony intervals (thirds within E major scale)",
+          "Practice the harmony part separately until it is fully memorized",
+          "Combine both parts with a recording or loop pedal",
+          "Focus on matching timing, vibrato width, and dynamics exactly"
+        ],
+        "tips": [
+          "Use a loop pedal to practice the harmony by recording one part and playing the other",
+          "The thirds harmonize within the E major scale, so G# will harmonize with E (major third) and F# with A (minor third)",
+          "Both players need identical picking dynamics and vibrato for the sound to gel",
+          "Study Iron Maiden and Thin Lizzy for similar dual guitar harmony approaches"
+        ],
+        "chords": [],
+        "progression": "Harmonized lead lines over E5 - A5 - B5 progression"
+      }
+    },
+    {
+      "name": "Palm-Muted Eighth-Note Rhythm",
+      "description": "Tight palm-muted eighth-note strumming that drives the verse sections with controlled power, creating the rhythmic backbone beneath the vocal and lead guitar layers",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Palm muting on the low E and A strings for the power chord roots",
+          "Consistent eighth-note downstrokes at 128 BPM",
+          "Selective lifting of the palm mute on accented beats for dynamic contrast",
+          "The muted notes create a percussive foundation that locks with the drums"
+        ],
+        "sequence": [
+          "Rest the picking hand palm on the strings at the bridge",
+          "Play consistent eighth-note downstrokes on the E5 root note",
+          "Lift the palm mute on beat 1 of each bar for an accented open chord hit",
+          "Return to muted chugging for the remaining beats",
+          "Transition smoothly between chords while maintaining the muting pattern"
+        ],
+        "tips": [
+          "The palm muting should be light enough to hear the pitch, not fully dead notes",
+          "At 128 BPM, consistent downstrokes require right-hand stamina - build gradually",
+          "The contrast between muted and open notes creates Def Leppard's rhythmic dynamic",
+          "Use a compressor pedal to even out the dynamics between muted and open hits"
+        ],
+        "chords": [
+          "E5",
+          "A5",
+          "B5"
+        ],
+        "progression": "Palm-muted E5 with periodic open chord accents"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:20",
+      "technique": "Tight Rhythmic Power Chords",
+      "key": "E Major",
+      "description": "The driving intro with dual guitars playing interlocking power chord rhythms, establishing the song's energetic tempo and the layered Def Leppard sound immediately",
+      "chords": [
+        "E5",
+        "B5",
+        "A5"
+      ],
+      "progression": "E5 - B5 - A5 - E5",
+      "notes": [
+        "Two guitar parts interlock for the layered intro sound",
+        "Tight rhythmic precision is essential - lock in with the drum pattern",
+        "The intro riff is the song's signature hook - play it with conviction",
+        "Moderate gain with compression creates the polished production sound"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:20-0:55",
+      "technique": "Palm-Muted Eighth-Note Rhythm",
+      "key": "E Major",
+      "description": "Driving verse with palm-muted rhythm guitar supporting the vocal melody, using the I-IV-V progression with tight, controlled playing",
+      "chords": [
+        "E5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - A5 - B5 - E5",
+      "notes": [
+        "Palm muting creates a tight, driving rhythm beneath the vocal",
+        "Leave dynamic space for the vocal melody to cut through",
+        "The second guitar may add subtle harmony fills between vocal lines",
+        "Keep the rhythm locked to the kick drum and snare pattern"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "0:55-1:12",
+      "technique": "Tight Rhythmic Power Chords",
+      "key": "E Major",
+      "description": "Building section with the ascending power chord movement IV-V-vi creating upward momentum and emotional urgency before the chorus explosion",
+      "chords": [
+        "A5",
+        "B5",
+        "C#5"
+      ],
+      "progression": "A5 - B5 - C#5 - A5 - B5",
+      "notes": [
+        "The ascending chord motion creates natural energy buildup",
+        "Reduce palm muting as the section builds toward the chorus",
+        "The C#5 adds minor-quality tension that demands resolution",
+        "Both guitars converge on the same rhythm for maximum impact"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:12-1:50",
+      "technique": "Tight Rhythmic Power Chords",
+      "key": "E Major",
+      "description": "The massive anthem chorus with the 'Photograph' hook - all guitars at full volume with layered power chords and the signature wall-of-sound production",
+      "chords": [
+        "E5",
+        "B5",
+        "A5"
+      ],
+      "progression": "E5 - B5 - A5 - B5 - E5",
+      "notes": [
+        "Maximum sustain and volume - lift all palm muting for the full chorus sound",
+        "The layered production creates the illusion of many more than two guitars",
+        "Full downstroke power on every chord change for arena-filling impact",
+        "The I-V-IV-V-I resolution is the ultimate stadium rock cadence"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "1:50-2:25",
+      "technique": "Palm-Muted Eighth-Note Rhythm",
+      "key": "E Major",
+      "description": "Second verse pulling dynamics back from the chorus with palm-muted rhythm guitar, maintaining forward momentum while giving the vocal space",
+      "chords": [
+        "E5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - A5 - B5 - E5",
+      "notes": [
+        "Pull the dynamics back from chorus level to verse level",
+        "Palm muting returns for the controlled verse rhythm",
+        "Second verse often adds subtle guitar fills between vocal phrases",
+        "Maintain rhythmic precision throughout the dynamic reduction"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:55-3:30",
+      "technique": "Dual Guitar Harmonies",
+      "key": "E Major",
+      "description": "The dual-harmony guitar solo featuring Steve Clark and Phil Collen playing harmonized lead lines in thirds, the quintessential Def Leppard moment",
+      "chords": [
+        "E5",
+        "A5",
+        "B5",
+        "A5"
+      ],
+      "progression": "E5 - A5 - B5 - A5",
+      "notes": [
+        "Two guitars play harmonized lines a third apart following the E major scale",
+        "The primary melody uses E minor/major pentatonic at the 12th position",
+        "Both guitar parts must match timing and vibrato exactly",
+        "Build to a climactic high note with unison bends before returning to the chorus"
+      ],
+      "alphaTab": "12.6 14.6 11.5 14.5 11.4 14.4 | 11.3 13.3 12.2 14.2 12.1 14.1 | 14.1 12.1 14.2 12.2 13.3 11.3 | 14.4 11.4 14.5 11.5 14.6 12.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:30-4:08",
+      "technique": "Tight Rhythmic Power Chords",
+      "key": "E Major",
+      "description": "Extended final chorus with repeated 'Photograph' hook, building to maximum intensity with all guitar layers at full power for the anthemic conclusion",
+      "chords": [
+        "E5",
+        "B5",
+        "A5"
+      ],
+      "progression": "E5 - B5 - A5 - B5 - E5",
+      "notes": [
+        "Maximum energy with all layers engaged for the final statement",
+        "Repeated chorus hook builds anthemic crowd participation",
+        "Dual harmony guitar fills punctuate between vocal phrases",
+        "The song concludes with a decisive E5 power chord resolution"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard",
+      "alternatives": [
+        "Epiphone Les Paul",
+        "Gibson Les Paul Custom",
+        "Jackson Soloist",
+        "Any dual-humbucker guitar with moderate output pickups"
+      ],
+      "pickup": "Bridge humbucker for rhythm power chords; both pickups for the warm harmony lead tone"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 or Rockman headphone amp (for the Mutt Lange production sound)",
+      "alternatives": [
+        "Marshall Plexi 1959",
+        "Mesa Boogie Mark III",
+        "Friedman BE-100",
+        "Boss Katana with preamp modeling"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate gain - the compressed production makes it sound heavier than it is)",
+        "treble": "7 (bright and cutting for the layered sound)",
+        "middle": "5-6 (balanced midrange avoids muddiness in the mix)",
+        "bass": "5 (tight low end for clarity with multiple guitar layers)",
+        "presence": "7 (high presence for mix-cutting clarity)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate amp gain is the foundation. The Rockman headphone amp was actually used on the recording for its compressed, layered tone.",
+      "delay": "Short stereo delay (200-300ms) for width and depth in the layered guitar sound",
+      "reverb": "Medium plate reverb for the polished studio sound",
+      "other": "Compressor pedal is essential for the even, polished Def Leppard tone. Chorus for subtle thickening on rhythm parts. EQ pedal for mid-boost on lead sections."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic E5, A5, B5 power chord shapes and the main chord progression",
+      "steps": [
+        "Master open E5 and A5 power chord shapes",
+        "Learn the B5 barre power chord at the 2nd fret",
+        "Practice the I-IV-V progression with basic downstrokes",
+        "Play along with the chorus section at reduced tempo"
+      ],
+      "timeEstimate": "2-3 weeks for basic power chord progression"
+    },
+    "intermediate": {
+      "focus": "Develop the tight rhythmic precision, palm muting dynamics, and full song structure",
+      "steps": [
+        "Add the C#5 power chord for the pre-chorus section",
+        "Practice palm-muted eighth-note rhythm at gradually increasing tempo",
+        "Work on the verse-to-chorus dynamic transition",
+        "Build right-hand stamina for consistent playing at 128 BPM"
+      ],
+      "timeEstimate": "3-5 weeks for solid rhythm guitar performance"
+    },
+    "advanced": {
+      "focus": "Master the dual guitar harmonies, solo techniques, and authentic tone recreation",
+      "steps": [
+        "Learn the primary solo melody in E pentatonic",
+        "Practice the harmony part a third above the melody",
+        "Use a loop pedal to combine both parts",
+        "Refine the compressed, layered tone using effects and amp settings"
+      ],
+      "timeEstimate": "6-8 weeks for complete dual guitar performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing too aggressively - Def Leppard's power comes from precision and layering, not raw gain",
+      "Inconsistent palm muting between chord changes during the verse",
+      "Not matching the rhythmic precision required for the interlocking dual guitar parts",
+      "Using too much distortion - the Rockman tone is compressed and moderate, not heavily saturated"
+    ],
+    "practiceRoutine": [
+      "Warm up with E5-A5-B5 power chord transitions with metronome at 100 BPM (5 minutes)",
+      "Practice palm-muted verse rhythm with accent pattern at increasing tempo (5 minutes)",
+      "Work on the pre-chorus ascending progression A5-B5-C#5 (5 minutes)",
+      "Practice the dual harmony melody and harmony parts separately (5 minutes)",
+      "Full song run-through at 128 BPM focusing on rhythmic tightness (5 minutes)"
+    ],
+    "focusAreas": [
+      "Rhythmic precision and tightness for the dual guitar interplay",
+      "Palm muting control for dynamic contrast between verse and chorus",
+      "Clean power chord transitions without excess string noise",
+      "Dual guitar harmony accuracy (intervals and timing)"
+    ],
+    "metronomeWork": [
+      "Start at 100 BPM with the basic power chord progression",
+      "Increase by 5 BPM increments toward the 128 BPM target",
+      "Practice with metronome on beats 2 and 4 (backbeat) for rock feel",
+      "Work on palm-muted eighth notes at tempo with perfectly even rhythm"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Pour Some Sugar on Me",
+        "difficulty": "Intermediate",
+        "similarity": "Same layered production style with driving power chord rhythm and massive chorus"
+      },
+      {
+        "title": "Rock of Ages",
+        "difficulty": "Intermediate",
+        "similarity": "Similar dual guitar arrangement with anthemic chorus and arena rock energy"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Power chord-driven arena rock with tight rhythmic precision and iconic riff"
+      },
+      {
+        "title": "Summer of '69",
+        "artist": "Bryan Adams",
+        "difficulty": "Intermediate",
+        "similarity": "Bright major-key arena rock anthem with similar power chord vocabulary"
+      },
+      {
+        "title": "The Trooper",
+        "artist": "Iron Maiden",
+        "difficulty": "Advanced",
+        "similarity": "Dual guitar harmonies in thirds - the same harmonic technique applied in a metal context"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Start with AC/DC's simpler power chord approach before tackling the layered Def Leppard style"
+      },
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "difficulty": "Advanced",
+        "similarity": "Progress to more complex riffing with similar major-key rock energy"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 86,
+    "dateAdded": "2026-03-05",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "arena-rock",
+      "hard-rock",
+      "intermediate",
+      "power-chords",
+      "dual-guitar",
+      "80s-rock",
+      "anthem"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 weeks"
+  }
+}

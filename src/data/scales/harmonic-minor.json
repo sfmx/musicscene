@@ -1,0 +1,428 @@
+{
+  "scaleInfo": {
+    "name": "Harmonic Minor Scale",
+    "alternateName": "Harmonic Minor",
+    "scaleType": "Heptatonic",
+    "noteCount": 7,
+    "intervalPattern": "W-H-W-W-H-Aug2-H",
+    "character": "Exotic, dramatic, mysterious with a distinctive augmented 2nd interval",
+    "mood": ["exotic", "dramatic", "mysterious", "dark", "intense"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - \u266d3 - 4 - 5 - \u266d6 - 7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Minor 3rd (Mediant)",
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Minor 6th (Submediant)",
+      "Major 7th (Leading Tone) - Characteristic tone",
+      "Octave"
+    ],
+    "mode": "Not a mode of major scale - independent scale family derived from natural minor with raised 7th",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Relative Major",
+      "intervalDistance": "Minor 3rd up from harmonic minor root (A Harmonic Minor relates to C Major key signature)"
+    },
+    "parallelScale": {
+      "name": "Natural Minor Scale",
+      "differences": ["Raised 7th (natural 7th vs flat 7th)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "A Harmonic Minor",
+      "notes": "A - B - C - D - E - F - G# - A",
+      "keySignature": "No sharps or flats (plus G#)",
+      "accidentals": "G#",
+      "commonUse": "Most common harmonic minor key on guitar, open position friendly"
+    },
+    {
+      "key": "E Harmonic Minor",
+      "notes": "E - F# - G - A - B - C - D# - E",
+      "keySignature": "1 sharp (F#, plus D#)",
+      "accidentals": "F#, D#",
+      "commonUse": "Natural guitar key, open position with dramatic character"
+    },
+    {
+      "key": "B Harmonic Minor",
+      "notes": "B - C# - D - E - F# - G - A# - B",
+      "keySignature": "2 sharps (F#, C#, plus A#)",
+      "accidentals": "F#, C#, A#",
+      "commonUse": "Higher position lead work, neoclassical metal favorite"
+    },
+    {
+      "key": "C Harmonic Minor",
+      "notes": "C - D - E\u266d - F - G - A\u266d - B - C",
+      "keySignature": "3 flats (E\u266d, A\u266d, B\u266d) with B natural",
+      "accidentals": "E\u266d, A\u266d, B\u266e",
+      "commonUse": "Classical position, common in classical and film score writing"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (A Harmonic Minor)",
+        "description": "Natural guitar key with open strings. Root on 5th string, features the dramatic augmented 2nd between F and G#.",
+        "fretDiagram": "Uses open strings and first 4 frets, strings 5-2",
+        "alphaTex": "0.5 2.5 3.5 0.4 2.4 3.4 1.3 2.3 0.2 1.2 4.2 0.1 1.1 4.1",
+        "applications": ["classical guitar", "metal riffs", "beginner learning", "acoustic playing"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "Open Position (E Harmonic Minor)",
+        "description": "Another natural guitar key starting from open 6th string, full range position",
+        "fretDiagram": "Uses open strings and first 4 frets, strings 6-4",
+        "alphaTex": "0.6 2.6 3.6 0.5 2.5 3.5 1.4 2.4 0.3 1.3 4.3 0.2 1.2 4.2",
+        "applications": ["neoclassical metal", "classical foundations", "dramatic compositions"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "5th Position (D Harmonic Minor)",
+        "description": "Higher position for lead work and soloing, moveable pattern for all keys",
+        "fretDiagram": "5th-9th frets, extended range",
+        "alphaTex": "5.5 7.5 8.5 5.4 7.4 8.4 6.3 7.3 5.2 6.2 9.2 5.1 6.1 9.1",
+        "applications": ["lead guitar", "solos", "neoclassical shredding", "jazz"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open (A Harmonic Minor)",
+        "frets": "0-4",
+        "difficulty": "Beginner",
+        "usage": "Classical guitar, fundamental harmonic minor shapes"
+      },
+      {
+        "position": "Open (E Harmonic Minor)",
+        "frets": "0-4",
+        "difficulty": "Beginner",
+        "usage": "Metal riffs, dramatic open position playing"
+      },
+      {
+        "position": "7th Fret (B Harmonic Minor)",
+        "frets": "7-11",
+        "difficulty": "Intermediate",
+        "usage": "Neoclassical lead work, upper register solos"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Tonic - Home chord, dramatic minor center",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "ii\u00b0",
+        "chord": "Bdim",
+        "quality": "Diminished",
+        "function": "Supertonic - Diminished quality adds tension",
+        "notes": "B - D - F"
+      },
+      {
+        "degree": "\u266dIII+",
+        "chord": "Caug",
+        "quality": "Augmented",
+        "function": "Mediant - Augmented triad, exotic color from the raised 7th",
+        "notes": "C - E - G#"
+      },
+      {
+        "degree": "iv",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Subdominant - Standard minor subdominant function",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "V",
+        "chord": "E",
+        "quality": "Major",
+        "function": "Dominant - Major dominant chord (THE key feature of harmonic minor), strong V-i resolution",
+        "notes": "E - G# - B"
+      },
+      {
+        "degree": "\u266dVI",
+        "chord": "F",
+        "quality": "Major",
+        "function": "Submediant - Major chord providing contrast and color",
+        "notes": "F - A - C"
+      },
+      {
+        "degree": "vii\u00b0",
+        "chord": "G#dim",
+        "quality": "Diminished",
+        "function": "Leading tone - Strong pull to tonic, dramatic resolution",
+        "notes": "G# - B - D"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Classical Cadence (V-i)",
+        "chords": ["E", "Am"],
+        "romanNumerals": "V - i",
+        "description": "The fundamental harmonic minor cadence - the raised 7th creates a major V chord that resolves powerfully to the minor tonic",
+        "genre": "Classical/Metal",
+        "alphaTex": "(0.6 2.5 2.4 1.3).2 (0.6 2.5 2.4 1.3).2 (0.5 2.4 2.3 0.2).2 (0.5 2.4 2.3 0.2).2"
+      },
+      {
+        "name": "Minor Cadence (i-iv-V-i)",
+        "chords": ["Am", "Dm", "E", "Am"],
+        "romanNumerals": "i - iv - V - i",
+        "description": "Full harmonic minor cadence with subdominant approach, the backbone of classical minor key harmony",
+        "genre": "Classical/Baroque",
+        "alphaTex": "(0.5 2.4 2.3 0.2).1 (0.4 2.3 3.2 1.1).1 (0.6 2.5 2.4 1.3).1 (0.5 2.4 2.3 0.2).1"
+      },
+      {
+        "name": "Andalusian Cadence (i-\u266dVII-\u266dVI-V)",
+        "chords": ["Am", "G", "F", "E"],
+        "romanNumerals": "i - \u266dVII - \u266dVI - V",
+        "description": "Descending bass line progression with dramatic resolution through the major V chord, common in Flamenco and Spanish music",
+        "genre": "Flamenco/World",
+        "alphaTex": "(0.5 2.4 2.3 0.2).1 (3.6 0.5 0.4 0.3).1 (1.6 3.5 3.4 1.3).1 (0.6 2.5 2.4 1.3).1"
+      },
+      {
+        "name": "Neoclassical Progression (i-\u266dVI-iv-V)",
+        "chords": ["Am", "F", "Dm", "E"],
+        "romanNumerals": "i - \u266dVI - iv - V",
+        "description": "Common in neoclassical metal and film scores, builds dramatic tension before dominant resolution",
+        "genre": "Metal/Film",
+        "alphaTex": "(0.5 2.4 2.3 0.2).1 (1.6 3.5 3.4 1.3).1 (0.4 2.3 3.2 1.1).1 (0.6 2.5 2.4 1.3).1"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Classical",
+      "usage": "Foundation of classical minor key harmony, essential for V7-i resolutions",
+      "characteristics": ["V7-i resolutions", "Baroque and Classical compositions", "leading tone function", "dramatic tension and release"],
+      "examples": ["Bach - Invention No. 4 in D minor", "Mozart - Requiem in D minor", "Chopin - Various Nocturnes"]
+    },
+    {
+      "genre": "Metal",
+      "usage": "Neoclassical metal solos and dark, dramatic riffs and compositions",
+      "characteristics": ["neoclassical solos", "progressive compositions", "dark dramatic riffs", "symphonic arrangements"],
+      "examples": ["Yngwie Malmsteen compositions", "Jason Becker solos", "Symphony X", "Dream Theater"]
+    },
+    {
+      "genre": "World Music",
+      "usage": "Middle Eastern, Spanish, and Eastern European folk traditions share harmonic minor's exotic character",
+      "characteristics": ["Middle Eastern scales", "Flamenco guitar", "Jewish klezmer music", "Eastern European folk"],
+      "examples": ["Flamenco compositions", "Klezmer traditional music", "Middle Eastern maqam", "Romani music"]
+    },
+    {
+      "genre": "Film Scores",
+      "usage": "Creates suspense, darkness, and dramatic tension in horror and drama soundtracks",
+      "characteristics": ["suspense building", "dramatic underscore", "exotic atmospheres", "tension and release"],
+      "examples": ["Horror film soundtracks", "Drama underscore", "Mystery themes", "Period film music"]
+    },
+    {
+      "genre": "Progressive Metal",
+      "usage": "Complex harmonic structures combining classical influences with metal power",
+      "characteristics": ["complex harmony", "technical solos", "dramatic compositions", "classical-metal fusion"],
+      "examples": ["Symphony X", "Dream Theater", "Opeth", "Kamelot"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Invention No. 4 in D minor",
+      "artist": "J.S. Bach",
+      "key": "D Harmonic Minor",
+      "genre": "Classical",
+      "usage": "Masterful use of harmonic minor demonstrating classical harmony perfectly",
+      "difficulty": "Advanced",
+      "learningValue": "Demonstrates classical harmonic minor voice leading and counterpoint"
+    },
+    {
+      "title": "Requiem in D minor",
+      "artist": "Mozart",
+      "key": "D Harmonic Minor",
+      "genre": "Classical",
+      "usage": "Dramatic harmonic minor passages showcasing the scale's emotional power",
+      "difficulty": "Advanced",
+      "learningValue": "Shows the scale's extraordinary emotional range and dramatic tension"
+    },
+    {
+      "title": "Various Nocturnes",
+      "artist": "Chopin",
+      "key": "Various Minor Keys",
+      "genre": "Classical/Romantic",
+      "usage": "Romantic period harmonic minor with elegant melodic and harmonic treatment",
+      "difficulty": "Advanced",
+      "learningValue": "Demonstrates elegant, lyrical use of harmonic minor melodies"
+    },
+    {
+      "title": "Far Beyond the Sun",
+      "artist": "Yngwie Malmsteen",
+      "key": "A Harmonic Minor",
+      "genre": "Neoclassical Metal",
+      "usage": "Defining neoclassical metal composition built on harmonic minor runs and arpeggios",
+      "difficulty": "Expert",
+      "learningValue": "Classical technique meets metal power, shows shred applications"
+    },
+    {
+      "title": "Altitudes",
+      "artist": "Jason Becker",
+      "key": "E Harmonic Minor",
+      "genre": "Neoclassical Metal",
+      "usage": "Virtuosic harmonic minor passages with sweep picking and legato techniques",
+      "difficulty": "Expert",
+      "learningValue": "Advanced technical application of harmonic minor on guitar"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "A Harmonic Minor Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner",
+      "description": "Practice the A harmonic minor scale ascending and descending with emphasis on the augmented 2nd interval between F and G#",
+      "alphaTex": "0.5 2.5 3.5 0.4 2.4 3.4 1.3 2.3 | 2.3 1.3 3.4 2.4 0.4 3.5 2.5 0.5",
+      "tempo": "60-120 BPM",
+      "focus": ["scale memorization", "augmented 2nd interval", "harmonic minor sound"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM",
+        "Pay special attention to the augmented 2nd between F and G#",
+        "Practice both alternate and economy picking",
+        "Gradually increase tempo as accuracy improves"
+      ]
+    },
+    {
+      "name": "Augmented 2nd Interval Focus",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Isolate and practice the characteristic augmented 2nd interval that defines the harmonic minor sound",
+      "alphaTex": "3.4 1.3 1.3 3.4 | 3.5 1.3 1.3 3.5 | 0.4 1.3 1.3 0.4 | 0.5 0.5 0.5 0.5",
+      "tempo": "70-110 BPM",
+      "focus": ["augmented 2nd mastery", "interval recognition", "exotic sound"],
+      "instructions": [
+        "Play the F to G# interval repeatedly to internalize the sound",
+        "Approach the augmented 2nd from different scale degrees",
+        "Focus on clean intonation and smooth transitions",
+        "Practice singing the interval to develop ear recognition"
+      ]
+    },
+    {
+      "name": "Classical Arpeggio Patterns",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Practice broken chord patterns in harmonic minor for classical and neoclassical applications",
+      "alphaTex": "0.5 3.5 2.4 1.3 3.5 2.4 1.3 2.3 | 1.3 2.4 3.5 1.3 2.4 3.5 0.5 | 0.5 0.5 0.5 0.5",
+      "tempo": "70-120 BPM",
+      "focus": ["arpeggio technique", "classical patterns", "sweep preparation"],
+      "instructions": [
+        "Practice each arpeggio pattern separately first",
+        "Connect smoothly between chord changes",
+        "Work on different arpeggio directions (ascending, descending, mixed)",
+        "Apply to Am-Dm-E-Am progression for musical context"
+      ]
+    },
+    {
+      "name": "Harmonic Minor Ear Training",
+      "type": "Ear Training",
+      "difficulty": "Beginner",
+      "description": "Compare harmonic minor with natural minor to hear the characteristic raised 7th and exotic augmented 2nd",
+      "alphaTex": "0.5 2.5 3.5 0.4 2.4 3.4 1.3 2.3 | 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3",
+      "tempo": "60-100 BPM",
+      "focus": ["ear training", "scale comparison", "leading tone recognition"],
+      "instructions": [
+        "Play harmonic minor, then natural minor back to back",
+        "Focus on the 7th degree difference (G# vs G natural in A minor)",
+        "Listen for the exotic augmented 2nd between the 6th and 7th degrees",
+        "Practice identifying harmonic minor in classical and metal recordings"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor (Aeolian)",
+      "relationship": "Parent scale",
+      "differences": "Harmonic minor has a natural 7th (raised) instead of flat 7th - creates the leading tone",
+      "usage": "Softer, more traditional minor sound without the exotic augmented 2nd"
+    },
+    {
+      "scale": "Melodic Minor",
+      "relationship": "Alternative minor variation",
+      "differences": "Melodic minor raises both the 6th and 7th degrees, eliminating the augmented 2nd",
+      "usage": "Smoother melodic motion, commonly used ascending in classical and throughout in jazz"
+    },
+    {
+      "scale": "Phrygian Dominant",
+      "relationship": "5th mode of harmonic minor",
+      "differences": "Phrygian dominant is built on the 5th degree of harmonic minor, sharing its exotic character",
+      "usage": "Spanish/flamenco character, Middle Eastern music, metal"
+    },
+    {
+      "scale": "Hungarian Minor",
+      "relationship": "Similar exotic scale",
+      "differences": "Hungarian minor has a raised 4th in addition to the raised 7th, creating two augmented 2nds",
+      "usage": "Even more exotic character, Eastern European and Romani music traditions"
+    },
+    {
+      "scale": "Diminished Scale",
+      "relationship": "Shares diminished chord content",
+      "differences": "Symmetrical 8-note scale vs 7-note harmonic minor; both generate diminished harmony",
+      "usage": "Jazz and classical diminished chord contexts, more symmetrical approach"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Natural minor scale knowledge",
+      "Basic major scale understanding",
+      "Understanding of intervals and half/whole steps",
+      "Familiarity with minor chord progressions"
+    ],
+    "nextSteps": [
+      "Melodic minor scale",
+      "Phrygian dominant mode (5th mode of harmonic minor)",
+      "Neoclassical metal techniques",
+      "Classical guitar repertoire",
+      "Advanced minor key harmony"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and augmented 2nd recognition",
+        "exercises": ["Basic harmonic minor runs", "Compare with natural minor", "Open position practice"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)",
+        "duration": "20-30 minutes daily",
+        "focus": "Multiple positions and the augmented 2nd interval",
+        "exercises": ["Position playing in different keys", "Augmented 2nd interval exercises", "Classical arpeggio patterns"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily",
+        "focus": "Musical application in classical and metal contexts",
+        "exercises": ["Improvise over minor progressions", "Study classical compositions", "Neoclassical metal licks"]
+      },
+      {
+        "phase": "Mastery (Ongoing)",
+        "duration": "20-30 minutes daily maintenance",
+        "focus": "Advanced applications and genre mastery",
+        "exercises": ["Advanced classical repertoire", "Metal technique development", "Composition using harmonic minor"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "harmonic-minor",
+    "tags": ["harmonic-minor", "minor", "scales", "theory", "classical", "metal", "exotic", "intermediate"],
+    "category": "scales",
+    "subcategory": "minor-variants",
+    "lastUpdated": "2025-01-01",
+    "sources": [
+      "Berklee College of Music Theory Handbook",
+      "Classical harmony textbooks",
+      "Neoclassical guitar method books",
+      "World music scale analysis",
+      "Music education pedagogical research"
+    ]
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "slug": "accessories-cables",
+  "category": "accessories",
+  "pageTitle": "Guitar Cables",
+  "subtitle": "Often overlooked but crucial to your sound, cables are the lifeline of your signal. Learn how to choose quality cables that preserve your tone and last for years.",
+  "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
+  "backLink": {
+    "href": "/lessons/gear/accessories",
+    "label": "Back to Accessories"
+  },
+  "introduction": {
+    "title": "Why Cable Quality Matters",
+    "text": "Your cables are the foundation of your signal chain. Poor cables can rob you of tone, introduce noise, and cause frustrating failures at the worst possible moments.",
+    "columns": [
+      {
+        "title": "Signal Integrity",
+        "text": "Frequency Response: Preserves your guitar's natural tone. Signal Strength: Maintains output level to your amp. Noise Rejection: Shields from electromagnetic interference. Clarity: Prevents signal degradation and loss."
+      },
+      {
+        "title": "Reliability & Performance",
+        "text": "Durability: Withstands regular use and movement. Connection Quality: Reliable plugs and jacks. Flexibility: Easy to handle and position. Longevity: Years of dependable service."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Guitar Cables",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Standard Instrument Cable",
+          "description": "TS (Tip-Sleeve) unbalanced signal with standard 1/4\" jacks. Basic shielding and most common type for guitar to amp connections.",
+          "fields": [
+            { "label": "Type", "value": "TS (Tip-Sleeve), High-Z impedance" },
+            { "label": "Length", "value": "10-20 feet" },
+            { "label": "Price Range", "value": "$15-100+" },
+            { "label": "Best For", "value": "Direct guitar to amplifier connection, pedal connections" }
+          ]
+        },
+        {
+          "title": "Balanced Cable",
+          "description": "TRS (Tip-Ring-Sleeve) balanced signal with noise rejection. Longer runs possible with professional grade construction.",
+          "fields": [
+            { "label": "Type", "value": "TRS (Tip-Ring-Sleeve), Low-Z impedance" },
+            { "label": "Length", "value": "6-25 feet" },
+            { "label": "Price Range", "value": "$20-150+" },
+            { "label": "Best For", "value": "Studio recording, long cable runs, professional setups" }
+          ]
+        },
+        {
+          "title": "Speaker Cable",
+          "description": "TS Heavy gauge with thick copper wire, high current capacity, low resistance and durable construction.",
+          "fields": [
+            { "label": "Type", "value": "TS Heavy Gauge, low resistance" },
+            { "label": "Length", "value": "4-12 feet" },
+            { "label": "Price Range", "value": "$25-200+" },
+            { "label": "Best For", "value": "Connecting amplifier heads to speaker cabinets" }
+          ]
+        },
+        {
+          "title": "Patch Cable",
+          "description": "Short TS cables that are flexible with right-angle options and space efficient design for pedalboard use.",
+          "fields": [
+            { "label": "Type", "value": "TS Short, High-Z impedance" },
+            { "label": "Length", "value": "6 inches - 3 feet" },
+            { "label": "Price Range", "value": "$10-50" },
+            { "label": "Best For", "value": "Connecting effects pedals in pedalboard setups" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cable Construction & Specifications",
+      "subtitle": "Wire Gauge & Tone Impact",
+      "bgColor": "bg-blue-50",
+      "layout": "table",
+      "tableHeaders": ["Wire Gauge", "Resistance", "Capacitance", "Best Use", "Tone Effect"],
+      "tableRows": [
+        ["20 AWG", "Higher", "Lower", "Short runs, budget cables", "Brighter, less bass"],
+        ["22 AWG", "Medium", "Medium", "General purpose, most common", "Balanced frequency response"],
+        ["24 AWG", "Lower", "Higher", "High-end cables, longer runs", "Warmer, more bass"]
+      ]
+    },
+    {
+      "title": "Shielding & Connectors",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Shielding Types",
+          "bgColor": "bg-purple-50",
+          "items": [
+            "Braided Shield: Excellent coverage, flexible",
+            "Spiral Shield: Good flexibility, lower coverage",
+            "Foil Shield: 100% coverage, less flexible",
+            "Combination: Foil + braid for best protection"
+          ]
+        },
+        {
+          "title": "Connector Quality",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Neutrik: Professional standard, very reliable",
+            "Switchcraft: USA made, excellent quality",
+            "Amphenol: Military grade, extremely durable",
+            "G&H: Vintage-style, good quality"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cable Length & Signal Loss",
+      "bgColor": "bg-orange-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Short Cables (6-12 ft)",
+          "items": [
+            "Pros: Best tone preservation",
+            "Pros: Lower capacitance",
+            "Cons: Limited movement",
+            "Best for: Studio, seated playing"
+          ]
+        },
+        {
+          "title": "Medium Cables (15-20 ft)",
+          "items": [
+            "Pros: Good balance of tone/mobility",
+            "Pros: Adequate movement range",
+            "Cons: Slight signal loss",
+            "Best for: Most live situations"
+          ]
+        },
+        {
+          "title": "Long Cables (25+ ft)",
+          "items": [
+            "Pros: Maximum stage mobility",
+            "Cons: Noticeable signal loss",
+            "Cons: Higher capacitance",
+            "Best for: Large stages, wireless backup"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Cable Brands",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Monster Cable - Rock Series",
+          "description": "Heavy marketing, thick construction. Popular with many 80s/90s rock stars."
+        },
+        {
+          "title": "George L's - Custom Cables",
+          "description": "Low capacitance, custom lengths. Popular with pedal enthusiasts and pros."
+        },
+        {
+          "title": "Mogami - 2524",
+          "description": "Studio standard with excellent shielding. Used by studio professionals worldwide."
+        },
+        {
+          "title": "Planet Waves - American Stage",
+          "description": "Lifetime warranty, road-tested. Popular with touring musicians."
+        }
+      ]
+    },
+    {
+      "title": "Cable Management & Care",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Proper Storage",
+          "bgColor": "bg-teal-50",
+          "items": [
+            "Over-Under Wrapping: Prevents cable memory",
+            "Loose Coiling: Avoid tight wraps",
+            "Cable Bags: Protect from damage",
+            "Separate Storage: Keep power and audio apart",
+            "Label Cables: Identify length and purpose"
+          ]
+        },
+        {
+          "title": "Live Performance Tips",
+          "bgColor": "bg-indigo-50",
+          "items": [
+            "Cable Routing: Away from foot traffic",
+            "Tape Down: Secure at critical points",
+            "Backup Cables: Always have spares",
+            "Quick Check: Test before every show",
+            "Easy Access: Keep backups accessible"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cable Troubleshooting",
+      "bgColor": "bg-red-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Intermittent Signal",
+          "items": [
+            "Check plug connection quality",
+            "Clean jack contacts",
+            "Test cable with different gear",
+            "Look for internal breaks"
+          ]
+        },
+        {
+          "title": "Noise & Crackling",
+          "items": [
+            "Check for damaged shielding",
+            "Ensure proper grounding",
+            "Keep away from power sources",
+            "Replace if shield is compromised"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Choosing the Right Cable",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Budget Guidelines",
+          "items": [
+            "$15-30: Basic quality cables",
+            "$30-60: Good performance cables",
+            "$60-100+: Professional grade",
+            "Investment: Buy quality once"
+          ]
+        },
+        {
+          "title": "Length Planning",
+          "items": [
+            "Measure your typical setup",
+            "Add 3-4 feet for movement",
+            "Consider multiple lengths",
+            "Don't buy longer than needed"
+          ]
+        },
+        {
+          "title": "Quality Indicators",
+          "items": [
+            "Lifetime warranty coverage",
+            "Quality connector brands",
+            "Proper shielding specs",
+            "Professional endorsements"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

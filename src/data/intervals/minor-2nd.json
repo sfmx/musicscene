@@ -1,0 +1,336 @@
+{
+  "slug": "minor-2nd",
+  "intervalInfo": {
+    "name": "Minor 2nd Interval",
+    "pageTitle": "Minor 2nd Interval",
+    "subtitle": "The smallest interval in Western music - 1 semitone that creates tension and dissonance in melodies and harmonies.",
+    "colorScheme": "red",
+    "heroGradient": "bg-gradient-to-r from-red-600 to-pink-700",
+    "tags": ["1 Semitone", "Maximum Tension", "Demands Resolution", "Chromatic Foundation"]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      { "label": "Size", "value": "1 semitone (half step)" },
+      { "label": "Quality", "value": "Minor" },
+      { "label": "Sound", "value": "Highly dissonant, tense" },
+      { "label": "Function", "value": "Creates tension, needs resolution" }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      { "label": "C to D\u266d", "value": "(or C#)" },
+      { "label": "E to F", "value": "Natural semitone" },
+      { "label": "B to C", "value": "Natural semitone" },
+      { "label": "Any note", "value": "To its chromatic neighbor" }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Natural Minor 2nds - E\u2192F and B\u2192C",
+      "description": "These are the only minor 2nd intervals that occur naturally in the major scale (no sharps or flats needed).",
+      "examples": [
+        {
+          "title": "E \u2192 F Natural Semitone",
+          "subtitle": "1st string open to 1st fret",
+          "chord1": "E_to_F",
+          "chord1Label": "1st string open",
+          "chord2": "F_from_E",
+          "chord2Label": "1st string, 1st fret",
+          "alphaTex": "0.2 1.2",
+          "alphaTexTitle": "E to F Natural Semitone",
+          "caption": "No accidentals needed: Natural in major scale",
+          "colorBg": "bg-gradient-to-br from-red-50 to-red-100",
+          "colorBorder": "border border-red-200",
+          "colorTitle": "text-red-800",
+          "colorSubtitle": "text-red-700",
+          "colorCaption": "text-red-600"
+        },
+        {
+          "title": "B \u2192 C Natural Semitone",
+          "subtitle": "2nd string open to 1st fret",
+          "chord1": "B_to_C",
+          "chord1Label": "2nd string open",
+          "chord2": "C_from_B",
+          "chord2Label": "2nd string, 1st fret",
+          "alphaTex": "0.2 1.2",
+          "alphaTexTitle": "B to C Natural Semitone",
+          "caption": "Leading tone to C: Strong resolution tendency",
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorSubtitle": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        },
+        {
+          "title": "C \u2192 C# Chromatic Half Step",
+          "subtitle": "Adjacent frets on A string",
+          "chord1": "Chromatic_C",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "Chromatic_Cs",
+          "chord2Label": "C# (5th string 4th fret)",
+          "alphaTex": "3.5 4.5",
+          "alphaTexTitle": "Chromatic Half Step: C to C#",
+          "caption": "Smooth chromatic voice leading",
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorSubtitle": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Chromatic Minor 2nd Applications",
+      "items": [
+        {
+          "title": "Melodic Chromatic Passing Tones",
+          "chord": "Chromatic_C",
+          "chordLabel": "C (3rd fret)",
+          "alphaTex": "3.5 4.5 5.5",
+          "alphaTexTitle": "Chromatic Ascent: C \u2192 C# \u2192 D",
+          "alphaTexCaption": "Smooth voice leading using minor 2nds",
+          "bullets": [
+            "Technique: Adjacent frets create smooth lines",
+            "Usage: Jazz, blues, classical voice leading",
+            "Effect: Eliminates melodic leaps"
+          ],
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorText": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "Harmonic Cluster Chords",
+          "chord": "Minor2nd_Cluster",
+          "chordLabel": "G-C-F#-Bb cluster (contains multiple minor 2nds)",
+          "alphaTex": "3.6 3.5 2.4 1.3",
+          "alphaTexTitle": "Dissonant Cluster Example",
+          "alphaTexCaption": "Dense harmony creating maximum tension",
+          "bullets": [
+            "Modern usage: Jazz, contemporary classical",
+            "Effect: Creates urgency and discomfort",
+            "Resolution: Demands movement to consonance"
+          ],
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorText": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Fretboard Navigation",
+        "subtitle": "Universal Rule: Adjacent Frets = Minor 2nd",
+        "alphaTex": "3.5 4.5 5.5 6.5 7.5 8.5 9.5 10.5",
+        "alphaTexTitle": "Chromatic scale: all minor 2nd intervals",
+        "alphaTexCaption": "Chromatic scale: all minor 2nd intervals",
+        "bullets": [
+          "Any string: Each fret = 1 semitone higher",
+          "Practice tip: Use for chromatic scale exercises",
+          "Theory connection: Foundation of equal temperament"
+        ],
+        "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+        "colorBorder": "border border-emerald-200",
+        "colorTitle": "text-emerald-800",
+        "colorText": "text-emerald-700",
+        "colorCaption": "text-emerald-600"
+      },
+      {
+        "title": "Musical Tension & Resolution",
+        "subtitle": "Leading Tone Resolution",
+        "alphaTex": "0.2 1.2 | 1.4 0.1",
+        "alphaTexTitle": "Leading Tone Resolution",
+        "alphaTexCaption": "B\u2192C (up) and F\u2192E (down) resolutions",
+        "bullets": [
+          "Upward resolution: Leading tone to tonic",
+          "Downward resolution: 4th degree to 3rd",
+          "Harmonic drive: Creates forward motion"
+        ],
+        "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+        "colorBorder": "border border-teal-200",
+        "colorTitle": "text-teal-800",
+        "colorText": "text-teal-700",
+        "colorCaption": "text-teal-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "Bach's Chromatic Fantasy",
+        "description": "Extensive use of chromatic minor 2nds",
+        "detail": "Masterful chromatic voice leading throughout"
+      },
+      {
+        "title": "Chopin's Nocturnes",
+        "description": "Chromatic voice leading with minor 2nds",
+        "detail": "Elegant use of semitone movement for expression"
+      },
+      {
+        "title": "Wagner's Tristan und Isolde",
+        "description": "Revolutionary use of chromatic harmony",
+        "detail": "The Tristan chord pushed chromatic boundaries"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Jaws\" Theme (John Williams)",
+        "description": "Alternating minor 2nds create suspense",
+        "detail": "Iconic use of semitone oscillation for tension"
+      },
+      {
+        "title": "Blues and Jazz Standards",
+        "description": "Chromatic passing tones and approach notes",
+        "detail": "Minor 2nds add color and sophistication to improvisation"
+      },
+      {
+        "title": "Rock Guitar Solos",
+        "description": "Chromatic runs and bending effects",
+        "detail": "Half-step bends and chromatic passages for intensity"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Use \"Jaws\" theme as reference",
+        "Practice minor 2nd vs. major 2nd",
+        "Listen to chromatic voice leading",
+        "Study horror movie soundtracks",
+        "Compare harmonic vs. melodic 2nds"
+      ],
+      "colorBg": "bg-red-50",
+      "colorBorder": "border border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master chromatic scales (1-fret steps)",
+        "Practice adjacent fret intervals",
+        "Work on E\u2192F and B\u2192C (natural minor 2nds)",
+        "Study chromatic chord progressions",
+        "Practice minor 2nd resolution patterns"
+      ],
+      "colorBg": "bg-pink-50",
+      "colorBorder": "border border-pink-200",
+      "colorTitle": "text-pink-800",
+      "colorText": "text-pink-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create tension with chromatic passing tones",
+        "Study classical chromatic harmony",
+        "Explore jazz chromatic voice leading",
+        "Practice blues chromatic approaches",
+        "Analyze dissonance in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Sound Characteristics",
+        "description": "Very harsh and dissonant. Creates strong urge to resolve. Sounds \"crunchy\" or \"gritty.\" Almost like two notes fighting each other."
+      },
+      {
+        "title": "Memory Aid",
+        "description": "Think of the minor 2nd as the sound of suspense in a horror movie - it's the musical equivalent of tension that demands resolution. The theme from \"Jaws\" features prominent minor 2nds that create that sense of impending danger. In classical music, it's often called a \"semitone\" and is fundamental to chromatic harmony and voice leading."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Natural Semitones on Guitar",
+        "description": "E to F: Open 1st string (high E) to 1st fret = minor 2nd. B to C: Open 2nd string (B) to 1st fret = minor 2nd. These are the only natural minor 2nds (no sharps/flats needed)."
+      },
+      {
+        "title": "Adjacent Frets Rule",
+        "description": "Universal Rule: Any two adjacent frets on the same string form a minor 2nd. Examples: 3rd fret to 4th fret, 7th fret to 8th fret, etc. This makes minor 2nds the easiest interval to find on guitar!"
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Ascending Minor 2nds",
+      "description": "E (open) \u2192 F (1st fret), G# (4th fret) \u2192 A (5th fret)",
+      "detail": "A (open) \u2192 A# (1st fret), E (open) \u2192 F (1st fret) on high E string",
+      "colorBg": "bg-red-50",
+      "colorBorder": "border border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700",
+      "colorDetail": "text-red-600"
+    },
+    {
+      "title": "Harmonic Minor 2nds (Dissonance)",
+      "description": "Playing minor 2nds simultaneously creates maximum harmonic tension",
+      "detail": "Rarely used in traditional harmony except as passing tones or for special effect. Used in modern classical and jazz for color.",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    },
+    {
+      "title": "Chromatic Scale Foundation",
+      "description": "The minor 2nd is the building block of the chromatic scale",
+      "detail": "Every fret on guitar represents one minor 2nd, making it the fundamental unit of pitch distance",
+      "colorBg": "bg-emerald-50",
+      "colorBorder": "border border-emerald-200",
+      "colorTitle": "text-emerald-800",
+      "colorText": "text-emerald-700",
+      "colorDetail": "text-emerald-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "From maximum tension, explore intervals that offer resolution and different harmonic colors.",
+    "links": [
+      {
+        "slug": "unison",
+        "title": "Unison",
+        "description": "Return to perfect unity - the foundation from which all intervals begin.",
+        "actionText": "Find peace",
+        "icon": "musical-note",
+        "colorBg": "bg-gray-100",
+        "colorBgHover": "group-hover:bg-gray-200",
+        "colorBorder": "hover:border-gray-300",
+        "colorText": "text-gray-600",
+        "colorTextHover": "group-hover:text-gray-700"
+      },
+      {
+        "slug": "major-2nd",
+        "title": "Major 2nd",
+        "description": "Step up to smooth melodic movement - the foundation of scales and melodies.",
+        "actionText": "Step forward",
+        "icon": "walking",
+        "colorBg": "bg-orange-100",
+        "colorBgHover": "group-hover:bg-orange-200",
+        "colorBorder": "hover:border-orange-300",
+        "colorText": "text-orange-600",
+        "colorTextHover": "group-hover:text-orange-700"
+      },
+      {
+        "slug": "minor-3rd",
+        "title": "Minor 3rd",
+        "description": "Discover the sad beauty that forms the foundation of minor chords.",
+        "actionText": "Feel the emotion",
+        "icon": "sad",
+        "colorBg": "bg-blue-100",
+        "colorBgHover": "group-hover:bg-blue-200",
+        "colorBorder": "hover:border-blue-300",
+        "colorText": "text-blue-600",
+        "colorTextHover": "group-hover:text-blue-700"
+      }
+    ]
+  }
+}

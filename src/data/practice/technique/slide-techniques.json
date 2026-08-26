@@ -1,0 +1,288 @@
+{
+  "slug": "slide-techniques",
+  "category": "technique",
+  "pageInfo": {
+    "pageTitle": "Slide Techniques",
+    "subtitle": "Master slides and glissando to add smooth, expressive transitions between notes.",
+    "heroGradient": "bg-gradient-to-br from-emerald-50 to-green-100",
+    "heroTitle": "Slides & Glissando Techniques",
+    "heroDescription": "Slides are one of the most expressive techniques available to guitarists. From subtle position shifts to dramatic glissando sweeps, mastering slides adds a vocal quality to your playing that connects notes in a way picks alone cannot achieve."
+  },
+  "guidelines": {
+    "title": "Slide Technique Guidelines",
+    "columns": [
+      {
+        "title": "Slide Fundamentals",
+        "items": [
+          { "bulletColor": "text-emerald-500", "text": "Maintain consistent finger pressure while sliding" },
+          { "bulletColor": "text-emerald-500", "text": "Slide on the fingertip, not the pad, for cleaner tone" },
+          { "bulletColor": "text-emerald-500", "text": "Keep the sliding finger close to the fret wire" },
+          { "bulletColor": "text-emerald-500", "text": "Use your ear to judge arrival pitch accuracy" }
+        ]
+      },
+      {
+        "title": "Practice Approach",
+        "items": [
+          { "bulletColor": "text-green-500", "text": "Start with short slides (1-2 frets) before longer distances" },
+          { "bulletColor": "text-green-500", "text": "Practice both ascending and descending slides equally" },
+          { "bulletColor": "text-green-500", "text": "Work on hitting the target note precisely" },
+          { "bulletColor": "text-green-500", "text": "Combine slides with hammer-ons and pull-offs for legato lines" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Basic Slide Exercises",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Two-Fret Ascending Slides",
+          "difficulty": "Beginner",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Pick the starting note, then slide your finger up two frets while maintaining pressure on the string. The second note should ring out clearly from the slide momentum alone. Practice on each string.",
+          "notation": {
+            "title": "Two-Fret Ascending Slides",
+            "alphaTex": "\\ts 4 4\n5.1.4{sl} 7.1.4 r.4 r.4 | 5.2.4{sl} 7.2.4 r.4 r.4 | 5.3.4{sl} 7.3.4 r.4 r.4 | 5.4.4{sl} 7.4.4 r.4 r.4 | 5.5.4{sl} 7.5.4 r.4 r.4 | 5.6.4{sl} 7.6.4 r.4 r.4",
+            "staveTitle": "Ascending Slides - All Strings"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Pick only the first note. The slide should produce the second note with full volume and sustain. If the second note is quiet, increase finger pressure during the slide.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Two-Fret Descending Slides",
+          "difficulty": "Beginner",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "The reverse of the previous exercise. Pick the higher note and slide down two frets. Descending slides require slightly more pressure to maintain volume since you're working against string tension.",
+          "notation": {
+            "title": "Two-Fret Descending Slides",
+            "alphaTex": "\\ts 4 4\n7.1.4{sl} 5.1.4 r.4 r.4 | 7.2.4{sl} 5.2.4 r.4 r.4 | 7.3.4{sl} 5.3.4 r.4 r.4 | 7.4.4{sl} 5.4.4 r.4 r.4 | 7.5.4{sl} 5.5.4 r.4 r.4 | 7.6.4{sl} 5.6.4 r.4 r.4",
+            "staveTitle": "Descending Slides - All Strings"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Descending slides can lose volume easily. Apply slightly more pressure into the fretboard during the downward motion. The arrival note should be as clear as the starting note.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Long-Distance Slides",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Slide across larger distances (5+ frets). This requires smooth arm movement and consistent finger pressure throughout the entire slide. Practice landing on the target fret precisely.",
+          "notation": {
+            "title": "Long-Distance Slides",
+            "alphaTex": "\\ts 4 4\n2.1.4{sl} 7.1.4 r.4 r.4 | 7.1.4{sl} 12.1.4 r.4 r.4 | 12.1.4{sl} 7.1.4 r.4 r.4 | 7.1.4{sl} 2.1.4 r.4 r.4",
+            "staveTitle": "Long Position Shifts via Slides"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "For long slides, move your entire arm, not just the fingers. Keep even pressure throughout. Aim to stop exactly on the target fret, not before or after.",
+            "tempo": "60 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Applied Slide Techniques",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Slide Into and Out of Notes",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Slide into a note from a few frets below (grace note slide) and slide out by releasing pressure as you slide away. This adds a vocal-like quality used extensively in blues, country, and rock.",
+          "notation": {
+            "title": "Grace Note Slides",
+            "alphaTex": "\\ts 4 4\n3.3.8{sl} 5.3.4 r.8 | 3.2.8{sl} 5.2.4 r.8 | 7.3.8{sl} 5.3.4 r.8 | 7.2.8{sl} 5.2.4 r.8",
+            "staveTitle": "Slide Into Notes from Below & Above"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Grace note slides should be quick - the starting pitch is heard briefly before landing on the target note. Blues and rock players use this constantly for expression.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Pentatonic Slide Licks",
+          "difficulty": "Intermediate",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Apply slides within the A minor pentatonic scale. Use slides to shift between positions 1 and 2 of the pentatonic pattern. This creates smooth, connected runs that sound more musical than jumping between notes.",
+          "notation": {
+            "title": "Pentatonic with Slides",
+            "alphaTex": "\\ts 4 4\n5.6.8 8.6.8 5.5.8 7.5.8{sl} 9.5.8 7.4.8 | 5.3.8{sl} 7.3.8 5.2.8 8.2.8{sl} 10.2.8 8.1.8 | 10.1.4{sl} 8.1.4 8.2.8 5.2.8 7.3.8 5.3.8",
+            "staveTitle": "A Minor Pentatonic - Slide Connections"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
+            "title": "Practice Notes",
+            "text": "Use slides as connectors between pentatonic positions rather than lifting and shifting. This is how David Gilmour, BB King, and Eric Clapton achieve their smooth legato sound.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Double-Stop Slides",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Slide two notes simultaneously on adjacent strings. This creates rich, harmonized slide sounds. Press down firmly with one finger barred across two strings and slide both together. Common in blues, rock, and country.",
+          "notation": {
+            "title": "Double-Stop Slides",
+            "alphaTex": "\\ts 4 4\n(5.2 5.3).4{sl} (7.2 7.3).4 r.4 r.4 | (7.2 7.3).4{sl} (10.2 10.3).4 r.4 r.4 | (10.2 10.3).4{sl} (7.2 7.3).4 r.4 r.4 | (7.2 7.3).4{sl} (5.2 5.3).4 r.4 r.4",
+            "staveTitle": "Double-Stop Slide Pairs"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "Use your ring or pinky finger barred across two strings. Apply even pressure on both strings. Both notes should slide at the same speed and arrive together.",
+            "tempo": "60 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Slide Technique Tips",
+    "items": [
+      {
+        "title": "Perfecting Your Slides",
+        "colorBg": "bg-gradient-to-br from-emerald-50 to-green-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "bulletColor": "text-emerald-500",
+        "items": [
+          "Think of slides as vocal scoops - they should sound musical, not mechanical",
+          "Vary slide speed for different effects: fast for energy, slow for drama",
+          "Use string lubricant if slides feel scratchy on wound strings",
+          "Practice slide accuracy by checking intonation at the arrival fret"
+        ]
+      },
+      {
+        "title": "Musical Applications",
+        "colorBg": "bg-gradient-to-br from-green-50 to-teal-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-900",
+        "colorText": "text-green-800",
+        "bulletColor": "text-green-500",
+        "items": [
+          "Blues players use slides to mimic vocal inflections",
+          "Country players use pedal steel-style slides on double stops",
+          "Rock soloists use slides to connect pentatonic positions seamlessly",
+          "Jazz players use chromatic approach slides into target notes"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Legato Journey",
+    "description": "Combine slides with other legato techniques for complete expressive control.",
+    "gradientFrom": "from-emerald-50",
+    "gradientTo": "to-green-50",
+    "borderColor": "border-emerald-200",
+    "links": [
+      {
+        "href": "/lessons/practice/technique/legato",
+        "title": "Legato Technique",
+        "description": "Master hammer-ons and pull-offs to complete your legato vocabulary.",
+        "linkText": "Learn legato",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/technique/bending-vibrato",
+        "title": "Bending & Vibrato",
+        "description": "Add bends and vibrato to your slides for maximum expressiveness.",
+        "linkText": "Add expression",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-rose-300",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "href": "/lessons/theory/scales/blues",
+        "title": "Blues Scale",
+        "description": "Apply slides in the context of blues scale patterns.",
+        "linkText": "Play blues",
+        "icon": "🎹",
+        "hoverBorder": "hover:border-indigo-300",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Slide Guitar",
+    "items": [
+      { "category": "Accessory", "product": "Dunlop 215 Heavy Wall Glass Slide", "reason": "Glass slides produce warm, smooth tones ideal for learning slide technique" },
+      { "category": "Strings", "product": "Ernie Ball Earthwood Medium Light", "reason": "Heavier acoustic strings maintain tension and intonation under slide pressure" },
+      { "category": "Guitar", "product": "Fender American Vintage II Stratocaster", "reason": "Higher action setup works well for slide while remaining playable for standard fretting" }
+    ]
+  }
+}

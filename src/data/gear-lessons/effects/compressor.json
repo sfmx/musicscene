@@ -1,0 +1,232 @@
+{
+  "slug": "effects-compressor",
+  "category": "effects",
+  "pageTitle": "Compressor Effects",
+  "subtitle": "The invisible hand that shapes your dynamics. Compressors even out volume levels, add sustain, and create the polished sound of professional recordings.",
+  "heroGradient": "bg-gradient-to-r from-gray-50 to-slate-50",
+  "backLink": {
+    "href": "/lessons/gear/effects",
+    "label": "Back to Effects Overview"
+  },
+  "introduction": {
+    "title": "What is Compression?",
+    "text": "Compression reduces the dynamic range of your signal by automatically lowering the volume of loud parts and/or raising the volume of quiet parts. This creates a more consistent level and can add sustain, punch, and professional polish.",
+    "columns": [
+      {
+        "title": "How It Works",
+        "text": "Monitors input signal level. Reduces gain when signal exceeds threshold. Applies gain reduction at set ratio. Can add makeup gain to compensate. Attack and release control timing. Creates more consistent dynamics."
+      },
+      {
+        "title": "Musical Benefits",
+        "text": "Even volume levels. Increased sustain. Enhanced picking attack. Better string balance. Improved mix presence. Professional polish."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Understanding Compressor Controls",
+      "subtitle": "Essential Parameters",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Primary Controls",
+          "fields": [
+            { "label": "Threshold", "value": "Level where compression begins" },
+            { "label": "Ratio", "value": "Amount of compression applied" },
+            { "label": "Attack", "value": "How quickly compression engages" },
+            { "label": "Release", "value": "How quickly compression disengages" },
+            { "label": "Makeup Gain", "value": "Compensates for level reduction" }
+          ]
+        },
+        {
+          "title": "Common Ratios",
+          "fields": [
+            { "label": "2:1 to 3:1", "value": "Gentle, musical compression" },
+            { "label": "4:1 to 6:1", "value": "Moderate compression" },
+            { "label": "8:1 to 10:1", "value": "Heavy compression" },
+            { "label": "\u221e:1 (Limiting)", "value": "Hard ceiling" },
+            { "label": "1:1", "value": "No compression (bypass)" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Compressors",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Optical Compressors",
+          "description": "Use light-dependent resistors for smooth, musical compression. Slow, natural response that's perfect for rhythm guitar and vocals.",
+          "fields": [
+            { "label": "Examples", "value": "LA-2A, Empress Compressor, Origin Effects Cali76" }
+          ]
+        },
+        {
+          "title": "FET Compressors",
+          "description": "Field Effect Transistor designs provide fast, punchy compression. Great for adding attack and presence to guitar.",
+          "fields": [
+            { "label": "Examples", "value": "1176, Wampler Ego, Keeley Compressor" }
+          ]
+        },
+        {
+          "title": "VCA Compressors",
+          "description": "Voltage Controlled Amplifier designs offer precise control and transparent compression.",
+          "fields": [
+            { "label": "Examples", "value": "DBX 160X, SSL bus compressors, many modern pedals" }
+          ]
+        },
+        {
+          "title": "Tube Compressors",
+          "description": "Vacuum tube designs add harmonic warmth and musical saturation along with compression.",
+          "fields": [
+            { "label": "Examples", "value": "Fairchild 670, Manley Variable Mu, tube pedals" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Compressor Pedals",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "MXR Dyna Comp",
+          "description": "The classic guitar compressor. Simple two-knob design with distinctive character. Used on countless recordings since the 1970s.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Punchy, colored compression with enhanced pick attack and sustain." }
+          ],
+          "items": [
+            "David Gilmour - Pink Floyd sustain",
+            "Peter Frampton - Talk box setup",
+            "Country session players",
+            "Classic rock guitarists",
+            "Countless studio musicians"
+          ]
+        },
+        {
+          "title": "Boss CS-1/CS-2/CS-3",
+          "description": "Evolution of Boss compressor pedals. The CS-2 is particularly sought after for its musical compression and sustain characteristics.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Smooth, musical compression with excellent sustain and note clarity." }
+          ],
+          "items": [
+            "Clean guitar enhancement",
+            "Lead guitar sustain",
+            "Rhythm guitar consistency",
+            "Recording applications",
+            "Live performance polish"
+          ]
+        },
+        {
+          "title": "Empress Compressor",
+          "description": "Modern optical compressor with extensive controls. Professional studio quality in a pedal format with multiple compression styles.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Transparent, musical compression with studio-grade control and quality." }
+          ],
+          "items": [
+            "Multiple compression types",
+            "Sidechain EQ",
+            "Gain reduction metering",
+            "Mix control (parallel compression)",
+            "Studio-quality circuitry"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compression Applications",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Clean Guitar Applications",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Even out fingerpicking dynamics",
+            "Add sustain to single notes",
+            "Balance chord voicings",
+            "Enhance pick attack",
+            "Smooth strumming patterns",
+            "Country chicken picking"
+          ]
+        },
+        {
+          "title": "Electric Guitar Applications",
+          "bgColor": "bg-yellow-50",
+          "items": [
+            "Increase lead guitar sustain",
+            "Tighten rhythm playing",
+            "Control feedback thresholds",
+            "Enhance amp distortion",
+            "Improve recording consistency",
+            "Professional polish"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Using Compression Effectively",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Best Practices",
+          "bgColor": "bg-gray-50",
+          "items": [
+            "Start with subtle settings",
+            "Listen for pumping or breathing",
+            "Use makeup gain to match levels",
+            "Adjust attack for pick response",
+            "Set release to musical timing",
+            "A/B test with bypass frequently"
+          ]
+        },
+        {
+          "title": "Signal Chain Position",
+          "bgColor": "bg-slate-50",
+          "items": [
+            "Usually first in signal chain",
+            "Before overdrive for consistent drive",
+            "After overdrive for polished sustain",
+            "Can be used in effects loop",
+            "Consider parallel compression",
+            "Multiple compressors possible"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compressor Settings Guide",
+      "layout": "grid-3",
+      "warningText": "Good compression should be felt more than heard. If you notice the compressor working obviously, you might be using too much. The goal is usually musical enhancement, not obvious effect.",
+      "cards": [
+        {
+          "title": "Subtle Enhancement",
+          "items": [
+            "Ratio: 2:1 to 3:1",
+            "Threshold: -15 to -10 dB",
+            "Attack: Medium to slow",
+            "Use: Natural improvement"
+          ]
+        },
+        {
+          "title": "Lead Guitar Sustain",
+          "items": [
+            "Ratio: 4:1 to 6:1",
+            "Threshold: -20 to -15 dB",
+            "Attack: Fast to medium",
+            "Use: Singing sustain"
+          ]
+        },
+        {
+          "title": "Heavy Effect",
+          "items": [
+            "Ratio: 8:1 to \u221e:1",
+            "Threshold: -25 to -20 dB",
+            "Attack: Fast",
+            "Use: Special effect"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

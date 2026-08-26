@@ -1,0 +1,305 @@
+{
+  "slug": "modal-improvisation",
+  "category": "improv",
+  "pageInfo": {
+    "pageTitle": "Modal Improvisation",
+    "subtitle": "Learn to improvise using modes to create unique colors and moods beyond major and minor.",
+    "heroGradient": "bg-gradient-to-br from-indigo-50 to-violet-100",
+    "heroTitle": "Modal Improvisation",
+    "heroDescription": "Modal improvisation moves beyond the major/minor framework to explore the unique character of each mode. Each mode has its own flavor - from the bright dreaminess of Lydian to the dark tension of Phrygian. Learning to improvise modally opens up new emotional and sonic territory that transforms your soloing."
+  },
+  "guidelines": {
+    "title": "Modal Improvisation Guidelines",
+    "columns": [
+      {
+        "title": "Modal Thinking",
+        "items": [
+          { "bulletColor": "text-indigo-500", "text": "Each mode has a characteristic note that defines its sound" },
+          { "bulletColor": "text-indigo-500", "text": "Emphasize the characteristic note to establish the modal flavor" },
+          { "bulletColor": "text-indigo-500", "text": "Use drone notes or vamps (not full progressions) to establish modes" },
+          { "bulletColor": "text-indigo-500", "text": "Avoid notes that pull toward major or minor resolution" }
+        ]
+      },
+      {
+        "title": "Characteristic Notes",
+        "items": [
+          { "bulletColor": "text-violet-500", "text": "Dorian: natural 6th (over minor chord)" },
+          { "bulletColor": "text-violet-500", "text": "Phrygian: flat 2nd (dark, exotic)" },
+          { "bulletColor": "text-violet-500", "text": "Lydian: sharp 4th (bright, dreamy)" },
+          { "bulletColor": "text-violet-500", "text": "Mixolydian: flat 7th (dominant, bluesy)" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Modal Foundation Exercises",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Dorian Modal Vamp",
+          "difficulty": "Intermediate",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Improvise over a Dm7 vamp (one chord) using D Dorian mode (D-E-F-G-A-B-C). The characteristic note is B natural (the major 6th over a minor chord). Emphasize this note to create the Dorian sound heard in Santana, Miles Davis, and many funk tunes.",
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" }
+          ],
+          "notation": {
+            "title": "D Dorian Modal Melody",
+            "alphaTex": "\\ts 4 4\n10.6.8 12.6.8 10.5.8 12.5.8 10.4.8 11.4.8 12.4.8 10.3.8 | 12.3.4 10.3.8 11.4.8 10.4.4 12.5.4 | 10.5.8 12.5.8 10.6.8 12.6.8 10.4.8 12.4.4 10.4.8",
+            "staveTitle": "D Dorian - Emphasizing the B Natural (6th)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "Compare D Dorian (with B natural) to D natural minor (with Bb). The B natural gives Dorian its brighter, jazzier quality. Play a Dm chord and alternate between B and Bb to hear the difference clearly.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Mixolydian Rock Vamp",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Improvise over an A7 vamp using A Mixolydian (A-B-C#-D-E-F#-G). The characteristic note is G natural (the flat 7th). This is the sound of classic rock, blues-rock, and country. Think 'Sweet Home Alabama' or 'Roadhouse Blues'.",
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "A Mixolydian Rock Line",
+            "alphaTex": "\\ts 4 4\n5.6.8 7.6.8 4.5.8 5.5.8 7.5.8 4.4.8 6.4.8 7.4.8 | 5.3.8 7.3.8 5.2.8 7.2.8 5.1.4 7.1.8 5.1.8 | 7.2.8 5.2.8 7.3.8 5.3.8 7.4.8 5.4.8 5.5.4 5.6.4",
+            "staveTitle": "A Mixolydian - Flat 7th Character"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Mixolydian is like a major scale that rocks. The flat 7th (G instead of G#) gives it that bluesy, dominant quality. Mix in pentatonic licks for an authentic rock sound.",
+            "tempo": "90 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Lydian Dreamy Exploration",
+          "difficulty": "Intermediate",
+          "borderColor": "border-sky-200",
+          "difficultyBg": "bg-sky-100",
+          "difficultyText": "text-sky-700",
+          "numberBg": "bg-sky-100",
+          "numberText": "text-sky-600",
+          "description": "Improvise over a Cmaj7 drone using C Lydian (C-D-E-F#-G-A-B). The characteristic note is F# (the sharp 4th). This creates a floating, ethereal quality heard in Joe Satriani's 'Flying in a Blue Dream' and many film scores.",
+          "chordDiagrams": [
+            { "label": "CMaj7", "chord": "CMaj7" }
+          ],
+          "notation": {
+            "title": "C Lydian Floating Melody",
+            "alphaTex": "\\ts 4 4\n8.6.8 10.6.8 9.5.8 10.5.8 9.4.8 10.4.8 9.3.4 | 10.3.8 9.4.8 10.4.8 9.5.8 10.5.8 8.6.4 r.4 | 8.6.8 10.6.8 9.5.8 10.5.8 9.4.4 10.4.4 | 9.3.2 r.2",
+            "staveTitle": "C Lydian - Sharp 4th (F#) Character"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-sky-50",
+            "colorBorder": "border-sky-200",
+            "colorTitle": "text-sky-900",
+            "colorText": "text-sky-800",
+            "colorAccent": "bg-sky-100",
+            "title": "Practice Notes",
+            "text": "The #4 (F#) is what makes Lydian sound 'magical' compared to the regular major scale's F natural. Emphasize this note and let it resolve to the 5th (G) for the quintessential Lydian sound.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Modal Exercises",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Phrygian Dark Tension",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Improvise over an Em vamp using E Phrygian (E-F-G-A-B-C-D). The characteristic note is F natural (the flat 2nd). This mode sounds Spanish, Middle Eastern, and heavy - used in flamenco, metal, and prog rock.",
+          "chordDiagrams": [
+            { "label": "Em", "chord": "E_minor" }
+          ],
+          "notation": {
+            "title": "E Phrygian Dark Melody",
+            "alphaTex": "\\ts 4 4\n0.6.8 1.6.8 3.6.8 0.5.8 2.5.8 3.5.8 0.4.8 2.4.8 | 0.3.8 1.3.8 0.2.4 1.2.8 0.2.8 | 0.3.8 2.4.8 0.4.8 3.5.8 2.5.8 0.5.8 | 3.6.8 1.6.8 0.6.2",
+            "staveTitle": "E Phrygian - Flat 2nd (F Natural) Character"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "The b2 interval (E to F, just one fret) creates intense tension. Resolve it back to the root (E) for a dramatic effect. Metallica, Megadeth, and many metal bands use this dark color extensively.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Modal Comparison Exercise",
+          "difficulty": "Advanced",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Play a simple 4-bar melody using C Ionian (major), then play the same melodic contour in C Dorian, C Mixolydian, and C Lydian. This trains your ear to hear the unique color each mode provides to the same melodic idea.",
+          "notation": {
+            "title": "Same Melody, Different Modes",
+            "alphaTex": "\\ts 4 4\n8.6.8 10.6.8 9.5.8 10.5.8 9.4.4 10.4.4 | 8.6.8 10.6.8 8.5.8 10.5.8 9.4.4 10.4.4 | 8.6.8 10.6.8 9.5.8 10.5.8 9.4.4 8.4.4 | 8.6.8 10.6.8 9.5.8 10.5.8 9.4.4 10.4.4",
+            "staveTitle": "Modal Color Comparison: Ionian → Dorian → Mixolydian → Lydian"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Each mode changes only 1-2 notes from the major scale, but the emotional impact is dramatic. Record yourself playing each version and listen back to appreciate the different colors.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Modal Chord Vamp Improvisation",
+          "difficulty": "Advanced",
+          "borderColor": "border-fuchsia-200",
+          "difficultyBg": "bg-fuchsia-100",
+          "difficultyText": "text-fuchsia-700",
+          "numberBg": "bg-fuchsia-100",
+          "numberText": "text-fuchsia-600",
+          "description": "Improvise over a two-chord vamp that establishes each mode: Dm7-G7 (Dorian), Em-F (Phrygian), C-D (Lydian), A-G (Mixolydian). The two-chord vamp establishes the modal center without pulling to a traditional resolution.",
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Em", "chord": "E_minor" }
+          ],
+          "notation": {
+            "title": "Modal Vamp Progressions",
+            "alphaTex": "\\ts 4 4\n10.6.4 12.6.8 10.5.8 12.5.4 10.4.4 | 10.5.4 12.5.8 10.6.8 12.6.4 10.4.4 | 0.6.4 1.6.8 3.6.8 0.5.4 2.5.4 | 5.6.4 7.6.8 5.5.8 3.5.4 5.6.4",
+            "staveTitle": "Four Modal Vamps - One Bar Each"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-fuchsia-50",
+            "colorBorder": "border-fuchsia-200",
+            "colorTitle": "text-fuchsia-900",
+            "colorText": "text-fuchsia-800",
+            "colorAccent": "bg-fuchsia-100",
+            "title": "Practice Notes",
+            "text": "This is the ultimate modal workout. As you switch vamps, switch your modal focus. The key is emphasizing each mode's characteristic note. Over time, these colors become second nature.",
+            "tempo": "80 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Modal Improvisation Tips",
+    "items": [
+      {
+        "title": "Developing Modal Awareness",
+        "colorBg": "bg-gradient-to-br from-indigo-50 to-violet-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-900",
+        "colorText": "text-indigo-800",
+        "bulletColor": "text-indigo-500",
+        "items": [
+          "Start with one mode per week - immerse yourself in its sound",
+          "Listen to songs that feature the mode you're studying",
+          "Create your own two-chord vamps as backing tracks",
+          "Sing the characteristic note before playing it to internalize the sound"
+        ]
+      },
+      {
+        "title": "Modal Music References",
+        "colorBg": "bg-gradient-to-br from-violet-50 to-purple-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-900",
+        "colorText": "text-violet-800",
+        "bulletColor": "text-violet-500",
+        "items": [
+          "Dorian: 'So What' (Miles Davis), 'Oye Como Va' (Santana)",
+          "Mixolydian: 'Norwegian Wood' (Beatles), 'Sweet Home Alabama' (Lynyrd Skynyrd)",
+          "Lydian: 'Flying in a Blue Dream' (Joe Satriani), 'The Simpsons Theme'",
+          "Phrygian: 'Wherever I May Roam' (Metallica), Flamenco music"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Expand Your Modal Knowledge",
+    "description": "Deepen your understanding of modes and their applications.",
+    "gradientFrom": "from-indigo-50",
+    "gradientTo": "to-violet-50",
+    "borderColor": "border-indigo-200",
+    "links": [
+      {
+        "href": "/lessons/practice/improv/scales",
+        "title": "Scale Improvisation",
+        "description": "Master the scale patterns that form the basis of modal playing.",
+        "linkText": "Practice scales",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "href": "/lessons/theory/modes/dorian",
+        "title": "Dorian Mode Theory",
+        "description": "Deep dive into Dorian mode construction and harmonic applications.",
+        "linkText": "Learn Dorian",
+        "icon": "📖",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/improv/chord-tone-soloing",
+        "title": "Chord Tone Soloing",
+        "description": "Combine modal awareness with chord tone targeting for sophisticated solos.",
+        "linkText": "Target chord tones",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-teal-300",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Modal Practice",
+    "items": [
+      { "category": "Pedal", "product": "Boss RC-5 Loop Station", "reason": "Create your own modal vamps and drone backing tracks to improvise over" },
+      { "category": "Pedal", "product": "TC Electronic Hall of Fame 2 Reverb", "reason": "Spacious reverb enhances the atmospheric quality of modal improvisation" }
+    ]
+  }
+}

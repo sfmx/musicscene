@@ -1,13 +1,13 @@
 import React from 'react';
 import { SongData } from '@/lib/songData';
+import { getDifficultyColor } from '@/utils/theme';
 
 interface SongInfoSectionProps {
   songData: SongData;
   displayName: string;
-  getDifficultyColor: (difficulty: string) => string;
 }
 
-export default function SongInfoSection({ songData, displayName, getDifficultyColor }: SongInfoSectionProps) {
+export default function SongInfoSection({ songData, displayName }: SongInfoSectionProps) {
   return (
     <section className="mb-12 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-8">
       <div className="grid md:grid-cols-4 gap-8">

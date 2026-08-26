@@ -1,0 +1,364 @@
+{
+  "slug": "ii-v-i",
+  "progressionInfo": {
+    "name": "ii-V-I Progression",
+    "pageTitle": "ii-V-I Progression",
+    "subtitle": "The cornerstone of jazz harmony - a sophisticated three-chord progression that creates the smoothest voice leading and most elegant harmonic movement in music.",
+    "heroGradient": "bg-gradient-to-r from-purple-500 to-indigo-600",
+    "tags": [
+      "Supertonic-Dominant-Tonic",
+      "3 Chords",
+      "Smooth Voice Leading",
+      "Jazz Standard"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Harmonic Functions",
+    "properties": [
+      { "label": "ii (Supertonic)", "value": "Subdominant function, prepares the dominant" },
+      { "label": "V (Dominant)", "value": "Creates tension that demands resolution" },
+      { "label": "I (Tonic)", "value": "Home base, provides satisfying resolution" },
+      { "label": "Voice Leading", "value": "Smoothest possible chord tone movement" },
+      { "label": "Circle of Fifths", "value": "Root movement by descending fifths" }
+    ],
+    "exampleTitle": "C Major Example",
+    "examples": [
+      { "label": "ii", "value": "D minor (D-F-A)" },
+      { "label": "V", "value": "G Major (G-B-D)" },
+      { "label": "I", "value": "C Major (C-E-G)" },
+      { "label": "Progression", "value": "Dm - G - C" },
+      { "label": "Jazz Version", "value": "Dm7 - G7 - Cmaj7" }
+    ],
+    "bulletColor": "text-purple-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "ii-V-I in C Major (Triads)",
+        "description": "Basic open position chords:",
+        "chords": [
+          { "label": "ii - D minor", "chord": "D_minor", "subtitle": "Supertonic - Preparation" },
+          { "label": "V - G Major", "chord": "G_major", "subtitle": "Dominant - Tension" },
+          { "label": "I - C Major", "chord": "C_major", "subtitle": "Tonic - Resolution" }
+        ],
+        "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w (2/4.3/3.2/2.1/1) (3/6.2/5.0/4.0/3.3/2.3/1) C/5",
+        "practiceNotes": [
+          "Notice the smooth voice leading between chords",
+          "F in Dm becomes F# in G (leading tone)",
+          "D in Dm moves to D in G7 (common tone)",
+          "B in G resolves to C in C major"
+        ],
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700",
+        "colorDetail": "text-purple-600"
+      },
+      {
+        "title": "Jazz Seventh Chords",
+        "description": "Professional jazz voicings:",
+        "chords": [
+          { "label": "ii7 - Dm7", "chord": "D_minor_7" },
+          { "label": "V7 - G7", "chord": "G_7" },
+          { "label": "Imaj7 - Cmaj7", "chord": "C_major_7" }
+        ],
+        "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w (x/6.5/5.3/4.5/3.5/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.3/5.2/4.4/3.5/2.x/1)",
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "colorDetail": "text-indigo-600"
+      },
+      {
+        "title": "Minor ii-V-i",
+        "description": "ii-V-i in C minor:",
+        "chords": [
+          { "label": "ii7\u266d5 - Dm7\u266d5", "chord": "D_minor_7_flat_5" },
+          { "label": "V7 - G7", "chord": "G_7" },
+          { "label": "i - Cm", "chord": "C_minor" }
+        ],
+        "alphaTex": "tabstave notation=true key=Cm time=4/4\nnotes :w (x/6.x/5.1/4.2/3.1/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.x/5.1/4.1/3.0/2.x/1)",
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "colorDetail": "text-blue-600"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Extended Chords",
+        "description": "Add sophistication with extensions:",
+        "items": [
+          "ii9: Dm9 (add E for color)",
+          "ii11: Dm11 (add G for richness)",
+          "V13: G13 (dominant with 13th)",
+          "Imaj9: Cmaj9 (sophisticated resolution)",
+          "I6/9: C6/9 (add 6th and 9th)"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-600"
+      },
+      {
+        "title": "Chord Substitutions",
+        "description": "Jazz harmony techniques:",
+        "items": [
+          "Tritone sub: Replace V7 with \u266dII7",
+          "Secondary dominant: V7/V before V7",
+          "Chromatic approach: Add \u266dii before ii",
+          "Modal interchange: Use ii from parallel minor",
+          "Deceptive resolution: V7 to vi instead of I"
+        ],
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-600"
+      },
+      {
+        "title": "Key Transposition",
+        "description": "ii-V-I in common jazz keys:",
+        "items": [
+          "F Major: Gm7 - C7 - Fmaj7",
+          "G Major: Am7 - D7 - Gmaj7",
+          "D Major: Em7 - A7 - Dmaj7",
+          "A Major: Bm7 - E7 - Amaj7",
+          "E Major: F#m7 - B7 - Emaj7"
+        ],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Jazz Standards",
+      "examples": [
+        {
+          "title": "\"Autumn Leaves\"",
+          "description": "Multiple ii-V-I progressions throughout",
+          "detail": "Am7-D7-Gmaj7, Dm7-G7-Cmaj7 sequences"
+        },
+        {
+          "title": "\"All The Things You Are\"",
+          "description": "Classic example of ii-V-I chains",
+          "detail": "Modulates through multiple keys via ii-V-I"
+        },
+        {
+          "title": "\"Fly Me To The Moon\"",
+          "description": "Simple but effective ii-V-I usage",
+          "detail": "Great for practicing basic ii-V-I movement"
+        }
+      ]
+    },
+    "right": {
+      "title": "Modern Applications",
+      "examples": [
+        {
+          "title": "Neo-Soul & R&B",
+          "description": "D'Angelo, Erykah Badu, Robert Glasper",
+          "detail": "Modern interpretation with extended chords"
+        },
+        {
+          "title": "Gospel Music",
+          "description": "Church music with sophisticated harmony",
+          "detail": "Often uses complex voicings and substitutions"
+        },
+        {
+          "title": "Bossa Nova",
+          "description": "Brazilian jazz with gentle ii-V-I movement",
+          "detail": "\"Girl From Ipanema\", Antonio Carlos Jobim"
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Voice Leading",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Practice smooth chord transitions",
+        "Focus on minimal finger movement",
+        "Keep common tones when possible",
+        "Use metronome at 60 BPM",
+        "Listen for harmonic progression"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    },
+    {
+      "title": "Jazz Comping",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Practice with seventh chords",
+        "Try different rhythmic patterns",
+        "Work on chord tone movement",
+        "Practice with jazz standards",
+        "Experiment with extensions"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700"
+    },
+    {
+      "title": "Improvisation",
+      "icon": "\ud83c\udfad",
+      "items": [
+        "Play scales over each chord",
+        "Focus on chord tones first",
+        "Practice ii-V-I licks",
+        "Use guide tones (3rd and 7th)",
+        "Create melodic lines"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: Basic ii-V-I",
+      "description": "Practice the fundamental progression in C major:",
+      "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w (2/4.3/3.2/2.1/1) (3/6.2/5.0/4.0/3.3/2.3/1) C/5",
+      "practiceNotes": [
+        "Hold each chord for 4 beats",
+        "Focus on smooth chord changes",
+        "Listen for the voice leading",
+        "Notice the circle of fifths movement"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    },
+    {
+      "title": "Exercise 2: Jazz Seventh Chords",
+      "description": "Practice with professional jazz voicings:",
+      "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w (x/6.5/5.3/4.5/3.5/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.3/5.2/4.4/3.5/2.x/1)",
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700",
+      "colorDetail": "text-indigo-600"
+    },
+    {
+      "title": "Exercise 3: Minor ii-V-i",
+      "description": "Practice ii-V-i in C minor:",
+      "alphaTex": "tabstave notation=true key=Cm time=4/4\nnotes :w (x/6.x/5.1/4.2/3.1/2.x/1) (3/6.x/5.4/4.3/3.4/2.x/1) (x/6.x/5.1/4.1/3.0/2.x/1)",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Circle of Fifths Movement",
+      "sections": [
+        {
+          "title": "Root Movement in C Major",
+          "items": [
+            "ii (D): 2nd degree of C major scale",
+            "V (G): Down a perfect 5th from D",
+            "I (C): Down a perfect 5th from G",
+            "Creates strongest harmonic momentum",
+            "Each root prepares the next chord"
+          ]
+        },
+        {
+          "title": "Scale Degree Functions",
+          "items": [
+            "ii: Supertonic, subdominant function",
+            "V: Dominant, creates tension",
+            "I: Tonic, provides resolution",
+            "Natural progression from weak to strong"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Voice Leading Analysis",
+      "sections": [
+        {
+          "title": "Chord Tone Movement",
+          "items": [
+            "Dm to G: D\u2192D (common), F\u2192F# (half step), A\u2192B (whole step)",
+            "G to C: G\u2192G (common), B\u2192C (half step), D\u2192E (whole step)",
+            "Minimal movement creates smoothness",
+            "Leading tones create forward motion"
+          ]
+        },
+        {
+          "title": "Jazz Voice Leading",
+          "items": [
+            "7th chords add harmonic richness",
+            "Guide tones (3rd and 7th) are crucial",
+            "Extensions add color without affecting function",
+            "Drop voicings create better voice leading"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the ii-V-I progression, explore other essential harmonic sequences and build your progression vocabulary.",
+    "links": [
+      {
+        "slug": "i-iv-v",
+        "title": "I-IV-V Progression",
+        "description": "Master the most fundamental progression in Western music.",
+        "linkText": "Learn the foundation",
+        "icon": "\ud83c\udfaf",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "i-v-vi-iv",
+        "title": "I-V-vi-IV Progression",
+        "description": "Discover the \"axis progression\" that powers countless pop hits.",
+        "linkText": "Explore pop harmony",
+        "icon": "\ud83c\udfb5",
+        "hoverBorder": "hover:border-pink-300",
+        "iconBg": "bg-pink-100",
+        "iconHoverBg": "group-hover:bg-pink-200",
+        "linkColor": "text-pink-600",
+        "linkHoverColor": "group-hover:text-pink-700"
+      },
+      {
+        "slug": "circle-of-fifths",
+        "title": "Circle of Fifths",
+        "description": "Understand the harmonic relationships that drive progressions.",
+        "linkText": "Explore relationships",
+        "icon": "\ud83d\udd04",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      }
+    ]
+  },
+  "navigation": {
+    "prev": {
+      "href": "/lessons/theory/progressions/i-iv-v",
+      "label": "Previous: I-IV-V Progression"
+    },
+    "next": {
+      "href": "/lessons/theory/progressions/i-v-vi-iv",
+      "label": "Next: I-V-vi-IV Progression"
+    }
+  }
+}

@@ -14,28 +14,23 @@ import ScaleVisualization from './ScaleVisualization';
 import SectionNavigation from './SectionNavigation';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
+import { getDifficultyColor, removeConsecutiveDuplicates } from '@/utils/theme';
+import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
+import AdSlot from '@/components/Revenue/AdSlot';
+import AffiliateLink from '@/components/Revenue/AffiliateLink';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import SequentialNav from '@/components/SequentialNav';
+import { getSequentialNav } from '@/lib/sequentialNav';
+import ExternalSongLinks from './ExternalSongLinks';
+
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
   displayName: string;
 }
 
-// Utility function to remove consecutive duplicate chords while preserving order
-const removeConsecutiveDuplicates = (chords: string[]): string[] => {
-  if (chords.length === 0) return [];
-  
-  const result = [chords[0]];
-  for (let i = 1; i < chords.length; i++) {
-    const currentChord = chords[i].trim();
-    const previousChord = chords[i - 1].trim();
-    if (currentChord !== previousChord) {
-      result.push(chords[i]);
-    }
-  }
-  return result;
-};
-
 export default function SongAnalysisPageTemplate({ songSlug, displayName }: SongAnalysisPageTemplateProps) {
   const songData = getSongData(songSlug);
+  const nav = getSequentialNav('song-analysis', songSlug);
 
   if (!songData) {
     return (
@@ -57,21 +52,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
     );
   }
 
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty.toLowerCase()) {
-      case 'beginner':
-        return 'bg-green-100 text-green-800';
-      case 'intermediate':
-        return 'bg-orange-100 text-orange-800';
-      case 'advanced':
-        return 'bg-red-100 text-red-800';
-      case 'expert':
-        return 'bg-purple-100 text-purple-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
-    }
-  };
-
   return (
     <Layout>
       <Header
@@ -89,6 +69,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             "Scale Patterns",
             "Chord Progressions",
             "Key Techniques",
+            "Practice Exercises",
             "Equipment & Tone",
             "Learning Path",
             "Practice Notes",
@@ -97,20 +78,17 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
         />
 
         {/* Navigation */}
-        <nav className="mb-8 text-sm">
-          <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
-            ← Back to Song Analysis
-          </Link>
-        </nav>
+        <Breadcrumbs pathname={`/lessons/songs/song-analysis/${songSlug}`} pageTitle={displayName} />
 
         {/* Song Header */}
         <div id="song-info">
-        <SongInfoSection 
-          songData={songData} 
-          displayName={displayName} 
-          getDifficultyColor={getDifficultyColor} 
+        <SongInfoSection
+          songData={songData}
+          displayName={displayName}
         />
-
+        <div className="mb-8 -mt-6 px-2">
+          <ExternalSongLinks title={songData.songInfo.title} artist={songData.songInfo.artist} />
+        </div>
         </div>
 
         {/* Musical Analysis */}
@@ -197,6 +175,41 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
           </div>
         </section>
 
+        {/* Practice Exercises */}
+        {songData.sections && songData.sections.some(s => s.alphaTab) && (
+          <section id="practice-exercises" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Practice Exercises</h2>
+            <p className="text-sm text-gray-500 mb-8">
+              Scale and technique exercises in the key of {songData.musicalAnalysis?.keyAndScale?.primaryKey || songData.songInfo.key || 'the song'}. Practice these patterns to build the skills needed for this song.
+            </p>
+            <div className="space-y-6">
+              {songData.sections.filter(s => s.alphaTab).map((section, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-base font-semibold text-gray-900">{section.name}</h3>
+                    <span className="text-xs text-gray-400">{section.timeStamp}</span>
+                  </div>
+                  {section.exerciseLabel && (
+                    <p className="text-xs font-medium text-purple-600 mb-2">{section.exerciseLabel}</p>
+                  )}
+                  <p className="text-sm text-gray-600 mb-4">{section.description}</p>
+                  <AlphaTexRenderer
+                    alphaTex={section.alphaTab!}
+                    title={section.exerciseLabel || `${section.name} Exercise`}
+                  />
+                  {section.notes && section.notes.length > 0 && (
+                    <ul className="mt-4 text-xs text-gray-500 space-y-1">
+                      {section.notes.slice(0, 3).map((note, ni) => (
+                        <li key={ni}>• {note}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Equipment */}
         <section id="equipment-&-tone" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Equipment & Tone</h2>
@@ -207,7 +220,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="font-medium text-gray-800">Recommended:</p>
-                  <p className="text-gray-600">{songData.equipment.guitar.recommended}</p>
+                  <p className="text-gray-600"><AffiliateLink productName={songData.equipment.guitar.recommended} /></p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Pickup Type:</p>
@@ -218,7 +231,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     <p className="font-medium text-gray-800">Alternatives:</p>
                     <ul className="text-gray-600">
                       {songData.equipment.guitar.alternatives.map((alt, index) => (
-                        <li key={index}>• {alt}</li>
+                        <li key={index}>• <AffiliateLink productName={alt} /></li>
                       ))}
                     </ul>
                   </div>
@@ -232,7 +245,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="font-medium text-gray-800">Recommended:</p>
-                  <p className="text-gray-600">{songData.equipment.amp.recommended}</p>
+                  <p className="text-gray-600"><AffiliateLink productName={songData.equipment.amp.recommended} /></p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Settings:</p>
@@ -249,7 +262,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     <p className="font-medium text-gray-800">Alternatives:</p>
                     <ul className="text-gray-600">
                       {songData.equipment.amp.alternatives.map((alt, index) => (
-                        <li key={index}>• {alt}</li>
+                        <li key={index}>• <AffiliateLink productName={alt} /></li>
                       ))}
                     </ul>
                   </div>
@@ -277,6 +290,8 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             </div>
           </div>
         </section>
+
+        <AdSlot slotId="content-mid" format="rectangle" />
 
         {/* Learning Path */}
         <section id="learning-path" className="mb-12">
@@ -367,6 +382,10 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
           </div>
         </section>
 
+        <AdSlot slotId="content-bottom" format="banner" />
+
+        <RelatedContentSection contentId={`song-analysis:${songSlug}`} />
+
         {/* Related Songs */}
         <section id="related-songs" className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Songs</h2>
@@ -412,13 +431,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             </div>
           )}
         </section>
-
-        {/* Navigation */}
-        <nav className="text-center">
-          <Link href="/lessons/songs/song-analysis" className="text-cyan-600 hover:text-cyan-800">
-            ← Back to Song Analysis
-          </Link>
-        </nav>
+        <SequentialNav nav={nav} typeLabel="Song" />
       </main>
     </Layout>
   );

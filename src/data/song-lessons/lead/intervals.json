@@ -1,0 +1,393 @@
+{
+  "slug": "intervals",
+  "category": "lead",
+  "pageTitle": "Melodic Intervals in Lead Guitar",
+  "subtitle": "Master the use of intervals to create memorable melodies and understand their emotional impact.",
+  "heroGradient": "bg-gradient-to-r from-yellow-50 to-orange-50",
+  "backLink": { "href": "/lessons/songs/lead", "label": "Back to Lead Guitar & Solos" },
+  "introduction": {
+    "title": "Intervals: The DNA of Melody",
+    "text": "An interval is the distance between two notes. Each interval has its own unique emotional character and sonic quality that affects how your melody feels. Understanding intervals gives you an emotional vocabulary. You can deliberately choose intervals to create specific feelings in your solos.",
+    "columns": [
+      {
+        "title": "What Are Intervals?",
+        "text": "Example: C to E (major 3rd) sounds happy, while C to Eb (minor 3rd) sounds sad, even though it's just one semitone difference."
+      },
+      {
+        "title": "Emotional Language",
+        "text": "Practical Use: Want tension? Use tritones and minor 2nds. Want resolution? Use octaves and perfect 5ths."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Interval Characteristics & Emotions",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Unison/Octave",
+          "description": "Grounding, powerful, consonant",
+          "badge": { "text": "Stable, Strong", "color": "purple" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "0/12" },
+            { "label": "Usage", "value": "Emphasis, resolution points, power" },
+            { "label": "Examples", "value": "Metal power chords, classical resolutions" }
+          ]
+        },
+        {
+          "title": "Minor 2nd",
+          "description": "Unease, suspense, grinding",
+          "badge": { "text": "Dissonant, Tense", "color": "red" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "1" },
+            { "label": "Usage", "value": "Create tension, chromatic passing tones" },
+            { "label": "Examples", "value": "Jaws theme, horror movie soundtracks" }
+          ]
+        },
+        {
+          "title": "Major 2nd",
+          "description": "Gentle tension, forward motion",
+          "badge": { "text": "Mildly Dissonant", "color": "yellow" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "2" },
+            { "label": "Usage", "value": "Stepwise motion, suspensions" },
+            { "label": "Examples", "value": "Classical melodies, pop vocal lines" }
+          ]
+        },
+        {
+          "title": "Minor 3rd",
+          "description": "Melancholy, introspective, blue",
+          "badge": { "text": "Sad, Minor", "color": "blue" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "3" },
+            { "label": "Usage", "value": "Minor key melodies, blues expressions" },
+            { "label": "Examples", "value": "Blues scales, sad ballads" }
+          ]
+        },
+        {
+          "title": "Major 3rd",
+          "description": "Bright, uplifting, consonant",
+          "badge": { "text": "Happy, Major", "color": "green" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "4" },
+            { "label": "Usage", "value": "Major key melodies, upbeat music" },
+            { "label": "Examples", "value": "Pop hooks, country melodies" }
+          ]
+        },
+        {
+          "title": "Perfect 4th",
+          "description": "Spacious, unresolved, ambiguous",
+          "badge": { "text": "Open, Stable", "color": "purple" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "5" },
+            { "label": "Usage", "value": "Folk melodies, hymns, suspensions" },
+            { "label": "Examples", "value": "\"Amazing Grace\", \"Here Comes the Bride\"" }
+          ]
+        },
+        {
+          "title": "Tritone",
+          "description": "Dark, evil, needs resolution",
+          "badge": { "text": "Unstable, Diabolic", "color": "red" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "6" },
+            { "label": "Usage", "value": "Jazz tensions, metal riffs, blues" },
+            { "label": "Examples", "value": "\"Purple Haze\", jazz dominant chords" }
+          ]
+        },
+        {
+          "title": "Perfect 5th",
+          "description": "Powerful, consonant, heroic",
+          "badge": { "text": "Strong, Stable", "color": "green" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "7" },
+            { "label": "Usage", "value": "Power chords, strong melodies" },
+            { "label": "Examples", "value": "Rock power chords, \"Twinkle Twinkle\"" }
+          ]
+        },
+        {
+          "title": "Minor 6th",
+          "description": "Longing, melancholic, nostalgic",
+          "badge": { "text": "Sad, Yearning", "color": "blue" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "8" },
+            { "label": "Usage", "value": "Ballads, emotional passages" },
+            { "label": "Examples", "value": "\"The Way You Look Tonight\"" }
+          ]
+        },
+        {
+          "title": "Major 6th",
+          "description": "Warm, comfortable, stable",
+          "badge": { "text": "Sweet, Pleasant", "color": "green" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "9" },
+            { "label": "Usage", "value": "Country, folk, sweet melodies" },
+            { "label": "Examples", "value": "\"My Bonnie Lies Over the Ocean\"" }
+          ]
+        },
+        {
+          "title": "Minor 7th",
+          "description": "Sophisticated, needs resolution",
+          "badge": { "text": "Unresolved, Jazzy", "color": "purple" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "10" },
+            { "label": "Usage", "value": "Jazz melodies, blues, dominant chords" },
+            { "label": "Examples", "value": "Jazz standards, \"Somewhere\"" }
+          ]
+        },
+        {
+          "title": "Major 7th",
+          "description": "Ethereal, floating, modern",
+          "badge": { "text": "Dreamy, Dissonant", "color": "purple" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Semitones", "value": "11" },
+            { "label": "Usage", "value": "Jazz, modern harmony, atmosphere" },
+            { "label": "Examples", "value": "Jazz ballads, ambient music" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Melodic Motion",
+      "bgColor": "bg-blue-50",
+      "borderColor": "border-blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Stepwise Motion",
+          "description": "Moving by 2nd intervals (adjacent notes)",
+          "badge": { "text": "Smooth, flowing, singable", "color": "blue" },
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Usage", "value": "Vocal-like melodies, classical themes, ballads" },
+            { "label": "Example", "value": "Most folk songs, \"Mary Had a Little Lamb\"" }
+          ]
+        },
+        {
+          "title": "Skip Motion",
+          "description": "Moving by 3rd intervals",
+          "badge": { "text": "Moderate activity, arpeggiated feel", "color": "blue" },
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Usage", "value": "Chord outline melodies, moderate energy" },
+            { "label": "Example", "value": "Arpeggiated passages, \"Do-Re-Mi\" from Sound of Music" }
+          ]
+        },
+        {
+          "title": "Leap Motion",
+          "description": "Moving by 4th or larger intervals",
+          "badge": { "text": "Dramatic, attention-grabbing, angular", "color": "blue" },
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Usage", "value": "Climactic moments, modern composition" },
+            { "label": "Example", "value": "\"Somewhere\" (West Side Story), jazz melodies" }
+          ]
+        },
+        {
+          "title": "Chromatic Motion",
+          "description": "Moving by half-steps, using all 12 tones",
+          "badge": { "text": "Smooth but harmonically rich", "color": "blue" },
+          "borderColor": "border-blue-200",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Usage", "value": "Jazz, blues, sophisticated harmony" },
+            { "label": "Example", "value": "Jazz walking bass lines, blues licks" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interval Applications by Musical Style",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Blues Lead",
+          "description": "Use minor 3rd for blue notes, tritone for tension, minor 7th for unresolved feel",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Intervals", "value": "Minor 3rd, Perfect 4th, Tritone, Minor 7th" },
+            { "label": "Example", "value": "B.B. King style bending minor 3rd to major 3rd over dominant chords" }
+          ]
+        },
+        {
+          "title": "Rock Melodies",
+          "description": "Strong consonant intervals for power and memorability",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Intervals", "value": "Perfect 5th, Octave, Major 3rd, Perfect 4th" },
+            { "label": "Example", "value": "AC/DC riffs using power chord intervals, anthem-like melodies" }
+          ]
+        },
+        {
+          "title": "Jazz Lines",
+          "description": "Complex intervals create sophisticated harmony and tension",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Intervals", "value": "Major 7th, Minor 7th, Tritone, Minor 2nd" },
+            { "label": "Example", "value": "Bebop lines with chromatic approach tones and chord extensions" }
+          ]
+        },
+        {
+          "title": "Country Lead",
+          "description": "Bright, consonant intervals that support major key harmonies",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Intervals", "value": "Major 6th, Major 3rd, Perfect 5th, Major 2nd" },
+            { "label": "Example", "value": "Telecaster-style lead lines with chicken picking and major pentatonic" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Interval Concepts",
+      "bgColor": "bg-purple-50",
+      "borderColor": "border-purple-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Interval Inversion",
+          "description": "When you invert an interval (flip it upside down), you get its complement. This creates related but different emotional colors.",
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Examples", "value": "Major 3rd -> Minor 6th, Perfect 4th -> Perfect 5th, Minor 2nd -> Major 7th" }
+          ]
+        },
+        {
+          "title": "Compound Intervals",
+          "description": "Intervals larger than an octave (9ths, 11ths, 13ths) have similar character to their simple forms but with added sophistication.",
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Examples", "value": "Major 9th = Major 2nd + Octave, Perfect 11th = Perfect 4th + Octave, Major 13th = Major 6th + Octave" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Interval Usage in Guitar Solos",
+      "bgColor": "bg-amber-50",
+      "borderColor": "border-amber-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Layla\" - Derek and the Dominos",
+          "description": "Creates the characteristic \"crying\" sound of blues lead guitar through interval manipulation",
+          "borderColor": "border-amber-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Interval", "value": "Minor 3rd bends to Major 3rd" }
+          ]
+        },
+        {
+          "title": "\"Stairway to Heaven\" - Led Zeppelin",
+          "description": "Creates the folk-like, open sound that defines the melody's character",
+          "borderColor": "border-amber-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Interval", "value": "Perfect 4ths and 5ths in the main theme" }
+          ]
+        },
+        {
+          "title": "\"Europa\" - Santana",
+          "description": "Creates the romantic, yearning quality through sophisticated interval choices",
+          "borderColor": "border-amber-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Interval", "value": "Minor 6th leaps and Major 7th tensions" }
+          ]
+        },
+        {
+          "title": "\"Purple Haze\" - Jimi Hendrix",
+          "description": "Creates the dark, dissonant character that matches the song's psychedelic vibe",
+          "borderColor": "border-amber-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key Interval", "value": "Tritone (augmented 4th)" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Practical Application Tips",
+      "bgColor": "bg-indigo-50",
+      "borderColor": "border-indigo-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Building Memorable Melodies",
+          "description": "Guidelines for constructing melodies using interval awareness.",
+          "borderColor": "border-indigo-200",
+          "bgColor": "bg-white",
+          "items": [
+            "Start with mostly stepwise motion for singability",
+            "Use one dramatic leap as a focal point",
+            "Balance consonant and dissonant intervals",
+            "Resolve dissonant intervals to consonant ones",
+            "Use repeated intervals to create unity"
+          ]
+        },
+        {
+          "title": "Creating Emotional Impact",
+          "description": "Choosing intervals to evoke specific emotions in your lead playing.",
+          "borderColor": "border-indigo-200",
+          "bgColor": "bg-white",
+          "items": [
+            "Minor 2nds and 7ths for tension",
+            "Major 3rds and 6ths for warmth",
+            "Perfect 4ths and 5ths for strength",
+            "Tritones for edginess and instability",
+            "Octaves for power and resolution"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Interval Training Exercises",
+    "items": [
+      "Interval Recognition: Play two notes and identify the interval. Start with perfect 5ths and octaves, gradually add more complex intervals. Develops ear training for melodic construction.",
+      "Emotional Interval Exercise: Choose an emotion (sad, happy, tense) and create a melody using only intervals that support that emotion. Connects interval theory to emotional expression.",
+      "Melodic Contour Practice: Create melodies using only stepwise motion, then only leaps, then combining both for contrast. Develops control over melodic flow and character."
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Blues Lead Techniques", "href": "/lessons/songs/lead/blues", "description": "Apply intervals in blues lead guitar context." },
+    { "title": "Solo Construction", "href": "/lessons/songs/lead/construction", "description": "Build compelling solos using motivic development." },
+    { "title": "Lead Guitar Overview", "href": "/lessons/songs/lead", "description": "Return to the main Lead Guitar & Solos page." }
+  ]
+}

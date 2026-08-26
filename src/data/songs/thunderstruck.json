@@ -38,7 +38,11 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["B5", "E5", "F#5"],
+        "chords": [
+          "B5",
+          "E5",
+          "F#5"
+        ],
         "progression": "I - IV - V",
         "description": "Classic I-IV-V power chord progression forming the backbone of the song"
       },
@@ -99,7 +103,11 @@
       "difficulty": "Intermediate",
       "primaryTechnique": false,
       "details": {
-        "chords": ["B5", "E5", "F#5"],
+        "chords": [
+          "B5",
+          "E5",
+          "F#5"
+        ],
         "progression": "B5 - E5 - F#5 - B5",
         "notes": [
           "A5: X-0-2-X-X-X (Open A string + 2nd fret D string)",
@@ -119,13 +127,14 @@
       "technique": "Left-Hand Tapping",
       "key": "B major",
       "description": "Iconic left-hand tapping sequence on high E string",
-      "alphaTab": "14.1 12.1 14.1 12.1 14.1 12.1 14.1 12.1 | 14.1 12.1 14.1 12.1 16.1 14.1 16.1 14.1",
       "notes": [
         "Single-note tapping sequence",
         "Left-hand only - no picking",
         "Consistent eighth-note rhythm",
         "Build intensity through repetition"
-      ]
+      ],
+      "alphaTab": "7.6 9.6 6.5 9.5 6.4 9.4 | 6.3 8.3 7.2 9.2 7.1 9.1 | 9.1 7.1 9.2 7.2 8.3 6.3 | 9.4 6.4 9.5 6.5 9.6 7.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
     },
     {
       "name": "Verse",
@@ -133,15 +142,21 @@
       "technique": "Power Chords",
       "key": "B major",
       "description": "Power chord progression with palm muting",
-      "alphaTab": "(2.6 4.5 4.4).4 (0.5 2.4).4 (7.6 9.5 9.4).4 (2.6 4.5 4.4).4",
-      "chords": ["B5", "A5", "E5", "B5"],
+      "chords": [
+        "B5",
+        "A5",
+        "E5",
+        "B5"
+      ],
       "progression": "B5 | A5 | E5 | B5",
       "notes": [
         "Down-picking recommended",
         "Palm muting for tight sound",
         "Steady quarter-note rhythm",
         "Clean chord changes essential"
-      ]
+      ],
+      "alphaTab": "7.6 9.5 9.4 7.6 9.5 9.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 14.6 16.5 16.4 14.6 16.5 16.4 | 7.6 9.5 9.4 7.6 9.5 9.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Chorus",
@@ -149,26 +164,40 @@
       "technique": "Power Chords + Open Chords",
       "key": "B major",
       "description": "Combination of power chords and open positions",
-      "alphaTab": "(2.6 4.5 4.4).4 (3.6 5.5 5.4).4 (0.5 2.4).4 (2.6 4.5 4.4).4",
-      "chords": ["B5", "G5", "A5", "B5"],
+      "chords": [
+        "B5",
+        "G5",
+        "A5",
+        "B5"
+      ],
       "progression": "B5 | G5 | A5 | B5",
       "notes": [
         "More dynamic strumming",
         "Combination of muted and open chords",
         "Build energy and intensity",
         "Clear articulation of chord changes"
-      ]
+      ],
+      "alphaTab": "7.6 9.5 9.4 7.6 9.5 9.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 14.6 16.5 16.4 14.6 16.5 16.4 | 7.6 9.5 9.4 7.6 9.5 9.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson SG (Angus Young signature)",
-      "alternatives": ["Gibson Les Paul", "Epiphone SG", "Any humbucker-equipped guitar"],
+      "alternatives": [
+        "Gibson Les Paul",
+        "Epiphone SG",
+        "Any humbucker-equipped guitar"
+      ],
       "pickup": "Humbucker pickups for thick, sustaining tone"
     },
     "amp": {
       "recommended": "Marshall Plexi/JCM800",
-      "alternatives": ["Marshall DSL", "Orange Rockerverb", "Any high-gain tube amp"],
+      "alternatives": [
+        "Marshall DSL",
+        "Orange Rockerverb",
+        "Any high-gain tube amp"
+      ],
       "settings": {
         "gain": "7-8/10",
         "treble": "7/10",
@@ -274,5 +303,19 @@
       "Practice with subdivision clicks",
       "Focus on staying in time"
     ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2024-12-01",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": false,
+    "tags": [
+      "power-chords",
+      "classic-rock",
+      "metal"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 months"
   }
 }

@@ -36,7 +36,12 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["D", "C", "G", "D"],
+        "chords": [
+          "D",
+          "C",
+          "G",
+          "D"
+        ],
         "progression": "I - ♭VII - IV - I",
         "description": "Iconic I-♭VII-IV-I progression that became one of the most recognizable in rock music"
       },
@@ -90,7 +95,11 @@
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
-        "chords": ["D", "C", "G"],
+        "chords": [
+          "D",
+          "C",
+          "G"
+        ],
         "progression": "D - C - G - D",
         "notes": [
           "D: X-X-0-2-3-2 (Open D chord)",
@@ -113,7 +122,11 @@
       "difficulty": "Intermediate",
       "primaryTechnique": false,
       "details": {
-        "chords": ["D", "C", "G"],
+        "chords": [
+          "D",
+          "C",
+          "G"
+        ],
         "progression": "D - C - G (repeating)",
         "notes": [
           "Thumb plays bass notes on beats 1 and 3",
@@ -153,14 +166,19 @@
       "technique": "Fingerpicking Intro",
       "key": "D Major",
       "description": "Iconic fingerpicked introduction establishing the main progression",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D",
-      "alphaTab": "2.4 3.3 2.2 | 0.5 1.3 0.2 | 3.6 0.3 0.2 | 2.4 3.3 2.2",
       "notes": [
         "Uses classical fingerpicking technique",
         "Thumb alternates on bass strings",
         "Creates rhythmic foundation for entire song"
-      ]
+      ],
+      "alphaTab": "10.5 10.4 12.3 10.2 12.3 10.4 | 10.5 12.4 12.3 10.2 12.3 12.4 | 15.5 15.4 17.3 15.2 17.3 15.4 | 10.5 10.4 12.3 10.2 12.3 10.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
     },
     {
       "name": "Verse 1",
@@ -168,14 +186,19 @@
       "technique": "Open Chord Strumming",
       "key": "D Major",
       "description": "First verse with laid-back strumming over D-C-G progression",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D",
-      "alphaTab": "(2.4 3.3 2.2 0.1).1 | (0.5 1.4 0.3 1.2 0.1).1 | (3.6 0.5 0.4 0.3 2.2 3.1).1 | (2.4 3.3 2.2 0.1).1",
       "notes": [
         "Relaxed strumming pattern",
         "Let chords ring naturally",
         "Vocal melody follows chord progression"
-      ]
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
     },
     {
       "name": "Chorus",
@@ -183,13 +206,19 @@
       "technique": "Open Chord Strumming",
       "key": "D Major",
       "description": "Main chorus with fuller arrangement and vocal harmonies",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D",
       "notes": [
         "Same progression as verse",
         "Fuller strumming for emphasis",
         "Three-part vocal harmony arrangement"
-      ]
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
     },
     {
       "name": "Guitar Solo",
@@ -197,13 +226,19 @@
       "technique": "D Major Pentatonic Lead",
       "key": "D Major",
       "description": "Lead guitar solo using D major pentatonic scale",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D",
       "notes": [
         "Uses D major pentatonic scale (D-E-F#-A-B)",
         "Features string bending and vibrato",
         "Melodic phrases with southern rock character"
-      ]
+      ],
+      "alphaTab": "10.6 12.6 9.5 12.5 9.4 12.4 | 9.3 11.3 10.2 12.2 10.1 12.1 | 12.1 10.1 12.2 10.2 11.3 9.3 | 12.4 9.4 12.5 9.5 12.6 10.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
     },
     {
       "name": "Outro",
@@ -211,24 +246,38 @@
       "technique": "Open Chord Strumming",
       "key": "D Major",
       "description": "Extended outro with vocal ad-libs over repeated progression",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D (repeat to fade)",
       "notes": [
         "Repeated D-C-G progression",
         "Vocal improvisations and call-and-response",
         "Gradual fade-out ending"
-      ]
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson Les Paul Standard",
-      "alternatives": ["Fender Stratocaster", "Gibson SG", "Epiphone Les Paul"],
+      "alternatives": [
+        "Fender Stratocaster",
+        "Gibson SG",
+        "Epiphone Les Paul"
+      ],
       "pickup": "Humbucker or single-coil, neck position for warmth"
     },
     "amp": {
       "recommended": "Marshall JTM45 or Fender Twin Reverb",
-      "alternatives": ["Fender Deluxe Reverb", "Vox AC30", "Marshall Plexi"],
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC30",
+        "Marshall Plexi"
+      ],
       "settings": {
         "gain": "3-4/10 (clean to light breakup)",
         "treble": "6/10",
@@ -333,5 +382,18 @@
       "Marty Schwartz fingerpicking tutorial",
       "GuitarLessons365 complete breakdown"
     ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2024-01-01",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "beginner-friendly",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
   }
 }

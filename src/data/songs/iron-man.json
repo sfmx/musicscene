@@ -1,0 +1,469 @@
+{
+  "songInfo": {
+    "title": "Iron Man",
+    "artist": "Black Sabbath",
+    "album": "Paranoid",
+    "released": "1970",
+    "genre": "Heavy Metal",
+    "tempo": "76 BPM (intro) / 164 BPM (main)",
+    "duration": "5:55",
+    "key": "B minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B minor",
+      "scalesUsed": [
+        {
+          "scale": "B natural minor",
+          "notes": "B - C# - D - E - F# - G - A - B",
+          "application": "Primary harmonic framework for the power chord riff and overall song structure"
+        },
+        {
+          "scale": "B minor pentatonic",
+          "notes": "B - D - E - F# - A",
+          "application": "Lead guitar solos, melodic fills, and improvisational passages"
+        },
+        {
+          "scale": "B blues scale",
+          "notes": "B - D - E - F - F# - A",
+          "application": "Blues-inflected lead lines with the flattened fifth adding grit and tension"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor (is the primary key)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "B5",
+          "D5",
+          "E5",
+          "G5",
+          "F#5",
+          "G5",
+          "F#5",
+          "G5",
+          "D5",
+          "E5"
+        ],
+        "progression": "i - III - IV - VI - V - VI - V - VI - III - IV",
+        "description": "The iconic Iron Man riff built on sliding power chords, featuring the distinctive B5-D5-E5 opening motif followed by the rhythmic G5-F#5 back-and-forth figure"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (Slow)",
+          "progression": "B5 - B5 (sliding up from lower position)",
+          "romanNumerals": "i - i",
+          "description": "Slow, heavy sliding power chords with heavy processing creating the ominous opening"
+        },
+        {
+          "section": "Main Riff / Verse",
+          "progression": "B5 - D5 - E5 - G5 - F#5 - G5 - F#5 - G5 - D5 - E5",
+          "romanNumerals": "i - III - IV - VI - V - VI - V - VI - III - IV",
+          "description": "The full main riff with ascending power chords and the rhythmic oscillation section"
+        },
+        {
+          "section": "Bridge / Fast Section",
+          "progression": "E5 - G5 - F#5 - G5 - F#5 - B5",
+          "romanNumerals": "IV - VI - V - VI - V - i",
+          "description": "Up-tempo section with faster power chord changes building energy"
+        },
+        {
+          "section": "Solo",
+          "progression": "B5 - D5 - E5 - G5 - F#5",
+          "romanNumerals": "i - III - IV - VI - V",
+          "description": "Main riff progression underneath Tony Iommi's pentatonic lead work"
+        }
+      ],
+      "harmonicFunction": [
+        "B5 (i) - Tonic power chord establishing the heavy minor key foundation",
+        "D5 (III) - Mediant creating an ascending motion from the tonic",
+        "E5 (IV) - Subdominant continuing the ascending power chord movement",
+        "G5 (VI) - Submediant providing the upper anchor in the oscillating riff figure",
+        "F#5 (V) - Dominant creating tension in the back-and-forth with G5",
+        "The riff's ascending B5-D5-E5 opening creates a powerful sense of forward momentum",
+        "The G5-F#5-G5 oscillation adds a hypnotic rhythmic quality to the riff"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Sliding Power Chords",
+      "description": "The defining technique of Iron Man - power chords that slide between positions on the fretboard, creating the iconic heavy riff with smooth glissando transitions rather than lifting and repositioning fingers",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "B5: X-2-4-4-X-X (2nd fret A string root)",
+          "D5: X-5-7-7-X-X (5th fret A string root)",
+          "E5: 0-2-2-X-X-X (Open low E string root) or X-7-9-9-X-X",
+          "G5: 3-5-5-X-X-X (3rd fret low E string root)",
+          "F#5: 2-4-4-X-X-X (2nd fret low E string root)",
+          "Slide between chord positions rather than lifting fingers off the fretboard",
+          "Maintain consistent fretting pressure during slides for clean transitions",
+          "The slow intro uses exaggerated slides for dramatic effect"
+        ],
+        "sequence": [
+          "Start with B5 power chord shape at 2nd fret A string",
+          "Slide up to D5 at 5th fret, then to E5 at 7th fret",
+          "Shift to G5 on the low E string at 3rd fret",
+          "Oscillate between G5 and F#5 with quick half-step slides",
+          "Return to D5 and E5 to complete the riff cycle"
+        ],
+        "tips": [
+          "Practice the slide motion slowly to maintain clean power chord voicings",
+          "Keep your fretting hand in the power chord shape throughout the slides",
+          "Apply moderate palm muting for tightness during the main riff sections",
+          "The intro slides should be slow and deliberate - heavier is better"
+        ],
+        "chords": [
+          "B5",
+          "D5",
+          "E5",
+          "G5",
+          "F#5"
+        ],
+        "progression": "B5 - D5 - E5 - G5 - F#5 - G5 - F#5 - G5 - D5 - E5 (Main Riff)"
+      }
+    },
+    {
+      "name": "Palm Muted Groove",
+      "description": "Heavy palm muting applied to the main riff and verse sections, creating the thick, chugging sound that gives Iron Man its ominous, stomping feel",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rest palm edge on the bridge to dampen strings slightly",
+          "The muting should be moderate - heavy enough for chug but not dead muting",
+          "Combine with downstrokes exclusively for maximum heaviness",
+          "Release muting briefly on chord changes for the slide transitions"
+        ],
+        "sequence": [
+          "Apply palm muting on the B5 chord for the opening chug",
+          "Briefly release muting during power chord slides for clean transitions",
+          "Re-apply muting when landing on each new chord position",
+          "During the G5-F#5 oscillation, maintain consistent muting pressure"
+        ],
+        "tips": [
+          "The goal is a thick, chunky sound - not completely muted",
+          "Practice the muting at slow tempo to find the sweet spot of pressure",
+          "The muting pressure should stay consistent through tempo changes",
+          "Listen to the original recording for the exact balance of mute vs. sustain"
+        ],
+        "chords": [
+          "B5",
+          "D5",
+          "E5"
+        ],
+        "progression": "Palm muted B5 - D5 - E5 chugging pattern"
+      }
+    },
+    {
+      "name": "Pentatonic Soloing with Vibrato",
+      "description": "Tony Iommi's lead guitar work over the riff progression, using B minor pentatonic with wide vibrato and expressive bends that define the classic Sabbath lead sound",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based in the 7th and 12th fret B minor pentatonic box positions",
+          "Features whole-step bends on the B and G strings for expressive peaks",
+          "Wide, slow vibrato is the defining Iommi lead characteristic",
+          "Combination of picked notes and legato hammer-on/pull-off phrases"
+        ],
+        "sequence": [
+          "Open phrases in the 7th fret B minor pentatonic position",
+          "Shift up to the 12th fret position for higher intensity moments",
+          "Apply whole-step bends with vibrato on sustained notes",
+          "Use hammer-on/pull-off runs to connect scale positions"
+        ],
+        "tips": [
+          "Iommi's vibrato is slow and wide - practice controlled vibrato motion",
+          "Bend to pitch accurately - use a tuner to check your bends",
+          "The solo should feel heavy and deliberate, not fast or flashy",
+          "Study Iommi's unique fingering approach (he lost fingertips and used prosthetics)"
+        ],
+        "chords": [
+          "B5"
+        ],
+        "progression": "B minor pentatonic over B5 - D5 - E5 - G5 - F#5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Slow)",
+      "timeStamp": "0:00-0:40",
+      "technique": "Sliding Power Chords",
+      "key": "B minor",
+      "description": "The ominous slow intro featuring heavily processed sliding power chords at approximately 76 BPM, building tension before the main riff kicks in at double speed",
+      "chords": [
+        "B5"
+      ],
+      "progression": "B5 sliding figures",
+      "notes": [
+        "Extremely slow and heavy sliding power chords",
+        "Original recording features pitch-shifted processing on the guitar",
+        "Each chord slide should be deliberate and sustained",
+        "This section establishes the dark, ominous atmosphere"
+      ],
+      "alphaTab": "7.6 9.5 9.4 7.6 9.5 9.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 14.6 16.5 16.4 14.6 16.5 16.4 | 7.6 9.5 9.4 7.6 9.5 9.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Main Riff / Verse",
+      "timeStamp": "0:40-1:50",
+      "technique": "Sliding Power Chords",
+      "key": "B minor",
+      "description": "The iconic main riff kicks in at the faster tempo, featuring the ascending B5-D5-E5 motif followed by the G5-F#5 oscillation that defines the song",
+      "chords": [
+        "B5",
+        "D5",
+        "E5",
+        "G5",
+        "F#5"
+      ],
+      "progression": "B5 - D5 - E5 - G5 - F#5 - G5 - F#5 - G5 - D5 - E5",
+      "notes": [
+        "Tempo jumps to approximately 164 BPM for the main section",
+        "Ascending power chord motion on B5-D5-E5 with slides",
+        "Rhythmic G5-F#5 oscillation creates the signature bounce",
+        "Palm muting adds weight and definition to the riff"
+      ],
+      "alphaTab": "7.6 9.5 9.4 7.6 9.5 9.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 14.6 16.5 16.4 14.6 16.5 16.4 | 7.6 9.5 9.4 7.6 9.5 9.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Bridge / Fast Section",
+      "timeStamp": "2:30-3:20",
+      "technique": "Palm Muted Groove",
+      "key": "B minor",
+      "description": "The up-tempo bridge section with faster power chord changes and more aggressive palm muting, building intensity before the solo",
+      "chords": [
+        "E5",
+        "G5",
+        "F#5",
+        "B5"
+      ],
+      "progression": "E5 - G5 - F#5 - G5 - F#5 - B5",
+      "notes": [
+        "Faster power chord changes than the main riff",
+        "Heavier palm muting for a tighter, more aggressive sound",
+        "Builds energy and intensity leading into the guitar solo",
+        "Downstrokes throughout for maximum attack"
+      ],
+      "alphaTab": "7.6 9.5 9.4 9.5 | 7.6 7.6 9.5 9.4 | 12.6 14.5 14.4 14.5 | 7.6 9.5 9.4 9.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:20-4:30",
+      "technique": "Pentatonic Soloing with Vibrato",
+      "key": "B minor",
+      "description": "Tony Iommi's expressive lead guitar solo over the main riff progression, featuring B minor pentatonic runs, wide vibrato, and signature bends",
+      "chords": [
+        "B5",
+        "D5",
+        "E5",
+        "G5",
+        "F#5"
+      ],
+      "progression": "B5 - D5 - E5 - G5 - F#5 (repeating under solo)",
+      "notes": [
+        "Solo primarily in the 7th and 12th fret B minor pentatonic positions",
+        "Iommi's wide vibrato is key to capturing the authentic sound",
+        "Rhythm guitar maintains the main riff underneath",
+        "Bends and sustained notes define the solo character"
+      ],
+      "alphaTab": "7.3 9.3 7.2 10.2 | 10.1 7.1 10.2 7.2 | 7.3 9.3 9.2 7.2 | 10.1 7.1 9.3 7.3 |",
+      "exerciseLabel": "Bending & Phrasing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "4:30-5:55",
+      "technique": "Sliding Power Chords",
+      "key": "B minor",
+      "description": "Extended outro returning to the main riff with variations, building to a heavy conclusion with the full band",
+      "chords": [
+        "B5",
+        "D5",
+        "E5",
+        "G5",
+        "F#5"
+      ],
+      "progression": "B5 - D5 - E5 - G5 - F#5 - G5 - F#5 - G5 - D5 - E5",
+      "notes": [
+        "Return to the main riff with full band intensity",
+        "Variations and improvisational elements in the later repetitions",
+        "Builds to a heavy, crushing conclusion",
+        "The song speeds up and intensifies through the outro"
+      ],
+      "alphaTab": "7.6 9.5 9.4 7.6 9.5 9.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 14.6 16.5 16.4 14.6 16.5 16.4 | 7.6 9.5 9.4 7.6 9.5 9.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard",
+      "alternatives": [
+        "Epiphone SG",
+        "Gibson SG Special",
+        "Any solid-body electric with humbuckers"
+      ],
+      "pickup": "Humbuckers, bridge pickup for the heavy rhythm and lead tone"
+    },
+    "amp": {
+      "recommended": "Laney Supergroup (original Tony Iommi setup)",
+      "alternatives": [
+        "Marshall JCM800",
+        "Orange OR50",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "8/10 (heavy overdrive/distortion)",
+        "treble": "5/10",
+        "middle": "7/10 (strong mids for power chord definition)",
+        "bass": "7/10 (heavy low end for the thick tone)",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Heavy amp distortion is primary - no distortion pedal needed, though a boost or overdrive in front can help",
+      "reverb": "Minimal to none - keep it dry and heavy",
+      "other": "Original intro uses pitch shifting / studio effects for the processed sound; a wah pedal can approximate some solo tones"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Iron Man",
+      "steps": [
+        "Learn the B5, D5, E5, G5, and F#5 power chord shapes",
+        "Practice sliding between power chord positions slowly",
+        "Work on the basic B5-D5-E5 ascending pattern",
+        "Build familiarity with the slow intro slides"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Building the Full Riff",
+      "steps": [
+        "Master the complete main riff including the G5-F#5 oscillation",
+        "Add palm muting to the riff for authentic heaviness",
+        "Learn the bridge section with faster chord changes",
+        "Practice at increasing tempos from 100 BPM to 164 BPM"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "advanced": {
+      "title": "Solo Mastery and Complete Performance",
+      "steps": [
+        "Learn the guitar solo using B minor pentatonic positions",
+        "Develop wide vibrato technique in the Iommi style",
+        "Master bending accuracy and expressive phrasing",
+        "Combine all sections for a complete performance including tempo transitions"
+      ],
+      "timeEstimate": "8-14 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Losing the power chord shape during slides between positions",
+      "Playing the intro too fast - it should be deliberately slow and heavy",
+      "Not adding enough palm muting, resulting in a muddy rather than chunky sound",
+      "Rushing the G5-F#5 oscillation instead of keeping it locked to the groove",
+      "Neglecting the tempo transition between the slow intro and fast main section"
+    ],
+    "practiceRoutine": [
+      "Warm up with slow power chord slides between B5, D5, and E5 for 5 minutes",
+      "Practice the main riff at 100 BPM with metronome for 10 minutes",
+      "Work on the G5-F#5 oscillation separately until it grooves naturally",
+      "Practice palm muting technique on a single chord at various pressures",
+      "Play the complete song structure at a comfortable tempo, building speed gradually"
+    ],
+    "focusAreas": [
+      "Clean power chord voicing maintained during sliding transitions",
+      "Consistent palm muting pressure for the thick, chugging sound",
+      "Accurate tempo management across the intro-to-verse speed transition",
+      "The rhythmic feel of the G5-F#5 oscillating riff section",
+      "Wide vibrato technique for the guitar solo"
+    ],
+    "metronomeWork": [
+      "Practice the slow intro at 76 BPM with quarter-note clicks",
+      "Work the main riff starting at 100 BPM, adding 10 BPM per session",
+      "Practice the tempo transition from 76 BPM intro to 164 BPM main riff",
+      "Use eighth-note subdivision clicks for the G5-F#5 oscillation precision",
+      "Target full song at 164 BPM with clean slides and consistent muting"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Paranoid",
+        "difficulty": "Intermediate",
+        "similarity": "Same album, similar power chord approach but at consistently fast tempo"
+      },
+      {
+        "title": "War Pigs",
+        "difficulty": "Advanced",
+        "similarity": "More complex Sabbath riffing with tempo changes and extended sections"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Iconic Power Chord Riff",
+        "similarity": "Another universally recognized power chord riff from the early heavy rock era"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "technique": "Heavy Power Chord Riffing",
+        "similarity": "Similar heavy palm-muted power chord approach with sliding elements"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "technique": "Power Chord Riffs",
+        "similarity": "Iconic rock riff built on simple but effective power chord progressions"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Simpler power chord riff to build sliding technique foundation"
+      },
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "difficulty": "Advanced",
+        "similarity": "More complex metal riffing building on power chord sliding techniques"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "heavy-metal",
+      "power-chords",
+      "iconic-riff",
+      "black-sabbath"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

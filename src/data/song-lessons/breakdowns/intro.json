@@ -1,0 +1,149 @@
+{
+  "slug": "intro",
+  "category": "breakdowns",
+  "pageTitle": "Intro Analysis",
+  "subtitle": "Understanding how song introductions establish key centers, mood, and musical themes",
+  "heroGradient": "bg-gradient-to-r from-blue-50 to-indigo-50",
+  "backLink": { "href": "/lessons/songs/breakdowns", "label": "Back to Song Breakdowns" },
+  "introduction": {
+    "title": "The Role of Song Intros",
+    "text": "A song's introduction is like the opening line of a great novel\u2014it sets the stage for everything that follows. Musically, intros serve several critical functions that we can analyze and understand through music theory."
+  },
+  "sections": [
+    {
+      "title": "What Intros Accomplish",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Establish Key Center",
+          "icon": "\ud83c\udfaf",
+          "description": "The intro tells your ear what key the song is in, creating a harmonic reference point that all other sections will relate to.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Start and end on the tonic chord", "Use a strong I-V-I progression", "Feature the root note prominently in bass", "Play a melody that outlines the tonic chord"]
+        },
+        {
+          "title": "Set the Mood",
+          "icon": "\ud83c\udfad",
+          "description": "Intros establish the emotional tone through tempo, dynamics, harmonic color, and instrumental texture.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Tempo (fast = energetic, slow = contemplative)", "Mode (major = bright, minor = dark)", "Dynamics (loud = aggressive, soft = intimate)", "Texture (dense = complex, sparse = simple)"]
+        },
+        {
+          "title": "Introduce Themes",
+          "icon": "\ud83c\udfb5",
+          "description": "Many intros preview melodic or rhythmic motifs that will appear throughout the song, creating musical coherence.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Hint at the main melody", "Establish rhythmic patterns", "Introduce instrumental textures", "Preview harmonic progressions"]
+        },
+        {
+          "title": "Create Energy",
+          "icon": "\u26a1",
+          "description": "Intros build anticipation and energy that leads naturally into the first verse, creating forward momentum.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Gradual dynamic increases", "Rhythmic acceleration", "Instrumental layering", "Harmonic tension and release"]
+        }
+      ]
+    },
+    {
+      "title": "Common Intro Types",
+      "bgColor": "bg-gray-50",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Instrumental Hook",
+          "icon": "\ud83c\udfb8",
+          "description": "Features a memorable riff or melody that becomes the song's signature. Often uses the main chord progression or a variation of it.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Sweet Child O' Mine\" (Guns N' Roses)" },
+            { "label": "Key", "value": "D major" },
+            { "label": "Progression", "value": "D-C-G (I-\u266dVII-IV)" },
+            { "label": "Function", "value": "Establishes D as tonic through repeated resolution" },
+            { "label": "Melody", "value": "Outlines D major triad" },
+            { "label": "Rhythm", "value": "Steady sixteenth notes create momentum" },
+            { "label": "Effect", "value": "Iconic riff becomes song's identity" }
+          ]
+        },
+        {
+          "title": "Atmospheric Build",
+          "icon": "\ud83c\udfb9",
+          "description": "Starts quietly and gradually builds layers, dynamics, and complexity to create anticipation for the verse entrance.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Where the Streets Have No Name\" (U2)" },
+            { "label": "Key", "value": "D major" },
+            { "label": "Structure", "value": "Layered instrumental build" },
+            { "label": "Harmony", "value": "D-A-Bm-G progression" },
+            { "label": "Texture", "value": "Starts with organ, adds drums, bass, guitar" },
+            { "label": "Dynamics", "value": "Gradual crescendo over 1+ minutes" },
+            { "label": "Effect", "value": "Creates massive anticipation" }
+          ]
+        },
+        {
+          "title": "Vocal Preview",
+          "icon": "\ud83c\udfa4",
+          "description": "Features a snippet of vocal melody, often the chorus hook, before launching into the verse structure.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Livin' on a Prayer\" (Bon Jovi)" },
+            { "label": "Key", "value": "E minor" },
+            { "label": "Preview", "value": "\"Woah, we're halfway there\" hook" },
+            { "label": "Harmony", "value": "Em-C-D progression" },
+            { "label": "Strategy", "value": "Gives away the best part first" },
+            { "label": "Psychology", "value": "Creates immediate familiarity" },
+            { "label": "Effect", "value": "Hooks listener immediately" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Analyze Any Intro",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Harmonic Analysis",
+          "icon": "\ud83d\udd0d",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Identify the key center", "Map the chord progression using Roman numerals", "Note any non-diatonic chords or modulations", "Analyze how harmony establishes tonality"]
+        },
+        {
+          "title": "Melodic & Rhythmic Analysis",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Identify the main melodic motifs", "Analyze scale choices and melodic intervals", "Examine rhythmic patterns and time signature", "Note how melody relates to underlying harmony"]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercise",
+    "bgColor": "bg-amber-50",
+    "items": [
+      "Choose three songs from different genres and analyze their intros using the framework above.",
+      "Listen to the intro 5-10 times to internalize the sound.",
+      "Identify the key and chord progression.",
+      "Note what mood and energy the intro creates.",
+      "Determine what themes are introduced.",
+      "Compare how different genres approach intro construction.",
+      "This exercise will train your ear to hear intros as sophisticated musical constructions rather than just \"the part before the song starts.\""
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Verse Analysis", "href": "/lessons/songs/breakdowns/verse", "description": "Learn how verses develop narratively", "icon": "\ud83d\udcdd" },
+    { "title": "Chorus Analysis", "href": "/lessons/songs/breakdowns/chorus", "description": "Explore emotional peaks and climax", "icon": "\ud83c\udfb6" }
+  ]
+}

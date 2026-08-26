@@ -1,0 +1,373 @@
+{
+  "slug": "major-6th",
+  "intervalInfo": {
+    "name": "Major 6th Interval",
+    "pageTitle": "Major 6th Interval",
+    "subtitle": "The sweet interval - 9 semitones that creates warm, romantic harmony and is the inversion of the minor 3rd.",
+    "colorScheme": "emerald",
+    "heroGradient": "bg-gradient-to-r from-emerald-600 to-teal-700",
+    "tags": [
+      "9 Semitones",
+      "Sweet & Romantic",
+      "Minor 3rd Inversion",
+      "Warm Harmony"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "9 semitones (4½ whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Major"
+      },
+      {
+        "label": "Sound",
+        "value": "Sweet, warm, romantic"
+      },
+      {
+        "label": "Consonance",
+        "value": "Moderately consonant"
+      },
+      {
+        "label": "Inversion",
+        "value": "Minor 3rd (3 semitones)"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to A",
+        "value": "Major 6th"
+      },
+      {
+        "label": "F to D",
+        "value": "Major 6th"
+      },
+      {
+        "label": "\"My Bonnie Lies Over the Ocean\"",
+        "value": "Opening leap"
+      },
+      {
+        "label": "\"Nobody Knows the Trouble I've Seen\"",
+        "value": "\"No-bo-dy\""
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Major 6th Intervals - Sweet & Romantic",
+      "description": "The major 6th (9 semitones) creates one of music's most beautiful and emotionally resonant intervals, evoking warmth, romance, and nostalgia.",
+      "examples": [
+        {
+          "title": "C → A Major 6th",
+          "subtitle": "Classic major 6th relationship",
+          "chord1": "C_to_A_M6",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "A_from_C_M6",
+          "chord2Label": "A (5th string open)",
+          "alphaTex": "3.5.4 5.5.4",
+          "alphaTexTitle": "C to A Major 6th",
+          "description": "Sweet, romantic harmonic color",
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorDetail": "text-emerald-600"
+        },
+        {
+          "title": "F → D Major 6th",
+          "subtitle": "Folk and country music staple",
+          "chord1": "F_to_D_M6",
+          "chord1Label": "F (6th string 1st fret)",
+          "chord2": "D_from_F_M6",
+          "chord2Label": "D (4th string open)",
+          "alphaTex": "1.6.4 0.4.4",
+          "alphaTexTitle": "F to D Major 6th",
+          "description": "Warm, open folk harmony",
+          "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+          "colorBorder": "border border-teal-200",
+          "colorTitle": "text-teal-800",
+          "colorText": "text-teal-700",
+          "colorDetail": "text-teal-600"
+        },
+        {
+          "title": "G → E Major 6th",
+          "subtitle": "Jazz and ballad application",
+          "chord1": "G_to_E_M6",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "E_from_G_M6",
+          "chord2Label": "E (4th string 2nd fret)",
+          "alphaTex": "3.6.4 2.4.4",
+          "alphaTexTitle": "G to E Major 6th",
+          "description": "Sophisticated melodic movement",
+          "colorBg": "bg-gradient-to-br from-cyan-50 to-cyan-100",
+          "colorBorder": "border border-cyan-200",
+          "colorTitle": "text-cyan-800",
+          "colorText": "text-cyan-700",
+          "colorDetail": "text-cyan-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "6th Chord Applications - Adding Sweetness",
+      "items": [
+        {
+          "title": "C6 Chord",
+          "chord": "C6",
+          "chordLabel": "C6 with added major 6th (A)",
+          "alphaTex": "(3.5 2.4 3.3 5.5).1",
+          "alphaTexTitle": "C6 Chord",
+          "alphaTexDescription": "C-E-G-A: Major triad + major 6th",
+          "bullets": [
+            "Major 6th: C → A (romantic sweetness)",
+            "Jazz standard: Final resolution chord",
+            "Folk/country: Warm, open sound"
+          ],
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorDetail": "text-blue-600"
+        },
+        {
+          "title": "Am6 Chord",
+          "chord": "Am6",
+          "chordLabel": "Am6 with added major 6th (F#)",
+          "alphaTex": "(0.5 3.4 2.4 2.1).1",
+          "alphaTexTitle": "Am6 Chord",
+          "alphaTexDescription": "A-C-E-F#: Minor triad + major 6th",
+          "bullets": [
+            "Major 6th: A → F# (brightens minor)",
+            "Bossa nova: Essential Brazilian sound",
+            "Jazz ballads: Sophisticated minor harmony"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorDetail": "text-emerald-600"
+        },
+        {
+          "title": "Dm6 Chord",
+          "chord": "Dm6",
+          "chordLabel": "Dm6 with added major 6th (B)",
+          "alphaTex": "(0.4 1.4 2.5 4.6).1",
+          "alphaTexTitle": "Dm6 Chord",
+          "alphaTexDescription": "D-F-A-B: Minor triad + major 6th",
+          "bullets": [
+            "Major 6th: D → B (complex sweetness)",
+            "Classical: Romantic period harmony",
+            "Film music: Nostalgic, expressive quality"
+          ],
+          "colorBg": "bg-gradient-to-br from-rose-50 to-rose-100",
+          "colorBorder": "border border-rose-200",
+          "colorTitle": "text-rose-800",
+          "colorText": "text-rose-700",
+          "colorDetail": "text-rose-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "\"My Bonnie\" Reference",
+        "alphaTex": "3.5.1 5.5.1",
+        "alphaTexTitle": "My Bonnie Leap",
+        "alphaTexDescription": "\"My Bonnie lies over the ocean\" - iconic major 6th",
+        "bullets": [
+          "Yearning quality: Expansive, reaching emotion",
+          "Melodic leap: Creates dramatic musical moment",
+          "Traditional song: Perfect ear training reference"
+        ],
+        "colorBg": "bg-gradient-to-br from-amber-50 to-amber-100",
+        "colorBorder": "border border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700"
+      },
+      {
+        "title": "Jazz & Modern Applications",
+        "alphaTex": "(3.5 2.4 3.3 5.5).2 | (1.6 5.5 3.2 5.1).2",
+        "alphaTexTitle": "C6 to F6 Progression",
+        "alphaTexDescription": "C6 to F6 progression - jazz standard movement",
+        "bullets": [
+          "Ballad endings: Non-dominant resolution",
+          "Country music: Pedal steel guitar effects",
+          "Bossa nova: Minor 6th chord sophistication"
+        ],
+        "colorBg": "bg-gradient-to-br from-violet-50 to-violet-100",
+        "colorBorder": "border border-violet-200",
+        "colorTitle": "text-violet-800",
+        "colorText": "text-violet-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"My Bonnie Lies Over the Ocean\"",
+        "description": "Opening major 6th leap creates yearning, expansive feeling",
+        "detail": "Classic example of major 6th's romantic character"
+      },
+      {
+        "title": "\"Nobody Knows the Trouble I've Seen\"",
+        "description": "\"No-bo-dy\" features distinctive major 6th interval",
+        "detail": "Spiritual demonstrates interval's emotional depth"
+      }
+    ],
+    "popular": [
+      {
+        "title": "Jazz Standards & Ballads",
+        "description": "Major 6th chords in \"The Way You Look Tonight\", \"Misty\"",
+        "detail": "Essential for sophisticated jazz harmony"
+      },
+      {
+        "title": "Country & Folk Music",
+        "description": "Pedal steel guitar and major 6th chord progressions",
+        "detail": "Creates characteristic country and folk warmth"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Use \"My Bonnie\" as reference",
+        "Practice major 6th vs. minor 6th",
+        "Listen to major 6th chord progressions",
+        "Study jazz ballad harmony",
+        "Compare with perfect 5th and minor 7th"
+      ],
+      "colorBg": "bg-emerald-50",
+      "colorBorder": "border border-emerald-200",
+      "colorTitle": "text-emerald-800",
+      "colorText": "text-emerald-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master 9-fret same-string 6ths",
+        "Practice C-A, F-D, G-E intervals",
+        "Work on major 6th chord shapes",
+        "Study cross-string 6th patterns",
+        "Practice major 6th melodic leaps"
+      ],
+      "colorBg": "bg-teal-50",
+      "colorBorder": "border border-teal-200",
+      "colorTitle": "text-teal-800",
+      "colorText": "text-teal-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create romantic melodic phrases",
+        "Study jazz major 6th chord usage",
+        "Explore country/folk 6th harmony",
+        "Practice modal interchange (Dorian)",
+        "Analyze major 6th in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Minor 3rd Inversion",
+        "description": "The major 6th inverts to a minor 3rd. When you flip a C-A major 6th, you get A-C (minor 3rd), creating an interesting harmonic duality."
+      },
+      {
+        "title": "Harmonic Series Position",
+        "description": "The major 6th appears later in the harmonic series, giving it a more complex but still consonant character."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Major 6th Chords",
+        "description": "Add warmth without the pull of dominant 7th chords. Often used as tonic substitutes in jazz and as color chords in folk music."
+      },
+      {
+        "title": "Modal Color",
+        "description": "The major 6th gives Dorian mode its characteristic sound, distinguishing it from natural minor."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Minor 6th",
+      "description": "8 semitones - one semitone smaller",
+      "detail": "Sad vs. sweet - same interval quality, different emotion",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - two semitones smaller",
+      "detail": "Rock solid vs. romantically expansive",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Minor 7th",
+      "description": "10 semitones - one semitone larger",
+      "detail": "Sweet vs. bluesy - different harmonic functions",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "From sweet romance, explore intervals that add different emotional colors and harmonic functions.",
+    "links": [
+      {
+        "slug": "minor-6th",
+        "title": "Minor 6th",
+        "description": "Compare the sad beauty - explore the minor 6th's melancholic character.",
+        "linkText": "Feel the sadness",
+        "icon": "tears",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "hoverBorder": "hover:border-blue-300",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Step back to rock-solid stability - the foundation of power chords.",
+        "linkText": "Find power",
+        "icon": "target",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "hoverBorder": "hover:border-green-300",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "slug": "minor-7th",
+        "title": "Minor 7th",
+        "description": "Step up to bluesy sophistication - essential for dominant 7th chords.",
+        "linkText": "Add blues",
+        "icon": "musical-note",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "hoverBorder": "hover:border-purple-300",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

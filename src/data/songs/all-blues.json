@@ -1,0 +1,504 @@
+{
+  "songInfo": {
+    "title": "All Blues",
+    "artist": "Miles Davis",
+    "album": "Kind of Blue",
+    "released": "1959",
+    "genre": "Jazz",
+    "tempo": "138 BPM (6/4 time)",
+    "duration": "11:33",
+    "key": "G Major (G7 Mixolydian)",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Advanced",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G Mixolydian / G dominant",
+      "scalesUsed": [
+        {
+          "scale": "G Mixolydian",
+          "notes": "G - A - B - C - D - E - F - G",
+          "application": "Primary scale for the G7 chord sections; defines the tonal center with the flat 7th (F natural)"
+        },
+        {
+          "scale": "G blues scale",
+          "notes": "G - Bb - C - Db - D - F - G",
+          "application": "Improvisation over the 12-bar form, adding blue notes for authentic jazz-blues phrasing"
+        },
+        {
+          "scale": "C Mixolydian",
+          "notes": "C - D - E - F - G - A - Bb - C",
+          "application": "Used over the IV7 chord (C7) sections for chord-scale alignment"
+        },
+        {
+          "scale": "G Dorian",
+          "notes": "G - A - Bb - C - D - E - F - G",
+          "application": "Alternative improvisational color, blending minor and major qualities for jazz expression"
+        }
+      ],
+      "modalCharacter": "Mixolydian (Dominant 7th center) with blues inflections",
+      "keySignature": "No sharps or flats (C major key signature; G Mixolydian is the 5th mode of C major)",
+      "relativeMinor": "E minor (relative minor of G major)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G7",
+          "G7",
+          "G7",
+          "G7",
+          "C7",
+          "C7",
+          "G7",
+          "G7",
+          "D7#9",
+          "Eb7#9",
+          "D7#9",
+          "G7"
+        ],
+        "progression": "I7 - I7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7#9 - bVI7#9 - V7#9 - I7",
+        "description": "A 12-bar blues variation in 6/4 time using dominant 7th chords throughout, with the distinctive chromatic turnaround using D7#9 to Eb7#9 and back"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Head (Bars 1-4)",
+          "progression": "G7 - G7 - G7 - G7",
+          "romanNumerals": "I7 - I7 - I7 - I7",
+          "description": "Four bars of G7 establishing the tonic dominant quality with the signature riff played by the horns"
+        },
+        {
+          "section": "IV Chord (Bars 5-6)",
+          "progression": "C7 - C7",
+          "romanNumerals": "IV7 - IV7",
+          "description": "Standard blues IV chord movement; guitar comps with C7 voicings shifting the tonal center briefly"
+        },
+        {
+          "section": "Return to I (Bars 7-8)",
+          "progression": "G7 - G7",
+          "romanNumerals": "I7 - I7",
+          "description": "Return to the G7 tonic area before the turnaround"
+        },
+        {
+          "section": "Turnaround (Bars 9-12)",
+          "progression": "D7#9 - Eb7#9 - D7#9 - G7",
+          "romanNumerals": "V7#9 - bVI7#9 - V7#9 - I7",
+          "description": "The distinctive chromatic turnaround featuring the #9 voicings that give All Blues its unique harmonic identity"
+        }
+      ],
+      "harmonicFunction": [
+        "G7 (I7) - Tonic dominant chord; the Mixolydian home base creates a suspended, floating quality",
+        "C7 (IV7) - Subdominant providing classic blues movement away from the tonic",
+        "D7#9 (V7#9) - Dominant chord with the Hendrix chord quality creating strong pull to resolve",
+        "Eb7#9 (bVI7#9) - Chromatic upper neighbor to D7#9, creating the signature half-step chromatic slide",
+        "The 6/4 time signature creates a waltz-like feel that distinguishes this from standard 4/4 blues",
+        "The #9 voicings (containing both major and minor 3rds) are essential to the jazz-blues character"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Jazz Comping with Dominant 7th Voicings",
+      "description": "Accompanying the ensemble using compact dominant 7th chord voicings with rhythmic variation, providing harmonic support while leaving space for soloists",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G7: 3-2-0-0-0-1 (open voicing) or X-10-12-10-12-X (closed voicing)",
+          "C7: X-3-2-3-1-0 (open) or 8-10-8-9-8-X (closed voicing at 8th fret)",
+          "D7#9: X-5-4-5-5-X (the Hendrix chord voicing at 5th fret)",
+          "Eb7#9: X-6-5-6-6-X (same shape shifted up one fret)",
+          "Use 3-note and 4-note voicings on the middle strings to stay out of the bass register",
+          "Rhythmic comping should be sparse and syncopated, not on every beat"
+        ],
+        "sequence": [
+          "Establish the G7 comp pattern using a swing feel in 6/4",
+          "Play on beats 2, 4, and 6 (or varied syncopations) to avoid clashing with bass",
+          "Shift voicings up a fret for Eb7#9 from D7#9 position",
+          "Leave space during solos - comping should breathe",
+          "Follow the form: 4 bars G7, 2 bars C7, 2 bars G7, turnaround"
+        ],
+        "tips": [
+          "Less is more - jazz comping leaves generous space for the soloist",
+          "Use a clean or very lightly overdriven tone for warmth",
+          "Practice the 12-bar form until you can follow it without thinking",
+          "Listen to Freddie Green or Jim Hall for jazz comping style references",
+          "Swing the eighth notes: long-short feel rather than even eighths"
+        ],
+        "chords": [
+          "G7",
+          "C7",
+          "D7#9",
+          "Eb7#9"
+        ],
+        "progression": "12-bar blues in G (6/4 time)"
+      }
+    },
+    {
+      "name": "Chord Extensions and Alterations",
+      "description": "Using extended and altered chord tones (9ths, 13ths, #9) to create sophisticated jazz harmony beyond basic triads and seventh chords",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G9: 3-X-0-2-0-1 or X-10-9-10-10-X (adds the 9th/A note)",
+          "G13: 3-X-0-0-0-0 (open strings create the 13th/E) or 3-X-2-4-3-X",
+          "C9: X-3-2-3-3-3 (adds the 9th/D note to C7)",
+          "D7#9: The #9 (E#/F natural) creates tension needing resolution",
+          "Eb7#9: Same structure as D7#9 shifted up a half step",
+          "Mix basic 7th voicings with extended voicings for variety"
+        ],
+        "sequence": [
+          "Start with basic dominant 7th voicings to learn the form",
+          "Gradually substitute extended voicings (9ths, 13ths) for color",
+          "Practice the D7#9 to Eb7#9 chromatic slide as a consistent gesture",
+          "Experiment with different voicing inversions for smooth voice leading",
+          "Combine basic and extended voicings within a single chorus"
+        ],
+        "tips": [
+          "Learn multiple voicings for each chord at different neck positions",
+          "Prioritize smooth voice leading - move as few notes as possible between chords",
+          "The #9 voicing is the defining sound of this turnaround - master it",
+          "Practice switching between G7, G9, and G13 voicings to add variety",
+          "Keep your voicings in the middle register to blend with the ensemble"
+        ],
+        "chords": [
+          "G7",
+          "G9",
+          "G13",
+          "C7",
+          "C9",
+          "D7#9",
+          "Eb7#9"
+        ],
+        "progression": "Extended voicings over the 12-bar form"
+      }
+    },
+    {
+      "name": "6/4 Swing Feel",
+      "description": "Internalizing the 6/4 time signature with a jazz swing feel, which gives All Blues its distinctive waltz-like groove distinctly different from standard 4/4 blues",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "6/4 time = 6 quarter-note beats per measure",
+          "Can be felt as two groups of 3 (waltz in 2) or three groups of 2",
+          "All Blues primarily uses a feel of two groups of 3 (ONE-two-three-FOUR-five-six)",
+          "Swing the subdivisions: eighth notes are played with a long-short triplet feel",
+          "Jimmy Cobb's brushwork on drums defines the groove - listen to it carefully"
+        ],
+        "sequence": [
+          "Count 1-2-3-4-5-6 while tapping foot on 1 and 4",
+          "Practice comping on beats 2, 4, and 6 with swing feel",
+          "Clap the rhythm before adding chord voicings",
+          "Play along with the recording focusing on locking with the drums",
+          "Practice the 12-bar form cycling continuously in 6/4"
+        ],
+        "tips": [
+          "Donthe iconic vocal hookstrange' - just feel the waltz groove",
+          "Listen to the original recording repeatedly to absorb the feel",
+          "Practice with a slow metronome set to dotted half notes (2 clicks per bar)",
+          "The bass walks in a 6/4 pattern - use it as your rhythmic anchor",
+          "Relax into the groove rather than counting rigidly"
+        ],
+        "chords": [],
+        "progression": "Applies to the entire song form"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro/Vamp",
+      "timeStamp": "0:00-0:35",
+      "technique": "6/4 Swing Feel",
+      "key": "G Mixolydian",
+      "description": "Piano and bass establish the 6/4 groove with the signature two-note riff (G and Ab oscillation) before the head melody enters. Guitar should comp lightly or lay out.",
+      "chords": [
+        "G7"
+      ],
+      "progression": "G7 vamp",
+      "notes": [
+        "The opening vamp is primarily piano and bass - guitar can lay out",
+        "If comping, use sparse G7 voicings on beats 4-6 only",
+        "The G-Ab auxiliary note figure in the bass defines the piece",
+        "Establish the 6/4 feel before the head melody enters"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Head (Theme)",
+      "timeStamp": "0:35-2:00",
+      "technique": "Jazz Comping with Dominant 7th Voicings",
+      "key": "G Mixolydian",
+      "description": "The melody (head) is played by Miles Davis on trumpet. Guitar provides supportive comping using the 12-bar form with sparse, rhythmically varied voicings.",
+      "chords": [
+        "G7",
+        "C7",
+        "D7#9",
+        "Eb7#9"
+      ],
+      "progression": "G7(4) - C7(2) - G7(2) - D7#9 - Eb7#9 - D7#9 - G7",
+      "notes": [
+        "Support the trumpet melody with light comping",
+        "Follow the 12-bar form precisely",
+        "The turnaround (D7#9 - Eb7#9 - D7#9) is the harmonic highlight",
+        "Keep volume low during the head to let the melody sing"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Solo Section (Miles Davis)",
+      "timeStamp": "2:00-4:30",
+      "technique": "Jazz Comping with Dominant 7th Voicings",
+      "key": "G Mixolydian",
+      "description": "Miles Davis solos over the form. Guitar maintains light, supportive comping, following the harmonic form and responding to the soloist's phrasing.",
+      "chords": [
+        "G7",
+        "C7",
+        "D7#9",
+        "Eb7#9"
+      ],
+      "progression": "12-bar form repeating under solos",
+      "notes": [
+        "Comp responsively - react to what the soloist plays",
+        "Leave plenty of space between chord hits",
+        "Vary your voicings and rhythms each chorus to keep it fresh",
+        "The form repeats multiple times - maintain concentration through each chorus"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Solo Section (Cannonball Adderley / Coltrane)",
+      "timeStamp": "4:30-8:00",
+      "technique": "Chord Extensions and Alterations",
+      "key": "G Mixolydian",
+      "description": "Saxophone solos over the form. This section presents opportunity for more adventurous comping, using extended voicings and varied rhythmic patterns.",
+      "chords": [
+        "G9",
+        "G13",
+        "C9",
+        "D7#9",
+        "Eb7#9"
+      ],
+      "progression": "12-bar form with extended voicings",
+      "notes": [
+        "Use more adventurous voicings as the energy builds through solos",
+        "Extended chords (9ths, 13ths) add harmonic interest during longer solo sections",
+        "Balance increased harmonic activity with continued restraint",
+        "Follow the soloist's energy level with your comping intensity"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Head Out (Final Theme)",
+      "timeStamp": "9:30-10:45",
+      "technique": "Jazz Comping with Dominant 7th Voicings",
+      "key": "G Mixolydian",
+      "description": "Return of the head melody to close the performance. Comping returns to the restrained approach of the opening head.",
+      "chords": [
+        "G7",
+        "C7",
+        "D7#9",
+        "Eb7#9"
+      ],
+      "progression": "G7(4) - C7(2) - G7(2) - D7#9 - Eb7#9 - D7#9 - G7",
+      "notes": [
+        "Return to the sparse comping style of the opening head",
+        "Match the dynamic of the ensemble winding down",
+        "The turnaround chords should be played with finality",
+        "Let the melody be the primary focus again"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro/Vamp",
+      "timeStamp": "10:45-11:33",
+      "technique": "6/4 Swing Feel",
+      "key": "G Mixolydian",
+      "description": "Return to the opening vamp figure, gradually fading as the ensemble winds down the performance.",
+      "chords": [
+        "G7"
+      ],
+      "progression": "G7 vamp (fade)",
+      "notes": [
+        "Return to the two-note vamp figure from the intro",
+        "Gradually reduce comping as the piece fades",
+        "Match the ensemble's diminuendo",
+        "The piece ends quietly on the G7 vamp"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Archtop hollow-body guitar (Gibson L-5, ES-175, or similar)",
+      "alternatives": [
+        "Gibson ES-175",
+        "Epiphone Emperor",
+        "Ibanez AF95 or AG75",
+        "Any semi-hollow or hollow-body with warm pickups"
+      ],
+      "pickup": "Neck humbucker for warm, round jazz tone with rolled-off treble"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or similar clean amp",
+      "alternatives": [
+        "Polytone Mini Brute (classic jazz amp)",
+        "Roland JC-120 Jazz Chorus",
+        "Fender Deluxe Reverb",
+        "Henriksen JazzAmp"
+      ],
+      "settings": {
+        "gain": "2-3 (completely clean, no breakup)",
+        "treble": "4 (rolled off for warm tone)",
+        "middle": "6 (present mids for body)",
+        "bass": "5 (balanced, not boomy)",
+        "presence": "3-4 (soft, round attack)"
+      }
+    },
+    "effects": {
+      "distortion": "None - completely clean tone",
+      "reverb": "Light spring or room reverb for natural ambience",
+      "other": "No effects needed; pure clean tone is the jazz standard"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the 12-bar blues form and basic dominant 7th chord shapes",
+      "steps": [
+        "Learn open G7 and C7 chord voicings",
+        "Understand the 12-bar blues form structure",
+        "Practice counting in 6/4 time (1-2-3-4-5-6)",
+        "Strum through the form slowly with basic voicings",
+        "Listen to the original recording repeatedly to absorb the feel"
+      ],
+      "timeEstimate": "2-4 weeks for basic form familiarity"
+    },
+    "intermediate": {
+      "focus": "Develop jazz comping technique and master the turnaround voicings",
+      "steps": [
+        "Learn D7#9 and Eb7#9 chord voicings (Hendrix chord shapes)",
+        "Practice the chromatic turnaround slide between D7#9 and Eb7#9",
+        "Develop a swing feel in 6/4 time with syncopated comping",
+        "Learn multiple voicings for G7 and C7 across the neck",
+        "Practice comping along with the recording following the form"
+      ],
+      "timeEstimate": "4-8 weeks for solid comping ability"
+    },
+    "advanced": {
+      "focus": "Master extended voicings, responsive comping, and improvisation over the form",
+      "steps": [
+        "Use 9th, 13th, and altered voicings for harmonic variety",
+        "Develop responsive comping that reacts to the soloist",
+        "Begin improvising melodies over the 12-bar form using Mixolydian and blues scales",
+        "Practice with a metronome and backing tracks at various tempos",
+        "Perform with other musicians in a jazz combo setting"
+      ],
+      "timeEstimate": "2-4 months for performance-ready comping and soloing"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Overplaying - comping too frequently and not leaving space for the soloist",
+      "Playing in 4/4 feel instead of the correct 6/4 waltz-like groove",
+      "Using rock-style power chords instead of jazz 7th chord voicings",
+      "Swinging too aggressively or not swinging at all (playing straight eighths)",
+      "Losing track of the 12-bar form during extended solo sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with dominant 7th chord voicings in multiple positions for 5 minutes",
+      "Count through the 12-bar form in 6/4 while tapping the swing groove",
+      "Practice the turnaround (D7#9 - Eb7#9 - D7#9 - G7) as an isolated loop",
+      "Comp through the entire form with the recording for at least 3 full cycles",
+      "Practice improvising a simple melody using the G Mixolydian and G blues scales"
+    ],
+    "focusAreas": [
+      "Internalizing the 6/4 time feel with swing",
+      "Smooth voice leading between chord changes",
+      "The D7#9 to Eb7#9 chromatic turnaround voicing",
+      "Dynamic and rhythmic variety in comping",
+      "Knowing the 12-bar form automatically without counting bars"
+    ],
+    "metronomeWork": [
+      "Set metronome to dotted half notes for 2 beats per 6/4 measure (about 46 BPM per click)",
+      "Practice comping on offbeats while metronome clicks on 1 and 4",
+      "Gradually increase from 100 BPM to 138 BPM in quarter notes",
+      "Practice the form with just beats 1 and 4 sounding to test independence",
+      "Use a swing-eighth metronome setting if available for authentic feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "So What",
+        "difficulty": "Intermediate",
+        "similarity": "Same album (Kind of Blue), modal jazz approach with simple form but rich harmonic potential"
+      },
+      {
+        "title": "Freddie Freeloader",
+        "difficulty": "Intermediate",
+        "similarity": "12-bar blues from Kind of Blue; simpler harmonically but same ensemble approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Blue in Green",
+        "artist": "Miles Davis",
+        "difficulty": "Advanced",
+        "similarity": "Jazz ballad comping technique and extended chord voicings"
+      },
+      {
+        "title": "Autumn Leaves",
+        "artist": "Jazz Standard",
+        "difficulty": "Intermediate",
+        "similarity": "Fundamental jazz comping and ii-V-I progression practice"
+      },
+      {
+        "title": "Stormy Monday",
+        "artist": "T-Bone Walker",
+        "difficulty": "Intermediate",
+        "similarity": "Blues with jazz voicings; bridging blues and jazz guitar approaches"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Blues in G (standard 12-bar)",
+        "artist": "Traditional",
+        "difficulty": "Beginner",
+        "similarity": "Start with basic 12-bar blues in 4/4 before tackling 6/4"
+      },
+      {
+        "title": "Take Five",
+        "artist": "Dave Brubeck",
+        "difficulty": "Advanced",
+        "similarity": "Odd meter jazz standard for developing comfort with non-4/4 time"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 80,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1950s",
+    "iconicRiff": false,
+    "tags": [
+      "jazz",
+      "blues",
+      "comping",
+      "swing"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

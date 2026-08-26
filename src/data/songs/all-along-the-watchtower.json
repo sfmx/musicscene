@@ -1,0 +1,431 @@
+{
+  "songInfo": {
+    "title": "All Along the Watchtower",
+    "artist": "Jimi Hendrix",
+    "album": "Electric Ladyland",
+    "released": "1968",
+    "genre": "Blues Rock",
+    "tempo": "114 BPM",
+    "duration": "4:01",
+    "key": "C# Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C# minor",
+      "scalesUsed": [
+        {
+          "scale": "C# minor pentatonic",
+          "notes": "C# - E - F# - G# - B",
+          "application": "Primary scale for lead guitar fills, solo sections, and chord embellishments throughout the song"
+        },
+        {
+          "scale": "C# natural minor (Aeolian)",
+          "notes": "C# - D# - E - F# - G# - A - B - C#",
+          "application": "Establishes the harmonic framework for the i-VII-VI-VII chord progression and melodic passages"
+        },
+        {
+          "scale": "C# blues scale",
+          "notes": "C# - E - F# - G - G# - B",
+          "application": "Adds the bluesy flat-fifth (G natural) tension in lead fills and the slide guitar solo sections"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with blues inflections",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the key (relative major: E major)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C#m",
+          "B",
+          "A",
+          "B"
+        ],
+        "progression": "i - VII - VI - VII",
+        "description": "The relentless three-chord minor progression that cycles throughout the entire song, using the natural minor VII and VI chords for a dark, driving modal feel"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "C#m - B - A - B",
+          "romanNumerals": "i - VII - VI - VII",
+          "description": "The same i-VII-VI-VII progression underpins all verses, with rhythm guitar adding chord embellishments and fills between changes"
+        },
+        {
+          "section": "Interlude / Solo",
+          "progression": "C#m - B - A - B",
+          "romanNumerals": "i - VII - VI - VII",
+          "description": "Identical chord progression continues under the guitar solos and interludes, with increasing intensity and improvisation over the static harmony"
+        },
+        {
+          "section": "Outro",
+          "progression": "C#m - B - A - B - C#m",
+          "romanNumerals": "i - VII - VI - VII - i",
+          "description": "The progression loops with increasing fervor, building to a climactic resolution on the C#m tonic before fade-out"
+        }
+      ],
+      "harmonicFunction": [
+        "C#m (i) - Tonic minor establishing the dark, urgent mood of the song",
+        "B (VII) - Subtonic (natural minor VII) providing the characteristic modal pull away from tonic",
+        "A (VI) - Submediant creating the deepest harmonic contrast and the emotional low point of each cycle",
+        "The VII-i resolution (B to C#m) replaces the traditional V-i dominant resolution, giving the song its modal rather than tonal character"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Rhythm Guitar with Chord Embellishments",
+      "description": "The foundation of Hendrix's arrangement: rhythm guitar playing full barre chord shapes with hammer-on and pull-off embellishments, double-stops, and sixths woven into the strumming pattern",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C#m barre chord: X-4-6-6-5-4 (A-shape barre at 4th fret)",
+          "B barre chord: X-2-4-4-4-2 (A-shape barre at 2nd fret)",
+          "A barre chord: X-0-2-2-2-0 or 5-7-7-6-5-5 (E-shape barre at 5th fret)",
+          "Add hammer-on from minor to major 3rd within the C#m shape (fret 5 to 6 on G string)",
+          "Use double-stops (two-note fragments) between full chord strikes for Hendrix flavor",
+          "Sixths played on non-adjacent strings add the R&B element to the rhythm part"
+        ],
+        "sequence": [
+          "Learn the three barre chord shapes: C#m, B, A in the context of the progression",
+          "Practice the basic strumming pattern: down-down-up-up-down-up at 114 BPM",
+          "Add hammer-on embellishments within the C#m chord shape",
+          "Incorporate double-stops on beats 2 and 4 between full strums",
+          "Build the complete Hendrix-style rhythm part with all embellishments"
+        ],
+        "tips": [
+          "The embellishments should feel natural and loose, not mechanical or perfectly placed",
+          "Use the thumb to wrap around and fret the low E string bass notes",
+          "Keep the strumming hand moving constantly in a down-up motion even when not striking all strings",
+          "Listen to the original recording closely for the exact placement of hammer-ons and pull-offs",
+          "Slight wah pedal movement on rhythm adds the characteristic vocal quality"
+        ],
+        "chords": [
+          "C#m",
+          "B",
+          "A"
+        ],
+        "progression": "C#m - B - A - B (repeating)"
+      }
+    },
+    {
+      "name": "Slide Guitar Fills",
+      "description": "Slide guitar passages played in standard tuning, creating soaring, vocal-like melodic lines that weave through the chord changes during interludes and over the rhythm guitar parts",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Played in standard tuning (not open tuning), requiring precise slide intonation",
+          "Glass or metal slide on the pinky or ring finger, maintaining fretting ability with other fingers",
+          "Slide placed directly over the fretwire, not between frets like normal fretting",
+          "Vibrato achieved by rapid back-and-forth slide movement around the target fret",
+          "Muting behind the slide with trailing fingers is essential for clean sound"
+        ],
+        "sequence": [
+          "Practice placing the slide directly over fret wire for accurate pitch",
+          "Work on slide vibrato: rapid oscillation of approximately one fret width",
+          "Learn to mute strings behind the slide with index finger",
+          "Practice C# minor pentatonic phrases with slide in the 9th position",
+          "Apply slide licks over the C#m-B-A-B progression"
+        ],
+        "tips": [
+          "Use light slide pressure - just enough contact to produce a clean tone, not pressed to the fretboard",
+          "Keep the slide parallel to the frets for accurate intonation on multiple strings",
+          "Practice intonation by playing slide notes and checking against fretted notes",
+          "Use the pick-hand fingers to dampen strings you are not playing",
+          "Start with single-string slide phrases before attempting multi-string slides"
+        ],
+        "chords": [],
+        "progression": "Slide fills over C#m - B - A - B"
+      }
+    },
+    {
+      "name": "Layered Acoustic-Electric Arrangement",
+      "description": "The multi-layered approach combining acoustic guitar strumming, electric rhythm with embellishments, and lead fills creating a full band sound from the guitar parts alone",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The original recording features multiple guitar layers overdubbed",
+          "Acoustic 12-string provides the rhythmic backbone with steady strumming",
+          "Electric rhythm guitar adds the Hendrix embellishments and double-stops",
+          "Lead guitar enters with fills and eventually full solo sections",
+          "Understanding all layers helps a single guitarist create a complete arrangement"
+        ],
+        "sequence": [
+          "Learn the basic acoustic strumming pattern for the C#m-B-A-B progression",
+          "Add the electric rhythm embellishments (hammer-ons, pull-offs, double-stops)",
+          "Identify where lead fills enter and practice transitioning from rhythm to lead",
+          "Work on combining rhythm and lead elements into a single-guitar arrangement",
+          "Study the dynamic build from restrained verse to intense solo sections"
+        ],
+        "tips": [
+          "When performing solo, prioritize the rhythm foundation and add embellishments where possible",
+          "Use the low strings for the bass movement and high strings for lead fills simultaneously",
+          "Dynamic contrast is key: keep verses restrained to leave room for solo intensity",
+          "Practice transitioning smoothly between rhythm playing and lead fills without gaps",
+          "Listen to the stereo spread of the original to identify left, center, and right guitar parts"
+        ],
+        "chords": [
+          "C#m",
+          "B",
+          "A"
+        ],
+        "progression": "C#m - B - A - B across all layers"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:25",
+      "technique": "Rhythm Guitar with Chord Embellishments",
+      "key": "C# Minor",
+      "description": "The song opens with layered acoustic and electric guitars establishing the C#m-B-A-B progression, building from restrained strumming to fuller rhythm with embellishments",
+      "chords": [
+        "C#m",
+        "B",
+        "A",
+        "B"
+      ],
+      "progression": "C#m - B - A - B",
+      "notes": [
+        "Multiple guitar layers establish the progression: acoustic strumming and electric embellishments",
+        "Dynamic builds gradually from restrained to fuller throughout the intro",
+        "Listen for the hammer-on from 5th to 6th fret on G string within the C#m shape",
+        "The B chord serves as a pivot, appearing both after C#m and after A"
+      ],
+      "alphaTab": "9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 | 9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:30",
+      "technique": "Rhythm Guitar with Chord Embellishments",
+      "key": "C# Minor",
+      "description": "Verse sections with Dylanthe iconic vocal hooks blues-rock arrangement, featuring the cycling i-VII-VI-VII progression with increasing rhythmic intensity and embellishment density",
+      "chords": [
+        "C#m",
+        "B",
+        "A",
+        "B"
+      ],
+      "progression": "C#m - B - A - B",
+      "notes": [
+        "The same progression repeats throughout all verses without variation",
+        "Rhythm guitar gradually adds more embellishments as verses progress",
+        "Vocal melody follows the chord tones closely, primarily using minor pentatonic",
+        "Lead guitar begins adding subtle fills between vocal phrases in later verses"
+      ],
+      "alphaTab": "9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 | 9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo / Interlude",
+      "timeStamp": "1:30-3:00",
+      "technique": "Slide Guitar Fills / Lead Guitar",
+      "key": "C# Minor",
+      "description": "The extended instrumental section featuring multiple guitar solo passes over the repeating progression, including the famous slide guitar work, wah-inflected lead lines, and building intensity",
+      "chords": [
+        "C#m",
+        "B",
+        "A",
+        "B"
+      ],
+      "progression": "C#m - B - A - B (repeating under solos)",
+      "notes": [
+        "Multiple solo passes with different textures: clean, slide, wah, overdriven",
+        "C# minor pentatonic is the primary solo scale, centered around 9th position",
+        "Slide guitar sections create soaring, vocal-like melodic lines",
+        "Wah pedal adds vocal expressiveness, especially on sustained bends",
+        "Intensity builds throughout the solo section toward the final verse"
+      ],
+      "alphaTab": "9.5 11.5 11.4 14.4 | 14.5 16.5 16.4 14.4 | 16.5 14.5 11.5 9.5 | 9.4 11.4 14.4 16.4 |",
+      "exerciseLabel": "Position Sliding Exercise"
+    },
+    {
+      "name": "Final Verse and Outro",
+      "timeStamp": "3:00-4:01",
+      "technique": "Rhythm Guitar with Chord Embellishments / Lead Guitar",
+      "key": "C# Minor",
+      "description": "The climactic final verse with the most intense rhythmic drive, transitioning into the outro where the progression loops with increasing ferocity before the fade-out",
+      "chords": [
+        "C#m",
+        "B",
+        "A",
+        "B",
+        "C#m"
+      ],
+      "progression": "C#m - B - A - B - C#m",
+      "notes": [
+        "Most intense rhythmic drive of the entire song",
+        "Lead guitar continues improvising over the rhythm during the final verse",
+        "The progression cycles with building energy toward the fade-out",
+        "Outro maintains the relentless i-VII-VI-VII loop with peak distortion and urgency",
+        "The song fades rather than resolves, creating a sense of unending momentum"
+      ],
+      "alphaTab": "9.6 12.6 9.5 11.5 9.4 11.4 | 9.3 11.3 9.2 12.2 9.1 12.1 | 12.1 9.1 12.2 9.2 11.3 9.3 | 11.4 9.4 11.5 9.5 12.6 9.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Fender American Professional II Stratocaster",
+        "Fender Jimi Hendrix Signature Stratocaster",
+        "Any quality Stratocaster with single-coil pickups"
+      ],
+      "pickup": "Single-coil pickups - bridge for rhythm aggression, neck for smooth lead and slide tones"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead 1959",
+      "alternatives": [
+        "Marshall JTM45",
+        "Fender Twin Reverb (for cleaner Hendrix tones)",
+        "Marshall JCM800 for modern approximation"
+      ],
+      "settings": {
+        "gain": "7-8 (pushed into natural tube overdrive)",
+        "treble": "7 (bright and cutting for single-coil attack)",
+        "middle": "5-6 (balanced mids, not scooped)",
+        "bass": "5 (full but controlled low end)",
+        "presence": "7 (open and airy top end)"
+      }
+    },
+    "effects": {
+      "distortion": "Dallas-Arbiter Fuzz Face germanium fuzz - the core of Hendrix's overdriven tone",
+      "delay": "Subtle tape echo for depth on lead sections",
+      "reverb": "Natural amp and room reverb",
+      "other": "Vox Cry Baby wah pedal - essential for the vocal-quality lead tone and rhythm accents; Uni-Vibe for rotating speaker effect on select passages"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three-chord progression and basic barre chord shapes",
+      "steps": [
+        "Master C#m, B, and A barre chord shapes individually",
+        "Practice the C#m-B-A-B chord change sequence at slow tempo",
+        "Develop basic strumming pattern: down-down-up-up-down-up",
+        "Build barre chord stamina for sustained playing through the full song"
+      ],
+      "timeEstimate": "3-5 weeks for clean barre chord progression"
+    },
+    "intermediate": {
+      "focus": "Add Hendrix-style embellishments and develop the complete rhythm part",
+      "steps": [
+        "Add hammer-on and pull-off embellishments within barre chord shapes",
+        "Practice double-stop fills between chord strikes",
+        "Learn the acoustic strumming layer for fuller single-guitar performance",
+        "Work on dynamic control between restrained verses and intense sections"
+      ],
+      "timeEstimate": "4-6 weeks for embellished rhythm performance"
+    },
+    "advanced": {
+      "focus": "Master the slide guitar sections and lead solo improvisation",
+      "steps": [
+        "Learn C# minor pentatonic and blues scale in 9th position for lead work",
+        "Develop slide guitar technique in standard tuning",
+        "Practice wah pedal control for expressive lead tone",
+        "Improvise over the repeating progression with increasing confidence",
+        "Combine rhythm and lead elements for a complete single-guitar arrangement"
+      ],
+      "timeEstimate": "6-10 weeks for complete mastery including solos"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Gripping barre chords too tightly, causing hand fatigue and buzzing",
+      "Making embellishments too rigid and metronomic instead of loose and feel-based",
+      "Pressing the slide too hard against the fretboard instead of floating above it",
+      "Ignoring the dynamic build: playing the whole song at the same intensity level",
+      "Not muting unused strings, causing unwanted noise especially with high gain"
+    ],
+    "practiceRoutine": [
+      "Barre chord warm-up: cycle C#m-B-A-B at slow tempo for 5 minutes",
+      "Embellishment practice: hammer-ons and pull-offs within each chord shape for 10 minutes",
+      "Slide technique: C# minor pentatonic phrases with slide at slow tempo for 10 minutes",
+      "Full rhythm part at tempo (114 BPM) with embellishments for 10 minutes",
+      "Lead improvisation over the backing progression for 10 minutes"
+    ],
+    "focusAreas": [
+      "Barre chord endurance and clean voicing across all six strings",
+      "Hendrix-style embellishment vocabulary: hammer-ons, pull-offs, double-stops, sixths",
+      "Slide guitar intonation and vibrato in standard tuning",
+      "Dynamic arc building from restrained intro to intense finale",
+      "Wah pedal control and musical expression"
+    ],
+    "metronomeWork": [
+      "Start chord progression at 80 BPM to nail clean barre chord transitions",
+      "Add embellishments at 90 BPM, building to full 114 BPM",
+      "Practice slide phrases at 70 BPM for pitch accuracy before speeding up",
+      "Full song run-through at 114 BPM with focus on dynamic variation",
+      "Try playing at 120+ BPM to build a speed reserve for comfortable performance at tempo"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Purple Haze",
+        "difficulty": "Intermediate",
+        "similarity": "Hendrix rhythm and lead combination with fuzz tone and chord embellishment techniques"
+      },
+      {
+        "title": "Voodoo Child (Slight Return)",
+        "difficulty": "Advanced",
+        "similarity": "Wah-heavy lead work and aggressive blues-rock rhythm with similar pentatonic vocabulary"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Minor key power chord riff with repeating progression and dynamic build throughout the song"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Simple repeating chord progression with rhythm guitar embellishments and classic rock feel"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "I Love Rock 'n' Roll",
+        "artist": "Joan Jett",
+        "difficulty": "Beginner",
+        "similarity": "Simple minor-key power chord progression to build rhythmic foundation"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Classic rock with embellished rhythm guitar and pentatonic lead work as next step"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": false,
+    "tags": [
+      "blues-rock",
+      "classic-rock",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

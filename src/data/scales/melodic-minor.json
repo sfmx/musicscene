@@ -1,0 +1,358 @@
+{
+  "scaleInfo": {
+    "name": "Jazz Melodic Minor",
+    "alternateName": "Melodic Minor (Ascending Form)",
+    "scaleType": "Heptatonic",
+    "noteCount": 7,
+    "intervalPattern": "1-2-♭3-4-5-6-7",
+    "character": "Sophisticated, jazzy, bittersweet",
+    "mood": ["sophisticated", "jazzy", "bittersweet", "complex", "elegant"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - ♭3 - 4 - 5 - 6 - 7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Minor 3rd (Mediant) - Characteristic tone defining minor quality",
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Major 6th (Submediant) - Raised from natural minor",
+      "Major 7th (Leading Tone) - Raised from natural minor, smooth resolution",
+      "Octave"
+    ],
+    "mode": "Not a mode of major scale - independent scale family. Minor scale with raised 6th and 7th. Creates smooth leading tone. Parent scale of many jazz modes (Altered scale = 7th mode, Lydian Dominant = 4th mode, Lydian Augmented = 3rd mode)",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Relative Major",
+      "intervalDistance": "Minor 3rd up from melodic minor root (A Melodic Minor relates to C Major key signature with F# and G#)"
+    },
+    "parallelScale": {
+      "name": "Natural Minor Scale",
+      "differences": ["Raised 6th (natural 6th vs flat 6th)", "Raised 7th (natural 7th vs flat 7th)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "A Melodic Minor",
+      "notes": "A - B - C - D - E - F# - G# - A",
+      "keySignature": "No sharps or flats (plus F# and G#)",
+      "accidentals": "F#, G#",
+      "commonUse": "Most common melodic minor key on guitar, open position accessible, essential jazz minor key"
+    },
+    {
+      "key": "C Melodic Minor",
+      "notes": "C - D - E♭ - F - G - A - B - C",
+      "keySignature": "1 flat (E♭) with natural A and B",
+      "accidentals": "E♭",
+      "commonUse": "Common jazz key, easy to visualize on piano, frequently used in jazz education"
+    },
+    {
+      "key": "D Melodic Minor",
+      "notes": "D - E - F - G - A - B - C# - D",
+      "keySignature": "No sharps or flats (plus C#)",
+      "accidentals": "C#",
+      "commonUse": "Comfortable guitar key, used in jazz fusion and contemporary compositions"
+    },
+    {
+      "key": "E Melodic Minor",
+      "notes": "E - F# - G - A - B - C# - D# - E",
+      "keySignature": "1 sharp (F#, plus C# and D#)",
+      "accidentals": "F#, C#, D#",
+      "commonUse": "Natural guitar key with open string root, great for jazz-rock and fusion playing"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (A Melodic Minor)",
+        "description": "Root on open 5th string, comfortable fingering using open strings. The raised 6th and 7th create a smooth ascending line distinct from natural minor.",
+        "alphaTex": "",
+        "applications": ["jazz standard playing", "melodic minor familiarization", "open position chord-melody"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position (D Melodic Minor)",
+        "description": "Moveable box pattern ideal for jazz improvisation, covers two octaves. Root on 5th string 5th fret.",
+        "alphaTex": "",
+        "applications": ["jazz improvisation", "fusion lead lines", "altered dominant applications"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "7th Position (E Melodic Minor)",
+        "description": "Higher position pattern for advanced jazz lines and fusion soloing. Connects smoothly to other melodic minor modes.",
+        "alphaTex": "",
+        "applications": ["advanced jazz soloing", "Lydian Dominant applications", "contemporary classical phrasing"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open (A Melodic Minor)",
+        "frets": "0-4",
+        "difficulty": "Intermediate",
+        "usage": "Jazz standards, melodic minor introduction, chord-melody"
+      },
+      {
+        "position": "5th Fret (D Melodic Minor)",
+        "frets": "5-9",
+        "difficulty": "Intermediate",
+        "usage": "Jazz improvisation, fusion soloing, modal exploration"
+      },
+      {
+        "position": "7th Fret (E Melodic Minor)",
+        "frets": "7-11",
+        "difficulty": "Advanced",
+        "usage": "Advanced jazz lines, Altered scale applications, upper register work"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Am(maj7)",
+        "quality": "Minor-Major",
+        "function": "Tonic - Minor chord with major 7th, sophisticated and tense jazz minor sound",
+        "notes": "A - C - E - G#"
+      },
+      {
+        "degree": "ii",
+        "chord": "Bm7",
+        "quality": "Minor 7th",
+        "function": "Supertonic - Dorian-like function, smooth voice leading to dominant",
+        "notes": "B - D - F# - A"
+      },
+      {
+        "degree": "♭III+",
+        "chord": "Cmaj7#5",
+        "quality": "Augmented Major 7th",
+        "function": "Mediant - Augmented triad with major 7th, Lydian Augmented chord",
+        "notes": "C - E - G# - B"
+      },
+      {
+        "degree": "IV",
+        "chord": "D7",
+        "quality": "Dominant 7th",
+        "function": "Subdominant - Lydian Dominant chord, dominant 7th with #4 available",
+        "notes": "D - F# - A - C"
+      },
+      {
+        "degree": "V",
+        "chord": "E7",
+        "quality": "Dominant 7th",
+        "function": "Dominant - Mixolydian ♭6 chord, dominant with altered extensions",
+        "notes": "E - G# - B - D"
+      },
+      {
+        "degree": "vi",
+        "chord": "F#m7♭5",
+        "quality": "Half-Diminished",
+        "function": "Submediant - Half-diminished chord, Locrian #2 quality",
+        "notes": "F# - A - C - E"
+      },
+      {
+        "degree": "vii",
+        "chord": "G#m7♭5",
+        "quality": "Half-Diminished",
+        "function": "Leading Tone - Altered dominant function, the Altered scale (Super Locrian) is built here",
+        "notes": "G# - B - D - F#"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Jazz Minor Vamp (i(maj7) - ii7)",
+        "chords": ["Am(maj7)", "Bm7"],
+        "romanNumerals": "i(maj7) - ii7",
+        "description": "Classic jazz minor vamp highlighting the minor-major 7th chord's sophisticated tension. The foundation of melodic minor jazz harmony.",
+        "genre": "Jazz/Fusion",
+        "alphaTex": ""
+      },
+      {
+        "name": "Minor ii-V-i (vi-V7-i)",
+        "chords": ["F#m7♭5", "E7", "Am(maj7)"],
+        "romanNumerals": "vi - V7 - i(maj7)",
+        "description": "Jazz minor ii-V-i resolution using melodic minor harmony. The half-diminished to dominant to minor-major 7th is the quintessential jazz minor cadence.",
+        "genre": "Jazz",
+        "alphaTex": ""
+      },
+      {
+        "name": "Lydian Dominant Movement (IV7 - ♭III+ - i)",
+        "chords": ["D7", "Cmaj7#5", "Am(maj7)"],
+        "romanNumerals": "IV7 - ♭III+ - i(maj7)",
+        "description": "Descending harmonic movement through unique melodic minor chord qualities, showcasing the scale's distinctive harmonic palette.",
+        "genre": "Contemporary Jazz",
+        "alphaTex": ""
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Jazz",
+      "usage": "Fundamental jazz scale for minor chord improvisation, altered dominant playing, and sophisticated harmonic vocabulary",
+      "characteristics": ["minor-major 7th chord voicings", "altered dominant improvisation", "Lydian Dominant applications"],
+      "examples": ["Pat Metheny - melodic minor-based compositions", "John Coltrane - advanced harmonic explorations"]
+    },
+    {
+      "genre": "Fusion",
+      "usage": "Advanced fusion soloing combining jazz harmonic sophistication with rock energy and intensity",
+      "characteristics": ["complex melodic lines over changes", "Altered scale applications on dominant chords", "wide-interval modern phrasing"],
+      "examples": ["Allan Holdsworth - legato fusion lines", "Scott Henderson - jazz-rock fusion solos"]
+    },
+    {
+      "genre": "Contemporary Classical",
+      "usage": "Modern classical and film composition using melodic minor's unique color and smooth voice leading",
+      "characteristics": ["smooth chromatic voice leading", "ambiguous minor-major tonality", "sophisticated orchestral color"],
+      "examples": ["Bela Bartok - melodic minor in modern classical works", "Film score composers using melodic minor for emotional complexity"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Bright Size Life",
+      "artist": "Pat Metheny",
+      "key": "Various",
+      "genre": "Jazz Fusion",
+      "usage": "Melodic minor-based harmony and improvisation throughout, showcasing the scale's fusion applications",
+      "difficulty": "Advanced",
+      "learningValue": "Demonstrates melodic minor's role in modern jazz-fusion composition"
+    },
+    {
+      "title": "Countdown",
+      "artist": "John Coltrane",
+      "key": "Various",
+      "genre": "Jazz",
+      "usage": "Advanced harmonic movement using melodic minor and its modes over rapidly changing key centers",
+      "difficulty": "Expert",
+      "learningValue": "Shows melodic minor's role in Coltrane's advanced harmonic language"
+    },
+    {
+      "title": "The Magician",
+      "artist": "Allan Holdsworth",
+      "key": "Various",
+      "genre": "Jazz Fusion",
+      "usage": "Extensive melodic minor and its modes used for wide-interval legato lines and unusual chord voicings",
+      "difficulty": "Expert",
+      "learningValue": "Advanced legato and melodic minor mode applications in fusion guitar"
+    },
+    {
+      "title": "Actual Proof",
+      "artist": "Herbie Hancock",
+      "key": "Various",
+      "genre": "Jazz Funk",
+      "usage": "Melodic minor and Altered scale used over complex funk-jazz harmony",
+      "difficulty": "Advanced",
+      "learningValue": "Demonstrates melodic minor in jazz-funk contexts with rhythmic complexity"
+    },
+    {
+      "title": "Donna Lee",
+      "artist": "Charlie Parker",
+      "key": "A♭ Major",
+      "genre": "Bebop Jazz",
+      "usage": "Melodic minor fragments and Altered scale applications over fast-moving bebop changes",
+      "difficulty": "Advanced",
+      "learningValue": "Shows how melodic minor integrates into bebop vocabulary over chord changes"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "A Melodic Minor Scale Runs",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Practice the A melodic minor scale ascending and descending, focusing on the raised 6th and 7th that distinguish it from natural minor",
+      "alphaTex": "",
+      "tempo": "60-120 BPM",
+      "focus": ["melodic minor sound internalization", "raised 6th and 7th recognition"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM, playing A melodic minor ascending and descending",
+        "Compare with A natural minor to hear the raised F# and G# that define the jazz melodic minor sound",
+        "Practice in multiple positions across the fretboard to build familiarity in all registers"
+      ]
+    },
+    {
+      "name": "Melodic Minor Modal Exploration",
+      "type": "Technical",
+      "difficulty": "Advanced",
+      "description": "Play the melodic minor scale starting from each degree to hear its important modes: Lydian Dominant (4th degree), Mixolydian ♭6 (5th degree), and Altered (7th degree)",
+      "alphaTex": "",
+      "tempo": "70-110 BPM",
+      "focus": ["modal awareness", "jazz mode vocabulary"],
+      "instructions": [
+        "Play A melodic minor starting from D to hear Lydian Dominant, then from E for Mixolydian ♭6",
+        "Play from G# to hear the Altered scale (Super Locrian), the most important jazz mode of melodic minor",
+        "Apply each mode over its corresponding chord type: Lydian Dominant over dom7#11, Altered over V7alt"
+      ]
+    },
+    {
+      "name": "Jazz Minor ii-V-i Application",
+      "type": "Musical",
+      "difficulty": "Advanced",
+      "description": "Apply melodic minor harmony to a jazz minor ii-V-i progression, using appropriate modes over each chord",
+      "alphaTex": "",
+      "tempo": "80-120 BPM",
+      "focus": ["jazz harmonic application", "chord-scale relationships"],
+      "instructions": [
+        "Play over F#m7♭5 - E7alt - Am(maj7) using Locrian #2, Altered scale, and melodic minor respectively",
+        "Focus on smooth voice leading between chords, letting guide tones connect the changes",
+        "Record yourself and listen back, checking that your lines clearly outline the harmony"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor (Aeolian)",
+      "relationship": "Parent minor scale",
+      "differences": "Melodic minor raises both the 6th and 7th degrees, eliminating the augmented 2nd gap found in harmonic minor",
+      "usage": "Darker, simpler minor sound; melodic minor adds sophistication with the raised 6th and 7th"
+    },
+    {
+      "scale": "Harmonic Minor",
+      "relationship": "Sister minor variant",
+      "differences": "Harmonic minor raises only the 7th; melodic minor raises both 6th and 7th, creating smoother melodic motion",
+      "usage": "Harmonic minor has the exotic augmented 2nd interval; melodic minor smooths this out for jazz contexts"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Shares raised 6th degree",
+      "differences": "Dorian has ♭7 while melodic minor has natural 7th; both feature the characteristic natural 6th in a minor context",
+      "usage": "Dorian is simpler and more common for minor 7th chords; melodic minor adds the leading tone for minor-major 7th chords"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Advanced",
+    "prerequisites": [
+      "Natural minor and harmonic minor scale knowledge",
+      "Basic jazz chord vocabulary (7ths, extensions, altered chords)"
+    ],
+    "nextSteps": [
+      "Altered scale (7th mode) for dominant chord improvisation",
+      "Lydian Dominant (4th mode) for tritone substitution applications"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-3)",
+        "duration": "20-30 minutes daily",
+        "focus": "Scale patterns and melodic minor sound recognition",
+        "exercises": ["Basic melodic minor runs in all positions", "Compare with natural and harmonic minor", "Minor-major 7th chord arpeggios"]
+      },
+      {
+        "phase": "Development (Weeks 4-8)",
+        "duration": "30-40 minutes daily",
+        "focus": "Modal exploration and jazz chord-scale relationships",
+        "exercises": ["Lydian Dominant and Altered scale practice", "Apply modes over ii-V-i progressions", "Transcribe melodic minor jazz phrases"]
+      },
+      {
+        "phase": "Integration (Weeks 9-16)",
+        "duration": "30-45 minutes daily",
+        "focus": "Real-time jazz improvisation using melodic minor and its modes",
+        "exercises": ["Improvise over jazz standards using melodic minor harmony", "Play along with backing tracks in minor keys", "Compose original lines using all melodic minor modes"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "melodic-minor",
+    "tags": ["melodic-minor", "jazz", "scales", "theory", "advanced", "minor-family", "fusion"],
+    "category": "scales",
+    "subcategory": "minor-family",
+    "lastUpdated": "2024-01-15",
+    "sources": ["Music theory pedagogy", "Guitar education standards"]
+  }
+}

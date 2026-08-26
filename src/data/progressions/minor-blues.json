@@ -1,0 +1,367 @@
+{
+  "slug": "minor-blues",
+  "progressionInfo": {
+    "name": "Minor Blues Progression",
+    "pageTitle": "Minor Blues Progression",
+    "subtitle": "The dark, brooding side of the blues - the i-iv-v minor blues form channels raw emotion and intensity through a 12-bar structure that has defined iconic guitar music from B.B. King to Santana.",
+    "heroGradient": "bg-gradient-to-r from-slate-600 to-zinc-800",
+    "tags": [
+      "Blues",
+      "Minor",
+      "12-Bar",
+      "Moody"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Minor Blues Structure",
+    "properties": [
+      { "label": "Bars 1-4", "value": "i - i - i - i (Tonic minor section)" },
+      { "label": "Bars 5-6", "value": "iv - iv (Subdominant minor)" },
+      { "label": "Bars 7-8", "value": "i - i (Return to tonic minor)" },
+      { "label": "Bar 9", "value": "v or V7 (Dominant - peak tension)" },
+      { "label": "Bar 10", "value": "iv (Subdominant - easing tension)" },
+      { "label": "Bars 11-12", "value": "i - i (Resolution with turnaround)" }
+    ],
+    "exampleTitle": "Key of A Minor",
+    "examples": [
+      { "label": "i (Tonic)", "value": "Am - the home chord, dark and moody" },
+      { "label": "iv (Subdominant)", "value": "Dm - deepens the minor tonality" },
+      { "label": "V7 (Dominant)", "value": "E7 - dominant 7th creates stronger pull back to Am" },
+      { "label": "Mood", "value": "Darker and more intense than major blues" },
+      { "label": "Key Difference", "value": "The V chord is often played as a dominant 7th (E7) rather than minor (Em) to create a stronger resolution" }
+    ],
+    "bulletColor": "text-slate-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "Minor Blues in A Minor",
+        "description": "The most common key for minor blues guitar. The minor tonic and subdominant create a dark foundation, while the dominant 7th V chord provides the tension needed for resolution.",
+        "chords": [
+          { "label": "i - Am", "chord": "A_minor", "subtitle": "Tonic Minor" },
+          { "label": "iv - Dm", "chord": "D_minor", "subtitle": "Subdominant Minor" },
+          { "label": "V7 - E7", "chord": "E7", "subtitle": "Dominant 7th" }
+        ],
+        "alphaTex": "",
+        "alphaTexTitle": "12-Bar Minor Blues in A Minor",
+        "practiceNotes": [
+          "Am for bars 1-4 (establish the dark tonal center)",
+          "Dm for bars 5-6 (deepen the minor mood)",
+          "Am for bars 7-8 (return home)",
+          "E7 for bar 9 (maximum tension), Dm for bar 10, Am for bars 11-12",
+          "The E7 is critical - its major third (G#) pulls strongly toward Am"
+        ],
+        "colorBg": "bg-slate-50",
+        "colorBorder": "border-slate-200",
+        "colorTitle": "text-slate-900",
+        "colorText": "text-slate-800",
+        "colorDetail": "text-slate-700"
+      },
+      {
+        "title": "Minor Blues in E Minor",
+        "description": "E minor is another popular key for minor blues on guitar, taking advantage of the open low E string for a deep, resonant tonic.",
+        "chords": [
+          { "label": "i - Em", "chord": "E_minor", "subtitle": "Tonic Minor" },
+          { "label": "iv - Am", "chord": "A_minor", "subtitle": "Subdominant Minor" },
+          { "label": "V7 - B7", "chord": "B7", "subtitle": "Dominant 7th" }
+        ],
+        "practiceNotes": [
+          "The open low E string adds weight and depth to the tonic chord",
+          "Am is a comfortable open chord for the iv",
+          "B7 provides a strong dominant pull back to Em"
+        ],
+        "colorBg": "bg-zinc-50",
+        "colorBorder": "border-zinc-200",
+        "colorTitle": "text-zinc-900",
+        "colorText": "text-zinc-800",
+        "colorDetail": "text-zinc-700"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Minor vs. Major Blues: Key Differences",
+        "description": "Understanding what sets the minor blues apart from its major counterpart transforms your approach to blues guitar.",
+        "items": [
+          "Major blues uses dominant 7th chords throughout (I7-IV7-V7); minor blues uses minor chords for i and iv",
+          "The V chord in minor blues is typically played as a dominant 7th (E7, not Em) to create a strong resolution",
+          "Minor blues has a darker, more intense emotional quality - think B.B. King vs. Muddy Waters",
+          "The natural minor scale and minor pentatonic are primary melodic resources over the minor blues form",
+          "Some players alternate between Em and E7 on the V chord for expressive variation"
+        ],
+        "colorBg": "bg-slate-50",
+        "colorBorder": "border-slate-200",
+        "colorTitle": "text-slate-800",
+        "colorText": "text-slate-700"
+      },
+      {
+        "title": "Turnaround Variations",
+        "description": "The turnaround in bars 11-12 is where minor blues players add signature flair and personality.",
+        "items": [
+          "Standard turnaround: i - V7 (Am - E7) leading back to bar 1",
+          "Chromatic descent: Am - Am/G# - Am/G - Am/F# - E7 (descending bass line)",
+          "Quick change turnaround: substitute iv for i in bar 12 before returning",
+          "Jazz minor turnaround: Am7 - Dm7 - E7 - Am7 for a smoother harmonic motion",
+          "Stop-time turnaround: rhythmic breaks on the V7 chord to build dramatic tension"
+        ],
+        "colorBg": "bg-zinc-50",
+        "colorBorder": "border-zinc-200",
+        "colorTitle": "text-zinc-800",
+        "colorText": "text-zinc-700"
+      },
+      {
+        "title": "Extended Minor Blues Harmony",
+        "description": "Expand the basic i-iv-V7 framework with richer chord voicings for a more sophisticated sound.",
+        "items": [
+          "Replace Am with Am7 for a jazzier tonic sound",
+          "Use Dm7 instead of Dm to add harmonic depth to the iv chord",
+          "Try Bm7b5 (half-diminished) as a ii chord leading into E7",
+          "Add a bVI chord (F major in A minor) as a passing chord between iv and V7",
+          "Experiment with the Neapolitan chord (Bb) as a dramatic substitution before V7"
+        ],
+        "colorBg": "bg-slate-50",
+        "colorBorder": "border-slate-200",
+        "colorTitle": "text-slate-800",
+        "colorText": "text-slate-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Classic Minor Blues",
+      "examples": [
+        {
+          "title": "\"The Thrill Is Gone\"",
+          "description": "B.B. King",
+          "detail": "The definitive minor blues song. B.B. King's masterful phrasing and string bending over a Bm-Em-F#7 minor blues form set the standard for expressive blues guitar."
+        },
+        {
+          "title": "\"Black Magic Woman\"",
+          "description": "Peter Green / Santana",
+          "detail": "Originally by Fleetwood Mac's Peter Green, then reimagined by Santana with Latin-influenced rhythms. A Dm minor blues that showcases the progression's moody intensity."
+        },
+        {
+          "title": "\"As the Years Go Passing By\"",
+          "description": "Albert King",
+          "detail": "A slow minor blues masterclass in emotional expression. Albert King's powerful, biting tone and signature bending style define this slow-burning classic."
+        }
+      ]
+    },
+    "right": {
+      "title": "Modern & Fusion Minor Blues",
+      "examples": [
+        {
+          "title": "\"Sultans of Swing\"",
+          "description": "Dire Straits",
+          "detail": "Mark Knopfler's fingerpicking masterpiece weaves minor blues sensibility through a Dm-based progression with jazz-influenced chord movement."
+        },
+        {
+          "title": "\"Since I've Been Loving You\"",
+          "description": "Led Zeppelin",
+          "detail": "A slow, heavy minor blues in C minor featuring Jimmy Page's raw electric guitar work. Demonstrates how rock musicians expanded the minor blues vocabulary."
+        },
+        {
+          "title": "\"Ain't No Sunshine\"",
+          "description": "Bill Withers",
+          "detail": "Built on a haunting Am minor tonality, this soul classic shows how the minor blues palette extends far beyond traditional blues into R&B and pop."
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Week 1: Core Shapes & Structure",
+      "icon": "🎯",
+      "items": [
+        "Master the Am, Dm, and E7 chord shapes until transitions are smooth",
+        "Memorize the 12-bar minor blues form - count bars aloud as you play",
+        "Play through the entire form at a slow tempo (60 BPM) with whole note strums",
+        "Compare the sound of E7 vs. Em on the V chord - notice how E7 resolves more strongly",
+        "Practice the form in E minor (Em - Am - B7) as an alternate key"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    },
+    {
+      "title": "Week 2: Feel & Expression",
+      "icon": "🎵",
+      "items": [
+        "Develop a slow blues shuffle feel - minor blues often sits at slower tempos than major blues",
+        "Experiment with palm muting on the Am chord to create a darker, more controlled sound",
+        "Add basic bass note runs between chord changes (walk the bass from Am down to E7)",
+        "Practice dynamics: play the i chord sections softly and build intensity toward the V7",
+        "Listen to B.B. King's 'The Thrill Is Gone' and mimic the rhythmic feel"
+      ],
+      "colorBg": "bg-zinc-50",
+      "colorBorder": "border-zinc-200",
+      "colorTitle": "text-zinc-800",
+      "colorText": "text-zinc-700"
+    },
+    {
+      "title": "Week 3+: Advanced Application",
+      "icon": "🎸",
+      "items": [
+        "Learn turnaround variations and add them to bars 11-12",
+        "Incorporate Am7, Dm7, and Bm7b5 for extended harmony voicings",
+        "Play along with minor blues recordings, matching the feel and dynamics",
+        "Practice soloing over the form using the A minor pentatonic and A natural minor scales",
+        "Compose your own minor blues tune with a signature turnaround"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Basic 12-Bar Minor Blues in A Minor",
+      "description": "The standard minor blues form using Am, Dm, and E7. Play each chord as a whole note per bar to internalize the harmonic structure before adding rhythmic complexity.",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Bars 1-4: Am (establish the dark, minor tonal center)",
+        "Bars 5-6: Dm (the iv chord deepens the minor mood)",
+        "Bars 7-8: Am (return to the tonic minor)",
+        "Bar 9: E7 (dominant V7 - the moment of peak tension)",
+        "Bar 10: Dm (easing back from the tension)",
+        "Bars 11-12: Am with E7 turnaround (resolve and restart)"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border-slate-200",
+      "colorTitle": "text-slate-900",
+      "colorText": "text-slate-800",
+      "colorDetail": "text-slate-700"
+    },
+    {
+      "title": "Minor Blues Shuffle Rhythm",
+      "description": "A swing-eighth shuffle pattern over the minor blues form. The triplet feel gives the minor blues its characteristic groove - lean into the swing and let the rhythm breathe.",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Use a swing/shuffle feel on the eighth notes (long-short, long-short)",
+        "Keep the picking hand loose and relaxed for a natural groove",
+        "Accent beats 1 and 3 slightly while ghosting beats 2 and 4",
+        "Start at 70 BPM and gradually increase to 100 BPM"
+      ],
+      "colorBg": "bg-zinc-50",
+      "colorBorder": "border-zinc-200",
+      "colorTitle": "text-zinc-900",
+      "colorText": "text-zinc-800",
+      "colorDetail": "text-zinc-700"
+    },
+    {
+      "title": "Minor Blues with Extended Chords",
+      "description": "Upgrade the basic minor blues by replacing simple triads with seventh chords. Am7, Dm7, and E7 add harmonic richness while Bm7b5 introduces a jazz-blues flavor as the ii chord.",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Bars 1-4: Am7 (adds the G natural for a smoother tonic sound)",
+        "Bars 5-6: Dm7 (the added C note creates a richer iv chord)",
+        "Bars 7-8: Am7 (return to extended tonic)",
+        "Bar 9: Bm7b5 to E7 (ii-V turnaround into bar 10 adds jazz sophistication)",
+        "Bar 10: Dm7 (subdominant with depth)",
+        "Bars 11-12: Am7 - E7 (extended resolution with turnaround)"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border-slate-200",
+      "colorTitle": "text-slate-900",
+      "colorText": "text-slate-800",
+      "colorDetail": "text-slate-700"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Scales & Melodic Resources",
+      "sections": [
+        {
+          "title": "Primary Scales for Minor Blues",
+          "items": [
+            "A minor pentatonic (A-C-D-E-G) - the essential scale for minor blues soloing",
+            "A blues scale (A-C-D-Eb-E-G) - adds the 'blue note' (flat 5th) for extra grit",
+            "A natural minor / Aeolian (A-B-C-D-E-F-G) - full minor scale for melodic variety",
+            "A Dorian mode (A-B-C-D-E-F#-G) - the raised 6th (F#) adds a brighter color over the i chord"
+          ]
+        },
+        {
+          "title": "Scale Choice by Chord",
+          "items": [
+            "Over Am (i): A minor pentatonic, A natural minor, or A Dorian",
+            "Over Dm (iv): D minor pentatonic or stay in A minor pentatonic (they share most notes)",
+            "Over E7 (V7): A harmonic minor (raises G to G#) to match the E7's major third",
+            "Turnaround: Chromatic approaches and enclosures add sophistication to the resolution"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Related Progressions & Forms",
+      "sections": [
+        {
+          "title": "Blues Family Progressions",
+          "items": [
+            "12-Bar Major Blues (I7-IV7-V7): The major counterpart - brighter and more upbeat",
+            "I-IV-V: The fundamental three-chord backbone shared by both major and minor blues",
+            "Jazz Minor Blues: Adds ii-V substitutions, tritone subs, and chromatic passing chords",
+            "8-Bar Blues: A compressed blues form sometimes used in minor keys for ballads"
+          ]
+        },
+        {
+          "title": "Genre Applications",
+          "items": [
+            "Blues: The core form for slow blues, Texas blues, and Chicago blues in minor keys",
+            "Rock: Minor blues is the foundation of blues-rock from Cream to Led Zeppelin",
+            "Latin: Santana-style Latin rock often builds on minor blues with Afro-Cuban rhythms",
+            "Jazz: Minor blues is a standard jam session form and a vehicle for modal exploration"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the minor blues, explore the related progressions that share its harmonic DNA and expand your blues vocabulary.",
+    "links": [
+      {
+        "slug": "12-bar-blues",
+        "title": "12-Bar Blues",
+        "description": "Master the major blues form and understand how it connects to the minor blues.",
+        "linkText": "Learn major blues",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      },
+      {
+        "slug": "i-iv-v",
+        "title": "I-IV-V Progression",
+        "description": "The three-chord foundation that underpins both major and minor blues forms.",
+        "linkText": "Explore the foundation",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "vi-iv-i-v",
+        "title": "vi-IV-I-V Progression",
+        "description": "Another progression that starts on a minor chord - discover the emotional parallels.",
+        "linkText": "Explore minor starts",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  },
+  "navigation": {
+    "prev": {
+      "href": "/lessons/theory/progressions/12-bar-blues",
+      "label": "12-Bar Blues"
+    }
+  }
+}

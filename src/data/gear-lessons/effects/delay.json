@@ -1,0 +1,286 @@
+{
+  "slug": "effects-delay",
+  "category": "effects",
+  "pageTitle": "Delay Effects",
+  "subtitle": "Time-based effects that create echoes and rhythmic patterns. From subtle slap-back to ambient washes, delay is one of the most versatile guitar effects.",
+  "heroGradient": "bg-gradient-to-r from-indigo-50 to-purple-50",
+  "backLink": {
+    "href": "/lessons/gear/effects",
+    "label": "Back to Effects Overview"
+  },
+  "introduction": {
+    "title": "What is Delay?",
+    "text": "Delay creates echoes of your original signal by storing and playing back the audio after a specified time interval. The delayed signal can be repeated multiple times, creating rhythmic patterns, ambient textures, or simply adding space and dimension.",
+    "columns": [
+      {
+        "title": "Key Parameters",
+        "text": "Time: Delay length (milliseconds to seconds). Feedback: Number of repeats. Mix/Level: Wet/dry balance. Tone: EQ of delayed signal. Modulation: Pitch/time variations."
+      },
+      {
+        "title": "Musical Applications",
+        "text": "Rhythmic echoes and patterns. Ambient soundscapes. Lead guitar enhancement. Creating space and depth. Doubling and thickening. Sound design and textures."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Delay",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Analog Delay",
+          "description": "Uses bucket brigade devices (BBDs) or tape to create warm, musical repeats that degrade naturally with each repeat.",
+          "fields": [
+            { "label": "Characteristics", "value": "Warm, musical degradation, limited delay time" },
+            { "label": "Examples", "value": "Boss DM-2, MXR Carbon Copy, Way Huge Aqua Puss" }
+          ]
+        },
+        {
+          "title": "Digital Delay",
+          "description": "Provides pristine, exact repeats with extensive control options and longer delay times.",
+          "fields": [
+            { "label": "Characteristics", "value": "Clean repeats, long delay times, precise control" },
+            { "label": "Examples", "value": "Boss DD-7, TC Electronic Flashback, Strymon Timeline" }
+          ]
+        },
+        {
+          "title": "Tape Echo",
+          "description": "Classic tape-based delays with natural modulation, compression, and warm, organic character.",
+          "fields": [
+            { "label": "Characteristics", "value": "Warm saturation, natural modulation, vintage vibe" },
+            { "label": "Examples", "value": "Echoplex EP-3, Space Echo RE-201, Belle Epoch" }
+          ]
+        },
+        {
+          "title": "Multi-Tap Delay",
+          "description": "Multiple delay taps create complex rhythmic patterns and intricate echo arrangements.",
+          "fields": [
+            { "label": "Characteristics", "value": "Multiple echoes, rhythm patterns, complex textures" },
+            { "label": "Examples", "value": "Empress Echosystem, Eventide TimeFactor, rack units" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Understanding Delay Times",
+      "subtitle": "Common Delay Time Ranges",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Short Delays (1-50ms)",
+          "items": [
+            "Slap-back: 50-120ms",
+            "Doubling: 15-30ms",
+            "Thickening: 20-40ms",
+            "Used in rockabilly, country",
+            "Adds presence and punch"
+          ]
+        },
+        {
+          "title": "Medium Delays (100-500ms)",
+          "items": [
+            "Rhythmic: 1/8, 1/4 notes",
+            "Melodic: 200-400ms",
+            "Classic rock: 300-500ms",
+            "Creates musical echoes",
+            "Enhances lead playing"
+          ]
+        },
+        {
+          "title": "Long Delays (500ms+)",
+          "items": [
+            "Ambient: 1-4 seconds",
+            "Looping: Multiple seconds",
+            "Soundscapes: Variable",
+            "Creates atmosphere",
+            "Experimental textures"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Delay Units",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Maestro Echoplex EP-3",
+          "description": "The gold standard of tape echo units. Warm, musical repeats with natural compression and saturation. Used on countless classic recordings.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Warm tape saturation, natural modulation, musical compression and EQ" }
+          ],
+          "items": [
+            "Jimmy Page - Led Zeppelin epics",
+            "Eddie Van Halen - \"Eruption\" solo",
+            "Andy Summers - The Police textures",
+            "Neal Schon - Journey leads",
+            "Countless rock and fusion players"
+          ]
+        },
+        {
+          "title": "Roland Space Echo RE-201",
+          "description": "Iconic tape echo with spring reverb. Multiple playback heads create complex rhythmic patterns. Essential for dub, reggae, and ambient music.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Complex multi-tap patterns, warm tape character, integrated spring reverb" }
+          ],
+          "items": [
+            "Lee \"Scratch\" Perry - Dub pioneer",
+            "Robert Fripp - King Crimson soundscapes",
+            "Radiohead - Ambient textures",
+            "My Bloody Valentine - Shoegaze walls",
+            "Dub and reggae producers"
+          ]
+        },
+        {
+          "title": "Boss DM-2 Delay",
+          "description": "The first mass-market analog delay pedal. Warm bucket brigade delays with musical degradation. Compact and reliable.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Warm analog delays with natural high-frequency roll-off and musical repeats" }
+          ],
+          "items": [
+            "The Edge - U2's signature sound",
+            "Kevin Shields - My Bloody Valentine",
+            "Many 80s and 90s guitarists",
+            "Alternative and indie musicians",
+            "Collectors and vintage enthusiasts"
+          ]
+        },
+        {
+          "title": "TC Electronic 2290",
+          "description": "Professional rack-mount digital delay with pristine sound quality and extensive modulation options. Studio standard in the 80s and 90s.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Crystal clear digital delays with precise timing and extensive modulation" }
+          ],
+          "items": [
+            "David Gilmour - Pink Floyd precision",
+            "Larry Carlton - Smooth jazz",
+            "Session musicians worldwide",
+            "Progressive rock artists",
+            "Studio professionals"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Delay Techniques",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Rhythmic Techniques",
+          "bgColor": "bg-indigo-50",
+          "items": [
+            "Dotted eighth notes: Creates triplet feel",
+            "Quarter note delays: Doubling effect",
+            "Polyrhythms: Multiple delay times",
+            "Tempo sync: Lock to song BPM",
+            "Ping-pong: Stereo bouncing",
+            "Subdivisions: 16th, 8th, quarter notes"
+          ]
+        },
+        {
+          "title": "Ambient Techniques",
+          "bgColor": "bg-purple-50",
+          "items": [
+            "Infinite repeats: Feedback at maximum",
+            "Volume swells: Slow attack with delay",
+            "Reverse delays: Backwards echoes",
+            "Modulated delays: Pitch shifting",
+            "Layering: Multiple delay units",
+            "Self-oscillation: Feedback loops"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iconic Delay in Popular Music",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Classic Examples",
+          "items": [
+            "U2 - \"Where The Streets Have No Name\": Dotted eighth delays",
+            "Pink Floyd - \"Run Like Hell\": Rhythmic delay patterns",
+            "Van Halen - \"Eruption\": Tape echo on tapping",
+            "The Police - \"Message In A Bottle\": Bright analog delays",
+            "Led Zeppelin - \"Black Mountain Side\": Ambient Echoplex"
+          ]
+        },
+        {
+          "title": "Modern Applications",
+          "items": [
+            "Radiohead: Complex digital delays and loops",
+            "Explosions in the Sky: Ambient post-rock textures",
+            "John Mayer: Blues and pop delay applications",
+            "Hillsong United: Modern worship delay sounds",
+            "Ambient/Post-Rock: Textural soundscapes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Using Delay Effectively",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Performance Tips",
+          "bgColor": "bg-yellow-50",
+          "items": [
+            "Match delay time to song tempo",
+            "Use tap tempo for accuracy",
+            "Consider room acoustics",
+            "Adjust mix for musical context",
+            "Use expression pedal for feedback",
+            "Practice with metronome"
+          ]
+        },
+        {
+          "title": "Recording Tips",
+          "bgColor": "bg-orange-50",
+          "items": [
+            "Record dry signal separately",
+            "Use delay sends for flexibility",
+            "High-pass filter delay returns",
+            "Pan delays for width",
+            "Automate delay parameters",
+            "Layer different delay types"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Delay Settings Guide",
+      "layout": "grid-3",
+      "warningText": "Always set your delay time to musical subdivisions that complement the song. Use a tap tempo pedal or calculate delay times: 60,000 / BPM = quarter note delay time in milliseconds.",
+      "cards": [
+        {
+          "title": "Slap-back Echo",
+          "items": [
+            "Time: 80-120ms",
+            "Feedback: 1-2 repeats",
+            "Mix: 20-30%",
+            "Use: Rockabilly, country"
+          ]
+        },
+        {
+          "title": "Rhythmic Delay",
+          "items": [
+            "Time: 1/8 or 1/4 notes",
+            "Feedback: 3-5 repeats",
+            "Mix: 25-40%",
+            "Use: U2-style patterns"
+          ]
+        },
+        {
+          "title": "Ambient Wash",
+          "items": [
+            "Time: 500ms-2 seconds",
+            "Feedback: High (8-9)",
+            "Mix: 40-60%",
+            "Use: Soundscapes"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

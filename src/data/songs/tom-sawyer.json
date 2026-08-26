@@ -1,0 +1,490 @@
+{
+  "songInfo": {
+    "title": "Tom Sawyer",
+    "artist": "Rush",
+    "album": "Moving Pictures",
+    "released": "1981",
+    "genre": "Progressive Rock",
+    "tempo": "88 BPM (varies)",
+    "duration": "4:33",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Expert",
+    "drums": "Expert"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major (Ionian)",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Foundation for the main riff and verse harmonic structure"
+        },
+        {
+          "scale": "E Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D - E",
+          "application": "Used in riff sections where the D natural (flat 7th) appears for a bluesy rock character"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Guitar solo phrasing and melodic fills between vocal lines"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with Mixolydian inflections",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "D5",
+          "A5",
+          "C5"
+        ],
+        "progression": "I - bVII - IV - bVI",
+        "description": "Powerful riff-based progression mixing major key chords with modal borrowing from E minor for a sophisticated rock sound"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Riff",
+          "progression": "E5 - E5 - D5/A5 - E5",
+          "romanNumerals": "I - I - bVII/IV - I",
+          "description": "Synth-driven intro riff that the guitar doubles, anchored on E5 with accented chromatic movement"
+        },
+        {
+          "section": "Verse",
+          "progression": "E5 - A5 - E5 - D5",
+          "romanNumerals": "I - IV - I - bVII",
+          "description": "Guitar supports the vocal with sustained power chords and syncopated accents"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A5 - C5 - D5 - E5",
+          "romanNumerals": "IV - bVI - bVII - I",
+          "description": "Ascending progression building energy through borrowed chords resolving to the E5 tonic"
+        },
+        {
+          "section": "Middle Section (7/4)",
+          "progression": "E5 - F#5 - A5 - B5",
+          "romanNumerals": "I - II - IV - V",
+          "description": "Odd-time passage in 7/4 featuring stepwise power chord motion with the asymmetric meter creating rhythmic tension"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Strong tonic anchor; the song repeatedly returns to E as the harmonic center",
+        "D5 (bVII) - Borrowed from E Mixolydian/E minor, providing classic rock gravitas",
+        "A5 (IV) - Subdominant chord providing harmonic movement and sense of lift",
+        "C5 (bVI) - Borrowed chord from E minor adding dramatic color in the chorus",
+        "B5 (V) - Dominant function in the 7/4 section providing forward momentum",
+        "F#5 (II) - Stepwise movement chord used in the odd-time instrumental passage"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Syncopated Power Chords",
+      "description": "The main guitar riff requires precise syncopated power chord hits that lock with the synthesizer, demanding tight rhythmic accuracy and muting between strikes",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (Open E string + 2nd fret A and D strings)",
+          "D5: X-5-7-X-X-X (5th fret A string + 7th fret D string)",
+          "A5: X-0-2-X-X-X (Open A string + 2nd fret D string)",
+          "C5: X-3-5-X-X-X (3rd fret A string + 5th fret D string)",
+          "Syncopated hits must align precisely with the synth pattern",
+          "Dead-string muting between power chord accents is essential",
+          "Attack must be aggressive and percussive"
+        ],
+        "sequence": [
+          "Strike E5 on the syncopated accent",
+          "Immediately mute strings after the hit",
+          "Move to next chord position during the muted gap",
+          "Hit the next accent precisely on the offbeat",
+          "Maintain the syncopated pattern throughout"
+        ],
+        "tips": [
+          "Listen to the synth line and learn to lock your attacks with it",
+          "Practice the rhythm pattern without chord changes first",
+          "Use palm muting and left-hand muting for clean dead notes between hits",
+          "Alex Lifeson uses a relatively clean tone with moderate gain for this riff",
+          "The rhythm is more important than the string volume - prioritize timing"
+        ],
+        "chords": [
+          "E5",
+          "D5",
+          "A5",
+          "C5"
+        ],
+        "progression": "E5 syncopated riff pattern"
+      }
+    },
+    {
+      "name": "Odd Time Signature Playing (7/4)",
+      "description": "The middle instrumental section shifts to 7/4 time, requiring the guitarist to internalize an asymmetric rhythmic feel while maintaining musical flow",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "7/4 time can be felt as 4+3 or 3+4 groupings",
+          "In Tom Sawyer the 7/4 section feels like 4+3 (four beats then three)",
+          "Power chords move stepwise through the progression",
+          "The pattern must feel natural despite the odd meter",
+          "Neil Peart's drum pattern provides the rhythmic skeleton"
+        ],
+        "sequence": [
+          "Count 1-2-3-4-1-2-3 to internalize the 7/4 feel",
+          "Place chord changes on beat 1 of each measure",
+          "Feel the grouping as 4+3 with the accent on beat 1 and beat 5",
+          "Maintain consistent pick attack through the odd meter",
+          "Return to 4/4 smoothly when the section transitions"
+        ],
+        "tips": [
+          "Tap the 7/4 pattern with your foot before adding the guitar",
+          "Practice with a metronome set to 7/4 at slow tempo first",
+          "Listen to the drum pattern as your primary rhythmic guide",
+          "Don't think of it as missing a beat from 4/4 - feel it as its own groove",
+          "Record yourself to check if you are maintaining the meter consistently"
+        ],
+        "chords": [
+          "E5",
+          "F#5",
+          "A5",
+          "B5"
+        ],
+        "progression": "E5 - F#5 - A5 - B5 in 7/4 time"
+      }
+    },
+    {
+      "name": "Palm Muting and Dynamics",
+      "description": "Controlled palm muting throughout the song creates dynamic contrast between tight, percussive sections and open, ringing power chords",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Tight palm muting during verse to allow space for vocals and synth",
+          "Release palm mute for chorus sections for full chord sound",
+          "Gradual dynamic build through sections using muting as a volume control",
+          "Combine with dead-string muting for rhythmic percussive effects"
+        ],
+        "sequence": [
+          "Apply palm mute during quieter verse passages",
+          "Gradually release muting pressure during builds",
+          "Open up fully during chorus for maximum impact",
+          "Return to palm muting for next verse section"
+        ],
+        "tips": [
+          "The dynamic range between muted and open sections is crucial",
+          "Practice the transitions between muted and open playing",
+          "Use consistent palm pressure for even muting across all muted sections",
+          "Don't over-mute - some sustain should still come through"
+        ],
+        "chords": [
+          "E5",
+          "A5",
+          "D5"
+        ],
+        "progression": "Applied across all sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "Syncopated Power Chords",
+      "key": "E Major",
+      "description": "Iconic synth-led intro with guitar doubling the main riff. The syncopated power chord hits define the groove alongside Geddy Lee's synthesizer.",
+      "chords": [
+        "E5",
+        "D5",
+        "A5"
+      ],
+      "progression": "E5 - D5 - A5 - E5",
+      "notes": [
+        "Guitar enters with syncopated hits matching the synth line",
+        "Dead-string muting between accents is essential for the groove",
+        "Attack should be sharp and percussive",
+        "Listen to the synth for rhythmic cues"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:15",
+      "technique": "Palm Muting and Dynamics",
+      "key": "E Major",
+      "description": "Guitar pulls back during verses, using palm-muted power chords to support Geddy Lee's vocals and give space to the synth textures",
+      "chords": [
+        "E5",
+        "A5",
+        "D5"
+      ],
+      "progression": "E5 - A5 - E5 - D5",
+      "notes": [
+        "Restrained palm-muted playing leaves room for vocals",
+        "Syncopated accents punctuate the vocal phrasing",
+        "Dynamic control is key - don't overpower the mix",
+        "Maintain tight rhythm with the bass and drums"
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:50",
+      "technique": "Syncopated Power Chords",
+      "key": "E Major",
+      "description": "Full-volume power chord progression building through borrowed chords for a dramatic, anthemic chorus section",
+      "chords": [
+        "A5",
+        "C5",
+        "D5",
+        "E5"
+      ],
+      "progression": "A5 - C5 - D5 - E5",
+      "notes": [
+        "Open up from palm muting for full chord sustain",
+        "Ascending chord movement builds energy to the E5 resolution",
+        "The bVI (C5) adds unexpected harmonic color",
+        "Accentuate the arrival on E5 for maximum impact"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Middle Section (7/4)",
+      "timeStamp": "2:10-3:00",
+      "technique": "Odd Time Signature Playing (7/4)",
+      "key": "E Major",
+      "description": "The famous instrumental middle section shifts to 7/4 time, featuring Alex Lifesonthe iconic vocal hooks complex drum pattern",
+      "chords": [
+        "E5",
+        "F#5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - F#5 - A5 - B5 (7/4 time)",
+      "notes": [
+        "Count 7 beats per measure: 4+3 grouping",
+        "Stepwise power chord motion creates forward drive",
+        "Lock with Neil Peart's snare accents for timing reference",
+        "This section is the defining rhythmic challenge of the song"
+      ],
+      "alphaTab": "12.6 14.6 11.5 14.5 11.4 14.4 | 11.3 13.3 12.2 14.2 12.1 14.1 | 14.1 12.1 14.2 12.2 13.3 11.3 | 14.4 11.4 14.5 11.5 14.6 12.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:00-3:35",
+      "technique": "Syncopated Power Chords",
+      "key": "E Major",
+      "description": "Alex Lifeson's guitar solo combining pentatonic licks with arpeggiated chordal passages, played over the verse/chorus progression",
+      "chords": [
+        "E5",
+        "A5",
+        "D5"
+      ],
+      "progression": "E5 - A5 - E5 - D5 (solo over verse changes)",
+      "notes": [
+        "Combines single-note pentatonic runs with chordal stabs",
+        "Uses E minor pentatonic for a blues-rock flavor over the major key",
+        "String bending and vibrato for expressiveness",
+        "Returns to the rhythmic riff motif at the solo's conclusion"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:50-4:33",
+      "technique": "Syncopated Power Chords",
+      "key": "E Major",
+      "description": "Return of the main riff with added intensity, building to the final synth-driven ending where the guitar sustains the final E5 chord",
+      "chords": [
+        "E5",
+        "D5",
+        "A5"
+      ],
+      "progression": "E5 - D5 - A5 - E5 (main riff reprise)",
+      "notes": [
+        "Main riff returns at full intensity",
+        "Guitar and synth lock together for the final statement",
+        "Song ends on sustained synthesizer with guitar fading",
+        "Maintain energy and precision to the very end"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson ES-355 or Les Paul (Alex Lifeson's primary guitars during Moving Pictures era)",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "PRS Custom 24",
+        "Gibson ES-335",
+        "Any semi-hollow or solid body with humbuckers"
+      ],
+      "pickup": "Humbuckers with coil-split capability for tonal versatility"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 2203",
+      "alternatives": [
+        "Fender Twin Reverb (clean sections)",
+        "Hughes & Kettner Triamp",
+        "Marshall DSL100",
+        "Mesa/Boogie Mark IV"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate crunch, not high gain)",
+        "treble": "7 (bright, cutting tone for clarity)",
+        "middle": "6 (present mids for power chord definition)",
+        "bass": "5 (controlled low end, not boomy)",
+        "presence": "7 (articulate pick attack)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate amp overdrive - not heavily distorted",
+      "reverb": "Short room reverb for spatial dimension",
+      "other": "Chorus pedal (Boss CE-1 or similar) for clean arpeggiated passages; delay for ambient washes in transitions"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord shapes and understand the song's structure in 4/4 sections",
+      "steps": [
+        "Master E5, A5, D5, and C5 power chord shapes",
+        "Practice chord transitions at slow tempo in 4/4 time",
+        "Learn the main riff rhythm pattern without syncopation",
+        "Understand the song structure by listening and mapping sections",
+        "Play a simplified version of the verse and chorus progressions"
+      ],
+      "timeEstimate": "3-5 weeks for simplified version"
+    },
+    "intermediate": {
+      "focus": "Develop syncopated rhythm accuracy and tackle the 7/4 section",
+      "steps": [
+        "Add syncopated accents to the main riff pattern",
+        "Practice dead-string muting between power chord hits",
+        "Learn the 7/4 section slowly, counting 4+3 groupings",
+        "Work on dynamic control between palm-muted and open sections",
+        "Play along with the recording at reduced tempo"
+      ],
+      "timeEstimate": "6-10 weeks for competent performance"
+    },
+    "advanced": {
+      "focus": "Master the complete arrangement including odd-time sections and solo",
+      "steps": [
+        "Perform all sections at full tempo with precise syncopation",
+        "Navigate 4/4 to 7/4 transitions seamlessly",
+        "Learn the guitar solo with accurate bending and phrasing",
+        "Achieve dynamic mastery matching the original recording",
+        "Play the complete song from start to finish without errors"
+      ],
+      "timeEstimate": "2-4 months for full mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Losing the syncopated rhythm and defaulting to straight quarter notes",
+      "Failing to mute strings between percussive power chord hits",
+      "Rushing or dragging during the 7/4 section due to unfamiliarity with odd time",
+      "Playing too loud during verses when the guitar should sit below the synth and vocals",
+      "Not paying attention to the dynamic arc between sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with power chord changes at 60 BPM for 5 minutes",
+      "Practice the syncopated riff pattern with a metronome at 70 BPM for 10 minutes",
+      "Dedicate 10 minutes to the 7/4 section counting aloud while playing",
+      "Work on smooth transitions between sections (4/4 to 7/4 and back)",
+      "Play through the full song at 75% tempo focusing on dynamics"
+    ],
+    "focusAreas": [
+      "Syncopated rhythm precision and consistency",
+      "7/4 time signature internalization",
+      "Dynamic contrast between muted and open playing",
+      "Dead-string muting technique for percussive rhythm",
+      "Locking with the rhythm section across time signature changes"
+    ],
+    "metronomeWork": [
+      "Practice main riff with metronome at 60 BPM, increase by 5 BPM increments to 88 BPM",
+      "Set metronome to 7/4 (or count 7 clicks) for the middle section",
+      "Practice transitions: 4 bars of 4/4 into 4 bars of 7/4 with a click",
+      "Use the metronome on beats 1 and 4 only to test internal timing",
+      "Play full arrangement with metronome on quarter notes at 88 BPM"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "The Spirit of Radio",
+        "difficulty": "Advanced",
+        "similarity": "Similar mix of riff-based sections and odd time changes with dynamic contrasts"
+      },
+      {
+        "title": "YYZ",
+        "difficulty": "Expert",
+        "similarity": "Instrumental showcase with extensive odd-time playing and complex arrangement"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Roundabout",
+        "artist": "Yes",
+        "difficulty": "Advanced",
+        "similarity": "Progressive rock arrangement with complex time changes and dynamic range"
+      },
+      {
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Odd time signature (7/4) with riff-based rock structure"
+      },
+      {
+        "title": "Schism",
+        "artist": "Tool",
+        "difficulty": "Advanced",
+        "similarity": "Modern prog-rock with complex time signatures and heavy power chord riffs"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Power chord foundation to build basic rock rhythm skills"
+      },
+      {
+        "title": "La Villa Strangiato",
+        "artist": "Rush",
+        "difficulty": "Expert",
+        "similarity": "Next-level Rush complexity with multiple time signatures and virtuosic playing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "prog-rock",
+      "power-chords",
+      "odd-time",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

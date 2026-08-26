@@ -1,19 +1,11 @@
-// src/app/lessons/page.tsx
-import fs from 'fs';
-import path from 'path';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import rehypeSlug from 'rehype-slug';
-import remarkGfm from 'remark-gfm';
-import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
-// (Optional) any React components you want to expose to MDX:
-const components = {
-  // You can add `<MyChart />` or `<Fretboard />` here later
+export const metadata: Metadata = {
+  title: 'Guitar Lessons',
+  description: 'Comprehensive guitar lessons covering music theory, song analysis, practice techniques, and gear reviews.',
 };
 
 const categories = [
@@ -60,7 +52,6 @@ export default function LessonsPage() {
           </p>
         </section>
       </main>
-      <Footer />
     </Layout>
   );
 }

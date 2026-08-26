@@ -31,7 +31,12 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["E5", "D5", "C5", "B5"],
+        "chords": [
+          "E5",
+          "D5",
+          "C5",
+          "B5"
+        ],
         "progression": "I - ♭VII - ♭VI - V",
         "description": "Classic chromatic descending power chord sequence that creates strong forward momentum"
       },
@@ -99,7 +104,12 @@
           "Use economy of motion between chord changes",
           "Practice with a metronome to maintain timing"
         ],
-        "chords": ["E5", "D#5", "C#5", "B5"],
+        "chords": [
+          "E5",
+          "D#5",
+          "C#5",
+          "B5"
+        ],
         "progression": "E5 - D#5 - C#5 - B5"
       }
     },
@@ -125,7 +135,11 @@
           "Maintain consistent pressure for even tone",
           "Practice switching between muted and open quickly"
         ],
-        "chords": ["E5", "B5", "A5"],
+        "chords": [
+          "E5",
+          "B5",
+          "A5"
+        ],
         "progression": "E5 - B5 - E5 - A5 (all palm muted)"
       }
     },
@@ -151,7 +165,9 @@
           "Keep guitar in tune after whammy use",
           "Practice returning to pitch accurately"
         ],
-        "chords": ["E5"],
+        "chords": [
+          "E5"
+        ],
         "progression": "E major pentatonic with whammy effects"
       }
     }
@@ -163,14 +179,20 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "The iconic descending chromatic power chord pattern that defines the song",
-      "alphaTab": "(0.6 2.5 2.4).4 (11.5 13.4).4 (9.5 11.4).4 (7.5 9.4).4",
-      "chords": ["E5", "D#5", "C#5", "B5"],
+      "chords": [
+        "E5",
+        "D#5",
+        "C#5",
+        "B5"
+      ],
       "progression": "E5 - D#5 - C#5 - B5",
       "notes": [
         "Play with authority and clean chord transitions",
         "Emphasize the downbeat of each chord change",
         "This riff repeats throughout as the main hook"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Verse",
@@ -178,14 +200,18 @@
       "technique": "Heavy Palm Muting",
       "key": "E major",
       "description": "Palm muted power chord pattern creating tight, percussive rhythm foundation",
-      "alphaTab": "(0.6 2.5 2.4).8 (0.6 2.5 2.4).8 (0.6 2.5 2.4).8 (0.6 2.5 2.4).8 | (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8",
-      "chords": ["E5", "B5"],
+      "chords": [
+        "E5",
+        "B5"
+      ],
       "progression": "E5 - B5 (palm muted pattern)",
       "notes": [
         "Heavy palm muting throughout for chunky tone",
         "Consistent eighth-note rhythm pattern",
         "Keep chord changes tight and percussive"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
     },
     {
       "name": "Chorus",
@@ -193,14 +219,19 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "Open power chord progression with the signature descending ending",
-      "alphaTab": "(0.6 2.5 2.4).4 (7.5 9.4).4 (0.6 2.5 2.4).4 (0.5 2.4).4 (0.6 2.5 2.4).4 (7.5 9.4).4 (0.6 2.5 2.4).4 (11.5 13.4).4 (9.5 11.4).4 (7.5 9.4).4",
-      "chords": ["E5", "B5", "A5"],
+      "chords": [
+        "E5",
+        "B5",
+        "A5"
+      ],
       "progression": "E5 - B5 - E5 - A5 - E5 - B5 - descending pattern",
       "notes": [
         "Open, ringing chords without palm muting",
         "Build energy through the progression",
         "End with the signature descending chromatic run"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Bridge",
@@ -208,14 +239,20 @@
       "technique": "Descending Power Chord Progressions",
       "key": "E major",
       "description": "Ascending power chord pattern that builds tension before the final chorus",
-      "alphaTab": "(0.6 2.5 2.4).4 (1.6 3.5 3.4).4 (2.6 4.5 4.4).4 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8 (7.5 9.4).8",
-      "chords": ["E5", "F5", "F#5", "B5"],
+      "chords": [
+        "E5",
+        "F5",
+        "F#5",
+        "B5"
+      ],
       "progression": "E5 - F5 - F#5 - B5",
       "notes": [
         "Ascending pattern creates building tension",
         "Contrasts with the usual descending patterns",
         "Sets up the return to the main chorus effectively"
-      ]
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Guitar Solo",
@@ -223,25 +260,36 @@
       "technique": "Whammy Bar Effects",
       "key": "E major",
       "description": "Pentatonic-based solo with whammy bar effects and expressive bending",
-      "alphaTab": "12.2 15.2 12.2 15.2 12.2 14.2 12.2 15.2 | 12.1 15.1 12.1 15.1 12.1 15.1",
-      "chords": ["E5"],
+      "chords": [
+        "E5"
+      ],
       "progression": "E major pentatonic - 12th fret position",
       "notes": [
         "Focus on E major pentatonic scale patterns",
         "Use whammy bar for expressive pitch bending",
         "Simple but effective melodic phrasing"
-      ]
+      ],
+      "alphaTab": "12.6 14.6 11.5 14.5 11.4 14.4 | 11.3 13.3 12.2 14.2 12.1 14.1 | 14.1 12.1 14.2 12.2 13.3 11.3 | 14.4 11.4 14.5 11.5 14.6 12.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson Les Paul or similar solid body with humbuckers",
-      "alternatives": ["ESP/LTD Eclipse", "Epiphone Les Paul", "Any solid body with humbucker pickups"],
+      "alternatives": [
+        "ESP/LTD Eclipse",
+        "Epiphone Les Paul",
+        "Any solid body with humbucker pickups"
+      ],
       "pickup": "Humbucker pickups for high-gain distortion tone"
     },
     "amp": {
       "recommended": "Marshall JCM800 or high-gain tube amplifier",
-      "alternatives": ["Marshall DSL40C", "Orange Rockerverb", "Mesa Boogie Rectifier"],
+      "alternatives": [
+        "Marshall DSL40C",
+        "Orange Rockerverb",
+        "Mesa Boogie Rectifier"
+      ],
       "settings": {
         "gain": "8/10",
         "treble": "7/10",
@@ -342,5 +390,18 @@
       "Practice palm muted sections with steady eighth-note feel",
       "Work on timing consistency between different song sections"
     ]
+  },
+  "metadata": {
+    "popularity": 75,
+    "dateAdded": "2024-01-01",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "power-chords",
+      "metal"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
   }
 }

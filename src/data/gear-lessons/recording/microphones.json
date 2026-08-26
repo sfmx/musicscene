@@ -1,0 +1,285 @@
+{
+  "slug": "recording-microphones",
+  "category": "recording",
+  "pageTitle": "Recording Microphones",
+  "subtitle": "The first link in your recording chain. Microphones capture acoustic energy and convert it to electrical signals, making the choice of mic crucial to your sound.",
+  "heroGradient": "bg-gradient-to-r from-green-50 to-emerald-50",
+  "backLink": {
+    "href": "/lessons/gear/recording",
+    "label": "Back to Recording Gear"
+  },
+  "introduction": {
+    "title": "How Microphones Work",
+    "text": "Microphones are transducers that convert acoustic energy (sound waves) into electrical energy (audio signals). Different microphone types use various methods to achieve this conversion, each with unique characteristics.",
+    "columns": [
+      {
+        "title": "Transduction Methods",
+        "text": "Dynamic: Moving coil generates signal. Condenser: Capacitor plates change distance. Ribbon: Metal ribbon moves in magnetic field. Carbon: Pressure changes resistance (vintage). Piezo: Crystal generates voltage."
+      },
+      {
+        "title": "Key Specifications",
+        "text": "Frequency Response: Range and coloration. Sensitivity: Output level for given input. SPL Handling: Maximum sound pressure. Self-Noise: Inherent electronic noise. Polar Pattern: Directional pickup."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Dynamic Microphones",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "No external power required",
+            "Excellent for high SPL sources",
+            "Rugged and reliable construction",
+            "Less sensitive to humidity/temperature",
+            "Often more affordable",
+            "Focused frequency response"
+          ]
+        },
+        {
+          "title": "Best Applications",
+          "items": [
+            "Live vocals and performance",
+            "Guitar amplifier recording",
+            "Drum recording (snare, toms)",
+            "Loud brass instruments",
+            "Broadcast and podcasting",
+            "Budget home recording"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Dynamic Mics",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Shure SM57", "value": "Industry standard for instruments" },
+            { "label": "Shure SM58", "value": "Legendary vocal mic" },
+            { "label": "Electro-Voice RE20", "value": "Broadcast favorite" },
+            { "label": "Sennheiser MD421", "value": "Versatile studio workhorse" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Condenser Microphones",
+      "bgColor": "bg-green-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "Requires phantom power (+48V)",
+            "Highly sensitive and detailed",
+            "Wide frequency response",
+            "Low self-noise (quality models)",
+            "Fast transient response",
+            "More fragile than dynamics"
+          ]
+        },
+        {
+          "title": "Best Applications",
+          "items": [
+            "Studio vocal recording",
+            "Acoustic instruments",
+            "Overhead drum mics",
+            "Room ambience capture",
+            "Classical and orchestral recording",
+            "Detailed source capture"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Condenser Mics",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Neumann U87", "value": "Studio legend" },
+            { "label": "AKG C414", "value": "Versatile multi-pattern" },
+            { "label": "Audio-Technica AT2020", "value": "Budget favorite" },
+            { "label": "Rode NTK", "value": "Tube warmth" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ribbon Microphones",
+      "bgColor": "bg-purple-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Characteristics",
+          "items": [
+            "Vintage, warm tone character",
+            "Natural compression and smoothness",
+            "Figure-8 polar pattern typically",
+            "Fragile ribbon element",
+            "Lower output than condensers",
+            "Excellent for harsh sources"
+          ]
+        },
+        {
+          "title": "Best Applications",
+          "items": [
+            "Guitar amplifiers (mellows harshness)",
+            "Brass instruments",
+            "Vintage vocal sounds",
+            "Drum overheads (smooth cymbals)",
+            "String sections",
+            "Room ambience with character"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Famous Ribbon Mics",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Industry Standards",
+          "fields": [
+            { "label": "Coles 4038", "value": "BBC vintage classic" },
+            { "label": "Royer R-121", "value": "Modern ribbon standard" },
+            { "label": "RCA 44", "value": "Iconic vintage broadcast" },
+            { "label": "AEA R84", "value": "Affordable vintage tone" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microphone Polar Patterns",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Cardioid (Heart-shaped)",
+          "items": [
+            "Picks up front, rejects rear",
+            "Most common pattern",
+            "Good isolation",
+            "Proximity effect",
+            "Ideal for most sources"
+          ]
+        },
+        {
+          "title": "Omnidirectional",
+          "items": [
+            "Picks up all directions equally",
+            "Natural room sound",
+            "No proximity effect",
+            "Less handling noise",
+            "Ambient recording"
+          ]
+        },
+        {
+          "title": "Figure-8 (Bidirectional)",
+          "items": [
+            "Picks up front and rear",
+            "Rejects sides completely",
+            "Great for two-person recording",
+            "Strong proximity effect",
+            "Natural for ribbon mics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recording Techniques",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Vocal Recording",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Close Miking (6-12 inches)", "value": "Intimate, present sound. Good isolation. Use pop filter. Watch for proximity effect." },
+            { "label": "Distance Miking (2+ feet)", "value": "More natural, roomy sound. Includes room acoustics. Requires good acoustic space." }
+          ]
+        },
+        {
+          "title": "Instrument Recording",
+          "bgColor": "bg-teal-50",
+          "fields": [
+            { "label": "Guitar Amplifiers", "value": "Close: SM57 on speaker cone edge. Room: Condenser 3-6 feet back. Combine close + room for depth." },
+            { "label": "Acoustic Instruments", "value": "Find the sweet spot by listening. Consider instrument resonance. Use room mics for natural sound." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microphone Buying Guide",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "First Microphone ($50-200)",
+          "items": [
+            "Large diaphragm condenser",
+            "Audio-Technica AT2020",
+            "Rode PodMic (dynamic option)",
+            "Good for vocals and instruments",
+            "Includes basic accessories"
+          ]
+        },
+        {
+          "title": "Home Studio Pair ($200-600)",
+          "items": [
+            "Large diaphragm condenser",
+            "Dynamic mic (SM57/SM58)",
+            "Covers most recording needs",
+            "Shure SM57 + Audio-Technica AT2035",
+            "Pop filter and boom stands"
+          ]
+        },
+        {
+          "title": "Professional Setup ($600+)",
+          "items": [
+            "Multiple pattern condenser",
+            "Specialty mics (ribbon, small diaphragm)",
+            "Matched pairs for stereo",
+            "AKG C414, Neumann TLM series",
+            "Professional accessories"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microphone Care & Maintenance",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Storage & Handling",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "Store in protective cases or pouches",
+            "Avoid extreme temperatures and humidity",
+            "Handle by the body, not the grille",
+            "Keep away from magnetic fields",
+            "Transport carefully to prevent shock",
+            "Use shock mounts to reduce vibration"
+          ]
+        },
+        {
+          "title": "Cleaning & Service",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Clean grilles gently with soft brush",
+            "Wipe body with slightly damp cloth",
+            "Never use solvents or harsh chemicals",
+            "Service condensers every few years",
+            "Check cables and connectors regularly",
+            "Professional calibration for critical work"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

@@ -1,0 +1,317 @@
+{
+  "slug": "major",
+  "chordInfo": {
+    "name": "Major Chords",
+    "pageTitle": "Major Chord Theory",
+    "subtitle": "Master the foundation of Western harmony with major chords - the bright, stable, and joyful building blocks of countless songs.",
+    "colorScheme": "blue",
+    "tags": ["Foundation of Harmony", "Bright & Stable", "Universal Appeal", "Essential Building Block"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Major Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Three-note chords built from major scales" },
+      { "label": "Formula", "value": "Root + Major 3rd + Perfect 5th" },
+      { "label": "Interval Pattern", "value": "4 semitones + 3 semitones" },
+      { "label": "Sound Quality", "value": "Bright, happy, stable" },
+      { "label": "Function", "value": "Tonic, dominant, subdominant harmony" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Pop Music", "value": "I-V-vi-IV progressions" },
+      { "label": "Folk/Country", "value": "Simple three-chord songs" },
+      { "label": "Classical", "value": "Tonal harmony foundation" },
+      { "label": "Rock", "value": "Power chord extensions" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Major Chord Construction",
+    "boxes": [
+      {
+        "title": "C Major Example",
+        "items": [
+          "Root: C (1st degree)",
+          "Major 3rd: E (3rd degree)",
+          "Perfect 5th: G (5th degree)",
+          "Semitones: C→E (4), E→G (3)",
+          "Result: Bright, stable triad"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "Major 3rd: Defines major quality",
+          "Perfect 5th: Provides stability",
+          "Consonance: Stable, pleasant sound",
+          "Function: Rest point in harmony",
+          "Psychology: Happy, uplifting mood"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Built from: Major scale degrees 1-3-5",
+          "Key centers: I, IV, V in major keys",
+          "Diatonic: Natural part of major scales",
+          "Progressions: Foundation of tonal music",
+          "Cadences: Strong resolution points"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Open Major Chords",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are the fundamental open major chords every guitarist should master first.",
+      "voicings": [
+        { "name": "C Major", "chord": "C", "notes": "C-E-G", "fingering": "Easy, foundational", "use": "Key of C, Am, F, G" },
+        { "name": "G Major", "chord": "G", "notes": "G-B-D", "fingering": "Two-finger option", "use": "Key of G, Em, C, D" },
+        { "name": "D Major", "chord": "D", "notes": "D-F#-A", "fingering": "Compact shape", "use": "Key of D, Bm, G, A" },
+        { "name": "A Major", "chord": "A", "notes": "A-C#-E", "fingering": "Three fingers, 2nd fret", "use": "Key of A, F#m, D, E" },
+        { "name": "E Major", "chord": "E", "notes": "E-G#-B", "fingering": "Close together", "use": "Key of E, C#m, A, B" },
+        { "name": "F Major", "chord": "F", "notes": "F-A-C", "fingering": "Barre or partial", "use": "Key of F, Dm, Bb, C" }
+      ]
+    },
+    {
+      "title": "Moveable Major Chord Forms",
+      "tipTitle": "Barre Chords",
+      "tipDescription": "These moveable forms allow you to play major chords anywhere on the neck.",
+      "voicings": [
+        { "name": "E-Shape Barre (6th string root)", "chord": "F_barre", "notes": "Based on open E major shape", "fingering": "6th string root form", "use": "Moveable up and down the neck" },
+        { "name": "A-Shape Barre (5th string root)", "chord": "B_barre_A_shape", "notes": "Based on open A major shape", "fingering": "5th string root form", "use": "Moveable up and down the neck" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Major Chord Progressions",
+    "items": [
+      {
+        "title": "Pop Progression I-V-vi-IV",
+        "titleColor": "text-blue-700",
+        "chords": [
+          { "chord": "C", "label": "C", "numeral": "I" },
+          { "chord": "G", "label": "G", "numeral": "V" },
+          { "chord": "Am", "label": "Am", "numeral": "vi" },
+          { "chord": "F", "label": "F", "numeral": "IV" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - D - DU",
+          "description": "Classic pop rhythm",
+          "tempo": "80-120 BPM",
+          "feel": "Uplifting, emotional",
+          "genre": "Pop, Rock, Ballads"
+        },
+        "alphaTex": "(3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1 | (0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1",
+        "alphaTexTitle": "I-V-vi-IV Progression (C-G-Am-F)",
+        "description": "The most popular progression in modern music - used in thousands of songs from \"Let It Be\" to \"Don't Stop Believin'\""
+      },
+      {
+        "title": "Three-Chord Song I-IV-V",
+        "titleColor": "text-green-700",
+        "chords": [
+          { "chord": "G", "label": "G", "numeral": "I" },
+          { "chord": "C", "label": "C", "numeral": "IV" },
+          { "chord": "D", "label": "D", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "UU - D - UU - D",
+          "description": "Country/folk feel",
+          "tempo": "100-140 BPM",
+          "feel": "Simple, authentic",
+          "genre": "Folk, Country, Rock"
+        },
+        "alphaTex": "(3.6 2.5 0.4 0.3 3.2 3.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (2.4 3.3 2.2).1",
+        "alphaTexTitle": "I-IV-V Progression (G-C-D)",
+        "description": "Foundation of folk and country music - simple yet powerful progression in \"Blowin' in the Wind\" and \"Ring of Fire\""
+      },
+      {
+        "title": "50s Doo-Wop I-vi-IV-V",
+        "titleColor": "text-purple-700",
+        "chords": [
+          { "chord": "C", "label": "C", "numeral": "I" },
+          { "chord": "Am", "label": "Am", "numeral": "vi" },
+          { "chord": "F", "label": "F", "numeral": "IV" },
+          { "chord": "G", "label": "G", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "D - D - D - D",
+          "description": "Classic doo-wop rhythm",
+          "tempo": "90-120 BPM",
+          "feel": "Nostalgic, smooth",
+          "genre": "Doo-Wop, Oldies, Pop"
+        },
+        "alphaTex": "(3.5 2.4 0.3 1.2 0.1).1 | (0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1",
+        "alphaTexTitle": "Doo-Wop Progression (C-Am-F-G)",
+        "description": "Classic 1950s progression with smooth circular motion - heard in \"Stand By Me\" and countless doo-wop classics"
+      },
+      {
+        "title": "Emotional vi-IV-I-V",
+        "titleColor": "text-orange-700",
+        "chords": [
+          { "chord": "Am", "label": "Am", "numeral": "vi" },
+          { "chord": "F", "label": "F", "numeral": "IV" },
+          { "chord": "C", "label": "C", "numeral": "I" },
+          { "chord": "G", "label": "G", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "UU - UU - UU - UU",
+          "description": "Gentle, flowing ballad",
+          "tempo": "70-100 BPM",
+          "feel": "Melancholy to hopeful",
+          "genre": "Ballads, Folk, Singer-Songwriter"
+        },
+        "alphaTex": "(0.5 2.4 2.3 1.2 0.1).1 | (1.6 3.5 3.4 2.3 1.2 1.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1",
+        "alphaTexTitle": "Emotional Progression (Am-F-C-G)",
+        "description": "Starts minor and resolves to major - creates emotional journey from sadness to hope in \"Hallelujah\" and \"Country Roads\""
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice smooth chord transitions slowly",
+        "Focus on clean major third intervals",
+        "Use consistent strumming patterns",
+        "Keep steady tempo with metronome"
+      ],
+      "applicationItems": [
+        "Foundation of most popular music",
+        "Essential for songwriting and jamming",
+        "Creates bright, uplifting moods",
+        "Perfect for sing-alongs and campfire songs"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Major Chords",
+    "categories": [
+      {
+        "title": "Rock & Pop Classics",
+        "colorBg": "bg-blue-100",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "songs": [
+          "\"Let It Be\" - The Beatles (C-G-Am-F)",
+          "\"Don't Stop Believin'\" - Journey (E-B-C#m-A)",
+          "\"Sweet Child O' Mine\" - Guns N' Roses (D-C-G)",
+          "\"Wonderwall\" - Oasis (Em-G-D-C)",
+          "\"Hey Jude\" - The Beatles (F-C-G)"
+        ]
+      },
+      {
+        "title": "Folk & Country",
+        "colorBg": "bg-green-100",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700",
+        "songs": [
+          "\"House of the Rising Sun\" - Animals (Am-C-D-F)",
+          "\"Blowin' in the Wind\" - Bob Dylan (G-C-D)",
+          "\"Country Roads\" - John Denver (G-Em-C-D)",
+          "\"Ring of Fire\" - Johnny Cash (G-C-D)",
+          "\"Hallelujah\" - Leonard Cohen (C-Am-F-G)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Major Chord Skills",
+    "tipDescription": "These exercises will help you master major chords and their applications.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Open Chord Changes",
+        "content": "Progression: C - G - D - A - E - F",
+        "detail": "Practice clean transitions between all open major chords",
+        "tip": "Start slowly, focus on finger placement and timing"
+      },
+      {
+        "title": "Exercise 2: I-IV-V in Different Keys",
+        "content": "Keys: G-C-D, C-F-G, D-G-A, A-D-E",
+        "detail": "Practice the foundational three-chord progression",
+        "tip": "Essential for country, folk, and rock songs"
+      },
+      {
+        "title": "Exercise 3: Pop Progression Mastery",
+        "content": "Pattern: I-V-vi-IV in multiple keys",
+        "detail": "C-G-Am-F, G-D-Em-C, D-A-Bm-G",
+        "tip": "Learn the most popular progression in modern music"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Major Chord Concepts",
+    "concepts": [
+      {
+        "title": "Chord Inversions",
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700",
+        "items": [
+          "Root Position: C-E-G (root in bass)",
+          "First Inversion: E-G-C (3rd in bass)",
+          "Second Inversion: G-C-E (5th in bass)",
+          "Voice Leading: Smoother progressions",
+          "Bass Lines: More interesting movement"
+        ]
+      },
+      {
+        "title": "Chord Extensions",
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "items": [
+          "Add9: Major chord + 9th (Cadd9)",
+          "6th Chords: Major chord + 6th (C6)",
+          "Major 7th: Major chord + 7th (CMaj7)",
+          "Sus Chords: Suspended 2nd or 4th",
+          "Color Tones: Added harmonic richness"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand major chords, explore how they connect to other chord types and advanced harmonic concepts.",
+    "links": [
+      {
+        "slug": "minor",
+        "title": "Minor Chords",
+        "description": "Explore emotional depth and melancholic beauty in harmony.",
+        "linkText": "Feel the emotion",
+        "icon": "M",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "seventh",
+        "title": "Seventh Chords",
+        "description": "Add rich color and jazz sophistication to your playing.",
+        "linkText": "Add sophistication",
+        "icon": "7",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      },
+      {
+        "slug": "suspended",
+        "title": "Suspended Chords",
+        "description": "Create tension and release with suspended harmony.",
+        "linkText": "Build tension",
+        "icon": "S",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      }
+    ]
+  }
+}

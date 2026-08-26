@@ -1,0 +1,446 @@
+{
+  "songInfo": {
+    "title": "Message in a Bottle",
+    "artist": "The Police",
+    "album": "Reggatta de Blanc",
+    "released": "1979",
+    "genre": "New Wave / Post-Punk",
+    "tempo": "150 BPM",
+    "duration": "4:50",
+    "key": "C# minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C# minor",
+      "scalesUsed": [
+        {
+          "scale": "C# natural minor (Aeolian)",
+          "notes": "C# - D# - E - F# - G# - A - B - C#",
+          "application": "Primary harmonic framework for the chord progressions and arpeggiated patterns"
+        },
+        {
+          "scale": "C# minor pentatonic",
+          "notes": "C# - E - F# - G# - B",
+          "application": "Melodic foundation for any lead fills and vocal melody support"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor (is the primary key)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C#m(add9)",
+          "A(add9)",
+          "B(add9)",
+          "F#m(add9)"
+        ],
+        "progression": "i(add9) - VI(add9) - VII(add9) - iv(add9)",
+        "description": "The signature Andy Summers progression using add9 voicings that create a shimmering, open sound distinct from standard bar chords"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro/Verse",
+          "progression": "C#m(add9) - A(add9) - B(add9) - F#m(add9)",
+          "romanNumerals": "i - VI - VII - iv",
+          "description": "Arpeggiated add9 chords creating the jangling, rhythmic texture that defines the song"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "A(add9) - B(add9) - F#m(add9) - F#m(add9)",
+          "romanNumerals": "VI - VII - iv - iv",
+          "description": "Building tension with the same add9 voicing approach leading into the chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A - B - C#m - A - B - F#m",
+          "romanNumerals": "VI - VII - i - VI - VII - iv",
+          "description": "Chorus shifts to fuller strummed chord shapes with the vocal hook"
+        }
+      ],
+      "harmonicFunction": [
+        "C#m (i) - Tonic minor center with add9 creating an open, atmospheric quality",
+        "A (VI) - Major sixth degree providing warmth and lift in the minor key",
+        "B (VII) - Flattened seventh creating forward motion and rock character",
+        "F#m (iv) - Subdominant minor adding depth and melancholy to the progression"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Add9 Chord Arpeggios",
+      "description": "Andy Summers' signature technique of arpeggiated add9 chord voicings, using open strings and unusual fingerings to create a shimmering, ringing guitar texture unlike standard chord strumming",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C#m(add9): X-4-6-6-4-4 or with open strings X-4-6-1-0-0",
+          "A(add9): X-0-2-2-0-0 open voicing with natural add9",
+          "B(add9): X-2-4-4-2-0 with open high E as the add9",
+          "F#m(add9): 2-X-4-2-0-0 with open strings providing the add9 color",
+          "Each chord is arpeggiated, not strummed, for the characteristic sound",
+          "Open strings are left ringing to create sustain and harmonic richness"
+        ],
+        "sequence": [
+          "Form the add9 chord shape with the fretting hand",
+          "Pick individual strings in a consistent up-and-down pattern",
+          "Allow open strings to ring clearly into the next chord",
+          "Maintain strict rhythmic precision at the fast 150 BPM tempo"
+        ],
+        "tips": [
+          "The add9 voicings use open strings where possible for the ringing quality",
+          "Practice each chord shape individually before connecting them",
+          "Use a clean tone with chorus effect to approximate Summers' sound",
+          "Right hand pattern must stay absolutely consistent - use a metronome"
+        ],
+        "chords": [
+          "C#m(add9)",
+          "A(add9)",
+          "B(add9)",
+          "F#m(add9)"
+        ],
+        "progression": "C#m(add9) - A(add9) - B(add9) - F#m(add9)"
+      }
+    },
+    {
+      "name": "Precise Right-Hand Picking",
+      "description": "Fast, consistent alternate picking technique required to maintain the arpeggiated pattern at 150 BPM, demanding precise right-hand control and endurance",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The picking pattern uses strict alternate picking (down-up-down-up)",
+          "Each string is picked individually at sixteenth-note subdivisions",
+          "Right hand must remain relaxed to sustain the fast tempo for the full song",
+          "Consistent pick attack is essential for even volume across all strings"
+        ],
+        "sequence": [
+          "Begin with the pick on the lowest note of the chord",
+          "Alternate pick upward through the chord strings",
+          "Reverse direction at the top of the arpeggio",
+          "Maintain the continuous picking pattern through chord changes"
+        ],
+        "tips": [
+          "Use a thin to medium pick (0.60-0.80mm) for speed and flexibility",
+          "Keep the wrist loose and pivot from the wrist rather than the elbow",
+          "Practice at 100 BPM first and slowly increase speed",
+          "Take breaks if the right hand or forearm becomes tense"
+        ],
+        "chords": [
+          "C#m(add9)",
+          "A(add9)",
+          "B(add9)",
+          "F#m(add9)"
+        ],
+        "progression": "Continuous arpeggio pattern over the chord progression"
+      }
+    },
+    {
+      "name": "Chorus Chord Strumming",
+      "description": "Transition from the arpeggiated verse pattern to fuller strummed chords in the chorus, requiring a shift in right-hand technique and dynamic level",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chorus uses fuller chord voicings rather than the arpeggiated pattern",
+          "Dynamic shift from precise picking to energetic strumming",
+          "A, B, C#m, and F#m chords may use barre or open voicings",
+          "The shift provides welcome contrast after the constant arpeggio pattern"
+        ],
+        "sequence": [
+          "Transition from arpeggio picking to full chord strumming at the chorus entry",
+          "Use confident downstrokes on beat 1 of each chord change",
+          "Mix down and upstrokes for the energetic strumming pattern",
+          "Return to the arpeggio pattern when the verse returns"
+        ],
+        "tips": [
+          "Practice the transition from arpeggio to strum to make it seamless",
+          "Increase strumming dynamics noticeably for the chorus contrast",
+          "The chorus should feel like an energy release after the controlled verse",
+          "Use barre chord shapes for the chorus if open voicings feel too thin"
+        ],
+        "chords": [
+          "A",
+          "B",
+          "C#m",
+          "F#m"
+        ],
+        "progression": "A - B - C#m - A - B - F#m"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:25",
+      "technique": "Add9 Chord Arpeggios",
+      "key": "C# minor",
+      "description": "The arpeggiated add9 chord pattern that establishes the songthe iconic vocal hook jangly guitar tone",
+      "chords": [
+        "C#m(add9)",
+        "A(add9)",
+        "B(add9)",
+        "F#m(add9)"
+      ],
+      "progression": "C#m(add9) - A(add9) - B(add9) - F#m(add9)",
+      "notes": [
+        "Guitar enters alone with the arpeggiated pattern before bass and drums join",
+        "Clean tone with chorus effect for the characteristic shimmer",
+        "Each chord rings into the next for harmonic overlap",
+        "Sets the rhythmic foundation for the entire song"
+      ],
+      "alphaTab": "9.5 9.4 11.3 9.2 11.3 9.4 | 9.5 11.4 11.3 9.2 11.3 11.4 | 14.5 14.4 16.3 14.2 16.3 14.4 | 9.5 9.4 11.3 9.2 11.3 9.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:15",
+      "technique": "Add9 Chord Arpeggios",
+      "key": "C# minor",
+      "description": "Verse continues the arpeggiated pattern with full band accompaniment, Sting's vocal melody riding over the rhythmic guitar texture",
+      "chords": [
+        "C#m(add9)",
+        "A(add9)",
+        "B(add9)",
+        "F#m(add9)"
+      ],
+      "progression": "C#m(add9) - A(add9) - B(add9) - F#m(add9)",
+      "notes": [
+        "Same arpeggiated pattern continues under the vocals",
+        "Bass and drums create a driving rhythmic foundation underneath",
+        "Guitar must remain consistent and steady as the rhythmic anchor",
+        "Do not vary the arpeggio pattern - consistency is key"
+      ],
+      "alphaTab": "9.5 9.4 11.3 9.2 11.3 9.4 | 9.5 11.4 11.3 9.2 11.3 11.4 | 14.5 14.4 16.3 14.2 16.3 14.4 | 9.5 9.4 11.3 9.2 11.3 9.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:15-1:35",
+      "technique": "Add9 Chord Arpeggios",
+      "key": "C# minor",
+      "description": "Building section with altered chord progression creating harmonic tension leading into the chorus release",
+      "chords": [
+        "A(add9)",
+        "B(add9)",
+        "F#m(add9)"
+      ],
+      "progression": "A(add9) - B(add9) - F#m(add9) - F#m(add9)",
+      "notes": [
+        "Progression shifts to build anticipation for the chorus",
+        "Dynamics may increase slightly through the pre-chorus",
+        "Same arpeggiated technique maintains continuity",
+        "Vocal melody rises in pitch to build tension"
+      ],
+      "alphaTab": "9.5 9.4 11.3 9.2 11.3 9.4 | 9.5 11.4 11.3 9.2 11.3 11.4 | 14.5 14.4 16.3 14.2 16.3 14.4 | 9.5 9.4 11.3 9.2 11.3 9.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:35-2:10",
+      "technique": "Chorus Chord Strumming",
+      "key": "C# minor",
+      "description": "The dynamic release of the chorus with fuller strummed chords replacing the arpeggio pattern, supporting the signature vocal hook",
+      "chords": [
+        "A",
+        "B",
+        "C#m",
+        "F#m"
+      ],
+      "progression": "A - B - C#m - A - B - F#m",
+      "notes": [
+        "Full chord strumming replaces the arpeggiated pattern",
+        "Significant dynamic increase for the chorus impact",
+        "the signature hook is the song's most memorable moment",
+        "Return to arpeggio pattern when the verse returns"
+      ],
+      "alphaTab": "9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 | 9.6 11.5 11.4 10.3 9.2 9.1 | 14.6 16.5 16.4 15.3 14.2 14.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:40-4:50",
+      "technique": "Add9 Chord Arpeggios",
+      "key": "C# minor",
+      "description": "Extended outro with the arpeggiated pattern repeating as the vocal improvises over the progression, creating a hypnotic conclusion",
+      "chords": [
+        "C#m(add9)",
+        "A(add9)",
+        "B(add9)",
+        "F#m(add9)"
+      ],
+      "progression": "C#m(add9) - A(add9) - B(add9) - F#m(add9)",
+      "notes": [
+        "Returns to the arpeggiated pattern for an extended outro",
+        "Vocal improvisation and the iconic vocal hook repetitions over the pattern",
+        "Creates a hypnotic, cyclical feel as the song builds to conclusion",
+        "Fade-out ending with the arpeggio pattern still cycling"
+      ],
+      "alphaTab": "9.5 9.4 11.3 9.2 11.3 9.4 | 9.5 11.4 11.3 9.2 11.3 11.4 | 14.5 14.4 16.3 14.2 16.3 14.4 | 9.5 9.4 11.3 9.2 11.3 9.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Telecaster",
+      "alternatives": [
+        "Fender Stratocaster",
+        "Fender Jazzmaster",
+        "Squier Classic Vibe Telecaster"
+      ],
+      "pickup": "Single coils for bright, clear arpeggiated tone"
+    },
+    "amp": {
+      "recommended": "Roland JC-120 Jazz Chorus",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Roland JC-40",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "3/10",
+        "treble": "7/10",
+        "middle": "5/10",
+        "bass": "4/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "None for verses - clean tone is essential for the arpeggiated sections",
+      "reverb": "Short plate reverb for ambience without muddying the arpeggios",
+      "other": "Chorus effect (Boss CE-1 or similar) for the shimmering tone, flanger for select passages, compression for even note volume"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Message in a Bottle",
+      "steps": [
+        "Learn basic A minor, E minor, and D minor chord shapes",
+        "Practice simple arpeggiated picking across chord strings",
+        "Work on right-hand alternate picking at slow tempos",
+        "Develop finger independence for add9 chord shapes"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Mastering the Add9 Arpeggios",
+      "steps": [
+        "Learn all four add9 chord voicings with open strings",
+        "Practice the arpeggiated pattern at gradually increasing tempos",
+        "Work on smooth chord transitions while maintaining the arpeggio",
+        "Master the transition from arpeggiated verse to strummed chorus"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "advanced": {
+      "title": "Full Performance at Tempo",
+      "steps": [
+        "Play the complete song at full 150 BPM tempo",
+        "Develop right-hand endurance for the constant arpeggio pattern",
+        "Add chorus and flanger effects for authentic Summers tone",
+        "Perform the complete arrangement with dynamic verse-chorus contrast"
+      ],
+      "timeEstimate": "6-10 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Every Breath You Take",
+        "difficulty": "Intermediate",
+        "similarity": "Similar arpeggiated clean guitar approach with Andy Summers' signature tone"
+      },
+      {
+        "title": "Roxanne",
+        "difficulty": "Beginner",
+        "similarity": "More accessible Police song with similar chord voicing sensibility"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Where the Streets Have No Name",
+        "artist": "U2",
+        "technique": "Arpeggiated Delay-Driven Guitar",
+        "similarity": "Similar arpeggiated guitar approach creating a rhythmic, atmospheric texture"
+      },
+      {
+        "title": "How Soon Is Now?",
+        "artist": "The Smiths",
+        "technique": "Arpeggiated Clean Guitar",
+        "similarity": "Post-punk arpeggiated guitar with effects creating a distinctive texture"
+      },
+      {
+        "title": "Just Like Heaven",
+        "artist": "The Cure",
+        "technique": "Arpeggiated New Wave Guitar",
+        "similarity": "New wave era arpeggiated guitar patterns with chorus effect"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Roxanne",
+        "artist": "The Police",
+        "difficulty": "Beginner",
+        "similarity": "Simpler Police song to build familiarity with the band's guitar style"
+      },
+      {
+        "title": "Where the Streets Have No Name",
+        "artist": "U2",
+        "difficulty": "Advanced",
+        "similarity": "More complex arpeggiated guitar with delay effects"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Picking pattern becoming uneven at the fast 150 BPM tempo",
+      "Not allowing open strings to ring freely in the add9 voicings",
+      "Losing the arpeggio rhythm during chord transitions",
+      "Making the chorus too similar in dynamics to the verse - contrast is essential"
+    ],
+    "practiceRoutine": [
+      "Warm up with basic alternate picking exercises on single strings",
+      "Practice each add9 chord shape individually with the arpeggio pattern",
+      "Work on chord-to-chord transitions at 100 BPM before increasing speed",
+      "Practice the verse-to-chorus dynamic transition repeatedly",
+      "Play along with the original recording for tempo and feel reference"
+    ],
+    "focusAreas": [
+      "Right-hand alternate picking speed and consistency at 150 BPM",
+      "Clean add9 chord voicings with open strings ringing clearly",
+      "Chord transition smoothness while maintaining the arpeggio pattern",
+      "Dynamic contrast between arpeggiated verses and strummed choruses"
+    ],
+    "metronomeWork": [
+      "Start the arpeggio pattern at 100 BPM with sixteenth-note subdivisions",
+      "Increase by 5 BPM increments until reaching full tempo at 150 BPM",
+      "Practice chord changes with quarter-note clicks to lock in the groove",
+      "Work on endurance by playing the full arpeggio pattern for 4-5 minutes continuously"
+    ]
+  },
+  "metadata": {
+    "popularity": 85,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "new-wave",
+      "arpeggios",
+      "the-police",
+      "andy-summers",
+      "add9-chords"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

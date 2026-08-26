@@ -1,0 +1,227 @@
+{
+  "slug": "progressions",
+  "category": "chords",
+  "pageTitle": "Chord Progressions",
+  "subtitle": "Master the harmonic language of popular music through functional analysis",
+  "heroGradient": "from-purple-50 to-indigo-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "Understanding Chord Progressions",
+    "text": "Chord progressions are the backbone of all popular music. They create emotional journeys, establish keys, and provide the harmonic framework that melodies and rhythms build upon. Understanding how and why certain progressions work will unlock the language of harmony and help you recognize patterns across all genres.",
+    "columns": [
+      { "title": "Harmonic Foundation", "text": "Creates the emotional and tonal framework for songs" },
+      { "title": "Functional Movement", "text": "Each chord has a role in creating tension and release" },
+      { "title": "Emotional Impact", "text": "Different progressions evoke distinct emotional responses" }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Harmonic Functions",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Tonic (I)",
+          "description": "Provides harmonic stability and sense of resolution",
+          "badge": { "text": "Stable, comfortable, resolved", "color": "purple" },
+          "fields": [
+            { "label": "Role", "value": "Home, Stability, Rest" },
+            { "label": "Common Chords", "value": "I, vi, iii" },
+            { "label": "Typical Usage", "value": "Song beginnings, endings, points of rest" }
+          ]
+        },
+        {
+          "title": "Subdominant (IV)",
+          "description": "Moves away from tonic, provides gentle contrast",
+          "badge": { "text": "Warm, reflective, contemplative", "color": "purple" },
+          "fields": [
+            { "label": "Role", "value": "Departure, Contrast, Plagal" },
+            { "label": "Common Chords", "value": "IV, ii, vi" },
+            { "label": "Typical Usage", "value": "Bridge sections, pre-choruses, gentle motion" }
+          ]
+        },
+        {
+          "title": "Dominant (V)",
+          "description": "Creates tension that demands resolution to tonic",
+          "badge": { "text": "Tense, urgent, expectant", "color": "purple" },
+          "fields": [
+            { "label": "Role", "value": "Tension, Leading, Resolution" },
+            { "label": "Common Chords", "value": "V, vii\u00b0, V7" },
+            { "label": "Typical Usage", "value": "Ends of phrases, before choruses, climactic moments" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Chord Progressions",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I-V-vi-IV (Pop Progression)",
+          "description": "The most popular progression in modern music",
+          "fields": [
+            { "label": "Roman Numerals", "value": "I - V - vi - IV" },
+            { "label": "Example in C", "value": "C - G - Am - F" },
+            { "label": "Harmonic Function", "value": "Tonic \u2192 Dominant \u2192 Relative Minor \u2192 Subdominant" },
+            { "label": "Emotional Effect", "value": "Bright, optimistic, familiar" },
+            { "label": "Theory", "value": "Strong tonic establishment, dominant tension, deceptive resolution to vi, plagal motion back" }
+          ],
+          "items": ["Let It Be - Beatles", "Don't Stop Believin' - Journey", "With or Without You - U2"]
+        },
+        {
+          "title": "vi-IV-I-V (Emotional)",
+          "description": "Starts melancholy, builds to bright resolution",
+          "fields": [
+            { "label": "Roman Numerals", "value": "vi - IV - I - V" },
+            { "label": "Example in C", "value": "Am - F - C - G" },
+            { "label": "Harmonic Function", "value": "Relative Minor \u2192 Subdominant \u2192 Tonic \u2192 Dominant" },
+            { "label": "Emotional Effect", "value": "Melancholy to hopeful, emotional journey" },
+            { "label": "Theory", "value": "Minor beginning creates vulnerability, major progression builds hope and energy" }
+          ],
+          "items": ["Complicated - Avril Lavigne", "Grenade - Bruno Mars"]
+        },
+        {
+          "title": "I-vi-IV-V (50s Progression)",
+          "description": "Classic doo-wop and early rock progression",
+          "fields": [
+            { "label": "Roman Numerals", "value": "I - vi - IV - V" },
+            { "label": "Example in C", "value": "C - Am - F - G" },
+            { "label": "Harmonic Function", "value": "Tonic \u2192 Relative Minor \u2192 Subdominant \u2192 Dominant" },
+            { "label": "Emotional Effect", "value": "Nostalgic, classic, circular" },
+            { "label": "Theory", "value": "Smooth voice leading, natural harmonic rhythm, perfect for loops" }
+          ],
+          "items": ["Stand By Me - Ben E. King", "Blue Moon - Various"]
+        },
+        {
+          "title": "ii-V-I (Jazz Foundation)",
+          "description": "The cornerstone of jazz harmony",
+          "fields": [
+            { "label": "Roman Numerals", "value": "ii - V - I" },
+            { "label": "Example in C", "value": "Dm - G - C" },
+            { "label": "Harmonic Function", "value": "Subdominant \u2192 Dominant \u2192 Tonic" },
+            { "label": "Emotional Effect", "value": "Sophisticated, resolved, jazzy" },
+            { "label": "Theory", "value": "Strongest possible cadential motion, ii prepares V which resolves to I" }
+          ],
+          "items": ["All The Things You Are", "Autumn Leaves"]
+        },
+        {
+          "title": "I-IV-V-I (Classical Cadence)",
+          "description": "The foundation of Western harmony",
+          "fields": [
+            { "label": "Roman Numerals", "value": "I - IV - V - I" },
+            { "label": "Example in C", "value": "C - F - G - C" },
+            { "label": "Harmonic Function", "value": "Tonic \u2192 Subdominant \u2192 Dominant \u2192 Tonic" },
+            { "label": "Emotional Effect", "value": "Complete, satisfying, traditional" },
+            { "label": "Theory", "value": "Perfect cadential motion demonstrating all primary harmonic functions" }
+          ],
+          "items": ["Twist and Shout", "Wild Thing"]
+        },
+        {
+          "title": "vi-V-IV-V (Minor to Major)",
+          "description": "Creates dramatic tension before resolution",
+          "fields": [
+            { "label": "Roman Numerals", "value": "vi - V - IV - V" },
+            { "label": "Example in C", "value": "Am - G - F - G" },
+            { "label": "Harmonic Function", "value": "Relative Minor \u2192 Dominant \u2192 Subdominant \u2192 Dominant" },
+            { "label": "Emotional Effect", "value": "Dramatic, building, anticipatory" },
+            { "label": "Theory", "value": "Minor start creates darkness, repeated dominants build tension for eventual resolution" }
+          ],
+          "items": ["Every Rose Has Its Thorn", "More Than Words"]
+        }
+      ]
+    },
+    {
+      "title": "How to Analyze Progressions",
+      "layout": "numbered-steps",
+      "cards": [
+        {
+          "title": "1. Identify the Key",
+          "description": "Determine the tonal center of the song",
+          "fields": [
+            { "label": "Process", "value": "Listen for the chord that feels like \"home\" - usually the first or last chord" },
+            { "label": "Example", "value": "If the progression feels resolved on C major, the key is C major" }
+          ]
+        },
+        {
+          "title": "2. Number the Chords",
+          "description": "Assign Roman numerals based on scale degrees",
+          "fields": [
+            { "label": "Process", "value": "Count up from the tonic: I, ii, iii, IV, V, vi, vii\u00b0" },
+            { "label": "Example", "value": "In C major: C=I, Dm=ii, Em=iii, F=IV, G=V, Am=vi, B\u00b0=vii\u00b0" }
+          ]
+        },
+        {
+          "title": "3. Identify Functions",
+          "description": "Determine the harmonic role each chord plays",
+          "fields": [
+            { "label": "Process", "value": "Group chords by function: Tonic, Subdominant, Dominant" },
+            { "label": "Example", "value": "C-Am-F-G = I-vi-IV-V = Tonic-Tonic-Subdominant-Dominant" }
+          ]
+        },
+        {
+          "title": "4. Analyze Movement",
+          "description": "Study how chords progress and create momentum",
+          "fields": [
+            { "label": "Process", "value": "Look for patterns: circle of fifths, stepwise motion, functional progression" },
+            { "label": "Example", "value": "V-I creates strongest resolution, IV-I creates plagal cadence" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Circle of Fifths in Progressions",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Descending Fifths",
+          "description": "Creates strong forward momentum. Very common in jazz and sophisticated pop music. Each chord naturally leads to the next.",
+          "fields": [
+            { "label": "Pattern", "value": "C \u2192 F \u2192 Bb \u2192 Eb \u2192 Ab" },
+            { "label": "Motion", "value": "Each chord a fifth lower" }
+          ]
+        },
+        {
+          "title": "Ascending Fifths",
+          "description": "Creates building energy and brightness. Common in rock and pop for building excitement toward choruses or climaxes.",
+          "fields": [
+            { "label": "Pattern", "value": "C \u2192 G \u2192 D \u2192 A \u2192 E" },
+            { "label": "Motion", "value": "Each chord a fifth higher" }
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Listening Practice",
+        "items": [
+          "Listen to popular songs and identify the chord progressions",
+          "Notice how different progressions create different emotions",
+          "Practice hearing the difference between major and minor chords",
+          "Identify when songs use the same progression in different keys",
+          "Listen for functional movement: tonic \u2192 dominant \u2192 tonic"
+        ]
+      },
+      {
+        "title": "Playing Practice",
+        "items": [
+          "Learn each progression in multiple keys",
+          "Practice smooth transitions between chords",
+          "Experiment with different strumming patterns",
+          "Try playing progressions with different chord voicings",
+          "Write original melodies over familiar progressions"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/roman-numerals", "label": "Roman Numeral Analysis" },
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading Principles" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

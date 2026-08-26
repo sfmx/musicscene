@@ -1,0 +1,221 @@
+{
+  "slug": "reverb",
+  "category": "effects",
+  "pageTitle": "Reverb & Ambience",
+  "subtitle": "Master reverb effects to create depth, space, and atmosphere in your guitar sounds",
+  "heroGradient": "from-blue-50 to-indigo-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Understanding Reverb",
+    "text": "Reverb is one of the most fundamental effects in music production, simulating the natural acoustic reflections that occur in physical spaces. It adds depth, dimension, and atmosphere to your guitar sound, transforming a dry signal into something that feels alive and situated in a real or imagined space.",
+    "quote": "Reverb doesn't just add space\u2014it creates the emotional context for your music, whether that's the intimate closeness of a small room or the grandeur of a cathedral."
+  },
+  "sections": [
+    {
+      "title": "Types of Reverb",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Room Reverb",
+          "description": "Short decay time (0.3-1.2 seconds), clear defined reflections, natural intimate sound, preserves note definition",
+          "fields": [
+            { "label": "Characteristics", "value": "Short decay time (0.3-1.2 seconds), clear defined reflections, natural intimate sound, preserves note definition" },
+            { "label": "Musical Applications", "value": "Country and folk guitar, jazz comping, blues rhythm parts, acoustic guitar simulation" }
+          ]
+        },
+        {
+          "title": "Hall Reverb",
+          "description": "Long decay time (2-8 seconds), smooth diffuse reflections, grand spacious sound, rich harmonic content",
+          "fields": [
+            { "label": "Characteristics", "value": "Long decay time (2-8 seconds), smooth diffuse reflections, grand spacious sound, rich harmonic content" },
+            { "label": "Musical Applications", "value": "Ambient and post-rock, ballad solos, classical crossover, cinematic soundscapes" }
+          ]
+        },
+        {
+          "title": "Spring Reverb",
+          "description": "Distinctive \"boing\" character, medium decay with metallic overtones, vintage analog warmth",
+          "fields": [
+            { "label": "Characteristics", "value": "Distinctive \"boing\" character, medium decay with metallic overtones, vintage analog warmth, crash sensitivity (dramatic effect when hit)" },
+            { "label": "Musical Applications", "value": "Surf rock, vintage country, rockabilly, classic rock rhythm" }
+          ]
+        },
+        {
+          "title": "Plate Reverb",
+          "description": "Bright shimmering quality, fast initial buildup, dense metallic character, classic studio sound",
+          "fields": [
+            { "label": "Characteristics", "value": "Bright shimmering quality, fast initial buildup, dense metallic character, classic studio sound" },
+            { "label": "Musical Applications", "value": "Classic rock leads, vocal-style guitar lines, 60s and 70s recordings, studio productions" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Understanding Reverb Parameters",
+      "bgColor": "gray-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Decay Time",
+          "description": "How long the reverb takes to fade away",
+          "items": [
+            "Short (0.3-1s): Intimate, controlled",
+            "Medium (1-3s): Natural, musical",
+            "Long (3-8s): Dramatic, atmospheric"
+          ]
+        },
+        {
+          "title": "Room Size",
+          "description": "The perceived size of the simulated space",
+          "items": [
+            "Small: Tight, present sound",
+            "Medium: Balanced, natural",
+            "Large: Spacious, enveloping"
+          ]
+        },
+        {
+          "title": "Pre-delay",
+          "description": "Time between dry signal and reverb onset",
+          "items": [
+            "0-10ms: Immediate, ambient",
+            "10-30ms: Natural separation",
+            "30ms+: Distinct echo effect"
+          ]
+        },
+        {
+          "title": "Mix/Wet Level",
+          "description": "Balance between dry and reverb signal",
+          "items": [
+            "10-20%: Subtle enhancement",
+            "20-40%: Noticeable ambience",
+            "40%+: Atmospheric, dreamy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reverb in Famous Songs",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"In the Air Tonight\" - Phil Collins",
+          "description": "Gated reverb on drums, but the guitar uses subtle hall reverb",
+          "badge": { "text": "Hall Reverb", "color": "blue" },
+          "fields": [
+            { "label": "Settings", "value": "Hall reverb, medium size, 2-3 second decay, 25% mix level, high-frequency damping" },
+            { "label": "Musical Effect", "value": "Creates atmospheric tension, supports the song's drama, complements the iconic drum sound, maintains clarity in the mix" }
+          ]
+        },
+        {
+          "title": "\"Wipeout\" - The Surfaris",
+          "description": "Classic spring reverb tank sound",
+          "badge": { "text": "Spring Reverb", "color": "green" },
+          "fields": [
+            { "label": "Settings", "value": "Fender-style spring reverb, high reverb level (6-8), fast attack medium decay, bright splashy character" },
+            { "label": "Musical Effect", "value": "Defines the surf rock genre, creates oceanic imagery, adds excitement and energy, vintage amp authenticity" }
+          ]
+        },
+        {
+          "title": "\"Shine On You Crazy Diamond\" - Pink Floyd",
+          "description": "Long, lush hall reverb on lead guitar",
+          "badge": { "text": "Hall Reverb", "color": "purple" },
+          "fields": [
+            { "label": "Settings", "value": "Large hall reverb, 4-6 second decay, 40-50% mix level, smooth diffuse character" },
+            { "label": "Musical Effect", "value": "Creates vast cosmic atmosphere, supports emotional expression, blends notes into sustained textures, enhances the song's epic scope" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reverb Techniques & Applications",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Playing Techniques",
+          "fields": [
+            { "label": "Chord Voicings", "value": "Open voicings work better with reverb than dense, closed chords. The space allows reverb to enhance rather than muddy the sound." },
+            { "label": "Note Sustain", "value": "Let notes ring and overlap slightly with reverb. This creates beautiful harmonic interactions and natural flow." },
+            { "label": "Dynamic Control", "value": "Use your picking dynamics to control reverb perception. Softer playing makes reverb more prominent in the mix." }
+          ]
+        },
+        {
+          "title": "Mix Considerations",
+          "fields": [
+            { "label": "Frequency Balance", "value": "Use high-cut filters on reverb returns to prevent harsh reflections. Low-cut prevents muddy buildup." },
+            { "label": "Stereo Imaging", "value": "Wide stereo reverbs create space, while mono reverbs add depth without width. Match to your song's needs." },
+            { "label": "Send vs. Insert", "value": "Use reverb as a send effect when possible to maintain mix clarity and create cohesive spatial imaging." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Reverb Mistakes",
+      "bgColor": "red-50",
+      "borderColor": "red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "items": [
+            "Too much reverb overwhelming the dry signal",
+            "Using long reverbs on fast, intricate passages",
+            "Ignoring the song's tempo and mood",
+            "Same reverb setting for all guitar parts",
+            "Not considering other instruments in the mix"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Start with subtle settings and build up",
+            "Match reverb to the song's emotional content",
+            "Use pre-delay to maintain note definition",
+            "EQ your reverb to fit the mix",
+            "Consider the vocalist's reverb for cohesion"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Reverb Practice Exercises",
+    "exercises": [
+      {
+        "title": "Exercise 1: Room Size Comparison",
+        "items": [
+          "Play the same chord progression (try Em - C - G - D) with three different reverb settings",
+          "Small room, short decay (intimate coffee shop)",
+          "Medium hall, moderate decay (concert hall)",
+          "Large hall, long decay (cathedral)",
+          "Notice how each setting changes the emotional impact and suggests different musical contexts"
+        ]
+      },
+      {
+        "title": "Exercise 2: Genre Matching",
+        "items": [
+          "Country: Short room reverb, bright character",
+          "Surf rock: Spring reverb, high mix level",
+          "Ambient: Long hall reverb, atmospheric",
+          "Blues: Subtle room reverb, natural feel"
+        ]
+      },
+      {
+        "title": "Exercise 3: Dynamic Reverb",
+        "items": [
+          "Set a moderate reverb level",
+          "Play at full volume, then roll back to create swells",
+          "Notice how reverb becomes more prominent at lower volumes",
+          "Practice creating ambient textures between chord changes"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/delay", "label": "Delay & Echo Effects" },
+    { "href": "/lessons/songs/effects/modulation", "label": "Modulation Effects" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain & Multi-Effects" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects & Tone Overview" }
+  ]
+}

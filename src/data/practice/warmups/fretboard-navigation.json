@@ -1,0 +1,287 @@
+{
+  "slug": "fretboard-navigation",
+  "category": "warmups",
+  "pageInfo": {
+    "pageTitle": "Fretboard Navigation",
+    "subtitle": "Master position shifting and fretboard mapping exercises to navigate the entire guitar neck with confidence.",
+    "heroGradient": "bg-gradient-to-br from-sky-50 to-blue-100",
+    "heroTitle": "Position Shifting & Fretboard Navigation",
+    "heroDescription": "One of the biggest barriers for intermediate guitarists is being stuck in one position. These exercises systematically develop your ability to navigate the entire fretboard, shift positions smoothly, and mentally map notes across all strings and frets."
+  },
+  "guidelines": {
+    "title": "Fretboard Navigation Guidelines",
+    "columns": [
+      {
+        "title": "Position Shifting Basics",
+        "items": [
+          { "bulletColor": "text-sky-500", "text": "Maintain thumb behind the neck as your anchor point" },
+          { "bulletColor": "text-sky-500", "text": "Use guide fingers to slide smoothly between positions" },
+          { "bulletColor": "text-sky-500", "text": "Keep eyes on the fretboard initially, then practice without looking" },
+          { "bulletColor": "text-sky-500", "text": "Start slowly - accuracy before speed" }
+        ]
+      },
+      {
+        "title": "Mental Mapping Tips",
+        "items": [
+          { "bulletColor": "text-blue-500", "text": "Learn note names on strings 6 and 5 first (root notes)" },
+          { "bulletColor": "text-blue-500", "text": "Use octave patterns to find notes on other strings" },
+          { "bulletColor": "text-blue-500", "text": "Practice naming notes while playing scales" },
+          { "bulletColor": "text-blue-500", "text": "Visualize scale shapes connecting across positions" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Position Shifting Exercises",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Chromatic Position Shift",
+          "difficulty": "Beginner",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Play a chromatic pattern (1-2-3-4) starting at fret 1, then shift up one fret and repeat. Continue shifting up to fret 9 and back down. Focus on smooth transitions between positions with minimal pause.",
+          "notation": {
+            "title": "Chromatic Position Shift on String 1",
+            "alphaTex": "\\ts 4 4\n1.1.8 2.1.8 3.1.8 4.1.8 | 2.1.8 3.1.8 4.1.8 5.1.8 | 3.1.8 4.1.8 5.1.8 6.1.8 | 4.1.8 5.1.8 6.1.8 7.1.8 | 5.1.8 6.1.8 7.1.8 8.1.8 | 6.1.8 7.1.8 8.1.8 9.1.8",
+            "staveTitle": "Chromatic Shift - String 1 (Ascending)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Use one-finger-per-fret technique. When shifting, let your hand glide as a unit. The shift should be quick and decisive, not gradual.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Octave Jumping Exercise",
+          "difficulty": "Intermediate",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Play a note on the low E string, then immediately find the same note one octave higher using the octave shape (2 strings up, 2 frets forward). This builds your octave pattern awareness across the entire fretboard.",
+          "notation": {
+            "title": "Octave Jumps on Strings 6 and 4",
+            "alphaTex": "\\ts 4 4\n3.6.4 5.4.4 | 5.6.4 7.4.4 | 7.6.4 9.4.4 | 9.6.4 11.4.4 | 7.6.4 9.4.4 | 5.6.4 7.4.4 | 3.6.4 5.4.4",
+            "staveTitle": "Octave Shapes - Strings 6 & 4"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Name each note as you play it. This octave pattern (2 strings up, 2 frets forward) works for strings 6-4 and 5-3. For strings 4-2 and 3-1, the upper note is 3 frets forward.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Three-Position Scale Run",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Play the A minor pentatonic scale through three positions: Position 1 (frets 5-8), Position 2 (frets 7-10), Position 3 (frets 10-12). Connect them smoothly with guide finger slides.",
+          "notation": {
+            "title": "A Minor Pentatonic - Three Positions",
+            "alphaTex": "\\ts 4 4\n5.6.8 8.6.8 5.5.8 7.5.8 5.4.8 7.4.8 | 5.3.8 7.3.8 5.2.8 8.2.8 5.1.8 8.1.8 | 8.1.8 10.1.8 7.2.8 10.2.8 7.3.8 9.3.8 | 7.4.8 10.4.8 7.5.8 10.5.8 8.6.8 10.6.8",
+            "staveTitle": "A Minor Pentatonic - Connected Positions"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "The key to connecting positions is finding shared notes between shapes. Use your index or pinky as guide fingers to slide into new positions.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Fretboard Mapping Exercises",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Note Name Drill - Low Strings",
+          "difficulty": "Beginner",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Play every natural note on strings 6 and 5, naming each note aloud as you play. Start at the open string and work up to the 12th fret. This builds the foundation for finding chord roots and scale positions anywhere on the neck.",
+          "notation": {
+            "title": "Natural Notes - String 6 (E)",
+            "alphaTex": "\\ts 4 4\n0.6.4 1.6.4 3.6.4 5.6.4 | 7.6.4 8.6.4 10.6.4 12.6.4",
+            "staveTitle": "E F G A B C D E - String 6"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Say each note name out loud: E(0) F(1) G(3) A(5) B(7) C(8) D(10) E(12). Once comfortable, try random frets and name the notes.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "One-String Scale",
+          "difficulty": "Intermediate",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Play the C major scale entirely on string 6 from open position to the 12th fret. This forces you to visualize scale intervals linearly rather than relying on box patterns. Repeat on each string.",
+          "notation": {
+            "title": "C Major Scale on String 6",
+            "alphaTex": "\\ts 4 4\n8.6.4 10.6.4 12.6.4 13.6.4 | 15.6.4 17.6.4 19.6.4 20.6.4 | 20.6.4 19.6.4 17.6.4 15.6.4 | 13.6.4 12.6.4 10.6.4 8.6.4",
+            "staveTitle": "C Major Scale - One String (6th)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
+            "title": "Practice Notes",
+            "text": "Notice the pattern of whole and half steps on a single string: W-W-H-W-W-W-H. This approach reveals the scale structure clearly.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Diagonal Scale Pattern",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Play the G major scale diagonally across the fretboard, using 3 notes per string. This creates a smooth ascending path from the low E string at fret 3 to the high E string at fret 15, training fluid position shifts.",
+          "notation": {
+            "title": "G Major - 3 Notes Per String Diagonal",
+            "alphaTex": "\\ts 4 4\n3.6.8 5.6.8 7.6.8 2.5.8 3.5.8 5.5.8 | 2.4.8 4.4.8 5.4.8 2.3.8 4.3.8 5.3.8 | 3.2.8 5.2.8 7.2.8 3.1.8 5.1.8 7.1.8",
+            "staveTitle": "G Major Diagonal - 3 Notes Per String"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "Three-notes-per-string patterns are excellent for building speed and position shifting simultaneously. Keep your hand relaxed during shifts.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Fretboard Navigation Tips",
+    "items": [
+      {
+        "title": "Building a Mental Map",
+        "colorBg": "bg-gradient-to-br from-sky-50 to-blue-50",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-900",
+        "colorText": "text-sky-800",
+        "bulletColor": "text-sky-500",
+        "items": [
+          "Learn the notes on strings 6 and 5 first - these are your root note references",
+          "Use landmark frets (3, 5, 7, 9, 12) as visual guides",
+          "Practice finding the same note in multiple octaves across the fretboard",
+          "Visualize connecting shapes rather than isolated box patterns"
+        ]
+      },
+      {
+        "title": "Smooth Position Shifts",
+        "colorBg": "bg-gradient-to-br from-blue-50 to-indigo-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "bulletColor": "text-blue-500",
+        "items": [
+          "Use guide fingers that slide along the string into the new position",
+          "Shift during sustained notes so the transition is hidden",
+          "Practice shifts with a metronome to keep timing consistent",
+          "Look ahead to your target position before you shift"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Fretboard Journey",
+    "description": "Build on your fretboard navigation skills with these complementary exercises.",
+    "gradientFrom": "from-sky-50",
+    "gradientTo": "to-blue-50",
+    "borderColor": "border-sky-200",
+    "links": [
+      {
+        "href": "/lessons/practice/warmups/scales-modes",
+        "title": "Scales & Modes",
+        "description": "Apply your navigation skills to scale patterns across multiple positions.",
+        "linkText": "Practice scales",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "href": "/lessons/practice/warmups/finger-exercises",
+        "title": "Finger Exercises",
+        "description": "Build the finger strength and independence needed for position shifts.",
+        "linkText": "Build strength",
+        "icon": "💪",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "href": "/lessons/theory/scales/major",
+        "title": "Major Scale Theory",
+        "description": "Understand the theory behind the patterns you're navigating.",
+        "linkText": "Learn theory",
+        "icon": "📖",
+        "hoverBorder": "hover:border-yellow-300",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Fretboard Practice",
+    "items": [
+      { "category": "Metronome", "product": "Korg TM-60 Tuner Metronome", "reason": "Combined tuner and metronome keeps you in tune and in time during position shifting exercises" },
+      { "category": "Picks", "product": "Dunlop Nylon Standard Picks", "reason": "Consistent feel and flexibility help maintain clean picking across all fretboard positions" }
+    ]
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "songInfo": {
+    "title": "Don't Stop Believin'",
+    "artist": "Journey",
+    "album": "Escape",
+    "released": "1981",
+    "genre": "Arena Rock / Classic Rock",
+    "tempo": "119 BPM",
+    "duration": "4:11",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Advanced",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major throughout, with no modulation",
+      "scalesUsed": [
+        {
+          "scale": "E major (Ionian)",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary scale for the entire song; the bright major tonality creates the uplifting, optimistic character that defines the anthem"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Guitar solo and melodic fills; Neal Schon's lead work draws heavily from the major pentatonic for its warm, positive sound"
+        },
+        {
+          "scale": "E Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D - E",
+          "application": "Occasional passing tones in the solo where the natural 7th (D) creates bluesy tension against the major key"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with a consistently uplifting, anthemic quality throughout",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "B",
+          "C#m",
+          "A"
+        ],
+        "progression": "I - V - vi - IV",
+        "description": "The iconic four-chord progression that cycles throughout the entire song, creating the endlessly optimistic and forward-moving feel. This is one of the most used progressions in pop and rock music."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (Piano/Bass)",
+          "progression": "E - B - C#m - A",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "The famous piano intro with the walking bass line establishes the progression. Guitar enters with arpeggiated chords doubling the piano pattern."
+        },
+        {
+          "section": "Verse",
+          "progression": "E - B - C#m - A",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "The same four-chord cycle continues under the verse vocals, with guitar playing arpeggiated patterns or light strumming to stay behind the piano and vocals"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E - B - C#m - A",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "The progression remains the same but the dynamics explode with full power chords and aggressive strumming for the anthemic 'Don't stop believin'' vocal hook"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "E - B - C#m - A",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "Neal Schon solos over the same progression with E major pentatonic phrases, bends, and melodic lines that complement the vocal melody"
+        },
+        {
+          "section": "Final Chorus",
+          "progression": "E - B - C#m - A",
+          "romanNumerals": "I - V - vi - IV",
+          "description": "Maximum intensity repetition of the chorus with stacked vocals, full guitar power chords, and the crowd singalong climax"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Tonic major chord, the bright home base that anchors the optimistic feel",
+        "B (V) - Dominant chord, creating forward motion and tension that wants to resolve",
+        "C#m (vi) - Relative minor, adding a touch of emotional depth without darkening the mood",
+        "A (IV) - Subdominant chord, the warm, hopeful resolution that sets up the return to the tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Arpeggiated Chord Picking",
+      "description": "The signature guitar technique throughout the verses, picking individual notes of each chord in a flowing pattern that mirrors the piano part and creates the song's hypnotic rhythmic drive",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E: Pick through 0-2-1-0 (strings 6-5-4-3) in a flowing eighth-note pattern",
+          "B: Use B/F# voicing 2-2-4-4-4-2 for smooth transition from E",
+          "C#m: 4-4-6-6-5-4 barre shape, arpeggiate from low to high strings",
+          "A: 0-0-2-2-2-0 open chord or 5-7-7-6-5-5 barre shape",
+          "The arpeggio pattern should mimic the piano's eighth-note rhythm"
+        ],
+        "sequence": [
+          "Start with the E chord arpeggio picking pattern on strings 6-5-4-3",
+          "Transition to B by shifting to the 2nd fret barre position",
+          "Move to C#m at the 4th fret, maintaining the same picking pattern",
+          "Resolve to A with either the open shape or 5th fret barre",
+          "Keep the eighth-note picking rhythm consistent across all chord changes"
+        ],
+        "tips": [
+          "Use a clean or lightly overdriven tone for the arpeggiated sections to keep clarity",
+          "Let notes ring into each other for a flowing, connected sound",
+          "Practice the picking pattern on each chord individually before connecting them",
+          "The right hand picking pattern is more important than speed - focus on consistency"
+        ],
+        "chords": [
+          "E",
+          "B",
+          "C#m",
+          "A"
+        ],
+        "progression": "E - B - C#m - A (I - V - vi - IV)"
+      }
+    },
+    {
+      "name": "Power Chord Rhythm (Chorus)",
+      "description": "The explosive shift from arpeggiated picking to aggressive power chord strumming that transforms the song's energy during the chorus and later sections",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (open) or 7-9-9-X-X-X (barre)",
+          "B5: 7-9-9-X-X-X or 2-2-4-X-X-X",
+          "C#5: 9-11-11-X-X-X (barre power chord)",
+          "A5: 5-7-7-X-X-X (barre) or 0-0-2-2-X-X",
+          "Strum aggressively with a crunchy overdriven tone for maximum impact"
+        ],
+        "sequence": [
+          "Transition from the arpeggiated verse pattern to full power chord hits",
+          "Strike E5 with a hard downstroke to mark the dynamic shift",
+          "Move through B5, C#5, and A5 with driving eighth-note strumming",
+          "Accent the downbeats of each new chord for rhythmic punch",
+          "Maintain maximum intensity through the chorus repetitions"
+        ],
+        "tips": [
+          "The contrast between the quiet arpeggiated verse and loud power chord chorus is the key to this song",
+          "Increase your overdrive or gain when transitioning to the chorus",
+          "Use all downstrokes for a heavier, more aggressive feel",
+          "The power chord section should feel like an explosion of energy after the restrained verse"
+        ],
+        "chords": [
+          "E5",
+          "B5",
+          "C#5",
+          "A5"
+        ],
+        "progression": "E5 - B5 - C#5 - A5 (I - V - vi - IV)"
+      }
+    },
+    {
+      "name": "Building Dynamics",
+      "description": "The masterful use of dynamic contrast that defines Don't Stop Believin' - the song gradually builds from a quiet piano intro to a full-volume arena rock climax without ever releasing the tension",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The song is unique: it builds continuously without a traditional chorus appearing until the final minute",
+          "Verse 1 uses gentle arpeggiated picking with clean tone",
+          "Verse 2 adds slightly more intensity and volume to the picking",
+          "The instrumental break introduces power chords and overdriven tone",
+          "The final chorus at 3:20 unleashes full power chords and maximum volume"
+        ],
+        "sequence": [
+          "Begin with clean tone arpeggiated chords at low volume",
+          "Gradually increase picking intensity through each verse repetition",
+          "Add light overdrive and fuller chord strumming for the bridge section",
+          "Kick in the distortion and power chords for the guitar solo",
+          "Reach maximum volume and intensity for the final chorus vocal section"
+        ],
+        "tips": [
+          "Do not play the chorus at full volume right away - the delayed gratification is what makes this song work",
+          "Use your guitar volume knob to control dynamics rather than changing your picking intensity alone",
+          "Think of the song as four dynamic levels: whisper, talk, shout, scream",
+          "The final chorus is the payoff - everything before it should feel like it is building toward that moment"
+        ],
+        "chords": [
+          "E",
+          "B",
+          "C#m",
+          "A"
+        ],
+        "progression": "E - B - C#m - A with increasing dynamic intensity"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:17",
+      "technique": "Arpeggiated Chord Picking",
+      "key": "E Major",
+      "description": "The iconic piano and bass intro that opens one of rock's most recognizable songs. Guitar either rests or doubles the piano arpeggio pattern with clean tone.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A",
+      "notes": [
+        "The bass line is the most famous element of this intro - guitar should stay subtle",
+        "If playing guitar in the intro, use clean tone arpeggios mirroring the piano",
+        "Keep the volume low to allow the dynamic build throughout the song",
+        "The bass walks through E-F#-G#-A creating one of rock's most iconic bass lines"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "0:17-0:55",
+      "technique": "Arpeggiated Chord Picking",
+      "key": "E Major",
+      "description": "The first verse introduces the story of the small-town girl and city boy over the hypnotic I-V-vi-IV arpeggio pattern with clean guitar tone.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A",
+      "notes": [
+        "Play arpeggiated eighth notes matching the piano rhythm",
+        "Keep the tone clean with minimal overdrive",
+        "Let the notes ring into each other for a smooth, connected feel",
+        "Stay dynamically restrained - this is the quiet foundation for the build"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "0:55-1:33",
+      "technique": "Arpeggiated Chord Picking",
+      "key": "E Major",
+      "description": "The second verse continues the story with the same progression but subtly increased intensity in the guitar part, adding slightly more attack to the arpeggios.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A",
+      "notes": [
+        "Slightly increase the picking intensity compared to Verse 1",
+        "The added intensity should be subtle - do not jump to power chords yet",
+        "Consider adding a touch of overdrive here for gradual tonal build",
+        "The backing vocals enter which signals the energy should begin rising"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "3:20-3:50",
+      "technique": "Power Chord Rhythm (Chorus)",
+      "key": "E Major",
+      "description": "The legendary delayed chorus finally arrives. Steve Perry sings 'Don't stop believin', hold on to that feelin'' as the full band reaches maximum intensity with power chords.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A",
+      "notes": [
+        "This is the moment the entire song has been building toward",
+        "Switch to full power chords with maximum overdrive and volume",
+        "The strumming should be aggressive with hard downstrokes",
+        "The vocal melody carries the hook - play with conviction to support it"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:10-2:50",
+      "technique": "Building Dynamics",
+      "key": "E Major",
+      "description": "Neal Schon's melodic guitar solo over the I-V-vi-IV progression, using E major pentatonic with expressive bends and fluid legato runs.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A (solo over verse changes)",
+      "notes": [
+        "Solo uses E major pentatonic primarily at the 9th and 12th positions",
+        "Expressive whole-step and half-step bends are central to the phrasing",
+        "The solo mirrors the optimistic vocal melody with uplifting phrases",
+        "Use moderate overdrive with a touch of delay for the singing lead tone"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:50-4:11",
+      "technique": "Power Chord Rhythm (Chorus)",
+      "key": "E Major",
+      "description": "The final chorus repetition at maximum intensity, with the crowd singalong vocal and full band playing at peak energy until the abrupt ending.",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - A",
+      "notes": [
+        "Maintain maximum volume and intensity through the final repetitions",
+        "The song ends abruptly without a fade - be ready for the cold ending",
+        "The power chords should be as full and resonant as possible",
+        "This is the ultimate arena rock singalong moment - play with everything you have"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul or similar dual-humbucker guitar",
+      "alternatives": [
+        "Gibson SG",
+        "PRS Custom 24",
+        "Epiphone Les Paul Standard",
+        "Any dual-humbucker solid body guitar"
+      ],
+      "pickup": "Bridge humbucker for power chord sections; neck humbucker for clean arpeggios and warm lead tone"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 or similar British tube amp",
+      "alternatives": [
+        "Marshall Plexi",
+        "Mesa/Boogie Mark series",
+        "Fender Twin Reverb (for clean sections)",
+        "Friedman BE-100"
+      ],
+      "settings": {
+        "gain": "4-5 (clean to moderate crunch, increasing through the song)",
+        "treble": "6 (bright and clear for arpeggios)",
+        "middle": "7 (strong mids for Neal Schon's signature tone)",
+        "bass": "5 (solid but not boomy to keep arpeggios defined)",
+        "presence": "6 (high for cutting through the mix)"
+      }
+    },
+    "effects": {
+      "distortion": "Light to moderate overdrive that builds through the song. Start clean and gradually increase gain for the dynamic build.",
+      "delay": "Short analog-style delay (250-350ms) with moderate repeats for lead tone thickness",
+      "reverb": "Medium hall reverb for the arena rock ambiance, slightly more on clean sections",
+      "other": "Chorus effect optional for the clean arpeggiated sections to add shimmer. Volume pedal useful for controlling the dynamic build."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the four basic chord shapes and the arpeggiated picking pattern",
+      "steps": [
+        "Master open E, A, and B chord shapes along with C#m barre chord",
+        "Practice the I-V-vi-IV progression with simple downstroke strumming",
+        "Learn the basic arpeggiated picking pattern on each chord individually",
+        "Play along with the verse sections at slow tempo focusing on chord changes"
+      ],
+      "timeEstimate": "2-3 weeks for basic verse pattern"
+    },
+    "intermediate": {
+      "focus": "Add the dynamic build, power chord chorus, and complete song structure",
+      "steps": [
+        "Learn power chord voicings for E5, B5, C#5, and A5",
+        "Practice the transition from arpeggiated picking to power chord strumming",
+        "Work on the gradual dynamic build from intro through final chorus",
+        "Play through the complete song structure with correct dynamics and tonal changes"
+      ],
+      "timeEstimate": "3-4 weeks for full dynamic performance"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo, bass line intro, and nuanced dynamic control",
+      "steps": [
+        "Learn Neal Schon's guitar solo using E major pentatonic with bends and vibrato",
+        "Practice the iconic bass line intro on guitar for solo acoustic performances",
+        "Refine the four-level dynamic build: clean whisper to overdriven scream",
+        "Perform the complete song with seamless transitions and expressive solo"
+      ],
+      "timeEstimate": "4-6 weeks for complete performance-ready rendition"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the chorus too early or too loud in the verses - the delayed chorus is the song's defining structural feature",
+      "Sloppy arpeggiated picking with muted or buzzing strings during the verse pattern",
+      "Not enough dynamic contrast between the quiet verses and the explosive chorus",
+      "Rushing the tempo during the dynamic build - the 119 BPM tempo stays consistent throughout"
+    ],
+    "practiceRoutine": [
+      "Warm up with E-B-C#m-A chord transitions in both open and barre voicings (5 minutes)",
+      "Practice the arpeggiated picking pattern at 80 BPM, gradually increasing to 119 BPM (5 minutes)",
+      "Work on the dynamic build: play four cycles at each dynamic level - clean, light crunch, overdrive, full power (5 minutes)",
+      "Practice the transition from arpeggiated verse to power chord chorus (5 minutes)",
+      "Play through the complete song structure with a backing track (5 minutes)"
+    ],
+    "focusAreas": [
+      "Clean arpeggiated picking with all notes ringing clearly",
+      "Smooth transitions between arpeggio patterns and power chord strumming",
+      "Gradual dynamic build that spans the entire song duration",
+      "Precise timing on the I-V-vi-IV progression at 119 BPM"
+    ],
+    "metronomeWork": [
+      "Start arpeggiated patterns at 80 BPM, building to 119 BPM in 10 BPM increments",
+      "Practice power chord rhythm at 119 BPM with emphasis on downbeat accents",
+      "Work on the dynamic build over 16-bar phrases at full tempo",
+      "Full song run-through at 119 BPM once comfortable with all sections and dynamics"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Separate Ways (Worlds Apart)",
+        "difficulty": "Intermediate",
+        "similarity": "Same era Journey with driving synth and guitar arrangement, more aggressive tone"
+      },
+      {
+        "title": "Any Way You Want It",
+        "difficulty": "Intermediate",
+        "similarity": "Uptempo Journey classic with similar major key optimism and Neal Schon guitar work"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "difficulty": "Intermediate",
+        "similarity": "Fellow 80s arena rock anthem with similar dynamic build and power chord chorus"
+      },
+      {
+        "title": "Summer of '69",
+        "artist": "Bryan Adams",
+        "difficulty": "Beginner",
+        "similarity": "Major key arena rock with arpeggiated patterns building to power chord chorus"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Beginner",
+        "similarity": "Master the basic major key chord progression before the arpeggiated picking demands of Journey"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to a more complex arpeggiated intro pattern with similar dynamic build"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-03-05",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "arena-rock",
+      "intermediate",
+      "arpeggios",
+      "anthem",
+      "80s-rock",
+      "classic-rock",
+      "power-chords",
+      "dynamic-build"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

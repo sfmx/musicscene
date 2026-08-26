@@ -1,0 +1,482 @@
+{
+  "songInfo": {
+    "title": "Livin' on a Prayer",
+    "artist": "Bon Jovi",
+    "album": "Slippery When Wet",
+    "released": "1986",
+    "genre": "Arena Rock / Glam Metal",
+    "tempo": "123 BPM",
+    "duration": "4:09",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor, modulating to G minor for the final chorus (up a minor third)",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor (Aeolian)",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary scale for most of the song; the dark minor tonality gives the verses their gritty, working-class character"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Guitar solo and riff fills; the pentatonic simplifies the minor scale for powerful rock lead lines"
+        },
+        {
+          "scale": "G natural minor",
+          "notes": "G - A - Bb - C - D - Eb - F - G",
+          "application": "Final chorus key change; the modulation up a minor third lifts the energy for the anthemic climax"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with a dramatic upward modulation in the final chorus",
+      "keySignature": "1 sharp (F#) for E minor; 2 flats (Bb, Eb) for G minor after modulation",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "C",
+          "D",
+          "Em"
+        ],
+        "progression": "i - VI - VII - i",
+        "description": "The signature minor key progression that drives the verses and much of the song, creating the determined, hopeful-against-the-odds emotional quality."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (Talk Box)",
+          "progression": "Em",
+          "romanNumerals": "i",
+          "description": "The iconic talk box intro by Richie Sambora sits over a sustained Em chord, creating one of the most recognizable openings in rock history"
+        },
+        {
+          "section": "Verse",
+          "progression": "Em - C - D - Em",
+          "romanNumerals": "i - VI - VII - i",
+          "description": "Minor key verse with the VI-VII movement creating a sense of striving and uplift within the dark minor tonality"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "C - D - Em - Em",
+          "romanNumerals": "VI - VII - i - i",
+          "description": "Building section that ramps energy with the ascending chord motion from C through D to Em"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - D - Em - C - D",
+          "romanNumerals": "VI - VII - i - VI - VII",
+          "description": "The anthemic 'Whoa, we're halfway there' chorus with the uplifting VI-VII motion dominating for maximum arena singalong power"
+        },
+        {
+          "section": "Final Chorus (Modulated)",
+          "progression": "Eb - F - Gm - Eb - F",
+          "romanNumerals": "VI - VII - i - VI - VII",
+          "description": "Same chorus pattern modulated up a minor third to G minor, creating an exhilarating lift for the climactic final section"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (i) - Tonic minor chord, the gritty emotional center representing struggle",
+        "C (VI) - Submediant major chord, providing hope and brightness within the minor key",
+        "D (VII) - Subtonic major chord, creating upward momentum toward the tonic",
+        "Gm (i modulated) - New tonic after key change, lifting the entire song for the climax",
+        "Eb (VI modulated) - Same hopeful function in the new key",
+        "F (VII modulated) - Same upward momentum in the new key"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Minor Key Power Chord Progression",
+      "description": "Driving power chord rhythm using Em, C5, and D5 shapes that form the backbone of verse and chorus sections, played with tight palm muting and punchy accents",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Em: 0-2-2-0-0-0 (open) or E5: 0-2-2-X-X-X (power chord)",
+          "C5: X-3-5-5-X-X (barre power chord)",
+          "D5: X-5-7-7-X-X (barre power chord) or X-X-0-2-3-X (open)",
+          "The verse uses tighter, palm-muted power chord shapes",
+          "The chorus opens up to fuller voicings and harder strumming"
+        ],
+        "sequence": [
+          "Start on the Em chord with palm-muted eighth notes",
+          "Lift the palm mute on accented beats for dynamic punch",
+          "Move to C5 with a smooth barre chord shift",
+          "Slide up to D5 maintaining the barre shape",
+          "Resolve back to Em with emphasis on the downbeat"
+        ],
+        "tips": [
+          "Palm muting is essential during the verse for the tight, controlled rhythm",
+          "Open up the strumming on the chorus for the anthemic contrast",
+          "The C5-D5 movement is a simple two-fret slide if using barre shapes",
+          "Keep your fretting hand relaxed during barre chord shifts to avoid fatigue"
+        ],
+        "chords": [
+          "Em",
+          "C5",
+          "D5"
+        ],
+        "progression": "Em - C - D - Em (i - VI - VII - i)"
+      }
+    },
+    {
+      "name": "Key Change Modulation Technique",
+      "description": "The dramatic modulation from E minor up to G minor for the final chorus, one of rock's most iconic key changes that lifts the emotional intensity",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The song modulates up a minor third (E minor to G minor)",
+          "Original chorus chords: C - D - Em become Eb - F - Gm",
+          "Eb5: X-6-8-8-X-X (barre power chord)",
+          "F5: X-8-10-10-X-X (barre power chord) or 1-3-3-X-X-X",
+          "Gm: 3-5-5-3-3-3 (barre chord) or G5: 3-5-5-X-X-X",
+          "The transition happens abruptly between chorus repetitions"
+        ],
+        "sequence": [
+          "Play the final chorus repetition in E minor (C - D - Em)",
+          "On the modulation point, jump directly to the Eb chord",
+          "Continue the same rhythmic pattern in the new key",
+          "Eb - F - Gm replaces C - D - Em with the same feel, just higher",
+          "Stay in G minor for the remainder of the song"
+        ],
+        "tips": [
+          "The key change should feel like a sudden burst of energy, not a gradual transition",
+          "Practice the jump from Em to Eb barre chord until it is instant and clean",
+          "The modulation is the emotional climax - commit to it with increased volume and intensity",
+          "If barre chords are difficult, power chord shapes (Eb5-F5-G5) work perfectly"
+        ],
+        "chords": [
+          "Eb",
+          "F",
+          "Gm"
+        ],
+        "progression": "C - D - Em modulates to Eb - F - Gm"
+      }
+    },
+    {
+      "name": "Talk Box Guitar Effect (Intro)",
+      "description": "The legendary talk box intro where the guitarist shapes vowel sounds through a tube connected to the amp while playing guitar, creating the the iconic vocal hook effect",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The talk box routes the guitar signal through a tube into the player's mouth",
+          "The player shapes the sound with their mouth to create vowel-like tones",
+          "The shaped sound is captured by a microphone near the mouth",
+          "Richie Sambora plays a simple Em-based melodic line through the talk box",
+          "Without a talk box, the intro can be played as a clean wah-wah or envelope filter approximation"
+        ],
+        "sequence": [
+          "Play the Em-based melodic line on the guitar",
+          "With a talk box: shape the vowel sounds 'wah' and 'wow' while picking",
+          "Without a talk box: use a wah pedal to approximate the vowel shapes",
+          "Build from the quiet intro into the full band entrance",
+          "Transition into the palm-muted verse rhythm"
+        ],
+        "tips": [
+          "A talk box is not required to learn this song - it is only for the intro effect",
+          "A wah pedal can create a similar talking effect with practice",
+          "An envelope filter or auto-wah pedal is another approximation option",
+          "Focus on the rhythm guitar part if you do not have effects for the intro"
+        ],
+        "chords": [
+          "Em"
+        ],
+        "progression": "Em melodic line (talk box)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Talk Box)",
+      "timeStamp": "0:00-0:27",
+      "technique": "Talk Box Guitar Effect (Intro)",
+      "key": "E Minor",
+      "description": "One of rock's most recognizable intros - the talk box guitar creates the signature vocal effect over a sustained Em foundation",
+      "chords": [
+        "Em"
+      ],
+      "progression": "Em (talk box melody)",
+      "notes": [
+        "The talk box creates the iconic 'talking' guitar sound",
+        "Melodic line is based around the E minor chord tones",
+        "Without a talk box, play the melody clean or with wah for effect",
+        "This builds tension for the full band entrance"
+      ],
+      "alphaTab": "12.6 15.6 12.5 14.5 12.4 14.4 | 12.3 14.3 12.2 15.2 12.1 15.1 | 15.1 12.1 15.2 12.2 14.3 12.3 | 14.4 12.4 14.5 12.5 15.6 12.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:27-1:05",
+      "technique": "Minor Key Power Chord Progression",
+      "key": "E Minor",
+      "description": "Tommy and Gina's story told over palm-muted power chords, building determination through the minor key progression",
+      "chords": [
+        "Em",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "Em - C - D - Em",
+      "notes": [
+        "Palm-muted power chords create a tight, driving rhythm",
+        "Keep the verse restrained - save energy for the chorus",
+        "The Em-C-D motion creates the hopeful striving quality",
+        "Chord changes fall on the downbeat of each two-bar phrase"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "1:05-1:17",
+      "technique": "Minor Key Power Chord Progression",
+      "key": "E Minor",
+      "description": "Building section lifting energy with ascending C-D-Em motion and increasingly aggressive strumming toward the chorus",
+      "chords": [
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "C - D - Em",
+      "notes": [
+        "The pre-chorus ramps up the intensity from the verse",
+        "Strumming gets more aggressive and less palm-muted",
+        "The ascending C-D-Em creates natural energy buildup",
+        "Vocals soar higher here, pulling the guitar energy up with them"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:17-1:55",
+      "technique": "Minor Key Power Chord Progression",
+      "key": "E Minor",
+      "description": "The massive arena chorus - 'Whoa, we're halfway there! Whoa-oh, livinthe iconic vocal hook with full, open chord strumming at maximum intensity",
+      "chords": [
+        "C",
+        "D",
+        "Em",
+        "C",
+        "D"
+      ],
+      "progression": "C - D - Em - C - D",
+      "notes": [
+        "Full open chords replacing the palm-muted verse approach",
+        "Maximum strumming intensity and volume",
+        "The 'Whoa' lands on the C chord - accent it heavily",
+        "This is the ultimate crowd singalong moment - play with conviction"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:35-3:05",
+      "technique": "Minor Key Power Chord Progression",
+      "key": "E Minor",
+      "description": "Richie Sambora's melodic guitar solo over the chorus progression, using E minor pentatonic with expressive bends and rock phrasing",
+      "chords": [
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "C - D - Em (solo over chorus changes)",
+      "notes": [
+        "Solo primarily uses E minor pentatonic at the 12th position",
+        "Expressive bends on the B and high E strings",
+        "Melodic phrasing that mirrors the vocal melody",
+        "Rhythm guitar continues the chorus pattern underneath"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Final Chorus (Key Change)",
+      "timeStamp": "3:20-4:09",
+      "technique": "Key Change Modulation Technique",
+      "key": "G Minor (modulated from E Minor)",
+      "description": "The dramatic key change up a minor third for the final chorus - the song's climactic moment that lifts the entire arena to its feet",
+      "chords": [
+        "Eb",
+        "F",
+        "Gm",
+        "Eb",
+        "F"
+      ],
+      "progression": "Eb - F - Gm - Eb - F",
+      "notes": [
+        "Abrupt modulation from E minor to G minor (up a minor third)",
+        "Same rhythmic pattern, same chord relationships, new elevated key",
+        "The key change creates an immediate rush of energy and excitement",
+        "Repeat the modulated chorus to the end with maximum intensity and sustain"
+      ],
+      "alphaTab": "3.6 6.6 3.5 5.5 3.4 5.4 | 3.3 5.3 3.2 6.2 3.1 6.1 | 6.1 3.1 6.2 3.2 5.3 3.3 | 5.4 3.4 5.5 3.5 6.6 3.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or similar single-coil/humbucker combination",
+      "alternatives": [
+        "Charvel/Jackson Superstrat",
+        "Kramer Baretta",
+        "Ibanez RG series",
+        "Any HSS or HSH configured guitar"
+      ],
+      "pickup": "Bridge humbucker for rhythm power chords; neck single-coil or humbucker for talk box and lead tones"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 or similar British high-gain tube amp",
+      "alternatives": [
+        "Marshall Plexi",
+        "Soldano SLO-100",
+        "Peavey 5150",
+        "Friedman BE-100"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate to high crunch)",
+        "treble": "6 (bright and cutting)",
+        "middle": "6-7 (strong midrange for mix presence)",
+        "bass": "5 (solid but tight low end)",
+        "presence": "6 (high for clarity and bite)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate gain from the amp with optional boost pedal for solos. The rhythm tone is crunchy but not heavily saturated.",
+      "delay": "Short digital delay (300-400ms) for lead tone thickness",
+      "reverb": "Medium hall reverb for the arena rock ambiance",
+      "other": "Talk box (Heil Talk Box or similar) for the intro is the signature effect. A wah pedal can substitute. Chorus effect optional for clean sections."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic Em, C, and D chord shapes and the verse strumming pattern",
+      "steps": [
+        "Master open Em, C, and D chord shapes",
+        "Practice the verse progression Em-C-D-Em with basic downstrokes",
+        "Learn palm muting technique for the verse rhythm",
+        "Play along with the verse and chorus sections at slow tempo"
+      ],
+      "timeEstimate": "2-3 weeks for basic verse and chorus"
+    },
+    "intermediate": {
+      "focus": "Add power chord voicings, the key change, and dynamic contrast",
+      "steps": [
+        "Learn barre chord and power chord voicings for C5, D5, Eb5, F5, G5",
+        "Practice the key change transition from Em to Gm section",
+        "Work on dynamic contrast: palm-muted verse vs. open chorus strumming",
+        "Play through the complete song structure with correct dynamics"
+      ],
+      "timeEstimate": "3-4 weeks for full song with key change"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo, talk box technique, and live performance dynamics",
+      "steps": [
+        "Learn the guitar solo using E minor pentatonic at the 12th position",
+        "Experiment with talk box or wah pedal for the intro effect",
+        "Refine the transitions between all sections with smooth dynamics",
+        "Practice singing while playing for the full arena rock experience"
+      ],
+      "timeEstimate": "4-6 weeks for complete performance-ready rendition"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Not enough dynamic contrast between the palm-muted verse and open chorus",
+      "Fumbling the key change - the Eb chord needs to land cleanly and immediately",
+      "Over-distorting the tone - Bon Jovi's rhythm tone is crunchy, not saturated",
+      "Rushing through the pre-chorus build instead of letting the tension develop naturally"
+    ],
+    "practiceRoutine": [
+      "Warm up with Em-C-D chord transitions in both open and barre voicings (5 minutes)",
+      "Practice palm-muted verse rhythm at 123 BPM (5 minutes)",
+      "Work on the verse-to-chorus dynamic transition (5 minutes)",
+      "Practice the key change: Em chorus to Eb-F-Gm chorus (5 minutes)",
+      "Play through the complete song structure with a backing track (5 minutes)"
+    ],
+    "focusAreas": [
+      "Palm muting control for the tight verse rhythm",
+      "Clean barre chord transitions for the key change section",
+      "Dynamic contrast between verse (tight/muted) and chorus (open/full)",
+      "Timing precision through the pre-chorus buildup"
+    ],
+    "metronomeWork": [
+      "Start at 90 BPM with the chord progression, building to 123 BPM",
+      "Practice the key change chord shapes at 80 BPM for clean transitions",
+      "Work on palm muting consistency with metronome on beats 2 and 4",
+      "Full song run-through at 123 BPM once comfortable with all sections"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "You Give Love a Bad Name",
+        "difficulty": "Intermediate",
+        "similarity": "Same album, similar arena rock energy with power chord-driven arrangement"
+      },
+      {
+        "title": "Wanted Dead or Alive",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic-to-electric dynamic range with 12-string intro and power chord chorus"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "We're Not Gonna Take It",
+        "artist": "Twisted Sister",
+        "difficulty": "Beginner",
+        "similarity": "Arena rock anthem with power chord progression and massive chorus"
+      },
+      {
+        "title": "Here I Go Again",
+        "artist": "Whitesnake",
+        "difficulty": "Intermediate",
+        "similarity": "1980s arena rock with similar chord progression and anthemic chorus"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Rock and Roll All Nite",
+        "artist": "KISS",
+        "difficulty": "Beginner",
+        "similarity": "Master basic arena rock power chords before the barre chord demands of this song"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to heavier minor-key riffing with similar power chord foundation"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "arena-rock",
+      "intermediate",
+      "power-chords",
+      "anthem",
+      "80s-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

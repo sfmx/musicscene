@@ -61,6 +61,34 @@ export const themes = {
   }
 };
 
+// Difficulty level color classes (used across song and scale analysis)
+export const getDifficultyColor = (difficulty: string): string => {
+  switch (difficulty.toLowerCase()) {
+    case 'beginner':
+      return 'bg-green-100 text-green-800 border-green-200';
+    case 'intermediate':
+      return 'bg-orange-100 text-orange-800 border-orange-200';
+    case 'advanced':
+      return 'bg-red-100 text-red-800 border-red-200';
+    case 'expert':
+      return 'bg-purple-100 text-purple-800 border-purple-200';
+    default:
+      return 'bg-gray-100 text-gray-800 border-gray-200';
+  }
+};
+
+// Remove consecutive duplicate strings from an array
+export const removeConsecutiveDuplicates = (items: string[]): string[] => {
+  if (items.length === 0) return [];
+  const result = [items[0]];
+  for (let i = 1; i < items.length; i++) {
+    if (items[i].trim() !== items[i - 1].trim()) {
+      result.push(items[i]);
+    }
+  }
+  return result;
+};
+
 // Utility function to get combined theme classes
 export const getThemeClasses = (category: keyof typeof themes) => {
   const theme = themes[category];
@@ -86,7 +114,7 @@ export const commonClasses = {
 export const typography = {
   heading: {
     h1: 'text-4xl md:text-5xl font-bold',
-    h2: 'text-3xl font-bold', 
+    h2: 'text-3xl font-bold',
     h3: 'text-xl font-bold',
     h4: 'text-lg font-bold'
   },
@@ -96,3 +124,144 @@ export const typography = {
     small: 'text-sm'
   }
 };
+
+// Color scheme mapping for data-driven pages (e.g., chord analysis pages)
+// Each color provides a complete set of Tailwind classes. These must be
+// statically present in the source so Tailwind's purge can detect them.
+export interface ColorSchemeClasses {
+  heroBg: string;        // gradient for hero section
+  bulletColor: string;   // bullet point accent color
+  constructionBg: string[];  // backgrounds for the 3 construction boxes
+  constructionBorder: string[];
+  constructionText: string[];
+  constructionTitle: string[];
+  tipBg: string;
+  tipBorder: string;
+  tipText: string;
+  tipTitle: string;
+  journeyGradient: string;
+}
+
+const colorSchemes: Record<string, ColorSchemeClasses> = {
+  blue: {
+    heroBg: 'bg-gradient-to-r from-blue-600 to-cyan-700',
+    bulletColor: 'text-blue-500',
+    constructionBg: ['bg-blue-50', 'bg-green-50', 'bg-purple-50'],
+    constructionBorder: ['border-blue-200', 'border-green-200', 'border-purple-200'],
+    constructionText: ['text-blue-700', 'text-green-700', 'text-purple-700'],
+    constructionTitle: ['text-blue-800', 'text-green-800', 'text-purple-800'],
+    tipBg: 'bg-blue-50',
+    tipBorder: 'border-blue-200',
+    tipText: 'text-blue-700',
+    tipTitle: 'text-blue-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-blue-50',
+  },
+  purple: {
+    heroBg: 'bg-gradient-to-r from-purple-600 to-indigo-700',
+    bulletColor: 'text-purple-500',
+    constructionBg: ['bg-purple-50', 'bg-blue-50', 'bg-rose-50'],
+    constructionBorder: ['border-purple-200', 'border-blue-200', 'border-rose-200'],
+    constructionText: ['text-purple-700', 'text-blue-700', 'text-rose-700'],
+    constructionTitle: ['text-purple-800', 'text-blue-800', 'text-rose-800'],
+    tipBg: 'bg-purple-50',
+    tipBorder: 'border-purple-200',
+    tipText: 'text-purple-700',
+    tipTitle: 'text-purple-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-purple-50',
+  },
+  amber: {
+    heroBg: 'bg-gradient-to-r from-amber-600 to-yellow-700',
+    bulletColor: 'text-amber-500',
+    constructionBg: ['bg-amber-50', 'bg-orange-50', 'bg-yellow-50'],
+    constructionBorder: ['border-amber-200', 'border-orange-200', 'border-yellow-200'],
+    constructionText: ['text-amber-700', 'text-orange-700', 'text-yellow-700'],
+    constructionTitle: ['text-amber-800', 'text-orange-800', 'text-yellow-800'],
+    tipBg: 'bg-amber-50',
+    tipBorder: 'border-amber-200',
+    tipText: 'text-amber-700',
+    tipTitle: 'text-amber-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-amber-50',
+  },
+  rose: {
+    heroBg: 'bg-gradient-to-r from-pink-600 to-rose-700',
+    bulletColor: 'text-pink-500',
+    constructionBg: ['bg-pink-50', 'bg-rose-50', 'bg-purple-50'],
+    constructionBorder: ['border-pink-200', 'border-rose-200', 'border-purple-200'],
+    constructionText: ['text-pink-700', 'text-rose-700', 'text-purple-700'],
+    constructionTitle: ['text-pink-800', 'text-rose-800', 'text-purple-800'],
+    tipBg: 'bg-pink-50',
+    tipBorder: 'border-pink-200',
+    tipText: 'text-pink-700',
+    tipTitle: 'text-pink-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-pink-50',
+  },
+  slate: {
+    heroBg: 'bg-gradient-to-r from-slate-700 to-gray-800',
+    bulletColor: 'text-slate-500',
+    constructionBg: ['bg-slate-50', 'bg-gray-50', 'bg-blue-50'],
+    constructionBorder: ['border-slate-200', 'border-gray-200', 'border-blue-200'],
+    constructionText: ['text-slate-700', 'text-gray-700', 'text-blue-700'],
+    constructionTitle: ['text-slate-800', 'text-gray-800', 'text-blue-800'],
+    tipBg: 'bg-purple-50',
+    tipBorder: 'border-purple-200',
+    tipText: 'text-purple-700',
+    tipTitle: 'text-purple-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-slate-50',
+  },
+  indigo: {
+    heroBg: 'bg-gradient-to-r from-purple-700 to-indigo-800',
+    bulletColor: 'text-purple-500',
+    constructionBg: ['bg-purple-50', 'bg-indigo-50', 'bg-pink-50'],
+    constructionBorder: ['border-purple-200', 'border-indigo-200', 'border-pink-200'],
+    constructionText: ['text-purple-700', 'text-indigo-700', 'text-pink-700'],
+    constructionTitle: ['text-purple-800', 'text-indigo-800', 'text-pink-800'],
+    tipBg: 'bg-purple-50',
+    tipBorder: 'border-purple-200',
+    tipText: 'text-purple-700',
+    tipTitle: 'text-purple-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-purple-50',
+  },
+  red: {
+    heroBg: 'bg-gradient-to-r from-red-700 to-rose-800',
+    bulletColor: 'text-red-500',
+    constructionBg: ['bg-red-50', 'bg-orange-50', 'bg-rose-50'],
+    constructionBorder: ['border-red-200', 'border-orange-200', 'border-rose-200'],
+    constructionText: ['text-red-700', 'text-orange-700', 'text-rose-700'],
+    constructionTitle: ['text-red-800', 'text-orange-800', 'text-rose-800'],
+    tipBg: 'bg-red-50',
+    tipBorder: 'border-red-200',
+    tipText: 'text-red-700',
+    tipTitle: 'text-red-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-red-50',
+  },
+  cyan: {
+    heroBg: 'bg-gradient-to-r from-purple-600 to-pink-700',
+    bulletColor: 'text-purple-500',
+    constructionBg: ['bg-purple-50', 'bg-pink-50', 'bg-indigo-50'],
+    constructionBorder: ['border-purple-200', 'border-pink-200', 'border-indigo-200'],
+    constructionText: ['text-purple-700', 'text-pink-700', 'text-indigo-700'],
+    constructionTitle: ['text-purple-800', 'text-pink-800', 'text-indigo-800'],
+    tipBg: 'bg-cyan-50',
+    tipBorder: 'border-cyan-200',
+    tipText: 'text-cyan-700',
+    tipTitle: 'text-cyan-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-purple-50',
+  },
+  pink: {
+    heroBg: 'bg-gradient-to-r from-rose-600 to-pink-700',
+    bulletColor: 'text-rose-500',
+    constructionBg: ['bg-pink-50', 'bg-rose-50', 'bg-purple-50'],
+    constructionBorder: ['border-pink-200', 'border-rose-200', 'border-purple-200'],
+    constructionText: ['text-pink-700', 'text-rose-700', 'text-purple-700'],
+    constructionTitle: ['text-pink-800', 'text-rose-800', 'text-purple-800'],
+    tipBg: 'bg-rose-50',
+    tipBorder: 'border-rose-200',
+    tipText: 'text-rose-700',
+    tipTitle: 'text-rose-800',
+    journeyGradient: 'bg-gradient-to-r from-gray-50 to-rose-50',
+  },
+};
+
+export function getColorScheme(color: string): ColorSchemeClasses {
+  return colorSchemes[color] || colorSchemes.blue;
+}

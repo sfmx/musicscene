@@ -1,0 +1,444 @@
+{
+  "songInfo": {
+    "title": "Paranoid",
+    "artist": "Black Sabbath",
+    "album": "Paranoid",
+    "released": "1970",
+    "genre": "Heavy Metal",
+    "tempo": "164 BPM",
+    "duration": "2:48",
+    "key": "E minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary harmonic foundation for power chord riffs and overall song structure"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar solo and melodic fills throughout the song"
+        },
+        {
+          "scale": "E blues scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "Blues-inflected lead lines and the chromatic passing tones in the solo"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor (is the primary key)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "D5",
+          "G5",
+          "D5",
+          "E5"
+        ],
+        "progression": "i - VII - III - VII - i",
+        "description": "Driving power chord riff cycling between E5 and D5 with G5 providing a brief harmonic lift, all played at breakneck speed"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff / Verse",
+          "progression": "E5 - D5 - G5 - D5 - E5",
+          "romanNumerals": "i - VII - III - VII - i",
+          "description": "Fast power chord progression driven by relentless downstroke picking at 164 BPM"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - D5 - E5 - D5",
+          "romanNumerals": "i - VII - i - VII",
+          "description": "Simplified two-chord alternation during the vocal chorus for maximum intensity"
+        },
+        {
+          "section": "Solo",
+          "progression": "E5 - D5 - G5 - D5 - E5",
+          "romanNumerals": "i - VII - III - VII - i",
+          "description": "Same verse progression underneath the pentatonic lead guitar solo"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (i) - Tonic power chord establishing the dark minor key center",
+        "D5 (VII) - Subtonic creating the driving back-and-forth motion with the tonic",
+        "G5 (III) - Mediant providing a brief harmonic lift and contrast",
+        "The i-VII movement is the core engine of the song, creating relentless forward momentum",
+        "All chords are power chords (root + fifth) keeping the harmony ambiguously minor"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fast Downstroke Power Chord Riffing",
+      "description": "The signature technique of the song - relentless downstroke picking on power chords at 164 BPM, requiring significant right-hand stamina and precision",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (Open low E string + 2nd fret A and D strings)",
+          "D5: X-5-7-X-X-X (5th fret A string + 7th fret D string) or 10-12-12-X-X-X",
+          "G5: 3-5-5-X-X-X (3rd fret low E string + 5th fret A and D strings)",
+          "All strokes are downstrokes for maximum attack and consistency",
+          "The fast tempo of 164 BPM makes this a serious right-hand endurance test",
+          "Slight palm muting adds tightness without killing sustain"
+        ],
+        "sequence": [
+          "Lock into the E5 power chord shape on the low strings",
+          "Drive consistent downstrokes with the wrist, not the arm",
+          "Shift quickly to D5 and back, minimizing hand movement",
+          "Hit the G5 on beat accents before returning to D5 and E5"
+        ],
+        "tips": [
+          "Build up speed gradually - start at 100 BPM and add 5 BPM per session",
+          "Relax your picking hand to avoid tension and fatigue at high speed",
+          "Use wrist motion rather than full arm movement for efficiency",
+          "Practice with a metronome to maintain absolutely steady timing"
+        ],
+        "chords": [
+          "E5",
+          "D5",
+          "G5"
+        ],
+        "progression": "E5 - D5 - G5 - D5 - E5 (Main Riff)"
+      }
+    },
+    {
+      "name": "Palm Muting Rhythm",
+      "description": "Controlled palm muting applied to the verse riff to add percussive tightness and definition to the fast power chord changes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Rest the palm edge lightly on the strings near the bridge",
+          "Apply just enough pressure to dampen sustain without killing the note",
+          "Lift palm slightly on accented beats for dynamic contrast",
+          "Combine with downstrokes for the characteristic chugging sound"
+        ],
+        "sequence": [
+          "Position palm edge on bridge saddles",
+          "Play muted E5 power chord with steady downstrokes",
+          "Lift palm slightly for the chord changes to D5 and G5",
+          "Re-apply muting when returning to E5 riff sections"
+        ],
+        "tips": [
+          "The muting should be light - you still want pitch definition",
+          "Practice the palm muting separately from the chord changes first",
+          "Listen to the original to match the exact amount of muting Tony Iommi uses",
+          "Keep the muting consistent throughout the fast tempo"
+        ],
+        "chords": [
+          "E5",
+          "D5"
+        ],
+        "progression": "E5 - D5 palm muted rhythm pattern"
+      }
+    },
+    {
+      "name": "Pentatonic Lead Solo",
+      "description": "The guitar solo uses E minor pentatonic patterns with blues-inflected bends and fast hammer-on/pull-off runs in the classic Tony Iommi style",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based primarily in the 12th fret E minor pentatonic box position",
+          "Features whole-step and half-step bends on the B and G strings",
+          "Fast hammer-on/pull-off runs connecting pentatonic positions",
+          "Vibrato applied to sustained notes for expressive effect"
+        ],
+        "sequence": [
+          "Position in 12th fret E minor pentatonic box",
+          "Open with melodic phrases using bends on the B string (15th fret)",
+          "Add hammer-on/pull-off runs descending through the scale",
+          "Conclude with vibrato on a sustained bent note"
+        ],
+        "tips": [
+          "Learn the E minor pentatonic box at the 12th fret thoroughly",
+          "Practice bending to pitch with a tuner for accuracy",
+          "Keep the solo phrasing rhythmic and in time with the fast tempo",
+          "Iommi's style is melodic rather than shredding - focus on note choice"
+        ],
+        "chords": [
+          "E5"
+        ],
+        "progression": "E minor pentatonic over E5 - D5 - G5 - D5 - E5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro/Main Riff",
+      "timeStamp": "0:00-0:20",
+      "technique": "Fast Downstroke Power Chord Riffing",
+      "key": "E minor",
+      "description": "The driving opening riff launches immediately into the fast E5-D5 power chord pattern that defines the song, establishing the relentless tempo from the very first note",
+      "chords": [
+        "E5",
+        "D5",
+        "G5"
+      ],
+      "progression": "E5 - D5 - G5 - D5 - E5",
+      "notes": [
+        "No introduction or buildup - the riff hits immediately",
+        "All downstrokes at 164 BPM from the first beat",
+        "Light palm muting on the E5 sections for definition",
+        "Sets the breakneck pace for the entire song"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:20-0:50",
+      "technique": "Fast Downstroke Power Chord Riffing",
+      "key": "E minor",
+      "description": "The verse continues the main riff pattern with the same power chord progression, supporting the vocal melody while maintaining the driving momentum",
+      "chords": [
+        "E5",
+        "D5",
+        "G5"
+      ],
+      "progression": "E5 - D5 - G5 - D5 - E5",
+      "notes": [
+        "Same riff pattern as the intro continues without variation",
+        "Slight dynamic reduction to leave space for vocals",
+        "Maintain consistent palm muting throughout",
+        "The simplicity of the riff is its strength - do not embellish"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:50-1:10",
+      "technique": "Palm Muting Rhythm",
+      "key": "E minor",
+      "description": "The chorus simplifies to an E5-D5 alternation with slightly more open strumming, emphasizing the vocal hook",
+      "chords": [
+        "E5",
+        "D5"
+      ],
+      "progression": "E5 - D5 - E5 - D5",
+      "notes": [
+        "Simplified two-chord pattern for the chorus",
+        "Slightly more open strumming than the verse",
+        "Accents align with the vocal melody for emphasis",
+        "Maintains the 164 BPM tempo throughout"
+      ],
+      "alphaTab": "12.6 14.5 14.4 14.5 | 12.6 12.6 14.5 14.4 | 17.6 19.5 19.4 19.5 | 12.6 14.5 14.4 14.5 |",
+      "exerciseLabel": "Rhythm Palm Muting Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "1:30-2:00",
+      "technique": "Pentatonic Lead Solo",
+      "key": "E minor",
+      "description": "Tony Iommi's lead guitar solo over the verse progression, using E minor pentatonic licks with bends, vibrato, and fast pentatonic runs",
+      "chords": [
+        "E5",
+        "D5",
+        "G5"
+      ],
+      "progression": "E5 - D5 - G5 - D5 - E5 (repeating under solo)",
+      "notes": [
+        "Solo primarily in the 12th fret E minor pentatonic position",
+        "Features signature Iommi bends and vibrato",
+        "Fast pentatonic runs that match the song's intense energy",
+        "Rhythm guitar maintains the main riff underneath"
+      ],
+      "alphaTab": "12.6 15.6 12.5 14.5 12.4 14.4 | 12.3 14.3 12.2 15.2 12.1 15.1 | 15.1 12.1 15.2 12.2 14.3 12.3 | 14.4 12.4 14.5 12.5 15.6 12.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:20-2:48",
+      "technique": "Fast Downstroke Power Chord Riffing",
+      "key": "E minor",
+      "description": "The song ends with a return to the main riff, maintaining full intensity to the final abrupt ending",
+      "chords": [
+        "E5",
+        "D5",
+        "G5"
+      ],
+      "progression": "E5 - D5 - G5 - D5 - E5",
+      "notes": [
+        "Full return to the main riff at maximum intensity",
+        "No fade-out - the song ends decisively",
+        "Maintain energy and picking consistency to the final note",
+        "Clean cutoff on the final E5 power chord"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard",
+      "alternatives": [
+        "Epiphone SG",
+        "Gibson SG Special",
+        "Any solid-body electric with humbuckers"
+      ],
+      "pickup": "Humbuckers, bridge pickup for maximum bite and attack"
+    },
+    "amp": {
+      "recommended": "Laney Supergroup (original Tony Iommi setup)",
+      "alternatives": [
+        "Marshall JCM800",
+        "Orange Rockerverb",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "8/10 (heavy gain for thick power chords)",
+        "treble": "6/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Heavy amp gain is the primary distortion source - no pedals needed",
+      "reverb": "Minimal to none - keep it dry and tight",
+      "other": "No effects - pure guitar into overdriven amp for the raw Sabbath tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Paranoid",
+      "steps": [
+        "Learn the E5, D5, and G5 power chord shapes",
+        "Practice basic downstroke picking at slow tempo (80-100 BPM)",
+        "Work on transitioning between E5 and D5 cleanly",
+        "Build basic right-hand stamina with 2-minute downstroke exercises"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "title": "Building Speed and Stamina",
+      "steps": [
+        "Increase downstroke speed gradually from 100 to 140 BPM",
+        "Add palm muting to the power chord riff",
+        "Learn the full song structure with all section transitions",
+        "Practice playing the complete song at 140+ BPM without breaks"
+      ],
+      "timeEstimate": "3-6 weeks"
+    },
+    "advanced": {
+      "title": "Full Speed Mastery and Solo",
+      "steps": [
+        "Play the full song at the original 164 BPM tempo",
+        "Learn the guitar solo with proper bending and phrasing",
+        "Develop endurance to play the entire song without hand fatigue",
+        "Match the original recording's tone and feel precisely"
+      ],
+      "timeEstimate": "6-10 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Trying to play at full speed (164 BPM) before building proper technique",
+      "Tensing up the right hand, leading to fatigue and inconsistent timing",
+      "Neglecting palm muting, resulting in muddy power chord tone",
+      "Letting the tempo drift faster or slower during extended riff sections",
+      "Over-complicating the riff - the beauty is in its simplicity and relentlessness"
+    ],
+    "practiceRoutine": [
+      "Warm up with E5 downstrokes at 100 BPM for 5 minutes",
+      "Practice the E5-D5 change with a metronome, increasing 5 BPM per session",
+      "Work on the full three-chord riff pattern at a comfortable speed",
+      "Practice palm muting technique separately before combining with chord changes",
+      "Play along with the original recording once you can maintain 160+ BPM"
+    ],
+    "focusAreas": [
+      "Right-hand downstroke stamina and consistency at high tempo",
+      "Clean power chord shapes without buzzing or unwanted string noise",
+      "Precise palm muting control for tightness without killing tone",
+      "Smooth transitions between E5, D5, and G5 at full speed",
+      "Maintaining absolutely steady tempo through the entire song"
+    ],
+    "metronomeWork": [
+      "Start at 100 BPM with simple E5 downstrokes",
+      "Increase by 5 BPM per practice session once comfortable",
+      "At 130 BPM, add the D5 chord change to the pattern",
+      "At 150 BPM, add the G5 chord for the full riff",
+      "Target tempo is 164 BPM - do not sacrifice cleanliness for speed"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Iron Man",
+        "difficulty": "Intermediate",
+        "similarity": "Same album, similar power chord approach but at a slower tempo"
+      },
+      {
+        "title": "War Pigs",
+        "difficulty": "Advanced",
+        "similarity": "More complex Sabbath riffing with tempo changes and extended structure"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "technique": "Fast Downstroke Power Chords",
+        "similarity": "Same relentless downstroke power chord approach at similar fast tempo"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "technique": "Palm Muted Power Chords",
+        "similarity": "Heavy palm-muted power chord riffing in minor key"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "technique": "Power Chord Riff",
+        "similarity": "Iconic power chord riff from the same era of heavy rock"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Simpler power chord riff to build foundational technique"
+      },
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "difficulty": "Advanced",
+        "similarity": "More complex fast downstroke power chord riffing at extreme tempo"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "heavy-metal",
+      "power-chords",
+      "black-sabbath",
+      "fast-tempo"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
+  }
+}

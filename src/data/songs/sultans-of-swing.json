@@ -1,0 +1,437 @@
+{
+  "songInfo": {
+    "title": "Sultans of Swing",
+    "artist": "Dire Straits",
+    "album": "Dire Straits",
+    "released": "1978",
+    "genre": "Rock",
+    "tempo": "148 BPM",
+    "duration": "5:47",
+    "key": "D minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D natural minor (Aeolian)",
+          "notes": "D - E - F - G - A - Bb - C - D",
+          "application": "Primary harmonic framework for chord progressions and melodic passages throughout the song"
+        },
+        {
+          "scale": "D Dorian",
+          "notes": "D - E - F - G - A - B - C - D",
+          "application": "The raised 6th (B natural) appears frequently in Knopfler's lead lines, adding a brighter quality to the minor tonality"
+        },
+        {
+          "scale": "D minor pentatonic",
+          "notes": "D - F - G - A - C",
+          "application": "Core scale for the signature guitar solo and melodic fills between vocal phrases"
+        }
+      ],
+      "modalCharacter": "Aeolian / Dorian (alternating)",
+      "keySignature": "1 flat (Bb) for D natural minor, no flats for D Dorian",
+      "relativeMinor": "D minor is the relative minor of F major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "C",
+          "Bb",
+          "A"
+        ],
+        "progression": "i - bVII - bVI - V",
+        "description": "Descending minor progression with a major V chord (A instead of Am), creating the Andalusian cadence feel that gives the song its distinctive character"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Dm - C - Bb - A",
+          "romanNumerals": "i - bVII - bVI - V",
+          "description": "The main descending progression that carries the verses, with Knopfler's arpeggiated fingerstyle approach"
+        },
+        {
+          "section": "Chorus / Refrain",
+          "progression": "F - C - Dm",
+          "romanNumerals": "bIII - bVII - i",
+          "description": "Shift to the relative major (F) for the chorus creates harmonic lift before resolving back to Dm"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Dm - C - Bb - A | F - C - Dm",
+          "romanNumerals": "i - bVII - bVI - V | bIII - bVII - i",
+          "description": "Solo section cycles through both verse and chorus progressions, providing harmonic variety for Knopfler's extended improvisation"
+        },
+        {
+          "section": "Outro Solo",
+          "progression": "Dm - C - Bb - A (repeating)",
+          "romanNumerals": "i - bVII - bVI - V (repeating)",
+          "description": "Extended outro solo over the repeating verse progression, building to the song's climax"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm (i) - Tonic minor chord establishing the dark, moody atmosphere of the song",
+        "C (bVII) - Subtonic chord providing the first step in the descending bass movement",
+        "Bb (bVI) - Submediant chord continuing the descending motion and adding warmth",
+        "A (V) - Major dominant chord (instead of minor v) creating a strong pull back to Dm",
+        "F (bIII) - Relative major chord used in the chorus for harmonic brightness and contrast"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerstyle Electric Guitar",
+      "description": "Mark Knopfler's signature fingerpicking technique on electric guitar using the thumb, index, and middle fingers without a pick, creating a warm, articulate tone with precise dynamic control",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb handles bass notes on the E, A, and D strings",
+          "Index and middle fingers pluck melody and chord tones on the G, B, and high E strings",
+          "No pick is used - Knopfler plays entirely with bare fingertips",
+          "Creates a softer, more articulate attack compared to pick playing",
+          "Allows simultaneous bass lines and melody - like a mini fingerstyle arrangement",
+          "Requires nail maintenance or callus development on the fingertips"
+        ],
+        "sequence": [
+          "Position the thumb to rest on the low E string, angled slightly downward",
+          "Curl the index and middle fingers to pluck upward on the higher strings",
+          "Coordinate thumb and fingers for simultaneous bass and treble notes",
+          "Maintain a relaxed hand position with the wrist slightly arched"
+        ],
+        "tips": [
+          "If you normally use a pick, start by practicing simple arpeggios without one",
+          "Develop thumb independence - it must maintain a steady bass pattern while fingers vary",
+          "Practice on a clean amp setting to hear every nuance of your finger attack",
+          "Listen to the original recording carefully for the exact fingerpicking patterns",
+          "Knopfler's tone comes largely from the fingers, not from effects or amp settings"
+        ],
+        "chords": [
+          "Dm",
+          "C",
+          "Bb",
+          "A",
+          "F"
+        ],
+        "progression": "Dm - C - Bb - A (fingerpicked arpeggios)"
+      }
+    },
+    {
+      "name": "Arpeggiated Chord Patterns",
+      "description": "The rhythmic foundation of the song built on flowing arpeggiated patterns that outline each chord while creating a driving, hypnotic groove at 148 BPM",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Dm arpeggio: D (bass) - A - D - F on strings 4-3-2-1, finger-picked in rapid succession",
+          "C arpeggio: C (bass) - G - C - E on strings 5-3-2-1 with similar fingerpicking pattern",
+          "Bb arpeggio: Bb (bass) - F - Bb - D voiced across strings 5-3-2-1",
+          "A arpeggio: A (bass) - E - A - C# transitioning to close the phrase",
+          "Each chord is arpeggiated in a specific pattern that creates the signature rhythmic flow",
+          "The patterns shift subtly between verse, chorus, and instrumental sections"
+        ],
+        "sequence": [
+          "Begin with the Dm arpeggio pattern, thumb on D string bass note",
+          "Flow through C and Bb patterns maintaining the rhythmic pulse",
+          "Resolve to A with a slight emphasis for the cadence",
+          "Repeat the cycle with variations and embellishments as the song progresses"
+        ],
+        "tips": [
+          "Practice each arpeggio pattern in isolation before connecting them",
+          "Keep the tempo steady at 148 BPM - use a metronome religiously",
+          "Focus on even volume across all picked notes for smooth arpeggios",
+          "The patterns should flow like a continuous stream of notes, not feel choppy",
+          "Pay attention to the bass note movement - it outlines the chord progression clearly"
+        ],
+        "chords": [
+          "Dm",
+          "C",
+          "Bb",
+          "A"
+        ],
+        "progression": "Dm - C - Bb - A arpeggiated pattern"
+      }
+    },
+    {
+      "name": "Melodic Solo Phrasing",
+      "description": "Knopfler's melodic and lyrical solo style that tells a story through the guitar, using a mix of pentatonic and Dorian scales with impeccable phrasing, dynamics, and note choice",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Solos are based on D minor pentatonic with frequent Dorian additions (B natural)",
+          "Phrases are lyrical and singable - each solo tells a melodic story",
+          "Uses string bends sparingly but with great precision and expression",
+          "Sliding between positions for smooth melodic transitions",
+          "Fingerstyle attack gives the solo a warmer, more personal quality than pick playing",
+          "The famous outro solo builds in intensity over several minutes"
+        ],
+        "sequence": [
+          "Open with a vocal-like melodic statement in the D minor pentatonic",
+          "Develop the phrase by adding Dorian notes (B natural) for color",
+          "Build intensity through the solo by increasing speed and range",
+          "Climax with rapid fingerplcked runs in the upper register before resolution"
+        ],
+        "tips": [
+          "Learn the solos note-for-note first, then understand the scale choices",
+          "Practice the pentatonic/Dorian switch - know when B natural vs Bb fits the chord",
+          "The fingerstyle attack is crucial to the solo tone - do not use a pick",
+          "Listen to the dynamic arc of the solo - it builds like a narrative",
+          "Space is as important as notes - Knopfler does not fill every beat"
+        ],
+        "chords": [],
+        "progression": "Over Dm - C - Bb - A verse progression and F - C - Dm chorus"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse Riff",
+      "timeStamp": "0:00-0:30",
+      "technique": "Fingerstyle Electric Guitar",
+      "key": "D minor",
+      "description": "The distinctive opening arpeggiated pattern that immediately identifies the song, with Knopfler's fingertips creating the warm, clean tone over the Dm-C-Bb-A progression",
+      "chords": [
+        "Dm",
+        "C",
+        "Bb",
+        "A"
+      ],
+      "progression": "Dm - C - Bb - A",
+      "notes": [
+        "Clean fingerstyle arpeggios establish the song's texture immediately",
+        "No pick used - the warm fingertip attack defines the tone",
+        "Bass notes on the beat with treble notes filling in between",
+        "Sets the hypnotic groove that carries through the entire song"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:45",
+      "technique": "Arpeggiated Chord Patterns",
+      "key": "D minor",
+      "description": "Full verse sections with the arpeggiated patterns supporting the vocal melody, adding subtle embellishments and fills between vocal phrases",
+      "chords": [
+        "Dm",
+        "C",
+        "Bb",
+        "A",
+        "F"
+      ],
+      "progression": "Dm - C - Bb - A (verse) | F - C - Dm (refrain)",
+      "notes": [
+        "Arpeggio patterns continue under the vocal with subtle variations",
+        "Brief melodic fills between vocal phrases hint at the solo to come",
+        "The shift to F-C-Dm for the refrain provides harmonic contrast",
+        "Dynamics follow the vocal - slightly softer during singing, fills in gaps"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo (Mid-song)",
+      "timeStamp": "3:00-3:55",
+      "technique": "Melodic Solo Phrasing",
+      "key": "D minor",
+      "description": "The mid-song solo featuring Knopfler's lyrical phrasing over the verse and chorus progressions, blending D minor pentatonic with Dorian inflections",
+      "chords": [
+        "Dm",
+        "C",
+        "Bb",
+        "A"
+      ],
+      "progression": "Dm - C - Bb - A | F - C - Dm",
+      "notes": [
+        "Melodic solo that sings through the guitar with vocal-like phrasing",
+        "Uses D minor pentatonic as the foundation with Dorian additions",
+        "Fingerstyle attack creates a warm, personal solo tone",
+        "Builds gradually in intensity and complexity through the section"
+      ],
+      "alphaTab": "13.1 10.1 13.2 10.2 | 12.3 10.3 12.4 10.4 | 10.3 12.3 10.2 13.2 | 13.1 10.1 10.2 13.2 |",
+      "exerciseLabel": "Minor Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Outro Solo",
+      "timeStamp": "4:30-5:47",
+      "technique": "Melodic Solo Phrasing",
+      "key": "D minor",
+      "description": "The legendary extended outro solo that builds from lyrical melodic statements to rapid fingerstyle runs, widely considered one of the greatest guitar solos in rock history",
+      "chords": [
+        "Dm",
+        "C",
+        "Bb",
+        "A"
+      ],
+      "progression": "Dm - C - Bb - A (repeating cycle)",
+      "notes": [
+        "Opens with restrained melodic phrases that echo the verse melody",
+        "Gradually builds in speed, intensity, and range over the repeating progression",
+        "Climaxes with rapid fingerpicked runs that are technically stunning yet deeply musical",
+        "One of the most celebrated guitar solos in rock - every note serves the music"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster (1961 style with rosewood fretboard)",
+      "alternatives": [
+        "Fender American Professional II Stratocaster",
+        "Fender Vintera '60s Stratocaster",
+        "Any Strat-style guitar with single-coil pickups"
+      ],
+      "pickup": "Single-coil pickups - neck position primarily for warm lead tone, bridge for brighter rhythmic passages"
+    },
+    "amp": {
+      "recommended": "Fender Vibrolux Reverb",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Fender Deluxe Reverb",
+        "Fender Princeton Reverb"
+      ],
+      "settings": {
+        "gain": "3-4 (clean with slight edge when played hard)",
+        "treble": "6 (bright but not harsh for the fingerstyle attack)",
+        "middle": "5 (balanced midrange)",
+        "bass": "5 (warm but not boomy)",
+        "presence": "5 (natural presence without fizz)"
+      }
+    },
+    "effects": {
+      "distortion": "None - completely clean tone, any grit comes from the fingertip attack",
+      "delay": "None",
+      "reverb": "Light spring reverb from the amp only",
+      "other": "No effects pedals used at all - Knopfler's tone on this recording is purely guitar, fingers, and a clean amp"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic chord shapes and begin developing fingerstyle technique on electric guitar",
+      "steps": [
+        "Master Dm, C, Bb, A, and F chord shapes in open and barre positions",
+        "Begin practicing simple fingerpicking patterns without a pick",
+        "Learn the D minor pentatonic scale in the 10th fret position",
+        "Practice switching between chords in time with a metronome at slow tempo"
+      ],
+      "timeEstimate": "4-6 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Develop the arpeggiated rhythm patterns and basic solo phrases",
+      "steps": [
+        "Learn the specific arpeggio patterns for each chord in the verse and chorus",
+        "Build up tempo gradually to 148 BPM with the fingerpicking patterns",
+        "Learn the D Dorian scale and practice switching between Dorian and natural minor",
+        "Begin learning the mid-song solo note-for-note at half speed"
+      ],
+      "timeEstimate": "8-12 weeks for solid rhythm and basic solo skills"
+    },
+    "advanced": {
+      "focus": "Master the complete arrangement including the legendary outro solo",
+      "steps": [
+        "Perfect the arpeggiated rhythm patterns with all embellishments and fills",
+        "Learn the complete outro solo note-for-note with accurate fingerstyle attack",
+        "Develop the ability to build intensity through the extended solo sections",
+        "Achieve the clean, warm Knopfler fingerstyle tone through technique alone",
+        "Practice the full song arrangement from start to finish at performance tempo"
+      ],
+      "timeEstimate": "3-6 months for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using a pick instead of fingers - the fingerstyle technique is essential to the sound",
+      "Playing the arpeggios too rigidly without the flowing quality of Knopfler's approach",
+      "Not maintaining the 148 BPM tempo consistently throughout the six-minute song",
+      "Overlooking the dynamic changes between verse, chorus, and solo sections",
+      "Playing the solos too aggressively - Knopfler's phrasing is lyrical and restrained"
+    ],
+    "practiceRoutine": [
+      "Warm up with fingerstyle arpeggios on Dm, C, Bb, A for 10 minutes",
+      "Practice the verse arpeggio pattern at 100 BPM, gradually increase to 148 BPM",
+      "Work on D minor pentatonic and D Dorian scales using fingerstyle technique",
+      "Practice the mid-song solo at half speed, focusing on phrasing and dynamics",
+      "Spend 15 minutes on the outro solo, working measure-by-measure from the beginning"
+    ],
+    "focusAreas": [
+      "Fingerstyle electric guitar technique - thumb and finger independence",
+      "Clean, arpeggiated patterns at fast tempo (148 BPM)",
+      "Lyrical solo phrasing with dynamic build",
+      "Dorian/natural minor scale switching for color changes",
+      "Stamina for the 5:47 song duration with consistent fingerpicking"
+    ],
+    "metronomeWork": [
+      "Start arpeggio patterns at 100 BPM, increase by 5 BPM increments to 148 BPM",
+      "Practice scale runs (pentatonic and Dorian) in eighth notes at 120 BPM",
+      "Work on the solo sections at 74 BPM (half tempo) before bringing up to full speed",
+      "Practice maintaining the fingerpicking groove at 148 BPM for the full song length"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Brothers in Arms",
+        "difficulty": "Intermediate",
+        "similarity": "Same fingerstyle approach with a slower, more atmospheric arrangement"
+      },
+      {
+        "title": "Money for Nothing",
+        "difficulty": "Intermediate",
+        "similarity": "Another Dire Straits classic with distinctive guitar tone and Knopfler's playing style"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Advanced",
+        "similarity": "Arpeggiated intro pattern and melodic solo work with similar advanced lead requirements"
+      },
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Classic rock arpeggiated patterns with clean guitar tone"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Start here for foundational arpeggiated rock guitar patterns"
+      },
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Intermediate",
+        "similarity": "Continue with more Knopfler fingerstyle at a slower, more manageable tempo"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 93,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "fingerpicking",
+      "classic-rock",
+      "guitar-solos"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 months"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "slug": "scales",
+  "category": "lead",
+  "pageTitle": "Scale Application in Lead Guitar",
+  "subtitle": "Learn how to choose and apply the right scales over chord progressions for melodic lead playing.",
+  "heroGradient": "bg-gradient-to-r from-green-50 to-blue-50",
+  "backLink": { "href": "/lessons/songs/lead", "label": "Back to Lead Guitar & Solos" },
+  "introduction": {
+    "title": "The Scale-Chord Relationship",
+    "text": "Understanding which scales work over which chords is the foundation of melodic lead guitar. By targeting chord tones and choosing appropriate scales, you can create lines that sound intentional and musical.",
+    "columns": [
+      {
+        "title": "Target Chord Tones",
+        "text": "The strongest melodic notes are chord tones (root, 3rd, 5th, 7th). Land on these during chord changes to create harmonic connection.\n\nC Major Chord (C-E-G):\nStrong: C, E, G (chord tones)\nGood: D, A (scale tones)\nWeak: F, B (avoid notes)"
+      },
+      {
+        "title": "Key Center Approach",
+        "text": "Identify the overall key of the progression, then use scales from that key while emphasizing chord tones.\n\nKey of G Major:\nG-Am-C-D progression\nUse G Major scale/pentatonic\nTarget chord tones on changes"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Common Progression Scale Choices",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I-vi-IV-V",
+          "description": "Use C major pentatonic as safe choice, target chord tones on changes",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "C Major" },
+            { "label": "Best Scales", "value": "C Major Pentatonic, C Major Scale, A Natural Minor" },
+            { "label": "Approach", "value": "Use C major pentatonic as safe choice, target chord tones on changes" },
+            { "label": "Chord Tone Focus", "value": "C-Am-F-G: Focus on C-E-G over C, A-C-E over Am, F-A-C over F, G-B-D over G" }
+          ]
+        },
+        {
+          "title": "I-VII-\u266dVI-\u266dVII",
+          "description": "Minor pentatonic core with Dorian for \u266dVII chord",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "A Minor" },
+            { "label": "Best Scales", "value": "A Minor Pentatonic, A Dorian, A Natural Minor" },
+            { "label": "Approach", "value": "Minor pentatonic core with Dorian for \u266dVII chord" },
+            { "label": "Chord Tone Focus", "value": "Am-G-F-G: Am pentatonic over Am-F, add major 6th (F#) over G chords" }
+          ]
+        },
+        {
+          "title": "ii-V-I",
+          "description": "Target chord tones, use chromatic approach notes",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "C Major" },
+            { "label": "Best Scales", "value": "C Major Scale, C Major Pentatonic, Mode per chord" },
+            { "label": "Approach", "value": "Target chord tones, use chromatic approach notes" },
+            { "label": "Chord Tone Focus", "value": "Dm-G-C: D-F-A over Dm, G-B-D over G, C-E-G over C" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scale Character & Mood",
+      "bgColor": "bg-purple-50",
+      "borderColor": "border-purple-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Major Pentatonic",
+          "description": "Country, rock solos, major key songs",
+          "badge": { "text": "Happy, Uplifting", "color": "purple" },
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Key Detail", "value": "Contains no avoid notes, always sounds consonant" }
+          ]
+        },
+        {
+          "title": "Minor Pentatonic",
+          "description": "Blues, rock, minor key ballads",
+          "badge": { "text": "Bluesy, Emotional", "color": "purple" },
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Key Detail", "value": "Core of blues and rock lead playing" }
+          ]
+        },
+        {
+          "title": "Dorian Mode",
+          "description": "Minor chords with major 6th, Santana-style",
+          "badge": { "text": "Sophisticated, Jazz-rock", "color": "purple" },
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Key Detail", "value": "Natural 6th gives brighter minor sound" }
+          ]
+        },
+        {
+          "title": "Mixolydian Mode",
+          "description": "Dominant 7th chords, blues-rock",
+          "badge": { "text": "Dominant, Unresolved", "color": "purple" },
+          "borderColor": "border-purple-200",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Key Detail", "value": "Flat 7th creates dominant chord sound" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Scale Concepts",
+      "bgColor": "bg-indigo-50",
+      "borderColor": "border-indigo-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Modal Interchange",
+          "description": "Borrowing scales from parallel keys adds color and interest to your lead playing.",
+          "borderColor": "border-indigo-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "In C Major, try", "value": "C Dorian over minor iv chord (Fm), C Mixolydian over \u266dVII chord (B\u266d)" }
+          ]
+        },
+        {
+          "title": "Chromatic Approach",
+          "description": "Use chromatic notes to approach chord tones from a half-step above or below.",
+          "borderColor": "border-indigo-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "To reach C (root), play C# or B first. To reach E (3rd), play F or D# first." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scale Application in Famous Solos",
+      "bgColor": "bg-green-50",
+      "borderColor": "border-green-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Sweet Child O' Mine\" - Guns N' Roses",
+          "description": "Targets chord tones on each change while using pentatonic as foundation",
+          "borderColor": "border-green-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "D Major" },
+            { "label": "Scale", "value": "D Major Pentatonic + chromatic passing tones" }
+          ]
+        },
+        {
+          "title": "\"Black Magic Woman\" - Santana",
+          "description": "Uses natural 6th (B natural) to create sophisticated minor sound",
+          "borderColor": "border-green-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "Dm" },
+            { "label": "Scale", "value": "D Dorian mode prominently" }
+          ]
+        },
+        {
+          "title": "\"Layla\" - Derek and the Dominos",
+          "description": "Combines minor pentatonic with blue notes (\u266d5th) for emotional expression",
+          "borderColor": "border-green-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Key", "value": "Dm" },
+            { "label": "Scale", "value": "D Minor Pentatonic + blues notes" }
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Scale Application Practice Method",
+    "items": [
+      "Learn the Chords: Play through the chord progression slowly. Identify each chord's root, 3rd, and 5th on the fretboard.",
+      "Map the Scale: Choose your scale and practice it over the backing progression. Find where chord tones fall within the scale pattern.",
+      "Target Chord Tones: Practice landing on chord tones when chords change. Start with just root notes, then add 3rds and 5ths."
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Phrasing & Expression", "href": "/lessons/songs/lead/phrasing", "description": "Learn how to add expression and feeling to your scale-based lead lines." },
+    { "title": "Lead Guitar Overview", "href": "/lessons/songs/lead", "description": "Return to the main Lead Guitar & Solos page." }
+  ]
+}

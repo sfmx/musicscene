@@ -1,0 +1,51 @@
+{
+  "pageTitle": "Guitar Warmup Routines",
+  "subtitle": "Prepare your body and mind for optimal playing through systematic warmup practices",
+  "heroIcon": "🔥",
+  "heroTitle": "Essential Guitar Warmups",
+  "heroDescription": "Start every practice session with purpose. Proper warmups prevent injury, enhance performance, and prepare your mind and body for optimal learning and playing. From finger exercises to rhythmic drills, build the foundation for a lifetime of healthy guitar playing.",
+  "backLink": { "href": "/lessons/practice", "label": "Back to Practice" },
+  "heroGradient": "bg-gradient-to-br from-amber-50 to-orange-50",
+  "introSection": {
+    "title": "Why Warmups Are Essential",
+    "items": [
+      { "icon": "🔥", "title": "Injury Prevention", "description": "Gradually prepare muscles and joints for intensive playing" },
+      { "icon": "⚡", "title": "Performance Enhancement", "description": "Improve coordination, speed, and accuracy from the start" },
+      { "icon": "🧠", "title": "Mental Focus", "description": "Center your mind and establish concentration for practice" },
+      { "icon": "💪", "title": "Muscle Memory", "description": "Reinforce proper technique and strengthen neural pathways" },
+      { "icon": "🎯", "title": "Consistency", "description": "Build reliable habits that lead to steady improvement" },
+      { "icon": "🎨", "title": "Creativity Flow", "description": "Prime your musical mind for creative expression and learning" }
+    ],
+    "tips": [
+      { "icon": "🐢", "title": "Start Slowly", "description": "Begin all exercises at a comfortable tempo. Speed comes naturally with consistency." },
+      { "icon": "⏰", "title": "Use a Metronome", "description": "Develop timing and rhythmic precision from day one of your practice." },
+      { "icon": "👂", "title": "Listen to Your Body", "description": "Stop if you feel pain or excessive tension. Warmups should feel good." },
+      { "icon": "📅", "title": "Stay Consistent", "description": "Regular 10-minute warmups are better than occasional long sessions." }
+    ],
+    "progressiveSteps": [
+      { "number": 1, "colorBg": "bg-blue-100", "colorText": "text-blue-600", "title": "Physical Preparation (3-5 min)", "description": "Start with gentle stretching to prepare your arms, wrists, and fingers for playing." },
+      { "number": 2, "colorBg": "bg-green-100", "colorText": "text-green-600", "title": "Basic Motor Skills (5-8 min)", "description": "Simple finger exercises and picking patterns to activate muscle memory and coordination." },
+      { "number": 3, "colorBg": "bg-purple-100", "colorText": "text-purple-600", "title": "Technical Skills (8-12 min)", "description": "Scales, chord changes, and rhythmic patterns specific to your practice goals." },
+      { "number": 4, "colorBg": "bg-orange-100", "colorText": "text-orange-600", "title": "Musical Integration (5-10 min)", "description": "Apply warmed-up skills to simple songs or musical passages before main practice." }
+    ]
+  },
+  "itemTypes": [
+    { "name": "Finger Exercises", "icon": "🤲", "href": "/lessons/practice/warmups/finger-exercises", "description": "Build finger strength, dexterity, and independence through targeted exercises.", "duration": "5-10 min", "difficulty": "Beginner", "color": "bg-blue-50 border-blue-200 hover:bg-blue-100", "iconColor": "text-blue-600" },
+    { "name": "Picking Patterns", "icon": "🎸", "href": "/lessons/practice/warmups/picking-patterns", "description": "Develop picking accuracy and speed with systematic pattern practice.", "duration": "8-12 min", "difficulty": "Beginner", "color": "bg-green-50 border-green-200 hover:bg-green-100", "iconColor": "text-green-600" },
+    { "name": "Chord Changes", "icon": "🔄", "href": "/lessons/practice/warmups/chord-changes", "description": "Master smooth, efficient transitions between chord positions.", "duration": "6-10 min", "difficulty": "Intermediate", "color": "bg-purple-50 border-purple-200 hover:bg-purple-100", "iconColor": "text-purple-600" },
+    { "name": "Scales & Modes", "icon": "🎶", "href": "/lessons/practice/warmups/scales-modes", "description": "Run scales and modes to build speed, accuracy, and muscle memory.", "duration": "10-15 min", "difficulty": "Intermediate", "color": "bg-orange-50 border-orange-200 hover:bg-orange-100", "iconColor": "text-orange-600" },
+    { "name": "Stretching", "icon": "🧘", "href": "/lessons/practice/warmups/stretching", "description": "Prevent injury and increase flexibility with proper stretching routines.", "duration": "3-5 min", "difficulty": "All Levels", "color": "bg-teal-50 border-teal-200 hover:bg-teal-100", "iconColor": "text-teal-600" },
+    { "name": "Rhythm Drills", "icon": "🥁", "href": "/lessons/practice/warmups/rhythm-drills", "description": "Sharpen timing and rhythmic precision with metronome exercises.", "duration": "5-8 min", "difficulty": "All Levels", "color": "bg-red-50 border-red-200 hover:bg-red-100", "iconColor": "text-red-600" },
+    { "name": "Fretboard Navigation", "icon": "🗺️", "href": "/lessons/practice/warmups/fretboard-navigation", "description": "Master position shifting and fretboard mapping to navigate the entire neck.", "duration": "8-12 min", "difficulty": "Intermediate", "color": "bg-sky-50 border-sky-200 hover:bg-sky-100", "iconColor": "text-sky-600" },
+    { "name": "Dynamics Control", "icon": "🔊", "href": "/lessons/practice/warmups/dynamics-control", "description": "Develop volume control, accents, and ghost notes for expressive playing.", "duration": "5-10 min", "difficulty": "Intermediate", "color": "bg-amber-50 border-amber-200 hover:bg-amber-100", "iconColor": "text-amber-600" }
+  ],
+  "journeySection": {
+    "title": "Start Your Warmup Journey",
+    "description": "Consistent warmups are the secret to injury-free, progressive guitar development. Start with basic exercises and gradually build your routine. Your future self will thank you.",
+    "links": [
+      { "href": "/lessons/practice/warmups/stretching", "label": "Start with Stretching", "colorBg": "bg-teal-600", "colorText": "text-white", "colorHover": "hover:bg-teal-700" },
+      { "href": "/lessons/practice/warmups/finger-exercises", "label": "Begin Finger Exercises", "colorBg": "bg-blue-600", "colorText": "text-white", "colorHover": "hover:bg-blue-700" },
+      { "href": "/lessons/practice/warmups/picking-patterns", "label": "Practice Picking Patterns", "colorBg": "bg-green-600", "colorText": "text-white", "colorHover": "hover:bg-green-700" }
+    ]
+  }
+}

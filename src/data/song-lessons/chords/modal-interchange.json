@@ -1,0 +1,252 @@
+{
+  "slug": "modal-interchange",
+  "category": "chords",
+  "pageTitle": "Modal Interchange",
+  "subtitle": "Discover how borrowing chords from parallel modes adds color and emotional depth",
+  "heroGradient": "from-indigo-50 to-purple-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "Borrowing From Parallel Worlds",
+    "text": "Modal interchange is like having access to a parallel universe of your key. While staying in C major, you can borrow chords from C minor (or other C modes) to add emotional colors that pure major can't provide.",
+    "columns": [
+      { "title": "Parallel Keys", "text": "C major and C minor share the same tonic but have different scale tones, creating contrasting harmonic palettes." },
+      { "title": "Emotional Colors", "text": "Borrowed chords add darkness to major keys, brightness to minor keys, or modal flavors like blues or folk." }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Most Common Borrowed Chords",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "bVII",
+          "description": "Bb in C major",
+          "fields": [
+            { "label": "From", "value": "C minor" },
+            { "label": "Function", "value": "Subtonic" },
+            { "label": "Usage", "value": "Very common in rock - creates modal/bluesy feel" }
+          ],
+          "items": ["\"Sweet Child O' Mine\"", "\"Don't Stop Believin'\""]
+        },
+        {
+          "title": "bVI",
+          "description": "Ab in C major",
+          "fields": [
+            { "label": "From", "value": "C minor" },
+            { "label": "Function", "value": "Submediant" },
+            { "label": "Usage", "value": "Dramatic, cinematic quality - often before bVII" }
+          ],
+          "items": ["\"Creep\"", "\"While My Guitar Gently Weeps\""]
+        },
+        {
+          "title": "bIII",
+          "description": "Eb in C major",
+          "fields": [
+            { "label": "From", "value": "C minor" },
+            { "label": "Function", "value": "Mediant" },
+            { "label": "Usage", "value": "Dark, mysterious - less common but powerful" }
+          ],
+          "items": ["\"Blackbird\"", "\"Michelle\""]
+        },
+        {
+          "title": "iv",
+          "description": "Fm in C major",
+          "fields": [
+            { "label": "From", "value": "C minor" },
+            { "label": "Function", "value": "Minor subdominant" },
+            { "label": "Usage", "value": "Adds melancholy to major keys - \"picardy third\"" }
+          ],
+          "items": ["\"Hey Jude\"", "\"Eleanor Rigby\""]
+        },
+        {
+          "title": "ii\u00b0",
+          "description": "D\u00b0 in C major",
+          "fields": [
+            { "label": "From", "value": "C minor" },
+            { "label": "Function", "value": "Diminished supertonic" },
+            { "label": "Usage", "value": "Tension and instability - often passing" }
+          ],
+          "items": ["Jazz standards", "Classical music"]
+        }
+      ]
+    },
+    {
+      "title": "Modal Interchange in Action",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "I - bVII - IV progression",
+          "description": "Classic rock progression mixing major and minor",
+          "badge": { "text": "I - bVII - IV", "color": "indigo" },
+          "fields": [
+            { "label": "Example", "value": "C - Bb - F" },
+            { "label": "Context", "value": "The bVII (Bb) is borrowed from C minor, creating a modal sound" },
+            { "label": "Emotional Effect", "value": "Triumphant yet grounded, anthemic quality" }
+          ],
+          "items": ["\"Sweet Child O' Mine\"", "\"Don't Stop Believin'\""]
+        },
+        {
+          "title": "vi - bVI - bVII - I",
+          "description": "Chromatic descent with dramatic resolution",
+          "badge": { "text": "vi - bVI - bVII - I", "color": "indigo" },
+          "fields": [
+            { "label": "Example", "value": "Am - Ab - Bb - C" },
+            { "label": "Context", "value": "Both bVI and bVII borrowed from parallel minor" },
+            { "label": "Emotional Effect", "value": "Melancholic buildup to hopeful resolution" }
+          ],
+          "items": ["\"Creep\" by Radiohead", "\"While My Guitar Gently Weeps\""]
+        },
+        {
+          "title": "I - iv - I progression",
+          "description": "Major-minor contrast in same tonic",
+          "badge": { "text": "I - iv - I", "color": "indigo" },
+          "fields": [
+            { "label": "Example", "value": "C - Fm - C" },
+            { "label": "Context", "value": "The iv (Fm) creates immediate emotional shift" },
+            { "label": "Emotional Effect", "value": "Bittersweet, adds depth and complexity" }
+          ],
+          "items": ["\"Hey Jude\" (Na na na section)", "\"Eleanor Rigby\""]
+        },
+        {
+          "title": "I - bIII - bVII - IV",
+          "description": "Multiple borrowed chords create modal landscape",
+          "badge": { "text": "I - bIII - bVII - IV", "color": "indigo" },
+          "fields": [
+            { "label": "Example", "value": "C - Eb - Bb - F" },
+            { "label": "Context", "value": "Eb and Bb both from C minor, F remains diatonic" },
+            { "label": "Emotional Effect", "value": "Epic, mysterious, otherworldly" }
+          ],
+          "items": ["Progressive rock", "Cinematic scoring"]
+        }
+      ]
+    },
+    {
+      "title": "Modal Color Palette",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Dorian (ii)",
+          "description": "Sophisticated minor - jazzy, folk-like",
+          "badge": { "text": "Jazz, folk, sophisticated pop", "color": "purple" },
+          "fields": [
+            { "label": "Chords", "value": "i - ii - bIII - IV - v - vi\u00b0 - bVII" },
+            { "label": "Borrows to", "value": "Natural minor" },
+            { "label": "Example", "value": "D Dorian in C major context" }
+          ]
+        },
+        {
+          "title": "Mixolydian (V)",
+          "description": "Major with b7 - bluesy, rock-oriented",
+          "badge": { "text": "Rock, blues, country", "color": "purple" },
+          "fields": [
+            { "label": "Chords", "value": "I - ii - iii\u00b0 - IV - v - vi - bVII" },
+            { "label": "Borrows to", "value": "Major" },
+            { "label": "Example", "value": "G Mixolydian in C major context" }
+          ]
+        },
+        {
+          "title": "Aeolian (vi)",
+          "description": "Natural minor - dark, serious",
+          "badge": { "text": "Most common modal interchange source", "color": "purple" },
+          "fields": [
+            { "label": "Chords", "value": "i - ii\u00b0 - bIII - iv - v - bVI - bVII" },
+            { "label": "Borrows to", "value": "Major" },
+            { "label": "Example", "value": "A minor (Aeolian) in C major context" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis: \"Creep\" by Radiohead",
+      "bgColor": "blue-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "The Power of bVI and bVII",
+          "fields": [
+            { "label": "Progression", "value": "G - B - C - Cm" },
+            { "label": "Analysis", "value": "I - III - IV - iv (in G major)" }
+          ],
+          "items": [
+            "Cm (iv): Borrowed from G minor",
+            "Creates immediate shift from bright to dark",
+            "The word \"creep\" lands on this borrowed chord"
+          ]
+        },
+        {
+          "title": "Why It's Genius",
+          "items": [
+            "Major progressions sound hopeful and confident",
+            "The borrowed iv chord introduces self-doubt",
+            "Perfect musical metaphor for the lyrics",
+            "The contrast is jarring but beautiful",
+            "Emotional Journey: Confidence \u2192 Brightness \u2192 Stability \u2192 Self-doubt"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Apply Modal Interchange",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Best Practices",
+          "bgColor": "green-50",
+          "items": [
+            "Start with common borrowed chords (bVII, bVI, iv)",
+            "Use sparingly - too much loses the contrast",
+            "Consider the lyrics and emotional context",
+            "Practice voice leading between major and borrowed chords",
+            "Listen to how others use these chords"
+          ]
+        },
+        {
+          "title": "Common Mistakes",
+          "bgColor": "yellow-50",
+          "items": [
+            "Using too many borrowed chords - sounds unfocused",
+            "Ignoring voice leading - creates awkward jumps",
+            "Not considering the melody - some clash",
+            "Using borrowed chords just to be \"sophisticated\"",
+            "Forgetting the emotional purpose they serve"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Practice",
+        "items": [
+          "Practice I-bVII-IV in multiple keys",
+          "Replace IV with iv in simple progressions",
+          "Learn the parallel minor scale for any major key",
+          "Listen for borrowed chords in rock songs"
+        ]
+      },
+      {
+        "title": "Advanced Practice",
+        "items": [
+          "Experiment with Dorian and Mixolydian borrowed chords",
+          "Reharmonize pop songs with modal interchange",
+          "Practice smooth voice leading with borrowed chords",
+          "Write progressions that tell emotional stories"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/secondary-dominants", "label": "Secondary Dominants" },
+    { "href": "/lessons/songs/chords/extended", "label": "Extended Chords" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords/progressions", "label": "Common Chord Progressions" },
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading Principles" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

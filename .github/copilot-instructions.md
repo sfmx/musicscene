@@ -113,6 +113,15 @@ src/
 
 ## Critical Knowledge
 
+### Affiliate & Revenue System
+Product names across gear lesson pages and song equipment sections are automatically linked to Amazon via the `AffiliateLink` component. The system uses a two-tier approach:
+1. **Curated matches** from `src/data/affiliate-products.json` take priority (~150 entries)
+2. **Auto-fallback** generates Amazon search links for any text containing a known brand from `src/lib/affiliateBrands.ts` (~80 brands)
+
+Key files: `src/lib/affiliateLinks.ts` (core logic), `src/lib/affiliateBrands.ts` (brand dictionary), `src/components/Revenue/AffiliateLink.tsx` (component), `src/components/Revenue/SmartAffiliateText.tsx` (comma-separated product lists). The Amazon Associates tag is configured via `NEXT_PUBLIC_AMAZON_TAG` env var (default: `musicscene-20`).
+
+Run `npm run affiliate:audit` to check coverage. To add a brand, add it to `AFFILIATE_BRANDS` in `affiliateBrands.ts`. To add a curated product, add it to `affiliate-products.json` (most-specific patterns first).
+
 ### Song Data Registry
 All songs must be imported and registered in `src/lib/songData.ts`:
 ```typescript

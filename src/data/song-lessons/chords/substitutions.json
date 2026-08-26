@@ -1,0 +1,181 @@
+{
+  "slug": "substitutions",
+  "category": "chords",
+  "pageTitle": "Chord Substitutions",
+  "subtitle": "Learn how different chords can serve the same harmonic function while adding sophistication",
+  "heroGradient": "from-orange-50 to-red-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "The Art of Harmonic Choice",
+    "text": "Chord substitution is like having a vocabulary of synonyms in music. When you know that several different chords can serve the same harmonic function, you can choose the one that best fits the emotional color and voice leading you want.",
+    "columns": [
+      { "title": "Emotional Color", "text": "Same function, different feeling: vi feels nostalgic, iii feels uncertain, both can replace I" },
+      { "title": "Voice Leading", "text": "Choose substitutions that create smoother connections between chords" },
+      { "title": "Sophistication", "text": "Transform simple progressions into more interesting harmonic journeys" }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Substitution by Function",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Tonic Function",
+          "description": "Chords that feel stable and at rest",
+          "fields": [{ "label": "Chords", "value": "I, vi, iii" }],
+          "items": ["I \u2194 vi (most common)", "I \u2192 iii (less stable)", "vi \u2192 iii (minor to minor)"]
+        },
+        {
+          "title": "Subdominant Function",
+          "description": "Chords that move away from home",
+          "fields": [{ "label": "Chords", "value": "IV, ii, bVII" }],
+          "items": ["IV \u2194 ii (both very common)", "IV \u2192 bVII (rock/modal sound)", "ii \u2192 bVII (darker color)"]
+        },
+        {
+          "title": "Dominant Function",
+          "description": "Chords that create tension and want to resolve",
+          "fields": [{ "label": "Chords", "value": "V, V7, vii\u00b0, bII7" }],
+          "items": ["V \u2194 V7 (add tension)", "V7 \u2194 bII7 (tritone sub)", "V \u2192 vii\u00b0 (leading tone emphasis)"]
+        }
+      ]
+    },
+    {
+      "title": "Types of Substitutions",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Relative Substitution",
+          "description": "Replace a chord with its relative major/minor",
+          "badge": { "text": "Beginner", "color": "green" },
+          "items": ["I (C) \u2192 vi (Am): Share two common tones (C-E)", "vi (Am) \u2192 I (C): Brightens minor with major", "IV (F) \u2192 ii (Dm): Both serve subdominant function"]
+        },
+        {
+          "title": "Tritone Substitution",
+          "description": "Replace dominant chord with another dominant a tritone away",
+          "badge": { "text": "Advanced", "color": "red" },
+          "items": ["G7 (V7) \u2192 Db7 (bII7): Same tritone interval (B-F), different root", "D7 (V7/V) \u2192 Ab7 (bII7/V): Chromatic bass movement"]
+        },
+        {
+          "title": "Circle of Fifths",
+          "description": "Replace chord with one a 5th away that shares function",
+          "badge": { "text": "Intermediate", "color": "yellow" },
+          "items": ["IV (F) \u2192 bVII (Bb): Both move away from tonic", "vi (Am) \u2192 iii (Em): Parallel motion down the circle"]
+        },
+        {
+          "title": "Diminished Passing",
+          "description": "Use diminished chords between diatonic chords",
+          "badge": { "text": "Intermediate", "color": "yellow" },
+          "items": ["I-ii (C-Dm) \u2192 I-#idim-ii (C-C#dim-Dm): Chromatic bass line C-C#-D", "vi-V (Am-G) \u2192 vi-#vidim-V (Am-A#dim-G): Smooth voice leading"]
+        }
+      ]
+    },
+    {
+      "title": "Substitutions in Popular Songs",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Let It Be\" - Verse",
+          "description": "Original: C - G - Am - F (I - V - vi - IV)",
+          "items": [
+            "Replace vi with iii: C - G - Em - F (Em is less stable than Am, creates more forward motion)",
+            "Replace IV with ii: C - G - Am - Dm (Dm is darker than F, more melancholic feeling)",
+            "Add diminished passing: C - G - Am - A#dim - F/Bb (A#dim creates chromatic bass line A-A#-Bb)"
+          ]
+        },
+        {
+          "title": "\"Yesterday\" - Bridge",
+          "description": "Original: Em - A7 - Dm - G7 (iii - VI7 - ii - V7)",
+          "items": [
+            "Tritone substitute A7: Em - Eb7 - Dm - G7 (Eb7 replaces A7, creates chromatic bass movement)",
+            "Replace iii with I: C - A7 - Dm - G7 (C major brighter than Em, changes emotional color)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Genre-Specific Approaches",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Jazz Substitutions",
+          "bgColor": "blue-50",
+          "items": [
+            "ii-V-I becomes: ii-bII7-I (Tritone substitute creates chromatic bass movement)",
+            "Dominant chains: VII7-III7-VI7-II7-V7-I (Each dominant resolves down a 5th)",
+            "Diminished passing: Abundant use between any two chords (Creates sophisticated harmonic rhythm)"
+          ]
+        },
+        {
+          "title": "Pop/Rock Substitutions",
+          "bgColor": "green-50",
+          "items": [
+            "Modal interchange: bVII, bVI, bIII from parallel minor (Adds darkness and modal flavor)",
+            "Relative substitutions: I \u2194 vi most common (Emotional contrast without losing function)",
+            "Power chord movement: Focus on bass line motion (Function less important than melodic bass)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Choose the Right Substitution",
+      "bgColor": "yellow-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Consider These Factors",
+          "items": [
+            "1. Voice Leading: Does it create smoother connections?",
+            "2. Emotional Color: Does it match the lyrical content?",
+            "3. Genre Expectations: What sounds natural in this style?",
+            "4. Melody Support: Does it support the vocal melody?"
+          ]
+        },
+        {
+          "title": "Decision Framework",
+          "items": [
+            "Start with function: What job does this chord need to do?",
+            "Consider context: What chords come before and after?",
+            "Test alternatives: Try different options and trust your ears",
+            "Remember the melody: Some substitutions clash with vocal lines",
+            "Serve the song: Sophistication should enhance, not distract"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Practice",
+        "items": [
+          "Practice I-vi-IV-V with different tonic substitutions",
+          "Replace IV with ii in simple progressions",
+          "Try vi instead of I at the end of phrases",
+          "Learn to hear functional equivalents"
+        ]
+      },
+      {
+        "title": "Advanced Practice",
+        "items": [
+          "Practice tritone substitutions in ii-V-I progressions",
+          "Add diminished passing chords to standards",
+          "Reharmonize simple songs with complex substitutions",
+          "Analyze jazz standards for substitution patterns"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/modal-interchange", "label": "Modal Interchange" },
+    { "href": "/lessons/songs/chords/secondary-dominants", "label": "Secondary Dominants" },
+    { "href": "/lessons/songs/chords/extended", "label": "Extended Chords" },
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading Principles" },
+    { "href": "/lessons/songs/chords/roman-numerals", "label": "Roman Numeral Analysis" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "slug": "minor-3rd",
+  "intervalInfo": {
+    "name": "Minor 3rd Interval",
+    "pageTitle": "Minor 3rd Interval",
+    "subtitle": "The melancholic interval - 3 semitones that defines minor chords and creates the emotional, introspective sound of minor tonality.",
+    "colorScheme": "indigo",
+    "heroGradient": "bg-gradient-to-r from-blue-600 to-indigo-700",
+    "tags": [
+      "3 Semitones",
+      "Minor Chord Foundation",
+      "Emotional Depth",
+      "Melancholic Beauty"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "3 semitones (1\u00bd whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Minor"
+      },
+      {
+        "label": "Sound",
+        "value": "Dark, melancholic, consonant"
+      },
+      {
+        "label": "Consonance",
+        "value": "Imperfect consonance"
+      },
+      {
+        "label": "Function",
+        "value": "Defines minor chord quality"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to Eb",
+        "value": "Classic minor 3rd"
+      },
+      {
+        "label": "A to C",
+        "value": "In A minor chord"
+      },
+      {
+        "label": "E to G",
+        "value": "In E minor chord"
+      },
+      {
+        "label": "Do to Me",
+        "value": "In natural minor scale"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Minor 3rd Intervals - Foundation of Minor Harmony",
+      "description": "The minor 3rd (3 semitones) is the defining interval that creates minor chord quality and the emotional character of minor tonality.",
+      "examples": [
+        {
+          "title": "A \u2192 C Minor 3rd",
+          "subtitle": "Foundation of A minor chord",
+          "chord1": "A_to_C",
+          "chord1Label": "A (5th string open)",
+          "chord2": "C_from_A",
+          "chord2Label": "C (4th string 2nd fret)",
+          "alphaTex": "0.5 2.4",
+          "alphaTexTitle": "A to C Minor 3rd",
+          "caption": "Melancholic, introspective quality",
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorSubtitle": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        },
+        {
+          "title": "E \u2192 G Minor 3rd",
+          "subtitle": "Foundation of E minor chord",
+          "chord1": "E_to_G",
+          "chord1Label": "E (6th string open)",
+          "chord2": "G_from_E",
+          "chord2Label": "G (6th string 3rd fret)",
+          "alphaTex": "0.6 3.6",
+          "alphaTexTitle": "E to G Minor 3rd",
+          "caption": "Dark, emotional depth",
+          "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+          "colorBorder": "border border-indigo-200",
+          "colorTitle": "text-indigo-800",
+          "colorSubtitle": "text-indigo-700",
+          "colorCaption": "text-indigo-600"
+        },
+        {
+          "title": "D \u2192 F Minor 3rd",
+          "subtitle": "Foundation of D minor chord",
+          "chord1": "D_to_F",
+          "chord1Label": "D (4th string open)",
+          "chord2": "F_from_D",
+          "chord2Label": "F (4th string 3rd fret)",
+          "alphaTex": "0.4 3.4",
+          "alphaTexTitle": "D to F Minor 3rd",
+          "caption": "Contemplative, sophisticated",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorSubtitle": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Minor Chord Construction with Minor 3rds",
+      "items": [
+        {
+          "title": "A Minor Chord",
+          "chord": "Am_chord_m3",
+          "chordLabel": "Complete A minor chord",
+          "alphaTex": "0.5 2.4 0.4",
+          "alphaTexTitle": "A Minor Chord",
+          "alphaTexCaption": "A-C-E: Root, minor 3rd, perfect 5th",
+          "bullets": [
+            "Minor 3rd: A \u2192 C (defines minor quality)",
+            "Perfect 5th: A \u2192 E (provides stability)",
+            "Open fingering: Natural guitar chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorCaption": "text-emerald-600"
+        },
+        {
+          "title": "E Minor Chord",
+          "chord": "Em_chord_m3",
+          "chordLabel": "Complete E minor chord",
+          "alphaTex": "0.6 3.6 0.5",
+          "alphaTexTitle": "E Minor Chord",
+          "alphaTexCaption": "E-G-B: Root, minor 3rd, perfect 5th",
+          "bullets": [
+            "Minor 3rd: E \u2192 G (creates minor mood)",
+            "Perfect 5th: E \u2192 B (harmonic foundation)",
+            "Easy fingering: Two-finger chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+          "colorBorder": "border border-teal-200",
+          "colorTitle": "text-teal-800",
+          "colorText": "text-teal-700",
+          "colorCaption": "text-teal-600"
+        },
+        {
+          "title": "D Minor Chord",
+          "chord": "Dm_chord_m3",
+          "chordLabel": "Complete D minor chord",
+          "alphaTex": "0.4 3.4 0.5",
+          "alphaTexTitle": "D Minor Chord",
+          "alphaTexCaption": "D-F-A: Root, minor 3rd, perfect 5th",
+          "bullets": [
+            "Minor 3rd: D \u2192 F (minor character)",
+            "Perfect 5th: D \u2192 A (structural support)",
+            "Compact voicing: Three-finger chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-rose-50 to-rose-100",
+          "colorBorder": "border border-rose-200",
+          "colorTitle": "text-rose-800",
+          "colorText": "text-rose-700",
+          "colorCaption": "text-rose-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Fretboard Navigation",
+        "subtitle": "Minor 3rd Patterns",
+        "alphaTex": "3.5 6.5 | 3.4 4.5 | 3.6 6.6",
+        "alphaTexTitle": "Minor 3rd intervals: 3 semitones apart",
+        "alphaTexCaption": "Minor 3rd intervals: 3 semitones apart",
+        "bullets": [
+          "Same string: 3 frets apart",
+          "Cross strings: Various fingering options",
+          "Scale context: 1st to 3rd degree in minor scales"
+        ],
+        "colorBg": "bg-gradient-to-br from-slate-50 to-slate-100",
+        "colorBorder": "border border-slate-200",
+        "colorTitle": "text-slate-800",
+        "colorText": "text-slate-700",
+        "colorCaption": "text-slate-600"
+      },
+      {
+        "title": "Musical Expression",
+        "subtitle": "Emotional Character",
+        "alphaTex": "0.5 2.4 | 0.4 3.4",
+        "alphaTexTitle": "Minor 3rds create introspective, melancholic moods",
+        "alphaTexCaption": "Minor 3rds create introspective, melancholic moods",
+        "bullets": [
+          "Blues context: \u266d3 over major progressions",
+          "Minor scales: Natural minor, harmonic minor",
+          "Modal applications: Dorian, Aeolian modes"
+        ],
+        "colorBg": "bg-gradient-to-br from-gray-50 to-gray-100",
+        "colorBorder": "border border-gray-200",
+        "colorTitle": "text-gray-800",
+        "colorText": "text-gray-700",
+        "colorCaption": "text-gray-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "Chopin's Funeral March",
+        "description": "Bb minor with prominent minor 3rd (Bb to Db)",
+        "detail": "Exemplifies the somber quality of minor 3rds"
+      },
+      {
+        "title": "Bach's \"Air on G String\"",
+        "description": "Beautiful minor harmonies featuring minor 3rd relationships",
+        "detail": "Shows expressive power of minor intervals"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Stairway to Heaven\" - Led Zeppelin",
+        "description": "Am-C-D-F progression with minor 3rd foundations",
+        "detail": "Classic rock ballad using minor harmony"
+      },
+      {
+        "title": "\"Summertime\" - George Gershwin",
+        "description": "Minor blues harmony with expressive minor 3rds",
+        "detail": "Jazz standard showcasing minor tonality"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Sing natural minor scales focusing on 1-\u266d3",
+        "Practice major vs minor 3rd recognition",
+        "Listen to minor chord progressions",
+        "Use \"Greensleeves\" (prominent minor 3rds)",
+        "Study blues scale minor 3rd relationships"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Play minor 3rds across all string pairs",
+        "Practice minor chord arpeggios",
+        "Work on minor scale patterns",
+        "Practice minor pentatonic scales",
+        "Study minor chord progressions (i-iv-V-i)"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Compose melodies using minor 3rd leaps",
+        "Analyze minor progressions in songs",
+        "Practice minor key improvisation",
+        "Study modal minor scales (Dorian, Aeolian)",
+        "Work on minor chord voicings"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Emotional Associations",
+        "description": "The minor 3rd creates feelings of introspection, melancholy, and emotional depth. It's neither harsh nor overly sweet, making it perfect for expressing complex emotions."
+      },
+      {
+        "title": "Cultural Context",
+        "description": "In Western music, minor 3rds are associated with sadness, contemplation, and sophistication, though this varies across different musical cultures."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Dramatic Effect",
+        "description": "Composers use minor 3rds to create emotional contrast, build tension, and provide resolution through major-minor relationships."
+      },
+      {
+        "title": "Genre Characteristics",
+        "description": "Essential in blues, jazz, classical minor keys, and modern alternative/indie music for creating authentic emotional expression."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Major 3rd",
+      "description": "4 semitones - creates major chord quality",
+      "detail": "Direct comparison shows major vs minor emotional qualities",
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border border-yellow-200",
+      "colorTitle": "text-yellow-800",
+      "colorText": "text-yellow-700",
+      "colorDetail": "text-yellow-600"
+    },
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - completes the minor triad",
+      "detail": "Root + Minor 3rd + Perfect 5th = Minor chord",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Major 6th",
+      "description": "9 semitones - inversion of minor 3rd",
+      "detail": "Interval inversion: Minor 3rd inverts to Major 6th",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the minor 3rd, explore how it relates to other intervals and creates different harmonic colors.",
+    "links": [
+      {
+        "slug": "major-3rd",
+        "title": "Major 3rd",
+        "description": "Compare the bright, happy sound of major 3rds against the introspective minor 3rd quality.",
+        "actionText": "Study the contrast",
+        "icon": "sun",
+        "colorBg": "bg-yellow-100",
+        "colorBgHover": "group-hover:bg-yellow-200",
+        "colorBorder": "hover:border-yellow-300",
+        "colorText": "text-yellow-600",
+        "colorTextHover": "group-hover:text-yellow-700"
+      },
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Learn the stable foundation that completes minor chords when combined with the minor 3rd.",
+        "actionText": "Build stability",
+        "icon": "target",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      },
+      {
+        "slug": "minor-7th",
+        "title": "Minor 7th",
+        "description": "Explore the rich, complex emotions created by extending minor harmony with 7th intervals.",
+        "actionText": "Add complexity",
+        "icon": "theater",
+        "colorBg": "bg-rose-100",
+        "colorBgHover": "group-hover:bg-rose-200",
+        "colorBorder": "hover:border-rose-300",
+        "colorText": "text-rose-600",
+        "colorTextHover": "group-hover:text-rose-700"
+      }
+    ]
+  }
+}

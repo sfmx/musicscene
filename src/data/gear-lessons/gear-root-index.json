@@ -1,0 +1,281 @@
+{
+  "pageTitle": "Guitar Gear & Equipment Guide",
+  "subtitle": "Master the tools of the trade with comprehensive guides to guitars, amps, effects, recording gear, and accessories that shape your sound.",
+  "heroIcon": "🎛️",
+  "heroDescription": "Your sound is your signature. Learn about guitars, amplifiers, effects, recording gear, and accessories that will help you find and shape your unique musical voice. From beginner setups to professional rigs, we'll guide you through the gear that matters.",
+  "backLink": {
+    "href": "/lessons",
+    "label": "Back to Lessons"
+  },
+  "gearCategories": [
+    {
+      "title": "Guitar Types",
+      "href": "/lessons/gear/guitars",
+      "icon": "🎸",
+      "description": "Explore different guitar types and find your perfect instrument",
+      "color": "bg-amber-50 border-amber-200 hover:bg-amber-100",
+      "iconColor": "text-amber-600",
+      "concepts": [
+        "Electric guitars",
+        "Acoustic guitars",
+        "Classical guitars",
+        "Bass guitars",
+        "12-string guitars",
+        "Baritone guitars"
+      ]
+    },
+    {
+      "title": "Amps & Cabinets",
+      "href": "/lessons/gear/amps",
+      "icon": "🔊",
+      "description": "Master amplification and speaker systems for every style",
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "concepts": [
+        "Tube amplifiers",
+        "Solid-state amps",
+        "Digital modeling",
+        "Speaker cabinets",
+        "Combo vs head/cab",
+        "Wattage considerations"
+      ]
+    },
+    {
+      "title": "Effects Pedals",
+      "href": "/lessons/gear/effects",
+      "icon": "🎛️",
+      "description": "Shape your tone with overdrive, delay, reverb, and more",
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600",
+      "concepts": [
+        "Overdrive/Distortion",
+        "Delay & Echo",
+        "Reverb",
+        "Modulation effects",
+        "Wah pedals",
+        "Signal chain order"
+      ]
+    },
+    {
+      "title": "Recording Gear",
+      "href": "/lessons/gear/recording",
+      "icon": "🎙️",
+      "description": "Capture your music with professional recording equipment",
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600",
+      "concepts": [
+        "Audio interfaces",
+        "Microphones",
+        "Digital Audio Workstations",
+        "Monitors & headphones",
+        "Preamps",
+        "Recording techniques"
+      ]
+    },
+    {
+      "title": "Accessories",
+      "href": "/lessons/gear/accessories",
+      "icon": "🧰",
+      "description": "Essential accessories for maintenance, performance, and comfort",
+      "color": "bg-green-50 border-green-200 hover:bg-green-100",
+      "iconColor": "text-green-600",
+      "concepts": [
+        "Strings & picks",
+        "Cables & connectors",
+        "Tuners & metronomes",
+        "Stands & cases",
+        "Maintenance tools",
+        "Performance accessories"
+      ]
+    }
+  ],
+  "gearPhilosophy": [
+    {
+      "title": "Tone First, Gear Second",
+      "description": "Great tone comes from technique and musical knowledge, not expensive gear",
+      "icon": "🎯",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "title": "Quality Over Quantity",
+      "description": "Invest in fewer, higher-quality pieces rather than many cheap items",
+      "icon": "💎",
+      "color": "bg-emerald-50 border-emerald-200"
+    },
+    {
+      "title": "Know Your Needs",
+      "description": "Choose gear based on your musical style, venue size, and budget",
+      "icon": "🎪",
+      "color": "bg-purple-50 border-purple-200"
+    },
+    {
+      "title": "Try Before You Buy",
+      "description": "Always test gear in person when possible to ensure it fits your style",
+      "icon": "👂",
+      "color": "bg-orange-50 border-orange-200"
+    }
+  ],
+  "budgetGuide": [
+    {
+      "category": "Beginner Setup",
+      "budget": "$300-800",
+      "description": "Essential gear to start your musical journey",
+      "items": [
+        "Entry-level guitar",
+        "Small practice amp",
+        "Basic accessories",
+        "Tuner and picks"
+      ],
+      "color": "bg-green-100"
+    },
+    {
+      "category": "Intermediate Setup",
+      "budget": "$800-2500",
+      "description": "Quality gear for serious practice and small gigs",
+      "items": [
+        "Mid-range guitar",
+        "Versatile combo amp",
+        "Essential effects pedals",
+        "Recording interface"
+      ],
+      "color": "bg-blue-100"
+    },
+    {
+      "category": "Professional Setup",
+      "budget": "$2500-8000+",
+      "description": "High-end gear for recording and live performance",
+      "items": [
+        "Professional guitars",
+        "High-end amplification",
+        "Comprehensive pedalboard",
+        "Studio recording gear"
+      ],
+      "color": "bg-purple-100"
+    }
+  ],
+  "toneChain": [
+    {
+      "component": "Guitar",
+      "description": "The foundation of your sound",
+      "icon": "🎸"
+    },
+    {
+      "component": "Effects Pedals",
+      "description": "Shape and color your signal",
+      "icon": "🎛️"
+    },
+    {
+      "component": "Amplifier",
+      "description": "Amplify and add character",
+      "icon": "🔊"
+    },
+    {
+      "component": "Speaker Cabinet",
+      "description": "Convert signal to sound waves",
+      "icon": "📢"
+    },
+    {
+      "component": "Room Acoustics",
+      "description": "Final acoustic environment",
+      "icon": "🏠"
+    }
+  ],
+  "maintenanceTips": [
+    {
+      "title": "String Care",
+      "description": "Keep your strings fresh and your guitar in tune",
+      "icon": "🎼",
+      "tips": [
+        "Change strings regularly (every 1-3 months)",
+        "Wipe down strings after playing",
+        "Use string cleaner for extended life",
+        "Keep spare sets handy"
+      ]
+    },
+    {
+      "title": "Electronics Maintenance",
+      "description": "Protect your gear investment with proper care",
+      "icon": "⚡",
+      "tips": [
+        "Use quality cables and connectors",
+        "Power down amps before connecting",
+        "Keep gear dust-free and dry",
+        "Service amps annually"
+      ]
+    },
+    {
+      "title": "Storage & Transport",
+      "description": "Protect your gear during storage and travel",
+      "icon": "🛡️",
+      "tips": [
+        "Use proper cases for transport",
+        "Control humidity and temperature",
+        "Loosen strings for long-term storage",
+        "Secure pedals and cables"
+      ]
+    }
+  ],
+  "buyingStrategies": [
+    {
+      "title": "Before You Buy",
+      "items": [
+        {
+          "title": "Research Thoroughly",
+          "description": "Read reviews, watch demos, and understand specifications before making any purchase.",
+          "color": "bg-blue-50 border-blue-200"
+        },
+        {
+          "title": "Set a Realistic Budget",
+          "description": "Include all necessary accessories and consider ongoing costs like maintenance and consumables.",
+          "color": "bg-green-50 border-green-200"
+        },
+        {
+          "title": "Test In Context",
+          "description": "Try gear in similar conditions to how you'll use it - home practice, studio, or live venues.",
+          "color": "bg-purple-50 border-purple-200"
+        }
+      ]
+    },
+    {
+      "title": "Making the Purchase",
+      "items": [
+        {
+          "title": "Buy from Reputable Dealers",
+          "description": "Choose dealers with good return policies, warranties, and customer service support.",
+          "color": "bg-orange-50 border-orange-200"
+        },
+        {
+          "title": "Consider Used Gear",
+          "description": "Quality used gear can offer excellent value, especially for vintage and high-end equipment.",
+          "color": "bg-red-50 border-red-200"
+        },
+        {
+          "title": "Think Long-term",
+          "description": "Invest in gear that will grow with you and maintain its value over time.",
+          "color": "bg-indigo-50 border-indigo-200"
+        }
+      ]
+    }
+  ],
+  "gettingStarted": {
+    "title": "Build Your Perfect Setup",
+    "description": "Whether you're just starting out or upgrading your rig, our comprehensive gear guides will help you make informed decisions that enhance your playing and fit your budget.",
+    "links": [
+      {
+        "href": "/lessons/gear/guitars",
+        "label": "Choose Your Guitar",
+        "color": "bg-amber-600"
+      },
+      {
+        "href": "/lessons/gear/amps",
+        "label": "Find Your Amp",
+        "color": "bg-red-600"
+      },
+      {
+        "href": "/lessons/gear/effects",
+        "label": "Explore Effects",
+        "color": "bg-purple-600"
+      }
+    ]
+  }
+}

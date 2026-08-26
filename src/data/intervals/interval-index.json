@@ -1,0 +1,418 @@
+{
+  "pageTitle": "Music Theory: Intervals",
+  "subtitle": "Master the fundamental building blocks of melody, harmony, and musical expression",
+  "heroIcon": "🎼",
+  "heroTitle": "Understanding Musical Intervals",
+  "heroDescription": "Intervals are the distances between notes and the foundation of all music theory. They determine the character of melodies, the quality of chords, and the emotional impact of harmonic progressions. Master intervals to unlock the secrets of musical expression.",
+  "whatAreIntervals": {
+    "title": "What Are Musical Intervals?",
+    "description": "A musical interval is the difference in pitch between two notes. Intervals can be measured in semitones (half-steps) and are classified by their size and quality. Understanding intervals is essential because they determine:",
+    "columns": [
+      {
+        "title": "Harmonic Function",
+        "colorBg": "bg-blue-50",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "items": [
+          "Chord quality (major, minor, diminished, augmented)",
+          "Harmonic tension and resolution",
+          "Voice leading in progressions",
+          "Harmonic extensions and alterations"
+        ]
+      },
+      {
+        "title": "Melodic Character",
+        "colorBg": "bg-green-50",
+        "colorTitle": "text-green-900",
+        "colorText": "text-green-800",
+        "items": [
+          "Melodic contour and shape",
+          "Emotional expression and mood",
+          "Phrase structure and direction",
+          "Musical style and genre characteristics"
+        ]
+      }
+    ]
+  },
+  "intervalCategories": [
+    {
+      "name": "Perfect Intervals",
+      "intervals": ["Unison", "Perfect 4th", "Perfect 5th", "Octave"],
+      "description": "Stable, consonant intervals that sound complete and resolved.",
+      "color": "bg-green-50 border-green-200"
+    },
+    {
+      "name": "Major Intervals",
+      "intervals": ["Major 2nd", "Major 3rd", "Major 6th", "Major 7th"],
+      "description": "Bright, happy intervals that create major chord qualities.",
+      "color": "bg-yellow-50 border-yellow-200"
+    },
+    {
+      "name": "Minor Intervals",
+      "intervals": ["Minor 2nd", "Minor 3rd", "Minor 6th", "Minor 7th"],
+      "description": "Darker, more emotional intervals that create minor chord qualities.",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "name": "Augmented/Diminished",
+      "intervals": ["Tritone"],
+      "description": "Altered intervals that create tension and need resolution.",
+      "color": "bg-purple-50 border-purple-200"
+    }
+  ],
+  "theoryFundamentals": {
+    "title": "Interval Theory Fundamentals",
+    "measuring": {
+      "title": "Measuring Intervals",
+      "items": [
+        {
+          "title": "Semitones (Half-Steps)",
+          "description": "The smallest interval in Western music. 12 semitones = 1 octave.",
+          "colorBg": "bg-gray-50"
+        },
+        {
+          "title": "Letter Name Distance",
+          "description": "Count the letter names: C to E = 3rd, C to G = 5th.",
+          "colorBg": "bg-gray-50"
+        },
+        {
+          "title": "Quality Classification",
+          "description": "Perfect, Major, Minor, Augmented, Diminished.",
+          "colorBg": "bg-gray-50"
+        }
+      ]
+    },
+    "consonance": {
+      "title": "Consonance & Dissonance",
+      "items": [
+        {
+          "title": "Perfect Consonance",
+          "description": "Unison, Perfect 4th, Perfect 5th, Octave - Completely stable",
+          "colorBg": "bg-green-50",
+          "borderColor": "border-green-400",
+          "colorTitle": "text-green-800",
+          "colorText": "text-green-700"
+        },
+        {
+          "title": "Imperfect Consonance",
+          "description": "Major/Minor 3rds and 6ths - Pleasant but not completely stable",
+          "colorBg": "bg-blue-50",
+          "borderColor": "border-blue-400",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700"
+        },
+        {
+          "title": "Dissonance",
+          "description": "2nds, 7ths, Tritone - Create tension, need resolution",
+          "colorBg": "bg-red-50",
+          "borderColor": "border-red-400",
+          "colorTitle": "text-red-800",
+          "colorText": "text-red-700"
+        }
+      ]
+    }
+  },
+  "intervalTypes": [
+    {
+      "name": "Unison",
+      "icon": "0️⃣",
+      "href": "/lessons/theory/intervals/unison",
+      "description": "0 semitones. Same pitch, perfect consonance.",
+      "semitones": 0,
+      "quality": "Perfect",
+      "color": "bg-gray-50 border-gray-200 hover:bg-gray-100",
+      "iconColor": "text-gray-600",
+      "consonance": "Perfect Consonance"
+    },
+    {
+      "name": "Minor 2nd",
+      "icon": "1️⃣",
+      "href": "/lessons/theory/intervals/minor-2nd",
+      "description": "1 semitone. Smallest interval, creates tension.",
+      "semitones": 1,
+      "quality": "Minor",
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "consonance": "Strong Dissonance"
+    },
+    {
+      "name": "Major 2nd",
+      "icon": "2️⃣",
+      "href": "/lessons/theory/intervals/major-2nd",
+      "description": "2 semitones. Common melodic step.",
+      "semitones": 2,
+      "quality": "Major",
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600",
+      "consonance": "Mild Dissonance"
+    },
+    {
+      "name": "Minor 3rd",
+      "icon": "♭3️⃣",
+      "href": "/lessons/theory/intervals/minor-3rd",
+      "description": "3 semitones. Foundation of minor chords.",
+      "semitones": 3,
+      "quality": "Minor",
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600",
+      "consonance": "Imperfect Consonance"
+    },
+    {
+      "name": "Major 3rd",
+      "icon": "3️⃣",
+      "href": "/lessons/theory/intervals/major-3rd",
+      "description": "4 semitones. Foundation of major chords.",
+      "semitones": 4,
+      "quality": "Major",
+      "color": "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      "iconColor": "text-yellow-600",
+      "consonance": "Imperfect Consonance"
+    },
+    {
+      "name": "Perfect 4th",
+      "icon": "4️⃣",
+      "href": "/lessons/theory/intervals/perfect-4th",
+      "description": "5 semitones. Strong, stable sound.",
+      "semitones": 5,
+      "quality": "Perfect",
+      "color": "bg-green-50 border-green-200 hover:bg-green-100",
+      "iconColor": "text-green-600",
+      "consonance": "Perfect Consonance"
+    },
+    {
+      "name": "Tritone",
+      "icon": "🔺",
+      "href": "/lessons/theory/intervals/tritone",
+      "description": "6 semitones. The \"devil's interval\" with maximum tension.",
+      "semitones": 6,
+      "quality": "Augmented 4th / Diminished 5th",
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600",
+      "consonance": "Strong Dissonance"
+    },
+    {
+      "name": "Perfect 5th",
+      "icon": "5️⃣",
+      "href": "/lessons/theory/intervals/perfect-5th",
+      "description": "7 semitones. Foundation of power chords.",
+      "semitones": 7,
+      "quality": "Perfect",
+      "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
+      "iconColor": "text-emerald-600",
+      "consonance": "Perfect Consonance"
+    },
+    {
+      "name": "Minor 6th",
+      "icon": "♭6️⃣",
+      "href": "/lessons/theory/intervals/minor-6th",
+      "description": "8 semitones. Melancholic, expressive interval.",
+      "semitones": 8,
+      "quality": "Minor",
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600",
+      "consonance": "Imperfect Consonance"
+    },
+    {
+      "name": "Major 6th",
+      "icon": "6️⃣",
+      "href": "/lessons/theory/intervals/major-6th",
+      "description": "9 semitones. Sweet, warm harmonic color.",
+      "semitones": 9,
+      "quality": "Major",
+      "color": "bg-teal-50 border-teal-200 hover:bg-teal-100",
+      "iconColor": "text-teal-600",
+      "consonance": "Imperfect Consonance"
+    },
+    {
+      "name": "Minor 7th",
+      "icon": "♭7️⃣",
+      "href": "/lessons/theory/intervals/minor-7th",
+      "description": "10 semitones. Essential for dominant 7th chords.",
+      "semitones": 10,
+      "quality": "Minor",
+      "color": "bg-rose-50 border-rose-200 hover:bg-rose-100",
+      "iconColor": "text-rose-600",
+      "consonance": "Mild Dissonance"
+    },
+    {
+      "name": "Major 7th",
+      "icon": "7️⃣",
+      "href": "/lessons/theory/intervals/major-7th",
+      "description": "11 semitones. Jazz harmony, sophisticated sound.",
+      "semitones": 11,
+      "quality": "Major",
+      "color": "bg-pink-50 border-pink-200 hover:bg-pink-100",
+      "iconColor": "text-pink-600",
+      "consonance": "Mild Dissonance"
+    },
+    {
+      "name": "Octave",
+      "icon": "8️⃣",
+      "href": "/lessons/theory/intervals/octave",
+      "description": "12 semitones. Same note, higher pitch.",
+      "semitones": 12,
+      "quality": "Perfect",
+      "color": "bg-violet-50 border-violet-200 hover:bg-violet-100",
+      "iconColor": "text-violet-600",
+      "consonance": "Perfect Consonance"
+    }
+  ],
+  "musicalApplications": [
+    {
+      "title": "Melody Construction",
+      "description": "Intervals create the shape and character of melodies",
+      "icon": "🎵",
+      "examples": ["Stepwise motion uses 2nds", "Leaps use larger intervals", "Octave jumps for dramatic effect"]
+    },
+    {
+      "title": "Harmony Building",
+      "description": "Chords are built by stacking specific intervals",
+      "icon": "🎼",
+      "examples": ["Major chords: Root + Major 3rd + Perfect 5th", "Minor chords: Root + Minor 3rd + Perfect 5th", "Dominant 7ths add Minor 7th"]
+    },
+    {
+      "title": "Tension & Resolution",
+      "description": "Dissonant intervals create tension that resolves to consonance",
+      "icon": "⚡",
+      "examples": ["Minor 2nd resolves down", "Major 7th resolves up", "Tritone resolves outward"]
+    },
+    {
+      "title": "Emotional Expression",
+      "description": "Different intervals evoke specific emotional responses",
+      "icon": "❤️",
+      "examples": ["Minor 3rds sound sad", "Major 3rds sound happy", "Perfect 5ths sound powerful"]
+    }
+  ],
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "icon": "👂",
+      "colorBg": "bg-blue-50",
+      "borderColor": "border-blue-200",
+      "colorTitle": "text-blue-900",
+      "colorText": "text-blue-800",
+      "items": [
+        "Practice interval recognition by ear",
+        "Start with perfect intervals",
+        "Use interval training apps",
+        "Sing intervals with solfege",
+        "Identify intervals in songs"
+      ]
+    },
+    {
+      "title": "Fretboard Practice",
+      "icon": "🎸",
+      "colorBg": "bg-green-50",
+      "borderColor": "border-green-200",
+      "colorTitle": "text-green-900",
+      "colorText": "text-green-800",
+      "items": [
+        "Find intervals on single strings",
+        "Practice cross-string intervals",
+        "Use different fingering patterns",
+        "Map intervals across positions",
+        "Practice interval sequences"
+      ]
+    },
+    {
+      "title": "Theory Application",
+      "icon": "📝",
+      "colorBg": "bg-purple-50",
+      "borderColor": "border-purple-200",
+      "colorTitle": "text-purple-900",
+      "colorText": "text-purple-800",
+      "items": [
+        "Analyze chord structures",
+        "Study interval progressions",
+        "Compose with specific intervals",
+        "Transcribe melodic intervals",
+        "Practice interval math"
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Intervals in Common Progressions",
+    "chordConstruction": {
+      "title": "Chord Construction",
+      "items": [
+        {
+          "title": "Major Triad",
+          "formula": "Root + Major 3rd + Perfect 5th",
+          "example": "Example: C - E - G (0-4-7 semitones)"
+        },
+        {
+          "title": "Minor Triad",
+          "formula": "Root + Minor 3rd + Perfect 5th",
+          "example": "Example: C - Eb - G (0-3-7 semitones)"
+        },
+        {
+          "title": "Dominant 7th",
+          "formula": "Root + Major 3rd + Perfect 5th + Minor 7th",
+          "example": "Example: C - E - G - Bb (0-4-7-10 semitones)"
+        }
+      ]
+    },
+    "melodicMovement": {
+      "title": "Melodic Movement",
+      "items": [
+        {
+          "title": "Stepwise Motion",
+          "description": "Movement by 2nds (Major and Minor)",
+          "detail": "Smooth, flowing melodic lines"
+        },
+        {
+          "title": "Leaps",
+          "description": "Movement by 3rds, 4ths, 5ths",
+          "detail": "More dramatic melodic contours"
+        },
+        {
+          "title": "Large Intervals",
+          "description": "6ths, 7ths, Octaves and beyond",
+          "detail": "Bold, expressive melodic statements"
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Start Your Interval Journey",
+    "description": "Begin with the fundamental intervals and gradually work your way through the complete chromatic spectrum. Understanding intervals is key to unlocking harmony, melody, and musical expression.",
+    "links": [
+      {
+        "slug": "unison",
+        "title": "Start with Unison",
+        "description": "Begin with perfect unity - the foundation of all musical intervals and harmony.",
+        "linkText": "Perfect foundation",
+        "icon": "🎯",
+        "iconBg": "bg-gray-100",
+        "iconHoverBg": "group-hover:bg-gray-200",
+        "hoverBorder": "hover:border-gray-300",
+        "linkColor": "text-gray-600",
+        "linkHoverColor": "group-hover:text-gray-700"
+      },
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th Power",
+        "description": "Discover the backbone of rock and the foundation of powerful guitar sounds.",
+        "linkText": "Feel the power",
+        "icon": "⚡",
+        "iconBg": "bg-emerald-100",
+        "iconHoverBg": "group-hover:bg-emerald-200",
+        "hoverBorder": "hover:border-emerald-300",
+        "linkColor": "text-emerald-600",
+        "linkHoverColor": "group-hover:text-emerald-700"
+      },
+      {
+        "slug": "major-3rd",
+        "title": "Bright Major 3rd",
+        "description": "Learn the interval that creates happiness and joy in major chords.",
+        "linkText": "Brighten your sound",
+        "icon": "☀️",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "hoverBorder": "hover:border-yellow-300",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      }
+    ]
+  }
+}

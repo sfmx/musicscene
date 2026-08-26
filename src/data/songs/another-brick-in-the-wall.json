@@ -1,0 +1,429 @@
+{
+  "songInfo": {
+    "title": "Another Brick in the Wall (Part 2)",
+    "artist": "Pink Floyd",
+    "album": "The Wall",
+    "released": "1979",
+    "genre": "Progressive Rock",
+    "tempo": "104 BPM",
+    "duration": "3:59",
+    "key": "D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D minor pentatonic",
+          "notes": "D - F - G - A - C",
+          "application": "Primary scale for David Gilmour's iconic guitar solo; forms the backbone of all lead phrases with expressive bending"
+        },
+        {
+          "scale": "D natural minor (Aeolian)",
+          "notes": "D - E - F - G - A - Bb - C - D",
+          "application": "Provides the harmonic framework for the chord progression and vocal melody throughout the song"
+        },
+        {
+          "scale": "D Dorian mode",
+          "notes": "D - E - F - G - A - B - C - D",
+          "application": "Occasionally colors the solo with the raised 6th (B natural), adding brightness to certain phrases over the Dm chord"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with Dorian inflections",
+      "keySignature": "1 flat (Bb)",
+      "relativeMinor": "D minor is the relative minor of F major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "G"
+        ],
+        "progression": "i - IV",
+        "description": "The chorus and solo sections use a Dm to G progression. The G major chord (IV) contains B natural, which technically belongs to D Dorian rather than D Aeolian, adding harmonic complexity."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Dm - Dm - Dm - Dm",
+          "romanNumerals": "i - i - i - i",
+          "description": "The verse sits on a single Dm chord drone with a disco-influenced rhythm pattern. The static harmony creates tension and monotony that mirrors the oppressive lyrical theme."
+        },
+        {
+          "section": "Chorus",
+          "progression": "Dm - G - Dm - G",
+          "romanNumerals": "i - IV - i - IV",
+          "description": "The chorus opens up harmonically with the addition of G major, providing relief from the verse drone and supporting the anthemic vocal melody"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Dm - Dm - Dm - Dm",
+          "romanNumerals": "i - i - i - i",
+          "description": "Gilmour's solo rides over a Dm vamp, using the static harmony as a canvas for expressive pentatonic phrasing with bends and vibrato"
+        },
+        {
+          "section": "Outro / Extended Section",
+          "progression": "Dm - F - C - Dm",
+          "romanNumerals": "i - III - VII - i",
+          "description": "The extended outro introduces F and C chords for additional harmonic movement as the song builds to its conclusion"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm (i) - Tonic minor chord; provides the dark, brooding foundation for the entire song",
+        "G (IV) - Major IV chord (Dorian quality); the B natural creates brightness against the minor key",
+        "F (III) - Relative major chord; provides brief harmonic warmth in the outro section",
+        "C (VII) - Subtonic chord; creates a suspended quality before resolving back to Dm",
+        "The predominant use of Dm drone reflects the thematic oppression and monotony of institutional education"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Expressive Bending and Vibrato",
+      "description": "David Gilmour's signature technique of wide, precise bends combined with controlled vibrato that gives his solo its emotionally devastating character. Each bend is deliberate and reaches exact pitch.",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Whole-step bends: Bend from F to G (10th fret to 12th fret pitch on high E string)",
+          "Whole-step bends: Bend from C to D (8th fret to 10th fret pitch on high E string)",
+          "Half-step bends: Subtle bends for expression on the G and A notes",
+          "Pre-bends: Bend the string before striking, then release for a descending effect",
+          "Vibrato: Wide, even vibrato on sustained notes (bend-based vibrato, not classical)",
+          "Target notes: Root (D), minor 3rd (F), 5th (A), and minor 7th (C)"
+        ],
+        "sequence": [
+          "Position in the 10th fret area of D minor pentatonic (box 1)",
+          "Strike the note cleanly with medium pick attack",
+          "Push the string upward using ring finger supported by index and middle",
+          "Reach the target pitch precisely (whole or half step)",
+          "Apply wide, even vibrato while holding the bend",
+          "Release slowly for expressive phrase endings"
+        ],
+        "tips": [
+          "Gilmour's bends are slow and deliberate - never rush them",
+          "Use three fingers together for bending strength and control",
+          "Practice bending to exact pitch using a tuner for reference",
+          "Vibrato should be even and controlled, not wild or erratic",
+          "Less is more - Gilmour chooses fewer notes but makes each one count",
+          "Let bent notes sustain fully before moving to the next phrase"
+        ],
+        "chords": [],
+        "progression": "Solo over Dm drone vamp"
+      }
+    },
+    {
+      "name": "Disco-Influenced Rhythm Pattern",
+      "description": "The rhythm guitar plays a steady, muted pattern influenced by late-1970s disco music, providing the hypnotic groove that drives the verse sections forward",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Dm chord: X-X-0-2-3-1 (open) or X-5-7-7-6-5 (barre)",
+          "Steady eighth-note strumming pattern with slight accents on beats 2 and 4",
+          "Light palm muting for a tight, funky rhythm sound",
+          "The pattern should feel groove-oriented and danceable",
+          "Keep the rhythm consistent and machine-like during verses"
+        ],
+        "sequence": [
+          "Establish the Dm chord with a barre or open voicing",
+          "Strum steady eighth notes with light palm muting",
+          "Accent beats 2 and 4 for the disco-influenced backbeat feel",
+          "Maintain absolutely consistent timing throughout"
+        ],
+        "tips": [
+          "The rhythm should feel like a drum machine - perfectly steady",
+          "Palm muting should be light, not heavy - you want note definition",
+          "Listen to the bass line and lock in with its pattern",
+          "Think 'groove' rather than 'rock' for the rhythmic approach",
+          "The steady rhythm contrasts with Gilmour's expressive, free solo"
+        ],
+        "chords": [
+          "Dm"
+        ],
+        "progression": "Dm (steady eighth-note pattern)"
+      }
+    },
+    {
+      "name": "Pentatonic Phrasing with Space",
+      "description": "Gilmour's approach to soloing emphasizes space between phrases as much as the notes themselves. Each phrase is a complete musical statement followed by silence, creating a conversational quality.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "D minor pentatonic box 1: 10th fret position",
+          "Key notes: D (10th fret high E), F (10th fret high E, bend to G), A (10th fret B string)",
+          "Phrases are typically 3-6 notes long followed by silence",
+          "Each phrase builds on the previous one in a call-and-response pattern",
+          "The rests between phrases are as important as the notes"
+        ],
+        "sequence": [
+          "Play a short melodic phrase (3-4 notes) from D minor pentatonic",
+          "Let the last note sustain with vibrato",
+          "Rest for 1-2 beats of silence",
+          "Play the next phrase, responding to and building on the first",
+          "Gradually increase intensity and range through the solo"
+        ],
+        "tips": [
+          "Record yourself and check if the silences feel musical",
+          "Imagine the guitar is having a conversation - it needs pauses",
+          "Start phrases on different beats to avoid predictability",
+          "Build the solo arc: start simple, reach a climax, then resolve",
+          "Study Gilmour's phrasing by singing along with the solo"
+        ],
+        "chords": [],
+        "progression": "Over Dm vamp"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "timeStamp": "0:00-0:50",
+      "technique": "Disco-Influenced Rhythm Pattern",
+      "key": "D Minor",
+      "description": "The verse establishes the dark, repetitive mood with a single Dm chord drone and the iconic spoken/sung vocal melody. The children's choir enters to deliver the famous lyric over a tight, disco-influenced rhythm.",
+      "chords": [
+        "Dm"
+      ],
+      "progression": "Dm (single chord drone)",
+      "notes": [
+        "One chord throughout the entire verse - Dm",
+        "Steady eighth-note rhythm with light palm muting",
+        "The bass line provides the primary melodic movement",
+        "Guitar maintains a hypnotic, repetitive groove pattern",
+        "The static harmony reflects the oppressive theme"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:50-1:30",
+      "technique": "Disco-Influenced Rhythm Pattern",
+      "key": "D Minor",
+      "description": "The anthemic chorus opens up with the Dm-G progression, providing harmonic relief. The vocal melody soars over the two-chord pattern as the children's choir delivers the hook.",
+      "chords": [
+        "Dm",
+        "G"
+      ],
+      "progression": "Dm - G - Dm - G",
+      "notes": [
+        "Two-chord progression provides harmonic movement after the verse drone",
+        "Strumming opens up slightly from the tight verse pattern",
+        "The G chord's B natural adds brightness against the minor key",
+        "Energy builds through the chorus repetitions"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:00-3:10",
+      "technique": "Expressive Bending and Vibrato",
+      "key": "D Minor",
+      "description": "David Gilmour's legendary solo - one of the most recognizable in rock history. Built from D minor pentatonic with masterful bending and vibrato, the solo is a masterclass in emotional expression with minimal notes.",
+      "chords": [
+        "Dm"
+      ],
+      "progression": "Dm (vamp throughout solo)",
+      "notes": [
+        "Based entirely in D minor pentatonic, box 1 (10th fret position)",
+        "Wide whole-step bends on the 10th fret (F bent to G) are the signature sound",
+        "Each phrase is followed by musical space - never rushed",
+        "Vibrato is wide, even, and controlled on every sustained note",
+        "The solo builds in intensity from thoughtful opening to emotional climax",
+        "Consider this solo a textbook example of the iconic vocal hook lead guitar"
+      ],
+      "alphaTab": "10.3 12.3 10.2 13.2 | 13.1 10.1 13.2 10.2 | 10.3 12.3 12.2 10.2 | 13.1 10.1 12.3 10.3 |",
+      "exerciseLabel": "Bending & Phrasing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:10-3:59",
+      "technique": "Pentatonic Phrasing with Space",
+      "key": "D Minor",
+      "description": "The outro features continued solo phrasing over an expanded chord progression as the song builds to its finish. The arrangement thickens with additional instruments before the final resolution.",
+      "chords": [
+        "Dm",
+        "F",
+        "C",
+        "Dm"
+      ],
+      "progression": "Dm - F - C - Dm",
+      "notes": [
+        "Extended chord progression adds harmonic variety",
+        "Solo phrases continue with less intensity as the song winds down",
+        "F and C chords provide brief moments of major-key brightness",
+        "Returns to Dm for the final resolution"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "Squier Classic Vibe Stratocaster",
+        "Any Stratocaster-style guitar with single coils",
+        "Fender David Gilmour Signature Stratocaster"
+      ],
+      "pickup": "Neck pickup single coil for warm, singing solo tone; bridge/middle for rhythm"
+    },
+    "amp": {
+      "recommended": "Hiwatt DR103 Custom 100",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Fender Deluxe Reverb",
+        "Hiwatt-style clones (Reeves, Hi-Tone)"
+      ],
+      "settings": {
+        "gain": "4-5 (clean to mild breakup, rely on pedals for overdrive)",
+        "treble": "6 (clear articulation for solo notes)",
+        "middle": "5-6 (present but not honky)",
+        "bass": "5 (controlled low end for solo clarity)",
+        "presence": "6-7 (bright, airy quality for Gilmour tone)"
+      }
+    },
+    "effects": {
+      "distortion": "Electro-Harmonix Big Muff Pi - medium gain setting for creamy sustain without excessive fuzz",
+      "delay": "Binson Echorec or digital delay set to ~440ms with 2-3 repeats for spacious solo sound",
+      "reverb": "Moderate plate or hall reverb for ambiance and depth",
+      "other": "Electro-Harmonix Electric Mistress flanger (subtle, for tonal color); compressor for sustain"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic Dm chord and steady rhythm pattern",
+      "steps": [
+        "Master the open Dm chord shape and barre Dm at 5th fret",
+        "Practice steady eighth-note strumming at slow tempo",
+        "Learn the G chord and practice Dm-G transitions",
+        "Play along with the verse and chorus rhythm parts"
+      ],
+      "timeEstimate": "2-3 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Learn D minor pentatonic scale and basic bending technique",
+      "steps": [
+        "Master D minor pentatonic in box 1 position (10th fret)",
+        "Practice whole-step bends at the 10th fret on strings 1 and 2",
+        "Develop even vibrato on sustained notes",
+        "Learn the opening phrases of the guitar solo",
+        "Work on phrasing with space between melodic statements"
+      ],
+      "timeEstimate": "4-6 weeks for basic solo performance"
+    },
+    "advanced": {
+      "focus": "Master the complete guitar solo with authentic tone and feel",
+      "steps": [
+        "Transcribe and learn the entire solo note-for-note",
+        "Perfect bend accuracy using a tuner for reference",
+        "Develop wide, controlled vibrato matching Gilmour's style",
+        "Set up the effects chain (Big Muff, delay, reverb) for authentic tone",
+        "Practice the full song from rhythm through solo with seamless transitions",
+        "Study Gilmour's phrasing approach for improvisation over the Dm vamp"
+      ],
+      "timeEstimate": "6-10 weeks for complete mastery with authentic tone"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Bending out of tune - not reaching the full whole-step target pitch",
+      "Rushing the solo and not leaving enough space between phrases",
+      "Using too much distortion, which muddies the clarity of bends and vibrato",
+      "Playing the rhythm too aggressively instead of maintaining the tight disco groove",
+      "Neglecting vibrato - Gilmour's vibrato is essential to the emotional impact"
+    ],
+    "practiceRoutine": [
+      "Warm up with D minor pentatonic scale runs in box 1 position for 5 minutes",
+      "Practice whole-step bends at 10th fret on strings 1 and 2 with a tuner",
+      "Work on vibrato exercises: sustain each note for 4 beats with controlled vibrato",
+      "Practice the verse rhythm pattern with a metronome at 90 BPM, build to 104 BPM",
+      "Learn the solo phrase by phrase, focusing on exact bend pitch and timing",
+      "Play through the complete song structure including rhythm and solo transitions"
+    ],
+    "focusAreas": [
+      "Bending accuracy and control (whole-step bends to exact pitch)",
+      "Even, wide vibrato on sustained notes",
+      "Musical phrasing with space and silence",
+      "Tight, controlled rhythm guitar comping",
+      "Dynamic build throughout the solo arc",
+      "Tone management with effects (Big Muff gain, delay settings)"
+    ],
+    "metronomeWork": [
+      "Start the rhythm pattern at 80 BPM with steady eighth notes",
+      "Gradually increase to 104 BPM (song tempo)",
+      "Practice solo phrases at 80 BPM focusing on bend accuracy and timing",
+      "Work on placing phrases precisely in time, including the rests between them",
+      "Use a drum loop or backing track at 104 BPM for realistic practice context"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Comfortably Numb",
+        "difficulty": "Advanced",
+        "similarity": "David Gilmour's signature bending and vibrato technique in another legendary solo"
+      },
+      {
+        "title": "Wish You Were Here",
+        "difficulty": "Intermediate",
+        "similarity": "Expressive acoustic and electric guitar work with emotional phrasing"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Expressive bending and pentatonic-based soloing with iconic lead guitar"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic minor-key riff with a memorable, widely recognized guitar part"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Hurt So Good",
+        "artist": "John Mellencamp",
+        "difficulty": "Beginner",
+        "similarity": "Simple minor-key song to build basic rhythm guitar skills"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Classic rock rhythm technique and simple lead guitar work as a stepping stone"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "progressive-rock",
+      "guitar-solos",
+      "classic-rock",
+      "bending"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "slug": "extended",
+  "category": "chords",
+  "pageTitle": "Extended Chords",
+  "subtitle": "Learn the theory and application of 7th, 9th, 11th, and 13th chords in popular music",
+  "heroGradient": "from-teal-50 to-cyan-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "Beyond the Triad",
+    "text": "Extended chords add notes beyond the basic triad (1-3-5) to create richer, more sophisticated harmonies. They're the difference between \"Three Little Birds\" and \"Giant Steps\" - same harmonic principles, different levels of complexity.",
+    "columns": [
+      { "title": "Harmonic Sophistication", "text": "Extended chords provide more colors in your harmonic palette while maintaining clear functional relationships." },
+      { "title": "Voice Leading", "text": "Additional chord tones create more possibilities for smooth voice leading and melodic bass lines." },
+      { "title": "Genre Flexibility", "text": "From jazz standards to neo-soul, extended chords adapt to any style requiring harmonic sophistication." }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Extended Chords",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "7th Chords",
+          "badge": { "text": "7", "color": "teal" },
+          "fields": [{ "label": "Formula", "value": "1-3-5-b7" }],
+          "items": [
+            "C7 (C-E-G-Bb): Dominant function - wants to resolve. Blues, jazz, pop",
+            "Cmaj7 (C-E-G-B): Sophisticated major - dreamy quality. Jazz, R&B, neo-soul",
+            "Cm7 (C-Eb-G-Bb): Smooth minor - less final than triad. Jazz, funk, R&B",
+            "Cm(maj7) (C-Eb-G-B): Mysterious, haunting - rare but powerful. Film scores, art music"
+          ]
+        },
+        {
+          "title": "9th Chords",
+          "badge": { "text": "9", "color": "teal" },
+          "fields": [{ "label": "Formula", "value": "1-3-5-b7-9" }],
+          "items": [
+            "C9 (C-E-G-Bb-D): Rich dominant - jazz standard. Jazz, blues, R&B",
+            "Cmaj9 (C-E-G-B-D): Lush, dreamy - very sophisticated. Jazz, neo-soul, ambient",
+            "Cm9 (C-Eb-G-Bb-D): Complex minor - emotional depth. Jazz ballads, R&B",
+            "Cadd9 (C-E-G-D): Major with 9th, no 7th - bright and open. Pop, rock, folk"
+          ]
+        },
+        {
+          "title": "11th & 13th Chords",
+          "badge": { "text": "11/13", "color": "teal" },
+          "fields": [{ "label": "Formula", "value": "Extended stack" }],
+          "items": [
+            "C11 (C-E-G-Bb-D-F): Very dense - often with omitted 3rd. Jazz, fusion",
+            "C13 (C-E-G-Bb-D-F-A): Full extended dominant. Jazz, big band",
+            "Csus4 (C-F-G): Suspended 4th - creates tension. All genres - very common",
+            "Csus2 (C-D-G): Suspended 2nd - open, ambiguous. Rock, pop, ambient"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extended Chord Progressions",
+      "bgColor": "blue-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Jazz ii-V-I with Extensions",
+          "badge": { "text": "Jazz, Neo-Soul", "color": "blue" },
+          "fields": [
+            { "label": "Basic version", "value": "Dm7 - G7 - Cmaj7" },
+            { "label": "Extended version", "value": "Dm9 - G13 - Cmaj9" },
+            { "label": "Analysis", "value": "ii9 - V13 - Imaj9" },
+            { "label": "Why It Works", "value": "Extended chords add sophistication and voice leading possibilities" }
+          ]
+        },
+        {
+          "title": "Pop Ballad with maj7",
+          "badge": { "text": "Pop, R&B, Singer-Songwriter", "color": "blue" },
+          "fields": [
+            { "label": "Basic version", "value": "C - Am - F - G" },
+            { "label": "Extended version", "value": "Cmaj7 - Am7 - Fmaj7 - G7" },
+            { "label": "Analysis", "value": "Imaj7 - vi7 - IVmaj7 - V7" },
+            { "label": "Why It Works", "value": "Major 7th chords add emotional depth and sophistication to simple progressions" }
+          ]
+        },
+        {
+          "title": "Rock with sus chords",
+          "badge": { "text": "Rock, Alternative, Indie", "color": "blue" },
+          "fields": [
+            { "label": "Basic version", "value": "C - F - G - C" },
+            { "label": "Extended version", "value": "Csus2 - F - Gsus4 - G - C" },
+            { "label": "Analysis", "value": "Isus2 - IV - Vsus4 - V - I" },
+            { "label": "Why It Works", "value": "Suspended chords create motion and interest in simple rock progressions" }
+          ]
+        },
+        {
+          "title": "Sophisticated Minor",
+          "badge": { "text": "Art Rock, Film Music", "color": "blue" },
+          "fields": [
+            { "label": "Basic version", "value": "Am - F - C - G" },
+            { "label": "Extended version", "value": "Am(maj7) - Fmaj7 - Cmaj9 - G13" },
+            { "label": "Analysis", "value": "vi(maj7) - IVmaj7 - Imaj9 - V13" },
+            { "label": "Why It Works", "value": "Extended minor chords with major 7th create haunting, sophisticated colors" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instrument-Specific Voicings",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Piano/Keyboard",
+          "items": [
+            "Play bass note with left hand, chord tones with right",
+            "Use \"rootless voicings\" - omit the root in right hand",
+            "Stack chord tones in 4ths for modern sound",
+            "Practice common jazz voicings (shells, drops, etc.)"
+          ]
+        },
+        {
+          "title": "Guitar",
+          "items": [
+            "Learn moveable 7th chord shapes across the neck",
+            "Use partial voicings - not all notes need to be played",
+            "Focus on the characteristic intervals (maj7, b7, 9th)",
+            "Practice chord melody - melody note on top of extended chord"
+          ]
+        },
+        {
+          "title": "Songwriting",
+          "items": [
+            "Start with simple triads, add extensions for color",
+            "Consider the melody - avoid clashing with chord extensions",
+            "Use extended chords at emotional peaks or resolutions",
+            "Balance sophistication with accessibility"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis: Extended Chords in \"Fly Me to the Moon\"",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "A Jazz Standard's Sophisticated Harmony",
+          "fields": [
+            { "label": "Progression", "value": "Am7 - Dm7 - G7 - Cmaj7" },
+            { "label": "Analysis", "value": "vi7 - ii7 - V7 - Imaj7 (in C major)" }
+          ],
+          "items": [
+            "Am7: Smoother than Am triad, less final",
+            "Dm7: Perfect subdominant preparation",
+            "G7: Classic dominant 7th - strong pull to I",
+            "Cmaj7: Sophisticated resolution, dreamy quality"
+          ]
+        },
+        {
+          "title": "Why Extensions Work Here",
+          "items": [
+            "7th chords create smoother voice leading",
+            "Less finality allows continuous flow",
+            "Sophisticated enough for jazz context",
+            "Each chord has clear but rich function",
+            "Emotional Effect: Romantic, sophisticated, flowing rather than choppy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "When and How to Use Extended Chords",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Good Situations",
+          "bgColor": "green-50",
+          "items": [
+            "Jazz, R&B, neo-soul contexts",
+            "Ballads requiring emotional sophistication",
+            "When you want smoother voice leading",
+            "Bridge sections or climactic moments",
+            "Instrumental sections where complexity works"
+          ]
+        },
+        {
+          "title": "Be Careful When...",
+          "bgColor": "red-50",
+          "items": [
+            "The melody clashes with chord extensions",
+            "You're writing simple, anthemic music",
+            "The genre doesn't expect sophistication",
+            "You're using them just to show off",
+            "The arrangement is already busy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Extended Chord Progressions",
+      "bgColor": "yellow-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Jazz/R&B Standards",
+          "items": [
+            "ii7 - V7 - Imaj7 (classic resolution)",
+            "Imaj7 - vi7 - ii7 - V7 (circle progression)",
+            "vi7 - bII7 - Imaj7 (tritone substitution)",
+            "iii7 - vi7 - ii7 - V7 (descending)"
+          ]
+        },
+        {
+          "title": "Pop/Rock Applications",
+          "items": [
+            "Imaj7 - V7 - vi7 - IV (sophisticated pop)",
+            "vi7 - IVmaj7 - I - V7 (ballad progression)",
+            "Isus2 - Isus4 - I (resolution motion)",
+            "I - Isus4 - vi - IVadd9 (modern pop)"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Beginner Practice",
+        "items": [
+          "Learn basic 7th chord shapes in all keys",
+          "Practice ii7-V7-Imaj7 in multiple keys",
+          "Add 7ths to familiar chord progressions",
+          "Practice sus2 and sus4 resolutions"
+        ]
+      },
+      {
+        "title": "Advanced Practice",
+        "items": [
+          "Learn rootless voicings for piano",
+          "Practice 9th, 11th, and 13th chords",
+          "Reharmonize pop songs with extended chords",
+          "Study jazz standards for extension usage"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/secondary-dominants", "label": "Secondary Dominants" },
+    { "href": "/lessons/songs/chords/inversions", "label": "Chord Inversions" },
+    { "href": "/lessons/songs/chords/voice-leading", "label": "Voice Leading" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords/modal-interchange", "label": "Modal Interchange" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

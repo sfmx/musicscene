@@ -1,0 +1,255 @@
+{
+  "slug": "effects-distortion",
+  "category": "effects",
+  "pageTitle": "Distortion Effects",
+  "subtitle": "Aggressive, heavily clipped signals that form the backbone of metal, punk, and hard rock. From vintage circuits to modern high-gain monsters.",
+  "heroGradient": "bg-gradient-to-r from-red-50 to-pink-50",
+  "backLink": {
+    "href": "/lessons/gear/effects",
+    "label": "Back to Effects Overview"
+  },
+  "introduction": {
+    "title": "What is Distortion?",
+    "text": "Distortion is a form of audio signal processing that intentionally alters the waveform through aggressive clipping, creating harmonic content and sustained notes. Unlike overdrive, distortion typically produces more consistent gain regardless of input level.",
+    "columns": [
+      {
+        "title": "Characteristics",
+        "text": "Heavy signal clipping. Sustained notes and chords. Added harmonic content. Compressed dynamics. Aggressive, powerful sound. Consistent gain response."
+      },
+      {
+        "title": "Musical Applications",
+        "text": "Heavy metal and hard rock. Punk and alternative rock. Power chords and riffs. Sustained lead guitar. Industrial and grunge. Modern rock production."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Distortion vs. Overdrive",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Overdrive",
+          "items": [
+            "Soft, gradual clipping",
+            "Touch-sensitive dynamics",
+            "Preserves fundamental tone",
+            "Natural, amp-like saturation",
+            "Best with clean or edge-of-breakup amps",
+            "Responds to guitar volume"
+          ]
+        },
+        {
+          "title": "Distortion",
+          "items": [
+            "Hard, aggressive clipping",
+            "More consistent gain",
+            "Colors and transforms tone",
+            "Electronic, processed sound",
+            "Works with any amp setting",
+            "Less responsive to input level"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Distortion Pedals",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Classic Rock Distortion",
+          "description": "Moderate distortion levels perfect for classic rock, blues rock, and vintage tones. Maintains note clarity while adding sustain.",
+          "fields": [
+            { "label": "Examples", "value": "Boss DS-1, ProCo RAT 2, MXR Distortion+" }
+          ]
+        },
+        {
+          "title": "High-Gain Distortion",
+          "description": "Extreme distortion levels for metal, hardcore, and modern rock. Often includes multiple gain stages and EQ shaping.",
+          "fields": [
+            { "label": "Examples", "value": "Boss MT-2, Electro-Harmonix Metal Muff, TC Electronic Dark Matter" }
+          ]
+        },
+        {
+          "title": "Amp-in-a-Box",
+          "description": "Recreates the preamp distortion of famous amplifiers, allowing you to get iconic amp tones through any clean amp.",
+          "fields": [
+            { "label": "Examples", "value": "Tech 21 SansAmp, AMT Electronics, Friedman BE-OD" }
+          ]
+        },
+        {
+          "title": "Modern/Digital",
+          "description": "Uses digital processing or modern analog circuits to create pristine, controllable distortion with advanced features.",
+          "fields": [
+            { "label": "Examples", "value": "Boss DS-1X, Line 6 Helix distortions, Source Audio LA Lady" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Distortion Pedals",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Boss DS-1 Distortion",
+          "description": "The most popular distortion pedal ever made. Simple, reliable, and versatile. The DS-1 has been used on countless recordings across all genres since 1978.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Bright, cutting distortion with excellent note definition and moderate gain" }
+          ],
+          "items": [
+            "Kurt Cobain - Nirvana's grunge sound",
+            "Steve Vai - Lead guitar work",
+            "Joe Satriani - Clean/distortion contrast",
+            "Metallica - Early albums",
+            "Countless punk and alternative bands"
+          ]
+        },
+        {
+          "title": "ProCo RAT 2",
+          "description": "Aggressive midrange-focused distortion that cuts through any mix. The RAT's unique filter control allows you to shape the high-end response.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Aggressive, midrange-heavy distortion with excellent sustain and note clarity" }
+          ],
+          "items": [
+            "Jeff Beck - Lead guitar mastery",
+            "Dave Grohl - Foo Fighters power",
+            "Thom Yorke - Radiohead textures",
+            "Graham Coxon - Blur's edge",
+            "Metallica - Rhythm guitar bite"
+          ]
+        },
+        {
+          "title": "Boss MT-2 Metal Zone",
+          "description": "The quintessential high-gain distortion pedal. Features extensive EQ controls and massive amounts of gain for extreme metal tones.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Extremely high gain with scooped mids and extensive tonal shaping capabilities" }
+          ],
+          "items": [
+            "Dimebag Darrell - Pantera's crushing tone",
+            "John Frusciante - Red Hot Chili Peppers",
+            "Death metal and extreme metal bands",
+            "Modern metal producers",
+            "Bedroom metal enthusiasts worldwide"
+          ]
+        },
+        {
+          "title": "MXR Distortion+",
+          "description": "Simple two-knob distortion with a distinctive sound. Known for its raw, in-your-face character and use in early punk and metal recordings.",
+          "fields": [
+            { "label": "Signature Sound", "value": "Raw, uncompressed distortion with a distinctive midrange character" }
+          ],
+          "items": [
+            "Randy Rhoads - Ozzy Osbourne era",
+            "Bob Mould - Husker Du",
+            "Jerry Cantrell - Alice in Chains",
+            "Punk and hardcore pioneers",
+            "Early metal guitarists"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "EQ and Tone Shaping",
+      "subtitle": "Understanding Distortion EQ",
+      "bgColor": "bg-blue-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Bass/Low Frequencies",
+          "items": [
+            "Controls bottom-end thickness",
+            "Too much = muddy tone",
+            "Too little = thin sound",
+            "Adjust for room acoustics",
+            "Consider bass guitar presence"
+          ]
+        },
+        {
+          "title": "Midrange",
+          "items": [
+            "Most important for cutting through",
+            "Scooped = modern metal sound",
+            "Boosted = classic rock punch",
+            "Affects harmonic content",
+            "Key for mix presence"
+          ]
+        },
+        {
+          "title": "Treble/High Frequencies",
+          "items": [
+            "Adds brightness and clarity",
+            "Too much = harsh, fizzy",
+            "Too little = dark, muffled",
+            "Affects pick attack definition",
+            "Important for note separation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Using Distortion Effectively",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Performance Tips",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Use palm muting for tight rhythm",
+            "Adjust picking technique for attack",
+            "Consider string gauge and tuning",
+            "Use noise gate for clean stops",
+            "Balance gain vs. note clarity",
+            "Practice clean to hear mistakes"
+          ]
+        },
+        {
+          "title": "Recording Tips",
+          "bgColor": "bg-purple-50",
+          "items": [
+            "Double-track for thickness",
+            "Use less gain than live settings",
+            "EQ differently for mix context",
+            "Consider amp simulation IR",
+            "Layer different distortion types",
+            "Use high-pass filter to clean up bass"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Distortion Settings Guide",
+      "layout": "grid-3",
+      "warningText": "More gain isn't always better. Find the minimum amount of distortion that gives you the sustain and character you need, while maintaining note clarity and definition.",
+      "cards": [
+        {
+          "title": "Classic Rock",
+          "items": [
+            "Gain: 10-12 o'clock",
+            "Level: Match bypass",
+            "Tone: 12-1 o'clock",
+            "Use: Riffs and solos"
+          ]
+        },
+        {
+          "title": "Modern Metal",
+          "items": [
+            "Gain: 2-4 o'clock",
+            "Level: Slightly above bypass",
+            "EQ: Scooped mids",
+            "Use: Tight rhythm, sustain"
+          ]
+        },
+        {
+          "title": "Punk/Alternative",
+          "items": [
+            "Gain: 11-2 o'clock",
+            "Level: Boost for aggression",
+            "Tone: Bright and cutting",
+            "Use: Raw power chords"
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

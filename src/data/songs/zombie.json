@@ -1,0 +1,453 @@
+{
+  "songInfo": {
+    "title": "Zombie",
+    "artist": "The Cranberries",
+    "album": "No Need to Argue",
+    "released": "1994",
+    "genre": "Alternative Rock",
+    "tempo": "80 BPM",
+    "duration": "5:06",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor (Aeolian)",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Foundation for all chord progressions and vocal melody throughout the song"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Distorted lead guitar lines and power chord riff phrasing in the chorus"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with major borrowed chords from the relative major (G major)",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "Cmaj7",
+          "G6",
+          "D/F#"
+        ],
+        "progression": "i - VI(maj7) - III(6) - VII/7",
+        "description": "Haunting verse progression using extended chord voicings that create an atmospheric, melancholy feel. The Cmaj7 and G6 add color to the standard minor key movement."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Em - Cmaj7 - G6 - D/F#",
+          "romanNumerals": "i - VImaj7 - III6 - VII",
+          "description": "Quiet, palm-muted progression creating tension and atmosphere beneath Dolores O'Riordan's restrained vocal delivery"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Em - C - G - D",
+          "romanNumerals": "i - VI - III - VII",
+          "description": "Simplified, powerful open chords with full strumming intensity for the explosive 'In your head' sections"
+        },
+        {
+          "section": "Bridge/Interlude",
+          "progression": "Em - C - G - D",
+          "romanNumerals": "i - VI - III - VII",
+          "description": "Same chord progression as chorus but with distorted power chord voicings and aggressive strumming"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (i) - Tonic minor chord establishing the dark, brooding home key",
+        "Cmaj7 (VImaj7) - Submediant with major seventh adding dreamlike, ethereal color in verses",
+        "G6 (III6) - Mediant major chord with added sixth for warmth and movement",
+        "D/F# (VII) - Subtonic chord with bass note creating smooth chromatic bass line (F# to G)",
+        "C (VI) - Simplified submediant in chorus for powerful, direct harmonic impact",
+        "G (III) - Relative major chord providing brightness against the minor tonic",
+        "D (VII) - Subtonic chord driving back toward the tonic with strong resolution"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Palm-Muted Verse Strumming",
+      "description": "Controlled palm muting technique used in the verse sections to create a restrained, percussive quality that contrasts dramatically with the open chorus",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Em: 0-2-2-0-0-0 (standard open Em shape)",
+          "Cmaj7: X-3-2-0-0-0 (open Cmaj7 voicing)",
+          "G6: 3-2-0-0-0-0 (open G6 voicing with open B and high E)",
+          "D/F#: 2-0-0-2-3-2 (D chord with F# in the bass)",
+          "Rest the palm edge lightly on the strings near the bridge",
+          "Adjust palm pressure for varying degrees of mute intensity",
+          "Strum downward with a controlled, even motion"
+        ],
+        "sequence": [
+          "Position palm edge gently on strings just ahead of the bridge saddles",
+          "Play Em with moderate palm muting for two bars",
+          "Transition to Cmaj7 maintaining consistent mute pressure",
+          "Move to G6, keeping the muted tone steady",
+          "Finish phrase on D/F# before repeating the cycle"
+        ],
+        "tips": [
+          "The palm mute should be light enough to hear pitch but heavy enough to dampen sustain",
+          "Keep consistent palm pressure throughout the verse for even tone",
+          "Practice releasing the mute cleanly when transitioning to the chorus",
+          "The contrast between muted verse and open chorus is the key to this song's dynamics"
+        ],
+        "chords": [
+          "Em",
+          "Cmaj7",
+          "G6",
+          "D/F#"
+        ],
+        "progression": "Em - Cmaj7 - G6 - D/F# (palm muted)"
+      }
+    },
+    {
+      "name": "Dynamic Strumming Contrast",
+      "description": "Dramatic shift from quiet, palm-muted verse strumming to powerful, open chorus strumming that gives Zombie its signature explosive energy",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Verse dynamics: soft, controlled palm-muted strumming (pp to mp)",
+          "Chorus dynamics: full-volume open strumming with aggressive attack (f to ff)",
+          "The transition should feel sudden and dramatic, not gradual",
+          "Use full arm strumming motion in chorus vs. wrist-only in verse",
+          "Let all strings ring openly in the chorus for maximum impact"
+        ],
+        "sequence": [
+          "Play the verse with palm-muted, restrained strumming",
+          "On the last beat before the chorus, lift the palm and increase attack",
+          "Explode into the chorus with full open strumming",
+          "Maintain high energy throughout the chorus section",
+          "Return to palm muting when verse resumes"
+        ],
+        "tips": [
+          "Practice the transition point repeatedly until it feels natural",
+          "The dynamic contrast is what makes this song powerful - don't hold back on the chorus",
+          "In the chorus, strum through all six strings for full resonance",
+          "Use a slightly thicker pick for more aggressive chorus attack"
+        ],
+        "chords": [
+          "Em",
+          "C",
+          "G",
+          "D"
+        ],
+        "progression": "Em - C - G - D (open chorus strumming)"
+      }
+    },
+    {
+      "name": "Power Chord Chorus Variation",
+      "description": "Alternative approach to the chorus using power chords with distortion for a heavier, more aggressive interpretation closer to the studio recording's layered guitars",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (open low E with power chord shape)",
+          "C5: X-3-5-X-X-X (3rd fret A string root)",
+          "G5: 3-5-5-X-X-X (3rd fret low E root)",
+          "D5: X-5-7-X-X-X (5th fret A string root)",
+          "Use downstrokes exclusively for driving rhythm",
+          "Add slight palm muting between chord hits for tightness"
+        ],
+        "sequence": [
+          "Switch to bridge pickup for brighter distorted tone",
+          "Play E5 power chord with aggressive downstrokes",
+          "Slide to C5 position with quick transition",
+          "Move to G5 on the low E string root",
+          "Finish on D5 before cycling back to E5"
+        ],
+        "tips": [
+          "Keep the fretting hand relaxed to allow quick position changes",
+          "Mute unused strings with the underside of the fretting fingers",
+          "This technique works great with a second guitarist playing open chords",
+          "Dial in moderate gain - too much distortion will sound muddy at this tempo"
+        ],
+        "chords": [
+          "E5",
+          "C5",
+          "G5",
+          "D5"
+        ],
+        "progression": "E5 - C5 - G5 - D5 (distorted chorus)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:25",
+      "technique": "Palm-Muted Verse Strumming",
+      "key": "E Minor",
+      "description": "Clean, atmospheric opening with palm-muted arpeggiated chords establishing the song's haunting mood",
+      "chords": [
+        "Em",
+        "Cmaj7",
+        "G6",
+        "D/F#"
+      ],
+      "progression": "Em - Cmaj7 - G6 - D/F#",
+      "notes": [
+        "Begin with light palm muting for a subdued, percussive tone",
+        "Let the chord shapes ring slightly under the mute for pitch clarity",
+        "Establish the rhythmic feel at 80 BPM before vocals enter",
+        "Keep dynamics soft to create space for the later explosive chorus"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:20",
+      "technique": "Palm-Muted Verse Strumming",
+      "key": "E Minor",
+      "description": "Restrained verse section with controlled palm-muted strumming supporting the quiet, intense vocal delivery",
+      "chords": [
+        "Em",
+        "Cmaj7",
+        "G6",
+        "D/F#"
+      ],
+      "progression": "Em - Cmaj7 - G6 - D/F#",
+      "notes": [
+        "Maintain steady palm-mute pressure throughout the verse",
+        "The bass note walk from E to C to G to F# creates a descending bass line",
+        "Keep volume low to set up the dynamic contrast with the chorus",
+        "Strumming pattern: steady eighth notes with slight accent on beats 1 and 3"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:20-2:10",
+      "technique": "Dynamic Strumming Contrast",
+      "key": "E Minor",
+      "description": "Explosive chorus with the iconic the signature vocals backed by open, full-volume strumming",
+      "chords": [
+        "Em",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "Em - C - G - D",
+      "notes": [
+        "Release all palm muting for open, resonant chord strumming",
+        "Full-arm strumming with aggressive downstrokes on each beat",
+        "Let all strings ring out for maximum volume and sustain",
+        "The shift from muted verse to open chorus should be dramatic and immediate"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "2:10-3:00",
+      "technique": "Palm-Muted Verse Strumming",
+      "key": "E Minor",
+      "description": "Return to restrained verse dynamics with palm-muted strumming, building tension for the second chorus",
+      "chords": [
+        "Em",
+        "Cmaj7",
+        "G6",
+        "D/F#"
+      ],
+      "progression": "Em - Cmaj7 - G6 - D/F#",
+      "notes": [
+        "Return to palm-muted technique after the chorus energy",
+        "Slightly more intensity than the first verse to maintain forward momentum",
+        "Focus on clean chord transitions under the mute",
+        "The extended chord voicings (Cmaj7, G6) add harmonic richness to the quiet section"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus / Outro",
+      "timeStamp": "3:00-5:06",
+      "technique": "Dynamic Strumming Contrast",
+      "key": "E Minor",
+      "description": "Extended final chorus section with increasing intensity, layered guitars, and the signature vocal wail driving the song to its conclusion",
+      "chords": [
+        "Em",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "Em - C - G - D",
+      "notes": [
+        "Maximum strumming intensity for the final choruses",
+        "In the original recording, distorted guitars layer over the clean strumming here",
+        "Repeat the chorus progression multiple times with building energy",
+        "Song fades out on the repeating Em - C - G - D cycle"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or similar single-coil guitar",
+      "alternatives": [
+        "Fender Telecaster",
+        "Any steel-string acoustic guitar",
+        "Epiphone Casino",
+        "PRS SE Custom 24"
+      ],
+      "pickup": "Neck or middle pickup for clean verse tones; bridge pickup for distorted chorus sections"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or similar clean amp",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Deluxe Reverb",
+        "Marshall JCM800 (clean channel)",
+        "Roland JC-120"
+      ],
+      "settings": {
+        "gain": "3-4 (clean for verse, push to 6-7 for chorus with overdrive)",
+        "treble": "6 (bright but not harsh)",
+        "middle": "5-6 (balanced midrange)",
+        "bass": "5 (warm low end without muddiness)",
+        "presence": "6 (clarity and definition)"
+      }
+    },
+    "effects": {
+      "distortion": "Light overdrive or distortion pedal for chorus sections (Boss DS-1 or similar)",
+      "delay": "Short slapback delay for added depth",
+      "reverb": "Medium hall reverb for atmospheric quality",
+      "other": "Chorus pedal (optional) for verse shimmer. Switch distortion on/off between verse and chorus."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic open chord shapes and practice transitioning between them",
+      "steps": [
+        "Master the Em, C, G, and D open chord shapes",
+        "Practice smooth transitions between the four chorus chords",
+        "Learn basic palm-muting technique on the Em chord",
+        "Play through the chorus progression with simple downstrokes"
+      ],
+      "timeEstimate": "2-3 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Master the extended verse chords and dynamic contrast between sections",
+      "steps": [
+        "Learn the Cmaj7, G6, and D/F# voicings used in the verse",
+        "Practice palm-muted strumming at 80 BPM with a metronome",
+        "Work on the sudden dynamic shift from muted verse to open chorus",
+        "Play through the full song structure with correct dynamics"
+      ],
+      "timeEstimate": "3-5 weeks for confident performance"
+    },
+    "advanced": {
+      "focus": "Add distorted power chord layers and perfect the overall dynamic arc",
+      "steps": [
+        "Learn the power chord chorus variation (E5-C5-G5-D5)",
+        "Practice switching between clean and distorted tones mid-song",
+        "Add subtle rhythmic variations and accents to the strumming pattern",
+        "Perform the complete song with authentic dynamic range and tone switching"
+      ],
+      "timeEstimate": "5-7 weeks for polished performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Not enough dynamic contrast between the muted verse and open chorus",
+      "Palm muting too heavily in the verse, killing the pitch entirely",
+      "Rushing the tempo during the explosive chorus sections",
+      "Neglecting the extended chord voicings (Cmaj7, G6) in favor of basic shapes"
+    ],
+    "practiceRoutine": [
+      "Warm up with palm-muted strumming on Em for 5 minutes, varying pressure",
+      "Practice the verse chord sequence (Em-Cmaj7-G6-D/F#) slowly with clean palm muting",
+      "Work on the dynamic transition: play 4 bars muted then 4 bars open, repeating",
+      "Play through the full song structure at 80 BPM, focusing on dynamics",
+      "Record yourself and listen back to evaluate the dynamic contrast"
+    ],
+    "focusAreas": [
+      "Palm muting consistency and pressure control",
+      "Dynamic contrast between verse and chorus",
+      "Clean transitions between extended chord voicings",
+      "Rhythmic steadiness at the slow 80 BPM tempo"
+    ],
+    "metronomeWork": [
+      "Start at 60 BPM with palm-muted strumming on single chord",
+      "Practice chord changes at 60 BPM, increasing to 80 BPM (song tempo)",
+      "Work on the verse progression with metronome clicks on beats 2 and 4",
+      "Play full song at tempo, using metronome to prevent rushing during loud chorus"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Linger",
+        "difficulty": "Beginner",
+        "similarity": "Similar open chord acoustic approach with dynamic vocal contrast"
+      },
+      {
+        "title": "Dreams",
+        "difficulty": "Beginner",
+        "similarity": "Jangly open chord strumming in a minor key with atmospheric feel"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "difficulty": "Intermediate",
+        "similarity": "Similar quiet verse / loud chorus dynamic structure with palm muting"
+      },
+      {
+        "title": "Where Is My Mind?",
+        "artist": "Pixies",
+        "difficulty": "Intermediate",
+        "similarity": "Clean arpeggiated verse contrasting with louder chorus sections"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "difficulty": "Beginner",
+        "similarity": "Build open chord strumming confidence with a simpler dynamic range"
+      },
+      {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to power chord dynamics with similar quiet-loud structure"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1990s",
+    "iconicRiff": false,
+    "tags": [
+      "alternative-rock",
+      "90s",
+      "palm-muting",
+      "dynamics"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

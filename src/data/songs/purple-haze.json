@@ -1,0 +1,405 @@
+{
+  "songInfo": {
+    "title": "Purple Haze",
+    "artist": "Jimi Hendrix",
+    "album": "Are You Experienced",
+    "released": "1967",
+    "genre": "Psychedelic Rock",
+    "tempo": "108 BPM",
+    "duration": "2:50",
+    "key": "E (dominant/Mixolydian with bluesy b7)",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E dominant / E Mixolydian",
+      "scalesUsed": [
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Primary scale for riffs, fills, and solo passages throughout the song"
+        },
+        {
+          "scale": "E blues scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "Adds the blue note (Bb) for gritty, aggressive riff passages and bends"
+        },
+        {
+          "scale": "E Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D",
+          "application": "Defines the dominant tonality with the natural 3rd (G#) and flat 7th (D), used in chord voicings and melodic passages"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Dominant Blues",
+      "keySignature": "4 sharps (F#, C#, G#, D#) modified with b7 (D natural)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E7#9",
+          "G",
+          "A"
+        ],
+        "progression": "I7#9 - bIII - IV",
+        "description": "The iconic progression built around the 'Hendrix chord' (E7#9) with blues-rock power chord movement to G and A"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Main Riff",
+          "progression": "E7#9 - G - A",
+          "romanNumerals": "I7#9 - bIII - IV",
+          "description": "The signature riff using the E7#9 chord with its clashing major 3rd and sharp 9th (minor 3rd), creating the song's psychedelic tension"
+        },
+        {
+          "section": "Verse",
+          "progression": "E7#9 - G - A - E7#9",
+          "romanNumerals": "I7#9 - bIII - IV - I7#9",
+          "description": "Verse expands the main riff with vocal melody woven through the chord changes"
+        },
+        {
+          "section": "Turnaround / Bridge",
+          "progression": "F# - G - F# - E",
+          "romanNumerals": "II - bIII - II - I",
+          "description": "Chromatic movement between F# and G creates dissonant tension before resolving back to E"
+        }
+      ],
+      "harmonicFunction": [
+        "E7#9 (I7#9) - The 'Hendrix chord' combines major and minor tonality, creating psychedelic ambiguity",
+        "G (bIII) - Borrowed from E minor, provides bluesy contrast and a dark harmonic pull",
+        "A (IV) - Subdominant movement delivering a momentary sense of resolution and lift",
+        "F# (II) - Used in chromatic passages to create tension against the bIII chord"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "The Hendrix Chord (E7#9)",
+      "description": "The signature E7#9 voicing that defines the song's sound, combining a dominant 7th with a sharp 9th to create a chord that is simultaneously major and minor",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E7#9: 0-7-6-7-8-X (Hendrix voicing)",
+          "The #9 (G natural) clashes with the major 3rd (G#) in the chord",
+          "This chord is the foundation of Hendrix's psychedelic sound",
+          "Thumb wraps over the neck to fret the low E string",
+          "Requires stretching across multiple frets (6th to 8th)"
+        ],
+        "sequence": [
+          "Plant the thumb on the low E string (open or fretted)",
+          "Barre or place fingers across frets 6-8 on middle strings",
+          "Strike the chord with aggressive downstroke attack",
+          "Add rhythmic accents and muting between hits"
+        ],
+        "tips": [
+          "Practice the thumb-over-neck technique separately",
+          "Mute the high E string to avoid unwanted noise",
+          "Use a punchy, aggressive attack for authenticity",
+          "Hendrix often used his thumb to fret bass notes while playing chords"
+        ],
+        "chords": [
+          "E7#9"
+        ],
+        "progression": "E7#9 stab with rhythmic accents"
+      }
+    },
+    {
+      "name": "Octave Riffs and Hammer-Ons",
+      "description": "Hendrixthe iconic vocal hooks melodic riff passages between chord stabs",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Octave shapes played on E and D strings (2 strings apart, 2 frets up)",
+          "Hammer-ons from open strings to fretted notes for fluid riff movement",
+          "Combines single-note lines with chord stabs seamlessly",
+          "Uses fuzz-driven tone to blend notes together"
+        ],
+        "sequence": [
+          "Play the opening octave riff on the low strings",
+          "Hammer-on from open E to the fretted notes",
+          "Transition smoothly into the E7#9 chord stab",
+          "Repeat the riff pattern with rhythmic variations"
+        ],
+        "tips": [
+          "Practice hammer-ons with enough force for clear tone",
+          "Keep the fretting hand relaxed for quick movements",
+          "Mute unused strings with both hands to control noise",
+          "Use the fuzz pedal to help sustain hammer-on notes"
+        ],
+        "chords": [],
+        "progression": "Octave riff leading into E7#9 - G - A"
+      }
+    },
+    {
+      "name": "Psychedelic Lead Techniques",
+      "description": "Hendrix's expressive lead playing combining fuzz tone, whammy bar dives, feedback, and aggressive bending for the solo sections",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based in E minor pentatonic and blues scale positions",
+          "Heavy use of string bending (whole and 1.5 step bends)",
+          "Whammy bar manipulation for pitch dives and vibrato",
+          "Controlled feedback used as a musical element",
+          "Double stops and unison bends for thickness"
+        ],
+        "sequence": [
+          "Begin solo phrases with aggressive bends at the 12th fret",
+          "Incorporate whammy bar dips between phrases",
+          "Use feedback swells to transition between ideas",
+          "Build intensity through the solo section"
+        ],
+        "tips": [
+          "Crank the fuzz for authentic Hendrix solo tone",
+          "Practice controlled feedback by facing the amp",
+          "Study Hendrix's use of the whammy bar as an expressive tool",
+          "Focus on attitude and feel over technical precision"
+        ],
+        "chords": [],
+        "progression": "Over E7#9 - G - A progression"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:14",
+      "technique": "Octave Riffs and Hammer-Ons",
+      "key": "E",
+      "description": "The iconic opening riff featuring the tritone interval (Bb to E) played with fuzz, establishing the song's psychedelic character immediately",
+      "chords": [
+        "E7#9"
+      ],
+      "progression": "E7#9 riff",
+      "notes": [
+        "The opening uses the tritone interval (E to Bb) for dissonance",
+        "Heavy fuzz tone is essential for the sound",
+        "Hammer-ons create fluid movement between notes",
+        "This riff is one of the most recognizable in rock history"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:14-0:55",
+      "technique": "The Hendrix Chord (E7#9)",
+      "key": "E",
+      "description": "Verse section built around the E7#9 chord stabs with rhythmic accents, creating a hypnotic groove under the vocal melody",
+      "chords": [
+        "E7#9",
+        "G",
+        "A",
+        "E7#9"
+      ],
+      "progression": "E7#9 - G - A - E7#9",
+      "notes": [
+        "Aggressive E7#9 chord stabs with muted spaces between",
+        "Use thumb-over-neck technique for bass notes",
+        "Maintain tight rhythmic feel at 108 BPM",
+        "Let the fuzz tone create sustain and grit"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "1:24-2:02",
+      "technique": "Psychedelic Lead Techniques",
+      "key": "E",
+      "description": "A wild, fuzz-drenched guitar solo showcasing Hendrix's revolutionary approach to electric guitar with bends, whammy bar, and feedback",
+      "chords": [
+        "E7#9",
+        "G",
+        "A"
+      ],
+      "progression": "E7#9 - G - A",
+      "notes": [
+        "Based in E minor pentatonic with blues scale additions",
+        "Aggressive bending and whammy bar use throughout",
+        "Controlled feedback adds to the psychedelic atmosphere",
+        "The solo builds in intensity and wildness"
+      ],
+      "alphaTab": "15.1 12.1 15.2 12.2 | 14.3 12.3 14.4 12.4 | 12.3 14.3 12.2 15.2 | 15.1 12.1 12.2 15.2 |",
+      "exerciseLabel": "Major Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Turnaround / Bridge",
+      "timeStamp": "0:55-1:24",
+      "technique": "The Hendrix Chord (E7#9)",
+      "key": "E",
+      "description": "The bridge section with chromatic movement between F# and G, creating dissonant tension before resolving back to the main riff",
+      "chords": [
+        "F#",
+        "G",
+        "F#",
+        "E"
+      ],
+      "progression": "F# - G - F# - E",
+      "notes": [
+        "Chromatic half-step movement creates tension",
+        "Power chord shapes moving up and down",
+        "Builds anticipation before the solo section",
+        "Keep the rhythm tight and aggressive"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "Squier Classic Vibe Stratocaster",
+        "Any Strat-style guitar with single coils and tremolo bar"
+      ],
+      "pickup": "Neck single-coil for warm lead tones, bridge pickup for aggressive riffs"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead 100W (Plexi)",
+      "alternatives": [
+        "Marshall JTM45",
+        "Fender Bassman",
+        "Marshall DSL series"
+      ],
+      "settings": {
+        "gain": "8-9 (cranked for natural overdrive)",
+        "treble": "7 (bright and cutting)",
+        "middle": "5 (scooped slightly for fuzz clarity)",
+        "bass": "6 (full low end for power)",
+        "presence": "7 (cutting high-end presence)"
+      }
+    },
+    "effects": {
+      "distortion": "Dallas Arbiter Fuzz Face - germanium transistor fuzz, full gain",
+      "delay": "Slight slapback echo for depth",
+      "reverb": "Natural amp reverb, moderate amount",
+      "other": "Roger Mayer Octavia (octave fuzz) for solo sections; Uni-Vibe for rotary speaker effect on select passages"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord shapes and the main riff rhythm",
+      "steps": [
+        "Learn E5, G5, and A5 power chord shapes",
+        "Practice the simplified main riff using power chords",
+        "Work on basic hammer-on technique from open strings",
+        "Develop steady rhythm at 108 BPM with metronome"
+      ],
+      "timeEstimate": "2-3 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Master the E7#9 chord voicing and authentic riff technique",
+      "steps": [
+        "Learn the E7#9 (Hendrix chord) voicing with thumb-over-neck",
+        "Practice the full intro riff with octave shapes",
+        "Develop hammer-on/pull-off fluency for riff passages",
+        "Work on the verse chord progression with proper rhythmic feel"
+      ],
+      "timeEstimate": "4-6 weeks for authentic rhythm performance"
+    },
+    "advanced": {
+      "focus": "Nail the guitar solo and develop Hendrix-style expressive techniques",
+      "steps": [
+        "Learn the guitar solo note-for-note",
+        "Develop fuzz pedal control and feedback technique",
+        "Master whammy bar techniques for pitch manipulation",
+        "Perform the complete song with all sections and dynamics"
+      ],
+      "timeEstimate": "6-10 weeks for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Not fretting the E7#9 chord cleanly - practice the stretch slowly",
+      "Losing the rhythmic groove by focusing too much on chord shapes",
+      "Over-using effects to compensate for sloppy technique",
+      "Playing the riff too cleanly - Hendrix was raw and aggressive"
+    ],
+    "practiceRoutine": [
+      "Warm up with E minor pentatonic and blues scale runs (5 minutes)",
+      "Practice E7#9 chord voicing with clean transitions (10 minutes)",
+      "Work on the intro riff with fuzz at slow tempo (10 minutes)",
+      "Practice the solo section in short phrase segments (10 minutes)",
+      "Full song run-through with backing track (5 minutes)"
+    ],
+    "focusAreas": [
+      "E7#9 chord voicing and thumb-over-neck technique",
+      "Clean hammer-ons and pull-offs at tempo",
+      "Rhythmic precision and groove feel",
+      "Fuzz tone control and dynamic expression"
+    ],
+    "metronomeWork": [
+      "Start intro riff at 80 BPM, gradually increase to 108 BPM",
+      "Practice chord changes (E7#9 - G - A) at 90 BPM first",
+      "Solo phrasing: work at half speed focusing on bend accuracy",
+      "Full tempo run-through once comfortable with all sections"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Voodoo Child (Slight Return)",
+        "difficulty": "Advanced",
+        "similarity": "Same E7#9 chord and fuzz-heavy wah-wah approach"
+      },
+      {
+        "title": "Foxy Lady",
+        "difficulty": "Intermediate",
+        "similarity": "Similar fuzz riff approach and Hendrix chord usage"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic guitar riff with power chord movement and heavy tone"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Classic rock riff driven by power chords and rhythmic precision"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "I Love Rock N' Roll",
+        "artist": "Joan Jett",
+        "difficulty": "Beginner",
+        "similarity": "Simpler power chord riff to build foundational technique"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Next-level expressive lead guitar with bending and vibrato"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "psychedelic-rock",
+      "classic-rock",
+      "guitar-solos"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
+  }
+}

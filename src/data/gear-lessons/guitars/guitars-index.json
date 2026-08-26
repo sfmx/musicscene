@@ -1,0 +1,120 @@
+{
+  "pageTitle": "Guitar Types & Buying Guide",
+  "subtitle": "Master the art of choosing the perfect guitar for your style and budget",
+  "heroGradient": "bg-gradient-to-r from-orange-100 to-red-100",
+  "heroInfo": {
+    "title": "Find Your Perfect Guitar",
+    "text": "From acoustic to electric, classical to bass - discover the unique characteristics, sound qualities, and ideal uses for each type of guitar.",
+    "items": [
+      "Sound characteristics and tonal qualities",
+      "Best genres and playing styles for each type",
+      "Budget considerations and buying tips",
+      "Setup and maintenance requirements",
+      "Recommended models for beginners and pros"
+    ]
+  },
+  "types": [
+    {
+      "name": "Acoustic",
+      "icon": "🎸",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Classic steel-string and nylon-string guitars for unplugged sound."
+    },
+    {
+      "name": "Electric",
+      "icon": "⚡",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Versatile and expressive. Used in rock, blues, jazz, and more."
+    },
+    {
+      "name": "Bass",
+      "icon": "🎵",
+      "href": "/lessons/gear/guitars/bass",
+      "description": "Provides the low end and groove in bands."
+    },
+    {
+      "name": "Classical",
+      "icon": "🎼",
+      "href": "/lessons/gear/guitars/classical",
+      "description": "Nylon strings, wide neck. Used for classical and flamenco."
+    },
+    {
+      "name": "12-String",
+      "icon": "🔔",
+      "href": "/lessons/gear/guitars/12-string",
+      "description": "Rich, shimmering sound. Great for folk and rock."
+    },
+    {
+      "name": "Baritone",
+      "icon": "⬇️",
+      "href": "/lessons/gear/guitars/baritone",
+      "description": "Lower tuning for deep, powerful tones."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quick Comparison Guide",
+      "layout": "table",
+      "tableHeaders": [
+        "Guitar Type",
+        "Best For",
+        "Price Range",
+        "Beginner Friendly"
+      ],
+      "tableRows": [
+        [
+          "Acoustic",
+          "Folk, country, singer-songwriter",
+          "$100 - $3000+",
+          "⭐⭐⭐⭐⭐"
+        ],
+        [
+          "Electric",
+          "Rock, blues, jazz, metal",
+          "$150 - $5000+",
+          "⭐⭐⭐⭐"
+        ],
+        [
+          "Classical",
+          "Classical, flamenco, fingerstyle",
+          "$200 - $8000+",
+          "⭐⭐⭐"
+        ],
+        [
+          "Bass",
+          "All genres - rhythm section",
+          "$200 - $4000+",
+          "⭐⭐⭐"
+        ]
+      ]
+    },
+    {
+      "title": "Essential Buying Tips",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "For Beginners",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "Start with a budget of $200-500",
+            "Consider acoustic for simplicity",
+            "Electric if you love rock/blues",
+            "Try before you buy if possible",
+            "Factor in amplifier costs for electric"
+          ]
+        },
+        {
+          "title": "For Intermediate Players",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Upgrade based on your playing style",
+            "Consider specialized guitars (12-string, etc.)",
+            "Look for solid wood construction",
+            "Research pickup types for electrics",
+            "Don't forget about setup and maintenance"
+          ]
+        }
+      ]
+    }
+  ]
+}

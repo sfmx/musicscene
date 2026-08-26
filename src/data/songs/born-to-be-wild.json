@@ -1,0 +1,437 @@
+{
+  "songInfo": {
+    "title": "Born to Be Wild",
+    "artist": "Steppenwolf",
+    "album": "Steppenwolf",
+    "released": "1968",
+    "genre": "Hard Rock",
+    "tempo": "148 BPM",
+    "duration": "3:30",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major with heavy use of E power chord (E5) as the tonal center",
+      "scalesUsed": [
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D - E",
+          "application": "Main riff motif and guitar solo; the blues-inflected minor pentatonic over a major key center creates the gritty hard rock sound"
+        },
+        {
+          "scale": "E Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D - E",
+          "application": "Chorus melody and chord movement; the flatted 7th (D) is central to the E-A-B power chord progression"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Blues-rock hybrid with dominant chord feel throughout",
+      "keySignature": "4 sharps (F#, C#, G#, D#) nominally, but the song leans heavily on blues-based tonality",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5"
+        ],
+        "progression": "I (power chord riff)",
+        "description": "The iconic opening riff is built entirely on the E power chord with a chromatic walk-up from E5 to E5/F# to G5, creating the proto-metal sound that coined the term 'heavy metal' in popular music."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Riff",
+          "progression": "E5 - E5/F# - G5 - E5",
+          "romanNumerals": "I5 - chromatic - bIII5 - I5",
+          "description": "The signature chromatic walk-up riff from E to G power chords, played with heavy distortion and aggressive picking"
+        },
+        {
+          "section": "Verse",
+          "progression": "E5",
+          "romanNumerals": "I5",
+          "description": "Verse stays rooted on the E power chord with the riff motif repeating underneath the vocal melody"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E - A - E - B",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Classic I-IV-I-V rock progression opening up from the riff-based verse into full chords for the anthemic chorus"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Tonic power chord providing the heavy, driving root of the song",
+        "G5 (bIII) - Chromatic passing chord in the riff creating bluesy tension",
+        "A (IV) - Subdominant adding lift and energy in the chorus",
+        "B (V) - Dominant chord providing resolution tension in the chorus turnaround"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Power Chord Riff with Chromatic Walk-Up",
+      "description": "The signature Born to Be Wild riff using E5 power chord with a chromatic ascending line from E through F# to G, creating the proto-metal sound",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (open E power chord)",
+          "F#5: 2-4-4-X-X-X (barre power chord shape)",
+          "G5: 3-5-5-X-X-X (barre power chord shape)",
+          "The riff walks chromatically E-F#-G then resolves back to E",
+          "Use all downstrokes for maximum aggression at 148 BPM",
+          "Palm mute lightly between chord hits for rhythmic punch"
+        ],
+        "sequence": [
+          "Strike the open E5 power chord with a firm downstroke",
+          "Slide up chromatically to F#5 at the 2nd fret",
+          "Continue up to G5 at the 3rd fret",
+          "Resolve back down to the open E5 with emphasis",
+          "Repeat the riff pattern throughout intro and verses"
+        ],
+        "tips": [
+          "Keep your picking hand locked into steady downstrokes for the driving feel",
+          "Use slight palm muting on the E string for tightness between chord strikes",
+          "The chromatic walk-up should be smooth and even - do not rush the F# passing tone",
+          "Let the G5 ring slightly longer before resolving to E5 for dramatic effect"
+        ],
+        "chords": [
+          "E5",
+          "F#5",
+          "G5"
+        ],
+        "progression": "E5 - F#5 - G5 - E5 (chromatic walk-up riff)"
+      }
+    },
+    {
+      "name": "Open Chord Strumming (Chorus)",
+      "description": "Full open chord strumming for the anthemic chorus section using standard E, A, and B chords in a I-IV-V progression",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E: 0-2-2-1-0-0 (standard open E major)",
+          "A: X-0-2-2-2-0 (standard open A major)",
+          "B: X-2-4-4-4-2 (barre chord) or B7: X-2-1-2-0-2 (open voicing alternative)",
+          "Strum with full aggressive downstrokes on the beat",
+          "The chorus opens up harmonically from the tight riff into wide open chords"
+        ],
+        "sequence": [
+          "Transition from the E5 riff to a full open E major chord",
+          "Strum E major for two bars",
+          "Move to A major for two bars",
+          "Return to E major for two bars",
+          "Hit B (or B7) for the turnaround back to the riff"
+        ],
+        "tips": [
+          "The transition from power chord riff to open chords should feel like the song opening up",
+          "Strum harder and fuller during the chorus for dynamic contrast",
+          "If B barre chord is too difficult, substitute B7 open voicing",
+          "Accentuate beat 1 of each chord change to drive the rhythm forward"
+        ],
+        "chords": [
+          "E",
+          "A",
+          "B"
+        ],
+        "progression": "E - A - E - B (I - IV - I - V)"
+      }
+    },
+    {
+      "name": "Palm-Muted Power Chord Rhythm",
+      "description": "Tight palm-muted chugging on the low E string between riff hits, creating the driving rhythmic foundation of the verses",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Rest the edge of your picking hand lightly on the strings near the bridge",
+          "Chug on the open low E string with steady eighth notes",
+          "Lift palm mute when striking the full E5 power chord for accent",
+          "The contrast between muted chugging and open chord strikes creates rhythmic dynamics"
+        ],
+        "sequence": [
+          "Palm mute the low E string with steady eighth-note downstrokes",
+          "Lift the palm mute on the accented E5 chord hits",
+          "Resume palm muting for the connecting rhythmic sections",
+          "Coordinate the palm mute release with the chromatic walk-up"
+        ],
+        "tips": [
+          "Light palm muting - you want a chunky tone, not completely dead strings",
+          "Keep the muting hand position consistent for even tone",
+          "Practice alternating between muted and open sounds at slow tempo first",
+          "This technique is fundamental to all hard rock and metal rhythm guitar"
+        ],
+        "chords": [],
+        "progression": "Applied over E5 riff sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro / Main Riff",
+      "timeStamp": "0:00-0:20",
+      "technique": "Power Chord Riff with Chromatic Walk-Up",
+      "key": "E Major",
+      "description": "The iconic opening riff that defined an era - the chromatic E5 walk-up that first put the iconic vocal hook into rock and roll",
+      "chords": [
+        "E5",
+        "F#5",
+        "G5"
+      ],
+      "progression": "E5 - F#5 - G5 - E5",
+      "notes": [
+        "All downstrokes for maximum power and drive",
+        "The chromatic walk-up E-F#-G is the signature motif",
+        "Add slight palm muting between chord strikes for rhythmic definition",
+        "Tempo is aggressive at 148 BPM - keep it tight and driving"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:20-1:00",
+      "technique": "Power Chord Riff with Chromatic Walk-Up",
+      "key": "E Major",
+      "description": "The verse continues the main riff underneath the vocals, maintaining the driving energy with the E5 based power chord pattern",
+      "chords": [
+        "E5",
+        "F#5",
+        "G5"
+      ],
+      "progression": "E5 - F#5 - G5 - E5",
+      "notes": [
+        "Same riff pattern continues under the verse vocal melody",
+        "Maintain consistent picking intensity throughout",
+        "The vocal rhythm follows the guitar riff closely",
+        "Slight dynamic control - not quite as loud as the intro for vocal clarity"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:00-1:30",
+      "technique": "Open Chord Strumming (Chorus)",
+      "key": "E Major",
+      "description": "The anthemic chorus opens up with full chord strumming - the iconic vocal hook with a classic I-IV-V rock progression",
+      "chords": [
+        "E",
+        "A",
+        "E",
+        "B"
+      ],
+      "progression": "E - A - E - B",
+      "notes": [
+        "Open up from power chords to full open chord voicings",
+        "Strum with full aggression - this is the payoff moment",
+        "Strong accent on beat 1 of each chord change",
+        "The B chord resolves back to the main riff for the next verse"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:10-2:50",
+      "technique": "Palm-Muted Power Chord Rhythm",
+      "key": "E Major",
+      "description": "Guitar solo over the riff and chorus progression, featuring blues-rock bends and pentatonic licks in E minor pentatonic",
+      "chords": [
+        "E5",
+        "A",
+        "E",
+        "B"
+      ],
+      "progression": "E5 riff - A - E - B (solo over both sections)",
+      "notes": [
+        "Solo uses E minor pentatonic scale (E-G-A-B-D) at the 12th position",
+        "Aggressive string bends on the B and high E strings",
+        "Mix of pentatonic runs and sustained bends for expression",
+        "Rhythm guitar continues the main riff underneath the solo"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:50-3:30",
+      "technique": "Power Chord Riff with Chromatic Walk-Up",
+      "key": "E Major",
+      "description": "Final chorus repetitions building to the climactic ending with the main riff driving to a big E chord finish",
+      "chords": [
+        "E",
+        "A",
+        "E5",
+        "F#5",
+        "G5",
+        "E5"
+      ],
+      "progression": "E - A - E5 riff to end",
+      "notes": [
+        "Final chorus repeats with maximum intensity",
+        "Returns to the main riff for the closing section",
+        "Big sustained E chord to finish",
+        "Let the final E ring out with full volume and sustain"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson SG Standard or similar dual-humbucker guitar",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Epiphone SG",
+        "Fender Telecaster Deluxe (humbuckers)",
+        "Any guitar with humbucker pickups"
+      ],
+      "pickup": "Bridge humbucker for the thick, aggressive power chord tone"
+    },
+    "amp": {
+      "recommended": "Fender Bassman or similar vintage tube amp cranked to natural breakup",
+      "alternatives": [
+        "Marshall Plexi",
+        "Fender Twin Reverb (cranked)",
+        "Vox AC30 (pushed hard)",
+        "Any tube amp with natural overdrive"
+      ],
+      "settings": {
+        "gain": "6-7 (cranked for natural tube overdrive)",
+        "treble": "6 (bright but not harsh)",
+        "middle": "5-6 (full midrange for cut and power)",
+        "bass": "5 (solid low end without mud)",
+        "presence": "5-6 (clarity and bite)"
+      }
+    },
+    "effects": {
+      "distortion": "Cranked amp natural overdrive - no pedals on the original recording. A tube screamer or light overdrive pedal can approximate the tone at lower volumes.",
+      "delay": "None",
+      "reverb": "Light spring reverb from the amp",
+      "other": "No effects pedals needed. The tone comes from cranking a tube amp for natural distortion."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the main power chord riff and basic E-A-B chord shapes",
+      "steps": [
+        "Master the open E5 power chord shape (0-2-2-X-X-X)",
+        "Practice the chromatic walk-up: E5 to F#5 to G5",
+        "Learn the basic E, A, and B (or B7) open chord shapes for the chorus",
+        "Play the riff at slow tempo with a metronome, gradually building to 148 BPM"
+      ],
+      "timeEstimate": "1-2 weeks for the riff and basic structure"
+    },
+    "intermediate": {
+      "focus": "Add palm muting, full song structure, and tonal dynamics",
+      "steps": [
+        "Add palm muting technique between power chord strikes",
+        "Practice transitioning between the riff sections and open chord chorus",
+        "Work on dynamic contrast between verse (tight riff) and chorus (open chords)",
+        "Play through the complete song structure with correct timing and feel"
+      ],
+      "timeEstimate": "2-3 weeks for confident full song performance"
+    },
+    "advanced": {
+      "focus": "Learn the guitar solo and refine the authentic distorted tone",
+      "steps": [
+        "Learn the E minor pentatonic scale at the 12th position for the solo",
+        "Practice string bends and vibrato for expressive solo phrasing",
+        "Work on the solo note-for-note or develop your own improvisation over the changes",
+        "Dial in an authentic late-1960s cranked amp tone"
+      ],
+      "timeEstimate": "3-5 weeks for complete performance with solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using upstrokes on the riff - this song demands all downstrokes for the right feel",
+      "Rushing the chromatic walk-up - keep each note even and rhythmic",
+      "Not muting unused strings, causing unwanted noise on distorted power chords",
+      "Playing the chorus chords too quietly - the chorus should be the loudest, most open section"
+    ],
+    "practiceRoutine": [
+      "Warm up with open E5 power chord strikes, focusing on clean attack (3 minutes)",
+      "Practice the chromatic walk-up riff slowly, then build speed (5 minutes)",
+      "Work on transitions between power chord riff and open chorus chords (5 minutes)",
+      "Play through the full song structure at tempo with a backing track (5 minutes)",
+      "Practice palm muting technique for tightness and rhythmic control (3 minutes)"
+    ],
+    "focusAreas": [
+      "Clean power chord execution with proper string muting",
+      "Consistent all-downstroke picking at 148 BPM",
+      "Smooth transitions between riff sections and chorus",
+      "Dynamic contrast between tight verse riff and open chorus strumming"
+    ],
+    "metronomeWork": [
+      "Start the riff at 100 BPM with all downstrokes",
+      "Increase by 10 BPM increments until reaching 148 BPM",
+      "Practice the chorus chord changes at half tempo, then build up",
+      "Use metronome clicks on beats 2 and 4 for a rock backbeat feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Magic Carpet Ride",
+        "difficulty": "Beginner",
+        "similarity": "Same era Steppenwolf hit with driving riff-based structure and power chords"
+      },
+      {
+        "title": "The Pusher",
+        "difficulty": "Intermediate",
+        "similarity": "Heavier Steppenwolf track with similar bluesy hard rock guitar approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Iconic power chord riff that every beginner should learn"
+      },
+      {
+        "title": "You Really Got Me",
+        "artist": "The Kinks",
+        "difficulty": "Beginner",
+        "similarity": "Proto-hard rock power chord riff from the same era"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Start with this simpler power chord riff before tackling Born to Be Wild's tempo"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to AC/DC's more complex power chord patterns and riff structures"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "hard-rock",
+      "beginner",
+      "power-chords",
+      "anthem",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

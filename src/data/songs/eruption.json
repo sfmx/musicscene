@@ -1,0 +1,408 @@
+{
+  "songInfo": {
+    "title": "Eruption",
+    "artist": "Van Halen",
+    "album": "Van Halen",
+    "released": "1978",
+    "genre": "Hard Rock",
+    "tempo": "Varies (free-form)",
+    "duration": "1:42",
+    "key": "A minor / E minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Expert",
+    "rhythmGuitar": "N/A",
+    "leadGuitar": "Expert",
+    "bass": "N/A",
+    "drums": "N/A"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor / E minor",
+      "scalesUsed": [
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Foundation for the opening tremolo-picked passage and many of the tapping sequences"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Used in the tapping section and various legato passages throughout the piece"
+        },
+        {
+          "scale": "A natural minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Extended melodic passages with additional scale tones beyond the pentatonic framework"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) / Pentatonic",
+      "keySignature": "No sharps or flats (A natural minor) / 1 sharp (E minor)",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "Em"
+        ],
+        "progression": "Free-form instrumental",
+        "description": "Eruption is an unaccompanied guitar solo with no traditional chord progression. The harmonic content is implied through scale choices, tapping patterns, and bass note references rather than strummed chords."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Opening Tremolo Section",
+          "progression": "Am implied (free-form)",
+          "romanNumerals": "i (implied)",
+          "description": "Rapid tremolo picking over A minor pentatonic patterns, establishing the tonal center without explicit chords"
+        },
+        {
+          "section": "Tapping Section",
+          "progression": "Am - Em - Dm - Am (implied through tapping patterns)",
+          "romanNumerals": "i - v - iv - i (implied)",
+          "description": "The tapping patterns outline chord tones that imply a harmonic progression moving through minor tonalities"
+        },
+        {
+          "section": "Whammy Bar / Harmonics Section",
+          "progression": "Free-form / atonal passages",
+          "romanNumerals": "N/A",
+          "description": "Sound effects and harmonic explorations that break away from traditional harmonic structure"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Primary tonal center established through repeated pentatonic figures and tapping patterns",
+        "Em (v) - Secondary tonal center appearing in tapping sequences and transitional passages",
+        "The piece functions more as a showcase of techniques than a harmonically driven composition",
+        "Implied chord tones in the tapping section create a sense of harmonic movement despite the absence of chords"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Two-Handed Tapping",
+      "description": "Eddie Van Halenthe iconic vocal hooks index or middle finger to tap notes on the fretboard while the fretting hand executes hammer-ons and pull-offs, creating rapid arpeggiated patterns impossible with conventional technique",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Right hand taps high notes (typically 12th-17th fret area) while left hand handles lower notes",
+          "Basic tapping pattern: Tap (right hand) - Pull-off (to left hand note) - Hammer-on (left hand)",
+          "Creates rapid triplet patterns across a wide interval range",
+          "The tapping section moves through different positions outlining Am, Em, and Dm arpeggios",
+          "Requires precise finger placement from the right hand for clean tone",
+          "Volume and gain must be high enough for tapped notes to ring clearly"
+        ],
+        "sequence": [
+          "Position right hand index or middle finger over the fretboard near the target fret",
+          "Tap firmly onto the string, then pull off to the left hand fretted note",
+          "Immediately hammer-on with the left hand to the next note in the pattern",
+          "Repeat the tap-pulloff-hammeron cycle in rapid triplet rhythm",
+          "Shift positions to outline different arpeggios across the tapping section"
+        ],
+        "tips": [
+          "Start with a simple single-string tapping pattern before attempting the full piece",
+          "Use high gain to allow tapped notes to sustain - clean tone will not work",
+          "Practice the pull-off from the tapping finger with a slight downward flick for volume",
+          "Keep unused strings muted with available fingers and the picking hand palm",
+          "Build up speed gradually - accuracy is more important than speed initially"
+        ],
+        "chords": [],
+        "progression": "Tapping patterns outline Am, Em, Dm arpeggios in sequence"
+      }
+    },
+    {
+      "name": "Tremolo Picking and Speed Runs",
+      "description": "Extremely fast alternate picking and legato runs across the A minor pentatonic and natural minor scales, creating a wall of rapid-fire notes that define the opening section of the piece",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Opening section features rapid tremolo picking on individual notes and across strings",
+          "Alternate picking at extreme speeds (16th notes at fast tempo) across pentatonic patterns",
+          "Legato hammer-on/pull-off runs interspersed with picked passages",
+          "Combines picking and legato techniques within single phrases for tonal variety",
+          "Chromatic passages add tension and unpredictability",
+          "Requires exceptional right-hand accuracy and left-hand synchronization"
+        ],
+        "sequence": [
+          "Begin with tremolo picking on a single note to establish velocity",
+          "Expand to cross-string tremolo patterns across pentatonic shapes",
+          "Transition to legato runs using hammer-ons and pull-offs",
+          "Combine picked and legato techniques for dynamic variation"
+        ],
+        "tips": [
+          "Develop alternate picking speed separately before attempting the piece",
+          "Use a metronome and gradually increase speed in small BPM increments",
+          "Practice pentatonic scale patterns as legato exercises for left-hand strength",
+          "Focus on synchronization between hands - sloppy timing is the biggest issue",
+          "Use the smallest possible picking motion for maximum speed efficiency"
+        ],
+        "chords": [],
+        "progression": "Over A minor pentatonic patterns (free-form)"
+      }
+    },
+    {
+      "name": "Whammy Bar Techniques and Harmonics",
+      "description": "Creative use of the Floyd Rose tremolo bar for dive bombs, squeals, and pitch manipulation combined with natural and artificial harmonics for otherworldly sound effects",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Dive bombs: Striking a note then depressing the whammy bar fully to drop the pitch to silence",
+          "Harmonic squeals: Touching natural harmonic nodes (5th, 7th, 12th frets) and manipulating with the bar",
+          "Flutter technique: Rapidly tapping the whammy bar for a vibrato-like wavering effect",
+          "Artificial harmonics tapped at specific points for bell-like tones",
+          "Requires a floating tremolo bridge (Floyd Rose or similar) for full pitch range",
+          "These techniques create the sound effects and transitions between the main technical sections"
+        ],
+        "sequence": [
+          "Strike a natural harmonic at the 12th fret",
+          "Depress the whammy bar smoothly for a controlled dive bomb",
+          "Release the bar to return to pitch (or beyond for a scoop effect)",
+          "Combine harmonics with bar manipulation for screaming effects"
+        ],
+        "tips": [
+          "A floating tremolo bridge is essential - hardtail guitars cannot replicate these techniques",
+          "Practice dive bombs slowly to develop smooth bar control",
+          "Natural harmonics ring most clearly at the 5th, 7th, and 12th frets",
+          "Keep the guitar in tune by ensuring the tremolo bridge is properly set up",
+          "These are expressionistic effects - feel and creativity matter more than precision"
+        ],
+        "chords": [],
+        "progression": "Free-form sound effects between technical sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Opening Tremolo / Speed Run",
+      "timeStamp": "0:00-0:30",
+      "technique": "Tremolo Picking and Speed Runs",
+      "key": "A minor",
+      "description": "The explosive opening featuring rapid tremolo picking and blistering pentatonic runs that immediately establish Eddie's virtuosic intent",
+      "chords": [
+        "Am"
+      ],
+      "progression": "Am implied (free-form tremolo runs)",
+      "notes": [
+        "Begins with a feedback-laden sustained note that launches into tremolo picking",
+        "Rapid-fire alternate picking across A minor pentatonic patterns",
+        "Builds in intensity with chromatic additions and string-crossing patterns",
+        "Transitions into legato runs before the tapping section"
+      ],
+      "alphaTab": "5.6 8.6 5.5 7.5 5.4 7.4 | 5.3 7.3 5.2 8.2 5.1 8.1 | 8.1 5.1 8.2 5.2 7.3 5.3 | 7.4 5.4 7.5 5.5 8.6 5.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Two-Handed Tapping Section",
+      "timeStamp": "0:30-1:10",
+      "technique": "Two-Handed Tapping",
+      "key": "A minor / E minor",
+      "description": "The revolutionary tapping section that changed guitar playing forever, featuring rapid triplet patterns moving through arpeggiated shapes across the neck",
+      "chords": [
+        "Am",
+        "Em",
+        "Dm"
+      ],
+      "progression": "Am - Em - Dm - Am (implied through tapping patterns)",
+      "notes": [
+        "Right hand taps notes in the 12th-17th fret range while left hand covers 5th-8th fret area",
+        "Triplet patterns create a cascading, waterfall-like effect",
+        "Position shifts outline different arpeggios for harmonic movement",
+        "This section was unprecedented in 1978 and launched the tapping revolution"
+      ],
+      "alphaTab": "5.6 8.6 5.5 7.5 5.4 7.4 | 5.3 7.3 5.2 8.2 5.1 8.1 | 8.1 5.1 8.2 5.2 7.3 5.3 | 7.4 5.4 7.5 5.5 8.6 5.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Whammy Bar and Harmonics",
+      "timeStamp": "1:10-1:30",
+      "technique": "Whammy Bar Techniques and Harmonics",
+      "key": "Free-form",
+      "description": "Sound effects section using whammy bar dive bombs, natural harmonics, and creative tremolo bar manipulation for dramatic sonic textures",
+      "chords": [],
+      "progression": "Free-form (no chord progression)",
+      "notes": [
+        "Natural harmonics at the 12th, 7th, and 5th frets manipulated with the whammy bar",
+        "Dive bombs dropping pitch from natural note to silence",
+        "Flutter effects and harmonic squeals for dramatic texture",
+        "Creates a dramatic pause before the final climactic passage"
+      ],
+      "alphaTab": "13.6 15.6 12.5 15.5 12.4 15.4 | 12.3 14.3 13.2 15.2 13.1 15.1 | 15.1 13.1 15.2 13.2 14.3 12.3 | 15.4 12.4 15.5 12.5 15.6 13.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Climactic Finale",
+      "timeStamp": "1:30-1:42",
+      "technique": "Tremolo Picking and Speed Runs",
+      "key": "A minor",
+      "description": "The final burst of speed and energy transitioning seamlessly into the opening riff of the iconic vocal hook",
+      "chords": [
+        "Am",
+        "A5"
+      ],
+      "progression": "Am runs resolving to A5 power chord",
+      "notes": [
+        "Final rapid pentatonic run building to a crescendo",
+        "Combines tapping and picking techniques from earlier sections",
+        "Resolves to a ringing power chord that transitions to You Really Got Me",
+        "The seamless transition between songs was intentional on the album"
+      ],
+      "alphaTab": "5.6 8.6 5.5 7.5 5.4 7.4 | 5.3 7.3 5.2 8.2 5.1 8.1 | 8.1 5.1 8.2 5.2 7.3 5.3 | 7.4 5.4 7.5 5.5 8.6 5.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "EVH Frankenstrat (or replica with humbucker in bridge position)",
+      "alternatives": [
+        "EVH Wolfgang Standard",
+        "Charvel Pro-Mod Series",
+        "Any Superstrat with Floyd Rose tremolo and bridge humbucker"
+      ],
+      "pickup": "High-output humbucker in bridge position only - neck pickup removed or unused"
+    },
+    "amp": {
+      "recommended": "Marshall Plexi Super Lead 1959 (heavily modified)",
+      "alternatives": [
+        "EVH 5150III",
+        "Marshall JCM800",
+        "Peavey 5150/6505"
+      ],
+      "settings": {
+        "gain": "8-9 (heavy distortion for tapping sustain)",
+        "treble": "7 (bright and articulate for clarity in fast passages)",
+        "middle": "5 (scooped midrange for the classic Van Halen tone)",
+        "bass": "6 (solid low end without muddiness)",
+        "presence": "7 (cut and definition for each note in fast runs)"
+      }
+    },
+    "effects": {
+      "distortion": "Amp-driven high-gain distortion (modified Marshall Plexi with Variac to reduce voltage)",
+      "delay": "Short slapback echo (subtle, adds depth to single-note lines)",
+      "reverb": "Minimal studio reverb",
+      "other": "MXR Phase 90 (subtle phasing effect, always on), MXR Flanger (used selectively for sweeping effect). Floyd Rose tremolo bridge essential for whammy bar techniques."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "This piece is NOT recommended for beginners. Build foundational skills first.",
+      "steps": [
+        "Master basic alternate picking technique with clean execution",
+        "Learn the A minor pentatonic scale in all five positions",
+        "Practice basic hammer-ons and pull-offs until they ring cleanly",
+        "Develop basic left-hand strength and finger independence"
+      ],
+      "timeEstimate": "6-12 months of foundational skill building before attempting this piece"
+    },
+    "intermediate": {
+      "focus": "Begin working on individual techniques from the piece in isolation",
+      "steps": [
+        "Learn basic single-string tapping patterns at slow tempo",
+        "Develop alternate picking speed with pentatonic scale exercises",
+        "Practice legato techniques (hammer-ons and pull-offs) at increasing speeds",
+        "Learn to control a whammy bar for basic dive bombs and harmonics",
+        "Work on each section of Eruption separately at half speed"
+      ],
+      "timeEstimate": "6-12 months of focused technique development"
+    },
+    "advanced": {
+      "focus": "Assemble the full piece and refine execution to performance standard",
+      "steps": [
+        "Master the complete tapping section with accurate position shifts",
+        "Bring the tremolo picking and speed runs up to full tempo",
+        "Perfect the whammy bar section with controlled dive bombs and harmonics",
+        "Connect all sections seamlessly with proper transitions",
+        "Work on dynamics and expression - it is not just about speed"
+      ],
+      "timeEstimate": "6-12 months for performance-ready execution"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Attempting the full piece before mastering individual techniques in isolation",
+      "Tapping too hard or too softly - finding the right attack is crucial for clean tapping",
+      "Not muting unused strings, resulting in excessive noise and sympathetic resonance",
+      "Rushing through sections instead of maintaining control and musicality",
+      "Using insufficient gain - tapping requires high gain for notes to sustain properly"
+    ],
+    "practiceRoutine": [
+      "Warm up with A minor pentatonic scale runs in all positions for 10 minutes",
+      "Practice single-string tapping exercises at slow tempo for 15 minutes",
+      "Work on alternate picking speed drills with a metronome for 10 minutes",
+      "Practice one section of Eruption at 50% speed for 15 minutes",
+      "Gradually increase tempo on each section independently before combining"
+    ],
+    "focusAreas": [
+      "Two-handed tapping clarity and precision across position shifts",
+      "Alternate picking speed and accuracy at extreme tempos",
+      "String muting technique to control unwanted noise",
+      "Whammy bar control for dive bombs and harmonic effects",
+      "Seamless transitions between different technique sections"
+    ],
+    "metronomeWork": [
+      "Practice tapping patterns at 60 BPM in triplets, increase by 5 BPM increments",
+      "Work alternate picking exercises starting at 80 BPM in 16th notes",
+      "Since the piece is free-form, focus on rhythmic accuracy within each pattern rather than overall tempo",
+      "Use a metronome for individual technique drills even though the piece itself is rubato"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "You Really Got Me",
+        "difficulty": "Intermediate",
+        "similarity": "Eruption leads directly into this song on the album; simpler but with the same tapping-influenced tone"
+      },
+      {
+        "title": "Hot for Teacher",
+        "difficulty": "Expert",
+        "similarity": "Another Van Halen showcase with advanced tapping and speed techniques"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "difficulty": "Advanced",
+        "similarity": "Fast alternate picking/legato technique creating a rapid single-note riff"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic guitar piece with power chord foundation and lead guitar showcase"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Build power chord and basic technique foundation before attempting Eruption"
+      },
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "difficulty": "Advanced",
+        "similarity": "Intermediate step with fast picking technique before tackling Eruption's tapping"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "tapping",
+      "guitar-solos",
+      "hard-rock",
+      "virtuoso"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "6-18 months"
+  }
+}

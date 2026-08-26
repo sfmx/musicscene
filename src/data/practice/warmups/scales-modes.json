@@ -1,0 +1,263 @@
+{
+  "slug": "scales-modes",
+  "category": "warmups",
+  "pageInfo": {
+    "pageTitle": "Scales & Modes",
+    "subtitle": "Master fundamental scales and modal patterns to expand your musical vocabulary and improvisational skills.",
+    "heroGradient": "bg-gradient-to-br from-violet-50 to-purple-100",
+    "heroTitle": "Scales & Modes for Guitarists",
+    "heroDescription": "Scales and modes are the building blocks of music theory and improvisation. These exercises will help you develop fluency with essential scales, understand modal relationships, and build the foundation for melodic playing across all styles of music."
+  },
+  "guidelines": {
+    "title": "Scale Practice Guidelines",
+    "columns": [
+      {
+        "title": "Technical Focus",
+        "items": [
+          { "bulletColor": "text-violet-500", "text": "Practice with proper fingering patterns" },
+          { "bulletColor": "text-violet-500", "text": "Use alternate picking for even articulation" },
+          { "bulletColor": "text-violet-500", "text": "Focus on smooth position shifts" },
+          { "bulletColor": "text-violet-500", "text": "Practice both ascending and descending" }
+        ]
+      },
+      {
+        "title": "Musical Development",
+        "items": [
+          { "bulletColor": "text-purple-500", "text": "Learn scales in different positions" },
+          { "bulletColor": "text-purple-500", "text": "Practice scales in various keys" },
+          { "bulletColor": "text-purple-500", "text": "Apply scales to improvisation" },
+          { "bulletColor": "text-purple-500", "text": "Connect scale patterns across the fretboard" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Essential Scales",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Major Scale (Ionian Mode)",
+          "difficulty": "Fundamental",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "The major scale is the foundation of Western music theory. Master this pattern in multiple positions to understand the fretboard and develop melodic vocabulary.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Scale Formula: W-W-H-W-W-W-H (Whole-Whole-Half-Whole-Whole-Whole-Half)"
+          },
+          "notation": {
+            "title": "Major Scale Exercise",
+            "alphaTex": "\\ts 4 4\n3.5.8 0.4 2.4 3.4 0.3 2.3 4.3 5.3 | 5.3 4.3 2.3 0.3 3.4 2.4 0.4 3.5 | 0.6 1.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 1.6 0.6",
+            "staveTitle": "C Major Scale - Two Octaves"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Start with the open position C major scale. Focus on clean fingering and smooth transitions. Practice both ascending and descending. Once comfortable, try this pattern in other keys.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Natural Minor Scale (Aeolian Mode)",
+          "difficulty": "Essential",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "The natural minor scale provides the dark, melancholic sound heard in countless songs. It's essential for rock, blues, and many other musical styles.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Scale Formula: W-H-W-W-H-W-W (Relative to A minor from C major)"
+          },
+          "notation": {
+            "title": "Natural Minor Scale Exercise",
+            "alphaTex": "\\ts 4 4\n0.5.8 2.5 3.5 0.4 2.4 3.4 0.3 2.3 | 2.3 0.3 3.4 2.4 0.4 3.5 2.5 0.5 | 0.6 1.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 1.6 0.6",
+            "staveTitle": "A Natural Minor Scale - Two Octaves"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Practice this A minor scale pattern, paying attention to the b3, b6, and b7 intervals that give minor scales their characteristic sound. This pattern is moveable to any key.",
+            "tempo": "75 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Minor Pentatonic Scale",
+          "difficulty": "Rock/Blues",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "The minor pentatonic scale is the backbone of rock, blues, and pop guitar solos. This five-note scale is incredibly versatile and user-friendly for improvisation.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Scale Formula: 1-b3-4-5-b7 (Five notes removing the 2nd and 6th from natural minor)"
+          },
+          "notation": {
+            "title": "Minor Pentatonic Scale Exercise",
+            "alphaTex": "\\ts 4 4\n0.5.8 3.5 0.4 2.4 0.3 2.3 1.2 3.2 | 3.2 1.2 2.3 0.3 2.4 0.4 3.5 0.5 | 0.1 3.1 0.1 3.2 1.2 2.3 0.3 2.4 | 0.4 3.5 0.5 3.6 0.6 3.6 0.5 3.5",
+            "staveTitle": "A Minor Pentatonic Scale - Extended Range"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "This is the most important scale for rock and blues guitar. Practice this \"box 1\" pattern thoroughly as it's the foundation for countless guitar solos. Try bending notes for expressive playing.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Modal Studies",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Dorian Mode",
+          "difficulty": "Jazz/Fusion",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Dorian mode (the 2nd mode of major) has a minor quality with a raised 6th degree. It's commonly used in jazz, fusion, and progressive rock for its sophisticated sound.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Scale Formula: W-H-W-W-W-H-W (Natural minor with raised 6th)"
+          },
+          "notation": {
+            "title": "Dorian Mode Exercise",
+            "alphaTex": "\\ts 4 4\n0.5.8 2.5 3.5 0.4 2.4 4.4 0.3 2.3 | 2.3 0.3 4.4 2.4 0.4 3.5 2.5 0.5 | 0.6 2.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 2.6 0.6",
+            "staveTitle": "A Dorian Mode - Two Octaves"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Notice the F# (raised 6th) that distinguishes Dorian from natural minor. This note gives Dorian its unique character. Practice emphasizing this note in your playing.",
+            "tempo": "65 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Mixolydian Mode",
+          "difficulty": "Blues/Rock",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Mixolydian mode (the 5th mode of major) has a major quality with a lowered 7th. It's the foundation of blues and rock, giving that characteristic \"dominant\" sound.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Scale Formula: W-W-H-W-W-H-W (Major scale with lowered 7th)"
+          },
+          "notation": {
+            "title": "Mixolydian Mode Exercise",
+            "alphaTex": "\\ts 4 4\n3.6.8 0.5 2.5 3.5 0.4 2.4 3.4 0.3 | 0.3 3.4 2.4 0.4 3.5 2.5 0.5 3.6 | 0.3 2.3 0.2 1.2 3.2 0.1 1.1 3.1 | 3.1 1.1 0.1 3.2 1.2 0.2 2.3 0.3",
+            "staveTitle": "G Mixolydian Mode - Two Octaves"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "The F natural (lowered 7th) is what makes this G Mixolydian instead of G major. This mode works perfectly over dominant 7th chords and blues progressions.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Lydian Mode",
+          "difficulty": "Progressive",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Lydian mode (the 4th mode of major) has a major quality with a raised 4th degree. It creates a dreamy, floating sound often used in film scores and progressive music.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Scale Formula: W-W-W-H-W-W-H (Major scale with raised 4th)"
+          },
+          "notation": {
+            "title": "Lydian Mode Exercise",
+            "alphaTex": "\\ts 4 4\n3.5.8 0.4 2.4 4.4 0.3 2.3 4.3 5.3 | 5.3 4.3 2.3 0.3 4.4 2.4 0.4 3.5 | 0.3 2.3 0.2 1.2 3.2 0.1 2.1 3.1 | 3.1 2.1 0.1 3.2 1.2 0.2 2.3 0.3",
+            "staveTitle": "C Lydian Mode - Two Octaves"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "The F# (raised 4th) gives Lydian its distinctive \"floating\" quality. This mode works well over major chords and creates sophisticated harmonic colors in your playing.",
+            "tempo": "60 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Scale Practice Strategy",
+    "items": [
+      {
+        "title": "Technical Development",
+        "colorBg": "bg-gradient-to-br from-violet-50 to-purple-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-900",
+        "colorText": "text-violet-800",
+        "items": [
+          "Practice scales with proper fingering patterns",
+          "Use alternate picking for clean articulation",
+          "Practice in different positions on the fretboard",
+          "Start slowly and gradually increase tempo"
+        ]
+      },
+      {
+        "title": "Musical Application",
+        "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "items": [
+          "Scales and modes are not just technical exercises - they're the vocabulary of music",
+          "Each scale and mode has its own character and emotional quality",
+          "Practice them not just for finger dexterity, but to internalize their unique sounds",
+          "Use backing tracks to practice improvising with each scale, and learn to recognize when and where each mode fits in musical contexts"
+        ]
+      }
+    ]
+  }
+}

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ScaleData } from '@/lib/scaleData';
+import { getDifficultyColor } from '@/utils/theme';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 interface ScalePracticeSectionProps {
@@ -9,19 +10,6 @@ interface ScalePracticeSectionProps {
 }
 
 export default function ScalePracticeSection({ scaleData }: ScalePracticeSectionProps) {
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty.toLowerCase()) {
-      case 'beginner':
-        return 'bg-green-100 text-green-800';
-      case 'intermediate':
-        return 'bg-yellow-100 text-yellow-800';
-      case 'advanced':
-        return 'bg-red-100 text-red-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
-    }
-  };
-
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
       <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>

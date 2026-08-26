@@ -1,7 +1,8 @@
-"use client";
-
-import React from "react";
+import { getSongAnalysisMetadata } from '@/lib/seo';
 import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
+
+
+export const metadata = getSongAnalysisMetadata('were-not-gonna-take-it');
 
 export default function WereNotGonnaTakeItAnalysis() {
   return (

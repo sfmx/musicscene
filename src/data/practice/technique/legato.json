@@ -1,0 +1,364 @@
+{
+  "slug": "legato",
+  "category": "technique",
+  "pageInfo": {
+    "pageTitle": "Legato Technique",
+    "subtitle": "Master the art of smooth, connected playing through hammer-ons, pull-offs, and advanced legato combinations.",
+    "heroGradient": "bg-gradient-to-br from-emerald-50 to-teal-100",
+    "heroTitle": "Legato Playing Mastery",
+    "heroDescription": "Legato playing creates smooth, flowing musical lines by connecting notes seamlessly through hammer-ons, pull-offs, and slides. This essential technique allows for expressive phrasing, increased speed with less picking, and the ability to create vocal-like melodic passages that sing with emotion and fluidity."
+  },
+  "guidelines": {
+    "title": "Fundamental Principles",
+    "columns": [
+      {
+        "title": "Hammer-On Technique",
+        "items": [
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Strike the fret firmly with fingertip"
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Use quick, decisive finger motion"
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Maintain proper finger curvature"
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Generate volume from fretting hand"
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Keep unused fingers close to fretboard"
+          }
+        ]
+      },
+      {
+        "title": "Pull-Off Technique",
+        "items": [
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Pull finger across string (slight pluck)"
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Move perpendicular to string direction"
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Pre-fret the lower note before pull-off"
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Control the volume and tone"
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Practice smooth, controlled motion"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Foundation Techniques",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Basic Hammer-Ons",
+          "difficulty": "Foundation",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Start with simple two-note hammer-ons to develop the fundamental motion. Focus on generating clear, even volume from the fretting hand alone.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Technique: Pick the first note, then hammer the second note with your fretting finger"
+          },
+          "notation": {
+            "title": "Two-Fret Hammer-Ons on All Strings",
+            "alphaTex": ":4 5.6{h} 7.6 5.5{h} 7.5 | 5.4{h} 7.4 5.3{h} 7.3 | 5.2{h} 7.2 5.1{h} 7.1 | 7.6{h} 9.6 7.5{h} 9.5 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Strike the fret firmly with your fingertip, not the pad. The hammered note should be as loud as the picked note. Practice on all strings to develop consistent technique.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Basic Pull-Offs",
+          "difficulty": "Foundation",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Develop smooth pull-off technique by learning to \"pluck\" the string with your fretting finger while revealing the lower fretted note underneath.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Technique: Pre-fret both notes, pick the higher note, then pull off to the lower note"
+          },
+          "notation": {
+            "title": "Two-Fret Pull-Offs on All Strings",
+            "alphaTex": ":4 7.6{h} 5.6 7.5{h} 5.5 | 7.4{h} 5.4 7.3{h} 5.3 | 7.2{h} 5.2 7.1{h} 5.1 | 9.6{h} 7.6 9.5{h} 7.5 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Before picking, make sure both fingers are properly positioned. The pull-off motion should be quick and decisive, moving perpendicular to the string.",
+            "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Hammer-On + Pull-Off Combinations",
+          "difficulty": "Essential",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Combine hammer-ons and pull-offs to create flowing three-note patterns. This forms the foundation for more complex legato passages.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Pattern: Pick - Hammer - Pull-Off (only one pick attack per group)"
+          },
+          "notation": {
+            "title": "Three-Note Legato Groups on All Strings",
+            "alphaTex": ":4 5.6{h} 7.6{h} 5.6 r | 5.5{h} 7.5{h} 5.5 r | 5.4{h} 7.4{h} 5.4 r | 5.3{h} 7.3{h} 5.3 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Each three-note group should be completely smooth and connected. Focus on maintaining consistent volume and timing throughout the legato passage.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Legato Techniques",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Four-Note Legato Patterns",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Extend your legato technique to four-note patterns using combinations of hammer-ons and pull-offs. This develops finger independence and stamina.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Pattern: Pick - Hammer - Hammer - Pull-Off variations"
+          },
+          "notation": {
+            "title": "Four-Note Legato Groups: Ascending and Descending",
+            "alphaTex": ":4 5.6{h} 7.6{h} 9.6{h} 7.6 | 5.5{h} 7.5{h} 9.5{h} 7.5 | 5.4{h} 7.4{h} 9.4{h} 7.4 | 5.3{h} 7.3{h} 9.3{h} 7.3 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Keep all four fingers close to the fretboard and pre-positioned. The third finger must be strong enough to generate a clear hammered note on the highest fret.",
+            "tempo": "50 BPM (16th notes)"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Scale-Based Legato Playing",
+          "difficulty": "Musical",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Apply legato technique to musical scales, creating smooth, flowing lines that sound vocal and expressive. This bridges technical exercise with musical application.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Scale: A Minor Pentatonic with legato connections"
+          },
+          "notation": {
+            "title": "A Minor Pentatonic with Legato Connections",
+            "alphaTex": ":8 5.6{h} 8.6 5.5{h} 7.5 5.4{h} 7.4 5.3{h} 7.3 | 5.2{h} 8.2 5.1{h} 8.1 8.1{h} 5.1 8.2{h} 5.2 | 7.3{h} 5.3 7.4{h} 5.4 7.5{h} 5.5 8.6{h} 5.6 | :1 5.6 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "Focus on musical phrasing and expression. Vary the dynamics and timing slightly to create a vocal quality. Practice in different keys and scale positions.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Cross-String Legato Patterns",
+          "difficulty": "Advanced",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Master legato across multiple strings to create longer, more complex musical phrases. This technique is essential for advanced lead guitar playing.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Challenge: Maintain legato flow while changing strings"
+          },
+          "notation": {
+            "title": "Flowing Cross-String Legato Patterns",
+            "alphaTex": ":8 5.6{h} 7.6{h} 9.6 5.5{h} 7.5{h} 9.5 5.4{h} 7.4 | 7.4{h} 9.4 5.3{h} 7.3{h} 9.3 5.2{h} 7.2{h} 9.2 | 9.2{h} 7.2{h} 5.2 9.3{h} 7.3{h} 5.3 9.4{h} 7.4 | 7.4{h} 5.4 9.5{h} 7.5{h} 5.5 9.6{h} 7.6{h} 5.6 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "Practice string transitions slowly to maintain the legato connection. Use minimal picking - only when necessary to move to a new string or restart a phrase.",
+            "tempo": "Progressive tempo: 40-100+ BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Legato Applications",
+      "exercises": [
+        {
+          "number": 7,
+          "title": "Slides Combined with Legato",
+          "difficulty": "Expressive",
+          "borderColor": "border-cyan-200",
+          "difficultyBg": "bg-cyan-100",
+          "difficultyText": "text-cyan-700",
+          "numberBg": "bg-cyan-100",
+          "numberText": "text-cyan-600",
+          "description": "Combine slides with hammer-ons and pull-offs to create extremely expressive and vocal-like passages. This technique is essential for blues and rock lead guitar.",
+          "patternNote": {
+            "colorBg": "bg-cyan-50",
+            "colorText": "text-cyan-800",
+            "text": "Technique: Smooth slides connecting legato phrases"
+          },
+          "notation": {
+            "title": "Expressive Slides Combined with Hammer-Ons and Pull-Offs",
+            "alphaTex": ":4 5.6{sl} 7.6{h} 9.6{h} 7.6 | 5.5{sl} 7.5{h} 9.5{h} 7.5 | 5.4{sl} 7.4{h} 9.4{h} 7.4 | 5.3{sl} 7.3{h} 9.3{h} 7.3 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-cyan-50",
+            "colorBorder": "border-cyan-200",
+            "colorTitle": "text-cyan-900",
+            "colorText": "text-cyan-800",
+            "colorAccent": "bg-cyan-100",
+            "title": "Practice Notes",
+            "text": "Control the speed of your slides to match the musical context. Slow slides are more expressive, while quick slides add energy. Combine with vibrato for maximum effect.",
+            "tempo": "Focus on expression over speed"
+          }
+        },
+        {
+          "number": 8,
+          "title": "High-Speed Legato Runs",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Develop lightning-fast legato runs for impressive lead guitar solos. This technique allows for incredible speed with minimal pick attacks, creating fluid cascades of notes.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Goal: Maximum speed with crystal clear note definition"
+          },
+          "notation": {
+            "title": "Extended Legato Runs for Speed Development",
+            "alphaTex": ":16 12.1{h} 15.1{h} 17.1{h} 15.1 12.1{h} 15.1{h} 17.1{h} 15.1 12.1{h} 15.1{h} 17.1{h} 15.1 12.1{h} 15.1{h} 17.1{h} 15.1 | 12.2{h} 15.2{h} 17.2{h} 15.2 12.2{h} 15.2{h} 17.2{h} 15.2 12.2{h} 15.2{h} 17.2{h} 15.2 12.2{h} 15.2{h} 17.2{h} 15.2 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
+            "title": "Practice Notes",
+            "text": "Build speed gradually and always maintain clarity. Each note must be audible and in time. Use this technique sparingly in musical contexts for maximum impact.",
+            "tempo": "Progressive tempo: 60-150+ BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Practice Strategy & Development",
+    "items": [
+      {
+        "title": "Technical Development",
+        "colorBg": "bg-gradient-to-br from-emerald-50 to-teal-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "bulletColor": "text-emerald-500",
+        "items": [
+          "Start with basic two-note hammer-ons and pull-offs",
+          "Practice on all strings to develop consistent technique",
+          "Focus on volume consistency between picked and hammered notes",
+          "Build finger strength gradually with longer patterns",
+          "Practice both ascending and descending patterns"
+        ]
+      },
+      {
+        "title": "Common Challenges",
+        "colorBg": "bg-gradient-to-br from-blue-50 to-indigo-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "challenges": [
+          {
+            "title": "Weak Hammered Notes",
+            "text": "Strike the fret more decisively with your fingertip. Practice hammer-ons without picking the first note to isolate the technique."
+          },
+          {
+            "title": "Inconsistent Pull-Offs",
+            "text": "Ensure the lower finger is properly positioned before the pull-off. Practice the pulling motion slowly to develop control."
+          },
+          {
+            "title": "Finger Fatigue",
+            "text": "Build stamina gradually with short practice sessions. Rest between exercises and stretch your hands regularly."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
 import { getScaleData, ScaleData } from '@/lib/scaleData';
 import ScaleInfoSection from './ScaleInfoSection';
 import ScaleTheorySection from './ScaleTheorySection';
@@ -14,7 +14,14 @@ import ScaleSongsSection from './ScaleSongsSection';
 import ScalePracticeSection from './ScalePracticeSection';
 import ScaleRelatedSection from './ScaleRelatedSection';
 import ScaleLearningPathSection from './ScaleLearningPathSection';
+import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
+import AdSlot from '@/components/Revenue/AdSlot';
+import GearRecommendations from '@/components/Revenue/GearRecommendations';
+import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
+import SequentialNav from '@/components/SequentialNav';
+import { getSequentialNav } from '@/lib/sequentialNav';
 
 interface ScaleAnalysisPageTemplateProps {
   scaleSlug: string;
@@ -66,7 +73,7 @@ export default function ScaleAnalysisPageTemplate({
             </p>
           </div>
         </main>
-        <Footer />
+
       </Layout>
     );
   }
@@ -93,13 +100,14 @@ export default function ScaleAnalysisPageTemplate({
             </Link>
           </div>
         </main>
-        <Footer />
+
       </Layout>
     );
   }
 
   const title = displayName || scaleData.scaleInfo.name;
   const subtitle = `${scaleData.scaleInfo.character} - ${scaleData.scaleInfo.intervalPattern} pattern`;
+  const nav = getSequentialNav('scale', scaleSlug);
 
   return (
     <Layout>
@@ -109,16 +117,7 @@ export default function ScaleAnalysisPageTemplate({
       />
       
       <main className="max-w-6xl mx-auto px-4 py-8">
-        {/* Navigation */}
-        <div className="mb-8">
-          <Link 
-            href="/lessons/theory/scales" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            <span className="mr-2">←</span>
-            Back to Scale Theory
-          </Link>
-        </div>
+        <Breadcrumbs pathname={`/lessons/theory/scales/${scaleSlug}`} pageTitle={scaleData.scaleInfo.name} />
 
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-xl p-8 mb-12">
@@ -159,11 +158,25 @@ export default function ScaleAnalysisPageTemplate({
         {/* Related Scales */}
         <ScaleRelatedSection scaleData={scaleData} />
 
+        {/* Gear Recommendations */}
+        {scaleData.gearRecommendations && scaleData.gearRecommendations.items.length > 0 && (
+          <GearRecommendations
+            title={scaleData.gearRecommendations.title}
+            items={scaleData.gearRecommendations.items}
+          />
+        )}
+
+        <SongsUsingThis type="scale" slug={scaleSlug} />
+
+        <AdSlot slotId="content-bottom" format="banner" />
+
+        <RelatedContentSection contentId={`scale:${scaleSlug}`} />
+
         {/* Learning Path */}
         <ScaleLearningPathSection scaleData={scaleData} />
+        <SequentialNav nav={nav} typeLabel="Scale" />
       </main>
-      
-      <Footer />
+
     </Layout>
   );
 }

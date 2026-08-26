@@ -1,0 +1,320 @@
+{
+  "slug": "compression",
+  "category": "effects",
+  "pageTitle": "Compression & Dynamics",
+  "subtitle": "Master compression to control dynamics, enhance sustain, and improve your overall guitar sound",
+  "heroGradient": "from-green-50 to-teal-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Understanding Compression",
+    "text": "Compression is one of the most fundamental yet misunderstood effects in guitar playing. While it may seem transparent compared to distortion or delay, compression profoundly affects your guitar's dynamics, sustain, and overall feel. It can make your playing more consistent, enhance sustain, and create the kind of polished, professional sound heard on countless recordings.",
+    "quote": "Compression doesn't just control volume\u2014it shapes the very character of your attack, sustain, and release, making it one of the most powerful tools for crafting your personal guitar sound."
+  },
+  "sections": [
+    {
+      "title": "How Compression Works",
+      "bgColor": "blue-50",
+      "borderColor": "blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Process",
+          "description": "Compression reduces the dynamic range of your guitar signal by automatically lowering the volume of loud signals and raising the volume of quiet signals. This creates more consistent levels while affecting the attack and sustain characteristics.",
+          "items": [
+            "1. Signal exceeds the threshold level",
+            "2. Compressor reduces gain by the ratio amount",
+            "3. Attack time determines how quickly compression starts",
+            "4. Release time controls how quickly it stops",
+            "5. Make-up gain compensates for level reduction"
+          ]
+        },
+        {
+          "title": "Musical Effects",
+          "items": [
+            "More consistent picking dynamics",
+            "Enhanced sustain on single notes",
+            "Tighter, more focused sound",
+            "Better balance in complex playing",
+            "Increased perceived loudness"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Compression Parameters",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Threshold",
+          "description": "Sets the level where compression begins. Signals above this level get compressed; signals below pass through unaffected.",
+          "fields": [
+            { "label": "High threshold", "value": "Only peaks get compressed" },
+            { "label": "Medium threshold", "value": "Most normal playing compressed" },
+            { "label": "Low threshold", "value": "Everything gets compressed" },
+            { "label": "Musical Impact", "value": "Higher = more dynamic range preserved. Lower = more consistent, controlled sound. Affects how much your playing dynamics come through." },
+            { "label": "Tip", "value": "Start with a medium threshold and adjust based on your playing strength." }
+          ]
+        },
+        {
+          "title": "Ratio",
+          "description": "Determines how much the signal is reduced once it exceeds the threshold. Expressed as a ratio like 4:1, meaning 4dB input creates 1dB output above threshold.",
+          "fields": [
+            { "label": "2:1 to 4:1", "value": "Gentle, musical compression" },
+            { "label": "4:1 to 8:1", "value": "Noticeable, controlled compression" },
+            { "label": "10:1+", "value": "Heavy limiting, dramatic effect" },
+            { "label": "Musical Applications", "value": "Low ratios = transparent level control. Medium ratios = classic guitar compression. High ratios = special effects, country \"squash\"." },
+            { "label": "Sweet Spot", "value": "3:1 to 6:1 works for most guitar applications." }
+          ]
+        },
+        {
+          "title": "Attack & Release",
+          "description": "Attack: How quickly compression starts after threshold is exceeded. Release: How quickly compression stops after signal drops below threshold.",
+          "fields": [
+            { "label": "Fast Attack (0.1-1ms)", "value": "Catches note attacks, smooths picking" },
+            { "label": "Medium Attack (1-10ms)", "value": "Balanced, musical response" },
+            { "label": "Slow Attack (10ms+)", "value": "Preserves pick attack transients" },
+            { "label": "Fast Release (10-100ms)", "value": "Quick recovery, can sound pumpy" },
+            { "label": "Medium Release (100ms-1s)", "value": "Natural, musical decay" },
+            { "label": "Slow Release (1s+)", "value": "Sustained, smooth release" },
+            { "label": "Pro Tip", "value": "Match release time to the tempo and style of your music." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Guitar Compressors",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Optical Compressors",
+          "description": "Use a light source and photocell to control gain reduction. The brighter the light, the more compression.",
+          "badge": { "text": "Smooth & Musical", "color": "orange" },
+          "fields": [
+            { "label": "Characteristics", "value": "Smooth musical compression, slow natural attack and release, transparent when set conservatively, vintage warmth and character" },
+            { "label": "Best For", "value": "Clean rhythm guitar, jazz and blues, subtle dynamics control, recording applications" },
+            { "label": "Famous Examples", "value": "LA-2A, Empress Compressor, Origin Cali76" }
+          ]
+        },
+        {
+          "title": "VCA Compressors",
+          "description": "Voltage Controlled Amplifier uses a control voltage to adjust gain reduction with precise timing.",
+          "badge": { "text": "Fast & Precise", "color": "purple" },
+          "fields": [
+            { "label": "Characteristics", "value": "Fast precise response, detailed parameter control, can be transparent or aggressive, consistent repeatable results" },
+            { "label": "Best For", "value": "Studio recording, precise dynamics control, modern country guitar, professional applications" },
+            { "label": "Famous Examples", "value": "DBX 160X, Boss CS-2, Keeley Compressor Pro" }
+          ]
+        },
+        {
+          "title": "FET Compressors",
+          "description": "Field Effect Transistor controls gain reduction, often with aggressive, punchy character.",
+          "badge": { "text": "Punchy & Aggressive", "color": "red" },
+          "fields": [
+            { "label": "Characteristics", "value": "Fast attack aggressive sound, colored characterful compression, punchy in-your-face response, often simpler controls" },
+            { "label": "Best For", "value": "Rock and punk guitar, aggressive rhythm parts, adding sustain to solos, vintage-style compression" },
+            { "label": "Famous Examples", "value": "1176, Ross Compressor, MXR Dyna Comp" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compression Applications by Genre",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Country Guitar",
+          "items": [
+            "Heavy compression (6:1-10:1 ratio)",
+            "Fast attack to control pick dynamics",
+            "Medium release for sustain",
+            "Creates the classic \"Nashville\" squash",
+            "Makes chicken picking more consistent"
+          ]
+        },
+        {
+          "title": "Jazz Guitar",
+          "items": [
+            "Light compression (2:1-3:1 ratio)",
+            "Slow attack to preserve note character",
+            "Slow release for natural decay",
+            "Maintains dynamic expression",
+            "Evens out fingerpicking variations"
+          ]
+        },
+        {
+          "title": "Funk/R&B",
+          "items": [
+            "Medium compression (4:1-6:1 ratio)",
+            "Fast attack for tight rhythm",
+            "Fast release for punchy response",
+            "Emphasizes percussive playing",
+            "Works great with clean tones"
+          ]
+        },
+        {
+          "title": "Blues Guitar",
+          "items": [
+            "Subtle compression (2:1-4:1 ratio)",
+            "Medium attack to keep some dynamics",
+            "Slow release for singing sustain",
+            "Enhances bends and vibrato",
+            "Maintains expressive playing"
+          ]
+        },
+        {
+          "title": "Rock/Metal",
+          "items": [
+            "Moderate compression (3:1-6:1 ratio)",
+            "Medium attack for controlled aggression",
+            "Medium release for sustain without muddiness",
+            "Tightens palm muting",
+            "Enhances lead guitar sustain"
+          ]
+        },
+        {
+          "title": "Ambient/Post-Rock",
+          "items": [
+            "Light to medium compression (2:1-5:1)",
+            "Slow attack to preserve swells",
+            "Very slow release for extended sustain",
+            "Supports volume swells and ambient textures",
+            "Works well with reverb and delay"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compression in Famous Recordings",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Chicken Pickin'\" - Country Guitar Style",
+          "description": "Artists: Brad Paisley, Keith Urban, Brent Mason",
+          "badge": { "text": "Country", "color": "yellow" },
+          "fields": [
+            { "label": "Compression Settings", "value": "Heavy ratio (8:1-10:1), fast attack, medium release, high make-up gain" },
+            { "label": "Musical Effect", "value": "Creates consistent pick attack, emphasizes string snaps and muting, allows complex fingerpicking patterns, signature country \"squash\" sound" }
+          ]
+        },
+        {
+          "title": "\"Sultans of Swing\" - Dire Straits",
+          "description": "Subtle compression on Mark Knopfler's fingerpicked guitar",
+          "badge": { "text": "Fingerpicking", "color": "blue" },
+          "fields": [
+            { "label": "Compression Settings", "value": "Light ratio (3:1-4:1), medium attack, slow release, conservative threshold" },
+            { "label": "Musical Effect", "value": "Evens out fingerpicking dynamics, maintains natural expression, creates smooth singing sustain, transparent musical compression" }
+          ]
+        },
+        {
+          "title": "\"Comfortably Numb\" Solo - Pink Floyd",
+          "description": "Moderate compression enhancing David Gilmour's sustain",
+          "badge": { "text": "Lead Guitar", "color": "red" },
+          "fields": [
+            { "label": "Compression Settings", "value": "Medium ratio (4:1-6:1), slow attack, slow release, moderate threshold" },
+            { "label": "Musical Effect", "value": "Extends note sustain dramatically, preserves note attack character, supports expressive bends and vibrato, creates singing emotional tone" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Compression Mistakes",
+      "bgColor": "red-50",
+      "borderColor": "red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "items": [
+            "Over-compressing and losing all dynamics",
+            "Using compression to fix poor playing technique",
+            "Setting attack too fast and losing pick attack",
+            "Not compensating with make-up gain",
+            "Using the same settings for all playing styles",
+            "Ignoring how compression affects your amp's distortion"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Start with gentle settings and gradually increase",
+            "Listen to how compression affects your playing feel",
+            "Adjust settings based on musical context",
+            "Use your ears, not just visual meter indicators",
+            "Consider compression's interaction with other effects",
+            "Practice playing with and without compression"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Compression Concepts",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Serial Compression",
+          "description": "Using multiple compressors in series for different purposes",
+          "items": [
+            "First compressor: Fast attack, controls peaks",
+            "Second compressor: Slow attack, adds sustain",
+            "Each does a specific job without overworking",
+            "More natural-sounding than extreme single compression"
+          ]
+        },
+        {
+          "title": "Parallel Compression",
+          "description": "Blending heavily compressed and uncompressed signals",
+          "items": [
+            "Maintains natural dynamics while adding sustain",
+            "Heavily compress one signal path",
+            "Blend with original uncompressed signal",
+            "Best of both worlds: punch and sustain"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Compression Practice Exercises",
+    "exercises": [
+      {
+        "title": "Exercise 1: Attack Time Comparison",
+        "items": [
+          "Play the same chord progression with different attack settings",
+          "Fast attack (0.1ms): Notice how pick attack is smoothed",
+          "Medium attack (5ms): Balanced response",
+          "Slow attack (20ms): Pick attack preserved, sustain enhanced",
+          "Pay attention to how each setting affects the character and feel of your playing"
+        ]
+      },
+      {
+        "title": "Exercise 2: Dynamic Range Exercise",
+        "items": [
+          "Practice playing with varying pick attack strengths",
+          "Very soft picking \u2192 medium \u2192 aggressive attack",
+          "Notice how compression affects the relationship between these levels",
+          "Try this with different ratio settings (2:1, 6:1, 10:1)",
+          "Observe how higher ratios reduce the difference between soft and hard picking"
+        ]
+      },
+      {
+        "title": "Exercise 3: Musical Context Practice",
+        "items": [
+          "Practice the same musical phrase in different styles",
+          "Country: Heavy compression, fast attack, chicken picking",
+          "Jazz: Light compression, slow attack, fingerpicking",
+          "Blues: Medium compression, medium attack, expressive bends",
+          "Funk: Punchy compression, fast attack/release, percussive style"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/distortion", "label": "Distortion & Overdrive" },
+    { "href": "/lessons/songs/effects/pitch", "label": "Octave & Pitch Effects" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain & Multi-Effects" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects & Tone Overview" }
+  ]
+}

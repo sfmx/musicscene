@@ -38,7 +38,11 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["A5", "D5", "G5"],
+        "chords": [
+          "A5",
+          "D5",
+          "G5"
+        ],
         "progression": "I - IV - ♭VII",
         "description": "Classic rock progression using ♭VII chord for signature AC/DC sound"
       },
@@ -76,7 +80,11 @@
       "difficulty": "Beginner+",
       "primaryTechnique": true,
       "details": {
-        "chords": ["A5", "D5", "G5"],
+        "chords": [
+          "A5",
+          "D5",
+          "G5"
+        ],
         "progression": "A5 - D5 - G5 - D5 - A5",
         "notes": [
           "A5: X-0-2-2-X-X (Open A string + 2nd fret D and G strings)",
@@ -163,14 +171,17 @@
       "technique": "Power Chords",
       "key": "A major",
       "description": "Simple A5 power chord with driving rhythm",
-      "chords": ["A5"],
+      "chords": [
+        "A5"
+      ],
       "progression": "A5",
-      "alphaTab": "2.5 2.5 2.5 2.5 | 2.5 2.5 2.5 2.5",
       "notes": [
         "Sets the driving rhythm for the entire song",
         "Clean A5 power chord with palm muting",
         "Establishes the pocket feel"
-      ]
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Verse",
@@ -178,15 +189,19 @@
       "technique": "Power Chords",
       "key": "A major",
       "description": "Alternating A5 and D5 power chords",
-      "chords": ["A5", "D5"],
+      "chords": [
+        "A5",
+        "D5"
+      ],
       "progression": "A5 - D5 - A5 - D5",
-      "alphaTab": "2.5 2.5 7.4 7.4 | 2.5 2.5 7.4 7.4",
       "notes": [
         "Simple I-IV alternation",
         "A5 - D5 - A5 - D5 pattern",
         "Palm muted eighth notes",
         "Pocket timing essential"
-      ]
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Chorus",
@@ -194,15 +209,20 @@
       "technique": "Power Chords",
       "key": "A major",
       "description": "Extended progression with G5 adding rock edge",
-      "chords": ["A5", "D5", "G5"],
+      "chords": [
+        "A5",
+        "D5",
+        "G5"
+      ],
       "progression": "A5 - D5 - G5 - D5 - A5",
-      "alphaTab": "2.5 7.4 12.3 7.4 | 2.5 2.5 2.5 2.5",
       "notes": [
         "A5 - D5 - G5 - D5 - A5 progression",
         "♭VII chord (G5) adds classic rock character",
         "More open, driving feel than verse",
         "Strong downbeat emphasis"
-      ]
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Guitar Solo",
@@ -210,15 +230,20 @@
       "technique": "Pentatonic Lead",
       "key": "A major",
       "description": "Melodic pentatonic lead lines over chord progression",
-      "chords": ["A5", "D5", "G5"],
+      "chords": [
+        "A5",
+        "D5",
+        "G5"
+      ],
       "progression": "A5 - D5 - G5 - D5 - A5",
-      "alphaTab": "5.1 7.1 8.1 8.1 | 7.1 5.1 5.1 8.1",
       "notes": [
         "A minor pentatonic scale (5th fret position)",
         "Simple, melodic approach",
         "Classic AC/DC lead style",
         "Rhythm guitar continues underneath"
-      ]
+      ],
+      "alphaTab": "5.6 7.6 4.5 7.5 4.4 7.4 | 4.3 6.3 5.2 7.2 5.1 7.1 | 7.1 5.1 7.2 5.2 6.3 4.3 | 7.4 4.4 7.5 4.5 7.6 5.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
     },
     {
       "name": "Bridge",
@@ -226,30 +251,42 @@
       "technique": "Power Chords",
       "key": "A major",
       "description": "Building section with D5 - G5 - A5 progression",
-      "chords": ["D5", "G5", "A5"],
+      "chords": [
+        "D5",
+        "G5",
+        "A5"
+      ],
       "progression": "D5 - G5 - A5",
-      "alphaTab": "7.4 7.4 12.3 12.3 | 2.5 2.5 2.5 2.5",
       "notes": [
         "IV - ♭VII - I ascending progression",
         "Builds energy toward final chorus",
         "Same rhythm approach as other sections",
         "Sets up return to main progression"
-      ]
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson SG Standard",
-      "alternatives": ["Epiphone SG", "Gibson Les Paul Standard", "Gretsch G6120"],
+      "alternatives": [
+        "Epiphone SG",
+        "Gibson Les Paul Standard",
+        "Gretsch G6120"
+      ],
       "pickup": "Bridge humbucker pickup for lead, both pickups for rhythm"
     },
     "amp": {
       "recommended": "Marshall JTM45/100",
-      "alternatives": ["Marshall Plexi", "Marshall JCM800"],
+      "alternatives": [
+        "Marshall Plexi",
+        "Marshall JCM800"
+      ],
       "settings": {
         "gain": "7/10",
         "bass": "6/10",
-        "middle": "8/10", 
+        "middle": "8/10",
         "treble": "7/10",
         "presence": "5/10"
       }
@@ -318,7 +355,7 @@
         "similarity": "Classic rock power chord progression"
       },
       {
-        "title": "Wild Thing", 
+        "title": "Wild Thing",
         "artist": "The Troggs",
         "technique": "Simple Progressions",
         "similarity": "I-bVII-IV progression foundation"
@@ -347,5 +384,19 @@
       "Focus on staying slightly behind beat",
       "Use different time signatures for variety"
     ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2024-01-01",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "power-chords",
+      "classic-rock",
+      "metal"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
   }
 }

@@ -1,0 +1,257 @@
+{
+  "slug": "secondary-dominants",
+  "category": "chords",
+  "pageTitle": "Secondary Dominants",
+  "subtitle": "Master the technique of tonicizing other keys temporarily for harmonic interest",
+  "heroGradient": "from-red-50 to-orange-50",
+  "backLink": {
+    "href": "/lessons/songs/chords",
+    "label": "Back to Chord Theory in Songs"
+  },
+  "introduction": {
+    "title": "Temporary Key Changes",
+    "text": "Secondary dominants are like taking brief vacations to other keys without actually leaving home. By treating any chord as if it were a temporary tonic, you can create stronger resolutions and more sophisticated harmonic motion.",
+    "columns": [
+      { "title": "Stronger Resolutions", "text": "V7 \u2192 I is the strongest progression in music. Secondary dominants let you use this power anywhere." },
+      { "title": "Chromatic Color", "text": "Adds chromatic notes that aren't in the key, creating sophisticated harmonic colors." }
+    ]
+  },
+  "sections": [
+    {
+      "title": "How Secondary Dominants Work",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "The Basic Principle",
+          "bgColor": "blue-50",
+          "description": "Any chord can be preceded by its own dominant. In the key of C major:",
+          "items": [
+            "Dm can be preceded by A7 (the V7 of D minor)",
+            "F can be preceded by C7 (the V7 of F major)",
+            "Am can be preceded by E7 (the V7 of A minor)"
+          ]
+        },
+        {
+          "title": "V/ii (A7)",
+          "description": "Target: ii (Dm)",
+          "fields": [
+            { "label": "Resolution", "value": "A7 \u2192 Dm" },
+            { "label": "Analysis", "value": "A7 contains C# which leads strongly to D" },
+            { "label": "Usage", "value": "Very common - tonicizes the ii chord" }
+          ],
+          "items": ["\"Autumn Leaves\"", "Many folk songs"]
+        },
+        {
+          "title": "V/iii (B7)",
+          "description": "Target: iii (Em)",
+          "fields": [
+            { "label": "Resolution", "value": "B7 \u2192 Em" },
+            { "label": "Analysis", "value": "B7 contains D# which leads to E" },
+            { "label": "Usage", "value": "Less common but effective for minor flavor" }
+          ],
+          "items": ["\"My Funny Valentine\"", "Jazz ballads"]
+        },
+        {
+          "title": "V/IV (C7)",
+          "description": "Target: IV (F)",
+          "fields": [
+            { "label": "Resolution", "value": "C7 \u2192 F" },
+            { "label": "Analysis", "value": "C7 contains Bb which leads to F" },
+            { "label": "Usage", "value": "Common in country and folk" }
+          ],
+          "items": ["\"Sweet Caroline\"", "Country standards"]
+        },
+        {
+          "title": "V/V (D7)",
+          "description": "Target: V (G)",
+          "fields": [
+            { "label": "Resolution", "value": "D7 \u2192 G7" },
+            { "label": "Analysis", "value": "D7 contains F# which leads to G" },
+            { "label": "Usage", "value": "Extremely common - prepares the dominant" }
+          ],
+          "items": ["\"I Got Rhythm\"", "Thousands of songs"]
+        },
+        {
+          "title": "V/vi (E7)",
+          "description": "Target: vi (Am)",
+          "fields": [
+            { "label": "Resolution", "value": "E7 \u2192 Am" },
+            { "label": "Analysis", "value": "E7 contains G# which leads to A" },
+            { "label": "Usage", "value": "Very popular for dramatic effect" }
+          ],
+          "items": ["\"House of the Rising Sun\"", "\"California Dreamin'\""]
+        }
+      ]
+    },
+    {
+      "title": "Secondary Dominants in Action",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Circle of Fifths with Secondary Dominants",
+          "badge": { "text": "Jazz, Advanced Harmony", "color": "red" },
+          "fields": [
+            { "label": "Without secondary dominants", "value": "C - F - Bb - Eb - Ab - Db - Gb - B - E - A - D - G - C" },
+            { "label": "With secondary dominants", "value": "C - C7 - F - F7 - Bb - Bb7 - Eb..." },
+            { "label": "Analysis", "value": "I - V/IV - IV - V/bVII - bVII..." },
+            { "label": "Effect", "value": "Each major chord becomes a dominant 7th leading to the next chord down a 5th" }
+          ]
+        },
+        {
+          "title": "Pop Song with V/vi",
+          "badge": { "text": "Pop, Folk, Country", "color": "red" },
+          "fields": [
+            { "label": "Without secondary dominants", "value": "C - Am - F - G" },
+            { "label": "With secondary dominants", "value": "C - E7 - Am - F - G" },
+            { "label": "Analysis", "value": "I - V/vi - vi - IV - V" },
+            { "label": "Effect", "value": "E7 strongly tonicizes Am, making it feel temporarily like a tonic" }
+          ]
+        },
+        {
+          "title": "Jazz ii-V with V/V",
+          "badge": { "text": "Jazz, Sophisticated Pop", "color": "red" },
+          "fields": [
+            { "label": "Without secondary dominants", "value": "Dm7 - G7 - C" },
+            { "label": "With secondary dominants", "value": "Dm7 - D7 - G7 - C" },
+            { "label": "Analysis", "value": "ii7 - V/V - V7 - I" },
+            { "label": "Effect", "value": "D7 prepares G7 more strongly than simple ii7-V7 motion" }
+          ]
+        },
+        {
+          "title": "Country/Folk IV preparation",
+          "badge": { "text": "Country, Folk, Bluegrass", "color": "red" },
+          "fields": [
+            { "label": "Without secondary dominants", "value": "C - F - G - C" },
+            { "label": "With secondary dominants", "value": "C - C7 - F - G - C" },
+            { "label": "Analysis", "value": "I - V/IV - IV - V - I" },
+            { "label": "Effect", "value": "C7 makes the move to F feel like a strong resolution" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Secondary Dominant Concepts",
+      "bgColor": "purple-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Leading Tone Creation",
+          "description": "Secondary dominants create leading tones to non-tonic chords",
+          "fields": [
+            { "label": "Example", "value": "In C major, D7 (V/V) creates F# which leads to G" },
+            { "label": "Application", "value": "Any time you want to strongly emphasize a target chord" }
+          ]
+        },
+        {
+          "title": "Temporary Tonicization",
+          "description": "The target chord temporarily feels like a new tonic",
+          "fields": [
+            { "label": "Example", "value": "E7 \u2192 Am makes Am feel like \"home\" momentarily" },
+            { "label": "Application", "value": "Creating key centers within a progression" }
+          ]
+        },
+        {
+          "title": "Chromatic Voice Leading",
+          "description": "Secondary dominants often create chromatic bass lines",
+          "fields": [
+            { "label": "Example", "value": "C - C7 - F creates bass line C - C - F with chromatic harmony" },
+            { "label": "Application", "value": "Smooth, sophisticated harmonic motion" }
+          ]
+        },
+        {
+          "title": "Circle of Fifths Motion",
+          "description": "Chain secondary dominants for continuous forward motion",
+          "fields": [
+            { "label": "Example", "value": "A7 - D7 - G7 - C (V/ii - V/V - V - I)" },
+            { "label": "Application", "value": "Building harmonic momentum and sophistication" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis: \"Sweet Caroline\" by Neil Diamond",
+      "bgColor": "green-50",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Secondary Dominants in Popular Music",
+          "fields": [
+            { "label": "Progression", "value": "C - C7 - F - G - C" },
+            { "label": "Analysis", "value": "I - V/IV - IV - V - I (in C major)" }
+          ],
+          "items": [
+            "C7 contains Bb (not in C major)",
+            "Bb strongly wants to resolve down to A",
+            "But it resolves to F instead, creating satisfaction",
+            "Makes F feel like a temporary \"home\""
+          ]
+        },
+        {
+          "title": "Why It's Effective",
+          "items": [
+            "Simple but sophisticated harmonic motion",
+            "Creates forward momentum to the IV chord",
+            "Adds just enough sophistication without complexity",
+            "Perfect for sing-along accessibility",
+            "Emotional Effect: Confident \u2192 Slightly uncertain \u2192 Resolved satisfaction"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Secondary Dominant Patterns",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Popular Music Patterns",
+          "items": [
+            "I - V/vi - vi - IV: C - E7 - Am - F (Makes vi feel like temporary tonic)",
+            "I - V/IV - IV - V: C - C7 - F - G (Country/folk progression)",
+            "vi - V/V - V - I: Am - D7 - G - C (Strong cadential motion)"
+          ]
+        },
+        {
+          "title": "Jazz/Advanced Patterns",
+          "items": [
+            "ii - V/V - V - I: Dm - D7 - G - C (Enhanced ii-V-I progression)",
+            "V/ii - ii - V - I: A7 - Dm - G - C (Extended ii-V-I approach)",
+            "Circle of Fifths: A7-D7-G7-C (Chain of secondary dominants)"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Step-by-Step Practice",
+        "items": [
+          "1. Learn all V7 chords in every key",
+          "2. Practice V7 \u2192 I resolutions",
+          "3. Insert secondary dominants into simple progressions",
+          "4. Practice circle of fifths with dominants",
+          "5. Analyze songs you know for secondary dominants"
+        ]
+      },
+      {
+        "title": "Listening Practice",
+        "items": [
+          "Notice when a chord sounds \"outside\" the key",
+          "Feel the extra tension before resolution",
+          "Identify the chromatic notes being added",
+          "Listen for temporary key center shifts",
+          "Study jazz standards for advanced usage"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/chords/inversions", "label": "Chord Inversions" },
+    { "href": "/lessons/songs/chords/substitutions", "label": "Chord Substitutions" },
+    { "href": "/lessons/songs/chords/extended", "label": "Extended Chords" },
+    { "href": "/lessons/songs/chords/modal-interchange", "label": "Modal Interchange" },
+    { "href": "/lessons/songs/analysis-method", "label": "Song Analysis Method" },
+    { "href": "/lessons/songs/chords", "label": "Back to Chord Theory Overview" }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "slug": "mixolydian",
+  "modeInfo": {
+    "name": "Mixolydian Mode",
+    "pageTitle": "Mixolydian Mode",
+    "subtitle": "The dominant mode - a major scale with a flattened seventh that creates the perfect sound for blues, rock, and dominant chord progressions.",
+    "heroGradient": "bg-gradient-to-r from-orange-500 to-red-600",
+    "tags": [
+      "W-W-H-W-W-H-W",
+      "7 Notes",
+      "Major with \u266d7",
+      "Dominant & Bluesy"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Scale Properties",
+    "properties": [
+      {
+        "label": "Formula",
+        "value": "1-2-3-4-5-6-\u266d7"
+      },
+      {
+        "label": "Intervals",
+        "value": "W-W-H-W-W-H-W"
+      },
+      {
+        "label": "Key difference",
+        "value": "Flat 7th (vs natural 7th in major)"
+      },
+      {
+        "label": "Character",
+        "value": "Dominant, bluesy, rock-friendly"
+      },
+      {
+        "label": "Function",
+        "value": "Dominant 7th chords, blues, rock solos"
+      }
+    ],
+    "exampleTitle": "G Mixolydian Example",
+    "examples": [
+      {
+        "label": "Notes",
+        "value": "G-A-B-C-D-E-F-G"
+      },
+      {
+        "label": "Parent scale",
+        "value": "C major (starting on G)"
+      },
+      {
+        "label": "Signature sound",
+        "value": "Major with bluesy flat 7th (F natural)"
+      },
+      {
+        "label": "Perfect for",
+        "value": "G7 chords, blues in G, rock solos"
+      }
+    ],
+    "bulletColor": "text-orange-500"
+  },
+  "guitarApplications": {
+    "fretboardPatterns": [
+      {
+        "title": "G Mixolydian - Open Position",
+        "description": "Perfect for blues and rock:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 3/6 0/5 2/5 3/5 | :q 0/4 2/4 3/4 1/3 | :q 3/3 0/2 1/2 3/2\n                    ",
+        "notes": [
+          "Root on 6th string, 3rd fret (G)",
+          "Flat 7th on 2nd string, 1st fret (F)",
+          "Natural fingering in open position",
+          "Perfect for G7 chord progressions"
+        ],
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "colorDetail": "text-orange-600"
+      },
+      {
+        "title": "A Mixolydian - 5th Position",
+        "description": "Rock and blues favorite:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 5/6 7/6 9/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 5/3 7/3 5/2 7/2\n                    ",
+        "notes": [],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-700",
+        "colorDetail": "text-red-600"
+      },
+      {
+        "title": "D Mixolydian - Open/2nd Position",
+        "description": "Country and folk applications:",
+        "alphaTex": "\n                      options space=20 font-size=14\n                      tabstave alphaTex=true time=4/4\n                      notes :q 0/4 2/4 4/4 0/3 | :q 2/3 4/3 0/2 2/2 | :q 3/2 0/1 2/1 3/1\n                    ",
+        "notes": [],
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "colorDetail": "text-amber-600"
+      }
+    ],
+    "musicalApplications": [
+      {
+        "title": "Blues Applications",
+        "description": "Essential for blues guitar:",
+        "items": [
+          "Use over dominant 7th chords",
+          "Perfect for 12-bar blues progressions",
+          "Emphasize the flat 7th interval",
+          "Mix with pentatonic scales",
+          "Great for shuffle rhythms"
+        ],
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700"
+      },
+      {
+        "title": "Rock & Country",
+        "description": "Genre-defining applications:",
+        "items": [
+          "Classic rock guitar solos",
+          "Country guitar licks and runs",
+          "Southern rock progressions",
+          "Jam band improvisation",
+          "Folk and bluegrass melodies"
+        ],
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700"
+      },
+      {
+        "title": "Jazz Context",
+        "description": "Jazz harmony applications:",
+        "items": [
+          "V7 chords in ii-V-I progressions",
+          "Dominant substitutions",
+          "Blues-jazz crossover styles",
+          "Chord-scale theory foundation",
+          "Modal jazz compositions"
+        ],
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classic": [
+      {
+        "title": "\"Fire on the Mountain\" - Grateful Dead",
+        "description": "Classic jam in A mixolydian",
+        "detail": "Perfect example of modal rock jamming"
+      },
+      {
+        "title": "\"Sweet Home Alabama\" - Lynyrd Skynyrd",
+        "description": "Southern rock using mixolydian progressions",
+        "detail": "Iconic use of mixolydian in rock music"
+      },
+      {
+        "title": "\"Norwegian Wood\" - The Beatles",
+        "description": "Mixolydian melody over folk progression",
+        "detail": "Shows modal harmony in popular music"
+      }
+    ],
+    "modern": [
+      {
+        "title": "Blues Rock",
+        "description": "Joe Bonamassa, Gary Moore",
+        "detail": "Modern blues guitar mastery"
+      },
+      {
+        "title": "Country Music",
+        "description": "Keith Urban, Brad Paisley",
+        "detail": "Contemporary country guitar"
+      },
+      {
+        "title": "Jam Bands",
+        "description": "Phish, Widespread Panic",
+        "detail": "Extended modal improvisation"
+      }
+    ]
+  },
+  "practiceCategories": [
+    {
+      "title": "Ear Training",
+      "icon": "\ud83d\udc42",
+      "items": [
+        "Compare to major scale",
+        "Focus on the flat 7th",
+        "Sing mixolydian scales",
+        "Identify in blues songs",
+        "Practice over G7 chords"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    },
+    {
+      "title": "Technical Practice",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Learn all five positions",
+        "Practice dominant arpeggios",
+        "Work on bending to flat 7th",
+        "Connect to chord shapes",
+        "Practice in different keys"
+      ],
+      "colorBg": "bg-red-50",
+      "colorBorder": "border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700"
+    },
+    {
+      "title": "Musical Application",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Improvise over blues progressions",
+        "Create rock riffs",
+        "Study country licks",
+        "Learn Grateful Dead songs",
+        "Practice with backing tracks"
+      ],
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border-amber-200",
+      "colorTitle": "text-amber-800",
+      "colorText": "text-amber-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: G Mixolydian Scale",
+      "description": "Practice the G mixolydian scale ascending and descending:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :8 3/6 0/5 2/5 3/5 0/4 2/4 3/4 1/3 | :8 1/3 3/4 2/4 0/4 3/5 2/5 0/5 3/6\n                ",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700"
+    },
+    {
+      "title": "Exercise 2: Dominant 7th Emphasis",
+      "description": "Emphasize the flat 7th to hear the mixolydian character:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 3/6 1/3 :h 1/3 :q 3/6 | :q 0/5 1/3 :h 1/3 :q 0/5 | :q 2/5 1/3 :h 1/3 :q 2/5 | :w 3/6\n                ",
+      "colorBg": "bg-red-50",
+      "colorBorder": "border-red-200",
+      "colorTitle": "text-red-800",
+      "colorText": "text-red-700"
+    },
+    {
+      "title": "Exercise 3: Blues Rock Lick",
+      "description": "Classic mixolydian blues rock phrase:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :8 3/6 0/5 2/5 0/4 :q 3/4 1/3 | :q 3/3 0/2 :8 1/2 3/2 1/3 | :q 3/4 2/4 :h 0/5 | :w 3/6\n                ",
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border-amber-200",
+      "colorTitle": "text-amber-800",
+      "colorText": "text-amber-700"
+    }
+  ],
+  "scaleRelationships": {
+    "relationships": [
+      {
+        "title": "Major Scale vs Mixolydian",
+        "description": "Mixolydian has a flat 7th instead of natural 7th"
+      },
+      {
+        "title": "Major Scale Relationship",
+        "description": "Fifth mode of major scale"
+      },
+      {
+        "title": "Dominant Character",
+        "description": "Perfect for dominant 7th chord contexts"
+      }
+    ],
+    "relatedModes": [
+      {
+        "title": "Dorian Mode",
+        "description": "Minor counterpart with natural 6th"
+      },
+      {
+        "title": "Lydian Mode",
+        "description": "Major mode with raised 4th"
+      },
+      {
+        "title": "Blues Scale",
+        "description": "Shares the bluesy, dominant character"
+      }
+    ]
+  },
+  "keyVariants": [
+    {
+      "title": "A Mixolydian - 5th Position",
+      "description": "Popular rock key:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 5/6 7/6 9/6 5/5 | :q 7/5 9/5 5/4 7/4 | :q 5/3 7/3 5/2 7/2\n                ",
+      "notesLabel": "Notes: A-B-C#-D-E-F#-G-A",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "E Mixolydian - Open Position",
+      "description": "Natural guitar key:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 0/6 2/6 4/6 0/5 | :q 2/5 4/5 0/4 2/4 | :q 0/3 2/3 0/2 3/2\n                ",
+      "notesLabel": "Notes: E-F#-G#-A-B-C#-D-E",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "C Mixolydian - Open Position",
+      "description": "Easy to visualize:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 8/6 10/6 12/6 8/5 | :q 10/5 12/5 8/4 10/4 | :q 8/3 10/3 8/2 10/2\n                ",
+      "notesLabel": "Notes: C-D-E-F-G-A-B\u266d-C",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    },
+    {
+      "title": "F Mixolydian - 1st Position",
+      "description": "Country and folk favorite:",
+      "alphaTex": "\n                  options space=20 font-size=14\n                  tabstave alphaTex=true time=4/4\n                  notes :q 1/6 3/6 5/6 1/5 | :q 3/5 5/5 1/4 3/4 | :q 1/3 3/3 1/2 4/2\n                ",
+      "notesLabel": "Notes: F-G-A-B\u266d-C-D-E\u266d-F",
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border-yellow-200",
+      "colorTitle": "text-yellow-800",
+      "colorText": "text-yellow-700",
+      "colorDetail": "text-yellow-600"
+    }
+  ],
+  "relatedScales": [
+    {
+      "title": "Major Scale",
+      "description": "Same as mixolydian but with natural 7th",
+      "detail": "Brighter, more resolved sound"
+    },
+    {
+      "title": "Blues Scale",
+      "description": "Shares the bluesy character",
+      "detail": "Perfect combination for blues guitar"
+    },
+    {
+      "title": "Dorian Mode",
+      "description": "Minor version of modal harmony",
+      "detail": "Sophisticated minor counterpart"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Modal Journey",
+    "description": "Now that you understand mixolydian mode, explore other modes to complete your modal knowledge and expand your musical expression.",
+    "gradientFrom": "from-orange-50",
+    "gradientTo": "to-red-50",
+    "borderColor": "border-orange-200",
+    "links": [
+      {
+        "slug": "dorian",
+        "title": "Dorian Mode",
+        "description": "Explore the sophisticated minor mode that complements mixolydian.",
+        "linkText": "Jazz minor",
+        "icon": "\ud83c\udfb7",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "hoverBorder": "hover:border-teal-300",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
+      },
+      {
+        "slug": "ionian",
+        "title": "Ionian Mode",
+        "description": "Return to the foundational major scale mode.",
+        "linkText": "Foundation",
+        "icon": "\u2600\ufe0f",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "hoverBorder": "hover:border-blue-300",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "modes",
+        "title": "All Modes",
+        "description": "Explore all seven modes of the major scale.",
+        "linkText": "Complete journey",
+        "icon": "\ud83c\udfad",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "hoverBorder": "hover:border-purple-300",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

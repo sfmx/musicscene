@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import CookieConsent from "@/components/CookieConsent";
+import { SITE_CONFIG } from "@/lib/siteConfig";
+import { REVENUE_CONFIG } from "@/lib/revenueConfig";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +17,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Music Scene - Master Guitar with Expert Lessons",
-  description: "Learn guitar theory, song analysis, gear reviews, and practice techniques. Detailed breakdowns of iconic songs with verified tabs and expert guidance.",
+  metadataBase: new URL(SITE_CONFIG.baseUrl),
+  title: {
+    default: `${SITE_CONFIG.name} - ${SITE_CONFIG.tagline}`,
+    template: `%s | ${SITE_CONFIG.name}`,
+  },
+  description:
+    "Learn guitar theory, song analysis, gear reviews, and practice techniques. Detailed breakdowns of iconic songs with verified tabs and expert guidance.",
+  openGraph: {
+    type: "website",
+    siteName: SITE_CONFIG.name,
+    locale: "en_US",
+    images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630 }],
+  },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({
@@ -25,13 +43,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/vextab.css" />
-        <script src="/vextab-div.js" defer></script>
+        {REVENUE_CONFIG.adsEnabled && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${REVENUE_CONFIG.adsensePublisherId}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <CookieConsent />
       </body>
     </html>
   );

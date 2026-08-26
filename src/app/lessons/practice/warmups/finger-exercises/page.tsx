@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import FingerExercisesClient from './page.client';
 
 export const metadata: Metadata = {
-  title: 'Guitar Finger Exercises | MusicScene',
+  title: 'Guitar Finger Exercises - Guitar Practice',
   description: 'Practice essential guitar finger exercises to improve dexterity, speed, and technique with interactive notation and tablature.',
 };
 

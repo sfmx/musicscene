@@ -1,0 +1,224 @@
+{
+  "pageTitle": "Music Theory: Modal Scales",
+  "subtitle": "Master the seven modes of the major scale and unlock new dimensions of musical expression",
+  "heroIcon": "🎭",
+  "heroTitle": "Understanding Musical Modes",
+  "heroDescription": "Modes are variations of the major scale that create distinct musical colors and emotional qualities. Each mode starts from a different degree of the major scale, producing unique interval patterns that define genres, create atmosphere, and expand your improvisational vocabulary beyond basic major and minor scales.",
+  "whatAreModes": {
+    "title": "What Are Musical Modes?",
+    "description": "Modes are different starting points within the same set of notes, creating unique interval relationships and characteristic sounds. All seven modes use the same notes as their parent major scale, but each mode emphasizes different tonal centers and creates distinct musical personalities:",
+    "columns": [
+      {
+        "title": "Modal Character",
+        "colorBg": "bg-purple-50",
+        "colorTitle": "text-purple-900",
+        "colorText": "text-purple-800",
+        "items": [
+          "Unique interval patterns and relationships",
+          "Distinctive emotional and atmospheric qualities",
+          "Characteristic chord progressions and movements",
+          "Genre-defining sounds and applications"
+        ]
+      },
+      {
+        "title": "Musical Applications",
+        "colorBg": "bg-indigo-50",
+        "colorTitle": "text-indigo-900",
+        "colorText": "text-indigo-800",
+        "items": [
+          "Jazz and fusion improvisation",
+          "Rock and blues lead guitar",
+          "Folk and world music traditions",
+          "Contemporary composition and arrangement"
+        ]
+      }
+    ]
+  },
+  "modeCategories": [
+    {
+      "name": "Major Character",
+      "modes": ["Ionian", "Lydian", "Mixolydian"],
+      "description": "Modes with major third intervals that create bright, uplifting sounds.",
+      "color": "bg-yellow-50 border-yellow-200"
+    },
+    {
+      "name": "Minor Character",
+      "modes": ["Dorian", "Phrygian", "Aeolian", "Locrian"],
+      "description": "Modes with minor third intervals that create darker, more introspective sounds.",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "name": "Jazz Favorites",
+      "modes": ["Dorian", "Mixolydian", "Lydian"],
+      "description": "Most commonly used modes in jazz improvisation and composition.",
+      "color": "bg-green-50 border-green-200"
+    },
+    {
+      "name": "Rock & Blues",
+      "modes": ["Mixolydian", "Dorian", "Aeolian"],
+      "description": "Essential modes for rock, blues, and contemporary guitar styles.",
+      "color": "bg-orange-50 border-orange-200"
+    }
+  ],
+  "modalApplications": [
+    {
+      "title": "Modal Improvisation",
+      "description": "Each mode creates distinctive improvisational flavors and moods",
+      "icon": "🎭",
+      "examples": ["Dorian for jazz solos", "Mixolydian for rock leads", "Phrygian for exotic flavor"]
+    },
+    {
+      "title": "Chord Progressions",
+      "description": "Modes determine characteristic chord progressions and harmonic movement",
+      "icon": "🎼",
+      "examples": ["Dorian: ii-IV progressions", "Mixolydian: I-♭VII movements", "Lydian: I-II progressions"]
+    },
+    {
+      "title": "Genre Definition",
+      "description": "Different modes define the characteristic sounds of musical genres",
+      "icon": "🎵",
+      "examples": ["Jazz: Dorian, Mixolydian", "Flamenco: Phrygian", "Celtic: Dorian, Mixolydian"]
+    },
+    {
+      "title": "Emotional Expression",
+      "description": "Modes provide specific emotional colors and atmospheric qualities",
+      "icon": "💫",
+      "examples": ["Lydian: dreamy, floating", "Phrygian: dark, exotic", "Mixolydian: confident, bluesy"]
+    }
+  ],
+  "modeTypes": [
+    {
+      "name": "Ionian (Major)",
+      "icon": "☀️",
+      "href": "/lessons/theory/modes/ionian",
+      "description": "The foundation mode - bright, happy, and optimistic. The standard major scale.",
+      "formula": "W-W-H-W-W-W-H",
+      "degrees": "1-2-3-4-5-6-7",
+      "color": "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      "iconColor": "text-yellow-600",
+      "mood": "Happy & Bright",
+      "parentScale": "C Major",
+      "characteristic": "Perfect foundation"
+    },
+    {
+      "name": "Dorian",
+      "icon": "🎷",
+      "href": "/lessons/theory/modes/dorian",
+      "description": "Minor with a twist - sophisticated and jazzy. Raised 6th gives it brightness.",
+      "formula": "W-H-W-W-W-H-W",
+      "degrees": "1-2-♭3-4-5-6-♭7",
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600",
+      "mood": "Jazz & Sophisticated",
+      "parentScale": "C Major (D Dorian)",
+      "characteristic": "Minor with bright 6th"
+    },
+    {
+      "name": "Phrygian",
+      "icon": "💃",
+      "href": "/lessons/theory/modes/phrygian",
+      "description": "Exotic and Spanish flavored. The flat 2nd creates distinctive Mediterranean sound.",
+      "formula": "H-W-W-W-H-W-W",
+      "degrees": "1-♭2-♭3-4-5-♭6-♭7",
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "mood": "Exotic & Spanish",
+      "parentScale": "C Major (E Phrygian)",
+      "characteristic": "Flat 2nd interval"
+    },
+    {
+      "name": "Lydian",
+      "icon": "🌟",
+      "href": "/lessons/theory/modes/lydian",
+      "description": "Dreamy and ethereal. The raised 4th creates a floating, magical quality.",
+      "formula": "W-W-W-H-W-W-H",
+      "degrees": "1-2-3-#4-5-6-7",
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600",
+      "mood": "Dreamy & Floating",
+      "parentScale": "C Major (F Lydian)",
+      "characteristic": "Raised 4th (tritone)"
+    },
+    {
+      "name": "Mixolydian",
+      "icon": "🎸",
+      "href": "/lessons/theory/modes/mixolydian",
+      "description": "Bluesy and dominant. Major scale with flat 7th - perfect for rock and blues.",
+      "formula": "W-W-H-W-W-H-W",
+      "degrees": "1-2-3-4-5-6-♭7",
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600",
+      "mood": "Bluesy & Dominant",
+      "parentScale": "C Major (G Mixolydian)",
+      "characteristic": "Flat 7th degree"
+    },
+    {
+      "name": "Aeolian (Natural Minor)",
+      "icon": "🌙",
+      "href": "/lessons/theory/modes/aeolian",
+      "description": "The natural minor scale - emotional, melancholic, and deeply expressive.",
+      "formula": "W-H-W-W-H-W-W",
+      "degrees": "1-2-♭3-4-5-♭6-♭7",
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600",
+      "mood": "Sad & Emotional",
+      "parentScale": "C Major (A Aeolian)",
+      "characteristic": "Natural minor scale"
+    },
+    {
+      "name": "Locrian",
+      "icon": "⚡",
+      "href": "/lessons/theory/modes/locrian",
+      "description": "Unstable and dissonant. Rare but creates unique tension with flat 2nd and 5th.",
+      "formula": "H-W-W-H-W-W-W",
+      "degrees": "1-♭2-♭3-4-♭5-♭6-♭7",
+      "color": "bg-gray-50 border-gray-200 hover:bg-gray-100",
+      "iconColor": "text-gray-600",
+      "mood": "Tense & Unstable",
+      "parentScale": "C Major (B Locrian)",
+      "characteristic": "Flat 2nd and 5th"
+    }
+  ],
+  "journeySection": {
+    "title": "Start Your Modal Journey",
+    "description": "Begin with the most practical and commonly used modes, then expand to explore more exotic sounds. Understanding modes opens up new worlds of musical expression and improvisational possibilities.",
+    "links": [
+      {
+        "slug": "dorian",
+        "title": "Start with Dorian",
+        "description": "The most practical mode - sophisticated minor sound with jazzy brightness.",
+        "linkText": "Jazz foundation",
+        "icon": "🎷",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "hoverBorder": "hover:border-blue-300",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "mixolydian",
+        "title": "Master Mixolydian",
+        "description": "Essential for rock and blues - major scale with bluesy flat 7th.",
+        "linkText": "Rock & blues",
+        "icon": "🎸",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "hoverBorder": "hover:border-orange-300",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
+      },
+      {
+        "slug": "lydian",
+        "title": "Explore Lydian",
+        "description": "Create dreamy, floating atmospheres with the magical raised 4th.",
+        "linkText": "Dreamy sounds",
+        "icon": "🌟",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "hoverBorder": "hover:border-purple-300",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

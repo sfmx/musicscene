@@ -1,0 +1,150 @@
+{
+  "pageTitle": "Recording Gear & Home Studio",
+  "subtitle": "Master the art of music production - from bedroom setups to professional studios",
+  "heroGradient": "bg-gradient-to-r from-purple-100 to-blue-100",
+  "heroInfo": {
+    "title": "Recording: Capture Your Music",
+    "text": "Build your dream studio with the right gear. From basic home recording to professional production, understand the tools that bring your musical ideas to life.",
+    "items": [
+      "Essential recording gear for any budget",
+      "Setting up your home studio for best results",
+      "Understanding audio interfaces and signal flow",
+      "Choosing the right microphones for your needs",
+      "Digital Audio Workstation (DAW) selection and usage",
+      "Monitoring and mixing with proper speakers/headphones"
+    ]
+  },
+  "types": [
+    {
+      "name": "Audio Interfaces",
+      "icon": "🎚️",
+      "href": "/lessons/gear/recording/interfaces",
+      "description": "Connect your instruments and microphones to your computer."
+    },
+    {
+      "name": "Microphones",
+      "icon": "🎤",
+      "href": "/lessons/gear/recording/microphones",
+      "description": "Capture vocals and instruments with clarity."
+    },
+    {
+      "name": "DAWs",
+      "icon": "💻",
+      "href": "/lessons/gear/recording/daw",
+      "description": "Digital Audio Workstations for recording and mixing."
+    },
+    {
+      "name": "Monitors & Headphones",
+      "icon": "🎧",
+      "href": "/lessons/gear/recording/monitors-headphones",
+      "description": "Hear your music accurately while mixing and recording."
+    },
+    {
+      "name": "Preamps",
+      "icon": "🔊",
+      "href": "/lessons/gear/recording/preamps",
+      "description": "Boost microphone and instrument signals for recording."
+    },
+    {
+      "name": "Cables & Accessories",
+      "icon": "🔌",
+      "href": "/lessons/gear/recording/cables",
+      "description": "Essential connections and tools for your studio."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Home Studio Fundamentals",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Signal Chain",
+          "bgColor": "bg-green-50",
+          "description": "Understanding the path your audio takes from instrument to final recording.",
+          "items": [
+            "1. Source: Guitar, voice, instrument",
+            "2. Preamp: Boost signal level",
+            "3. Interface: Convert to digital",
+            "4. DAW: Record and process",
+            "5. Monitors: Playback and mixing"
+          ]
+        },
+        {
+          "title": "Room Acoustics",
+          "bgColor": "bg-orange-50",
+          "description": "Your recording environment affects everything from capture to mixing.",
+          "items": [
+            "Treatment: Absorb reflections",
+            "Isolation: Prevent bleed and noise",
+            "Positioning: Optimize speaker placement",
+            "Monitoring: Accurate listening environment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Studio Setup by Budget",
+      "subtitle": "🎯 Essential Setups",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Starter Studio ($300-800)",
+          "items": [
+            "USB Audio Interface",
+            "Dynamic Microphone",
+            "Studio Headphones",
+            "Free/Budget DAW",
+            "Basic Cables"
+          ]
+        },
+        {
+          "title": "Home Studio ($800-2500)",
+          "items": [
+            "Multi-input Interface",
+            "Condenser + Dynamic Mics",
+            "Studio Monitors + Headphones",
+            "Professional DAW",
+            "Acoustic Treatment"
+          ]
+        },
+        {
+          "title": "Pro Setup ($2500+)",
+          "items": [
+            "High-end Interface/Preamps",
+            "Multiple Premium Mics",
+            "Reference Monitors",
+            "Full Room Treatment",
+            "Hardware Processing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Home Studios",
+      "subtitle": "Studios That Changed Music",
+      "bgColor": "bg-purple-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Bedroom Productions",
+          "items": [
+            "Billie Eilish: Bedroom studio with Finneas",
+            "Tame Impala: Kevin Parker's home setup",
+            "Bon Iver: Cabin recordings (For Emma)",
+            "Tyler, The Creator: Bedroom beats to Grammy wins"
+          ]
+        },
+        {
+          "title": "Home Studio Legends",
+          "items": [
+            "Nine Inch Nails: Trent Reznor's home studio",
+            "Beck: Multi-album home recordings",
+            "Sufjan Stevens: Bedroom symphonies",
+            "Mac DeMarco: Lo-fi home recordings"
+          ]
+        }
+      ]
+    }
+  ]
+}

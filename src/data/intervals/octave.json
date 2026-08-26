@@ -1,0 +1,363 @@
+{
+  "slug": "octave",
+  "intervalInfo": {
+    "name": "Octave Interval",
+    "pageTitle": "Octave Interval",
+    "subtitle": "The most consonant interval - 12 semitones that creates perfect unity while doubling the frequency, fundamental to all musical scales and harmony.",
+    "colorScheme": "purple",
+    "heroGradient": "bg-gradient-to-r from-purple-600 to-indigo-700",
+    "tags": [
+      "12 Semitones",
+      "Perfect Consonance",
+      "2:1 Frequency Ratio",
+      "Foundation of Music"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "12 semitones (6 whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Perfect"
+      },
+      {
+        "label": "Sound",
+        "value": "Perfect unity, same note name"
+      },
+      {
+        "label": "Consonance",
+        "value": "Most consonant interval"
+      },
+      {
+        "label": "Function",
+        "value": "Defines pitch classes and scales"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to C",
+        "value": "Perfect octave (any C)"
+      },
+      {
+        "label": "Open strings",
+        "value": "12th fret harmonics"
+      },
+      {
+        "label": "Do to Do",
+        "value": "Scale completion"
+      },
+      {
+        "label": "\"Somewhere Over the Rainbow\"",
+        "value": "Opening leap"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Octave Intervals - Perfect Unity",
+      "description": "The octave (12 semitones) represents perfect consonance and unity - the same note name at exactly double the frequency, fundamental to all musical structure.",
+      "examples": [
+        {
+          "title": "E \u2192 E Octave",
+          "subtitle": "Same string, 12 frets apart",
+          "chord1": "E_low_octave",
+          "chord1Label": "E (6th string open)",
+          "chord2": "E_high_octave",
+          "chord2Label": "E (6th string 12th fret)",
+          "alphaTex": "2.1{q} 3.1{q}",
+          "alphaTexTitle": "",
+          "caption": "Perfect unity, same note name",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorSubtitle": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        },
+        {
+          "title": "A \u2192 A Octave",
+          "subtitle": "12th fret harmonic relationship",
+          "chord1": "A_low_octave",
+          "chord1Label": "A (5th string open)",
+          "chord2": "A_high_octave",
+          "chord2Label": "A (5th string 12th fret)",
+          "alphaTex": "2.1{q} 3.1{q}",
+          "alphaTexTitle": "",
+          "caption": "Natural harmonic at 12th fret",
+          "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+          "colorBorder": "border border-indigo-200",
+          "colorTitle": "text-indigo-800",
+          "colorSubtitle": "text-indigo-700",
+          "colorCaption": "text-indigo-600"
+        },
+        {
+          "title": "D \u2192 D Octave",
+          "subtitle": "Scale completion pattern",
+          "chord1": "D_low_octave",
+          "chord1Label": "D (4th string open)",
+          "chord2": "D_high_octave",
+          "chord2Label": "D (4th string 12th fret)",
+          "alphaTex": "3.1{q} 4.1{q}",
+          "alphaTexTitle": "",
+          "caption": "Root to root completion",
+          "colorBg": "bg-gradient-to-br from-violet-50 to-violet-100",
+          "colorBorder": "border border-violet-200",
+          "colorTitle": "text-violet-800",
+          "colorSubtitle": "text-violet-700",
+          "colorCaption": "text-violet-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Cross-String Octave Patterns - Fretboard Navigation",
+      "items": [
+        {
+          "title": "C Octave Pattern",
+          "chord": "C_5th_string",
+          "chordLabel": "C (5th string 3rd fret)",
+          "chord2": "C_3rd_string",
+          "chord2Label": "C (3rd string 5th fret)",
+          "alphaTex": "4.1{w} 5.1{w}",
+          "alphaTexTitle": "",
+          "alphaTexCaption": "5th string to 3rd string: +2 frets, +2 strings",
+          "bullets": [
+            "Pattern: 5th to 3rd string octave",
+            "Fretboard navigation: Cross-string movement",
+            "Scale work: Position playing applications"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorCaption": "text-emerald-600"
+        },
+        {
+          "title": "G Octave Pattern",
+          "chord": "G_6th_string",
+          "chordLabel": "G (6th string 3rd fret)",
+          "chord2": "G_4th_string",
+          "chord2Label": "G (4th string 5th fret)",
+          "alphaTex": "3.1{w} 4.1{w}",
+          "alphaTexTitle": "",
+          "alphaTexCaption": "6th string to 4th string: +2 frets, +2 strings",
+          "bullets": [
+            "Pattern: 6th to 4th string octave",
+            "Chord work: Bass note doubling",
+            "Lead guitar: Register displacement"
+          ],
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "12th Fret Harmonics",
+        "subtitle": "Natural Octave Harmonics",
+        "alphaTex": "2.1{w} 3.1{w} 2.1{w} 3.1{w} 3.1{w} 4.1{w}",
+        "alphaTexTitle": "",
+        "alphaTexCaption": "12th fret harmonics: Perfect octave above open strings",
+        "bullets": [
+          "Bell-like tone: Pure harmonic content",
+          "Same pitch: As 12th fret fretted notes",
+          "Physics: String vibrating in halves"
+        ],
+        "colorBg": "bg-gradient-to-br from-amber-50 to-amber-100",
+        "colorBorder": "border border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "colorCaption": "text-amber-600"
+      },
+      {
+        "title": "\"Somewhere Over the Rainbow\"",
+        "subtitle": "Classic Octave Leap",
+        "alphaTex": "4.1{w} 5.1{w}",
+        "alphaTexTitle": "",
+        "alphaTexCaption": "\"Somewhere\" opening - most famous octave leap in music",
+        "bullets": [
+          "Emotional impact: Yearning and expansion",
+          "Ear training: Perfect octave reference",
+          "Musical theater: Wizard of Oz classic"
+        ],
+        "colorBg": "bg-gradient-to-br from-rose-50 to-rose-100",
+        "colorBorder": "border border-rose-200",
+        "colorTitle": "text-rose-800",
+        "colorText": "text-rose-700",
+        "colorCaption": "text-rose-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"Somewhere Over the Rainbow\"",
+        "description": "Opening octave leap creates sense of yearning and expansion",
+        "detail": "Perfect example of octave's emotional impact"
+      },
+      {
+        "title": "Bach's \"Well-Tempered Clavier\"",
+        "description": "Octave relationships define key centers and harmonic structure",
+        "detail": "Demonstrates octave equivalence in classical harmony"
+      }
+    ],
+    "popular": [
+      {
+        "title": "Rock Guitar Solos",
+        "description": "Octave doubling for powerful melodic emphasis",
+        "detail": "Creates fuller, more impactful lead guitar sounds"
+      },
+      {
+        "title": "Bass and Melody Doubling",
+        "description": "Bass notes doubled an octave higher for harmonic richness",
+        "detail": "Common in arrangement and orchestration"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Practice recognizing octaves vs. other intervals",
+        "Use \"Somewhere Over the Rainbow\" as reference",
+        "Listen to 12th fret harmonics",
+        "Compare octaves with perfect 5ths",
+        "Study scale patterns from root to root"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master 12-fret octave patterns",
+        "Practice string-to-string octave shapes",
+        "Work on 12th fret natural harmonics",
+        "Study major scale octave relationships",
+        "Practice octave doubling in melodies"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create melodies using octave leaps",
+        "Practice octave doubling in arrangements",
+        "Study how octaves define key centers",
+        "Work on bass line octave displacement",
+        "Analyze octave usage in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "2:1 Ratio",
+        "description": "The octave has the simplest frequency relationship possible - exactly double or half the frequency, creating perfect acoustic unity."
+      },
+      {
+        "title": "Harmonic Series",
+        "description": "The octave appears as the 2nd harmonic in the natural harmonic series, making it the first and strongest overtone."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Universal Recognition",
+        "description": "Every musical culture recognizes octave equivalence - notes an octave apart are considered the \"same\" note."
+      },
+      {
+        "title": "Perceptual Unity",
+        "description": "The brain processes octaves as so similar that they create a sense of completion and return."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - second most consonant",
+      "detail": "Octave = Perfect 5th + Perfect 4th",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Perfect 4th",
+      "description": "5 semitones - complements perfect 5th",
+      "detail": "Perfect 4th + Perfect 5th = Octave",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Compound Intervals",
+      "description": "9th, 11th, 13th - octave + simple intervals",
+      "detail": "All intervals larger than octave are \"compound\"",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700",
+      "colorDetail": "text-orange-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the octave, explore how it relates to other fundamental intervals and creates musical structure.",
+    "links": [
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Study the second most consonant interval and how it builds toward the octave.",
+        "actionText": "Build harmony",
+        "icon": "target",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      },
+      {
+        "slug": "unison",
+        "title": "Unison",
+        "description": "Return to the starting point - the interval of perfect identity and unity.",
+        "actionText": "Start simple",
+        "icon": "musical-note",
+        "colorBg": "bg-gray-100",
+        "colorBgHover": "group-hover:bg-gray-200",
+        "colorBorder": "hover:border-gray-300",
+        "colorText": "text-gray-600",
+        "colorTextHover": "group-hover:text-gray-700"
+      },
+      {
+        "slug": "major-7th",
+        "title": "Major 7th",
+        "description": "Explore the tense interval that leads powerfully into the octave resolution.",
+        "actionText": "Feel the tension",
+        "icon": "fire",
+        "colorBg": "bg-red-100",
+        "colorBgHover": "group-hover:bg-red-200",
+        "colorBorder": "hover:border-red-300",
+        "colorText": "text-red-600",
+        "colorTextHover": "group-hover:text-red-700"
+      }
+    ]
+  }
+}

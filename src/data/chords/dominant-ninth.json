@@ -1,0 +1,312 @@
+{
+  "slug": "dominant-ninth",
+  "chordInfo": {
+    "name": "Dominant Ninth Chords",
+    "pageTitle": "Dominant 9th Chord Theory",
+    "subtitle": "Master the rich, colorful sound of dominant ninth chords - the essential voicing for funk, jazz, R&B, and soul guitar that adds the 9th to create irresistible groove.",
+    "colorScheme": "orange",
+    "tags": ["Funk Essential", "Jazz Color", "R&B", "Extended Harmony"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Dominant Ninth Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Five-note chord: dominant 7th plus a major 9th" },
+      { "label": "Formula", "value": "Root + Major 3rd + Perfect 5th + Minor 7th + Major 9th (1-3-5-b7-9)" },
+      { "label": "Interval Pattern", "value": "4 + 3 + 3 + 4 semitones" },
+      { "label": "Sound Quality", "value": "Rich, funky, colorful, groovy" },
+      { "label": "Key Difference from Add9", "value": "Includes the b7 (dominant 7th) - add9 chords do not" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Funk", "value": "16th-note scratch patterns (James Brown, Nile Rodgers)" },
+      { "label": "Jazz", "value": "Comping and turnaround voicings" },
+      { "label": "R&B/Soul", "value": "Smooth chord textures (Stevie Wonder, D'Angelo)" },
+      { "label": "Blues", "value": "Jazzy extensions of standard blues changes" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Dominant 9th Construction",
+    "boxes": [
+      {
+        "title": "E9 Chord Example",
+        "items": [
+          "Root: E (1st degree)",
+          "Major 3rd: G# (3rd degree)",
+          "Perfect 5th: B (5th degree)",
+          "Minor 7th: D (flat 7th degree)",
+          "Major 9th: F# (9th degree, same as 2nd)"
+        ]
+      },
+      {
+        "title": "9th vs Add9 Comparison",
+        "items": [
+          "C9: C-E-G-Bb-D (has the b7)",
+          "Cadd9: C-E-G-D (no 7th at all)",
+          "The b7 gives 9th chords their funky edge",
+          "Add9 sounds open; 9th sounds bluesy/funky",
+          "Context determines which to use"
+        ]
+      },
+      {
+        "title": "Practical Voicing",
+        "items": [
+          "Guitar often omits the 5th in 9th voicings",
+          "Core tones: root, 3rd, b7, 9th",
+          "Most common voicings use 4-5 strings",
+          "Freddie Green-style: root on 6th string",
+          "Funk-style: partial voicings on middle strings"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Dominant 9th Voicings",
+      "tipTitle": "Funk Foundation",
+      "tipDescription": "These voicings are the foundation of funk and R&B guitar. Practice clean, muted strumming.",
+      "voicings": [
+        { "name": "E9", "chord": "E7", "notes": "E-G#-B-D-F#", "fingering": "Open position with 9th", "use": "Funk, blues, jazz in E" },
+        { "name": "A9", "chord": "A7", "notes": "A-C#-E-G-B", "fingering": "Open or barre form", "use": "Blues turnarounds, funk in A" },
+        { "name": "G9", "chord": "G7", "notes": "G-B-D-F-A", "fingering": "Open position extension", "use": "Jazz comping, funk in G" },
+        { "name": "D9", "chord": "D7", "notes": "D-F#-A-C-E", "fingering": "Compact mid-neck form", "use": "R&B grooves, jazz in D" },
+        { "name": "C9", "chord": "C7", "notes": "C-E-G-Bb-D", "fingering": "Jazz voicing at 3rd fret", "use": "Jazz standards, blues in C" }
+      ]
+    },
+    {
+      "title": "Moveable 9th Chord Forms",
+      "tipTitle": "Funk Guitar Essentials",
+      "tipDescription": "These moveable shapes let you play 9th chords anywhere on the neck for instant funk flavor.",
+      "voicings": [
+        { "name": "6th-String Root 9th", "chord": "E7", "notes": "Barre form based on E7", "fingering": "Root on 6th string, moveable", "use": "Full-range jazz and funk" },
+        { "name": "5th-String Root 9th", "chord": "A7", "notes": "Barre form based on A7", "fingering": "Root on 5th string, moveable", "use": "R&B and neo-soul comping" },
+        { "name": "Freddie Green Voicing", "chord": "G7", "notes": "Root-3rd-b7-9th (4 strings)", "fingering": "Middle strings only", "use": "Big band jazz, swing" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Dominant 9th Progressions",
+    "items": [
+      {
+        "title": "Funk Vamp I9",
+        "titleColor": "text-orange-700",
+        "chords": [
+          { "chord": "E7", "label": "E9", "numeral": "I9" }
+        ],
+        "strumming": {
+          "pattern": "x-x-D-x-x-DU-x-D",
+          "description": "16th-note funk scratch",
+          "tempo": "100-120 BPM",
+          "feel": "Tight, percussive, groovy",
+          "genre": "Funk, R&B"
+        },
+        "alphaTex": "",
+        "alphaTexTitle": "Funk E9 Vamp",
+        "description": "Single-chord funk groove that James Brown and Nile Rodgers built careers on - the 9th chord IS funk guitar"
+      },
+      {
+        "title": "Jazz Blues I9-IV9-V9",
+        "titleColor": "text-amber-700",
+        "chords": [
+          { "chord": "A7", "label": "A9", "numeral": "I9" },
+          { "chord": "D7", "label": "D9", "numeral": "IV9" },
+          { "chord": "E7", "label": "E9", "numeral": "V9" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - D - DU",
+          "description": "Swing comping",
+          "tempo": "90-130 BPM",
+          "feel": "Swinging, sophisticated",
+          "genre": "Jazz Blues"
+        },
+        "alphaTex": "",
+        "alphaTexTitle": "Jazz Blues with 9th Chords (A9-D9-E9)",
+        "description": "Upgrade standard 12-bar blues to jazz blues by replacing dominant 7ths with 9th chords for richer harmony"
+      },
+      {
+        "title": "R&B Smooth Groove ii-V-I",
+        "titleColor": "text-yellow-700",
+        "chords": [
+          { "chord": "Am7", "label": "Am9", "numeral": "ii9" },
+          { "chord": "G7", "label": "G9", "numeral": "V9" },
+          { "chord": "C7", "label": "CMaj9", "numeral": "I" }
+        ],
+        "strumming": {
+          "pattern": "D - U - DU - U",
+          "description": "Laid-back R&B feel",
+          "tempo": "70-95 BPM",
+          "feel": "Smooth, mellow, sophisticated",
+          "genre": "R&B, Neo-Soul"
+        },
+        "alphaTex": "",
+        "alphaTexTitle": "R&B ii-V-I with 9th Extensions",
+        "description": "The smooth neo-soul sound of D'Angelo and Erykah Badu - 9th chords make ii-V-I progressions silky and warm"
+      },
+      {
+        "title": "Hendrix-Style V9-IV9-I",
+        "titleColor": "text-red-700",
+        "chords": [
+          { "chord": "A7", "label": "A9", "numeral": "V9" },
+          { "chord": "G7", "label": "G9", "numeral": "IV9" },
+          { "chord": "D7", "label": "D9", "numeral": "I9" }
+        ],
+        "strumming": {
+          "pattern": "DU-DU-DU-DU",
+          "description": "Driving rock/blues feel",
+          "tempo": "90-110 BPM",
+          "feel": "Bold, bluesy, rock-influenced",
+          "genre": "Blues-Rock, Psychedelic Rock"
+        },
+        "alphaTex": "",
+        "alphaTexTitle": "Hendrix-Style V9-IV9-I Resolution",
+        "description": "Jimi Hendrix frequently used 9th voicings in blues-rock context, blending jazz sophistication with raw rock energy"
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice clean muting between chord strikes",
+        "Focus on percussive 16th-note strumming",
+        "Keep fretting hand pressure light for muted scratches",
+        "Work on rhythmic accuracy with a metronome"
+      ],
+      "applicationItems": [
+        "Foundation of all funk guitar rhythm",
+        "Upgrades any blues progression instantly",
+        "Essential for R&B and neo-soul texture",
+        "Perfect for adding color to jazz comping"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Dominant 9th Chords",
+    "categories": [
+      {
+        "title": "Funk & R&B Classics",
+        "colorBg": "bg-orange-100",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "songs": [
+          "\"Get Up (I Feel Like Being a) Sex Machine\" - James Brown (E9 vamp)",
+          "\"Le Freak\" - Chic / Nile Rodgers (9th chord funk rhythm)",
+          "\"Superstition\" - Stevie Wonder (Eb9 clavinet riff)",
+          "\"Kiss\" - Prince (9th chord minimalist funk)",
+          "\"Ain't No Stoppin' Us Now\" - McFadden & Whitehead (9th chord groove)"
+        ]
+      },
+      {
+        "title": "Blues, Jazz & Rock",
+        "colorBg": "bg-amber-100",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "songs": [
+          "\"Red House\" - Jimi Hendrix (9th voicings throughout)",
+          "\"Freddie Freeloader\" - Miles Davis (piano 9th chords)",
+          "\"Pride and Joy\" - Stevie Ray Vaughan (Texas blues 9ths)",
+          "\"Use Me\" - Bill Withers (funky 9th groove)",
+          "\"Thank You (Falettinme Be Mice Elf Agin)\" - Sly & The Family Stone (E9 bass riff)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Dominant 9th Skills",
+    "tipDescription": "These exercises develop the rhythmic precision and muting technique essential for 9th chord mastery.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Single-Chord Funk Groove",
+        "content": "Play E9 with 16th-note strumming pattern",
+        "detail": "Focus on muting technique - alternate between sounding the chord and muted scratches",
+        "tip": "Start at 80 BPM, work up to 120 BPM with clean mutes"
+      },
+      {
+        "title": "Exercise 2: 9th Chord Blues",
+        "content": "12-bar blues using A9-D9-E9",
+        "detail": "Replace standard blues changes with 9th voicings for jazz-blues feel",
+        "tip": "Practice in shuffle and straight-8th feels"
+      },
+      {
+        "title": "Exercise 3: Moveable 9th Forms",
+        "content": "Play I9-IV9-V9 in keys of E, A, D, and G",
+        "detail": "Use the same moveable shape, sliding to different positions",
+        "tip": "Maintain consistent strumming pattern as you move shapes"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Dominant 9th Concepts",
+    "concepts": [
+      {
+        "title": "9th Chord Variations",
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "items": [
+          "7#9 (Hendrix chord): Sharp 9 for aggressive blues-rock",
+          "7b9: Flat 9 for dark jazz and flamenco flavor",
+          "9sus4: Suspended 9th for modern soul sound",
+          "Minor 9th: m7 + 9th for smooth jazz texture",
+          "13th: Further extension adding 13th above 9th"
+        ]
+      },
+      {
+        "title": "Funk Rhythm Mastery",
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700",
+        "items": [
+          "Ghost strums: Muted scratches between chord hits",
+          "Rhythmic displacement: Accent unexpected 16th notes",
+          "String muting: Left-hand lift creates percussive effect",
+          "Wah pedal: Classic funk combination with 9th chords",
+          "Chord stabs: Short, punchy hits for horn-section feel"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand dominant 9th chords, explore related chord types to expand your harmonic vocabulary.",
+    "links": [
+      {
+        "slug": "seventh",
+        "title": "Dominant 7th Chords",
+        "description": "Master the foundation that 9th chords build upon.",
+        "linkText": "Learn the basics",
+        "icon": "7",
+        "hoverBorder": "hover:border-orange-300",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
+      },
+      {
+        "slug": "extended",
+        "title": "Extended Chords",
+        "description": "Go further with 11ths, 13ths, and beyond.",
+        "linkText": "Expand further",
+        "icon": "E",
+        "hoverBorder": "hover:border-rose-300",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "slug": "sixth",
+        "title": "Sixth Chords",
+        "description": "Explore the warm, resolved alternative to 7th chords.",
+        "linkText": "Warm harmony",
+        "icon": "6",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  }
+}

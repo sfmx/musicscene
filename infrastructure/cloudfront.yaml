@@ -24,6 +24,29 @@ Parameters:
     Default: MusicScene    
 
 Resources:
+  LogsBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BucketName: !Sub '${DomainName}-logs'
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerPreferred
+      AccessControl: LogDeliveryWrite
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      LifecycleConfiguration:
+        Rules:
+          - Id: ExpireCloudFrontLogs
+            Status: Enabled
+            Prefix: cloudfront/
+            ExpirationInDays: 90
+            NoncurrentVersionExpirationInDays: 7
+
   CloudFrontOAC:
     Type: AWS::CloudFront::OriginAccessControl
     Properties:
@@ -41,7 +64,7 @@ Resources:
         SecurityHeadersConfig:
           ContentSecurityPolicy:
             Override: true
-            ContentSecurityPolicy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;
+            ContentSecurityPolicy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://pagead2.googlesyndication.com https://adservice.google.com https://www.googletagservices.com https://tpc.googlesyndication.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://pagead2.googlesyndication.com https://www.google.com; font-src 'self'; worker-src 'self' blob:; connect-src 'self' blob: data: https://pagead2.googlesyndication.com https://adservice.google.com; media-src 'self' blob: data:; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com;"
           StrictTransportSecurity:
             Override: true
             AccessControlMaxAgeSec: 63072000
@@ -87,11 +110,17 @@ Resources:
     DependsOn:
       - CloudFrontOAC
       - SecurityHeaders
+      - LogsBucket
     Properties:
       DistributionConfig:
         Enabled: true
         DefaultRootObject: index.html
         PriceClass: PriceClass_200
+
+        Logging:
+          Bucket: !GetAtt LogsBucket.DomainName
+          Prefix: cloudfront/
+          IncludeCookies: false
 
         Origins:
           - Id: S3Origin
@@ -145,3 +174,6 @@ Outputs:
     Value: !Ref CloudFrontDistribution
   DistributionDomain:
     Value: !GetAtt CloudFrontDistribution.DomainName
+  LogsBucketName:
+    Value: !Ref LogsBucket
+    Description: S3 bucket holding CloudFront access logs (90-day expiry)

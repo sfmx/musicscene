@@ -3,7 +3,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import SimpleFretboardDiagram from '@/components/SimpleFretboardDiagram';
 import Link from 'next/link';
 
@@ -330,8 +329,6 @@ export default function MajorSeventhChordsPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </Layout>
   );
 }

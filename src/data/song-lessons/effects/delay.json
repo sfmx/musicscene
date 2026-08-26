@@ -1,0 +1,327 @@
+{
+  "slug": "delay",
+  "category": "effects",
+  "pageTitle": "Delay & Echo Effects",
+  "subtitle": "Learn how delay effects create space, rhythmic complexity, and atmospheric textures in songs.",
+  "heroGradient": "from-blue-50 to-cyan-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Delay: Time as a Musical Element",
+    "text": "Delay effects repeat your signal after a specified time interval, creating everything from subtle thickening to complex rhythmic patterns. The timing of delay repeats can either reinforce the song's rhythm or create counter-rhythms for complexity.",
+    "columns": [
+      { "title": "Temporal Effects", "text": "The timing of delay repeats can either reinforce the song's rhythm or create counter-rhythms for complexity" },
+      { "title": "Musical vs. Atmospheric", "text": "Musical timing enhances rhythm; non-musical timing creates texture and atmosphere" }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Delay Effects",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Analog Delay",
+          "badge": { "text": "Warm, slightly degraded repeats", "color": "blue" },
+          "fields": [
+            { "label": "Timing", "value": "20ms - 600ms typically" },
+            { "label": "Description", "value": "Uses analog circuitry for warm, musical repeats that gradually degrade" },
+            { "label": "Best For", "value": "Classic rock, blues, vintage sounds" },
+            { "label": "Examples", "value": "Boss DM-2, MXR Carbon Copy, tape echo units" },
+            { "label": "Function", "value": "Adds warmth and vintage character to single notes and chords" }
+          ]
+        },
+        {
+          "title": "Digital Delay",
+          "badge": { "text": "Clean, precise repeats", "color": "blue" },
+          "fields": [
+            { "label": "Timing", "value": "1ms - several seconds" },
+            { "label": "Description", "value": "Crystal clear repeats with precise timing and multiple features" },
+            { "label": "Best For", "value": "Modern rock, pop, ambient music" },
+            { "label": "Examples", "value": "Boss DD-7, TC Electronic Flashback, Strymon Timeline" },
+            { "label": "Function", "value": "Provides clean repeats and complex timing options" }
+          ]
+        },
+        {
+          "title": "Tape Echo",
+          "badge": { "text": "Warm, saturated, slightly wobbly", "color": "blue" },
+          "fields": [
+            { "label": "Timing", "value": "Variable, often 100-800ms" },
+            { "label": "Description", "value": "Uses actual tape loops for organic, imperfect repeats" },
+            { "label": "Best For", "value": "Psychedelic rock, ambient, experimental" },
+            { "label": "Examples", "value": "Echoplex EP-3, Roland Space Echo, Fulltone Tube Tape Echo" },
+            { "label": "Function", "value": "Creates organic, musical textures with natural modulation" }
+          ]
+        },
+        {
+          "title": "Multi-Tap Delay",
+          "badge": { "text": "Complex rhythmic patterns", "color": "blue" },
+          "fields": [
+            { "label": "Timing", "value": "Multiple timing subdivisions" },
+            { "label": "Description", "value": "Multiple delay taps create complex rhythmic and harmonic textures" },
+            { "label": "Best For", "value": "Progressive rock, ambient, soundscapes" },
+            { "label": "Examples", "value": "Empress Echosystem, Eventide TimeFactor, Boss DD-500" },
+            { "label": "Function", "value": "Creates complex rhythmic patterns and harmonic intervals" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Musical Delay Timing",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Calculating Delay Time",
+          "description": "60,000 \u00f7 BPM = quarter note in milliseconds. Then divide or multiply for different subdivisions."
+        },
+        {
+          "title": "Quarter Note",
+          "fields": [
+            { "label": "Timing", "value": "Matches beat" },
+            { "label": "120 BPM", "value": "500ms" },
+            { "label": "140 BPM", "value": "429ms" },
+            { "label": "Musical Effect", "value": "Reinforces the main beat, adds power to single notes" },
+            { "label": "Usage", "value": "Rock solos, emphasis, power" }
+          ]
+        },
+        {
+          "title": "Eighth Note",
+          "fields": [
+            { "label": "Timing", "value": "Twice as fast as beat" },
+            { "label": "120 BPM", "value": "250ms" },
+            { "label": "140 BPM", "value": "214ms" },
+            { "label": "Musical Effect", "value": "Creates faster rhythm, adds movement" },
+            { "label": "Usage", "value": "Country, rockabilly, active rhythm parts" }
+          ]
+        },
+        {
+          "title": "Dotted Eighth",
+          "fields": [
+            { "label": "Timing", "value": "3/4 of quarter note" },
+            { "label": "120 BPM", "value": "375ms" },
+            { "label": "140 BPM", "value": "321ms" },
+            { "label": "Musical Effect", "value": "Creates syncopated feel, very musical timing" },
+            { "label": "Usage", "value": "U2 style, ambient rock, atmospheric sounds" }
+          ]
+        },
+        {
+          "title": "Sixteenth Note",
+          "fields": [
+            { "label": "Timing", "value": "Four times faster than beat" },
+            { "label": "120 BPM", "value": "125ms" },
+            { "label": "140 BPM", "value": "107ms" },
+            { "label": "Musical Effect", "value": "Very fast repeat, creates texture more than rhythm" },
+            { "label": "Usage", "value": "Ambient textures, fast picking emphasis" }
+          ]
+        },
+        {
+          "title": "Triplet",
+          "fields": [
+            { "label": "Timing", "value": "Three even divisions per beat" },
+            { "label": "120 BPM", "value": "167ms" },
+            { "label": "140 BPM", "value": "143ms" },
+            { "label": "Musical Effect", "value": "Creates shuffle feel, blues timing" },
+            { "label": "Usage", "value": "Blues, shuffle rhythms, triplet-based songs" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Delay Parameters",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Delay Time",
+          "bgColor": "green-50",
+          "borderColor": "green-200",
+          "fields": [
+            { "label": "Description", "value": "Time between original signal and repeat" },
+            { "label": "Effect", "value": "Determines rhythmic relationship to the song" }
+          ],
+          "items": ["Match to song tempo for musical timing, or use non-musical timing for texture"]
+        },
+        {
+          "title": "Feedback/Repeats",
+          "bgColor": "green-50",
+          "borderColor": "green-200",
+          "fields": [
+            { "label": "Description", "value": "How many times the delay repeats" },
+            { "label": "Effect", "value": "Controls how long the delay tail lasts" }
+          ],
+          "items": ["Low settings for subtle enhancement, high settings for ambient washes"]
+        },
+        {
+          "title": "Mix/Level",
+          "bgColor": "green-50",
+          "borderColor": "green-200",
+          "fields": [
+            { "label": "Description", "value": "Balance between dry and delayed signal" },
+            { "label": "Effect", "value": "How prominent the delay effect is" }
+          ],
+          "items": ["Start low and increase until you hear the effect clearly, then back off slightly"]
+        },
+        {
+          "title": "Modulation",
+          "bgColor": "green-50",
+          "borderColor": "green-200",
+          "fields": [
+            { "label": "Description", "value": "Slight variation in delay time" },
+            { "label": "Effect", "value": "Adds movement and prevents static repeats" }
+          ],
+          "items": ["Subtle amounts add life, too much creates chorus-like warbling"]
+        }
+      ]
+    },
+    {
+      "title": "Delay in Famous Songs",
+      "bgColor": "purple-50",
+      "borderColor": "purple-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Where the Streets Have No Name\" - U2",
+          "fields": [
+            { "label": "Delay Type", "value": "Digital delay with dotted eighth timing" },
+            { "label": "Timing", "value": "~380ms dotted eighth note delay" },
+            { "label": "Musical Function", "value": "Creates signature rhythmic pattern and spatial depth" },
+            { "label": "Technique", "value": "Edge plays simple parts, delay creates complex rhythmic interaction" },
+            { "label": "Lesson", "value": "Simple playing + musical delay timing = complex, beautiful textures" }
+          ]
+        },
+        {
+          "title": "\"Run Like Hell\" - Pink Floyd",
+          "fields": [
+            { "label": "Delay Type", "value": "Digital delay with quarter note timing" },
+            { "label": "Timing", "value": "Quarter note delay matching song tempo" },
+            { "label": "Musical Function", "value": "Reinforces the driving rhythm and adds power" },
+            { "label": "Technique", "value": "Precise timing creates mechanical, driving feel" },
+            { "label": "Lesson", "value": "Delay can reinforce and enhance rhythmic feel when timed correctly" }
+          ]
+        },
+        {
+          "title": "\"Slapback\" - Rockabilly style",
+          "fields": [
+            { "label": "Delay Type", "value": "Very short analog delay (tape echo)" },
+            { "label": "Timing", "value": "80-120ms single repeat" },
+            { "label": "Musical Function", "value": "Adds dimension without obvious repetition" },
+            { "label": "Technique", "value": "Single short repeat thickens sound without creating obvious echo" },
+            { "label": "Lesson", "value": "Very short delays can enhance tone without obvious effect" }
+          ]
+        },
+        {
+          "title": "\"Shine On You Crazy Diamond\" - Pink Floyd",
+          "fields": [
+            { "label": "Delay Type", "value": "Long analog delay with high feedback" },
+            { "label": "Timing", "value": "Long delay time with multiple repeats" },
+            { "label": "Musical Function", "value": "Creates ambient, expansive atmosphere" },
+            { "label": "Technique", "value": "Long, fading repeats create sense of space and time" },
+            { "label": "Lesson", "value": "Long delays can create emotional and atmospheric effects" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creative Delay Techniques",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Self-Oscillation",
+          "description": "Turn feedback up until delay begins to self-oscillate, creating infinite repeats and pitch changes.",
+          "items": ["Great for psychedelic effects and ambient textures"]
+        },
+        {
+          "title": "Delay Throws",
+          "description": "Kick delay in and out rhythmically using the pedal switch to create specific effect moments.",
+          "items": ["Adds dramatic emphasis to specific notes or phrases"]
+        },
+        {
+          "title": "Reverse Delay",
+          "description": "Some delays can reverse the delayed signal, creating backwards echo effects.",
+          "items": ["Creates mysterious, otherworldly textures"]
+        }
+      ]
+    },
+    {
+      "title": "Delay and Rhythm Interaction",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Syncopated Timing",
+          "description": "Dotted eighth delays create syncopation against straight rhythms, adding rhythmic complexity without playing complex parts.",
+          "items": ["The Edge's signature sound relies heavily on this concept"]
+        },
+        {
+          "title": "Polyrhythmic Effects",
+          "description": "Multiple delay taps at different timing subdivisions can create polyrhythmic textures from simple input.",
+          "items": ["Useful for progressive rock and experimental music"]
+        },
+        {
+          "title": "Call and Response",
+          "description": "Use delay to create musical conversations between your playing and the delayed repeats.",
+          "items": ["Play phrases that complement their own delay"]
+        },
+        {
+          "title": "Tempo Changes",
+          "description": "Fixed delay times create interesting effects when tempo changes within a song.",
+          "items": ["Can create tension or release depending on context"]
+        }
+      ]
+    },
+    {
+      "title": "Practical Delay Applications",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Lead Guitar",
+          "description": "Quarter or eighth note delays add sustain and power to single-note lines.",
+          "items": ["Settings: 250-500ms, low feedback, moderate mix"]
+        },
+        {
+          "title": "Ambient Pads",
+          "description": "Long delays with high feedback create expansive, atmospheric textures.",
+          "items": ["Settings: 800ms+, high feedback, high mix"]
+        },
+        {
+          "title": "Rhythmic Enhancement",
+          "description": "Musical timing enhances rhythm parts without additional playing.",
+          "items": ["Settings: Tempo-synced, single repeat, low mix"]
+        },
+        {
+          "title": "Slapback Thickening",
+          "description": "Very short delays thicken sound without obvious repetition.",
+          "items": ["Settings: 80-120ms, single repeat, low mix"]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Timing Practice",
+        "items": [
+          "Practice playing with tempo-synced delay at different subdivisions",
+          "Learn to play in time with dotted eighth delay (U2 style)",
+          "Experiment with call-and-response using delay repeats",
+          "Practice controlling dynamics to shape delay effect"
+        ]
+      },
+      {
+        "title": "Creative Applications",
+        "items": [
+          "Try self-oscillation effects with feedback",
+          "Practice delay throws on specific notes",
+          "Use short slapback to thicken clean tones",
+          "Experiment with reverse delay textures"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/reverb", "label": "Reverb & Ambience" },
+    { "href": "/lessons/songs/effects/distortion", "label": "Distortion & Overdrive" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects Overview" }
+  ]
+}

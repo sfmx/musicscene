@@ -1,0 +1,428 @@
+{
+  "scaleInfo": {
+    "name": "Dorian Mode",
+    "alternateName": "Dorian Scale",
+    "scaleType": "Heptatonic",
+    "noteCount": 7,
+    "intervalPattern": "W-H-W-W-W-H-W",
+    "character": "Sophisticated, modern, jazzy minor with a bright natural 6th",
+    "mood": ["sophisticated", "modern", "jazzy", "cool", "versatile"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - \u266d3 - 4 - 5 - 6 - \u266d7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Minor 3rd (Mediant)",
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Major 6th (Submediant) - Characteristic tone",
+      "Minor 7th (Subtonic)",
+      "Octave"
+    ],
+    "mode": "Dorian (2nd mode of major scale)",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Parent Major Scale",
+      "intervalDistance": "Major 2nd above the major root (D Dorian = C Major)"
+    },
+    "parallelScale": {
+      "name": "Natural Minor Scale",
+      "differences": ["Raised 6th (natural 6th vs flat 6th)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "D Dorian",
+      "notes": "D - E - F - G - A - B - C - D",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most common dorian key, parent scale is C major, starting on D"
+    },
+    {
+      "key": "E Dorian",
+      "notes": "E - F# - G - A - B - C# - D - E",
+      "keySignature": "2 sharps (F#, C#)",
+      "accidentals": "F#, C#",
+      "commonUse": "Natural guitar key, great for open position playing"
+    },
+    {
+      "key": "A Dorian",
+      "notes": "A - B - C - D - E - F# - G - A",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "F#",
+      "commonUse": "Popular rock key, parent scale is G major"
+    },
+    {
+      "key": "B Dorian",
+      "notes": "B - C# - D - E - F# - G# - A - B",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "accidentals": "F#, C#, G#",
+      "commonUse": "Jazz-friendly key, great for higher position playing"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (D Dorian)",
+        "description": "Natural fingering in open position, easy transition from D minor shapes. Perfect for folk and Celtic styles.",
+        "fretDiagram": "Uses open strings and first 3 frets on strings 4-1",
+        "alphaTex": "0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2 0.1 2.1 3.1",
+        "applications": ["folk music", "Celtic styles", "acoustic playing", "beginner learning"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position (A Dorian)",
+        "description": "Popular rock position, moveable pattern for all keys. Most versatile for improvisation.",
+        "fretDiagram": "5th-8th frets, box pattern",
+        "alphaTex": "5.6 7.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 5.2 7.2 8.2",
+        "applications": ["rock music", "improvisation", "lead guitar", "jam sessions"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "3rd Position (G Dorian)",
+        "description": "Jazz-friendly position with comfortable fingering for complex lines and chord melody playing",
+        "fretDiagram": "3rd-6th frets, extended range",
+        "alphaTex": "3.6 5.6 6.6 3.5 5.5 3.4 5.4 3.3 5.3 3.2 5.2 6.2",
+        "applications": ["jazz", "fusion", "modal playing", "chord melody"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open (D Dorian)",
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Folk, Celtic music, acoustic playing"
+      },
+      {
+        "position": "5th Fret (A Dorian)",
+        "frets": "5-9",
+        "difficulty": "Intermediate",
+        "usage": "Rock, blues-rock, improvisation"
+      },
+      {
+        "position": "7th Fret (B Dorian)",
+        "frets": "7-11",
+        "difficulty": "Intermediate",
+        "usage": "Jazz, fusion, higher register playing"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Tonic - Home chord, minor center with sophistication",
+        "notes": "D - F - A"
+      },
+      {
+        "degree": "ii",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Supertonic - Secondary minor chord",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "\u266dIII",
+        "chord": "F",
+        "quality": "Major",
+        "function": "Mediant - Relative major, bright contrast",
+        "notes": "F - A - C"
+      },
+      {
+        "degree": "IV",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Subdominant - Characteristic dorian chord (major IV in minor key)",
+        "notes": "G - B - D"
+      },
+      {
+        "degree": "v",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Dominant - Minor dominant, softer resolution than major V",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "vi\u00b0",
+        "chord": "Bdim",
+        "quality": "Diminished",
+        "function": "Submediant - Tension chord, leads to resolution",
+        "notes": "B - D - F"
+      },
+      {
+        "degree": "\u266dVII",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Subtonic - Modal cadence chord, strong resolution to tonic",
+        "notes": "C - E - G"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Dorian Vamp (i-IV)",
+        "chords": ["Dm", "G"],
+        "romanNumerals": "i - IV",
+        "description": "The signature dorian progression, highlighting the major IV chord over minor tonic. The defining sound of dorian mode.",
+        "genre": "Jazz/Rock/Funk",
+        "alphaTex": "(0.4 2.3 1.2).2 (0.4 2.3 1.2).2 (3.6 0.4 0.3).2 (3.6 0.4 0.3).2"
+      },
+      {
+        "name": "Modal Minor (i-\u266dVII-IV-i)",
+        "chords": ["Dm", "C", "G", "Dm"],
+        "romanNumerals": "i - \u266dVII - IV - i",
+        "description": "Extended dorian progression with subtonic chord movement, common in rock and progressive music",
+        "genre": "Rock/Progressive",
+        "alphaTex": "(0.4 2.3 1.2).1 (3.5 2.4 0.3).1 (3.6 0.4 0.3).1 (0.4 2.3 1.2).1"
+      },
+      {
+        "name": "Jazz Dorian (i7-ii7-i7-IV7)",
+        "chords": ["Dm7", "Em7", "Dm7", "G7"],
+        "romanNumerals": "i7 - ii7 - i7 - IV7",
+        "description": "Jazz-style dorian progression with 7th chord extensions for sophisticated harmonic movement",
+        "genre": "Jazz/Fusion",
+        "alphaTex": "(0.4 2.3 1.2 1.1).1 (0.4 0.3 0.2 0.1).1 (0.4 2.3 1.2 1.1).1 (3.6 0.4 0.3 1.1).1"
+      },
+      {
+        "name": "Suspended Dorian (i-IV-\u266dVII)",
+        "chords": ["Dm", "G", "C"],
+        "romanNumerals": "i - IV - \u266dVII",
+        "description": "Modal vamp using the three major chords available in dorian, creates an open, floating sound",
+        "genre": "Modal/Ambient",
+        "alphaTex": "(0.4 2.3 1.2).1 (3.6 0.4 0.3).1 (3.5 2.4 0.3).1 r.1"
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Jazz",
+      "usage": "Essential jazz mode for minor 7th chords and ii-V-I progressions",
+      "characteristics": ["chord melody playing", "modal improvisation", "minor 7th voicings", "sophisticated harmony"],
+      "examples": ["So What - Miles Davis", "Impressions - John Coltrane", "Maiden Voyage - Herbie Hancock"]
+    },
+    {
+      "genre": "Rock",
+      "usage": "Modern and progressive rock solos with a sophisticated minor sound",
+      "characteristics": ["progressive solos", "modal progressions", "alternative chord movements", "fusion passages"],
+      "examples": ["Another Brick in the Wall - Pink Floyd", "Oye Como Va - Santana", "Evil Ways - Santana"]
+    },
+    {
+      "genre": "Folk/Celtic",
+      "usage": "Traditional Celtic and Irish music extensively uses dorian tonality",
+      "characteristics": ["Celtic melodies", "Irish traditional tunes", "folk fingerpicking", "modal folk songs"],
+      "examples": ["Scarborough Fair - Traditional", "Drunken Sailor - Traditional", "Eleanor Rigby - The Beatles"]
+    },
+    {
+      "genre": "Funk",
+      "usage": "Funky minor grooves built on the dorian i-IV vamp",
+      "characteristics": ["minor grooves", "modal vamps", "rhythmic patterns", "syncopated lines"],
+      "examples": ["Chameleon - Herbie Hancock", "Brick House - Commodores", "Use Me - Bill Withers"]
+    },
+    {
+      "genre": "Fusion",
+      "usage": "Jazz-rock fusion with complex dorian harmonies and improvisations",
+      "characteristics": ["complex harmony", "extended techniques", "modal interchange", "sophisticated rhythm"],
+      "examples": ["Chick Corea compositions", "Weather Report", "Return to Forever"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "So What",
+      "artist": "Miles Davis",
+      "key": "D Dorian",
+      "genre": "Jazz",
+      "usage": "Iconic jazz standard built entirely on D dorian, the quintessential modal jazz composition",
+      "difficulty": "Intermediate",
+      "learningValue": "Perfect example of modal jazz composition"
+    },
+    {
+      "title": "Scarborough Fair",
+      "artist": "Traditional (Simon & Garfunkel)",
+      "key": "D Dorian",
+      "genre": "Folk",
+      "usage": "Celtic folk song showcasing dorian mode's deep folk music heritage",
+      "difficulty": "Beginner",
+      "learningValue": "Shows dorian's natural connection to folk music"
+    },
+    {
+      "title": "Another Brick in the Wall",
+      "artist": "Pink Floyd",
+      "key": "D Dorian",
+      "genre": "Rock",
+      "usage": "Rock classic using dorian harmonies for a modern, modal sound",
+      "difficulty": "Intermediate",
+      "learningValue": "Modern rock application of modal harmony"
+    },
+    {
+      "title": "Oye Como Va",
+      "artist": "Santana",
+      "key": "A Dorian",
+      "genre": "Latin Rock",
+      "usage": "Latin rock groove built on the classic dorian i-IV vamp",
+      "difficulty": "Intermediate",
+      "learningValue": "Demonstrates dorian's groove potential in Latin music"
+    },
+    {
+      "title": "Eleanor Rigby",
+      "artist": "The Beatles",
+      "key": "E Dorian",
+      "genre": "Pop/Rock",
+      "usage": "Pop masterpiece demonstrating dorian's emotional range and versatility",
+      "difficulty": "Beginner",
+      "learningValue": "Shows how dorian creates a distinctive, melancholic pop sound"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "D Dorian Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner",
+      "description": "Practice the D dorian scale ascending and descending in open position",
+      "alphaTex": "0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2 | 3.2 1.2 0.2 2.3 0.3 3.4 2.4 0.4",
+      "tempo": "60-120 BPM",
+      "focus": ["scale memorization", "finger independence", "dorian sound recognition"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM",
+        "Focus on clean, even articulation",
+        "Listen for the natural 6th (B note) that defines the dorian sound",
+        "Gradually increase tempo as accuracy improves"
+      ]
+    },
+    {
+      "name": "Dorian Modal Sequences",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Practice dorian in thirds to hear the modal character and intervallic relationships",
+      "alphaTex": "0.4 3.4 2.4 0.3 3.4 2.3 0.3 1.2 | 2.3 3.2 0.2 0.1 1.2 2.1 3.2 3.1",
+      "tempo": "80-140 BPM",
+      "focus": ["interval recognition", "modal character", "sequence patterns"],
+      "instructions": [
+        "Practice intervals systematically through the scale",
+        "Listen carefully to the dorian thirds pattern",
+        "Use alternate picking for even articulation",
+        "Work on smooth transitions between string crossings"
+      ]
+    },
+    {
+      "name": "Jazz Dorian Phrase",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Simple dorian phrase over Dm7 chord with jazz phrasing and musical expression",
+      "alphaTex": "0.4 3.4 2.3 0.2 | 1.2 3.2 0.1 | 3.2 0.2 2.3 | 3.4 0.4 0.4",
+      "tempo": "70-110 BPM",
+      "focus": ["jazz phrasing", "musical expression", "chord awareness"],
+      "instructions": [
+        "Play over a Dm7 backing track or chord vamp",
+        "Focus on musical phrasing, not just notes",
+        "Emphasize the natural 6th for dorian color",
+        "Experiment with rhythmic variations and dynamics"
+      ]
+    },
+    {
+      "name": "Dorian vs Natural Minor Ear Training",
+      "type": "Ear Training",
+      "difficulty": "Beginner",
+      "description": "Compare dorian with natural minor to hear the characteristic raised 6th that defines the mode",
+      "alphaTex": "0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2 | 0.4 2.4 3.4 0.3 2.3 0.2 0.2 3.2",
+      "tempo": "60-100 BPM",
+      "focus": ["ear training", "modal distinction", "natural 6th recognition"],
+      "instructions": [
+        "Play dorian scale, then natural minor back to back",
+        "Focus on the 6th degree difference (B natural vs B flat in D)",
+        "Sing both scales to internalize the difference",
+        "Identify dorian by its brighter, more sophisticated minor character"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor (Aeolian)",
+      "relationship": "Parallel minor",
+      "differences": "Dorian has a natural 6th instead of flat 6th - this is the only difference",
+      "usage": "Darker, more traditional minor sound compared to dorian's brightness"
+    },
+    {
+      "scale": "Major Scale",
+      "relationship": "Parent scale",
+      "differences": "Dorian is the 2nd mode of the major scale; same notes, different tonal center",
+      "usage": "D Dorian uses the same notes as C Major but centers on D"
+    },
+    {
+      "scale": "Mixolydian Mode",
+      "relationship": "Major modal counterpart",
+      "differences": "Mixolydian is a major mode with flat 7th; dorian is a minor mode with natural 6th",
+      "usage": "Dominant flavor, works over 7th chords in blues and rock"
+    },
+    {
+      "scale": "Phrygian Mode",
+      "relationship": "Darker minor mode",
+      "differences": "Phrygian has a flat 2nd, creating a Spanish/exotic flavor vs dorian's sophistication",
+      "usage": "Spanish-flavored minor mode, darker and more exotic than dorian"
+    },
+    {
+      "scale": "Minor Pentatonic",
+      "relationship": "Subset scale",
+      "differences": "Uses 5 notes from dorian (1, b3, 4, 5, b7), omitting the characteristic 2nd and 6th",
+      "usage": "Simplified version for soloing, can be extended to full dorian for color"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Natural minor scale knowledge",
+      "Basic major scale understanding",
+      "Ability to read tablature",
+      "Basic chord knowledge (minor and major)"
+    ],
+    "nextSteps": [
+      "Mixolydian mode",
+      "Phrygian mode",
+      "All seven modes of the major scale",
+      "Jazz improvisation concepts",
+      "Modal harmony and composition"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and dorian sound recognition",
+        "exercises": ["Basic dorian scale runs", "Compare with natural minor", "Open position practice"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)",
+        "duration": "20-30 minutes daily",
+        "focus": "Multiple positions and modal sequences",
+        "exercises": ["Position playing in different keys", "Modal sequence patterns", "Chord tone exercises"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily",
+        "focus": "Musical application and improvisation",
+        "exercises": ["Improvise over Dm-G vamps", "Study jazz standards in dorian", "Celtic melody learning"]
+      },
+      {
+        "phase": "Mastery (Ongoing)",
+        "duration": "20-30 minutes daily maintenance",
+        "focus": "Advanced applications and genre-specific techniques",
+        "exercises": ["Jazz improvisation", "Modal interchange", "Composition using dorian"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "dorian",
+    "tags": ["dorian", "mode", "scales", "theory", "jazz", "intermediate", "modal"],
+    "category": "scales",
+    "subcategory": "modes",
+    "lastUpdated": "2025-01-01",
+    "sources": [
+      "Berklee College of Music Theory Handbook",
+      "Jazz Theory Book by Mark Levine",
+      "Modal jazz analysis",
+      "Folk music traditions",
+      "Music education pedagogical research"
+    ]
+  }
+}

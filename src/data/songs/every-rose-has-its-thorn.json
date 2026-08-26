@@ -1,0 +1,540 @@
+{
+  "songInfo": {
+    "title": "Every Rose Has Its Thorn",
+    "artist": "Poison",
+    "album": "Open Up and Say... Ahh!",
+    "released": "1988",
+    "genre": "Power Ballad / Glam Metal",
+    "tempo": "72 BPM",
+    "duration": "4:22",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major scale",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Primary scale for the chord progressions and vocal melody; the bright major tonality provides the bittersweet emotional quality"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Guitar solo and lead fills; the major pentatonic gives the solo its warm, melodic character"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Relative minor pentatonic used for the bluesier bends and emotional phrases in the solo"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) - straightforward major key with the classic I-IV-V-vi singer-songwriter foundation",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "Cadd9",
+          "D"
+        ],
+        "progression": "I - IV - V",
+        "description": "The timeless I-IV-V progression in open chord voicings that has been the foundation of countless ballads. The Cadd9 voicing adds warmth compared to a bare C chord."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Intro",
+          "progression": "G - Cadd9",
+          "romanNumerals": "I - IV",
+          "description": "Simple two-chord intro establishing the reflective, acoustic atmosphere"
+        },
+        {
+          "section": "Verse",
+          "progression": "G - Cadd9 - G - Cadd9 - G - Cadd9 - D - Cadd9",
+          "romanNumerals": "I - IV - I - IV - I - IV - V - IV",
+          "description": "Extended verse using primarily the I-IV shuttle with the V chord arriving late for gradual harmonic movement"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - Cadd9 - D - Em - Cadd9 - G - D",
+          "romanNumerals": "I - IV - V - vi - IV - I - V",
+          "description": "The chorus introduces the Em (vi) chord for emotional depth, creating the bittersweet quality of the 'every rose has its thorn' hook"
+        },
+        {
+          "section": "Bridge",
+          "progression": "Em - D - Cadd9 - G - Em - D - Cadd9 - D",
+          "romanNumerals": "vi - V - IV - I - vi - V - IV - V",
+          "description": "The bridge starts on the vi chord for an emotionally darker starting point before working back to the major resolution"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "G - Cadd9 - D - G",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Clean electric solo over the verse changes with warm, singing tone"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Tonic major chord, providing the warm foundation and resolution points",
+        "Cadd9 (IV) - Subdominant with added ninth for extra warmth and open string resonance",
+        "D (V) - Dominant chord creating gentle tension and forward movement",
+        "Em (vi) - Relative minor adding the emotional depth and bittersweet quality to the chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Open Chord Acoustic Strumming",
+      "description": "Simple open chord strumming pattern that forms the backbone of this power ballad, using the beginner-friendly G, Cadd9, and D voicings with a gentle, rhythmic strum",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G: 3-2-0-0-3-3 (open G with the B note on the high E string)",
+          "Cadd9: X-3-2-0-3-0 (beautiful open voicing with 3rd fret on both B and A strings)",
+          "D: X-X-0-2-3-2 (standard open D chord)",
+          "Em: 0-2-2-0-0-0 (simple open Em, easiest chord to play)",
+          "The strumming pattern is a slow, steady down-down-up-up-down-up at 72 BPM",
+          "Let all open strings ring as much as possible for a full, warm sound"
+        ],
+        "sequence": [
+          "Position fingers for the G chord and strum the full pattern",
+          "Transition to Cadd9 - only the index and middle fingers move",
+          "The common 3rd-fret B-string note is shared between G and Cadd9",
+          "Move to D chord for the resolution points",
+          "Add Em when the chorus arrives for the emotional shift"
+        ],
+        "tips": [
+          "The G-to-Cadd9 change is one of the easiest in guitar - only two fingers move",
+          "Keep your ring finger anchored on the 3rd fret of the B string during the G-Cadd9 change",
+          "Strum lightly and evenly - this is a ballad, not a rocker",
+          "Focus on making each chord ring clean before worrying about the strumming pattern"
+        ],
+        "chords": [
+          "G",
+          "Cadd9",
+          "D",
+          "Em"
+        ],
+        "progression": "G - Cadd9 - D (I - IV - V)"
+      }
+    },
+    {
+      "name": "Basic Fingerpicking Pattern",
+      "description": "Simple fingerpicking used in the intro and quieter verse moments, plucking individual strings to outline chord shapes with a gentle, intimate feel",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Thumb covers the bass strings (6th, 5th, 4th strings)",
+          "Index finger covers the 3rd string",
+          "Middle finger covers the 2nd string",
+          "Ring finger covers the 1st string",
+          "The pattern alternates bass note (thumb) with treble notes (fingers)"
+        ],
+        "sequence": [
+          "Play the bass note with the thumb on beat 1",
+          "Follow with index, middle, ring fingers on beats 2, 3, 4",
+          "Alternate the bass note between root and fifth of each chord",
+          "Maintain the pattern through each chord change",
+          "Keep a steady, gentle tempo"
+        ],
+        "tips": [
+          "Start with just the thumb playing bass notes to establish the rhythm",
+          "Add one finger at a time until the full pattern is comfortable",
+          "The fingerpicking is optional - strumming works fine for the entire song",
+          "Keep nails short on the picking hand or use fingerpicks for clarity"
+        ],
+        "chords": [
+          "G",
+          "Cadd9"
+        ],
+        "progression": "G - Cadd9 (fingerpicked arpeggios)"
+      }
+    },
+    {
+      "name": "Clean Electric Lead with Simple Bends",
+      "description": "The guitar solo uses a clean or lightly overdriven electric tone with melodic phrases, simple half-step and whole-step bends, and warm sustain for an emotionally expressive lead",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Solo primarily uses G major pentatonic at the 7th position",
+          "Half-step bends on the B string (7th fret, bending D to D#/Eb)",
+          "Whole-step bends on the B string (8th fret, bending E to F#)",
+          "Clean or lightly overdriven tone - no heavy distortion",
+          "Vibrato applied to sustained notes for warmth"
+        ],
+        "sequence": [
+          "Begin with a simple melodic phrase around the 7th position",
+          "Execute a half-step bend for gentle emotional expression",
+          "Move to a whole-step bend for the climactic moment",
+          "Apply vibrato to the sustained bent note",
+          "Resolve the phrase by returning to the root (G) note"
+        ],
+        "tips": [
+          "Use the neck pickup for a warmer, rounder lead tone",
+          "Bends should be slow and deliberate - this is not a flashy solo",
+          "Focus on the emotional quality of each note rather than speed",
+          "CC DeVille's original solo is melodic and singable - aim for that vocal quality"
+        ],
+        "chords": [],
+        "progression": "Solo over G - Cadd9 - D - G progression"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Basic Fingerpicking Pattern",
+      "key": "G Major",
+      "description": "Gentle fingerpicked acoustic intro with G and Cadd9 chords establishing the reflective, intimate mood of the ballad",
+      "chords": [
+        "G",
+        "Cadd9"
+      ],
+      "progression": "G - Cadd9",
+      "notes": [
+        "Start with a soft fingerpicked pattern on the G chord",
+        "Let the open strings ring naturally for warmth",
+        "The intro sets the emotional tone - play gently and evenly",
+        "A simple strum pattern works as a beginner alternative to fingerpicking"
+      ],
+      "alphaTab": "3.5 3.4 5.3 3.2 5.3 3.4 | 3.5 5.4 5.3 3.2 5.3 5.4 | 8.5 8.4 10.3 8.2 10.3 8.4 | 3.5 3.4 5.3 3.2 5.3 3.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-1:00",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "The storytelling verse using the G-Cadd9 shuttle with gentle acoustic strumming, building slowly toward the D chord arrival",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D"
+      ],
+      "progression": "G - Cadd9 - G - Cadd9 - G - Cadd9 - D - Cadd9",
+      "notes": [
+        "Keep the strumming gentle and supportive beneath the vocal melody",
+        "The D chord arrives late in the verse for a sense of gradual harmonic movement",
+        "Focus on clean chord transitions - buzzing notes are very audible in a ballad",
+        "The tempo is slow at 72 BPM - let each chord breathe"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:00-1:35",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "The emotional chorus with the Em chord adding bittersweet depth to the 'every rose has its thorn' hook, the song's most memorable moment",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D",
+        "Em"
+      ],
+      "progression": "G - Cadd9 - D - Em - Cadd9 - G - D",
+      "notes": [
+        "The Em chord is the emotional heart of the chorus - accent it slightly",
+        "Strum a bit more forcefully than the verse for natural dynamics",
+        "The I-IV-V-vi progression is one of the most common in popular music",
+        "Practice the Em entrance to make it feel natural and smooth"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "1:35-2:15",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "Second verse continuing the intimate acoustic strumming, with slightly more confidence in the delivery as the song's story deepens",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D"
+      ],
+      "progression": "G - Cadd9 - G - Cadd9 - G - Cadd9 - D - Cadd9",
+      "notes": [
+        "Slightly more dynamic than the first verse for natural song progression",
+        "Can add subtle electric guitar in the background if performing with a band",
+        "Maintain the same strumming pattern for consistency",
+        "The slow tempo allows for expressive rhythmic variations"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus 2",
+      "timeStamp": "2:15-2:50",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "Second chorus with increased emotional weight and slightly stronger dynamics, preparing for the bridge and solo sections",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D",
+        "Em"
+      ],
+      "progression": "G - Cadd9 - D - Em - Cadd9 - G - D",
+      "notes": [
+        "Build slightly on the first chorus dynamics",
+        "The band may add electric guitar underneath for building momentum",
+        "The singalong potential peaks here - play with confidence and warmth",
+        "Prepare for the emotional shift into the bridge"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:50-3:15",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "The bridge section starting on the Em chord for a darker emotional center, building through the chord progression toward the guitar solo climax",
+      "chords": [
+        "Em",
+        "D",
+        "Cadd9",
+        "G"
+      ],
+      "progression": "Em - D - Cadd9 - G - Em - D - Cadd9 - D",
+      "notes": [
+        "Starting on Em gives the bridge a contrasting emotional quality",
+        "The descending Em-D-Cadd9 motion creates a sense of emotional release",
+        "Build intensity gradually through the bridge toward the solo",
+        "The final D chord hangs with tension before the solo entrance"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:15-3:45",
+      "technique": "Clean Electric Lead with Simple Bends",
+      "key": "G Major",
+      "description": "CC DeVille's melodic guitar solo with clean electric tone, simple bends, and warm phrasing over the verse chord progression",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D",
+        "G"
+      ],
+      "progression": "G - Cadd9 - D - G",
+      "notes": [
+        "Clean or lightly overdriven tone - the solo should sound warm, not aggressive",
+        "G major pentatonic at the 7th position is the primary scale home",
+        "Simple half-step and whole-step bends for emotional expression",
+        "The solo is melodic and singable - focus on phrasing over speed"
+      ],
+      "alphaTab": "3.3 5.3 3.2 6.2 | 6.1 3.1 6.2 3.2 | 3.3 5.3 5.2 3.2 | 6.1 3.1 5.3 3.3 |",
+      "exerciseLabel": "Bending & Phrasing Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:45-4:22",
+      "technique": "Open Chord Acoustic Strumming",
+      "key": "G Major",
+      "description": "The final chorus with maximum emotional weight, building to the song's conclusion with repeated hook and gentle resolution",
+      "chords": [
+        "G",
+        "Cadd9",
+        "D",
+        "Em"
+      ],
+      "progression": "G - Cadd9 - D - Em - Cadd9 - G - D - G",
+      "notes": [
+        "Peak emotional intensity for the final chorus delivery",
+        "The final G chord should ring out and sustain to close the song",
+        "Can add gentle harmonics on the final chord for a beautiful ending",
+        "The crowd singalong peaks here - play with warmth and conviction"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Taylor 814ce acoustic guitar",
+      "alternatives": [
+        "Martin D-28 acoustic",
+        "Gibson J-45 acoustic",
+        "Yamaha FG800 (excellent budget option)",
+        "Fender Stratocaster for the electric solo sections"
+      ],
+      "pickup": "Acoustic piezo for amplified performance; neck single-coil for the clean electric solo"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (clean channel for electric solo)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC15",
+        "Roland JC-120 (pristine clean tone)",
+        "Any acoustic amplifier for the acoustic sections"
+      ],
+      "settings": {
+        "gain": "2-3 (clean to very light breakup for the solo)",
+        "treble": "6 (bright but not harsh)",
+        "middle": "5 (balanced midrange)",
+        "bass": "6 (warm bottom end for ballad tone)",
+        "presence": "5 (natural, not harsh)"
+      }
+    },
+    "effects": {
+      "distortion": "None for acoustic sections. Very light overdrive (barely breaking up) for the electric solo.",
+      "delay": "Light analog delay (300-400ms) with one or two repeats for the solo",
+      "reverb": "Medium spring or hall reverb for warmth and depth on both acoustic and electric tones",
+      "other": "Chorus pedal optional for thickening the clean electric tone. No heavy effects needed - simplicity is key."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Master the three open chord shapes and basic strumming pattern - this is an ideal first song",
+      "steps": [
+        "Learn the G, Cadd9, and D open chord shapes individually",
+        "Practice switching between G and Cadd9 (the easiest two-chord change in guitar)",
+        "Add the D chord and practice the full G-Cadd9-D progression",
+        "Learn a simple down-strum pattern at 72 BPM and play along with the recording"
+      ],
+      "timeEstimate": "1-2 weeks for verse and chorus strumming"
+    },
+    "intermediate": {
+      "focus": "Add the Em chord, fingerpicking pattern, and dynamic nuance between sections",
+      "steps": [
+        "Add Em to the chord vocabulary for the chorus and bridge",
+        "Learn the basic fingerpicking pattern for the intro",
+        "Work on dynamic contrast between gentle verses and more forceful choruses",
+        "Practice the complete song structure from intro to final chorus"
+      ],
+      "timeEstimate": "2-3 weeks for the full acoustic arrangement"
+    },
+    "advanced": {
+      "focus": "Learn the electric guitar solo, add expressive techniques, and refine performance dynamics",
+      "steps": [
+        "Learn the G major pentatonic scale at the 7th position",
+        "Practice half-step and whole-step bends with accurate pitch",
+        "Work through the solo melody phrase by phrase",
+        "Refine the complete song with both acoustic rhythm and electric solo"
+      ],
+      "timeEstimate": "3-4 weeks for complete performance with solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Strumming too hard - this is a gentle ballad, not a power chord workout",
+      "Buzzing strings on chord changes due to incomplete finger placement",
+      "Rushing the slow 72 BPM tempo - patience is essential for ballads",
+      "Neglecting the Em chord in the chorus, which is the emotional core of the song"
+    ],
+    "practiceRoutine": [
+      "Warm up with G-Cadd9 chord transitions for 3 minutes (the easiest change in the song)",
+      "Practice the verse strumming pattern with G-Cadd9-D at 72 BPM (5 minutes)",
+      "Work on the chorus adding the Em chord transition (5 minutes)",
+      "Practice the fingerpicking intro pattern slowly (5 minutes)",
+      "Full song run-through with acoustic guitar (5 minutes)"
+    ],
+    "focusAreas": [
+      "Clean open chord voicings without any buzzing strings",
+      "Smooth chord transitions especially to and from the D chord",
+      "Gentle, even strumming at the slow 72 BPM ballad tempo",
+      "Dynamic control between quiet verses and more emotional choruses"
+    ],
+    "metronomeWork": [
+      "Practice chord changes with metronome at 72 BPM from the start (tempo is already slow)",
+      "Count along with the metronome: 1-2-3-4 for each bar, one chord per bar",
+      "Practice the fingerpicking pattern with metronome eighth notes at 72 BPM",
+      "Build confidence by playing through the full progression without pausing between chords"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Talk Dirty to Me",
+        "difficulty": "Intermediate",
+        "similarity": "Poison's most recognizable riff-driven song with contrasting high-energy arrangement"
+      },
+      {
+        "title": "Nothin' but a Good Time",
+        "difficulty": "Intermediate",
+        "similarity": "Upbeat Poison anthem showcasing the band's harder rock side"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Wanted Dead or Alive",
+        "artist": "Bon Jovi",
+        "difficulty": "Intermediate",
+        "similarity": "Power ballad with acoustic foundation and open chord strumming as the primary technique"
+      },
+      {
+        "title": "Knockin' on Heaven's Door",
+        "artist": "Bob Dylan / Guns N' Roses",
+        "difficulty": "Beginner",
+        "similarity": "Simple open chord ballad with G-D-C/Am progression, perfect beginner foundation"
+      },
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic-driven ballad with open chord foundation and clean electric lead"
+      },
+      {
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "difficulty": "Beginner",
+        "similarity": "Acoustric-driven anthem with similar open chord voicings including Cadd9"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Horse with No Name",
+        "artist": "America",
+        "difficulty": "Beginner",
+        "similarity": "Start with this simple two-chord song to build basic confidence"
+      },
+      {
+        "title": "Free Fallin'",
+        "artist": "Tom Petty",
+        "difficulty": "Beginner",
+        "similarity": "Another simple open chord song to reinforce the G-Cadd9-D vocabulary"
+      },
+      {
+        "title": "Summer of '69",
+        "artist": "Bryan Adams",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to faster open chord strumming with more complex arrangement"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 85,
+    "dateAdded": "2026-03-05",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "power-ballad",
+      "acoustic",
+      "beginner",
+      "open-chords",
+      "glam-metal",
+      "80s-rock",
+      "first-song"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

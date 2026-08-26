@@ -1,0 +1,442 @@
+{
+  "songInfo": {
+    "title": "Paint It Black",
+    "artist": "The Rolling Stones",
+    "album": "Aftermath",
+    "released": "1966",
+    "genre": "Rock",
+    "tempo": "162 BPM",
+    "duration": "3:22",
+    "key": "E minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary tonal foundation for the chord progression and melodic framework"
+        },
+        {
+          "scale": "E harmonic minor",
+          "notes": "E - F# - G - A - B - C - D# - E",
+          "application": "The raised 7th degree (D#) creates the major B7 chord, giving the verse its dark, exotic character"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Lead guitar fills and the sitar-emulating guitar melody line"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with Harmonic Minor inflections",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor (is the primary key)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "B7"
+        ],
+        "progression": "i - V7",
+        "description": "The verse is built on a simple but powerful two-chord alternation between Em and B7, with the dominant seventh chord borrowed from E harmonic minor creating dark, exotic tension"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Em - B7 - Em - B7",
+          "romanNumerals": "i - V7 - i - V7",
+          "description": "Hypnotic two-chord vamp creating the driving, urgent feel of the verses"
+        },
+        {
+          "section": "Chorus / Bridge",
+          "progression": "Em - D - A - B7",
+          "romanNumerals": "i - VII - IV - V7",
+          "description": "Expanded progression adding harmonic movement with D and A chords before resolving back to B7"
+        },
+        {
+          "section": "Instrumental Break",
+          "progression": "Em - B7 - Em - B7",
+          "romanNumerals": "i - V7 - i - V7",
+          "description": "Same verse progression supporting the sitar-like guitar melody during instrumental sections"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (i) - Tonic minor chord establishing the dark, urgent mood",
+        "B7 (V7) - Dominant seventh chord from E harmonic minor, creating strong pull back to Em",
+        "D (VII) - Subtonic adding harmonic variety in the chorus sections",
+        "A (IV) - Subdominant providing movement before the V7 resolution",
+        "The i-V7 vamp is the harmonic engine of the song, creating relentless drive",
+        "The raised 7th (D#) in B7 gives the song its exotic, quasi-Eastern flavor"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fast Minor Key Strumming",
+      "description": "Driving eighth-note strumming pattern at 162 BPM alternating between Em and B7, requiring right-hand stamina and precise chord transitions at speed",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Em: 0-2-2-0-0-0 (Open Em chord)",
+          "B7: X-2-1-2-0-2 (Open B7 chord)",
+          "Continuous eighth-note strumming pattern (down-up-down-up) at 162 BPM",
+          "The tempo is very fast - consistent down-up strumming is essential",
+          "Slight dynamic accents on beats 1 and 3 drive the pulse"
+        ],
+        "sequence": [
+          "Establish the Em chord shape on the fretboard",
+          "Begin driving eighth-note down-up strumming pattern",
+          "Transition to B7 on the chord change - keep strumming through",
+          "Return to Em and maintain the relentless driving rhythm"
+        ],
+        "tips": [
+          "Keep the strumming arm loose and relaxed to maintain speed",
+          "Practice the Em to B7 change in isolation before adding the strumming pattern",
+          "Use a lighter pick gauge (0.60-0.73mm) for faster strumming comfort",
+          "Focus on the groove and feel rather than hitting every string perfectly"
+        ],
+        "chords": [
+          "Em",
+          "B7"
+        ],
+        "progression": "Em - B7 - Em - B7 (driving 8th note rhythm)"
+      }
+    },
+    {
+      "name": "Sitar-Emulating Guitar Melody",
+      "description": "The distinctive single-note guitar line that mimics the sitar melody heard on the original recording, using hammer-ons and the E harmonic minor scale for its exotic character",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Based on E harmonic minor scale, emphasizing the D# (raised 7th) for exotic flavor",
+          "Single-note melody played on the higher strings (B and high E)",
+          "Uses hammer-ons and pull-offs for smooth, flowing articulation",
+          "Keith Richards originally played this line to emulate Brian Jones' sitar part"
+        ],
+        "sequence": [
+          "Position fingers on the high E and B strings around the open position and 2nd-4th frets",
+          "Pick the melody cleanly with precise single-note articulation",
+          "Use hammer-ons for the ascending notes within the phrase",
+          "Emphasize the D# note (4th fret B string) for the harmonic minor character"
+        ],
+        "tips": [
+          "Learn the E harmonic minor scale thoroughly before tackling this melody",
+          "Listen carefully to the original recording to match the phrasing and timing",
+          "Keep the tone clean or with very light overdrive for clarity",
+          "Practice at half speed to nail the exact note sequence before building tempo"
+        ],
+        "chords": [
+          "Em",
+          "B7"
+        ],
+        "progression": "Melody over Em - B7 vamp"
+      }
+    },
+    {
+      "name": "Dynamic Chord Transitions",
+      "description": "The expanded chord vocabulary in the chorus sections, moving through Em-D-A-B7 with smooth transitions and dynamic variation from the two-chord verse",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "D: X-X-0-2-3-2 (Open D major chord)",
+          "A: X-0-2-2-2-0 (Open A major chord)",
+          "Smooth transitions between all four chords without breaking the strumming rhythm",
+          "Dynamic increase during the chorus for energy contrast with verses"
+        ],
+        "sequence": [
+          "Start on Em with the established driving strumming pattern",
+          "Move to D major chord with smooth finger repositioning",
+          "Shift to A major, keeping the strumming consistent",
+          "Resolve to B7 with the characteristic dominant tension"
+        ],
+        "tips": [
+          "Practice the D to A transition in isolation - it requires a full hand shape change",
+          "Anticipate each chord change by starting the finger movement slightly early",
+          "Maintain the driving eighth-note strumming through all changes",
+          "The dynamic increase into the chorus should feel natural, not forced"
+        ],
+        "chords": [
+          "Em",
+          "D",
+          "A",
+          "B7"
+        ],
+        "progression": "Em - D - A - B7 (Chorus)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Sitar-Emulating Guitar Melody",
+      "key": "E minor",
+      "description": "The song opens with the iconic sitar melody (originally played on an actual sitar by Brian Jones, now often covered on guitar) over the Em-B7 vamp, setting the dark, exotic tone",
+      "chords": [
+        "Em",
+        "B7"
+      ],
+      "progression": "Em - B7 - Em - B7",
+      "notes": [
+        "The original features sitar, but guitar can emulate the melody line",
+        "Driving rhythm guitar enters almost immediately underneath",
+        "Establishes the driving tempo of 162 BPM from the start",
+        "The harmonic minor character is established through the melody and B7 chord"
+      ],
+      "alphaTab": "12.6 15.6 12.5 14.5 12.4 14.4 | 12.3 14.3 12.2 15.2 12.1 15.1 | 15.1 12.1 15.2 12.2 14.3 12.3 | 14.4 12.4 14.5 12.5 15.6 12.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:50",
+      "technique": "Fast Minor Key Strumming",
+      "key": "E minor",
+      "description": "The verse features relentless driving eighth-note strumming alternating Em and B7, creating the urgent, almost frantic energy that defines the song",
+      "chords": [
+        "Em",
+        "B7"
+      ],
+      "progression": "Em - B7 - Em - B7",
+      "notes": [
+        "Continuous driving eighth-note strumming throughout",
+        "Two-chord vamp creates hypnotic, relentless energy",
+        "Dynamic level stays consistent to maintain the urgent mood",
+        "Guitar supports the vocal melody with rhythmic precision"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:50-1:15",
+      "technique": "Dynamic Chord Transitions",
+      "key": "E minor",
+      "description": "The chorus expands the harmonic palette with a four-chord progression, adding D and A before resolving to B7 for a fuller, more dynamic sound",
+      "chords": [
+        "Em",
+        "D",
+        "A",
+        "B7"
+      ],
+      "progression": "Em - D - A - B7",
+      "notes": [
+        "Four-chord progression adds harmonic movement and variety",
+        "Dynamic increase from the verse level for chorus energy",
+        "Strumming pattern remains consistent through the chord changes",
+        "B7 resolution creates strong pull back to Em for the next section"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Instrumental Break",
+      "timeStamp": "1:50-2:20",
+      "technique": "Sitar-Emulating Guitar Melody",
+      "key": "E minor",
+      "description": "Returns to the sitar/guitar melody over the Em-B7 vamp, with the full band maintaining the driving rhythm underneath",
+      "chords": [
+        "Em",
+        "B7"
+      ],
+      "progression": "Em - B7 - Em - B7",
+      "notes": [
+        "Guitar melody takes the spotlight over the rhythm section",
+        "Same harmonic minor melody as the intro with possible variations",
+        "Rhythm guitar maintains the driving eighth-note strumming",
+        "Energy level stays high through the instrumental section"
+      ],
+      "alphaTab": "12.6 15.6 12.5 14.5 12.4 14.4 | 12.3 14.3 12.2 15.2 12.1 15.1 | 15.1 12.1 15.2 12.2 14.3 12.3 | 14.4 12.4 14.5 12.5 15.6 12.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:50-3:22",
+      "technique": "Fast Minor Key Strumming",
+      "key": "E minor",
+      "description": "The song drives to its conclusion with the full band at maximum intensity, repeating the verse vamp as the energy builds to a final decisive ending",
+      "chords": [
+        "Em",
+        "B7"
+      ],
+      "progression": "Em - B7 - Em - B7 (to end)",
+      "notes": [
+        "Maximum intensity strumming with full dynamics",
+        "The urgency increases through the final repetitions",
+        "Clean ending rather than fade-out on the original recording",
+        "Maintain tempo precision through the final bars"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Hummingbird acoustic or Fender Telecaster",
+      "alternatives": [
+        "Any quality acoustic guitar for rhythm",
+        "Fender Stratocaster",
+        "Gibson ES-335 for the combined acoustic/electric tone",
+        "Epiphone Casino"
+      ],
+      "pickup": "Single coils for the bright, cutting tone; acoustic with piezo for the rhythm part"
+    },
+    "amp": {
+      "recommended": "Vox AC30",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Fender Deluxe Reverb",
+        "Vox AC15"
+      ],
+      "settings": {
+        "gain": "3/10 (clean to very light overdrive)",
+        "treble": "7/10 (bright, cutting tone)",
+        "middle": "5/10",
+        "bass": "4/10 (tight bottom end)",
+        "presence": "7/10"
+      }
+    },
+    "effects": {
+      "distortion": "None to very light overdrive - the tone should be clean and cutting",
+      "reverb": "Light spring reverb for a touch of ambience",
+      "other": "No effects needed - the raw, driving sound is key to the song's energy"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Paint It Black",
+      "steps": [
+        "Learn the open Em and B7 chord shapes",
+        "Practice basic strumming patterns at slow tempo (80-100 BPM)",
+        "Work on transitioning cleanly between Em and B7",
+        "Learn the open D and A chord shapes for the chorus"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "title": "Building Speed and Adding the Melody",
+      "steps": [
+        "Increase strumming speed gradually from 100 to 140 BPM",
+        "Learn the E harmonic minor scale for the melody line",
+        "Practice the sitar-emulating guitar melody at slow tempo",
+        "Work on the full song structure including verse and chorus transitions"
+      ],
+      "timeEstimate": "3-6 weeks"
+    },
+    "advanced": {
+      "title": "Full Speed Performance and Expression",
+      "steps": [
+        "Play the complete rhythm part at the original 162 BPM",
+        "Combine the melody and rhythm elements together",
+        "Develop stamina for the continuous driving strumming",
+        "Match the dynamics and energy shifts of the original recording"
+      ],
+      "timeEstimate": "6-10 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Tensing up the strumming arm at the fast 162 BPM tempo, leading to fatigue",
+      "Sloppy B7 chord shape causing buzzing or muted strings",
+      "Losing the driving eighth-note rhythm during chord changes",
+      "Playing the melody line without the harmonic minor D# note, losing the exotic flavor",
+      "Not differentiating dynamics between verse and chorus sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with Em to B7 chord changes at 80 BPM for 5 minutes",
+      "Practice driving eighth-note strumming on Em only, building to 130+ BPM",
+      "Add the B7 chord change while maintaining strumming pattern at 120 BPM",
+      "Work on the melody line separately using E harmonic minor at slow tempo",
+      "Play along with the original recording once comfortable at 150+ BPM"
+    ],
+    "focusAreas": [
+      "Right-hand strumming stamina and relaxation at high tempo",
+      "Clean Em to B7 transitions without breaking the strumming rhythm",
+      "Accurate E harmonic minor melody line with proper emphasis on D#",
+      "Dynamic contrast between verse (two-chord) and chorus (four-chord) sections",
+      "Maintaining absolutely steady tempo through the entire 3:22 duration"
+    ],
+    "metronomeWork": [
+      "Start strumming exercises at 80 BPM with eighth-note down-up pattern",
+      "Increase by 10 BPM per session while maintaining clean chord shapes",
+      "At 120 BPM, add the full Em-B7 chord change to the pattern",
+      "Practice the chorus chord changes (Em-D-A-B7) at 100 BPM before building speed",
+      "Target tempo is 162 BPM - prioritize consistent timing over speed"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "(I Can't Get No) Satisfaction",
+        "difficulty": "Beginner",
+        "similarity": "Another iconic Rolling Stones guitar-driven track with a simpler approach"
+      },
+      {
+        "title": "Gimme Shelter",
+        "difficulty": "Intermediate",
+        "similarity": "Similar dark minor key energy and driving rhythm guitar approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Paranoid",
+        "artist": "Black Sabbath",
+        "technique": "Fast Driving Rhythm",
+        "similarity": "Similar fast tempo driving rhythm with minor key power, same era"
+      },
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "technique": "Fast Eighth-Note Strumming",
+        "similarity": "Same relentless eighth-note strumming approach at high tempo"
+      },
+      {
+        "title": "All Along the Watchtower",
+        "artist": "Jimi Hendrix",
+        "technique": "Minor Key Rhythm and Dynamics",
+        "similarity": "Similar dark minor key mood with dynamic guitar work from the same era"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Simpler minor key riff to build foundational skills"
+      },
+      {
+        "title": "Gimme Shelter",
+        "artist": "The Rolling Stones",
+        "difficulty": "Intermediate",
+        "similarity": "More nuanced Stones guitar work building on similar techniques"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 91,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "rolling-stones",
+      "minor-key",
+      "driving-rhythm"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 months"
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "songInfo": {
+    "title": "Wish You Were Here",
+    "artist": "Pink Floyd",
+    "album": "Wish You Were Here",
+    "released": "1975",
+    "genre": "Progressive Rock",
+    "tempo": "62 BPM (intro) / 120 BPM (main)",
+    "duration": "5:34",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major scale",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Primary harmonic framework for chord voicings and melodic movement throughout the song"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Used for the intro lead fills and melodic embellishments between chord changes"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Blues-inflected lead phrases during the solo sections and verse embellishments"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with folk-influenced simplicity",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "C",
+          "D",
+          "Am"
+        ],
+        "progression": "I - IV - V - ii",
+        "description": "Warm, folk-rock progression using common diatonic chords in G major, creating an open and melancholic atmosphere"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (12-string feel)",
+          "progression": "Em7 - G - Em7 - G - Em7 - A7sus4 - Em7 - A7sus4 - G",
+          "romanNumerals": "vi7 - I - vi7 - I - vi7 - II7sus4 - vi7 - II7sus4 - I",
+          "description": "The iconic acoustic intro alternating between Em7 and G with A7sus4 adding harmonic tension before resolving to G"
+        },
+        {
+          "section": "Verse",
+          "progression": "C - D - Am - G",
+          "romanNumerals": "IV - V - ii - I",
+          "description": "Descending emotional arc from subdominant through dominant to minor, resolving on tonic for each verse line"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - D - Am - G - D/F# - Em - G - Em - A7sus4 - G",
+          "romanNumerals": "IV - V - ii - I - V/7 - vi - I - vi - II7sus4 - I",
+          "description": "Extended progression that builds through the verse pattern then adds the chromatic bass walk-down for emotional resolution"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Home key providing warmth and resolution, the emotional anchor of the song",
+        "C (IV) - Subdominant creating gentle lift and open folk-rock character",
+        "D (V) - Dominant resolving to tonic, driving the verse forward",
+        "Am (ii) - Minor supertonic adding melancholy and emotional weight",
+        "Em7 (vi7) - Opens the song with relative minor color, establishing the bittersweet mood",
+        "A7sus4 (II7sus4) - Secondary dominant feel with suspended fourth creating unresolved tension",
+        "D/F# (V/7) - First inversion dominant for smooth bass line movement from G to Em"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Acoustic Intro Pattern",
+      "description": "The iconic 12-string-style acoustic intro featuring arpeggiated chord shapes with melodic lead fills woven between chord changes, played with a relaxed folk-rock feel",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Em7: 0-2-2-0-3-0 with open strings ringing sympathetically",
+          "G: 3-2-0-0-3-3 (full open G voicing for rich resonance)",
+          "A7sus4: X-0-2-0-3-0 (open voicing with suspended tension)",
+          "Lead fills use G major pentatonic in open position between chord changes",
+          "Strumming is loose and relaxed, not metronomically precise",
+          "Originally recorded with one guitar panned left (radio effect) and clean guitar entering right"
+        ],
+        "sequence": [
+          "Begin with Em7 arpeggio, letting open strings ring",
+          "Transition to G with a quick pentatonic fill on B and high E strings",
+          "Return to Em7, maintaining open string sustain",
+          "Move to A7sus4 for unresolved tension",
+          "Resolve to full G chord, strumming all six strings"
+        ],
+        "tips": [
+          "Let open strings ring as long as possible for the 12-string shimmer effect",
+          "Keep strumming hand relaxed - the feel is conversational, not rigid",
+          "Practice the chord transitions slowly, focusing on keeping common tones ringing",
+          "Use the fleshy part of the thumb for a warmer strumming tone",
+          "Listen carefully to the original for the exact placement of lead fills"
+        ],
+        "chords": [
+          "Em7",
+          "G",
+          "A7sus4"
+        ],
+        "progression": "Em7 - G - Em7 - G - Em7 - A7sus4 - Em7 - A7sus4 - G"
+      }
+    },
+    {
+      "name": "Emotional Strumming",
+      "description": "Open chord strumming with dynamic expression, building from gentle verse patterns to fuller chorus intensity while maintaining the song's introspective emotional character",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Uses full open chord voicings for maximum resonance",
+          "Dynamic variation between soft verse strumming and fuller chorus",
+          "Mix of downstrokes and gentle up-down patterns",
+          "Emphasis on letting chords breathe and decay naturally",
+          "The rhythm shifts from 62 BPM intro feel to 120 BPM when full band enters"
+        ],
+        "sequence": [
+          "Start with gentle downstrokes on verse chords (C-D-Am-G)",
+          "Add soft upstrokes on the 'and' beats as verse progresses",
+          "Build intensity gradually into chorus with fuller strumming",
+          "Return to gentle dynamics for next verse",
+          "Use palm contact to dampen between chord changes for clean transitions"
+        ],
+        "tips": [
+          "Dynamics are everything in this song - practice playing softly with control",
+          "Avoid heavy strumming, even in the chorus the tone stays warm, not aggressive",
+          "Let the Am chord ring with extra sustain for emotional weight",
+          "Practice the transition from 62 BPM intro feel to 120 BPM main tempo",
+          "Focus on the spaces between strums as much as the strums themselves"
+        ],
+        "chords": [
+          "C",
+          "D",
+          "Am",
+          "G",
+          "Em"
+        ],
+        "progression": "C - D - Am - G (Verse)"
+      }
+    },
+    {
+      "name": "Pentatonic Lead Fills",
+      "description": "Simple but expressive lead guitar fills using G major and E minor pentatonic scales, placed between vocal phrases and chord changes for melodic embellishment",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based primarily on open position G major pentatonic",
+          "Fills are sparse and melodic, serving the song rather than showing off",
+          "Uses whole-step bends on the B string for bluesy expression",
+          "Vibrato on sustained notes adds emotional depth",
+          "Originally played on Fender Stratocaster with clean-to-light-crunch tone"
+        ],
+        "sequence": [
+          "Listen for the spaces between vocal phrases where fills belong",
+          "Begin fills on chord tones (root or third of current chord)",
+          "Use two or three note phrases, not long runs",
+          "Apply gentle vibrato to the final note of each fill",
+          "Return to rhythm playing seamlessly after each fill"
+        ],
+        "tips": [
+          "Less is more - the fills should complement, not compete with the vocals",
+          "Practice bending the B string from 3rd fret (D) up to E for the classic Pink Floyd sound",
+          "Use neck pickup for warmer lead tone during fills",
+          "Study the original recording to nail the exact placement and note choices",
+          "Aim for a singing quality in the tone, matching the vocal melody's emotion"
+        ],
+        "chords": [],
+        "progression": "Over C - D - Am - G verse changes"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Intro",
+      "timeStamp": "0:00-1:00",
+      "technique": "Acoustic Intro Pattern",
+      "key": "G Major",
+      "description": "The legendary acoustic introduction featuring the 12-string-flavored Em7-G-A7sus4 pattern with interwoven pentatonic lead fills, building from a solitary radio-effected guitar to full clean acoustic",
+      "chords": [
+        "Em7",
+        "G",
+        "A7sus4"
+      ],
+      "progression": "Em7 - G - Em7 - G - Em7 - A7sus4 - Em7 - A7sus4 - G",
+      "notes": [
+        "First guitar enters with radio EQ effect (high-pass filtered lo-fi sound)",
+        "Clean acoustic guitar enters at approximately 0:25 with full frequency range",
+        "Em7 and G alternate with pentatonic fills between changes",
+        "A7sus4 adds tension before resolving back to G",
+        "Tempo is relaxed at approximately 62 BPM during this section"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "1:00-2:15",
+      "technique": "Emotional Strumming",
+      "key": "G Major",
+      "description": "The vocal verse section with gentle open chord strumming at 120 BPM, creating the introspective space for the lyrics about absence and disconnection",
+      "chords": [
+        "C",
+        "D",
+        "Am",
+        "G"
+      ],
+      "progression": "C - D - Am - G",
+      "notes": [
+        "Tempo shifts to 120 BPM when the full band enters",
+        "Gentle strumming pattern using mostly downstrokes with light upstroke fills",
+        "Am chord held slightly longer for emotional emphasis",
+        "Lead guitar adds subtle fills between vocal lines on Stratocaster"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "2:15-3:15",
+      "technique": "Emotional Strumming / Pentatonic Lead Fills",
+      "key": "G Major",
+      "description": "The emotional peak of the song where the signature lyric arrives, with fuller strumming intensity and the D/F# bass walk creating a powerful harmonic journey",
+      "chords": [
+        "C",
+        "D",
+        "Am",
+        "G",
+        "D/F#",
+        "Em",
+        "A7sus4"
+      ],
+      "progression": "C - D - Am - G - D/F# - Em - G - Em - A7sus4 - G",
+      "notes": [
+        "Strumming intensity increases subtly for the chorus sections",
+        "D/F# creates a smooth chromatic bass walk from G down to Em",
+        "Lead guitar provides answering phrases to the vocal melody",
+        "The A7sus4 at the end creates beautiful unresolved tension before resolving to G"
+      ],
+      "alphaTab": "6.1 3.1 6.2 3.2 | 5.3 3.3 5.4 3.4 | 3.3 5.3 3.2 6.2 | 6.1 3.1 3.2 6.2 |",
+      "exerciseLabel": "Major Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:15-4:20",
+      "technique": "Pentatonic Lead Fills",
+      "key": "G Major / E minor",
+      "description": "Extended guitar solo using E minor and G major pentatonic scales with expressive bending, vibrato, and the signature David Gilmour sustain over the verse and chorus chord progression",
+      "chords": [
+        "C",
+        "D",
+        "Am",
+        "G"
+      ],
+      "progression": "C - D - Am - G (repeated)",
+      "notes": [
+        "Solo played on Stratocaster neck pickup with light overdrive",
+        "Emphasizes melody and emotion over technical flash",
+        "Whole-step bends on B string for the signature Gilmour cry",
+        "Wide vibrato on sustained notes - use wrist vibrato, not finger vibrato",
+        "Builds intensity gradually, mirroring the song's emotional arc"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Martin D-28 acoustic guitar",
+      "alternatives": [
+        "Martin D-18",
+        "Taylor 314ce",
+        "Any quality dreadnought acoustic with spruce top"
+      ],
+      "pickup": "Acoustic for rhythm; Fender Stratocaster with single-coils for lead fills and solo"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (for electric sections)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Hiwatt DR103",
+        "Any clean Fender-style amp with good headroom"
+      ],
+      "settings": {
+        "gain": "3-4 (clean to edge-of-breakup)",
+        "treble": "6 (warm but present)",
+        "middle": "5 (balanced mids)",
+        "bass": "5 (full but not boomy)",
+        "presence": "5 (natural, not scooped)"
+      }
+    },
+    "effects": {
+      "distortion": "None for acoustic parts; very light overdrive for electric lead fills",
+      "delay": "Subtle analog-style delay for the solo sections",
+      "reverb": "Medium spring or hall reverb for spacious Pink Floyd atmosphere",
+      "other": "Intro uses a radio EQ effect (band-pass filter) on first guitar; clean tone for second guitar entering"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the open chord shapes and basic strumming pattern",
+      "steps": [
+        "Master open G, C, D, Am, and Em7 chord shapes",
+        "Practice transitioning between G and Em7 smoothly",
+        "Learn the A7sus4 voicing (X-0-2-0-3-0)",
+        "Work on basic down-up strumming at 120 BPM for the verse"
+      ],
+      "timeEstimate": "2-4 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Develop the intro pattern and add lead fills between chords",
+      "steps": [
+        "Learn the complete intro chord progression with correct rhythm",
+        "Add pentatonic fills between Em7 and G changes",
+        "Practice dynamic control: soft verses building to fuller choruses",
+        "Work on the D/F# voicing and bass walk-down in the chorus"
+      ],
+      "timeEstimate": "4-6 weeks for complete rhythm and fill performance"
+    },
+    "advanced": {
+      "focus": "Master the guitar solo and achieve authentic tone and feel",
+      "steps": [
+        "Learn the guitar solo note-for-note with proper bending and vibrato",
+        "Practice expressive bending: whole-step bends reaching exact pitch",
+        "Develop Gilmour-style wide wrist vibrato on sustained notes",
+        "Combine acoustic rhythm playing with electric lead seamlessly"
+      ],
+      "timeEstimate": "6-8 weeks for full song mastery with solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the intro too rigidly - it should feel conversational and relaxed",
+      "Strumming too hard during the verses, losing the intimate dynamic",
+      "Rushing the tempo change from 62 BPM intro to 120 BPM main section",
+      "Overbending notes in the solo section - pitch accuracy is critical for Gilmour's style",
+      "Not letting chords ring and sustain naturally between changes"
+    ],
+    "practiceRoutine": [
+      "Warm up with open chord transitions: G-Em7-A7sus4-G for 5 minutes",
+      "Practice the intro pattern at slow tempo, focusing on letting strings ring",
+      "Work verse strumming with metronome at 120 BPM for 10 minutes",
+      "Practice lead fills in isolation, then insert them into the chord progression",
+      "Run through the complete song focusing on dynamic arc from soft to full"
+    ],
+    "focusAreas": [
+      "Dynamic control: playing softly with conviction and control",
+      "Open chord voicing clarity and sustained ringing",
+      "Smooth tempo transition from intro to main section",
+      "Expressive bending and vibrato for lead fills",
+      "Emotional expression through touch dynamics and timing"
+    ],
+    "metronomeWork": [
+      "Practice intro at 62 BPM with emphasis on relaxed feel",
+      "Verse strumming at 120 BPM with quarter-note pulse",
+      "Chord transitions at 80 BPM, building to 120 BPM",
+      "Solo phrasing at 100 BPM, focusing on rhythmic accuracy of bends"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Comfortably Numb",
+        "difficulty": "Advanced",
+        "similarity": "Signature Gilmour lead tone and emotional pentatonic soloing over simple progressions"
+      },
+      {
+        "title": "Time",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic-to-electric dynamic arc with similar open chord voicings and expressive lead work"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Open G-C-D chord foundation with pentatonic lead fills between chord changes"
+      },
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Advanced",
+        "similarity": "Clean Stratocaster tone with emotional melodic phrasing and dynamic expression"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Hurt So Good",
+        "artist": "John Mellencamp",
+        "difficulty": "Beginner",
+        "similarity": "Simple open chord progression in major key, good foundation before tackling Wish You Were Here"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic intro pattern leading into chord-based song structure with lead embellishments"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "acoustic",
+      "progressive-rock",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

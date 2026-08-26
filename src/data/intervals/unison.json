@@ -1,0 +1,310 @@
+{
+  "slug": "unison",
+  "intervalInfo": {
+    "name": "Unison Interval",
+    "pageTitle": "Unison Interval",
+    "subtitle": "The foundation of musical pitch - where two voices share the exact same note, creating perfect unity and reinforcement in musical harmony.",
+    "colorScheme": "indigo",
+    "heroGradient": "bg-gradient-to-r from-indigo-600 to-purple-700",
+    "tags": ["0 Semitones", "Perfect Unity", "Foundation of Pitch", "Harmonic Reinforcement"]
+  },
+  "theory": {
+    "propertiesTitle": "What is Unison?",
+    "properties": [
+      { "label": "Definition", "value": "Two or more notes of identical pitch" },
+      { "label": "Distance", "value": "0 semitones (no interval)" },
+      { "label": "Quality", "value": "Perfect unison" },
+      { "label": "Sound", "value": "Pure, reinforced, unified" },
+      { "label": "Function", "value": "Reinforcement, doubling, texture" }
+    ],
+    "examplesTitle": "Musical Applications",
+    "examples": [
+      { "label": "Orchestration", "value": "Doubling parts for volume and richness" },
+      { "label": "Guitar", "value": "Playing same notes on different strings" },
+      { "label": "Vocals", "value": "Choir sections singing in unison" },
+      { "label": "Production", "value": "Layering identical parts for thickness" }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Same Pitch, Different Timbres",
+      "description": "The guitar's tuning allows you to play the same pitch on multiple strings, creating unison intervals with different timbres and fingering options.",
+      "examples": [
+        {
+          "title": "E Note Unisons",
+          "subtitle": "Same E note on different strings",
+          "chord1": "E_1st_open",
+          "chord1Label": "E (1st string open)",
+          "chord2": "E_2nd_5th",
+          "chord2Label": "E (2nd string 5th fret)",
+          "alphaTex": "4.1{w} 4.1{w}",
+          "alphaTexTitle": "E Note Unison",
+          "caption": "Different timbres, same pitch",
+          "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+          "colorBorder": "border border-indigo-200",
+          "colorTitle": "text-indigo-800",
+          "colorSubtitle": "text-indigo-700",
+          "colorCaption": "text-indigo-600"
+        },
+        {
+          "title": "A Note Unisons",
+          "subtitle": "Concert A (440 Hz) locations",
+          "chord1": "A_5th_open",
+          "chord1Label": "A (5th string open)",
+          "chord2": "A_1st_5th",
+          "chord2Label": "A (1st string 5th fret)",
+          "alphaTex": "2.1{w} 4.1{w}",
+          "alphaTexTitle": "A Note Unison",
+          "caption": "Reference pitch standard",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorSubtitle": "text-purple-700",
+          "colorCaption": "text-purple-600"
+        },
+        {
+          "title": "D Note Unisons",
+          "subtitle": "Common fingering options",
+          "chord1": "D_4th_open",
+          "chord1Label": "D (4th string open)",
+          "chord2": "D_3rd_7th",
+          "chord2Label": "D (3rd string 7th fret)",
+          "alphaTex": "3.1{w} 4.1{w}",
+          "alphaTexTitle": "D Note Unison",
+          "caption": "Flexible positioning",
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorSubtitle": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Technical Applications & Techniques",
+      "items": []
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Timbral Characteristics",
+        "subtitle": "String Thickness Effects",
+        "alphaTex": "4.1{h} 4.1{h} | 2.1{h} 4.1{h}",
+        "alphaTexTitle": "String Thickness Timbral Differences",
+        "alphaTexCaption": "Same pitch, different timbres from string thickness",
+        "bullets": [
+          "Thicker strings: Warmer, fuller tone",
+          "Thinner strings: Brighter, more focused tone",
+          "Fretted vs open: Sustain and harmonic differences"
+        ],
+        "colorBg": "bg-gradient-to-br from-green-50 to-green-100",
+        "colorBorder": "border border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700",
+        "colorCaption": "text-green-600"
+      },
+      {
+        "title": "Musical Applications",
+        "subtitle": "Melodic Doubling",
+        "alphaTex": "4.1{q} 4.2{q} 4.3{q} 4.4{q} | 5.1{q} 5.2{q} 5.3{q} 5.4{q}",
+        "alphaTexTitle": "Melodic Doubling - Unison Across Octaves",
+        "alphaTexCaption": "Same melody in unison across octaves",
+        "bullets": [
+          "Lead doubling: Thicker melodic lines",
+          "Harmonic reinforcement: Stronger presence",
+          "Orchestral effects: Section unisons"
+        ],
+        "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+        "colorBorder": "border border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-700",
+        "colorCaption": "text-orange-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "Beethoven's 9th Symphony",
+        "description": "\"Ode to Joy\" unison opening",
+        "detail": "Powerful unison melody creates unified expression"
+      },
+      {
+        "title": "Bach's Brandenburg Concertos",
+        "description": "Instrumental doubling",
+        "detail": "Multiple instruments reinforcing melodic lines"
+      },
+      {
+        "title": "Mozart's Piano Sonatas",
+        "description": "Octave unisons",
+        "detail": "Hands playing in unison for emphasis"
+      },
+      {
+        "title": "Vivaldi's \"Four Seasons\"",
+        "description": "String section unisons",
+        "detail": "Entire string sections playing the same melody"
+      }
+    ],
+    "popular": [
+      {
+        "title": "Queen - \"We Are The Champions\"",
+        "description": "Choir unisons",
+        "detail": "Multiple voices singing in powerful unison"
+      },
+      {
+        "title": "The Beatles",
+        "description": "Vocal doubling techniques",
+        "detail": "Pioneered studio vocal doubling for thickness"
+      },
+      {
+        "title": "Led Zeppelin",
+        "description": "Guitar/bass unison riffs",
+        "detail": "Guitar and bass playing identical riff lines"
+      },
+      {
+        "title": "Pink Floyd",
+        "description": "Atmospheric unison textures",
+        "detail": "Layered instruments creating unified soundscapes"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Compare unison notes on different strings",
+        "Listen for timbral differences in unisons",
+        "Practice identifying perfect unisons",
+        "Train ear for slight tuning variations",
+        "Study harmonic reinforcement effects"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Master unison positions across strings",
+        "Practice smooth unison transitions",
+        "Work on consistent tone in unisons",
+        "Study unison scales and patterns",
+        "Develop unison fingering alternatives"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create melodies using unison doubling",
+        "Practice unison harmonization",
+        "Study classical unison techniques",
+        "Explore different unison timbres",
+        "Analyze unison usage in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Melodic Doubling",
+        "description": "Playing the same melody on different strings or in different octaves creates richness and allows for smooth voice leading. Technique uses parallel melodies in unison for thicker, more present melodic lines."
+      },
+      {
+        "title": "Harmonic Reinforcement",
+        "description": "Multiple instruments playing the same notes creates powerful reinforcement without adding harmonic complexity. Increases volume and presence in choir unisons and guitar/bass doubling."
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Guitar Techniques",
+        "description": "Octave doubling for fuller sound, string bending to reach unison pitches, harmonics creating natural unison overtones, slide techniques for smooth unison transitions, and different fingering positions for the same note."
+      },
+      {
+        "title": "Ensemble and Production",
+        "description": "From choir sections and orchestral doubling to modern track layering, stereo doubling, and dynamic emphasis techniques, unison has been a foundational tool for harmonic clarity and mix density throughout music history."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Guitar Techniques",
+      "description": "Octave doubling, string bending, harmonics, and slide techniques",
+      "detail": "Different positions and techniques for achieving unison on guitar",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Ensemble Playing",
+      "description": "Choir sections, orchestral doubling, band arrangement layering",
+      "detail": "Vocal harmony foundations built on unison technique",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700",
+      "colorDetail": "text-orange-600"
+    },
+    {
+      "title": "Studio Production",
+      "description": "Double-tracking, layering for thickness, creating stereo width",
+      "detail": "Phase relationships and modern production unison techniques",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "From perfect unity, explore the intervals that add tension, movement, and harmony to music.",
+    "links": [
+      {
+        "slug": "minor-2nd",
+        "title": "Minor 2nd",
+        "description": "Take the first step - explore the tightest, most dissonant interval.",
+        "actionText": "Feel the tension",
+        "icon": "grimace",
+        "colorBg": "bg-red-100",
+        "colorBgHover": "group-hover:bg-red-200",
+        "colorBorder": "hover:border-red-300",
+        "colorText": "text-red-600",
+        "colorTextHover": "group-hover:text-red-700"
+      },
+      {
+        "slug": "major-2nd",
+        "title": "Major 2nd",
+        "description": "The foundation of scales - discover how melodies move step by step.",
+        "actionText": "Start moving",
+        "icon": "walking",
+        "colorBg": "bg-orange-100",
+        "colorBgHover": "group-hover:bg-orange-200",
+        "colorBorder": "hover:border-orange-300",
+        "colorText": "text-orange-600",
+        "colorTextHover": "group-hover:text-orange-700"
+      },
+      {
+        "slug": "octave",
+        "title": "Octave",
+        "description": "Return to unity - the same note in a different register completes the circle.",
+        "actionText": "Complete the cycle",
+        "icon": "cycle",
+        "colorBg": "bg-purple-100",
+        "colorBgHover": "group-hover:bg-purple-200",
+        "colorBorder": "hover:border-purple-300",
+        "colorText": "text-purple-600",
+        "colorTextHover": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

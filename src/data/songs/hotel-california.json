@@ -1,0 +1,499 @@
+{
+  "songInfo": {
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "released": "1977",
+    "genre": "Classic Rock",
+    "tempo": "75 BPM",
+    "duration": "6:30",
+    "key": "B minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B minor",
+      "scalesUsed": [
+        {
+          "scale": "B natural minor",
+          "notes": "B - C# - D - E - F# - G - A - B",
+          "application": "Primary harmonic foundation for chord progressions and arpeggiated intro"
+        },
+        {
+          "scale": "B harmonic minor",
+          "notes": "B - C# - D - E - F# - G - A# - B",
+          "application": "Used to create the F# major chord (V) with the raised 7th degree, giving the progression its distinctive Spanish-flavored tension"
+        },
+        {
+          "scale": "B minor pentatonic",
+          "notes": "B - D - E - F# - A",
+          "application": "Lead guitar solos, fills, and the dual harmony guitar solo section"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with Harmonic Minor inflections",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor (is the primary key)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Bm",
+          "F#",
+          "A",
+          "E",
+          "G",
+          "D",
+          "Em",
+          "F#"
+        ],
+        "progression": "i - V - VII - IV - VI - III - iv - V",
+        "description": "Iconic 8-chord progression cycling through diatonic chords in B minor with the major V chord (F#) borrowed from harmonic minor, creating a haunting descending bass line feel"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro/Verse",
+          "progression": "Bm - F# - A - E - G - D - Em - F#",
+          "romanNumerals": "i - V - VII - IV - VI - III - iv - V",
+          "description": "Full 8-chord progression played as arpeggios in the intro and strummed during verses"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - D - F# - Bm - G - D - Em - F#",
+          "romanNumerals": "VI - III - V - i - VI - III - iv - V",
+          "description": "Reordered version of the verse chords starting on G, building intensity toward the resolution"
+        },
+        {
+          "section": "Solo",
+          "progression": "Bm - F# - A - E - G - D - Em - F#",
+          "romanNumerals": "i - V - VII - IV - VI - III - iv - V",
+          "description": "Same verse progression providing harmonic backdrop for the dual guitar harmony solo"
+        }
+      ],
+      "harmonicFunction": [
+        "Bm (i) - Tonic chord establishing the dark minor key center",
+        "F# (V) - Major dominant chord borrowed from B harmonic minor, provides strong resolution tendency",
+        "A (VII) - Subtonic chord creating smooth stepwise motion from the tonic",
+        "E (IV) - Subdominant providing harmonic movement and tension",
+        "G (VI) - Submediant adding brightness and contrast within the minor key",
+        "D (III) - Mediant serving as relative major, creating a sense of lift",
+        "Em (iv) - Minor subdominant adding depth before resolving to V",
+        "The progression creates a descending chromatic Walking bass line pattern"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "12-String Acoustic Arpeggios",
+      "description": "The iconic intro and verse pattern played on a 12-string acoustic guitar, using fingerpicked arpeggios to outline each chord in the progression with a shimmering, full-bodied sound",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bm: X-2-4-4-3-2 (Barre chord at 2nd fret)",
+          "F#: 2-4-4-3-2-2 (Barre chord at 2nd fret)",
+          "A: X-0-2-2-2-0 (Open A major)",
+          "E: 0-2-2-1-0-0 (Open E major)",
+          "Each chord is arpeggiated with a specific picking pattern rather than strummed",
+          "The 12-string doubles each note an octave higher for the signature shimmering sound",
+          "Thumb handles bass notes while fingers pick upper strings in sequence"
+        ],
+        "sequence": [
+          "Play bass note of each chord with thumb",
+          "Pick through upper strings in ascending pattern",
+          "Maintain steady eighth-note pulse at 75 BPM",
+          "Transition smoothly between chord shapes while arpeggios ring"
+        ],
+        "tips": [
+          "Practice on a 6-string first to get the fingerpicking pattern down before moving to 12-string",
+          "Focus on letting each note ring cleanly into the next",
+          "Use a thumb pick or fingerpicks for clarity on a 12-string",
+          "Keep fretting hand close to frets for clean barre chord voicings"
+        ],
+        "chords": [
+          "Bm",
+          "F#",
+          "A",
+          "E",
+          "G",
+          "D",
+          "Em"
+        ],
+        "progression": "Bm - F# - A - E - G - D - Em - F# (arpeggiated)"
+      }
+    },
+    {
+      "name": "Dual Guitar Harmony Solo",
+      "description": "One of the most celebrated guitar solos in rock history, featuring two electric guitars playing harmonized lead lines in thirds and sixths over the verse progression, building from lyrical phrases to blazing runs",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Two guitar parts harmonized primarily in diatonic thirds within B minor",
+          "Guitar 1 plays the higher melody line while Guitar 2 plays a harmonized lower part",
+          "Uses B natural minor, B harmonic minor, and B minor pentatonic scales",
+          "Features string bending, vibrato, legato runs, and position shifts across the fretboard",
+          "The solo builds in intensity from melodic phrases to faster scale runs"
+        ],
+        "sequence": [
+          "First section: lyrical melodic phrases with bends and vibrato around 7th-10th frets",
+          "Second section: harmonized ascending runs building intensity",
+          "Third section: faster scale runs and climactic phrases around 12th-15th frets",
+          "Final section: both guitars converge on unison bends for the dramatic conclusion"
+        ],
+        "tips": [
+          "Learn each guitar part separately before attempting to play along with the recording",
+          "Focus on matching the phrasing and vibrato style of the original",
+          "Practice the harmony intervals in isolation to understand the third/sixth relationships",
+          "Use a metronome at slower tempos to nail the rhythmic precision of the harmonized runs"
+        ],
+        "chords": [
+          "Bm",
+          "F#",
+          "A",
+          "E",
+          "G",
+          "D",
+          "Em"
+        ],
+        "progression": "Over Bm - F# - A - E - G - D - Em - F# progression"
+      }
+    },
+    {
+      "name": "Chord Arpeggiation and Fingerpicking",
+      "description": "Clean fingerpicking technique used throughout the song to arpeggiate full chord voicings, creating a flowing harmonic tapestry beneath the vocal melody",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "G: 3-2-0-0-3-3 (Open G with fingers on low E and high E strings)",
+          "D: X-X-0-2-3-2 (Open D major)",
+          "Em: 0-2-2-0-0-0 (Open Em)",
+          "Use thumb (p) for bass strings 6-4 and index (i), middle (m), ring (a) for strings 3-1",
+          "Maintain consistent dynamics across all picked strings"
+        ],
+        "sequence": [
+          "Anchor thumb on bass string of each chord",
+          "Pick strings 3, 2, 1 in ascending order with i, m, a fingers",
+          "Return to bass note to begin next beat",
+          "Keep a steady pulse while allowing notes to sustain and overlap"
+        ],
+        "tips": [
+          "Practice the picking pattern on a single chord before adding changes",
+          "Keep fingernails trimmed and shaped for consistent tone",
+          "Focus on even volume between thumb bass notes and finger-picked treble notes",
+          "Let notes ring as long as possible for the full arpeggiated effect"
+        ],
+        "chords": [
+          "Bm",
+          "F#",
+          "A",
+          "E",
+          "G",
+          "D",
+          "Em"
+        ],
+        "progression": "Bm - F# - A - E - G - D - Em - F#"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-1:00",
+      "technique": "12-String Acoustic Arpeggios",
+      "key": "B minor",
+      "description": "The iconic 12-string acoustic intro playing arpeggiated chords through the full 8-chord progression, establishing the haunting atmosphere of the song",
+      "chords": [
+        "Bm",
+        "F#",
+        "A",
+        "E",
+        "G",
+        "D",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - F# - A - E - G - D - Em - F#",
+      "notes": [
+        "12-string acoustic guitar carries the entire intro",
+        "Each chord arpeggiated with a consistent fingerpicking pattern",
+        "Bass line descends chromatically: B - A# - A - G# - G - F# - E - F#",
+        "Two full cycles of the progression before vocals enter"
+      ],
+      "alphaTab": "7.5 7.4 9.3 7.2 9.3 7.4 | 7.5 9.4 9.3 7.2 9.3 9.4 | 12.5 12.4 14.3 12.2 14.3 12.4 | 7.5 7.4 9.3 7.2 9.3 7.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "1:00-2:15",
+      "technique": "Chord Arpeggiation and Fingerpicking",
+      "key": "B minor",
+      "description": "Verse sections continue the arpeggiated pattern beneath the vocal melody, with subtle variations and a second guitar adding light accompaniment",
+      "chords": [
+        "Bm",
+        "F#",
+        "A",
+        "E",
+        "G",
+        "D",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - F# - A - E - G - D - Em - F#",
+      "notes": [
+        "Same chord progression as the intro with arpeggiated accompaniment",
+        "Dynamics stay controlled to support the vocal melody",
+        "Second guitar may add subtle chord stabs or fills",
+        "Maintain even tempo at 75 BPM throughout"
+      ],
+      "alphaTab": "7.5 7.4 9.3 7.2 9.3 7.4 | 7.5 9.4 9.3 7.2 9.3 9.4 | 12.5 12.4 14.3 12.2 14.3 12.4 | 7.5 7.4 9.3 7.2 9.3 7.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "2:15-3:00",
+      "technique": "Chord Arpeggiation and Fingerpicking",
+      "key": "B minor",
+      "description": "The chorus reorders the progression starting on G major, with fuller strumming and increased dynamics as the song builds intensity",
+      "chords": [
+        "G",
+        "D",
+        "F#",
+        "Bm",
+        "G",
+        "D",
+        "Em",
+        "F#"
+      ],
+      "progression": "G - D - F# - Bm - G - D - Em - F#",
+      "notes": [
+        "Progression starts on G (VI) rather than Bm for a brighter, more open feel",
+        "Strumming becomes fuller compared to verse arpeggios",
+        "Dynamic lift signals the chorus energy shift",
+        "Vocal harmonies layer over the chord progression"
+      ],
+      "alphaTab": "7.5 7.4 9.3 7.2 9.3 7.4 | 7.5 9.4 9.3 7.2 9.3 9.4 | 12.5 12.4 14.3 12.2 14.3 12.4 | 7.5 7.4 9.3 7.2 9.3 7.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "4:20-6:00",
+      "technique": "Dual Guitar Harmony Solo",
+      "key": "B minor",
+      "description": "One of the greatest guitar solos in rock history, featuring Don Felder and Joe Walsh trading harmonized lead lines over the verse progression, building from melodic phrases to intense dual-guitar harmonies",
+      "chords": [
+        "Bm",
+        "F#",
+        "A",
+        "E",
+        "G",
+        "D",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - F# - A - E - G - D - Em - F# (repeating)",
+      "notes": [
+        "Solo begins with melodic phrases primarily in B minor pentatonic",
+        "Dual harmonies enter in diatonic thirds within B natural minor",
+        "Builds from lyrical phrasing to faster scalar runs",
+        "Features bending, vibrato, legato, and position shifts across the neck",
+        "Considered one of the greatest guitar solos of all time"
+      ],
+      "alphaTab": "7.6 10.6 7.5 9.5 7.4 9.4 | 7.3 9.3 7.2 10.2 7.1 10.1 | 10.1 7.1 10.2 7.2 9.3 7.3 | 9.4 7.4 9.5 7.5 10.6 7.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "6:00-6:30",
+      "technique": "Dual Guitar Harmony Solo",
+      "key": "B minor",
+      "description": "The song concludes with the dual guitar harmonies continuing over the repeating progression, fading out as the solo intensifies",
+      "chords": [
+        "Bm",
+        "F#",
+        "A",
+        "E",
+        "G",
+        "D",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - F# - A - E - G - D - Em - F# (repeating to fade)",
+      "notes": [
+        "Continuation of the dual harmony solo section",
+        "Intensifying guitar lines as the song fades",
+        "No definitive ending - the music fades out while the solo continues",
+        "Both guitars trade and harmonize increasingly complex lines"
+      ],
+      "alphaTab": "10.1 7.1 10.2 7.2 | 9.3 7.3 9.4 7.4 | 7.3 9.3 7.2 10.2 | 10.1 7.1 7.2 10.2 |",
+      "exerciseLabel": "Minor Pentatonic Lick Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Takamine 12-string acoustic (intro/verses) + Gibson Les Paul (solo)",
+      "alternatives": [
+        "Taylor 12-string acoustic",
+        "Any quality 12-string acoustic for intro",
+        "Fender Stratocaster or Gibson SG for electric parts",
+        "6-string acoustic can approximate the intro with capo techniques"
+      ],
+      "pickup": "Humbuckers for electric parts, piezo or condenser mic for acoustic"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC30",
+        "Roland JC-120"
+      ],
+      "settings": {
+        "gain": "4/10 (clean to light breakup)",
+        "treble": "6/10",
+        "middle": "5/10",
+        "bass": "5/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "None to light overdrive for solo sections",
+      "reverb": "Medium spring or hall reverb for ambience",
+      "other": "Light chorus for shimmer on clean parts, slight delay for solo sustain"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with Hotel California",
+      "steps": [
+        "Learn the basic open chord shapes: A, E, G, D, Em",
+        "Practice the Bm and F# barre chord shapes",
+        "Work on simple fingerpicking patterns on a single chord",
+        "Practice transitioning between the 8 chords in sequence slowly"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "intermediate": {
+      "title": "Building the Arpeggiated Foundation",
+      "steps": [
+        "Master the full arpeggiated intro pattern at slow tempo",
+        "Learn the verse and chorus chord progressions with proper voicings",
+        "Practice fingerpicking patterns with a metronome at 50-60 BPM",
+        "Build speed gradually toward the 75 BPM target tempo",
+        "Work on smooth barre chord transitions throughout the progression"
+      ],
+      "timeEstimate": "8-12 weeks"
+    },
+    "advanced": {
+      "title": "Mastering the Solo and Full Performance",
+      "steps": [
+        "Learn the lead guitar solo melody line note for note",
+        "Practice the harmony guitar part separately",
+        "Work on dual harmony intervals and phrasing",
+        "Develop bending, vibrato, and legato techniques for solo authenticity",
+        "Combine all sections for a complete performance"
+      ],
+      "timeEstimate": "12-20 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the arpeggiated intro - maintain the slow 75 BPM tempo",
+      "Sloppy barre chord shapes causing buzzing or muted strings",
+      "Not letting arpeggiated notes ring into each other for the flowing sound",
+      "Ignoring the harmonic minor inflection on the F# chord (should feel distinctly major)",
+      "Playing the solo too fast without capturing the melodic phrasing"
+    ],
+    "practiceRoutine": [
+      "Warm up with Bm and F# barre chord transitions for 5 minutes",
+      "Practice the full 8-chord arpeggio pattern at 50 BPM for 10 minutes",
+      "Work on the chord progression with a metronome, increasing 5 BPM each session",
+      "Practice solo phrases in short 4-bar segments at slow tempo",
+      "Play along with the original recording once comfortable at full speed"
+    ],
+    "focusAreas": [
+      "Clean barre chord voicings across all 8 chords",
+      "Consistent fingerpicking pattern with even dynamics",
+      "Smooth chord transitions without gaps in the arpeggiated flow",
+      "Accurate pitch on string bends during the solo",
+      "Understanding the harmonic minor V chord relationship"
+    ],
+    "metronomeWork": [
+      "Start arpeggios at 50 BPM and increase by 5 BPM per session",
+      "Target tempo is 75 BPM - do not exceed this",
+      "Practice chord changes on beats 1 and 3 at half tempo first",
+      "Use subdivision clicks (eighth notes) to ensure even arpeggio timing",
+      "Work solo phrases at 40-50 BPM before building to song tempo"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Take It Easy",
+        "difficulty": "Intermediate",
+        "similarity": "Similar acoustic fingerpicking approach and classic Eagles chord progressions"
+      },
+      {
+        "title": "Life in the Fast Lane",
+        "difficulty": "Advanced",
+        "similarity": "Features another iconic Eagles guitar riff with more aggressive electric tone"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "technique": "Arpeggiated intro building to electric solo",
+        "similarity": "Similar structure of fingerpicked acoustic intro building to an epic electric guitar solo"
+      },
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "technique": "Acoustic fingerpicking and melodic lead",
+        "similarity": "Clean acoustic guitar work with melodic lead playing and emotional depth"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "technique": "Extended guitar solo with bending and vibrato",
+        "similarity": "Another legendary extended guitar solo emphasizing melody and emotion over speed"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Simpler fingerpicking to build foundational skills"
+      },
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Similar challenge level with arpeggiated intro and epic solo"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "advanced",
+      "fingerpicking",
+      "guitar-solo",
+      "dual-harmony"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 months"
+  }
+}

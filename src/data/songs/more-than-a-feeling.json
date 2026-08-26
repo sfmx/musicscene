@@ -1,0 +1,454 @@
+{
+  "songInfo": {
+    "title": "More Than a Feeling",
+    "artist": "Boston",
+    "album": "Boston",
+    "released": "1976",
+    "genre": "Classic Rock / Arena Rock",
+    "tempo": "110 BPM",
+    "duration": "4:44",
+    "key": "D major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major",
+      "scalesUsed": [
+        {
+          "scale": "D major scale",
+          "notes": "D - E - F# - G - A - B - C# - D",
+          "application": "Foundation for the arpeggiated intro and chord progressions"
+        },
+        {
+          "scale": "D major pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Lead guitar melodies and harmonized guitar lines"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "Cadd9",
+          "G/B",
+          "G"
+        ],
+        "progression": "I - bVII(add9) - IV/x - IV",
+        "description": "The iconic arpeggiated intro progression using open chord voicings with added color tones and bass line movement"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (Arpeggiated)",
+          "progression": "D - Dsus4 - D - Cadd9 - G/B - G",
+          "romanNumerals": "I - Isus4 - I - bVII(add9) - IV/x - IV",
+          "description": "The famous arpeggiated acoustic intro with sus4 embellishments and a descending bass line"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - A - G - D",
+          "romanNumerals": "I - V - IV - I",
+          "description": "Standard rock verse progression providing harmonic movement under the vocal"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - A - D - G - A - D",
+          "romanNumerals": "IV - V - I - IV - V - I",
+          "description": "Anthemic chorus progression with IV-V-I resolution creating uplifting energy"
+        },
+        {
+          "section": "Guitar Interlude",
+          "progression": "Am - G - D - Am - G - D",
+          "romanNumerals": "v - IV - I - v - IV - I",
+          "description": "Harmonized guitar lead section over minor-to-major chord movement"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Strong tonic center in D major throughout the song",
+        "Cadd9 (bVII) - Flattened seventh with added 9th for color in the intro",
+        "G (IV) - Subdominant providing warm harmonic resolution",
+        "A (V) - Dominant creating forward momentum in verse and chorus",
+        "Am (v) - Minor dominant used in the guitar interlude for darker color",
+        "G/B - Slash chord creating smooth bass line movement in the intro"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Arpeggiated Chord Picking",
+      "description": "The iconic fingerpicked/hybrid-picked intro using open chord voicings with sustained bass notes and arpeggiated patterns that define the song's identity",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D chord: X-X-0-2-3-2 with arpeggiated picking across strings",
+          "Dsus4: X-X-0-2-3-3 adding the sus4 embellishment",
+          "Cadd9: X-3-2-0-3-0 open voicing with the added 9th",
+          "G/B: X-2-0-0-3-3 providing the descending bass line",
+          "Each chord is picked string by string, not strummed",
+          "Let notes ring into each other for a shimmering effect"
+        ],
+        "sequence": [
+          "Pick the bass note of each chord first with the thumb or pick",
+          "Arpeggiate upward through the chord tones on higher strings",
+          "Allow strings to ring openly for maximum sustain",
+          "Transition to the next chord while letting the previous notes decay"
+        ],
+        "tips": [
+          "Use a clean guitar tone with slight chorus for the intro arpeggio",
+          "Practice each chord change slowly to ensure smooth bass note transitions",
+          "Focus on even timing between each picked note in the arpeggio",
+          "A hybrid picking approach (pick + fingers) can make the pattern easier"
+        ],
+        "chords": [
+          "D",
+          "Dsus4",
+          "Cadd9",
+          "G/B",
+          "G"
+        ],
+        "progression": "D - Dsus4 - D - Cadd9 - G/B - G"
+      }
+    },
+    {
+      "name": "Power Chord Rhythm with Dynamic Shifts",
+      "description": "Transitions from the clean arpeggiated intro to full distorted power chord rhythm, creating the signature clean-to-distorted dynamic that defines the song's arrangement",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D5: X-5-7-7-X-X or open D power chord voicing",
+          "A5: X-0-2-2-X-X (open A string power chord)",
+          "G5: 3-5-5-X-X-X (barre power chord)",
+          "The verse and chorus shift to full power chord strumming",
+          "Heavy sustain and compression characterize the distorted sections"
+        ],
+        "sequence": [
+          "Begin with clean arpeggiated intro tone",
+          "Switch to distorted/overdriven channel for the verse entry",
+          "Use strong downstrokes for power chord rhythm sections",
+          "Maintain consistent strumming power through verse and chorus"
+        ],
+        "tips": [
+          "The transition from clean to distorted must be seamless - practice the switch",
+          "Tom Scholz used heavy compression for sustain - simulate with a compressor pedal",
+          "Power chords should ring fully without excessive palm muting",
+          "Match the energy increase from clean intro to full band sections"
+        ],
+        "chords": [
+          "D5",
+          "A5",
+          "G5"
+        ],
+        "progression": "D - A - G verse / G - A - D chorus"
+      }
+    },
+    {
+      "name": "Harmonized Lead Guitar",
+      "description": "Dual harmonized guitar leads using major thirds and octaves, a signature Tom Scholz technique that creates the layered Boston guitar sound",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Lead lines are harmonized in thirds (two guitars playing the same melody a third apart)",
+          "Uses D major scale for the harmonized passages",
+          "The guitar interlude section features the most prominent harmonized leads",
+          "Requires precise intonation from both guitar parts to sound correct"
+        ],
+        "sequence": [
+          "Learn the primary melody line in D major pentatonic",
+          "Learn the harmony part a third above the primary melody",
+          "Practice each part separately before combining",
+          "Use delay and reverb to create the layered studio sound"
+        ],
+        "tips": [
+          "If playing solo, focus on the primary melody line first",
+          "Use a looper pedal to practice both parts together",
+          "Heavy sustain and compression are key to replicating the Scholz tone",
+          "Precision is more important than speed in harmonized parts"
+        ],
+        "chords": [
+          "Am",
+          "G",
+          "D"
+        ],
+        "progression": "Am - G - D harmonized guitar section"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Arpeggiated)",
+      "timeStamp": "0:00-0:25",
+      "technique": "Arpeggiated Chord Picking",
+      "key": "D major",
+      "description": "The iconic clean arpeggiated intro that is one of rock's most recognizable and beloved guitar openings, featuring open chord voicings with a descending bass line",
+      "chords": [
+        "D",
+        "Dsus4",
+        "Cadd9",
+        "G/B",
+        "G"
+      ],
+      "progression": "D - Dsus4 - D - Cadd9 - G/B - G",
+      "notes": [
+        "Clean guitar tone with subtle chorus effect",
+        "Each note should ring clearly into the next",
+        "Descending bass line D - C - B - G creates smooth movement",
+        "This intro is played on acoustic or clean electric guitar"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:05",
+      "technique": "Power Chord Rhythm with Dynamic Shifts",
+      "key": "D major",
+      "description": "Verse section where the full band enters with distorted power chords, creating a dramatic dynamic shift from the clean intro",
+      "chords": [
+        "D",
+        "A",
+        "G"
+      ],
+      "progression": "D - A - G - D",
+      "notes": [
+        "Full band enters with distorted guitar tone",
+        "Strong downstroke rhythm on power chords",
+        "Dramatic dynamic increase from the clean intro",
+        "Sustain on each chord for the classic Boston fullness"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:05-1:40",
+      "technique": "Power Chord Rhythm with Dynamic Shifts",
+      "key": "D major",
+      "description": "Anthemic chorus section with the IV-V-I progression driving the uplifting the signature vocal hook",
+      "chords": [
+        "G",
+        "A",
+        "D"
+      ],
+      "progression": "G - A - D - G - A - D",
+      "notes": [
+        "Maximum energy with full chord strumming",
+        "IV-V-I progression creates the uplifting, anthemic feel",
+        "Let chords ring with full sustain for the arena rock sound",
+        "Vocal hook the iconic vocal hook is the emotional peak"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Interlude",
+      "timeStamp": "2:10-2:55",
+      "technique": "Harmonized Lead Guitar",
+      "key": "D major",
+      "description": "The harmonized dual-guitar lead section that showcases Tom Scholz's signature layered guitar approach with thirds harmony",
+      "chords": [
+        "Am",
+        "G",
+        "D"
+      ],
+      "progression": "Am - G - D - Am - G - D",
+      "notes": [
+        "Two guitars playing the same melody harmonized in thirds",
+        "Heavy sustain and compression for the classic Boston lead tone",
+        "Melody is built from D major pentatonic scale patterns",
+        "This section is a defining moment of the song and the Boston sound"
+      ],
+      "alphaTab": "10.6 12.6 9.5 12.5 9.4 12.4 | 9.3 11.3 10.2 12.2 10.1 12.1 | 12.1 10.1 12.2 10.2 11.3 9.3 | 12.4 9.4 12.5 9.5 12.6 10.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:50-4:44",
+      "technique": "Arpeggiated Chord Picking",
+      "key": "D major",
+      "description": "Returns to the arpeggiated intro pattern over the final chorus, creating a bookend effect as the song builds to its conclusion",
+      "chords": [
+        "D",
+        "Dsus4",
+        "Cadd9",
+        "G/B",
+        "G"
+      ],
+      "progression": "D - Dsus4 - D - Cadd9 - G/B - G (with full band)",
+      "notes": [
+        "Return of the arpeggiated intro figure over the full band arrangement",
+        "Vocal ad-libs over the combined arpeggio and band texture",
+        "Builds to final climax before resolving",
+        "Fade-out ending with the arpeggio pattern repeating"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard",
+      "alternatives": [
+        "Epiphone Les Paul",
+        "Gibson SG",
+        "PRS Custom 24"
+      ],
+      "pickup": "Humbuckers for lead/rhythm, possible acoustic or clean electric for intro"
+    },
+    "amp": {
+      "recommended": "Rockman (Tom Scholz custom preamp) or Marshall with heavy sustain",
+      "alternatives": [
+        "Marshall JCM800",
+        "Mesa/Boogie Mark V",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "6/10",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "7/10"
+      }
+    },
+    "effects": {
+      "distortion": "Rockman preamp or overdrive pedal with heavy compression for sustain",
+      "reverb": "Medium hall reverb for the spacious arena rock sound",
+      "other": "Chorus effect for clean intro, compressor pedal for sustained leads, stereo delay for width"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Getting Started with More Than a Feeling",
+      "steps": [
+        "Learn open D, C, G, Am, and A chord shapes",
+        "Practice basic arpeggiated picking across chord strings",
+        "Work on clean chord transitions at slow tempo",
+        "Master the Dsus4 embellishment on the D chord"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "intermediate": {
+      "title": "Mastering the Arpeggio and Power Chords",
+      "steps": [
+        "Play the complete arpeggiated intro at tempo (110 BPM)",
+        "Practice the clean-to-distorted transition for the verse entry",
+        "Learn power chord rhythm sections with proper dynamics",
+        "Work on chorus chord progression with full strumming energy"
+      ],
+      "timeEstimate": "4-8 weeks"
+    },
+    "advanced": {
+      "title": "Harmonized Leads and Complete Performance",
+      "steps": [
+        "Learn the harmonized guitar lead melody lines",
+        "Develop the compressed, sustained lead tone",
+        "Master dynamic shifts across all song sections",
+        "Perform the complete song with authentic tone and arrangement"
+      ],
+      "timeEstimate": "8-14 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Peace of Mind",
+        "difficulty": "Intermediate",
+        "similarity": "Similar arpeggiated intro and harmonized lead guitar approach"
+      },
+      {
+        "title": "Foreplay/Long Time",
+        "difficulty": "Advanced",
+        "similarity": "More complex Boston arrangement with similar tonal character"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "technique": "Arpeggiated Intro",
+        "similarity": "Another iconic arpeggiated guitar intro that builds to full rock arrangement"
+      },
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "technique": "Clean-to-Distorted Dynamic",
+        "similarity": "Similar clean fingerpicked intro building to full distorted climax"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "technique": "Arpeggiated Picking and Harmonized Leads",
+        "similarity": "Comparable arpeggiated picking and twin guitar harmonies"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "difficulty": "Beginner",
+        "similarity": "Simpler arpeggiated acoustic intro to build fingerpicking foundation"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Advanced",
+        "similarity": "More complex arpeggiated picking with dual harmonized guitar leads"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the arpeggiated intro - maintain even spacing between picked notes",
+      "Not letting notes ring sufficiently during the intro chord arpeggios",
+      "Sloppy transitions from the clean intro to the distorted verse sections",
+      "Under-sustaining power chords - the Boston sound requires long, full chord sustain"
+    ],
+    "practiceRoutine": [
+      "Warm up with D major scale arpeggios across open chord shapes",
+      "Practice the intro arpeggio pattern slowly with a metronome at 80 BPM",
+      "Work on clean-to-distorted channel switching with smooth transitions",
+      "Practice the harmonized lead melody at half speed before full tempo",
+      "Play along with the original recording for tone and dynamic reference"
+    ],
+    "focusAreas": [
+      "Clean arpeggiated picking with even note spacing and sustain",
+      "Dynamic control between clean intro and distorted sections",
+      "Power chord rhythm consistency and fullness",
+      "Harmonized lead guitar accuracy and intonation"
+    ],
+    "metronomeWork": [
+      "Start the arpeggiated intro at 80 BPM with quarter-note clicks",
+      "Gradually increase to 110 BPM while keeping notes even and ringing",
+      "Practice power chord sections with eighth-note subdivision clicks",
+      "Work on the harmonized lead section at half tempo before full speed"
+    ]
+  },
+  "metadata": {
+    "popularity": 88,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "arena-rock",
+      "arpeggios",
+      "guitar-intro",
+      "boston"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

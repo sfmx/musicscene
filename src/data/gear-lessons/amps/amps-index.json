@@ -1,0 +1,143 @@
+{
+  "pageTitle": "Guitar & Bass Amplifiers",
+  "subtitle": "Master the art of amplification - from vintage tubes to modern modeling technology",
+  "heroGradient": "bg-gradient-to-r from-amber-100 to-orange-100",
+  "heroInfo": {
+    "title": "Amplifiers: Your Sound, Amplified",
+    "text": "Discover the world of guitar and bass amplification, from classic tube warmth to cutting-edge digital modeling.",
+    "items": [
+      "Different amplifier technologies and their unique characteristics",
+      "How to choose the right amp for your style and venue",
+      "Understanding power ratings, speaker configurations, and features",
+      "Maintenance tips and getting the best tone from your amp",
+      "Famous amplifiers used by legendary musicians"
+    ]
+  },
+  "types": [
+    {
+      "name": "Tube Amps",
+      "icon": "🔥",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Warm, dynamic sound. Classic choice for many guitarists."
+    },
+    {
+      "name": "Solid State Amps",
+      "icon": "💡",
+      "href": "/lessons/gear/amps/solid-state",
+      "description": "Reliable, affordable, and lightweight."
+    },
+    {
+      "name": "Modeling Amps",
+      "icon": "🖥️",
+      "href": "/lessons/gear/amps/modeling",
+      "description": "Digital technology for a wide range of tones."
+    },
+    {
+      "name": "Hybrid Amps",
+      "icon": "🔀",
+      "href": "/lessons/gear/amps/hybrid",
+      "description": "Combines tube warmth with solid state reliability."
+    },
+    {
+      "name": "Bass Amps",
+      "icon": "🎵",
+      "href": "/lessons/gear/amps/bass",
+      "description": "Designed for bass frequencies and power."
+    },
+    {
+      "name": "Mini/Practice Amps",
+      "icon": "🔊",
+      "href": "/lessons/gear/amps/mini",
+      "description": "Portable and perfect for home practice."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Understanding Amplifier Basics",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Amplifiers Work",
+          "bgColor": "bg-blue-50",
+          "description": "An amplifier takes the weak electrical signal from your guitar pickup and amplifies it to drive speakers, making your guitar audible and shaping its tone in the process.",
+          "items": [
+            "Preamp: Shapes and colors the tone",
+            "Power amp: Provides volume and dynamics",
+            "Speaker: Converts electrical energy to sound waves"
+          ]
+        },
+        {
+          "title": "Key Specifications",
+          "bgColor": "bg-green-50",
+          "description": "Understanding amp specifications helps you choose the right amplifier for your needs and playing situations.",
+          "items": [
+            "Wattage: Power output and volume capability",
+            "Speaker size: Affects tone and frequency response",
+            "Channels: Clean and distorted sound options"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Choosing Your Amplifier",
+      "subtitle": "🎯 Consider Your Needs",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Practice at Home",
+          "items": [
+            "1-15 watts",
+            "Headphone output",
+            "Built-in effects",
+            "Compact size"
+          ]
+        },
+        {
+          "title": "Small Venues",
+          "items": [
+            "15-30 watts",
+            "Good clean headroom",
+            "Effects loop",
+            "Portable but powerful"
+          ]
+        },
+        {
+          "title": "Large Venues",
+          "items": [
+            "50+ watts",
+            "Multiple channels",
+            "Professional features",
+            "Road-worthy construction"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Getting Great Tone",
+      "subtitle": "Essential Tone Tips",
+      "bgColor": "bg-purple-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "EQ Settings",
+          "items": [
+            "Start with all knobs at 12 o'clock",
+            "Adjust bass for room acoustics",
+            "Use mids for cutting through the mix",
+            "Treble adds clarity and sparkle"
+          ]
+        },
+        {
+          "title": "Volume Sweet Spots",
+          "items": [
+            "Tube amps sound best when pushed",
+            "Find the amp's natural breakup point",
+            "Use attenuators for apartment playing",
+            "Stage volume vs. recorded volume"
+          ]
+        }
+      ]
+    }
+  ]
+}

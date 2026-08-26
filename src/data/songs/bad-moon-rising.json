@@ -1,0 +1,414 @@
+{
+  "songInfo": {
+    "title": "Bad Moon Rising",
+    "artist": "Creedence Clearwater Revival",
+    "album": "Green River",
+    "released": "1969",
+    "genre": "Country Rock",
+    "tempo": "138 BPM",
+    "duration": "2:21",
+    "key": "D Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major",
+      "scalesUsed": [
+        {
+          "scale": "D major",
+          "notes": "D - E - F# - G - A - B - C# - D",
+          "application": "All three chords (D, A, G) are diatonic to D major, forming the classic I-V-IV country rock framework"
+        },
+        {
+          "scale": "D major pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "The lead fills and vocal melody draw heavily from the major pentatonic scale"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with a bright, upbeat country-rock feel",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor is the relative minor of D major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "A",
+          "G",
+          "D"
+        ],
+        "progression": "I - V - IV - I",
+        "description": "A classic I-V-IV turnaround in D major. This three-chord wonder uses the most fundamental chords in country rock, cycling through the tonic, dominant, and subdominant with infectious energy."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "D - A - G - D",
+          "romanNumerals": "I - V - IV - I",
+          "description": "The verse repeats the I-V-IV-I pattern, with each line of the lyric corresponding to one pass through the progression"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - D - A - D",
+          "romanNumerals": "IV - I - V - I",
+          "description": "The chorus starts on the IV chord (G), giving it a distinct lift from the verse before resolving back through the V (A) to the tonic D"
+        },
+        {
+          "section": "Instrumental Break",
+          "progression": "D - A - G - D",
+          "romanNumerals": "I - V - IV - I",
+          "description": "Short instrumental break following the verse progression pattern with simple lead fills"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Tonic chord providing the bright, major-key home base",
+        "A (V) - Dominant chord creating forward motion and energy",
+        "G (IV) - Subdominant chord adding warmth and the classic country-rock IV sound"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Driving Downstroke Strumming",
+      "description": "A fast, energetic strumming pattern built primarily around strong downstrokes that gives the song its urgent, driving feel at 138 BPM",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D: X-X-0-2-3-2 (standard open D major chord)",
+          "A: X-0-2-2-2-0 (standard open A major chord)",
+          "G: 3-2-0-0-0-3 (standard open G major chord)",
+          "The fast tempo demands efficient, relaxed strumming from the wrist",
+          "Emphasize downstrokes on beats 1 and 3 for the driving country feel",
+          "Upstrokes fill in between downstrokes at this tempo"
+        ],
+        "sequence": [
+          "Start with the D chord and establish the driving strum pattern",
+          "Quick two-beat change to A on the second half of the bar",
+          "Move to G for one bar, then back to D to complete the cycle",
+          "Keep the strumming arm moving in constant eighth-note motion"
+        ],
+        "tips": [
+          "At 138 BPM, wrist motion is essential — avoid strumming from the elbow",
+          "Keep your fretting hand relaxed to enable quick chord changes",
+          "Practice the D to A change until it feels automatic",
+          "A slight palm mute on downstrokes adds authentic CCR rhythmic punch"
+        ],
+        "chords": [
+          "D",
+          "A",
+          "G"
+        ],
+        "progression": "D - A - G - D"
+      }
+    },
+    {
+      "name": "Quick Two-Beat Chord Changes",
+      "description": "Rapid chord transitions at a brisk tempo, changing chords every two beats (half a bar) during the verse progression",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The verse packs D and A into a single bar, requiring a change every two beats",
+          "G gets a full bar before returning to D",
+          "Fingers should hover close to the strings during transitions",
+          "Minimize finger movement by finding common fingerings between chords"
+        ],
+        "sequence": [
+          "Play D for beats 1-2",
+          "Switch to A for beats 3-4",
+          "Play G for a full bar (beats 1-4)",
+          "Return to D for the next cycle"
+        ],
+        "tips": [
+          "Practice the D-to-A change in isolation until it is seamless",
+          "Try anchoring your first finger as a pivot between D and A shapes",
+          "Start at a slower tempo (100 BPM) and gradually speed up to 138 BPM",
+          "Visualize the next chord shape before you need to play it"
+        ],
+        "chords": [
+          "D",
+          "A",
+          "G"
+        ],
+        "progression": "D(2 beats) - A(2 beats) - G(4 beats) - D(4 beats)"
+      }
+    },
+    {
+      "name": "Country Rock Shuffle Feel",
+      "description": "A subtle swing or shuffle feel that differentiates this from a straight-eighth rock strum, giving it the country-rock groove CCR is known for",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The strum has a slight swing feel rather than perfectly straight eighth notes",
+          "Downstrokes are slightly longer, upstrokes shorter and lighter",
+          "This creates the bouncy, infectious groove of the song",
+          "Listen to the original recording to internalize the feel"
+        ],
+        "sequence": [
+          "Start with straight eighth-note strumming to learn the chord changes",
+          "Gradually add a swing feel by lengthening downstrokes slightly",
+          "Accent beats 1 and 3 more heavily",
+          "Let the upstrokes brush lightly across the treble strings"
+        ],
+        "tips": [
+          "Listen to the original recording repeatedly to absorb the groove",
+          "The shuffle feel should be subtle, not exaggerated",
+          "Tapping your foot on beats 1 and 3 helps maintain the feel",
+          "A slight accent pattern creates the country-rock bounce"
+        ],
+        "chords": [],
+        "progression": "Applies to all sections of the song"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse",
+      "timeStamp": "0:00-0:46",
+      "technique": "Driving Downstroke Strumming",
+      "key": "D Major",
+      "description": "The song kicks off immediately with the driving D-A-G-D progression. The verse carries the apocalyptic lyrics over this upbeat, almost contradictory major-key groove.",
+      "chords": [
+        "D",
+        "A",
+        "G",
+        "D"
+      ],
+      "progression": "D - A - G - D",
+      "notes": [
+        "Jump straight in with confident strumming on the D chord",
+        "The chord changes come quickly — D and A share a single bar in the verse",
+        "G provides a one-bar breath before returning to D",
+        "Keep the energy high and consistent throughout the verse"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:46-1:06",
+      "technique": "Driving Downstroke Strumming",
+      "key": "D Major",
+      "description": "The chorus ('Donthe iconic vocal hook) begins on the G chord, providing harmonic contrast from the verse and a natural lift for the sing-along melody.",
+      "chords": [
+        "G",
+        "D",
+        "A",
+        "D"
+      ],
+      "progression": "G - D - A - D",
+      "notes": [
+        "Starting on G gives the chorus a distinct feel from the verse",
+        "Strum with extra conviction for the sing-along section",
+        "The A chord builds tension before resolving to D",
+        "Two passes through this progression complete the chorus"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "1:06-1:30",
+      "technique": "Quick Two-Beat Chord Changes",
+      "key": "D Major",
+      "description": "Second verse continues the same I-V-IV-I progression with the same driving energy and quick chord changes.",
+      "chords": [
+        "D",
+        "A",
+        "G",
+        "D"
+      ],
+      "progression": "D - A - G - D",
+      "notes": [
+        "Same progression and feel as verse 1",
+        "Maintain consistent strumming energy — avoid dropping intensity",
+        "Focus on tight, clean chord changes at tempo",
+        "The quick D-to-A change should be automatic by this point"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "1:50-2:21",
+      "technique": "Driving Downstroke Strumming",
+      "key": "D Major",
+      "description": "The song rides out on repeated chorus progressions with building intensity, ending with a final resolution on the D chord.",
+      "chords": [
+        "G",
+        "D",
+        "A",
+        "D"
+      ],
+      "progression": "G - D - A - D",
+      "notes": [
+        "Repeated chorus progression building to the finale",
+        "Increase strumming intensity for a strong finish",
+        "Final chord is a ringing open D major",
+        "The song ends cleanly — no fade-out"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Rickenbacker 325 or similar semi-hollow",
+      "alternatives": [
+        "Any steel-string acoustic guitar",
+        "Fender Telecaster",
+        "Gibson SG",
+        "Any dreadnought acoustic"
+      ],
+      "pickup": "Single-coil pickups for the bright, cutting CCR tone"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or similar clean American amp",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Fender Princeton Reverb",
+        "Any clean-channel amp",
+        "Acoustic combo amp"
+      ],
+      "settings": {
+        "gain": "3-4 (clean with slight edge)",
+        "treble": "7 (bright, twangy highs)",
+        "middle": "5-6 (present mids)",
+        "bass": "4-5 (tight low end)",
+        "presence": "6-7 (clarity and sparkle)"
+      }
+    },
+    "effects": {
+      "distortion": "None — clean to slightly overdriven tone",
+      "delay": "None needed",
+      "reverb": "Light spring reverb for vintage ambiance",
+      "other": "No effects pedals needed. The song is all about clean, confident strumming."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three open chords (D, A, G) and practice changing between them at a moderate tempo",
+      "steps": [
+        "Learn the open D, A, and G chord shapes individually",
+        "Practice switching between D and A (the quickest change in the song)",
+        "Add the G chord and practice the full D-A-G-D cycle slowly",
+        "Work on basic downstroke strumming at 100 BPM before speeding up"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Bring the song up to full tempo (138 BPM) with the correct rhythmic feel",
+      "steps": [
+        "Increase tempo gradually from 100 BPM to 138 BPM with a metronome",
+        "Add the country-rock shuffle feel to your strumming",
+        "Learn the chorus progression (G-D-A-D) and practice transitions between sections",
+        "Play through the entire song structure without stopping"
+      ],
+      "timeEstimate": "2-3 weeks for a confident full-tempo performance"
+    },
+    "advanced": {
+      "focus": "Add dynamics, vocal accompaniment, and lead fills",
+      "steps": [
+        "Practice singing while strumming at full tempo",
+        "Add subtle dynamic variation between verses and choruses",
+        "Learn the short lead guitar fills between vocal phrases",
+        "Experiment with slight picking variations for authenticity"
+      ],
+      "timeEstimate": "3-5 weeks for a polished performance with vocals"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Strumming from the elbow instead of the wrist at the fast tempo",
+      "Missing the quick D-to-A change — this needs to be drilled in isolation",
+      "Playing with a straight-eighth feel instead of the slight shuffle groove",
+      "Losing tempo consistency — the song should feel urgent but steady"
+    ],
+    "practiceRoutine": [
+      "Warm up with D-A-G chord changes at 100 BPM for 3 minutes",
+      "Drill the quick D-A change (two beats each) for 3 minutes",
+      "Practice the verse progression (D-A-G-D) at 120 BPM for 5 minutes",
+      "Increase to full tempo (138 BPM) and play through complete verses",
+      "Run through the entire song structure at full tempo"
+    ],
+    "focusAreas": [
+      "Fast, clean chord transitions between D, A, and G",
+      "Relaxed wrist strumming technique at high tempo",
+      "Consistent rhythm and tempo maintenance",
+      "Country-rock shuffle feel and groove"
+    ],
+    "metronomeWork": [
+      "Start at 100 BPM and increase by 5 BPM increments",
+      "Practice the two-beat D-A change with metronome clicks on every beat",
+      "At full tempo (138 BPM), practice with metronome on beats 2 and 4 only",
+      "Use metronome to check tempo consistency during full song play-throughs"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Proud Mary",
+        "difficulty": "Beginner",
+        "similarity": "Classic CCR three-chord rocker with a similar driving country-rock feel"
+      },
+      {
+        "title": "Have You Ever Seen the Rain",
+        "difficulty": "Beginner",
+        "similarity": "Another beloved CCR song using simple open chords with great strumming patterns"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Beginner",
+        "similarity": "Three-chord classic with a similar driving open-chord strumming approach"
+      },
+      {
+        "title": "Twist and Shout",
+        "artist": "The Beatles",
+        "difficulty": "Beginner",
+        "similarity": "Same three-chord formula (D-G-A) with energetic strumming"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Wild Thing",
+        "artist": "The Troggs",
+        "difficulty": "Beginner",
+        "similarity": "Even simpler I-IV-V rocker to build foundational three-chord skills"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to power chords and harder-edged rock rhythm guitar"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": false,
+    "tags": [
+      "classic-rock",
+      "beginner",
+      "3-chord-song",
+      "strumming",
+      "country-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

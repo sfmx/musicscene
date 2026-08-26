@@ -1,0 +1,377 @@
+{
+  "slug": "perfect-4th",
+  "intervalInfo": {
+    "name": "Perfect 4th Interval",
+    "pageTitle": "Perfect 4th Interval",
+    "subtitle": "A stable, consonant interval of 5 semitones that forms the foundation of harmonic relationships and is essential to guitar tuning.",
+    "colorScheme": "teal",
+    "heroGradient": "bg-gradient-to-r from-teal-600 to-cyan-700",
+    "tags": [
+      "5 Semitones",
+      "Perfect Consonance",
+      "Guitar Tuning Foundation",
+      "Sus4 Chords"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "5 semitones (2\u00bd whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Perfect"
+      },
+      {
+        "label": "Sound",
+        "value": "Stable, open, slightly hollow"
+      },
+      {
+        "label": "Consonance",
+        "value": "Consonant (stable)"
+      },
+      {
+        "label": "Function",
+        "value": "Foundation of sus4 chords"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to F",
+        "value": "Perfect 4th"
+      },
+      {
+        "label": "Guitar tuning",
+        "value": "Most string intervals"
+      },
+      {
+        "label": "\"Here Comes the Bride\"",
+        "value": "Opening interval"
+      },
+      {
+        "label": "\"Amazing Grace\"",
+        "value": "\"A-ma-zing\""
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Perfect 4th Intervals - Guitar Tuning Foundation",
+      "description": "The perfect 4th (5 semitones) forms the foundation of guitar tuning and creates stable, open-sounding intervals essential to guitar harmony.",
+      "examples": [
+        {
+          "title": "C \u2192 F Perfect 4th",
+          "subtitle": "Classic perfect 4th relationship",
+          "chord1": "C_to_F_P4",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "F_from_C_P4",
+          "chord2Label": "F (4th string 3rd fret)",
+          "alphaTex": "4.1{q} 4.4{q}",
+          "alphaTexTitle": "C to F Perfect 4th",
+          "caption": "Stable, consonant interval",
+          "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+          "colorBorder": "border border-teal-200",
+          "colorTitle": "text-teal-800",
+          "colorSubtitle": "text-teal-700",
+          "colorCaption": "text-teal-600"
+        },
+        {
+          "title": "G \u2192 C Perfect 4th",
+          "subtitle": "Guitar tuning interval",
+          "chord1": "G_to_C_P4",
+          "chord1Label": "G (6th string 3rd fret)",
+          "chord2": "C_from_G_P4",
+          "chord2Label": "C (5th string 3rd fret)",
+          "alphaTex": "tabstave notation=true tablature=false\nnotes :q G/2 C/4",
+          "alphaTexTitle": "G to C Perfect 4th",
+          "caption": "Foundation of guitar tuning",
+          "colorBg": "bg-gradient-to-br from-cyan-50 to-cyan-100",
+          "colorBorder": "border border-cyan-200",
+          "colorTitle": "text-cyan-800",
+          "colorSubtitle": "text-cyan-700",
+          "colorCaption": "text-cyan-600"
+        },
+        {
+          "title": "D \u2192 G Perfect 4th",
+          "subtitle": "Open string relationship",
+          "chord1": "D_to_G_P4",
+          "chord1Label": "D (4th string open)",
+          "chord2": "G_from_D_P4",
+          "chord2Label": "G (3rd string open)",
+          "alphaTex": "tabstave notation=true tablature=false\nnotes :q D/3 G/3",
+          "alphaTexTitle": "D to G Perfect 4th",
+          "caption": "Natural guitar harmony",
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorSubtitle": "text-blue-700",
+          "colorCaption": "text-blue-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "Sus4 Chord Applications - 4th Replaces 3rd",
+      "items": [
+        {
+          "title": "Dsus4 Chord",
+          "chord": "Dsus4",
+          "chordLabel": "D-G-A suspended 4th chord",
+          "alphaTex": " (D/3 G/3 A/3)",
+          "alphaTexTitle": "Dsus4 Chord",
+          "alphaTexCaption": "D-G-A: Root, perfect 4th, perfect 5th",
+          "bullets": [
+            "Perfect 4th: D \u2192 G (replaces F# major 3rd)",
+            "Suspension: Creates anticipation for resolution",
+            "Open fingering: Easy guitar chord"
+          ],
+          "colorBg": "bg-gradient-to-br from-orange-50 to-orange-100",
+          "colorBorder": "border border-orange-200",
+          "colorTitle": "text-orange-800",
+          "colorText": "text-orange-700",
+          "colorCaption": "text-orange-600"
+        },
+        {
+          "title": "Gsus4 Chord",
+          "chord": "Gsus4",
+          "chordLabel": "G-C-D suspended 4th chord",
+          "alphaTex": " (G/2 C/4 D/4)",
+          "alphaTexTitle": "Gsus4 Chord",
+          "alphaTexCaption": "G-C-D: Root, perfect 4th, perfect 5th",
+          "bullets": [
+            "Perfect 4th: G \u2192 C (replaces B major 3rd)",
+            "Folk favorite: Common in acoustic music",
+            "Smooth resolution: Sus4 \u2192 major"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorCaption": "text-emerald-600"
+        },
+        {
+          "title": "Csus4 Chord",
+          "chord": "Csus4",
+          "chordLabel": "C-F-G suspended 4th chord",
+          "alphaTex": " (C/4 F/4 G/4)",
+          "alphaTexTitle": "Csus4 Chord",
+          "alphaTexCaption": "C-F-G: Root, perfect 4th, perfect 5th",
+          "bullets": [
+            "Perfect 4th: C \u2192 F (replaces E major 3rd)",
+            "Neither major nor minor: Ambiguous quality",
+            "Rock ballads: Emotional suspension effect"
+          ],
+          "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+          "colorBorder": "border border-indigo-200",
+          "colorTitle": "text-indigo-800",
+          "colorText": "text-indigo-700",
+          "colorCaption": "text-indigo-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Guitar Tuning System",
+        "subtitle": "Standard Tuning Pattern",
+        "alphaTex": "tabstave notation=true tablature=false\nnotes :q E/2 A/2 D/3 G/3 | B/3 E/4",
+        "alphaTexTitle": "Standard guitar tuning intervals",
+        "alphaTexCaption": "Mostly perfect 4ths: E-A-D-G, then major 3rd G-B, then 4th B-E",
+        "bullets": [
+          "4 out of 5 intervals: Perfect 4ths",
+          "Exception: G to B (major 3rd)",
+          "Cross-string patterns: Same fret, different strings"
+        ],
+        "colorBg": "bg-gradient-to-br from-teal-50 to-teal-100",
+        "colorBorder": "border border-teal-200",
+        "colorTitle": "text-teal-800",
+        "colorText": "text-teal-700",
+        "colorCaption": "text-teal-600"
+      },
+      {
+        "title": "Quartal Harmony",
+        "subtitle": "Stacked 4ths Harmony",
+        "alphaTex": " (C/4 F/4 Bb/4 Eb/5)",
+        "alphaTexTitle": "Quartal chord voicing",
+        "alphaTexCaption": "Modern jazz voicings built from perfect 4ths",
+        "bullets": [
+          "Open sound: Neither major nor minor",
+          "Jazz applications: McCoy Tyner, Bill Evans",
+          "Ambient textures: Floating, spacious harmony"
+        ],
+        "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+        "colorBorder": "border border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "colorCaption": "text-blue-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "\"Here Comes the Bride\"",
+        "description": "Opening perfect 4th creates ceremonial, stable feeling",
+        "detail": "Wagner's \"Bridal Chorus\" - iconic 4th interval"
+      },
+      {
+        "title": "\"Amazing Grace\"",
+        "description": "\"A-ma-zing\" features upward perfect 4th",
+        "detail": "Creates sense of yearning and spiritual uplift"
+      }
+    ],
+    "popular": [
+      {
+        "title": "Rock & Folk Sus4 Chords",
+        "description": "Csus4, Dsus4 create open, ringing textures",
+        "detail": "Common in The Who, Led Zeppelin, folk music"
+      },
+      {
+        "title": "Jazz Quartal Harmony",
+        "description": "McCoy Tyner's 4th-based chord voicings",
+        "detail": "Creates modern, sophisticated harmonic colors"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Use \"Here Comes the Bride\" as reference",
+        "Practice 4th vs. 5th recognition",
+        "Listen to sus4 chord resolutions",
+        "Study guitar tuning intervals",
+        "Compare ascending vs. descending 4ths"
+      ],
+      "colorBg": "bg-teal-50",
+      "colorBorder": "border border-teal-200",
+      "colorTitle": "text-teal-800",
+      "colorText": "text-teal-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Practice 5-fret same-string 4ths",
+        "Master cross-string 4th patterns",
+        "Work on sus4 chord shapes",
+        "Study quartal chord voicings",
+        "Practice 4th-based melodic patterns"
+      ],
+      "colorBg": "bg-cyan-50",
+      "colorBorder": "border border-cyan-200",
+      "colorTitle": "text-cyan-800",
+      "colorText": "text-cyan-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Create melodies using 4th leaps",
+        "Write sus4 chord progressions",
+        "Explore quartal harmony textures",
+        "Study folk and rock sus4 usage",
+        "Analyze 4ths in favorite songs"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "4:3 Ratio",
+        "description": "The perfect 4th has a 4:3 frequency ratio, creating a stable but slightly hollow sound due to the wider ratio."
+      },
+      {
+        "title": "Complementary to 5th",
+        "description": "Perfect 4th + Perfect 5th = Octave (5 + 7 = 12 semitones)"
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Medieval Organum",
+        "description": "Perfect 4ths were considered the most consonant interval in medieval music, used extensively in early polyphony."
+      },
+      {
+        "title": "Modern Recontextualization",
+        "description": "Jazz and modern music have rediscovered the 4th's unique harmonic color through quartal harmony."
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Perfect 5th",
+      "description": "7 semitones - complement of perfect 4th",
+      "detail": "4th + 5th = Octave (inversions)",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Major 3rd",
+      "description": "4 semitones - one semitone smaller",
+      "detail": "Sus4 resolves down to major 3rd",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Tritone",
+      "description": "6 semitones - augmented 4th",
+      "detail": "One semitone larger, creates instability",
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border border-orange-200",
+      "colorTitle": "text-orange-800",
+      "colorText": "text-orange-700",
+      "colorDetail": "text-orange-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the perfect 4th, explore its complement and other related intervals.",
+    "links": [
+      {
+        "slug": "perfect-5th",
+        "title": "Perfect 5th",
+        "description": "Explore the perfect 4th's complement - together they complete the octave.",
+        "actionText": "Complete the pair",
+        "icon": "target",
+        "colorBg": "bg-green-100",
+        "colorBgHover": "group-hover:bg-green-200",
+        "colorBorder": "hover:border-green-300",
+        "colorText": "text-green-600",
+        "colorTextHover": "group-hover:text-green-700"
+      },
+      {
+        "slug": "major-3rd",
+        "title": "Major 3rd",
+        "description": "Study what sus4 chords resolve to - the bright, happy major 3rd.",
+        "actionText": "Find resolution",
+        "icon": "smile",
+        "colorBg": "bg-blue-100",
+        "colorBgHover": "group-hover:bg-blue-200",
+        "colorBorder": "hover:border-blue-300",
+        "colorText": "text-blue-600",
+        "colorTextHover": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "tritone",
+        "title": "Tritone",
+        "description": "Compare the stable 4th with its unstable cousin - the devil's interval.",
+        "actionText": "Feel the tension",
+        "icon": "devil",
+        "colorBg": "bg-orange-100",
+        "colorBgHover": "group-hover:bg-orange-200",
+        "colorBorder": "hover:border-orange-300",
+        "colorText": "text-orange-600",
+        "colorTextHover": "group-hover:text-orange-700"
+      }
+    ]
+  }
+}

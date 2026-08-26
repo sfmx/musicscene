@@ -1,0 +1,370 @@
+{
+  "slug": "i-vi-ii-v",
+  "progressionInfo": {
+    "name": "I-vi-ii-V Progression",
+    "pageTitle": "I-vi-ii-V Jazz Turnaround",
+    "subtitle": "The quintessential jazz turnaround - a four-chord progression that moves through the circle of fifths, creating the smoothest possible harmonic motion and forming the backbone of countless jazz standards and sophisticated pop songs.",
+    "heroGradient": "bg-gradient-to-r from-indigo-500 to-violet-600",
+    "tags": [
+      "Jazz",
+      "Turnaround",
+      "Circle of Fifths",
+      "Sophisticated"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Harmonic Functions",
+    "properties": [
+      { "label": "I (Tonic)", "value": "Starting point of stability, often voiced as Imaj7" },
+      { "label": "vi (Submediant)", "value": "Tonic substitute, shares two notes with I chord" },
+      { "label": "ii (Supertonic)", "value": "Subdominant function, prepares the dominant" },
+      { "label": "V (Dominant)", "value": "Creates tension that resolves back to I, completing the cycle" },
+      { "label": "Circle of Fifths", "value": "Each root is a fifth above the next: vi\u2192ii\u2192V\u2192I" }
+    ],
+    "exampleTitle": "C Major Example (with 7ths)",
+    "examples": [
+      { "label": "Imaj7", "value": "CMaj7 (C-E-G-B)" },
+      { "label": "vi7", "value": "Am7 (A-C-E-G)" },
+      { "label": "ii7", "value": "Dm7 (D-F-A-C)" },
+      { "label": "V7", "value": "G7 (G-B-D-F)" },
+      { "label": "Circle Motion", "value": "C\u2192A\u2192D\u2192G\u2192C (roots move by descending thirds and ascending fourths)" }
+    ],
+    "bulletColor": "text-indigo-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "I-vi-ii-V in C Major (Jazz Voicings)",
+        "description": "Seventh chord voicings for authentic jazz sound:",
+        "chords": [
+          { "label": "Imaj7 - CMaj7", "chord": "CMaj7", "subtitle": "Tonic - Home" },
+          { "label": "vi7 - Am7", "chord": "Am7", "subtitle": "Submediant - Tonic Substitute" },
+          { "label": "ii7 - Dm7", "chord": "Dm7", "subtitle": "Supertonic - Preparation" },
+          { "label": "V7 - G7", "chord": "G7", "subtitle": "Dominant - Tension" }
+        ],
+        "alphaTex": "",
+        "practiceNotes": [
+          "Use seventh chords for authentic jazz flavor",
+          "Notice common tones: CMaj7 and Am7 share C, E, and G",
+          "The ii-V portion (Dm7-G7) is the core jazz cadence",
+          "The entire progression follows the circle of fifths"
+        ],
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700",
+        "colorDetail": "text-indigo-600"
+      },
+      {
+        "title": "I-vi-ii-V in G Major",
+        "description": "Alternative key with open-position jazz voicings:",
+        "chords": [
+          { "label": "Imaj7 - GMaj7", "chord": "GMaj7", "subtitle": "Tonic - Home" },
+          { "label": "vi7 - Em7", "chord": "Em7", "subtitle": "Submediant - Tonic Substitute" },
+          { "label": "ii7 - Am7", "chord": "Am7", "subtitle": "Supertonic - Preparation" },
+          { "label": "V7 - D7", "chord": "D7", "subtitle": "Dominant - Tension" }
+        ],
+        "alphaTex": "",
+        "practiceNotes": [
+          "All four voicings are comfortable open-position shapes",
+          "Great key for practicing the turnaround on acoustic guitar",
+          "Em7 to Am7 shares the notes E and G as common tones",
+          "D7 resolves naturally back to GMaj7"
+        ],
+        "colorBg": "bg-violet-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-800",
+        "colorText": "text-violet-700",
+        "colorDetail": "text-violet-600"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Chord Substitutions",
+        "description": "Jazz reharmonization techniques for I-vi-ii-V:",
+        "items": [
+          "Tritone sub on V: CMaj7 - Am7 - Dm7 - D\u266d7",
+          "Secondary dominant on vi: CMaj7 - A7 - Dm7 - G7",
+          "Chromatic approach: CMaj7 - E\u266d7 - Dm7 - D\u266d7",
+          "Coltrane changes: substitute with major thirds cycle",
+          "Backdoor ii-V: Replace V7 with \u266dVIImaj7"
+        ],
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-600"
+      },
+      {
+        "title": "Rhythm & Comping Patterns",
+        "description": "Jazz rhythm approaches for the turnaround:",
+        "items": [
+          "Freddie Green style: quarter-note comping on beats 1-2-3-4",
+          "Swing comping: accent beats 2 and 4 with stabs",
+          "Bossa nova: syncopated fingerpicking pattern",
+          "Ballad style: arpeggiated chords with rubato",
+          "Medium swing: two chords per bar at moderate tempo"
+        ],
+        "colorBg": "bg-fuchsia-50",
+        "colorBorder": "border-fuchsia-200",
+        "colorTitle": "text-fuchsia-800",
+        "colorText": "text-fuchsia-600"
+      },
+      {
+        "title": "Key Transposition",
+        "description": "I-vi-ii-V in common jazz keys:",
+        "items": [
+          "C Major: CMaj7 - Am7 - Dm7 - G7",
+          "F Major: FMaj7 - Dm7 - Gm7 - C7",
+          "G Major: GMaj7 - Em7 - Am7 - D7",
+          "D Major: DMaj7 - Bm7 - Em7 - A7",
+          "A Major: AMaj7 - F#m7 - Bm7 - E7"
+        ],
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Jazz Standards",
+      "examples": [
+        {
+          "title": "\"I Got Rhythm\" (Bridge) - George Gershwin",
+          "description": "The bridge of \"Rhythm Changes\" is built on I-vi-ii-V",
+          "detail": "So foundational that \"Rhythm Changes\" became a jazz standard form"
+        },
+        {
+          "title": "\"Blue Moon\" - Rodgers & Hart",
+          "description": "Classic example of I-vi-ii-V as the entire harmonic structure",
+          "detail": "C-Am-Dm-G7 repeated with beautiful melodic writing on top"
+        },
+        {
+          "title": "\"All the Things You Are\" - Jerome Kern",
+          "description": "Uses chains of ii-V-I (derived from this turnaround)",
+          "detail": "Modulates through multiple keys using the circle-of-fifths motion"
+        }
+      ]
+    },
+    "right": {
+      "title": "Pop, R&B & Beyond",
+      "examples": [
+        {
+          "title": "\"Heart and Soul\" - Hoagy Carmichael",
+          "description": "The I-vi-ii-V everyone learns at the piano",
+          "detail": "C-Am-Dm-G or simplified as C-Am-F-G"
+        },
+        {
+          "title": "\"Stand By Me\" - Ben E. King",
+          "description": "Pop adaptation of the jazz turnaround",
+          "detail": "Simplified version that became one of the most covered songs ever"
+        },
+        {
+          "title": "Bossa Nova Standards",
+          "description": "Antonio Carlos Jobim and Brazilian jazz",
+          "detail": "\"Girl from Ipanema\" and other bossa classics use I-vi-ii-V extensively"
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Chord Voicings",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Practice CMaj7-Am7-Dm7-G7 with smooth transitions",
+        "Learn multiple voicings for each chord",
+        "Practice keeping common tones stationary",
+        "Work on minimal finger movement between chords",
+        "Try the progression in at least 4 different keys"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700"
+    },
+    {
+      "title": "Jazz Comping",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Practice with swing rhythm at 120 BPM",
+        "Try two chords per bar (2 beats each)",
+        "Experiment with syncopated comping rhythms",
+        "Play along with jazz recordings",
+        "Practice comping behind a melody or soloist"
+      ],
+      "colorBg": "bg-violet-50",
+      "colorBorder": "border-violet-200",
+      "colorTitle": "text-violet-800",
+      "colorText": "text-violet-700"
+    },
+    {
+      "title": "Improvisation",
+      "icon": "\ud83c\udfad",
+      "items": [
+        "Solo using chord tones over each change",
+        "Practice guide tone lines (3rds and 7ths)",
+        "Use arpeggios to outline the harmony",
+        "Learn classic jazz licks over the turnaround",
+        "Record a loop and practice chorus after chorus"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: Basic Turnaround in C Major",
+      "description": "Practice the fundamental I-vi-ii-V with seventh chords:",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Hold each chord for 4 beats",
+        "Listen for the circle-of-fifths root movement",
+        "Notice how each chord prepares the next",
+        "Loop continuously without stopping"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-800",
+      "colorText": "text-indigo-700",
+      "colorDetail": "text-indigo-600"
+    },
+    {
+      "title": "Exercise 2: Two Chords Per Bar",
+      "description": "Practice the turnaround at medium swing tempo with 2 beats each:",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Each chord gets 2 beats (half notes)",
+        "Swing the eighth notes",
+        "Focus on anticipating the next chord shape",
+        "This is how the turnaround typically appears in jazz standards"
+      ],
+      "colorBg": "bg-violet-50",
+      "colorBorder": "border-violet-200",
+      "colorTitle": "text-violet-800",
+      "colorText": "text-violet-700",
+      "colorDetail": "text-violet-600"
+    },
+    {
+      "title": "Exercise 3: Guide Tone Voice Leading",
+      "description": "Follow the 3rds and 7ths through the progression:",
+      "alphaTex": "",
+      "practiceNotes": [
+        "Play only the 3rd and 7th of each chord",
+        "CMaj7: E-B, Am7: C-G, Dm7: F-C, G7: B-F",
+        "Notice how these guide tones move by half steps and common tones",
+        "This is the foundation of jazz voice leading"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Circle of Fifths Analysis",
+      "sections": [
+        {
+          "title": "Root Movement Pattern",
+          "items": [
+            "I (C) to vi (A): down a minor 3rd (or up a major 6th)",
+            "vi (A) to ii (D): up a perfect 4th (down a 5th)",
+            "ii (D) to V (G): up a perfect 4th (down a 5th)",
+            "V (G) to I (C): up a perfect 4th (down a 5th)",
+            "The last three moves are all circle-of-fifths motion"
+          ]
+        },
+        {
+          "title": "Diatonic Function Chain",
+          "items": [
+            "I: Tonic function - complete stability",
+            "vi: Tonic substitute - shares 2 of 3 notes with I",
+            "ii: Subdominant function - pre-dominant preparation",
+            "V: Dominant function - maximum tension before resolution"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Voice Leading Analysis",
+      "sections": [
+        {
+          "title": "Guide Tone Lines (3rds and 7ths)",
+          "items": [
+            "CMaj7: 3rd=E, 7th=B",
+            "Am7: 3rd=C, 7th=G (B resolves down to G or stays as common tone)",
+            "Dm7: 3rd=F, 7th=C (C is common tone from Am7)",
+            "G7: 3rd=B, 7th=F (F is common tone from Dm7)",
+            "B in G7 resolves up to C in CMaj7 - completing the cycle"
+          ]
+        },
+        {
+          "title": "The ii-V Core",
+          "items": [
+            "The ii-V portion is the most important jazz cadence",
+            "Every jazz musician must master ii-V-I in all 12 keys",
+            "I-vi-ii-V extends the turnaround by adding the tonic and its substitute",
+            "Think of it as: I (rest) - vi (departure) - ii-V (cadence back home)"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the I-vi-ii-V jazz turnaround, explore related progressions that share its harmonic DNA and circle-of-fifths movement.",
+    "links": [
+      {
+        "slug": "ii-v-i",
+        "title": "ii-V-I Progression",
+        "description": "Dive deeper into the core jazz cadence that forms the heart of this turnaround.",
+        "linkText": "Master the ii-V-I",
+        "icon": "\ud83c\udfb7",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "circle-of-fifths",
+        "title": "Circle of Fifths",
+        "description": "Understand the harmonic engine that drives the I-vi-ii-V progression.",
+        "linkText": "Explore the circle",
+        "icon": "\ud83d\udd04",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "slug": "i-v-vi-iv",
+        "title": "I-V-vi-IV Progression",
+        "description": "Compare the jazz turnaround with the modern pop reordering of similar chords.",
+        "linkText": "Explore pop harmony",
+        "icon": "\ud83c\udfb5",
+        "hoverBorder": "hover:border-pink-300",
+        "iconBg": "bg-pink-100",
+        "iconHoverBg": "group-hover:bg-pink-200",
+        "linkColor": "text-pink-600",
+        "linkHoverColor": "group-hover:text-pink-700"
+      }
+    ]
+  },
+  "navigation": {
+    "prev": {
+      "href": "/lessons/theory/progressions/ii-v-i",
+      "label": "Previous: ii-V-I Progression"
+    },
+    "next": {
+      "href": "/lessons/theory/progressions/circle-of-fifths",
+      "label": "Next: Circle of Fifths"
+    }
+  }
+}

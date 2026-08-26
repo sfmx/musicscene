@@ -1,0 +1,182 @@
+{
+  "slug": "suspended",
+  "chordInfo": {
+    "name": "Suspended Chords",
+    "pageTitle": "Suspended Chord Theory",
+    "subtitle": "Create tension and release with suspended chords - ambiguous, floating harmony that adds movement and interest to your playing.",
+    "colorScheme": "cyan",
+    "tags": ["Tension & Release", "Ambiguous Sound", "Open Harmony", "Creative Color"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Suspended Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Three-note chords where the 3rd is replaced by 2nd or 4th" },
+      { "label": "Formula (sus4)", "value": "Root + Perfect 4th + Perfect 5th" },
+      { "label": "Formula (sus2)", "value": "Root + Major 2nd + Perfect 5th" },
+      { "label": "Sound Quality", "value": "Open, floating, unresolved" },
+      { "label": "Function", "value": "Tension before resolution, color, ambiguity" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Rock", "value": "Pete Townshend-style chord work" },
+      { "label": "Pop", "value": "Adding movement to static chords" },
+      { "label": "Ambient", "value": "Open, floating textures" },
+      { "label": "Folk", "value": "Ornamental passing chords" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Suspended Chord Construction",
+    "boxes": [
+      {
+        "title": "Dsus4 Example",
+        "items": [
+          "Root: D (1st degree)",
+          "Perfect 4th: G (4th degree)",
+          "Perfect 5th: A (5th degree)",
+          "No 3rd: Neither major nor minor",
+          "Result: Open, suspended sound"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "No 3rd: Ambiguous tonality",
+          "Perfect 4th (sus4): Strong suspension",
+          "Major 2nd (sus2): Gentle suspension",
+          "Tension: Wants to resolve to major or minor",
+          "Psychology: Anticipation, openness"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Derived from: Replacing 3rd with 4th or 2nd",
+          "Resolution: Sus4 resolves down to major 3rd",
+          "Resolution: Sus2 resolves up to major 3rd",
+          "Passing: Often used between chords",
+          "Color: Adds movement without key change"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Suspended Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These are the fundamental suspended chord voicings for guitar.",
+      "voicings": [
+        { "name": "Dsus4", "chord": "Dsus4", "notes": "D-G-A", "fingering": "Easy open shape", "use": "Resolves to D major, rock riffs" },
+        { "name": "Dsus2", "chord": "Dsus2", "notes": "D-E-A", "fingering": "Simple open shape", "use": "Color chord, folk/pop" },
+        { "name": "Asus4", "chord": "Asus4", "notes": "A-D-E", "fingering": "One-finger add to A major", "use": "Resolves to A, classic rock" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Suspended Chord Progressions",
+    "items": [
+      {
+        "title": "Sus4 Resolution Pattern",
+        "titleColor": "text-cyan-700",
+        "chords": [
+          { "chord": "Dsus4", "label": "Dsus4", "numeral": "Isus4" },
+          { "chord": "D", "label": "D", "numeral": "I" },
+          { "chord": "Asus4", "label": "Asus4", "numeral": "Vsus4" },
+          { "chord": "A", "label": "A", "numeral": "V" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - D - DU",
+          "description": "Rock rhythm with suspensions",
+          "tempo": "90-130 BPM",
+          "feel": "Driving, anthemic",
+          "genre": "Rock, Pop, Folk"
+        },
+        "alphaTex": "(2.4 3.3 3.2).1 | (2.4 3.3 2.2).1 | (0.5 2.4 2.3 3.2 0.1).1 | (0.5 2.4 2.3 2.2 0.1).1",
+        "alphaTexTitle": "Sus4 Resolution (Dsus4-D, Asus4-A)",
+        "description": "Classic sus4-to-major resolution pattern - creates satisfying tension and release heard in rock anthems like \"Pinball Wizard\"."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice lifting fingers for sus4 to major resolution",
+        "Focus on smooth transitions between sus and resolved chords",
+        "Use hammer-ons and pull-offs for ornamental suspensions",
+        "Keep steady rhythm while resolving suspensions"
+      ],
+      "applicationItems": [
+        "Adds movement to static chord progressions",
+        "Creates tension before satisfying resolution",
+        "Essential for rock and folk embellishments",
+        "Perfect for intro riffs and arpeggiated patterns"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Suspended Chords",
+    "categories": [
+      {
+        "title": "Rock & Pop Classics",
+        "colorBg": "bg-cyan-100",
+        "colorBorder": "border-cyan-200",
+        "colorTitle": "text-cyan-800",
+        "colorText": "text-cyan-700",
+        "songs": [
+          "\"Pinball Wizard\" - The Who (Bsus4-B, Asus4-A)",
+          "\"Tom Sawyer\" - Rush (sus chord riffs)",
+          "\"Crazy Little Thing Called Love\" - Queen (Dsus4-D)",
+          "\"Free Fallin'\" - Tom Petty (Dsus4-D-Asus4-A)",
+          "\"Every Breath You Take\" - The Police (Asus2)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Suspended Chord Skills",
+    "tipDescription": "These exercises will help you master suspended chords and their resolutions.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Sus4 Resolution Practice",
+        "content": "Pattern: Dsus4-D, Asus4-A, Esus4-E",
+        "detail": "Practice resolving sus4 chords to their major counterparts",
+        "tip": "Focus on the single finger movement that creates the resolution"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Suspended Chord Concepts",
+    "concepts": [
+      {
+        "title": "Creative Suspended Chord Uses",
+        "colorBg": "bg-cyan-50",
+        "colorBorder": "border-cyan-200",
+        "colorTitle": "text-cyan-800",
+        "colorText": "text-cyan-700",
+        "items": [
+          "Sus as modal color: Neither major nor minor",
+          "7sus4: Dominant suspension (A7sus4-A7)",
+          "Sus2 stacking: Open tuning effects",
+          "Parallel sus movement: Moving shapes up neck",
+          "Pedal tone suspensions: Holding bass while moving"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand suspended chords, explore how they connect to other chord types and advanced harmonic concepts.",
+    "links": [
+      {
+        "slug": "major",
+        "title": "Major Chords",
+        "description": "Return to the bright foundation that suspended chords resolve to.",
+        "linkText": "Review major chords",
+        "icon": "M",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      }
+    ]
+  }
+}

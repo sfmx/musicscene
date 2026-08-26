@@ -1,0 +1,442 @@
+{
+  "pageTitle": "Music Theory: Chords",
+  "subtitle": "Master harmony through systematic understanding of chord construction, function, and application",
+  "heroIcon": "🎼",
+  "heroTitle": "Understanding Musical Chords",
+  "heroDescription": "Chords are the harmonic foundation of music, created by combining three or more notes played simultaneously. They provide the emotional context, establish key centers, and create the harmonic progressions that drive songs forward. Master chord theory to unlock the secrets of harmony and composition.",
+  "whatAreChords": {
+    "title": "What Are Musical Chords?",
+    "description": "A chord is a combination of three or more different notes played together. Chords are built by stacking intervals, most commonly thirds, creating harmonic structures that support melodies and establish musical context. Understanding chords involves:",
+    "columns": [
+      {
+        "title": "Chord Construction",
+        "colorBg": "bg-amber-50",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "items": [
+          "Root note (foundation of the chord)",
+          "Intervals that determine chord quality",
+          "Extensions that add color and complexity",
+          "Inversions that change bass note and voicing"
+        ]
+      },
+      {
+        "title": "Harmonic Function",
+        "colorBg": "bg-orange-50",
+        "colorTitle": "text-orange-900",
+        "colorText": "text-orange-800",
+        "items": [
+          "Tonic function (stability and rest)",
+          "Dominant function (tension and resolution)",
+          "Subdominant function (departure and movement)",
+          "Modal interchange and substitutions"
+        ]
+      }
+    ]
+  },
+  "chordFunctions": [
+    {
+      "title": "Tonic Function",
+      "description": "Provides stability and resolution",
+      "icon": "🏠",
+      "chords": ["I (Major)", "vi (Minor)", "iii (Minor)"],
+      "feeling": "Home, Rest, Stability",
+      "color": "bg-green-50 border-green-200"
+    },
+    {
+      "title": "Subdominant Function",
+      "description": "Creates departure from tonic",
+      "icon": "🚶",
+      "chords": ["IV (Major)", "ii (Minor)", "vi (Minor)"],
+      "feeling": "Movement, Departure",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "title": "Dominant Function",
+      "description": "Creates tension that wants to resolve",
+      "icon": "⚡",
+      "chords": ["V (Major)", "V7 (Dom7)", "vii° (Diminished)"],
+      "feeling": "Tension, Pull, Resolution",
+      "color": "bg-orange-50 border-orange-200"
+    }
+  ],
+  "constructionFundamentals": {
+    "title": "Chord Construction Fundamentals",
+    "triads": {
+      "title": "Building Triads",
+      "items": [
+        {
+          "title": "Major Triad Formula",
+          "colorBg": "bg-yellow-50",
+          "colorTitle": "text-yellow-800",
+          "colorText": "text-yellow-700",
+          "colorDetail": "text-yellow-600",
+          "formula": "Root + Major 3rd + Perfect 5th",
+          "example": "Example: C Major = C + E + G"
+        },
+        {
+          "title": "Minor Triad Formula",
+          "colorBg": "bg-blue-50",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorDetail": "text-blue-600",
+          "formula": "Root + Minor 3rd + Perfect 5th",
+          "example": "Example: A Minor = A + C + E"
+        },
+        {
+          "title": "Diminished Triad Formula",
+          "colorBg": "bg-red-50",
+          "colorTitle": "text-red-800",
+          "colorText": "text-red-700",
+          "colorDetail": "text-red-600",
+          "formula": "Root + Minor 3rd + Diminished 5th",
+          "example": "Example: B Diminished = B + D + F"
+        }
+      ]
+    },
+    "sevenths": {
+      "title": "Seventh Chords",
+      "items": [
+        {
+          "title": "Dominant 7th",
+          "colorBg": "bg-orange-50",
+          "colorTitle": "text-orange-800",
+          "colorText": "text-orange-700",
+          "colorDetail": "text-orange-600",
+          "formula": "Major Triad + Minor 7th",
+          "example": "Creates strong pull to tonic"
+        },
+        {
+          "title": "Minor 7th",
+          "colorBg": "bg-purple-50",
+          "colorTitle": "text-purple-800",
+          "colorText": "text-purple-700",
+          "colorDetail": "text-purple-600",
+          "formula": "Minor Triad + Minor 7th",
+          "example": "Smooth, jazzy sound"
+        },
+        {
+          "title": "Major 7th",
+          "colorBg": "bg-emerald-50",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorDetail": "text-emerald-600",
+          "formula": "Major Triad + Major 7th",
+          "example": "Dreamy, ethereal quality"
+        }
+      ]
+    }
+  },
+  "chordTypes": [
+    {
+      "name": "Major Triads",
+      "symbol": "M",
+      "icon": "☀️",
+      "href": "/lessons/theory/chords/major",
+      "description": "Bright, stable, happy sound. Foundation of Western harmony.",
+      "formula": "1 - 3 - 5",
+      "intervals": "Root + Major 3rd + Perfect 5th",
+      "examples": ["C Major (C-E-G)", "G Major (G-B-D)", "F Major (F-A-C)"],
+      "color": "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      "iconColor": "text-yellow-600",
+      "mood": "Happy, Bright, Stable"
+    },
+    {
+      "name": "Minor Triads",
+      "symbol": "m",
+      "icon": "🌙",
+      "href": "/lessons/theory/chords/minor",
+      "description": "Darker, more emotional than major. Essential for expression.",
+      "formula": "1 - ♭3 - 5",
+      "intervals": "Root + Minor 3rd + Perfect 5th",
+      "examples": ["A Minor (A-C-E)", "E Minor (E-G-B)", "D Minor (D-F-A)"],
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600",
+      "mood": "Sad, Emotional, Introspective"
+    },
+    {
+      "name": "Dominant 7th",
+      "symbol": "7",
+      "icon": "⚡",
+      "href": "/lessons/theory/chords/seventh",
+      "description": "Adds tension and color. Essential for blues, jazz, and rock.",
+      "formula": "1 - 3 - 5 - ♭7",
+      "intervals": "Major Triad + Minor 7th",
+      "examples": ["G7 (G-B-D-F)", "C7 (C-E-G-B♭)", "A7 (A-C#-E-G)"],
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600",
+      "mood": "Bluesy, Tense, Driving"
+    },
+    {
+      "name": "Minor 7th",
+      "symbol": "m7",
+      "icon": "🎷",
+      "href": "/lessons/theory/chords/minor-seventh",
+      "description": "Smooth, jazzy sound. Perfect for sophisticated harmony.",
+      "formula": "1 - ♭3 - 5 - ♭7",
+      "intervals": "Minor Triad + Minor 7th",
+      "examples": ["Am7 (A-C-E-G)", "Dm7 (D-F-A-C)", "Em7 (E-G-B-D)"],
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600",
+      "mood": "Jazzy, Smooth, Sophisticated"
+    },
+    {
+      "name": "Major 7th",
+      "symbol": "maj7",
+      "icon": "✨",
+      "href": "/lessons/theory/chords/major-seventh",
+      "description": "Dreamy, ethereal quality. Common in jazz and neo-soul.",
+      "formula": "1 - 3 - 5 - 7",
+      "intervals": "Major Triad + Major 7th",
+      "examples": ["Cmaj7 (C-E-G-B)", "Fmaj7 (F-A-C-E)", "Gmaj7 (G-B-D-F#)"],
+      "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
+      "iconColor": "text-emerald-600",
+      "mood": "Dreamy, Ethereal, Sophisticated"
+    },
+    {
+      "name": "Suspended",
+      "symbol": "sus",
+      "icon": "🔄",
+      "href": "/lessons/theory/chords/suspended",
+      "description": "Neither major nor minor. Creates suspense and resolution.",
+      "formula": "1 - 4 - 5 (sus4) or 1 - 2 - 5 (sus2)",
+      "intervals": "Root + 4th/2nd + Perfect 5th",
+      "examples": ["Csus4 (C-F-G)", "Dsus2 (D-E-A)", "Gsus4 (G-C-D)"],
+      "color": "bg-teal-50 border-teal-200 hover:bg-teal-100",
+      "iconColor": "text-teal-600",
+      "mood": "Suspended, Floating, Anticipatory"
+    },
+    {
+      "name": "Diminished",
+      "symbol": "dim",
+      "icon": "⬇️",
+      "href": "/lessons/theory/chords/diminished",
+      "description": "Tense and unstable. Used for dramatic effect and transitions.",
+      "formula": "1 - ♭3 - ♭5",
+      "intervals": "Root + Minor 3rd + Diminished 5th",
+      "examples": ["Bdim (B-D-F)", "F#dim (F#-A-C)", "Gdim (G-B♭-D♭)"],
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "mood": "Tense, Dark, Unstable"
+    },
+    {
+      "name": "Augmented",
+      "symbol": "aug",
+      "icon": "➕",
+      "href": "/lessons/theory/chords/augmented",
+      "description": "Mysterious, whole-tone sound. Creates harmonic ambiguity.",
+      "formula": "1 - 3 - #5",
+      "intervals": "Root + Major 3rd + Augmented 5th",
+      "examples": ["Caug (C-E-G#)", "Faug (F-A-C#)", "Gaug (G-B-D#)"],
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600",
+      "mood": "Mysterious, Ambiguous, Floating"
+    },
+    {
+      "name": "Extended Chords",
+      "symbol": "9, 11, 13",
+      "icon": "🎹",
+      "href": "/lessons/theory/chords/extended",
+      "description": "Add 9ths, 11ths, and 13ths for rich, complex harmony.",
+      "formula": "Add 9, 11, or 13 to basic triads and 7ths",
+      "intervals": "Basic chord + upper extensions",
+      "examples": ["Cmaj9 (C-E-G-B-D)", "Am11 (A-C-E-G-D)", "G13 (G-B-D-F-E)"],
+      "color": "bg-rose-50 border-rose-200 hover:bg-rose-100",
+      "iconColor": "text-rose-600",
+      "mood": "Complex, Rich, Modern"
+    },
+    {
+      "name": "Power Chords",
+      "symbol": "5",
+      "icon": "🤘",
+      "href": "/lessons/theory/chords/power",
+      "description": "The backbone of rock, punk, and metal. No 3rd means neither major nor minor.",
+      "formula": "1 - 5",
+      "intervals": "Root + Perfect 5th (+ Octave)",
+      "examples": ["E5 (E-B)", "A5 (A-E)", "G5 (G-D)"],
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "mood": "Powerful, Raw, Aggressive"
+    },
+    {
+      "name": "Add Chords",
+      "symbol": "add9",
+      "icon": "💎",
+      "href": "/lessons/theory/chords/add",
+      "description": "Add color tones to triads without the 7th. Shimmery, open sound.",
+      "formula": "1 - 3 - 5 - 9 (no 7th)",
+      "intervals": "Triad + added tone (no 7th)",
+      "examples": ["Cadd9 (C-E-G-D)", "Gadd9 (G-B-D-A)", "Dadd9 (D-F#-A-E)"],
+      "color": "bg-teal-50 border-teal-200 hover:bg-teal-100",
+      "iconColor": "text-teal-600",
+      "mood": "Open, Shimmery, Acoustic"
+    },
+    {
+      "name": "Sixth Chords",
+      "symbol": "6",
+      "icon": "🎺",
+      "href": "/lessons/theory/chords/sixth",
+      "description": "Warm, resolved jazz and swing sound. Major triad plus the 6th.",
+      "formula": "1 - 3 - 5 - 6",
+      "intervals": "Major Triad + Major 6th",
+      "examples": ["C6 (C-E-G-A)", "G6 (G-B-D-E)", "D6 (D-F#-A-B)"],
+      "color": "bg-amber-50 border-amber-200 hover:bg-amber-100",
+      "iconColor": "text-amber-600",
+      "mood": "Warm, Vintage, Resolved"
+    },
+    {
+      "name": "Minor Sixth",
+      "symbol": "m6",
+      "icon": "🌃",
+      "href": "/lessons/theory/chords/minor-sixth",
+      "description": "Bittersweet sophistication. Essential in jazz minor and bossa nova.",
+      "formula": "1 - ♭3 - 5 - 6",
+      "intervals": "Minor Triad + Major 6th",
+      "examples": ["Am6 (A-C-E-F#)", "Dm6 (D-F-A-B)", "Em6 (E-G-B-C#)"],
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600",
+      "mood": "Bittersweet, Noir, Sophisticated"
+    },
+    {
+      "name": "Half-Diminished",
+      "symbol": "ø7 / m7♭5",
+      "icon": "🔻",
+      "href": "/lessons/theory/chords/half-diminished",
+      "description": "The ii chord in minor keys. Essential for jazz minor progressions.",
+      "formula": "1 - ♭3 - ♭5 - ♭7",
+      "intervals": "Diminished Triad + Minor 7th",
+      "examples": ["Bm7♭5 (B-D-F-A)", "F#m7♭5 (F#-A-C-E)", "Em7♭5 (E-G-B♭-D)"],
+      "color": "bg-rose-50 border-rose-200 hover:bg-rose-100",
+      "iconColor": "text-rose-600",
+      "mood": "Yearning, Unresolved, Jazz"
+    },
+    {
+      "name": "Slash Chords",
+      "symbol": "/",
+      "icon": "📐",
+      "href": "/lessons/theory/chords/slash",
+      "description": "Inversions and bass note chords for smooth voice leading.",
+      "formula": "Chord / Bass Note",
+      "intervals": "Any chord with specified bass note",
+      "examples": ["C/E (1st inv.)", "D/F# (walking bass)", "Am/G (descending)"],
+      "color": "bg-sky-50 border-sky-200 hover:bg-sky-100",
+      "iconColor": "text-sky-600",
+      "mood": "Smooth, Flowing, Arranged"
+    },
+    {
+      "name": "Dominant 9th",
+      "symbol": "9",
+      "icon": "🎸",
+      "href": "/lessons/theory/chords/dominant-ninth",
+      "description": "The funk chord. Rich dominant sound with the added 9th for groove.",
+      "formula": "1 - 3 - 5 - ♭7 - 9",
+      "intervals": "Dominant 7th + Major 9th",
+      "examples": ["E9 (E-G#-B-D-F#)", "A9 (A-C#-E-G-B)", "G9 (G-B-D-F-A)"],
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600",
+      "mood": "Funky, Groovy, Soulful"
+    },
+    {
+      "name": "Altered Dominant",
+      "symbol": "7alt",
+      "icon": "🌀",
+      "href": "/lessons/theory/chords/altered-dominant",
+      "description": "Maximum tension chords with altered 5ths and 9ths. The Hendrix chord lives here.",
+      "formula": "1 - 3 - ♭5/#5 - ♭7 - ♭9/#9",
+      "intervals": "Dominant 7th with altered extensions",
+      "examples": ["E7#9 (Hendrix chord)", "A7♭9 (jazz tension)", "G7#5 (augmented dom.)"],
+      "color": "bg-fuchsia-50 border-fuchsia-200 hover:bg-fuchsia-100",
+      "iconColor": "text-fuchsia-600",
+      "mood": "Tense, Chromatic, Expressive"
+    }
+  ],
+  "commonProgressions": [
+    {
+      "name": "I-V-vi-IV",
+      "description": "The most popular progression in Western music",
+      "example": "C-G-Am-F",
+      "genres": ["Pop", "Rock", "Country"],
+      "songs": ["\"Let It Be\"", "\"Don't Stop Believin'\"", "\"Someone Like You\""]
+    },
+    {
+      "name": "ii-V-I",
+      "description": "The cornerstone of jazz harmony",
+      "example": "Dm7-G7-Cmaj7",
+      "genres": ["Jazz", "R&B", "Neo-Soul"],
+      "songs": ["\"All The Things You Are\"", "\"Autumn Leaves\"", "\"Fly Me To The Moon\""]
+    },
+    {
+      "name": "I-vi-ii-V",
+      "description": "Circle of fifths progression",
+      "example": "C-Am-Dm-G",
+      "genres": ["Jazz", "Doo-wop", "Ballads"],
+      "songs": ["\"Heart and Soul\"", "\"Blue Moon\"", "\"Stand By Me\""]
+    },
+    {
+      "name": "vi-IV-I-V",
+      "description": "Emotional pop progression",
+      "example": "Am-F-C-G",
+      "genres": ["Pop", "Alternative", "Indie"],
+      "songs": ["\"Zombie\"", "\"Basket Case\"", "\"What's Up?\""]
+    }
+  ],
+  "practiceExercises": [
+    {
+      "title": "Chord Construction",
+      "description": "Build chords from scales and intervals",
+      "steps": [
+        "Choose a root note",
+        "Apply the chord formula",
+        "Practice on different strings",
+        "Play in different positions"
+      ]
+    },
+    {
+      "title": "Progression Practice",
+      "description": "Master smooth chord transitions",
+      "steps": [
+        "Start with simple triads",
+        "Practice common progressions",
+        "Focus on smooth voice leading",
+        "Add rhythm and strumming"
+      ]
+    },
+    {
+      "title": "Function Analysis",
+      "description": "Understand how chords work in context",
+      "steps": [
+        "Identify chord functions",
+        "Analyze favorite songs",
+        "Practice cadences",
+        "Experiment with substitutions"
+      ]
+    }
+  ],
+  "harmonicPhilosophy": {
+    "title": "The Language of Harmony",
+    "description": "Chords are more than just combinations of notes—they're emotional vocabularies that communicate feelings, create expectations, and guide listeners through musical journeys. Each chord type has its own character, and understanding these personalities helps you choose the right harmonic tools for your musical expression.",
+    "dailyRoutine": {
+      "title": "Daily Chord Study Routine",
+      "columns": [
+        {
+          "title": "Theory Practice (15 min)",
+          "items": [
+            "Build chords from different roots",
+            "Practice chord formulas and intervals",
+            "Analyze chord functions in songs",
+            "Study voice leading between chords"
+          ]
+        },
+        {
+          "title": "Practical Application (15 min)",
+          "items": [
+            "Practice common chord progressions",
+            "Work on smooth chord transitions",
+            "Experiment with different voicings",
+            "Apply chords to favorite songs"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "scaleInfo": {
+    "name": "Lydian Mode",
+    "alternateName": "Lydian Scale",
+    "scaleType": "Heptatonic (Mode)",
+    "noteCount": 7,
+    "intervalPattern": "W-W-W-H-W-W-H",
+    "character": "Bright, dreamy, ethereal",
+    "mood": ["dreamy", "ethereal", "bright", "floating", "cinematic"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - 3 - #4 - 5 - 6 - 7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Major 3rd (Mediant)",
+      "Augmented 4th (Subdominant) - Characteristic tone (#4/tritone)",
+      "Perfect 5th (Dominant)",
+      "Major 6th (Submediant)",
+      "Major 7th (Leading Tone)",
+      "Octave"
+    ],
+    "mode": "Lydian (4th mode of major scale)",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Parent Major Scale",
+      "intervalDistance": "Perfect 4th below the Lydian root (F Lydian = C Major)"
+    },
+    "parallelScale": {
+      "name": "Major Scale (Ionian)",
+      "differences": ["Raised 4th (sharp 4th vs natural 4th)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "C Lydian",
+      "notes": "C - D - E - F# - G - A - B - C",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "F#",
+      "commonUse": "Common starting point for learning Lydian, parent scale is G major"
+    },
+    {
+      "key": "F Lydian",
+      "notes": "F - G - A - B - C - D - E - F",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most natural Lydian key with no accidentals, parent scale is C major"
+    },
+    {
+      "key": "G Lydian",
+      "notes": "G - A - B - C# - D - E - F# - G",
+      "keySignature": "2 sharps (F#, C#)",
+      "accidentals": "F#, C#",
+      "commonUse": "Popular for film score and progressive rock applications"
+    },
+    {
+      "key": "D Lydian",
+      "notes": "D - E - F# - G# - A - B - C# - D",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "accidentals": "F#, C#, G#",
+      "commonUse": "Jazz fusion favorite, great for shimmering lead passages"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (C Lydian)",
+        "description": "Open position pattern centered around C, highlighting the F# that distinguishes Lydian from the C major scale.",
+        "fretDiagram": "Uses open strings and first 4 frets, strings 5-1",
+        "alphaTex": "",
+        "applications": ["film score melodies", "dreamy chord progressions", "acoustic exploration"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "1st Position (F Lydian)",
+        "description": "Root on 6th string 1st fret, the B natural is the characteristic #4 that creates the Lydian brightness.",
+        "fretDiagram": "1st-4th frets, box pattern",
+        "alphaTex": "",
+        "applications": ["jazz voicings", "modal improvisation", "ethereal lead lines"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "5th Position (G Lydian)",
+        "description": "Moveable pattern at the 5th position for G Lydian, comfortable for progressive rock and fusion soloing.",
+        "fretDiagram": "3rd-7th frets, extended range",
+        "alphaTex": "",
+        "applications": ["progressive rock solos", "fusion lead work", "cinematic phrasing"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open (C Lydian)",
+        "frets": "0-4",
+        "difficulty": "Beginner",
+        "usage": "Film score melodies, dreamy acoustic passages"
+      },
+      {
+        "position": "1st Fret (F Lydian)",
+        "frets": "1-4",
+        "difficulty": "Intermediate",
+        "usage": "Jazz, modal improvisation, ethereal playing"
+      },
+      {
+        "position": "5th Fret (G Lydian)",
+        "frets": "3-7",
+        "difficulty": "Intermediate",
+        "usage": "Progressive rock, fusion, cinematic lead work"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "I",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Tonic - Bright major tonic with a floating, unresolved quality from the #4",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "II",
+        "chord": "D",
+        "quality": "Major",
+        "function": "Supertonic - Characteristic Lydian chord, the major II creates the dreamy brightness",
+        "notes": "D - F# - A"
+      },
+      {
+        "degree": "iii",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Mediant - Minor chord providing emotional depth and contrast",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "#iv\u00b0",
+        "chord": "F#dim",
+        "quality": "Diminished",
+        "function": "Subdominant - Diminished chord built on the characteristic #4, adds tension",
+        "notes": "F# - A - C"
+      },
+      {
+        "degree": "V",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Dominant - Standard dominant function with strong resolution tendency",
+        "notes": "G - B - D"
+      },
+      {
+        "degree": "vi",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Submediant - Relative minor for emotional coloring",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "vii",
+        "chord": "Bm",
+        "quality": "Minor",
+        "function": "Leading Tone - Minor leading tone chord, gentle pull toward tonic",
+        "notes": "B - D - F#"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Lydian Float (I-II)",
+        "chords": ["C", "D"],
+        "romanNumerals": "I - II",
+        "description": "The signature Lydian progression - the major II chord over a major tonic creates the bright, floating, dreamlike quality that defines the mode",
+        "genre": "Film/Progressive",
+        "alphaTex": ""
+      },
+      {
+        "name": "Cinematic Lydian (I-II-vii-I)",
+        "chords": ["C", "D", "Bm", "C"],
+        "romanNumerals": "I - II - vii - I",
+        "description": "Film score-style progression using the characteristic major II and minor vii to create wonder and majesty",
+        "genre": "Film Score/Ambient",
+        "alphaTex": ""
+      },
+      {
+        "name": "Progressive Lydian (I-II-V-I)",
+        "chords": ["C", "D", "G", "C"],
+        "romanNumerals": "I - II - V - I",
+        "description": "Progressive rock progression combining the Lydian II with standard dominant resolution for an uplifting, expansive sound",
+        "genre": "Progressive Rock/Fusion",
+        "alphaTex": ""
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Film Scores",
+      "usage": "Creates wonder, majesty, and awe in cinematic compositions, a favorite of John Williams and other film composers",
+      "characteristics": ["sense of wonder and discovery", "majestic fanfares", "floating ethereal themes", "uplifting emotional climaxes"],
+      "examples": ["E.T. The Extra-Terrestrial theme - John Williams", "The Simpsons theme - Danny Elfman"]
+    },
+    {
+      "genre": "Progressive Rock",
+      "usage": "Creates expansive, otherworldly textures in progressive and art rock compositions",
+      "characteristics": ["extended modal passages", "atmospheric textures", "complex harmonic movements", "ethereal guitar solos"],
+      "examples": ["Steve Vai - The Riddle", "Joe Satriani - Flying in a Blue Dream"]
+    },
+    {
+      "genre": "Jazz Fusion",
+      "usage": "Sophisticated modal improvisation over major 7th #11 chords and Lydian vamps",
+      "characteristics": ["Lydian chromatic concept", "maj7#11 chord voicings", "floating modal improvisation", "extended harmony"],
+      "examples": ["Pat Metheny compositions", "George Russell's Lydian Chromatic Concept"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Flying in a Blue Dream",
+      "artist": "Joe Satriani",
+      "key": "C Lydian",
+      "genre": "Instrumental Rock",
+      "usage": "Quintessential Lydian guitar composition showcasing the mode's floating, dreamlike quality throughout",
+      "difficulty": "Advanced",
+      "learningValue": "Definitive example of Lydian mode in rock guitar, demonstrates the #4 sound extensively"
+    },
+    {
+      "title": "The Riddle",
+      "artist": "Steve Vai",
+      "key": "G Lydian",
+      "genre": "Instrumental Rock",
+      "usage": "Atmospheric Lydian composition with ethereal melodies and advanced modal improvisation",
+      "difficulty": "Advanced",
+      "learningValue": "Shows how Lydian creates an otherworldly atmosphere in virtuoso guitar music"
+    },
+    {
+      "title": "Freewill",
+      "artist": "Rush",
+      "key": "F Lydian",
+      "genre": "Progressive Rock",
+      "usage": "Progressive rock classic featuring Lydian passages that create an uplifting, expansive feeling",
+      "difficulty": "Intermediate",
+      "learningValue": "Demonstrates Lydian integration in progressive rock songwriting"
+    },
+    {
+      "title": "Here Comes My Girl",
+      "artist": "Tom Petty and the Heartbreakers",
+      "key": "A Lydian",
+      "genre": "Rock",
+      "usage": "Bright verse melody using Lydian mode for an uplifting, optimistic feeling over a major chord",
+      "difficulty": "Beginner",
+      "learningValue": "Accessible example of how Lydian adds brightness to straightforward rock songs"
+    },
+    {
+      "title": "Blue Light",
+      "artist": "David Gilmour",
+      "key": "D Lydian",
+      "genre": "Art Rock",
+      "usage": "Atmospheric composition exploring the dreamy, floating quality of Lydian mode",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows tasteful Lydian phrasing with emotional dynamics and atmospheric lead work"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "C Lydian Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner",
+      "description": "Practice the C Lydian scale ascending and descending, focusing on the characteristic #4 (F#) that distinguishes it from C major",
+      "alphaTex": "",
+      "tempo": "60-120 BPM",
+      "focus": ["scale memorization", "sharp 4th recognition"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM",
+        "Listen for the F# that gives Lydian its bright, floating quality",
+        "Compare with C major to hear how the single raised 4th transforms the sound"
+      ]
+    },
+    {
+      "name": "Lydian Chord Tone Targeting",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Practice targeting the #4 and major 7th chord tones over Lydian vamps to develop authentic modal phrasing",
+      "alphaTex": "",
+      "tempo": "70-110 BPM",
+      "focus": ["chord tone awareness", "Lydian phrasing"],
+      "instructions": [
+        "Play over a C-D major chord vamp (I-II progression)",
+        "Emphasize the F# on strong beats to highlight the Lydian character",
+        "Resolve phrases to the root and major 3rd for stability"
+      ]
+    },
+    {
+      "name": "Lydian vs Major Ear Training",
+      "type": "Ear Training",
+      "difficulty": "Beginner",
+      "description": "Compare Lydian with the major scale to hear the characteristic #4 that creates the dreamy, floating quality",
+      "alphaTex": "",
+      "tempo": "60-100 BPM",
+      "focus": ["ear training", "sharp 4th recognition"],
+      "instructions": [
+        "Play C Lydian, then C major (Ionian) back to back",
+        "Focus on the 4th degree difference (F# vs F natural in C)",
+        "Sing both scales to internalize the bright, uplifting Lydian character"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Major Scale (Ionian)",
+      "relationship": "Parallel major",
+      "differences": "Lydian has a raised 4th instead of natural 4th - this is the only difference",
+      "usage": "Standard major sound without the floating Lydian brightness"
+    },
+    {
+      "scale": "Lydian Dominant",
+      "relationship": "Related exotic mode",
+      "differences": "Lydian dominant has a flat 7th in addition to the sharp 4th, combining brightness with a dominant character",
+      "usage": "Jazz and fusion contexts, resolving dominant 7th #11 chords"
+    },
+    {
+      "scale": "Mixolydian Mode",
+      "relationship": "Complementary major mode",
+      "differences": "Mixolydian has a flat 7th creating a bluesy dominant sound; Lydian has a sharp 4th creating a bright dreamy sound",
+      "usage": "Earthier, more grounded major mode for blues, rock, and country"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Major scale knowledge",
+      "Basic mode concepts and terminology"
+    ],
+    "nextSteps": [
+      "Lydian dominant mode",
+      "Mixolydian mode"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and Lydian sound recognition",
+        "exercises": ["Basic Lydian scale runs", "Compare with major scale", "Open position practice in C Lydian"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)",
+        "duration": "20-30 minutes daily",
+        "focus": "Multiple positions and the #4 interval character",
+        "exercises": ["Position playing in different keys", "I-II vamp improvisation", "Chord tone targeting over Lydian harmony"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily",
+        "focus": "Musical application in film score, progressive rock, and jazz contexts",
+        "exercises": ["Improvise over Lydian backing tracks", "Study Satriani and Vai Lydian phrasing", "Compose floating melodies using Lydian"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "lydian",
+    "tags": ["lydian", "mode", "scales", "theory", "film-score", "progressive", "jazz", "intermediate"],
+    "category": "modes",
+    "subcategory": "church-modes",
+    "lastUpdated": "2024-01-15",
+    "sources": ["Music theory pedagogy", "Guitar education standards"]
+  }
+}

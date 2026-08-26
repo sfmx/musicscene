@@ -1,0 +1,426 @@
+{
+  "slug": "circle-of-fifths",
+  "progressionInfo": {
+    "name": "Circle of Fifths: Advanced Harmonic Movement",
+    "pageTitle": "Circle of Fifths Progressions",
+    "subtitle": "Explore sophisticated progressions that move through keys using the powerful relationships in the circle of fifths. Master advanced harmonic movement and sophisticated voice leading.",
+    "heroGradient": "bg-gradient-to-r from-violet-500 to-indigo-600",
+    "tags": [
+      "Sequential Fifths",
+      "Voice Leading",
+      "Jazz & Classical",
+      "Advanced Harmony"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "The Power of Fifth Relationships",
+    "properties": [
+      { "label": "Root motion by 5ths", "value": "The strongest harmonic movement in music" },
+      { "label": "Voice leading", "value": "Common tones and stepwise motion between chords" },
+      { "label": "Functional harmony", "value": "Creates a clear sense of direction and resolution" },
+      { "label": "Circle direction", "value": "Moving clockwise increases sharps, counter-clockwise increases flats" },
+      { "label": "Sequence", "value": "C > G > D > A > E > B > F# > C# (clockwise by fifths)" }
+    ],
+    "exampleTitle": "What You'll Learn",
+    "examples": [
+      { "label": "Foundation", "value": "Understanding the circle of fifths relationship" },
+      { "label": "Root Motion", "value": "How root motion by fifths creates strong harmony" },
+      { "label": "Jazz", "value": "Jazz applications and sophisticated voice leading" },
+      { "label": "Sequences", "value": "Sequential patterns and modulation techniques" },
+      { "label": "Applications", "value": "Classical and contemporary applications" }
+    ],
+    "bulletColor": "text-violet-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "Basic Circle of Fifths (Key of C)",
+        "description": "C - Am - Dm - G: This basic progression demonstrates root movement by descending fifths (or ascending fourths).",
+        "chords": [
+          { "label": "C Major", "chord": "C_major", "subtitle": "Starting point" },
+          { "label": "A Minor", "chord": "A_minor", "subtitle": "Down a 5th" },
+          { "label": "D Minor", "chord": "D_minor", "subtitle": "Down another 5th" },
+          { "label": "G Major", "chord": "G_major", "subtitle": "Down another 5th" }
+        ],
+        "alphaTex": "\\ts 4/4 :w 3.5.3.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1",
+        "alphaTexTitle": "Basic Circle of Fifths Movement",
+        "practiceNotes": [
+          "Root movement: C (down 5th to) Am (down 5th to) Dm (down 5th to) G",
+          "Notice how each chord shares common tones with the next",
+          "This is the foundation for all circle-based progressions"
+        ],
+        "colorBg": "bg-violet-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-900",
+        "colorText": "text-violet-800",
+        "colorDetail": "text-violet-700"
+      },
+      {
+        "title": "Extended Circle Progression",
+        "description": "C - Am - Dm - G - Em - Am - Dm - G: Extending the circle creates longer, more sophisticated progressions spanning multiple measures.",
+        "chords": [
+          { "label": "C Major", "chord": "C_major", "subtitle": "Starting point" },
+          { "label": "E Minor", "chord": "E_minor", "subtitle": "Extended circle" },
+          { "label": "D Minor", "chord": "D_minor", "subtitle": "Sequence repeat" },
+          { "label": "G Major", "chord": "G_major", "subtitle": "Resolution" }
+        ],
+        "alphaTex": "\\ts 4/4 :w 3.5.3.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1 | :w 2.5.2.4.2.3.4.2.4.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1",
+        "alphaTexTitle": "Extended Circle: C-Am-Dm-G-Em-Am-Dm-G",
+        "practiceNotes": [
+          "Each chord's root is a perfect fifth below the previous chord's root",
+          "The sequence can repeat and extend as long as desired",
+          "Notice the pattern: I-vi-ii-V-iii-vi-ii-V"
+        ],
+        "colorBg": "bg-indigo-50",
+        "colorBorder": "border-indigo-200",
+        "colorTitle": "text-indigo-900",
+        "colorText": "text-indigo-800",
+        "colorDetail": "text-indigo-700"
+      },
+      {
+        "title": "Jazz Circle with Seventh Chords",
+        "description": "Cmaj7 - Am7 - Dm7 - G7 - Em7 - Am7 - Dm7 - G7: Jazz musicians use seventh chords for richer harmony and smoother voice leading.",
+        "chords": [
+          { "label": "Cmaj7", "chord": "C_major_7", "subtitle": "Major 7th" },
+          { "label": "Am7", "chord": "A_minor_7", "subtitle": "Minor 7th" },
+          { "label": "Dm7", "chord": "D_minor_7", "subtitle": "Minor 7th" },
+          { "label": "G7", "chord": "G_7", "subtitle": "Dominant 7th" }
+        ],
+        "alphaTex": "\\ts 4/4 :w 3.5.2.4.4.3.5.2 | :w 0.5.1.4.0.3.0.2 | :w 1.4.2.3.1.2 | :w 3.6.4.4.3.3.4.2 | :w 2.5.2.4.0.3.0.2 | :w 0.5.1.4.0.3.0.2 | :w 1.4.2.3.1.2 | :w 3.6.4.4.3.3.4.2",
+        "alphaTexTitle": "Jazz Circle with 7th Chords",
+        "practiceNotes": [
+          "Voice leading: the 7th of each chord resolves down to the 3rd of the next chord",
+          "These voicings create much smoother transitions than open chords",
+          "Essential vocabulary for jazz guitar playing"
+        ],
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-900",
+        "colorText": "text-orange-800",
+        "colorDetail": "text-orange-700"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Circle Progressions in Different Keys",
+        "description": "The 4-chord circle pattern transposed to common guitar-friendly keys.",
+        "items": [
+          "C Major: C - Am - Dm - G",
+          "G Major: G - Em - Am - D",
+          "D Major: D - Bm - Em - A",
+          "A Major: A - F#m - Bm - E",
+          "F Major: F - Dm - Gm - C"
+        ],
+        "colorBg": "bg-gray-50",
+        "colorBorder": "border-gray-200",
+        "colorTitle": "text-gray-800",
+        "colorText": "text-gray-700"
+      },
+      {
+        "title": "Tritone Substitutions",
+        "description": "Replace dominant chords with chords a tritone away for sophisticated jazz harmony.",
+        "items": [
+          "Instead of: Am7 - D7 - G, try: Am7 - Ab7 - G",
+          "The tritone sub shares the same guide tones (3rd and 7th)",
+          "Creates chromatic bass motion for smoother voice leading",
+          "Common in jazz standards and modern harmony"
+        ],
+        "colorBg": "bg-pink-50",
+        "colorBorder": "border-pink-200",
+        "colorTitle": "text-pink-800",
+        "colorText": "text-pink-700"
+      },
+      {
+        "title": "Chromatic Movement",
+        "description": "Add chromatic passing chords between circle changes for smoother voice leading.",
+        "items": [
+          "Basic: C - Am - Dm - G",
+          "With passing: C - C#dim7 - Dm - G",
+          "The diminished chord acts as a chromatic connector",
+          "Creates a sophisticated smooth bass line movement"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700"
+      },
+      {
+        "title": "Voice Leading & Bass Movement",
+        "description": "Circle progressions feature a strong descending bass line that reinforces the harmonic movement.",
+        "items": [
+          "Bass pattern descends by fifths: C - A - D - G - E - A - D - G",
+          "Common tones connect adjacent chords smoothly",
+          "Inner voices move by step while bass moves by fifth",
+          "This creates the strongest possible sense of harmonic direction"
+        ],
+        "colorBg": "bg-teal-50",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-800",
+        "colorText": "text-teal-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Classical Music",
+      "examples": [
+        {
+          "title": "Bach Chorales and Fugues",
+          "description": "Circle progressions are fundamental to Baroque counterpoint",
+          "detail": "Bach frequently used circle of fifths sequences as the harmonic backbone of his compositions."
+        },
+        {
+          "title": "Mozart and Beethoven Sonatas",
+          "description": "Classical period development sections",
+          "detail": "Sequence patterns often move through the circle of fifths in sonata development sections."
+        },
+        {
+          "title": "Sequence Patterns",
+          "description": "Development sections in classical forms",
+          "detail": "The circle provides a systematic way to modulate through related keys."
+        },
+        {
+          "title": "Modulation to Related Keys",
+          "description": "Moving between closely related keys",
+          "detail": "Adjacent keys on the circle share the most notes, making modulations smooth and natural."
+        }
+      ]
+    },
+    "right": {
+      "title": "Jazz Standards",
+      "examples": [
+        {
+          "title": "\"Autumn Leaves\"",
+          "description": "Circle progression in the bridge section",
+          "detail": "Bridge: Am7 - D7 - G - G / Em7 - A7 - D - D. One of the most famous circle of fifths examples."
+        },
+        {
+          "title": "\"All the Things You Are\"",
+          "description": "Extended circle sequences throughout",
+          "detail": "The entire harmony is built on extended circle of fifths movement through multiple keys."
+        },
+        {
+          "title": "\"Giant Steps\"",
+          "description": "Coltrane changes - circle pushed to extremes",
+          "detail": "John Coltrane's revolutionary composition takes circle relationships and divides them into major thirds."
+        },
+        {
+          "title": "\"Fly Me to the Moon\"",
+          "description": "Circle sequences throughout the form",
+          "detail": "The verse follows a clear circle of fifths pattern that gives the song its elegant harmonic motion."
+        },
+        {
+          "title": "\"All of Me\"",
+          "description": "Circle movement in measures 17-20",
+          "detail": "E7 - Am - Am / Dm - G7 - C. Classic example of circle of fifths in a standard."
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Progressive Learning",
+      "icon": "🎯",
+      "items": [
+        "Learn the basic pattern: Start with C-Am-Dm-G",
+        "Understand the theory: Identify the fifth relationships",
+        "Practice in all keys: Start with easier keys (G, D, A)",
+        "Add seventh chords: Practice jazz voicings",
+        "Work on voice leading: Focus on smooth transitions",
+        "Learn real songs: Apply to jazz standards and classical pieces"
+      ],
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700"
+    },
+    {
+      "title": "Technical Exercises",
+      "icon": "🎸",
+      "items": [
+        "Practice circle progressions with a metronome",
+        "Work on fingerpicking patterns over the circle",
+        "Practice with different rhythmic feels (swing, straight, bossa)",
+        "Use alternate chord voicings in different positions",
+        "Practice smooth transitions between barre chord shapes"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Musical Applications",
+      "icon": "🎵",
+      "items": [
+        "Improvise melodies over circle progressions",
+        "Write songs using circle of fifths movement",
+        "Analyze famous songs for hidden circle patterns",
+        "Practice modulating between keys using the circle",
+        "Learn to hear and recognize fifth relationships by ear"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Basic Circle of Fifths (C-Am-Dm-G)",
+      "description": "The fundamental 4-chord circle pattern demonstrating root movement by descending fifths.",
+      "alphaTex": "\\ts 4/4 :w 3.5.3.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1",
+      "practiceNotes": [
+        "Root movement: C (down 5th to) Am (down 5th to) Dm (down 5th to) G",
+        "Listen for the common tones between adjacent chords",
+        "This is the building block for all circle progressions"
+      ],
+      "colorBg": "bg-violet-50",
+      "colorBorder": "border-violet-200",
+      "colorTitle": "text-violet-900",
+      "colorText": "text-violet-800",
+      "colorDetail": "text-violet-700"
+    },
+    {
+      "title": "Extended Circle (8 Measures)",
+      "description": "C-Am-Dm-G-Em-Am-Dm-G: A longer sequence that extends the circle pattern over two phrases.",
+      "alphaTex": "\\ts 4/4 :w 3.5.3.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1 | :w 2.5.2.4.2.3.4.2.4.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1",
+      "practiceNotes": [
+        "Pattern: Each chord's root is a perfect fifth below the previous",
+        "Notice how the second half mirrors the first with Em starting the sequence",
+        "Try extending this pattern even further through the full circle"
+      ],
+      "colorBg": "bg-indigo-50",
+      "colorBorder": "border-indigo-200",
+      "colorTitle": "text-indigo-900",
+      "colorText": "text-indigo-800",
+      "colorDetail": "text-indigo-700"
+    },
+    {
+      "title": "Jazz Circle with Seventh Chords",
+      "description": "Cmaj7-Am7-Dm7-G7-Em7-Am7-Dm7-G7: The jazz version with seventh chords for richer harmony and smoother voice leading.",
+      "alphaTex": "\\ts 4/4 :w 3.5.2.4.4.3.5.2 | :w 0.5.1.4.0.3.0.2 | :w 1.4.2.3.1.2 | :w 3.6.4.4.3.3.4.2 | :w 2.5.2.4.0.3.0.2 | :w 0.5.1.4.0.3.0.2 | :w 1.4.2.3.1.2 | :w 3.6.4.4.3.3.4.2",
+      "practiceNotes": [
+        "Voice leading: the 7th of each chord resolves down to the 3rd of the next",
+        "This creates a chain of resolutions that pulls the ear forward",
+        "Essential for jazz comping and solo guitar arrangements"
+      ],
+      "colorBg": "bg-orange-50",
+      "colorBorder": "border-orange-200",
+      "colorTitle": "text-orange-900",
+      "colorText": "text-orange-800",
+      "colorDetail": "text-orange-700"
+    },
+    {
+      "title": "Descending Bass Line Circle",
+      "description": "Circle of fifths with emphasis on the descending bass movement that reinforces the harmonic direction.",
+      "alphaTex": "\\ts 4/4 :w 3.5.3.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1 | :w 2.5.2.4.2.3.4.2.4.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 2.4.2.3.1.2.3.1 | :w 3.6.2.5.0.4.0.3.3.2.3.1",
+      "practiceNotes": [
+        "Bass pattern: C - A - D - G - E - A - D - G (descending by fifths)",
+        "Emphasize the bass note of each chord to hear the fifth movement",
+        "Try isolating the bass line and playing it as a single-note exercise first"
+      ],
+      "colorBg": "bg-teal-50",
+      "colorBorder": "border-teal-200",
+      "colorTitle": "text-teal-900",
+      "colorText": "text-teal-800",
+      "colorDetail": "text-teal-700"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Theory Foundations",
+      "sections": [
+        {
+          "title": "Circle of Fifths Visualization",
+          "items": [
+            "Clockwise: C > G > D > A > E > B > F# > C# (ascending fifths)",
+            "Counter-clockwise: C > F > Bb > Eb > Ab > Db > Gb (ascending fourths)",
+            "Adjacent keys share the most notes in common",
+            "Keys opposite each other on the circle are maximally distant (tritone)"
+          ]
+        },
+        {
+          "title": "Harmonic Principles",
+          "items": [
+            "Movement by fifths is the strongest root motion in tonal music",
+            "Each chord shares common tones with adjacent chords in the circle",
+            "The ii-V-I progression is a segment of the circle of fifths",
+            "Full circle: C-F-Bb-Eb-Ab-Db-Gb-B-E-A-D-G-C (all 12 keys)"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Advanced Applications",
+      "sections": [
+        {
+          "title": "Song Analysis Examples",
+          "items": [
+            "\"Autumn Leaves\" bridge: Am7 - D7 - G / Em7 - A7 - D",
+            "\"All of Me\" measures 17-20: E7 - Am - Am / Dm - G7 - C",
+            "Many classical pieces use circle sequences in development sections",
+            "Pop songs often contain hidden circle of fifths fragments"
+          ]
+        },
+        {
+          "title": "Modulation Techniques",
+          "items": [
+            "Use the circle to modulate to related keys smoothly",
+            "Common-tone modulation: share notes between adjacent keys",
+            "Secondary dominants follow circle of fifths logic (V/V, V/vi, etc.)",
+            "Coltrane changes divide the circle into major third relationships"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand circle of fifths progressions, explore other essential progressions and deepen your harmonic knowledge.",
+    "links": [
+      {
+        "slug": "vi-iv-i-v",
+        "title": "vi-IV-I-V Progression",
+        "description": "Explore emotional modern progressions with a minor start.",
+        "linkText": "Learn emotional progressions",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "ii-v-i",
+        "title": "ii-V-I Progression",
+        "description": "Master the cornerstone of jazz harmony and voice leading.",
+        "linkText": "Learn jazz harmony",
+        "icon": "🎷",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "12-bar-blues",
+        "title": "12-Bar Blues",
+        "description": "Learn the foundational blues form that shaped popular music.",
+        "linkText": "Master the blues",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-amber-300",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  },
+  "navigation": {
+    "prev": {
+      "href": "/lessons/theory/progressions/12-bar-blues",
+      "label": "12-Bar Blues"
+    }
+  }
+}

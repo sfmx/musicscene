@@ -1,0 +1,216 @@
+{
+  "slug": "recording-daw",
+  "category": "recording",
+  "pageTitle": "Digital Audio Workstations (DAWs)",
+  "subtitle": "The heart of modern music production. DAWs provide the software environment for recording, editing, mixing, and mastering your musical creations.",
+  "heroGradient": "bg-gradient-to-r from-purple-50 to-pink-50",
+  "backLink": {
+    "href": "/lessons/gear/recording",
+    "label": "Back to Recording Gear"
+  },
+  "introduction": {
+    "title": "What is a DAW?",
+    "text": "A Digital Audio Workstation is software that serves as the central hub for music production. It integrates multitrack recording, MIDI sequencing, audio editing, mixing, and often includes virtual instruments and effects.",
+    "columns": [
+      {
+        "title": "Core Functions",
+        "text": "Recording: Capture audio and MIDI. Editing: Cut, copy, paste, time-stretch. Mixing: Balance levels, EQ, effects. Sequencing: Program MIDI instruments. Automation: Control parameters over time. Export: Render final mixes and masters."
+      },
+      {
+        "title": "Key Components",
+        "text": "Timeline: Arrange tracks in time. Mixer: Control individual track levels. Browser: Manage files and sounds. Piano Roll: Edit MIDI notes visually. Plugin Host: Load instruments and effects. Transport: Play, record, stop controls."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Popular DAW Options",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Avid Pro Tools",
+          "description": "Industry standard for professional audio. Excellent audio editing capabilities, advanced mixing and automation, collaborative workflows.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Pricing", "value": "Subscription $29.99/month or perpetual license ~$599" }
+          ],
+          "items": [
+            "Industry standard for professional audio",
+            "Excellent audio editing capabilities",
+            "Advanced mixing and automation",
+            "Collaborative workflows (Pro Tools | Cloud)",
+            "Best for: Professional recording studios, audio post-production"
+          ]
+        },
+        {
+          "title": "Apple Logic Pro",
+          "description": "Excellent value with included content. Intuitive Mac-native interface with comprehensive virtual instruments and high-quality effects.",
+          "bgColor": "bg-green-50",
+          "fields": [
+            { "label": "Pricing", "value": "One-time purchase $199.99 (Mac App Store)" }
+          ],
+          "items": [
+            "Excellent value with included content",
+            "Intuitive Mac-native interface",
+            "Comprehensive virtual instruments",
+            "Strong MIDI capabilities",
+            "Best for: Mac users, songwriting, electronic music, home studios"
+          ]
+        },
+        {
+          "title": "Ableton Live",
+          "description": "Unique session view for live performance. Excellent for electronic music with innovative audio manipulation tools and loop-based workflow.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Pricing", "value": "Standard $449, Suite $749" }
+          ],
+          "items": [
+            "Unique session view for live performance",
+            "Excellent for electronic music",
+            "Innovative audio manipulation tools",
+            "Strong loop-based workflow",
+            "Best for: Electronic music, live performance, sound design"
+          ]
+        },
+        {
+          "title": "FL Studio",
+          "description": "Pattern-based sequencing with lifetime free updates. User-friendly interface excellent for hip-hop and EDM production.",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Pricing", "value": "Fruity $99, Producer $199, All Plugins $399" }
+          ],
+          "items": [
+            "Lifetime free updates",
+            "Pattern-based sequencing",
+            "Excellent for hip-hop and EDM",
+            "User-friendly interface",
+            "Best for: Beat making, electronic dance music, budget-conscious producers"
+          ]
+        },
+        {
+          "title": "Cockos Reaper",
+          "description": "Extremely affordable and lightweight. Highly customizable interface with powerful scripting capabilities and low system resource usage.",
+          "bgColor": "bg-teal-50",
+          "fields": [
+            { "label": "Pricing", "value": "$60 personal license, $225 commercial" }
+          ],
+          "items": [
+            "Extremely affordable and lightweight",
+            "Highly customizable interface",
+            "Powerful scripting capabilities",
+            "Low system resource usage",
+            "Best for: Budget-conscious producers, audio editing, older hardware"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Free DAW Options",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Full-Featured Free DAWs",
+          "bgColor": "bg-gray-50",
+          "fields": [
+            { "label": "Reaper (60-day trial)", "value": "Full-featured trial, honor system" },
+            { "label": "Cakewalk by BandLab", "value": "Professional DAW, completely free (Windows)" },
+            { "label": "GarageBand", "value": "Free with Mac, great for beginners" },
+            { "label": "Audacity", "value": "Audio editing and basic recording" }
+          ]
+        },
+        {
+          "title": "Limited Free Versions",
+          "bgColor": "bg-gray-50",
+          "fields": [
+            { "label": "Pro Tools First", "value": "16 tracks, cloud-based projects" },
+            { "label": "Studio One Prime", "value": "Unlimited tracks, limited features" },
+            { "label": "Tracktion T7", "value": "Full version free, older but capable" },
+            { "label": "Ardour", "value": "Open source, pay-what-you-want" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Choose Your DAW",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Consider Your Needs",
+          "items": [
+            "Music Style: Different DAWs excel at different genres",
+            "Workflow: Linear vs. loop-based vs. session-based",
+            "Budget: One-time purchase vs. subscription",
+            "Platform: Windows, Mac, or Linux compatibility",
+            "Learning Curve: User-friendly vs. feature-rich",
+            "Collaboration: File sharing and compatibility needs"
+          ]
+        },
+        {
+          "title": "Try Before You Buy",
+          "items": [
+            "Most DAWs offer free trials",
+            "Start with free options (GarageBand, Reaper trial)",
+            "Watch tutorial videos for different DAWs",
+            "Consider bundled content and plugins",
+            "Check system requirements",
+            "Read user reviews and forums"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential DAW Concepts",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Recording & Editing",
+          "bgColor": "bg-blue-50",
+          "items": [
+            "Tracks: Individual audio or MIDI channels",
+            "Regions/Clips: Recorded or imported audio segments",
+            "Quantization: Aligning timing to grid",
+            "Comping: Creating perfect takes from multiple recordings",
+            "Time Stretching: Changing tempo without pitch",
+            "Pitch Correction: Tuning vocal and instrumental parts"
+          ]
+        },
+        {
+          "title": "Mixing & Processing",
+          "bgColor": "bg-green-50",
+          "items": [
+            "Plugins: Software effects and instruments",
+            "Automation: Recording parameter changes over time",
+            "Sends & Returns: Routing for effects processing",
+            "Busing: Grouping tracks for processing",
+            "Bouncing/Rendering: Creating final audio files",
+            "Freeze/Commit: Converting MIDI or processed audio"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DAW Workflow Tips",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Learn Keyboard Shortcuts",
+          "description": "Master the essential shortcuts for your DAW. This dramatically speeds up your workflow and keeps you in the creative flow rather than hunting through menus."
+        },
+        {
+          "title": "Organize Your Projects",
+          "description": "Use consistent naming conventions, color coding, and folder structures. Create templates for common project types to speed up startup."
+        },
+        {
+          "title": "Save and Backup Regularly",
+          "description": "Set up automatic saving and maintain multiple backups. Consider cloud storage for important projects and use version control."
+        },
+        {
+          "title": "Optimize Performance",
+          "description": "Learn buffer size settings, freeze tracks with heavy processing, and keep your system optimized for audio production."
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

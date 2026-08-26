@@ -1,0 +1,373 @@
+{
+  "slug": "minor-6th",
+  "intervalInfo": {
+    "name": "Minor 6th Interval",
+    "pageTitle": "Minor 6th Interval",
+    "subtitle": "The inversion of the major 3rd - 8 semitones that creates a rich, complex sound with both consonant and slightly dissonant qualities.",
+    "colorScheme": "purple",
+    "heroGradient": "bg-gradient-to-r from-purple-500 to-violet-600",
+    "tags": [
+      "8 Semitones",
+      "Major 3rd Inversion",
+      "Rich & Complex",
+      "Jazz Harmony"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Interval Properties",
+    "properties": [
+      {
+        "label": "Size",
+        "value": "8 semitones (4 whole steps)"
+      },
+      {
+        "label": "Quality",
+        "value": "Minor"
+      },
+      {
+        "label": "Sound",
+        "value": "Rich, complex, somewhat dissonant"
+      },
+      {
+        "label": "Consonance",
+        "value": "Mild dissonance"
+      },
+      {
+        "label": "Function",
+        "value": "Adds harmonic color and sophistication"
+      }
+    ],
+    "examplesTitle": "Common Examples",
+    "examples": [
+      {
+        "label": "C to Ab",
+        "value": "Classic minor 6th"
+      },
+      {
+        "label": "F to Db",
+        "value": "In minor key context"
+      },
+      {
+        "label": "Jazz voicings",
+        "value": "In extended chords"
+      },
+      {
+        "label": "\"Love Story\"",
+        "value": "Opening melody"
+      }
+    ]
+  },
+  "guitarApplications": {
+    "intervalExamples": {
+      "title": "Minor 6th Intervals - Rich Harmonic Color",
+      "description": "The minor 6th (8 semitones) is the inversion of the major 3rd, creating a rich, complex sound that adds sophisticated harmonic color to music.",
+      "examples": [
+        {
+          "title": "C → Ab Minor 6th",
+          "subtitle": "Classic minor 6th relationship",
+          "chord1": "C_to_Ab_m6",
+          "chord1Label": "C (5th string 3rd fret)",
+          "chord2": "Ab_from_C_m6",
+          "chord2Label": "Ab (4th string 6th fret)",
+          "alphaTex": "3.5.4 6.4.4",
+          "alphaTexTitle": "C to Ab Minor 6th",
+          "description": "Rich, complex harmonic color",
+          "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+          "colorBorder": "border border-purple-200",
+          "colorTitle": "text-purple-800",
+          "colorText": "text-purple-700",
+          "colorDetail": "text-purple-600"
+        },
+        {
+          "title": "F → Db Minor 6th",
+          "subtitle": "Minor key context example",
+          "chord1": "F_to_Db_m6",
+          "chord1Label": "F (6th string 1st fret)",
+          "chord2": "Db_from_F_m6",
+          "chord2Label": "Db (5th string 4th fret)",
+          "alphaTex": "1.6.4 4.5.4",
+          "alphaTexTitle": "F to Db Minor 6th",
+          "description": "Natural minor scale relationship",
+          "colorBg": "bg-gradient-to-br from-violet-50 to-violet-100",
+          "colorBorder": "border border-violet-200",
+          "colorTitle": "text-violet-800",
+          "colorText": "text-violet-700",
+          "colorDetail": "text-violet-600"
+        },
+        {
+          "title": "A → F Minor 6th",
+          "subtitle": "Jazz voicing application",
+          "chord1": "A_to_F_m6",
+          "chord1Label": "A (5th string open)",
+          "chord2": "F_from_A_m6",
+          "chord2Label": "F (4th string 3rd fret)",
+          "alphaTex": "0.5.4 3.4.4",
+          "alphaTexTitle": "A to F Minor 6th",
+          "description": "Sophisticated harmonic movement",
+          "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+          "colorBorder": "border border-indigo-200",
+          "colorTitle": "text-indigo-800",
+          "colorText": "text-indigo-700",
+          "colorDetail": "text-indigo-600"
+        }
+      ]
+    },
+    "chordConstructions": {
+      "title": "6th Chord Applications - Adding Harmonic Color",
+      "items": [
+        {
+          "title": "C6 Chord",
+          "chord": "C6",
+          "chordLabel": "C6 with added major 6th (A)",
+          "alphaTex": "(3.5 2.4 3.3 5.5).1",
+          "alphaTexTitle": "C6 Chord",
+          "alphaTexDescription": "C-E-G-A: Major triad + major 6th",
+          "bullets": [
+            "Major 6th: C → A (adds sweetness)",
+            "Jazz standard: Sophisticated resolution",
+            "Folk/country: Open, friendly sound"
+          ],
+          "colorBg": "bg-gradient-to-br from-blue-50 to-blue-100",
+          "colorBorder": "border border-blue-200",
+          "colorTitle": "text-blue-800",
+          "colorText": "text-blue-700",
+          "colorDetail": "text-blue-600"
+        },
+        {
+          "title": "Am6 Chord",
+          "chord": "Am6",
+          "chordLabel": "Am6 with added major 6th (F#)",
+          "alphaTex": "(0.5 3.4 2.4 2.1).1",
+          "alphaTexTitle": "Am6 Chord",
+          "alphaTexDescription": "A-C-E-F#: Minor triad + major 6th",
+          "bullets": [
+            "Major 6th: A → F# (brightens minor chord)",
+            "Bossa nova: Essential Brazilian sound",
+            "Modern jazz: Sophisticated minor harmony"
+          ],
+          "colorBg": "bg-gradient-to-br from-emerald-50 to-emerald-100",
+          "colorBorder": "border border-emerald-200",
+          "colorTitle": "text-emerald-800",
+          "colorText": "text-emerald-700",
+          "colorDetail": "text-emerald-600"
+        },
+        {
+          "title": "Dm6 Chord",
+          "chord": "Dm6",
+          "chordLabel": "Dm6 with added major 6th (B)",
+          "alphaTex": "(0.4 1.4 2.5 4.6).1",
+          "alphaTexTitle": "Dm6 Chord",
+          "alphaTexDescription": "D-F-A-B: Minor triad + major 6th",
+          "bullets": [
+            "Major 6th: D → B (complex minor color)",
+            "Classical: Romantic period harmony",
+            "Film music: Emotional, expressive quality"
+          ],
+          "colorBg": "bg-gradient-to-br from-rose-50 to-rose-100",
+          "colorBorder": "border border-rose-200",
+          "colorTitle": "text-rose-800",
+          "colorText": "text-rose-700",
+          "colorDetail": "text-rose-600"
+        }
+      ]
+    },
+    "fretboardPatterns": [
+      {
+        "title": "Natural Minor Scale Context",
+        "alphaTex": "(0.5 3.4 2.4).1 | (1.6 5.5 3.2).1",
+        "alphaTexTitle": "Am to F Progression",
+        "alphaTexDescription": "Am to F: Root to ♭VI (minor 6th relationship)",
+        "bullets": [
+          "♭VI chord: Natural minor scale harmony",
+          "Modal interchange: Borrowed from parallel major",
+          "Emotional impact: Melancholic, introspective"
+        ],
+        "colorBg": "bg-gradient-to-br from-purple-50 to-purple-100",
+        "colorBorder": "border border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700"
+      },
+      {
+        "title": "Jazz Harmony Applications",
+        "alphaTex": "3.5.2 5.5.2 | 1.4.2 3.3.2",
+        "alphaTexTitle": "Voice Leading with 6ths",
+        "alphaTexDescription": "Smooth voice leading using 6th intervals",
+        "bullets": [
+          "Chord melody: Sophisticated harmonizations",
+          "Bebop lines: Chromatic approach tones",
+          "Comping: Rich chord voicings"
+        ],
+        "colorBg": "bg-gradient-to-br from-indigo-50 to-indigo-100",
+        "colorBorder": "border border-indigo-200",
+        "colorTitle": "text-indigo-800",
+        "colorText": "text-indigo-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "classical": [
+      {
+        "title": "Bach's Minor Key Works",
+        "description": "Natural minor 6th relationships in baroque harmony",
+        "detail": "Demonstrates minor 6th in classical voice leading"
+      },
+      {
+        "title": "Chopin's Nocturnes",
+        "description": "Rich minor 6th harmonies in romantic piano music",
+        "detail": "Shows expressive potential of minor 6th intervals"
+      }
+    ],
+    "popular": [
+      {
+        "title": "\"Love Story\" - Taylor Swift",
+        "description": "Opening melody features prominent minor 6th leap",
+        "detail": "Modern pop song using minor 6th melodically"
+      },
+      {
+        "title": "Jazz Standards",
+        "description": "Minor 6th chords and voice leading in jazz harmony",
+        "detail": "Sophisticated harmonic color in jazz context"
+      }
+    ]
+  },
+  "practiceExercises": [
+    {
+      "title": "Ear Training",
+      "items": [
+        "Practice minor 6th vs major 6th recognition",
+        "Use \"Love Story\" theme as reference",
+        "Compare with major 3rd (its inversion)",
+        "Listen to natural minor scale patterns",
+        "Study jazz 6th chord progressions"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    },
+    {
+      "title": "Technical Practice",
+      "items": [
+        "Practice minor 6th intervals across strings",
+        "Work on 6th chord voicings",
+        "Study natural minor scale patterns",
+        "Practice minor 6th melodic leaps",
+        "Work on jazz chord progressions"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Musical Application",
+      "items": [
+        "Compose melodies using minor 6th leaps",
+        "Analyze minor key progressions",
+        "Practice jazz chord-melody techniques",
+        "Study modal interchange applications",
+        "Work on voice leading with 6th chords"
+      ],
+      "colorBg": "bg-slate-50",
+      "colorBorder": "border border-slate-200",
+      "colorTitle": "text-slate-800",
+      "colorText": "text-slate-700"
+    }
+  ],
+  "theoreticalContext": {
+    "harmonicFunction": [
+      {
+        "title": "Major 3rd Inversion",
+        "description": "Minor 6th is the inversion of major 3rd: 8 + 4 = 12 semitones (octave)"
+      },
+      {
+        "title": "Complementary Function",
+        "description": "Where major 3rd is bright and consonant, minor 6th adds complexity and sophistication"
+      }
+    ],
+    "historicalDevelopment": [
+      {
+        "title": "Minor Key Function",
+        "description": "Natural occurrence in minor scales as root to ♭6 relationship"
+      },
+      {
+        "title": "Jazz Extensions",
+        "description": "Essential for sophisticated jazz harmony and chord extensions"
+      }
+    ]
+  },
+  "relatedIntervals": [
+    {
+      "title": "Major 3rd",
+      "description": "4 semitones - inversion of minor 6th",
+      "detail": "Bright consonance vs complex sophistication",
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border border-yellow-200",
+      "colorTitle": "text-yellow-800",
+      "colorText": "text-yellow-700",
+      "colorDetail": "text-yellow-600"
+    },
+    {
+      "title": "Major 6th",
+      "description": "9 semitones - one semitone larger",
+      "detail": "Compare minor vs major 6th emotional qualities",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Minor 7th",
+      "description": "10 semitones - common in jazz harmony",
+      "detail": "Both add sophisticated color to basic triads",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    }
+  ],
+  "journeySection": {
+    "title": "Continue Your Interval Journey",
+    "description": "Now that you understand the minor 6th, explore its relationships with other intervals and harmonic applications.",
+    "links": [
+      {
+        "slug": "major-3rd",
+        "title": "Major 3rd",
+        "description": "Study the inversion relationship between major 3rd and minor 6th intervals.",
+        "linkText": "Study inversions",
+        "icon": "cycle",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "hoverBorder": "hover:border-yellow-300",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      },
+      {
+        "slug": "major-6th",
+        "title": "Major 6th",
+        "description": "Compare the bright major 6th against the more complex minor 6th quality.",
+        "linkText": "Feel the contrast",
+        "icon": "sparkle",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "hoverBorder": "hover:border-green-300",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "slug": "minor-7th",
+        "title": "Minor 7th",
+        "description": "Explore another sophisticated interval that adds jazz harmony and color.",
+        "linkText": "Add sophistication",
+        "icon": "theater",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "hoverBorder": "hover:border-blue-300",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      }
+    ]
+  }
+}

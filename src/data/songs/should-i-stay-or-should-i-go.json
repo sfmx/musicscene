@@ -1,0 +1,447 @@
+{
+  "songInfo": {
+    "title": "Should I Stay or Should I Go",
+    "artist": "The Clash",
+    "album": "Combat Rock",
+    "released": "1982",
+    "genre": "Punk Rock",
+    "tempo": "114 BPM",
+    "duration": "3:06",
+    "key": "D Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major",
+      "scalesUsed": [
+        {
+          "scale": "D major",
+          "notes": "D - E - F# - G - A - B - C# - D",
+          "application": "Primary harmonic framework; all chords derive from or relate to this key"
+        },
+        {
+          "scale": "D major pentatonic",
+          "notes": "D - E - F# - A - B - D",
+          "application": "Mick Jones' lead guitar fills and the answering riff phrases"
+        },
+        {
+          "scale": "D Mixolydian",
+          "notes": "D - E - F# - G - A - B - C - D",
+          "application": "The F chord (bVII) borrows from Mixolydian mode, giving the chorus its gritty, punk character"
+        }
+      ],
+      "modalCharacter": "Mixolydian-influenced Major - the bVII (F chord) adds punk grit to the major key",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor is the relative minor of D major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "G"
+        ],
+        "progression": "I - IV",
+        "description": "About as simple as rock gets - a two-chord verse progression that is the backbone of punk rock. The alternation between D and G creates a bouncing, infectious rhythm."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "D - G - D",
+          "romanNumerals": "I - IV - I",
+          "description": "Guitar riff establishing the bouncy D-G alternation that drives the entire song"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - G",
+          "romanNumerals": "I - IV",
+          "description": "Simple two-chord alternation with driving downstrokes, the definition of punk simplicity"
+        },
+        {
+          "section": "Chorus",
+          "progression": "D - G - F - G - D",
+          "romanNumerals": "I - IV - bVII - IV - I",
+          "description": "The chorus introduces the F major (bVII) borrowed from Mixolydian mode, giving the 'should I stay or should I go' hook its distinctive tension"
+        },
+        {
+          "section": "Bridge",
+          "progression": "G - F - G - D",
+          "romanNumerals": "IV - bVII - IV - I",
+          "description": "The 'this indecision's bugging me' bridge section built on the same chord vocabulary"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Bright, confident major tonic establishing the punk rock energy",
+        "G (IV) - Subdominant creating the bouncing back-and-forth with the tonic",
+        "F (bVII) - Borrowed chord from Mixolydian mode adding gritty punk tension in the chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Punk Downstroke Strumming",
+      "description": "Fast, aggressive all-downstroke strumming on open chords and power chords that defines the punk rock rhythm guitar approach",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D: X-X-0-2-3-2 (open D major) or D5: X-5-7-7-X-X (power chord)",
+          "G: 3-2-0-0-3-3 (open G major) or G5: 3-5-5-X-X-X (power chord)",
+          "F: 1-3-3-2-1-1 (barre chord) or F5: 1-3-3-X-X-X (power chord)",
+          "All-downstroke eighth notes for the authentic punk feel",
+          "Mix of open chords and power chords depending on the section"
+        ],
+        "sequence": [
+          "Start with the open D chord, strumming steady eighth-note downstrokes",
+          "Transition to G with a quick hand shift while maintaining rhythm",
+          "In the chorus, move to the F barre chord (or F5 power chord)",
+          "Keep the right hand moving in constant downstroke motion",
+          "Accent beats 1 and 3 slightly for the driving pulse"
+        ],
+        "tips": [
+          "All downstrokes are essential for the punk attack - resist the urge to alternate pick",
+          "Keep the strumming hand loose at the wrist to avoid fatigue",
+          "The D to G transition should be instant - practice until there's no gap",
+          "If the F barre chord is too difficult, use an F5 power chord (1-3-3-X-X-X)"
+        ],
+        "chords": [
+          "D",
+          "G",
+          "F"
+        ],
+        "progression": "D - G (verse) / D - G - F - G - D (chorus)"
+      }
+    },
+    {
+      "name": "Call-and-Response Guitar Riff",
+      "description": "The signature answering guitar riff played between vocal phrases, using double stops and hammer-ons that give the song its distinctive character",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Double stops on the B and high E strings (2nd and 1st strings)",
+          "Hammer-on from open to 2nd fret on the G string",
+          "The riff answers the vocal line in a classic call-and-response pattern",
+          "Based on D major pentatonic shapes in open position"
+        ],
+        "sequence": [
+          "Play the D chord and strum the pattern",
+          "During the vocal gap, play the answering double-stop riff",
+          "Hammer-on from open G string to 2nd fret for the signature sound",
+          "Return to strumming for the next vocal phrase",
+          "Repeat the call-and-response pattern"
+        ],
+        "tips": [
+          "Listen to the recording to get the exact timing of the fills",
+          "Keep the fills simple and rhythmic rather than flashy",
+          "The fills should complement the vocal melody, not compete with it",
+          "Practice switching between strumming and the fill seamlessly"
+        ],
+        "chords": [
+          "D",
+          "G"
+        ],
+        "progression": "Fills between D and G chord strumming"
+      }
+    },
+    {
+      "name": "Barre Chord Basics (F Chord)",
+      "description": "Introduction to the F barre chord shape as it appears in the chorus, a gateway barre chord skill for beginners",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "F: 1-3-3-2-1-1 (full barre chord at 1st fret)",
+          "F5: 1-3-3-X-X-X (power chord alternative)",
+          "The F chord is one of the first barre chords most guitarists learn",
+          "In this context, it only appears briefly in the chorus, making it manageable"
+        ],
+        "sequence": [
+          "Place index finger across all strings at the 1st fret",
+          "Add remaining fingers for the E-shape barre chord",
+          "Practice pressing firmly and strumming to ensure all strings ring",
+          "Drill the transition from G to F and F back to G",
+          "If the full barre is too hard, use F5 power chord instead"
+        ],
+        "tips": [
+          "Roll your index finger slightly so the harder edge presses the strings",
+          "Place your thumb behind the neck, directly behind the 1st fret",
+          "You only need the F chord briefly in the chorus - don't let it stop you from playing the song",
+          "The F5 power chord is a perfectly valid substitute for beginners"
+        ],
+        "chords": [
+          "F"
+        ],
+        "progression": "G - F - G transition in the chorus"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Punk Downstroke Strumming",
+      "key": "D Major",
+      "description": "The bouncy guitar intro establishing the D-G alternation with Mick Jones' characteristic scratchy tone",
+      "chords": [
+        "D",
+        "G",
+        "D"
+      ],
+      "progression": "D - G - D",
+      "notes": [
+        "Open D and G chords with aggressive downstroke eighth notes",
+        "Set the tempo and energy for the entire song from bar one",
+        "The scratchy, slightly overdriven tone is part of the character",
+        "Count in: the intro establishes 114 BPM before the vocal enters"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:45",
+      "technique": "Punk Downstroke Strumming",
+      "key": "D Major",
+      "description": "Driving two-chord verse with the simple D-G alternation supporting the iconic vocal melody and call-and-response guitar fills",
+      "chords": [
+        "D",
+        "G"
+      ],
+      "progression": "D - G",
+      "notes": [
+        "Keep the strumming driving and consistent throughout",
+        "The simplicity is the point - don't try to make it more complex",
+        "Small guitar fills answer the vocal between phrases",
+        "Maintain the punk energy without overpowering the vocal"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:45-1:10",
+      "technique": "Punk Downstroke Strumming",
+      "key": "D Major",
+      "description": "The anthemic the signature chorus introducing the F chord for that gritty Mixolydian flavor",
+      "chords": [
+        "D",
+        "G",
+        "F",
+        "G",
+        "D"
+      ],
+      "progression": "D - G - F - G - D",
+      "notes": [
+        "The F chord arrival is the harmonic surprise of the chorus",
+        "Hit the F chord with extra emphasis for maximum impact",
+        "Quick G chord between F and D acts as a passing turnaround",
+        "The progression resolves back to D with a satisfying landing"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "1:45-2:10",
+      "technique": "Call-and-Response Guitar Riff",
+      "key": "D Major",
+      "description": "The the iconic vocal hooks bugging me' bridge with more emphasis on the guitar fills and the G-F-G movement",
+      "chords": [
+        "G",
+        "F",
+        "G",
+        "D"
+      ],
+      "progression": "G - F - G - D",
+      "notes": [
+        "The bridge starts on G rather than D for a different harmonic perspective",
+        "Lead guitar riff becomes more prominent in this section",
+        "Energy builds through the bridge toward the final chorus",
+        "The Spanish-language backing vocals add distinctive texture"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:25-3:06",
+      "technique": "Punk Downstroke Strumming",
+      "key": "D Major",
+      "description": "Extended chorus repetition building to the chaotic punk rock ending with increasing intensity and energy",
+      "chords": [
+        "D",
+        "G",
+        "F",
+        "G",
+        "D"
+      ],
+      "progression": "D - G - F - G - D",
+      "notes": [
+        "Maximum punk rock intensity for the outro repetitions",
+        "Strumming becomes more aggressive and loose",
+        "The whole band pushes the energy to its peak",
+        "Final resolution on a ringing open D major chord"
+      ],
+      "alphaTab": "10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 15.6 17.5 17.4 16.3 15.2 15.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Junior",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Fender Telecaster",
+        "Epiphone Les Paul",
+        "Any guitar with a single bridge pickup"
+      ],
+      "pickup": "Bridge pickup for punchy, cutting punk tone"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (cranked)",
+      "alternatives": [
+        "Marshall JCM800",
+        "Fender Bassman",
+        "Vox AC30",
+        "Any amp pushed into natural breakup"
+      ],
+      "settings": {
+        "gain": "5-6 (crunchy overdrive, not heavy distortion)",
+        "treble": "7 (bright and scratchy)",
+        "middle": "5 (balanced)",
+        "bass": "4 (tight, not boomy)",
+        "presence": "6 (cut and clarity)"
+      }
+    },
+    "effects": {
+      "distortion": "Natural amp overdrive - no pedals needed for authentic Clash tone",
+      "delay": "None needed",
+      "reverb": "Minimal or none - dry punk sound",
+      "other": "No effects necessary. The raw, direct guitar-to-amp tone is essential for punk authenticity."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the two-chord verse and basic strumming - this is a perfect first rock song",
+      "steps": [
+        "Master the open D and G chord shapes",
+        "Practice transitioning between D and G smoothly",
+        "Learn the all-downstroke eighth-note strumming pattern",
+        "Play along with the verse sections of the recording"
+      ],
+      "timeEstimate": "1 week for basic verse pattern"
+    },
+    "intermediate": {
+      "focus": "Add the F chord for the chorus and play the complete song",
+      "steps": [
+        "Learn the F barre chord (or F5 power chord substitute)",
+        "Practice the chorus transition: D - G - F - G - D",
+        "Play through the entire song structure at 114 BPM",
+        "Add the call-and-response guitar fills between vocal phrases"
+      ],
+      "timeEstimate": "2-3 weeks for complete song with fills"
+    },
+    "advanced": {
+      "focus": "Add dynamics, authentic punk attitude, and perform with full energy",
+      "steps": [
+        "Perfect the call-and-response riff with exact timing",
+        "Add dynamic contrast and authentic punk strumming aggression",
+        "Practice singing while playing the rhythm part",
+        "Work on stamina for the all-downstroke approach at tempo"
+      ],
+      "timeEstimate": "3-4 weeks for polished performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using alternate picking instead of all downstrokes - downstrokes give the punk attack",
+      "Making the song too complex - the beauty is in the simplicity",
+      "Rushing the tempo - lock in at 114 BPM, not faster",
+      "Over-distorting the tone - The Clash used crunchy overdrive, not heavy metal gain"
+    ],
+    "practiceRoutine": [
+      "Warm up with D and G chord transitions at relaxed tempo for 3 minutes",
+      "Practice all-downstroke eighth notes on D chord at 100 BPM for 3 minutes",
+      "Run through the verse (D-G) pattern at increasing tempos for 5 minutes",
+      "Add the chorus (D-G-F-G-D) progression for 5 minutes",
+      "Play through the complete song once at 114 BPM"
+    ],
+    "focusAreas": [
+      "Clean, instant D to G chord transitions",
+      "Consistent all-downstroke strumming at tempo",
+      "Smooth integration of the F chord in the chorus",
+      "Punk attitude and energy throughout the performance"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM with D-G chord changes on steady downstrokes",
+      "Increase by 10 BPM per session until reaching 114 BPM",
+      "Practice the chorus chord sequence with metronome on beats 2 and 4",
+      "Target: play the entire song at 114 BPM with no dropped beats"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "London Calling",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic Clash anthem with similar punk energy and slightly more complex chord work"
+      },
+      {
+        "title": "I Fought the Law",
+        "difficulty": "Beginner",
+        "similarity": "Simple three-chord punk rock with driving downstroke strumming"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "I Love Rock 'N' Roll",
+        "artist": "Joan Jett & the Blackhearts",
+        "difficulty": "Beginner",
+        "similarity": "Punk-meets-arena-rock anthem with simple power chord foundation"
+      },
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "difficulty": "Beginner",
+        "similarity": "Classic punk all-downstroke power chord anthem"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "difficulty": "Beginner",
+        "similarity": "Even simpler punk anthem to build downstroke fundamentals"
+      },
+      {
+        "title": "I Love Rock 'N' Roll",
+        "artist": "Joan Jett & the Blackhearts",
+        "difficulty": "Beginner",
+        "similarity": "Add anthem-rock dynamics to your punk chord foundation"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 89,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "punk-rock",
+      "beginner",
+      "power-chords",
+      "the-clash",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}

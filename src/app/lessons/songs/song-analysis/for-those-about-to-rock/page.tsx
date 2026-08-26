@@ -1,7 +1,8 @@
-"use client";
-
-import React from "react";
+import { getSongAnalysisMetadata } from '@/lib/seo';
 import SongAnalysisPageTemplate from '@/components/SongAnalysis/SongAnalysisPageTemplate';
+
+
+export const metadata = getSongAnalysisMetadata('for-those-about-to-rock');
 
 export default function ForThoseAboutToRockAnalysis() {
   return (

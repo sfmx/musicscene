@@ -1,0 +1,441 @@
+{
+  "songInfo": {
+    "title": "Stand By Me",
+    "artist": "Ben E. King",
+    "album": "Don't Play That Song!",
+    "released": "1961",
+    "genre": "R&B / Soul",
+    "tempo": "120 BPM",
+    "duration": "2:58",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major",
+      "scalesUsed": [
+        {
+          "scale": "A major",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "Primary harmonic framework; the chord progression sits entirely within A major"
+        },
+        {
+          "scale": "A major pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "The bass line and vocal melody draw heavily from the major pentatonic for their warm, soulful character"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with classic doo-wop harmonic movement",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "F#m",
+          "D",
+          "E"
+        ],
+        "progression": "I - vi - IV - V",
+        "description": "The quintessential I-vi-IV-V doo-wop progression, also known as the '50s progression' or 'Stand By Me changes.' One of the most recognizable and widely used chord patterns in all of popular music history."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "A - F#m - D - E",
+          "romanNumerals": "I - vi - IV - V",
+          "description": "The entire verse uses the repeating I-vi-IV-V cycle, with each chord lasting one full measure creating smooth, circular harmonic motion"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A - F#m - D - E - A",
+          "romanNumerals": "I - vi - IV - V - I",
+          "description": "The chorus is the same progression resolving firmly back to A, with the title lyric landing on the tonic for emotional impact"
+        },
+        {
+          "section": "Instrumental Break",
+          "progression": "A - F#m - D - E",
+          "romanNumerals": "I - vi - IV - V",
+          "description": "The instrumental section features the strings and bass line prominently over the same progression"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Warm, stable tonic chord providing the emotional home base",
+        "F#m (vi) - Relative minor adding a gentle touch of longing and vulnerability",
+        "D (IV) - Subdominant creating the characteristic lift in the progression",
+        "E (V) - Dominant chord resolving back to A, completing the cycle"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Doo-Wop Chord Strumming",
+      "description": "Smooth, soulful strumming through the classic I-vi-IV-V doo-wop progression with even rhythm and clean chord changes",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X02220 - standard open A major shape",
+          "F#m: 244222 (barre) or XX4222 (partial barre) or 202220 (F#m7 substitute)",
+          "D: XX0232 - standard open D major shape",
+          "E: 022100 - standard open E major shape",
+          "For beginners, F#m can be simplified to F#m7 (202220) for easier fingering",
+          "Each chord gets four beats (one full measure) in the repeating pattern"
+        ],
+        "sequence": [
+          "Strum A major for one full measure (4 beats)",
+          "Transition to F#m for one full measure",
+          "Move to D major for one full measure",
+          "Play E major for one full measure",
+          "Repeat the cycle throughout the song"
+        ],
+        "tips": [
+          "Each chord lasts a full measure - you have plenty of time for transitions",
+          "Keep the strumming smooth and flowing, not choppy",
+          "The F#m is the most challenging chord - practice it separately",
+          "Listen to the original bass line for rhythmic guidance"
+        ],
+        "chords": [
+          "A",
+          "F#m",
+          "D",
+          "E"
+        ],
+        "progression": "A - F#m - D - E (the classic doo-wop cycle)"
+      }
+    },
+    {
+      "name": "Simplified F#m Approach",
+      "description": "Beginner-friendly alternatives to the full F#m barre chord, making this song accessible before learning barre chords",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Full F#m barre: 244222 (index finger barres the 2nd fret)",
+          "Partial F#m: XX4222 (skip the low E and A strings, partial barre on top 4 strings)",
+          "F#m7 substitute: 202220 (no barre needed, open A string)",
+          "Capo 2 approach: Play the shapes G - Em - C - D with capo 2 to avoid the barre entirely",
+          "The capo 2 approach is recommended for absolute beginners"
+        ],
+        "sequence": [
+          "Try F#m7 (202220) first as the easiest option",
+          "If comfortable, progress to partial F#m (XX4222)",
+          "Alternatively, use capo 2 and play G-Em-C-D shapes",
+          "Work toward the full F#m barre chord over time"
+        ],
+        "tips": [
+          "The capo 2 approach lets you play the song immediately with no barre chords",
+          "Use this song as motivation to learn your first barre chord",
+          "Roll your index finger slightly to the side for better barre pressure",
+          "Build barre chord strength gradually - don't force it"
+        ],
+        "chords": [
+          "F#m",
+          "F#m7"
+        ],
+        "progression": "A - F#m - D - E (or G - Em - C - D with capo 2)"
+      }
+    },
+    {
+      "name": "Bass Note Strumming",
+      "description": "Adding alternating bass notes before strumming each chord, imitating the iconic walking bass line from the original recording",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "For A: Pick the open A string (5th string), then strum the chord",
+          "For F#m: Pick the 2nd fret low E string (F# bass note), then strum",
+          "For D: Pick the open D string (4th string), then strum",
+          "For E: Pick the open low E string (6th string), then strum",
+          "This creates a boom-chick pattern that references the famous bass line"
+        ],
+        "sequence": [
+          "Beat 1: Pick the bass note of the current chord",
+          "Beat 2: Strum the full chord",
+          "Beat 3: Pick the bass note again (or alternating bass note)",
+          "Beat 4: Strum the full chord",
+          "Repeat for each chord in the progression"
+        ],
+        "tips": [
+          "The bass note gives the strumming a more musical, full-band quality",
+          "Start with just the bass note on beat 1 before adding beat 3",
+          "This technique works for hundreds of songs beyond Stand By Me",
+          "Listen to the original bass line for inspiration on the picking pattern"
+        ],
+        "chords": [],
+        "progression": "A - F#m - D - E with bass note accents"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:12",
+      "technique": "Bass Note Strumming",
+      "key": "A Major",
+      "description": "The iconic bass intro establishes the I-vi-IV-V progression - one of the most recognizable opening bass lines in music history",
+      "chords": [
+        "A",
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "A - F#m - D - E",
+      "notes": [
+        "The original features one of the most iconic bass lines ever",
+        "Guitar can support with gentle strumming or bass note picking",
+        "Establish the groove that will carry through the entire song",
+        "Keep rhythm steady and smooth at 120 BPM"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:12-0:48",
+      "technique": "Doo-Wop Chord Strumming",
+      "key": "A Major",
+      "description": "The tender verse with its timeless lyrics over the repeating doo-wop progression, each chord lasting one full measure",
+      "chords": [
+        "A",
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "A - F#m - D - E",
+      "notes": [
+        "Smooth, even strumming through the four-chord cycle",
+        "Each chord gets a full measure (4 beats) at 120 BPM",
+        "Keep dynamics moderate - save energy for the chorus",
+        "The F#m requires the most attention for clean transitions"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:48-1:20",
+      "technique": "Doo-Wop Chord Strumming",
+      "key": "A Major",
+      "description": "The powerful the signature chorus using the same progression with increased intensity and the soaring vocal hook",
+      "chords": [
+        "A",
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "A - F#m - D - E - A",
+      "notes": [
+        "Same chord progression as the verse with more strumming intensity",
+        "Full, open strumming with emphasis on beats 2 and 4",
+        "The title lyric resolves on the A chord for emotional weight",
+        "String section enters in the original, adding lushness"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Instrumental Break",
+      "timeStamp": "1:50-2:10",
+      "technique": "Doo-Wop Chord Strumming",
+      "key": "A Major",
+      "description": "Brief instrumental section where the progression continues without vocals, allowing the iconic bass line and strings to shine",
+      "chords": [
+        "A",
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "A - F#m - D - E",
+      "notes": [
+        "Progression continues unchanged",
+        "Bass line becomes more prominent",
+        "Good opportunity to focus on clean chord transitions",
+        "Strings and arrangement carry the melody"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:25-2:58",
+      "technique": "Doo-Wop Chord Strumming",
+      "key": "A Major",
+      "description": "Repeated chorus with vocal ad-libs fading out on the timeless doo-wop progression",
+      "chords": [
+        "A",
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "A - F#m - D - E (repeat to fade)",
+      "notes": [
+        "Repeated chorus progression with ad-lib vocals",
+        "Gradual fade-out in the original recording",
+        "The simplicity of the progression creates a timeless quality",
+        "Final resolution on A major"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Any steel-string acoustic guitar",
+      "alternatives": [
+        "Semi-hollow electric for warm R&B tone (Gibson ES-335)",
+        "Electric guitar with clean tone (Fender Stratocaster)",
+        "Nylon-string classical guitar for a softer sound",
+        "Any dreadnought or parlor acoustic"
+      ],
+      "pickup": "Acoustic preferred; if electric, use neck pickup for warmth"
+    },
+    "amp": {
+      "recommended": "Any clean-tone amp or acoustic amplifier",
+      "alternatives": [
+        "Fender Twin Reverb (clean channel)",
+        "Fender Princeton Reverb",
+        "Roland JC-120 for pristine clean tone",
+        "Direct acoustic input"
+      ],
+      "settings": {
+        "gain": "1-2 (completely clean)",
+        "treble": "5 (warm, not harsh)",
+        "middle": "6 (present mids for body)",
+        "bass": "5 (balanced low end)",
+        "presence": "4 (smooth and warm)"
+      }
+    },
+    "effects": {
+      "distortion": "None - completely clean tone",
+      "delay": "None needed",
+      "reverb": "Light spring or room reverb for warmth",
+      "other": "No effects required. Optional: capo on 2nd fret to play with G-Em-C-D shapes for easier chord fingerings."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the four chord shapes and the repeating I-vi-IV-V doo-wop progression",
+      "steps": [
+        "Learn open A, D, and E chord shapes (the three easiest chords in the song)",
+        "Learn a simplified F#m shape (XX4222 or F#m7 as 202220), or use capo 2 with G-Em-C-D",
+        "Practice the A-to-F#m transition until it is smooth",
+        "Chain all four chords: A - F#m - D - E in rhythm with a metronome"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Play at full tempo with the full F#m barre chord and add bass note technique",
+      "steps": [
+        "Master the full F#m barre chord at the 2nd fret",
+        "Play the progression at 120 BPM with a metronome",
+        "Add the bass note strumming technique for a fuller sound",
+        "Practice singing while playing the chord progression"
+      ],
+      "timeEstimate": "2-3 weeks for confident full performance"
+    },
+    "advanced": {
+      "focus": "Add vocal accompaniment and the walking bass line for a solo arrangement",
+      "steps": [
+        "Integrate the walking bass line with fingerpicked chords",
+        "Add chord embellishments and fills between chord changes",
+        "Play along with the original Ben E. King recording",
+        "Develop a solo arrangement covering bass, chords, and melody"
+      ],
+      "timeEstimate": "3-5 weeks for polished performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Struggling with the F#m barre chord - use a simplified voicing until ready",
+      "Playing too aggressively - the song needs a smooth, gentle touch",
+      "Rushing through chord changes instead of letting them ring",
+      "Ignoring the bass line character - even simple root notes on downbeats add a lot"
+    ],
+    "practiceRoutine": [
+      "Warm up with A - D - E chord changes for 3 minutes",
+      "Add F#m and practice the full A - F#m - D - E cycle slowly",
+      "Use a metronome at 90 BPM and play the progression on repeat",
+      "Increase tempo gradually to 120 BPM (song tempo)",
+      "Play through the full song structure from intro to outro"
+    ],
+    "focusAreas": [
+      "Smooth transition between A and F#m",
+      "Even, relaxed strumming rhythm",
+      "Clean chord voicings with no buzzing",
+      "Understanding the I-vi-IV-V doo-wop progression pattern"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM with the four-chord cycle",
+      "Gradually increase by 5 BPM increments to 120 BPM (song tempo)",
+      "Practice the A-to-F#m change in isolation with metronome clicks",
+      "Play full song sections at tempo for stamina and consistency"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Spanish Harlem",
+        "difficulty": "Beginner",
+        "similarity": "Similar soulful feel and simple chord-based arrangement"
+      },
+      {
+        "title": "Save the Last Dance for Me",
+        "difficulty": "Beginner",
+        "similarity": "Classic doo-wop era song with similar harmonic sensibility"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Let It Be",
+        "artist": "The Beatles",
+        "difficulty": "Beginner",
+        "similarity": "Uses a similar I-V-vi-IV pattern with simple open chords and emotional delivery"
+      },
+      {
+        "title": "Unchained Melody",
+        "artist": "The Righteous Brothers",
+        "difficulty": "Beginner",
+        "similarity": "Classic doo-wop era ballad with similar chord movement and emotional depth"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Blowin' in the Wind",
+        "artist": "Bob Dylan",
+        "difficulty": "Beginner",
+        "similarity": "Start with this simpler three-chord folk song before adding the F#m"
+      },
+      {
+        "title": "Brown Eyed Girl",
+        "artist": "Van Morrison",
+        "difficulty": "Beginner",
+        "similarity": "Progress to a faster song with a similar G-C-D-Em (I-IV-V-vi) pattern"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "r-and-b",
+      "beginner",
+      "simple-chords",
+      "doo-wop",
+      "soul"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

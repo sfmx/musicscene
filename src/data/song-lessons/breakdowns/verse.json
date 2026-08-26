@@ -1,0 +1,181 @@
+{
+  "slug": "verse",
+  "category": "breakdowns",
+  "pageTitle": "Verse Analysis",
+  "subtitle": "Understanding how verses develop narratively while maintaining harmonic stability",
+  "heroGradient": "bg-gradient-to-r from-green-50 to-emerald-50",
+  "backLink": { "href": "/lessons/songs/breakdowns", "label": "Back to Song Breakdowns" },
+  "introduction": {
+    "title": "The Verse: Musical Storytelling",
+    "text": "Verses are the narrative foundation of a song\u2014they tell the story, develop characters, and set up the emotional payoff that comes in the chorus. Musically, verses must balance harmonic stability with melodic interest to keep listeners engaged without overwhelming them."
+  },
+  "sections": [
+    {
+      "title": "What Verses Accomplish",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Narrative Development",
+          "icon": "\ud83d\udcd6",
+          "description": "Verses advance the story or emotional content of the song while providing musical continuity and stability.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Establish characters and settings", "Develop plot or emotional themes", "Create anticipation for the chorus", "Maintain musical momentum"]
+        },
+        {
+          "title": "Harmonic Stability",
+          "icon": "\ud83c\udfbc",
+          "description": "Verses typically use stable, familiar progressions that don't compete with the vocal melody for attention.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["I-vi-IV-V (Classic progression)", "vi-IV-I-V (Pop progression)", "I-V-vi-IV (Alternative arrangement)", "ii-V-I (Jazz influence)"]
+        },
+        {
+          "title": "Melodic Interest",
+          "icon": "\ud83c\udfb5",
+          "description": "While harmonically stable, verses need melodic variation to maintain interest across multiple repetitions.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Stepwise motion with occasional leaps", "Rhythmic variation between verses", "Different melodic phrases for each line", "Strategic use of chord tones vs. passing tones"]
+        },
+        {
+          "title": "Dynamic Balance",
+          "icon": "\u2696\ufe0f",
+          "description": "Verses maintain moderate energy levels to set up the emotional release of the chorus.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Moderate dynamics and intensity", "Steady rhythmic foundation", "Leave room for chorus expansion", "Build subtle tension toward chorus"]
+        }
+      ]
+    },
+    {
+      "title": "Common Verse Structures",
+      "bgColor": "bg-gray-50",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "AABA Structure",
+          "icon": "\ud83d\udccf",
+          "description": "Four-line verse where the first, second, and fourth lines are similar (A), while the third line provides contrast (B).",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Yesterday\" (The Beatles)" },
+            { "label": "Key", "value": "F major" },
+            { "label": "A sections", "value": "F-Em-A-Dm (I-vii\u00b0-III-vi)" },
+            { "label": "B section", "value": "Bb-C-F (IV-V-I)" },
+            { "label": "Melodic Pattern", "value": "Similar phrases for A sections" },
+            { "label": "Contrast", "value": "B section provides harmonic relief" },
+            { "label": "Function", "value": "Creates familiarity with variation" }
+          ]
+        },
+        {
+          "title": "Repetitive Progression",
+          "icon": "\ud83d\udd04",
+          "description": "Uses the same chord progression throughout the verse, relying on melodic and rhythmic variation for interest.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Let It Be\" (The Beatles)" },
+            { "label": "Key", "value": "C major" },
+            { "label": "Progression", "value": "C-G-Am-F (I-V-vi-IV)" },
+            { "label": "Repetition", "value": "Same chords each line" },
+            { "label": "Variation", "value": "Melody changes over same harmony" },
+            { "label": "Strength", "value": "Harmonic familiarity allows focus on lyrics" },
+            { "label": "Effect", "value": "Creates hypnotic, meditative quality" }
+          ]
+        },
+        {
+          "title": "Through-Composed",
+          "icon": "\ud83c\udfad",
+          "description": "Each line of the verse uses different harmony, creating constant forward motion and harmonic development.",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Example", "value": "\"Something\" (The Beatles)" },
+            { "label": "Key", "value": "C major" },
+            { "label": "Line 1", "value": "C-Cmaj7-C7" },
+            { "label": "Line 2", "value": "F-D7-G" },
+            { "label": "Harmonic Motion", "value": "Constant chord changes" },
+            { "label": "Sophistication", "value": "Jazz-influenced harmony" },
+            { "label": "Effect", "value": "Creates sophisticated, flowing movement" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verse Melody Construction",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Melodic Contour",
+          "icon": "\ud83c\udfbc",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Arch Shape", "value": "Start mid-range, rise to peak, descend to resolution" },
+            { "label": "Wave Pattern", "value": "Gentle rises and falls throughout the verse" },
+            { "label": "Descending Line", "value": "Gradual descent creates sense of settling" },
+            { "label": "Ascending Build", "value": "Gradual rise creates tension toward chorus" }
+          ]
+        },
+        {
+          "title": "Rhythmic Patterns",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Consistent Rhythm", "value": "Same pattern each line for stability" },
+            { "label": "Varied Rhythm", "value": "Different patterns for each phrase" },
+            { "label": "Syncopation", "value": "Off-beat emphasis for rhythmic interest" },
+            { "label": "Space Usage", "value": "Strategic rests for phrasing clarity" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to Analyze Any Verse",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Harmonic Analysis",
+          "icon": "\ud83d\udd0d",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Map the chord progression using Roman numerals", "Identify the harmonic rhythm (how often chords change)", "Note any secondary dominants or substitutions", "Analyze how harmony supports the melody"]
+        },
+        {
+          "title": "Melodic Analysis",
+          "icon": "\ud83c\udfb5",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": ["Map the melodic contour (shape)", "Identify scale choices and melodic intervals", "Note chord tone vs. non-chord tone usage", "Analyze rhythmic patterns and phrasing"]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercise",
+    "bgColor": "bg-amber-50",
+    "items": [
+      "Choose a song with clear verse-chorus structure and analyze the verse using this framework.",
+      "Play or listen to just the verse section repeatedly.",
+      "Identify the chord progression and harmonic rhythm.",
+      "Map the melodic contour and note important intervals.",
+      "Compare different verses - do they use the same or different melodies?",
+      "Analyze how the verse sets up the chorus harmonically and melodically.",
+      "This exercise will help you understand how verses function as the narrative and harmonic foundation of songs."
+    ]
+  },
+  "relatedTopics": [
+    { "title": "Chorus Analysis", "href": "/lessons/songs/breakdowns/chorus", "description": "Explore emotional peaks and harmonic climax", "icon": "\ud83c\udfb6" },
+    { "title": "Bridge Analysis", "href": "/lessons/songs/breakdowns/bridge", "description": "Learn about contrast and departure", "icon": "\ud83c\udf09" }
+  ]
+}

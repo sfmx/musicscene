@@ -1,0 +1,446 @@
+{
+  "songInfo": {
+    "title": "Rock and Roll All Nite",
+    "artist": "KISS",
+    "album": "Dressed to Kill",
+    "released": "1975",
+    "genre": "Arena Rock",
+    "tempo": "138 BPM",
+    "duration": "2:49",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major, built on a straightforward I-IV-V power chord framework",
+      "scalesUsed": [
+        {
+          "scale": "A major pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Chorus vocal melody and lead fills; the bright, anthemic quality comes from the major pentatonic character"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Guitar solo and riff embellishments; the blues-rock edge uses minor pentatonic bends and licks over the major key"
+        }
+      ],
+      "modalCharacter": "Straight Major (Ionian) with blues-rock inflections from minor pentatonic soloing",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "I - IV - V",
+        "description": "The quintessential rock and roll chord progression. KISS strips it to its most primal, anthemic form with big open chords and power chord variations."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "A - D - A - E",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Standard rock verse progression with the A chord as home base, moving to D for lift and E for tension before resolving"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "D - E - D - E",
+          "romanNumerals": "IV - V - IV - V",
+          "description": "Building tension by alternating between subdominant and dominant, creating anticipation for the explosive chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A - D - E - A",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Full anthem mode with the classic I-IV-V-I turnaround supporting the iconic 'I wanna rock and roll all nite' sing-along"
+        },
+        {
+          "section": "Bridge",
+          "progression": "G - D - A",
+          "romanNumerals": "bVII - IV - I",
+          "description": "Brief bridge section using the borrowed bVII (G major) chord for harmonic color before returning to the chorus"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic major chord, the bright and powerful home base",
+        "D (IV) - Subdominant, providing lift and forward motion",
+        "E (V) - Dominant, creating tension and driving resolution back to A",
+        "G (bVII) - Borrowed from A Mixolydian, adding a rock and roll edge in the bridge"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Power Chord Anthem Strumming",
+      "description": "Big, aggressive power chord strumming with full downstrokes driving the anthemic feel of the song at 138 BPM",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A5: X-0-2-2-X-X or 5-7-7-X-X-X (barre position)",
+          "D5: X-X-0-2-3-X or X-5-7-7-X-X",
+          "E5: 0-2-2-X-X-X (open position)",
+          "G5: 3-5-5-X-X-X (barre position)",
+          "Use a mix of open and barre power chord shapes depending on position",
+          "All downstrokes with aggressive picking hand for maximum energy"
+        ],
+        "sequence": [
+          "Start with the A5 power chord on the downbeat",
+          "Strum with firm, consistent downstrokes in eighth notes",
+          "Move to D5 keeping the same strumming intensity",
+          "Transition to E5 for the turnaround with emphasis on beat 1",
+          "On the bridge, shift to G5 barre shape before resolving through D to A"
+        ],
+        "tips": [
+          "This is an all-downstroke song - resist the temptation to alternate pick",
+          "Keep your strumming hand loose but aggressive for sustain and volume",
+          "Mute unused strings with your fretting hand to avoid sloppy chord sounds",
+          "The energy should feel relentless - this is an arena anthem, play like it"
+        ],
+        "chords": [
+          "A5",
+          "D5",
+          "E5",
+          "G5"
+        ],
+        "progression": "A5 - D5 - E5 (I - IV - V power chords)"
+      }
+    },
+    {
+      "name": "Open Chord Chorus Strumming",
+      "description": "Full open chord voicings for the massive sing-along chorus, strummed with wide, powerful strokes for maximum harmonic richness",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0 (standard open A major)",
+          "D: X-X-0-2-3-2 (standard open D major)",
+          "E: 0-2-2-1-0-0 (standard open E major)",
+          "Strum all available strings for full, rich chord voicings",
+          "The chorus benefits from louder, more open strumming than the verse"
+        ],
+        "sequence": [
+          "Hit the A chord with a big downstroke on the iconic vocal hook",
+          "Move to D on 'all nite'",
+          "Hit E on the iconic vocal hook",
+          "Resolve back to A on the iconic vocal hook",
+          "Repeat with full energy for each chorus repetition"
+        ],
+        "tips": [
+          "Strum from the wrist, not the elbow, for control at high energy levels",
+          "Let all strings ring for maximum sustain during the chorus",
+          "Add slight accents on beats 1 and 3 for a driving feel",
+          "The chorus should be the loudest, most unrestrained part of the song"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - D - E - A (full open chords)"
+      }
+    },
+    {
+      "name": "Pick Slide and Chord Accent",
+      "description": "Pick slides down the wound strings used as transitions between sections, a signature KISS live performance technique",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Hold the pick edge against the wound low E or A string",
+          "Slide the pick down the string from a high fret toward the nut",
+          "The resulting scraping sound creates an exciting transition effect",
+          "Used before chorus entries and at section breaks for dramatic impact"
+        ],
+        "sequence": [
+          "At the end of the pre-chorus, lift off the last chord",
+          "Place pick edge on the low E string near the 12th fret",
+          "Slide firmly down toward the nut over about 1 beat",
+          "Land directly on the first chord of the chorus with a big accent"
+        ],
+        "tips": [
+          "Use the edge of the pick, not the flat face, for the best scraping sound",
+          "Apply firm, even pressure throughout the slide",
+          "Practice the timing so the slide lands perfectly on beat 1 of the next section",
+          "This works best with distortion engaged for a dramatic effect"
+        ],
+        "chords": [],
+        "progression": "Used as a transition effect between sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:12",
+      "technique": "Power Chord Anthem Strumming",
+      "key": "A Major",
+      "description": "Driving power chord intro establishing the anthemic energy with A and D power chords",
+      "chords": [
+        "A5",
+        "D5",
+        "A5",
+        "E5"
+      ],
+      "progression": "A5 - D5 - A5 - E5",
+      "notes": [
+        "Hard-hitting power chords from the first note",
+        "Establish the 138 BPM tempo immediately",
+        "All downstrokes with tight palm muting between hits",
+        "Sets up the raw, party-ready energy for the entire song"
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:12-0:42",
+      "technique": "Power Chord Anthem Strumming",
+      "key": "A Major",
+      "description": "Verse section with power chords driving underneath the vocal melody, building toward the pre-chorus",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "A - D - A - E",
+      "notes": [
+        "Slightly restrained energy compared to the chorus",
+        "Keep strumming consistent and driving at 138 BPM",
+        "Chord changes fall on beat 1 of each two-bar phrase",
+        "Vocal melody rides on top of the driving guitar rhythm"
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "0:42-0:55",
+      "technique": "Power Chord Anthem Strumming",
+      "key": "A Major",
+      "description": "Tension-building section alternating D and E chords, ramping energy for the chorus explosion",
+      "chords": [
+        "D",
+        "E",
+        "D",
+        "E"
+      ],
+      "progression": "D - E - D - E",
+      "notes": [
+        "Alternating IV-V creates building tension and anticipation",
+        "Increase strumming intensity gradually through this section",
+        "The repeated D-E motion is like a coiled spring about to release",
+        "End with a pick slide or sustained E into the chorus"
+      ],
+      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:55-1:25",
+      "technique": "Open Chord Chorus Strumming",
+      "key": "A Major",
+      "description": "The iconic arena rock chorus - the iconic vocal hook with massive open chord strumming",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A",
+      "notes": [
+        "Full open chord voicings for maximum impact",
+        "This is the payoff - play with everything you have",
+        "Strong accents on the downbeats where the lyrics hit",
+        "The sing-along quality demands big, clear chords that ring out"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:10-2:49",
+      "technique": "Open Chord Chorus Strumming",
+      "key": "A Major",
+      "description": "Extended chorus repetition building to the climactic finish, the crowd sing-along finale of every KISS concert",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A (repeated to end)",
+      "notes": [
+        "Repeated chorus with increasing intensity",
+        "The live version extends this section significantly for crowd participation",
+        "Final chord is a big, sustained A major letting all strings ring",
+        "Maximum volume and energy for the grand finale"
+      ],
+      "alphaTab": "5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 | 5.6 7.5 7.4 6.3 5.2 5.1 | 10.6 12.5 12.4 11.3 10.2 10.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard with humbuckers",
+      "alternatives": [
+        "Gibson Les Paul Custom",
+        "Epiphone Les Paul",
+        "Any guitar with dual humbuckers",
+        "Gibson SG Standard"
+      ],
+      "pickup": "Bridge humbucker for thick, full power chord tone; neck humbucker for solo warmth"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 or Plexi-style tube amp",
+      "alternatives": [
+        "Marshall JMP",
+        "Peavey 5150",
+        "Orange Rockerverb",
+        "Any high-gain Marshall-style amp"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate overdrive with sustain)",
+        "treble": "6 (bright and cutting)",
+        "middle": "7 (strong midrange for the Les Paul tone)",
+        "bass": "5 (solid low end without boom)",
+        "presence": "6 (clarity and bite for arena projection)"
+      }
+    },
+    "effects": {
+      "distortion": "Amp-driven overdrive. A boost pedal (like an MXR Micro Amp) can push the amp harder for the solo sections.",
+      "delay": "None needed for the rhythm parts",
+      "reverb": "Light spring or hall reverb for arena ambiance",
+      "other": "No essential effects. KISS tone is fundamentally a Les Paul into a cranked Marshall."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three main chords (A, D, E) and the basic strumming pattern",
+      "steps": [
+        "Master open A, D, and E major chord shapes",
+        "Practice transitioning between A-D-E smoothly",
+        "Learn the basic eighth-note downstroke strumming pattern",
+        "Play along with the recording at tempo (138 BPM)"
+      ],
+      "timeEstimate": "1-2 weeks for basic chord progression and rhythm"
+    },
+    "intermediate": {
+      "focus": "Add power chord variations, dynamics, and the complete song structure",
+      "steps": [
+        "Learn power chord voicings (A5, D5, E5, G5) for verse sections",
+        "Practice the dynamic contrast between verse and chorus",
+        "Add the pre-chorus build-up with D-E alternation",
+        "Master the G chord in the bridge section"
+      ],
+      "timeEstimate": "2-3 weeks for full song with dynamics"
+    },
+    "advanced": {
+      "focus": "Learn accent patterns, pick slides, and lead fills between sections",
+      "steps": [
+        "Add pick slides for dramatic section transitions",
+        "Learn the A minor pentatonic scale for improvised lead fills",
+        "Practice singing while playing the chord progression",
+        "Develop stage presence and energy matching the KISS performance style"
+      ],
+      "timeEstimate": "3-4 weeks for complete arena-ready performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Not playing with enough energy - this is an anthem, commit to every strum",
+      "Muddying chord changes by not lifting fingers cleanly between shapes",
+      "Playing the chorus at the same volume as the verse - the chorus needs to be bigger",
+      "Losing tempo by speeding up during the exciting chorus sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with A-D-E chord transitions for 3 minutes",
+      "Practice the eighth-note downstroke strumming on a single chord for 3 minutes",
+      "Work on the verse progression A-D-A-E with correct timing (5 minutes)",
+      "Practice the pre-chorus tension build D-E-D-E (3 minutes)",
+      "Run through the complete song structure with a metronome or backing track (5 minutes)"
+    ],
+    "focusAreas": [
+      "Clean chord transitions at 138 BPM tempo",
+      "Consistent downstroke strumming with full energy",
+      "Dynamic contrast between verse, pre-chorus, and chorus",
+      "Timing accuracy - keeping steady tempo through excitement"
+    ],
+    "metronomeWork": [
+      "Start at 100 BPM with the basic chord progression",
+      "Increase by 10 BPM until reaching 138 BPM",
+      "Practice accent patterns at slow tempo before speeding up",
+      "Use metronome on beats 2 and 4 for backbeat feel at full tempo"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Detroit Rock City",
+        "difficulty": "Intermediate",
+        "similarity": "KISS anthem with more complex riff structure but same arena rock energy"
+      },
+      {
+        "title": "Shout It Out Loud",
+        "difficulty": "Beginner",
+        "similarity": "Same simple power chord anthem formula with big sing-along chorus"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "We Will Rock You",
+        "artist": "Queen",
+        "difficulty": "Beginner",
+        "similarity": "Legendary arena anthem with simple chord structure and crowd participation"
+      },
+      {
+        "title": "We're Not Gonna Take It",
+        "artist": "Twisted Sister",
+        "difficulty": "Beginner",
+        "similarity": "Power chord arena anthem with massive sing-along chorus"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "I Love Rock 'N' Roll",
+        "artist": "Joan Jett",
+        "difficulty": "Beginner",
+        "similarity": "Start with this simpler two-chord anthem before adding KISS dynamics"
+      },
+      {
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to Bon Jovi's more complex arena rock with key changes"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "arena-rock",
+      "beginner",
+      "power-chords",
+      "anthem",
+      "kiss"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "slug": "dynamics-control",
+  "category": "warmups",
+  "pageInfo": {
+    "pageTitle": "Dynamics Control",
+    "subtitle": "Master dynamics, accents, and ghost notes to bring expressiveness and musicality to your playing.",
+    "heroGradient": "bg-gradient-to-br from-amber-50 to-orange-100",
+    "heroTitle": "Dynamics, Accents & Ghost Notes",
+    "heroDescription": "Musical dynamics are what separate mechanical playing from truly expressive guitar work. These exercises develop your ability to control volume, articulate accents, and incorporate ghost notes - essential skills for all genres from funk to fingerstyle to rock."
+  },
+  "guidelines": {
+    "title": "Dynamics Control Guidelines",
+    "columns": [
+      {
+        "title": "Volume Control",
+        "items": [
+          { "bulletColor": "text-amber-500", "text": "Control comes from pick attack angle and force" },
+          { "bulletColor": "text-amber-500", "text": "Practice at whisper-quiet volume (pianissimo) first" },
+          { "bulletColor": "text-amber-500", "text": "Use fretting hand pressure to shape sustain" },
+          { "bulletColor": "text-amber-500", "text": "Dynamics should serve the music, not show off technique" }
+        ]
+      },
+      {
+        "title": "Accent Technique",
+        "items": [
+          { "bulletColor": "text-orange-500", "text": "Accents come from a slightly wider pick stroke" },
+          { "bulletColor": "text-orange-500", "text": "Ghost notes use minimal fretting pressure and light picking" },
+          { "bulletColor": "text-orange-500", "text": "Practice exaggerating dynamics before making them subtle" },
+          { "bulletColor": "text-orange-500", "text": "Listen critically to how dynamics change the musical feel" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Volume Control Exercises",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Crescendo & Decrescendo",
+          "difficulty": "Beginner",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Play a single open string repeatedly with eighth notes for 4 bars. Gradually increase volume (crescendo) over bars 1-2, then gradually decrease (decrescendo) over bars 3-4. Focus on smooth, even volume changes.",
+          "notation": {
+            "title": "Crescendo & Decrescendo on Open E",
+            "alphaTex": "\\ts 4 4\n0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8",
+            "staveTitle": "pp → ff → pp Dynamic Swell"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Start at the softest volume you can produce (pianissimo) and grow to the loudest (fortissimo) by the middle, then return. Each note should be slightly different in volume from the last.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Three-Level Dynamics",
+          "difficulty": "Beginner",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Play an E minor chord pattern at three distinct volume levels: soft (piano), medium (mezzo-forte), and loud (forte). One bar of each, then switch. Your goal is clear, consistent separation between levels.",
+          "chordDiagrams": [
+            { "label": "Em", "chord": "E_minor" }
+          ],
+          "notation": {
+            "title": "Three-Level Dynamic Exercise",
+            "alphaTex": "\\ts 4 4\n(0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 | (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 | (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4",
+            "staveTitle": "Piano → Mezzo-Forte → Forte"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "The hard part is maintaining consistent volume within each level. Record yourself and listen back to check for unwanted volume fluctuations.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Accent Exercises",
+      "exercises": [
+        {
+          "number": 3,
+          "title": "Downbeat Accents",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Play eighth notes on the A string, accenting every downbeat (beats 1, 2, 3, 4). The accented notes should be distinctly louder than the unaccented notes between them. This creates a strong rhythmic pulse.",
+          "notation": {
+            "title": "Downbeat Accent Pattern",
+            "alphaTex": "\\ts 4 4\n5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 | 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8",
+            "staveTitle": "Downbeat Accents on A (fret 5)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Think of the accent as a quick snap of the wrist, not a full arm movement. The unaccented notes should still sound clean and even.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 4,
+          "title": "Off-Beat (Upbeat) Accents",
+          "difficulty": "Intermediate",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Now reverse it - accent the upbeats ('ands' of each beat). This is essential for reggae, ska, and funk styles. The downbeats should be quiet with strong accents on the 'and' of each beat.",
+          "notation": {
+            "title": "Upbeat Accent Pattern",
+            "alphaTex": "\\ts 4 4\n5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} | 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a}",
+            "staveTitle": "Upbeat Accents - Reggae/Funk Style"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "This feels unnatural at first because we naturally accent downbeats. Start very slowly. Tap your foot on the downbeat while accenting the upbeats.",
+            "tempo": "60 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Ghost Note Exercises",
+      "exercises": [
+        {
+          "number": 5,
+          "title": "Basic Ghost Note Pattern",
+          "difficulty": "Intermediate",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Ghost notes are muted, percussive notes that add rhythm and groove. Lightly rest your fretting fingers on the strings (not pressing down) and pick. Alternate between full notes on beats 1 and 3, and ghost notes on beats 2 and 4.",
+          "notation": {
+            "title": "Ghost Note Funk Pattern",
+            "alphaTex": "\\ts 4 4\n5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 | x.5.8 5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 x.5.8 5.5.8",
+            "staveTitle": "Funk Ghost Note Groove"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
+            "title": "Practice Notes",
+            "text": "Ghost notes should be barely audible - more felt than heard. They provide rhythmic momentum and make your playing groove. Think of them as the heartbeat between notes.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Funk Strumming with Ghosts",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Combine full E9 chord stabs with ghost note strums. Play accented chord hits on beats 1 and the 'and' of 2, with ghost note strums filling the rest. This is the foundation of funk rhythm guitar.",
+          "chordDiagrams": [
+            { "label": "E7", "chord": "E7" }
+          ],
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "Keep your strumming hand moving in constant 16th notes (down-up-down-up). Ghost notes happen by simply relaxing fretting hand pressure. The strumming hand never stops.",
+            "tempo": "80 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Dynamics Mastery Tips",
+    "items": [
+      {
+        "title": "Developing Dynamic Range",
+        "colorBg": "bg-gradient-to-br from-amber-50 to-orange-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "bulletColor": "text-amber-500",
+        "items": [
+          "Practice unplugged to develop acoustic dynamic awareness",
+          "The best players use dynamics to tell a story within a song",
+          "Start every session with volume control exercises for 2-3 minutes",
+          "Listen to funk masters like Nile Rodgers and James Brown's guitarists for ghost note inspiration"
+        ]
+      },
+      {
+        "title": "Common Dynamic Mistakes",
+        "colorBg": "bg-gradient-to-br from-orange-50 to-red-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-900",
+        "colorText": "text-orange-800",
+        "bulletColor": "text-orange-500",
+        "items": [
+          "Playing at a single volume level (the most common mistake)",
+          "Tensing up when trying to play quietly - relaxation is key",
+          "Making ghost notes too loud (they should be barely audible)",
+          "Rushing accents - keep the tempo steady regardless of dynamics"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Dynamic Journey",
+    "description": "Apply your dynamics skills across different musical contexts.",
+    "gradientFrom": "from-amber-50",
+    "gradientTo": "to-orange-50",
+    "borderColor": "border-amber-200",
+    "links": [
+      {
+        "href": "/lessons/practice/warmups/rhythm-drills",
+        "title": "Rhythm Drills",
+        "description": "Combine your dynamics skills with rhythmic exercises for complete groove mastery.",
+        "linkText": "Add rhythm",
+        "icon": "🥁",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/warmups/picking-patterns",
+        "title": "Picking Patterns",
+        "description": "Apply dynamics to different picking patterns for more expressive playing.",
+        "linkText": "Refine picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "href": "/lessons/practice/technique/palm-muting",
+        "title": "Palm Muting",
+        "description": "Learn palm muting technique - another way to control dynamics and tone.",
+        "linkText": "Control tone",
+        "icon": "✋",
+        "hoverBorder": "hover:border-orange-300",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Dynamics Practice",
+    "items": [
+      { "category": "Pedal", "product": "MXR Dyna Comp Compressor", "reason": "A compressor helps you hear and develop dynamic control by evening out volume differences" },
+      { "category": "Amp", "product": "Fender Blues Junior IV", "reason": "Tube amp responds dynamically to touch, rewarding proper dynamics technique" },
+      { "category": "Picks", "product": "Dunlop Tortex Standard Picks", "reason": "Firm picks with good grip provide consistent attack for practicing accent control" }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "pageTitle": "Chord Theory in Songs",
+  "subtitle": "Understand how chords create the harmonic foundation and emotional landscape of music",
+  "heroGradient": "bg-gradient-to-r from-purple-50 to-pink-50",
+  "overview": {
+    "title": "The Language of Harmony",
+    "text": "Chords are more than finger positions—they're the emotional vocabulary of music. Understanding <strong>harmonic function</strong> and <strong>chord relationships</strong> will transform how you hear, play, and create music across any genre.",
+    "columns": [
+      {
+        "title": "Functional Harmony",
+        "text": "Learn how chords have jobs: tonic (home), dominant (tension), subdominant (departure).",
+        "icon": "🎼"
+      },
+      {
+        "title": "Chord Relationships",
+        "text": "Discover how chord progressions create musical momentum and emotional arcs.",
+        "icon": "🔄"
+      },
+      {
+        "title": "Color and Texture",
+        "text": "Explore how chord voicings and extensions add sophistication and character.",
+        "icon": "🎨"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "title": "Chord Progressions",
+      "href": "/lessons/songs/chords/progressions",
+      "icon": "🔗",
+      "description": "Master the harmonic language of popular music through functional analysis of common progressions.",
+      "difficulty": "Beginner"
+    },
+    {
+      "title": "Roman Numeral Analysis",
+      "href": "/lessons/songs/chords/roman-numerals",
+      "icon": "Ⅰ",
+      "description": "Learn to analyze chord functions using Roman numeral notation to understand harmonic relationships.",
+      "difficulty": "Beginner"
+    },
+    {
+      "title": "Voice Leading",
+      "href": "/lessons/songs/chords/voice-leading",
+      "icon": "🎼",
+      "description": "Understand how individual chord tones move between chords to create smooth harmonic motion.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "title": "Chord Substitutions",
+      "href": "/lessons/songs/chords/substitutions",
+      "icon": "♻️",
+      "description": "Explore how different chords can serve the same harmonic function and add sophistication.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "title": "Modal Interchange",
+      "href": "/lessons/songs/chords/modal-interchange",
+      "icon": "🔄",
+      "description": "Discover how borrowing chords from parallel modes adds color and emotional depth.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "title": "Extended Chords",
+      "href": "/lessons/songs/chords/extended",
+      "icon": "9️⃣",
+      "description": "Learn the theory and application of 7th, 9th, 11th, and 13th chords in popular music.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "title": "Secondary Dominants",
+      "href": "/lessons/songs/chords/secondary-dominants",
+      "icon": "🎯",
+      "description": "Master the technique of tonicizing other keys temporarily for harmonic interest.",
+      "difficulty": "Advanced"
+    },
+    {
+      "title": "Chord Inversions",
+      "href": "/lessons/songs/chords/inversions",
+      "icon": "🔀",
+      "description": "Understand how bass note choice affects harmonic stability and melodic bass lines.",
+      "difficulty": "Beginner"
+    }
+  ],
+  "learningPath": {
+    "title": "Recommended Learning Path",
+    "type": "ordered-list",
+    "steps": [
+      { "title": "Roman Numeral Analysis", "description": "Learn the universal language of harmonic analysis" },
+      { "title": "Chord Progressions", "description": "Master common progressions and their emotional qualities" },
+      { "title": "Voice Leading", "description": "Understand how chords connect smoothly" },
+      { "title": "Inversions & Substitutions", "description": "Add sophistication to basic progressions" },
+      { "title": "Advanced Concepts", "description": "Explore modal interchange and secondary dominants" }
+    ]
+  },
+  "featured": {
+    "title": "🎵 Theory in Action: \"Let It Be\"",
+    "bgColor": "bg-gray-50",
+    "borderColor": "border-purple-500",
+    "columns": [
+      {
+        "title": "Harmonic Analysis in C Major",
+        "text": "C - Am - F - G\nI - vi - IV - V (Classic \"vi-IV-I-V\" in disguise)\n\nFunction: Tonic → Relative minor (smooth voice leading) → Subdominant (departure) → Dominant (tension back to tonic)"
+      },
+      {
+        "title": "Voice Leading & Emotional Arc",
+        "text": "Voice Leading: Notice how the top voice moves C→A→A→B, creating a descending line that pulls us back to C.\n\nEmotional Arc: Stability → Introspection → Departure → Return (mirrors the lyrical content)\n\nWhy it works: Strong bass movement (C→A→F→G) with smooth inner voices."
+      }
+    ]
+  },
+  "infoSections": [
+    {
+      "title": "Practice Tips",
+      "icon": "🎹",
+      "bgColor": "bg-blue-50",
+      "borderColor": "",
+      "titleColor": "text-gray-900",
+      "textColor": "text-gray-700",
+      "content": "",
+      "items": [
+        "Play progressions in different keys to understand patterns",
+        "Listen for bass movement - it often reveals harmonic function",
+        "Practice chord progressions with a metronome",
+        "Analyze songs you already know to see theory in action"
+      ]
+    },
+    {
+      "title": "Next Steps",
+      "icon": "🎯",
+      "bgColor": "bg-green-50",
+      "borderColor": "",
+      "titleColor": "text-gray-900",
+      "textColor": "text-green-700",
+      "content": "",
+      "items": [],
+      "links": [
+        {
+          "href": "/lessons/songs/chords/roman-numerals",
+          "label": "Start with Roman Numeral Analysis"
+        },
+        {
+          "href": "/lessons/songs/chords/progressions",
+          "label": "Explore Common Progressions"
+        },
+        {
+          "href": "/lessons/songs/analysis-method",
+          "label": "Learn Song Analysis Method"
+        }
+      ]
+    }
+  ],
+  "nextSteps": null
+}

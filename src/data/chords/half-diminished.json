@@ -1,0 +1,315 @@
+{
+  "slug": "half-diminished",
+  "chordInfo": {
+    "name": "Half-Diminished Chords",
+    "pageTitle": "Half-Diminished (m7b5) Theory",
+    "subtitle": "Master the bittersweet tension of half-diminished chords - the essential ii chord in minor keys and a cornerstone of jazz voice leading.",
+    "colorScheme": "rose",
+    "tags": ["Jazz Essential", "ii in Minor", "Locrian", "Voice Leading"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Half-Diminished Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Four-note chord combining a diminished triad with a minor 7th" },
+      { "label": "Formula", "value": "Root + Minor 3rd + Diminished 5th + Minor 7th (1-b3-b5-b7)" },
+      { "label": "Interval Pattern", "value": "3 semitones + 3 semitones + 4 semitones" },
+      { "label": "Sound Quality", "value": "Dark, yearning, unresolved - between minor 7th and fully diminished" },
+      { "label": "Function", "value": "ii chord in minor keys (iiø7-V7-i), viiø7 in major keys" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Jazz", "value": "Minor ii-V-i progressions (the iiø7 chord)" },
+      { "label": "Classical", "value": "Supertonic in minor, leading-tone chord in major" },
+      { "label": "Bossa Nova", "value": "Sophisticated minor-key harmony" },
+      { "label": "Film Scores", "value": "Melancholy, introspective emotional coloring" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Half-Diminished Chord Construction",
+    "boxes": [
+      {
+        "title": "Bm7b5 Example",
+        "items": [
+          "Root: B (1st degree)",
+          "Minor 3rd: D (b3rd degree)",
+          "Diminished 5th: F (b5th degree)",
+          "Minor 7th: A (b7th degree)",
+          "Result: The ii chord in A minor (Bm7b5-E7-Am)"
+        ]
+      },
+      {
+        "title": "Interval Quality",
+        "items": [
+          "Minor 3rd: Provides the dark, minor character",
+          "Diminished 5th (tritone): Creates tension needing resolution",
+          "Minor 7th: Softer than diminished 7th - the 'half' in half-diminished",
+          "Contains one tritone (root to b5), unlike dim7 which has two",
+          "Psychology: Yearning, bittersweet, seeking resolution"
+        ]
+      },
+      {
+        "title": "Scale Relationship",
+        "items": [
+          "Built from: 7th degree of major scale (viiø7 in C major = Bm7b5)",
+          "Built from: 2nd degree of natural minor (iiø7 in A minor = Bm7b5)",
+          "Parent mode: Locrian (1-b2-b3-4-b5-b6-b7)",
+          "Jazz usage: Always think of it as iiø7 resolving to V7 to i",
+          "Function: Pre-dominant chord that sets up the V7 cadence"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Half-Diminished Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These fundamental voicings cover the most common half-diminished shapes on guitar. The Bm7b5 is the most frequently encountered in jazz standards.",
+      "voicings": [
+        { "name": "Bm7b5", "chord": "Bm7b5", "notes": "B-D-F-A", "fingering": "Common jazz shape, 2nd fret root", "use": "iiø7 in A minor, most common half-diminished" },
+        { "name": "Dm7b5", "chord": "D_minor_7_flat_5", "notes": "D-F-Ab-C", "fingering": "Open-position shape", "use": "iiø7 in C minor, ballads and standards" },
+        { "name": "Em7b5", "chord": "Bm7b5", "notes": "E-G-Bb-D", "fingering": "Bm7b5 shape moved to 7th fret", "use": "iiø7 in D minor, moveable barre form" }
+      ]
+    },
+    {
+      "title": "Advanced Half-Diminished Voicings",
+      "tipTitle": "Expand Your Vocabulary",
+      "tipDescription": "These voicings offer richer textures and smoother voice leading options for jazz and contemporary styles.",
+      "voicings": [
+        { "name": "Am7b5", "chord": "D_minor_7_flat_5", "notes": "A-C-Eb-G", "fingering": "D shape moved to 5th position", "use": "iiø7 in G minor, upper-register voicing" },
+        { "name": "F#m7b5", "chord": "Bm7b5", "notes": "F#-A-C-E", "fingering": "Bm7b5 shape at open position", "use": "iiø7 in E minor, folk-jazz crossover" },
+        { "name": "C#m7b5", "chord": "D_minor_7_flat_5", "notes": "C#-E-G-B", "fingering": "D shape at 4th position", "use": "iiø7 in B minor, rich inner voicing" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Half-Diminished Chord Progressions",
+    "items": [
+      {
+        "title": "Minor ii-V-i (The Core Progression)",
+        "titleColor": "text-rose-700",
+        "chords": [
+          { "chord": "Bm7b5", "label": "Bm7b5", "numeral": "iiø7" },
+          { "chord": "E7", "label": "E7", "numeral": "V7" },
+          { "chord": "Am7", "label": "Am7", "numeral": "i7" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - D - DU",
+          "description": "Jazz comping rhythm with swing feel",
+          "tempo": "100-140 BPM",
+          "feel": "Dark, resolving, sophisticated",
+          "genre": "Jazz, Bossa Nova, Latin Jazz"
+        },
+        "alphaTex": "(2.5 1.4 2.3 0.2).1 | (0.6 2.5 1.4 0.3 0.2).1 | (0.5 0.4 2.3 1.2 0.1).1",
+        "alphaTexTitle": "Minor ii-V-i (Bm7b5-E7-Am7)",
+        "description": "The most important minor-key jazz progression. The half-diminished chord creates a yearning pull toward the dominant, which resolves to minor tonic."
+      },
+      {
+        "title": "Extended Minor ii-V-i-iv",
+        "titleColor": "text-rose-700",
+        "chords": [
+          { "chord": "Dm7b5", "label": "Dm7b5", "numeral": "iiø7" },
+          { "chord": "G7", "label": "G7", "numeral": "V7" },
+          { "chord": "Cm", "label": "Cm", "numeral": "i" },
+          { "chord": "Fm", "label": "Fm", "numeral": "iv" }
+        ],
+        "strumming": {
+          "pattern": "D - D U DU",
+          "description": "Latin-influenced comping pattern",
+          "tempo": "90-120 BPM",
+          "feel": "Melancholy, flowing",
+          "genre": "Jazz, Latin, Film Music"
+        },
+        "alphaTex": "(4.4 3.3 4.2 1.1).1 | (3.6 2.5 0.4 0.3 0.2 1.1).1 | (3.5 1.4 0.3 1.2).1 | (1.6 3.5 3.4 1.3 1.2 1.1).1",
+        "alphaTexTitle": "Minor ii-V-i-iv (Dm7b5-G7-Cm-Fm)",
+        "description": "An extended minor-key progression commonly found in jazz ballads and Latin jazz. The half-diminished sets up a darker emotional arc."
+      },
+      {
+        "title": "viiø7 as Leading Tone Chord",
+        "titleColor": "text-rose-700",
+        "chords": [
+          { "chord": "Cmaj7", "label": "Cmaj7", "numeral": "Imaj7" },
+          { "chord": "Am7", "label": "Am7", "numeral": "vi7" },
+          { "chord": "Bm7b5", "label": "Bm7b5", "numeral": "viiø7" },
+          { "chord": "Cmaj7", "label": "Cmaj7", "numeral": "Imaj7" }
+        ],
+        "strumming": {
+          "pattern": "D - DU D - DU",
+          "description": "Gentle fingerpicking or comping",
+          "tempo": "80-110 BPM",
+          "feel": "Sophisticated, gentle resolution",
+          "genre": "Jazz, Pop-Jazz, Singer-Songwriter"
+        },
+        "alphaTex": "(3.5 2.4 0.3 0.2 0.1).1 | (0.5 0.4 2.3 1.2 0.1).1 | (2.5 1.4 2.3 0.2).1 | (3.5 2.4 0.3 0.2 0.1).1",
+        "alphaTexTitle": "viiø7 Resolution (Cmaj7-Am7-Bm7b5-Cmaj7)",
+        "description": "The half-diminished chord built on the 7th degree of C major acts as a leading-tone chord, gently pulling back to the tonic."
+      },
+      {
+        "title": "Chromatic Half-Diminished Movement",
+        "titleColor": "text-rose-700",
+        "chords": [
+          { "chord": "Am7", "label": "Am7", "numeral": "i7" },
+          { "chord": "Bm7b5", "label": "Bm7b5", "numeral": "iiø7" },
+          { "chord": "E7", "label": "E7", "numeral": "V7" },
+          { "chord": "Am7", "label": "Am7", "numeral": "i7" }
+        ],
+        "strumming": {
+          "pattern": "D U D U D U D U",
+          "description": "Steady eighth-note comping",
+          "tempo": "120-160 BPM",
+          "feel": "Driving, urgent, dramatic",
+          "genre": "Bebop, Hard Bop, Modal Jazz"
+        },
+        "alphaTex": "(0.5 0.4 2.3 1.2 0.1).1 | (2.5 1.4 2.3 0.2).1 | (0.6 2.5 1.4 0.3 0.2).1 | (0.5 0.4 2.3 1.2 0.1).1",
+        "alphaTexTitle": "Turnaround (Am7-Bm7b5-E7-Am7)",
+        "description": "A classic minor-key turnaround. Starting on the tonic, the iiø7 introduces tension that resolves through V7 back home."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Practice smooth voice leading from iiø7 to V7 - many notes are shared or move by half step",
+        "Learn the Bm7b5 shape thoroughly before moving to other roots",
+        "Compare the sound of m7b5 to regular m7 to internalize the b5 difference",
+        "Use a metronome and practice the ii-V-i cadence in all 12 minor keys"
+      ],
+      "applicationItems": [
+        "The iiø7-V7-i is the single most important minor-key progression in jazz",
+        "Half-diminished chords add sophistication to otherwise simple minor progressions",
+        "Voice leading from iiø7 to V7 is smoother than from iim7 to V7 in minor",
+        "Use half-diminished as a substitute for plain minor chords for richer harmony"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Half-Diminished Chords",
+    "categories": [
+      {
+        "title": "Jazz Standards & Classics",
+        "colorBg": "bg-rose-100",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-800",
+        "colorText": "text-rose-700",
+        "songs": [
+          "\"Autumn Leaves\" - Jazz Standard (C#m7b5-F#7-Bm in the B section)",
+          "\"Blue Bossa\" - Kenny Dorham (Dm7b5-G7-Cm)",
+          "\"Stella by Starlight\" - Victor Young (Em7b5-A7 opening)",
+          "\"All the Things You Are\" - Jerome Kern (F#m7b5-B7-Emaj7)",
+          "\"My Funny Valentine\" - Rodgers & Hart (Cm-Bm7b5-Bbm7b5 descending line)"
+        ]
+      },
+      {
+        "title": "Pop, Rock & Film",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-100",
+        "colorTitle": "text-rose-700",
+        "colorText": "text-rose-600",
+        "songs": [
+          "\"Still Got the Blues\" - Gary Moore (Am-Dm-Bm7b5-E7)",
+          "\"Stairway to Heaven\" - Led Zeppelin (chromatic descending bass with m7b5)",
+          "\"The Godfather Theme\" - Nino Rota (minor ii-V-i cadences throughout)",
+          "\"Black Orpheus (Manha de Carnaval)\" - Luiz Bonfa (Bm7b5-E7-Am)",
+          "\"Europa\" - Santana (Cm7b5-F7 in the bridge)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Half-Diminished Mastery",
+    "tipDescription": "These exercises focus on the most practical applications of half-diminished chords, emphasizing the minor ii-V-i cadence.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Minor ii-V-i in All Keys",
+        "content": "Cycle: Bm7b5-E7-Am | Em7b5-A7-Dm | Am7b5-D7-Gm | Dm7b5-G7-Cm",
+        "detail": "Play the minor ii-V-i cadence through the cycle of fourths, using one voicing shape moved chromatically",
+        "tip": "Focus on minimal finger movement - the b5 in the iiø7 resolves down by half step to the 3rd of the V7 chord"
+      },
+      {
+        "title": "Exercise 2: Half-Diminished vs. Minor 7th Comparison",
+        "content": "Pairs: Bm7-Bm7b5 | Em7-Em7b5 | Am7-Am7b5 | Dm7-Dm7b5",
+        "detail": "Alternate between the minor 7th and half-diminished versions of each chord to train your ear to hear the b5 difference",
+        "tip": "The only difference is one note (the 5th is lowered by one fret). Listen for the added darkness and tension."
+      },
+      {
+        "title": "Exercise 3: Voice Leading Through Minor Turnarounds",
+        "content": "Turnaround: Am7 - Bm7b5 - E7 - Am7 (repeat in Dm, Gm, Cm)",
+        "detail": "Practice the full minor turnaround focusing on smooth voice leading between each chord change",
+        "tip": "Try to keep common tones ringing and move other voices by the smallest interval possible"
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Half-Diminished Concepts",
+    "concepts": [
+      {
+        "title": "Half-Diminished vs. Fully Diminished",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-800",
+        "colorText": "text-rose-700",
+        "items": [
+          "Half-diminished (m7b5): 1-b3-b5-b7. Contains a minor 7th interval from root.",
+          "Fully diminished (dim7): 1-b3-b5-bb7. Contains a diminished 7th (enharmonic major 6th).",
+          "Half-diminished has ONE tritone (root to b5); fully diminished has TWO tritones.",
+          "The minor 7th in half-diminished gives it a softer, less symmetrical sound.",
+          "Locrian mode is the parent scale for half-diminished; Locrian b2 or diminished scale for dim7."
+        ]
+      },
+      {
+        "title": "Reharmonization and Substitution Techniques",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-800",
+        "colorText": "text-rose-700",
+        "items": [
+          "Any m7b5 chord shares 3 notes with the dominant 7th a minor 3rd below (e.g., Bm7b5 ~ G9).",
+          "Substitute iiø7 for iv6 in minor: Bm7b5 contains the same notes as Dm6 (D-F-A-B).",
+          "Locrian natural 2 (melodic minor 6th mode) provides a brighter scale choice over m7b5.",
+          "In modal jazz, treat half-diminished as a color chord rather than a functional pre-dominant.",
+          "Add the 9th (m9b5) or 11th (m11b5) for richer extensions in contemporary jazz."
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand half-diminished chords, explore the related chord types that complete the picture of minor-key harmony and tension-resolution.",
+    "links": [
+      {
+        "slug": "diminished",
+        "title": "Diminished Chords",
+        "description": "Compare the fully diminished sound with its half-diminished sibling.",
+        "linkText": "Learn diminished chords",
+        "icon": "o",
+        "hoverBorder": "hover:border-red-300",
+        "iconBg": "bg-red-100",
+        "iconHoverBg": "group-hover:bg-red-200",
+        "linkColor": "text-red-600",
+        "linkHoverColor": "group-hover:text-red-700"
+      },
+      {
+        "slug": "minor-seventh",
+        "title": "Minor Seventh Chords",
+        "description": "Understand the minor 7th chord that is just one note away from half-diminished.",
+        "linkText": "Learn minor sevenths",
+        "icon": "m7",
+        "hoverBorder": "hover:border-slate-300",
+        "iconBg": "bg-slate-100",
+        "iconHoverBg": "group-hover:bg-slate-200",
+        "linkColor": "text-slate-600",
+        "linkHoverColor": "group-hover:text-slate-700"
+      },
+      {
+        "slug": "minor-sixth",
+        "title": "Minor Sixth Chords",
+        "description": "Discover the enharmonic twin of the half-diminished chord in first inversion.",
+        "linkText": "Learn minor sixths",
+        "icon": "m6",
+        "hoverBorder": "hover:border-violet-300",
+        "iconBg": "bg-violet-100",
+        "iconHoverBg": "group-hover:bg-violet-200",
+        "linkColor": "text-violet-600",
+        "linkHoverColor": "group-hover:text-violet-700"
+      }
+    ]
+  }
+}

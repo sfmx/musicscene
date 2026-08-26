@@ -1,0 +1,580 @@
+{
+  "songInfo": {
+    "title": "Welcome to the Jungle",
+    "artist": "Guns N' Roses",
+    "album": "Appetite for Destruction",
+    "released": "1987",
+    "genre": "Hard Rock / Arena Rock",
+    "tempo": "~120 BPM (varies)",
+    "duration": "4:33",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor (primarily), with sections moving through A minor and B minor areas",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor (Aeolian)",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary tonal center for the main riffs and verse sections; the dark minor tonality drives the threatening jungle atmosphere"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Core vocabulary for Slash's riffs, fills, and the blistering guitar solo"
+        },
+        {
+          "scale": "E blues scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "The added blue note (Bb) appears in the more aggressive riff passages and solo bends"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Used over the A-based sections and the chorus, connecting to the E minor framework"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with blues inflections and extreme dynamic shifts from whispered quiet to full-throttle aggression",
+      "keySignature": "1 sharp (F#) for E minor",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "A5",
+          "D5",
+          "C5",
+          "B5"
+        ],
+        "progression": "i - iv - VII - VI - v",
+        "description": "The song uses a variety of power chord movements rooted in E minor, with the riffs driving the harmony rather than traditional chord progressions. Multiple riff-based sections create a dynamic, shifting harmonic landscape."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Wah Intro",
+          "progression": "Single-note E-based line descending chromatically",
+          "romanNumerals": "i (single-note riff)",
+          "description": "The iconic wah-drenched intro with a high single note bending down chromatically into the first riff, creating one of rock's most recognizable openings"
+        },
+        {
+          "section": "Main Riff",
+          "progression": "E5 - (chromatic riff) - A5 - G5",
+          "romanNumerals": "i - (riff) - iv - III",
+          "description": "The aggressive single-note riff centered on E minor with power chord stabs, driven by palm-muted sixteenth notes"
+        },
+        {
+          "section": "Verse",
+          "progression": "A5 - C5 - D5 - A5",
+          "romanNumerals": "iv - VI - VII - iv",
+          "description": "The verse shifts the tonal center temporarily to A minor territory, with Slash playing rhythmic power chord stabs"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "B5 - A5 - G5 - E5",
+          "romanNumerals": "v - iv - III - i",
+          "description": "Descending power chord sequence building tension with increasing aggression before the chorus explosion"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - G5 - A5 - C5 - D5 - E5",
+          "romanNumerals": "i - III - iv - VI - VII - i",
+          "description": "The 'Welcome to the Jungle' chorus with power chords ascending through the natural minor before crashing back to E5"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (i) - The dark, threatening minor tonic that anchors the song's aggression",
+        "A5 (iv) - Minor subdominant providing the verse's tonal center shift",
+        "G5 (III) - Relative major providing brief moments of harmonic brightness",
+        "C5 (VI) - Submediant adding weight and drama to ascending passages",
+        "D5 (VII) - Subtonic creating forward drive toward the tonic resolution",
+        "B5 (v) - Minor dominant in the pre-chorus descent, building tension"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Wah Pedal Intro Technique",
+      "description": "The legendary wah-drenched intro where a single high note on the guitar feeds back and descends with the wah pedal sweeping, creating one of rock's most instantly recognizable openings",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Start on a high E note (12th fret high E string) with the wah pedal in the toe-down (treble) position",
+          "Slowly rock the wah pedal from toe-down to heel-down while the note sustains",
+          "Use natural feedback from the amp to sustain the note",
+          "The wah sweep creates the vocal 'crying' quality that defines the intro",
+          "The note bends down and feeds into the chromatic descending run that launches the main riff"
+        ],
+        "sequence": [
+          "Position on the 12th fret high E string with the wah fully forward",
+          "Strike the note with the bridge pickup and high gain for feedback sustain",
+          "Slowly sweep the wah pedal back (heel position) over 2-3 seconds",
+          "As the note decays, add vibrato for sustain",
+          "Transition into the chromatic descending run into the main riff"
+        ],
+        "tips": [
+          "A wah pedal is essential for the authentic intro sound (Dunlop Cry Baby or similar)",
+          "Stand close to your amp for natural feedback sustain on the high note",
+          "The wah sweep should be slow and dramatic - not fast rocking",
+          "Without a wah pedal, a volume swell with heavy reverb can approximate the atmospheric opening"
+        ],
+        "chords": [],
+        "progression": "Single-note E with wah sweep into chromatic descent"
+      }
+    },
+    {
+      "name": "Aggressive Single-Note Riffing",
+      "description": "Slash's signature riffing style combining palm-muted single-note runs on the low E and A strings with sudden power chord stabs, creating the violent energy that drives the song's verses and main riff",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Low E string riff centered around the open E and notes at the 3rd (G) and 5th (A) frets",
+          "Heavy palm muting on the low strings for the aggressive 'chug' sound",
+          "Sudden accented power chord stabs break out of the muted patterns",
+          "The riff uses chromatic approach notes (sliding into target notes from a half-step below)",
+          "Sixteenth-note palm-muted passages require fast, precise right-hand technique"
+        ],
+        "sequence": [
+          "Start with heavy palm-muted open E string chugging",
+          "Add the chromatic riff figure: open E, 3rd fret G, 2nd fret F# (chromatic approach to G)",
+          "Accent the power chord stab at the peak of each riff phrase",
+          "Return to palm-muted chugging",
+          "Vary the riff pattern between repetitions to match Slash's improvisatory approach"
+        ],
+        "tips": [
+          "The palm muting should be heavy - almost percussive - on the chugging sections",
+          "The contrast between dead-muted chugging and sudden open power chord hits is the key dynamic",
+          "Practice the chromatic approach notes slowly to nail the tight, precise articulation",
+          "Use the bridge humbucker with high gain for the aggressive attack"
+        ],
+        "chords": [
+          "E5",
+          "A5",
+          "G5"
+        ],
+        "progression": "E-based single-note riff with E5, A5, G5 power chord stabs"
+      }
+    },
+    {
+      "name": "Extreme Dynamic Contrasts",
+      "description": "The song features more extreme dynamic range than almost any other rock song, from whispered clean guitar and soft vocals to full-throttle screaming and maximum gain, requiring precise volume and intensity control",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The song ranges from near-silence to maximum intensity multiple times",
+          "Clean or lightly crunchy guitar in the quieter verse passages",
+          "Full gain, full volume for the explosive chorus and riff sections",
+          "Guitar volume knob or channel switching controls the dynamic range",
+          "The builds from quiet to loud are gradual, then the drops are sudden and dramatic"
+        ],
+        "sequence": [
+          "Start the wah intro at moderate volume with high sustain",
+          "Drop to a tight, controlled level for the verse riffing",
+          "Build gradually through the pre-chorus with increasing aggression",
+          "Explode into full volume for the chorus",
+          "Drop back dramatically for the next verse",
+          "The final section escalates to the most extreme volume of the entire song"
+        ],
+        "tips": [
+          "Use your guitar volume knob actively to control dynamics during the song",
+          "A boost or overdrive pedal can help step up for the chorus and solo",
+          "The dynamic drops should feel sudden and dangerous - not gradual",
+          "Practice the whole song focusing only on dynamics before worrying about note accuracy"
+        ],
+        "chords": [
+          "E5",
+          "A5",
+          "D5",
+          "C5",
+          "B5",
+          "G5"
+        ],
+        "progression": "Dynamic control across all sections"
+      }
+    },
+    {
+      "name": "Slash's Solo Technique",
+      "description": "The blazing guitar solo combining fast pentatonic runs, aggressive bends, wah-wah expression, and Slash's signature blues-rock phrasing with Les Paul sustain",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Solo uses E minor pentatonic primarily at the 12th position",
+          "Fast alternate picking runs descending through the pentatonic scale",
+          "Aggressive whole-step and step-and-a-half bends on the B and high E strings",
+          "Wah pedal engaged throughout for the expressive vocal quality",
+          "Legato hammer-ons and pull-offs for fluid connecting passages"
+        ],
+        "sequence": [
+          "Enter the solo with a dramatic bent note sustained with vibrato",
+          "Descend through E minor pentatonic with fast alternate picking",
+          "Ramp the wah pedal in rhythm with the phrasing for vocal expression",
+          "Execute aggressive bends at the climactic points",
+          "Build to the final, screaming high bend before crashing into the last chorus"
+        ],
+        "tips": [
+          "Slash uses a heavy guitar (Les Paul) which helps sustain - lighter guitars may need more gain",
+          "The wah pedal during the solo should follow the phrasing, not be rocked mindlessly",
+          "Practice the solo in four-bar phrases at half speed before attempting full speed",
+          "The solo's power comes from attitude and feel, not just technical accuracy"
+        ],
+        "chords": [],
+        "progression": "Solo over E5 - G5 - A5 - C5 - D5 changes"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Wah Intro",
+      "timeStamp": "0:00-0:18",
+      "technique": "Wah Pedal Intro Technique",
+      "key": "E Minor",
+      "description": "The instantly recognizable wah-drenched opening - a sustained high note sweeps through the wah pedal before descending chromatically into the main riff, one of the greatest intros in rock history",
+      "chords": [
+        "E5"
+      ],
+      "progression": "E (single note, wah sweep)",
+      "notes": [
+        "Sustained high E note (12th fret) with slow wah pedal sweep",
+        "Natural feedback sustains the note - stand near your amp",
+        "The chromatic descent launches into the main riff with explosive energy",
+        "The entire intro is a masterclass in building anticipation and tension"
+      ],
+      "alphaTab": "12.6 15.6 12.5 14.5 12.4 14.4 | 12.3 14.3 12.2 15.2 12.1 15.1 | 15.1 12.1 15.2 12.2 14.3 12.3 | 14.4 12.4 14.5 12.5 15.6 12.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:18-0:52",
+      "technique": "Aggressive Single-Note Riffing",
+      "key": "E Minor / A Minor",
+      "description": "Tight, aggressive riffing with palm-muted single-note runs on the low strings and sudden power chord stabs, creating the menacing 'jungle' atmosphere beneath Axl's vocal",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A5 - C5 - D5 - A5",
+      "notes": [
+        "Heavy palm muting on the low string chugging passages",
+        "Sudden power chord stabs cut through the muted rhythm",
+        "The verse keeps the dynamics relatively controlled before the chorus explosion",
+        "Chromatic approach notes give the riff its dangerous, slinky character"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "0:52-1:07",
+      "technique": "Extreme Dynamic Contrasts",
+      "key": "E Minor",
+      "description": "Descending power chord sequence with increasing aggression and volume, building from controlled verse energy to the explosive chorus",
+      "chords": [
+        "B5",
+        "A5",
+        "G5",
+        "E5"
+      ],
+      "progression": "B5 - A5 - G5 - E5",
+      "notes": [
+        "Descending power chords create a sense of gravity pulling toward the chorus",
+        "Volume and intensity increase with each chord change",
+        "The final E5 is the launchpad for the chorus explosion",
+        "Strumming becomes more aggressive and less muted through the buildup"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:07-1:35",
+      "technique": "Aggressive Single-Note Riffing",
+      "key": "E Minor",
+      "description": "The 'Welcome to the Jungle' chorus with maximum intensity, ascending power chords through the natural minor scale before crashing back to the tonic E5",
+      "chords": [
+        "E5",
+        "G5",
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - A5 - C5 - D5 - E5",
+      "notes": [
+        "Full volume, full gain - this is the song's explosive peak",
+        "Ascending power chord movement creates an overwhelming sense of escalation",
+        "The 'we got fun and games' line lands on the ascending chord motion",
+        "Sustain each chord to let the energy ring before the next section"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "1:35-2:10",
+      "technique": "Aggressive Single-Note Riffing",
+      "key": "E Minor / A Minor",
+      "description": "Second verse with the same aggressive riffing but with varied dynamics - Axl's vocal delivery shifts between whispered and screamed, and the guitar follows suit",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A5 - C5 - D5 - A5",
+      "notes": [
+        "Match the vocal dynamics: quieter when Axl whispers, louder when he screams",
+        "The riff varies slightly from the first verse for evolving interest",
+        "Palm muting tightens during the quieter passages for maximum tension",
+        "The band drops to near-silence before building back up"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:40-3:07",
+      "technique": "Extreme Dynamic Contrasts",
+      "key": "E Minor",
+      "description": "The dynamic bridge section with dramatic stops and starts, building from a near-whisper to full throttle with Slash adding melodic lead fills over the shifting dynamics",
+      "chords": [
+        "E5",
+        "G5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - G5 - A5 - B5 - E5",
+      "notes": [
+        "Dramatic dynamic drops create tension before each swell of energy",
+        "Slash adds wah-filtered lead fills between the heavy power chord sections",
+        "The bridge is the most dynamically extreme section of the song",
+        "The buildup toward the guitar solo starts here with increasing frenzy"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "3:07-3:40",
+      "technique": "Slash's Solo Technique",
+      "key": "E Minor",
+      "description": "Slash's ferocious guitar solo with wah-drenched pentatonic runs, aggressive bends, and blistering alternate picking, building to a screaming climactic note",
+      "chords": [
+        "E5",
+        "G5",
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - A5 - C5 - D5",
+      "notes": [
+        "Wah pedal engaged throughout the solo for the vocal-like expression",
+        "E minor pentatonic at the 12th position is the primary scale home",
+        "Fast alternate picking runs descend through the pentatonic boxes",
+        "The climactic final bend should be held with aggressive vibrato before the last chorus"
+      ],
+      "alphaTab": "15.1 12.1 15.2 12.2 | 14.3 12.3 14.4 12.4 | 12.3 14.3 12.2 15.2 | 15.1 12.1 12.2 15.2 |",
+      "exerciseLabel": "Minor Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Final Chorus / Outro",
+      "timeStamp": "3:40-4:33",
+      "technique": "Extreme Dynamic Contrasts",
+      "key": "E Minor",
+      "description": "The extended final section building from the solo's climax through repeated chorus hooks to the song's most extreme dynamics, ending with the famous 'You know where you are? You're in the jungle, baby!' spoken outro",
+      "chords": [
+        "E5",
+        "G5",
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - A5 - C5 - D5 - E5",
+      "notes": [
+        "The most extreme dynamics occur here: full-throttle chorus then dramatic breakdown",
+        "The outro alternates between screaming intensity and controlled tension",
+        "Slash plays frenetic fills and feedback-drenched notes over the final section",
+        "The song ends with a dramatic final E5 power chord with sustained feedback"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard (Slash's signature tone)",
+      "alternatives": [
+        "Epiphone Les Paul Standard",
+        "Gibson Les Paul Classic",
+        "PRS SE Custom 24",
+        "Any mahogany-body, dual-humbucker guitar"
+      ],
+      "pickup": "Bridge humbucker (Seymour Duncan Alnico II Pro in Slash's original rig) for the aggressive rhythm and lead tones"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 2203 (Slash's primary amp on Appetite for Destruction)",
+      "alternatives": [
+        "Marshall Plexi 1959",
+        "Marshall Silver Jubilee",
+        "Friedman BE-100",
+        "Peavey 5150 (for the high-gain sections)"
+      ],
+      "settings": {
+        "gain": "8-9 (high gain for the aggressive tone, bordering on full saturation)",
+        "treble": "7 (cutting treble for articulation through the wah and gain)",
+        "middle": "6 (strong mids for the Les Paul thickness)",
+        "bass": "5 (tight low end to prevent muddiness with high gain)",
+        "presence": "7 (high presence for cutting through the mix)"
+      }
+    },
+    "effects": {
+      "distortion": "High-gain Marshall JCM800 pushed hard is the foundation. Slash used a modified JCM800 for the recording. A boost pedal helps for solos.",
+      "delay": "Short delay (200-300ms) for lead sections, subtle enough to not blur the fast runs",
+      "reverb": "Light room reverb - the tone is relatively dry compared to arena rock contemporaries",
+      "other": "Wah pedal (Dunlop Cry Baby GCB95) is absolutely essential for both the intro and solo. This is the most critical effect pedal for the song. A noise gate is recommended for managing feedback at high gain levels."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic power chord shapes and the simplified chorus progression",
+      "steps": [
+        "Master E5, A5, G5, C5, D5, and B5 power chord shapes",
+        "Practice the chorus power chord progression at slow tempo",
+        "Work on basic palm muting technique on a single power chord",
+        "Play along with the chorus section only at reduced tempo"
+      ],
+      "timeEstimate": "2-4 weeks for the basic chorus progression"
+    },
+    "intermediate": {
+      "focus": "Develop the aggressive riffing technique, palm-muted single-note runs, and dynamic control",
+      "steps": [
+        "Learn the main riff with palm-muted single-note chugging",
+        "Practice the chromatic approach notes in the verse riff",
+        "Work on the pre-chorus descending power chord sequence",
+        "Develop dynamic control between quiet verses and loud choruses"
+      ],
+      "timeEstimate": "4-6 weeks for complete rhythm guitar performance"
+    },
+    "advanced": {
+      "focus": "Master the wah intro, guitar solo, extreme dynamics, and full performance",
+      "steps": [
+        "Learn the wah pedal intro technique with feedback sustain",
+        "Work through the solo phrase by phrase at half speed with wah",
+        "Practice the extreme dynamic contrasts throughout the song",
+        "Combine all elements for a full performance with appropriate equipment"
+      ],
+      "timeEstimate": "2-3 months for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the entire song at the same dynamic level instead of exploiting the extreme contrasts",
+      "Not using enough palm muting on the verse riff - the muted chugging is essential to the menacing feel",
+      "Rushing the wah intro - the slow sweep is dramatic and deliberate, not fast",
+      "Over-rocking the wah pedal during the solo instead of matching it to the musical phrasing"
+    ],
+    "practiceRoutine": [
+      "Warm up with palm-muted open E string chugging at 100 BPM (3 minutes)",
+      "Practice the verse riff with chromatic approach notes at slow tempo (5 minutes)",
+      "Work on the pre-chorus descending power chord sequence (5 minutes)",
+      "Drill the chorus ascending power chords with full dynamic explosion (5 minutes)",
+      "Practice the wah intro and solo phrases separately at half speed (5 minutes)",
+      "Full song structure run-through focusing on dynamic map (5 minutes)"
+    ],
+    "focusAreas": [
+      "Extreme dynamic contrast between quiet verses and explosive choruses",
+      "Tight palm-muted single-note riffing at tempo",
+      "Wah pedal technique for both the intro and lead solo",
+      "Chromatic approach notes and riff accuracy"
+    ],
+    "metronomeWork": [
+      "Note: the song's tempo varies - practice sections individually before combining",
+      "Main riff at 100 BPM building to ~120 BPM with tight palm muting",
+      "Chorus power chord progression at 120 BPM with full dynamics",
+      "Solo phrases at 80 BPM (half tempo) building gradually to performance speed"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Sweet Child O' Mine",
+        "difficulty": "Advanced",
+        "similarity": "Same album, contrasting light-to-dark approach with iconic intro and extended solo"
+      },
+      {
+        "title": "Paradise City",
+        "difficulty": "Advanced",
+        "similarity": "Same album, similar dynamic range and aggressive riffing with anthemic chorus"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Minor-key aggressive riffing with palm-muted chugging and dynamic contrast"
+      },
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "difficulty": "Advanced",
+        "similarity": "Iconic intro riff leading to aggressive minor-key rock with technical guitar solo"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Power chord-driven hard rock with iconic opening and rhythmic precision"
+      },
+      {
+        "title": "Rebel Yell",
+        "artist": "Billy Idol",
+        "difficulty": "Intermediate",
+        "similarity": "High-energy arena rock with aggressive guitar attack and dynamic contrasts"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Iron Man",
+        "artist": "Black Sabbath",
+        "difficulty": "Beginner",
+        "similarity": "Start with a simpler minor-key riff to build palm muting fundamentals"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Advanced",
+        "similarity": "Same band and era - master both for a complete Appetite for Destruction foundation"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-05",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "hard-rock",
+      "arena-rock",
+      "advanced",
+      "wah-pedal",
+      "palm-muting",
+      "dynamic-contrast",
+      "80s-rock",
+      "iconic-intro"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

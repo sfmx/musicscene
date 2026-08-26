@@ -11,6 +11,99 @@ import hurtSoGoodData from '@/data/songs/hurt-so-good.json';
 import johnnyBGoodeData from '@/data/songs/johnny-b-goode.json';
 import iLoveRockNRollData from '@/data/songs/i-love-rock-n-roll.json';
 import noSecretsData from '@/data/songs/no-secrets.json';
+import brothersInArmsData from '@/data/songs/brothers-in-arms.json';
+import smokeOnTheWaterData from '@/data/songs/smoke-on-the-water.json';
+import blitzkriegBopData from '@/data/songs/blitzkrieg-bop.json';
+import horseWithNoNameData from '@/data/songs/horse-with-no-name.json';
+import sevenNationArmyData from '@/data/songs/seven-nation-army.json';
+import comfortablyNumbData from '@/data/songs/comfortably-numb.json';
+import purpleHazeData from '@/data/songs/purple-haze.json';
+import stairwayToHeavenData from '@/data/songs/stairway-to-heaven.json';
+import thrillIsGoneData from '@/data/songs/the-thrill-is-gone.json';
+import prideAndJoyData from '@/data/songs/pride-and-joy.json';
+import crossroadsData from '@/data/songs/crossroads.json';
+import eruptionData from '@/data/songs/eruption.json';
+import sultansOfSwingData from '@/data/songs/sultans-of-swing.json';
+import cliffsOfDoverData from '@/data/songs/cliffs-of-dover.json';
+import wishYouWereHereData from '@/data/songs/wish-you-were-here.json';
+import blackbirdData from '@/data/songs/blackbird.json';
+import allAlongTheWatchtowerData from '@/data/songs/all-along-the-watchtower.json';
+import oyeComoVaData from '@/data/songs/oye-como-va.json';
+import norwegianWoodData from '@/data/songs/norwegian-wood.json';
+import anotherBrickInTheWallData from '@/data/songs/another-brick-in-the-wall.json';
+import wonderwallData from '@/data/songs/wonderwall.json';
+import underTheBridgeData from '@/data/songs/under-the-bridge.json';
+import crazyTrainData from '@/data/songs/crazy-train.json';
+import zombieData from '@/data/songs/zombie.json';
+import tornData from '@/data/songs/torn.json';
+import landslideData from '@/data/songs/landslide.json';
+import barracudaData from '@/data/songs/barracuda.json';
+import dreamsData from '@/data/songs/dreams.json';
+import ringOfFireData from '@/data/songs/ring-of-fire.json';
+import folsomPrisonBluesData from '@/data/songs/folsom-prison-blues.json';
+import devilWentDownToGeorgiaData from '@/data/songs/devil-went-down-to-georgia.json';
+import mammasDontLetYourBabiesData from '@/data/songs/mammas-dont-let-your-babies.json';
+import superstitionData from '@/data/songs/superstition.json';
+import sittinOnTheDockOfTheBayData from '@/data/songs/sittin-on-the-dock-of-the-bay.json';
+import whatsGoingOnData from '@/data/songs/whats-going-on.json';
+import comeAsYouAreData from '@/data/songs/come-as-you-are.json';
+import blackHoleSunData from '@/data/songs/black-hole-sun.json';
+import everlongData from '@/data/songs/everlong.json';
+import roundaboutData from '@/data/songs/roundabout.json';
+import tomSawyerData from '@/data/songs/tom-sawyer.json';
+import allBluesData from '@/data/songs/all-blues.json';
+import europaData from '@/data/songs/europa.json';
+import riptideData from '@/data/songs/riptide.json';
+import radioactiveData from '@/data/songs/radioactive.json';
+import takeMeToChurchData from '@/data/songs/take-me-to-church.json';
+import dustMyBroomData from '@/data/songs/dust-my-broom.json';
+import schismData from '@/data/songs/schism.json';
+import classicalGasData from '@/data/songs/classical-gas.json';
+import badMoonRisingData from '@/data/songs/bad-moon-rising.json';
+import twistAndShoutData from '@/data/songs/twist-and-shout.json';
+import wildThingData from '@/data/songs/wild-thing.json';
+import laBambaData from '@/data/songs/la-bamba.json';
+import knockinOnHeavensDoorData from '@/data/songs/knockin-on-heavens-door.json';
+import freeFallinData from '@/data/songs/free-fallin.json';
+import brownEyedGirlData from '@/data/songs/brown-eyed-girl.json';
+import standByMeData from '@/data/songs/stand-by-me.json';
+import goodRiddanceData from '@/data/songs/good-riddance.json';
+import blowinInTheWindData from '@/data/songs/blowin-in-the-wind.json';
+import houndDogData from '@/data/songs/hound-dog.json';
+import gloriaData from '@/data/songs/gloria.json';
+import louieLouieData from '@/data/songs/louie-louie.json';
+import wagonWheelData from '@/data/songs/wagon-wheel.json';
+import whatIGotData from '@/data/songs/what-i-got.json';
+import bornToBeWildData from '@/data/songs/born-to-be-wild.json';
+import rockAndRollAllNiteData from '@/data/songs/rock-and-roll-all-nite.json';
+import weWillRockYouData from '@/data/songs/we-will-rock-you.json';
+import livinOnAPrayerData from '@/data/songs/livin-on-a-prayer.json';
+import youReallyGotMeData from '@/data/songs/you-really-got-me.json';
+import rebelYellData from '@/data/songs/rebel-yell.json';
+import hitMeWithYourBestShotData from '@/data/songs/hit-me-with-your-best-shot.json';
+import rockYouLikeAHurricaneData from '@/data/songs/rock-you-like-a-hurricane.json';
+import shouldIStayOrShouldIGoData from '@/data/songs/should-i-stay-or-should-i-go.json';
+import summerOf69Data from '@/data/songs/summer-of-69.json';
+import hotelCaliforniaData from '@/data/songs/hotel-california.json';
+import paranoidData from '@/data/songs/paranoid.json';
+import ironManData from '@/data/songs/iron-man.json';
+import paintItBlackData from '@/data/songs/paint-it-black.json';
+import satisfactionData from '@/data/songs/satisfaction.json';
+import sunshineOfYourLoveData from '@/data/songs/sunshine-of-your-love.json';
+import wholeLottaLoveData from '@/data/songs/whole-lotta-love.json';
+import laylaData from '@/data/songs/layla.json';
+import moreThanAFeelingData from '@/data/songs/more-than-a-feeling.json';
+import messageInABottleData from '@/data/songs/message-in-a-bottle.json';
+import dontStopBelievinData from '@/data/songs/dont-stop-believin.json';
+import pourSomeSugarOnMeData from '@/data/songs/pour-some-sugar-on-me.json';
+import hereIGoAgainData from '@/data/songs/here-i-go-again.json';
+import theFinalCountdownData from '@/data/songs/the-final-countdown.json';
+import eyeOfTheTigerData from '@/data/songs/eye-of-the-tiger.json';
+import youGiveLoveABadNameData from '@/data/songs/you-give-love-a-bad-name.json';
+import wantedDeadOrAliveData from '@/data/songs/wanted-dead-or-alive.json';
+import everyRoseHasItsThornData from '@/data/songs/every-rose-has-its-thorn.json';
+import photographData from '@/data/songs/photograph.json';
+import welcomeToTheJungleData from '@/data/songs/welcome-to-the-jungle.json';
 
 export interface SongData {
   songInfo: {
@@ -78,7 +171,8 @@ export interface SongData {
     key: string;
     description: string;
     tab?: string;
-    vexTab?: string;
+    alphaTab?: string;
+    exerciseLabel?: string;
     chords?: string[];
     progression?: string;
     notes: string[];
@@ -211,6 +305,99 @@ const songDatabase: Record<string, SongData> = {
   'johnny-b-goode': johnnyBGoodeData as unknown as SongData,
   'i-love-rock-n-roll': iLoveRockNRollData as unknown as SongData,
   'no-secrets': noSecretsData as unknown as SongData,
+  'brothers-in-arms': brothersInArmsData as unknown as SongData,
+  'smoke-on-the-water': smokeOnTheWaterData as unknown as SongData,
+  'blitzkrieg-bop': blitzkriegBopData as unknown as SongData,
+  'horse-with-no-name': horseWithNoNameData as unknown as SongData,
+  'seven-nation-army': sevenNationArmyData as unknown as SongData,
+  'comfortably-numb': comfortablyNumbData as unknown as SongData,
+  'purple-haze': purpleHazeData as unknown as SongData,
+  'stairway-to-heaven': stairwayToHeavenData as unknown as SongData,
+  'the-thrill-is-gone': thrillIsGoneData as unknown as SongData,
+  'pride-and-joy': prideAndJoyData as unknown as SongData,
+  'crossroads': crossroadsData as unknown as SongData,
+  'eruption': eruptionData as unknown as SongData,
+  'sultans-of-swing': sultansOfSwingData as unknown as SongData,
+  'cliffs-of-dover': cliffsOfDoverData as unknown as SongData,
+  'wish-you-were-here': wishYouWereHereData as unknown as SongData,
+  'blackbird': blackbirdData as unknown as SongData,
+  'all-along-the-watchtower': allAlongTheWatchtowerData as unknown as SongData,
+  'oye-como-va': oyeComoVaData as unknown as SongData,
+  'norwegian-wood': norwegianWoodData as unknown as SongData,
+  'another-brick-in-the-wall': anotherBrickInTheWallData as unknown as SongData,
+  'wonderwall': wonderwallData as unknown as SongData,
+  'under-the-bridge': underTheBridgeData as unknown as SongData,
+  'crazy-train': crazyTrainData as unknown as SongData,
+  'zombie': zombieData as unknown as SongData,
+  'torn': tornData as unknown as SongData,
+  'landslide': landslideData as unknown as SongData,
+  'barracuda': barracudaData as unknown as SongData,
+  'dreams': dreamsData as unknown as SongData,
+  'ring-of-fire': ringOfFireData as unknown as SongData,
+  'folsom-prison-blues': folsomPrisonBluesData as unknown as SongData,
+  'devil-went-down-to-georgia': devilWentDownToGeorgiaData as unknown as SongData,
+  'mammas-dont-let-your-babies': mammasDontLetYourBabiesData as unknown as SongData,
+  'superstition': superstitionData as unknown as SongData,
+  'sittin-on-the-dock-of-the-bay': sittinOnTheDockOfTheBayData as unknown as SongData,
+  'whats-going-on': whatsGoingOnData as unknown as SongData,
+  'come-as-you-are': comeAsYouAreData as unknown as SongData,
+  'black-hole-sun': blackHoleSunData as unknown as SongData,
+  'everlong': everlongData as unknown as SongData,
+  'roundabout': roundaboutData as unknown as SongData,
+  'tom-sawyer': tomSawyerData as unknown as SongData,
+  'all-blues': allBluesData as unknown as SongData,
+  'europa': europaData as unknown as SongData,
+  'riptide': riptideData as unknown as SongData,
+  'radioactive': radioactiveData as unknown as SongData,
+  'take-me-to-church': takeMeToChurchData as unknown as SongData,
+  'dust-my-broom': dustMyBroomData as unknown as SongData,
+  'schism': schismData as unknown as SongData,
+  'classical-gas': classicalGasData as unknown as SongData,
+  'bad-moon-rising': badMoonRisingData as unknown as SongData,
+  'twist-and-shout': twistAndShoutData as unknown as SongData,
+  'wild-thing': wildThingData as unknown as SongData,
+  'la-bamba': laBambaData as unknown as SongData,
+  'knockin-on-heavens-door': knockinOnHeavensDoorData as unknown as SongData,
+  'free-fallin': freeFallinData as unknown as SongData,
+  'brown-eyed-girl': brownEyedGirlData as unknown as SongData,
+  'stand-by-me': standByMeData as unknown as SongData,
+  'good-riddance': goodRiddanceData as unknown as SongData,
+  'blowin-in-the-wind': blowinInTheWindData as unknown as SongData,
+  'hound-dog': houndDogData as unknown as SongData,
+  'gloria': gloriaData as unknown as SongData,
+  'louie-louie': louieLouieData as unknown as SongData,
+  'wagon-wheel': wagonWheelData as unknown as SongData,
+  'what-i-got': whatIGotData as unknown as SongData,
+  'born-to-be-wild': bornToBeWildData as unknown as SongData,
+  'rock-and-roll-all-nite': rockAndRollAllNiteData as unknown as SongData,
+  'we-will-rock-you': weWillRockYouData as unknown as SongData,
+  'livin-on-a-prayer': livinOnAPrayerData as unknown as SongData,
+  'you-really-got-me': youReallyGotMeData as unknown as SongData,
+  'rebel-yell': rebelYellData as unknown as SongData,
+  'hit-me-with-your-best-shot': hitMeWithYourBestShotData as unknown as SongData,
+  'rock-you-like-a-hurricane': rockYouLikeAHurricaneData as unknown as SongData,
+  'should-i-stay-or-should-i-go': shouldIStayOrShouldIGoData as unknown as SongData,
+  'summer-of-69': summerOf69Data as unknown as SongData,
+  'hotel-california': hotelCaliforniaData as unknown as SongData,
+  'paranoid': paranoidData as unknown as SongData,
+  'iron-man': ironManData as unknown as SongData,
+  'paint-it-black': paintItBlackData as unknown as SongData,
+  'satisfaction': satisfactionData as unknown as SongData,
+  'sunshine-of-your-love': sunshineOfYourLoveData as unknown as SongData,
+  'whole-lotta-love': wholeLottaLoveData as unknown as SongData,
+  'layla': laylaData as unknown as SongData,
+  'more-than-a-feeling': moreThanAFeelingData as unknown as SongData,
+  'message-in-a-bottle': messageInABottleData as unknown as SongData,
+  'dont-stop-believin': dontStopBelievinData as unknown as SongData,
+  'pour-some-sugar-on-me': pourSomeSugarOnMeData as unknown as SongData,
+  'here-i-go-again': hereIGoAgainData as unknown as SongData,
+  'the-final-countdown': theFinalCountdownData as unknown as SongData,
+  'eye-of-the-tiger': eyeOfTheTigerData as unknown as SongData,
+  'you-give-love-a-bad-name': youGiveLoveABadNameData as unknown as SongData,
+  'wanted-dead-or-alive': wantedDeadOrAliveData as unknown as SongData,
+  'every-rose-has-its-thorn': everyRoseHasItsThornData as unknown as SongData,
+  'photograph': photographData as unknown as SongData,
+  'welcome-to-the-jungle': welcomeToTheJungleData as unknown as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {
@@ -232,12 +419,12 @@ export function getAllSongs(): SongListItem[] {
     tempo: data.songInfo.tempo,
     key: data.songInfo.key,
     techniques: data.techniques.map(t => t.name),
-    featured: data.metadata?.featured ?? isFeatureSong(slug),
-    dateAdded: data.metadata?.dateAdded ?? getSongDateAdded(slug),
-    popularity: data.metadata?.popularity ?? getDefaultPopularity(slug),
+    featured: data.metadata?.featured ?? false,
+    dateAdded: data.metadata?.dateAdded ?? '2024-01-01',
+    popularity: data.metadata?.popularity ?? 50,
     decade: data.metadata?.decade ?? getDecadeFromYear(data.songInfo.released),
     subGenre: data.metadata?.subGenre ?? data.songInfo.genre,
-    tags: data.metadata?.tags ?? generateDefaultTags(data),
+    tags: data.metadata?.tags ?? [],
     iconicRiff: data.metadata?.iconicRiff ?? false,
     estimatedLearningTime: data.metadata?.estimatedLearningTime,
     viewCount: data.metadata?.viewCount ?? 0,
@@ -414,48 +601,13 @@ export function getSongCategories() {
   };
 }
 
-// Helper functions for metadata
-function isFeatureSong(slug: string): boolean {
-  // Mark certain songs as featured - can be moved to song data later
-  const featuredSlugs = ['thunderstruck', 'back-in-black', 'sweet-child-o-mine', 'hurt-so-good'];
-  return featuredSlugs.includes(slug);
-}
-
-function getSongDateAdded(slug: string): string {
-  // Default dates - can be moved to song data later
-  const dates: Record<string, string> = {
-    'hurt-so-good': '2025-01-31',
-    'thunderstruck': '2024-12-01',
-    'back-in-black': '2024-11-15',
-    // Add more as needed
-  };
-  return dates[slug] || '2024-01-01';
-}
-
-function getDefaultPopularity(slug: string): number {
-  // Default popularity scores based on classic status
-  const popularityMap: Record<string, number> = {
-    'thunderstruck': 95,
-    'back-in-black': 98,
-    'sweet-child-o-mine': 92,
-    'highway-to-hell': 90,
-    'you-shook-me-all-night-long': 88,
-    'sweet-home-alabama': 94,
-    'enter-sandman': 89,
-    'were-not-gonna-take-it': 75,
-    'for-those-about-to-rock': 82,
-    'hurt-so-good': 65,
-  };
-  return popularityMap[slug] || 50;
-}
-
+// Helper: compute decade from year string
 function getDecadeFromYear(year: string): string {
-  // Extract year from various formats like "1982", "April 1982", "1982-05-15", etc.
   const yearMatch = year.match(/\b(19|20)\d{2}\b/);
   const yearNum = yearMatch ? parseInt(yearMatch[0]) : parseInt(year);
-  
-  if (isNaN(yearNum)) return '1970s'; // Default fallback
-  
+
+  if (isNaN(yearNum)) return '1970s';
+
   if (yearNum >= 2020) return '2020s';
   if (yearNum >= 2010) return '2010s';
   if (yearNum >= 2000) return '2000s';
@@ -464,26 +616,5 @@ function getDecadeFromYear(year: string): string {
   if (yearNum >= 1970) return '1970s';
   if (yearNum >= 1960) return '1960s';
   if (yearNum >= 1950) return '1950s';
-  if (yearNum >= 1940) return '1940s';
   return '1950s';
-}
-
-function generateDefaultTags(data: any): string[] {
-  const tags: string[] = [];
-  
-  // Add difficulty-based tags
-  if (data.difficulty?.overall === 'Beginner') tags.push('beginner-friendly');
-  if (data.difficulty?.overall === 'Expert') tags.push('advanced-technique');
-  
-  // Add technique-based tags
-  const techniques = data.techniques?.map((t: any) => t.name.toLowerCase()) || [];
-  if (techniques.some((t: string) => t.includes('power'))) tags.push('power-chords');
-  if (techniques.some((t: string) => t.includes('solo'))) tags.push('guitar-solo');
-  if (techniques.some((t: string) => t.includes('riff'))) tags.push('iconic-riff');
-  
-  // Add genre-based tags
-  if (data.songInfo?.genre?.includes('Rock')) tags.push('classic-rock');
-  if (data.songInfo?.genre?.includes('Metal')) tags.push('metal');
-  
-  return tags;
 }

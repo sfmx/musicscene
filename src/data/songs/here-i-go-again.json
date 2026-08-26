@@ -1,0 +1,495 @@
+{
+  "songInfo": {
+    "title": "Here I Go Again",
+    "artist": "Whitesnake",
+    "album": "Whitesnake",
+    "released": "1987",
+    "genre": "Arena Rock / Hard Rock",
+    "tempo": "82 BPM",
+    "duration": "4:33",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major throughout, with brief modal shifts in the solo section",
+      "scalesUsed": [
+        {
+          "scale": "G major (Ionian)",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Primary scale for the song; the bright major tonality creates the hopeful, anthemic character that defines the ballad-to-rock dynamic"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Melodic guitar fills and portions of the solo where warm, consonant phrases complement the vocal melody"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Guitar solo shredding sections where John Sykes employs the relative minor for edgier, more aggressive lead lines"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with warm, uplifting quality and occasional minor pentatonic tension in lead guitar work",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "D",
+          "C",
+          "Em"
+        ],
+        "progression": "I - V - IV - vi",
+        "description": "The classic major key progression that drives both the verse and chorus, creating the confident, forward-moving emotional quality that made this an arena rock staple."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "G - D/F# - Em - C - D",
+          "romanNumerals": "I - V/7 - vi - IV - V",
+          "description": "Clean arpeggiated intro with a descending bass line from G through F# to E, creating a gentle, reflective opening before the power kicks in"
+        },
+        {
+          "section": "Verse",
+          "progression": "G - D - C - Em",
+          "romanNumerals": "I - V - IV - vi",
+          "description": "The verse uses a medium dynamic level with a mix of open chords and light power chords, supporting the storytelling vocals"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - D - G - Em - C - D - G",
+          "romanNumerals": "IV - V - I - vi - IV - V - I",
+          "description": "The massive arena chorus with the singalong 'Here I go again on my own' lyrics, driven by full open chords and power chord strumming at maximum intensity"
+        },
+        {
+          "section": "Bridge",
+          "progression": "Am - C - D - Em - C - D",
+          "romanNumerals": "ii - IV - V - vi - IV - V",
+          "description": "Reflective bridge section with a darker ii chord adding emotional weight before building back to the chorus energy"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "G - D - C - Em - C - D",
+          "romanNumerals": "I - V - IV - vi - IV - V",
+          "description": "John Sykes' iconic guitar solo over an extended version of the verse-chorus progression, blending melodic phrasing with fiery shredding"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Tonic major chord, the bright, confident home base of the song",
+        "D (V) - Dominant chord, creating strong forward pull and resolution back to the tonic",
+        "C (IV) - Subdominant chord, adding warmth and the singalong quality to the chorus",
+        "Em (vi) - Relative minor, providing emotional depth and a touch of vulnerability",
+        "Am (ii) - Supertonic minor, adding introspective color in the bridge section",
+        "D/F# (V/7) - First inversion dominant, creating the smooth descending bass line in the intro"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Clean Arpeggiated Intro",
+      "description": "The beautiful clean guitar intro using arpeggiated open chords with a descending bass line, creating the reflective atmosphere before the song builds into full rock power",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G: 3-2-0-0-0-3 (standard open G) with bass note on low E string",
+          "D/F#: 2-0-0-2-3-2 with F# bass note on the low E string",
+          "Em: 0-2-2-0-0-0 (standard open Em)",
+          "C: X-3-2-0-1-0 (standard open C)",
+          "D: X-X-0-2-3-2 (standard open D)",
+          "The descending bass line G-F#-E creates a smooth, cinematic opening"
+        ],
+        "sequence": [
+          "Begin with a clean tone G chord, picking strings from low to high in a flowing pattern",
+          "Move to D/F# letting the bass note descend smoothly from G to F#",
+          "Continue to Em with the bass dropping to E for the descending line",
+          "Arpeggiate through the C and D chords to complete the intro phrase",
+          "Let each note ring clearly into the next for a connected, flowing sound"
+        ],
+        "tips": [
+          "Use a clean tone with a touch of chorus or reverb for the intro shimmer",
+          "The descending bass line is the key element - make sure G, F#, and E bass notes are clear",
+          "Keep your picking hand relaxed for smooth, even arpeggios",
+          "Practice the D/F# chord shape until the F# bass note on the low E string is clean and buzz-free"
+        ],
+        "chords": [
+          "G",
+          "D/F#",
+          "Em",
+          "C",
+          "D"
+        ],
+        "progression": "G - D/F# - Em - C - D"
+      }
+    },
+    {
+      "name": "Power Chord Rhythm",
+      "description": "The driving power chord strumming that forms the backbone of the verse and chorus, transitioning from the gentle arpeggiated intro to full arena rock energy",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G5: 3-5-5-X-X-X (E-string root power chord)",
+          "D5: X-5-7-7-X-X (A-string root) or 10-12-12-X-X-X (E-string root)",
+          "C5: X-3-5-5-X-X (A-string root) or 8-10-10-X-X-X (E-string root)",
+          "E5: 0-2-2-X-X-X (open) for the vi chord as a power chord voicing",
+          "Full open chord voicings can be mixed with power chords for variety"
+        ],
+        "sequence": [
+          "Transition from clean arpeggios to light crunch for the first verse",
+          "Build the strumming intensity with each verse repetition",
+          "Hit the chorus with full, aggressive power chord strumming",
+          "Use driving eighth-note strumming with accents on beats 1 and 3",
+          "Let chords ring in the chorus for maximum sustain and fullness"
+        ],
+        "tips": [
+          "The song's power comes from the contrast between clean intro and overdriven chorus",
+          "Mix open chord voicings with power chords for a fuller harmonic sound",
+          "The chorus strumming should be wide and aggressive with full arm motion",
+          "Keep the verse rhythm controlled to leave room for the chorus explosion"
+        ],
+        "chords": [
+          "G5",
+          "D5",
+          "C5",
+          "E5"
+        ],
+        "progression": "G5 - D5 - C5 - E5 (power chord verse/chorus)"
+      }
+    },
+    {
+      "name": "Melodic Solo Techniques",
+      "description": "John Sykes' legendary guitar solo combining melodic phrasing with aggressive shredding, using bends, vibrato, legato runs, and harmonic minor touches for an emotionally powerful lead performance",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The solo opens with melodic G major pentatonic phrases at the 12th position",
+          "Expressive whole-step bends on the B and high E strings are central to the opening",
+          "The middle section shifts to faster E minor pentatonic runs at the 12th and 15th positions",
+          "Wide vibrato on sustained notes gives the solo its vocal, singing quality",
+          "The climax features rapid legato runs descending through the pentatonic positions"
+        ],
+        "sequence": [
+          "Start with slow, melodic bends and sustained notes in G major pentatonic",
+          "Gradually increase the note density and speed through the first half",
+          "Shift to E minor pentatonic for the more aggressive middle section",
+          "Use hammer-ons and pull-offs for fluid legato passages",
+          "Build to the climactic high-register phrases with fast vibrato on the top notes"
+        ],
+        "tips": [
+          "The solo tells a story - start gentle and build to the climax like the song itself",
+          "Wide, controlled vibrato is essential for the Sykes tone, especially on bent notes",
+          "Use a bridge humbucker with moderate to high gain for the singing lead tone",
+          "Practice the bends in tune before adding speed - intonation is everything in this solo"
+        ],
+        "chords": [
+          "G",
+          "D",
+          "C",
+          "Em"
+        ],
+        "progression": "G - D - C - Em - C - D (solo over verse-chorus changes)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "Clean Arpeggiated Intro",
+      "key": "G Major",
+      "description": "The gentle, reflective clean guitar intro with arpeggiated chords and descending bass line that sets the emotional scene before the band enters.",
+      "chords": [
+        "G",
+        "D/F#",
+        "Em",
+        "C",
+        "D"
+      ],
+      "progression": "G - D/F# - Em - C - D",
+      "notes": [
+        "Use clean tone with chorus and reverb for a shimmering, spacious sound",
+        "The descending bass line G-F#-E is the most recognizable element",
+        "Let all arpeggiated notes ring together for a full, harp-like sound",
+        "This intro should feel gentle and contemplative before the energy builds"
+      ],
+      "alphaTab": "3.6 5.6 6.6 8.6 | 3.5 5.5 6.5 8.5 | 3.4 5.4 6.4 8.4 | 3.3 5.3 3.2 6.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:15",
+      "technique": "Power Chord Rhythm",
+      "key": "G Major",
+      "description": "The verse sections with medium-intensity chord strumming supporting David Coverdale's vocal storytelling, building gradually in energy.",
+      "chords": [
+        "G",
+        "D",
+        "C",
+        "Em"
+      ],
+      "progression": "G - D - C - Em",
+      "notes": [
+        "Use a light crunch tone for the verse - not as clean as the intro but not fully overdriven",
+        "Mix open chords and power chords for a balanced rhythm sound",
+        "Keep the dynamics controlled to leave room for the chorus explosion",
+        "The strumming pattern should have a confident, steady feel at 82 BPM"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:55",
+      "technique": "Power Chord Rhythm",
+      "key": "G Major",
+      "description": "The massive arena chorus with the iconic 'Here I go again on my own' lyrics driven by full-power chord strumming and maximum volume.",
+      "chords": [
+        "C",
+        "D",
+        "G",
+        "Em"
+      ],
+      "progression": "C - D - G - Em - C - D - G",
+      "notes": [
+        "Full power chord strumming at maximum intensity and volume",
+        "The IV-V-I chord motion creates the triumphant, uplifting feel",
+        "Accent the first beat of each chord change for rhythmic punch",
+        "This is the crowd singalong section - play with conviction and energy"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:30-2:55",
+      "technique": "Power Chord Rhythm",
+      "key": "G Major",
+      "description": "The reflective bridge section with a darker emotional shade from the Am chord, building dramatic tension before the explosive guitar solo.",
+      "chords": [
+        "Am",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "Am - C - D - Em - C - D",
+      "notes": [
+        "The Am chord introduces a more introspective, darker color",
+        "Pull back the dynamics slightly from the chorus for contrast",
+        "Let the tension build through the ascending chord motion",
+        "The bridge sets up the emotional release of the guitar solo"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:55-3:40",
+      "technique": "Melodic Solo Techniques",
+      "key": "G Major",
+      "description": "John Sykes' legendary guitar solo combining soulful melodic phrasing with blazing shred runs, one of the defining lead guitar performances of 1980s hard rock.",
+      "chords": [
+        "G",
+        "D",
+        "C",
+        "Em"
+      ],
+      "progression": "G - D - C - Em - C - D (extended)",
+      "notes": [
+        "The solo begins melodically and builds to intense shredding",
+        "G major pentatonic and E minor pentatonic are the primary scale choices",
+        "Wide vibrato and expressive bends define the Sykes lead style",
+        "Rhythm guitar maintains full power chord strumming underneath"
+      ],
+      "alphaTab": "6.1 3.1 6.2 3.2 | 5.3 3.3 5.4 3.4 | 3.3 5.3 3.2 6.2 | 6.1 3.1 3.2 6.2 |",
+      "exerciseLabel": "Major Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:40-4:33",
+      "technique": "Power Chord Rhythm",
+      "key": "G Major",
+      "description": "The triumphant final chorus repetitions at peak intensity with layered vocals, full power chords, and the ultimate arena rock singalong climax.",
+      "chords": [
+        "C",
+        "D",
+        "G",
+        "Em"
+      ],
+      "progression": "C - D - G - Em - C - D - G",
+      "notes": [
+        "Maximum intensity maintained from the solo section into the final chorus",
+        "Layer vocal harmonies if performing with other musicians for the full effect",
+        "The repeated chorus creates the building, ecstatic energy of the finale",
+        "End on a sustained G power chord with full sustain and volume"
+      ],
+      "alphaTab": "3.6 5.5 5.4 3.6 5.5 5.4 | 8.6 10.5 10.4 8.6 10.5 10.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 3.6 5.5 5.4 3.6 5.5 5.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul with PAF-style humbuckers",
+      "alternatives": [
+        "Gibson SG Standard",
+        "PRS Custom 24",
+        "Epiphone Les Paul Custom",
+        "Any mahogany body dual-humbucker guitar"
+      ],
+      "pickup": "Neck humbucker for clean arpeggiated intro; bridge humbucker for power chord rhythm and lead solo with high gain"
+    },
+    "amp": {
+      "recommended": "Marshall Plexi or JCM800 for the classic Whitesnake hard rock tone",
+      "alternatives": [
+        "Marshall JVM series",
+        "Soldano SLO-100",
+        "Friedman BE-100",
+        "Mesa/Boogie Dual Rectifier"
+      ],
+      "settings": {
+        "gain": "5-6 (moderate crunch for rhythm, boost for solo)",
+        "treble": "6 (bright but not harsh for the melodic tone)",
+        "middle": "7 (strong midrange for the thick Whitesnake rhythm sound)",
+        "bass": "5 (solid foundation without muddiness)",
+        "presence": "6 (clear and present in the mix)"
+      }
+    },
+    "effects": {
+      "distortion": "Moderate Marshall-style crunch for rhythm, with a boost pedal (Tubescreamer-style) kicked in for the guitar solo to push the amp harder.",
+      "delay": "Medium analog-style delay (350-450ms) for the solo tone depth and sustain",
+      "reverb": "Large hall reverb for the arena rock ambiance, especially on the clean intro arpeggios",
+      "other": "Chorus effect for the clean intro section to add shimmer and width. The 1987 version features a very polished, produced sound with layered guitars."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the open chord shapes and basic strumming for the verse and chorus",
+      "steps": [
+        "Master open G, C, D, and Em chord shapes with clean changes",
+        "Learn the D/F# chord shape for the intro bass line movement",
+        "Practice basic strumming pattern at 82 BPM with a metronome",
+        "Play along with the verse and chorus sections using open chords"
+      ],
+      "timeEstimate": "2-3 weeks for basic verse and chorus"
+    },
+    "intermediate": {
+      "focus": "Add the arpeggiated intro, power chord variations, and complete song dynamics",
+      "steps": [
+        "Learn the arpeggiated intro picking pattern with clean tone",
+        "Practice power chord voicings alongside open chord versions",
+        "Work on the dynamic build from gentle intro to full-power chorus",
+        "Play through the complete song structure with all sections connected"
+      ],
+      "timeEstimate": "3-4 weeks for full song with dynamics"
+    },
+    "advanced": {
+      "focus": "Master the John Sykes guitar solo and performance-level dynamics",
+      "steps": [
+        "Learn the guitar solo section phrase by phrase using G major and E minor pentatonic",
+        "Practice expressive bends, vibrato, and legato techniques for the solo",
+        "Refine the dynamic arc from intro to final chorus for a performance-ready arrangement",
+        "Work on the complete song at full tempo with smooth transitions between all sections"
+      ],
+      "timeEstimate": "5-7 weeks for complete performance with solo"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the intro too loud or with too much gain - it should be clean and delicate",
+      "Not enough dynamic contrast between the gentle intro and the powerful chorus",
+      "Rushing the 82 BPM tempo - this song has a deliberate, confident pace that should not speed up",
+      "Sloppy D/F# chord shape causing the descending bass line to lose its smooth character"
+    ],
+    "practiceRoutine": [
+      "Warm up with open G, C, D, Em chord transitions at 82 BPM (5 minutes)",
+      "Practice the arpeggiated intro at slow tempo with clean tone (5 minutes)",
+      "Work on the verse-to-chorus dynamic transition with tone changes (5 minutes)",
+      "Practice power chord strumming for the chorus at full intensity (5 minutes)",
+      "Play through the complete song structure with a backing track (5 minutes)"
+    ],
+    "focusAreas": [
+      "Clean, buzz-free arpeggios in the intro with smooth descending bass line",
+      "Dynamic contrast between the four main sections: intro (clean), verse (crunch), chorus (full), solo (lead)",
+      "Consistent tempo at 82 BPM without speeding up during high-energy sections",
+      "Smooth transitions between clean and overdriven tones"
+    ],
+    "metronomeWork": [
+      "Start the arpeggiated intro at 60 BPM, building to 82 BPM for clean execution",
+      "Practice power chord strumming and accent patterns at 82 BPM",
+      "Work on chord transitions with the metronome clicking on beats 2 and 4",
+      "Full song run-through at 82 BPM once all sections are comfortable"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Is This Love",
+        "difficulty": "Intermediate",
+        "similarity": "Same album power ballad with similar clean-to-heavy dynamics and emotional arc"
+      },
+      {
+        "title": "Still of the Night",
+        "difficulty": "Advanced",
+        "similarity": "Same album, more aggressive hard rock with complex guitar work from John Sykes"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "difficulty": "Intermediate",
+        "similarity": "Fellow 1987 arena rock anthem with similar clean-to-power dynamic build and singalong chorus"
+      },
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Arpeggiated clean intro building to full rock power with iconic guitar solo"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Free Fallin'",
+        "artist": "Tom Petty",
+        "difficulty": "Beginner",
+        "similarity": "Master basic major key open chords before the arpeggiated picking demands of Whitesnake"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Progress to a more complex clean-to-heavy dynamic with an even more legendary guitar solo"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 89,
+    "dateAdded": "2026-03-05",
+    "featured": false,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "arena-rock",
+      "intermediate",
+      "arpeggios",
+      "power-chords",
+      "hard-rock",
+      "80s-rock",
+      "anthem",
+      "clean-to-heavy"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 weeks"
+  }
+}

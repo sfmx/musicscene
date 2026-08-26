@@ -1,0 +1,320 @@
+{
+  "slug": "add",
+  "chordInfo": {
+    "name": "Add Chords",
+    "pageTitle": "Add Chord Theory",
+    "subtitle": "Discover the shimmery, open sound of add chords - enriched triads that add color tones without the complexity of seventh chords.",
+    "colorScheme": "teal",
+    "tags": ["Color Tones", "Pop Essential", "Acoustic Favorite", "Open Voicings"]
+  },
+  "theory": {
+    "fundamentalsTitle": "What Are Add Chords?",
+    "fundamentals": [
+      { "label": "Definition", "value": "Triads with an added tone (9th, 11th, or 2nd) but NO 7th degree" },
+      { "label": "Formula (add9)", "value": "Root + Major 3rd + Perfect 5th + Major 9th (same as 2nd, up an octave)" },
+      { "label": "Formula (add11)", "value": "Root + Major 3rd + Perfect 5th + Perfect 11th (same as 4th, up an octave)" },
+      { "label": "Key Distinction", "value": "Unlike 9th chords, add chords omit the 7th - Cadd9 (C-E-G-D) vs C9 (C-E-G-Bb-D)" },
+      { "label": "Sound Quality", "value": "Open, shimmery, bright - richer than a triad but cleaner than extended chords" }
+    ],
+    "applicationsTitle": "Musical Applications",
+    "applications": [
+      { "label": "Acoustic Pop/Rock", "value": "Staple of Oasis, Coldplay, U2, and modern singer-songwriters" },
+      { "label": "Worship & Ambient", "value": "Open ringing voicings create wide, atmospheric textures" },
+      { "label": "Folk & Country", "value": "Fingerpicked add9 arpeggios for gentle, colorful accompaniment" },
+      { "label": "Indie & Alternative", "value": "Replacing plain major chords for a more sophisticated, dreamy feel" }
+    ]
+  },
+  "construction": {
+    "title": "Understanding Add Chord Construction",
+    "boxes": [
+      {
+        "title": "Cadd9 Example",
+        "items": [
+          "Root: C (1st degree)",
+          "Major 3rd: E (3rd degree)",
+          "Perfect 5th: G (5th degree)",
+          "Major 9th: D (2nd/9th degree)",
+          "Result: C-E-G-D (no B, no 7th)"
+        ]
+      },
+      {
+        "title": "Add vs Extended Chords",
+        "items": [
+          "Cadd9 = C-E-G-D (triad + 9th, no 7th)",
+          "C9 = C-E-G-Bb-D (dominant 7th + 9th)",
+          "Cmaj9 = C-E-G-B-D (major 7th + 9th)",
+          "Add chords are simpler: just a triad plus one note",
+          "The missing 7th keeps the sound clean and open"
+        ]
+      },
+      {
+        "title": "Variations & Naming",
+        "items": [
+          "add9: Most common - triad plus the 9th (= 2nd up an octave)",
+          "add2: Same pitches as add9, but 2nd placed close to root",
+          "add11: Triad plus the 11th (= 4th up an octave)",
+          "add(#11): Triad plus raised 11th for Lydian color",
+          "Minor add9: Minor triad + 9th (e.g., Cm(add9) = C-Eb-G-D)"
+        ]
+      }
+    ]
+  },
+  "voicingGroups": [
+    {
+      "title": "Essential Open Add Chord Voicings",
+      "tipTitle": "Start Here",
+      "tipDescription": "These open-position add9 shapes are among the most used chords in modern guitar. Many require just one extra finger added to a familiar shape.",
+      "voicings": [
+        { "name": "Cadd9", "chord": "C_major", "notes": "C-E-G-D (x32030)", "fingering": "Based on open C shape, lift pinky to open 3rd string", "use": "Extremely common in pop/rock, pairs with G and D" },
+        { "name": "Gadd9", "chord": "G_major", "notes": "G-B-D-A (320203)", "fingering": "Open G shape with 2nd fret on 1st string", "use": "Classic acoustic voicing, Oasis and Wonderwall staple" },
+        { "name": "Dadd9", "chord": "D_major", "notes": "D-F#-A-E (x54030 or x00230)", "fingering": "Open D with open 1st string ringing", "use": "Bright, shimmery open voicing for ballads and pop" },
+        { "name": "Eadd9", "chord": "E_major", "notes": "E-G#-B-F# (022102)", "fingering": "Open E shape with added 2nd fret on 1st string", "use": "Full, resonant voicing for rock and folk" },
+        { "name": "Aadd9", "chord": "A_minor", "notes": "A-C#-E-B (x02420)", "fingering": "Based on open A with pinky on 4th fret of 3rd string", "use": "Beautiful ringing chord for fingerpicking" }
+      ]
+    },
+    {
+      "title": "Barre & Movable Add Chord Shapes",
+      "tipTitle": "Next Steps",
+      "tipDescription": "These movable shapes let you play add chords in any key up the neck. Learn the root-note shapes and slide them to the fret you need.",
+      "voicings": [
+        { "name": "Fadd9", "chord": "F_major", "notes": "F-A-C-G (xx3213)", "fingering": "Partial barre F shape with 3rd fret on 4th string", "use": "Common in pop progressions with C and G" },
+        { "name": "Bbadd9", "chord": "Bb", "notes": "Bb-D-F-C (x13311)", "fingering": "Barre shape at 1st fret with add9 note", "use": "Jazz-pop voicing, smooth R&B progressions" },
+        { "name": "Em(add9)", "chord": "E_minor", "notes": "E-G-B-F# (022002)", "fingering": "Open Em with 2nd fret on 4th string lifted", "use": "Haunting minor color, great for ambient and indie" },
+        { "name": "Am(add9)", "chord": "A_minor", "notes": "A-C-E-B (x02210)", "fingering": "Open Am shape with open 2nd string", "use": "Melancholy but shimmery, perfect for arpeggios" },
+        { "name": "Dm(add9)", "chord": "D_minor", "notes": "D-F-A-E (xx0221)", "fingering": "Open Dm with open 1st string ringing", "use": "Adds gentle dissonance to minor chord, singer-songwriter favorite" }
+      ]
+    }
+  ],
+  "progressions": {
+    "title": "Common Add Chord Progressions",
+    "items": [
+      {
+        "title": "Wonderwall Pattern (Oasis Style)",
+        "titleColor": "text-teal-700",
+        "chords": [
+          { "chord": "E_minor", "label": "Em7", "numeral": "vi" },
+          { "chord": "G_major", "label": "Gadd9", "numeral": "I(add9)" },
+          { "chord": "D_major", "label": "Dsus4", "numeral": "V(sus4)" },
+          { "chord": "A_minor", "label": "A7sus4", "numeral": "ii(7sus4)" }
+        ],
+        "strumming": {
+          "pattern": "D DU UDU",
+          "description": "Driving acoustic strum with add9 color",
+          "tempo": "85-95 BPM",
+          "feel": "Anthemic, soaring, emotional",
+          "genre": "Britpop, Indie Rock"
+        },
+        "alphaTex": "(0.6 2.5 2.4 0.3 3.2 3.1).2 | (3.6 2.5 0.4 0.3 0.2 3.1).2 | (0.4 2.3 3.2 3.1).2 | (0.5 0.4 2.3 0.2 3.1).2",
+        "alphaTexTitle": "Wonderwall-Style Add9 Progression",
+        "description": "The iconic Oasis-style pattern built on add9 and sus voicings. The added 9th gives the major chords a wider, more emotional quality than plain triads."
+      },
+      {
+        "title": "Modern Pop Ballad",
+        "titleColor": "text-teal-700",
+        "chords": [
+          { "chord": "C_major", "label": "Cadd9", "numeral": "I(add9)" },
+          { "chord": "G_major", "label": "Gadd9", "numeral": "V(add9)" },
+          { "chord": "A_minor", "label": "Am(add9)", "numeral": "vi(add9)" },
+          { "chord": "F_major", "label": "Fadd9", "numeral": "IV(add9)" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - DU",
+          "description": "Gentle fingerpicking or light strumming",
+          "tempo": "70-85 BPM",
+          "feel": "Warm, open, intimate",
+          "genre": "Pop Ballad, Singer-Songwriter"
+        },
+        "alphaTex": "(0.5 3.4 2.3 0.2 3.1).2 | (3.6 2.5 0.4 0.3 0.2 3.1).2 | (0.5 0.4 2.3 2.2 1.1 0.1).2 | (3.4 2.3 1.2 3.1).2",
+        "alphaTexTitle": "Pop Ballad Add9 Progression (Cadd9-Gadd9-Am(add9)-Fadd9)",
+        "description": "Replace every triad with its add9 version for a lush, shimmering pop sound. The 9th acts like a common tone linking the chords together smoothly."
+      },
+      {
+        "title": "U2 / Ambient Rock Pattern",
+        "titleColor": "text-teal-700",
+        "chords": [
+          { "chord": "D_major", "label": "Dadd9", "numeral": "I(add9)" },
+          { "chord": "A_minor", "label": "A", "numeral": "V" },
+          { "chord": "E_minor", "label": "Em", "numeral": "ii" },
+          { "chord": "G_major", "label": "Gadd9", "numeral": "IV(add9)" }
+        ],
+        "strumming": {
+          "pattern": "D - - U - U D U",
+          "description": "Delay-drenched arpeggiated picking",
+          "tempo": "100-120 BPM",
+          "feel": "Wide, atmospheric, soaring",
+          "genre": "Alternative Rock, Post-Punk"
+        },
+        "alphaTex": "(0.4 0.3 2.2 3.1).2 | (0.5 2.4 2.3 2.2 0.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).2 | (3.6 2.5 0.4 0.3 0.2 3.1).2",
+        "alphaTexTitle": "Ambient Rock Add9 Pattern",
+        "description": "Arpeggiated add9 chords with dotted-eighth delay create The Edge's signature wide, shimmering soundscape. Let all strings ring openly."
+      },
+      {
+        "title": "Coldplay / Worship Progression",
+        "titleColor": "text-teal-700",
+        "chords": [
+          { "chord": "G_major", "label": "Gadd9", "numeral": "I(add9)" },
+          { "chord": "D_major", "label": "Dadd9", "numeral": "V(add9)" },
+          { "chord": "E_minor", "label": "Em(add9)", "numeral": "vi(add9)" },
+          { "chord": "C_major", "label": "Cadd9", "numeral": "IV(add9)" }
+        ],
+        "strumming": {
+          "pattern": "D - DU - DU D -",
+          "description": "Building dynamic strum, quiet to loud",
+          "tempo": "68-78 BPM",
+          "feel": "Uplifting, expansive, emotional",
+          "genre": "Alternative Pop, Worship"
+        },
+        "alphaTex": "(3.6 2.5 0.4 0.3 0.2 3.1).2 | (0.4 0.3 2.2 3.1).2 | (0.6 2.5 2.4 0.3 0.2 2.1).2 | (0.5 3.4 2.3 0.2 3.1).2",
+        "alphaTexTitle": "Worship-Style Add9 Progression (Gadd9-Dadd9-Em(add9)-Cadd9)",
+        "description": "A Coldplay-inspired progression where every chord includes the 9th. The open strings and added notes create a wash of harmonics that builds beautifully with dynamics."
+      }
+    ],
+    "practiceTips": {
+      "techniqueItems": [
+        "Keep common tones ringing when switching between add9 chords - the added 9th often stays the same",
+        "Practice lifting just one finger to convert standard open chords to their add9 versions",
+        "Use hybrid picking (pick + fingers) to bring out the added 9th note in arpeggios",
+        "Let open strings ring as much as possible - the beauty of add chords is in the sustained overtones"
+      ],
+      "applicationItems": [
+        "Replace any major chord with its add9 for instant sophistication without extra complexity",
+        "Pair add9 chords with delay and reverb effects for atmospheric, ambient textures",
+        "Use add9 chords in intros and outros to create a signature sound",
+        "Combine add9 with sus4 voicings for dynamic tension-and-release movement within a progression"
+      ]
+    }
+  },
+  "famousSongs": {
+    "title": "Famous Songs Using Add Chords",
+    "categories": [
+      {
+        "title": "Iconic Add9 in Rock & Pop",
+        "colorBg": "bg-teal-100",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-800",
+        "colorText": "text-teal-700",
+        "songs": [
+          "\"Wonderwall\" - Oasis (Em7-Gadd9-Dsus4-A7sus4 throughout)",
+          "\"Yellow\" - Coldplay (Gadd9 arpeggios define the intro)",
+          "\"With or Without You\" - U2 (Dadd9 with delay-driven arpeggios)",
+          "\"Good Riddance (Time of Your Life)\" - Green Day (Gadd9-Cadd9-D)",
+          "\"Everlong\" - Foo Fighters (add9 power chord voicings in drop D)"
+        ]
+      },
+      {
+        "title": "Add Chords in Acoustic & Folk",
+        "colorBg": "bg-emerald-100",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-800",
+        "colorText": "text-emerald-700",
+        "songs": [
+          "\"Tears in Heaven\" - Eric Clapton (add9 voicings in fingerpicked intro)",
+          "\"Fast Car\" - Tracy Chapman (Cadd9-G-Em-D pattern)",
+          "\"Free Fallin'\" - Tom Petty (Dadd9 and Dsus4 interplay)",
+          "\"Collide\" - Howie Day (Cadd9-based acoustic progression)",
+          "\"Hey There Delilah\" - Plain White T's (Dadd9 fingerpicking throughout)"
+        ]
+      }
+    ]
+  },
+  "practiceExercises": {
+    "title": "Practice Exercises",
+    "tipTitle": "Building Add Chord Fluency",
+    "tipDescription": "These exercises progress from simple chord conversions to full add9 chord progressions with arpeggios and strumming patterns.",
+    "exercises": [
+      {
+        "title": "Exercise 1: Triad to Add9 Conversion",
+        "content": "Pattern: C - Cadd9 - C | G - Gadd9 - G | D - Dadd9 - D | Am - Am(add9) - Am",
+        "detail": "Start with a standard open chord, add the 9th by adding or lifting one finger, then return. Repeat each pair 8 times before moving on. The goal is to make the add9 feel like a natural extension of the triad.",
+        "tip": "Notice which finger moves for each conversion. For Cadd9, you lift the pinky off the 1st string. For Gadd9, you add a finger on the 1st string 3rd fret."
+      },
+      {
+        "title": "Exercise 2: Add9 Arpeggio Picking",
+        "content": "Fingerpick: Cadd9 (5-4-3-2-1-2-3-4) | Gadd9 (6-4-3-2-1-2-3-4) | Em(add9) (6-5-4-3-2-1)",
+        "detail": "Arpeggiate each add9 chord slowly, letting every note ring. Listen for the shimmer the 9th adds compared to the plain triad. Use thumb for bass strings (6-5-4) and fingers for treble (3-2-1).",
+        "tip": "Record yourself playing the same arpeggio with and without the add9 note to hear the difference clearly."
+      },
+      {
+        "title": "Exercise 3: Full Add9 Progression Workout",
+        "content": "Play: Gadd9 (2 bars) - Cadd9 (2 bars) - Em(add9) (2 bars) - Dadd9 (2 bars). Repeat with strumming, then fingerpicking, then hybrid picking.",
+        "detail": "This is the most common add9 progression in modern pop. Practice at 70 BPM first, then build to 100 BPM. Focus on smooth voice leading - identify the notes that stay the same between chord changes.",
+        "tip": "In this progression, the note D appears in Gadd9, Dadd9, and can ring through Cadd9 and Em(add9). Use this as an anchor tone."
+      }
+    ]
+  },
+  "advancedConcepts": {
+    "title": "Advanced Add Chord Concepts",
+    "concepts": [
+      {
+        "title": "Creative Add Chord Techniques",
+        "colorBg": "bg-teal-50",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-800",
+        "colorText": "text-teal-700",
+        "items": [
+          "Minor add9: Cm(add9) = C-Eb-G-D creates a bittersweet, Radiohead-style sound",
+          "Add11 voicings: Cadd11 = C-E-G-F, but beware of the b9 interval between 3rd and 11th",
+          "Stacked add chords: Layer add9 with sus4 for complex textures (e.g., Gadd9/sus4)",
+          "Drop D add chords: Open 6th string as bass pedal under add9 shapes for massive sound",
+          "Nashville number system: Use 'add9' notation to communicate these chords in sessions"
+        ]
+      },
+      {
+        "title": "Add Chords in Composition & Arranging",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-800",
+        "colorText": "text-emerald-700",
+        "items": [
+          "Voice leading: The 9th often acts as a common tone between I(add9) and V(add9)",
+          "Orchestration: In a band context, let the guitarist play add9 while keys play the triad to avoid mud",
+          "Capo magic: Capo 2 with Cadd9/Gadd9 shapes gives Dadd9/Aadd9 with open-string resonance",
+          "Recording: Double-track add9 voicings panned left/right for a massive stereo spread",
+          "Contrast: Alternate between add9 and plain triads across verse/chorus for dynamic shift"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Chord Journey",
+    "description": "Now that you understand add chords, explore how they connect to other chord types. Add chords sit between simple triads and complex extended harmony.",
+    "links": [
+      {
+        "slug": "major",
+        "title": "Major Chords",
+        "description": "Review the triads that form the foundation of every add chord.",
+        "linkText": "Review major chords",
+        "icon": "M",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "suspended",
+        "title": "Suspended Chords",
+        "description": "Compare add chords with sus chords - both add color, but sus replaces the 3rd while add keeps it.",
+        "linkText": "Explore suspended chords",
+        "icon": "S",
+        "hoverBorder": "hover:border-cyan-300",
+        "iconBg": "bg-cyan-100",
+        "iconHoverBg": "group-hover:bg-cyan-200",
+        "linkColor": "text-cyan-600",
+        "linkHoverColor": "group-hover:text-cyan-700"
+      },
+      {
+        "slug": "extended",
+        "title": "Extended Chords",
+        "description": "Take the next step from add chords into 9ths, 11ths, and 13ths that include the 7th.",
+        "linkText": "Learn extended chords",
+        "icon": "E",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      }
+    ]
+  }
+}

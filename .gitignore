@@ -54,6 +54,7 @@ storybook-static
 
 # VS Code workspace settings that can cause issues
 .vscode/settings.json
+.vscode/mcp.json
 
 # Build artifacts
 .next/
@@ -68,8 +69,15 @@ storybook-static/
 src/data/songs/_reference-tabs/
 src/data/songs/_research-notes/
 
+# Generated content index (rebuilt by scripts/build-content-index.ts)
+src/data/_generated/content-index.json
+
 # Temporary files
 *.tmp
 *.temp
 .DS_Store
 Thumbs.db
+
+# Tool caches
+.playwright-mcp/
+.stitch/

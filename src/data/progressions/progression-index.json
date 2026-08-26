@@ -1,0 +1,395 @@
+{
+  "pageTitle": "Music Theory: Chord Progressions",
+  "subtitle": "Master the harmonic patterns that drive all popular music",
+  "heroIcon": "🎼",
+  "heroTitle": "Understanding Chord Progressions",
+  "heroDescription": "Chord progressions are sequences of chords that create the harmonic foundation of music. They provide the emotional journey, structural framework, and stylistic character that defines every song. Master progressions to understand how harmony works and create compelling musical experiences.",
+  "whatAreProgressions": {
+    "title": "What Are Chord Progressions?",
+    "description": "A chord progression is a sequence of chords played in succession that creates the harmonic foundation of a piece of music. Progressions establish key centers, create emotional movement, and provide the structure that supports melody and rhythm. Understanding progressions is essential because they control:",
+    "columns": [
+      {
+        "title": "Harmonic Movement",
+        "colorBg": "bg-blue-50",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "items": [
+          "Tension and resolution patterns",
+          "Key center establishment and maintenance",
+          "Emotional arc and musical direction",
+          "Voice leading and smooth transitions"
+        ]
+      },
+      {
+        "title": "Musical Structure",
+        "colorBg": "bg-purple-50",
+        "colorTitle": "text-purple-900",
+        "colorText": "text-purple-800",
+        "items": [
+          "Song sections (verse, chorus, bridge)",
+          "Genre characteristics and style",
+          "Rhythmic and melodic support",
+          "Compositional framework and form"
+        ]
+      }
+    ]
+  },
+  "progressionCategories": [
+    {
+      "name": "Basic Progressions",
+      "progressions": ["I-IV-V", "I-V-vi-IV", "I-IV", "I-V"],
+      "description": "Essential progressions that form the foundation of popular music.",
+      "color": "bg-yellow-50 border-yellow-200"
+    },
+    {
+      "name": "Jazz Progressions",
+      "progressions": ["ii-V-I", "Circle of Fifths", "I-vi-ii-V", "I-vi-IV-V"],
+      "description": "Sophisticated harmonic movements used in jazz, standards, and doo-wop.",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "name": "Blues Progressions",
+      "progressions": ["12 Bar Blues", "Minor Blues", "I-IV-V"],
+      "description": "Traditional blues progressions that shaped rock and popular music.",
+      "color": "bg-orange-50 border-orange-200"
+    },
+    {
+      "name": "Modern Pop",
+      "progressions": ["I-V-vi-IV", "vi-IV-I-V"],
+      "description": "Contemporary progressions heard in pop, rock, and alternative music.",
+      "color": "bg-green-50 border-green-200"
+    },
+    {
+      "name": "Modal & Rock",
+      "progressions": ["I-bVII-IV", "I-bIII-bVII-IV", "I-V-bVII-IV"],
+      "description": "Modal borrowing progressions that create the signature sound of rock and alternative.",
+      "color": "bg-emerald-50 border-emerald-200"
+    },
+    {
+      "name": "Cadences & Turnarounds",
+      "progressions": ["IV-I Plagal", "ii-IV-V"],
+      "description": "Cadential patterns and turnarounds for endings, transitions, and country music.",
+      "color": "bg-violet-50 border-violet-200"
+    }
+  ],
+  "harmonicApplications": [
+    {
+      "title": "Song Structure",
+      "description": "Progressions create the harmonic backbone of verses, choruses, and bridges",
+      "icon": "🏗️",
+      "examples": ["Verse progressions set the mood", "Chorus progressions provide resolution", "Bridge progressions add contrast"]
+    },
+    {
+      "title": "Emotional Impact",
+      "description": "Different progressions evoke specific emotions and musical feelings",
+      "icon": "💫",
+      "examples": ["Major progressions for happiness", "Minor progressions for sadness", "Modal progressions for mystery"]
+    },
+    {
+      "title": "Voice Leading",
+      "description": "Smooth movement between chord tones creates polished harmonic flow",
+      "icon": "🎭",
+      "examples": ["Common tones between chords", "Step-wise bass movement", "Contrary motion in voices"]
+    },
+    {
+      "title": "Genre Definition",
+      "description": "Specific progressions characterize and define musical styles",
+      "icon": "🎨",
+      "examples": ["12-bar blues for blues/rock", "ii-V-I for jazz", "I-V-vi-IV for pop"]
+    }
+  ],
+  "progressionTypes": [
+    {
+      "name": "I-IV-V",
+      "icon": "🎼",
+      "href": "/lessons/theory/progressions/i-iv-v",
+      "description": "The foundational progression in Western music. Used in rock, pop, country, and blues.",
+      "formula": "I-IV-V",
+      "functionLabel": "Tonic-Subdominant-Dominant",
+      "color": "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      "iconColor": "text-yellow-600"
+    },
+    {
+      "name": "ii-V-I",
+      "icon": "🎷",
+      "href": "/lessons/theory/progressions/ii-v-i",
+      "description": "The cornerstone of jazz harmony. Creates smooth voice leading and strong resolution.",
+      "formula": "ii-V-I",
+      "functionLabel": "Predominant-Dominant-Tonic",
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600"
+    },
+    {
+      "name": "I-V-vi-IV",
+      "icon": "🎤",
+      "href": "/lessons/theory/progressions/i-v-vi-iv",
+      "description": "The \"axis progression\" found in countless pop hits across all decades.",
+      "formula": "I-V-vi-IV",
+      "functionLabel": "Tonic-Dominant-Relative Minor-Subdominant",
+      "color": "bg-green-50 border-green-200 hover:bg-green-100",
+      "iconColor": "text-green-600"
+    },
+    {
+      "name": "12 Bar Blues",
+      "icon": "🎸",
+      "href": "/lessons/theory/progressions/12-bar-blues",
+      "description": "The backbone of blues, R&B, and early rock & roll. A must-know for all guitarists.",
+      "formula": "I-I-I-I-IV-IV-I-I-V-IV-I-I",
+      "functionLabel": "Classic Blues Structure",
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600"
+    },
+    {
+      "name": "vi-IV-I-V",
+      "icon": "🔄",
+      "href": "/lessons/theory/progressions/vi-iv-i-v",
+      "description": "Popular in modern pop and alternative rock. Creates emotional tension and release.",
+      "formula": "vi-IV-I-V",
+      "functionLabel": "Relative Minor Start",
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600"
+    },
+    {
+      "name": "Circle of Fifths",
+      "icon": "⭕",
+      "href": "/lessons/theory/progressions/circle-of-fifths",
+      "description": "Advanced harmonic movement. Essential for jazz and classical music.",
+      "formula": "vi-ii-V-I",
+      "functionLabel": "Sequential Fifths Movement",
+      "color": "bg-rose-50 border-rose-200 hover:bg-rose-100",
+      "iconColor": "text-rose-600"
+    },
+    {
+      "name": "I-IV",
+      "icon": "🎵",
+      "href": "/lessons/theory/progressions/i-iv",
+      "description": "The two-chord subdominant shuttle. A gentle rocking motion used in folk, gospel, and rock anthems.",
+      "formula": "I-IV",
+      "functionLabel": "Tonic-Subdominant",
+      "color": "bg-amber-50 border-amber-200 hover:bg-amber-100",
+      "iconColor": "text-amber-600"
+    },
+    {
+      "name": "IV-I Plagal",
+      "icon": "🙏",
+      "href": "/lessons/theory/progressions/iv-i",
+      "description": "The 'Amen cadence' — a soft, peaceful resolution from subdominant to tonic used in hymns and gospel.",
+      "formula": "IV-I",
+      "functionLabel": "Subdominant-Tonic Resolution",
+      "color": "bg-violet-50 border-violet-200 hover:bg-violet-100",
+      "iconColor": "text-violet-600"
+    },
+    {
+      "name": "I-V",
+      "icon": "⚡",
+      "href": "/lessons/theory/progressions/i-v",
+      "description": "The simplest tension-resolution pair. Two chords that drive punk, folk, and countless singalongs.",
+      "formula": "I-V",
+      "functionLabel": "Tonic-Dominant",
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600"
+    },
+    {
+      "name": "I-bVII-IV",
+      "icon": "🔥",
+      "href": "/lessons/theory/progressions/i-bvii-iv",
+      "description": "The Mixolydian vamp. A modal rock progression with a bluesy, rootsy character.",
+      "formula": "I-bVII-IV",
+      "functionLabel": "Mixolydian Descent",
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600"
+    },
+    {
+      "name": "I-vi-ii-V",
+      "icon": "🎹",
+      "href": "/lessons/theory/progressions/i-vi-ii-v",
+      "description": "The jazz turnaround. Smooth circle-of-fifths motion used in standards and doo-wop.",
+      "formula": "I-vi-ii-V",
+      "functionLabel": "Jazz Turnaround Cycle",
+      "color": "bg-sky-50 border-sky-200 hover:bg-sky-100",
+      "iconColor": "text-sky-600"
+    },
+    {
+      "name": "I-vi-IV-V",
+      "icon": "💿",
+      "href": "/lessons/theory/progressions/i-vi-iv-v",
+      "description": "The '50s doo-wop progression. The sound of early rock & roll and timeless ballads.",
+      "formula": "I-vi-IV-V",
+      "functionLabel": "50s Doo-Wop Cycle",
+      "color": "bg-pink-50 border-pink-200 hover:bg-pink-100",
+      "iconColor": "text-pink-600"
+    },
+    {
+      "name": "Minor Blues",
+      "icon": "🌙",
+      "href": "/lessons/theory/progressions/minor-blues",
+      "description": "The darker side of the blues. A 12-bar form in minor keys for intense, moody expression.",
+      "formula": "i-iv-V7 (12 bars)",
+      "functionLabel": "Minor Blues Structure",
+      "color": "bg-slate-50 border-slate-200 hover:bg-slate-100",
+      "iconColor": "text-slate-600"
+    },
+    {
+      "name": "I-bIII-bVII-IV",
+      "icon": "🏔️",
+      "href": "/lessons/theory/progressions/i-biii-bvii-iv",
+      "description": "Modal rock with borrowed chords. The sound of classic rock, grunge, and Britpop anthems.",
+      "formula": "I-bIII-bVII-IV",
+      "functionLabel": "Modal Rock Borrowing",
+      "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
+      "iconColor": "text-emerald-600"
+    },
+    {
+      "name": "I-V-bVII-IV",
+      "icon": "🏟️",
+      "href": "/lessons/theory/progressions/i-v-bvii-iv",
+      "description": "The rock anthem progression. Combines dominant power with modal rebellion for arena-sized sound.",
+      "formula": "I-V-bVII-IV",
+      "functionLabel": "Rock Anthem Movement",
+      "color": "bg-cyan-50 border-cyan-200 hover:bg-cyan-100",
+      "iconColor": "text-cyan-600"
+    },
+    {
+      "name": "ii-IV-V",
+      "icon": "🤠",
+      "href": "/lessons/theory/progressions/ii-iv-v",
+      "description": "The country turnaround. Stepwise pre-dominant chain common in Nashville songwriting.",
+      "formula": "ii-IV-V",
+      "functionLabel": "Pre-Dominant Chain",
+      "color": "bg-lime-50 border-lime-200 hover:bg-lime-100",
+      "iconColor": "text-lime-600"
+    }
+  ],
+  "romanNumerals": {
+    "description": "Musicians use Roman numerals to describe chord progressions regardless of key. This system makes it easy to transpose progressions and understand harmonic function across different musical contexts.",
+    "sections": [
+      {
+        "title": "Major Key Functions",
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-900",
+        "colorText": "text-yellow-800",
+        "items": ["I, IV, V: Major chords (uppercase)", "ii, iii, vi: Minor chords (lowercase)", "vii°: Diminished chord"]
+      },
+      {
+        "title": "Chord Functions",
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "items": ["Tonic (I): Home, stability, rest", "Subdominant (IV): Departure, movement", "Dominant (V): Tension, wants resolution"]
+      },
+      {
+        "title": "Common Movements",
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-900",
+        "colorText": "text-green-800",
+        "items": ["V → I: Strongest resolution", "IV → I: Plagal cadence", "vi → IV: Deceptive movement"]
+      }
+    ]
+  },
+  "exampleChords": {
+    "description": "Here are the diatonic chords in the key of C major, which we'll use to demonstrate progressions:",
+    "chords": [
+      { "label": "I - C Major", "chord": "C_major", "subtitle": "Tonic - Home base" },
+      { "label": "IV - F Major", "chord": "F_major", "subtitle": "Subdominant - Movement" },
+      { "label": "V - G Major", "chord": "G_major", "subtitle": "Dominant - Tension" },
+      { "label": "vi - A Minor", "chord": "A_minor", "subtitle": "Relative minor" }
+    ],
+    "exampleProgression": {
+      "title": "I-IV-V Progression in C",
+      "alphaTex": "tabstave notation=true key=C time=4/4\n  notes :w C/5 F/4 G/5 C/5",
+      "description": "The most fundamental progression: C Major → F Major → G Major → C Major"
+    }
+  },
+  "practiceExercises": [
+    {
+      "title": "Practice Strategy",
+      "icon": "🎯",
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border-yellow-200",
+      "colorTitle": "text-yellow-900",
+      "colorText": "text-yellow-800",
+      "items": [
+        "Start slow: Focus on clean chord changes",
+        "Use a metronome: Develop steady rhythm",
+        "Practice transitions: Smooth voice leading",
+        "All keys: Build complete versatility",
+        "Different voicings: Explore chord inversions"
+      ]
+    },
+    {
+      "title": "Musical Application",
+      "icon": "🎵",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-900",
+      "colorText": "text-green-800",
+      "items": [
+        "Learn songs: Apply progressions in context",
+        "Write melodies: Over familiar progressions",
+        "Improvise: Use progressions as foundation",
+        "Arrange music: Create harmonic arrangements",
+        "Compose: Build original songs"
+      ]
+    },
+    {
+      "title": "Guitar Techniques",
+      "icon": "🎸",
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-900",
+      "colorText": "text-blue-800",
+      "items": [
+        "Strumming patterns: Rhythm variations",
+        "Fingerpicking: Arpeggiated progressions",
+        "Barre chords: Full fretboard mobility",
+        "Open voicings: Rich, full sounds",
+        "Power chords: Rock and metal applications"
+      ]
+    }
+  ],
+  "journeySection": {
+    "title": "Start Your Progression Journey",
+    "description": "Begin with the fundamental progressions and gradually expand your harmonic vocabulary. Understanding progressions is essential for composition, arrangement, and musical understanding.",
+    "links": [
+      {
+        "slug": "i-iv-v",
+        "title": "Start with I-IV-V",
+        "description": "Begin with the most fundamental progression in Western music - simple and powerful.",
+        "linkText": "Learn the foundation",
+        "icon": "🎯",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "hoverBorder": "hover:border-yellow-300",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      },
+      {
+        "slug": "12-bar-blues",
+        "title": "Master 12-Bar Blues",
+        "description": "Learn the backbone of blues, rock, and popular music.",
+        "linkText": "Feel the blues",
+        "icon": "🎸",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "hoverBorder": "hover:border-orange-300",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
+      },
+      {
+        "slug": "i-v-vi-iv",
+        "title": "Explore Pop Progressions",
+        "description": "Discover the \"axis progression\" found in countless hit songs.",
+        "linkText": "Pop perfection",
+        "icon": "🎤",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "hoverBorder": "hover:border-green-300",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      }
+    ]
+  }
+}

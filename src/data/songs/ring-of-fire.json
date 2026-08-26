@@ -1,0 +1,449 @@
+{
+  "songInfo": {
+    "title": "Ring of Fire",
+    "artist": "Johnny Cash",
+    "album": "Ring of Fire: The Best of Johnny Cash",
+    "released": "1963",
+    "genre": "Country",
+    "tempo": "108 BPM",
+    "duration": "2:38",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major scale",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Primary harmonic foundation for chord progressions and vocal melody"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Mariachi-inspired horn line adapted for guitar melody"
+        },
+        {
+          "scale": "G Mixolydian",
+          "notes": "G - A - B - C - D - E - F - G",
+          "application": "Occasional country flavor in lead fills and melodic embellishments"
+        }
+      ],
+      "modalCharacter": "Ionian (Major)",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "C",
+          "G"
+        ],
+        "progression": "I - IV - I",
+        "description": "Simple I-IV-I movement that anchors the verse sections with classic country simplicity"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro (Horn Line)",
+          "progression": "G - C - G - D - G",
+          "romanNumerals": "I - IV - I - V - I",
+          "description": "The iconic mariachi-style horn melody outlines the I-IV-I-V-I progression adapted for guitar"
+        },
+        {
+          "section": "Verse",
+          "progression": "G - C - G - D - G",
+          "romanNumerals": "I - IV - I - V - I",
+          "description": "Verse follows the same I-IV-I-V-I pattern supporting the vocal melody"
+        },
+        {
+          "section": "Chorus",
+          "progression": "D - C - G | D - C - G",
+          "romanNumerals": "V - IV - I | V - IV - I",
+          "description": "Chorus reverses the harmonic motion with a strong V-IV-I country cadence on 'Ring of Fire'"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Tonic center providing home base and stability throughout",
+        "C (IV) - Subdominant creating gentle harmonic lift and movement away from tonic",
+        "D (V) - Dominant chord providing tension and resolution back to G",
+        "The I-IV-V progression is the foundation of country music harmony",
+        "The chorus V-IV-I motion creates a powerful plagal-like resolution characteristic of country and folk"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Boom-Chicka Strumming",
+      "description": "The classic Johnny Cash 'boom-chicka' country strumming pattern with alternating bass notes on beats 1 and 3, and muted strums on beats 2 and 4",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G: 3-2-0-0-0-3 (Open G chord)",
+          "C: X-3-2-0-1-0 (Open C chord)",
+          "D: X-X-0-2-3-2 (Open D chord)",
+          "Beat 1: Strike bass note (root of chord) with thumb or pick downstroke",
+          "Beat 2: Muted 'chicka' strum across treble strings (use palm muting)",
+          "Beat 3: Strike alternate bass note (usually the 5th) with thumb or pick",
+          "Beat 4: Muted 'chicka' strum across treble strings"
+        ],
+        "sequence": [
+          "For G chord: bass note on low E string (3rd fret), then chicka, then bass on A string (2nd fret), then chicka",
+          "For C chord: bass note on A string (3rd fret), then chicka, then bass on D string (2nd fret), then chicka",
+          "For D chord: bass note on D string (open), then chicka, then bass on A string (open), then chicka",
+          "Maintain steady 4/4 time at 108 BPM throughout"
+        ],
+        "tips": [
+          "Keep the 'chicka' strums light and percussive by muting with the palm",
+          "The bass notes should be the loudest part of each measure",
+          "Practice the bass-chicka pattern on a single chord before adding changes",
+          "Use a medium pick for balanced attack on bass and strum",
+          "Listen to Luther Perkins' original guitar work for the authentic feel"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "G - C - G - D - G (Boom-Chicka Pattern)"
+      }
+    },
+    {
+      "name": "Mariachi Horn Line (Guitar Adaptation)",
+      "description": "The iconic trumpet melody from the original recording adapted for guitar using single-note picking on the higher strings",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The horn line follows the G major scale ascending and descending",
+          "Played on the B and high E strings primarily",
+          "Key notes: G(3rd fret E string) - A - B - D pattern",
+          "Uses quarter notes and eighth notes to match the trumpet phrasing",
+          "The melody outlines the G-C-G-D-G chord progression melodically"
+        ],
+        "sequence": [
+          "Start on G note (3rd fret, high E string)",
+          "Ascend through A (5th fret) to B (7th fret)",
+          "Descend back through the scale pattern",
+          "Resolve on G root note to match the chord change",
+          "Repeat the ascending-descending pattern for each phrase"
+        ],
+        "tips": [
+          "Use alternate picking for clean execution",
+          "Let each note ring clearly - the horn line should sing",
+          "Practice slowly to get the phrasing right before adding tempo",
+          "This can be played simultaneously with the boom-chicka if playing solo",
+          "Use the neck pickup for a warmer, rounder tone to emulate brass"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "Over G - C - G - D - G progression"
+      }
+    },
+    {
+      "name": "Alternating Bass Pattern",
+      "description": "Root-fifth alternating bass note technique that drives the rhythmic foundation of the boom-chicka pattern",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "G chord: Alternate between G (3rd fret, low E) and D (open D string)",
+          "C chord: Alternate between C (3rd fret, A string) and G (3rd fret, low E)",
+          "D chord: Alternate between D (open D string) and A (open A string)",
+          "The thumb or pick plays bass notes on beats 1 and 3"
+        ],
+        "sequence": [
+          "Beat 1: Root bass note of current chord",
+          "Beat 2: Strum treble strings",
+          "Beat 3: Fifth of current chord as bass note",
+          "Beat 4: Strum treble strings"
+        ],
+        "tips": [
+          "Practice the bass note alternation slowly without the strum first",
+          "Keep your fretting hand stable while the picking hand alternates",
+          "The alternating bass creates the the iconic vocal hook feel",
+          "This technique is foundational for all Johnny Cash songs"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "G - C - G - D - G"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Horn Line)",
+      "timeStamp": "0:00-0:15",
+      "technique": "Mariachi Horn Line (Guitar Adaptation)",
+      "key": "G Major",
+      "description": "The iconic mariachi trumpet melody that opens the song, adapted here for guitar single-note picking",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D",
+      "notes": [
+        "The horn melody ascends and descends through the G major scale",
+        "Originally played by Mexican-style trumpets arranged by Bill McElhiney",
+        "Adapt for guitar by playing the melody on the B and high E strings",
+        "Maintain even note values to match the trumpet phrasing"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-0:50",
+      "technique": "Boom-Chicka Strumming",
+      "key": "G Major",
+      "description": "Verse section with classic boom-chicka strumming pattern supporting the vocal melody",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D - G",
+      "notes": [
+        "Alternating bass notes on beats 1 and 3 with muted strums on 2 and 4",
+        "Keep the rhythm steady and driving like a train",
+        "The vocal melody closely follows the chord tones",
+        "Luther Perkins' signature sparse guitar style defines this section"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:50-1:15",
+      "technique": "Boom-Chicka Strumming",
+      "key": "G Major",
+      "description": "The famous chorus with the signature hook, using a V-IV-I resolution",
+      "chords": [
+        "D",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "D - C - G | D - C - G",
+      "notes": [
+        "The chorus starts on the V chord (D) for harmonic lift",
+        "Resolves through IV (C) to I (G) in a strong country cadence",
+        "Increase strumming intensity slightly for the chorus",
+        "The horn line returns between vocal phrases"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Instrumental Break",
+      "timeStamp": "1:15-1:35",
+      "technique": "Mariachi Horn Line (Guitar Adaptation)",
+      "key": "G Major",
+      "description": "Return of the horn melody between verses, providing the song's signature instrumental hook",
+      "chords": [
+        "G",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "G - C - G - D - G",
+      "notes": [
+        "Identical melody to the intro horn line",
+        "Serves as a musical interlude between verse sections",
+        "Can be played as single notes or with underlying boom-chicka rhythm",
+        "Keep timing precise to match the band arrangement"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:10-2:38",
+      "technique": "Boom-Chicka Strumming",
+      "key": "G Major",
+      "description": "Final section with repeated chorus and fade, ending on a strong G major resolution",
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
+      "progression": "D - C - G (repeat to fade)",
+      "notes": [
+        "Repeated chorus progression fading out",
+        "Horn melody continues over the boom-chicka rhythm",
+        "Gradual reduction in volume for the fade ending",
+        "Final resolution to G major tonic"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Martin D-28 Acoustic or similar dreadnought",
+      "alternatives": [
+        "Gibson J-45",
+        "Taylor 210",
+        "Any steel-string dreadnought acoustic",
+        "Fender Telecaster (for electric adaptation)"
+      ],
+      "pickup": "Acoustic preferred; if electric, use bridge single-coil for twangy tone"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (for electric)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Fender Princeton Reverb",
+        "Vox AC15"
+      ],
+      "settings": {
+        "gain": "2-3 (clean with slight warmth)",
+        "treble": "7 (bright and cutting for country twang)",
+        "middle": "5 (moderate mids)",
+        "bass": "4 (tight low end for boom-chicka clarity)",
+        "presence": "6 (articulate and present)"
+      }
+    },
+    "effects": {
+      "distortion": "None - clean tone only",
+      "reverb": "Light spring reverb for subtle ambience",
+      "other": "Slapback delay (100-150ms, single repeat) for authentic 1960s Sun Records-style tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three open chords G, C, and D and the basic boom-chicka strum pattern",
+      "steps": [
+        "Master open G, C, and D chord shapes individually",
+        "Practice smooth transitions between G-C-G-D",
+        "Learn the basic boom-chicka strum: bass note on 1 and 3, strum on 2 and 4",
+        "Play through the entire song at a slow tempo (70 BPM) with chord changes"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Add the alternating bass pattern and learn the horn melody adapted for guitar",
+      "steps": [
+        "Develop root-fifth alternating bass for each chord",
+        "Learn the mariachi horn melody as single-note lines on guitar",
+        "Combine the boom-chicka rhythm with cleaner bass alternation",
+        "Practice at full tempo (108 BPM) with consistent timing"
+      ],
+      "timeEstimate": "2-4 weeks for solid performance"
+    },
+    "advanced": {
+      "focus": "Combine the horn melody with rhythm guitar simultaneously for solo performance",
+      "steps": [
+        "Play horn melody over boom-chicka bass pattern simultaneously",
+        "Add Travis picking elements to the bass pattern",
+        "Develop dynamic control between verse and chorus sections",
+        "Achieve authentic Johnny Cash tone and feel"
+      ],
+      "timeEstimate": "4-6 weeks for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Strumming too hard on the 'chicka' beats - they should be light and percussive",
+      "Losing the alternating bass pattern when adding chord changes",
+      "Playing the horn melody too fast or out of time with the rhythm",
+      "Neglecting the muted strum quality - it should sound crisp, not ringy",
+      "Rushing the tempo - maintain the steady train-like groove"
+    ],
+    "practiceRoutine": [
+      "Warm up with open G, C, D chord changes for 5 minutes",
+      "Practice boom-chicka pattern on G chord alone for 3 minutes",
+      "Add chord changes to the boom-chicka pattern slowly",
+      "Work on the horn melody separately as single-note lines",
+      "Combine rhythm and melody at slow tempo, gradually building to 108 BPM"
+    ],
+    "focusAreas": [
+      "Boom-chicka rhythm consistency and feel",
+      "Clean chord transitions between G, C, and D",
+      "Alternating bass note accuracy",
+      "Horn melody phrasing and timing",
+      "Overall groove and steady tempo"
+    ],
+    "metronomeWork": [
+      "Start boom-chicka pattern at 70 BPM on a single chord",
+      "Add chord changes at 80 BPM",
+      "Build gradually to performance tempo of 108 BPM",
+      "Practice horn melody at 90 BPM before combining with rhythm"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Folsom Prison Blues",
+        "difficulty": "Beginner",
+        "similarity": "Same boom-chicka strumming technique and simple chord progression"
+      },
+      {
+        "title": "I Walk the Line",
+        "difficulty": "Beginner",
+        "similarity": "Luther Perkins' signature boom-chicka guitar style"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Jackson",
+        "artist": "Johnny Cash & June Carter",
+        "difficulty": "Beginner",
+        "similarity": "Same boom-chicka rhythm pattern with simple chord changes"
+      },
+      {
+        "title": "Hey Good Lookin'",
+        "artist": "Hank Williams",
+        "difficulty": "Beginner",
+        "similarity": "Classic country I-IV-V progression with alternating bass"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Folsom Prison Blues",
+        "artist": "Johnny Cash",
+        "difficulty": "Beginner",
+        "similarity": "Next step in Johnny Cash repertoire with similar techniques"
+      },
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "difficulty": "Advanced",
+        "similarity": "Iconic riff-based song showing how guitar hooks evolved from these roots"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "country",
+      "beginner-friendly",
+      "strumming",
+      "classic"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

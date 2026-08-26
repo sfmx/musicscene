@@ -1,0 +1,427 @@
+{
+  "slug": "12-bar-blues",
+  "progressionInfo": {
+    "name": "12-Bar Blues Progression",
+    "pageTitle": "12-Bar Blues Progression",
+    "subtitle": "The foundational form that shaped blues, jazz, rock & roll, and modern popular music - a twelve-measure harmonic pattern that tells a complete musical story.",
+    "heroGradient": "bg-gradient-to-r from-amber-600 to-red-700",
+    "tags": [
+      "12-Measure Form",
+      "I-IV-V Foundation",
+      "Blues Standard",
+      "Universal Pattern"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "12-Bar Structure",
+    "properties": [
+      { "label": "Bars 1-4", "value": "I - I - I - I (Tonic section)" },
+      { "label": "Bars 5-8", "value": "IV - IV - I - I (Subdominant section)" },
+      { "label": "Bars 9-12", "value": "V - IV - I - V (Turnaround)" },
+      { "label": "Structure", "value": "Three sections of four bars each" },
+      { "label": "Harmony", "value": "Uses primary triads (I, IV, V)" },
+      { "label": "Form", "value": "Creates complete harmonic journey with turnaround leading back to beginning" }
+    ],
+    "exampleTitle": "Historical Impact",
+    "examples": [
+      { "label": "Blues", "value": "The foundation of Delta and Chicago blues" },
+      { "label": "Jazz", "value": "Standard form for improvisation and composition" },
+      { "label": "Rock & Roll", "value": "The backbone of early rock music" },
+      { "label": "Modern Music", "value": "Still used in contemporary genres" },
+      { "label": "Learning Tool", "value": "Perfect for understanding harmony" }
+    ],
+    "bulletColor": "text-amber-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "Basic 12-Bar Blues in E",
+        "description": "The most common key for blues guitar. These three dominant 7th chords form the foundation of the blues.",
+        "chords": [
+          { "label": "I - E7", "chord": "E7", "subtitle": "Tonic - home base" },
+          { "label": "IV - A7", "chord": "A7", "subtitle": "Subdominant - movement" },
+          { "label": "V - B7", "chord": "B7", "subtitle": "Dominant - tension" }
+        ],
+        "alphaTex": "\\ts 4/4 :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1",
+        "alphaTexTitle": "Basic 12-Bar Blues in E",
+        "practiceNotes": [
+          "E7 for bars 1-4, A7 for bars 5-6, E7 for bars 7-8",
+          "B7 for bar 9, A7 for bar 10, E7 for bar 11, B7 for bar 12 (turnaround)",
+          "Focus on maintaining a steady shuffle feel throughout"
+        ],
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "colorDetail": "text-amber-700"
+      },
+      {
+        "title": "Blues in Key of A",
+        "description": "Another popular key for blues guitar with easy open chord shapes.",
+        "chords": [
+          { "label": "I - A7", "chord": "A7", "subtitle": "Tonic" },
+          { "label": "IV - D7", "chord": "D7", "subtitle": "Subdominant" },
+          { "label": "V - E7", "chord": "E7", "subtitle": "Dominant" }
+        ],
+        "practiceNotes": [
+          "Very comfortable chord shapes for open position",
+          "Great for practicing with a shuffle rhythm"
+        ],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-900",
+        "colorText": "text-red-800",
+        "colorDetail": "text-red-700"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Guitar-Friendly Keys",
+        "description": "The 12-bar blues works best in certain keys on guitar.",
+        "items": [
+          "Key of E: E7 - A7 - B7 (most common blues key)",
+          "Key of A: A7 - D7 - E7 (great for open position)",
+          "Key of G: G7 - C7 - D7 (open position friendly)",
+          "Key of C: C7 - F7 - G7 (jazz-inflected blues)"
+        ],
+        "colorBg": "bg-gray-50",
+        "colorBorder": "border-gray-200",
+        "colorTitle": "text-gray-800",
+        "colorText": "text-gray-700"
+      },
+      {
+        "title": "Rhythm Patterns",
+        "description": "Essential rhythm feels for playing the 12-bar blues.",
+        "items": [
+          "Shuffle Feel: Swing eighths (triplet feel) - the classic blues groove",
+          "Basic Strum: Down-up pattern with consistent rhythm",
+          "Emphasis: Strong accents on beats 1 and 3",
+          "Muting: Use palm muting for a tighter, more controlled sound"
+        ],
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-800",
+        "colorText": "text-amber-700"
+      },
+      {
+        "title": "Quick Change Variation",
+        "description": "The quick change adds the IV chord in bar 2, creating more harmonic movement early on.",
+        "items": [
+          "Bars 1-4: I - IV - I - I (IV appears in bar 2)",
+          "Bars 5-8: IV - IV - I - I (same as standard)",
+          "Bars 9-12: V - IV - I - V (same turnaround)",
+          "Creates more harmonic interest in the opening section"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-700"
+      },
+      {
+        "title": "Jazz Blues Substitutions",
+        "description": "Jazz musicians add sophisticated substitutions and extended harmony to the blues form.",
+        "items": [
+          "ii-V substitutions in various measures",
+          "Chromatic passing chords (#IVdim7)",
+          "Extended chords (9ths, 11ths, 13ths)",
+          "Tritone substitutions",
+          "Minor blues variations (i-iv-V)",
+          "Modal interchange chords"
+        ],
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Classic Blues & Rock",
+      "examples": [
+        {
+          "title": "\"Sweet Home Chicago\"",
+          "description": "Robert Johnson",
+          "detail": "One of the earliest and most iconic 12-bar blues recordings."
+        },
+        {
+          "title": "\"Stormy Monday\"",
+          "description": "T-Bone Walker",
+          "detail": "Features jazz-influenced chord substitutions within the blues form."
+        },
+        {
+          "title": "\"The Thrill Is Gone\"",
+          "description": "B.B. King",
+          "detail": "A masterclass in blues phrasing and emotional expression over the form."
+        },
+        {
+          "title": "\"Pride and Joy\"",
+          "description": "Stevie Ray Vaughan",
+          "detail": "Texas blues shuffle with incredible guitar tone and feel."
+        },
+        {
+          "title": "\"Crossroads\"",
+          "description": "Robert Johnson / Cream",
+          "detail": "Delta blues classic, later electrified by Eric Clapton."
+        },
+        {
+          "title": "\"Johnny B. Goode\"",
+          "description": "Chuck Berry",
+          "detail": "Rock & roll classic built entirely on the 12-bar blues form."
+        },
+        {
+          "title": "\"Hound Dog\"",
+          "description": "Elvis Presley",
+          "detail": "Early rock & roll that brought the blues form to mainstream audiences."
+        },
+        {
+          "title": "\"Rock Around the Clock\"",
+          "description": "Bill Haley",
+          "detail": "One of the first rock & roll hits, built on the 12-bar blues."
+        }
+      ]
+    },
+    "right": {
+      "title": "Jazz & Modern",
+      "examples": [
+        {
+          "title": "\"Billie's Bounce\"",
+          "description": "Charlie Parker",
+          "detail": "Bebop blues head with sophisticated melodic lines over the form."
+        },
+        {
+          "title": "\"Bag's Groove\"",
+          "description": "Milt Jackson",
+          "detail": "Classic jazz blues featuring vibraphone over the standard form."
+        },
+        {
+          "title": "\"C Jam Blues\"",
+          "description": "Duke Ellington",
+          "detail": "Simple melody over the blues form - a classic for jazz beginners."
+        },
+        {
+          "title": "\"Tenor Madness\"",
+          "description": "Sonny Rollins",
+          "detail": "Hard bop blues showcasing the form as a vehicle for improvisation."
+        },
+        {
+          "title": "\"Blue Suede Shoes\"",
+          "description": "Carl Perkins",
+          "detail": "Rockabilly classic that fuses country and blues through the 12-bar form."
+        },
+        {
+          "title": "\"Roll Over Beethoven\"",
+          "description": "Chuck Berry",
+          "detail": "Another Chuck Berry classic demonstrating the versatility of the blues form."
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Week 1: Foundation",
+      "icon": "🎯",
+      "items": [
+        "Master E7, A7, B7 chord shapes",
+        "Learn the basic 12-bar structure by heart",
+        "Practice clean chord transitions between I, IV, and V",
+        "Work on steady rhythm with a metronome",
+        "Count bars out loud as you play through the form"
+      ],
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700"
+    },
+    {
+      "title": "Week 2: Feel & Groove",
+      "icon": "🎵",
+      "items": [
+        "Develop the shuffle feel (swing eighths)",
+        "Practice with a metronome at various tempos",
+        "Add the quick change variation",
+        "Learn the 12-bar blues in the key of A",
+        "Work on dynamics - louder during the V chord section"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Week 3+: Application",
+      "icon": "🎸",
+      "items": [
+        "Play along with classic blues recordings",
+        "Learn the form in multiple keys (E, A, G, C)",
+        "Try jazz blues substitutions",
+        "Develop your personal blues style and phrasing",
+        "Practice turnarounds and intros"
+      ],
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border-amber-200",
+      "colorTitle": "text-amber-800",
+      "colorText": "text-amber-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Basic 12-Bar Blues in E",
+      "description": "The standard 12-bar blues form using dominant 7th chords in the key of E. Each chord is played as a whole note per measure.",
+      "alphaTex": "\\ts 4/4 :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1",
+      "practiceNotes": [
+        "Bars 1-4: E7 (tonic section - establishing the key)",
+        "Bars 5-6: A7 (subdominant - creating movement)",
+        "Bars 7-8: E7 (return to tonic)",
+        "Bar 9: B7 (dominant - maximum tension)",
+        "Bar 10: A7 (subdominant - releasing tension)",
+        "Bar 11: E7 (tonic - resolution)",
+        "Bar 12: B7 (turnaround - leads back to bar 1)"
+      ],
+      "colorBg": "bg-amber-50",
+      "colorBorder": "border-amber-200",
+      "colorTitle": "text-amber-900",
+      "colorText": "text-amber-800",
+      "colorDetail": "text-amber-700"
+    },
+    {
+      "title": "Quick Change Blues in E",
+      "description": "The quick change variation moves to the IV chord (A7) in bar 2 instead of staying on the I chord, adding more harmonic interest to the opening.",
+      "alphaTex": "\\ts 4/4 :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1 | :w 0.5.2.4.2.3.1.2.0.1 | :w 0.6.2.5.2.4.1.3.0.2.0.1 | :w 2.6.2.5.1.4.0.3.0.2.0.1",
+      "practiceNotes": [
+        "Notice the A7 in bar 2 - this is the 'quick change'",
+        "Compare the feel with the standard version",
+        "Many classic blues songs use this variation"
+      ],
+      "colorBg": "bg-yellow-50",
+      "colorBorder": "border-yellow-200",
+      "colorTitle": "text-yellow-900",
+      "colorText": "text-yellow-800",
+      "colorDetail": "text-yellow-700"
+    },
+    {
+      "title": "Jazz Blues with Substitutions in C",
+      "description": "A jazz-influenced version of the 12-bar blues featuring chord substitutions, passing chords, and extended harmony.",
+      "alphaTex": "\\ts 4/4 :w 3.5.2.4.3.3.1.2 | :w 1.6.2.4.1.3.1.2 | :w 3.5.2.4.3.3.1.2 | :w 1.4.2.3.1.2 | :w 1.6.2.4.1.3.1.2 | :w 1.6.2.4.1.3.1.2 | :w 3.5.2.4.3.3.1.2 | :w 0.5.1.4.0.3.0.2 | :w 3.6.0.4.0.3.0.2.1.1 | :w 1.6.2.4.1.3.1.2 | :w 3.5.2.4.3.3.1.2 | :w 3.6.0.4.0.3.0.2.1.1",
+      "practiceNotes": [
+        "C7 - F7 - C7 - C#dim7 - F7 - F7 - C7 - Am7 - G7 - F7 - C7 - G7",
+        "Notice the chromatic passing chord (C#dim7) in bar 4",
+        "The Am7 in bar 8 adds a ii-V feel leading to the turnaround",
+        "Practice each substitution slowly before putting it all together"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-900",
+      "colorText": "text-purple-800",
+      "colorDetail": "text-purple-700"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Related Progressions",
+      "sections": [
+        {
+          "title": "Core Relationships",
+          "items": [
+            "I-IV-V: The three chords used in the blues form",
+            "ii-V-I: Jazz substitutions commonly applied to blues",
+            "Circle of Fifths: Understanding the chord relationships within the form",
+            "Minor Blues: The i-iv-V variation in minor keys"
+          ]
+        },
+        {
+          "title": "Blues Scales",
+          "items": [
+            "Minor pentatonic scale - the primary blues scale",
+            "Blues scale (minor pentatonic + flat 5th)",
+            "Major pentatonic for a brighter sound",
+            "Mixolydian mode over each dominant 7th chord"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Musical Applications",
+      "sections": [
+        {
+          "title": "Genre Applications",
+          "items": [
+            "Blues: The foundation form for all blues styles",
+            "Jazz: Standard vehicle for improvisation",
+            "Rock: Basis for countless classic rock songs",
+            "Country: Used in country blues and western swing"
+          ]
+        },
+        {
+          "title": "The 'Axis of Awesome' Connection",
+          "items": [
+            "While many pop songs use I-V-vi-IV, the 12-bar blues remains the foundation for understanding harmonic journeys",
+            "The blues form teaches tension and resolution in its purest form",
+            "Learning the blues form builds harmonic awareness that applies to all genres",
+            "The turnaround concept (bar 12) is foundational to understanding musical form"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the 12-bar blues, explore other essential progressions that build on these harmonic foundations.",
+    "links": [
+      {
+        "slug": "i-iv-v",
+        "title": "I-IV-V Progression",
+        "description": "Master the most fundamental progression in Western music.",
+        "linkText": "Learn the foundation",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      },
+      {
+        "slug": "ii-v-i",
+        "title": "ii-V-I Progression",
+        "description": "Master the cornerstone of jazz harmony with smooth voice leading.",
+        "linkText": "Learn jazz harmony",
+        "icon": "🎷",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "circle-of-fifths",
+        "title": "Circle of Fifths",
+        "description": "Understand the key relationships that govern all harmony.",
+        "linkText": "Explore the circle",
+        "icon": "🔄",
+        "hoverBorder": "hover:border-orange-300",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
+      }
+    ]
+  },
+  "navigation": {
+    "prev": {
+      "href": "/lessons/theory/progressions/vi-iv-i-v",
+      "label": "vi-IV-I-V Progression"
+    },
+    "next": {
+      "href": "/lessons/theory/progressions/circle-of-fifths",
+      "label": "Circle of Fifths"
+    }
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for 12-Bar Blues",
+    "items": [
+      { "category": "Amp", "product": "Fender Blues Junior IV", "reason": "Warm tube tone with natural breakup perfect for authentic blues rhythm and lead" },
+      { "category": "Guitar", "product": "Epiphone Les Paul Standard", "reason": "Humbucker-equipped guitar delivers the fat, sustaining tone blues players love" },
+      { "category": "Pedal", "product": "Ibanez Tube Screamer TS9", "reason": "The classic blues overdrive pedal — adds grit while preserving dynamics" }
+    ]
+  }
+}

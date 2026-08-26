@@ -1,0 +1,289 @@
+{
+  "slug": "distortion",
+  "category": "effects",
+  "pageTitle": "Distortion & Overdrive Effects",
+  "subtitle": "Understand how distortion shapes tone, harmonic content, and playing technique in different musical contexts.",
+  "heroGradient": "from-orange-50 to-red-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Distortion: More Than Just Volume",
+    "text": "Distortion doesn't just make things louder -- it adds harmonic content that didn't exist in the original signal, creating richness and sustain. Different types of distortion serve different musical purposes. The key is matching the distortion character to the song's needs.",
+    "columns": [
+      { "title": "Harmonic Enhancement", "text": "Distortion clips the waveform, creating additional harmonics that give the characteristic \"warm\" or \"aggressive\" sound" },
+      { "title": "Musical Function", "text": "Use the minimum amount of distortion needed to achieve the musical effect you want" }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Types of Distortion & Their Applications",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Overdrive",
+          "badge": { "text": "Warm, natural saturation", "color": "orange" },
+          "fields": [
+            { "label": "Description", "value": "Simulates natural tube amp saturation, maintains note clarity and dynamics" },
+            { "label": "Best For", "value": "Blues, classic rock, country, jazz-rock" },
+            { "label": "Examples", "value": "Ibanez TS-9, Boss Blues Driver, tube amp breakup" },
+            { "label": "Technique", "value": "Works best with moderate gain, responds to picking dynamics" }
+          ]
+        },
+        {
+          "title": "Distortion",
+          "badge": { "text": "More aggressive, compressed saturation", "color": "orange" },
+          "fields": [
+            { "label": "Description", "value": "Higher gain with more compression, creates thicker harmonic content" },
+            { "label": "Best For", "value": "Hard rock, metal, punk, grunge" },
+            { "label": "Examples", "value": "Boss DS-1, Pro Co RAT, Marshall distortion" },
+            { "label": "Technique", "value": "Higher sustain, less dynamic response, good for power chords" }
+          ]
+        },
+        {
+          "title": "Fuzz",
+          "badge": { "text": "Extreme, often gated saturation", "color": "orange" },
+          "fields": [
+            { "label": "Description", "value": "Extreme clipping creates square wave-like distortion with unique harmonics" },
+            { "label": "Best For", "value": "Psychedelic rock, garage rock, stoner rock" },
+            { "label": "Examples", "value": "Big Muff Pi, Fuzz Face, Tone Bender" },
+            { "label": "Technique", "value": "Very high gain, can be gated, works well with single notes" }
+          ]
+        },
+        {
+          "title": "High-Gain Distortion",
+          "badge": { "text": "Tight, focused, high-output", "color": "orange" },
+          "fields": [
+            { "label": "Description", "value": "Very high gain with tight low-end response, clear note separation" },
+            { "label": "Best For", "value": "Modern metal, prog rock, djent" },
+            { "label": "Examples", "value": "Mesa Boogie Rectifier, EVH 5150, Friedman BE-OD" },
+            { "label": "Technique", "value": "Requires precise playing, works with complex chords and fast passages" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gain Staging: Building Your Distortion",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Guitar \u2192 Overdrive",
+          "bgColor": "blue-50",
+          "borderColor": "blue-200",
+          "fields": [
+            { "label": "Purpose", "value": "First stage of distortion" },
+            { "label": "Settings", "value": "Low to moderate gain, volume to taste" },
+            { "label": "Effect", "value": "Adds warmth and slight compression to signal" }
+          ],
+          "items": ["Sets foundation for rest of signal chain"]
+        },
+        {
+          "title": "Overdrive \u2192 Amp",
+          "bgColor": "blue-50",
+          "borderColor": "blue-200",
+          "fields": [
+            { "label": "Purpose", "value": "Drive the amp input" },
+            { "label": "Settings", "value": "Use overdrive to push amp into natural distortion" },
+            { "label": "Effect", "value": "Creates natural tube saturation and compression" }
+          ],
+          "items": ["Balance between pedal and amp distortion"]
+        },
+        {
+          "title": "High-Gain Setup",
+          "bgColor": "blue-50",
+          "borderColor": "blue-200",
+          "fields": [
+            { "label": "Purpose", "value": "Maximum distortion" },
+            { "label": "Settings", "value": "High gain from amp or high-gain pedal" },
+            { "label": "Effect", "value": "Thick distortion, high sustain, compressed dynamics" }
+          ],
+          "items": ["Requires noise gate, precise playing technique"]
+        },
+        {
+          "title": "Clean + Distortion Blend",
+          "bgColor": "blue-50",
+          "borderColor": "blue-200",
+          "fields": [
+            { "label": "Purpose", "value": "Best of both worlds" },
+            { "label": "Settings", "value": "Clean signal blended with distorted signal" },
+            { "label": "Effect", "value": "Maintains clarity while adding harmonic content" }
+          ],
+          "items": ["Useful for complex chords and fingerpicking"]
+        }
+      ]
+    },
+    {
+      "title": "EQ & Distortion Interaction",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Bass (80-250 Hz)",
+          "fields": [
+            { "label": "Effect", "value": "Low-end warmth and power" },
+            { "label": "Distortion Impact", "value": "Too much creates muddiness in distorted signal" },
+            { "label": "Recommendation", "value": "Cut slightly for clarity, boost for power" }
+          ]
+        },
+        {
+          "title": "Low-Mid (250-500 Hz)",
+          "fields": [
+            { "label": "Effect", "value": "Body and thickness" },
+            { "label": "Distortion Impact", "value": "Can make distortion sound congested" },
+            { "label": "Recommendation", "value": "Often needs cutting in high-gain settings" }
+          ]
+        },
+        {
+          "title": "Mid (500 Hz-2 kHz)",
+          "fields": [
+            { "label": "Effect", "value": "Fundamental note clarity" },
+            { "label": "Distortion Impact", "value": "Critical for note definition in distorted signal" },
+            { "label": "Recommendation", "value": "Boost for clarity, cut for scooped sound" }
+          ]
+        },
+        {
+          "title": "High-Mid (2-5 kHz)",
+          "fields": [
+            { "label": "Effect", "value": "Attack and presence" },
+            { "label": "Distortion Impact", "value": "Affects pick attack clarity" },
+            { "label": "Recommendation", "value": "Boost for cutting through mix" }
+          ]
+        },
+        {
+          "title": "Treble (5 kHz+)",
+          "fields": [
+            { "label": "Effect", "value": "Brightness and air" },
+            { "label": "Distortion Impact", "value": "Too much creates harshness" },
+            { "label": "Recommendation", "value": "Adjust to taste, roll off if too harsh" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Distortion in Famous Songs",
+      "bgColor": "green-50",
+      "borderColor": "green-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Smoke on the Water\" - Deep Purple",
+          "fields": [
+            { "label": "Distortion Type", "value": "Marshall amp overdrive" },
+            { "label": "Musical Function", "value": "Drives the iconic riff with natural tube saturation" },
+            { "label": "Technique", "value": "Moderate gain allows chord clarity while adding power" },
+            { "label": "Lesson", "value": "Natural amp distortion can be more musical than extreme pedal distortion" }
+          ]
+        },
+        {
+          "title": "\"Smells Like Teen Spirit\" - Nirvana",
+          "fields": [
+            { "label": "Distortion Type", "value": "High-gain amp distortion" },
+            { "label": "Musical Function", "value": "Creates aggressive texture that matches song energy" },
+            { "label": "Technique", "value": "High gain with palm muting for tight rhythm sound" },
+            { "label": "Lesson", "value": "Distortion level should match the emotional content of the song" }
+          ]
+        },
+        {
+          "title": "\"Purple Haze\" - Jimi Hendrix",
+          "fields": [
+            { "label": "Distortion Type", "value": "Fuzz Face fuzz pedal" },
+            { "label": "Musical Function", "value": "Creates psychedelic, sustaining lead tones" },
+            { "label": "Technique", "value": "High-gain fuzz responds to volume knob and playing dynamics" },
+            { "label": "Lesson", "value": "Extreme distortion can be musical when used with appropriate technique" }
+          ]
+        },
+        {
+          "title": "\"Back in Black\" - AC/DC",
+          "fields": [
+            { "label": "Distortion Type", "value": "Marshall JTM45 natural overdrive" },
+            { "label": "Musical Function", "value": "Provides punch and clarity for rhythm playing" },
+            { "label": "Technique", "value": "Clean enough for chord clarity, dirty enough for attitude" },
+            { "label": "Lesson", "value": "Sometimes less distortion is more effective than maximum gain" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Playing Technique with Distortion",
+      "bgColor": "purple-50",
+      "borderColor": "purple-200",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Picking Dynamics",
+          "description": "Light overdrive responds to picking dynamics. Hard picking increases distortion, soft picking cleans up the sound.",
+          "items": ["Practice controlling dynamics to shape your tone"]
+        },
+        {
+          "title": "Palm Muting",
+          "description": "Essential for controlling high-gain distortion. Creates tight, focused sound and prevents unwanted feedback.",
+          "items": ["Crucial technique for metal and hard rock"]
+        },
+        {
+          "title": "Note Clarity",
+          "description": "High distortion can mask poor technique. Focus on clean fretting and precise timing to maintain clarity.",
+          "items": ["Clean practice helps distorted playing"]
+        }
+      ]
+    },
+    {
+      "title": "Common Distortion Mistakes",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Too Much Gain",
+          "bgColor": "amber-50",
+          "description": "More distortion isn't always better. Excessive gain can mask note definition and make everything sound muddy.",
+          "items": ["Start with less gain than you think you need"]
+        },
+        {
+          "title": "Ignoring Clean Tone",
+          "bgColor": "amber-50",
+          "description": "Distortion can't fix a bad clean tone. Start with a good clean sound, then add distortion as needed.",
+          "items": ["Good tone starts with good fundamentals"]
+        },
+        {
+          "title": "Wrong Type for Style",
+          "bgColor": "amber-50",
+          "description": "Using high-gain metal distortion for blues or light overdrive for metal won't serve the music.",
+          "items": ["Match distortion type to musical context"]
+        },
+        {
+          "title": "No Dynamic Control",
+          "bgColor": "amber-50",
+          "description": "Constant high-gain distortion removes dynamics and makes everything sound the same intensity.",
+          "items": ["Use distortion to enhance dynamics, not eliminate them"]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Practice Exercises",
+    "exercises": [
+      {
+        "title": "Tone Exploration",
+        "items": [
+          "Compare overdrive, distortion, and fuzz on the same riff",
+          "Practice controlling dynamics with light overdrive",
+          "Experiment with gain staging combinations",
+          "Try different EQ settings with distortion"
+        ]
+      },
+      {
+        "title": "Song Application",
+        "items": [
+          "Learn iconic riffs and match the original distortion style",
+          "Practice palm muting with high-gain distortion",
+          "Use volume knob rolloff to clean up overdrive",
+          "Compare your distorted tone to reference recordings"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/delay", "label": "Delay & Echo" },
+    { "href": "/lessons/songs/effects/compression", "label": "Compression & Dynamics" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects Overview" }
+  ]
+}

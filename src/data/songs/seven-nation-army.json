@@ -1,0 +1,426 @@
+{
+  "songInfo": {
+    "title": "Seven Nation Army",
+    "artist": "The White Stripes",
+    "album": "Elephant",
+    "released": "2003",
+    "genre": "Alternative Rock",
+    "tempo": "124 BPM",
+    "duration": "3:51",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary scale for the main riff melody and overall harmonic structure"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Simplified scale framework for the riff's core notes and guitar fills"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "N/A (already minor key)",
+      "relativeMajor": "G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "G5",
+          "A5",
+          "G5",
+          "E5"
+        ],
+        "progression": "i - III - IV - III - i",
+        "description": "The riff implies a i-III-IV movement typical of minor key rock, with the single-note melody outlining these chord tones"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff",
+          "progression": "E5",
+          "romanNumerals": "i (melodic movement within tonic)",
+          "description": "The iconic riff is a single-note melody played on the low A string, transposed down an octave by the pitch-shift effect to sound like a bass line"
+        },
+        {
+          "section": "Verse",
+          "progression": "E5 - G5 - E5 - E5",
+          "romanNumerals": "i - III - i - i",
+          "description": "Power chords support the vocal with the riff continuing underneath, building on the minor tonality"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G5 - A5 - E5 - C5 - B5",
+          "romanNumerals": "III - IV - i - VI - V",
+          "description": "The chorus expands harmonically with a wider chord palette, creating tension and release through the descending C5-B5 movement"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (i) - Dark, powerful tonic center anchoring the riff and verse sections",
+        "G5 (III) - Major mediant adding brightness and upward harmonic motion",
+        "A5 (IV) - Subdominant providing the primary harmonic contrast",
+        "C5 (VI) - Submediant creating a dramatic pre-resolution moment",
+        "B5 (V) - Dominant chord resolving back to the E5 tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Single-Note Riff with Octave Effect",
+      "description": "The signature technique of the song: a simple single-note melody played on the A string, processed through an Electro-Harmonix POG octave pedal to produce a bass-like tone an octave below",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The riff is played entirely on the A string (5th string)",
+          "Learn the note sequence of the main riff",
+          "Learn the fret positions for each note in the riff",
+          "Jack White used an Electro-Harmonix POG to shift the pitch down one octave",
+          "Without the octave pedal, the riff can be played on the low E string for a similar bass effect",
+          "Alternative low E string version: the riff notes - D(10th fret or open D) - the riff notes"
+        ],
+        "sequence": [
+          "Place index finger at 7th fret of A string for the E note",
+          "Pick the note twice (E-E) with even quarter-note rhythm",
+          "Slide or shift to 10th fret for G note",
+          "Return to 7th fret E, then descend: 5th fret D, 3rd fret C, 2nd fret B",
+          "The B note is held longer before the riff repeats"
+        ],
+        "tips": [
+          "Use your index finger as a guide along the A string surface",
+          "Let each note ring clearly before moving to the next",
+          "Focus on the rhythm - the notes are simple but the timing must be precise",
+          "If you don't have an octave pedal, try playing on the low E string for a heavier sound",
+          "Keep unused strings muted with your fretting hand to avoid noise"
+        ],
+        "chords": [],
+        "progression": "E - E - G - E - D - C - B (single notes on A string)"
+      }
+    },
+    {
+      "name": "Power Chord Verse Rhythm",
+      "description": "During verse and chorus sections, the riff transitions to power chords providing a fuller harmonic foundation beneath the vocals",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X (Open low E + 2nd fret A and D strings)",
+          "G5: 3-5-5-X-X-X (3rd fret low E + 5th fret A and D strings)",
+          "A5: 5-7-7-X-X-X (5th fret low E + 7th fret A and D strings)",
+          "C5: 8-10-10-X-X-X (8th fret low E + 10th fret A and D strings)",
+          "B5: 7-9-9-X-X-X (7th fret low E + 9th fret A and D strings)",
+          "Use steady downstrokes for a driving, heavy feel"
+        ],
+        "sequence": [
+          "Start with E5 open power chord for verse sections",
+          "Shift to G5 at 3rd position for contrast",
+          "In the chorus, move through G5 - A5 - E5 - C5 - B5",
+          "Return to the single-note riff between sections"
+        ],
+        "tips": [
+          "Keep power chord shapes consistent as you move up the neck",
+          "Mute higher strings by lightly resting your index finger across them",
+          "The transition from single-note riff to full power chords should be seamless",
+          "Use downstrokes throughout for consistency with Jack White's aggressive style"
+        ],
+        "chords": [
+          "E5",
+          "G5",
+          "A5",
+          "C5",
+          "B5"
+        ],
+        "progression": "E5 - G5 - A5 for verse; G5 - A5 - E5 - C5 - B5 for chorus"
+      }
+    },
+    {
+      "name": "Slide Technique (Riff Variation)",
+      "description": "An optional slide technique that can be applied to the main riff for a smoother, more connected sound between notes rather than discrete fret-to-fret movement",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Use slides to connect the notes smoothly",
+          "Use slides to connect the notes smoothly",
+          "Continue the slide down from 3rd to 2nd fret for C-to-B",
+          "Slides add a vocal, expressive quality to the riff"
+        ],
+        "sequence": [
+          "Play the note at the correct fret position, then slide finger up to 10th fret G",
+          "Return to 7th fret E with a fresh pick attack",
+          "Pick the note, then slide down to 3rd fret C",
+          "Slide to the final note of the phrase"
+        ],
+        "tips": [
+          "Maintain even pressure during slides to keep the note ringing",
+          "Don't lift your finger off the string during the slide motion",
+          "The slide-up to G should be slightly faster than the descending slides",
+          "Practice the slide motion independently before incorporating into the full riff"
+        ],
+        "chords": [],
+        "progression": "Single-note riff pattern with slides"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Riff (Intro)",
+      "timeStamp": "0:00-0:18",
+      "technique": "Single-Note Riff with Octave Effect",
+      "key": "E Minor",
+      "description": "The instantly recognizable single-note riff that has become one of the most iconic melodies in modern rock, played on one string with an octave-down effect",
+      "chords": [
+        "E5"
+      ],
+      "progression": "E",
+      "notes": [
+        "Entire riff played on the A string (5th string)",
+        "Quarter-note rhythm with the final B held slightly longer",
+        "The octave pedal gives it the bass-like quality heard on the recording",
+        "Without the pedal, playing on the low E string gives a heavier approximation"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:18-0:56",
+      "technique": "Power Chord Verse Rhythm",
+      "key": "E Minor",
+      "description": "The verse layers power chords over the continuing riff, with aggressive strumming supporting the vocal melody",
+      "chords": [
+        "E5",
+        "G5"
+      ],
+      "progression": "E5 - G5 - E5 - E5",
+      "notes": [
+        "Power chords provide the harmonic foundation under vocals",
+        "The riff continues underneath played by a separate guitar or bass",
+        "Strong downstrokes maintain the aggressive energy",
+        "Simple i-III movement keeps the focus on the vocal melody"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:56-1:26",
+      "technique": "Power Chord Verse Rhythm",
+      "key": "E Minor",
+      "description": "The chorus expands the harmonic palette with a wider chord progression, building intensity with the G5-A5-E5-C5-B5 movement",
+      "chords": [
+        "G5",
+        "A5",
+        "E5",
+        "C5",
+        "B5"
+      ],
+      "progression": "G5 - A5 - E5 - C5 - B5",
+      "notes": [
+        "More chord changes than the verse, creating harmonic interest",
+        "The C5 to B5 descending movement creates dramatic tension",
+        "B5 resolves strongly back to E5 when the riff returns",
+        "This section has the most energy in the song"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Breakdown / Guitar Solo Section",
+      "timeStamp": "2:20-2:58",
+      "technique": "Single-Note Riff with Octave Effect",
+      "key": "E Minor",
+      "description": "The song strips back to the raw riff before building into an aggressive, feedback-laden guitar section with distorted power chords",
+      "chords": [
+        "E5",
+        "G5",
+        "A5"
+      ],
+      "progression": "E5 riff - E5 - G5 - A5 (building intensity)",
+      "notes": [
+        "Starts with the riff stripped down to create tension",
+        "Gradually adds distorted power chords to build intensity",
+        "Jack White uses feedback and aggressive picking in this section",
+        "Builds dynamically to the final chorus repeat"
+      ],
+      "alphaTab": "12.6 14.6 15.6 17.6 | 12.5 14.5 15.5 17.5 | 12.4 14.4 15.4 17.4 | 12.3 14.3 12.2 15.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1960s Kay Hollowbody (or similar semi-hollow/hollowbody)",
+      "alternatives": [
+        "Epiphone Dot",
+        "Squier Classic Vibe Telecaster",
+        "Any electric guitar with a thick, dark tone"
+      ],
+      "pickup": "Neck humbucker or single-coil for the warm, fat riff tone; bridge pickup for aggressive chorus sections"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (or similar clean amp driven hard)",
+      "alternatives": [
+        "Fender Hot Rod Deluxe",
+        "Silvertone 1484",
+        "Orange Crush 35RT"
+      ],
+      "settings": {
+        "gain": "6-7 (moderate overdrive with gritty bite)",
+        "treble": "5 (warm, not brittle)",
+        "middle": "6 (present mids for riff definition)",
+        "bass": "7 (fat low end to support the octave-down riff)",
+        "presence": "5 (balanced presence)"
+      }
+    },
+    "effects": {
+      "distortion": "Electro-Harmonix Big Muff Pi for fuzz/distortion sections",
+      "delay": "None",
+      "reverb": "Light amp reverb",
+      "other": "Electro-Harmonix POG (Polyphonic Octave Generator) - essential for the octave-down riff effect; alternatively, a Digitech Whammy or Boss OC-3 can approximate the sound"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the single-note riff on one string and basic power chord shapes",
+      "steps": [
+        "Memorize the riff note positions on the correct string",
+        "Practice the riff slowly with a metronome at 80 BPM",
+        "Learn E5, G5, A5, C5, and B5 power chord shapes",
+        "Build up to 124 BPM maintaining clean note separation"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Combine the riff with power chord sections and learn the full song structure",
+      "steps": [
+        "Practice transitioning from single-note riff to power chords",
+        "Learn the verse and chorus progressions at full tempo",
+        "Work on dynamic contrast between sections",
+        "Play through the complete song structure without stopping"
+      ],
+      "timeEstimate": "2-4 weeks for complete performance"
+    },
+    "advanced": {
+      "focus": "Recreate the authentic tone with effects and master the aggressive performance style",
+      "steps": [
+        "Set up the octave pedal effect for authentic riff tone",
+        "Add distortion/fuzz for the heavier sections",
+        "Master the aggressive picking dynamics Jack White uses",
+        "Work on the breakdown section with feedback and intensity control"
+      ],
+      "timeEstimate": "4-6 weeks for complete authentic performance"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the riff too fast without maintaining rhythmic precision",
+      "Not letting each note ring clearly before moving to the next",
+      "Forgetting to mute unused strings, causing unwanted resonance",
+      "Making the power chord transitions too abrupt instead of smooth",
+      "Ignoring the dynamic contrast between quiet riff and loud chorus sections"
+    ],
+    "practiceRoutine": [
+      "Warm up with single-note exercises on the A string for 5 minutes",
+      "Practice the riff at 80 BPM with clean note separation",
+      "Work on power chord shapes and transitions for 10 minutes",
+      "Practice the full riff at increasing tempos (90, 100, 110, 124 BPM)",
+      "Play through the entire song structure with backing track"
+    ],
+    "focusAreas": [
+      "Clean single-note articulation on the A string",
+      "Rhythmic precision - the riff must be locked to the beat",
+      "Smooth transitions between single-note riff and power chord sections",
+      "Dynamic control for building intensity through the song",
+      "String muting to keep the tone clean and focused"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM playing the riff with quarter notes",
+      "Add the descending portion of the riff at 90 BPM",
+      "Practice power chord changes at 100 BPM",
+      "Build to 110 BPM with full song sections",
+      "Target 124 BPM for authentic full-speed performance"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Fell in Love with a Girl",
+        "difficulty": "Intermediate",
+        "similarity": "Same raw, stripped-down two-piece approach with aggressive guitar tone"
+      },
+      {
+        "title": "Icky Thump",
+        "difficulty": "Intermediate",
+        "similarity": "Heavier White Stripes riff-based song with similar power chord approach"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Another iconic riff-driven song every beginner should learn"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic single-note riff opening that transitions to heavy power chords"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Classic riff-based rock song with power chord foundation"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "A Horse with No Name",
+        "artist": "America",
+        "difficulty": "Beginner",
+        "similarity": "Even simpler starting point with minimal chord changes"
+      },
+      {
+        "title": "Smoke on the Water",
+        "artist": "Deep Purple",
+        "difficulty": "Beginner",
+        "similarity": "Similar difficulty level with a different riff approach (intervals vs single notes)"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to a more complex riff with palm muting and heavier power chords"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "2000s",
+    "iconicRiff": true,
+    "tags": [
+      "alternative-rock",
+      "iconic-riff",
+      "modern-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "songInfo": {
+    "title": "Come As You Are",
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "released": "1992",
+    "genre": "Grunge/Alternative",
+    "tempo": "120 BPM",
+    "duration": "3:39",
+    "key": "F# Minor",
+    "tuning": "Drop D (DADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# minor",
+      "scalesUsed": [
+        {
+          "scale": "F# natural minor (Aeolian)",
+          "notes": "F# - G# - A - B - C# - D - E - F#",
+          "application": "Primary scale for the main riff and melodic content"
+        },
+        {
+          "scale": "F# minor pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "Simplified scale used for the guitar solo and fill passages"
+        },
+        {
+          "scale": "E major / F# Dorian influence",
+          "notes": "F# - G# - A - B - C# - D# - E",
+          "application": "Subtle Dorian coloring in certain riff movements"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor)",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "E"
+        ],
+        "progression": "i - bVII",
+        "description": "Hypnotic two-chord oscillation that creates the song's dreamy, ambiguous atmosphere through simple minor-to-flat-seven movement"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "F#m - E",
+          "romanNumerals": "i - bVII",
+          "description": "The clean-tone riff outlines the F#m to E movement with a single-note descending and ascending pattern"
+        },
+        {
+          "section": "Chorus",
+          "progression": "F#m - A - B - F#m",
+          "romanNumerals": "i - bIII - IV - i",
+          "description": "The distorted chorus opens up the harmonic palette with power chords, adding the A and B for intensity"
+        },
+        {
+          "section": "Bridge",
+          "progression": "B - D - B - D",
+          "romanNumerals": "IV - bVI - IV - bVI",
+          "description": "Darker harmonic territory using the IV and bVI chords for building tension before the solo"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m (i) - Tonic minor establishing the song's dark, introspective center",
+        "E (bVII) - Flat seventh providing forward motion without dominant tension",
+        "A (bIII) - Relative major chord adding brightness in the chorus",
+        "B (IV) - Subdominant providing harmonic lift in chorus and bridge",
+        "D (bVI) - Flat sixth adding darker color in bridge sections"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Clean Tone Single-Note Riff",
+      "description": "The iconic opening riff played on the low strings with a clean chorus-effected tone, using a simple descending and ascending pattern that outlines the F#m-E harmony",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The riff uses notes on the low E string (D string in Drop D context) and A string",
+          "Practice the main riff pattern at a slow tempo",
+          "In Drop D tuning played on the D and A strings",
+          "All notes are played as even 8th notes with consistent dynamics",
+          "The chorus effect adds shimmer and width to the clean tone",
+          "Let each note ring slightly into the next for a legato feel"
+        ],
+        "sequence": [
+          "Set the guitar to the neck pickup with chorus effect engaged",
+          "Play the open string, then ascend: fret 2, fret 4, fret 5",
+          "At the top of the pattern, reverse direction: fret 5, fret 4, fret 2, open",
+          "Repeat the ascending-descending pattern in a continuous loop",
+          "Maintain even 8th-note timing throughout the riff"
+        ],
+        "tips": [
+          "Use alternate picking (down-up-down-up) for even note articulation",
+          "Keep the fretting fingers close to the fretboard for quick, clean movement",
+          "The chorus effect is essential - without it, the riff loses its character",
+          "Practice very slowly at first to ensure every note is clean and even",
+          "The riff should feel hypnotic and meditative, not rushed"
+        ],
+        "chords": [
+          "F#m",
+          "E"
+        ],
+        "progression": "Single-note riff outlining F#m - E movement"
+      }
+    },
+    {
+      "name": "Dynamic Contrast (Clean vs Distorted)",
+      "description": "Switching between the quiet, chorus-effected clean verse tone and the loud, distorted chorus tone - the hallmark of the grunge quiet-loud dynamic",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The verse uses clean tone with chorus effect for the single-note riff",
+          "The chorus kicks in distortion for power chords and aggressive strumming",
+          "Use a distortion or overdrive pedal toggled on for chorus sections",
+          "The transition should be abrupt and dramatic - not gradual",
+          "Guitar volume knob can also control the clean-to-dirty transition"
+        ],
+        "sequence": [
+          "Play the clean riff through the verse with chorus effect",
+          "At the transition to chorus, stomp the distortion pedal on",
+          "Switch from single-note riff to full power chord strumming",
+          "At the verse return, cut the distortion and return to clean single notes",
+          "Maintain this dynamic shift consistently throughout the song"
+        ],
+        "tips": [
+          "Practice the pedal switching in time so there is no gap in the music",
+          "The emotional impact comes from the contrast - make the clean parts really clean",
+          "Don't use too much gain on the distortion - a moderate crunch is authentic",
+          "Practice the switch between single-note riff and power chords separately"
+        ],
+        "chords": [
+          "F#m",
+          "E",
+          "A",
+          "B"
+        ],
+        "progression": "Clean: F#m - E riff, Distorted: F#m - A - B power chords"
+      }
+    },
+    {
+      "name": "Chorus Effect Usage",
+      "description": "Applying the chorus pedal effect to create the shimmering, watery clean tone that defines the song's atmospheric verse sections",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The chorus effect doubles the signal with slight pitch modulation",
+          "Set the rate (speed) to slow-to-medium for a gentle shimmer",
+          "Set the depth to moderate - not too extreme or wobbly",
+          "The mix should be around 50% wet for balanced blending",
+          "A Small Clone or Boss CE-2 style chorus captures the Nirvana tone"
+        ],
+        "sequence": [
+          "Engage the chorus pedal before the song begins",
+          "Set rate to 9-10 o'clock position for slow modulation",
+          "Set depth to 12 o'clock for moderate effect",
+          "Play the clean riff and adjust until the tone matches the recording",
+          "Disengage the chorus when switching to distortion for the loud sections"
+        ],
+        "tips": [
+          "Kurt Cobain used an Electro-Harmonix Small Clone chorus pedal",
+          "Too much depth makes the tone seasick - start subtle",
+          "The chorus effect should make the clean tone shimmer, not wobble",
+          "If you don't have a chorus pedal, a slight flanger on slow setting can approximate it"
+        ],
+        "chords": [],
+        "progression": "Applied to the clean F#m - E riff sections"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "Clean Tone Single-Note Riff",
+      "key": "F# Minor",
+      "description": "The song opens with the iconic clean, chorus-drenched single-note riff that descends and ascends on the low strings, immediately establishing the hypnotic mood",
+      "chords": [
+        "F#m",
+        "E"
+      ],
+      "progression": "F#m - E (implied by riff)",
+      "notes": [
+        "This is the signature hook - every note must be clean and even",
+        "Use the neck pickup with chorus effect for the authentic tone",
+        "Alternate picking keeps the 8th notes consistent",
+        "The riff repeats four times before the verse vocals enter"
+      ],
+      "alphaTab": "2.6 4.6 5.6 7.6 | 2.5 4.5 5.5 7.5 | 2.4 4.4 5.4 7.4 | 2.3 4.3 2.2 5.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:05",
+      "technique": "Clean Tone Single-Note Riff",
+      "key": "F# Minor",
+      "description": "The verse continues the same clean riff underneath Kurt Cobain's subdued vocal melody, maintaining the atmospheric and introspective mood",
+      "chords": [
+        "F#m",
+        "E"
+      ],
+      "progression": "F#m - E",
+      "notes": [
+        "The riff remains identical to the intro throughout the verse",
+        "Keep the dynamics controlled - the verse should stay quiet and restrained",
+        "Lock in with the bass, which plays a similar pattern an octave lower",
+        "The hypnotic repetition is intentional - resist the urge to add ornamentation"
+      ],
+      "alphaTab": "2.6 4.6 5.6 7.6 | 2.5 4.5 5.5 7.5 | 2.4 4.4 5.4 7.4 | 2.3 4.3 2.2 5.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:05-1:35",
+      "technique": "Dynamic Contrast (Clean vs Distorted)",
+      "key": "F# Minor",
+      "description": "The chorus explodes with distorted power chords, dramatically shifting from the quiet verse with aggressive strumming and the signature vocal hook",
+      "chords": [
+        "F#5",
+        "A5",
+        "B5",
+        "F#5"
+      ],
+      "progression": "F#m - A - B - F#m",
+      "notes": [
+        "Kick in the distortion pedal right at the chorus transition",
+        "Use Drop D power chord shapes - one finger barring across three strings",
+        "Strum aggressively with full downstrokes for maximum impact",
+        "The contrast with the quiet verse is the emotional core of this song"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:10-2:35",
+      "technique": "Dynamic Contrast (Clean vs Distorted)",
+      "key": "F# Minor",
+      "description": "The bridge builds tension with sustained B and D power chords over a darker harmonic palette, leading into the guitar solo",
+      "chords": [
+        "B5",
+        "D5"
+      ],
+      "progression": "B - D - B - D",
+      "notes": [
+        "Sustained power chords with heavy distortion and feedback",
+        "Let each chord ring for a full measure before changing",
+        "Build intensity through the bridge to lead into the solo",
+        "The D5 chord in Drop D uses the open bottom string for a massive, low tone"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Solo",
+      "timeStamp": "2:35-3:00",
+      "technique": "Clean Tone Single-Note Riff",
+      "key": "F# Minor",
+      "description": "The solo is essentially the main riff played with distortion and doubled, maintaining the song's commitment to melody over technical showmanship",
+      "chords": [
+        "F#m",
+        "E"
+      ],
+      "progression": "F#m - E",
+      "notes": [
+        "The solo follows the same melodic contour as the main riff",
+        "Played with distortion rather than the clean chorus tone of the verse",
+        "It's doubled (two guitar tracks playing the same thing) for thickness",
+        "This is a great beginner solo because it uses the same notes as the riff"
+      ],
+      "alphaTab": "2.6 4.6 5.6 7.6 | 2.5 4.5 5.5 7.5 | 2.4 4.4 5.4 7.4 | 2.3 4.3 2.2 5.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:00-3:39",
+      "technique": "Dynamic Contrast (Clean vs Distorted)",
+      "key": "F# Minor",
+      "description": "The outro repeats the chorus progression with increasing intensity and feedback, building to the final distorted climax before cutting off",
+      "chords": [
+        "F#5",
+        "A5",
+        "B5"
+      ],
+      "progression": "F#m - A - B - F#m",
+      "notes": [
+        "The outro builds intensity through repetition and increasing aggression",
+        "Allow some feedback and noise for authentic grunge character",
+        "The final chord should ring out and sustain with feedback",
+        "The song ends with the distortion still ringing into silence"
+      ],
+      "alphaTab": "2.6 4.5 4.4 2.6 4.5 4.4 | 7.6 9.5 9.4 7.6 9.5 9.4 | 9.6 11.5 11.4 9.6 11.5 11.4 | 2.6 4.5 4.4 2.6 4.5 4.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Mustang",
+      "alternatives": [
+        "Fender Jaguar",
+        "Fender Stratocaster",
+        "Any single-coil or humbucker-equipped electric guitar"
+      ],
+      "pickup": "Neck pickup for the clean riff, bridge pickup for distorted sections; single coils preferred"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or small combo amp (Fender Champ)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Mesa Boogie Studio .22",
+        "Any clean amp with good headroom"
+      ],
+      "settings": {
+        "gain": "3 clean, 7 distorted (use pedal for gain)",
+        "treble": "5 (balanced, not too bright)",
+        "middle": "6 (mid-focused Nirvana tone)",
+        "bass": "6 (full low end for Drop D tuning)",
+        "presence": "5 (present but not harsh)"
+      }
+    },
+    "effects": {
+      "distortion": "Boss DS-1 or DS-2 Turbo Distortion for the chorus sections, moderate gain setting",
+      "reverb": "Subtle spring reverb from the amp, nothing excessive",
+      "other": "Electro-Harmonix Small Clone chorus pedal is essential for the clean verse tone; set to slow rate and moderate depth"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the main riff pattern and basic power chord shapes in Drop D tuning",
+      "steps": [
+        "Tune to Drop D (lower the 6th string from E to D)",
+        "Learn the ascending-descending single-note riff on the A string",
+        "Practice the riff with even 8th-note timing at 90 BPM",
+        "Learn the basic Drop D power chord shapes for the chorus (F#5, A5, B5)"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "focus": "Master the clean-to-distorted dynamic transitions and full song structure",
+      "steps": [
+        "Practice switching between clean riff and distorted power chords",
+        "Work on the bridge section B5-D5 chord changes",
+        "Play through the entire song form with proper dynamic contrast",
+        "Add the chorus effect to the clean sections and practice pedal switching"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "focus": "Perfect the tone, add the solo, and capture the authentic grunge atmosphere",
+      "steps": [
+        "Dial in the authentic Nirvana chorus-clean and distorted tones",
+        "Learn the guitar solo (doubled riff with distortion)",
+        "Master seamless transitions between all song sections",
+        "Perform the full song with emotional dynamics and controlled feedback"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Forgetting to tune to Drop D before playing - the riff doesn't work in standard tuning",
+      "Playing the riff notes unevenly - each 8th note should be the same duration",
+      "Using too much distortion gain, which muddies the power chords in Drop D",
+      "Making the clean-to-distorted transition too gradual instead of dramatic"
+    ],
+    "practiceRoutine": [
+      "Tune to Drop D and warm up with the single-note riff slowly at 80 BPM",
+      "Practice the riff at gradually increasing tempos up to 120 BPM",
+      "Work on Drop D power chord shapes and transitions for 10 minutes",
+      "Practice the clean-distorted switching with pedals at song tempo",
+      "Play through the complete song with a backing track or metronome"
+    ],
+    "focusAreas": [
+      "Even 8th-note articulation in the main riff",
+      "Clean-to-distorted dynamic transitions",
+      "Drop D power chord voicings and smooth chord changes",
+      "Chorus effect pedal settings and tone matching"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM playing the single-note riff with alternate picking",
+      "Increase to 100 BPM focusing on keeping all 8th notes perfectly even",
+      "At 110 BPM, add the power chord chorus sections between riff repetitions",
+      "Reach target tempo of 120 BPM with the full song dynamics"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Smells Like Teen Spirit",
+        "difficulty": "Beginner",
+        "similarity": "Same quiet-loud dynamic structure with simple power chord progressions"
+      },
+      {
+        "title": "Heart-Shaped Box",
+        "difficulty": "Beginner",
+        "similarity": "Similar clean verse/distorted chorus approach with Drop D tuning"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Today",
+        "artist": "The Smashing Pumpkins",
+        "difficulty": "Beginner",
+        "similarity": "Clean arpeggiated verse with distorted chorus in alternative rock style"
+      },
+      {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "difficulty": "Beginner",
+        "similarity": "Classic quiet-loud dynamic with simple chord progression"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Even simpler single-note riff to build foundational skills"
+      },
+      {
+        "title": "Black Hole Sun",
+        "artist": "Soundgarden",
+        "difficulty": "Intermediate",
+        "similarity": "More harmonically complex grunge with unusual chord voicings as a next step"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "grunge",
+      "alternative",
+      "chorus-effect",
+      "beginner-friendly"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}

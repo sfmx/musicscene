@@ -1,0 +1,293 @@
+{
+  "pageTitle": "Music Theory: Scales",
+  "subtitle": "Master the patterns that create melody, harmony, and musical expression",
+  "heroIcon": "🎼",
+  "heroTitle": "Understanding Musical Scales",
+  "heroDescription": "Scales are organized sequences of notes that form the foundation of melody, harmony, and musical expression. They provide the raw material for composing, improvising, and understanding how music works. Master scales to unlock the full potential of the guitar fretboard and musical creativity.",
+  "whatAreScales": {
+    "title": "What Are Musical Scales?",
+    "description": "A musical scale is a sequence of notes arranged in ascending or descending order by pitch. Scales are defined by their interval patterns and determine the character and mood of music. Understanding scales is essential because they control:",
+    "columns": [
+      {
+        "title": "Melodic Foundation",
+        "colorBg": "bg-green-50",
+        "colorTitle": "text-green-900",
+        "colorText": "text-green-800",
+        "items": [
+          "Available notes for melodies and solos",
+          "Characteristic sound and mood",
+          "Phrase structure and direction",
+          "Genre-specific melodic styles"
+        ]
+      },
+      {
+        "title": "Harmonic Structure",
+        "colorBg": "bg-blue-50",
+        "colorTitle": "text-blue-900",
+        "colorText": "text-blue-800",
+        "items": [
+          "Chord progressions and relationships",
+          "Key centers and tonal gravity",
+          "Harmonic tension and resolution",
+          "Modal interchange possibilities"
+        ]
+      }
+    ]
+  },
+  "scaleCategories": [
+    {
+      "name": "Major Scales",
+      "scales": ["Major Scale", "Major Pentatonic", "Mixolydian Mode", "Lydian Mode"],
+      "description": "Bright, happy scales that form the foundation of major key music.",
+      "color": "bg-yellow-50 border-yellow-200"
+    },
+    {
+      "name": "Minor Scales",
+      "scales": ["Natural Minor", "Minor Pentatonic", "Dorian Mode", "Harmonic Minor", "Melodic Minor", "Phrygian Mode", "Locrian Mode"],
+      "description": "Emotional, darker scales that create minor key characteristics.",
+      "color": "bg-blue-50 border-blue-200"
+    },
+    {
+      "name": "Pentatonic Scales",
+      "scales": ["Major Pentatonic", "Minor Pentatonic"],
+      "description": "Five-note scales that are easy to learn and universally useful.",
+      "color": "bg-green-50 border-green-200"
+    },
+    {
+      "name": "Blues & Rock",
+      "scales": ["Blues Scale", "Minor Pentatonic", "Mixolydian Mode"],
+      "description": "Essential scales for rock, blues, and contemporary guitar styles.",
+      "color": "bg-orange-50 border-orange-200"
+    },
+    {
+      "name": "Symmetric & Special",
+      "scales": ["Whole Tone", "Chromatic"],
+      "description": "Unique symmetric and complete scales for advanced applications.",
+      "color": "bg-cyan-50 border-cyan-200"
+    }
+  ],
+  "musicalApplications": [
+    {
+      "title": "Melody Creation",
+      "description": "Scales provide the notes for creating memorable melodies",
+      "icon": "🎵",
+      "examples": ["Pentatonic scales for catchy hooks", "Major scales for happy melodies", "Minor scales for emotional themes"]
+    },
+    {
+      "title": "Solo Construction",
+      "description": "Guitar solos are built using scale patterns and techniques",
+      "icon": "🎸",
+      "examples": ["Minor pentatonic for rock solos", "Blues scale for expressive bends", "Modes for jazz improvisation"]
+    },
+    {
+      "title": "Chord Relationships",
+      "description": "Scales determine which chords work together harmonically",
+      "icon": "🎼",
+      "examples": ["Major scale creates major key progressions", "Natural minor for minor key harmony", "Modes for modal interchange"]
+    },
+    {
+      "title": "Genre Characteristics",
+      "description": "Different scales define the sound of musical genres",
+      "icon": "🎭",
+      "examples": ["Blues scale for blues/rock", "Dorian mode for jazz/folk", "Harmonic minor for classical/metal"]
+    }
+  ],
+  "scaleTypes": [
+    {
+      "name": "Major Scale",
+      "icon": "☀️",
+      "href": "/lessons/theory/scales/major",
+      "description": "The foundation of Western music. Bright, happy, and optimistic sound.",
+      "formula": "W-W-H-W-W-W-H",
+      "degrees": 7,
+      "color": "bg-yellow-50 border-yellow-200 hover:bg-yellow-100",
+      "iconColor": "text-yellow-600",
+      "mood": "Bright & Happy"
+    },
+    {
+      "name": "Natural Minor",
+      "icon": "🌙",
+      "href": "/lessons/theory/scales/minor",
+      "description": "Emotional and melancholic. The relative minor of the major scale.",
+      "formula": "W-H-W-W-H-W-W",
+      "degrees": 7,
+      "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+      "iconColor": "text-blue-600",
+      "mood": "Sad & Emotional"
+    },
+    {
+      "name": "Major Pentatonic",
+      "icon": "🎸",
+      "href": "/lessons/theory/scales/major-pentatonic",
+      "description": "Five-note scale perfect for beginners. Easy to use and sounds great.",
+      "formula": "1-2-3-5-6",
+      "degrees": 5,
+      "color": "bg-green-50 border-green-200 hover:bg-green-100",
+      "iconColor": "text-green-600",
+      "mood": "Simple & Pleasant"
+    },
+    {
+      "name": "Minor Pentatonic",
+      "icon": "🔥",
+      "href": "/lessons/theory/scales/minor-pentatonic",
+      "description": "The most popular guitar scale. Essential for rock, blues, and solos.",
+      "formula": "1-♭3-4-5-♭7",
+      "degrees": 5,
+      "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+      "iconColor": "text-orange-600",
+      "mood": "Powerful & Expressive"
+    },
+    {
+      "name": "Blues Scale",
+      "icon": "🎵",
+      "href": "/lessons/theory/scales/blues",
+      "description": "Minor pentatonic with added blue note. Perfect for blues and rock.",
+      "formula": "1-♭3-4-♭5-5-♭7",
+      "degrees": 6,
+      "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+      "iconColor": "text-indigo-600",
+      "mood": "Bluesy & Soulful"
+    },
+    {
+      "name": "Dorian Mode",
+      "icon": "🎹",
+      "href": "/lessons/theory/scales/dorian",
+      "description": "Minor scale with raised 6th. Jazz and folk favorite.",
+      "formula": "W-H-W-W-W-H-W",
+      "degrees": 7,
+      "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+      "iconColor": "text-purple-600",
+      "mood": "Jazz & Folk"
+    },
+    {
+      "name": "Mixolydian Mode",
+      "icon": "🎭",
+      "href": "/lessons/theory/scales/mixolydian",
+      "description": "Major scale with flat 7th. Dominant and bluesy sound.",
+      "formula": "W-W-H-W-W-H-W",
+      "degrees": 7,
+      "color": "bg-rose-50 border-rose-200 hover:bg-rose-100",
+      "iconColor": "text-rose-600",
+      "mood": "Dominant & Bluesy"
+    },
+    {
+      "name": "Harmonic Minor",
+      "icon": "✨",
+      "href": "/lessons/theory/scales/harmonic-minor",
+      "description": "Minor scale with raised 7th. Exotic, classical sound.",
+      "formula": "W-H-W-W-H-W½-H",
+      "degrees": 7,
+      "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
+      "iconColor": "text-emerald-600",
+      "mood": "Exotic & Classical"
+    },
+    {
+      "name": "Phrygian Mode",
+      "icon": "🔱",
+      "href": "/lessons/theory/scales/phrygian",
+      "description": "Dark, exotic mode with Spanish/flamenco character. Minor with flat 2nd.",
+      "formula": "H-W-W-W-H-W-W",
+      "degrees": 7,
+      "color": "bg-red-50 border-red-200 hover:bg-red-100",
+      "iconColor": "text-red-600",
+      "mood": "Dark & Exotic"
+    },
+    {
+      "name": "Lydian Mode",
+      "icon": "💫",
+      "href": "/lessons/theory/scales/lydian",
+      "description": "Bright, dreamy mode with raised 4th. Ethereal, floating quality.",
+      "formula": "W-W-W-H-W-W-H",
+      "degrees": 7,
+      "color": "bg-sky-50 border-sky-200 hover:bg-sky-100",
+      "iconColor": "text-sky-600",
+      "mood": "Bright & Dreamy"
+    },
+    {
+      "name": "Locrian Mode",
+      "icon": "🌑",
+      "href": "/lessons/theory/scales/locrian",
+      "description": "The darkest mode with flat 2nd and flat 5th. Diminished, unstable quality.",
+      "formula": "H-W-W-H-W-W-W",
+      "degrees": 7,
+      "color": "bg-slate-50 border-slate-200 hover:bg-slate-100",
+      "iconColor": "text-slate-600",
+      "mood": "Dark & Unstable"
+    },
+    {
+      "name": "Melodic Minor",
+      "icon": "🎻",
+      "href": "/lessons/theory/scales/melodic-minor",
+      "description": "Jazz foundation scale. Minor with raised 6th and 7th ascending.",
+      "formula": "W-H-W-W-W-W-H",
+      "degrees": 7,
+      "color": "bg-violet-50 border-violet-200 hover:bg-violet-100",
+      "iconColor": "text-violet-600",
+      "mood": "Sophisticated & Jazzy"
+    },
+    {
+      "name": "Whole Tone",
+      "icon": "🌊",
+      "href": "/lessons/theory/scales/whole-tone",
+      "description": "Symmetric scale of all whole steps. Dreamy, impressionistic sound.",
+      "formula": "W-W-W-W-W-W",
+      "degrees": 6,
+      "color": "bg-cyan-50 border-cyan-200 hover:bg-cyan-100",
+      "iconColor": "text-cyan-600",
+      "mood": "Dreamy & Floating"
+    },
+    {
+      "name": "Chromatic",
+      "icon": "🎹",
+      "href": "/lessons/theory/scales/chromatic",
+      "description": "All 12 notes in half steps. Technical foundation for all other scales.",
+      "formula": "H-H-H-H-H-H-H-H-H-H-H-H",
+      "degrees": 12,
+      "color": "bg-gray-50 border-gray-200 hover:bg-gray-100",
+      "iconColor": "text-gray-600",
+      "mood": "Technical & Complete"
+    }
+  ],
+  "journeySection": {
+    "title": "Start Your Scale Journey",
+    "description": "Begin with the fundamental scales and gradually expand your knowledge. Understanding scales is essential for melody, improvisation, and musical expression.",
+    "links": [
+      {
+        "slug": "major-pentatonic",
+        "title": "Start with Pentatonic",
+        "description": "Begin with the most beginner-friendly scale - easy to learn and sounds great.",
+        "linkText": "Simple foundation",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "slug": "major",
+        "title": "Master Major Scale",
+        "description": "Learn the foundation of Western music theory and harmony.",
+        "linkText": "Build understanding",
+        "icon": "☀️",
+        "hoverBorder": "hover:border-yellow-300",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
+      },
+      {
+        "slug": "blues",
+        "title": "Explore Blues Scale",
+        "description": "Add blues flavor and emotional expression to your playing.",
+        "linkText": "Feel the blues",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-indigo-300",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  }
+}

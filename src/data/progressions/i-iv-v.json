@@ -1,0 +1,361 @@
+{
+  "slug": "i-iv-v",
+  "progressionInfo": {
+    "name": "I-IV-V Progression",
+    "pageTitle": "I-IV-V Progression",
+    "subtitle": "The most fundamental chord progression in Western music - a three-chord pattern that forms the backbone of countless songs across all genres.",
+    "heroGradient": "bg-gradient-to-r from-blue-500 to-purple-600",
+    "tags": [
+      "Tonic-Subdominant-Dominant",
+      "3 Chords",
+      "Strong Resolution",
+      "Universal Pattern"
+    ]
+  },
+  "theory": {
+    "propertiesTitle": "Harmonic Functions",
+    "properties": [
+      { "label": "I (Tonic)", "value": "Home base, stability, resolution" },
+      { "label": "IV (Subdominant)", "value": "Movement away from home, preparation" },
+      { "label": "V (Dominant)", "value": "Tension that demands resolution to I" },
+      { "label": "Pattern", "value": "Stability \u2192 Movement \u2192 Tension \u2192 Resolution" },
+      { "label": "Voice Leading", "value": "Strong bass movement by fourths and fifths" }
+    ],
+    "exampleTitle": "C Major Example",
+    "examples": [
+      { "label": "I", "value": "C Major (C-E-G)" },
+      { "label": "IV", "value": "F Major (F-A-C)" },
+      { "label": "V", "value": "G Major (G-B-D)" },
+      { "label": "Chord Progression", "value": "C - F - G - C" },
+      { "label": "Roman Numerals", "value": "I - IV - V - I" }
+    ],
+    "bulletColor": "text-blue-500"
+  },
+  "guitarApplications": {
+    "chordDiagrams": [
+      {
+        "title": "I-IV-V in C Major",
+        "description": "Open position chords:",
+        "chords": [
+          { "label": "I - C Major", "chord": "C_major", "subtitle": "Tonic - Home" },
+          { "label": "IV - F Major", "chord": "F_major", "subtitle": "Subdominant - Movement" },
+          { "label": "V - G Major", "chord": "G_major", "subtitle": "Dominant - Tension" }
+        ],
+        "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w C/5 F/4 G/5 C/5",
+        "practiceNotes": [
+          "Focus on smooth chord transitions",
+          "F major barre chord can be challenging",
+          "Practice with steady strumming rhythm",
+          "Listen for the resolution from G back to C"
+        ],
+        "colorBg": "bg-blue-50",
+        "colorBorder": "border-blue-200",
+        "colorTitle": "text-blue-800",
+        "colorText": "text-blue-700",
+        "colorDetail": "text-blue-600"
+      },
+      {
+        "title": "I-IV-V in G Major",
+        "description": "Alternative key with easier fingerings:",
+        "chords": [
+          { "label": "I - G Major", "chord": "G_major" },
+          { "label": "IV - C Major", "chord": "C_major" },
+          { "label": "V - D Major", "chord": "D_major" }
+        ],
+        "alphaTex": "tabstave notation=true key=G time=4/4\nnotes :w G/6 C/5 D/4 G/6",
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-800",
+        "colorText": "text-green-700",
+        "colorDetail": "text-green-600"
+      },
+      {
+        "title": "Common Strumming Pattern",
+        "description": "Down-Up pattern for I-IV-V:",
+        "chords": [],
+        "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :8d (3/5.3/4.2/3.1/2.0/1) :8u ## :8d ## :8u :8d ## :8u :8d ## :8u",
+        "practiceNotes": [
+          "D-D-U-D-U-D-U-D-U pattern"
+        ],
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-800",
+        "colorText": "text-purple-700",
+        "colorDetail": "text-purple-600"
+      }
+    ],
+    "advancedApplications": [
+      {
+        "title": "Common Variations",
+        "description": "Popular I-IV-V variations:",
+        "items": [
+          "I-IV-I-V (return to tonic before dominant)",
+          "I-IV-V-V (extended dominant tension)",
+          "I-I-IV-V (extended tonic opening)",
+          "I-IV-V-IV (plagal cadence ending)",
+          "I-IV-vi-V (deceptive resolution)"
+        ],
+        "colorBg": "bg-yellow-50",
+        "colorBorder": "border-yellow-200",
+        "colorTitle": "text-yellow-800",
+        "colorText": "text-yellow-600"
+      },
+      {
+        "title": "Chord Extensions",
+        "description": "Add sophistication with extensions:",
+        "items": [
+          "V7: Add seventh to dominant (G7 instead of G)",
+          "Vsus4: Suspended fourth creates tension",
+          "I6: Add sixth for color (C6 instead of C)",
+          "IVmaj7: Major seventh on subdominant",
+          "V/V: Secondary dominant (D7 to G)"
+        ],
+        "colorBg": "bg-orange-50",
+        "colorBorder": "border-orange-200",
+        "colorTitle": "text-orange-800",
+        "colorText": "text-orange-600"
+      },
+      {
+        "title": "Key Transposition",
+        "description": "I-IV-V in common guitar keys:",
+        "items": [
+          "A Major: A - D - E",
+          "D Major: D - G - A",
+          "E Major: E - A - B",
+          "F Major: F - Bb - C",
+          "Bb Major: Bb - Eb - F"
+        ],
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-800",
+        "colorText": "text-red-600"
+      }
+    ]
+  },
+  "musicalExamples": {
+    "left": {
+      "title": "Classic Rock & Blues",
+      "examples": [
+        {
+          "title": "\"Wild Thing\" - The Troggs",
+          "description": "Simple I-IV-V-V pattern in A major",
+          "detail": "A - D - E - E progression repeated"
+        },
+        {
+          "title": "\"Louie Louie\" - The Kingsmen",
+          "description": "I-IV-V-I in A major with rhythm emphasis",
+          "detail": "A - D - E - A with iconic strum pattern"
+        },
+        {
+          "title": "\"Twist and Shout\" - The Beatles",
+          "description": "Energetic I-IV-V in D major",
+          "detail": "D - G - A with powerful vocal melody"
+        }
+      ]
+    },
+    "right": {
+      "title": "Country & Folk Applications",
+      "examples": [
+        {
+          "title": "Country Standards",
+          "description": "Hank Williams, Johnny Cash classics",
+          "detail": "Foundation of traditional country music"
+        },
+        {
+          "title": "Folk Songs",
+          "description": "Bob Dylan, Neil Young compositions",
+          "detail": "Simple but effective harmonic foundation"
+        },
+        {
+          "title": "Blues Structure",
+          "description": "Foundation of 12-bar blues progression",
+          "detail": "I-I-I-I-IV-IV-I-I-V-IV-I-I pattern"
+        }
+      ]
+    }
+  },
+  "practiceCategories": [
+    {
+      "title": "Chord Changes",
+      "icon": "\ud83c\udfb8",
+      "items": [
+        "Practice I-IV-V-I slowly",
+        "Focus on clean transitions",
+        "Use metronome at 60 BPM",
+        "Gradually increase tempo",
+        "Work on finger positioning"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700"
+    },
+    {
+      "title": "Rhythm Practice",
+      "icon": "\ud83c\udfb5",
+      "items": [
+        "Practice different strum patterns",
+        "Try fingerpicking arpeggios",
+        "Work on dynamics (loud/soft)",
+        "Practice with backing tracks",
+        "Experiment with timing"
+      ],
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700"
+    },
+    {
+      "title": "Musical Application",
+      "icon": "\ud83c\udfad",
+      "items": [
+        "Learn complete songs",
+        "Practice in different keys",
+        "Try chord substitutions",
+        "Create original melodies",
+        "Jam with other musicians"
+      ],
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700"
+    }
+  ],
+  "notatedExercises": [
+    {
+      "title": "Exercise 1: Basic I-IV-V-I",
+      "description": "Practice the fundamental progression in C major:",
+      "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :w C/5 F/4 G/5 C/5",
+      "practiceNotes": [
+        "Hold each chord for 4 beats",
+        "Focus on clean chord changes",
+        "Listen for the harmonic resolution",
+        "Practice with a metronome"
+      ],
+      "colorBg": "bg-blue-50",
+      "colorBorder": "border-blue-200",
+      "colorTitle": "text-blue-800",
+      "colorText": "text-blue-700",
+      "colorDetail": "text-blue-600"
+    },
+    {
+      "title": "Exercise 2: Rhythmic Variation",
+      "description": "Practice with quarter note rhythmic patterns:",
+      "alphaTex": "tabstave notation=true key=C time=4/4\nnotes :q C/5 C/5 C/5 C/5 | :q F/4 F/4 F/4 F/4 | :q G/5 G/5 G/5 G/5 | :q C/5 C/5 C/5 C/5",
+      "colorBg": "bg-green-50",
+      "colorBorder": "border-green-200",
+      "colorTitle": "text-green-800",
+      "colorText": "text-green-700",
+      "colorDetail": "text-green-600"
+    },
+    {
+      "title": "Exercise 3: Key of G Major",
+      "description": "Practice I-IV-V-I in G major:",
+      "alphaTex": "tabstave notation=true key=G time=4/4\nnotes :w G/6 C/5 D/4 G/6",
+      "colorBg": "bg-purple-50",
+      "colorBorder": "border-purple-200",
+      "colorTitle": "text-purple-800",
+      "colorText": "text-purple-700",
+      "colorDetail": "text-purple-600"
+    }
+  ],
+  "scaleRelationships": {
+    "left": {
+      "title": "Diatonic Relationships",
+      "sections": [
+        {
+          "title": "Scale Degrees in C Major",
+          "items": [
+            "I (C): 1st degree - Tonic",
+            "IV (F): 4th degree - Subdominant",
+            "V (G): 5th degree - Dominant",
+            "Strong pull from V back to I",
+            "Perfect 5th intervals in bass line"
+          ]
+        },
+        {
+          "title": "Circle of Fifths Movement",
+          "items": [
+            "Bass moves: C \u2192 F (up 4th)",
+            "Bass moves: F \u2192 G (up 2nd)",
+            "Bass moves: G \u2192 C (up 4th)",
+            "Creates strong harmonic momentum"
+          ]
+        }
+      ]
+    },
+    "right": {
+      "title": "Voice Leading",
+      "sections": [
+        {
+          "title": "Common Tones",
+          "items": [
+            "C major (C-E-G) to F major (F-A-C)",
+            "C is common tone",
+            "F major (F-A-C) to G major (G-B-D)",
+            "No common tones - all voices move",
+            "G major (G-B-D) to C major (C-E-G)",
+            "G resolves to C (leading tone)"
+          ]
+        },
+        {
+          "title": "Smooth Voice Leading",
+          "items": [
+            "Keep common tones when possible",
+            "Move other voices by step",
+            "B (leading tone) resolves up to C",
+            "Creates smooth harmonic flow"
+          ]
+        }
+      ]
+    }
+  },
+  "journeySection": {
+    "title": "Continue Your Progressions Journey",
+    "description": "Now that you understand the I-IV-V progression, explore more sophisticated harmonic sequences and advanced progressions.",
+    "links": [
+      {
+        "slug": "ii-v-i",
+        "title": "ii-V-I Progression",
+        "description": "Master the cornerstone of jazz harmony with smooth voice leading.",
+        "linkText": "Learn jazz harmony",
+        "icon": "\ud83c\udfb7",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "slug": "i-v-vi-iv",
+        "title": "I-V-vi-IV Progression",
+        "description": "Discover the \"axis progression\" that powers countless pop hits.",
+        "linkText": "Explore pop harmony",
+        "icon": "\ud83c\udfb5",
+        "hoverBorder": "hover:border-pink-300",
+        "iconBg": "bg-pink-100",
+        "iconHoverBg": "group-hover:bg-pink-200",
+        "linkColor": "text-pink-600",
+        "linkHoverColor": "group-hover:text-pink-700"
+      },
+      {
+        "slug": "12-bar-blues",
+        "title": "12-Bar Blues",
+        "description": "Learn the foundational form that shaped modern music.",
+        "linkText": "Master the blues",
+        "icon": "\ud83c\udfb8",
+        "hoverBorder": "hover:border-blue-300",
+        "iconBg": "bg-blue-100",
+        "iconHoverBg": "group-hover:bg-blue-200",
+        "linkColor": "text-blue-600",
+        "linkHoverColor": "group-hover:text-blue-700"
+      }
+    ]
+  },
+  "navigation": {
+    "next": {
+      "href": "/lessons/theory/progressions/ii-v-i",
+      "label": "Next: ii-V-I Progression"
+    }
+  }
+}

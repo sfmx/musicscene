@@ -38,7 +38,12 @@
     },
     "chordProgressions": {
       "mainProgression": {
-        "chords": ["Db", "Ab", "Bb", "Gb"],
+        "chords": [
+          "Db",
+          "Ab",
+          "Bb",
+          "Gb"
+        ],
         "progression": "I - V - vi - IV",
         "description": "Classic pop progression adapted for rock with arpeggiated single-note approach"
       },
@@ -71,7 +76,11 @@
       "difficulty": "Advanced",
       "primaryTechnique": true,
       "details": {
-        "chords": ["D", "C", "G"],
+        "chords": [
+          "D",
+          "C",
+          "G"
+        ],
         "progression": "D - C - G - D",
         "notes": [
           "D: X-X-0-2-3-2 (Open D chord)",
@@ -94,7 +103,12 @@
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
-        "chords": ["G5", "D5", "Em", "C"],
+        "chords": [
+          "G5",
+          "D5",
+          "Em",
+          "C"
+        ],
         "progression": "G - D - Em - C - G - D - C - D",
         "notes": [
           "G5: 3-X-0-0-X-X (Open G + 3rd fret low E string)",
@@ -140,14 +154,19 @@
       "technique": "Arpeggiated Single-Note Patterns",
       "key": "Db Major",
       "description": "Iconic arpeggiated intro riff outlining Db-Cb-Gb chord progression in Eb tuning",
-      "chords": ["Db", "Cb", "Gb"],
+      "chords": [
+        "Db",
+        "Cb",
+        "Gb"
+      ],
       "progression": "Db - Cb - Gb - Db",
-      "alphaTab": "14.1 12.1 14.1 12.1 15.1 12.1 14.1 12.1 | 15.2 12.2 15.2 12.2 15.2 12.2 15.2 12.2",
       "notes": [
         "Single notes played at 12th-15th frets on high E and B strings",
         "Creates harmonic outline of chord progression",
         "Requires precise alternate picking and timing"
-      ]
+      ],
+      "alphaTab": "9.6 11.6 12.6 14.6 | 9.5 11.5 12.5 14.5 | 9.4 11.4 12.4 14.4 | 9.3 11.3 9.2 12.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
     },
     {
       "name": "Verse 1",
@@ -155,13 +174,19 @@
       "technique": "Arpeggiated Single-Note Patterns",
       "key": "D Major",
       "description": "Continues arpeggiated pattern under vocals with subtle variations",
-      "chords": ["D", "C", "G"],
+      "chords": [
+        "D",
+        "C",
+        "G"
+      ],
       "progression": "D - C - G - D",
       "notes": [
         "Maintains intro pattern with slight melodic variations",
         "Supports vocal melody without overwhelming",
         "Clean tone with light reverb"
-      ]
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
     },
     {
       "name": "Chorus",
@@ -169,14 +194,20 @@
       "technique": "Power Chord Transitions",
       "key": "D Major",
       "description": "Dynamic shift to power chords and open chord strumming",
-      "chords": ["G", "D", "Em", "C"],
+      "chords": [
+        "G",
+        "D",
+        "Em",
+        "C"
+      ],
       "progression": "G - D - Em - C - G - D - C - D",
-      "alphaTab": "(3.6 0.5 0.4 0.3 2.2 3.1).1 | (2.4 3.3 2.2 0.1).1 | (0.6 2.5 2.4 0.3 0.2 0.1).1 | (0.5 1.4 0.3 2.2 1.1).1",
       "notes": [
         "Full power chord and open chord strumming",
         "Increased dynamics and energy",
         "Classic rock chord progression"
-      ]
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     },
     {
       "name": "Guitar Solo",
@@ -184,13 +215,20 @@
       "technique": "Lead Guitar Techniques",
       "key": "D Major",
       "description": "Extended guitar solo featuring advanced lead techniques",
-      "chords": ["G", "D", "Em", "C"],
+      "chords": [
+        "G",
+        "D",
+        "Em",
+        "C"
+      ],
       "progression": "G - D - Em - C (repeating)",
       "notes": [
         "Uses D major and D major pentatonic scales",
         "Features signature Slash-style bending and vibrato",
         "High register melodic phrases with emotional expression"
-      ]
+      ],
+      "alphaTab": "10.6 12.6 9.5 12.5 9.4 12.4 | 9.3 11.3 10.2 12.2 10.1 12.1 | 12.1 10.1 12.2 10.2 11.3 9.3 | 12.4 9.4 12.5 9.5 12.6 10.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
     },
     {
       "name": "Outro",
@@ -198,24 +236,39 @@
       "technique": "Power Chord Transitions",
       "key": "D Major",
       "description": "Final chorus repetition with gradual fade",
-      "chords": ["G", "D", "Em", "C"],
+      "chords": [
+        "G",
+        "D",
+        "Em",
+        "C"
+      ],
       "progression": "G - D - Em - C - G - D - C - D",
       "notes": [
         "Maintains full arrangement energy",
         "Vocal ad-libs over chord progression",
         "Fade-out ending"
-      ]
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
     }
   ],
   "equipment": {
     "guitar": {
       "recommended": "Gibson Les Paul Standard",
-      "alternatives": ["Epiphone Les Paul", "Gibson SG", "PRS SE"],
+      "alternatives": [
+        "Epiphone Les Paul",
+        "Gibson SG",
+        "PRS SE"
+      ],
       "pickup": "Humbucker pickups, bridge position for lead, neck for rhythm"
     },
     "amp": {
       "recommended": "Marshall JCM800 100W",
-      "alternatives": ["Marshall DSL40C", "Orange OR15", "Mesa Boogie Express"],
+      "alternatives": [
+        "Marshall DSL40C",
+        "Orange OR15",
+        "Mesa Boogie Express"
+      ],
       "settings": {
         "gain": "7-8/10 (high gain for sustain)",
         "treble": "7/10",
@@ -326,5 +379,18 @@
       "Marty Schwartz intro riff breakdown",
       "Steve Stine lead guitar techniques"
     ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2024-01-01",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "power-chords",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-6 months"
   }
 }

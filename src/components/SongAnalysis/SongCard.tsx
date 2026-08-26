@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { SongListItem } from '@/lib/songData';
+import { getDifficultyColor } from '@/utils/theme';
 
 interface SongCardProps {
   song: SongListItem;
@@ -10,21 +11,11 @@ interface SongCardProps {
   showMetadata?: boolean;
 }
 
-export default function SongCard({ 
-  song, 
-  variant = 'default', 
-  showMetadata = true 
+export default function SongCard({
+  song,
+  variant = 'default',
+  showMetadata = true
 }: SongCardProps) {
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty.toLowerCase()) {
-      case 'beginner': return 'bg-green-100 text-green-800 border-green-200';
-      case 'intermediate': return 'bg-orange-100 text-orange-800 border-orange-200';
-      case 'advanced': return 'bg-red-100 text-red-800 border-red-200';
-      case 'expert': return 'bg-purple-100 text-purple-800 border-purple-200';
-      default: return 'bg-gray-100 text-gray-800 border-gray-200';
-    }
-  };
-
   const getLearningValueColor = (value?: string) => {
     switch (value?.toLowerCase()) {
       case 'high': return 'bg-emerald-100 text-emerald-800 border-emerald-200';

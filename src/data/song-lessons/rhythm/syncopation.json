@@ -1,0 +1,372 @@
+{
+  "slug": "syncopation",
+  "category": "rhythm",
+  "pageTitle": "Syncopation & Off-beats",
+  "subtitle": "Master the art of syncopation to create rhythmic interest, tension, and groove in your guitar playing.",
+  "heroGradient": "bg-gradient-to-r from-indigo-50 to-purple-50",
+  "backLink": { "href": "/lessons/songs/rhythm", "label": "Back to Rhythm & Strumming" },
+  "introduction": {
+    "title": "The Magic of Syncopation",
+    "text": "Syncopation creates forward motion and rhythmic tension by placing emphasis on unexpected beats, making music more engaging and dynamic.",
+    "columns": [
+      {
+        "title": "Rhythmic Interest",
+        "text": "Syncopation creates forward motion and rhythmic tension by placing emphasis on unexpected beats, making music more engaging and dynamic."
+      },
+      {
+        "title": "Genre Foundation",
+        "text": "Syncopation is fundamental to many genres including reggae, funk, jazz, and Latin music, each with distinct syncopated characteristics."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Essential Syncopation Patterns",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Off-Beat Emphasis",
+          "description": "Emphasizing the weak beats (2 and 4)",
+          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "- D - D - D - D" },
+            { "label": "Musical Feel", "value": "Creates forward motion and rhythmic interest" },
+            { "label": "Theory", "value": "Displacement of accent from strong to weak beats" }
+          ],
+          "items": ["I Want to Hold Your Hand - Beatles", "Happy - Pharrell Williams", "Count on Me - Bruno Mars"]
+        },
+        {
+          "title": "Anticipated Downbeat",
+          "description": "Playing slightly ahead of the downbeat",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "D - D U D - D U" },
+            { "label": "Musical Feel", "value": "Creates urgency and forward momentum" },
+            { "label": "Theory", "value": "Rhythmic anticipation, common in pop and R&B" }
+          ],
+          "items": ["Brown Eyed Girl - Van Morrison", "Mustang Sally - Wilson Pickett", "Sweet Caroline - Neil Diamond"]
+        },
+        {
+          "title": "Reggae Skank",
+          "description": "All upstrokes on off-beats",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "- U - U - U - U" },
+            { "label": "Musical Feel", "value": "Laid-back, relaxed groove characteristic of reggae" },
+            { "label": "Theory", "value": "Complete rhythmic displacement, defining reggae feel" }
+          ],
+          "items": ["No Woman No Cry - Bob Marley", "One Love - Bob Marley", "Three Little Birds - Bob Marley"]
+        },
+        {
+          "title": "Funk Syncopation",
+          "description": "Complex mix of on and off-beat emphasis",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "D - D U - D - U" },
+            { "label": "Musical Feel", "value": "Tight, groove-based rhythm with percussive elements" },
+            { "label": "Theory", "value": "Advanced syncopation with ghost notes and accents" }
+          ],
+          "items": ["Superstition - Stevie Wonder", "Get Up - James Brown", "Give It Away - RHCP"]
+        },
+        {
+          "title": "Latin Syncopation",
+          "description": "Clave-based rhythmic patterns",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "D - D U D U - U" },
+            { "label": "Musical Feel", "value": "Complex polyrhythmic feel characteristic of Latin music" },
+            { "label": "Theory", "value": "Based on 3-2 or 2-3 clave rhythmic foundation" }
+          ],
+          "items": ["Smooth - Santana", "La Bamba - Ritchie Valens", "Oye Como Va - Santana"]
+        },
+        {
+          "title": "Jazz Comping",
+          "description": "Improvised syncopated accompaniment",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "Variable syncopated" },
+            { "label": "Musical Feel", "value": "Swing feel with sophisticated harmonic support" },
+            { "label": "Theory", "value": "Jazz harmony with swing rhythm and chord extensions" }
+          ],
+          "items": ["Autumn Leaves", "All of Me", "Fly Me to the Moon"]
+        },
+        {
+          "title": "Hip-Hop Influenced",
+          "description": "Modern syncopation from hip-hop production",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Pattern", "value": "D - - U D - - U" },
+            { "label": "Musical Feel", "value": "Contemporary feel with strong rhythmic gaps" },
+            { "label": "Theory", "value": "Modern pop syncopation influenced by electronic music" }
+          ],
+          "items": ["Closer - Chainsmokers", "Shape of You - Ed Sheeran", "Blinding Lights - The Weeknd"]
+        },
+        {
+          "title": "Polyrhythmic Syncopation",
+          "description": "Multiple conflicting rhythmic patterns",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Musical Feel", "value": "Complex, layered rhythmic texture" },
+            { "label": "Theory", "value": "Multiple time signatures or rhythmic layers simultaneously" }
+          ],
+          "items": ["Tool songs", "King Crimson", "Progressive rock compositions"]
+        }
+      ]
+    },
+    {
+      "title": "Understanding Syncopation",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Rhythmic Tension",
+          "icon": "⚡",
+          "description": "How syncopation creates musical tension and release",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Displacement of expected accents creates tension that resolves" },
+            { "label": "Application", "value": "Builds energy and maintains listener interest" },
+            { "label": "Development", "value": "Practice feeling the underlying pulse while playing off-beats" }
+          ]
+        },
+        {
+          "title": "Groove Pocket",
+          "icon": "🎯",
+          "description": "Finding the perfect rhythmic placement",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Slight variations in timing create different feels and grooves" },
+            { "label": "Application", "value": "Essential for playing with rhythm sections and backing tracks" },
+            { "label": "Development", "value": "Practice with metronome and backing tracks to develop pocket" }
+          ]
+        },
+        {
+          "title": "Cultural Context",
+          "icon": "🌍",
+          "description": "How different cultures approach syncopation",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Each musical culture has distinct syncopated patterns and feels" },
+            { "label": "Application", "value": "Understanding cultural context enhances authentic performance" },
+            { "label": "Development", "value": "Study traditional music from various cultures and genres" }
+          ]
+        },
+        {
+          "title": "Harmonic Support",
+          "icon": "🎼",
+          "description": "How syncopated rhythm supports harmonic progression",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Theory", "value": "Rhythmic placement can emphasize or de-emphasize harmonic changes" },
+            { "label": "Application", "value": "Creates sophisticated accompaniment and arrangement support" },
+            { "label": "Development", "value": "Practice syncopated patterns over various chord progressions" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Genre-Specific Syncopation",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Reggae",
+          "description": "Emphasis on beats 2 and 4 with upstrokes",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Practice Focus", "value": "Focus on relaxed upstrokes and consistent off-beat timing" }
+          ],
+          "items": ["Skank rhythm", "Off-beat emphasis", "Laid-back feel"]
+        },
+        {
+          "title": "Funk",
+          "description": "Tight, percussive syncopation with ghost notes",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Practice Focus", "value": "Develop tight timing and percussive attack" }
+          ],
+          "items": ["Sixteenth note feel", "Ghost notes", "Rhythmic precision"]
+        },
+        {
+          "title": "Latin",
+          "description": "Clave-based rhythmic patterns",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Practice Focus", "value": "Learn basic clave patterns and apply to guitar" }
+          ],
+          "items": ["3-2 or 2-3 clave", "Polyrhythmic layers", "Complex syncopation"]
+        },
+        {
+          "title": "Jazz",
+          "description": "Swing feel with sophisticated harmony",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Practice Focus", "value": "Develop swing feel and chord-melody techniques" }
+          ],
+          "items": ["Swing eighth notes", "Chord extensions", "Improvisational"]
+        },
+        {
+          "title": "Hip-Hop/R&B",
+          "description": "Modern syncopation with strong grooves",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Practice Focus", "value": "Focus on groove and rhythmic space" }
+          ],
+          "items": ["Strong pocket", "Space and silence", "Electronic influence"]
+        }
+      ]
+    },
+    {
+      "title": "Progressive Practice Plan",
+      "bgColor": "bg-white",
+      "borderColor": "border-gray-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Metronome Off-Beats",
+          "description": "Practice playing on beats 2 and 4 with metronome",
+          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Set metronome to click on 2 and 4, strum on clicks" },
+            { "label": "Focus", "value": "Feeling off-beat timing naturally" },
+            { "label": "Progression", "value": "Add chord changes, increase tempo" }
+          ]
+        },
+        {
+          "title": "Anticipated Strums",
+          "description": "Practice playing slightly ahead of the beat",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Strum just before beat 1 and 3" },
+            { "label": "Focus", "value": "Controlled anticipation, maintaining steady tempo" },
+            { "label": "Progression", "value": "Apply to songs, vary anticipation amount" }
+          ]
+        },
+        {
+          "title": "Genre Pattern Study",
+          "description": "Learn characteristic patterns from different genres",
+          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Practice reggae, funk, Latin patterns separately" },
+            { "label": "Focus", "value": "Authentic feel for each genre" },
+            { "label": "Progression", "value": "Combine elements, create variations" }
+          ]
+        },
+        {
+          "title": "Song Application",
+          "description": "Apply syncopation to complete songs",
+          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "fields": [
+            { "label": "Exercise", "value": "Take simple songs and add syncopated elements" },
+            { "label": "Focus", "value": "Musical application, arrangement skills" },
+            { "label": "Progression", "value": "Original compositions, complex arrangements" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Developing Syncopated Feel",
+      "bgColor": "bg-gradient-to-r from-amber-50 to-orange-50",
+      "borderColor": "border-gray-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Internal Pulse",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": [
+            "Feel the underlying beat even when playing off-beats",
+            "Practice counting aloud while playing syncopated patterns",
+            "Use body movement to internalize the groove",
+            "Start slow and gradually increase tempo"
+          ]
+        },
+        {
+          "title": "Musical Application",
+          "borderColor": "border-gray-200",
+          "bgColor": "bg-white",
+          "items": [
+            "Listen to how different artists use syncopation",
+            "Practice with backing tracks and drum loops",
+            "Experiment with slight timing variations",
+            "Record yourself to hear timing accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Progressive Song Study",
+      "bgColor": "bg-purple-50",
+      "borderColor": "border-purple-200",
+      "layout": "numbered-steps",
+      "cards": [
+        {
+          "title": "\"I Want to Hold Your Hand\" - Basic Off-Beat",
+          "description": "Learn to emphasize beats 2 and 4 with simple strumming",
+          "number": 1,
+          "badge": { "text": "1", "color": "bg-green-100 text-green-800" }
+        },
+        {
+          "title": "\"Brown Eyed Girl\" - Anticipated Downbeats",
+          "description": "Practice playing slightly ahead of the beat for forward motion",
+          "number": 2,
+          "badge": { "text": "2", "color": "bg-yellow-100 text-yellow-800" }
+        },
+        {
+          "title": "\"No Woman No Cry\" - Reggae Skank",
+          "description": "Master the classic reggae off-beat upstroke pattern",
+          "number": 3,
+          "badge": { "text": "3", "color": "bg-orange-100 text-orange-800" }
+        },
+        {
+          "title": "\"Superstition\" - Funk Syncopation",
+          "description": "Develop complex syncopated patterns with percussive elements",
+          "number": 4,
+          "badge": { "text": "4", "color": "bg-red-100 text-red-800" }
+        }
+      ]
+    }
+  ],
+  "relatedTopics": [
+    { "title": "Palm Muting", "href": "/lessons/songs/rhythm/palm-muting", "description": "Master palm muting techniques for dynamic control." },
+    { "title": "Shuffle & Swing", "href": "/lessons/songs/rhythm/shuffle", "description": "Explore shuffle and swing rhythm patterns." },
+    { "title": "Rhythm Guitar Overview", "href": "/lessons/songs/rhythm", "description": "Return to the main Rhythm & Strumming page." }
+  ]
+}

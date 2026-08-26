@@ -1,0 +1,188 @@
+{
+  "slug": "recording-interfaces",
+  "category": "recording",
+  "pageTitle": "Audio Interfaces",
+  "subtitle": "The bridge between analog and digital worlds. Audio interfaces convert your instrument and microphone signals into digital audio your computer can record and process.",
+  "heroGradient": "bg-gradient-to-r from-blue-50 to-indigo-50",
+  "backLink": {
+    "href": "/lessons/gear/recording",
+    "label": "Back to Recording Gear"
+  },
+  "introduction": {
+    "title": "What is an Audio Interface?",
+    "text": "An audio interface is a hardware device that connects your instruments, microphones, and studio monitors to your computer. It handles analog-to-digital conversion (ADC) for recording and digital-to-analog conversion (DAC) for playback.",
+    "columns": [
+      {
+        "title": "Key Functions",
+        "text": "Convert analog signals to digital (ADC). Convert digital signals to analog (DAC). Provide phantom power for condensers. Offer low-latency monitoring. Supply multiple inputs/outputs. Improve audio quality over built-in cards."
+      },
+      {
+        "title": "Why You Need One",
+        "text": "Better sound quality than computer audio. Professional XLR and TRS connections. Multiple simultaneous recordings. Direct monitoring without delay. Dedicated preamps for microphones. Proper impedance matching."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Key Specifications to Consider",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Technical Specs",
+          "bgColor": "bg-green-50",
+          "fields": [
+            { "label": "44.1/48 kHz", "value": "Standard quality (CD/broadcast)" },
+            { "label": "96/192 kHz", "value": "High resolution recording" },
+            { "label": "24-bit", "value": "Professional dynamic range" },
+            { "label": "32-bit float", "value": "Maximum headroom" },
+            { "label": "Latency", "value": "Round-trip under 10ms ideal for real-time monitoring" }
+          ]
+        },
+        {
+          "title": "Physical Features",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "XLR", "value": "Microphone inputs with phantom power" },
+            { "label": "TRS/TS", "value": "Line and instrument inputs" },
+            { "label": "Combo jacks", "value": "XLR/TRS combination" },
+            { "label": "USB", "value": "Most common, plug-and-play" },
+            { "label": "Thunderbolt", "value": "Faster, more channels" },
+            { "label": "PCIe", "value": "Internal cards for desktops" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Audio Interfaces",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "2-Channel (Beginner)",
+          "items": [
+            "1-2 mic/line inputs",
+            "Direct monitoring",
+            "Headphone output",
+            "USB bus powered",
+            "$50-200 range"
+          ]
+        },
+        {
+          "title": "4-8 Channel (Home Studio)",
+          "items": [
+            "Multiple combo inputs",
+            "MIDI I/O",
+            "Monitor mixing",
+            "External power supply",
+            "$200-800 range"
+          ]
+        },
+        {
+          "title": "Multi-Channel (Professional)",
+          "items": [
+            "8+ simultaneous inputs",
+            "Advanced routing",
+            "DSP processing",
+            "Expandable systems",
+            "$800+ range"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Thunderbolt & PCIe Interfaces",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Thunderbolt Advantages",
+          "items": [
+            "Ultra-low latency performance",
+            "High channel counts (32+ I/O)",
+            "Stable, professional connection",
+            "Chain multiple devices",
+            "Best for demanding productions"
+          ]
+        },
+        {
+          "title": "PCIe Cards",
+          "items": [
+            "Internal desktop installation",
+            "Maximum performance and stability",
+            "Professional studio standard",
+            "Dedicated DSP processing",
+            "Requires compatible computer"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Popular Audio Interfaces",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Beginner Favorites",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Focusrite Scarlett Solo/2i2", "value": "Industry standard for home recording beginners" },
+            { "label": "PreSonus AudioBox USB 96", "value": "Reliable and affordable 2x2 interface" },
+            { "label": "Behringer U-Phoria UM2", "value": "Ultra-budget option for getting started" }
+          ]
+        },
+        {
+          "title": "Professional Choice",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Universal Audio Apollo", "value": "Premium preamps with onboard UAD processing" },
+            { "label": "RME Babyface Pro FS", "value": "Exceptional drivers and build quality" },
+            { "label": "Zoom PodTrak P4/P8", "value": "Specialized for podcasting and content creation" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setup & Usage Tips",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Driver Optimization",
+          "items": [
+            "Install latest drivers from manufacturer",
+            "Use ASIO drivers on Windows for low latency",
+            "Adjust buffer size for your needs",
+            "Close unnecessary programs while recording",
+            "Use dedicated USB ports (avoid hubs)"
+          ]
+        },
+        {
+          "title": "Level Setting",
+          "items": [
+            "Set input gain for optimal signal level",
+            "Avoid clipping (red lights/meters)",
+            "Use phantom power for condenser mics",
+            "Monitor with headphones during recording",
+            "Check direct monitoring vs. software monitoring"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Common Issues",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "High Latency",
+          "description": "Lower buffer size in DAW settings, use ASIO drivers, close background apps, upgrade to faster interface."
+        },
+        {
+          "title": "No Signal/Crackling Audio",
+          "description": "Check connections, update drivers, try different USB port, adjust sample rate, check phantom power settings."
+        },
+        {
+          "title": "Interface Not Recognized",
+          "description": "Install manufacturer drivers, try different cable/port, check device manager, restart computer and interface."
+        }
+      ]
+    }
+  ],
+  "relatedTopics": []
+}

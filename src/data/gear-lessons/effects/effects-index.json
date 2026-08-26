@@ -1,0 +1,171 @@
+{
+  "pageTitle": "Guitar Effects & Pedals",
+  "subtitle": "Master the art of sonic sculpting - from classic overdrive to ambient reverb",
+  "heroGradient": "bg-gradient-to-r from-purple-100 to-pink-100",
+  "heroInfo": {
+    "title": "Effects: Shape Your Sound",
+    "text": "Discover the magical world of guitar effects, from subtle enhancement to complete sonic transformation.",
+    "items": [
+      "How each effect type shapes and colors your guitar tone",
+      "Proper signal chain order for optimal sound",
+      "Famous effects used by legendary guitarists",
+      "Building your first pedalboard and advanced setups",
+      "Digital vs. analog effects and their characteristics"
+    ]
+  },
+  "types": [
+    {
+      "name": "Overdrive",
+      "icon": "🔥",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Adds warmth and grit. Essential for rock and blues.",
+      "category": "Distortion"
+    },
+    {
+      "name": "Distortion",
+      "icon": "⚡",
+      "href": "/lessons/gear/effects/distortion",
+      "description": "Heavier, more aggressive sound. Used in metal and hard rock.",
+      "category": "Distortion"
+    },
+    {
+      "name": "Fuzz",
+      "icon": "🌪️",
+      "href": "/lessons/gear/effects/fuzz",
+      "description": "Vintage, buzzy tone. Iconic in psychedelic and classic rock.",
+      "category": "Distortion"
+    },
+    {
+      "name": "Chorus",
+      "icon": "🌊",
+      "href": "/lessons/gear/effects/chorus",
+      "description": "Thickens your sound with shimmering modulation.",
+      "category": "Modulation"
+    },
+    {
+      "name": "Delay",
+      "icon": "⏱️",
+      "href": "/lessons/gear/effects/delay",
+      "description": "Echoes your notes for rhythmic or ambient effects.",
+      "category": "Time-Based"
+    },
+    {
+      "name": "Reverb",
+      "icon": "🏛️",
+      "href": "/lessons/gear/effects/reverb",
+      "description": "Adds space and depth. Simulates rooms and halls.",
+      "category": "Time-Based"
+    },
+    {
+      "name": "Wah",
+      "icon": "👄",
+      "href": "/lessons/gear/effects/wah",
+      "description": "Expressive filter sweep. Famous in funk and rock.",
+      "category": "Filter"
+    },
+    {
+      "name": "Compressor",
+      "icon": "📏",
+      "href": "/lessons/gear/effects/compressor",
+      "description": "Evens out your dynamics for a polished sound.",
+      "category": "Dynamics"
+    },
+    {
+      "name": "Tremolo",
+      "icon": "🌗",
+      "href": "/lessons/gear/effects/tremolo",
+      "description": "Creates rhythmic volume swells.",
+      "category": "Modulation"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Understanding Guitar Effects",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Effects Work",
+          "bgColor": "bg-blue-50",
+          "description": "Effects pedals process your guitar signal in various ways - from simple EQ adjustments to complex digital algorithms that completely transform your sound.",
+          "items": [
+            "Input: Receives your guitar signal",
+            "Processing: Alters the signal electronically",
+            "Output: Sends modified signal to amp"
+          ]
+        },
+        {
+          "title": "Signal Chain Order",
+          "bgColor": "bg-green-50",
+          "description": "The order of effects in your signal chain dramatically affects your tone. Here's the traditional order for optimal results.",
+          "items": [
+            "1. Dynamics: Compressor, Gate",
+            "2. Distortion: Overdrive, Fuzz",
+            "3. Modulation: Chorus, Tremolo",
+            "4. Time: Delay, Reverb"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Building Your Pedalboard",
+      "subtitle": "🎯 Essential Effects for Beginners",
+      "bgColor": "bg-yellow-50",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Starter Board (3-4 pedals)",
+          "items": [
+            "Overdrive/Distortion",
+            "Delay",
+            "Reverb",
+            "Optional: Chorus"
+          ]
+        },
+        {
+          "title": "Intermediate Board (5-7 pedals)",
+          "items": [
+            "Compressor",
+            "Two drive pedals",
+            "Modulation effects",
+            "Delay and Reverb"
+          ]
+        },
+        {
+          "title": "Advanced Board (8+ pedals)",
+          "items": [
+            "Multiple drive stages",
+            "Specialized effects",
+            "Loopers and switchers",
+            "Expression pedals"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Effects Users",
+      "subtitle": "Icons and Their Signature Sounds",
+      "bgColor": "bg-purple-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Distortion Masters",
+          "items": [
+            "Jimi Hendrix: Fuzz Face, Uni-Vibe",
+            "Tony Iommi: Heavy distortion, wah",
+            "Kurt Cobain: Big Muff, chorus",
+            "Jack White: Vintage fuzz, octave"
+          ]
+        },
+        {
+          "title": "Ambient Pioneers",
+          "items": [
+            "David Gilmour: Delay, reverb, chorus",
+            "The Edge: Dotted eighth delays",
+            "Kevin Shields: Reverse reverb, tremolo",
+            "Jonny Greenwood: Pitch shifting, loops"
+          ]
+        }
+      ]
+    }
+  ]
+}

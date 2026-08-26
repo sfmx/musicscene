@@ -1,0 +1,408 @@
+{
+  "songInfo": {
+    "title": "Norwegian Wood (This Bird Has Flown)",
+    "artist": "The Beatles",
+    "album": "Rubber Soul",
+    "released": "1965",
+    "genre": "Folk Rock",
+    "tempo": "184 BPM",
+    "duration": "2:05",
+    "key": "E Major (Mixolydian flavor)",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E Mixolydian",
+      "scalesUsed": [
+        {
+          "scale": "E Mixolydian mode",
+          "notes": "E - F# - G# - A - B - C# - D - E",
+          "application": "Primary tonal framework; the D natural (flat 7th) instead of D# defines the Mixolydian sound heard throughout the song"
+        },
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Used in melodic moments where D# appears, creating tension against the prevailing Mixolydian tonality"
+        }
+      ],
+      "modalCharacter": "Mixolydian",
+      "keySignature": "4 sharps (E major), but the consistent use of D natural gives the Mixolydian modal flavor",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "I - ♭VII - IV - I",
+        "description": "The main verse progression features the D major chord (♭VII) which contains the D natural note, creating the Mixolydian sound. The D chord played over the droning E bass note produces the modal character."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse (A Section)",
+          "progression": "E - D - E - E",
+          "romanNumerals": "I - ♭VII - I - I",
+          "description": "Waltz-time verse with the E to D movement creating the signature Mixolydian drift; the drone on E provides modal stability"
+        },
+        {
+          "section": "Middle Eight (B Section)",
+          "progression": "Em - A - Em - Em",
+          "romanNumerals": "i - IV - i - i",
+          "description": "Shifts to E minor for the contrasting middle section, creating a darker mood that reflects the lyrical shift; the A chord provides brief harmonic relief"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Tonic chord and drone center; provides the modal foundation for the entire song",
+        "D (♭VII) - The flat seventh chord borrowed from E Mixolydian; its D natural note is the defining color tone",
+        "A (IV) - Subdominant that appears in the middle eight, providing conventional harmonic motion",
+        "Em (i) - Minor tonic used in the B section to create emotional contrast with the major verse",
+        "The E pedal tone maintained through the verses keeps the music firmly rooted while the D chord floats above"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Waltz-Time Acoustic Strumming",
+      "description": "A 3/4 time strumming pattern that gives the song its characteristic swaying, waltz-like feel. The pattern emphasizes beat 1 with a bass note followed by lighter strums on beats 2 and 3.",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Time signature is 3/4 (waltz time) - three beats per measure",
+          "E chord: 0-2-2-1-0-0 (standard open E major)",
+          "D chord: X-X-0-2-3-2 (standard open D major)",
+          "Em chord: 0-2-2-0-0-0 (standard open E minor)",
+          "A chord: X-0-2-2-2-0 (standard open A major)",
+          "Emphasize the bass note on beat 1 of each measure",
+          "Lighter strums on beats 2 and 3 for the waltz feel"
+        ],
+        "sequence": [
+          "Beat 1: Strong downstroke hitting bass strings first",
+          "Beat 2: Light downstroke across treble strings",
+          "Beat 3: Light upstroke or downstroke on treble strings",
+          "Maintain steady 3/4 pulse throughout"
+        ],
+        "tips": [
+          "Count the iconic vocal hook throughout to maintain the waltz feel",
+          "Keep the strumming hand moving in a circular motion for fluidity",
+          "The song feels deceptively fast at 184 BPM but is actually a gentle waltz",
+          "Practice with a metronome set to 3/4 time"
+        ],
+        "chords": [
+          "E",
+          "D",
+          "Em",
+          "A"
+        ],
+        "progression": "E - D - E (Verse in 3/4 waltz time)"
+      }
+    },
+    {
+      "name": "Mixolydian Modal Harmony",
+      "description": "Understanding and applying the ♭VII chord (D major in key of E) to create the distinctive Mixolydian modal sound that gives this song its folk-influenced, slightly exotic quality",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The D chord introduces D natural, creating Mixolydian mode over E",
+          "In standard E major, the VII chord would be D# diminished",
+          "Using D major instead creates a modal sound common in folk and Indian music",
+          "The sitar part reinforces this modal, drone-based approach",
+          "This same ♭VII technique appears in many Beatles songs"
+        ],
+        "sequence": [
+          "Play an open E chord and let it ring",
+          "Move to D major while keeping the E bass note ringing if possible",
+          "Notice how the D natural in the D chord clashes beautifully with the key of E",
+          "Return to E - the movement creates a floating, unresolved quality"
+        ],
+        "tips": [
+          "Try keeping the low E string droning while playing the D chord",
+          "Listen for the D natural note - it is the soul of the Mixolydian sound",
+          "Compare with playing E to D# diminished to hear the difference modes make",
+          "This technique appears in many folk, rock, and world music traditions"
+        ],
+        "chords": [
+          "E",
+          "D"
+        ],
+        "progression": "I - ♭VII in E Mixolydian"
+      }
+    },
+    {
+      "name": "Simple Melodic Fingerpicking",
+      "description": "Basic fingerpicking patterns used in the sitar-inspired melodic line and acoustic guitar accompaniment, suitable for beginners learning to move beyond strumming",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The melody can be played as a simple single-note line on guitar",
+          "Based on the E Mixolydian scale in open position",
+          "Uses primarily the top three strings (G, B, high E)",
+          "The sitar melody can be approximated with bends and slides on guitar",
+          "Keep a steady bass note on the low E string as a drone"
+        ],
+        "sequence": [
+          "Thumb maintains a steady bass note on the low E string",
+          "Index, middle, and ring fingers play the melody on higher strings",
+          "Alternate between bass drone and melody notes",
+          "Keep the pattern steady and even in 3/4 time"
+        ],
+        "tips": [
+          "Start by just playing the bass drone with your thumb in 3/4 time",
+          "Add one melody note at a time over the drone",
+          "The melody is simple - focus on clean, even note production",
+          "Use the open E string as a constant drone anchor"
+        ],
+        "chords": [],
+        "progression": "Over E drone bass"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse (A Section)",
+      "timeStamp": "0:00-0:28",
+      "technique": "Waltz-Time Acoustic Strumming",
+      "key": "E Mixolydian",
+      "description": "The song opens with the sitar and acoustic guitar establishing the waltz-time groove and the E-D Mixolydian movement. The verse melody floats over the gentle 3/4 strumming pattern.",
+      "chords": [
+        "E",
+        "D",
+        "E"
+      ],
+      "progression": "E - D - E",
+      "notes": [
+        "3/4 waltz time - count in three",
+        "Sitar carries the main melodic line",
+        "Acoustic guitar provides rhythmic and harmonic foundation",
+        "The E to D movement defines the Mixolydian character immediately"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Middle Eight (B Section)",
+      "timeStamp": "0:28-0:48",
+      "technique": "Waltz-Time Acoustic Strumming",
+      "key": "E Minor",
+      "description": "The contrasting middle section shifts to E minor, creating a darker, more introspective mood. The change from E major to E minor is dramatic yet subtle, reflecting the narrative shift in the lyrics.",
+      "chords": [
+        "Em",
+        "A",
+        "Em"
+      ],
+      "progression": "Em - A - Em",
+      "notes": [
+        "Shift from E major to E minor for emotional contrast",
+        "The A chord provides harmonic variety in this section",
+        "Maintain the same 3/4 waltz strumming pattern",
+        "The mood darkens noticeably with the minor key shift"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Return to Verse",
+      "timeStamp": "0:48-1:18",
+      "technique": "Waltz-Time Acoustic Strumming",
+      "key": "E Mixolydian",
+      "description": "The verse returns with the familiar E-D Mixolydian movement, now enriched by the contrast of the middle eight. The sitar melody weaves through the acoustic guitar pattern.",
+      "chords": [
+        "E",
+        "D",
+        "E"
+      ],
+      "progression": "E - D - E",
+      "notes": [
+        "Same progression as the opening verse",
+        "Sitar becomes more prominent in the mix",
+        "Maintain consistent waltz-time feel",
+        "The return feels natural after the minor key middle section"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Sitar Solo and Outro",
+      "timeStamp": "1:18-2:05",
+      "technique": "Simple Melodic Fingerpicking",
+      "key": "E Mixolydian",
+      "description": "The sitar takes an extended solo over the verse progression before the song fades out. On guitar, this can be approximated with a simple fingerpicked melody using the Mixolydian scale.",
+      "chords": [
+        "E",
+        "D",
+        "E"
+      ],
+      "progression": "E - D - E (repeating to fade)",
+      "notes": [
+        "The sitar takes the lead - guitar can play melody or continue strumming",
+        "If playing melody, use E Mixolydian scale in open position",
+        "The D natural note (open D string or 3rd fret B string) is prominent",
+        "Song fades out gradually over the repeating verse progression"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson J-160E Acoustic-Electric",
+      "alternatives": [
+        "Any steel-string acoustic guitar",
+        "Martin D-28",
+        "Epiphone EJ-160E",
+        "Taylor 214ce"
+      ],
+      "pickup": "Acoustic - no pickup needed for practice; acoustic-electric for performance"
+    },
+    "amp": {
+      "recommended": "No amplification needed (acoustic)",
+      "alternatives": [
+        "Acoustic guitar amp (Fishman Loudbox)",
+        "PA system for live performance",
+        "Any clean-channel amp if using acoustic-electric"
+      ],
+      "settings": {
+        "gain": "1 (clean, no overdrive)",
+        "treble": "6 (bright acoustic clarity)",
+        "middle": "5 (natural midrange)",
+        "bass": "4 (controlled low end for waltz clarity)",
+        "presence": "5 (natural acoustic presence)"
+      }
+    },
+    "effects": {
+      "distortion": "None - clean acoustic tone",
+      "delay": "None",
+      "reverb": "Natural room reverb only; slight reverb if amplified",
+      "other": "No effects pedals - pure acoustic guitar tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic open chords and 3/4 waltz strumming pattern",
+      "steps": [
+        "Master open E, D, Em, and A chord shapes",
+        "Practice counting in 3/4 time (1-2-3, 1-2-3)",
+        "Learn the basic waltz strumming pattern at slow tempo",
+        "Practice switching between E and D chords smoothly"
+      ],
+      "timeEstimate": "1-2 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Understand the Mixolydian modal concept and refine the waltz feel",
+      "steps": [
+        "Learn E Mixolydian scale and identify the D natural as the key note",
+        "Practice the A section (verse) and B section (middle eight) transitions",
+        "Add the fingerpicked melody approximation",
+        "Work on maintaining consistent 3/4 time at full tempo (184 BPM)"
+      ],
+      "timeEstimate": "2-4 weeks for confident performance"
+    },
+    "advanced": {
+      "focus": "Master the sitar melody adaptation and full song arrangement for solo guitar",
+      "steps": [
+        "Transcribe the sitar melody and adapt it for guitar",
+        "Combine bass drone, chord strumming, and melody simultaneously",
+        "Explore the Mixolydian mode across the full fretboard",
+        "Create a complete solo guitar arrangement incorporating all elements"
+      ],
+      "timeEstimate": "4-6 weeks for solo guitar arrangement"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing in 4/4 time instead of 3/4 waltz time",
+      "Rushing through the gentle, floating feel of the waltz",
+      "Missing the transition from E major (verse) to E minor (middle eight)",
+      "Ignoring the Mixolydian D natural and treating it as standard E major"
+    ],
+    "practiceRoutine": [
+      "Warm up with open E, D, Em, and A chord changes for 5 minutes",
+      "Practice 3/4 waltz strumming pattern on E chord only at 120 BPM",
+      "Add the E-D chord change in waltz time, gradually increasing to 184 BPM",
+      "Practice the A section and B section separately, then combine",
+      "Play through the entire song structure with a metronome"
+    ],
+    "focusAreas": [
+      "3/4 waltz-time feel and counting",
+      "Clean open chord transitions (E to D especially)",
+      "Understanding Mixolydian mode and the ♭VII chord",
+      "Dynamic control in acoustic playing",
+      "Smooth transitions between major and minor sections"
+    ],
+    "metronomeWork": [
+      "Set metronome to 3/4 time, starting at 120 BPM",
+      "Practice basic waltz strum (bass-strum-strum) per measure",
+      "Gradually increase to full tempo of 184 BPM",
+      "Work on keeping beats 2 and 3 lighter than beat 1 for authentic waltz feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Blackbird",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic fingerpicking with modal elements and unique time signature"
+      },
+      {
+        "title": "Yesterday",
+        "difficulty": "Beginner",
+        "similarity": "Acoustic guitar-driven Beatles song with beautiful chord movement"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Uses the I-♭VII-IV progression in a major key context"
+      },
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "difficulty": "Intermediate",
+        "similarity": "Mixolydian flavor in the lead guitar and vocal melody"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Hurt So Good",
+        "artist": "John Mellencamp",
+        "difficulty": "Beginner",
+        "similarity": "Simple open chord song to build basic strumming skills"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "difficulty": "Intermediate",
+        "similarity": "Uses the same ♭VII chord concept in a rock context, building on Mixolydian knowledge"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 82,
+    "dateAdded": "2026-03-02",
+    "featured": false,
+    "decade": "1960s",
+    "iconicRiff": false,
+    "tags": [
+      "acoustic",
+      "folk-rock",
+      "mixolydian-mode",
+      "waltz"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

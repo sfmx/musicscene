@@ -1,0 +1,432 @@
+{
+  "songInfo": {
+    "title": "Blowin' in the Wind",
+    "artist": "Bob Dylan",
+    "album": "The Freewheelin' Bob Dylan",
+    "released": "1963",
+    "genre": "Folk",
+    "tempo": "90 BPM",
+    "duration": "2:48",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "All three chords (G, C, D) are diatonic to G major, forming the fundamental I-IV-V framework"
+        },
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "The vocal melody is pentatonic in character, giving it a universal, folk-song simplicity"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with timeless folk simplicity",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "I - IV - V",
+        "description": "The purest possible I-IV-V folk progression. Three chords form the backbone of the entire song, demonstrating that harmonic simplicity can carry profound lyrical content. One of the most important folk songs ever written."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Question Lines (Verse)",
+          "progression": "G - C - G - C - G - C - D",
+          "romanNumerals": "I - IV - I - IV - I - IV - V",
+          "description": "Each of the three question lines uses a G-to-C oscillation, with D appearing at the end of the third line to create tension before the answer"
+        },
+        {
+          "section": "Refrain (The Answer)",
+          "progression": "C - D - G - C - G - C - D - G",
+          "romanNumerals": "IV - V - I - IV - I - IV - V - I",
+          "description": "The 'the answer is blowin' in the wind' refrain starts on C for harmonic lift, moves through D for momentum, and resolves to G for completion"
+        },
+        {
+          "section": "Harmonica Break",
+          "progression": "G - C - G - C - G - C - D",
+          "romanNumerals": "I - IV - I - IV - I - IV - V",
+          "description": "The harmonica plays over the verse chord progression while the guitar continues strumming"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Stable, warm tonic that grounds each musical phrase",
+        "C (IV) - Subdominant providing gentle motion and the sense of a musical 'question'",
+        "D (V) - Dominant that creates forward momentum and urgency before resolving to G"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Folk Strumming Pattern",
+      "description": "Steady, rhythmic folk strumming with a moderate tempo, emphasizing downbeats and a flowing down-up pattern that supports the vocal storytelling",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "G: 320003 - full open G chord shape",
+          "C: X32010 - standard open C chord",
+          "D: XX0232 - standard open D chord",
+          "Use a basic down-down-up-up-down-up strumming pattern",
+          "Accent the first downbeat of each measure for rhythmic clarity",
+          "Keep the wrist loose for a natural, flowing folk feel"
+        ],
+        "sequence": [
+          "Strum G for the first half of the question line",
+          "Move to C for the second half of the question line",
+          "Return to G and repeat for the next question line",
+          "D chord appears at the end of the third question for tension",
+          "Refrain starts on C, moves to D, resolves to G"
+        ],
+        "tips": [
+          "Strum gently - folk music calls for a warm, unforced sound",
+          "Use a thin pick or fingerstrum for a softer, warmer tone",
+          "Let the chords ring between changes for a full sound",
+          "Listen to Dylan's recording to internalize the easy, rolling rhythm"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "G - C - D (the fundamental I-IV-V folk pattern)"
+      }
+    },
+    {
+      "name": "Harmonica-Style Guitar Fills (Optional)",
+      "description": "Simple single-note fills between vocal lines that emulate Dylan's harmonica breaks, played on the upper strings in G major pentatonic",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Based on G major pentatonic scale on the B and high E strings",
+          "Fill the gaps between vocal phrases with 2-3 note melodic fragments",
+          "Use a harmonica rack to play actual harmonica while strumming for the authentic Dylan experience",
+          "Can be omitted entirely without affecting the song"
+        ],
+        "sequence": [
+          "Strum the chord progression normally",
+          "During gaps between vocal phrases, pick 2-3 notes from G major pentatonic",
+          "Return to strumming before the next vocal phrase enters",
+          "Keep fills simple and brief - less is more",
+          "In harmonica breaks, the guitar just strums while harmonica leads"
+        ],
+        "tips": [
+          "Focus on mastering the strumming and singing first",
+          "If adding guitar fills, keep them simple and brief",
+          "A harmonica in the key of C (cross-harp in G) matches Dylan's approach",
+          "Less is more - the song's power is in the words, not instrumental flash"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "G - C - D with pentatonic fills between vocal phrases"
+      }
+    },
+    {
+      "name": "Three-Chord Transitions",
+      "description": "Smooth transitions between the three most fundamental open chords in guitar playing: G, C, and D major",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "G to C: Pivot on the ring finger from 3rd fret low E to 3rd fret A, shift index and middle",
+          "C to D: Lift from C shape and reform D on the top three strings",
+          "D to G: Largest jump - practice this transition the most",
+          "G and C share the ring finger on the 3rd fret (different strings)",
+          "These three transitions are the foundation of thousands of songs"
+        ],
+        "sequence": [
+          "Practice G to C transition 20 times slowly",
+          "Practice C to D transition 20 times slowly",
+          "Practice D to G transition 20 times slowly",
+          "Chain all three: G - C - D - G in a slow loop",
+          "Add the strumming pattern once transitions are smooth"
+        ],
+        "tips": [
+          "Keep fingers close to the fretboard during transitions",
+          "Visualize the next chord shape before you move",
+          "The moderate 90 BPM tempo is very forgiving for chord changes",
+          "These three chords will unlock hundreds of songs"
+        ],
+        "chords": [],
+        "progression": "G - C - D fundamental transition practice"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:08",
+      "technique": "Folk Strumming Pattern",
+      "key": "G Major",
+      "description": "Brief guitar intro establishing the key and gentle tempo with a few bars of the G chord",
+      "chords": [
+        "G"
+      ],
+      "progression": "G",
+      "notes": [
+        "Simple strumming on G to establish the key",
+        "Very short - just a bar or two before the vocal enters",
+        "Sets the gentle, contemplative mood",
+        "Some versions start with a harmonica intro instead"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse (Question Lines)",
+      "timeStamp": "0:08-0:30",
+      "technique": "Folk Strumming Pattern",
+      "key": "G Major",
+      "description": "The three question lines of the verse, with the vocal riding the G-C oscillation and D creating tension before the refrain",
+      "chords": [
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "G - C - G - C - G - C - D",
+      "notes": [
+        "Three question lines each oscillating between G and C",
+        "D chord appears at the end of the third line for harmonic tension",
+        "Strumming remains steady and supportive under the vocal",
+        "Each line follows the same G-C pattern for hypnotic repetition"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Refrain (The Answer)",
+      "timeStamp": "0:30-0:55",
+      "technique": "Folk Strumming Pattern",
+      "key": "G Major",
+      "description": "The iconic 'The answer, my friend, is blowinthe signature refrain resolving the musical and lyrical tension",
+      "chords": [
+        "C",
+        "D",
+        "G"
+      ],
+      "progression": "C - D - G - C - G - C - D - G",
+      "notes": [
+        "Starts on C (IV) for harmonic lift above the tonic",
+        "D (V) creates forward momentum toward resolution",
+        "Resolves to G (I) on the word 'wind' for emotional completion",
+        "The refrain is the emotional and musical resolution of each verse"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Harmonica Break",
+      "timeStamp": "0:55-1:10",
+      "technique": "Folk Strumming Pattern",
+      "key": "G Major",
+      "description": "Instrumental harmonica break over the verse progression where the guitar continues steady strumming as accompaniment",
+      "chords": [
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "G - C - G - C - G - C - D",
+      "notes": [
+        "Guitar continues the same strumming pattern underneath",
+        "Harmonica takes the melodic role over the verse changes",
+        "If playing solo guitar, can add simple fills or just strum through",
+        "Provides a breathing space between verses"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Final Refrain and Outro",
+      "timeStamp": "2:20-2:48",
+      "technique": "Folk Strumming Pattern",
+      "key": "G Major",
+      "description": "Final statement of the iconic vocal hook in the wind' followed by harmonica outro, resolving gently on the G chord",
+      "chords": [
+        "C",
+        "D",
+        "G"
+      ],
+      "progression": "C - D - G",
+      "notes": [
+        "Final statement of the answer refrain",
+        "Harmonica plays out over repeated progression",
+        "Song ends with a gentle resolve on G",
+        "No fade-out - clean, simple ending"
+      ],
+      "alphaTab": "3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 | 3.6 5.5 5.4 4.3 3.2 3.1 | 8.6 10.5 10.4 9.3 8.2 8.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Steel-string acoustic guitar (any body shape)",
+      "alternatives": [
+        "Dreadnought acoustic for full strumming sound",
+        "Parlor guitar for a more intimate tone",
+        "Martin or similar folk guitar for authentic Dylan sound",
+        "Any nylon-string classical guitar"
+      ],
+      "pickup": "Acoustic only - no amplification needed for practice"
+    },
+    "amp": {
+      "recommended": "No amplification needed - purely acoustic performance",
+      "alternatives": [
+        "Acoustic amp or PA for live performance",
+        "Fishman Loudbox for amplified acoustic tone",
+        "Small combo amp on clean channel if electric guitar is used",
+        "Direct input for recording"
+      ],
+      "settings": {
+        "gain": "0-1 (completely clean or no amp at all)",
+        "treble": "5 (neutral, natural)",
+        "middle": "5 (neutral)",
+        "bass": "5 (neutral, balanced)",
+        "presence": "5 (natural)"
+      }
+    },
+    "effects": {
+      "distortion": "None - purely acoustic folk tone",
+      "delay": "None",
+      "reverb": "None or very light natural room ambiance",
+      "other": "Harmonica in key of C for cross-harp in G (optional). No capo needed in G, but capo at fret 7 for D shapes if preferred."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the three fundamental open chords G, C, D and a basic folk strumming pattern",
+      "steps": [
+        "Learn open G, C, and D chord shapes individually",
+        "Practice switching between G and C smoothly",
+        "Practice switching between C and D smoothly",
+        "Learn a basic folk strumming pattern (down-down-up-up-down-up)"
+      ],
+      "timeEstimate": "1 week with regular practice"
+    },
+    "intermediate": {
+      "focus": "Play through the complete song structure with vocals and proper phrasing",
+      "steps": [
+        "Memorize the full song structure (verse-refrain-harmonica break pattern)",
+        "Practice singing the melody while strumming",
+        "Work on phrasing - matching strumming emphasis to lyrical accents",
+        "Add dynamics between verses and refrains"
+      ],
+      "timeEstimate": "1-2 weeks for confident full performance"
+    },
+    "advanced": {
+      "focus": "Add harmonica accompaniment and develop a complete one-person performance",
+      "steps": [
+        "Learn basic cross-harp harmonica in G (C harmonica)",
+        "Use a harmonica rack to play both guitar and harmonica simultaneously",
+        "Develop instrumental fills between vocal lines",
+        "Play along with Dylan's original recording for feel and timing"
+      ],
+      "timeEstimate": "3-5 weeks for polished performance with harmonica"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Overcomplicating the strumming - keep it simple and steady like Dylan",
+      "Strumming too hard - folk music requires a gentle, even touch",
+      "Not counting bars properly - each question line has a specific chord rhythm",
+      "Rushing through the refrain instead of letting the resolution breathe"
+    ],
+    "practiceRoutine": [
+      "Warm up with G-C-D chord changes for 3-5 minutes",
+      "Practice the verse progression (G-C-G-C-G-C-D) slowly with a metronome",
+      "Practice the refrain progression (C-D-G) to ingrain the resolution",
+      "Play through the full three-verse structure without stopping",
+      "Add singing once the strumming is automatic"
+    ],
+    "focusAreas": [
+      "Clean and relaxed chord changes at 90 BPM",
+      "Steady folk strumming rhythm without rushing or dragging",
+      "Understanding the verse/refrain question-and-answer structure",
+      "Singing and strumming simultaneously"
+    ],
+    "metronomeWork": [
+      "Start chord changes at 60 BPM to build accuracy",
+      "Gradually increase by 5 BPM increments to 90 BPM (song tempo)",
+      "Practice the full verse progression with metronome on beats 1 and 3",
+      "Play through complete song at tempo for consistency"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Knockin' on Heaven's Door",
+        "difficulty": "Beginner",
+        "similarity": "Another simple Dylan song with a few open chords and an iconic vocal melody"
+      },
+      {
+        "title": "The Times They Are a-Changin'",
+        "difficulty": "Beginner",
+        "similarity": "Folk strumming with simple chords and powerful protest lyrics"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "This Land Is Your Land",
+        "artist": "Woody Guthrie",
+        "difficulty": "Beginner",
+        "similarity": "Classic three-chord folk song with strumming and singing"
+      },
+      {
+        "title": "Leaving on a Jet Plane",
+        "artist": "John Denver",
+        "difficulty": "Beginner",
+        "similarity": "Simple folk strumming with G-C-D chords and singable melody"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Good Riddance (Time of Your Life)",
+        "artist": "Green Day",
+        "difficulty": "Beginner",
+        "similarity": "Apply the G-C-D foundation to this 1990s acoustic classic with fingerpicking"
+      },
+      {
+        "title": "Free Fallin'",
+        "artist": "Tom Petty",
+        "difficulty": "Beginner",
+        "similarity": "Progress to this capo-based song with suspended chord voicings"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 93,
+    "dateAdded": "2026-03-04",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": false,
+    "tags": [
+      "folk",
+      "beginner",
+      "3-chord-song",
+      "bob-dylan",
+      "acoustic"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}

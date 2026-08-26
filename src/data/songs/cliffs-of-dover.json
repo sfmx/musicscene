@@ -1,0 +1,427 @@
+{
+  "songInfo": {
+    "title": "Cliffs of Dover",
+    "artist": "Eric Johnson",
+    "album": "Ah Via Musicom",
+    "released": "1990",
+    "genre": "Instrumental Rock",
+    "tempo": "204 BPM",
+    "duration": "3:53",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Expert",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Expert",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major",
+      "scalesUsed": [
+        {
+          "scale": "G major pentatonic",
+          "notes": "G - A - B - D - E",
+          "application": "Foundation for the cascading melodic runs and main theme statements throughout the piece"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Used for bluesy inflections and transitional passages between melodic themes"
+        },
+        {
+          "scale": "G Mixolydian",
+          "notes": "G - A - B - C - D - E - F - G",
+          "application": "Adds the flatted seventh (F natural) for dominant-flavored melodic passages and chord voicings"
+        }
+      ],
+      "modalCharacter": "Mixolydian / Major Pentatonic blend",
+      "keySignature": "1 sharp (F#), with frequent F natural from Mixolydian borrowing",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "C",
+          "D",
+          "Em"
+        ],
+        "progression": "I - IV - V - vi",
+        "description": "Bright, uplifting progression anchoring the main melodic theme with strong diatonic movement in G major"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Theme",
+          "progression": "G - C - D - G",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Triumphant I-IV-V-I cadence that establishes the optimistic, soaring character of the piece"
+        },
+        {
+          "section": "B Section",
+          "progression": "Em - C - G - D",
+          "romanNumerals": "vi - IV - I - V",
+          "description": "Shifts to relative minor starting point, creating a more reflective mood before building back to major resolution"
+        },
+        {
+          "section": "Outro Climb",
+          "progression": "G - D/F# - Em - C - D - G",
+          "romanNumerals": "I - V/7 - vi - IV - V - I",
+          "description": "Walking bass line descent from G through F# to Em creates smooth voice leading in the climactic finale"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - Tonic center establishing bright major tonality and home base for melodic runs",
+        "C (IV) - Subdominant providing harmonic lift and contrast to the tonic",
+        "D (V) - Dominant creating forward motion and resolution tension back to G",
+        "Em (vi) - Relative minor adding emotional depth and melodic minor color",
+        "D/F# (V/7) - First inversion dominant creating smooth chromatic bass motion from G to Em"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Hybrid Picking",
+      "description": "Combining flatpick with middle and ring fingers to execute rapid cascading arpeggios and pentatonic runs that define the signature Cliffs of Dover sound",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Pick held between thumb and index finger while middle (m) and ring (a) fingers pluck higher strings",
+          "Allows simultaneous bass note attack with pick and treble melody with fingers",
+          "Essential for the rapid cross-string pentatonic cascades at 204 BPM",
+          "Produces a softer, more violin-like attack on finger-plucked notes compared to pure picking",
+          "Eric Johnson uses this to achieve his signature clean-yet-fluid tone across strings"
+        ],
+        "sequence": [
+          "Anchor pick between thumb and index finger in standard position",
+          "Assign middle finger to B string and ring finger to high E string",
+          "Practice slow alternation: pick on low strings, fingers on high strings",
+          "Build coordination with simple G major pentatonic patterns across 3 strings",
+          "Gradually increase speed while maintaining even volume between pick and finger attacks"
+        ],
+        "tips": [
+          "Start at 50% tempo (around 100 BPM) and build up incrementally",
+          "Focus on matching volume between picked and finger-plucked notes",
+          "Keep finger movements minimal - pluck from the knuckle, not the whole hand",
+          "Practice the cascading G pentatonic pattern in isolation before full song context",
+          "Use a clean amp setting to hear every note clearly during practice"
+        ],
+        "chords": [
+          "G",
+          "C",
+          "D",
+          "Em"
+        ],
+        "progression": "Pentatonic cascades over G - C - D - Em"
+      }
+    },
+    {
+      "name": "Cascading Pentatonic Runs",
+      "description": "Rapid descending and ascending pentatonic scale patterns played across multiple string groups, creating the waterfall-like melodic effect that defines the main theme",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Based on G major pentatonic positions spanning frets 2-15",
+          "Patterns connect multiple pentatonic box positions fluidly",
+          "Uses three-note-per-string groupings for speed and fluidity",
+          "Combines hammer-ons, pull-offs, and picked notes within single runs",
+          "Requires position shifts mid-run without breaking rhythmic flow"
+        ],
+        "sequence": [
+          "Learn G major pentatonic in all five CAGED positions",
+          "Practice connecting adjacent positions with slide transitions",
+          "Work three-note-per-string patterns ascending and descending",
+          "Add hammer-on/pull-off combinations within each position",
+          "Chain positions together into full cascading runs at slow tempo"
+        ],
+        "tips": [
+          "Memorize the pentatonic patterns as shapes, not individual notes",
+          "Use economy picking (directional picking) to minimize pick travel between strings",
+          "Let notes ring into each other slightly for the cascading waterfall effect",
+          "Practice with compression or light overdrive to hear sustain and note clarity",
+          "Record yourself and compare note evenness to the original recording"
+        ],
+        "chords": [],
+        "progression": "Runs over G major tonal center"
+      }
+    },
+    {
+      "name": "Legato Phrasing",
+      "description": "Smooth hammer-on and pull-off technique creating a violin-like sustain and fluidity, minimizing pick attack for seamless melodic lines",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Emphasizes left-hand strength for clear hammer-ons and pull-offs",
+          "Creates the smooth, singing quality of Eric Johnson's melodic statements",
+          "Often combined with hybrid picking for mixed articulation within phrases",
+          "Used prominently in the lyrical B section and transitional passages",
+          "Requires consistent finger pressure to maintain volume across legato passages"
+        ],
+        "sequence": [
+          "Practice hammer-ons from nothing (tapping the string with fretting finger alone)",
+          "Build pull-off strength with chromatic exercises on each string",
+          "Work four-note legato patterns: pick first note, hammer-on next three",
+          "Apply to G major scale patterns across two octaves",
+          "Combine with position shifts for extended legato lines"
+        ],
+        "tips": [
+          "Develop left-hand finger independence with daily chromatic exercises",
+          "Use just enough gain to sustain notes without masking sloppy technique",
+          "Focus on making hammer-ons as loud as picked notes",
+          "Practice pull-offs with a slight downward flick for better volume",
+          "Work the B section melody slowly to internalize the phrasing and breath points"
+        ],
+        "chords": [],
+        "progression": "Melodic lines over Em - C - G - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro - Cascading Theme",
+      "timeStamp": "0:00-0:38",
+      "technique": "Hybrid Picking / Cascading Pentatonic Runs",
+      "key": "G Major",
+      "description": "The iconic opening featuring rapid cascading pentatonic runs that establish the triumphant, soaring character of the piece with hybrid picking across multiple string groups",
+      "chords": [
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "G - C - D - G",
+      "notes": [
+        "Cascading pentatonic runs using hybrid picking at full 204 BPM tempo",
+        "Three-note-per-string groupings create the signature waterfall effect",
+        "Clean tone with slight overdrive and stereo chorus for shimmer",
+        "Requires seamless position shifts across the neck without breaking flow"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Main Theme Statement",
+      "timeStamp": "0:38-1:30",
+      "technique": "Hybrid Picking / Legato",
+      "key": "G Major",
+      "description": "The primary melodic theme presented with a mix of hybrid picking and legato phrasing, featuring the song's most recognizable melody over the I-IV-V-vi progression",
+      "chords": [
+        "G",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "G - C - D - Em",
+      "notes": [
+        "Violin-like tone achieved through neck pickup and touch dynamics",
+        "Melodic phrases breathe with natural pauses between statements",
+        "Combines picked attack notes with legato hammer-on/pull-off passages",
+        "Dynamic swells from soft to loud within individual phrases"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "B Section - Lyrical Passage",
+      "timeStamp": "1:30-2:25",
+      "technique": "Legato Phrasing",
+      "key": "G Major / E minor",
+      "description": "A more reflective section beginning on the relative minor, featuring extended legato lines and emotive bending with less rhythmic intensity",
+      "chords": [
+        "Em",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "Em - C - G - D",
+      "notes": [
+        "Shifts emotional tone to relative minor territory",
+        "Extended legato phrases with minimal picking for singing quality",
+        "Whole-step and half-step bends for expressive vocal-like inflections",
+        "Builds gradually in intensity toward return of main theme"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Climactic Finale",
+      "timeStamp": "2:25-3:53",
+      "technique": "Cascading Pentatonic Runs / Hybrid Picking",
+      "key": "G Major",
+      "description": "The triumphant return and escalation of the main theme, pushing the cascading runs to their most intense and technically demanding peak before the final resolution",
+      "chords": [
+        "G",
+        "D/F#",
+        "Em",
+        "C",
+        "D",
+        "G"
+      ],
+      "progression": "G - D/F# - Em - C - D - G",
+      "notes": [
+        "Most technically demanding section with fastest cascading runs",
+        "Walking bass descent from G through F# to Em adds harmonic sophistication",
+        "Builds to climactic peak before resolving to final G major chord",
+        "Requires peak stamina and precision in both hands at full tempo"
+      ],
+      "alphaTab": "3.6 5.6 2.5 5.5 2.4 5.4 | 2.3 4.3 3.2 5.2 3.1 5.1 | 5.1 3.1 5.2 3.2 4.3 2.3 | 5.4 2.4 5.5 2.5 5.6 3.6 |",
+      "exerciseLabel": "Major Pentatonic Scale Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster (maple neck)",
+      "alternatives": [
+        "Fender American Professional II Stratocaster",
+        "Fender Eric Johnson Signature Stratocaster",
+        "Any high-quality Stratocaster with single-coil pickups"
+      ],
+      "pickup": "Single-coil pickups - neck position for legato, bridge for brighter runs"
+    },
+    "amp": {
+      "recommended": "Marshall 6100 LM (or vintage Marshall plexi)",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Marshall JCM800",
+        "Two-amp setup: Marshall for drive, Fender for clean blend"
+      ],
+      "settings": {
+        "gain": "4-5 (light overdrive, not heavy distortion)",
+        "treble": "7 (bright but not harsh)",
+        "middle": "6 (present mids for note definition)",
+        "bass": "4 (tight low end, not boomy)",
+        "presence": "7 (airy top end for the violin-like tone)"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez Tube Screamer TS808 - light gain boost for solo sustain",
+      "delay": "Maestro Echoplex EP-3 tape delay - subtle slapback for depth",
+      "reverb": "TC Electronic Stereo Chorus + natural amp reverb for shimmer",
+      "other": "Stereo chorus is essential for the shimmering clean tone; use sparingly on drive sounds"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the chord progression framework and basic pentatonic positions",
+      "steps": [
+        "Master G major pentatonic in the open position and 2nd position box",
+        "Learn the basic G-C-D-Em chord progression as open chords",
+        "Practice simple ascending/descending pentatonic runs at slow tempo",
+        "Work on basic hybrid picking: pick + middle finger coordination"
+      ],
+      "timeEstimate": "4-8 weeks for foundational skills"
+    },
+    "intermediate": {
+      "focus": "Develop hybrid picking fluency and connect pentatonic positions",
+      "steps": [
+        "Learn all five CAGED pentatonic positions in G major",
+        "Practice connecting adjacent positions with slides",
+        "Build hybrid picking speed with three-string arpeggio patterns",
+        "Learn the main theme melody at 50% speed with correct articulation"
+      ],
+      "timeEstimate": "3-6 months for connected position playing"
+    },
+    "advanced": {
+      "focus": "Achieve full-speed execution with musical expression and dynamics",
+      "steps": [
+        "Master cascading runs at 75% tempo (around 150 BPM)",
+        "Develop legato strength for the B section melodic passages",
+        "Combine hybrid picking with legato within single phrases",
+        "Build stamina for the full 3:53 performance at tempo",
+        "Refine tone and dynamics to match the original recording"
+      ],
+      "timeEstimate": "6-12 months for performance-ready execution"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Attempting to play at full 204 BPM speed before building proper technique",
+      "Using all downstrokes or alternate picking instead of hybrid picking for cascading runs",
+      "Neglecting the dynamic contrast between loud picked notes and softer legato passages",
+      "Playing with too much gain, masking sloppy note articulation in fast runs",
+      "Ignoring the musical phrasing and breathing points between melodic statements"
+    ],
+    "practiceRoutine": [
+      "Warm up with G major pentatonic across all positions for 10 minutes",
+      "Hybrid picking coordination drill: pick + middle finger on adjacent strings for 10 minutes",
+      "Cascading run patterns at 60% speed with metronome for 15 minutes",
+      "Main theme melody practice focusing on dynamics and articulation for 15 minutes",
+      "Full section run-throughs at current comfortable speed for 10 minutes"
+    ],
+    "focusAreas": [
+      "Hybrid picking coordination between flatpick and fingers",
+      "Pentatonic position connection and seamless shifting",
+      "Left-hand legato strength for hammer-ons and pull-offs",
+      "Dynamic control and tone production at high speed",
+      "Stamina building for sustained fast passages"
+    ],
+    "metronomeWork": [
+      "Start cascading runs at 100 BPM (roughly half speed)",
+      "Increase by 4-8 BPM increments when current tempo is clean and even",
+      "Practice main theme at 120 BPM focusing on articulation clarity",
+      "Target 75% speed (150 BPM) as first major milestone",
+      "Full tempo (204 BPM) is the final goal - do not rush to reach it"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Trademark",
+        "difficulty": "Expert",
+        "similarity": "Same hybrid picking and pentatonic vocabulary with similar virtuoso instrumental approach"
+      },
+      {
+        "title": "Desert Rose",
+        "difficulty": "Advanced",
+        "similarity": "Shares the clean Stratocaster tone and melodic pentatonic approach with less technical demand"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic melodic guitar intro using pentatonic patterns, good stepping stone for pentatonic fluency"
+      },
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Advanced",
+        "similarity": "Clean Stratocaster tone with expressive fingerpicking and dynamic melodic phrasing"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "G-C-D progression foundation and basic pentatonic lead work to build from"
+      },
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "difficulty": "Advanced",
+        "similarity": "Fast single-note introduction and speed-building gateway to virtuoso playing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 89,
+    "dateAdded": "2026-03-02",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": false,
+    "tags": [
+      "instrumental",
+      "virtuoso",
+      "hybrid-picking",
+      "guitar-solos"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "6-12 months"
+  }
+}

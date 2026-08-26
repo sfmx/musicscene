@@ -1,0 +1,505 @@
+{
+  "songInfo": {
+    "title": "Take Me to Church",
+    "artist": "Hozier",
+    "album": "Hozier",
+    "released": "2013",
+    "genre": "Indie Rock/Blues Rock",
+    "tempo": "65 BPM (verse), 130 BPM feel (chorus)",
+    "duration": "4:01",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Beginner",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Primary harmonic framework for the verse and chorus chord progressions"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Vocal melody contour and guitar fills between chord changes"
+        },
+        {
+          "scale": "E blues scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "Blues inflections in the vocal delivery and occasional guitar embellishments"
+        }
+      ],
+      "modalCharacter": "Aeolian (Natural Minor) with blues inflections",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "Em",
+          "G",
+          "D"
+        ],
+        "progression": "iv - i - III - VII",
+        "description": "Verse fingerpicking progression creating an intimate, gospel-influenced harmonic movement rooted in E minor"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Am - Em - G - D",
+          "romanNumerals": "iv - i - III - VII",
+          "description": "Delicate fingerpicked pattern with each chord lasting two beats, creating a gentle rolling motion"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "Em - C - G - D",
+          "romanNumerals": "i - VI - III - VII",
+          "description": "Transitional passage that begins to build intensity with fuller chord voicings"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Em - G - D - C",
+          "romanNumerals": "i - III - VII - VI",
+          "description": "Powerful strummed progression with doubled tempo feel, building to the anthemic climax"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (i) - Tonic minor, grounding anchor of the song's dark, soulful character",
+        "Am (iv) - Subdominant minor, adds depth and melancholy in the verse",
+        "G (III) - Relative major, provides brightness and lift within the minor framework",
+        "D (VII) - Subtonic chord, creates forward motion and openness",
+        "C (VI) - Submediant, adds warmth and gospel-like harmonic color"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerpicking Pattern",
+      "description": "The verse is built on a rolling fingerpicking pattern using thumb (bass) and fingers (treble), creating the song's intimate, hymn-like character",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb (p) handles bass notes on strings 6, 5, and 4",
+          "Index (i) plucks string 3, middle (m) plucks string 2, ring (a) plucks string 1",
+          "Pattern: p-i-m-a-m-i in steady eighth notes",
+          "Each chord sustains for a full measure while the pattern repeats",
+          "Keep fingers close to the strings for efficiency and control"
+        ],
+        "sequence": [
+          "Anchor thumb on the bass note of the current chord",
+          "Play p (bass) on beat 1",
+          "Follow with i-m-a ascending on beats 2-and-3",
+          "Descend with m-i on beats 3-and-4",
+          "Transition bass note to next chord on the new measure"
+        ],
+        "tips": [
+          "Practice the picking pattern on a single chord until it becomes automatic",
+          "Keep the wrist relaxed and let fingers move independently from each other",
+          "Start very slowly at 40 BPM and only speed up when the pattern is smooth",
+          "The bass note change is what signals the chord change - focus on that transition"
+        ],
+        "chords": [
+          "Am",
+          "Em",
+          "G",
+          "D"
+        ],
+        "progression": "Am - Em - G - D (Verse)"
+      }
+    },
+    {
+      "name": "Dynamic Build and Strumming Contrast",
+      "description": "The song transforms from delicate fingerpicking in the verse to powerful, full-voiced strumming in the chorus, requiring control over a dramatic dynamic arc",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Verse: fingerpicking at low volume, intimate and controlled",
+          "Pre-chorus: transition from picking to light strumming, volume increasing",
+          "Chorus: full strumming with strong attack, doubled tempo feel",
+          "The transition between fingerpicking and strumming must be seamless"
+        ],
+        "sequence": [
+          "Begin verse with fingerpicking pattern at low volume",
+          "During pre-chorus, gradually shift from picking to strumming",
+          "Hit the chorus with full down-up strumming at double-time feel",
+          "Return to fingerpicking after chorus for the next verse"
+        ],
+        "tips": [
+          "Practice the transition point repeatedly - this is the hardest part",
+          "The pre-chorus is your ramp: use it to shift technique smoothly",
+          "In the chorus, use wrist strumming rather than arm strumming for control",
+          "The emotional impact depends on how dramatically different the sections feel"
+        ],
+        "chords": [
+          "Em",
+          "G",
+          "D",
+          "C"
+        ],
+        "progression": "Em - G - D - C (Chorus)"
+      }
+    },
+    {
+      "name": "Chord Embellishments",
+      "description": "Adding hammer-ons and pull-offs within chord shapes to create movement and interest during the fingerpicked sections",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Hammer-on from open string to fretted note within Am shape",
+          "Pull-off on the high E string during Em chord for melodic movement",
+          "Sus4 to major resolution on the D chord adds tension and release",
+          "These embellishments mirror what Hozier plays on the recording"
+        ],
+        "sequence": [
+          "Play the base chord fingerpicking pattern",
+          "On the second repetition, add a hammer-on on the B string",
+          "Try adding a sus4 resolve on the D chord (Dsus4 to D)",
+          "Keep embellishments subtle - they should enhance, not overpower"
+        ],
+        "tips": [
+          "Master the basic fingerpicking pattern before adding any embellishments",
+          "Hammer-ons should be firm enough to produce a clear note",
+          "Only add one embellishment per chord cycle at first",
+          "Listen to the recording closely to hear where Hozier adds these touches"
+        ],
+        "chords": [
+          "Am",
+          "Em",
+          "Dsus4",
+          "D"
+        ],
+        "progression": "Am - Em - G - D (with embellishments)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Fingerpicking Pattern",
+      "key": "E Minor",
+      "description": "Sparse opening with a solo fingerpicked guitar establishing the Am-Em movement before the vocal enters",
+      "chords": [
+        "Am",
+        "Em"
+      ],
+      "progression": "Am - Em",
+      "notes": [
+        "Solo guitar introduction sets the intimate tone",
+        "Keep the tempo relaxed and unhurried at 65 BPM",
+        "Let each note ring into the next for a flowing, connected sound",
+        "This establishes the fingerpicking pattern for the entire verse"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "0:15-0:55",
+      "technique": "Fingerpicking Pattern",
+      "key": "E Minor",
+      "description": "First verse with the full fingerpicking pattern supporting the vocal, cycling through Am-Em-G-D with gentle, hymn-like quality",
+      "chords": [
+        "Am",
+        "Em",
+        "G",
+        "D"
+      ],
+      "progression": "Am - Em - G - D",
+      "notes": [
+        "Maintain a steady, unhurried fingerpicking rhythm",
+        "Keep volume low to support the intimate vocal delivery",
+        "Focus on smooth bass note transitions between chords",
+        "The pattern repeats for the full verse - consistency is key"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "0:55-1:15",
+      "technique": "Transitional Build",
+      "key": "E Minor",
+      "description": "Building section that transitions from fingerpicking to strumming, with increasing intensity and fuller chord voicings",
+      "chords": [
+        "Em",
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "Em - C - G - D",
+      "notes": [
+        "Begin with fingerpicking and gradually shift to light strumming",
+        "Volume and intensity should gradually increase throughout",
+        "The transition from picking to strumming happens naturally here",
+        "This section is the emotional ramp into the chorus"
+      ],
+      "alphaTab": "12.6 14.5 14.4 12.6 14.5 14.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 19.6 21.5 21.4 19.6 21.5 21.4 | 12.6 14.5 14.4 12.6 14.5 14.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:55",
+      "technique": "Full Strumming with Dynamic Build",
+      "key": "E Minor",
+      "description": "Powerful, anthemic chorus with full-voiced strumming at double-time feel, creating the song's emotional climax",
+      "chords": [
+        "Em",
+        "G",
+        "D",
+        "C"
+      ],
+      "progression": "Em - G - D - C",
+      "notes": [
+        "Full strumming with strong attack - this is the song's peak",
+        "The feel shifts to double-time (130 BPM feel) even though tempo stays at 65",
+        "Use open chord voicings for maximum resonance and fullness",
+        "Let the emotional intensity match the vocal delivery"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse 2",
+      "timeStamp": "1:55-2:35",
+      "technique": "Fingerpicking Pattern",
+      "key": "E Minor",
+      "description": "Return to the intimate fingerpicking pattern for the second verse, pulling back dynamics after the powerful chorus",
+      "chords": [
+        "Am",
+        "Em",
+        "G",
+        "D"
+      ],
+      "progression": "Am - Em - G - D",
+      "notes": [
+        "Pull back to fingerpicking after the chorus intensity",
+        "The contrast with the previous chorus makes this section feel even more intimate",
+        "Maintain the same pattern as Verse 1 for consistency",
+        "Slight embellishments can be added for variety"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:55-3:15",
+      "technique": "Sustained Arpeggios",
+      "key": "E Minor",
+      "description": "Atmospheric bridge section with sustained arpeggiated chords creating space and tension before the final chorus",
+      "chords": [
+        "Em",
+        "C"
+      ],
+      "progression": "Em - C",
+      "notes": [
+        "Slower, more deliberate arpeggiation with sustained notes",
+        "Creates a moment of reflection before the final build",
+        "Volume can dip even lower than the verse for maximum contrast",
+        "Let each note ring as long as possible"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    },
+    {
+      "name": "Final Chorus",
+      "timeStamp": "3:15-3:45",
+      "technique": "Full Strumming at Maximum Intensity",
+      "key": "E Minor",
+      "description": "The most powerful iteration of the chorus with maximum dynamic intensity and emotional delivery",
+      "chords": [
+        "Em",
+        "G",
+        "D",
+        "C"
+      ],
+      "progression": "Em - G - D - C",
+      "notes": [
+        "Peak intensity of the entire song - hold nothing back",
+        "Strumming should be powerful and full-voiced",
+        "This is the emotional climax - let the guitar match the vocal passion",
+        "Maintain steady rhythm despite the heightened intensity"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "3:45-4:01",
+      "technique": "Fading Fingerpicking",
+      "key": "E Minor",
+      "description": "Return to gentle fingerpicking that winds down the song, bringing the intensity back to the intimate opening feel",
+      "chords": [
+        "Am",
+        "Em"
+      ],
+      "progression": "Am - Em",
+      "notes": [
+        "Return to the opening fingerpicking pattern",
+        "Gradually decrease volume to nothing",
+        "Creates a bookend effect with the introduction",
+        "Final notes should fade naturally"
+      ],
+      "alphaTab": "12.5 12.4 14.3 12.2 14.3 12.4 | 12.5 14.4 14.3 12.2 14.3 14.4 | 17.5 17.4 19.3 17.2 19.3 17.4 | 12.5 12.4 14.3 12.2 14.3 12.4 |",
+      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Steel-string acoustic guitar (dreadnought or concert body)",
+      "alternatives": [
+        "Acoustic-electric guitar for live performance",
+        "Parlor-sized acoustic for a more intimate tone",
+        "Nylon string classical guitar for a softer variation"
+      ],
+      "pickup": "Acoustic - no pickup needed for practice; undersaddle piezo for live performance"
+    },
+    "amp": {
+      "recommended": "Acoustic amp or PA system (for live performance only)",
+      "alternatives": [
+        "Fishman Loudbox Mini",
+        "Boss Acoustic Singer",
+        "Direct into PA via DI box"
+      ],
+      "settings": {
+        "gain": "2 (clean signal only)",
+        "treble": "6 (bright, clear fingerpicking tone)",
+        "middle": "5 (natural midrange)",
+        "bass": "4 (controlled low end to avoid boominess)",
+        "presence": "5 (natural articulation)"
+      }
+    },
+    "effects": {
+      "distortion": "None - purely clean acoustic tone",
+      "reverb": "Light room reverb for natural ambiance",
+      "other": "None needed - the song relies on the natural acoustic guitar tone"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic chord shapes and a simplified strummed version of the verse",
+      "steps": [
+        "Master Am, Em, G, D, and C open chord shapes",
+        "Practice smooth transitions between these chords with simple downstrokes",
+        "Learn a basic down-up strumming pattern for the chorus section",
+        "Play a simplified version strumming all sections before attempting fingerpicking"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "focus": "Develop the fingerpicking pattern and master the dynamic contrast between sections",
+      "steps": [
+        "Learn the p-i-m-a-m-i fingerpicking pattern on a single chord",
+        "Apply the pattern across all verse chords with smooth bass note transitions",
+        "Practice the transition from fingerpicking (verse) to strumming (chorus)",
+        "Work on dynamic control - quiet verse, building pre-chorus, powerful chorus"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "advanced": {
+      "focus": "Add embellishments, perfect the feel, and deliver a complete performance",
+      "steps": [
+        "Add hammer-on and pull-off embellishments within the fingerpicking pattern",
+        "Refine the double-time feel in the chorus for authentic groove",
+        "Practice performing the complete song with full dynamic arc",
+        "Work on singing while playing or performing with a vocalist"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Starting the fingerpicking pattern too fast - the verse tempo is a relaxed 65 BPM",
+      "Making the verse and chorus sound dynamically similar instead of contrasting them",
+      "Losing rhythmic consistency when transitioning from fingerpicking to strumming",
+      "Buzzing or muting strings in the fingerpicking pattern due to poor finger placement"
+    ],
+    "practiceRoutine": [
+      "Spend 10 minutes on the fingerpicking pattern alone with a metronome at 50 BPM",
+      "Practice chord transitions with the picking pattern: 4 bars per chord, cycling through Am-Em-G-D",
+      "Work on the transition zone: 2 bars fingerpicking then 2 bars strumming, back and forth",
+      "Play through the full song structure once, focusing on dynamic contrast between sections"
+    ],
+    "focusAreas": [
+      "Independent finger movement in the picking hand (thumb vs. fingers)",
+      "Smooth and seamless transition from fingerpicking to strumming technique",
+      "Dynamic range: achieving genuine quiet in the verse and genuine power in the chorus",
+      "Consistent tempo maintenance despite the changing feel between sections"
+    ],
+    "metronomeWork": [
+      "Practice fingerpicking pattern at 50 BPM, gradually increase to 65 BPM",
+      "Work on the double-time strumming feel: set metronome to 65 BPM, strum eighth notes",
+      "Practice the pre-chorus transition at 60 BPM to ensure smooth technique change",
+      "Full song play-through at 65 BPM to check that all sections maintain consistent tempo"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Cherry Wine",
+        "difficulty": "Intermediate",
+        "similarity": "Similar fingerpicking approach with intimate, dynamic acoustic arrangement"
+      },
+      {
+        "title": "Work Song",
+        "difficulty": "Intermediate",
+        "similarity": "Blues-influenced acoustic song with rhythmic fingerpicking and dynamic builds"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
+        "difficulty": "Intermediate",
+        "similarity": "Classic fingerpicking pattern song with arpeggiated chord progressions"
+      },
+      {
+        "title": "The Night We Met",
+        "artist": "Lord Huron",
+        "difficulty": "Beginner",
+        "similarity": "Similar indie-folk dynamic contrast between soft verses and fuller choruses"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "House of the Rising Sun",
+        "artist": "The Animals",
+        "difficulty": "Beginner",
+        "similarity": "Simpler fingerpicking pattern to build foundational finger independence"
+      },
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Advanced",
+        "similarity": "More complex fingerpicking with independent bass and melody lines"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 86,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "2010s",
+    "iconicRiff": false,
+    "tags": [
+      "indie-rock",
+      "blues-rock",
+      "fingerpicking",
+      "dynamics"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

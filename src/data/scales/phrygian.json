@@ -1,0 +1,368 @@
+{
+  "scaleInfo": {
+    "name": "Phrygian Mode",
+    "alternateName": "Phrygian Scale",
+    "scaleType": "Heptatonic (Mode)",
+    "noteCount": 7,
+    "intervalPattern": "H-W-W-W-H-W-W",
+    "character": "Dark, exotic, Spanish-flavored",
+    "mood": ["dark", "exotic", "Spanish", "mysterious", "intense"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - \u266d2 - \u266d3 - 4 - 5 - \u266d6 - \u266d7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Minor 2nd (Supertonic) - Characteristic tone",
+      "Minor 3rd (Mediant)",
+      "Perfect 4th (Subdominant)",
+      "Perfect 5th (Dominant)",
+      "Minor 6th (Submediant)",
+      "Minor 7th (Subtonic)",
+      "Octave"
+    ],
+    "mode": "Phrygian (3rd mode of major scale)",
+    "relativeScale": {
+      "name": "Major Scale",
+      "relationship": "Parent Major Scale",
+      "intervalDistance": "Major 3rd below the Phrygian root (E Phrygian = C Major)"
+    },
+    "parallelScale": {
+      "name": "Natural Minor Scale",
+      "differences": ["Lowered 2nd (flat 2nd vs natural 2nd)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "E Phrygian",
+      "notes": "E - F - G - A - B - C - D - E",
+      "keySignature": "No sharps or flats",
+      "accidentals": "None",
+      "commonUse": "Most common Phrygian key on guitar, open position friendly, essential for flamenco and metal"
+    },
+    {
+      "key": "A Phrygian",
+      "notes": "A - B\u266d - C - D - E - F - G - A",
+      "keySignature": "1 flat (B\u266d)",
+      "accidentals": "B\u266d",
+      "commonUse": "Popular for metal riffs and Middle Eastern-flavored compositions"
+    },
+    {
+      "key": "B Phrygian",
+      "notes": "B - C - D - E - F# - G - A - B",
+      "keySignature": "1 sharp (F#)",
+      "accidentals": "F#",
+      "commonUse": "Higher position playing, great for dark metal solos and progressive rock"
+    },
+    {
+      "key": "D Phrygian",
+      "notes": "D - E\u266d - F - G - A - B\u266d - C - D",
+      "keySignature": "2 flats (B\u266d, E\u266d)",
+      "accidentals": "B\u266d, E\u266d",
+      "commonUse": "Jazz and fusion contexts, darker coloring over minor chords"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (E Phrygian)",
+        "description": "Natural guitar key with open strings. The flat 2nd (F natural) against the open E root creates the signature Phrygian tension.",
+        "fretDiagram": "Uses open strings and first 3 frets, strings 6-1",
+        "alphaTex": "",
+        "applications": ["flamenco guitar", "metal riffs", "Spanish-style compositions"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position (A Phrygian)",
+        "description": "Moveable box pattern starting on the 5th fret, ideal for metal and fusion soloing across the neck.",
+        "fretDiagram": "5th-8th frets, box pattern",
+        "alphaTex": "",
+        "applications": ["metal solos", "fusion improvisation", "dark atmospheric passages"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "7th Position (B Phrygian)",
+        "description": "Higher register position for expressive lead work and dark melodic phrasing in progressive and metal contexts.",
+        "fretDiagram": "7th-10th frets, extended range",
+        "alphaTex": "",
+        "applications": ["progressive metal", "film score melodies", "exotic lead lines"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "Open (E Phrygian)",
+        "frets": "0-3",
+        "difficulty": "Beginner",
+        "usage": "Flamenco, metal riffs, Spanish-style guitar"
+      },
+      {
+        "position": "5th Fret (A Phrygian)",
+        "frets": "5-8",
+        "difficulty": "Intermediate",
+        "usage": "Metal solos, fusion, dark improvisation"
+      },
+      {
+        "position": "7th Fret (B Phrygian)",
+        "frets": "7-10",
+        "difficulty": "Intermediate",
+        "usage": "Progressive rock, higher register lead work"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "i",
+        "chord": "Em",
+        "quality": "Minor",
+        "function": "Tonic - Dark minor center with exotic coloring from the flat 2nd",
+        "notes": "E - G - B"
+      },
+      {
+        "degree": "\u266dII",
+        "chord": "F",
+        "quality": "Major",
+        "function": "Supertonic - Characteristic Phrygian chord, the major flat-II creates the signature sound",
+        "notes": "F - A - C"
+      },
+      {
+        "degree": "\u266dIII",
+        "chord": "G",
+        "quality": "Major",
+        "function": "Mediant - Relative major, bright contrast to the dark tonic",
+        "notes": "G - B - D"
+      },
+      {
+        "degree": "iv",
+        "chord": "Am",
+        "quality": "Minor",
+        "function": "Subdominant - Standard minor subdominant function",
+        "notes": "A - C - E"
+      },
+      {
+        "degree": "v\u00b0",
+        "chord": "Bdim",
+        "quality": "Diminished",
+        "function": "Dominant - Diminished quality, weak dominant adds to the modal instability",
+        "notes": "B - D - F"
+      },
+      {
+        "degree": "\u266dVI",
+        "chord": "C",
+        "quality": "Major",
+        "function": "Submediant - Major chord providing harmonic color and contrast",
+        "notes": "C - E - G"
+      },
+      {
+        "degree": "\u266dvii",
+        "chord": "Dm",
+        "quality": "Minor",
+        "function": "Subtonic - Minor subtonic chord, supports modal cadences",
+        "notes": "D - F - A"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Phrygian Vamp (i-\u266dII)",
+        "chords": ["Em", "F"],
+        "romanNumerals": "i - \u266dII",
+        "description": "The signature Phrygian movement - the half-step motion between the minor tonic and major flat-II creates the iconic Spanish/exotic sound",
+        "genre": "Flamenco/Metal",
+        "alphaTex": ""
+      },
+      {
+        "name": "Andalusian Cadence (i-\u266dVII-\u266dVI-\u266dII)",
+        "chords": ["Em", "Dm", "C", "F"],
+        "romanNumerals": "i - \u266dvii - \u266dVI - \u266dII",
+        "description": "Classic descending Phrygian cadence widely used in flamenco and Spanish guitar, resolving to the characteristic flat-II",
+        "genre": "Flamenco/Classical",
+        "alphaTex": ""
+      },
+      {
+        "name": "Dark Metal Riff (i-\u266dII-\u266dIII-\u266dII)",
+        "chords": ["Em", "F", "G", "F"],
+        "romanNumerals": "i - \u266dII - \u266dIII - \u266dII",
+        "description": "Heavy metal-style progression exploiting the dark Phrygian tonality with power chord movement around the flat 2nd",
+        "genre": "Metal/Progressive",
+        "alphaTex": ""
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Flamenco",
+      "usage": "Foundation of traditional flamenco guitar, providing the essential dark and passionate tonality",
+      "characteristics": ["rasgueado strumming patterns", "picado scale runs", "tremolo passages", "Andalusian cadences"],
+      "examples": ["Traditional flamenco palos (Solea, Buleria)", "Paco de Lucia compositions"]
+    },
+    {
+      "genre": "Metal",
+      "usage": "Heavy riffs and dark solos exploiting the half-step tension between root and flat 2nd",
+      "characteristics": ["palm-muted riffs on flat 2nd", "dark tremolo picking passages", "chromatic approach tones", "diminished arpeggios"],
+      "examples": ["Wherever I May Roam - Metallica", "Seek and Destroy intro - Metallica"]
+    },
+    {
+      "genre": "Film Scores",
+      "usage": "Creates exotic, mysterious, and tension-filled atmospheres for dramatic scenes",
+      "characteristics": ["suspenseful underscore", "Middle Eastern atmospheres", "dark dramatic themes", "exotic location scoring"],
+      "examples": ["Pirates of the Caribbean themes", "Middle Eastern film cues"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Wherever I May Roam",
+      "artist": "Metallica",
+      "key": "E Phrygian",
+      "genre": "Metal",
+      "usage": "Iconic Phrygian metal riff built on the half-step movement between E and F, defining the dark exotic metal sound",
+      "difficulty": "Intermediate",
+      "learningValue": "Perfect example of Phrygian mode used in heavy metal riffing"
+    },
+    {
+      "title": "White Rabbit",
+      "artist": "Jefferson Airplane",
+      "key": "E Phrygian",
+      "genre": "Psychedelic Rock",
+      "usage": "Ascending Phrygian bass line creating an exotic, hypnotic atmosphere",
+      "difficulty": "Beginner",
+      "learningValue": "Shows how Phrygian creates a mysterious, building tension in rock music"
+    },
+    {
+      "title": "Entre Dos Aguas",
+      "artist": "Paco de Lucia",
+      "key": "A Phrygian",
+      "genre": "Flamenco",
+      "usage": "Masterful flamenco composition showcasing the full expressive range of Phrygian mode",
+      "difficulty": "Advanced",
+      "learningValue": "Quintessential Phrygian flamenco piece demonstrating rasgueado, picado, and tremolo"
+    },
+    {
+      "title": "Hells Bells",
+      "artist": "AC/DC",
+      "key": "A Phrygian",
+      "genre": "Hard Rock",
+      "usage": "Opening riff uses Phrygian flavoring for a dark, ominous introduction",
+      "difficulty": "Intermediate",
+      "learningValue": "Demonstrates how Phrygian flat 2nd adds darkness to hard rock riffs"
+    },
+    {
+      "title": "War",
+      "artist": "Joe Satriani",
+      "key": "E Phrygian",
+      "genre": "Instrumental Rock",
+      "usage": "Aggressive Phrygian-based instrumental featuring the mode's dark intensity and exotic character",
+      "difficulty": "Advanced",
+      "learningValue": "Shows advanced Phrygian soloing techniques in instrumental rock context"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "E Phrygian Scale Runs",
+      "type": "Technical",
+      "difficulty": "Beginner",
+      "description": "Practice the E Phrygian scale ascending and descending in open position, focusing on the characteristic flat 2nd interval",
+      "alphaTex": "",
+      "tempo": "60-120 BPM",
+      "focus": ["scale memorization", "flat 2nd recognition"],
+      "instructions": [
+        "Start slowly with metronome at 60 BPM",
+        "Listen for the half-step between E and F that defines the Phrygian sound",
+        "Compare with E natural minor to hear the distinctive flat 2nd difference"
+      ]
+    },
+    {
+      "name": "Phrygian Flamenco Phrase",
+      "type": "Musical",
+      "difficulty": "Intermediate",
+      "description": "Practice a flamenco-style phrase using Phrygian mode over the i-bII vamp to develop authentic Spanish guitar phrasing",
+      "alphaTex": "",
+      "tempo": "80-130 BPM",
+      "focus": ["flamenco phrasing", "Spanish guitar style"],
+      "instructions": [
+        "Play over an Em-F backing track or chord vamp",
+        "Emphasize the half-step movement between E and F for authentic Phrygian flavor",
+        "Add rasgueado-style strumming accents for flamenco authenticity"
+      ]
+    },
+    {
+      "name": "Phrygian vs Natural Minor Ear Training",
+      "type": "Ear Training",
+      "difficulty": "Beginner",
+      "description": "Compare Phrygian with natural minor to hear the characteristic flat 2nd that creates the exotic, Spanish flavor",
+      "alphaTex": "",
+      "tempo": "60-100 BPM",
+      "focus": ["ear training", "flat 2nd recognition"],
+      "instructions": [
+        "Play E Phrygian, then E natural minor back to back",
+        "Focus on the 2nd degree difference (F natural vs F# in E)",
+        "Sing both scales to internalize the distinctive Phrygian darkness"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Natural Minor (Aeolian)",
+      "relationship": "Parallel minor",
+      "differences": "Phrygian has a flat 2nd instead of natural 2nd - this is the only difference",
+      "usage": "Standard minor sound without the exotic Phrygian darkness"
+    },
+    {
+      "scale": "Phrygian Dominant",
+      "relationship": "Related exotic mode",
+      "differences": "Phrygian dominant has a major 3rd instead of minor 3rd, creating an even more Spanish/Middle Eastern flavor",
+      "usage": "More intensely exotic sound, common in flamenco and Middle Eastern music"
+    },
+    {
+      "scale": "Dorian Mode",
+      "relationship": "Brighter minor mode",
+      "differences": "Dorian has a natural 2nd and natural 6th; Phrygian has flat 2nd and flat 6th for a much darker sound",
+      "usage": "Sophisticated, jazzy minor sound compared to Phrygian's dark intensity"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Natural minor scale knowledge",
+      "Basic major scale and mode concepts"
+    ],
+    "nextSteps": [
+      "Phrygian dominant mode",
+      "Harmonic minor scale"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and Phrygian sound recognition",
+        "exercises": ["Basic Phrygian scale runs", "Compare with natural minor", "Open position practice in E Phrygian"]
+      },
+      {
+        "phase": "Development (Weeks 3-6)",
+        "duration": "20-30 minutes daily",
+        "focus": "Multiple positions and genre-specific application",
+        "exercises": ["Position playing in different keys", "Flamenco-style vamps over i-bII", "Metal riff construction with flat 2nd"]
+      },
+      {
+        "phase": "Integration (Weeks 7-12)",
+        "duration": "30-45 minutes daily",
+        "focus": "Musical application in flamenco, metal, and film score contexts",
+        "exercises": ["Improvise over Phrygian backing tracks", "Learn flamenco rasgueado patterns", "Compose dark metal riffs using Phrygian"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "phrygian",
+    "tags": ["phrygian", "mode", "scales", "theory", "flamenco", "metal", "exotic", "intermediate"],
+    "category": "modes",
+    "subcategory": "church-modes",
+    "lastUpdated": "2024-01-15",
+    "sources": ["Music theory pedagogy", "Guitar education standards"]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Phrygian Mode Practice",
+    "items": [
+      { "category": "Guitar", "product": "Cordoba C5 Classical Guitar", "reason": "Nylon strings capture the authentic flamenco character of Phrygian mode" },
+      { "category": "Pedal", "product": "Boss RV-6 Reverb", "reason": "Reverb enhances the exotic, spacious quality of Phrygian mode passages" }
+    ]
+  }
+}

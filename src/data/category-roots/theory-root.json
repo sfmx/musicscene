@@ -1,0 +1,193 @@
+{
+  "pageTitle": "Music Theory for Guitarists",
+  "subtitle": "Master the language of music and unlock the fretboard with comprehensive theory lessons designed specifically for guitar players.",
+  "heroIcon": "🎼",
+  "heroDescription": "Move beyond memorizing chord shapes and scale patterns. Understand the \"why\" behind the music you play. These theory lessons are designed specifically for guitarists, connecting abstract concepts to practical fretboard application.",
+  "heroGradient": "bg-gradient-to-br from-slate-50 to-blue-50",
+  "backLink": {
+    "href": "/lessons",
+    "label": "Back to Lessons"
+  },
+  "philosophySection": {
+    "title": "Why Learn Music Theory?",
+    "items": [
+      {
+        "title": "Understand Your Fretboard",
+        "description": "See patterns instead of memorizing shapes",
+        "icon": "🎯",
+        "color": "bg-red-50 border-red-200"
+      },
+      {
+        "title": "Communicate with Musicians",
+        "description": "Speak the universal language of music",
+        "icon": "🗣️",
+        "color": "bg-blue-50 border-blue-200"
+      },
+      {
+        "title": "Write Better Songs",
+        "description": "Compose with intention and harmonic awareness",
+        "icon": "✍️",
+        "color": "bg-green-50 border-green-200"
+      },
+      {
+        "title": "Improvise Confidently",
+        "description": "Know what notes work and why they work",
+        "icon": "🎭",
+        "color": "bg-purple-50 border-purple-200"
+      }
+    ]
+  },
+  "learningPath": {
+    "title": "Recommended Learning Path",
+    "steps": [
+      {
+        "title": "Start with Intervals",
+        "description": "Learn the distances between notes and how they create harmony",
+        "color": "bg-blue-600"
+      },
+      {
+        "title": "Build Scales",
+        "description": "Understand how intervals combine to form scales and keys",
+        "color": "bg-blue-600"
+      },
+      {
+        "title": "Construct Chords",
+        "description": "Use intervals and scales to build chord structures",
+        "color": "bg-blue-600"
+      },
+      {
+        "title": "Explore Modes",
+        "description": "Discover different tonal colors and harmonic possibilities",
+        "color": "bg-blue-600"
+      },
+      {
+        "title": "Connect with Progressions",
+        "description": "Learn how chords move and create musical narratives",
+        "color": "bg-blue-600"
+      }
+    ]
+  },
+  "topicCards": {
+    "sectionTitle": "Theory Topics",
+    "items": [
+      {
+        "title": "Intervals",
+        "href": "/lessons/theory/intervals",
+        "icon": "🎵",
+        "description": "Master the building blocks of harmony and melody",
+        "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
+        "iconColor": "text-purple-600",
+        "concepts": [
+          "Perfect, Major, Minor intervals",
+          "Consonance & Dissonance",
+          "Chord construction",
+          "Melodic movement"
+        ]
+      },
+      {
+        "title": "Scales",
+        "href": "/lessons/theory/scales",
+        "icon": "🎼",
+        "description": "Understand the patterns that form melodies and harmony",
+        "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
+        "iconColor": "text-blue-600",
+        "concepts": [
+          "Major & Minor scales",
+          "Pentatonic patterns",
+          "Scale degrees",
+          "Modal scales"
+        ]
+      },
+      {
+        "title": "Chords",
+        "href": "/lessons/theory/chords",
+        "icon": "🎸",
+        "description": "Build and understand chord structures and voicings",
+        "color": "bg-green-50 border-green-200 hover:bg-green-100",
+        "iconColor": "text-green-600",
+        "concepts": [
+          "Triads & 7th chords",
+          "Extensions & alterations",
+          "Voicings",
+          "Chord inversions"
+        ]
+      },
+      {
+        "title": "Modes",
+        "href": "/lessons/theory/modes",
+        "icon": "🎹",
+        "description": "Explore the colors and moods of modal harmony",
+        "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
+        "iconColor": "text-indigo-600",
+        "concepts": [
+          "Ionian to Locrian",
+          "Modal characteristics",
+          "Jazz modes",
+          "Modal interchange"
+        ]
+      },
+      {
+        "title": "Chord Progressions",
+        "href": "/lessons/theory/progressions",
+        "icon": "🔀",
+        "description": "Learn how chords connect to create harmonic motion",
+        "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
+        "iconColor": "text-orange-600",
+        "concepts": [
+          "Common progressions",
+          "Roman numeral analysis",
+          "Voice leading",
+          "Functional harmony"
+        ]
+      }
+    ]
+  },
+  "additionalSections": [
+    {
+      "title": "Our Approach to Theory",
+      "columns": [
+        {
+          "title": "Guitar-Focused Learning",
+          "text": "Every concept is explained with guitar-specific examples and fretboard diagrams. We connect theory to the physical layout of the guitar, making abstract concepts concrete and practical.",
+          "items": [
+            "Visual fretboard representations",
+            "Practical chord voicings and fingerings",
+            "Scale patterns and position playing",
+            "Real-world song examples"
+          ]
+        },
+        {
+          "title": "Progressive Complexity",
+          "text": "Start with fundamental concepts and build complexity gradually. Each lesson builds on previous knowledge, ensuring you develop a solid foundation before moving to advanced topics.",
+          "items": [
+            "Clear prerequisite structure",
+            "Interactive exercises and examples",
+            "Multiple difficulty levels",
+            "Cross-references between topics"
+          ]
+        }
+      ]
+    }
+  ],
+  "gettingStarted": {
+    "title": "Ready to Begin?",
+    "description": "Start your music theory journey today. Whether you're a complete beginner or looking to fill gaps in your knowledge, these lessons will enhance your musical understanding and guitar playing.",
+    "links": [
+      {
+        "href": "/lessons/theory/intervals",
+        "label": "Start with Intervals",
+        "color": "bg-purple-600"
+      },
+      {
+        "href": "/lessons/theory/scales",
+        "label": "Explore Scales",
+        "color": "bg-blue-600"
+      },
+      {
+        "href": "/lessons/theory/chords",
+        "label": "Learn Chords",
+        "color": "bg-green-600"
+      }
+    ]
+  }
+}

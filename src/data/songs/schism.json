@@ -1,0 +1,509 @@
+{
+  "songInfo": {
+    "title": "Schism",
+    "artist": "Tool",
+    "album": "Lateralus",
+    "released": "2001",
+    "genre": "Progressive Metal",
+    "tempo": "Varies (47/67/87 BPM sections)",
+    "duration": "6:47",
+    "key": "D Minor",
+    "tuning": "Drop D (DADGBE)"
+  },
+  "difficulty": {
+    "overall": "Expert",
+    "rhythmGuitar": "Expert",
+    "leadGuitar": "Advanced",
+    "bass": "Expert",
+    "drums": "Expert"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D natural minor",
+          "notes": "D - E - F - G - A - Bb - C - D",
+          "application": "Foundation for the dark, brooding harmonic palette and primary riff construction"
+        },
+        {
+          "scale": "D Phrygian",
+          "notes": "D - Eb - F - G - A - Bb - C - D",
+          "application": "Used in heavier passages for the flattened 2nd degree tension"
+        },
+        {
+          "scale": "D minor pentatonic",
+          "notes": "D - F - G - A - C",
+          "application": "Guitar leads and melodic passages in the quieter sections"
+        }
+      ],
+      "modalCharacter": "Aeolian with Phrygian inflections - shifting between dark minor modes",
+      "keySignature": "1 flat (Bb) in D natural minor",
+      "relativeMinor": "D minor is the relative minor of F major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D5",
+          "Eb5",
+          "F5",
+          "Bb5"
+        ],
+        "progression": "i - bII - III - VI",
+        "description": "Dissonant power chord movement emphasizing the Phrygian bII interval for maximum tension and darkness"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff (Bass-led)",
+          "progression": "Dm - Eb - F - Dm",
+          "romanNumerals": "i - bII - III - i",
+          "description": "The iconic bass riff that opens the song, built on a sinuous chromatic line in 5/8 time"
+        },
+        {
+          "section": "Verse (Guitar enters)",
+          "progression": "D5 - F5 - Bb5 - C5",
+          "romanNumerals": "i - III - VI - VII",
+          "description": "Guitar doubles the bass pattern and adds harmonic depth with power chord stabs"
+        },
+        {
+          "section": "Chorus",
+          "progression": "D5 - F5 - G5 - Bb5",
+          "romanNumerals": "i - III - iv - VI",
+          "description": "More open harmonic movement with the full band delivering the emotional core"
+        },
+        {
+          "section": "Heavy Interlude",
+          "progression": "D5 - Eb5 - D5 - C5",
+          "romanNumerals": "i - bII - i - VII",
+          "description": "Crushing palm-muted section with chromatic movement creating intense aggression"
+        }
+      ],
+      "harmonicFunction": [
+        "D5 (i) - Tonic center, constantly returned to as the grounding point",
+        "Eb5 (bII) - Phrygian tension, creates the signature dissonant color",
+        "F5 (III) - Relative major area, provides contrast and brief moments of brightness",
+        "G5 (iv) - Subdominant minor movement in chorus sections",
+        "Bb5 (VI) - Major chord providing harmonic breadth",
+        "C5 (VII) - Subtonic chord creating momentum back to tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Odd Time Signature Playing",
+      "description": "The song cycles through multiple time signatures including 5/8, 7/8, 6/8, and 12/8, requiring the guitarist to internalize each meter and transition between them fluidly",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Main riff is in 5/8 time: groups of 5 eighth notes per measure",
+          "Chorus sections shift to 6/8 and 12/8 for a more flowing feel",
+          "Some passages use 7/8 (groupings of 4+3 or 3+4)",
+          "The meter changes are not random - they follow the lyrical and melodic phrasing",
+          "The overall effect is a 'breathing' rhythm that shifts organically"
+        ],
+        "sequence": [
+          "Learn to count 5/8 time: 1-2-3-4-5, 1-2-3-4-5 with emphasis on beat 1",
+          "Practice the main riff strictly in 5/8 until it feels natural",
+          "Learn the 7/8 sections separately: count 1-2-3-4-5-6-7",
+          "Practice transitioning between 5/8 and 6/8 at the chorus entry",
+          "Finally, work through the complete meter map of the song"
+        ],
+        "tips": [
+          "Do NOT try to feel this in 4/4 - embrace the odd meters",
+          "Use a metronome that can accent beat 1 of odd-time groupings",
+          "Listen to the bass drum pattern for orientation on where beat 1 falls",
+          "Practice counting aloud while playing until the meters are internalized",
+          "It helps to think of 5/8 as 3+2 (long-short) or 2+3 (short-long)"
+        ],
+        "chords": [
+          "D5",
+          "Eb5",
+          "F5"
+        ],
+        "progression": "D5 - Eb5 - F5 (in 5/8 time)"
+      }
+    },
+    {
+      "name": "Palm Muting in Unusual Meters",
+      "description": "Heavy palm-muted power chord riffs played in odd time signatures, requiring precise right-hand damping while maintaining complex rhythmic subdivisions",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Palm muting must be tight and consistent for the heavy sections",
+          "The muted notes serve as rhythmic anchors in the complex time signatures",
+          "Alternate between fully muted and open power chord hits for rhythmic contrast",
+          "The muting pattern itself follows the odd-time grouping structure",
+          "Drop D tuning provides the low D for massive palm-muted power chord sound"
+        ],
+        "sequence": [
+          "Position palm edge lightly on the strings at the bridge",
+          "Practice steady eighth-note palm muting on the low D string in 5/8",
+          "Add chord changes while maintaining the muting pattern",
+          "Practice the heavier sections where palm muting alternates with open hits",
+          "Work on the transitions between palm-muted and open riff sections"
+        ],
+        "tips": [
+          "The palm mute pressure determines the tightness of the sound - experiment",
+          "In Drop D, the low D string is very loose - adjust palm pressure accordingly",
+          "Practice the muting pattern separately from the fretting hand chord changes",
+          "Listen to Justin Chancellor's bass tone to understand the desired tightness",
+          "Record yourself and compare the rhythmic precision to the original"
+        ],
+        "chords": [
+          "D5",
+          "Eb5",
+          "C5",
+          "Bb5"
+        ],
+        "progression": "D5 - Eb5 - D5 - C5 (Heavy Interlude)"
+      }
+    },
+    {
+      "name": "Polyrhythmic Awareness",
+      "description": "Understanding and performing the guitar part while the bass, drums, and vocals operate in different rhythmic subdivisions simultaneously",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The guitar and bass often play different rhythmic groupings simultaneously",
+          "Danny Carey's drum patterns create polyrhythmic layers against the guitar",
+          "The guitar must maintain its own rhythmic identity while locking with the ensemble",
+          "Some sections feature the guitar playing in 3 against the drums playing in 4",
+          "This requires total rhythmic independence and confidence in your part"
+        ],
+        "sequence": [
+          "Learn your guitar part in isolation with a metronome until rock-solid",
+          "Listen to the drum pattern separately to understand its rhythmic layer",
+          "Practice playing your guitar part while listening to isolated drum tracks",
+          "Gradually add bass and other instruments to your practice context",
+          "Focus on locking with specific anchor points where all instruments align"
+        ],
+        "tips": [
+          "Do not try to follow the drums - trust your own internal count",
+          "Identify the 'downbeats' where all instruments sync up and use those as checkpoints",
+          "If you lose your place, find the next sync point and re-enter there",
+          "Practice with a subdivided metronome (clicking eighth notes) for maximum precision",
+          "This skill develops over months - be patient with the process"
+        ],
+        "chords": [],
+        "progression": "Various throughout the song"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Bass)",
+      "timeStamp": "0:00-1:12",
+      "technique": "Listening and Rest (Bass Feature)",
+      "key": "D Minor",
+      "description": "Extended bass guitar introduction in 5/8 time - the guitar is silent for this first minute. Study the bass riff to understand the song's rhythmic DNA",
+      "chords": [
+        "Dm"
+      ],
+      "progression": "Dm (bass only, 5/8 time)",
+      "notes": [
+        "The guitar does not play during this section - it is a bass feature",
+        "Use this time to internalize the 5/8 feel by counting along",
+        "The bass riff establishes the rhythmic and melodic motif for the whole song",
+        "Understanding this bass line is critical for the guitar entries later"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "1:12-2:20",
+      "technique": "Odd Time Riffing",
+      "key": "D Minor",
+      "description": "Guitar enters doubling the bass figure with power chords in 5/8 time, building tension with chromatic movement and tight palm muting",
+      "chords": [
+        "D5",
+        "F5",
+        "Eb5"
+      ],
+      "progression": "D5 - F5 - Eb5 - D5 (in 5/8)",
+      "notes": [
+        "Guitar enters locked with the bass in 5/8 time",
+        "Tight palm muting on the low D string (Drop D tuning)",
+        "The chromatic movement between D5 and Eb5 creates the signature tension",
+        "Stay locked with the bass player's rhythm at all times"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Pre-Chorus",
+      "timeStamp": "2:20-2:55",
+      "technique": "Meter Transition",
+      "key": "D Minor",
+      "description": "Transitional section where the time signature begins shifting, building momentum toward the chorus with increasing rhythmic complexity",
+      "chords": [
+        "D5",
+        "F5",
+        "G5"
+      ],
+      "progression": "D5 - F5 - G5 (shifting meter)",
+      "notes": [
+        "The time signature begins transitioning from 5/8 toward 6/8",
+        "Feel the meter stretching and expanding as the section progresses",
+        "Dynamic intensity increases to set up the chorus",
+        "Listen for the drum pattern changes that signal the meter shift"
+      ],
+      "alphaTab": "10.6 13.6 10.5 12.5 10.4 12.4 | 10.3 12.3 10.2 13.2 10.1 13.1 | 13.1 10.1 13.2 10.2 12.3 10.3 | 12.4 10.4 12.5 10.5 13.6 10.6 |",
+      "exerciseLabel": "Minor Pentatonic Scale Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "2:55-3:50",
+      "technique": "Open Power Chords in 6/8",
+      "key": "D Minor",
+      "description": "The emotional core of the song with more open, ringing power chords in 6/8 time, providing a sense of release after the tight verse sections",
+      "chords": [
+        "D5",
+        "F5",
+        "G5",
+        "Bb5"
+      ],
+      "progression": "D5 - F5 - G5 - Bb5 (in 6/8)",
+      "notes": [
+        "More open voicings compared to the tight, palm-muted verse",
+        "The 6/8 feel provides a more flowing, almost waltz-like quality",
+        "Let power chords ring slightly longer than in the verse",
+        "This is the most emotionally direct section - play with conviction"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Interlude",
+      "timeStamp": "3:50-4:45",
+      "technique": "Heavy Palm-Muted Riffing",
+      "key": "D Minor",
+      "description": "Crushing instrumental interlude with the heaviest palm-muted riffing, featuring the Phrygian bII movement in an aggressive rhythmic pattern",
+      "chords": [
+        "D5",
+        "Eb5",
+        "C5"
+      ],
+      "progression": "D5 - Eb5 - D5 - C5 (heavy, in 7/8)",
+      "notes": [
+        "The heaviest section of the song with massive palm-muted tone",
+        "The Eb5 (bII) creates maximum dissonance against the D tonic",
+        "Rhythm shifts to 7/8 in parts, requiring careful counting",
+        "This section demands physical endurance and rhythmic precision simultaneously"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "4:45-5:25",
+      "technique": "Clean Arpeggiated Figures",
+      "key": "D Minor",
+      "description": "Quieter bridge section with cleaner guitar tones and more melodic content, providing contrast before the final build",
+      "chords": [
+        "Dm",
+        "F",
+        "Bb"
+      ],
+      "progression": "Dm - F - Bb (cleaner voicings)",
+      "notes": [
+        "Pull back from distortion for a cleaner, more articulate tone",
+        "Arpeggiated figures replace the heavy power chord riffs",
+        "This section shows Tool's dynamic range and compositional depth",
+        "Listen for the gradual build that will return to the heavy sound"
+      ],
+      "alphaTab": "10.6 12.6 13.6 15.6 | 10.5 12.5 13.5 15.5 | 10.4 12.4 13.4 15.4 | 10.3 12.3 10.2 13.2 |",
+      "exerciseLabel": "Alternate Picking Exercise"
+    },
+    {
+      "name": "Solo",
+      "timeStamp": "5:25-5:55",
+      "technique": "Melodic Lead Guitar",
+      "key": "D Minor",
+      "description": "Adam Jones's characteristically textural guitar solo using minor pentatonic phrases with delay and feedback effects",
+      "chords": [
+        "Dm",
+        "F5"
+      ],
+      "progression": "Dm - F5 (under solo)",
+      "notes": [
+        "The solo is melodic and textural rather than shred-oriented",
+        "Uses D minor pentatonic with expressive bends and vibrato",
+        "Delay effect creates rhythmic echoes that interact with the odd meters",
+        "Adam Jones's soloing style emphasizes feel and texture over speed"
+      ],
+      "alphaTab": "13.1 10.1 13.2 10.2 | 12.3 10.3 12.4 10.4 | 10.3 12.3 10.2 13.2 | 13.1 10.1 10.2 13.2 |",
+      "exerciseLabel": "Minor Pentatonic Lick Exercise"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "5:55-6:47",
+      "technique": "Final Build and Resolution",
+      "key": "D Minor",
+      "description": "Extended outro building from the verse riff through increasing intensity to the song's final resolution on the D minor tonic",
+      "chords": [
+        "D5",
+        "Eb5",
+        "F5"
+      ],
+      "progression": "D5 - Eb5 - F5 - D5 (returning to 5/8)",
+      "notes": [
+        "Returns to the original 5/8 riff pattern from the verse",
+        "Builds in intensity through repetition and dynamic increase",
+        "The final measures resolve definitively to D minor",
+        "The ending is deliberately abrupt after the extended build"
+      ],
+      "alphaTab": "10.6 12.5 12.4 10.6 12.5 12.4 | 15.6 17.5 17.4 15.6 17.5 17.4 | 17.6 19.5 19.4 17.6 19.5 19.4 | 10.6 12.5 12.4 10.6 12.5 12.4 |",
+      "exerciseLabel": "Dynamic Power Chord Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Custom (Adam Jones signature or similar)",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Epiphone Les Paul Custom",
+        "Any mahogany-body guitar with humbuckers"
+      ],
+      "pickup": "Humbuckers - bridge pickup for heavy riffs, neck pickup for cleaner sections"
+    },
+    "amp": {
+      "recommended": "Mesa Boogie Dual Rectifier or Triple Rectifier",
+      "alternatives": [
+        "Mesa Boogie Mark series",
+        "Diezel VH4",
+        "Marshall JCM800 with overdrive pedal"
+      ],
+      "settings": {
+        "gain": "7-8 (high gain for the heavy sections, pulled back for cleans)",
+        "treble": "6 (defined highs without harshness)",
+        "middle": "7 (strong mids are essential for the Tool guitar tone)",
+        "bass": "5 (tight, controlled low end - especially important in Drop D)",
+        "presence": "6 (articulate presence for riff definition)"
+      }
+    },
+    "effects": {
+      "distortion": "High gain from amp, optional overdrive pedal (Boss OD-1 style) for boost",
+      "reverb": "Minimal - dry tone for rhythmic precision",
+      "other": "Delay pedal (Boss DD-3 or similar) for solo sections and atmospheric parts; flanger for specific textural passages"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Understand the 12-bar form of the song, learn the basic power chord shapes in Drop D tuning",
+      "steps": [
+        "Set your guitar to Drop D tuning (low E string down to D)",
+        "Learn D5, Eb5, F5, G5, Bb5, and C5 power chord shapes in Drop D",
+        "Practice simple power chord riffs in 5/8 time at a very slow tempo",
+        "Listen to the song repeatedly to internalize the odd-time feel before playing"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "intermediate": {
+      "focus": "Master the main riff in 5/8 time and learn to navigate the meter changes",
+      "steps": [
+        "Learn the verse riff in 5/8 time at 50% tempo with a metronome",
+        "Practice the chorus section in 6/8 time separately",
+        "Work on transitioning between 5/8 and 6/8 at the section boundaries",
+        "Develop tight palm muting technique for the heavy interlude sections"
+      ],
+      "timeEstimate": "4-6 weeks"
+    },
+    "advanced": {
+      "focus": "Perform the complete song with all meter changes, dynamics, and the guitar solo",
+      "steps": [
+        "Build all sections up to performance tempo with accurate meter changes",
+        "Learn the guitar solo with delay effect for authentic sound",
+        "Practice the complete song structure from memory with all transitions",
+        "Work on performing with a band or backing track to develop ensemble locking"
+      ],
+      "timeEstimate": "8-12 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Trying to feel the song in 4/4 time instead of embracing the actual odd meters",
+      "Losing count during meter transitions and falling out of sync with the band",
+      "Over-distorting the tone and losing the tight, articulate quality of the palm-muted sections",
+      "Neglecting the quieter, dynamic sections and playing everything at the same volume"
+    ],
+    "practiceRoutine": [
+      "Warm up by counting and clapping in 5/8 and 7/8 time for 5 minutes each",
+      "Practice the verse riff in 5/8 at 60% tempo with a click track for 10 minutes",
+      "Work on the heavy interlude palm muting section separately for 10 minutes",
+      "Play through the full song structure with a backing track, noting problem transitions"
+    ],
+    "focusAreas": [
+      "Internalizing odd time signatures until they feel as natural as 4/4",
+      "Tight, precise palm muting technique in Drop D tuning",
+      "Smooth transitions between different time signatures at section boundaries",
+      "Dynamic control between the crushing heavy sections and the quieter passages"
+    ],
+    "metronomeWork": [
+      "Set metronome to click on beat 1 of 5/8 bars and practice locking with it",
+      "Practice the 7/8 sections with a metronome clicking every beat to ensure accuracy",
+      "Work on the meter transitions: 4 bars of 5/8 then 4 bars of 6/8, then 7/8",
+      "Use a subdivided (eighth-note) click at slow tempos to train precise rhythmic placement"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Lateralus",
+        "difficulty": "Expert",
+        "similarity": "Even more complex polyrhythms and time signature changes built around the Fibonacci sequence"
+      },
+      {
+        "title": "Forty Six & 2",
+        "difficulty": "Advanced",
+        "similarity": "More accessible entry point into Tool's rhythm guitar style with odd-time riffs"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "The Dance of Eternity",
+        "artist": "Dream Theater",
+        "difficulty": "Expert",
+        "similarity": "Rapid time signature changes and complex progressive metal rhythms"
+      },
+      {
+        "title": "Rearviewmirror",
+        "artist": "Pearl Jam",
+        "difficulty": "Intermediate",
+        "similarity": "Drop D riffing with dynamic builds, more accessible introduction to the style"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Forty Six & 2",
+        "artist": "Tool",
+        "difficulty": "Advanced",
+        "similarity": "Slightly less complex Tool song to build comfort with their style before tackling Schism"
+      },
+      {
+        "title": "Lateralus",
+        "artist": "Tool",
+        "difficulty": "Expert",
+        "similarity": "The next level of complexity after mastering Schism's time signatures"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 80,
+    "dateAdded": "2026-03-04",
+    "featured": false,
+    "decade": "2000s",
+    "iconicRiff": true,
+    "tags": [
+      "prog-metal",
+      "odd-time",
+      "polyrhythm",
+      "complex-rhythm"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

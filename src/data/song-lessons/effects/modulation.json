@@ -1,0 +1,308 @@
+{
+  "slug": "modulation",
+  "category": "effects",
+  "pageTitle": "Modulation Effects",
+  "subtitle": "Master chorus, phaser, flanger, and tremolo to create movement and texture in your guitar sound",
+  "heroGradient": "from-purple-50 to-pink-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Understanding Modulation",
+    "text": "Modulation effects work by continuously varying certain parameters of your guitar signal\u2014whether that's pitch, amplitude, frequency, or phase. This creates movement, texture, and life in your sound, transforming static tones into dynamic, evolving textures that can enhance everything from subtle rhythm parts to otherworldly lead sounds.",
+    "quote": "Modulation effects don't just change your sound\u2014they make it breathe, pulse, and move through space, adding the organic quality that makes electronic effects feel musical and alive."
+  },
+  "sections": [
+    {
+      "title": "LFO: The Heart of Modulation",
+      "bgColor": "blue-50",
+      "borderColor": "blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Common LFO Wave Shapes",
+          "description": "Low Frequency Oscillator (LFO) is the engine behind most modulation effects. It generates a repeating wave that modulates various parameters of your signal.",
+          "items": [
+            "Sine: Smooth, natural modulation",
+            "Triangle: Linear up/down movement",
+            "Square: Abrupt on/off switching",
+            "Sawtooth: Gradual rise, sudden drop"
+          ]
+        },
+        {
+          "title": "Key Parameters",
+          "items": [
+            "Rate/Speed: How fast the LFO cycles",
+            "Depth: How much the parameter changes",
+            "Phase: Starting point of the wave cycle",
+            "Sync: Tempo-locked or free-running"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chorus: Doubling and Thickness",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Chorus Works",
+          "description": "Chorus creates multiple \"voices\" by slightly delaying and pitch-modulating copies of your signal. The subtle pitch variations simulate the natural imperfections when multiple musicians play the same part.",
+          "fields": [
+            { "label": "Rate", "value": "LFO speed (0.1-10 Hz)" },
+            { "label": "Depth", "value": "Pitch modulation amount" },
+            { "label": "Mix", "value": "Wet/dry balance" },
+            { "label": "Delay Time", "value": "Base delay (5-40ms)" }
+          ]
+        },
+        {
+          "title": "Musical Applications",
+          "items": [
+            "Clean Rhythm: Adds richness without distortion",
+            "Arpeggios: Creates shimmering, harp-like textures",
+            "Ballad Leads: Smooth, singing sustain",
+            "12-String Simulation: Octave chorus for jangly sound",
+            "Pro Tip: Use subtle chorus (low rate, shallow depth) for natural thickening, or dramatic settings for '80s-style textures"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Phaser: Sweeping Frequency Notches",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Phaser Works",
+          "description": "Phaser splits your signal, delays one copy slightly, then mixes them back together. This creates moving notches in the frequency spectrum, producing the characteristic \"swooshing\" sound.",
+          "fields": [
+            { "label": "Rate", "value": "Sweep speed" },
+            { "label": "Depth", "value": "Range of frequency sweep" },
+            { "label": "Feedback", "value": "Resonance and intensity" },
+            { "label": "Stages", "value": "Number of phase-shift stages (4, 6, 8, 12)" }
+          ]
+        },
+        {
+          "title": "Musical Applications",
+          "items": [
+            "Funk Rhythm: Percussive, rhythmic sweeping",
+            "Psychedelic Leads: Swirling, hypnotic textures",
+            "Space Rock: Atmospheric, otherworldly sounds",
+            "Progressive Rock: Complex, evolving timbres",
+            "Stage Count: More stages = deeper notches and more dramatic effect. 4-stage is subtle, 12-stage is very pronounced"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flanger: The Jet Engine Effect",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Flanger Works",
+          "description": "Similar to chorus but with shorter delays (0.5-10ms) and more feedback. The very short delay times create dramatic comb filtering effects, producing the characteristic \"jet plane\" swoosh.",
+          "fields": [
+            { "label": "Rate", "value": "LFO speed" },
+            { "label": "Depth", "value": "Delay time modulation" },
+            { "label": "Feedback", "value": "Regeneration amount" },
+            { "label": "Manual", "value": "Center delay time" }
+          ]
+        },
+        {
+          "title": "Musical Applications",
+          "items": [
+            "Rock Solos: Dramatic sweeps and buildups",
+            "Ambient Textures: Slow, evolving soundscapes",
+            "Sound Effects: Jet planes, whooshes",
+            "Filter Sweeps: Manual control for expressive sweeps",
+            "High Feedback Warning: Extreme feedback settings can create oscillation and very loud sounds. Start conservatively!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tremolo: Amplitude Modulation",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "How Tremolo Works",
+          "description": "Tremolo modulates the amplitude (volume) of your signal, creating rhythmic pulsing. It's one of the oldest effects, built into many vintage amplifiers.",
+          "fields": [
+            { "label": "Rate", "value": "Pulse speed" },
+            { "label": "Depth", "value": "Volume variation amount" },
+            { "label": "Waveform", "value": "Shape of modulation" },
+            { "label": "Hard/Soft", "value": "Abrupt vs. smooth transitions" }
+          ]
+        },
+        {
+          "title": "Musical Applications",
+          "items": [
+            "Surf Rock: Fast, aggressive tremolo",
+            "Country: Subtle rhythmic pulsing",
+            "Ambient: Slow, breathing textures",
+            "Rhythmic Patterns: Synced to song tempo",
+            "Tremolo vs. Vibrato: Tremolo modulates volume, vibrato modulates pitch. Many guitar amps labeled \"vibrato\" actually produce tremolo!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modulation in Famous Songs",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Money for Nothing\" - Dire Straits",
+          "description": "Chorus on the main riff guitar",
+          "badge": { "text": "Chorus", "color": "purple" },
+          "fields": [
+            { "label": "Settings", "value": "Medium rate chorus, moderate depth, clean tone with subtle drive, wide stereo spread" },
+            { "label": "Musical Effect", "value": "Adds richness to single-note riff, creates '80s character, supports the song's polished production, enhances the fingerpicked technique" }
+          ]
+        },
+        {
+          "title": "\"Barracuda\" - Heart",
+          "description": "Phaser on the main riff",
+          "badge": { "text": "Phaser", "color": "orange" },
+          "fields": [
+            { "label": "Settings", "value": "Slow to medium rate phaser, high feedback for intensity, 6-8 stage phaser, mixed with overdriven amp" },
+            { "label": "Musical Effect", "value": "Creates menacing, aggressive character, emphasizes the riff's rhythm, adds movement to sustained notes, defines the song's sonic signature" }
+          ]
+        },
+        {
+          "title": "\"Miserlou\" - Dick Dale",
+          "description": "Fast tremolo with reverb",
+          "badge": { "text": "Tremolo", "color": "green" },
+          "fields": [
+            { "label": "Settings", "value": "Very fast tremolo rate, deep intensity, combined with spring reverb, clean bright amp tone" },
+            { "label": "Musical Effect", "value": "Creates urgent, driving energy, defines surf rock aesthetic, adds percussive element, emphasizes the fast picking technique" }
+          ]
+        },
+        {
+          "title": "\"Ain't Talkin' 'Bout Love\" - Van Halen",
+          "description": "Flanger on the main riff",
+          "badge": { "text": "Flanger", "color": "cyan" },
+          "fields": [
+            { "label": "Settings", "value": "Medium rate flanger, moderate feedback, manual sweep for emphasis, high-gain Marshall tone" },
+            { "label": "Musical Effect", "value": "Adds jet-like swooshes, enhances the riff's aggression, creates '70s hard rock character, complements Eddie's playing style" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Creative Modulation Techniques",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Parameter Control",
+          "fields": [
+            { "label": "Expression Pedal Control", "value": "Control rate or depth with an expression pedal for real-time modulation shaping." },
+            { "label": "Tempo Sync", "value": "Lock LFO rates to song tempo for rhythmically relevant modulation (1/4 notes, 1/8 notes, etc.)." },
+            { "label": "Manual Mode", "value": "Turn off the LFO and manually control the sweep for precise, musical phrasing." }
+          ]
+        },
+        {
+          "title": "Effect Combinations",
+          "fields": [
+            { "label": "Chorus + Delay", "value": "Classic combination for lush, spacious lead sounds." },
+            { "label": "Phaser + Distortion", "value": "Place phaser after distortion for dramatic, harmonically rich sweeps." },
+            { "label": "Tremolo + Reverb", "value": "Pulsing ambient textures, great for atmospheric parts." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Modulation Mistakes",
+      "bgColor": "red-50",
+      "borderColor": "red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "items": [
+            "Using the same rate for all modulation effects",
+            "Maximum depth settings that overwhelm the dry signal",
+            "Ignoring the musical context and tempo",
+            "Combining too many modulation effects simultaneously",
+            "Using effects as a crutch for poor playing technique"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Start with subtle settings and gradually increase",
+            "Match modulation rates to musical phrases",
+            "Use tempo sync when appropriate",
+            "Consider the other instruments in the arrangement",
+            "Learn to play cleanly before adding modulation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Modulation Concepts",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Phase Relationships",
+          "description": "When using multiple modulation effects, consider how their LFOs interact",
+          "items": [
+            "In-phase: Effects reinforce each other",
+            "Out-of-phase: Creates complex, evolving patterns",
+            "Different rates: Creates beating and interference patterns"
+          ]
+        },
+        {
+          "title": "Stereo Modulation",
+          "description": "Stereo modulation effects can create width and movement",
+          "items": [
+            "Opposite phase LFOs for ping-pong effects",
+            "Different rates on left/right for complexity",
+            "Stereo chorus for wide, enveloping textures"
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Modulation Practice Exercises",
+    "exercises": [
+      {
+        "title": "Exercise 1: LFO Rate Relationships",
+        "items": [
+          "Set up a chorus effect and play a sustained chord",
+          "Very slow (0.1-0.5 Hz): Subtle, almost imperceptible movement",
+          "Slow (0.5-2 Hz): Natural, musical breathing",
+          "Medium (2-5 Hz): Obvious but musical",
+          "Fast (5-10 Hz): Dramatic, effect-heavy",
+          "Notice how each rate creates a different emotional impact and musical character"
+        ]
+      },
+      {
+        "title": "Exercise 2: Effect Comparison",
+        "items": [
+          "Play the same musical phrase (try an Am pentatonic run) through each modulation effect",
+          "Chorus: Notice the thickening and shimmer",
+          "Phaser: Hear the frequency notches sweeping",
+          "Flanger: Feel the dramatic jet-plane swooshes",
+          "Tremolo: Experience the rhythmic pulsing",
+          "This helps you understand when each effect is most musically appropriate"
+        ]
+      },
+      {
+        "title": "Exercise 3: Tempo-Synced Modulation",
+        "items": [
+          "Use a metronome at 120 BPM and practice these tempo relationships",
+          "Tremolo at quarter note rate (2 Hz at 120 BPM)",
+          "Phaser at half note rate (1 Hz at 120 BPM)",
+          "Chorus at whole note rate (0.5 Hz at 120 BPM)",
+          "Learn to hear how modulation can enhance or fight against the song's rhythm"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/wah", "label": "Wah & Filter Effects" },
+    { "href": "/lessons/songs/effects/pitch", "label": "Octave & Pitch Effects" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain & Multi-Effects" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects & Tone Overview" }
+  ]
+}

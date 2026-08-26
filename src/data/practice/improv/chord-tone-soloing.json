@@ -1,0 +1,307 @@
+{
+  "slug": "chord-tone-soloing",
+  "category": "improv",
+  "pageInfo": {
+    "pageTitle": "Chord Tone Soloing",
+    "subtitle": "Learn to target chord tones for melodic, intentional solos that outline the harmony.",
+    "heroGradient": "bg-gradient-to-br from-teal-50 to-cyan-100",
+    "heroTitle": "Chord Tone Soloing",
+    "heroDescription": "The secret to great solos isn't just knowing scales - it's knowing which notes in those scales matter most over each chord. Chord tone soloing teaches you to target the root, 3rd, 5th, and 7th of each chord, creating melodies that follow the harmony and sound intentional rather than random."
+  },
+  "guidelines": {
+    "title": "Chord Tone Soloing Guidelines",
+    "columns": [
+      {
+        "title": "Core Concept",
+        "items": [
+          { "bulletColor": "text-teal-500", "text": "Chord tones are the strongest notes to land on over any chord" },
+          { "bulletColor": "text-teal-500", "text": "The 3rd defines major vs minor - the most important chord tone to target" },
+          { "bulletColor": "text-teal-500", "text": "Use scale tones to connect between chord tones" },
+          { "bulletColor": "text-teal-500", "text": "Land on chord tones on strong beats (1 and 3)" }
+        ]
+      },
+      {
+        "title": "Practice Approach",
+        "items": [
+          { "bulletColor": "text-cyan-500", "text": "Start by playing only chord tones (arpeggios) over changes" },
+          { "bulletColor": "text-cyan-500", "text": "Then add passing tones (scale notes) between chord tones" },
+          { "bulletColor": "text-cyan-500", "text": "Practice with backing tracks to hear the effect" },
+          { "bulletColor": "text-cyan-500", "text": "Visualize chord shapes under your scale patterns" }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Chord Tone Targeting Exercises",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Root Note Targeting",
+          "difficulty": "Beginner",
+          "borderColor": "border-teal-200",
+          "difficultyBg": "bg-teal-100",
+          "difficultyText": "text-teal-700",
+          "numberBg": "bg-teal-100",
+          "numberText": "text-teal-600",
+          "description": "Over a C-Am-F-G progression, play freely from the C major scale but always land on the ROOT note of each chord on beat 1. This builds awareness of where root notes sit within scale patterns.",
+          "chordDiagrams": [
+            { "label": "C", "chord": "C_major" },
+            { "label": "Am", "chord": "A_minor" },
+            { "label": "F", "chord": "F_major" },
+            { "label": "G", "chord": "G_major" }
+          ],
+          "notation": {
+            "title": "Root Note Targeting over I-vi-IV-V",
+            "alphaTex": "\\ts 4 4\n8.6.4 10.5.8 8.4.8 7.4.4 8.4.4 | 5.6.4 7.5.8 5.4.8 7.4.4 5.4.4 | 1.6.4 3.5.8 2.4.8 3.4.4 1.4.4 | 3.6.4 5.5.8 4.4.8 5.4.4 3.4.4",
+            "staveTitle": "Landing on Root of Each Chord"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-teal-50",
+            "colorBorder": "border-teal-200",
+            "colorTitle": "text-teal-900",
+            "colorText": "text-teal-800",
+            "colorAccent": "bg-teal-100",
+            "title": "Practice Notes",
+            "text": "The root notes for C-Am-F-G are C(8th fret 6th string), A(5th fret 6th string), F(1st fret 6th string), G(3rd fret 6th string). Always know where the root is before the chord changes.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "3rd Targeting - Major vs Minor",
+          "difficulty": "Intermediate",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Over the same C-Am-F-G progression, target the 3RD of each chord on beat 1. The 3rd is the most colorful chord tone - it defines whether the chord is major or minor. C's 3rd is E, Am's 3rd is C, F's 3rd is A, G's 3rd is B.",
+          "chordDiagrams": [
+            { "label": "C", "chord": "C_major" },
+            { "label": "Am", "chord": "A_minor" }
+          ],
+          "notation": {
+            "title": "Targeting the 3rd of Each Chord",
+            "alphaTex": "\\ts 4 4\n9.4.4 10.5.8 8.4.8 10.4.4 8.4.4 | 8.6.4 7.5.8 5.4.8 7.4.4 5.4.4 | 5.6.4 3.5.8 2.4.8 3.4.4 5.5.4 | 7.5.4 5.5.8 4.4.8 5.4.4 3.4.4",
+            "staveTitle": "Landing on 3rd of Each Chord"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "This is the single most transformative chord tone skill. When you target the 3rd, your solo outlines the chord quality. Listeners hear you 'following the changes' even if subconsciously.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Full Arpeggio Outlines",
+          "difficulty": "Intermediate",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Play the full arpeggio (root-3rd-5th) of each chord as quarter notes. This gives you the raw chord tone vocabulary. Once comfortable, add passing tones between arpeggio notes.",
+          "notation": {
+            "title": "Arpeggio Outlines: C-Am-F-G",
+            "alphaTex": "\\ts 4 4\n8.6.4 9.4.4 10.5.4 8.6.4 | 5.6.4 8.6.4 7.5.4 5.6.4 | 1.6.4 5.5.4 3.5.4 1.6.4 | 3.6.4 7.5.4 5.5.4 3.6.4",
+            "staveTitle": "Root-3rd-5th Arpeggios per Chord"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Visualize the chord shape on the fretboard. The arpeggio notes are hidden within the chord shape. CAGED system knowledge helps you find chord tones in every position.",
+            "tempo": "80 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Applied Chord Tone Soloing",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Approach Notes",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Approach each chord tone from one fret below (chromatic approach) or from the scale note above (diatonic approach). This technique creates tension and resolution that sounds sophisticated and intentional.",
+          "notation": {
+            "title": "Chromatic Approach to Chord Tones",
+            "alphaTex": "\\ts 4 4\n7.6.8 8.6.4 10.5.8 9.4.4 r.4 | 4.6.8 5.6.4 7.5.8 8.6.4 r.4 | 0.6.8 1.6.4 4.5.8 5.5.4 r.4 | 2.6.8 3.6.4 6.5.8 7.5.4 r.4",
+            "staveTitle": "Half-Step Below into Chord Tones"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Chromatic approaches create momentary tension that resolves beautifully to the chord tone. Jazz players use this extensively. Start simply: one approach note into one chord tone per chord.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Blues Chord Tone Soloing",
+          "difficulty": "Intermediate",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Over a 12-bar blues in A (A7-D7-E7), target chord tones while using the minor pentatonic scale for passing tones. On A7 target A-C#-E-G, on D7 target D-F#-A-C, on E7 target E-G#-B-D.",
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "Blues Chord Tone Targeting",
+            "alphaTex": "\\ts 4 4\n5.6.4 6.4.4 7.5.4 8.4.4 | 5.5.4 7.4.4 5.6.4 8.5.4 | 7.5.4 6.4.4 5.5.4 7.5.4 | 5.6.4 6.4.4 7.5.4 5.6.4",
+            "staveTitle": "A Blues - Chord Tone Awareness"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "The magic of blues chord tone soloing is mixing the minor pentatonic scale (for feel) with the major 3rd of each chord (for harmonic accuracy). Hitting the 3rd of each dominant chord is what makes blues solos shine.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "ii-V-I Chord Tone Navigation",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Over a Dm7-G7-Cmaj7 progression (ii-V-I in C major), outline each chord's arpeggio: Dm7(D-F-A-C), G7(G-B-D-F), Cmaj7(C-E-G-B). Notice how common tones connect the chords.",
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "CMaj7", "chord": "CMaj7" }
+          ],
+          "notation": {
+            "title": "ii-V-I Arpeggio Navigation",
+            "alphaTex": "\\ts 4 4\n10.6.8 8.4.8 10.5.8 8.3.8 10.4.8 8.6.8 10.5.8 10.6.8 | 10.5.8 9.4.8 7.4.8 10.4.8 8.4.8 7.5.8 10.5.8 10.6.8 | 8.6.8 9.4.8 10.5.8 8.4.8 7.3.8 10.5.8 8.6.2",
+            "staveTitle": "Dm7 - G7 - Cmaj7 Arpeggios"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "The ii-V-I is the most common progression in jazz. Notice shared tones: Dm7 and G7 share D, G7 and Cmaj7 share B. Use these common tones as pivot points between chord changes.",
+            "tempo": "70 BPM"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "title": "Chord Tone Soloing Tips",
+    "items": [
+      {
+        "title": "Building Melodic Solos",
+        "colorBg": "bg-gradient-to-br from-teal-50 to-cyan-50",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-900",
+        "colorText": "text-teal-800",
+        "bulletColor": "text-teal-500",
+        "items": [
+          "Think melody first, speed second - great solos are singable",
+          "Chord tones on strong beats, scale tones on weak beats",
+          "The 7th of one chord often resolves to the 3rd of the next",
+          "Visualize the chord shape under your fingers even during scale runs"
+        ]
+      },
+      {
+        "title": "Common Mistakes to Avoid",
+        "colorBg": "bg-gradient-to-br from-cyan-50 to-blue-50",
+        "colorBorder": "border-cyan-200",
+        "colorTitle": "text-cyan-900",
+        "colorText": "text-cyan-800",
+        "bulletColor": "text-cyan-500",
+        "items": [
+          "Running scales without targeting any specific notes over chord changes",
+          "Playing the same licks regardless of the underlying harmony",
+          "Ignoring the 3rd - the most defining chord tone",
+          "Never practicing over actual chord progressions (use backing tracks)"
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Deepen Your Improvisation",
+    "description": "Build on chord tone awareness with these complementary skills.",
+    "gradientFrom": "from-teal-50",
+    "gradientTo": "to-cyan-50",
+    "borderColor": "border-teal-200",
+    "links": [
+      {
+        "href": "/lessons/practice/improv/arpeggios",
+        "title": "Arpeggio Practice",
+        "description": "Build arpeggio patterns that form the foundation of chord tone soloing.",
+        "linkText": "Practice arpeggios",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-purple-300",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/improv/target-notes",
+        "title": "Target Notes",
+        "description": "Develop your ability to aim for specific notes within the scale.",
+        "linkText": "Hit targets",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-rose-300",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "href": "/lessons/practice/improv/scales",
+        "title": "Scale Improvisation",
+        "description": "Expand your scale vocabulary to have more passing tone options.",
+        "linkText": "Learn scales",
+        "icon": "🎼",
+        "hoverBorder": "hover:border-green-300",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Chord Tone Practice",
+    "items": [
+      { "category": "Pedal", "product": "Boss RC-5 Loop Station", "reason": "Record chord progressions and solo over them to practice targeting chord tones in real time" },
+      { "category": "Metronome", "product": "Korg TM-60 Tuner Metronome", "reason": "Steady tempo helps you focus on note choice rather than rushing through changes" }
+    ]
+  }
+}

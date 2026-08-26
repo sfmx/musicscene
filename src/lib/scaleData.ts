@@ -1,3 +1,5 @@
+import scaleIndexData from '@/data/scales/scale-index.json';
+
 // TypeScript interfaces for scale data
 export interface ScaleInfo {
   name: string;
@@ -144,6 +146,10 @@ export interface ScaleData {
   practiceExercises: PracticeExercise[];
   relatedScales: RelatedScale[];
   learningPath?: LearningPath;
+  gearRecommendations?: {
+    title?: string;
+    items: { category: string; product: string; reason: string }[];
+  };
   metadata: ScaleMetadata;
 }
 
@@ -193,7 +199,13 @@ export function getAllScaleSlugs(): string[] {
     'harmonic-minor',
     'major-pentatonic',
     'minor-pentatonic',
-    'mixolydian'
+    'mixolydian',
+    'phrygian',
+    'lydian',
+    'locrian',
+    'melodic-minor',
+    'whole-tone',
+    'chromatic'
   ];
 }
 
@@ -253,4 +265,70 @@ export async function getScalesByDifficulty(difficulty: string): Promise<ScaleDa
   }
 
   return scales;
+}
+
+// --- Scale Index Data ---
+
+interface JourneyLink {
+  slug: string;
+  title: string;
+  description: string;
+  linkText: string;
+  icon: string;
+  hoverBorder: string;
+  iconBg: string;
+  iconHoverBg: string;
+  linkColor: string;
+  linkHoverColor: string;
+}
+
+export interface ScaleIndexData {
+  pageTitle: string;
+  subtitle: string;
+  heroIcon: string;
+  heroTitle: string;
+  heroDescription: string;
+  whatAreScales: {
+    title: string;
+    description: string;
+    columns: {
+      title: string;
+      colorBg: string;
+      colorTitle: string;
+      colorText: string;
+      items: string[];
+    }[];
+  };
+  scaleCategories: {
+    name: string;
+    scales: string[];
+    description: string;
+    color: string;
+  }[];
+  musicalApplications: {
+    title: string;
+    description: string;
+    icon: string;
+    examples: string[];
+  }[];
+  scaleTypes: {
+    name: string;
+    icon: string;
+    href: string;
+    description: string;
+    formula: string;
+    degrees: number;
+    color: string;
+    iconColor: string;
+    mood: string;
+  }[];
+  journeySection: {
+    title: string;
+    description: string;
+    links: JourneyLink[];
+  };
+}
+
+export function getScaleIndexData(): ScaleIndexData {
+  return scaleIndexData as unknown as ScaleIndexData;
 }

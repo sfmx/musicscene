@@ -80,14 +80,6 @@ const MusicScore: React.FC<MusicScoreProps> = ({
     marginBottom: '40px'
   };
 
-  const staveTitleStyle: React.CSSProperties = {
-    textAlign: 'center',
-    fontSize: '1.2rem',
-    fontWeight: 'bold',
-    marginBottom: '15px',
-    color: '#555'
-  };
-
   return (
     <div className={`music-score ${className}`} style={scoreStyle}>
       {title && <h1 style={titleStyle}>{title}</h1>}
@@ -98,12 +90,10 @@ const MusicScore: React.FC<MusicScoreProps> = ({
         
         return (
           <div key={stave.id} style={staveContainerStyle}>
-            {stave.title && <h3 style={staveTitleStyle}>{stave.title}</h3>}
             {notationContent ? (
               <AlphaTexRenderer
                 alphaTex={notationContent}
                 title={stave.title}
-                className="scale-75"
               />
             ) : (
               <div className="text-gray-500 italic text-center py-4">

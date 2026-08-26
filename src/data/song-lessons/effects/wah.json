@@ -1,0 +1,267 @@
+{
+  "slug": "wah",
+  "category": "effects",
+  "pageTitle": "Wah & Filter Effects",
+  "subtitle": "Master expressive filter effects for dynamic tone control and musical phrasing",
+  "heroGradient": "from-orange-50 to-red-50",
+  "backLink": {
+    "href": "/lessons/songs/effects",
+    "label": "Back to Effects & Tone"
+  },
+  "introduction": {
+    "title": "Understanding Filter Effects",
+    "text": "Filter effects work by selectively emphasizing or reducing certain frequencies in your guitar signal. The wah pedal is the most famous filter effect, but the family includes auto-wahs, envelope filters, and various resonant filters. These effects can make your guitar \"talk,\" add funk and expression, or create synthetic, otherworldly textures.",
+    "quote": "The wah pedal doesn't just change your tone\u2014it gives your guitar a voice, allowing you to shape each note's character in real-time and create the kind of expressive phrasing that defines funk, soul, and rock guitar."
+  },
+  "sections": [
+    {
+      "title": "How Filters Work",
+      "bgColor": "blue-50",
+      "borderColor": "blue-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Basic Filtering Concepts",
+          "items": [
+            "Bandpass Filter: Emphasizes a specific frequency range",
+            "Resonance/Q: How narrow and pronounced the filter peak is",
+            "Cutoff Frequency: The center frequency being emphasized",
+            "Sweep Range: The frequency range the filter can cover"
+          ]
+        },
+        {
+          "title": "Control Methods",
+          "items": [
+            "Manual: Foot pedal for real-time control",
+            "Auto-Wah: LFO sweeps the filter automatically",
+            "Envelope Filter: Your playing dynamics control the sweep",
+            "Expression Pedal: Hands-free continuous control"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Wah & Filter Effects",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Classic Wah Pedal",
+          "description": "Manual foot control of filter sweep, vocal-like \"wah\" sound, bandpass filter with resonance, inductor-based circuit (vintage models)",
+          "fields": [
+            { "label": "Characteristics", "value": "Manual foot control of filter sweep, vocal-like \"wah\" sound, bandpass filter with resonance, inductor-based circuit (vintage models)" },
+            { "label": "Musical Applications", "value": "Lead guitar expression, funk rhythm guitar, rock solos, creating talking guitar effects" },
+            { "label": "Famous Models", "value": "Cry Baby, Vox V847, Wilson Shaft Wah" }
+          ]
+        },
+        {
+          "title": "Auto-Wah",
+          "description": "LFO-controlled filter sweep, rhythmic cyclic filtering, no foot control required",
+          "fields": [
+            { "label": "Characteristics", "value": "LFO-controlled filter sweep, rhythmic cyclic filtering, no foot control required, rate and depth controls" },
+            { "label": "Musical Applications", "value": "Psychedelic textures, rhythmic emphasis, ambient soundscapes, consistent filtering patterns" }
+          ]
+        },
+        {
+          "title": "Envelope Filter",
+          "description": "Playing dynamics control filter, attack-sensitive response, quack/funk sound",
+          "fields": [
+            { "label": "Characteristics", "value": "Playing dynamics control filter, attack-sensitive response, quack/funk sound, sensitivity and range controls" },
+            { "label": "Musical Applications", "value": "Funk rhythm guitar, percussive playing styles, bass guitar (very popular), synth-like textures" },
+            { "label": "Famous Models", "value": "Mutron III, MXR Envelope Filter, EHX Q-Tron" }
+          ]
+        },
+        {
+          "title": "Resonant Filters",
+          "description": "High resonance/Q settings, synthesizer-style filtering, can self-oscillate",
+          "fields": [
+            { "label": "Characteristics", "value": "High resonance/Q settings, synthesizer-style filtering, can self-oscillate, multiple filter types (LP, HP, BP)" },
+            { "label": "Musical Applications", "value": "Electronic music, experimental sounds, industrial/noise music, sound design" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wah Pedal Technique",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Foot Technique",
+          "fields": [
+            { "label": "Toe vs. Heel", "value": "Toe down = treble emphasis, heel down = bass emphasis. Most expressive range is in the middle." },
+            { "label": "Rocking Motion", "value": "Smooth, continuous rocking creates flowing wah sounds. Abrupt movements create percussive effects." },
+            { "label": "Parking Positions", "value": "Leave the pedal in specific positions for tonal colors: toe down for solos, heel down for rhythm." }
+          ]
+        },
+        {
+          "title": "Musical Coordination",
+          "fields": [
+            { "label": "Note Timing", "value": "Coordinate wah movement with note attacks for maximum expression. The wah should enhance, not fight, your phrasing." },
+            { "label": "Bend Integration", "value": "Combine wah sweeps with string bends for even more expressive range." },
+            { "label": "Rhythm Patterns", "value": "In funk, coordinate wah with chord stabs and muted notes for percussive effects." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wah in Famous Songs",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "\"Voodoo Child (Slight Return)\" - Jimi Hendrix",
+          "description": "Cry Baby wah pedal with Marshall stack",
+          "badge": { "text": "Classic Wah", "color": "red" },
+          "fields": [
+            { "label": "Technique", "value": "Aggressive rocking motion, coordinated with string bends, wide sweep range, high-gain amp interaction" },
+            { "label": "Musical Effect", "value": "Defines the song's aggression, creates talking guitar effects, enhances Hendrix's expressiveness, became a wah template for rock" }
+          ]
+        },
+        {
+          "title": "\"Shaft\" - Isaac Hayes (Theme)",
+          "description": "Wah pedal on rhythm guitar",
+          "badge": { "text": "Funk Wah", "color": "purple" },
+          "fields": [
+            { "label": "Technique", "value": "Rhythmic chord stabs, synchronized with drums, parked in sweet spot, clean to slightly overdriven tone" },
+            { "label": "Musical Effect", "value": "Creates funk groove foundation, adds percussive element, defines '70s soul/funk sound, emphasizes rhythmic pattern" }
+          ]
+        },
+        {
+          "title": "\"White Room\" - Cream",
+          "description": "Wah pedal parked in treble position",
+          "badge": { "text": "Parked Wah", "color": "green" },
+          "fields": [
+            { "label": "Technique", "value": "Pedal in fixed toe-down position, no sweeping motion, bright cutting tone, used as tone shaper not effect" },
+            { "label": "Musical Effect", "value": "Creates distinctive tonal character, cuts through dense mix, emphasizes high-end clarity, demonstrates static wah usage" }
+          ]
+        },
+        {
+          "title": "\"Bulls on Parade\" - Rage Against the Machine",
+          "description": "Digitech Whammy with wah-style expression",
+          "badge": { "text": "Modern Wah", "color": "yellow" },
+          "fields": [
+            { "label": "Technique", "value": "Pitch shifting controlled by expression, aggressive riff coordination, drop tuning with effect, percussive muting technique" },
+            { "label": "Musical Effect", "value": "Creates aggressive, modern sound, defines Tom Morello's style, combines filtering with pitch effects, influences alternative/nu-metal" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wah in the Signal Chain",
+      "bgColor": "gray-50",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Traditional Placement",
+          "description": "Guitar \u2192 Wah \u2192 Distortion \u2192 Amp",
+          "items": [
+            "Wah affects frequency content before distortion",
+            "Creates focused distortion character",
+            "Classic rock and blues sound",
+            "Natural, musical interaction"
+          ]
+        },
+        {
+          "title": "Modern Placement",
+          "description": "Guitar \u2192 Distortion \u2192 Wah \u2192 Amp",
+          "items": [
+            "Wah shapes already-distorted signal",
+            "More dramatic filtering effects",
+            "Modern metal and alternative sound",
+            "Can create feedback issues at high gain"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Wah Mistakes",
+      "bgColor": "red-50",
+      "borderColor": "red-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "What to Avoid",
+          "items": [
+            "Constant, aimless sweeping without musical purpose",
+            "Fighting the song's rhythm with wah timing",
+            "Using wah on every single note or chord",
+            "Ignoring the sweet spots in the pedal's range",
+            "Poor foot technique causing inconsistent control"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Use wah to enhance musical phrases, not dominate them",
+            "Practice coordinating foot and hand movements",
+            "Learn to park the pedal in useful positions",
+            "Match wah intensity to the song's emotional content",
+            "Study how masters like Hendrix and Page use wah musically"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Wah Techniques",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Precision Techniques",
+          "fields": [
+            { "label": "Heel-Toe Technique", "value": "Quick heel-to-toe movements for percussive wah effects, especially effective in funk." },
+            { "label": "Half-Cocked Wah", "value": "Park the pedal partially engaged for a unique tonal color that cuts through a mix." },
+            { "label": "Volume Swells", "value": "Combine volume swells with wah sweeps for atmospheric, violin-like effects." }
+          ]
+        },
+        {
+          "title": "Modern Applications",
+          "fields": [
+            { "label": "MIDI Control", "value": "Use MIDI controllers to precisely automate wah sweeps or control multiple parameters." },
+            { "label": "Multi-Band Filtering", "value": "Some modern pedals offer multiple frequency bands for more complex filtering." },
+            { "label": "Envelope Following", "value": "Let your playing dynamics control the wah automatically for hands-free expression." }
+          ]
+        }
+      ]
+    }
+  ],
+  "practiceSection": {
+    "title": "Wah Practice Exercises",
+    "exercises": [
+      {
+        "title": "Exercise 1: Sweet Spot Discovery",
+        "items": [
+          "Play sustained chords while slowly rocking the wah pedal through its entire range",
+          "Find the \"quack\" position (usually around 1/3 toe down)",
+          "Locate the smooth vocal position (around 2/3 toe down)",
+          "Identify the cutting lead position (full toe down)",
+          "Note the warm rhythm position (heel down)",
+          "These positions will become your go-to spots for different musical situations"
+        ]
+      },
+      {
+        "title": "Exercise 2: Rhythm Coordination",
+        "items": [
+          "Practice a simple chord progression (Em - Am - Em - Am) with different wah patterns",
+          "On the beat: Move pedal with each chord change",
+          "Off the beat: Move pedal on the \"and\" of each beat",
+          "Syncopated: Create funky off-beat emphasis patterns",
+          "Static: Park in one position for each chord"
+        ]
+      },
+      {
+        "title": "Exercise 3: Lead Line Expression",
+        "items": [
+          "Play a simple pentatonic phrase (A minor pentatonic works well)",
+          "One sweep per phrase",
+          "One sweep per note",
+          "Emphasizing specific notes with quick sweeps",
+          "Combining with string bends for maximum expression"
+        ]
+      }
+    ]
+  },
+  "relatedTopics": [
+    { "href": "/lessons/songs/effects/distortion", "label": "Distortion & Overdrive" },
+    { "href": "/lessons/songs/effects/modulation", "label": "Modulation Effects" },
+    { "href": "/lessons/songs/effects/signal-chain", "label": "Signal Chain & Multi-Effects" },
+    { "href": "/lessons/songs/effects", "label": "Back to Effects & Tone Overview" }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "songInfo": {
+    "title": "Under the Bridge",
+    "artist": "Red Hot Chili Peppers",
+    "album": "Blood Sugar Sex Magik",
+    "released": "1991",
+    "genre": "Alternative Rock/Funk Rock",
+    "tempo": "68 BPM",
+    "duration": "4:24",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major scale",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Primary harmonic foundation for verse and chorus chord progressions"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Intro chord-melody arpeggios and clean lead passages"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Darker bridge section and emotional climactic passages"
+        }
+      ],
+      "modalCharacter": "Ionian (Major) with minor color in the bridge",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "B",
+          "C#m",
+          "G#m",
+          "A"
+        ],
+        "progression": "I - V - vi - iii - IV",
+        "description": "Expansive verse progression that moves through the key of E major with a descending emotional arc, creating the reflective mood of the song"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "D - F# - E (arpeggiated chord melody)",
+          "romanNumerals": "bVII - II - I",
+          "description": "Fingerstyle arpeggiated intro using chromatic voice leading between D, F#, and E major chord shapes high on the neck"
+        },
+        {
+          "section": "Verse",
+          "progression": "E - B - C#m - G#m - A - B - E",
+          "romanNumerals": "I - V - vi - iii - IV - V - I",
+          "description": "Full verse progression with gentle strumming building from reflective to hopeful as it resolves back to the tonic"
+        },
+        {
+          "section": "Chorus",
+          "progression": "F#m - E - B - F#m",
+          "romanNumerals": "ii - I - V - ii",
+          "description": "The 'Under the bridge downtown' section centering on the ii chord (F#m) for a bittersweet emotional quality"
+        },
+        {
+          "section": "Bridge/Outro",
+          "progression": "A - Am - G6 - Fmaj7 - E",
+          "romanNumerals": "IV - iv - bIII6 - bII(maj7) - I",
+          "description": "Chromatic descending progression with modal mixture, shifting from major to minor and back, creating the song's most emotionally intense passage"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Bright major tonic establishing the optimistic foundation",
+        "B (V) - Dominant chord providing forward motion and resolution tension",
+        "C#m (vi) - Relative minor adding reflective, melancholy color",
+        "G#m (iii) - Mediant minor deepening the emotional descent",
+        "A (IV) - Warm subdominant providing harmonic contrast and stability",
+        "F#m (ii) - Supertonic minor anchoring the chorus with bittersweet quality",
+        "Am (iv) - Borrowed minor subdominant in bridge creating dark, chromatic color"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerstyle Chord Melody",
+      "description": "The intro uses a fingerpicked chord-melody technique where individual notes from chord shapes are plucked to create a flowing melodic line, blending harmony and melody simultaneously",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D chord shape at 10th position: arpeggiate individual strings with fingers",
+          "F# chord shape at 9th position: hammer-on embellishments between chord tones",
+          "E chord shape resolving the phrase",
+          "Use thumb for bass notes (strings 6-4) and fingers for treble (strings 3-1)",
+          "Each chord shape is voiced high on the neck for a bright, chiming tone",
+          "The melody emerges from the top notes of each chord voicing"
+        ],
+        "sequence": [
+          "Place fingers in D chord shape at 10th fret area",
+          "Pluck bass note with thumb, then arpeggiate treble strings with index, middle, ring fingers",
+          "Move to F# shape, maintaining smooth voice leading between chord tones",
+          "Resolve to E chord shape with deliberate, ringing arpeggios",
+          "Allow notes to sustain and overlap for a harp-like effect"
+        ],
+        "tips": [
+          "Practice each chord shape individually before connecting them",
+          "Focus on even finger pressure and consistent volume across strings",
+          "Use a clean tone with slight reverb for the authentic sound",
+          "Let notes ring into each other rather than cutting them short",
+          "Listen to the original recording to internalize the phrasing and timing"
+        ],
+        "chords": [
+          "D",
+          "F#",
+          "E"
+        ],
+        "progression": "D - F# - E (arpeggiated chord melody)"
+      }
+    },
+    {
+      "name": "Dynamic Strumming with Clean Tone",
+      "description": "The verse sections use a controlled strumming approach with clean electric guitar tone, requiring precise dynamic control to move from quiet, intimate verses to full-bodied chorus strumming",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E: 0-2-2-1-0-0 (standard open E major)",
+          "B: X-2-4-4-4-2 (barre chord at 2nd fret)",
+          "C#m: X-4-6-6-5-4 (barre chord at 4th fret)",
+          "G#m: 4-6-6-4-4-4 (barre chord at 4th fret)",
+          "A: X-0-2-2-2-0 (standard open A major)",
+          "Verse strumming is gentle and sparse, building intensity gradually",
+          "Chorus requires fuller, more emphatic strumming"
+        ],
+        "sequence": [
+          "Begin verse with soft downstrokes, barely brushing strings",
+          "Gradually increase strumming intensity through the verse",
+          "Add upstrokes as energy builds toward pre-chorus",
+          "Full strumming with defined pattern for chorus sections",
+          "Pull back to intimate fingerpicking for transitions"
+        ],
+        "tips": [
+          "Control dynamics with strumming hand distance from strings",
+          "Use the wrist, not the arm, for gentle verse strumming",
+          "Practice the transition from fingerpicking to strumming smoothly",
+          "Keep the clean tone crisp - any buzzing is very audible",
+          "The song's emotional impact comes from dynamic contrast"
+        ],
+        "chords": [
+          "E",
+          "B",
+          "C#m",
+          "G#m",
+          "A",
+          "F#m"
+        ],
+        "progression": "E - B - C#m - G#m - A (Verse)"
+      }
+    },
+    {
+      "name": "Barre Chord Transitions",
+      "description": "Smooth transitions between multiple barre chord shapes across different fret positions, essential for the verse and chorus progressions",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "B barre at 2nd fret (A-shape barre)",
+          "C#m barre at 4th fret (Am-shape barre)",
+          "G#m barre at 4th fret (Em-shape barre)",
+          "F#m barre at 2nd fret (Em-shape barre)",
+          "Efficient hand movement between positions is crucial at slow tempo",
+          "Each chord must ring clearly - the slow tempo exposes any buzzing"
+        ],
+        "sequence": [
+          "Practice the B to C#m transition (sliding up two frets)",
+          "Work on C#m to G#m (same fret, different shape)",
+          "Master G#m to A (barre to open chord)",
+          "Chain all transitions together slowly",
+          "Build up to performance tempo of 68 BPM"
+        ],
+        "tips": [
+          "Release finger pressure slightly during transitions, but don't fully lift",
+          "Use guide fingers to slide between positions when possible",
+          "Practice each two-chord transition in isolation before chaining",
+          "The slow tempo makes sloppy transitions very noticeable",
+          "Focus on getting clean sound on every string of each barre chord"
+        ],
+        "chords": [
+          "B",
+          "C#m",
+          "G#m",
+          "F#m"
+        ],
+        "progression": "B - C#m - G#m - A (verse movement)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro (Chord Melody)",
+      "timeStamp": "0:00-0:34",
+      "technique": "Fingerstyle Chord Melody",
+      "key": "E Major",
+      "description": "John Frusciante's iconic fingerpicked intro, one of the most recognizable guitar intros in rock history, using arpeggiated chord voicings high on the neck",
+      "chords": [
+        "D",
+        "F#",
+        "E"
+      ],
+      "progression": "D - F# - E (arpeggiated)",
+      "notes": [
+        "Fingerpicked arpeggios using chord shapes at the 9th-10th fret area",
+        "Clean tone with slight reverb - no distortion",
+        "Let notes ring and overlap for a harp-like, ethereal quality",
+        "This is a solo guitar passage - take your time with the phrasing"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:34-1:24",
+      "technique": "Dynamic Strumming with Clean Tone",
+      "key": "E Major",
+      "description": "Reflective verse with gentle strumming building from intimate to engaging, supporting Kiedis's introspective vocal melody",
+      "chords": [
+        "E",
+        "B",
+        "C#m",
+        "G#m",
+        "A"
+      ],
+      "progression": "E - B - C#m - G#m - A",
+      "notes": [
+        "Start with very gentle, almost whispered strumming",
+        "Build dynamics gradually through each verse repetition",
+        "Barre chords must ring cleanly at this slow 68 BPM tempo",
+        "Leave space - don't overplay between vocal phrases"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:24-2:08",
+      "technique": "Dynamic Strumming with Clean Tone",
+      "key": "E Major",
+      "description": "The emotionally powerful the signature section with fuller strumming and the bittersweet F#m-centered progression",
+      "chords": [
+        "F#m",
+        "E",
+        "B",
+        "F#m"
+      ],
+      "progression": "F#m - E - B - F#m",
+      "notes": [
+        "Strumming opens up to full, ringing chords",
+        "F#m barre chord must be strong and clear as the anchor",
+        "Emotional peak of each verse-chorus cycle",
+        "Let the final F#m ring with sustain before the transition"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    },
+    {
+      "name": "Bridge / Outro",
+      "timeStamp": "3:12-4:24",
+      "technique": "Dynamic Strumming with Clean Tone",
+      "key": "E Major (with chromatic descent)",
+      "description": "The emotionally climactic bridge and outro section featuring a chromatic descending chord progression with modal mixture, building to the song's most intense moment before the final vocal chants",
+      "chords": [
+        "A",
+        "Am",
+        "G6",
+        "Fmaj7",
+        "E"
+      ],
+      "progression": "A - Am - G6 - Fmaj7 - E",
+      "notes": [
+        "Chromatic descending bass line creates powerful emotional movement",
+        "A to Am shift is the key moment - major to minor color change",
+        "Each chord slides down chromatically, building tension",
+        "Final E major resolution provides emotional catharsis",
+        "Backing vocal chants layer over the repeating progression"
+      ],
+      "alphaTab": "12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 | 12.6 14.5 14.4 13.3 12.2 12.1 | 17.6 19.5 19.4 18.3 17.2 17.1 |",
+      "exerciseLabel": "Chord Voicing Exercise"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "Squier Classic Vibe Stratocaster",
+        "Any single-coil equipped guitar",
+        "Fender Telecaster"
+      ],
+      "pickup": "Single-coil pickups, primarily neck and middle positions for warm, clean tone"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Fender Deluxe Reverb",
+        "Marshall DSL40CR",
+        "Vox AC30"
+      ],
+      "settings": {
+        "gain": "3-4 (clean to edge-of-breakup)",
+        "treble": "6-7 (bright, articulate highs)",
+        "middle": "5-6 (balanced, warm mids)",
+        "bass": "5 (present but not boomy)",
+        "presence": "6-7 (sparkle and clarity)"
+      }
+    },
+    "effects": {
+      "distortion": "None for intro/verse; light overdrive for bridge intensity",
+      "delay": "Short slapback delay for intro arpeggios",
+      "reverb": "Medium hall reverb for ambient, spacious sound",
+      "other": "Boss CE-1 Chorus (subtle, for the intro chord-melody shimmer). Clean tone is paramount for this song."
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "focus": "Learn the basic verse chord shapes and simple strumming pattern",
+      "steps": [
+        "Master open E and A chord shapes",
+        "Practice basic barre chord shapes for B and F#m",
+        "Learn a simplified strumming pattern for the verse",
+        "Work on chord transitions at very slow tempo"
+      ],
+      "timeEstimate": "3-5 weeks with regular practice"
+    },
+    "intermediate": {
+      "focus": "Develop the full verse/chorus with dynamic control and barre chord fluency",
+      "steps": [
+        "Master all barre chord shapes: B, C#m, G#m, F#m",
+        "Practice smooth transitions between barre positions",
+        "Work on dynamic strumming (soft verse to strong chorus)",
+        "Learn the chorus F#m - E - B - F#m progression with proper feel",
+        "Add the bridge chromatic descent: A - Am - G6 - Fmaj7 - E"
+      ],
+      "timeEstimate": "4-8 weeks for solid performance"
+    },
+    "advanced": {
+      "focus": "Master the fingerstyle intro and complete song with authentic dynamics",
+      "steps": [
+        "Learn the fingerpicked chord-melody intro note by note",
+        "Develop smooth transitions between fingerpicking and strumming",
+        "Add subtle chorus effect for intro authenticity",
+        "Practice the complete song with full dynamic arc from beginning to end"
+      ],
+      "timeEstimate": "6-10 weeks for complete mastery"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing through the slow 68 BPM tempo - this song needs patience and space",
+      "Buzzing barre chords due to insufficient finger pressure",
+      "Playing the intro too rigidly - it should feel free and expressive",
+      "Not enough dynamic contrast between the quiet verse and full chorus"
+    ],
+    "practiceRoutine": [
+      "Warm up with barre chord exercises: B, C#m, G#m, F#m transitions (5 minutes)",
+      "Practice the intro chord-melody section slowly, note by note (10 minutes)",
+      "Work on verse strumming with dynamic control at 68 BPM (5 minutes)",
+      "Practice the bridge chromatic descent: A - Am - G6 - Fmaj7 - E (5 minutes)",
+      "Play through the full song focusing on the emotional arc and dynamics"
+    ],
+    "focusAreas": [
+      "Clean barre chord execution at slow tempo",
+      "Fingerstyle accuracy and tone for the intro",
+      "Dynamic control from whisper-quiet to full strumming",
+      "Smooth transitions between fingerpicking and strumming sections"
+    ],
+    "metronomeWork": [
+      "Set metronome to 68 BPM and practice verse progression with half notes",
+      "Practice barre chord transitions with clicks on beats 1 and 3 only",
+      "Work on the intro without a metronome first (rubato feel), then gradually add timing",
+      "Use metronome for chorus section to lock in the rhythmic drive"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Californication",
+        "difficulty": "Intermediate",
+        "similarity": "Clean arpeggiated guitar work with similar dynamic range and emotional depth"
+      },
+      {
+        "title": "Scar Tissue",
+        "difficulty": "Intermediate",
+        "similarity": "Melodic, clean-tone guitar style with Frusciante's signature chord voicings"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic clean guitar intro leading into full band arrangement with dynamic shifts"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Clean guitar intro transitioning to heavier sections with dramatic dynamic contrast"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Hurt So Good",
+        "artist": "John Mellencamp",
+        "difficulty": "Beginner",
+        "similarity": "Build foundational chord transitions before attempting Under the Bridge"
+      },
+      {
+        "title": "Brothers in Arms",
+        "artist": "Dire Straits",
+        "difficulty": "Advanced",
+        "similarity": "Progress to more complex fingerstyle work and expressive clean playing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 93,
+    "dateAdded": "2026-03-02",
+    "featured": false,
+    "decade": "1990s",
+    "iconicRiff": false,
+    "tags": [
+      "alternative-rock",
+      "fingerpicking",
+      "funk",
+      "clean-tone"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 months"
+  }
+}

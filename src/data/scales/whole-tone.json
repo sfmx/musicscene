@@ -1,0 +1,350 @@
+{
+  "scaleInfo": {
+    "name": "Whole Tone Scale",
+    "alternateName": "Augmented Scale",
+    "scaleType": "Hexatonic",
+    "noteCount": 6,
+    "intervalPattern": "1-2-3-#4-#5-♭7",
+    "character": "Dreamy, floating, impressionistic",
+    "mood": ["dreamy", "floating", "impressionistic", "surreal", "ambiguous"]
+  },
+  "theory": {
+    "intervalsFromRoot": "1 - 2 - 3 - #4 - #5 - ♭7 - 8",
+    "scaleDegrees": [
+      "Root (Tonic)",
+      "Major 2nd (Supertonic)",
+      "Major 3rd (Mediant)",
+      "Augmented 4th (Tritone) - No perfect 4th available",
+      "Augmented 5th (No perfect 5th available)",
+      "Minor 7th (Subtonic)",
+      "Octave"
+    ],
+    "mode": "Symmetric scale - no traditional modes. Only 2 possible whole tone scales exist (C and C#/D♭). Every note can function as the root, producing the same interval structure.",
+    "relativeScale": {
+      "name": "No traditional relative scale",
+      "relationship": "Symmetric - self-transposing",
+      "intervalDistance": "Any whole tone scale member can serve as root; C Whole Tone and D♭ Whole Tone are the only two distinct collections"
+    },
+    "parallelScale": {
+      "name": "Major Scale (Ionian)",
+      "differences": ["Raised 4th (#4 vs natural 4th)", "Raised 5th (#5 vs perfect 5th)", "Lowered 7th (♭7 vs natural 7th)"]
+    }
+  },
+  "keyExamples": [
+    {
+      "key": "C Whole Tone",
+      "notes": "C - D - E - F# - G# - A# - C",
+      "keySignature": "No standard key signature (symmetric scale)",
+      "accidentals": "F#, G#, A#",
+      "commonUse": "Most common starting point for whole tone study, easy to visualize, Debussy's primary whole tone collection"
+    },
+    {
+      "key": "G Whole Tone",
+      "notes": "G - A - B - C# - D# - F - G",
+      "keySignature": "No standard key signature (symmetric scale)",
+      "accidentals": "C#, D#",
+      "commonUse": "Guitar-friendly key, belongs to the same whole tone collection as C Whole Tone"
+    },
+    {
+      "key": "D Whole Tone",
+      "notes": "D - E - F# - G# - A# - C - D",
+      "keySignature": "No standard key signature (symmetric scale)",
+      "accidentals": "F#, G#, A#",
+      "commonUse": "Same collection as C Whole Tone starting from D, comfortable for guitar open-string root"
+    },
+    {
+      "key": "A Whole Tone",
+      "notes": "A - B - C# - D# - F - G - A",
+      "keySignature": "No standard key signature (symmetric scale)",
+      "accidentals": "C#, D#",
+      "commonUse": "Open string root on guitar, same collection as C Whole Tone, good for jazz augmented chord voicings"
+    }
+  ],
+  "guitarFretboard": {
+    "patterns": [
+      {
+        "patternNumber": 1,
+        "position": "Open Position (C Whole Tone, starting 3rd fret 5th string)",
+        "description": "Symmetrical fingering pattern starting from C on the 5th string. Every interval is a whole step, creating an unusually regular and uniform fretboard shape.",
+        "alphaTex": "",
+        "applications": ["impressionistic chord voicings", "augmented arpeggio practice", "whole tone sound familiarization"]
+      },
+      {
+        "patternNumber": 2,
+        "position": "5th Position (A Whole Tone)",
+        "description": "Moveable whole tone pattern starting from A on the 6th string 5th fret. The symmetric nature means this pattern repeats every whole step.",
+        "alphaTex": "",
+        "applications": ["jazz augmented chord soloing", "dreamy lead passages", "film score textures"]
+      },
+      {
+        "patternNumber": 3,
+        "position": "8th Position (C Whole Tone, higher octave)",
+        "description": "Upper register whole tone pattern for ethereal, floating melodic lines. Useful for creating impressionistic textures in higher registers.",
+        "alphaTex": "",
+        "applications": ["upper register ethereal lines", "Debussy-inspired passages", "dominant 7#5 chord applications"]
+      }
+    ],
+    "commonPositions": [
+      {
+        "position": "3rd Fret (C Whole Tone)",
+        "frets": "1-5",
+        "difficulty": "Intermediate",
+        "usage": "Impressionistic passages, augmented chord contexts, whole tone introduction"
+      },
+      {
+        "position": "5th Fret (A Whole Tone)",
+        "frets": "5-9",
+        "difficulty": "Intermediate",
+        "usage": "Jazz soloing over augmented and dominant 7#5 chords"
+      },
+      {
+        "position": "8th Fret (C Whole Tone high octave)",
+        "frets": "8-12",
+        "difficulty": "Intermediate",
+        "usage": "Higher register floating lines, film score textures, ambient playing"
+      }
+    ]
+  },
+  "harmonicApplications": {
+    "diatonicChords": [
+      {
+        "degree": "I",
+        "chord": "Caug",
+        "quality": "Augmented",
+        "function": "Tonic - All triads built on whole tone scale degrees are augmented; no major or minor triads exist",
+        "notes": "C - E - G#"
+      },
+      {
+        "degree": "II",
+        "chord": "Daug",
+        "quality": "Augmented",
+        "function": "Supertonic - Same augmented quality, enharmonically equivalent to Caug inversion",
+        "notes": "D - F# - A#"
+      },
+      {
+        "degree": "III",
+        "chord": "Eaug",
+        "quality": "Augmented",
+        "function": "Mediant - Enharmonic equivalent of Caug (E - G# - B#/C)",
+        "notes": "E - G# - C"
+      },
+      {
+        "degree": "#IV",
+        "chord": "F#aug",
+        "quality": "Augmented",
+        "function": "Augmented fourth degree - Enharmonically equivalent to Daug inversion",
+        "notes": "F# - A# - D"
+      },
+      {
+        "degree": "#V",
+        "chord": "G#aug",
+        "quality": "Augmented",
+        "function": "Augmented fifth degree - Enharmonically equivalent to Caug inversion",
+        "notes": "G# - C - E"
+      },
+      {
+        "degree": "♭VII",
+        "chord": "A#aug",
+        "quality": "Augmented",
+        "function": "Subtonic - Enharmonically equivalent to Daug inversion. Only 2 unique augmented triads exist in each whole tone scale.",
+        "notes": "A# - D - F#"
+      }
+    ],
+    "commonProgressions": [
+      {
+        "name": "Augmented Drift (Caug - Daug - Eaug)",
+        "chords": ["Caug", "Daug", "Eaug"],
+        "romanNumerals": "I+ - II+ - III+",
+        "description": "Parallel augmented chord movement creating a floating, directionless quality. Each chord dissolves into the next with no strong resolution.",
+        "genre": "Impressionist/Ambient",
+        "alphaTex": ""
+      },
+      {
+        "name": "Dominant Augmented Resolution (C7#5 - Fmaj7)",
+        "chords": ["C7#5", "Fmaj7"],
+        "romanNumerals": "V7#5 - I",
+        "description": "Whole tone scale applied over a dominant 7#5 chord resolving to a major chord. The most common practical application in jazz harmony.",
+        "genre": "Jazz",
+        "alphaTex": ""
+      },
+      {
+        "name": "Impressionist Color Shift (Caug - D♭aug - Caug)",
+        "chords": ["Caug", "D♭aug", "Caug"],
+        "romanNumerals": "I+ - ♭II+ - I+",
+        "description": "Shifting between the two whole tone collections creates a shimmering, color-change effect used in impressionist and film music.",
+        "genre": "Classical/Film",
+        "alphaTex": ""
+      }
+    ]
+  },
+  "genreApplications": [
+    {
+      "genre": "Impressionist Classical",
+      "usage": "Foundational scale for impressionist composition, creating dreamlike atmospheres without strong tonal gravity",
+      "characteristics": ["dissolved tonality and floating harmony", "parallel augmented chord movement", "harp-like arpeggiated textures"],
+      "examples": ["Claude Debussy - Voiles (Preludes Book 1)", "Claude Debussy - L'isle joyeuse"]
+    },
+    {
+      "genre": "Jazz",
+      "usage": "Applied over augmented chords and dominant 7#5 chords for altered, floating improvisation with no tonal center",
+      "characteristics": ["dominant 7#5 chord soloing", "augmented arpeggio-based lines", "tension creation before resolution"],
+      "examples": ["Thelonious Monk - whole tone runs in improvisations", "Wayne Shorter - whole tone passages in compositions"]
+    },
+    {
+      "genre": "Film Scoring",
+      "usage": "Creates dreamlike, surreal, and disorienting atmospheres for dream sequences, underwater scenes, and transitions",
+      "characteristics": ["dream sequence underscore", "surreal and disorienting transitions", "weightless and floating musical textures"],
+      "examples": ["Classic Hollywood dream sequence scoring", "Animation and fantasy film transitions"]
+    }
+  ],
+  "famousSongs": [
+    {
+      "title": "Voiles (Preludes Book 1)",
+      "artist": "Claude Debussy",
+      "key": "C Whole Tone",
+      "genre": "Impressionist Classical",
+      "usage": "Almost entirely based on the whole tone scale, the definitive whole tone composition in Western music",
+      "difficulty": "Advanced",
+      "learningValue": "The quintessential whole tone composition, demonstrates pure whole tone harmony and melody"
+    },
+    {
+      "title": "You Are the Sunshine of My Life",
+      "artist": "Stevie Wonder",
+      "key": "B Major",
+      "genre": "Pop/Soul",
+      "usage": "Introduction uses whole tone ascending movement to create a dreamy, magical opening",
+      "difficulty": "Intermediate",
+      "learningValue": "Shows whole tone scale used as a brief color effect in popular music"
+    },
+    {
+      "title": "Falling Grace",
+      "artist": "Steve Swallow (performed by Gary Burton)",
+      "key": "Various",
+      "genre": "Jazz",
+      "usage": "Whole tone passages woven through jazz harmonic changes, demonstrating the scale's jazz vocabulary potential",
+      "difficulty": "Advanced",
+      "learningValue": "Demonstrates how whole tone fragments integrate into modern jazz lines"
+    },
+    {
+      "title": "Four on Six",
+      "artist": "Wes Montgomery",
+      "key": "A Minor",
+      "genre": "Jazz",
+      "usage": "Whole tone runs used over dominant chords as a tension device before resolving to tonal centers",
+      "difficulty": "Advanced",
+      "learningValue": "Shows how jazz masters use whole tone as a momentary color over dominant chords"
+    },
+    {
+      "title": "L'isle joyeuse",
+      "artist": "Claude Debussy",
+      "key": "A Major",
+      "genre": "Impressionist Classical",
+      "usage": "Extended whole tone passages creating shimmering, dreamlike textures within a larger tonal framework",
+      "difficulty": "Expert",
+      "learningValue": "Advanced impressionist application of whole tone scale integrated with tonal writing"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "name": "C Whole Tone Scale Runs",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Practice the C whole tone scale ascending and descending, internalizing the uniform whole-step interval and the symmetrical fingering pattern",
+      "alphaTex": "",
+      "tempo": "60-110 BPM",
+      "focus": ["whole tone sound internalization", "symmetric fingering pattern recognition"],
+      "instructions": [
+        "Play C whole tone ascending and descending with even rhythm, noting how each step is exactly a whole tone",
+        "Practice in two adjacent positions to cover both whole tone collections (C and D♭)",
+        "Close your eyes and focus on the floating, directionless quality of the scale's sound"
+      ]
+    },
+    {
+      "name": "Augmented Arpeggio Patterns",
+      "type": "Technical",
+      "difficulty": "Intermediate",
+      "description": "Practice augmented triads built on each scale degree to hear how the whole tone scale generates only augmented harmony",
+      "alphaTex": "",
+      "tempo": "70-100 BPM",
+      "focus": ["augmented chord recognition", "whole tone harmonic application"],
+      "instructions": [
+        "Play Caug, Daug, Eaug arpeggios ascending through the scale, noting they are all inversions of two triads",
+        "Connect the arpeggios into flowing lines that outline the whole tone harmony",
+        "Apply over a C7#5 backing chord to hear the augmented dominant context"
+      ]
+    },
+    {
+      "name": "Dominant 7#5 Application",
+      "type": "Musical",
+      "difficulty": "Advanced",
+      "description": "Apply the whole tone scale over a dominant 7#5 chord resolving to a major chord, the most practical jazz application",
+      "alphaTex": "",
+      "tempo": "80-120 BPM",
+      "focus": ["jazz dominant application", "whole tone resolution techniques"],
+      "instructions": [
+        "Practice over a C7#5 to Fmaj7 vamp, using whole tone scale over the dominant chord",
+        "Focus on creating tension with the whole tone scale and resolving smoothly to a chord tone of the target major chord",
+        "Experiment with different rhythmic groupings to avoid the scale sounding like a simple exercise"
+      ]
+    }
+  ],
+  "relatedScales": [
+    {
+      "scale": "Lydian Dominant",
+      "relationship": "Shares 6 of 7 notes",
+      "differences": "Lydian Dominant (melodic minor mode 4) has a perfect 5th; whole tone has augmented 5th and one fewer note",
+      "usage": "Lydian Dominant adds more tonal stability; whole tone is fully floating and symmetric"
+    },
+    {
+      "scale": "Augmented Scale (Hexatonic)",
+      "relationship": "Alternative symmetric hexatonic",
+      "differences": "Augmented scale alternates minor 3rds and half steps (C-E♭-E-G-A♭-B); whole tone uses all whole steps",
+      "usage": "Augmented scale has more tonal grounding; whole tone is completely uniform and directionless"
+    },
+    {
+      "scale": "Chromatic Scale",
+      "relationship": "Contains all notes of both whole tone collections",
+      "differences": "Chromatic has all 12 semitones; whole tone selects every other note (6 notes) from the chromatic scale",
+      "usage": "Chromatic is used for pure passing-tone movement; whole tone creates a specific augmented color"
+    }
+  ],
+  "learningPath": {
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Major scale and basic mode knowledge",
+      "Familiarity with augmented triads and dominant 7th chords"
+    ],
+    "nextSteps": [
+      "Diminished (octatonic) scale as another symmetric scale",
+      "Lydian Dominant mode for dominant chord applications with more tonal context"
+    ],
+    "practiceRoutine": [
+      {
+        "phase": "Foundation (Weeks 1-2)",
+        "duration": "15-20 minutes daily",
+        "focus": "Scale patterns and whole tone sound recognition",
+        "exercises": ["Basic whole tone runs in two positions", "Compare both whole tone collections", "Augmented triad arpeggios"]
+      },
+      {
+        "phase": "Development (Weeks 3-5)",
+        "duration": "20-30 minutes daily",
+        "focus": "Harmonic applications and jazz chord contexts",
+        "exercises": ["Augmented arpeggio patterns across the fretboard", "Practice over dominant 7#5 backing tracks", "Study Debussy whole tone passages"]
+      },
+      {
+        "phase": "Integration (Weeks 6-10)",
+        "duration": "25-35 minutes daily",
+        "focus": "Musical application in jazz and creative composition",
+        "exercises": ["Improvise over V7#5-I resolutions in jazz standards", "Create dreamy and impressionistic musical phrases", "Compose short whole tone etudes and chord progressions"]
+      }
+    ]
+  },
+  "metadata": {
+    "slug": "whole-tone",
+    "tags": ["whole-tone", "symmetric", "scales", "theory", "jazz", "impressionist", "intermediate", "augmented"],
+    "category": "scales",
+    "subcategory": "symmetric",
+    "lastUpdated": "2024-01-15",
+    "sources": ["Music theory pedagogy", "Guitar education standards"]
+  }
+}
