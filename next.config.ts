@@ -10,7 +10,7 @@ const withMDX = createMDX({
 
 const nextConfig: NextConfig = {
   output: 'export',
-  trailingSlash: true, 
+  trailingSlash: true,
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
   webpack: (config, { isServer }) => {
     // Handle AlphaTab font loading
@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
         ...config.resolve.fallback,
         fs: false,
       };
+
+      // AlphaTab webpack plugin handles worker/worklet bundling for audio playback
+      const { AlphaTabWebPackPlugin } = require('@coderline/alphatab/webpack');
+      config.plugins.push(new AlphaTabWebPackPlugin({
+        assetOutputDir: false // We copy assets to public/ ourselves below
+      }));
     }
 
     // Copy AlphaTab assets to public folder during build
@@ -28,6 +34,11 @@ const nextConfig: NextConfig = {
           {
             from: 'node_modules/@coderline/alphatab/dist/font',
             to: '../public/alphatab/font',
+            noErrorOnMissing: true
+          },
+          {
+            from: 'node_modules/@coderline/alphatab/dist/soundfont',
+            to: '../public/alphatab/soundfont',
             noErrorOnMissing: true
           }
         ]
