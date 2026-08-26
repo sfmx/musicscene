@@ -9,7 +9,7 @@ const withMDX = createMDX({
 });
 
 const nextConfig: NextConfig = {
-  // output: 'export',
+  output: 'export',
   trailingSlash: true, 
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
   webpack: (config, { isServer }) => {
