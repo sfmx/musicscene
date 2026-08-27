@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Tremolo?",
-    "text": "Tremolo is a volume modulation effect that creates rhythmic fluctuations in amplitude. An LFO (Low Frequency Oscillator) controls the volume up and down at regular intervals, creating a pulsing or \"shimmering\" effect that adds movement and texture to your sound.",
+    "text": "Tremolo works on the one part of a guitar signal most effects leave alone: raw volume. An LFO (low frequency oscillator) continuously turns the signal's amplitude up and down at a set rate, and because your ear tracks loudness changes as rhythm rather than pitch, the result is a pulsing throb that sits underneath whatever you're actually playing rather than changing the notes themselves. That's also what separates it from vibrato, which modulates pitch instead of volume and is a completely different effect despite the two names getting swapped constantly, including by Fender's own vintage amp panels.",
     "columns": [
       {
         "title": "How It Works",
-        "text": "LFO modulates signal amplitude. Creates rhythmic volume swells. Speed controls LFO frequency. Depth controls modulation amount. Can use various waveform shapes. Usually sine or triangle waves."
+        "text": "The LFO's speed sets how fast the volume pulses (from a slow throb to a rapid flutter), and its depth sets how far the volume actually swings, from a subtle wobble to a hard on/off chop. The waveform shape the LFO uses changes the character of that swing: a sine wave rises and falls smoothly for a gentle, musical pulse, while a square wave snaps between two volume levels almost instantly for a choppier, more percussive effect."
       },
       {
         "title": "Musical Applications",
-        "text": "Surf and rockabilly guitar. Ambient and atmospheric textures. Clean guitar enhancement. Vintage and retro sounds. Rhythmic accompaniment. Experimental sound design."
+        "text": "Tremolo built into vintage Fender amps became the signature texture of surf and rockabilly guitar simply because it was already sitting there on the amp panel, cheap to use and immediately identifiable. Slower, deeper settings do something different: they add a hypnotic, breathing quality to clean or lightly-driven chords that's become a staple of ambient and atmospheric playing, well past its original surf-guitar roots."
       }
     ]
   },
@@ -32,6 +32,7 @@
       "cards": [
         {
           "title": "Tremolo (Volume Modulation)",
+          "description": "True tremolo only ever touches how loud the signal is, cycling the volume up and down while leaving the pitch of every note completely untouched. Because it's just amplitude being modulated, it's relatively simple and cheap to build, which is exactly why it ended up built into so many vintage amps as a standard feature rather than staying a rare studio effect.",
           "items": [
             "Modulates amplitude/volume",
             "Creates pulsing effect",
@@ -42,6 +43,7 @@
         },
         {
           "title": "Vibrato (Pitch Modulation)",
+          "description": "True vibrato modulates pitch rather than volume, cycling the note slightly sharp and flat instead of loud and quiet, which produces a warbling character closer to a singer's natural vibrato than to a rhythmic pulse. It's genuinely rarer in guitar amps than tremolo because it takes more circuitry to modulate pitch cleanly than to simply turn a signal's volume up and down, which is exactly why only a handful of amp brands, Magnatone being the most famous, built true pitch vibrato rather than the volume-based effect and just calling it \"vibrato\" anyway.",
           "items": [
             "Modulates pitch/frequency",
             "Creates warbling effect",
@@ -58,28 +60,28 @@
       "cards": [
         {
           "title": "Bias Tremolo",
-          "description": "Found in vintage amplifiers. Modulates the tube bias voltage, creating a warm, organic tremolo with harmonic richness.",
+          "description": "Bias tremolo modulates the DC bias voltage feeding the amp's power tubes directly, which pushes the tubes themselves in and out of their normal operating range rather than just attenuating the signal after the fact. Because the tubes are actually being driven differently rather than simply turned down, the effect picks up some of the same harmonic coloration a driven tube produces, giving it a noticeably warmer, more organic pulse than a purely electronic volume effect.",
           "fields": [
             { "label": "Found in", "value": "Fender amps, Supro amps, vintage circuits" }
           ]
         },
         {
           "title": "Optical Tremolo",
-          "description": "Uses light-dependent resistors (photocells) and bulbs/LEDs. Smooth, musical modulation with soft attack.",
+          "description": "Optical tremolo uses a small bulb or LED that pulses in brightness, shining onto a photocell whose resistance changes with how much light hits it, and that changing resistance is what actually attenuates the signal. Because a light source and photocell can't snap on and off instantly the way a purely electronic switch can, the modulation naturally has a soft, rounded attack and release rather than a hard edge, which is why this circuit is generally considered smoother-sounding than tremolo built from switching transistors alone.",
           "fields": [
             { "label": "Examples", "value": "Vox amps, many boutique pedals, vintage designs" }
           ]
         },
         {
           "title": "Digital Tremolo",
-          "description": "Modern processors offer precise control, tap tempo, and multiple waveform shapes for creative possibilities.",
+          "description": "A digital tremolo generates its LFO in software rather than through a physical bulb, photocell, or bias circuit, which trades away the subtle imperfections of an analog circuit for exact, repeatable control. That precision is what makes tap tempo practical (locking the tremolo rate exactly to a song's actual tempo rather than eyeballing a knob) and lets one pedal switch between waveform shapes that would each require different analog circuitry to build individually.",
           "fields": [
             { "label": "Examples", "value": "Boss TR-2, Strymon Flint, many modern pedals" }
           ]
         },
         {
           "title": "Harmonic Tremolo",
-          "description": "Splits signal into high and low frequencies, modulating them alternately for a more complex, 3D effect.",
+          "description": "Harmonic tremolo splits the signal into a high-frequency band and a low-frequency band, then modulates each band's volume out of phase with the other, so as one band swells the other dips. That interaction between two moving frequency ranges, rather than the whole signal just getting louder and quieter together, is what gives harmonic tremolo its more complex, almost phaser-like character compared to standard tremolo, and why the extra tube stage it required made it too costly for Fender to keep in their lineup for long.",
           "fields": [
             { "label": "Examples", "value": "Fender \"Brownface\" amps, specialized pedals" }
           ]
@@ -92,9 +94,9 @@
       "cards": [
         {
           "title": "Fender Amp Tremolo",
-          "description": "The tremolo circuit built into vintage Fender amplifiers set the standard for guitar tremolo. Warm, musical modulation that defined surf and rockabilly.",
+          "description": "Fender built tremolo into its amps starting in the early 1960s, and because a Fender amp was the default backline for the era's surf and rockabilly players, that specific circuit's warm, musical pulse became the reference sound for guitar tremolo rather than one option among many. It's genuinely a volume effect despite Fender's own control panels often mislabeling it \"vibrato,\" the source of the tremolo/vibrato naming confusion that persists to this day.",
           "fields": [
-            { "label": "Famous Songs", "value": "\"Gimme Some Lovin'\" - Spencer Davis Group, \"Born on the Bayou\" - CCR, \"Pipeline\" - The Chantays" }
+            { "label": "Famous Songs", "value": "\"Pipeline\" - The Chantays (tremolo and reverb combined into the defining surf-guitar tone)" }
           ],
           "items": [
             "Dick Dale - Surf guitar pioneer",
@@ -106,7 +108,7 @@
         },
         {
           "title": "Boss TR-2 Tremolo",
-          "description": "Classic tremolo pedal that brought reliable, controllable tremolo to pedalboards everywhere. Simple and effective design.",
+          "description": "The TR-2 took the tremolo that used to live only inside vintage tube amps and put it on a pedalboard, letting any guitarist add it to whatever amp they were already using rather than needing a specific vintage circuit built in. Its straightforward rate and depth control layout, with no hidden menus or complex routing, is exactly why it became a pedalboard staple rather than a specialist tool.",
           "fields": [
             { "label": "Signature Sound", "value": "Clean, consistent tremolo with good range and reliability." }
           ],
@@ -120,7 +122,7 @@
         },
         {
           "title": "Strymon Flint",
-          "description": "Modern recreation of classic amp tremolo and reverb combinations. Multiple tremolo types with studio-quality sound.",
+          "description": "The Flint pairs digitally modeled versions of three distinct historical tremolo circuits, harmonic, bias, and photocell/optical, in one pedal alongside matching vintage-style reverb, rather than making a player choose one tremolo character and stick with it. That range of authentically modeled vintage types in a single modern unit is what made it a common substitute for owning several different vintage amps just to access their individual tremolo circuits.",
           "fields": [
             { "label": "Features", "value": "Multiple vintage-style tremolo types with harmonic tremolo option." }
           ],
@@ -141,6 +143,7 @@
         {
           "title": "Musical Techniques",
           "bgColor": "bg-emerald-50",
+          "description": "Tremolo reads as musical rather than mechanical mainly when its rate lines up with the actual song, syncing to a clear subdivision like quarter or eighth notes rather than an arbitrary speed that fights the drummer. Applied to a single sustained note or chord, that same pulsing becomes a way to keep a static part feeling alive without adding any new notes, which is why it's as common under a held drone as it is under active rhythm playing.",
           "items": [
             "Rhythm sync: Match tremolo to song tempo",
             "Drone notes: Sustained notes with tremolo",
@@ -153,6 +156,7 @@
         {
           "title": "Creative Applications",
           "bgColor": "bg-green-50",
+          "description": "Pushing tremolo well past its subtle, musical range turns it into a sound-design tool rather than a texture: a very fast, deep setting produces the choppy \"helicopter\" effect, and a square wave at that same speed turns the guitar signal into a hard on/off gate instead of a smooth pulse. Stereo tremolo takes this further by alternating the volume swells between left and right channels rather than moving together, so the sound appears to physically bounce between speakers rather than just pulsing in place.",
           "items": [
             "Helicopter effect: Very fast, deep tremolo",
             "Square wave tremolo: Hard on/off gating",
@@ -170,6 +174,7 @@
       "cards": [
         {
           "title": "Classic Applications",
+          "description": "Tremolo's depth and speed do most of the work in signaling a genre: surf pushes both settings hard for an urgent, wave-like pulse, while country and blues keep the same effect barely noticeable, using it to add a little breathing motion under a clean tone rather than defining the sound outright.",
           "items": [
             "Surf Music: Fast, deep tremolo on clean tones",
             "Rockabilly: Moderate tremolo with slap-back echo",
@@ -180,6 +185,7 @@
         },
         {
           "title": "Modern Applications",
+          "description": "Modern genres tend to use tremolo as a texture-building tool rather than a period reference: shoegaze and post-rock stack it with heavy reverb and delay to thicken a wall of sound, while electronic-adjacent guitar parts sync the rate directly to a drum machine or sequencer so the pulsing lines up exactly with the rest of the track instead of just running independently.",
           "items": [
             "Indie Rock: Retro textures and atmosphere",
             "Shoegaze: Dense, textural tremolo layers",
@@ -197,6 +203,7 @@
         {
           "title": "Performance Tips",
           "bgColor": "bg-teal-50",
+          "description": "Tremolo is most convincing at a subtle setting because heavy distortion already saturates the signal into a fairly constant volume, which flattens out much of the pulsing you'd otherwise hear from the effect. Clean or lightly overdriven tones let the full volume swing come through clearly, which is exactly why classic tremolo tracks almost always pair it with a relatively clean guitar sound rather than a high-gain one.",
           "items": [
             "Start with subtle settings",
             "Use tap tempo when available",
@@ -209,6 +216,7 @@
         {
           "title": "Signal Chain Tips",
           "bgColor": "bg-cyan-50",
+          "description": "Placing tremolo after distortion means it's modulating the already-shaped, saturated tone rather than the clean signal going into the drive pedal, which keeps the pulsing audible instead of just changing how hard the distortion is being hit. Putting it before reverb, rather than after, means the reverb tail smooths out the tremolo's on/off transitions instead of the tremolo chopping up the reverb's own decay, which is usually the more musical-sounding order.",
           "items": [
             "Usually late in signal chain",
             "After distortion but before reverb",

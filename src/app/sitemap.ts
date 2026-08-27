@@ -8,6 +8,7 @@ type ContentIndex = { entries: { url: string; contentType: string }[] };
 
 const STATIC_PAGES = [
   { url: '/', priority: 1.0 },
+  { url: '/sitemap/', priority: 0.5 },
   { url: '/about/', priority: 0.8 },
   { url: '/contact/', priority: 0.6 },
   { url: '/privacy-policy/', priority: 0.4 },

@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "How Microphones Work",
-    "text": "Microphones are transducers that convert acoustic energy (sound waves) into electrical energy (audio signals). Different microphone types use various methods to achieve this conversion, each with unique characteristics.",
+    "text": "Every microphone is a transducer, something that converts one form of energy into another, but the mechanism each type uses to do that conversion directly shapes how it sounds. A dynamic mic's moving coil has real physical mass and inertia, so it naturally smooths over fast transients and extreme highs; a condenser's charged capacitor plate is far lighter and reacts almost instantly to air pressure changes, which is why it captures detail a dynamic mic simply can't. That's the core reason \"which mic\" is never a purely subjective choice: the physics of how a mic hears determines what it's actually good at, before you even get to tone preference.",
     "columns": [
       {
         "title": "Transduction Methods",
-        "text": "Dynamic: Moving coil generates signal. Condenser: Capacitor plates change distance. Ribbon: Metal ribbon moves in magnetic field. Carbon: Pressure changes resistance (vintage). Piezo: Crystal generates voltage."
+        "text": "A dynamic mic's coil sits in a magnetic field and generates voltage as sound moves it, needing no external power and tolerating extremely loud sources because the mechanism itself is simple and robust. A condenser uses two charged plates whose distance changes with sound pressure, which requires phantom power to charge the capacitor but yields far higher sensitivity and a faster, more detailed response. A ribbon mic suspends an ultra-thin corrugated metal ribbon in a magnetic field, a design with almost no mass to resist motion, giving it a naturally smooth high end and a warm character, at the cost of real fragility, since that same thin ribbon can be torn by a strong gust of air or, on older transformerless designs, damaged by phantom power applied by mistake."
       },
       {
         "title": "Key Specifications",
-        "text": "Frequency Response: Range and coloration. Sensitivity: Output level for given input. SPL Handling: Maximum sound pressure. Self-Noise: Inherent electronic noise. Polar Pattern: Directional pickup."
+        "text": "Frequency response tells you where a mic naturally boosts or cuts, a mic with a presence peak around 5-8kHz will sound brighter and more forward than one with a flatter, more neutral response, and neither is wrong, they're suited to different sources. Sensitivity and self-noise trade off against each other in practice: a highly sensitive mic captures quiet detail well but can also reveal more of its own internal electronic noise on quiet passages, which is why self-noise figures matter most for hushed acoustic recording. SPL handling and polar pattern round out the picture, the first tells you whether a mic will distort in front of a loud amp or drum, the second tells you how much sound arriving from the sides and rear gets rejected versus captured."
       }
     ]
   },
@@ -30,6 +30,7 @@
       "cards": [
         {
           "title": "Characteristics",
+          "description": "A dynamic capsule's simple coil-and-magnet design needs no external power and can absorb the sound pressure of a cranked guitar amp or a snare drum without distorting, which is exactly what makes it so reliable in loud, physically demanding environments. That same simplicity, and the lack of delicate parts like a charged capacitor plate, is why dynamic mics shrug off humidity, temperature swings, and rough handling that would put a condenser at real risk.",
           "items": [
             "No external power required",
             "Excellent for high SPL sources",
@@ -41,6 +42,7 @@
         },
         {
           "title": "Best Applications",
+          "description": "The combination of high SPL tolerance and rugged build is why dynamic mics dominate anywhere a mic gets shouted into, slammed with drum transients, or handled roughly on tour, live vocals, guitar amps, and drums all fit that description. Their more focused, midrange-forward frequency response also happens to cut through a dense mix well, which is part of why they remain a broadcast and podcasting default even in controlled studio settings.",
           "items": [
             "Live vocals and performance",
             "Guitar amplifier recording",
@@ -58,6 +60,7 @@
       "cards": [
         {
           "title": "Industry Standards",
+          "description": "The Shure SM57 and SM58 became ubiquitous less because they're the most detailed mics available and more because they're nearly indestructible and sound predictably good on the sources they're built for, which is exactly why almost every studio and stage has one on hand: an engineer moving between rooms knows what to expect from them regardless of where they end up. The Electro-Voice RE20 and Sennheiser MD421 earned similar reputations in broadcast and studio settings for the same underlying reason, consistent, reliable performance a mixer can count on take after take.",
           "fields": [
             { "label": "Shure SM57", "value": "Industry standard for instruments" },
             { "label": "Shure SM58", "value": "Legendary vocal mic" },
@@ -74,6 +77,7 @@
       "cards": [
         {
           "title": "Characteristics",
+          "description": "The charged capacitor plate at the heart of a condenser mic needs phantom power to hold that charge, and because the plate is so light, it responds to air pressure changes almost instantly, which is what gives condensers their fast transient response and extended high-frequency detail. That same sensitivity is a double-edged sword: it also picks up handling noise, room reflections, and its own electronic self-noise more readily than a dynamic mic would, which is why quality varies so much between budget and high-end condenser models.",
           "items": [
             "Requires phantom power (+48V)",
             "Highly sensitive and detailed",
@@ -85,6 +89,7 @@
         },
         {
           "title": "Best Applications",
+          "description": "That sensitivity and detail is exactly what studio vocal and acoustic instrument recording rewards, a quiet, treated room lets a condenser capture nuance a dynamic mic would simply miss. The same qualities make condensers the default choice for overheads and room mics, where capturing airy detail and natural decay matters more than raw SPL handling.",
           "items": [
             "Studio vocal recording",
             "Acoustic instruments",
@@ -102,6 +107,7 @@
       "cards": [
         {
           "title": "Industry Standards",
+          "description": "The Neumann U87 has stayed a studio default for decades because its large-diaphragm capsule and switchable polar patterns make it flexible enough to sound flattering on almost any voice, which is a bigger reason for its longevity than any single technical spec. The AKG C414 pushes that flexibility further with up to nine selectable polar patterns in one mic, while the Audio-Technica AT2020 earned its reputation simply by delivering a large chunk of that same large-diaphragm condenser sound at a fraction of the price, and the Rode NTK adds a tube stage for a warmer, more colored top end than a solid-state condenser typically has.",
           "fields": [
             { "label": "Neumann U87", "value": "Studio legend" },
             { "label": "AKG C414", "value": "Versatile multi-pattern" },
@@ -118,6 +124,7 @@
       "cards": [
         {
           "title": "Characteristics",
+          "description": "A ribbon's extremely low mass gives it a naturally smooth, gently rolled-off high end rather than the extended, sometimes harsh top end a condenser can have, which reads to most ears as warmth and a kind of natural compression on transients. That same thin ribbon is genuinely fragile, a strong blast of air, physical shock, or (on many older designs) phantom power sent to the mic by mistake can damage or destroy it, so ribbons demand more careful handling than dynamic or even condenser mics.",
           "items": [
             "Vintage, warm tone character",
             "Natural compression and smoothness",
@@ -129,6 +136,7 @@
         },
         {
           "title": "Best Applications",
+          "description": "That natural high-frequency smoothing is exactly why ribbons excel on sources that can turn harsh under a bright condenser, a cranked guitar amp or a brass instrument, taming edge without needing EQ to do it after the fact. The typical figure-8 pattern also rejects sound from the sides while capturing front and back equally, which is why ribbons work so well as a natural-sounding room or overhead mic in the right space.",
           "items": [
             "Guitar amplifiers (mellows harshness)",
             "Brass instruments",
@@ -146,6 +154,7 @@
       "cards": [
         {
           "title": "Industry Standards",
+          "description": "The Coles 4038 dates back to a design developed for the BBC, and its reputation for smooth, natural detail on brass and strings has kept it in professional use ever since. The RCA 44 occupies a similar place in broadcast history from decades earlier, while the Royer R-121 modernized the format with a more rugged build that revived ribbon mics as a practical studio option rather than a museum piece, and the AEA R84 extended that revival to a more affordable price point.",
           "fields": [
             { "label": "Coles 4038", "value": "BBC vintage classic" },
             { "label": "Royer R-121", "value": "Modern ribbon standard" },
@@ -161,6 +170,7 @@
       "cards": [
         {
           "title": "Cardioid (Heart-shaped)",
+          "description": "A cardioid capsule is built to reject sound arriving from directly behind it while capturing the front fully, which is what gives it the heart-shaped pickup pattern and makes it the most practical all-purpose choice for isolating one source from everything else nearby. That same design produces the proximity effect, a bass boost that grows as a source gets closer to the capsule, which engineers can use deliberately for warmth or need to correct for with a high-pass filter.",
           "items": [
             "Picks up front, rejects rear",
             "Most common pattern",
@@ -171,6 +181,7 @@
         },
         {
           "title": "Omnidirectional",
+          "description": "An omni capsule responds to pure sound pressure rather than the direction sound arrives from, which is why it picks up evenly in every direction and, unlike a cardioid, has essentially no proximity effect. That even pickup makes it the natural choice when you want a source's real room ambience captured along with it, rather than isolated from it.",
           "items": [
             "Picks up all directions equally",
             "Natural room sound",
@@ -181,6 +192,7 @@
         },
         {
           "title": "Figure-8 (Bidirectional)",
+          "description": "A figure-8 pattern captures front and rear equally while rejecting the sides almost completely, a pattern that falls naturally out of a ribbon mic's velocity-sensing design and doesn't need to be engineered in the way a cardioid pattern does. That makes it ideal for two people facing each other across a single mic, and it carries an even stronger proximity effect than cardioid, since both the front and rear lobes exhibit the same bass boost up close.",
           "items": [
             "Picks up front and rear",
             "Rejects sides completely",
@@ -198,6 +210,7 @@
         {
           "title": "Vocal Recording",
           "bgColor": "bg-orange-50",
+          "description": "Distance to the mic is really a trade-off between intimacy and space: close miking captures a present, detailed vocal but exaggerates proximity effect and plosives, which is exactly why a pop filter and gain staging matter so much closer in, while backing off to a couple of feet lets more of the room's natural sound blend into the take, at the cost of needing a room that actually sounds good.",
           "fields": [
             { "label": "Close Miking (6-12 inches)", "value": "Intimate, present sound. Good isolation. Use pop filter. Watch for proximity effect." },
             { "label": "Distance Miking (2+ feet)", "value": "More natural, roomy sound. Includes room acoustics. Requires good acoustic space." }
@@ -206,8 +219,9 @@
         {
           "title": "Instrument Recording",
           "bgColor": "bg-teal-50",
+          "description": "Guitar amp miking follows the same close-vs-room logic as vocals, a mic like an SM57 placed near the speaker's cone edge captures a focused, direct tone, while a condenser set back several feet blends in cabinet resonance and room character; combining both microphones and blending them afterward is a common way to get punch and depth in the same track. Acoustic instruments reward more patience than a fixed rule: moving the mic while listening back is usually faster than guessing at a textbook position, since every instrument's resonance points are slightly different.",
           "fields": [
-            { "label": "Guitar Amplifiers", "value": "Close: SM57 on speaker cone edge. Room: Condenser 3-6 feet back. Combine close + room for depth." },
+            { "label": "Guitar Amplifiers", "value": "Close: SM57 near speaker cone edge. Room: Condenser 3-6 feet back. Combine close + room for depth." },
             { "label": "Acoustic Instruments", "value": "Find the sweet spot by listening. Consider instrument resonance. Use room mics for natural sound." }
           ]
         }
@@ -220,32 +234,23 @@
       "cards": [
         {
           "title": "First Microphone ($50-200)",
-          "items": [
-            "Large diaphragm condenser",
-            "Audio-Technica AT2020",
-            "Rode PodMic (dynamic option)",
-            "Good for vocals and instruments",
-            "Includes basic accessories"
+          "description": "A single large-diaphragm condenser covers the widest range of home-recording needs at this budget, vocals and acoustic instruments both benefit from its detail, though a dynamic option like the Rode PodMic is worth considering if your room isn't treated, since it's far less sensitive to picking up untreated-room reflections and background noise.",
+          "fields": [
+            { "label": "Recommended Models", "value": "Audio-Technica AT2020, Rode PodMic (dynamic option)" }
           ]
         },
         {
           "title": "Home Studio Pair ($200-600)",
-          "items": [
-            "Large diaphragm condenser",
-            "Dynamic mic (SM57/SM58)",
-            "Covers most recording needs",
-            "Shure SM57 + Audio-Technica AT2035",
-            "Pop filter and boom stands"
+          "description": "Pairing a large-diaphragm condenser with a dynamic mic covers most recording needs without overlap, the condenser for detailed vocal and acoustic work, the dynamic for loud sources and anything recorded in a less-than-ideal room, so you're never reaching for a mic that's wrong for the job at hand.",
+          "fields": [
+            { "label": "Recommended Models", "value": "Shure SM57/SM58 + Audio-Technica AT2035" }
           ]
         },
         {
           "title": "Professional Setup ($600+)",
-          "items": [
-            "Multiple pattern condenser",
-            "Specialty mics (ribbon, small diaphragm)",
-            "Matched pairs for stereo",
-            "AKG C414, Neumann TLM series",
-            "Professional accessories"
+          "description": "At this level the goal shifts from covering the basics to having the right specialty tool for each job, a multi-pattern condenser for flexibility, a ribbon or small-diaphragm mic for sources that need that specific character, and matched pairs for accurate stereo recording where two mics need genuinely identical response.",
+          "fields": [
+            { "label": "Recommended Models", "value": "AKG C414, Neumann TLM series, matched small-diaphragm pairs" }
           ]
         }
       ]
@@ -257,6 +262,7 @@
         {
           "title": "Storage & Handling",
           "bgColor": "bg-blue-50",
+          "description": "Handling a mic by its grille rather than its body risks denting the mesh into the capsule itself, which can permanently alter its frequency response, so grip the body even though the grille looks like the natural handle. Ribbon mics in particular should stay away from strong magnetic fields, since their output depends on a permanent magnet that can weaken with prolonged exposure, and any mic benefits from a case that absorbs shock during transport rather than relying on a bag alone.",
           "items": [
             "Store in protective cases or pouches",
             "Avoid extreme temperatures and humidity",
@@ -269,6 +275,7 @@
         {
           "title": "Cleaning & Service",
           "bgColor": "bg-green-50",
+          "description": "Solvents and harsh chemicals can damage the fine mesh or foam inside a mic's grille, which is why a soft brush and a barely damp cloth are the safe default for cleaning, anything stronger risks doing more harm than the dust it removes. Condenser capsules can drift in sensitivity over years of use, which is why professional studios periodically send their key mics out for calibration rather than assuming a mic that's always sounded fine still measures the way it did new.",
           "items": [
             "Clean grilles gently with soft brush",
             "Wipe body with slightly damp cloth",

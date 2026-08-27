@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Chorus?",
-    "text": "Chorus creates the illusion of multiple instruments playing the same part by mixing your dry signal with one or more delayed copies that are modulated in pitch and timing. This mimics the natural variations that occur when multiple musicians play together.",
+    "text": "Chorus creates the illusion of multiple instruments playing the same part by mixing your dry signal with one or more delayed copies that are modulated in pitch and timing. This mimics the natural variations that occur when multiple musicians play together: no two real performers ever play a unison part in perfectly identical pitch and timing, and it's exactly that small imperfection, recreated electronically, which makes a single guitar sound like it's been doubled rather than just processed. That's why chorus reads as a texture rather than an obvious effect at subtle settings, and why it can turn a single clean guitar into something that fills a mix the way a stack of overdubs would.",
     "columns": [
       {
         "title": "How It Works",
-        "text": "Delays signal by 15-35ms. Modulates delay time with LFO. Creates pitch variations. Blends with dry signal. Multiple delay lines possible. Phase differences create width."
+        "text": "A chorus pedal splits your signal into a dry path and one or more delayed copies, typically delayed by 15 to 35 milliseconds, short enough to be heard as one note rather than a discrete echo. A low-frequency oscillator (LFO) continuously speeds up and slows down that delay time, and because changing a delay's length also changes the effective pitch of the signal passing through it, the modulated copy drifts very slightly sharp and flat around the original pitch. Blending that drifting copy back with the dry signal is what creates the effect: the two signals reinforce each other at some frequencies and cancel at others as they move in and out of phase, producing the familiar swirling, watery texture. Adding more delay lines, each running its own LFO phase, thickens the effect further, which is how multi-voice and stereo choruses build a wider, more three-dimensional sound than a single-voice unit can."
       },
       {
         "title": "Musical Applications",
-        "text": "Clean guitar thickening. 80s pop and rock textures. Jazz and fusion smoothness. Country guitar sparkle. Ambient and atmospheric sounds. Bass guitar enhancement."
+        "text": "Because chorus works by adding pitch and timing variation, its most obvious use is thickening a single clean note or chord until it sounds doubled, which is why it became a standard way to fill space without actually recording a second guitar part. That mechanism is also behind its strong 80s association: pop and rock productions leaned on wide stereo chorus to make one guitar track occupy as much sonic space as a stack of overdubs. The same thickening works at a much lighter setting in jazz, fusion, and country playing, adding shimmer to clean or fingerpicked tone without drawing attention to itself, while on bass it fattens a thin low end in a mix before the pitch-smearing becomes audible as a distinct effect."
       }
     ]
   },
@@ -29,28 +29,28 @@
       "cards": [
         {
           "title": "Analog Chorus",
-          "description": "Uses bucket brigade delay (BBD) chips to create warm, musical modulation. Known for their organic sound and subtle imperfections.",
+          "description": "Analog chorus pedals create their delay using bucket-brigade device (BBD) chips, which pass the signal through a chain of capacitors that each hold and release it a fraction of a second later. That process has limited bandwidth and adds a small amount of noise and non-linearity along the way, and it's exactly those imperfections, rather than despite them, that give analog chorus its reputation for a warmer, more organic modulation than a digital circuit produces at equivalent settings.",
           "fields": [
             { "label": "Examples", "value": "Boss CE-1, MXR Analog Chorus, TC Electronic Corona" }
           ]
         },
         {
           "title": "Digital Chorus",
-          "description": "Provides clean, pristine modulation with precise control. Often includes multiple chorus types and extensive parameter control.",
+          "description": "Digital chorus pedals generate the delay and modulation in the digital domain instead of through an analog BBD chain, which removes the bandwidth limits and noise floor that color an analog unit's tone. That precision is a trade-off rather than a straightforward upgrade: it lets a single pedal switch between several distinct chorus algorithms and expose far more parameters than an analog circuit can practically offer, though some players find the same precision makes the effect sound comparatively sterile next to an analog pedal's built-in imperfections.",
           "fields": [
             { "label": "Examples", "value": "Boss CH-1, Strymon Mobius, Eventide TimeFactor" }
           ]
         },
         {
           "title": "Stereo Chorus",
-          "description": "Outputs to two amps or channels, creating wide, spacious soundscapes. Essential for achieving classic 80s guitar tones.",
+          "description": "A stereo chorus sends the dry signal to one output and the modulated copy to the other, so instead of blending both signals into a single channel they arrive at the listener's left and right ears separately. That physical separation creates a genuine sense of width that a mono chorus can only approximate through phase cancellation, which is why the deep, wide chorus sound closely associated with classic 80s guitar tone really requires two amps or a stereo signal path to hear in full, not just the pedal on its own.",
           "fields": [
             { "label": "Examples", "value": "Boss CE-5, Roland JC-120 amp, rack processors" }
           ]
         },
         {
           "title": "Multi-Voice Chorus",
-          "description": "Uses multiple delay lines and LFOs to create ensemble effects, simulating large groups of instruments.",
+          "description": "A multi-voice chorus runs several delay lines at once, each with its own LFO rate and phase, rather than modulating a single copy of the signal. Layering that many independently drifting copies together is closer to what actually happens when a group of instruments or voices play the same part, none perfectly in tune or time with one another, which is why these units are described as producing an ensemble effect rather than a single-voice thickening.",
           "fields": [
             { "label": "Examples", "value": "EHX Small Clone, Boss CE-20, vintage string machines" }
           ]
@@ -89,35 +89,23 @@
       "cards": [
         {
           "title": "Boss CE-1 Chorus Ensemble",
-          "description": "The first chorus pedal ever made, adapted from the Roland JC-120 amplifier. Warm, lush, and musical with both chorus and vibrato modes.",
+          "description": "Boss built the CE-1 in 1976 by taking the chorus/vibrato circuit already used in Roland's JC-120 Jazz Chorus amplifier and housing it in a standalone floor pedal, making it both the first pedal Boss ever released and the first chorus pedal sold as a discrete effect. Its two-mode design, a subtle blended chorus and a more dramatic pitch-only vibrato, combined with the warmth and noise inherent to its BBD circuit, set a template that most analog chorus pedals since have tried to recreate.",
           "fields": [
-            { "label": "Signature Sound", "value": "Warm, analog modulation with rich harmonic content and smooth transitions" }
-          ],
-          "items": [
-            "Andy Summers - The Police",
-            "John Scofield - Jazz fusion",
-            "Robert Smith - The Cure",
-            "Many 80s session players",
-            "Jazz and fusion guitarists"
+            { "label": "Signature Sound", "value": "Warm, analog modulation with rich harmonic content and smooth transitions" },
+            { "label": "Notable Users", "value": "Andy Summers (The Police), John Frusciante (Red Hot Chili Peppers)" }
           ]
         },
         {
           "title": "Electro-Harmonix Small Clone",
-          "description": "Simple, affordable chorus with a distinctive sound. Made famous by Kurt Cobain and the grunge movement, but also beloved by clean-tone players.",
+          "description": "The Small Clone pares chorus down to two knobs, rate and depth, plus a switch for a wider \"deep\" modulation, which makes it fast to dial in without a large control set to navigate. Kurt Cobain's use of one on Nirvana's \"Come As You Are\" gave it mainstream visibility that its low price and simplicity wouldn't have earned on their own, and that same directness has kept it a favorite with clean-tone players who want an obvious, unmistakably analog chorus without wading through menus or extra parameters.",
           "fields": [
-            { "label": "Signature Sound", "value": "Rich, deep chorus with a slightly dark character and smooth modulation" }
-          ],
-          "items": [
-            "Kurt Cobain - Nirvana clean tones",
-            "John Frusciante - Red Hot Chili Peppers",
-            "Many indie and alternative artists",
-            "Clean tone specialists",
-            "Lo-fi and bedroom pop musicians"
+            { "label": "Signature Sound", "value": "Rich, deep chorus with a slightly dark character and smooth modulation" },
+            { "label": "Notable Users", "value": "Kurt Cobain (Nirvana)" }
           ]
         },
         {
           "title": "Boss CE-5 Chorus Ensemble",
-          "description": "Modern stereo chorus with extensive control options. High-frequency cut filter and stereo outputs make it perfect for studio and live use.",
+          "description": "The CE-5 pairs true stereo outputs with a switchable EQ voicing that cuts some of the high-frequency content chorus can add, which matters because that top-end shimmer that sounds pleasant through headphones can turn brittle and thin once it's pushed through a PA. Between the EQ options and the stereo spread, it can get closer to a two-amp analog chorus rig's sense of space out of a single compact pedal.",
           "fields": [
             { "label": "Signature Sound", "value": "Clean, precise digital chorus with wide stereo imaging and flexible control" }
           ],
@@ -131,7 +119,7 @@
         },
         {
           "title": "TC Electronic Corona Chorus",
-          "description": "Modern digital chorus with TonePrint technology for custom sounds. Combines classic algorithms with modern flexibility.",
+          "description": "The Corona runs on TC Electronic's TonePrint platform, which lets players load a custom or artist-designed modulation setting into the pedal from a phone app rather than being limited to what the physical knobs can dial in, and switch between several distinct chorus voicings, including emulations of classic analog circuits, from one small enclosure. That flexibility is the trade-off against an all-analog pedal: fewer inherent sonic quirks of its own, but access to a much wider range of chorus characters without needing several dedicated pedals.",
           "fields": [
             { "label": "Signature Sound", "value": "Versatile digital chorus with multiple classic and modern algorithms" }
           ],
@@ -151,7 +139,7 @@
       "cards": [
         {
           "title": "80s Pop & Rock",
-          "description": "Defining sound of the decade. Wide stereo chorus on clean tones, often combined with reverb for spacious soundscapes.",
+          "description": "Chorus became the signature guitar sound of 80s pop and rock largely because of what a wide stereo setting does to a clean tone: it turns a single note into something that sounds like it's filling a large room by itself. Pairing it with reverb pushed that further, since the reverb's diffuse tail reinforced the space the chorus had already created, letting one guitarist's clean tone carry as much sonic weight in a mix as a much busier arrangement.",
           "fields": [
             { "label": "Settings", "value": "Deep, slow rate, stereo spread" },
             { "label": "Artists", "value": "The Police, The Cure, U2" }
@@ -159,7 +147,7 @@
         },
         {
           "title": "Jazz & Fusion",
-          "description": "Subtle chorus adds warmth and dimension to clean jazz tones without overwhelming the natural guitar sound.",
+          "description": "Jazz and fusion players tend to keep chorus subtle enough that it isn't consciously heard as an effect: a small amount of pitch modulation adds depth and movement to a clean tone that would otherwise sound comparatively flat through a PA or recording. Pushing the depth or rate further starts to compete with the harmonic complexity of jazz voicings, which is why the style favors restraint over the dramatic wide settings used in pop and rock.",
           "fields": [
             { "label": "Settings", "value": "Subtle depth, medium rate" },
             { "label": "Artists", "value": "John Scofield, Pat Metheny, Bill Frisell" }
@@ -167,7 +155,7 @@
         },
         {
           "title": "Country & Folk",
-          "description": "Light chorus adds sparkle to clean tones and fingerpicked passages, enhancing the natural beauty of acoustic-style playing.",
+          "description": "A light chorus setting brings out high-frequency detail in fingerpicked and clean electric parts by very slightly doubling and detuning the signal, which reads as added sparkle rather than an obvious effect. Because country and folk playing relies on note-to-note clarity to carry the arrangement, players in these styles typically keep the depth low enough that the pitch modulation stays below the threshold of being consciously noticed.",
           "fields": [
             { "label": "Settings", "value": "Light depth, faster rate" },
             { "label": "Artists", "value": "Brad Paisley, Keith Urban, many session players" }
@@ -175,7 +163,7 @@
         },
         {
           "title": "Alternative & Indie",
-          "description": "From subtle enhancement to dramatic texture, chorus helps create the dreamy, atmospheric sounds of alternative rock.",
+          "description": "Alternative and indie guitarists use chorus across its full range, from a light thickening on a clean tone to deep, slow modulation that all but obscures the note's original pitch. At its most extreme, deep and slow chorus stops sounding like a doubled guitar and starts sounding like a wash of texture, which is the effect bands built around dreamy, atmospheric arrangements have leaned on to blur the line between a guitar part and an ambient backdrop.",
           "fields": [
             { "label": "Settings", "value": "Various, often deep and slow" },
             { "label": "Artists", "value": "Nirvana, My Bloody Valentine, Radiohead" }
@@ -190,6 +178,7 @@
         {
           "title": "Best Practices",
           "bgColor": "bg-cyan-50",
+          "description": "Chorus is easy to overdo because its effect compounds with whatever other modulated or delayed effects are already in your chain: a setting that sounds tasteful on its own can turn to mush once it's stacked with delay and reverb in a full mix. Starting subtle and only adding depth if the mix still calls for it keeps the effect adding dimension rather than smearing the pitch definition of your playing.",
           "items": [
             "Start with subtle settings",
             "Works best with clean tones",
@@ -202,6 +191,7 @@
         {
           "title": "Signal Chain Position",
           "bgColor": "bg-blue-50",
+          "description": "Chorus generally sits after gain-based effects like distortion and overdrive, because modulating an already-distorted signal accentuates the pitch wobble in a way that can sound unpleasantly warbly, while modulating a clean or lightly overdriven signal keeps it smooth. Placing it before time-based effects like delay and reverb means those effects repeat or diffuse the already-modulated signal, which generally produces a more cohesive, spacious sound than the reverse order.",
           "items": [
             "After distortion/overdrive",
             "Before delay and reverb",

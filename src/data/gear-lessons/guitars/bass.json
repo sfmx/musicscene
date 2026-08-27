@@ -10,12 +10,12 @@
   },
   "introduction": {
     "title": "Bass Guitars: The Heartbeat of Music",
-    "text": "From thunderous rock foundations to intricate jazz walking lines, the bass guitar provides the harmonic and rhythmic foundation that makes music move.",
+    "text": "The bass guitar sits at the intersection of harmony and rhythm: it plays the root notes that anchor a chord progression while also locking in with the drummer to define a song's groove. Most listeners don't consciously notice the bass line the way they notice a guitar riff or a vocal melody, but take it away and a full band mix suddenly feels thin and directionless — the low end is what makes the rest of the arrangement sit together. That combination of being essential and often unnoticed is exactly why session bassists are in constant demand even though they rarely get the spotlight.",
     "quote": "Why Bass Matters:",
     "columns": [
       {
         "title": "Why Bass Matters",
-        "text": "Provides harmonic foundation with root notes. Bridges rhythm section with drums. Creates groove and feel in all genres. Essential for full band sound. Highly in-demand skill for musicians."
+        "text": "A bass line does two jobs simultaneously: it spells out the harmony by outlining root notes and chord tones, and it bridges the rhythm section by locking its timing to the drummer's kick and snare. That dual role is what gives a band its groove and feel, since the same chord progression can sound completely different depending on how the bass phrases around it — which is also why bass is one of the most consistently in-demand skills for working musicians."
       }
     ]
   },
@@ -30,6 +30,7 @@
           "title": "Harmonic Foundation",
           "bgColor": "bg-orange-50",
           "borderColor": "",
+          "description": "Every chord a guitarist or keyboardist plays gets its harmonic identity confirmed by whatever note the bass is playing underneath it, which is why a bass line built on root notes and chord tones does more to define the progression than the chords themselves. Walking bass lines take this further, connecting one chord to the next with passing notes so the harmony feels like it's moving somewhere rather than just switching abruptly.",
           "items": [
             "Root Notes: Establish chord progressions",
             "Walking Lines: Connect chord changes smoothly",
@@ -41,6 +42,7 @@
           "title": "Rhythmic Anchor",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "description": "A bassist's timing has to lock precisely with the drummer's kick drum, because any drift between the two instruments makes the entire rhythm section feel unstable no matter how tight everyone else is playing. That's why 'the pocket' — the exact rhythmic relationship between bass and drums — is treated as the single most important skill in the instrument, more important than speed or note choice.",
           "items": [
             "Pocket Playing: Lock in with the drummer",
             "Groove Creation: Define the feel of songs",
@@ -52,6 +54,7 @@
           "title": "Melodic Voice",
           "bgColor": "bg-purple-50",
           "borderColor": "",
+          "description": "Beyond holding down the low end, bass lines are often what a listener actually hums back after hearing a song, because a memorable bass hook occupies sonic space no other instrument is using and therefore stands out even at lower volume. In some genres — funk and fusion especially — the bass steps forward entirely, taking solos and carrying melodies the way a guitar or horn normally would.",
           "items": [
             "Bass Solos: Featured melodic passages",
             "Fills: Connect sections and add interest",
@@ -71,6 +74,7 @@
           "title": "Bass Types",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "A 4-string in standard EADG tuning remains the default because it covers the range most music actually needs without adding extra strings to manage. Extended-range basses solve a specific problem rather than being simply 'more bass': a 5-string's low B opens up drop-tuned and modern styles without sacrificing the top end, a 6-string adds a high C for players who need guitar-like reach, and fretless basses trade fixed intonation for the smooth, voice-like glides prized in jazz and world music.",
           "items": [
             "4-String: Standard EADG tuning. Most common and versatile.",
             "5-String: Adds low B string. Extended range for modern music.",
@@ -82,6 +86,7 @@
           "title": "Scale Length",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "Scale length changes both feel and tone because it determines string tension: a short scale's slacker strings are easier to bend and fret but produce a warmer, less defined low end, while the 34-inch long scale has become standard precisely because it balances comfortable tension with a tight, clearly articulated bottom end. Extra-long scales exist mainly for extended-range basses, where the additional length keeps a low B or lower string from feeling floppy.",
           "items": [
             "Short Scale (30\"): Easier to play, warmer tone. Great for smaller hands.",
             "Medium Scale (32\"): Balanced feel and tone. Good compromise.",
@@ -99,18 +104,18 @@
       "cards": [
         {
           "title": "Fender Precision Bass",
-          "description": "The original electric bass guitar, introduced in 1951. Deep, fundamental tone that defines rock and pop music.",
+          "description": "The original electric bass guitar, introduced in 1951, effectively invented the instrument category — before it, low end in popular music meant an upright double bass. Its single split-coil pickup produces a thick, punchy fundamental with relatively few overtones, which is exactly why it sits so cleanly under a mix without fighting other instruments for space.",
           "bgColor": "bg-red-50",
           "borderColor": "",
           "items": [
             "Single split-coil pickup",
             "Thick, punchy tone",
-            "Used by: James Jamerson, Paul McCartney"
+            "Used by: James Jamerson, Donald \"Duck\" Dunn"
           ]
         },
         {
           "title": "Fender Jazz Bass",
-          "description": "More versatile with two single-coil pickups and a thinner neck. Bright, cutting tone perfect for funk and jazz.",
+          "description": "More versatile with two single-coil pickups and a thinner neck, the Jazz Bass trades some of the Precision's punch for brighter, more articulate tone and finer control over the sound via its two-pickup blend. That extra clarity and flexibility is why it became the preferred instrument for genres like funk and fusion, where fast, detailed lines need to cut through rather than just sit underneath.",
           "bgColor": "bg-yellow-50",
           "borderColor": "",
           "items": [
@@ -121,7 +126,7 @@
         },
         {
           "title": "Music Man StingRay",
-          "description": "Active electronics and distinctive tone. Punchy attack perfect for modern rock and funk.",
+          "description": "Active electronics and distinctive tone set the StingRay apart from passive designs: an onboard preamp boosts and shapes the signal before it ever reaches an amp, giving the humbucker a punchier, more aggressive attack than a passive pickup can produce on its own. That aggressive front end is exactly what made it the go-to bass for slap playing, where the attack of the pluck needs to cut through as much as the note itself.",
           "bgColor": "bg-green-50",
           "borderColor": "",
           "items": [
@@ -132,7 +137,7 @@
         },
         {
           "title": "Rickenbacker 4003",
-          "description": "Distinctive look and jangly tone. Famous for its use in rock and progressive music.",
+          "description": "Distinctive look and jangly tone come from a combination of dual single-coil pickups and a bright-voiced maple neck-through-body construction, which gives the 4003 a trebly, cutting character unlike the warmer tone of most other basses. That top-end presence is why it's remained a favorite in rock and progressive music, where the bass often needs to be heard as a distinct voice rather than just felt as low end.",
           "bgColor": "bg-purple-50",
           "borderColor": "",
           "items": [
@@ -151,7 +156,7 @@
       "cards": [
         {
           "title": "Fingerstyle",
-          "description": "Using fingers to pluck strings. Warm, round tone.",
+          "description": "Using the fingers to pluck the string produces a warm, round tone because flesh contacts the string more gently and over a wider area than a rigid pick does, softening the attack transient. That softer attack is what makes fingerstyle the default technique for genres like jazz and R&B, where the bass needs to sit underneath the mix rather than cut sharply through it.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -161,7 +166,7 @@
         },
         {
           "title": "Pick Playing",
-          "description": "Using a plectrum for attack. Bright, cutting tone.",
+          "description": "A plectrum strikes the string with a harder, more consistent edge than a finger can, producing a brighter, more percussive attack that cuts through distorted guitars and loud drums far more easily than fingerstyle does. That extra bite is why pick playing dominates in rock, punk, and metal, where the bass has to compete with guitar amps for sonic space.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -171,7 +176,7 @@
         },
         {
           "title": "Slap & Pop",
-          "description": "Percussive technique with thumb and fingers.",
+          "description": "Slapping the string with the thumb and popping it with a finger produces a percussive transient closer to a drum hit than a plucked note, which is what lets a bass line function as rhythm and melody at the same time. That dual role is exactly why the technique became inseparable from funk, where the bass often carries as much of the groove as the drum kit itself.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -181,7 +186,7 @@
         },
         {
           "title": "Tapping",
-          "description": "Two-handed technique for fast runs and chords.",
+          "description": "Tapping uses both hands directly on the fretboard to hammer notes on rather than plucking them, which makes it possible to play intervals and fast runs a single plucking hand physically can't keep up with. That extended technical reach is why tapping shows up mostly in progressive and fusion playing, where the goal is often to treat the bass like a solo instrument rather than a rhythm section part.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -237,7 +242,7 @@
       "cards": [
         {
           "title": "Why Bass Amps Are Different",
-          "description": "Bass frequencies require more power and larger speakers than guitar amps. A proper bass amp is essential for good tone and adequate volume.",
+          "description": "Bass frequencies require more power and larger speakers than guitar amps, because moving air at low frequencies takes significantly more cone displacement and wattage than reproducing the higher frequencies a guitar amp handles. A proper bass amp is essential for good tone and adequate volume — running a bass through a guitar amp typically leaves it sounding thin and causes the speaker to strain or fail under the low-frequency load it wasn't designed for.",
           "bgColor": "bg-indigo-50",
           "borderColor": "",
           "fields": [
@@ -295,6 +300,7 @@
           "title": "Rock Legends",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "These bassists shaped what rock bass could be beyond simply following the guitar's root notes, whether through melodic countermelodies, harmonic complexity, or sheer aggressive drive.",
           "items": [
             "John Entwistle (The Who)",
             "John Paul Jones (Led Zeppelin)",
@@ -306,6 +312,7 @@
           "title": "Funk Masters",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "Funk turned the bass into a rhythm instrument as percussive as the drum kit, and these players are largely responsible for developing and popularizing the slap and pop vocabulary that defines the genre's low end.",
           "items": [
             "James Brown (Various)",
             "Bootsy Collins",
@@ -317,6 +324,7 @@
           "title": "Jazz Virtuosos",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "In jazz the bass frequently steps forward as a solo and melodic voice rather than staying purely in a supporting role, and these players are among the ones most responsible for expanding what the instrument was expected to do.",
           "items": [
             "Jaco Pastorius",
             "Charles Mingus",
@@ -328,6 +336,7 @@
           "title": "Modern Innovators",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "These players built on the techniques of earlier generations and pushed the instrument further still, whether through extended range, extreme technical facility, or bringing bass to the front of genres where it had traditionally stayed in the background.",
           "items": [
             "Flea (Red Hot Chili Peppers)",
             "Les Claypool (Primus)",

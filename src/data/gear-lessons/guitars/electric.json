@@ -10,12 +10,12 @@
   },
   "introduction": {
     "title": "Electric Guitars: Shape Your Sound",
-    "text": "From clean jazz tones to screaming metal leads, electric guitars offer unparalleled versatility and the power to cut through any mix.",
+    "text": "An electric guitar barely makes any sound on its own — pickups convert string vibration into an electrical signal, and everything you actually hear comes from whatever the amp and effects do with that signal afterward. That's what makes the instrument so versatile: the same guitar can sound completely different depending on the amp it's plugged into and what's between the two, which is why an electric guitar is really only half the instrument. The other half, the amp, is not optional gear you add later — it's where most of the tone actually comes from.",
     "quote": "Electric Guitar Advantages:",
     "columns": [
       {
         "title": "Electric Guitar Advantages",
-        "text": "Incredible tonal variety through amps and effects. Perfect for band settings and live performance. Lower string action for fast, technical playing. Volume control independent of playing dynamics. Sustain and feedback control for expressive playing."
+        "text": "Because the amp and effects chain do so much of the tonal work, a single electric guitar can move between glassy clean tones, gritty overdrive, and saturated high-gain distortion without changing instruments — something no acoustic guitar can do. Lower string action and independent volume control add to that flexibility, letting a player switch between delicate, quiet passages and full-volume lead lines without the guitar itself fighting back."
       }
     ]
   },
@@ -30,6 +30,7 @@
           "title": "Clean Tones",
           "bgColor": "bg-green-50",
           "borderColor": "",
+          "description": "A clean tone is what an amp produces when it's not adding distortion, which means every nuance of touch and pickup choice comes through unmasked — there's nowhere for a weak technique or a poorly set up guitar to hide. That transparency is exactly why clean tones dominate genres like jazz and country, where articulation and note choice matter as much as raw sound.",
           "items": [
             "Jazz: Warm, smooth hollow-body tones",
             "Funk: Crisp single-coil attack",
@@ -41,6 +42,7 @@
           "title": "Crunch & Overdrive",
           "bgColor": "bg-orange-50",
           "borderColor": "",
+          "description": "Overdrive occurs when an amp or pedal is pushed just past clean into mild distortion, adding harmonic content and sustain without burying the note's fundamental pitch the way heavier distortion does. That balance of grit and clarity is why overdrive became the backbone of blues and classic rock, genres that need edge and sustain but still rely on individual notes being clearly heard.",
           "items": [
             "Blues: Singing sustain and natural compression",
             "Classic Rock: Warm tube saturation",
@@ -52,6 +54,7 @@
           "title": "High Gain",
           "bgColor": "bg-red-50",
           "borderColor": "",
+          "description": "High-gain distortion pushes a signal far harder than overdrive, generating enough harmonic saturation that the guitar's raw pickup output is almost secondary to the amp's own character. That heavy processing is what makes tight palm-muted riffs and searing sustained leads possible at the same time, which is why metal and progressive playing rely on it so completely.",
           "items": [
             "Metal: Tight, aggressive distortion",
             "Progressive: Clear, articulate high gain",
@@ -71,6 +74,7 @@
           "title": "Pickup Types",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "A pickup's coil design determines both its tone and its noise floor: a single-coil's simple magnet-and-wire construction produces a bright, detailed signal but also picks up electrical hum, while a humbucker uses two coils wired to cancel that hum out, trading some of the single-coil's sparkle for a warmer, quieter output. Active pickups sidestep the trade-off differently, using a battery-powered preamp to boost output and shape EQ before the signal ever leaves the guitar.",
           "items": [
             "Single-Coil: Bright, crisp tone with some hum. Classic Stratocaster sound.",
             "Humbucker: Warm, powerful tone with no hum. Great for rock and jazz.",
@@ -82,6 +86,7 @@
           "title": "Body Styles",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "How much of the body is hollowed out changes how the guitar resonates and how it behaves at volume: a solid body resists feedback and sustains cleanly because there's no internal cavity to vibrate sympathetically with the amp, while a hollow body's open chambers add real acoustic resonance at the cost of being much more prone to feeding back at higher gain and volume. Semi-hollow and chambered designs sit between those two extremes, trading some sustain and feedback resistance for a lighter body and a touch of acoustic character.",
           "items": [
             "Solid Body: Most common. Sustain and feedback resistance.",
             "Semi-Hollow: Some acoustic resonance with electric versatility.",
@@ -101,6 +106,7 @@
           "title": "Fender Stratocaster",
           "bgColor": "bg-yellow-50",
           "borderColor": "",
+          "description": "Three single-coil pickups and a tremolo bridge give the Stratocaster a bright, glassy tone with a wide range of pickup-blend options, plus the ability to add subtle pitch vibrato — features that made it flexible enough to become the default guitar across blues, rock, and funk alike.",
           "items": [
             "Three single-coil pickups",
             "Tremolo bridge system",
@@ -112,6 +118,7 @@
           "title": "Gibson Les Paul",
           "bgColor": "bg-red-50",
           "borderColor": "",
+          "description": "Dual humbuckers and a dense mahogany body with a maple cap give the Les Paul a thick, warm sustain that single-coil guitars can't easily match, which is why it became the guitar of choice for players who need a big, powerful tone at higher gain.",
           "items": [
             "Dual humbucker pickups",
             "Mahogany body, maple cap",
@@ -123,6 +130,7 @@
           "title": "Fender Telecaster",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "description": "A simple two-pickup layout and a fixed bridge keep the Telecaster's tone bright and direct with none of the tuning complications a tremolo system introduces, which is exactly why it's stayed the workhorse of country and roots-rock guitarists who need reliability as much as tone.",
           "items": [
             "Two single-coil pickups",
             "Fixed bridge design",
@@ -134,6 +142,7 @@
           "title": "Gibson SG",
           "bgColor": "bg-purple-50",
           "borderColor": "",
+          "description": "A lightweight, thin double-cutaway body pairs with dual humbuckers to produce an aggressive, cutting tone with easy upper-fret access, a combination that made the SG a favorite for hard rock players who need speed and attack over sustain.",
           "items": [
             "Dual humbuckers",
             "Lightweight, thin body",
@@ -145,6 +154,7 @@
           "title": "PRS Custom 24",
           "bgColor": "bg-green-50",
           "borderColor": "",
+          "description": "Versatile pickup configurations and a coil-splitting switching system let the Custom 24 cover both single-coil clarity and humbucker warmth from one guitar, reflecting PRS's founding idea of combining the best traits of a Stratocaster and a Les Paul into a single, exceptionally well-built instrument.",
           "items": [
             "Versatile pickup configurations",
             "Modern design philosophy",
@@ -156,6 +166,7 @@
           "title": "Ibanez RG Series",
           "bgColor": "bg-indigo-50",
           "borderColor": "",
+          "description": "A thin, fast neck and high-output pickups were designed specifically for speed and comfort during rapid lead playing, which is why the RG series became closely associated with shred and metal guitarists who need the neck to get out of the way of fast technique.",
           "items": [
             "Fast, thin necks",
             "High-output pickups",
@@ -211,7 +222,7 @@
       "cards": [
         {
           "title": "Why Amps Matter",
-          "description": "An electric guitar without an amplifier is like a car without an engine. The amp shapes your tone just as much as the guitar itself.",
+          "description": "An electric guitar without an amplifier is like a car without an engine — it has all the components to make music, but nothing to actually do the work. The amp shapes your tone just as much as the guitar itself, and the fundamental split between tube and solid-state designs comes down to how each generates distortion: tube amps clip the signal in a way that responds dynamically to how hard you play, while solid-state circuits clip more abruptly but stay consistent night after night with none of a tube's maintenance needs.",
           "bgColor": "bg-orange-50",
           "borderColor": "",
           "fields": [
@@ -257,6 +268,7 @@
           "title": "Essential Effects",
           "bgColor": "bg-purple-50",
           "borderColor": "",
+          "description": "Each of these effects solves a different problem in the signal chain rather than just adding a generic flavor: overdrive and distortion add gain and sustain the guitar can't produce on its own, reverb and delay recreate the sense of space a dry, direct signal is missing, and chorus thickens a single note into something that sounds like multiple instruments. A tuner belongs in this list for a more basic reason — none of the other effects matter if the guitar isn't in tune to begin with.",
           "items": [
             "Overdrive/Distortion: Adds gain and sustain",
             "Reverb: Spatial ambience and depth",
@@ -269,7 +281,7 @@
           "title": "Effect Chain Order",
           "bgColor": "bg-blue-50",
           "borderColor": "",
-          "description": "Guitar -> Tuner -> Overdrive -> Modulation -> Delay -> Reverb -> Amp. This is a typical signal chain, though experimentation is encouraged!"
+          "description": "Guitar -> Tuner -> Overdrive -> Modulation -> Delay -> Reverb -> Amp. This ordering isn't arbitrary: gain-based effects like overdrive are placed early so they distort the raw guitar signal rather than an already-modulated or delayed one, while time-based effects like delay and reverb go last so they repeat and decay the fully-shaped tone rather than a dry, unprocessed one. It's a typical signal chain, though experimentation is encouraged, since some classic tones deliberately break this order."
         }
       ]
     },
@@ -281,7 +293,7 @@
       "cards": [
         {
           "title": "Power Chords",
-          "description": "Two or three-note chords that form the backbone of rock music.",
+          "description": "Two or three-note chords, built from just a root and fifth with the major or minor third omitted, that form the backbone of rock music. Leaving out the third means the chord stays harmonically ambiguous and sounds equally solid whether the underlying key is major or minor, which is exactly what makes power chords survive heavy distortion without turning muddy the way a full chord would.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -290,7 +302,7 @@
         },
         {
           "title": "Bending",
-          "description": "Pushing strings to change pitch for expressive, vocal-like effects.",
+          "description": "Pushing strings to change pitch for expressive, vocal-like effects works because a bend's pitch rises continuously rather than jumping between fixed frets, closely mimicking the way a human voice slides into a note. That vocal quality is exactly why bending is central to blues and rock lead playing, where phrasing often intentionally imitates singing.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -299,7 +311,7 @@
         },
         {
           "title": "Vibrato",
-          "description": "Rapid pitch variations to add emotion and sustain to notes.",
+          "description": "Rapid, small pitch variations added to a sustained note keep it feeling alive rather than static, which matters because a guitar's sustain naturally decays and a note with no vibrato at all can sound comparatively flat and lifeless by comparison, especially during a held lead note.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -308,7 +320,7 @@
         },
         {
           "title": "Palm Muting",
-          "description": "Muffling strings with the picking hand for percussive attack.",
+          "description": "Resting the picking-hand edge lightly on the strings near the bridge dampens their sustain, turning an open, ringing chord into a tight, percussive chug. That controlled damping is what gives rhythm parts in metal and punk their driving, staccato feel instead of a wash of sustained distortion.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -317,7 +329,7 @@
         },
         {
           "title": "Legato",
-          "description": "Smooth, connected notes using hammer-ons and pull-offs.",
+          "description": "Smooth, connected notes using hammer-ons and pull-offs let a player sound multiple notes with only a single pick attack, producing a fluid, slurred phrasing that fast alternate picking can't replicate. That smoothness is why legato is favored in jazz and fusion playing that prizes a singing, connected line over percussive articulation.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -326,7 +338,7 @@
         },
         {
           "title": "Tremolo/Whammy",
-          "description": "Using the tremolo arm to create pitch bends and dives.",
+          "description": "Using the tremolo arm to create pitch bends and dives physically loosens or tightens all six strings at once via the floating bridge, producing pitch effects — from subtle wobble to a full dive-bomb — that fretting-hand bends alone can't reach across every string simultaneously.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -345,6 +357,7 @@
           "title": "Regular Care",
           "bgColor": "bg-yellow-50",
           "borderColor": "",
+          "description": "Sweat and oil left on strings and hardware after playing accelerate corrosion on frets and pickup poles, which is why a quick wipe-down after each session does more for long-term tone and feel than an occasional deep clean. Quality cables matter for the same reason cheap ones cause problems: poor shielding and worn connectors introduce signal loss and noise that no amount of amp tweaking can fix afterward.",
           "items": [
             "Wipe down after each use",
             "Keep electronics clean and dry",
@@ -357,6 +370,7 @@
           "title": "Professional Setup",
           "bgColor": "bg-green-50",
           "borderColor": "",
+          "description": "A professional setup addresses several interconnected adjustments at once, because changing one — action height, for instance — shifts intonation and can expose fret buzz that wasn't there before. Pickup height and fret condition matter just as much as the more obvious action and intonation adjustments, since pickups set too close to the strings can cause the guitar to sound choked or out of tune on bent notes even when everything else is set correctly.",
           "items": [
             "Action adjustment for comfort",
             "Intonation for accurate tuning",

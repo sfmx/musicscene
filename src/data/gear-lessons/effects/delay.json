@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Delay?",
-    "text": "Delay creates echoes of your original signal by storing and playing back the audio after a specified time interval. The delayed signal can be repeated multiple times, creating rhythmic patterns, ambient textures, or simply adding space and dimension.",
+    "text": "Delay creates echoes of your original signal by storing it and playing it back after a specified time interval, then optionally feeding that repeat back into the effect to generate further, quieter repeats. Because the guitarist controls exactly how long the gap is and how many times it repeats, delay can be tuned to sit anywhere between a barely-noticeable slap and a wash of overlapping echoes, which is why it does double duty as both a rhythmic tool and an ambient texture generator depending entirely on how it's set.",
     "columns": [
       {
         "title": "Key Parameters",
-        "text": "Time: Delay length (milliseconds to seconds). Feedback: Number of repeats. Mix/Level: Wet/dry balance. Tone: EQ of delayed signal. Modulation: Pitch/time variations."
+        "text": "Time sets the gap between the original note and its echo, and it's the parameter that decides whether the effect reads as rhythmic (synced to a musical subdivision) or textural (long enough that it stops sounding like an echo of a specific note at all). Feedback controls how many times that echo repeats by determining how much of the delayed signal gets fed back into the input, so low feedback gives one or two clear repeats while feedback pushed toward maximum can spiral into a nearly endless, self-sustaining wash. Mix balances how loud those repeats are against your dry signal, and tone rolls off some of the delayed signal's high end on each pass, which is what makes repeats sound like they're fading into the distance rather than just getting quieter at the same brightness."
       },
       {
         "title": "Musical Applications",
-        "text": "Rhythmic echoes and patterns. Ambient soundscapes. Lead guitar enhancement. Creating space and depth. Doubling and thickening. Sound design and textures."
+        "text": "Set to a short, single repeat, delay adds a slap-back thickening that makes a single guitar sound fuller without changing its pitch, the same trick used on vocals and guitar since early rockabilly recordings. Synced to a musical subdivision like a dotted eighth note, delay repeats interleave with the notes you're playing to create a rhythmic pattern that sounds like two guitarists playing interlocking parts, even though only one is. Pushed toward long times and high feedback, the repeats stop tracking individual notes and blur into a continuous wash, which is how the same effect creates lead-guitar sustain, sense of physical space, and fully ambient soundscapes depending only on how far the same two controls are turned."
       }
     ]
   },
@@ -29,7 +29,7 @@
       "cards": [
         {
           "title": "Analog Delay",
-          "description": "Uses bucket brigade devices (BBDs) or tape to create warm, musical repeats that degrade naturally with each repeat.",
+          "description": "Analog delay pedals pass the signal through a chain of bucket-brigade device (BBD) capacitor stages, and each stage loses a small amount of high end and adds a trace of noise, so every repeat sounds progressively darker and softer than the one before it. That built-in degradation is what gives analog delay its warm, natural character, but it also caps how long a single delay can practically be, since a BBD chain needs more stages, and therefore more signal loss, to produce a longer delay time.",
           "fields": [
             { "label": "Characteristics", "value": "Warm, musical degradation, limited delay time" },
             { "label": "Examples", "value": "Boss DM-2, MXR Carbon Copy, Way Huge Aqua Puss" }
@@ -37,7 +37,7 @@
         },
         {
           "title": "Digital Delay",
-          "description": "Provides pristine, exact repeats with extensive control options and longer delay times.",
+          "description": "Digital delay stores the signal as sampled data rather than passing it through an analog chain, so a repeat can be recalled with no signal loss no matter how long the delay time or how many repeats stack up. That precision removes the natural darkening of analog delay, which some players miss, but it's also what makes multi-second delay times, tap tempo, and modulation or filtering of individual repeats practical in the first place.",
           "fields": [
             { "label": "Characteristics", "value": "Clean repeats, long delay times, precise control" },
             { "label": "Examples", "value": "Boss DD-7, TC Electronic Flashback, Strymon Timeline" }
@@ -45,7 +45,7 @@
         },
         {
           "title": "Tape Echo",
-          "description": "Classic tape-based delays with natural modulation, compression, and warm, organic character.",
+          "description": "A true tape echo generates its delay by physically recording the signal onto a moving loop of magnetic tape and reading it back from a playback head positioned further along the loop, so the delay time is a function of tape speed and head spacing rather than an electronic circuit. Small variations in motor speed and tape tension add natural pitch modulation and wow-and-flutter to each repeat, and the tape itself compresses and saturates the signal slightly, which together account for the format's warm, organic, slightly unstable character that BBD and digital designs deliberately try to emulate.",
           "fields": [
             { "label": "Characteristics", "value": "Warm saturation, natural modulation, vintage vibe" },
             { "label": "Examples", "value": "Echoplex EP-3, Space Echo RE-201, Belle Epoch" }
@@ -53,7 +53,7 @@
         },
         {
           "title": "Multi-Tap Delay",
-          "description": "Multiple delay taps create complex rhythmic patterns and intricate echo arrangements.",
+          "description": "Rather than one delay time repeating itself via feedback, a multi-tap delay runs several independent delay lines off the same input, each with its own time, level, and pan setting. That lets a single pedal generate genuinely different rhythmic patterns, like an eighth note repeat panned left and a dotted-quarter repeat panned right, at once, which a single-tap delay can only approximate by chaining multiple pedals together.",
           "fields": [
             { "label": "Characteristics", "value": "Multiple echoes, rhythm patterns, complex textures" },
             { "label": "Examples", "value": "Empress Echosystem, Eventide TimeFactor, rack units" }
@@ -105,58 +105,33 @@
       "cards": [
         {
           "title": "Maestro Echoplex EP-3",
-          "description": "The gold standard of tape echo units. Warm, musical repeats with natural compression and saturation. Used on countless classic recordings.",
+          "description": "The Echoplex ran signal through a genuine tape loop and preamp rather than emulating one, which is why players who've owned both an original unit and a modern recreation often describe the real thing as sounding thicker and more alive; the tube preamp stage colors the tone even with the delay level turned all the way down. Its combination of natural tape modulation, mild compression, and a warm tonal coloration made it the reference point that most later tape-echo simulations, digital or analog, have aimed to recreate rather than surpass.",
           "fields": [
-            { "label": "Signature Sound", "value": "Warm tape saturation, natural modulation, musical compression and EQ" }
-          ],
-          "items": [
-            "Jimmy Page - Led Zeppelin epics",
-            "Eddie Van Halen - \"Eruption\" solo",
-            "Andy Summers - The Police textures",
-            "Neal Schon - Journey leads",
-            "Countless rock and fusion players"
+            { "label": "Signature Sound", "value": "Warm tape saturation, natural modulation, musical compression and EQ" },
+            { "label": "Notable Users", "value": "Jimmy Page (Led Zeppelin), Eddie Van Halen (the volume-swell echo on \"Cathedral\"), Andy Summers (The Police), Neal Schon (Journey)" }
           ]
         },
         {
           "title": "Roland Space Echo RE-201",
-          "description": "Iconic tape echo with spring reverb. Multiple playback heads create complex rhythmic patterns. Essential for dub, reggae, and ambient music.",
+          "description": "The RE-201 combines a tape delay section with three separate playback heads and a built-in spring reverb tank, so a single unit can produce several staggered repeats plus reverb at once, without needing to chain separate pedals together. That multi-head layout, and the fact that its delay time is set by physically varying tape speed rather than an electronic clock, is what gave dub producers of the 1970s the tool to build the deep, disorienting echo trails that became foundational to the genre.",
           "fields": [
-            { "label": "Signature Sound", "value": "Complex multi-tap patterns, warm tape character, integrated spring reverb" }
-          ],
-          "items": [
-            "Lee \"Scratch\" Perry - Dub pioneer",
-            "Robert Fripp - King Crimson soundscapes",
-            "Radiohead - Ambient textures",
-            "My Bloody Valentine - Shoegaze walls",
-            "Dub and reggae producers"
+            { "label": "Signature Sound", "value": "Complex multi-tap patterns, warm tape character, integrated spring reverb" },
+            { "label": "Notable Users", "value": "Lee \"Scratch\" Perry (dub pioneer), Robert Fripp (part of his long-running Space Echo-based rig)" }
           ]
         },
         {
           "title": "Boss DM-2 Delay",
-          "description": "The first mass-market analog delay pedal. Warm bucket brigade delays with musical degradation. Compact and reliable.",
+          "description": "Released in 1981, the DM-2 was one of the first analog delay pedals built for a normal guitarist's pedalboard rather than a studio rack, condensing the warm, degrading repeats of a BBD circuit into a compact, battery-friendly stompbox. Its short maximum delay time, around 300 milliseconds, limits it to slap-back and short rhythmic echoes rather than long ambient washes, but that same constraint is part of why its repeats stay tight and musical instead of smearing, which has kept original units and Boss's reissue in steady demand from players chasing an authentic analog echo.",
           "fields": [
             { "label": "Signature Sound", "value": "Warm analog delays with natural high-frequency roll-off and musical repeats" }
-          ],
-          "items": [
-            "The Edge - U2's signature sound",
-            "Kevin Shields - My Bloody Valentine",
-            "Many 80s and 90s guitarists",
-            "Alternative and indie musicians",
-            "Collectors and vintage enthusiasts"
           ]
         },
         {
           "title": "TC Electronic 2290",
-          "description": "Professional rack-mount digital delay with pristine sound quality and extensive modulation options. Studio standard in the 80s and 90s.",
+          "description": "Released in 1985, the 2290 offered up to 32 seconds of delay time along with sampling, looping, and its Dynamic Delay function, which ducks the repeats out of the way while you're playing and lets them swell back up in the gaps, keeping long echo trails from turning to mud under a busy lead line. That combination of studio-grade delay length and a rack-mount MIDI-controllable interface made it the professional standard through the late 80s and 90s, remaining in production for two decades before being retired.",
           "fields": [
-            { "label": "Signature Sound", "value": "Crystal clear digital delays with precise timing and extensive modulation" }
-          ],
-          "items": [
-            "David Gilmour - Pink Floyd precision",
-            "Larry Carlton - Smooth jazz",
-            "Session musicians worldwide",
-            "Progressive rock artists",
-            "Studio professionals"
+            { "label": "Signature Sound", "value": "Crystal clear digital delays with precise timing and extensive modulation" },
+            { "label": "Notable Users", "value": "David Gilmour (Pink Floyd, from A Momentary Lapse of Reason onward), The Edge (U2)" }
           ]
         }
       ]
@@ -168,6 +143,7 @@
         {
           "title": "Rhythmic Techniques",
           "bgColor": "bg-indigo-50",
+          "description": "Syncing delay time to the song's tempo rather than setting it by ear is what turns an echo into a genuine second rhythmic voice: a dotted-eighth delay lands each repeat exactly between the notes you're playing, filling the rhythmic gaps rather than smearing over them, which only works reliably if the delay time is locked to the song's actual BPM.",
           "items": [
             "Dotted eighth notes: Creates triplet feel",
             "Quarter note delays: Doubling effect",
@@ -180,6 +156,7 @@
         {
           "title": "Ambient Techniques",
           "bgColor": "bg-purple-50",
+          "description": "Most ambient delay techniques work by pushing feedback high enough that the repeats stop decaying to silence and start sustaining or building on themselves, which is also why they need to be used carefully: a delay set to self-oscillate can keep generating sound indefinitely after you stop playing, for better or worse depending on whether that's the intended effect.",
           "items": [
             "Infinite repeats: Feedback at maximum",
             "Volume swells: Slow attack with delay",
@@ -197,16 +174,18 @@
       "cards": [
         {
           "title": "Classic Examples",
+          "description": "These recordings are useful reference points because the delay isn't just a texture in the mix, it's the part itself: mute the delay and the guitar part as written no longer makes rhythmic sense.",
           "items": [
             "U2 - \"Where The Streets Have No Name\": Dotted eighth delays",
             "Pink Floyd - \"Run Like Hell\": Rhythmic delay patterns",
-            "Van Halen - \"Eruption\": Tape echo on tapping",
+            "Van Halen - \"Cathedral\": Volume-swell notes fed through tape echo",
             "The Police - \"Message In A Bottle\": Bright analog delays",
-            "Led Zeppelin - \"Black Mountain Side\": Ambient Echoplex"
+            "Led Zeppelin - \"Black Mountain Side\": Echoplex-treated acoustic textures"
           ]
         },
         {
           "title": "Modern Applications",
+          "description": "Digital delay's ability to run near-infinite repeats, sync tightly to a click, and layer multiple independent delay lines has pushed the effect well past its slap-back and rhythmic-echo roots into a compositional tool in its own right, used to build entire ambient beds and looped arrangements rather than just decorate an existing part.",
           "items": [
             "Radiohead: Complex digital delays and loops",
             "Explosions in the Sky: Ambient post-rock textures",
@@ -224,6 +203,7 @@
         {
           "title": "Performance Tips",
           "bgColor": "bg-yellow-50",
+          "description": "A delay time that isn't locked to the song's tempo is one of the fastest ways to make a rhythmic part sound sloppy live, since the repeats will drift audibly out of time with the band even if your own playing is solid. Using tap tempo rather than a fixed knob setting, and accounting for how a room's natural reverberation adds to whatever repeats the pedal is already generating, keeps the effect sitting in the pocket instead of fighting the rest of the mix.",
           "items": [
             "Match delay time to song tempo",
             "Use tap tempo for accuracy",
@@ -236,6 +216,7 @@
         {
           "title": "Recording Tips",
           "bgColor": "bg-orange-50",
+          "description": "Committing a delay effect to the recorded track the same way you'd hear it live removes your ability to adjust the balance later, so keeping the dry signal available separately, whether by recording it on its own track or using a send rather than an insert, means the delay's timing and mix can still be tweaked or automated after the take rather than being locked in permanently.",
           "items": [
             "Record dry signal separately",
             "Use delay sends for flexibility",

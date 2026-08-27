@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is an Audio Interface?",
-    "text": "An audio interface is a hardware device that connects your instruments, microphones, and studio monitors to your computer. It handles analog-to-digital conversion (ADC) for recording and digital-to-analog conversion (DAC) for playback.",
+    "text": "An audio interface exists because a computer's built-in sound card is designed for playback and video calls, not for capturing a clean signal from a microphone or instrument. Its converters (the ADC turning your analog signal into digital audio, and the DAC doing the reverse for playback) are purpose-built to introduce as little noise and coloration as possible, and dedicated mic preamps and proper impedance matching give you far more usable gain before noise than a laptop's headphone jack ever could. The other job an interface does, direct hardware monitoring, lets you hear yourself while recording with essentially no delay, sidestepping the small but very noticeable lag that comes from routing your voice through the computer's software first.",
     "columns": [
       {
         "title": "Key Functions",
-        "text": "Convert analog signals to digital (ADC). Convert digital signals to analog (DAC). Provide phantom power for condensers. Offer low-latency monitoring. Supply multiple inputs/outputs. Improve audio quality over built-in cards."
+        "text": "The ADC and DAC are the actual conversion work, turning analog signal into the 1s and 0s a computer can store and back again on the way out, and their quality sets a ceiling on how good your recordings can sound regardless of what mic or plugin you use. Phantom power (+48V) exists specifically because condenser microphone capsules need an external charge to function at all, while direct, near-zero-latency monitoring and proper impedance matching are what let you track confidently in real time instead of fighting a laggy or thin-sounding signal."
       },
       {
         "title": "Why You Need One",
-        "text": "Better sound quality than computer audio. Professional XLR and TRS connections. Multiple simultaneous recordings. Direct monitoring without delay. Dedicated preamps for microphones. Proper impedance matching."
+        "text": "A dedicated interface gives you real balanced XLR and TRS connections, so you can use professional microphones and gear at all, something a stock computer input simply can't do. Its onboard preamps and converters exist purely to serve audio quality rather than double as a general-purpose computer port, which is why even an entry-level interface usually sounds noticeably cleaner and quieter than recording through a built-in mic or line input."
       }
     ]
   },
@@ -30,6 +30,7 @@
         {
           "title": "Technical Specs",
           "bgColor": "bg-green-50",
+          "description": "Sample rate and bit depth work together but solve different problems: a higher sample rate (96/192kHz) captures more high-frequency detail and gives more flexibility for extreme time-stretching, while bit depth (24-bit, or 32-bit float on newer interfaces) determines dynamic range and how much headroom you have before clipping becomes audible. Latency matters for a more immediate reason, once round-trip delay creeps much past about 10ms, a performer can actually feel the lag between playing a note and hearing it back, which is exactly the sluggish, disconnected feeling low-latency monitoring is designed to eliminate.",
           "fields": [
             { "label": "44.1/48 kHz", "value": "Standard quality (CD/broadcast)" },
             { "label": "96/192 kHz", "value": "High resolution recording" },
@@ -41,6 +42,7 @@
         {
           "title": "Physical Features",
           "bgColor": "bg-blue-50",
+          "description": "Combo jacks exist to save panel space without sacrificing flexibility, one input socket that accepts either an XLR mic cable or a 1/4\" line/instrument plug, so a single channel can serve double duty. The connection type to your computer is really a bandwidth and latency question: USB is plug-and-play simple and fine for most home setups, while Thunderbolt and internal PCIe cards exist because high channel-count professional sessions need far more simultaneous bandwidth and lower latency than USB can reliably guarantee.",
           "fields": [
             { "label": "XLR", "value": "Microphone inputs with phantom power" },
             { "label": "TRS/TS", "value": "Line and instrument inputs" },
@@ -58,6 +60,7 @@
       "cards": [
         {
           "title": "2-Channel (Beginner)",
+          "description": "A 2-channel interface covers the most common home-recording scenario, one voice or instrument at a time, and stays cheap and simple because it only needs to power and convert one or two inputs; bus power over USB means no separate power supply to carry around either.",
           "items": [
             "1-2 mic/line inputs",
             "Direct monitoring",
@@ -68,6 +71,7 @@
         },
         {
           "title": "4-8 Channel (Home Studio)",
+          "description": "Stepping up to 4-8 channels is really about recording more than one source at once, a full band rehearsal, a drum kit with a few mics, or an instrument plus a scratch vocal, which is why MIDI I/O and basic monitor mixing usually appear at this tier alongside the extra inputs.",
           "items": [
             "Multiple combo inputs",
             "MIDI I/O",
@@ -78,6 +82,7 @@
         },
         {
           "title": "Multi-Channel (Professional)",
+          "description": "Beyond 8 channels, the cost jumps because each additional input needs its own preamp and converter circuit, not just another jack, and at this tier onboard DSP and expandable I/O exist to handle full-band or orchestral sessions where dozens of mics need to hit tape at once with no added latency.",
           "items": [
             "8+ simultaneous inputs",
             "Advanced routing",
@@ -94,6 +99,7 @@
       "cards": [
         {
           "title": "Thunderbolt Advantages",
+          "description": "Thunderbolt gives an interface direct, high-bandwidth access to the computer's PCIe bus rather than sharing USB's more general-purpose, higher-overhead protocol, which is the actual reason Thunderbolt interfaces can sustain higher channel counts at lower, more consistent latency than most USB equivalents. That stability is also why Thunderbolt interfaces can daisy-chain multiple devices without the connection becoming unreliable under heavy load.",
           "items": [
             "Ultra-low latency performance",
             "High channel counts (32+ I/O)",
@@ -104,6 +110,7 @@
         },
         {
           "title": "PCIe Cards",
+          "description": "A PCIe card skips the external connection entirely by plugging straight into the computer's bus, trading portability for the lowest possible latency and the most stable performance available, which is why fixed studio installations still favor them even though almost everything else in recording has moved to external, portable interfaces.",
           "items": [
             "Internal desktop installation",
             "Maximum performance and stability",
@@ -121,6 +128,7 @@
         {
           "title": "Beginner Favorites",
           "bgColor": "bg-purple-50",
+          "description": "The Focusrite Scarlett line's popularity comes largely from consistency, clean, reliable converters and preamps at a price point that made a real step up from a laptop's built-in audio genuinely affordable, which is why it's become the default recommendation for a first interface. Behringer's U-Phoria trades some preamp headroom and build refinement for an even lower price, useful for testing the waters before committing to a pricier unit.",
           "fields": [
             { "label": "Focusrite Scarlett Solo/2i2", "value": "Industry standard for home recording beginners" },
             { "label": "PreSonus AudioBox USB 96", "value": "Reliable and affordable 2x2 interface" },
@@ -130,6 +138,7 @@
         {
           "title": "Professional Choice",
           "bgColor": "bg-orange-50",
+          "description": "Universal Audio's Apollo interfaces stand out for a specific technical reason: their onboard UAD DSP chips run hardware preamp and console emulations in real time at near-zero added latency, so you can track a vocal through a modeled Neve or API preamp while hearing that character live rather than adding it afterward in the mix. RME's Babyface Pro earns its reputation less from any single flashy feature and more from driver stability that professional engineers rely on to just work, session after session, without dropouts.",
           "fields": [
             { "label": "Universal Audio Apollo", "value": "Premium preamps with onboard UAD processing" },
             { "label": "RME Babyface Pro FS", "value": "Exceptional drivers and build quality" },
@@ -145,6 +154,7 @@
       "cards": [
         {
           "title": "Driver Optimization",
+          "description": "ASIO drivers matter specifically on Windows because they bypass the operating system's general-purpose audio stack and talk to the interface's hardware more directly, which is where most of the latency reduction actually comes from (macOS's Core Audio already does something similar by default, so this is a Windows-specific fix). Buffer size is the other major lever: a smaller buffer lowers latency for monitoring but asks more of your CPU in real time, so background programs competing for those same resources are a common, avoidable cause of clicks and dropouts.",
           "items": [
             "Install latest drivers from manufacturer",
             "Use ASIO drivers on Windows for low latency",
@@ -155,6 +165,7 @@
         },
         {
           "title": "Level Setting",
+          "description": "Gain staging is really about managing headroom: setting input gain so a performance's loudest moments sit comfortably below clipping leaves room for the natural dynamic swings a real performance has, since digital clipping distorts harshly and can't be undone after the fact the way analog tape overload sometimes can. Monitoring through headphones while recording, rather than relying on speaker bleed or software monitoring alone, is what lets you actually judge those levels and catch a bad take in the moment instead of after the session.",
           "items": [
             "Set input gain for optimal signal level",
             "Avoid clipping (red lights/meters)",
@@ -171,15 +182,15 @@
       "cards": [
         {
           "title": "High Latency",
-          "description": "Lower buffer size in DAW settings, use ASIO drivers, close background apps, upgrade to faster interface."
+          "description": "High latency almost always traces back to the buffer size being larger than it needs to be for the task, lowering it in your DAW's audio settings directly cuts the delay, though it also raises CPU load, which is why closing background apps and using ASIO drivers on Windows both help by freeing up the processing headroom a smaller buffer demands. If none of that gets latency down to a usable level, the interface's own hardware and drivers may simply be the bottleneck."
         },
         {
           "title": "No Signal/Crackling Audio",
-          "description": "Check connections, update drivers, try different USB port, adjust sample rate, check phantom power settings."
+          "description": "Crackling usually points to the computer struggling to keep up with the audio stream in real time, whether from an outdated driver, a flaky USB connection, or a sample rate mismatch between the interface and your DAW, so working through connections, drivers, and settings in that order usually isolates the cause. No signal at all is more often a simple oversight, phantom power left off for a condenser mic, or a cable or input selected incorrectly, than an actual hardware fault."
         },
         {
           "title": "Interface Not Recognized",
-          "description": "Install manufacturer drivers, try different cable/port, check device manager, restart computer and interface."
+          "description": "When a computer doesn't see the interface at all, the manufacturer's own driver almost always needs to be installed rather than relying on a generic OS driver, since interfaces rarely work correctly as plug-and-play USB audio devices without it. After that, ruling out the cable, the port, and a simple restart covers the majority of remaining cases, most of which come down to a USB hub or port that can't supply the bandwidth or power the interface needs."
         }
       ]
     }

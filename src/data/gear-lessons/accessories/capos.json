@@ -72,7 +72,7 @@
       "layout": "table",
       "tableHeaders": ["Fret", "Key Change", "Open Chord Becomes", "Common Use"],
       "tableRows": [
-        ["1st", "+1 semitone", "G -> G#, C -> C#, D -> D#", "Slight pitch raise"],
+        ["1st", "+1 semitone", "G -> Ab, C -> Db, D -> Eb", "Slight pitch raise"],
         ["2nd", "+1 tone", "G -> A, C -> D, D -> E", "Very popular position"],
         ["3rd", "+1.5 tones", "G -> Bb, C -> Eb, D -> F", "Folk and country"],
         ["4th", "+2 tones", "G -> B, C -> E, D -> F#", "Bright, high sound"],
@@ -122,8 +122,7 @@
           "fields": [
             { "label": "James Taylor", "value": "Frequent capo use for vocal range matching" },
             { "label": "Joni Mitchell", "value": "Creative partial capo techniques" },
-            { "label": "Keith Richards", "value": "Open G tuning with capo on 5th fret" },
-            { "label": "Johnny Cash", "value": "Simple capo use for key changes" }
+            { "label": "Bob Dylan", "value": "Extensive capo use throughout his folk catalog" }
           ]
         },
         {
@@ -132,9 +131,7 @@
           "description": "The capo remains just as central in contemporary songwriting. Ed Sheeran builds entire loop-pedal arrangements around capoed open chords so that layered parts stay harmonically simple to play live, while John Mayer uses careful capo placement to land on chord voicings that would be far less playable, or would ring differently, without it.",
           "fields": [
             { "label": "Ed Sheeran", "value": "Extensive capo use for loop pedal arrangements" },
-            { "label": "John Mayer", "value": "Strategic capo placement for unique voicings" },
-            { "label": "Mumford & Sons", "value": "Folk revival with creative capo techniques" },
-            { "label": "Taylor Swift", "value": "Capo for accessible chord progressions" }
+            { "label": "John Mayer", "value": "Capo use on tracks like \"Your Body Is a Wonderland\"" }
           ]
         }
       ]
@@ -147,37 +144,22 @@
         {
           "title": "For Beginners ($10-20)",
           "description": "A spring-loaded capo is the right starting point for most new players: it's cheap, forgiving, and needs no adjustment technique to use correctly. At this price point, a reliable clamp matters more than fine-tuned pressure control, since you're still learning what a well-placed capo should feel and sound like in the first place.",
-          "items": [
-            "Kyser Quick-Change",
-            "Planet Waves NS Capo",
-            "Alice Trigger Capo",
-            "Start with spring-loaded type",
-            "Easy one-handed operation",
-            "Reliable for learning"
+          "fields": [
+            { "label": "Recommended Models", "value": "Kyser Quick-Change, Planet Waves NS Capo, Alice Trigger Capo" }
           ]
         },
         {
           "title": "For Performers ($20-40)",
           "description": "Once you're playing out regularly, the small tuning drift a basic spring capo introduces becomes worth fixing. Capos with adjustable pressure hold intonation far more reliably across a full set, which is why most working guitarists eventually upgrade to one even if it costs a bit more up front.",
-          "items": [
-            "Shubb C1 Deluxe",
-            "G7th Performance 3",
-            "Dunlop Advanced Toggle",
-            "Adjustable pressure control",
-            "Professional reliability",
-            "Excellent intonation"
+          "fields": [
+            { "label": "Recommended Models", "value": "Shubb C1 Deluxe, G7th Performance 3, Dunlop Advanced Toggle" }
           ]
         },
         {
           "title": "For Advanced Players ($40+)",
           "description": "Specialty capos solve specific problems rather than replacing your everyday one. A partial capo opens up open-tuning-style voicings without retuning the guitar, and serious players often end up owning two or three different capos for different songs and instruments rather than one do-everything model.",
-          "items": [
-            "Spider Capo (partial capo)",
-            "G7th Heritage Capo",
-            "Custom boutique capos",
-            "Specialty applications",
-            "Multiple capos for different uses",
-            "Professional recording quality"
+          "fields": [
+            { "label": "Recommended Models", "value": "Spider Capo (partial), G7th Heritage Capo, custom boutique capos" }
           ]
         }
       ]
@@ -188,19 +170,19 @@
       "cards": [
         {
           "title": "Regular Cleaning",
-          "description": "Clean the rubber padding and metal surfaces regularly. Remove string residue and check for wear on the padding that contacts the strings."
+          "description": "String residue and finger oils build up on the rubber padding every time you clamp a capo, and once that grime hardens it stops gripping evenly, which is often the real cause of a capo that suddenly needs way more pressure than it used to. Wiping the padding and metal contact surfaces down every few weeks keeps the grip consistent and stops that residue from transferring onto your strings and dulling their tone."
         },
         {
           "title": "Mechanism Maintenance",
-          "description": "For screw-on capos, occasionally lubricate the threading. Check spring-loaded mechanisms for proper tension and clean pivot points."
+          "description": "A screw-on capo's thumbscrew threading dries out over time, and once it does, the pressure you dial in stops being repeatable from one session to the next, which defeats the whole point of owning an adjustable capo. A drop of light oil on the threading every few months keeps the adjustment smooth and consistent; on spring-loaded capos, the equivalent failure point is the pivot, which picks up dust and starts closing unevenly, so an occasional clean and check of the spring tension catches that before it starts pulling strings sharp on one side."
         },
         {
           "title": "Storage Tips",
-          "description": "Store capos in a dry place. Many guitarists keep capos on the headstock for quick access, but avoid leaving them clamped for extended periods."
+          "description": "Leaving a capo clamped shut between sessions keeps constant pressure on the padding, and rubber under constant compression loses its shape permanently, which is why a capo that felt fine a year ago can start buzzing or biting too hard even though nothing about your playing changed. Storing it open in a dry case pocket avoids that; keeping it clamped on the headstock between songs during a practice session is fine, it's long-term storage under tension that causes the wear."
         },
         {
           "title": "When to Replace",
-          "description": "Replace capos when padding becomes too compressed, springs lose tension, or adjustment mechanisms become unreliable."
+          "description": "The clearest sign a capo is done is that no amount of repositioning fixes a buzz or a sharp note anymore, which usually means the padding has compressed permanently and can no longer apply even pressure across all six strings. On a screw-on capo, a thumbscrew that no longer holds its setting under string tension means the threading has worn past the point of reliable repair, and on a spring capo, a spring that feels noticeably weaker than a new one won't clamp with enough force regardless of cleaning or lubrication. At that point replacing it is cheaper and more reliable than continuing to fight it mid-song."
         }
       ]
     }

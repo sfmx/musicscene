@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Distortion?",
-    "text": "Distortion is a form of audio signal processing that intentionally alters the waveform through aggressive clipping, creating harmonic content and sustained notes. Unlike overdrive, distortion typically produces more consistent gain regardless of input level.",
+    "text": "Distortion is a form of audio signal processing that intentionally alters the waveform through aggressive clipping, slicing the tops and bottoms off the signal's peaks rather than just rounding them the way an overdriven amp or overdrive pedal does. That harder clipping generates far more new harmonic content relative to the original note, which is what produces distortion's sustained, saturated character and lets a single note ring out and \"sing\" long after it would have naturally decayed. Because most distortion pedals clip aggressively regardless of exactly how hard you hit the string, they also tend to flatten out a player's touch dynamics far more than an overdrive does, trading some of that expressiveness for raw sustain and consistency.",
     "columns": [
       {
         "title": "Characteristics",
-        "text": "Heavy signal clipping. Sustained notes and chords. Added harmonic content. Compressed dynamics. Aggressive, powerful sound. Consistent gain response."
+        "text": "Distortion pedals clip the signal hard enough that the output waveform looks close to a square wave rather than a gently rounded one, and that harder clipping is what generates the dense harmonic content responsible for a heavier, more saturated tone. Because the clipping ceiling is reached at a fairly consistent point regardless of how hard you pick, the dynamic range gets compressed in the process, notes sustain longer and chords ring with more sustain, but the difference between a soft and hard pick attack becomes far less audible than it would through a clean or lightly overdriven signal."
       },
       {
         "title": "Musical Applications",
-        "text": "Heavy metal and hard rock. Punk and alternative rock. Power chords and riffs. Sustained lead guitar. Industrial and grunge. Modern rock production."
+        "text": "That combination of heavy sustain and consistent gain is exactly why distortion became the backbone of genres built around thick, sustained power chords and long, singing lead lines, metal, hard rock, and punk all lean on a distortion's ability to make a chord ring out with weight regardless of exactly how it was struck. The same compressed dynamics that can work against expressive clean playing are an asset for rhythm parts that need to sound uniformly heavy from the first chord to the last, which is why modern rock production so often reaches for distortion rather than overdrive as the default rhythm guitar tone."
       }
     ]
   },
@@ -30,6 +30,7 @@
       "cards": [
         {
           "title": "Overdrive",
+          "description": "Overdrive clips the signal softly, rounding off peaks the way a tube amp does when it's pushed hard, rather than slicing them flat. Because the clipping only becomes aggressive once the input signal is loud enough to reach it, an overdrive pedal stays touch-sensitive: picking softly keeps the tone closer to clean, and digging in pushes it into breakup, which is why overdrive is usually paired with an amp that's already near its own breakup point rather than a fully clean one.",
           "items": [
             "Soft, gradual clipping",
             "Touch-sensitive dynamics",
@@ -41,6 +42,7 @@
         },
         {
           "title": "Distortion",
+          "description": "Distortion clips the signal hard enough that the output reaches its ceiling well before the input does, which is why the same pedal sounds almost as saturated whether you're picking softly or aggressively. That consistency is a trade-off: it sacrifices some of the touch-sensitive dynamics an overdrive preserves, but it also means a distortion pedal produces a reliably heavy tone through any amp setting, clean or already breaking up, rather than depending on the amp doing part of the work.",
           "items": [
             "Hard, aggressive clipping",
             "More consistent gain",
@@ -58,28 +60,28 @@
       "cards": [
         {
           "title": "Classic Rock Distortion",
-          "description": "Moderate distortion levels perfect for classic rock, blues rock, and vintage tones. Maintains note clarity while adding sustain.",
+          "description": "These pedals clip hard enough to add real sustain and grit but stop short of the extreme gain levels where individual notes in a chord start to blur together, which keeps chord voicings and single-note runs legible rather than turning into a wall of noise. That restraint is deliberate: classic rock and blues-rock riffs depend on the listener hearing where one note ends and the next begins, something extreme high-gain settings can obscure.",
           "fields": [
             { "label": "Examples", "value": "Boss DS-1, ProCo RAT 2, MXR Distortion+" }
           ]
         },
         {
           "title": "High-Gain Distortion",
-          "description": "Extreme distortion levels for metal, hardcore, and modern rock. Often includes multiple gain stages and EQ shaping.",
+          "description": "Running the signal through multiple cascading gain stages, each one clipping what the previous stage already clipped, produces far more compression and harmonic density than a single clipping stage can, which is what lets these pedals sustain a note almost indefinitely. That much gain also amplifies noise and low-end mud along with the signal, which is why high-gain pedals typically pair the extra gain stages with active EQ shaping to carve out the low end and keep the tone tight rather than boomy.",
           "fields": [
             { "label": "Examples", "value": "Boss MT-2, Electro-Harmonix Metal Muff, TC Electronic Dark Matter" }
           ]
         },
         {
           "title": "Amp-in-a-Box",
-          "description": "Recreates the preamp distortion of famous amplifiers, allowing you to get iconic amp tones through any clean amp.",
+          "description": "Rather than generating a generic distortion sound, these pedals model the specific preamp circuit of a well-known amplifier, matching its particular clipping stages and voicing rather than a one-size-fits-all gain circuit. That means the pedal can put a recognizable amp's breakup character in front of a clean amp on stage or in a small studio setup, without needing to haul around, mic, or crank the original amplifier to get there.",
           "fields": [
             { "label": "Examples", "value": "Tech 21 SansAmp, AMT Electronics, Friedman BE-OD" }
           ]
         },
         {
           "title": "Modern/Digital",
-          "description": "Uses digital processing or modern analog circuits to create pristine, controllable distortion with advanced features.",
+          "description": "By generating or precisely modeling the clipping in the digital domain, or refining the analog gain-staging design well beyond a decades-old circuit, these pedals can offer far more control over exactly where and how the tone breaks up than a classic three-knob distortion allows. That extra control is the appeal for players who want a tailored, repeatable tone across many songs and settings rather than a single fixed character.",
           "fields": [
             { "label": "Examples", "value": "Boss DS-1X, Line 6 Helix distortions, Source Audio LA Lady" }
           ]
@@ -92,58 +94,33 @@
       "cards": [
         {
           "title": "Boss DS-1 Distortion",
-          "description": "The most popular distortion pedal ever made. Simple, reliable, and versatile. The DS-1 has been used on countless recordings across all genres since 1978.",
+          "description": "Released in 1978, the DS-1's straightforward two-transistor clipping circuit produces a bright, cutting distortion that has stayed popular precisely because it can be used two very different ways: dimed as a primary distortion voice, or set to a moderate gain and used as a boost to push an already-driven tube amp harder. That flexibility, plus a low price that's barely changed in decades, is why it remains one of the best-selling distortion pedals ever made.",
           "fields": [
-            { "label": "Signature Sound", "value": "Bright, cutting distortion with excellent note definition and moderate gain" }
-          ],
-          "items": [
-            "Kurt Cobain - Nirvana's grunge sound",
-            "Steve Vai - Lead guitar work",
-            "Joe Satriani - Clean/distortion contrast",
-            "Metallica - Early albums",
-            "Countless punk and alternative bands"
+            { "label": "Signature Sound", "value": "Bright, cutting distortion with excellent note definition and moderate gain" },
+            { "label": "Notable Users", "value": "Kurt Cobain (Nirvana, his primary distortion pedal from 1989 onward), Steve Vai and Joe Satriani (both use it as a moderate-gain boost into an already-driven amp rather than as a standalone distortion voice)" }
           ]
         },
         {
           "title": "ProCo RAT 2",
-          "description": "Aggressive midrange-focused distortion that cuts through any mix. The RAT's unique filter control allows you to shape the high-end response.",
+          "description": "Instead of a standard tone knob, the RAT's Filter control works as a low-pass filter that rolls off high end as you turn it up, which is the opposite behavior from a typical treble knob and gives the pedal a distinctively dark, midrange-forward voice when pushed. That midrange focus is exactly what lets a RAT cut through a dense mix without relying on harsh top-end, which is why it's shown up across genres from hard rock leads to grunge rhythm tones.",
           "fields": [
-            { "label": "Signature Sound", "value": "Aggressive, midrange-heavy distortion with excellent sustain and note clarity" }
-          ],
-          "items": [
-            "Jeff Beck - Lead guitar mastery",
-            "Dave Grohl - Foo Fighters power",
-            "Thom Yorke - Radiohead textures",
-            "Graham Coxon - Blur's edge",
-            "Metallica - Rhythm guitar bite"
+            { "label": "Signature Sound", "value": "Aggressive, midrange-heavy distortion with excellent sustain and note clarity" },
+            { "label": "Notable Users", "value": "Jeff Beck, Dave Grohl (Foo Fighters), Thom Yorke (Radiohead, Turbo RAT), Graham Coxon (Blur), James Hetfield (Metallica, on Kill 'Em All)" }
           ]
         },
         {
           "title": "Boss MT-2 Metal Zone",
-          "description": "The quintessential high-gain distortion pedal. Features extensive EQ controls and massive amounts of gain for extreme metal tones.",
+          "description": "Since its 1991 release, the Metal Zone has been one of the best-selling metal distortion pedals ever made largely on the strength of its semi-parametric midrange control, which lets you notch out or boost a specific frequency band rather than a single fixed mid control. Dialed correctly, that control is what makes the classic scooped, mid-notched metal tone possible from a single affordable pedal, though the same flexibility means it's also easy to set in a way that sounds thin or fizzy, which is why it has a reputation among some players as being harder to dial in well than its low price suggests.",
           "fields": [
             { "label": "Signature Sound", "value": "Extremely high gain with scooped mids and extensive tonal shaping capabilities" }
-          ],
-          "items": [
-            "Dimebag Darrell - Pantera's crushing tone",
-            "John Frusciante - Red Hot Chili Peppers",
-            "Death metal and extreme metal bands",
-            "Modern metal producers",
-            "Bedroom metal enthusiasts worldwide"
           ]
         },
         {
           "title": "MXR Distortion+",
-          "description": "Simple two-knob distortion with a distinctive sound. Known for its raw, in-your-face character and use in early punk and metal recordings.",
+          "description": "Released in 1974 and built around an op-amp clipping circuit that predates most of the distortion designs that followed it, the Distortion+ produces a raw, slightly compressed grit rather than the more refined voicing of later, more heavily EQ'd pedals. That simplicity, just Output and Distortion knobs, made it an easy way for guitarists in the 1970s and 80s to get a compact, amp-independent gain boost, which is part of why it turns up across such different eras and genres.",
           "fields": [
-            { "label": "Signature Sound", "value": "Raw, uncompressed distortion with a distinctive midrange character" }
-          ],
-          "items": [
-            "Randy Rhoads - Ozzy Osbourne era",
-            "Bob Mould - Husker Du",
-            "Jerry Cantrell - Alice in Chains",
-            "Punk and hardcore pioneers",
-            "Early metal guitarists"
+            { "label": "Signature Sound", "value": "Raw, uncompressed distortion with a distinctive midrange character" },
+            { "label": "Notable Users", "value": "Randy Rhoads (Ozzy Osbourne), Bob Mould (Husker Du), Jerry Garcia (Grateful Dead)" }
           ]
         }
       ]
@@ -156,6 +133,7 @@
       "cards": [
         {
           "title": "Bass/Low Frequencies",
+          "description": "Distortion generates far more harmonic overtones from low frequencies than from high ones, so even a modest bass boost can multiply into a disproportionate amount of low-end mud once it's run through a clipping circuit. That's why distortion tone controls are usually more sensitive at the bass end than a clean EQ would be, a setting that sounds fine bypassed can turn boomy and undefined the moment gain is added.",
           "items": [
             "Controls bottom-end thickness",
             "Too much = muddy tone",
@@ -166,6 +144,7 @@
         },
         {
           "title": "Midrange",
+          "description": "Most of the frequency range where a guitar's fundamental pitch and a listener's ear for clarity both live sits in the midrange, which is why boosting or cutting it has an outsized effect on how a distorted tone sits in a mix. Scooping the mids out gives a huge, aggressive-sounding wall on its own, but it's also what makes a guitar hardest to hear once bass, drums, and vocals are competing for the same space, which is the trade-off behind the modern scooped-metal sound versus a boosted, cutting classic-rock tone.",
           "items": [
             "Most important for cutting through",
             "Scooped = modern metal sound",
@@ -176,6 +155,7 @@
         },
         {
           "title": "Treble/High Frequencies",
+          "description": "The treble control shapes the harshest overtones a clipping circuit generates, the same frequencies responsible for both pick-attack definition and an unpleasant fizzy or brittle edge once pushed too far. Because a distorted signal already carries far more high-frequency harmonic content than a clean one, treble on a distortion pedal usually needs to sit lower than intuition suggests to avoid stacking on top of overtones the clipping has already created.",
           "items": [
             "Adds brightness and clarity",
             "Too much = harsh, fizzy",
@@ -193,6 +173,7 @@
         {
           "title": "Performance Tips",
           "bgColor": "bg-green-50",
+          "description": "High-gain distortion amplifies whatever the strings are doing, including string noise and unintended overtones from strings you're not trying to play, which is why techniques like palm muting and precise fretting-hand muting matter more here than on a clean tone: a small technique flaw that's inaudible clean becomes an obvious buzz or hum once enough gain is stacked on top of it.",
           "items": [
             "Use palm muting for tight rhythm",
             "Adjust picking technique for attack",
@@ -205,6 +186,7 @@
         {
           "title": "Recording Tips",
           "bgColor": "bg-purple-50",
+          "description": "A distortion setting that sounds appropriately heavy played alone in a room is usually too much once it's sitting in a full mix with bass, drums, and vocals competing for the same frequency range, which is why recorded rhythm tones are typically dialed in with less gain than the same part would use live. Doubling a rhythm part with two separate takes, rather than relying on stereo-widening a single track, is what actually creates the wide, thick wall of guitar heard on most modern rock and metal records.",
           "items": [
             "Double-track for thickness",
             "Use less gain than live settings",

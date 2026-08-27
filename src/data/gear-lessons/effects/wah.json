@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Wah?",
-    "text": "A wah pedal is a variable filter that sweeps through a frequency range as you rock the pedal back and forth. This creates the characteristic \"wah\" vocal sound that can range from subtle filtering to dramatic frequency sweeps.",
+    "text": "A wah pedal is a bandpass filter whose center frequency you control in real time by rocking the treadle back and forth, sweeping a narrow band of emphasized frequencies up and down across the guitar's range rather than applying a fixed EQ curve. Because that sweep happens continuously under your foot rather than being set once and left alone, it's one of the few effects that responds to a player's motion moment to moment, which is exactly what gives it the vocal, speech-like quality the name describes.",
     "columns": [
       {
         "title": "How It Works",
-        "text": "Variable bandpass filter. Potentiometer controlled by foot rocker. Sweeps frequency peaks and nulls. Can emphasize or cut frequencies. Creates vocal-like articulation. Real-time expression control."
+        "text": "Rocking the treadle moves a potentiometer that shifts the filter's frequency peak up or down, boosting a narrow band of frequencies around wherever that peak currently sits while cutting the frequencies furthest from it. Sweep the peak upward and the tone brightens and thins toward a nasal \"wah\"; sweep it back down and the tone darkens and rounds off, and it's the continuous motion between those two poles, not either extreme alone, that produces the effect's signature vocal character."
       },
       {
         "title": "Musical Applications",
-        "text": "Funk and R&B rhythm guitar. Lead guitar expression. Psychedelic and classic rock. Metal and hard rock accents. Jazz fusion articulation. Experimental sound design."
+        "text": "Funk rhythm playing leans on wah's percussive side, pumping the treadle in time with the beat so the filter sweep itself becomes part of the rhythm rather than just coloring the tone. Lead playing tends to use it more like a singer would shape a phrase, sweeping slowly through a held note or bend to add expression that a fixed tone simply can't provide."
       }
     ]
   },
@@ -29,7 +29,7 @@
       "cards": [
         {
           "title": "Vox V846 / Clyde McCoy Wah",
-          "description": "The original wah pedal, designed in 1966. Warm, vocal character with a wide frequency sweep. The template for all wah pedals that followed.",
+          "description": "The wah pedal was invented essentially by accident in 1966, when Thomas Organ engineer Brad Plunkett was working on a cheaper transistor design for the Vox Super Beatle amp and stumbled onto a circuit that swept a filter as a potentiometer moved. Vox released it in 1967 named after trumpeter Clyde McCoy, whose muted, vocal-like \"wah-wah\" playing the pedal's sound was meant to evoke, even though McCoy himself never played guitar or used one; every wah pedal built since has essentially been a variation on this original circuit.",
           "fields": [
             { "label": "Signature Sound", "value": "Warm, musical frequency sweep with vocal-like characteristics." }
           ],
@@ -43,7 +43,7 @@
         },
         {
           "title": "Dunlop Cry Baby GCB-95",
-          "description": "The most popular wah pedal ever made. Based on the original Vox circuit but with its own character. Reliable, affordable, and versatile.",
+          "description": "Dunlop built the Cry Baby around the same basic inductor-based circuit as the original Vox wah, but tuned its frequency response and voicing slightly differently, giving it a brighter, more cutting character that suits high-gain rock and metal better than the Vox's warmer original voicing. That distinct-but-related sound, combined with a lower price and wide availability, is what made it the more commonly seen wah on pedalboards rather than the vintage Vox circuit it's descended from.",
           "fields": [
             { "label": "Signature Sound", "value": "Bright, cutting wah with excellent dynamics and wide frequency range." }
           ],
@@ -57,14 +57,12 @@
         },
         {
           "title": "Ibanez WH10",
-          "description": "Unique wah with a different frequency response and wider sweep. Known for its smooth operation and distinctive character.",
+          "description": "The WH10 uses a wider, smoother sweep than the Vox-style circuit, spreading the frequency emphasis across a broader range rather than concentrating it in one narrow, vocal-sounding band. That gentler, less mid-focused character is exactly why John Frusciante has used it as his standard wah since Blood Sugar Sex Magik and still uses its modern reissue today, since it blends into a mix more smoothly than a sharper-voiced wah would.",
           "fields": [
             { "label": "Signature Sound", "value": "Smooth, wide frequency sweep with less mid-range emphasis." }
           ],
           "items": [
-            "John Frusciante - Red Hot Chili Peppers",
-            "Jonny Greenwood - Radiohead",
-            "Alternative and indie rock players",
+            "John Frusciante - Red Hot Chili Peppers, his standard wah since Blood Sugar Sex Magik",
             "Funk and fusion guitarists",
             "Modern experimental musicians"
           ]
@@ -78,6 +76,7 @@
         {
           "title": "Basic Techniques",
           "bgColor": "bg-yellow-50",
+          "description": "A full sweep through the pedal's entire range gives the most dramatic, obviously \"wah\" sound, but leaving the treadle parked at one fixed point, called a cocked wah, is just as common: it turns the pedal into a static tone filter that boosts a specific frequency band rather than continuously modulating anything. Rhythmic pumping in time with the beat sits between those two uses, treating the sweep itself as a percussive part of the rhythm section rather than either a dramatic effect or a static EQ choice.",
           "items": [
             "Full sweep: Rock pedal through entire range",
             "Cocked wah: Fixed position for tonal color",
@@ -90,6 +89,7 @@
         {
           "title": "Advanced Techniques",
           "bgColor": "bg-orange-50",
+          "description": "Combining wah with a volume pedal lets you shape both filter position and loudness independently, producing swells that a wah alone can't create since rocking the treadle only ever changes the frequency sweep, not the overall volume. Muted wah, sweeping the treadle while palm-muting the strings, turns the effect almost entirely percussive, since there's barely a sustained note left for the filter to color, just a rhythmic thump that changes tone as the pedal moves.",
           "items": [
             "Heel-toe technique: Rapid alternating motion",
             "Partial sweeps: Using only part of the range",
@@ -107,6 +107,7 @@
       "cards": [
         {
           "title": "Classic Examples",
+          "description": "These tracks show how differently the same effect can be used: Hendrix and Clapton treated wah as a lead-guitar voice, sweeping through sustained notes almost like a singer would shape a phrase, while Isaac Hayes's \"Theme from Shaft\" and Iommi's rhythmic stabs on \"The Wizard\" use it percussively, syncing the sweep to the groove itself rather than to a melodic line.",
           "items": [
             "Jimi Hendrix - \"Voodoo Child\": Definitive wah guitar",
             "Cream - \"White Room\": Clapton's melodic wah",
@@ -117,6 +118,7 @@
         },
         {
           "title": "Modern Applications",
+          "description": "Wah outlived its psychedelic-era and funk origins by moving into genres that use it for texture rather than as a period reference, from Tom Morello's effects-driven rhythm parts in Rage Against the Machine to the deliberately lo-fi, minimalist bursts of wah in early White Stripes recordings.",
           "items": [
             "Red Hot Chili Peppers: Funk-rock rhythms",
             "Rage Against the Machine: Political punk-funk",
@@ -134,6 +136,7 @@
         {
           "title": "Performance Tips",
           "bgColor": "bg-red-50",
+          "description": "Wah is easy to overuse precisely because the motion is so satisfying, which is why the players most associated with it tend to treat the pedal as part of their phrasing rather than a special effect switched on for a solo. Practicing simple riffs and licks with the wah engaged, rather than only reaching for it during a big moment, is what actually builds the muscle memory to sweep in time with what you're playing instead of just rocking the treadle on autopilot.",
           "items": [
             "Practice pedal technique regularly",
             "Listen to the frequency sweep",
@@ -146,6 +149,7 @@
         {
           "title": "Signal Chain Position",
           "bgColor": "bg-pink-50",
+          "description": "Placing wah before distortion means the filter is shaping a clean signal that then gets saturated afterward, which is the classic Hendrix/Clapton-era approach and tends to sound more vocal and defined. Placing it after distortion means the wah is filtering an already-saturated, harmonically dense signal instead, which produces a more aggressive, almost synth-like sweep that many metal and hard-rock players prefer specifically because it sounds different from the classic-rock wah tone.",
           "items": [
             "Generally goes early in signal chain",
             "Before distortion for classic sound",

@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Reverb?",
-    "text": "Reverb is the persistence of sound in a space after the original sound stops. In nature, reverb occurs when sound waves reflect off surfaces in an environment. Reverb effects simulate these reflections, creating the impression of playing in different spaces.",
+    "text": "Reverb is what's left after the original sound stops: the thousands of reflections a sound wave picks up bouncing off walls, ceilings, and furniture before it decays into silence. A guitar played in an empty stone church sustains and blooms in a way the same note played in a carpeted living room never will, purely because of how long and how densely those reflections pile up. Reverb pedals and studio units exist to recreate that same decaying wash of reflections on demand, whether the goal is a subtle sense of a real room or a completely artificial, physically impossible space.",
     "columns": [
       {
         "title": "Components of Reverb",
-        "text": "Early reflections: First echoes off surfaces. Late reflections: Dense reverb tail. Decay time: How long reverb lasts. Pre-delay: Gap before reverb starts. Diffusion: Echo density and smoothness."
+        "text": "The first sound to arrive back at your ears after the direct signal is the early reflections, the handful of distinct bounces off the nearest surfaces, and how far apart and how loud those are is what tells your brain whether a space is small or huge before the reverb tail even builds up. Everything after that blurs together into the late reflections, the dense, continuous tail that decays over the reverb's set time; pre-delay controls the gap between the dry note and when that tail starts, and diffusion controls how smoothly individual echoes blend into a wash rather than sounding like distinct repeats."
       },
       {
         "title": "Musical Functions",
-        "text": "Creates sense of space and depth. Smooths harsh transients. Adds sustain to notes. Enhances emotional impact. Glues instruments together. Provides ambient texture."
+        "text": "Reverb's most basic job is convincing your ear that an instrument exists in a physical space, but it does real work beyond that: a short reverb can round off a harsh pick attack without you consciously noticing it, and a longer tail effectively extends a note's sustain well past when the string itself has stopped ringing. It's also one of the main tools for making separately recorded instruments sound like they're in the same room together, since sharing even a little of the same reverb space glues otherwise dry, disconnected parts into one believable performance."
       }
     ]
   },
@@ -29,42 +29,42 @@
       "cards": [
         {
           "title": "Spring Reverb",
-          "description": "Mechanical reverb using metal springs. Classic surf and rockabilly sound with distinctive \"boing\" character.",
+          "description": "A spring reverb sends the signal down a suspended metal spring and picks it back up with a transducer at the other end, and the reflections you hear are the sound wave physically bouncing back and forth along that spring rather than anything simulated. That mechanical origin is exactly why it has such a distinctive, slightly boingy, splashy character compared to other reverb types, and why physically knocking or moving an amp with a spring tank produces the famous crashing \"spring reverb drop.\"",
           "fields": [
             { "label": "Found in", "value": "Fender amps, outboard spring tanks, pedals" }
           ]
         },
         {
           "title": "Plate Reverb",
-          "description": "Large metal plates create smooth, dense reverb. Studio standard from the 1960s-80s with distinctive bright character.",
+          "description": "A plate reverb drives a transducer against a large suspended sheet of metal and picks up the resulting vibrations with contact microphones, and because the whole plate resonates at once rather than sound bouncing off distant walls, the reflections build up far denser and smoother than any physical room could produce. That density without the boxy coloration of a real room is exactly why plates became the standard studio reverb from the 1960s through the '80s, before digital units could convincingly match them.",
           "fields": [
             { "label": "Famous units", "value": "EMT 140, Ecoplate, modern plate emulations" }
           ]
         },
         {
           "title": "Hall Reverb",
-          "description": "Simulates large acoustic spaces like concert halls. Long decay times and natural-sounding reflections.",
+          "description": "A hall reverb algorithm models the reflection pattern of a genuinely large space, spacing out early reflections and stretching the decay time far longer than a real room this size could ever fit into a pedal or rack unit. That long, smooth build makes it the natural choice whenever a part needs to feel like it's happening somewhere vast, ambient pads and sustained ballad chords especially, but the same length is exactly why it can swallow fast rhythm parts into mush if it's overused.",
           "fields": [
             { "label": "Applications", "value": "Orchestral music, ambient textures, ballads" }
           ]
         },
         {
           "title": "Room Reverb",
-          "description": "Intimate acoustic spaces with shorter decay times. Natural-sounding reverb that doesn't overwhelm the dry signal.",
+          "description": "A room reverb models a much smaller, more absorbent space than a hall, which means the reflections decay quickly and never build into a long, obvious tail. That short decay is the whole point: it adds just enough sense of a physical space around an instrument to stop it sounding pasted onto a mix, without drawing attention to the effect itself the way a longer reverb inevitably does.",
           "fields": [
             { "label": "Best for", "value": "Adding space without clouding the mix" }
           ]
         },
         {
           "title": "Chamber Reverb",
-          "description": "Echo chambers used in classic recordings. Warm, musical reverb with distinctive character.",
+          "description": "Before plates or digital units existed, studios built genuine echo chambers: hard-surfaced rooms with a speaker at one end playing the dry signal and a microphone at the other capturing whatever reflections that specific room produced. Every chamber sounds subtly different because it's a real physical space rather than a manufactured component, which is exactly why the natural chambers built at studios like Abbey Road and Capitol became famous in their own right rather than being interchangeable with any other studio's reverb.",
           "fields": [
             { "label": "Famous examples", "value": "Abbey Road chambers, Capitol Studios" }
           ]
         },
         {
           "title": "Algorithmic Reverb",
-          "description": "Digital reverbs that create artificial spaces through mathematical algorithms. Highly controllable and versatile.",
+          "description": "Rather than capturing reflections from any physical spring, plate, or room, an algorithmic reverb generates the entire reflection pattern mathematically, which means it isn't limited to recreating spaces that could actually exist. That's what makes shimmer reverbs, reverse reverbs, and other physically-impossible effects possible in the first place, and why a single algorithmic unit can cover everything from a small room to a cathedral to something with no real-world equivalent at all, just by changing parameters rather than swapping hardware.",
           "fields": [
             { "label": "Examples", "value": "Lexicon, TC Electronic, Strymon algorithms" }
           ]
@@ -77,35 +77,23 @@
       "cards": [
         {
           "title": "Lexicon 480L",
-          "description": "The gold standard of digital reverb. Used on countless hit records from the 1980s onward. Incredibly musical algorithms.",
+          "description": "Released in 1986, the 480L's algorithms were tuned by ear rather than purely by the underlying math, which is why they still sound more musical than many later, more mathematically \"accurate\" digital reverbs. That reputation made it the default reverb in professional studios through the 1990s and 2000s, to the point that its factory presets are still the reference other reverb plugins get compared against.",
           "fields": [
-            { "label": "Signature Sound", "value": "Lush, musical digital reverbs with excellent diffusion and natural decay" }
-          ],
-          "items": [
-            "Phil Collins - \"In The Air Tonight\"",
-            "Countless 80s pop hits",
-            "Film soundtracks",
-            "Professional studios worldwide",
-            "Modern pop and R&B production"
+            { "label": "Signature Sound", "value": "Lush, musical digital reverbs with excellent diffusion and natural decay" },
+            { "label": "Where It's Heard", "value": "Professional studios and film-score stages worldwide from the late 1980s onward" }
           ]
         },
         {
           "title": "EMT 140 Plate Reverb",
-          "description": "The original and most famous plate reverb. Massive 4x8 foot metal plates created the smooth, dense reverb heard on classic recordings.",
+          "description": "Introduced in 1957, the EMT 140 was the first commercially available plate reverb, and its roughly 4x8 foot steel sheet became so standard that major studios like Abbey Road and Motown built dedicated rooms just to house them. Because a real EMT 140 is enormous and expensive to maintain, its distinctive bright, dense decay is now one of the most commonly modeled reverb characters in modern plugins and pedals.",
           "fields": [
-            { "label": "Signature Sound", "value": "Smooth, dense reverb with bright character and musical decay" }
-          ],
-          "items": [
-            "Led Zeppelin - \"When The Levee Breaks\"",
-            "Pink Floyd albums",
-            "Abbey Road Studios recordings",
-            "Classic rock and pop",
-            "Motown productions"
+            { "label": "Signature Sound", "value": "Smooth, dense reverb with bright character and musical decay" },
+            { "label": "Where It's Heard", "value": "Standard studio reverb at Abbey Road, Motown, and countless other studios through the 1960s-80s" }
           ]
         },
         {
           "title": "Fender Spring Reverb",
-          "description": "Built into classic Fender amplifiers. The iconic \"drip\" sound of surf music and rockabilly. Mechanical and characterful.",
+          "description": "Fender began building spring tanks directly into amps like the Twin Reverb and Deluxe Reverb in the early 1960s, putting a mechanical reverb within reach of any guitarist who could afford the amp rather than a separate studio unit. That built-in, always-on availability, combined with the spring's bright, splashy \"drip\" character, is exactly what made it the default sound of surf and rockabilly guitar rather than a stylistic choice players had to seek out.",
           "fields": [
             { "label": "Signature Sound", "value": "Bright, splashy reverb with distinctive spring crash when amp is moved" }
           ],
@@ -119,7 +107,7 @@
         },
         {
           "title": "Strymon BigSky",
-          "description": "Modern digital reverb pedal with studio-quality algorithms. Combines classic reverb types with modern innovations.",
+          "description": "Released in 2013, the BigSky packs twelve distinct reverb algorithms, spring, plate, hall, and several physically-impossible types, into a single pedal running at a high enough processing quality that it's routinely used in professional studios rather than just live rigs. That combination of studio-grade sound with pedalboard convenience is what closed the gap between a rack reverb unit and a stompbox for a lot of working guitarists.",
           "fields": [
             { "label": "Signature Sound", "value": "High-quality digital reverbs with extensive tweakability and pristine sound" }
           ],
@@ -166,6 +154,7 @@
         {
           "title": "Musical Guidelines",
           "bgColor": "bg-cyan-50",
+          "description": "How much reverb a part needs depends entirely on what else is happening in the mix: a solo instrument in a sparse arrangement can carry a long, obvious reverb tail, but the same setting on a rhythm part in a dense mix just turns into mud, since every note's tail overlaps the next note's attack. Pre-delay is the fix for the most common problem this causes, pushing the reverb tail back a few milliseconds so the dry attack of each note stays clear before the wash of reflections arrives.",
           "items": [
             "Match reverb to musical style",
             "Use pre-delay to maintain clarity",
@@ -178,6 +167,7 @@
         {
           "title": "Technical Tips",
           "bgColor": "bg-teal-50",
+          "description": "Reverb belongs at the end of the signal chain because it's meant to simulate the space the final, fully-shaped tone exists in, not the raw dry signal before distortion or EQ have done their work. High-passing the reverb return around 80-100Hz matters for the same reason a boomy room sounds bad in real life: low frequencies build up disproportionately in any reflective space, so an unfiltered reverb tail muddies the low end far more than it adds to the highs.",
           "items": [
             "Place reverb last in signal chain",
             "Use sends/returns when possible",

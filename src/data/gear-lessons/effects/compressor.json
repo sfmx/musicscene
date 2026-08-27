@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Compression?",
-    "text": "Compression reduces the dynamic range of your signal by automatically lowering the volume of loud parts and/or raising the volume of quiet parts. This creates a more consistent level and can add sustain, punch, and professional polish.",
+    "text": "Compression reduces the dynamic range of your signal by automatically lowering the volume of loud parts and/or raising the volume of quiet parts relative to each other. A guitar's natural dynamic range is often wider than a mix, a recording format, or a listener's ear can comfortably handle in one pass, an aggressively-picked note can be many times louder than a softly fretted one, so squeezing that range down evens out the performance and can add sustain, punch, and the polished consistency associated with professional recordings.",
     "columns": [
       {
         "title": "How It Works",
-        "text": "Monitors input signal level. Reduces gain when signal exceeds threshold. Applies gain reduction at set ratio. Can add makeup gain to compensate. Attack and release control timing. Creates more consistent dynamics."
+        "text": "A compressor continuously monitors the level of your signal, and once it crosses a threshold you set, the circuit reduces gain by an amount determined by the ratio, so a 4:1 ratio lets a signal 4dB over threshold through as only 1dB over. Because that gain reduction quietens the signal overall, most compressors add makeup gain afterward to bring the average level back up, which is what produces the sense of a louder, more consistent sustain rather than just a squashed sound. The attack and release controls decide how quickly the gain reduction kicks in and lets go, and those two settings are what shape whether the compression is heard as a firm clamp on peaks or as a smooth, almost invisible leveling of the whole signal."
       },
       {
         "title": "Musical Benefits",
-        "text": "Even volume levels. Increased sustain. Enhanced picking attack. Better string balance. Improved mix presence. Professional polish."
+        "text": "Because compression narrows the gap between a note's loudest and quietest moments, it makes fingerpicked passages and chord strums sound more even without you having to control dynamics perfectly by hand. It also extends sustain: as a note naturally decays, the compressor keeps raising the gain to compensate, so the tail of the note rings out longer and more evenly than it would uncompressed. The same mechanism can accentuate pick attack, since a fast attack setting lets the initial transient through before clamping down on the sustained part of the note, giving picked notes a percussive snap followed by a smoothly sustained tail."
       }
     ]
   },
@@ -57,28 +57,28 @@
       "cards": [
         {
           "title": "Optical Compressors",
-          "description": "Use light-dependent resistors for smooth, musical compression. Slow, natural response that's perfect for rhythm guitar and vocals.",
+          "description": "An optical, or \"opto,\" compressor uses a small light source shining onto a light-dependent resistor to control gain reduction: the circuit brightens the light in response to loud signal, and the resistor's response to that changing light is inherently a little slow and non-linear, rather than instantaneous. That lag is what gives opto compression its characteristically smooth, natural-sounding response rather than an abrupt clamp, which is why it's favored for rhythm guitar and vocal parts where an audibly \"working\" compressor would be distracting.",
           "fields": [
             { "label": "Examples", "value": "LA-2A, Empress Compressor, Origin Effects Cali76" }
           ]
         },
         {
           "title": "FET Compressors",
-          "description": "Field Effect Transistor designs provide fast, punchy compression. Great for adding attack and presence to guitar.",
+          "description": "FET (Field Effect Transistor) compressors use a transistor as a voltage-controlled resistor, which can react to level changes almost instantly compared to an optical circuit's lag. That speed lets a FET compressor grab a transient the moment it happens, which is why these designs are known for a punchier, more aggressive-sounding compression that adds attack and presence rather than the opto style's smoother, more forgiving squeeze.",
           "fields": [
             { "label": "Examples", "value": "1176, Wampler Ego, Keeley Compressor" }
           ]
         },
         {
           "title": "VCA Compressors",
-          "description": "Voltage Controlled Amplifier designs offer precise control and transparent compression.",
+          "description": "A VCA (Voltage Controlled Amplifier) compressor uses a dedicated amplifier chip whose gain is set directly by a control voltage, rather than relying on an optical or transistor circuit's inherent response curve to shape the sound. That direct control makes VCA compression more precise and transparent, closer to a pure volume adjustment than a coloring effect, which is why it's the design most modern pedals and studio bus compressors default to when the goal is control rather than character.",
           "fields": [
             { "label": "Examples", "value": "DBX 160X, SSL bus compressors, many modern pedals" }
           ]
         },
         {
           "title": "Tube Compressors",
-          "description": "Vacuum tube designs add harmonic warmth and musical saturation along with compression.",
+          "description": "Tube compressors use vacuum tubes somewhere in the gain-reduction or makeup-gain path, and tubes naturally distort in a soft, even-harmonic-heavy way as they're driven harder, unlike the cleaner limiting of a solid-state circuit. That means a tube compressor is coloring the tone as it compresses, adding a low-level harmonic saturation on top of the level control, which is why these designs are prized for sounding musically \"fat\" rather than strictly transparent.",
           "fields": [
             { "label": "Examples", "value": "Fairchild 670, Manley Variable Mu, tube pedals" }
           ]
@@ -91,21 +91,15 @@
       "cards": [
         {
           "title": "MXR Dyna Comp",
-          "description": "The classic guitar compressor. Simple two-knob design with distinctive character. Used on countless recordings since the 1970s.",
+          "description": "The Dyna Comp reduces the design down to two knobs, Output and Sensitivity, using an OTA (Operational Transconductance Amplifier) circuit that reacts fast on attack but lets go slowly on release. That specific behavior colors the sound rather than transparently leveling it, giving notes an audible squeeze and a distinctive boosted sustain, which is exactly why it became the standard compressor for country chicken-pickin' and classic rock lead tone alike since its 1970s release rather than being replaced by more transparent designs.",
           "fields": [
-            { "label": "Signature Sound", "value": "Punchy, colored compression with enhanced pick attack and sustain." }
-          ],
-          "items": [
-            "David Gilmour - Pink Floyd sustain",
-            "Peter Frampton - Talk box setup",
-            "Country session players",
-            "Classic rock guitarists",
-            "Countless studio musicians"
+            { "label": "Signature Sound", "value": "Punchy, colored compression with enhanced pick attack and sustain." },
+            { "label": "Notable Users", "value": "David Gilmour (Pink Floyd), used on tracks including \"Shine On You Crazy Diamond\" and \"Money\"" }
           ]
         },
         {
           "title": "Boss CS-1/CS-2/CS-3",
-          "description": "Evolution of Boss compressor pedals. The CS-2 is particularly sought after for its musical compression and sustain characteristics.",
+          "description": "Boss revised its compact compressor pedal across three generations, and the discontinued CS-2 (1981-1986) has developed a following of its own: it used a VCA chip originally built for Roland synths, and players who've compared it to its own successor, the CS-3, often describe the CS-2 as the smoother and more musical-sounding of the two. That reputation is reflected in the used market, where a working CS-2 typically sells for several times what it cost new, well above the still-in-production CS-3's used price.",
           "fields": [
             { "label": "Signature Sound", "value": "Smooth, musical compression with excellent sustain and note clarity." }
           ],
@@ -119,7 +113,7 @@
         },
         {
           "title": "Empress Compressor",
-          "description": "Modern optical compressor with extensive controls. Professional studio quality in a pedal format with multiple compression styles.",
+          "description": "Where a simple stompbox like the Dyna Comp gives you two knobs and a fixed response, the Empress exposes controls, attack, release, ratio, blend, sidechain filtering, that are normally only found on studio rack units, letting a player dial in anything from a transparent leveling effect to an obviously pumping one. That range makes it less of a single-flavor pedal and more of a general-purpose tool, at the cost of a steeper learning curve than a two-knob compressor.",
           "fields": [
             { "label": "Signature Sound", "value": "Transparent, musical compression with studio-grade control and quality." }
           ],
@@ -140,6 +134,7 @@
         {
           "title": "Clean Guitar Applications",
           "bgColor": "bg-green-50",
+          "description": "Clean guitar has nowhere to hide dynamic inconsistency the way a distorted tone does, since overdrive naturally compresses the signal on its own. On an uncompressed clean tone, a fingerpicked bass note can sit noticeably louder or quieter than the treble notes around it, so a compressor's main job here is balancing that note-to-note evenness and adding a touch of sustain that a clean signal wouldn't otherwise have.",
           "items": [
             "Even out fingerpicking dynamics",
             "Add sustain to single notes",
@@ -152,6 +147,7 @@
         {
           "title": "Electric Guitar Applications",
           "bgColor": "bg-yellow-50",
+          "description": "On distorted or overdriven electric tones, compression is less about evening out volume, since the gain stage already does some of that, and more about extending the sustain of lead lines and tightening the attack of rhythm playing so palm-muted chugs feel consistent from one hit to the next. Placed carefully, it can also raise a signal's average level closer to feedback threshold without raising its peaks as much, which is part of how sustained, singing lead tones are achieved at stage volume.",
           "items": [
             "Increase lead guitar sustain",
             "Tighten rhythm playing",
@@ -170,6 +166,7 @@
         {
           "title": "Best Practices",
           "bgColor": "bg-gray-50",
+          "description": "Compression is one of the easiest effects to overuse without noticing, because unlike distortion or modulation, over-compression doesn't announce itself with an obviously different sound; it just flattens the life out of your dynamics until every note feels the same. Listening specifically for pumping (an audible swell as gain reduction releases) or breathing (a rise in background noise between notes) is how you catch a setting that's gone too far, and bypassing the pedal every so often to compare is the only reliable way to notice compression that's crept in gradually.",
           "items": [
             "Start with subtle settings",
             "Listen for pumping or breathing",
@@ -182,6 +179,7 @@
         {
           "title": "Signal Chain Position",
           "bgColor": "bg-slate-50",
+          "description": "Compressing before an overdrive or distortion pedal evens out your picking dynamics before the gain stage amplifies them, which keeps the drive tone consistent regardless of how hard you pick. Compressing after gain instead squeezes the already-distorted signal itself, smoothing out the sustain and note decay of the drive tone rather than the input dynamics, so the two placements solve genuinely different problems rather than one simply being more correct.",
           "items": [
             "Usually first in signal chain",
             "Before overdrive for consistent drive",

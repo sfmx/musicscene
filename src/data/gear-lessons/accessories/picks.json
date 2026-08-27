@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What Makes a Guitar Pick?",
-    "text": "A guitar pick is a small plectrum used to pluck or strum guitar strings. While seemingly simple, picks vary dramatically in material, thickness, shape, and texture, each affecting your playing style and sound in unique ways.",
+    "text": "A pick is the last physical thing that touches the string before a note sounds, which is exactly why such a tiny, cheap piece of plastic has an outsized effect on tone. Its thickness governs how much it flexes on contact, its edge shape governs how cleanly it releases the string, and its material governs how bright or warm that release sounds, three variables that together shape attack, volume, and speed far more than most players realize until they switch picks and hear the difference immediately.",
     "columns": [
       {
         "title": "Pick Anatomy",
-        "text": "Tip: The pointed end that strikes strings. Body: The grip area held between fingers. Shoulders: The curved sides for comfort. Bevel: The angled edge that contacts strings. Thickness: Measured in millimeters or gauge. Material: Affects tone and durability."
+        "text": "The tip is what actually strikes the string, and its bevel, the angle ground or worn into that edge, determines whether the string releases cleanly or catches slightly, which shows up as a difference between a crisp attack and a softer, rounder one. Thickness, usually measured in millimeters, governs how much the whole pick flexes on impact: a thin pick bends away from the string and softens the attack, while a rigid thick pick barely flexes at all and transfers more of your motion directly into the string."
       },
       {
         "title": "Why Picks Matter",
-        "text": "Control attack and dynamics. Affect tone and brightness. Enable precise single-note playing. Provide consistent string contact. Allow faster playing techniques. Reduce finger wear and pain."
+        "text": "A pick's rigidity directly shapes how much attack and volume a note has, since a flexible tip absorbs some of the picking motion while a stiff one transfers nearly all of it into the string. That same rigidity also affects how easily you can pick out single notes cleanly at speed, which is why players chasing fast, precise lead lines and players chasing a strummed, textural rhythm sound often gravitate toward opposite ends of the thickness spectrum."
       }
     ]
   },
@@ -30,7 +30,7 @@
         {
           "title": "Thin Picks (0.40-0.60mm)",
           "bgColor": "bg-blue-50",
-          "description": "Flexible and bendable with a bright, crisp attack. Good for strumming but less control for single notes. Creates \"pick noise\" on strings and wears out faster.",
+          "description": "A thin pick flexes noticeably against the string on every stroke, which softens the attack and adds a bright, slightly percussive scrape as the edge releases, a sound many strummers actually want because it emphasizes rhythm over individual note clarity. That same flex works against you in single-note lead playing, where the pick bending unpredictably makes fast, accurate picking harder to control, and the thin material wears down and develops rough, distorting edges faster than a thicker pick would.",
           "fields": [
             { "label": "Best For", "value": "Acoustic strumming, folk and country music, rhythm guitar parts, beginners learning to strum, light and delicate playing, open chord progressions" }
           ]
@@ -38,7 +38,7 @@
         {
           "title": "Medium Picks (0.60-0.80mm)",
           "bgColor": "bg-green-50",
-          "description": "Balanced flexibility and control. Versatile for multiple styles and good for both rhythm and lead. Moderate attack and tone. Most popular thickness range with reasonable durability.",
+          "description": "A medium pick flexes just enough to soften harsh attack without losing the control needed for single-note lines, which is exactly why it's the thickness most players settle on when they can't justify owning separate picks for rhythm and lead. That middle-of-the-road flex is also why it's the default recommendation for beginners, it doesn't fight you in either direction while you're still developing a picking technique.",
           "fields": [
             { "label": "Best For", "value": "General purpose playing, rock and pop music, players switching between rhythm/lead, electric guitar, most beginner recommendations, versatile playing styles" }
           ]
@@ -46,7 +46,7 @@
         {
           "title": "Heavy Picks (0.80-1.20mm)",
           "bgColor": "bg-purple-50",
-          "description": "Rigid with minimal flex. Precise control and accuracy with warmer, fuller tone. Excellent for single notes with less string noise. Very durable.",
+          "description": "With almost no flex, a heavy pick transfers picking motion straight into the string instead of absorbing part of it, which is what gives fast alternate picking and single-note runs their precision, every stroke lands the same way instead of varying with how hard you dig in. The trade-off is that same rigidity makes aggressive strumming feel stiff and can sound harsh on open chords, which is why heavy picks show up far more often in lead and jazz playing than in strummed rhythm parts.",
           "fields": [
             { "label": "Best For", "value": "Lead guitar and solos, jazz and fusion playing, metal and hard rock, fast technical playing, bass guitar (when applicable), precise articulation" }
           ]
@@ -54,7 +54,7 @@
         {
           "title": "Extra Heavy Picks (1.20mm+)",
           "bgColor": "bg-red-50",
-          "description": "Very rigid with no flex. Maximum control and precision with thick, warm tone. Minimal pick noise. Can feel awkward initially but extremely durable.",
+          "description": "At this thickness the pick behaves almost like a rigid tool rather than a flexible plectrum, giving maximum precision for demanding technical passages, but that same total lack of give is exactly what makes it feel awkward to players used to a pick that bends slightly with their motion. Most players who switch to extra heavy picks describe an adjustment period of a few weeks before the added control starts to feel natural rather than clumsy.",
           "fields": [
             { "label": "Best For", "value": "Advanced lead playing, jazz and classical guitar, speed picking techniques, professional performance, specialized playing styles, players seeking maximum control" }
           ]
@@ -69,16 +69,16 @@
           "title": "Traditional Materials",
           "bgColor": "bg-orange-50",
           "fields": [
-            { "label": "Celluloid", "value": "Classic plastic material, balanced tone. Most common pick material with good balance of flexibility and durability. Available in all thicknesses." },
-            { "label": "Nylon", "value": "Smooth, warm sound with good grip. Warmer tone than celluloid with excellent durability. Good for both acoustic and electric with less string noise." }
+            { "label": "Celluloid", "value": "The original synthetic pick material, dating back to when it replaced tortoiseshell in the early 20th century. Its balanced flex and moderate brightness make it a safe default across all thicknesses, which is why it remains the most common material by volume." },
+            { "label": "Nylon", "value": "Softer and slightly more flexible than celluloid at a given thickness, nylon rounds off the attack a little and tends to grip sweaty fingers better, which is why it shows up often in picks marketed for live, high-energy playing." }
           ]
         },
         {
           "title": "Premium Materials",
           "bgColor": "bg-teal-50",
           "fields": [
-            { "label": "Tortoiseshell (Tortex)", "value": "Synthetic alternative with excellent grip. Textured surface, consistent thickness and shape. Popular among professionals. Available in color-coded thicknesses." },
-            { "label": "Horn & Bone", "value": "Natural materials for vintage tone. Rich, warm tone character with smooth playing feel. Expensive but long-lasting. Preferred by some blues players." }
+            { "label": "Tortoiseshell (Tortex)", "value": "Real tortoiseshell was banned from new production once hawksbill turtles became a protected species in the 1970s, which is why Dunlop's Tortex line, a synthetic delrin material with a matte, grippy texture, exists as a substitute. Its color-coded gauges made it a quick visual reference for thickness, a big reason it became a professional standard." },
+            { "label": "Horn & Bone", "value": "Dense natural materials like buffalo horn wear into a smoother, more polished edge the longer they're used, which some players feel produces a warmer, rounder tone than synthetic picks at the same thickness. They're considerably more expensive and less consistent piece-to-piece than molded plastic, which limits them mostly to players who specifically seek out that feel." }
           ]
         }
       ]
@@ -127,20 +127,20 @@
           "title": "Rock & Metal Legends",
           "bgColor": "bg-purple-50",
           "fields": [
-            { "label": "Eddie Van Halen", "value": "Fender Heavy picks, precise attack for tapping" },
-            { "label": "James Hetfield", "value": "Black Fender Heavy picks for powerful rhythm" },
-            { "label": "John Petrucci", "value": "Jazz III picks for technical precision" },
-            { "label": "Brian May", "value": "British sixpence coin for unique tone" }
+            { "label": "Eddie Van Halen", "value": "Dunlop Max-Grip .60mm, thin rather than heavy, giving the flex his tapping and rapid strumming needed" },
+            { "label": "James Hetfield", "value": "Custom Dunlop signature picks (\"Black Fang\"/\"White Fang\"), developed after decades of using standard Dunlop Tortex" },
+            { "label": "John Petrucci", "value": "Dunlop signature Jazz III-shaped picks for technical precision" },
+            { "label": "Brian May", "value": "A British sixpence coin, prized for its stiffness and percussive edge" }
           ]
         },
         {
           "title": "Blues & Jazz Masters",
           "bgColor": "bg-indigo-50",
           "fields": [
-            { "label": "Eric Clapton", "value": "Martin Medium celluloid picks" },
-            { "label": "B.B. King", "value": "Preferred fingerstyle, occasional thin picks" },
+            { "label": "Eric Clapton", "value": "Heavy-gauge picks, currently a signature Ernie Ball model made to his own specification" },
+            { "label": "B.B. King", "value": "Almost exclusively a stiff medium pick, held between thumb and index finger; he was famously not a fingerstyle player" },
             { "label": "Joe Pass", "value": "Heavy picks for jazz precision" },
-            { "label": "Billy Gibbons", "value": "Mexican peso and quarter coins" }
+            { "label": "Billy Gibbons", "value": "A Mexican peso coin, machined and beveled into a pick shape" }
           ]
         }
       ]
@@ -180,19 +180,19 @@
       "cards": [
         {
           "title": "Storage Solutions",
-          "description": "Use pick holders, dispensers, or small containers to keep picks organized. Many guitar cases have dedicated pick storage compartments."
+          "description": "Loose picks in a gig bag pocket tend to migrate, get lost, or end up buried under cables right when you need one between songs. A dedicated holder or your case's built-in compartment keeps a known supply in a known place, which matters more than it sounds like it should the first time you're standing on stage with nothing in your hand."
         },
         {
           "title": "When to Replace",
-          "description": "Replace picks when they show significant wear, chips, or rounded edges. Worn picks affect tone and playing precision."
+          "description": "A pick's edge rounds off gradually with use, and once it does, the same stroke that used to produce a clean, defined attack starts producing a softer, less precise one, since a rounded tip releases the string less cleanly than a sharp one. Chipped or unevenly worn edges are worse still, since they catch the string inconsistently and can introduce an audible scratch or buzz that has nothing to do with your technique."
         },
         {
           "title": "Emergency Picks",
-          "description": "Keep spare picks in multiple locations: guitar case, wallet, car, practice space. Consider stick-on pick holders for your guitar."
+          "description": "A lost pick mid-set is a solvable problem only if you planned for it beforehand; stashing spares in your case, wallet, and gig bag costs nothing and means a dropped pick never has to become a dead stop in your set."
         },
         {
           "title": "Cleaning Tips",
-          "description": "Clean picks occasionally with soap and water. Some players sand pick edges for custom feel or use nail files to adjust worn tips."
+          "description": "Skin oils and grime build up on a pick's surface over time and gradually make it feel slicker and harder to grip securely, which is easy to mistake for the pick itself wearing out. A quick wash restores the grip; some players go further and deliberately sand or file a pick's edge to fine-tune exactly how much attack and pick noise they get, effectively customizing the bevel angle by hand."
         }
       ]
     }

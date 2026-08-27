@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "Why Cable Quality Matters",
-    "text": "Your cables are the foundation of your signal chain. Poor cables can rob you of tone, introduce noise, and cause frustrating failures at the worst possible moments.",
+    "text": "A cable is a passive part of your rig, but it isn't a neutral one: every foot of it behaves like a small capacitor sitting between your pickups and your amp's input, and a cheap, poorly shielded cable can quietly roll off high frequencies before your tone ever reaches the amp. A failing solder joint or worn plug can also turn into a dead signal at the exact moment you can least afford it, mid-song, on stage. Paying a bit more for decent shielding and connectors isn't about audiophile placebo, it's about avoiding the two most common on-stage failures: lost tone and lost signal.",
     "columns": [
       {
         "title": "Signal Integrity",
-        "text": "Frequency Response: Preserves your guitar's natural tone. Signal Strength: Maintains output level to your amp. Noise Rejection: Shields from electromagnetic interference. Clarity: Prevents signal degradation and loss."
+        "text": "A guitar's pickups put out a relatively weak, high-impedance signal, which makes it more vulnerable than a line-level signal to both capacitance-related tone loss and electromagnetic interference picked up along the cable's length. A cable's internal capacitance acts like a gentle low-pass filter, shaving off high end as the cable gets longer, while its shielding is what keeps nearby power cables and stage lighting from turning into an audible hum."
       },
       {
         "title": "Reliability & Performance",
-        "text": "Durability: Withstands regular use and movement. Connection Quality: Reliable plugs and jacks. Flexibility: Easy to handle and position. Longevity: Years of dependable service."
+        "text": "Most cable failures happen at the connector rather than in the run itself, since that's where flexing and strain concentrate every time you plug in, coil up, and move the cable again. Cheaper cables tend to use thinner internal wire and lower-quality jacks that fatigue faster, which is why a cable that tests fine at home can start crackling or cutting out after a few months of regular gigging."
       }
     ]
   },
@@ -29,7 +29,7 @@
       "cards": [
         {
           "title": "Standard Instrument Cable",
-          "description": "TS (Tip-Sleeve) unbalanced signal with standard 1/4\" jacks. Basic shielding and most common type for guitar to amp connections.",
+          "description": "A standard instrument cable carries an unbalanced TS (tip-sleeve) signal, meaning there is only one signal conductor and a shared ground, which works fine over the short distance between a guitar and an amp but grows more susceptible to noise as the run gets longer. It's the cable nearly every guitarist owns because it's simple, cheap to build well, and matches the high-impedance output of passive pickups without needing any conversion.",
           "fields": [
             { "label": "Type", "value": "TS (Tip-Sleeve), High-Z impedance" },
             { "label": "Length", "value": "10-20 feet" },
@@ -39,7 +39,7 @@
         },
         {
           "title": "Balanced Cable",
-          "description": "TRS (Tip-Ring-Sleeve) balanced signal with noise rejection. Longer runs possible with professional grade construction.",
+          "description": "A balanced cable uses a TRS (tip-ring-sleeve) connector to send the signal down two conductors that are out of phase with each other, so any noise picked up along the way cancels out when the two are recombined at the far end. That's what lets a balanced line run fifty feet or more without picking up hum, which is why studios and installed sound systems use them by default; a passive guitar can't output a truly balanced signal on its own, so this matters most once a DI box or active pickups are in the chain.",
           "fields": [
             { "label": "Type", "value": "TRS (Tip-Ring-Sleeve), Low-Z impedance" },
             { "label": "Length", "value": "6-25 feet" },
@@ -49,7 +49,7 @@
         },
         {
           "title": "Speaker Cable",
-          "description": "TS Heavy gauge with thick copper wire, high current capacity, low resistance and durable construction.",
+          "description": "Speaker cable carries a much higher-power, low-impedance signal from an amp head's output to a cabinet, and that signal doesn't need shielding the way an instrument-level signal does, it needs low resistance so the amp isn't fighting its own cable to drive the speaker. Swapping an instrument cable in for a speaker cable, or vice versa, can damage a tube amp's output transformer, since the two are built for genuinely different jobs even though the connectors often look identical.",
           "fields": [
             { "label": "Type", "value": "TS Heavy Gauge, low resistance" },
             { "label": "Length", "value": "4-12 feet" },
@@ -59,7 +59,7 @@
         },
         {
           "title": "Patch Cable",
-          "description": "Short TS cables that are flexible with right-angle options and space efficient design for pedalboard use.",
+          "description": "Patch cables exist to solve a wiring problem: connecting pedals on a board without wasting space on excess cable length. Keeping them short and often right-angled reduces the total capacitance stacking up when several pedals sit in series, and it keeps the board tidy enough that a dropped drink or a stray boot doesn't yank a connection loose mid-set.",
           "fields": [
             { "label": "Type", "value": "TS Short, High-Z impedance" },
             { "label": "Length", "value": "6 inches - 3 feet" },
@@ -147,19 +147,19 @@
       "cards": [
         {
           "title": "Monster Cable - Rock Series",
-          "description": "Heavy marketing, thick construction. Popular with many 80s/90s rock stars."
+          "description": "Monster built its reputation in the 1980s on heavy internal insulation and thick conductors, marketed on the idea that thicker construction meant better tone. The build is genuinely rugged and holds up well to touring abuse, though independent listening tests have generally found the audible difference between well-shielded cables of similar gauge to be smaller than the marketing implies."
         },
         {
           "title": "George L's - Custom Cables",
-          "description": "Low capacitance, custom lengths. Popular with pedal enthusiasts and pros."
+          "description": "George L's uses a solderless connector system that clamps directly onto bare cable rather than requiring a soldered joint, letting players build and resize their own pedalboard cables in minutes without a soldering iron. The cable itself is intentionally low-capacitance, which helps preserve top end even when a dozen short patch connections are stacked in series across a board, a big reason it became a default choice for touring techs who need to rewire a rig fast."
         },
         {
           "title": "Mogami - 2524",
-          "description": "Studio standard with excellent shielding. Used by studio professionals worldwide."
+          "description": "Mogami's 2524 is one of the most widely used cables in professional studios because its shielding rejects interference in rooms full of computer monitors and lighting dimmers without the stiffness that heavier-shielded cables often have. Its reputation as a studio standard comes less from any single dramatic tone claim and more from decades of consistently quiet performance across countless sessions."
         },
         {
           "title": "Planet Waves - American Stage",
-          "description": "Lifetime warranty, road-tested. Popular with touring musicians."
+          "description": "American Stage cables ship with a lifetime warranty and heavier-gauge internal wiring aimed specifically at touring use, where a cable gets coiled, stepped on, and packed into a road case hundreds of times a year. For a working musician, a warranty that holds up to that kind of abuse indefinitely can matter more than any marginal tone difference between comparable cables."
         }
       ]
     },

@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Overdrive?",
-    "text": "Overdrive is a form of audio signal distortion that occurs when an amplifier is driven beyond its clean headroom. Unlike harsh distortion, overdrive provides a warm, musical saturation that responds dynamically to your playing touch and guitar volume.",
+    "text": "Overdrive is a form of audio signal distortion that occurs naturally when an amplifier is driven beyond its clean headroom, and overdrive pedals exist mainly to recreate that same soft, amp-like clipping at any volume rather than only once a tube amp is cranked loud enough to break up on its own. Because the clipping is gradual rather than an abrupt ceiling, an overdrive pedal keeps responding to how hard you pick and how far you turn the guitar's volume knob, which is exactly the touch-sensitivity a harder-clipping distortion circuit gives up in exchange for consistency.",
     "columns": [
       {
         "title": "Characteristics",
-        "text": "Warm, musical clipping. Touch-sensitive dynamics. Preserves fundamental tone. Natural compression. Mid-range focus. Amp-like saturation."
+        "text": "An overdrive pedal clips the peaks of the waveform softly, rounding them off rather than flattening them the way a distortion pedal does, and that gentler clipping preserves much more of the original note's fundamental pitch and harmonic makeup. Because the onset of clipping is gradual instead of a fixed ceiling, the effect stays genuinely touch-sensitive: pick softly and the signal stays closer to clean, dig in and the same pedal saturates further, all without touching a single knob."
       },
       {
         "title": "Musical Applications",
-        "text": "Blues and rock rhythm. Lead guitar sustain. Pushing tube amps. Adding warmth to clean tones. Stacking with other drives. Country and folk textures."
+        "text": "That responsiveness to touch is why overdrive, rather than distortion, is the default choice for blues and classic rock rhythm playing, styles built around dynamic variation from note to note rather than a uniformly saturated wall of gain. The same gentle clipping is what makes overdrive the standard way to push an already slightly-driven tube amp further into its own natural breakup, and why stacking a low-gain overdrive in front of a second drive pedal, rather than just turning one pedal's gain up, is a common way to shape tone in stages instead of all at once."
       }
     ]
   },
@@ -31,7 +31,7 @@
       "cards": [
         {
           "title": "Tube-Style Circuits",
-          "description": "Many overdrive pedals use op-amp circuits with diode clipping to simulate the natural compression and harmonic content of overdriven tube amplifiers.",
+          "description": "Rather than using actual vacuum tubes, most overdrive pedals run an op-amp circuit into a pair of diodes, which clip the signal in a way that mimics a tube's soft, gradual saturation far more cheaply and reliably than fitting a real tube into a battery-powered stompbox would. Using two slightly mismatched diodes, an asymmetrical arrangement, produces uneven clipping on the positive and negative halves of the waveform, generating the same even-order harmonics a real tube amp produces and giving the pedal its warmer, more \"tube-like\" character compared to symmetrical clipping.",
           "items": [
             "Asymmetrical clipping for warmth",
             "Mid-range emphasis",
@@ -56,28 +56,28 @@
       "cards": [
         {
           "title": "Transparent Overdrive",
-          "description": "Designed to maintain your guitar and amp's natural character while adding gain and sustain. Perfect for pushing tube amps.",
+          "description": "A transparent overdrive is designed to add gain and sustain while coloring the underlying tone as little as possible, so a bright guitar stays bright and a dark-sounding amp stays dark rather than the pedal imposing its own EQ signature on top. That neutrality is exactly what makes these pedals effective as a way to push an already-good clean or edge-of-breakup amp tone harder, since the goal is more of what the amp is already doing rather than a new flavor layered over it.",
           "fields": [
             { "label": "Examples", "value": "Boss OD-1, Ibanez TS808, Xotic EP Booster" }
           ]
         },
         {
           "title": "Colored Overdrive",
-          "description": "Adds distinctive tonal character along with overdrive. These pedals have their own unique voice and EQ signature.",
+          "description": "A colored overdrive is built around a specific voicing rather than staying out of the way of your existing tone, actively shaping the frequency response and clipping character to sound a particular way regardless of what amp it's plugged into. That built-in personality is the point rather than a flaw: it's what lets one of these pedals put a recognizable, consistent character on a rig, rather than the more chameleon-like behavior of a transparent overdrive.",
           "fields": [
             { "label": "Examples", "value": "Boss Blues Breaker, ProCo RAT, DOD 250" }
           ]
         },
         {
           "title": "Tube Screamer Style",
-          "description": "The most popular overdrive topology. Known for mid-range focus, smooth clipping, and ability to tighten low end.",
+          "description": "The Tube Screamer circuit rolls off bass frequencies before the clipping stage and boosts the midrange afterward, which is why it tightens up a loose low end and pushes the guitar's midrange forward rather than adding raw thickness. That EQ curve is exactly what a note needs to cut through a dense band mix without turning muddy, which is why this specific topology, rather than overdrive in general, became the default boost pedal for so many working guitarists.",
           "fields": [
             { "label": "Examples", "value": "Ibanez TS9, Boss SD-1, Maxon OD808" }
           ]
         },
         {
           "title": "Vintage-Style",
-          "description": "Recreates the sound of specific vintage amplifiers or classic overdrive circuits from the 70s and 80s.",
+          "description": "A vintage-style overdrive is built around the specific circuit of an amp or pedal from the '70s or '80s rather than a modern general-purpose drive design, chasing the particular clipping curve and frequency response of one historical unit instead of aiming for a broadly useful tone. That focus makes them less flexible than a transparent or Tube Screamer-style pedal, but far more convincing at recreating one specific era or amplifier's breakup character than a general-purpose circuit designed to work well with anything.",
           "fields": [
             { "label": "Examples", "value": "Marshall Blues Breaker, Boss OD-3, Fulltone OCD" }
           ]
@@ -137,6 +137,7 @@
         {
           "title": "Technique Tips",
           "bgColor": "bg-green-50",
+          "description": "Because overdrive clips gradually rather than at a fixed ceiling, most of its dynamic range lives in your hands rather than on the pedal's dial. Rolling the guitar's volume back cleans up the tone almost like bypassing the pedal, and picking harder pushes further into saturation, which is why players who rely on overdrive tend to touch the guitar's own controls constantly instead of setting the pedal once and leaving it.",
           "items": [
             "Use guitar volume knob for dynamics",
             "Set drive level for touch sensitivity",
@@ -149,6 +150,7 @@
         {
           "title": "Stacking & Combinations",
           "bgColor": "bg-blue-50",
+          "description": "Running a low-gain overdrive into a second, higher-gain drive pedal shapes the tone in stages rather than all at once: the first pedal's soft clipping smooths and compresses the signal slightly before it ever reaches the second pedal's own clipping stage, which produces a thicker, more layered saturation than simply turning one pedal's gain all the way up. This is also why a low-gain overdrive works as a clean boost in front of an already-driven amp: set with its own gain low, it acts mostly as a volume and midrange push into the amp's front end rather than adding audible clipping of its own.",
           "items": [
             "Stack two overdrives for more gain",
             "Use lower gain OD to push higher gain OD",

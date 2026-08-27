@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "Why Accurate Tuning Matters",
-    "text": "Proper tuning is the foundation of all music-making. An out-of-tune guitar sounds unpleasant regardless of playing skill, while a well-tuned instrument makes even simple chords sound musical and inspiring.",
+    "text": "A chord is a set of specific frequency ratios between notes, and even a few cents of mistuning on one string throws those ratios off enough that the chord starts to beat and shimmer instead of ringing clean, an effect most listeners register as \"off\" even if they couldn't say why. That's the real reason an out-of-tune guitar sounds bad regardless of how well it's played, and why a well-tuned instrument makes even the simplest open chords sound satisfying: the physics of the intervals are actually correct.",
     "columns": [
       {
         "title": "Musical Benefits",
-        "text": "Creates harmony and consonance. Enables proper chord intervals. Develops accurate ear training. Allows playing with other musicians. Improves intonation across the neck. Makes practice more enjoyable."
+        "text": "Playing in tune is what makes chord intervals sound consonant rather than sour, and it's also the only way ear training actually develops correctly, since you can't learn to recognize what a perfect fifth or a major third sounds like if the reference pitch itself is drifting. It's equally non-negotiable the moment you play with anyone else: two slightly different \"in tune\" guitars clash audibly in a way that a single guitar's mistuning alone doesn't."
       },
       {
         "title": "Practical Advantages",
-        "text": "Enables recording and performance. Prevents bad habits from forming. Maintains string tension properly. Extends string life. Builds confidence in playing. Professional presentation."
+        "text": "Recording exposes tuning problems mercilessly, since a pitch that sounds close enough live becomes obviously wrong once it's isolated and looped back on playback. Tuning correctly also protects the instrument itself: strings tuned to the correct tension age and stretch predictably, while strings left flat or sharp for long periods put uneven strain on the neck and can shorten string life."
       }
     ]
   },
@@ -30,7 +30,7 @@
         {
           "title": "Clip-On Tuners",
           "bgColor": "bg-green-50",
-          "description": "Detect vibrations through guitar body. Clip directly onto headstock with no cables or connections required. Work in noisy environments. Battery-powered, compact and portable.",
+          "description": "A clip-on tuner reads pitch through a small vibration sensor pressed against the headstock rather than listening through a microphone, which is exactly why it keeps working accurately in a loud room or backstage area where an audio-based tuner would struggle to isolate your guitar from the surrounding noise. Needing no cable or amp connection also makes it the fastest tuner to grab and use, clip it on, glance at the display, done.",
           "fields": [
             { "label": "Advantages", "value": "Convenient and always accessible. Works acoustic and electric guitars. Immune to ambient noise. Inexpensive and reliable. Clear visual display. Perfect for practice and lessons." },
             { "label": "Top Models", "value": "Snark SN-5X (popular and affordable), Boss TU-10 (professional build quality), TC Electronic PolyTune Clip (advanced features), D'Addario NS Micro Headstock (ultra-compact)" }
@@ -39,16 +39,16 @@
         {
           "title": "Pedal Tuners",
           "bgColor": "bg-blue-50",
-          "description": "Integrate into pedalboard setup with silent tuning (mutes output). Highly accurate detection with bright LED displays for stage use. Multiple tuning modes with buffer and power distribution.",
+          "description": "A pedal tuner sits directly in the signal chain and mutes the output the instant you engage it, so you can retune silently between songs instead of an audience hearing you hunt for pitch, a small detail that matters enormously in a live set's pacing. Reading the guitar's actual line-level signal rather than body vibration also makes it typically more accurate than a clip-on, and its large, bright display is built to be readable at a glance under stage lighting rather than squinted at up close.",
           "fields": [
             { "label": "Performance Benefits", "value": "Hands-free operation during performance. Always in signal chain when needed. No audience disruption. Multiple instrument compatibility. Reference tone generation. Professional stage appearance." },
-            { "label": "Industry Standard Pedals", "value": "Boss TU-3 (most popular stage tuner), TC Electronic PolyTune 3 (polyphonic tuning), Eventide TimeFactor (integrated with effects), Strymon Lex (boutique with premium features)" }
+            { "label": "Industry Standard Pedals", "value": "Boss TU-3 (most popular stage tuner), TC Electronic PolyTune 3 (polyphonic tuning), Peterson StroboStomp HD (strobe-precision tuning in pedal form), Korg Pitchblack Pro (bright, ultra-fast display)" }
           ]
         },
         {
           "title": "Smartphone & App Tuners",
           "bgColor": "bg-purple-50",
-          "description": "Always available on your phone. Free or very inexpensive with advanced features and modes. Metronome integration and custom tuning presets. Visual and audio feedback.",
+          "description": "An app tuner listens through the phone's built-in microphone rather than sensing vibration directly, which is convenient since it needs no extra hardware at all, but it also means it's picking up every other sound in the room along with your guitar. That makes it a solid free option for quiet practice at home and a frustrating one in a noisy rehearsal space or backstage area.",
           "fields": [
             { "label": "Limitations", "value": "Affected by background noise. Requires quiet environment. Phone microphone quality varies. Battery drain on device. May struggle with electric guitars." },
             { "label": "Popular Apps", "value": "Guitar Tuna (most downloaded), Fender Tune (official Fender app), PitchLab (professional features), Chromatic Tuner (simple and effective)" }
@@ -57,7 +57,7 @@
         {
           "title": "Rack & Desktop Tuners",
           "bgColor": "bg-orange-50",
-          "description": "Extremely high accuracy with multiple input sources. Reference tone generation and digital/analog outputs. Integration with recording systems and professional calibration options.",
+          "description": "Rack and desktop tuners are built for a fixed studio signal chain rather than portability, accepting multiple simultaneous input sources and integrating directly into a console or patch bay, which is overkill for a gigging guitarist but exactly what a studio needs when several instruments are being tracked and tuning has to be verified without disrupting the session.",
           "fields": [
             { "label": "Features", "value": "Large, clear displays. Multiple tuning temperaments. Instrument-specific modes. MIDI integration. Calibration to different frequencies. Professional studio standard." }
           ]
@@ -193,11 +193,11 @@
       "cards": [
         {
           "title": "Tune Up, Not Down",
-          "description": "Always approach the target pitch from below. If you overshoot, tune down past the note and come back up. This accounts for string tension and gearing."
+          "description": "Tuning machines have a small amount of mechanical slack in the gears, and approaching a note from below takes that slack up in the direction that holds the string firmly under tension, whereas approaching from above can leave a tiny bit of play that lets the string slip flat again as soon as you start playing. If you overshoot the target pitch, the fix is to tune back down past it and come up again, not just nudge downward, so you're always settling into the note from the same direction."
         },
         {
           "title": "Stretch New Strings",
-          "description": "New strings will go out of tune frequently until they settle. Gently stretch strings and retune several times when changing strings."
+          "description": "A brand-new string hasn't fully seated at the tuning post or bridge yet, and the core wire itself is still settling under tension, which is why a freshly strung guitar goes flat repeatedly over its first hour or two even if nothing was played roughly. Gently pulling each string away from the fretboard a few times and retuning after each pull speeds up that settling process so the string reaches a stable pitch much sooner than just waiting it out through normal playing."
         },
         {
           "title": "Check Intonation",

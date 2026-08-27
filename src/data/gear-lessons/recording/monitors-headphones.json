@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "Why Accurate Monitoring Matters",
-    "text": "Your monitoring system is your reference for all creative and technical decisions. Inaccurate monitors can lead to mixes that sound great in your studio but terrible everywhere else. Good monitors reveal the truth about your recordings.",
+    "text": "Every mixing decision you make, boosting a frequency, pulling back a reverb, balancing a vocal against the band, is really a decision about what you're hearing, so if your monitors are lying to you, you're correcting for problems that don't exist while missing ones that do. A monitor with a bass hump will trick you into mixing the low end too thin to compensate, and that mix will then sound thin on any system that doesn't share the same hump. Accuracy isn't about sounding impressive, it's about sounding honest, so that a decision made in your room holds up on a car stereo, a phone speaker, or anywhere else the track ends up.",
     "columns": [
       {
         "title": "What Accurate Monitors Provide",
-        "text": "Flat, uncolored frequency response. Clear stereo imaging and soundstage. Detailed resolution of mix elements. Consistent performance at various levels. Truthful representation of your recordings. Predictable translation to other systems."
+        "text": "A flat, uncolored frequency response means the monitor isn't quietly flattering or hiding any part of the spectrum, so what you boost or cut is what's actually there in the mix, not a correction for the speaker's own coloration. Clear stereo imaging lets you place instruments precisely left to right and gauge depth, which matters most on sources competing for the same space in a busy mix, and consistent performance at different volumes means a balance that sounds right at low level doesn't quietly fall apart once you turn it up."
       },
       {
         "title": "Problems with Poor Monitoring",
-        "text": "Mixes that don't translate well. Over or under-compensation for frequency peaks. Inability to hear subtle details. Poor stereo imaging decisions. Inconsistent mix levels. Fatigue from listening on harsh systems."
+        "text": "A monitor that exaggerates or hides a frequency range pushes you to overcorrect for a coloration that only exists in your room, which is exactly why mixes that sound great on inaccurate speakers often disappoint everywhere else. Harsh or fatiguing monitors create a subtler problem too: your ears adapt to reduce perceived harshness the longer you listen, so you gradually turn up treble to compensate, then wonder why the mix sounds brittle on a different system the next day."
       }
     ]
   },
@@ -30,6 +30,7 @@
       "cards": [
         {
           "title": "Characteristics",
+          "description": "Sitting 3-8 feet from a near-field monitor puts the direct sound from the speaker ahead of any reflections bouncing off your walls, so what reaches your ears first and loudest is the speaker itself rather than your room's own coloration, which is exactly why near-fields need less acoustic treatment than monitors meant to be heard from further back. Their compact 5-8 inch woofers are a direct consequence of that same close listening distance, a smaller room simply doesn't need, and can't comfortably handle, the low-end output of a much larger driver.",
           "items": [
             "Designed for 3-8 feet listening distance",
             "Minimize room acoustic influences",
@@ -41,6 +42,7 @@
         },
         {
           "title": "Advantages",
+          "description": "Because the room contributes less to what you hear at near-field distance, you can get usable, trustworthy results without the extensive acoustic treatment a mid- or far-field setup would demand, which is the main reason near-fields dominate home studios built around normal-sized rooms and modest budgets. Their compact footprint is a practical bonus on top of that acoustic one, fitting comfortably either side of a desktop monitor without dominating the room.",
           "items": [
             "Less room treatment required",
             "Detailed midrange reproduction",
@@ -58,10 +60,11 @@
       "cards": [
         {
           "title": "Industry Standards",
+          "description": "Yamaha's HS series earned its reputation for an honest, revealing sound that exposes flaws in a mix rather than smoothing them over, which is more useful for critical decisions than a flattering speaker even though it's less immediately impressive to listen to. KRK's Rokit series leans the other way, its boosted bass response is popular in bass-forward genres like hip-hop and EDM but means you're hearing more low end than is actually in the mix, something worth accounting for. JBL's 305P MkII (the current name for what was long sold as the LSR305) became a default budget recommendation for genuinely accurate imaging at a low price, while Adam Audio's T-series uses a pleated ribbon tweeter rather than a standard dome, extending detail further into the high frequencies than most monitors in its price range.",
           "fields": [
             { "label": "Yamaha HS5/HS8", "value": "Industry standard reference" },
             { "label": "KRK Rokit series", "value": "Enhanced bass response" },
-            { "label": "JBL LSR305/308", "value": "Excellent value and accuracy" },
+            { "label": "JBL 305P MkII / 308P MkII", "value": "Excellent value and accuracy" },
             { "label": "Adam Audio T5V/T7V", "value": "Ribbon tweeters for detail" }
           ]
         }
@@ -74,6 +77,7 @@
       "cards": [
         {
           "title": "Mid-field Monitors",
+          "description": "Listening from 6-10 feet means more of the room's reflections reach your ears alongside the direct sound, so mid-field monitors need proper acoustic treatment to stay accurate in a way near-fields don't, and their larger drivers and added power exist to still deliver full-range detail and low-end extension across that greater distance.",
           "items": [
             "6-10 feet listening distance",
             "Larger drivers (8-10 inches)",
@@ -85,6 +89,7 @@
         },
         {
           "title": "Far-field Monitors",
+          "description": "Far-field monitors are built for large, purpose-built control rooms where the listening position is genuinely 10 or more feet back, which demands large woofers and high SPL capability just to maintain full-range response over that distance; their size and cost mostly reflect how much dedicated room treatment and space they need to sound correct rather than being an upgrade path for a typical home studio.",
           "items": [
             "10+ feet listening distance",
             "Large woofers (12+ inches)",
@@ -103,7 +108,7 @@
       "cards": [
         {
           "title": "Active (Powered) Monitors",
-          "description": "Pros: Convenience, optimized performance, no external amp needed",
+          "description": "Active monitors pair the amplifier to each driver at the factory, which lets the manufacturer tune the amp's power and damping specifically for that woofer and tweeter rather than leaving the matching to chance, and it's the main reason most modern studio monitors, and nearly all affordable ones, are built this way. That built-in matching is also what makes them so simple to set up, plug in power and a line-level signal and the electronics inside are already optimized for the cabinet they're in.",
           "items": [
             "Built-in amplification",
             "Optimized amp-to-driver matching",
@@ -115,7 +120,7 @@
         },
         {
           "title": "Passive Monitors",
-          "description": "Pros: Amp flexibility, upgrade path, traditional audiophile appeal",
+          "description": "Passive monitors leave the amplifier choice to you, which sacrifices the factory-tuned matching an active design offers but opens a real upgrade path: swap in a better external amp later without replacing the speakers themselves. That flexibility carries real cost in setup complexity, since getting a passive pair to sound as good as an equivalent active pair means choosing an amplifier that actually suits the cabinet's power handling and impedance.",
           "items": [
             "Require external amplifier",
             "Amp selection affects sound",
@@ -134,7 +139,10 @@
       "cards": [
         {
           "title": "Open-Back Headphones",
-          "description": "Best Models: Sennheiser HD600/650, Audio-Technica ATH-R70x, AKG K701",
+          "description": "An open-back earcup lets air pass freely through the housing instead of trapping it in a sealed chamber, which avoids the internal pressure buildup and reflections that can color bass and midrange in a closed design, giving open-back headphones a more natural, spacious soundstage. The same open design that makes them sound more accurate also means sound leaks both in and out, which is why they're better suited to a quiet mixing room than a live tracking session where bleed into a nearby microphone would be a problem.",
+          "fields": [
+            { "label": "Recommended Models", "value": "Sennheiser HD600/650, Audio-Technica ATH-R70x, AKG K701" }
+          ],
           "items": [
             "Natural, airy soundstage",
             "More accurate stereo imaging",
@@ -146,7 +154,10 @@
         },
         {
           "title": "Closed-Back Headphones",
-          "description": "Best Models: Sony MDR-7506, Audio-Technica ATH-M50x, Beyerdynamic DT770",
+          "description": "Sealing the earcup blocks outside sound from getting in and keeps the headphone's own output from leaking out, which is exactly what you need when tracking a vocalist or instrumentalist next to a live microphone that would otherwise pick up click-track or monitor bleed. That sealed chamber does create some internal reflections that can color the sound, often as an emphasized bass response, which is a reasonable trade for isolation during recording but less ideal for the most critical mixing decisions.",
+          "fields": [
+            { "label": "Recommended Models", "value": "Sony MDR-7506, Audio-Technica ATH-M50x, Beyerdynamic DT770" }
+          ],
           "items": [
             "Isolation from external noise",
             "No sound leakage",
@@ -165,6 +176,7 @@
       "cards": [
         {
           "title": "Mixing Headphones",
+          "description": "Mixing headphones prioritize the same things flat monitors do, an even frequency response and accurate stereo placement, but in a package you can wear comfortably for hours, which is why open-back designs (with their more natural soundstage) are generally preferred for this role over closed-back models.",
           "items": [
             "Flat frequency response",
             "Wide soundstage",
@@ -175,6 +187,7 @@
         },
         {
           "title": "Recording Headphones",
+          "description": "The priority during tracking flips from accuracy to isolation, a performer needs to hear a click track or backing mix clearly without any of it bleeding into a nearby microphone, which is why closed-back designs with strong isolation dominate this category even though they're not the flattest-sounding option available.",
           "items": [
             "Closed-back design",
             "No bleed into microphones",
@@ -185,6 +198,7 @@
         },
         {
           "title": "Mastering Headphones",
+          "description": "Mastering asks for an even higher bar than mixing, since the smallest imbalance or distortion can be the difference between a track that sounds professional and one that doesn't, which is why mastering-grade headphones push for the flattest possible response and the lowest measurable distortion available at any price.",
           "items": [
             "Ultra-flat response",
             "Exceptional detail resolution",
@@ -201,6 +215,7 @@
       "cards": [
         {
           "title": "Positioning Guidelines",
+          "description": "The equilateral triangle rule exists so both monitors sit the same distance from your ears as they do from each other, which keeps the stereo image centered and balanced instead of skewed toward whichever speaker happens to be closer. Tweeters belong at ear height because high frequencies are far more directional than lows, aim them anywhere but straight at your ears and you lose top-end detail without necessarily noticing why, and keeping symmetrical distance from side walls avoids one channel picking up stronger early reflections than the other.",
           "items": [
             "Distance: Form equilateral triangle with your head",
             "Height: Tweeters at ear level when seated",
@@ -212,6 +227,7 @@
         },
         {
           "title": "Room Considerations",
+          "description": "First reflection points, the spots on your side walls and ceiling where sound bounces once before reaching your ears, blur stereo imaging by mixing a delayed copy of the sound in with the direct signal, which is exactly what absorptive treatment at those points is meant to fix. Bass traps solve a related but different problem, low frequencies build up unevenly in room corners and along parallel walls, creating bass response that varies wildly depending on exactly where you're standing, which no amount of monitor quality can compensate for on its own.",
           "items": [
             "Treatment: Address first reflection points",
             "Bass Traps: Control low-frequency buildup",
@@ -230,32 +246,26 @@
       "cards": [
         {
           "title": "Budget Setup ($200-500)",
-          "items": [
-            "Monitors: JBL LSR305 pair",
-            "Monitors: Presonus Eris E3.5",
-            "Monitors: Mackie CR3-X",
-            "Headphones: Audio-Technica ATH-M40x",
-            "Headphones: Sony MDR-7506"
+          "description": "At this budget the priority is simply getting an honest, if less detailed, picture of your mix rather than the coloration cheap consumer speakers add, any of these near-field pairs will reveal far more about a mix's real balance than computer speakers or earbuds can.",
+          "fields": [
+            { "label": "Monitor Options", "value": "JBL LSR305/305P MkII pair, PreSonus Eris E3.5, Mackie CR3-X" },
+            { "label": "Headphone Options", "value": "Audio-Technica ATH-M40x, Sony MDR-7506" }
           ]
         },
         {
           "title": "Professional Setup ($500-1500)",
-          "items": [
-            "Monitors: Yamaha HS8 pair",
-            "Monitors: Adam Audio T7V",
-            "Monitors: KRK Rokit 8 G4",
-            "Headphones: Sennheiser HD650",
-            "Headphones: Audio-Technica ATH-R70x"
+          "description": "This tier buys meaningfully lower distortion and more even frequency response across the board, along with, in the open-back headphones, a genuinely more accurate stereo image for critical mixing decisions than budget closed-back models can offer.",
+          "fields": [
+            { "label": "Monitor Options", "value": "Yamaha HS8 pair, Adam Audio T7V, KRK Rokit 8 G4" },
+            { "label": "Headphone Options", "value": "Sennheiser HD650, Audio-Technica ATH-R70x" }
           ]
         },
         {
           "title": "High-End Setup ($1500+)",
-          "items": [
-            "Monitors: Focal Alpha 80 Evo",
-            "Monitors: Genelec 8040B",
-            "Monitors: Neumann KH120A",
-            "Headphones: Sennheiser HD800S",
-            "Headphones: Focal Utopia"
+          "description": "At the top end you're paying for diminishing but real improvements, lower distortion, wider and flatter frequency response, and better build consistency, that matter most to engineers making the final, most critical mastering and mixing decisions on a project.",
+          "fields": [
+            { "label": "Monitor Options", "value": "Focal Alpha 80 Evo, Genelec 8040B, Neumann KH120A" },
+            { "label": "Headphone Options", "value": "Sennheiser HD800S, Focal Utopia" }
           ]
         }
       ]
@@ -267,6 +277,7 @@
         {
           "title": "Calibration Methods",
           "bgColor": "bg-indigo-50",
+          "description": "SPL matching and pink noise testing both exist to rule out your monitors themselves as the source of an imbalance, confirming both speakers put out the same level and that the frequency balance across the spectrum is roughly even before you trust any mixing decision to them. Reference tracks add a check no measurement can fully replace, comparing your room's sound against a professionally mixed track you know well tells you how your monitors color things relative to a known standard.",
           "items": [
             "SPL Matching: Set both monitors to same level",
             "Pink Noise Test: Check frequency balance",
@@ -279,6 +290,7 @@
         {
           "title": "Common Problems",
           "bgColor": "bg-red-50",
+          "description": "Most of these problems trace back to the same root cause, sound reflecting off room surfaces and arriving at your ears slightly delayed relative to the direct signal, whether that shows up as bass buildup in corners, comb filtering from a nearby reflective desk, or standing waves between parallel walls. Recognizing which symptom you're hearing is what tells you whether the fix is bass trapping, moving your listening position, or treating a specific reflection point.",
           "items": [
             "Bass Buildup: Room modes causing frequency peaks",
             "Flutter Echo: Parallel wall reflections",
@@ -296,19 +308,19 @@
       "cards": [
         {
           "title": "Use Reference Tracks",
-          "description": "Always have commercial releases in your genre that you know well. These help you understand how your monitors translate and what good mixes sound like."
+          "description": "A commercial mix you know intimately acts as a known-good calibration point against your own room and monitors, if the reference sounds thin, bright, or bass-heavy compared to how you remember it, that tells you something about your monitoring rather than the reference recording, which is a check no amount of staring at a meter can give you."
         },
         {
           "title": "Monitor at Reasonable Levels",
-          "description": "Loud monitoring can damage hearing and lead to poor mix decisions. Mix at 85dB SPL or lower, and take regular breaks."
+          "description": "Loud monitoring causes two separate problems: it damages hearing cumulatively over a career, and it distorts your perception of frequency balance in the moment, since the ear's sensitivity curve flattens out at higher volumes and makes bass and treble sound more even than they really are. Mixing around 85dB SPL keeps you in a range where what you hear stays representative, and taking breaks matters because prolonged listening at any volume causes ear fatigue that skews judgment even before it feels tiring."
         },
         {
           "title": "Cross-Reference Your Mixes",
-          "description": "Check your mixes on multiple systems: car stereo, earbuds, phone speakers, and other playback devices to ensure good translation."
+          "description": "No monitoring setup, however accurate, tells you how a mix will actually sound on the wildly different systems it will really be played on, so checking on a car stereo, earbuds, and phone speakers catches translation problems, a vocal buried on small speakers, bass that disappears on a phone, that your studio monitors alone can hide."
         },
         {
           "title": "Trust Your Monitors",
-          "description": "Once you know your monitors well, trust what they tell you. Avoid constant tweaking based on other playback systems."
+          "description": "Once you've calibrated your ears to a monitoring setup you know well, constantly second-guessing it against other systems leads to chasing an imaginary problem, since every playback system colors sound differently and none of them is the objective truth your studio monitors are meant to be. Cross-referencing is for catching real translation issues, not for overriding a decision you already made carefully."
         }
       ]
     }

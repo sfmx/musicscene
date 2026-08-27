@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "Why Timing Matters in Music",
-    "text": "Timing is the heartbeat of music. A metronome provides an unwavering reference point that helps you develop a solid internal clock, build speed systematically, and prepare for playing with other musicians.",
+    "text": "Most guitarists overestimate how steady their internal sense of tempo actually is; without an external reference, it's extremely common to unconsciously speed up through easy passages and drag through difficult ones, a habit that feels fine in isolation but falls apart the moment you play with a drummer or a backing track. A metronome exposes that drift immediately, which is uncomfortable at first but is exactly what makes it useful: you can't fix a timing problem you can't hear. Practicing against a click for even a few minutes a day trains your ear to notice the difference between rushing and locking in, which is a skill that transfers to playing with real musicians far more directly than practicing without one ever does.",
     "columns": [
       {
         "title": "Musical Benefits",
-        "text": "Ensemble Playing: Lock in with other musicians. Recording: Essential for studio work. Groove Development: Feel the pocket and swing. Technical Progress: Build speed systematically. Musical Expression: Control tempo for emotion."
+        "text": "Playing in a band only works because everyone is subdividing the same beat the same way, and a metronome is how you build that internal subdivision before you're relying on a drummer to hold it for you. It's also indispensable in the studio, where a recording without a steady internal tempo reference is far harder to edit, layer, or line up with other takes later."
       },
       {
         "title": "Practice Advantages",
-        "text": "Consistency: Maintain steady tempo. Progress Tracking: Measure speed improvements. Challenge Setting: Push comfort zones safely. Error Detection: Hear timing mistakes clearly. Discipline: Force accurate practice habits."
+        "text": "A metronome turns vague progress like \"I'm getting faster\" into a measurable number, which makes it obvious when a passage is actually ready to speed up versus when it just feels that way. It also surfaces timing mistakes you'd otherwise miss entirely, since your ear tends to smooth over small rushes and drags when there's nothing steady to compare them against."
       }
     ]
   },
@@ -29,7 +29,7 @@
       "cards": [
         {
           "title": "Mechanical Metronomes",
-          "description": "Wind-up pendulum with mechanical spring power. No batteries needed with visual pendulum. Traditional design with adjustable volume.",
+          "description": "A wind-up mechanical metronome uses a weighted pendulum and escapement mechanism, the same basic physics as a pendulum clock, so it needs no batteries and keeps working exactly the same way for decades. Many players find the visual swing of the pendulum easier to lock onto than an audio click alone, since you can watch the beat coming a fraction of a second before it lands rather than only reacting to it.",
           "fields": [
             { "label": "Tempo Range", "value": "40-208 BPM" },
             { "label": "Price Range", "value": "$30-200" },
@@ -40,7 +40,7 @@
         },
         {
           "title": "Digital Metronomes",
-          "description": "Electronic click with battery power. Wide tempo range with multiple sounds. Beat subdivisions and programmable patterns.",
+          "description": "A digital metronome generates its click electronically rather than mechanically, which is what lets it cover a much wider tempo range and subdivide the beat into eighth notes, triplets, or sixteenths without any moving parts to wear out. That flexibility is what makes it the practical choice once you're practicing anything more rhythmically complex than a steady quarter-note pulse.",
           "fields": [
             { "label": "Tempo Range", "value": "30-250+ BPM" },
             { "label": "Price Range", "value": "$15-100" },
@@ -51,7 +51,7 @@
         },
         {
           "title": "App-Based Metronomes",
-          "description": "Smartphone/tablet app using device battery. Free options available with advanced features. Visual displays and recording capability.",
+          "description": "An app-based metronome piggybacks on a device you already carry everywhere, which mostly explains its popularity, no separate gadget to remember or charge. The trade-off is that a phone is a multitasking device by design, so notifications and other apps are a real distraction risk in a way a dedicated metronome never is, and playback latency on some devices can introduce a barely perceptible but real timing lag.",
           "fields": [
             { "label": "Tempo Range", "value": "Variable range" },
             { "label": "Price Range", "value": "Free-$20" },
@@ -62,7 +62,7 @@
         },
         {
           "title": "Drum Machine Metronomes",
-          "description": "Rhythm programming with AC or battery power. Full drum patterns with multiple instruments. Song structures and recording features.",
+          "description": "A drum machine replaces the bare click with a full rhythmic pattern, kick, snare, and hi-hat, which gives you something closer to playing with an actual drummer than counting along to a beep. That musical context makes long practice sessions far less tedious and helps groove-based playing feel natural instead of mechanical, though the added programming options mean there's a real learning curve before you can use one efficiently.",
           "fields": [
             { "label": "Tempo Range", "value": "30-300+ BPM" },
             { "label": "Price Range", "value": "$50-500+" },
@@ -80,7 +80,7 @@
         {
           "title": "Basic Timing",
           "badge": "60-80 BPM",
-          "description": "Develop internal clock, steady rhythm foundation.",
+          "description": "At this stage the goal isn't speed, it's noticing when you're not exactly with the click, a skill most beginners genuinely don't have yet because they've never had a steady reference to compare against.",
           "items": [
             "Single notes",
             "Simple chords",
@@ -91,7 +91,7 @@
         {
           "title": "Chord Changes",
           "badge": "60-100 BPM",
-          "description": "Smooth transitions, consistent rhythm through changes.",
+          "description": "Chord changes are where timing usually falls apart first, because the extra second it takes to find the next shape tempts you to pause the beat rather than keep strumming through it, and a metronome makes that pause impossible to ignore.",
           "items": [
             "Chord progressions",
             "Transition practice",
@@ -102,7 +102,7 @@
         {
           "title": "Scale Development",
           "badge": "60-120 BPM",
-          "description": "Even note spacing, technical accuracy, speed building.",
+          "description": "Scales practiced without a click tend to speed up on the easy stretches and slow down on the awkward fingerings, which quietly reinforces uneven technique; a metronome forces every note into the same slot regardless of how comfortable it feels.",
           "items": [
             "Major scales",
             "Pentatonic patterns",
@@ -113,7 +113,7 @@
         {
           "title": "Advanced Rhythms",
           "badge": "80-140+ BPM",
-          "description": "Rhythmic sophistication, groove development, style mastery.",
+          "description": "Syncopation and odd time signatures only sound intentional when they're precise, a single beat placed slightly off from where the genre expects reads as a mistake rather than a style choice, so this is where metronome work shifts from building basic timing to refining exactly where within the beat a note lands.",
           "items": [
             "Syncopation",
             "Odd time signatures",
@@ -130,28 +130,28 @@
       "cards": [
         {
           "title": "4/4 - Common Time",
-          "description": "Most common time signature, four quarter notes per measure. Count: 1-2-3-4.",
+          "description": "Four quarter notes per measure, counted 1-2-3-4, is the default meter for the vast majority of popular music largely because it maps naturally onto a steady walking or dancing pulse. It's also the easiest meter to internalize, which is why it's worth mastering with a metronome before tackling anything less symmetrical.",
           "fields": [
             { "label": "Genres", "value": "Rock, pop, blues, country" }
           ]
         },
         {
           "title": "3/4 - Waltz Time",
-          "description": "Three quarter notes per measure, strong downbeat feel. Count: 1-2-3.",
+          "description": "Three quarter notes per measure, counted 1-2-3, creates an asymmetric pulse that naturally emphasizes the first beat of every group, which is exactly the lilting, turning feel that made it the standard meter for the waltz and much of early country and folk music.",
           "fields": [
             { "label": "Genres", "value": "Waltz, country, folk" }
           ]
         },
         {
           "title": "6/8 - Compound Time",
-          "description": "Six eighth notes, felt in two groups of three. Count: 1-2-3-4-5-6.",
+          "description": "Six eighth notes per measure, but felt as two larger beats each divided into three, not six even pulses, which gives it a rolling, triplet-based swing that's very different from 3/4 despite the similar note count. Counting all six subdivisions out loud at first helps that two-groups-of-three feel click before you drop back to feeling just the two main beats.",
           "fields": [
             { "label": "Genres", "value": "Ballads, folk, blues" }
           ]
         },
         {
           "title": "7/8 - Odd Meter",
-          "description": "Seven eighth notes, requires careful counting. Count: 1-2-3-4-5-6-7.",
+          "description": "Seven eighth notes per measure forces the beat into uneven groups, commonly 2+2+3 or 3+2+2, so unlike 4/4 or 3/4, there's no single natural way to feel it and you have to consciously decide which grouping a passage uses. That's exactly why it trips up players who rely purely on feel and rewards deliberate metronome-driven counting instead.",
           "fields": [
             { "label": "Genres", "value": "Progressive, world music" }
           ]
@@ -228,19 +228,19 @@
       "cards": [
         {
           "title": "Steve Vai",
-          "description": "Extreme precision practice. Uses metronomes for incredibly detailed technical exercises."
+          "description": "Vai has publicly documented extremely disciplined, hours-long practice routines built around technical exercises played strictly to a click, the kind of regimented approach that produced his famously wide, controlled vibrato and rhythmically exact tapping and legato lines."
         },
         {
           "title": "Pat Metheny",
-          "description": "Jazz timing development. Emphasizes swing feel and complex rhythm work with metronomes."
+          "description": "Jazz demands a different relationship with time than rock does, since swing feel means deliberately playing slightly behind or ahead of the literal click while still locking to the underlying pulse. Metheny is known for using a metronome specifically to develop that independence, internalizing the beat precisely enough that he can bend around it expressively without ever actually losing it."
         },
         {
           "title": "John Petrucci",
-          "description": "Progressive metal precision. Metronome work for complex time signatures and technical passages."
+          "description": "Petrucci's instructional material puts heavy emphasis on metronome practice for exactly the kind of odd time signatures and fast technical passages progressive metal is built on, where a rushed sixteenth note is far more audible than in a simpler rock groove. His approach treats the metronome as a diagnostic tool, if a passage falls apart at a given tempo, that tempo is exactly where the real practice needs to happen."
         },
         {
           "title": "Classical Teachers",
-          "description": "Traditional methodology. Standard tool for developing timing in classical guitar education."
+          "description": "Classical guitar pedagogy has used the metronome as a core teaching tool since the mechanical version was invented in the early 1800s, largely because interpreting written rhythm accurately, rather than playing by ear or feel, is central to how the repertoire is taught and performed. Metronome practice remains the standard method for building the rhythmic precision that reading notated music demands."
         }
       ]
     },

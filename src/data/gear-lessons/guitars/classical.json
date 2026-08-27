@@ -10,12 +10,12 @@
   },
   "introduction": {
     "title": "Classical Guitar: The Art of Finger Mastery",
-    "text": "Discover the refined world of classical guitar, where centuries of tradition meet sophisticated technique to create some of music's most beautiful sounds.",
+    "text": "The classical guitar is built around a single constraint that shapes everything else about it: the fingers, not a pick, generate the sound. That's why the neck is wider than a steel-string's, the strings are nylon rather than steel, and centuries of formal technique exist to govern exactly how each finger approaches the string. The result is an instrument capable of playing bass line, harmony, and melody simultaneously with a warmth and dynamic control that a pick simply can't produce.",
     "quote": "Classical Guitar Hallmarks:",
     "columns": [
       {
         "title": "Classical Guitar Hallmarks",
-        "text": "Nylon strings for warm, mellow tone. Fingerstyle technique without picks. Wide neck for complex fingerings. Rich classical and flamenco repertoire. Emphasis on proper posture and technique."
+        "text": "Nylon strings exist because they're gentler on bare fingertips and produce a warmer, mellower tone than steel — a direct consequence of fingerstyle-only technique rather than an arbitrary design choice. The wider neck exists for the same reason: it gives four right-hand fingers and a thumb enough room to work independently across six strings, which is what makes the instrument's dense classical and flamenco repertoire playable in the first place."
       }
     ]
   },
@@ -30,6 +30,7 @@
           "title": "Classical Guitar",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "description": "Nylon strings under lower tension are what make the classical guitar comfortable to play fingerstyle for hours, and that same lower tension is why it can't project as loudly as a steel-string in a band setting — the trade-off for gentleness on the fingers is a quieter, more intimate voice best suited to solo performance.",
           "items": [
             "Strings: Nylon (trebles) and wound nylon/silver (basses)",
             "Neck: Wide (2\" at nut), flat fretboard",
@@ -43,6 +44,7 @@
           "title": "Steel-String Acoustic",
           "bgColor": "bg-green-50",
           "borderColor": "",
+          "description": "Steel strings under much higher tension are what give a steel-string acoustic its brighter, more projective voice, which is why it's the instrument of choice whenever a guitar needs to cut through a mix with other players rather than carry a piece on its own.",
           "items": [
             "Strings: Steel core with bronze/phosphor bronze wrap",
             "Neck: Narrower (1.75\" typical), radiused fretboard",
@@ -64,6 +66,7 @@
           "title": "Construction Details",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "Every construction choice on a classical guitar traces back to fingerstyle technique: nylon strings are kind to bare fingertips over long practice sessions, the wide flat fretboard gives four fingers room to work independently without a fretboard radius getting in the way, and the traditional tie-block bridge exists because nylon strings can't be anchored with ball-end pins the way steel strings are.",
           "items": [
             "Nylon Strings: Gentle on fingers, warm tone, traditional sound",
             "Wide Neck: Usually 2\" at nut, accommodates fingerstyle technique",
@@ -75,6 +78,7 @@
           "title": "Wood Selection",
           "bgColor": "bg-gray-50",
           "borderColor": "",
+          "description": "Spruce and cedar dominate classical guitar tops for opposite reasons: spruce is stiffer and slower to open up but rewards a player with clarity and headroom as it ages, while cedar responds immediately with a warmer voice but has less ceiling for projection. Back and side woods add their own character on top of that — rosewood's density produces rich overtones, while cypress, prized in flamenco building, favors a brighter, more percussive attack that supports rhythmic playing over sustain.",
           "items": [
             "Spruce Top: Most common, bright and responsive",
             "Cedar Top: Warmer, immediate response, popular choice",
@@ -94,6 +98,7 @@
           "title": "Traditional Posture",
           "bgColor": "bg-purple-50",
           "borderColor": "",
+          "description": "The footstool-and-elevated-leg posture exists to bring the guitar up to a consistent angle and height regardless of the player's body size, which matters because classical technique depends on the right hand approaching the strings at a specific angle every time. Skip the posture and that angle drifts from note to note, which is what causes the inconsistent tone and technique plateaus that formal instruction is designed to prevent.",
           "fields": [
             { "label": "Body Position", "value": "Sit on front edge of chair; back straight, relaxed shoulders; left foot elevated on footstool; guitar rests on left thigh; guitar at 45-degree angle" },
             { "label": "Hand Position", "value": "Left thumb behind neck, not wrapped; right hand curved, fingers approach strings at angle; wrist straight, not bent; fingertips perpendicular to strings; relaxed, natural movement" }
@@ -101,7 +106,7 @@
         },
         {
           "title": "Modern Alternatives",
-          "description": "Many players now use guitar supports, cushions, or straps to achieve the proper playing angle without a footstool, reducing strain.",
+          "description": "Many players now use guitar supports, cushions, or straps to achieve the proper playing angle without a footstool, reducing strain. The traditional footstool tilts the pelvis asymmetrically for long practice sessions, which is exactly the kind of repetitive strain that these newer supports were designed to eliminate while still achieving the same guitar angle.",
           "bgColor": "bg-yellow-50",
           "borderColor": "",
           "items": [
@@ -121,7 +126,7 @@
       "cards": [
         {
           "title": "Rest Stroke (Apoyando)",
-          "description": "Finger plucks through string and rests on next string",
+          "description": "Finger plucks through the string and rests on the next string, which channels more of the finger's energy directly into the string being played and produces a louder, more focused note than free stroke can. That extra volume and focus is why rest stroke is the default technique for single-note melodies and scales, where each note needs to project clearly above any accompanying texture.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -131,7 +136,7 @@
         },
         {
           "title": "Free Stroke (Tirando)",
-          "description": "Finger plucks string without touching adjacent strings",
+          "description": "Finger plucks the string without touching adjacent strings, which is what makes it possible to sound multiple strings together rather than one at a time. That freedom to play several notes at once is why free stroke, not rest stroke, is the technique used for chords and arpeggios.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -141,7 +146,7 @@
         },
         {
           "title": "Tremolo",
-          "description": "Rapid repetition of single note with a-m-i fingers",
+          "description": "Rapid repetition of a single note with the a-m-i fingers, interleaved with a bass line played by the thumb, creates the illusion of a sustained melody line over accompaniment even though the guitar can't actually sustain a plucked note that long. That illusion of continuous melody is what makes tremolo pieces sound almost orchestral, which is why it became a signature device in Spanish Romantic repertoire.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -151,7 +156,7 @@
         },
         {
           "title": "Rasgueado",
-          "description": "Flamenco strumming technique with multiple fingers",
+          "description": "This flamenco strumming technique fans multiple fingers across the strings in rapid succession rather than plucking individually, producing a percussive, drum-like attack that a single-finger stroke can't replicate. That rhythmic drive is central to flamenco, where the guitar often functions as much as a rhythm instrument as a harmonic one.",
           "bgColor": "bg-gray-50",
           "borderColor": "",
           "fields": [
@@ -173,7 +178,7 @@
           "borderColor": "border",
           "fields": [
             { "label": "Key Composers", "value": "John Dowland, Gaspar Sanz, Robert de Visee, Sylvius Leopold Weiss" },
-            { "label": "Essential Works", "value": "Dowland Lute Songs; Bach BWV 996-1000; Weiss Sonatas" },
+            { "label": "Essential Works", "value": "Dowland Lute Songs; Bach's lute suites BWV 995-1000; Weiss Sonatas" },
             { "label": "Characteristics", "value": "Lute transcriptions, contrapuntal textures, dance forms" }
           ]
         },
@@ -207,7 +212,7 @@
       "cards": [
         {
           "title": "The Spanish Tradition",
-          "description": "Flamenco guitar shares the nylon-string construction of classical guitar but emphasizes rhythm, percussion, and passionate expression.",
+          "description": "Flamenco guitar shares the nylon-string construction of classical guitar but emphasizes rhythm, percussion, and passionate expression. Lower action lets the strings buzz slightly against the frets for a rawer, more percussive sound that classical technique deliberately avoids, and tap plates protect the top from the rhythmic finger-tapping (golpe) that would otherwise damage a classical guitar's finish over time.",
           "bgColor": "bg-red-50",
           "borderColor": "",
           "fields": [
@@ -300,6 +305,7 @@
           "title": "Effective Practice",
           "bgColor": "bg-yellow-50",
           "borderColor": "",
+          "description": "Practicing slowly isn't a beginner's crutch, it's how the fingers learn the correct movement before speed gets added — practicing a mistake at full tempo just ingrains the mistake more efficiently. A metronome and honest recording serve the same purpose from different angles: both expose timing and tone problems that are nearly impossible to hear accurately while you're the one playing.",
           "items": [
             "Slow practice: Build muscle memory correctly",
             "Metronome use: Develop steady rhythm",
@@ -312,6 +318,7 @@
           "title": "Physical Wellness",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "description": "Classical technique demands a level of hand independence and sustained posture that builds real physical strain over time, which is why serious players treat warm-ups and posture breaks as non-negotiable rather than optional. Building endurance gradually rather than pushing through fatigue is what prevents the repetitive strain injuries that end up sidelining players who practice hard but ignore their body's signals.",
           "items": [
             "Posture breaks: Avoid strain and injury",
             "Hand exercises: Maintain flexibility",

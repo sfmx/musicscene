@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is Fuzz?",
-    "text": "Fuzz was one of the first guitar effects ever created, originally discovered as a happy accident in broken or overdriven equipment. It creates extreme saturation and compression, turning your guitar signal into a square wave with a distinctive buzzy, aggressive character.",
+    "text": "Fuzz was one of the first guitar effects ever created, discovered by accident when faulty recording and amplifier equipment clipped a signal far harder than any electronics of the era were designed to. Rather than fix the malfunction, engineers and guitarists in the early 1960s realized the resulting square-wave buzz was a sound in its own right, and fuzz became the first effect built specifically to recreate a piece of broken gear on purpose. That origin as an emulation of a hardware failure is why fuzz still sounds more extreme and less controlled than the distortion and overdrive circuits designed after it, which were engineered to be more predictable and touch-responsive by comparison.",
     "columns": [
       {
         "title": "Characteristics",
-        "text": "Extreme signal compression. Square wave clipping. Buzzy, saturated texture. Vintage, lo-fi character. Octave harmonics generation. Sustain and feedback potential."
+        "text": "A fuzz circuit clips so hard that the output waveform approaches an actual square wave rather than the rounded or moderately flattened shapes distortion and overdrive produce, and that extreme clipping is what generates fuzz's dense harmonic buzz and near-infinite sustain. The same aggressive clipping tends to emphasize octave-related overtones more than a gentler circuit would, which is part of why fuzz can sound almost synth-like on certain notes, and why it's prone to feeding back or self-oscillating at high gain in a way milder effects rarely do."
       },
       {
         "title": "Musical Applications",
-        "text": "Psychedelic and garage rock. Vintage blues and R&B. Alternative and indie rock. Experimental and noise music. Retro and vintage sounds. Lead guitar textures."
+        "text": "Because fuzz's clipping is so extreme and unpredictable compared to a modern distortion circuit, it tends to work best as a lead or textural voice rather than a tight rhythm tone, which is exactly the role it played in psychedelic and garage rock: a single sustained, buzzing note that draws attention to itself rather than blending into a mix. That same raw, slightly uncontrolled character has kept it in steady use in blues, alternative, and experimental music by players chasing a more vintage, less polished alternative to a modern high-gain distortion pedal."
       }
     ]
   },
@@ -31,19 +31,19 @@
       "cards": [
         {
           "title": "1960: The First Fuzz",
-          "description": "Producer Joe Meek accidentally created fuzz when a mixing console malfunctioned during a recording session, creating a distorted sound that would inspire a revolution."
+          "description": "During a 1960 Nashville session for Marty Robbins' \"Don't Worry,\" a faulty transformer in engineer Glenn Snoddy's recording console clipped guitarist Grady Martin's six-string bass into a buzzing, distorted tone. Rather than scrap the take, Martin suggested keeping the accident on the record, and the single's success in 1961 proved there was an audience for a sound that had started out as a studio malfunction."
         },
         {
-          "title": "1962: \"The 2000 Pound Bee\"",
-          "description": "The Tornados' instrumental hit featured one of the first intentional uses of fuzz, created using a faulty channel on Joe Meek's mixing desk."
+          "title": "1962: \"The 2,000 Pound Bee\"",
+          "description": "Session electronics expert Red Rhodes built a standalone \"fuzzbox\" that recreated Snoddy's accidental circuit on purpose, and The Ventures' guitarist Nokie Edwards used it on \"The 2,000 Pound Bee,\" generally credited as the first commercial single built around an intentional fuzz pedal. Gibson noticed the same effect and, that same year, released the Maestro FZ-1 Fuzz-Tone as the first fuzz pedal sold to the general public."
         },
         {
           "title": "1965: \"(I Can't Get No) Satisfaction\"",
-          "description": "Keith Richards' iconic riff, played through a Maestro Fuzz-Tone, brought fuzz to mainstream rock and launched the pedal industry."
+          "description": "Keith Richards used a Maestro FZ-1 Fuzz-Tone to sketch out the song's horn-like riff as a placeholder, intending to replace it with real brass later, but the fuzz guitar stayed on the finished single. Its unexpected worldwide success is what turned the FZ-1 from a novelty studio effect into a product every guitar manufacturer wanted a version of, effectively launching the fuzz and distortion pedal industry."
         },
         {
           "title": "Late 1960s: Psychedelic Era",
-          "description": "Jimi Hendrix, Eric Clapton, and Jeff Beck elevated fuzz to an art form, using it for feedback, sustain, and otherworldly textures."
+          "description": "Once fuzz was established as a mainstream studio effect rather than a novelty, Jimi Hendrix, Eric Clapton, and Jeff Beck pushed it well past its original role as a riff-thickener, using its near-infinite sustain and unstable overtones to sculpt feedback, extended lead lines, and textures that a clean or lightly overdriven guitar simply couldn't produce."
         }
       ]
     },
@@ -53,28 +53,28 @@
       "cards": [
         {
           "title": "Germanium Fuzz",
-          "description": "The original fuzz sound using vintage germanium transistors. Warm, musical, and temperature-sensitive. Classic 1960s character.",
+          "description": "Germanium transistors were what all the original 1960s fuzz circuits were built around, and they clip signal in a softer, more asymmetrical way than later silicon parts, which is a large part of why vintage fuzz has a warmer, more musical breakup rather than a harsh buzz. That same germanium material is highly sensitive to temperature, its bias point drifts as the transistor warms up during a set, which is why original units and faithful reissues can sound noticeably different on a cold stage versus after ten minutes of playing.",
           "fields": [
             { "label": "Examples", "value": "Fuzz Face, Tone Bender, Germanium Big Muff" }
           ]
         },
         {
           "title": "Silicon Fuzz",
-          "description": "More stable and aggressive than germanium. Brighter, more consistent, and better for modern applications.",
+          "description": "Silicon transistors replaced germanium in most fuzz circuits by the late 1960s because their bias point holds steady regardless of temperature, so a silicon fuzz sounds essentially the same on a freezing outdoor stage as it does after an hour under hot lights. That stability comes with a brighter, more aggressively clipped tone than germanium produces, which is why players chasing the softest, warmest vintage fuzz character often seek out germanium circuits specifically despite their temperamental nature.",
           "fields": [
             { "label": "Examples", "value": "Silicon Fuzz Face, modern Big Muff variants" }
           ]
         },
         {
           "title": "Op-Amp Fuzz",
-          "description": "Uses op-amp chips for consistent, high-gain fuzz. Often more versatile with better EQ control and output consistency.",
+          "description": "Building the clipping stage around an op-amp chip instead of discrete germanium or silicon transistors trades away some of the transistor circuit's unpredictable, temperature-dependent character for a fuzz that behaves the same way every time it's turned on. That consistency also makes it practical to add real EQ shaping around the clipping stage, which is why op-amp-based designs like the Big Muff Pi tend to offer more usable tone control than a simple two-transistor circuit.",
           "fields": [
             { "label": "Examples", "value": "Big Muff Pi, Rat (fuzz mode), modern boutique fuzzes" }
           ]
         },
         {
           "title": "Octave Fuzz",
-          "description": "Adds octave harmonics to the fuzz signal, creating synth-like textures. Popular in funk and experimental music.",
+          "description": "An octave fuzz circuit rectifies part of the signal so that it effectively doubles the number of wave peaks passing through, which the ear hears as a tone pitched an octave above the note you're actually playing, layered underneath a fuzz tone. Because that octave effect is strongest and cleanest on a single note and becomes an unpredictable mess of overtones on a chord, these circuits are almost always used for single-note lead lines rather than rhythm playing, which is why they turn up in funk and psychedelic solos rather than riffs.",
           "fields": [
             { "label": "Examples", "value": "Octavia, Roger Mayer Octavia, modern octave fuzzes" }
           ]
@@ -87,58 +87,34 @@
       "cards": [
         {
           "title": "Dallas Arbiter Fuzz Face",
-          "description": "The most iconic fuzz pedal ever made. Simple two-knob design with massive personality. Jimi Hendrix's weapon of choice for creating legendary tones.",
+          "description": "The Fuzz Face's two-transistor circuit interacts directly with your guitar's volume knob rather than ignoring it the way many later distortion designs do: rolling the guitar volume down cleans the tone up progressively instead of just making the fuzz quieter, which is what lets a single pedal move between a full wall-of-fuzz and a lightly gritty clean tone without touching the pedal itself. That responsiveness to a player's dynamics, more than raw gain, is why it's remained a first-choice fuzz for players who want the effect to react to how they play rather than sit at one fixed setting.",
           "fields": [
-            { "label": "Signature Sound", "value": "Warm, musical fuzz that cleans up with guitar volume. Responds to playing dynamics." }
-          ],
-          "items": [
-            "Jimi Hendrix - Psychedelic mastery",
-            "Eric Johnson - Texas blues fusion",
-            "David Gilmour - Pink Floyd textures",
-            "Stevie Ray Vaughan - Blues power",
-            "Joe Bonamassa - Modern blues"
+            { "label": "Signature Sound", "value": "Warm, musical fuzz that cleans up with guitar volume. Responds to playing dynamics." },
+            { "label": "Notable Users", "value": "Jimi Hendrix, David Gilmour (Pink Floyd), Stevie Ray Vaughan" }
           ]
         },
         {
           "title": "Electro-Harmonix Big Muff Pi",
-          "description": "The sustain king. Thick, woolly fuzz with incredible sustain and a distinctive mid-scooped character. Essential for alternative and indie rock.",
+          "description": "Where the Fuzz Face's two transistors produce a relatively lean, dynamic fuzz, the Big Muff Pi cascades four gain stages together, producing far more sustain and a distinctly scooped midrange that carves out space for the guitar to sound huge without clashing with vocals or other instruments. That mid-scoop is a double-edged trait: it's exactly what gives the Big Muff its massive, wall-of-sound character, but it's also why the same setting that sounds enormous solo can disappear in a mix without a boost pedal or EQ to bring the mids back for solos.",
           "fields": [
-            { "label": "Signature Sound", "value": "Thick, sustaining fuzz with scooped mids and powerful low-end presence" }
-          ],
-          "items": [
-            "David Gilmour - Pink Floyd leads",
-            "J Mascis - Dinosaur Jr. walls of sound",
-            "Billy Corgan - Smashing Pumpkins",
-            "Jack White - White Stripes garage rock",
-            "Dan Auerbach - The Black Keys"
+            { "label": "Signature Sound", "value": "Thick, sustaining fuzz with scooped mids and powerful low-end presence" },
+            { "label": "Notable Users", "value": "David Gilmour (Pink Floyd), J Mascis (Dinosaur Jr.), Billy Corgan (Smashing Pumpkins), Jack White (The White Stripes)" }
           ]
         },
         {
           "title": "Maestro Fuzz-Tone FZ-1",
-          "description": "The first commercially available fuzz pedal. Made famous by Keith Richards on \"Satisfaction.\" Simple, aggressive, and historically significant.",
+          "description": "Gibson released the FZ-1 in 1962 as a commercial version of the accidental fuzz sound engineers had stumbled onto two years earlier, but it barely sold: after an initial batch, reported sales fell to just a handful of units before Keith Richards used one on \"Satisfaction\" in 1965. That single riff reversed its fortunes almost overnight, turning a nearly discontinued product into one Gibson reportedly sold tens of thousands of within the following years. It has almost no controls beyond an on/off switch and a simple gain knob, which gives it a raw, all-or-nothing character very different from the more sculptable fuzz and distortion circuits that followed it.",
           "fields": [
-            { "label": "Signature Sound", "value": "Raw, buzzy fuzz with simple on/off operation. Pure vintage character." }
-          ],
-          "items": [
-            "Keith Richards - Rolling Stones classics",
-            "Link Wray - Proto-punk pioneer",
-            "Early garage rock bands",
-            "1960s session musicians",
-            "Collectors and vintage enthusiasts"
+            { "label": "Signature Sound", "value": "Raw, buzzy fuzz with simple on/off operation. Pure vintage character." },
+            { "label": "Notable Users", "value": "Keith Richards (The Rolling Stones)" }
           ]
         },
         {
           "title": "Roger Mayer Octavia",
-          "description": "Combines fuzz with octave-up generation, creating synth-like textures. Hendrix used it for some of his most otherworldly sounds.",
+          "description": "Roger Mayer built the Octavia for Hendrix in early 1967 by rectifying the guitar signal so the circuit outputs roughly twice as many wave cycles as it receives, which the ear hears as a tone pitched an octave above the note played, layered under a fuzz tone in front of it. Hendrix used it just weeks after meeting Mayer on the guitar solo of \"Purple Haze,\" and its bell-like, synth-adjacent upper harmonics became one of the most recognizable and most imitated fuzz textures in rock.",
           "fields": [
-            { "label": "Signature Sound", "value": "Fuzz with upper octave harmonics, creating bell-like and synth-like tones" }
-          ],
-          "items": [
-            "Jimi Hendrix - \"Purple Haze\" intro",
-            "Robin Trower - Sustaining leads",
-            "Stevie Ray Vaughan - Texas blues",
-            "Funk guitarists - Synth-like textures",
-            "Experimental musicians"
+            { "label": "Signature Sound", "value": "Fuzz with upper octave harmonics, creating bell-like and synth-like tones" },
+            { "label": "Notable Users", "value": "Jimi Hendrix (the guitar solo on \"Purple Haze\")" }
           ]
         }
       ]
@@ -150,6 +126,7 @@
         {
           "title": "Playing Techniques",
           "bgColor": "bg-yellow-50",
+          "description": "Because a classic fuzz circuit interacts directly with the guitar's own volume knob and pickup selection rather than sitting cleanly after them, the guitar itself becomes as much a part of shaping the tone as the pedal is. Rolling the volume down cleans up a fuzz far more dramatically than it would a modern distortion, and switching pickups shifts the fuzz's character noticeably, which is why fuzz rewards active use of the guitar's own controls in a way many later effects don't.",
           "items": [
             "Use guitar volume for cleanup",
             "Single notes work better than chords",
@@ -162,6 +139,7 @@
         {
           "title": "Signal Chain Tips",
           "bgColor": "bg-orange-50",
+          "description": "Classic fuzz circuits, especially germanium designs like the Fuzz Face, expect to see your guitar's pickups directly, and a buffered pedal placed in front of them changes the impedance the fuzz's input transistor sees, which is what causes the thin, harsh, or unresponsive tone players often report from putting a fuzz anywhere but first in the chain. A wah pedal is also an impedance-sensitive filter circuit, and because it is too, pairing it with a vintage fuzz gives two genuinely different sounds depending on the order: putting the wah first hands the fuzz an already-filtered signal for a smoother sweep, while putting the fuzz first feeds the wah a denser, more harmonically complex signal for a more dramatic, vocal-like cry, which is why the two effects are usually experimented with in both orders rather than one being universally correct.",
           "items": [
             "Place early in signal chain",
             "Avoid buffered pedals before fuzz",
@@ -181,6 +159,7 @@
       "cards": [
         {
           "title": "Germanium Transistors",
+          "description": "A germanium transistor's bias point shifts as it warms up, which is why a vintage or vintage-style fuzz can sound noticeably weaker or gated right after being switched on and only settle into its full-sounding tone after a few minutes on a warm stage, the same physical property that makes it sound thin in cold weather.",
           "items": [
             "Temperature sensitive - warm up time needed",
             "More fragile than silicon",
@@ -191,6 +170,7 @@
         },
         {
           "title": "General Care",
+          "description": "Because vintage-style fuzz circuits are unusually sensitive to the impedance and quality of the connection feeding them, worn cables, dirty jacks, and weak batteries tend to show up as an audibly worse fuzz tone well before they'd cause a problem with a less finicky pedal, which is why routine upkeep matters more here than it does for most other effects.",
           "items": [
             "Use high-quality cables",
             "Keep clean and dust-free",

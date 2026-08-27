@@ -10,15 +10,15 @@
   },
   "introduction": {
     "title": "What is a DAW?",
-    "text": "A Digital Audio Workstation is software that serves as the central hub for music production. It integrates multitrack recording, MIDI sequencing, audio editing, mixing, and often includes virtual instruments and effects.",
+    "text": "A Digital Audio Workstation replaced what used to be a room full of separate machines, a multitrack tape recorder, a mixing console, a rack of outboard effects, with software that keeps everything on one synchronized timeline. That's the real shift a DAW represents: because recording, editing, and mixing all happen non-destructively inside the same session, you can rearrange a song's structure, swap a plugin, or redo a single note months after tracking without ever touching the original recording. Every DAW is built around that same core idea; where they differ is workflow philosophy, whether the software assumes you're arranging a song along a linear timeline, building a beat from looped patterns, or improvising ideas in a live performance grid, and that difference matters more to which DAW suits you than any feature checklist.",
     "columns": [
       {
         "title": "Core Functions",
-        "text": "Recording: Capture audio and MIDI. Editing: Cut, copy, paste, time-stretch. Mixing: Balance levels, EQ, effects. Sequencing: Program MIDI instruments. Automation: Control parameters over time. Export: Render final mixes and masters."
+        "text": "Recording captures audio and MIDI onto the timeline, and because that timeline is non-destructive, editing (cutting, comping takes, time-stretching a performance) never overwrites the original take, it just changes what gets played back. Mixing balances those tracks against each other with EQ and effects, while automation records how those settings change over time so a fade, a filter sweep, or a vocal riding can happen exactly the same way on every playback. Exporting is the one destructive step in the chain, rendering everything down to a final fixed file only once you're satisfied with the mix underneath it."
       },
       {
         "title": "Key Components",
-        "text": "Timeline: Arrange tracks in time. Mixer: Control individual track levels. Browser: Manage files and sounds. Piano Roll: Edit MIDI notes visually. Plugin Host: Load instruments and effects. Transport: Play, record, stop controls."
+        "text": "The timeline and mixer are two views of the same session, one for arranging clips in time, the other for balancing their levels and effects, and most DAWs let you flip between them constantly rather than treating them as separate modes. The piano roll exists because MIDI notes aren't audio, they're instructions, so editing a MIDI part means dragging note pitch and timing directly rather than cutting audio; the plugin host is what turns those instructions into sound by loading a virtual instrument to play them back. The transport (play, record, stop) and file browser round out the toolkit, but they're the least distinctive part of any DAW, which is exactly why workflow philosophy is what actually separates one from another."
       }
     ]
   },
@@ -29,77 +29,77 @@
       "cards": [
         {
           "title": "Avid Pro Tools",
-          "description": "Industry standard for professional audio. Excellent audio editing capabilities, advanced mixing and automation, collaborative workflows.",
+          "description": "Pro Tools became the professional standard less because of any one feature and more because of momentum: nearly every commercial studio and post-production facility runs it, so a session built in Pro Tools opens reliably anywhere else in the industry, which matters enormously for freelance engineers moving between rooms. Its editing tools were built with that professional context in mind, dense automation, sample-accurate dialogue and audio editing, and increasingly cloud-based collaboration, at the cost of a steeper learning curve and a subscription model that costs real money over time.",
           "bgColor": "bg-blue-50",
           "fields": [
-            { "label": "Pricing", "value": "Subscription $29.99/month or perpetual license ~$599" }
+            { "label": "Pricing", "value": "Subscription from $9.99/month (Artist) to $99/month (Ultimate); perpetual license around $599 (Studio) or $1,499 (Ultimate)" },
+            { "label": "Best For", "value": "Professional recording studios, audio post-production" }
           ],
           "items": [
             "Industry standard for professional audio",
             "Excellent audio editing capabilities",
             "Advanced mixing and automation",
-            "Collaborative workflows (Pro Tools | Cloud)",
-            "Best for: Professional recording studios, audio post-production"
+            "Collaborative workflows (Pro Tools | Cloud)"
           ]
         },
         {
           "title": "Apple Logic Pro",
-          "description": "Excellent value with included content. Intuitive Mac-native interface with comprehensive virtual instruments and high-quality effects.",
+          "description": "Logic Pro's one-time price looks unusually generous next to subscription-based competitors, and that's partly because Apple bundles in a genuinely large library of virtual instruments, loops, and effects rather than charging separately for them. Its interface and workflow are built specifically around macOS conventions, which makes it feel immediately familiar to Mac users but also means the software simply isn't available if you ever switch platforms.",
           "bgColor": "bg-green-50",
           "fields": [
-            { "label": "Pricing", "value": "One-time purchase $199.99 (Mac App Store)" }
+            { "label": "Pricing", "value": "One-time purchase $199.99 (Mac App Store)" },
+            { "label": "Best For", "value": "Mac users, songwriting, electronic music, home studios" }
           ],
           "items": [
             "Excellent value with included content",
             "Intuitive Mac-native interface",
             "Comprehensive virtual instruments",
-            "Strong MIDI capabilities",
-            "Best for: Mac users, songwriting, electronic music, home studios"
+            "Strong MIDI capabilities"
           ]
         },
         {
           "title": "Ableton Live",
-          "description": "Unique session view for live performance. Excellent for electronic music with innovative audio manipulation tools and loop-based workflow.",
+          "description": "Live's defining feature, Session View, exists because Ableton designed it for a specific real-world problem: launching loops and clips live on stage without a strict linear timeline dictating what happens next. That same non-linear, loop-first approach carries into the studio, making it unusually good at sketching electronic music ideas by feel, but it asks you to think differently than a tape-style Arrangement view would, which is part of why some traditional engineers find the transition from another DAW takes real adjustment.",
           "bgColor": "bg-purple-50",
           "fields": [
-            { "label": "Pricing", "value": "Standard $449, Suite $749" }
+            { "label": "Pricing", "value": "Intro $99, Standard $349, Suite $749" },
+            { "label": "Best For", "value": "Electronic music, live performance, sound design" }
           ],
           "items": [
             "Unique session view for live performance",
             "Excellent for electronic music",
             "Innovative audio manipulation tools",
-            "Strong loop-based workflow",
-            "Best for: Electronic music, live performance, sound design"
+            "Strong loop-based workflow"
           ]
         },
         {
           "title": "FL Studio",
-          "description": "Pattern-based sequencing with lifetime free updates. User-friendly interface excellent for hip-hop and EDM production.",
+          "description": "FL Studio's pattern-based workflow traces back to its roots as a drum-machine-style step sequencer, which is still visible in how naturally it handles building a beat from looped patterns before arranging them into a full song, a big part of why it's so entrenched in hip-hop and EDM production. The lifetime free updates policy, buy a license once and every future version is included, has also built unusual brand loyalty, since producers never face the surprise of a paid major-version upgrade.",
           "bgColor": "bg-orange-50",
           "fields": [
-            { "label": "Pricing", "value": "Fruity $99, Producer $199, All Plugins $399" }
+            { "label": "Pricing", "value": "Fruity $99, Producer $179, Signature Bundle $269, All Plugins $449" },
+            { "label": "Best For", "value": "Beat making, electronic dance music, budget-conscious producers" }
           ],
           "items": [
             "Lifetime free updates",
             "Pattern-based sequencing",
             "Excellent for hip-hop and EDM",
-            "User-friendly interface",
-            "Best for: Beat making, electronic dance music, budget-conscious producers"
+            "User-friendly interface"
           ]
         },
         {
           "title": "Cockos Reaper",
-          "description": "Extremely affordable and lightweight. Highly customizable interface with powerful scripting capabilities and low system resource usage.",
+          "description": "Reaper stays lightweight and cheap largely because it ships without a large bundled sample or instrument library, you're paying for a fast, stable audio engine and an unusually deep scripting API (ReaScript), not a pile of included content. That makes it a favorite with users who want to customize their own workflow or run a full session on modest or older hardware, though it means newcomers do more assembling of their own toolkit than with a DAW that arrives fully furnished.",
           "bgColor": "bg-teal-50",
           "fields": [
-            { "label": "Pricing", "value": "$60 personal license, $225 commercial" }
+            { "label": "Pricing", "value": "$60 discounted/personal license, $225 commercial license" },
+            { "label": "Best For", "value": "Budget-conscious producers, audio editing, older hardware" }
           ],
           "items": [
             "Extremely affordable and lightweight",
             "Highly customizable interface",
             "Powerful scripting capabilities",
-            "Low system resource usage",
-            "Best for: Budget-conscious producers, audio editing, older hardware"
+            "Low system resource usage"
           ]
         }
       ]
@@ -111,9 +111,10 @@
         {
           "title": "Full-Featured Free DAWs",
           "bgColor": "bg-gray-50",
+          "description": "Reaper's 60-day trial is unusual in that it isn't crippled in any way, it runs the full application on an honor system, so most of what you'd learn evaluating it carries over directly if you later buy a license. Cakewalk's free existence has its own backstory: Gibson discontinued the original SONAR in 2017, and BandLab acquired the rights and relaunched it as a free, fully-featured DAW, though BandLab has since begun transitioning users toward a newer paid Cakewalk Sonar release, so its long-term free availability is worth checking before building a workflow around it.",
           "fields": [
             { "label": "Reaper (60-day trial)", "value": "Full-featured trial, honor system" },
-            { "label": "Cakewalk by BandLab", "value": "Professional DAW, completely free (Windows)" },
+            { "label": "Cakewalk by BandLab", "value": "Full-featured Windows DAW, free historically; check current availability as BandLab transitions to paid Sonar" },
             { "label": "GarageBand", "value": "Free with Mac, great for beginners" },
             { "label": "Audacity", "value": "Audio editing and basic recording" }
           ]
@@ -121,9 +122,10 @@
         {
           "title": "Limited Free Versions",
           "bgColor": "bg-gray-50",
+          "description": "These aren't full DAWs so much as funnels into a paid upgrade, and it's worth knowing exactly where each one holds back: Studio One Prime allows unlimited tracks but restricts you to PreSonus's own built-in effects and instruments with no third-party VST or AU plugin support, while Pro Tools Intro (Avid's current free tier, replacing the older Pro Tools First) runs on the same codebase as paid Pro Tools rather than a stripped-down clone.",
           "fields": [
-            { "label": "Pro Tools First", "value": "16 tracks, cloud-based projects" },
-            { "label": "Studio One Prime", "value": "Unlimited tracks, limited features" },
+            { "label": "Pro Tools Intro", "value": "Free tier built on the full Pro Tools codebase, replacing the older Pro Tools First" },
+            { "label": "Studio One Prime", "value": "Unlimited tracks, but native effects/instruments only, no third-party plugins" },
             { "label": "Tracktion T7", "value": "Full version free, older but capable" },
             { "label": "Ardour", "value": "Open source, pay-what-you-want" }
           ]
@@ -137,6 +139,7 @@
       "cards": [
         {
           "title": "Consider Your Needs",
+          "description": "The music you make matters more here than raw feature counts, a loop-based DAW like FL Studio or Ableton will feel faster for beat-driven genres, while a linear-timeline DAW like Pro Tools or Logic suits tracking a full band or scoring to picture. Budget model matters too: a one-time purchase costs more upfront but nothing later, while a subscription lowers the entry cost but keeps billing you for as long as you want to keep opening your own projects.",
           "items": [
             "Music Style: Different DAWs excel at different genres",
             "Workflow: Linear vs. loop-based vs. session-based",
@@ -148,6 +151,7 @@
         },
         {
           "title": "Try Before You Buy",
+          "description": "Because a DAW's workflow philosophy matters more than its feature list, the only real way to know if one fits how you think is to actually record and edit something in it, a spec sheet can't tell you whether Session View or a linear timeline matches how your brain organizes a song. Free trials and the genuinely free options exist precisely so you can find that out before spending anything.",
           "items": [
             "Most DAWs offer free trials",
             "Start with free options (GarageBand, Reaper trial)",
@@ -166,6 +170,7 @@
         {
           "title": "Recording & Editing",
           "bgColor": "bg-blue-50",
+          "description": "Quantization exists to fix timing without touching pitch, snapping recorded or programmed notes to a rhythmic grid, which is invaluable for tightening a performance but can also flatten out the human feel if applied too aggressively. Comping solves a different problem: rather than picking one full vocal or solo take, it lets you assemble a single best performance out of phrases pulled from several takes, which is why most professional vocal tracking involves recording multiple passes on purpose.",
           "items": [
             "Tracks: Individual audio or MIDI channels",
             "Regions/Clips: Recorded or imported audio segments",
@@ -178,6 +183,7 @@
         {
           "title": "Mixing & Processing",
           "bgColor": "bg-green-50",
+          "description": "Sends and busing both route audio to a shared destination, but for different reasons: a send lets multiple tracks share one reverb or delay so they sound like they're in the same space without needing a separate plugin instance on each track, while busing groups tracks (like a drum kit) so you can compress or EQ them together as a single unit. Freezing or bouncing a track converts a CPU-hungry chain of plugins, or a MIDI instrument, into a fixed audio file, trading flexibility for the processing headroom to keep working on a large session.",
           "items": [
             "Plugins: Software effects and instruments",
             "Automation: Recording parameter changes over time",
@@ -195,19 +201,19 @@
       "cards": [
         {
           "title": "Learn Keyboard Shortcuts",
-          "description": "Master the essential shortcuts for your DAW. This dramatically speeds up your workflow and keeps you in the creative flow rather than hunting through menus."
+          "description": "Every time you reach for the mouse to click a menu instead of pressing a key, you break the flow of listening and reacting to the music, which is the real cost of not knowing shortcuts. Editing gets faster in absolute terms too, but the bigger benefit is staying in a creative headspace instead of an administrative one."
         },
         {
           "title": "Organize Your Projects",
-          "description": "Use consistent naming conventions, color coding, and folder structures. Create templates for common project types to speed up startup."
+          "description": "A session with unlabeled tracks and no color coding is fine while you're actively working on it, but becomes a real problem the moment you reopen it weeks later, or hand it to a collaborator, and have to reverse-engineer what each track does. Templates solve a narrower but common frustration: rebuilding the same routing, bus structure, and plugin chain from scratch every time you start a similar project."
         },
         {
           "title": "Save and Backup Regularly",
-          "description": "Set up automatic saving and maintain multiple backups. Consider cloud storage for important projects and use version control."
+          "description": "A crash or a corrupted file mid-session is a matter of when, not if, over a long enough career, and automatic saving with multiple backup copies is what turns that from a lost day of work into a minor inconvenience. Cloud storage adds a second layer of protection specifically against the failure a local backup can't cover, a dead or stolen drive."
         },
         {
           "title": "Optimize Performance",
-          "description": "Learn buffer size settings, freeze tracks with heavy processing, and keep your system optimized for audio production."
+          "description": "Buffer size is a direct trade-off between latency and stability: a small buffer keeps recording monitoring feeling immediate but risks audio dropouts as a session gets heavier, while a larger buffer trades that immediacy for headroom once you're deep into mixing rather than tracking. Freezing tracks with heavy plugin chains exists for the same reason, it converts processing load into a rendered file so your CPU can keep up as the track count grows."
         }
       ]
     }
