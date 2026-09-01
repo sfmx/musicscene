@@ -1,6 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import { getEntriesByType } from '@/lib/contentIndex';
+
+const theoryCount =
+  getEntriesByType('chord').length +
+  getEntriesByType('scale').length +
+  getEntriesByType('interval').length +
+  getEntriesByType('mode').length +
+  getEntriesByType('progression').length;
+const songsCount = getEntriesByType('song-analysis').length + getEntriesByType('song-lesson').length;
+const gearCount = getEntriesByType('gear-lesson').length;
+const practiceCount = getEntriesByType('practice').length;
+const totalCount = theoryCount + songsCount + gearCount + practiceCount;
+
+const statsBar = [
+  { value: `${totalCount}+`, label: 'Total Lessons' },
+  { value: `${getEntriesByType('song-analysis').length}+`, label: 'Songs Analyzed' },
+  { value: `${gearCount}+`, label: 'Gear Guides' },
+  { value: '4', label: 'Core Categories' },
+];
 
 const categoryCards = [
   {
@@ -8,40 +27,74 @@ const categoryCards = [
     icon: '🎵',
     href: '/lessons/theory',
     description: 'Unlock the fretboard with visual theory and harmonic maps.',
+    count: theoryCount,
     bgClass: 'bg-amber-50/50 hover:bg-amber-50',
     glowClass: 'shadow-amber-200/50',
     textClass: 'text-amber-900',
     subtextClass: 'text-amber-800/70',
+    chipClass: 'bg-white/70 text-amber-900 hover:bg-white',
+    subtopics: [
+      { label: 'Scales', href: '/lessons/theory/scales' },
+      { label: 'Chords', href: '/lessons/theory/chords' },
+      { label: 'Progressions', href: '/lessons/theory/progressions' },
+      { label: 'Modes', href: '/lessons/theory/modes' },
+      { label: 'Intervals', href: '/lessons/theory/intervals' },
+    ],
   },
   {
     name: 'Song Analysis',
     icon: '🎸',
     href: '/lessons/songs',
     description: 'Break down classic riffs and complex solos note-for-note.',
+    count: songsCount,
     bgClass: 'bg-orange-50/50 hover:bg-orange-50',
     glowClass: 'shadow-orange-200/50',
     textClass: 'text-orange-900',
     subtextClass: 'text-orange-800/70',
+    chipClass: 'bg-white/70 text-orange-900 hover:bg-white',
+    subtopics: [
+      { label: 'Song Breakdowns', href: '/lessons/songs/song-analysis' },
+      { label: 'Riffs & Licks', href: '/lessons/songs/riffs' },
+      { label: 'Lead Guitar', href: '/lessons/songs/lead' },
+      { label: 'Rhythm Patterns', href: '/lessons/songs/rhythm' },
+      { label: 'Techniques', href: '/lessons/songs/techniques' },
+    ],
   },
   {
     name: 'Gear Lessons',
     icon: '⚡',
     href: '/lessons/gear',
     description: 'Tone shaping, pedalboard setups, and guitar maintenance.',
+    count: gearCount,
     bgClass: 'bg-blue-50/50 hover:bg-blue-50',
     glowClass: 'shadow-blue-200/50',
     textClass: 'text-blue-900',
     subtextClass: 'text-blue-800/70',
+    chipClass: 'bg-white/70 text-blue-900 hover:bg-white',
+    subtopics: [
+      { label: 'Guitars', href: '/lessons/gear/guitars' },
+      { label: 'Amps', href: '/lessons/gear/amps' },
+      { label: 'Effects Pedals', href: '/lessons/gear/effects' },
+      { label: 'Recording', href: '/lessons/gear/recording' },
+      { label: 'Accessories', href: '/lessons/gear/accessories' },
+    ],
   },
   {
     name: 'Practice Tools',
     icon: '🎯',
     href: '/lessons/practice',
     description: 'Interactive metronomes and personalized routine trackers.',
+    count: practiceCount,
     bgClass: 'bg-green-50/50 hover:bg-green-50',
     glowClass: 'shadow-green-200/50',
     textClass: 'text-green-900',
     subtextClass: 'text-green-800/70',
+    chipClass: 'bg-white/70 text-green-900 hover:bg-white',
+    subtopics: [
+      { label: 'Warm-ups', href: '/lessons/practice/warmups' },
+      { label: 'Technique', href: '/lessons/practice/technique' },
+      { label: 'Improvisation', href: '/lessons/practice/improv' },
+    ],
   },
 ];
 
@@ -110,6 +163,18 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-gray-50/50 to-transparent" />
         </section>
 
+        {/* Stats Bar */}
+        <section className="border-b border-gray-200 bg-white">
+          <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {statsBar.map((stat) => (
+              <div key={stat.label}>
+                <div className="text-3xl md:text-4xl font-extrabold text-gray-900">{stat.value}</div>
+                <div className="text-sm text-gray-500 font-medium uppercase tracking-wide mt-1">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Category Cards Section */}
         <section className="max-w-6xl mx-auto px-6 py-20">
           <div className="mb-12">
@@ -119,15 +184,34 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {categoryCards.map((category) => (
-              <Link key={category.href} href={category.href} className="block group">
-                <div className={`${category.bgClass} rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${category.glowClass} h-full`}>
-                  <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm">
-                    <span className="text-3xl">{category.icon}</span>
+              <div
+                key={category.href}
+                className={`${category.bgClass} rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${category.glowClass} h-full flex flex-col`}
+              >
+                <Link href={category.href} className="block group">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                      <span className="text-3xl">{category.icon}</span>
+                    </div>
+                    <span className={`text-xs font-bold px-3 py-1 rounded-full bg-white/70 ${category.textClass}`}>
+                      {category.count}+ lessons
+                    </span>
                   </div>
-                  <h3 className={`text-xl font-bold mb-3 ${category.textClass}`}>{category.name}</h3>
-                  <p className={`${category.subtextClass} leading-relaxed`}>{category.description}</p>
+                  <h3 className={`text-xl font-bold mb-3 ${category.textClass} group-hover:underline`}>{category.name}</h3>
+                  <p className={`${category.subtextClass} leading-relaxed mb-5`}>{category.description}</p>
+                </Link>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {category.subtopics.map((topic) => (
+                    <Link
+                      key={topic.href}
+                      href={topic.href}
+                      className={`text-xs font-semibold px-3 py-1.5 rounded-full transition-colors ${category.chipClass}`}
+                    >
+                      {topic.label}
+                    </Link>
+                  ))}
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </section>
@@ -177,38 +261,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Learning Benefits */}
+        {/* CTA Banner */}
         <section className="py-24">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <span className="text-sm font-bold tracking-widest text-blue-600 uppercase block mb-2">Why MusicScene</span>
-              <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">Built for Guitarists, by Guitarists</h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">🎯</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Analysis</h3>
-                <p className="text-gray-600 leading-relaxed">Verified tabs and detailed analysis from experienced guitarists and music theory experts.</p>
-              </div>
-              <div className="bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">📚</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Comprehensive</h3>
-                <p className="text-gray-600 leading-relaxed">In-depth lessons covering theory, technique, historical context, and practical application.</p>
-              </div>
-              <div className="bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">🎮</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Interactive</h3>
-                <p className="text-gray-600 leading-relaxed">Visual fretboard diagrams, tab notation, and interactive exercises to enhance learning.</p>
-              </div>
-            </div>
-
-            {/* CTA Banner */}
             <div className="relative bg-gray-950 text-white p-12 rounded-2xl overflow-hidden">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-500 via-transparent to-transparent" />
               <div className="relative z-10 text-center">
