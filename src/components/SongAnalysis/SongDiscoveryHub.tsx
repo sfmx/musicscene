@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import CategoryGrid from './CategoryGrid';
 import SongCard from './SongCard';
 import { 
@@ -10,7 +11,6 @@ import {
   getPopularSongs,
   getRecentlyAdded,
   getSongsByDecade,
-  getSongsByTag,
   getIconicRiffSongs,
   getBeginnerFriendlySongs,
   getUniqueDecades,
@@ -19,8 +19,7 @@ import {
   getUniqueGenres,
   getDifficultyLevels,
   searchSongs,
-  SearchFilters,
-  SongListItem
+  SearchFilters
 } from '@/lib/songData';
 
 export default function SongDiscoveryHub() {
@@ -128,237 +127,242 @@ export default function SongDiscoveryHub() {
       <Header
         title="Song Analysis Library"
         subtitle="Master your favorite songs with comprehensive theory-based breakdowns"
+        category="Song Repertoire & Harmonic Analysis"
       />
       
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Search and Filter Section */}
-        <div className="mb-8 space-y-4">
-          {/* Search Bar */}
-          <div className="flex gap-4">
-            <div className="flex-1 relative">
-              <input
-                type="text"
-                placeholder="Search songs, artists, techniques, or tags..."
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-              <svg 
-                className="absolute right-3 top-3.5 h-5 w-5 text-gray-400" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
-            
-            <button
-              onClick={() => setShowFilters(!showFilters)}
-              className={`px-6 py-3 border rounded-lg font-medium transition-colors ${
-                showFilters || Object.keys(filters).length > 0
-                  ? 'bg-blue-50 border-blue-200 text-blue-700'
-                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
-              }`}
-            >
-              Filters {Object.keys(filters).length > 0 && `(${Object.keys(filters).length})`}
-            </button>
-          </div>
+      <div className="min-h-screen bg-slate-950 text-slate-100 py-8">
+        <main className="max-w-7xl mx-auto px-4">
+          <Breadcrumbs pathname="/lessons/songs/song-analysis" pageTitle="Song Analysis" />
 
-          {/* Active Search/Filter Indicator */}
-          {(searchQuery || Object.keys(filters).length > 0) && (
-            <div className="flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <div className="flex items-center gap-2">
-                <span className="text-blue-700 font-medium">
-                  {activeView === 'search' ? `Found ${filteredSongs.length} songs` : 'Active filters'}
-                </span>
-                {searchQuery && (
-                  <span className="text-blue-600">
-                    for "{searchQuery}"
-                  </span>
-                )}
+          {/* Search and Filter Section */}
+          <div className="mb-8 space-y-4">
+            {/* Search Bar */}
+            <div className="flex gap-4">
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  placeholder="Search songs, artists, techniques, or tags..."
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  className="w-full px-4 py-3 bg-slate-900/90 border border-slate-800 rounded-xl text-white placeholder:text-slate-500 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                />
+                <svg 
+                  className="absolute right-3.5 top-3.5 h-5 w-5 text-slate-500" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
               </div>
+              
               <button
-                onClick={clearFiltersAndSearch}
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                onClick={() => setShowFilters(!showFilters)}
+                className={`px-6 py-3 border rounded-xl font-medium transition-colors ${
+                  showFilters || Object.keys(filters).length > 0
+                    ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
+                    : 'bg-slate-900/90 border-slate-800 text-slate-300 hover:border-slate-700'
+                }`}
               >
-                Clear all
+                Filters {Object.keys(filters).length > 0 && `(${Object.keys(filters).length})`}
               </button>
             </div>
-          )}
 
-          {/* Filter Panel */}
-          {showFilters && (
-            <div className="bg-white border border-gray-200 rounded-lg p-6 space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                {/* Difficulty Filter */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Difficulty
-                  </label>
-                  <select
-                    multiple
-                    value={filters.difficulty || []}
-                    onChange={(e) => {
-                      const values = Array.from(e.target.selectedOptions, option => option.value);
-                      handleFilterChange({ ...filters, difficulty: values.length ? values : undefined });
-                    }}
-                    className="w-full border border-gray-300 rounded-md p-2"
-                    size={4}
-                  >
-                    {difficultyLevels.map(level => (
-                      <option key={level} value={level}>{level}</option>
-                    ))}
-                  </select>
+            {/* Active Search/Filter Indicator */}
+            {(searchQuery || Object.keys(filters).length > 0) && (
+              <div className="flex items-center justify-between bg-slate-900/90 border border-slate-800 rounded-xl p-4">
+                <div className="flex items-center gap-2 text-sm">
+                  <span className="text-amber-400 font-semibold">
+                    {activeView === 'search' ? `Found ${filteredSongs.length} songs` : 'Active filters'}
+                  </span>
+                  {searchQuery && (
+                    <span className="text-slate-400">
+                      for &quot;{searchQuery}&quot;
+                    </span>
+                  )}
                 </div>
-
-                {/* Genre Filter */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Genre
-                  </label>
-                  <select
-                    multiple
-                    value={filters.genre || []}
-                    onChange={(e) => {
-                      const values = Array.from(e.target.selectedOptions, option => option.value);
-                      handleFilterChange({ ...filters, genre: values.length ? values : undefined });
-                    }}
-                    className="w-full border border-gray-300 rounded-md p-2"
-                    size={4}
-                  >
-                    {uniqueGenres.map(genre => (
-                      <option key={genre} value={genre}>{genre}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Decade Filter */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Decade
-                  </label>
-                  <select
-                    multiple
-                    value={filters.decade || []}
-                    onChange={(e) => {
-                      const values = Array.from(e.target.selectedOptions, option => option.value);
-                      handleFilterChange({ ...filters, decade: values.length ? values : undefined });
-                    }}
-                    className="w-full border border-gray-300 rounded-md p-2"
-                    size={4}
-                  >
-                    {uniqueDecades.map(decade => (
-                      <option key={decade} value={decade}>{decade}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Tags Filter */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Tags
-                  </label>
-                  <select
-                    multiple
-                    value={filters.tags || []}
-                    onChange={(e) => {
-                      const values = Array.from(e.target.selectedOptions, option => option.value);
-                      handleFilterChange({ ...filters, tags: values.length ? values : undefined });
-                    }}
-                    className="w-full border border-gray-300 rounded-md p-2"
-                    size={4}
-                  >
-                    {uniqueTags.map(tag => (
-                      <option key={tag} value={tag}>{tag}</option>
-                    ))}
-                  </select>
-                </div>
+                <button
+                  onClick={clearFiltersAndSearch}
+                  className="text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors"
+                >
+                  Clear all
+                </button>
               </div>
+            )}
 
-              {/* Toggle Filters */}
-              <div className="flex gap-4 pt-4 border-t border-gray-200">
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={filters.featured || false}
-                    onChange={(e) => 
-                      handleFilterChange({ 
-                        ...filters, 
-                        featured: e.target.checked ? true : undefined 
-                      })
-                    }
-                    className="mr-2"
-                  />
-                  Featured Songs Only
-                </label>
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={filters.iconicRiff || false}
-                    onChange={(e) => 
-                      handleFilterChange({ 
-                        ...filters, 
-                        iconicRiff: e.target.checked ? true : undefined 
-                      })
-                    }
-                    className="mr-2"
-                  />
-                  Iconic Riffs Only
-                </label>
-              </div>
-            </div>
-          )}
-        </div>
+            {/* Filter Panel */}
+            {showFilters && (
+              <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-6 space-y-4 shadow-xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {/* Difficulty Filter */}
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      Difficulty
+                    </label>
+                    <select
+                      multiple
+                      value={filters.difficulty || []}
+                      onChange={(e) => {
+                        const values = Array.from(e.target.selectedOptions, option => option.value);
+                        handleFilterChange({ ...filters, difficulty: values.length ? values : undefined });
+                      }}
+                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      size={4}
+                    >
+                      {difficultyLevels.map(level => (
+                        <option key={level} value={level}>{level}</option>
+                      ))}
+                    </select>
+                  </div>
 
-        {/* Content Area */}
-        {activeView === 'discover' ? (
-          /* Discovery View */
-          <CategoryGrid sections={discoverySections} />
-        ) : (
-          /* Search Results View */
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Search Results ({filteredSongs.length})
-            </h2>
-            {filteredSongs.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredSongs.map((song) => (
-                  <SongCard key={song.slug} song={song} />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12 bg-gray-50 rounded-lg">
-                <div className="text-gray-400 text-4xl mb-4">🔍</div>
-                <p className="text-gray-600 text-lg mb-2">No songs found</p>
-                <p className="text-gray-500">Try adjusting your search terms or filters</p>
+                  {/* Genre Filter */}
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      Genre
+                    </label>
+                    <select
+                      multiple
+                      value={filters.genre || []}
+                      onChange={(e) => {
+                        const values = Array.from(e.target.selectedOptions, option => option.value);
+                        handleFilterChange({ ...filters, genre: values.length ? values : undefined });
+                      }}
+                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      size={4}
+                    >
+                      {uniqueGenres.map(genre => (
+                        <option key={genre} value={genre}>{genre}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* Decade Filter */}
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      Decade
+                    </label>
+                    <select
+                      multiple
+                      value={filters.decade || []}
+                      onChange={(e) => {
+                        const values = Array.from(e.target.selectedOptions, option => option.value);
+                        handleFilterChange({ ...filters, decade: values.length ? values : undefined });
+                      }}
+                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      size={4}
+                    >
+                      {uniqueDecades.map(decade => (
+                        <option key={decade} value={decade}>{decade}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* Tags Filter */}
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      Tags
+                    </label>
+                    <select
+                      multiple
+                      value={filters.tags || []}
+                      onChange={(e) => {
+                        const values = Array.from(e.target.selectedOptions, option => option.value);
+                        handleFilterChange({ ...filters, tags: values.length ? values : undefined });
+                      }}
+                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      size={4}
+                    >
+                      {uniqueTags.map(tag => (
+                        <option key={tag} value={tag}>{tag}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Toggle Filters */}
+                <div className="flex gap-6 pt-4 border-t border-slate-800 text-sm text-slate-300">
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={filters.featured || false}
+                      onChange={(e) => 
+                        handleFilterChange({ 
+                          ...filters, 
+                          featured: e.target.checked ? true : undefined 
+                        })
+                      }
+                      className="mr-2 rounded border-slate-700 bg-slate-950 text-amber-500 focus:ring-amber-500"
+                    />
+                    Featured Songs Only
+                  </label>
+                  <label className="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={filters.iconicRiff || false}
+                      onChange={(e) => 
+                        handleFilterChange({ 
+                          ...filters, 
+                          iconicRiff: e.target.checked ? true : undefined 
+                        })
+                      }
+                      className="mr-2 rounded border-slate-700 bg-slate-950 text-amber-500 focus:ring-amber-500"
+                    />
+                    Iconic Riffs Only
+                  </label>
+                </div>
               </div>
             )}
           </div>
-        )}
 
-        {/* Stats Section */}
-        <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {/* Content Area */}
+          {activeView === 'discover' ? (
+            /* Discovery View */
+            <CategoryGrid sections={discoverySections} />
+          ) : (
+            /* Search Results View */
             <div>
-              <div className="text-3xl font-bold text-blue-600">{allSongs.length}</div>
-              <div className="text-gray-600">Total Songs</div>
+              <h2 className="text-2xl font-bold text-white mb-6">
+                Search Results ({filteredSongs.length})
+              </h2>
+              {filteredSongs.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredSongs.map((song) => (
+                    <SongCard key={song.slug} song={song} />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-16 bg-slate-900/50 rounded-xl border border-slate-800">
+                  <div className="text-slate-600 text-4xl mb-4">🔍</div>
+                  <p className="text-slate-300 text-lg mb-2">No songs found</p>
+                  <p className="text-slate-500 text-sm">Try adjusting your search terms or filters</p>
+                </div>
+              )}
             </div>
-            <div>
-              <div className="text-3xl font-bold text-green-600">{uniqueArtists.length}</div>
-              <div className="text-gray-600">Artists</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-purple-600">{uniqueGenres.length}</div>
-              <div className="text-gray-600">Genres</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-orange-600">{iconicRiffSongs.length}</div>
-              <div className="text-gray-600">Iconic Riffs</div>
+          )}
+
+          {/* Stats Section */}
+          <div className="mt-16 pt-8 border-t border-slate-800">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
+                <div className="text-3xl font-black text-amber-400">{allSongs.length}</div>
+                <div className="text-slate-400 text-sm mt-1">Total Songs</div>
+              </div>
+              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
+                <div className="text-3xl font-black text-emerald-400">{uniqueArtists.length}</div>
+                <div className="text-slate-400 text-sm mt-1">Artists</div>
+              </div>
+              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
+                <div className="text-3xl font-black text-purple-400">{uniqueGenres.length}</div>
+                <div className="text-slate-400 text-sm mt-1">Genres</div>
+              </div>
+              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
+                <div className="text-3xl font-black text-cyan-400">{iconicRiffSongs.length}</div>
+                <div className="text-slate-400 text-sm mt-1">Iconic Riffs</div>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </Layout>
   );
 }

@@ -31,11 +31,11 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
                 <span className="text-2xl">{section.icon}</span>
               )}
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="text-2xl font-bold text-white">
                   {section.title}
                 </h2>
                 {section.description && (
-                  <p className="text-gray-600 mt-1">{section.description}</p>
+                  <p className="text-slate-400 mt-1 text-sm">{section.description}</p>
                 )}
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
             {section.viewAllLink && section.songs.length > (section.maxDisplay || 6) && (
               <Link 
                 href={section.viewAllLink}
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                className="inline-flex items-center text-amber-400 hover:text-amber-300 font-medium text-sm transition-colors"
               >
                 View All
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,10 +73,10 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
               }
             </div>
           ) : (
-            <div className="text-center py-12 bg-gray-50 rounded-lg">
-              <div className="text-gray-400 text-4xl mb-4">🎸</div>
-              <p className="text-gray-600">No songs available in this category yet.</p>
-              <p className="text-sm text-gray-500 mt-2">Check back soon for new additions!</p>
+            <div className="text-center py-12 bg-slate-900/50 rounded-xl border border-slate-800">
+              <div className="text-slate-600 text-4xl mb-4">🎸</div>
+              <p className="text-slate-300 font-medium">No songs available in this category yet.</p>
+              <p className="text-sm text-slate-500 mt-2">Check back soon for new additions!</p>
             </div>
           )}
         </section>

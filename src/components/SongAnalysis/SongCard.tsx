@@ -16,140 +16,133 @@ export default function SongCard({
   variant = 'default',
   showMetadata = true
 }: SongCardProps) {
-  const getLearningValueColor = (value?: string) => {
-    switch (value?.toLowerCase()) {
-      case 'high': return 'bg-emerald-100 text-emerald-800 border-emerald-200';
-      case 'medium': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
-      case 'low': return 'bg-gray-100 text-gray-800 border-gray-200';
-      default: return 'bg-blue-100 text-blue-800 border-blue-200';
-    }
-  };
-
   const formatPopularity = (popularity?: number) => {
     if (!popularity) return null;
-    const stars = Math.round(popularity / 20); // Convert 1-100 to 1-5 stars
+    const stars = Math.round(popularity / 20);
     return '★'.repeat(stars) + '☆'.repeat(5 - stars);
   };
 
-  const baseClasses = "bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-200";
+  const baseClasses = "bg-slate-900/90 rounded-xl border border-slate-800 hover:border-amber-500/50 hover:bg-slate-800/80 hover:shadow-xl transition-all duration-300";
   
   const variantClasses = {
     default: "p-6",
-    featured: "p-8 ring-2 ring-blue-200 bg-gradient-to-br from-white to-blue-50",
+    featured: "p-8 border-amber-500/40 bg-gradient-to-br from-slate-900 via-slate-900/95 to-amber-950/20 shadow-lg shadow-amber-950/20",
     compact: "p-4"
   };
 
   return (
     <Link 
       href={`/lessons/songs/song-analysis/${song.slug}`}
-      className={`${baseClasses} ${variantClasses[variant]} block group`}
+      className={`${baseClasses} ${variantClasses[variant]} block group flex flex-col justify-between`}
     >
-      {/* Header Section */}
-      <div className="flex items-start justify-between mb-4">
-        <div className="flex-1 min-w-0">
-          <h3 className={`font-bold text-gray-900 group-hover:text-blue-700 transition-colors ${
-            variant === 'featured' ? 'text-xl' : 'text-lg'
-          }`}>
-            {song.title}
-          </h3>
-          <p className="text-gray-600 font-medium mt-1">{song.artist}</p>
-          <p className="text-sm text-gray-500 mt-1">{song.year} • {song.genre}</p>
+      <div>
+        {/* Header Section */}
+        <div className="flex items-start justify-between mb-4 gap-2">
+          <div className="flex-1 min-w-0">
+            <h3 className={`font-bold text-white group-hover:text-amber-400 transition-colors truncate ${
+              variant === 'featured' ? 'text-xl' : 'text-lg'
+            }`}>
+              {song.title}
+            </h3>
+            <p className="text-slate-300 font-medium mt-1">{song.artist}</p>
+            <p className="text-xs text-slate-500 mt-1">{song.year} • {song.genre}</p>
+          </div>
+          
+          {/* Featured Badge */}
+          {song.featured && variant !== 'compact' && (
+            <div className="ml-2 flex-shrink-0">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                ⭐ Featured
+              </span>
+            </div>
+          )}
         </div>
-        
-        {/* Featured Badge */}
-        {song.featured && variant !== 'compact' && (
-          <div className="ml-4">
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 border border-yellow-200">
-              ⭐ Featured
-            </span>
+
+        {/* Metadata Section */}
+        {showMetadata && variant !== 'compact' && (
+          <div className="space-y-3">
+            {/* Primary Info Row */}
+            <div className="flex flex-wrap gap-2">
+              <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${getDifficultyColor(song.difficulty)}`}>
+                {song.difficulty}
+              </span>
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700">
+                {song.genre}
+              </span>
+              {song.decade && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
+                  {song.decade}
+                </span>
+              )}
+            </div>
+
+            {/* Secondary Info Row */}
+            <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+              {song.popularity && (
+                <div className="flex items-center gap-1">
+                  <span className="text-amber-400">{formatPopularity(song.popularity)}</span>
+                  <span className="text-slate-500">({song.popularity}/100)</span>
+                </div>
+              )}
+              {song.iconicRiff && (
+                <span className="inline-flex items-center text-xs text-purple-400 font-medium">
+                  🎸 Iconic Riff
+                </span>
+              )}
+            </div>
+
+            {/* Techniques */}
+            {song.techniques.length > 0 && (
+              <div className="pt-2 border-t border-slate-800">
+                <div className="flex flex-wrap gap-1">
+                  {song.techniques.slice(0, variant === 'featured' ? 6 : 4).map((technique, index) => (
+                    <span 
+                      key={index}
+                      className="inline-flex items-center px-2 py-0.5 rounded text-xs bg-slate-950/80 text-cyan-300 border border-slate-800"
+                    >
+                      {technique}
+                    </span>
+                  ))}
+                  {song.techniques.length > (variant === 'featured' ? 6 : 4) && (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs text-slate-500">
+                      +{song.techniques.length - (variant === 'featured' ? 6 : 4)} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Tags */}
+            {song.tags && song.tags.length > 0 && variant === 'featured' && (
+              <div className="pt-2">
+                <div className="flex flex-wrap gap-1">
+                  {song.tags.slice(0, 4).map((tag, index) => (
+                    <span 
+                      key={index}
+                      className="inline-flex items-center px-2 py-0.5 rounded text-xs bg-slate-950/80 text-emerald-400 border border-slate-800"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                  {song.tags.length > 4 && (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs text-slate-500">
+                      +{song.tags.length - 4} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
 
-      {/* Metadata Section */}
-      {showMetadata && variant !== 'compact' && (
-        <div className="space-y-3">
-          {/* Primary Info Row */}
-          <div className="flex flex-wrap gap-2">
-            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${getDifficultyColor(song.difficulty)}`}>
-              {song.difficulty}
-            </span>
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 border border-gray-200">
-              {song.genre}
-            </span>
-            {song.decade && (
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800 border border-indigo-200">
-                {song.decade}
-              </span>
-            )}
-          </div>
-
-          {/* Secondary Info Row */}
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
-            {song.popularity && (
-              <div className="flex items-center gap-1">
-                <span className="text-yellow-500">{formatPopularity(song.popularity)}</span>
-                <span className="text-xs">({song.popularity}/100)</span>
-              </div>
-            )}
-            {song.iconicRiff && (
-              <span className="inline-flex items-center text-xs text-purple-700">
-                🎸 Iconic Riff
-              </span>
-            )}
-          </div>
-
-          {/* Techniques */}
-          {song.techniques.length > 0 && (
-            <div className="pt-2 border-t border-gray-100">
-              <div className="flex flex-wrap gap-1">
-                {song.techniques.slice(0, variant === 'featured' ? 6 : 4).map((technique, index) => (
-                  <span 
-                    key={index}
-                    className="inline-flex items-center px-2 py-0.5 rounded text-xs bg-blue-50 text-blue-700 border border-blue-100"
-                  >
-                    {technique}
-                  </span>
-                ))}
-                {song.techniques.length > (variant === 'featured' ? 6 : 4) && (
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs text-gray-500">
-                    +{song.techniques.length - (variant === 'featured' ? 6 : 4)} more
-                  </span>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Tags */}
-          {song.tags && song.tags.length > 0 && variant === 'featured' && (
-            <div className="pt-2">
-              <div className="flex flex-wrap gap-1">
-                {song.tags.slice(0, 4).map((tag, index) => (
-                  <span 
-                    key={index}
-                    className="inline-flex items-center px-2 py-0.5 rounded text-xs bg-green-50 text-green-700 border border-green-100"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-                {song.tags.length > 4 && (
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs text-gray-500">
-                    +{song.tags.length - 4} more
-                  </span>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-
       {/* Compact View Info */}
       {variant === 'compact' && (
-        <div className="flex items-center justify-between mt-2">
+        <div className="flex items-center justify-between mt-3 pt-2 border-t border-slate-800 text-xs">
           <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${getDifficultyColor(song.difficulty)}`}>
             {song.difficulty}
           </span>
-          <span className="text-xs text-gray-500">{song.genre}</span>
+          <span className="text-slate-400">{song.genre}</span>
         </div>
       )}
     </Link>

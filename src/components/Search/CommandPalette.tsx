@@ -25,7 +25,6 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
       setQuery('');
       setResults([]);
       setSelectedIndex(0);
-      // Small delay to ensure the modal is rendered
       setTimeout(() => inputRef.current?.focus(), 50);
     }
   }, [isOpen]);
@@ -93,7 +92,6 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
     return acc;
   }, {});
 
-  // Flatten for index tracking
   let flatIndex = 0;
 
   if (!isOpen) return null;
@@ -102,7 +100,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 z-[100]"
+        className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[100] transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -110,14 +108,14 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
       {/* Modal */}
       <div className="fixed inset-0 z-[101] flex items-start justify-center pt-[15vh] px-4">
         <div
-          className="bg-white rounded-xl shadow-2xl border border-gray-200 w-full max-w-xl overflow-hidden"
+          className="bg-slate-900 rounded-2xl shadow-2xl border border-slate-800 w-full max-w-xl overflow-hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Search content"
         >
           {/* Search input */}
-          <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-200">
-            <svg className="w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <div className="flex items-center gap-3 px-4 py-3 border-b border-slate-800 bg-slate-900/95">
+            <svg className="w-5 h-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <circle cx="11" cy="11" r="8" />
               <path strokeLinecap="round" d="m21 21-4.35-4.35" />
             </svg>
@@ -128,30 +126,30 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
               onChange={(e) => handleQueryChange(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Search lessons, songs, theory..."
-              className="flex-1 text-sm text-gray-900 placeholder:text-gray-400 outline-none bg-transparent"
+              className="flex-1 text-sm text-white placeholder:text-slate-500 outline-none bg-transparent"
               role="combobox"
               aria-expanded={results.length > 0}
               aria-controls="search-results"
               aria-activedescendant={results[selectedIndex] ? `result-${selectedIndex}` : undefined}
             />
-            <kbd className="hidden sm:inline-flex px-2 py-0.5 text-xs text-gray-400 bg-gray-100 rounded">Esc</kbd>
+            <kbd className="hidden sm:inline-flex px-2 py-0.5 text-xs text-slate-400 bg-slate-800 rounded border border-slate-700">Esc</kbd>
           </div>
 
           {/* Results */}
           <div
             id="search-results"
-            className="max-h-[60vh] overflow-y-auto"
+            className="max-h-[60vh] overflow-y-auto divide-y divide-slate-800/40"
             role="listbox"
           >
             {query.trim() && results.length === 0 && (
-              <div className="px-4 py-8 text-center text-sm text-gray-500">
+              <div className="px-4 py-8 text-center text-sm text-slate-400">
                 No results found for &quot;{query}&quot;
               </div>
             )}
 
             {Object.entries(groupedResults).map(([type, entries]) => (
               <div key={type}>
-                <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide bg-gray-50 sticky top-0">
+                <div className="px-4 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider bg-slate-950/80 sticky top-0 border-b border-slate-800/60">
                   {getContentTypeLabel(type)}
                 </div>
                 {entries.map((entry) => {
@@ -169,9 +167,9 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
             ))}
 
             {!query.trim() && (
-              <div className="px-4 py-6 text-center text-sm text-gray-500">
-                <p>Start typing to search 202+ lessons, songs, and guides</p>
-                <p className="mt-2 text-xs text-gray-400">
+              <div className="px-4 py-8 text-center text-sm text-slate-400">
+                <p className="text-slate-300 font-medium">Start typing to search 200+ lessons, songs, and guides</p>
+                <p className="mt-2 text-xs text-slate-500">
                   Try: &quot;blues scale&quot;, &quot;stairway&quot;, &quot;bending&quot;, &quot;tube amp&quot;
                 </p>
               </div>
@@ -180,9 +178,9 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
 
           {/* Footer */}
           {results.length > 0 && (
-            <div className="flex items-center justify-between px-4 py-2 border-t border-gray-100 text-xs text-gray-400">
+            <div className="flex items-center justify-between px-4 py-2.5 border-t border-slate-800 bg-slate-950/60 text-xs text-slate-400">
               <span>{results.length} result{results.length !== 1 ? 's' : ''}</span>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <span>↑↓ navigate</span>
                 <span>↵ open</span>
                 <span>esc close</span>

@@ -12,7 +12,7 @@ interface MegaMenuPanelProps {
 export default function MegaMenuPanel({ category, onLinkClick }: MegaMenuPanelProps) {
   return (
     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 z-50 w-screen max-w-3xl">
-      <div className="bg-white rounded-xl shadow-2xl border border-gray-200 p-6">
+      <div className="bg-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-800 p-6">
         <div className={`grid gap-6 ${
           category.columns.length === 2 ? 'grid-cols-2' :
           category.columns.length >= 3 ? 'grid-cols-3' : 'grid-cols-1'
@@ -23,22 +23,22 @@ export default function MegaMenuPanel({ category, onLinkClick }: MegaMenuPanelPr
                 <Link
                   href={col.headingHref}
                   onClick={onLinkClick}
-                  className="text-sm font-semibold text-gray-900 uppercase tracking-wide hover:text-blue-600 transition-colors"
+                  className="text-sm font-semibold text-white uppercase tracking-wider hover:text-cyan-400 transition-colors"
                 >
                   {col.heading}
                 </Link>
               ) : (
-                <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide">
+                <div className="text-sm font-semibold text-white uppercase tracking-wider">
                   {col.heading}
                 </div>
               )}
-              <ul className="mt-2 space-y-1" role="menu">
+              <ul className="mt-3 space-y-1" role="menu">
                 {col.items.map((item) => (
                   <li key={item.href + item.label} role="menuitem">
                     <Link
                       href={item.href}
                       onClick={onLinkClick}
-                      className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded px-2 py-1.5 transition-colors"
+                      className="flex items-center gap-2 text-sm text-slate-300 hover:text-cyan-300 hover:bg-slate-800/80 rounded-lg px-2.5 py-1.5 transition-colors"
                     >
                       {item.icon && <span className="text-xs flex-shrink-0">{item.icon}</span>}
                       <span>{item.label}</span>
@@ -51,13 +51,13 @@ export default function MegaMenuPanel({ category, onLinkClick }: MegaMenuPanelPr
         </div>
 
         {category.featured && category.featured.length > 0 && (
-          <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
+          <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap gap-3">
             {category.featured.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={onLinkClick}
-                className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                className="text-sm font-medium text-cyan-400 hover:text-cyan-300 hover:underline transition-colors"
               >
                 {item.label} →
               </Link>

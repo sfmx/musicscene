@@ -39,7 +39,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
     <>
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-40 transition-opacity duration-300 lg:hidden ${
           isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={onClose}
@@ -48,7 +48,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-white z-50 shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-slate-900 border-r border-slate-800 text-slate-100 z-50 shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         role="dialog"
@@ -56,13 +56,13 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
         aria-label="Navigation menu"
       >
         {/* Drawer header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
-          <Link href="/" onClick={onClose} className="text-lg font-bold text-gray-900">
+        <div className="flex items-center justify-between p-4 border-b border-slate-800">
+          <Link href="/" onClick={onClose} className="text-lg font-bold text-white">
             Music Scene
           </Link>
           <button
             onClick={onClose}
-            className="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 hover:bg-gray-100 transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
             aria-label="Close menu"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -72,10 +72,10 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
         </div>
 
         {/* Search button */}
-        <div className="p-4 border-b border-gray-100">
+        <div className="p-4 border-b border-slate-800">
           <button
             onClick={() => { onClose(); onSearch(); }}
-            className="flex items-center gap-2 w-full px-3 py-2.5 bg-gray-100 rounded-lg text-sm text-gray-500 hover:bg-gray-200 transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2.5 bg-slate-950 border border-slate-800 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <circle cx="11" cy="11" r="8" />
@@ -91,7 +91,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
           <Link
             href="/"
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-3 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100 min-h-[44px]"
+            className="flex items-center gap-2 px-4 py-3 text-slate-200 font-medium hover:bg-slate-800/60 border-b border-slate-800/60 min-h-[44px]"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-9 9 9" />
@@ -113,7 +113,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
           <Link
             href="/search"
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-3 text-blue-600 font-medium hover:bg-blue-50 min-h-[44px]"
+            className="flex items-center gap-2 px-4 py-3 text-cyan-400 font-medium hover:bg-slate-800/60 min-h-[44px]"
           >
             Browse All Content →
           </Link>

@@ -4,18 +4,12 @@ import React from 'react';
 import Link from 'next/link';
 import { getSongsUsingScale, getSongsUsingChord } from '@/lib/crossReferences';
 import { getWhySongWorks } from '@/data/whySongsWork';
+import { getDifficultyColor } from '@/utils/theme';
 
 interface Props {
   type: 'scale' | 'chord' | 'mode';
   slug: string;
 }
-
-const DIFFICULTY_COLORS: Record<string, string> = {
-  'beginner': 'bg-green-100 text-green-700',
-  'intermediate': 'bg-yellow-100 text-yellow-700',
-  'advanced': 'bg-red-100 text-red-700',
-  'expert': 'bg-purple-100 text-purple-700',
-};
 
 export default function SongsUsingThis({ type, slug }: Props) {
   // For modes, look up by scale slug (dorian, mixolydian, etc. exist in scale data)
@@ -28,19 +22,19 @@ export default function SongsUsingThis({ type, slug }: Props) {
   const typeLabel = type === 'scale' ? 'Scale' : type === 'chord' ? 'Chord' : 'Mode';
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
+    <div className="bg-slate-900/90 rounded-xl border border-slate-800 shadow-xl p-6 mb-12">
       <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
-        <h2 className="text-2xl font-semibold text-gray-900">
+        <h2 className="text-2xl font-bold text-white">
           Songs Using This {typeLabel}
         </h2>
         <Link
           href="/lessons/songs/why-songs-work/"
-          className="text-xs font-semibold text-indigo-600 hover:text-indigo-800 transition-colors"
+          className="text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
         >
           Why Songs Work Hub →
         </Link>
       </div>
-      <p className="text-gray-600 text-sm mb-6">
+      <p className="text-slate-400 text-sm mb-6">
         Hear how this {typeLabel.toLowerCase()} is used in real songs with harmonic music theory breakdowns
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -54,33 +48,33 @@ export default function SongsUsingThis({ type, slug }: Props) {
             <Link
               key={song.id}
               href={targetUrl}
-              className={`rounded-lg p-4 border transition-all duration-200 flex flex-col justify-between ${
+              className={`group rounded-xl p-4 border transition-all duration-200 flex flex-col justify-between ${
                 hasCuratedBreakdown
-                  ? 'bg-amber-50/70 border-amber-300 hover:bg-amber-100/80 hover:shadow-md'
-                  : 'bg-orange-50 rounded-lg border-orange-200 hover:bg-orange-100 hover:shadow-md'
+                  ? 'bg-slate-950/90 border-amber-500/40 hover:border-amber-400 hover:bg-slate-900/90 hover:shadow-lg hover:shadow-amber-950/20'
+                  : 'bg-slate-950/80 border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900/80 hover:shadow-lg'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between gap-1 mb-1">
-                  <h3 className="font-semibold text-gray-900 text-sm">{song.title}</h3>
+                  <h3 className="font-semibold text-white group-hover:text-cyan-300 transition-colors text-sm">{song.title}</h3>
                 </div>
 
                 {hasCuratedBreakdown && (
                   <div className="mt-1 mb-2">
-                    <span className="text-[11px] font-semibold text-amber-800 bg-amber-200/60 border border-amber-300/80 px-2 py-0.5 rounded inline-flex items-center gap-1">
+                    <span className="text-[11px] font-semibold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2 py-0.5 rounded inline-flex items-center gap-1">
                       <span>💡</span> Harmonic Secret Available
                     </span>
                   </div>
                 )}
               </div>
 
-              <div className="flex items-center justify-between mt-3 pt-2 border-t border-black/5">
+              <div className="flex items-center justify-between mt-3 pt-2 border-t border-slate-800">
                 {song.difficulty ? (
-                  <span className={`text-[11px] px-2 py-0.5 rounded-full ${DIFFICULTY_COLORS[song.difficulty] || 'bg-gray-100 text-gray-600'}`}>
+                  <span className={`text-[11px] px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
                     {song.difficulty}
                   </span>
                 ) : <span />}
-                <span className="text-xs font-medium text-gray-500 hover:text-gray-900">
+                <span className="text-xs font-medium text-slate-400 group-hover:text-cyan-400 transition-colors">
                   {hasCuratedBreakdown ? 'Why It Works →' : 'View Analysis →'}
                 </span>
               </div>
@@ -91,4 +85,3 @@ export default function SongsUsingThis({ type, slug }: Props) {
     </div>
   );
 }
-
