@@ -78,12 +78,13 @@ function buildSongsNav(): NavCategory {
     href: '/lessons/songs',
     columns: [
       {
-        heading: 'Song Analysis',
+        heading: 'Song Analysis (100+ Songs)',
         headingHref: '/lessons/songs/song-analysis',
         items: [
-          { label: 'Browse All Songs', href: '/lessons/songs/song-analysis' },
-          { label: 'By Difficulty', href: '/search?type=song-analysis&sort=difficulty' },
-          { label: 'By Genre', href: '/search?type=song-analysis' },
+          { label: 'Browse All 107 Songs', href: '/lessons/songs/song-analysis', icon: '🎸' },
+          { label: 'Why Songs Work (Harmonic Secrets)', href: '/lessons/songs/why-songs-work', icon: '💡' },
+          { label: 'Songs by Difficulty', href: '/search?type=song-analysis&sort=difficulty' },
+          { label: 'Songs by Genre', href: '/search?type=song-analysis' },
         ],
       },
       {
@@ -109,8 +110,48 @@ function buildSongsNav(): NavCategory {
       },
     ],
     featured: [
-      { label: 'All Song Lessons', href: '/lessons/songs' },
-      { label: 'Analysis Method', href: '/lessons/songs/analysis-method' },
+      { label: 'Why Songs Work (Harmonic Breakdown Hub)', href: '/lessons/songs/why-songs-work' },
+      { label: 'Browse All 107 Song Analyses', href: '/lessons/songs/song-analysis' },
+    ],
+  };
+}
+
+function buildToolsNav(): NavCategory {
+  return {
+    label: 'Tools',
+    href: '/lessons/practice/fretboard-trainer',
+    columns: [
+      {
+        heading: 'Interactive Utilities',
+        headingHref: '/lessons/practice/fretboard-trainer',
+        items: [
+          { label: 'Fretboard Note Hunt & Trainer', href: '/lessons/practice/fretboard-trainer', icon: '🎯' },
+          { label: 'Progression Jam Player', href: '/lessons/practice/progression-player', icon: '🎧' },
+          { label: 'Why Songs Work Explorer', href: '/lessons/songs/why-songs-work', icon: '💡' },
+        ],
+      },
+      {
+        heading: 'Visual Guides & Reference',
+        headingHref: '/lessons/theory',
+        items: [
+          { label: 'Printable Fretboard Cheat Sheet (PDF)', href: '/downloads/fretboard-cheat-sheet', icon: '📄' },
+          { label: 'Interactive Chord Dictionary', href: '/lessons/theory/chords', icon: '🎸' },
+          { label: 'Scale & Mode Visualizer', href: '/lessons/theory/scales', icon: '🎼' },
+        ],
+      },
+      {
+        heading: 'Practice Drills',
+        headingHref: '/lessons/practice',
+        items: [
+          { label: 'Guitar Warm-ups & Speed', href: '/lessons/practice/warmups', icon: '⚡' },
+          { label: 'Picking & Fretting Technique', href: '/lessons/practice/technique', icon: '⏱️' },
+          { label: 'Improvisation Frameworks', href: '/lessons/practice/improv', icon: '✨' },
+        ],
+      },
+    ],
+    featured: [
+      { label: 'Play the Fretboard Note Hunt Game', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Download Free 3-Page Fretboard PDF', href: '/downloads/fretboard-cheat-sheet' },
     ],
   };
 }
@@ -196,6 +237,7 @@ export function getNavigationData(): NavCategory[] {
   cachedNavData = [
     buildTheoryNav(),
     buildSongsNav(),
+    buildToolsNav(),
     buildPracticeNav(),
     buildGearNav(),
   ];
