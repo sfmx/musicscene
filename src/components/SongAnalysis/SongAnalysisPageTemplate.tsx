@@ -258,7 +258,6 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     <p className="text-xs text-slate-300 mb-4">{section.description}</p>
                     <AlphaTexRenderer
                       alphaTex={section.alphaTab!}
-                      title={section.exerciseLabel || `${section.name} Exercise`}
                     />
                     {section.notes && section.notes.length > 0 && (
                       <ul className="mt-4 text-xs text-slate-400 space-y-1 bg-slate-950 p-3 rounded-xl border border-slate-800">
