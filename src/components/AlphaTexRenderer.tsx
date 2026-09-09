@@ -206,7 +206,15 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           },
           display: {
             scale: 1.0,
-            stretchForce: 0.8
+            stretchForce: 0.8,
+            resources: {
+              staffLineColor: '#64748b',       // slate-500: clear, readable staff lines
+              barSeparatorColor: '#94a3b8',    // slate-400: clear measure bars
+              barNumberColor: '#f59e0b',       // amber-500: glowing bar numbers
+              mainGlyphColor: '#f8fafc',       // slate-50: crisp, bright white notes, clefs, accidentals, tab numbers
+              secondaryGlyphColor: '#94a3b8',  // slate-400: clear secondary notation
+              scoreInfoColor: '#38bdf8',       // sky-400: tuning and tempo markings
+            }
           },
           notation: {
             rhythmMode: 'hidden', // Hide rhythm stems for clean tablature
@@ -426,24 +434,38 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
   return (
     <div className={`w-full mb-4 ${className}`}>
-      {/* Cursor styles for AlphaTab playback */}
+      {/* Cursor & Dark Stage styles for AlphaTab playback */}
       <style>{`
-        .at-cursor-bar { background: rgba(255, 242, 0, 0.25); }
-        .at-cursor-beat { background: rgba(64, 64, 255, 0.75); width: 3px; }
-        .at-selection div { background: rgba(64, 64, 255, 0.1); }
+        .at-cursor-bar {
+          background: rgba(245, 158, 11, 0.18) !important;
+          border-left: 2px solid rgba(245, 158, 11, 0.7) !important;
+          border-radius: 4px;
+        }
+        .at-cursor-beat {
+          background: #38bdf8 !important;
+          width: 3px !important;
+          box-shadow: 0 0 12px rgba(56, 189, 248, 0.9), 0 0 4px #38bdf8 !important;
+          border-radius: 2px;
+        }
+        .at-selection div {
+          background: rgba(56, 189, 248, 0.2) !important;
+        }
       `}</style>
 
       {title && (
-        <h4 className="text-lg font-semibold text-gray-800 mb-2">{title}</h4>
+        <h4 className="text-sm font-bold text-slate-200 mb-2.5 flex items-center gap-2">
+          <span className="w-1.5 h-3.5 rounded-full bg-cyan-400"></span>
+          <span>{title}</span>
+        </h4>
       )}
 
       {/* Validation Results */}
       {showValidation && validationResult && (
         <div className="mb-3">
           {!validationResult.isValid && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-2">
-              <h5 className="text-sm font-medium text-red-800 mb-1">Validation Errors:</h5>
-              <ul className="text-xs text-red-700">
+            <div className="bg-red-950/40 border border-red-500/30 rounded-lg p-3 mb-2">
+              <h5 className="text-sm font-medium text-red-300 mb-1">Validation Errors:</h5>
+              <ul className="text-xs text-red-400 space-y-0.5">
                 {validationResult.errors.map((error: string, index: number) => (
                   <li key={index}>• {error}</li>
                 ))}
@@ -452,9 +474,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           )}
 
           {validationResult.warnings.length > 0 && (
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-2">
-              <h5 className="text-sm font-medium text-yellow-800 mb-1">Warnings:</h5>
-              <ul className="text-xs text-yellow-700">
+            <div className="bg-amber-950/40 border border-amber-500/30 rounded-lg p-3 mb-2">
+              <h5 className="text-sm font-medium text-amber-300 mb-1">Warnings:</h5>
+              <ul className="text-xs text-amber-400 space-y-0.5">
                 {validationResult.warnings.map((warning: string, index: number) => (
                   <li key={index}>• {warning}</li>
                 ))}
@@ -463,8 +485,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           )}
 
           {validationResult.isValid && validationResult.errors.length === 0 && (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-2 mb-2">
-              <span className="text-xs text-green-700">Valid AlphaTex notation</span>
+            <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-lg p-2 mb-2">
+              <span className="text-xs text-emerald-300">Valid AlphaTex notation</span>
             </div>
           )}
         </div>
@@ -472,31 +494,31 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
       {/* AlphaTex String Display - Hidden by default */}
       {showValidation && (
-        <div className="bg-gray-50 rounded-lg p-3 mb-3">
-          <h5 className="text-sm font-medium text-gray-800 mb-1">AlphaTex:</h5>
-          <code className="text-xs text-gray-700 font-mono break-all">{alphaTex}</code>
+        <div className="bg-slate-950/80 border border-slate-800 rounded-lg p-3 mb-3">
+          <h5 className="text-sm font-medium text-slate-300 mb-1">AlphaTex:</h5>
+          <code className="text-xs text-slate-400 font-mono break-all">{alphaTex}</code>
         </div>
       )}
 
       {/* Render Container */}
       <div
         ref={containerRef}
-        className="alphatab-container"
-        style={{ minHeight: '120px', width: '100%' }}
+        className="alphatab-container w-full min-h-[140px] bg-slate-950/80 rounded-xl p-4 border border-slate-800/80 shadow-inner overflow-x-auto"
+        style={{ minHeight: '140px', width: '100%' }}
       />
 
       {/* Playback Controls - shown after render */}
       {renderComplete && (
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-2 px-3 py-2 bg-gray-50 rounded-lg border border-gray-200 text-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3 mt-3 px-4 py-3 bg-slate-950/90 rounded-xl border border-slate-800 shadow-lg text-xs">
           {/* Play/Pause & Stop */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             <button
               onClick={handlePlayPause}
               disabled={audioLoading}
-              className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
+              className={`w-9 h-9 flex items-center justify-center rounded-xl font-bold transition-all shadow-md ${
                 audioLoading
-                  ? 'bg-blue-400 text-white cursor-wait animate-pulse'
-                  : 'bg-blue-600 hover:bg-blue-700 text-white cursor-pointer'
+                  ? 'bg-cyan-500/50 text-slate-950 cursor-wait animate-pulse'
+                  : 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
               }`}
               title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
             >
@@ -519,10 +541,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             <button
               onClick={handleStop}
               disabled={!playerReady}
-              className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
+              className={`w-9 h-9 flex items-center justify-center rounded-xl transition-all ${
                 playerReady
-                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-700 cursor-pointer'
-                  : 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  ? 'bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:text-white cursor-pointer'
+                  : 'bg-slate-900/50 text-slate-600 border border-slate-800/60 cursor-not-allowed'
               }`}
               title="Stop"
             >
@@ -530,69 +552,72 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                 <rect x="4" y="4" width="12" height="12" rx="2" />
               </svg>
             </button>
+
+            {/* Time Display or Loading Indicator */}
+            {audioLoading ? (
+              <span className="text-xs text-cyan-400 italic font-medium animate-pulse">Loading audio...</span>
+            ) : !playerReady ? (
+              <span className="text-xs text-slate-400 italic hidden sm:inline">Click play to listen</span>
+            ) : (
+              <span className="text-xs text-slate-300 font-mono bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800">
+                {formatTime(currentTime)} / {formatTime(endTime)}
+              </span>
+            )}
           </div>
 
-          {/* Time Display or Loading Indicator */}
-          {audioLoading ? (
-            <span className="text-xs text-blue-600 italic font-medium">Loading audio...</span>
-          ) : !playerReady ? (
-            <span className="text-xs text-gray-400 italic">Click play to listen</span>
-          ) : (
-            <span className="text-xs text-gray-500 font-mono min-w-[70px]">
-              {formatTime(currentTime)} / {formatTime(endTime)}
-            </span>
-          )}
+          {/* Center Controls: Speed & Instrument */}
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            {/* Speed Control */}
+            <div className="flex items-center gap-2 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800">
+              <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Speed:</label>
+              <input
+                type="range"
+                min="0.25"
+                max="2"
+                step="0.25"
+                value={playbackSpeed}
+                onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
+                className="w-16 sm:w-20 h-1.5 accent-cyan-400 bg-slate-800 rounded-lg cursor-pointer"
+                title={`${playbackSpeed}x speed`}
+              />
+              <span className="text-xs text-cyan-300 font-mono font-bold min-w-[28px]">{playbackSpeed}x</span>
+            </div>
 
-          {/* Speed Control */}
-          <div className="flex items-center gap-1.5">
-            <label className="text-xs text-gray-600">Speed:</label>
-            <input
-              type="range"
-              min="0.25"
-              max="2"
-              step="0.25"
-              value={playbackSpeed}
-              onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
-              className="w-16 sm:w-20 h-1 accent-blue-600 cursor-pointer"
-              title={`${playbackSpeed}x speed`}
-            />
-            <span className="text-xs text-gray-700 font-medium min-w-[28px]">{playbackSpeed}x</span>
-          </div>
-
-          {/* Sound / Instrument Selector */}
-          <div className="flex items-center gap-1 sm:gap-1.5">
-            <span className="text-xs text-gray-500 font-medium hidden sm:inline">Sound:</span>
-            <div className="inline-flex rounded-lg bg-gray-200/80 p-0.5" role="group">
-              {INSTRUMENT_OPTIONS.map((inst) => {
-                const isActive = selectedInstrument === inst.id;
-                return (
-                  <button
-                    key={inst.id}
-                    type="button"
-                    onClick={() => handleInstrumentChange(inst.id)}
-                    className={`text-xs px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all flex items-center gap-1 font-medium cursor-pointer ${
-                      isActive
-                        ? 'bg-white text-blue-700 shadow-xs ring-1 ring-black/5 font-semibold'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-white/50'
-                    }`}
-                    title={inst.title}
-                  >
-                    <span>{inst.icon}</span>
-                    <span>{inst.label}</span>
-                  </button>
-                );
-              })}
+            {/* Sound / Instrument Selector */}
+            <div className="flex items-center gap-1.5">
+              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider hidden lg:inline">Sound:</span>
+              <div className="inline-flex rounded-lg bg-slate-900 border border-slate-800 p-0.5" role="group">
+                {INSTRUMENT_OPTIONS.map((inst) => {
+                  const isActive = selectedInstrument === inst.id;
+                  return (
+                    <button
+                      key={inst.id}
+                      type="button"
+                      onClick={() => handleInstrumentChange(inst.id)}
+                      className={`text-xs px-2.5 py-1 rounded-md transition-all flex items-center gap-1 font-medium cursor-pointer ${
+                        isActive
+                          ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-xs font-semibold'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                      }`}
+                      title={inst.title}
+                    >
+                      <span>{inst.icon}</span>
+                      <span>{inst.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
           {/* Metronome & Count-in */}
-          <div className="flex items-center gap-1.5 ml-auto">
+          <div className="flex items-center gap-1.5">
             <button
               onClick={handleCountInToggle}
-              className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
+              className={`text-xs px-2.5 py-1 rounded-lg border transition-all cursor-pointer font-medium ${
                 countInOn
-                  ? 'bg-blue-100 text-blue-700 border border-blue-300 font-medium'
-                  : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs font-semibold'
+                  : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
               }`}
               title="Count-in before playback"
             >
@@ -600,10 +625,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </button>
             <button
               onClick={handleMetronomeToggle}
-              className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
+              className={`text-xs px-2.5 py-1 rounded-lg border transition-all cursor-pointer font-medium ${
                 metronomeOn
-                  ? 'bg-blue-100 text-blue-700 border border-blue-300 font-medium'
-                  : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs font-semibold'
+                  : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
               }`}
               title="Toggle metronome"
             >

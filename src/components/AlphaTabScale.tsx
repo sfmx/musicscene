@@ -58,11 +58,21 @@ const AlphaTabScale: React.FC<AlphaTabScaleProps> = ({
         const alphaTex = scaleToAlphaTex(scaleName, notes);
         console.log(`[AlphaTabScale] Generated AlphaTex for "${scaleName}":`, alphaTex);
 
-        // AlphaTab settings - simplified for reliability with correct font path
+        // AlphaTab settings with Dark Stage styling
         const settings: any = {
           core: {
             useWorkers: false,
             fontDirectory: '/alphatab/font/'
+          },
+          display: {
+            resources: {
+              staffLineColor: '#64748b',
+              barSeparatorColor: '#94a3b8',
+              barNumberColor: '#f59e0b',
+              mainGlyphColor: '#f8fafc',
+              secondaryGlyphColor: '#94a3b8',
+              scoreInfoColor: '#38bdf8',
+            }
           }
         };
 
@@ -170,7 +180,7 @@ const AlphaTabScale: React.FC<AlphaTabScaleProps> = ({
     <div className={`alphatab-scale-container ${className}`}>
       <div 
         ref={containerRef}
-        className="alphatab-scale w-full bg-white rounded border min-h-[120px]"
+        className="alphatab-scale w-full bg-slate-950/80 rounded-xl border border-slate-800/80 min-h-[120px] p-2"
         style={{
           // Ensure container has proper dimensions for AlphaTab
           minHeight: '120px',
@@ -179,8 +189,8 @@ const AlphaTabScale: React.FC<AlphaTabScaleProps> = ({
         }}
       />
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-50 bg-opacity-75">
-          <div className="text-sm text-gray-500">Loading notation for {scaleName}...</div>
+        <div className="absolute inset-0 flex items-center justify-center bg-slate-950/80 rounded-xl">
+          <div className="text-sm text-cyan-400 animate-pulse">Loading notation for {scaleName}...</div>
         </div>
       )}
     </div>

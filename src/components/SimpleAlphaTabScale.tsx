@@ -32,7 +32,7 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) 
 
         setStatus(`Creating API for ${scaleName}...`);
         
-        // Responsive AlphaTab settings with correct font path
+        // Responsive AlphaTab settings with correct font path and Dark Stage styling
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: { 
             useWorkers: false,
@@ -40,7 +40,15 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) 
           },
           display: {
             scale: 1.0, // Full scale for better readability
-            stretchForce: 0.8 // Allow slight stretching for responsiveness
+            stretchForce: 0.8, // Allow slight stretching for responsiveness
+            resources: {
+              staffLineColor: '#64748b',
+              barSeparatorColor: '#94a3b8',
+              barNumberColor: '#f59e0b',
+              mainGlyphColor: '#f8fafc',
+              secondaryGlyphColor: '#94a3b8',
+              scoreInfoColor: '#38bdf8',
+            }
           },
           notation: {
             rhythmMode: 'hidden', // Hide rhythm stems in tablature
@@ -125,7 +133,7 @@ const SimpleAlphaTabScale: React.FC<SimpleAlphaTabScaleProps> = ({ scaleName }) 
     <div className="w-full mb-4">
       <div 
         ref={containerRef}
-        className="alphatab-container bg-white border rounded overflow-hidden"
+        className="alphatab-container bg-slate-950/80 border border-slate-800/80 rounded-xl p-4 overflow-x-auto shadow-inner"
         style={{ minHeight: '250px', width: '100%' }} // Increased height for TAB visibility
       />
       {/* Status display hidden for cleaner UI
