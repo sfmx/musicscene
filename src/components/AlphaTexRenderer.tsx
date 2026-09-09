@@ -17,24 +17,44 @@ interface AlphaTexRendererProps {
   className?: string;
 }
 
-export const GUITAR_INSTRUMENTS = [
-  { id: 25, label: 'Steel', title: 'Steel Acoustic Guitar', icon: '🎸' },
-  { id: 24, label: 'Nylon', title: 'Nylon Acoustic Guitar', icon: '🪕' },
-  { id: 27, label: 'Electric', title: 'Clean Electric Guitar', icon: '⚡' },
-] as const;
+// Global SoundFont cache shared across all AlphaTexRenderer instances on the page
+let sharedSoundFontBuffer: Uint8Array | null = null;
+let soundFontFetchPromise: Promise<Uint8Array> | null = null;
 
-const STORAGE_KEY = 'alphatab_preferred_instrument';
-const INSTRUMENT_CHANGE_EVENT = 'alphatab-instrument-change';
+const getSharedSoundFont = async (): Promise<Uint8Array> => {
+  if (sharedSoundFontBuffer) {
+    return sharedSoundFontBuffer;
+  }
+  if (!soundFontFetchPromise) {
+    soundFontFetchPromise = fetch('/alphatab/soundfont/sonivox.sf2')
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status} loading soundfont`);
+        return res.arrayBuffer();
+      })
+      .then((buf) => {
+        sharedSoundFontBuffer = new Uint8Array(buf);
+        return sharedSoundFontBuffer;
+      })
+      .catch((err) => {
+        soundFontFetchPromise = null;
+        throw err;
+      });
+  }
+  return soundFontFetchPromise;
+};
+
+// Acoustic Guitar (Steel Strings) — General MIDI Program 25
+const GUITAR_PROGRAM = 25;
 
 /**
  * Updates track playbackInfo program and all beat automations (type 2)
- * so that MIDI generation uses the desired instrument.
+ * so that MIDI generation uses authentic Acoustic Guitar sound instead of piano.
  */
-const applyInstrumentToScore = (score: any, program: number) => {
+const applyGuitarSound = (score: any) => {
   if (!score?.tracks) return;
   score.tracks.forEach((track: any) => {
     if (track.playbackInfo) {
-      track.playbackInfo.program = program;
+      track.playbackInfo.program = GUITAR_PROGRAM;
     }
     track.staves?.forEach((staff: any) => {
       staff.bars?.forEach((bar: any) => {
@@ -42,7 +62,7 @@ const applyInstrumentToScore = (score: any, program: number) => {
           voice.beats?.forEach((beat: any) => {
             beat.automations?.forEach((auto: any) => {
               if (auto.type === 2) {
-                auto.value = program;
+                auto.value = GUITAR_PROGRAM;
               }
             });
           });
@@ -65,60 +85,16 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [validationResult, setValidationResult] = useState<any>(null);
   const [renderComplete, setRenderComplete] = useState(false);
   const [playerReady, setPlayerReady] = useState(false);
+  const [audioLoading, setAudioLoading] = useState(false);
   const [playerState, setPlayerState] = useState(0); // 0=stopped, 1=playing, 2=paused
   const [currentTime, setCurrentTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
   const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
-  const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-          const parsed = parseInt(saved, 10);
-          if (GUITAR_INSTRUMENTS.some(inst => inst.id === parsed)) {
-            return parsed;
-          }
-        }
-      } catch {
-        // ignore
-      }
-    }
-    return 25;
-  });
-  const selectedInstrumentRef = useRef<number>(selectedInstrument);
 
-  useEffect(() => {
-    selectedInstrumentRef.current = selectedInstrument;
-  }, [selectedInstrument]);
-
-  // Synchronize instrument choice across all AlphaTexRenderer instances on the page
-  useEffect(() => {
-    const handleInstrumentSync = (e: Event) => {
-      const customEvent = e as CustomEvent<{ program: number }>;
-      const newProgram = customEvent.detail?.program;
-      if (newProgram && GUITAR_INSTRUMENTS.some(inst => inst.id === newProgram)) {
-        if (selectedInstrumentRef.current !== newProgram) {
-          setSelectedInstrument(newProgram);
-          selectedInstrumentRef.current = newProgram;
-          if (apiRef.current?.score) {
-            applyInstrumentToScore(apiRef.current.score, newProgram);
-            try {
-              apiRef.current.loadMidiForScore();
-            } catch (err) {
-              console.warn('Failed to update MIDI on instrument sync:', err);
-            }
-          }
-        }
-      }
-    };
-
-    window.addEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
-    return () => {
-      window.removeEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
-    };
-  }, []);
+  const isSoundFontLoadedRef = useRef(false);
+  const pendingPlayRef = useRef(false);
 
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
@@ -181,7 +157,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           player: {
             enablePlayer: true,
             enableCursor: true,
-            soundFont: '/alphatab/soundfont/sonivox.sf2',
+            soundFont: null, // Zero soundfont download on page load
             scrollMode: 0 // off - don't scroll during playback
           }
         });
@@ -210,16 +186,28 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         api.scoreLoaded.on((score: any) => {
           if (isMounted) {
-            applyInstrumentToScore(score, selectedInstrumentRef.current);
+            applyGuitarSound(score);
           }
         });
 
         api.playerReady.on(() => {
           if (isMounted) {
             setPlayerReady(true);
+            setAudioLoading(false);
+            isSoundFontLoadedRef.current = true;
+
             // Adjust playback speed to match desired tempo (default AlphaTab tempo is 120 BPM)
             if (tempo && api) {
               api.playbackSpeed = tempo / 120;
+            }
+
+            if (pendingPlayRef.current) {
+              pendingPlayRef.current = false;
+              try {
+                api.play();
+              } catch (e) {
+                console.warn('Auto-play after soundfont load failed:', e);
+              }
             }
           }
         });
@@ -239,19 +227,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         // Process the AlphaTex string to handle escape sequences
         const processedAlphaTex = alphaTex.replace(/\\n/g, '\n');
-
         api.tex(processedAlphaTex);
-
-        // Force render after a delay if needed
-        setTimeout(() => {
-          if (isMounted) {
-            try {
-              api.render();
-            } catch (e) {
-              console.warn(`Force render failed for ${title}:`, e);
-            }
-          }
-        }, 2000);
 
       } catch (err) {
         console.error(`Render error for ${title}:`, err);
@@ -272,9 +248,39 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     };
   }, [alphaTex, title, tempo, showValidation]);
 
-  const handlePlayPause = useCallback(() => {
-    if (apiRef.current) {
+  const handlePlayPause = useCallback(async () => {
+    if (!apiRef.current) return;
+
+    // If soundfont is already loaded, toggle play/pause immediately
+    if (isSoundFontLoadedRef.current) {
       apiRef.current.playPause();
+      return;
+    }
+
+    // On-demand soundfont load: fetched once globally, then injected into player
+    try {
+      setAudioLoading(true);
+      pendingPlayRef.current = true;
+      const soundFontData = await getSharedSoundFont();
+      if (apiRef.current) {
+        apiRef.current.loadSoundFont(soundFontData, false);
+        // Fallback: if playerReady fired synchronously or is already ready
+        if (apiRef.current.isReadyForPlayback && pendingPlayRef.current) {
+          pendingPlayRef.current = false;
+          setPlayerReady(true);
+          setAudioLoading(false)
+          isSoundFontLoadedRef.current = true;
+          try {
+            apiRef.current.play();
+          } catch (e) {
+            console.warn('Playback start error:', e);
+          }
+        }
+      }
+    } catch (err) {
+      console.error('Failed to load soundfont for playback:', err);
+      setAudioLoading(false);
+      pendingPlayRef.current = false;
     }
   }, []);
 
@@ -289,64 +295,29 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     if (apiRef.current) {
       // Multiply user's speed choice by the base tempo ratio
       const baseRatio = tempo ? tempo / 120 : 1;
-      apiRef.current.playbackSpeed = baseRatio * speed;
+      apiRef.current.playbackSpeed = speed * baseRatio;
     }
   }, [tempo]);
 
   const handleMetronomeToggle = useCallback(() => {
     setMetronomeOn(prev => {
-      const newVal = !prev;
+      const next = !prev;
       if (apiRef.current) {
-        apiRef.current.metronomeVolume = newVal ? 1.0 : 0.0;
+        apiRef.current.metronomeVolume = next ? 1 : 0;
       }
-      return newVal;
+      return next;
     });
   }, []);
 
   const handleCountInToggle = useCallback(() => {
     setCountInOn(prev => {
-      const newVal = !prev;
+      const next = !prev;
       if (apiRef.current) {
-        apiRef.current.countInVolume = newVal ? 1.0 : 0.0;
+        apiRef.current.countInVolume = next ? 1 : 0;
       }
-      return newVal;
+      return next;
     });
   }, []);
-
-  const handleInstrumentChange = useCallback((program: number) => {
-    setSelectedInstrument(program);
-    selectedInstrumentRef.current = program;
-
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem(STORAGE_KEY, program.toString());
-        window.dispatchEvent(
-          new CustomEvent(INSTRUMENT_CHANGE_EVENT, { detail: { program } })
-        );
-      } catch (e) {
-        console.warn('Failed to persist instrument preference:', e);
-      }
-    }
-
-    if (apiRef.current?.score) {
-      const wasPlaying = playerState === 1;
-      applyInstrumentToScore(apiRef.current.score, program);
-      try {
-        apiRef.current.loadMidiForScore();
-        if (wasPlaying) {
-          setTimeout(() => {
-            try {
-              apiRef.current?.play();
-            } catch {
-              // ignore
-            }
-          }, 50);
-        }
-      } catch (e) {
-        console.warn('Failed to reload MIDI for instrument change:', e);
-      }
-    }
-  }, [playerState]);
 
   const formatTime = (ms: number) => {
     const totalSeconds = Math.floor(ms / 1000);
@@ -420,22 +391,27 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         style={{ minHeight: '120px', width: '100%' }}
       />
 
-      {/* Playback Controls - shown after render, with loading state until player ready */}
+      {/* Playback Controls - shown after render */}
       {renderComplete && (
         <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-2 px-3 py-2 bg-gray-50 rounded-lg border border-gray-200 text-sm">
           {/* Play/Pause & Stop */}
           <div className="flex items-center gap-1">
             <button
               onClick={handlePlayPause}
-              disabled={!playerReady}
+              disabled={audioLoading}
               className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
-                playerReady
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                audioLoading
+                  ? 'bg-blue-400 text-white cursor-wait animate-pulse'
+                  : 'bg-blue-600 hover:bg-blue-700 text-white cursor-pointer'
               }`}
-              title={!playerReady ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
+              title={audioLoading ? 'Loading guitar audio...' : playerState === 1 ? 'Pause' : 'Play'}
             >
-              {playerState === 1 ? (
+              {audioLoading ? (
+                <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+              ) : playerState === 1 ? (
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <rect x="5" y="4" width="3" height="12" rx="1" />
                   <rect x="12" y="4" width="3" height="12" rx="1" />
@@ -451,7 +427,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               disabled={!playerReady}
               className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
                 playerReady
-                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-700 cursor-pointer'
                   : 'bg-gray-100 text-gray-400 cursor-not-allowed'
               }`}
               title="Stop"
@@ -462,9 +438,11 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </button>
           </div>
 
-          {/* Loading indicator or Time Display */}
-          {!playerReady ? (
-            <span className="text-xs text-gray-400 italic">Loading audio...</span>
+          {/* Time Display or Loading Indicator */}
+          {audioLoading ? (
+            <span className="text-xs text-blue-600 italic font-medium">Loading guitar audio...</span>
+          ) : !playerReady ? (
+            <span className="text-xs text-gray-400 italic">Click play to listen</span>
           ) : (
             <span className="text-xs text-gray-500 font-mono min-w-[70px]">
               {formatTime(currentTime)} / {formatTime(endTime)}
@@ -481,44 +459,17 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               step="0.25"
               value={playbackSpeed}
               onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
-              className="w-20 h-1 accent-blue-600"
+              className="w-20 h-1 accent-blue-600 cursor-pointer"
               title={`${playbackSpeed}x speed`}
             />
             <span className="text-xs text-gray-700 font-medium min-w-[28px]">{playbackSpeed}x</span>
-          </div>
-
-          {/* Sound / Instrument Selector */}
-          <div className="flex items-center gap-1.5">
-            <span className="text-xs text-gray-600 font-medium">Sound:</span>
-            <div className="inline-flex rounded-lg bg-gray-200/80 p-0.5" role="group">
-              {GUITAR_INSTRUMENTS.map((inst) => {
-                const isActive = selectedInstrument === inst.id;
-                return (
-                  <button
-                    key={inst.id}
-                    type="button"
-                    onClick={() => handleInstrumentChange(inst.id)}
-                    disabled={!playerReady}
-                    className={`text-xs px-2.5 py-1 rounded-md transition-all flex items-center gap-1 font-medium ${
-                      isActive
-                        ? 'bg-white text-blue-700 shadow-xs ring-1 ring-black/5'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-white/50'
-                    } ${!playerReady ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
-                    title={inst.title}
-                  >
-                    <span>{inst.icon}</span>
-                    <span>{inst.label}</span>
-                  </button>
-                );
-              })}
-            </div>
           </div>
 
           {/* Metronome & Count-in */}
           <div className="flex items-center gap-1.5 ml-auto">
             <button
               onClick={handleCountInToggle}
-              className={`text-xs px-2 py-1 rounded transition-colors ${
+              className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
                 countInOn
                   ? 'bg-blue-100 text-blue-700 border border-blue-300'
                   : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
@@ -529,7 +480,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </button>
             <button
               onClick={handleMetronomeToggle}
-              className={`text-xs px-2 py-1 rounded transition-colors ${
+              className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
                 metronomeOn
                   ? 'bg-blue-100 text-blue-700 border border-blue-300'
                   : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
@@ -541,21 +492,6 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           </div>
         </div>
       )}
-
-      {/* Status Display - Hidden for cleaner UI */}
-      {/*
-      {status !== 'Render complete!' && (
-        <div className="mt-2 text-xs text-gray-500 text-center">
-          {status}
-        </div>
-      )}
-
-      {status.includes('Render complete') && (
-        <div className="mt-2 text-xs text-gray-500 text-center">
-          rendered by alphaTab
-        </div>
-      )}
-      */}
     </div>
   );
 };
