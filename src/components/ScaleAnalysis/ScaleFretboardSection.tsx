@@ -39,6 +39,15 @@ export default function ScaleFretboardSection({ scaleData }: ScaleFretboardSecti
                   className="bg-gray-50 rounded-lg p-4"
                 />
               </div>
+              {pattern.alphaTex && pattern.alphaTex.trim() !== '' && (
+                <div className="mb-4">
+                  <AlphaTexRenderer
+                    alphaTex={pattern.alphaTex}
+                    title={`${pattern.position} Pattern`}
+                    className="bg-gray-50 rounded-lg p-4"
+                  />
+                </div>
+              )}
 
               {/* Applications */}
               <div>

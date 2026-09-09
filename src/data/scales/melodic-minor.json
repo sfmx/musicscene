@@ -6,7 +6,13 @@
     "noteCount": 7,
     "intervalPattern": "1-2-♭3-4-5-6-7",
     "character": "Sophisticated, jazzy, bittersweet",
-    "mood": ["sophisticated", "jazzy", "bittersweet", "complex", "elegant"]
+    "mood": [
+      "sophisticated",
+      "jazzy",
+      "bittersweet",
+      "complex",
+      "elegant"
+    ]
   },
   "theory": {
     "intervalsFromRoot": "1 - 2 - ♭3 - 4 - 5 - 6 - 7 - 8",
@@ -28,7 +34,10 @@
     },
     "parallelScale": {
       "name": "Natural Minor Scale",
-      "differences": ["Raised 6th (natural 6th vs flat 6th)", "Raised 7th (natural 7th vs flat 7th)"]
+      "differences": [
+        "Raised 6th (natural 6th vs flat 6th)",
+        "Raised 7th (natural 7th vs flat 7th)"
+      ]
     }
   },
   "keyExamples": [
@@ -67,22 +76,34 @@
         "patternNumber": 1,
         "position": "Open Position (A Melodic Minor)",
         "description": "Root on open 5th string, comfortable fingering using open strings. The raised 6th and 7th create a smooth ascending line distinct from natural minor.",
-        "alphaTex": "",
-        "applications": ["jazz standard playing", "melodic minor familiarization", "open position chord-melody"]
+        "alphaTex": "0.5 2.5 3.5 0.4 | 2.4 4.4 1.3 2.3 | 0.2 1.2 3.2 0.1 | 2.1 4.1 5.1.2 |",
+        "applications": [
+          "jazz standard playing",
+          "melodic minor familiarization",
+          "open position chord-melody"
+        ]
       },
       {
         "patternNumber": 2,
         "position": "5th Position (D Melodic Minor)",
         "description": "Moveable box pattern ideal for jazz improvisation, covers two octaves. Root on 5th string 5th fret.",
-        "alphaTex": "",
-        "applications": ["jazz improvisation", "fusion lead lines", "altered dominant applications"]
+        "alphaTex": "5.5 7.5 8.5 5.4 | 7.4 4.3 6.3 7.3 | 5.2 6.2 8.2 5.1 | 7.1.1 |",
+        "applications": [
+          "jazz improvisation",
+          "fusion lead lines",
+          "altered dominant applications"
+        ]
       },
       {
         "patternNumber": 3,
         "position": "7th Position (E Melodic Minor)",
         "description": "Higher position pattern for advanced jazz lines and fusion soloing. Connects smoothly to other melodic minor modes.",
-        "alphaTex": "",
-        "applications": ["advanced jazz soloing", "Lydian Dominant applications", "contemporary classical phrasing"]
+        "alphaTex": "7.5 9.5 10.5 7.4 | 9.4 6.3 8.3 9.3 | 7.2 8.2 10.2 7.1 | 9.1.1 |",
+        "applications": [
+          "advanced jazz soloing",
+          "Lydian Dominant applications",
+          "contemporary classical phrasing"
+        ]
       }
     ],
     "commonPositions": [
@@ -161,27 +182,38 @@
     "commonProgressions": [
       {
         "name": "Jazz Minor Vamp (i(maj7) - ii7)",
-        "chords": ["Am(maj7)", "Bm7"],
+        "chords": [
+          "Am(maj7)",
+          "Bm7"
+        ],
         "romanNumerals": "i(maj7) - ii7",
         "description": "Classic jazz minor vamp highlighting the minor-major 7th chord's sophisticated tension. The foundation of melodic minor jazz harmony.",
         "genre": "Jazz/Fusion",
-        "alphaTex": ""
+        "alphaTex": "(0.5 2.4 1.3 1.2).1 | (2.5 4.4 2.3 3.2).1 |"
       },
       {
         "name": "Minor ii-V-i (vi-V7-i)",
-        "chords": ["F#m7♭5", "E7", "Am(maj7)"],
+        "chords": [
+          "F#m7♭5",
+          "E7",
+          "Am(maj7)"
+        ],
         "romanNumerals": "vi - V7 - i(maj7)",
         "description": "Jazz minor ii-V-i resolution using melodic minor harmony. The half-diminished to dominant to minor-major 7th is the quintessential jazz minor cadence.",
         "genre": "Jazz",
-        "alphaTex": ""
+        "alphaTex": "(2.6 2.4 2.3 1.2).1 | (0.6 2.5 0.4 1.3 0.2 0.1).1 | (0.5 2.4 1.3 1.2).1 |"
       },
       {
         "name": "Lydian Dominant Movement (IV7 - ♭III+ - i)",
-        "chords": ["D7", "Cmaj7#5", "Am(maj7)"],
+        "chords": [
+          "D7",
+          "Cmaj7#5",
+          "Am(maj7)"
+        ],
         "romanNumerals": "IV7 - ♭III+ - i(maj7)",
         "description": "Descending harmonic movement through unique melodic minor chord qualities, showcasing the scale's distinctive harmonic palette.",
         "genre": "Contemporary Jazz",
-        "alphaTex": ""
+        "alphaTex": "(0.4 2.3 1.2 2.1).1 | (3.5 2.4 1.3 0.2).1 | (0.5 2.4 1.3 1.2).1 |"
       }
     ]
   },
@@ -189,20 +221,41 @@
     {
       "genre": "Jazz",
       "usage": "Fundamental jazz scale for minor chord improvisation, altered dominant playing, and sophisticated harmonic vocabulary",
-      "characteristics": ["minor-major 7th chord voicings", "altered dominant improvisation", "Lydian Dominant applications"],
-      "examples": ["Pat Metheny - melodic minor-based compositions", "John Coltrane - advanced harmonic explorations"]
+      "characteristics": [
+        "minor-major 7th chord voicings",
+        "altered dominant improvisation",
+        "Lydian Dominant applications"
+      ],
+      "examples": [
+        "Pat Metheny - melodic minor-based compositions",
+        "John Coltrane - advanced harmonic explorations"
+      ]
     },
     {
       "genre": "Fusion",
       "usage": "Advanced fusion soloing combining jazz harmonic sophistication with rock energy and intensity",
-      "characteristics": ["complex melodic lines over changes", "Altered scale applications on dominant chords", "wide-interval modern phrasing"],
-      "examples": ["Allan Holdsworth - legato fusion lines", "Scott Henderson - jazz-rock fusion solos"]
+      "characteristics": [
+        "complex melodic lines over changes",
+        "Altered scale applications on dominant chords",
+        "wide-interval modern phrasing"
+      ],
+      "examples": [
+        "Allan Holdsworth - legato fusion lines",
+        "Scott Henderson - jazz-rock fusion solos"
+      ]
     },
     {
       "genre": "Contemporary Classical",
       "usage": "Modern classical and film composition using melodic minor's unique color and smooth voice leading",
-      "characteristics": ["smooth chromatic voice leading", "ambiguous minor-major tonality", "sophisticated orchestral color"],
-      "examples": ["Bela Bartok - melodic minor in modern classical works", "Film score composers using melodic minor for emotional complexity"]
+      "characteristics": [
+        "smooth chromatic voice leading",
+        "ambiguous minor-major tonality",
+        "sophisticated orchestral color"
+      ],
+      "examples": [
+        "Bela Bartok - melodic minor in modern classical works",
+        "Film score composers using melodic minor for emotional complexity"
+      ]
     }
   ],
   "famousSongs": [
@@ -258,9 +311,12 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Practice the A melodic minor scale ascending and descending, focusing on the raised 6th and 7th that distinguish it from natural minor",
-      "alphaTex": "",
+      "alphaTex": "0.5 2.5 3.5 0.4 | 2.4 4.4 1.3 2.3 | 2.3 1.3 4.4 2.4 | 0.4 3.5 2.5 0.5 |",
       "tempo": "60-120 BPM",
-      "focus": ["melodic minor sound internalization", "raised 6th and 7th recognition"],
+      "focus": [
+        "melodic minor sound internalization",
+        "raised 6th and 7th recognition"
+      ],
       "instructions": [
         "Start slowly with metronome at 60 BPM, playing A melodic minor ascending and descending",
         "Compare with A natural minor to hear the raised F# and G# that define the jazz melodic minor sound",
@@ -272,9 +328,12 @@
       "type": "Technical",
       "difficulty": "Advanced",
       "description": "Play the melodic minor scale starting from each degree to hear its important modes: Lydian Dominant (4th degree), Mixolydian ♭6 (5th degree), and Altered (7th degree)",
-      "alphaTex": "",
+      "alphaTex": "0.4 2.4 4.4 1.3 | 2.3 0.2 1.2 3.2 | 0.1 2.1 4.1 5.1 | 5.1.1 |",
       "tempo": "70-110 BPM",
-      "focus": ["modal awareness", "jazz mode vocabulary"],
+      "focus": [
+        "modal awareness",
+        "jazz mode vocabulary"
+      ],
       "instructions": [
         "Play A melodic minor starting from D to hear Lydian Dominant, then from E for Mixolydian ♭6",
         "Play from G# to hear the Altered scale (Super Locrian), the most important jazz mode of melodic minor",
@@ -286,9 +345,12 @@
       "type": "Musical",
       "difficulty": "Advanced",
       "description": "Apply melodic minor harmony to a jazz minor ii-V-i progression, using appropriate modes over each chord",
-      "alphaTex": "",
+      "alphaTex": "2.6 4.5 2.4 2.3 | 0.6 2.5 1.3 3.2 | 0.5 2.4 1.3 1.2 | 0.5.1 |",
       "tempo": "80-120 BPM",
-      "focus": ["jazz harmonic application", "chord-scale relationships"],
+      "focus": [
+        "jazz harmonic application",
+        "chord-scale relationships"
+      ],
       "instructions": [
         "Play over F#m7♭5 - E7alt - Am(maj7) using Locrian #2, Altered scale, and melodic minor respectively",
         "Focus on smooth voice leading between chords, letting guide tones connect the changes",
@@ -331,28 +393,51 @@
         "phase": "Foundation (Weeks 1-3)",
         "duration": "20-30 minutes daily",
         "focus": "Scale patterns and melodic minor sound recognition",
-        "exercises": ["Basic melodic minor runs in all positions", "Compare with natural and harmonic minor", "Minor-major 7th chord arpeggios"]
+        "exercises": [
+          "Basic melodic minor runs in all positions",
+          "Compare with natural and harmonic minor",
+          "Minor-major 7th chord arpeggios"
+        ]
       },
       {
         "phase": "Development (Weeks 4-8)",
         "duration": "30-40 minutes daily",
         "focus": "Modal exploration and jazz chord-scale relationships",
-        "exercises": ["Lydian Dominant and Altered scale practice", "Apply modes over ii-V-i progressions", "Transcribe melodic minor jazz phrases"]
+        "exercises": [
+          "Lydian Dominant and Altered scale practice",
+          "Apply modes over ii-V-i progressions",
+          "Transcribe melodic minor jazz phrases"
+        ]
       },
       {
         "phase": "Integration (Weeks 9-16)",
         "duration": "30-45 minutes daily",
         "focus": "Real-time jazz improvisation using melodic minor and its modes",
-        "exercises": ["Improvise over jazz standards using melodic minor harmony", "Play along with backing tracks in minor keys", "Compose original lines using all melodic minor modes"]
+        "exercises": [
+          "Improvise over jazz standards using melodic minor harmony",
+          "Play along with backing tracks in minor keys",
+          "Compose original lines using all melodic minor modes"
+        ]
       }
     ]
   },
   "metadata": {
     "slug": "melodic-minor",
-    "tags": ["melodic-minor", "jazz", "scales", "theory", "advanced", "minor-family", "fusion"],
+    "tags": [
+      "melodic-minor",
+      "jazz",
+      "scales",
+      "theory",
+      "advanced",
+      "minor-family",
+      "fusion"
+    ],
     "category": "scales",
     "subcategory": "minor-family",
     "lastUpdated": "2024-01-15",
-    "sources": ["Music theory pedagogy", "Guitar education standards"]
+    "sources": [
+      "Music theory pedagogy",
+      "Guitar education standards"
+    ]
   }
 }

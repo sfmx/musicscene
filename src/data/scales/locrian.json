@@ -6,10 +6,16 @@
     "noteCount": 7,
     "intervalPattern": "H-W-W-H-W-W-W",
     "character": "Darkest, unstable, diminished",
-    "mood": ["dark", "unstable", "tense", "ominous", "dissonant"]
+    "mood": [
+      "dark",
+      "unstable",
+      "tense",
+      "ominous",
+      "dissonant"
+    ]
   },
   "theory": {
-    "intervalsFromRoot": "1 - \u266d2 - \u266d3 - 4 - \u266d5 - \u266d6 - \u266d7 - 8",
+    "intervalsFromRoot": "1 - ♭2 - ♭3 - 4 - ♭5 - ♭6 - ♭7 - 8",
     "scaleDegrees": [
       "Root (Tonic)",
       "Minor 2nd (Supertonic)",
@@ -28,7 +34,10 @@
     },
     "parallelScale": {
       "name": "Natural Minor Scale",
-      "differences": ["Lowered 2nd (flat 2nd vs natural 2nd)", "Lowered 5th (diminished 5th vs perfect 5th)"]
+      "differences": [
+        "Lowered 2nd (flat 2nd vs natural 2nd)",
+        "Lowered 5th (diminished 5th vs perfect 5th)"
+      ]
     }
   },
   "keyExamples": [
@@ -48,16 +57,16 @@
     },
     {
       "key": "E Locrian",
-      "notes": "E - F - G - A - B\u266d - C - D - E",
-      "keySignature": "1 flat (B\u266d)",
-      "accidentals": "B\u266d",
+      "notes": "E - F - G - A - B♭ - C - D - E",
+      "keySignature": "1 flat (B♭)",
+      "accidentals": "B♭",
       "commonUse": "Open string root for extremely dark guitar riffs and dissonant passages"
     },
     {
       "key": "A Locrian",
-      "notes": "A - B\u266d - C - D - E\u266d - F - G - A",
-      "keySignature": "2 flats (B\u266d, E\u266d)",
-      "accidentals": "B\u266d, E\u266d",
+      "notes": "A - B♭ - C - D - E♭ - F - G - A",
+      "keySignature": "2 flats (B♭, E♭)",
+      "accidentals": "B♭, E♭",
       "commonUse": "Jazz contexts over half-diminished chords and avant-garde compositions"
     }
   ],
@@ -68,24 +77,36 @@
         "position": "7th Position (B Locrian)",
         "description": "Root on 6th string 7th fret, the diminished 5th (F natural) creates the unstable, tense characteristic Locrian sound.",
         "fretDiagram": "7th-10th frets, box pattern",
-        "alphaTex": "",
-        "applications": ["extreme metal riffs", "dissonant solos", "avant-garde passages"]
+        "alphaTex": "7.6 8.6 10.6 7.5 | 8.5 10.5 7.4 9.4 | 10.4 7.3 9.3 10.3 | 8.2 10.2 7.1 8.1 |",
+        "applications": [
+          "extreme metal riffs",
+          "dissonant solos",
+          "avant-garde passages"
+        ]
       },
       {
         "patternNumber": 2,
         "position": "Open Position (E Locrian)",
         "description": "Open string root on E with the flat 5th creating maximum tension against the open string resonance.",
         "fretDiagram": "Open position to 3rd fret, strings 6-1",
-        "alphaTex": "",
-        "applications": ["doom metal riffs", "horror film atmospheres", "experimental guitar"]
+        "alphaTex": "0.6 1.6 3.6 0.5 | 1.5 3.5 0.4 2.4 | 3.4 0.3 2.3 3.3 | 1.2 3.2 0.1 1.1 |",
+        "applications": [
+          "doom metal riffs",
+          "horror film atmospheres",
+          "experimental guitar"
+        ]
       },
       {
         "patternNumber": 3,
         "position": "2nd Position (F# Locrian)",
         "description": "Low position pattern starting on the 2nd fret, useful for heavy drop-tuned metal riffing and djent patterns.",
         "fretDiagram": "2nd-5th frets, extended range",
-        "alphaTex": "",
-        "applications": ["djent riffs", "progressive metal", "dissonant lead passages"]
+        "alphaTex": "2.6 3.6 5.6 2.5 | 3.5 5.5 2.4 4.4 | 5.4 2.3 4.3 5.3 | 3.2 5.2 2.1 3.1 |",
+        "applications": [
+          "djent riffs",
+          "progressive metal",
+          "dissonant lead passages"
+        ]
       }
     ],
     "commonPositions": [
@@ -112,21 +133,21 @@
   "harmonicApplications": {
     "diatonicChords": [
       {
-        "degree": "i\u00b0",
+        "degree": "i°",
         "chord": "Bdim",
         "quality": "Diminished",
         "function": "Tonic - Diminished tonic chord, inherently unstable and restless, the defining feature of Locrian",
         "notes": "B - D - F"
       },
       {
-        "degree": "\u266dII",
+        "degree": "♭II",
         "chord": "C",
         "quality": "Major",
         "function": "Supertonic - Major flat-II, provides a strong contrast to the diminished tonic",
         "notes": "C - E - G"
       },
       {
-        "degree": "\u266diii",
+        "degree": "♭iii",
         "chord": "Dm",
         "quality": "Minor",
         "function": "Mediant - Minor chord offering relative stability within the unstable mode",
@@ -140,21 +161,21 @@
         "notes": "E - G - B"
       },
       {
-        "degree": "\u266dV",
+        "degree": "♭V",
         "chord": "F",
         "quality": "Major",
         "function": "Dominant - Major chord built on the characteristic diminished 5th degree",
         "notes": "F - A - C"
       },
       {
-        "degree": "\u266dVI",
+        "degree": "♭VI",
         "chord": "G",
         "quality": "Major",
         "function": "Submediant - Major chord for harmonic color and brief moments of brightness",
         "notes": "G - B - D"
       },
       {
-        "degree": "\u266dvii",
+        "degree": "♭vii",
         "chord": "Am",
         "quality": "Minor",
         "function": "Subtonic - Minor subtonic chord, common resolution target within the mode",
@@ -163,28 +184,41 @@
     ],
     "commonProgressions": [
       {
-        "name": "Locrian Drone (i\u00b0-\u266dII)",
-        "chords": ["Bdim", "C"],
-        "romanNumerals": "i\u00b0 - \u266dII",
+        "name": "Locrian Drone (i°-♭II)",
+        "chords": [
+          "Bdim",
+          "C"
+        ],
+        "romanNumerals": "i° - ♭II",
         "description": "The fundamental Locrian movement - the diminished tonic pulling toward the major flat-II creates maximum tension and instability",
         "genre": "Metal/Avant-Garde",
-        "alphaTex": ""
+        "alphaTex": "(7.6 8.5 9.4 7.3).1 | (8.6 10.5 10.4 9.3).1 |"
       },
       {
-        "name": "Locrian Descent (i\u00b0-\u266dvii-\u266dVI-\u266dV)",
-        "chords": ["Bdim", "Am", "G", "F"],
-        "romanNumerals": "i\u00b0 - \u266dvii - \u266dVI - \u266dV",
+        "name": "Locrian Descent (i°-♭vii-♭VI-♭V)",
+        "chords": [
+          "Bdim",
+          "Am",
+          "G",
+          "F"
+        ],
+        "romanNumerals": "i° - ♭vii - ♭VI - ♭V",
         "description": "Descending chromatic-flavored progression exploiting the dark dissonance of Locrian for extreme tension and dread",
         "genre": "Extreme Metal/Horror",
-        "alphaTex": ""
+        "alphaTex": "(7.6 8.5 9.4 7.3).1 | (5.6 7.5 7.4 5.3).1 | (3.6 5.5 5.4 4.3).1 | (1.6 3.5 3.4 2.3).1 |"
       },
       {
-        "name": "Dissonant Metal (i\u00b0-\u266dII-\u266diii-i\u00b0)",
-        "chords": ["Bdim", "C", "Dm", "Bdim"],
-        "romanNumerals": "i\u00b0 - \u266dII - \u266diii - i\u00b0",
+        "name": "Dissonant Metal (i°-♭II-♭iii-i°)",
+        "chords": [
+          "Bdim",
+          "C",
+          "Dm",
+          "Bdim"
+        ],
+        "romanNumerals": "i° - ♭II - ♭iii - i°",
         "description": "Metal-style progression cycling through the most accessible Locrian chords before returning to the unstable diminished tonic",
         "genre": "Progressive Metal/Djent",
-        "alphaTex": ""
+        "alphaTex": "(7.6 8.5 9.4 7.3).1 | (8.6 10.5 10.4 9.3).1 | (10.6 12.5 12.4 10.3).1 | (7.6 8.5 9.4 7.3).1 |"
       }
     ]
   },
@@ -192,20 +226,44 @@
     {
       "genre": "Extreme Metal",
       "usage": "Provides the darkest, most dissonant tonality available within the standard modal system for extreme heaviness",
-      "characteristics": ["diminished riffs and power chords", "tritone-based tension", "chromatic death metal passages", "blast beat accompaniment"],
-      "examples": ["Meshuggah - Bleed", "Gojira - Backbone"]
+      "characteristics": [
+        "diminished riffs and power chords",
+        "tritone-based tension",
+        "chromatic death metal passages",
+        "blast beat accompaniment"
+      ],
+      "examples": [
+        "Meshuggah - Bleed",
+        "Gojira - Backbone"
+      ]
     },
     {
       "genre": "Avant-Garde Jazz",
       "usage": "Sophisticated dissonance over half-diminished (m7b5) chords and experimental harmonic textures",
-      "characteristics": ["half-diminished chord soloing", "experimental improvisation", "dissonant intervallic lines", "angular melodic phrases"],
-      "examples": ["John Coltrane late-period works", "Allan Holdsworth experimental passages"]
+      "characteristics": [
+        "half-diminished chord soloing",
+        "experimental improvisation",
+        "dissonant intervallic lines",
+        "angular melodic phrases"
+      ],
+      "examples": [
+        "John Coltrane late-period works",
+        "Allan Holdsworth experimental passages"
+      ]
     },
     {
       "genre": "Horror Film Scores",
       "usage": "Creates dread, unease, and psychological tension through diminished instability and unresolved dissonance",
-      "characteristics": ["sustained tritone drones", "dissonant string textures", "psychological tension building", "unresolved musical phrases"],
-      "examples": ["Horror film underscore cues", "Psychological thriller soundtracks"]
+      "characteristics": [
+        "sustained tritone drones",
+        "dissonant string textures",
+        "psychological tension building",
+        "unresolved musical phrases"
+      ],
+      "examples": [
+        "Horror film underscore cues",
+        "Psychological thriller soundtracks"
+      ]
     }
   ],
   "famousSongs": [
@@ -261,9 +319,12 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Practice the B Locrian scale ascending and descending, focusing on the characteristic flat 2nd and diminished 5th intervals",
-      "alphaTex": "",
+      "alphaTex": "7.6 8.6 10.6 7.5 | 8.5 10.5 7.4 9.4 | 10.4 7.3 9.3 10.3 | 8.2 10.2 7.1 8.1 |",
       "tempo": "60-110 BPM",
-      "focus": ["scale memorization", "diminished 5th recognition"],
+      "focus": [
+        "scale memorization",
+        "diminished 5th recognition"
+      ],
       "instructions": [
         "Start slowly with metronome at 60 BPM",
         "Listen for the diminished 5th (F natural) that makes Locrian uniquely dark and unstable",
@@ -275,9 +336,12 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Isolate and practice the root-to-flat-5th tritone interval that defines the Locrian mode's instability and darkness",
-      "alphaTex": "",
+      "alphaTex": "7.6 8.5 7.6 8.5 | 9.4 10.3 9.4 10.3 | 7.1 8.2 7.1 8.2 | 7.6.1 |",
       "tempo": "60-100 BPM",
-      "focus": ["tritone recognition", "diminished harmony awareness"],
+      "focus": [
+        "tritone recognition",
+        "diminished harmony awareness"
+      ],
       "instructions": [
         "Play the B to F interval repeatedly to internalize the tritone tension",
         "Approach the tritone from different scale degrees to hear it in context",
@@ -289,9 +353,12 @@
       "type": "Ear Training",
       "difficulty": "Intermediate",
       "description": "Compare Locrian with Phrygian mode to isolate the diminished 5th that distinguishes Locrian as the darkest standard mode",
-      "alphaTex": "",
+      "alphaTex": "7.6 8.6 10.6 7.5 | 9.5 7.5 10.6 7.6 | 7.6 8.6 10.6 7.5 | 8.5 7.5 10.6 7.6 |",
       "tempo": "60-100 BPM",
-      "focus": ["ear training", "diminished 5th vs perfect 5th"],
+      "focus": [
+        "ear training",
+        "diminished 5th vs perfect 5th"
+      ],
       "instructions": [
         "Play B Locrian, then B Phrygian back to back",
         "Focus on the 5th degree difference (F natural vs F# in B)",
@@ -334,28 +401,52 @@
         "phase": "Foundation (Weeks 1-2)",
         "duration": "15-20 minutes daily",
         "focus": "Scale patterns and Locrian sound recognition",
-        "exercises": ["Basic Locrian scale runs in B", "Compare with Phrygian and natural minor", "Tritone interval isolation exercises"]
+        "exercises": [
+          "Basic Locrian scale runs in B",
+          "Compare with Phrygian and natural minor",
+          "Tritone interval isolation exercises"
+        ]
       },
       {
         "phase": "Development (Weeks 3-6)",
         "duration": "20-30 minutes daily",
         "focus": "Multiple positions and diminished harmony application",
-        "exercises": ["Position playing in different keys", "Half-diminished arpeggio practice", "Locrian riff construction"]
+        "exercises": [
+          "Position playing in different keys",
+          "Half-diminished arpeggio practice",
+          "Locrian riff construction"
+        ]
       },
       {
         "phase": "Integration (Weeks 7-12)",
         "duration": "30-45 minutes daily",
         "focus": "Musical application in metal, jazz, and experimental contexts",
-        "exercises": ["Improvise over half-diminished vamps", "Compose extreme metal riffs using Locrian", "Study Meshuggah and progressive metal phrasing"]
+        "exercises": [
+          "Improvise over half-diminished vamps",
+          "Compose extreme metal riffs using Locrian",
+          "Study Meshuggah and progressive metal phrasing"
+        ]
       }
     ]
   },
   "metadata": {
     "slug": "locrian",
-    "tags": ["locrian", "mode", "scales", "theory", "metal", "diminished", "dissonant", "advanced"],
+    "tags": [
+      "locrian",
+      "mode",
+      "scales",
+      "theory",
+      "metal",
+      "diminished",
+      "dissonant",
+      "advanced"
+    ],
     "category": "modes",
     "subcategory": "church-modes",
     "lastUpdated": "2024-01-15",
-    "sources": ["Music theory pedagogy", "Guitar education standards"]
+    "sources": [
+      "Music theory pedagogy",
+      "Guitar education standards"
+    ]
   }
 }

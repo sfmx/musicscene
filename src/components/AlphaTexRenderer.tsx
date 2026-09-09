@@ -38,6 +38,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [countInOn, setCountInOn] = useState(false);
 
   useEffect(() => {
+    if (!alphaTex || !alphaTex.trim()) {
+      return;
+    }
     let isMounted = true;
 
     // Suppress AlphaTab internal errors from showing as Next.js runtime error overlay
@@ -227,6 +230,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     const seconds = totalSeconds % 60;
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   };
+
+  if (!alphaTex || !alphaTex.trim()) {
+    return null;
+  }
 
   return (
     <div className={`w-full mb-4 ${className}`}>

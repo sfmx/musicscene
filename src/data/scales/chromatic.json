@@ -6,7 +6,13 @@
     "noteCount": 12,
     "intervalPattern": "1-♭2-2-♭3-3-4-♭5-5-♭6-6-♭7-7",
     "character": "Complete, all-encompassing, atonal",
-    "mood": ["complete", "technical", "chromatic", "atonal", "versatile"]
+    "mood": [
+      "complete",
+      "technical",
+      "chromatic",
+      "atonal",
+      "versatile"
+    ]
   },
   "theory": {
     "intervalsFromRoot": "1 - ♭2 - 2 - ♭3 - 3 - 4 - ♭5 - 5 - ♭6 - 6 - ♭7 - 7 - 8",
@@ -33,7 +39,10 @@
     },
     "parallelScale": {
       "name": "Major Scale (Ionian)",
-      "differences": ["Major scale selects 7 of 12 chromatic notes", "Chromatic adds 5 additional passing tones between diatonic degrees"]
+      "differences": [
+        "Major scale selects 7 of 12 chromatic notes",
+        "Chromatic adds 5 additional passing tones between diatonic degrees"
+      ]
     }
   },
   "keyExamples": [
@@ -72,22 +81,34 @@
         "patternNumber": 1,
         "position": "Open Position (E Chromatic, open 6th string)",
         "description": "Sequential half-step movement from open 6th string ascending fret by fret. The most fundamental guitar exercise pattern, covering every fret in first position.",
-        "alphaTex": "",
-        "applications": ["warm-up finger exercises", "left-hand technique development", "fretboard memorization"]
+        "alphaTex": "0.6 1.6 2.6 3.6 | 0.5 1.5 2.5 3.5 | 0.4 1.4 2.4 3.4 | 0.3 1.3 2.3 3.3 | 0.2 1.2 2.2 3.2 | 0.1 1.1 2.1 3.1 |",
+        "applications": [
+          "warm-up finger exercises",
+          "left-hand technique development",
+          "fretboard memorization"
+        ]
       },
       {
         "patternNumber": 2,
         "position": "5th Position (A Chromatic, 4-fret span)",
         "description": "Four-notes-per-string chromatic pattern starting at 5th fret. Builds finger independence and creates a moveable warm-up framework across the neck.",
-        "alphaTex": "",
-        "applications": ["finger independence building", "picking speed development", "position-shifting practice"]
+        "alphaTex": "5.6 6.6 7.6 8.6 | 5.5 6.5 7.5 8.5 | 5.4 6.4 7.4 8.4 | 5.3 6.3 7.3 8.3 | 5.2 6.2 7.2 8.2 | 5.1 6.1 7.1 8.1 |",
+        "applications": [
+          "finger independence building",
+          "picking speed development",
+          "position-shifting practice"
+        ]
       },
       {
         "patternNumber": 3,
         "position": "Single String (any string, full chromatic run)",
         "description": "Full chromatic run along a single string from open to 12th fret. Develops knowledge of all note names on each string and smooth position shifting.",
-        "alphaTex": "",
-        "applications": ["single-string technique", "fretboard note memorization", "slide and position-shift practice"]
+        "alphaTex": "0.1 1.1 2.1 3.1 | 4.1 5.1 6.1 7.1 | 8.1 9.1 10.1 11.1 | 12.1.1 |",
+        "applications": [
+          "single-string technique",
+          "fretboard note memorization",
+          "slide and position-shift practice"
+        ]
       }
     ],
     "commonPositions": [
@@ -159,27 +180,42 @@
     "commonProgressions": [
       {
         "name": "Chromatic Bass Descent (C - B/D# - Am - G#dim - C/G)",
-        "chords": ["C", "B/D#", "Am", "G#dim", "C/G"],
+        "chords": [
+          "C",
+          "B/D#",
+          "Am",
+          "G#dim",
+          "C/G"
+        ],
         "romanNumerals": "I - vii/♯ii - vi - ♯v° - I/5",
         "description": "Descending chromatic bass line from C to G using passing chromatic chords. One of the most common applications of chromaticism in tonal music.",
         "genre": "Classical/Pop",
-        "alphaTex": ""
+        "alphaTex": "(3.5 2.4 0.3 1.2).1 | (6.5 4.4 4.3 4.2).1 | (0.5 2.4 2.3 1.2).1 | (4.6 3.5 4.4 3.3).1 | (3.6 3.5 2.4 0.3 1.2).1 |"
       },
       {
         "name": "Secondary Dominant Chain (C - A7 - Dm - B7 - Em)",
-        "chords": ["C", "A7", "Dm", "B7", "Em"],
+        "chords": [
+          "C",
+          "A7",
+          "Dm",
+          "B7",
+          "Em"
+        ],
         "romanNumerals": "I - V7/ii - ii - V7/iii - iii",
         "description": "Chain of secondary dominant chords using chromatic notes to create strong resolutions to each diatonic target chord in sequence.",
         "genre": "Jazz/Classical",
-        "alphaTex": ""
+        "alphaTex": "(3.5 2.4 0.3 1.2).1 | (0.5 2.4 0.3 2.2).1 | (0.4 2.3 3.2 1.1).1 | (2.5 1.4 2.3 0.2).1 | (0.6 2.5 2.4 0.3 0.2 0.1).1 |"
       },
       {
         "name": "Jazz Chromatic Approach (D♭7 - Cmaj7)",
-        "chords": ["D♭7", "Cmaj7"],
+        "chords": [
+          "D♭7",
+          "Cmaj7"
+        ],
         "romanNumerals": "♭II7 - Imaj7",
         "description": "Chromatic approach from a half step above the target chord. Tritone substitution and chromatic approach are cornerstones of jazz harmony.",
         "genre": "Jazz/Bebop",
-        "alphaTex": ""
+        "alphaTex": "(4.5 3.4 4.3 2.2).2 (3.5 2.4 0.3 0.2).2 |"
       }
     ]
   },
@@ -187,20 +223,41 @@
     {
       "genre": "Jazz / Bebop",
       "usage": "Chromatic passing tones, enclosures, and approach notes are the foundation of bebop vocabulary, connecting chord tones with half-step movement",
-      "characteristics": ["bebop chromatic enclosures around chord tones", "chromatic passing tones between scale degrees", "tritone substitutions using chromatic movement"],
-      "examples": ["Charlie Parker - rapid chromatic bebop lines", "Dizzy Gillespie - chromatic approach note vocabulary"]
+      "characteristics": [
+        "bebop chromatic enclosures around chord tones",
+        "chromatic passing tones between scale degrees",
+        "tritone substitutions using chromatic movement"
+      ],
+      "examples": [
+        "Charlie Parker - rapid chromatic bebop lines",
+        "Dizzy Gillespie - chromatic approach note vocabulary"
+      ]
     },
     {
       "genre": "Classical",
       "usage": "Chromatic passages for dramatic effect, chromatic voice leading, 12-tone serial composition, and technical etudes",
-      "characteristics": ["chromatic voice leading in Bach chorales", "12-tone rows in Schoenberg and serial composers", "virtuosic chromatic scale runs in concertos"],
-      "examples": ["J.S. Bach - Chromatic Fantasy and Fugue", "Arnold Schoenberg - 12-tone serial compositions"]
+      "characteristics": [
+        "chromatic voice leading in Bach chorales",
+        "12-tone rows in Schoenberg and serial composers",
+        "virtuosic chromatic scale runs in concertos"
+      ],
+      "examples": [
+        "J.S. Bach - Chromatic Fantasy and Fugue",
+        "Arnold Schoenberg - 12-tone serial compositions"
+      ]
     },
     {
       "genre": "Technical Guitar",
       "usage": "Chromatic exercises are the foundation of guitar technique training for finger independence, speed, and coordination",
-      "characteristics": ["four-notes-per-string warm-up patterns", "alternate picking chromatic drills", "spider exercises and finger independence patterns"],
-      "examples": ["John Petrucci - chromatic technical exercises", "Steve Vai - chromatic workout routines"]
+      "characteristics": [
+        "four-notes-per-string warm-up patterns",
+        "alternate picking chromatic drills",
+        "spider exercises and finger independence patterns"
+      ],
+      "examples": [
+        "John Petrucci - chromatic technical exercises",
+        "Steve Vai - chromatic workout routines"
+      ]
     }
   ],
   "famousSongs": [
@@ -256,9 +313,12 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "The fundamental chromatic exercise: play four consecutive frets on each string with one finger per fret, ascending across all six strings then descending",
-      "alphaTex": "",
+      "alphaTex": "1.6 2.6 3.6 4.6 | 1.5 2.5 3.5 4.5 | 1.4 2.4 3.4 4.4 | 1.3 2.3 3.3 4.3 | 1.2 2.2 3.2 4.2 | 1.1 2.1 3.1 4.1 |",
       "tempo": "60-160 BPM",
-      "focus": ["finger independence and strength", "clean fretting technique"],
+      "focus": [
+        "finger independence and strength",
+        "clean fretting technique"
+      ],
       "instructions": [
         "Start on the 6th string, play frets 1-2-3-4 with fingers 1-2-3-4, then move to the 5th string and repeat",
         "Ascend across all six strings, then reverse the pattern descending from 1st string back to 6th",
@@ -270,9 +330,12 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Finger permutation exercise using all 24 possible four-finger orderings across the chromatic scale to build complete finger independence",
-      "alphaTex": "",
+      "alphaTex": "1.6 3.6 2.6 4.6 | 1.5 3.5 2.5 4.5 | 1.4 3.4 2.4 4.4 | 1.3 3.3 2.3 4.3 | 1.2 3.2 2.2 4.2 | 1.1 3.1 2.1 4.1 |",
       "tempo": "60-140 BPM",
-      "focus": ["finger permutation mastery", "left-hand coordination"],
+      "focus": [
+        "finger permutation mastery",
+        "left-hand coordination"
+      ],
       "instructions": [
         "Start with pattern 1-2-3-4, then try 1-3-2-4, 1-4-2-3, and other permutations across the strings",
         "Keep unused fingers hovering close to the fretboard to minimize unnecessary movement",
@@ -284,9 +347,12 @@
       "type": "Musical",
       "difficulty": "Advanced",
       "description": "Practice chromatic enclosures around target chord tones, approaching from a half step above and below before landing on the target note",
-      "alphaTex": "",
+      "alphaTex": "7.3 4.3 6.3 5.3 | 7.4 4.4 6.4 5.4 | 7.5 4.5 6.5 5.5 | 5.5.1 |",
       "tempo": "80-130 BPM",
-      "focus": ["jazz chromatic vocabulary", "target note resolution"],
+      "focus": [
+        "jazz chromatic vocabulary",
+        "target note resolution"
+      ],
       "instructions": [
         "Choose a chord (e.g., Cmaj7) and target each chord tone with a chromatic enclosure from above and below",
         "Practice enclosing the root, 3rd, 5th, and 7th of the chord in sequence across the fretboard",
@@ -329,28 +395,53 @@
         "phase": "Foundation (Weeks 1-2)",
         "duration": "10-15 minutes daily",
         "focus": "Basic chromatic warm-up exercises and clean technique",
-        "exercises": ["Four-finger chromatic pattern across all strings", "Single-string chromatic runs for note memorization", "Metronome-based speed building from 60 BPM"]
+        "exercises": [
+          "Four-finger chromatic pattern across all strings",
+          "Single-string chromatic runs for note memorization",
+          "Metronome-based speed building from 60 BPM"
+        ]
       },
       {
         "phase": "Development (Weeks 3-6)",
         "duration": "15-20 minutes daily",
         "focus": "Finger permutations and advanced chromatic patterns",
-        "exercises": ["Spider exercises with all 24 finger permutations", "Chromatic patterns with string skipping", "Alternate and economy picking drills on chromatic runs"]
+        "exercises": [
+          "Spider exercises with all 24 finger permutations",
+          "Chromatic patterns with string skipping",
+          "Alternate and economy picking drills on chromatic runs"
+        ]
       },
       {
         "phase": "Integration (Weeks 7-12)",
         "duration": "15-25 minutes daily",
         "focus": "Musical application of chromatic movement in context",
-        "exercises": ["Chromatic passing tones between scale degrees", "Bebop enclosure practice over chord changes", "Chromatic bass line and voice-leading exercises"]
+        "exercises": [
+          "Chromatic passing tones between scale degrees",
+          "Bebop enclosure practice over chord changes",
+          "Chromatic bass line and voice-leading exercises"
+        ]
       }
     ]
   },
   "metadata": {
     "slug": "chromatic",
-    "tags": ["chromatic", "technical", "scales", "theory", "exercise", "warm-up", "beginner", "jazz", "symmetric"],
+    "tags": [
+      "chromatic",
+      "technical",
+      "scales",
+      "theory",
+      "exercise",
+      "warm-up",
+      "beginner",
+      "jazz",
+      "symmetric"
+    ],
     "category": "scales",
     "subcategory": "symmetric",
     "lastUpdated": "2024-01-15",
-    "sources": ["Music theory pedagogy", "Guitar education standards"]
+    "sources": [
+      "Music theory pedagogy",
+      "Guitar education standards"
+    ]
   }
 }
