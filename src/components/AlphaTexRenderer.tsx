@@ -43,18 +43,26 @@ const getSharedSoundFont = async (): Promise<Uint8Array> => {
   return soundFontFetchPromise;
 };
 
-// Acoustic Guitar (Steel Strings) — General MIDI Program 25
-const GUITAR_PROGRAM = 25;
+// Available playback instruments (all bundled inside sonivox.sf2)
+const INSTRUMENT_OPTIONS = [
+  { id: 25, label: 'Steel', icon: '🎸', title: 'Acoustic Guitar (Steel Strings)' },
+  { id: 24, label: 'Nylon', icon: '🪕', title: 'Acoustic Guitar (Nylon Strings)' },
+  { id: 27, label: 'Electric', icon: '⚡', title: 'Electric Guitar (Clean)' },
+  { id: 0, label: 'Piano', icon: '🎹', title: 'Acoustic Grand Piano' },
+];
+
+const STORAGE_KEY = 'alphatab_preferred_instrument';
+const INSTRUMENT_CHANGE_EVENT = 'alphatab-instrument-change';
 
 /**
  * Updates track playbackInfo program and all beat automations (type 2)
- * so that MIDI generation uses authentic Acoustic Guitar sound instead of piano.
+ * so that MIDI generation uses the desired instrument.
  */
-const applyGuitarSound = (score: any) => {
+const applyInstrumentToScore = (score: any, program: number) => {
   if (!score?.tracks) return;
   score.tracks.forEach((track: any) => {
     if (track.playbackInfo) {
-      track.playbackInfo.program = GUITAR_PROGRAM;
+      track.playbackInfo.program = program;
     }
     track.staves?.forEach((staff: any) => {
       staff.bars?.forEach((bar: any) => {
@@ -62,7 +70,7 @@ const applyGuitarSound = (score: any) => {
           voice.beats?.forEach((beat: any) => {
             beat.automations?.forEach((auto: any) => {
               if (auto.type === 2) {
-                auto.value = GUITAR_PROGRAM;
+                auto.value = program;
               }
             });
           });
@@ -93,8 +101,58 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
 
+  // Initialize selected instrument from localStorage or default to Steel Acoustic (25)
+  const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = parseInt(saved, 10);
+          if (INSTRUMENT_OPTIONS.some(inst => inst.id === parsed)) {
+            return parsed;
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+    return 25;
+  });
+
+  const selectedInstrumentRef = useRef<number>(selectedInstrument);
+  useEffect(() => {
+    selectedInstrumentRef.current = selectedInstrument;
+  }, [selectedInstrument]);
+
   const isSoundFontLoadedRef = useRef(false);
   const pendingPlayRef = useRef(false);
+
+  // Synchronize instrument choice across all AlphaTexRenderer instances on the page
+  useEffect(() => {
+    const handleInstrumentSync = (e: Event) => {
+      const customEvent = e as CustomEvent<{ program: number }>;
+      const newProgram = customEvent.detail?.program;
+      if (typeof newProgram === 'number' && INSTRUMENT_OPTIONS.some(inst => inst.id === newProgram)) {
+        if (selectedInstrumentRef.current !== newProgram) {
+          setSelectedInstrument(newProgram);
+          selectedInstrumentRef.current = newProgram;
+          if (apiRef.current?.score) {
+            applyInstrumentToScore(apiRef.current.score, newProgram);
+            try {
+              apiRef.current.loadMidiForScore();
+            } catch {
+              // ignore
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
+    return () => {
+      window.removeEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
+    };
+  }, []);
 
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
@@ -140,7 +198,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         setStatus(`Creating API for ${title}...`);
 
-        // AlphaTab settings with player enabled
+        // AlphaTab settings with player enabled but NO soundfont preloaded on mount
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: {
             useWorkers: true,
@@ -184,9 +242,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           if (isMounted) setStatus(`Loaded ${title}`);
         });
 
+        // Set initial instrument program before initial MIDI generation
         api.scoreLoaded.on((score: any) => {
           if (isMounted) {
-            applyGuitarSound(score);
+            applyInstrumentToScore(score, selectedInstrumentRef.current);
           }
         });
 
@@ -268,7 +327,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         if (apiRef.current.isReadyForPlayback && pendingPlayRef.current) {
           pendingPlayRef.current = false;
           setPlayerReady(true);
-          setAudioLoading(false)
+          setAudioLoading(false);
           isSoundFontLoadedRef.current = true;
           try {
             apiRef.current.play();
@@ -298,6 +357,41 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       apiRef.current.playbackSpeed = speed * baseRatio;
     }
   }, [tempo]);
+
+  const handleInstrumentChange = useCallback((program: number) => {
+    setSelectedInstrument(program);
+    selectedInstrumentRef.current = program;
+
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(STORAGE_KEY, program.toString());
+        window.dispatchEvent(
+          new CustomEvent(INSTRUMENT_CHANGE_EVENT, { detail: { program } })
+        );
+      } catch (e) {
+        console.warn('Failed to persist instrument preference:', e);
+      }
+    }
+
+    if (apiRef.current?.score) {
+      const wasPlaying = playerState === 1;
+      applyInstrumentToScore(apiRef.current.score, program);
+      try {
+        apiRef.current.loadMidiForScore();
+        if (wasPlaying) {
+          setTimeout(() => {
+            try {
+              apiRef.current?.play();
+            } catch {
+              // ignore
+            }
+          }, 50);
+        }
+      } catch (e) {
+        console.warn('Failed to reload MIDI for instrument change:', e);
+      }
+    }
+  }, [playerState]);
 
   const handleMetronomeToggle = useCallback(() => {
     setMetronomeOn(prev => {
@@ -404,7 +498,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                   ? 'bg-blue-400 text-white cursor-wait animate-pulse'
                   : 'bg-blue-600 hover:bg-blue-700 text-white cursor-pointer'
               }`}
-              title={audioLoading ? 'Loading guitar audio...' : playerState === 1 ? 'Pause' : 'Play'}
+              title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
             >
               {audioLoading ? (
                 <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
@@ -440,7 +534,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
           {/* Time Display or Loading Indicator */}
           {audioLoading ? (
-            <span className="text-xs text-blue-600 italic font-medium">Loading guitar audio...</span>
+            <span className="text-xs text-blue-600 italic font-medium">Loading audio...</span>
           ) : !playerReady ? (
             <span className="text-xs text-gray-400 italic">Click play to listen</span>
           ) : (
@@ -459,10 +553,36 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               step="0.25"
               value={playbackSpeed}
               onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
-              className="w-20 h-1 accent-blue-600 cursor-pointer"
+              className="w-16 sm:w-20 h-1 accent-blue-600 cursor-pointer"
               title={`${playbackSpeed}x speed`}
             />
             <span className="text-xs text-gray-700 font-medium min-w-[28px]">{playbackSpeed}x</span>
+          </div>
+
+          {/* Sound / Instrument Selector */}
+          <div className="flex items-center gap-1 sm:gap-1.5">
+            <span className="text-xs text-gray-500 font-medium hidden sm:inline">Sound:</span>
+            <div className="inline-flex rounded-lg bg-gray-200/80 p-0.5" role="group">
+              {INSTRUMENT_OPTIONS.map((inst) => {
+                const isActive = selectedInstrument === inst.id;
+                return (
+                  <button
+                    key={inst.id}
+                    type="button"
+                    onClick={() => handleInstrumentChange(inst.id)}
+                    className={`text-xs px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md transition-all flex items-center gap-1 font-medium cursor-pointer ${
+                      isActive
+                        ? 'bg-white text-blue-700 shadow-xs ring-1 ring-black/5 font-semibold'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-white/50'
+                    }`}
+                    title={inst.title}
+                  >
+                    <span>{inst.icon}</span>
+                    <span>{inst.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Metronome & Count-in */}
@@ -471,7 +591,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               onClick={handleCountInToggle}
               className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
                 countInOn
-                  ? 'bg-blue-100 text-blue-700 border border-blue-300'
+                  ? 'bg-blue-100 text-blue-700 border border-blue-300 font-medium'
                   : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
               }`}
               title="Count-in before playback"
@@ -482,7 +602,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               onClick={handleMetronomeToggle}
               className={`text-xs px-2 py-1 rounded transition-colors cursor-pointer ${
                 metronomeOn
-                  ? 'bg-blue-100 text-blue-700 border border-blue-300'
+                  ? 'bg-blue-100 text-blue-700 border border-blue-300 font-medium'
                   : 'bg-gray-100 text-gray-500 border border-gray-200 hover:bg-gray-200'
               }`}
               title="Toggle metronome"
