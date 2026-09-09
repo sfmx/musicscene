@@ -1,11 +1,8 @@
-import type { Metadata } from 'next';
-import FingerExercisesClient from './page.client';
+import { getPracticeMetadata } from '@/lib/seo';
+import PracticeDetailPageTemplate from '@/components/PracticeAnalysis/PracticeDetailPageTemplate';
 
-export const metadata: Metadata = {
-  title: 'Guitar Finger Exercises - Guitar Practice',
-  description: 'Practice essential guitar finger exercises to improve dexterity, speed, and technique with interactive notation and tablature.',
-};
+export const metadata = getPracticeMetadata('finger-exercises');
 
 export default function FingerExercisesPage() {
-  return <FingerExercisesClient />;
+  return <PracticeDetailPageTemplate practiceSlug="finger-exercises" displayName="Finger Exercises" />;
 }
