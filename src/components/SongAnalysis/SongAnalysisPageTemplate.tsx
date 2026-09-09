@@ -22,6 +22,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import ExternalSongLinks from './ExternalSongLinks';
+import WhyThisSongWorksSection from './WhyThisSongWorksSection';
+import JsonLdScript from '@/components/JsonLdScript';
+import { SITE_CONFIG } from '@/lib/siteConfig';
 
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
@@ -52,18 +55,54 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
     );
   }
 
+  const songJsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'MusicComposition',
+      name: songData.songInfo.title,
+      composer: {
+        '@type': 'Person',
+        name: songData.songInfo.artist,
+      },
+      musicalKey: songData.musicalAnalysis?.keyAndScale?.primaryKey || songData.songInfo.key,
+      timeRequired: songData.songInfo.duration,
+      genre: songData.songInfo.genre,
+      url: `${SITE_CONFIG.baseUrl}/lessons/songs/song-analysis/${songSlug}/`,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `"${displayName}" - Complete Guitar Song Analysis & Harmonic Breakdown`,
+      description: `Learn how to play and understand "${songData.songInfo.title}" by ${songData.songInfo.artist}. Complete guitar chords, techniques, scale visualizations, and harmonic music theory analysis.`,
+      author: {
+        '@type': 'Person',
+        name: 'Jason Smith',
+        jobTitle: 'Founder & Lead Instructor',
+        url: `${SITE_CONFIG.baseUrl}/about/`,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: SITE_CONFIG.name,
+        url: SITE_CONFIG.baseUrl,
+      },
+      mainEntityOfPage: `${SITE_CONFIG.baseUrl}/lessons/songs/song-analysis/${songSlug}/`,
+    },
+  ];
+
   return (
     <Layout>
       <Header
         title={`"${displayName}" - Complete Song Analysis`}
         subtitle={`Professional breakdown of ${songData.songInfo.artist}'s ${displayName} with theory, technique, and equipment analysis`}
       />
+      <JsonLdScript data={songJsonLd} />
       
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Section Navigation */}
         <SectionNavigation
           sections={[
             "Song Info",
+            "Why It Works",
             "Musical Analysis",
             "Chord Reference",
             "Scale Patterns",
@@ -90,6 +129,9 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
           <ExternalSongLinks title={songData.songInfo.title} artist={songData.songInfo.artist} />
         </div>
         </div>
+
+        {/* Why This Song Works (Harmonic Breakdown) */}
+        <WhyThisSongWorksSection songSlug={songSlug} displayName={displayName} />
 
         {/* Musical Analysis */}
         <div id="musical-analysis">

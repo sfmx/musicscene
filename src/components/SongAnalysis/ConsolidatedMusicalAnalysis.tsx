@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import TheoryContextBadges from './TheoryContextBadges';
 
 interface ConsolidatedMusicalAnalysisProps {
   songData: any;
@@ -73,6 +74,13 @@ const ConsolidatedMusicalAnalysis: React.FC<ConsolidatedMusicalAnalysisProps> = 
           <strong>Pro Tip:</strong> {getProTip(keyAndScale?.primaryKey, songData.songInfo?.genre)}
         </p>
       </div>
+
+      {/* Reciprocal Theory Guides Badges */}
+      <TheoryContextBadges
+        primaryKey={keyAndScale?.primaryKey}
+        modalCharacter={keyAndScale?.modalCharacter}
+        scalesUsed={keyAndScale?.scalesUsed}
+      />
     </div>
   );
 };

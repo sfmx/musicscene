@@ -23,7 +23,13 @@ function buildMeta(
   description: string,
   url: string,
   keywords?: string[],
+  ogImagePath?: string,
 ): Metadata {
+  const imageRel = ogImagePath || SITE_CONFIG.defaultOgImage;
+  const absoluteImageUrl = imageRel.startsWith('http')
+    ? imageRel
+    : `${SITE_CONFIG.baseUrl}${imageRel.startsWith('/') ? imageRel : `/${imageRel}`}`;
+
   return {
     title,
     description,
@@ -36,12 +42,15 @@ function buildMeta(
       type: 'article',
       siteName: SITE_CONFIG.name,
       locale: 'en_US',
-      images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630 }],
+      images: [{ url: absoluteImageUrl, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      site: '@musicscene_au',
+      creator: '@musicscene_au',
+      images: [absoluteImageUrl],
     },
   };
 }
@@ -55,7 +64,7 @@ export function getChordMetadata(slug: string): Metadata {
   const title = `${data.chordInfo.pageTitle} - Guitar Chord Theory`;
   const description = `Learn ${data.chordInfo.name} chords on guitar. ${data.chordInfo.subtitle}. Voicings, progressions, and practice exercises.`;
   const url = buildCanonicalUrl(`/lessons/theory/chords/${slug}`);
-  return buildMeta(title, description, url, data.chordInfo.tags);
+  return buildMeta(title, description, url, data.chordInfo.tags, '/images/og-chords.png');
 }
 
 const MODAL_SCALE_SLUGS = new Set(['dorian', 'locrian', 'lydian', 'mixolydian', 'phrygian', 'aeolian', 'ionian']);
@@ -71,7 +80,7 @@ export async function getScaleMetadata(slug: string): Promise<Metadata> {
     ? `/lessons/theory/modes/${slug}`
     : `/lessons/theory/scales/${slug}`;
   const url = buildCanonicalUrl(canonicalPath);
-  return buildMeta(title, description, url, data.metadata.tags);
+  return buildMeta(title, description, url, data.metadata.tags, '/images/og-scales.png');
 }
 
 export function getIntervalMetadata(slug: string): Metadata {
@@ -81,7 +90,7 @@ export function getIntervalMetadata(slug: string): Metadata {
   const title = `${data.intervalInfo.pageTitle} - Music Intervals`;
   const description = `Understand the ${data.intervalInfo.name} interval on guitar. ${data.intervalInfo.subtitle}. Ear training, fretboard patterns, and exercises.`;
   const url = buildCanonicalUrl(`/lessons/theory/intervals/${slug}`);
-  return buildMeta(title, description, url, data.intervalInfo.tags);
+  return buildMeta(title, description, url, data.intervalInfo.tags, '/images/og-scales.png');
 }
 
 export function getModeMetadata(slug: string): Metadata {
@@ -91,7 +100,7 @@ export function getModeMetadata(slug: string): Metadata {
   const title = `${data.modeInfo.pageTitle} - Guitar Modes`;
   const description = `Learn the ${data.modeInfo.name} mode on guitar. ${data.modeInfo.subtitle}. Fretboard patterns, musical applications, and practice exercises.`;
   const url = buildCanonicalUrl(`/lessons/theory/modes/${slug}`);
-  return buildMeta(title, description, url, data.modeInfo.tags);
+  return buildMeta(title, description, url, data.modeInfo.tags, '/images/og-modes.png');
 }
 
 export function getProgressionMetadata(slug: string): Metadata {
@@ -101,25 +110,27 @@ export function getProgressionMetadata(slug: string): Metadata {
   const title = `${data.progressionInfo.pageTitle} - Chord Progressions`;
   const description = `Master the ${data.progressionInfo.name} chord progression on guitar. ${data.progressionInfo.subtitle}. Theory, voicings, and practice exercises.`;
   const url = buildCanonicalUrl(`/lessons/theory/progressions/${slug}`);
-  return buildMeta(title, description, url, data.progressionInfo.tags);
+  return buildMeta(title, description, url, data.progressionInfo.tags, '/images/og-chords.png');
 }
 
 export function getSongAnalysisMetadata(slug: string): Metadata {
   const data = getSongData(slug);
   if (!data) return { title: 'Song Not Found' };
 
-  const title = `${data.songInfo.title} by ${data.songInfo.artist} - Guitar Analysis`;
-  const description = `Complete guitar analysis of "${data.songInfo.title}" by ${data.songInfo.artist}. Chords, techniques, tab breakdowns, and practice tips. ${data.difficulty.overall} difficulty.`;
+  const title = `${data.songInfo.title} by ${data.songInfo.artist} - Guitar Analysis & Harmonic Breakdown`;
+  const description = `Complete guitar analysis of "${data.songInfo.title}" by ${data.songInfo.artist}. Chords, music theory harmonic breakdown, tab breakdowns, and practice tips. ${data.difficulty.overall} difficulty.`;
   const url = buildCanonicalUrl(`/lessons/songs/song-analysis/${slug}`);
   const keywords = [
     data.songInfo.title,
     data.songInfo.artist,
     'guitar tab',
     'song analysis',
+    'why songs work',
+    'harmonic breakdown',
     data.songInfo.genre,
     ...(data.metadata?.tags ?? []),
   ];
-  return buildMeta(title, description, url, keywords);
+  return buildMeta(title, description, url, keywords, '/images/og-song-analysis.png');
 }
 
 export function getPracticeMetadata(slug: string): Metadata {
@@ -128,7 +139,7 @@ export function getPracticeMetadata(slug: string): Metadata {
     const title = `${data.pageInfo.pageTitle} - Guitar Practice`;
     const description = `${data.pageInfo.heroDescription}`;
     const url = buildCanonicalUrl(`/lessons/practice/${data.category}/${slug}`);
-    return buildMeta(title, description, url);
+    return buildMeta(title, description, url, undefined, '/images/og-tools.png');
   } catch {
     return { title: 'Practice Exercise Not Found' };
   }
@@ -140,7 +151,7 @@ export function getGearLessonMetadata(key: string): Metadata {
     const title = `${data.pageTitle} - Guitar Gear Guide`;
     const description = `${data.subtitle}. Expert guide to ${data.pageTitle.toLowerCase()} for guitarists.`;
     const url = buildCanonicalUrl(`/lessons/gear/${data.category}/${data.slug}`);
-    return buildMeta(title, description, url);
+    return buildMeta(title, description, url, undefined, '/images/og-default.png');
   } catch {
     return { title: 'Gear Lesson Not Found' };
   }
@@ -152,7 +163,7 @@ export function getSongLessonMetadata(key: string): Metadata {
     const title = `${data.pageTitle} - Song Lessons`;
     const description = `${data.subtitle}. Learn ${data.pageTitle.toLowerCase()} techniques for guitar.`;
     const url = buildCanonicalUrl(`/lessons/songs/${data.category}/${data.slug}`);
-    return buildMeta(title, description, url);
+    return buildMeta(title, description, url, undefined, '/images/og-song-analysis.png');
   } catch {
     return { title: 'Song Lesson Not Found' };
   }

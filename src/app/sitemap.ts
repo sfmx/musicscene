@@ -33,6 +33,7 @@ const STATIC_PAGES = [
   { url: '/lessons/songs/structure/', priority: 0.7 },
   { url: '/lessons/songs/techniques/', priority: 0.7 },
   { url: '/lessons/songs/song-analysis/', priority: 0.9 },
+  { url: '/lessons/songs/why-songs-work/', priority: 0.9 },
   // Practice
   { url: '/lessons/practice/', priority: 0.8 },
   { url: '/lessons/practice/fretboard-trainer/', priority: 0.85 },
