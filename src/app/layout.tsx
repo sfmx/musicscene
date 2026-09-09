@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
+import LeadMagnetModal from "@/components/Revenue/LeadMagnetModal";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 import { REVENUE_CONFIG } from "@/lib/revenueConfig";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       >
         {children}
         <CookieConsent />
+        <LeadMagnetModal />
         {REVENUE_CONFIG.adsEnabled && (
           <script
             async

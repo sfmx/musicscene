@@ -18,6 +18,7 @@ import RelatedContentSection from '@/components/RelatedContent/RelatedContentSec
 import AdSlot from '@/components/Revenue/AdSlot';
 import GearRecommendations from '@/components/Revenue/GearRecommendations';
 import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import SequentialNav from '@/components/SequentialNav';
@@ -142,6 +143,9 @@ export default function ScaleAnalysisPageTemplate({
 
         {/* Guitar Fretboard */}
         <ScaleFretboardSection scaleData={scaleData} />
+
+        {/* Printable Lead Magnet Banner */}
+        <LeadMagnetBanner />
 
         {/* Harmonic Applications */}
         <ScaleHarmonicSection scaleData={scaleData} />

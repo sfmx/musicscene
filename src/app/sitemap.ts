@@ -37,6 +37,7 @@ const STATIC_PAGES = [
   { url: '/lessons/practice/', priority: 0.8 },
   { url: '/lessons/practice/fretboard-trainer/', priority: 0.85 },
   { url: '/lessons/practice/progression-player/', priority: 0.85 },
+  { url: '/downloads/fretboard-cheat-sheet/', priority: 0.85 },
   { url: '/lessons/practice/warmups/', priority: 0.7 },
   { url: '/lessons/practice/technique/', priority: 0.7 },
   { url: '/lessons/practice/improv/', priority: 0.7 },
