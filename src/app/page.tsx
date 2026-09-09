@@ -91,6 +91,8 @@ const categoryCards = [
     subtextClass: 'text-green-800/70',
     chipClass: 'bg-white/70 text-green-900 hover:bg-white',
     subtopics: [
+      { label: 'Fretboard Trainer', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Progression Jammer', href: '/lessons/practice/progression-player' },
       { label: 'Warm-ups', href: '/lessons/practice/warmups' },
       { label: 'Technique', href: '/lessons/practice/technique' },
       { label: 'Improvisation', href: '/lessons/practice/improv' },

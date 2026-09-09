@@ -24,6 +24,8 @@ const SEGMENT_LABELS: Record<string, string> = {
   warmups: 'Warmups',
   technique: 'Technique',
   improv: 'Improvisation',
+  'fretboard-trainer': 'Fretboard Trainer',
+  'progression-player': 'Progression Player',
 
   // Gear
   gear: 'Gear',

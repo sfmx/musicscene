@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import { SITE_CONFIG } from "@/lib/siteConfig";
@@ -42,21 +41,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {REVENUE_CONFIG.adsEnabled && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${REVENUE_CONFIG.adsensePublisherId}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <CookieConsent />
+        {REVENUE_CONFIG.adsEnabled && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${REVENUE_CONFIG.adsensePublisherId}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </body>
     </html>
   );

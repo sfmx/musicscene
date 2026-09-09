@@ -131,6 +131,8 @@ function buildPracticeNav(): NavCategory {
     })),
     featured: [
       { label: 'All Practice Topics', href: '/lessons/practice' },
+      { label: 'Fretboard Trainer', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Progression Jammer', href: '/lessons/practice/progression-player' },
     ],
   };
 }

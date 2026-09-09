@@ -58,13 +58,19 @@ export function getChordMetadata(slug: string): Metadata {
   return buildMeta(title, description, url, data.chordInfo.tags);
 }
 
+const MODAL_SCALE_SLUGS = new Set(['dorian', 'locrian', 'lydian', 'mixolydian', 'phrygian', 'aeolian', 'ionian']);
+
 export async function getScaleMetadata(slug: string): Promise<Metadata> {
   const data = await getScaleData(slug);
   if (!data) return { title: 'Scale Not Found' };
 
   const title = `${data.scaleInfo.name} - Guitar Scale Guide`;
   const description = `Master the ${data.scaleInfo.name} on guitar. ${data.scaleInfo.character}. Fretboard patterns, exercises, and famous songs.`;
-  const url = buildCanonicalUrl(`/lessons/theory/scales/${slug}`);
+  // Point canonical tag to dedicated modal theory section to prevent duplicate content indexing
+  const canonicalPath = MODAL_SCALE_SLUGS.has(slug)
+    ? `/lessons/theory/modes/${slug}`
+    : `/lessons/theory/scales/${slug}`;
+  const url = buildCanonicalUrl(canonicalPath);
   return buildMeta(title, description, url, data.metadata.tags);
 }
 

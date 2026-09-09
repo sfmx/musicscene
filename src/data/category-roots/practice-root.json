@@ -13,25 +13,25 @@
     "items": [
       {
         "title": "Quality Over Quantity",
-        "description": "Focused, mindful practice is more effective than mindless repetition",
+        "description": "Your hands learn whatever you actually repeat, mistakes included, so ten minutes of focused, mindful repetition builds correct muscle memory faster than an hour of mindless playing.",
         "icon": "💎",
         "color": "bg-emerald-50 border-emerald-200"
       },
       {
         "title": "Progressive Difficulty",
-        "description": "Start slow and simple, gradually increase speed and complexity",
+        "description": "Practicing something too fast before your hands can execute it cleanly just cements the mistakes into muscle memory; starting slow and speeding up gradually is what lets accuracy survive the increase.",
         "icon": "📈",
         "color": "bg-blue-50 border-blue-200"
       },
       {
         "title": "Regular Consistency",
-        "description": "Daily practice sessions build muscle memory and technique",
+        "description": "Muscle memory forms through repetition spread out over time, not repetition alone, which is why five short sessions a week build technique faster than one long weekend session.",
         "icon": "📅",
         "color": "bg-indigo-50 border-indigo-200"
       },
       {
         "title": "Goal-Oriented Focus",
-        "description": "Set specific, measurable objectives for each practice session",
+        "description": "A vague goal like \"get better\" gives you nothing to measure, while a specific one like \"clean alternate picking at 120bpm\" tells you exactly when you've actually improved.",
         "icon": "🎯",
         "color": "bg-red-50 border-red-200"
       }
@@ -125,6 +125,22 @@
           "Scale improvisation",
           "Arpeggio improvisation",
           "Rhythmic variation"
+        ]
+      },
+      {
+        "title": "Interactive Tools",
+        "href": "/lessons/practice/fretboard-trainer",
+        "icon": "⚡",
+        "description": "Interactive guitar web utilities: Fretboard interval visualizer, speed quiz, and chord progression jam player",
+        "color": "bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
+        "iconColor": "text-emerald-600",
+        "concepts": [
+          "Fretboard Trainer",
+          "Interval Visualizer",
+          "Speed Quiz Game",
+          "Note Hunt Challenge",
+          "Progression Jammer",
+          "Scale Soloing Guide"
         ]
       }
     ]
@@ -261,6 +277,16 @@
         "href": "/lessons/practice/improv",
         "label": "Explore Improvisation",
         "color": "bg-purple-600"
+      },
+      {
+        "href": "/lessons/practice/fretboard-trainer",
+        "label": "Fretboard Trainer",
+        "color": "bg-emerald-600"
+      },
+      {
+        "href": "/lessons/practice/progression-player",
+        "label": "Progression Jammer",
+        "color": "bg-indigo-600"
       }
     ]
   }

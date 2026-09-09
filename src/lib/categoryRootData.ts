@@ -33,6 +33,7 @@ export interface CategoryRootData {
       color: string;
       iconColor: string;
       concepts: string[];
+      step?: number;
     }[];
   };
   additionalSections?: {

@@ -4,9 +4,9 @@ import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
 
 export const metadata: Metadata = {
-  title: 'About MusicScene',
+  title: 'About MusicScene | Editorial Standards & Founder',
   description:
-    'MusicScene is a comprehensive guitar education platform with expert song analysis, music theory lessons, gear guides, and practice tools for guitarists of all skill levels.',
+    'Learn about MusicScene, our founder Jason Smith, and our editorial standards for guitar song analysis, music theory, and gear guides.',
 };
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
               About MusicScene
             </h1>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              Empowering guitarists with expert-level education, built by a guitarist for guitarists.
+              Empowering guitarists with rigorous, musically accurate education, founded and curated in Australia.
             </p>
           </div>
         </header>
@@ -29,23 +29,89 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           {/* Mission */}
           <section className="mb-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">My Mission</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Our Mission</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              MusicScene was created with a simple goal: to provide the most comprehensive, accurate, and accessible guitar education
-              available online. As a passionate guitarist myself, I believe every player — from absolute beginners picking up their first instrument to seasoned
-              players looking to expand their repertoire — deserves high-quality learning resources that are both technically rigorous
-              and genuinely enjoyable to use.
+              MusicScene was founded with a single goal: to provide the most comprehensive, accurate, and accessible guitar education
+              available on the web. We believe that every guitarist — from beginners picking up their first acoustic to experienced
+              players analyzing complex modal solos — deserves learning materials that are musically rigorous, practical, and enjoyable.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Too many guitar education sites offer shallow content, inaccurate tabs, or generic advice. MusicScene is different.
-              Every song analysis, theory lesson, and gear guide on this platform is researched, verified, and written by me,
-              combining my experience and love for the instrument to help you truly master the guitar.
+              Too many guitar websites rely on unverified, crowd-sourced tabs with incorrect chords or generic, auto-generated advice.
+              MusicScene takes an editorial-first approach. Every song analysis, theory breakdown, and gear lesson is researched,
+              structured, and verified against master recordings and music theory principles.
             </p>
+          </section>
+
+          {/* Founder & Lead Editor Profile (E-E-A-T) */}
+          <section className="mb-16 bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-700 text-white flex items-center justify-center font-extrabold text-4xl shadow-md shrink-0">
+                JS
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-1">
+                    Founder &amp; Chief Editor
+                  </span>
+                  <h3 className="text-2xl font-bold text-gray-900">Jason Smith</h3>
+                  <p className="text-sm text-gray-500 font-medium">Sydney, Australia</p>
+                  <p className="text-sm text-gray-500 font-medium">Brisbane, Australia</p>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Jason is a multi-instrumentalist, guitarist, and software developer with over two decades of playing,
+                  recording, and transcribing experience. Having studied Western music theory, jazz harmony, and classic rock guitar
+                  styles, Jason founded MusicScene to bridge the gap between abstract academic music theory and practical fretboard fluency.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Every lesson framework on the platform — from the interactive fretboard visualizations to the chord progression Roman
+                  numeral breakdowns — is personally reviewed and maintained by Jason to ensure technical correctness and genuine pedagogical value.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Editorial Standards & Accuracy Verification */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Editorial Standards &amp; Verification</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-4">
+                  1
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Master Recording Cross-Check</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  All song chords, tunings, and progressions are cross-referenced directly against isolated guitar tracks, master studio
+                  recordings, and verified live performance footage.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mb-4">
+                  2
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Harmonic Rigor</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We don&apos;t just list chords; we explain harmonic function, voice leading, scale degree relationships, and modal
+                  interchange so players understand why the song works.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center font-bold mb-4">
+                  3
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Unbiased Gear Research</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Our gear guides analyze circuit designs, pickup inductance, tube saturation dynamics, and build trade-offs. We never
+                  recommend products based on affiliate commissions.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* What We Offer */}
           <section className="mb-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">What I Offer</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">What We Offer</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Song Analysis</h3>
@@ -80,52 +146,6 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-          </section>
-
-          {/* Our Approach */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">My Approach</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Accuracy First</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Every tab, chord progression, and technique description is cross-referenced against multiple
-                  authoritative sources including official transcriptions, artist interviews, and professional
-                  tablature databases. I don&apos;t publish content until it meets my strict accuracy standards.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Progressive Learning</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  The content is structured with clear difficulty ratings — Beginner, Intermediate, Advanced, and
-                  Expert — so you can find material that challenges you at the right level. Each song analysis
-                  includes a learning path that guides you from basic rhythm parts to advanced lead techniques.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Visual Learning</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Guitar is a visual instrument, and the lessons reflect that. Interactive fretboard diagrams,
-                  chord charts, tablature notation, and scale patterns are integrated throughout every lesson
-                  to help you connect what you read with what you play.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Who We Are */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Who We Are</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              MusicScene is built by a team of guitar enthusiasts, music educators, and software developers who
-              are passionate about making guitar education better. Our content creators have decades of combined
-              playing and teaching experience across genres including rock, blues, jazz, metal, country, and classical guitar.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We combine deep musical knowledge with modern web technology to create an educational experience that&apos;s
-              fast, interactive, and constantly improving. New lessons, song analyses, and features are added regularly
-              based on community feedback and current music trends.
-            </p>
           </section>
 
           {/* CTA */}

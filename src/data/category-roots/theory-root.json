@@ -13,57 +13,27 @@
     "items": [
       {
         "title": "Understand Your Fretboard",
-        "description": "See patterns instead of memorizing shapes",
+        "description": "Once you see the fretboard as a grid of intervals rather than a set of memorized shapes, every new chord or scale becomes a variation on patterns you already know.",
         "icon": "🎯",
         "color": "bg-red-50 border-red-200"
       },
       {
         "title": "Communicate with Musicians",
-        "description": "Speak the universal language of music",
+        "description": "Knowing the names of the chords and scales you're playing lets you follow a bandmate's instructions or call out a key change, instead of only playing what you've memorized by rote.",
         "icon": "🗣️",
         "color": "bg-blue-50 border-blue-200"
       },
       {
         "title": "Write Better Songs",
-        "description": "Compose with intention and harmonic awareness",
+        "description": "Understanding why certain chords lead naturally to others lets you write progressions on purpose, rather than hunting for chords that happen to sound right by trial and error.",
         "icon": "✍️",
         "color": "bg-green-50 border-green-200"
       },
       {
         "title": "Improvise Confidently",
-        "description": "Know what notes work and why they work",
+        "description": "Knowing which notes belong to the underlying scale or chord, and why, is what lets you solo with intention instead of hoping your fingers land somewhere that works.",
         "icon": "🎭",
         "color": "bg-purple-50 border-purple-200"
-      }
-    ]
-  },
-  "learningPath": {
-    "title": "Recommended Learning Path",
-    "steps": [
-      {
-        "title": "Start with Intervals",
-        "description": "Learn the distances between notes and how they create harmony",
-        "color": "bg-blue-600"
-      },
-      {
-        "title": "Build Scales",
-        "description": "Understand how intervals combine to form scales and keys",
-        "color": "bg-blue-600"
-      },
-      {
-        "title": "Construct Chords",
-        "description": "Use intervals and scales to build chord structures",
-        "color": "bg-blue-600"
-      },
-      {
-        "title": "Explore Modes",
-        "description": "Discover different tonal colors and harmonic possibilities",
-        "color": "bg-blue-600"
-      },
-      {
-        "title": "Connect with Progressions",
-        "description": "Learn how chords move and create musical narratives",
-        "color": "bg-blue-600"
       }
     ]
   },
@@ -74,6 +44,7 @@
         "title": "Intervals",
         "href": "/lessons/theory/intervals",
         "icon": "🎵",
+        "step": 1,
         "description": "Master the building blocks of harmony and melody",
         "color": "bg-purple-50 border-purple-200 hover:bg-purple-100",
         "iconColor": "text-purple-600",
@@ -88,6 +59,7 @@
         "title": "Scales",
         "href": "/lessons/theory/scales",
         "icon": "🎼",
+        "step": 2,
         "description": "Understand the patterns that form melodies and harmony",
         "color": "bg-blue-50 border-blue-200 hover:bg-blue-100",
         "iconColor": "text-blue-600",
@@ -102,6 +74,7 @@
         "title": "Chords",
         "href": "/lessons/theory/chords",
         "icon": "🎸",
+        "step": 3,
         "description": "Build and understand chord structures and voicings",
         "color": "bg-green-50 border-green-200 hover:bg-green-100",
         "iconColor": "text-green-600",
@@ -116,6 +89,7 @@
         "title": "Modes",
         "href": "/lessons/theory/modes",
         "icon": "🎹",
+        "step": 4,
         "description": "Explore the colors and moods of modal harmony",
         "color": "bg-indigo-50 border-indigo-200 hover:bg-indigo-100",
         "iconColor": "text-indigo-600",
@@ -130,6 +104,7 @@
         "title": "Chord Progressions",
         "href": "/lessons/theory/progressions",
         "icon": "🔀",
+        "step": 5,
         "description": "Learn how chords connect to create harmonic motion",
         "color": "bg-orange-50 border-orange-200 hover:bg-orange-100",
         "iconColor": "text-orange-600",

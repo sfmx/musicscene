@@ -108,3 +108,37 @@ export function getAffiliateLinkWithFallback(productName: string): AffiliateProd
     category: 'auto',
   };
 }
+
+export interface RetailerLinks {
+  name: string;
+  amazonUrl: string;
+  sweetwaterUrl: string;
+  thomannUrl: string;
+}
+
+/**
+ * Returns multi-retailer purchase options for gear products.
+ * Allows guitarists to compare pricing across Amazon, Sweetwater, and Thomann.
+ */
+export function getRetailerLinks(productName: string): RetailerLinks | null {
+  const searchTerm = extractProductName(productName);
+  if (!looksLikeProduct(productName) || searchTerm.length < 3) return null;
+
+  const encoded = encodeURIComponent(searchTerm).replace(/%20/g, '+');
+  const encodedQuery = encodeURIComponent(searchTerm);
+
+  const amazonUrl = `https://www.amazon.com.au/s?k=${encoded}&tag=${REVENUE_CONFIG.amazonAssociateTag}`;
+  const sweetwaterUrl = REVENUE_CONFIG.sweetwaterAffiliateId
+    ? `https://sweetwater.sjv.io/c/${REVENUE_CONFIG.sweetwaterAffiliateId}/special/search?query=${encodedQuery}`
+    : `https://www.sweetwater.com/store/search?s=${encodedQuery}`;
+  const thomannUrl = REVENUE_CONFIG.thomannAffiliateId
+    ? `https://www.thomann.de/index.html?partner_id=${REVENUE_CONFIG.thomannAffiliateId}&q=${encodedQuery}`
+    : `https://www.thomann.de/intl/search_dir.html?sw=${encodedQuery}`;
+
+  return {
+    name: searchTerm,
+    amazonUrl,
+    sweetwaterUrl,
+    thomannUrl,
+  };
+}

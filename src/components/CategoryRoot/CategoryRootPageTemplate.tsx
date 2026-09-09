@@ -105,8 +105,13 @@ export default function CategoryRootPageTemplate({ category }: Props) {
                 <Link
                   key={topic.href}
                   href={topic.href}
-                  className={`${topic.color} border-2 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105 group`}
+                  className={`relative ${topic.color} border-2 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105 group`}
                 >
+                  {topic.step !== undefined && (
+                    <div className="absolute -top-3 -left-3 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                      {topic.step}
+                    </div>
+                  )}
                   <div className="text-center mb-4">
                     <div className={`${topic.iconColor} text-4xl mb-3 group-hover:scale-110 transition-transform`}>
                       {topic.icon}
