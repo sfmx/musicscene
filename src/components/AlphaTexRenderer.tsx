@@ -17,6 +17,41 @@ interface AlphaTexRendererProps {
   className?: string;
 }
 
+export const GUITAR_INSTRUMENTS = [
+  { id: 25, label: 'Steel Acoustic', icon: '🎸' },
+  { id: 24, label: 'Nylon Acoustic', icon: '🪕' },
+  { id: 27, label: 'Clean Electric', icon: '⚡' },
+] as const;
+
+const STORAGE_KEY = 'alphatab_preferred_instrument';
+const INSTRUMENT_CHANGE_EVENT = 'alphatab-instrument-change';
+
+/**
+ * Updates track playbackInfo program and all beat automations (type 2)
+ * so that MIDI generation uses the desired instrument.
+ */
+const applyInstrumentToScore = (score: any, program: number) => {
+  if (!score?.tracks) return;
+  score.tracks.forEach((track: any) => {
+    if (track.playbackInfo) {
+      track.playbackInfo.program = program;
+    }
+    track.staves?.forEach((staff: any) => {
+      staff.bars?.forEach((bar: any) => {
+        bar.voices?.forEach((voice: any) => {
+          voice.beats?.forEach((beat: any) => {
+            beat.automations?.forEach((auto: any) => {
+              if (auto.type === 2) {
+                auto.value = program;
+              }
+            });
+          });
+        });
+      });
+    });
+  });
+};
+
 const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   alphaTex,
   title = 'Music Notation',
@@ -36,6 +71,54 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
   const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
+  const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = parseInt(saved, 10);
+          if (GUITAR_INSTRUMENTS.some(inst => inst.id === parsed)) {
+            return parsed;
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+    return 25;
+  });
+  const selectedInstrumentRef = useRef<number>(selectedInstrument);
+
+  useEffect(() => {
+    selectedInstrumentRef.current = selectedInstrument;
+  }, [selectedInstrument]);
+
+  // Synchronize instrument choice across all AlphaTexRenderer instances on the page
+  useEffect(() => {
+    const handleInstrumentSync = (e: Event) => {
+      const customEvent = e as CustomEvent<{ program: number }>;
+      const newProgram = customEvent.detail?.program;
+      if (newProgram && GUITAR_INSTRUMENTS.some(inst => inst.id === newProgram)) {
+        if (selectedInstrumentRef.current !== newProgram) {
+          setSelectedInstrument(newProgram);
+          selectedInstrumentRef.current = newProgram;
+          if (apiRef.current?.score) {
+            applyInstrumentToScore(apiRef.current.score, newProgram);
+            try {
+              apiRef.current.loadMidiForScore();
+            } catch (err) {
+              console.warn('Failed to update MIDI on instrument sync:', err);
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
+    return () => {
+      window.removeEventListener(INSTRUMENT_CHANGE_EVENT, handleInstrumentSync);
+    };
+  }, []);
 
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
@@ -125,12 +208,26 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           if (isMounted) setStatus(`Loaded ${title}`);
         });
 
+        api.scoreLoaded.on((score: any) => {
+          if (isMounted) {
+            applyInstrumentToScore(score, selectedInstrumentRef.current);
+          }
+        });
+
         api.playerReady.on(() => {
           if (isMounted) {
             setPlayerReady(true);
             // Adjust playback speed to match desired tempo (default AlphaTab tempo is 120 BPM)
             if (tempo && api) {
               api.playbackSpeed = tempo / 120;
+            }
+            if (api.score) {
+              applyInstrumentToScore(api.score, selectedInstrumentRef.current);
+              try {
+                api.loadMidiForScore();
+              } catch (e) {
+                console.warn('Failed to load MIDI on player ready:', e);
+              }
             }
           }
         });
@@ -223,6 +320,41 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       return newVal;
     });
   }, []);
+
+  const handleInstrumentChange = useCallback((program: number) => {
+    setSelectedInstrument(program);
+    selectedInstrumentRef.current = program;
+
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(STORAGE_KEY, program.toString());
+        window.dispatchEvent(
+          new CustomEvent(INSTRUMENT_CHANGE_EVENT, { detail: { program } })
+        );
+      } catch (e) {
+        console.warn('Failed to persist instrument preference:', e);
+      }
+    }
+
+    if (apiRef.current?.score) {
+      const wasPlaying = playerState === 1;
+      applyInstrumentToScore(apiRef.current.score, program);
+      try {
+        apiRef.current.loadMidiForScore();
+        if (wasPlaying) {
+          setTimeout(() => {
+            try {
+              apiRef.current?.play();
+            } catch {
+              // ignore
+            }
+          }, 50);
+        }
+      } catch (e) {
+        console.warn('Failed to reload MIDI for instrument change:', e);
+      }
+    }
+  }, [playerState]);
 
   const formatTime = (ms: number) => {
     const totalSeconds = Math.floor(ms / 1000);
@@ -361,6 +493,26 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               title={`${playbackSpeed}x speed`}
             />
             <span className="text-xs text-gray-700 font-medium min-w-[28px]">{playbackSpeed}x</span>
+          </div>
+
+          {/* Sound / Instrument Selector */}
+          <div className="flex items-center gap-1.5">
+            <label className="flex items-center gap-1 text-xs text-gray-600">
+              <span>Sound:</span>
+              <select
+                value={selectedInstrument}
+                onChange={(e) => handleInstrumentChange(parseInt(e.target.value, 10))}
+                disabled={!playerReady}
+                className="text-xs bg-white text-gray-700 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Choose guitar sound"
+              >
+                {GUITAR_INSTRUMENTS.map((inst) => (
+                  <option key={inst.id} value={inst.id}>
+                    {inst.icon} {inst.label}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
 
           {/* Metronome & Count-in */}
