@@ -3,13 +3,6 @@
 import React, { useState } from "react";
 import SimpleFretboardDiagram from "@/components/SimpleFretboardDiagram";
 
-interface ChordProgression {
-  section: string;
-  progression: string;
-  romanNumerals: string;
-  description: string;
-}
-
 interface ChordProgressionVisualizationProps {
   songData: any;
 }
@@ -45,19 +38,24 @@ const ImprovedChordProgressionVisualization: React.FC<ChordProgressionVisualizat
   };
 
   return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Chord Progressions</h2>
+    <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl backdrop-blur-sm">
+      <div className="flex items-center gap-2 mb-6">
+        <span className="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+          Harmonic Engine
+        </span>
+        <h2 className="text-2xl font-black text-white">Chord Progressions & Movement</h2>
+      </div>
 
       {/* Progression Selector Tabs */}
-      <div className="flex flex-wrap gap-2 mb-6 border-b border-gray-200">
+      <div className="flex flex-wrap gap-2 mb-6 pb-4 border-b border-slate-800">
         {progressions.map((prog, index) => (
           <button
             key={index}
             onClick={() => setSelectedProgression(index)}
-            className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${
+            className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
               selectedProgression === index
-                ? 'text-blue-600 border-blue-600'
-                : 'text-gray-600 border-transparent hover:text-gray-800 hover:border-gray-300'
+                ? 'bg-amber-500 text-slate-950 shadow-md font-black'
+                : 'bg-slate-950 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
             }`}
           >
             {prog.section}
@@ -67,44 +65,50 @@ const ImprovedChordProgressionVisualization: React.FC<ChordProgressionVisualizat
 
       {/* Current Progression Info */}
       <div className="mb-6">
-        <div className="bg-white rounded-lg p-4 border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+        <div className="bg-slate-950 rounded-xl p-5 sm:p-6 border border-slate-800">
+          <h3 className="text-base font-bold text-white mb-3">
             {currentProgression?.section}
           </h3>
 
           {/* Progression Display */}
-          <div className="mb-4">
-            <div className="text-2xl font-mono font-bold text-gray-800 mb-1">
+          <div className="mb-4 bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+            <div className="text-xl sm:text-2xl font-mono font-black text-amber-300 mb-1 tracking-wide">
               {currentProgression?.progression}
             </div>
             {currentProgression?.romanNumerals && currentProgression.romanNumerals !== currentProgression.progression && (
-              <div className="text-lg font-mono text-blue-600">
-                {currentProgression.romanNumerals}
+              <div className="text-sm font-mono font-bold text-cyan-400">
+                Formula: {currentProgression.romanNumerals}
               </div>
             )}
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 mb-4">
-            {currentProgression?.description}
-          </p>
+          {currentProgression?.description && (
+            <p className="text-xs text-slate-300 leading-relaxed mb-4">
+              {currentProgression?.description}
+            </p>
+          )}
 
           {/* Theory Explanation */}
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-3 mb-4">
-            <h4 className="font-medium text-blue-900 mb-1">Theory Insight:</h4>
-            <p className="text-sm text-blue-800">
+          <div className="bg-slate-900/80 rounded-xl border border-amber-500/30 p-4 mb-6">
+            <h4 className="font-bold text-amber-300 text-xs mb-1.5 flex items-center gap-1.5">
+              <span>💡</span> Theory Insight:
+            </h4>
+            <p className="text-xs text-slate-300 leading-relaxed">
               {getTheoryExplanation(currentProgression)}
             </p>
           </div>
 
           {/* Chord Diagrams - Only unique chords */}
-          <div className="mt-4">
-            <h4 className="font-medium text-gray-800 mb-3">Chord Shapes Used:</h4>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div>
+            <h4 className="font-bold text-slate-300 text-xs uppercase tracking-wider mb-3">Chord Shapes In This Section:</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
               {getUniqueChords(currentProgression?.chords || currentProgression?.progression || "").map((chord, idx) => (
-                <div key={idx} className="text-center">
-                  <SimpleFretboardDiagram chord={chord} />
-                  <p className="text-sm font-mono mt-1 text-gray-700">{chord}</p>
+                <div key={idx} className="bg-slate-900 p-2.5 rounded-xl border border-slate-800 text-center">
+                  <div className="scale-75 origin-center">
+                    <SimpleFretboardDiagram chord={chord} />
+                  </div>
+                  <p className="text-xs font-mono font-bold mt-1 text-amber-300">{chord}</p>
                 </div>
               ))}
             </div>
@@ -114,17 +118,20 @@ const ImprovedChordProgressionVisualization: React.FC<ChordProgressionVisualizat
 
       {/* Harmonic Function Reference */}
       {songData.musicalAnalysis?.chordProgressions?.harmonicFunction && (
-        <div className="bg-white rounded-lg p-4 border border-gray-200">
-          <h4 className="font-medium text-gray-800 mb-3">Harmonic Functions:</h4>
-          <ul className="text-sm text-gray-600 space-y-1">
-            {songData.musicalAnalysis.chordProgressions.harmonicFunction.slice(0, 3).map((func: string, idx: number) => (
-              <li key={idx} className="flex">
-                <span className="font-mono font-medium text-gray-800 mr-2">
-                  {func.split(' - ')[0]}:
-                </span>
-                <span>{func.split(' - ')[1]}</span>
-              </li>
-            ))}
+        <div className="bg-slate-950 rounded-xl p-5 border border-slate-800">
+          <h4 className="font-bold text-slate-200 text-xs uppercase tracking-wider mb-3">Harmonic Functions & Roles:</h4>
+          <ul className="text-xs text-slate-300 space-y-2">
+            {songData.musicalAnalysis.chordProgressions.harmonicFunction.slice(0, 4).map((func: string, idx: number) => {
+              const parts = func.split(' - ');
+              return (
+                <li key={idx} className="flex items-start gap-2 bg-slate-900/80 p-2.5 rounded-lg border border-slate-800">
+                  <span className="font-mono font-bold text-amber-400 min-w-[80px]">
+                    {parts[0]}
+                  </span>
+                  <span className="text-slate-300">{parts[1] || ''}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
@@ -136,14 +143,14 @@ const ImprovedChordProgressionVisualization: React.FC<ChordProgressionVisualizat
 function getTheoryExplanation(progression: any): string {
   const romanNumerals = progression?.romanNumerals || "";
 
-  if (romanNumerals.includes("I - IV - V")) {
+  if (romanNumerals.includes("I - IV - V") || romanNumerals.includes("i - iv - v")) {
     return "The I-IV-V progression is the foundation of rock, blues, and countless other genres. The I chord (tonic) establishes home, IV (subdominant) creates movement, and V (dominant) builds tension that resolves back to I.";
   }
   if (romanNumerals.includes("I - V - vi - IV")) {
     return "This is one of the most popular progressions in modern music. The vi chord adds emotional depth, creating a bittersweet quality that works in both uplifting and melancholic contexts.";
   }
-  if (romanNumerals.includes("♭VI") || romanNumerals.includes("♭III") || romanNumerals.includes("♭VII")) {
-    return "These borrowed chords from the parallel minor key add darker, more dramatic colors to the progression. This modal interchange is common in rock and metal music.";
+  if (romanNumerals.includes("♭VI") || romanNumerals.includes("♭III") || romanNumerals.includes("♭VII") || romanNumerals.includes("bVII")) {
+    return "These borrowed chords from the parallel minor key add darker, more dramatic colors to the progression. This modal interchange gives rock and metal its signature swagger.";
   }
   if (romanNumerals.includes("ii - V - I")) {
     return "The ii-V-I is the cornerstone of jazz harmony. The ii chord prepares the dominant V, which then resolves to I, creating smooth voice leading and a satisfying resolution.";

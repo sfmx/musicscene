@@ -95,7 +95,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
     const scaleNotes = parseScaleNotes(selectedScaleData?.notes || '');
 
     return (
-      <div className="bg-gray-50 p-4 rounded-xl">
+      <div className="bg-slate-950 p-4 rounded-xl border border-slate-800">
         {/* Fret number row */}
         <div className="flex mb-3">
           <div className="w-8"></div> {/* Space for string labels */}
@@ -360,10 +360,15 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
   };
 
   return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">
-        Scale Patterns in {primaryKey}
-      </h3>
+    <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl backdrop-blur-sm">
+      <div className="flex items-center gap-2 mb-6">
+        <span className="text-xs font-bold uppercase tracking-widest text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+          Fretboard Geometry
+        </span>
+        <h3 className="text-xl sm:text-2xl font-black text-white">
+          Scale Patterns in {primaryKey}
+        </h3>
+      </div>
 
       {/* Scale and Fret Selector */}
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -373,10 +378,10 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
             <button
               key={index}
               onClick={() => setSelectedScale(index)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
                 selectedScale === index
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                  ? 'bg-amber-500 text-slate-950 shadow-md'
+                  : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white hover:bg-slate-800'
               }`}
             >
               {scale.scale}
@@ -388,20 +393,20 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
         <div className="flex gap-2 sm:ml-auto">
           <button
             onClick={() => setNumFrets(12)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
               numFrets === 12
-                ? 'bg-amber-600 text-white'
-                : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white'
             }`}
           >
             12 Frets
           </button>
           <button
             onClick={() => setNumFrets(24)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
               numFrets === 24
-                ? 'bg-amber-600 text-white'
-                : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white'
             }`}
           >
             24 Frets
@@ -410,48 +415,48 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
       </div>
 
       {/* Selected Scale Info */}
-      <div className="mb-6">
-        <h4 className="font-semibold text-gray-900 mb-2">
+      <div className="mb-6 bg-slate-950 p-4 rounded-xl border border-slate-800">
+        <h4 className="font-bold text-white text-base mb-2">
           {scales[selectedScale]?.scale}
         </h4>
-        <p className="text-gray-600 mb-2">
-          <strong>Notes:</strong> {scales[selectedScale]?.notes}
+        <p className="text-xs text-slate-300 mb-1.5 font-mono">
+          <strong className="text-amber-400">Notes:</strong> {scales[selectedScale]?.notes}
         </p>
-        <p className="text-gray-600">
-          <strong>Application:</strong> {scales[selectedScale]?.application}
+        <p className="text-xs text-slate-400 leading-relaxed">
+          <strong className="text-slate-300">Application:</strong> {scales[selectedScale]?.application}
         </p>
       </div>
 
       {/* Fretboard Visualization */}
       <div className="mb-4">
-        <h5 className="font-medium text-gray-800 mb-3">Fretboard Pattern</h5>
+        <h5 className="font-bold text-slate-300 text-xs uppercase tracking-wider mb-3">Interactive Fretboard Map</h5>
         {generateFretboard()}
       </div>
 
-      <div className="flex items-center gap-4 text-xs text-gray-600">
+      <div className="flex items-center gap-4 text-xs text-slate-400">
         <div className="flex items-center gap-2">
           <div
-            className="w-4 h-4 rounded-full"
+            className="w-3.5 h-3.5 rounded-full"
             style={{
               background: 'radial-gradient(circle at 30% 30%, #ff6b6b, #c92a2a)',
               border: '1px solid #ff8787',
               boxShadow: '0 2px 4px rgba(201, 42, 42, 0.4)'
             }}
           ></div>
-          <span className="font-medium">Root Note</span>
+          <span className="font-medium text-slate-300">Root Note</span>
         </div>
         <div className="flex items-center gap-2">
           <div
-            className="w-4 h-4 rounded-full"
+            className="w-3.5 h-3.5 rounded-full"
             style={{
               background: 'radial-gradient(circle at 30% 30%, #4dabf7, #1971c2)',
               border: '1px solid #74c0fc',
               boxShadow: '0 2px 4px rgba(25, 113, 194, 0.4)'
             }}
           ></div>
-          <span className="font-medium">Scale Notes</span>
+          <span className="font-medium text-slate-300">Scale Notes</span>
         </div>
-        <span className="text-gray-500">• Hover over notes for details</span>
+        <span className="text-slate-500 text-[11px]">• Hover over notes for details</span>
       </div>
     </div>
   );

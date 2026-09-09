@@ -19,7 +19,7 @@ const SectionNavigation: React.FC<SectionNavigationProps> = ({ sections }) => {
           }
         });
       },
-      { rootMargin: "-50% 0px -50% 0px" }
+      { rootMargin: "-30% 0px -40% 0px" }
     );
 
     sections.forEach((section) => {
@@ -49,9 +49,12 @@ const SectionNavigation: React.FC<SectionNavigationProps> = ({ sections }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-lg border border-gray-200 p-2 max-w-48">
-      <h4 className="text-xs font-semibold text-gray-900 mb-2 px-2">Jump to Section</h4>
-      <nav className="space-y-1">
+    <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-30 bg-slate-900/95 backdrop-blur-md shadow-2xl rounded-2xl border border-slate-700/80 p-2.5 max-w-48 hidden xl:block animate-fadeIn">
+      <div className="flex items-center gap-1.5 px-2 mb-2 pb-1.5 border-b border-slate-800">
+        <span className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
+        <h4 className="text-[10px] font-black uppercase tracking-wider text-slate-300">Quick Jump</h4>
+      </div>
+      <nav className="space-y-0.5">
         {sections.map((section) => {
           const sectionId = section.toLowerCase().replace(/\s+/g, '-');
           const isActive = activeSection === sectionId;
@@ -60,13 +63,14 @@ const SectionNavigation: React.FC<SectionNavigationProps> = ({ sections }) => {
             <button
               key={section}
               onClick={() => scrollToSection(sectionId)}
-              className={`w-full text-left px-2 py-1 text-xs rounded transition-colors ${
+              className={`w-full text-left px-2.5 py-1.5 text-xs rounded-lg transition-all flex items-center justify-between ${
                 isActive
-                  ? 'bg-blue-100 text-blue-800 font-medium'
-                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800'
+                  ? 'bg-amber-500/15 text-amber-300 font-bold border border-amber-500/30 shadow-sm'
+                  : 'text-slate-400 hover:bg-slate-800 hover:text-white'
               }`}
             >
-              {section}
+              <span className="truncate">{section}</span>
+              {isActive && <span className="text-[10px] text-amber-400">●</span>}
             </button>
           );
         })}

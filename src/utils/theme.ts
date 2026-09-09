@@ -65,15 +65,15 @@ export const themes = {
 export const getDifficultyColor = (difficulty: string): string => {
   switch (difficulty.toLowerCase()) {
     case 'beginner':
-      return 'bg-green-100 text-green-800 border-green-200';
+      return 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 font-semibold';
     case 'intermediate':
-      return 'bg-orange-100 text-orange-800 border-orange-200';
+      return 'bg-amber-500/15 text-amber-400 border-amber-500/30 font-semibold';
     case 'advanced':
-      return 'bg-red-100 text-red-800 border-red-200';
+      return 'bg-rose-500/15 text-rose-400 border-rose-500/30 font-semibold';
     case 'expert':
-      return 'bg-purple-100 text-purple-800 border-purple-200';
+      return 'bg-purple-500/15 text-purple-400 border-purple-500/30 font-semibold';
     default:
-      return 'bg-gray-100 text-gray-800 border-gray-200';
+      return 'bg-slate-800 text-slate-300 border-slate-700 font-semibold';
   }
 };
 

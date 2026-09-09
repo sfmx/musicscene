@@ -16,32 +16,45 @@ export default function SequentialNav({ nav, typeLabel }: Props) {
   const nextLabel = typeLabel ? `Next ${typeLabel}` : 'Next';
 
   return (
-    <section className="border-t border-gray-200 pt-8 mt-8">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+    <section className="border-t border-slate-800 pt-10 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {nav.prev ? (
           <Link
             href={nav.prev.href}
-            className="group flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+            className="group bg-slate-900/90 hover:bg-slate-800/90 border border-slate-800 hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center gap-3"
           >
-            <span className="mr-2 group-hover:-translate-x-1 transition-transform">&larr;</span>
+            <span className="text-amber-400 font-bold text-lg group-hover:-translate-x-1 transition-transform">
+              ←
+            </span>
             <div className="text-left">
-              <div className="text-xs text-gray-500">{prevLabel}</div>
-              <div className="text-sm font-medium">{nav.prev.label}</div>
+              <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                {prevLabel}
+              </div>
+              <div className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors line-clamp-1">
+                {nav.prev.label}
+              </div>
             </div>
           </Link>
         ) : (
           <div />
         )}
+
         {nav.next ? (
           <Link
             href={nav.next.href}
-            className="group flex items-center text-blue-600 hover:text-blue-800 transition-colors sm:text-right"
+            className="group bg-slate-900/90 hover:bg-slate-800/90 border border-slate-800 hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center justify-between sm:justify-end gap-3 text-right"
           >
-            <div className="text-right">
-              <div className="text-xs text-gray-500">{nextLabel}</div>
-              <div className="text-sm font-medium">{nav.next.label}</div>
+            <div className="text-left sm:text-right">
+              <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                {nextLabel}
+              </div>
+              <div className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors line-clamp-1">
+                {nav.next.label}
+              </div>
             </div>
-            <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+            <span className="text-amber-400 font-bold text-lg group-hover:translate-x-1 transition-transform">
+              →
+            </span>
           </Link>
         ) : (
           <div />
