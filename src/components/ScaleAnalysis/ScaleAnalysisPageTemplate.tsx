@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Layout from '@/components/Layout';
-import Header from '@/components/Header';
-
+import Header, { HeaderBadge } from '@/components/Header';
 import { getScaleData, ScaleData } from '@/lib/scaleData';
 import ScaleInfoSection from './ScaleInfoSection';
 import ScaleTheorySection from './ScaleTheorySection';
@@ -64,17 +63,17 @@ export default function ScaleAnalysisPageTemplate({
         <Header
           title="Loading Scale..."
           subtitle="Please wait while we load the scale data"
+          category="🎼 Scale Theory"
         />
-        <main className="max-w-6xl mx-auto px-4 py-8">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">Loading Scale Data</h1>
-            <p className="text-gray-600">
+        <div className="bg-slate-950 min-h-screen text-slate-100 py-16">
+          <main className="max-w-6xl mx-auto px-4 text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto mb-4"></div>
+            <h1 className="text-2xl font-bold text-white mb-2">Loading Scale Data</h1>
+            <p className="text-slate-400">
               Loading {displayName || scaleSlug} scale information...
             </p>
-          </div>
-        </main>
-
+          </main>
+        </div>
       </Layout>
     );
   }
@@ -85,23 +84,23 @@ export default function ScaleAnalysisPageTemplate({
         <Header
           title="Scale Not Found"
           subtitle={error || `Could not find scale data for "${scaleSlug}"`}
+          category="🎼 Scale Theory"
         />
-        <main className="max-w-6xl mx-auto px-4 py-8">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">Scale Not Found</h1>
-            <p className="text-gray-600 mb-8">
+        <div className="bg-slate-950 min-h-screen text-slate-100 py-16">
+          <main className="max-w-6xl mx-auto px-4 text-center">
+            <h1 className="text-2xl font-bold text-white mb-4">Scale Not Found</h1>
+            <p className="text-slate-400 mb-8">
               {error || `The scale "${scaleSlug}" could not be found in our database.`}
             </p>
             <Link 
               href="/lessons/theory/scales" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+              className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold transition-colors"
             >
               <span className="mr-2">←</span>
               Back to Scale Theory
             </Link>
-          </div>
-        </main>
-
+          </main>
+        </div>
       </Layout>
     );
   }
@@ -110,77 +109,82 @@ export default function ScaleAnalysisPageTemplate({
   const subtitle = `${scaleData.scaleInfo.character} - ${scaleData.scaleInfo.intervalPattern} pattern`;
   const nav = getSequentialNav('scale', scaleSlug);
 
+  const badges: HeaderBadge[] = [
+    { label: 'Type', value: scaleData.scaleInfo.scaleType },
+    { label: 'Notes', value: `${scaleData.scaleInfo.noteCount} Notes` },
+    { label: 'Character', value: scaleData.scaleInfo.character }
+  ];
+
   return (
     <Layout>
       <Header
         title={title}
         subtitle={subtitle}
+        category="🎼 Guitar Scale Master Suite"
+        badges={badges}
       />
       
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        <Breadcrumbs pathname={`/lessons/theory/scales/${scaleSlug}`} pageTitle={scaleData.scaleInfo.name} />
+      <div className="bg-slate-950 min-h-screen text-slate-100 pb-20">
+        <main className="max-w-6xl mx-auto px-4 py-8">
+          <Breadcrumbs pathname={`/lessons/theory/scales/${scaleSlug}`} pageTitle={scaleData.scaleInfo.name} />
 
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-xl p-8 mb-12">
-          <h1 className="text-3xl font-bold mb-4">{scaleData.scaleInfo.name}</h1>
-          <p className="text-xl opacity-90 mb-4">
-            {scaleData.scaleInfo.character} scale with {scaleData.scaleInfo.noteCount} notes. 
-            This scale creates {scaleData.scaleInfo.mood.join(', ')} musical expressions.
-          </p>
-          <div className="flex flex-wrap gap-4 text-sm">
-            <span className="bg-white/20 px-3 py-1 rounded">{scaleData.scaleInfo.intervalPattern}</span>
-            <span className="bg-white/20 px-3 py-1 rounded">{scaleData.scaleInfo.noteCount} Notes</span>
-            <span className="bg-white/20 px-3 py-1 rounded">{scaleData.scaleInfo.character}</span>
-            <span className="bg-white/20 px-3 py-1 rounded">{scaleData.theory.mode}</span>
+          {/* Hero Section */}
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 p-8 mb-12 shadow-2xl">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-3">
+                <span>🎼</span> Scale Formula &amp; Interval Structure
+              </div>
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+                {scaleData.scaleInfo.name}
+              </h1>
+              <p className="text-lg text-slate-300 mb-6 max-w-3xl leading-relaxed">
+                {scaleData.scaleInfo.character} scale with {scaleData.scaleInfo.noteCount} notes. 
+                Creates {scaleData.scaleInfo.mood.join(', ')} musical expressions.
+              </p>
+              <div className="flex flex-wrap gap-2.5 text-xs font-medium">
+                <span className="bg-slate-950/80 border border-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg font-mono">
+                  {scaleData.scaleInfo.intervalPattern}
+                </span>
+                <span className="bg-slate-950/80 border border-slate-800 text-amber-300 px-3 py-1.5 rounded-lg font-mono">
+                  {scaleData.scaleInfo.noteCount} Notes
+                </span>
+                <span className="bg-slate-950/80 border border-slate-800 text-purple-300 px-3 py-1.5 rounded-lg">
+                  {scaleData.scaleInfo.character}
+                </span>
+                {scaleData.theory.mode && (
+                  <span className="bg-slate-950/80 border border-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg">
+                    {scaleData.theory.mode}
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Scale Information */}
-        <ScaleInfoSection scaleData={scaleData} />
+          <ScaleInfoSection scaleData={scaleData} />
+          <ScaleTheorySection scaleData={scaleData} />
+          <ScaleFretboardSection scaleData={scaleData} />
+          <LeadMagnetBanner />
+          <ScaleHarmonicSection scaleData={scaleData} />
+          <ScaleGenreSection scaleData={scaleData} />
+          <ScaleSongsSection scaleData={scaleData} />
+          <ScalePracticeSection scaleData={scaleData} />
+          <ScaleRelatedSection scaleData={scaleData} />
 
-        {/* Theory Fundamentals */}
-        <ScaleTheorySection scaleData={scaleData} />
+          {scaleData.gearRecommendations && scaleData.gearRecommendations.items.length > 0 && (
+            <GearRecommendations
+              title={scaleData.gearRecommendations.title}
+              items={scaleData.gearRecommendations.items}
+            />
+          )}
 
-        {/* Guitar Fretboard */}
-        <ScaleFretboardSection scaleData={scaleData} />
-
-        {/* Printable Lead Magnet Banner */}
-        <LeadMagnetBanner />
-
-        {/* Harmonic Applications */}
-        <ScaleHarmonicSection scaleData={scaleData} />
-
-        {/* Genre Applications */}
-        <ScaleGenreSection scaleData={scaleData} />
-
-        {/* Famous Songs */}
-        <ScaleSongsSection scaleData={scaleData} />
-
-        {/* Practice Exercises */}
-        <ScalePracticeSection scaleData={scaleData} />
-
-        {/* Related Scales */}
-        <ScaleRelatedSection scaleData={scaleData} />
-
-        {/* Gear Recommendations */}
-        {scaleData.gearRecommendations && scaleData.gearRecommendations.items.length > 0 && (
-          <GearRecommendations
-            title={scaleData.gearRecommendations.title}
-            items={scaleData.gearRecommendations.items}
-          />
-        )}
-
-        <SongsUsingThis type="scale" slug={scaleSlug} />
-
-        <AdSlot slotId="content-bottom" format="banner" />
-
-        <RelatedContentSection contentId={`scale:${scaleSlug}`} />
-
-        {/* Learning Path */}
-        <ScaleLearningPathSection scaleData={scaleData} />
-        <SequentialNav nav={nav} typeLabel="Scale" />
-      </main>
-
+          <SongsUsingThis type="scale" slug={scaleSlug} />
+          <AdSlot slotId="content-bottom" format="banner" />
+          <RelatedContentSection contentId={`scale:${scaleSlug}`} />
+          <ScaleLearningPathSection scaleData={scaleData} />
+          <SequentialNav nav={nav} typeLabel="Scale" />
+        </main>
+      </div>
     </Layout>
   );
 }

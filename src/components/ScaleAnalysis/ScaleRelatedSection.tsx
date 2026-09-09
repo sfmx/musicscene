@@ -10,41 +10,44 @@ interface ScaleRelatedSectionProps {
 
 export default function ScaleRelatedSection({ scaleData }: ScaleRelatedSectionProps) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Related Scales</h2>
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12">
+      <h2 className="text-2xl font-bold text-white mb-6 pb-3 border-b border-slate-800 flex items-center gap-2">
+        <span>🔄</span> Related Scales
+      </h2>
       
       <div className="grid md:grid-cols-2 gap-4">
         {scaleData.relatedScales.map((relatedScale, index) => (
-          <div key={index} className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-800 mb-2">{relatedScale.scale}</h3>
-            
-            <div className="space-y-2 text-sm">
-              <div>
-                <span className="font-medium text-gray-700">Relationship: </span>
-                <span className="text-gray-600">{relatedScale.relationship}</span>
-              </div>
+          <div key={index} className="bg-slate-950/80 rounded-xl p-5 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <h3 className="font-bold text-white text-base mb-2">{relatedScale.scale}</h3>
               
-              {relatedScale.differences && (
+              <div className="space-y-2 text-xs">
                 <div>
-                  <span className="font-medium text-gray-700">Differences: </span>
-                  <span className="text-gray-600">{relatedScale.differences}</span>
+                  <span className="font-semibold text-slate-400">Relationship: </span>
+                  <span className="text-slate-200">{relatedScale.relationship}</span>
                 </div>
-              )}
-              
-              {relatedScale.usage && (
-                <p className="text-gray-600 text-xs mt-2">
-                  <strong>Usage:</strong> {relatedScale.usage}
-                </p>
-              )}
+                
+                {relatedScale.differences && (
+                  <div>
+                    <span className="font-semibold text-slate-400">Differences: </span>
+                    <span className="text-amber-300">{relatedScale.differences}</span>
+                  </div>
+                )}
+                
+                {relatedScale.usage && (
+                  <p className="text-slate-400 mt-2">
+                    <strong className="text-slate-300">Usage:</strong> {relatedScale.usage}
+                  </p>
+                )}
+              </div>
             </div>
 
-            {/* Try to link to related scale if it exists */}
-            <div className="mt-3">
+            <div className="mt-4 pt-3 border-t border-slate-800/80">
               <Link 
                 href={`/lessons/theory/scales/${relatedScale.scale.toLowerCase().replace(/\s+/g, '-')}`}
-                className="text-blue-600 hover:text-blue-800 text-xs transition-colors"
+                className="text-cyan-400 hover:text-cyan-300 text-xs font-semibold transition-colors"
               >
-                Learn about {relatedScale.scale} →
+                Learn about {relatedScale.scale} &rarr;
               </Link>
             </div>
           </div>

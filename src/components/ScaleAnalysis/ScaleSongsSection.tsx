@@ -10,43 +10,45 @@ interface ScaleSongsSectionProps {
 
 export default function ScaleSongsSection({ scaleData }: ScaleSongsSectionProps) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Famous Songs Using This Scale</h2>
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12">
+      <h2 className="text-2xl font-bold text-white mb-6 pb-3 border-b border-slate-800 flex items-center gap-2">
+        <span>🎶</span> Famous Songs Using This Scale
+      </h2>
       
       <div className="grid md:grid-cols-2 gap-4">
         {scaleData.famousSongs.map((song, index) => (
-          <div key={index} className="border border-gray-200 rounded-lg p-4">
-            <div className="flex justify-between items-start mb-2">
+          <div key={index} className="bg-slate-950/80 rounded-xl p-5 border border-slate-800">
+            <div className="flex justify-between items-start mb-3">
               <div>
-                <h3 className="font-semibold text-gray-800">{song.title}</h3>
-                <p className="text-gray-600 text-sm">{song.artist}</p>
+                <h3 className="font-bold text-white text-base">{song.title}</h3>
+                <p className="text-slate-400 text-xs">{song.artist}</p>
               </div>
               {song.difficulty && (
-                <span className={`px-2 py-1 rounded text-xs ${getDifficultyColor(song.difficulty)}`}>
+                <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold ${getDifficultyColor(song.difficulty)}`}>
                   {song.difficulty}
                 </span>
               )}
             </div>
             
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Key:</span>
-                <span className="font-mono text-gray-800">{song.key}</span>
+            <div className="space-y-2 text-xs">
+              <div className="flex justify-between py-1 border-b border-slate-800/80">
+                <span className="text-slate-400">Key:</span>
+                <span className="font-mono text-cyan-300 font-bold">{song.key}</span>
               </div>
               {song.genre && (
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Genre:</span>
-                  <span className="text-gray-800">{song.genre}</span>
+                <div className="flex justify-between py-1 border-b border-slate-800/80">
+                  <span className="text-slate-400">Genre:</span>
+                  <span className="text-slate-200">{song.genre}</span>
                 </div>
               )}
               {song.usage && (
-                <p className="text-gray-600 text-xs">
-                  <strong>Usage:</strong> {song.usage}
+                <p className="text-slate-300 pt-1">
+                  <strong className="text-slate-400">Usage:</strong> {song.usage}
                 </p>
               )}
               {song.learningValue && (
-                <p className="text-blue-600 text-xs bg-blue-50 p-2 rounded">
-                  <strong>Learning Value:</strong> {song.learningValue}
+                <p className="text-amber-300/90 bg-amber-950/20 border border-amber-500/20 p-2.5 rounded-lg mt-2">
+                  <strong className="text-amber-300">Learning Value:</strong> {song.learningValue}
                 </p>
               )}
             </div>
