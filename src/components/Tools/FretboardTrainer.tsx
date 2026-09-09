@@ -120,6 +120,7 @@ export default function FretboardTrainer() {
   const [finderTargetNote, setFinderTargetNote] = useState<string>('C');
   const [finderFoundLocations, setFinderFoundLocations] = useState<Set<string>>(new Set());
   const [finderFeedback, setFinderFeedback] = useState<string>('');
+  const [finderCompleted, setFinderCompleted] = useState<boolean>(false);
 
   // Audio synthesis
   const getAudioContext = () => {
@@ -275,10 +276,24 @@ export default function FretboardTrainer() {
     }
   };
 
+  const playVictoryFanfare = () => {
+    if (!soundEnabled) return;
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const fanfareNotes = [60, 64, 67, 72, 76]; // C4, E4, G4, C5, E5 arpeggio
+      fanfareNotes.forEach((midi, idx) => {
+        setTimeout(() => playMidiNote(midi, 0.7), idx * 110);
+      });
+    } catch (e) {
+      // Ignore
+    }
+  };
+
   const totalFinderInstances = useMemo(() => {
     let count = 0;
     for (let s = 0; s < 6; s++) {
-      for (let f = 0; f <= 12; f++) {
+      for (let f = 0; f <= TOTAL_FRETS; f++) {
         if (getNoteForFret(s, f) === finderTargetNote) {
           count++;
         }
@@ -287,21 +302,48 @@ export default function FretboardTrainer() {
     return count;
   }, [finderTargetNote]);
 
+  const getNextNote = (current: string) => {
+    const idx = NOTES.indexOf(current);
+    return NOTES[(idx + 1) % NOTES.length];
+  };
+
+  const handleTargetNoteChange = (note: string) => {
+    setFinderTargetNote(note);
+    setFinderFoundLocations(new Set());
+    setFinderFeedback('');
+    setFinderCompleted(false);
+  };
+
+  const selectNextFinderNote = () => {
+    handleTargetNoteChange(getNextNote(finderTargetNote));
+  };
+
+  const resetFinder = () => {
+    setFinderFoundLocations(new Set());
+    setFinderFeedback('');
+    setFinderCompleted(false);
+  };
+
   const handleFinderFretClick = (stringIndex: number, fret: number) => {
     const note = getNoteForFret(stringIndex, fret);
     playMidiNote(getMidiForFret(stringIndex, fret));
 
     const key = stringIndex + '-' + fret;
     if (note === finderTargetNote) {
+      if (finderFoundLocations.has(key)) {
+        return; // Already found this exact position
+      }
       playSoundFeedback(true);
       const updated = new Set(finderFoundLocations);
       updated.add(key);
       setFinderFoundLocations(updated);
 
-      if (updated.size === totalFinderInstances) {
-        setFinderFeedback('Incredible! You found all ' + totalFinderInstances + ' instances of ' + finderTargetNote + ' up to fret 12!');
+      if (updated.size >= totalFinderInstances) {
+        setFinderCompleted(true);
+        playVictoryFanfare();
+        setFinderFeedback('Incredible! You found all ' + totalFinderInstances + ' positions of ' + finderTargetNote + ' across the fretboard!');
       } else {
-        setFinderFeedback('Found ' + updated.size + ' of ' + totalFinderInstances + ' positions.');
+        setFinderFeedback('Found ' + updated.size + ' of ' + totalFinderInstances + ' positions. Keep hunting!');
       }
     } else {
       playSoundFeedback(false);
@@ -376,7 +418,10 @@ export default function FretboardTrainer() {
         return (
           <button
             onClick={() => playMidiNote(midi)}
-            className="w-8 h-8 rounded-full bg-yellow-400 text-slate-950 font-black text-xs border-2 border-white shadow-md flex items-center justify-center ring-2 ring-yellow-300"
+            className={'w-8 h-8 rounded-full font-black text-xs border-2 shadow-md flex items-center justify-center transition-all cursor-pointer ' +
+              (finderCompleted
+                ? 'bg-emerald-400 text-slate-950 border-white ring-4 ring-emerald-300 shadow-emerald-400/50 animate-pulse'
+                : 'bg-yellow-400 text-slate-950 border-white ring-2 ring-yellow-300')}
           >
             {note}
           </button>
@@ -386,8 +431,10 @@ export default function FretboardTrainer() {
       return (
         <button
           onClick={() => handleFinderFretClick(stringIndex, fret)}
-          className="w-7 h-7 rounded-full bg-white/5 hover:bg-white/20 transition-all flex items-center justify-center text-[10px] text-white/0 hover:text-white/40"
-          title="Click to guess this note"
+          disabled={finderCompleted}
+          className={'w-7 h-7 rounded-full bg-white/5 hover:bg-white/20 transition-all flex items-center justify-center text-[10px] ' +
+            (finderCompleted ? 'opacity-20 cursor-default' : 'text-white/0 hover:text-white/40 cursor-pointer')}
+          title={finderCompleted ? 'All found!' : 'Click to guess this note'}
         >
           •
         </button>
@@ -804,38 +851,76 @@ export default function FretboardTrainer() {
         {/* ================= MODE 3: NOTE FINDER ================= */}
         {activeTab === 'finder' && (
           <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-6">
-            <div className="bg-gradient-to-r from-purple-700 to-indigo-800 text-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
-              <div>
-                <span className="text-xs uppercase font-bold tracking-wider text-purple-200">
-                  Fretboard Note Hunt
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-black mt-1">
-                  Find every single <span className="text-yellow-300 font-extrabold">{finderTargetNote}</span> on the fretboard!
-                </h3>
-                <p className="text-purple-200 text-xs sm:text-sm mt-1">
-                  Click notes directly on the fretboard below to locate all {totalFinderInstances} positions up to fret 12.
-                </p>
+            {/* End State Success Celebration Banner */}
+            {finderCompleted ? (
+              <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white p-6 sm:p-8 rounded-2xl shadow-xl border-2 border-emerald-300/80 flex flex-col md:flex-row items-center justify-between gap-6 animate-fadeIn">
+                <div className="flex items-center gap-5 text-center md:text-left">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/20 border-2 border-white/40 flex items-center justify-center text-3xl sm:text-4xl shadow-inner shrink-0">
+                    🎉
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 justify-center md:justify-start mb-1">
+                      <span className="text-xs uppercase font-extrabold tracking-wider bg-emerald-950/40 text-emerald-200 px-3 py-0.5 rounded-full border border-emerald-400/40">
+                        🏆 Note Hunt Complete!
+                      </span>
+                      <span className="text-xs text-emerald-100 font-semibold">
+                        {totalFinderInstances}/{totalFinderInstances} (100%) Found
+                      </span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+                      Outstanding! You found every &apos;{finderTargetNote}&apos;!
+                    </h3>
+                    <p className="text-emerald-100 text-xs sm:text-sm mt-1 max-w-xl leading-relaxed">
+                      You have mastered all {totalFinderInstances} positions of <strong>{finderTargetNote}</strong> across all 6 strings (frets 0 to {TOTAL_FRETS}). This octave-visualization skill is essential for moving chord grips and lead solos anywhere on the guitar.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row md:flex-col items-center gap-2.5 shrink-0 w-full sm:w-auto">
+                  <button
+                    onClick={selectNextFinderNote}
+                    className="w-full sm:w-auto px-6 py-3.5 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-sm rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <span>Hunt Next Note ({getNextNote(finderTargetNote)}) ➔</span>
+                  </button>
+                  <button
+                    onClick={resetFinder}
+                    className="w-full sm:w-auto px-4 py-2 bg-white/15 hover:bg-white/25 text-white font-bold text-xs rounded-lg transition-all border border-white/20 cursor-pointer text-center"
+                  >
+                    ↺ Replay &apos;{finderTargetNote}&apos;
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-center">
-                  <div className="text-xs text-purple-200 uppercase font-bold">Found</div>
-                  <div className="text-2xl font-black text-yellow-300">
-                    {finderFoundLocations.size} / {totalFinderInstances}
+            ) : (
+              <div className="bg-gradient-to-r from-purple-700 to-indigo-800 text-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                  <span className="text-xs uppercase font-bold tracking-wider text-purple-200">
+                    Fretboard Note Hunt
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black mt-1">
+                    Find every single <span className="text-yellow-300 font-extrabold">{finderTargetNote}</span> on the fretboard!
+                  </h3>
+                  <p className="text-purple-200 text-xs sm:text-sm mt-1">
+                    Click notes directly on the fretboard below to locate all {totalFinderInstances} positions across all 6 strings (frets 0 to {TOTAL_FRETS}).
+                  </p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-center">
+                    <div className="text-xs text-purple-200 uppercase font-bold">Found</div>
+                    <div className="text-2xl font-black text-yellow-300">
+                      {finderFoundLocations.size} / {totalFinderInstances}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs font-bold uppercase tracking-wider text-slate-500 mr-2">Choose Target Note:</span>
               {NOTES.map((n) => (
                 <button
                   key={n}
-                  onClick={() => {
-                    setFinderTargetNote(n);
-                    setFinderFoundLocations(new Set());
-                    setFinderFeedback('');
-                  }}
+                  onClick={() => handleTargetNoteChange(n)}
                   className={'px-3 py-1.5 text-xs font-bold rounded-lg border transition-all ' +
                     (finderTargetNote === n
                       ? 'bg-purple-600 text-white border-purple-700 shadow-md ring-2 ring-purple-300'
@@ -846,9 +931,12 @@ export default function FretboardTrainer() {
               ))}
             </div>
 
-            {finderFeedback && (
-              <div className="p-3.5 bg-purple-50 text-purple-900 border border-purple-200 rounded-xl text-sm font-semibold">
-                {finderFeedback}
+            {finderFeedback && !finderCompleted && (
+              <div className="p-3.5 bg-purple-50 text-purple-900 border border-purple-200 rounded-xl text-sm font-semibold flex items-center justify-between">
+                <span>{finderFeedback}</span>
+                <span className="text-xs text-purple-600 font-bold">
+                  {finderFoundLocations.size} / {totalFinderInstances}
+                </span>
               </div>
             )}
           </div>
