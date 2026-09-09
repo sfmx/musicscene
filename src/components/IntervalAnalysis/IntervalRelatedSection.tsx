@@ -7,14 +7,16 @@ interface Props {
 
 export default function IntervalRelatedSection({ intervals }: Props) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Related Intervals & Comparisons</h2>
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12">
+      <h2 className="text-2xl font-bold text-white mb-6 pb-3 border-b border-slate-800 flex items-center gap-2">
+        <span>🔄</span> Related Intervals &amp; Comparisons
+      </h2>
       <div className="grid md:grid-cols-3 gap-6">
         {intervals.map((interval, i) => (
-          <div key={i} className={`${interval.colorBg} rounded-lg p-4 ${interval.colorBorder}`}>
-            <h3 className={`font-semibold ${interval.colorTitle} mb-2`}>{interval.title}</h3>
-            <p className={`text-sm ${interval.colorText} mb-2`}>{interval.description}</p>
-            <p className={`text-xs ${interval.colorDetail}`}>{interval.detail}</p>
+          <div key={i} className="bg-slate-950/80 rounded-xl p-5 border border-slate-800">
+            <h3 className="font-bold text-white mb-2 text-sm">{interval.title}</h3>
+            <p className="text-xs text-slate-300 mb-2">{interval.description}</p>
+            <p className="text-xs text-cyan-300 font-mono">{interval.detail}</p>
           </div>
         ))}
       </div>

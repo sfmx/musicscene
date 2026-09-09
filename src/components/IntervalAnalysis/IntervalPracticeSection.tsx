@@ -7,15 +7,20 @@ interface Props {
 
 export default function IntervalPracticeSection({ exercises }: Props) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-12">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Practice Exercises</h2>
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12">
+      <h2 className="text-2xl font-bold text-white mb-6 pb-3 border-b border-slate-800 flex items-center gap-2">
+        <span>⚡</span> Practice Exercises
+      </h2>
       <div className="grid md:grid-cols-3 gap-6">
         {exercises.map((cat, i) => (
-          <div key={i} className={`${cat.colorBg} rounded-lg p-4 ${cat.colorBorder}`}>
-            <h3 className={`text-lg font-semibold ${cat.colorTitle} mb-3`}>{cat.title}</h3>
-            <ul className={`${cat.colorText} text-sm space-y-2`}>
+          <div key={i} className="bg-slate-950/80 rounded-xl p-5 border border-slate-800">
+            <h3 className="text-base font-bold text-cyan-300 mb-3">{cat.title}</h3>
+            <ul className="text-slate-300 text-xs space-y-2">
               {cat.items.map((item, j) => (
-                <li key={j}>• {item}</li>
+                <li key={j} className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-0.5">•</span>
+                  <span>{item}</span>
+                </li>
               ))}
             </ul>
           </div>
