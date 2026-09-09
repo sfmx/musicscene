@@ -18,9 +18,9 @@ interface AlphaTexRendererProps {
 }
 
 export const GUITAR_INSTRUMENTS = [
-  { id: 25, label: 'Steel Acoustic', icon: '🎸' },
-  { id: 24, label: 'Nylon Acoustic', icon: '🪕' },
-  { id: 27, label: 'Clean Electric', icon: '⚡' },
+  { id: 25, label: 'Steel', title: 'Steel Acoustic Guitar', icon: '🎸' },
+  { id: 24, label: 'Nylon', title: 'Nylon Acoustic Guitar', icon: '🪕' },
+  { id: 27, label: 'Electric', title: 'Clean Electric Guitar', icon: '⚡' },
 ] as const;
 
 const STORAGE_KEY = 'alphatab_preferred_instrument';
@@ -220,14 +220,6 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             // Adjust playback speed to match desired tempo (default AlphaTab tempo is 120 BPM)
             if (tempo && api) {
               api.playbackSpeed = tempo / 120;
-            }
-            if (api.score) {
-              applyInstrumentToScore(api.score, selectedInstrumentRef.current);
-              try {
-                api.loadMidiForScore();
-              } catch (e) {
-                console.warn('Failed to load MIDI on player ready:', e);
-              }
             }
           }
         });
@@ -497,22 +489,29 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
           {/* Sound / Instrument Selector */}
           <div className="flex items-center gap-1.5">
-            <label className="flex items-center gap-1 text-xs text-gray-600">
-              <span>Sound:</span>
-              <select
-                value={selectedInstrument}
-                onChange={(e) => handleInstrumentChange(parseInt(e.target.value, 10))}
-                disabled={!playerReady}
-                className="text-xs bg-white text-gray-700 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-                title="Choose guitar sound"
-              >
-                {GUITAR_INSTRUMENTS.map((inst) => (
-                  <option key={inst.id} value={inst.id}>
-                    {inst.icon} {inst.label}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <span className="text-xs text-gray-600 font-medium">Sound:</span>
+            <div className="inline-flex rounded-lg bg-gray-200/80 p-0.5" role="group">
+              {GUITAR_INSTRUMENTS.map((inst) => {
+                const isActive = selectedInstrument === inst.id;
+                return (
+                  <button
+                    key={inst.id}
+                    type="button"
+                    onClick={() => handleInstrumentChange(inst.id)}
+                    disabled={!playerReady}
+                    className={`text-xs px-2.5 py-1 rounded-md transition-all flex items-center gap-1 font-medium ${
+                      isActive
+                        ? 'bg-white text-blue-700 shadow-xs ring-1 ring-black/5'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-white/50'
+                    } ${!playerReady ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+                    title={inst.title}
+                  >
+                    <span>{inst.icon}</span>
+                    <span>{inst.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Metronome & Count-in */}
