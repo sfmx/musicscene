@@ -4,15 +4,19 @@ const PDFDocument = require('c:/Source/musicscene/node_modules/pdfkit/js/pdfkit.
 
 function generateGuitarPDF() {
   const outputPath = path.resolve('c:/Source/musicscene/public/downloads/fretboard-interval-modal-roadmap.pdf');
+  const rootCopyPath = path.resolve('c:/Source/musicscene/fretboard-interval-modal-roadmap.pdf');
+  const outDirCopyPath = path.resolve('c:/Source/musicscene/out/downloads/fretboard-interval-modal-roadmap.pdf');
+
   const dir = path.dirname(outputPath);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
 
-  // Create PDF Document with A4 size and clean margins
+  // Create PDF Document with zero auto margins to completely eliminate unwanted auto-pagebreaks
   const doc = new PDFDocument({
     size: 'A4', // 595.28 x 841.89 pt
-    margins: { top: 36, bottom: 36, left: 36, right: 36 },
+    bufferPages: true,
+    margins: { top: 0, bottom: 0, left: 0, right: 0 },
     info: {
       Title: "The Ultimate Guitar Fretboard & Modal Roadmap",
       Author: "Jason Smith - MusicScene.com.au",
@@ -30,8 +34,8 @@ function generateGuitarPDF() {
     accent: '#2563EB',     // Blue
     dark: '#111827',       // Near Black
     gray: '#4B5563',       // Gray
-    lightGray: '#F3F4F6',  // Light background
-    border: '#E5E7EB',     // Border
+    lightGray: '#F8FAFC',  // Light background
+    border: '#E2E8F0',     // Border
     white: '#FFFFFF',
     root: '#DC2626',       // Red for Root
     third: '#D97706',      // Amber for 3rds
@@ -40,39 +44,39 @@ function generateGuitarPDF() {
     blueNote: '#0284C7'    // Sky Blue for b5
   };
 
-  function drawHeader(pageTitle, pageNumber) {
+  function drawHeaderAndFooter(pageTitle, pageNumber) {
     // Top banner
     doc.rect(36, 36, 523.28, 44).fill(colors.primary);
-    
+
     doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(14)
-       .text('MUSICSCENE.COM.AU', 48, 44, { characterSpacing: 1 });
-    
+       .text('MUSICSCENE.COM.AU', 48, 44, { characterSpacing: 1, lineBreak: false });
+
     doc.fillColor('#93C5FD').font('Helvetica').fontSize(9)
-       .text('GUITARIST\'S PRINTABLE REFERENCE GUIDE • BY JASON SMITH', 48, 62);
-    
+       .text("GUITARIST'S PRINTABLE REFERENCE GUIDE • BY JASON SMITH", 48, 62, { lineBreak: false });
+
     doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(11)
-       .text(pageTitle.toUpperCase(), 350, 52, { width: 195, align: 'right' });
+       .text(pageTitle.toUpperCase(), 330, 52, { width: 215, align: 'right', lineBreak: false });
 
     // Footer
     doc.rect(36, 805, 523.28, 0.75).fill(colors.border);
     doc.fillColor(colors.gray).font('Helvetica').fontSize(8)
-       .text('© MusicScene.com.au — Free interactive practice tools available online', 48, 812);
+       .text('© MusicScene.com.au — Free interactive practice tools available online', 48, 814, { lineBreak: false });
     doc.fillColor(colors.accent).font('Helvetica-Bold').fontSize(8)
-       .text(`Page ${pageNumber} of 3`, 480, 812, { width: 65, align: 'right' });
+       .text(`Page ${pageNumber} of 3`, 480, 814, { width: 65, align: 'right', lineBreak: false });
   }
 
   // ==========================================
   // PAGE 1: MASTER FRETBOARD NOTE NAVIGATION
   // ==========================================
-  drawHeader('1. Fretboard Note Map', 1);
+  drawHeaderAndFooter('1. Fretboard Note Map', 1);
 
-  let y = 92;
+  let y = 94;
   doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(16)
-     .text('The Master Fretboard Note Navigation System', 36, y);
-  
+     .text('The Master Fretboard Note Navigation System', 36, y, { lineBreak: false });
+
   y += 20;
   doc.fillColor(colors.gray).font('Helvetica').fontSize(9.5)
-     .text('Standard Guitar Tuning (E-A-D-G-B-E) • Complete 12-Fret Octave Grid with Root Landmarks', 36, y);
+     .text('Standard Guitar Tuning (E-A-D-G-B-E) • Complete 12-Fret Octave Grid with Root Landmarks', 36, y, { lineBreak: false });
 
   y += 24;
 
@@ -80,7 +84,7 @@ function generateGuitarPDF() {
   const fbX = 56;
   const fbY = y;
   const fbW = 485;
-  const fbH = 150;
+  const fbH = 145;
   const numFrets = 12;
   const fretW = fbW / numFrets;
   const stringH = fbH / 5;
@@ -90,7 +94,7 @@ function generateGuitarPDF() {
   doc.rect(fbX, fbY, fbW, fbH).strokeColor('#CBD5E1').lineWidth(1).stroke();
 
   // Nut (thicker line at fret 0)
-  doc.rect(fbX - 3, fbY, 4, fbH).fill('#334155');
+  doc.rect(fbX - 4, fbY, 4, fbH).fill('#334155');
 
   // Fret Lines
   for (let f = 1; f <= numFrets; f++) {
@@ -98,7 +102,7 @@ function generateGuitarPDF() {
     doc.moveTo(fx, fbY).lineTo(fx, fbY + fbH).strokeColor('#94A3B8').lineWidth(1.2).stroke();
     // Fret number below
     doc.fillColor(colors.gray).font('Helvetica-Bold').fontSize(8)
-       .text(f.toString(), fx - fretW / 2 - 3, fbY + fbH + 5);
+       .text(f.toString(), fx - fretW / 2 - 3, fbY + fbH + 5, { lineBreak: false });
   }
 
   // Fret Marker Inlays (dots at 3, 5, 7, 9, and double dot at 12)
@@ -116,23 +120,23 @@ function generateGuitarPDF() {
 
   // Guitar Strings & Notes (High E down to Low E)
   const strings = [
-    { name: 'E (1st)', notes: ['F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'], open: 'E' },
-    { name: 'B (2nd)', notes: ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'], open: 'B' },
-    { name: 'G (3rd)', notes: ['G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G'], open: 'G' },
-    { name: 'D (4th)', notes: ['D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D'], open: 'D' },
-    { name: 'A (5th)', notes: ['A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A'], open: 'A' },
-    { name: 'E (6th)', notes: ['F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'], open: 'E' }
+    { name: 'E (1st)', notes: ['F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'] },
+    { name: 'B (2nd)', notes: ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'] },
+    { name: 'G (3rd)', notes: ['G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G'] },
+    { name: 'D (4th)', notes: ['D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D'] },
+    { name: 'A (5th)', notes: ['A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A'] },
+    { name: 'E (6th)', notes: ['F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E'] }
   ];
 
-  // Draw Strings
+  // Draw Strings & Notes
   strings.forEach((str, i) => {
     const sy = fbY + i * stringH;
-    const strThickness = 0.6 + i * 0.35; // Thicker for lower strings
+    const strThickness = 0.6 + i * 0.35;
     doc.moveTo(fbX, sy).lineTo(fbX + fbW, sy).strokeColor('#64748B').lineWidth(strThickness).stroke();
 
     // Open String label
-    doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(8.5)
-       .text(str.name, fbX - 44, sy - 4);
+    doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(8)
+       .text(str.name, fbX - 44, sy - 4, { lineBreak: false });
 
     // Notes on frets
     str.notes.forEach((note, fIndex) => {
@@ -140,7 +144,6 @@ function generateGuitarPDF() {
       const isNatural = !note.includes('#');
       const isC = note === 'C';
 
-      // Draw Note Circle
       const r = isNatural ? 8.5 : 7;
       let circleColor = isNatural ? '#FFFFFF' : '#F1F5F9';
       let strokeColor = isNatural ? colors.primary : '#94A3B8';
@@ -155,15 +158,15 @@ function generateGuitarPDF() {
 
       doc.fillColor(textColor).font(isNatural ? 'Helvetica-Bold' : 'Helvetica')
          .fontSize(note.length > 1 ? 6.5 : 7.5)
-         .text(note, nx - 6, sy - (note.length > 1 ? 3 : 3.5), { width: 12, align: 'center' });
+         .text(note, nx - 6, sy - (note.length > 1 ? 3 : 3.5), { width: 12, align: 'center', lineBreak: false });
     });
   });
 
   // Fretboard Rule Boxes below
-  y = fbY + fbH + 28;
+  y = fbY + fbH + 26;
 
   doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(12)
-     .text('The 4 Core Fretboard Navigation Rules', 36, y);
+     .text('The 4 Core Fretboard Navigation Rules', 36, y, { lineBreak: false });
 
   y += 18;
 
@@ -189,44 +192,44 @@ function generateGuitarPDF() {
   const colW = 250;
   rules.forEach((r, idx) => {
     const rx = 36 + (idx % 2) * (colW + 23);
-    const ry = y + Math.floor(idx / 2) * 80;
+    const ry = y + Math.floor(idx / 2) * 78;
 
     // Card background
-    doc.rect(rx, ry, colW, 70).fill('#F8FAFC');
-    doc.rect(rx, ry, colW, 70).strokeColor('#E2E8F0').lineWidth(0.75).stroke();
+    doc.rect(rx, ry, colW, 68).fill('#F8FAFC');
+    doc.rect(rx, ry, colW, 68).strokeColor('#E2E8F0').lineWidth(0.75).stroke();
 
     doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(9)
-       .text(r.title, rx + 10, ry + 8, { width: colW - 20 });
+       .text(r.title, rx + 10, ry + 8, { width: colW - 20, lineBreak: false });
 
     doc.fillColor(colors.gray).font('Helvetica').fontSize(8)
        .text(r.desc, rx + 10, ry + 24, { width: colW - 20, lineGap: 1.5 });
   });
 
   // Bottom Callout on Page 1
-  const boxY = y + 175;
-  doc.rect(36, boxY, 523.28, 65).fill('#EFF6FF');
-  doc.rect(36, boxY, 523.28, 65).strokeColor('#BFDBFE').lineWidth(1).stroke();
+  const boxY = y + 168;
+  doc.rect(36, boxY, 523.28, 64).fill('#EFF6FF');
+  doc.rect(36, boxY, 523.28, 64).strokeColor('#BFDBFE').lineWidth(1).stroke();
 
   doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(10)
-     .text('PRO PRACTICE TIP: The 5-Minute Daily Anchor Fret Drill', 48, boxY + 10);
+     .text('PRO PRACTICE DRILL: The 5-Minute Daily Anchor Fret Drill', 48, boxY + 10, { lineBreak: false });
 
   doc.fillColor(colors.dark).font('Helvetica').fontSize(8.5)
-     .text('Pick ONE note each day (e.g., Tuesday = C). Find and play all C notes across all 6 strings in rhythm with a 60 BPM metronome. Within 12 days, fretboard hesitation completely disappears. Test your speed using the free online Fretboard Trainer at musicscene.com.au/lessons/practice/fretboard-trainer/', 48, boxY + 26, { width: 499, lineGap: 2 });
+     .text('Pick ONE note each day (e.g., Tuesday = C). Find and play all C notes across all 6 strings in rhythm with a 60 BPM metronome. Within 12 days, fretboard hesitation completely disappears. Test your speed using the free online Fretboard Trainer at musicscene.com.au/lessons/practice/fretboard-trainer/', 48, boxY + 25, { width: 499, lineGap: 2 });
 
 
   // ==========================================
   // PAGE 2: INTERVAL FORMULAS & THE 7 MODES
   // ==========================================
   doc.addPage();
-  drawHeader('2. Intervals & 7 Modes Matrix', 2);
+  drawHeaderAndFooter('2. Intervals & 7 Modes Matrix', 2);
 
-  y = 92;
+  y = 94;
   doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(15)
-     .text('The Universal Interval Formula Chart', 36, y);
+     .text('The Universal Interval Formula Chart', 36, y, { lineBreak: false });
 
   y += 16;
   doc.fillColor(colors.gray).font('Helvetica').fontSize(8.5)
-     .text('Intervals are the atomic building blocks of all chords and scales. Master the distance relative to the Root.', 36, y);
+     .text('Intervals are the atomic building blocks of all chords and scales. Master the distance relative to the Root.', 36, y, { lineBreak: false });
 
   y += 18;
 
@@ -238,11 +241,11 @@ function generateGuitarPDF() {
   // Table Header
   doc.rect(tableX, y, 523, 20).fill(colors.primary);
   doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(8);
-  doc.text('INTERVAL', tableX + 6, y + 6);
-  doc.text('SHORT', tableX + colWidths[0] + 6, y + 6);
-  doc.text('SEMITONES', tableX + colWidths[0] + colWidths[1] + 6, y + 6);
-  doc.text('HARMONIC ROLE & COLOR', tableX + colWidths[0] + colWidths[1] + colWidths[2] + 6, y + 6);
-  doc.text('GUITAR FRETBOARD SHAPE', tableX + colWidths[0] + colWidths[1] + colWidths[2] + colWidths[3] + 6, y + 6);
+  doc.text('INTERVAL', tableX + 6, y + 6, { lineBreak: false });
+  doc.text('SHORT', tableX + colWidths[0] + 6, y + 6, { lineBreak: false });
+  doc.text('SEMITONES', tableX + colWidths[0] + colWidths[1] + 6, y + 6, { lineBreak: false });
+  doc.text('HARMONIC ROLE & COLOR', tableX + colWidths[0] + colWidths[1] + colWidths[2] + 6, y + 6, { lineBreak: false });
+  doc.text('GUITAR FRETBOARD SHAPE', tableX + colWidths[0] + colWidths[1] + colWidths[2] + colWidths[3] + 6, y + 6, { lineBreak: false });
 
   y += 20;
 
@@ -268,19 +271,19 @@ function generateGuitarPDF() {
     doc.rect(tableX, y, 523, rowH).strokeColor('#E2E8F0').lineWidth(0.5).stroke();
 
     doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(7.5)
-       .text(iv.name, tableX + 6, y + 4.5);
+       .text(iv.name, tableX + 6, y + 4.5, { lineBreak: false });
 
     doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(7.5)
-       .text(iv.sym, tableX + colWidths[0] + 6, y + 4.5);
+       .text(iv.sym, tableX + colWidths[0] + 6, y + 4.5, { lineBreak: false });
 
     doc.fillColor(colors.gray).font('Helvetica').fontSize(7.5)
-       .text(iv.semi, tableX + colWidths[0] + colWidths[1] + 6, y + 4.5);
+       .text(iv.semi, tableX + colWidths[0] + colWidths[1] + 6, y + 4.5, { lineBreak: false });
 
     doc.fillColor(colors.dark).font('Helvetica').fontSize(7.5)
-       .text(iv.role, tableX + colWidths[0] + colWidths[1] + colWidths[2] + 6, y + 4.5);
+       .text(iv.role, tableX + colWidths[0] + colWidths[1] + colWidths[2] + 6, y + 4.5, { lineBreak: false });
 
     doc.fillColor(colors.accent).font('Helvetica-Oblique').fontSize(7)
-       .text(iv.shape, tableX + colWidths[0] + colWidths[1] + colWidths[2] + colWidths[3] + 6, y + 4.5);
+       .text(iv.shape, tableX + colWidths[0] + colWidths[1] + colWidths[2] + colWidths[3] + 6, y + 4.5, { lineBreak: false });
 
     y += rowH;
   });
@@ -289,22 +292,22 @@ function generateGuitarPDF() {
 
   // 7 Modes Matrix Section
   doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(15)
-     .text('The 7 Modes Quick-Reference Matrix', 36, y);
+     .text('The 7 Modes Quick-Reference Matrix', 36, y, { lineBreak: false });
 
   y += 14;
   doc.fillColor(colors.gray).font('Helvetica').fontSize(8.5)
-     .text('All 7 modes generated from the Major Scale ordered from Brightest to Darkest.', 36, y);
+     .text('All 7 modes generated from the Major Scale ordered from Brightest to Darkest.', 36, y, { lineBreak: false });
 
   y += 16;
 
   const modeColWidths = [65, 110, 80, 125, 143];
   doc.rect(tableX, y, 523, 20).fill(colors.primary);
   doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(8);
-  doc.text('MODE', tableX + 6, y + 6);
-  doc.text('INTERVAL FORMULA', tableX + modeColWidths[0] + 6, y + 6);
-  doc.text('CHARACTERISTIC', tableX + modeColWidths[0] + modeColWidths[1] + 6, y + 6);
-  doc.text('MOOD / FLAVOR', tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + 6, y + 6);
-  doc.text('FAMOUS ANTHEM EXAMPLE', tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + modeColWidths[3] + 6, y + 6);
+  doc.text('MODE', tableX + 6, y + 6, { lineBreak: false });
+  doc.text('INTERVAL FORMULA', tableX + modeColWidths[0] + 6, y + 6, { lineBreak: false });
+  doc.text('CHARACTERISTIC', tableX + modeColWidths[0] + modeColWidths[1] + 6, y + 6, { lineBreak: false });
+  doc.text('MOOD / FLAVOR', tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + 6, y + 6, { lineBreak: false });
+  doc.text('FAMOUS ANTHEM EXAMPLE', tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + modeColWidths[3] + 6, y + 6, { lineBreak: false });
 
   y += 20;
 
@@ -324,19 +327,19 @@ function generateGuitarPDF() {
     doc.rect(tableX, y, 523, 22).strokeColor('#E2E8F0').lineWidth(0.5).stroke();
 
     doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(8)
-       .text(m.name, tableX + 6, y + 6);
+       .text(m.name, tableX + 6, y + 6, { lineBreak: false });
 
     doc.fillColor(colors.primary).font('Helvetica-Bold').fontSize(7.5)
-       .text(m.formula, tableX + modeColWidths[0] + 6, y + 6);
+       .text(m.formula, tableX + modeColWidths[0] + 6, y + 6, { lineBreak: false });
 
     doc.fillColor(colors.accent).font('Helvetica-Bold').fontSize(7.5)
-       .text(m.char, tableX + modeColWidths[0] + modeColWidths[1] + 6, y + 6);
+       .text(m.char, tableX + modeColWidths[0] + modeColWidths[1] + 6, y + 6, { lineBreak: false });
 
     doc.fillColor(colors.dark).font('Helvetica').fontSize(7.5)
-       .text(m.mood, tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + 6, y + 6);
+       .text(m.mood, tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + 6, y + 6, { lineBreak: false });
 
     doc.fillColor(colors.gray).font('Helvetica-Oblique').fontSize(7.5)
-       .text(m.song, tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + modeColWidths[3] + 6, y + 6);
+       .text(m.song, tableX + modeColWidths[0] + modeColWidths[1] + modeColWidths[2] + modeColWidths[3] + 6, y + 6, { lineBreak: false });
 
     y += 22;
   });
@@ -346,15 +349,15 @@ function generateGuitarPDF() {
   // PAGE 3: THE 5 PENTATONIC BOXES & SOLO ENGINE
   // ==========================================
   doc.addPage();
-  drawHeader('3. Pentatonic & Soloing System', 3);
+  drawHeaderAndFooter('3. Pentatonic & Soloing System', 3);
 
-  y = 92;
+  y = 94;
   doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(15)
-     .text('The 5 Essential Pentatonic & Blues Box Shapes', 36, y);
+     .text('The 5 Essential Pentatonic & Blues Box Shapes', 36, y, { lineBreak: false });
 
   y += 16;
   doc.fillColor(colors.gray).font('Helvetica').fontSize(8.5)
-     .text('Connect these 5 interlocking CAGED boxes across the neck to unlock continuous fretboard flow in any key.', 36, y);
+     .text('Connect these 5 interlocking CAGED boxes across the neck to unlock continuous fretboard flow in any key.', 36, y, { lineBreak: false });
 
   y += 20;
 
@@ -364,11 +367,11 @@ function generateGuitarPDF() {
   const boxGap = 8.5;
 
   const boxes = [
-    { num: 'Box 1', name: 'Root on 6th String', caged: 'E-Shape Root', desc: 'The most popular soloing box. Root note on Strings 6 & 1.' },
-    { num: 'Box 2', name: 'The Extension Box', caged: 'D-Shape Root', desc: 'The "B.B. King" box. Sweet bends on strings 1, 2, and 3.' },
-    { num: 'Box 3', name: 'The Middle Bridge', caged: 'C-Shape Root', desc: 'Connects upper and lower registers across strings 5 to 3.' },
-    { num: 'Box 4', name: 'Root on 5th String', caged: 'A-Shape Root', desc: 'Second home base. Root note on String 5 & String 2.' },
-    { num: 'Box 5', name: 'The Low Anchor', caged: 'G-Shape Root', desc: 'Heavy bass riffing box. Connects back into Box 1.' }
+    { num: 'Box 1', caged: 'E-Shape Root', desc: 'The most popular soloing box. Root note on Strings 6 & 1.' },
+    { num: 'Box 2', caged: 'D-Shape Root', desc: 'The "B.B. King" box. Sweet bends on strings 1, 2, and 3.' },
+    { num: 'Box 3', caged: 'C-Shape Root', desc: 'Connects upper and lower registers across strings 5 to 3.' },
+    { num: 'Box 4', caged: 'A-Shape Root', desc: 'Second home base. Root note on String 5 & String 2.' },
+    { num: 'Box 5', caged: 'G-Shape Root', desc: 'Heavy bass riffing box. Connects back into Box 1.' }
   ];
 
   boxes.forEach((bx, bIdx) => {
@@ -382,10 +385,10 @@ function generateGuitarPDF() {
     // Box Title
     doc.rect(startX, startY, boxWidth, 22).fill(colors.primary);
     doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(9)
-       .text(bx.num.toUpperCase(), startX, startY + 6, { width: boxWidth, align: 'center' });
+       .text(bx.num.toUpperCase(), startX, startY + 6, { width: boxWidth, align: 'center', lineBreak: false });
 
     doc.fillColor(colors.dark).font('Helvetica-Bold').fontSize(7.5)
-       .text(bx.caged, startX + 4, startY + 28, { width: boxWidth - 8, align: 'center' });
+       .text(bx.caged, startX + 4, startY + 28, { width: boxWidth - 8, align: 'center', lineBreak: false });
 
     // Mini Fretboard Grid (5 frets, 6 strings)
     const gridX = startX + 10;
@@ -407,17 +410,12 @@ function generateGuitarPDF() {
       doc.moveTo(gridX, gridY + s * strStep).lineTo(gridX + gridW, gridY + s * strStep).strokeColor('#94A3B8').lineWidth(0.5).stroke();
     }
 
-    // Draw Box Characteristic Fingerings (Dots)
+    // Characteristic Fingerings (Dots)
     const sampleDots = [
-      // Box 1
       [[0, 0], [0, 3], [1, 0], [1, 2], [2, 0], [2, 2], [3, 0], [3, 2], [4, 0], [4, 3], [5, 0], [5, 3]],
-      // Box 2
       [[0, 1], [0, 3], [1, 0], [1, 3], [2, 0], [2, 2], [3, 0], [3, 2], [4, 1], [4, 3], [5, 1], [5, 3]],
-      // Box 3
       [[0, 0], [0, 2], [1, 0], [1, 2], [2, 0], [2, 3], [3, 0], [3, 2], [4, 0], [4, 3], [5, 0], [5, 2]],
-      // Box 4
       [[0, 0], [0, 2], [1, 0], [1, 3], [2, 0], [2, 2], [3, 0], [3, 2], [4, 1], [4, 3], [5, 0], [5, 2]],
-      // Box 5
       [[0, 1], [0, 3], [1, 1], [1, 3], [2, 0], [2, 3], [3, 0], [3, 2], [4, 0], [4, 2], [5, 1], [5, 3]]
     ];
 
@@ -442,7 +440,7 @@ function generateGuitarPDF() {
   doc.rect(36, y, 523.28, 70).strokeColor('#BAE6FD').lineWidth(1).stroke();
 
   doc.fillColor(colors.blueNote).font('Helvetica-Bold').fontSize(11)
-     .text('THE BLUES NOTE (b5) SECRET WEAPON', 48, y + 10);
+     .text('THE BLUES NOTE (b5) SECRET WEAPON', 48, y + 10, { lineBreak: false });
 
   doc.fillColor(colors.dark).font('Helvetica').fontSize(8.5)
      .text('To convert any Minor Pentatonic scale into the authentic Blues Scale, add the diminished 5th (b5) between the 4th and 5th degrees. In Box 1, it sits at Fret 6 on String 5 (A string) and Fret 8 on String 3 (G string). Bend this note by a 1/4 or 1/2 step for instant blues emotion and tension.', 48, y + 26, { width: 499, lineGap: 2 });
@@ -453,10 +451,10 @@ function generateGuitarPDF() {
   doc.rect(36, y, 523.28, 88).fill(colors.primary);
 
   doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(12)
-     .text('LISTEN, INTERACT & PRACTICE IN REAL-TIME ONLINE', 48, y + 14);
+     .text('LISTEN, INTERACT & PRACTICE IN REAL-TIME ONLINE', 48, y + 14, { lineBreak: false });
 
   doc.fillColor('#BFDBFE').font('Helvetica').fontSize(8.5)
-     .text('All fretboard patterns, scales, and audio soundfonts in this cheat sheet are interactive on MusicScene:', 48, y + 32);
+     .text('All fretboard patterns, scales, and audio soundfonts in this cheat sheet are interactive on MusicScene:', 48, y + 32, { lineBreak: false });
 
   const links = [
     '• Interactive Fretboard Trainer & Speed Quiz: musicscene.com.au/lessons/practice/fretboard-trainer/',
@@ -466,8 +464,14 @@ function generateGuitarPDF() {
 
   links.forEach((link, lIdx) => {
     doc.fillColor(colors.white).font('Helvetica-Bold').fontSize(7.8)
-       .text(link, 48, y + 46 + lIdx * 12);
+       .text(link, 48, y + 46 + lIdx * 12, { lineBreak: false });
   });
+
+  const totalPages = doc.bufferedPageRange().count;
+  console.log('Final page count verified:', totalPages);
+  if (totalPages !== 3) {
+    throw new Error(`Expected exactly 3 pages, but generated ${totalPages} pages!`);
+  }
 
   // Finalize PDF
   doc.end();
@@ -475,6 +479,13 @@ function generateGuitarPDF() {
   return new Promise((resolve, reject) => {
     stream.on('finish', () => {
       console.log(`Generated printable PDF at: ${outputPath}`);
+      // Also copy to root and out/downloads
+      fs.copyFileSync(outputPath, rootCopyPath);
+      console.log(`Copied to root: ${rootCopyPath}`);
+      if (fs.existsSync(path.dirname(outDirCopyPath))) {
+        fs.copyFileSync(outputPath, outDirCopyPath);
+        console.log(`Copied to out: ${outDirCopyPath}`);
+      }
       const stats = fs.statSync(outputPath);
       console.log(`File size: ${(stats.size / 1024).toFixed(1)} KB`);
       resolve(outputPath);
