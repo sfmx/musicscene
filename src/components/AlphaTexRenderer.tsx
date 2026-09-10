@@ -485,17 +485,17 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         .at-cursor-bar {
           display: none !important;
         }
-        /* Laser playhead needle */
+        /* Laser playhead needle - vibrant, high-contrast, fully visible */
         .at-cursor-beat {
-          background: #38bdf8 !important;
-          width: 2.5px !important;
-          box-shadow: 0 0 10px #38bdf8, 0 0 20px rgba(56, 189, 248, 0.7) !important;
-          border-radius: 2px !important;
+          background: #00f0ff !important;
+          width: 300px !important; /* AlphaTab scales by 0.01, resulting in a crisp 3.0px rendered needle */
+          opacity: 1 !important;
           pointer-events: none !important;
         }
         .score-theme-light .at-cursor-beat {
-          background: #2563eb !important;
-          box-shadow: 0 0 8px rgba(37, 99, 235, 0.6) !important;
+          background: #1d4ed8 !important; /* Bold Royal Blue for Studio Paper */
+          width: 300px !important;
+          opacity: 1 !important;
         }
         .at-selection div {
           background: rgba(56, 189, 248, 0.2) !important;
