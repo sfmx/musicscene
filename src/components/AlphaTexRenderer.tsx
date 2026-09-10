@@ -4,9 +4,9 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { AlphaTexValidator } from '@/lib/alphaTexValidator';
 
 /**
- * Generic AlphaTex Renderer Component
- * Takes any valid AlphaTex string and renders it using AlphaTab
- * Includes audio playback with tempo control, metronome, and count-in
+ * Modern Interactive AlphaTex Music Notation & Audio Player
+ * Supports dark stage & clean studio paper themes, dynamic tempo, metronome,
+ * count-in, and multi-instrument playback (Steel, Nylon, Electric, Piano).
  */
 
 interface AlphaTexRendererProps {
@@ -43,7 +43,7 @@ const getSharedSoundFont = async (): Promise<Uint8Array> => {
   return soundFontFetchPromise;
 };
 
-// Available playback instruments (all bundled inside sonivox.sf2)
+// Available playback instruments (bundled inside sonivox.sf2)
 const INSTRUMENT_OPTIONS = [
   { id: 25, label: 'Steel', icon: '🎸', title: 'Acoustic Guitar (Steel Strings)' },
   { id: 24, label: 'Nylon', icon: '🪕', title: 'Acoustic Guitar (Nylon Strings)' },
@@ -52,6 +52,7 @@ const INSTRUMENT_OPTIONS = [
 ];
 
 const STORAGE_KEY = 'alphatab_preferred_instrument';
+const THEME_STORAGE_KEY = 'alphatab_score_theme';
 const INSTRUMENT_CHANGE_EVENT = 'alphatab-instrument-change';
 
 /**
@@ -80,9 +81,30 @@ const applyInstrumentToScore = (score: any, program: number) => {
   });
 };
 
+const getThemeResources = (theme: 'dark' | 'light') => {
+  if (theme === 'dark') {
+    return {
+      staffLineColor: '#475569',       // Slate-600: clean, readable staff lines
+      barSeparatorColor: '#64748b',    // Slate-500: clear measure bars
+      barNumberColor: '#f59e0b',       // Amber-500: glowing bar numbers
+      mainGlyphColor: '#f8fafc',       // Slate-50: bright white notes, clefs, accidentals, tab numbers
+      secondaryGlyphColor: '#94a3b8',  // Slate-400: secondary notation
+      scoreInfoColor: '#38bdf8',       // Sky-400: tuning and tempo markings
+    };
+  }
+  return {
+    staffLineColor: '#cbd5e1',         // Slate-300: crisp engraved staff lines
+    barSeparatorColor: '#475569',      // Slate-600: clear measure bars
+    barNumberColor: '#dc2626',         // Red-600: classic red measure numbers
+    mainGlyphColor: '#0f172a',         // Slate-900: rich black engraved notes & tab numbers
+    secondaryGlyphColor: '#64748b',    // Slate-500: secondary notation
+    scoreInfoColor: '#0f172a',         // Slate-900: tuning and tempo markings
+  };
+};
+
 const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   alphaTex,
-  title = 'Music Notation',
+  title,
   tempo,
   showValidation = false,
   className = ''
@@ -100,6 +122,22 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
   const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
+
+  // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
+  const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('dark');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem(THEME_STORAGE_KEY);
+        if (saved === 'light' || saved === 'dark') {
+          setScoreTheme(saved);
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, []);
 
   // Initialize selected instrument from localStorage or default to Steel Acoustic (25)
   const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
@@ -154,6 +192,34 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     };
   }, []);
 
+  // Toggle between Dark Stage and Studio Paper
+  const toggleScoreTheme = useCallback(() => {
+    const nextTheme = scoreTheme === 'dark' ? 'light' : 'dark';
+    setScoreTheme(nextTheme);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+      } catch {
+        // ignore
+      }
+    }
+    if (apiRef.current?.settings?.display?.resources) {
+      const Color = apiRef.current.settings.display.resources.staffLineColor.constructor;
+      const res = getThemeResources(nextTheme);
+      apiRef.current.settings.display.resources.staffLineColor = Color.fromJson(res.staffLineColor);
+      apiRef.current.settings.display.resources.barSeparatorColor = Color.fromJson(res.barSeparatorColor);
+      apiRef.current.settings.display.resources.barNumberColor = Color.fromJson(res.barNumberColor);
+      apiRef.current.settings.display.resources.mainGlyphColor = Color.fromJson(res.mainGlyphColor);
+      apiRef.current.settings.display.resources.secondaryGlyphColor = Color.fromJson(res.secondaryGlyphColor);
+      apiRef.current.settings.display.resources.scoreInfoColor = Color.fromJson(res.scoreInfoColor);
+      try {
+        apiRef.current.render();
+      } catch {
+        // ignore
+      }
+    }
+  }, [scoreTheme]);
+
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
       return;
@@ -182,39 +248,43 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           return;
         }
 
-        setStatus(`Importing AlphaTab for ${title}...`);
+        setStatus('Importing AlphaTab...');
         const alphaTab = await import('@coderline/alphatab');
 
         if (!isMounted || !containerRef.current) return;
-        setStatus(`AlphaTab imported for ${title}`);
+        setStatus('AlphaTab imported');
 
         // Ensure container has responsive dimensions
         containerRef.current.style.width = '100%';
         containerRef.current.style.height = 'auto';
-        containerRef.current.style.minHeight = '160px';
-        containerRef.current.style.marginBottom = '10px';
+        containerRef.current.style.minHeight = '140px';
         containerRef.current.style.position = 'relative';
         containerRef.current.innerHTML = '';
 
-        setStatus(`Creating API for ${title}...`);
+        setStatus('Creating notation renderer...');
 
-        // AlphaTab settings with player enabled but NO soundfont preloaded on mount
+        // Saved theme on initialization
+        let initialTheme: 'dark' | 'light' = 'dark';
+        if (typeof window !== 'undefined') {
+          try {
+            const saved = localStorage.getItem(THEME_STORAGE_KEY);
+            if (saved === 'light' || saved === 'dark') initialTheme = saved;
+          } catch {
+            // ignore
+          }
+        }
+
+        // AlphaTab settings with responsive scaling and custom theme resources
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: {
             useWorkers: true,
             fontDirectory: '/alphatab/font/'
           },
           display: {
-            scale: 1.0,
+            scale: 0.9,
             stretchForce: 0.8,
-            resources: {
-              staffLineColor: '#64748b',       // slate-500: clear, readable staff lines
-              barSeparatorColor: '#94a3b8',    // slate-400: clear measure bars
-              barNumberColor: '#f59e0b',       // amber-500: glowing bar numbers
-              mainGlyphColor: '#f8fafc',       // slate-50: crisp, bright white notes, clefs, accidentals, tab numbers
-              secondaryGlyphColor: '#94a3b8',  // slate-400: clear secondary notation
-              scoreInfoColor: '#38bdf8',       // sky-400: tuning and tempo markings
-            }
+            padding: [16, 16],
+            resources: getThemeResources(initialTheme)
           },
           notation: {
             rhythmMode: 'hidden', // Hide rhythm stems for clean tablature
@@ -230,15 +300,15 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         apiRef.current = api;
 
-        setStatus(`API created for ${title}, setting up events...`);
+        setStatus('Notation initialized, setting up playback...');
 
         api.renderStarted.on(() => {
-          if (isMounted) setStatus(`Rendering ${title}...`);
+          if (isMounted) setStatus('Rendering notation...');
         });
 
         api.renderFinished.on(() => {
           if (isMounted) {
-            setStatus(`Render complete for ${title}!`);
+            setStatus('Render complete!');
             setRenderComplete(true);
           }
         });
@@ -246,8 +316,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         api.error.on((error: any) => {
           const message = error?.message || error?.detail?.message ||
                           error?.error?.message || (typeof error === 'string' ? error : 'rendering issue');
-          console.warn(`AlphaTab error for ${title}:`, message);
-          if (isMounted) setStatus(`Loaded ${title}`);
+          console.warn('AlphaTab notice:', message);
+          if (isMounted) setStatus('Loaded notation');
         });
 
         // Set initial instrument program before initial MIDI generation
@@ -290,15 +360,15 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           }
         });
 
-        setStatus(`Loading AlphaTex for ${title}...`);
+        setStatus('Loading tablature...');
 
         // Process the AlphaTex string to handle escape sequences
         const processedAlphaTex = alphaTex.replace(/\\n/g, '\n');
         api.tex(processedAlphaTex);
 
       } catch (err) {
-        console.error(`Render error for ${title}:`, err);
-        if (isMounted) setStatus(`Error loading ${title}`);
+        console.error('Notation render error:', err);
+        if (isMounted) setStatus('Error loading notation');
       }
     };
 
@@ -318,7 +388,6 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handlePlayPause = useCallback(async () => {
     if (!apiRef.current) return;
 
-    // If soundfont is already loaded, toggle play/pause immediately
     if (isSoundFontLoadedRef.current) {
       apiRef.current.playPause();
       return;
@@ -330,39 +399,29 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       pendingPlayRef.current = true;
       const soundFontData = await getSharedSoundFont();
       if (apiRef.current) {
-        apiRef.current.loadSoundFont(soundFontData, false);
-        // Fallback: if playerReady fired synchronously or is already ready
-        if (apiRef.current.isReadyForPlayback && pendingPlayRef.current) {
-          pendingPlayRef.current = false;
-          setPlayerReady(true);
-          setAudioLoading(false);
-          isSoundFontLoadedRef.current = true;
-          try {
-            apiRef.current.play();
-          } catch (e) {
-            console.warn('Playback start error:', e);
-          }
-        }
+        apiRef.current.loadSoundFont(soundFontData.buffer);
       }
     } catch (err) {
-      console.error('Failed to load soundfont for playback:', err);
+      console.error('Failed to load SoundFont:', err);
       setAudioLoading(false);
       pendingPlayRef.current = false;
     }
   }, []);
 
   const handleStop = useCallback(() => {
-    if (apiRef.current) {
+    if (!apiRef.current) return;
+    try {
       apiRef.current.stop();
+    } catch (e) {
+      // ignore
     }
   }, []);
 
-  const handleSpeedChange = useCallback((speed: number) => {
-    setPlaybackSpeed(speed);
+  const handleSpeedChange = useCallback((newSpeed: number) => {
+    setPlaybackSpeed(newSpeed);
     if (apiRef.current) {
-      // Multiply user's speed choice by the base tempo ratio
-      const baseRatio = tempo ? tempo / 120 : 1;
-      apiRef.current.playbackSpeed = speed * baseRatio;
+      const baseSpeed = tempo ? tempo / 120 : 1.0;
+      apiRef.current.playbackSpeed = baseSpeed * newSpeed;
     }
   }, [tempo]);
 
@@ -373,53 +432,39 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     if (typeof window !== 'undefined') {
       try {
         localStorage.setItem(STORAGE_KEY, program.toString());
-        window.dispatchEvent(
-          new CustomEvent(INSTRUMENT_CHANGE_EVENT, { detail: { program } })
-        );
-      } catch (e) {
-        console.warn('Failed to persist instrument preference:', e);
+      } catch {
+        // ignore
       }
+      window.dispatchEvent(
+        new CustomEvent(INSTRUMENT_CHANGE_EVENT, { detail: { program } })
+      );
     }
 
     if (apiRef.current?.score) {
-      const wasPlaying = playerState === 1;
       applyInstrumentToScore(apiRef.current.score, program);
       try {
         apiRef.current.loadMidiForScore();
-        if (wasPlaying) {
-          setTimeout(() => {
-            try {
-              apiRef.current?.play();
-            } catch {
-              // ignore
-            }
-          }, 50);
-        }
-      } catch (e) {
-        console.warn('Failed to reload MIDI for instrument change:', e);
+      } catch {
+        // ignore
       }
     }
-  }, [playerState]);
-
-  const handleMetronomeToggle = useCallback(() => {
-    setMetronomeOn(prev => {
-      const next = !prev;
-      if (apiRef.current) {
-        apiRef.current.metronomeVolume = next ? 1 : 0;
-      }
-      return next;
-    });
   }, []);
 
   const handleCountInToggle = useCallback(() => {
-    setCountInOn(prev => {
-      const next = !prev;
-      if (apiRef.current) {
-        apiRef.current.countInVolume = next ? 1 : 0;
-      }
-      return next;
-    });
-  }, []);
+    const next = !countInOn;
+    setCountInOn(next);
+    if (apiRef.current) {
+      apiRef.current.countInVolume = next ? 1 : 0;
+    }
+  }, [countInOn]);
+
+  const handleMetronomeToggle = useCallback(() => {
+    const next = !metronomeOn;
+    setMetronomeOn(next);
+    if (apiRef.current) {
+      apiRef.current.metronomeVolume = next ? 1 : 0;
+    }
+  }, [metronomeOn]);
 
   const formatTime = (ms: number) => {
     const totalSeconds = Math.floor(ms / 1000);
@@ -434,32 +479,72 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
   return (
     <div className={`w-full mb-4 ${className}`}>
-      {/* Cursor & Dark Stage styles for AlphaTab playback */}
+      {/* Precision Playhead & Dark Scrollbar Styles */}
       <style>{`
+        /* Completely eliminate muddy bar cursor overlay */
         .at-cursor-bar {
-          background: rgba(245, 158, 11, 0.18) !important;
-          border-left: 2px solid rgba(245, 158, 11, 0.7) !important;
-          border-radius: 4px;
+          display: none !important;
         }
+        /* Laser playhead needle */
         .at-cursor-beat {
           background: #38bdf8 !important;
-          width: 3px !important;
-          box-shadow: 0 0 12px rgba(56, 189, 248, 0.9), 0 0 4px #38bdf8 !important;
-          border-radius: 2px;
+          width: 2.5px !important;
+          box-shadow: 0 0 10px #38bdf8, 0 0 20px rgba(56, 189, 248, 0.7) !important;
+          border-radius: 2px !important;
+          pointer-events: none !important;
+        }
+        .score-theme-light .at-cursor-beat {
+          background: #2563eb !important;
+          box-shadow: 0 0 8px rgba(37, 99, 235, 0.6) !important;
         }
         .at-selection div {
           background: rgba(56, 189, 248, 0.2) !important;
         }
+        /* Sleek modern custom dark scrollbar - eliminates native Windows scrollbars */
+        .alphatab-container {
+          scrollbar-width: thin !important;
+          scrollbar-color: #334155 transparent !important;
+        }
+        .alphatab-container::-webkit-scrollbar {
+          height: 6px !important;
+        }
+        .alphatab-container::-webkit-scrollbar-track {
+          background: transparent !important;
+        }
+        .alphatab-container::-webkit-scrollbar-thumb {
+          background: #334155 !important;
+          border-radius: 9999px !important;
+        }
+        .alphatab-container::-webkit-scrollbar-thumb:hover {
+          background: #475569 !important;
+        }
       `}</style>
 
-      {title && (
-        <h4 className="text-sm font-bold text-slate-200 mb-2.5 flex items-center gap-2">
-          <span className="w-1.5 h-3.5 rounded-full bg-cyan-400"></span>
-          <span>{title}</span>
-        </h4>
-      )}
+      {/* Optional Title & Theme View Switcher */}
+      <div className="flex items-center justify-between mb-2">
+        {title ? (
+          <h4 className="text-sm font-bold text-slate-200 flex items-center gap-2">
+            <span className="w-1.5 h-3.5 rounded-full bg-cyan-400"></span>
+            <span>{title}</span>
+          </h4>
+        ) : <div />}
 
-      {/* Validation Results */}
+        {/* Studio Paper vs Dark Stage View Toggle */}
+        <button
+          type="button"
+          onClick={toggleScoreTheme}
+          className={`text-xs px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 font-medium cursor-pointer ${
+            scoreTheme === 'light'
+              ? 'bg-amber-500/15 border-amber-500/30 text-amber-300 font-semibold'
+              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+          }`}
+          title={scoreTheme === 'light' ? 'Switch to Dark Stage notation' : 'Switch to Clean Studio Paper notation'}
+        >
+          <span>{scoreTheme === 'light' ? '🌙 Dark Stage' : '📄 Studio Paper'}</span>
+        </button>
+      </div>
+
+      {/* Validation Results (hidden unless showValidation=true) */}
       {showValidation && validationResult && (
         <div className="mb-3">
           {!validationResult.isValid && (
@@ -503,136 +588,145 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       {/* Render Container */}
       <div
         ref={containerRef}
-        className="alphatab-container w-full min-h-[140px] bg-slate-950/80 rounded-xl p-4 border border-slate-800/80 shadow-inner overflow-x-auto"
+        className={`alphatab-container w-full min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
+          scoreTheme === 'light'
+            ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
+            : 'bg-slate-950/90 border border-slate-800/80 text-slate-100'
+        }`}
         style={{ minHeight: '140px', width: '100%' }}
       />
 
-      {/* Playback Controls - shown after render */}
+      {/* Playback Controls Console */}
       {renderComplete && (
-        <div className="flex flex-wrap items-center justify-between gap-3 mt-3 px-4 py-3 bg-slate-950/90 rounded-xl border border-slate-800 shadow-lg text-xs">
-          {/* Play/Pause & Stop */}
+        <div className="mt-3 px-3 sm:px-4 py-3 bg-slate-950/90 rounded-2xl border border-slate-800 shadow-xl text-xs flex flex-wrap items-center justify-between gap-3">
+          {/* Play/Pause, Stop & Time Counter */}
           <div className="flex items-center gap-2">
             <button
               onClick={handlePlayPause}
               disabled={audioLoading}
-              className={`w-9 h-9 flex items-center justify-center rounded-xl font-bold transition-all shadow-md ${
+              className={`h-9 sm:h-10 px-3 sm:px-4 flex items-center justify-center gap-1.5 rounded-xl font-bold transition-all shadow-md ${
                 audioLoading
                   ? 'bg-cyan-500/50 text-slate-950 cursor-wait animate-pulse'
-                  : 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
+                  : 'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
               }`}
               title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
             >
               {audioLoading ? (
-                <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                </svg>
+                <>
+                  <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                  <span className="text-xs hidden sm:inline">Loading...</span>
+                </>
               ) : playerState === 1 ? (
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <rect x="5" y="4" width="3" height="12" rx="1" />
-                  <rect x="12" y="4" width="3" height="12" rx="1" />
-                </svg>
+                <>
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <rect x="5" y="4" width="3" height="12" rx="1" />
+                    <rect x="12" y="4" width="3" height="12" rx="1" />
+                  </svg>
+                  <span className="text-xs">Pause</span>
+                </>
               ) : (
-                <svg className="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                </svg>
+                <>
+                  <svg className="w-4 h-4 fill-current ml-0.5" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                  </svg>
+                  <span className="text-xs">Play</span>
+                </>
               )}
             </button>
+
             <button
               onClick={handleStop}
               disabled={!playerReady}
-              className={`w-9 h-9 flex items-center justify-center rounded-xl transition-all ${
+              className={`h-9 sm:h-10 w-9 sm:w-10 flex items-center justify-center rounded-xl transition-all ${
                 playerReady
-                  ? 'bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:text-white cursor-pointer'
+                  ? 'bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:text-white cursor-pointer active:scale-95'
                   : 'bg-slate-900/50 text-slate-600 border border-slate-800/60 cursor-not-allowed'
               }`}
               title="Stop"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                <rect x="4" y="4" width="12" height="12" rx="2" />
+                <rect x="5" y="5" width="10" height="10" rx="1.5" />
               </svg>
             </button>
 
-            {/* Time Display or Loading Indicator */}
-            {audioLoading ? (
-              <span className="text-xs text-cyan-400 italic font-medium animate-pulse">Loading audio...</span>
-            ) : !playerReady ? (
-              <span className="text-xs text-slate-400 italic hidden sm:inline">Click play to listen</span>
-            ) : (
-              <span className="text-xs text-slate-300 font-mono bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800">
-                {formatTime(currentTime)} / {formatTime(endTime)}
-              </span>
-            )}
+            {/* Time Counter */}
+            <span className="text-[11px] sm:text-xs font-mono font-medium text-slate-300 bg-slate-900 px-2.5 py-1.5 sm:py-2 rounded-xl border border-slate-800">
+              {formatTime(currentTime)} <span className="text-slate-500">/</span> {formatTime(endTime || 0)}
+            </span>
           </div>
 
-          {/* Center Controls: Speed & Instrument */}
-          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            {/* Speed Control */}
-            <div className="flex items-center gap-2 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800">
-              <label className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Speed:</label>
-              <input
-                type="range"
-                min="0.25"
-                max="2"
-                step="0.25"
-                value={playbackSpeed}
-                onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
-                className="w-16 sm:w-20 h-1.5 accent-cyan-400 bg-slate-800 rounded-lg cursor-pointer"
-                title={`${playbackSpeed}x speed`}
-              />
-              <span className="text-xs text-cyan-300 font-mono font-bold min-w-[28px]">{playbackSpeed}x</span>
-            </div>
+          {/* Speed Preset Controls */}
+          <div className="flex items-center gap-1.5 bg-slate-900/90 px-2.5 py-1.5 rounded-xl border border-slate-800">
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider hidden md:inline">Speed:</span>
+            {[0.5, 0.75, 1.0, 1.25].map((speed) => (
+              <button
+                key={speed}
+                type="button"
+                onClick={() => handleSpeedChange(speed)}
+                className={`text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md font-mono font-bold transition-all cursor-pointer ${
+                  playbackSpeed === speed
+                    ? 'bg-cyan-500 text-slate-950 shadow-xs'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
+                }`}
+              >
+                {speed}x
+              </button>
+            ))}
+          </div>
 
-            {/* Sound / Instrument Selector */}
-            <div className="flex items-center gap-1.5">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider hidden lg:inline">Sound:</span>
-              <div className="inline-flex rounded-lg bg-slate-900 border border-slate-800 p-0.5" role="group">
-                {INSTRUMENT_OPTIONS.map((inst) => {
-                  const isActive = selectedInstrument === inst.id;
-                  return (
-                    <button
-                      key={inst.id}
-                      type="button"
-                      onClick={() => handleInstrumentChange(inst.id)}
-                      className={`text-xs px-2.5 py-1 rounded-md transition-all flex items-center gap-1 font-medium cursor-pointer ${
-                        isActive
-                          ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-xs font-semibold'
-                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
-                      }`}
-                      title={inst.title}
-                    >
-                      <span>{inst.icon}</span>
-                      <span>{inst.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
+          {/* Instrument Selector */}
+          <div className="flex items-center gap-1">
+            <div className="inline-flex rounded-xl bg-slate-900 border border-slate-800 p-0.5 sm:p-1" role="group">
+              {INSTRUMENT_OPTIONS.map((inst) => {
+                const isActive = selectedInstrument === inst.id;
+                return (
+                  <button
+                    key={inst.id}
+                    type="button"
+                    onClick={() => handleInstrumentChange(inst.id)}
+                    className={`text-xs px-2 sm:px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 font-medium cursor-pointer ${
+                      isActive
+                        ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-xs font-bold'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                    }`}
+                    title={inst.title}
+                  >
+                    <span>{inst.icon}</span>
+                    <span className="hidden md:inline">{inst.label}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
-          {/* Metronome & Count-in */}
+          {/* Practice Tools: Count-in & Metronome */}
           <div className="flex items-center gap-1.5">
             <button
               onClick={handleCountInToggle}
-              className={`text-xs px-2.5 py-1 rounded-lg border transition-all cursor-pointer font-medium ${
+              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
                 countInOn
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs font-semibold'
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
                   : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
               }`}
               title="Count-in before playback"
             >
-              Count-in
+              <span>⏱️</span>
+              <span className="hidden sm:inline">Count-in</span>
             </button>
             <button
               onClick={handleMetronomeToggle}
-              className={`text-xs px-2.5 py-1 rounded-lg border transition-all cursor-pointer font-medium ${
+              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
                 metronomeOn
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs font-semibold'
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
                   : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
               }`}
-              title="Toggle metronome"
+              title="Toggle metronome click"
             >
-              Metronome
+              <span>🔔</span>
+              <span className="hidden sm:inline">Metronome</span>
             </button>
           </div>
         </div>
