@@ -11,18 +11,18 @@ interface ChordProgressionsSectionProps {
 
 export default function ChordProgressionsSection({ progressions, colorScheme }: ChordProgressionsSectionProps) {
   return (
-    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12">
+    <div className="bg-slate-900/90 rounded-2xl border border-slate-800 shadow-xl p-6 sm:p-8 mb-12 min-w-0 max-w-full overflow-hidden">
       <h2 className="text-2xl font-bold text-white mb-6 pb-3 border-b border-slate-800 flex items-center gap-2">
         <span>🎼</span> {progressions.title}
       </h2>
 
-      <div className="grid gap-8 mb-6">
-        <div className="space-y-6">
+      <div className="grid gap-8 mb-6 min-w-0 max-w-full">
+        <div className="space-y-6 min-w-0 max-w-full">
           {progressions.items.map((prog, i) => (
-            <div key={i} className="bg-slate-950/80 rounded-xl p-6 border border-slate-800">
+            <div key={i} className="bg-slate-950/80 rounded-xl p-6 border border-slate-800 min-w-0 max-w-full overflow-hidden">
               <h4 className="text-xl font-bold mb-4 text-center text-cyan-300">{prog.title}</h4>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6 min-w-0 max-w-full">
                 <div>
                   <h5 className="text-xs uppercase tracking-wider font-bold text-slate-400 mb-3">Chord Sequence</h5>
                   <div className={`grid ${prog.chords.length <= 3 ? 'grid-cols-3' : 'grid-cols-2'} gap-3 mb-4`}>

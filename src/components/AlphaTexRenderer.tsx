@@ -300,6 +300,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         // Ensure container has responsive dimensions
         containerRef.current.style.width = '100%';
+        containerRef.current.style.maxWidth = '100%';
+        containerRef.current.style.overflowX = 'auto';
         containerRef.current.style.height = 'auto';
         containerRef.current.style.minHeight = '140px';
         containerRef.current.style.position = 'relative';
@@ -536,7 +538,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   }
 
   return (
-    <div className={`w-full mb-4 ${className}`}>
+    <div className={`w-full max-w-full min-w-0 mb-4 overflow-hidden ${className}`}>
       {/* Precision Playhead & Dark Scrollbar Styles */}
       <style>{`
         /* Completely eliminate muddy bar cursor overlay */
@@ -649,12 +651,12 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       {/* Render Container */}
       <div
         ref={containerRef}
-        className={`alphatab-container w-full min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
+        className={`alphatab-container w-full max-w-full min-w-0 min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
           scoreTheme === 'light'
             ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
             : 'bg-slate-950/95 border border-slate-800 text-slate-100'
         }`}
-        style={{ minHeight: '140px', width: '100%' }}
+        style={{ minHeight: '140px', width: '100%', maxWidth: '100%' }}
       />
 
       {/* Playback Controls Console */}

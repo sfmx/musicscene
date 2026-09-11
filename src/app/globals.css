@@ -49,3 +49,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+/* Ensure AlphaTab notation never causes parent grid/flex blowout */
+.alphatab-container {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: auto !important;
+}
+
+/* Prevent grid items from expanding beyond parent width when holding wide elements */
+.grid {
+  min-width: 0;
+}
+
