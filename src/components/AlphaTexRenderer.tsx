@@ -84,11 +84,11 @@ const applyInstrumentToScore = (score: any, program: number) => {
 const getThemeResources = (theme: 'dark' | 'light') => {
   if (theme === 'dark') {
     return {
-      staffLineColor: '#475569',       // Slate-600: clean, readable staff lines
-      barSeparatorColor: '#64748b',    // Slate-500: clear measure bars
+      staffLineColor: '#64748b',       // Slate-500: crisp & clearly visible on dark background
+      barSeparatorColor: '#94a3b8',    // Slate-400: clear measure bars
       barNumberColor: '#f59e0b',       // Amber-500: glowing bar numbers
       mainGlyphColor: '#f8fafc',       // Slate-50: bright white notes, clefs, accidentals, tab numbers
-      secondaryGlyphColor: '#94a3b8',  // Slate-400: secondary notation
+      secondaryGlyphColor: '#cbd5e1',  // Slate-300: crisp secondary notation
       scoreInfoColor: '#38bdf8',       // Sky-400: tuning and tempo markings
     };
   }
@@ -100,6 +100,37 @@ const getThemeResources = (theme: 'dark' | 'light') => {
     secondaryGlyphColor: '#64748b',    // Slate-500: secondary notation
     scoreInfoColor: '#0f172a',         // Slate-900: tuning and tempo markings
   };
+};
+
+/**
+ * Updates AlphaTab's display resources and triggers internal settings propagation.
+ * AlphaTab requires calling `updateSettings()` to inform the renderer of resource changes.
+ */
+const applyThemeToApi = (api: any, res: ReturnType<typeof getThemeResources>) => {
+  if (!api?.settings?.display?.resources) return;
+  try {
+    api.settings.fillFromJson({ display: { resources: res } });
+  } catch {
+    // fallback
+  }
+  try {
+    const Color = (api.settings.display.resources.staffLineColor as any)?.constructor;
+    if (Color?.fromJson) {
+      api.settings.display.resources.staffLineColor = Color.fromJson(res.staffLineColor);
+      api.settings.display.resources.barSeparatorColor = Color.fromJson(res.barSeparatorColor);
+      api.settings.display.resources.barNumberColor = Color.fromJson(res.barNumberColor);
+      api.settings.display.resources.mainGlyphColor = Color.fromJson(res.mainGlyphColor);
+      api.settings.display.resources.secondaryGlyphColor = Color.fromJson(res.secondaryGlyphColor);
+      api.settings.display.resources.scoreInfoColor = Color.fromJson(res.scoreInfoColor);
+    }
+  } catch {
+    // ignore
+  }
+  try {
+    api.updateSettings();
+  } catch (e) {
+    console.warn('AlphaTab updateSettings notice:', e);
+  }
 };
 
 const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
@@ -125,6 +156,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
   // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
+  const scoreThemeRef = useRef<'dark' | 'light'>('light');
 
   // Initialize selected instrument from localStorage or default to Steel Acoustic (25)
   const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
@@ -182,6 +214,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   // Dynamic score theme updater
   const updateScoreTheme = useCallback((nextTheme: 'dark' | 'light') => {
     setScoreTheme(nextTheme);
+    scoreThemeRef.current = nextTheme;
     if (typeof window !== 'undefined') {
       try {
         localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
@@ -189,44 +222,34 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         // ignore
       }
     }
-    if (apiRef.current?.settings?.display?.resources) {
+    if (apiRef.current) {
+      const res = getThemeResources(nextTheme);
+      applyThemeToApi(apiRef.current, res);
       try {
-        const Color = (apiRef.current.settings.display.resources.staffLineColor as any).constructor;
-        const res = getThemeResources(nextTheme);
-        apiRef.current.settings.display.resources.staffLineColor = Color.fromJson(res.staffLineColor);
-        apiRef.current.settings.display.resources.barSeparatorColor = Color.fromJson(res.barSeparatorColor);
-        apiRef.current.settings.display.resources.barNumberColor = Color.fromJson(res.barNumberColor);
-        apiRef.current.settings.display.resources.mainGlyphColor = Color.fromJson(res.mainGlyphColor);
-        apiRef.current.settings.display.resources.secondaryGlyphColor = Color.fromJson(res.secondaryGlyphColor);
-        apiRef.current.settings.display.resources.scoreInfoColor = Color.fromJson(res.scoreInfoColor);
         apiRef.current.render();
-      } catch {
-        // ignore
+      } catch (e) {
+        console.warn('AlphaTab re-render notice:', e);
       }
     }
   }, []);
 
   // Toggle between Dark Stage and Studio Paper
   const toggleScoreTheme = useCallback(() => {
-    const nextTheme = scoreTheme === 'dark' ? 'light' : 'dark';
+    const nextTheme = scoreThemeRef.current === 'dark' ? 'light' : 'dark';
     updateScoreTheme(nextTheme);
-  }, [scoreTheme, updateScoreTheme]);
+  }, [updateScoreTheme]);
 
   // Synchronize with global theme changes and localStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem(THEME_STORAGE_KEY);
-        if (saved === 'light' || saved === 'dark') {
-          setScoreTheme(saved);
-        } else if (document.documentElement.classList.contains('dark')) {
-          setScoreTheme('dark');
-        } else {
-          setScoreTheme('light');
-        }
-      } catch {
-        // ignore
+      const isDark = document.documentElement.classList.contains('dark');
+      const saved = localStorage.getItem(THEME_STORAGE_KEY);
+      let targetTheme: 'dark' | 'light' = isDark ? 'dark' : 'light';
+      if (saved === 'light' || saved === 'dark') {
+        targetTheme = saved;
       }
+      setScoreTheme(targetTheme);
+      scoreThemeRef.current = targetTheme;
 
       const handleGlobalThemeChange = (e: Event) => {
         const customEvent = e as CustomEvent<{ theme: 'light' | 'dark' }>;
@@ -284,32 +307,38 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         setStatus('Creating notation renderer...');
 
-        // Saved theme on initialization
+        // Determine initial theme matching current state or global mode
         let initialTheme: 'dark' | 'light' = 'light';
         if (typeof window !== 'undefined') {
+          if (document.documentElement.classList.contains('dark')) {
+            initialTheme = 'dark';
+          }
           try {
             const saved = localStorage.getItem(THEME_STORAGE_KEY);
             if (saved === 'light' || saved === 'dark') {
               initialTheme = saved;
-            } else if (document.documentElement.classList.contains('dark')) {
-              initialTheme = 'dark';
             }
           } catch {
             // ignore
           }
         }
+        if (scoreThemeRef.current) {
+          initialTheme = scoreThemeRef.current;
+        }
+
+        const themeRes = getThemeResources(initialTheme);
 
         // AlphaTab settings with responsive scaling and custom theme resources
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: {
-            useWorkers: true,
+            useWorkers: false, // Direct, synchronous rendering on main canvas; eliminates missing worker script & IPC lag
             fontDirectory: '/alphatab/font/'
           },
           display: {
             scale: 0.9,
             stretchForce: 0.8,
             padding: [16, 16],
-            resources: getThemeResources(initialTheme)
+            resources: themeRes
           },
           notation: {
             rhythmMode: 'hidden', // Hide rhythm stems for clean tablature
@@ -323,6 +352,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           }
         });
 
+        applyThemeToApi(api, themeRes);
         apiRef.current = api;
 
         setStatus('Notation initialized, setting up playback...');
@@ -349,6 +379,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         api.scoreLoaded.on((score: any) => {
           if (isMounted) {
             applyInstrumentToScore(score, selectedInstrumentRef.current);
+            if (scoreThemeRef.current) {
+              applyThemeToApi(api, getThemeResources(scoreThemeRef.current));
+            }
           }
         });
 
@@ -525,6 +558,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         .at-selection div {
           background: rgba(56, 189, 248, 0.2) !important;
         }
+        .score-theme-light .at-selection div {
+          background: rgba(59, 130, 246, 0.2) !important;
+        }
         /* Sleek modern custom dark scrollbar - eliminates native Windows scrollbars */
         .alphatab-container {
           scrollbar-width: thin !important;
@@ -548,8 +584,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       {/* Optional Title & Theme View Switcher */}
       <div className="flex items-center justify-between mb-2">
         {title ? (
-          <h4 className="text-sm font-bold text-slate-200 flex items-center gap-2">
-            <span className="w-1.5 h-3.5 rounded-full bg-cyan-400"></span>
+          <h4 className="text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+            <span className="w-1.5 h-3.5 rounded-full bg-cyan-500"></span>
             <span>{title}</span>
           </h4>
         ) : <div />}
@@ -558,10 +594,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         <button
           type="button"
           onClick={toggleScoreTheme}
-          className={`text-xs px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 font-medium cursor-pointer ${
+          className={`text-xs px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 font-medium cursor-pointer shadow-xs ${
             scoreTheme === 'light'
-              ? 'bg-amber-500/15 border-amber-500/30 text-amber-300 font-semibold'
-              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+              ? 'bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/30'
+              : 'bg-slate-900 hover:bg-slate-800 text-slate-200 border-slate-700 hover:border-slate-600'
           }`}
           title={scoreTheme === 'light' ? 'Switch to Dark Stage notation' : 'Switch to Clean Studio Paper notation'}
         >
@@ -616,7 +652,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         className={`alphatab-container w-full min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
           scoreTheme === 'light'
             ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
-            : 'bg-slate-950/90 border border-slate-800/80 text-slate-100'
+            : 'bg-slate-950/95 border border-slate-800 text-slate-100'
         }`}
         style={{ minHeight: '140px', width: '100%' }}
       />
