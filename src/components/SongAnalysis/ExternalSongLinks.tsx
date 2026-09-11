@@ -47,7 +47,7 @@ function LinkPill({ link }: { link: ExternalSongLink }) {
       href={link.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-slate-300 hover:text-white transition-all shadow-sm"
+      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900/90 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all shadow-sm"
       title={link.label}
     >
       {platformIcons[link.icon]}
@@ -62,13 +62,13 @@ export default function ExternalSongLinks({ title, artist }: ExternalSongLinksPr
   const tabLinks = links.filter(l => l.category === 'tabs' || l.category === 'sheet-music');
 
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-400 bg-slate-900/40 p-3 rounded-xl border border-slate-800/80">
-      <span className="font-bold text-slate-300">🎧 Stream:</span>
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-600 dark:text-slate-400 bg-slate-100/60 dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/80">
+      <span className="font-bold text-slate-800 dark:text-slate-300">🎧 Stream:</span>
       <div className="flex flex-wrap gap-1.5">
         {listenLinks.map(link => <LinkPill key={link.platform} link={link} />)}
       </div>
-      <span className="text-slate-700">|</span>
-      <span className="font-bold text-slate-300">📄 External Tabs:</span>
+      <span className="text-slate-300 dark:text-slate-700">|</span>
+      <span className="font-bold text-slate-800 dark:text-slate-300">📄 External Tabs:</span>
       <div className="flex flex-wrap gap-1.5">
         {tabLinks.map(link => <LinkPill key={link.platform} link={link} />)}
       </div>

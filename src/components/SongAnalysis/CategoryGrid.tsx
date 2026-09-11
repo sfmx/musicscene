@@ -31,11 +31,11 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
                 <span className="text-2xl">{section.icon}</span>
               )}
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                   {section.title}
                 </h2>
                 {section.description && (
-                  <p className="text-slate-400 mt-1 text-sm">{section.description}</p>
+                  <p className="text-slate-600 dark:text-slate-400 mt-1 text-sm">{section.description}</p>
                 )}
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
             {section.viewAllLink && section.songs.length > (section.maxDisplay || 6) && (
               <Link 
                 href={section.viewAllLink}
-                className="inline-flex items-center text-amber-400 hover:text-amber-300 font-medium text-sm transition-colors"
+                className="inline-flex items-center text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-medium text-sm transition-colors"
               >
                 View All
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,9 +73,9 @@ export default function CategoryGrid({ sections, variant = 'default' }: Category
               }
             </div>
           ) : (
-            <div className="text-center py-12 bg-slate-900/50 rounded-xl border border-slate-800">
-              <div className="text-slate-600 text-4xl mb-4">🎸</div>
-              <p className="text-slate-300 font-medium">No songs available in this category yet.</p>
+            <div className="text-center py-12 bg-slate-100/60 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800">
+              <div className="text-slate-400 dark:text-slate-600 text-4xl mb-4">🎸</div>
+              <p className="text-slate-700 dark:text-slate-300 font-medium">No songs available in this category yet.</p>
               <p className="text-sm text-slate-500 mt-2">Check back soon for new additions!</p>
             </div>
           )}

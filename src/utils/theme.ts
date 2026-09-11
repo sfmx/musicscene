@@ -61,19 +61,18 @@ export const themes = {
   }
 };
 
-// Difficulty level color classes (used across song and scale analysis)
 export const getDifficultyColor = (difficulty: string): string => {
   switch (difficulty.toLowerCase()) {
     case 'beginner':
-      return 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 font-semibold';
+      return 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/30 font-semibold';
     case 'intermediate':
-      return 'bg-amber-500/15 text-amber-400 border-amber-500/30 font-semibold';
+      return 'bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/30 font-semibold';
     case 'advanced':
-      return 'bg-rose-500/15 text-rose-400 border-rose-500/30 font-semibold';
+      return 'bg-rose-500/10 text-rose-700 dark:text-rose-400 border-rose-500/30 font-semibold';
     case 'expert':
-      return 'bg-purple-500/15 text-purple-400 border-purple-500/30 font-semibold';
+      return 'bg-purple-500/10 text-purple-700 dark:text-purple-400 border-purple-500/30 font-semibold';
     default:
-      return 'bg-slate-800 text-slate-300 border-slate-700 font-semibold';
+      return 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700 font-semibold';
   }
 };
 

@@ -20,24 +20,24 @@ export default function Breadcrumbs({ pathname, pageTitle }: BreadcrumbsProps) {
   return (
     <nav aria-label="Breadcrumb" className="mb-8">
       <JsonLdScript data={jsonLd} />
-      <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400 bg-slate-900/60 py-2 px-3.5 rounded-xl border border-slate-800/80 w-fit">
+      <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 bg-white/80 dark:bg-slate-900/60 py-2 px-3.5 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-xs dark:shadow-none w-fit">
         {crumbs.map((crumb, i) => {
           const isLast = i === crumbs.length - 1;
           return (
             <li key={crumb.href} className="flex items-center">
               {i > 0 && (
-                <span className="mx-2 text-slate-600 font-bold" aria-hidden="true">
+                <span className="mx-2 text-slate-400 dark:text-slate-600 font-bold" aria-hidden="true">
                   /
                 </span>
               )}
               {isLast ? (
-                <span className="text-amber-300 font-semibold" aria-current="page">
+                <span className="text-amber-700 dark:text-amber-300 font-semibold" aria-current="page">
                   {crumb.label}
                 </span>
               ) : (
                 <Link
                   href={crumb.href}
-                  className="hover:text-white transition-colors flex items-center gap-1"
+                  className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1"
                 >
                   {i === 0 && <span className="text-[10px]">🏠</span>}
                   <span>{crumb.label}</span>

@@ -360,12 +360,12 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
   };
 
   return (
-    <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl backdrop-blur-sm">
+    <div className="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl backdrop-blur-sm">
       <div className="flex items-center gap-2 mb-6">
-        <span className="text-xs font-bold uppercase tracking-widest text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+        <span className="text-xs font-bold uppercase tracking-widest text-blue-700 dark:text-blue-400 bg-blue-100/70 dark:bg-blue-500/10 px-3 py-1 rounded-full border border-blue-300 dark:border-blue-500/20">
           Fretboard Geometry
         </span>
-        <h3 className="text-xl sm:text-2xl font-black text-white">
+        <h3 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
           Scale Patterns in {primaryKey}
         </h3>
       </div>
@@ -381,7 +381,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
               className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
                 selectedScale === index
                   ? 'bg-amber-500 text-slate-950 shadow-md'
-                  : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white hover:bg-slate-800'
+                  : 'bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800'
               }`}
             >
               {scale.scale}
@@ -396,7 +396,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
             className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
               numFrets === 12
                 ? 'bg-blue-600 text-white shadow-md'
-                : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white'
+                : 'bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             12 Frets
@@ -406,7 +406,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
             className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
               numFrets === 24
                 ? 'bg-blue-600 text-white shadow-md'
-                : 'bg-slate-950 text-slate-400 border border-slate-800 hover:text-white'
+                : 'bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             24 Frets
@@ -415,25 +415,25 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
       </div>
 
       {/* Selected Scale Info */}
-      <div className="mb-6 bg-slate-950 p-4 rounded-xl border border-slate-800">
-        <h4 className="font-bold text-white text-base mb-2">
+      <div className="mb-6 bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+        <h4 className="font-bold text-slate-900 dark:text-white text-base mb-2">
           {scales[selectedScale]?.scale}
         </h4>
-        <p className="text-xs text-slate-300 mb-1.5 font-mono">
-          <strong className="text-amber-400">Notes:</strong> {scales[selectedScale]?.notes}
+        <p className="text-xs text-slate-700 dark:text-slate-300 mb-1.5 font-mono">
+          <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {scales[selectedScale]?.notes}
         </p>
-        <p className="text-xs text-slate-400 leading-relaxed">
-          <strong className="text-slate-300">Application:</strong> {scales[selectedScale]?.application}
+        <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+          <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {scales[selectedScale]?.application}
         </p>
       </div>
 
       {/* Fretboard Visualization */}
       <div className="mb-4">
-        <h5 className="font-bold text-slate-300 text-xs uppercase tracking-wider mb-3">Interactive Fretboard Map</h5>
+        <h5 className="font-bold text-slate-700 dark:text-slate-300 text-xs uppercase tracking-wider mb-3">Interactive Fretboard Map</h5>
         {generateFretboard()}
       </div>
 
-      <div className="flex items-center gap-4 text-xs text-slate-400">
+      <div className="flex items-center gap-4 text-xs text-slate-600 dark:text-slate-400">
         <div className="flex items-center gap-2">
           <div
             className="w-3.5 h-3.5 rounded-full"
@@ -443,7 +443,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
               boxShadow: '0 2px 4px rgba(201, 42, 42, 0.4)'
             }}
           ></div>
-          <span className="font-medium text-slate-300">Root Note</span>
+          <span className="font-medium text-slate-700 dark:text-slate-300">Root Note</span>
         </div>
         <div className="flex items-center gap-2">
           <div
@@ -454,9 +454,9 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
               boxShadow: '0 2px 4px rgba(25, 113, 194, 0.4)'
             }}
           ></div>
-          <span className="font-medium text-slate-300">Scale Notes</span>
+          <span className="font-medium text-slate-700 dark:text-slate-300">Scale Notes</span>
         </div>
-        <span className="text-slate-500 text-[11px]">• Hover over notes for details</span>
+        <span className="text-slate-400 dark:text-slate-500 text-[11px]">• Hover over notes for details</span>
       </div>
     </div>
   );

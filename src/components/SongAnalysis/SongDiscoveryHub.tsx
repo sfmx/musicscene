@@ -130,7 +130,7 @@ export default function SongDiscoveryHub() {
         category="Song Repertoire & Harmonic Analysis"
       />
       
-      <div className="min-h-screen bg-slate-950 text-slate-100 py-8">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 py-8 transition-colors">
         <main className="max-w-7xl mx-auto px-4">
           <Breadcrumbs pathname="/lessons/songs/song-analysis" pageTitle="Song Analysis" />
 
@@ -144,10 +144,10 @@ export default function SongDiscoveryHub() {
                   placeholder="Search songs, artists, techniques, or tags..."
                   value={searchQuery}
                   onChange={(e) => handleSearch(e.target.value)}
-                  className="w-full px-4 py-3 bg-slate-900/90 border border-slate-800 rounded-xl text-white placeholder:text-slate-500 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none shadow-sm"
                 />
                 <svg 
-                  className="absolute right-3.5 top-3.5 h-5 w-5 text-slate-500" 
+                  className="absolute right-3.5 top-3.5 h-5 w-5 text-slate-400 dark:text-slate-500" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -158,10 +158,10 @@ export default function SongDiscoveryHub() {
               
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className={`px-6 py-3 border rounded-xl font-medium transition-colors ${
+                className={`px-6 py-3 border rounded-xl font-medium transition-colors shadow-sm ${
                   showFilters || Object.keys(filters).length > 0
-                    ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
-                    : 'bg-slate-900/90 border-slate-800 text-slate-300 hover:border-slate-700'
+                    ? 'bg-amber-500/15 border-amber-500/40 text-amber-700 dark:text-amber-300'
+                    : 'bg-white dark:bg-slate-900/90 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700'
                 }`}
               >
                 Filters {Object.keys(filters).length > 0 && `(${Object.keys(filters).length})`}
@@ -170,20 +170,20 @@ export default function SongDiscoveryHub() {
 
             {/* Active Search/Filter Indicator */}
             {(searchQuery || Object.keys(filters).length > 0) && (
-              <div className="flex items-center justify-between bg-slate-900/90 border border-slate-800 rounded-xl p-4">
+              <div className="flex items-center justify-between bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-sm">
                 <div className="flex items-center gap-2 text-sm">
-                  <span className="text-amber-400 font-semibold">
+                  <span className="text-amber-600 dark:text-amber-400 font-semibold">
                     {activeView === 'search' ? `Found ${filteredSongs.length} songs` : 'Active filters'}
                   </span>
                   {searchQuery && (
-                    <span className="text-slate-400">
+                    <span className="text-slate-500 dark:text-slate-400">
                       for &quot;{searchQuery}&quot;
                     </span>
                   )}
                 </div>
                 <button
                   onClick={clearFiltersAndSearch}
-                  className="text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors"
+                  className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 text-sm font-medium transition-colors"
                 >
                   Clear all
                 </button>
@@ -192,11 +192,11 @@ export default function SongDiscoveryHub() {
 
             {/* Filter Panel */}
             {showFilters && (
-              <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-6 space-y-4 shadow-xl">
+              <div className="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-xl p-6 space-y-4 shadow-xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                   {/* Difficulty Filter */}
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                       Difficulty
                     </label>
                     <select
@@ -206,7 +206,7 @@ export default function SongDiscoveryHub() {
                         const values = Array.from(e.target.selectedOptions, option => option.value);
                         handleFilterChange({ ...filters, difficulty: values.length ? values : undefined });
                       }}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-slate-800 dark:text-slate-200 text-sm focus:border-amber-500 outline-none"
                       size={4}
                     >
                       {difficultyLevels.map(level => (
@@ -217,7 +217,7 @@ export default function SongDiscoveryHub() {
 
                   {/* Genre Filter */}
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                       Genre
                     </label>
                     <select
@@ -227,7 +227,7 @@ export default function SongDiscoveryHub() {
                         const values = Array.from(e.target.selectedOptions, option => option.value);
                         handleFilterChange({ ...filters, genre: values.length ? values : undefined });
                       }}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-slate-800 dark:text-slate-200 text-sm focus:border-amber-500 outline-none"
                       size={4}
                     >
                       {uniqueGenres.map(genre => (
@@ -238,7 +238,7 @@ export default function SongDiscoveryHub() {
 
                   {/* Decade Filter */}
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                       Decade
                     </label>
                     <select
@@ -248,7 +248,7 @@ export default function SongDiscoveryHub() {
                         const values = Array.from(e.target.selectedOptions, option => option.value);
                         handleFilterChange({ ...filters, decade: values.length ? values : undefined });
                       }}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-slate-800 dark:text-slate-200 text-sm focus:border-amber-500 outline-none"
                       size={4}
                     >
                       {uniqueDecades.map(decade => (
@@ -259,7 +259,7 @@ export default function SongDiscoveryHub() {
 
                   {/* Tags Filter */}
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                       Tags
                     </label>
                     <select
@@ -269,7 +269,7 @@ export default function SongDiscoveryHub() {
                         const values = Array.from(e.target.selectedOptions, option => option.value);
                         handleFilterChange({ ...filters, tags: values.length ? values : undefined });
                       }}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-slate-200 text-sm focus:border-amber-500 outline-none"
+                      className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-2 text-slate-800 dark:text-slate-200 text-sm focus:border-amber-500 outline-none"
                       size={4}
                     >
                       {uniqueTags.map(tag => (
@@ -280,7 +280,7 @@ export default function SongDiscoveryHub() {
                 </div>
 
                 {/* Toggle Filters */}
-                <div className="flex gap-6 pt-4 border-t border-slate-800 text-sm text-slate-300">
+                <div className="flex gap-6 pt-4 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-700 dark:text-slate-300">
                   <label className="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
@@ -291,7 +291,7 @@ export default function SongDiscoveryHub() {
                           featured: e.target.checked ? true : undefined 
                         })
                       }
-                      className="mr-2 rounded border-slate-700 bg-slate-950 text-amber-500 focus:ring-amber-500"
+                      className="mr-2 rounded border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-950 text-amber-500 focus:ring-amber-500"
                     />
                     Featured Songs Only
                   </label>
@@ -305,7 +305,7 @@ export default function SongDiscoveryHub() {
                           iconicRiff: e.target.checked ? true : undefined 
                         })
                       }
-                      className="mr-2 rounded border-slate-700 bg-slate-950 text-amber-500 focus:ring-amber-500"
+                      className="mr-2 rounded border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-950 text-amber-500 focus:ring-amber-500"
                     />
                     Iconic Riffs Only
                   </label>
@@ -321,7 +321,7 @@ export default function SongDiscoveryHub() {
           ) : (
             /* Search Results View */
             <div>
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
                 Search Results ({filteredSongs.length})
               </h2>
               {filteredSongs.length > 0 ? (
@@ -331,9 +331,9 @@ export default function SongDiscoveryHub() {
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16 bg-slate-900/50 rounded-xl border border-slate-800">
-                  <div className="text-slate-600 text-4xl mb-4">🔍</div>
-                  <p className="text-slate-300 text-lg mb-2">No songs found</p>
+                <div className="text-center py-16 bg-slate-100/60 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800">
+                  <div className="text-slate-400 dark:text-slate-600 text-4xl mb-4">🔍</div>
+                  <p className="text-slate-800 dark:text-slate-300 text-lg mb-2">No songs found</p>
                   <p className="text-slate-500 text-sm">Try adjusting your search terms or filters</p>
                 </div>
               )}
@@ -341,23 +341,23 @@ export default function SongDiscoveryHub() {
           )}
 
           {/* Stats Section */}
-          <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <div className="text-3xl font-black text-amber-400">{allSongs.length}</div>
-                <div className="text-slate-400 text-sm mt-1">Total Songs</div>
+              <div className="p-4 bg-white dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-sm">
+                <div className="text-3xl font-black text-amber-600 dark:text-amber-400">{allSongs.length}</div>
+                <div className="text-slate-600 dark:text-slate-400 text-sm mt-1">Total Songs</div>
               </div>
-              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <div className="text-3xl font-black text-emerald-400">{uniqueArtists.length}</div>
-                <div className="text-slate-400 text-sm mt-1">Artists</div>
+              <div className="p-4 bg-white dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-sm">
+                <div className="text-3xl font-black text-emerald-600 dark:text-emerald-400">{uniqueArtists.length}</div>
+                <div className="text-slate-600 dark:text-slate-400 text-sm mt-1">Artists</div>
               </div>
-              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <div className="text-3xl font-black text-purple-400">{uniqueGenres.length}</div>
-                <div className="text-slate-400 text-sm mt-1">Genres</div>
+              <div className="p-4 bg-white dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-sm">
+                <div className="text-3xl font-black text-purple-600 dark:text-purple-400">{uniqueGenres.length}</div>
+                <div className="text-slate-600 dark:text-slate-400 text-sm mt-1">Genres</div>
               </div>
-              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <div className="text-3xl font-black text-cyan-400">{iconicRiffSongs.length}</div>
-                <div className="text-slate-400 text-sm mt-1">Iconic Riffs</div>
+              <div className="p-4 bg-white dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-sm">
+                <div className="text-3xl font-black text-cyan-600 dark:text-cyan-400">{iconicRiffSongs.length}</div>
+                <div className="text-slate-600 dark:text-slate-400 text-sm mt-1">Iconic Riffs</div>
               </div>
             </div>
           </div>

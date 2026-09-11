@@ -118,13 +118,13 @@ export default function TheoryContextBadges({
   const getTypeColor = (type: TheoryItem['type']) => {
     switch (type) {
       case 'scale':
-        return 'bg-blue-50 text-blue-800 border-blue-200 hover:border-blue-400 hover:bg-blue-100';
+        return 'bg-blue-50 text-blue-800 border-blue-200 hover:border-blue-400 hover:bg-blue-100 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-800/60 dark:hover:border-blue-600 dark:hover:bg-blue-950/70';
       case 'mode':
-        return 'bg-purple-50 text-purple-800 border-purple-200 hover:border-purple-400 hover:bg-purple-100';
+        return 'bg-purple-50 text-purple-800 border-purple-200 hover:border-purple-400 hover:bg-purple-100 dark:bg-purple-950/40 dark:text-purple-300 dark:border-purple-800/60 dark:hover:border-purple-600 dark:hover:bg-purple-950/70';
       case 'chord':
-        return 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:border-emerald-400 hover:bg-emerald-100';
+        return 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:border-emerald-400 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800/60 dark:hover:border-emerald-600 dark:hover:bg-emerald-950/70';
       case 'progression':
-        return 'bg-amber-50 text-amber-800 border-amber-200 hover:border-amber-400 hover:bg-amber-100';
+        return 'bg-amber-50 text-amber-800 border-amber-200 hover:border-amber-400 hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800/60 dark:hover:border-amber-600 dark:hover:bg-amber-950/70';
     }
   };
 
@@ -142,10 +142,10 @@ export default function TheoryContextBadges({
   };
 
   return (
-    <div className="mt-6 pt-5 border-t border-gray-100">
+    <div className="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">Related Music Theory Guides</span>
-        <span className="text-xs text-gray-400">• Click to master concepts</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-400">Related Music Theory Guides</span>
+        <span className="text-xs text-slate-400 dark:text-slate-500">• Click to master concepts</span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {items.map((item, index) => (
