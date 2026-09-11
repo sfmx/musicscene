@@ -104,6 +104,7 @@ import wantedDeadOrAliveData from '@/data/songs/wanted-dead-or-alive.json';
 import everyRoseHasItsThornData from '@/data/songs/every-rose-has-its-thorn.json';
 import photographData from '@/data/songs/photograph.json';
 import welcomeToTheJungleData from '@/data/songs/welcome-to-the-jungle.json';
+import whoMadeWhoData from '@/data/songs/who-made-who.json';
 
 export interface SongData {
   songInfo: {
@@ -398,6 +399,7 @@ const songDatabase: Record<string, SongData> = {
   'every-rose-has-its-thorn': everyRoseHasItsThornData as unknown as SongData,
   'photograph': photographData as unknown as SongData,
   'welcome-to-the-jungle': welcomeToTheJungleData as unknown as SongData,
+  'who-made-who': whoMadeWhoData as unknown as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

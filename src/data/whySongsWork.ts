@@ -522,6 +522,50 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'who-made-who': {
+    slug: 'who-made-who',
+    songTitle: 'Who Made Who',
+    artist: 'AC/DC',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The 4-on-the-Floor Funk-Rock Groove Fused with a D Mixolydian ♭VII Cadence and ♭III Chorus Borrow',
+    emotionalHook: 'Unlike typical AC/DC 12-bar shuffles, "Who Made Who" locks into a 1980s disco-influenced 4-on-the-floor kick pulse with a D Mixolydian cadence (D5 - C5 - G/B - D5). The whole-step flat-7 (C5) gives the groove an effortless bounce, while the chorus introduces a borrowed flat-3rd (F5) from D minor, slamming the track from danceable groove to aggressive hard rock.',
+    romanProgression: 'Verse: I - ♭VII - IV/6 - I | Chorus: I - ♭III - IV - I',
+    chords: ['D5', 'C5', 'G5/B', 'F5', 'G5'],
+    progressionExplanation: [
+      'D5 (I): Unwavering tonic pedal that anchors both Angus Young\'s single-note theme and Malcolm\'s downstroke stabs.',
+      'C5 (♭VII): The defining Mixolydian degree. Flattening the 7th removes classical resolution tension and delivers pure swagger.',
+      'G5/B (IV/6): First-inversion subdominant chord providing a smooth scalar bass descent: D -> C -> B -> D.',
+      'F5 (♭III): Power chord borrowed from D Aeolian/Blues in the chorus, creating an explosive burst of grit.',
+      'G5 (IV): Subdominant lift resolving forcefully back to the D5 tonic home base.',
+    ],
+    voiceLeadingInsights: [
+      'Notice the smooth descending bass movement in the verse: D (open string) → C (3rd fret A string) → B (2nd fret A string in G/B) → D (resolution).',
+      'Angus Young’s intro theme counterbalances the low-end pulse with syncopated open-string pedal notes and high double-stops around the D major triad.',
+      'In the solo, Angus freely blends the major 3rd (F#) from D Mixolydian with the minor 3rd (F natural) and diminished 5th (G#) from the D blues scale for iconic vocalized biting bends.',
+    ],
+    guitarPerspective: 'Malcolm Young’s Gretsch Firebird uses zero clipping pedals—just natural Marshall tube compression. Staccato cutoffs on beats 2 and 4 create the breathing room that gives the rhythm section its massive, punchy pocket.',
+    songwriterTakeaway: 'You can write a rock song that grooves like dance music by pairing a straight four-on-the-floor beat with a Mixolydian I - ♭VII - IV loop, then escalating energy in the chorus with a borrowed ♭III minor-pentatonic power chord.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Mixolydian Scale', slug: 'mixolydian', description: 'The primary scale governing the verse progression and flat-7th chords.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for Angus Young\'s aggressive lead fills and soloing.' },
+        { name: 'Blues Scale', slug: 'blues', description: 'The blue note (G#) that injects grit into Angus\'s high-register bends.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The definitive hard rock mode used in Who Made Who.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Master the root-fifth voicings for D5, C5, G5, and F5.' },
+        { name: 'Slash Chords', slug: 'slash', description: 'How first-inversion G/B connects the bassline between C and D.' },
+      ],
+      progressions: [
+        { name: 'I - ♭VII - IV Progression', slug: 'i-bvii-iv', description: 'The signature rock cadence powering Who Made Who.' },
+      ],
+    },
+  },
 };
 
 /**
