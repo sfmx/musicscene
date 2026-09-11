@@ -13,15 +13,15 @@ export default function MobileAccordion({ category, onLinkClick }: MobileAccordi
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-slate-800/60">
+    <div className="border-b border-slate-200 dark:border-slate-800/60">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full px-4 py-3 text-left text-slate-200 font-medium hover:bg-slate-800/60 transition-colors"
+        className="flex items-center justify-between w-full px-4 py-3 text-left text-slate-800 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors cursor-pointer"
         aria-expanded={isOpen}
       >
         <span>{category.label}</span>
         <svg
-          className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 text-slate-500 dark:text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -35,7 +35,7 @@ export default function MobileAccordion({ category, onLinkClick }: MobileAccordi
           <Link
             href={category.href}
             onClick={onLinkClick}
-            className="block px-3 py-2 text-sm font-medium text-cyan-400 hover:bg-slate-800/60 rounded-lg mb-2"
+            className="block px-3 py-2 text-sm font-medium text-blue-600 dark:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg mb-2"
           >
             All {category.label} →
           </Link>
@@ -46,12 +46,12 @@ export default function MobileAccordion({ category, onLinkClick }: MobileAccordi
                 <Link
                   href={col.headingHref}
                   onClick={onLinkClick}
-                  className="block px-3 py-1 text-xs font-semibold text-slate-400 uppercase tracking-wider hover:text-cyan-300"
+                  className="block px-3 py-1 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider hover:text-blue-600 dark:hover:text-cyan-300"
                 >
                   {col.heading}
                 </Link>
               ) : (
-                <div className="px-3 py-1 text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                <div className="px-3 py-1 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                   {col.heading}
                 </div>
               )}
@@ -61,7 +61,7 @@ export default function MobileAccordion({ category, onLinkClick }: MobileAccordi
                     <Link
                       href={item.href}
                       onClick={onLinkClick}
-                      className="flex items-center gap-2 px-3 py-2 text-sm text-slate-300 hover:bg-slate-800/60 hover:text-cyan-300 rounded-lg transition-colors min-h-[44px]"
+                      className="flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60 hover:text-blue-600 dark:hover:text-cyan-300 rounded-lg transition-colors min-h-[44px]"
                     >
                       {item.icon && <span className="text-xs flex-shrink-0">{item.icon}</span>}
                       <span>{item.label}</span>

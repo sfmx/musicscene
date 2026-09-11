@@ -74,26 +74,26 @@ export default function WhySongsWorkSpotlight() {
   ];
 
   return (
-    <section className="py-20 bg-slate-950 text-white border-b border-slate-800">
+    <section className="py-20 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-bold text-amber-400 uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-3 shadow-xs">
               <span>💡 Harmonic Masterclasses</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
               Why These Songs Sound So Good
             </h2>
-            <p className="mt-2 text-base sm:text-lg text-slate-400 max-w-2xl">
+            <p className="mt-2 text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
               Ever get goosebumps from a chord change? We dissect the psychological and theoretical mechanisms behind guitar music&apos;s greatest moments.
             </p>
           </div>
 
           <Link
             href="/lessons/songs/why-songs-work"
-            className="inline-flex items-center gap-2 text-sm font-bold text-amber-400 hover:text-amber-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
+            className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
           >
             <span>Explore All Harmonic Breakdowns</span>
             <span>➔</span>
@@ -105,7 +105,7 @@ export default function WhySongsWorkSpotlight() {
           {highlights.map((item) => (
             <div
               key={item.slug}
-              className="bg-slate-900/90 rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group"
+              className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between group"
             >
               <div>
                 {/* Category Pill & Key */}
@@ -113,40 +113,40 @@ export default function WhySongsWorkSpotlight() {
                   <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${item.categoryColor}`}>
                     {item.category}
                   </span>
-                  <span className="text-xs font-mono text-slate-400">
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
                     {item.key}
                   </span>
                 </div>
 
                 {/* Song & Artist */}
-                <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-xs font-semibold text-slate-400 mb-3">
+                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">
                   by {item.artist}
                 </p>
 
                 {/* Specific Device Callout */}
-                <div className="text-xs font-bold text-amber-400 mb-2">
+                <div className="text-xs font-bold text-amber-600 dark:text-amber-400 mb-2">
                   ⚡ {item.device}
                 </div>
 
                 {/* Progression Bar */}
-                <div className="font-mono text-xs text-slate-300 bg-slate-950 p-2.5 rounded-lg border border-slate-800 mb-3.5">
+                <div className="font-mono text-xs text-slate-800 dark:text-slate-300 bg-slate-100 dark:bg-slate-950 p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 mb-3.5">
                   {item.progression}
                 </div>
 
                 {/* Summary Explanation */}
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                   {item.summary}
                 </p>
               </div>
 
               {/* Action Link */}
-              <div className="mt-6 pt-4 border-t border-slate-800/80">
+              <div className="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800/80">
                 <Link
                   href={`/lessons/songs/song-analysis/${item.slug}/#why-it-works`}
-                  className="text-xs font-bold text-amber-400 group-hover:text-amber-300 inline-flex items-center gap-1 hover:underline"
+                  className="text-xs font-bold text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 inline-flex items-center gap-1 hover:underline"
                 >
                   <span>Read Full Harmonic Breakdown</span>
                   <span>➔</span>

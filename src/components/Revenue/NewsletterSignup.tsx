@@ -82,17 +82,19 @@ export default function NewsletterSignup({
 
   return (
     <div className={isFooter ? '' : 'bg-indigo-50 rounded-xl p-6 border border-indigo-200'}>
-      <h3 className={`text-xl mb-2 ${isFooter ? 'text-white' : 'text-gray-900'}`}>{heading}</h3>
-      <p className={`mb-4 ${isFooter ? 'text-gray-300' : 'text-gray-600'}`}>{subtext}</p>
+      <h3 className={`text-xl font-bold mb-2 ${isFooter ? 'text-slate-900 dark:text-white' : 'text-gray-900'}`}>{heading}</h3>
+      <p className={`mb-4 text-sm ${isFooter ? 'text-slate-600 dark:text-slate-300' : 'text-gray-600'}`}>{subtext}</p>
       <form onSubmit={handleSubmit} className="flex max-w-md mx-auto">
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className={`flex-grow px-4 py-2 rounded-l border-none text-gray-900 ${
-            isFooter ? '' : 'border border-gray-300'
-          }`}
+          className={`flex-grow px-4 py-2 rounded-l border text-sm ${
+            isFooter
+              ? 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white'
+              : 'border border-gray-300 text-gray-900'
+          } focus:outline-hidden`}
           disabled={status === 'loading'}
         />
         <button

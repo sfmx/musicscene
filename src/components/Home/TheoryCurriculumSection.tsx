@@ -68,26 +68,26 @@ export default function TheoryCurriculumSection() {
   ];
 
   return (
-    <section className="py-20 bg-slate-900 text-white border-b border-slate-800">
+    <section className="py-20 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3 shadow-xs">
               <span>📚 Comprehensive Theory Roadmaps</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
               Theory That Actually Applies To Guitar
             </h2>
-            <p className="mt-2 text-base sm:text-lg text-slate-400 max-w-2xl">
+            <p className="mt-2 text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
               No abstract sheet music drills. Visual fretboard maps, interval geometry, and harmonic relationships engineered for guitarists.
             </p>
           </div>
 
           <Link
             href="/lessons/theory"
-            className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
+            className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
           >
             <span>Explore Full Theory Curriculum</span>
             <span>➔</span>
@@ -99,28 +99,28 @@ export default function TheoryCurriculumSection() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className={`bg-slate-950 rounded-2xl p-6 border border-slate-800 transition-all duration-300 ${pillar.borderHover} hover:shadow-xl flex flex-col justify-between group`}
+              className={`bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${pillar.borderHover} shadow-sm hover:shadow-xl flex flex-col justify-between group`}
             >
               <div>
                 {/* Header */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-3xl p-2 rounded-xl bg-slate-900 border border-slate-800 group-hover:scale-110 transition-transform">
+                  <span className="text-3xl p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 group-hover:scale-110 transition-transform">
                     {pillar.icon}
                   </span>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
                     {pillar.badge}
                   </span>
                 </div>
 
                 {/* Title */}
-                <Link href={pillar.href} className="block group-hover:text-amber-300 transition-colors">
-                  <h3 className="text-xl font-bold text-white mb-2">
+                <Link href={pillar.href} className="block group-hover:text-amber-500 dark:group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
                     {pillar.title}
                   </h3>
                 </Link>
 
                 {/* Description */}
-                <p className="text-xs text-slate-400 leading-relaxed mb-5">
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
                   {pillar.description}
                 </p>
 
@@ -130,7 +130,7 @@ export default function TheoryCurriculumSection() {
                     <Link
                       key={t.href + t.label}
                       href={t.href}
-                      className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-800 transition-colors"
+                      className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition-colors"
                     >
                       {t.label}
                     </Link>
@@ -141,7 +141,7 @@ export default function TheoryCurriculumSection() {
               {/* Bottom Link */}
               <Link
                 href={pillar.href}
-                className="text-xs font-bold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 hover:underline pt-3 border-t border-slate-800/80"
+                className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 inline-flex items-center gap-1 hover:underline pt-3 border-t border-slate-200 dark:border-slate-800/80"
               >
                 <span>Browse {pillar.title}</span>
                 <span>➔</span>

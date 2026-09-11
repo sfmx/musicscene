@@ -84,18 +84,18 @@ export default function InteractiveToolsSection() {
   ];
 
   return (
-    <section id="interactive-tools" className="py-20 bg-slate-950 text-white border-b border-slate-800">
+    <section id="interactive-tools" className="py-20 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs font-bold text-amber-400 uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-3 shadow-xs">
             <span>⚡ Interactive Web Utilities</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
             Interactive Tools Designed for Active Playing
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             Passive reading doesn&apos;t build muscle memory. Hear the notes, train your fretboard reflexes, and jam along directly in your browser.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function InteractiveToolsSection() {
           {tools.map((tool) => (
             <div
               key={tool.id}
-              className={`bg-gradient-to-br ${tool.gradient} rounded-2xl p-7 sm:p-8 border border-slate-800 transition-all duration-300 ${tool.borderHover} hover:shadow-2xl flex flex-col justify-between group`}
+              className={`bg-white dark:bg-gradient-to-br dark:${tool.gradient} rounded-2xl p-7 sm:p-8 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${tool.borderHover} shadow-sm hover:shadow-xl dark:hover:shadow-2xl flex flex-col justify-between group`}
             >
               <div>
                 {/* Header with Badge & Icon */}
@@ -113,26 +113,26 @@ export default function InteractiveToolsSection() {
                   <span className={`text-xs font-bold px-3 py-1 rounded-full border ${tool.badgeColor}`}>
                     {tool.badge}
                   </span>
-                  <span className="text-3xl p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 group-hover:scale-110 transition-transform">
+                  <span className="text-3xl p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 group-hover:scale-110 transition-transform">
                     {tool.icon}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">
                   {tool.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-slate-300 leading-relaxed mb-6">
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
                   {tool.description}
                 </p>
 
                 {/* Feature Checklist */}
-                <ul className="space-y-2 mb-8 text-xs text-slate-300">
+                <ul className="space-y-2 mb-8 text-xs text-slate-600 dark:text-slate-300">
                   {tool.features.map((feat, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="text-emerald-400 font-bold">✓</span>
+                      <span className="text-emerald-600 dark:text-emerald-400 font-bold">✓</span>
                       <span>{feat}</span>
                     </li>
                   ))}

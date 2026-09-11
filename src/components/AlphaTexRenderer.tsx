@@ -124,20 +124,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [countInOn, setCountInOn] = useState(false);
 
   // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
-  const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('dark');
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem(THEME_STORAGE_KEY);
-        if (saved === 'light' || saved === 'dark') {
-          setScoreTheme(saved);
-        }
-      } catch {
-        // ignore
-      }
-    }
-  }, []);
+  const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
 
   // Initialize selected instrument from localStorage or default to Steel Acoustic (25)
   const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
@@ -192,9 +179,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     };
   }, []);
 
-  // Toggle between Dark Stage and Studio Paper
-  const toggleScoreTheme = useCallback(() => {
-    const nextTheme = scoreTheme === 'dark' ? 'light' : 'dark';
+  // Dynamic score theme updater
+  const updateScoreTheme = useCallback((nextTheme: 'dark' | 'light') => {
     setScoreTheme(nextTheme);
     if (typeof window !== 'undefined') {
       try {
@@ -204,21 +190,56 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       }
     }
     if (apiRef.current?.settings?.display?.resources) {
-      const Color = apiRef.current.settings.display.resources.staffLineColor.constructor;
-      const res = getThemeResources(nextTheme);
-      apiRef.current.settings.display.resources.staffLineColor = Color.fromJson(res.staffLineColor);
-      apiRef.current.settings.display.resources.barSeparatorColor = Color.fromJson(res.barSeparatorColor);
-      apiRef.current.settings.display.resources.barNumberColor = Color.fromJson(res.barNumberColor);
-      apiRef.current.settings.display.resources.mainGlyphColor = Color.fromJson(res.mainGlyphColor);
-      apiRef.current.settings.display.resources.secondaryGlyphColor = Color.fromJson(res.secondaryGlyphColor);
-      apiRef.current.settings.display.resources.scoreInfoColor = Color.fromJson(res.scoreInfoColor);
       try {
+        const Color = (apiRef.current.settings.display.resources.staffLineColor as any).constructor;
+        const res = getThemeResources(nextTheme);
+        apiRef.current.settings.display.resources.staffLineColor = Color.fromJson(res.staffLineColor);
+        apiRef.current.settings.display.resources.barSeparatorColor = Color.fromJson(res.barSeparatorColor);
+        apiRef.current.settings.display.resources.barNumberColor = Color.fromJson(res.barNumberColor);
+        apiRef.current.settings.display.resources.mainGlyphColor = Color.fromJson(res.mainGlyphColor);
+        apiRef.current.settings.display.resources.secondaryGlyphColor = Color.fromJson(res.secondaryGlyphColor);
+        apiRef.current.settings.display.resources.scoreInfoColor = Color.fromJson(res.scoreInfoColor);
         apiRef.current.render();
       } catch {
         // ignore
       }
     }
-  }, [scoreTheme]);
+  }, []);
+
+  // Toggle between Dark Stage and Studio Paper
+  const toggleScoreTheme = useCallback(() => {
+    const nextTheme = scoreTheme === 'dark' ? 'light' : 'dark';
+    updateScoreTheme(nextTheme);
+  }, [scoreTheme, updateScoreTheme]);
+
+  // Synchronize with global theme changes and localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem(THEME_STORAGE_KEY);
+        if (saved === 'light' || saved === 'dark') {
+          setScoreTheme(saved);
+        } else if (document.documentElement.classList.contains('dark')) {
+          setScoreTheme('dark');
+        } else {
+          setScoreTheme('light');
+        }
+      } catch {
+        // ignore
+      }
+
+      const handleGlobalThemeChange = (e: Event) => {
+        const customEvent = e as CustomEvent<{ theme: 'light' | 'dark' }>;
+        const next = customEvent.detail?.theme;
+        if (next === 'light' || next === 'dark') {
+          updateScoreTheme(next);
+        }
+      };
+
+      window.addEventListener('theme-change', handleGlobalThemeChange);
+      return () => window.removeEventListener('theme-change', handleGlobalThemeChange);
+    }
+  }, [updateScoreTheme]);
 
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
@@ -264,11 +285,15 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         setStatus('Creating notation renderer...');
 
         // Saved theme on initialization
-        let initialTheme: 'dark' | 'light' = 'dark';
+        let initialTheme: 'dark' | 'light' = 'light';
         if (typeof window !== 'undefined') {
           try {
             const saved = localStorage.getItem(THEME_STORAGE_KEY);
-            if (saved === 'light' || saved === 'dark') initialTheme = saved;
+            if (saved === 'light' || saved === 'dark') {
+              initialTheme = saved;
+            } else if (document.documentElement.classList.contains('dark')) {
+              initialTheme = 'dark';
+            }
           } catch {
             // ignore
           }
@@ -598,7 +623,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
       {/* Playback Controls Console */}
       {renderComplete && (
-        <div className="mt-3 px-3 sm:px-4 py-3 bg-slate-950/90 rounded-2xl border border-slate-800 shadow-xl text-xs flex flex-wrap items-center justify-between gap-3">
+        <div className="mt-3 px-3 sm:px-4 py-3 bg-white dark:bg-slate-950/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl text-xs flex flex-wrap items-center justify-between gap-3 text-slate-800 dark:text-slate-100">
           {/* Play/Pause, Stop & Time Counter */}
           <div className="flex items-center gap-2">
             <button
@@ -642,8 +667,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               disabled={!playerReady}
               className={`h-9 sm:h-10 w-9 sm:w-10 flex items-center justify-center rounded-xl transition-all ${
                 playerReady
-                  ? 'bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 hover:text-white cursor-pointer active:scale-95'
-                  : 'bg-slate-900/50 text-slate-600 border border-slate-800/60 cursor-not-allowed'
+                  ? 'bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:text-slate-900 dark:hover:text-white cursor-pointer active:scale-95'
+                  : 'bg-slate-100/50 dark:bg-slate-900/50 text-slate-400 dark:text-slate-600 border border-slate-200 dark:border-slate-800/60 cursor-not-allowed'
               }`}
               title="Stop"
             >
@@ -653,14 +678,14 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </button>
 
             {/* Time Counter */}
-            <span className="text-[11px] sm:text-xs font-mono font-medium text-slate-300 bg-slate-900 px-2.5 py-1.5 sm:py-2 rounded-xl border border-slate-800">
-              {formatTime(currentTime)} <span className="text-slate-500">/</span> {formatTime(endTime || 0)}
+            <span className="text-[11px] sm:text-xs font-mono font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-900 px-2.5 py-1.5 sm:py-2 rounded-xl border border-slate-200 dark:border-slate-800">
+              {formatTime(currentTime)} <span className="text-slate-400 dark:text-slate-500">/</span> {formatTime(endTime || 0)}
             </span>
           </div>
 
           {/* Speed Preset Controls */}
-          <div className="flex items-center gap-1.5 bg-slate-900/90 px-2.5 py-1.5 rounded-xl border border-slate-800">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider hidden md:inline">Speed:</span>
+          <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-900/90 px-2.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider hidden md:inline">Speed:</span>
             {[0.5, 0.75, 1.0, 1.25].map((speed) => (
               <button
                 key={speed}
@@ -668,8 +693,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                 onClick={() => handleSpeedChange(speed)}
                 className={`text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md font-mono font-bold transition-all cursor-pointer ${
                   playbackSpeed === speed
-                    ? 'bg-cyan-500 text-slate-950 shadow-xs'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
+                    ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 shadow-xs'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800'
                 }`}
               >
                 {speed}x
@@ -679,7 +704,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
           {/* Instrument Selector */}
           <div className="flex items-center gap-1">
-            <div className="inline-flex rounded-xl bg-slate-900 border border-slate-800 p-0.5 sm:p-1" role="group">
+            <div className="inline-flex rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-0.5 sm:p-1" role="group">
               {INSTRUMENT_OPTIONS.map((inst) => {
                 const isActive = selectedInstrument === inst.id;
                 return (
@@ -689,8 +714,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                     onClick={() => handleInstrumentChange(inst.id)}
                     className={`text-xs px-2 sm:px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 font-medium cursor-pointer ${
                       isActive
-                        ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-xs font-bold'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                        ? 'bg-blue-600/20 dark:bg-cyan-500/20 text-blue-700 dark:text-cyan-300 border border-blue-500/30 dark:border-cyan-500/40 shadow-xs font-bold'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800/60'
                     }`}
                     title={inst.title}
                   >
@@ -708,8 +733,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               onClick={handleCountInToggle}
               className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
                 countInOn
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
-                  : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
+                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs'
+                  : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
               }`}
               title="Count-in before playback"
             >
@@ -720,8 +745,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               onClick={handleMetronomeToggle}
               className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
                 metronomeOn
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
-                  : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
+                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs'
+                  : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
               }`}
               title="Toggle metronome click"
             >

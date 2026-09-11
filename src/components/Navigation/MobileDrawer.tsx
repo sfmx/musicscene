@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import type { NavCategory } from '@/lib/navigationData';
 import MobileAccordion from './MobileAccordion';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -48,7 +49,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-slate-900 border-r border-slate-800 text-slate-100 z-50 shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 z-50 shadow-2xl transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         role="dialog"
@@ -56,28 +57,31 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
         aria-label="Navigation menu"
       >
         {/* Drawer header */}
-        <div className="flex items-center justify-between p-4 border-b border-slate-800">
-          <Link href="/" onClick={onClose} className="text-lg font-bold text-white">
+        <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
+          <Link href="/" onClick={onClose} className="text-lg font-bold text-slate-900 dark:text-white">
             Music Scene
           </Link>
-          <button
-            onClick={onClose}
-            className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
-            aria-label="Close menu"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={onClose}
+              className="w-9 h-9 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              aria-label="Close menu"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Search button */}
-        <div className="p-4 border-b border-slate-800">
+        <div className="p-4 border-b border-slate-200 dark:border-slate-800">
           <button
             onClick={() => { onClose(); onSearch(); }}
-            className="flex items-center gap-2 w-full px-3 py-2.5 bg-slate-950 border border-slate-800 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors"
+            className="flex items-center gap-2 w-full px-3 py-2.5 bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <circle cx="11" cy="11" r="8" />
               <path strokeLinecap="round" d="m21 21-4.35-4.35" />
             </svg>
@@ -91,7 +95,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
           <Link
             href="/"
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-3 text-slate-200 font-medium hover:bg-slate-800/60 border-b border-slate-800/60 min-h-[44px]"
+            className="flex items-center gap-2 px-4 py-3 text-slate-800 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800/60 border-b border-slate-200 dark:border-slate-800/60 min-h-[44px]"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-9 9 9" />
@@ -113,7 +117,7 @@ export default function MobileDrawer({ isOpen, onClose, categories, onSearch }: 
           <Link
             href="/search"
             onClick={onClose}
-            className="flex items-center gap-2 px-4 py-3 text-cyan-400 font-medium hover:bg-slate-800/60 min-h-[44px]"
+            className="flex items-center gap-2 px-4 py-3 text-blue-600 dark:text-cyan-400 font-medium hover:bg-slate-100 dark:hover:bg-slate-800/60 min-h-[44px]"
           >
             Browse All Content →
           </Link>

@@ -1,49 +1,51 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  /* Base theme colors */
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base theme colors - Studio Light (Default) */
+  --background: #f8fafc;        /* Slate-50: clean, warm studio off-white */
+  --foreground: #0f172a;        /* Slate-900: rich, high-contrast dark charcoal */
   
   /* Music Scene theme colors */
-  --primary: #1f2937;           /* Gray-800 */
-  --primary-light: #374151;     /* Gray-700 */
-  --secondary: #f3f4f6;         /* Gray-100 */
-  --accent: #3b82f6;            /* Blue-500 */
-  --accent-hover: #2563eb;      /* Blue-600 */
+  --primary: #0f172a;           /* Slate-900 */
+  --primary-light: #334155;     /* Slate-700 */
+  --secondary: #f1f5f9;         /* Slate-100 */
+  --accent: #2563eb;            /* Blue-600 */
+  --accent-hover: #1d4ed8;      /* Blue-700 */
   
   /* Category colors - consistent with lesson pages */
-  --theory-bg: #fef3c7;         /* Yellow-100 */
-  --theory-border: #fde047;     /* Yellow-300 */
-  --theory-text: #a16207;       /* Yellow-700 */
+  --theory-bg: #fef3c7;         /* Amber-100 */
+  --theory-border: #fde047;     /* Amber-300 */
+  --theory-text: #a16207;       /* Amber-700 */
   
-  --songs-bg: #fed7aa;          /* Orange-200 */
+  --songs-bg: #ffedd5;          /* Orange-100 */
   --songs-border: #fb923c;      /* Orange-400 */
   --songs-text: #c2410c;        /* Orange-700 */
   
-  --gear-bg: #e9d5ff;           /* Purple-200 */
+  --gear-bg: #f3e8ff;           /* Purple-100 */
   --gear-border: #c084fc;       /* Purple-400 */
   --gear-text: #7c3aed;         /* Purple-600 */
   
-  --practice-bg: #d1fae5;       /* Green-200 */
+  --practice-bg: #dcfce7;       /* Green-100 */
   --practice-border: #4ade80;   /* Green-400 */
   --practice-text: #059669;     /* Green-600 */
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #1f2937;
-    --secondary: #374151;
-    --accent: #60a5fa;
-    --accent-hover: #3b82f6;
-  }
+/* Dark Stage mode (active when html has .dark class) */
+.dark {
+  --background: #020617;        /* Slate-950: deep obsidian stage */
+  --foreground: #f8fafc;        /* Slate-50: crisp bright white */
+  --primary: #f8fafc;
+  --primary-light: #94a3b8;
+  --secondary: #0f172a;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }

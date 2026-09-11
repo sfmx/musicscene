@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <Layout>
-      <div className="bg-slate-950 min-h-screen text-slate-100">
+      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
         {/* 1. Hero Section: The Tab vs. Theory Bridge */}
         <HomeHero />
 
@@ -54,17 +54,17 @@ export default function HomePage() {
         <TheoryCurriculumSection />
 
         {/* 6. Final Conversion & Practice CTA */}
-        <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden border-t border-slate-800">
+        <section className="py-24 bg-gradient-to-b from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-950 relative overflow-hidden border-t border-slate-200 dark:border-slate-800 transition-colors">
           <div className="absolute inset-0 opacity-15 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500 via-transparent to-transparent pointer-events-none" />
           
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center">
-            <span className="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20 mb-6 inline-block">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20 mb-6 inline-block">
               Start Your Fretboard Transformation
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-6">
               Ready to Understand What You Play?
             </h2>
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
               Join thousands of guitarists learning how iconic songs really work. Jump into our interactive tools, search 100+ song breakdowns, or grab the free 3-page fretboard cheat sheet.
             </p>
 
@@ -77,13 +77,13 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/downloads/fretboard-cheat-sheet"
-                className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-base inline-flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-base inline-flex items-center justify-center gap-2 shadow-xs"
               >
                 <span>📄 Download Free Fretboard PDF</span>
               </Link>
               <Link
                 href="/lessons/songs/song-analysis"
-                className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-800/80 text-slate-300 hover:text-white font-semibold rounded-xl border border-slate-800 hover:border-slate-700 transition-all duration-200 text-base inline-flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-200/60 dark:hover:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold rounded-xl border border-slate-300 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-700 transition-all duration-200 text-base inline-flex items-center justify-center gap-2"
               >
                 <span>Browse All 107 Songs ➔</span>
               </Link>
