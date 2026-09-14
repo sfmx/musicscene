@@ -65,11 +65,11 @@ export default function ScaleAnalysisPageTemplate({
           subtitle="Please wait while we load the scale data"
           category="🎼 Scale Theory"
         />
-        <div className="bg-slate-950 min-h-screen text-slate-100 py-16">
+        <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 py-16 transition-colors">
           <main className="max-w-6xl mx-auto px-4 text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto mb-4"></div>
-            <h1 className="text-2xl font-bold text-white mb-2">Loading Scale Data</h1>
-            <p className="text-slate-400">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-600 dark:border-cyan-400 mx-auto mb-4"></div>
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Loading Scale Data</h1>
+            <p className="text-slate-600 dark:text-slate-400">
               Loading {displayName || scaleSlug} scale information...
             </p>
           </main>
@@ -86,15 +86,15 @@ export default function ScaleAnalysisPageTemplate({
           subtitle={error || `Could not find scale data for "${scaleSlug}"`}
           category="🎼 Scale Theory"
         />
-        <div className="bg-slate-950 min-h-screen text-slate-100 py-16">
+        <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 py-16 transition-colors">
           <main className="max-w-6xl mx-auto px-4 text-center">
-            <h1 className="text-2xl font-bold text-white mb-4">Scale Not Found</h1>
-            <p className="text-slate-400 mb-8">
+            <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Scale Not Found</h1>
+            <p className="text-slate-600 dark:text-slate-400 mb-8">
               {error || `The scale "${scaleSlug}" could not be found in our database.`}
             </p>
             <Link 
               href="/lessons/theory/scales" 
-              className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold transition-colors"
+              className="inline-flex items-center text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 font-semibold transition-colors"
             >
               <span className="mr-2">←</span>
               Back to Scale Theory
@@ -124,36 +124,36 @@ export default function ScaleAnalysisPageTemplate({
         badges={badges}
       />
       
-      <div className="bg-slate-950 min-h-screen text-slate-100 pb-20">
+      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 pb-20 transition-colors">
         <main className="max-w-6xl mx-auto px-4 py-8">
           <Breadcrumbs pathname={`/lessons/theory/scales/${scaleSlug}`} pageTitle={scaleData.scaleInfo.name} />
 
           {/* Hero Section */}
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 p-8 mb-12 shadow-2xl">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-100 via-indigo-50/40 to-slate-100 dark:from-slate-900 dark:via-indigo-950/40 dark:to-slate-900 border border-indigo-200 dark:border-indigo-500/30 p-8 mb-12 shadow-sm dark:shadow-2xl">
             <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-xs font-semibold mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 dark:bg-cyan-500/15 border border-cyan-200 dark:border-cyan-500/30 text-cyan-800 dark:text-cyan-300 text-xs font-semibold mb-3">
                 <span>🎼</span> Scale Formula &amp; Interval Structure
               </div>
-              <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-3">
                 {scaleData.scaleInfo.name}
               </h1>
-              <p className="text-lg text-slate-300 mb-6 max-w-3xl leading-relaxed">
+              <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 max-w-3xl leading-relaxed">
                 {scaleData.scaleInfo.character} scale with {scaleData.scaleInfo.noteCount} notes. 
                 Creates {scaleData.scaleInfo.mood.join(', ')} musical expressions.
               </p>
               <div className="flex flex-wrap gap-2.5 text-xs font-medium">
-                <span className="bg-slate-950/80 border border-slate-800 text-cyan-300 px-3 py-1.5 rounded-lg font-mono">
+                <span className="bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-cyan-700 dark:text-cyan-300 px-3 py-1.5 rounded-lg font-mono">
                   {scaleData.scaleInfo.intervalPattern}
                 </span>
-                <span className="bg-slate-950/80 border border-slate-800 text-amber-300 px-3 py-1.5 rounded-lg font-mono">
+                <span className="bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-amber-700 dark:text-amber-300 px-3 py-1.5 rounded-lg font-mono">
                   {scaleData.scaleInfo.noteCount} Notes
                 </span>
-                <span className="bg-slate-950/80 border border-slate-800 text-purple-300 px-3 py-1.5 rounded-lg">
+                <span className="bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-purple-700 dark:text-purple-300 px-3 py-1.5 rounded-lg">
                   {scaleData.scaleInfo.character}
                 </span>
                 {scaleData.theory.mode && (
-                  <span className="bg-slate-950/80 border border-slate-800 text-emerald-300 px-3 py-1.5 rounded-lg">
+                  <span className="bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-emerald-700 dark:text-emerald-300 px-3 py-1.5 rounded-lg">
                     {scaleData.theory.mode}
                   </span>
                 )}

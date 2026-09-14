@@ -19,15 +19,15 @@ const ALL_TYPES: ContentType[] = [
 const DIFFICULTIES = ['Beginner', 'Intermediate', 'Advanced', 'Expert'];
 
 const TYPE_COLORS: Record<string, { bg: string; text: string; border: string }> = {
-  'chord': { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30' },
-  'scale': { bg: 'bg-cyan-500/10', text: 'text-cyan-400', border: 'border-cyan-500/30' },
-  'interval': { bg: 'bg-blue-500/10', text: 'text-blue-400', border: 'border-blue-500/30' },
-  'mode': { bg: 'bg-teal-500/10', text: 'text-teal-400', border: 'border-teal-500/30' },
-  'progression': { bg: 'bg-violet-500/10', text: 'text-violet-400', border: 'border-violet-500/30' },
-  'song-analysis': { bg: 'bg-amber-500/10', text: 'text-amber-400', border: 'border-amber-500/30' },
-  'practice': { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30' },
-  'gear-lesson': { bg: 'bg-purple-500/10', text: 'text-purple-400', border: 'border-purple-500/30' },
-  'song-lesson': { bg: 'bg-orange-500/10', text: 'text-orange-400', border: 'border-orange-500/30' },
+  'chord': { bg: 'bg-emerald-50 dark:bg-emerald-500/10', text: 'text-emerald-700 dark:text-emerald-400', border: 'border-emerald-200 dark:border-emerald-500/30' },
+  'scale': { bg: 'bg-cyan-50 dark:bg-cyan-500/10', text: 'text-cyan-700 dark:text-cyan-400', border: 'border-cyan-200 dark:border-cyan-500/30' },
+  'interval': { bg: 'bg-blue-50 dark:bg-blue-500/10', text: 'text-blue-700 dark:text-blue-400', border: 'border-blue-200 dark:border-blue-500/30' },
+  'mode': { bg: 'bg-teal-50 dark:bg-teal-500/10', text: 'text-teal-700 dark:text-teal-400', border: 'border-teal-200 dark:border-teal-500/30' },
+  'progression': { bg: 'bg-violet-50 dark:bg-violet-500/10', text: 'text-violet-700 dark:text-violet-400', border: 'border-violet-200 dark:border-violet-500/30' },
+  'song-analysis': { bg: 'bg-amber-50 dark:bg-amber-500/10', text: 'text-amber-700 dark:text-amber-400', border: 'border-amber-200 dark:border-amber-500/30' },
+  'practice': { bg: 'bg-emerald-50 dark:bg-emerald-500/10', text: 'text-emerald-700 dark:text-emerald-400', border: 'border-emerald-200 dark:border-emerald-500/30' },
+  'gear-lesson': { bg: 'bg-purple-50 dark:bg-purple-500/10', text: 'text-purple-700 dark:text-purple-400', border: 'border-purple-200 dark:border-purple-500/30' },
+  'song-lesson': { bg: 'bg-orange-50 dark:bg-orange-500/10', text: 'text-orange-700 dark:text-orange-400', border: 'border-orange-200 dark:border-orange-500/30' },
 };
 
 export default function SearchBrowsePage() {
@@ -131,7 +131,7 @@ export default function SearchBrowsePage() {
         category="Content Search & Filter"
       />
 
-      <div className="min-h-screen bg-slate-950 text-slate-100 py-8">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 py-8 transition-colors">
         <main className="max-w-7xl mx-auto px-4">
           <Breadcrumbs pathname="/search" pageTitle="Search" />
 
@@ -147,13 +147,13 @@ export default function SearchBrowsePage() {
                 value={query}
                 onChange={(e) => handleQueryChange(e.target.value)}
                 placeholder="Search lessons, songs, theory..."
-                className="w-full pl-11 pr-4 py-3 bg-slate-900/90 border border-slate-800 rounded-xl text-white placeholder:text-slate-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none"
+                className="w-full pl-11 pr-4 py-3 bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none shadow-sm dark:shadow-none"
               />
             </div>
             <button
               onClick={() => setShowFilters(!showFilters)}
               className={`flex items-center gap-2 px-5 py-3 rounded-xl border transition-colors font-medium ${
-                showFilters ? 'bg-cyan-500/15 border-cyan-500/40 text-cyan-300' : 'bg-slate-900/90 border-slate-800 text-slate-300 hover:border-slate-700'
+                showFilters ? 'bg-cyan-100 dark:bg-cyan-500/15 border-cyan-300 dark:border-cyan-500/40 text-cyan-800 dark:text-cyan-300' : 'bg-white dark:bg-slate-900/90 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none'
               }`}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -161,7 +161,7 @@ export default function SearchBrowsePage() {
               </svg>
               <span className="hidden sm:inline">Filters</span>
               {(selectedTypes.length + selectedDiffs.length + selectedTags.length) > 0 && (
-                <span className="bg-cyan-500 text-slate-950 text-xs font-bold px-1.5 py-0.5 rounded-full">
+                <span className="bg-cyan-600 dark:bg-cyan-500 text-white dark:text-slate-950 text-xs font-bold px-1.5 py-0.5 rounded-full">
                   {selectedTypes.length + selectedDiffs.length + selectedTags.length}
                 </span>
               )}
@@ -172,21 +172,21 @@ export default function SearchBrowsePage() {
           {hasFilters && (
             <div className="flex flex-wrap gap-2 mb-6">
               {selectedTypes.map(t => (
-                <button key={t} onClick={() => toggleType(t)} className="flex items-center gap-1 text-xs px-3 py-1 bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 rounded-full hover:bg-cyan-500/25 transition-colors">
-                  {getContentTypeLabel(t)} <span className="text-cyan-400">×</span>
+                <button key={t} onClick={() => toggleType(t)} className="flex items-center gap-1 text-xs px-3 py-1 bg-cyan-100 dark:bg-cyan-500/15 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 rounded-full hover:bg-cyan-200 dark:hover:bg-cyan-500/25 transition-colors">
+                  {getContentTypeLabel(t)} <span className="text-cyan-600 dark:text-cyan-400">×</span>
                 </button>
               ))}
               {selectedDiffs.map(d => (
-                <button key={d} onClick={() => toggleDifficulty(d)} className="flex items-center gap-1 text-xs px-3 py-1 bg-amber-500/15 text-amber-300 border border-amber-500/30 rounded-full hover:bg-amber-500/25 transition-colors">
-                  {d} <span className="text-amber-400">×</span>
+                <button key={d} onClick={() => toggleDifficulty(d)} className="flex items-center gap-1 text-xs px-3 py-1 bg-amber-100 dark:bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-500/30 rounded-full hover:bg-amber-200 dark:hover:bg-amber-500/25 transition-colors">
+                  {d} <span className="text-amber-600 dark:text-amber-400">×</span>
                 </button>
               ))}
               {selectedTags.map(t => (
-                <button key={t} onClick={() => toggleTag(t)} className="flex items-center gap-1 text-xs px-3 py-1 bg-purple-500/15 text-purple-300 border border-purple-500/30 rounded-full hover:bg-purple-500/25 transition-colors">
-                  {getTagLabel(t)} <span className="text-purple-400">×</span>
+                <button key={t} onClick={() => toggleTag(t)} className="flex items-center gap-1 text-xs px-3 py-1 bg-purple-100 dark:bg-purple-500/15 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30 rounded-full hover:bg-purple-200 dark:hover:bg-purple-500/25 transition-colors">
+                  {getTagLabel(t)} <span className="text-purple-600 dark:text-purple-400">×</span>
                 </button>
               ))}
-              <button onClick={clearFilters} className="text-xs px-2.5 py-1 text-slate-400 hover:text-white underline transition-colors">
+              <button onClick={clearFilters} className="text-xs px-2.5 py-1 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white underline transition-colors">
                 Clear all
               </button>
             </div>
@@ -196,47 +196,47 @@ export default function SearchBrowsePage() {
             {/* Filter panel */}
             {showFilters && (
               <aside className="w-64 flex-shrink-0 hidden md:block">
-                <div className="bg-slate-900/90 rounded-xl border border-slate-800 p-5 sticky top-4 shadow-xl space-y-6">
+                <div className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 p-5 sticky top-4 shadow-sm dark:shadow-xl space-y-6">
                   {/* Content Type */}
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-2">Content Type</h3>
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Content Type</h3>
                     <div className="space-y-1">
                       {ALL_TYPES.map(type => (
-                        <label key={type} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800/60 rounded px-1.5 py-1 transition-colors">
+                        <label key={type} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded px-1.5 py-1 transition-colors">
                           <input
                             type="checkbox"
                             checked={selectedTypes.includes(type)}
                             onChange={() => toggleType(type)}
-                            className="rounded border-slate-700 bg-slate-950 text-cyan-500 focus:ring-cyan-500"
+                            className="rounded border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-cyan-600 dark:text-cyan-500 focus:ring-cyan-500"
                           />
-                          <span className="text-slate-300">{getContentTypeLabel(type)}</span>
-                          <span className="text-slate-500 text-xs ml-auto">{typeCounts[type] || 0}</span>
+                          <span className="text-slate-700 dark:text-slate-300">{getContentTypeLabel(type)}</span>
+                          <span className="text-slate-400 dark:text-slate-500 text-xs ml-auto">{typeCounts[type] || 0}</span>
                         </label>
                       ))}
                     </div>
                   </div>
 
                   {/* Difficulty */}
-                  <div className="pt-4 border-t border-slate-800">
-                    <h3 className="text-sm font-semibold text-white mb-2">Difficulty</h3>
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Difficulty</h3>
                     <div className="space-y-1">
                       {DIFFICULTIES.map(d => (
-                        <label key={d} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800/60 rounded px-1.5 py-1 transition-colors">
+                        <label key={d} className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded px-1.5 py-1 transition-colors">
                           <input
                             type="checkbox"
                             checked={selectedDiffs.includes(d)}
                             onChange={() => toggleDifficulty(d)}
-                            className="rounded border-slate-700 bg-slate-950 text-cyan-500 focus:ring-cyan-500"
+                            className="rounded border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-cyan-600 dark:text-cyan-500 focus:ring-cyan-500"
                           />
-                          <span className="text-slate-300">{d}</span>
+                          <span className="text-slate-700 dark:text-slate-300">{d}</span>
                         </label>
                       ))}
                     </div>
                   </div>
 
                   {/* Genre tags */}
-                  <div className="pt-4 border-t border-slate-800">
-                    <h3 className="text-sm font-semibold text-white mb-2">Genre</h3>
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Genre</h3>
                     <div className="flex flex-wrap gap-1">
                       {genreTags.map(t => (
                         <button
@@ -244,8 +244,8 @@ export default function SearchBrowsePage() {
                           onClick={() => toggleTag(t.slug)}
                           className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
                             selectedTags.includes(t.slug)
-                              ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300'
-                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                              ? 'bg-cyan-100 dark:bg-cyan-500/20 border-cyan-300 dark:border-cyan-500/50 text-cyan-800 dark:text-cyan-300'
+                              : 'bg-slate-100 dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
                           }`}
                         >
                           {t.label}
@@ -255,8 +255,8 @@ export default function SearchBrowsePage() {
                   </div>
 
                   {/* Technique tags */}
-                  <div className="pt-4 border-t border-slate-800">
-                    <h3 className="text-sm font-semibold text-white mb-2">Technique</h3>
+                  <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Technique</h3>
                     <div className="flex flex-wrap gap-1">
                       {techniqueTags.map(t => (
                         <button
@@ -264,8 +264,8 @@ export default function SearchBrowsePage() {
                           onClick={() => toggleTag(t.slug)}
                           className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
                             selectedTags.includes(t.slug)
-                              ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300'
-                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                              ? 'bg-cyan-100 dark:bg-cyan-500/20 border-cyan-300 dark:border-cyan-500/50 text-cyan-800 dark:text-cyan-300'
+                              : 'bg-slate-100 dark:bg-slate-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
                           }`}
                         >
                           {t.label}
@@ -281,7 +281,7 @@ export default function SearchBrowsePage() {
             <div className="flex-1">
               {/* Sort + count bar */}
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm text-slate-400">{results.length} result{results.length !== 1 ? 's' : ''}</span>
+                <span className="text-sm text-slate-600 dark:text-slate-400">{results.length} result{results.length !== 1 ? 's' : ''}</span>
                 <select
                   value={sortBy}
                   onChange={(e) => {
@@ -289,7 +289,7 @@ export default function SearchBrowsePage() {
                     setSortBy(val);
                     updateUrl({ q: query, type: selectedTypes.join(','), difficulty: selectedDiffs.join(','), tags: selectedTags.join(','), sort: val });
                   }}
-                  className="text-sm bg-slate-900 border border-slate-800 rounded-lg px-3 py-1.5 text-slate-200 outline-none focus:border-cyan-500"
+                  className="text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-3 py-1.5 text-slate-800 dark:text-slate-200 outline-none focus:border-cyan-500 shadow-sm dark:shadow-none"
                 >
                   <option value="relevance">Sort: Relevance</option>
                   <option value="alphabetical">Sort: A-Z</option>
@@ -305,15 +305,15 @@ export default function SearchBrowsePage() {
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16 bg-slate-900/50 rounded-xl border border-slate-800">
-                  <svg className="w-12 h-12 text-slate-600 mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                <div className="text-center py-16 bg-white dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
+                  <svg className="w-12 h-12 text-slate-400 dark:text-slate-600 mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
                     <circle cx="11" cy="11" r="8" />
                     <path strokeLinecap="round" d="m21 21-4.35-4.35" />
                   </svg>
-                  <p className="text-slate-300 font-medium mb-2">No results found</p>
+                  <p className="text-slate-800 dark:text-slate-300 font-medium mb-2">No results found</p>
                   <p className="text-slate-500 text-sm">Try adjusting your search or filters</p>
                   {hasFilters && (
-                    <button onClick={clearFilters} className="mt-4 text-cyan-400 hover:text-cyan-300 text-sm underline transition-colors">
+                    <button onClick={clearFilters} className="mt-4 text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 text-sm underline transition-colors">
                       Clear all filters
                     </button>
                   )}
@@ -333,11 +333,11 @@ function ResultCard({ entry }: { entry: ContentEntry }) {
   return (
     <Link
       href={entry.url}
-      className="block bg-slate-900/90 rounded-xl p-4 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800/80 shadow-lg transition-all duration-200 group flex flex-col justify-between"
+      className="block bg-white dark:bg-slate-900/90 rounded-xl p-4 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:bg-slate-50 dark:hover:bg-slate-800/80 shadow-sm dark:shadow-lg transition-all duration-200 group flex flex-col justify-between"
     >
       <div>
         <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="font-semibold text-white group-hover:text-cyan-300 transition-colors text-sm leading-tight">{entry.title}</h3>
+          <h3 className="font-semibold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-300 transition-colors text-sm leading-tight">{entry.title}</h3>
         </div>
         <div className="flex items-center gap-2 flex-wrap mb-2">
           <span className={`text-xs px-2 py-0.5 rounded-full ${colors.bg} ${colors.text} border ${colors.border}`}>
@@ -351,9 +351,9 @@ function ResultCard({ entry }: { entry: ContentEntry }) {
         </div>
       </div>
       {entry.tags.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-2 pt-2 border-t border-slate-800/60">
+        <div className="flex flex-wrap gap-1 mt-2 pt-2 border-t border-slate-200 dark:border-slate-800/60">
           {entry.tags.slice(0, 3).map(tag => (
-            <span key={tag} className="text-[11px] text-slate-400 bg-slate-950/80 border border-slate-800/80 px-1.5 py-0.5 rounded">
+            <span key={tag} className="text-[11px] text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800/80 px-1.5 py-0.5 rounded">
               {getTagLabel(tag)}
             </span>
           ))}
