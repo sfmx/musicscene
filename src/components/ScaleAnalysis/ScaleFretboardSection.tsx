@@ -33,11 +33,10 @@ export default function ScaleFretboardSection({ scaleData }: ScaleFretboardSecti
             
             {/* AlphaTab Notation */}
             {pattern.alphaTex && pattern.alphaTex.trim() !== '' && (
-              <div className="mb-4 bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
+              <div className="mb-4">
                 <AlphaTexRenderer
                   alphaTex={pattern.alphaTex}
                   title={`${pattern.position} Pattern`}
-                  className="scale-75"
                 />
               </div>
             )}

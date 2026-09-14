@@ -40,8 +40,8 @@ export default function IntervalGuitarSection({ guitarApplications }: Props) {
                     <p className="text-xs font-mono text-amber-700 dark:text-amber-300 mt-1">{ex.chord2Label}</p>
                   </div>
                 </div>
-                <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800 mb-3">
-                  <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.alphaTexTitle} className="scale-75" />
+                <div className="mb-3">
+                  <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.alphaTexTitle} />
                 </div>
                 <p className="text-xs text-slate-600 dark:text-slate-400 italic">{ex.description}</p>
               </div>

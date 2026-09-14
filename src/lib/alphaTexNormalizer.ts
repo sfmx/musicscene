@@ -45,6 +45,32 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
     }
   }
 
+  // Auto-bar unbarred scale runs or single-note sequences
+  if (!body.includes('|')) {
+    const tokens = body.trim().split(/\s+/).filter(Boolean);
+    if (tokens.length > 4 && tokens.every((t) => /^\d{1,2}\.\d$/.test(t))) {
+      const bars: string[] = [];
+      for (let i = 0; i < tokens.length; i += 8) {
+        const chunk = tokens.slice(i, i + 8);
+        if (chunk.length === 8) {
+          bars.push(`:8 ${chunk.join(' ')}`);
+        } else if (chunk.length === 4) {
+          bars.push(`:4 ${chunk.join(' ')}`);
+        } else if (chunk.length === 2) {
+          bars.push(`:2 ${chunk.join(' ')}`);
+        } else if (chunk.length === 1) {
+          bars.push(`:4 ${chunk[0]}.1`);
+        } else if (chunk.length === 3) {
+          bars.push(`:4 ${chunk[0]} ${chunk[1]} ${chunk[2]}.2`);
+        } else {
+          const missing = 8 - chunk.length;
+          bars.push(`:8 ${chunk.join(' ')} r.${missing === 2 ? '4' : missing === 1 ? '8' : '2'}`);
+        }
+      }
+      body = bars.join(' | ') + ' |';
+    }
+  }
+
   const rawBars = body.split('|');
   const hasTrailingPipe = body.trim().endsWith('|');
 

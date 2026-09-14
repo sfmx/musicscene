@@ -36,11 +36,10 @@ export default function ScalePracticeSection({ scaleData }: ScalePracticeSection
 
             {/* AlphaTab Notation if available */}
             {exercise.alphaTex && (
-              <div className="mb-4 bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
+              <div className="mb-4">
                 <AlphaTexRenderer
                   alphaTex={exercise.alphaTex}
                   title={exercise.name}
-                  className="scale-75"
                 />
               </div>
             )}

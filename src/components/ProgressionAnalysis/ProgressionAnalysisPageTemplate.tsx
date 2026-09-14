@@ -143,8 +143,8 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
                         ))}
                       </div>
                       {group.alphaTex && (
-                        <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800 mb-3">
-                          <AlphaTexRenderer alphaTex={group.alphaTex} title={group.alphaTexTitle} className="scale-75" />
+                        <div className="mb-3">
+                          <AlphaTexRenderer alphaTex={group.alphaTex} title={group.alphaTexTitle} />
                         </div>
                       )}
                       {group.practiceNotes && group.practiceNotes.length > 0 && (
@@ -252,9 +252,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{ex.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{ex.description}</p>
                     {ex.alphaTex && ex.alphaTex !== '\\notrack' && (
-                      <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
-                        <AlphaTexRenderer alphaTex={ex.alphaTex} className="scale-75" />
-                      </div>
+                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} />
                     )}
                     {ex.practiceNotes && ex.practiceNotes.length > 0 && (
                       <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80">

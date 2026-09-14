@@ -95,4 +95,19 @@ describe('alphaTexNormalizer', () => {
       expect(voiceDur).toBe(3840);
     });
   });
+  it('should auto-bar unbarred scale runs into balanced 4/4 measures', () => {
+    const rawMajorScale = '3.6 5.6 7.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 1.2 3.2 5.2 1.1 3.1';
+    const normalized = normalizeAlphaTex(rawMajorScale);
+    expect(normalized).toContain('|');
+    expect(normalized).toContain(':8');
+
+    const score = alphaTab.importer.ScoreLoader.loadAlphaTex(normalized);
+    score.finish(new alphaTab.Settings());
+    expect(score.masterBars.length).toBe(3);
+    score.masterBars.forEach((mb, i) => {
+      const voiceDur = score.tracks[0].staves[0].bars[i].voices[0].calculateDuration();
+      expect(mb.calculateDuration()).toBe(3840);
+      expect(voiceDur).toBe(3840);
+    });
+  });
 });

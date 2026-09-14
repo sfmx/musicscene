@@ -344,8 +344,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             fontDirectory: '/alphatab/font/'
           },
           display: {
-            scale: 0.9,
-            stretchForce: 0.8,
+            scale: 1.0,
+            stretchForce: 1.0,
+            justifyLastSystem: true,
             padding: [16, 16],
             resources: themeRes
           },

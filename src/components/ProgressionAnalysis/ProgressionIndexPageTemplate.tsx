@@ -182,7 +182,7 @@ export default function ProgressionIndexPageTemplate() {
                 <div className="bg-slate-50 dark:bg-slate-950/90 rounded-xl p-6 border border-amber-500/30 dark:border-amber-500/30 shadow-sm">
                   <h3 className="text-xl font-bold text-amber-700 dark:text-amber-300 mb-4 text-center">{data.exampleChords.exampleProgression.title}</h3>
                   <div className="flex justify-center mb-4">
-                    <AlphaTexRenderer alphaTex={data.exampleChords.exampleProgression.alphaTex} className="scale-75" />
+                    <AlphaTexRenderer alphaTex={data.exampleChords.exampleProgression.alphaTex} />
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-sm text-center">{data.exampleChords.exampleProgression.description}</p>
                 </div>

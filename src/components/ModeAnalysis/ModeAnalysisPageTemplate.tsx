@@ -132,9 +132,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                       <h4 className="font-bold text-slate-900 dark:text-white mb-2">{pattern.title}</h4>
                       <p className="text-xs text-slate-600 dark:text-slate-300 mb-3 leading-relaxed">{pattern.description}</p>
                       {pattern.alphaTex && pattern.alphaTex !== '\\notrack' && (
-                        <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
-                          <AlphaTexRenderer alphaTex={pattern.alphaTex} className="scale-75" />
-                        </div>
+                        <AlphaTexRenderer alphaTex={pattern.alphaTex} title={pattern.title} />
                       )}
                       {pattern.notes && pattern.notes.length > 0 && (
                         <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80">
@@ -241,9 +239,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{ex.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{ex.description}</p>
                     {ex.alphaTex && ex.alphaTex !== '\\notrack' && (
-                      <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
-                        <AlphaTexRenderer alphaTex={ex.alphaTex} className="scale-75" />
-                      </div>
+                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} />
                     )}
                   </div>
                 ))}
@@ -294,9 +290,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{kv.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{kv.description}</p>
                     {kv.alphaTex && kv.alphaTex !== '\\notrack' && (
-                      <div className="bg-white dark:bg-slate-900/90 rounded-lg p-2 border border-slate-200 dark:border-slate-800">
-                        <AlphaTexRenderer alphaTex={kv.alphaTex} className="scale-75" />
-                      </div>
+                      <AlphaTexRenderer alphaTex={kv.alphaTex} title={kv.title} />
                     )}
                     <p className="text-xs text-cyan-700 dark:text-cyan-300 font-mono mt-2">{kv.notesLabel}</p>
                   </div>

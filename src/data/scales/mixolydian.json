@@ -6,10 +6,16 @@
     "noteCount": 7,
     "intervalPattern": "W-W-H-W-W-H-W",
     "character": "Dominant, bluesy, rock-friendly major with attitude",
-    "mood": ["dominant", "bluesy", "energetic", "groovy", "earthy"]
+    "mood": [
+      "dominant",
+      "bluesy",
+      "energetic",
+      "groovy",
+      "earthy"
+    ]
   },
   "theory": {
-    "intervalsFromRoot": "1 - 2 - 3 - 4 - 5 - 6 - \u266d7 - 8",
+    "intervalsFromRoot": "1 - 2 - 3 - 4 - 5 - 6 - ♭7 - 8",
     "scaleDegrees": [
       "Root (Tonic)",
       "Major 2nd (Supertonic)",
@@ -28,7 +34,9 @@
     },
     "parallelScale": {
       "name": "Major Scale (Ionian)",
-      "differences": ["Lowered 7th (flat 7th vs natural 7th)"]
+      "differences": [
+        "Lowered 7th (flat 7th vs natural 7th)"
+      ]
     }
   },
   "keyExamples": [
@@ -68,24 +76,39 @@
         "position": "Open Position (G Mixolydian)",
         "description": "Perfect for blues and rock in the key of G. Root on 6th string 3rd fret, flat 7th easily accessible.",
         "fretDiagram": "Open strings and first 3 frets, strings 6-2",
-        "alphaTex": "3.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2",
-        "applications": ["blues guitar", "rock riffs", "country licks", "acoustic playing"]
+        "alphaTex": ":8 3.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 | :4 2.3 0.2 1.2 3.2 |",
+        "applications": [
+          "blues guitar",
+          "rock riffs",
+          "country licks",
+          "acoustic playing"
+        ]
       },
       {
         "patternNumber": 2,
         "position": "5th Position (A Mixolydian)",
         "description": "Rock and blues favorite, moveable pattern starting from 5th fret on low E string",
         "fretDiagram": "5th-9th frets, box pattern",
-        "alphaTex": "5.6 7.6 9.6 5.5 7.5 9.5 5.4 7.4 5.3 7.3 5.2 7.2",
-        "applications": ["rock solos", "blues improvisation", "jam band music", "lead guitar"]
+        "alphaTex": ":8 5.6 7.6 9.6 5.5 7.5 9.5 5.4 7.4 | :4 5.3 7.3 5.2 7.2 |",
+        "applications": [
+          "rock solos",
+          "blues improvisation",
+          "jam band music",
+          "lead guitar"
+        ]
       },
       {
         "patternNumber": 3,
         "position": "Open/2nd Position (D Mixolydian)",
         "description": "Country and folk applications, comfortable for fingerpicking and hybrid picking",
         "fretDiagram": "Open position to 4th fret, strings 4-1",
-        "alphaTex": "0.4 2.4 4.4 0.3 2.3 4.3 0.2 2.2 3.2 0.1 2.1 3.1",
-        "applications": ["country guitar", "folk music", "bluegrass", "fingerpicking"]
+        "alphaTex": ":8 0.4 2.4 4.4 0.3 2.3 4.3 0.2 2.2 | :4 3.2 0.1 2.1 3.1 |",
+        "applications": [
+          "country guitar",
+          "folk music",
+          "bluegrass",
+          "fingerpicking"
+        ]
       }
     ],
     "commonPositions": [
@@ -126,7 +149,7 @@
         "notes": "A - C - E"
       },
       {
-        "degree": "iii\u00b0",
+        "degree": "iii°",
         "chord": "Bdim",
         "quality": "Diminished",
         "function": "Mediant - Diminished chord, adds tension",
@@ -154,7 +177,7 @@
         "notes": "E - G - B"
       },
       {
-        "degree": "\u266dVII",
+        "degree": "♭VII",
         "chord": "F",
         "quality": "Major",
         "function": "Subtonic - Characteristic mixolydian chord, defines the mode",
@@ -163,33 +186,50 @@
     ],
     "commonProgressions": [
       {
-        "name": "Mixolydian Shuffle (I-\u266dVII)",
-        "chords": ["G", "F"],
-        "romanNumerals": "I - \u266dVII",
+        "name": "Mixolydian Shuffle (I-♭VII)",
+        "chords": [
+          "G",
+          "F"
+        ],
+        "romanNumerals": "I - ♭VII",
         "description": "The signature mixolydian movement - the flat VII chord gives the blues/rock feel that defines the mode",
         "genre": "Blues/Rock",
         "alphaTex": "(3.6 0.5 0.4 0.3).2 (3.6 0.5 0.4 0.3).2 (1.6 3.5 3.4 1.3).2 (1.6 3.5 3.4 1.3).2"
       },
       {
-        "name": "Rock Mixolydian (I-\u266dVII-IV)",
-        "chords": ["G", "F", "C"],
-        "romanNumerals": "I - \u266dVII - IV",
+        "name": "Rock Mixolydian (I-♭VII-IV)",
+        "chords": [
+          "G",
+          "F",
+          "C"
+        ],
+        "romanNumerals": "I - ♭VII - IV",
         "description": "Classic three-chord rock progression using the characteristic flat VII, common in Southern rock and jam music",
         "genre": "Rock/Southern Rock",
         "alphaTex": "(3.6 0.5 0.4 0.3).1 (1.6 3.5 3.4 1.3).1 (3.5 2.4 0.3 1.2).1 r.1"
       },
       {
         "name": "Blues Mixolydian (I7-IV7-I7-V7)",
-        "chords": ["G7", "C7", "G7", "D7"],
+        "chords": [
+          "G7",
+          "C7",
+          "G7",
+          "D7"
+        ],
         "romanNumerals": "I7 - IV7 - I7 - V7",
         "description": "12-bar blues framework where mixolydian provides the scale choice for each dominant 7th chord",
         "genre": "Blues",
         "alphaTex": "(3.6 0.5 0.4 1.3).1 (3.5 2.4 3.3 1.2).1 (3.6 0.5 0.4 1.3).1 (0.4 2.3 1.2 2.1).1"
       },
       {
-        "name": "Country Mixolydian (I-IV-I-\u266dVII)",
-        "chords": ["G", "C", "G", "F"],
-        "romanNumerals": "I - IV - I - \u266dVII",
+        "name": "Country Mixolydian (I-IV-I-♭VII)",
+        "chords": [
+          "G",
+          "C",
+          "G",
+          "F"
+        ],
+        "romanNumerals": "I - IV - I - ♭VII",
         "description": "Country-style progression highlighting the mixolydian flat 7th movement, open and earthy character",
         "genre": "Country/Folk",
         "alphaTex": "(3.6 0.5 0.4 0.3).1 (3.5 2.4 0.3 1.2).1 (3.6 0.5 0.4 0.3).1 (1.6 3.5 3.4 1.3).1"
@@ -200,32 +240,77 @@
     {
       "genre": "Blues",
       "usage": "Essential for blues guitar, providing the scale for dominant 7th chord contexts and 12-bar blues",
-      "characteristics": ["dominant 7th chords", "12-bar blues progressions", "flat 7th emphasis", "pentatonic blending"],
-      "examples": ["B.B. King's solos", "Stevie Ray Vaughan", "Albert King licks"]
+      "characteristics": [
+        "dominant 7th chords",
+        "12-bar blues progressions",
+        "flat 7th emphasis",
+        "pentatonic blending"
+      ],
+      "examples": [
+        "B.B. King's solos",
+        "Stevie Ray Vaughan",
+        "Albert King licks"
+      ]
     },
     {
       "genre": "Rock",
       "usage": "Classic rock guitar solos and Southern rock progressions with a bluesy edge",
-      "characteristics": ["classic rock solos", "Southern rock progressions", "power chord riffs", "jam band improvisation"],
-      "examples": ["Sweet Home Alabama - Lynyrd Skynyrd", "Grateful Dead jams", "AC/DC riffs"]
+      "characteristics": [
+        "classic rock solos",
+        "Southern rock progressions",
+        "power chord riffs",
+        "jam band improvisation"
+      ],
+      "examples": [
+        "Sweet Home Alabama - Lynyrd Skynyrd",
+        "Grateful Dead jams",
+        "AC/DC riffs"
+      ]
     },
     {
       "genre": "Country",
       "usage": "Country guitar licks, runs, and fingerpicking patterns with a dominant flavor",
-      "characteristics": ["country licks and runs", "hybrid picking patterns", "chicken pickin'", "Nashville style"],
-      "examples": ["Keith Urban solos", "Brad Paisley licks", "Classic country guitar"]
+      "characteristics": [
+        "country licks and runs",
+        "hybrid picking patterns",
+        "chicken pickin'",
+        "Nashville style"
+      ],
+      "examples": [
+        "Keith Urban solos",
+        "Brad Paisley licks",
+        "Classic country guitar"
+      ]
     },
     {
       "genre": "Jazz",
       "usage": "Dominant 7th chord soloing, V7 chords in ii-V-I progressions, chord-scale theory",
-      "characteristics": ["V7 chord soloing", "ii-V-I progressions", "dominant substitutions", "chord-scale theory"],
-      "examples": ["Jazz standards over V7 chords", "Blues-jazz crossover", "Modal jazz compositions"]
+      "characteristics": [
+        "V7 chord soloing",
+        "ii-V-I progressions",
+        "dominant substitutions",
+        "chord-scale theory"
+      ],
+      "examples": [
+        "Jazz standards over V7 chords",
+        "Blues-jazz crossover",
+        "Modal jazz compositions"
+      ]
     },
     {
       "genre": "Jam Band",
       "usage": "Extended modal improvisation and groove-based playing over mixolydian vamps",
-      "characteristics": ["extended improvisation", "modal vamps", "groove-based playing", "collective improvisation"],
-      "examples": ["Fire on the Mountain - Grateful Dead", "Phish improvisations", "Widespread Panic jams"]
+      "characteristics": [
+        "extended improvisation",
+        "modal vamps",
+        "groove-based playing",
+        "collective improvisation"
+      ],
+      "examples": [
+        "Fire on the Mountain - Grateful Dead",
+        "Phish improvisations",
+        "Widespread Panic jams"
+      ]
     }
   ],
   "famousSongs": [
@@ -283,7 +368,11 @@
       "description": "Practice the G mixolydian scale ascending and descending, focusing on the flat 7th that defines the mode",
       "alphaTex": "3.6 0.5 2.5 3.5 0.4 2.4 3.4 1.3 | 1.3 3.4 2.4 0.4 3.5 2.5 0.5 3.6",
       "tempo": "60-120 BPM",
-      "focus": ["scale memorization", "flat 7th recognition", "mixolydian sound"],
+      "focus": [
+        "scale memorization",
+        "flat 7th recognition",
+        "mixolydian sound"
+      ],
       "instructions": [
         "Start slowly with metronome at 60 BPM",
         "Focus on the flat 7th note (F natural in G mixolydian)",
@@ -298,7 +387,11 @@
       "description": "Emphasize the flat 7th interval to hear and internalize the mixolydian character over dominant 7th chords",
       "alphaTex": "3.6 1.3 1.3 3.6 | 0.5 1.3 1.3 0.5 | 2.5 1.3 1.3 2.5 | 3.6 3.6 3.6 3.6",
       "tempo": "70-110 BPM",
-      "focus": ["flat 7th mastery", "dominant chord awareness", "modal character"],
+      "focus": [
+        "flat 7th mastery",
+        "dominant chord awareness",
+        "modal character"
+      ],
       "instructions": [
         "Play the root to flat 7th interval repeatedly from different scale degrees",
         "Listen for the dominant, unresolved quality of the flat 7th",
@@ -313,7 +406,11 @@
       "description": "Classic mixolydian blues rock phrase combining scale runs with idiomatic bends and rhythmic variation",
       "alphaTex": "3.6 0.5 2.5 0.4 3.4 1.3 | 2.3 0.2 1.2 3.2 1.3 | 3.4 2.4 0.5 | 3.6 3.6 3.6 3.6",
       "tempo": "80-130 BPM",
-      "focus": ["blues phrasing", "rock expression", "mixolydian licks"],
+      "focus": [
+        "blues phrasing",
+        "rock expression",
+        "mixolydian licks"
+      ],
       "instructions": [
         "Play over a G7 or G-F-C backing track",
         "Focus on rhythmic feel and groove, not just notes",
@@ -328,7 +425,11 @@
       "description": "Compare mixolydian with the major scale to hear how the flat 7th creates the dominant, bluesy character",
       "alphaTex": "3.6 0.5 2.5 3.5 0.4 2.4 3.4 1.3 | 3.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3",
       "tempo": "60-100 BPM",
-      "focus": ["ear training", "scale comparison", "flat 7th recognition"],
+      "focus": [
+        "ear training",
+        "scale comparison",
+        "flat 7th recognition"
+      ],
       "instructions": [
         "Play G mixolydian, then G major (Ionian) back to back",
         "Focus on the 7th degree difference (F natural vs F# in G)",
@@ -389,31 +490,56 @@
         "phase": "Foundation (Weeks 1-2)",
         "duration": "15-20 minutes daily",
         "focus": "Scale patterns and flat 7th sound recognition",
-        "exercises": ["Basic mixolydian scale runs", "Compare with major scale", "Open position practice"]
+        "exercises": [
+          "Basic mixolydian scale runs",
+          "Compare with major scale",
+          "Open position practice"
+        ]
       },
       {
         "phase": "Development (Weeks 3-6)",
         "duration": "20-30 minutes daily",
         "focus": "Multiple positions and blues/rock application",
-        "exercises": ["Position playing in different keys", "Dominant 7th arpeggio exercises", "Blues rock lick vocabulary"]
+        "exercises": [
+          "Position playing in different keys",
+          "Dominant 7th arpeggio exercises",
+          "Blues rock lick vocabulary"
+        ]
       },
       {
         "phase": "Integration (Weeks 7-12)",
         "duration": "30-45 minutes daily",
         "focus": "Musical application across genres",
-        "exercises": ["Improvise over blues progressions", "Create rock riffs using mixolydian", "Country lick development"]
+        "exercises": [
+          "Improvise over blues progressions",
+          "Create rock riffs using mixolydian",
+          "Country lick development"
+        ]
       },
       {
         "phase": "Mastery (Ongoing)",
         "duration": "20-30 minutes daily maintenance",
         "focus": "Advanced applications and genre-specific mastery",
-        "exercises": ["Advanced blues improvisation", "Modal interchange", "Mixolydian composition and songwriting"]
+        "exercises": [
+          "Advanced blues improvisation",
+          "Modal interchange",
+          "Mixolydian composition and songwriting"
+        ]
       }
     ]
   },
   "metadata": {
     "slug": "mixolydian",
-    "tags": ["mixolydian", "mode", "scales", "theory", "blues", "rock", "dominant", "intermediate"],
+    "tags": [
+      "mixolydian",
+      "mode",
+      "scales",
+      "theory",
+      "blues",
+      "rock",
+      "dominant",
+      "intermediate"
+    ],
     "category": "scales",
     "subcategory": "modes",
     "lastUpdated": "2025-01-01",
