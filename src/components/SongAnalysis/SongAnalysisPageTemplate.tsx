@@ -260,6 +260,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-4">{section.description}</p>
                     <AlphaTexRenderer
                       alphaTex={section.alphaTab!}
+                      tempo={songData.songInfo?.tempo ? parseInt(songData.songInfo.tempo, 10) : undefined}
                     />
                     {section.notes && section.notes.length > 0 && (
                       <ul className="mt-4 text-xs text-slate-600 dark:text-slate-400 space-y-1 bg-slate-50 dark:bg-slate-950 p-3 rounded-xl border border-slate-200 dark:border-slate-800">

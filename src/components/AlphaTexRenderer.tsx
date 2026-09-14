@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { AlphaTexValidator } from '@/lib/alphaTexValidator';
+import { normalizeAlphaTex } from '@/lib/alphaTexNormalizer';
 
 /**
  * Modern Interactive AlphaTex Music Notation & Audio Player
@@ -399,9 +400,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             setAudioLoading(false);
             isSoundFontLoadedRef.current = true;
 
-            // Adjust playback speed to match desired tempo (default AlphaTab tempo is 120 BPM)
-            if (tempo && api) {
-              api.playbackSpeed = tempo / 120;
+            // Base tempo is set directly in the score via normalizeAlphaTex
+            if (api) {
+              api.playbackSpeed = playbackSpeed;
             }
 
             if (pendingPlayRef.current) {
@@ -441,8 +442,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         setStatus('Loading tablature...');
 
-        // Process the AlphaTex string to handle escape sequences
-        const processedAlphaTex = alphaTex.replace(/\\n/g, '\n');
+        // Process and normalize the AlphaTex string to balance measure durations and inject tempo
+        const unescaped = alphaTex.replace(/\\n/g, '\n');
+        const processedAlphaTex = normalizeAlphaTex(unescaped, tempo);
         api.tex(processedAlphaTex);
 
       } catch (err) {
@@ -499,10 +501,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setPlaybackSpeed(newSpeed);
     if (apiRef.current) {
-      const baseSpeed = tempo ? tempo / 120 : 1.0;
-      apiRef.current.playbackSpeed = baseSpeed * newSpeed;
+      apiRef.current.playbackSpeed = newSpeed;
     }
-  }, [tempo]);
+  }, []);
 
   const handleInstrumentChange = useCallback((program: number) => {
     setSelectedInstrument(program);
