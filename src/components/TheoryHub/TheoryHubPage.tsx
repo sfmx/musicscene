@@ -520,31 +520,31 @@ export default function TheoryHubPage() {
 
           {/* 6. Interactive Practice Tools Suite Showcase */}
           <section className="mb-20">
-            <div className="bg-gradient-to-br from-slate-900 via-slate-900/95 to-slate-950 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-2xl relative overflow-hidden">
+            <div className="bg-gradient-to-br from-slate-100 via-white to-slate-100 dark:from-slate-900 dark:via-slate-900/95 dark:to-slate-950 text-slate-900 dark:text-white rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
               <div className="relative z-10 max-w-4xl mx-auto text-center mb-12">
-                <span className="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/30 mb-4 inline-block">
+                <span className="text-xs font-bold uppercase tracking-widest text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-200 dark:border-amber-500/30 mb-4 inline-block">
                   ⚡ Interactive Audio & Visual Tools
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white mb-4">
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 dark:text-white mb-4">
                   Turn Theory into Reflexes
                 </h2>
-                <p className="text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
                   Theory in a book is useless if your hands freeze on the instrument. Train your note identification, interval geometry, and chord changes with our free web utilities.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                 {/* Tool 1 */}
-                <div className="bg-slate-950/80 rounded-2xl p-6 border border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between group">
+                <div className="bg-white dark:bg-slate-950/80 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between group shadow-sm dark:shadow-none">
                   <div>
                     <div className="text-4xl mb-4">🎯</div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                       Fretboard Note Hunt & Trainer
                     </h3>
-                    <p className="text-xs text-slate-400 leading-relaxed mb-6">
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
                       Gamified speed quiz. Master every note on all 6 strings in 60-second bursts. Choose standard, single string, or random fret challenges.
                     </p>
                   </div>
@@ -557,13 +557,13 @@ export default function TheoryHubPage() {
                 </div>
 
                 {/* Tool 2 */}
-                <div className="bg-slate-950/80 rounded-2xl p-6 border border-slate-800 hover:border-blue-500/50 transition-all flex flex-col justify-between group">
+                <div className="bg-white dark:bg-slate-950/80 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all flex flex-col justify-between group shadow-sm dark:shadow-none">
                   <div>
                     <div className="text-4xl mb-4">🎹</div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       Progression Jam Player
                     </h3>
-                    <p className="text-xs text-slate-400 leading-relaxed mb-6">
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
                       Hear harmonic equations come alive. Loop common jazz ii-V-I, rock I-IV-V, and blues cadences with synthesized backing audio and live chord charts.
                     </p>
                   </div>
@@ -576,13 +576,13 @@ export default function TheoryHubPage() {
                 </div>
 
                 {/* Tool 3 */}
-                <div className="bg-slate-950/80 rounded-2xl p-6 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                <div className="bg-white dark:bg-slate-950/80 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group shadow-sm dark:shadow-none">
                   <div>
                     <div className="text-4xl mb-4">📄</div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                       Free Fretboard Cheat Sheet
                     </h3>
-                    <p className="text-xs text-slate-400 leading-relaxed mb-6">
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
                       Printable 3-page PDF reference guide. Full 24-fret notes map, 5 pentatonic CAGED shapes, essential triad inversions, and Roman numeral cheat tables.
                     </p>
                   </div>

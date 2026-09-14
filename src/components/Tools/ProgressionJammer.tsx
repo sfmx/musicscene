@@ -217,6 +217,7 @@ export default function ProgressionJammer() {
       const startTime = ctx.currentTime + offsetSec;
       const freq = 440 * Math.pow(2, (midi - 69) / 12);
 
+      // 1. Primary fundamental oscillator (warm acoustic triangle)
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       const filter = ctx.createBiquadFilter();
@@ -224,12 +225,14 @@ export default function ProgressionJammer() {
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(freq, startTime);
 
+      // Resonant guitar soundboard filter envelope
       filter.type = 'lowpass';
-      filter.frequency.setValueAtTime(2200, startTime);
-      filter.frequency.exponentialRampToValueAtTime(300, startTime + duration);
+      filter.frequency.setValueAtTime(2800, startTime);
+      filter.frequency.exponentialRampToValueAtTime(350, startTime + duration);
 
-      gain.gain.setValueAtTime(0.001, startTime);
-      gain.gain.linearRampToValueAtTime(0.12, startTime + 0.015);
+      // Fast acoustic pick pluck attack, followed by natural decay
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.linearRampToValueAtTime(0.13, startTime + 0.006);
       gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
 
       osc.connect(filter);
@@ -238,6 +241,24 @@ export default function ProgressionJammer() {
 
       osc.start(startTime);
       osc.stop(startTime + duration);
+
+      // 2. Secondary acoustic overtone oscillator (2nd harmonic sparkle)
+      const harmonicOsc = ctx.createOscillator();
+      const harmonicGain = ctx.createGain();
+
+      harmonicOsc.type = 'sine';
+      harmonicOsc.frequency.setValueAtTime(freq * 2, startTime);
+
+      harmonicGain.gain.setValueAtTime(0.0001, startTime);
+      harmonicGain.gain.linearRampToValueAtTime(0.035, startTime + 0.004);
+      harmonicGain.gain.exponentialRampToValueAtTime(0.0001, startTime + Math.min(duration, 0.65));
+
+      harmonicOsc.connect(filter);
+      harmonicOsc.connect(harmonicGain);
+      harmonicGain.connect(ctx.destination);
+
+      harmonicOsc.start(startTime);
+      harmonicOsc.stop(startTime + Math.min(duration, 0.65));
     } catch (e) {
       // Ignore
     }
@@ -359,7 +380,7 @@ export default function ProgressionJammer() {
   }, []);
 
   return (
-    <div className="w-full bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors">
       {/* Top Banner */}
       <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -420,10 +441,10 @@ export default function ProgressionJammer() {
       {/* Main Controls Panel */}
       <div className="p-4 sm:p-6 lg:p-8 space-y-6">
         {/* Playback Settings & Tempo */}
-        <div className="bg-slate-50 p-4 sm:p-6 rounded-xl border border-slate-200 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div className="bg-slate-50 dark:bg-slate-950/70 p-4 sm:p-6 rounded-xl border border-slate-200 dark:border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-6 items-center transition-colors">
           {/* Tempo Slider */}
           <div className="space-y-2">
-            <div className="flex items-center justify-between text-xs font-bold text-slate-700 uppercase tracking-wider">
+            <div className="flex items-center justify-between text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
               <span>Tempo</span>
               <span className="text-blue-600 text-sm font-black">{tempo} BPM</span>
             </div>
@@ -433,9 +454,9 @@ export default function ProgressionJammer() {
               max={180}
               value={tempo}
               onChange={(e) => setTempo(Number(e.target.value))}
-              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+              className="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-600 dark:accent-cyan-500"
             />
-            <div className="flex justify-between text-[10px] text-slate-400">
+            <div className="flex justify-between text-[10px] text-slate-400 dark:text-slate-500">
               <span>50 (Ballad)</span>
               <span>100 (Medium)</span>
               <span>180 (Fast)</span>
@@ -444,28 +465,28 @@ export default function ProgressionJammer() {
 
           {/* Strum Style Selection */}
           <div className="space-y-2">
-            <div className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+            <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
               Guitar Playing Style
             </div>
-            <div className="grid grid-cols-3 gap-1.5 bg-white p-1 rounded-lg border border-slate-300">
+            <div className="grid grid-cols-3 gap-1.5 bg-white dark:bg-slate-900 p-1 rounded-lg border border-slate-300 dark:border-slate-700">
               <button
                 onClick={() => setStrumStyle('downstrum')}
                 className={'py-1.5 rounded text-xs font-semibold ' +
-                  (strumStyle === 'downstrum' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                  (strumStyle === 'downstrum' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold shadow-xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
               >
                 Downstrum
               </button>
               <button
                 onClick={() => setStrumStyle('rhythm')}
                 className={'py-1.5 rounded text-xs font-semibold ' +
-                  (strumStyle === 'rhythm' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                  (strumStyle === 'rhythm' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold shadow-xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
               >
                 Groove
               </button>
               <button
                 onClick={() => setStrumStyle('arpeggio')}
                 className={'py-1.5 rounded text-xs font-semibold ' +
-                  (strumStyle === 'arpeggio' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                  (strumStyle === 'arpeggio' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold shadow-xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
               >
                 Fingerpick
               </button>
@@ -473,28 +494,28 @@ export default function ProgressionJammer() {
           </div>
 
           {/* Metronome & Beat Counter */}
-          <div className="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+          <div className="flex items-center justify-between bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
             <div>
-              <div className="text-xs font-bold text-slate-600 uppercase">Metronome Click</div>
+              <div className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase">Metronome Click</div>
               <button
                 onClick={() => setMetronomeEnabled(!metronomeEnabled)}
                 className={'text-xs font-semibold px-2 py-0.5 rounded mt-1 ' +
-                  (metronomeEnabled ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-500')}
+                  (metronomeEnabled ? 'bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30' : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700')}
               >
                 {metronomeEnabled ? 'Click ON' : 'Muted'}
               </button>
             </div>
 
             <div className="text-right">
-              <div className="text-[10px] font-bold text-slate-400 uppercase">Active Beat</div>
+              <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase">Active Beat</div>
               <div className="flex items-center gap-1.5 mt-1">
                 {[1, 2, 3, 4].map((beatNum) => (
                   <span
                     key={beatNum}
                     className={'w-6 h-6 rounded-full flex items-center justify-center text-xs font-black transition-all ' +
                       (isPlaying && currentBeat === beatNum
-                        ? 'bg-blue-600 text-white scale-110 shadow-md ring-2 ring-blue-300'
-                        : 'bg-slate-100 text-slate-400 border border-slate-200')}
+                        ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 scale-110 shadow-md ring-2 ring-blue-300 dark:ring-cyan-400/40'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 border border-slate-200 dark:border-slate-700')}
                   >
                     {beatNum}
                   </span>
@@ -507,10 +528,10 @@ export default function ProgressionJammer() {
         {/* Active Chords Visual Progression Sequence */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
               Chord Progression Loop ({currentPreset.chords.length} Bars - Key: {currentPreset.key})
             </span>
-            <span className="text-xs text-slate-500">
+            <span className="text-xs text-slate-500 dark:text-slate-400">
               Bar {currentBarIndex + 1} of {currentPreset.chords.length}
             </span>
           </div>
@@ -525,12 +546,12 @@ export default function ProgressionJammer() {
                   key={idx}
                   className={'relative p-5 rounded-2xl border-2 transition-all flex flex-col justify-between ' +
                     (isActive
-                      ? 'bg-blue-50/80 border-blue-600 shadow-xl ring-4 ring-blue-500/20 scale-[1.02]'
-                      : 'bg-white border-slate-200 shadow-sm hover:border-slate-300')}
+                      ? 'bg-blue-50/80 dark:bg-cyan-950/30 border-blue-600 dark:border-cyan-500 shadow-xl ring-4 ring-blue-500/20 dark:ring-cyan-500/20 scale-[1.02]'
+                      : 'bg-white dark:bg-slate-900/90 border-slate-200 dark:border-slate-800 shadow-sm hover:border-slate-300 dark:hover:border-slate-700')}
                 >
                   {/* Active Bar Badge */}
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">
+                    <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500">
                       Bar #{idx + 1}
                     </span>
                     {isActive && (
@@ -542,18 +563,18 @@ export default function ProgressionJammer() {
 
                   {/* Chord Symbol */}
                   <div className="text-center py-2">
-                    <div className={'text-3xl sm:text-4xl font-black ' + (isActive ? 'text-blue-700' : 'text-slate-900')}>
+                    <div className={'text-3xl sm:text-4xl font-black ' + (isActive ? 'text-blue-700 dark:text-cyan-400' : 'text-slate-900 dark:text-slate-100')}>
                       {chordName}
                     </div>
-                    <div className="text-xs text-slate-500 font-medium mt-1">
+                    <div className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">
                       {voicing?.name || 'Guitar Chord'}
                     </div>
                   </div>
 
                   {/* Fret Diagram String Coordinates */}
-                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+                  <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                     <span>Voicing:</span>
-                    <span className="bg-slate-100 px-2 py-0.5 rounded font-bold text-slate-700">
+                    <span className="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded font-bold text-slate-700 dark:text-slate-300">
                       {voicing?.fretDiagram || 'standard'}
                     </span>
                   </div>

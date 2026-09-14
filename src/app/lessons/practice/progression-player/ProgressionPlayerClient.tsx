@@ -31,20 +31,20 @@ export default function ProgressionPlayerClient() {
 
   return (
     <Layout>
-      <div className="min-h-screen bg-slate-50 py-10">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 transition-colors text-slate-900 dark:text-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Breadcrumbs Navigation */}
           <Breadcrumbs pathname={pathname} pageTitle="Chord Progression Jam Player" />
 
           {/* Hero Section */}
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60 text-xs font-bold uppercase tracking-wider">
               Interactive Soloing Utility
             </div>
-            <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
               Guitar Chord Progression Jam Player
             </h1>
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
               Play and loop iconic chord progressions in Blues, Rock, Jazz, and Pop. Dial in your BPM, sync with the metronome, and improvise with real-time scale recommendations.
             </p>
           </div>
@@ -60,51 +60,51 @@ export default function ProgressionPlayerClient() {
           </div>
 
           {/* Educational Soloing Guide */}
-          <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-8">
-            <div className="border-b border-slate-200 pb-6">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-sm space-y-8 transition-colors">
+            <div className="border-b border-slate-200 dark:border-slate-800 pb-6">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
                 How to Solo Over Chord Progressions (Target Notes & Voice Leading)
               </h2>
-              <p className="text-slate-600 mt-2 leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
                 The difference between an amateur solo that sounds like random scale runs and a professional solo that sounds melodic and soulful is <strong>chord-tone targeting</strong>. By landing on chord tones as the harmony changes, your guitar speaks with authority and intent.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Concept 1 */}
-              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+              <div className="bg-slate-50 dark:bg-slate-950/60 p-6 rounded-xl border border-slate-200 dark:border-slate-800 space-y-3 transition-colors">
                 <div className="text-3xl">🎯</div>
-                <h3 className="text-xl font-bold text-slate-900">1. Target the 3rd of Each Chord</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white">1. Target the 3rd of Each Chord</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                   The 3rd is the emotional heart of any chord. When moving from C Major (root C, 3rd E, 5th G) to F Major (root F, 3rd A, 5th C), bending or resolving into the note <strong>A</strong> right as the F chord strikes immediately outlines the harmony to the listener.
                 </p>
               </div>
 
               {/* Concept 2 */}
-              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+              <div className="bg-slate-50 dark:bg-slate-950/60 p-6 rounded-xl border border-slate-200 dark:border-slate-800 space-y-3 transition-colors">
                 <div className="text-3xl">⏳</div>
-                <h3 className="text-xl font-bold text-slate-900">2. Leave Breathing Space</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white">2. Leave Breathing Space</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                   Great soloists treat notes like words in a sentence. Play a short 3-note or 4-note motif, pause for a beat or two to let the backing track breathe, and then respond to your own idea (call and response phrasing).
                 </p>
               </div>
 
               {/* Concept 3 */}
-              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+              <div className="bg-slate-50 dark:bg-slate-950/60 p-6 rounded-xl border border-slate-200 dark:border-slate-800 space-y-3 transition-colors">
                 <div className="text-3xl">🔄</div>
-                <h3 className="text-xl font-bold text-slate-900">3. Blend Major & Minor in Blues</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white">3. Blend Major & Minor in Blues</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                   In a 12-bar blues, stick to the minor pentatonic over the IV and V chords (e.g., A7 and B7 in an E blues). But over the I chord (E7), sneak in the <strong>Major Pentatonic</strong> (notes E, F#, G#, B, C#) for that sweet B.B. King / Eric Clapton vocal cry.
                 </p>
               </div>
             </div>
 
             {/* Step-by-Step Soloing Practice Workflow */}
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-xl border border-blue-100">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-950/80 dark:to-indigo-950/50 p-6 sm:p-8 rounded-xl border border-blue-100 dark:border-slate-800 transition-colors">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
                 Recommended 3-Step Practice Workflow
               </h3>
-              <div className="space-y-3 text-sm text-slate-700">
+              <div className="space-y-3 text-sm text-slate-700 dark:text-slate-300">
                 <div className="flex items-start gap-3">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">
                     1
@@ -140,54 +140,54 @@ export default function ProgressionPlayerClient() {
           />
 
           {/* Related Theory & Song Analysis Lessons */}
-          <section className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Explore Essential Song & Theory Lessons</h3>
+          <section className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm transition-colors">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Explore Essential Song & Theory Lessons</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <Link
                 href="/lessons/theory/progressions/"
-                className="p-5 rounded-xl border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all group"
+                className="p-5 rounded-xl bg-slate-50/50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-cyan-400 hover:shadow-md transition-all group"
               >
                 <div className="text-2xl mb-2">🎼</div>
-                <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
                   Chord Progressions Guide
                 </h4>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                   The harmonic mechanics behind ii-V-I, I-V-vi-IV, and the Blues.
                 </p>
               </Link>
               <Link
                 href="/lessons/songs/song-analysis/hotel-california/"
-                className="p-5 rounded-xl border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all group"
+                className="p-5 rounded-xl bg-slate-50/50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-cyan-400 hover:shadow-md transition-all group"
               >
                 <div className="text-2xl mb-2">🎸</div>
-                <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
                   Hotel California Solo Breakdown
                 </h4>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                   How Don Felder & Joe Walsh used chord-tone arpeggio targeting.
                 </p>
               </Link>
               <Link
                 href="/lessons/songs/song-analysis/sultans-of-swing/"
-                className="p-5 rounded-xl border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all group"
+                className="p-5 rounded-xl bg-slate-50/50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-cyan-400 hover:shadow-md transition-all group"
               >
                 <div className="text-2xl mb-2">⚡</div>
-                <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
                   Sultans of Swing Analysis
                 </h4>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                   Mark Knopfler&apos;s clean fingerstyle triad fills over Dm-C-Bb.
                 </p>
               </Link>
               <Link
                 href="/lessons/practice/fretboard-trainer/"
-                className="p-5 rounded-xl border border-slate-200 hover:border-blue-500 hover:shadow-md transition-all group"
+                className="p-5 rounded-xl bg-slate-50/50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-cyan-400 hover:shadow-md transition-all group"
               >
                 <div className="text-2xl mb-2">🗺️</div>
-                <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
                   Fretboard Trainer Tool
                 </h4>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                   Map intervals and locate root notes across all 6 strings.
                 </p>
               </Link>

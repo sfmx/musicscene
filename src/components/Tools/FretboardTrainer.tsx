@@ -481,7 +481,7 @@ export default function FretboardTrainer() {
   }
 
   return (
-    <div className="w-full bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors">
       {/* Top Header Bar */}
       <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -549,7 +549,7 @@ export default function FretboardTrainer() {
         {/* ================= MODE 1: VISUALIZER CONTROLS ================= */}
         {activeTab === 'visualizer' && (
           <div className="space-y-6">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-50 p-4 sm:p-6 rounded-xl border border-slate-200">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-50 dark:bg-slate-950/70 p-4 sm:p-6 rounded-xl border border-slate-200 dark:border-slate-800 transition-colors">
               {/* Root Note Picker */}
               <div className="lg:col-span-4 space-y-3">
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-600">
@@ -565,7 +565,7 @@ export default function FretboardTrainer() {
                         className={'py-2 text-sm font-bold rounded-lg border transition-all ' +
                           (isSelected
                             ? 'bg-red-600 text-white border-red-700 shadow-md ring-2 ring-red-300'
-                            : 'bg-white text-slate-800 border-slate-300 hover:bg-slate-100 hover:border-slate-400')}
+                            : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 hover:border-slate-400 dark:hover:border-slate-600')}
                       >
                         {n}
                       </button>
@@ -578,7 +578,7 @@ export default function FretboardTrainer() {
                   </span>
                   <button
                     onClick={playVisibleScale}
-                    className="text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1.5 rounded-lg border border-indigo-200 hover:bg-indigo-100 flex items-center gap-1.5 transition-colors"
+                    className="text-xs bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 font-semibold px-3 py-1.5 rounded-lg border border-indigo-200 dark:border-indigo-500/30 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 flex items-center gap-1.5 transition-colors cursor-pointer"
                   >
                     <span>▶ Play Scale Run</span>
                   </button>
@@ -602,7 +602,7 @@ export default function FretboardTrainer() {
                         className={'px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all ' +
                           (isActive
                             ? 'bg-blue-600 text-white border-blue-700 shadow-sm'
-                            : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100')}
+                            : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800')}
                         title={preset.desc}
                       >
                         {preset.label}
@@ -610,7 +610,7 @@ export default function FretboardTrainer() {
                     );
                   })}
                 </div>
-                <p className="text-xs text-slate-500 italic">
+                <p className="text-xs text-slate-500 dark:text-slate-400 italic">
                   Tip: Toggle custom intervals below to build suspended chords, altered scales, or modal pentatonics.
                 </p>
               </div>
@@ -622,7 +622,7 @@ export default function FretboardTrainer() {
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
                   Active Intervals relative to {rootNote}
                 </span>
-                <span className="text-xs text-slate-500">Click any interval badge to toggle on/off</span>
+                <span className="text-xs text-slate-500 dark:text-slate-400">Click any interval badge to toggle on/off</span>
               </div>
               <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 gap-1.5">
                 {INTERVALS.map((inv) => {
@@ -647,28 +647,28 @@ export default function FretboardTrainer() {
             </div>
 
             {/* Display Options Bar */}
-            <div className="flex flex-wrap items-center justify-between gap-4 p-3 bg-slate-100 rounded-xl text-xs sm:text-sm">
+            <div className="flex flex-wrap items-center justify-between gap-4 p-3 bg-slate-100 dark:bg-slate-950/70 rounded-xl text-xs sm:text-sm border border-slate-200 dark:border-slate-800 transition-colors">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-slate-700">Label Mode:</span>
-                <div className="inline-flex bg-white p-1 rounded-lg border border-slate-300 shadow-inner">
+                <span className="font-semibold text-slate-700 dark:text-slate-300">Label Mode:</span>
+                <div className="inline-flex bg-white dark:bg-slate-900 p-1 rounded-lg border border-slate-300 dark:border-slate-700 shadow-inner">
                   <button
                     onClick={() => setLabelMode('intervals')}
                     className={'px-2.5 py-1 rounded text-xs font-semibold ' +
-                      (labelMode === 'intervals' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                      (labelMode === 'intervals' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
                   >
                     Intervals (R, b3, 5)
                   </button>
                   <button
                     onClick={() => setLabelMode('notes')}
                     className={'px-2.5 py-1 rounded text-xs font-semibold ' +
-                      (labelMode === 'notes' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                      (labelMode === 'notes' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
                   >
                     Note Names (A, C, E)
                   </button>
                   <button
                     onClick={() => setLabelMode('both')}
                     className={'px-2.5 py-1 rounded text-xs font-semibold ' +
-                      (labelMode === 'both' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-slate-900')}
+                      (labelMode === 'both' ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 font-bold' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100')}
                   >
                     Both
                   </button>
@@ -676,11 +676,11 @@ export default function FretboardTrainer() {
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-slate-700">String Filter:</span>
+                <span className="font-semibold text-slate-700 dark:text-slate-300">String Filter:</span>
                 <select
                   value={selectedStringFilter}
                   onChange={(e) => setSelectedStringFilter(e.target.value === 'all' ? 'all' : Number(e.target.value))}
-                  className="bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-xs font-semibold text-slate-700 focus:ring-2 focus:ring-blue-500"
+                  className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-300 focus:ring-2 focus:ring-blue-500"
                 >
                   <option value="all">All 6 Strings</option>
                   <option value="0">String 1 (High E)</option>
@@ -697,7 +697,7 @@ export default function FretboardTrainer() {
 
         {/* ================= MODE 2: SPEED QUIZ ================= */}
         {activeTab === 'quiz' && (
-          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-6">
+          <div className="bg-slate-50 dark:bg-slate-950/70 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-6 transition-colors">
             {/* Scoreboard Header with Reset Button */}
             <div className="flex items-center justify-between">
               <div className="text-xs uppercase font-bold text-slate-500 tracking-wider">
@@ -705,7 +705,7 @@ export default function FretboardTrainer() {
               </div>
               <button
                 onClick={resetQuiz}
-                className="px-3 py-1.5 text-xs font-bold text-slate-600 hover:text-slate-900 bg-white hover:bg-slate-100 border border-slate-300 rounded-lg shadow-sm transition-all flex items-center gap-1.5 cursor-pointer"
+                className="px-3 py-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg shadow-sm transition-all flex items-center gap-1.5 cursor-pointer"
                 title="Reset your score, attempts, and streak to start fresh"
               >
                 <span>🔄 Reset Quiz / Start Over</span>
@@ -713,23 +713,23 @@ export default function FretboardTrainer() {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                 <div className="text-xs uppercase font-bold text-slate-400">Score</div>
-                <div className="text-2xl sm:text-3xl font-black text-slate-900">
+                <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-slate-100">
                   {quizScore} <span className="text-sm font-normal text-slate-400">/ {quizAttempts}</span>
                 </div>
               </div>
-              <div className="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                 <div className="text-xs uppercase font-bold text-slate-400">Accuracy</div>
                 <div className="text-2xl sm:text-3xl font-black text-blue-600">
                   {quizAttempts === 0 ? '100%' : Math.round((quizScore / quizAttempts) * 100) + '%'}
                 </div>
               </div>
-              <div className="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                 <div className="text-xs uppercase font-bold text-slate-400">Current Streak</div>
                 <div className="text-2xl sm:text-3xl font-black text-emerald-600">{quizStreak}</div>
               </div>
-              <div className="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                 <div className="text-xs uppercase font-bold text-slate-400">Best Streak</div>
                 <div className="text-2xl sm:text-3xl font-black text-purple-600">{quizBestStreak}</div>
               </div>
@@ -809,7 +809,7 @@ export default function FretboardTrainer() {
                   <button
                     key={note}
                     onClick={() => handleQuizAnswer(note)}
-                    className="py-3 sm:py-4 bg-white hover:bg-blue-50 active:scale-95 border-2 border-slate-200 hover:border-blue-500 rounded-xl font-black text-lg sm:text-xl text-slate-800 hover:text-blue-600 transition-all shadow-sm"
+                    className="py-3 sm:py-4 bg-white dark:bg-slate-900 hover:bg-blue-50 dark:hover:bg-blue-950/40 active:scale-95 border-2 border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl font-black text-lg sm:text-xl text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-all shadow-sm cursor-pointer"
                   >
                     {note}
                   </button>
@@ -817,13 +817,13 @@ export default function FretboardTrainer() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 text-xs text-slate-600">
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-3">
                 <span className="font-bold">String Scope:</span>
                 <select
                   value={quizStringFilter}
                   onChange={(e) => setQuizStringFilter(e.target.value as any)}
-                  className="bg-white border border-slate-300 rounded-lg px-2.5 py-1 font-semibold text-slate-700"
+                  className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 font-semibold text-slate-700 dark:text-slate-300"
                 >
                   <option value="all">All 6 Strings</option>
                   <option value="low">Bass Strings (Low E & A - Barre chord roots)</option>
@@ -837,7 +837,7 @@ export default function FretboardTrainer() {
                 <select
                   value={quizMaxFret}
                   onChange={(e) => setQuizMaxFret(Number(e.target.value))}
-                  className="bg-white border border-slate-300 rounded-lg px-2.5 py-1 font-semibold text-slate-700"
+                  className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 font-semibold text-slate-700 dark:text-slate-300"
                 >
                   <option value="5">Frets 0 - 5 (Beginner Open Position)</option>
                   <option value="12">Frets 0 - 12 (One Full Octave)</option>
@@ -850,7 +850,7 @@ export default function FretboardTrainer() {
 
         {/* ================= MODE 3: NOTE FINDER ================= */}
         {activeTab === 'finder' && (
-          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-6">
+          <div className="bg-slate-50 dark:bg-slate-950/70 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-6 transition-colors">
             {/* End State Success Celebration Banner */}
             {finderCompleted ? (
               <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white p-6 sm:p-8 rounded-2xl shadow-xl border-2 border-emerald-300/80 flex flex-col md:flex-row items-center justify-between gap-6 animate-fadeIn">
@@ -932,7 +932,7 @@ export default function FretboardTrainer() {
             </div>
 
             {finderFeedback && !finderCompleted && (
-              <div className="p-3.5 bg-purple-50 text-purple-900 border border-purple-200 rounded-xl text-sm font-semibold flex items-center justify-between">
+              <div className="p-3.5 bg-purple-50 dark:bg-purple-950/40 text-purple-900 dark:text-purple-200 border border-purple-200 dark:border-purple-800 rounded-xl text-sm font-semibold flex items-center justify-between">
                 <span>{finderFeedback}</span>
                 <span className="text-xs text-purple-600 font-bold">
                   {finderFoundLocations.size} / {totalFinderInstances}

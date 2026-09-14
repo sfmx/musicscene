@@ -153,6 +153,12 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
   const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
+  const [isLooping, setIsLooping] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+
+  const isLoopingRef = useRef(false);
+  const isDraggingScrubberRef = useRef(false);
+  const progressBarRef = useRef<HTMLDivElement>(null);
 
   // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
@@ -415,8 +421,21 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         api.playerPositionChanged.on((e: any) => {
           if (isMounted) {
-            setCurrentTime(e.currentTime);
+            if (!isDraggingScrubberRef.current) {
+              setCurrentTime(e.currentTime);
+            }
             setEndTime(e.endTime);
+          }
+        });
+
+        api.playerFinished.on(() => {
+          if (isMounted && isLoopingRef.current && apiRef.current) {
+            try {
+              apiRef.current.timePosition = 0;
+              apiRef.current.play();
+            } catch (e) {
+              console.warn('Continuous loop restart notice:', e);
+            }
           }
         });
 
@@ -526,6 +545,99 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     }
   }, [metronomeOn]);
 
+  const handleLoopToggle = useCallback(() => {
+    const next = !isLooping;
+    setIsLooping(next);
+    isLoopingRef.current = next;
+    if (apiRef.current) {
+      try {
+        apiRef.current.isLooping = next;
+      } catch (e) {
+        // fallback handled reliably by api.playerFinished
+      }
+    }
+  }, [isLooping]);
+
+  const handleMuteToggle = useCallback(() => {
+    const next = !isMuted;
+    setIsMuted(next);
+    if (apiRef.current) {
+      try {
+        apiRef.current.masterVolume = next ? 0 : 1;
+      } catch (e) {
+        // ignore
+      }
+    }
+  }, [isMuted]);
+
+  // Pre-warm SoundFont on hover or focus to eliminate initial 1-2s audio start delay
+  const prewarmAudio = useCallback(() => {
+    if (!isSoundFontLoadedRef.current) {
+      getSharedSoundFont().catch(() => {});
+    }
+  }, []);
+
+  const seekToRatio = useCallback((ratio: number) => {
+    if (!apiRef.current || !endTime) return;
+    const clamped = Math.max(0, Math.min(1, ratio));
+    const targetMs = clamped * endTime;
+    setCurrentTime(targetMs);
+    try {
+      apiRef.current.timePosition = targetMs;
+    } catch (e) {
+      console.warn('Audio playhead seek notice:', e);
+    }
+  }, [endTime]);
+
+  const handleScrubMove = useCallback((clientX: number) => {
+    if (!progressBarRef.current) return;
+    const rect = progressBarRef.current.getBoundingClientRect();
+    if (rect.width <= 0) return;
+    const ratio = (clientX - rect.left) / rect.width;
+    seekToRatio(ratio);
+  }, [seekToRatio]);
+
+  const handleScrubberMouseDown = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    isDraggingScrubberRef.current = true;
+    handleScrubMove(e.clientX);
+
+    const onMouseMove = (moveEvent: MouseEvent) => {
+      if (isDraggingScrubberRef.current) {
+        handleScrubMove(moveEvent.clientX);
+      }
+    };
+
+    const onMouseUp = () => {
+      isDraggingScrubberRef.current = false;
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+  }, [handleScrubMove]);
+
+  const handleScrubberTouchStart = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    if (e.touches.length === 0) return;
+    isDraggingScrubberRef.current = true;
+    handleScrubMove(e.touches[0].clientX);
+
+    const onTouchMove = (moveEvent: TouchEvent) => {
+      if (isDraggingScrubberRef.current && moveEvent.touches.length > 0) {
+        handleScrubMove(moveEvent.touches[0].clientX);
+      }
+    };
+
+    const onTouchEnd = () => {
+      isDraggingScrubberRef.current = false;
+      window.removeEventListener('touchmove', onTouchMove);
+      window.removeEventListener('touchend', onTouchEnd);
+    };
+
+    window.addEventListener('touchmove', onTouchMove);
+    window.addEventListener('touchend', onTouchEnd);
+  }, [handleScrubMove]);
+
   const formatTime = (ms: number) => {
     const totalSeconds = Math.floor(ms / 1000);
     const minutes = Math.floor(totalSeconds / 60);
@@ -538,7 +650,11 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   }
 
   return (
-    <div className={`w-full max-w-full min-w-0 mb-4 overflow-hidden ${className}`}>
+    <div
+      className={`w-full max-w-full min-w-0 mb-4 overflow-hidden ${className}`}
+      onMouseEnter={prewarmAudio}
+      onTouchStart={prewarmAudio}
+    >
       {/* Precision Playhead & Dark Scrollbar Styles */}
       <style>{`
         /* Completely eliminate muddy bar cursor overlay */
@@ -642,9 +758,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
       {/* AlphaTex String Display - Hidden by default */}
       {showValidation && (
-        <div className="bg-slate-950/80 border border-slate-800 rounded-lg p-3 mb-3">
-          <h5 className="text-sm font-medium text-slate-300 mb-1">AlphaTex:</h5>
-          <code className="text-xs text-slate-400 font-mono break-all">{alphaTex}</code>
+        <div className="bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-lg p-3 mb-3">
+          <h5 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">AlphaTex:</h5>
+          <code className="text-xs text-slate-600 dark:text-slate-400 font-mono break-all">{alphaTex}</code>
         </div>
       )}
 
@@ -661,23 +777,51 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
       {/* Playback Controls Console */}
       {renderComplete && (
-        <div className="mt-3 px-3 sm:px-4 py-3 bg-white dark:bg-slate-950/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl text-xs flex flex-wrap items-center justify-between gap-3 text-slate-800 dark:text-slate-100">
-          {/* Play/Pause, Stop & Time Counter */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handlePlayPause}
-              disabled={audioLoading}
-              className={`h-9 sm:h-10 px-3 sm:px-4 flex items-center justify-center gap-1.5 rounded-xl font-bold transition-all shadow-md ${
-                audioLoading
-                  ? 'bg-cyan-500/50 text-slate-950 cursor-wait animate-pulse'
-                  : 'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
-              }`}
-              title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
+        <div
+          onMouseEnter={prewarmAudio}
+          className="mt-3 px-3 sm:px-4 py-3 bg-white dark:bg-slate-950/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl text-xs flex flex-col gap-2.5 text-slate-800 dark:text-slate-100 transition-colors"
+        >
+          {/* Interactive Timeline Scrubber with Click-to-Seek & Drag */}
+          <div className="w-full pt-1">
+            <div
+              ref={progressBarRef}
+              onMouseDown={handleScrubberMouseDown}
+              onTouchStart={handleScrubberTouchStart}
+              role="slider"
+              aria-valuemin={0}
+              aria-valuemax={endTime || 100}
+              aria-valuenow={currentTime}
+              className="group relative w-full h-2.5 bg-slate-100 dark:bg-slate-900 rounded-full cursor-pointer flex items-center select-none border border-slate-200 dark:border-slate-800"
+              title="Click or drag to scrub playhead"
             >
-              {audioLoading ? (
-                <>
-                  <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <div
+                className="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 rounded-full relative transition-[width] duration-75"
+                style={{ width: `${endTime > 0 ? Math.min(100, Math.max(0, (currentTime / endTime) * 100)) : 0}%` }}
+              >
+                {/* Visual Scrub Thumb */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3.5 h-3.5 rounded-full bg-white dark:bg-cyan-300 shadow-md border-2 border-cyan-500 scale-90 group-hover:scale-125 transition-transform" />
+              </div>
+            </div>
+          </div>
+
+          {/* Console Toolbar Controls */}
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            {/* Play/Pause, Stop, Mute & Time Counter */}
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <button
+                onClick={handlePlayPause}
+                disabled={audioLoading}
+                className={`h-9 sm:h-10 px-3 sm:px-4 flex items-center justify-center gap-1.5 rounded-xl font-bold transition-all shadow-md ${
+                  audioLoading
+                    ? 'bg-cyan-500/50 text-slate-950 cursor-wait animate-pulse'
+                    : 'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
+                }`}
+                title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
+              >
+                {audioLoading ? (
+                  <>
+                    <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                   </svg>
                   <span className="text-xs hidden sm:inline">Loading...</span>
@@ -713,6 +857,20 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                 <rect x="5" y="5" width="10" height="10" rx="1.5" />
               </svg>
+            </button>
+
+            {/* Master Mute Toggle */}
+            <button
+              type="button"
+              onClick={handleMuteToggle}
+              className={`h-9 sm:h-10 w-9 sm:w-10 flex items-center justify-center rounded-xl transition-all cursor-pointer border ${
+                isMuted
+                  ? 'bg-rose-500/20 text-rose-600 dark:text-rose-400 border-rose-500/40 shadow-xs'
+                  : 'bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:text-slate-900 dark:hover:text-white'
+              }`}
+              title={isMuted ? 'Unmute audio' : 'Mute audio'}
+            >
+              <span className="text-xs sm:text-sm">{isMuted ? '🔇' : '🔊'}</span>
             </button>
 
             {/* Time Counter */}
@@ -765,8 +923,21 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </div>
           </div>
 
-          {/* Practice Tools: Count-in & Metronome */}
+          {/* Practice Tools: Continuous Loop, Count-in & Metronome */}
           <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={handleLoopToggle}
+              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
+                isLooping
+                  ? 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/40 shadow-xs'
+                  : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Continuous hands-free looping"
+            >
+              <span>🔁</span>
+              <span className="hidden sm:inline">Loop</span>
+            </button>
             <button
               onClick={handleCountInToggle}
               className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
@@ -793,6 +964,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </button>
           </div>
         </div>
+      </div>
       )}
     </div>
   );
