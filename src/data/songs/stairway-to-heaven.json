@@ -201,90 +201,93 @@
   "sections": [
     {
       "name": "Intro (Fingerpicked Arpeggios)",
-      "timeStamp": "0:00-2:14",
-      "technique": "Fingerpicked Arpeggio Intro",
-      "key": "A minor",
-      "description": "The legendary fingerpicked intro featuring the descending chromatic bass line under arpeggiated chord voicings - one of the most iconic openings in rock music history",
+      "timeStamp": "0:00-2:15",
+      "technique": "Fingerpicking & Chromatic Bassline",
+      "key": "A Minor",
+      "description": "Jimmy Page's legendary acoustic intro, descending chromatically from A down through G# and G to F# under stationary treble arpeggios",
       "chords": [
         "Am",
-        "E+/G#",
-        "C/G",
+        "Am/G#",
+        "Am/G",
         "D/F#",
-        "Fmaj7"
+        "Fmaj7",
+        "G",
+        "Am"
       ],
-      "progression": "Am - E+/G# - C/G - D/F# - Fmaj7 - G - Am",
+      "progression": "Am - Am/G# - Am/G - D/F# | Fmaj7 - G - Am",
       "notes": [
-        "Use fingerpicking (no pick) for the authentic sound",
-        "Bass line descends chromatically: A - G# - G - F# - F",
-        "Let all notes ring as long as possible",
-        "Maintain a gentle, meditative tempo around 63 BPM"
+        "Bar 1: Open A string bass with 7th fret D and 5th fret G/B trebles (Am)",
+        "Bar 2: 7th fret A string bass (G#) with 6th fret D and 5th fret G/B trebles (Am/G#)",
+        "Bar 3: 6th fret A string bass (G) with 5th fret D/G/B trebles (Am/G)",
+        "Bar 4: 5th fret A string bass (F#) resolving into Fmaj7 and open G",
+        "Thumb plays the bass notes while index, middle, and ring fingers pluck the higher strings"
       ],
-      "alphaTab": "5.5 5.4 7.3 5.2 7.3 5.4 | 5.5 7.4 7.3 5.2 7.3 7.4 | 10.5 10.4 12.3 10.2 12.3 10.4 | 5.5 5.4 7.3 5.2 7.3 5.4 |",
-      "exerciseLabel": "Arpeggio Fingerpicking Exercise"
+      "alphaTab": ":8 0.5 7.4 5.3 5.2 :4 7.1 r.4 | :8 7.5 6.4 5.3 5.2 :4 8.1 r.4 | :8 6.5 5.4 5.3 5.2 :4 7.1 r.4 | :8 5.5 3.4 5.3 5.2 :2 (5.5 3.4 5.3 5.2 5.1) |",
+      "exerciseLabel": "Descending Bassline Arpeggio Exercise"
     },
     {
       "name": "Mid-Section (Strummed Build)",
-      "timeStamp": "2:14-4:18",
-      "technique": "Dynamic Song Building",
-      "key": "A minor",
-      "description": "The folk-rock strummed section where the song begins to build energy, transitioning from gentle fingerpicking to more assertive acoustic strumming",
+      "timeStamp": "2:15-5:55",
+      "technique": "Acoustic Strumming",
+      "key": "A Minor",
+      "description": "The 12-string acoustic strummed progression moving between C, D, and Fmaj7",
       "chords": [
-        "Am",
+        "C",
+        "D",
+        "Fmaj7",
         "G",
-        "F",
-        "G"
+        "Am"
       ],
-      "progression": "Am - G - F - G - Am",
+      "progression": "C - D - Fmaj7 - Am",
       "notes": [
-        "Transition from fingerpicking to confident strumming",
-        "Folk-rock feel with steady eighth-note rhythm",
-        "Tempo gradually increases from 63 toward 80 BPM",
-        "This section bridges the quiet intro and the electric climax"
+        "Transition from delicate fingerpicking to dynamic open-chord strumming",
+        "Full 12-string ring across open C, D, and Fmaj7 voicings",
+        "Builds emotional resonance as the lyrical narrative unfolds",
+        "Keep tempo steady at 72 BPM"
       ],
-      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
-      "exerciseLabel": "Dynamic Power Chord Exercise"
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :2 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :2 (1.6 3.5 3.4 2.3 1.2 0.1) (1.6 3.5 3.4 2.3 1.2 0.1) | :2 (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Acoustic Strumming Exercise"
     },
     {
       "name": "Electric Section / Hard Rock Build",
-      "timeStamp": "4:18-5:33",
-      "technique": "Dynamic Song Building",
-      "key": "A minor",
-      "description": "The explosive transition to full electric guitar, where the band kicks in with power and drive, building toward the guitar solo",
-      "chords": [
-        "Am",
-        "G",
-        "F",
-        "G"
-      ],
-      "progression": "Am - G - F - G",
-      "notes": [
-        "Full band enters with electric guitar at around 98 BPM",
-        "Power chord movement with aggressive strumming",
-        "The energy level jumps dramatically from the acoustic section",
-        "Sets up the tension that will be released in the guitar solo"
-      ],
-      "alphaTab": "5.6 7.5 7.4 5.6 7.5 7.4 | 10.6 12.5 12.4 10.6 12.5 12.4 | 12.6 14.5 14.4 12.6 14.5 14.4 | 5.6 7.5 7.4 5.6 7.5 7.4 |",
-      "exerciseLabel": "Dynamic Power Chord Exercise"
-    },
-    {
-      "name": "Guitar Solo",
-      "timeStamp": "5:33-6:44",
-      "technique": "Iconic Guitar Solo",
-      "key": "A minor",
-      "description": "Jimmy Page's legendary guitar solo - consistently voted one of the greatest guitar solos of all time - built on A minor pentatonic with blues scale inflections, soaring bends, and rapid runs",
+      "timeStamp": "5:55-6:44",
+      "technique": "Electric Power Chords",
+      "key": "A Minor",
+      "description": "John Bonham's drums enter and Jimmy Page switches to his 1959 Fender Telecaster for the explosive electric rock rhythm",
       "chords": [
         "Am",
         "G",
         "F"
       ],
-      "progression": "Am - G - F - Am",
+      "progression": "Am - G - F - G",
       "notes": [
-        "Position primarily at the 5th fret in A minor pentatonic",
-        "Opens with rapid ascending phrases that set the intensity",
-        "Features both precise bent notes and fast legato runs",
-        "Widely considered one of the greatest guitar solos ever recorded"
+        "Classic i - VII - VI cadence in A natural minor",
+        "Punchy electric power chord attack driving through Am, G, and F",
+        "Tight palm muting dynamic building into the guitar solo climax",
+        "Full band crescendo leading into Page's solo"
       ],
-      "alphaTab": "5.6 8.6 5.5 7.5 5.4 7.4 | 5.3 7.3 5.2 8.2 5.1 8.1 | 8.1 5.1 8.2 5.2 7.3 5.3 | 7.4 5.4 7.5 5.5 8.6 5.6 |",
+      "alphaTab": ":2 (5.6 7.5 7.4) (5.6 7.5 7.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) | :2 (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) |",
+      "exerciseLabel": "Power Chord Movement Exercise"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "5:55-7:45",
+      "technique": "Minor Pentatonic Soloing",
+      "key": "A Minor",
+      "description": "Jimmy Page's defining electric guitar solo, masterfully constructing melodies across the A minor pentatonic scale with iconic unison bends and blues runs",
+      "chords": [
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Complete 2-octave A minor pentatonic scale run at the 5th-fret box position",
+        "Notes: A, C, D, E, G covering all 6 strings",
+        "Master this scale foundation to unlock Page's legendary solo phrases",
+        "Add expressive finger vibrato to the 5th-fret low A root note"
+      ],
+      "alphaTab": ":8 5.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 | 5.2 8.2 5.1 8.1 8.1 5.1 8.2 5.2 | 7.3 5.3 7.4 5.4 7.5 5.5 8.6 5.6 | :4 5.6.1 |",
       "exerciseLabel": "Minor Pentatonic Scale Exercise"
     }
   ],
