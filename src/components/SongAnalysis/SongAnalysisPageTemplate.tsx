@@ -17,6 +17,8 @@ import { getDifficultyColor } from '@/utils/theme';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
 import AffiliateLink from '@/components/Revenue/AffiliateLink';
+import ProductCard from '@/components/Revenue/ProductCard';
+import SmartAffiliateText from '@/components/Revenue/SmartAffiliateText';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
@@ -294,7 +296,13 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <div className="space-y-3 text-xs">
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Recommended Model:</p>
-                      <div className="text-slate-900 dark:text-slate-200 font-semibold"><AffiliateLink productName={songData.equipment.guitar.recommended} /></div>
+                      <ProductCard
+                        productName={songData.equipment.guitar.recommended}
+                        category="Guitar"
+                        label="Featured Guitar"
+                        compact={true}
+                        className="mt-1.5 mb-2"
+                      />
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Pickup Type:</p>
@@ -323,7 +331,13 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <div className="space-y-3 text-xs">
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Recommended Amp:</p>
-                      <div className="text-slate-900 dark:text-slate-200 font-semibold"><AffiliateLink productName={songData.equipment.amp.recommended} /></div>
+                      <ProductCard
+                        productName={songData.equipment.amp.recommended}
+                        category="Amplifier"
+                        label="Featured Amp"
+                        compact={true}
+                        className="mt-1.5 mb-2"
+                      />
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Tone Stack Dial-In:</p>
@@ -358,15 +372,15 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <div className="space-y-3 text-xs">
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Overdrive / Distortion:</p>
-                      <p className="text-slate-700 dark:text-slate-300">{songData.equipment.effects.distortion}</p>
+                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.distortion} /></p>
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Reverb / Delay:</p>
-                      <p className="text-slate-700 dark:text-slate-300">{songData.equipment.effects.reverb}</p>
+                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.reverb} /></p>
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Modulation / Other:</p>
-                      <p className="text-slate-700 dark:text-slate-300">{songData.equipment.effects.other}</p>
+                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.other} /></p>
                     </div>
                   </div>
                 </div>
