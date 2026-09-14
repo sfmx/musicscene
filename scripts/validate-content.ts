@@ -182,7 +182,9 @@ function validateJourneyLinks(
     // Slug-based references (chord, interval, mode, progression)
     if (typeof linkObj.slug === 'string') {
       const refFile = path.join(dataDir, `${linkObj.slug}.json`);
-      if (!fs.existsSync(refFile)) {
+      // Allow hub references like "modes" pointing to /lessons/theory/modes
+      const isHubLink = linkObj.slug === path.basename(dataDir) && fs.existsSync(path.join(APP, 'lessons/theory', linkObj.slug));
+      if (!fs.existsSync(refFile) && !isHubLink) {
         issues.push({
           file: relPath,
           level: 'warning',
