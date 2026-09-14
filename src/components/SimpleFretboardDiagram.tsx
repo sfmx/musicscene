@@ -1,214 +1,280 @@
-import React from 'react';
+"use client";
 
-type FretboardProps = {
+import React, { useState, useRef, useCallback } from 'react';
+import { getChordShape, getActualFretNumbers } from '@/lib/chordVoicings';
+import { playGuitarNote, strumChord } from '@/lib/guitarAudio';
+
+export type FretboardProps = {
   chord?: string;
+  className?: string;
+  showSoundIcon?: boolean;
 };
 
-const chordShapes: Record<string, { frets: number[], fingers?: number[] }> = {
-  // EADGBE (low to high), -1 means muted, 0 means open
-  'C': { frets: [-1, 3, 2, 0, 1, 0], fingers: [-1, 3, 2, 0, 1, 0] },
-  'C_major': { frets: [-1, 3, 2, 0, 1, 0], fingers: [-1, 3, 2, 0, 1, 0] },
-  'G': { frets: [3, 2, 0, 0, 3, 3], fingers: [3, 1, 0, 0, 2, 4] },
-  'G_major': { frets: [3, 2, 0, 0, 3, 3], fingers: [3, 1, 0, 0, 2, 4] },
-  'D': { frets: [-1, -1, 0, 2, 3, 2], fingers: [-1, -1, 0, 1, 3, 2] },
-  'D_major': { frets: [-1, -1, 0, 2, 3, 2], fingers: [-1, -1, 0, 1, 3, 2] },
-  'E': { frets: [0, 2, 2, 1, 0, 0], fingers: [0, 2, 3, 1, 0, 0] },
-  'E_major': { frets: [0, 2, 2, 1, 0, 0], fingers: [0, 2, 3, 1, 0, 0] },
-  'Em': { frets: [0, 2, 2, 0, 0, 0], fingers: [0, 2, 3, 0, 0, 0] },
-  'E_minor': { frets: [0, 2, 2, 0, 0, 0], fingers: [0, 2, 3, 0, 0, 0] },
-  'Am': { frets: [-1, 0, 2, 2, 1, 0], fingers: [-1, 0, 2, 3, 1, 0] },
-  'A_minor': { frets: [-1, 0, 2, 2, 1, 0], fingers: [-1, 0, 2, 3, 1, 0] },
-  'F': { frets: [1, 3, 3, 2, 1, 1], fingers: [1, 3, 4, 2, 1, 1] },
-  'F_major': { frets: [1, 3, 3, 2, 1, 1], fingers: [1, 3, 4, 2, 1, 1] },
-  'Dm': { frets: [-1, -1, 0, 2, 3, 1], fingers: [-1, -1, 0, 2, 3, 1] },
-  'D_minor': { frets: [-1, -1, 0, 2, 3, 1], fingers: [-1, -1, 0, 2, 3, 1] },
-  'Bm': { frets: [-1, 2, 4, 4, 3, 2], fingers: [-1, 1, 3, 4, 2, 1] },
-  'B_minor': { frets: [-1, 2, 4, 4, 3, 2], fingers: [-1, 1, 3, 4, 2, 1] },
-  // Augmented chords
-  'C+': { frets: [-1, 3, 2, 1, 1, 0], fingers: [-1, 4, 3, 1, 2, 0] },
-  'C_augmented': { frets: [-1, 3, 2, 1, 1, 0], fingers: [-1, 4, 3, 1, 2, 0] },
-  'F+': { frets: [1, 0, 3, 2, 2, 1], fingers: [1, 0, 4, 2, 3, 1] },
-  'F_augmented': { frets: [1, 0, 3, 2, 2, 1], fingers: [1, 0, 4, 2, 3, 1] },
-  'G+': { frets: [3, 2, 1, 0, 0, 3], fingers: [4, 3, 1, 0, 0, 2] },
-  'G_augmented': { frets: [3, 2, 1, 0, 0, 3], fingers: [4, 3, 1, 0, 0, 2] },
-  'D+': { frets: [-1, -1, 0, 3, 3, 2], fingers: [-1, -1, 0, 2, 3, 1] },
-  'D_augmented': { frets: [-1, -1, 0, 3, 3, 2], fingers: [-1, -1, 0, 2, 3, 1] },
-  'A+': { frets: [-1, 0, 3, 2, 2, 1], fingers: [-1, 0, 4, 2, 3, 1] },
-  'E+': { frets: [0, 3, 2, 1, 1, 0], fingers: [0, 4, 3, 1, 2, 0] },
-  'Bb+': { frets: [-1, 1, 0, 3, 3, 2], fingers: [-1, 1, 0, 2, 3, 4] },
-  'G#+': { frets: [4, 3, 2, 1, 1, 4], fingers: [4, 3, 2, 1, 1, 4] },
-  'Ab+': { frets: [4, 3, 2, 1, 1, 4], fingers: [4, 3, 2, 1, 1, 4] },
-  'Bb': { frets: [-1, 1, 3, 3, 3, 1], fingers: [-1, 1, 2, 3, 4, 1] },
-  // Diminished chords
-  'Cdim': { frets: [-1, 3, 4, 2, 4, 2], fingers: [-1, 2, 4, 1, 3, 1] },
-  'C°': { frets: [-1, 3, 4, 2, 4, 2], fingers: [-1, 2, 4, 1, 3, 1] },
-  'C#dim': { frets: [-1, 4, 5, 3, 5, 3], fingers: [-1, 2, 4, 1, 3, 1] },
-  'C#°': { frets: [-1, 4, 5, 3, 5, 3], fingers: [-1, 2, 4, 1, 3, 1] },
-  'Ddim': { frets: [-1, -1, 0, 1, 0, 1], fingers: [-1, -1, 0, 1, 0, 2] },
-  'D°': { frets: [-1, -1, 0, 1, 0, 1], fingers: [-1, -1, 0, 1, 0, 2] },
-  'D#dim': { frets: [-1, -1, 1, 2, 1, 2], fingers: [-1, -1, 1, 3, 2, 4] },
-  'D#°': { frets: [-1, -1, 1, 2, 1, 2], fingers: [-1, -1, 1, 3, 2, 4] },
-  'Edim': { frets: [0, 1, 2, 0, 2, 0], fingers: [0, 1, 3, 0, 2, 0] },
-  'E°': { frets: [0, 1, 2, 0, 2, 0], fingers: [0, 1, 3, 0, 2, 0] },
-  'Fdim': { frets: [1, 2, 3, 1, 3, 1], fingers: [1, 2, 4, 1, 3, 1] },
-  'F°': { frets: [1, 2, 3, 1, 3, 1], fingers: [1, 2, 4, 1, 3, 1] },
-  'Gdim': { frets: [3, 4, 5, 3, 5, 3], fingers: [1, 2, 4, 1, 3, 1] },
-  'G°': { frets: [3, 4, 5, 3, 5, 3], fingers: [1, 2, 4, 1, 3, 1] },
-  'Adim': { frets: [-1, 0, 1, 2, 1, 2], fingers: [-1, 0, 1, 3, 2, 4] },
-  'A°': { frets: [-1, 0, 1, 2, 1, 2], fingers: [-1, 0, 1, 3, 2, 4] },
-  'A#dim': { frets: [-1, 1, 2, 3, 2, 3], fingers: [-1, 1, 2, 4, 2, 3] },
-  'A#°': { frets: [-1, 1, 2, 3, 2, 3], fingers: [-1, 1, 2, 4, 2, 3] },
-  'Bdim': { frets: [-1, 2, 3, 4, 3, 4], fingers: [-1, 1, 2, 4, 2, 3] },
-  'B°': { frets: [-1, 2, 3, 4, 3, 4], fingers: [-1, 1, 2, 4, 2, 3] },
-  // Diminished 7th chords
-  'Gdim7': { frets: [3, 4, 5, 3, 6, 3], fingers: [1, 2, 3, 1, 4, 1] },
-  'G°7': { frets: [3, 4, 5, 3, 6, 3], fingers: [1, 2, 3, 1, 4, 1] },
-  // Seventh chords
-  'G7': { frets: [3, 2, 0, 0, 0, 1], fingers: [3, 2, 0, 0, 0, 1] },
-  'G_7': { frets: [3, 2, 0, 0, 0, 1], fingers: [3, 2, 0, 0, 0, 1] },
-  'E7': { frets: [0, 2, 0, 1, 0, 0], fingers: [0, 2, 0, 1, 0, 0] },
-  'A7': { frets: [-1, 0, 2, 0, 2, 0], fingers: [-1, 0, 2, 0, 3, 0] },
-  'B7': { frets: [-1, 2, 1, 2, 0, 2], fingers: [-1, 2, 1, 3, 0, 4] },
-  'D7': { frets: [-1, -1, 0, 2, 1, 2], fingers: [-1, -1, 0, 2, 1, 3] },
-  'C7': { frets: [-1, 3, 2, 3, 1, 0], fingers: [-1, 3, 2, 4, 1, 0] },
-  'Am7': { frets: [-1, 0, 2, 0, 1, 0], fingers: [-1, 0, 2, 0, 1, 0] },
-  'A_minor_7': { frets: [-1, 0, 2, 0, 1, 0], fingers: [-1, 0, 2, 0, 1, 0] },
-  'Em7': { frets: [0, 2, 0, 0, 0, 0], fingers: [0, 2, 0, 0, 0, 0] },
-  'CMaj7': { frets: [-1, 3, 2, 0, 0, 0], fingers: [-1, 3, 2, 0, 0, 0] },
-  'C_major_7': { frets: [-1, 3, 2, 0, 0, 0], fingers: [-1, 3, 2, 0, 0, 0] },
-  'FMaj7': { frets: [1, 3, 2, 1, 0, -1], fingers: [1, 3, 2, 1, 0, -1] },
-  'F_major_7': { frets: [1, 3, 2, 1, 0, -1], fingers: [1, 3, 2, 1, 0, -1] },
-  'DMaj7': { frets: [-1, -1, 0, 2, 2, 2], fingers: [-1, -1, 0, 1, 1, 1] },
-  'BMaj7': { frets: [-1, 2, 4, 3, 4, -1], fingers: [-1, 1, 3, 2, 4, -1] },
-  'AMaj7': { frets: [-1, 0, 2, 1, 2, 0], fingers: [-1, 0, 2, 1, 3, 0] },
-  'GMaj7': { frets: [3, 2, 0, 0, 0, 2], fingers: [3, 2, 0, 0, 0, 1] },
-  'EMaj7': { frets: [0, 2, 1, 1, 0, 0], fingers: [0, 2, 1, 1, 0, 0] },
-  'F#m7': { frets: [2, 4, 2, 2, 2, 2], fingers: [1, 3, 1, 1, 1, 1] },
-  'Dm7': { frets: [-1, -1, 0, 2, 1, 1], fingers: [-1, -1, 0, 2, 1, 1] },
-  'D_minor_7': { frets: [-1, -1, 0, 2, 1, 1], fingers: [-1, -1, 0, 2, 1, 1] },
-  'Bm7': { frets: [-1, 2, 0, 2, 0, 2], fingers: [-1, 1, 0, 2, 0, 3] },
-  // Half-diminished (minor 7b5) chords
-  'Bm7b5': { frets: [-1, 2, 3, 2, 3, -1], fingers: [-1, 1, 3, 2, 4, -1] },
-  'D_minor_7_flat_5': { frets: [-1, -1, 0, 1, 1, 1], fingers: [-1, -1, 0, 1, 1, 1] },
-  'Cm': { frets: [-1, 3, 5, 5, 4, 3], fingers: [-1, 1, 3, 4, 2, 1] },
-  'C_minor': { frets: [-1, 3, 5, 5, 4, 3], fingers: [-1, 1, 3, 4, 2, 1] },
-  // Power chords (5th chords)
-  'E5': { frets: [0, 2, -1, -1, -1, -1], fingers: [0, 2, -1, -1, -1, -1] },
-  'A5': { frets: [-1, 0, 2, -1, -1, -1], fingers: [-1, 0, 2, -1, -1, -1] },
-  'B5': { frets: [-1, 2, 4, -1, -1, -1], fingers: [-1, 1, 3, -1, -1, -1] },
-  'D5': { frets: [-1, -1, 0, 2, -1, -1], fingers: [-1, -1, 0, 2, -1, -1] },
-  'G5': { frets: [3, 5, -1, -1, -1, -1], fingers: [1, 3, -1, -1, -1, -1] },
-  'C5': { frets: [-1, 3, 5, -1, -1, -1], fingers: [-1, 1, 3, -1, -1, -1] },
-  'F5': { frets: [1, 3, -1, -1, -1, -1], fingers: [1, 3, -1, -1, -1, -1] },
-};
+export default function SimpleFretboardDiagram({
+  chord = 'C',
+  className = '',
+  showSoundIcon = true,
+}: FretboardProps) {
+  const [isStrumming, setIsStrumming] = useState<boolean>(false);
+  const [activeString, setActiveString] = useState<number | null>(null);
+  const activeTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) {
-  const chordData = chordShapes[chord] || chordShapes['C'];
-  const { frets, fingers } = chordData;
-  
-  const fretboardWidth = 100;  // Made narrower
-  const fretboardHeight = 120; // Made taller for better proportions
-  const fretSpacing = 24; // Space between frets (increased for taller board)
-  const startX = 30;  // Reduced to give more room on right
+  const chordData = getChordShape(chord);
+  const { frets, fingers, baseFret = 1 } = chordData;
+  const actualFrets = getActualFretNumbers(chordData);
+
+  const fretboardWidth = 100;
+  const fretboardHeight = 120;
+  const fretSpacing = 24;
+  const startX = 34; // Room on left for baseFret indicator
   const startY = 30;
-  
-  // Calculate string positions - evenly spaced across the fretboard width
-  const stringPositions = [...Array(6)].map((_, i) => 
-    startX + (i * fretboardWidth) / 5 // 5 intervals for 6 strings
+
+  // Calculate string positions (Low E string 0 to High E string 5)
+  const stringPositions = [...Array(6)].map((_, i) =>
+    startX + (i * fretboardWidth) / 5
   );
 
+  const handleStrum = useCallback((e?: React.MouseEvent | React.KeyboardEvent) => {
+    if (e) e.stopPropagation();
+
+    setIsStrumming(true);
+    strumChord(actualFrets, {
+      speedMs: 18,
+      volume: 0.35,
+      onStringPlucked: (sIdx) => {
+        setActiveString(sIdx);
+      },
+    });
+
+    if (activeTimerRef.current) clearTimeout(activeTimerRef.current);
+    activeTimerRef.current = setTimeout(() => {
+      setIsStrumming(false);
+      setActiveString(null);
+    }, 450);
+  }, [actualFrets]);
+
+  const handleNoteClick = (stringIndex: number, actualFret: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (actualFret < 0) return;
+
+    setActiveString(stringIndex);
+    playGuitarNote(stringIndex, actualFret, { volume: 0.45, duration: 1.5 });
+
+    if (activeTimerRef.current) clearTimeout(activeTimerRef.current);
+    activeTimerRef.current = setTimeout(() => {
+      setActiveString(null);
+    }, 350);
+  };
+
   return (
-    <svg width={170} height={160} style={{ background: 'transparent' }}> {/* Increased width for markers */}
-      {/* Fretboard background */}
-      <rect
-        x={startX}
-        y={startY}
-        width={fretboardWidth}
-        height={fretboardHeight}
-        className="fill-slate-50 dark:fill-slate-900 stroke-slate-300 dark:stroke-slate-700"
-        strokeWidth={2}
-      />
-      
-      {/* Fret lines (horizontal) */}
-      {[...Array(5)].map((_, fret) => (
-        <line
-          key={fret}
-          x1={startX}
-          y1={startY + (fret + 1) * fretSpacing}
-          x2={startX + fretboardWidth}
-          y2={startY + (fret + 1) * fretSpacing}
-          className="stroke-slate-300 dark:stroke-slate-700"
-          strokeWidth={1.5}
-        />
-      ))}
-      
-      {/* String lines (vertical) */}
-      {stringPositions.map((x, string) => (
-        <line
-          key={string}
-          x1={x}
-          y1={startY}
-          x2={x}
-          y2={startY + fretboardHeight}
-          className="stroke-slate-400 dark:stroke-slate-600"
-          strokeWidth={1}
-        />
-      ))}
-      
-      {/* Nut (thick top line) */}
-      <line
-        x1={startX}
-        y1={startY}
-        x2={startX + fretboardWidth}
-        y2={startY}
-        className="stroke-slate-900 dark:stroke-slate-200"
-        strokeWidth={4}
-      />
-      
-      {/* X/O markers at top */}
-      {frets.map((fret, string) => (
-        fret === 0 || fret === -1 ? (
+    <div
+      role="button"
+      tabIndex={0}
+      aria-label={`Interactive guitar chord diagram for ${chord}. Click to strum.`}
+      onClick={handleStrum}
+      onKeyDown={(e) => {
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          handleStrum(e);
+        }
+      }}
+      className={`inline-block relative cursor-pointer select-none group focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl transition-transform active:scale-95 ${className}`}
+      title="Click to strum chord"
+    >
+      <svg
+        width={170}
+        height={160}
+        className="overflow-visible"
+        style={{ background: 'transparent' }}
+      >
+        {/* Base fret indicator (e.g., '4fr' for barre chords) */}
+        {baseFret > 1 && (
           <text
-            key={`marker-${string}`}
-            x={stringPositions[string]}
-            y={startY - 8}
-            fontSize={14}
-            className={fret === 0 ? 'fill-blue-600 dark:fill-cyan-400' : 'fill-red-600 dark:fill-rose-400'}
+            x={startX - 7}
+            y={startY + 17}
+            fontSize={11}
             fontWeight="bold"
-            textAnchor="middle"
+            textAnchor="end"
+            className="fill-amber-600 dark:fill-amber-400 font-mono tracking-tighter"
           >
-            {fret === 0 ? 'O' : 'X'}
+            {baseFret}fr
           </text>
-        ) : null
-      ))}
-      
-      {/* Finger positions */}
-      {frets.map((fret, string) => {
-        if (fret > 0) {
-          const fingerNumber = fingers?.[string] || fret;
+        )}
+
+        {/* Fretboard background */}
+        <rect
+          x={startX}
+          y={startY}
+          width={fretboardWidth}
+          height={fretboardHeight}
+          className={`fill-slate-50 dark:fill-slate-900 transition-colors ${
+            isStrumming
+              ? 'stroke-amber-400 dark:stroke-cyan-400'
+              : 'stroke-slate-300 dark:stroke-slate-700'
+          }`}
+          strokeWidth={isStrumming ? 2.5 : 2}
+        />
+
+        {/* Fret lines (horizontal) */}
+        {[...Array(5)].map((_, fret) => (
+          <line
+            key={fret}
+            x1={startX}
+            y1={startY + (fret + 1) * fretSpacing}
+            x2={startX + fretboardWidth}
+            y2={startY + (fret + 1) * fretSpacing}
+            className="stroke-slate-300 dark:stroke-slate-700"
+            strokeWidth={1.5}
+          />
+        ))}
+
+        {/* String lines (vertical) */}
+        {stringPositions.map((x, string) => {
+          const isActive = activeString === string;
           return (
-            <g key={`finger-${string}`}>
-              <circle
-                cx={stringPositions[string]}
-                cy={startY + (fret - 0.5) * fretSpacing}
-                r={8}
-                className="fill-blue-600 dark:fill-cyan-500 stroke-white dark:stroke-slate-900"
-                strokeWidth={1.5}
-              />
+            <line
+              key={string}
+              x1={x}
+              y1={startY}
+              x2={x}
+              y2={startY + fretboardHeight}
+              className={`transition-all duration-75 ${
+                isActive
+                  ? 'stroke-amber-500 dark:stroke-cyan-400'
+                  : 'stroke-slate-400 dark:stroke-slate-600'
+              }`}
+              strokeWidth={isActive ? 2.5 : 1}
+            />
+          );
+        })}
+
+        {/* Nut (thick top line) or thin fret wire if baseFret > 1 */}
+        <line
+          x1={startX}
+          y1={startY}
+          x2={startX + fretboardWidth}
+          y2={startY}
+          className={
+            baseFret > 1
+              ? 'stroke-slate-400 dark:stroke-slate-600'
+              : 'stroke-slate-900 dark:stroke-slate-200'
+          }
+          strokeWidth={baseFret > 1 ? 1.5 : 4}
+        />
+
+        {/* X/O markers at top */}
+        {frets.map((fret, string) => {
+          if (fret === 0 || fret === -1) {
+            const isOpen = fret === 0;
+            const isActive = activeString === string;
+            return (
               <text
+                key={`marker-${string}`}
                 x={stringPositions[string]}
-                y={startY + (fret - 0.5) * fretSpacing + 4}
-                fontSize={11}
-                className="fill-white dark:fill-slate-950 font-black"
+                y={startY - 8}
+                fontSize={14}
+                onClick={(e) => handleNoteClick(string, isOpen ? 0 : -1, e)}
+                className={`font-bold select-none cursor-pointer transition-transform hover:scale-125 ${
+                  isOpen
+                    ? isActive
+                      ? 'fill-amber-500 dark:fill-cyan-300'
+                      : 'fill-blue-600 dark:fill-cyan-400'
+                    : 'fill-red-600 dark:fill-rose-400'
+                }`}
+                fontWeight="bold"
                 textAnchor="middle"
               >
-                {fingerNumber}
+                {isOpen ? 'O' : 'X'}
               </text>
-            </g>
-          );
-        }
-        return null;
-      })}
-    </svg>
+            );
+          }
+          return null;
+        })}
+
+        {/* Finger positions */}
+        {frets.map((fret, string) => {
+          if (fret > 0) {
+            const fingerNumber = fingers?.[string] || fret;
+            const actualFret = actualFrets[string];
+            const isActive = activeString === string;
+
+            return (
+              <g
+                key={`finger-${string}`}
+                className="cursor-pointer"
+                onClick={(e) => handleNoteClick(string, actualFret, e)}
+              >
+                <circle
+                  cx={stringPositions[string]}
+                  cy={startY + (fret - 0.5) * fretSpacing}
+                  r={isActive ? 9.5 : 8}
+                  className={`transition-all duration-100 stroke-white dark:stroke-slate-900 ${
+                    isActive
+                      ? 'fill-amber-500 dark:fill-cyan-400 scale-110'
+                      : 'fill-blue-600 dark:fill-cyan-500 hover:fill-blue-500 dark:hover:fill-cyan-400'
+                  }`}
+                  strokeWidth={1.5}
+                />
+                <text
+                  x={stringPositions[string]}
+                  y={startY + (fret - 0.5) * fretSpacing + 4}
+                  fontSize={11}
+                  className="fill-white dark:fill-slate-950 font-black select-none pointer-events-none"
+                  textAnchor="middle"
+                >
+                  {fingerNumber}
+                </text>
+              </g>
+            );
+          }
+          return null;
+        })}
+
+        {/* Interactive sound indicator badge */}
+        {showSoundIcon && (
+          <g
+            className={`transition-all duration-200 transform ${
+              isStrumming
+                ? 'scale-110 opacity-100'
+                : 'opacity-50 group-hover:opacity-100 hover:scale-110'
+            }`}
+            transform="translate(144, 10)"
+          >
+            <circle
+              cx={9}
+              cy={9}
+              r={9}
+              className={`transition-colors ${
+                isStrumming
+                  ? 'fill-amber-500/20 stroke-amber-500 dark:fill-cyan-500/20 dark:stroke-cyan-400'
+                  : 'fill-slate-100 dark:fill-slate-800 stroke-slate-300 dark:stroke-slate-700'
+              }`}
+              strokeWidth={1}
+            />
+            {/* Speaker icon */}
+            <path
+              d="M4.5 7.5v3h2l2.5 2.2V5.3L6.5 7.5h-2z"
+              className={`${
+                isStrumming
+                  ? 'fill-amber-600 dark:fill-cyan-300'
+                  : 'fill-slate-600 dark:fill-slate-400'
+              }`}
+            />
+            {/* Sound wave */}
+            <path
+              d="M10.5 6.5c.8.8.8 3.2 0 4M12 5c1.7 1.7 1.7 5.3 0 7"
+              fill="none"
+              strokeWidth={1}
+              strokeLinecap="round"
+              className={`${
+                isStrumming
+                  ? 'stroke-amber-600 dark:stroke-cyan-300 animate-pulse'
+                  : 'stroke-slate-500 dark:stroke-slate-400'
+              }`}
+            />
+          </g>
+        )}
+      </svg>
+    </div>
   );
 }
