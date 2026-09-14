@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <Layout>
-      <div className="bg-gray-50/50 min-h-screen">
+      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
         <header className="relative h-48 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
           <div className="relative z-10">
@@ -21,13 +21,13 @@ export default function ContactPage() {
 
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="md:col-span-2 bg-white rounded-2xl p-8 shadow-sm">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <div className="md:col-span-2 bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Get in Touch</h2>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
                 We welcome feedback from players, educators, and visitors. Whether you have an observation on a song analysis,
                 want to report an inaccurate chord transcription, or wish to suggest a new lesson topic, we are here to assist.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-8">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
                 Our editorial team aims to review and respond to all inquiries within <strong>24 to 48 business hours</strong>.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -44,63 +44,63 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Publisher Details</h3>
-                <div className="space-y-3 text-sm text-gray-600">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Publisher Details</h3>
+                <div className="space-y-3 text-sm text-slate-600 dark:text-slate-400">
                   <div>
-                    <span className="font-semibold text-gray-800 block">Organization:</span>
+                    <span className="font-semibold text-slate-800 dark:text-slate-200 block">Organization:</span>
                     <span>MusicScene</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-800 block">Lead Editor:</span>
+                    <span className="font-semibold text-slate-800 dark:text-slate-200 block">Lead Editor:</span>
                     <span>Jason Smith</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-800 block">Location:</span>
+                    <span className="font-semibold text-slate-800 dark:text-slate-200 block">Location:</span>
                     <span>New South Wales, Australia</span>
                     <span>Brisbane, Queensland, Australia</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-800 block">Privacy Inquiries:</span>
-                    <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 hover:underline">
+                    <span className="font-semibold text-slate-800 dark:text-slate-200 block">Privacy Inquiries:</span>
+                    <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 dark:text-blue-400 hover:underline">
                       privacy@musicscene.com.au
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-gray-100 text-xs text-gray-500">
+              <div className="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
                 Operating under Australian Consumer Law &amp; Copyright Act 1968 (Cth).
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Content Corrections</h3>
-              <p className="text-gray-600 leading-relaxed">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Content Corrections</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 Found an incorrect chord, wrong tuning, or inaccurate tab? We take accuracy seriously.
                 Let us know the specific song or lesson and what needs fixing, and we&apos;ll review and
                 correct it promptly.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Song Requests</h3>
-              <p className="text-gray-600 leading-relaxed">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Song Requests</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 Want us to analyze a specific song? Tell us the song title and artist, and we&apos;ll
                 add it to our content roadmap. We prioritize requests based on popularity and educational value.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Technical Issues</h3>
-              <p className="text-gray-600 leading-relaxed">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Technical Issues</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 Experiencing problems with the site, broken links, or rendering issues? Please include
                 your browser, device type, and a description of the issue so we can investigate.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">General Feedback</h3>
-              <p className="text-gray-600 leading-relaxed">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">General Feedback</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 Ideas for new features, lesson topics, or general thoughts about MusicScene? We&apos;re
                 always looking for ways to improve and your feedback helps shape our roadmap.
               </p>

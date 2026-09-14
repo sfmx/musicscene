@@ -125,8 +125,7 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
         y={startY}
         width={fretboardWidth}
         height={fretboardHeight}
-        fill="#f8f9fa"
-        stroke="#333"
+        className="fill-slate-50 dark:fill-slate-900 stroke-slate-300 dark:stroke-slate-700"
         strokeWidth={2}
       />
       
@@ -138,7 +137,7 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
           y1={startY + (fret + 1) * fretSpacing}
           x2={startX + fretboardWidth}
           y2={startY + (fret + 1) * fretSpacing}
-          stroke="#333"
+          className="stroke-slate-300 dark:stroke-slate-700"
           strokeWidth={1.5}
         />
       ))}
@@ -151,7 +150,7 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
           y1={startY}
           x2={x}
           y2={startY + fretboardHeight}
-          stroke="#666"
+          className="stroke-slate-400 dark:stroke-slate-600"
           strokeWidth={1}
         />
       ))}
@@ -162,7 +161,7 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
         y1={startY}
         x2={startX + fretboardWidth}
         y2={startY}
-        stroke="#000"
+        className="stroke-slate-900 dark:stroke-slate-200"
         strokeWidth={4}
       />
       
@@ -174,7 +173,7 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
             x={stringPositions[string]}
             y={startY - 8}
             fontSize={14}
-            fill={fret === 0 ? '#1976d2' : '#d32f2f'}
+            className={fret === 0 ? 'fill-blue-600 dark:fill-cyan-400' : 'fill-red-600 dark:fill-rose-400'}
             fontWeight="bold"
             textAnchor="middle"
           >
@@ -193,16 +192,14 @@ export default function SimpleFretboardDiagram({ chord = 'C' }: FretboardProps) 
                 cx={stringPositions[string]}
                 cy={startY + (fret - 0.5) * fretSpacing}
                 r={8}
-                fill="#1976d2"
-                stroke="#fff"
-                strokeWidth={1}
+                className="fill-blue-600 dark:fill-cyan-500 stroke-white dark:stroke-slate-900"
+                strokeWidth={1.5}
               />
               <text
                 x={stringPositions[string]}
                 y={startY + (fret - 0.5) * fretSpacing + 4}
                 fontSize={11}
-                fill="white"
-                fontWeight="bold"
+                className="fill-white dark:fill-slate-950 font-black"
                 textAnchor="middle"
               >
                 {fingerNumber}

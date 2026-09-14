@@ -45,7 +45,7 @@ export default function WhySongsWorkClient() {
     <>
       <JsonLdScript data={jsonLd} />
 
-      <main className="max-w-6xl mx-auto px-4 py-10">
+      <main className="max-w-6xl mx-auto px-4 py-10 text-slate-900 dark:text-slate-100">
         <Breadcrumbs
           pathname="/lessons/songs/why-songs-work"
           pageTitle="Why Songs Work"
@@ -80,8 +80,8 @@ export default function WhySongsWorkClient() {
         {/* Category Filter Pills */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-            <h2 className="text-lg font-bold text-gray-900">Filter by Harmonic Device:</h2>
-            <span className="text-xs text-gray-500">Showing {filtered.length} breakdowns</span>
+            <h2 className="text-lg font-bold text-slate-900 dark:text-white">Filter by Harmonic Device:</h2>
+            <span className="text-xs text-slate-500 dark:text-slate-400">Showing {filtered.length} breakdowns</span>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -89,8 +89,8 @@ export default function WhySongsWorkClient() {
               onClick={() => setSelectedCategory('all')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
                 selectedCategory === 'all'
-                  ? 'bg-indigo-600 text-white shadow-sm'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-indigo-600 dark:bg-indigo-500 text-white shadow-sm'
+                  : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
               }`}
             >
               All Concepts ({allBreakdowns.length})
@@ -104,8 +104,8 @@ export default function WhySongsWorkClient() {
                   onClick={() => setSelectedCategory(catKey)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
                     selectedCategory === catKey
-                      ? 'bg-indigo-600 text-white shadow-sm'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-indigo-600 dark:bg-indigo-500 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
                   }`}
                 >
                   {HARMONIC_CATEGORIES[catKey].label} ({count})
@@ -120,31 +120,31 @@ export default function WhySongsWorkClient() {
           {filtered.map(secret => (
             <div
               key={secret.slug}
-              className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group"
+              className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
+                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800/40">
                     {secret.categoryLabel}
                   </span>
-                  <span className="text-xs font-mono text-gray-400">
+                  <span className="text-xs font-mono text-slate-400 dark:text-slate-500">
                     {secret.romanProgression}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors mb-1">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1">
                   {secret.songTitle}
                 </h3>
-                <p className="text-xs text-gray-500 font-medium mb-4">
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-4">
                   by {secret.artist}
                 </p>
 
                 {/* Core Secret Box */}
-                <div className="p-3.5 bg-amber-50/80 rounded-lg border border-amber-200/70 mb-4">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1 flex items-center gap-1">
+                <div className="p-3.5 bg-amber-50/80 dark:bg-amber-950/20 rounded-lg border border-amber-200/70 dark:border-amber-500/30 mb-4">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 mb-1 flex items-center gap-1">
                     <span>💡</span> The Harmonic Secret
                   </div>
-                  <p className="text-xs text-amber-950 font-medium line-clamp-3">
+                  <p className="text-xs text-amber-950 dark:text-amber-200 font-medium line-clamp-3">
                     {secret.coreSecret}
                   </p>
                 </div>
@@ -152,23 +152,23 @@ export default function WhySongsWorkClient() {
                 {/* Chords Used */}
                 <div className="flex flex-wrap gap-1.5 mb-2">
                   {secret.chords.slice(0, 6).map((c, i) => (
-                    <span key={i} className="text-xs font-mono px-2 py-0.5 bg-gray-100 text-gray-700 rounded">
+                    <span key={i} className="text-xs font-mono px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded">
                       {c}
                     </span>
                   ))}
                   {secret.chords.length > 6 && (
-                    <span className="text-xs font-mono px-1.5 py-0.5 text-gray-400">
+                    <span className="text-xs font-mono px-1.5 py-0.5 text-slate-400 dark:text-slate-500">
                       +{secret.chords.length - 6} more
                     </span>
                   )}
                 </div>
               </div>
 
-              <div className="p-4 bg-gray-50 border-t border-gray-100 flex items-center justify-between">
-                <span className="text-xs text-gray-500 font-medium">Full Analysis</span>
+              <div className="p-4 bg-slate-50 dark:bg-slate-950/60 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Full Analysis</span>
                 <Link
                   href={`/lessons/songs/song-analysis/${secret.slug}/#why-it-works`}
-                  className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 group-hover:translate-x-0.5 transition-transform"
+                  className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 group-hover:translate-x-0.5 transition-transform"
                 >
                   Read Harmonic Secret →
                 </Link>
@@ -178,25 +178,25 @@ export default function WhySongsWorkClient() {
         </div>
 
         {/* SEO Explainer Content for Google Indexation */}
-        <section className="bg-gray-50 rounded-2xl p-8 border border-gray-200 mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="bg-slate-50 dark:bg-slate-900/60 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 mb-12">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
             How Music Theory Unlocks Greater Guitar Musicianship
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-600">
+          <div className="grid md:grid-cols-3 gap-6 text-sm text-slate-600 dark:text-slate-300">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">1. Memorize Songs in Seconds</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">1. Memorize Songs in Seconds</h3>
               <p>
                 When you see songs as Roman numerals (like I - bVII - IV) instead of arbitrary letter chords (D - C - G), your brain categorizes songs into repeatable archetypes, cutting learning time by 80%.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">2. Solo with Musical Purpose</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">2. Solo with Musical Purpose</h3>
               <p>
                 Understanding borrowed chords tells you exactly when to switch scales. When an F# major chord appears in B minor, switching from natural minor to Harmonic Minor targets the A# leading tone for jaw-dropping phrasing.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">3. Steal Secrets for Songwriting</h3>
+              <h3 className="font-semibold text-slate-900 dark:text-white mb-2">3. Steal Secrets for Songwriting</h3>
               <p>
                 Every iconic song is a masterclass in harmonic emotional triggers. Steal the minor iv chord trick from <em>Black Hole Sun</em> or the anchored drone pedal from <em>Wonderwall</em> for your own compositions.
               </p>

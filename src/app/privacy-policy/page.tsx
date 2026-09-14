@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <Layout>
-      <div className="bg-gray-50/50 min-h-screen pb-16">
+      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen pb-16 text-slate-900 dark:text-slate-100 transition-colors">
         <header className="relative h-64 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
           <div className="relative z-10">
@@ -23,47 +23,47 @@ export default function PrivacyPolicyPage() {
         </header>
 
         <div className="max-w-4xl mx-auto mt-12 px-6">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
-            <div className="prose prose-lg prose-blue max-w-none text-gray-600">
-              <p className="text-sm font-medium tracking-wide text-blue-600 uppercase mb-8">
+          <div className="bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12">
+            <div className="prose prose-lg prose-blue dark:prose-invert max-w-none text-slate-600 dark:text-slate-300">
+              <p className="text-sm font-medium tracking-wide text-blue-600 dark:text-blue-400 uppercase mb-8">
                 Last updated: September 9, 2026
               </p>
 
-              <p className="lead text-xl text-gray-900 font-medium">
+              <p className="lead text-xl text-slate-900 dark:text-white font-medium">
                 Welcome to MusicScene (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;), accessible at{' '}
-                <strong className="text-gray-900">musicscene.com.au</strong>. We are committed to protecting your
+                <strong className="text-slate-900 dark:text-white">musicscene.com.au</strong>. We are committed to protecting your
                 privacy and ensuring you have a positive experience on our website. This Privacy Policy outlines our
                 practices concerning the collection, use, and disclosure of personal information and explains the choices
                 available to you regarding our use of your information, including third-party advertising cookies.
               </p>
 
-              <hr className="my-8 border-gray-100" />
+              <hr className="my-8 border-slate-200 dark:border-slate-800" />
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Information We Collect</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">1. Information We Collect</h2>
               <p>
                 When you visit and navigate MusicScene, we collect information in two ways: information you voluntarily
                 provide to us and information collected automatically through cookies and tracking technologies.
               </p>
               <ul className="space-y-2">
                 <li>
-                  <strong className="text-gray-800">Voluntary Information:</strong> If you contact us directly via email
+                  <strong className="text-slate-800 dark:text-slate-200">Voluntary Information:</strong> If you contact us directly via email
                   or submit an inquiry, we may collect your name, email address, and any details included in your
                   message.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Log and Usage Data:</strong> Like most websites, our servers
+                  <strong className="text-slate-800 dark:text-slate-200">Log and Usage Data:</strong> Like most websites, our servers
                   automatically log information when you access MusicScene. This may include your Internet Protocol (IP)
                   address, browser type and version, operating system, language preferences, referring URLs, pages
                   viewed, duration of visits, and timestamps.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Device Information:</strong> We may collect technical details about
+                  <strong className="text-slate-800 dark:text-slate-200">Device Information:</strong> We may collect technical details about
                   the device you use to access the site (such as whether you are browsing on mobile, tablet, or desktop)
                   to optimize our responsive interactive fretboards and music notation renderers.
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Cookies and Web Beacons</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">2. Cookies and Web Beacons</h2>
               <p>
                 MusicScene uses &ldquo;cookies&rdquo; and similar technologies (such as local storage and web beacons) to
                 store visitor preferences, record user-specific information on which pages the visitor accesses or visits,
@@ -76,13 +76,13 @@ export default function PrivacyPolicyPage() {
                 not function as intended.
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Google AdSense &amp; Third-Party Advertising</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">3. Google AdSense &amp; Third-Party Advertising</h2>
               <p>
                 MusicScene displays advertisements served by third-party advertising partners, including{' '}
-                <strong className="text-gray-900">Google AdSense</strong>. We comply strictly with Google&apos;s
+                <strong className="text-slate-900 dark:text-white">Google AdSense</strong>. We comply strictly with Google&apos;s
                 publisher policies and provide the following mandatory disclosures:
               </p>
-              <div className="bg-blue-50/60 border-l-4 border-blue-600 p-5 rounded-r-xl my-6 space-y-3 text-gray-700">
+              <div className="bg-blue-50/60 dark:bg-blue-950/30 border-l-4 border-blue-600 dark:border-blue-400 p-5 rounded-r-xl my-6 space-y-3 text-slate-700 dark:text-slate-300">
                 <p>
                   <strong>Third-Party Vendors &amp; Google Cookies:</strong> Third-party vendors, including Google, use
                   cookies to serve ads based on a user&apos;s prior visits to your website or other websites across the
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
                     href="https://adssettings.google.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-semibold underline hover:text-blue-800"
+                    className="text-blue-600 dark:text-blue-400 font-semibold underline hover:text-blue-800 dark:hover:text-blue-300"
                   >
                     Google Ads Settings (adssettings.google.com)
                   </a>
@@ -112,7 +112,7 @@ export default function PrivacyPolicyPage() {
                     href="https://www.aboutads.info/choices/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-semibold underline hover:text-blue-800"
+                    className="text-blue-600 dark:text-blue-400 font-semibold underline hover:text-blue-800 dark:hover:text-blue-300"
                   >
                     www.aboutads.info/choices/
                   </a>{' '}
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
                     href="https://optout.networkadvertising.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-semibold underline hover:text-blue-800"
+                    className="text-blue-600 dark:text-blue-400 font-semibold underline hover:text-blue-800 dark:hover:text-blue-300"
                   >
                     optout.networkadvertising.org
                   </a>
@@ -137,9 +137,9 @@ export default function PrivacyPolicyPage() {
                 third-party advertisers.
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Amazon Associates &amp; Affiliate Links</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">4. Amazon Associates &amp; Affiliate Links</h2>
               <p>
-                MusicScene is a participant in the <strong className="text-gray-900">Amazon Services LLC Associates Program</strong>,
+                MusicScene is a participant in the <strong className="text-slate-900 dark:text-white">Amazon Services LLC Associates Program</strong>,
                 an affiliate advertising program designed to provide a means for sites to earn advertising fees by
                 advertising and linking to Amazon.com.au and affiliated Amazon properties.
               </p>
@@ -148,13 +148,13 @@ export default function PrivacyPolicyPage() {
                 a tracking cookie is set by Amazon to track qualifying purchases. As an Amazon Associate, we earn from
                 qualifying purchases at no extra cost to you. For full details on our editorial independence and
                 monetization practices, please review our{' '}
-                <a href="/affiliate-disclosure" className="text-blue-600 hover:text-blue-800 underline">
+                <a href="/affiliate-disclosure" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline">
                   Affiliate Disclosure
                 </a>
                 .
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">5. How We Use Your Information</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">5. How We Use Your Information</h2>
               <p>We use the information we collect solely for lawful, legitimate educational and operational purposes, including:</p>
               <ul className="space-y-1">
                 <li>Operating, maintaining, and improving our educational articles, song analyses, and music theory tools.</li>
@@ -164,42 +164,42 @@ export default function PrivacyPolicyPage() {
                 <li>Delivering relevant advertisements and affiliate product links that support our free educational content.</li>
               </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Your Data Rights (GDPR &amp; CCPA/CPRA)</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">6. Your Data Rights (GDPR &amp; CCPA/CPRA)</h2>
               <p>
                 Depending on your geographical location, you may hold statutory rights under applicable privacy laws such
                 as the General Data Protection Regulation (GDPR) or California Consumer Privacy Act (CCPA):
               </p>
               <ul className="space-y-2">
                 <li>
-                  <strong className="text-gray-800">Right to Access / Know:</strong> You may request details on what
+                  <strong className="text-slate-800 dark:text-slate-200">Right to Access / Know:</strong> You may request details on what
                   personal information we hold about you.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Right to Rectification:</strong> You may request corrections to any
+                  <strong className="text-slate-800 dark:text-slate-200">Right to Rectification:</strong> You may request corrections to any
                   inaccurate or incomplete personal information.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Right to Erasure (&ldquo;Right to be Forgotten&rdquo;):</strong> You
+                  <strong className="text-slate-800 dark:text-slate-200">Right to Erasure (&ldquo;Right to be Forgotten&rdquo;):</strong> You
                   may request deletion of your personal data under certain conditions.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Right to Restrict or Object to Processing:</strong> You may object to
+                  <strong className="text-slate-800 dark:text-slate-200">Right to Restrict or Object to Processing:</strong> You may object to
                   or request the restriction of our processing of your personal data.
                 </li>
                 <li>
-                  <strong className="text-gray-800">Non-Discrimination:</strong> We will never discriminate against you for
+                  <strong className="text-slate-800 dark:text-slate-200">Non-Discrimination:</strong> We will never discriminate against you for
                   exercising any of your privacy rights.
                 </li>
               </ul>
               <p>
                 To exercise any of these statutory rights, please contact our data privacy officer at{' '}
-                <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 underline hover:text-blue-800">
+                <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300">
                   privacy@musicscene.com.au
                 </a>
                 . We respond to all verified requests within statutory time limits (generally 30 days).
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">7. Managing and Disabling Cookies</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">7. Managing and Disabling Cookies</h2>
               <p>
                 Most modern web browsers allow you to control and manage cookies through their preference settings. You
                 can set your browser to block third-party cookies, alert you when a cookie is placed, or delete existing
@@ -211,7 +211,7 @@ export default function PrivacyPolicyPage() {
                     href="https://support.google.com/chrome/answer/95647"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 underline"
+                    className="text-blue-600 dark:text-blue-400 underline"
                   >
                     Google Chrome Cookie Settings
                   </a>
@@ -221,7 +221,7 @@ export default function PrivacyPolicyPage() {
                     href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 underline"
+                    className="text-blue-600 dark:text-blue-400 underline"
                   >
                     Mozilla Firefox Cookie Settings
                   </a>
@@ -231,7 +231,7 @@ export default function PrivacyPolicyPage() {
                     href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 underline"
+                    className="text-blue-600 dark:text-blue-400 underline"
                   >
                     Apple Safari Cookie Settings
                   </a>
@@ -241,14 +241,14 @@ export default function PrivacyPolicyPage() {
                     href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 underline"
+                    className="text-blue-600 dark:text-blue-400 underline"
                   >
                     Microsoft Edge Cookie Settings
                   </a>
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">8. Third-Party External Links</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">8. Third-Party External Links</h2>
               <p>
                 Our lessons and song analyses contain links to external third-party websites (such as Spotify, YouTube,
                 Apple Music, Ultimate Guitar, Songsterr, and Musicnotes). We have no control over and assume no
@@ -256,18 +256,18 @@ export default function PrivacyPolicyPage() {
                 advise you to review the privacy policy of every website you visit.
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">9. Contact Us</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-10 mb-4">9. Contact Us</h2>
               <p>
                 If you have questions, feedback, or concerns regarding this Privacy Policy, our cookie practices, or
                 third-party ad networks, please contact us:
               </p>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 not-prose text-gray-700 space-y-2">
-                <p className="font-bold text-gray-900">MusicScene Privacy Team</p>
-                <p>Website: <a href="https://musicscene.com.au" className="text-blue-600 hover:underline">musicscene.com.au</a></p>
-                <p>Email: <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 hover:underline font-medium">privacy@musicscene.com.au</a></p>
+              <div className="bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 rounded-xl p-6 not-prose text-slate-700 dark:text-slate-300 space-y-2">
+                <p className="font-bold text-slate-900 dark:text-white">MusicScene Privacy Team</p>
+                <p>Website: <a href="https://musicscene.com.au" className="text-blue-600 dark:text-blue-400 hover:underline">musicscene.com.au</a></p>
+                <p>Email: <a href="mailto:privacy@musicscene.com.au" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">privacy@musicscene.com.au</a></p>
                 <p>Location: New South Wales, Australia</p>
                 <p>Location: Brisbane, Queensland, Australia</p>
-                <p className="text-sm text-gray-500 pt-2">We strive to respond to all inquiries within 24 to 48 business hours.</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 pt-2">We strive to respond to all inquiries within 24 to 48 business hours.</p>
               </div>
             </div>
           </div>

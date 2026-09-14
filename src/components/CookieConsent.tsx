@@ -29,23 +29,23 @@ export default function CookieConsent() {
   if (!showConsent) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-900 border-t border-gray-800 text-white p-4 z-50 shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white p-4 z-50 shadow-2xl transition-colors">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="text-sm text-gray-300">
+        <div className="text-sm text-slate-600 dark:text-slate-300">
           We use cookies and similar tracking technologies to personalize content and ads, provide social media features, and analyze our traffic. 
           By clicking &quot;Accept&quot;, you consent to our use of cookies. 
-          Read our <Link href="/privacy-policy" className="text-blue-400 hover:text-blue-300 transition-colors underline">Privacy Policy</Link> for more information.
+          Read our <Link href="/privacy-policy" className="text-blue-600 dark:text-cyan-400 hover:underline transition-colors">Privacy Policy</Link> for more information.
         </div>
         <div className="flex gap-3 shrink-0">
           <button 
             onClick={declineCookies}
-            className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors"
+            className="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
           >
             Decline
           </button>
           <button 
             onClick={acceptCookies}
-            className="px-4 py-2 text-sm font-medium bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors"
+            className="px-4 py-2 text-sm font-bold bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 rounded-xl transition-all shadow-sm cursor-pointer"
           >
             Accept
           </button>
