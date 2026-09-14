@@ -18,6 +18,28 @@ interface AlphaTexRendererProps {
   className?: string;
 }
 
+// Guard AudioBufferSourceNode.stop from throwing InvalidStateError if stop is called before start
+if (typeof window !== 'undefined' && typeof window.AudioBufferSourceNode !== 'undefined') {
+  const origStop = window.AudioBufferSourceNode.prototype.stop;
+  if (origStop && !(origStop as any).__isGuarded) {
+    const guardedStop = function (this: AudioBufferSourceNode, ...args: [number?]) {
+      try {
+        return origStop.apply(this, args);
+      } catch (e: any) {
+        if (e?.name === 'InvalidStateError' || e?.message?.includes('cannot call stop without calling start first')) {
+          return;
+        }
+        throw e;
+      }
+    };
+    (guardedStop as any).__isGuarded = true;
+    window.AudioBufferSourceNode.prototype.stop = guardedStop;
+  }
+}
+
+// Event to ensure only one player runs across the page at any given moment
+const PLAYBACK_START_EVENT = 'alphatab-playback-start';
+
 // Global SoundFont cache shared across all AlphaTexRenderer instances on the page
 let sharedSoundFontBuffer: Uint8Array | null = null;
 let soundFontFetchPromise: Promise<Uint8Array> | null = null;
@@ -160,6 +182,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const isLoopingRef = useRef(false);
   const isDraggingScrubberRef = useRef(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
+  const instanceIdRef = useRef(Math.random().toString(36).slice(2));
 
   // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
@@ -279,14 +302,31 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
     // Suppress AlphaTab internal errors from showing as Next.js runtime error overlay
     const suppressAlphaTabError = (e: ErrorEvent) => {
+      const msg = e.message || e.error?.message || (typeof e.error === 'string' ? e.error : '');
       if (e.message === '[object Event]' ||
           e.error?.toString() === '[object Event]' ||
+          msg.includes('AudioScheduledSourceNode') ||
+          msg.includes('Audio Worklet') ||
+          msg.includes('cannot call stop without calling start first') ||
           e.filename?.includes('alphatab')) {
         e.preventDefault();
         return true;
       }
     };
     window.addEventListener('error', suppressAlphaTabError);
+
+    // Pause this instance when any other player on the page starts playing
+    const handleOtherPlaybackStart = (e: Event) => {
+      const customEvent = e as CustomEvent<{ id: string }>;
+      if (customEvent.detail?.id !== instanceIdRef.current && apiRef.current) {
+        try {
+          apiRef.current.pause();
+        } catch {
+          // ignore
+        }
+      }
+    };
+    window.addEventListener(PLAYBACK_START_EVENT, handleOtherPlaybackStart);
 
     const renderAlphaTex = async () => {
       try {
@@ -358,7 +398,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             enablePlayer: true,
             enableCursor: true,
             soundFont: null, // Zero soundfont download on page load
-            scrollMode: 0 // off - don't scroll during playback
+            scrollMode: 0, // off - don't scroll during playback
+            outputMode: alphaTab.PlayerOutputMode.WebAudioScriptProcessor
           }
         });
 
@@ -418,7 +459,12 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         });
 
         api.playerStateChanged.on((e: any) => {
-          if (isMounted) setPlayerState(e.state);
+          if (isMounted) {
+            setPlayerState(e.state);
+            if (e.state === 1) {
+              window.dispatchEvent(new CustomEvent(PLAYBACK_START_EVENT, { detail: { id: instanceIdRef.current } }));
+            }
+          }
         });
 
         api.playerPositionChanged.on((e: any) => {
@@ -459,8 +505,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     return () => {
       isMounted = false;
       window.removeEventListener('error', suppressAlphaTabError);
+      window.removeEventListener(PLAYBACK_START_EVENT, handleOtherPlaybackStart);
       if (apiRef.current) {
-        try { apiRef.current.stop(); } catch (e) { /* ignore */ }
+        try { apiRef.current.pause(); } catch (e) { /* ignore */ }
         try { apiRef.current.destroy(); } catch (e) { /* ignore */ }
         apiRef.current = null;
       }
@@ -470,8 +517,14 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handlePlayPause = useCallback(async () => {
     if (!apiRef.current) return;
 
+    window.dispatchEvent(new CustomEvent(PLAYBACK_START_EVENT, { detail: { id: instanceIdRef.current } }));
+
     if (isSoundFontLoadedRef.current) {
-      apiRef.current.playPause();
+      try {
+        apiRef.current.playPause();
+      } catch (e) {
+        console.warn('AlphaTab playPause notice:', e);
+      }
       return;
     }
 
@@ -481,7 +534,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       pendingPlayRef.current = true;
       const soundFontData = await getSharedSoundFont();
       if (apiRef.current) {
-        apiRef.current.loadSoundFont(soundFontData.buffer);
+        apiRef.current.loadSoundFont(soundFontData.buffer.slice(0));
       }
     } catch (err) {
       console.error('Failed to load SoundFont:', err);
