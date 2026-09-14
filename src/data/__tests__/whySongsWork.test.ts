@@ -60,6 +60,58 @@ describe('Why Songs Work Harmonic Engine', () => {
     const all = getAllCuratedHarmonicBreakdowns();
     expect(all.length).toBeGreaterThanOrEqual(10);
   });
+  it('should return curated breakdown for Another Brick in the Wall with Dorian mode', () => {
+    const song = getWhySongWorks('another-brick-in-the-wall');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('mixolydian-dorian');
+    expect(song?.chords).toContain('G');
+    expect(song?.coreSecret).toContain('Dorian');
+  });
+
+  it('should return curated breakdown for Back in Black with Mixolydian cadence', () => {
+    const song = getWhySongWorks('back-in-black');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('mixolydian-dorian');
+    expect(song?.chords).toContain('D5');
+    expect(song?.romanProgression).toContain('♭VII');
+  });
+
+  it('should return curated breakdown for Blackbird with chromatic counterpoint', () => {
+    const song = getWhySongWorks('blackbird');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('descending-bassline');
+    expect(song?.chords).toContain('C#dim');
+    expect(song?.coreSecret).toContain('10th Intervals');
+  });
+
+  it('should return curated breakdown for Purple Haze with Hendrix chord', () => {
+    const song = getWhySongWorks('purple-haze');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('blues-rock-hybrid');
+    expect(song?.chords).toContain('E7#9');
+  });
+
+  it('should provide complete coverage across all 108 catalog songs in the discovery hub', () => {
+    const all = getAllCuratedHarmonicBreakdowns();
+    expect(all.length).toBeGreaterThanOrEqual(107);
+    
+    // Ensure every single song has required fields populated
+    all.forEach(song => {
+      expect(song.slug).toBeDefined();
+      expect(song.songTitle).toBeDefined();
+      expect(song.artist).toBeDefined();
+      expect(song.category).toBeDefined();
+      expect(song.chords.length).toBeGreaterThan(0);
+      expect(song.coreSecret.length).toBeGreaterThan(5);
+      expect(song.emotionalHook.length).toBeGreaterThan(10);
+      expect(song.voiceLeadingInsights.length).toBeGreaterThan(0);
+    });
+  });
+
 });
 
 describe('Open Graph & SEO Metadata', () => {

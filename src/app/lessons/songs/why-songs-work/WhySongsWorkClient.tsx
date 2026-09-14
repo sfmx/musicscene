@@ -124,9 +124,16 @@ export default function WhySongsWorkClient() {
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800/40">
-                    {secret.categoryLabel}
-                  </span>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800/40">
+                      {secret.categoryLabel}
+                    </span>
+                    {secret.isCurated && (
+                      <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-amber-100/80 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-300/60 dark:border-amber-500/30">
+                        ⭐ Deep Dive
+                      </span>
+                    )}
+                  </div>
                   <span className="text-xs font-mono text-slate-400 dark:text-slate-500">
                     {secret.romanProgression}
                   </span>
