@@ -30,44 +30,53 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
 
   // 1. Handle tempo metadata header
   const hasTempo = trimmedTex.includes('\\tempo');
+  const defaultTempo = 80;
+  const effectiveTempo = tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300
+    ? Math.round(tempo)
+    : defaultTempo;
   let header = '';
-  if (!hasTempo && tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
-    header = `\\tempo ${Math.round(tempo)} . `;
+  if (!hasTempo) {
+    header = `\\tempo ${effectiveTempo} . `;
   }
 
   let body = trimmedTex;
-  // If there's already a metadata header dot separator, preserve it
+  // If there's already a metadata header dot separator, preserve it (or update tempo if provided)
   if (trimmedTex.includes('.')) {
     const metaMatch = trimmedTex.match(/^(\\tempo\s+\d+.*?)\s+\.\s+([\s\S]*)$/);
     if (metaMatch) {
-      header = `${metaMatch[1]} . `;
+      if (tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
+        header = `\\tempo ${Math.round(tempo)} . `;
+      } else {
+        header = `${metaMatch[1]} . `;
+      }
       body = metaMatch[2];
     }
   }
 
   // Auto-bar unbarred scale runs or single-note sequences
+  // Helper to split a long single-note sequence into balanced 4-note quarter bars (:4)
+  const chunkNotesIntoBars = (noteTokens: string[]): string[] => {
+    const bars: string[] = [];
+    for (let i = 0; i < noteTokens.length; i += 4) {
+      const chunk = noteTokens.slice(i, i + 4);
+      if (chunk.length === 4) {
+        bars.push(i === 0 ? `:4 ${chunk.join(' ')}` : chunk.join(' '));
+      } else if (chunk.length === 1) {
+        bars.push(`${chunk[0]}.1`);
+      } else if (chunk.length === 2) {
+        bars.push(`${chunk[0]} ${chunk[1]}.2`);
+      } else if (chunk.length === 3) {
+        bars.push(`${chunk[0]} ${chunk[1]} ${chunk[2]}.2`);
+      }
+    }
+    return bars;
+  };
+
+  // Auto-bar unbarred scale runs or single-note sequences into quarter-note bars (1 note = 1 beat/click)
   if (!body.includes('|')) {
     const tokens = body.trim().split(/\s+/).filter(Boolean);
     if (tokens.length > 4 && tokens.every((t) => /^\d{1,2}\.\d$/.test(t))) {
-      const bars: string[] = [];
-      for (let i = 0; i < tokens.length; i += 8) {
-        const chunk = tokens.slice(i, i + 8);
-        if (chunk.length === 8) {
-          bars.push(`:8 ${chunk.join(' ')}`);
-        } else if (chunk.length === 4) {
-          bars.push(`:4 ${chunk.join(' ')}`);
-        } else if (chunk.length === 2) {
-          bars.push(`:2 ${chunk.join(' ')}`);
-        } else if (chunk.length === 1) {
-          bars.push(`:4 ${chunk[0]}.1`);
-        } else if (chunk.length === 3) {
-          bars.push(`:4 ${chunk[0]} ${chunk[1]} ${chunk[2]}.2`);
-        } else {
-          const missing = 8 - chunk.length;
-          bars.push(`:8 ${chunk.join(' ')} r.${missing === 2 ? '4' : missing === 1 ? '8' : '2'}`);
-        }
-      }
-      body = bars.join(' | ') + ' |';
+      body = chunkNotesIntoBars(tokens).join(' | ') + ' |';
     }
   }
 
@@ -130,6 +139,12 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
         return ` :4 ${trimmed} `;
       }
       return rawBar;
+    }
+
+    // Case C2: Overflowing single-note runs (> 4 notes) without duration directive
+    if (tokens.length > 4 && !trimmed.includes('(') && !trimmed.includes(':') && tokens.every(t => /^\d{1,2}\.\d$/.test(t))) {
+      currentDuration = 4;
+      return ` ${chunkNotesIntoBars(tokens).join(' | ')} `;
     }
 
     // Case D: 6-note bars without explicit durations or parentheses

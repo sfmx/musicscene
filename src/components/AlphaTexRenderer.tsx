@@ -552,12 +552,35 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     }
   }, []);
 
+  const baseTempo = React.useMemo(() => {
+    if (tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
+      return Math.round(tempo);
+    }
+    const match = alphaTex.match(/\\tempo\s+(\d+)/);
+    if (match) {
+      const p = parseInt(match[1], 10);
+      if (p > 30 && p < 300) return p;
+    }
+    return 80;
+  }, [tempo, alphaTex]);
+
+  const currentBpm = Math.round(baseTempo * playbackSpeed);
+
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setPlaybackSpeed(newSpeed);
     if (apiRef.current) {
       apiRef.current.playbackSpeed = newSpeed;
     }
   }, []);
+
+  const handleBpmStep = useCallback((delta: number) => {
+    const nextBpm = Math.max(30, Math.min(260, Math.round(baseTempo * playbackSpeed) + delta));
+    const nextSpeed = Math.round((nextBpm / baseTempo) * 100) / 100;
+    setPlaybackSpeed(nextSpeed);
+    if (apiRef.current) {
+      apiRef.current.playbackSpeed = nextSpeed;
+    }
+  }, [baseTempo, playbackSpeed]);
 
   const handleInstrumentChange = useCallback((program: number) => {
     setSelectedInstrument(program);
@@ -934,9 +957,34 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </span>
           </div>
 
+          {/* Dynamic BPM Stepper */}
+          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900/90 px-2 sm:px-2.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+            <button
+              type="button"
+              onClick={() => handleBpmStep(-5)}
+              className="h-6 px-1.5 flex items-center justify-center rounded-md font-mono font-bold text-[11px] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              title="Slow down by 5 BPM"
+            >
+              -5
+            </button>
+            <div className="flex items-center gap-1 px-1 font-mono font-bold text-xs text-slate-900 dark:text-cyan-400 select-none min-w-[68px] justify-center">
+              <span>♩</span>
+              <span>{currentBpm}</span>
+              <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400">BPM</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => handleBpmStep(5)}
+              className="h-6 px-1.5 flex items-center justify-center rounded-md font-mono font-bold text-[11px] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              title="Speed up by 5 BPM"
+            >
+              +5
+            </button>
+          </div>
+
           {/* Speed Preset Controls */}
-          <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-900/90 px-2.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
-            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider hidden md:inline">Speed:</span>
+          <div className="flex items-center gap-1 sm:gap-1.5 bg-slate-100 dark:bg-slate-900/90 px-2 sm:px-2.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider hidden lg:inline">Speed:</span>
             {[0.5, 0.75, 1.0, 1.25].map((speed) => (
               <button
                 key={speed}
@@ -947,6 +995,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                     ? 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 shadow-xs'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800'
                 }`}
+                title={`Play at ${speed}x (${Math.round(baseTempo * speed)} BPM)`}
               >
                 {speed}x
               </button>

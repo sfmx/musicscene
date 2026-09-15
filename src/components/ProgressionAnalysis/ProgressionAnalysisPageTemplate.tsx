@@ -145,6 +145,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
                       {group.alphaTex && (
                         <div className="mb-3">
                           <AlphaTexRenderer alphaTex={group.alphaTex} title={group.alphaTexTitle} />
+                          <AlphaTexRenderer alphaTex={group.alphaTex} title={group.alphaTexTitle} tempo={85} />
                         </div>
                       )}
                       {group.practiceNotes && group.practiceNotes.length > 0 && (
@@ -252,7 +253,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{ex.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{ex.description}</p>
                     {ex.alphaTex && ex.alphaTex !== '\\notrack' && (
-                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} />
+                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} tempo={85} />
                     )}
                     {ex.practiceNotes && ex.practiceNotes.length > 0 && (
                       <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80">

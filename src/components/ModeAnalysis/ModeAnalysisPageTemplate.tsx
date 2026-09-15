@@ -132,7 +132,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                       <h4 className="font-bold text-slate-900 dark:text-white mb-2">{pattern.title}</h4>
                       <p className="text-xs text-slate-600 dark:text-slate-300 mb-3 leading-relaxed">{pattern.description}</p>
                       {pattern.alphaTex && pattern.alphaTex !== '\\notrack' && (
-                        <AlphaTexRenderer alphaTex={pattern.alphaTex} title={pattern.title} />
+                        <AlphaTexRenderer alphaTex={pattern.alphaTex} title={pattern.title} tempo={80} />
                       )}
                       {pattern.notes && pattern.notes.length > 0 && (
                         <div className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80">
@@ -239,7 +239,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{ex.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{ex.description}</p>
                     {ex.alphaTex && ex.alphaTex !== '\\notrack' && (
-                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} />
+                      <AlphaTexRenderer alphaTex={ex.alphaTex} title={ex.title} tempo={80} />
                     )}
                   </div>
                 ))}
@@ -290,7 +290,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">{kv.title}</h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{kv.description}</p>
                     {kv.alphaTex && kv.alphaTex !== '\\notrack' && (
-                      <AlphaTexRenderer alphaTex={kv.alphaTex} title={kv.title} />
+                      <AlphaTexRenderer alphaTex={kv.alphaTex} title={kv.title} tempo={80} />
                     )}
                     <p className="text-xs text-cyan-700 dark:text-cyan-300 font-mono mt-2">{kv.notesLabel}</p>
                   </div>

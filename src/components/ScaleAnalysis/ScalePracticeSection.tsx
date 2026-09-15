@@ -43,6 +43,19 @@ export default function ScalePracticeSection({ scaleData }: ScalePracticeSection
                 />
               </div>
             )}
+            {exercise.alphaTex && (() => {
+              const tempoMatch = exercise.tempo?.match(/\d+/);
+              const exerciseTempo = tempoMatch ? parseInt(tempoMatch[0], 10) : 80;
+              return (
+                <div className="mb-4">
+                  <AlphaTexRenderer
+                    alphaTex={exercise.alphaTex}
+                    title={exercise.name}
+                    tempo={exerciseTempo}
+                  />
+                </div>
+              );
+            })()}
 
             <div className="grid md:grid-cols-2 gap-4 text-xs">
               {/* Practice Details */}

@@ -37,6 +37,7 @@ export default function ScaleFretboardSection({ scaleData }: ScaleFretboardSecti
                 <AlphaTexRenderer
                   alphaTex={pattern.alphaTex}
                   title={`${pattern.position} Pattern`}
+                  tempo={80}
                 />
               </div>
             )}
