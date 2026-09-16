@@ -9,6 +9,7 @@ import {
   getPopularSongs,
   getIconicRiffSongs
 } from '@/lib/songData';
+import { getDifficultyBarColor } from '@/lib/utils';
 
 interface StatsCardProps {
   title: string;
@@ -119,12 +120,6 @@ export default function SongAnalyticsOverview() {
           <div className="space-y-3">
             {Object.entries(difficultyStats).map(([difficulty, count]) => {
               const percentage = Math.round((count / allSongs.length) * 100);
-              const colorMap = {
-                'Beginner': 'bg-green-500',
-                'Intermediate': 'bg-orange-500',
-                'Advanced': 'bg-red-500',
-                'Expert': 'bg-purple-500'
-              };
               
               return (
                 <div key={difficulty} className="flex items-center justify-between">
@@ -132,7 +127,7 @@ export default function SongAnalyticsOverview() {
                   <div className="flex items-center gap-2">
                     <div className="w-24 bg-slate-200 dark:bg-slate-800 rounded-full h-2">
                       <div 
-                        className={`h-2 rounded-full ${colorMap[difficulty as keyof typeof colorMap] || 'bg-slate-400'}`}
+                        className={`h-2 rounded-full ${getDifficultyBarColor(difficulty)}`}
                         style={{ width: `${percentage}%` }}
                       ></div>
                     </div>

@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { getAllSongs, SongListItem } from '@/lib/songData';
+import { getDifficultyColor } from '@/lib/utils';
 
 const CURATED_SECRETS_SLUGS = new Set([
   'hotel-california',
@@ -240,14 +241,6 @@ export default function HomeSongExplorer() {
             {displayedSongs.map((song: SongListItem) => {
               const hasCuratedSecret = CURATED_SECRETS_SLUGS.has(song.slug);
               
-              // Difficulty color
-              const diffBadge =
-                song.difficulty === 'Beginner'
-                  ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
-                  : song.difficulty === 'Advanced'
-                  ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/30'
-                  : 'bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/30';
-
               return (
                 <div
                   key={song.slug}
@@ -259,7 +252,7 @@ export default function HomeSongExplorer() {
                       <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate max-w-[160px]">
                         {song.genre}
                       </span>
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${diffBadge}`}>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
                         {song.difficulty}
                       </span>
                     </div>

@@ -32,19 +32,14 @@
 
 **Goal:** Reduce codebase noise, fix type safety, remove dead code.
 
-- [ ] Delete 9 empty stub components
-- [ ] Delete all `page_new.tsx`, `page-original-backup.tsx`, and `.json.backup` files
-- [ ] Delete `next.config.js` (keep `.ts`), delete `next.config.ignore-errors.ts`
 - [x] Delete 9 empty stub components and unreferenced visualizers (completed)
 - [x] Delete all `page_new.tsx`, `page-original-backup.tsx`, and `.json.backup` files (verified 0 remaining)
 - [x] Delete `next.config.js` (keep `.ts`), delete `next.config.ignore-errors.ts` (verified 0 remaining)
 - [ ] Delete 3 ad-hoc test scripts from root
 - [x] Remove `vexflow`/`vextab` from `package.json` and `layout.tsx` global includes (completed)
-- [ ] Extract `getDifficultyColor()` and `removeConsecutiveDuplicates()` into `src/lib/utils.ts`
+- [x] Extract `getDifficultyColor()` and `removeConsecutiveDuplicates()` into `src/lib/utils.ts` (completed)
 - [ ] Move hardcoded metadata from `songData.ts` into each song's JSON `metadata` field
 - [ ] Fix `as unknown as SongData` casts by aligning JSON schema with TypeScript interfaces
-- [ ] Remove unused `ChordProgressionVisualization.tsx` and `MusicalAnalysisSection.tsx`
-- [ ] Standardize AlphaTab components: keep `AlphaTexRenderer` (full), remove/redirect stubs
 - [x] Remove unused `ChordProgressionVisualization.tsx` and `MusicalAnalysisSection.tsx` (completed)
 - [x] Standardize AlphaTab components: keep `AlphaTexRenderer` (full), remove/redirect stubs (completed)
 - [ ] Pick one test framework (Jest or Vitest, not both)

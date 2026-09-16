@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getPracticeIndexData, PracticeIndexData } from '@/lib/practiceData';
+import { getDifficultyColor } from '@/lib/utils';
 
 interface Props {
   category: string;
@@ -153,12 +154,7 @@ export default function PracticeIndexPageTemplate({ category }: Props) {
                     {(item.difficulty || item.duration) && (
                       <div className="flex justify-center gap-2 mb-3">
                         {item.difficulty && (
-                          <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${
-                            item.difficulty === 'Beginner' ? 'bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30' :
-                            item.difficulty === 'Intermediate' ? 'bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-500/30' :
-                            item.difficulty === 'Advanced' ? 'bg-rose-100 dark:bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30' :
-                            'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700'
-                          }`}>
+                          <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold border ${getDifficultyColor(item.difficulty)}`}>
                             {item.difficulty}
                           </span>
                         )}

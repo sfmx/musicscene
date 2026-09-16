@@ -46,18 +46,18 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Removed obsolete `"vextab-backup/**"` path excludes from `tsconfig.json`.
     - Verified `layout.tsx` has 0 legacy VexTab scripts or stylesheets.
     - Updated developer guidelines (`CLAUDE.md`) to establish AlphaTab as universal notation standard.
-- [ ] **P1: Eliminate Dead Stubs & Deprecated Visualizations**
-  - **Target:** Remove obsolete components such as `ChordProgressionVisualization.tsx` (superseded by `ImprovedChordProgressionVisualization.tsx`) and any leftover `.backup` files.
 - [x] **P1: Eliminate Dead Stubs & Deprecated Visualizations**
   - **Status:** Completed.
     - Purged 12 unreferenced legacy prototypes and visualization stubs from `src/components/`: `AlphaTabCDN.tsx`, `AlphaTabScale.tsx`, `AlphaTabTest.tsx`, `MinimalAlphaTab.tsx`, `SimpleAlphaTabScale.tsx`, `ChordVisualizer.tsx`, `FretboardHighlight.tsx`, `FretboardVisualizer.tsx`, `ModernTabVisualizer.tsx`, `MusicNotationVisualizer.tsx`, `SimpleScaleFretboardDiagram.tsx`, and `TabAndNoteVisualizer.tsx`.
     - Streamlined `AlphaTexDemo.tsx` to showcase standard `AlphaTexRenderer`.
     - Removed root scratch files (`vscode-save-test.txt`, `lint_output.txt`).
     - Verified obsolete components (`ChordProgressionVisualization.tsx`, `MusicalAnalysisSection.tsx`, `.backup` files) are completely removed.
-- [ ] **P1: Deduplicate Shared Utility Functions**
-  - **Target:**
-    - Consolidate `getDifficultyColor()` (currently duplicated across 6 component files) into [`src/lib/utils.ts`](file:///c:/Source/musicscene/src/lib/utils.ts).
-    - Centralize `removeConsecutiveDuplicates()` into [`src/lib/utils.ts`](file:///c:/Source/musicscene/src/lib/utils.ts).
+- [x] **P1: Deduplicate Shared Utility Functions**
+  - **Status:** Completed.
+    - Created centralized [`src/lib/utils.ts`](file:///c:/Source/musicscene/src/lib/utils.ts) exporting `getDifficultyColor()`, `getDifficultyBarColor()`, `removeConsecutiveDuplicates()`, and `cn()`.
+    - Re-exported utilities from [`src/utils/theme.ts`](file:///c:/Source/musicscene/src/utils/theme.ts) to guarantee 100% backward compatibility.
+    - Replaced hardcoded difficulty badge dictionaries and inline ternary ladders across `SongLessonDetailPageTemplate.tsx`, `SongLessonIndexPageTemplate.tsx`, `PracticeIndexPageTemplate.tsx`, `HomeSongExplorer.tsx`, and `SongAnalyticsOverview.tsx`.
+    - Added automated Vitest suite in [`src/lib/__tests__/utils.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/utils.test.ts) covering all helper functions.
 - [ ] **P2: Eliminate Unsafe TypeScript Casts**
   - **Target:** Replace `as unknown as SongData` casts across song loading routes by aligning the JSON schema with strict TypeScript interfaces.
 

@@ -6,12 +6,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getSongLessonIndexData, SongLessonIndexData } from '@/lib/songLessonData';
-
-const difficultyColors: Record<string, string> = {
-  'Beginner': 'bg-green-100 text-green-800',
-  'Intermediate': 'bg-yellow-100 text-yellow-800',
-  'Advanced': 'bg-red-100 text-red-800',
-};
+import { getDifficultyColor } from '@/lib/utils';
 
 interface Props {
   category: string;
@@ -121,7 +116,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                 {(topic.difficulty || topic.theory || topic.focus || topic.context) && (
                   <div className="flex items-center justify-between text-sm">
                     {topic.difficulty && (
-                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${difficultyColors[topic.difficulty] || 'bg-gray-100 text-gray-800'}`}>
+                      <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${getDifficultyColor(topic.difficulty)}`}>
                         {topic.difficulty}
                       </span>
                     )}

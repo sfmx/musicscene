@@ -10,12 +10,7 @@ import AdSlot from '@/components/Revenue/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
-
-const difficultyColors: Record<string, string> = {
-  'Beginner': 'bg-green-100 text-green-800',
-  'Intermediate': 'bg-yellow-100 text-yellow-800',
-  'Advanced': 'bg-red-100 text-red-800',
-};
+import { getDifficultyColor } from '@/lib/utils';
 
 function CardComponent({ card }: { card: ContentCard }) {
   return (
@@ -31,7 +26,7 @@ function CardComponent({ card }: { card: ContentCard }) {
           {card.title}
         </h3>
         {card.badge && (
-          <span className={`px-2 py-1 text-xs font-medium rounded-full ${card.badge.color || difficultyColors[card.badge.text] || 'bg-gray-100 text-gray-800'}`}>
+          <span className={`px-2.5 py-1 text-xs font-semibold rounded-full border ${card.badge.color || getDifficultyColor(card.badge.text)}`}>
             {card.badge.text}
           </span>
         )}
