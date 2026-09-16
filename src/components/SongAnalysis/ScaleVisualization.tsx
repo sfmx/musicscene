@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { playGuitarNote } from "@/lib/guitarAudio";
 
 interface ScaleVisualizationProps {
   scales: Array<{
@@ -17,6 +18,16 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 }) => {
   const [selectedScale, setSelectedScale] = useState(0);
   const [numFrets, setNumFrets] = useState(12);
+  const [activeNoteKey, setActiveNoteKey] = useState<string | null>(null);
+
+  const handleNoteClick = (strIdx: number, fretNum: number) => {
+    playGuitarNote(strIdx, fretNum, { volume: 0.45, duration: 2.0 });
+    const key = `${strIdx}-${fretNum}`;
+    setActiveNoteKey(key);
+    setTimeout(() => {
+      setActiveNoteKey((curr) => (curr === key ? null : curr));
+    }, 350);
+  };
 
   // Note mapping for chromatic scale
   const chromaticNotes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
@@ -319,8 +330,21 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                               {/* Note dot */}
                               {isInScale && (
                                 <div
-                                  className="group/note relative w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer"
-                                  title={`${noteAtFret}${isRoot ? ' (Root)' : ''}`}
+                                  role="button"
+                                  tabIndex={0}
+                                  onClick={() => handleNoteClick(stringIndex, fret)}
+                                  onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                      e.preventDefault();
+                                      handleNoteClick(stringIndex, fret);
+                                    }
+                                  }}
+                                  className={`group/note relative w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer select-none active:scale-125 ${
+                                    activeNoteKey === `${stringIndex}-${fret}`
+                                      ? 'scale-125 ring-4 ring-amber-400 z-30 animate-pulse'
+                                      : 'hover:scale-115 hover:shadow-lg'
+                                  }`}
+                                  title={`Click to play ${noteAtFret}${isRoot ? ' (Root)' : ''} — String ${6 - stringIndex}, Fret ${fret}`}
                                   style={
                                     isRoot
                                       ? {
@@ -341,6 +365,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                                   {/* Tooltip - positioned above, only appears when hovering the note circle */}
                                   <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover/note:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-30 shadow-lg">
                                     {noteAtFret} {isRoot ? '(Root)' : ''}
+                                    {noteAtFret} {isRoot ? '(Root)' : ''} • Click to play
                                   </div>
                                 </div>
                               )}
@@ -457,6 +482,9 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
           <span className="font-medium text-slate-700 dark:text-slate-300">Scale Notes</span>
         </div>
         <span className="text-slate-400 dark:text-slate-500 text-[11px]">• Hover over notes for details</span>
+        <span className="text-cyan-600 dark:text-cyan-400 font-medium text-[11px] flex items-center gap-1">
+          <span>🎵</span> Click any note to hear pitch
+        </span>
       </div>
     </div>
   );

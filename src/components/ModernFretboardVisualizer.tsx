@@ -1,4 +1,7 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { playGuitarNote } from '@/lib/guitarAudio';
 
 type ScaleNote = {
   string: number; // 1 = high E, 6 = low E
@@ -35,6 +38,17 @@ export default function ModernFretboardVisualizer({
   frets = 12,
   showNoteNames = true,
 }: Props) {
+  const [activeNoteKey, setActiveNoteKey] = useState<string | null>(null);
+
+  const handleNoteClick = (strNum: number, fretNum: number) => {
+    playGuitarNote(6 - strNum, fretNum, { volume: 0.45, duration: 2.0 });
+    const key = `${strNum}-${fretNum}`;
+    setActiveNoteKey(key);
+    setTimeout(() => {
+      setActiveNoteKey((curr) => (curr === key ? null : curr));
+    }, 350);
+  };
+
   // Build a lookup for notes: string -> fret -> note
   const noteMap = new Map<string, ScaleNote>();
   notes.forEach(n => noteMap.set(`${n.string}-${n.fret}`, n));
@@ -153,17 +167,39 @@ export default function ModernFretboardVisualizer({
             note.color ||
             (note.note ? noteColorMap.get(note.note) : "#ffd700") ||
             "#ffd700";
+          const isActive = activeNoteKey === `${string}-${fIdx}`;
           return (
-            <g key={`${string}-${fIdx}`}>
+            <g
+              key={`${string}-${fIdx}`}
+              role="button"
+              tabIndex={0}
+              onClick={() => handleNoteClick(string, fIdx)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleNoteClick(string, fIdx);
+                }
+              }}
+              style={{ cursor: 'pointer', outline: 'none' }}
+              className="group/fretnote"
+            >
+              <title>{`Click to hear ${note.note || ''} (String ${string}, Fret ${fIdx})`}</title>
               <circle
                 cx={leftPad + fIdx * fretGap}
                 cy={topPad + sIdx * stringGap}
-                r={note.root ? 22 : 18}
+                r={isActive ? (note.root ? 26 : 22) : (note.root ? 22 : 18)}
                 fill={color}
-                stroke={note.root ? "#fff" : "#222"}
-                strokeWidth={note.root ? 4 : 2}
+                stroke={isActive ? '#f59e0b' : note.root ? '#fff' : '#222'}
+                strokeWidth={isActive ? 5 : note.root ? 4 : 2}
                 opacity={0.95}
-                style={{ filter: note.root ? "drop-shadow(0 0 6px #fff)" : undefined }}
+                style={{
+                  filter: isActive
+                    ? 'drop-shadow(0 0 10px #f59e0b)'
+                    : note.root
+                    ? 'drop-shadow(0 0 6px #fff)'
+                    : undefined,
+                  transition: 'r 0.15s ease, stroke-width 0.15s ease'
+                }}
               />
               <text
                 x={leftPad + fIdx * fretGap}
@@ -172,7 +208,7 @@ export default function ModernFretboardVisualizer({
                 fill="#222"
                 textAnchor="middle"
                 fontWeight="bold"
-                style={{ textShadow: "0 1px 2px #fff" }}
+                style={{ textShadow: "0 1px 2px #fff", pointerEvents: "none" }}
               >
                 {showNoteNames && note.note
                   ? note.note

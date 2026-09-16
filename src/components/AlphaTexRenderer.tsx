@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { AlphaTexValidator } from '@/lib/alphaTexValidator';
 import { normalizeAlphaTex } from '@/lib/alphaTexNormalizer';
+import { RhythmPreset, RHYTHM_PRESETS, executeCountIn, RhythmTrackScheduler } from '@/lib/rhythmAudio';
 
 /**
  * Modern Interactive AlphaTex Music Notation & Audio Player
@@ -174,8 +175,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [currentTime, setCurrentTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
-  const [metronomeOn, setMetronomeOn] = useState(false);
   const [countInOn, setCountInOn] = useState(false);
+  const [isCountingIn, setIsCountingIn] = useState(false);
+  const [countInRemaining, setCountInRemaining] = useState<number | null>(null);
+  const [rhythmPreset, setRhythmPreset] = useState<RhythmPreset>('none');
   const [isLooping, setIsLooping] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
 
@@ -183,6 +186,53 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const isDraggingScrubberRef = useRef(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const instanceIdRef = useRef(Math.random().toString(36).slice(2));
+  const cancelCountInRef = useRef<(() => void) | null>(null);
+  const rhythmSchedulerRef = useRef<RhythmTrackScheduler | null>(null);
+  const rhythmPresetRef = useRef<RhythmPreset>('none');
+  const countInOnRef = useRef<boolean>(false);
+  const currentBpmRef = useRef<number>(80);
+  const isMutedRef = useRef<boolean>(false);
+
+  const baseTempo = React.useMemo(() => {
+    if (tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
+      return Math.round(tempo);
+    }
+    const match = alphaTex.match(/\\tempo\s+(\d+)/);
+    if (match) {
+      const p = parseInt(match[1], 10);
+      if (p > 30 && p < 300) return p;
+    }
+    return 80;
+  }, [tempo, alphaTex]);
+
+  const currentBpm = Math.round(baseTempo * playbackSpeed);
+
+  useEffect(() => {
+    countInOnRef.current = countInOn;
+  }, [countInOn]);
+
+  useEffect(() => {
+    rhythmPresetRef.current = rhythmPreset;
+  }, [rhythmPreset]);
+
+  useEffect(() => {
+    currentBpmRef.current = currentBpm;
+    rhythmSchedulerRef.current?.setBpm(currentBpm);
+  }, [currentBpm]);
+
+  useEffect(() => {
+    isMutedRef.current = isMuted;
+    rhythmSchedulerRef.current?.setMuted(isMuted);
+  }, [isMuted]);
+
+  useEffect(() => {
+    const scheduler = new RhythmTrackScheduler(currentBpm, rhythmPreset);
+    rhythmSchedulerRef.current = scheduler;
+    return () => {
+      scheduler.stop();
+      rhythmSchedulerRef.current = null;
+    };
+  }, []);
 
   // Score View Mode: 'dark' (Dark Stage) vs 'light' (Studio Paper)
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
@@ -318,11 +368,20 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     // Pause this instance when any other player on the page starts playing
     const handleOtherPlaybackStart = (e: Event) => {
       const customEvent = e as CustomEvent<{ id: string }>;
-      if (customEvent.detail?.id !== instanceIdRef.current && apiRef.current) {
-        try {
-          apiRef.current.pause();
-        } catch {
-          // ignore
+      if (customEvent.detail?.id !== instanceIdRef.current) {
+        if (cancelCountInRef.current) {
+          cancelCountInRef.current();
+          cancelCountInRef.current = null;
+        }
+        setIsCountingIn(false);
+        setCountInRemaining(null);
+        rhythmSchedulerRef.current?.stop();
+        if (apiRef.current) {
+          try {
+            apiRef.current.pause();
+          } catch {
+            // ignore
+          }
         }
       }
     };
@@ -449,10 +508,38 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
             if (pendingPlayRef.current) {
               pendingPlayRef.current = false;
-              try {
-                api.play();
-              } catch (e) {
-                console.warn('Auto-play after soundfont load failed:', e);
+              if (countInOnRef.current) {
+                setIsCountingIn(true);
+                setCountInRemaining(4);
+                if (cancelCountInRef.current) {
+                  cancelCountInRef.current();
+                }
+                cancelCountInRef.current = executeCountIn({
+                  bpm: currentBpmRef.current,
+                  beats: 4,
+                  onTick: (rem) => {
+                    setIsCountingIn(true);
+                    setCountInRemaining(rem);
+                  },
+                  onComplete: () => {
+                    setIsCountingIn(false);
+                    setCountInRemaining(null);
+                    cancelCountInRef.current = null;
+                    if (apiRef.current) {
+                      try {
+                        apiRef.current.play();
+                      } catch (e) {
+                        console.warn('Auto-play after count-in failed:', e);
+                      }
+                    }
+                  }
+                });
+              } else {
+                try {
+                  api.play();
+                } catch (e) {
+                  console.warn('Auto-play after soundfont load failed:', e);
+                }
               }
             }
           }
@@ -463,6 +550,14 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             setPlayerState(e.state);
             if (e.state === 1) {
               window.dispatchEvent(new CustomEvent(PLAYBACK_START_EVENT, { detail: { id: instanceIdRef.current } }));
+              if (rhythmPresetRef.current !== 'none' && !isMutedRef.current) {
+                rhythmSchedulerRef.current?.setBpm(currentBpmRef.current);
+                rhythmSchedulerRef.current?.setPreset(rhythmPresetRef.current);
+                rhythmSchedulerRef.current?.setMuted(isMutedRef.current);
+                rhythmSchedulerRef.current?.startAtPosition((apiRef.current?.timePosition || 0) / 1000);
+              }
+            } else {
+              rhythmSchedulerRef.current?.stop();
             }
           }
         });
@@ -481,6 +576,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             try {
               apiRef.current.timePosition = 0;
               apiRef.current.play();
+              if (rhythmPresetRef.current !== 'none' && !isMutedRef.current) {
+                rhythmSchedulerRef.current?.startAtPosition(0);
+              }
             } catch (e) {
               console.warn('Continuous loop restart notice:', e);
             }
@@ -504,6 +602,11 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
     return () => {
       isMounted = false;
+      if (cancelCountInRef.current) {
+        cancelCountInRef.current();
+        cancelCountInRef.current = null;
+      }
+      rhythmSchedulerRef.current?.stop();
       window.removeEventListener('error', suppressAlphaTabError);
       window.removeEventListener(PLAYBACK_START_EVENT, handleOtherPlaybackStart);
       if (apiRef.current) {
@@ -517,14 +620,71 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handlePlayPause = useCallback(async () => {
     if (!apiRef.current) return;
 
-    window.dispatchEvent(new CustomEvent(PLAYBACK_START_EVENT, { detail: { id: instanceIdRef.current } }));
+    // If currently in count-in, cancel it immediately
+    if (isCountingIn) {
+      if (cancelCountInRef.current) {
+        cancelCountInRef.current();
+        cancelCountInRef.current = null;
+      }
+      setIsCountingIn(false);
+      setCountInRemaining(null);
+      return;
+    }
 
-    if (isSoundFontLoadedRef.current) {
+    // If currently playing, pause immediately
+    if (playerState === 1) {
       try {
-        apiRef.current.playPause();
+        apiRef.current.pause();
       } catch (e) {
         console.warn('AlphaTab playPause notice:', e);
       }
+      rhythmSchedulerRef.current?.stop();
+      return;
+    }
+
+    // Starting playback: pause other players
+    window.dispatchEvent(new CustomEvent(PLAYBACK_START_EVENT, { detail: { id: instanceIdRef.current } }));
+
+    const startPlaybackOrCountIn = () => {
+      if (!apiRef.current) return;
+
+      if (countInOn) {
+        setIsCountingIn(true);
+        setCountInRemaining(4);
+        if (cancelCountInRef.current) {
+          cancelCountInRef.current();
+        }
+        cancelCountInRef.current = executeCountIn({
+          bpm: currentBpm,
+          beats: 4,
+          onTick: (rem) => {
+            setIsCountingIn(true);
+            setCountInRemaining(rem);
+          },
+          onComplete: () => {
+            setIsCountingIn(false);
+            setCountInRemaining(null);
+            cancelCountInRef.current = null;
+            if (apiRef.current) {
+              try {
+                apiRef.current.play();
+              } catch (e) {
+                console.warn('AlphaTab play after count-in notice:', e);
+              }
+            }
+          }
+        });
+      } else {
+        try {
+          apiRef.current.play();
+        } catch (e) {
+          console.warn('AlphaTab play notice:', e);
+        }
+      }
+    };
+
+    if (isSoundFontLoadedRef.current) {
+      startPlaybackOrCountIn();
       return;
     }
 
@@ -541,9 +701,16 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       setAudioLoading(false);
       pendingPlayRef.current = false;
     }
-  }, []);
+  }, [isCountingIn, playerState, countInOn, currentBpm]);
 
   const handleStop = useCallback(() => {
+    if (cancelCountInRef.current) {
+      cancelCountInRef.current();
+      cancelCountInRef.current = null;
+    }
+    setIsCountingIn(false);
+    setCountInRemaining(null);
+    rhythmSchedulerRef.current?.stop();
     if (!apiRef.current) return;
     try {
       apiRef.current.stop();
@@ -552,31 +719,22 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     }
   }, []);
 
-  const baseTempo = React.useMemo(() => {
-    if (tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
-      return Math.round(tempo);
-    }
-    const match = alphaTex.match(/\\tempo\s+(\d+)/);
-    if (match) {
-      const p = parseInt(match[1], 10);
-      if (p > 30 && p < 300) return p;
-    }
-    return 80;
-  }, [tempo, alphaTex]);
-
-  const currentBpm = Math.round(baseTempo * playbackSpeed);
-
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setPlaybackSpeed(newSpeed);
+    const nextBpm = Math.round(baseTempo * newSpeed);
+    currentBpmRef.current = nextBpm;
+    rhythmSchedulerRef.current?.setBpm(nextBpm);
     if (apiRef.current) {
       apiRef.current.playbackSpeed = newSpeed;
     }
-  }, []);
+  }, [baseTempo]);
 
   const handleBpmStep = useCallback((delta: number) => {
     const nextBpm = Math.max(30, Math.min(260, Math.round(baseTempo * playbackSpeed) + delta));
     const nextSpeed = Math.round((nextBpm / baseTempo) * 100) / 100;
     setPlaybackSpeed(nextSpeed);
+    currentBpmRef.current = nextBpm;
+    rhythmSchedulerRef.current?.setBpm(nextBpm);
     if (apiRef.current) {
       apiRef.current.playbackSpeed = nextSpeed;
     }
@@ -610,18 +768,31 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handleCountInToggle = useCallback(() => {
     const next = !countInOn;
     setCountInOn(next);
-    if (apiRef.current) {
-      apiRef.current.countInVolume = next ? 1 : 0;
+    countInOnRef.current = next;
+    if (!next && isCountingIn) {
+      if (cancelCountInRef.current) {
+        cancelCountInRef.current();
+        cancelCountInRef.current = null;
+      }
+      setIsCountingIn(false);
+      setCountInRemaining(null);
     }
-  }, [countInOn]);
+  }, [countInOn, isCountingIn]);
 
-  const handleMetronomeToggle = useCallback(() => {
-    const next = !metronomeOn;
-    setMetronomeOn(next);
-    if (apiRef.current) {
-      apiRef.current.metronomeVolume = next ? 1 : 0;
+  const handleRhythmPresetChange = useCallback((preset: RhythmPreset) => {
+    setRhythmPreset(preset);
+    rhythmPresetRef.current = preset;
+    if (rhythmSchedulerRef.current) {
+      rhythmSchedulerRef.current.setPreset(preset);
+      if (playerState === 1 && !isMuted) {
+        if (preset === 'none') {
+          rhythmSchedulerRef.current.stop();
+        } else {
+          rhythmSchedulerRef.current.startAtPosition((apiRef.current?.timePosition || 0) / 1000);
+        }
+      }
     }
-  }, [metronomeOn]);
+  }, [playerState, isMuted]);
 
   const handleLoopToggle = useCallback(() => {
     const next = !isLooping;
@@ -639,6 +810,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const handleMuteToggle = useCallback(() => {
     const next = !isMuted;
     setIsMuted(next);
+    isMutedRef.current = next;
+    rhythmSchedulerRef.current?.setMuted(next);
     if (apiRef.current) {
       try {
         apiRef.current.masterVolume = next ? 0 : 1;
@@ -662,10 +835,13 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
     setCurrentTime(targetMs);
     try {
       apiRef.current.timePosition = targetMs;
+      if (playerState === 1 && rhythmPresetRef.current !== 'none' && !isMutedRef.current) {
+        rhythmSchedulerRef.current?.startAtPosition(targetMs / 1000);
+      }
     } catch (e) {
       console.warn('Audio playhead seek notice:', e);
     }
-  }, [endTime]);
+  }, [endTime, playerState]);
 
   const handleScrubMove = useCallback((clientX: number) => {
     if (!progressBarRef.current) return;
@@ -842,16 +1018,24 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         </div>
       )}
 
-      {/* Render Container */}
-      <div
-        ref={containerRef}
-        className={`alphatab-container w-full max-w-full min-w-0 min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
-          scoreTheme === 'light'
-            ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
-            : 'bg-slate-950/95 border border-slate-800 text-slate-100'
-        }`}
-        style={{ minHeight: '140px', width: '100%', maxWidth: '100%' }}
-      />
+      {/* Render Container with Animated Count-In Overlay */}
+      <div className="relative w-full max-w-full min-w-0">
+        {isCountingIn && countInRemaining !== null && (
+          <div className="absolute top-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 text-slate-950 font-black text-base sm:text-lg shadow-2xl animate-pulse border-2 border-white dark:border-slate-900 select-none">
+            <span className="text-xl">⏱️</span>
+            <span className="tracking-wide">COUNT-IN: {countInRemaining}</span>
+          </div>
+        )}
+        <div
+          ref={containerRef}
+          className={`alphatab-container w-full max-w-full min-w-0 min-h-[140px] rounded-xl p-3 sm:p-4 transition-all duration-200 overflow-x-auto shadow-inner ${
+            scoreTheme === 'light'
+              ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
+              : 'bg-slate-950/95 border border-slate-800 text-slate-100'
+          }`}
+          style={{ minHeight: '140px', width: '100%', maxWidth: '100%' }}
+        />
+      </div>
 
       {/* Playback Controls Console */}
       {renderComplete && (
@@ -890,37 +1074,44 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
                 onClick={handlePlayPause}
                 disabled={audioLoading}
                 className={`h-9 sm:h-10 px-3 sm:px-4 flex items-center justify-center gap-1.5 rounded-xl font-bold transition-all shadow-md ${
-                  audioLoading
+                  isCountingIn
+                    ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-amber-500/30 animate-pulse cursor-pointer'
+                    : audioLoading
                     ? 'bg-cyan-500/50 text-slate-950 cursor-wait animate-pulse'
                     : 'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-cyan-500/25 hover:scale-105 active:scale-95 cursor-pointer'
                 }`}
-                title={audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
+                title={isCountingIn ? 'Cancel count-in' : audioLoading ? 'Loading audio...' : playerState === 1 ? 'Pause' : 'Play'}
               >
-                {audioLoading ? (
+                {isCountingIn ? (
+                  <>
+                    <span className="text-sm font-black">⏱️ {countInRemaining ?? 4}</span>
+                    <span className="text-xs font-bold hidden sm:inline">Cancel</span>
+                  </>
+                ) : audioLoading ? (
                   <>
                     <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                  </svg>
-                  <span className="text-xs hidden sm:inline">Loading...</span>
-                </>
-              ) : playerState === 1 ? (
-                <>
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                    <rect x="5" y="4" width="3" height="12" rx="1" />
-                    <rect x="12" y="4" width="3" height="12" rx="1" />
-                  </svg>
-                  <span className="text-xs">Pause</span>
-                </>
-              ) : (
-                <>
-                  <svg className="w-4 h-4 fill-current ml-0.5" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
-                  <span className="text-xs">Play</span>
-                </>
-              )}
-            </button>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                    </svg>
+                    <span className="text-xs hidden sm:inline">Loading...</span>
+                  </>
+                ) : playerState === 1 ? (
+                  <>
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                      <rect x="5" y="4" width="3" height="12" rx="1" />
+                      <rect x="12" y="4" width="3" height="12" rx="1" />
+                    </svg>
+                    <span className="text-xs">Pause</span>
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-4 h-4 fill-current ml-0.5" viewBox="0 0 20 20">
+                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                    </svg>
+                    <span className="text-xs">Play</span>
+                  </>
+                )}
+              </button>
 
             <button
               onClick={handleStop}
@@ -1027,7 +1218,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </div>
           </div>
 
-          {/* Practice Tools: Continuous Loop, Count-in & Metronome */}
+          {/* Practice Tools: Continuous Loop & Count-in */}
           <div className="flex items-center gap-1.5">
             <button
               type="button"
@@ -1043,29 +1234,44 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               <span className="hidden sm:inline">Loop</span>
             </button>
             <button
+              type="button"
               onClick={handleCountInToggle}
-              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
-                countInOn
+              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1.5 ${
+                isCountingIn
+                  ? 'bg-amber-500 text-slate-950 border-amber-400 font-bold shadow-md animate-pulse'
+                  : countInOn
                   ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs'
                   : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
               }`}
-              title="Count-in before playback"
+              title="1-measure audible count-in (4, 3, 2, 1) before playback starts"
             >
               <span>⏱️</span>
-              <span className="hidden sm:inline">Count-in</span>
+              <span className="hidden sm:inline">{isCountingIn ? `Count: ${countInRemaining}` : 'Count-in'}</span>
             </button>
-            <button
-              onClick={handleMetronomeToggle}
-              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
-                metronomeOn
-                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs'
-                  : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
-              }`}
-              title="Toggle metronome click"
-            >
-              <span>🔔</span>
-              <span className="hidden sm:inline">Metronome</span>
-            </button>
+          </div>
+
+          {/* Rhythm Backing Presets Group (Off, Click/Metronome, Rock, Shuffle) */}
+          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900/90 p-0.5 sm:p-1 rounded-xl border border-slate-200 dark:border-slate-800" role="group" aria-label="Rhythm backing preset">
+            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider px-1.5 hidden 2xl:inline">Rhythm:</span>
+            {RHYTHM_PRESETS.map((preset) => {
+              const isActive = rhythmPreset === preset.id;
+              return (
+                <button
+                  key={preset.id}
+                  type="button"
+                  onClick={() => handleRhythmPresetChange(preset.id)}
+                  className={`text-xs px-2 sm:px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 font-medium cursor-pointer ${
+                    isActive
+                      ? 'bg-blue-600/20 dark:bg-cyan-500/20 text-blue-700 dark:text-cyan-300 border border-blue-500/30 dark:border-cyan-500/40 shadow-xs font-bold'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800/60'
+                  }`}
+                  title={preset.description}
+                >
+                  <span>{preset.icon}</span>
+                  <span className="hidden sm:inline">{preset.label}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
