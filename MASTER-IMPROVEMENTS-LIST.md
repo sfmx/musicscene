@@ -39,12 +39,13 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 
 ## 2. Codebase Consolidation & Technical Debt
 
-- [ ] **P1: Completely Purge Legacy VexFlow / VexTab**
-  - **Issue:** AlphaTab is now the universal notation standard across MusicScene. Legacy VexTab components and packages add unnecessary bundle bloat.
-  - **Target:**
-    - Delete [`src/components/VexTab.tsx`](file:///c:/Source/musicscene/src/components/VexTab.tsx) and [`src/components/ExerciseRenderer.vextab.tsx`](file:///c:/Source/musicscene/src/components/ExerciseRenderer.vextab.tsx).
-    - Remove `vexflow` and `vextab` from [`package.json`](file:///c:/Source/musicscene/package.json).
-    - Remove any lingering `<script>` tags or stylesheets referencing VexTab in `layout.tsx`.
+- [x] **P1: Completely Purge Legacy VexFlow / VexTab**
+  - **Status:** Completed.
+    - Purged legacy VexTab ghost files (`ExerciseRenderer.vextab.tsx`) and unreferenced legacy score wrappers (`src/components/MusicScore.tsx`).
+    - Verified `vexflow` and `vextab` packages are absent from `package.json`.
+    - Removed obsolete `"vextab-backup/**"` path excludes from `tsconfig.json`.
+    - Verified `layout.tsx` has 0 legacy VexTab scripts or stylesheets.
+    - Updated developer guidelines (`CLAUDE.md`) to establish AlphaTab as universal notation standard.
 - [ ] **P1: Eliminate Dead Stubs & Deprecated Visualizations**
   - **Target:** Remove obsolete components such as `ChordProgressionVisualization.tsx` (superseded by `ImprovedChordProgressionVisualization.tsx`) and any leftover `.backup` files.
 - [ ] **P1: Deduplicate Shared Utility Functions**

@@ -36,7 +36,7 @@
 - [ ] Delete all `page_new.tsx`, `page-original-backup.tsx`, and `.json.backup` files
 - [ ] Delete `next.config.js` (keep `.ts`), delete `next.config.ignore-errors.ts`
 - [ ] Delete 3 ad-hoc test scripts from root
-- [ ] Remove `vexflow`/`vextab` from `package.json` and `layout.tsx` global includes
+- [x] Remove `vexflow`/`vextab` from `package.json` and `layout.tsx` global includes (completed)
 - [ ] Extract `getDifficultyColor()` and `removeConsecutiveDuplicates()` into `src/lib/utils.ts`
 - [ ] Move hardcoded metadata from `songData.ts` into each song's JSON `metadata` field
 - [ ] Fix `as unknown as SongData` casts by aligning JSON schema with TypeScript interfaces

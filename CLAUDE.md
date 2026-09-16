@@ -54,10 +54,6 @@ The codebase includes specialized components for music education:
 - `FretboardVisualizer.tsx` / `ModernFretboardVisualizer.tsx` - Interactive fretboard displays
 - `ChordVisualizer.tsx` - Advanced chord visualization
 
-**VexTab Components (Legacy):**
-- `VexTab.tsx`, `ExerciseRenderer.vextab.tsx` - Legacy VexTab notation components
-- Note: New development should use AlphaTab components
-
 ### Song Analysis System
 
 The site uses a comprehensive song analysis framework:
@@ -92,8 +88,7 @@ The app follows a hierarchical lesson structure:
 ### Technology Stack
 - **Frontend**: Next.js 15 (App Router), React 19, TypeScript
 - **Styling**: Tailwind CSS 4
-- **Music Notation**: AlphaTab library (@coderline/alphatab)
-- **Legacy Notation**: VexFlow/VexTab (being phased out)
+- **Music Notation**: AlphaTab library (@coderline/alphatab) - Universal standard across all lessons and song analyses (VexFlow/VexTab completely purged)
 - **Testing**: Jest with Testing Library, Storybook for component development
 - **Deployment**: AWS (S3 + CloudFront) via GitHub Actions
 
@@ -154,8 +149,7 @@ When adding new components:
 4. Test responsive behavior across device sizes
 
 ### Music Notation Guidelines
-- **Preferred**: Use AlphaTab notation (`AlphaTexRenderer`, `SimpleAlphaTab`)
-- **Legacy**: VexTab components exist but should not be used for new development
+- **Universal Standard**: AlphaTab notation (`AlphaTexRenderer`, `SimpleAlphaTab`, `ExerciseRenderer`) across all components
 - **Chord Diagrams**: Always use `SimpleFretboardDiagram` for consistent chord visualization
 - **Format**: AlphaTab uses format like `3.6 5.5 7.4 |` (fret.string notation)
 
