@@ -1,6 +1,5 @@
 import React from 'react';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
-import SimpleAlphaTabScale from '@/components/SimpleAlphaTabScale';
 import { AlphaTexValidator } from '@/lib/alphaTexValidator';
 
 /**
@@ -157,27 +156,16 @@ const AlphaTexDemo: React.FC = () => {
           ))}
         </div>
       </section>
-
-      {/* Scale Comparison */}
+      {/* Scale Renderer Example */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Scale Renderer Comparison</h2>
-        
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-white border border-gray-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4">SimpleAlphaTabScale Component</h3>
-            <SimpleAlphaTabScale scaleName="G major scale" />
-            <p className="text-sm text-gray-600">Uses predefined scale patterns</p>
-          </div>
-          
-          <div className="bg-white border border-gray-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold mb-4">AlphaTexRenderer Component</h3>
-            <AlphaTexRenderer
-              alphaTex="3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 |"
-              title="G Major Scale (Custom AlphaTex)"
-              showValidation={true}
-            />
-            <p className="text-sm text-gray-600">Uses custom AlphaTex input</p>
-          </div>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Standard AlphaTex Scale Rendering</h2>
+        <div className="bg-white border border-gray-200 rounded-lg p-6">
+          <AlphaTexRenderer
+            alphaTex="3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 |"
+            title="G Major Scale (AlphaTex)"
+            showValidation={true}
+          />
+          <p className="text-sm text-gray-600 mt-2">Rendered using the standard AlphaTexRenderer component.</p>
         </div>
       </section>
 

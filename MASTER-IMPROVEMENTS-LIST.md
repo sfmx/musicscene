@@ -48,6 +48,12 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Updated developer guidelines (`CLAUDE.md`) to establish AlphaTab as universal notation standard.
 - [ ] **P1: Eliminate Dead Stubs & Deprecated Visualizations**
   - **Target:** Remove obsolete components such as `ChordProgressionVisualization.tsx` (superseded by `ImprovedChordProgressionVisualization.tsx`) and any leftover `.backup` files.
+- [x] **P1: Eliminate Dead Stubs & Deprecated Visualizations**
+  - **Status:** Completed.
+    - Purged 12 unreferenced legacy prototypes and visualization stubs from `src/components/`: `AlphaTabCDN.tsx`, `AlphaTabScale.tsx`, `AlphaTabTest.tsx`, `MinimalAlphaTab.tsx`, `SimpleAlphaTabScale.tsx`, `ChordVisualizer.tsx`, `FretboardHighlight.tsx`, `FretboardVisualizer.tsx`, `ModernTabVisualizer.tsx`, `MusicNotationVisualizer.tsx`, `SimpleScaleFretboardDiagram.tsx`, and `TabAndNoteVisualizer.tsx`.
+    - Streamlined `AlphaTexDemo.tsx` to showcase standard `AlphaTexRenderer`.
+    - Removed root scratch files (`vscode-save-test.txt`, `lint_output.txt`).
+    - Verified obsolete components (`ChordProgressionVisualization.tsx`, `MusicalAnalysisSection.tsx`, `.backup` files) are completely removed.
 - [ ] **P1: Deduplicate Shared Utility Functions**
   - **Target:**
     - Consolidate `getDifficultyColor()` (currently duplicated across 6 component files) into [`src/lib/utils.ts`](file:///c:/Source/musicscene/src/lib/utils.ts).

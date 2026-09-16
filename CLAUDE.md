@@ -48,11 +48,15 @@ The codebase includes specialized components for music education:
 - `AlphaTexRenderer.tsx` - Primary component for rendering musical notation using AlphaTab library
 - `SimpleAlphaTab.tsx` - Simplified AlphaTab wrapper for basic notation needs
 - Various AlphaTab test and configuration components
+**AlphaTab & Notation Components:**
+- `AlphaTexRenderer.tsx` - Universal component for rendering musical notation, guitar tabs, audio playback, metronome count-in, and rhythm backing tracks
 
 **Fretboard & Chord Components:**
 - `SimpleFretboardDiagram.tsx` - Displays guitar chord diagrams (supports major, minor, 7th, power chords, etc.)
 - `FretboardVisualizer.tsx` / `ModernFretboardVisualizer.tsx` - Interactive fretboard displays
 - `ChordVisualizer.tsx` - Advanced chord visualization
+- `ModernFretboardVisualizer.tsx` - Interactive fretboard display with synthesized guitar note audio
+- `ScaleVisualization.tsx` - Interactive wooden fretboard visualization for scale positions with click-to-play audio
 
 ### Song Analysis System
 
