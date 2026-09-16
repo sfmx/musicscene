@@ -5,7 +5,7 @@ interface RawIndex {
   entries: ContentEntry[];
 }
 
-const index = contentIndexData as unknown as RawIndex;
+const index: RawIndex = contentIndexData;
 
 export interface SearchResult extends ContentEntry {
   score: number;

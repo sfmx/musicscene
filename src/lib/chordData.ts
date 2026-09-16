@@ -194,23 +194,23 @@ export interface ChordListItem {
 // --- Data loading ---
 
 const chordDatabase: Record<string, ChordData> = {
-  'major': majorData as unknown as ChordData,
-  'minor': minorData as unknown as ChordData,
-  'seventh': seventhData as unknown as ChordData,
-  'major-seventh': majorSeventhData as unknown as ChordData,
-  'minor-seventh': minorSeventhData as unknown as ChordData,
-  'suspended': suspendedData as unknown as ChordData,
-  'augmented': augmentedData as unknown as ChordData,
-  'diminished': diminishedData as unknown as ChordData,
-  'extended': extendedData as unknown as ChordData,
-  'power': powerData as unknown as ChordData,
-  'add': addData as unknown as ChordData,
-  'sixth': sixthData as unknown as ChordData,
-  'minor-sixth': minorSixthData as unknown as ChordData,
-  'half-diminished': halfDiminishedData as unknown as ChordData,
-  'slash': slashData as unknown as ChordData,
-  'dominant-ninth': dominantNinthData as unknown as ChordData,
-  'altered-dominant': alteredDominantData as unknown as ChordData,
+  'major': majorData,
+  'minor': minorData,
+  'seventh': seventhData,
+  'major-seventh': majorSeventhData,
+  'minor-seventh': minorSeventhData,
+  'suspended': suspendedData,
+  'augmented': augmentedData,
+  'diminished': diminishedData,
+  'extended': extendedData,
+  'power': powerData,
+  'add': addData,
+  'sixth': sixthData,
+  'minor-sixth': minorSixthData,
+  'half-diminished': halfDiminishedData,
+  'slash': slashData,
+  'dominant-ninth': dominantNinthData,
+  'altered-dominant': alteredDominantData,
 };
 
 export function getChordData(chordSlug: string): ChordData | null {
@@ -324,5 +324,5 @@ export interface ChordIndexData {
 }
 
 export function getChordIndexData(): ChordIndexData {
-  return chordIndexData as unknown as ChordIndexData;
+  return chordIndexData;
 }

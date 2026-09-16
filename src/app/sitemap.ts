@@ -66,7 +66,7 @@ const TYPE_PRIORITY: Record<string, number> = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const index = contentIndexData as unknown as ContentIndex;
+  const index: ContentIndex = contentIndexData;
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((page) => ({
     url: `${SITE_CONFIG.baseUrl}${page.url}`,

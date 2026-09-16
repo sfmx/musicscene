@@ -26,8 +26,12 @@ function CardComponent({ card }: { card: ContentCard }) {
           {card.title}
         </h3>
         {card.badge && (
-          <span className={`px-2.5 py-1 text-xs font-semibold rounded-full border ${card.badge.color || getDifficultyColor(card.badge.text)}`}>
-            {card.badge.text}
+          <span className={`px-2.5 py-1 text-xs font-semibold rounded-full border ${
+            typeof card.badge === 'string'
+              ? getDifficultyColor(card.badge)
+              : (card.badge.color || getDifficultyColor(card.badge.text))
+          }`}>
+            {typeof card.badge === 'string' ? card.badge : card.badge.text}
           </span>
         )}
       </div>

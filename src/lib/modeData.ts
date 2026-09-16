@@ -66,7 +66,7 @@ export interface ScaleRelationship {
 export interface RelatedMode {
   title: string;
   description: string;
-  detail: string;
+  detail?: string;
 }
 
 export interface KeyVariant {
@@ -139,13 +139,13 @@ export interface ModeData {
 // --- Data loading ---
 
 const modeDatabase: Record<string, ModeData> = {
-  'ionian': ionianData as unknown as ModeData,
-  'dorian': dorianData as unknown as ModeData,
-  'phrygian': phrygianData as unknown as ModeData,
-  'lydian': lydianData as unknown as ModeData,
-  'mixolydian': mixolydianData as unknown as ModeData,
-  'aeolian': aeolianData as unknown as ModeData,
-  'locrian': locrianData as unknown as ModeData,
+  'ionian': ionianData,
+  'dorian': dorianData,
+  'phrygian': phrygianData,
+  'lydian': lydianData,
+  'mixolydian': mixolydianData,
+  'aeolian': aeolianData,
+  'locrian': locrianData,
 };
 
 export function getModeData(slug: string): ModeData | null {
@@ -208,5 +208,5 @@ export interface ModeIndexData {
 }
 
 export function getModeIndexData(): ModeIndexData {
-  return modeIndexData as unknown as ModeIndexData;
+  return modeIndexData;
 }

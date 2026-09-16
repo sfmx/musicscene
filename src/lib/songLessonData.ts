@@ -120,7 +120,7 @@ export interface SongLessonIndexData {
   }[];
   learningPath?: {
     title: string;
-    type: 'pills' | 'ordered-list' | 'numbered-steps';
+    type?: 'pills' | 'ordered-list' | 'numbered-steps' | string;
     steps: {
       number?: number;
       title: string;
@@ -134,7 +134,7 @@ export interface SongLessonIndexData {
     bgColor?: string;
     borderColor?: string;
     columns?: { title: string; text: string }[];
-  };
+  } | null;
   infoSections?: {
     title: string;
     icon?: string;
@@ -152,7 +152,7 @@ export interface SongLessonIndexData {
     description?: string;
     bgColor?: string;
     link?: { href: string; label: string; bgColor?: string };
-  };
+  } | null;
 }
 
 // Root songs index has a slightly different featured section
@@ -189,7 +189,7 @@ export interface ContentCard {
   description?: string;
   icon?: string;
   number?: number;
-  badge?: { text: string; color: string };
+  badge?: { text: string; color?: string; bgColor?: string; textColor?: string } | string;
   borderColor?: string;
   bgColor?: string;
   fields?: { label: string; value: string }[];
@@ -201,7 +201,7 @@ export interface ContentSection {
   subtitle?: string;
   bgColor?: string;
   borderColor?: string;
-  layout?: 'grid-2' | 'grid-3' | 'grid-4' | 'list' | 'numbered-steps';
+  layout?: 'grid-2' | 'grid-3' | 'grid-4' | 'list' | 'numbered-steps' | string;
   cards?: ContentCard[];
 }
 
@@ -240,7 +240,7 @@ export interface SongLessonDetailData {
 // Data maps
 // ============================================================
 
-const indexDataMap: Record<string, unknown> = {
+const indexDataMap: Record<string, SongLessonIndexData> = {
   'breakdowns': breakdownsIndex,
   'chords': chordsIndex,
   'effects': effectsIndex,
@@ -251,7 +251,7 @@ const indexDataMap: Record<string, unknown> = {
   'techniques': techniquesIndex,
 };
 
-const detailDataMap: Record<string, unknown> = {
+const detailDataMap: Record<string, SongLessonDetailData> = {
   // Breakdowns
   'breakdowns-verse': breakdownsVerse,
   'breakdowns-chorus': breakdownsChorus,
@@ -334,17 +334,17 @@ const detailDataMap: Record<string, unknown> = {
 // ============================================================
 
 export function getSongsRootIndexData(): SongsRootIndexData {
-  return songsRootIndex as unknown as SongsRootIndexData;
+  return songsRootIndex;
 }
 
 export function getSongLessonIndexData(category: string): SongLessonIndexData {
   const data = indexDataMap[category];
   if (!data) throw new Error(`Song lesson index not found: ${category}`);
-  return data as unknown as SongLessonIndexData;
+  return data;
 }
 
 export function getSongLessonDetailData(key: string): SongLessonDetailData {
   const data = detailDataMap[key];
   if (!data) throw new Error(`Song lesson detail not found: ${key}`);
-  return data as unknown as SongLessonDetailData;
+  return data;
 }

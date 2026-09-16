@@ -140,22 +140,22 @@ export interface ProgressionData {
 // --- Data loading ---
 
 const progressionDatabase: Record<string, ProgressionData> = {
-  'i-iv-v': iIvVData as unknown as ProgressionData,
-  'ii-v-i': iiViData as unknown as ProgressionData,
-  'i-v-vi-iv': iVViIvData as unknown as ProgressionData,
-  'vi-iv-i-v': viIvIVData as unknown as ProgressionData,
-  '12-bar-blues': twelveBarBluesData as unknown as ProgressionData,
-  'circle-of-fifths': circleOfFifthsData as unknown as ProgressionData,
-  'i-iv': iIvData as unknown as ProgressionData,
-  'iv-i': ivIData as unknown as ProgressionData,
-  'i-v': iVData as unknown as ProgressionData,
-  'i-bvii-iv': iBviiIvData as unknown as ProgressionData,
-  'i-vi-ii-v': iViIiVData as unknown as ProgressionData,
-  'i-vi-iv-v': iViIvVData as unknown as ProgressionData,
-  'minor-blues': minorBluesData as unknown as ProgressionData,
-  'i-biii-bvii-iv': iBiiiBviiIvData as unknown as ProgressionData,
-  'i-v-bvii-iv': iVBviiIvData as unknown as ProgressionData,
-  'ii-iv-v': iiIvVData as unknown as ProgressionData,
+  'i-iv-v': iIvVData,
+  'ii-v-i': iiViData,
+  'i-v-vi-iv': iVViIvData,
+  'vi-iv-i-v': viIvIVData,
+  '12-bar-blues': twelveBarBluesData,
+  'circle-of-fifths': circleOfFifthsData,
+  'i-iv': iIvData,
+  'iv-i': ivIData,
+  'i-v': iVData,
+  'i-bvii-iv': iBviiIvData,
+  'i-vi-ii-v': iViIiVData,
+  'i-vi-iv-v': iViIvVData,
+  'minor-blues': minorBluesData,
+  'i-biii-bvii-iv': iBiiiBviiIvData,
+  'i-v-bvii-iv': iVBviiIvData,
+  'ii-iv-v': iiIvVData,
 };
 
 export function getProgressionData(slug: string): ProgressionData | null {
@@ -248,5 +248,5 @@ export interface ProgressionIndexData {
 }
 
 export function getProgressionIndexData(): ProgressionIndexData {
-  return progressionIndexData as unknown as ProgressionIndexData;
+  return progressionIndexData;
 }

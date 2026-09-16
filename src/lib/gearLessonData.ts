@@ -99,7 +99,7 @@ export interface GearRootIndexData {
   }[];
   buyingStrategies: {
     title: string;
-    items: string[];
+    items: ({ title?: string; description?: string; color?: string } | string)[];
   }[];
   gettingStarted: {
     title: string;
@@ -128,7 +128,7 @@ export interface GearContentCard {
   description?: string;
   icon?: string;
   number?: number;
-  badge?: { text: string; color: string };
+  badge?: { text: string; color?: string; bgColor?: string; textColor?: string } | string;
   borderColor?: string;
   bgColor?: string;
   fields?: { label: string; value: string }[];
@@ -141,7 +141,7 @@ export interface GearContentSection {
   bgColor?: string;
   borderColor?: string;
   warningText?: string;
-  layout: 'grid-2' | 'grid-3' | 'grid-4' | 'list' | 'numbered-steps' | 'table';
+  layout: 'grid-2' | 'grid-3' | 'grid-4' | 'list' | 'numbered-steps' | 'table' | string;
   cards?: GearContentCard[];
   tableHeaders?: string[];
   tableRows?: string[][];
@@ -174,7 +174,7 @@ export interface GearDetailData {
 // Data maps
 // ============================================================
 
-const indexDataMap: Record<string, unknown> = {
+const indexDataMap: Record<string, GearIndexData> = {
   'guitars': guitarsIndex,
   'amps': ampsIndex,
   'effects': effectsIndex,
@@ -182,7 +182,7 @@ const indexDataMap: Record<string, unknown> = {
   'accessories': accessoriesIndex,
 };
 
-const detailDataMap: Record<string, unknown> = {
+const detailDataMap: Record<string, GearDetailData> = {
   // Guitars
   'guitars-acoustic': guitarsAcoustic,
   'guitars-electric': guitarsElectric,
@@ -231,17 +231,17 @@ const detailDataMap: Record<string, unknown> = {
 // ============================================================
 
 export function getGearRootIndexData(): GearRootIndexData {
-  return gearRootIndex as unknown as GearRootIndexData;
+  return gearRootIndex;
 }
 
 export function getGearIndexData(category: string): GearIndexData {
   const data = indexDataMap[category];
   if (!data) throw new Error(`Gear index not found: ${category}`);
-  return data as unknown as GearIndexData;
+  return data;
 }
 
 export function getGearDetailData(key: string): GearDetailData {
   const data = detailDataMap[key];
   if (!data) throw new Error(`Gear detail not found: ${key}`);
-  return data as unknown as GearDetailData;
+  return data;
 }

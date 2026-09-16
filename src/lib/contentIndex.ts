@@ -2,7 +2,8 @@ import contentIndexData from '@/data/_generated/content-index.json';
 
 export type ContentType =
   | 'chord' | 'scale' | 'interval' | 'mode' | 'progression'
-  | 'song-analysis' | 'practice' | 'gear-lesson' | 'song-lesson';
+  | 'song-analysis' | 'practice' | 'gear-lesson' | 'song-lesson'
+  | (string & {});
 
 export interface ContentEntry {
   id: string;
@@ -20,7 +21,7 @@ interface ContentIndex {
   tagIndex: Record<string, string[]>;
 }
 
-const index = contentIndexData as unknown as ContentIndex;
+const index: ContentIndex = contentIndexData;
 
 // Lookup map built once on module load
 const entryById = new Map<string, ContentEntry>();

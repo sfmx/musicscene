@@ -52,7 +52,7 @@ export interface PracticeTip {
 
 export interface PracticeDetailData {
   slug: string;
-  category: 'warmups' | 'technique' | 'improv';
+  category: 'warmups' | 'technique' | 'improv' | string;
   pageInfo: {
     pageTitle: string;
     subtitle: string;
@@ -129,7 +129,7 @@ import targetNotesData from '@/data/practice/improv/target-notes.json';
 import chordToneSoloingData from '@/data/practice/improv/chord-tone-soloing.json';
 import modalImprovisationData from '@/data/practice/improv/modal-improvisation.json';
 
-const practiceDataMap: Record<string, Record<string, unknown>> = {
+const practiceDataMap: Record<string, PracticeDetailData> = {
   // Warmups
   'chord-changes': chordChangesData,
   'finger-exercises': fingerExercisesData,
@@ -165,7 +165,7 @@ const practiceDataMap: Record<string, Record<string, unknown>> = {
 export function getPracticeData(slug: string): PracticeDetailData {
   const data = practiceDataMap[slug];
   if (!data) throw new Error(`Practice data not found for slug: ${slug}`);
-  return data as unknown as PracticeDetailData;
+  return data;
 }
 
 // --- Index Data Interfaces ---
@@ -225,18 +225,18 @@ export interface PracticeIndexData {
 }
 
 export function getWarmupIndexData(): PracticeIndexData {
-  return warmupIndexData as unknown as PracticeIndexData;
+  return warmupIndexData;
 }
 
 export function getTechniqueIndexData(): PracticeIndexData {
-  return techniqueIndexData as unknown as PracticeIndexData;
+  return techniqueIndexData;
 }
 
 export function getImprovIndexData(): PracticeIndexData {
-  return improvIndexData as unknown as PracticeIndexData;
+  return improvIndexData;
 }
 
-const indexDataMap: Record<string, unknown> = {
+const indexDataMap: Record<string, PracticeIndexData> = {
   'warmups': warmupIndexData,
   'technique': techniqueIndexData,
   'improv': improvIndexData,
@@ -245,5 +245,5 @@ const indexDataMap: Record<string, unknown> = {
 export function getPracticeIndexData(category: string): PracticeIndexData {
   const data = indexDataMap[category];
   if (!data) throw new Error(`Practice index not found: ${category}`);
-  return data as unknown as PracticeIndexData;
+  return data;
 }

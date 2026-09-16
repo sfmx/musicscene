@@ -29,39 +29,49 @@ export interface GuitarExample {
   chord2Label: string;
   alphaTex: string;
   alphaTexTitle: string;
-  description: string;
+  description?: string;
+  caption?: string;
   colorBg: string;
   colorBorder: string;
   colorTitle: string;
-  colorText: string;
-  colorDetail: string;
+  colorSubtitle?: string;
+  colorText?: string;
+  colorDetail?: string;
+  colorCaption?: string;
 }
 
 export interface ChordConstruction {
   title: string;
   chord: string;
   chordLabel: string;
+  chord2?: string;
+  chord2Label?: string;
   alphaTex: string;
   alphaTexTitle: string;
-  alphaTexDescription: string;
+  alphaTexDescription?: string;
+  alphaTexCaption?: string;
   bullets: string[];
   colorBg: string;
   colorBorder: string;
   colorTitle: string;
   colorText: string;
-  colorDetail: string;
+  colorDetail?: string;
+  colorCaption?: string;
 }
 
 export interface FretboardPattern {
   title: string;
+  subtitle?: string;
   alphaTex: string;
   alphaTexTitle: string;
-  alphaTexDescription: string;
+  alphaTexDescription?: string;
+  alphaTexCaption?: string;
   bullets: string[];
   colorBg: string;
   colorBorder: string;
   colorTitle: string;
   colorText: string;
+  colorCaption?: string;
 }
 
 export interface MusicalExample {
@@ -99,13 +109,19 @@ export interface JourneyLink {
   slug: string;
   title: string;
   description: string;
-  linkText: string;
+  linkText?: string;
+  actionText?: string;
   icon: string;
-  hoverBorder: string;
-  iconBg: string;
-  iconHoverBg: string;
-  linkColor: string;
-  linkHoverColor: string;
+  hoverBorder?: string;
+  iconBg?: string;
+  iconHoverBg?: string;
+  linkColor?: string;
+  linkHoverColor?: string;
+  colorBg?: string;
+  colorBgHover?: string;
+  colorBorder?: string;
+  colorText?: string;
+  colorTextHover?: string;
 }
 
 export interface IntervalData {
@@ -156,19 +172,19 @@ export interface IntervalData {
 // --- Data loading ---
 
 const intervalDatabase: Record<string, IntervalData> = {
-  'unison': unisonData as unknown as IntervalData,
-  'minor-2nd': minor2ndData as unknown as IntervalData,
-  'major-2nd': major2ndData as unknown as IntervalData,
-  'minor-3rd': minor3rdData as unknown as IntervalData,
-  'major-3rd': major3rdData as unknown as IntervalData,
-  'perfect-4th': perfect4thData as unknown as IntervalData,
-  'tritone': tritoneData as unknown as IntervalData,
-  'perfect-5th': perfect5thData as unknown as IntervalData,
-  'minor-6th': minor6thData as unknown as IntervalData,
-  'major-6th': major6thData as unknown as IntervalData,
-  'minor-7th': minor7thData as unknown as IntervalData,
-  'major-7th': major7thData as unknown as IntervalData,
-  'octave': octaveData as unknown as IntervalData,
+  'unison': unisonData,
+  'minor-2nd': minor2ndData,
+  'major-2nd': major2ndData,
+  'minor-3rd': minor3rdData,
+  'major-3rd': major3rdData,
+  'perfect-4th': perfect4thData,
+  'tritone': tritoneData,
+  'perfect-5th': perfect5thData,
+  'minor-6th': minor6thData,
+  'major-6th': major6thData,
+  'minor-7th': minor7thData,
+  'major-7th': major7thData,
+  'octave': octaveData,
 };
 
 export function getIntervalData(slug: string): IntervalData | null {
@@ -267,5 +283,5 @@ export interface IntervalIndexData {
 }
 
 export function getIntervalIndexData(): IntervalIndexData {
-  return intervalIndexData as unknown as IntervalIndexData;
+  return intervalIndexData;
 }

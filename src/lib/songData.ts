@@ -156,7 +156,7 @@ export interface SongData {
     name: string;
     description: string;
     difficulty: string;
-    primaryTechnique: boolean;
+    primaryTechnique?: boolean;
     details: {
       notes?: string[];
       sequence?: string[];
@@ -176,7 +176,7 @@ export interface SongData {
     exerciseLabel?: string;
     chords?: string[];
     progression?: string;
-    notes: string[];
+    notes?: string[];
   }>;
   equipment: {
     guitar: {
@@ -203,33 +203,53 @@ export interface SongData {
   };
   learningPath: {
     beginner: {
-      title: string;
+      title?: string;
+      focus?: string;
       steps: string[];
       timeEstimate: string;
+      goals?: string;
     };
     intermediate: {
-      title: string;
+      title?: string;
+      focus?: string;
       steps: string[];
       timeEstimate: string;
+      goals?: string;
     };
     advanced: {
-      title: string;
+      title?: string;
+      focus?: string;
       steps: string[];
       timeEstimate: string;
+      goals?: string;
     };
   };
   relatedSongs: {
-    acdc: Array<{
+    acdc?: Array<{
       title: string;
       link?: string;
       similarity: string;
     }>;
-    similarTechniques: Array<{
+    sameArtist?: Array<{
+      title: string;
+      link?: string;
+      difficulty?: string;
+      similarity: string;
+    }>;
+    similarTechniques?: Array<{
       title: string;
       artist: string;
       technique?: string;
+      similarity?: string;
+      link?: string;
+    }>;
+    progressionPath?: Array<{
+      title: string;
+      artist: string;
+      difficulty: string;
       similarity: string;
     }>;
+    [key: string]: any;
   };
   practiceNotes: {
     commonMistakes: string[];
@@ -293,113 +313,113 @@ export interface SearchFilters {
 
 // Centralized song database
 const songDatabase: Record<string, SongData> = {
-  'thunderstruck': thunderstruckData as unknown as SongData,
-  'for-those-about-to-rock': forThoseAboutToRockData as unknown as SongData,
-  'back-in-black': backInBlackData as unknown as SongData,
-  'highway-to-hell': highwayToHellData as unknown as SongData,
-  'you-shook-me-all-night-long': youShookMeAllNightLongData as unknown as SongData,
-  'were-not-gonna-take-it': wereNotGonnaTakeItData as unknown as SongData,
-  'sweet-home-alabama': sweetHomeAlabamaData as unknown as SongData,
-  'sweet-child-o-mine': sweetChildOMineData as unknown as SongData,
-  'enter-sandman': enterSandmanData as unknown as SongData,
-  'hurt-so-good': hurtSoGoodData as unknown as SongData,
-  'johnny-b-goode': johnnyBGoodeData as unknown as SongData,
-  'i-love-rock-n-roll': iLoveRockNRollData as unknown as SongData,
-  'no-secrets': noSecretsData as unknown as SongData,
-  'brothers-in-arms': brothersInArmsData as unknown as SongData,
-  'smoke-on-the-water': smokeOnTheWaterData as unknown as SongData,
-  'blitzkrieg-bop': blitzkriegBopData as unknown as SongData,
-  'horse-with-no-name': horseWithNoNameData as unknown as SongData,
-  'seven-nation-army': sevenNationArmyData as unknown as SongData,
-  'comfortably-numb': comfortablyNumbData as unknown as SongData,
-  'purple-haze': purpleHazeData as unknown as SongData,
-  'stairway-to-heaven': stairwayToHeavenData as unknown as SongData,
-  'the-thrill-is-gone': thrillIsGoneData as unknown as SongData,
-  'pride-and-joy': prideAndJoyData as unknown as SongData,
-  'crossroads': crossroadsData as unknown as SongData,
-  'eruption': eruptionData as unknown as SongData,
-  'sultans-of-swing': sultansOfSwingData as unknown as SongData,
-  'cliffs-of-dover': cliffsOfDoverData as unknown as SongData,
-  'wish-you-were-here': wishYouWereHereData as unknown as SongData,
-  'blackbird': blackbirdData as unknown as SongData,
-  'all-along-the-watchtower': allAlongTheWatchtowerData as unknown as SongData,
-  'oye-como-va': oyeComoVaData as unknown as SongData,
-  'norwegian-wood': norwegianWoodData as unknown as SongData,
-  'another-brick-in-the-wall': anotherBrickInTheWallData as unknown as SongData,
-  'wonderwall': wonderwallData as unknown as SongData,
-  'under-the-bridge': underTheBridgeData as unknown as SongData,
-  'crazy-train': crazyTrainData as unknown as SongData,
-  'zombie': zombieData as unknown as SongData,
-  'torn': tornData as unknown as SongData,
-  'landslide': landslideData as unknown as SongData,
-  'barracuda': barracudaData as unknown as SongData,
-  'dreams': dreamsData as unknown as SongData,
-  'ring-of-fire': ringOfFireData as unknown as SongData,
-  'folsom-prison-blues': folsomPrisonBluesData as unknown as SongData,
-  'devil-went-down-to-georgia': devilWentDownToGeorgiaData as unknown as SongData,
-  'mammas-dont-let-your-babies': mammasDontLetYourBabiesData as unknown as SongData,
-  'superstition': superstitionData as unknown as SongData,
-  'sittin-on-the-dock-of-the-bay': sittinOnTheDockOfTheBayData as unknown as SongData,
-  'whats-going-on': whatsGoingOnData as unknown as SongData,
-  'come-as-you-are': comeAsYouAreData as unknown as SongData,
-  'black-hole-sun': blackHoleSunData as unknown as SongData,
-  'everlong': everlongData as unknown as SongData,
-  'roundabout': roundaboutData as unknown as SongData,
-  'tom-sawyer': tomSawyerData as unknown as SongData,
-  'all-blues': allBluesData as unknown as SongData,
-  'europa': europaData as unknown as SongData,
-  'riptide': riptideData as unknown as SongData,
-  'radioactive': radioactiveData as unknown as SongData,
-  'take-me-to-church': takeMeToChurchData as unknown as SongData,
-  'dust-my-broom': dustMyBroomData as unknown as SongData,
-  'schism': schismData as unknown as SongData,
-  'classical-gas': classicalGasData as unknown as SongData,
-  'bad-moon-rising': badMoonRisingData as unknown as SongData,
-  'twist-and-shout': twistAndShoutData as unknown as SongData,
-  'wild-thing': wildThingData as unknown as SongData,
-  'la-bamba': laBambaData as unknown as SongData,
-  'knockin-on-heavens-door': knockinOnHeavensDoorData as unknown as SongData,
-  'free-fallin': freeFallinData as unknown as SongData,
-  'brown-eyed-girl': brownEyedGirlData as unknown as SongData,
-  'stand-by-me': standByMeData as unknown as SongData,
-  'good-riddance': goodRiddanceData as unknown as SongData,
-  'blowin-in-the-wind': blowinInTheWindData as unknown as SongData,
-  'hound-dog': houndDogData as unknown as SongData,
-  'gloria': gloriaData as unknown as SongData,
-  'louie-louie': louieLouieData as unknown as SongData,
-  'wagon-wheel': wagonWheelData as unknown as SongData,
-  'what-i-got': whatIGotData as unknown as SongData,
-  'born-to-be-wild': bornToBeWildData as unknown as SongData,
-  'rock-and-roll-all-nite': rockAndRollAllNiteData as unknown as SongData,
-  'we-will-rock-you': weWillRockYouData as unknown as SongData,
-  'livin-on-a-prayer': livinOnAPrayerData as unknown as SongData,
-  'you-really-got-me': youReallyGotMeData as unknown as SongData,
-  'rebel-yell': rebelYellData as unknown as SongData,
-  'hit-me-with-your-best-shot': hitMeWithYourBestShotData as unknown as SongData,
-  'rock-you-like-a-hurricane': rockYouLikeAHurricaneData as unknown as SongData,
-  'should-i-stay-or-should-i-go': shouldIStayOrShouldIGoData as unknown as SongData,
-  'summer-of-69': summerOf69Data as unknown as SongData,
-  'hotel-california': hotelCaliforniaData as unknown as SongData,
-  'paranoid': paranoidData as unknown as SongData,
-  'iron-man': ironManData as unknown as SongData,
-  'paint-it-black': paintItBlackData as unknown as SongData,
-  'satisfaction': satisfactionData as unknown as SongData,
-  'sunshine-of-your-love': sunshineOfYourLoveData as unknown as SongData,
-  'whole-lotta-love': wholeLottaLoveData as unknown as SongData,
-  'layla': laylaData as unknown as SongData,
-  'more-than-a-feeling': moreThanAFeelingData as unknown as SongData,
-  'message-in-a-bottle': messageInABottleData as unknown as SongData,
-  'dont-stop-believin': dontStopBelievinData as unknown as SongData,
-  'pour-some-sugar-on-me': pourSomeSugarOnMeData as unknown as SongData,
-  'here-i-go-again': hereIGoAgainData as unknown as SongData,
-  'the-final-countdown': theFinalCountdownData as unknown as SongData,
-  'eye-of-the-tiger': eyeOfTheTigerData as unknown as SongData,
-  'you-give-love-a-bad-name': youGiveLoveABadNameData as unknown as SongData,
-  'wanted-dead-or-alive': wantedDeadOrAliveData as unknown as SongData,
-  'every-rose-has-its-thorn': everyRoseHasItsThornData as unknown as SongData,
-  'photograph': photographData as unknown as SongData,
-  'welcome-to-the-jungle': welcomeToTheJungleData as unknown as SongData,
-  'who-made-who': whoMadeWhoData as unknown as SongData,
+  'thunderstruck': thunderstruckData,
+  'for-those-about-to-rock': forThoseAboutToRockData,
+  'back-in-black': backInBlackData,
+  'highway-to-hell': highwayToHellData,
+  'you-shook-me-all-night-long': youShookMeAllNightLongData,
+  'were-not-gonna-take-it': wereNotGonnaTakeItData,
+  'sweet-home-alabama': sweetHomeAlabamaData,
+  'sweet-child-o-mine': sweetChildOMineData,
+  'enter-sandman': enterSandmanData,
+  'hurt-so-good': hurtSoGoodData,
+  'johnny-b-goode': johnnyBGoodeData,
+  'i-love-rock-n-roll': iLoveRockNRollData,
+  'no-secrets': noSecretsData,
+  'brothers-in-arms': brothersInArmsData,
+  'smoke-on-the-water': smokeOnTheWaterData,
+  'blitzkrieg-bop': blitzkriegBopData,
+  'horse-with-no-name': horseWithNoNameData,
+  'seven-nation-army': sevenNationArmyData,
+  'comfortably-numb': comfortablyNumbData,
+  'purple-haze': purpleHazeData,
+  'stairway-to-heaven': stairwayToHeavenData,
+  'the-thrill-is-gone': thrillIsGoneData,
+  'pride-and-joy': prideAndJoyData,
+  'crossroads': crossroadsData,
+  'eruption': eruptionData,
+  'sultans-of-swing': sultansOfSwingData,
+  'cliffs-of-dover': cliffsOfDoverData,
+  'wish-you-were-here': wishYouWereHereData,
+  'blackbird': blackbirdData,
+  'all-along-the-watchtower': allAlongTheWatchtowerData,
+  'oye-como-va': oyeComoVaData,
+  'norwegian-wood': norwegianWoodData,
+  'another-brick-in-the-wall': anotherBrickInTheWallData,
+  'wonderwall': wonderwallData,
+  'under-the-bridge': underTheBridgeData,
+  'crazy-train': crazyTrainData,
+  'zombie': zombieData,
+  'torn': tornData,
+  'landslide': landslideData,
+  'barracuda': barracudaData,
+  'dreams': dreamsData,
+  'ring-of-fire': ringOfFireData,
+  'folsom-prison-blues': folsomPrisonBluesData,
+  'devil-went-down-to-georgia': devilWentDownToGeorgiaData,
+  'mammas-dont-let-your-babies': mammasDontLetYourBabiesData,
+  'superstition': superstitionData,
+  'sittin-on-the-dock-of-the-bay': sittinOnTheDockOfTheBayData,
+  'whats-going-on': whatsGoingOnData,
+  'come-as-you-are': comeAsYouAreData,
+  'black-hole-sun': blackHoleSunData,
+  'everlong': everlongData,
+  'roundabout': roundaboutData,
+  'tom-sawyer': tomSawyerData,
+  'all-blues': allBluesData,
+  'europa': europaData,
+  'riptide': riptideData,
+  'radioactive': radioactiveData,
+  'take-me-to-church': takeMeToChurchData,
+  'dust-my-broom': dustMyBroomData,
+  'schism': schismData,
+  'classical-gas': classicalGasData,
+  'bad-moon-rising': badMoonRisingData,
+  'twist-and-shout': twistAndShoutData,
+  'wild-thing': wildThingData,
+  'la-bamba': laBambaData,
+  'knockin-on-heavens-door': knockinOnHeavensDoorData,
+  'free-fallin': freeFallinData,
+  'brown-eyed-girl': brownEyedGirlData,
+  'stand-by-me': standByMeData,
+  'good-riddance': goodRiddanceData,
+  'blowin-in-the-wind': blowinInTheWindData,
+  'hound-dog': houndDogData,
+  'gloria': gloriaData,
+  'louie-louie': louieLouieData,
+  'wagon-wheel': wagonWheelData,
+  'what-i-got': whatIGotData,
+  'born-to-be-wild': bornToBeWildData,
+  'rock-and-roll-all-nite': rockAndRollAllNiteData,
+  'we-will-rock-you': weWillRockYouData,
+  'livin-on-a-prayer': livinOnAPrayerData,
+  'you-really-got-me': youReallyGotMeData,
+  'rebel-yell': rebelYellData,
+  'hit-me-with-your-best-shot': hitMeWithYourBestShotData,
+  'rock-you-like-a-hurricane': rockYouLikeAHurricaneData,
+  'should-i-stay-or-should-i-go': shouldIStayOrShouldIGoData,
+  'summer-of-69': summerOf69Data,
+  'hotel-california': hotelCaliforniaData,
+  'paranoid': paranoidData,
+  'iron-man': ironManData,
+  'paint-it-black': paintItBlackData,
+  'satisfaction': satisfactionData,
+  'sunshine-of-your-love': sunshineOfYourLoveData,
+  'whole-lotta-love': wholeLottaLoveData,
+  'layla': laylaData,
+  'more-than-a-feeling': moreThanAFeelingData,
+  'message-in-a-bottle': messageInABottleData,
+  'dont-stop-believin': dontStopBelievinData,
+  'pour-some-sugar-on-me': pourSomeSugarOnMeData,
+  'here-i-go-again': hereIGoAgainData,
+  'the-final-countdown': theFinalCountdownData,
+  'eye-of-the-tiger': eyeOfTheTigerData,
+  'you-give-love-a-bad-name': youGiveLoveABadNameData,
+  'wanted-dead-or-alive': wantedDeadOrAliveData,
+  'every-rose-has-its-thorn': everyRoseHasItsThornData,
+  'photograph': photographData,
+  'welcome-to-the-jungle': welcomeToTheJungleData,
+  'who-made-who': whoMadeWhoData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

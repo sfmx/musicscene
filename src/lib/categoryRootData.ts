@@ -56,7 +56,7 @@ export interface CategoryRootData {
   };
 }
 
-const dataMap: Record<string, unknown> = {
+const dataMap: Record<string, CategoryRootData> = {
   'theory': theoryRootData,
   'practice': practiceRootData,
 };
@@ -64,5 +64,5 @@ const dataMap: Record<string, unknown> = {
 export function getCategoryRootData(category: string): CategoryRootData {
   const data = dataMap[category];
   if (!data) throw new Error(`Category root data not found: ${category}`);
-  return data as unknown as CategoryRootData;
+  return data;
 }

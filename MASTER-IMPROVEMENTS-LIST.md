@@ -58,8 +58,20 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Re-exported utilities from [`src/utils/theme.ts`](file:///c:/Source/musicscene/src/utils/theme.ts) to guarantee 100% backward compatibility.
     - Replaced hardcoded difficulty badge dictionaries and inline ternary ladders across `SongLessonDetailPageTemplate.tsx`, `SongLessonIndexPageTemplate.tsx`, `PracticeIndexPageTemplate.tsx`, `HomeSongExplorer.tsx`, and `SongAnalyticsOverview.tsx`.
     - Added automated Vitest suite in [`src/lib/__tests__/utils.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/utils.test.ts) covering all helper functions.
-- [ ] **P2: Eliminate Unsafe TypeScript Casts**
-  - **Target:** Replace `as unknown as SongData` casts across song loading routes by aligning the JSON schema with strict TypeScript interfaces.
+- [x] **P2: Eliminate Unsafe TypeScript Casts**
+  - **Status:** Completed.
+    - Eliminated all 107 `as unknown as SongData` casts in [`src/lib/songData.ts`](file:///c:/Source/musicscene/src/lib/songData.ts) by aligning TypeScript `SongData` with the unified schema.
+    - Eliminated all 17 `as unknown as ChordData` and `ChordIndexData` casts in [`src/lib/chordData.ts`](file:///c:/Source/musicscene/src/lib/chordData.ts).
+    - Eliminated all 13 `as unknown as IntervalData` and `IntervalIndexData` casts in [`src/lib/intervalData.ts`](file:///c:/Source/musicscene/src/lib/intervalData.ts).
+    - Eliminated all `as unknown as ModeData` and `ModeIndexData` casts in [`src/lib/modeData.ts`](file:///c:/Source/musicscene/src/lib/modeData.ts).
+    - Eliminated all 16 `as unknown as ProgressionData` and `ProgressionIndexData` casts in [`src/lib/progressionData.ts`](file:///c:/Source/musicscene/src/lib/progressionData.ts).
+    - Eliminated `as unknown as ScaleIndexData` in [`src/lib/scaleData.ts`](file:///c:/Source/musicscene/src/lib/scaleData.ts).
+    - Eliminated `as unknown as CategoryRootData` in [`src/lib/categoryRootData.ts`](file:///c:/Source/musicscene/src/lib/categoryRootData.ts).
+    - Eliminated all `as unknown as PracticeDetailData` and index casts in [`src/lib/practiceData.ts`](file:///c:/Source/musicscene/src/lib/practiceData.ts).
+    - Eliminated all `as unknown as GearDetailData`, `GearIndexData`, and root casts in [`src/lib/gearLessonData.ts`](file:///c:/Source/musicscene/src/lib/gearLessonData.ts).
+    - Eliminated all `as unknown as SongLessonDetailData`, `SongLessonIndexData`, and root casts in [`src/lib/songLessonData.ts`](file:///c:/Source/musicscene/src/lib/songLessonData.ts).
+    - Eliminated all `as unknown as` casts in [`src/lib/contentIndex.ts`](file:///c:/Source/musicscene/src/lib/contentIndex.ts), [`src/lib/searchUtils.ts`](file:///c:/Source/musicscene/src/lib/searchUtils.ts), [`src/app/sitemap.ts`](file:///c:/Source/musicscene/src/app/sitemap.ts), and [`src/lib/guitarAudio.ts`](file:///c:/Source/musicscene/src/lib/guitarAudio.ts).
+    - Reached **0** `as unknown as` casts across the entire `src/` directory while keeping 0 TypeScript errors and 0 content validation errors across 303 files.
 
 ---
 

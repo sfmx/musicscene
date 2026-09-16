@@ -39,7 +39,7 @@
 - [x] Remove `vexflow`/`vextab` from `package.json` and `layout.tsx` global includes (completed)
 - [x] Extract `getDifficultyColor()` and `removeConsecutiveDuplicates()` into `src/lib/utils.ts` (completed)
 - [ ] Move hardcoded metadata from `songData.ts` into each song's JSON `metadata` field
-- [ ] Fix `as unknown as SongData` casts by aligning JSON schema with TypeScript interfaces
+- [x] Fix `as unknown as SongData` casts by aligning JSON schema with TypeScript interfaces (completed)
 - [x] Remove unused `ChordProgressionVisualization.tsx` and `MusicalAnalysisSection.tsx` (completed)
 - [x] Standardize AlphaTab components: keep `AlphaTexRenderer` (full), remove/redirect stubs (completed)
 - [ ] Pick one test framework (Jest or Vitest, not both)

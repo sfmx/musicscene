@@ -330,5 +330,5 @@ export interface ScaleIndexData {
 }
 
 export function getScaleIndexData(): ScaleIndexData {
-  return scaleIndexData as unknown as ScaleIndexData;
+  return scaleIndexData;
 }

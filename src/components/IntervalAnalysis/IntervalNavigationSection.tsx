@@ -27,7 +27,7 @@ export default function IntervalNavigationSection({ journeySection }: Props) {
             </div>
             <div className="text-center pt-3 border-t border-slate-200 dark:border-slate-800/80">
               <span className="text-cyan-600 dark:text-cyan-400 group-hover:text-cyan-500 dark:group-hover:text-cyan-300 font-semibold text-xs tracking-wide uppercase transition-colors">
-                {link.linkText} &rarr;
+                {link.linkText || link.actionText || 'Explore'} &rarr;
               </span>
             </div>
           </Link>

@@ -16,7 +16,7 @@ export function getGuitarAudioContext(): AudioContext | null {
   if (typeof window === 'undefined') return null;
 
   if (!audioCtx) {
-    const AudioCtxClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    const AudioCtxClass = window.AudioContext || (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
     if (AudioCtxClass) {
       audioCtx = new AudioCtxClass();
     }

@@ -29,7 +29,7 @@ function CardComponent({ card }: { card: GearContentCard }) {
           </h3>
           {card.badge && (
             <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30">
-              {card.badge.text}
+              {typeof card.badge === 'string' ? card.badge : card.badge.text}
             </span>
           )}
         </div>
