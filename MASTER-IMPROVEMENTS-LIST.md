@@ -29,8 +29,11 @@ This document tracks all planned, ongoing, and recommended improvements for the 
   - **Status:** Completed. Integrated debounced `ResizeObserver`, automatic multi-system staff breaks on mobile viewports (<640px), and flexible toolbar wrapping.
 - [x] **P2: Interactive Fretboard Note Strumming / Click-to-Play**
   - **Status:** Completed. Integrated WebAudio guitar synthesizer note playback into [`ScaleVisualization.tsx`](file:///c:/Source/musicscene/src/components/SongAnalysis/ScaleVisualization.tsx) and [`ModernFretboardVisualizer.tsx`](file:///c:/Source/musicscene/src/components/ModernFretboardVisualizer.tsx) with active visual pulse animation and screen-reader accessibility.
-- [ ] **P2: Dynamic Audio Backing Tracks & Metronome Count-In Audio**
-  - **Target:** Add audio click sound synthesis during count-in measures and provide optional drum groove / click-track backing presets for practice exercises.
+- [x] **P2: Dynamic Audio Backing Tracks & Metronome Count-In Audio**
+  - **Status:** Completed. Integrated precision WebAudio rhythm engine with:
+    - 1-measure audible count-in (4, 3, 2, 1) with downbeat pitch accentuation (1760 Hz vs 880 Hz) and visual animated countdown overlays.
+    - Synchronized rhythm backing track presets (`Off`, `Click` metronome, `Rock` 4/4 drum groove with kick/snare/hi-hat, and `Shuffle` blues swing).
+    - Dynamic lookahead scheduling synchronized with playhead seek, BPM stepper, and speed multipliers.
 
 ---
 
