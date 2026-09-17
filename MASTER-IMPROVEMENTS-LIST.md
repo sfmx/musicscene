@@ -88,8 +88,22 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Batch 3E & Final Catalog Pass (21 songs + 44 legacy songs / 216 sections): Final upgrades and full catalog cleanup (*Every Rose Has Its Thorn*, *Photograph*, *All Blues*, *Classical Gas*, *Radioactive*, *Europa*, *The Thrill Is Gone*, etc.).
     - Catalog-wide audit verified: **579 sections audited across 107 songs, 0 syntactically invalid tabs, exactly 0 generic placeholder sections remaining**.
     - Fully validated, built (440 static pages), deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated.
-- [ ] **P1: Universal Scale Diagram Verification across Catalog**
-  - **Target:** Ensure every song analysis page has populated `musicalAnalysis.keyAndScale.scalesUsed` entries and renders interactive fretboard scale diagrams matching the song's key and solo positions.
+- [x] **P1: Universal Scale Diagram Verification across Catalog**
+  - **Status:** Completed.
+    - Verified all 107 catalog songs feature populated, validated `musicalAnalysis.keyAndScale.scalesUsed` entries (285 total scales across 107 songs, 2-5 scales per song with scale title, note sequence, and musical application).
+    - Repaired 6 legacy song data scale definitions:
+      - `black-hole-sun.json`: Replaced description text with authentic G Mixolydian (`"G - A - B - C - D - E - F"`).
+      - `eye-of-the-tiger.json`: Normalized C blues scale note string to `"C - Eb - F - F# - G - Bb"`.
+      - `hurt-so-good.json`: Fixed hyphen spacing and added authentic E Minor Blues (`"E - G - A - A# - B - D"`).
+      - `riptide.json`: Cleaned capo text out of scale note string into `"C - D - E - F - G - A - B"`.
+      - `superstition.json`: Corrected enharmonic `Cb` to `B` in Eb natural minor.
+      - `the-final-countdown.json`: Corrected enharmonic `E#` to `F` in F# harmonic minor.
+    - Upgraded [`ScaleVisualization.tsx`](file:///c:/Source/musicscene/src/components/SongAnalysis/ScaleVisualization.tsx):
+      - Comprehensive bidirectional enharmonic matching across standard accidentals (`C#`/`D♭`, `D#`/`E♭`, `F#`/`G♭`, `G#`/`A♭`, `A#`/`B♭`) and diatonic enharmonics (`B`/`C♭`, `E`/`F♭`, `C`/`B#`, `F`/`E#`).
+      - Dynamic active root detection (`scaleNotes[0]` with primary key fallback) ensuring red root highlights dynamically track the active scale selection on fretboards for both sharp and flat keys.
+      - Fixed tooltip duplication and added defensive empty-scale guards.
+    - Added automated Vitest suite in [`src/lib/__tests__/scalesUsed.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/scalesUsed.test.ts) (115 tests) enforcing note validity, chromatic fretboard mapping, and schema compliance across all 107 songs.
+    - Built and verified with 0 errors across 440 static pages, deployed to S3 (`s3://musicscene`), and invalidated CloudFront cache (`IAH126RRDR6V3SGY529Y5DFNWK`).
 - [ ] **P2: Authentic Tuning & Tempo Audit**
   - **Target:** Cross-check half-step down (E♭ standard), drop D, and non-standard tunings across rock and metal catalog songs (e.g., Van Halen, Hendrix, Guns N' Roses).
 

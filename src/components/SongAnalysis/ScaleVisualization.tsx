@@ -20,6 +20,8 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
   const [numFrets, setNumFrets] = useState(12);
   const [activeNoteKey, setActiveNoteKey] = useState<string | null>(null);
 
+  if (!scales || scales.length === 0) return null;
+
   const handleNoteClick = (strIdx: number, fretNum: number) => {
     playGuitarNote(strIdx, fretNum, { volume: 0.45, duration: 2.0 });
     const key = `${strIdx}-${fretNum}`;
@@ -74,36 +76,48 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
     return uniqueNotes;
   };
 
+  // Comprehensive enharmonic mapping
+  const enharmonics: { [key: string]: string[] } = {
+    'C#': ['Db'],
+    'D#': ['Eb'],
+    'F#': ['Gb'],
+    'G#': ['Ab'],
+    'A#': ['Bb'],
+    'Db': ['C#'],
+    'Eb': ['D#'],
+    'Gb': ['F#'],
+    'Ab': ['G#'],
+    'Bb': ['A#'],
+    'B': ['Cb'],
+    'Cb': ['B'],
+    'E': ['Fb'],
+    'Fb': ['E'],
+    'C': ['B#'],
+    'B#': ['C'],
+    'F': ['E#'],
+    'E#': ['F']
+  };
+
+  // Check if two notes match directly or enharmonically
+  const isNoteMatch = (noteA: string, noteB: string): boolean => {
+    if (!noteA || !noteB) return false;
+    if (noteA === noteB) return true;
+    const eqA = enharmonics[noteA] || [];
+    if (eqA.includes(noteB)) return true;
+    const eqB = enharmonics[noteB] || [];
+    return eqB.includes(noteA);
+  };
+
   // Check if a note is in the scale
   const isNoteInScale = (note: string, scaleNotes: string[]): boolean => {
-    // Direct check first - most efficient for exact matches
-    if (scaleNotes.includes(note)) {
-      return true;
-    }
-
-    // Handle enharmonic equivalents only if needed
-    const enharmonics: { [key: string]: string[] } = {
-      'C#': ['Db'],
-      'D#': ['Eb'],
-      'F#': ['Gb'],
-      'G#': ['Ab'],
-      'A#': ['Bb'],
-      'Db': ['C#'],
-      'Eb': ['D#'],
-      'Gb': ['F#'],
-      'Ab': ['G#'],
-      'Bb': ['A#']
-    };
-
-    // Check if any enharmonic equivalent is in the scale
-    const equivalents = enharmonics[note] || [];
-    return equivalents.some(equiv => scaleNotes.includes(equiv));
+    return scaleNotes.some(scaleNote => isNoteMatch(note, scaleNote));
   };
 
   // Generate fretboard with accurate note positions
   const generateFretboard = () => {
-    const selectedScaleData = scales[selectedScale];
+    const selectedScaleData = scales[selectedScale] || scales[0];
     const scaleNotes = parseScaleNotes(selectedScaleData?.notes || '');
+    const activeRoot = scaleNotes[0] || primaryKey?.split(' ')[0] || '';
 
     return (
       <div className="bg-slate-950 p-4 rounded-xl border border-slate-800">
@@ -323,7 +337,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                         {Array.from({ length: numFrets + 1 }, (_, fret) => {
                           const noteAtFret = getNoteAtFret(stringIndex, fret);
                           const isInScale = isNoteInScale(noteAtFret, scaleNotes);
-                          const isRoot = noteAtFret === primaryKey.split(' ')[0];
+                          const isRoot = isNoteMatch(noteAtFret, activeRoot);
 
                           return (
                             <div key={fret} className="flex-1 h-10 flex items-center justify-center relative">
@@ -443,12 +457,15 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
       <div className="mb-6 bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
         <h4 className="font-bold text-slate-900 dark:text-white text-base mb-2">
           {scales[selectedScale]?.scale}
+          {(scales[selectedScale] || scales[0])?.scale}
         </h4>
         <p className="text-xs text-slate-700 dark:text-slate-300 mb-1.5 font-mono">
           <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {scales[selectedScale]?.notes}
+          <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {(scales[selectedScale] || scales[0])?.notes}
         </p>
         <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
           <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {scales[selectedScale]?.application}
+          <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {(scales[selectedScale] || scales[0])?.application}
         </p>
       </div>
 
