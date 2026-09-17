@@ -66,8 +66,19 @@ export class AlphaTexValidator {
       return;
     }
 
+    // Allow valid bar-level directives like \ts <num> <den> and \tempo <bpm>
+    const cleanedBar = bar
+      .replace(/\\ts\s+\d+\s+\d+/g, '')
+      .replace(/\\tempo\s+\d+(\s+\.)?/g, '')
+      .trim();
+
+    if (cleanedBar.length === 0) {
+      return;
+    }
+
     // Parse notes/chords properly, handling parentheses for chords
     const notes = this.parseNotesFromBar(bar);
+    const notes = this.parseNotesFromBar(cleanedBar);
     
     notes.forEach((note, noteIndex) => {
       this.validateNote(note, barIndex, noteIndex, result);
