@@ -40,15 +40,11 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
   }
 
   let body = trimmedTex;
-  // If there's already a metadata header dot separator, preserve it (or update tempo if provided)
+  // If there's already a metadata header dot separator, preserve it
   if (trimmedTex.includes('.')) {
     const metaMatch = trimmedTex.match(/^(\\tempo\s+\d+.*?)\s+\.\s+([\s\S]*)$/);
     if (metaMatch) {
-      if (tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300) {
-        header = `\\tempo ${Math.round(tempo)} . `;
-      } else {
-        header = `${metaMatch[1]} . `;
-      }
+      header = `${metaMatch[1]} . `;
       body = metaMatch[2];
     }
   }
@@ -141,12 +137,6 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
       return rawBar;
     }
 
-    // Case C2: Overflowing single-note runs (> 4 notes) without duration directive
-    if (tokens.length > 4 && !trimmed.includes('(') && !trimmed.includes(':') && tokens.every(t => /^\d{1,2}\.\d$/.test(t))) {
-      currentDuration = 4;
-      return ` ${chunkNotesIntoBars(tokens).join(' | ')} `;
-    }
-
     // Case D: 6-note bars without explicit durations or parentheses
     if (tokens.length === 6 && !trimmed.includes('(') && !trimmed.includes(':')) {
       const parsed = tokens.map(t => {
@@ -216,6 +206,12 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
         currentDuration = 2;
         return ` :4 ${tokens[0]} ${tokens[1]} ${tokens[2]}.2 `;
       }
+    }
+
+    // Case F: Overflowing single-note runs (> 4 notes) without duration directive
+    if (tokens.length > 4 && !trimmed.includes('(') && !trimmed.includes(':') && tokens.every(t => /^\d{1,2}\.\d$/.test(t))) {
+      currentDuration = 4;
+      return ` ${chunkNotesIntoBars(tokens).join(' | ')} `;
     }
 
     // Update currentDuration tracking if explicit duration directive is present

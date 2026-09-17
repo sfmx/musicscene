@@ -77,7 +77,6 @@ export class AlphaTexValidator {
     }
 
     // Parse notes/chords properly, handling parentheses for chords
-    const notes = this.parseNotesFromBar(bar);
     const notes = this.parseNotesFromBar(cleanedBar);
     
     notes.forEach((note, noteIndex) => {
