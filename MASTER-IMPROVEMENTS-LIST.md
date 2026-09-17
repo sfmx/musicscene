@@ -104,8 +104,25 @@ This document tracks all planned, ongoing, and recommended improvements for the 
       - Fixed tooltip duplication and added defensive empty-scale guards.
     - Added automated Vitest suite in [`src/lib/__tests__/scalesUsed.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/scalesUsed.test.ts) (115 tests) enforcing note validity, chromatic fretboard mapping, and schema compliance across all 107 songs.
     - Built and verified with 0 errors across 440 static pages, deployed to S3 (`s3://musicscene`), and invalidated CloudFront cache (`IAH126RRDR6V3SGY529Y5DFNWK`).
-- [ ] **P2: Authentic Tuning & Tempo Audit**
-  - **Target:** Cross-check half-step down (E♭ standard), drop D, and non-standard tunings across rock and metal catalog songs (e.g., Van Halen, Hendrix, Guns N' Roses).
+- [x] **P2: Authentic Tuning & Tempo Audit**
+  - **Status:** Completed.
+    - Audited all 107 catalog songs for tuning accuracy, naming consistency, and numeric tempo playback compatibility.
+    - Corrected recorded tunings for flagship rock anthems to authentic **Half-Step Down (Eb Ab Db Gb Bb Eb)**:
+      - *Eruption* (Van Halen, `eruption.json`)
+      - *Welcome to the Jungle* (Guns N' Roses, `welcome-to-the-jungle.json`)
+      - *Every Rose Has Its Thorn* (Poison, `every-rose-has-its-thorn.json`)
+      - *Rock and Roll All Nite* (KISS, `rock-and-roll-all-nite.json`)
+    - Canonicalized tuning strings across the catalog:
+      - Normalized 11 legacy `"Standard (E-A-D-G-B-E)"` files to standard `"Standard (EADGBE)"`.
+      - Canonicalized E♭ tuning variations into uniform `"Half-Step Down (Eb Ab Db Gb Bb Eb)"`.
+      - Normalized capo formatting (`"Standard (EADGBE) with Capo 1"`).
+    - Fixed non-numeric tempo strings that caused `parseInt(songInfo.tempo, 10)` to return `NaN` and default to 80 BPM in the interactive AlphaTab player:
+      - *Eruption*: `"104 BPM (free-form cadenza)"`
+      - *Welcome to the Jungle*: `"124 BPM (approx. 120-128 BPM)"`
+      - *Schism*: `"87 BPM (varies 47/67/87 BPM)"`
+      - *Stairway to Heaven*: `"72 BPM (accelerates 63-98 BPM)"`
+    - Added automated Vitest suite [`src/lib/__tests__/tuningTempo.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/tuningTempo.test.ts) (228 tests) enforcing valid numeric tempos (40–300 BPM) and canonical tuning patterns across all 107 songs.
+    - Verified 0 errors across `content:index`, `content:validate`, `tsc --noEmit`, 454 Vitest tests, and Next.js static export; deployed to S3 and invalidated CloudFront cache (`ID88IAI41SJJ84WNF6P1LTZMRK`).
 
 ---
 
