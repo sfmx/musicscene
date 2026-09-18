@@ -14,6 +14,8 @@ import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
+import JsonLdScript from '@/components/JsonLdScript';
+import { getProgressionPageJsonLd } from '@/lib/structuredData';
 
 interface Props {
   progressionSlug: string;
@@ -48,6 +50,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
   }
 
   const title = displayName || data.progressionInfo.pageTitle;
+  const progressionJsonLd = getProgressionPageJsonLd(data, progressionSlug);
   const badges: HeaderBadge[] = data.progressionInfo.tags.map((tag, i) => ({
     label: tag,
     color: i === 0 ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' : i === 1 ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30' : 'bg-purple-500/20 text-purple-300 border-purple-500/30'
@@ -61,6 +64,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
         category="🎼 Chord Progression &amp; Harmonic Movement"
         badges={badges}
       />
+      <JsonLdScript data={progressionJsonLd} />
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 pb-20 transition-colors">
         <main className="max-w-6xl mx-auto px-4 py-8">
           <Breadcrumbs pathname={`/lessons/theory/progressions/${progressionSlug}`} pageTitle={data.progressionInfo.name} />

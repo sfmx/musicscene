@@ -14,6 +14,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import { getDifficultyColor } from '@/utils/theme';
+import JsonLdScript from '@/components/JsonLdScript';
+import { getPracticePageJsonLd } from '@/lib/structuredData';
 
 interface Props {
   practiceSlug: string;
@@ -24,6 +26,7 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
   const data: PracticeDetailData = getPracticeData(practiceSlug);
   const pathname = `/lessons/practice/${data.category}/${practiceSlug}`;
   const nav = getSequentialNav('practice', practiceSlug, { category: data.category });
+  const practiceJsonLd = getPracticePageJsonLd(data, practiceSlug);
 
   return (
     <Layout>
@@ -32,6 +35,7 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
         subtitle={data.pageInfo.subtitle}
         category="Practice Drills & Routines"
       />
+      <JsonLdScript data={practiceJsonLd} />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 py-8 transition-colors">
         <main className="max-w-6xl mx-auto px-4">

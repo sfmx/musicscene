@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import { getSongData } from '@/lib/songData';
+import { getSongData, SongData } from '@/lib/songData';
 import SongInfoSection from './SongInfoSection';
 import ConsolidatedMusicalAnalysis from './ConsolidatedMusicalAnalysis';
 import ImprovedChordProgressionVisualization from './ImprovedChordProgressionVisualization';
@@ -27,6 +27,7 @@ import ExternalSongLinks from './ExternalSongLinks';
 import WhyThisSongWorksSection from './WhyThisSongWorksSection';
 import JsonLdScript from '@/components/JsonLdScript';
 import { SITE_CONFIG } from '@/lib/siteConfig';
+import { getSongPageJsonLd } from '@/lib/structuredData';
 
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
@@ -34,19 +35,19 @@ interface SongAnalysisPageTemplateProps {
 }
 
 export default function SongAnalysisPageTemplate({ songSlug, displayName }: SongAnalysisPageTemplateProps) {
-  const songData = getSongData(songSlug);
-  const nav = getSequentialNav('song-analysis', songSlug);
+  const songData: SongData | null = getSongData(songSlug);
+  const nav = getSequentialNav('song', songSlug);
 
   if (!songData) {
     return (
       <Layout>
         <Header
           title="Song Not Found"
-          subtitle="The requested song analysis could not be found"
-          category="Directory"
+          subtitle={`Could not find song analysis data for "${displayName}"`}
+          category="Song Analysis & Breakdown"
         />
-        <main className="max-w-6xl mx-auto px-4 py-16 text-center text-slate-100 bg-slate-950">
-          <h1 className="text-2xl font-bold text-white mb-4">Song Analysis Not Found</h1>
+        <main className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h1 className="text-2xl font-bold text-white mb-4">Song Not Found</h1>
           <p className="text-slate-400 mb-8">The song &quot;{songSlug}&quot; could not be found in our database.</p>
           <Link href="/lessons/songs/song-analysis" className="text-amber-400 hover:text-amber-300 font-bold hover:underline">
             ← Back to Song Analysis Directory
@@ -56,39 +57,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
     );
   }
 
-  const songJsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'MusicComposition',
-      name: songData.songInfo.title,
-      composer: {
-        '@type': 'Person',
-        name: songData.songInfo.artist,
-      },
-      musicalKey: songData.musicalAnalysis?.keyAndScale?.primaryKey || songData.songInfo.key,
-      timeRequired: songData.songInfo.duration,
-      genre: songData.songInfo.genre,
-      url: `${SITE_CONFIG.baseUrl}/lessons/songs/song-analysis/${songSlug}/`,
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: `"${displayName}" - Complete Guitar Song Analysis & Harmonic Breakdown`,
-      description: `Learn how to play and understand "${songData.songInfo.title}" by ${songData.songInfo.artist}. Complete guitar chords, techniques, scale visualizations, and harmonic music theory analysis.`,
-      author: {
-        '@type': 'Person',
-        name: 'Jason Smith',
-        jobTitle: 'Founder & Lead Instructor',
-        url: `${SITE_CONFIG.baseUrl}/about/`,
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: SITE_CONFIG.name,
-        url: SITE_CONFIG.baseUrl,
-      },
-      mainEntityOfPage: `${SITE_CONFIG.baseUrl}/lessons/songs/song-analysis/${songSlug}/`,
-    },
-  ];
+  const songJsonLd = getSongPageJsonLd(songData, songSlug);
 
   return (
     <Layout>

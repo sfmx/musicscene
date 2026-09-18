@@ -162,8 +162,19 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Updated [`SongAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/SongAnalysis/SongAnalysisPageTemplate.tsx) to render direct interactive lesson links on technique cards ("Related Lesson: [Lesson Title] →").
     - Added automated Vitest suite in [`src/lib/__tests__/crossReferences.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/crossReferences.test.ts) (25 tests, all passing; repository total 484 tests).
     - 0 TypeScript errors, 0 content validation errors across 303 files, full static pre-rendering (440 pages), deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`I25JJY15CG6YA5VGA66UUQ6KH7`).
-- [ ] **P1: Enhanced JSON-LD Structured Data**
-  - **Target:** Add rich `MusicComposition`, `HowTo`, and `FAQPage` schemas to all chord, scale, mode, and practice lesson templates.
+- [x] **P1: Enhanced JSON-LD Structured Data**
+  - **Status:** Completed.
+    - Expanded [`src/lib/jsonLd.ts`](file:///c:/Source/musicscene/src/lib/jsonLd.ts) to support Google-compliant `FAQPage` (`getFAQPageJsonLd`), rich multi-step `HowTo` (`getHowToJsonLd`) with `HowToStep`, `HowToTool`, and `HowToSupply`, and extended `MusicComposition` (`getMusicCompositionJsonLd`) with `musicalKey` and `timeRequired`.
+    - Created typed domain structured data engine in [`src/lib/structuredData.ts`](file:///c:/Source/musicscene/src/lib/structuredData.ts):
+      - `getChordPageJsonLd()`: Injects `Article`, `HowTo` (formula, essential voicings, musical progressions, finger position), and `FAQPage` (formula, musical role, clean fretting, famous songs) across all 17 chord lessons.
+      - `getScalePageJsonLd()`: Injects `Article`, `HowTo` (interval formula, 5 box positions, diatonic chords, soloing), and `FAQPage` (intervals, practice routine, soloing chords, famous songs) across all 14 scale pages.
+      - `getModePageJsonLd()`: Injects `Article`, `HowTo` (modal formula, fretboard shapes, chord vamps, phrasing), and `FAQPage` (characteristics, unique color, modal progressions, iconic songs) across all 7 mode pages.
+      - `getProgressionPageJsonLd()`: Injects `Article`, `HowTo` (Roman numeral analysis, voicings, strumming, soloing), and `FAQPage` (chords, harmonic theory, transposition, famous songs) across all 16 progression lessons.
+      - `getPracticePageJsonLd()`: Injects `Article`, `HowTo` (step-by-step drill exercises, tempo recommendations, metronome tools), and `FAQPage` (drill objective, tempo scaling, frequency) across all 27 practice routines.
+      - `getSongPageJsonLd()`: Injects `MusicComposition`, `Article`, and `FAQPage` (key/tempo, tuning, scales used, chord progressions) across all 107 song analysis pages.
+    - Embedded structured data scripts via [`src/components/JsonLdScript.tsx`](file:///c:/Source/musicscene/src/components/JsonLdScript.tsx) into all 6 core page templates (`ChordAnalysisPageTemplate.tsx`, `ScaleAnalysisPageTemplate.tsx`, `ModeAnalysisPageTemplate.tsx`, `ProgressionAnalysisPageTemplate.tsx`, `PracticeDetailPageTemplate.tsx`, and `SongAnalysisPageTemplate.tsx`).
+    - Added automated Vitest suite in [`src/lib/__tests__/structuredData.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/structuredData.test.ts) (9 tests, all passing; repository total 493 tests).
+    - Verified static HTML pre-rendering of `<script type="application/ld+json">` across all 440 pages with zero runtime overhead, deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`IA0NYW13GQQLLDE2EI59PLUW4P`).
 - [ ] **P2: Dynamic Open Graph (OG) Social Cards**
   - **Target:** Automatically generate Twitter / Facebook preview images showing song title, artist, key, tempo, and guitar tab teaser.
 

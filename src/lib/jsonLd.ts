@@ -75,6 +75,8 @@ export interface SongCompositionOpts {
   artist: string;
   album?: string;
   genre?: string;
+  musicalKey?: string;
+  timeRequired?: string;
   url: string;
 }
 
@@ -94,15 +96,27 @@ export function getMusicCompositionJsonLd(opts: SongCompositionOpts) {
       },
     }),
     ...(opts.genre && { genre: opts.genre }),
+    ...(opts.musicalKey && { musicalKey: opts.musicalKey }),
+    ...(opts.timeRequired && { timeRequired: opts.timeRequired }),
     url: opts.url.startsWith('http') ? opts.url : `${SITE_CONFIG.baseUrl}${opts.url}`,
   };
+}
+
+export interface HowToStepItem {
+  name: string;
+  text: string;
+  url?: string;
+  image?: string;
 }
 
 export interface HowToOpts {
   title: string;
   description: string;
-  steps: string[];
+  steps: (string | HowToStepItem)[];
   url: string;
+  totalTime?: string;
+  tool?: string[];
+  supply?: string[];
 }
 
 export function getHowToJsonLd(opts: HowToOpts) {
@@ -112,10 +126,59 @@ export function getHowToJsonLd(opts: HowToOpts) {
     name: opts.title,
     description: opts.description,
     url: opts.url.startsWith('http') ? opts.url : `${SITE_CONFIG.baseUrl}${opts.url}`,
-    step: opts.steps.map((text, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      text,
+    ...(opts.totalTime && { totalTime: opts.totalTime }),
+    ...(opts.tool && opts.tool.length > 0 && {
+      tool: opts.tool.map((t) => ({ '@type': 'HowToTool', name: t })),
+    }),
+    ...(opts.supply && opts.supply.length > 0 && {
+      supply: opts.supply.map((s) => ({ '@type': 'HowToSupply', name: s })),
+    }),
+    step: opts.steps.map((step, i) => {
+      if (typeof step === 'string') {
+        return {
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: `Step ${i + 1}`,
+          text: step,
+        };
+      }
+      return {
+        '@type': 'HowToStep',
+        position: i + 1,
+        name: step.name,
+        text: step.text,
+        ...(step.url && { url: step.url }),
+        ...(step.image && { image: step.image }),
+      };
+    }),
+  };
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface FAQPageOpts {
+  questions: FAQItem[];
+  url?: string;
+}
+
+export function getFAQPageJsonLd(opts: FAQPageOpts) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    ...(opts.url && {
+      mainEntityOfPage: opts.url.startsWith('http') ? opts.url : `${SITE_CONFIG.baseUrl}${opts.url}`,
+    }),
+    mainEntity: opts.questions.map((q) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer,
+      },
     })),
   };
 }
+

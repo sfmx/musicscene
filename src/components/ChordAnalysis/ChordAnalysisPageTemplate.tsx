@@ -21,6 +21,8 @@ import GearRecommendations from '@/components/Revenue/GearRecommendations';
 import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
+import JsonLdScript from '@/components/JsonLdScript';
+import { getChordPageJsonLd } from '@/lib/structuredData';
 
 interface ChordAnalysisPageTemplateProps {
   chordSlug: string;
@@ -56,6 +58,7 @@ export default function ChordAnalysisPageTemplate({ chordSlug, displayName }: Ch
 
   const colorScheme = getColorScheme(chordData.chordInfo.colorScheme);
   const nav = getSequentialNav('chord', chordSlug);
+  const chordJsonLd = getChordPageJsonLd(chordData, chordSlug);
 
   const badges: HeaderBadge[] = chordData.chordInfo.tags.map((tag, i) => ({
     label: tag,
@@ -70,6 +73,7 @@ export default function ChordAnalysisPageTemplate({ chordSlug, displayName }: Ch
         category="🎼 Music Theory &amp; Chords"
         badges={badges}
       />
+      <JsonLdScript data={chordJsonLd} />
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 pb-20 transition-colors">
         <main className="max-w-6xl mx-auto px-4 py-8">
           <Breadcrumbs pathname={`/lessons/theory/chords/${chordSlug}`} pageTitle={chordData.chordInfo.name} />

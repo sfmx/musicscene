@@ -22,6 +22,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
+import JsonLdScript from '@/components/JsonLdScript';
+import { getScalePageJsonLd } from '@/lib/structuredData';
 
 interface ScaleAnalysisPageTemplateProps {
   scaleSlug: string;
@@ -115,6 +117,8 @@ export default function ScaleAnalysisPageTemplate({
     { label: 'Character', value: scaleData.scaleInfo.character }
   ];
 
+  const scaleJsonLd = getScalePageJsonLd(scaleData, scaleSlug);
+
   return (
     <Layout>
       <Header
@@ -123,6 +127,7 @@ export default function ScaleAnalysisPageTemplate({
         category="🎼 Guitar Scale Master Suite"
         badges={badges}
       />
+      <JsonLdScript data={scaleJsonLd} />
       
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 pb-20 transition-colors">
         <main className="max-w-6xl mx-auto px-4 py-8">

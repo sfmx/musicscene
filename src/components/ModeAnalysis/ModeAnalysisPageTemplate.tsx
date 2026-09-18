@@ -12,6 +12,8 @@ import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
+import JsonLdScript from '@/components/JsonLdScript';
+import { getModePageJsonLd } from '@/lib/structuredData';
 
 interface ModeAnalysisPageTemplateProps {
   modeSlug: string;
@@ -47,6 +49,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
   }
 
   const title = displayName || data.modeInfo.pageTitle;
+  const modeJsonLd = getModePageJsonLd(data, modeSlug);
   const badges: HeaderBadge[] = data.modeInfo.tags.map((tag, i) => ({
     label: tag,
     color: i === 0 ? 'bg-purple-500/20 text-purple-300 border-purple-500/30' : i === 1 ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30' : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
@@ -60,6 +63,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
         category="🎼 Modal Theory &amp; Harmony"
         badges={badges}
       />
+      <JsonLdScript data={modeJsonLd} />
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 pb-20 transition-colors">
         <main className="max-w-6xl mx-auto px-4 py-8">
           <Breadcrumbs pathname={`/lessons/theory/modes/${modeSlug}`} pageTitle={data.modeInfo.name} />
