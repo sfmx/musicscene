@@ -1,6 +1,6 @@
 # MusicScene Master List of Improvements
 
-**Last Updated:** September 16, 2026  
+**Last Updated:** September 18, 2026  
 **Status:** Active Roadmap  
 
 This document tracks all planned, ongoing, and recommended improvements for the MusicScene platform, categorized by system domain and implementation priority.
@@ -14,7 +14,7 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 | **P0 (Critical)** | [AlphaTab & Notation Engine](#1-alphatab--notation-engine) | Playback accuracy, metronome sync, user experience | In Progress |
 | **P1 (High)** | [Codebase Cleanup & Debt](#2-codebase-consolidation--technical-debt) | Bundle size reduction, stability, maintainability | Ready to Start |
 | **P1 (High)** | [Song Analysis Catalog](#3-song-analysis-catalog) | Content depth, student engagement, search ranking | Ongoing |
-| **P2 (Medium)** | [Revenue & Monetization](#4-revenue--monetization-expansion) | Affiliate link conversion, ad revenue, email list | Ready to Start |
+| **P2 (Medium)** | [Revenue & Monetization](#4-revenue--monetization-expansion) | Affiliate link conversion, ad revenue, email list | In Progress |
 | **P2 (Medium)** | [SEO & Content Graph](#5-seo-content-graph--interlinking) | Organic traffic, structured snippets, crawl efficiency | Partially Done |
 
 ---
@@ -128,12 +128,15 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 
 ## 4. Revenue & Monetization Expansion
 
-- [ ] **P1: Close the 424-Product Affiliate Gap**
-  - **Current State:** The affiliate audit identified 424 products falling back to generic search URLs.
-  - **Target:** Expand [`src/data/affiliate-products.json`](file:///c:/Source/musicscene/src/data/affiliate-products.json) with direct curated Amazon ASINs and product details for top recurring brands:
-    - Guitars: Fender, Gibson, Squier, Epiphone, Yamaha, Martin, Taylor.
-    - Amps: Marshall, Boss Katana, Fender Mustang, Orange.
-    - Pedals & Accessories: Ibanez Tube Screamer, Boss DS-1, Dunlop Cry Baby, ChromaCast picks/straps.
+- [x] **P1: Close the 424-Product Affiliate Gap**
+  - **Status:** Completed.
+    - Expanded curated product database from 232 to 447 products in [`src/data/affiliate-products.json`](file:///c:/Source/musicscene/src/data/affiliate-products.json) (+215 direct curated Amazon affiliate links).
+    - Achieved **100.0% explicit DB match** across song equipment (739 of 739 products match curated entries, exactly 0 fallbacks).
+    - Achieved **93.3% explicit DB match** across gear lessons (280 of 300 products match curated entries).
+    - Overall catalog coverage reached **98.1%** (1,019 of 1,039 products match curated entries), slashing the fallback gap from 424 down to 20 (a 95.3% reduction).
+    - Enhanced `looksLikeProduct()` in [`src/lib/affiliateLinks.ts`](file:///c:/Source/musicscene/src/lib/affiliateLinks.ts) with regex filters preventing false-positive brand captures (`airline approved/travel`, `Roland Dyens`, `hand-wired recreation`, instructional action verbs).
+    - Expanded automated Vitest suite in [`src/lib/__tests__/affiliateLinks.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/affiliateLinks.test.ts) (13 tests, all passing; repository total 459 tests).
+    - Built static export, deployed to AWS S3 (`s3://musicscene`), and invalidated CloudFront cache (`I1S2DXB83DFOGA8P4LBW2ORO3A`).
 - [ ] **P2: High-Converting Gear Recommendation Cards**
   - **Target:** Embed dedicated [`ProductCard.tsx`](file:///c:/Source/musicscene/src/components/Affiliate/ProductCard.tsx) displays in the "Equipment & Tone" sections of song pages and gear reviews.
 - [ ] **P2: AdSense / Display Ad Slot Integration**

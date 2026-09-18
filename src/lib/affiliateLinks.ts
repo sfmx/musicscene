@@ -54,6 +54,9 @@ export function looksLikeProduct(text: string): boolean {
   // Skip common false-positive phrases where brand names appear as substrings
   if (/\bartists?\b/i.test(text) && !/\b(audio-technica|art)\s+\w/i.test(text)) return false;
   if (/^(start|begin|try|use|play|keep|avoid|practice)\b/i.test(text.trim())) return false;
+  if (/^(start|begin|try|use|play|keep|avoid|practice|need:)\b/i.test(text.trim())) return false;
+  if (/\bairline\s+(approved|travel|safe)\b/i.test(text)) return false;
+  if (/\b(roland dyens|descended from|hand-wired recreation)\b/i.test(text)) return false;
 
   return BRANDS_LOWER.some((brand, idx) => {
     if (!lower.includes(brand)) return false;
