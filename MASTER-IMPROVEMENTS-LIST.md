@@ -137,8 +137,18 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Enhanced `looksLikeProduct()` in [`src/lib/affiliateLinks.ts`](file:///c:/Source/musicscene/src/lib/affiliateLinks.ts) with regex filters preventing false-positive brand captures (`airline approved/travel`, `Roland Dyens`, `hand-wired recreation`, instructional action verbs).
     - Expanded automated Vitest suite in [`src/lib/__tests__/affiliateLinks.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/affiliateLinks.test.ts) (13 tests, all passing; repository total 459 tests).
     - Built static export, deployed to AWS S3 (`s3://musicscene`), and invalidated CloudFront cache (`I1S2DXB83DFOGA8P4LBW2ORO3A`).
-- [ ] **P2: High-Converting Gear Recommendation Cards**
-  - **Target:** Embed dedicated [`ProductCard.tsx`](file:///c:/Source/musicscene/src/components/Affiliate/ProductCard.tsx) displays in the "Equipment & Tone" sections of song pages and gear reviews.
+- [x] **P2: High-Converting Gear Recommendation Cards**
+  - **Status:** Completed.
+    - Upgraded [`src/components/SongAnalysis/SongAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/SongAnalysis/SongAnalysisPageTemplate.tsx):
+      - Embedded compact [`ProductCard.tsx`](file:///c:/Source/musicscene/src/components/Revenue/ProductCard.tsx) showcases for primary recommended guitar and amplifier models.
+      - Integrated `getEffectPedalProduct()` detection across Overdrive/Distortion, Delay/Reverb, and Modulation/Other signal chains to automatically render dedicated product cards for cited pedals.
+      - Integrated multi-retailer price check buttons (`Amazon`, `Sweetwater`) for alternative guitar and amplifier models.
+    - Upgraded [`src/components/GearLessons/GearLessonDetailPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/GearLessons/GearLessonDetailPageTemplate.tsx):
+      - Integrated `⭐ Curated Gear` badges for products with curated database entries.
+      - Embedded multi-retailer price check bars (`Amazon`, `Sweetwater`, `Thomann`) on gear review cards with styled affiliate badges.
+    - Refactored [`src/components/Revenue/GearRecommendations.tsx`](file:///c:/Source/musicscene/src/components/Revenue/GearRecommendations.tsx) to delegate to `<ProductCard />` for cohesive, high-converting gear cards across all lesson types.
+    - Added curated entries for 14 iconic pedals and gear items in `affiliate-products.json` (`DigiTech Whammy`, `Vox V847`, `Boss DD-3`, `Fulltone OCD`, `Marshall ShredMaster`, `Dallas-Arbiter Fuzz Face`, etc.).
+    - Verified 0 TypeScript errors, 0 ESLint errors, 496 passing Vitest tests, full static generation of all 440+ pages, deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`I23XBLPY7XP927NSJOJ3WBCHRO`).
 - [ ] **P2: AdSense / Display Ad Slot Integration**
   - **Target:** Place non-intrusive banner slots (desktop leaderboard, mobile inline) in lesson templates with layout stability (zero Cumulative Layout Shift).
 - [ ] **P2: Email Newsletter / Free Practice Guide Lead Magnet**

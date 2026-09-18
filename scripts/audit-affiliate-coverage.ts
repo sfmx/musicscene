@@ -40,28 +40,11 @@ const affiliateData: AffiliateProductsFile = JSON.parse(
 // ---------------------------------------------------------------------------
 
 import { AFFILIATE_BRANDS } from '../src/lib/affiliateBrands';
-
-const BRANDS_LOWER = AFFILIATE_BRANDS.map((b) => b.toLowerCase());
+import { looksLikeProduct } from '../src/lib/affiliateLinks';
 
 // ---------------------------------------------------------------------------
-// 3. Core matching functions (reimplemented to avoid runtime config deps)
+// 3. Core matching functions
 // ---------------------------------------------------------------------------
-
-/**
- * Check whether `text` contains any brand from the brands array (case-insensitive).
- * Returns false for pure numbers, prices, or spec-like strings.
- */
-function looksLikeProduct(text: string): boolean {
-  if (!text || text.length < 5) return false;
-
-  const lower = text.toLowerCase();
-
-  // Skip pure numbers, prices, or spec-like strings
-  if (/^\$?\d/.test(text.trim())) return false;
-  if (/^\d+[\s-]?(bit|hz|khz|ms|bpm|mm|"|inch)/i.test(text.trim())) return false;
-
-  return BRANDS_LOWER.some((brand) => lower.includes(brand));
-}
 
 /**
  * Check whether `text` matches any pattern in affiliate-products.json.

@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
-import { getGearDetailData, GearDetailData, GearContentSection, GearContentCard } from '@/lib/gearLessonData';
+import { getGearDetailData, GearContentSection, GearContentCard } from '@/lib/gearLessonData';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
 import AffiliateLink from '@/components/Revenue/AffiliateLink';
@@ -12,12 +12,16 @@ import SmartAffiliateText from '@/components/Revenue/SmartAffiliateText';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
+import { getAffiliateLink, getRetailerLinks } from '@/lib/affiliateLinks';
 
 function CardComponent({ card }: { card: GearContentCard }) {
+  const explicitProduct = getAffiliateLink(card.title);
+  const retailers = getRetailerLinks(card.title);
+
   return (
     <div className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
       <div>
-        <div className="flex items-start justify-between mb-2">
+        <div className="flex items-start justify-between gap-2 mb-2">
           <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2">
             {card.icon && <span className="text-lg">{card.icon}</span>}
             {card.number !== undefined && (
@@ -27,11 +31,18 @@ function CardComponent({ card }: { card: GearContentCard }) {
             )}
             <AffiliateLink productName={card.title} className="text-slate-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" />
           </h3>
-          {card.badge && (
-            <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30">
-              {typeof card.badge === 'string' ? card.badge : card.badge.text}
-            </span>
-          )}
+          <div className="flex items-center gap-1.5 shrink-0">
+            {card.badge && (
+              <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30">
+                {typeof card.badge === 'string' ? card.badge : card.badge.text}
+              </span>
+            )}
+            {explicitProduct && (
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-500/30">
+                ⭐ Curated Gear
+              </span>
+            )}
+          </div>
         </div>
         {card.description && <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-3">{card.description}</p>}
         {card.fields && card.fields.length > 0 && (
@@ -55,6 +66,44 @@ function CardComponent({ card }: { card: GearContentCard }) {
             </li>
           ))}
         </ul>
+      )}
+      {retailers && (
+        <div className="mt-4 pt-3.5 border-t border-slate-200 dark:border-slate-800/80">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+              Check Price & Availability:
+            </span>
+            <span className="text-[9px] text-slate-400 dark:text-slate-500">
+              Affiliate links
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <a
+              href={retailers.amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              className="flex-1 min-w-[75px] text-center py-1.5 px-2 rounded-lg bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 text-amber-900 dark:text-amber-300 font-semibold transition-colors border border-amber-300/80 dark:border-amber-500/30 shadow-xs"
+            >
+              Amazon
+            </a>
+            <a
+              href={retailers.sweetwaterUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              className="flex-1 min-w-[75px] text-center py-1.5 px-2 rounded-lg bg-blue-50 dark:bg-blue-500/10 hover:bg-blue-100 dark:hover:bg-blue-500/20 text-blue-900 dark:text-blue-300 font-semibold transition-colors border border-blue-300/80 dark:border-blue-500/30 shadow-xs"
+            >
+              Sweetwater
+            </a>
+            <a
+              href={retailers.thomannUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              className="flex-1 min-w-[75px] text-center py-1.5 px-2 rounded-lg bg-emerald-50 dark:bg-emerald-500/10 hover:bg-emerald-100 dark:hover:bg-emerald-500/20 text-emerald-900 dark:text-emerald-300 font-semibold transition-colors border border-emerald-300/80 dark:border-emerald-500/30 shadow-xs"
+            >
+              Thomann
+            </a>
+          </div>
+        </div>
       )}
     </div>
   );

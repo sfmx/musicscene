@@ -20,13 +20,13 @@ import AdSlot from '@/components/Revenue/AdSlot';
 import AffiliateLink from '@/components/Revenue/AffiliateLink';
 import ProductCard from '@/components/Revenue/ProductCard';
 import SmartAffiliateText from '@/components/Revenue/SmartAffiliateText';
+import { getEffectPedalProduct, getRetailerLinks } from '@/lib/affiliateLinks';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import ExternalSongLinks from './ExternalSongLinks';
 import WhyThisSongWorksSection from './WhyThisSongWorksSection';
 import JsonLdScript from '@/components/JsonLdScript';
-import { SITE_CONFIG } from '@/lib/siteConfig';
 import { getSongPageJsonLd } from '@/lib/structuredData';
 
 interface SongAnalysisPageTemplateProps {
@@ -300,12 +300,44 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     </div>
                     {songData.equipment.guitar.alternatives.length > 0 && (
                       <div>
-                        <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Alternatives:</p>
-                        <ul className="text-slate-700 dark:text-slate-300 space-y-1">
-                          {songData.equipment.guitar.alternatives.map((alt, index) => (
-                            <li key={index}>• <AffiliateLink productName={alt} /></li>
-                          ))}
-                        </ul>
+                        <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1.5">Alternative Models:</p>
+                        <div className="space-y-1.5">
+                          {songData.equipment.guitar.alternatives.map((alt, index) => {
+                            const retailers = getRetailerLinks(alt);
+                            return (
+                              <div
+                                key={index}
+                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2"
+                              >
+                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate">
+                                  <AffiliateLink productName={alt} />
+                                </span>
+                                {retailers && (
+                                  <div className="flex items-center gap-1 shrink-0 text-[10px]">
+                                    <a
+                                      href={retailers.amazonUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer nofollow sponsored"
+                                      className="px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 font-semibold border border-amber-200 dark:border-amber-500/30"
+                                      title={`Check ${alt} on Amazon`}
+                                    >
+                                      Amazon
+                                    </a>
+                                    <a
+                                      href={retailers.sweetwaterUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer nofollow sponsored"
+                                      className="px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-500/10 hover:bg-blue-100 dark:hover:bg-blue-500/20 text-blue-800 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-500/30"
+                                      title={`Check ${alt} on Sweetwater`}
+                                    >
+                                      Sweetwater
+                                    </a>
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -341,12 +373,44 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     </div>
                     {songData.equipment.amp.alternatives.length > 0 && (
                       <div>
-                        <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Alternatives:</p>
-                        <ul className="text-slate-700 dark:text-slate-300 space-y-1">
-                          {songData.equipment.amp.alternatives.map((alt, index) => (
-                            <li key={index}>• <AffiliateLink productName={alt} /></li>
-                          ))}
-                        </ul>
+                        <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1.5">Alternative Amps:</p>
+                        <div className="space-y-1.5">
+                          {songData.equipment.amp.alternatives.map((alt, index) => {
+                            const retailers = getRetailerLinks(alt);
+                            return (
+                              <div
+                                key={index}
+                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2"
+                              >
+                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate">
+                                  <AffiliateLink productName={alt} />
+                                </span>
+                                {retailers && (
+                                  <div className="flex items-center gap-1 shrink-0 text-[10px]">
+                                    <a
+                                      href={retailers.amazonUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer nofollow sponsored"
+                                      className="px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 text-amber-800 dark:text-amber-300 font-semibold border border-amber-200 dark:border-amber-500/30"
+                                      title={`Check ${alt} on Amazon`}
+                                    >
+                                      Amazon
+                                    </a>
+                                    <a
+                                      href={retailers.sweetwaterUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer nofollow sponsored"
+                                      className="px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-500/10 hover:bg-blue-100 dark:hover:bg-blue-500/20 text-blue-800 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-500/30"
+                                      title={`Check ${alt} on Sweetwater`}
+                                    >
+                                      Sweetwater
+                                    </a>
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -359,18 +423,54 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                   <h3 className="text-base font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
                     <span>🎛️</span> Effects Pedals
                   </h3>
-                  <div className="space-y-3 text-xs">
+                  <div className="space-y-4 text-xs">
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Overdrive / Distortion:</p>
-                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.distortion} /></p>
+                      <p className="text-slate-700 dark:text-slate-300 leading-relaxed"><SmartAffiliateText text={songData.equipment.effects.distortion} /></p>
+                      {(() => {
+                        const pedal = getEffectPedalProduct(songData.equipment.effects.distortion);
+                        return pedal ? (
+                          <ProductCard
+                            productName={pedal.name}
+                            category="Pedal"
+                            label="Featured Pedal"
+                            compact={true}
+                            className="mt-2"
+                          />
+                        ) : null;
+                      })()}
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Reverb / Delay:</p>
-                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.reverb} /></p>
+                      <p className="text-slate-700 dark:text-slate-300 leading-relaxed"><SmartAffiliateText text={songData.equipment.effects.reverb} /></p>
+                      {(() => {
+                        const pedal = getEffectPedalProduct(songData.equipment.effects.reverb);
+                        return pedal ? (
+                          <ProductCard
+                            productName={pedal.name}
+                            category="Pedal"
+                            label="Featured Pedal"
+                            compact={true}
+                            className="mt-2"
+                          />
+                        ) : null;
+                      })()}
                     </div>
                     <div>
                       <p className="font-bold text-slate-500 dark:text-slate-400 uppercase text-[10px] mb-1">Modulation / Other:</p>
-                      <p className="text-slate-700 dark:text-slate-300"><SmartAffiliateText text={songData.equipment.effects.other} /></p>
+                      <p className="text-slate-700 dark:text-slate-300 leading-relaxed"><SmartAffiliateText text={songData.equipment.effects.other} /></p>
+                      {(() => {
+                        const pedal = getEffectPedalProduct(songData.equipment.effects.other);
+                        return pedal ? (
+                          <ProductCard
+                            productName={pedal.name}
+                            category="Pedal"
+                            label="Featured Pedal"
+                            compact={true}
+                            className="mt-2"
+                          />
+                        ) : null;
+                      })()}
                     </div>
                   </div>
                 </div>

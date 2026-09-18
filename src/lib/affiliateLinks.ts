@@ -57,6 +57,9 @@ export function looksLikeProduct(text: string): boolean {
   if (/^(start|begin|try|use|play|keep|avoid|practice|need:)\b/i.test(text.trim())) return false;
   if (/\bairline\s+(approved|travel|safe)\b/i.test(text)) return false;
   if (/\b(roland dyens|descended from|hand-wired recreation)\b/i.test(text)) return false;
+  if (/^(tight bass|wide frequency|controlled low-end)\b/i.test(text.trim())) return false;
+  if (/^(notable artists?|famous artists?)\b/i.test(text.trim())) return false;
+  if (/^modern innovations\b/i.test(text.trim()) && !/wall hanger|hanger/i.test(text)) return false;
 
   return BRANDS_LOWER.some((brand, idx) => {
     if (!lower.includes(brand)) return false;
@@ -124,8 +127,10 @@ export interface RetailerLinks {
  * Allows guitarists to compare pricing across Amazon, Sweetwater, and Thomann.
  */
 export function getRetailerLinks(productName: string): RetailerLinks | null {
+  const isProduct = looksLikeProduct(productName) || Boolean(getAffiliateLink(productName));
   const searchTerm = extractProductName(productName);
   if (!looksLikeProduct(productName) || searchTerm.length < 3) return null;
+  if (!isProduct || searchTerm.length < 3) return null;
 
   const encoded = encodeURIComponent(searchTerm).replace(/%20/g, '+');
   const encodedQuery = encodeURIComponent(searchTerm);
@@ -143,5 +148,57 @@ export function getRetailerLinks(productName: string): RetailerLinks | null {
     amazonUrl,
     sweetwaterUrl,
     thomannUrl,
+  };
+}
+
+/**
+ * Detects whether an effect description (e.g. from song equipment) mentions a specific pedal,
+ * and returns the corresponding AffiliateProduct or null.
+ * Prioritizes curated effect products in the database first, then recognized accessories/brands.
+ */
+export function getEffectPedalProduct(text: string): AffiliateProduct | null {
+  if (!text || text.length < 3) return null;
+
+  const trimmed = text.trim();
+  // Skip if text explicitly indicates no effects/pedals or pure amp sound without pedals
+  if (/^(none|no |not |clean\b|minimal\b|dry\b)/i.test(trimmed)) return null;
+  if (
+    /^(pure|natural|cranked)\s+(amp|tube)\s+(overdrive|breakup|tone|distortion)/i.test(trimmed) &&
+    !/(pedal|screamer|fuzz|distortion|delay|chorus|reverb|phase|flanger|wah|whammy|boost|talk box|box)/i.test(trimmed)
+  ) {
+    return null;
+  }
+
+  const lower = trimmed.toLowerCase();
+
+  // Collect all matching products with their occurrence index in text
+  interface Match {
+    product: (typeof affiliateData.products)[number];
+    index: number;
+  }
+  const matches: Match[] = [];
+
+  for (const product of affiliateData.products) {
+    if (product.category === 'effects' || product.category === 'accessories') {
+      const idx = lower.indexOf(product.pattern.toLowerCase());
+      if (idx !== -1) {
+        matches.push({ product, index: idx });
+      }
+    }
+  }
+
+  if (matches.length === 0) return null;
+
+  // Sort by first occurrence in text, then by pattern length descending (most specific match)
+  matches.sort((a, b) => {
+    if (a.index !== b.index) return a.index - b.index;
+    return b.product.pattern.length - a.product.pattern.length;
+  });
+
+  const best = matches[0].product;
+  return {
+    name: best.pattern,
+    url: buildUrl(best.url),
+    category: 'Pedal',
   };
 }
