@@ -6,7 +6,7 @@
     "dev": "next dev -p 3333",
     "build": "next build",
     "deploy": "npm run build && aws s3 sync ./out s3://musicscene --delete && aws cloudfront create-invalidation --distribution-id EMEO566RGP4JE --paths \"/*\"",
-    "prebuild": "npm run content:index && npm run content:validate",
+    "prebuild": "npm run content:index && npm run content:validate && npm run og:generate",
     "start": "next start -p 3333",
     "lint": "next lint",
     "test": "jest",
@@ -22,7 +22,8 @@
     "content:index": "tsx scripts/build-content-index.ts",
     "content:new": "tsx scripts/create-content.ts",
     "content:validate": "tsx scripts/validate-content.ts",
-    "affiliate:audit": "tsx scripts/audit-affiliate-coverage.ts"
+    "affiliate:audit": "tsx scripts/audit-affiliate-coverage.ts",
+    "og:generate": "tsx scripts/generate-og-images.ts"
   },
   "dependencies": {
     "@coderline/alphatab": "^1.6.1",

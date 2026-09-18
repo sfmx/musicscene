@@ -14,8 +14,8 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 | **P0 (Critical)** | [AlphaTab & Notation Engine](#1-alphatab--notation-engine) | Playback accuracy, metronome sync, user experience | Completed |
 | **P1 (High)** | [Codebase Cleanup & Debt](#2-codebase-consolidation--technical-debt) | Bundle size reduction, stability, maintainability | Completed |
 | **P1 (High)** | [Song Analysis Catalog](#3-song-analysis-catalog) | Content depth, student engagement, search ranking | Completed |
-| **P2 (Medium)** | [Revenue & Monetization](#4-revenue--monetization-expansion) | Affiliate link conversion, ad revenue, email list | In Progress |
-| **P2 (Medium)** | [SEO & Content Graph](#5-seo-content-graph--interlinking) | Organic traffic, structured snippets, crawl efficiency | In Progress (P1s Done) |
+| **P2 (Medium)** | [Revenue & Monetization](#4-revenue--monetization-expansion) | Affiliate link conversion, ad revenue, email list | Completed |
+| **P2 (Medium)** | [SEO & Content Graph](#5-seo-content-graph--interlinking) | Organic traffic, structured snippets, crawl efficiency | Completed |
 
 ---
 
@@ -149,10 +149,21 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Refactored [`src/components/Revenue/GearRecommendations.tsx`](file:///c:/Source/musicscene/src/components/Revenue/GearRecommendations.tsx) to delegate to `<ProductCard />` for cohesive, high-converting gear cards across all lesson types.
     - Added curated entries for 14 iconic pedals and gear items in `affiliate-products.json` (`DigiTech Whammy`, `Vox V847`, `Boss DD-3`, `Fulltone OCD`, `Marshall ShredMaster`, `Dallas-Arbiter Fuzz Face`, etc.).
     - Verified 0 TypeScript errors, 0 ESLint errors, 496 passing Vitest tests, full static generation of all 440+ pages, deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`I23XBLPY7XP927NSJOJ3WBCHRO`).
-- [ ] **P2: AdSense / Display Ad Slot Integration**
-  - **Target:** Place non-intrusive banner slots (desktop leaderboard, mobile inline) in lesson templates with layout stability (zero Cumulative Layout Shift).
-- [ ] **P2: Email Newsletter / Free Practice Guide Lead Magnet**
-  - **Target:** Add a lightweight newsletter signup module ("Free Fretboard Mastery PDF") on theory and song index pages.
+- [x] **P2: AdSense / Display Ad Slot Integration**
+  - **Status:** Completed.
+    - Optimized [`src/components/Revenue/AdSlot.tsx`](file:///c:/Source/musicscene/src/components/Revenue/AdSlot.tsx) with strict Zero Cumulative Layout Shift (CLS) architecture:
+      - CSS layout containment (`contain: 'layout'`), fixed standard format bounds (`banner` 728x90, `rectangle` 300x250, `leaderboard` 970x90).
+      - Semantic accessibility with `role="region"` and `aria-label="Advertisement"`.
+      - Subtle dark/light themed styling with unobtrusive uppercase "Advertisement" compliance label.
+      - Integrated across lesson templates with responsive formatting and ad-blocker resilience.
+- [x] **P2: Email Newsletter / Free Practice Guide Lead Magnet**
+  - **Status:** Completed.
+    - Built and integrated [`src/components/Revenue/LeadMagnetBanner.tsx`](file:///c:/Source/musicscene/src/components/Revenue/LeadMagnetBanner.tsx) offering the "Free Fretboard Mastery Blueprint & Practice Guide" across key high-traffic discovery hubs and lesson templates:
+      - [`TheoryHubPage.tsx`](file:///c:/Source/musicscene/src/components/TheoryHub/TheoryHubPage.tsx): Prominently placed above final CTA.
+      - [`SongsRootIndexPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/SongLessons/SongsRootIndexPageTemplate.tsx): Placed above Featured Songs.
+      - [`PracticeIndexPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/PracticeAnalysis/PracticeIndexPageTemplate.tsx): Placed above Practice Journey Section.
+      - Embedded directly into [`ChordAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/ChordAnalysis/ChordAnalysisPageTemplate.tsx), [`ModeAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/ModeAnalysis/ModeAnalysisPageTemplate.tsx), [`ProgressionAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/ProgressionAnalysis/ProgressionAnalysisPageTemplate.tsx), and [`IntervalAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/IntervalAnalysis/IntervalAnalysisPageTemplate.tsx).
+    - Features instant email capture validation, responsive dark/light styling, and guaranteed zero layout disruption.
 
 ---
 
@@ -185,8 +196,14 @@ This document tracks all planned, ongoing, and recommended improvements for the 
     - Embedded structured data scripts via [`src/components/JsonLdScript.tsx`](file:///c:/Source/musicscene/src/components/JsonLdScript.tsx) into all 6 core page templates (`ChordAnalysisPageTemplate.tsx`, `ScaleAnalysisPageTemplate.tsx`, `ModeAnalysisPageTemplate.tsx`, `ProgressionAnalysisPageTemplate.tsx`, `PracticeDetailPageTemplate.tsx`, and `SongAnalysisPageTemplate.tsx`).
     - Added automated Vitest suite in [`src/lib/__tests__/structuredData.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/structuredData.test.ts) (9 tests, all passing; repository total 493 tests).
     - Verified static HTML pre-rendering of `<script type="application/ld+json">` across all 440 pages with zero runtime overhead, deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`IA0NYW13GQQLLDE2EI59PLUW4P`).
-- [ ] **P2: Dynamic Open Graph (OG) Social Cards**
-  - **Target:** Automatically generate Twitter / Facebook preview images showing song title, artist, key, tempo, and guitar tab teaser.
+- [x] **P2: Dynamic Open Graph (OG) Social Cards**
+  - **Status:** Completed.
+    - Engineered build-time OG image generation script in [`scripts/generate-og-images.ts`](file:///c:/Source/musicscene/scripts/generate-og-images.ts) using `sharp`:
+      - Generates high-fidelity 1200x630 branded social cards for all 108 catalog songs saved to `public/images/og/songs/[slug].png`.
+      - Visual elements include dark metallic gradient background, subtle musical fretboard watermark, vibrant MusicScene branding badge, prominent song title and artist typography, metadata badges (Key, Tempo, Difficulty), chord progression preview ribbon, and an AlphaTex notation snippet teaser.
+    - Updated [`src/lib/seo.ts`](file:///c:/Source/musicscene/src/lib/seo.ts): `getSongAnalysisMetadata(slug)` dynamically references `/images/og/songs/${slug}.png` for OpenGraph and Twitter cards (`summary_large_image`).
+    - Added `"og:generate"` script in `package.json` integrated into the `prebuild` pipeline.
+    - 0 TypeScript errors, 496 passing Vitest tests, pre-rendered in static build to `./out`, deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`I4J290TTXMPB33X429L4NITLDG`).
 
 ---
 

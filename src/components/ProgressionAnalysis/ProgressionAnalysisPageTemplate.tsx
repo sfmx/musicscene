@@ -10,6 +10,7 @@ import { getProgressionData, ProgressionData } from '@/lib/progressionData';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
 import GearRecommendations from '@/components/Revenue/GearRecommendations';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
@@ -324,6 +325,7 @@ export default function ProgressionAnalysisPageTemplate({ progressionSlug, displ
           {/* Songs Using This Progression */}
           <SongsUsingThis type="progression" slug={progressionSlug} />
 
+          <LeadMagnetBanner className="my-8" />
           <RelatedContentSection contentId={`progression:${progressionSlug}`} />
 
           {/* Journey Section */}

@@ -18,6 +18,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
 import GearRecommendations from '@/components/Revenue/GearRecommendations';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
@@ -119,6 +120,7 @@ export default function ChordAnalysisPageTemplate({ chordSlug, displayName }: Ch
           <SongsUsingThis type="chord" slug={chordSlug} />
           <AdSlot slotId="content-bottom" format="banner" />
 
+          <LeadMagnetBanner className="my-8" />
           <RelatedContentSection contentId={`chord:${chordSlug}`} />
           <ChordNavigationSection journeySection={chordData.journeySection} colorScheme={colorScheme} />
           <SequentialNav nav={nav} typeLabel="Chord" />

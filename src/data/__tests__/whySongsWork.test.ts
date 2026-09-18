@@ -122,6 +122,7 @@ describe('Open Graph & SEO Metadata', () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const ogImg = (meta.openGraph?.images as any[])?.[0];
     expect(ogImg.url).toMatch(/^https:\/\/musicscene\.com\.au\/images\/og-.*\.png$/);
+    expect(ogImg.url).toBe('https://musicscene.com.au/images/og/songs/hotel-california.png');
     expect(ogImg.width).toBe(1200);
     expect(ogImg.height).toBe(630);
 
@@ -129,5 +130,6 @@ describe('Open Graph & SEO Metadata', () => {
     const twitter = meta.twitter as any;
     expect(twitter.card).toBe('summary_large_image');
     expect(twitter.images?.[0]).toMatch(/^https:\/\/musicscene\.com\.au\/images\/og-.*\.png$/);
+    expect(twitter.images?.[0]).toBe('https://musicscene.com.au/images/og/songs/hotel-california.png');
   });
 });

@@ -8,6 +8,7 @@ import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import { getModeData, ModeData } from '@/lib/modeData';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import SongsUsingThis from '@/components/CrossReferences/SongsUsingThis';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
@@ -323,6 +324,7 @@ export default function ModeAnalysisPageTemplate({ modeSlug, displayName }: Mode
 
           <AdSlot slotId="content-bottom" format="banner" />
 
+          <LeadMagnetBanner className="my-8" />
           <RelatedContentSection contentId={`mode:${modeSlug}`} />
 
           {/* Continue Your Journey */}

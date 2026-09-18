@@ -7,6 +7,7 @@ import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getPracticeIndexData, PracticeIndexData } from '@/lib/practiceData';
 import { getDifficultyColor } from '@/lib/utils';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 
 interface Props {
   category: string;
@@ -171,6 +172,9 @@ export default function PracticeIndexPageTemplate({ category }: Props) {
               ))}
             </div>
           </section>
+
+          {/* Free Practice Guide Lead Magnet */}
+          <LeadMagnetBanner className="my-12" />
 
           {/* Journey Section */}
           {data.journeySection && (

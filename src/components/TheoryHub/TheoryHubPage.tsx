@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 
 export default function TheoryHubPage() {
   const pillars = [
@@ -729,6 +730,9 @@ export default function TheoryHubPage() {
               </div>
             </div>
           </section>
+
+          {/* Free Practice Guide Lead Magnet */}
+          <LeadMagnetBanner className="mb-12" />
 
           {/* 9. Final Call to Action */}
           <section className="text-center">

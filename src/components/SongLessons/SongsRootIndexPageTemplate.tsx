@@ -6,6 +6,7 @@ import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getSongsRootIndexData } from '@/lib/songLessonData';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 
 export default function SongsRootIndexPageTemplate() {
   const data = getSongsRootIndexData();
@@ -72,6 +73,9 @@ export default function SongsRootIndexPageTemplate() {
             </Link>
           ))}
         </section>
+
+        {/* Free Practice Guide Lead Magnet */}
+        <LeadMagnetBanner className="mt-12" />
 
         {/* Featured Songs */}
         <section className="mt-16">

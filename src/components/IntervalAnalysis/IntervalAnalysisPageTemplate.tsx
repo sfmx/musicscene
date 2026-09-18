@@ -13,6 +13,7 @@ import IntervalRelatedSection from './IntervalRelatedSection';
 import IntervalNavigationSection from './IntervalNavigationSection';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
+import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import SequentialNav from '@/components/SequentialNav';
@@ -99,6 +100,7 @@ export default function IntervalAnalysisPageTemplate({ intervalSlug, displayName
           <IntervalTheoryContextSection context={data.theoreticalContext} />
           <IntervalRelatedSection intervals={data.relatedIntervals} />
           <AdSlot slotId="content-bottom" format="banner" />
+          <LeadMagnetBanner className="my-8" />
 
           <RelatedContentSection contentId={`interval:${intervalSlug}`} />
           <IntervalNavigationSection journeySection={data.journeySection} />
