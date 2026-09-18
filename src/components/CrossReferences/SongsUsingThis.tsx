@@ -2,24 +2,40 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { getSongsUsingScale, getSongsUsingChord } from '@/lib/crossReferences';
+import {
+  getSongsUsingScale,
+  getSongsUsingChord,
+  getSongsUsingMode,
+  getSongsUsingProgression,
+} from '@/lib/crossReferences';
 import { getWhySongWorks } from '@/data/whySongsWork';
 import { getDifficultyColor } from '@/utils/theme';
 
 interface Props {
-  type: 'scale' | 'chord' | 'mode';
+  type: 'scale' | 'chord' | 'mode' | 'progression';
   slug: string;
 }
 
 export default function SongsUsingThis({ type, slug }: Props) {
-  // For modes, look up by scale slug (dorian, mixolydian, etc. exist in scale data)
-  const songs = type === 'chord'
-    ? getSongsUsingChord(slug)
-    : getSongsUsingScale(slug);
+  const songs =
+    type === 'chord'
+      ? getSongsUsingChord(slug)
+      : type === 'mode'
+      ? getSongsUsingMode(slug)
+      : type === 'progression'
+      ? getSongsUsingProgression(slug)
+      : getSongsUsingScale(slug);
 
   if (songs.length === 0) return null;
 
-  const typeLabel = type === 'scale' ? 'Scale' : type === 'chord' ? 'Chord' : 'Mode';
+  const typeLabel =
+    type === 'scale'
+      ? 'Scale'
+      : type === 'chord'
+      ? 'Chord'
+      : type === 'mode'
+      ? 'Mode'
+      : 'Chord Progression';
 
   return (
     <div className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl p-6 mb-12">
@@ -42,7 +58,12 @@ export default function SongsUsingThis({ type, slug }: Props) {
           const songSlug = song.slug || song.id.replace('song-analysis:', '');
           const breakdown = getWhySongWorks(songSlug);
           const hasCuratedBreakdown = breakdown?.isCurated;
-          const targetUrl = hasCuratedBreakdown ? `${song.url}#why-it-works` : song.url;
+          const targetUrl =
+            type === 'progression'
+              ? `${song.url}#chord-progressions`
+              : hasCuratedBreakdown
+              ? `${song.url}#why-it-works`
+              : song.url;
 
           return (
             <Link
@@ -75,7 +96,7 @@ export default function SongsUsingThis({ type, slug }: Props) {
                   </span>
                 ) : <span />}
                 <span className="text-xs font-medium text-slate-500 dark:text-slate-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-                  {hasCuratedBreakdown ? 'Why It Works →' : 'View Analysis →'}
+                  {type === 'progression' ? 'View Progression →' : hasCuratedBreakdown ? 'Why It Works →' : 'View Analysis →'}
                 </span>
               </div>
             </Link>

@@ -46,7 +46,6 @@ const BRANDS_LOWER = AFFILIATE_BRANDS.map((b) => b.toLowerCase());
 // ---------------------------------------------------------------------------
 // 3. Core matching functions (reimplemented to avoid runtime config deps)
 // ---------------------------------------------------------------------------
-import { looksLikeProduct, getAffiliateLink } from '../src/lib/affiliateLinks';
 
 /**
  * Check whether `text` contains any brand from the brands array (case-insensitive).
@@ -71,7 +70,6 @@ function looksLikeProduct(text: string): boolean {
 function getExplicitMatch(
   text: string,
   products: AffiliateProduct[],
-  _products?: AffiliateProduct[],
 ): string | null {
   const lower = text.toLowerCase();
   for (const product of products) {
@@ -80,8 +78,6 @@ function getExplicitMatch(
     }
   }
   return null;
-  const match = getAffiliateLink(text);
-  return match ? match.name : null;
 }
 
 // ---------------------------------------------------------------------------

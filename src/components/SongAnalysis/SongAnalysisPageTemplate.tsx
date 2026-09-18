@@ -14,6 +14,7 @@ import SectionNavigation from './SectionNavigation';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 import { getDifficultyColor } from '@/utils/theme';
+import { getTechniqueLesson } from '@/lib/techniqueLessons';
 import RelatedContentSection from '@/components/RelatedContent/RelatedContentSection';
 import AdSlot from '@/components/Revenue/AdSlot';
 import AffiliateLink from '@/components/Revenue/AffiliateLink';
@@ -183,53 +184,72 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {songData.techniques.map((technique, index) => (
-                <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-white">{technique.name}</h3>
-                      <span className={`px-2.5 py-0.5 rounded-full text-xs border ${getDifficultyColor(technique.difficulty)}`}>
-                        {technique.difficulty}
-                      </span>
-                    </div>
-                    <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">{technique.description}</p>
-                    
-                    {technique.details.chords && technique.details.chords.length > 0 && (
-                      <div className="mb-4 bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
-                        <h4 className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Uses chords:</h4>
-                        <div className="flex flex-wrap gap-1.5">
-                          {Array.from(new Set(technique.details.chords)).map((chord, chordIndex) => (
-                            <span key={chordIndex} className="px-2.5 py-1 bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-300 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-mono font-bold">
-                              {chord}
-                            </span>
-                          ))}
+              {songData.techniques.map((technique, index) => {
+                const lessonMatch = getTechniqueLesson(technique.name, technique.description);
+
+                return (
+                  <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <h3 className="text-lg font-bold text-slate-900 dark:text-white">{technique.name}</h3>
+                        <span className={`px-2.5 py-0.5 rounded-full text-xs border ${getDifficultyColor(technique.difficulty)}`}>
+                          {technique.difficulty}
+                        </span>
+                      </div>
+                      <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">{technique.description}</p>
+                      
+                      {technique.details.chords && technique.details.chords.length > 0 && (
+                        <div className="mb-4 bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                          <h4 className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Uses chords:</h4>
+                          <div className="flex flex-wrap gap-1.5">
+                            {Array.from(new Set(technique.details.chords)).map((chord, chordIndex) => (
+                              <span key={chordIndex} className="px-2.5 py-1 bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-300 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-mono font-bold">
+                                {chord}
+                              </span>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
 
-                    {technique.details.progression && (
-                      <div className="mb-4 bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
-                        <h4 className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">Progression:</h4>
-                        <p className="text-xs font-mono font-bold text-amber-700 dark:text-amber-300">{technique.details.progression}</p>
-                      </div>
-                    )}
+                      {technique.details.progression && (
+                        <div className="mb-4 bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                          <h4 className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">Progression:</h4>
+                          <p className="text-xs font-mono font-bold text-amber-700 dark:text-amber-300">{technique.details.progression}</p>
+                        </div>
+                      )}
 
-                    {technique.details.tips && technique.details.tips.length > 0 && (
-                      <div className="bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
-                        <h4 className="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-2">Technique Tips:</h4>
-                        <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-1.5">
-                          {technique.details.tips.map((tip, tipIndex) => (
-                            <li key={tipIndex} className="flex items-start gap-1.5">
-                              <span className="text-amber-600 dark:text-amber-400 font-bold">•</span>
-                              <span>{tip}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      {technique.details.tips && technique.details.tips.length > 0 && (
+                        <div className="bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                          <h4 className="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-2">Technique Tips:</h4>
+                          <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-1.5">
+                            {technique.details.tips.map((tip, tipIndex) => (
+                              <li key={tipIndex} className="flex items-start gap-1.5">
+                                <span className="text-amber-600 dark:text-amber-400 font-bold">•</span>
+                                <span>{tip}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {lessonMatch && (
+                      <div className="mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between flex-wrap gap-2">
+                        <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                          Related Lesson:
+                        </span>
+                        <Link
+                          href={lessonMatch.url}
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 bg-cyan-50 dark:bg-cyan-950/40 px-3 py-1 rounded-lg border border-cyan-200 dark:border-cyan-800/60 hover:border-cyan-400 dark:hover:border-cyan-600 transition-all"
+                        >
+                          <span>{lessonMatch.title}</span>
+                          <span>→</span>
+                        </Link>
                       </div>
                     )}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 

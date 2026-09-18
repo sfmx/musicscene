@@ -34,6 +34,8 @@ interface ContentIndex {
   tagIndex: Record<string, string[]>;
   crossReferences: {
     scaleToSongs: Record<string, string[]>;
+    modeToSongs: Record<string, string[]>;
+    progressionToSongs: Record<string, string[]>;
     chordToSongs: Record<string, string[]>;
   };
 }
@@ -176,31 +178,116 @@ const SLUG_TAG_MAP: Record<string, string[]> = {
 
 // ---- Cross-reference helpers ----
 
-function extractScaleSlug(scaleName: string): string | null {
+function extractScaleAndModeSlugs(scaleName: string): { scaleSlug?: string; modeSlug?: string } {
   const lower = scaleName.toLowerCase().trim();
-  const parts = lower.split(/\s+/);
-  // Strip root note (e.g., "E", "C#", "Bb")
-  if (/^[a-g][#b♯♭]?$/.test(parts[0])) {
-    parts.shift();
+  const res: { scaleSlug?: string; modeSlug?: string } = {};
+
+  // Modes
+  if (lower.includes('dorian')) {
+    res.modeSlug = 'dorian';
+    res.scaleSlug = 'dorian';
+  } else if (lower.includes('mixolydian')) {
+    res.modeSlug = 'mixolydian';
+    res.scaleSlug = 'mixolydian';
+  } else if (lower.includes('aeolian')) {
+    res.modeSlug = 'aeolian';
+    res.scaleSlug = 'minor';
+  } else if (lower.includes('ionian')) {
+    res.modeSlug = 'ionian';
+    res.scaleSlug = 'major';
+  } else if (lower.includes('lydian')) {
+    res.modeSlug = 'lydian';
+    res.scaleSlug = 'lydian';
+  } else if (lower.includes('phrygian')) {
+    res.modeSlug = 'phrygian';
+    res.scaleSlug = 'phrygian';
+  } else if (lower.includes('locrian')) {
+    res.modeSlug = 'locrian';
+    res.scaleSlug = 'locrian';
   }
-  const remainder = parts.join(' ');
-  const SCALE_MAP: Record<string, string> = {
-    'natural minor': 'minor',
-    'minor': 'minor',
-    'major': 'major',
-    'minor pentatonic': 'minor-pentatonic',
-    'major pentatonic': 'major-pentatonic',
-    'pentatonic minor': 'minor-pentatonic',
-    'pentatonic major': 'major-pentatonic',
-    'blues': 'blues',
-    'blues scale': 'blues',
-    'harmonic minor': 'harmonic-minor',
-    'dorian': 'dorian',
-    'mixolydian': 'mixolydian',
-    'aeolian': 'minor',
-    'ionian': 'major',
-  };
-  return SCALE_MAP[remainder] ?? null;
+
+  // Scales
+  if (!res.scaleSlug) {
+    if (lower.includes('minor pentatonic') || lower.includes('pentatonic minor')) {
+      res.scaleSlug = 'minor-pentatonic';
+    } else if (lower.includes('major pentatonic') || lower.includes('pentatonic major')) {
+      res.scaleSlug = 'major-pentatonic';
+    } else if (lower.includes('blues')) {
+      res.scaleSlug = 'blues';
+    } else if (lower.includes('harmonic minor')) {
+      res.scaleSlug = 'harmonic-minor';
+    } else if (lower.includes('melodic minor')) {
+      res.scaleSlug = 'melodic-minor';
+    } else if (lower.includes('natural minor') || lower.includes('minor scale') || /\bminor\b/.test(lower)) {
+      res.scaleSlug = 'minor';
+      res.modeSlug = res.modeSlug || 'aeolian';
+    } else if (lower.includes('major scale') || /\bmajor\b/.test(lower)) {
+      res.scaleSlug = 'major';
+      res.modeSlug = res.modeSlug || 'ionian';
+    } else if (lower.includes('chromatic')) {
+      res.scaleSlug = 'chromatic';
+    } else if (lower.includes('whole tone') || lower.includes('whole-tone')) {
+      res.scaleSlug = 'whole-tone';
+    }
+  }
+
+  return res;
+}
+
+function normalizeRoman(str: string): string {
+  return str
+    .replace(/♭/g, 'b')
+    .replace(/♯/g, '#')
+    .replace(/(maj7|min7|dom7|dim7|aug|sus\d*|\+)/gi, '')
+    .replace(/([ivIV]+)[0-9]+/g, '$1') // e.g. I7 -> I, IV7 -> IV, V7 -> V
+    .replace(/\s*[-–—|/,]\s*/g, ' - ')
+    .trim();
+}
+
+function extractProgressionSlugs(text: string): string[] {
+  if (!text) return [];
+  const norm = normalizeRoman(text).toLowerCase();
+  const matched = new Set<string>();
+
+  // Specific 4-chord and 3-chord progressions
+  if (norm.includes('i - v - vi - iv')) matched.add('i-v-vi-iv');
+  if (norm.includes('vi - iv - i - v')) matched.add('vi-iv-i-v');
+  if (norm.includes('i - vi - iv - v')) matched.add('i-vi-iv-v');
+  if (norm.includes('i - vi - ii - v')) matched.add('i-vi-ii-v');
+  if (norm.includes('i - v - bvii - iv') || norm.includes('i - v - vii - iv')) matched.add('i-v-bvii-iv');
+  if (norm.includes('i - bvii - iv') || norm.includes('i - vii - iv')) matched.add('i-bvii-iv');
+  if (norm.includes('i - biii - bvii - iv') || norm.includes('i - iii - vii - iv')) matched.add('i-biii-bvii-iv');
+  if (norm.includes('ii - v - i')) matched.add('ii-v-i');
+  if (norm.includes('ii - iv - v')) matched.add('ii-iv-v');
+  if (norm.includes('i - iv - v')) matched.add('i-iv-v');
+
+  // 2-chord vamps (only if standalone or explicitly 2-chord)
+  if (norm === 'i - iv' || norm === 'i - iv - i - iv' || norm.startsWith('i - iv - i - iv')) {
+    matched.add('i-iv');
+  }
+  if (norm === 'iv - i' || norm === 'iv - i - iv - i') {
+    matched.add('iv-i');
+  }
+  if (norm === 'i - v' || norm === 'i - v - i - v') {
+    matched.add('i-v');
+  }
+
+  // 12-bar blues and minor blues
+  if (/12-bar/i.test(text) || (norm.includes('i') && norm.includes('iv') && norm.includes('v') && /blues/i.test(text))) {
+    if (/minor/i.test(text)) {
+      matched.add('minor-blues');
+    } else {
+      matched.add('12-bar-blues');
+    }
+  }
+  if (/minor.*blues/i.test(text)) {
+    matched.add('minor-blues');
+  }
+  if (/circle of fifths/i.test(text)) {
+    matched.add('circle-of-fifths');
+  }
+
+  return Array.from(matched);
 }
 
 function extractChordType(chordName: string): string | null {
@@ -426,6 +513,8 @@ interface SongScanResult {
   entries: ContentEntry[];
   crossRefs: {
     scaleToSongs: Record<string, string[]>;
+    modeToSongs: Record<string, string[]>;
+    progressionToSongs: Record<string, string[]>;
     chordToSongs: Record<string, string[]>;
   };
 }
@@ -435,6 +524,8 @@ function scanSongs(): SongScanResult {
   const files = getJsonFiles(dir, ['_template', 'index']);
   const entries: ContentEntry[] = [];
   const scaleToSongs: Record<string, string[]> = {};
+  const modeToSongs: Record<string, string[]> = {};
+  const progressionToSongs: Record<string, string[]> = {};
   const chordToSongs: Record<string, string[]> = {};
 
   for (const file of files) {
@@ -466,15 +557,49 @@ function scanSongs(): SongScanResult {
       difficulty: diff,
     });
 
-    // Extract cross-references: scales used in this song
+    // Extract cross-references: scales and modes used in this song
     const scalesUsed = d.musicalAnalysis?.keyAndScale?.scalesUsed ?? [];
     for (const s of scalesUsed) {
-      const scaleSlug = extractScaleSlug(s.scale ?? '');
+      const { scaleSlug, modeSlug } = extractScaleAndModeSlugs(s.scale ?? '');
       if (scaleSlug) {
         if (!scaleToSongs[scaleSlug]) scaleToSongs[scaleSlug] = [];
         if (!scaleToSongs[scaleSlug].includes(songId)) {
           scaleToSongs[scaleSlug].push(songId);
         }
+      }
+      if (modeSlug) {
+        if (!modeToSongs[modeSlug]) modeToSongs[modeSlug] = [];
+        if (!modeToSongs[modeSlug].includes(songId)) {
+          modeToSongs[modeSlug].push(songId);
+        }
+      }
+    }
+
+    // Extract cross-references: chord progressions used in this song
+    const matchedProgressions = new Set<string>();
+    const cp = d.musicalAnalysis?.chordProgressions;
+    if (cp) {
+      if (cp.mainProgression?.progression) {
+        extractProgressionSlugs(cp.mainProgression.progression).forEach(p => matchedProgressions.add(p));
+      }
+      if (cp.mainProgression?.description) {
+        extractProgressionSlugs(cp.mainProgression.description).forEach(p => matchedProgressions.add(p));
+      }
+      for (const sec of (cp.sectionProgressions ?? [])) {
+        if (sec.romanNumerals) extractProgressionSlugs(sec.romanNumerals).forEach(p => matchedProgressions.add(p));
+        if (sec.progression) extractProgressionSlugs(sec.progression).forEach(p => matchedProgressions.add(p));
+        if (sec.description) extractProgressionSlugs(sec.description).forEach(p => matchedProgressions.add(p));
+      }
+    }
+    for (const tech of (d.techniques ?? [])) {
+      if (tech.name) extractProgressionSlugs(tech.name).forEach(p => matchedProgressions.add(p));
+      if (tech.description) extractProgressionSlugs(tech.description).forEach(p => matchedProgressions.add(p));
+      if (tech.details?.progression) extractProgressionSlugs(tech.details.progression).forEach(p => matchedProgressions.add(p));
+    }
+    for (const p of matchedProgressions) {
+      if (!progressionToSongs[p]) progressionToSongs[p] = [];
+      if (!progressionToSongs[p].includes(songId)) {
+        progressionToSongs[p].push(songId);
       }
     }
 
@@ -512,7 +637,7 @@ function scanSongs(): SongScanResult {
     }
   }
 
-  return { entries, crossRefs: { scaleToSongs, chordToSongs } };
+  return { entries, crossRefs: { scaleToSongs, modeToSongs, progressionToSongs, chordToSongs } };
 }
 
 function scanPractice(): ContentEntry[] {
@@ -674,7 +799,7 @@ function buildContentIndex(): ContentIndex {
   const songResult = scanSongs();
   console.log(`  Songs: ${songResult.entries.length} entries`);
   allEntries.push(...songResult.entries);
-  console.log(`  Cross-refs: ${Object.keys(songResult.crossRefs.scaleToSongs).length} scales, ${Object.keys(songResult.crossRefs.chordToSongs).length} chord types`);
+  console.log(`  Cross-refs: ${Object.keys(songResult.crossRefs.scaleToSongs).length} scales, ${Object.keys(songResult.crossRefs.modeToSongs).length} modes, ${Object.keys(songResult.crossRefs.progressionToSongs).length} progressions, ${Object.keys(songResult.crossRefs.chordToSongs).length} chord types`);
 
   const practice = scanPractice();
   console.log(`  Practice: ${practice.length} entries`);

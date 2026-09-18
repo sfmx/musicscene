@@ -148,11 +148,20 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 
 ## 5. SEO, Content Graph & Interlinking
 
-- [ ] **P1: Bidirectional Content Cross-Linking**
-  - **Target:**
-    - "Songs using this scale" automatically displayed on Scale and Mode pages.
-    - "Songs using this chord progression" displayed on Progression pages.
-    - "Techniques used in this song" linking directly to deep-dive practice lessons.
+- [x] **P1: Bidirectional Content Cross-Linking**
+  - **Status:** Completed.
+    - Build-time content index graph (`scripts/build-content-index.ts`) extracts and indexes bidirectional cross-references:
+      - `scaleToSongs`: 10 scales mapped across catalog songs.
+      - `modeToSongs`: 5 modes (Dorian, Aeolian, Mixolydian, Ionian, Phrygian) mapped across catalog songs.
+      - `progressionToSongs`: 14 chord progression patterns (`12-bar-blues`, `i-v-vi-iv`, `vi-iv-i-v`, `i-iv-v`, `i-bvii-iv`, etc.) mapped across catalog songs.
+      - `chordToSongs`: 9 chord types mapped across catalog songs.
+    - Upgraded [`src/lib/crossReferences.ts`](file:///c:/Source/musicscene/src/lib/crossReferences.ts) with `getSongsUsingScale()`, `getSongsUsingMode()`, `getSongsUsingProgression()`, and `getSongsUsingChord()`.
+    - Upgraded [`src/components/CrossReferences/SongsUsingThis.tsx`](file:///c:/Source/musicscene/src/components/CrossReferences/SongsUsingThis.tsx) to support both `'progression'` and `'mode'` entity types, linking directly to `#chord-progressions` and `#scales-used` anchor targets with clean difficulty badges and responsive grid cards.
+    - Embedded `<SongsUsingThis type="progression" slug={progressionSlug} />` in [`ProgressionAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/ProgressionAnalysis/ProgressionAnalysisPageTemplate.tsx).
+    - Created [`src/lib/techniqueLessons.ts`](file:///c:/Source/musicscene/src/lib/techniqueLessons.ts) with comprehensive keyword matching and hierarchical precedence mapping song techniques (power chords, palm muting, hammer-ons, alternate picking, fingerpicking, etc.) to practice lessons and song lessons.
+    - Updated [`SongAnalysisPageTemplate.tsx`](file:///c:/Source/musicscene/src/components/SongAnalysis/SongAnalysisPageTemplate.tsx) to render direct interactive lesson links on technique cards ("Related Lesson: [Lesson Title] →").
+    - Added automated Vitest suite in [`src/lib/__tests__/crossReferences.test.ts`](file:///c:/Source/musicscene/src/lib/__tests__/crossReferences.test.ts) (25 tests, all passing; repository total 484 tests).
+    - 0 TypeScript errors, 0 content validation errors across 303 files, full static pre-rendering (440 pages), deployed to AWS S3 (`s3://musicscene`), and CloudFront invalidated (`I25JJY15CG6YA5VGA66UUQ6KH7`).
 - [ ] **P1: Enhanced JSON-LD Structured Data**
   - **Target:** Add rich `MusicComposition`, `HowTo`, and `FAQPage` schemas to all chord, scale, mode, and practice lesson templates.
 - [ ] **P2: Dynamic Open Graph (OG) Social Cards**
