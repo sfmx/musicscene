@@ -11,11 +11,11 @@ This document tracks all planned, ongoing, and recommended improvements for the 
 
 | Priority | Focus Area | Impact | Status |
 | :--- | :--- | :--- | :--- |
-| **P0 (Critical)** | [AlphaTab & Notation Engine](#1-alphatab--notation-engine) | Playback accuracy, metronome sync, user experience | In Progress |
-| **P1 (High)** | [Codebase Cleanup & Debt](#2-codebase-consolidation--technical-debt) | Bundle size reduction, stability, maintainability | Ready to Start |
-| **P1 (High)** | [Song Analysis Catalog](#3-song-analysis-catalog) | Content depth, student engagement, search ranking | Ongoing |
+| **P0 (Critical)** | [AlphaTab & Notation Engine](#1-alphatab--notation-engine) | Playback accuracy, metronome sync, user experience | Completed |
+| **P1 (High)** | [Codebase Cleanup & Debt](#2-codebase-consolidation--technical-debt) | Bundle size reduction, stability, maintainability | Completed |
+| **P1 (High)** | [Song Analysis Catalog](#3-song-analysis-catalog) | Content depth, student engagement, search ranking | Completed |
 | **P2 (Medium)** | [Revenue & Monetization](#4-revenue--monetization-expansion) | Affiliate link conversion, ad revenue, email list | In Progress |
-| **P2 (Medium)** | [SEO & Content Graph](#5-seo-content-graph--interlinking) | Organic traffic, structured snippets, crawl efficiency | Partially Done |
+| **P2 (Medium)** | [SEO & Content Graph](#5-seo-content-graph--interlinking) | Organic traffic, structured snippets, crawl efficiency | In Progress (P1s Done) |
 
 ---
 
