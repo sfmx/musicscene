@@ -95,7 +95,6 @@ describe('Why Songs Work Harmonic Engine', () => {
     expect(song?.chords).toContain('E7#9');
   });
 
-  it('should provide complete coverage across all 108 catalog songs in the discovery hub', () => {
   it('should return curated breakdown for Never Going Back Again with acoustic pedal bass', () => {
     const song = getWhySongWorks('never-going-back-again');
     expect(song).toBeDefined();

@@ -41,6 +41,167 @@ if (typeof window !== 'undefined' && typeof window.AudioBufferSourceNode !== 'un
 // Event to ensure only one player runs across the page at any given moment
 const PLAYBACK_START_EVENT = 'alphatab-playback-start';
 
+/**
+ * Self-contained AlphaTab AudioWorklet processor module.
+ * Eliminates bundler/worklet 404 issues, running sample playback at 128-sample low-latency (<3ms)
+ * on the dedicated audio rendering thread so that sound is in tight lockstep with the visual cursor.
+ */
+const ALPHATAB_WORKLET_CODE = `
+class CircularSampleBuffer {
+    constructor(size) {
+        this._writePosition = 0;
+        this._readPosition = 0;
+        this.count = 0;
+        this._buffer = new Float32Array(size);
+    }
+    clear() {
+        this._readPosition = 0;
+        this._writePosition = 0;
+        this.count = 0;
+        this._buffer = new Float32Array(this._buffer.length);
+    }
+    write(data, offset, count) {
+        let samplesWritten = 0;
+        if (count > this._buffer.length - this.count) {
+            count = this._buffer.length - this.count;
+        }
+        const writeToEnd = Math.min(this._buffer.length - this._writePosition, count);
+        this._buffer.set(data.subarray(offset, offset + writeToEnd), this._writePosition);
+        this._writePosition += writeToEnd;
+        this._writePosition %= this._buffer.length;
+        samplesWritten += writeToEnd;
+        if (samplesWritten < count) {
+            this._buffer.set(data.subarray(offset + samplesWritten, offset + count), 0);
+            this._writePosition = count - samplesWritten;
+            samplesWritten = count;
+        }
+        this.count += samplesWritten;
+        return samplesWritten;
+    }
+    read(data, offset, count) {
+        if (count > this.count) {
+            count = this.count;
+        }
+        let samplesRead = 0;
+        const readToEnd = Math.min(this._buffer.length - this._readPosition, count);
+        data.set(this._buffer.subarray(this._readPosition, this._readPosition + readToEnd), offset);
+        samplesRead += readToEnd;
+        this._readPosition += readToEnd;
+        this._readPosition %= this._buffer.length;
+        if (samplesRead < count) {
+            data.set(this._buffer.subarray(this._readPosition, this._readPosition + count - samplesRead), offset + samplesRead);
+            this._readPosition += count - samplesRead;
+            samplesRead = count;
+        }
+        this.count -= samplesRead;
+        return samplesRead;
+    }
+}
+
+const BUFFER_SIZE = 4096;
+const AUDIO_CHANNELS = 2;
+
+class AlphaSynthWebWorkletProcessor extends AudioWorkletProcessor {
+    constructor(options) {
+        super(options);
+        this._outputBuffer = new Float32Array(0);
+        this._bufferCount = 0;
+        this._requestedBufferCount = 0;
+        this._isStopped = false;
+        const bufferTimeMs = (options && options.processorOptions && options.processorOptions.bufferTimeInMilliseconds) || 125;
+        this._bufferCount = Math.max(2, Math.floor((bufferTimeMs * sampleRate) / 1000 / BUFFER_SIZE));
+        this._circularBuffer = new CircularSampleBuffer(BUFFER_SIZE * this._bufferCount);
+        this.port.onmessage = this.handleMessage.bind(this);
+    }
+    handleMessage(e) {
+        const data = e.data;
+        switch (data.cmd) {
+            case 'alphaSynth.output.addSamples':
+                this._circularBuffer.write(data.samples, 0, data.samples.length);
+                this._requestedBufferCount--;
+                break;
+            case 'alphaSynth.output.resetSamples':
+                this._circularBuffer.clear();
+                break;
+            case 'alphaSynth.output.stop':
+                this._isStopped = true;
+                break;
+        }
+    }
+    process(_inputs, outputs, _parameters) {
+        if (outputs.length !== 1 && outputs[0].length !== 2) {
+            return false;
+        }
+        const left = outputs[0][0];
+        const right = outputs[0][1];
+        if (!left || !right) {
+            return true;
+        }
+        const samples = left.length + right.length;
+        if (this._outputBuffer.length !== samples) {
+            this._outputBuffer = new Float32Array(samples);
+        }
+        const samplesFromBuffer = this._circularBuffer.read(this._outputBuffer, 0, Math.min(this._outputBuffer.length, this._circularBuffer.count));
+        let s = 0;
+        const min = Math.min(left.length, samplesFromBuffer);
+        for (let i = 0; i < min; i++) {
+            left[i] = this._outputBuffer[s++];
+            right[i] = this._outputBuffer[s++];
+        }
+        if (samplesFromBuffer < left.length) {
+            for (let i = samplesFromBuffer; i < left.length; i++) {
+                left[i] = 0;
+                right[i] = 0;
+            }
+        }
+        this.port.postMessage({
+            cmd: 'alphaSynth.output.samplesPlayed',
+            samples: samplesFromBuffer / AUDIO_CHANNELS
+        });
+        this.requestBuffers();
+        return this._circularBuffer.count > 0 || !this._isStopped;
+    }
+    requestBuffers() {
+        const halfBufferCount = (this._bufferCount / 2) | 0;
+        const halfSamples = halfBufferCount * BUFFER_SIZE;
+        const bufferedSamples = this._circularBuffer.count + this._requestedBufferCount * BUFFER_SIZE;
+        if (bufferedSamples < halfSamples) {
+            for (let i = 0; i < halfBufferCount; i++) {
+                this.port.postMessage({
+                    cmd: 'alphaSynth.output.sampleRequest'
+                });
+            }
+            this._requestedBufferCount += halfBufferCount;
+        }
+    }
+}
+
+registerProcessor('alphatab', AlphaSynthWebWorkletProcessor);
+`;
+
+let workletBlobUrl: string | null = null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ensureAlphaTabAudioWorklet = (alphaTab: any): boolean => {
+  if (typeof window === 'undefined' || !window.isSecureContext || !('AudioWorkletNode' in window)) {
+    return false;
+  }
+  try {
+    if (!workletBlobUrl) {
+      const blob = new Blob([ALPHATAB_WORKLET_CODE], { type: 'application/javascript' });
+      workletBlobUrl = URL.createObjectURL(blob);
+    }
+    const url = workletBlobUrl;
+    alphaTab.Environment.createAudioWorklet = async (ctx: AudioContext) => {
+      await ctx.audioWorklet.addModule(url);
+    };
+    return true;
+  } catch (err) {
+    console.warn('AudioWorklet initialization fallback to ScriptProcessor:', err);
+    return false;
+  }
+};
+
+
 // Global SoundFont cache shared across all AlphaTexRenderer instances on the page
 let sharedSoundFontBuffer: Uint8Array | null = null;
 let soundFontFetchPromise: Promise<Uint8Array> | null = null;
@@ -436,6 +597,9 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         const themeRes = getThemeResources(initialTheme);
 
+        // Initialize AudioWorklet support if available in secure context
+        const isWorkletSupported = ensureAlphaTabAudioWorklet(alphaTab);
+
         // AlphaTab settings with responsive scaling and custom theme resources
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: {
@@ -458,7 +622,10 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             enableCursor: true,
             soundFont: null, // Zero soundfont download on page load
             scrollMode: 0, // off - don't scroll during playback
-            outputMode: alphaTab.PlayerOutputMode.WebAudioScriptProcessor
+            bufferTimeInMilliseconds: 125, // Low-latency audio buffer (eliminates lag between cursor line & sound)
+            outputMode: isWorkletSupported
+              ? alphaTab.PlayerOutputMode.WebAudioAudioWorklets
+              : alphaTab.PlayerOutputMode.WebAudioScriptProcessor
           }
         });
 

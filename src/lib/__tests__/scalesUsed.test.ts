@@ -115,8 +115,6 @@ describe('ScaleVisualization and scalesUsed Catalog Verification', () => {
     const songsDir = path.resolve(__dirname, '../../data/songs');
     const songFiles = fs.readdirSync(songsDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
 
-    test('all 107 catalog songs exist and are loaded', () => {
-      expect(songFiles.length).toBe(107);
     test('all catalog songs exist and are loaded', () => {
       expect(songFiles.length).toBeGreaterThanOrEqual(107);
     });

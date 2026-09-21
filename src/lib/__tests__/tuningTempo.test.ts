@@ -16,8 +16,6 @@ const CANONICAL_TUNING_PATTERNS = [
 ];
 
 describe('Song Catalog Tuning & Tempo Verification', () => {
-  test('all 107 catalog songs exist', () => {
-    expect(songFiles.length).toBe(107);
   test('all catalog songs exist', () => {
     expect(songFiles.length).toBeGreaterThanOrEqual(107);
   });
