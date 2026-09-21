@@ -731,6 +731,79 @@ export default function TheoryHubPage() {
             </div>
           </section>
 
+          {/* Interactive Theory Tools Showcase */}
+          <section className="mb-12">
+            <div className="p-8 rounded-3xl bg-slate-100 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-6">
+              <div className="text-center max-w-2xl mx-auto">
+                <span className="text-xs font-bold uppercase tracking-widest text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/30 inline-block mb-3">
+                  Interactive Practice Utilities
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+                  Put Theory Directly Into Your Hands
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+                  Accelerate your learning with our free browser-based interactive tools with WebAudio synthesis.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <Link
+                  href="/lessons/practice/circle-of-fifths"
+                  className="p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80 hover:border-amber-500/60 transition group flex flex-col justify-between shadow-xs hover:shadow-lg"
+                >
+                  <div>
+                    <span className="text-2xl mb-2 block">🔄</span>
+                    <h4 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors">
+                      Circle of Fifths Explorer
+                    </h4>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                      Playable diatonic chord studio, key modulation pathways, and modal interchange borrowed chords.
+                    </p>
+                  </div>
+                  <span className="text-xs font-bold text-amber-500 mt-4 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Explore Wheel &rarr;
+                  </span>
+                </Link>
+
+                <Link
+                  href="/lessons/practice/caged-system"
+                  className="p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80 hover:border-rose-500/60 transition group flex flex-col justify-between shadow-xs hover:shadow-lg"
+                >
+                  <div>
+                    <span className="text-2xl mb-2 block">🎸</span>
+                    <h4 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-rose-400 transition-colors">
+                      CAGED System Visualizer
+                    </h4>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                      Full 16-fret interactive neck mapping the 5 shapes to movable scale boxes, triad inversions, and audio strums.
+                    </p>
+                  </div>
+                  <span className="text-xs font-bold text-rose-500 mt-4 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Map Fretboard &rarr;
+                  </span>
+                </Link>
+
+                <Link
+                  href="/lessons/practice/ear-trainer"
+                  className="p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80 hover:border-indigo-500/60 transition group flex flex-col justify-between shadow-xs hover:shadow-lg"
+                >
+                  <div>
+                    <span className="text-2xl mb-2 block">🎧</span>
+                    <h4 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-400 transition-colors">
+                      Ear Training Quizzer
+                    </h4>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                      Real-time audio quiz testing interval recognition with iconic song mnemonics and chord qualities.
+                    </p>
+                  </div>
+                  <span className="text-xs font-bold text-indigo-500 mt-4 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Start Ear Training &rarr;
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </section>
+
           {/* Free Practice Guide Lead Magnet */}
           <LeadMagnetBanner className="mb-12" />
 

@@ -26,6 +26,9 @@ const SEGMENT_LABELS: Record<string, string> = {
   improv: 'Improvisation',
   'fretboard-trainer': 'Fretboard Trainer',
   'progression-player': 'Progression Player',
+  'circle-of-fifths': 'Circle of Fifths',
+  'caged-system': 'CAGED System',
+  'ear-trainer': 'Ear Trainer',
 
   // Gear
   gear: 'Gear',

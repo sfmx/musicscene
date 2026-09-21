@@ -130,7 +130,6 @@ export function getSongAnalysisMetadata(slug: string): Metadata {
     data.songInfo.genre,
     ...(data.metadata?.tags ?? []),
   ];
-  return buildMeta(title, description, url, keywords, '/images/og-song-analysis.png');
   const ogImagePath = `/images/og/songs/${slug}.png`;
   return buildMeta(title, description, url, keywords, ogImagePath);
 }
