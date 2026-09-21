@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { getAllSongs, SongListItem } from '@/lib/songData';
+import { getAllSongs, SongListItem } from '@/lib/songList';
 import { getDifficultyColor } from '@/lib/utils';
 
 const CURATED_SECRETS_SLUGS = new Set([

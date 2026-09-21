@@ -21,6 +21,7 @@ import {
   searchSongs,
   SearchFilters
 } from '@/lib/songData';
+} from '@/lib/songList';
 
 export default function SongDiscoveryHub() {
   const [searchQuery, setSearchQuery] = useState('');

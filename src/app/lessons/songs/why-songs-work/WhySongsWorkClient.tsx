@@ -9,9 +9,16 @@ import {
   HARMONIC_CATEGORIES,
   HarmonicCategory,
 } from '@/data/whySongsWork';
+  HarmonicSecret,
+} from '@/data/harmonicCategories';
 import { SITE_CONFIG } from '@/lib/siteConfig';
 
 export default function WhySongsWorkClient() {
+interface WhySongsWorkClientProps {
+  allBreakdowns: HarmonicSecret[];
+}
+
+export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClientProps) {
   const [selectedCategory, setSelectedCategory] = useState<HarmonicCategory | 'all'>('all');
   const allBreakdowns = getAllCuratedHarmonicBreakdowns();
 

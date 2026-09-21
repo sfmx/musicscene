@@ -40,6 +40,27 @@ interface ContentIndex {
   };
 }
 
+export interface SongListItem {
+  slug: string;
+  title: string;
+  artist: string;
+  genre: string;
+  difficulty: string;
+  year: string;
+  tempo: string;
+  key: string;
+  techniques: string[];
+  featured?: boolean;
+  dateAdded?: string;
+  popularity?: number;
+  decade?: string;
+  subGenre?: string;
+  tags?: string[];
+  iconicRiff?: boolean;
+  estimatedLearningTime?: string;
+  viewCount?: number;
+}
+
 // ---- Tag Taxonomy (shared) ----
 // VALID_TAG_SLUGS and TAG_NORMALIZATION imported from ./lib/tag-taxonomy
 
@@ -344,6 +365,24 @@ function buildUrl(contentType: ContentType, slug: string, category?: string): st
 
 const DATA_DIR = path.resolve(__dirname, '..', 'src', 'data');
 const OUTPUT_FILE = path.resolve(DATA_DIR, '_generated', 'content-index.json');
+const SONGS_LIST_OUTPUT_FILE = path.resolve(DATA_DIR, '_generated', 'songs-list.json');
+
+function getDecadeFromYear(year: string): string {
+  const yearMatch = year.match(/\b(19|20)\d{2}\b/);
+  const yearNum = yearMatch ? parseInt(yearMatch[0]) : parseInt(year);
+
+  if (isNaN(yearNum)) return '1970s';
+
+  if (yearNum >= 2020) return '2020s';
+  if (yearNum >= 2010) return '2010s';
+  if (yearNum >= 2000) return '2000s';
+  if (yearNum >= 1990) return '1990s';
+  if (yearNum >= 1980) return '1980s';
+  if (yearNum >= 1970) return '1970s';
+  if (yearNum >= 1960) return '1960s';
+  if (yearNum >= 1950) return '1950s';
+  return '1950s';
+}
 
 function readJsonFile(filePath: string): Record<string, unknown> {
   const content = fs.readFileSync(filePath, 'utf-8');
@@ -511,6 +550,7 @@ function scanTheoryContent(
 
 interface SongScanResult {
   entries: ContentEntry[];
+  songsList: SongListItem[];
   crossRefs: {
     scaleToSongs: Record<string, string[]>;
     modeToSongs: Record<string, string[]>;
@@ -523,6 +563,7 @@ function scanSongs(): SongScanResult {
   const dir = path.join(DATA_DIR, 'songs');
   const files = getJsonFiles(dir, ['_template', 'index']);
   const entries: ContentEntry[] = [];
+  const songsList: SongListItem[] = [];
   const scaleToSongs: Record<string, string[]> = {};
   const modeToSongs: Record<string, string[]> = {};
   const progressionToSongs: Record<string, string[]> = {};
@@ -556,6 +597,29 @@ function scanSongs(): SongScanResult {
       tags: [...tags],
       difficulty: diff,
     });
+
+    const songItem: SongListItem = {
+      slug,
+      title: d.songInfo?.title || slug,
+      artist: d.songInfo?.artist || 'Unknown Artist',
+      genre: d.songInfo?.genre || 'Rock',
+      difficulty: d.difficulty?.overall || 'Intermediate',
+      year: d.songInfo?.released || '',
+      tempo: d.songInfo?.tempo || '',
+      key: d.songInfo?.key || '',
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      techniques: (d.techniques || []).map((t: any) => t.name).filter(Boolean),
+      featured: d.metadata?.featured ?? false,
+      dateAdded: d.metadata?.dateAdded ?? '2024-01-01',
+      popularity: d.metadata?.popularity ?? 50,
+      decade: d.metadata?.decade ?? getDecadeFromYear(d.songInfo?.released || ''),
+      subGenre: d.metadata?.subGenre ?? d.songInfo?.genre ?? 'Rock',
+      tags: d.metadata?.tags ?? [],
+      iconicRiff: d.metadata?.iconicRiff ?? false,
+      estimatedLearningTime: d.metadata?.estimatedLearningTime,
+      viewCount: d.metadata?.viewCount ?? 0,
+    };
+    songsList.push(songItem);
 
     // Extract cross-references: scales and modes used in this song
     const scalesUsed = d.musicalAnalysis?.keyAndScale?.scalesUsed ?? [];
@@ -638,6 +702,7 @@ function scanSongs(): SongScanResult {
   }
 
   return { entries, crossRefs: { scaleToSongs, modeToSongs, progressionToSongs, chordToSongs } };
+  return { entries, songsList, crossRefs: { scaleToSongs, modeToSongs, progressionToSongs, chordToSongs } };
 }
 
 function scanPractice(): ContentEntry[] {
@@ -771,6 +836,7 @@ function scanSongLessons(): ContentEntry[] {
 // ---- Main ----
 
 function buildContentIndex(): ContentIndex {
+function buildContentIndex(): { index: ContentIndex; songsList: SongListItem[] } {
   const allEntries: ContentEntry[] = [];
 
   // Scan all content types
@@ -846,11 +912,20 @@ function buildContentIndex(): ContentIndex {
     entries: allEntries,
     tagIndex,
     crossReferences: songResult.crossRefs,
+    index: {
+      generatedAt: new Date().toISOString(),
+      entryCount: allEntries.length,
+      entries: allEntries,
+      tagIndex,
+      crossReferences: songResult.crossRefs,
+    },
+    songsList: songResult.songsList,
   };
 }
 
 // Run
 const index = buildContentIndex();
+const { index, songsList } = buildContentIndex();
 
 // Ensure output directory exists
 const outDir = path.dirname(OUTPUT_FILE);
@@ -860,3 +935,7 @@ if (!fs.existsSync(outDir)) {
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(index, null, 2), 'utf-8');
 console.log(`\nWritten to: ${OUTPUT_FILE}`);
+console.log(`\nWritten content index to: ${OUTPUT_FILE}`);
+
+fs.writeFileSync(SONGS_LIST_OUTPUT_FILE, JSON.stringify(songsList, null, 2), 'utf-8');
+console.log(`Written songs list to: ${SONGS_LIST_OUTPUT_FILE}`);

@@ -9,6 +9,7 @@ import {
   getPopularSongs,
   getIconicRiffSongs
 } from '@/lib/songData';
+} from '@/lib/songList';
 import { getDifficultyBarColor } from '@/lib/utils';
 
 interface StatsCardProps {

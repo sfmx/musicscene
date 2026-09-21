@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { SongListItem } from '@/lib/songData';
+import type { SongListItem } from '@/lib/songList';
 import { getDifficultyColor } from '@/utils/theme';
 
 interface SongCardProps {

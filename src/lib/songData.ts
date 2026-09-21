@@ -302,6 +302,8 @@ export interface SongListItem {
   estimatedLearningTime?: string;
   viewCount?: number;
 }
+// Re-export lightweight song listing and filtering utilities
+export * from './songList';
 
 export interface SearchFilters {
   difficulty?: string[];

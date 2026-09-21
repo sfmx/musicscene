@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
 import WhySongsWorkClient from './WhySongsWorkClient';
+import { getAllCuratedHarmonicBreakdowns } from '@/data/whySongsWork';
 import { SITE_CONFIG } from '@/lib/siteConfig';
 
 export const metadata: Metadata = {
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
 };
 
 export default function WhySongsWorkPage() {
+  const allBreakdowns = getAllCuratedHarmonicBreakdowns();
+
   return (
     <Layout>
       <Header
@@ -34,6 +37,7 @@ export default function WhySongsWorkPage() {
         subtitle="The Music Theory Secrets, Modal Mixture, and Voice Leading Behind Legendary Guitar Anthems"
       />
       <WhySongsWorkClient />
+      <WhySongsWorkClient allBreakdowns={allBreakdowns} />
     </Layout>
   );
 }

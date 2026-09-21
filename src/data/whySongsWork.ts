@@ -1,4 +1,7 @@
 import { getSongData, getAllSongs, SongData } from '../lib/songData';
+import { getSongData, SongData } from '../lib/songData';
+import { getAllSongs } from '../lib/songList';
+export { hasCuratedHarmonicBreakdown, CURATED_HARMONIC_SLUGS } from './curatedHarmonicSlugs';
 
 export type HarmonicCategory =
   | 'modal-mixture'
@@ -8,6 +11,8 @@ export type HarmonicCategory =
   | 'pedal-tone-drone'
   | 'secondary-dominants'
   | 'blues-rock-hybrid';
+export * from './harmonicCategories';
+import { HarmonicCategory, HarmonicSecret, HARMONIC_CATEGORIES } from './harmonicCategories';
 
 export interface HarmonicSecret {
   slug: string;

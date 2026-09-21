@@ -22,6 +22,7 @@
     "content:index": "tsx scripts/build-content-index.ts",
     "content:new": "tsx scripts/create-content.ts",
     "content:validate": "tsx scripts/validate-content.ts",
+    "bundle:analyze": "tsx scripts/analyze-chunks.ts",
     "affiliate:audit": "tsx scripts/audit-affiliate-coverage.ts",
     "og:generate": "tsx scripts/generate-og-images.ts"
   },

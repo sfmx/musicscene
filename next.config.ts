@@ -28,12 +28,14 @@ const nextConfig: NextConfig = {
     }
 
     // Copy AlphaTab assets to public folder during build
+    // Copy AlphaTab assets to public folder during build (filtering to modern woff/woff2 fonts only)
     config.plugins.push(
       new (require('copy-webpack-plugin'))({
         patterns: [
           {
             from: 'node_modules/@coderline/alphatab/dist/font',
             to: '../public/alphatab/font',
+            filter: (resourcePath: string) => /\.(woff2?)$/i.test(resourcePath),
             noErrorOnMissing: true
           },
           {
