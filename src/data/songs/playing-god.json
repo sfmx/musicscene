@@ -1,0 +1,452 @@
+{
+  "songInfo": {
+    "title": "Playing God",
+    "artist": "Polyphia",
+    "album": "Remember That You Will Die",
+    "released": "2022",
+    "genre": "Modern Metal / Math Rock",
+    "tempo": "135 BPM",
+    "duration": "3:25",
+    "key": "D Minor / D Phrygian Dominant",
+    "tuning": "Drop D (DADGBE)"
+  },
+  "difficulty": {
+    "overall": "Expert",
+    "rhythmGuitar": "Expert",
+    "leadGuitar": "Expert",
+    "bass": "Advanced",
+    "drums": "Expert"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D Minor / D Phrygian Dominant",
+      "scalesUsed": [
+        {
+          "scale": "D Phrygian Dominant",
+          "notes": "D - Eb - F# - G - A - Bb - C",
+          "application": "Core melodic and harmonic scale (5th mode of G Harmonic Minor) that gives the main themes their fiery Spanish flamenco coloration"
+        },
+        {
+          "scale": "D Natural Minor (Aeolian)",
+          "notes": "D - E - F - G - A - Bb - C",
+          "application": "Provides the minor 3rd (F) and natural 2nd (E) used in contrasting lyrical phrases"
+        },
+        {
+          "scale": "D Harmonic Minor",
+          "notes": "D - E - F - G - A - Bb - C#",
+          "application": "Supplies the raised leading tone (C#) for rapid neo-classical sweeps and altered dominant turnarounds"
+        }
+      ],
+      "modalCharacter": "Phrygian Dominant (Spanish Phrygian) with major 3rd (F#) and flat 2nd (Eb) creating exotic harmonic tension",
+      "keySignature": "1 flat (Bb), with frequent accidentals (Eb, F#, C#)",
+      "relativeMinor": "D minor (tonic center)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm9",
+          "Gm9",
+          "A7b9#5",
+          "Dm9"
+        ],
+        "progression": "i9 - iv9 - V7b9#5 - i9",
+        "description": "Bossa nova and trap-influenced minor jazz cadence featuring altered dominant tension resolving into modern minor 9th extensions"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Bossa/Flamenco Theme",
+          "progression": "Dm9 - Gm9 - A7b9#5 - Dm9",
+          "romanNumerals": "i9 - iv9 - V7b9#5 - i9",
+          "description": "Bouncy, syncopated jazz-minor cadence outlining complex 9th and altered dominant harmonies over a trap-bossa beat"
+        },
+        {
+          "section": "Phrygian Triplet Run",
+          "progression": "Bbmaj7 - A7alt - Dm9",
+          "romanNumerals": "VImaj7 - V7alt - i9",
+          "description": "Deceptive resolution to Bbmaj7 before plunging through A7alt into the blistering D Phrygian cascade"
+        },
+        {
+          "section": "Thump & Slap Breakdown",
+          "progression": "Dm - Eb/D - Dm - A7",
+          "romanNumerals": "i - bII/i - i - V7",
+          "description": "Aggressive low-end groove contrasting the open D pedal against the flamenco Neapolitan half-step Eb chord"
+        },
+        {
+          "section": "Melodic Outro Climax",
+          "progression": "Dm9 - Bbmaj7#11 - Gm9 - A7b9",
+          "romanNumerals": "i9 - VImaj7#11 - iv9 - V7b9",
+          "description": "Expansive harmonic finale utilizing sharp-11 and flat-9 chord extensions to push harmonic complexity to its peak"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm9 (i9) - Minor tonic with warm major 9th extension (E) providing a sophisticated neo-classical foundation",
+        "Gm9 (iv9) - Minor subdominant opening the melodic field with lush upper chord extensions",
+        "A7b9#5 (V7b9#5) - Altered dominant chord borrowed from D Harmonic Minor / Phrygian Dominant, creating sharp resolution urgency",
+        "Bbmaj7 (VImaj7) - Deceptive resolution chord providing an uplifting harmonic contrast before plunging back to D minor",
+        "Eb/D (bII/i) - Neapolitan half-step neighbor chord over the low D pedal establishing signature flamenco grit"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Selective Picking",
+      "description": "Modern technical innovation combining economy picking with left-hand hammer-ons from nowhere to execute rapid phrases without picking every note",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Minimizes pick motion by substituting pick strikes with left-hand hammer-ons directly onto the fretboard",
+          "Enables lightning-fast phrases on acoustic/nylon strings with zero pick drag",
+          "Requires extreme left-hand finger strength and immaculate muting of idle strings",
+          "Produces a fluid, bubbly articulation that sounds somewhere between picking and legato",
+          "Pioneered by Tim Henson and Scott LePage to define modern math-rock and prog guitar"
+        ],
+        "sequence": [
+          "Pick the first note of a multi-string phrase firmly with a downstroke",
+          "Hammer-on the next note using only left-hand percussive force—do not pick",
+          "Cross to the adjacent string with an upstroke or middle-finger pluck",
+          "Immediately mute the previously played string with the fretting hand index pad",
+          "Repeat in rhythmic synchronization with the backing sixteenth-note grid"
+        ],
+        "tips": [
+          "Keep the pick close to the strings—any excess pick displacement wastes precious milliseconds",
+          "Use the fleshy side of the fretting index finger to mute higher unplayed strings",
+          "Keep amp gain low to clean up accidental string touches and unwanted harmonics",
+          "Practice the intro motif at 50% tempo until every hammer-on matches the volume of picked notes",
+          "Use a small, stiff jazz pick (like a Dunlop Flow 1.5mm or Jazz III) for maximum tip control"
+        ],
+        "chords": [
+          "Dm9",
+          "Gm9"
+        ],
+        "progression": "Selective picking runs over Dm9 - Gm9"
+      }
+    },
+    {
+      "name": "Nylon-String Thumping",
+      "description": "Adapting modern slap-bass mechanics (Victor Wooten / Tosin Abasi thumb slapping and index popping) to nylon-string guitar",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb strikes through the low D string like a slap bass hammer, using the knuckle joint",
+          "Index or middle finger immediately follows with an upward pop on the G or B string",
+          "Produces a tight, acoustic kick-and-snare percussive loop within the guitar arrangement",
+          "Nylon strings require precise velocity to avoid flabby buzz against the frets",
+          "Allows a single guitar to emulate both the 808 trap kick drum and hi-hat rolls"
+        ],
+        "sequence": [
+          "Position the right-hand thumb parallel to the low D string over the 15th-17th fret zone",
+          "Rotate the forearm sharply from the elbow/wrist to strike the string with the bony edge of the thumb",
+          "Immediately hook index finger beneath the 3rd or 4th string and snap upward",
+          "Combine with left-hand fretting slaps (dead-note slaps) for percussive syncopation",
+          "Loop the basic thump-pop pattern at 75 BPM before increasing speed"
+        ],
+        "tips": [
+          "Do not swing from the whole arm—keep the kinetic energy centered in the wrist rotation",
+          "Strike through the string rather than bouncing off it for maximum low-frequency fundamental",
+          "Set compressor attack fast enough to catch aggressive transient pops without volume spikes",
+          "Keep the fingernail away from the thumb strike zone to avoid chipping or breaking nails",
+          "Practice without backing track to ensure the percussive pulse is perfectly in time"
+        ],
+        "chords": [
+          "Dm",
+          "Eb/D"
+        ],
+        "progression": "Slap/thump groove over Dm - Eb/D"
+      }
+    },
+    {
+      "name": "Natural Harmonics & Flamenco Rasgueado",
+      "description": "Rapid multi-finger strumming sweeps combined with chimey bell-like natural harmonics at the 12th, 7th, and 5th frets",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Lightly touching the string nodes at frets 12, 7, and 5 produces pure sine-wave overtone chimes",
+          "Harmonics are woven seamlessly into fast single-note runs for dynamic contrast",
+          "Flamenco rasgueado rolls flick individual fingers (pinky, ring, middle, index) in rapid succession",
+          "Creates the unmistakable Spanish guitar theatricality in the bridge and outro sections",
+          "Requires razor-sharp timing to prevent deadened notes"
+        ],
+        "sequence": [
+          "Locate harmonic sweet spots directly above the fret wire (not between the frets)",
+          "Touch string lightly with finger pad, pick firmly, and lift finger immediately upon release",
+          "Practice chaining 12th fret, 7th fret, and 5th fret harmonics across strings 1, 2, and 3",
+          "Incorporate the four-finger rasgueado flick across the full Dm9 chord",
+          "Transition instantly back into single-note selective picking without hesitation"
+        ],
+        "tips": [
+          "Touch the string with minimal pressure—pressing too hard converts the harmonic into a fretted note",
+          "Pluck near the bridge to maximize harmonic brilliance and sustain",
+          "Ensure your fingernails are buffed for a smooth rasgueado fan across strings",
+          "Use subtle stereo reverb to allow the harmonic overtone ring to trail gracefully",
+          "Keep left-hand positioning precise—even 2 millimeters off the fret wire dims the harmonic"
+        ],
+        "chords": [
+          "Dm9",
+          "A7b9"
+        ],
+        "progression": "Harmonic accents over Dm9"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro - Bossa / Flamenco Theme",
+      "timeStamp": "0:00-0:32",
+      "technique": "Selective Picking / Hybrid Picking",
+      "key": "D Minor / D Phrygian Dominant",
+      "description": "The viral opening hook blending bossa nova groove with rapid Spanish Phrygian selective picking runs on nylon string",
+      "chords": [
+        "Dm9",
+        "Gm9",
+        "A7b9#5",
+        "Dm9"
+      ],
+      "progression": "Dm9 - Gm9 - A7b9#5 - Dm9",
+      "notes": [
+        "Drop D tuning gives the Dm9 chord an immense, warm low end",
+        "Sixteenth-note runs use selective picking: pick first note, hammer-on the rest",
+        "Hybrid picking middle finger plucks high E string while pick strikes inner strings",
+        "Staccato muting with the fretting palm gives the notes a bouncy, articulate character"
+      ],
+      "alphaTab": ":16 0.6 7.3 8.2 10.1 8.2 7.3 0.4 5.3 :8 7.3 :16 8.2 7.2 :4 0.6 |",
+      "exerciseLabel": "Tim Henson Bossa-Flamenco Selective Theme"
+    },
+    {
+      "name": "Spanish Phrygian Triplet Cascade",
+      "timeStamp": "0:32-1:04",
+      "technique": "Selective Picking / Rapid Triplet Runs",
+      "key": "D Phrygian Dominant",
+      "description": "Blistering three-notes-per-string descending cascade tracing D Phrygian Dominant at high speed",
+      "chords": [
+        "Bbmaj7",
+        "A7alt",
+        "Dm9"
+      ],
+      "progression": "Bbmaj7 - A7alt - Dm9",
+      "notes": [
+        "Demands seamless synchronization between left-hand pull-offs and right-hand string tracking",
+        "Outlines the flat-second (Eb) and major-third (F#) intervals of D Phrygian Dominant",
+        "Keep right-hand pick motion strictly economical",
+        "Ends with a snappy low D pedal thump that punctuates the trap drop"
+      ],
+      "alphaTab": ":16 10.1 8.1 7.1 10.2 8.2 7.2 9.3 7.3 6.3 8.4 7.4 5.4 :4 0.6 |",
+      "exerciseLabel": "Descending Phrygian Dominant Cascade"
+    },
+    {
+      "name": "Thump Groove & Slap Breakdown",
+      "timeStamp": "1:04-1:50",
+      "technique": "Nylon String Thumping / Percussive Slap",
+      "key": "D Minor",
+      "description": "Heavy trap-influenced percussive breakdown with thumb slaps on the low D and finger pops on high strings",
+      "chords": [
+        "Dm",
+        "Eb/D",
+        "Dm",
+        "A7"
+      ],
+      "progression": "Dm - Eb/D - Dm - A7",
+      "notes": [
+        "Thumb slaps the 6th string to simulate an 808 kick drum pulse",
+        "Index pops the 3rd and 2nd strings like a crisp hi-hat / snare articulation",
+        "Neapolitan Eb/D chord creates menacing flamenco dissonance over the low D drone",
+        "Accented dead-note left-hand mutes create syncopated rhythmic polyrhythms"
+      ],
+      "alphaTab": ":16 0.6 0.6 7.3 8.2 0.6 0.6 10.1 8.1 :8 7.1 :16 8.2 7.2 :4 (0.6 0.5 0.4) |",
+      "exerciseLabel": "Trap Thumping & Percussive Breakdown"
+    },
+    {
+      "name": "Melodic Outro Climax",
+      "timeStamp": "1:50-3:25",
+      "technique": "Natural Harmonics / Rasgueado Climax",
+      "key": "D Minor / D Phrygian Dominant",
+      "description": "The triumphant grand finale combining soaring melodic leads, natural harmonic flourishes, and aggressive flamenco strums",
+      "chords": [
+        "Dm9",
+        "Bbmaj7#11",
+        "Gm9",
+        "A7b9"
+      ],
+      "progression": "Dm9 - Bbmaj7#11 - Gm9 - A7b9",
+      "notes": [
+        "Lyrical high-register theme soaring above dense trap percussion",
+        "Natural harmonic accents at frets 12 and 7 create twinkling overtone sparkle",
+        "Full-chord rasgueado bursts punctuate the cadence transitions",
+        "Final Dm9 chord sustained with shimmering ambient reverb and tape delay decay"
+      ],
+      "alphaTab": ":8 7.3 8.2 10.1 :16 8.1 7.1 :8 10.2 8.2 :4 (0.6 7.4 7.3 8.2) |",
+      "exerciseLabel": "Virtuoso Melodic Finale & Chordal Ring"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Ibanez TOD10N Tim Henson Signature Nylon-String Acoustic/Electric",
+      "alternatives": [
+        "Ibanez FRH10N",
+        "Cordoba Stage Traditional",
+        "Godin Multiac Grand Concert Duet"
+      ],
+      "pickup": "Fishman Sonicore undersaddle piezo pickup paired with Ibanez AEQ210TF onboard preamp"
+    },
+    "amp": {
+      "recommended": "Neural DSP Archetype: Tim Henson (Acoustic Amp Mode)",
+      "alternatives": [
+        "Roland JC-120 Jazz Chorus",
+        "Kemper Profiler with Acoustic Piezo Profile",
+        "Line 6 Helix Studio Tube Preamp"
+      ],
+      "settings": {
+        "gain": "2.5 (immaculate clean headroom with zero harmonic distortion)",
+        "treble": "7.5 (hyper-articulate bite capturing transient pick attack)",
+        "middle": "5.0 (neutral midrange response)",
+        "bass": "3.5 (steep high-pass filter at 100 Hz to cut boomy sub frequencies)",
+        "presence": "8.0 (piezo sparkle and harmonic chime resonance)"
+      }
+    },
+    "effects": {
+      "distortion": "None (pure unclipped acoustic transient clarity and wide dynamic range)",
+      "delay": "Digital stereo ping-pong delay (3/16 dotted note, 25% mix)",
+      "reverb": "Algorithmic shimmer reverb + studio room reflection (2.2s decay, 22% mix)",
+      "other": "Multiband optical compressor taming piezo harshness between 3 kHz - 6 kHz; fast noise gate cutting sympathetic string ring"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Familiarize with D Phrygian Dominant & Selective Picking",
+      "steps": [
+        "Tune 6th string down one step to D (Drop D tuning)",
+        "Memorize the D Phrygian Dominant scale shape in 5th and 7th fret positions",
+        "Practice selective picking: pick the first note, hammer-on the next two from nowhere",
+        "Mute unplayed strings with the fretting hand index pad to eliminate string buzz",
+        "Practice shifting cleanly between Dm9 and A7b9 chord grips at 60 BPM"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Execute clean single-string selective picking articulation at 75 BPM"
+    },
+    "intermediate": {
+      "title": "Coordinate Hybrid Picking and Thumping Grooves",
+      "steps": [
+        "Integrate right-hand middle finger plucks with flatpick downstrokes",
+        "Practice thumb slapping on the 6th string followed by index pop on the 3rd string",
+        "Work through the main bossa theme at 80 BPM maintaining steady sixteenth-note swing",
+        "Master the natural harmonic chime nodes at frets 12, 7, and 5 with light touch",
+        "Eliminate unwanted sympathetic string vibration during staccato breaks"
+      ],
+      "timeEstimate": "6-8 weeks",
+      "goals": "Play the main theme and slap breakdown cleanly at 100 BPM"
+    },
+    "advanced": {
+      "title": "Full-Speed Virtuosity & Triplets at 135 BPM",
+      "steps": [
+        "Build the Phrygian triplet cascade up to the full 135 BPM tempo",
+        "Achieve dynamic balance between thumb slaps, finger pops, and picked notes",
+        "Execute seamless switches between nylon-string slapping, picking, and sweeping",
+        "Maintain razor-sharp staccato muting without slowing down or missing beats",
+        "Perform the entire song cleanly against the original backing track at 135 BPM"
+      ],
+      "timeEstimate": "8-16 weeks",
+      "goals": "Performance-ready execution of Playing God at full 135 BPM with relaxed precision"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Relying strictly on alternate picking instead of selective picking and hammer-ons from nowhere",
+      "Playing through an overdriven guitar amp which creates muddiness and masks the nylon-string attack",
+      "Failing to mute idle strings, causing harsh polytonal dissonance during rapid position shifts",
+      "Slapping the 6th string with excessive arm force, creating fret rattle instead of tight punch",
+      "Rushing sixteenth-note Phrygian cascades ahead of the metronomic trap beat"
+    ],
+    "practiceRoutine": [
+      "10 minutes: D Phrygian Dominant scale three-notes-per-string warm-up at 80 BPM",
+      "15 minutes: Selective picking isolation on the intro motif with crystal clean tone",
+      "15 minutes: Thumping and slap-pop mechanics drills across strings 6, 4, and 3",
+      "10 minutes: Triplet cascade metronome work increasing by 3 BPM increments",
+      "10 minutes: Full song playthrough recording and analyzing timing against the click"
+    ],
+    "focusAreas": [
+      "Selective picking efficiency and minimal pick motion",
+      "Left-hand hammer-ons from nowhere with equalized note volume",
+      "Nylon-string thumb slap and pop dynamic control",
+      "D Phrygian Dominant harmonic visualization across the fretboard",
+      "Pristine staccato string dampening"
+    ],
+    "metronomeWork": [
+      "Set metronome to 70 BPM with sixteenth-note subdivision clicks",
+      "Drill the intro phrase for 5 consecutive clean repetitions before raising tempo",
+      "Increase by 3-5 BPM steps, targeting 105 BPM as the primary fluency checkpoint",
+      "Practice at 140 BPM in short 2-measure bursts to build speed overhead",
+      "Settle at 135 BPM and lock into the relaxed, bouncy trap/bossa groove"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "G.O.A.T.",
+        "similarity": "Flagship hybrid picking and progressive math-rock riff architecture"
+      },
+      {
+        "title": "Ego Death",
+        "similarity": "Modern virtuoso guitar featuring acoustic and electric hybrid phrasing"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Cliffs of Dover",
+        "artist": "Eric Johnson",
+        "difficulty": "Expert",
+        "similarity": "Virtuoso hybrid picking and pentatonic cascading runs",
+        "link": "/lessons/songs/song-analysis/cliffs-of-dover"
+      },
+      {
+        "title": "Schism",
+        "artist": "Tool",
+        "difficulty": "Advanced",
+        "similarity": "Drop D tuning with intricate rhythmic subdivisions and odd time signatures",
+        "link": "/lessons/songs/song-analysis/schism"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Cliffs of Dover",
+        "artist": "Eric Johnson",
+        "difficulty": "Expert",
+        "similarity": "Builds essential hybrid picking foundation required for modern math-rock"
+      },
+      {
+        "title": "Playing God",
+        "artist": "Polyphia",
+        "difficulty": "Expert",
+        "similarity": "The pinnacle modern technical masterclass blending flamenco, trap, and math rock"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-09-21",
+    "featured": true,
+    "decade": "2020s",
+    "subGenre": "Modern Metal / Math Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums"
+    ],
+    "tags": [
+      "hybrid-picking",
+      "metal",
+      "harmonic-minor",
+      "expert",
+      "arpeggios",
+      "percussive",
+      "song-analysis",
+      "alternate-picking"
+    ],
+    "learningValue": "Pinnacle modern guitar masterclass combining selective picking, nylon thumping, and Spanish Phrygian harmony",
+    "iconicRiff": true,
+    "estimatedLearningTime": "4-6 months"
+  }
+}
+

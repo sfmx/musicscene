@@ -96,8 +96,52 @@ describe('Why Songs Work Harmonic Engine', () => {
   });
 
   it('should provide complete coverage across all 108 catalog songs in the discovery hub', () => {
+  it('should return curated breakdown for Never Going Back Again with acoustic pedal bass', () => {
+    const song = getWhySongWorks('never-going-back-again');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('pedal-tone-drone');
+    expect(song?.chords).toContain('D');
+    expect(song?.chords).toContain('G/D');
+    expect(song?.coreSecret).toContain('Travis-Picked');
+  });
+
+  it('should return curated breakdown for Playing God with Phrygian Dominant tension', () => {
+    const song = getWhySongWorks('playing-god');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('secondary-dominants');
+    expect(song?.chords).toContain('Dm9');
+    expect(song?.chords).toContain('A7b9#5');
+    expect(song?.coreSecret).toContain('Phrygian Dominant');
+  });
+
+  it('should return curated breakdown for It Runs Through Me with Neo-Soul cycle of fifths', () => {
+    const song = getWhySongWorks('it-runs-through-me');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('modal-mixture');
+    expect(song?.chords).toContain('Ebm9');
+    expect(song?.chords).toContain('Fm7b5');
+    expect(song?.chords).toContain('Bb7b9');
+    expect(song?.coreSecret).toContain('Cycle of Fifths');
+  });
+
+  it('should return curated breakdown for Stormy Monday with jazz blues substitutions', () => {
+    const song = getWhySongWorks('stormy-monday');
+    expect(song).toBeDefined();
+    expect(song?.isCurated).toBe(true);
+    expect(song?.category).toBe('blues-rock-hybrid');
+    expect(song?.chords).toContain('G9');
+    expect(song?.chords).toContain('C#dim7');
+    expect(song?.chords).toContain('D9#5');
+    expect(song?.coreSecret).toContain('Stormy Monday');
+  });
+
+  it('should provide complete coverage across all 111+ catalog songs in the discovery hub', () => {
     const all = getAllCuratedHarmonicBreakdowns();
     expect(all.length).toBeGreaterThanOrEqual(107);
+    expect(all.length).toBeGreaterThanOrEqual(111);
     
     // Ensure every single song has required fields populated
     all.forEach(song => {

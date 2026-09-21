@@ -1,0 +1,451 @@
+{
+  "songInfo": {
+    "title": "Never Going Back Again",
+    "artist": "Fleetwood Mac",
+    "album": "Rumours",
+    "released": "1977",
+    "genre": "Acoustic Fingerstyle",
+    "tempo": "136 BPM",
+    "duration": "2:14",
+    "key": "F# Major (Capo IV, D shapes)",
+    "tuning": "Drop D (DADGBE) with Capo 4"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# Major (sounding) / D Major (relative to capo)",
+      "scalesUsed": [
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Primary melodic framework for the fingerpicked treble embellishments and vocal harmonies"
+        },
+        {
+          "scale": "D Major (Ionian)",
+          "notes": "D - E - F# - G - A - B - C#",
+          "application": "Complete diatonic scale providing the 4th (G) and 7th (C#) degrees for the G/D and A7sus4 chords"
+        },
+        {
+          "scale": "D Mixolydian",
+          "notes": "D - E - F# - G - A - B - C",
+          "application": "Inflected during transitional passing phrases with flat-seventh folk coloration"
+        }
+      ],
+      "modalCharacter": "Ionian / Major Pentatonic with continuous alternating tonic pedal bass",
+      "keySignature": "6 sharps (F# major sounding) / 2 sharps (D major relative to capo)",
+      "relativeMinor": "D# minor (sounding) / B minor (relative to capo)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "Dadd9",
+          "G/D",
+          "A7sus4"
+        ],
+        "progression": "I - Iadd9 - IV/I - V7sus4 - I",
+        "description": "Bright, sparkling Travis-picked folk-rock progression anchored by a low D-A-D-A alternating bass pedal"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Travis Theme",
+          "progression": "D - G/D - D - A7sus4 - D",
+          "romanNumerals": "I - IV/I - I - V7sus4 - I",
+          "description": "The definitive Travis picking statement establishing the independent alternating thumb bass against syncopated treble melody"
+        },
+        {
+          "section": "Verse Accompaniment",
+          "progression": "D - Dadd9 - G/D - A7sus4",
+          "romanNumerals": "I - Iadd9 - IV/I - V7sus4",
+          "description": "Sparse, dynamic fingerpicked pattern supporting Lindsey Buckingham's intimate vocal line"
+        },
+        {
+          "section": "Chorus Refrain",
+          "progression": "D - Bm - G - A",
+          "romanNumerals": "I - vi - IV - V",
+          "description": "Moves to relative minor Bm for brief emotional weight before lifting through G and A back to the tonic"
+        },
+        {
+          "section": "Outro Cadence",
+          "progression": "D - G/D - D",
+          "romanNumerals": "I - IV/I - I",
+          "description": "Final resonant acoustic resolution letting open strings ring into silence"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Tonic home base providing the pedal bass note on the dropped 6th string",
+        "G/D (IV/I) - Subdominant chord held over the low D bass pedal, creating a lush suspended tension",
+        "A7sus4 (V7sus4) - Dominant suspension resolving smoothly back to the D tonic without harsh leading-tone clash",
+        "Bm (vi) - Relative minor adding brief emotional weight during the vocal refrain",
+        "Dadd9 (Iadd9) - Unfretted high E string ring creates delicate folk shimmer"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Travis Picking",
+      "description": "Strict alternating bass pattern driven by the thumb while index and middle fingers pluck syncopated melody notes independently",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb alternates steadily across strings 6 (D) and 4 (D), occasionally hitting string 5 (A)",
+          "The thumb operates as an autonomous metronome on every quarter-note beat",
+          "Index finger handles strings 3 and 2; middle finger handles strings 2 and 1",
+          "Requires complete mental dissociation between thumb downstrokes and finger upstrokes",
+          "Played with bare fingertips and fingernails—no thumbpick or flatpick is used"
+        ],
+        "sequence": [
+          "Tune 6th string down one whole step to D (Drop D)",
+          "Attach capo securely on 4th fret across all 6 strings",
+          "Practice steady thumb alternation on open 6th and 4th strings at 60 BPM",
+          "Add syncopated melody notes on offbeats with index and middle fingers",
+          "Integrate left-hand chord shifts without interrupting the right-hand thumb pattern"
+        ],
+        "tips": [
+          "Do not anchor your pinky rigidly on the guitar top; keep the wrist relaxed and buoyant",
+          "If the thumb stumbles when changing chords, practice thumb-only until it is purely automatic",
+          "Emphasize the bass notes slightly on beats 1 and 3 for natural acoustic swing",
+          "Keep finger movements compact—pluck from the knuckles rather than moving the whole arm",
+          "Practice unplugged in a quiet room to hear tone consistency between flesh and nail"
+        ],
+        "chords": [
+          "D",
+          "G/D",
+          "A7sus4"
+        ],
+        "progression": "Continuous Travis picking across D - G/D - A7sus4"
+      }
+    },
+    {
+      "name": "Independent Alternating Bass",
+      "description": "Low-register dropped D pedal point that sustains uninterrupted rhythm while the upper voices shift harmonically",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Dropped 6th string tuned to D gives the acoustic guitar an orchestral, double-bass depth",
+          "Maintains rhythmic propulsion without drums or percussion",
+          "Thumb strokes must maintain consistent velocity and volume",
+          "Contrasts with the bright, chimey upper register notes produced by Capo IV",
+          "Essential foundation of American folk, country-blues, and Celtic fingerstyle traditions"
+        ],
+        "sequence": [
+          "Isolate the thumb rhythm: Beat 1 (string 6), Beat 2 (string 4), Beat 3 (string 6), Beat 4 (string 4)",
+          "Count aloud '1, 2, 3, 4' while maintaining the thumb groove",
+          "Count '1 and 2 and 3 and 4 and', adding melody taps on 'and'",
+          "Combine with fretted notes on the upper strings",
+          "Build speed gradually from 60 to 136 BPM"
+        ],
+        "tips": [
+          "Use the fleshy side of the thumb for a round, warm bass thump",
+          "Avoid slapping the string against the frets unless intentionally creating percussive snap",
+          "Ensure the low D string does not rattle against the 1st fret under capo pressure",
+          "Record yourself with a metronome to check that your thumb doesn't rush",
+          "Treat the thumb like the drummer's kick and snare"
+        ],
+        "chords": [
+          "D",
+          "G/D"
+        ],
+        "progression": "Alternating D (string 6) and D (string 4) pedal"
+      }
+    },
+    {
+      "name": "Two-Finger Clawhammer Attack",
+      "description": "Lindsey Buckingham's signature bare-finger picking style blending clawhammer banjo mechanics with folk fingerpicking",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Buckingham learned banjo before guitar, deeply influencing his right-hand claw posture",
+          "Index and middle fingers stay curved, ready to strike together or in quick alternation",
+          "Fingernail contact delivers a snappy, bright attack that cuts through dense mixes",
+          "Enables rapid upward brush strums across two strings simultaneously",
+          "Produces significantly more dynamic variation than a flatpick"
+        ],
+        "sequence": [
+          "Curve index and middle fingers into a relaxed hook shape over strings 1-3",
+          "Practice pinching string 6 with thumb and string 1 with middle finger simultaneously",
+          "Follow immediately with an index finger pluck on string 2",
+          "Integrate the double-string brush on the G/D chord",
+          "Focus on clean string releases without extraneous finger buzz"
+        ],
+        "tips": [
+          "Maintain slightly rounded fingernails for consistent string escape",
+          "Keep fingernails buffed smooth with fine micro-grit paper to avoid string snag",
+          "Position the right hand slightly closer to the bridge for crisp treble definition",
+          "Relax hand muscles between phrases to avoid fatigue over long performances",
+          "Match the volume of finger upstrokes to the thumb downstrokes"
+        ],
+        "chords": [
+          "D",
+          "Dadd9",
+          "G/D"
+        ],
+        "progression": "Finger claw over D - G/D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro - Travis Picking Theme",
+      "timeStamp": "0:00-0:28",
+      "technique": "Travis Picking / Alternating Bass",
+      "key": "F# Major (Capo IV, D shapes)",
+      "description": "The quintessential fingerpicking intro that establishes the iconic independent thumb pulse against syncopated treble melody",
+      "chords": [
+        "D",
+        "G/D",
+        "A7sus4"
+      ],
+      "progression": "D - G/D - D - A7sus4 - D",
+      "notes": [
+        "Capo on 4th fret; Drop D tuning on 6th string",
+        "Thumb alternates steadily between strings 6 and 4 on every beat",
+        "Treble melody rings on strings 3, 2, and 1",
+        "Let all open strings ring through transitions for full acoustic resonance"
+      ],
+      "alphaTab": ":8 0.6 2.3 0.4 3.2 0.6 2.3 0.4 3.2 | :8 0.6 0.1 0.4 2.2 0.6 0.1 0.4 2.2 |",
+      "exerciseLabel": "Lindsey Buckingham Signature Travis Intro"
+    },
+    {
+      "name": "Verse 1 - Vocal Accompaniment",
+      "timeStamp": "0:28-0:56",
+      "technique": "Travis Picking / Fingerstyle Dynamics",
+      "key": "F# Major (Capo IV, D shapes)",
+      "description": "Intimate fingerpicked accompaniment supporting the lead vocal with subtle dynamic ebb and flow",
+      "chords": [
+        "D",
+        "Dadd9",
+        "G/D",
+        "A7sus4"
+      ],
+      "progression": "D - Dadd9 - G/D - A7sus4",
+      "notes": [
+        "Slightly softer right-hand attack to provide sonic space for the vocal",
+        "Subtle hammer-ons from open B to 2nd fret C# create melodic movement",
+        "Thumb maintains unbreakable quarter-note clockwork",
+        "Accents on beat 1 anchor each four-measure vocal line"
+      ],
+      "alphaTab": ":8 0.6 2.3 0.4 3.2 0.6 0.1 0.4 2.2 | :8 0.6 2.3 0.4 0.2 0.6 2.3 0.4 (3.2 2.3) |",
+      "exerciseLabel": "Verse Fingerstyle Counterpoint"
+    },
+    {
+      "name": "Instrumental Interlude & Flourish",
+      "timeStamp": "0:56-1:24",
+      "technique": "Two-Finger Clawhammer / Treble Cascade",
+      "key": "F# Major (Capo IV, D shapes)",
+      "description": "High-energy instrumental break featuring rapid sixteenth-note arpeggio cascades across the top strings",
+      "chords": [
+        "D",
+        "G/D",
+        "D",
+        "A7sus4"
+      ],
+      "progression": "D - G/D - D - A7sus4",
+      "notes": [
+        "Sixteenth-note rolls demand rapid index and middle finger alternation",
+        "Thumb continues its steady low D pedal without rushing",
+        "Crisp fingernail attack produces bright bell-like acoustic chime",
+        "Dynamic swell creates dramatic tension before the final vocal return"
+      ],
+      "alphaTab": ":16 0.6 2.3 3.2 2.1 0.4 2.3 3.2 2.1 | :8 0.6 2.3 0.4 3.2 :4 (0.6 0.4 2.3 3.2) |",
+      "exerciseLabel": "Virtuoso Sixteenth-Note Acoustic Cascade"
+    },
+    {
+      "name": "Outro - Final Cadence",
+      "timeStamp": "1:24-2:14",
+      "technique": "Travis Picking / Resonant Resolution",
+      "key": "F# Major (Capo IV, D shapes)",
+      "description": "The concluding section winding down the relentless Travis picking groove into a resonant final open chord ring",
+      "chords": [
+        "D",
+        "G/D",
+        "D"
+      ],
+      "progression": "D - G/D - D",
+      "notes": [
+        "Gradual ritardando over the final two measures",
+        "Final full D major chord strummed gently with the thumb flesh",
+        "Let all six strings ring out completely into room decay",
+        "Notice the deep low D fundamental vibrating under the capoed chime"
+      ],
+      "alphaTab": ":8 0.6 2.3 0.4 3.2 0.6 2.3 0.4 3.2 | :2 (0.6 0.4 0.3 2.2 3.1) |",
+      "exerciseLabel": "Acoustic Outro Ring & Resolution"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Taylor 814ce or Martin D-28 Acoustic Guitar",
+      "alternatives": [
+        "Rick Turner Model 1 Acoustic/Electric",
+        "Gibson J-45 Standard",
+        "Yamaha FG800 (budget acoustic benchmark)"
+      ],
+      "pickup": "L.R. Baggs Anthem microphone/piezo hybrid system or stereo studio condenser microphones"
+    },
+    "amp": {
+      "recommended": "Grace Design Felix 2 Acoustic Instrument Preamp",
+      "alternatives": [
+        "L.R. Baggs Venue DI",
+        "AER Compact 60 Acoustic Amplifier",
+        "Fishman Loudbox Artist"
+      ],
+      "settings": {
+        "gain": "Pristine clean headroom with no audible harmonic saturation",
+        "treble": "6.5 (airy acoustic sheen catching fingernail attack)",
+        "middle": "4.5 (gentle scoop at 800 Hz to carve space for vocals)",
+        "bass": "5.0 (tight dropped D fundamental without boomy low-end resonance)",
+        "presence": "7.0 (high-frequency clarity for finger separation)"
+      }
+    },
+    "effects": {
+      "distortion": "None (uncompromising acoustic purity and high dynamic range)",
+      "delay": "None or subtle 20ms studio stereo micro-doubler for acoustic width",
+      "reverb": "EMT 140 plate reverb emulation (1.8s decay, subtle 18% mix)",
+      "other": "Studio 1176 optical/FET compressor catching transient spikes with 4:1 ratio; Shubb C1 capo on 4th fret"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Isolate the Alternating Thumb Bass",
+      "steps": [
+        "Tune low 6th string down one whole step from E to D (Drop D tuning)",
+        "Place a quality capo firmly behind the 4th fret across all 6 strings",
+        "Practice thumb-only strokes alternating between strings 6 and 4 at 60 BPM",
+        "Count quarter notes out loud: '1, 2, 3, 4' to cement the metronomic pulse",
+        "Ensure the low D string produces a clean, buzz-free fundamental tone"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Achieve automatic, effortless thumb independence at 80 BPM"
+    },
+    "intermediate": {
+      "title": "Syncopate Treble Melody Over Steady Bass",
+      "steps": [
+        "Add index and middle finger plucks on the offbeats ('&' counts)",
+        "Practice the D to G/D chord shift without interrupting the alternating thumb",
+        "Work through the verse Travis picking loop at half tempo (68 BPM)",
+        "Eliminate right-hand tension by relaxing wrist and keeping knuckles loose",
+        "Record your playing and listen back to ensure bass volume matches melody"
+      ],
+      "timeEstimate": "4-6 weeks",
+      "goals": "Play the complete verse Travis picking pattern cleanly at 100 BPM"
+    },
+    "advanced": {
+      "title": "Full-Speed Execution & Dynamic Mastery",
+      "steps": [
+        "Build tempo incrementally up to the original record speed of 136 BPM",
+        "Master the fast sixteenth-note instrumental interlude cascades cleanly",
+        "Incorporate Lindsey Buckingham's fingernail dynamic accents and brush strokes",
+        "Develop stamina to play the complete song through without fatigue or slowing",
+        "Refine your touch to let notes sustain and ring into one another like an acoustic harp"
+      ],
+      "timeEstimate": "6-10 weeks",
+      "goals": "Flawless, performance-ready execution at 136 BPM with relaxed musical expression"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the alternating thumb bass follow the rhythm of the melody instead of maintaining a steady independent clock",
+      "Failing to tune to Drop D before placing the capo on the 4th fret",
+      "Plucking treble strings too aggressively, overpowering the low D pedal bass foundation",
+      "Tensing the right wrist or anchoring the pinky too firmly against the guitar soundboard",
+      "Rushing the tempo before achieving mechanical muscle memory at slow practice speeds"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Thumb-only Drop D bass pulse on strings 6 and 4 with metronome at 70 BPM",
+      "10 minutes: Slow Travis picking loop on the D chord shape at 75 BPM",
+      "15 minutes: Chord transitions between D, Dadd9, and G/D maintaining uninterrupted thumb groove",
+      "10 minutes: Sixteenth-note instrumental interlude finger-independence drills",
+      "5 minutes: Full song playthrough focusing on relaxed breathing, posture, and steady tempo"
+    ],
+    "focusAreas": [
+      "Independent right-hand thumb automation across strings 6 and 4",
+      "Clean separation and dynamic balance between bass and treble voices",
+      "Drop D fretboard navigation with Capo IV",
+      "Flesh vs. fingernail touch and attack consistency",
+      "Right-hand relaxation and stamina conservation"
+    ],
+    "metronomeWork": [
+      "Begin practice at 65 BPM with the metronome clicking on eighth notes",
+      "Advance tempo by 4 BPM increments only after playing 3 consecutive error-free passes",
+      "Target 100 BPM as the foundational milestone for fluid verse accompaniment",
+      "Practice short 4-measure bursts at 140 BPM to build speed reserve above the 136 BPM album tempo",
+      "Return to 136 BPM and perform full runs with relaxed, natural musicality"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Go Your Own Way",
+        "similarity": "Shares Lindsey Buckingham's percussive acoustic rhythm style and open chord voicings"
+      },
+      {
+        "title": "Landslide",
+        "similarity": "Classic fingerpicking masterclass in standard tuning with capo"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic fingerpicking pattern with simultaneous bass and melody independence",
+        "link": "/lessons/songs/song-analysis/blackbird"
+      },
+      {
+        "title": "Classical Gas",
+        "artist": "Mason Williams",
+        "difficulty": "Expert",
+        "similarity": "Virtuoso acoustic fingerstyle progression pushing Travis picking to maximum speed",
+        "link": "/lessons/songs/song-analysis/classical-gas"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Landslide",
+        "artist": "Fleetwood Mac",
+        "difficulty": "Intermediate",
+        "similarity": "Foundational fingerpicking stepping stone before tackling Never Going Back Again"
+      },
+      {
+        "title": "Classical Gas",
+        "artist": "Mason Williams",
+        "difficulty": "Expert",
+        "similarity": "Advanced fingerstyle challenge to take your Travis picking technique to virtuoso level"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-09-21",
+    "featured": true,
+    "decade": "1970s",
+    "subGenre": "Acoustic Fingerstyle",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Vocals"
+    ],
+    "tags": [
+      "fingerpicking",
+      "acoustic-guitar",
+      "major-key",
+      "classic-rock",
+      "advanced",
+      "voice-leading",
+      "song-analysis",
+      "rhythm-theory"
+    ],
+    "learningValue": "Essential benchmark masterclass for fingerstyle acoustic guitar and thumb independence",
+    "iconicRiff": true,
+    "estimatedLearningTime": "2-3 months"
+  }
+}

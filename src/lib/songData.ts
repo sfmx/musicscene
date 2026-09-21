@@ -105,6 +105,10 @@ import everyRoseHasItsThornData from '@/data/songs/every-rose-has-its-thorn.json
 import photographData from '@/data/songs/photograph.json';
 import welcomeToTheJungleData from '@/data/songs/welcome-to-the-jungle.json';
 import whoMadeWhoData from '@/data/songs/who-made-who.json';
+import neverGoingBackAgainData from '@/data/songs/never-going-back-again.json';
+import playingGodData from '@/data/songs/playing-god.json';
+import itRunsThroughMeData from '@/data/songs/it-runs-through-me.json';
+import stormyMondayData from '@/data/songs/stormy-monday.json';
 
 export interface SongData {
   songInfo: {
@@ -420,6 +424,10 @@ const songDatabase: Record<string, SongData> = {
   'photograph': photographData,
   'welcome-to-the-jungle': welcomeToTheJungleData,
   'who-made-who': whoMadeWhoData,
+  'never-going-back-again': neverGoingBackAgainData,
+  'playing-god': playingGodData,
+  'it-runs-through-me': itRunsThroughMeData,
+  'stormy-monday': stormyMondayData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

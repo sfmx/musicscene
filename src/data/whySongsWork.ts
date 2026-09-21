@@ -1101,6 +1101,175 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'never-going-back-again': {
+    slug: 'never-going-back-again',
+    songTitle: 'Never Going Back Again',
+    artist: 'Fleetwood Mac',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'The Independent Travis-Picked Alternating Bass Pedal Point with Syncopated Folk Counterpoint',
+    emotionalHook: 'Lindsey Buckingham turns an acoustic guitar into a two-piece ensemble. While his thumb relentlessly alternates between the dropped low D (string 6) and middle D (string 4) on every single quarter-note beat, his index and middle fingers weave a sparkling, syncopated melody in D major across the high strings, creating the illusion of an unbroken acoustic river.',
+    romanProgression: 'I - Iadd9 - IV/I - V7sus4 - I',
+    chords: ['D', 'Dadd9', 'G/D', 'A7sus4'],
+    progressionExplanation: [
+      'D (I): The tonic home base anchored by the dropped 6th string low D, providing an orchestral acoustic depth.',
+      'Dadd9 (Iadd9): Open high E string chime introduces a bright, innocent folk shimmer.',
+      'G/D (IV/I): Subdominant chord held over the low D pedal, generating a lush suspended tension that wants to resolve back home.',
+      'A7sus4 (V7sus4): Dominant suspension resolving smoothly back to the D tonic without harsh leading-tone clash.',
+    ],
+    voiceLeadingInsights: [
+      'The alternating thumb bass line (D → D) operates as an autonomous, metronomic clock that never wavers.',
+      'The upper treble voice moves in stepwise counterpoint (F# → G → F# → E → D), contrasting the stationary pedal bass.',
+      'Capo on the 4th fret raises the string tension and pitch into F# Major, giving the acoustic guitar a harpsichord-like resonance.',
+    ],
+    guitarPerspective: 'Drop D tuning (DADGBE) with Capo IV. Lindsey Buckingham uses bare flesh and fingernails (no flatpick or thumbpick), letting the thumb provide bass warmth while the fingerpads articulate treble syncopations.',
+    songwriterTakeaway: 'Anchor your progression with an alternating tonic pedal bass on low open strings while shifting major triads and suspended chords on the higher strings. It gives an acoustic guitar piece orchestral fullness without needing additional instruments.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Scale', slug: 'major', description: 'The complete diatonic framework relative to the capo.' },
+        { name: 'D Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic foundation for the treble fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright major mode governing the piece.' },
+      ],
+      chords: [
+        { name: 'Suspended Chords', slug: 'suspended', description: 'A7sus4 and G/D suspension mechanics.' },
+        { name: 'Open Chords', slug: 'open', description: 'Movable D shapes in Drop D tuning.' },
+      ],
+      progressions: [
+        { name: 'I - IV - V Progression', slug: 'i-iv-v', description: 'The underlying folk-rock foundation.' },
+      ],
+    },
+  },
+
+  'playing-god': {
+    slug: 'playing-god',
+    songTitle: 'Playing God',
+    artist: 'Polyphia',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'Flamenco Phrygian Dominant Tension and Neo-Classical Altered Dominants over a Bossa Trap Grid',
+    emotionalHook: 'Tim Henson and Scott LePage fuse 17th-century Spanish flamenco harmony with 21st-century trap production. Centered in D minor, the song derives its fiery harmonic bite from the D Phrygian Dominant scale (featuring an exotic major 3rd, F#, alongside a flat 2nd, Eb) and the altered dominant chord A7b9#5, producing hyper-intense resolution urgency that snaps into modern minor 9th chords.',
+    romanProgression: 'i9 - iv9 - V7b9#5 - i9 | VImaj7 - V7alt - i9',
+    chords: ['Dm9', 'Gm9', 'A7b9#5', 'Bbmaj7'],
+    progressionExplanation: [
+      'Dm9 (i9): Minor tonic chord enriched with a major 9th extension (E), establishing a sophisticated neo-classical foundation.',
+      'Gm9 (iv9): Minor subdominant expanding the harmonic landscape with warm upper partials.',
+      'A7b9#5 (V7b9#5): Altered dominant chord borrowed from D Harmonic Minor / Phrygian Dominant, creating sharp leading-tone tension.',
+      'Bbmaj7 (VImaj7): Deceptive resolution chord providing an uplifting harmonic lift before plunging back to D minor.',
+    ],
+    voiceLeadingInsights: [
+      'The chromatic pull between Eb (flat 2nd) and D (tonic) alongside F# (leading tone to G) creates the signature Spanish flamenco flavor.',
+      'Selective picking and left-hand hammer-ons from nowhere allow rapid multi-string sweeps without pick drag or blurred notes.',
+      'Drop D tuning provides low-end acoustic thump on the open 6th string, mimicking an 808 sub-bass kick beneath nylon-string chimes.',
+    ],
+    guitarPerspective: 'Ibanez TOD10N nylon-string electric acoustic through Neural DSP Archetype: Tim Henson acoustic model. Clean piezo articulation with multiband compression taming aggressive pick transients.',
+    songwriterTakeaway: 'To inject fiery modern urgency into a standard minor progression, replace your standard minor v chord with an altered dominant (V7b9 or V7b9#5) derived from Harmonic Minor or Phrygian Dominant.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Phrygian Dominant', slug: 'harmonic-minor', description: '5th mode of G Harmonic Minor delivering exotic Spanish coloration.' },
+        { name: 'D Harmonic Minor', slug: 'harmonic-minor', description: 'The classical scale source of the raised leading tone C#.' },
+        { name: 'D Natural Minor', slug: 'minor', description: 'The diatonic minor foundation for contrasting lyrical phrases.' },
+      ],
+      modes: [
+        { name: 'Phrygian Mode', slug: 'phrygian', description: 'The dark minor mode providing the flat-second friction.' },
+      ],
+      chords: [
+        { name: 'Ninth Chords', slug: 'ninth', description: 'Dm9 and Gm9 jazz extensions.' },
+        { name: 'Altered Chords', slug: 'seventh', description: 'A7b9#5 altered dominant tension.' },
+      ],
+    },
+  },
+
+  'it-runs-through-me': {
+    slug: 'it-runs-through-me',
+    songTitle: 'It Runs Through Me',
+    artist: 'Tom Misch',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Diatonic Cycle of Fifths and Minor ii-V-i Cadence in Neo-Soul Guitar Harmony',
+    emotionalHook: 'Tom Misch constructs a hypnotic 7-chord neo-soul loop that travels through a full circle of fifths in Eb minor. Moving through Bbm7, Ebm9, Abm9, Db9, Gbmaj9, and culminating in the jazz minor turnaround Fm7b5 to Bb7b9, the progression balances dark minor-ninth introspection with the radiant sunlight of relative major chords, all swung behind the beat.',
+    romanProgression: 'v7 - i9 - iv9 - VII9 - IIImaj9 - iiø7 - V7b9',
+    chords: ['Bbm7', 'Ebm9', 'Abm9', 'Db9', 'Gbmaj9', 'Fm7b5', 'Bb7b9'],
+    progressionExplanation: [
+      'Bbm7 (v7): Minor dominant opening the loop with laid-back harmonic ambiguity.',
+      'Ebm9 (i9): Warm minor tonic chord with major 9th extension (F) delivering the signature neo-soul glow.',
+      'Abm9 (iv9) to Db9 (VII9): Steps through the cycle of fourths, acting as a secondary ii-V toward the relative major.',
+      'Gbmaj9 (IIImaj9): Radiant relative major chord providing a fleeting moment of sunshine.',
+      'Fm7b5 (iiø7) to Bb7b9 (V7b9): The quintessential jazz minor turnaround, creating harmonic gravity that pulls effortlessly back to Ebm9.',
+    ],
+    voiceLeadingInsights: [
+      'Top-voice stepwise movement connects the chords smoothly: Bb → Cb → Db → Eb across the cyclical loop.',
+      'Simultaneous four-finger chord plucking (thumb on bass, fingers 1-3 on treble strings) creates punchy, unstrummed percussive attacks.',
+      'Playing slightly behind the beat produces the relaxed J Dilla / D’Angelo neo-soul swing pocket.',
+    ],
+    guitarPerspective: 'Stratocaster Position 4 (neck + middle pickups) into a Fender Deluxe Reverb clean tube amp with subtle optical compression and analog chorus for a scooped, liquid chime.',
+    songwriterTakeaway: 'Cycle your chords through fifths and fourths rather than sticking to static 3-chord loops. Introducing a half-diminished iiø7 chord before an altered dominant V7 gives any pop or soul track deep jazz sophistication.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Eb Dorian', slug: 'dorian', description: 'The sweet minor scale with natural 6th used for neo-soul soloing.' },
+        { name: 'Bb Altered Scale', slug: 'harmonic-minor', description: 'Super Locrian scale for altered dominant turnarounds.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The modal heart of modern neo-soul guitar.' },
+      ],
+      chords: [
+        { name: 'Ninth Chords', slug: 'ninth', description: 'Ebm9, Abm9, and Gbmaj9 chord voicings.' },
+        { name: 'Seventh Chords', slug: 'seventh', description: 'Bbm7 and Db9 functional voicings.' },
+      ],
+      progressions: [
+        { name: 'ii - V - I Progression', slug: 'ii-v-i', description: 'The minor jazz turnaround Fm7b5 - Bb7b9 - Ebm9.' },
+      ],
+    },
+  },
+
+  'stormy-monday': {
+    slug: 'stormy-monday',
+    songTitle: 'Stormy Monday',
+    artist: 'The Allman Brothers Band',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Tritones & Alterations',
+    coreSecret: 'The Definitive "Stormy Monday Changes": Chromatic Passing 9ths, Passing Diminished 7ths, and the Jazz ii-V Turnaround',
+    emotionalHook: 'The Allman Brothers Band transformed T-Bone Walker’s slow blues into the holy grail of jazz-blues guitar progressions. Instead of standard three-chord 12-bar blues, they introduce chromatic dominant 9th slides (Ab9 to G9), an indispensable passing diminished chord (C#dim7 connecting C9 to G9), and the legendary descending minor turnaround (Bm7 to Bbm7 to Am7 to D9#5) that turns Texas slow blues into soaring jazz sophistication.',
+    romanProgression: 'I9 - IV9 - I9 - bII9 - I9 - IV9 - #IV°7 - I9 - iii7 - biii7 - ii7 - V7#5',
+    chords: ['G9', 'C9', 'Ab9', 'C#dim7', 'Bm7', 'Bbm7', 'Am7', 'D9#5'],
+    progressionExplanation: [
+      'G9 (I9) & C9 (IV9): Dominant 9th chords replacing harsh dominant 7ths with smooth, rounded jazz-blues warmth.',
+      'Ab9 (bII9): Chromatic half-step upper neighbor sliding smoothly into G9 on bar 3, establishing the swinging jazz-blues character.',
+      'C#dim7 (#IV°7): Passing diminished 7th connecting C9 to G9 with chromatic bass motion C → C# → D.',
+      'Bm7 - Bbm7 - Am7 (iii7 - biii7 - ii7): Chromatic descending minor turnaround that elevates the slow blues into bebop territory.',
+      'D9#5 (V7#5): Altered dominant chord delivering sharp resolution tension pulling back to the G9 tonic.',
+    ],
+    voiceLeadingInsights: [
+      'The bassline and inner voices move in half-steps: C9 (C) → C#dim7 (C#) → G9/D (D), creating an irresistible forward pull.',
+      'Duane Allman and Dickey Betts target chord tones during the turnaround rather than running generic blues scales.',
+      'Slow 12/8 time (50 BPM) gives each note and microtonal vocal bend space to bloom with singing PAF sustain.',
+    ],
+    guitarPerspective: 'Gibson Les Paul Standard neck pickup (tone rolled down to 6) through a 50W Marshall Plexi pushed to edge-of-breakup saturation through JBL D120F speakers.',
+    songwriterTakeaway: 'Upgrade your 12-bar blues by inserting passing diminished chords (#IV°7 between IV and I) and chromatic descending minor chords (iii - biii - ii - V) on the turnaround. It instantly transforms raw blues into sophisticated jazz-blues.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Minor Blues Scale', slug: 'blues', description: 'The foundation of vocal-like weeping slow blues leads.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'Sweet major thirds blended into the blues phrasing.' },
+        { name: 'G Mixolydian', slug: 'mixolydian', description: 'Governs dominant 9th extensions over I9 and IV9.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Dominant scale foundation for 9th chord comping.' },
+      ],
+      chords: [
+        { name: 'Ninth Chords', slug: 'ninth', description: 'G9, C9, and Ab9 movable chord grips.' },
+        { name: 'Diminished Chords', slug: 'diminished', description: 'C#dim7 passing chord voice leading.' },
+      ],
+      progressions: [
+        { name: '12-Bar Blues', slug: '12-bar-blues', description: 'The underlying blues chassis enriched with jazz substitutions.' },
+      ],
+    },
+  },
 };
 
 /**

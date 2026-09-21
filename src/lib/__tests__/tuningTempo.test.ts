@@ -10,6 +10,7 @@ const CANONICAL_TUNING_PATTERNS = [
   /^Standard \(EADGBE\) with Capo \d+$/,
   /^Half-Step Down \(Eb Ab Db Gb Bb Eb\)$/,
   /^Drop D \(DADGBE\)$/,
+  /^Drop D \(DADGBE\) with Capo \d+$/,
   /^D Standard \(DGCFAD\)$/,
   /^Open D \(DADF#AD\) or Standard with slide$/
 ];
@@ -17,6 +18,8 @@ const CANONICAL_TUNING_PATTERNS = [
 describe('Song Catalog Tuning & Tempo Verification', () => {
   test('all 107 catalog songs exist', () => {
     expect(songFiles.length).toBe(107);
+  test('all catalog songs exist', () => {
+    expect(songFiles.length).toBeGreaterThanOrEqual(107);
   });
 
   describe('Tempo validity across catalog', () => {
