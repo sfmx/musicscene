@@ -8,7 +8,6 @@ import {
   getSongsUsingMode,
   getSongsUsingProgression,
 } from '@/lib/crossReferences';
-import { getWhySongWorks } from '@/data/whySongsWork';
 import { hasCuratedHarmonicBreakdown } from '@/data/curatedHarmonicSlugs';
 import { getDifficultyColor } from '@/utils/theme';
 
@@ -57,8 +56,6 @@ export default function SongsUsingThis({ type, slug }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {songs.map(song => {
           const songSlug = song.slug || song.id.replace('song-analysis:', '');
-          const breakdown = getWhySongWorks(songSlug);
-          const hasCuratedBreakdown = breakdown?.isCurated;
           const hasCuratedBreakdown = hasCuratedHarmonicBreakdown(songSlug);
           const targetUrl =
             type === 'progression'

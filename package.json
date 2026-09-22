@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3333",
+    "dev": "npm run content:index && next dev -p 3333",
     "build": "next build",
     "deploy": "npm run build && aws s3 sync ./out s3://musicscene --delete && aws cloudfront create-invalidation --distribution-id EMEO566RGP4JE --paths \"/*\"",
     "prebuild": "npm run content:index && npm run content:validate && npm run og:generate",

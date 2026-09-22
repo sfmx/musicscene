@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import SongCard from './SongCard';
-import { SongListItem } from '@/lib/songData';
 import type { SongListItem } from '@/lib/songList';
 
 interface CategorySection {

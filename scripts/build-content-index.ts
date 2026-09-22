@@ -9,6 +9,12 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { VALID_TAG_SLUGS, TAG_NORMALIZATION } from './lib/tag-taxonomy';
+import {
+  SITE_TOOLS,
+  getInteractiveTools,
+  getReferenceTools,
+  getPracticeDrills,
+} from '../src/data/tools-registry';
 
 // ---- Types ----
 
@@ -59,6 +65,25 @@ export interface SongListItem {
   iconicRiff?: boolean;
   estimatedLearningTime?: string;
   viewCount?: number;
+}
+
+export interface NavMenuItem {
+  label: string;
+  href: string;
+  icon?: string;
+}
+
+export interface NavColumn {
+  heading: string;
+  headingHref?: string;
+  items: NavMenuItem[];
+}
+
+export interface NavCategory {
+  label: string;
+  href: string;
+  columns: NavColumn[];
+  featured?: NavMenuItem[];
 }
 
 // ---- Tag Taxonomy (shared) ----
@@ -366,6 +391,7 @@ function buildUrl(contentType: ContentType, slug: string, category?: string): st
 const DATA_DIR = path.resolve(__dirname, '..', 'src', 'data');
 const OUTPUT_FILE = path.resolve(DATA_DIR, '_generated', 'content-index.json');
 const SONGS_LIST_OUTPUT_FILE = path.resolve(DATA_DIR, '_generated', 'songs-list.json');
+const NAVIGATION_OUTPUT_FILE = path.resolve(DATA_DIR, '_generated', 'navigation-data.json');
 
 function getDecadeFromYear(year: string): string {
   const yearMatch = year.match(/\b(19|20)\d{2}\b/);
@@ -701,7 +727,6 @@ function scanSongs(): SongScanResult {
     }
   }
 
-  return { entries, crossRefs: { scaleToSongs, modeToSongs, progressionToSongs, chordToSongs } };
   return { entries, songsList, crossRefs: { scaleToSongs, modeToSongs, progressionToSongs, chordToSongs } };
 }
 
@@ -735,6 +760,20 @@ function scanPractice(): ContentEntry[] {
         category,
       });
     }
+  }
+
+  // Also index interactive tools from the tools registry
+  const interactiveTools = getInteractiveTools();
+  for (const tool of interactiveTools) {
+    entries.push({
+      id: `practice:${tool.id}`,
+      contentType: 'practice',
+      slug: tool.id,
+      title: tool.title,
+      url: tool.href,
+      tags: ['tools', 'practice', 'interactive-tool'],
+      category: 'tools',
+    });
   }
 
   return entries;
@@ -835,8 +874,7 @@ function scanSongLessons(): ContentEntry[] {
 
 // ---- Main ----
 
-function buildContentIndex(): ContentIndex {
-function buildContentIndex(): { index: ContentIndex; songsList: SongListItem[] } {
+function buildContentIndex(): { index: ContentIndex; songsList: SongListItem[]; navigationData: NavCategory[] } {
   const allEntries: ContentEntry[] = [];
 
   // Scan all content types
@@ -906,12 +944,19 @@ function buildContentIndex(): { index: ContentIndex; songsList: SongListItem[] }
     }
   }
 
+  const navigationData = generateNavigationData({
+    chords,
+    scales,
+    intervals,
+    modes,
+    progressions,
+    songsList: songResult.songsList,
+    practice,
+    gear,
+    songLessons,
+  });
+
   return {
-    generatedAt: new Date().toISOString(),
-    entryCount: allEntries.length,
-    entries: allEntries,
-    tagIndex,
-    crossReferences: songResult.crossRefs,
     index: {
       generatedAt: new Date().toISOString(),
       entryCount: allEntries.length,
@@ -920,12 +965,273 @@ function buildContentIndex(): { index: ContentIndex; songsList: SongListItem[] }
       crossReferences: songResult.crossRefs,
     },
     songsList: songResult.songsList,
+    navigationData,
   };
 }
 
-// Run
-const index = buildContentIndex();
-const { index, songsList } = buildContentIndex();
+function generateNavigationData(params: {
+  chords: ContentEntry[];
+  scales: ContentEntry[];
+  intervals: ContentEntry[];
+  modes: ContentEntry[];
+  progressions: ContentEntry[];
+  songsList: SongListItem[];
+  practice: ContentEntry[];
+  gear: ContentEntry[];
+  songLessons: ContentEntry[];
+}): NavCategory[] {
+  const { chords, scales, intervals, modes, progressions, songsList, practice } = params;
+
+  // 1. Theory Nav
+  const popularScaleSlugs = ['major', 'minor', 'major-pentatonic', 'minor-pentatonic', 'blues', 'dorian'];
+  const scaleItems: NavMenuItem[] = popularScaleSlugs
+    .map(slug => scales.find(s => s.slug === slug))
+    .filter((s): s is ContentEntry => Boolean(s))
+    .map(s => ({ label: s.title, href: s.url }));
+  scaleItems.push({
+    label: `All ${scales.length} Scales`,
+    href: '/lessons/theory/scales',
+    icon: '→',
+  });
+
+  const popularChordSlugs = ['major', 'minor', 'seventh', 'extended', 'power', 'suspended'];
+  const chordItems: NavMenuItem[] = popularChordSlugs
+    .map(slug => chords.find(c => c.slug === slug))
+    .filter((c): c is ContentEntry => Boolean(c))
+    .map(c => ({ label: c.title, href: c.url }));
+  chordItems.push({
+    label: `All ${chords.length} Chords`,
+    href: '/lessons/theory/chords',
+    icon: '→',
+  });
+
+  const theoryNav: NavCategory = {
+    label: 'Theory',
+    href: '/lessons/theory',
+    columns: [
+      {
+        heading: 'Scales',
+        headingHref: '/lessons/theory/scales',
+        items: scaleItems,
+      },
+      {
+        heading: 'Chords',
+        headingHref: '/lessons/theory/chords',
+        items: chordItems,
+      },
+      {
+        heading: 'More Theory',
+        items: [
+          { label: `Intervals (${intervals.length})`, href: '/lessons/theory/intervals', icon: '🎵' },
+          { label: `Modes (${modes.length})`, href: '/lessons/theory/modes', icon: '🎭' },
+          { label: `Chord Progressions (${progressions.length})`, href: '/lessons/theory/progressions', icon: '🔄' },
+          { label: 'Circle of Fifths Explorer', href: '/lessons/practice/circle-of-fifths', icon: '⭕' },
+          { label: 'Harmonic Minor Scale', href: '/lessons/theory/scales/harmonic-minor', icon: '🎼' },
+        ],
+      },
+    ],
+    featured: [
+      { label: 'All Theory Topics', href: '/lessons/theory' },
+      { label: 'Circle of Fifths Wheel', href: '/lessons/practice/circle-of-fifths' },
+      { label: 'Scale & Mode Visualizer', href: '/lessons/theory/scales' },
+    ],
+  };
+
+  // 2. Songs Nav
+  const songCount = songsList.length;
+  const songsNav: NavCategory = {
+    label: 'Songs',
+    href: '/lessons/songs',
+    columns: [
+      {
+        heading: `Song Analysis (${songCount} Songs)`,
+        headingHref: '/lessons/songs/song-analysis',
+        items: [
+          { label: `Browse All ${songCount} Songs`, href: '/lessons/songs/song-analysis', icon: '🎸' },
+          { label: 'Why Songs Work (Harmonic Secrets)', href: '/lessons/songs/why-songs-work', icon: '💡' },
+          { label: 'Songs by Difficulty', href: '/search?type=song-analysis&sort=difficulty' },
+          { label: 'Songs by Genre', href: '/search?type=song-analysis' },
+        ],
+      },
+      {
+        heading: 'Song Learning',
+        items: [
+          { label: 'Riffs & Licks', href: '/lessons/songs/riffs' },
+          { label: 'Lead Guitar', href: '/lessons/songs/lead' },
+          { label: 'Rhythm Patterns', href: '/lessons/songs/rhythm' },
+          { label: 'Song Effects', href: '/lessons/songs/effects' },
+          { label: 'Song Techniques', href: '/lessons/songs/techniques' },
+        ],
+      },
+      {
+        heading: 'Techniques',
+        items: [
+          { label: '12-Bar Blues Progressions', href: '/lessons/theory/progressions/12-bar-blues' },
+          { label: 'Minor Blues Jamming', href: '/lessons/theory/progressions/minor-blues' },
+          { label: 'Classic Pop Progression', href: '/lessons/theory/progressions/i-v-vi-iv' },
+          { label: 'Jazz ii-V-I Mastery', href: '/lessons/theory/progressions/ii-v-i' },
+          { label: 'Andalusian Flamenco Loop', href: '/lessons/theory/progressions/i-bvii-iv' },
+        ],
+      },
+    ],
+    featured: [
+      { label: 'Why Songs Work (Harmonic Breakdown Hub)', href: '/lessons/songs/why-songs-work' },
+      { label: `Browse All ${songCount} Song Analyses`, href: '/lessons/songs/song-analysis' },
+    ],
+  };
+
+  // 3. Tools Nav
+  const interactive = getInteractiveTools();
+  const reference = getReferenceTools();
+  const drills = getPracticeDrills();
+
+  const toolsNav: NavCategory = {
+    label: 'Tools',
+    href: '/lessons/practice/fretboard-trainer',
+    columns: [
+      {
+        heading: 'Interactive Utilities',
+        headingHref: '/lessons/practice/fretboard-trainer',
+        items: interactive.map(t => ({
+          label: t.shortTitle,
+          href: t.href,
+          icon: t.icon,
+        })),
+      },
+      {
+        heading: 'Visual Guides & Reference',
+        headingHref: '/lessons/theory',
+        items: reference.map(t => ({
+          label: t.shortTitle,
+          href: t.href,
+          icon: t.icon,
+        })),
+      },
+      {
+        heading: 'Practice Drills',
+        headingHref: '/lessons/practice',
+        items: drills.map(t => ({
+          label: t.shortTitle,
+          href: t.href,
+          icon: t.icon,
+        })),
+      },
+    ],
+    featured: [
+      { label: 'Play the Fretboard Note Hunt Game', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Circle of Fifths Studio', href: '/lessons/practice/circle-of-fifths' },
+      { label: 'Master CAGED Fretboard', href: '/lessons/practice/caged-system' },
+      { label: 'Interactive Ear Trainer', href: '/lessons/practice/ear-trainer' },
+      { label: 'Download Free 3-Page Fretboard PDF', href: '/downloads/fretboard-cheat-sheet' },
+    ],
+  };
+
+  // 4. Practice Nav
+  const warmups = practice.filter(p => p.category === 'warmups').slice(0, 5);
+  const technique = practice.filter(p => p.category === 'technique').slice(0, 5);
+  const improv = practice.filter(p => p.category === 'improv').slice(0, 5);
+
+  const practiceNav: NavCategory = {
+    label: 'Practice',
+    href: '/lessons/practice',
+    columns: [
+      {
+        heading: 'Warm-ups & Speed',
+        headingHref: '/lessons/practice/warmups',
+        items: [
+          ...warmups.map(w => ({ label: w.title, href: w.url })),
+          { label: 'All Warm-ups', href: '/lessons/practice/warmups', icon: '→' },
+        ],
+      },
+      {
+        heading: 'Technique Drills',
+        headingHref: '/lessons/practice/technique',
+        items: [
+          ...technique.map(t => ({ label: t.title, href: t.url })),
+          { label: 'All Technique Drills', href: '/lessons/practice/technique', icon: '→' },
+        ],
+      },
+      {
+        heading: 'Improvisation',
+        headingHref: '/lessons/practice/improv',
+        items: [
+          ...improv.map(i => ({ label: i.title, href: i.url })),
+          { label: 'All Improv Drills', href: '/lessons/practice/improv', icon: '→' },
+        ],
+      },
+    ],
+    featured: [
+      { label: 'All Practice Topics', href: '/lessons/practice' },
+      { label: 'Fretboard Trainer', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Circle of Fifths Explorer', href: '/lessons/practice/circle-of-fifths' },
+      { label: 'CAGED System Visualizer', href: '/lessons/practice/caged-system' },
+      { label: 'Ear Trainer', href: '/lessons/practice/ear-trainer' },
+      { label: 'Progression Jammer', href: '/lessons/practice/progression-player' },
+    ],
+  };
+
+  // 5. Gear Nav
+  const gearRootPath = path.join(DATA_DIR, 'gear-lessons', 'gear-root-index.json');
+  let gearCategories: { title: string; href: string }[] = [];
+  if (fs.existsSync(gearRootPath)) {
+    const gearRoot = readJsonFile(gearRootPath) as {
+      gearCategories?: { title: string; href: string }[];
+    };
+    gearCategories = gearRoot.gearCategories || [];
+  }
+
+  const guitarsCat = gearCategories.find(c => c.title.includes('Guitar'));
+  const ampsCat = gearCategories.find(c => c.title.includes('Amp'));
+  const recordingCat = gearCategories.find(c => c.title.includes('Recording'));
+  const accessoriesCat = gearCategories.find(c => c.title.includes('Accessories'));
+
+  const gearNav: NavCategory = {
+    label: 'Gear',
+    href: '/lessons/gear',
+    columns: [
+      {
+        heading: 'Guitars',
+        headingHref: guitarsCat?.href ?? '/lessons/gear/guitars',
+        items: [
+          { label: 'Electric Guitars', href: '/lessons/gear/guitars/electric' },
+          { label: 'Acoustic Guitars', href: '/lessons/gear/guitars/acoustic' },
+          { label: 'Bass Guitars', href: '/lessons/gear/guitars/bass' },
+          { label: 'Classical Guitars', href: '/lessons/gear/guitars/classical' },
+          { label: 'All Guitars', href: '/lessons/gear/guitars', icon: '→' },
+        ],
+      },
+      {
+        heading: 'Amps & Effects',
+        headingHref: ampsCat?.href ?? '/lessons/gear/amps',
+        items: [
+          { label: 'Tube Amps', href: '/lessons/gear/amps/tube' },
+          { label: 'Solid-State Amps', href: '/lessons/gear/amps/solid-state' },
+          { label: 'Modeling Amps', href: '/lessons/gear/amps/modeling' },
+          { label: 'All Amps', href: '/lessons/gear/amps', icon: '→' },
+          { label: 'Effects Pedals', href: '/lessons/gear/effects', icon: '→' },
+        ],
+      },
+      {
+        heading: 'Recording & More',
+        items: [
+          { label: 'Audio Interfaces', href: '/lessons/gear/recording/interfaces' },
+          { label: 'Microphones', href: '/lessons/gear/recording/microphones' },
+          { label: 'DAWs', href: '/lessons/gear/recording/daw' },
+          { label: 'All Recording', href: recordingCat?.href ?? '/lessons/gear/recording', icon: '→' },
+          { label: 'Accessories', href: accessoriesCat?.href ?? '/lessons/gear/accessories', icon: '→' },
+        ],
+      },
+    ],
+    featured: [
+      { label: 'All Gear Guides', href: '/lessons/gear' },
+    ],
+  };
+
+  return [theoryNav, songsNav, toolsNav, practiceNav, gearNav];
+}
+
+// Run single pass
+const { index, songsList, navigationData } = buildContentIndex();
 
 // Ensure output directory exists
 const outDir = path.dirname(OUTPUT_FILE);
@@ -939,3 +1245,6 @@ console.log(`\nWritten content index to: ${OUTPUT_FILE}`);
 
 fs.writeFileSync(SONGS_LIST_OUTPUT_FILE, JSON.stringify(songsList, null, 2), 'utf-8');
 console.log(`Written songs list to: ${SONGS_LIST_OUTPUT_FILE}`);
+
+fs.writeFileSync(NAVIGATION_OUTPUT_FILE, JSON.stringify(navigationData, null, 2), 'utf-8');
+console.log(`Written navigation data to: ${NAVIGATION_OUTPUT_FILE}`);

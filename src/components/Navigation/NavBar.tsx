@@ -70,6 +70,18 @@ export default function NavBar() {
   }, []);
 
   function isActive(category: NavCategory) {
+    if (category.label === 'Tools') {
+      return category.columns.some(col =>
+        col.items.some(item => item.href.length > 1 && pathname.startsWith(item.href))
+      );
+    }
+    if (category.label === 'Practice') {
+      const toolsCategory = navData.find(c => c.label === 'Tools');
+      const isTool = toolsCategory?.columns.some(col =>
+        col.items.some(item => item.href.length > 1 && item.href.startsWith('/lessons/practice/') && pathname.startsWith(item.href))
+      );
+      if (isTool) return false;
+    }
     return pathname.startsWith(category.href);
   }
 

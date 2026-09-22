@@ -1,5 +1,4 @@
 import React from 'react';
-import { SongData } from '@/lib/songData';
 import type { SongData } from '@/lib/songData';
 import { getDifficultyColor } from '@/utils/theme';
 

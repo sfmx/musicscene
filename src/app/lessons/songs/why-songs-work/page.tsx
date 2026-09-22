@@ -36,7 +36,6 @@ export default function WhySongsWorkPage() {
         title="Why Famous Songs Work Harmonically"
         subtitle="The Music Theory Secrets, Modal Mixture, and Voice Leading Behind Legendary Guitar Anthems"
       />
-      <WhySongsWorkClient />
       <WhySongsWorkClient allBreakdowns={allBreakdowns} />
     </Layout>
   );
