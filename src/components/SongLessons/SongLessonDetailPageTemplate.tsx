@@ -12,6 +12,39 @@ import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import { getDifficultyColor } from '@/lib/utils';
 
+function renderLinkedText(text: string): React.ReactNode {
+  if (!text) return text;
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  if (!regex.test(text)) return text;
+
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  regex.lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const label = match[1];
+    const href = match[2];
+    parts.push(
+      <Link
+        key={match.index}
+        href={href}
+        className="text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 underline underline-offset-2 font-medium transition-colors"
+      >
+        {label}
+      </Link>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return <>{parts}</>;
+}
+
 function getBadgeColorClasses(color?: string): string {
   if (!color) return '';
   if (color.includes('green')) return 'bg-green-100 dark:bg-green-950/60 text-green-800 dark:text-green-300 border-green-200 dark:border-green-800/40';
@@ -57,7 +90,7 @@ function CardComponent({ card }: { card: ContentCard }) {
         </div>
         {card.description && (
           <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
-            {card.description}
+            {renderLinkedText(card.description)}
           </p>
         )}
         {card.fields && card.fields.length > 0 && (
@@ -65,7 +98,7 @@ function CardComponent({ card }: { card: ContentCard }) {
             {card.fields.map((field, i) => (
               <div key={i}>
                 <span className="font-semibold text-slate-700 dark:text-slate-300">{field.label}: </span>
-                <span className="text-slate-600 dark:text-slate-400">{field.value}</span>
+                <span className="text-slate-600 dark:text-slate-400">{renderLinkedText(field.value)}</span>
               </div>
             ))}
           </div>
@@ -76,7 +109,7 @@ function CardComponent({ card }: { card: ContentCard }) {
           {card.items.map((item, i) => (
             <li key={i} className="flex items-start gap-1.5">
               <span className="text-blue-500 dark:text-amber-400">•</span>
-              <span>{item}</span>
+              <span>{renderLinkedText(item)}</span>
             </li>
           ))}
         </ul>
@@ -91,6 +124,7 @@ function SectionComponent({ section }: { section: ContentSection }) {
     'grid-3': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6',
     'grid-4': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6',
     'list': 'space-y-6',
+    'numbered-steps': 'space-y-4',
   };
 
   const isNumbered = section.layout === 'numbered-steps';
@@ -114,13 +148,23 @@ function SectionComponent({ section }: { section: ContentSection }) {
                   {card.number !== undefined ? card.number : i + 1}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-2">
-                    {card.icon && <span>{card.icon}</span>}
-                    <span>{card.title}</span>
-                  </h3>
+                  <div className="flex items-center justify-between gap-2 mb-1.5 flex-wrap">
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white">{card.title}</h3>
+                    {card.badge && (
+                      <span
+                        className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
+                          typeof card.badge === 'string'
+                            ? getDifficultyColor(card.badge)
+                            : (getBadgeColorClasses(card.badge.color) || getDifficultyColor(card.badge.text))
+                        }`}
+                      >
+                        {typeof card.badge === 'string' ? card.badge : card.badge.text}
+                      </span>
+                    )}
+                  </div>
                   {card.description && (
                     <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed mb-3">
-                      {card.description}
+                      {renderLinkedText(card.description)}
                     </p>
                   )}
                   {card.fields && card.fields.length > 0 && (
@@ -128,7 +172,7 @@ function SectionComponent({ section }: { section: ContentSection }) {
                       {card.fields.map((f, j) => (
                         <div key={j}>
                           <span className="font-semibold text-slate-700 dark:text-slate-300">{f.label}: </span>
-                          <span className="text-slate-600 dark:text-slate-400">{f.value}</span>
+                          <span className="text-slate-600 dark:text-slate-400">{renderLinkedText(f.value)}</span>
                         </div>
                       ))}
                     </div>
@@ -138,7 +182,7 @@ function SectionComponent({ section }: { section: ContentSection }) {
                       {card.items.map((item, j) => (
                         <li key={j} className="flex items-start gap-1.5">
                           <span className="text-blue-500 dark:text-amber-400">•</span>
-                          <span>{item}</span>
+                          <span>{renderLinkedText(item)}</span>
                         </li>
                       ))}
                     </ul>
@@ -187,7 +231,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">{data.introduction.title}</h2>
           )}
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm sm:text-base">
-            {data.introduction.text}
+            {renderLinkedText(data.introduction.text)}
           </p>
           {data.introduction.quote && (
             <div className="bg-white/80 dark:bg-slate-950/80 rounded-xl p-4 border border-blue-200 dark:border-slate-800 border-l-4 border-l-blue-500 dark:border-l-amber-400 shadow-xs mb-4">
@@ -207,7 +251,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                       <span>{col.title}</span>
                     </h3>
                   )}
-                  <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">{col.text}</p>
+                  <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">{renderLinkedText(col.text)}</p>
                 </div>
               ))}
             </div>
@@ -240,7 +284,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                       <span className="shrink-0 w-6 h-6 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-900 dark:text-amber-300 font-bold text-xs flex items-center justify-center border border-amber-300 dark:border-amber-700/50">
                         {i + 1}
                       </span>
-                      <span className="flex-1">{item}</span>
+                      <span className="flex-1">{renderLinkedText(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -258,7 +302,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                       <div className="flex-1">
                         <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">{step.title}</h3>
                         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                          {step.description}
+                          {renderLinkedText(step.description)}
                         </p>
                       </div>
                     </li>
@@ -276,7 +320,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
         {/* Related Topics */}
         {data.relatedTopics && data.relatedTopics.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Related Topics &amp; Next Steps</h2>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Related Topics & Next Steps</h2>
             <div className={`grid grid-cols-1 ${data.relatedTopics.length > 1 ? 'md:grid-cols-2' : ''} gap-4`}>
               {data.relatedTopics.map((topic, i) =>
                 topic.href ? (

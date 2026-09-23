@@ -85,13 +85,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                     const stepBg = step.colorBg || (step as any).bgColor;
                     const stepText = step.colorText || (step as any).textColor;
                     return (
-                      <div
-                        key={i}
-                        className={`px-4 py-2 ${getStepColorClasses(
-                          stepBg,
-                          stepText
-                        )} rounded-full text-sm font-medium border`}
-                      >
+                      <div key={i} className={`px-4 py-2 ${getStepColorClasses(stepBg, stepText)} rounded-full text-sm font-medium border`}>
                         {step.title}
                       </div>
                     );
@@ -100,20 +94,25 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
               </div>
             )}
             {data.learningPath.type === 'ordered-list' && (
-              <div className="bg-amber-50/60 dark:bg-slate-900/90 border border-amber-200 dark:border-slate-800 rounded-2xl p-6">
-                <ol className="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+              <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl">
+                <div className="space-y-4">
                   {data.learningPath.steps.map((step, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <strong className="text-slate-900 dark:text-white shrink-0">{i + 1}. {step.title}</strong>
-                      {step.description ? ` — ${step.description}` : ''}
-                    </li>
+                    <div key={i} className="flex items-center gap-4">
+                      <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-sm shrink-0 border border-blue-200 dark:border-blue-800/40">
+                        {step.number || i + 1}
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-slate-900 dark:text-white">{step.title}</h3>
+                        {step.description && <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">{step.description}</p>}
+                      </div>
+                    </div>
                   ))}
-                </ol>
+                </div>
               </div>
             )}
             {data.learningPath.type === 'numbered-steps' && (
               <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl">
-                <div className={`grid md:grid-cols-${Math.min(data.learningPath.steps.length, 4)} gap-6`}>
+                <div className="grid md:grid-cols-4 gap-6">
                   {data.learningPath.steps.map((step, i) => {
                     const stepBg = step.colorBg || (step as any).bgColor;
                     const stepText = step.colorText || (step as any).textColor;
@@ -128,13 +127,11 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                             stepText
                           )} shadow-xs`}
                         >
-                          <span className="font-bold text-base">{step.number ?? i + 1}</span>
+                          <span className="font-bold text-base">{step.number || i + 1}</span>
                         </div>
                         <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1.5">{step.title}</h3>
                         {step.description && (
-                          <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
-                            {step.description}
-                          </p>
+                          <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">{step.description}</p>
                         )}
                       </div>
                     );
@@ -145,7 +142,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
           </section>
         )}
 
-        {/* Topic Cards */}
+        {/* Topics Grid */}
         <section className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {data.topics.map((topic) => (
             <Link
@@ -160,28 +157,21 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                     {topic.title}
                   </h3>
                 </div>
-                <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mb-4 leading-relaxed">
-                  {topic.description}
-                </p>
+                <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mb-4 leading-relaxed">{topic.description}</p>
               </div>
-              {(topic.difficulty || topic.theory || topic.focus || topic.context) && (
-                <div className="px-6 pb-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs">
-                  {topic.difficulty && (
-                    <span
-                      className={`px-2.5 py-0.5 rounded-full font-semibold border ${getDifficultyColor(
-                        topic.difficulty
-                      )}`}
-                    >
-                      {topic.difficulty}
-                    </span>
-                  )}
-                  {(topic.theory || topic.focus || topic.context) && (
-                    <span className="text-slate-500 dark:text-slate-400 text-[11px] truncate max-w-[180px]">
-                      {topic.theory || topic.focus || topic.context}
-                    </span>
-                  )}
-                </div>
-              )}
+
+              <div className="px-6 pb-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs">
+                {topic.difficulty && (
+                  <span className={`px-2.5 py-0.5 rounded-full font-semibold border ${getDifficultyColor(topic.difficulty)} font-semibold`}>
+                    {topic.difficulty}
+                  </span>
+                )}
+                {topic.theory && (
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] truncate max-w-[180px]">
+                    {topic.theory}
+                  </span>
+                )}
+              </div>
             </Link>
           ))}
         </section>
@@ -190,13 +180,10 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
         {data.featured && (
           <section className="mt-16 bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm dark:shadow-xl">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">{data.featured.title}</h2>
-            {data.featured.columns && data.featured.columns.length > 0 && (
+            {data.featured.columns && (
               <div className={`grid md:grid-cols-${data.featured.columns.length} gap-4 text-xs sm:text-sm`}>
                 {data.featured.columns.map((col, i) => (
-                  <div
-                    key={i}
-                    className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800"
-                  >
+                  <div key={i} className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
                     <p className="text-slate-900 dark:text-white mb-1.5 font-bold text-sm">{col.title}</p>
                     <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{col.text}</p>
                   </div>
@@ -207,24 +194,21 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
         )}
 
         {/* Info Sections */}
-        {data.infoSections &&
-          data.infoSections.map((section, i) => (
-            <section
-              key={i}
-              className="mt-12 bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm dark:shadow-xl"
-            >
+        {data.infoSections && data.infoSections.length > 0 && (
+          data.infoSections.map((info, i) => (
+            <section key={i} className="mt-12 bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm dark:shadow-xl">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-                {section.icon && <span>{section.icon}</span>}
-                <span>{section.title}</span>
+                {info.icon && <span>{info.icon}</span>}
+                <span>{info.title}</span>
               </h3>
-              {section.content && (
+              {info.content && (
                 <div className="text-sm text-slate-700 dark:text-slate-300 mb-4 leading-relaxed">
-                  <p>{section.content}</p>
+                  <p>{info.content}</p>
                 </div>
               )}
-              {section.items && section.items.length > 0 && (
-                <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-300 mb-4">
-                  {section.items.map((item, j) => (
+              {info.items && info.items.length > 0 && (
+                <ul className="space-y-2 mb-4 text-sm text-slate-700 dark:text-slate-300">
+                  {info.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-2">
                       <span className="text-blue-500 dark:text-amber-400">•</span>
                       <span>{item}</span>
@@ -232,35 +216,32 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                   ))}
                 </ul>
               )}
-              {section.columns && section.columns.length > 0 && (
-                <div className={`grid md:grid-cols-${section.columns.length} gap-4 text-xs sm:text-sm`}>
-                  {section.columns.map((col, j) => (
-                    <div
-                      key={j}
-                      className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-4 border border-slate-200 dark:border-slate-800"
-                    >
+              {info.columns && info.columns.length > 0 && (
+                <div className={`grid md:grid-cols-${info.columns.length} gap-4 text-xs sm:text-sm`}>
+                  {info.columns.map((col, j) => (
+                    <div key={j} className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-4 border border-slate-200 dark:border-slate-800">
                       <p className="text-slate-900 dark:text-white mb-1.5 font-bold text-sm">{col.title}</p>
                       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{col.text}</p>
                     </div>
                   ))}
                 </div>
               )}
-              {section.links && section.links.length > 0 && (
-                <div className="space-y-2 mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                  {section.links.map((link, j) => (
+              {info.links && info.links.length > 0 && (
+                <div className="flex flex-wrap gap-2.5 mt-4">
+                  {info.links.map((link, j) => (
                     <Link
                       key={j}
                       href={link.href}
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-amber-400 hover:text-blue-800 dark:hover:text-amber-300 transition-colors"
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-amber-400 hover:bg-blue-100 dark:hover:bg-slate-700 transition-colors"
                     >
-                      <span>&rarr;</span>
-                      <span>{link.label}</span>
+                      {link.label}
                     </Link>
                   ))}
                 </div>
               )}
             </section>
-          ))}
+          ))
+        )}
 
         {/* Next Steps */}
         {data.nextSteps && (
@@ -277,7 +258,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                   href={data.nextSteps.link.href}
                   className="inline-flex items-center px-6 py-3 bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 font-semibold rounded-xl hover:bg-blue-700 dark:hover:bg-amber-400 transition-colors shadow-sm"
                 >
-                  {data.nextSteps.link.label} &rarr;
+                  {data.nextSteps.link.label} →
                 </Link>
               )}
             </div>

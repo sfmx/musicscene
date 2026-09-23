@@ -1,291 +1,541 @@
 {
   "slug": "strumming",
   "category": "rhythm",
-  "pageTitle": "Strumming Patterns",
-  "subtitle": "Master fundamental and advanced strumming patterns through real song examples and rhythmic theory.",
-  "heroGradient": "bg-gradient-to-r from-green-50 to-emerald-50",
-  "backLink": { "href": "/lessons/songs/rhythm", "label": "Back to Rhythm & Strumming" },
+  "pageTitle": "Strumming Patterns & Groove Mechanics",
+  "subtitle": "Master foundational to advanced strumming patterns through visual arrow notation, subdivision counting, dynamic control, and real song breakdowns.",
+  "heroGradient": "bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-blue-500/10",
+  "backLink": {
+    "href": "/lessons/songs/rhythm",
+    "label": "Back to Rhythm & Strumming"
+  },
   "introduction": {
-    "title": "The Art of Strumming",
-    "text": "Strumming patterns provide the rhythmic foundation that supports melodies and creates the groove that makes music move.",
+    "title": "The Engine of Acoustic & Electric Rhythm",
+    "text": "Strumming is the heartbeat of guitar playing. While chords provide the harmonic color, it is your strumming pattern that determines the genre, tempo, energy, and groove of a song. Great rhythm guitarists don't just mechanically sweep a plectrum across the strings—they control micro-timing, dynamic accents, and percussive damping, transforming six strings into a full rhythm section. By understanding rhythmic subdivisions (quarter notes, eighth notes, sixteenth notes, and compound 6/8 meter), you can instantly unlock hundreds of classic songs and adapt to any musical setting.",
+    "quote": "Your fretting hand is the musician, but your strumming hand is the drummer. If the drummer loses the groove, the band falls apart.",
     "columns": [
       {
-        "title": "Foundation of Rhythm Guitar",
-        "text": "Strumming patterns provide the rhythmic foundation that supports melodies and creates the groove that makes music move."
+        "title": "The Perpetual Pendulum",
+        "text": "Your strumming arm moves continuously like a clock's pendulum—down on every beat (1, 2, 3, 4) and up on every offbeat (&). Strumming patterns are created by choosing which passes make contact with the strings and which pass silently as 'ghost strokes'."
       },
       {
-        "title": "Pattern Recognition",
-        "text": "Learning common patterns helps you quickly adapt to new songs and understand how rhythm supports different musical styles."
+        "title": "The Two-Piece Drum Kit",
+        "text": "Treat your guitar like a drum kit: strike the lower bass strings (E, A, D) on beats 1 and 3 to emulate the kick drum, and brush the upper treble strings (G, B, high E) on beats 2 and 4 to emulate the sharp crack of the snare drum."
+      },
+      {
+        "title": "Dynamic Range & Breathing",
+        "text": "A song that is strummed at maximum force from start to finish exhausts the listener. Great rhythm playing breathes with the vocals—whispering with light touches in verses and exploding into wide, ringing downstrokes in the chorus."
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Strumming Patterns",
+      "title": "Essential Strumming Patterns with Notation",
       "bgColor": "bg-white",
-      "borderColor": "border-gray-200",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Basic Down Strumming",
-          "description": "Four quarter note downstrokes per measure",
-          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - D - D - D" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Quarter note subdivision, steady tempo, consistent dynamics" }
-          ],
-          "items": ["Wild Thing - The Troggs", "Louie Louie - The Kingsmen", "For What It's Worth - Buffalo Springfield"]
-        },
-        {
-          "title": "Down-Up Strumming",
-          "description": "Alternating down and up strokes on eighth notes",
-          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D U D U D U D U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Eighth note subdivision, alternating picking, upstroke lightness" }
-          ],
-          "items": ["Wonderwall - Oasis", "Free Fallin' - Tom Petty", "Good Riddance - Green Day"]
-        },
-        {
-          "title": "Pop Ballad Pattern",
-          "description": "Common pop/country strumming with rests",
-          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - D U - U D U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Syncopated feel, rhythmic space, emphasis on beat 2 and 4" }
-          ],
-          "items": ["Hey Soul Sister - Train", "Count on Me - Bruno Mars", "Perfect - Ed Sheeran"]
-        },
-        {
-          "title": "Folk Strum Pattern",
-          "description": "Traditional folk rhythm with subtle variations",
-          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - D U - U D U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Folk rhythm conventions, fingerpicking transition, narrative support" }
-          ],
-          "items": ["Blackbird - Beatles", "Fire and Rain - James Taylor", "The Sound of Silence - Simon & Garfunkel"]
-        },
-        {
-          "title": "Rock Anthem Pattern",
-          "description": "Driving rock rhythm with powerful downbeats",
-          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - - U D U D U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Strong beat emphasis, rhythmic drive, anthemic feel" }
-          ],
-          "items": ["Livin' on a Prayer - Bon Jovi", "Don't Stop Believin' - Journey", "We Will Rock You - Queen"]
-        },
-        {
-          "title": "6/8 Strumming",
-          "description": "Compound time strumming pattern",
-          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - D D - D" },
-            { "label": "Time Signature", "value": "6/8" },
-            { "label": "Musical Theory", "value": "Compound meter, dotted quarter pulse, triple subdivision" }
-          ],
-          "items": ["House of the Rising Sun - Animals", "Nothing Else Matters - Metallica", "We Three Kings"]
-        },
-        {
-          "title": "Reggae Upstroke",
-          "description": "Off-beat emphasis characteristic of reggae",
-          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "- U - U - U - U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Off-beat emphasis, skank rhythm, reggae feel" }
-          ],
-          "items": ["No Woman No Cry - Bob Marley", "Three Little Birds - Bob Marley", "Buffalo Soldier - Bob Marley"]
-        },
-        {
-          "title": "Complex Pop Pattern",
-          "description": "Sophisticated rhythm with varied dynamics",
-          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
-          "fields": [
-            { "label": "Pattern", "value": "D - D U - U - U" },
-            { "label": "Time Signature", "value": "4/4" },
-            { "label": "Musical Theory", "value": "Complex syncopation, dynamic variation, modern pop feel" }
-          ],
-          "items": ["Shape of You - Ed Sheeran", "Counting Stars - OneRepublic", "Riptide - Vance Joy"]
-        }
-      ]
-    },
-    {
-      "title": "Technical Mastery",
-      "bgColor": "bg-white",
-      "borderColor": "border-gray-200",
+      "borderColor": "border-slate-200",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Wrist Motion",
-          "icon": "🤝",
-          "description": "Proper wrist movement for fluid strumming",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "1. The Four-on-the-Floor Downbeat Drive",
+          "description": "The bedrock of rock 'n' roll, punk, and early garage rock. Four solid quarter-note downstrokes per measure keeping unbroken driving time.",
+          "badge": {
+            "text": "Beginner",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Technique", "value": "Relaxed wrist, pendulum motion, minimal arm movement" },
-            { "label": "Application", "value": "Prevents fatigue, improves speed, creates natural feel" }
+            {
+              "label": "Visual Pattern",
+              "value": "↓   -   ↓   -   ↓   -   ↓   -"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1       2       3       4"
+            },
+            {
+              "label": "Accents",
+              "value": "Even power on all beats, or lean heavier on 2 and 4"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Arm swings downwards through all 6 strings; return upstroke travels above strings without touching."
+            }
+          ],
+          "items": [
+            "[Wild Thing - The Troggs](/lessons/songs/song-analysis/wild-thing/) - Raw garage rock energy over A - D - E chords",
+            "[Louie Louie - The Kingsmen](/lessons/songs/song-analysis/louie-louie/) - The definitive three-chord rock rhythm blueprint",
+            "[Blitzkrieg Bop - Ramones](/lessons/songs/song-analysis/blitzkrieg-bop/) - High-velocity downpicking defining punk rock drive"
           ]
         },
         {
-          "title": "String Contact",
-          "icon": "🎸",
-          "description": "How the pick contacts the strings",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "2. Straight Eighth-Note Alternating Strum",
+          "description": "The foundation of acoustic folk, pop, and rock rhythm. Alternating downstrokes on the numbers and upstrokes on the 'and' subdivisions.",
+          "badge": {
+            "text": "Beginner",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Technique", "value": "Light touch on upstrokes, firmer on downstrokes" },
-            { "label": "Application", "value": "Creates dynamic variation, prevents breaking strings" }
+            {
+              "label": "Visual Pattern",
+              "value": "↓   ↑   ↓   ↑   ↓   ↑   ↓   ↑"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1   &   2   &   3   &   4   &"
+            },
+            {
+              "label": "Accents",
+              "value": "Snare accents (>) on downbeats 2 and 4"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Keep upstrokes light! Graze only the top 3-4 strings on upstrokes to avoid harsh, shrill highs."
+            }
+          ],
+          "items": [
+            "[Free Fallin' - Tom Petty](/lessons/songs/song-analysis/free-fallin/) - Crisp acoustic rhythm with subtle capo voicing shifts",
+            "[Brown Eyed Girl - Van Morrison](/lessons/songs/song-analysis/brown-eyed-girl/) - Joyful, rolling 8th-note acoustic pulse over G - C - G - D",
+            "[Bad Moon Rising - Creedence Clearwater Revival](/lessons/songs/song-analysis/bad-moon-rising/) - Roots rock groove with percussive right-hand snaps"
           ]
         },
         {
-          "title": "Rhythmic Accuracy",
-          "icon": "⏱️",
-          "description": "Maintaining precise timing",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "3. The \"Island / Calypso\" Universal Pop Strum",
+          "description": "The single most famous acoustic pattern in popular music history. Drops downbeat 3 for a soaring, syncopated pocket.",
+          "badge": {
+            "text": "Essential",
+            "color": "blue"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Technique", "value": "Metronome practice, internal pulse, subdivision counting" },
-            { "label": "Application", "value": "Solid foundation for playing with others, professional sound" }
+            {
+              "label": "Visual Pattern",
+              "value": "↓   -   ↓   ↑   -   ↑   ↓   ↑"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1   &   2   &   (3) &   4   &"
+            },
+            {
+              "label": "Accents",
+              "value": "Accent on beat 2; the upstroke on the '&' of 3 ties over beat 3"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Ghost-stroke beat 3: your hand must swing down over beat 3 without hitting strings, then catch the upstroke."
+            }
+          ],
+          "items": [
+            "[Riptide - Vance Joy](/lessons/songs/song-analysis/riptide/) - Signature syncopated bounce driving the Am - G - C progression",
+            "[Stand by Me - Ben E. King](/lessons/songs/song-analysis/stand-by-me/) - Classic acoustic groove paired with percussive palm taps",
+            "[Knockin' on Heaven's Door - Bob Dylan](/lessons/songs/song-analysis/knockin-on-heavens-door/) - Timeless campfire anthem over G - D - Am / G - D - C"
           ]
         },
         {
-          "title": "Dynamic Control",
-          "icon": "📊",
-          "description": "Varying volume and intensity",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "4. The 16th-Note Acoustic Anthem Strum",
+          "description": "Dense, driving, modern acoustic rhythm that uses 16th-note subdivisions to generate intense momentum in alternative and Britpop classics.",
+          "badge": {
+            "text": "Intermediate",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Technique", "value": "Pick angle, contact pressure, hand position" },
-            { "label": "Application", "value": "Musical expression, dynamic arrangement support" }
+            {
+              "label": "Visual Pattern",
+              "value": "↓   -   ↓   -   ↓   ↑   -   ↑   ↓   -   ↓   ↑   ↓   ↑"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1   e   &   a   2   e   &   a   3   e   &   a   4   e   &   a"
+            },
+            {
+              "label": "Accents",
+              "value": "Heavy accents on the snare hits (beats 2 and 4)"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Keep pinky and ring finger planted on the 3rd fret (B and high E) to anchor chord changes while wrist stays fluid."
+            }
+          ],
+          "items": [
+            "[Wonderwall - Oasis](/lessons/songs/song-analysis/wonderwall/) - The iconic 16th-note acoustic wall of sound with locked anchor fingers",
+            "[Good Riddance (Time of Your Life) - Green Day](/lessons/songs/song-analysis/good-riddance/) - Dynamic acoustic strum evolving from picked arpeggios into full open roar",
+            "[Zombie - The Cranberries](/lessons/songs/song-analysis/zombie/) - Driving, emotional acoustic-into-distorted chorus rhythm"
+          ]
+        },
+        {
+          "title": "5. The Compound 6/8 Ballad Strum",
+          "description": "A rolling, triplet-based compound time signature where each measure divides into two pulses of three eighth notes (1-2-3, 4-5-6).",
+          "badge": {
+            "text": "Intermediate",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Visual Pattern",
+              "value": "↓   -   ↓   ↑   ↓   -   ↓   ↑"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1   2   3   |   4   5   6"
+            },
+            {
+              "label": "Accents",
+              "value": "Strong downbeat pulse on 1 and secondary pulse on 4"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Strum down on 1 (bass note), light down-up on 2-3, down on 4 (accent), light down-up on 5-6."
+            }
+          ],
+          "items": [
+            "[Nothing Else Matters - Metallica](/lessons/songs/song-analysis/nothing-else-matters/) - Epic 6/8 acoustic power ballad transitioning into heavy dynamics",
+            "[House of the Rising Sun - Traditional](/lessons/theory/chords/minor/) - The rolling arpeggio-strum hybrid standard in 6/8 time",
+            "[Dreams - Fleetwood Mac](/lessons/songs/song-analysis/dreams/) - Rolling relaxed ballad feel supporting Lindsey Buckingham's texture"
+          ]
+        },
+        {
+          "title": "6. Southern Rock & Country \"Boom-Chick\" Strum",
+          "description": "Alternating bass note picking followed by a percussive treble strum. Mimics the upright bass and snare in country and roots music.",
+          "badge": {
+            "text": "Intermediate",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Visual Pattern",
+              "value": "[Bass]   -   [Treble ↓]   -   [Alt-Bass]   -   [Treble ↓ ↑]"
+            },
+            {
+              "label": "Metric Count",
+              "value": "1            2                3             4     &"
+            },
+            {
+              "label": "Accents",
+              "value": "Treble snap on beats 2 and 4"
+            },
+            {
+              "label": "Key Mechanics",
+              "value": "Target the root bass note on beat 1 (e.g. low G), then strum strings 1-3 on beat 2. Hit the 5th bass note on beat 3 (e.g. open D), then strum on beat 4."
+            }
+          ],
+          "items": [
+            "[Sweet Home Alabama - Lynyrd Skynyrd](/lessons/songs/song-analysis/sweet-home-alabama/) - Signature D - Cadd9 - G alternating bass rhythm and guitar hooks",
+            "[Ring of Fire - Johnny Cash](/lessons/songs/song-analysis/ring-of-fire/) - The classic boom-chick country rhythm driving the progression",
+            "[Folsom Prison Blues - Johnny Cash](/lessons/songs/song-analysis/folsom-prison-blues/) - Train-beat rhythmic chug with muted bass-string alternating roots"
           ]
         }
       ]
     },
     {
-      "title": "Progressive Practice Plan",
+      "title": "Technical Mastery: The 4 Pillars of Pro Strumming",
       "bgColor": "bg-white",
-      "borderColor": "border-gray-200",
-      "layout": "list",
+      "borderColor": "border-slate-200",
+      "layout": "grid-2",
       "cards": [
         {
-          "title": "Metronome Foundation",
-          "description": "Basic down strumming with metronome",
-          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "1. The \"Loose Hinge\" Wrist & 45° Pick Angle",
+          "description": "Eliminating arm stiffness and string drag through proper physical mechanics.",
+          "badge": {
+            "text": "Biomechanics",
+            "color": "blue"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Tempo Range", "value": "60-80 BPM" },
-            { "label": "Focus Areas", "value": "Steady tempo, consistent dynamics" },
-            { "label": "Progression Path", "value": "Increase tempo gradually, maintain accuracy" }
+            {
+              "label": "The Loose Hinge",
+              "value": "Strumming motion comes from a relaxed wrist rotation—like turning a doorknob or shaking water off your fingertips—not a rigid forearm piston."
+            },
+            {
+              "label": "The 45° Bevel Angle",
+              "value": "Tilt your pick slightly downward on downstrokes so it glides over strings instead of slapping flat against them. On upstrokes, naturally bevel upward."
+            },
+            {
+              "label": "Pick Grip Pressure",
+              "value": "Hold the pick firmly enough that it won't fly out of your fingers, but loosely enough that you could slide a dollar bill out from your grip."
+            }
+          ],
+          "items": [
+            "Never lock your elbow: rigid forearm movement causes quick fatigue and uneven volume",
+            "Use a medium pick (0.60mm to 0.73mm) for acoustic strumming; stiff heavy picks catch on strings",
+            "Check your grip after every song: tension creeps in when chord changes get challenging"
           ]
         },
         {
-          "title": "Up-Down Coordination",
-          "description": "Alternating down-up patterns",
-          "badge": { "text": "Beginner", "color": "bg-green-100 text-green-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "2. String Targeting & Frequency Separation",
+          "description": "How professional players make acoustic guitars sound like an entire band arrangement.",
+          "badge": {
+            "text": "Arrangement",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Tempo Range", "value": "70-90 BPM" },
-            { "label": "Focus Areas", "value": "Smooth transitions, even spacing" },
-            { "label": "Progression Path", "value": "Add chord changes, increase complexity" }
+            {
+              "label": "Bass Downbeats (1 & 3)",
+              "value": "Aim your pick primarily at strings 6, 5, and 4 on odd-numbered beats. This provides the low harmonic anchor without overwhelming the mix."
+            },
+            {
+              "label": "Treble Backbeats (2 & 4)",
+              "value": "Aim across strings 4, 3, 2, and 1 on even-numbered beats with a sharper pick snap. This provides the snare backbeat that drives the dance."
+            },
+            {
+              "label": "Light Brush Upstrokes",
+              "value": "Only graze strings 1, 2, and 3 on upstrokes. Striking all 6 strings upward produces a harsh, metallic sound that muddies the groove."
+            }
+          ],
+          "items": [
+            "Compare your tone: strumming all 6 strings constantly creates a wall of muddy noise",
+            "Targeting strings naturally creates dynamic peaks and valleys that leave room for vocals",
+            "Essential for mastering [Wonderwall](/lessons/songs/song-analysis/wonderwall/) and [Good Riddance](/lessons/songs/song-analysis/good-riddance/)"
           ]
         },
         {
-          "title": "Pattern Variations",
-          "description": "Practice different patterns over same chord progression",
-          "badge": { "text": "Intermediate", "color": "bg-yellow-100 text-yellow-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "3. Percussive Fret-Hand Muting & \"The Chuck\"",
+          "description": "Transforming the guitar from a melodic instrument into a pitched percussion box.",
+          "badge": {
+            "text": "Percussion",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Tempo Range", "value": "80-120 BPM" },
-            { "label": "Focus Areas", "value": "Pattern consistency, musical application" },
-            { "label": "Progression Path", "value": "Combine patterns, create arrangements" }
+            {
+              "label": "The Fret Release",
+              "value": "Immediately after strumming a chord on beat 2 or 4, relax the pressing force of your fretting fingers without lifting them off the strings. The chord chokes instantly into a dead 'chk'."
+            },
+            {
+              "label": "Right-Hand Palm Slap",
+              "value": "Bring the fleshy heel of your picking hand down across the strings on beats 2 and 4 simultaneously with the pick stroke to create a percussive snare slap."
+            },
+            {
+              "label": "Ghost Note Scratches",
+              "value": "Keep the left hand muting all six strings while the right hand continues its 16th-note pendulum, creating rhythmic shaker textures."
+            }
+          ],
+          "items": [
+            "Heard in funk, reggae, acoustic pop, and acoustic hip-hop covers",
+            "Creates an infectious, foot-tapping pocket even when playing solo without a drummer",
+            "Featured extensively in [Stand by Me](/lessons/songs/song-analysis/stand-by-me/) and [Riptide](/lessons/songs/song-analysis/riptide/)"
           ]
         },
         {
-          "title": "Song Application",
-          "description": "Apply patterns to complete songs",
-          "badge": { "text": "Advanced", "color": "bg-red-100 text-red-800" },
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "4. Internal Clock & Ghost Stroke Synchronization",
+          "description": "Never losing the beat, even through complex syncopation, pauses, and chord transitions.",
+          "badge": {
+            "text": "Timing",
+            "color": "purple"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Tempo Range", "value": "Song tempo" },
-            { "label": "Focus Areas", "value": "Musical context, arrangement support" },
-            { "label": "Progression Path", "value": "Multiple songs, different genres" }
+            {
+              "label": "The Ghost Stroke",
+              "value": "When a pattern calls for a rest or a tied note, your picking hand MUST continue swinging through the air without touching the strings. Never stop your hand!"
+            },
+            {
+              "label": "Foot Tapping Rule",
+              "value": "Tap your foot exclusively on the downbeats (1, 2, 3, 4). If your foot starts tapping on syncopated upbeats, your internal clock will drift."
+            },
+            {
+              "label": "Subdivision Counting",
+              "value": "Vocalize '1 & 2 & 3 & 4 &' out loud while strumming slowly. If you can count it aloud, your fingers will execute it flawlessly."
+            }
+          ],
+          "items": [
+            "Stopping the hand during chord changes is the #1 reason beginners drag or rush tempo",
+            "Ghost strokes keep your internal metronome locked during rests and ties",
+            "Pair this with our interactive [Fretboard Trainer](/lessons/practice/fretboard-trainer/) for seamless chord switching"
           ]
         }
       ]
     },
     {
-      "title": "Progressive Song Learning",
-      "bgColor": "bg-gradient-to-r from-amber-50 to-orange-50",
-      "borderColor": "border-gray-200",
+      "title": "Progressive Strumming Workout Routine",
+      "bgColor": "bg-white",
+      "borderColor": "border-slate-200",
       "layout": "numbered-steps",
       "cards": [
         {
-          "title": "\"Wild Thing\" - Basic Down Strumming",
-          "description": "Start with simple quarter note downstrokes to build fundamental rhythm",
           "number": 1,
-          "badge": { "text": "1", "color": "bg-green-100 text-green-800" }
+          "title": "The Muted String Pendulum Drill (5 Minutes)",
+          "description": "Rest all fingers of your fretting hand gently across the strings without pressing down to create a dead sound. Turn on a metronome at 60 BPM. Swing your right hand in continuous eighth notes (↓ ↑ ↓ ↑) for two full minutes. Focus entirely on relaxed wrist movement, 45° pick bevel, and keeping the arm swinging without tension. Increase to 80 BPM, then 100 BPM."
         },
         {
-          "title": "\"Wonderwall\" - Down-Up Pattern",
-          "description": "Add upstrokes for more fluid eighth note rhythm",
           "number": 2,
-          "badge": { "text": "2", "color": "bg-yellow-100 text-yellow-800" }
+          "title": "The Two-Chord Anchor Pivot Workout (5 Minutes)",
+          "description": "Choose two chords with common anchor fingers: G major and Cadd9 (fingers 3 and 4 stay locked on the 3rd fret of strings 1 and 2). Strum the Calypso pattern (↓ - ↓ ↑ - ↑ ↓ ↑) at 70 BPM. Transition between G and Cadd9 every two measures without stopping your right-hand swing. If your chord change is late, keep the right hand moving—never freeze the strumming arm."
         },
         {
-          "title": "\"Perfect\" - Pop Ballad Pattern",
-          "description": "Introduce syncopation and rhythmic space",
           "number": 3,
-          "badge": { "text": "3", "color": "bg-orange-100 text-orange-800" }
+          "title": "The 4-Chord Pop Loop Strumming Challenge (10 Minutes)",
+          "description": "Practice the iconic [I - V - vi - IV Pop Progression](/lessons/theory/progressions/i-v-vi-iv/) (G - D - Em - C) using the 16th-note acoustic anthem pattern. Start at 65 BPM. Emphasize the bass notes on beat 1 and snap the treble backbeat on beats 2 and 4. Gradually increase tempo by 5 BPM increments until reaching [Wonderwall](/lessons/songs/song-analysis/wonderwall/) speed (88 BPM)."
         },
         {
-          "title": "\"Shape of You\" - Complex Pop Pattern",
-          "description": "Master sophisticated rhythmic variations and dynamics",
           "number": 4,
-          "badge": { "text": "4", "color": "bg-red-100 text-red-800" }
+          "title": "Dynamic Range Threshold Drill (5 Minutes)",
+          "description": "Play a steady eighth-note strum over an E minor chord. Over 8 bars, start from pianissimo (whisper-quiet, barely brushing strings with pick tip) and gradually swell volume bar-by-bar until reaching fortissimo (full, booming arena strum) on bar 8, then decrescendo back down to a whisper over the next 8 bars. Teaches muscular dynamic control."
+        }
+      ]
+    },
+    {
+      "title": "Progressive Song Learning Path",
+      "bgColor": "bg-white",
+      "borderColor": "border-slate-200",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Stage 1: Downbeat Grounding with \"Wild Thing\"",
+          "description": "Lock in your quarter-note internal clock and power transitions across open A, D, and E chords.",
+          "badge": {
+            "text": "Stage 1",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Target Song",
+              "value": "[Wild Thing - The Troggs](/lessons/songs/song-analysis/wild-thing/)"
+            },
+            {
+              "label": "Chords Used",
+              "value": "A Major, D Major, E Major"
+            },
+            {
+              "label": "Rhythm Focus",
+              "value": "Clean quarter-note downstrokes with confident downbeat accents on 1 and 2"
+            },
+            {
+              "label": "Next Step",
+              "value": "Once comfortable, tackle [Louie Louie](/lessons/songs/song-analysis/louie-louie/) for identical three-chord mastery."
+            }
+          ]
+        },
+        {
+          "title": "Stage 2: The Campfire Standard with \"Knockin' on Heaven's Door\"",
+          "description": "Master the world's most versatile folk/rock strumming pattern across an iconic 4-bar chord cycle.",
+          "badge": {
+            "text": "Stage 2",
+            "color": "blue"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Target Song",
+              "value": "[Knockin' on Heaven's Door - Bob Dylan](/lessons/songs/song-analysis/knockin-on-heavens-door/)"
+            },
+            {
+              "label": "Chords Used",
+              "value": "G Major, D Major, Am7, C Major"
+            },
+            {
+              "label": "Rhythm Focus",
+              "value": "The Calypso / Island pattern (↓ - ↓ ↑ - ↑ ↓ ↑) with ghost-stroked beat 3"
+            },
+            {
+              "label": "Next Step",
+              "value": "Apply the exact same pattern to [Riptide](/lessons/songs/song-analysis/riptide/) and [Stand by Me](/lessons/songs/song-analysis/stand-by-me/)."
+            }
+          ]
+        },
+        {
+          "title": "Stage 3: The 16th-Note Masterclass with \"Wonderwall\"",
+          "description": "Advance into rapid 16th-note syncopation while anchoring your high strings to maintain acoustic resonance.",
+          "badge": {
+            "text": "Stage 3",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Target Song",
+              "value": "[Wonderwall - Oasis](/lessons/songs/song-analysis/wonderwall/)"
+            },
+            {
+              "label": "Chords Used",
+              "value": "Em7, G, Dsus4, A7sus4 (Capo 2nd fret)"
+            },
+            {
+              "label": "Rhythm Focus",
+              "value": "Continuous 16th-note pendulum with dynamic snare accents on 2 and 4"
+            },
+            {
+              "label": "Next Step",
+              "value": "Transition into [Good Riddance (Time of Your Life)](/lessons/songs/song-analysis/good-riddance/) for acoustic picking-into-strumming dynamics."
+            }
+          ]
+        },
+        {
+          "title": "Stage 4: Compound Triplets with \"Nothing Else Matters\"",
+          "description": "Expand your rhythmic vocabulary into 6/8 compound meter with rolling arpeggios and heavy rock chord swells.",
+          "badge": {
+            "text": "Stage 4",
+            "color": "purple"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Target Song",
+              "value": "[Nothing Else Matters - Metallica](/lessons/songs/song-analysis/nothing-else-matters/)"
+            },
+            {
+              "label": "Chords Used",
+              "value": "Em, D, C, G, B7"
+            },
+            {
+              "label": "Rhythm Focus",
+              "value": "6/8 meter grouping (two pulses of 3 eighth notes per measure)"
+            },
+            {
+              "label": "Next Step",
+              "value": "Explore [Dreams by Fleetwood Mac](/lessons/songs/song-analysis/dreams/) for relaxed syncopated acoustic texture."
+            }
+          ]
         }
       ]
     }
   ],
   "practiceSection": {
-    "title": "Common Strumming Mistakes",
-    "bgColor": "bg-red-50",
+    "title": "The 4 Most Common Strumming Traps & How to Fix Them",
     "items": [
-      "Rushing the Tempo: Always practice with a metronome. Internal timing develops through consistent practice at steady tempos.",
-      "Too Much Arm Movement: Use wrist motion for fluid strumming. Arm movement should be minimal and natural.",
-      "Heavy Upstrokes: Upstrokes should be lighter than downstrokes. Let the pick glide across the strings on the way up.",
-      "Ignoring Dynamics: Vary your strumming intensity to support the song's emotional content and arrangement."
+      "The 'Frozen Hand' Trap: Stopping your right hand when a difficult chord change approaches. Fix: Keep your right hand swinging in time no matter what. If you miss a chord, strum open strings on beat 1 and drop your fingers into place on beat 2. In a live band, keeping the beat on a wrong chord sounds infinitely better than stopping the song.",
+      "The Harsh Upstroke Flaw: Catching all 6 strings on the upstroke with pick drag. Fix: Your upstroke should be a delicate 'brush' hitting only the top 2 or 3 strings (B and high E). Tilt your pick slightly upward so the edge slices through strings effortlessly without getting hung up.",
+      "The Metric Rushing Error: Speeding up when the music gets exciting or loud. Fix: Practice with a metronome clicking on beats 2 and 4 only (the snare drum). This forces your brain to supply beats 1 and 3 internally, building rock-solid timing that won't fluctuate under adrenaline.",
+      "The Static Volume Trap: Strumming at 100% volume for the entire song. Fix: Treat your strumming like conversation. Drop your picking volume by 50% during verses to let vocals shine, then hit with open downstrokes and wide arm movement when the chorus arrives."
     ]
   },
   "relatedTopics": [
-    { "title": "Palm Muting", "href": "/lessons/songs/rhythm/palm-muting", "description": "Master palm muting techniques for dynamic control." },
-    { "title": "Fingerpicking Rhythms", "href": "/lessons/songs/rhythm/fingerpicking", "description": "Explore fingerpicking patterns and techniques." },
-    { "title": "Rhythm Guitar Overview", "href": "/lessons/songs/rhythm", "description": "Return to the main Rhythm & Strumming page." }
+    {
+      "title": "Rhythm Guitar Overview",
+      "href": "/lessons/songs/rhythm",
+      "description": "Return to the Rhythm & Strumming Hub to explore funk, latin, shuffle, and reggae styles."
+    },
+    {
+      "title": "Palm Muting & Dynamics",
+      "href": "/lessons/songs/rhythm/palm-muting",
+      "description": "Learn to choke strings with your picking palm for punchy rock chugs and acoustic percussion."
+    },
+    {
+      "title": "Syncopation & Off-beats",
+      "href": "/lessons/songs/rhythm/syncopation",
+      "description": "Master off-beat pushes and anticipated chord changes that drive funk, reggae, and pop grooves."
+    },
+    {
+      "title": "Fingerpicking Rhythms",
+      "href": "/lessons/songs/rhythm/fingerpicking",
+      "description": "Trade your pick for fingers and develop alternating bass lines and polyrhythmic textures."
+    }
   ]
 }
