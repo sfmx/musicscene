@@ -56,6 +56,7 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Jason Smith</h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Sydney, Australia</p>
                   <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Brisbane, Australia</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Sydney &amp; Brisbane, Australia</p>
                 </div>
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                   Jason is a multi-instrumentalist, guitarist, and software developer with over two decades of playing,

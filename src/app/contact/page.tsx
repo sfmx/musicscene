@@ -60,6 +60,7 @@ export default function ContactPage() {
                     <span className="font-semibold text-slate-800 dark:text-slate-200 block">Location:</span>
                     <span>New South Wales, Australia</span>
                     <span>Brisbane, Queensland, Australia</span>
+                    <span>Sydney &amp; Brisbane, Australia</span>
                   </div>
                   <div>
                     <span className="font-semibold text-slate-800 dark:text-slate-200 block">Privacy Inquiries:</span>

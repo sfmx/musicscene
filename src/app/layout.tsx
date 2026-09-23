@@ -55,6 +55,9 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg" },
+  other: {
+    "google-adsense-account": REVENUE_CONFIG.adsensePublisherId,
+  },
 };
 
 export default function RootLayout({
@@ -79,6 +82,13 @@ export default function RootLayout({
             `,
           }}
         />
+        {REVENUE_CONFIG.adsEnabled && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${REVENUE_CONFIG.adsensePublisherId}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
