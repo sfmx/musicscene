@@ -286,58 +286,64 @@
   ],
   "famousSongs": [
     {
+      "slug": "the-thrill-is-gone",
       "title": "The Thrill Is Gone",
       "artist": "B.B. King",
-      "key": "B minor blues",
+      "key": "B Minor Blues",
       "genre": "Blues",
-      "usage": "Masterful use of blues scale with bending",
+      "usage": "Soulful B minor blues soloing highlighting the 'B.B. Box' (frets 10-12) with sublime microtonal bends and stinging vibrato",
       "difficulty": "Intermediate",
-      "learningValue": "Blue notes create emotional expression"
+      "learningValue": "Mastering dynamic restraint, vocal bending nuances, and tasteful note placement"
     },
     {
-      "title": "Mannish Boy",
-      "artist": "Muddy Waters",
-      "key": "E blues",
-      "genre": "Electric Blues",
-      "usage": "Classic electric blues riff",
-      "difficulty": "Beginner",
-      "learningValue": "Simple but powerful blues scale usage"
-    },
-    {
-      "title": "Cross Road Blues",
-      "artist": "Robert Johnson",
-      "key": "A blues",
-      "genre": "Delta Blues",
-      "usage": "Delta blues foundation",
-      "difficulty": "Intermediate",
-      "learningValue": "Acoustic blues scale applications"
-    },
-    {
-      "title": "Paranoid",
-      "artist": "Black Sabbath",
-      "key": "E blues",
-      "genre": "Heavy Metal",
-      "usage": "Heavy rock riffs from blues scale",
-      "difficulty": "Intermediate",
-      "learningValue": "Blues scale drives hard rock"
-    },
-    {
-      "title": "Black Dog",
-      "artist": "Led Zeppelin",
-      "key": "A blues",
-      "genre": "Hard Rock",
-      "usage": "Blues-rock fusion mastery",
-      "difficulty": "Advanced",
-      "learningValue": "Complex rhythms with blues scale"
-    },
-    {
+      "slug": "pride-and-joy",
       "title": "Pride and Joy",
       "artist": "Stevie Ray Vaughan",
-      "key": "E blues",
-      "genre": "Blues Rock",
-      "usage": "Modern blues guitar virtuosity",
+      "key": "Eb Blues",
+      "genre": "Texas Blues",
+      "usage": "Texas blues shuffle mastery combining aggressive open-string rakes, double-stops, and blazing blues scale runs",
       "difficulty": "Advanced",
-      "learningValue": "Technical precision with blues scale"
+      "learningValue": "Texas shuffle rhythm, thumb-over fretting, and percussive pick-hand damping"
+    },
+    {
+      "slug": "crossroads",
+      "title": "Crossroads",
+      "artist": "Cream",
+      "key": "A Blues",
+      "genre": "Blues Rock",
+      "usage": "Eric Clapton's high-octane 12-bar blues reimagining filled with rapid-fire A blues scale licks and biting tone",
+      "difficulty": "Advanced",
+      "learningValue": "Fast triplet turnaround phrases, aggressive string bending, and blues scale phrasing across 12-bar changes"
+    },
+    {
+      "slug": "sunshine-of-your-love",
+      "title": "Sunshine of Your Love",
+      "artist": "Cream",
+      "key": "D Blues",
+      "genre": "Psychedelic Blues Rock",
+      "usage": "Unforgettable descending D blues scale riff featuring the prominent Ab blue note (flat 5th) on the A string",
+      "difficulty": "Beginner",
+      "learningValue": "Iconic riff execution, highlighting the tension of the tritone/blue note in heavy rock"
+    },
+    {
+      "slug": "paranoid",
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "key": "E Blues",
+      "genre": "Heavy Metal",
+      "usage": "Rapid E blues scale palm-muted rhythm figures and high-velocity Box 1 blues-rock soloing",
+      "difficulty": "Intermediate",
+      "learningValue": "Connecting blues scale vocabulary directly into early heavy metal speed and power"
+    },
+    {
+      "slug": "purple-haze",
+      "title": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "key": "E Blues",
+      "genre": "Psychedelic Rock",
+      "usage": "Legendary intro tritone dissonance (Bb over E) resolving into driving E blues groove and the Hendrix chord (E7#9)",
+      "difficulty": "Intermediate",
+      "learningValue": "Dominant 7th altered chords, blues scale bending, and classic rock lead vocabulary"
     }
   ],
   "practiceExercises": [
@@ -346,7 +352,6 @@
       "type": "Scale Practice",
       "difficulty": "Beginner",
       "description": "Practice the A blues scale ascending and descending",
-      "alphaTex": "5.6 8.6 5.5 7.5 5.4 6.4 7.4 5.3 7.3 5.2 8.2 7.3 5.3 7.4 6.4 5.4 7.5 5.5 8.6 5.6",
       "alphaTex": ":4 5.6 8.6 5.5 7.5 | 5.4 6.4 7.4 5.3 | 7.3 5.2 8.2 7.3 | 5.3 7.4 6.4 5.4 | 7.5 5.5 8.6 5.6 | 5.6.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -366,7 +371,6 @@
       "type": "Technique",
       "difficulty": "Intermediate",
       "description": "Practice emphasizing the blue note (♭5)",
-      "alphaTex": "5.6 6.4 7.4 6.4 5.6 6.4 7.4 8.2 5.6 6.4 5.6",
       "alphaTex": ":4 5.6 6.4 7.4 6.4 | 5.6 6.4 7.4 8.2 | 5.6 6.4 5.6.2 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -386,7 +390,6 @@
       "type": "Licks & Phrases",
       "difficulty": "Intermediate",
       "description": "Essential blues lick pattern using blues scale",
-      "alphaTex": "8.6 5.5 7.5 6.4 7.4 5.3 7.3 5.2",
       "alphaTex": ":4 8.6 5.5 7.5 6.4 | 7.4 5.3 7.3 5.2 | 5.2.1 |",
       "tempo": "100-160 BPM",
       "focus": [

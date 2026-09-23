@@ -304,58 +304,64 @@
   ],
   "famousSongs": [
     {
-      "title": "My Girl",
-      "artist": "The Temptations",
-      "key": "C major pentatonic",
-      "genre": "Soul",
-      "usage": "Classic major pentatonic melody line",
-      "difficulty": "Beginner",
-      "learningValue": "Perfect example of pentatonic melodic beauty"
-    },
-    {
+      "slug": "blackbird",
       "title": "Blackbird",
       "artist": "The Beatles",
-      "key": "G major pentatonic",
+      "key": "G Major",
       "genre": "Folk Rock",
-      "usage": "Fingerpicked pentatonic patterns",
+      "usage": "Intricate fingerstyle acoustic guitar utilizing the sweet, open sound of G major pentatonic notes against drone strings",
       "difficulty": "Intermediate",
-      "learningValue": "Shows pentatonic in acoustic context"
+      "learningValue": "Two-finger picking technique, 10th interval shapes, and melodic fretboard movement"
     },
     {
-      "title": "Country Guitar Solos",
-      "artist": "Various (Paisley, Urban, Gill)",
-      "key": "Various",
-      "genre": "Country",
-      "usage": "Clean, bright pentatonic lead playing",
+      "slug": "sweet-home-alabama",
+      "title": "Sweet Home Alabama",
+      "artist": "Lynyrd Skynyrd",
+      "key": "D / G Major",
+      "genre": "Southern Rock",
+      "usage": "Ed King's masterclass in G major pentatonic fill-ins, double-stops, and banjo-style hybrid picking between chord accents",
       "difficulty": "Intermediate",
-      "learningValue": "Modern country pentatonic techniques"
+      "learningValue": "Major pentatonic fill placement, hybrid picking, and country-rock bends"
     },
     {
-      "title": "Pop Ballads",
-      "artist": "Ed Sheeran, John Mayer",
-      "key": "Various",
-      "genre": "Pop",
-      "usage": "Emotional, accessible melodic content",
+      "slug": "wish-you-were-here",
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "key": "G Major",
+      "genre": "Acoustic Rock",
+      "usage": "David Gilmour's warm 12-string acoustic and 6-string solo demonstrating sweet, melodic G major pentatonic note choices",
       "difficulty": "Beginner",
-      "learningValue": "Contemporary pop pentatonic application"
+      "learningValue": "Vocal-like acoustic phrasing, slide-ins, and target note resolution"
     },
     {
-      "title": "Rock Solos",
-      "artist": "Various Rock Artists",
-      "key": "Various",
-      "genre": "Rock",
-      "usage": "Mixed with minor pentatonic",
-      "difficulty": "Intermediate",
-      "learningValue": "Creates major/minor contrast in rock context"
-    },
-    {
-      "title": "Singer-Songwriter Style",
-      "artist": "Taylor Swift, James Taylor",
-      "key": "Various",
-      "genre": "Folk/Pop",
-      "usage": "Natural, singing melodic lines",
+      "slug": "knockin-on-heavens-door",
+      "title": "Knockin' on Heaven's Door",
+      "artist": "Bob Dylan",
+      "key": "G Major",
+      "genre": "Folk Rock",
+      "usage": "Stately G major progression (G-D-Am7, G-D-C) allowing for expressive major pentatonic vocal melodies and fills",
       "difficulty": "Beginner",
-      "learningValue": "Accessible, natural melodic approach"
+      "learningValue": "Four-chord transitions, subtle embellishments, and major pentatonic improvisation"
+    },
+    {
+      "slug": "landslide",
+      "title": "Landslide",
+      "artist": "Fleetwood Mac",
+      "key": "G Major",
+      "genre": "Folk Rock",
+      "usage": "Lindsey Buckingham's hypnotic Travis-picking pattern weaving C, G/B, and Am7 with major pentatonic passing tones",
+      "difficulty": "Intermediate",
+      "learningValue": "Travis picking pattern, steady alternating bass thumb, and clean syncopation"
+    },
+    {
+      "slug": "brown-eyed-girl",
+      "title": "Brown Eyed Girl",
+      "artist": "Van Morrison",
+      "key": "G Major",
+      "genre": "Classic Rock",
+      "usage": "Iconic harmonized major 6th and 3rd intro riff outlining G major pentatonic harmony across strings 1 and 2",
+      "difficulty": "Beginner",
+      "learningValue": "Harmonized double-stops, sliding dyads, and upbeat syncopated rhythm"
     }
   ],
   "practiceExercises": [
@@ -364,7 +370,6 @@
       "type": "Scale Practice",
       "difficulty": "Beginner",
       "description": "Practice the C major pentatonic ascending and descending",
-      "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2 5.2 3.2 0.2 2.3 0.3 2.4 0.4 3.5",
       "alphaTex": ":4 3.5 0.4 2.4 0.3 | 2.3 0.2 3.2 5.2 | 5.2.1 | 3.2 0.2 2.3 0.3 | 2.4 0.4 3.5 3.5 | 3.5.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -384,7 +389,6 @@
       "type": "Technique",
       "difficulty": "Intermediate",
       "description": "Practice pentatonic sequences in thirds",
-      "alphaTex": "3.5 2.4 0.4 0.3 2.4 2.3 0.3 0.2 2.3 3.2 0.2 5.2 3.2 3.2 0.2 2.3",
       "alphaTex": ":4 3.5 2.4 0.4 0.3 | 2.4 2.3 0.3 0.2 | 2.3 3.2 0.2 5.2 | 3.2 3.2 0.2 2.3 | 2.3.1 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -404,7 +408,6 @@
       "type": "Musical Application",
       "difficulty": "Intermediate",
       "description": "Simple pentatonic melody over C-Am-F-G progression",
-      "alphaTex": "3.5 0.4 2.4 0.3 2.3 0.2 3.2 0.2 2.3 0.3 2.4 0.4 3.5",
       "alphaTex": ":4 3.5 0.4 2.4 0.3 | 2.3 0.2 3.2 0.2 | 2.3 0.3 2.4 0.4 | 3.5.1 |",
       "tempo": "100-160 BPM",
       "focus": [

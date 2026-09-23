@@ -92,6 +92,8 @@ export interface FamousSong {
   usage?: string;
   difficulty?: string;
   learningValue?: string;
+  slug?: string;
+  url?: string;
 }
 
 export interface PracticeExercise {

@@ -315,49 +315,64 @@
   ],
   "famousSongs": [
     {
-      "title": "So What",
-      "artist": "Miles Davis",
-      "key": "D Dorian",
-      "genre": "Jazz",
-      "usage": "Iconic jazz standard built entirely on D dorian, the quintessential modal jazz composition",
-      "difficulty": "Intermediate",
-      "learningValue": "Perfect example of modal jazz composition"
-    },
-    {
-      "title": "Scarborough Fair",
-      "artist": "Traditional (Simon & Garfunkel)",
-      "key": "D Dorian",
-      "genre": "Folk",
-      "usage": "Celtic folk song showcasing dorian mode's deep folk music heritage",
-      "difficulty": "Beginner",
-      "learningValue": "Shows dorian's natural connection to folk music"
-    },
-    {
-      "title": "Another Brick in the Wall",
-      "artist": "Pink Floyd",
-      "key": "D Dorian",
-      "genre": "Rock",
-      "usage": "Rock classic using dorian harmonies for a modern, modal sound",
-      "difficulty": "Intermediate",
-      "learningValue": "Modern rock application of modal harmony"
-    },
-    {
+      "slug": "oye-como-va",
       "title": "Oye Como Va",
       "artist": "Santana",
       "key": "A Dorian",
       "genre": "Latin Rock",
-      "usage": "Latin rock groove built on the classic dorian i-IV vamp",
+      "usage": "The quintessential Dorian groove: Am7 to D9 vamp with Carlos Santana's soaring major 6th (F#) melodies",
       "difficulty": "Intermediate",
-      "learningValue": "Demonstrates dorian's groove potential in Latin music"
+      "learningValue": "Targeting the Dorian natural 6th over minor chords, Latin syncopation, and vocal sustain"
     },
     {
-      "title": "Eleanor Rigby",
-      "artist": "The Beatles",
-      "key": "E Dorian",
-      "genre": "Pop/Rock",
-      "usage": "Pop masterpiece demonstrating dorian's emotional range and versatility",
+      "slug": "another-brick-in-the-wall",
+      "title": "Another Brick in the Wall (Part 2)",
+      "artist": "Pink Floyd",
+      "key": "D Dorian",
+      "genre": "Progressive Rock",
+      "usage": "David Gilmour's legendary Goldtop Les Paul solo over a D minor to G chord vamp highlighting the bright natural B note",
+      "difficulty": "Intermediate",
+      "learningValue": "Dorian chord vamps (i-IV), dynamic expression, and percussive funk rhythm strumming"
+    },
+    {
+      "slug": "come-as-you-are",
+      "title": "Come As You Are",
+      "artist": "Nirvana",
+      "key": "F# Dorian",
+      "genre": "Grunge",
+      "usage": "Chorus-drenched opening riff shifting between the tonic and the Dorian natural 6th and 7th degrees",
       "difficulty": "Beginner",
-      "learningValue": "Shows how dorian creates a distinctive, melancholic pop sound"
+      "learningValue": "Chorus pedal tone, alternate picking on bass strings, and modal mood creation"
+    },
+    {
+      "slug": "sultans-of-swing",
+      "title": "Sultans of Swing",
+      "artist": "Dire Straits",
+      "key": "D Dorian",
+      "genre": "Roots Rock",
+      "usage": "Mark Knopfler's fingerpicked fills and solos incorporating Dorian and minor arpeggios over clean Strat tone",
+      "difficulty": "Advanced",
+      "learningValue": "Fingerstyle rock technique, rapid triad outlining, and modal articulation"
+    },
+    {
+      "slug": "comfortably-numb",
+      "title": "Comfortably Numb",
+      "artist": "Pink Floyd",
+      "key": "B Dorian / Minor",
+      "genre": "Progressive Rock",
+      "usage": "Verses use B minor to E major (i-IV), a hallmark Dorian progression that resolves tensions smoothly into the chorus",
+      "difficulty": "Intermediate",
+      "learningValue": "Recognizing i-IV Dorian progressions in iconic rock verses"
+    },
+    {
+      "slug": "devil-went-down-to-georgia",
+      "title": "The Devil Went Down to Georgia",
+      "artist": "The Charlie Daniels Band",
+      "key": "D Dorian",
+      "genre": "Southern Rock / Country",
+      "usage": "Lightning-fast fiddle and guitar dueling riffs over driving D Dorian bluegrass-rock tempo",
+      "difficulty": "Advanced",
+      "learningValue": "High-speed 16th-note alternate picking and modal fiddle tune phrasing on guitar"
     }
   ],
   "practiceExercises": [
@@ -366,7 +381,6 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "Practice the D dorian scale ascending and descending in open position",
-      "alphaTex": "0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2 | 3.2 1.2 0.2 2.3 0.3 3.4 2.4 0.4",
       "alphaTex": ":4 0.4 2.4 3.4 0.3 | 2.3 0.2 1.2 3.2 | 3.2 1.2 0.2 2.3 | 0.3 3.4 2.4 0.4 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -386,7 +400,6 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Practice dorian in thirds to hear the modal character and intervallic relationships",
-      "alphaTex": "0.4 3.4 2.4 0.3 3.4 2.3 0.3 1.2 | 2.3 3.2 0.2 0.1 1.2 2.1 3.2 3.1",
       "alphaTex": ":4 0.4 3.4 2.4 0.3 | 3.4 2.3 0.3 1.2 | 2.3 3.2 0.2 0.1 | 1.2 2.1 3.2 3.1 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -406,7 +419,6 @@
       "type": "Musical",
       "difficulty": "Intermediate",
       "description": "Simple dorian phrase over Dm7 chord with jazz phrasing and musical expression",
-      "alphaTex": "0.4 3.4 2.3 0.2 | 1.2 3.2 0.1 | 3.2 0.2 2.3 | 3.4 0.4 0.4",
       "alphaTex": ":4 0.4 3.4 2.3 0.2 | 1.2 3.2 0.1.2 | 3.2 0.2 2.3.2 | 3.4 0.4 0.4.2 |",
       "tempo": "70-110 BPM",
       "focus": [
@@ -426,7 +438,6 @@
       "type": "Ear Training",
       "difficulty": "Beginner",
       "description": "Compare dorian with natural minor to hear the characteristic raised 6th that defines the mode",
-      "alphaTex": "0.4 2.4 3.4 0.3 2.3 0.2 1.2 3.2 | 0.4 2.4 3.4 0.3 2.3 0.2 0.2 3.2",
       "alphaTex": ":4 0.4 2.4 3.4 0.3 | 2.3 0.2 1.2 3.2 | 0.4 2.4 3.4 0.3 | 2.3 0.2 0.2 3.2 |",
       "tempo": "60-100 BPM",
       "focus": [

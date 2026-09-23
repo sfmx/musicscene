@@ -319,49 +319,64 @@
   ],
   "famousSongs": [
     {
-      "title": "Invention No. 4 in D minor",
-      "artist": "J.S. Bach",
-      "key": "D Harmonic Minor",
-      "genre": "Classical",
-      "usage": "Masterful use of harmonic minor demonstrating classical harmony perfectly",
-      "difficulty": "Advanced",
-      "learningValue": "Demonstrates classical harmonic minor voice leading and counterpoint"
+      "slug": "hotel-california",
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "key": "B Harmonic Minor",
+      "genre": "Rock",
+      "usage": "The dramatic F# major chord (V of B minor) introduces the A# leading tone from B harmonic minor, resolving back to Bm",
+      "difficulty": "Intermediate",
+      "learningValue": "Major V chord in a minor key (harmonic minor V-i cadence) and arpeggiating over the augmented second"
     },
     {
-      "title": "Requiem in D minor",
-      "artist": "Mozart",
-      "key": "D Harmonic Minor",
-      "genre": "Classical",
-      "usage": "Dramatic harmonic minor passages showcasing the scale's emotional power",
-      "difficulty": "Advanced",
-      "learningValue": "Shows the scale's extraordinary emotional range and dramatic tension"
-    },
-    {
-      "title": "Various Nocturnes",
-      "artist": "Chopin",
-      "key": "Various Minor Keys",
-      "genre": "Classical/Romantic",
-      "usage": "Romantic period harmonic minor with elegant melodic and harmonic treatment",
-      "difficulty": "Advanced",
-      "learningValue": "Demonstrates elegant, lyrical use of harmonic minor melodies"
-    },
-    {
-      "title": "Far Beyond the Sun",
-      "artist": "Yngwie Malmsteen",
+      "slug": "classical-gas",
+      "title": "Classical Gas",
+      "artist": "Mason Williams",
       "key": "A Harmonic Minor",
-      "genre": "Neoclassical Metal",
-      "usage": "Defining neoclassical metal composition built on harmonic minor runs and arpeggios",
-      "difficulty": "Expert",
-      "learningValue": "Classical technique meets metal power, shows shred applications"
+      "genre": "Classical Rock",
+      "usage": "Virtuosic acoustic fingerstyle showcasing the dramatic raised 7th (G#) and rapid neoclassical arpeggio sweeps",
+      "difficulty": "Advanced",
+      "learningValue": "Neoclassical fingerstyle precision, rapid position shifts, and harmonic minor cadences"
     },
     {
-      "title": "Altitudes",
-      "artist": "Jason Becker",
+      "slug": "paint-it-black",
+      "title": "Paint It Black",
+      "artist": "The Rolling Stones",
       "key": "E Harmonic Minor",
-      "genre": "Neoclassical Metal",
-      "usage": "Virtuosic harmonic minor passages with sweep picking and legato techniques",
-      "difficulty": "Expert",
-      "learningValue": "Advanced technical application of harmonic minor on guitar"
+      "genre": "Psychedelic Rock",
+      "usage": "Iconic sitar and guitar melody emphasizing the Middle Eastern flavor of the harmonic minor scale over driving tom drums",
+      "difficulty": "Beginner",
+      "learningValue": "Exotic scale intervals, single-string tremolo picking, and minor key tension"
+    },
+    {
+      "slug": "the-final-countdown",
+      "title": "The Final Countdown",
+      "artist": "Europe",
+      "key": "F# Harmonic Minor",
+      "genre": "Hard Rock / Glam Metal",
+      "usage": "John Norum's neoclassical shred solo utilizing fast harmonic minor sweeps and classical sequence patterns",
+      "difficulty": "Advanced",
+      "learningValue": "Neoclassical sweep picking, high-speed scale runs, and dramatic vibrato"
+    },
+    {
+      "slug": "devil-went-down-to-georgia",
+      "title": "The Devil Went Down to Georgia",
+      "artist": "The Charlie Daniels Band",
+      "key": "D Harmonic Minor",
+      "genre": "Southern Rock / Country",
+      "usage": "The dark 'Devil's solo' passage features chromatic dissonances and blistering harmonic minor runs depicting the fiddle duel",
+      "difficulty": "Advanced",
+      "learningValue": "Blazing tempo alternate picking, dramatic minor scale dissonance, and theatrical guitar delivery"
+    },
+    {
+      "slug": "roundabout",
+      "title": "Roundabout",
+      "artist": "Yes",
+      "key": "E Harmonic Minor",
+      "genre": "Progressive Rock",
+      "usage": "Steve Howe's intricate acoustic introduction weaving natural harmonics and classical harmonic minor flourishes",
+      "difficulty": "Advanced",
+      "learningValue": "Natural harmonics, classical acoustic technique, and progressive harmonic minor voice leading"
     }
   ],
   "practiceExercises": [
@@ -370,7 +385,6 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "Practice the A harmonic minor scale ascending and descending with emphasis on the augmented 2nd interval between F and G#",
-      "alphaTex": "0.5 2.5 3.5 0.4 2.4 3.4 1.3 2.3 | 2.3 1.3 3.4 2.4 0.4 3.5 2.5 0.5",
       "alphaTex": ":4 0.5 2.5 3.5 0.4 | 2.4 3.4 1.3 2.3 | 2.3 1.3 3.4 2.4 | 0.4 3.5 2.5 0.5 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -390,7 +404,6 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Isolate and practice the characteristic augmented 2nd interval that defines the harmonic minor sound",
-      "alphaTex": "3.4 1.3 1.3 3.4 | 3.5 1.3 1.3 3.5 | 0.4 1.3 1.3 0.4 | 0.5 0.5 0.5 0.5",
       "alphaTex": ":4 3.4 1.3 1.3 3.4 | 3.5 1.3 1.3 3.5 | 0.4 1.3 1.3 0.4 | 0.5 0.5 0.5.2 |",
       "tempo": "70-110 BPM",
       "focus": [
@@ -410,7 +423,6 @@
       "type": "Musical",
       "difficulty": "Intermediate",
       "description": "Practice broken chord patterns in harmonic minor for classical and neoclassical applications",
-      "alphaTex": "0.5 3.5 2.4 1.3 3.5 2.4 1.3 2.3 | 1.3 2.4 3.5 1.3 2.4 3.5 0.5 | 0.5 0.5 0.5 0.5",
       "alphaTex": ":4 0.5 3.5 2.4 1.3 | 3.5 2.4 1.3 2.3 | 1.3 2.4 3.5 1.3 | 2.4 3.5 0.5.2 |",
       "tempo": "70-120 BPM",
       "focus": [
@@ -430,7 +442,6 @@
       "type": "Ear Training",
       "difficulty": "Beginner",
       "description": "Compare harmonic minor with natural minor to hear the characteristic raised 7th and exotic augmented 2nd",
-      "alphaTex": "0.5 2.5 3.5 0.4 2.4 3.4 1.3 2.3 | 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3",
       "alphaTex": ":4 0.5 2.5 3.5 0.4 | 2.4 3.4 1.3 2.3 | 0.5 2.5 3.5 0.4 | 2.4 3.4 0.3 2.3 |",
       "tempo": "60-100 BPM",
       "focus": [

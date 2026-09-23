@@ -314,49 +314,64 @@
   ],
   "famousSongs": [
     {
-      "title": "Let It Be",
-      "artist": "The Beatles",
-      "key": "C Major",
-      "genre": "Rock/Pop",
-      "usage": "Entire song built on major scale harmony",
-      "difficulty": "Beginner",
-      "learningValue": "Perfect introduction to major key progressions"
-    },
-    {
-      "title": "Sweet Caroline",
-      "artist": "Neil Diamond",
-      "key": "C Major",
-      "genre": "Pop",
-      "usage": "Classic major key anthem with simple progression",
-      "difficulty": "Beginner",
-      "learningValue": "Demonstrates power of simple major progressions"
-    },
-    {
+      "slug": "dont-stop-believin",
       "title": "Don't Stop Believin'",
       "artist": "Journey",
       "key": "E Major",
       "genre": "Rock",
-      "usage": "Iconic major key rock anthem",
+      "usage": "The ultimate I-V-vi-IV major scale progression (E-B-C#m-A) with soaring melodic guitar hooks and uplifting fills",
       "difficulty": "Intermediate",
-      "learningValue": "Shows how major scales create uplifting energy"
+      "learningValue": "Iconic four-chord diatonic harmony and melodic major scale motifs"
     },
     {
-      "title": "Imagine",
-      "artist": "John Lennon",
-      "key": "C Major",
-      "genre": "Pop/Rock",
-      "usage": "Simple major key melody with emotional depth",
+      "slug": "sweet-child-o-mine",
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "key": "D Major",
+      "genre": "Hard Rock",
+      "usage": "Slash's iconic string-skipping intro exercise transformed into a rock anthem, emphasizing the Major 7th and natural 4th resolutions",
+      "difficulty": "Intermediate",
+      "learningValue": "String skipping, cross-string picking precision, and major scale melodic shape"
+    },
+    {
+      "slug": "under-the-bridge",
+      "title": "Under the Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "key": "E Major",
+      "genre": "Alternative Rock",
+      "usage": "John Frusciante's Hendrix-inspired E major chord embellishments, hammer-ons, and major scale double-stops",
+      "difficulty": "Intermediate",
+      "learningValue": "Chord-melody playing, major triad embellishments, and dynamic thumb-fretted chords"
+    },
+    {
+      "slug": "wish-you-were-here",
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "key": "G Major",
+      "genre": "Acoustic Rock",
+      "usage": "Warm acoustic G major strumming with signature acoustic intro solo featuring 3rd and 7th scale degree resolutions",
       "difficulty": "Beginner",
-      "learningValue": "Proves simplicity can be profound"
+      "learningValue": "Acoustic picking, strumming while holding drone notes, and tasteful major lead lines"
     },
     {
-      "title": "Hey Jude",
+      "slug": "blackbird",
+      "title": "Blackbird",
       "artist": "The Beatles",
-      "key": "F Major",
-      "genre": "Rock/Pop",
-      "usage": "Major key with emotional journey and resolution",
+      "key": "G Major",
+      "genre": "Folk Rock",
+      "usage": "Paul McCartney's fingerpicking masterpiece traversing G major 10th intervals across the fretboard with a pulsing open G pedal note",
       "difficulty": "Intermediate",
-      "learningValue": "Shows major scale's emotional range"
+      "learningValue": "Fingerstyle tenth harmonies, fretboard navigation, and drone string coordination"
+    },
+    {
+      "slug": "free-fallin",
+      "title": "Free Fallin'",
+      "artist": "Tom Petty",
+      "key": "F Major",
+      "genre": "Heartland Rock",
+      "usage": "Pure I-IV-V major triad movement using suspended chords (sus4 and sus2) to create memorable uplifting tension",
+      "difficulty": "Beginner",
+      "learningValue": "Capo usage, suspended chord embellishments, and steady rhythm control"
     }
   ],
   "practiceExercises": [
@@ -365,7 +380,6 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "Ascending and descending major scale patterns",
-      "alphaTex": "3.6 5.6 7.6 2.5 3.5 5.5 2.4 4.4 5.4 2.3 4.3 5.3 1.2 3.2 5.2 1.1 3.1 | 3.1 1.1 5.2 3.2 1.2 5.3 4.3 2.3 5.4 4.4 2.4 5.5 3.5 2.5 7.6 5.6 3.6",
       "alphaTex": ":4 3.6 5.6 7.6 2.5 | 3.5 5.5 2.4 4.4 | 5.4 2.3 4.3 5.3 | 1.2 3.2 5.2 1.1 | 3.1.1 | 3.1 1.1 5.2 3.2 | 1.2 5.3 4.3 2.3 | 5.4 4.4 2.4 5.5 | 3.5 2.5 7.6 5.6 | 3.6.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -385,7 +399,6 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Playing the major scale in intervals (3rds, 4ths, 5ths)",
-      "alphaTex": "3.6 2.5 5.6 3.5 7.6 5.5 2.5 2.4 3.5 4.4 5.5 5.4 2.4 2.3 4.4 4.3",
       "alphaTex": ":4 3.6 2.5 5.6 3.5 | 7.6 5.5 2.5 2.4 | 3.5 4.4 5.5 5.4 | 2.4 2.3 4.4 4.3 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -405,7 +418,6 @@
       "type": "Musical",
       "difficulty": "Intermediate",
       "description": "Playing diatonic major scale chord arpeggios",
-      "alphaTex": "(3.5 2.4 0.3) (2.4 1.3 0.2) (0.4 2.3 0.2) (1.6 3.5 1.4)",
       "alphaTex": ":2 (3.5 2.4 0.3) (2.4 1.3 0.2) | :2 (0.4 2.3 0.2) (1.6 3.5 1.4) |",
       "tempo": "70-110 BPM",
       "focus": [
@@ -425,7 +437,6 @@
       "type": "Musical",
       "difficulty": "Advanced",
       "description": "Sequential patterns through the major scale",
-      "alphaTex": "3.6 5.6 7.6 | 5.6 7.6 2.5 | 7.6 2.5 3.5 | 2.5 3.5 5.5",
       "alphaTex": "\\ts 3 4 :4 3.6 5.6 7.6 | 5.6 7.6 2.5 | 7.6 2.5 3.5 | 2.5 3.5 5.5 |",
       "tempo": "90-160 BPM",
       "focus": [

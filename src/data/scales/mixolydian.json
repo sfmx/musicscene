@@ -76,7 +76,6 @@
         "position": "Open Position (G Mixolydian)",
         "description": "Perfect for blues and rock in the key of G. Root on 6th string 3rd fret, flat 7th easily accessible.",
         "fretDiagram": "Open strings and first 3 frets, strings 6-2",
-        "alphaTex": ":8 3.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 | :4 2.3 0.2 1.2 3.2 |",
         "alphaTex": ":4 3.6 0.5 2.5 3.5 | 0.4 2.4 3.4 0.3 | 2.3 0.2 1.2 3.2 | 3.2.1 |",
         "applications": [
           "blues guitar",
@@ -90,7 +89,6 @@
         "position": "5th Position (A Mixolydian)",
         "description": "Rock and blues favorite, moveable pattern starting from 5th fret on low E string",
         "fretDiagram": "5th-9th frets, box pattern",
-        "alphaTex": ":8 5.6 7.6 9.6 5.5 7.5 9.5 5.4 7.4 | :4 5.3 7.3 5.2 7.2 |",
         "alphaTex": ":4 5.6 7.6 9.6 5.5 | 7.5 9.5 5.4 7.4 | 5.3 7.3 5.2 7.2 | 5.1.1 |",
         "applications": [
           "rock solos",
@@ -104,7 +102,6 @@
         "position": "Open/2nd Position (D Mixolydian)",
         "description": "Country and folk applications, comfortable for fingerpicking and hybrid picking",
         "fretDiagram": "Open position to 4th fret, strings 4-1",
-        "alphaTex": ":8 0.4 2.4 4.4 0.3 2.3 4.3 0.2 2.2 | :4 3.2 0.1 2.1 3.1 |",
         "alphaTex": ":4 0.4 2.4 4.4 0.3 | 2.3 4.3 1.2 3.2 | 0.1 2.1 3.1 5.1 | 3.1.1 |",
         "applications": [
           "country guitar",
@@ -318,49 +315,64 @@
   ],
   "famousSongs": [
     {
-      "title": "Fire on the Mountain",
-      "artist": "Grateful Dead",
-      "key": "A Mixolydian",
-      "genre": "Rock/Jam",
-      "usage": "Classic jam built entirely on A mixolydian, perfect example of modal rock jamming",
-      "difficulty": "Intermediate",
-      "learningValue": "Perfect example of extended mixolydian modal improvisation"
-    },
-    {
+      "slug": "sweet-home-alabama",
       "title": "Sweet Home Alabama",
       "artist": "Lynyrd Skynyrd",
-      "key": "G Mixolydian",
+      "key": "D Mixolydian",
       "genre": "Southern Rock",
-      "usage": "Iconic Southern rock anthem using mixolydian progressions (D-C-G movement)",
-      "difficulty": "Beginner",
-      "learningValue": "Shows how mixolydian creates the quintessential Southern rock sound"
+      "usage": "The ultimate D-C-G progression (I-bVII-IV) driven by the flat 7th (C natural) creating a classic Southern rock groove",
+      "difficulty": "Intermediate",
+      "learningValue": "Mastering the I-bVII-IV progression, hybrid picking, and bluesy fills around dominant chords"
     },
     {
+      "slug": "norwegian-wood",
       "title": "Norwegian Wood",
       "artist": "The Beatles",
       "key": "E Mixolydian",
       "genre": "Folk Rock",
-      "usage": "Mixolydian melody over folk progression, sophisticated modal pop writing",
+      "usage": "George Harrison's sitar and acoustic guitar melody in 6/8 time centered on the flattened 7th degree (D natural in E)",
       "difficulty": "Beginner",
-      "learningValue": "Demonstrates modal harmony in popular music songwriting"
+      "learningValue": "6/8 strumming, major-with-flat-7th melodic phrasing, and drone note accompaniment"
     },
     {
-      "title": "Sympathy for the Devil",
-      "artist": "The Rolling Stones",
-      "key": "E Mixolydian",
+      "slug": "crossroads",
+      "title": "Crossroads",
+      "artist": "Cream",
+      "key": "A Mixolydian",
+      "genre": "Blues Rock",
+      "usage": "Clapton combines dominant 7th chord arpeggios and Mixolydian runs over high-tempo 12-bar blues changes",
+      "difficulty": "Advanced",
+      "learningValue": "Mixing major 3rds with minor pentatonic and dominant 7th arpeggios over fast blues"
+    },
+    {
+      "slug": "dont-stop-believin",
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "key": "E Mixolydian / Major",
       "genre": "Rock",
-      "usage": "Rolling Stones classic showcasing the bluesy, dominant mixolydian sound",
+      "usage": "Soaring lead guitar accents that borrow Mixolydian dominant colors over the driving chord sequence",
       "difficulty": "Intermediate",
-      "learningValue": "Shows mixolydian's connection to blues-rock energy"
+      "learningValue": "Integrating Mixolydian melodic inflections into anthemic stadium rock leads"
     },
     {
-      "title": "Cinnamon Girl",
-      "artist": "Neil Young",
-      "key": "D Mixolydian",
-      "genre": "Rock",
-      "usage": "Simple but powerful mixolydian riff-based rock song",
+      "slug": "tom-sawyer",
+      "title": "Tom Sawyer",
+      "artist": "Rush",
+      "key": "E Mixolydian",
+      "genre": "Progressive Rock",
+      "usage": "Alex Lifeson's heavy synth-and-guitar power groove emphasizing the flattened 7th (D) in odd 7/8 time sections",
+      "difficulty": "Advanced",
+      "learningValue": "Odd meter rhythm counting, dominant tonal centers, and abrasive chord voicings"
+    },
+    {
+      "slug": "sunshine-of-your-love",
+      "title": "Sunshine of Your Love",
+      "artist": "Cream",
+      "key": "D Mixolydian / Blues",
+      "genre": "Psychedelic Rock",
+      "usage": "Dominant 7th blues-rock tonality driven by the flat 7th and blue notes in unison guitar-bass riffs",
       "difficulty": "Beginner",
-      "learningValue": "Demonstrates how a single mixolydian riff can drive an entire song"
+      "learningValue": "Heavy rock riffing using dominant modal scale degrees"
     }
   ],
   "practiceExercises": [
@@ -369,7 +381,6 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "Practice the G mixolydian scale ascending and descending, focusing on the flat 7th that defines the mode",
-      "alphaTex": "3.6 0.5 2.5 3.5 0.4 2.4 3.4 1.3 | 1.3 3.4 2.4 0.4 3.5 2.5 0.5 3.6",
       "alphaTex": ":4 3.6 0.5 2.5 3.5 | 0.4 2.4 3.4 1.3 | 1.3 3.4 2.4 0.4 | 3.5 2.5 0.5 3.6 | 3.6.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -389,7 +400,6 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Emphasize the flat 7th interval to hear and internalize the mixolydian character over dominant 7th chords",
-      "alphaTex": "3.6 1.3 1.3 3.6 | 0.5 1.3 1.3 0.5 | 2.5 1.3 1.3 2.5 | 3.6 3.6 3.6 3.6",
       "alphaTex": ":4 3.6 1.3 1.3 3.6 | 0.5 1.3 1.3 0.5 | 2.5 1.3 1.3 2.5 | 3.6 3.6 3.6 3.6 |",
       "tempo": "70-110 BPM",
       "focus": [
@@ -409,7 +419,6 @@
       "type": "Musical",
       "difficulty": "Intermediate",
       "description": "Classic mixolydian blues rock phrase combining scale runs with idiomatic bends and rhythmic variation",
-      "alphaTex": "3.6 0.5 2.5 0.4 3.4 1.3 | 2.3 0.2 1.2 3.2 1.3 | 3.4 2.4 0.5 | 3.6 3.6 3.6 3.6",
       "alphaTex": ":4 3.6 0.5 2.5 0.4 | 3.4 1.3 2.3 0.2 | 1.2 3.2 1.3 3.4 | 2.4 0.5 3.6 3.6 | 3.6.1 |",
       "tempo": "80-130 BPM",
       "focus": [
@@ -429,7 +438,6 @@
       "type": "Ear Training",
       "difficulty": "Beginner",
       "description": "Compare mixolydian with the major scale to hear how the flat 7th creates the dominant, bluesy character",
-      "alphaTex": "3.6 0.5 2.5 3.5 0.4 2.4 3.4 1.3 | 3.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3",
       "alphaTex": ":4 3.6 0.5 2.5 3.5 | 0.4 2.4 3.4 1.3 | 3.6 0.5 2.5 3.5 | 0.4 2.4 3.4 0.3 | 0.3.1 |",
       "tempo": "60-100 BPM",
       "focus": [

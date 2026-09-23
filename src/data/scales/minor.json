@@ -311,49 +311,64 @@
   ],
   "famousSongs": [
     {
+      "slug": "stairway-to-heaven",
       "title": "Stairway to Heaven",
       "artist": "Led Zeppelin",
       "key": "A Minor",
       "genre": "Rock",
-      "usage": "Opening section and emotional build",
+      "usage": "Classic natural minor chord progression (Am-G-F-G) and iconic soloing using full natural minor alongside minor pentatonic",
       "difficulty": "Intermediate",
-      "learningValue": "Classic minor progression and arpeggios"
+      "learningValue": "Essential minor chord voice-leading, fingerpicking, and natural minor phrasing"
     },
     {
-      "title": "House of the Rising Sun",
-      "artist": "The Animals",
-      "key": "A Minor",
-      "genre": "Folk Rock",
-      "usage": "Entire song in natural minor",
-      "difficulty": "Beginner",
-      "learningValue": "Perfect introduction to minor progressions"
+      "slug": "hotel-california",
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "key": "B Minor",
+      "genre": "Rock",
+      "usage": "Legendary B natural minor progression (Bm-F#-A-E-G-D-Em-F#) with harmonious twin guitar soloing and arpeggios",
+      "difficulty": "Intermediate",
+      "learningValue": "Minor key harmonic motion, arpeggio integration, and harmonized melodic lines"
     },
     {
-      "title": "Mad World",
-      "artist": "Gary Jules / Tears for Fears",
+      "slug": "comfortably-numb",
+      "title": "Comfortably Numb",
+      "artist": "Pink Floyd",
+      "key": "B Minor",
+      "genre": "Progressive Rock",
+      "usage": "David Gilmour's towering B natural minor solos highlighting expressive bending, vibrato, and emotional scale tone targeting",
+      "difficulty": "Advanced",
+      "learningValue": "Mastery of emotional bending, sustained tone, and natural minor expressive phrasing"
+    },
+    {
+      "slug": "crazy-train",
+      "title": "Crazy Train",
+      "artist": "Ozzy Osbourne",
+      "key": "F# Minor",
+      "genre": "Heavy Metal",
+      "usage": "Randy Rhoads' legendary intro riff built entirely on the F# natural minor scale along the A string",
+      "difficulty": "Intermediate",
+      "learningValue": "Pedal point riffing, string skipping, and precision alternate picking in natural minor"
+    },
+    {
+      "slug": "zombie",
+      "title": "Zombie",
+      "artist": "The Cranberries",
       "key": "E Minor",
-      "genre": "Alternative",
-      "usage": "Haunting minor melody and harmony",
+      "genre": "Grunge / Alternative",
+      "usage": "Driving E natural minor chord progression (Em-C-G-D) with heavy distorted dynamics and atmospheric guitar layers",
       "difficulty": "Beginner",
-      "learningValue": "Emotional expression in minor keys"
+      "learningValue": "Four-chord natural minor rhythm mastery and dynamics control"
     },
     {
-      "title": "Losing My Religion",
-      "artist": "R.E.M.",
-      "key": "A Minor",
-      "genre": "Alternative Rock",
-      "usage": "Arpeggiated minor progressions",
-      "difficulty": "Intermediate",
-      "learningValue": "Mandolin-style arpeggios in minor"
-    },
-    {
-      "title": "Scarred",
-      "artist": "Papa Roach",
-      "key": "D Minor",
-      "genre": "Nu Metal",
-      "usage": "Heavy minor progressions and emotional intensity",
-      "difficulty": "Intermediate",
-      "learningValue": "Modern rock minor applications"
+      "slug": "all-along-the-watchtower",
+      "title": "All Along the Watchtower",
+      "artist": "Jimi Hendrix",
+      "key": "C# Minor",
+      "genre": "Rock",
+      "usage": "Timeless i-VII-VI descending minor progression (C#m-B-A) with incendiary natural minor lead guitar storytelling",
+      "difficulty": "Advanced",
+      "learningValue": "Descending natural minor chord progressions and varied guitar solo textures"
     }
   ],
   "practiceExercises": [
@@ -362,7 +377,6 @@
       "type": "Technical",
       "difficulty": "Beginner",
       "description": "Ascending and descending natural minor scales",
-      "alphaTex": "5.6 7.6 0.5 2.5 3.5 0.4 2.4 3.4 0.3 2.3 1.2 3.2 0.1 1.1 3.1 | 3.1 1.1 0.1 3.2 1.2 2.3 0.3 3.4 2.4 0.4 3.5 2.5 0.5 7.6 5.6",
       "alphaTex": ":4 5.6 7.6 0.5 2.5 | 3.5 0.4 2.4 3.4 | 0.3 2.3 1.2 3.2 | 0.1 1.1 3.1 5.1 | 5.1.1 | 3.1 1.1 0.1 3.2 | 1.2 2.3 0.3 3.4 | 2.4 0.4 3.5 2.5 | 0.5 7.6 5.6 5.6 | 5.6.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -382,7 +396,6 @@
       "type": "Technical",
       "difficulty": "Intermediate",
       "description": "Playing the scale in 3rds, 4ths, and 5ths",
-      "alphaTex": "5.6 0.5 7.6 2.5 0.5 3.5 2.5 0.4 | 5.6 3.5 7.6 0.4 0.5 2.4 2.5 3.4",
       "alphaTex": ":4 5.6 0.5 7.6 2.5 | 0.5 3.5 2.5 0.4 | 5.6 3.5 7.6 0.4 | 0.5 2.4 2.5 3.4 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -402,7 +415,6 @@
       "type": "Musical",
       "difficulty": "Intermediate",
       "description": "Playing diatonic chord arpeggios from the natural minor scale",
-      "alphaTex": "(0.5 3.4 0.3) (2.4 1.3 2.2) (0.4 2.3 0.2) (0.5 3.4 0.3)",
       "alphaTex": ":2 (0.5 3.4 0.3) (2.4 1.3 2.2) | :2 (0.4 2.3 0.2) (0.5 3.4 0.3) |",
       "tempo": "70-110 BPM",
       "focus": [
@@ -422,7 +434,6 @@
       "type": "Musical",
       "difficulty": "Advanced",
       "description": "Sequential patterns through the minor scale",
-      "alphaTex": "5.6 7.6 0.5 | 7.6 0.5 2.5 | 0.5 2.5 3.5 | 2.5 3.5 0.4",
       "alphaTex": "\\ts 3 4 :4 5.6 7.6 0.5 | 7.6 0.5 2.5 | 0.5 2.5 3.5 | 2.5 3.5 0.4 |",
       "tempo": "90-160 BPM",
       "focus": [

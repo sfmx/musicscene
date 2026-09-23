@@ -342,58 +342,64 @@
   ],
   "famousSongs": [
     {
+      "slug": "stairway-to-heaven",
       "title": "Stairway to Heaven",
       "artist": "Led Zeppelin",
-      "key": "A minor pentatonic",
-      "genre": "Rock",
-      "usage": "Jimmy Page's iconic solo heavily uses minor pentatonic",
-      "difficulty": "Advanced",
-      "learningValue": "Perfect example of emotional rock expression"
+      "key": "A Minor",
+      "genre": "Classic Rock",
+      "usage": "Jimmy Page's legendary guitar solo, widely regarded as the pinnacle of A minor pentatonic Box 1 phrasing and dynamics",
+      "difficulty": "Intermediate",
+      "learningValue": "Minor pentatonic phrasing, full-step bends, fast pull-off triplets, and climactic phrasing"
     },
     {
+      "slug": "sweet-child-o-mine",
       "title": "Sweet Child O' Mine",
       "artist": "Guns N' Roses",
-      "key": "Various minor pentatonic",
+      "key": "Eb Minor",
       "genre": "Hard Rock",
-      "usage": "Slash's memorable solos rooted in minor pentatonic",
+      "usage": "Slash's virtuosic wah-soaked solo moving fluidly through all 5 positions of minor pentatonic at high velocity",
       "difficulty": "Advanced",
-      "learningValue": "Modern rock guitar at its finest"
+      "learningValue": "Connecting all 5 pentatonic box shapes across the neck with expressive bends and wah control"
     },
     {
-      "title": "B.B. King Blues Style",
-      "artist": "B.B. King",
-      "key": "Various",
-      "genre": "Blues",
-      "usage": "Master of minor pentatonic expression",
+      "slug": "back-in-black",
+      "title": "Back in Black",
+      "artist": "AC/DC",
+      "key": "E Minor",
+      "genre": "Hard Rock",
+      "usage": "Angus Young's definitive hard rock intro riff and solos demonstrating the punch and bite of open and 12th-fret E minor pentatonic",
+      "difficulty": "Beginner",
+      "learningValue": "Rhythmic punch, microtonal blues curls on the minor 3rd, and crisp staccato phrasing"
+    },
+    {
+      "slug": "enter-sandman",
+      "title": "Enter Sandman",
+      "artist": "Metallica",
+      "key": "E Minor",
+      "genre": "Heavy Metal",
+      "usage": "Kirk Hammett's aggressive pentatonic soloing and James Hetfield's heavy palm-muted E minor pentatonic main riff",
       "difficulty": "Intermediate",
-      "learningValue": "Shows the emotional power of simple scales"
+      "learningValue": "Tight palm muting, heavy rhythm syncopation, and fast pentatonic runs"
     },
     {
-      "title": "Alternative Rock Songs",
-      "artist": "Nirvana, Pearl Jam, Soundgarden",
-      "key": "Various",
-      "genre": "Alternative Rock",
-      "usage": "Grunge and alternative foundation",
+      "slug": "paranoid",
+      "title": "Paranoid",
+      "artist": "Black Sabbath",
+      "key": "E Minor",
+      "genre": "Heavy Metal",
+      "usage": "Tony Iommi's textbook E minor pentatonic 12th-fret box solo featuring classic blues-rock hammer-on and pull-off vocabulary",
       "difficulty": "Intermediate",
-      "learningValue": "Raw, powerful expression with simple scales"
+      "learningValue": "Box 1 rapid repetition, precision vibrato, and early heavy metal lead phrasing"
     },
     {
-      "title": "Hard Rock/Metal Anthems",
-      "artist": "Black Sabbath, Metallica, Iron Maiden",
-      "key": "Various",
-      "genre": "Metal",
-      "usage": "Power and aggression in heavy music",
-      "difficulty": "Advanced",
-      "learningValue": "Heavy, aggressive applications"
-    },
-    {
-      "title": "Modern Blues Rock",
-      "artist": "Joe Bonamassa, Gary Clark Jr.",
-      "key": "Various",
+      "slug": "layla",
+      "title": "Layla",
+      "artist": "Derek and the Dominos",
+      "key": "D Minor",
       "genre": "Blues Rock",
-      "usage": "Contemporary blues expression",
-      "difficulty": "Advanced",
-      "learningValue": "Modern technical approach to traditional blues"
+      "usage": "Duane Allman and Eric Clapton's soaring signature intro riff and twin guitar harmonies based in D minor pentatonic",
+      "difficulty": "Intermediate",
+      "learningValue": "Dual-guitar harmony, fast hammer-pull sequences, and expressive vocal phrasing"
     }
   ],
   "practiceExercises": [
@@ -402,7 +408,6 @@
       "type": "Scale Practice",
       "difficulty": "Beginner",
       "description": "Practice the A minor pentatonic box pattern ascending and descending",
-      "alphaTex": "5.6 8.6 5.5 7.5 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 5.2 5.3 7.4 5.4 7.5 5.5 8.6 5.6",
       "alphaTex": ":4 5.6 8.6 5.5 7.5 | 5.4 7.4 5.3 7.3 | 5.2 8.2 5.1 8.1 | 5.1.1 | 8.1 5.1 8.2 5.2 | 7.3 5.3 7.4 5.4 | 7.5 5.5 8.6 5.6 | 5.6.1 |",
       "tempo": "60-120 BPM",
       "focus": [
@@ -422,7 +427,6 @@
       "type": "Licks & Phrases",
       "difficulty": "Intermediate",
       "description": "Essential rock guitar phrase with bends",
-      "alphaTex": "5.4 7.4 5.3 7.3 5.3 7.4 5.4 8.5 5.5 7.5 5.5",
       "alphaTex": ":4 5.4 7.4 5.3 7.3 | 5.3 7.4 5.4 8.5 | 5.5 7.5 5.5.2 |",
       "tempo": "80-140 BPM",
       "focus": [
@@ -442,7 +446,6 @@
       "type": "Musical Expression",
       "difficulty": "Intermediate",
       "description": "Expressive blues phrases with bends and vibrato",
-      "alphaTex": "8.6 8.6 5.5 7.5 5.5 7.4 5.4 7.3 5.3 8.2",
       "alphaTex": ":4 8.6 8.6 5.5 7.5 | 5.5 7.4 5.4 7.3 | 5.3 8.2 8.2.2 |",
       "tempo": "70-120 BPM",
       "focus": [

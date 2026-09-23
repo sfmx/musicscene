@@ -172,7 +172,7 @@ export default function ScaleAnalysisPageTemplate({
           <LeadMagnetBanner />
           <ScaleHarmonicSection scaleData={scaleData} />
           <ScaleGenreSection scaleData={scaleData} />
-          <ScaleSongsSection scaleData={scaleData} />
+          <ScaleSongsSection scaleData={scaleData} scaleSlug={scaleSlug} />
           <ScalePracticeSection scaleData={scaleData} />
           <ScaleRelatedSection scaleData={scaleData} />
 
@@ -183,7 +183,9 @@ export default function ScaleAnalysisPageTemplate({
             />
           )}
 
-          <SongsUsingThis type="scale" slug={scaleSlug} />
+          <div id="songs-using-this">
+            <SongsUsingThis type="scale" slug={scaleSlug} />
+          </div>
           <AdSlot slotId="content-bottom" format="banner" />
           <RelatedContentSection contentId={`scale:${scaleSlug}`} />
           <ScaleLearningPathSection scaleData={scaleData} />
