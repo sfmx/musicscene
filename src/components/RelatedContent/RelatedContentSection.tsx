@@ -37,14 +37,16 @@ function ContentCard({ entry }: { entry: ContentEntry }) {
     tagBg: 'bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300',
   };
 
+  const targetUrl = entry.url.endsWith('/') ? entry.url : `${entry.url}/`;
+
   return (
-    <div className={`relative bg-white dark:bg-slate-900/90 rounded-xl p-4 border border-slate-200 dark:border-slate-800 ${colors.border} hover:bg-slate-50 dark:hover:bg-slate-850 transition-all duration-200 group flex flex-col justify-between shadow-sm`}>
+    <div className={`relative bg-white dark:bg-slate-900/90 rounded-xl p-4 border border-slate-200 dark:border-slate-800 ${colors.border} hover:bg-slate-50 dark:hover:bg-slate-850 transition-all duration-200 group flex flex-col justify-between shadow-sm cursor-pointer`}>
       <Link
-        href={entry.url}
-        className="absolute inset-0 rounded-xl z-0"
+        href={targetUrl}
+        className="absolute inset-0 rounded-xl z-10"
         aria-label={entry.title}
       />
-      <div className="relative z-10 flex items-start gap-2.5">
+      <div className="relative z-0 pointer-events-none flex items-start gap-2.5">
         <span className="text-xl p-1.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex-shrink-0 group-hover:scale-105 transition-transform">
           {TYPE_ICONS[entry.contentType]}
         </span>
@@ -65,7 +67,7 @@ function ContentCard({ entry }: { entry: ContentEntry }) {
           {entry.tags.slice(0, 3).map((tag) => (
             <Link
               key={tag}
-              href={`/lessons/tags/${tag}`}
+              href={`/lessons/tags/${tag}/`}
               className="text-[10px] bg-slate-100 dark:bg-slate-950 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-2 py-0.5 rounded border border-slate-200 dark:border-slate-800 transition-colors"
             >
               {getTagLabel(tag)}

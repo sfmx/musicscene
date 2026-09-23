@@ -57,12 +57,13 @@ export default function SongsUsingThis({ type, slug }: Props) {
         {songs.map(song => {
           const songSlug = song.slug || song.id.replace('song-analysis:', '');
           const hasCuratedBreakdown = hasCuratedHarmonicBreakdown(songSlug);
+          const baseSongUrl = song.url.endsWith('/') ? song.url : `${song.url}/`;
           const targetUrl =
             type === 'progression'
-              ? `${song.url}#chord-progressions`
+              ? `${baseSongUrl}#chord-progressions`
               : hasCuratedBreakdown
-              ? `${song.url}#why-it-works`
-              : song.url;
+              ? `${baseSongUrl}#why-it-works`
+              : baseSongUrl;
 
           return (
             <Link

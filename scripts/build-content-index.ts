@@ -373,15 +373,15 @@ function extractChordType(chordName: string): string | null {
 
 function buildUrl(contentType: ContentType, slug: string, category?: string): string {
   switch (contentType) {
-    case 'chord': return `/lessons/theory/chords/${slug}`;
-    case 'scale': return `/lessons/theory/scales/${slug}`;
-    case 'interval': return `/lessons/theory/intervals/${slug}`;
-    case 'mode': return `/lessons/theory/modes/${slug}`;
-    case 'progression': return `/lessons/theory/progressions/${slug}`;
-    case 'song-analysis': return `/lessons/songs/song-analysis/${slug}`;
-    case 'practice': return `/lessons/practice/${category}/${slug}`;
-    case 'gear-lesson': return `/lessons/gear/${category}/${slug}`;
-    case 'song-lesson': return `/lessons/songs/${category}/${slug}`;
+    case 'chord': return `/lessons/theory/chords/${slug}/`;
+    case 'scale': return `/lessons/theory/scales/${slug}/`;
+    case 'interval': return `/lessons/theory/intervals/${slug}/`;
+    case 'mode': return `/lessons/theory/modes/${slug}/`;
+    case 'progression': return `/lessons/theory/progressions/${slug}/`;
+    case 'song-analysis': return `/lessons/songs/song-analysis/${slug}/`;
+    case 'practice': return `/lessons/practice/${category}/${slug}/`;
+    case 'gear-lesson': return `/lessons/gear/${category}/${slug}/`;
+    case 'song-lesson': return `/lessons/songs/${category}/${slug}/`;
     default: return '/';
   }
 }
@@ -864,7 +864,7 @@ function scanSongLessons(): ContentEntry[] {
       contentType: 'song-lesson',
       slug: 'analysis-method',
       title: d.pageTitle ?? 'Song Analysis Method',
-      url: '/lessons/songs/analysis-method',
+      url: '/lessons/songs/analysis-method/',
       tags: ['song-analysis', 'lesson', 'song-structure'],
     });
   }
