@@ -2,249 +2,564 @@
   "slug": "construction",
   "category": "lead",
   "pageTitle": "Solo Construction & Development",
-  "subtitle": "Understand how to build compelling solos using motivic development, tension, and resolution.",
-  "heroGradient": "bg-gradient-to-r from-indigo-50 to-purple-50",
-  "backLink": { "href": "/lessons/songs/lead", "label": "Back to Lead Guitar & Solos" },
+  "subtitle": "Master the architecture of memorable solos through narrative arc, motivic development, tension dynamics, and classic song breakdowns.",
+  "heroGradient": "bg-gradient-to-r from-amber-500/10 via-purple-500/10 to-indigo-500/10",
+  "backLink": {
+    "href": "/lessons/songs/lead",
+    "label": "Back to Lead Guitar & Solos"
+  },
   "introduction": {
-    "title": "Architecture of a Great Solo",
-    "text": "Like a great speech or story, a memorable solo has clear structure: introduction, development, climax, and resolution. Every solo should take the listener on an emotional journey from start to finish, with peaks and valleys of intensity.",
+    "title": "The Architecture of a Great Solo",
+    "text": "The difference between an amateur solo and an enduring classic is not speed or technical difficulty—it is architecture. A great solo is a complete musical composition within a song, possessing an unmistakable narrative trajectory: an introduction that grabs attention, motivic development that establishes continuity, a carefully constructed climb to an emotional climax, and a satisfying harmonic resolution. When master improvisers like David Gilmour, Brian May, or B.B. King solo, they don't simply reel off scale patterns; they construct an emotional argument where every note earns its right to exist.",
+    "quote": "A great solo isn't a demonstration of what you can play—it's an emotional argument where every phrase speaks with intention and every silence breathes.",
     "columns": [
       {
-        "title": "Structure Creates Impact",
-        "text": "Formula: Simple theme -> Development -> Climax -> Resolution"
+        "title": "The Golden Ratio of Climax",
+        "text": "Across classical symphonies and legendary rock solos, the emotional peak almost always occurs between 65% and 75% into the solo's duration. This leaves enough room to establish themes and build tension, with sufficient time for a cathartic release."
       },
       {
-        "title": "Emotional Journey",
-        "text": "Elements: Dynamics, register, rhythmic activity, harmonic complexity"
+        "title": "Vocal Phrasing & Respiration",
+        "text": "The human brain is wired to respond to the cadence of the human voice. The most memorable lead lines mirror conversational rhythm: short antecedent questions, brief breathing pauses, and longer conclusive statements."
+      },
+      {
+        "title": "Harmonic Gravity",
+        "text": "Great solos outline the chord progression rather than floating aimlessly over it. Landing on chord tones (3rds, 7ths, and color extensions) on strong downbeats grounds the melody and gives listeners a visceral sense of arrival."
       }
     ]
   },
   "sections": [
     {
-      "title": "Common Solo Structures",
+      "title": "Solo Architectural Frameworks",
       "bgColor": "bg-white",
-      "borderColor": "border-gray-200",
-      "layout": "list",
+      "borderColor": "border-slate-200",
+      "layout": "grid-2",
       "cards": [
         {
-          "title": "ABA Form",
-          "description": "Statement - Development - Restatement",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "The Three-Act Narrative Arc",
+          "description": "The gold standard of long-form solo construction, mirrored in cinema, storytelling, and classic rock anthems.",
+          "badge": {
+            "text": "Essential Form",
+            "color": "blue"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Application", "value": "Present a theme, develop/vary it, return to original theme" },
-            { "label": "Example", "value": "Many jazz standards, \"Stairway to Heaven\" solo" }
+            {
+              "label": "Act I (Exposition)",
+              "value": "Introduce a clear, singable 2-to-4 note motif in the middle or lower register. Establish the harmonic key center and groove."
+            },
+            {
+              "label": "Act II (Conflict & Escalation)",
+              "value": "Vary the motif using rhythmic displacement, sequence, and increased picking density. Shift registers upward."
+            },
+            {
+              "label": "Act III (Climax & Resolution)",
+              "value": "Reach the fretboard ceiling with sustained high bends, rapid triplet cascades, and resolve down to the song's key center."
+            },
+            {
+              "label": "Hallmark Examples",
+              "value": "Pink Floyd - \"Comfortably Numb\" (Outro Solo), Guns N' Roses - \"November Rain\""
+            }
           ],
-          "items": ["A: Main theme/motif", "B: Variation or new material", "A: Return to main theme"]
+          "items": [
+            "Start with lower register melodies to leave headroom for your high-register climax",
+            "Double note density gradually (quarter notes -> eighths -> sixteenths)",
+            "Conclude by handing back momentum cleanly to the vocal or rhythm riff"
+          ]
         },
         {
-          "title": "Linear Build",
-          "description": "Gradual increase in intensity and complexity",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "Antecedent & Consequent (Call & Response)",
+          "description": "A musical dialogue that mimics natural speech, alternating between unresolved questions and satisfying answers.",
+          "badge": {
+            "text": "Conversational",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Application", "value": "Start simple and sparse, build to climactic peak" },
-            { "label": "Example", "value": "\"Comfortably Numb\", \"November Rain\"" }
+            {
+              "label": "Call (Antecedent)",
+              "value": "An upward-inflected phrase ending on a tense chord tone (5th, 7th, 9th, or suspended 4th) leaving the ear hanging."
+            },
+            {
+              "label": "Response (Consequent)",
+              "value": "A downward-resolving or definitive phrase landing squarely on the tonic root or 3rd on a strong downbeat."
+            },
+            {
+              "label": "Octave Shift Dialogue",
+              "value": "Posing the question in the lower octave on the D and G strings, then answering an octave higher on the B and high E strings."
+            },
+            {
+              "label": "Hallmark Examples",
+              "value": "The Beatles - \"While My Guitar Gently Weeps\", B.B. King - \"The Thrill Is Gone\""
+            }
           ],
-          "items": ["Low register, simple phrases", "Mid register, more activity", "High register, complex phrases"]
+          "items": [
+            "Leave at least two beats of silence between the call and response for listener processing",
+            "Use subtle vibrato on question endings, authoritative vibrato on answer resolutions",
+            "Great for blues, soul, and vocal-centric pop solos"
+          ]
         },
         {
-          "title": "Call & Response",
-          "description": "Musical conversation between phrases",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "The Stepwise Ascent (Linear Intensity Build)",
+          "description": "A relentless, ladder-like climb up the neck that creates unstoppable momentum and visceral excitement.",
+          "badge": {
+            "text": "High Energy",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Application", "value": "Phrase poses question, next phrase answers" },
-            { "label": "Example", "value": "Blues solos, \"While My Guitar Gently Weeps\"" }
+            {
+              "label": "Box Shifting",
+              "value": "Begin in Box 1 minor pentatonic at the 5th or 7th fret, then slide into Box 2, Box 3, and finally Box 4/1 an octave higher."
+            },
+            {
+              "label": "Dynamic Swell",
+              "value": "Begin with soft fingerstyle or edge-of-pick attack, building to full-force wrist picking with overdrive boost."
+            },
+            {
+              "label": "Rhythmic Compression",
+              "value": "Phrases get shorter and closer together as tempo and register climb toward the apex."
+            },
+            {
+              "label": "Hallmark Examples",
+              "value": "Led Zeppelin - \"Stairway to Heaven\", Deep Purple - \"Highway Star\""
+            }
           ],
-          "items": ["Call phrase (question)", "Response phrase (answer)", "Continued dialogue"]
+          "items": [
+            "Plan target frets beforehand so your hand doesn't run out of room before the climax",
+            "Use slides along the G or B string as connective tissue between fretboard positions",
+            "Pairs exceptionally well with driving rhythm sections accelerating toward the outro"
+          ]
         },
         {
-          "title": "Theme & Variations",
-          "description": "Present theme, then create variations",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "Arch Form & Symmetrical Solos",
+          "description": "Solos that rise to a majestic peak in the dead center and descend gracefully back into the rhythm texture.",
+          "badge": {
+            "text": "Symmetrical",
+            "color": "purple"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Application", "value": "Take simple motif, vary rhythm, harmony, register" },
-            { "label": "Example", "value": "Classical influenced rock, progressive rock" }
+            {
+              "label": "Opening Incline",
+              "value": "Low to medium register melodic statements climbing over 4 to 8 bars."
+            },
+            {
+              "label": "Symmetric Apex",
+              "value": "A single screaming bend or harmonized line held across multiple bars at the exact midpoint."
+            },
+            {
+              "label": "Mirror Decline",
+              "value": "Descending arpeggios or relaxing phrase lengths tapering into quiet chord swells."
+            },
+            {
+              "label": "Hallmark Examples",
+              "value": "Queen - \"Bohemian Rhapsody\", Steely Dan - \"Kid Charlemagne\""
+            }
           ],
-          "items": ["Original theme", "Rhythmic variation", "Harmonic variation", "Register variation"]
+          "items": [
+            "Ideal for radio edits and pop ballads with strict 8-bar or 16-bar solo limits",
+            "Prevents the common pitfall of staying high on the neck for too long after the climax",
+            "Leaves the listener feeling emotionally cleansed and complete"
+          ]
         }
       ]
     },
     {
-      "title": "Motivic Development Techniques",
-      "bgColor": "bg-green-50",
-      "borderColor": "border-green-200",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Sequence",
-          "description": "Repeat motif at different pitch levels",
-          "borderColor": "border-green-200",
-          "bgColor": "bg-green-50",
-          "fields": [
-            { "label": "Example", "value": "Play same phrase pattern starting on different scale degrees" },
-            { "label": "Musical Effect", "value": "Creates unity while providing forward motion" }
-          ]
-        },
-        {
-          "title": "Inversion",
-          "description": "Flip the motif upside down",
-          "borderColor": "border-green-200",
-          "bgColor": "bg-green-50",
-          "fields": [
-            { "label": "Example", "value": "If original goes up 3rd, down 2nd, inversion goes down 3rd, up 2nd" },
-            { "label": "Musical Effect", "value": "Provides variation while maintaining recognizable relationship" }
-          ]
-        },
-        {
-          "title": "Rhythmic Displacement",
-          "description": "Change when the motif starts in the measure",
-          "borderColor": "border-green-200",
-          "bgColor": "bg-green-50",
-          "fields": [
-            { "label": "Example", "value": "Move motif from beat 1 to beat 2, or start on upbeat" },
-            { "label": "Musical Effect", "value": "Creates syncopation and rhythmic interest" }
-          ]
-        },
-        {
-          "title": "Augmentation/Diminution",
-          "description": "Change the note durations of the motif",
-          "borderColor": "border-green-200",
-          "bgColor": "bg-green-50",
-          "fields": [
-            { "label": "Example", "value": "Play same notes twice as fast or twice as slow" },
-            { "label": "Musical Effect", "value": "Maintains melodic content while changing energy level" }
-          ]
-        },
-        {
-          "title": "Modal Transformation",
-          "description": "Change the mode/scale context of the motif",
-          "borderColor": "border-green-200",
-          "bgColor": "bg-green-50",
-          "fields": [
-            { "label": "Example", "value": "Play major motif in minor, or add chromatic alterations" },
-            { "label": "Musical Effect", "value": "Maintains structure while changing emotional color" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Creating Tension and Resolution",
+      "title": "6 Core Motivic Development Formulas",
       "bgColor": "bg-white",
-      "borderColor": "border-gray-200",
-      "layout": "list",
+      "borderColor": "border-slate-200",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Harmonic Tension",
-          "description": "Tension and resolution is what makes music emotionally compelling. Without tension, music sounds boring. Without resolution, it sounds chaotic.",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "1. Rhythmic Displacement",
+          "description": "Keep the exact same sequence of pitches, but shift the starting beat by an eighth note or quarter note.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Non-chord tones", "value": "Use notes outside current chord -> Resolve to chord tones" },
-            { "label": "Chromatic approach", "value": "Approach chord tones from half-step away -> Land on chord tone" },
-            { "label": "Suspended notes", "value": "Use 4ths and 2nds instead of 3rds -> Resolve suspension to 3rd" }
+            {
+              "label": "Original Motif",
+              "value": "A - C - D starting on beat 1"
+            },
+            {
+              "label": "Displaced Motif",
+              "value": "A - C - D starting on the \"and\" of beat 2"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Creates syncopated friction and surprise without losing melodic familiarity"
+            }
           ]
         },
         {
-          "title": "Rhythmic Tension",
-          "description": "Creating rhythmic contrast and surprise through timing manipulation.",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "2. Tonal & Real Sequence",
+          "description": "Repeat the contour and rhythm of a motif starting from a different scale degree or chord tone.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Syncopation", "value": "Accent off-beats or weak beats -> Return to strong beat emphasis" },
-            { "label": "Cross-rhythms", "value": "Play in different time feel than backing -> Realign with main rhythm" },
-            { "label": "Metric modulation", "value": "Temporarily suggest different tempo -> Return to original tempo feel" }
+            {
+              "label": "Scale Sequence",
+              "value": "Play motif on degrees 1-2-3, then repeat on 2-3-4, then 3-4-5"
+            },
+            {
+              "label": "Chord Tracking",
+              "value": "Shift motif from C major triad notes to F major triad notes when chord changes"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Gives the listener a sense of logical progression and storytelling clarity"
+            }
           ]
         },
         {
-          "title": "Register Tension",
-          "description": "Using pitch range to create and resolve musical tension.",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "3. Augmentation & Diminution",
+          "description": "Stretch or compress the rhythmic values of the theme while retaining the melodic intervals.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "High register", "value": "Move to highest frets for intensity -> Return to middle register" },
-            { "label": "Wide leaps", "value": "Large interval jumps create surprise -> Stepwise motion provides rest" },
-            { "label": "Range extremes", "value": "Use very high and very low notes -> Return to comfortable range" }
+            {
+              "label": "Augmentation",
+              "value": "Double note lengths (quarter notes become half notes) for a soaring, anthem feel"
+            },
+            {
+              "label": "Diminution",
+              "value": "Halve note lengths (eighth notes become sixteenths) to inject sudden urgency"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Creates dramatic shifts in perceived tempo over a steady drum groove"
+            }
+          ]
+        },
+        {
+          "title": "4. Truncation & Extension",
+          "description": "Edit the length of your motif by clipping its tail short or appending decorative runs.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Truncation",
+              "value": "Play just the first two notes and stop abruptly, creating suspense"
+            },
+            {
+              "label": "Extension",
+              "value": "Take the final note of the motif and launch it into a descending pentatonic run"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Keeps the theme fresh while preventing repetitive predictability"
+            }
+          ]
+        },
+        {
+          "title": "5. Contour Inversion",
+          "description": "Flip the vertical direction of your motif: intervals that moved upward now move downward.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Original Contour",
+              "value": "Up a minor 3rd, up a whole step (e.g., A -> C -> D)"
+            },
+            {
+              "label": "Inverted Contour",
+              "value": "Down a minor 3rd, down a whole step (e.g., D -> B -> A)"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Sounds intimately related to the original theme while offering harmonic contrast"
+            }
+          ]
+        },
+        {
+          "title": "6. Intervallic Expansion",
+          "description": "Take a tight stepwise motif and widen the intervals into dramatic, emotional leaps.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Original Motif",
+              "value": "Stepwise motion: E -> F# -> G (2nd intervals)"
+            },
+            {
+              "label": "Expanded Motif",
+              "value": "Wide leap: E -> B -> G (5th and 6th intervals)"
+            },
+            {
+              "label": "Musical Effect",
+              "value": "Transforms an intimate melody into an epic, arena-filling statement"
+            }
           ]
         }
       ]
     },
     {
-      "title": "Step-by-Step Solo Construction",
-      "bgColor": "bg-purple-50",
-      "borderColor": "border-purple-200",
+      "title": "Managing Tension, Dissonance & Harmonic Release",
+      "bgColor": "bg-white",
+      "borderColor": "border-slate-200",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Harmonic Tension & Color Notes",
+          "description": "Moving beyond safe pentatonic roots to create exquisite emotional tension.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Targeting 3rds and 7ths",
+              "value": "Landing on the major or minor 3rd instantly signals the chord quality. 7ths provide lush, sophisticated warmth."
+            },
+            {
+              "label": "Altered Dominant Tensions",
+              "value": "Over V7 chords (e.g., G7 resolving to C), bend into the b9 (Ab), #9 (A#), or #11 (C#) before resolving down to the tonic 3rd (E)."
+            },
+            {
+              "label": "Non-Harmonic Passing Tones",
+              "value": "Chromatic passing notes on weak upbeats create forward propulsion toward chord tone downbeats."
+            }
+          ]
+        },
+        {
+          "title": "Rhythmic & Articulation Dynamics",
+          "description": "How pick attack, subdivision velocity, and physical touch manipulate excitement.",
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Subdivision Ladder",
+              "value": "Accelerate from quarter-note bends to eighth-note triplets, peaking in sixteenth-note bursts."
+            },
+            {
+              "label": "Rakes & Pick Hand Attack",
+              "value": "Raking across muted lower strings before striking your target note adds percussive impact and vocal grit."
+            },
+            {
+              "label": "Micro-tonal Bending",
+              "value": "Slow blues curls between the minor 3rd and major 3rd generate unbearable, soulful tension that resolves upon release."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Step-by-Step Solo Construction Blueprint",
+      "bgColor": "bg-white",
+      "borderColor": "border-slate-200",
       "layout": "numbered-steps",
       "cards": [
         {
-          "title": "Analyze",
-          "description": "Study chord progression, key, and song structure"
+          "number": 1,
+          "title": "Chord Progression Harmonic Map",
+          "description": "Chart out every chord in the solo section. Identify the tonic home chord, any secondary dominants, and key chord tones (especially 3rds) on strong beats 1 and 3."
         },
         {
-          "title": "Create Motif",
-          "description": "Develop 2-4 note musical idea that fits the harmony"
+          "number": 2,
+          "title": "Seed Motif Genesis",
+          "description": "Craft a short 2 to 4 note phrase that you can whistle or hum from memory. If you cannot sing it, listeners will not remember it. Anchor this as your solo's anchor theme."
         },
         {
-          "title": "Plan Structure",
-          "description": "Decide on overall form and emotional arc"
+          "number": 3,
+          "title": "Strategic Rest & Breath Mapping",
+          "description": "Mark specific measures where you will play zero notes. Leaving negative space creates anticipation and allows the rhythm section's groove to hit the listener."
         },
         {
-          "title": "Develop",
-          "description": "Use motivic techniques to create variations"
+          "number": 4,
+          "title": "The Escalation Engine",
+          "description": "Develop your motif across the next 8 to 16 bars. Use sequence, shift up the neck to higher fretboard boxes, and increase picking intensity and subdivision speed."
         },
         {
-          "title": "Build Climax",
-          "description": "Create peak moment using tension techniques"
+          "number": 5,
+          "title": "The Climactic Apex at 70%",
+          "description": "Deploy your highest register note, multi-step bend, or blistering rapid phrase at the three-quarter mark. Hit this moment with maximum dynamic attack and sustain."
         },
         {
-          "title": "Resolve",
-          "description": "Bring tension to satisfying conclusion"
+          "number": 6,
+          "title": "Catharsis & Outro Transition",
+          "description": "Descend gracefully from the apex, resolving back to the root chord tone with wide vibrato, handing the spotlight back to the vocals or main rhythm riff."
         }
       ]
     },
     {
-      "title": "Masterclass: Analyzing Great Solos",
-      "bgColor": "bg-gray-50",
-      "borderColor": "border-gray-200",
-      "layout": "list",
+      "title": "Masterclass: Anatomy of 5 Legendary Solos",
+      "bgColor": "bg-white",
+      "borderColor": "border-slate-200",
+      "layout": "grid-2",
       "cards": [
         {
-          "title": "\"Hotel California\" - Eagles (Don Felder/Joe Walsh)",
-          "description": "Dual guitar harmony building to trading solos, creating conversation between instruments",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "David Gilmour - \"Comfortably Numb\" (Pink Floyd)",
+          "description": "The ultimate benchmark in narrative pacing, tone control, and soaring emotional trajectory.",
+          "badge": {
+            "text": "Masterpiece",
+            "color": "amber"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Structure", "value": "Dual guitar harmony building to trading solos, creating conversation between instruments" },
-            { "label": "Motivic Development", "value": "Uses short melodic phrases that interweave and develop, creating unified narrative" },
-            { "label": "Climax", "value": "Builds intensity through faster note values and higher register in final section" }
+            {
+              "label": "Key & Scale",
+              "value": "B minor pentatonic / B natural minor (Aeolian)"
+            },
+            {
+              "label": "Opening Theme",
+              "value": "Launches with an assertive, crying B minor bend on the G string with wide, deliberate vibrato, followed by melodic breathing space."
+            },
+            {
+              "label": "The Climax",
+              "value": "At 70% duration, Gilmour shifts up to the 19th and 22nd frets, executing a soaring 2-step bend to the high D with rich Big Muff sustain."
+            },
+            {
+              "label": "Key Takeaway",
+              "value": "Every phrase is singable. Note selection is economical; expression comes from vibrato depth, pick-rake attacks, and dynamics."
+            }
           ]
         },
         {
-          "title": "\"Eruption\" - Van Halen",
-          "description": "Showcases different techniques in sections: tapping, tremolo picking, harmonics",
-          "borderColor": "border-gray-200",
-          "bgColor": "bg-white",
+          "title": "Brian May - \"Bohemian Rhapsody\" (Queen)",
+          "description": "An operatic composition bridging acoustic balladry into heavy metal through classical elegance.",
+          "badge": {
+            "text": "Melodic Genius",
+            "color": "purple"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
           "fields": [
-            { "label": "Structure", "value": "Showcases different techniques in sections: tapping, tremolo picking, harmonics" },
-            { "label": "Innovation", "value": "Introduced two-hand tapping as primary solo technique, not just effect" },
-            { "label": "Flow", "value": "Each section leads logically to next, despite radical technique changes" }
+            {
+              "label": "Key & Scale",
+              "value": "Bb Major / Eb Major with vocal-inspired chromatic passing tones"
+            },
+            {
+              "label": "Architecture",
+              "value": "Functions as a vocal extension rather than guitar showmanship. The solo continues Freddie Mercury's lyrical melody line."
+            },
+            {
+              "label": "Motivic Climb",
+              "value": "Uses descending stepwise sequences followed by soaring upward leaps, leading into three-part orchestrated harmony lines."
+            },
+            {
+              "label": "Key Takeaway",
+              "value": "Treat the guitar as a classical voice. Solos can introduce fresh melodies that elevate the song beyond its verse-chorus cycle."
+            }
+          ]
+        },
+        {
+          "title": "Jimmy Page - \"Stairway to Heaven\" (Led Zeppelin)",
+          "description": "The quintessential linear build, progressing from delicate melodic phrasing to an all-out hard rock frenzy.",
+          "badge": {
+            "text": "Linear Build",
+            "color": "blue"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Key & Scale",
+              "value": "A minor pentatonic with F major arpeggio targeting over the Fmaj7 chord"
+            },
+            {
+              "label": "Opening Statement",
+              "value": "A singing 4-note motif on the Fender Telecaster neck pickup with lyrical clarity over the Am - G - F chord progression."
+            },
+            {
+              "label": "The Build",
+              "value": "Page introduces repetitive pull-off triplets, cycling faster as John Bonham's drums kick into double-time overdrive."
+            },
+            {
+              "label": "Key Takeaway",
+              "value": "Matching the rhythm section's dynamic surge makes your solo feel ten times bigger than guitar technique alone."
+            }
+          ]
+        },
+        {
+          "title": "Don Felder & Joe Walsh - \"Hotel California\" (Eagles)",
+          "description": "The gold standard of dual-guitar dialogue, counterpoint, and interlocking arpeggiated harmony.",
+          "badge": {
+            "text": "Dual Guitar",
+            "color": "emerald"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Key & Scale",
+              "value": "B minor harmonic / natural minor over an 8-chord Andalusian progression"
+            },
+            {
+              "label": "The Dialogue",
+              "value": "Felder delivers smooth, fluid melodic statements; Walsh answers with gritty blues bends and biting pick attack."
+            },
+            {
+              "label": "The Harmonized Finale",
+              "value": "Both guitars merge into legendary descending 3rd-harmony arpeggios that mimic the song's hypnotic chord progression."
+            },
+            {
+              "label": "Key Takeaway",
+              "value": "Contrast distinct guitar tones and playing styles when arranging multiple guitarists to create a gripping musical narrative."
+            }
+          ]
+        },
+        {
+          "title": "Jimi Hendrix - \"Little Wing\"",
+          "description": "Fluid chord-melody mastery integrating rhythm and lead into a single living, breathing tapestry.",
+          "badge": {
+            "text": "Chord Melody",
+            "color": "rose"
+          },
+          "borderColor": "border-slate-200",
+          "bgColor": "bg-slate-50/80",
+          "fields": [
+            {
+              "label": "Key & Scale",
+              "value": "G major / E minor (tuned down half a step to Eb)"
+            },
+            {
+              "label": "Technique",
+              "value": "Thumb-over fretting hand frees fingers 1, 2, and 3 to execute hammer-ons, double-stop 4ths and 6ths, and sliding grace notes."
+            },
+            {
+              "label": "Rotary Ambience",
+              "value": "Played through a Leslie rotating speaker cabinet, blending chord tones and melodies into a swirling, ethereal wash."
+            },
+            {
+              "label": "Key Takeaway",
+              "value": "You don't need a backing track to solo. Embedding the chords inside your lead lines creates a rich, self-contained performance."
+            }
           ]
         }
       ]
     }
   ],
   "practiceSection": {
-    "title": "Solo Construction Exercises",
+    "title": "Solo Construction & Improvisation Drills",
     "items": [
-      "Motif Development: Create a simple 3-note motif. Spend 10 minutes developing it using sequence, inversion, and rhythmic displacement. Forces you to create variety from minimal material.",
-      "Structure Practice: Record a simple chord progression. Create 3 different solo structures over the same progression. Develops understanding of how structure affects impact.",
-      "Tension Exercise: Play a solo that builds tension for 8 bars, then resolves in 4 bars. Focus on harmonic and rhythmic tension. Teaches control of musical tension and release."
+      "The 3-Note Constraint Exercise: Limit your solo to only three pitches for 16 bars. You are forbidden from adding notes. Focus 100% of your energy on rhythmic displacement, bending inflections, staccato vs. legato articulation, and dynamics. This forces you to master motivic development instead of relying on fretboard speed.",
+      "The Golden Ratio Storyboard Workout: Record a 32-bar backing progression. Mark bar 22 (the 70% mark). Spend bars 1-8 establishing a simple motif in the low register; bars 9-16 escalating with sequences; bars 17-21 building rapid rhythmic tension; deliver the peak high bend on bar 22; and spend bars 23-32 resolving gracefully.",
+      "The Vocal Call-and-Response Drill: Play an antecedent phrase on your guitar, then sing an answer out loud before playing it on the instrument. This breaks muscle memory traps and bridges the gap between your inner ear and your fingers.",
+      "Transcribe and Analyze Architecture: Take a classic solo you love (e.g., Gilmour, Slash, Clapton). Write out its timeline on paper: where does the motif repeat? Where does the register jump? Where are the pauses? Apply that exact architectural skeleton to your own original chords."
     ]
   },
   "relatedTopics": [
-    { "title": "Melodic Intervals", "href": "/lessons/songs/lead/intervals", "description": "Explore how intervals shape melodic content in lead guitar." },
-    { "title": "Phrasing & Expression", "href": "/lessons/songs/lead/phrasing", "description": "Add expression and feeling to your solo lines." },
-    { "title": "Lead Guitar Overview", "href": "/lessons/songs/lead", "description": "Return to the main Lead Guitar & Solos page." }
+    {
+      "title": "Melodic Intervals",
+      "href": "/lessons/songs/lead/intervals",
+      "description": "Explore how musical intervals shape emotion and melodic character in solos."
+    },
+    {
+      "title": "Phrasing & Expression",
+      "href": "/lessons/songs/lead/phrasing",
+      "description": "Master vibrato, bending nuance, and vocalized articulation."
+    },
+    {
+      "title": "Lead Guitar Scales",
+      "href": "/lessons/songs/lead/scales",
+      "description": "Deep dive into pentatonic, blues, and modal frameworks for soloing."
+    },
+    {
+      "title": "Blues Lead Foundations",
+      "href": "/lessons/songs/lead/blues",
+      "description": "Learn the foundational call-and-response language that underpins modern lead guitar."
+    }
   ]
 }
