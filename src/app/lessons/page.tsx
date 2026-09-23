@@ -39,15 +39,15 @@ export default function LessonsPage() {
             <Link
               key={cat.href}
               href={cat.href}
-              className="flex flex-col items-center justify-center space-y-2 p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+              className="flex flex-col items-center justify-center space-y-2 p-6 bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg dark:hover:shadow-amber-500/5 hover:border-blue-400 dark:hover:border-slate-700 transition group text-center"
             >
-              <div className="text-5xl">{cat.icon}</div>
-              <div className="text-lg font-medium">{cat.title}</div>
+              <div className="text-5xl group-hover:scale-110 transition-transform">{cat.icon}</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors">{cat.title}</div>
             </Link>
           ))}
         </section>
         <section className="mt-16 text-center">
-          <p className="text-gray-700">
+          <p className="text-gray-700 dark:text-slate-300">
             Select a category above to get started with your guitar journey!
           </p>
         </section>

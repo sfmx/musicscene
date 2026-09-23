@@ -44,17 +44,17 @@ export default function SiteIndexPage() {
       <main className="max-w-5xl mx-auto px-4 py-12">
         {sections.map((section) => (
           <section key={section.type} className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-1">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
               {section.title}{' '}
-              <span className="text-base font-normal text-gray-500">({section.entries.length})</span>
+              <span className="text-base font-normal text-gray-500 dark:text-slate-400">({section.entries.length})</span>
             </h2>
-            <p className="text-gray-600 mb-4">{section.description}</p>
+            <p className="text-gray-600 dark:text-slate-300 mb-4">{section.description}</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2">
               {section.entries.map((entry) => (
                 <li key={entry.id}>
                   <Link
                     href={withTrailingSlash(entry.url)}
-                    className="text-blue-700 hover:text-blue-900 hover:underline text-sm"
+                    className="text-blue-700 dark:text-amber-400 hover:text-blue-900 dark:hover:text-amber-300 hover:underline text-sm"
                   >
                     {entry.title}
                   </Link>

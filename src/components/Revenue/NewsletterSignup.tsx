@@ -70,7 +70,7 @@ export default function NewsletterSignup({
 
   if (status === 'success') {
     return (
-      <div className={`text-center ${isFooter ? 'text-white' : 'text-gray-700'}`}>
+      <div className={`text-center ${isFooter ? 'text-white' : 'text-gray-700 dark:text-slate-300'}`}>
         <p className="text-lg font-medium">
           {REVENUE_CONFIG.newsletterEndpoint
             ? "You're subscribed!"
@@ -81,9 +81,9 @@ export default function NewsletterSignup({
   }
 
   return (
-    <div className={isFooter ? '' : 'bg-indigo-50 rounded-xl p-6 border border-indigo-200'}>
-      <h3 className={`text-xl font-bold mb-2 ${isFooter ? 'text-slate-900 dark:text-white' : 'text-gray-900'}`}>{heading}</h3>
-      <p className={`mb-4 text-sm ${isFooter ? 'text-slate-600 dark:text-slate-300' : 'text-gray-600'}`}>{subtext}</p>
+    <div className={isFooter ? '' : 'bg-indigo-50 dark:bg-slate-900/90 rounded-2xl p-6 border border-indigo-200 dark:border-slate-800'}>
+      <h3 className={`text-xl font-bold mb-2 ${isFooter ? 'text-slate-900 dark:text-white' : 'text-gray-900 dark:text-white'}`}>{heading}</h3>
+      <p className={`mb-4 text-sm ${isFooter ? 'text-slate-600 dark:text-slate-300' : 'text-gray-600 dark:text-slate-300'}`}>{subtext}</p>
       <form onSubmit={handleSubmit} className="flex max-w-md mx-auto">
         <input
           type="email"
@@ -92,21 +92,21 @@ export default function NewsletterSignup({
           placeholder="you@example.com"
           className={`flex-grow px-4 py-2 rounded-l border text-sm ${
             isFooter
-              ? 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white'
-              : 'border border-gray-300 text-gray-900'
+              ? 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500'
+              : 'border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-500'
           } focus:outline-hidden`}
           disabled={status === 'loading'}
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-r disabled:opacity-50"
+          className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-r disabled:opacity-50 cursor-pointer font-medium"
         >
           {status === 'loading' ? 'Sending...' : 'Subscribe'}
         </button>
       </form>
       {status === 'error' && errorMessage && (
-        <p className={`text-sm mt-2 text-center ${isFooter ? 'text-red-300' : 'text-red-600'}`}>
+        <p className={`text-sm mt-2 text-center ${isFooter ? 'text-red-300' : 'text-red-600 dark:text-red-400'}`}>
           {errorMessage}
         </p>
       )}

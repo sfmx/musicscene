@@ -174,16 +174,16 @@ export default function LeadMagnetModal() {
 
       {/* Main Value Exchange Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-fade-in">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
           <div
-            className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 animate-scale-up"
+            className="relative w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden border border-gray-100 dark:border-slate-800 animate-scale-up"
             role="dialog"
             aria-modal="true"
           >
             {/* Close button */}
             <button
               onClick={handleDismiss}
-              className="absolute top-3.5 right-3.5 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
+              className="absolute top-3.5 right-3.5 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-white transition-colors cursor-pointer"
               title="Close"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -200,7 +200,7 @@ export default function LeadMagnetModal() {
                 Free Printable Reference Guide
               </span>
               <h3 className="text-xl sm:text-2xl font-bold leading-tight">
-                The Ultimate Fretboard & Modal Roadmap
+                The Ultimate Fretboard &amp; Modal Roadmap
               </h3>
               <p className="text-xs sm:text-sm text-blue-100 mt-1 max-w-sm mx-auto">
                 High-resolution 3-page cheat sheet for practicing guitar anywhere — zero guesswork.
@@ -211,16 +211,16 @@ export default function LeadMagnetModal() {
             <div className="p-6">
               {status === 'success' ? (
                 <div className="text-center py-4">
-                  <div className="w-14 h-14 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl">
+                  <div className="w-14 h-14 bg-green-100 dark:bg-emerald-950/60 text-green-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl border border-transparent dark:border-emerald-800/40">
                     ✓
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-1">Download Started!</h4>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Download Started!</h4>
+                  <p className="text-sm text-gray-600 dark:text-slate-300 mb-4">
                     Your PDF has been downloaded to your device. Keep it on your desktop or print it for your practice stand!
                   </p>
                   <button
                     onClick={triggerDownload}
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 dark:bg-amber-500 dark:hover:bg-amber-400 text-white dark:text-slate-950 rounded-lg text-sm font-medium transition-colors cursor-pointer"
                   >
                     <span>Download Again</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -231,22 +231,22 @@ export default function LeadMagnetModal() {
               ) : (
                 <>
                   {/* Feature checklist */}
-                  <ul className="space-y-2 mb-5 text-xs sm:text-sm text-gray-700">
+                  <ul className="space-y-2 mb-5 text-xs sm:text-sm text-gray-700 dark:text-slate-300">
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-600 font-bold">✓</span>
-                      <span><strong>Complete 12-Fret Note Grid:</strong> All natural & accidental notes mapped across 6 strings.</span>
+                      <span className="text-blue-600 dark:text-amber-400 font-bold">✓</span>
+                      <span><strong className="text-gray-900 dark:text-white">Complete 12-Fret Note Grid:</strong> All natural &amp; accidental notes mapped across 6 strings.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-600 font-bold">✓</span>
-                      <span><strong>Universal Interval Matrix:</strong> Formulas, semitones & harmonic colors for every interval.</span>
+                      <span className="text-blue-600 dark:text-amber-400 font-bold">✓</span>
+                      <span><strong className="text-gray-900 dark:text-white">Universal Interval Matrix:</strong> Formulas, semitones &amp; harmonic colors for every interval.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-600 font-bold">✓</span>
-                      <span><strong>The 7 Modes at a Glance:</strong> Characteristic notes & song examples from Lydian to Locrian.</span>
+                      <span className="text-blue-600 dark:text-amber-400 font-bold">✓</span>
+                      <span><strong className="text-gray-900 dark:text-white">The 7 Modes at a Glance:</strong> Characteristic notes &amp; song examples from Lydian to Locrian.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-600 font-bold">✓</span>
-                      <span><strong>5 CAGED Pentatonic Box Shapes:</strong> Root positions & blue note placements.</span>
+                      <span className="text-blue-600 dark:text-amber-400 font-bold">✓</span>
+                      <span><strong className="text-gray-900 dark:text-white">5 CAGED Pentatonic Box Shapes:</strong> Root positions &amp; blue note placements.</span>
                     </li>
                   </ul>
 
@@ -259,10 +259,10 @@ export default function LeadMagnetModal() {
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email address"
                         required
-                        className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 text-sm text-gray-900 placeholder-gray-400 outline-none transition-all"
+                        className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-600 dark:focus:ring-amber-400 focus:border-blue-600 dark:focus:border-amber-400 text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-500 outline-none transition-all"
                       />
                       {errorMessage && (
-                        <p className="text-xs text-red-600 mt-1">{errorMessage}</p>
+                        <p className="text-xs text-red-600 dark:text-red-400 mt-1">{errorMessage}</p>
                       )}
                     </div>
 
@@ -275,7 +275,7 @@ export default function LeadMagnetModal() {
                         <span>Preparing download...</span>
                       ) : (
                         <>
-                          <span>Send & Download PDF</span>
+                          <span>Send &amp; Download PDF</span>
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                           </svg>
@@ -284,7 +284,7 @@ export default function LeadMagnetModal() {
                     </button>
                   </form>
 
-                  <p className="text-[11px] text-gray-400 text-center mt-3">
+                  <p className="text-[11px] text-gray-400 dark:text-slate-500 text-center mt-3">
                     Instant free download • 100% spam-free • Unsubscribe anytime with 1 click
                   </p>
                 </>
