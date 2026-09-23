@@ -109,6 +109,23 @@ import neverGoingBackAgainData from '@/data/songs/never-going-back-again.json';
 import playingGodData from '@/data/songs/playing-god.json';
 import itRunsThroughMeData from '@/data/songs/it-runs-through-me.json';
 import stormyMondayData from '@/data/songs/stormy-monday.json';
+import littleWingData from '@/data/songs/little-wing.json';
+import smellsLikeTeenSpiritData from '@/data/songs/smells-like-teen-spirit.json';
+import masterOfPuppetsData from '@/data/songs/master-of-puppets.json';
+import bohemianRhapsodyData from '@/data/songs/bohemian-rhapsody.json';
+import creepData from '@/data/songs/creep.json';
+import hereComesTheSunData from '@/data/songs/here-comes-the-sun.json';
+import tearsInHeavenData from '@/data/songs/tears-in-heaven.json';
+import nothingElseMattersData from '@/data/songs/nothing-else-matters.json';
+import kashmirData from '@/data/songs/kashmir.json';
+import freeBirdData from '@/data/songs/free-bird.json';
+import timeData from '@/data/songs/time.json';
+import basketCaseData from '@/data/songs/basket-case.json';
+import sayItAintSoData from '@/data/songs/say-it-aint-so.json';
+import cantStopData from '@/data/songs/cant-stop.json';
+import killingInTheNameData from '@/data/songs/killing-in-the-name.json';
+import theTrooperData from '@/data/songs/the-trooper.json';
+import texasFloodData from '@/data/songs/texas-flood.json';
 
 export interface SongData {
   songInfo: {
@@ -430,6 +447,23 @@ const songDatabase: Record<string, SongData> = {
   'playing-god': playingGodData,
   'it-runs-through-me': itRunsThroughMeData,
   'stormy-monday': stormyMondayData,
+  'little-wing': littleWingData as SongData,
+  'smells-like-teen-spirit': smellsLikeTeenSpiritData as SongData,
+  'master-of-puppets': masterOfPuppetsData as SongData,
+  'bohemian-rhapsody': bohemianRhapsodyData as SongData,
+  'creep': creepData as SongData,
+  'here-comes-the-sun': hereComesTheSunData as SongData,
+  'tears-in-heaven': tearsInHeavenData as SongData,
+  'nothing-else-matters': nothingElseMattersData as SongData,
+  'kashmir': kashmirData as SongData,
+  'free-bird': freeBirdData as SongData,
+  'time': timeData as SongData,
+  'basket-case': basketCaseData as SongData,
+  'say-it-aint-so': sayItAintSoData as SongData,
+  'cant-stop': cantStopData as SongData,
+  'killing-in-the-name': killingInTheNameData as SongData,
+  'the-trooper': theTrooperData as SongData,
+  'texas-flood': texasFloodData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

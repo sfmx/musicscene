@@ -1,0 +1,358 @@
+{
+  "songInfo": {
+    "title": "Creep",
+    "artist": "Radiohead",
+    "album": "Pablo Honey",
+    "released": "1992",
+    "genre": "Alternative Rock",
+    "tempo": "92 BPM",
+    "duration": "3:58",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G Major",
+      "modalCharacter": "G Major with Parallel Minor Borrowed iv Chord (G Minor / Modal Mixture)",
+      "keySignature": "1 Sharp (F#)",
+      "relativeMinor": "E Minor",
+      "scalesUsed": [
+        {
+          "name": "G Major Scale (Ionian)",
+          "notes": "G - A - B - C - D - E - F#",
+          "scale": "G Major Scale (Ionian)",
+          "application": "The bright diatonic framework for the G and C major chords in the verse"
+        },
+        {
+          "name": "G Natural Minor (Aeolian)",
+          "notes": "G - A - Bb - C - D - Eb - F",
+          "scale": "G Natural Minor (Aeolian)",
+          "application": "The source of the heart-wrenching borrowed C minor (iv) chord"
+        },
+        {
+          "name": "B Harmonic Minor",
+          "notes": "B - C# - D - D# - E - F# - G",
+          "scale": "B Harmonic Minor",
+          "application": "Provides the D# leading tone that turns the diatonic Bm into a dramatic B major chord"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "B",
+          "C",
+          "Cm"
+        ],
+        "progression": "G - B - C - Cm",
+        "description": "The ultimate 4-chord demonstration of modal interchange: moving from the triumphant C major (IV) to the devastating, borrowed C minor (iv)"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse & Chorus",
+          "progression": "G - B - C - Cm",
+          "romanNumerals": "I - III - IV - iv",
+          "description": "Two bars each of G, B, C, and Cm repeating throughout the entire song with dynamic evolution from clean arpeggios to roaring fuzz"
+        },
+        {
+          "section": "The Dead-Note Crunch",
+          "progression": "Muted String Chops",
+          "romanNumerals": "N/A",
+          "description": "Johnny Greenwood's famous pre-chorus assault: three violent muted pick-hand rakes into the fretboard that launch the chorus"
+        }
+      ],
+      "harmonicFunction": [
+        "G (I) - The warm, gentle home tonic chord played with clean arpeggiated fingerpicking",
+        "B (III) - Major III chord (secondary dominant V of vi) creating unexpected upward tension with the sharp D# note",
+        "C (IV) - The subdominant lift that provides a fleeting sense of hopeful brightness",
+        "Cm (iv) - The emotional gut-punch: borrowed from G minor, the Eb note creates profound longing and sorrow before resolving to G"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Modal Interchange Voice Leading (IV to iv)",
+      "description": "Understanding and executing the single-note chromatic descent from E (in C major) to Eb (in C minor) to D (in G major)",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Only one note changes between C and Cm: the 3rd drops from E to Eb",
+          "That single half-step descent carries 90% of the song's emotional weight",
+          "Emphasize the G string fret 5 (E) moving to fret 4 (Eb) when playing barre chords"
+        ],
+        "sequence": [
+          "Fret full C major barre chord on fret 3 or fret 8",
+          "Lift middle finger to flatten the 3rd to Eb for Cm",
+          "Let the Eb ring out before resolving to D on the G chord"
+        ],
+        "tips": [
+          "Listen intently to the chromatic descent: E -> Eb -> D",
+          "Play Cm with delicate restraint in the verse to maximize its emotional impact"
+        ],
+        "chords": [
+          "C",
+          "Cm",
+          "G"
+        ],
+        "progression": "C to Cm Resolution"
+      }
+    },
+    {
+      "name": "Dead-String Crunch Rakes",
+      "description": "Johnny Greenwood's iconic aggressive pre-chorus dead-note strums created by muting strings with the fretting hand while digging in with heavy distortion",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Greenwood originally played these rakes in frustration because he hated how quiet the song was",
+          "Turn on high-gain Marshall ShredMaster distortion pedal",
+          "Rest all 4 fretting fingers across the strings without pressing to fretboard",
+          "Deliver three violent down-up-down power strums"
+        ],
+        "sequence": [
+          "Clean verse arpeggio finishes on Cm",
+          "Mute all strings across fret 5",
+          "Stomp distortion pedal",
+          "Strike three explosive percussive rakes: CHUG-CHUG-CHUG",
+          "Slam into full G major chorus"
+        ],
+        "tips": [
+          "Attack the strings with authority right above the bridge pickup",
+          "Ensure zero open strings ring out accidentally"
+        ],
+        "chords": [
+          "Muted Strings",
+          "G5"
+        ],
+        "progression": "Pre-Chorus Transition"
+      }
+    },
+    {
+      "name": "Clean Steady Arpeggio Picking",
+      "description": "Ed O'Brien's continuous clean 8th-note arpeggiated picking pattern outlining the barre chords throughout the verses",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Held using full 6th-string and 5th-string barre chord grips",
+          "Ascending and descending picking pattern across the middle strings",
+          "Keeps the rhythm floating steadily at 92 BPM"
+        ],
+        "sequence": [
+          "Fret G barre chord (fret 3)",
+          "Pick low E, then D, G, B strings in steady rhythm",
+          "Shift cleanly to B major barre chord (fret 7)"
+        ],
+        "tips": [
+          "Keep the pick close to the strings to minimize wasted motion",
+          "Maintain consistent volume on every picked note"
+        ],
+        "chords": [
+          "G",
+          "B",
+          "C",
+          "Cm"
+        ],
+        "progression": "G - B - C - Cm"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Clean Verse Arpeggios",
+      "timeStamp": "0:00-0:58",
+      "technique": "Clean Steady Arpeggio Picking",
+      "key": "G Major",
+      "description": "The serene clean guitar arpeggio pattern introducing the G - B - C - Cm progression with gentle compression and subtle room reverb",
+      "chords": [
+        "G",
+        "B",
+        "C",
+        "Cm"
+      ],
+      "progression": "G - B - C - Cm",
+      "notes": [
+        "Use clean barre chord grips at fret 3 (G), fret 7 (B), fret 8 (C), and fret 8 (Cm)",
+        "Pick in steady eighth notes across strings 6, 4, 3, and 2",
+        "Listen for the poignant drop from C major to C minor"
+      ],
+      "alphaTab": ":8 3.6 5.4 4.3 3.2 5.4 4.3 3.2 5.4 | :8 7.6 9.4 8.3 7.2 9.4 8.3 7.2 9.4 | :8 8.6 10.4 9.3 8.2 10.4 9.3 8.2 10.4 | :8 8.6 10.4 8.3 8.2 10.4 8.3 8.2 10.4 |",
+      "exerciseLabel": "Arpeggiated Modal Mixture"
+    },
+    {
+      "name": "Pre-Chorus Dead-Note Crunch",
+      "timeStamp": "0:58-1:02",
+      "technique": "Dead-String Crunch Rakes",
+      "key": "G Major",
+      "description": "Johnny Greenwood's legendary three muted string stabs with roaring distortion that shatter the calm and launch the chorus",
+      "chords": [
+        "Muted Strings"
+      ],
+      "progression": "Percussive Noise Attack",
+      "notes": [
+        "Deaden all strings with the fretting hand",
+        "Engage high-gain Marshall ShredMaster distortion",
+        "Strike three aggressive, percussive downstrokes right on the beat"
+      ],
+      "alphaTab": ":4 r :8 r.6 (5.6 5.5 5.4 5.3) :4 (5.6 5.5 5.4 5.3) :4 (5.6 5.5 5.4 5.3) |",
+      "exerciseLabel": "Greenwood Dead-String Stabs"
+    },
+    {
+      "name": "Chorus Fuzz Explosion",
+      "timeStamp": "1:02-1:38",
+      "technique": "Modal Interchange Voice Leading (IV to iv)",
+      "key": "G Major",
+      "description": "A monumental wall of distorted guitars playing full, ringing open and barre chords through the G - B - C - Cm progression",
+      "chords": [
+        "G",
+        "B",
+        "C",
+        "Cm"
+      ],
+      "progression": "G - B - C - Cm",
+      "notes": [
+        "Heavy full-strum downstrokes with maximum distortion sustain",
+        "The transition from C to Cm sounds colossal under high gain",
+        "Let the low root notes ring out thunderously"
+      ],
+      "alphaTab": ":2 (3.6 5.5 5.4 4.3 3.2 3.1) :2 (3.6 5.5 5.4 4.3 3.2 3.1) | :2 (7.6 9.5 9.4 8.3 7.2 7.1) :2 (7.6 9.5 9.4 8.3 7.2 7.1) | :2 (8.6 10.5 10.4 9.3 8.2 8.1) :2 (8.6 10.5 10.4 9.3 8.2 8.1) | :2 (8.6 10.5 10.4 8.3 8.2 8.1) :2 (8.6 10.5 10.4 8.3 8.2 8.1) |",
+      "exerciseLabel": "Distorted Chorus Wall of Sound"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Telecaster Plus (with Lace Sensor pickups) or standard Telecaster / Stratocaster",
+      "alternatives": [
+        "Gibson Les Paul",
+        "Epiphone Casino",
+        "Any humbucker or P90 electric guitar"
+      ],
+      "pickup": "Bridge Lace Sensor Dually humbucker for the explosive crunch"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb (Clean) paired with a Marshall 8080 Valvestate (Distortion)",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Blues Junior",
+        "Marshall DSL20"
+      ],
+      "settings": {
+        "gain": "7/10",
+        "treble": "6/10",
+        "middle": "5/10",
+        "bass": "6/10",
+        "presence": "5/10"
+      }
+    },
+    "effects": {
+      "distortion": "Marshall ShredMaster or ProCo Rat distortion pedal set to maximum saturation",
+      "reverb": "Fender spring reverb on the clean channel (setting 4)",
+      "other": "Boss Tremolo and Roland Space Echo for ambient textures"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the 4 Barre Chords & Modal Shift",
+      "steps": [
+        "Learn to play clean 6th-string barre chords: G (3rd fret), B (7th fret), C (8th fret), Cm (8th fret)",
+        "Practice the half-step finger movement from C major to C minor",
+        "Strum along with the recording at 92 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Arpeggio Precision & Dynamic Pre-Chorus Stomps",
+      "steps": [
+        "Learn Ed O'Brien's clean 8th-note arpeggio picking pattern",
+        "Coordinate timing the three pre-chorus dead rakes with the distortion switch",
+        "Master smooth transitions between clean picking and heavy power strumming"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Full Studio Dynamic Nuance & Feedback Control",
+      "steps": [
+        "Master the high-register ambient lead fills and feedback manipulation in the outro",
+        "Integrate multi-amp clean/dirty switching setup",
+        "Perform the entire track with complete emotional and dynamic control"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting notes in the barre chords due to weak index finger pressure—arch fingers cleanly",
+      "Forgetting to flatten the 3rd on the Cm chord—losing the entire emotional point of the song",
+      "Playing the pre-chorus dead rakes timidly—they must be struck with violent, intentional force"
+    ],
+    "practiceRoutine": [
+      "5 min: Barre chord finger conditioning across frets 3, 7, and 8",
+      "10 min: Slow transition practice between C major and C minor",
+      "10 min: Clean arpeggio picking synchronization with metronome at 80 BPM",
+      "10 min: Full dynamic run-through with distortion stomps at 92 BPM"
+    ],
+    "focusAreas": [
+      "Clean barre chord tone without buzzing",
+      "The emotional half-step voice leading from C to Cm",
+      "High-impact dynamic control between clean and distortion"
+    ],
+    "metronomeWork": [
+      "Set metronome to 92 BPM and count: 1-and-2-and-3-and-4-and for steady arpeggios",
+      "Isolate the pre-chorus rake timing: rest on beat 1, strike on beats 2, 3, and 4"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Karma Police",
+        "difficulty": "Intermediate",
+        "similarity": "Sophisticated chord voicings, acoustic strumming, and lush piano-guitar textures"
+      },
+      {
+        "title": "High and Dry",
+        "difficulty": "Beginner",
+        "similarity": "Acoustic-driven ballad with dynamic shifts and simple, expressive guitar leads"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "difficulty": "Beginner",
+        "similarity": "Iconic loud-quiet-loud dynamics with percussive dead-string scratch strums"
+      },
+      {
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "difficulty": "Intermediate",
+        "similarity": "Soulful chord-melody and beautiful major-to-minor modal shifts"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "modal-interchange",
+      "barre-chords",
+      "arpeggios",
+      "song-analysis",
+      "rhythm-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

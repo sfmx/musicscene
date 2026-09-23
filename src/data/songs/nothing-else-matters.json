@@ -1,0 +1,356 @@
+{
+  "songInfo": {
+    "title": "Nothing Else Matters",
+    "artist": "Metallica",
+    "album": "Metallica (The Black Album)",
+    "released": "1991",
+    "genre": "Metal",
+    "tempo": "142 BPM",
+    "duration": "6:28",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E Minor",
+      "modalCharacter": "Aeolian (Natural Minor) in 6/8 Compound Meter",
+      "scalesUsed": [
+        {
+          "scale": "E Natural Minor",
+          "notes": "E - F# - G - A - B - C - D",
+          "application": "Open string arpeggios, acoustic verse chords, and orchestral backing"
+        },
+        {
+          "scale": "E Minor Pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "James Hetfield's soulful, highly melodic electric guitar solo"
+        },
+        {
+          "scale": "E Minor Blues Scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "The stinging blue note (Bb) inflections during the solo climax"
+        }
+      ],
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor (tonic)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "D",
+          "C",
+          "Em"
+        ],
+        "progression": "i - ♭VII - ♭VI - i",
+        "description": "Epic natural minor progression in 6/8 compound time"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Arpeggio",
+          "progression": "Em (open strings: E - G - B - e - B - G)",
+          "romanNumerals": "i",
+          "description": "The most famous open-string fingerpicked arpeggio in rock history, requiring zero fretting hand fingers initially"
+        },
+        {
+          "section": "Verse",
+          "progression": "Em - D - C - Em - D - C - G - B7 - Em",
+          "romanNumerals": "i - ♭VII - ♭VI - i - ♭VII - ♭VI - ♭III - V7 - i",
+          "description": "Aeolian acoustic ballad structure resolving through the major dominant B7 (from E Harmonic Minor)"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - A - D - C - A - D - Em",
+          "romanNumerals": "♭VI - IV - ♭VII - ♭VI - IV - ♭VII - i",
+          "description": "Triumphant lift featuring major chords before settling back into the dark Em tonic"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Em - D - C - Em - D - C - Em",
+          "romanNumerals": "i - ♭VII - ♭VI - i",
+          "description": "Emotional power progression supporting James Hetfield's rare, expressive lead guitar solo"
+        }
+      ],
+      "harmonicFunction": [
+        "Open strings (6th E, 3rd G, 2nd B, 1st high E) create pure natural E minor triad resonance",
+        "The 6/8 compound meter (counted ONE-two-three, TWO-two-three) gives the ballad an expansive rocking pulse",
+        "B7 dominant chord introduces D# leading tone, creating sharp classical tension that resolves into Em",
+        "The chorus uses C and A major chords to inject momentary warmth and emotional resolve"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "6/8 Open-String Arpeggio Picking",
+      "description": "Plucking the open E, G, B, and high E strings in precise compound 6/8 rhythm",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "James Hetfield wrote the intro riff while on the phone with his girlfriend, holding the phone with his fretting hand",
+          "Thumb plucks low E string, index plucks G, middle plucks B, ring plucks high E",
+          "Maintain steady, rolling dynamics with consistent string volume"
+        ],
+        "sequence": [
+          "Thumb on low E (beat 1)",
+          "Index on G, Middle on B, Ring on high E (beats 2, 3, 4)",
+          "Middle on B, Index on G (beats 5, 6)"
+        ],
+        "tips": [
+          "Keep the right hand arched and relaxed above the bridge pickup",
+          "Count ONE-and-a, TWO-and-a to lock in the 6/8 groove"
+        ],
+        "chords": [
+          "Em"
+        ],
+        "progression": "Open String Intro"
+      }
+    },
+    {
+      "name": "Expressive Pentatonic Lead Phrasing",
+      "description": "Playing James Hetfield's rare electric solo featuring wide vibrato, lyrical bends, and crying doublestops",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Unlike Kirk Hammett's fast wah shredding, Hetfield's solo focuses on vocal melody and sustaining target notes",
+          "Employs full-step bends on the B and G strings resolved with wide finger vibrato",
+          "Executed on ESP Explorer with bridge EMG humbucker into high-gain Mesa Boogie"
+        ],
+        "sequence": [
+          "Slide up to 12th fret position on G and B strings",
+          "Execute singing 1-step bend on 15th fret high E string",
+          "Apply controlled, slow vibrato at the peak of the bend"
+        ],
+        "tips": [
+          "Support the fretting finger with two fingers behind it for pitch stability",
+          "Roll pick attack slightly for warm, singing overdrive without harsh treble bite"
+        ],
+        "chords": [
+          "Em",
+          "D",
+          "C"
+        ],
+        "progression": "Guitar Solo"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Arpeggio",
+      "timeStamp": "0:00-0:58",
+      "technique": "Open String Fingerstyle in 6/8",
+      "key": "E Minor",
+      "description": "The timeless open-string acoustic introduction in 6/8 time that every guitarist learns to play.",
+      "chords": [
+        "Em"
+      ],
+      "progression": "Em (i)",
+      "notes": [
+        "Zero fretting hand fingers required for the initial measure",
+        "Maintain pure 6/8 rolling arpeggio pulse",
+        "Transition into 7th and 12th fret natural harmonics"
+      ],
+      "alphaTab": ":8 0.6 0.3 0.2 0.1 0.2 0.3 | 0.6 0.3 0.2 0.1 0.2 0.3 | 7.1 :16 0.3 0.2 0.1 0.2 0.3 :8 7.1 | :8 0.6 0.3 0.2 0.1 0.2 0.3 |",
+      "exerciseLabel": "Open String Arpeggio Riff"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:58-2:12",
+      "technique": "Acoustic Fingerstyle & Bass Motion",
+      "key": "E Minor",
+      "description": "Gentle fingerpicked verse moving through Em, D, C, and resolving with the dramatic B7 turnaround.",
+      "chords": [
+        "Em",
+        "D",
+        "C",
+        "G",
+        "B7"
+      ],
+      "progression": "Em - D - C - Em - D - C - G - B7",
+      "notes": [
+        "Clean thumb bass notes anchoring each chord change",
+        "Crisp B7 fingering bringing out the sharp D# note on 4th string",
+        "Dynamic crescendo leading towards the chorus"
+      ],
+      "alphaTab": ":8 (0.6 0.3 0.2 0.1) 0.3 0.2 (0.4 2.3 3.2 2.1) 2.3 3.2 | :8 (3.5 2.4 0.3 1.2 0.1) 0.3 1.2 (0.6 0.3 0.2 0.1) 0.3 0.2 | :8 (2.5 1.4 2.3 0.2 2.1) 2.3 0.2 (0.6 0.3 0.2 0.1) 0.3 0.2 |",
+      "exerciseLabel": "Verse Fingerpicking Cycle"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "2:12-2:46",
+      "technique": "Power Chords & Open Arpeggios",
+      "key": "E Minor",
+      "description": "'Never cared for what they do... never cared for what they know' triumphant vocal hook.",
+      "chords": [
+        "C",
+        "A",
+        "D",
+        "Em"
+      ],
+      "progression": "C - A - D - C - A - D - Em",
+      "notes": [
+        "Switch from fingerpicking to flatpick or dynamic thumb strumming",
+        "Accentuate the A major chord as an uplifting Dorian-flavored lift",
+        "Hold final Em chord for full two bars to reset the ballad feel"
+      ],
+      "alphaTab": ":4 (3.5 2.4 0.3 1.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :4 (0.4 2.3 3.2 2.1) (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Chorus Strumming Cadence"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "4:56-5:45",
+      "technique": "Singing Pentatonic Melodic Soloing",
+      "key": "E Minor",
+      "description": "James Hetfield's deeply emotive guitar solo featuring singing full bends and heavy vibrato.",
+      "chords": [
+        "Em",
+        "D",
+        "C"
+      ],
+      "progression": "Em - D - C - Em",
+      "notes": [
+        "High-gain distortion with warm neck or bridge pickup tone",
+        "Full-step bends hitting pitch accurately with sustained finger vibrato",
+        "Soulful phrasing that emphasizes the vocal quality of the guitar"
+      ],
+      "alphaTab": ":8 12.1 15.1 12.1 :4 15.1 :8 15.1 | :4 14.3 :8 12.3 14.3 :4 12.3 | :8 12.2 15.2 12.2 :4 15.2 :8 15.2 | :2 12.1 :2 r.2 |",
+      "exerciseLabel": "Hetfield Melodic Solo Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "ESP MX-250 / Explorer or Gibson Les Paul Custom",
+      "alternatives": [
+        "ESP LTD Snakebyte",
+        "Epiphone Les Paul Custom",
+        "Ovation Legend Acoustic"
+      ],
+      "pickup": "EMG 81 bridge humbucker (electric) / Seymour Duncan 59 (neck)"
+    },
+    "amp": {
+      "recommended": "Roland JC-120 (Clean Intro) & Mesa/Boogie Mark IV / TriAxis (Solo)",
+      "alternatives": [
+        "Mesa/Boogie Dual Rectifier",
+        "Boss Katana 100",
+        "Fender Twin Reverb"
+      ],
+      "settings": {
+        "gain": "8/10",
+        "treble": "7/10",
+        "middle": "4/10",
+        "bass": "7/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "Mesa/Boogie high-gain lead channel saturation",
+      "reverb": "Rich stereo hall reverb with 2.8s decay",
+      "other": "Boss CE-2 Chorus on clean acoustic parts for lush stereo width"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "The Open-String Intro Arpeggio",
+      "steps": [
+        "Learn the open E-G-B-e fingerpicking pattern using right-hand thumb, index, middle, and ring",
+        "Practice the 6/8 time signature pulse (1-2-3, 4-5-6)",
+        "Incorporate the 7th and 12th fret natural harmonics"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Verse Chords & B7 Transition",
+      "steps": [
+        "Master the fretted chord shapes: Em, D, C, and B7",
+        "Coordinate thumb bass plucking with upper-string arpeggios",
+        "Build tempo up to 142 BPM in 6/8 time"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Electric Guitar Solo & Expressive Dynamics",
+      "steps": [
+        "Learn James Hetfield's guitar solo note for note with exact pitch bends",
+        "Master wide, controlled finger vibrato on sustained notes",
+        "Transition seamlessly between clean acoustic fingerpicking and heavy overdriven lead playing"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the intro in 4/4 instead of rolling 6/8 compound time",
+      "Plucking the open strings too hard causing string clatter against the frets",
+      "Under-bending the 15th fret high E string in the solo, leaving notes flat"
+    ],
+    "practiceRoutine": [
+      "5 min: Right-hand fingerstyle arpeggio warmup on open strings",
+      "10 min: Slow 6/8 practice of verse progression at 100 BPM",
+      "15 min: Isolating the guitar solo bends with a tuner to verify exact pitch",
+      "10 min: Playing along with the studio track focusing on emotional dynamics"
+    ],
+    "focusAreas": [
+      "Even 6/8 arpeggio velocity and timing",
+      "Clean B7 chord voice-leading into Em",
+      "Singing vibrato and accurate 1-step bends in the solo"
+    ],
+    "metronomeWork": [
+      "Set metronome to dotted-quarter clicks (~47 BPM) or eighth notes (142 BPM)",
+      "Accentuate beat 1 and beat 4 to maintain compound 6/8 swing",
+      "Ensure no rushing on the quiet acoustic intro measures"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Fade to Black",
+        "difficulty": "Intermediate",
+        "similarity": "Metallica's pioneering acoustic-to-heavy thrash ballad in B minor"
+      },
+      {
+        "title": "Master of Puppets",
+        "difficulty": "Expert",
+        "similarity": "Thrash metal masterpiece featuring high-speed downpicking and neoclassical interlude"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "difficulty": "Intermediate",
+        "similarity": "Legendary acoustic arpeggiated intro building into soaring electric solo climax"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Advanced",
+        "similarity": "Masterful 12-string fingerpicked arpeggios and iconic harmonized guitar solo"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "metal",
+      "acoustic-guitar",
+      "fingerpicking",
+      "arpeggios",
+      "song-analysis",
+      "lead-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

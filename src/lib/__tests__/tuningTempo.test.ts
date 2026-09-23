@@ -12,7 +12,8 @@ const CANONICAL_TUNING_PATTERNS = [
   /^Drop D \(DADGBE\)$/,
   /^Drop D \(DADGBE\) with Capo \d+$/,
   /^D Standard \(DGCFAD\)$/,
-  /^Open D \(DADF#AD\) or Standard with slide$/
+  /^Open D \(DADF#AD\) or Standard with slide$/,
+  /^DADGAD \(DADGAD\)$/
 ];
 
 describe('Song Catalog Tuning & Tempo Verification', () => {

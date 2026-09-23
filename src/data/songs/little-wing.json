@@ -1,0 +1,392 @@
+{
+  "songInfo": {
+    "title": "Little Wing",
+    "artist": "Jimi Hendrix",
+    "album": "Axis: Bold as Love",
+    "released": "1967",
+    "genre": "Blues Rock",
+    "tempo": "71 BPM",
+    "duration": "2:24",
+    "key": "G Major / E Minor",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G Major / E Minor",
+      "modalCharacter": "Aeolian / Minor Pentatonic with fluid Major Pentatonic passing embellishments",
+      "keySignature": "1 Sharp (F#)",
+      "relativeMinor": "E Minor",
+      "scalesUsed": [
+        {
+          "name": "E Minor Pentatonic",
+          "notes": "E - G - A - B - D",
+          "scale": "E Minor Pentatonic",
+          "application": "Embellishing the Em, Am, and Bm chord grips with signature hammer-ons"
+        },
+        {
+          "name": "G Major Pentatonic",
+          "notes": "G - A - B - D - E",
+          "scale": "G Major Pentatonic",
+          "application": "Soulful decorative fills over the G and C major chords"
+        },
+        {
+          "name": "E Natural Minor (Aeolian)",
+          "notes": "E - F# - G - A - B - C - D",
+          "scale": "E Natural Minor (Aeolian)",
+          "application": "Harmonic framework connecting the 10-bar descending chord progression"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "G",
+          "Am",
+          "Em",
+          "Bm7",
+          "Am7",
+          "C",
+          "G",
+          "F",
+          "C",
+          "D"
+        ],
+        "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+        "description": "Timeless 10-bar ballad progression featuring thumb-over bass movement, double-stop suspensions, and an ethereal borrowed F chord"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse",
+          "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+          "romanNumerals": "vi - I - ii - vi - iii7 - ii7 - IV - I - bVII - IV - V",
+          "description": "The borrowed F major chord (bVII) creates an unexpected, floating modal shift before resolving smoothly through C and D"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+          "romanNumerals": "vi - I - ii - vi - iii7 - ii7 - IV - I - bVII - IV - V",
+          "description": "Played with Leslie rotary speaker modulation, mixing octave glides, singing sustained bends, and microtonal vibrato"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (vi) - The melancholic home base chord fretted with thumb-over-neck bass",
+        "G (I) - Uplifts the mood with major pentatonic sliding third decorations",
+        "Am (ii) - Smooth stepwise motion decorated with classic 4th-interval suspensions",
+        "Bm7 (iii7) - Bittersweet minor tension descending back into Am7",
+        "F (bVII) - The harmonic secret: borrowed Mixolydian chord providing a weightless lift",
+        "D (V) - Dominant turnaround providing strong gravitational pull back to Em"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Thumb-Over Fretting & Bass Movement",
+      "description": "Wrapping the fretting-hand thumb over the top of the neck to fret bass notes on the 6th string, freeing the fingers for chord embellishments",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Fret the low root note with the fretting-hand thumb",
+          "Keep the other four fingers free to add ornamental hammer-ons",
+          "Maintain consistent palm muting for selective bass separation",
+          "Requires a comfortable guitar neck profile"
+        ],
+        "sequence": [
+          "Strike bass note with thumb downstroke",
+          "Pluck or sweep upper chord tones",
+          "Execute hammer-on or slide with pinky/ring finger",
+          "Let bass ring while releasing ornamentation"
+        ],
+        "tips": [
+          "Drop the wrist slightly to wrap the thumb without straining the forearm",
+          "Ensure the 5th string is naturally muted with the fleshy thumb pad when not fretted",
+          "Practice moving between Em, G, and Am shapes slowly"
+        ],
+        "chords": [
+          "Em",
+          "G",
+          "Am",
+          "Bm7",
+          "C",
+          "F",
+          "D"
+        ],
+        "progression": "Em - G - Am - Em"
+      }
+    },
+    {
+      "name": "Double-Stop Hammer-Ons & Slides",
+      "description": "Sounding two strings simultaneously and hammering on or sliding on one or both strings, the cornerstone of the Hendrix R&B rhythm style",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Commonly executed across the G and B strings or D and G strings",
+          "Combines 4th and 5th intervals that resolve into diatonic 3rds",
+          "Creates the impression of rhythm guitar and lead guitar playing together"
+        ],
+        "sequence": [
+          "Barre index finger across two strings",
+          "Hammer ring finger one whole step up on the lower string",
+          "Slide both fingers upward while maintaining string pressure"
+        ],
+        "tips": [
+          "Focus on pick control so you only strike the two intended strings",
+          "Keep fret fingers curved to avoid choking adjacent strings"
+        ],
+        "chords": [
+          "Am7",
+          "Bm7",
+          "G"
+        ],
+        "progression": "Bm7 - Am7 - C - G"
+      }
+    },
+    {
+      "name": "Leslie Rotary Modulation & Dynamic Touch",
+      "description": "Managing pick velocity to shift between delicate chime and warm saturation through a rotary speaker simulator",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Hendrix routed his Stratocaster through a rotating Leslie cabinet in the studio",
+          "Pick lightly near the neck pickup for warm acoustic-like shimmer",
+          "Dig in on bends for singing compressed sustain"
+        ],
+        "sequence": [
+          "Select neck or neck/middle pickup",
+          "Roll volume back to 7 for verses, 10 for solo",
+          "Add slight Uni-Vibe or chorus modulation"
+        ],
+        "tips": [
+          "Let notes breathe between phrases",
+          "Vary your picking point between bridge and neck"
+        ],
+        "chords": [
+          "D"
+        ],
+        "progression": "F - C - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Chord-Melody",
+      "timeStamp": "0:00-0:31",
+      "technique": "Thumb-Over Fretting & Bass Movement",
+      "key": "G Major / E Minor",
+      "description": "The legendary instrumental statement of the 10-bar progression featuring intricate hammer-ons, slides, and double-stops over ringing bass notes",
+      "chords": [
+        "Em",
+        "G",
+        "Am",
+        "Em",
+        "Bm7",
+        "Am7",
+        "C",
+        "G",
+        "F",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+      "notes": [
+        "Start with the gentle open E minor arpeggio and pinky hammer-on on the G string",
+        "Thumb frets the 3rd fret on low E for G major, allowing index and ring to embellish frets 3 and 5",
+        "Notice the dynamic lift on the borrowed F major chord before resolving to D"
+      ],
+      "alphaTab": ":8 (0.6 2.5 2.4) :16 0.3 2.3 :8 0.3 :4 (0.6 2.5 2.4) | :8 3.6 :16 3.4 5.4 :8 3.3 5.3 :4 (3.6 5.5 5.4 4.3) | :8 5.6 :16 5.4 7.4 :8 5.3 7.3 :4 (5.6 7.5 7.4 5.3) | :8 0.6 :16 0.4 2.4 :8 0.3 :4 (0.6 2.5 2.4 0.3) | :8 7.6 :16 7.4 9.4 :8 7.3 9.3 :4 (7.6 9.5 9.4 7.3) | :8 5.6 :16 5.4 7.4 :8 5.3 7.3 :4 (5.6 7.5 7.4 5.3) | :8 8.6 (8.6 10.5 10.4) 3.6 (3.6 5.5 5.4) | :8 1.6 (1.6 3.5 3.4) 8.6 (8.6 10.5 10.4) | :2 (10.6 12.5 12.4 11.3) :4 r |",
+      "exerciseLabel": "Intro Chord-Melody Flow"
+    },
+    {
+      "name": "Verse 1",
+      "timeStamp": "0:31-1:01",
+      "technique": "Double-Stop Hammer-Ons & Slides",
+      "key": "G Major / E Minor",
+      "description": "Jimi supports his vocals with restrained chord grips and sweet fill-ins during vocal pauses",
+      "chords": [
+        "Em",
+        "G",
+        "Am",
+        "Em",
+        "Bm7",
+        "Am7",
+        "C",
+        "G",
+        "F",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+      "notes": [
+        "Back off volume slightly to leave acoustic space for the vocal narrative",
+        "Fill the vocal gaps with short double-stop licks on the G and B strings",
+        "Emphasize the bass notes on beat 1 of each measure"
+      ],
+      "alphaTab": ":4 (0.6 2.5 2.4 0.3 0.2) :8 r.6 :16 0.3 2.3 :4 0.3 | :4 (3.6 5.5 5.4 4.3 3.2) :8 r.6 :16 3.3 5.3 :4 3.3 | :4 (5.6 7.5 7.4 5.3 5.2) :8 r.6 :16 5.4 7.4 :4 5.3 | :2 (0.6 2.5 2.4 0.3 0.2) :2 r |",
+      "exerciseLabel": "Verse Accompaniment & Vocal Fills"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "1:28-2:24",
+      "technique": "Leslie Rotary Modulation & Dynamic Touch",
+      "key": "G Major / E Minor",
+      "description": "One of the most expressive solos in rock history: singing sustained bends, subtle vibrato, and Leslie swirl fading into the distance",
+      "chords": [
+        "Em",
+        "G",
+        "Am",
+        "Em",
+        "Bm7",
+        "Am7",
+        "C",
+        "G",
+        "F",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - Am - Em - Bm7 - Am7 - C - G - F - C - D",
+      "notes": [
+        "Begin with high-register melodic bends targeting the B and G notes on the top strings",
+        "Use wide vocal-like vibrato with the wrist",
+        "Fade out with glissando slides and ambient wah/rotary sweeps"
+      ],
+      "alphaTab": ":8 12.1 :4 15.1 :8 12.1 :4 15.2 :8 12.2 | :4 14.3 :8 12.3 14.3 :2 12.3 | :8 12.2 15.2 :4 15.1 :8 12.1 :4 15.2 | :2 12.1 :2 r |",
+      "exerciseLabel": "Expressive Solo Phrasing"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster with maple or rosewood neck (single-coil pickups)",
+      "alternatives": [
+        "Fender Telecaster",
+        "Any SSS or HSS electric guitar with low-output pickups"
+      ],
+      "pickup": "Neck pickup or Neck + Middle pickup in position 4 for signature quack and warmth"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 or 1959 Super Lead / Fender Twin Reverb",
+      "alternatives": [
+        "Fender Blues Deluxe",
+        "Marshall Origin 20",
+        "Vox AC15"
+      ],
+      "settings": {
+        "gain": "4/10",
+        "treble": "7/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "7/10"
+      }
+    },
+    "effects": {
+      "distortion": "Dallas Arbiter Fuzz Face (Germanium or Silicon) set with guitar volume rolled back",
+      "reverb": "Subtle plate or studio spring reverb",
+      "other": "Leslie rotating speaker simulator / Uni-Vibe, VOX Wah pedal"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Learn Chord Framework & Song Flow",
+      "steps": [
+        "Master the 10-bar chord progression using basic open chords (Em, G, Am, Bm, C, F, D)",
+        "Practice the timing with a metronome at 60 BPM",
+        "Understand the Roman numeral analysis and the borrowed F major chord"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "intermediate": {
+      "title": "Thumb-Over Technique & Core Embellishments",
+      "steps": [
+        "Integrate the thumb-over fretting technique on G, Am, and F chords",
+        "Learn the signature double-stop hammer-ons on the G and B strings",
+        "Practice synchronizing bass notes on beat 1 with upper-string chord decorations"
+      ],
+      "timeEstimate": "3-5 weeks"
+    },
+    "advanced": {
+      "title": "Full Studio Intro & Expressive Solo Phrasing",
+      "steps": [
+        "Master the intro note-for-note with exact microtonal bends and dynamics",
+        "Integrate rotary speaker/vibe modulation and volume-knob tone shaping",
+        "Improvise authentic Hendrix-style embellishments over the 10-bar progression"
+      ],
+      "timeEstimate": "6-8 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Tensing the fretting hand while attempting thumb-over chords—drop the wrist down",
+      "Strumming all strings indiscriminately rather than isolating bass notes and double-stops",
+      "Rushing the tempo—the ballad feel requires deep pocket and dynamic restraint at 71 BPM"
+    ],
+    "practiceRoutine": [
+      "5 min: Warm up with E minor and G major pentatonic double-stop exercises",
+      "10 min: Practice thumb-over grips and clean bass-to-treble string separation",
+      "15 min: Work on the 10-bar intro measure by measure at 55 BPM",
+      "10 min: Play along with the original recording focusing on touch dynamics"
+    ],
+    "focusAreas": [
+      "Thumb-over neck grip ergonomic positioning",
+      "Double-stop hammer-on intonation and clean ringing notes",
+      "Subtle dynamic control between light strums and accented notes"
+    ],
+    "metronomeWork": [
+      "Start the intro chord-melody at 50 BPM with quarter-note clicks",
+      "Progressively build to 71 BPM once hammer-on timing is completely seamless"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Purple Haze",
+        "difficulty": "Intermediate",
+        "similarity": "Classic Hendrix rhythm style featuring the E7#9 chord and fuzz modulation"
+      },
+      {
+        "title": "All Along the Watchtower",
+        "difficulty": "Intermediate",
+        "similarity": "Masterful descending chord progression and incendiary lead guitar storytelling"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "difficulty": "Intermediate",
+        "similarity": "Frusciante's direct adaptation of Hendrix thumb-over chord-melody embellishments"
+      },
+      {
+        "title": "Bold as Love",
+        "artist": "Jimi Hendrix",
+        "difficulty": "Advanced",
+        "similarity": "Expansive major/minor thumb-over chord-melody with swirling phaser effects"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "blues",
+      "improvisation",
+      "phrasing",
+      "voice-leading",
+      "song-analysis"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

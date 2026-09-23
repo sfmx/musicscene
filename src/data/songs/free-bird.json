@@ -1,0 +1,339 @@
+{
+  "songInfo": {
+    "title": "Free Bird",
+    "artist": "Lynyrd Skynyrd",
+    "album": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+    "released": "1973",
+    "genre": "Classic Rock",
+    "tempo": "118 BPM",
+    "duration": "9:08",
+    "key": "G Major / G Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Expert",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G Major",
+      "modalCharacter": "Major Ballad Modulating into Minor Pentatonic Triplets",
+      "scalesUsed": [
+        {
+          "scale": "G Major Scale",
+          "notes": "G - A - B - C - D - E - F#",
+          "application": "The lyrical acoustic chord progressions and Gary Rossington's slide melodies in the ballad"
+        },
+        {
+          "scale": "G Minor Pentatonic",
+          "notes": "G - Bb - C - D - F",
+          "application": "Allen Collins' marathon, high-velocity triplet pull-off assault in the extended outro solo"
+        },
+        {
+          "scale": "G Blues Scale",
+          "notes": "G - Bb - C - Db - D - F",
+          "application": "Adding raw blues bite with the diminished fifth (Db) during fast repetitive pull-off phrases"
+        }
+      ],
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "G",
+          "D/F#",
+          "Em",
+          "F",
+          "C",
+          "D"
+        ],
+        "progression": "I - V/3 - vi - ♭VII - IV - V",
+        "description": "The classic southern rock ballad progression featuring descending bassline and flat-VII modal borrowing"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Ballad Verse",
+          "progression": "G - D/F# - Em - F - C - D",
+          "romanNumerals": "I - V/3 - vi - ♭VII - IV - V",
+          "description": "Heartfelt southern rock ballad with passing slash chord D/F# and borrowed mixolydian F major"
+        },
+        {
+          "section": "Ballad Chorus",
+          "progression": "Bb - C - G - Bb - C - G",
+          "romanNumerals": "♭III - IV - I - ♭III - IV - I",
+          "description": "Triumphant soul-gospel lift affirming 'And this bird you cannot change'"
+        },
+        {
+          "section": "Solo Jam Vamp",
+          "progression": "G - Bb - C",
+          "romanNumerals": "i - ♭III - IV (in G minor tonality)",
+          "description": "Relentless 3-chord freight-train cadence accelerating to 150 BPM for the 4-minute dual-lead marathon"
+        }
+      ],
+      "harmonicFunction": [
+        "First inversion D/F# bridges the tonic G to the relative minor Em with smooth bass voice-leading",
+        "F major (♭VII) injects the signature blues-rock swagger before resolving via plagal C major (IV)",
+        "The song executes a dramatic macro-shift from sweet G Major ballad into raw G Minor pentatonic rock fury",
+        "The 3-chord solo vamp (G - Bb - C) allows maximum modal freedom for extended 3-guitar harmonized soloing"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Melodic Slide Guitar Over Ballad Chords",
+      "description": "Gary Rossington's vocal-like Coricidin bottle slide guitar fills decorating the verses",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rossington used a glass medicine bottle placed on his middle or ring finger",
+          "Positions the slide directly over the fret wire for exact pitch intonation",
+          "Damps strings behind the slide with fretting fingers to eliminate harsh friction squeaks"
+        ],
+        "sequence": [
+          "Slide up from 3rd fret G to 7th fret B",
+          "Execute singing vibrato by gently rocking the wrist parallel to the string",
+          "Resolve down smoothly into the root note as the chord resolves"
+        ],
+        "tips": [
+          "Keep light slide touch on the strings—never press the strings down to touch the fretboard",
+          "Use high pickup output with mild compression to let slide notes sustain effortlessly"
+        ],
+        "chords": [
+          "G",
+          "D/F#",
+          "Em",
+          "F",
+          "C",
+          "D"
+        ],
+        "progression": "Ballad Verse"
+      }
+    },
+    {
+      "name": "Rapid-Fire Triplet Pull-Off Solo Stamina",
+      "description": "Allen Collins' legendary high-speed repetitive triplet lick played at 150 BPM across four minutes",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The most famous endurance guitar solo in southern rock history",
+          "Based on the classic Chuck Berry / Eric Clapton repeating triplet box pattern in G minor pentatonic",
+          "Executed on a 1958 Gibson Explorer / Firebird through cranked Marshall Plexi amps"
+        ],
+        "sequence": [
+          "Pick 15th fret on high E string",
+          "Pull off from 15th fret to 12th fret on B string",
+          "Strike 12th fret on high E string and repeat pattern rapidly at 150 BPM"
+        ],
+        "tips": [
+          "Keep fretting hand wrist relaxed and avoid clenching the thumb against the back of the neck",
+          "Practice with a metronome in 10-minute uninterrupted endurance blocks"
+        ],
+        "chords": [
+          "G5",
+          "Bb5",
+          "C5"
+        ],
+        "progression": "Solo Jam"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Ballad Intro & Slide Theme",
+      "timeStamp": "0:00-0:45",
+      "technique": "Glass Slide Countermelody & Organ Chords",
+      "key": "G Major",
+      "description": "Billy Powell's church organ opening joined by Gary Rossington's crying glass slide guitar theme.",
+      "chords": [
+        "G",
+        "D/F#",
+        "Em",
+        "F",
+        "C",
+        "D"
+      ],
+      "progression": "G - D/F# - Em - F - C - D",
+      "notes": [
+        "Gentle acoustic strumming supporting soaring slide lead",
+        "Intonate slide directly over frets 12, 14, and 15",
+        "Slow, singing vibrato with warm tube overdrive"
+      ],
+      "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) (2.6 0.5 0.4 2.3 3.2) | :2 (0.6 2.5 2.4 0.3 0.2 0.1) (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Ballad Chords & Slide"
+    },
+    {
+      "name": "Chorus (Bird You Cannot Change)",
+      "timeStamp": "1:45-2:15",
+      "technique": "Gospel Soul Cadence",
+      "key": "G Major",
+      "description": "Triumphant chorus affirming freedom with soulful backing vocal harmonies.",
+      "chords": [
+        "Bb",
+        "C",
+        "G"
+      ],
+      "progression": "Bb - C - G (♭III - IV - I)",
+      "notes": [
+        "Crisp barre chord strikes on Bb and C",
+        "Let the G major chord ring out cleanly",
+        "Accentuate the bass note walkup: Bb → C → D → G"
+      ],
+      "alphaTab": ":4 (1.5 3.4 3.3 3.2) (3.5 5.4 5.3 5.2) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (1.5 3.4 3.3 3.2) (3.5 5.4 5.3 5.2) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Chorus Cadence"
+    },
+    {
+      "name": "Tempo Acceleration & Solo Jam",
+      "timeStamp": "4:41-9:08",
+      "technique": "Triplet Pull-Off Marathon & Dual-Lead Harmonies",
+      "key": "G Minor",
+      "description": "The four-minute guitar solo freight-train accelerating to 150 BPM with Allen Collins and Gary Rossington.",
+      "chords": [
+        "G",
+        "Bb",
+        "C"
+      ],
+      "progression": "G - Bb - C (i - ♭III - IV)",
+      "notes": [
+        "Switch to bridge humbucker with cranked tube gain",
+        "Execute repetitive triplet pull-offs in 12th-15th fret box 1",
+        "Build stamina to sustain the blisteringly fast phrase repetitions"
+      ],
+      "alphaTab": ":8 15.2 12.2 15.2 12.2 15.2 12.2 | 15.1 12.1 15.1 12.1 15.1 12.1 | :4 15.1 :8 12.1 15.2 12.2 :4 14.3 |",
+      "exerciseLabel": "Triplet Pull-Off Solo Engine"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson 1958 Explorer / Firebird (Allen Collins) & Gibson Les Paul (Gary Rossington)",
+      "alternatives": [
+        "Gibson SG Standard",
+        "Epiphone Explorer 1958",
+        "Fender Stratocaster"
+      ],
+      "pickup": "High-output bridge humbuckers for bite and sustain; P-90 neck for slide"
+    },
+    "amp": {
+      "recommended": "Peavey Mace 160W (Solid-State Preamp / 6L6 Tube Power) & Marshall Super Lead",
+      "alternatives": [
+        "Marshall JCM800",
+        "Fender Twin Reverb",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "7/10",
+        "treble": "8/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "8/10"
+      }
+    },
+    "effects": {
+      "distortion": "MXR Distortion+ / cranked tube power amp saturation",
+      "reverb": "Stage room reverb with plate shimmer",
+      "other": "Coricidin glass bottle slide, Dunlop Cry Baby wah pedal"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Ballad Chords & Rhythm Foundation",
+      "steps": [
+        "Learn the 6-chord verse progression: G, D/F#, Em, F, C, D",
+        "Practice smooth thumb-over bass transition on D/F#",
+        "Strum comfortably at 118 BPM with standard 4/4 down-up pattern"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Glass Slide Technique & Solo Box 1",
+      "steps": [
+        "Place glass slide on middle or ring finger and master pitch intonation over fret wires",
+        "Learn the G minor pentatonic box 1 patterns at frets 12-15",
+        "Practice the G-Bb-C rhythm vamp at 130 BPM"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "advanced": {
+      "title": "The Marathon Triplet Endurance Solo",
+      "steps": [
+        "Drill the Allen Collins triplet pull-off motif starting at 100 BPM",
+        "Gradually accelerate to full performance tempo of 150 BPM",
+        "Build wrist stamina to play the continuous solo across the full 4-minute climax without fatigue"
+      ],
+      "timeEstimate": "4-8 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Tensing the fretting hand forearm during the repeating triplet solo causing cramping",
+      "Pressing the slide hard enough to touch the frets, causing metallic rattles",
+      "Rushing the tempo during the ballad verses"
+    ],
+    "practiceRoutine": [
+      "5 min: Chromatic finger dexterity and slide intonation warm-up",
+      "10 min: Slow drill of the triplet pull-off lick at 110 BPM with metronome",
+      "15 min: Continuous endurance jam over G - Bb - C backing track",
+      "10 min: Ballad verse slide precision practice"
+    ],
+    "focusAreas": [
+      "Fretting hand relaxation and endurance during high-speed repetitions",
+      "Accurate slide intonation directly above the fret wire",
+      "Seamless transition from major ballad into minor rock jam"
+    ],
+    "metronomeWork": [
+      "Start the triplet pull-off lick at 100 BPM in sixteenth-note triplets (6 notes per beat)",
+      "Increase by 4 BPM daily until reaching 150 BPM",
+      "Practice playing 32 consecutive bars of triplets without stopping"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Sweet Home Alabama",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic D-C-G fingerstyle riffing and Southern rock anthem lead guitar"
+      },
+      {
+        "title": "Simple Man",
+        "difficulty": "Beginner",
+        "similarity": "Soulful arpeggiated southern rock ballad moving through C, G, and Am"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "difficulty": "Intermediate",
+        "similarity": "Legendary multi-section epic transitioning from acoustic ballad into blazing pentatonic solo"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Advanced",
+        "similarity": "Extended dual-guitar harmony solo climax with legendary melodic counterpoint"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 100,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "lead-guitar",
+      "bending",
+      "slide",
+      "song-analysis",
+      "improvisation"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

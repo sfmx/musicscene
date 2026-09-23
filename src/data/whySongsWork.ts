@@ -1210,6 +1210,552 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'bohemian-rhapsody': {
+    slug: 'bohemian-rhapsody',
+    songTitle: 'Bohemian Rhapsody',
+    artist: 'Queen',
+    category: 'key-modulation',
+    categoryLabel: 'Emotional Key Modulations',
+    coreSecret: 'Multi-Section Rhapsodic Key Shifting with Vocalized Guitar Counterpoint',
+    emotionalHook: 'Bohemian Rhapsody defies standard verse-chorus pop structure by transitioning across multiple distinct tonal worlds: from a Bb Major / G Minor ballad, to an operatic section modulating rapidly through A Major, Eb Major, and F Major, into an Eb Major hard rock breakdown before resolving peacefully in F Major.',
+    romanProgression: 'Ballad: I - vi - ii - V | Solo: I - vi - IV - V | Rock: I - ♭VII - IV - I',
+    chords: ['Bb', 'Gm', 'Cm', 'F', 'Eb', 'Ab', 'Db'],
+    progressionExplanation: [
+      'Bb Major (I) to Gm (vi) in the Ballad: Classic diatonic descent establishing poignant lyricism.',
+      'Cm (ii) to F7 (V7): Traditional circle-of-fifths turnaround driving seamless cyclical resolution.',
+      'Modulation to Eb Major for Guitar Solo: Shifts focus to the subdominant key center, lifting the song into soaring emotional intensity.',
+      'Eb to Ab to Bb in Hard Rock Riff: High-energy rock power progression driving the headbanging climax.',
+    ],
+    voiceLeadingInsights: [
+      'The transition into the guitar solo uses a pivot chord technique: the Eb chord acts as IV in Bb Major, then becomes the tonic (I) of the solo.',
+      'Brian May treats the guitar solo as an operatic vocal aria, using continuous stepwise motion and expressive pitch bends rather than mechanical scale runs.',
+      'Multi-tracked guitar harmonies utilize parallel thirds and contrary-motion counterpoint inspired by classical orchestral arranging.',
+    ],
+    guitarPerspective: 'Brian May\'s home-built "Red Special" guitar plugged into a treble booster and cranked Vox AC30 tube amps. Use of out-of-phase pickup selection creates the signature cutting hollow midrange honk.',
+    songwriterTakeaway: 'Don\'t feel bound by a single key or tempo. Use smooth pivot chords (like Eb acting as IV in Bb, then tonic in the solo) to transport your listener into contrasting emotional landscapes.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Eb Major Scale', slug: 'major', description: 'The tonal scale underlying the iconic vocal guitar solo.' },
+        { name: 'Bb Major Scale', slug: 'major', description: 'The primary scale of the ballad sections.' },
+        { name: 'Eb Minor Pentatonic', slug: 'minor-pentatonic', description: 'Used during the heavy rock riff section.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Provides the radiant, melodic structure of the solo.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Rich diatonic voicings across Bb, Eb, and Ab.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Gm and Cm providing melancholic ballad depth.' },
+      ],
+      progressions: [
+        { name: 'I - vi - ii - V Progression', slug: 'i-vi-ii-v', description: 'The circle turnaround underpinning the ballad verses.' },
+      ],
+    },
+  },
+
+  'creep': {
+    slug: 'creep',
+    songTitle: 'Creep',
+    artist: 'Radiohead',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Chromatic Descent of Modal Interchange: The Minor Plagal Cadence (IV to iv)',
+    emotionalHook: 'The entire song is powered by an inescapable 4-chord loop: G - B - C - Cm (I - III - IV - iv). The heartbreaking emotional pivot arrives when C major drops one single note by a half step—the E natural sinks to Eb—transforming into C minor (the minor subdominant borrowed from G Parallel Minor). This minor plagal cadence creates an overwhelming sense of collapse and melancholic longing.',
+    romanProgression: 'I - III - IV - iv',
+    chords: ['G', 'B', 'C', 'Cm'],
+    progressionExplanation: [
+      'G (I): Warm, stable root tonic establishing standard G Major tonality.',
+      'B (III): Major mediant secondary dominant (V/vi) introducing D# chromatic tension leading into C.',
+      'C (IV): Bright, hopeful diatonic subdominant providing open harmonic relief.',
+      'Cm (iv): The emotional masterstroke—borrowed minor subdominant from G parallel minor, pulling chromatically back home.',
+    ],
+    voiceLeadingInsights: [
+      'The defining voice leading thread is the chromatic descending inner voice: D (in G) → D# (in B) → E (in C) → Eb (in Cm) → D (in G).',
+      'The sudden downward pull from E natural (in C) to Eb (in Cm) creates the unmistakable feeling of emotional defeat.',
+      'Ed O\'Brien\'s clean arpeggios emphasize the top strings, ensuring the moving chromatic inner voice cuts clearly through the mix.',
+    ],
+    guitarPerspective: 'Ed O\'Brien plays ringing arpeggiated barre chords with light tremolo and chorus. Jonny Greenwood interrupts the serene arpeggios before each chorus with his legendary dead-string muted "crunch rakes" (striking fret hand mutes violently behind the bridge) through a cranked Marshall ShredMaster distortion pedal.',
+    songwriterTakeaway: 'To give a simple 4-chord loop profound emotional weight, follow a major IV chord with a minor iv chord before returning to the tonic. That single half-step descending voice (3rd of IV to flat-3rd of iv) does all the emotional heavy lifting.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The overall key center and diatonic foundation.' },
+        { name: 'G Minor (Parallel Minor)', slug: 'minor', description: 'The borrowed source of the heartbreaking Cm chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The parallel mode supplying the minor subdominant (iv).' },
+      ],
+      chords: [
+        { name: 'Barre Chords', slug: 'barre', description: 'Root-6 and Root-5 barre shapes used throughout the song.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Understanding the sorrowful color of the borrowed Cm chord.' },
+      ],
+      progressions: [
+        { name: 'I - IV - iv - I Progression', slug: 'minor-plagal', description: 'The classic minor plagal cadence.' },
+      ],
+    },
+  },
+
+  'here-comes-the-sun': {
+    slug: 'here-comes-the-sun',
+    songTitle: 'Here Comes the Sun',
+    artist: 'The Beatles',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'Capoed Open String Pedal Harmonics with Asymmetrical Indian Metric Cycles',
+    emotionalHook: 'Written in Eric Clapton\'s garden on an acoustic guitar with a capo at the 7th fret, "Here Comes the Sun" combines radiant open D-shape acoustic ring with irregular rhythmic cycles inspired by Indian classical music. The bridge cycles through 11/8, 4/4, and 7/8 measures, creating a buoyant sense of sunrise that defies standard pop predictability.',
+    romanProgression: 'I - IV - V7 (shapes relative to Capo 7)',
+    chords: ['D', 'G', 'A7', 'E7', 'F', 'C'],
+    progressionExplanation: [
+      'D (I): Radiant capoed tonic providing open string ring across the 4th, 3rd, and 2nd strings.',
+      'G (IV): Lyrical subdominant providing pastoral lift and warmth.',
+      'E7 (V/V) to A7 (V7): Secondary dominant walkup bringing chromatic G# tension leading into the dominant.',
+      'Bridge Cycle (F - C - G - D - A): Descending circle of fourths against shifting 11/8, 4/4, and 7/8 time signatures.',
+    ],
+    voiceLeadingInsights: [
+      'The 7th fret capo shifts the resonant frequencies into a shimmering mandolin/harpsichord acoustic register.',
+      'George Harrison leaves the open 1st, 2nd, and 3rd strings ringing as acoustic drones while hammer-ons decorate the top melody.',
+      'The bridge groups eighth notes in asymmetrical clusters (3+3+3+2 for 11/8), giving the repetition of "Sun, sun, sun" unstoppable momentum.',
+    ],
+    guitarPerspective: 'Gibson J-200 with capo securely placed on fret 7. Master the pinky hammer-on on the 1st string while holding the open D chord grip. Keep the picking wrist supple and free-floating.',
+    songwriterTakeaway: 'Use a high capo position to completely alter the sonic character of simple open chord shapes, and introduce an odd-meter rhythmic cycle in the bridge to elevate a folk progression into a timeless masterpiece.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Scale', slug: 'major', description: 'The concert key scale of the song.' },
+        { name: 'D Major Scale', slug: 'major', description: 'The scale shapes relative to the 7th fret capo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright, joyful major mode foundation.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'open', description: 'Open D, G, and A7 shapes relative to capo.' },
+        { name: 'Secondary Dominants', slug: 'secondary-dominants', description: 'E7 acting as V/V leading into A7.' },
+      ],
+      progressions: [
+        { name: 'I - IV - V Progression', slug: 'i-iv-v', description: 'The foundational folk-pop cadence.' },
+      ],
+    },
+  },
+
+  'nothing-else-matters': {
+    slug: 'nothing-else-matters',
+    songTitle: 'Nothing Else Matters',
+    artist: 'Metallica',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The 6/8 Compound Open-String E Minor Triad with Classical Harmonic Dominant (B7)',
+    emotionalHook: 'The intro is famous for requiring zero fretting-hand fingers: the open 6th (E), 3rd (G), 2nd (B), and 1st (e) strings naturally spell an Em triad. By setting this in 6/8 compound meter and introducing the major dominant B7 (borrowed from E Harmonic Minor with its raised D# leading tone), Hetfield fuses heavy metal darkness with classical Spanish elegance.',
+    romanProgression: 'i - ♭VII - ♭VI - i (with V7 turnaround)',
+    chords: ['Em', 'D', 'C', 'G', 'B7'],
+    progressionExplanation: [
+      'Em (i): Open-string acoustic resonance establishing the dark, expansive E minor tonality.',
+      'D (♭VII) to C (♭VI): Stepwise natural minor descent generating melancholy ballad weight.',
+      'G (♭III): Brief major-key illumination connecting the verses.',
+      'B7 (V7): The classical harmonic minor dominant containing D# leading tone pulling decisively into Em.',
+    ],
+    voiceLeadingInsights: [
+      'The open-string intro exploits natural acoustic overtone reinforcement, ringing cleanly across all six strings.',
+      'The D# in the B7 chord provides a sharp half-step upward tension into the root E, preventing the progression from sounding like simple cyclical pop.',
+      'The 6/8 meter (ONE-two-three, TWO-two-three) gives the arpeggios a sweeping, waltz-like rock cadence.',
+    ],
+    guitarPerspective: 'Fingerpick the intro with thumb on bass notes and index/middle/ring on upper strings. In the electric guitar solo, Hetfield emphasizes singing full bends and wide finger vibrato rather than rapid shredding.',
+    songwriterTakeaway: 'Take advantage of natural open-string tunings or open-string triads on the guitar, and never hesitate to use a major V7 chord in a minor key ballad to inject classical gravitas.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Natural Minor (Aeolian)', slug: 'minor', description: 'The scale supplying the open chords and acoustic verse melody.' },
+        { name: 'E Harmonic Minor', slug: 'harmonic-minor', description: 'The source of the raised D# leading tone inside the B7 chord.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The framework for James Hetfield\'s electric guitar solo.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The quintessential natural minor mode.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Open Em chord voice leading.' },
+        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'B7 harmonic tension chord.' },
+      ],
+      progressions: [
+        { name: 'i - ♭VII - ♭VI Progression', slug: 'i-bvii-bvi', description: 'The iconic epic minor rock progression.' },
+      ],
+    },
+  },
+
+  'kashmir': {
+    slug: 'kashmir',
+    songTitle: 'Kashmir',
+    artist: 'Led Zeppelin',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'The Ascending Chromatic Octave Counterpoint Over Stationary DADGAD Open Drone in 3/4 over 4/4 Polymeter',
+    emotionalHook: 'Kashmir\'s hypnotic, unstoppable momentum is generated by two ingenious compositional devices: an ascending chromatic octave line (D - D# - E - F - F# - G - G# - A) played against a continuous open DADGAD modal drone, superimposed polymetrically in 3/4 time against John Bonham\'s immovable 4/4 rock drum groove.',
+    romanProgression: 'Ascending chromatic octave movement over stationary tonic D pedal drone',
+    chords: ['D5', 'D(add9)', 'D(add4)', 'D(add#11)', 'A', 'G'],
+    progressionExplanation: [
+      'Stationary DADGAD Drone: Three octaves of D and two fifths (A) vibrating continuously without major or minor third.',
+      'Ascending Chromatic Octaves: Fretted line moving up half-steps against the drone, cycling through unresolved tensions.',
+      'Bridge Fanfare (A - G - D): Exultant Middle-Eastern modal fanfare providing expansive tonal release.',
+    ],
+    voiceLeadingInsights: [
+      'The ascending octave line creates every possible interval against the open D drone: unisons, minor seconds, major seconds, minor thirds, major thirds, perfect fourths, tritones, and fifths.',
+      'The metric friction between the 3-beat guitar riff and the 4-beat drum rhythm takes 12 quarter notes (3 bars of 4/4) to align, keeping the listener in constant hypnotic suspense.',
+      'The absence of a third in the open DADGAD chord leaves the harmony ambiguous—neither happy nor sad, but ancient and monumental.',
+    ],
+    guitarPerspective: 'Tune your guitar to DADGAD. Fret the octave notes on the 5th and 3rd strings with index and ring fingers, leaving strings 6, 4, 2, and 1 to ring completely open. Keep pick attack tight and syncopated.',
+    songwriterTakeaway: 'Keep an open drone ringing underneath an ascending chromatic line to create relentless dramatic tension, and experiment with metric modulation (3 against 4) to make simple riffs feel monumental.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Mixolydian Mode', slug: 'mixolydian', description: 'The scale underlying the triumphant bridge fanfare.' },
+        { name: 'D Chromatic Scale', slug: 'chromatic', description: 'The ascending octave sequence creating chromatic tension.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Powers the ascending brass/guitar chords.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Open D5 modal drone chord voicings.' },
+        { name: 'Drone Harmony', slug: 'drone', description: 'Stationary pedal-point harmonic techniques.' },
+      ],
+      progressions: [
+        { name: 'Pedal Point Riffs', slug: 'pedal-point', description: 'Harmonic movement over stationary bass notes.' },
+      ],
+    },
+  },
+
+  'free-bird': {
+    slug: 'free-bird',
+    songTitle: 'Free Bird',
+    artist: 'Lynyrd Skynyrd',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrids & Minor Pentatonic',
+    coreSecret: 'Southern Rock Dual-Identity: Gospel Ballad Descending Cadence to Incendiary G Minor Triplet Marathon',
+    emotionalHook: 'Free Bird achieves legendary status through its dramatic two-part structural journey: an intimate, gospel-influenced G major ballad with a descending bassline (G - D/F# - Em - F - C - D) that suddenly accelerates at 4:41 into a relentless 150 BPM G minor pentatonic freight-train featuring Allen Collins\' four-minute repeating triplet pull-off marathon.',
+    romanProgression: 'Ballad: I - V/3 - vi - ♭VII - IV - V | Solo Jam: i - ♭III - IV',
+    chords: ['G', 'D/F#', 'Em', 'F', 'C', 'D', 'Bb'],
+    progressionExplanation: [
+      'G (I) to D/F# (V/3) to Em (vi): Classic stepwise descending bassline establishing emotional lyricism.',
+      'F (♭VII) to C (IV) to D (V): Borrowed Mixolydian chord followed by gospel plagal cadence resolving to dominant D.',
+      'Bb (♭III) to C (IV) to G (I) in the Chorus: Soulful cadence declaring "And this bird you cannot change."',
+      'G - Bb - C Solo Jam: Relentless modal 3-chord freight train in G minor driving the extended twin-lead solo.',
+    ],
+    voiceLeadingInsights: [
+      'The D/F# slash chord connects G to Em smoothly through the bass voice without jumping octave registers.',
+      'The transition from Part 1 (G Major) to Part 2 (G Minor) represents a complete emotional and modal pivot from tender ballad to aggressive rock fury.',
+      'The repeating triplet lick (15th fret high E, 15-12 pull-off on B, 12th fret high E) creates a perpetual-motion acoustic engine that builds unbearable excitement.',
+    ],
+    guitarPerspective: 'Gary Rossington plays vocal slide fills using a glass Coricidin medicine bottle in standard tuning during the ballad. Allen Collins switches to high-output bridge humbucker on his 1958 Gibson Explorer for the high-velocity triplet solo.',
+    songwriterTakeaway: 'Structure an epic song as a two-act drama: begin with a soulful, lyrical ballad in a major key, then pivot into the parallel minor for an explosive, high-tempo instrumental climax.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The scale governing the ballad chords and slide melodies.' },
+        { name: 'G Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation of the 4-minute fast triplet outro solo.' },
+        { name: 'G Blues Scale', slug: 'blues', description: 'Supplies the blue note (Db) for aggressive solo bends.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Underpins the heartfelt ballad verses.' },
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The parallel minor mode driving the high-energy solo jam.' },
+      ],
+      chords: [
+        { name: 'Slash Chords', slug: 'slash', description: 'D/F# thumb-over first inversion voice leading.' },
+        { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D shapes in the ballad.' },
+      ],
+      progressions: [
+        { name: 'Descending Bassline Progressions', slug: 'descending-bassline', description: 'G to D/F# to Em stepwise motion.' },
+      ],
+    },
+  },
+
+  'time': {
+    slug: 'time',
+    songTitle: 'Time',
+    artist: 'Pink Floyd',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'F# Dorian Verse (i - IV) to Lyrical Major-Seventh Chorus (Dmaj7 - Amaj7)',
+    emotionalHook: 'The existential anxiety of the verse is captured in an unyielding F# Dorian loop (F#m - B), where the major IV chord (B) introduces the bright D# 6th degree. When the chorus arrives, the harmony blossoms into soaring, bittersweet acceptance through lush major 7th chords (Dmaj7 and Amaj7), contrasting the cold tick of the clock with romantic human warmth.',
+    romanProgression: 'Verse: i - ♭III - ♭VII - i | Chorus: ♭VI - I - ♭VI - I - v - iv - ♭VII',
+    chords: ['F#m', 'A', 'E', 'B', 'Dmaj7', 'Amaj7', 'C#m', 'Bm'],
+    progressionExplanation: [
+      'F#m (i) to B (IV): The hallmark F# Dorian cadence featuring the raised 6th (D#) injecting momentary hope.',
+      'Dmaj7 (♭VI) to Amaj7 (I): Breathtaking chorus expansion contrasting the relative major with open seventh extensions.',
+      'C#m (v) to Bm (iv) to E (♭VII): Descending minor turnaround building momentum back into the verse.',
+      'Solo Vamp (F#m - Bm - Dmaj7 - E): High-dynamic progression providing the canvas for Gilmour\'s soaring fuzz leads.',
+    ],
+    voiceLeadingInsights: [
+      'The Dmaj7 chord introduces C# as the major seventh, linking back to the tonic root note of the verse.',
+      'The move from Dmaj7 to Amaj7 keeps the shared notes (A, C#, E) ringing, creating an expansive, seamless harmonic wash.',
+      'David Gilmour\'s multi-step over-bends target chord tones (F#, C#, E) at the peak of the phrase, delivering singing emotional resolutions.',
+    ],
+    guitarPerspective: 'David Gilmour played "The Black Strat" with a Dallas Arbiter Silicon Fuzz Face, Colorsound Power Boost, and Binson Echorec tape delay into a cranked Hiwatt DR103 100W head. Use wide wrist vibrato at the peak of every full bend.',
+    songwriterTakeaway: 'Use Dorian harmony (i - IV) to keep a minor key verse feeling hypnotic and forward-moving, then explode into lush major 7th chords in the chorus for an overwhelming emotional release.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F# Dorian Mode', slug: 'dorian', description: 'The modal engine behind the cyclical verse groove.' },
+        { name: 'F# Minor Pentatonic', slug: 'minor-pentatonic', description: 'The scale behind David Gilmour\'s iconic guitar solo.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'Supplies the bright major IV chord (B).' },
+      ],
+      chords: [
+        { name: 'Major Seventh Chords', slug: 'major-seventh', description: 'Dmaj7 and Amaj7 lush chord voicings.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'F#m and Bm minor anchors.' },
+      ],
+      progressions: [
+        { name: 'i - ♭III - ♭VII Progression', slug: 'i-biii-bvii', description: 'The classic rock minor cadence.' },
+      ],
+    },
+  },
+
+  'basket-case': {
+    slug: 'basket-case',
+    songTitle: 'Basket Case',
+    artist: 'Green Day',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Basslines & Slash Chords',
+    coreSecret: 'Pachelbel Canon Classical Voice Leading Accelerated into 175 BPM Pop-Punk Adrenaline',
+    emotionalHook: 'Underneath its snotty 175 BPM punk-rock aggression, Basket Case is built directly on Johann Pachelbel\'s 17th-century Canon in D: I - V - vi - iii - IV - I - IV - V (Eb - Bb - Cm - Gm - Ab - Eb - Ab - Bb). By speeding up this ancient descending stepwise bassline and playing it with palm-muted downstroke power chords, Green Day gave punk rock classical harmonic inevitability.',
+    romanProgression: 'I - V - vi - iii - IV - I - V',
+    chords: ['Eb5', 'Bb5', 'C5', 'G5', 'Ab5'],
+    progressionExplanation: [
+      'Eb5 (I) to Bb5 (V): Tonic to dominant opening establishing bold major tonality.',
+      'C5 (vi) to G5 (iii): Stepwise descent into minor mediants creating melancholy emotional depth.',
+      'Ab5 (IV) to Eb5 (I): Plagal cadence providing uplifting punk optimism.',
+      'Ab5 (IV) to Bb5 (V): Dominant turnaround driving circular resolution back to the tonic Eb5.',
+    ],
+    voiceLeadingInsights: [
+      'The bass roots step down continuously: Eb → D (implied) → C → Bb (implied) → Ab → G (implied) → Ab → Bb.',
+      'This descending voice-leading has resonated in western ears for over 300 years, making the melody instantly catchy on first listen.',
+      'Half-step down tuning (Eb standard) slackens string tension, giving the fast palm-muted downstrokes heavy percussive chug.',
+    ],
+    guitarPerspective: 'Billie Joe Armstrong plays his iconic Fernandes Strat "Blue" with an angled Seymour Duncan JB humbucker into modded Marshall Super Lead heads. Keep your picking wrist springy and relaxed to maintain 175 BPM downstroke stamina.',
+    songwriterTakeaway: 'Steal from the classical masters. Accelerating a famous baroque progression (like Pachelbel\'s Canon) with modern high-gain guitar textures produces instant anthemic power.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Eb Major Scale', slug: 'major', description: 'The diatonic scale supplying the Pachelbel harmony.' },
+        { name: 'Eb Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic hooks and vocal melody.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The foundational major mode.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Two-finger Root-5 and Root-6 power chord grips.' },
+      ],
+      progressions: [
+        { name: 'Pachelbel Canon Progression', slug: 'pachelbel', description: 'I - V - vi - iii - IV - I - V classical sequence.' },
+      ],
+    },
+  },
+
+  'say-it-aint-so': {
+    slug: 'say-it-aint-so',
+    songTitle: 'Say It Ain\'t So',
+    artist: 'Weezer',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Harmonic Minor Dominant (G#) in a 4-Chord Alt-Rock Loop with Extreme Dynamic Contrast',
+    emotionalHook: 'The entire song cycles through C#m - G# - A - E. The harmonic engine is the unexpected major V chord (G#) borrowed from C# Harmonic Minor: its B# leading tone cries for resolution up to C#, but instead steps down deceptively to A major (VI), creating an unresolved psychological tension that mirrors the lyrics of family trauma and addiction.',
+    romanProgression: 'i - V - VI - III',
+    chords: ['C#m', 'G#', 'A', 'E'],
+    progressionExplanation: [
+      'C#m (i): Moody minor tonic establishing melancholy narrative intimacy.',
+      'G# (V): Major dominant borrowed from C# Harmonic Minor, injecting sharp leading-tone tension (B#).',
+      'A (VI): Deceptive resolution stepping down to the submediant, subverting expectations.',
+      'E (III): Uplifting resolution to the relative major completing the 4-chord circle.',
+    ],
+    voiceLeadingInsights: [
+      'The voice-leading thread moves chromatically: B (in C#m) → B# (in G#) → C# (in A) → B (in E), creating continuous inner-voice counterpoint.',
+      'Extreme dynamics: delicate clean reggae-style upstrokes on offbeats in the verse contrast with explosive walls of fuzz in the chorus.',
+      'The B# leading tone in the G# chord gives the progression classical gravitas that standard natural minor (G#m) cannot match.',
+    ],
+    guitarPerspective: 'Play clean offbeat reggae skanks with your fretting hand choking strings immediately after each upstroke. In the chorus, stomp on an Electro-Harmonix Big Muff or crank your amp gain for colossal grunge power.',
+    songwriterTakeaway: 'Replace your minor v chord with a major V chord in a minor key progression, and let it resolve deceptively to VI. It creates an unforgettable, emotionally complex harmonic hook.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C# Natural Minor', slug: 'minor', description: 'The primary scale of the verse melodies and clean chords.' },
+        { name: 'C# Harmonic Minor', slug: 'harmonic-minor', description: 'The source of the raised B# leading tone in the G# major chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode foundation.' },
+      ],
+      chords: [
+        { name: 'Barre Chords', slug: 'barre', description: 'Root-5 and Root-6 barre chords used throughout.' },
+        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'G# major dominant harmony.' },
+      ],
+      progressions: [
+        { name: 'i - V - VI - III Progression', slug: 'i-v-vi-iii', description: 'The cyclical alternative rock progression.' },
+      ],
+    },
+  },
+
+  'cant-stop': {
+    slug: 'cant-stop',
+    songTitle: 'Can\'t Stop',
+    artist: 'Red Hot Chili Peppers',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'E Dorian Funk Raking Across Muted Strings with Stationary Melodic Target Note',
+    emotionalHook: 'Frusciante builds the ultimate percussive funk-rock groove by raking all 6 strings while fretting only one note at a time. The bass roots cycle E - D - B - C (i - ♭VII - v - ♭VI), while the 7th fret D on the 3rd string acts as a ringing melodic anchor, injecting bright E Dorian swagger that drives the song with perpetual forward motion.',
+    romanProgression: 'i - ♭VII - v - ♭VI (Verse) | ♭III - ♭VII - v - ♭VI (Chorus)',
+    chords: ['Em', 'D', 'Bm', 'C', 'G'],
+    progressionExplanation: [
+      'Em (i) to D (♭VII): Driving funk-rock cadence establishing athletic bounce.',
+      'Bm (v) to C (♭VI): Minor dominant moving to submediant creating melodic lift.',
+      'G (♭III) in Chorus: Explodes into triumphant relative major harmony.',
+      'Single-Note Melody Rake: The top note (D) rings as a stationary pedal while the bass shifts beneath it.',
+    ],
+    voiceLeadingInsights: [
+      'By strumming across all six strings while muting five of them, Frusciante turns the guitar into a polyphonic drum kit.',
+      'The alternating bass notes (E → D → B → C) outline the full harmonic structure without playing full chords.',
+      'The chorus opens up into full ringing triads, creating massive dynamic relief after the percussive verse.',
+    ],
+    guitarPerspective: 'Wrap your thumb over the neck to mute the low E string, and lay your fretting index finger flat to silence adjacent strings. Keep your right hand in continuous sixteenth-note pendulum motion.',
+    songwriterTakeaway: 'A single-note melody can feel as massive as a full chord progression if you support it with percussive string rakes and dynamic root motion in the bass.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Dorian Mode', slug: 'dorian', description: 'The funk mode supplying the bright major 6th (C#).' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The framework for the iconic single-note main riff.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The quintessential rock-funk mode.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'open', description: 'Open G, D, and C voicings in the chorus.' },
+      ],
+      progressions: [
+        { name: 'i - ♭VII - v - ♭VI Progression', slug: 'i-bvii-v-bvi', description: 'The driving funk cadence.' },
+      ],
+    },
+  },
+
+  'killing-in-the-name': {
+    slug: 'killing-in-the-name',
+    songTitle: 'Killing in the Name',
+    artist: 'Rage Against the Machine',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrids & Minor Pentatonic',
+    coreSecret: 'Drop D Heavy Metal Tritone Dissonance (Ab) Combined with Hip-Hop Syncopation',
+    emotionalHook: 'Tom Morello takes the raw primal energy of a Drop D power chord and supercharges it with the devil\'s interval: the tritone blue note Ab (fret 6). By stabbing this dissonant passing note against heavy palm-muted low D power chords on offbeats, the song merges hip-hop syncopation with incendiary metal defiance.',
+    romanProgression: 'i - ♭III - i - ♭III - IV - ♭V - IV - ♭III',
+    chords: ['D5', 'F5', 'G5', 'Ab5', 'C5'],
+    progressionExplanation: [
+      'D5 (i): Thunderous open Drop D root establishing immovable low-end punch.',
+      'F5 (♭III) to G5 (IV): Blues scale ascent creating urgent forward drive.',
+      'Ab5 (♭V): The explosive tritone blue-note stab delivering confrontational dissonance.',
+      'Ab5 to G5 to F5: Chromatic descent resolving back into the heavy D5 groove.',
+    ],
+    voiceLeadingInsights: [
+      'Tuning the low E string down to D drops the guitar\'s resonant floor, making power chords sound like an 808 sub-bass kick.',
+      'The chromatic slide across frets 5-6-5 (G → Ab → G) creates immediate visceral tension that demands resolution.',
+      'The silent gaps between chord stabs are as important as the notes themselves, allowing Brad Wilk\'s drums to hit with brutal impact.',
+    ],
+    guitarPerspective: 'Drop low E string to D. Use a single index finger to barre across the bottom three strings (D-A-D). In the solo, set your DigiTech Whammy pedal to +2 Octaves Up and sweep the treadle in time with your pick strikes.',
+    songwriterTakeaway: 'In Drop D tuning, don\'t just stay on root power chords: use the diminished fifth / tritone as a passing stab to inject dangerous, rebellious attitude into your riffs.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Minor Blues Scale', slug: 'blues', description: 'Contains the critical Ab blue note (fret 6).' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation of the whammy pedal guitar solo.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode underlying the D5 power riffs.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'One-finger Drop D power chords.' },
+      ],
+      progressions: [
+        { name: 'Blues-Metal Riffs', slug: 'blues-metal', description: 'Drop D riffing utilizing tritone passing chords.' },
+      ],
+    },
+  },
+
+  'the-trooper': {
+    slug: 'the-trooper',
+    songTitle: 'The Trooper',
+    artist: 'Iron Maiden',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrids & Minor Pentatonic',
+    coreSecret: 'Twin-Guitar Diatonic Thirds Counterpoint over Unrelenting Gallop Rhythm',
+    emotionalHook: 'The immortal dual-guitar lead harmonizes in diatonic thirds (E minor melody in the lower guitar, G major third above in the upper guitar), echoing 19th-century classical orchestration. Underneath, Steve Harris\' galloping bass and Nicko McBrain\'s snare drive a breathless cavalry charge in Aeolian natural minor (i - ♭VI - ♭VII - i).',
+    romanProgression: 'i - ♭VI - ♭VII - i',
+    chords: ['Em', 'C', 'D'],
+    progressionExplanation: [
+      'Em (i): Battle-hardened minor tonic establishing heroic British metal authority.',
+      'C (♭VI): Dramatic lift to the submediant representing epic struggle.',
+      'D (♭VII): Whole-step below the tonic, providing anthemic forward drive.',
+      'Em (i): Unrelenting resolution resetting the galloping charge.',
+    ],
+    voiceLeadingInsights: [
+      'Guitar 1 plays root melody: E - F# - G - F# - E - D - E - F#.',
+      'Guitar 2 plays a diatonic third above: G - A - B - A - G - F# - G - A, perfectly outlining the underlying Em and D harmony.',
+      'The gallop picking pattern (eighth note + two sixteenth notes) locks the rhythm section into the sound of charging cavalry hooves.',
+    ],
+    guitarPerspective: 'Dave Murray and Adrian Smith both play Stratocasters with DiMarzio humbuckers through cranked Marshall JCM800 tube stacks. Ensure both players apply synchronized vibrato on sustained notes.',
+    songwriterTakeaway: 'Harmonize your lead guitar melodies in diatonic thirds to instantly give a rock song an epic, classical grandeur that a single guitar line cannot achieve alone.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Natural Minor (Aeolian)', slug: 'minor', description: 'The scale supplying the harmonized twin leads.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for Adrian Smith and Dave Murray\'s solos.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode engine of heavy metal.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Em5, C5, and D5 power chords.' },
+      ],
+      progressions: [
+        { name: 'i - ♭VI - ♭VII Progression', slug: 'i-bvi-bvii', description: 'The quintessential heavy metal cadence.' },
+      ],
+    },
+  },
+
+  'texas-flood': {
+    slug: 'texas-flood',
+    songTitle: 'Texas Flood',
+    artist: 'Stevie Ray Vaughan and Double Trouble',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrids & Minor Pentatonic',
+    coreSecret: 'Slow 12/8 Texas Blues Dynamics with Microtonal Vocal Bends on Heavy .013 Strings',
+    emotionalHook: 'Stevie Ray Vaughan turned slow 12-bar blues into a high-art emotional tempest. In slow 12/8 time at 60 BPM, every note has immense room to expand. By tuning down a half-step and stringing his Strat with massive .013-.058 gauge wire, his weeping quarter-tone curls and singing forearm vibrato sound like a human voice crying in the rain.',
+    romanProgression: 'I7 - IV9 - I7 - I7 - IV9 - IV9 - I7 - I7 - V9 - IV9 - I7 - V9',
+    chords: ['G7', 'C9', 'D9'],
+    progressionExplanation: [
+      'G7 (I7): Dominant blues tonic establishing raw Texas swagger.',
+      'C9 (IV9): Sophisticated jazz-blues subdominant with rich ninth extension.',
+      'D9 (V9) to C9 (IV9): Classic blues turnaround tension resolving chromatically back to G7.',
+      'Slow Turnaround (G7 - G7/F - G7/E - G7/Eb - D9): Chromatic descending bassline voice-leading.',
+    ],
+    voiceLeadingInsights: [
+      'Microtonal bends: curling the minor 3rd (Bb) slightly sharp toward the major 3rd (B) creates the iconic weeping Texas blues vocal inflection.',
+      'Slow 12/8 compound meter (counted ONE-and-a, TWO-and-a, THREE-and-a, FOUR-and-a) provides enormous acoustic space between pick attacks.',
+      'Heavy string gauge (.013-.058) gives every single note colossal acoustic mass, singing sustain, and rich tube amplifier harmonic bloom.',
+    ],
+    guitarPerspective: 'Stevie played his 1963 Strat "Number One" with heavy .013 strings into a 1964 Fender Vibroverb and Dumble Steel String Singer with an Ibanez TS808 Tube Screamer as a clean boost. Use forearm rotation for wide, singing vibrato.',
+    songwriterTakeaway: 'In slow blues, don\'t overplay: let each note bloom with dynamic touch, and use microtonal curls to make your guitar weep with authentic human emotion.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Minor Blues Scale', slug: 'blues', description: 'The foundation of vocal-like weeping slow blues bends.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'Sweet major thirds blended into Texas blues phrasing.' },
+        { name: 'G Mixolydian Mode', slug: 'mixolydian', description: 'Governs dominant 9th chord comping and turnaround chords.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Dominant scale foundation for C9 and D9 chords.' },
+      ],
+      chords: [
+        { name: 'Ninth Chords', slug: 'ninth', description: 'Movable C9 and D9 chord shapes.' },
+        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'G7 blues tonic chord.' },
+      ],
+      progressions: [
+        { name: '12-Bar Blues', slug: '12-bar-blues', description: 'The slow 12-bar blues chassis with chromatic turnaround.' },
+      ],
+    },
+  },
 };
 
 /**

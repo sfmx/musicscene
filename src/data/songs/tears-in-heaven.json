@@ -1,0 +1,371 @@
+{
+  "songInfo": {
+    "title": "Tears in Heaven",
+    "artist": "Eric Clapton",
+    "album": "Rush (Soundtrack) / Unplugged",
+    "released": "1992",
+    "genre": "Acoustic",
+    "tempo": "80 BPM",
+    "duration": "4:32",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Major",
+      "modalCharacter": "Ionian with Classical Voice Leading",
+      "scalesUsed": [
+        {
+          "scale": "A Major Scale",
+          "notes": "A - B - C# - D - E - F# - G#",
+          "application": "The diatonic framework for the descending basslines and gentle melodic motifs"
+        },
+        {
+          "scale": "F# Minor Pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "Expressive acoustic blues fills in the verse turnarounds and solo"
+        },
+        {
+          "scale": "A Major Pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Sweet lyrical lead passages connecting chorus resolutions back to the intro"
+        }
+      ],
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "E/G#",
+          "F#m",
+          "A/E",
+          "D/F#",
+          "E7sus4",
+          "E7",
+          "A"
+        ],
+        "progression": "I - V/3 - vi - I/5 - IV/3 - V7sus4 - V7 - I",
+        "description": "A textbook classical descending bassline (A - G# - F# - E - D) providing heartbreaking voice-leading"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "A - E/G# - F#m - A/E - D/F# - E7 - A",
+          "romanNumerals": "I - V/3 - vi - I/5 - IV/3 - V7 - I",
+          "description": "The signature descending bass fingerpicking sequence underpinning the vocal reflection"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C#m - F#m - Bm7 - E7 - A",
+          "romanNumerals": "iii - vi - ii7 - V7 - I",
+          "description": "Circle-of-fifths diatonic progression asking 'Would you know my name?'"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C - G/B - Am - D/F# - G - D/F# - Em - D",
+          "romanNumerals": "♭III - ♭VII/3 - ♭vii - IV/3 - ♭VII - IV/3 - v - IV",
+          "description": "Temporary modulation to C major / G major expressing grief and resilience ('Time can bring you down')"
+        }
+      ],
+      "harmonicFunction": [
+        "Descending stepwise bassline A → G# → F# → E → D creates an inescapable feeling of emotional gravity",
+        "First inversion slash chords (E/G#, D/F#) smooth out chord changes into continuous linear counterpoint",
+        "Suspension on E7sus4 delays the final resolution to A, heightening vulnerability",
+        "Bridge modulation to the flat-mediant C major introduces bittersweet dramatic tension"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Classical Nylon-String Fingerpicking",
+      "description": "PIMA right-hand fingerstyle technique balancing independent basslines with simultaneous treble chord plucks",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Clapton played a custom Juan Alvarez nylon-string classical guitar on the recording",
+          "Thumb (P) strictly controls strings 6, 5, and 4; index (I), middle (M), and ring (A) pluck strings 3, 2, and 1",
+          "Right-hand fingernails or fleshy fingertips provide warm, intimate tone"
+        ],
+        "sequence": [
+          "Thumb plucks root bass note on downbeat",
+          "Fingers simultaneously pluck treble strings on the 'and' of the beat",
+          "Thumb steps down to the next descending bass note on beat 2"
+        ],
+        "tips": [
+          "Keep the right hand arched comfortably over the soundhole",
+          "Do not anchor your pinky finger on the guitar top; keep hand floating freely"
+        ],
+        "chords": [
+          "A",
+          "E/G#",
+          "F#m",
+          "D/F#"
+        ],
+        "progression": "Descending Bassline"
+      }
+    },
+    {
+      "name": "Thumb-Over Slash Chords",
+      "description": "Wrapping the fretting hand thumb around the neck to fret bass notes (G# on E/G# and F# on D/F#)",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Thumb frets the 4th fret on the low E string for E/G# and 2nd fret for D/F#",
+          "Allows index, middle, and ring fingers to remain dedicated to treble chord voices",
+          "Essential for smooth transitions without jumping fretting hand positions"
+        ],
+        "sequence": [
+          "Fret A barre or open A shape",
+          "Reach thumb over top of fretboard to grab 4th fret low E string",
+          "Transition into F#m barre or open grip"
+        ],
+        "tips": [
+          "Keep the thumb relaxed and flat against the edge of the fretwire",
+          "If thumb-over is uncomfortable, use index finger on 4th fret and ring/pinky on upper strings"
+        ],
+        "chords": [
+          "E/G#",
+          "D/F#"
+        ],
+        "progression": "Verse Chords"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Motif",
+      "timeStamp": "0:00-0:21",
+      "technique": "Descending Bass Fingerpicking",
+      "key": "A Major",
+      "description": "The iconic opening acoustic fingerstyle motif establishing the descending bassline and gentle hammer-on fills.",
+      "chords": [
+        "A",
+        "E/G#",
+        "F#m",
+        "A/E",
+        "D/F#",
+        "E7sus4",
+        "A"
+      ],
+      "progression": "A - E/G# - F#m - A/E - D/F# - E7 - A",
+      "notes": [
+        "Pluck bass note cleanly on beat 1 with thumb",
+        "Execute the subtle hammer-on from open B to C# on the 2nd string",
+        "Let the low A string ring through as the foundation of the turnaround"
+      ],
+      "alphaTab": "(0.5 2.4 2.3 2.2) :8 4.6 2.5 0.5 | (2.6 4.5 4.4 2.3) :8 0.6 2.6 | (2.6 0.4 2.3 3.2) :8 0.6 2.5 :4 (0.5 2.4 1.3 0.2) | (0.5 2.4 2.3 2.2) :2 r.2 |",
+      "exerciseLabel": "Intro Fingerpicking Motif"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:21-0:58",
+      "technique": "Intimate Fingerstyle Accompaniment",
+      "key": "A Major",
+      "description": "Delicate fingerpicked accompaniment supporting Clapton's tender vocal delivery.",
+      "chords": [
+        "A",
+        "E/G#",
+        "F#m",
+        "A/E",
+        "D/F#",
+        "E7sus4",
+        "E7",
+        "A"
+      ],
+      "progression": "I - V/3 - vi - I/5 - IV/3 - V7sus4 - V7 - I",
+      "notes": [
+        "Maintain smooth, even volume across all six strings",
+        "Accent the stepwise descending bassline on the downbeats",
+        "Add slight vibrato on sustained notes for vocal resonance"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 2.2) (4.6 2.4 1.3 0.2) | :4 (2.6 4.5 4.4 2.3 2.2) (0.5 2.4 2.3 2.2) | :4 (2.6 0.4 2.3 3.2) (0.5 2.4 2.3 3.2) | :2 (0.5 2.4 2.3 2.2) :2 r.2 |",
+      "exerciseLabel": "Verse Fingerstyle Flow"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:58-1:20",
+      "technique": "Diatonic Circle Cadence",
+      "key": "A Major",
+      "description": "Lifting into the emotional questions ('Would you know my name?') moving through C#m, F#m, and Bm7.",
+      "chords": [
+        "C#m",
+        "F#m",
+        "Bm7",
+        "E7",
+        "A"
+      ],
+      "progression": "iii - vi - ii7 - V7 - I",
+      "notes": [
+        "Use full barre chord grips on C#m and F#m",
+        "Pluck bass note with thumb followed by three-finger pinch on the higher strings",
+        "Decrescendo into the delicate resolution back to A major"
+      ],
+      "alphaTab": ":4 (4.5 6.4 6.3 5.2 4.1) (2.6 4.5 4.4 2.3 2.2 2.1) | :4 (2.5 4.4 2.3 3.2 2.1) (0.6 2.5 0.4 1.3 0.2 0.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Chorus Circle Progression"
+    },
+    {
+      "name": "Bridge",
+      "timeStamp": "2:04-2:40",
+      "technique": "Modulated Key Shift & Dynamic Lift",
+      "key": "C Major / G Major",
+      "description": "Dramatic dynamic expansion as the song modulates to C major ('Time can bring you down, time can bend your knees').",
+      "chords": [
+        "C",
+        "G/B",
+        "Am",
+        "D/F#",
+        "G",
+        "D/F#",
+        "Em",
+        "D"
+      ],
+      "progression": "C - G/B - Am - D/F# - G - D/F# - Em - D",
+      "notes": [
+        "Strum with slightly more attack to match the emotional peak",
+        "Accurately articulate the moving bass notes B and F#",
+        "Smooth transition back into A major for the acoustic guitar solo"
+      ],
+      "alphaTab": ":4 (3.5 2.4 0.3 1.2 0.1) (2.5 0.4 0.3 3.2 3.1) | :4 (0.5 2.4 2.3 1.2 0.1) (2.6 0.4 2.3 3.2) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Bridge Modulated Chords"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Juan Alvarez Nylon String Classical or Martin 000-42 Acoustic",
+      "alternatives": [
+        "Cordoba C7 / C9 Classical",
+        "Yamaha NCX1 Nylon",
+        "Martin 000-28"
+      ],
+      "pickup": "Under-saddle piezo blended with Neumann KM84 small diaphragm condenser"
+    },
+    "amp": {
+      "recommended": "Pristine Studio Microphone Preamp into Mixing Console",
+      "alternatives": [
+        "AER Compact 60",
+        "Fishman Loudbox Artist",
+        "Fender Acoustasonic 40"
+      ],
+      "settings": {
+        "gain": "2/10",
+        "treble": "6/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "None - pure natural acoustic warmth",
+      "reverb": "Warm hall or studio plate reverb with 2.2s decay",
+      "other": "Subtle optical studio compressor (LA-2A style) for gentle dynamic smoothing"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chord Shapes & Stepwise Bass Line",
+      "steps": [
+        "Learn the basic shapes for A, E/G#, F#m, and D/F#",
+        "Practice the descending bassline notes (A, G#, F#, E, D) in isolation",
+        "Play simple downstrums on the beat at 60 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "PIMA Fingerpicking Coordination",
+      "steps": [
+        "Develop independent right-hand thumb control on the lower three strings",
+        "Synchronize treble finger pinches on the upper three strings with the bass pulse",
+        "Incorporate the intro hammer-on flourishes seamlessly"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Full Arrangement & Dynamic Expression",
+      "steps": [
+        "Master the bridge modulation through C, G/B, and Am without hesitation",
+        "Learn the delicate acoustic nylon-string solo fills",
+        "Perform the full piece with expressive rubato and nuanced touch dynamics"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Plucking the treble strings too forcefully relative to the subtle bass voice",
+      "Collapsing the fretting hand wrist when fretting the E/G# thumb-over chord",
+      "Rushing through the E7sus4 to E7 suspension turnaround"
+    ],
+    "practiceRoutine": [
+      "5 min: Right-hand fingerstyle independence warm-ups on open strings",
+      "10 min: Slow repetition of the descending bassline transitions at 60 BPM",
+      "15 min: Verse-to-chorus fingerpicking continuity practice",
+      "10 min: Bridge modulation practice with metronome at 80 BPM"
+    ],
+    "focusAreas": [
+      "Smooth descending voice-leading clarity in the bass",
+      "Relaxed thumb-over fretting technique",
+      "Touch sensitivity and acoustic tone control"
+    ],
+    "metronomeWork": [
+      "Set metronome to 60 BPM with quarter-note clicks to build fingerstyle precision",
+      "Slowly increase by 4 BPM intervals up to target recording tempo of 80 BPM",
+      "Practice playing slightly behind the beat for an intimate, relaxed feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Layla",
+        "difficulty": "Advanced",
+        "similarity": "Iconic guitar masterpiece featuring passionate blues lead guitar and piano outro"
+      },
+      {
+        "title": "Wonderful Tonight",
+        "difficulty": "Beginner",
+        "similarity": "Gentle G major ballad with melodic arpeggios and iconic clean lead guitar hook"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic fingerpicking masterclass utilizing two-finger pinch technique across moving intervals"
+      },
+      {
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
+        "difficulty": "Intermediate",
+        "similarity": "Essential Travis-picking acoustic study featuring moving chord variations"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "acoustic-guitar",
+      "fingerpicking",
+      "voice-leading",
+      "song-analysis",
+      "rhythm-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}

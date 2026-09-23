@@ -36,6 +36,19 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'playing-god',
   'it-runs-through-me',
   'stormy-monday',
+  'bohemian-rhapsody',
+  'creep',
+  'here-comes-the-sun',
+  'nothing-else-matters',
+  'kashmir',
+  'free-bird',
+  'time',
+  'basket-case',
+  'say-it-aint-so',
+  'cant-stop',
+  'killing-in-the-name',
+  'the-trooper',
+  'texas-flood',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

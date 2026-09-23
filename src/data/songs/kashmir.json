@@ -1,0 +1,327 @@
+{
+  "songInfo": {
+    "title": "Kashmir",
+    "artist": "Led Zeppelin",
+    "album": "Physical Graffiti",
+    "released": "1975",
+    "genre": "Classic Rock",
+    "tempo": "80 BPM",
+    "duration": "8:37",
+    "key": "D Modal (DADGAD)",
+    "tuning": "DADGAD (DADGAD)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D Modal",
+      "modalCharacter": "D Modal Drone with Polyrhythmic Metric Modulation",
+      "scalesUsed": [
+        {
+          "scale": "D Chromatic Scale",
+          "notes": "D - D# - E - F - F# - G - G# - A - A# - B - C - C#",
+          "application": "The ascending chromatic countermelody fretted against the stationary DADGAD drone"
+        },
+        {
+          "scale": "D Mixolydian Mode",
+          "notes": "D - E - F# - G - A - B - C",
+          "application": "The anthemic brass and guitar bridge fanfare ('All will be revealed')"
+        },
+        {
+          "scale": "D Minor Blues Scale",
+          "notes": "D - F - G - Ab - A - C",
+          "application": "Jimmy Page's bluesy slide and improvised fill ornaments throughout the groove"
+        }
+      ],
+      "keySignature": "No sharps/flats (D Modal)",
+      "relativeMinor": "B minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D5",
+          "D(add9)",
+          "D(add4)",
+          "D(add#11)",
+          "D(add5)"
+        ],
+        "progression": "Ascending chromatic line over open D pedal drone",
+        "description": "Monumental ascending octave riff creating relentless, hypnotic forward momentum"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff",
+          "progression": "D5 - D(b9) - D9 - D(add4) - D(add#11)",
+          "romanNumerals": "I (chromatic ascension over stationary tonic drone)",
+          "description": "Polyrhythmic riff where guitar plays in 3/4 time while drums play a steady 4/4 backbeat"
+        },
+        {
+          "section": "Bridge / Fanfare",
+          "progression": "A - G - A - G - D",
+          "romanNumerals": "V - IV - V - IV - I",
+          "description": "Exotic Middle-Eastern inspired modal release resolving the mounting tension"
+        },
+        {
+          "section": "Outro Climax",
+          "progression": "D Modal Chromatic Drone Riff",
+          "romanNumerals": "I (Continuous Drone)",
+          "description": "Hypnotic repetition layered with Mellotron brass and Robert Plant's soaring vocal wails"
+        }
+      ],
+      "harmonicFunction": [
+        "Open DADGAD tuning provides three octaves of D notes (strings 6, 4, 1) and two fifths (A on strings 5, 2)",
+        "The ascending line (D - D# - E - F - F# - G - G# - A) moves in parallel octaves while open strings drone continuously",
+        "Polyrhythmic tension: the guitar riff is 3 quarter-notes long, repeating across John Bonham's 4/4 drum beat, creating an 8-bar cycle before re-aligning",
+        "Lack of a major or minor third in the drone creates an ambiguous, ancient, modal Middle-Eastern texture"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "DADGAD Alternate Tuning & Pedal Drones",
+      "description": "Tuning low E down to D, B down to A, and high E down to D for massive open resonance",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Jimmy Page learned DADGAD from British folk guitar legends Bert Jansch and Davey Graham",
+          "Allows the player to fret two-finger octave shapes while letting 4 open strings ring freely",
+          "Creates massive sonic depth that fills the entire stereo spectrum"
+        ],
+        "sequence": [
+          "Tune string 6 down a whole step to D (match open string 4)",
+          "Tune string 2 down a whole step to A (match open string 5)",
+          "Tune string 1 down a whole step to D (match open string 4 and 6)",
+          "Strum across all 6 strings for the open Dsus4 modal chord"
+        ],
+        "tips": [
+          "Use medium gauge strings (10-46 or 11-48) to avoid excessive floppiness in DADGAD",
+          "Ensure strings 1 and 6 ring true to open D without fret buzz"
+        ],
+        "chords": [
+          "DADGAD Drone"
+        ],
+        "progression": "DADGAD Tuning"
+      }
+    },
+    {
+      "name": "3/4 over 4/4 Polymetric Riffing",
+      "description": "Executing a 3-beat guitar riff over a straight 4/4 drum groove without losing the downbeat",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The guitar riff cycles in 3/4 time (3 quarter notes per measure)",
+          "John Bonham lays down an immovable, heavy 4/4 Bonham drum groove",
+          "It takes 12 quarter notes (3 measures of 4/4, or 4 measures of 3/4) for the patterns to sync up again"
+        ],
+        "sequence": [
+          "Hit the syncopated chord stabs on the eighth notes",
+          "Internalize the 3-beat phrase without being pulled off-time by the snare on 2 and 4",
+          "Lock the pick hand in a steady downstroke engine"
+        ],
+        "tips": [
+          "Do not try to force the riff into 4/4; count the guitar in 3 and feel the drums as counterpoint",
+          "Listen to Bonham's bass drum to maintain rock-solid tempo"
+        ],
+        "chords": [
+          "D5 Chromatic Riff"
+        ],
+        "progression": "Main Riff"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Chromatic Riff",
+      "timeStamp": "0:00-0:53",
+      "technique": "DADGAD Octave Drone & Polymetric Strumming",
+      "key": "D Modal",
+      "description": "The monolithic ascending chromatic octave riff over the thundering open DADGAD drone.",
+      "chords": [
+        "D5",
+        "D(add9)",
+        "D(add4)"
+      ],
+      "progression": "Chromatic ascension over D drone",
+      "notes": [
+        "Fret the moving octave notes on 5th and 3rd strings",
+        "Let the open 6th, 4th, 2nd, and 1st strings ring openly",
+        "Maintain strict downstroke rhythm on the syncopated accents"
+      ],
+      "alphaTab": ":8 (0.6 0.5 0.4 5.3 5.2 0.1) :8 (0.6 0.5 0.4 5.3 5.2 0.1) :8 (0.6 0.5 0.4 5.3 5.2 0.1) :8 (0.6 0.5 0.4 5.3 5.2 0.1) | :8 (0.6 0.5 0.4 6.3 5.2 0.1) :8 (0.6 0.5 0.4 6.3 5.2 0.1) :8 (0.6 0.5 0.4 7.3 7.2 0.1) :8 (0.6 0.5 0.4 7.3 7.2 0.1) |",
+      "exerciseLabel": "Main Kashmir Riff"
+    },
+    {
+      "name": "Bridge Fanfare",
+      "timeStamp": "1:28-1:53",
+      "technique": "Modal Power Chords & Sliding Voicings",
+      "key": "D Modal / Mixolydian",
+      "description": "'All I see turns to brown, as the sun burns the ground' soaring fanfare section.",
+      "chords": [
+        "A",
+        "G",
+        "D"
+      ],
+      "progression": "A - G - A - G - D (V - IV - V - IV - I)",
+      "notes": [
+        "Slide DADGAD chord shapes up and down the neck",
+        "Lock tightly with the orchestral brass swells",
+        "Resolve back cleanly into the driving main chromatic drone"
+      ],
+      "alphaTab": ":4 (7.6 7.5 7.4 6.3 7.2 7.1) (5.6 5.5 5.4 4.3 5.2 5.1) | :4 (7.6 7.5 7.4 6.3 7.2 7.1) (5.6 5.5 5.4 4.3 5.2 5.1) | :1 (0.6 0.5 0.4 2.3 0.2 0.1) |",
+      "exerciseLabel": "Bridge Fanfare Chords"
+    },
+    {
+      "name": "Middle Eastern Transition",
+      "timeStamp": "3:25-4:05",
+      "technique": "Cascading Ascending Arpeggios",
+      "key": "D Modal",
+      "description": "Mesmerizing descending and ascending modal passages connecting the second chorus to the orchestral bridge.",
+      "chords": [
+        "D5",
+        "D7sus4"
+      ],
+      "progression": "Ascending modal sequence",
+      "notes": [
+        "Smooth position shifts along the fretboard",
+        "Maintain wide dynamic headroom without clipping amp input",
+        "Let the low D bass note sustain like a ringing church bell"
+      ],
+      "alphaTab": ":8 0.6 0.4 7.3 0.2 7.1 0.2 | 0.6 0.4 9.3 0.2 9.1 0.2 | :2 (0.6 0.5 0.4 7.3 0.2 0.1) :2 (0.6 0.5 0.4 2.3 0.2 0.1) |",
+      "exerciseLabel": "Modal Transition Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Danelectro 59 DC (Jimmy Page's preferred DADGAD guitar) or Gibson Les Paul",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Fender Telecaster",
+        "Epiphone Les Paul Standard"
+      ],
+      "pickup": "Lipstick single-coil pickups or PAF humbuckers in middle position"
+    },
+    "amp": {
+      "recommended": "Marshall 1959 Super Lead 100W or Hiwatt Custom 100",
+      "alternatives": [
+        "Marshall Origin 50",
+        "Orange Rockerverb 50",
+        "Fender Bassman"
+      ],
+      "settings": {
+        "gain": "6/10",
+        "treble": "7/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "7/10"
+      }
+    },
+    "effects": {
+      "distortion": "Crunchy tube power amp breakup rather than high-gain distortion",
+      "reverb": "Large room / stadium hall reverb (Headley Grange stone hall ambiance)",
+      "other": "Maestro Echoplex tape delay with short slapback echo (110ms)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Tune to DADGAD & Learn Drone Basics",
+      "steps": [
+        "Retune strings 6, 2, and 1 down a whole step to DADGAD",
+        "Strum open strings and get accustomed to the open modal drone resonance",
+        "Practice the basic 2-finger chromatic octave movement on the G and B strings"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Master the 3/4 Polymetric Riff Pulse",
+      "steps": [
+        "Practice the ascending chromatic octave line across frets 5 through 12",
+        "Play against a steady 4/4 drum loop at 80 BPM without stumbling",
+        "Learn the sliding bridge fanfare chords"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Orchestral Locking & Performance Stamina",
+      "steps": [
+        "Execute the 8-minute arrangement maintaining dynamic intensity throughout",
+        "Synchronize pick attack with Bonham's massive kick and snare accents",
+        "Add Jimmy Page's improvised microtonal bending flourishes between riff cycles"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Accidentally muting the ringing open D strings with fretting fingers",
+      "Getting thrown off tempo by trying to force the 3-beat riff into 4/4 counting",
+      "Applying too much gain which turns the open DADGAD drone into muddy noise"
+    ],
+    "practiceRoutine": [
+      "5 min: Verify DADGAD tuning accuracy across all octaves",
+      "10 min: Slow drill of the ascending chromatic octave fingering at 60 BPM",
+      "15 min: Polymetric practice with a 4/4 drum loop focusing on downbeat anchor points",
+      "10 min: Full playthrough with studio recording focusing on dynamic build"
+    ],
+    "focusAreas": [
+      "DADGAD drone string separation and resonance",
+      "Polymetric 3/4 over 4/4 independent timing",
+      "Dynamic pick attack on the accented syncopations"
+    ],
+    "metronomeWork": [
+      "Practice with metronome set to 80 BPM clicking on 2 and 4",
+      "Count 1-2-3-1-2-3 over the 4/4 click until the polyrhythm becomes second nature",
+      "Lock into the 8-measure complete cycle resolution"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Stairway to Heaven",
+        "difficulty": "Intermediate",
+        "similarity": "Progressive rock masterpiece transitioning from acoustic arpeggios to incendiary solo"
+      },
+      {
+        "title": "Whole Lotta Love",
+        "difficulty": "Beginner",
+        "similarity": "Heavy riff-rock classic featuring blues-rock hybrid riffs and dynamic space"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "White Summer",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Jimmy Page's definitive DADGAD acoustic instrumental showcase"
+      },
+      {
+        "title": "Black Mountain Side",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Intricate acoustic fingerpicking in DADGAD tuning inspired by British folk"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "modal",
+      "song-analysis",
+      "rhythm-guitar",
+      "song-structure"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}

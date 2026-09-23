@@ -1,0 +1,357 @@
+{
+  "songInfo": {
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "released": "1991",
+    "genre": "Grunge / Alternative Rock",
+    "tempo": "117 BPM",
+    "duration": "5:01",
+    "key": "F Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F Minor",
+      "modalCharacter": "F Aeolian / Minor Pentatonic with driving chromatic power chord roots",
+      "keySignature": "4 Flats (Bb, Eb, Ab, Db)",
+      "relativeMinor": "F Minor",
+      "scalesUsed": [
+        {
+          "name": "F Minor Pentatonic",
+          "notes": "F - Ab - Bb - C - Eb",
+          "scale": "F Minor Pentatonic",
+          "application": "The tonal backbone for both the 4-chord rhythm progression and the vocal-mirroring solo"
+        },
+        {
+          "name": "F Natural Minor (Aeolian)",
+          "notes": "F - G - Ab - Bb - C - Db - Eb",
+          "scale": "F Natural Minor (Aeolian)",
+          "application": "Provides the dark, rebellious grunge harmonic foundation"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F5",
+          "Bb5",
+          "Ab5",
+          "Db5"
+        ],
+        "progression": "F5 - Bb5 - Ab5 - Db5",
+        "description": "The definitive 4-chord grunge riff alternating between 1st-fret and 4th-fret root positions with percussive muted strums"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Chorus",
+          "progression": "F5 - Bb5 - Ab5 - Db5",
+          "romanNumerals": "i5 - iv5 - III5 - VI5",
+          "description": "Full-throated distortion explosion using two measures of alternating syncopated power chords"
+        },
+        {
+          "section": "Verse",
+          "progression": "Clean 2-Note Motif (F & C)",
+          "romanNumerals": "i",
+          "description": "Sparse, hypnotic clean guitar motif playing unisons and 4ths with watery chorus pedal modulation"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "F5 - Bb5 - Ab5 - Db5",
+          "romanNumerals": "i5 - iv5 - III5 - VI5",
+          "description": "Kurt Cobain restates the vocal melody note-for-note on the G and B strings with expressive full-step bends"
+        }
+      ],
+      "harmonicFunction": [
+        "F5 (i5) - The heavy tonic anchor played on fret 1 of the low E string",
+        "Bb5 (iv5) - Directly below on fret 1 of the A string, creating immediate downward weight",
+        "Ab5 (III5) - Shifts up 3 frets to the minor third, offering a fleeting lift of relative major brightness",
+        "Db5 (VI5) - Submediant resolution providing the punchy rhythmic climax before the turnaround"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Percussive 16th-Note Dead Rakes (Scratch Strumming)",
+      "description": "Lightly resting the fretting fingers flat across all strings to mute them while executing rapid alternate 16th-note down-up strums",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Fret hand lifts pressure just enough to deaden all strings",
+          "Pick hand executes rapid down-up-down-up scratch rhythms",
+          "Creates the famous rhythmic 'chicka-chicka' engine of the riff",
+          "Must stay perfectly locked in the 117 BPM groove"
+        ],
+        "sequence": [
+          "Strum F5 power chord twice",
+          "Lift fretting fingers and rake four 16th-note scratches",
+          "Shift to Bb5 and strike twice",
+          "Repeat pattern moving to Ab5 and Db5"
+        ],
+        "tips": [
+          "Keep the strumming wrist completely loose like shaking water off your hand",
+          "Ensure zero harmonic overtones ring out during the scratches by using multiple resting fingers"
+        ],
+        "chords": [
+          "F5",
+          "Bb5",
+          "Ab5",
+          "Db5"
+        ],
+        "progression": "F5 - [Muted Rakes] - Bb5 - Ab5 - [Muted Rakes] - Db5"
+      }
+    },
+    {
+      "name": "Loud-Quiet-Loud Dynamic Contrast",
+      "description": "The trademark Pixies/Nirvana structural technique of dropping from raging fuzz to whisper-quiet clean guitar and back",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Switch distortion pedal (Boss DS-1 or DS-2) on for choruses, completely off for verses",
+          "Light picking touch on the two-note verse motif",
+          "Explosive downstroke attack when the full band slams into the chorus"
+        ],
+        "sequence": [
+          "Clean verse: 2-note motif over bass and drums",
+          "Pre-chorus: 'Hello, hello' building tension",
+          "Chorus: Full gain stomp with all power chords"
+        ],
+        "tips": [
+          "Match your physical energy to the dynamic level",
+          "Let the chorus pedal wash over the verse notes without overplaying"
+        ],
+        "chords": [
+          "F5",
+          "Bb5"
+        ],
+        "progression": "F - C motif into full F5"
+      }
+    },
+    {
+      "name": "Vocal-Mirroring Lead Phrasing",
+      "description": "Cobain's signature soloing approach: rather than shredding scales, he directly replicates the verse vocal melody on guitar with raw attitude",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Played primarily across frets 5-10 on the G and B strings",
+          "Uses aggressive whole-step bends and wide unpolished vibrato",
+          "Ends with high-register feedback squeals"
+        ],
+        "sequence": [
+          "Trace vocal line on G string (frets 6, 8, 10)",
+          "Add full bend on fret 8 resolving to 6",
+          "Hold sustained notes into amplifier feedback"
+        ],
+        "tips": [
+          "Sing the lyrics in your head while playing the solo notes",
+          "Focus on pitch accuracy on the string bends"
+        ],
+        "chords": [
+          "F5",
+          "Bb5",
+          "Ab5",
+          "Db5"
+        ],
+        "progression": "Over F5 - Bb5 - Ab5 - Db5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Chorus Riff",
+      "timeStamp": "0:00-0:25",
+      "technique": "Percussive 16th-Note Dead Rakes (Scratch Strumming)",
+      "key": "F Minor",
+      "description": "The world-famous four-chord grunge intro: clean four-bar teaser followed by the full-band distorted explosion with percussive scratch rakes",
+      "chords": [
+        "F5",
+        "Bb5",
+        "Ab5",
+        "Db5"
+      ],
+      "progression": "F5 - Bb5 - Ab5 - Db5",
+      "notes": [
+        "F5 is at fret 1 (low E), Bb5 is at fret 1 (A string)",
+        "Ab5 is at fret 4 (low E), Db5 is at fret 4 (A string)",
+        "Insert 4 sixteen-note muted scratches between chord changes"
+      ],
+      "alphaTab": ":8 (1.6 3.5 3.4) (1.6 3.5 3.4) :16 r.6 (1.6 3.5 3.4) :8 (1.5 3.4 3.3) :16 r.5 (1.5 3.4 3.3) :8 (1.5 3.4 3.3) | :8 (4.6 6.5 6.4) (4.6 6.5 6.4) :16 r.6 (4.6 6.5 6.4) :8 (4.5 6.4 6.3) :16 r.5 (4.5 6.4 6.3) :8 (4.5 6.4 6.3) |",
+      "exerciseLabel": "Main Grunge Power Riff"
+    },
+    {
+      "name": "Verse Motif",
+      "timeStamp": "0:42-1:06",
+      "technique": "Loud-Quiet-Loud Dynamic Contrast",
+      "key": "F Minor",
+      "description": "The sparse clean guitar figure playing high F and C unisons drenched in analog chorus while Krist Novoselic's bass carries the main groove",
+      "chords": [
+        "F5"
+      ],
+      "progression": "Two-Note Clean Figure",
+      "notes": [
+        "Clean tone with Small Clone chorus pedal engaged",
+        "Fret 1 on B string (C) and fret 1 on high E string (F)",
+        "Let both notes ring together into the empty space"
+      ],
+      "alphaTab": ":1 (1.2 1.1) | :1 (1.2 1.1) | :1 (1.2 1.1) | :1 (1.2 1.1) |",
+      "exerciseLabel": "Clean Verse Ambience"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:40-3:04",
+      "technique": "Vocal-Mirroring Lead Phrasing",
+      "key": "F Minor",
+      "description": "Cobain directly quotes his vocal melody with heavy distortion and biting pick attack, ending in wild bends and screeching feedback",
+      "chords": [
+        "F5",
+        "Bb5",
+        "Ab5",
+        "Db5"
+      ],
+      "progression": "F5 - Bb5 - Ab5 - Db5",
+      "notes": [
+        "Matches the melody of 'with the lights out, it's less dangerous'",
+        "Use aggressive pick attack and let the distortion bloom",
+        "Bend the 8th fret on the G string with your ring finger backed by middle and index"
+      ],
+      "alphaTab": ":4 6.3 :8 8.3 6.3 :4 5.3 :8 6.3 5.3 | :2 3.3 :4 1.3 :8 3.3 1.3 | :4 6.3 :8 8.3 6.3 :4 5.3 :8 6.3 5.3 | :1 3.3 |",
+      "exerciseLabel": "Vocal Melody Guitar Solo"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Mustang, Jaguar, or Stratocaster with bridge humbucker",
+      "alternatives": [
+        "Epiphone Les Paul",
+        "Ibanez / Schecter double-cut with humbucker"
+      ],
+      "pickup": "Bridge humbucker for cutting distortion attack"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Studio .22 Preamp into Crown Power Amp / Fender Twin Reverb",
+      "alternatives": [
+        "Marshall DSL40",
+        "Boss Katana 50",
+        "Fender Champion"
+      ],
+      "settings": {
+        "gain": "8/10",
+        "treble": "7/10",
+        "middle": "4/10",
+        "bass": "7/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "Boss DS-1 or DS-2 Turbo Distortion (Level: 10, Tone: 6, Distortion: 10)",
+      "reverb": "Amp spring reverb set low (2-3)",
+      "other": "Electro-Harmonix Small Clone analog chorus pedal for the verse"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the 4 Power Chords & Scratch Strumming",
+      "steps": [
+        "Learn two-finger and three-finger power chord shapes for F5, Bb5, Ab5, and Db5",
+        "Practice shifting cleanly between 1st fret and 4th fret on the E and A strings",
+        "Develop the relaxed wrist movement for the 16th-note scratch rakes"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Full Song Timing, Dynamic Stompbox Transitions & Verse Tone",
+      "steps": [
+        "Lock the chorus riff tightly to a metronome at 117 BPM",
+        "Coordinate kicking the distortion pedal on beat 1 of the chorus",
+        "Learn the clean verse motif and Small Clone chorus settings"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Note-for-Note Guitar Solo & Live Attitude",
+      "steps": [
+        "Play the vocal-mirroring solo with accurate intonation on the bends",
+        "Master controlling musical amplifier feedback on the final held notes",
+        "Perform the entire 5-minute track with genuine grunge energy and dynamic contrast"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Pressing down too hard during muted scratch strums, creating unwanted notes or harmonics",
+      "Rushing the tempo during the chorus explosion—keep the groove seated at 117 BPM",
+      "Overcomplicating the solo instead of honoring the vocal melody phrasing"
+    ],
+    "practiceRoutine": [
+      "5 min: Warm up fretting-hand muting and 16th-note alternate strumming",
+      "10 min: Practice the F5 to Bb5 and Ab5 to Db5 chord shifts at 90 BPM",
+      "10 min: Practice kicking distortion on and off for dynamic transitions",
+      "10 min: Work on the solo phrasing and bend pitch accuracy"
+    ],
+    "focusAreas": [
+      "Left-hand muting technique for crisp, noise-free dead scratches",
+      "Dynamic pedal stomp transitions from clean to fuzz",
+      "Rhythmic pocket and consistency at 117 BPM"
+    ],
+    "metronomeWork": [
+      "Practice the main riff at 90 BPM with eighth-note clicks, building to 117 BPM",
+      "Isolate the scratch strum measure at 100 BPM until effortless"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Come As You Are",
+        "difficulty": "Beginner",
+        "similarity": "Iconic chorus-drenched D-string riff built on clean/grunge dynamics"
+      },
+      {
+        "title": "Heart-Shaped Box",
+        "difficulty": "Intermediate",
+        "similarity": "Drop D tuning grunge riff with dynamic clean verse to heavy chorus shifts"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Deceptively simple, high-impact rock riff driving an entire global anthem"
+      },
+      {
+        "title": "Blitzkrieg Bop",
+        "artist": "Ramones",
+        "difficulty": "Beginner",
+        "similarity": "Fast downstroke power chords driving energetic punk rock rhythm"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "punk",
+      "power-chords",
+      "strumming",
+      "percussive",
+      "song-analysis"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

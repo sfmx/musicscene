@@ -1,0 +1,352 @@
+{
+  "songInfo": {
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "released": "1975",
+    "genre": "Progressive Rock",
+    "tempo": "72 / 144 BPM",
+    "duration": "5:55",
+    "key": "Bb Major / Eb Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Advanced",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "Bb Major / Eb Major",
+      "modalCharacter": "Ionian / Mixolydian with multi-movement classical modulation",
+      "keySignature": "2 Flats (Bb, Eb)",
+      "relativeMinor": "G Minor",
+      "scalesUsed": [
+        {
+          "name": "Bb Major Scale",
+          "notes": "Bb - C - D - Eb - F - G - A",
+          "scale": "Bb Major Scale",
+          "application": "The lyrical foundation for Brian May's celebrated vocal-like guitar solo"
+        },
+        {
+          "name": "Eb Major & Mixolydian",
+          "notes": "Eb - F - G - Ab - Bb - C - Db",
+          "scale": "Eb Major & Mixolydian",
+          "application": "Harmonic framework for the hard rock headbanging section and operatic transitions"
+        },
+        {
+          "name": "Bb Minor Pentatonic",
+          "notes": "Bb - Db - Eb - F - Ab",
+          "scale": "Bb Minor Pentatonic",
+          "application": "Bluesy passing runs adding emotional grit to the solo's peak"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Bb",
+          "Gm",
+          "Cm",
+          "F",
+          "Eb",
+          "Ab",
+          "D"
+        ],
+        "progression": "Multi-Part Suite: Ballad (Bb) - Operatic (A/Eb) - Hard Rock (Eb) - Outro (F)",
+        "description": "A monumental 6-part rock suite transitioning from tender piano ballad to operatic choral counterpoint, heavy rock headbanging, and contemplative guitar outro"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Ballad Section",
+          "progression": "Bb - Gm - Cm7 - F7 - Bb - Gm - C7 - F",
+          "romanNumerals": "I - vi - ii7 - V7 - I - vi - V7/V - V",
+          "description": "Elegant classical voice leading with passing 7ths and secondary dominants under Freddie Mercury's storytelling"
+        },
+        {
+          "section": "Guitar Solo Section",
+          "progression": "Eb - Bb - Cm - Gm - Eb - Bb - Ab - Eb - F",
+          "romanNumerals": "IV - I - ii - vi - IV - I - bVII - IV - V",
+          "description": "Brian May's operatic guitar solo in Eb/Bb featuring vocal-like bends and multi-tracked three-part guitar orchestration"
+        },
+        {
+          "section": "Hard Rock Section",
+          "progression": "Eb - F - Bb - Ab - G",
+          "romanNumerals": "I - II - V - IV - III",
+          "description": "The roaring heavy metal riff entering with blazing distortion at double-time (144 BPM)"
+        }
+      ],
+      "harmonicFunction": [
+        "Bb (I) - The noble ballad home key providing majestic warmth",
+        "Eb (IV) - The subdominant launchpad for both the melodic guitar solo and the heavy rock section",
+        "Gm (vi) - Relative minor offering emotional vulnerability",
+        "Ab (bVII) - Mixolydian borrowed chord injecting regal stadium grandeur",
+        "F (V) - Dominant turnaround resolving with authority"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Vocal Melodic Phrasing & Wide Finger Vibrato",
+      "description": "Brian May's singular approach of treating the guitar as an operatic tenor singer, emphasizing pitch accuracy, pre-bends, and wide, relaxed vibrato",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Played on the 'Red Special' guitar with a sixpence coin instead of a plastic pick",
+          "Features lyrical pre-bends that release downward smoothly into chord tones",
+          "Uses subtle finger vibrato that mimics a classical opera singer's throat vibrato"
+        ],
+        "sequence": [
+          "Slide smoothly into the target note",
+          "Execute a full 1-step bend with sustained reinforcement",
+          "Apply wide, singing finger vibrato after the bend reaches pitch"
+        ],
+        "tips": [
+          "Support your bending fingers with index and middle fingers behind the fretting finger",
+          "Use a coin or stiff heavy pick to emulate Brian May's percussive metallic chime"
+        ],
+        "chords": [
+          "Eb",
+          "Bb",
+          "Cm",
+          "Gm"
+        ],
+        "progression": "Guitar Solo Progression"
+      }
+    },
+    {
+      "name": "Multitracked Guitar Orchestration",
+      "description": "Building three-part and four-part classical harmonies by layering individual guitar lines to simulate an entire brass or string orchestra",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Brian May layered multiple takes of the Red Special through a custom 'Deacy' amp",
+          "Employs parallel 3rds, 6ths, and contrary motion counterpoint",
+          "Out-of-phase pickup wiring creates the cutting, vocal midrange hollow honk"
+        ],
+        "sequence": [
+          "Record root melody",
+          "Layer harmonized line a diatonic 3rd above",
+          "Add third part an octave above or 6th below"
+        ],
+        "tips": [
+          "Dial treble booster in front of a mildly overdriven tube amp",
+          "Ensure zero tuning drift between takes—counterpoint turns harsh if slightly sharp"
+        ],
+        "chords": [
+          "Ab",
+          "Eb",
+          "F"
+        ],
+        "progression": "Solo Climax Turnaround"
+      }
+    },
+    {
+      "name": "Double-Time Heavy Rock Riffing",
+      "description": "Switching from lyrical ballad tempo to explosive 144 BPM heavy rock riffing with fast alternate picking and driving power chords",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The headbanging riff that kicks off the heavy section",
+          "Built around descending double-stop riffs in Eb and Bb",
+          "Demands precise right-hand muting and punchy accents"
+        ],
+        "sequence": [
+          "Stab Eb power chord",
+          "Rake descending triplet lick on D and G strings",
+          "Land hard on Bb5 power chord accent"
+        ],
+        "tips": [
+          "Dig into the strings with aggressive downstroke power",
+          "Let the amp naturally compress without adding muddy distortion"
+        ],
+        "chords": [
+          "Eb5",
+          "F5",
+          "Bb5"
+        ],
+        "progression": "Hard Rock Headbanging Riff"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Brian May Guitar Solo",
+      "timeStamp": "2:36-3:03",
+      "technique": "Vocal Melodic Phrasing & Wide Finger Vibrato",
+      "key": "Eb Major / Bb Major",
+      "description": "Considered one of the greatest guitar solos ever recorded: lyrical, emotional, and perfectly composed to advance the song's operatic narrative",
+      "chords": [
+        "Eb",
+        "Bb",
+        "Cm",
+        "Gm",
+        "Eb",
+        "Bb",
+        "Ab",
+        "Eb",
+        "F"
+      ],
+      "progression": "Eb - Bb - Cm - Gm - Eb - Bb - Ab - Eb - F",
+      "notes": [
+        "Begins with an expressive slide into the 8th fret on the G string",
+        "Features the famous ascending run through Bb major pentatonic with fast triplet flourishes",
+        "Ends on a soaring 1.5-step bend on the high E string (fret 18 to 21)"
+      ],
+      "alphaTab": ":8 r 8.3 10.3 8.3 :4 8.2 :8 11.2 8.2 | :4 11.2 :8 8.2 11.2 :2 11.1 | :8 13.1 11.1 10.1 8.1 :4 11.2 :8 8.2 6.2 | :2 8.2 :2 r |",
+      "exerciseLabel": "Lyrical Solo Masterclass"
+    },
+    {
+      "name": "Heavy Rock Headbanging Riff",
+      "timeStamp": "4:07-4:55",
+      "technique": "Double-Time Heavy Rock Riffing",
+      "key": "Eb Major",
+      "description": "The roaring hard rock explosion immortalized in Wayne's World, shifting into double-time 144 BPM with punchy driving riffs",
+      "chords": [
+        "Eb5",
+        "F5",
+        "Bb5",
+        "Ab5"
+      ],
+      "progression": "Eb5 - F5 - Bb5 - Ab5",
+      "notes": [
+        "Tempo shifts to 144 BPM with aggressive driving rock groove",
+        "Combine palm-muted pedal tones on the A string with open power chord stabs",
+        "Accentuate beat 1 of each bar with full-arm downstroke energy"
+      ],
+      "alphaTab": ":8 (6.5 8.4 8.3) (6.5 8.4 8.3) :8 r.5 6.5 8.4 8.3 :4 (8.5 10.4 10.3) | :8 (1.5 3.4 3.3) (1.5 3.4 3.3) :8 r.5 (4.6 6.5 6.4) :4 (6.5 8.4 8.3) |",
+      "exerciseLabel": "Heavy Rock Double-Time Groove"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Brian May Red Special or guitar with Burns Tri-Sonic pickups and phase switches",
+      "alternatives": [
+        "Gibson Les Paul",
+        "Fender Stratocaster with out-of-phase pickup option"
+      ],
+      "pickup": "Bridge + Middle pickups wired in series and in-phase or out-of-phase for the nasal vocal solo tone"
+    },
+    "amp": {
+      "recommended": "Vox AC30 Top Boost paired with a Dallas Rangemaster Treble Booster",
+      "alternatives": [
+        "Vox AC15",
+        "Marshall Bluesbreaker",
+        "Fender Twin Reverb with Treble Booster"
+      ],
+      "settings": {
+        "gain": "7/10",
+        "treble": "8/10",
+        "middle": "6/10",
+        "bass": "5/10",
+        "presence": "8/10"
+      }
+    },
+    "effects": {
+      "distortion": "Treble Booster (Keeley Java Boost or Fryer Treble Booster) slamming the Vox AC30 front end",
+      "reverb": "Subtle analog spring or chamber reverb",
+      "other": "Sixpence coin used as a pick for metallic attack and harmonic scrapes"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Learn Ballad Chord Changes & Hard Rock Riff",
+      "steps": [
+        "Learn the core chord changes in Bb and Eb",
+        "Practice the heavy rock riff at a slow 100 BPM",
+        "Understand the multi-part structure of the song"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "intermediate": {
+      "title": "Master the Brian May Guitar Solo",
+      "steps": [
+        "Learn the guitar solo note-for-note at 72 BPM",
+        "Focus on the lyrical pre-bends and pitch accuracy",
+        "Apply Brian May's singing finger vibrato on sustained notes"
+      ],
+      "timeEstimate": "4-6 weeks"
+    },
+    "advanced": {
+      "title": "Orchestrated Harmonies & Complete Multi-Movement Performance",
+      "steps": [
+        "Learn and record the three-part harmonized guitar layers",
+        "Master the transition into double-time 144 BPM heavy rock",
+        "Integrate treble booster tone shaping and out-of-phase pickup settings"
+      ],
+      "timeEstimate": "6-8 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Bending out of tune on the lyrical solo—pitch accuracy is paramount on vocal-like lines",
+      "Using a floppy thin pick that fails to deliver Brian May's signature metallic chime",
+      "Rushing the transition into the heavy rock section—lock to the snare crack"
+    ],
+    "practiceRoutine": [
+      "10 min: Pitch-accurate bending exercises in Bb and Eb major",
+      "15 min: Solo phrase isolation with focus on singing vibrato and pre-bends",
+      "15 min: Heavy rock section alternate picking and power chord tightness at 144 BPM",
+      "10 min: Complete run-through with original recording"
+    ],
+    "focusAreas": [
+      "Microtonal bend precision and vocal vibrato depth",
+      "Treble booster dynamic response using the guitar volume knob",
+      "Seamless tempo switching between 72 BPM and 144 BPM"
+    ],
+    "metronomeWork": [
+      "Practice the solo at 60 BPM with eighth-note clicks, gradually moving to 72 BPM",
+      "Practice the heavy riff starting at 110 BPM, stepping up to 144 BPM"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "We Will Rock You",
+        "difficulty": "Beginner",
+        "similarity": "Iconic stadium rock anthem with Brian May's harmonized guitar outro"
+      },
+      {
+        "title": "Crazy Little Thing Called Love",
+        "difficulty": "Beginner",
+        "similarity": "Rockabilly acoustic-electric rhythm guitar and sweet telecaster lead fills"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Monumental, highly melodic rock guitar solo that tells a complete emotional story"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Advanced",
+        "similarity": "Intricately composed dual-guitar harmonies and melodic target-note soloing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 100,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "bending",
+      "vibrato",
+      "voice-leading",
+      "song-analysis",
+      "lead-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "2-3 months"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "songInfo": {
+    "title": "Time",
+    "artist": "Pink Floyd",
+    "album": "The Dark Side of the Moon",
+    "released": "1973",
+    "genre": "Classic Rock",
+    "tempo": "120 BPM",
+    "duration": "6:53",
+    "key": "F# Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# Minor",
+      "modalCharacter": "F# Dorian Verse to A Major Chorus",
+      "scalesUsed": [
+        {
+          "scale": "F# Minor Pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "David Gilmour's legendary fuzz-laden guitar solo"
+        },
+        {
+          "scale": "F# Dorian Mode",
+          "notes": "F# - G# - A - B - C# - D# - E",
+          "application": "The cyclical verse groove balancing F#m and major IV (B) with the raised 6th (D#)"
+        },
+        {
+          "scale": "F# Natural Minor",
+          "notes": "F# - G# - A - B - C# - D - E",
+          "application": "The lyrical Dmaj7 to Amaj7 chorus progression"
+        }
+      ],
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor (tonic)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "A",
+          "E",
+          "F#m"
+        ],
+        "progression": "i - ♭III - ♭VII - i (Verse) | Dmaj7 - Amaj7 (Chorus)",
+        "description": "Hypnotic Dorian verse groove followed by lush major seventh chord expansions in the chorus"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Rototom Jam",
+          "progression": "F#m - Bm",
+          "romanNumerals": "i - iv",
+          "description": "Ticking clocks and pulsing rototom percussion over a deep minor funk groove"
+        },
+        {
+          "section": "Verse",
+          "progression": "F#m - A - E - F#m",
+          "romanNumerals": "i - ♭III - ♭VII - i",
+          "description": "Stately minor cadence expressing existential reflection ('Ticking away the moments that make up a dull day')"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Dmaj7 - Amaj7 - Dmaj7 - Amaj7 - C#m - Bm - E",
+          "romanNumerals": "♭VI - I - ♭VI - I - v - iv - ♭VII",
+          "description": "Lush major-7th release transitioning into the minor circle turnaround"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "F#m - Bm - F#m - Bm - Dmaj7 - C#m - Bm - E",
+          "romanNumerals": "i - iv - i - iv - ♭VI - v - iv - ♭VII",
+          "description": "Epic canvas for David Gilmour's singing fuzz-faced bends and multi-delay textures"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m tonic grounds the song in heavy existential contemplation",
+        "Dmaj7 (♭VI) in the chorus introduces breathtaking harmonic expansion with its raised C# major-seventh interval",
+        "The shift from F# minor to relative A major mirrors the illusion of time slipping through one's fingers",
+        "The F# Dorian IV chord (B major) injects momentary melodic brightness before resolving to dark minor"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "High-Sustain Fuzz & Wide Vocal Vibrato",
+      "description": "Gilmour's signature Stratocaster lead tone using Silicon Fuzz Face, tape echo, and singing finger vibrato",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Utilizes a Dallas Arbiter Silicon Fuzz Face into a Hiwatt DR103 100W tube head",
+          "Wide, controlled finger vibrato executed from the wrist, shaking notes in perfect pitch modulation",
+          "Multi-tap tape echoes (Binson Echorec) expand single notes into soaring cavernous soundscapes"
+        ],
+        "sequence": [
+          "Pick 11th fret G string with heavy downstroke",
+          "Execute full 1.5-step bend up to E",
+          "Sustain note through fuzz compression and add slow, wide vibrato at peak"
+        ],
+        "tips": [
+          "Support the bending ring finger with your index and middle fingers",
+          "Do not rush the vibrato; let the natural bloom of the tube amplifier sustain the note"
+        ],
+        "chords": [
+          "F#m"
+        ],
+        "progression": "Guitar Solo"
+      }
+    },
+    {
+      "name": "Lush Major 7th Chord Voicings",
+      "description": "Voicing open and movable Dmaj7 and Amaj7 grips with ringing high strings",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Dmaj7 voiced as X-X-0-2-2-2 or 5th-fret barre",
+          "Amaj7 voiced as X-0-2-1-2-0 with the open A bass note",
+          "Clean Fender-style rhythm tone with gentle rotary / Uni-Vibe modulation"
+        ],
+        "sequence": [
+          "Strum Dmaj7 on beat 1 with light pick attack",
+          "Let the major 7th note (C#) chime against the D root",
+          "Slide smoothly into the Amaj7 shape on beat 3"
+        ],
+        "tips": [
+          "Keep fingers arched high to avoid muting the ringing high E string",
+          "Use a thin or medium pick for smooth acoustic-like strumming consistency"
+        ],
+        "chords": [
+          "Dmaj7",
+          "Amaj7"
+        ],
+        "progression": "Chorus"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verse Groove",
+      "timeStamp": "2:18-3:15",
+      "technique": "Dorian Rhythm Stabs & Fuzz Texture",
+      "key": "F# Minor",
+      "description": "The heavy, deliberate march of the verse with Nick Mason's snare and Richard Wright's electric piano.",
+      "chords": [
+        "F#m",
+        "A",
+        "E",
+        "F#m"
+      ],
+      "progression": "F#m - A - E - F#m",
+      "notes": [
+        "Accentuate the downbeats with percussive authority",
+        "Let the high notes of the F#m barre chord ring through",
+        "Tight rhythm locking with the kick drum"
+      ],
+      "alphaTab": ":4 (2.6 4.5 4.4 2.3 2.2 2.1) :8 2.6 2.6 :4 (2.5 4.4 4.3 4.2) | :4 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Rhythm Groove"
+    },
+    {
+      "name": "Chorus (Tired of Lying)",
+      "timeStamp": "3:15-3:45",
+      "technique": "Major 7th Chord Progressions",
+      "key": "A Major",
+      "description": "Soaring, melancholic vocal release with lush backing vocal choir and shimmering major 7th chords.",
+      "chords": [
+        "Dmaj7",
+        "Amaj7",
+        "C#m",
+        "Bm",
+        "E"
+      ],
+      "progression": "Dmaj7 - Amaj7 - Dmaj7 - Amaj7 - C#m - Bm - E",
+      "notes": [
+        "Gentle strumming allowing the rich chord extensions to bloom",
+        "Smooth voice-leading between Dmaj7 and Amaj7",
+        "Build dynamic intensity leading into the C#m turnaround"
+      ],
+      "alphaTab": ":2 (0.4 2.3 2.2 2.1) (0.5 2.4 1.3 2.2 0.1) | :2 (0.4 2.3 2.2 2.1) (0.5 2.4 1.3 2.2 0.1) | :4 (4.5 6.4 6.3 5.2 4.1) (2.5 4.4 4.3 3.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Chorus Major 7th Progression"
+    },
+    {
+      "name": "David Gilmour Guitar Solo",
+      "timeStamp": "3:45-5:05",
+      "technique": "Epic Fuzz Phrasing & Over-Bends",
+      "key": "F# Minor",
+      "description": "Widely regarded as one of the greatest guitar solos ever recorded, packed with vocal bends and singing sustain.",
+      "chords": [
+        "F#m",
+        "Bm",
+        "Dmaj7",
+        "E"
+      ],
+      "progression": "F#m - Bm - F#m - Bm - Dmaj7 - C#m - Bm - E",
+      "notes": [
+        "Fuzz Face into cranked Hiwatt with tape echo delay",
+        "Execute dramatic 1.5-step over-bends on the G and B strings",
+        "Vocal-like wrist vibrato on every held note"
+      ],
+      "alphaTab": ":4 11.3 :8 9.3 11.3 :4 12.2 :8 10.2 12.2 | :2 12.2 :4 14.1 :8 12.1 14.1 | :2 14.1 :2 r.2 |",
+      "exerciseLabel": "Iconic Gilmour Solo Theme"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Custom Shop David Gilmour Signature Stratocaster ('The Black Strat')",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "PRS Silver Sky",
+        "Squier Classic Vibe 60s Stratocaster"
+      ],
+      "pickup": "Seymour Duncan Custom SSL-1 bridge single-coil / Fender Custom Shop 69 neck pickup"
+    },
+    "amp": {
+      "recommended": "Hiwatt DR103 Custom 100W with WEM 4x12 Fane Speaker Cabinet",
+      "alternatives": [
+        "Reeves Custom 50",
+        "Fender Twin Reverb",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "5/10",
+        "treble": "6/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "7/10"
+      }
+    },
+    "effects": {
+      "distortion": "Dallas Arbiter Silicon Fuzz Face / Electro-Harmonix 'Ram's Head' Big Muff",
+      "reverb": "Large studio plate reverb (EMT 140)",
+      "other": "Binson Echorec 2 Magnetic Disk Delay (~310ms multi-head echo), Colorsound Power Boost"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Verse Chords & Rhythm Feel",
+      "steps": [
+        "Learn the F#m, A, E, and Bm chord shapes",
+        "Practice the 120 BPM quarter-note groove with metronome",
+        "Understand the song's dynamic shifts between verse and chorus"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Chorus Major 7th Voicings & Transitions",
+      "steps": [
+        "Master clean switching between Dmaj7 and Amaj7",
+        "Practice the descending turnaround: C#m to Bm to E",
+        "Learn the clean chord fills that lead into the solo"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "David Gilmour Solo Mastery",
+      "steps": [
+        "Isolate the multi-step over-bends and verify pitch accuracy with a chromatic tuner",
+        "Master smooth, wide vocal wrist vibrato at the peak of full-step bends",
+        "Dial in tape delay and fuzz sustain to recreate Gilmour's singing tone"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Under-bending the 1.5-step bends on the G string, leaving notes flat and sour",
+      "Applying nervous, rapid finger vibrato instead of smooth, wide wrist-driven vibrato",
+      "Muting the shimmering high strings on the Dmaj7 chorus chord"
+    ],
+    "practiceRoutine": [
+      "5 min: Pitch-bending calibration drills with chromatic tuner",
+      "10 min: Slow vibrato exercises on sustained whole notes",
+      "15 min: Solo phrasing and delay timing practice",
+      "10 min: Rhythm practice through the verse-chorus transitions"
+    ],
+    "focusAreas": [
+      "Exact pitch accuracy on 1-step and 1.5-step bends",
+      "Singing wrist vibrato technique",
+      "Dynamic emotional storytelling throughout the guitar solo"
+    ],
+    "metronomeWork": [
+      "Practice the solo slowly at 80 BPM to lock in micro-timing",
+      "Increase to 100 BPM, ensuring bend releases are perfectly in time",
+      "Perform at album tempo of 120 BPM with backing track"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Comfortably Numb",
+        "difficulty": "Advanced",
+        "similarity": "David Gilmour's monumental guitar solo showcase in B minor"
+      },
+      {
+        "title": "Wish You Were Here",
+        "difficulty": "Beginner",
+        "similarity": "Acoustic 12-string ballad with iconic intro acoustic solo in G major"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "difficulty": "Advanced",
+        "similarity": "Highly melodic, vocal-inspired guitar soloing that tells an emotional narrative"
+      },
+      {
+        "title": "Little Wing",
+        "artist": "Jimi Hendrix",
+        "difficulty": "Advanced",
+        "similarity": "Expressive thumb-over ballad chords and soulful, weeping lead guitar fills"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "bending",
+      "vibrato",
+      "delay",
+      "song-analysis",
+      "lead-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "1-2 months"
+  }
+}

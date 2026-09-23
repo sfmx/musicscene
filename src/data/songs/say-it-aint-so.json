@@ -1,0 +1,337 @@
+{
+  "songInfo": {
+    "title": "Say It Ain't So",
+    "artist": "Weezer",
+    "album": "Weezer (The Blue Album)",
+    "released": "1994",
+    "genre": "Classic Rock",
+    "tempo": "76 BPM",
+    "duration": "4:18",
+    "key": "C# Minor",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C# Minor",
+      "modalCharacter": "Aeolian / Harmonic Minor Verse into Heavy Alt-Rock Chorus",
+      "scalesUsed": [
+        {
+          "scale": "C# Natural Minor",
+          "notes": "C# - D# - E - F# - G# - A - B",
+          "application": "The delicate clean verse arpeggios and bittersweet vocal melodies"
+        },
+        {
+          "scale": "C# Harmonic Minor",
+          "notes": "C# - D# - E - F# - G# - A - B#",
+          "application": "The major V chord (G#) introducing the B# leading tone"
+        },
+        {
+          "scale": "C# Minor Pentatonic",
+          "notes": "C# - E - F# - G# - B",
+          "application": "Rivers Cuomo's crying, bluesy guitar solo fills"
+        }
+      ],
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor (tonic)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C#m",
+          "G#",
+          "A",
+          "E"
+        ],
+        "progression": "i - V - VI - III",
+        "description": "Iconic 4-chord progression featuring clean reggae upstrokes in verse and crushing fuzz in chorus"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "C#m - G# - A - E",
+          "romanNumerals": "i - V - VI - III",
+          "description": "Clean reggae-style offbeat skanks and ringing arpeggios with hammer-on embellishments"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C#5 - G#5 - A5 - E5",
+          "romanNumerals": "i - V - VI - III",
+          "description": "Explosive wall of high-gain guitar fuzz matching the vocal catharsis ('Say it ain't so!')"
+        },
+        {
+          "section": "Bridge",
+          "progression": "B - B/A - E - G#",
+          "romanNumerals": "♭VII - ♭VII/7 - III - V",
+          "description": "Dynamic tension build ('Dear Daddy, I write you in spite of years of silence')"
+        }
+      ],
+      "harmonicFunction": [
+        "The major V chord (G#) borrowed from C# Harmonic Minor provides sharp, urgent tension resolving to A (VI)",
+        "The progression moves stepwise down and up: C#m (i) → G# (V) → A (VI) → E (III), creating an irresistible circular flow",
+        "Extreme dynamic contrast: clean verse vs explosive chorus represents the quiet-loud-quiet grunge aesthetic",
+        "Half-step down tuning slackens string tension, giving the fuzz chords thicker low-end rumble"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Clean Offbeat Reggae Upstrokes & Embellishments",
+      "description": "Strumming clean chords strictly on the offbeats ('and' of each beat) decorated with hammer-on fills",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rivers Cuomo and Brian Bell alternate between tight staccato skanks and ringing hammer-ons",
+          "Strum upward on the 'and' of beats 1, 2, 3, and 4",
+          "Execute the signature hammer-on fill from fret 5 to 7 on the D string over the A chord"
+        ],
+        "sequence": [
+          "Rest on beat 1",
+          "Crisp upstroke on C#m barre chord on 'and' of beat 1",
+          "Mute strings instantly with fretting hand release",
+          "Hit G# chord on 'and' of beat 2"
+        ],
+        "tips": [
+          "Keep fretting fingers flat to choke strings immediately after the strum",
+          "Use the neck pickup with tone on 7 for warm, chimey clean clarity"
+        ],
+        "chords": [
+          "C#m",
+          "G#",
+          "A",
+          "E"
+        ],
+        "progression": "Verse Riff"
+      }
+    },
+    {
+      "name": "High-Impact Dynamic Explosion",
+      "description": "Transitioning instantly from whispering clean skanks to a crushing wall of high-gain fuzz power chords",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "The defining sonic trademark of 90s alternative rock",
+          "Engage high-gain distortion pedal precisely on beat 1 of the chorus",
+          "Strum with full downstrokes across the lower four strings for maximum acoustic pressure"
+        ],
+        "sequence": [
+          "Quiet clean upstroke on E chord at end of verse",
+          "Stomp distortion pedal",
+          "Slam downstroke on C#5 power chord on downbeat of chorus"
+        ],
+        "tips": [
+          "Do not hit the pedal early or late; precision timing creates the visceral dynamic punch",
+          "Keep picking hand relaxed to allow the guitar to feed back slightly on sustained chords"
+        ],
+        "chords": [
+          "C#5",
+          "G#5",
+          "A5",
+          "E5"
+        ],
+        "progression": "Chorus"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Verse Riff",
+      "timeStamp": "0:00-1:05",
+      "technique": "Clean Offbeat Upstrokes & Hammer-ons",
+      "key": "C# Minor",
+      "description": "The classic opening clean riff featuring syncopated offbeat chord stabs and fluid melodic fills.",
+      "chords": [
+        "C#m",
+        "G#",
+        "A",
+        "E"
+      ],
+      "progression": "C#m - G# - A - E",
+      "notes": [
+        "Strum strictly on the offbeats (the 'and' counts)",
+        "Clean tone with slight chorus / room reverb",
+        "Execute the subtle hammer-on ornament on the A chord cleanly"
+      ],
+      "alphaTab": ":8 r.2 (4.5 6.4 6.3 5.2) r.2 (4.6 6.5 6.4 5.3) | r.2 (5.6 7.5 7.4 6.3) r.2 (0.6 2.5 2.4 1.3) |",
+      "exerciseLabel": "Clean Verse Offbeat Skanks"
+    },
+    {
+      "name": "Explosive Chorus",
+      "timeStamp": "1:05-1:36",
+      "technique": "Crushing Fuzz Power Chords",
+      "key": "C# Minor",
+      "description": "Massive dynamic explosion as the full distortion kicks in for the anthemic title refrain.",
+      "chords": [
+        "C#5",
+        "G#5",
+        "A5",
+        "E5"
+      ],
+      "progression": "C#5 - G#5 - A5 - E5",
+      "notes": [
+        "Full-force downstroke power chords",
+        "Let strings ring fully with thick fuzz saturation",
+        "Tight mute on the transition stops"
+      ],
+      "alphaTab": ":4 (4.5 6.4 6.3) (4.6 6.5 6.4) | :4 (5.6 7.5 7.4) (0.6 2.5 2.4) | :4 (4.5 6.4 6.3) (4.6 6.5 6.4) | :2 (5.6 7.5 7.4) :2 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Chorus Fuzz Power Chords"
+    },
+    {
+      "name": "Guitar Solo",
+      "timeStamp": "2:40-3:12",
+      "technique": "Emotional Pentatonic Bends & Harmonics",
+      "key": "C# Minor",
+      "description": "Rivers Cuomo's cathartic, screaming guitar solo full of dramatic full-step bends and feedback.",
+      "chords": [
+        "C#5",
+        "G#5",
+        "A5",
+        "E5"
+      ],
+      "progression": "C#5 - G#5 - A5 - E5",
+      "notes": [
+        "Cranked tube fuzz with screaming sustain",
+        "Wide, dramatic vibrato on the 12th and 14th fret bends",
+        "Let natural feedback bloom between phrases"
+      ],
+      "alphaTab": ":8 9.3 11.3 :4 12.2 :8 11.3 9.3 | :4 11.4 :8 9.4 11.4 :4 9.4 | :8 12.1 14.1 :4 16.1 :8 14.1 12.1 | :2 14.2 :2 r.2 |",
+      "exerciseLabel": "Cuomo Solo Climax"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Stratocaster-style Warmoth guitar with Seymour Duncan humbuckers",
+      "alternatives": [
+        "Gibson Les Paul Studio",
+        "Fender Player Stratocaster HSS",
+        "Epiphone SG Standard"
+      ],
+      "pickup": "Seymour Duncan Trembucker (bridge) / '59 neck humbucker"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Mark I head into Marshall 4x12 with Celestion V30s",
+      "alternatives": [
+        "Marshall JCM800",
+        "Fender Hot Rod Deluxe",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "7/10",
+        "treble": "6/10",
+        "middle": "7/10",
+        "bass": "6/10",
+        "presence": "6/10"
+      }
+    },
+    "effects": {
+      "distortion": "Electro-Harmonix Big Muff Pi or cranked Mesa/Boogie lead channel",
+      "reverb": "Warm hall reverb on the clean verses",
+      "other": "Boss TU-3 Tuner (essential for half-step down tuning accuracy)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "4-Chord Progression & Half-Step Tuning",
+      "steps": [
+        "Tune down a half-step to Eb Standard (Eb Ab Db Gb Bb Eb)",
+        "Learn the basic chord shapes: C#m, G#, A, E",
+        "Practice smooth chord switching at 76 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Reggae Upstroke Timing & Fills",
+      "steps": [
+        "Master counting offbeats (1-AND-2-AND-3-AND-4-AND)",
+        "Execute clean, percussive fretting hand muting after each upstroke",
+        "Add the melodic hammer-on fill over the A major chord"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Dynamic Control & Guitar Solo",
+      "steps": [
+        "Perfect the explosive clean-to-distortion transition into the chorus",
+        "Learn Rivers Cuomo's crying guitar solo note-for-note",
+        "Perform with authentic emotional phrasing and controlled feedback sustain"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Strumming on the downbeats instead of strictly on the offbeats in the verse",
+      "Failing to choke the clean chords, creating a sloppy, ringing strum rather than a tight skank",
+      "Rushing the tempo during the quiet verses"
+    ],
+    "practiceRoutine": [
+      "5 min: Offbeat strumming warm-up with metronome at 76 BPM",
+      "10 min: Slow drill of the verse clean chord skanks and hammer-ons",
+      "15 min: Dynamic transition drills: 4 bars clean into 4 bars heavy fuzz",
+      "10 min: Guitar solo pitch-bending precision"
+    ],
+    "focusAreas": [
+      "Precise offbeat rhythmic placement",
+      "Instant fretting-hand string damping",
+      "High-impact dynamic contrast between verse and chorus"
+    ],
+    "metronomeWork": [
+      "Set metronome to 76 BPM with eighth-note subdivision clicks",
+      "Strum only on the high-pitched 'and' clicks",
+      "Maintain relaxed, steady pulse throughout the entire 4 minutes"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Buddy Holly",
+        "difficulty": "Beginner",
+        "similarity": "Catchy alternative rock power chords and iconic melodic guitar solo"
+      },
+      {
+        "title": "Undone - The Sweater Song",
+        "difficulty": "Beginner",
+        "similarity": "Clean arpeggiated intro exploding into heavy grunge chorus"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "difficulty": "Beginner",
+        "similarity": "Clean arpeggiated verses interrupted by violent distorted chorus explosions"
+      },
+      {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "difficulty": "Beginner",
+        "similarity": "Definitive 90s loud-quiet-loud dynamic arrangement"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "distortion",
+      "strumming",
+      "phrasing",
+      "song-analysis",
+      "rhythm-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "songInfo": {
+    "title": "Here Comes the Sun",
+    "artist": "The Beatles",
+    "album": "Abbey Road",
+    "released": "1969",
+    "genre": "Folk Rock",
+    "tempo": "129 BPM",
+    "duration": "3:05",
+    "key": "A Major (Capo 7 in D)",
+    "tuning": "Standard (EADGBE) with Capo 7"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Major",
+      "modalCharacter": "Ionian with Folk Fingerpicking",
+      "scalesUsed": [
+        {
+          "scale": "A Major Scale",
+          "notes": "A - B - C# - D - E - F# - G#",
+          "application": "The vocal melody and acoustic chord arpeggios relative to concert pitch"
+        },
+        {
+          "scale": "D Major Scale",
+          "notes": "D - E - F# - G - A - B - C#",
+          "application": "Open chord grips and hammer-on/pull-off motifs relative to the 7th fret capo"
+        },
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "The lyrical acoustic fills decorating the main acoustic intro pattern"
+        }
+      ],
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "G",
+          "A7"
+        ],
+        "progression": "I - IV - V7 (shapes relative to Capo 7)",
+        "description": "Joyful acoustic progression rooted in open D-shape folk fingerpicking"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Chorus",
+          "progression": "D - G - A7 - D - G - A7",
+          "romanNumerals": "I - IV - V7 - I - IV - V7",
+          "description": "The optimistic title hook featuring syncopated open string hammer-ons"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - G - E7/G# - A7",
+          "romanNumerals": "I - IV - V/V - V7",
+          "description": "Secondary dominant E7 leading smoothly into the dominant A7 turnaround"
+        },
+        {
+          "section": "Bridge (Sun, Sun, Sun)",
+          "progression": "F - C - G - D - A7",
+          "romanNumerals": "♭III - ♭VII - IV - I - V (relative to D shape)",
+          "description": "Complex shifting meters (11/8, 4/4, 7/8) cycling descending fourths"
+        }
+      ],
+      "harmonicFunction": [
+        "D major chord provides the radiant tonic anchor through capoed resonance",
+        "G major (IV) gives pastoral lift and uplifting energy",
+        "Secondary dominant E7 introduces chromatic G# leading into A7",
+        "The bridge introduces flat-side modal borrowing (F and C) for dramatic contrast"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Capoed Acoustic Fingerpicking",
+      "description": "Plucking bass notes with pick or thumb while fingers simultaneously fret melodic hammer-on and pull-off fills",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Capo placed securely on the 7th fret transforms open D shapes into concert A Major",
+          "High string tension at the 7th fret produces a bright, bell-like harpsichord timbre",
+          "Keep wrist relaxed to alternate smoothly between bass strums and treble flourishes"
+        ],
+        "sequence": [
+          "Thumb picks root on open D string (4th string)",
+          "Fingers pluck B and high E strings",
+          "Pinky executes hammer-on on 3rd fret high E, pulling off back to 2nd fret"
+        ],
+        "tips": [
+          "Use a high-quality capo with adjustable tension to prevent intonation sharpness",
+          "Practice the syncopated accents on the upbeat 'and' of beat 2"
+        ],
+        "chords": [
+          "D",
+          "G",
+          "A7"
+        ],
+        "progression": "Intro Riff"
+      }
+    },
+    {
+      "name": "Odd-Meter Time Signature Shifts",
+      "description": "Navigating George Harrison's intricate bridge meter cycle through 11/8, 4/4, and 7/8 measures",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Influenced by George Harrison's study of Indian classical rhythmic cycles (tala)",
+          "Subdivides measures into groupings of 3s and 2s (e.g., 3+3+3+2 for 11/8)",
+          "Moog synthesizer and acoustic guitar lock together on the synchronized stabs"
+        ],
+        "sequence": [
+          "Count 1-2-3, 1-2-3, 1-2-3, 1-2 over F to C chord transition",
+          "Resolve into standard 4/4 measure on G to D resolution",
+          "Sustain final A7 turnaround to reset the pulse"
+        ],
+        "tips": [
+          "Tap your foot on the primary pulses rather than counting individual eighth notes",
+          "Lock in with Ringo Starr's accented handclaps and snare rimshots"
+        ],
+        "chords": [
+          "F",
+          "C",
+          "G",
+          "D",
+          "A7"
+        ],
+        "progression": "Bridge (Sun, Sun, Sun)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:19",
+      "technique": "Capoed Acoustic Arpeggios & Hammer-ons",
+      "key": "A Major (Capo 7 in D)",
+      "description": "The world-famous acoustic guitar opening featuring ringing D-shape arpeggios and high E string melodic fills.",
+      "chords": [
+        "D",
+        "G",
+        "A7"
+      ],
+      "progression": "D - G - A7 (I - IV - V7)",
+      "notes": [
+        "Fret standard open D chord shape with capo on fret 7",
+        "Execute the high E hammer-on/pull-off with the pinky cleanly",
+        "Let the open strings ring into one another for lush acoustic resonance"
+      ],
+      "alphaTab": "(0.4 2.3 3.2) (0.4 2.3 3.2) :8 0.1 2.1 | :8 3.1 2.1 0.1 2.3 :4 (0.4 2.3 3.2) | :8 0.4 2.3 3.2 0.1 :4 (0.4 2.3 3.2) |",
+      "exerciseLabel": "Intro Acoustic Motif"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:19-0:45",
+      "technique": "Rhythmic Strumming & Walking Bass",
+      "key": "A Major (Capo 7 in D)",
+      "description": "Gentle acoustic backing underneath George Harrison's warm lead vocals with moving bass notes.",
+      "chords": [
+        "D",
+        "G",
+        "E7",
+        "A7"
+      ],
+      "progression": "D - G - E7/G# - A7",
+      "notes": [
+        "Smooth dynamics supporting the vocal storytelling",
+        "Accentuate the bass note walkup from E to G# on the E7 chord",
+        "Keep the 16th-note strumming wrist loose and flexible"
+      ],
+      "alphaTab": ":4 (0.4 2.3 3.2) (0.4 2.3 3.2) :8 0.1 2.1 | :4 (3.6 2.5 0.4 0.3 3.2 3.1) (4.6 2.5 0.4 1.3 0.2 0.1) | :2 (0.5 2.4 0.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Verse Chord Motion"
+    },
+    {
+      "name": "Bridge (Sun, Sun, Sun)",
+      "timeStamp": "1:28-2:04",
+      "technique": "Polyrhythmic Meter Shifts (11/8, 4/4, 7/8)",
+      "key": "A Major (Capo 7 in D)",
+      "description": "The escalating rhythmic cycle repeating 'Sun, sun, sun, here it comes' with ascending Moog synthesizer fills.",
+      "chords": [
+        "F",
+        "C",
+        "G",
+        "D",
+        "A7"
+      ],
+      "progression": "F - C - G - D - A7",
+      "notes": [
+        "Internalize the 11/8 meter as 3+3+3+2 eighth notes",
+        "Maintain strict pick attack on the downstrokes for percussive impact",
+        "Build dynamic volume on each repetition leading into the triumphant chorus"
+      ],
+      "alphaTab": ":8 (1.6 3.5 3.4 2.3 1.2 1.1) (1.6 3.5 3.4 2.3 1.2 1.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :8 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2) (0.4 2.3 3.2) | :2 (0.5 2.4 0.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Bridge Polyrhythmic Stabs"
+    },
+    {
+      "name": "Outro",
+      "timeStamp": "2:40-3:05",
+      "technique": "Ringing Arpeggios & Final Cadence",
+      "key": "A Major (Capo 7 in D)",
+      "description": "Return to the signature intro motif, gradually slowing tempo into a peaceful, chime-like final D major strum.",
+      "chords": [
+        "D",
+        "G",
+        "A7",
+        "D"
+      ],
+      "progression": "D - G - A7 - D",
+      "notes": [
+        "Delicate pick attack to let the harmonics chime clearly",
+        "Ritardando on the final measure",
+        "Allow the final open D chord to ring out until complete silence"
+      ],
+      "alphaTab": ":8 0.4 2.3 3.2 0.1 :4 (0.4 2.3 3.2) | :8 3.1 2.1 0.1 2.3 :4 (0.4 2.3 3.2) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Outro Arpeggio Cadence"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson J-200 or Martin D-28 Acoustic Guitar",
+      "alternatives": [
+        "Taylor 814ce",
+        "Epiphone Masterbilt Texan",
+        "Yamaha FG800"
+      ],
+      "pickup": "Natural microphone capture (Neumann KM56 or U67 small/large diaphragm condenser)"
+    },
+    "amp": {
+      "recommended": "Direct Acoustic Mic into Abbey Road REDD / TG12345 Console",
+      "alternatives": [
+        "AER Compact 60",
+        "Fender Acoustic 100",
+        "Fishman Loudbox Mini"
+      ],
+      "settings": {
+        "gain": "3/10",
+        "treble": "7/10",
+        "middle": "5/10",
+        "bass": "4/10",
+        "presence": "8/10"
+      }
+    },
+    "effects": {
+      "distortion": "None - pure uncompressed acoustic tone",
+      "reverb": "Abbey Road Studio 2 natural room acoustics and EMT 140 plate reverb",
+      "other": "Kyser or Shubb Guitar Capo placed cleanly on 7th fret"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Capo Placement & Basic Chord Shapes",
+      "steps": [
+        "Clamp capo on the 7th fret and verify all six strings are in tune",
+        "Practice switching between open D, G, and A7 chord shapes relative to the capo",
+        "Play the basic verse progression at 90 BPM with steady eighth-note downstrokes"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Master the Intro Riff & Melodic Embellishments",
+      "steps": [
+        "Isolate the pinky hammer-on and pull-off on the 1st string while holding the D chord",
+        "Practice the string-skipping arpeggios that connect D to G",
+        "Bring the intro up to full album tempo of 129 BPM with swing feel"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Odd-Meter Bridge Synchronization",
+      "steps": [
+        "Subdivide the 11/8 and 7/8 measures in the bridge into rhythmic sub-pulses",
+        "Coordinate the syncopated chord stabs with the vocal phrasing",
+        "Perform the entire song seamlessly from memory with vocal accompaniment"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Placing the capo too close to the fret wire causing string buzzing or sharp intonation",
+      "Muting the open high E string with the fretting hand while attempting the D chord hammer-ons",
+      "Losing count during the bridge's 11/8 meter changes"
+    ],
+    "practiceRoutine": [
+      "5 min: Tune guitar thoroughly with capo clamped on 7th fret",
+      "10 min: Slow repetition of the intro pinky hammer-on sequence at 80 BPM",
+      "15 min: Metronome drills on the bridge time signature transitions",
+      "10 min: Full run-through focusing on fluid acoustic dynamics and timing"
+    ],
+    "focusAreas": [
+      "Capo 7 intonation and tuning stability",
+      "Independent pinky finger control for melodic hammer-ons",
+      "Polyrhythmic counting across the bridge meter shifts"
+    ],
+    "metronomeWork": [
+      "Set metronome to 80 BPM and practice the intro arpeggio in 4/4",
+      "Set metronome to eighth notes (258 BPM) to count the 11/8 bridge measures accurately",
+      "Gradually accelerate to full performance speed of 129 BPM"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Blackbird",
+        "difficulty": "Intermediate",
+        "similarity": "Paul McCartney's iconic acoustic fingerpicking masterclass in G major"
+      },
+      {
+        "title": "Norwegian Wood",
+        "difficulty": "Beginner",
+        "similarity": "6/8 acoustic strumming with melodic hammer-ons in D mixolydian"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Tears in Heaven",
+        "artist": "Eric Clapton",
+        "difficulty": "Intermediate",
+        "similarity": "Intricate acoustic fingerpicking with moving basslines in A major"
+      },
+      {
+        "title": "Landslide",
+        "artist": "Fleetwood Mac",
+        "difficulty": "Intermediate",
+        "similarity": "Travis-picking acoustic ballad with capo on the 3rd fret"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-09-23",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "folk",
+      "acoustic-guitar",
+      "fingerstyle",
+      "song-analysis",
+      "rhythm-guitar"
+    ],
+    "learningValue": "HIGH",
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}
