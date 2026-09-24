@@ -1899,10 +1899,12 @@ export function getWhySongWorks(slug: string): HarmonicSecret | null {
  * structured analyses for all remaining catalog songs (total 108 songs).
  */
 export function getAllCuratedHarmonicBreakdowns(): HarmonicSecret[] {
-  const curatedList = Object.values(CURATED_SECRETS);
+  const allSongItems = getAllSongs();
+  const validSlugs = new Set(allSongItems.map(s => s.slug));
+
+  const curatedList = Object.values(CURATED_SECRETS).filter(s => validSlugs.has(s.slug));
   const curatedSlugs = new Set(curatedList.map(s => s.slug));
 
-  const allSongItems = getAllSongs();
   const structuredList: HarmonicSecret[] = [];
 
   for (const item of allSongItems) {

@@ -55,18 +55,20 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
         />
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-white rounded-2xl p-8 sm:p-10 mb-12 shadow-xl border border-indigo-500/20">
-          <div className="max-w-3xl">
-            <span className="px-3 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-full text-xs font-semibold tracking-wide uppercase mb-4 inline-block">
+        <section className="bg-slate-900/95 dark:bg-slate-950 text-white rounded-3xl p-8 sm:p-10 mb-12 shadow-xl border border-slate-800 relative overflow-hidden">
+          <div className="absolute top-0 right-0 -mr-16 -mt-16 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-amber-600/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative z-10 max-w-3xl">
+            <span className="px-3 py-1 bg-amber-500/10 text-amber-300 border border-amber-500/20 rounded-full text-xs font-semibold tracking-wide uppercase mb-4 inline-block">
               Harmonic Curiosity Engine
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
               Stop Guessing Chords. Understand Why They Move Us.
             </h1>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Most guitar websites only show you where to place your fingers. We break down the hidden musical mechanics—from the Spanish Andalusian cadence in <em>Hotel California</em> to the Beatles&apos; descending chromatic line cliché in <em>While My Guitar Gently Weeps</em>.
+              Most guitar websites only show you where to place your fingers. We break down the hidden musical mechanics—from the Spanish Andalusian cadence in <em>Hotel California</em> to Led Zeppelin&apos;s descending chromatic line cliché in <em>Stairway to Heaven</em>.
             </p>
-            <div className="flex flex-wrap gap-4 text-xs sm:text-sm text-indigo-200">
+            <div className="flex flex-wrap gap-4 text-xs sm:text-sm text-slate-300">
               <span className="flex items-center gap-1.5">
                 <span className="text-emerald-400">✓</span> Modal Interchange & Borrowed Chords
               </span>
@@ -90,10 +92,10 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setSelectedCategory('all')}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                 selectedCategory === 'all'
-                  ? 'bg-indigo-600 dark:bg-indigo-500 text-white shadow-sm'
-                  : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
+                  ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-sm'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60'
               }`}
             >
               All Concepts ({allBreakdowns.length})
@@ -105,10 +107,10 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
                 <button
                   key={catKey}
                   onClick={() => setSelectedCategory(catKey)}
-                  className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                     selectedCategory === catKey
-                      ? 'bg-indigo-600 dark:bg-indigo-500 text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
+                      ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60'
                   }`}
                 >
                   {HARMONIC_CATEGORIES[catKey].label} ({count})
@@ -123,12 +125,12 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
           {filtered.map(secret => (
             <div
               key={secret.slug}
-              className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group"
+              className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all duration-300 flex flex-col justify-between overflow-hidden group"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-1.5 flex-wrap">
-                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800/40">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">
                       {secret.categoryLabel}
                     </span>
                     {secret.isCurated && (
@@ -142,27 +144,37 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1">
-                  {secret.songTitle}
-                </h3>
+                <Link href={`/lessons/songs/song-analysis/${secret.slug}/`} className="block group/title">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover/title:text-amber-600 dark:group-hover/title:text-amber-400 transition-colors mb-1">
+                    {secret.songTitle}
+                  </h3>
+                </Link>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-4">
                   by {secret.artist}
                 </p>
 
-                {/* Core Secret Box */}
-                <div className="p-3.5 bg-amber-50/80 dark:bg-amber-950/20 rounded-lg border border-amber-200/70 dark:border-amber-500/30 mb-4">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 mb-1 flex items-center gap-1">
-                    <span>💡</span> The Harmonic Secret
+                {/* Core Secret Box - Clickable jump directly to #why-it-works */}
+                <Link
+                  href={`/lessons/songs/song-analysis/${secret.slug}/#why-it-works`}
+                  className="block p-3.5 bg-amber-50/80 dark:bg-amber-950/20 hover:bg-amber-100/70 dark:hover:bg-amber-950/40 rounded-xl border border-amber-200/70 dark:border-amber-500/30 transition-all mb-4 group/secret"
+                >
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 mb-1 flex items-center justify-between">
+                    <span className="flex items-center gap-1">
+                      <span>💡</span> The Harmonic Secret
+                    </span>
+                    <span className="text-[10px] font-semibold text-amber-700 dark:text-amber-400 group-hover/secret:translate-x-0.5 transition-transform">
+                      Jump to breakdown &rarr;
+                    </span>
                   </div>
-                  <p className="text-xs text-amber-950 dark:text-amber-200 font-medium line-clamp-3">
+                  <p className="text-xs text-amber-950 dark:text-amber-200 font-medium line-clamp-3 leading-relaxed">
                     {secret.coreSecret}
                   </p>
-                </div>
+                </Link>
 
                 {/* Chords Used */}
                 <div className="flex flex-wrap gap-1.5 mb-2">
                   {secret.chords.slice(0, 6).map((c, i) => (
-                    <span key={i} className="text-xs font-mono px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded">
+                    <span key={i} className="text-xs font-mono px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded border border-slate-200/60 dark:border-slate-700/60">
                       {c}
                     </span>
                   ))}
@@ -174,13 +186,21 @@ export default function WhySongsWorkClient({ allBreakdowns }: WhySongsWorkClient
                 </div>
               </div>
 
-              <div className="p-4 bg-slate-50 dark:bg-slate-950/60 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Full Analysis</span>
+              {/* Bottom Card Actions: Working Links */}
+              <div className="p-4 bg-slate-50 dark:bg-slate-950/60 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+                <Link
+                  href={`/lessons/songs/song-analysis/${secret.slug}/`}
+                  className="inline-flex items-center gap-1 text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+                >
+                  <span>Full Song Tab</span>
+                  <span>&rarr;</span>
+                </Link>
                 <Link
                   href={`/lessons/songs/song-analysis/${secret.slug}/#why-it-works`}
-                  className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 group-hover:translate-x-0.5 transition-transform"
+                  className="inline-flex items-center gap-1 text-xs font-bold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 group-hover:translate-x-0.5 transition-transform"
                 >
-                  Read Harmonic Secret →
+                  <span>Read Harmonic Secret</span>
+                  <span>&rarr;</span>
                 </Link>
               </div>
             </div>

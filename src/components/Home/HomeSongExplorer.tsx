@@ -17,7 +17,6 @@ const CURATED_SECRETS_SLUGS = new Set([
   'stairway-to-heaven',
   'crazy-train',
   'all-along-the-watchtower',
-  'while-my-guitar-gently-weeps',
 ]);
 
 const GENRE_CATEGORIES = [

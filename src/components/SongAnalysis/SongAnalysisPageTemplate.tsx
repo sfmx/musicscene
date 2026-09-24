@@ -38,6 +38,29 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
   const songData: SongData | null = getSongData(songSlug);
   const nav = getSequentialNav('song', songSlug);
 
+  // Smoothly scroll to target hash anchor (e.g. #why-it-works) after mount or client-side navigation
+  React.useEffect(() => {
+    const handleHashScroll = () => {
+      if (typeof window !== 'undefined' && window.location.hash) {
+        const hash = window.location.hash.replace(/^#/, '');
+        if (hash) {
+          const el = document.getElementById(hash);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    };
+
+    handleHashScroll();
+    const timer = setTimeout(handleHashScroll, 200);
+    window.addEventListener('hashchange', handleHashScroll);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('hashchange', handleHashScroll);
+    };
+  }, []);
+
   if (!songData) {
     return (
       <Layout>
