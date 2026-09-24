@@ -318,6 +318,59 @@ const applyThemeToApi = (api: any, res: ReturnType<typeof getThemeResources>) =>
   }
 };
 
+/**
+ * Calculates optimal barsPerRow and justifyLastSystem to ensure musical balance and
+ * vertical barline alignment when music notation spans across multiple lines.
+ * Prevents ragged systems (e.g. 3 bars on line 1 and 1 comically stretched bar on line 2).
+ */
+export const calculateScoreLayout = (totalBars: number, containerWidth: number): { barsPerRow: number; justifyLastSystem: boolean } => {
+  if (totalBars <= 1) {
+    return { barsPerRow: -1, justifyLastSystem: true };
+  }
+
+  // A standard 4/4 bar with clef/time sigs requires ~280-300px to render without note collision.
+  // With container padding (approx 40-60px), determine max bars that can comfortably fit in a single system row.
+  const maxFit = Math.max(1, Math.floor((containerWidth - 60) / 290));
+
+  // If all bars fit cleanly on a single line
+  if (totalBars <= maxFit) {
+    return { barsPerRow: -1, justifyLastSystem: true };
+  }
+
+  // Multi-line score: find a divisor k (2 <= k <= maxFit) so that all lines have an equal number of bars
+  let bestK = -1;
+  for (let k = Math.min(maxFit, totalBars - 1); k >= 2; k--) {
+    if (totalBars % k === 0) {
+      bestK = k;
+      break;
+    }
+  }
+
+  if (bestK !== -1) {
+    // Perfectly balanced grid (e.g. 4 bars -> 2+2, 6 bars -> 3+3, 8 bars -> 4+4)
+    return {
+      barsPerRow: bestK,
+      justifyLastSystem: true
+    };
+  }
+
+  // Small screens / mobile: 1 bar per row ensures every bar spans 100% width and barlines align
+  if (maxFit < 2) {
+    return {
+      barsPerRow: 1,
+      justifyLastSystem: true
+    };
+  }
+
+  // Prime or odd counts: cap at 2 bars per row and disable justifyLastSystem so the last bar
+  // maintains proportional width and aligns under bar 1 without stretching across the entire line
+  const chosenK = Math.min(2, maxFit);
+  return {
+    barsPerRow: chosenK,
+    justifyLastSystem: totalBars % chosenK === 0
+  };
+};
+
 const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   alphaTex,
   title,
@@ -600,6 +653,15 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         // Initialize AudioWorklet support if available in secure context
         const isWorkletSupported = ensureAlphaTabAudioWorklet(alphaTab);
 
+        // Process and normalize the AlphaTex string to balance measure durations and inject tempo
+        const unescaped = alphaTex.replace(/\\n/g, '\n');
+        const processedAlphaTex = normalizeAlphaTex(unescaped, tempo);
+
+        // Compute initial balanced layout based on container width and estimated bar count
+        const containerWidth = containerRef.current.clientWidth || (typeof window !== 'undefined' ? window.innerWidth : 1000);
+        const estimatedBars = (processedAlphaTex.match(/\|/g) || []).length || 1;
+        const initialLayout = calculateScoreLayout(estimatedBars, containerWidth);
+
         // AlphaTab settings with responsive scaling and custom theme resources
         const api = new alphaTab.AlphaTabApi(containerRef.current, {
           core: {
@@ -609,7 +671,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           display: {
             scale: 1.0,
             stretchForce: 1.0,
-            justifyLastSystem: true,
+            barsPerRow: initialLayout.barsPerRow,
+            justifyLastSystem: initialLayout.justifyLastSystem,
             padding: [16, 16],
             resources: themeRes
           },
@@ -652,13 +715,32 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           if (isMounted) setStatus('Loaded notation');
         });
 
-        // Set initial instrument program before initial MIDI generation
+        // Set initial instrument program and confirm balanced layout with loaded score
         api.scoreLoaded.on((score: any) => {
           if (isMounted) {
             applyInstrumentToScore(score, selectedInstrumentRef.current);
             if (scoreThemeRef.current) {
               applyThemeToApi(api, getThemeResources(scoreThemeRef.current));
             }
+            const realBars = score?.masterBars?.length || estimatedBars;
+            const currentWidth = containerRef.current?.clientWidth || 1000;
+            const targetLayout = calculateScoreLayout(realBars, currentWidth);
+            if (api.settings?.display) {
+              api.settings.display.barsPerRow = targetLayout.barsPerRow;
+              api.settings.display.justifyLastSystem = targetLayout.justifyLastSystem;
+            }
+          }
+        });
+
+        // Dynamically re-balance barsPerRow and justifyLastSystem on container resize
+        api.resize.on((e: any) => {
+          if (!isMounted) return;
+          const newWidth = e?.newWidth || containerRef.current?.clientWidth || 1000;
+          const realBars = api.score?.masterBars?.length || estimatedBars;
+          const targetLayout = calculateScoreLayout(realBars, newWidth);
+          if (api.settings?.display) {
+            api.settings.display.barsPerRow = targetLayout.barsPerRow;
+            api.settings.display.justifyLastSystem = targetLayout.justifyLastSystem;
           }
         });
 
@@ -753,10 +835,6 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         });
 
         setStatus('Loading tablature...');
-
-        // Process and normalize the AlphaTex string to balance measure durations and inject tempo
-        const unescaped = alphaTex.replace(/\\n/g, '\n');
-        const processedAlphaTex = normalizeAlphaTex(unescaped, tempo);
         api.tex(processedAlphaTex);
 
       } catch (err) {
