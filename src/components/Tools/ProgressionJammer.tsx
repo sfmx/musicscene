@@ -382,19 +382,19 @@ export default function ProgressionJammer() {
   return (
     <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors">
       {/* Top Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8">
+      <div className="bg-gradient-to-r from-slate-100/90 via-slate-50 to-indigo-50/40 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 text-slate-900 dark:text-white p-6 sm:p-8 border-b border-slate-200 dark:border-slate-800 transition-colors">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-500/20 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-500/30">
                 Interactive Practice Utility
               </span>
-              <span className="text-xs text-slate-400">Audio Loop Backing Engine</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">Audio Loop Backing Engine</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               Guitar Chord Progression Jam Player
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base mt-1 max-w-2xl">
+            <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base mt-1 max-w-2xl">
               Loop essential chord progressions across Blues, Rock, Pop, and Jazz. Practice soloing with real-time scale guidance.
             </p>
           </div>
@@ -414,8 +414,8 @@ export default function ProgressionJammer() {
         </div>
 
         {/* Preset Selector Badges */}
-        <div className="mt-6 pt-4 border-t border-slate-800">
-          <div className="text-xs uppercase font-bold text-slate-400 mb-2.5">
+        <div className="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800">
+          <div className="text-xs uppercase font-bold text-slate-500 dark:text-slate-400 mb-2.5">
             Choose Progression Style / Preset:
           </div>
           <div className="flex flex-wrap gap-2">
@@ -425,10 +425,10 @@ export default function ProgressionJammer() {
                 <button
                   key={preset.id}
                   onClick={() => handleSelectPreset(preset)}
-                  className={'px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border ' +
+                  className={'px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border cursor-pointer ' +
                     (isSelected
-                      ? 'bg-blue-600 text-white border-blue-500 shadow-md'
-                      : 'bg-slate-800/80 text-slate-300 border-slate-700 hover:bg-slate-800 hover:text-white')}
+                      ? 'bg-blue-600 text-white border-blue-500 shadow-md font-bold'
+                      : 'bg-white hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border-slate-200 dark:border-slate-700 shadow-xs')}
                 >
                   {preset.name}
                 </button>

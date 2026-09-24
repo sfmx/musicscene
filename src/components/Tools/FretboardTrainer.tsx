@@ -764,28 +764,28 @@ export default function FretboardTrainer() {
   return (
     <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors">
       {/* Top Header Bar */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8">
+      <div className="bg-gradient-to-r from-slate-100/90 via-slate-50 to-indigo-50/40 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 text-slate-900 dark:text-white p-6 sm:p-8 border-b border-slate-200 dark:border-slate-800 transition-colors">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30">
                 Interactive Guitar Tool
               </span>
-              <span className="text-xs text-slate-400">Standard Tuning (E A D G B E)</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">Standard Tuning (E A D G B E)</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               Interactive Fretboard Trainer & Visualizer
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base mt-1 max-w-2xl">
+            <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base mt-1 max-w-2xl">
               Master intervals, visualize scale geometry across all 6 strings, and train rapid fretboard note recall.
             </p>
           </div>
 
           {/* Sound Toggle */}
-          <div className="flex items-center gap-3 self-start md:self-auto bg-slate-800/80 px-3.5 py-2 rounded-xl border border-slate-700/60">
+          <div className="flex items-center gap-3 self-start md:self-auto bg-white dark:bg-slate-800/80 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-700/60 shadow-xs">
             <button
               onClick={() => setSoundEnabled(!soundEnabled)}
-              className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-200 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
               title="Toggle Audio Pluck Feedback"
             >
               <span>{soundEnabled ? '🔊 Audio Pluck ON' : '🔇 Audio Muted'}</span>
@@ -794,31 +794,31 @@ export default function FretboardTrainer() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-800">
+        <div className="flex flex-wrap gap-2 mt-6 pt-4 border-t border-slate-200 dark:border-slate-800">
           <button
             onClick={() => setActiveTab('visualizer')}
-            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all ' +
+            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all cursor-pointer ' +
               (activeTab === 'visualizer'
-                ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                : 'bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white')}
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30 font-bold'
+                : 'bg-white hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-700 shadow-xs')}
           >
             🗺️ Fretboard & Interval Explorer
           </button>
           <button
             onClick={() => setActiveTab('quiz')}
-            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all ' +
+            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all cursor-pointer ' +
               (activeTab === 'quiz'
-                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30'
-                : 'bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white')}
+                ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/30 font-bold'
+                : 'bg-white hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-700 shadow-xs')}
           >
             ⚡ Speed Quiz Game
           </button>
           <button
             onClick={() => setActiveTab('finder')}
-            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all ' +
+            className={'px-4 py-2 rounded-lg text-sm font-semibold transition-all cursor-pointer ' +
               (activeTab === 'finder'
-                ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-                : 'bg-slate-800/80 text-slate-300 hover:bg-slate-800 hover:text-white')}
+                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30 font-bold'
+                : 'bg-white hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-700 shadow-xs')}
           >
             🎯 Note Hunt Challenge
           </button>
@@ -1133,10 +1133,10 @@ export default function FretboardTrainer() {
 
             {/* Question Hero Card */}
             {!isBlitzFinished && (
-              <div className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-800">
+              <div className="relative overflow-hidden bg-gradient-to-r from-slate-100/90 via-slate-50 to-indigo-50/40 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 text-slate-900 dark:text-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 transition-colors">
                 {/* Animated Countdown Progress Bar (for Rush 5s & Lightning 3s) */}
                 {(speedMode === 'rush5' || speedMode === 'lightning3') && (
-                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-800">
+                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-200 dark:bg-slate-800">
                     <div
                       className={'h-full transition-all duration-75 ' +
                         (questionTimeRemaining > (speedMode === 'rush5' ? 2.5 : 1.5)
@@ -1153,7 +1153,7 @@ export default function FretboardTrainer() {
 
                 {/* Blitz 60 Progress Bar */}
                 {speedMode === 'blitz60' && (
-                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-800">
+                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-200 dark:bg-slate-800">
                     <div
                       className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-amber-500 transition-all duration-75"
                       style={{ width: `${Math.max(0, Math.min(100, (blitzTimeRemaining / 60) * 100))}%` }}
@@ -1164,32 +1164,32 @@ export default function FretboardTrainer() {
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs uppercase font-extrabold tracking-wider bg-white/10 px-2.5 py-0.5 rounded-full border border-white/20 text-slate-200">
+                      <span className="text-xs uppercase font-extrabold tracking-wider bg-slate-200/80 dark:bg-white/10 px-2.5 py-0.5 rounded-full border border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-200">
                         Question #{quizAttempts + 1}
                       </span>
                       {speedMode === 'rush5' && (
-                        <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
+                        <span className="text-xs font-bold text-amber-600 dark:text-amber-300 flex items-center gap-1">
                           <span>⚡ 5s Rush</span>
                         </span>
                       )}
                       {speedMode === 'lightning3' && (
-                        <span className="text-xs font-bold text-rose-300 flex items-center gap-1">
+                        <span className="text-xs font-bold text-rose-600 dark:text-rose-300 flex items-center gap-1">
                           <span>🔥 3s Lightning</span>
                         </span>
                       )}
                       {speedMode === 'blitz60' && (
-                        <span className="text-xs font-bold text-purple-300 flex items-center gap-1">
+                        <span className="text-xs font-bold text-purple-600 dark:text-purple-300 flex items-center gap-1">
                           <span>⏳ 60s Blitz Sprint</span>
                         </span>
                       )}
                       {speedMode === 'untimed' && (
-                        <span className="text-xs font-bold text-blue-300 flex items-center gap-1">
+                        <span className="text-xs font-bold text-blue-600 dark:text-blue-300 flex items-center gap-1">
                           <span>🧘 Untimed Practice</span>
                         </span>
                       )}
                     </div>
 
-                    <h3 className="text-2xl sm:text-3xl font-black text-white">
+                    <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
                       What note is on{' '}
                       <span className="underline decoration-yellow-400 underline-offset-4">
                         {STRINGS[targetString].label}
@@ -1208,10 +1208,10 @@ export default function FretboardTrainer() {
                     {(speedMode === 'rush5' || speedMode === 'lightning3') && (
                       <div className={'px-4 py-2.5 rounded-xl border flex items-center gap-2.5 transition-all ' +
                         (questionTimeRemaining > (speedMode === 'rush5' ? 2.5 : 1.5)
-                          ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300'
+                          ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-500/40 text-emerald-800 dark:text-emerald-300'
                           : questionTimeRemaining > 1.2
-                          ? 'bg-amber-950/60 border-amber-500/40 text-amber-300'
-                          : 'bg-red-950/80 border-red-500/80 text-red-300 animate-pulse ring-2 ring-red-500/50')}>
+                          ? 'bg-amber-50 dark:bg-amber-950/60 border-amber-300 dark:border-amber-500/40 text-amber-800 dark:text-amber-300'
+                          : 'bg-red-50 dark:bg-red-950/80 border-red-300 dark:border-red-500/80 text-red-800 dark:text-red-300 animate-pulse ring-2 ring-red-400 dark:ring-red-500/50')}>
                         <span className="text-xl">⏱️</span>
                         <div>
                           <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Time Left</div>
@@ -1223,11 +1223,11 @@ export default function FretboardTrainer() {
                     )}
 
                     {speedMode === 'blitz60' && (
-                      <div className="px-4 py-2.5 rounded-xl bg-purple-950/70 border border-purple-500/50 text-purple-200 flex items-center gap-2.5">
+                      <div className="px-4 py-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/70 border border-purple-300 dark:border-purple-500/50 text-purple-800 dark:text-purple-200 flex items-center gap-2.5">
                         <span className="text-xl">⏳</span>
                         <div>
                           <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Sprint Time</div>
-                          <div className="text-xl sm:text-2xl font-black font-mono leading-none text-yellow-300">
+                          <div className="text-xl sm:text-2xl font-black font-mono leading-none text-purple-900 dark:text-yellow-300">
                             {Math.floor(blitzTimeRemaining)}s
                           </div>
                         </div>
@@ -1235,11 +1235,11 @@ export default function FretboardTrainer() {
                     )}
 
                     {speedMode === 'untimed' && (
-                      <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 flex items-center gap-2.5">
+                      <div className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 flex items-center gap-2.5">
                         <span className="text-xl">⏱️</span>
                         <div>
                           <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Stopwatch</div>
-                          <div className="text-xl font-black font-mono leading-none text-slate-100">
+                          <div className="text-xl font-black font-mono leading-none text-slate-900 dark:text-slate-100">
                             {questionTimeRemaining.toFixed(1)}s
                           </div>
                         </div>
@@ -1249,14 +1249,14 @@ export default function FretboardTrainer() {
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => playMidiNote(getMidiForFret(targetString, targetFret))}
-                        className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
+                        className="px-3.5 py-2.5 rounded-xl bg-slate-200/80 hover:bg-slate-300/80 dark:bg-white/20 dark:hover:bg-white/30 text-slate-800 dark:text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-slate-300 dark:border-white/30 cursor-pointer"
                         title="Audition Note"
                       >
                         <span>🔊 Hear</span>
                       </button>
                       <button
                         onClick={generateNewQuizQuestion}
-                        className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
+                        className="px-3.5 py-2.5 rounded-xl bg-slate-200/80 hover:bg-slate-300/80 dark:bg-white/20 dark:hover:bg-white/30 text-slate-800 dark:text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-slate-300 dark:border-white/30 cursor-pointer"
                         title="Skip question"
                       >
                         <span>Skip ➔</span>
