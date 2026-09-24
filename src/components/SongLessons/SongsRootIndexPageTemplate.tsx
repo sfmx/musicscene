@@ -68,17 +68,18 @@ export default function SongsRootIndexPageTemplate() {
 
         {/* Hero Quick-Search & Level Jump-In */}
         <section className="mb-12">
-          <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+          <div className="bg-slate-900/95 dark:bg-slate-950 text-white rounded-3xl p-6 sm:p-10 shadow-xl dark:shadow-2xl border border-slate-800 relative overflow-hidden">
+            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-amber-600/5 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10 max-w-3xl">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white backdrop-blur-md mb-3">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-300 border border-amber-500/20 backdrop-blur-md mb-3">
                 <span>🎸</span>
                 <span>The Definitive Guitar Song Library</span>
               </span>
-              <h1 className="text-2xl sm:text-4xl font-black tracking-tight mb-3">
+              <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white mb-3">
                 Master 128+ Iconic Songs Note-for-Note
               </h1>
-              <p className="text-blue-100 text-xs sm:text-base leading-relaxed mb-6">
+              <p className="text-slate-300 text-xs sm:text-base leading-relaxed mb-6">
                 Connect every riff, chord voicing, and solo to fundamental music theory. Learn faster with synchronized AlphaTab audio playback, Roman numeral chord analysis, and progressive skill pathways.
               </p>
 
@@ -89,14 +90,14 @@ export default function SongsRootIndexPageTemplate() {
                   placeholder="Search 128 songs or artists (e.g. Wonderwall, Pink Floyd, Hotel California)..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-11 pr-10 py-3.5 bg-white text-slate-900 rounded-2xl placeholder:text-slate-400 outline-none text-xs sm:text-sm font-medium shadow-2xl focus:ring-4 focus:ring-amber-400/50 transition-all"
+                  className="w-full pl-11 pr-10 py-3.5 bg-slate-950 border border-slate-700/80 rounded-2xl text-white placeholder:text-slate-500 outline-none text-xs sm:text-sm font-medium shadow-inner focus:ring-2 focus:ring-amber-500/40 focus:border-amber-400 transition-all"
                 />
-                <span className="absolute left-4 top-3.5 text-base">🔍</span>
+                <span className="absolute left-4 top-3.5 text-base text-slate-400">🔍</span>
                 {searchQuery && (
                   <button
                     type="button"
                     onClick={() => setSearchQuery('')}
-                    className="absolute right-3.5 top-3.5 text-slate-400 hover:text-slate-600 text-xs font-bold p-1 cursor-pointer"
+                    className="absolute right-3.5 top-3.5 text-slate-400 hover:text-slate-200 text-xs font-bold p-1 cursor-pointer"
                   >
                     ✕
                   </button>
@@ -104,18 +105,18 @@ export default function SongsRootIndexPageTemplate() {
 
                 {/* Instant Search Results Dropdown */}
                 {matchingSongs.length > 0 && (
-                  <div className="absolute left-0 right-0 top-full mt-2 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden z-30 divide-y divide-slate-100 dark:divide-slate-800">
+                  <div className="absolute left-0 right-0 top-full mt-2 bg-slate-900 rounded-2xl shadow-2xl border border-slate-800 overflow-hidden z-30 divide-y divide-slate-800">
                     {matchingSongs.map((song) => (
                       <Link
                         key={song.slug}
                         href={`/lessons/songs/song-analysis/${song.slug}`}
-                        className="flex items-center justify-between p-3.5 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors text-slate-900 dark:text-white group"
+                        className="flex items-center justify-between p-3.5 hover:bg-slate-800/80 transition-colors text-white group"
                       >
                         <div>
-                          <div className="font-bold text-xs sm:text-sm group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors">
+                          <div className="font-bold text-xs sm:text-sm group-hover:text-amber-400 transition-colors">
                             {song.title}
                           </div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-400">
                             {song.artist} • {song.genre}
                           </div>
                         </div>
@@ -123,16 +124,16 @@ export default function SongsRootIndexPageTemplate() {
                           <span className={`text-[10px] px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
                             {song.difficulty}
                           </span>
-                          <span className="text-xs font-semibold text-blue-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                          <span className="text-xs font-semibold text-amber-400 group-hover:translate-x-0.5 transition-transform">
                             &rarr;
                           </span>
                         </div>
                       </Link>
                     ))}
-                    <div className="p-2.5 bg-slate-50 dark:bg-slate-950 text-center">
+                    <div className="p-2.5 bg-slate-950 text-center">
                       <Link
                         href={`/lessons/songs/song-analysis?q=${encodeURIComponent(searchQuery)}`}
-                        className="text-xs font-bold text-blue-600 dark:text-amber-400 hover:underline"
+                        className="text-xs font-bold text-amber-400 hover:text-amber-300 hover:underline"
                       >
                         View all results in Song Directory &rarr;
                       </Link>
@@ -143,38 +144,38 @@ export default function SongsRootIndexPageTemplate() {
 
               {/* Fast Filter Shortcut Badges */}
               <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                <span className="text-blue-200">Quick Jump:</span>
+                <span className="text-slate-400">Quick Jump:</span>
                 <Link
                   href="/lessons/songs/song-analysis?difficulty=Beginner"
-                  className="px-3 py-1 rounded-xl bg-white/15 hover:bg-white/25 text-white backdrop-blur-xs transition-colors flex items-center gap-1.5"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-emerald-500/50 transition-colors flex items-center gap-1.5"
                 >
                   <span>🟢</span>
                   <span>Beginner (44)</span>
                 </Link>
                 <Link
                   href="/lessons/songs/song-analysis?difficulty=Intermediate"
-                  className="px-3 py-1 rounded-xl bg-white/15 hover:bg-white/25 text-white backdrop-blur-xs transition-colors flex items-center gap-1.5"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-amber-500/50 transition-colors flex items-center gap-1.5"
                 >
                   <span>🟡</span>
                   <span>Intermediate (52)</span>
                 </Link>
                 <Link
                   href="/lessons/songs/song-analysis?difficulty=Advanced"
-                  className="px-3 py-1 rounded-xl bg-white/15 hover:bg-white/25 text-white backdrop-blur-xs transition-colors flex items-center gap-1.5"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-rose-500/50 transition-colors flex items-center gap-1.5"
                 >
                   <span>🔴</span>
                   <span>Advanced (25)</span>
                 </Link>
                 <Link
                   href="/lessons/songs/song-analysis?filter=riffs"
-                  className="px-3 py-1 rounded-xl bg-white/15 hover:bg-white/25 text-white backdrop-blur-xs transition-colors flex items-center gap-1.5"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-purple-500/50 transition-colors flex items-center gap-1.5"
                 >
                   <span>🎸</span>
                   <span>Iconic Riffs (82)</span>
                 </Link>
                 <Link
                   href="/lessons/songs/why-songs-work"
-                  className="px-3 py-1 rounded-xl bg-amber-400 text-slate-950 font-bold hover:bg-amber-300 transition-colors flex items-center gap-1.5 shadow-sm"
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition-all flex items-center gap-1.5 shadow-sm"
                 >
                   <span>🧠</span>
                   <span>Why Songs Work</span>
@@ -211,7 +212,7 @@ export default function SongsRootIndexPageTemplate() {
         <section className="mb-14">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-amber-400">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
                 Structured Curriculum
               </span>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
@@ -230,13 +231,13 @@ export default function SongsRootIndexPageTemplate() {
                 <Link
                   key={i}
                   href={href}
-                  className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-amber-400 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between group"
+                  className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-400 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 font-bold text-xs flex items-center justify-center border border-blue-200 dark:border-blue-800/40 mb-3 group-hover:scale-110 transition-transform">
+                    <div className="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-xs flex items-center justify-center border border-amber-300 dark:border-amber-700/50 mb-3 group-hover:scale-110 transition-transform">
                       {i + 1}
                     </div>
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors mb-1.5">
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors mb-1.5">
                       {step.title}
                     </h3>
                     {step.description && (
@@ -245,7 +246,7 @@ export default function SongsRootIndexPageTemplate() {
                       </p>
                     )}
                   </div>
-                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
                     <span>Explore Stage</span>
                     <span>&rarr;</span>
                   </div>
@@ -273,7 +274,7 @@ export default function SongsRootIndexPageTemplate() {
 
               <Link
                 href="/lessons/songs/song-analysis?tab=pathways"
-                className="text-xs font-bold text-blue-600 dark:text-amber-400 hover:underline shrink-0"
+                className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline shrink-0"
               >
                 View all pathways &rarr;
               </Link>
@@ -290,7 +291,7 @@ export default function SongsRootIndexPageTemplate() {
                     onClick={() => setActivePathwayId(p.id)}
                     className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
                       isActive
-                        ? 'bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 shadow-sm'
+                        ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-sm'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                     }`}
                   >
@@ -327,21 +328,21 @@ export default function SongsRootIndexPageTemplate() {
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1 mb-1.5">
-                        <span className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 font-bold text-[10px] flex items-center justify-center">
+                        <span className="w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-[10px] flex items-center justify-center">
                           {song.stepNumber}
                         </span>
                         <span className={`text-[9px] px-1.5 py-0.2 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
                           {song.difficulty}
                         </span>
                       </div>
-                      <div className="font-bold text-xs text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors line-clamp-1">
+                      <div className="font-bold text-xs text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-1">
                         {song.title}
                       </div>
                       <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1">
                         {song.artist}
                       </div>
                     </div>
-                    <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-semibold text-blue-600 dark:text-amber-400">
+                    <div className="mt-3 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-semibold text-amber-600 dark:text-amber-400">
                       <span>Learn Tab</span>
                       <span>&rarr;</span>
                     </div>
@@ -368,14 +369,14 @@ export default function SongsRootIndexPageTemplate() {
               <Link
                 key={topic.href}
                 href={topic.href}
-                className="group bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover:border-blue-400 dark:hover:border-slate-700 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between"
+                className="group bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover:border-amber-500/40 dark:hover:border-slate-700 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-3xl p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 group-hover:scale-110 transition-transform">
                       {topic.icon}
                     </span>
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors">
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                       {topic.title}
                     </h3>
                   </div>
@@ -383,7 +384,7 @@ export default function SongsRootIndexPageTemplate() {
                     {topic.description}
                   </p>
                 </div>
-                <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
                   <span>Explore Lessons</span>
                   <span>&rarr;</span>
                 </div>
@@ -405,7 +406,7 @@ export default function SongsRootIndexPageTemplate() {
             </div>
             <Link
               href="/lessons/songs/song-analysis"
-              className="text-xs sm:text-sm font-bold text-blue-600 dark:text-amber-400 hover:underline"
+              className="text-xs sm:text-sm font-bold text-amber-600 dark:text-amber-400 hover:underline"
             >
               Browse all 128 songs &rarr;
             </Link>
@@ -421,7 +422,7 @@ export default function SongsRootIndexPageTemplate() {
                 <div>
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors">
+                      <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                         {song.title}
                       </h3>
                       <p className="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 mt-0.5">
@@ -461,7 +462,7 @@ export default function SongsRootIndexPageTemplate() {
                   )}
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-bold text-blue-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-bold text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
                   <span>Learn Tabs & Theory</span>
                   <span>&rarr;</span>
                 </div>

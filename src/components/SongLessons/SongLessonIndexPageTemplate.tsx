@@ -98,7 +98,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                 <div className="space-y-4">
                   {data.learningPath.steps.map((step, i) => (
                     <div key={i} className="flex items-center gap-4">
-                      <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-sm shrink-0 border border-blue-200 dark:border-blue-800/40">
+                      <div className="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 flex items-center justify-center font-bold text-sm shrink-0 border border-amber-300 dark:border-amber-700/50">
                         {step.number || i + 1}
                       </div>
                       <div>
@@ -148,12 +148,12 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
             <Link
               key={topic.href}
               href={topic.href}
-              className="group bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm hover:shadow-xl dark:hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-slate-700 flex flex-col justify-between"
+              className="group bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm hover:shadow-xl dark:hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-amber-400/50 dark:hover:border-slate-700 flex flex-col justify-between"
             >
               <div className="p-6">
                 <div className="flex items-center mb-3">
                   <span className="text-3xl mr-3">{topic.icon}</span>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                     {topic.title}
                   </h3>
                 </div>
@@ -232,7 +232,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                     <Link
                       key={j}
                       href={link.href}
-                      className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-amber-400 hover:bg-blue-100 dark:hover:bg-slate-700 transition-colors"
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-amber-50 dark:bg-slate-800 text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-slate-700 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -246,7 +246,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
         {/* Next Steps */}
         {data.nextSteps && (
           <section className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-slate-900/90 dark:from-slate-900 dark:to-slate-800 rounded-2xl p-8 border border-blue-200/80 dark:border-slate-800 shadow-sm dark:shadow-xl">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:bg-slate-900/90 dark:from-slate-900 dark:to-slate-800 rounded-2xl p-8 border border-slate-200/80 dark:border-slate-800 shadow-sm dark:shadow-xl">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{data.nextSteps.title}</h3>
               {data.nextSteps.description && (
                 <p className="text-slate-600 dark:text-slate-300 text-sm max-w-xl mx-auto mb-6 leading-relaxed">
@@ -256,7 +256,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
               {data.nextSteps.link && (
                 <Link
                   href={data.nextSteps.link.href}
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 font-semibold rounded-xl hover:bg-blue-700 dark:hover:bg-amber-400 transition-colors shadow-sm"
+                  className="inline-flex items-center px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl transition-colors shadow-sm"
                 >
                   {data.nextSteps.link.label} →
                 </Link>

@@ -339,7 +339,7 @@ export default function SongDiscoveryHub() {
           {activeTab === 'discover' && (
             <div>
               {/* Quick Jump Bar */}
-              <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-amber-500/10 dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm mb-10 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-slate-900/80 dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm mb-10 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <h2 className="text-xl font-bold text-slate-900 dark:text-white">Looking for a specific song or technique?</h2>
                   <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-1">
@@ -383,7 +383,7 @@ export default function SongDiscoveryHub() {
                   <button
                     type="button"
                     onClick={() => setActiveTab('directory')}
-                    className="px-4 py-1.5 rounded-xl text-xs font-bold bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 hover:bg-blue-700 dark:hover:bg-amber-400 transition-all cursor-pointer shadow-xs"
+                    className="px-4 py-1.5 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all cursor-pointer shadow-xs"
                   >
                     Browse All 128 &rarr;
                   </button>
@@ -437,7 +437,7 @@ export default function SongDiscoveryHub() {
                           onClick={() => setSelectedDifficulty(level)}
                           className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 ${
                             isSelected
-                              ? 'bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 shadow-sm ring-2 ring-blue-500/20'
+                              ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-sm ring-2 ring-amber-500/40'
                               : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60'
                           }`}
                         >
@@ -618,7 +618,7 @@ export default function SongDiscoveryHub() {
                   <button
                     type="button"
                     onClick={resetFilters}
-                    className="px-5 py-2 rounded-xl text-xs font-bold bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 hover:bg-blue-700 dark:hover:bg-amber-400 transition-colors cursor-pointer"
+                    className="px-5 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition-colors cursor-pointer"
                   >
                     Reset All Filters
                   </button>
@@ -650,7 +650,7 @@ export default function SongDiscoveryHub() {
                             <td className="py-3 px-4">
                               <Link
                                 href={`/lessons/songs/song-analysis/${song.slug}`}
-                                className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors block"
+                                className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors block"
                               >
                                 {song.title}
                               </Link>
@@ -670,7 +670,7 @@ export default function SongDiscoveryHub() {
                             <td className="py-3 px-4 text-right">
                               <Link
                                 href={`/lessons/songs/song-analysis/${song.slug}`}
-                                className="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-blue-600 dark:hover:bg-amber-500 hover:text-white dark:hover:text-slate-950 transition-colors shadow-xs"
+                                className="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-amber-500 hover:text-slate-950 font-bold transition-colors shadow-xs"
                               >
                                 <span>Learn Tab</span>
                                 <span>&rarr;</span>
@@ -689,7 +689,7 @@ export default function SongDiscoveryHub() {
           {/* TAB 3: GUIDED LEARNING PATHWAYS */}
           {activeTab === 'pathways' && (
             <div className="space-y-12">
-              <div className="bg-gradient-to-r from-amber-500/10 via-purple-500/10 to-blue-500/10 dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-slate-900/80 dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                   Curated Song Learning Pathways
                 </h2>
@@ -745,14 +745,14 @@ export default function SongDiscoveryHub() {
                           className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-amber-400 dark:hover:border-slate-700 transition-all"
                         >
                           <div className="flex items-start gap-4 flex-1">
-                            <div className="shrink-0 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 font-bold flex items-center justify-center text-sm border border-blue-200 dark:border-blue-800/40">
+                            <div className="shrink-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold flex items-center justify-center text-sm border border-amber-300 dark:border-amber-700/50">
                               {song.stepNumber}
                             </div>
                             <div className="flex-1">
                               <div className="flex items-center gap-2 flex-wrap mb-1">
                                 <Link
                                   href={`/lessons/songs/song-analysis/${song.slug}`}
-                                  className="text-base font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-amber-400 transition-colors"
+                                  className="text-base font-bold text-slate-900 dark:text-white hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
                                 >
                                   {song.title}
                                 </Link>
@@ -781,7 +781,7 @@ export default function SongDiscoveryHub() {
                             <span className="text-xs font-mono text-slate-500 dark:text-slate-400">{song.tuning}</span>
                             <Link
                               href={`/lessons/songs/song-analysis/${song.slug}`}
-                              className="px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 hover:bg-blue-700 dark:hover:bg-amber-400 transition-colors shadow-xs flex items-center gap-1.5"
+                              className="px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition-colors shadow-xs flex items-center gap-1.5"
                             >
                               <span>Learn Song & Tab</span>
                               <span>&rarr;</span>

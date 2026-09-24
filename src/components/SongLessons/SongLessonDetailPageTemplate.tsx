@@ -33,7 +33,7 @@ function renderLinkedText(text: string): React.ReactNode {
       <Link
         key={match.index}
         href={href}
-        className="text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 underline underline-offset-2 font-medium transition-colors"
+        className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 underline underline-offset-2 font-medium transition-colors"
       >
         {label}
       </Link>
@@ -69,15 +69,15 @@ function CardComponent({
   return (
     <div
       className={`bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 ${
-        hasAccent ? 'border-l-4 border-l-blue-500 dark:border-l-amber-400' : ''
-      } shadow-xs flex flex-col justify-between hover:border-blue-400 dark:hover:border-slate-700 transition-all`}
+        hasAccent ? 'border-l-4 border-l-amber-500' : ''
+      } shadow-xs flex flex-col justify-between hover:border-amber-400/50 dark:hover:border-slate-700 transition-all`}
     >
       <div>
         <div className="flex items-start justify-between gap-2 mb-2">
           <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2">
             {card.icon && <span className="text-lg">{card.icon}</span>}
             {card.number !== undefined && (
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 font-bold text-xs border border-blue-200 dark:border-blue-800/40">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-xs border border-amber-300 dark:border-amber-700/50">
                 {card.number}
               </span>
             )}
@@ -130,7 +130,7 @@ function CardComponent({
               const el = document.getElementById('interactive-strumming-lab');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
+            className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
           >
             <span className="flex items-center gap-1.5">
               <span>▶</span>
@@ -174,9 +174,9 @@ function SectionComponent({
             {(section.cards || []).map((card, i) => (
               <div
                 key={i}
-                className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row items-start gap-4 hover:border-blue-400 dark:hover:border-slate-700 transition-all"
+                className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row items-start gap-4 hover:border-amber-400/50 dark:hover:border-slate-700 transition-all"
               >
-                <div className="shrink-0 w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 font-bold flex items-center justify-center border border-blue-200 dark:border-blue-800/50 shadow-xs text-base">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold flex items-center justify-center border border-amber-300 dark:border-amber-700/50 shadow-xs text-base">
                   {card.number !== undefined ? card.number : i + 1}
                 </div>
                 <div className="flex-1">
@@ -227,7 +227,7 @@ function SectionComponent({
                         const el = document.getElementById('interactive-strumming-lab');
                         if (el) el.scrollIntoView({ behavior: 'smooth' });
                       }}
-                      className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
+                      className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
                     >
                       <span className="flex items-center gap-1.5">
                         <span>▶</span>
@@ -290,7 +290,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
             {renderLinkedText(data.introduction.text)}
           </p>
           {data.introduction.quote && (
-            <div className="bg-white/80 dark:bg-slate-950/80 rounded-xl p-4 border border-blue-200 dark:border-slate-800 border-l-4 border-l-blue-500 dark:border-l-amber-400 shadow-xs mb-4">
+            <div className="bg-white/80 dark:bg-slate-950/80 rounded-xl p-4 border border-blue-200 dark:border-slate-800 border-l-4 border-l-amber-500 shadow-xs mb-4">
               <p className="text-slate-700 dark:text-slate-300 italic text-xs sm:text-sm">{data.introduction.quote}</p>
             </div>
           )}
@@ -343,7 +343,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                       onClick={() => setActiveTabId(item.id)}
                       className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                         isActive
-                          ? 'bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 shadow-sm'
+                          ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                       }`}
                     >
@@ -359,7 +359,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                   {activeTabItem.pattern && (
                     <div>
                       <span className="font-semibold text-slate-700 dark:text-slate-300">Stroke Grid: </span>
-                      <span className="font-mono text-blue-600 dark:text-amber-400 font-bold">{activeTabItem.pattern}</span>
+                      <span className="font-mono text-amber-600 dark:text-amber-400 font-bold">{activeTabItem.pattern}</span>
                     </div>
                   )}
                   {activeTabItem.chords && (
@@ -431,7 +431,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                       key={i}
                       className="flex items-start gap-3.5 p-4 rounded-xl bg-white/80 dark:bg-slate-950/80 border border-amber-200/80 dark:border-slate-800 text-slate-800 dark:text-slate-200 shadow-xs"
                     >
-                      <span className="shrink-0 w-8 h-8 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 rounded-full flex items-center justify-center font-bold text-sm border border-blue-200 dark:border-blue-800/40">
+                      <span className="shrink-0 w-8 h-8 bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 rounded-full flex items-center justify-center font-bold text-sm border border-amber-300 dark:border-amber-700/50">
                         {step.number || i + 1}
                       </span>
                       <div className="flex-1">
@@ -462,10 +462,10 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                   <Link
                     key={i}
                     href={topic.href}
-                    className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-slate-700 hover:shadow-lg dark:hover:shadow-amber-500/5 group flex flex-col justify-between transition-all"
+                    className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-amber-400/50 dark:hover:border-slate-700 hover:shadow-lg dark:hover:shadow-amber-500/5 group flex flex-col justify-between transition-all"
                   >
                     <div>
-                      <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-amber-400 transition-colors mb-2 flex items-center gap-2">
+                      <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors mb-2 flex items-center gap-2">
                         {topic.icon && <span>{topic.icon}</span>}
                         <span>{topic.title || topic.label}</span>
                       </h3>
@@ -475,7 +475,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                         </p>
                       )}
                     </div>
-                    <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                    <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
                       <span>Explore Lesson</span>
                       <span>&rarr;</span>
                     </div>
@@ -502,7 +502,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
                             href={link.href}
                             className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold ${
                               link.style === 'primary'
-                                ? 'bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 hover:bg-blue-700 dark:hover:bg-amber-400'
+                                ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold'
                                 : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700'
                             } transition-colors`}
                           >
