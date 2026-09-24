@@ -101,18 +101,44 @@ export default function TheoryContextBadges({
   if (items.length === 0) return null;
 
   const getTypeUrl = (item: TheoryItem) => {
-    switch (item.type) {
-      case 'scale':
-        return `/lessons/theory/scales/${item.slug}/`;
-      case 'mode':
-        return `/lessons/theory/modes/${item.slug}/`;
-      case 'chord':
-        return `/lessons/theory/chords/${item.slug}/`;
-      case 'progression':
-        return `/lessons/theory/progressions/${item.slug}/`;
-      default:
-        return `/lessons/theory/scales/${item.slug}/`;
+    const type = item.type;
+    let slug = item.slug.toLowerCase().trim();
+
+    // Mode normalizations
+    const modeSlugs = ['ionian', 'dorian', 'phrygian', 'lydian', 'mixolydian', 'aeolian', 'locrian'];
+    if (modeSlugs.includes(slug)) {
+      return `/lessons/theory/modes/${slug}/`;
     }
+
+    // Scale normalizations
+    if (type === 'scale') {
+      if (slug === 'pentatonic') slug = 'minor-pentatonic';
+      return `/lessons/theory/scales/${slug}/`;
+    }
+
+    // Chord normalizations
+    if (type === 'chord') {
+      if (slug === 'power-chords') slug = 'power';
+      else if (slug === 'open' || slug === 'barre') slug = 'major';
+      else if (slug === 'ninth') slug = 'dominant-ninth';
+      else if (slug === 'dominant-seventh') slug = 'seventh';
+      else if (slug === 'drone') slug = 'suspended';
+      else if (slug === 'secondary-dominants') return '/lessons/songs/chords/secondary-dominants/';
+      return `/lessons/theory/chords/${slug}/`;
+    }
+
+    // Progression normalizations
+    if (type === 'progression') {
+      if (slug === 'pachelbel') slug = 'i-v-vi-iv';
+      else if (slug === 'minor-plagal') slug = 'iv-i';
+      else if (slug === 'andalusian-cadence' || slug === 'descending-bassline' || slug === 'i-bvii-v-bvi' || slug === 'i-bvi-bvii' || slug === 'i-biii-bvii') slug = 'i-bvii-iv';
+      else if (slug === 'blues-metal') slug = 'minor-blues';
+      else if (slug === 'pedal-point') slug = 'i-iv';
+      else if (slug === 'i-v-vi-iii') slug = 'i-v-vi-iv';
+      return `/lessons/theory/progressions/${slug}/`;
+    }
+
+    return `/lessons/theory/scales/${slug}/`;
   };
 
   const getTypeColor = (type: TheoryItem['type']) => {

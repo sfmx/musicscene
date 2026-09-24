@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
@@ -12,18 +13,11 @@ export default function AffiliateDisclosurePage() {
   return (
     <Layout>
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
-        {/* Header */}
-        <header className="relative h-64 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
-          <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-              Affiliate Disclosure
-            </h1>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              Transparency is important to us. Here&apos;s how we fund MusicScene while keeping our editorial honest.
-            </p>
-          </div>
-        </header>
+        
+        <Header
+          title="Affiliate Disclosure"
+          subtitle="Transparency is important to us. Here's how we fund MusicScene while keeping our editorial honest."
+        />
 
         <div className="max-w-4xl mx-auto px-6 py-16">
           <p className="text-sm text-slate-400 dark:text-slate-500 mb-10">Last updated: April 17, 2026</p>

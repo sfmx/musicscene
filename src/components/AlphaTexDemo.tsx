@@ -67,27 +67,27 @@ const AlphaTexDemo: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">AlphaTex Rendering Demo</h1>
+      <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">AlphaTex Rendering Demo</h1>
       
       {/* Validation Demo */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Validation Examples</h2>
+        <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-4">Validation Examples</h2>
         
         <div className="grid md:grid-cols-4 gap-4 mb-6">
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="text-lg font-medium text-green-800 mb-2">Valid AlphaTex</h3>
-            <p className="text-sm text-green-700 mb-2">Input: "12.3 5.3 7.3 |"</p>
-            <div className="text-xs text-green-600">
+          <div className="bg-green-50 dark:bg-green-950/40 border border-green-200 dark:border-green-800/60 rounded-xl p-4">
+            <h3 className="text-lg font-medium text-green-800 dark:text-green-300 mb-2">Valid AlphaTex</h3>
+            <p className="text-sm text-green-700 dark:text-green-400 mb-2">Input: "12.3 5.3 7.3 |"</p>
+            <div className="text-xs text-green-600 dark:text-green-400">
               <p>Valid: {validationTest.isValid.toString()}</p>
               <p>Errors: {validationTest.errors.length}</p>
               <p>Warnings: {validationTest.warnings.length}</p>
             </div>
           </div>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-            <h3 className="text-lg font-medium text-yellow-800 mb-2">Open String Test</h3>
-            <p className="text-sm text-yellow-700 mb-2">Input: "0.3 |"</p>
-            <div className="text-xs text-yellow-600">
+          <div className="bg-yellow-50 dark:bg-amber-950/40 border border-yellow-200 dark:border-amber-800/60 rounded-xl p-4">
+            <h3 className="text-lg font-medium text-yellow-800 dark:text-amber-300 mb-2">Open String Test</h3>
+            <p className="text-sm text-yellow-700 dark:text-amber-400 mb-2">Input: "0.3 |"</p>
+            <div className="text-xs text-yellow-600 dark:text-amber-400">
               <p>Valid: {simpleOpenStringTest.isValid.toString()}</p>
               <p>Errors: {simpleOpenStringTest.errors.length}</p>
               {simpleOpenStringTest.errors.length > 0 && (
@@ -96,10 +96,10 @@ const AlphaTexDemo: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="text-lg font-medium text-blue-800 mb-2">Chord Test</h3>
-            <p className="text-sm text-blue-700 mb-2">Input: "(0.3 0.4).4 |"</p>
-            <div className="text-xs text-blue-600">
+          <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 rounded-xl p-4">
+            <h3 className="text-lg font-medium text-blue-800 dark:text-blue-300 mb-2">Chord Test</h3>
+            <p className="text-sm text-blue-700 dark:text-blue-400 mb-2">Input: "(0.3 0.4).4 |"</p>
+            <div className="text-xs text-blue-600 dark:text-blue-400">
               <p>Valid: {chordValidationTest.isValid.toString()}</p>
               <p>Errors: {chordValidationTest.errors.length}</p>
               <p>Warnings: {chordValidationTest.warnings.length}</p>
@@ -114,10 +114,10 @@ const AlphaTexDemo: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-            <h3 className="text-lg font-medium text-red-800 mb-2">Invalid AlphaTex</h3>
-            <p className="text-sm text-red-700 mb-2">Input: "99.8 invalid 3.7 |"</p>
-            <div className="text-xs text-red-600">
+          <div className="bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-800/60 rounded-xl p-4">
+            <h3 className="text-lg font-medium text-red-800 dark:text-red-300 mb-2">Invalid AlphaTex</h3>
+            <p className="text-sm text-red-700 dark:text-red-400 mb-2">Input: "99.8 invalid 3.7 |"</p>
+            <div className="text-xs text-red-600 dark:text-red-400">
               <p>Valid: {invalidValidationTest.isValid.toString()}</p>
               <p>Errors: {invalidValidationTest.errors.length}</p>
               {invalidValidationTest.errors.length > 0 && (
@@ -131,51 +131,51 @@ const AlphaTexDemo: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <h3 className="text-lg font-medium text-blue-800 mb-2">Traditional Tab Conversion</h3>
-          <p className="text-sm text-blue-700 mb-2">Original: {traditionalTab}</p>
-          <p className="text-sm text-blue-700">Converted: {convertedAlphaTex}</p>
+        <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 rounded-xl p-4">
+          <h3 className="text-lg font-medium text-blue-800 dark:text-blue-300 mb-2">Traditional Tab Conversion</h3>
+          <p className="text-sm text-blue-700 dark:text-blue-400 mb-2">Original: {traditionalTab}</p>
+          <p className="text-sm text-blue-700 dark:text-blue-400">Converted: {convertedAlphaTex}</p>
         </div>
       </section>
 
       {/* AlphaTex Renderer Examples */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">AlphaTex Renderer Examples</h2>
+        <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-4">AlphaTex Renderer Examples</h2>
         
         <div className="grid lg:grid-cols-2 gap-8">
           {examples.map((example, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
+            <div key={index} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm">
               <AlphaTexRenderer
                 alphaTex={example.alphaTex}
                 title={example.title}
                 showValidation={true}
                 className="mb-4"
               />
-              <p className="text-sm text-gray-600">{example.description}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">{example.description}</p>
             </div>
           ))}
         </div>
       </section>
       {/* Scale Renderer Example */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Standard AlphaTex Scale Rendering</h2>
-        <div className="bg-white border border-gray-200 rounded-lg p-6">
+        <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-4">Standard AlphaTex Scale Rendering</h2>
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm">
           <AlphaTexRenderer
             alphaTex="3.6 5.6 2.5 3.5 5.5 2.4 4.4 5.4 |"
             title="G Major Scale (AlphaTex)"
             showValidation={true}
           />
-          <p className="text-sm text-gray-600 mt-2">Rendered using the standard AlphaTexRenderer component.</p>
+          <p className="text-sm text-slate-600 dark:text-slate-400 mt-2">Rendered using the standard AlphaTexRenderer component.</p>
         </div>
       </section>
 
       {/* Usage Instructions */}
-      <section className="bg-gray-50 rounded-lg p-6">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Usage Instructions</h2>
+      <section className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6">
+        <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-4">Usage Instructions</h2>
         
-        <div className="space-y-4 text-sm text-gray-700">
+        <div className="space-y-4 text-sm text-slate-700 dark:text-slate-300">
           <div>
-            <h3 className="font-medium text-gray-800">AlphaTexRenderer Component:</h3>
+            <h3 className="font-medium text-slate-900 dark:text-white">AlphaTexRenderer Component:</h3>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Takes any valid AlphaTex string and renders it</li>
               <li>Includes built-in validation with error display</li>
@@ -185,7 +185,7 @@ const AlphaTexDemo: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="font-medium text-gray-800">AlphaTexValidator Utility:</h3>
+            <h3 className="font-medium text-slate-900 dark:text-white">AlphaTexValidator Utility:</h3>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Validates AlphaTex notation syntax</li>
               <li>Provides detailed error messages and suggestions</li>
@@ -195,7 +195,7 @@ const AlphaTexDemo: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="font-medium text-gray-800">AlphaTex Format Examples:</h3>
+            <h3 className="font-medium text-slate-900 dark:text-white">AlphaTex Format Examples:</h3>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li><code>"12.3 |"</code> - 12th fret on 3rd string</li>
               <li><code>"(12.3 12.4 10.5) |"</code> - Chord with multiple notes</li>

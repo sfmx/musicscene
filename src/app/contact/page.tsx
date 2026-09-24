@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -12,12 +13,11 @@ export default function ContactPage() {
   return (
     <Layout>
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
-        <header className="relative h-48 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
-          <div className="relative z-10">
-            <h1 className="text-4xl font-extrabold text-white tracking-tight">Contact Us</h1>
-          </div>
-        </header>
+        
+        <Header
+          title="Contact Us"
+          subtitle="Get in touch with the MusicScene team for questions, feedback, or lesson inquiries."
+        />
 
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="grid md:grid-cols-3 gap-8 mb-12">

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { SITE_CONFIG } from '@/lib/siteConfig';
+import { TAG_TAXONOMY } from '@/lib/tagTaxonomy';
 import contentIndexData from '@/data/_generated/content-index.json';
 
 export const dynamic = 'force-static';
@@ -54,6 +55,9 @@ const STATIC_PAGES = [
   { url: '/lessons/gear/accessories/', priority: 0.7 },
   // Other
   { url: '/lessons/techniques/', priority: 0.6 },
+  { url: '/search/', priority: 0.5 },
+  { url: '/lessons/songs/song-analysis/analytics/', priority: 0.6 },
+  { url: '/lessons/tags/', priority: 0.6 },
 ];
 
 const TYPE_PRIORITY: Record<string, number> = {
@@ -89,4 +93,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   return [...staticEntries, ...dynamicEntries];
+  const tagEntries: MetadataRoute.Sitemap = TAG_TAXONOMY.map((tag) => ({
+    url: `${SITE_CONFIG.baseUrl}/lessons/tags/${tag.slug}/`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.5,
+  }));
+
+  return [...staticEntries, ...dynamicEntries, ...tagEntries];
 }

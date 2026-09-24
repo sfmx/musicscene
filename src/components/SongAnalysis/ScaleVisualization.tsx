@@ -378,8 +378,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                                   {noteAtFret}
                                   {/* Tooltip - positioned above, only appears when hovering the note circle */}
                                   <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover/note:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-30 shadow-lg">
-                                    {noteAtFret} {isRoot ? '(Root)' : ''}
-                                    {noteAtFret} {isRoot ? '(Root)' : ''} • Click to play
+                                    {noteAtFret} {isRoot ? '(Root) ' : ''}• Click to play
                                   </div>
                                 </div>
                               )}
@@ -397,6 +396,8 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
       </div>
     );
   };
+
+  const currentScale = scales[selectedScale] || scales[0];
 
   return (
     <div className="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 mb-8 shadow-xl backdrop-blur-sm">
@@ -456,16 +457,13 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
       {/* Selected Scale Info */}
       <div className="mb-6 bg-slate-50 dark:bg-slate-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
         <h4 className="font-bold text-slate-900 dark:text-white text-base mb-2">
-          {scales[selectedScale]?.scale}
-          {(scales[selectedScale] || scales[0])?.scale}
+          {currentScale?.scale}
         </h4>
         <p className="text-xs text-slate-700 dark:text-slate-300 mb-1.5 font-mono">
-          <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {scales[selectedScale]?.notes}
-          <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {(scales[selectedScale] || scales[0])?.notes}
+          <strong className="text-amber-700 dark:text-amber-400">Notes:</strong> {currentScale?.notes}
         </p>
         <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-          <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {scales[selectedScale]?.application}
-          <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {(scales[selectedScale] || scales[0])?.application}
+          <strong className="text-slate-800 dark:text-slate-300">Application:</strong> {currentScale?.application}
         </p>
       </div>
 

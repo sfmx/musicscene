@@ -105,6 +105,7 @@ export default function HomeSongExplorer() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-3 shadow-xs">
               <span>🎸 107 Note-for-Note Deconstructions</span>
+              <span>🎸 {allSongs.length} Note-for-Note Deconstructions</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
               Song Analysis Library
@@ -119,6 +120,7 @@ export default function HomeSongExplorer() {
             className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
           >
             <span>View Complete Directory (107 Songs)</span>
+            <span>View Complete Directory ({allSongs.length} Songs)</span>
             <span>➔</span>
           </Link>
         </div>

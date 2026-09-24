@@ -50,7 +50,7 @@ const PRESETS: JamPreset[] = [
     timeSignature: '4/4',
     chords: ['C', 'G', 'Am', 'F'],
     suggestedScale: 'C Major Pentatonic or A Minor Pentatonic',
-    scaleLink: '/lessons/theory/scales/pentatonic/',
+    scaleLink: '/lessons/theory/scales/minor-pentatonic/',
     soloingTips: 'The ultimate pop loop. Focus on resolving your phrases to C over the C chord and A over the Am chord.',
   },
   {
@@ -110,7 +110,7 @@ const PRESETS: JamPreset[] = [
     timeSignature: '4/4',
     chords: ['Am', 'F', 'C', 'G'],
     suggestedScale: 'A Minor Pentatonic / C Major Scale',
-    scaleLink: '/lessons/theory/scales/pentatonic/',
+    scaleLink: '/lessons/theory/scales/minor-pentatonic/',
     soloingTips: 'Use ringing open high E and B strings as pedal tones across all 4 chords for a massive, spacious atmospheric vibe.',
   },
   {
@@ -134,7 +134,7 @@ const PRESETS: JamPreset[] = [
     timeSignature: '4/4',
     chords: ['G', 'C', 'D', 'G'],
     suggestedScale: 'G Major Pentatonic (G A B D E)',
-    scaleLink: '/lessons/theory/scales/pentatonic/',
+    scaleLink: '/lessons/theory/scales/major-pentatonic/',
     soloingTips: 'Incorporate double-stops and pedal steel style oblique bends on the B and G strings.',
   },
 ];

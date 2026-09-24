@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | MusicScene',
@@ -12,15 +13,11 @@ export default function PrivacyPolicyPage() {
   return (
     <Layout>
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen pb-16 text-slate-900 dark:text-slate-100 transition-colors">
-        <header className="relative h-64 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
-          <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Privacy Policy</h1>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              How we collect, use, and protect your information on MusicScene.
-            </p>
-          </div>
-        </header>
+        
+        <Header
+          title="Privacy Policy"
+          subtitle="How we collect, use, and protect your information on MusicScene."
+        />
 
         <div className="max-w-4xl mx-auto mt-12 px-6">
           <div className="bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12">

@@ -104,9 +104,15 @@ export default function TheoryHubPage() {
       featuredLinks: [
         { label: 'Dorian Mode', href: '/lessons/theory/scales/dorian' },
         { label: 'Mixolydian Mode', href: '/lessons/theory/scales/mixolydian' },
-        { label: 'Aeolian Mode', href: '/lessons/theory/scales/aeolian' },
+        { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },
+        { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },
         { label: 'Phrygian Mode', href: '/lessons/theory/scales/phrygian' },
         { label: 'Explore All 7 Modes →', href: '/lessons/theory/modes' },
+        { label: 'Dorian Mode', href: '/lessons/theory/modes/dorian/' },
+        { label: 'Mixolydian Mode', href: '/lessons/theory/modes/mixolydian/' },
+        { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },
+        { label: 'Phrygian Mode', href: '/lessons/theory/modes/phrygian/' },
+        { label: 'Explore All 7 Modes →', href: '/lessons/theory/modes/' },
       ],
     },
     {

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'About MusicScene | Editorial Standards & Founder',
@@ -13,18 +14,10 @@ export default function AboutPage() {
   return (
     <Layout>
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
-        {/* Header */}
-        <header className="relative h-64 bg-gray-950 overflow-hidden flex items-center justify-center text-center px-4">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-transparent to-transparent" />
-          <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-              About MusicScene
-            </h1>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              Empowering guitarists with rigorous, musically accurate education, founded and curated in Australia.
-            </p>
-          </div>
-        </header>
+        <Header
+          title="About MusicScene"
+          subtitle="Empowering guitarists with rigorous, musically accurate education, founded and curated in Australia."
+        />
 
         <div className="max-w-4xl mx-auto px-6 py-16">
           {/* Mission */}
@@ -54,8 +47,6 @@ export default function AboutPage() {
                     Founder &amp; Chief Editor
                   </span>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Jason Smith</h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Sydney, Australia</p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Brisbane, Australia</p>
                   <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Sydney &amp; Brisbane, Australia</p>
                 </div>
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -150,9 +141,9 @@ export default function AboutPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gray-950 text-white p-12 rounded-2xl text-center">
-            <h2 className="text-3xl font-extrabold mb-4">Start Learning Today</h2>
-            <p className="text-slate-300 mb-8 max-w-lg mx-auto">
+          <section className="bg-gradient-to-br from-indigo-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-900/90 dark:to-slate-950 text-slate-900 dark:text-white p-12 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm dark:shadow-xl">
+            <h2 className="text-3xl font-extrabold mb-4 text-slate-900 dark:text-white">Start Learning Today</h2>
+            <p className="text-slate-600 dark:text-slate-300 mb-8 max-w-lg mx-auto">
               Browse our library of lessons and find your next challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -164,7 +155,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/lessons/theory"
-                className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 transition-all"
+                className="px-8 py-4 border-2 border-slate-300 dark:border-white/20 text-slate-800 dark:text-white font-bold rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 transition-all"
               >
                 Study Theory
               </Link>

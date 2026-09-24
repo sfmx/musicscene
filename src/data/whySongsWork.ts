@@ -499,7 +499,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The definitive hard rock mode used in Who Made Who.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'Master the root-fifth voicings for D5, C5, G5, and F5.' },
+        { name: 'Power Chords', slug: 'power', description: 'Master the root-fifth voicings for D5, C5, G5, and F5.' },
         { name: 'Slash Chords', slug: 'slash', description: 'How first-inversion G/B connects the bassline between C and D.' },
       ],
       progressions: [
@@ -582,7 +582,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The primary mode of classic hard rock.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'Essential root-fifth shapes for rock rhythm guitar.' },
+        { name: 'Power Chords', slug: 'power', description: 'Essential root-fifth shapes for rock rhythm guitar.' },
       ],
       progressions: [
         { name: 'I - ♭VII - IV Progression', slug: 'i-bvii-iv', description: 'The quintessential rock cadence.' },
@@ -746,7 +746,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode source for the ♭III and ♭VI chords.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'The fundamental root-5th shapes that drive grunge guitar.' },
+        { name: 'Power Chords', slug: 'power', description: 'The fundamental root-5th shapes that drive grunge guitar.' },
       ],
       progressions: [
         { name: 'i - ♭III - ♭VI - iv', slug: 'i-biii-bvii-iv', description: 'The modal rock progression family.' },
@@ -828,7 +828,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The modal engine behind the anthemic chorus.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'The massive B5, A5, and E5 chorus chords.' },
+        { name: 'Power Chords', slug: 'power', description: 'The massive B5, A5, and E5 chorus chords.' },
       ],
       progressions: [
         { name: 'I - ♭VII - IV Progression', slug: 'i-bvii-iv', description: 'The primary cadence of the chorus.' },
@@ -951,7 +951,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Locrian Mode', slug: 'locrian', description: 'The diminished tritone mode echoed in the chromatic bridge.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'The root-5th shapes powering the chorus rhythm.' },
+        { name: 'Power Chords', slug: 'power', description: 'The root-5th shapes powering the chorus rhythm.' },
         { name: 'Diminished Chords', slug: 'diminished', description: 'The diminished arpeggios used in the bridge.' },
       ],
       progressions: [
@@ -1076,7 +1076,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
       chords: [
         { name: 'Suspended Chords', slug: 'suspended', description: 'A7sus4 and G/D suspension mechanics.' },
-        { name: 'Open Chords', slug: 'open', description: 'Movable D shapes in Drop D tuning.' },
+        { name: 'Open Chords', slug: 'major', description: 'Movable D shapes in Drop D tuning.' },
       ],
       progressions: [
         { name: 'I - IV - V Progression', slug: 'i-iv-v', description: 'The underlying folk-rock foundation.' },
@@ -1118,7 +1118,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Phrygian Mode', slug: 'phrygian', description: 'The dark minor mode providing the flat-second friction.' },
       ],
       chords: [
-        { name: 'Ninth Chords', slug: 'ninth', description: 'Dm9 and Gm9 jazz extensions.' },
+        { name: 'Ninth Chords', slug: 'dominant-ninth', description: 'Dm9 and Gm9 jazz extensions.' },
         { name: 'Altered Chords', slug: 'seventh', description: 'A7b9#5 altered dominant tension.' },
       ],
     },
@@ -1158,7 +1158,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Dorian Mode', slug: 'dorian', description: 'The modal heart of modern neo-soul guitar.' },
       ],
       chords: [
-        { name: 'Ninth Chords', slug: 'ninth', description: 'Ebm9, Abm9, and Gbmaj9 chord voicings.' },
+        { name: 'Ninth Chords', slug: 'dominant-ninth', description: 'Ebm9, Abm9, and Gbmaj9 chord voicings.' },
         { name: 'Seventh Chords', slug: 'seventh', description: 'Bbm7 and Db9 functional voicings.' },
       ],
       progressions: [
@@ -1202,7 +1202,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Dominant scale foundation for 9th chord comping.' },
       ],
       chords: [
-        { name: 'Ninth Chords', slug: 'ninth', description: 'G9, C9, and Ab9 movable chord grips.' },
+        { name: 'Ninth Chords', slug: 'dominant-ninth', description: 'G9, C9, and Ab9 movable chord grips.' },
         { name: 'Diminished Chords', slug: 'diminished', description: 'C#dim7 passing chord voice leading.' },
       ],
       progressions: [
@@ -1287,11 +1287,11 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Aeolian Mode', slug: 'aeolian', description: 'The parallel mode supplying the minor subdominant (iv).' },
       ],
       chords: [
-        { name: 'Barre Chords', slug: 'barre', description: 'Root-6 and Root-5 barre shapes used throughout the song.' },
+        { name: 'Barre Chords', slug: 'major', description: 'Root-6 and Root-5 barre shapes used throughout the song.' },
         { name: 'Minor Chords', slug: 'minor', description: 'Understanding the sorrowful color of the borrowed Cm chord.' },
       ],
       progressions: [
-        { name: 'I - IV - iv - I Progression', slug: 'minor-plagal', description: 'The classic minor plagal cadence.' },
+        { name: 'I - IV - iv - I Progression', slug: 'iv-i', description: 'The classic minor plagal cadence.' },
       ],
     },
   },
@@ -1329,7 +1329,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Ionian Mode', slug: 'ionian', description: 'The bright, joyful major mode foundation.' },
       ],
       chords: [
-        { name: 'Open Chords', slug: 'open', description: 'Open D, G, and A7 shapes relative to capo.' },
+        { name: 'Open Chords', slug: 'major', description: 'Open D, G, and A7 shapes relative to capo.' },
         { name: 'Secondary Dominants', slug: 'secondary-dominants', description: 'E7 acting as V/V leading into A7.' },
       ],
       progressions: [
@@ -1373,10 +1373,10 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
       chords: [
         { name: 'Minor Chords', slug: 'minor', description: 'Open Em chord voice leading.' },
-        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'B7 harmonic tension chord.' },
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'B7 harmonic tension chord.' },
       ],
       progressions: [
-        { name: 'i - ♭VII - ♭VI Progression', slug: 'i-bvii-bvi', description: 'The iconic epic minor rock progression.' },
+        { name: 'i - ♭VII - ♭VI Progression', slug: 'i-bvii-iv', description: 'The iconic epic minor rock progression.' },
       ],
     },
   },
@@ -1413,11 +1413,11 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Powers the ascending brass/guitar chords.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'Open D5 modal drone chord voicings.' },
-        { name: 'Drone Harmony', slug: 'drone', description: 'Stationary pedal-point harmonic techniques.' },
+        { name: 'Power Chords', slug: 'power', description: 'Open D5 modal drone chord voicings.' },
+        { name: 'Drone Harmony', slug: 'suspended', description: 'Stationary pedal-point harmonic techniques.' },
       ],
       progressions: [
-        { name: 'Pedal Point Riffs', slug: 'pedal-point', description: 'Harmonic movement over stationary bass notes.' },
+        { name: 'Pedal Point Riffs', slug: 'i-iv', description: 'Harmonic movement over stationary bass notes.' },
       ],
     },
   },
@@ -1461,7 +1461,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D shapes in the ballad.' },
       ],
       progressions: [
-        { name: 'Descending Bassline Progressions', slug: 'descending-bassline', description: 'G to D/F# to Em stepwise motion.' },
+        { name: 'Descending Bassline Progressions', slug: 'i-bvii-iv', description: 'G to D/F# to Em stepwise motion.' },
       ],
     },
   },
@@ -1503,7 +1503,7 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Minor Chords', slug: 'minor', description: 'F#m and Bm minor anchors.' },
       ],
       progressions: [
-        { name: 'i - ♭III - ♭VII Progression', slug: 'i-biii-bvii', description: 'The classic rock minor cadence.' },
+        { name: 'i - ♭III - ♭VII Progression', slug: 'i-bvii-iv', description: 'The classic rock minor cadence.' },
       ],
     },
   },
@@ -1541,10 +1541,10 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Ionian Mode', slug: 'ionian', description: 'The foundational major mode.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'Two-finger Root-5 and Root-6 power chord grips.' },
+        { name: 'Power Chords', slug: 'power', description: 'Two-finger Root-5 and Root-6 power chord grips.' },
       ],
       progressions: [
-        { name: 'Pachelbel Canon Progression', slug: 'pachelbel', description: 'I - V - vi - iii - IV - I - V classical sequence.' },
+        { name: 'Pachelbel Canon Progression', slug: 'i-v-vi-iv', description: 'I - V - vi - iii - IV - I - V classical sequence.' },
       ],
     },
   },
@@ -1582,11 +1582,11 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode foundation.' },
       ],
       chords: [
-        { name: 'Barre Chords', slug: 'barre', description: 'Root-5 and Root-6 barre chords used throughout.' },
-        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'G# major dominant harmony.' },
+        { name: 'Barre Chords', slug: 'major', description: 'Root-5 and Root-6 barre chords used throughout.' },
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'G# major dominant harmony.' },
       ],
       progressions: [
-        { name: 'i - V - VI - III Progression', slug: 'i-v-vi-iii', description: 'The cyclical alternative rock progression.' },
+        { name: 'i - V - VI - III Progression', slug: 'i-v-vi-iv', description: 'The cyclical alternative rock progression.' },
       ],
     },
   },
@@ -1624,10 +1624,10 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Dorian Mode', slug: 'dorian', description: 'The quintessential rock-funk mode.' },
       ],
       chords: [
-        { name: 'Open Chords', slug: 'open', description: 'Open G, D, and C voicings in the chorus.' },
+        { name: 'Open Chords', slug: 'major', description: 'Open G, D, and C voicings in the chorus.' },
       ],
       progressions: [
-        { name: 'i - ♭VII - v - ♭VI Progression', slug: 'i-bvii-v-bvi', description: 'The driving funk cadence.' },
+        { name: 'i - ♭VII - v - ♭VI Progression', slug: 'i-bvii-iv', description: 'The driving funk cadence.' },
       ],
     },
   },
@@ -1665,10 +1665,10 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode underlying the D5 power riffs.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'One-finger Drop D power chords.' },
+        { name: 'Power Chords', slug: 'power', description: 'One-finger Drop D power chords.' },
       ],
       progressions: [
-        { name: 'Blues-Metal Riffs', slug: 'blues-metal', description: 'Drop D riffing utilizing tritone passing chords.' },
+        { name: 'Blues-Metal Riffs', slug: 'minor-blues', description: 'Drop D riffing utilizing tritone passing chords.' },
       ],
     },
   },
@@ -1706,10 +1706,10 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode engine of heavy metal.' },
       ],
       chords: [
-        { name: 'Power Chords', slug: 'power-chords', description: 'Em5, C5, and D5 power chords.' },
+        { name: 'Power Chords', slug: 'power', description: 'Em5, C5, and D5 power chords.' },
       ],
       progressions: [
-        { name: 'i - ♭VI - ♭VII Progression', slug: 'i-bvi-bvii', description: 'The quintessential heavy metal cadence.' },
+        { name: 'i - ♭VI - ♭VII Progression', slug: 'i-bvii-iv', description: 'The quintessential heavy metal cadence.' },
       ],
     },
   },
@@ -1748,8 +1748,8 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
         { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Dominant scale foundation for C9 and D9 chords.' },
       ],
       chords: [
-        { name: 'Ninth Chords', slug: 'ninth', description: 'Movable C9 and D9 chord shapes.' },
-        { name: 'Dominant Seventh Chords', slug: 'dominant-seventh', description: 'G7 blues tonic chord.' },
+        { name: 'Ninth Chords', slug: 'dominant-ninth', description: 'Movable C9 and D9 chord shapes.' },
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'G7 blues tonic chord.' },
       ],
       progressions: [
         { name: '12-Bar Blues', slug: '12-bar-blues', description: 'The slow 12-bar blues chassis with chromatic turnaround.' },

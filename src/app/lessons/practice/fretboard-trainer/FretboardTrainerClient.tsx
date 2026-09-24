@@ -175,7 +175,7 @@ export default function FretboardTrainerClient() {
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Explore Related Guitar Lessons</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <Link
-                href="/lessons/theory/scales/pentatonic/"
+                href="/lessons/theory/scales/minor-pentatonic/"
                 className="bg-slate-50/80 dark:bg-slate-950/80 p-5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-400/40 hover:shadow-md dark:hover:shadow-amber-500/5 transition-all group flex flex-col justify-between"
               >
                 <div>
