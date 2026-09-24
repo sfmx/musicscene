@@ -184,6 +184,22 @@ export interface SongsRootIndexData {
   };
 }
 
+export interface InteractiveTabItem {
+  id: string;
+  title: string;
+  pattern?: string;
+  tempo?: number;
+  chords?: string;
+  description?: string;
+  alphaTab: string;
+}
+
+export interface InteractiveTabSection {
+  title: string;
+  subtitle?: string;
+  items: InteractiveTabItem[];
+}
+
 export interface ContentCard {
   title: string;
   description?: string;
@@ -194,6 +210,7 @@ export interface ContentCard {
   bgColor?: string;
   fields?: { label: string; value: string }[];
   items?: string[];
+  tabId?: string;
 }
 
 export interface ContentSection {
@@ -218,6 +235,7 @@ export interface SongLessonDetailData {
     quote?: string;
     columns?: { title?: string; text: string; icon?: string }[];
   };
+  interactiveTabs?: InteractiveTabSection;
   sections: ContentSection[];
   practiceSection?: {
     title: string;

@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Header from '@/components/Header';
@@ -11,6 +11,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import { getDifficultyColor } from '@/lib/utils';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 function renderLinkedText(text: string): React.ReactNode {
   if (!text) return text;
@@ -56,7 +57,13 @@ function getBadgeColorClasses(color?: string): string {
   return color;
 }
 
-function CardComponent({ card }: { card: ContentCard }) {
+function CardComponent({
+  card,
+  onSelectTab,
+}: {
+  card: ContentCard;
+  onSelectTab?: (tabId: string) => void;
+}) {
   const hasAccent = Boolean(card.borderColor);
 
   return (
@@ -104,21 +111,46 @@ function CardComponent({ card }: { card: ContentCard }) {
           </div>
         )}
       </div>
-      {card.items && card.items.length > 0 && (
-        <ul className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80 space-y-1 text-xs text-slate-600 dark:text-slate-300">
-          {card.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-1.5">
-              <span className="text-blue-500 dark:text-amber-400">•</span>
-              <span>{renderLinkedText(item)}</span>
-            </li>
-          ))}
-        </ul>
-      )}
+      <div>
+        {card.items && card.items.length > 0 && (
+          <ul className="mt-3 pt-3 border-t border-slate-200 dark:border-slate-800/80 space-y-1 text-xs text-slate-600 dark:text-slate-300">
+            {card.items.map((item, i) => (
+              <li key={i} className="flex items-start gap-1.5">
+                <span className="text-blue-500 dark:text-amber-400">•</span>
+                <span>{renderLinkedText(item)}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {card.tabId && onSelectTab && (
+          <button
+            type="button"
+            onClick={() => {
+              onSelectTab(card.tabId!);
+              const el = document.getElementById('interactive-strumming-lab');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
+          >
+            <span className="flex items-center gap-1.5">
+              <span>▶</span>
+              <span>Play in Interactive Lab</span>
+            </span>
+            <span className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+          </button>
+        )}
+      </div>
     </div>
   );
 }
 
-function SectionComponent({ section }: { section: ContentSection }) {
+function SectionComponent({
+  section,
+  onSelectTab,
+}: {
+  section: ContentSection;
+  onSelectTab?: (tabId: string) => void;
+}) {
   const layoutClasses: Record<string, string> = {
     'grid-2': 'grid grid-cols-1 md:grid-cols-2 gap-6',
     'grid-3': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6',
@@ -187,6 +219,23 @@ function SectionComponent({ section }: { section: ContentSection }) {
                       ))}
                     </ul>
                   )}
+                  {card.tabId && onSelectTab && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        onSelectTab(card.tabId!);
+                        const el = document.getElementById('interactive-strumming-lab');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="mt-3.5 pt-2.5 border-t border-slate-200 dark:border-slate-800/80 w-full flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-amber-400 hover:text-blue-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span>▶</span>
+                        <span>Play in Interactive Lab</span>
+                      </span>
+                      <span className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
@@ -194,7 +243,7 @@ function SectionComponent({ section }: { section: ContentSection }) {
         ) : (
           <div className={layoutClasses[section.layout || 'grid-2'] || layoutClasses['grid-2']}>
             {(section.cards || []).map((card, i) => (
-              <CardComponent key={i} card={card} />
+              <CardComponent key={i} card={card} onSelectTab={onSelectTab} />
             ))}
           </div>
         )}
@@ -214,6 +263,13 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
     ? `${data.backLink.href}/${slug}`
     : `${data.backLink.href}/${dataKey}`;
   const nav = getSequentialNav('song-lesson', dataKey, { category: data.category });
+
+  const initialTabId = data.interactiveTabs?.items[0]?.id || '';
+  const [activeTabId, setActiveTabId] = useState<string>(initialTabId);
+
+  const activeTabItem =
+    data.interactiveTabs?.items.find((item) => item.id === activeTabId) ||
+    data.interactiveTabs?.items[0];
 
   return (
     <Layout>
@@ -258,9 +314,88 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
           )}
         </section>
 
+        {/* Interactive Strumming Lab with AlphaTab */}
+        {data.interactiveTabs && data.interactiveTabs.items.length > 0 && activeTabItem && (
+          <section id="interactive-strumming-lab" className="mb-12 scroll-mt-24">
+            <div className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl p-6 sm:p-8">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 bg-emerald-100/70 dark:bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-500/20">
+                  Interactive Audio & Tab Lab
+                </span>
+                <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+                  {data.interactiveTabs.title}
+                </h2>
+              </div>
+              {data.interactiveTabs.subtitle && (
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                  {data.interactiveTabs.subtitle}
+                </p>
+              )}
+
+              {/* Pattern Selector Tabs */}
+              <div className="flex flex-wrap gap-2 mb-6 pb-4 border-b border-slate-200 dark:border-slate-800">
+                {data.interactiveTabs.items.map((item) => {
+                  const isActive = item.id === activeTabItem.id;
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => setActiveTabId(item.id)}
+                      className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                        isActive
+                          ? 'bg-blue-600 dark:bg-amber-500 text-white dark:text-slate-950 shadow-sm'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                      }`}
+                    >
+                      {item.title}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Active Pattern Metadata */}
+              <div className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-4 border border-slate-200 dark:border-slate-800 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs mb-2">
+                  {activeTabItem.pattern && (
+                    <div>
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Stroke Grid: </span>
+                      <span className="font-mono text-blue-600 dark:text-amber-400 font-bold">{activeTabItem.pattern}</span>
+                    </div>
+                  )}
+                  {activeTabItem.chords && (
+                    <div>
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Chords: </span>
+                      <span className="text-slate-800 dark:text-slate-200">{activeTabItem.chords}</span>
+                    </div>
+                  )}
+                  {activeTabItem.tempo && (
+                    <div>
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Default Tempo: </span>
+                      <span className="text-slate-800 dark:text-slate-200">{activeTabItem.tempo} BPM</span>
+                    </div>
+                  )}
+                </div>
+                {activeTabItem.description && (
+                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                    {activeTabItem.description}
+                  </p>
+                )}
+              </div>
+
+              {/* AlphaTex Player */}
+              <AlphaTexRenderer
+                key={activeTabItem.id}
+                alphaTex={activeTabItem.alphaTab}
+                title={activeTabItem.title}
+                tempo={activeTabItem.tempo || 80}
+              />
+            </div>
+          </section>
+        )}
+
         {/* Content Sections */}
         {data.sections.map((section, i) => (
-          <SectionComponent key={i} section={section} />
+          <SectionComponent key={i} section={section} onSelectTab={(tabId) => setActiveTabId(tabId)} />
         ))}
 
         {/* Practice Section */}

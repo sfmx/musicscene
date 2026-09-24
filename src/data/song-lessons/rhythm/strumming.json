@@ -65,7 +65,8 @@
             "[Wild Thing - The Troggs](/lessons/songs/song-analysis/wild-thing/) - Raw garage rock energy over A - D - E chords",
             "[Louie Louie - The Kingsmen](/lessons/songs/song-analysis/louie-louie/) - The definitive three-chord rock rhythm blueprint",
             "[Blitzkrieg Bop - Ramones](/lessons/songs/song-analysis/blitzkrieg-bop/) - High-velocity downpicking defining punk rock drive"
-          ]
+          ],
+          "tabId": "downbeat"
         },
         {
           "title": "2. Straight Eighth-Note Alternating Strum",
@@ -98,7 +99,8 @@
             "[Free Fallin' - Tom Petty](/lessons/songs/song-analysis/free-fallin/) - Crisp acoustic rhythm with subtle capo voicing shifts",
             "[Brown Eyed Girl - Van Morrison](/lessons/songs/song-analysis/brown-eyed-girl/) - Joyful, rolling 8th-note acoustic pulse over G - C - G - D",
             "[Bad Moon Rising - Creedence Clearwater Revival](/lessons/songs/song-analysis/bad-moon-rising/) - Roots rock groove with percussive right-hand snaps"
-          ]
+          ],
+          "tabId": "eighths"
         },
         {
           "title": "3. The \"Island / Calypso\" Universal Pop Strum",
@@ -131,7 +133,8 @@
             "[Riptide - Vance Joy](/lessons/songs/song-analysis/riptide/) - Signature syncopated bounce driving the Am - G - C progression",
             "[Stand by Me - Ben E. King](/lessons/songs/song-analysis/stand-by-me/) - Classic acoustic groove paired with percussive palm taps",
             "[Knockin' on Heaven's Door - Bob Dylan](/lessons/songs/song-analysis/knockin-on-heavens-door/) - Timeless campfire anthem over G - D - Am / G - D - C"
-          ]
+          ],
+          "tabId": "calypso"
         },
         {
           "title": "4. The 16th-Note Acoustic Anthem Strum",
@@ -164,7 +167,8 @@
             "[Wonderwall - Oasis](/lessons/songs/song-analysis/wonderwall/) - The iconic 16th-note acoustic wall of sound with locked anchor fingers",
             "[Good Riddance (Time of Your Life) - Green Day](/lessons/songs/song-analysis/good-riddance/) - Dynamic acoustic strum evolving from picked arpeggios into full open roar",
             "[Zombie - The Cranberries](/lessons/songs/song-analysis/zombie/) - Driving, emotional acoustic-into-distorted chorus rhythm"
-          ]
+          ],
+          "tabId": "wonderwall"
         },
         {
           "title": "5. The Compound 6/8 Ballad Strum",
@@ -197,7 +201,8 @@
             "[Nothing Else Matters - Metallica](/lessons/songs/song-analysis/nothing-else-matters/) - Epic 6/8 acoustic power ballad transitioning into heavy dynamics",
             "[House of the Rising Sun - Traditional](/lessons/theory/chords/minor/) - The rolling arpeggio-strum hybrid standard in 6/8 time",
             "[Dreams - Fleetwood Mac](/lessons/songs/song-analysis/dreams/) - Rolling relaxed ballad feel supporting Lindsey Buckingham's texture"
-          ]
+          ],
+          "tabId": "compound68"
         },
         {
           "title": "6. Southern Rock & Country \"Boom-Chick\" Strum",
@@ -230,7 +235,8 @@
             "[Sweet Home Alabama - Lynyrd Skynyrd](/lessons/songs/song-analysis/sweet-home-alabama/) - Signature D - Cadd9 - G alternating bass rhythm and guitar hooks",
             "[Ring of Fire - Johnny Cash](/lessons/songs/song-analysis/ring-of-fire/) - The classic boom-chick country rhythm driving the progression",
             "[Folsom Prison Blues - Johnny Cash](/lessons/songs/song-analysis/folsom-prison-blues/) - Train-beat rhythmic chug with muted bass-string alternating roots"
-          ]
+          ],
+          "tabId": "boomchick"
         }
       ]
     },
@@ -537,5 +543,65 @@
       "href": "/lessons/songs/rhythm/fingerpicking",
       "description": "Trade your pick for fingers and develop alternating bass lines and polyrhythmic textures."
     }
-  ]
+  ],
+  "interactiveTabs": {
+    "title": "Interactive Strumming Lab & Audio Player",
+    "subtitle": "Select any strumming pattern below to hear authentic acoustic playback, loop measures, and practice with the animated tab and metronome at your chosen tempo.",
+    "items": [
+      {
+        "id": "downbeat",
+        "title": "1. Four-on-the-Floor Drive",
+        "pattern": "↓   -   ↓   -   ↓   -   ↓   -",
+        "tempo": 100,
+        "chords": "A Major - D Major - E Major (Wild Thing / Louie Louie)",
+        "description": "Driving quarter-note downstrokes establishing solid downbeat timing and chord transition confidence.",
+        "alphaTab": ":4 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :4 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :4 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :4 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) |"
+      },
+      {
+        "id": "eighths",
+        "title": "2. Straight 8th-Note Strum",
+        "pattern": "↓   ↑   ↓   ↑   ↓   ↑   ↓   ↑",
+        "tempo": 92,
+        "chords": "G - C - G - D (Free Fallin' / Brown Eyed Girl)",
+        "description": "Continuous eighth-note alternating strum with gentle 3-string brush upstrokes and accented snare hits on 2 and 4.",
+        "alphaTab": ":8 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) | :8 (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :8 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) | :8 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) |"
+      },
+      {
+        "id": "calypso",
+        "title": "3. Universal Calypso / Island",
+        "pattern": "↓   -   ↓   ↑   -   ↑   ↓   ↑",
+        "tempo": 80,
+        "chords": "G - Cadd9 - Em7 - D (Riptide / Knockin' on Heaven's Door)",
+        "description": "The most ubiquitous acoustic strum in popular music. Features a silent ghost stroke down on beat 3 and syncopated upbeat push.",
+        "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) :8 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) r.8 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (3.5 2.4 0.3 3.2 3.1) :8 (3.5 2.4 0.3 3.2 3.1) (3.5 2.4 0.3 3.2 3.1) r.8 (3.5 2.4 0.3 3.2 3.1) (3.5 2.4 0.3 3.2 3.1) (3.5 2.4 0.3 3.2 3.1) | :4 (0.6 2.5 2.4 0.3 3.2 3.1) :8 (0.6 2.5 2.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 3.2 3.1) r.8 (0.6 2.5 2.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 3.2 3.1) | :4 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) r.8 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) |"
+      },
+      {
+        "id": "wonderwall",
+        "title": "4. 16th-Note Acoustic Anthem",
+        "pattern": "↓   -   ↓   -   ↓   ↑   -   ↑   ↓   -   ↓   ↑   ↓   ↑",
+        "tempo": 88,
+        "chords": "Em7 - G - Dsus4 - A7sus4 (Wonderwall / Good Riddance)",
+        "description": "Driving 16th-note pendulum wall of sound with locked anchor fingers on strings 1 and 2.",
+        "alphaTab": ":8 (0.6 2.5 2.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 3.2 3.1) :16 (0.6 2.5 2.4 0.3 3.2 3.1) (0.6 2.5 2.4 0.3 3.2 3.1) :8 (3.6 2.5 0.4 0.3 3.2 3.1) :8 (3.6 2.5 0.4 0.3 3.2 3.1) :16 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) :8 (3.6 2.5 0.4 0.3 3.2 3.1) :8 (3.6 2.5 0.4 0.3 3.2 3.1) | :8 (0.4 2.3 3.2 3.1) (0.4 2.3 3.2 3.1) :16 (0.4 2.3 3.2 3.1) (0.4 2.3 3.2 3.1) :8 (0.5 2.4 0.3 3.2 3.1) :8 (0.5 2.4 0.3 3.2 3.1) :16 (0.5 2.4 0.3 3.2 3.1) (0.5 2.4 0.3 3.2 3.1) :8 (0.5 2.4 0.3 3.2 3.1) :8 (0.5 2.4 0.3 3.2 3.1) |"
+      },
+      {
+        "id": "compound68",
+        "title": "5. Compound 6/8 Ballad",
+        "pattern": "↓   -   ↓   ↑   ↓   -   ↓   ↑",
+        "tempo": 54,
+        "chords": "Em - D - C (Nothing Else Matters)",
+        "description": "Rolling triplet-based 6/8 meter with two strong pulses per measure and dynamic arpeggiated texture.",
+        "alphaTab": "\\ts 6 8 :4 (0.6 2.5 2.4 0.3 0.2 0.1) :8 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (0.6 2.5 2.4 0.3 0.2 0.1) :8 (0.6 2.5 2.4 0.3 0.2 0.1) | \\ts 6 8 :4 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 2.1) :4 (3.5 2.4 0.3 1.2 0.1) :8 (3.5 2.4 0.3 1.2 0.1) |"
+      },
+      {
+        "id": "boomchick",
+        "title": "6. Country Boom-Chick",
+        "pattern": "[Bass]  -  [Treble ↓]  -  [Alt-Bass]  -  [Treble ↓ ↑]",
+        "tempo": 96,
+        "chords": "G - C - G - D (Sweet Home Alabama / Johnny Cash)",
+        "description": "Alternating bass note downbeats followed by treble chord brush backbeats simulating a full country rhythm section.",
+        "alphaTab": ":4 3.6 (0.3 3.2 3.1) 0.4 (0.3 3.2 3.1) | :4 3.5 (0.3 1.2 0.1) 2.4 (0.3 1.2 0.1) | :4 3.6 (0.3 3.2 3.1) 0.4 (0.3 3.2 3.1) | :4 0.4 (2.3 3.2 2.1) 0.5 (2.3 3.2 2.1) |"
+      }
+    ]
+  }
 }
