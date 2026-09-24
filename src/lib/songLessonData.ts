@@ -166,13 +166,20 @@ export interface SongsRootIndexData {
   };
   learningPath: {
     title: string;
-    steps: { title: string; colorBg: string; colorText: string }[];
+    steps: {
+      title: string;
+      description?: string;
+      href?: string;
+      colorBg?: string;
+      colorText?: string;
+    }[];
   };
   topics: {
     title: string;
     href: string;
     icon: string;
     description: string;
+    badge?: string;
   }[];
   featured: {
     title: string;
