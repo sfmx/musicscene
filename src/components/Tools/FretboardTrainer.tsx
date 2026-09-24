@@ -91,6 +91,8 @@ const SINGLE_DOT_FRETS = [3, 5, 7, 9, 15];
 const DOUBLE_DOT_FRETS = [12];
 const TOTAL_FRETS = 15;
 
+type SpeedMode = 'rush5' | 'lightning3' | 'blitz60' | 'untimed';
+
 export default function FretboardTrainer() {
   const [activeTab, setActiveTab] = useState<'visualizer' | 'quiz' | 'finder'>('visualizer');
   const [rootNote, setRootNote] = useState<string>('A');
@@ -102,7 +104,8 @@ export default function FretboardTrainer() {
   // Audio Context Ref
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  // Quiz State
+  // Quiz State & Speed Challenge Modes
+  const [speedMode, setSpeedMode] = useState<SpeedMode>('rush5');
   const [quizStringFilter, setQuizStringFilter] = useState<'all' | 'low' | 'high' | '1'>('all');
   const [quizMaxFret, setQuizMaxFret] = useState<number>(12);
   const [targetString, setTargetString] = useState<number>(0);
@@ -111,10 +114,29 @@ export default function FretboardTrainer() {
   const [quizAttempts, setQuizAttempts] = useState<number>(0);
   const [quizStreak, setQuizStreak] = useState<number>(0);
   const [quizBestStreak, setQuizBestStreak] = useState<number>(0);
-  const [quizFeedback, setQuizFeedback] = useState<{ status: 'correct' | 'wrong' | null; message: string }>({
+  const [quizFeedback, setQuizFeedback] = useState<{
+    status: 'correct' | 'wrong' | null;
+    message: string;
+    reactionTime?: number;
+    speedRating?: string;
+  }>({
     status: null,
     message: '',
   });
+
+  // Speed & Reaction Time Tracking
+  const [questionTimeRemaining, setQuestionTimeRemaining] = useState<number>(5.0);
+  const [blitzTimeRemaining, setBlitzTimeRemaining] = useState<number>(60.0);
+  const [isBlitzFinished, setIsBlitzFinished] = useState<boolean>(false);
+  const [reactionTimes, setReactionTimes] = useState<number[]>([]);
+  const [fastestReactionTime, setFastestReactionTime] = useState<number | null>(null);
+  const [lastReactionTime, setLastReactionTime] = useState<number | null>(null);
+  const [isAnsweringLocked, setIsAnsweringLocked] = useState<boolean>(false);
+
+  const questionStartTimeRef = useRef<number>(0);
+  const blitzStartTimeRef = useRef<number>(0);
+  const timerIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const lastTickSecondRef = useRef<number>(-1);
 
   // Finder Game State
   const [finderTargetNote, setFinderTargetNote] = useState<string>('C');
@@ -200,6 +222,61 @@ export default function FretboardTrainer() {
     }
   };
 
+  const playTickSound = () => {
+    if (!soundEnabled) return;
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(980, ctx.currentTime);
+      gain.gain.setValueAtTime(0.04, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.04);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.04);
+    } catch (e) {
+      // Ignore
+    }
+  };
+
+  const playTimeoutSound = () => {
+    if (!soundEnabled) return;
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(160, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(60, ctx.currentTime + 0.35);
+      gain.gain.setValueAtTime(0.18, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.35);
+    } catch (e) {
+      // Ignore
+    }
+  };
+
+  const playSpeedChime = () => {
+    if (!soundEnabled) return;
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const notes = [76, 81, 84, 88]; // High rapid arpeggio
+      notes.forEach((midi, i) => {
+        setTimeout(() => playMidiNote(midi, 0.25), i * 45);
+      });
+    } catch (e) {
+      // Ignore
+    }
+  };
+
   const getMidiForFret = (stringIndex: number, fret: number) => {
     return STRINGS[stringIndex].openMidi + fret;
   };
@@ -216,6 +293,17 @@ export default function FretboardTrainer() {
     return INTERVALS.find((i) => i.semitones === semitones) || INTERVALS[0];
   };
 
+  const getTimeLimitForMode = (mode: SpeedMode) => {
+    switch (mode) {
+      case 'lightning3':
+        return 3.0;
+      case 'rush5':
+        return 5.0;
+      default:
+        return 0;
+    }
+  };
+
   const generateNewQuizQuestion = () => {
     let allowedStrings = [0, 1, 2, 3, 4, 5];
     if (quizStringFilter === 'low') allowedStrings = [4, 5];
@@ -228,15 +316,134 @@ export default function FretboardTrainer() {
     setTargetString(randomString);
     setTargetFret(randomFret);
     setQuizFeedback({ status: null, message: '' });
+    setIsAnsweringLocked(false);
+
+    const limit = getTimeLimitForMode(speedMode);
+    setQuestionTimeRemaining(limit > 0 ? limit : 0);
+    questionStartTimeRef.current = performance.now();
+    lastTickSecondRef.current = -1;
+  };
+
+  const handleTimeout = () => {
+    setIsAnsweringLocked(true);
+    playTimeoutSound();
+    setQuizAttempts((prev) => prev + 1);
+    setQuizStreak(0);
+    const correctNote = getNoteForFret(targetString, targetFret);
+
+    setQuizFeedback({
+      status: 'wrong',
+      message: "⏰ TIME'S UP! " + STRINGS[targetString].label + " at fret " + targetFret + " is " + correctNote + ".",
+      reactionTime: getTimeLimitForMode(speedMode),
+      speedRating: 'Timed Out',
+    });
+
+    setTimeout(() => {
+      generateNewQuizQuestion();
+    }, 1200);
   };
 
   const resetQuiz = () => {
     setQuizScore(0);
     setQuizAttempts(0);
     setQuizStreak(0);
+    setReactionTimes([]);
+    setFastestReactionTime(null);
+    setLastReactionTime(null);
+    setIsBlitzFinished(false);
+    blitzStartTimeRef.current = 0;
+    setBlitzTimeRemaining(60.0);
     setQuizFeedback({ status: null, message: '' });
     generateNewQuizQuestion();
   };
+
+  const switchSpeedMode = (newMode: SpeedMode) => {
+    setSpeedMode(newMode);
+    setIsBlitzFinished(false);
+    blitzStartTimeRef.current = 0;
+    setBlitzTimeRemaining(60.0);
+    setQuizScore(0);
+    setQuizAttempts(0);
+    setQuizStreak(0);
+    setReactionTimes([]);
+    setFastestReactionTime(null);
+    setLastReactionTime(null);
+    setQuizFeedback({ status: null, message: '' });
+
+    // Regenerate question
+    let allowedStrings = [0, 1, 2, 3, 4, 5];
+    if (quizStringFilter === 'low') allowedStrings = [4, 5];
+    if (quizStringFilter === 'high') allowedStrings = [0, 1, 2];
+    if (quizStringFilter === '1') allowedStrings = [0];
+
+    const randomString = allowedStrings[Math.floor(Math.random() * allowedStrings.length)];
+    const randomFret = Math.floor(Math.random() * (quizMaxFret + 1));
+    setTargetString(randomString);
+    setTargetFret(randomFret);
+    setIsAnsweringLocked(false);
+
+    const limit = getTimeLimitForMode(newMode);
+    setQuestionTimeRemaining(limit > 0 ? limit : 0);
+    questionStartTimeRef.current = performance.now();
+    lastTickSecondRef.current = -1;
+  };
+
+  // High-Frequency Speed Timer Loop
+  useEffect(() => {
+    if (activeTab !== 'quiz' || isBlitzFinished) {
+      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+      return;
+    }
+
+    timerIntervalRef.current = setInterval(() => {
+      const now = performance.now();
+
+      // Mode: Blitz 60s
+      if (speedMode === 'blitz60') {
+        if (blitzStartTimeRef.current === 0) {
+          blitzStartTimeRef.current = now;
+        }
+        const blitzElapsed = (now - blitzStartTimeRef.current) / 1000;
+        const blitzRemaining = Math.max(0, 60 - blitzElapsed);
+        setBlitzTimeRemaining(blitzRemaining);
+
+        if (blitzRemaining <= 0) {
+          setIsBlitzFinished(true);
+          setIsAnsweringLocked(true);
+          playVictoryFanfare();
+          if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+          return;
+        }
+      }
+
+      // Mode: Rush (5s) or Lightning (3s)
+      const timeLimit = getTimeLimitForMode(speedMode);
+      if (timeLimit > 0 && !isAnsweringLocked) {
+        const elapsed = (now - questionStartTimeRef.current) / 1000;
+        const remaining = Math.max(0, timeLimit - elapsed);
+        setQuestionTimeRemaining(remaining);
+
+        // Warning tick in final 2 seconds
+        const secFloor = Math.floor(remaining);
+        if (remaining <= 2.1 && remaining > 0.2 && secFloor !== lastTickSecondRef.current) {
+          lastTickSecondRef.current = secFloor;
+          playTickSound();
+        }
+
+        // Timeout check
+        if (remaining <= 0) {
+          handleTimeout();
+        }
+      } else if (speedMode === 'untimed' && !isAnsweringLocked) {
+        const elapsed = (now - questionStartTimeRef.current) / 1000;
+        setQuestionTimeRemaining(elapsed);
+      }
+    }, 40);
+
+    return () => {
+      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+    };
+  }, [activeTab, speedMode, isAnsweringLocked, isBlitzFinished, targetString, targetFret]);
 
   useEffect(() => {
     if (activeTab === 'quiz') {
@@ -244,14 +451,64 @@ export default function FretboardTrainer() {
     }
   }, [activeTab, quizStringFilter, quizMaxFret]);
 
+  // Keyboard shortcut listener (keys A-G)
+  useEffect(() => {
+    if (activeTab !== 'quiz' || isAnsweringLocked || isBlitzFinished) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (['INPUT', 'SELECT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) {
+        return;
+      }
+
+      const key = e.key.toUpperCase();
+      if (['A', 'B', 'C', 'D', 'E', 'F', 'G'].includes(key)) {
+        let noteToGuess = key;
+        if (e.shiftKey && key !== 'B' && key !== 'E') {
+          noteToGuess = key + '#';
+        }
+        handleQuizAnswer(noteToGuess);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeTab, isAnsweringLocked, isBlitzFinished, targetString, targetFret, speedMode]);
+
   const handleQuizAnswer = (selectedNote: string) => {
+    if (isAnsweringLocked || isBlitzFinished) return;
+    setIsAnsweringLocked(true);
+
+    const now = performance.now();
+    const rawElapsed = (now - questionStartTimeRef.current) / 1000;
+    const reactionTime = Math.max(0.05, Number(rawElapsed.toFixed(2)));
+    setLastReactionTime(reactionTime);
+
     const correctNote = getNoteForFret(targetString, targetFret);
     const isCorrect = selectedNote === correctNote;
 
     setQuizAttempts((prev) => prev + 1);
 
     if (isCorrect) {
-      playSoundFeedback(true);
+      let speedRating = '⏱️ Good Pace';
+      if (reactionTime < 1.2) {
+        speedRating = '⚡ Godlike Reflexes (<1.2s)';
+        playSpeedChime();
+      } else if (reactionTime < 2.0) {
+        speedRating = '🔥 Lightning Fast (<2.0s)';
+        playSoundFeedback(true);
+      } else if (reactionTime < 3.2) {
+        speedRating = '🎯 Sharp Reaction (<3.2s)';
+        playSoundFeedback(true);
+      } else {
+        speedRating = '⏱️ Solid Guess';
+        playSoundFeedback(true);
+      }
+
+      setReactionTimes((prev) => [...prev, reactionTime]);
+      if (!fastestReactionTime || reactionTime < fastestReactionTime) {
+        setFastestReactionTime(reactionTime);
+      }
+
       const newScore = quizScore + 1;
       const newStreak = quizStreak + 1;
       setQuizScore(newScore);
@@ -259,22 +516,46 @@ export default function FretboardTrainer() {
       if (newStreak > quizBestStreak) {
         setQuizBestStreak(newStreak);
       }
+
       setQuizFeedback({
         status: 'correct',
         message: 'Correct! ' + STRINGS[targetString].label + ' at fret ' + targetFret + ' is indeed ' + correctNote + '.',
+        reactionTime,
+        speedRating,
       });
+
       setTimeout(() => {
         generateNewQuizQuestion();
-      }, 1000);
+      }, 750);
     } else {
       playSoundFeedback(false);
       setQuizStreak(0);
       setQuizFeedback({
         status: 'wrong',
         message: 'Not quite! ' + STRINGS[targetString].label + ' at fret ' + targetFret + ' is ' + correctNote + ' (you guessed ' + selectedNote + ').',
+        reactionTime,
+        speedRating: 'Missed',
       });
+
+      setTimeout(() => {
+        setIsAnsweringLocked(false);
+      }, 1000);
     }
   };
+
+  const averageReactionTime = useMemo(() => {
+    if (reactionTimes.length === 0) return null;
+    const sum = reactionTimes.reduce((acc, val) => acc + val, 0);
+    return Number((sum / reactionTimes.length).toFixed(2));
+  }, [reactionTimes]);
+
+  const speedRank = useMemo(() => {
+    if (!averageReactionTime) return { title: 'Apprentice', emoji: '🎸', color: 'text-slate-400' };
+    if (averageReactionTime < 1.3) return { title: 'Godlike Shredder', emoji: '⚡', color: 'text-amber-400 font-black' };
+    if (averageReactionTime < 2.0) return { title: 'Fretboard Master', emoji: '🔥', color: 'text-orange-400 font-bold' };
+    if (averageReactionTime < 3.2) return { title: 'Sharp Sight', emoji: '🎯', color: 'text-emerald-400 font-bold' };
+    return { title: 'Steady Pacer', emoji: '⏱️', color: 'text-blue-400' };
+  }, [averageReactionTime]);
 
   const playVictoryFanfare = () => {
     if (!soundEnabled) return;
@@ -552,7 +833,7 @@ export default function FretboardTrainer() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-50 dark:bg-slate-950/70 p-4 sm:p-6 rounded-xl border border-slate-200 dark:border-slate-800 transition-colors">
               {/* Root Note Picker */}
               <div className="lg:col-span-4 space-y-3">
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-600">
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                   Select Root Note (Tonic)
                 </label>
                 <div className="grid grid-cols-6 gap-1.5">
@@ -573,8 +854,8 @@ export default function FretboardTrainer() {
                   })}
                 </div>
                 <div className="flex items-center justify-between pt-2">
-                  <span className="text-xs text-slate-500">
-                    Current Key: <strong className="text-red-600 font-bold text-sm">{rootNote}</strong>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">
+                    Current Key: <strong className="text-red-600 dark:text-red-400 font-bold text-sm">{rootNote}</strong>
                   </span>
                   <button
                     onClick={playVisibleScale}
@@ -587,7 +868,7 @@ export default function FretboardTrainer() {
 
               {/* Presets */}
               <div className="lg:col-span-8 space-y-3">
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-600">
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                   Scale, Mode & Arpeggio Presets
                 </label>
                 <div className="flex flex-wrap gap-2">
@@ -619,7 +900,7 @@ export default function FretboardTrainer() {
             {/* Custom Interval Badges */}
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                   Active Intervals relative to {rootNote}
                 </span>
                 <span className="text-xs text-slate-500 dark:text-slate-400">Click any interval badge to toggle on/off</span>
@@ -635,7 +916,7 @@ export default function FretboardTrainer() {
                       className={'p-2 text-center rounded-lg border text-xs font-medium transition-all ' +
                         (isActive
                           ? inv.color + ' shadow-sm ring-1'
-                          : 'bg-slate-50 text-slate-400 border-slate-200 opacity-60 hover:opacity-90') +
+                          : 'bg-slate-50 dark:bg-slate-900/60 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-800 opacity-60 hover:opacity-90') +
                         (inv.semitones === 0 ? ' cursor-not-allowed' : ' cursor-pointer')}
                     >
                       <div className="font-bold text-sm leading-tight">{inv.symbol}</div>
@@ -698,97 +979,321 @@ export default function FretboardTrainer() {
         {/* ================= MODE 2: SPEED QUIZ ================= */}
         {activeTab === 'quiz' && (
           <div className="bg-slate-50 dark:bg-slate-950/70 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-6 transition-colors">
-            {/* Scoreboard Header with Reset Button */}
-            <div className="flex items-center justify-between">
-              <div className="text-xs uppercase font-bold text-slate-500 tracking-wider">
-                Speed Quiz Scoreboard
-              </div>
-              <button
-                onClick={resetQuiz}
-                className="px-3 py-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg shadow-sm transition-all flex items-center gap-1.5 cursor-pointer"
-                title="Reset your score, attempts, and streak to start fresh"
-              >
-                <span>🔄 Reset Quiz / Start Over</span>
-              </button>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                <div className="text-xs uppercase font-bold text-slate-400">Score</div>
-                <div className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-slate-100">
-                  {quizScore} <span className="text-sm font-normal text-slate-400">/ {quizAttempts}</span>
+            {/* Speed Challenge Mode Selector */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                <span className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                  <span>⚡ Challenge Mode:</span>
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    onClick={() => switchSpeedMode('rush5')}
+                    className={'px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ' +
+                      (speedMode === 'rush5'
+                        ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20 ring-2 ring-amber-300 dark:ring-amber-500'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700')}
+                    title="5 seconds per question countdown challenge"
+                  >
+                    <span>⚡ 5s Rush</span>
+                  </button>
+                  <button
+                    onClick={() => switchSpeedMode('lightning3')}
+                    className={'px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ' +
+                      (speedMode === 'lightning3'
+                        ? 'bg-red-500 text-white shadow-md shadow-red-500/20 ring-2 ring-red-300 dark:ring-red-500'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700')}
+                    title="Intense 3-second rapid-fire reflex challenge"
+                  >
+                    <span>🔥 3s Lightning</span>
+                  </button>
+                  <button
+                    onClick={() => switchSpeedMode('blitz60')}
+                    className={'px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ' +
+                      (speedMode === 'blitz60'
+                        ? 'bg-purple-600 text-white shadow-md shadow-purple-600/20 ring-2 ring-purple-300 dark:ring-purple-500'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700')}
+                    title="60-second time attack sprint - answer as many as you can!"
+                  >
+                    <span>⏳ 60s Blitz</span>
+                  </button>
+                  <button
+                    onClick={() => switchSpeedMode('untimed')}
+                    className={'px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 ' +
+                      (speedMode === 'untimed'
+                        ? 'bg-blue-600 text-white shadow-md shadow-blue-600/20 ring-2 ring-blue-300 dark:ring-blue-500'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700')}
+                    title="Relaxed untimed practice with live reaction speed tracking"
+                  >
+                    <span>🧘 Untimed</span>
+                  </button>
                 </div>
               </div>
-              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                <div className="text-xs uppercase font-bold text-slate-400">Accuracy</div>
-                <div className="text-2xl sm:text-3xl font-black text-blue-600">
+
+              {/* Speed Rank Badge */}
+              <div className="flex items-center gap-2 self-end sm:self-auto">
+                <span className="text-[11px] uppercase font-bold text-slate-400">Speed Rank:</span>
+                <span className={'px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center gap-1 ' + speedRank.color}>
+                  <span>{speedRank.emoji}</span>
+                  <span>{speedRank.title}</span>
+                </span>
+                <button
+                  onClick={resetQuiz}
+                  className="px-2.5 py-1 text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 rounded-lg transition-all flex items-center gap-1 cursor-pointer"
+                  title="Reset your score and timer"
+                >
+                  <span>🔄 Reset</span>
+                </button>
+              </div>
+            </div>
+
+            {/* 5-Card Scoreboard with Live Speed Indicators */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              <div className="bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                <div className="text-[11px] uppercase font-bold text-slate-400">Score</div>
+                <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-slate-100">
+                  {quizScore} <span className="text-xs font-normal text-slate-400">/ {quizAttempts}</span>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                <div className="text-[11px] uppercase font-bold text-slate-400">Accuracy</div>
+                <div className="text-xl sm:text-2xl font-black text-blue-600 dark:text-blue-400">
                   {quizAttempts === 0 ? '100%' : Math.round((quizScore / quizAttempts) * 100) + '%'}
                 </div>
               </div>
-              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                <div className="text-xs uppercase font-bold text-slate-400">Current Streak</div>
-                <div className="text-2xl sm:text-3xl font-black text-emerald-600">{quizStreak}</div>
+
+              <div className="bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                <div className="text-[11px] uppercase font-bold text-slate-400">Avg Reaction</div>
+                <div className="text-xl sm:text-2xl font-black text-amber-500 flex items-center justify-center gap-1">
+                  <span>⚡</span>
+                  <span>{averageReactionTime !== null ? averageReactionTime + 's' : '--'}</span>
+                </div>
               </div>
-              <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                <div className="text-xs uppercase font-bold text-slate-400">Best Streak</div>
-                <div className="text-2xl sm:text-3xl font-black text-purple-600">{quizBestStreak}</div>
+
+              <div className="bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                <div className="text-[11px] uppercase font-bold text-slate-400">Fastest Guess</div>
+                <div className="text-xl sm:text-2xl font-black text-emerald-500">
+                  {fastestReactionTime !== null ? fastestReactionTime + 's' : '--'}
+                </div>
+              </div>
+
+              <div className="col-span-2 sm:col-span-1 lg:col-span-1 bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                <div className="text-[11px] uppercase font-bold text-slate-400">Streak Combo</div>
+                <div className="text-xl sm:text-2xl font-black text-purple-500 flex items-center justify-center gap-1">
+                  <span>{quizStreak >= 3 ? '🔥' : '🎯'}</span>
+                  <span>{quizStreak}</span>
+                  {quizStreak >= 3 && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-amber-500 text-slate-950 font-black uppercase">
+                      Fire!
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
-              <div>
-                <span className="text-xs uppercase font-bold tracking-wider text-emerald-200">
-                  Question #{quizAttempts + 1}
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-black mt-1">
-                  What note is on{' '}
-                  <span className="underline decoration-yellow-400 underline-offset-4">
-                    {STRINGS[targetString].label}
-                  </span>{' '}
-                  at{' '}
-                  <span className="underline decoration-yellow-400 underline-offset-4">
-                    {targetFret === 0 ? 'Open String' : 'Fret ' + targetFret}
-                  </span>
-                  ?
-                </h3>
+            {/* 60-Second Blitz Sprint End Modal / Celebration Banner */}
+            {isBlitzFinished && (
+              <div className="bg-gradient-to-r from-purple-900 via-indigo-900 to-purple-950 text-white p-6 sm:p-8 rounded-2xl shadow-2xl border-2 border-purple-400/60 flex flex-col md:flex-row items-center justify-between gap-6 animate-fadeIn">
+                <div className="flex items-center gap-5 text-center md:text-left">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/20 border-2 border-white/40 flex items-center justify-center text-3xl sm:text-4xl shadow-inner shrink-0">
+                    🏆
+                  </div>
+                  <div>
+                    <span className="text-xs uppercase font-extrabold tracking-wider bg-purple-950/60 text-purple-200 px-3 py-0.5 rounded-full border border-purple-400/40">
+                      60-Second Sprint Complete!
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white mt-1">
+                      Final Score: {quizScore} Correct Notes
+                    </h3>
+                    <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-purple-200 mt-2">
+                      <span>🎯 Accuracy: <strong>{quizAttempts === 0 ? '0%' : Math.round((quizScore / quizAttempts) * 100) + '%'}</strong></span>
+                      <span>•</span>
+                      <span>⚡ Avg Speed: <strong>{averageReactionTime ? averageReactionTime + 's' : '--'}</strong></span>
+                      <span>•</span>
+                      <span>🚀 Fastest: <strong>{fastestReactionTime ? fastestReactionTime + 's' : '--'}</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row md:flex-col items-center gap-2.5 shrink-0 w-full sm:w-auto">
+                  <button
+                    onClick={() => switchSpeedMode('blitz60')}
+                    className="w-full sm:w-auto px-6 py-3.5 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-sm rounded-xl shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <span>🔄 Replay 60s Blitz Sprint</span>
+                  </button>
+                  <button
+                    onClick={() => switchSpeedMode('rush5')}
+                    className="w-full sm:w-auto px-4 py-2 bg-white/15 hover:bg-white/25 text-white font-bold text-xs rounded-lg transition-all border border-white/20 cursor-pointer text-center"
+                  >
+                    ⚡ Switch to 5s Rush Mode
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center gap-2 shrink-0">
-                <button
-                  onClick={() => playMidiNote(getMidiForFret(targetString, targetFret))}
-                  className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
-                >
-                  <span>🔊 Hear Note</span>
-                </button>
-                <button
-                  onClick={generateNewQuizQuestion}
-                  className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
-                  title="Skip to next question"
-                >
-                  <span>Skip ➔</span>
-                </button>
-              </div>
-            </div>
+            )}
 
+            {/* Question Hero Card */}
+            {!isBlitzFinished && (
+              <div className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-800">
+                {/* Animated Countdown Progress Bar (for Rush 5s & Lightning 3s) */}
+                {(speedMode === 'rush5' || speedMode === 'lightning3') && (
+                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-800">
+                    <div
+                      className={'h-full transition-all duration-75 ' +
+                        (questionTimeRemaining > (speedMode === 'rush5' ? 2.5 : 1.5)
+                          ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
+                          : questionTimeRemaining > 1.2
+                          ? 'bg-gradient-to-r from-amber-500 to-yellow-400'
+                          : 'bg-gradient-to-r from-red-600 to-rose-500 animate-pulse')}
+                      style={{
+                        width: `${Math.max(0, Math.min(100, (questionTimeRemaining / getTimeLimitForMode(speedMode)) * 100))}%`,
+                      }}
+                    />
+                  </div>
+                )}
+
+                {/* Blitz 60 Progress Bar */}
+                {speedMode === 'blitz60' && (
+                  <div className="absolute top-0 left-0 right-0 h-2 bg-slate-800">
+                    <div
+                      className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-amber-500 transition-all duration-75"
+                      style={{ width: `${Math.max(0, Math.min(100, (blitzTimeRemaining / 60) * 100))}%` }}
+                    />
+                  </div>
+                )}
+
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs uppercase font-extrabold tracking-wider bg-white/10 px-2.5 py-0.5 rounded-full border border-white/20 text-slate-200">
+                        Question #{quizAttempts + 1}
+                      </span>
+                      {speedMode === 'rush5' && (
+                        <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
+                          <span>⚡ 5s Rush</span>
+                        </span>
+                      )}
+                      {speedMode === 'lightning3' && (
+                        <span className="text-xs font-bold text-rose-300 flex items-center gap-1">
+                          <span>🔥 3s Lightning</span>
+                        </span>
+                      )}
+                      {speedMode === 'blitz60' && (
+                        <span className="text-xs font-bold text-purple-300 flex items-center gap-1">
+                          <span>⏳ 60s Blitz Sprint</span>
+                        </span>
+                      )}
+                      {speedMode === 'untimed' && (
+                        <span className="text-xs font-bold text-blue-300 flex items-center gap-1">
+                          <span>🧘 Untimed Practice</span>
+                        </span>
+                      )}
+                    </div>
+
+                    <h3 className="text-2xl sm:text-3xl font-black text-white">
+                      What note is on{' '}
+                      <span className="underline decoration-yellow-400 underline-offset-4">
+                        {STRINGS[targetString].label}
+                      </span>{' '}
+                      at{' '}
+                      <span className="underline decoration-yellow-400 underline-offset-4">
+                        {targetFret === 0 ? 'Open String' : 'Fret ' + targetFret}
+                      </span>
+                      ?
+                    </h3>
+                  </div>
+
+                  {/* Right Side: Speed HUD Timer & Controls */}
+                  <div className="flex items-center gap-4 shrink-0 w-full md:w-auto justify-between md:justify-end">
+                    {/* Countdown Digital Gauge */}
+                    {(speedMode === 'rush5' || speedMode === 'lightning3') && (
+                      <div className={'px-4 py-2.5 rounded-xl border flex items-center gap-2.5 transition-all ' +
+                        (questionTimeRemaining > (speedMode === 'rush5' ? 2.5 : 1.5)
+                          ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300'
+                          : questionTimeRemaining > 1.2
+                          ? 'bg-amber-950/60 border-amber-500/40 text-amber-300'
+                          : 'bg-red-950/80 border-red-500/80 text-red-300 animate-pulse ring-2 ring-red-500/50')}>
+                        <span className="text-xl">⏱️</span>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Time Left</div>
+                          <div className="text-xl sm:text-2xl font-black font-mono leading-none">
+                            {questionTimeRemaining.toFixed(1)}s
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {speedMode === 'blitz60' && (
+                      <div className="px-4 py-2.5 rounded-xl bg-purple-950/70 border border-purple-500/50 text-purple-200 flex items-center gap-2.5">
+                        <span className="text-xl">⏳</span>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Sprint Time</div>
+                          <div className="text-xl sm:text-2xl font-black font-mono leading-none text-yellow-300">
+                            {Math.floor(blitzTimeRemaining)}s
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {speedMode === 'untimed' && (
+                      <div className="px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 flex items-center gap-2.5">
+                        <span className="text-xl">⏱️</span>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Stopwatch</div>
+                          <div className="text-xl font-black font-mono leading-none text-slate-100">
+                            {questionTimeRemaining.toFixed(1)}s
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => playMidiNote(getMidiForFret(targetString, targetFret))}
+                        className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
+                        title="Audition Note"
+                      >
+                        <span>🔊 Hear</span>
+                      </button>
+                      <button
+                        onClick={generateNewQuizQuestion}
+                        className="px-3.5 py-2.5 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all border border-white/30 cursor-pointer"
+                        title="Skip question"
+                      >
+                        <span>Skip ➔</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Instant Feedback with Reaction Time Badge */}
             {quizFeedback.status && (
               <div
                 className={'p-4 rounded-xl text-sm font-bold flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 transition-all ' +
                   (quizFeedback.status === 'correct'
-                    ? 'bg-emerald-100 text-emerald-900 border border-emerald-300'
-                    : 'bg-red-100 text-red-900 border border-red-300')}
+                    ? 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-900 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700/60'
+                    : 'bg-red-100 dark:bg-red-950/70 text-red-900 dark:text-red-200 border border-red-300 dark:border-red-700/60')}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xl">{quizFeedback.status === 'correct' ? '✅' : '❌'}</span>
-                  <span>{quizFeedback.message}</span>
+                  <div>
+                    <span>{quizFeedback.message}</span>
+                    {quizFeedback.reactionTime !== undefined && (
+                      <div className="text-xs font-normal mt-0.5 opacity-90 flex items-center gap-2">
+                        <span>Reaction Time: <strong>{quizFeedback.reactionTime}s</strong></span>
+                        {quizFeedback.speedRating && (
+                          <span className="px-2 py-0.5 rounded-full bg-white/40 dark:bg-black/30 font-bold text-[11px]">
+                            {quizFeedback.speedRating}
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
-                {quizFeedback.status === 'wrong' && (
+                {quizFeedback.status === 'wrong' && !isBlitzFinished && (
                   <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
-                    <button
-                      onClick={() => setQuizFeedback({ status: null, message: '' })}
-                      className="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 text-xs font-bold transition-all shadow-sm cursor-pointer"
-                    >
-                      ↺ Try Again
-                    </button>
                     <button
                       onClick={generateNewQuizQuestion}
                       className="px-3.5 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-black transition-all shadow-sm flex items-center gap-1 cursor-pointer"
@@ -800,23 +1305,34 @@ export default function FretboardTrainer() {
               </div>
             )}
 
-            <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-                Select the Note:
-              </div>
-              <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-2">
-                {NOTES.map((note) => (
-                  <button
-                    key={note}
-                    onClick={() => handleQuizAnswer(note)}
-                    className="py-3 sm:py-4 bg-white dark:bg-slate-900 hover:bg-blue-50 dark:hover:bg-blue-950/40 active:scale-95 border-2 border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl font-black text-lg sm:text-xl text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-all shadow-sm cursor-pointer"
-                  >
-                    {note}
-                  </button>
-                ))}
-              </div>
-            </div>
+            {/* Note Button Grid with Hotkey Hints */}
+            {!isBlitzFinished && (
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                    Select the Note:
+                  </div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">
+                    Keyboard shortcuts: Keys <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] font-bold">A-G</kbd> (Hold <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono text-[10px] font-bold">Shift</kbd> for #)
+                  </div>
+                </div>
 
+                <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-2">
+                  {NOTES.map((note) => (
+                    <button
+                      key={note}
+                      disabled={isAnsweringLocked || isBlitzFinished}
+                      onClick={() => handleQuizAnswer(note)}
+                      className="py-3 sm:py-4 bg-white dark:bg-slate-900 hover:bg-blue-50 dark:hover:bg-blue-950/40 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl font-black text-lg sm:text-xl text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-all shadow-sm cursor-pointer"
+                    >
+                      {note}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Filter Scopes */}
             <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-3">
                 <span className="font-bold">String Scope:</span>
@@ -916,7 +1432,7 @@ export default function FretboardTrainer() {
             )}
 
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 mr-2">Choose Target Note:</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mr-2">Choose Target Note:</span>
               {NOTES.map((n) => (
                 <button
                   key={n}
@@ -924,7 +1440,7 @@ export default function FretboardTrainer() {
                   className={'px-3 py-1.5 text-xs font-bold rounded-lg border transition-all ' +
                     (finderTargetNote === n
                       ? 'bg-purple-600 text-white border-purple-700 shadow-md ring-2 ring-purple-300'
-                      : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100')}
+                      : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800')}
                 >
                   {n}
                 </button>

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CagedVisualizer from '@/components/Tools/CagedVisualizer/CagedVisualizer';
 import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
@@ -13,23 +14,17 @@ export default function CagedSystemClient() {
 
   return (
     <Layout>
+      <Header
+        title="Interactive CAGED System Visualizer"
+        subtitle="Connect open chord grips (C, A, G, E, D) to movable scale patterns and triad inversions across the entire guitar neck. Strum chord shapes, arpeggiate notes, and unlock complete fretboard freedom."
+        category="Guitar Neck Mastery Tool"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Breadcrumbs Navigation */}
           <Breadcrumbs pathname={pathname} pageTitle="Interactive CAGED System Visualizer" />
 
-          {/* Hero Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-600 dark:text-rose-400 text-xs font-bold uppercase tracking-wider">
-              🎸 Guitar Neck Mastery Tool
-            </div>
-            <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
-              Interactive CAGED System Visualizer
-            </h1>
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Connect open chord grips (C, A, G, E, D) to movable scale patterns and triad inversions across the entire guitar neck. Strum chord shapes, arpeggiate notes, and unlock complete fretboard freedom.
-            </p>
-          </div>
+
 
           {/* Main Interactive Tool Container */}
           <CagedVisualizer />

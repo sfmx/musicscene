@@ -82,7 +82,7 @@ export default function CagedVisualizer() {
       <div className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-2">
           <div>
-            <h3 className="text-xl font-bold text-white flex items-center gap-2">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
               <span>🎸 Fretboard Map: {cagedData.name}</span>
               <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
                 Pentatonic Box {cagedData.pentatonicBoxNumber}

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CircleOfFifthsExplorer from '@/components/Tools/CircleOfFifths/CircleOfFifthsExplorer';
 import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
@@ -13,23 +14,17 @@ export default function CircleOfFifthsClient() {
 
   return (
     <Layout>
+      <Header
+        title="Interactive Circle of Fifths Explorer"
+        subtitle="Explore key signatures, audition playable diatonic chords in real time, map seamless key modulation paths, and uncover modal interchange borrowed chords used in iconic rock songs."
+        category="Interactive Harmonic Studio"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Breadcrumbs Navigation */}
           <Breadcrumbs pathname={pathname} pageTitle="Interactive Circle of Fifths Explorer" />
 
-          {/* Hero Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs font-bold uppercase tracking-wider">
-              ⚡ Interactive Harmonic Studio
-            </div>
-            <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
-              Interactive Circle of Fifths Explorer
-            </h1>
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Explore key signatures, audition playable diatonic chords in real time, map seamless key modulation paths, and uncover modal interchange borrowed chords used in iconic rock songs.
-            </p>
-          </div>
+
 
           {/* Main Interactive Tool Container */}
           <CircleOfFifthsExplorer />

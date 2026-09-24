@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import EarTrainer from '@/components/Tools/EarTrainer/EarTrainer';
 import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
@@ -13,23 +14,17 @@ export default function EarTrainerClient() {
 
   return (
     <Layout>
+      <Header
+        title="Interactive Ear Training & Pitch Quizzer"
+        subtitle="Train your musical ear with real-time WebAudio synthesis. Master interval recognition using famous song mnemonics, identify chord qualities, track your streak, and unlock the ability to play by ear."
+        category="Real-Time Audio Trainer"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Breadcrumbs Navigation */}
           <Breadcrumbs pathname={pathname} pageTitle="Interactive Ear Training Quizzer" />
 
-          {/* Hero Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider">
-              🎧 Real-Time Audio Trainer
-            </div>
-            <h1 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
-              Interactive Ear Training & Pitch Quizzer
-            </h1>
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Train your musical ear with real-time WebAudio synthesis. Master interval recognition using famous song mnemonics, identify chord qualities (major, minor, diminished, 7ths), track your streak, and unlock the ability to play by ear.
-            </p>
-          </div>
+
 
           {/* Main Interactive Tool Container */}
           <EarTrainer />

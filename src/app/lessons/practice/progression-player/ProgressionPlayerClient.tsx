@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ProgressionJammer from '@/components/Tools/ProgressionJammer';
 import GearRecommendations from '@/components/Revenue/GearRecommendations';
@@ -31,23 +32,17 @@ export default function ProgressionPlayerClient() {
 
   return (
     <Layout>
+      <Header
+        title="Guitar Chord Progression Jam Player"
+        subtitle="Play and loop iconic chord progressions in Blues, Rock, Jazz, and Pop. Dial in your BPM, sync with the metronome, and improvise with real-time scale recommendations."
+        category="Interactive Soloing Utility"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 transition-colors text-slate-900 dark:text-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Breadcrumbs Navigation */}
           <Breadcrumbs pathname={pathname} pageTitle="Chord Progression Jam Player" />
 
-          {/* Hero Section */}
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60 text-xs font-bold uppercase tracking-wider">
-              Interactive Soloing Utility
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
-              Guitar Chord Progression Jam Player
-            </h1>
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-              Play and loop iconic chord progressions in Blues, Rock, Jazz, and Pop. Dial in your BPM, sync with the metronome, and improvise with real-time scale recommendations.
-            </p>
-          </div>
+
 
           {/* Interactive Player Component */}
           <div className="shadow-2xl rounded-2xl">
