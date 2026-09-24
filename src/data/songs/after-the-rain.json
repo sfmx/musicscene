@@ -1,0 +1,330 @@
+{
+  "songInfo": {
+    "title": "After the Rain",
+    "artist": "The Angels",
+    "album": "No Exit",
+    "released": "1979",
+    "genre": "Australian Hard Rock / Melodic Rock",
+    "tempo": "130 BPM",
+    "duration": "3:09",
+    "key": "A Minor / C Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Minor / C Major",
+      "modalCharacter": "A Aeolian (Natural Minor) for the haunting clean arpeggio verse, shifting into uplifting C Major and G Mixolydian power chords on the chorus",
+      "keySignature": "No Sharps or Flats",
+      "relativeMinor": "A Minor",
+      "scalesUsed": [
+        {
+          "name": "A Natural Minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G",
+          "scale": "A Natural Minor (Aeolian)",
+          "application": "Drives the somber, cascading clean guitar arpeggio intro and moody verse dynamic build"
+        },
+        {
+          "name": "C Major / Ionian",
+          "notes": "C - D - E - F - G - A - B",
+          "scale": "C Major",
+          "application": "Forms the harmonic explosion in the chorus, lifting the song into soaring anthemic territory"
+        },
+        {
+          "name": "A Minor Pentatonic",
+          "notes": "A - C - D - E - G",
+          "scale": "A Minor Pentatonic",
+          "application": "Foundation for Rick Brewster's singing, melodic solo passages and screaming high-register bends"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "G",
+          "F"
+        ],
+        "progression": "Am - G - F - G",
+        "description": "Hypnotic descending Andalusian/Aeolian progression transitioning from delicate clean arpeggios into thunderous crunch"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse",
+          "progression": "Am - G - F - G",
+          "romanNumerals": "i - ♭VII - ♭VI - ♭VII",
+          "description": "Cascading finger-style or alternate-picked arpeggios with ringing open strings creating cinematic Australian atmosphere"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - G - D - F",
+          "romanNumerals": "♭III - ♭VII - IV - ♭VI",
+          "description": "Explosive shift to major tonality with wide-open Marshall power chords and soaring vocal harmonies"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "Am - G - F - G",
+          "romanNumerals": "i - ♭VII - ♭VI - ♭VII",
+          "description": "Driving rhythm section supporting Rick Brewster's soaring, emotionally charged guitar solo"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (Tonic i): Melancholic home key grounding the song in deep Australian emotional resonance",
+        "G (Subtonic ♭VII): Steps smoothly downward providing modal motion without classical leading-tone tension",
+        "F (Submediant ♭VI): Dramatic harmonic low point creating powerful longing before turning around",
+        "C (Relative Major ♭III): Breaks the tension in the chorus with a burst of sunlight and anthemic release"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Arpeggiated Cross-String Picking",
+      "description": "Delicate, articulate alternate picking across non-adjacent strings while holding chord shapes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Hold the full Am, G, and F chord shapes firmly so ringing strings don't choke out",
+          "Keep picking strokes light and fluid with a thin or medium pick",
+          "Let each note ring into the next to build a rich harmonic wash"
+        ]
+      }
+    },
+    {
+      "name": "Extreme Dynamic Switching",
+      "description": "Mastering the dramatic contrast between whispering clean arpeggios and explosive hard rock crunch",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Roll guitar volume down or switch to a clean channel for the verses",
+          "Kick in overdrive or roll volume to 10 on the first beat of the chorus",
+          "Dig in with aggressive pick attack to make the chorus hit like a hammer"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Haunting Chime Arpeggio Intro",
+      "timeStamp": "0:00-0:28",
+      "technique": "Clean Arpeggios & String Resonance",
+      "key": "A Minor",
+      "description": "The instantly recognizable clean electric guitar arpeggios that define the moody Australian intro",
+      "chords": [
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Pick cleanly across the A, D, G, B, and high E strings",
+        "Maintain absolute rhythmic consistency on every eighth note",
+        "Add subtle chorus and delay for expansive stereo width"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 0.1 1.2 2.3 2.4 | :8 3.6 2.5 0.4 0.3 3.2 0.3 0.4 2.5 | :8 1.6 3.5 3.4 2.3 1.2 2.3 3.4 3.5 | :8 3.6 2.5 0.4 0.3 3.2 0.3 0.4 2.5 |",
+      "exerciseLabel": "Atmospheric Aeolian Arpeggio Picking"
+    },
+    {
+      "name": "Dynamic Verse Build",
+      "timeStamp": "0:29-0:58",
+      "technique": "Muted Arpeggios & Rhythm Accents",
+      "key": "A Minor",
+      "description": "The rhythm section enters underneath the arpeggios, tightening the groove with subtle palm muting",
+      "chords": [
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Introduce light palm muting on the lower strings while keeping the higher notes clear",
+        "Accentuate beats 2 and 4 to lock with the snare drum",
+        "Gradually open up the muting as the verse approaches the chorus"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 :4 (0.5 2.4 2.3) :8 0.5 2.4 | :8 3.6 2.5 0.4 0.3 :4 (3.6 2.5 0.4) :8 3.6 2.5 | :8 1.6 3.5 3.4 2.3 :4 (1.6 3.5 3.4) :8 1.6 3.5 | :4 (3.6 2.5 0.4) :4 (3.6 2.5 0.4) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Verse Tension & Muted Accents"
+    },
+    {
+      "name": "Explosive Hard Rock Chorus Riff",
+      "timeStamp": "0:59-1:24",
+      "technique": "Cranked Power Chords & Modulation",
+      "key": "C Major",
+      "description": "The song erupts into crushing Marshall crunch, modulating to C Major for a triumphant release",
+      "chords": [
+        "C5",
+        "G5",
+        "D5",
+        "F5"
+      ],
+      "progression": "C5 - G5 - D5 - F5",
+      "notes": [
+        "Switch pickup or kick on high-gain overdrive on beat 1",
+        "Hit the C5 and G5 power chords with full right-hand commitment",
+        "Let each chord sustain for two full beats to give the vocals room to soar"
+      ],
+      "alphaTab": ":2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :2 (0.4 2.3 3.2) :2 (1.6 3.5 3.4) | :2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :2 (0.4 2.3 3.2) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Chorus Power Chords & Major Release"
+    },
+    {
+      "name": "Soaring Melodic Solo",
+      "timeStamp": "2:04-2:32",
+      "technique": "Vibrato & Expressive String Bending",
+      "key": "A Minor Pentatonic",
+      "description": "Rick Brewster delivers one of his most melodic, lyrical guitar solos, blending classical phrasing with hard rock bite",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Initiate the solo with a patient, singing note choice on the B string",
+        "Execute smooth whole-step bends up to the high E and A root notes",
+        "Apply wide, classical-style finger vibrato on sustained notes"
+      ],
+      "alphaTab": ":4 8.2 :8 10.2 8.2 :4 10.1 :4 8.1 | :8 10.1 8.1 :4 10.2 :8 8.2 9.3 :4 9.3 | :4 12.1 :8 15.1 12.1 :4 15.1 :4 17.1 | :2 17.1 :2 r |",
+      "exerciseLabel": "Singing High-Register Solo Climax"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or Gibson SG Standard",
+      "alternatives": [
+        "Gibson Les Paul Custom",
+        "Fender Telecaster"
+      ],
+      "pickup": "Neck/middle single coil for glassy intro arpeggios; bridge humbucker for roaring chorus crunch"
+    },
+    "amp": {
+      "recommended": "Marshall JMP 50W Lead Head paired with Roland JC-120 (for pristine cleans)",
+      "alternatives": [
+        "Marshall JCM800",
+        "Fender Twin Reverb"
+      ],
+      "settings": {
+        "gain": "7",
+        "treble": "7",
+        "middle": "6",
+        "bass": "6",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Boss DS-1 or Tube Screamer pushing the Marshall preamp",
+      "reverb": "Analog plate or spring reverb for haunting spatial depth",
+      "other": "Boss CE-2 Chorus pedal for the shimmering intro arpeggios"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Clean Chord Arpeggios",
+      "steps": [
+        "Master the basic Am, G, and F chord shapes without muted strings",
+        "Practice the picking sequence slowly at 80 BPM",
+        "Ensure each picked string rings out clearly into the next"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Dynamic Switching & Power Chords",
+      "steps": [
+        "Transition smoothly between the clean intro and crushing chorus power chords",
+        "Lock into the 130 BPM tempo with metronome",
+        "Execute clean chord stops and mute control"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Lyrical Solo & Expressive Touch",
+      "steps": [
+        "Learn Rick Brewster's complete melodic solo note-for-note",
+        "Master the expressive whole-step bends on the 10th and 15th frets",
+        "Incorporate classical-influenced vibrato into sustained notes"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Take a Long Line",
+        "link": "/lessons/songs/song-analysis/take-a-long-line/",
+        "similarity": "High-octane hard rock energy and signature Brewster brothers twin guitars"
+      },
+      {
+        "title": "No Secrets",
+        "link": "/lessons/songs/song-analysis/no-secrets/",
+        "similarity": "Classic Angels songcraft with sharp dynamic shifts and power chord mastery"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Fade to Black",
+        "artist": "Metallica",
+        "technique": "Melancholic acoustic/clean intro arpeggio exploding into crushing metal",
+        "link": "/lessons/songs/song-analysis/fade-to-black/"
+      },
+      {
+        "title": "All Along the Watchtower",
+        "artist": "Jimi Hendrix",
+        "technique": "Classic i-♭VII-♭VI Aeolian chord movement with soaring guitar leads",
+        "link": "/lessons/songs/song-analysis/all-along-the-watchtower/"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Collapsing fingers onto adjacent strings during the clean intro arpeggios",
+      "Failing to boost volume/gain significantly when entering the explosive chorus",
+      "Rushing the tempo during the emotional guitar solo"
+    ],
+    "practiceRoutine": [
+      "10 mins: Slow, deliberate arpeggio picking drill on Am-G-F at 90 BPM",
+      "10 mins: Dynamic transition drill switching between clean strumming and chorus power crunch",
+      "10 mins: Solo bend pitch matching with tuner",
+      "5 mins: Full track playthrough focusing on dynamic expression"
+    ],
+    "focusAreas": [
+      "Left-hand fingertip arching for clean ringing open strings",
+      "Dynamic control using guitar volume pot or channel switcher",
+      "Pitch precision and singing vibrato on lead lines"
+    ],
+    "metronomeWork": [
+      "Start arpeggios at 90 BPM focusing on uniform note volume",
+      "Advance to 115 BPM synchronizing right-hand alternate picking",
+      "Perform at 130 BPM with full emotional and dynamic commitment"
+    ]
+  },
+  "metadata": {
+    "popularity": 86,
+    "dateAdded": "2026-09-24",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "learningValue": "HIGH",
+    "tags": [
+      "classic-rock",
+      "arpeggios",
+      "power-chords",
+      "bending",
+      "vibrato",
+      "minor-key",
+      "chorus",
+      "electric-guitar",
+      "tube-amp",
+      "rhythm-guitar",
+      "lead-guitar",
+      "song-analysis",
+      "intermediate"
+    ]
+  }
+}
+

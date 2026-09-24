@@ -130,6 +130,10 @@ import voodooChildData from '@/data/songs/voodoo-child.json';
 import laGrangeData from '@/data/songs/la-grange.json';
 import mrCrowleyData from '@/data/songs/mr-crowley.json';
 import fadeToBlackData from '@/data/songs/fade-to-black.json';
+import hurtsSoGoodData from '@/data/songs/hurts-so-good.json';
+import takeALongLineData from '@/data/songs/take-a-long-line.json';
+import afterTheRainData from '@/data/songs/after-the-rain.json';
+import amIEverGonnaSeeYourFaceAgainData from '@/data/songs/am-i-ever-gonna-see-your-face-again.json';
 
 export interface SongData {
   songInfo: {
@@ -472,6 +476,10 @@ const songDatabase: Record<string, SongData> = {
   'la-grange': laGrangeData as SongData,
   'mr-crowley': mrCrowleyData as SongData,
   'fade-to-black': fadeToBlackData as SongData,
+  'hurts-so-good': hurtsSoGoodData as SongData,
+  'take-a-long-line': takeALongLineData as SongData,
+  'after-the-rain': afterTheRainData as SongData,
+  'am-i-ever-gonna-see-your-face-again': amIEverGonnaSeeYourFaceAgainData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

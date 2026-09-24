@@ -113,6 +113,9 @@ export default function TheoryContextBadges({
     // Scale normalizations
     if (type === 'scale') {
       if (slug === 'pentatonic') slug = 'minor-pentatonic';
+      else if (slug === 'major-scale') slug = 'major';
+      else if (slug === 'minor-scale') slug = 'minor';
+      else if (slug === 'blues-scale') slug = 'blues';
       return `/lessons/theory/scales/${slug}/`;
     }
 
@@ -120,6 +123,9 @@ export default function TheoryContextBadges({
     if (type === 'chord') {
       if (slug === 'power-chords') slug = 'power';
       else if (slug === 'open' || slug === 'barre') slug = 'major';
+      else if (slug === 'slash-chords') slug = 'slash';
+      else if (slug === 'pedal-tones') slug = 'power';
+      else if (slug === 'open' || slug === 'open-chords' || slug === 'barre' || slug === 'triads') slug = 'major';
       else if (slug === 'ninth') slug = 'dominant-ninth';
       else if (slug === 'dominant-seventh') slug = 'seventh';
       else if (slug === 'drone') slug = 'suspended';

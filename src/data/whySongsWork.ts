@@ -1875,6 +1875,166 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'hurts-so-good': {
+    slug: 'hurts-so-good',
+    songTitle: 'Hurts So Good',
+    artist: 'John Mellencamp',
+    key: 'A Major',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Tritones & Alterations',
+    coreSecret: 'Anticipated Syncopation and Blues-Inflected Double Stops over Diatonic I-IV-V Power Chords',
+    emotionalHook: 'The irresistible heartland groove stems from hitting the IV chord (D) an eighth note before beat 1 of measure 2, paired with bluesy minor-to-major third hammer-ons (C to C#) on the G string.',
+    romanProgression: 'I - IV - V - IV',
+    chords: ['A', 'D', 'E', 'D'],
+    progressionExplanation: [
+      'A (I): The radiant tonic chord providing the rock-solid tonal foundation.',
+      'D (IV): The subdominant, anticipated on the upbeat ("and" of 4) to propel forward momentum.',
+      'E (V): The dominant turnaround driving the cadence back home.',
+      'F#m (vi): Introduced in the bridge to inject reflective emotional contrast before bursting back into the chorus.',
+    ],
+    voiceLeadingInsights: [
+      'The rhythm guitar avoids heavy bottom-end strumming, focusing instead on tight 2-note and 3-note dyad stabs on strings 2, 3, and 4.',
+      'Lead fills constantly curl between the minor 3rd (C natural) and major 3rd (C#) against the open A tonic drone.',
+      'In the solo, parallel 6ths and 4ths on the B and G strings outline chord tones while preserving raw garage-rock punch.',
+    ],
+    guitarPerspective: 'Dial in a bright Telecaster or Stratocaster bridge pickup into a cranked Fender tweed or early Marshall combo right on the verge of breakup. Keep your picking hand palm-muting slightly on the 8th notes to make the unmuted syncopated chord accents pop.',
+    songwriterTakeaway: 'You do not need complex jazz harmony to write a chart-topping hook. Take a basic I-IV-V progression, anticipate the chord changes by an eighth note, and frame the melody with minor-pentatonic double stops.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'Provides the bright, soulful sweet notes of the lead lines.' },
+        { name: 'A Blues Scale', slug: 'blues', description: 'Supplies the greasy b3 and b5 blue notes that give the riffs grit.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The natural rock mode linking major tonality with blues attitude.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power', description: 'Root-fifth voicings that keep rhythm tracks tight and punchy.' },
+        { name: 'Major Chords', slug: 'major', description: 'Upper-register voicings on strings 2, 3, and 4 used for syncopated stabs.' },
+      ],
+    },
+  },
+
+  'take-a-long-line': {
+    slug: 'take-a-long-line',
+    songTitle: 'Take a Long Line',
+    artist: 'The Angels',
+    key: 'E Mixolydian',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Brewster Brothers Staccato Twin-Guitar Counterpoint and the bVII Flat-Seventh Cadence',
+    emotionalHook: 'The manic pub rock urgency comes from contrasting dry, percussive muted sixteenth-note pedal chugs on the low E string with sharp staccato power-chord stabs that land on unyielding offbeats.',
+    romanProgression: 'I - bVII - IV - I',
+    chords: ['E', 'D', 'A', 'E'],
+    progressionExplanation: [
+      'E (I): The pounding tonic pedal center anchoring the manic rhythm section.',
+      'D (bVII): The borrowed Mixolydian subtonic chord that instantly eliminates classical sweetness in favor of pub rock swagger.',
+      'A (IV): The subdominant completing the quintessential double-plagal cadence (D → A → E).',
+      'B (V): The punchy dominant chord held back for dramatic chorus build-ups.',
+    ],
+    voiceLeadingInsights: [
+      'Twin guitar arrangement: John Brewster holds down relentless, surgically tight muted downstrokes while Rick Brewster injects piercing, syncopated upper-register triad accents.',
+      'The D major (bVII) chord steps smoothly down to A (IV) by whole step in the bass while common chord tone A is sustained between D and A.',
+      'The guitar solo eschews generic pentatonic wailing for razor-sharp double stops and chromatic slides into chord tones.',
+    ],
+    guitarPerspective: 'Bridge pickup of a Gibson SG or Fender Stratocaster directly into a master-volume Marshall JMP or Plexi on high treble. Keep the guitar volume rolled slightly back for crisp rhythm staccato, then opened wide for scorching lead cuts.',
+    songwriterTakeaway: 'Great rock arrangements rely on sonic space and stereo guitar separation. Have one guitar drive the rhythmic motor with palm-muted chugs while the second guitar stabs sparse, syncopated accents on opposite beats.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Mixolydian', slug: 'mixolydian', description: 'The primary scale balancing major triads with the rebel flat 7th (D).' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The biting blues framework used for solo flourishes and turnaround fills.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The quintessential Australian pub rock tonality.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power', description: 'Tight 5th intervals across the lower strings for maximum percussive impact.' },
+        { name: 'Major Chords', slug: 'major', description: 'Ringing open E and A chords providing expansive dynamic release in the chorus.' },
+      ],
+    },
+  },
+
+  'after-the-rain': {
+    slug: 'after-the-rain',
+    songTitle: 'After the Rain',
+    artist: 'The Angels',
+    key: 'A Minor / C Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Dynamic Contrast Between Clean Aeolian Arpeggios and Explosive Relative Major Chorus Chords',
+    emotionalHook: 'The verse builds brooding tension with delicate, clean fingerstyle-like arpeggios in A natural minor (Am - G - F), which explodes into full Marshall overdrive on the bright relative major (C Major) chorus.',
+    romanProgression: 'i - bVII - bVI - bVII (Verse) / I - V - IV (Chorus)',
+    chords: ['Am', 'G', 'F', 'G', 'C'],
+    progressionExplanation: [
+      'Am (i): Melancholic Aeolian tonic establishing atmospheric vulnerability.',
+      'G (bVII): Descending whole-step subtonic creating natural minor fluidity.',
+      'F (bVI): The emotional low point and submediant tension that yearns for resolution.',
+      'C (Relative Major / I): The blinding sunburst chorus chord providing emotional catharsis and uplifting release.',
+    ],
+    voiceLeadingInsights: [
+      'The bass line in the verse follows an unbroken stepwise descent (A → G → F → G), providing classical grounding.',
+      'Rick Brewster’s clean guitar weaves suspended seconds and open string ringing notes (B and E) over the Am and F shapes, adding shimmering harmonic complexity.',
+      'When shifting into the chorus, the vocal and guitar lead lines leap an octave higher into C major triad tones (E and G).',
+    ],
+    guitarPerspective: 'Use a clean chorus/reverb tone on the neck pickup for the verse arpeggios, then hit a heavy overdrive or switch to a screaming bridge humbucker for the triumphant C - G - F chorus progression.',
+    songwriterTakeaway: 'Harness the dramatic power of relative major/minor shifts. Writing a brooding verse in the relative minor (Am) makes the arrival of the relative major (C) feel exponentially bigger, brighter, and more cathartic.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Natural Minor', slug: 'minor', description: 'The Aeolian scale underpinning the introspective verse chord progression.' },
+        { name: 'C Major Scale', slug: 'major', description: 'The relative major scale unleashing anthemic release in the chorus.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The classic natural minor mode embodying longing and brooding tension.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Am voicings with open ringing strings for haunting atmospheric texture.' },
+        { name: 'Major Chords', slug: 'major', description: 'C, G, and F barre chords providing heavy power and dynamic lift.' },
+      ],
+    },
+  },
+
+  'am-i-ever-gonna-see-your-face-again': {
+    slug: 'am-i-ever-gonna-see-your-face-again',
+    songTitle: 'Am I Ever Gonna See Your Face Again',
+    artist: 'The Angels',
+    key: 'A Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'Open A-String Pedal Tone Triads Shifting into Crushing Pub Rock Power Chords',
+    emotionalHook: 'The unforgettable intro juxtaposes a constant open 5th string (A) pedal drone against shifting upper-register D and E major triads, creating a bittersweet ringing chiming hook that erupts into an anthemic shout-along chorus.',
+    romanProgression: 'I - IV - V - IV',
+    chords: ['A', 'D', 'E', 'D'],
+    progressionExplanation: [
+      'A (I): The fundamental tonic anchor, sustained as an open ringing pedal tone in the verse.',
+      'D/A (IV/I): First-inversion D triad fingered high on the G, B, and E strings while the low A drone continues to vibrate.',
+      'E/A (V/I): Shifting the triad up two frets creates an energetic suspended tension before falling back to D/A and A.',
+      'A - D - E (Chorus): Stripping away the pedal drone in favor of full-throated power chords for maximum anthemic pub-rock power.',
+    ],
+    voiceLeadingInsights: [
+      'Pedal Point Harmony: The static open A bass note creates harmonic richness by turning simple D and E triads into D/A and E/A chords with unique interval tensions.',
+      'Parallel Triad Movement: The fretboard shapes for D and E in the intro move along the top three strings as parallel triad grips, letting muscle memory easily execute smooth voice leading.',
+      'Solo phrasing relies on melodic vocal-like bends on the B string (fret 7 to 9) targeting the major 3rd (C#).',
+    ],
+    guitarPerspective: 'Acoustic or clean electric 12-string/6-string on the verse with open ringing strings. For the chorus, crank the gain on a classic British tube amplifier and dig in with aggressive, full-wrist downstrokes.',
+    songwriterTakeaway: 'A simple pedal tone transforms standard I, IV, and V chords into an instantly recognizable, cinematic signature hook. Keep one low open string ringing while moving triad shapes up and down the neck.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Scale', slug: 'major', description: 'The diatonic foundation defining the bright, triumphant chorus energy.' },
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic sweet scale used in the ringing guitar intro and vocal hooks.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The pure major mode providing uplifting, sing-along anthemic energy.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power', description: 'Power chord grips driving the anthemic chorus energy.' },
+        { name: 'Slash Chords', slug: 'slash', description: 'Triads played over non-root bass notes (D/A and E/A) for complex color.' },
+      ],
+    },
+  },
 };
 
 /**

@@ -51,6 +51,10 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'la-grange',
   'mr-crowley',
   'fade-to-black',
+  'hurts-so-good',
+  'take-a-long-line',
+  'after-the-rain',
+  'am-i-ever-gonna-see-your-face-again',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

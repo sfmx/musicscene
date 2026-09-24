@@ -1,0 +1,332 @@
+{
+  "songInfo": {
+    "title": "Am I Ever Gonna See Your Face Again",
+    "artist": "The Angels",
+    "album": "The Angels",
+    "released": "1976",
+    "genre": "Australian Pub Rock / Classic Rock",
+    "tempo": "128 BPM",
+    "duration": "3:20",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Major",
+      "modalCharacter": "A Mixolydian / A Major driving with open A pedal tone and classic ♭VII (G) and IV (D) rock cadences",
+      "keySignature": "3 Sharps (F#, C#, G#)",
+      "relativeMinor": "F# Minor",
+      "scalesUsed": [
+        {
+          "name": "A Major Pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "scale": "A Major Pentatonic",
+          "application": "Delivers the sweet, melodic intro guitar phrasing and classical-influenced lead hooks"
+        },
+        {
+          "name": "A Mixolydian",
+          "notes": "A - B - C# - D - E - F# - G",
+          "scale": "A Mixolydian",
+          "application": "Drives the iconic A - G/A - D/A intro riff and thunderous power chord chorus"
+        },
+        {
+          "name": "A Minor Pentatonic",
+          "notes": "A - C - D - E - G",
+          "scale": "A Minor Pentatonic",
+          "application": "Supplies the raw blues-rock bite and vocal-responding fills in the high-energy bridge and solo"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "G",
+          "D"
+        ],
+        "progression": "A - G - D - A",
+        "description": "The quintessential Australian pub rock progression built on an open A pedal bass note supporting ringing triads"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "A - G/A - D/A - A",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Sparkling clean pedal-point progression letting the open 5th string ring underneath moving chord voicings"
+        },
+        {
+          "section": "Verse",
+          "progression": "A - G/A - D/A - A - Bm - D - E",
+          "romanNumerals": "I - ♭VII - IV - I - ii - IV - V",
+          "description": "Gentle acoustic-style clean groove building through minor second to dominant turnaround"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A5 - G5 - D5 - A5",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Full-throttle overdriven power chords propelling the crowd-roaring Australian call-and-response anthem"
+        }
+      ],
+      "harmonicFunction": [
+        "A (Tonic I): Welcoming home key established with warm open string resonance",
+        "G/A (Subtonic ♭VII): Injects the signature Mixolydian pub-rock flavor over the persistent A pedal tone",
+        "D/A (Subdominant IV): Uplifting classic resolution stepping smoothly back to the tonic A",
+        "E (Dominant V): Builds the pre-chorus tension that launches the explosive chorus entry"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Pedal Tone Chord Strumming",
+      "description": "Maintaining a continuous ringing open A string while shifting upper triad shapes across the neck",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Keep the open 5th string vibrating freely without accidental finger damping",
+          "Use the index, middle, and ring fingers to articulate the upper chord shapes on strings 2, 3, and 4",
+          "Strum with an even, shimmering dynamic balance"
+        ]
+      }
+    },
+    {
+      "name": "Pub-Rock Crowd Dynamics",
+      "description": "Controlling the stark contrast between delicate storytelling verses and roof-raising chorus anthems",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Keep verses sparse, clean, and conversational with light pick touch",
+          "Explode into the chorus with full-body downstrokes on heavy bridge pickup crunch",
+          "Leave space for the audience response chants between chorus measures"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Timeless Clean Chime Intro",
+      "timeStamp": "0:00-0:24",
+      "technique": "Pedal Point & Open Triads",
+      "key": "A Major",
+      "description": "One of the most famous openings in Australian music, featuring sparkling clean triads over a droning open A string",
+      "chords": [
+        "A",
+        "G/A",
+        "D/A"
+      ],
+      "progression": "A - G/A - D/A - A",
+      "notes": [
+        "Hold the open 5th string (A) down as a continuous acoustic pedal tone",
+        "Shape the G triad cleanly on the D, G, and B strings",
+        "Let the final A major chord ring with sparkling chime"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 2.2 :4 (0.5 2.4 2.3 2.2) :8 0.5 2.4 | :8 0.5 0.4 0.3 3.2 :4 (0.5 0.4 0.3 3.2) :8 0.5 0.4 | :8 0.5 0.4 2.3 3.2 :4 (0.5 0.4 2.3 3.2) :8 0.5 0.4 | :8 0.5 2.4 2.3 2.2 :4 (0.5 2.4 2.3 2.2) :4 (0.5 2.4 2.3 2.2) |",
+      "exerciseLabel": "A Pedal Point Triad Progression"
+    },
+    {
+      "name": "Driving Verse Strum & Rhythm",
+      "timeStamp": "0:25-0:52",
+      "technique": "Rhythmic Strumming & Dynamics",
+      "key": "A Major",
+      "description": "A rhythmic progression through A, G/A, D/A, climbing into Bm and E for the pre-chorus lift",
+      "chords": [
+        "A",
+        "G/A",
+        "D/A",
+        "Bm",
+        "E"
+      ],
+      "progression": "A - G/A - D/A - A - Bm - E",
+      "notes": [
+        "Maintain a steady, swinging eighth-note right-hand rhythm",
+        "Barre the 2nd fret cleanly for the Bm chord transition",
+        "Crescendo through the E major chord to prepare for the thunderous chorus"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3) :8 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (0.5 0.4 0.3) :4 (0.5 0.4 2.3) | :4 (0.5 2.4 2.3) :8 (0.5 2.4 2.3) (0.5 2.4 2.3) :2 (0.5 2.4 2.3) | :4 (0.5 2.4 2.3) :8 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (0.5 0.4 0.3) :4 (0.5 0.4 2.3) | :2 (2.5 4.4 4.3) :2 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Verse Strum & Minor Lift"
+    },
+    {
+      "name": "Anthemic Overdriven Chorus",
+      "timeStamp": "0:53-1:18",
+      "technique": "Cranked Power Chords & Call-and-Response",
+      "key": "A Major",
+      "description": "The immortal pub rock chorus roaring with cranked Marshall power chords and timeless Australian energy",
+      "chords": [
+        "A5",
+        "G5",
+        "D5",
+        "E5"
+      ],
+      "progression": "A5 - G5 - D5 - A5",
+      "notes": [
+        "Slam into the A5 power chord with authoritative right-hand force",
+        "Execute rapid changes to G5 and D5 with clean string dampening",
+        "Hold the final A5 chord for two full measures of singing sustain"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3) :4 (3.6 5.5 5.4) :4 (0.4 2.3 3.2) | :2 (0.5 2.4 2.3) :2 (0.5 2.4 2.3) | :2 (0.5 2.4 2.3) :4 (3.6 5.5 5.4) :4 (0.4 2.3 3.2) | :4 (2.5 4.4 4.3) :4 (0.6 2.5 2.4) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Roaring Chorus Power Cadence"
+    },
+    {
+      "name": "Classical-Rock Melodic Solo",
+      "timeStamp": "1:56-2:22",
+      "technique": "Major Pentatonic Phrasing & Bends",
+      "key": "A Major Pentatonic",
+      "description": "Rick Brewster's classically influenced guitar solo showcasing lyrical phrasing, precise bends, and sweet vibrato",
+      "chords": [
+        "A",
+        "G",
+        "D",
+        "A"
+      ],
+      "progression": "A - G - D - A",
+      "notes": [
+        "Begin with lyrical scalar steps on the G and B strings",
+        "Target the C# chord tone (9th fret E string) on the change to A major",
+        "End with a soaring high E bend at the 14th fret resolving gracefully"
+      ],
+      "alphaTab": ":4 9.3 :8 7.3 9.3 :4 10.2 :4 9.2 | :8 10.2 9.2 :4 10.2 :8 7.2 9.3 :4 9.3 | :4 12.1 :8 14.1 12.1 :4 14.1 :4 17.1 | :2 17.1 :2 r |",
+      "exerciseLabel": "Singing Classical-Rock Solo Hook"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or Gibson SG Standard",
+      "alternatives": [
+        "Fender 12-String Electric / Acoustic",
+        "Gibson Les Paul Standard"
+      ],
+      "pickup": "Neck/middle pickup for sparkling intro chiming; bridge pickup for roaring chorus crunch"
+    },
+    "amp": {
+      "recommended": "Marshall JMP 50W Super Lead into 4x12 cabinet with Celestion speakers",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Bassman"
+      ],
+      "settings": {
+        "gain": "6",
+        "treble": "7",
+        "middle": "7",
+        "bass": "5",
+        "presence": "7"
+      }
+    },
+    "effects": {
+      "distortion": "Natural Marshall tube crunch boosted with an analog clean boost",
+      "reverb": "Subtle vintage room/spring reverb",
+      "other": "Albert Studios compression on the intro acoustic/clean guitar tracks"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & The A Pedal Note",
+      "steps": [
+        "Learn the A, G/A, and D/A triad shapes keeping the open 5th string ringing",
+        "Practice smooth transitions at 90 BPM",
+        "Master the basic A-G-D chorus power chord changes"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Full Song Arrangement & Dynamics",
+      "steps": [
+        "Transition seamlessly between clean intro chiming and roaring chorus crunch",
+        "Incorporate the Bm barre chord in the verse progression",
+        "Lock into the 128 BPM groove with consistent rhythm feel"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Rick Brewster Melodic Soloing",
+      "steps": [
+        "Learn the complete guitar solo focusing on target chord tones",
+        "Master the 14th fret bends and singing vibrato control",
+        "Capture the authentic Australian pub rock live swagger"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Take a Long Line",
+        "link": "/lessons/songs/song-analysis/take-a-long-line/",
+        "similarity": "Definitive Australian pub rock hard driving energy and Brewster brothers twin guitars"
+      },
+      {
+        "title": "No Secrets",
+        "link": "/lessons/songs/song-analysis/no-secrets/",
+        "similarity": "Albert Studios production with anthemic choruses and melodic lead guitar work"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Twist and Shout",
+        "artist": "The Beatles",
+        "technique": "Classic I-IV-V rock 'n' roll foundation with soaring vocal energy",
+        "link": "/lessons/songs/song-analysis/twist-and-shout/"
+      },
+      {
+        "title": "Hurts So Good",
+        "artist": "John Mellencamp",
+        "technique": "Driving A-D-E classic rock groove and syncopated open chord hooks",
+        "link": "/lessons/songs/song-analysis/hurts-so-good/"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting the open A string accidentally during the intro triads",
+      "Playing the chorus with too much preamp distortion, muddying the chord definition",
+      "Over-bending the 14th fret note in the lead solo"
+    ],
+    "practiceRoutine": [
+      "5 mins: A pedal tone triad positioning warm-up",
+      "10 mins: Slow metronome drill on the intro triad shifts at 95 BPM",
+      "10 mins: Power chord chorus transitions and dynamic switches at 115 BPM",
+      "5 mins: Full track playthrough at 128 BPM performance speed"
+    ],
+    "focusAreas": [
+      "Ringing open A string sustain during chord changes",
+      "Dynamic impact when exploding into the chorus power chords",
+      "Vibrato control on sustained solo notes"
+    ],
+    "metronomeWork": [
+      "Start at 90 BPM ensuring all three intro triad strings ring with equal volume",
+      "Advance to 110 BPM coordinating right-hand strumming dynamics",
+      "Perform at full 128 BPM locking in with the driving rock tempo"
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-09-24",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "learningValue": "HIGH",
+    "tags": [
+      "classic-rock",
+      "open-chords",
+      "power-chords",
+      "strumming",
+      "pentatonic",
+      "bending",
+      "vibrato",
+      "electric-guitar",
+      "tube-amp",
+      "rhythm-guitar",
+      "lead-guitar",
+      "song-analysis",
+      "beginner"
+    ]
+  }
+}
+

@@ -1,0 +1,322 @@
+{
+  "songInfo": {
+    "title": "Hurts So Good",
+    "artist": "John Mellencamp",
+    "album": "American Fool",
+    "released": "1982",
+    "genre": "Heartland Rock / Classic Rock",
+    "tempo": "125 BPM",
+    "duration": "3:42",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Major",
+      "modalCharacter": "A Ionian with A Mixolydian syncopated blues-rock drive on chorus and main riff",
+      "keySignature": "3 Sharps (F#, C#, G#)",
+      "relativeMinor": "F# Minor",
+      "scalesUsed": [
+        {
+          "name": "A Major Pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "scale": "A Major Pentatonic",
+          "application": "Provides the warm, melodic heartland rock hook in the intro fills and verse transitions"
+        },
+        {
+          "name": "A Mixolydian",
+          "notes": "A - B - C# - D - E - F# - G",
+          "scale": "A Mixolydian",
+          "application": "Gives the driving classic rock grit when moving between A, D, and E chords with subtle ♭7 coloration"
+        },
+        {
+          "name": "A Minor Pentatonic",
+          "notes": "A - C - D - E - G",
+          "scale": "A Minor Pentatonic",
+          "application": "Supplies the blues-rock bite and vocal-answering double-stop bends in Larry Crane's guitar solo"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - D - E",
+        "description": "The quintessential three-chord rock foundation driven by syncopated eighth notes and driving open chord accents"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse",
+          "progression": "A - D - E - A",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Straightforward heartland rock groove with muted downstrokes and punchy snare accents"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A - E - D - E",
+          "romanNumerals": "I - V - IV - V",
+          "description": "Anthemic syncopated progression with high energy open chord ringing"
+        },
+        {
+          "section": "Bridge",
+          "progression": "F#m - D - F#m - E",
+          "romanNumerals": "vi - IV - vi - V",
+          "description": "Subtle minor emotional dip adding contrast before the final driving choruses"
+        }
+      ],
+      "harmonicFunction": [
+        "A (Tonic I): Home base establishing driving roots-rock foundation",
+        "D (Subdominant IV): Creates open harmonic lift leading into the turnaround",
+        "E (Dominant V): Generates driving rhythmic urgency resolving powerfully back to tonic",
+        "F#m (Submediant vi): Introduces reflective minor coloration in the bridge before explosive chorus return"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Syncopated Open Chord Strumming",
+      "description": "Crisp, dynamic heartland rock rhythm using crisp pick attack and tight right-hand muting",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Lock into the snare on beats 2 and 4 with crisp downstroke accents",
+          "Keep the right wrist relaxed and bouncing steadily on the eighth-note grid",
+          "Lightly mute bass strings when striking treble strings on offbeats"
+        ]
+      }
+    },
+    {
+      "name": "Double-Stop Country Rock Bends",
+      "description": "Blues and country-influenced double stops on the B and high E strings for soulful fills",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Use the ring finger to bend the G string while barring the B and E strings with index",
+          "Keep bends strictly in pitch to match the vocal melody",
+          "Release notes cleanly without string buzz"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Intro & Verse Groove",
+      "timeStamp": "0:00-0:28",
+      "technique": "Syncopated Power Chords & Open Strings",
+      "key": "A Major",
+      "description": "The irresistible opening rhythm featuring crisp A power chord stabs alternating with open D and E chords",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - D - E - A",
+      "notes": [
+        "Accentuate the offbeat push into the D chord",
+        "Keep the low E and A strings tightly dampened between chord hits",
+        "Let the open D and G strings ring with bright treble bite"
+      ],
+      "alphaTab": ":8 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (0.4 2.3 3.2) :8 (0.4 2.3 3.2) (0.6 2.5 2.4) :4 (0.6 2.5 2.4) | :8 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (0.4 2.3 3.2) :2 (0.6 2.5 2.4) | :8 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (0.4 2.3 3.2) :8 (0.4 2.3 3.2) (0.6 2.5 2.4) :4 (0.6 2.5 2.4) | :4 (0.4 2.3 3.2) :4 (0.6 2.5 2.4) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Heartland Rhythm & Turnaround Groove"
+    },
+    {
+      "name": "Chorus Heartland Rock Strum",
+      "timeStamp": "0:56-1:18",
+      "technique": "Full Open Chord Strumming & Dynamics",
+      "key": "A Major",
+      "description": "The euphoric chorus hook bursting into open chord resonance with driving eighth-note pulse",
+      "chords": [
+        "A",
+        "E",
+        "D"
+      ],
+      "progression": "A - E - D - E",
+      "notes": [
+        "Open up the dynamic range from verse palm muting to full, ringing strums",
+        "Hit the E chord transition with punchy downstrokes",
+        "Maintain steady eighth-note hand motion without rushing the tempo"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3) :8 (0.5 2.4 2.3) (0.6 2.5 2.4) :4 (0.6 2.5 2.4) :4 (0.4 2.3 3.2) | :8 (0.4 2.3 3.2) (0.6 2.5 2.4) :4 (0.6 2.5 2.4) :2 (0.5 2.4 2.3) | :4 (0.5 2.4 2.3) :8 (0.5 2.4 2.3) (0.6 2.5 2.4) :4 (0.6 2.5 2.4) :4 (0.4 2.3 3.2) | :4 (0.4 2.3 3.2) :4 (0.6 2.5 2.4) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Anthemic Chorus Open Strumming"
+    },
+    {
+      "name": "Bridge Minor Six Emotional Dip",
+      "timeStamp": "2:05-2:25",
+      "technique": "Barre Chords & Harmonic Contrast",
+      "key": "F# Minor / A Major",
+      "description": "A melodic shift into F#m providing a reflective emotional dip before building back to the climax",
+      "chords": [
+        "F#m",
+        "D",
+        "E"
+      ],
+      "progression": "F#m - D - F#m - E",
+      "notes": [
+        "Lock down a clean 2nd-fret F#m barre chord with full harmonic warmth",
+        "Let the D major chord breathe for two full beats",
+        "Build picking intensity steadily through the final measure of E major"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Minor Six Modulation & Dynamic Swell"
+    },
+    {
+      "name": "Guitar Solo Melodic Double Stops",
+      "timeStamp": "2:26-2:45",
+      "technique": "Blues-Rock Bends & Double Stops",
+      "key": "A Major",
+      "description": "Tasty, punchy lead solo blending A major pentatonic sweetness with bluesy minor 3rd microtonal bends",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - D - A - E",
+      "notes": [
+        "Dig in with a firm pick attack on the 5th fret high E and B strings",
+        "Bend the 8th fret B string slightly sharp for authentic blues-rock attitude",
+        "End the phrase with confident, wide vibrato on the 5th fret root note"
+      ],
+      "alphaTab": ":8 5.1 7.1 :4 8.2 :8 5.1 7.1 :4 8.2 | :8 7.1 5.1 :4 7.2 :8 5.2 7.3 :4 5.3 | :8 5.1 7.1 :4 8.2 :8 5.1 7.1 :4 8.2 | :4 7.2 :4 5.2 :2 5.1 |",
+      "exerciseLabel": "Pentatonic Double-Stop Lead Hook"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Telecaster or Stratocaster with vintage-output single coils",
+      "alternatives": [
+        "Gibson Les Paul Junior",
+        "Fender Broadcaster / Nocaster"
+      ],
+      "pickup": "Bridge pickup for crisp, biting rhythm attack and cutting lead fills"
+    },
+    "amp": {
+      "recommended": "Fender Bassman or Marshall JMP 50W Combo cranked into edge of breakup",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Deluxe Reverb"
+      ],
+      "settings": {
+        "gain": "6",
+        "treble": "7",
+        "middle": "6",
+        "bass": "5",
+        "presence": "7"
+      }
+    },
+    "effects": {
+      "distortion": "Analog overdrive (Ibanez TS808 or Boss OD-1) set for gentle boost",
+      "reverb": "Spring reverb set subtly to recreate 1980s studio room ambience",
+      "other": "Subtle studio tape compression on the rhythm tracks"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Three-Chord Foundation",
+      "steps": [
+        "Master clean switches between open A, D, and E chords",
+        "Practice downstroke eighth-note rhythm with metronome at 100 BPM",
+        "Synchronize right-hand palm muting on the verses"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Heartland Groove & Offbeat Accents",
+      "steps": [
+        "Lock into the syncopated offbeat pushes between A and D",
+        "Play the F#m barre chord in the bridge cleanly without buzzing",
+        "Bring the complete song up to the recorded 125 BPM tempo"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Lead Solo & Dynamics",
+      "steps": [
+        "Execute Larry Crane's double-stop bends with precise intonation",
+        "Seamlessly switch pickup selections between verse crunch and solo lead",
+        "Improvise variations using the A major and minor pentatonic hybrid scale"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Jack & Diane",
+        "link": "/lessons/songs/song-analysis/hurts-so-good/",
+        "similarity": "Shared heartland rock acoustic/electric arrangement and A major roots"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Summer of '69",
+        "artist": "Bryan Adams",
+        "technique": "Driving D-A-Bm-G open chord heartland rock rhythm",
+        "link": "/lessons/songs/song-analysis/summer-of-69/"
+      },
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "technique": "Foundational I-IV-V rock 'n' roll double-stop intro phrasing",
+        "link": "/lessons/songs/song-analysis/johnny-b-goode/"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo during the open chord chorus strums",
+      "Over-distorting the guitar tone which washes out the clean note separation",
+      "Failing to mute the low E string when playing the open A and D chords"
+    ],
+    "practiceRoutine": [
+      "5 mins: A, D, E open chord transition warm-up",
+      "10 mins: Slow metronome practice on the syncopated intro riff at 100 BPM",
+      "10 mins: Double-stop bends and solo phrasing at 115 BPM",
+      "5 mins: Full song playthrough along with the original recording at 125 BPM"
+    ],
+    "focusAreas": [
+      "Right-hand rhythm pocket and relaxed wrist motion",
+      "Dynamic contrast between muted verses and wide-open chorus",
+      "Accurate pitch control on the 8th fret B-string blues bends"
+    ],
+    "metronomeWork": [
+      "Start at 95 BPM focusing on clean string muting",
+      "Advance to 110 BPM emphasizing the offbeat chord transitions",
+      "Perform at full 125 BPM maintaining effortless rhythm bounce"
+    ]
+  },
+  "metadata": {
+    "popularity": 92,
+    "dateAdded": "2026-09-24",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "learningValue": "HIGH",
+    "tags": [
+      "classic-rock",
+      "open-chords",
+      "power-chords",
+      "strumming",
+      "syncopation",
+      "major-key",
+      "pentatonic",
+      "electric-guitar",
+      "tube-amp",
+      "rhythm-guitar",
+      "song-analysis",
+      "beginner"
+    ]
+  }
+}
+
