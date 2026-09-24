@@ -1,0 +1,392 @@
+{
+  "songInfo": {
+    "title": "Fade to Black",
+    "artist": "Metallica",
+    "album": "Ride the Lightning",
+    "released": "1984",
+    "genre": "Thrash Metal / Heavy Metal",
+    "tempo": "114 BPM",
+    "duration": "6:57",
+    "key": "B Minor / A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B Minor / A Minor",
+      "modalCharacter": "B Aeolian (Natural Minor) for melancholic acoustic themes, modulating into A Aeolian for the driving thrash metal outro",
+      "keySignature": "2 Sharps (F#, C#) / No Sharps (A Minor)",
+      "relativeMinor": "B Minor / A Minor",
+      "scalesUsed": [
+        {
+          "name": "B Natural Minor (Aeolian)",
+          "notes": "B - C# - D - E - F# - G - A",
+          "scale": "B Natural Minor (Aeolian)",
+          "application": "Drives the somber acoustic arpeggio patterns in the intro, verses, and the first guitar solo"
+        },
+        {
+          "name": "B Minor Pentatonic",
+          "notes": "B - D - E - F# - A",
+          "scale": "B Minor Pentatonic",
+          "application": "Used for Kirk Hammett's singing melodic bends and blues-rock phrasing during Solo 1"
+        },
+        {
+          "name": "A Natural Minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G",
+          "scale": "A Natural Minor (Aeolian)",
+          "application": "The harmonic landscape of the fast outro section, giving Kirk room for relentless, anthemic runs"
+        },
+        {
+          "name": "A Minor Pentatonic",
+          "notes": "A - C - D - E - G",
+          "scale": "A Minor Pentatonic",
+          "application": "Foundation for the legendary high-speed outro solo runs up to the 20th and 22nd frets"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Bm",
+          "A",
+          "G",
+          "F#"
+        ],
+        "progression": "Bm - A - G - F#",
+        "description": "Somber descending Andalusian-style progression in B minor, featuring delicate fingerpicked arpeggios"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Intro & Verse",
+          "progression": "Bm - A - G - F# - Em - Bm",
+          "romanNumerals": "i - VII - VI - V - iv - i",
+          "description": "Arpeggiated acoustic guitar pattern intertwining open string resonances with fretted chord shapes"
+        },
+        {
+          "section": "Heavy Chorus & Bridge",
+          "progression": "D5 - A5 - C5 - G5 - E5 - F#5",
+          "romanNumerals": "III - VII - bII - VI - IV - V",
+          "description": "Explosive transition into heavy distorted electric guitars with tight palm-muted power chord chugs"
+        },
+        {
+          "section": "Epic Outro Solo",
+          "progression": "A5 - B5 - C5 - D5 - E5 - D5 - C5 - B5",
+          "romanNumerals": "i - ii - bIII - iv - v - iv - bIII - ii (in A Minor)",
+          "description": "Galloping 4/4 thrash metal power chord cycle providing the foundation for one of the greatest metal outro solos of all time"
+        }
+      ],
+      "harmonicFunction": [
+        "Bm (i) - Melancholic acoustic anchor establishing sadness, introspection, and vulnerability",
+        "A (VII) - Descending whole-step movement creating smooth voice-leading downwards",
+        "G (VI) - Major submediant chord providing a brief glimpse of warmth before the unresolved turnaround",
+        "F# (V) - Dominant Phrygian cadence with major third tension (A#) resolving naturally back to Bm",
+        "A Minor Outro Key Shift - Lowers the tonal center one whole step, darkening the atmosphere while accelerating tempo"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Fingerpicked Acoustic Arpeggios & Voice Leading",
+      "description": "Picking individual strings of open and barre chord grips in strict sequential arpeggio patterns with relaxed touch",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rest the palm gently near the bridge for stability without dampening the acoustic strings",
+          "Thumb plays bass notes on the 5th and 6th strings; index, middle, and ring pluck the D, G, and B strings",
+          "Let each note ring cleanly into the next to produce a piano-like sustaining texture"
+        ],
+        "sequence": [
+          "Fret Bm (2nd fret A string, 4th fret D, 4th fret G, 3rd fret B)",
+          "Pluck bass note on 5th string",
+          "Ascend sequentially across D, G, and B strings",
+          "Descend back to D before transitioning to A major shape"
+        ],
+        "tips": [
+          "Do not rush the tempo: keep each eighth note perfectly balanced and expressive",
+          "Ensure your fretting finger tips are curved to avoid muting adjacent open strings"
+        ],
+        "chords": [
+          "Bm",
+          "A",
+          "G",
+          "F#"
+        ],
+        "progression": "Bm - A - G - F#"
+      }
+    },
+    {
+      "name": "Dynamic Soloing & Expressive Vibrato",
+      "description": "Transitioning from crying, vocal-like melodic phrases in the intro to blistering high-speed pentatonic runs in the outro",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Intro solo emphasizes wide whole-step bends and smooth string slides with singing sustain",
+          "Outro solo introduces rapid alternate-picked triplet sequences across Box 1 and Box 2 of A minor pentatonic",
+          "Use the neck pickup for the warm intro solo, switching to the bridge pickup for the bite in the outro"
+        ],
+        "sequence": [
+          "Execute full-step bend on target note",
+          "Apply wide, pulsating vibrato at the peak of the bend",
+          "Release smoothly back to starting pitch",
+          "Transition into fast descending scalar run"
+        ],
+        "tips": [
+          "Kirk Hammett's solos tell a story: start with space and emotion, building intensity to peak velocity",
+          "Mute lower strings with the picking-hand palm during high-fret soloing to prevent unwanted hum"
+        ],
+        "chords": [
+          "Bm",
+          "A5"
+        ],
+        "progression": "Bm - A - G - F#"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Intro Theme",
+      "timeStamp": "0:00-0:30",
+      "technique": "Fingerpicked Acoustic Arpeggios & Voice Leading",
+      "key": "B Minor",
+      "description": "James Hetfield opens the track with an intimate, haunting acoustic arpeggio pattern that immediately sets the mood",
+      "chords": [
+        "Bm",
+        "A",
+        "G",
+        "F#"
+      ],
+      "progression": "Bm - A - G - F#",
+      "notes": [
+        "Let every acoustic note sustain for the full duration of each bar",
+        "Accentuate the bass notes on beat 1 of every chord change",
+        "Maintain a steady, meditative 114 BPM quarter-note pulse"
+      ],
+      "alphaTab": ":8 2.5 4.4 4.3 3.2 4.3 4.4 2.5 4.4 | :8 0.5 2.4 2.3 2.2 2.3 2.4 0.5 2.4 | :8 3.6 0.4 0.3 0.2 0.3 0.4 3.6 0.4 | :8 2.6 4.5 4.4 3.3 4.4 4.5 2.6 4.5 |",
+      "exerciseLabel": "Acoustic Intro Fingerpicked Theme"
+    },
+    {
+      "name": "Intro Solo 1",
+      "timeStamp": "0:31-1:02",
+      "technique": "Dynamic Soloing & Expressive Vibrato",
+      "key": "B Minor",
+      "description": "Kirk Hammett enters with an emotionally charged electric guitar solo played with a warm, singing neck pickup tone",
+      "chords": [
+        "Bm",
+        "A",
+        "G",
+        "F#"
+      ],
+      "progression": "Bm - A - G - F#",
+      "notes": [
+        "Use the neck pickup with guitar tone slightly rolled off for a warm, creamy solo sound",
+        "Execute the singing whole-step bend on the 10th fret of the high E string",
+        "Allow the notes to ring with patient, expressive vibrato"
+      ],
+      "alphaTab": ":4 7.1 :8 10.1 7.1 :4 10.2 | :8 7.2 10.2 :8 9.3 7.3 :4 9.4 | :8 10.1 7.1 :8 8.2 7.2 :4 9.3 | :2 7.1 :2 r |",
+      "exerciseLabel": "Melodic Intro Solo Phrasing"
+    },
+    {
+      "name": "Heavy Chorus Riff",
+      "timeStamp": "2:09-2:45",
+      "technique": "Fingerpicked Acoustic Arpeggios & Voice Leading",
+      "key": "B Minor",
+      "description": "The song erupts from delicate acoustics into crushing Mesa/Boogie crunch with heavy downstroke power chords",
+      "chords": [
+        "D5",
+        "A5",
+        "C5",
+        "G5",
+        "E5",
+        "F#5"
+      ],
+      "progression": "D5 - A5 - C5 - G5 - E5 - F#5",
+      "notes": [
+        "Hit each power chord with aggressive right-hand downstrokes",
+        "Mute strings quickly between hits to create percussive heaviness",
+        "Let the final F#5 chord ring out with sustained feedback"
+      ],
+      "alphaTab": ":4 (0.4 2.3 3.2) :4 (0.5 2.4 2.3) :4 (3.5 5.4 5.3) :4 (3.6 5.5 5.4) | :2 (0.6 2.5 2.4) :2 (2.6 4.5 4.4) | :4 (0.4 2.3 3.2) :4 (0.5 2.4 2.3) :4 (3.5 5.4 5.3) :4 (3.6 5.5 5.4) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Heavy Metal Power Chorus"
+    },
+    {
+      "name": "Outro Masterpiece Solo (The Climax)",
+      "timeStamp": "5:01-6:57",
+      "technique": "Dynamic Soloing & Expressive Vibrato",
+      "key": "A Minor",
+      "description": "Over a galloping thrash metal progression, Kirk Hammett delivers one of the finest, most cathartic solos in heavy metal history",
+      "chords": [
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5"
+      ],
+      "progression": "A5 - B5 - C5 - D5 - E5 - D5 - C5 - B5",
+      "notes": [
+        "Switch to the bridge pickup and dig in for maximum attack and pinch harmonic bite",
+        "Master the repeating 3-note arpeggiated run across the high E and B strings",
+        "Climb progressively higher up the neck, peaking on screaming bends at the 20th and 22nd frets"
+      ],
+      "alphaTab": ":8 12.1 15.1 :8 12.1 15.1 :8 12.1 15.1 :8 17.1 | :8 15.1 12.1 :8 15.2 13.2 :4 14.3 | :8 17.1 :8 20.1 :4 20.1 | :2 17.1 :2 r |",
+      "exerciseLabel": "Outro Gallop & Blazing Climax Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Flying V (1968 or '70s style with high-output bridge humbucker) or ESP Eclipse",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Ovation Balladeer Acoustic (for intro tracking)"
+      ],
+      "pickup": "Seymour Duncan '59 (neck) for creamy intro solo; Seymour Duncan JB (bridge) for aggressive outro"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Mark IIc+ (slave routed into Marshall 100W power section)",
+      "alternatives": [
+        "Marshall JCM800 2203",
+        "Peavey 6505+"
+      ],
+      "settings": {
+        "gain": "8",
+        "treble": "7",
+        "middle": "4",
+        "bass": "7",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez TS9 Tube Screamer (used as a clean boost: Level 10, Drive 0, Tone 6)",
+      "reverb": "Lexicon studio digital reverb with 2.2s decay time",
+      "other": "Dunlop CryBaby Wah-Wah, Roland JC-120 Chorus (for clean acoustic doubling)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Acoustic Arpeggio Basics & Rhythm Chords",
+      "steps": [
+        "Learn the Bm, A, G, and F# chord grips with correct finger placement",
+        "Practice the right-hand fingerpicking pattern slowly at 70 BPM",
+        "Work on smooth finger transitions without breaking the eighth-note flow",
+        "Learn the D5, A5, C5, and G5 heavy power chord progression"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the acoustic intro and verse arpeggios cleanly and in time"
+    },
+    "intermediate": {
+      "title": "Intro Solo & Clean Electric Embellishments",
+      "steps": [
+        "Transcribe and memorize every phrase of the melodic Intro Solo",
+        "Develop singing whole-step bends with smooth vibrato in B natural minor",
+        "Coordinate the switch between acoustic rhythm and high-gain power chords",
+        "Learn the rhythm guitar gallop in A minor for the outro section"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Perform the intro solo and all rhythm guitar tracks from start to finish"
+    },
+    "advanced": {
+      "title": "The Outro Guitar Solo Masterclass",
+      "steps": [
+        "Isolate Kirk Hammett's fast repeating triplet figures on the high E and B strings",
+        "Build picking hand stamina for the continuous high-speed runs at 114 BPM",
+        "Master the high-register bends at the 20th and 22nd frets with spot-on intonation",
+        "Combine twin harmony guitar parts for the dual-guitar climax"
+      ],
+      "timeEstimate": "5-8 weeks",
+      "goals": "Perform the entire 2-minute outro guitar solo at full album tempo with flawless execution"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Nothing Else Matters",
+        "link": "/lessons/songs/song-analysis/nothing-else-matters",
+        "similarity": "Famous fingerpicked acoustic guitar ballad with soaring emotional electric guitar solo"
+      },
+      {
+        "title": "One",
+        "link": "/lessons/songs/song-analysis/one",
+        "similarity": "Dynamic structural evolution from clean melancholic ballad into fast machine-gun thrash metal"
+      },
+      {
+        "title": "Master of Puppets",
+        "link": "/lessons/songs/song-analysis/master-of-puppets",
+        "similarity": "Precision downstroke heavy metal rhythm guitar and dual harmonized clean interludes"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "technique": "Epic storytelling minor-key guitar solos with soaring sustained bends and emotional crescendos",
+        "link": "/lessons/songs/song-analysis/comfortably-numb"
+      },
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "technique": "High-octane metal riffing and virtuosic neoclassical minor pentatonic lead soloing",
+        "link": "/lessons/songs/song-analysis/crazy-train"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the acoustic arpeggio volume vary wildly between thumb bass notes and plucked higher strings",
+      "Rushing the tempo during the acoustic sections: maintain a steady, somber 114 BPM",
+      "Over-bending or falling flat on the high 20th and 22nd fret bends in the outro solo",
+      "Stiffening the wrist during the fast outro triplet patterns instead of keeping it relaxed"
+    ],
+    "practiceRoutine": [
+      "10 mins: Slow acoustic fingerpicking warmups on Bm, A, G, and F# arpeggio patterns",
+      "15 mins: Melodic phrasing drills for Solo 1, focusing on bend intonation and vibrato",
+      "20 mins: Outro gallop rhythm practice: building tight downstroke endurance with metronome",
+      "25 mins: Outro solo sectional breakdown: looping 4-bar phrases at 85 BPM, then 100 BPM, then 114 BPM"
+    ],
+    "focusAreas": [
+      "Dynamic contrast between delicate acoustic balladry and ferocious thrash metal crunch",
+      "Intonation and pitch control on high-register solo bends",
+      "Clean right-hand finger independence during acoustic arpeggio sequences",
+      "Consistent picking stamina and articulation during the 2-minute outro solo"
+    ],
+    "metronomeWork": [
+      "Practice the acoustic arpeggio pattern at 80 BPM to ensure every note rings for an exact eighth note",
+      "Lock the outro rhythm gallop to a click at 114 BPM to prevent rushing the tempo",
+      "Slow the fastest outro solo runs to 75 BPM to engrain muscle memory before speeding up"
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-09-24",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1980s",
+    "subGenre": "Thrash Metal Power Ballad",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals"
+    ],
+    "tags": [
+      "metal",
+      "acoustic-guitar",
+      "electric-guitar",
+      "fingerpicking",
+      "arpeggios",
+      "lead-guitar",
+      "distortion",
+      "song-analysis"
+    ],
+    "learningValue": "The ultimate study in heavy metal dynamics, fingerpicked acoustic chord voicings, and epic minor-key solo construction.",
+    "iconicRiff": true,
+    "estimatedLearningTime": "5-8 weeks"
+  }
+}

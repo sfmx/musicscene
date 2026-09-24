@@ -1,0 +1,384 @@
+{
+  "songInfo": {
+    "title": "Mr. Crowley",
+    "artist": "Ozzy Osbourne",
+    "album": "Blizzard of Ozz",
+    "released": "1980",
+    "genre": "Heavy Metal / Neo-Classical",
+    "tempo": "105 BPM",
+    "duration": "4:56",
+    "key": "D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Expert",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D Minor",
+      "modalCharacter": "D Aeolian (Natural Minor) with dramatic D Harmonic Minor leading-tone (C#) cadences",
+      "keySignature": "1 Flat (Bb)",
+      "relativeMinor": "D Minor",
+      "scalesUsed": [
+        {
+          "name": "D Natural Minor (Aeolian)",
+          "notes": "D - E - F - G - A - Bb - C",
+          "scale": "D Natural Minor (Aeolian)",
+          "application": "Drives the verse chords and the fluid melodic runs connecting the chord changes"
+        },
+        {
+          "name": "D Harmonic Minor",
+          "notes": "D - E - F - G - A - Bb - C#",
+          "scale": "D Harmonic Minor",
+          "application": "Introduces the raised 7th (C#) over the A major dominant chord for dramatic classical tension"
+        },
+        {
+          "name": "D Minor Pentatonic",
+          "notes": "D - F - G - A - C",
+          "scale": "D Minor Pentatonic",
+          "application": "Provides bluesy rock power and explosive bending hooks within the solo sections"
+        },
+        {
+          "name": "A Phrygian Dominant",
+          "notes": "A - Bb - C# - D - E - F - G",
+          "scale": "A Phrygian Dominant",
+          "application": "5th mode of D harmonic minor, used by Randy to shred over the turnaround A chord"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "Bb",
+          "C",
+          "Dm",
+          "Bb",
+          "Gm",
+          "A"
+        ],
+        "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+        "description": "Baroque-influenced minor chord progression descending through diatonic steps and resolving via a V-i cadence"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Verse Riff",
+          "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+          "romanNumerals": "i - VI - VII - i - VI - iv - V",
+          "description": "Heavy syncopated power chords accented by Randy's signature muted pick scratches and palm muting"
+        },
+        {
+          "section": "First Guitar Solo",
+          "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+          "romanNumerals": "i - VI - VII - i - VI - iv - V",
+          "description": "Constructed over the verse chord changes, showcasing neo-classical triad arpeggios and weeping bends"
+        },
+        {
+          "section": "Outro Masterpiece Solo",
+          "progression": "Dm - Bb - C - Dm",
+          "romanNumerals": "i - VI - VII - i",
+          "description": "High-octane cycling progression supporting one of the most celebrated speed-picked solos in heavy metal history"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm (i) - The dark tonic home key, establishing solemn gothic weight",
+        "Bb (VI) - Submediant major chord providing expansive emotional drama",
+        "C (VII) - Subtonic major chord driving smooth stepwise scalar motion",
+        "Gm (iv) - Subdominant minor chord preparing the ear for the turnaround",
+        "A (V) - Dominant major chord with the crucial C# leading tone pulling irresistibly back to Dm"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Neo-Classical Sweep Arpeggios & Alternate Picking",
+      "description": "Sweeping pick hand across 3 and 4 strings for clean triad arpeggios, combined with precision 16th-note alternate picked scalar runs",
+      "difficulty": "Expert",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Dm, C, and Bb triad shapes mapped out along the top three strings",
+          "Strict down-down-down-up sweep motion through arpeggio shapes",
+          "Strict alternating down-up-down-up picking for rapid scalar descents",
+          "Light palm edge muting to keep adjacent unplayed strings dead silent"
+        ],
+        "sequence": [
+          "Sweep down across high G, B, and E strings",
+          "Hammer-on upper extension with pinky",
+          "Pull-off and sweep up back to starting note",
+          "Transition immediately into strict alternate-picked descending scale"
+        ],
+        "tips": [
+          "Practice sweeps with a completely clean guitar tone before adding distortion",
+          "Synchronization between fretting fingers and pick stroke must be surgical"
+        ],
+        "chords": [
+          "Dm",
+          "Bb",
+          "C",
+          "A"
+        ],
+        "progression": "Dm - Bb - C - A"
+      }
+    },
+    {
+      "name": "Trill Sequences & Classical Turnaround Ornamentation",
+      "description": "Rapid hammer-on and pull-off trills between the tonic and leading tone, reflecting European classical violin technique",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rapid trills between frets 10 and 11 on the B string (A and Bb)",
+          "Trill from C# to D on the G string to emphasize the harmonic minor resolution",
+          "Maintain even volume and continuous rhythmic velocity across the trill"
+        ],
+        "sequence": [
+          "Fret base note with index finger",
+          "Hammer and pull with middle or ring finger in rapid succession",
+          "End trill with a wide vibrato bend on the root note"
+        ],
+        "tips": [
+          "Keep fretting fingers low to the fretboard to conserve motion",
+          "Anchor your thumb securely behind the neck for stability"
+        ],
+        "chords": [
+          "A",
+          "Dm"
+        ],
+        "progression": "Gm - A - Dm"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Heavy Main Riff",
+      "timeStamp": "0:25-0:40",
+      "technique": "Neo-Classical Sweep Arpeggios & Alternate Picking",
+      "key": "D Minor",
+      "description": "After Don Airey's gothic church organ intro, Randy crashes in with crushing palm-muted Dm power chord hits and pick slides",
+      "chords": [
+        "Dm",
+        "Bb",
+        "C",
+        "A"
+      ],
+      "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+      "notes": [
+        "Play tight, percussive palm muting on the low D string pulses",
+        "Accentuate the transition chords (Bb, C, Gm, A) with full, ring-out power chords",
+        "Let the final A5 chord sustain with aggressive pinch harmonic vibrato"
+      ],
+      "alphaTab": ":8 (0.4 2.3 3.2) :8 0.4 :8 0.4 :8 (0.4 2.3 3.2) | :8 (1.5 3.4 3.3) :8 (3.5 5.4 5.3) :4 (0.4 2.3 3.2) | :8 (1.5 3.4 3.3) :8 (3.6 5.5 5.4) :4 (0.5 2.4 2.3) | :1 (0.4 2.3 3.2) |",
+      "exerciseLabel": "Main Verse Riff & Classical Chords"
+    },
+    {
+      "name": "Verse Rhythm Groove",
+      "timeStamp": "0:41-1:38",
+      "technique": "Neo-Classical Sweep Arpeggios & Alternate Picking",
+      "key": "D Minor",
+      "description": "Randy provides rhythmic drive under Ozzy's vocal melody, using subtle double-stops and muted arpeggiated figures",
+      "chords": [
+        "Dm",
+        "Bb",
+        "C",
+        "Gm",
+        "A"
+      ],
+      "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+      "notes": [
+        "Stay tucked in behind the vocal phrasing without overpowering the mix",
+        "Accentuate the A major chord before the solo with a sliding chromatic approach",
+        "Maintain clean palm muting on the low D pedal tone"
+      ],
+      "alphaTab": ":4 (0.4 2.3 3.2) :8 0.4 :8 (1.5 3.4 3.3) | :4 (3.5 5.4 5.3) :4 (0.4 2.3 3.2) | :4 (1.5 3.4 3.3) :4 (3.6 5.5 5.4) | :2 (0.5 2.4 2.3) :2 r |",
+      "exerciseLabel": "Verse Rhythm Accompaniment"
+    },
+    {
+      "name": "First Guitar Solo",
+      "timeStamp": "1:39-2:15",
+      "technique": "Neo-Classical Sweep Arpeggios & Alternate Picking",
+      "key": "D Minor",
+      "description": "Widely cited as one of the most perfectly constructed guitar solos in history, opening with soaring bends and weeping classical phrasing",
+      "chords": [
+        "Dm",
+        "Bb",
+        "C",
+        "Gm",
+        "A"
+      ],
+      "progression": "Dm - Bb - C - Dm - Bb - Gm - A",
+      "notes": [
+        "Begin with the iconic singing whole-step bend on the 13th fret of the B string",
+        "Execute the clean Dm arpeggio sweep on the top three strings",
+        "Conclude with the blazing D harmonic minor alternate-picked run down to the low A note"
+      ],
+      "alphaTab": ":4 13.2 :8 10.1 13.1 :4 10.1 | :8 13.2 10.2 :8 12.3 10.3 :4 12.4 | :8 13.1 10.1 :8 11.2 10.2 :4 12.3 | :8 14.3 12.3 :8 11.3 12.4 :4 10.4 |",
+      "exerciseLabel": "First Solo Classical Melodic Arc"
+    },
+    {
+      "name": "Outro Guitar Solo (The Climax)",
+      "timeStamp": "3:28-4:56",
+      "technique": "Neo-Classical Sweep Arpeggios & Alternate Picking",
+      "key": "D Minor",
+      "description": "Randy Rhoads unleashes relentless high-speed sextuplet alternate picking, pedal point arpeggios, and blistering neo-classical runs until the fade-out",
+      "chords": [
+        "Dm",
+        "Bb",
+        "C",
+        "Dm"
+      ],
+      "progression": "Dm - Bb - C - Dm",
+      "notes": [
+        "Sustain consistent pick-to-finger synchronization at 105 BPM sixteenth-note triplets (sextuplets)",
+        "Use strict alternate picking on the repeating scalar sequence across the D, G, and B strings",
+        "Add aggressive finger vibrato to every note held at the conclusion of each phrase"
+      ],
+      "alphaTab": ":16 10.1 13.1 10.1 :16 11.2 13.2 11.2 :8 10.1 13.1 | :16 10.2 13.2 10.2 :16 12.3 14.3 12.3 :8 10.2 13.2 | :8 10.1 :8 13.1 :8 15.1 :8 17.1 | :2 17.1 :2 r |",
+      "exerciseLabel": "Outro Blazing Sextuplet Phrasing"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1974 Gibson Les Paul Custom (Alpine White / aged cream) or Jackson Randy Rhoads Concorde",
+      "alternatives": [
+        "Karl Sandoval Polka Dot Flying V",
+        "Epiphone Les Paul Custom"
+      ],
+      "pickup": "Gibson Super Humbucker / Seymour Duncan Distortion (TB-6) in the bridge position"
+    },
+    "amp": {
+      "recommended": "1979 Marshall 100W Super Lead Plexi (White vinyl, modified by Jose Arredondo)",
+      "alternatives": [
+        "Marshall JCM800 2203",
+        "Marshall Studio Classic SC20H"
+      ],
+      "settings": {
+        "gain": "8",
+        "treble": "7",
+        "middle": "9",
+        "bass": "5",
+        "presence": "7"
+      }
+    },
+    "effects": {
+      "distortion": "MXR Distortion+ (Yellow vintage script box for biting harmonic saturation)",
+      "reverb": "Subtle studio plate reverb",
+      "other": "MXR 10-Band Graphic EQ (frown shape midrange boost at 1kHz-2kHz), Roland RE-201 Space Echo, MXR Stereo Chorus"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Mastering the D Minor Chord Sequence",
+      "steps": [
+        "Learn Dm, Bb, C, Gm, and A open and barre chords",
+        "Practice the rhythmic transition between Dm, Bb, and C power chords",
+        "Understand the role of the dominant A major chord leading into Dm",
+        "Memorize the D natural minor (Aeolian) scale positions"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the entire verse and chorus rhythm tracks in time at 105 BPM"
+    },
+    "intermediate": {
+      "title": "Solo 1 Note-for-Note & Classical Phrasing",
+      "steps": [
+        "Transcribe and memorize every note of the First Solo",
+        "Develop accurate intonation on the sustained whole-step bends in the 10th-13th frets",
+        "Practice the clean three-string triad sweeps slowly at 60 BPM",
+        "Integrate the D harmonic minor scale (featuring C#) into your lead vocabulary"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Perform the entire first guitar solo note-for-note with authentic touch and vibrato"
+    },
+    "advanced": {
+      "title": "Outro Solo Velocity & Sextuplet Picking Endurance",
+      "steps": [
+        "Isolate Randy's rapid alternate-picked scalar sequences using a metronome",
+        "Build picking hand stamina to sustain sixteenth-note sextuplets cleanly for 2 minutes",
+        "Master the classical pedal-point arpeggios on the high E and B strings",
+        "Incorporate double-tracking and MXR chorus modulation for the authentic Blizzard of Ozz tone"
+      ],
+      "timeEstimate": "5-8 weeks",
+      "goals": "Perform the entire outro guitar solo at full tempo with clean separation and flawless synchronization"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Crazy Train",
+        "link": "/lessons/songs/song-analysis/crazy-train",
+        "similarity": "Randy Rhoads' signature F# minor riffing and neoclassical alternate picking solo mastery"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "The Trooper",
+        "artist": "Iron Maiden",
+        "technique": "Harmonized twin guitar minor key melodies and rapid galloping metal rhythms",
+        "link": "/lessons/songs/song-analysis/the-trooper"
+      },
+      {
+        "title": "Iron Man",
+        "artist": "Black Sabbath",
+        "technique": "Heavy riff rock foundation with dark metal minor pentatonic lead phrasing",
+        "link": "/lessons/songs/song-analysis/iron-man"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Missing the C# note on the A chord, causing the harmonic minor classical resolution to sound like plain natural minor",
+      "Rushing the alternate picked sextuplets in the outro solo, resulting in sloppy note smearing",
+      "Lifting fingers too far off the fretboard during arpeggios, wasting precious kinetic energy",
+      "Allowing open lower strings to ring sympathetically during high-gain solo sweeps"
+    ],
+    "practiceRoutine": [
+      "10 mins: Slow chromatic alternate picking warmups with strict down-up motion",
+      "15 mins: D harmonic minor scale runs across all 6 strings at 80 BPM",
+      "20 mins: Section-by-section breakdown of Solo 1, focusing on vibrato and pitch accuracy",
+      "20 mins: Outro solo loop drills: 4-bar chunks increased by 3 BPM only after 5 perfect repetitions"
+    ],
+    "focusAreas": [
+      "Right/left hand synchronization during rapid scalar passages",
+      "Accurate pitch control on emotional high-register bends",
+      "Authentic Randy Rhoads vibrato (fast, controlled, classical violin-style)",
+      "Dynamic expression using MXR distortion pedal saturation"
+    ],
+    "metronomeWork": [
+      "Set metronome to 75 BPM to practice the outro solo sextuplet patterns cleanly",
+      "Gradually bump tempo up to 90, 98, and finally album speed 105 BPM",
+      "Practice the first solo over a backing track to master rubato feel and expressive timing"
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-09-24",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1980s",
+    "subGenre": "Neo-Classical Heavy Metal",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals"
+    ],
+    "tags": [
+      "metal",
+      "classic-rock",
+      "harmonic-minor",
+      "alternate-picking",
+      "sweep-picking",
+      "lead-guitar",
+      "distortion",
+      "song-analysis"
+    ],
+    "learningValue": "The definitive textbook for classical music theory applied to heavy metal guitar, featuring two of the greatest guitar solos ever recorded.",
+    "iconicRiff": true,
+    "estimatedLearningTime": "5-8 weeks"
+  }
+}

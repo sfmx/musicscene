@@ -1,0 +1,373 @@
+{
+  "songInfo": {
+    "title": "La Grange",
+    "artist": "ZZ Top",
+    "album": "Tres Hombres",
+    "released": "1973",
+    "genre": "Southern Rock / Texas Blues",
+    "tempo": "162 BPM",
+    "duration": "3:51",
+    "key": "A Dorian / A Blues",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Dorian / A Blues",
+      "modalCharacter": "A Dorian with blues flat-5 and John Lee Hooker boogie shuffle pedal",
+      "keySignature": "No Sharps / No Flats (A Minor)",
+      "relativeMinor": "A Minor",
+      "scalesUsed": [
+        {
+          "name": "A Minor Pentatonic",
+          "notes": "A - C - D - E - G",
+          "scale": "A Minor Pentatonic",
+          "application": "Foundational scale for the rhythm shuffle chords and primary solo riffs"
+        },
+        {
+          "name": "A Blues Scale",
+          "notes": "A - C - D - Eb - E - G",
+          "scale": "A Blues Scale",
+          "application": "Infuses stinging grit and pinch harmonic squeals with the flat-5 (Eb) blue note"
+        },
+        {
+          "name": "A Dorian",
+          "notes": "A - B - C - D - E - F# - G",
+          "scale": "A Dorian",
+          "application": "Major 6th (F#) adds the sweet, sophisticated Texas swing tone over the D chord"
+        },
+        {
+          "name": "C Major Pentatonic",
+          "notes": "C - D - E - G - A",
+          "scale": "C Major Pentatonic",
+          "application": "Solo 2 key transposition giving Billy Gibbons a bright, screaming contrast"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A5",
+          "C5",
+          "D5"
+        ],
+        "progression": "A5 - C5 - D5 - A5",
+        "description": "Syncopated Texas boogie shuffle driven by open A string pedal chugging and sharp sliding double stops"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verses",
+          "progression": "A5 - C5 - D5 - A5",
+          "romanNumerals": "i - bIII - IV - i",
+          "description": "Clean, understated John Lee Hooker-style boogie rhythm with tight palm muting"
+        },
+        {
+          "section": "Main Full Band Groove",
+          "progression": "A5 - C5 - D5 - A5",
+          "romanNumerals": "i - bIII - IV - i",
+          "description": "Distorted crunch rhythm propelled by Frank Beard's driving Texas shuffle beat"
+        },
+        {
+          "section": "Guitar Solo 2 Key Shift",
+          "progression": "C5 - Eb5 - F5 - C5",
+          "romanNumerals": "i - bIII - IV - i (in C)",
+          "description": "Sudden minor third modulation up to C minor, creating high-octane solo excitement"
+        }
+      ],
+      "harmonicFunction": [
+        "A5 (i) - The unrelenting tonic boogie anchor played with the thumb or flat pick over open A",
+        "C5 (bIII) - Borrowed minor third power chord creating an energetic forward bounce",
+        "D5 (IV) - Subdominant chord highlighting the Dorian major 6th harmony before snapping back to A5",
+        "Open A Pedal - The heartbeat of the song, keeping the rhythm driving relentlessly forward"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Pinch Harmonics ('Squealies')",
+      "description": "Catching the edge of the picking-hand thumb immediately after the pick strikes the string to trigger harmonic overtone squeals",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Hold the pick with very little tip protruding past your thumb",
+          "Strike string with pick and graze lightly with the fleshy side of the thumb in one motion",
+          "Find harmonic 'sweet spots' along the string length between the bridge and neck pickups",
+          "Add rapid, wide finger vibrato immediately after triggering the harmonic to sustain the squeal"
+        ],
+        "sequence": [
+          "Fret target note (e.g. 7th fret D or G string)",
+          "Strike with pick and graze with thumb",
+          "Shake fretting finger with vigorous vibrato",
+          "Adjust picking location horizontally until the overtone rings loudly"
+        ],
+        "tips": [
+          "Billy Gibbons historically used an old Mexican peso coin as a pick for extra metallic scrape",
+          "Use bridge pickup with high amp gain and strong midrange"
+        ],
+        "chords": [
+          "A5"
+        ],
+        "progression": "A5 - C5 - D5"
+      }
+    },
+    {
+      "name": "Texas Boogie Shuffle & Palm Muting",
+      "description": "Executing a syncopated 16th-note swing shuffle while alternating between tight palm muting and open chord accents",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rest the heel of the picking hand lightly across the bridge saddles",
+          "Alternate between the open low A string and fretted notes on the D and G strings",
+          "Accentuate the upbeat swing to lock in with the drum hi-hat and snare"
+        ],
+        "sequence": [
+          "Downstroke muted open A string",
+          "Upstroke double stop on frets 7 and 7 of D and G strings",
+          "Downstroke slide into fret 5",
+          "Re-anchor palm to cut off ringing"
+        ],
+        "tips": [
+          "Do not press too hard with the palm or you will raise the pitch of the open string",
+          "Keep the right hand loose and relaxed"
+        ],
+        "chords": [
+          "A5",
+          "C5",
+          "D5"
+        ],
+        "progression": "A5 - C5 - D5 - A5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Boogie Shuffle",
+      "timeStamp": "0:00-0:32",
+      "technique": "Texas Boogie Shuffle & Palm Muting",
+      "key": "A Dorian / A Blues",
+      "description": "Billy Gibbons plays the clean, intimate solo guitar intro that established one of the most recognizable riffs in rock history",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A5 - C5 - D5 - A5",
+      "notes": [
+        "Play clean without distortion; let pick dynamics create bite",
+        "Keep the rhythm strictly syncopated in a swing shuffle feel",
+        "Use subtle palm muting on the open A string pulses"
+      ],
+      "alphaTab": ":8 0.5 :8 (2.4 2.3) :8 0.5 :8 (2.4 2.3) | :8 0.5 :8 (5.4 5.3) :8 0.5 :8 (7.4 7.3) | :8 0.5 :8 (2.4 2.3) :8 0.5 :8 (2.4 2.3) | :8 0.5 :8 (5.4 5.3) :8 (7.4 7.3) :4 0.5 |",
+      "exerciseLabel": "Intro Clean Boogie Riff"
+    },
+    {
+      "name": "Main Driving Groove",
+      "timeStamp": "0:33-1:15",
+      "technique": "Texas Boogie Shuffle & Palm Muting",
+      "key": "A Dorian / A Blues",
+      "description": "The whole band crashes in with high-gain Marshall crunch, turning the intro into a roaring Texas blues shuffle",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A5 - C5 - D5 - A5",
+      "notes": [
+        "Switch to full distortion while maintaining tight palm muting",
+        "Dig in hard on the C5 and D5 chord stabs",
+        "Accentuate the rhythmic push into each bar"
+      ],
+      "alphaTab": ":8 (0.5 2.4) :8 (0.5 2.4) :8 (3.5 5.4) :8 (3.5 5.4) | :8 (5.5 7.4) :8 (5.5 7.4) :4 (0.5 2.4) | :8 (0.5 2.4) :8 (0.5 2.4) :8 (3.5 5.4) :8 (5.5 7.4) | :2 (0.5 2.4) :2 r |",
+      "exerciseLabel": "Heavy Crunch Rhythm Groove"
+    },
+    {
+      "name": "First Guitar Solo",
+      "timeStamp": "1:16-1:58",
+      "technique": "Pinch Harmonics ('Squealies')",
+      "key": "A Dorian / A Blues",
+      "description": "Billy Gibbons unleashes a clinic in Texas blues phrasing packed with screaming pinch harmonics and microtonal bends",
+      "chords": [
+        "A5"
+      ],
+      "progression": "A5 vamp",
+      "notes": [
+        "Graze strings with thumb flesh on the 7th fret of the G string to trigger harmonics",
+        "Add fast, shaking vibrato to make the pinch harmonics sing and sustain",
+        "Work around the A blues scale box at the 5th and 7th frets"
+      ],
+      "alphaTab": ":8 5.3 :8 7.3 :8 5.2 :8 8.2 | :8 7.3 :8 5.3 :4 7.4 | :8 5.3 :8 7.3 :4 7.3 | :2 5.3 :2 r |",
+      "exerciseLabel": "Pinch Harmonic Solo Phrasing"
+    },
+    {
+      "name": "Second Solo Key Shift (C Blues)",
+      "timeStamp": "2:10-3:15",
+      "technique": "Pinch Harmonics ('Squealies')",
+      "key": "C Minor / C Blues",
+      "description": "The song modulates up a minor third to C minor, elevating the solo to screaming, frenetic intensity",
+      "chords": [
+        "C5"
+      ],
+      "progression": "C5 vamp",
+      "notes": [
+        "Shift your lead box up from fret 5 (A) to fret 8 (C)",
+        "Use unison bends at the 11th fret of the B string and 8th fret of high E",
+        "Maintain aggressive right-hand attack for continuous harmonic squeals"
+      ],
+      "alphaTab": ":8 8.1 :8 11.2 :8 8.2 :8 10.3 | :8 8.3 :8 10.3 :4 10.4 | :8 8.2 :8 11.2 :4 8.1 | :2 11.2 :2 r |",
+      "exerciseLabel": "C Minor Transposed Solo Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1959 Gibson Les Paul Standard ('Pearly Gates') or humbucker-equipped electric",
+      "alternatives": [
+        "Gibson Les Paul Traditional",
+        "Fender Stratocaster with bridge humbucker"
+      ],
+      "pickup": "Bridge humbucker (Seymour Duncan Pearly Gates or vintage PAF) for razor-sharp pinch harmonics"
+    },
+    "amp": {
+      "recommended": "1968 Marshall 100W Super Lead Plexi or Rio Grande boutique tube head",
+      "alternatives": [
+        "Marshall DSL40CR",
+        "Fender Tweed Bassman"
+      ],
+      "settings": {
+        "gain": "7",
+        "treble": "7",
+        "middle": "8",
+        "bass": "6",
+        "presence": "7"
+      }
+    },
+    "effects": {
+      "distortion": "Marshall amp overdrive boosted with Dallas Arbiter Fuzz Face or vintage treble booster",
+      "reverb": "Subtle room slapback reverb",
+      "other": "Maestro Echoplex EP-3 tape delay for subtle fattening"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "A5 Boogie Riff & Basic Shuffle Timing",
+      "steps": [
+        "Learn open A5, C5, and D5 two-finger power chords",
+        "Practice the steady eighth-note boogie rhythm at 120 BPM",
+        "Focus on smooth palm muting across the low strings",
+        "Coordinate your hand to stop notes cleanly with right-hand chops"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the intro rhythm cleanly in time without rushing"
+    },
+    "intermediate": {
+      "title": "Speeding Up to 162 BPM & The Main Crunch",
+      "steps": [
+        "Build endurance to play the shuffle effortlessly at full tempo (162 BPM)",
+        "Lock in with the drum shuffle snare hits on beats 2 and 4",
+        "Master the transition between the clean intro and distorted band entrance",
+        "Learn the basic A minor pentatonic solo licks in the 5th position"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Perform the entire rhythm guitar track from start to finish"
+    },
+    "advanced": {
+      "title": "Mastering Pinch Harmonics & Both Solos",
+      "steps": [
+        "Develop 100% consistent pinch harmonic technique using thumb graze and pick angle",
+        "Master the rapid finger vibrato needed to sustain squealing overtones",
+        "Transcribe and perform Solo 1 in A minor and Solo 2 in C minor",
+        "Incorporate pickup selector flicking and volume dynamics like Billy Gibbons"
+      ],
+      "timeEstimate": "4-5 weeks",
+      "goals": "Nail both fiery guitar solos note-for-note with authentic Texas attitude"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Tush",
+        "link": "/lessons/songs/song-analysis/tush",
+        "similarity": "Classic 12-bar Texas blues shuffle with high-energy slide and pentatonic solos"
+      },
+      {
+        "title": "Sharp Dressed Man",
+        "link": "/lessons/songs/song-analysis/sharp-dressed-man",
+        "similarity": "Driving blues-rock groove featuring signature Billy Gibbons pinch harmonics"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Pride and Joy",
+        "artist": "Stevie Ray Vaughan",
+        "technique": "Texas blues shuffle rhythm and blistering pentatonic solo phrasing",
+        "link": "/lessons/songs/song-analysis/pride-and-joy"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "technique": "Crisp power chord rhythm stabs with open string blues turnaround fills",
+        "link": "/lessons/songs/song-analysis/back-in-black"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing with a straight rock rhythm instead of a relaxed swing shuffle groove",
+      "Holding the pick too loosely, preventing the thumb from grazing the string for pinch harmonics",
+      "Over-muting the open A string, making the boogie groove sound dead and choked",
+      "Losing pitch accuracy when modulating up to C minor during the second solo"
+    ],
+    "practiceRoutine": [
+      "10 mins: Slow boogie shuffle practice with metronome at 110 BPM, focusing on swing pocket",
+      "15 mins: Dedicated pinch harmonic drills on the 7th fret of the G and D strings",
+      "15 mins: Practicing Solo 1 phrasing in A blues and Solo 2 in C blues",
+      "10 mins: Playing along with the original track to match Billy Gibbons' greasy Texas groove"
+    ],
+    "focusAreas": [
+      "Pocket timing on the fast 162 BPM shuffle",
+      "Pinch harmonic consistency and wide vibrato execution",
+      "Smooth dynamic transition between clean intro and distorted groove",
+      "Seamless key change navigation between A minor and C minor"
+    ],
+    "metronomeWork": [
+      "Set metronome to 81 BPM (half-time click on 2 and 4) to test internal swing feel",
+      "Increase to full speed 162 BPM gradually in 6 BPM increments",
+      "Isolate the transition bar between intro and full band at 140 BPM"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-09-24",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1970s",
+    "subGenre": "Texas Blues Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals"
+    ],
+    "tags": [
+      "classic-rock",
+      "blues",
+      "palm-muting",
+      "bending",
+      "lead-guitar",
+      "rhythm-guitar",
+      "electric-guitar",
+      "song-analysis"
+    ],
+    "learningValue": "The undisputed masterclass in Texas boogie shuffle groove, palm muting, and signature pinch harmonic technique.",
+    "iconicRiff": true,
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

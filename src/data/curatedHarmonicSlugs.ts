@@ -47,6 +47,10 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'killing-in-the-name',
   'the-trooper',
   'texas-flood',
+  'voodoo-child',
+  'la-grange',
+  'mr-crowley',
+  'fade-to-black',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

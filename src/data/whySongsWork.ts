@@ -1756,6 +1756,125 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'voodoo-child': {
+    slug: 'voodoo-child',
+    songTitle: 'Voodoo Child (Slight Return)',
+    artist: 'Jimi Hendrix',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues & Rock Hybrids',
+    coreSecret: 'The Dissonant E7#9 Augmented-Ninth Chord Over a Thundering Low E Pedal Drone',
+    emotionalHook: 'The raw sonic power of Voodoo Child comes from the tension between the major third (G#) and augmented ninth (G natural) sounding simultaneously within the E7#9 chord, clashing fiercely against the hypnotic low E pedal point before releasing into crying blues scale bends.',
+    romanProgression: 'I7#9 - bIII - IV - I7#9',
+    chords: ['E7#9', 'G', 'A', 'E7'],
+    progressionExplanation: [
+      'E7#9 (I7#9): The definitive Hendrix chord featuring both major and minor tonal qualities simultaneously.',
+      'G (bIII): Borrowed modal step from E Aeolian providing a punchy blues turnaround lift.',
+      'A (IV): Subdominant resolution sliding smoothly back down into the open E pedal point.',
+      'E7 (I7): Low E open bass drone maintaining continuous harmonic resonance under flying solos.',
+    ],
+    voiceLeadingInsights: [
+      'The #9 (G natural) sits one half-step below the major 3rd (G#), creating an internal semitone friction that fuels the blues-rock explosion.',
+      'The G and A chords move in parallel motion on the lower strings, accentuating the pentatonic box shift.',
+      'Half-step down tuning lowers string tension, allowing wider vibrato and richer low-end speaker resonance.',
+    ],
+    guitarPerspective: 'Fretted with thumb-over-neck technique while rocking a Vox wah pedal. Rolling back the volume to 7 yields throaty chime, while turning it up to 10 pushes the Fuzz Face and Plexi into singing feedback.',
+    songwriterTakeaway: 'Anchor your riff with an unshakeable low open string pedal note and decorate it with a colorful dominant 7#9 extension. It creates an irresistible groove that sounds both ancient and modern.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Blues Scale', slug: 'blues', description: 'The source of weeping vocal bends and blue note tension.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundational soloing box across the 12th position.' },
+        { name: 'E Mixolydian Mode', slug: 'mixolydian', description: 'Supplies sweet major third and sixth intervals.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Dominant scale framework for dominant 7th chords.' },
+      ],
+      chords: [
+        { name: 'Dominant Ninth Chords', slug: 'dominant-ninth', description: 'The Hendrix chord (7#9) structure and fingerings.' },
+        { name: 'Power Chords', slug: 'power', description: 'Punchy transition power chords for rock weight.' },
+      ],
+    },
+  },
+
+  'la-grange': {
+    slug: 'la-grange',
+    songTitle: 'La Grange',
+    artist: 'ZZ Top',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Dorian Major Sixth Inflection Combined with a Minor Third Key Modulation',
+    emotionalHook: 'Billy Gibbons transforms a classic John Lee Hooker boogie shuffle into a hard rock anthem by highlighting the Dorian natural 6th (F#) over the D chord, before jolting the listener by modulating Solo 2 up a minor third into C minor.',
+    romanProgression: 'i - bIII - IV - i (modulating to i in C)',
+    chords: ['A5', 'C5', 'D5', 'A5'],
+    progressionExplanation: [
+      'A5 (i): Driving pedal anchor pulsing on the open A string with syncopated swing.',
+      'C5 (bIII): Borrowed step giving the shuffle its characteristic forward bounce.',
+      'D5 (IV): The Dorian highlight chord containing the natural F# note.',
+      'Key Shift to C: Sudden minor third jump up to C minor, intensifying lead guitar aggression.',
+    ],
+    voiceLeadingInsights: [
+      'Open A string pedal tone acts as an unyielding rhythmic anchor throughout the verses.',
+      'Pinch harmonics emphasize upper overtone nodes (5th, 7th, and 9th harmonics) across the G and D strings.',
+      'Modulating up 3 semitones from A to C creates an explosive boost in perceived volume and urgency.',
+    ],
+    guitarPerspective: 'Use bridge humbucker with strong midrange boost. Graze the pick-hand thumb against the string simultaneously with the pick stroke to squeal pinch harmonics on demand.',
+    songwriterTakeaway: 'When a one-key boogie riff threatens to become repetitive, modulate up a minor third for the guitar solo. It instantly re-energizes the track without sacrificing blues coherence.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'Foundational scale for the rhythm shuffle chords and primary solo riffs.' },
+        { name: 'A Blues Scale', slug: 'blues', description: 'Infuses stinging grit and pinch harmonic squeals with the flat-5.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The modal color scale adding natural 6th swing.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power', description: 'Two-finger movable rock power chords.' },
+      ],
+    },
+  },
+
+  'mr-crowley': {
+    slug: 'mr-crowley',
+    songTitle: 'Mr. Crowley',
+    artist: 'Ozzy Osbourne',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'Baroque Descending Cycle-of-Fifths with a Dramatic Harmonic Minor Dominant Cadence',
+    emotionalHook: 'Randy Rhoads fused European classical counterpoint with heavy metal thunder. Over a descending circle progression (Dm - Bb - C - Dm - Bb - Gm - A), Randy replaces the natural minor v (Am) with an ominous major V (A), unleashing the exotic C# leading tone of D Harmonic Minor.',
+    romanProgression: 'i - VI - VII - i - VI - iv - V',
+    chords: ['Dm', 'Bb', 'C', 'Dm', 'Bb', 'Gm', 'A'],
+    progressionExplanation: [
+      'Dm (i): Solemn, gothic minor tonic key center.',
+      'Bb (VI): Expansive submediant major chord providing grandeur.',
+      'C (VII): Subtonic stepping chord linking Bb back to Dm.',
+      'Gm (iv): Predominant minor chord setting up the harmonic turnaround.',
+      'A (V): The classical secret: major dominant chord borrowed from D Harmonic Minor containing the C# leading tone.',
+    ],
+    voiceLeadingInsights: [
+      'The progression moves through diatonic steps with smooth stepwise voice leading.',
+      'The C# in the A major chord resolves upwards by half-step to the D root note with classical inevitability.',
+      'Solo arpeggios trace triad inversions cleanly along the top three strings rather than standard pentatonic boxes.',
+    ],
+    guitarPerspective: 'Played with high-gain Marshall Plexi boosted by an MXR Distortion+. Focus on alternate picking precision and light sweeping across the top strings for triad arpeggios.',
+    songwriterTakeaway: 'Elevate your metal progressions by borrowing the major V chord from harmonic minor. It immediately injects classical drama and makes lead guitar passages sound sophisticated and timeless.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Harmonic Minor', slug: 'harmonic-minor', description: 'Source of the exotic C# leading tone over the A major chord.' },
+        { name: 'D Natural Minor', slug: 'minor', description: 'Diatonic scale driving the verse and intro melody.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'Bluesy rock solo hooks in the middle of classical runs.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor modal framework of D minor.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Dm and Gm minor triad chord shapes.' },
+        { name: 'Major Chords', slug: 'major', description: 'Bb and C major chords providing harmonic lift.' },
+      ],
+    },
+  },
 };
 
 /**

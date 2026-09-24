@@ -92,7 +92,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticEntries, ...dynamicEntries];
   const tagEntries: MetadataRoute.Sitemap = TAG_TAXONOMY.map((tag) => ({
     url: `${SITE_CONFIG.baseUrl}/lessons/tags/${tag.slug}/`,
     lastModified: new Date(),
