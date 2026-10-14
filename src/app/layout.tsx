@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import LeadMagnetModal from "@/components/Revenue/LeadMagnetModal";
+import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 import { REVENUE_CONFIG } from "@/lib/revenueConfig";
 
@@ -94,6 +95,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <GoogleAnalytics />
         <CookieConsent />
         <LeadMagnetModal />
       </body>
