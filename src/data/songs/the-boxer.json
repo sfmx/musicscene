@@ -1,0 +1,342 @@
+{
+  "songInfo": {
+    "title": "The Boxer",
+    "artist": "Simon & Garfunkel",
+    "album": "Bridge over Troubled Water",
+    "released": "1969",
+    "genre": "Folk Rock",
+    "tempo": "92 BPM",
+    "duration": "5:08",
+    "key": "C Major",
+    "tuning": "Standard (EADGBE) with Capo 2"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major (C major open shapes with Capo 2)",
+      "scalesUsed": [
+        {
+          "scale": "C major (sounds D major with Capo 2)",
+          "notes": "C - D - E - F - G - A - B - C",
+          "application": "Underpins Paul Simon's rolling acoustic fingerpicking patterns"
+        },
+        {
+          "scale": "C major pentatonic",
+          "notes": "C - D - E - G - A",
+          "application": "Shapes the soaring 'Lie-la-lie' choral hook"
+        }
+      ],
+      "modalCharacter": "Classic American diatonic folk major storytelling with rolling Nashville-style alternating basslines",
+      "keySignature": "No sharps or flats (relative to capo)",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C",
+          "Am",
+          "G",
+          "C"
+        ],
+        "progression": "I - vi - V - I",
+        "progressionDescription": "Paul Simon's definitive folk fingerpicking progression, featuring moving bass walking lines between open cowboy chords.",
+        "description": "Paul Simon's definitive folk fingerpicking progression, featuring moving bass walking lines between open cowboy chords."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Fingerpicking Motif",
+          "progression": "C - C - C - C",
+          "romanNumerals": "I - I - I - I",
+          "description": "Rolling Travis-style fingerpicking pattern with low bass pickups"
+        },
+        {
+          "section": "Verse",
+          "progression": "C - Am - G - C - Am - G - F - C",
+          "romanNumerals": "I - vi - V - I - vi - V - IV - I",
+          "description": "Storytelling verses recounting the struggles of a poor boy in New York City"
+        },
+        {
+          "section": "Chorus ('Lie-la-lie')",
+          "progression": "Am - Em - Am - G - C",
+          "romanNumerals": "vi - iii - vi - V - I",
+          "description": "The massive singalong chorus punctuated by dramatic explosive snare crashes"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "I - vi - V - I",
+          "romanNumerals": "Scale Practice",
+          "description": "C major scale study highlighting walking bass note transitions"
+        }
+      ],
+      "harmonicFunction": [
+        "C (I) - Tonic chord establishing warmth and grounded folk stability",
+        "Am (vi) - Submediant minor chord conveying poverty, loneliness, and emotional depth",
+        "G (V) - Dominant chord propelling the phrase forward with gentle tension",
+        "F (IV) - Subdominant chord introducing hope and resolution"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Rolling Folk Alternating Bass Pattern",
+      "description": "Paul Simon's signature fingerstyle groove: alternating thumb between 5th and 4th strings on C, punctuated by syncopated finger plucks on strings 3, 2, and 1",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C: X-3-2-0-1-0",
+          "Am: X-0-2-2-1-0",
+          "G: 3-2-0-0-0-3",
+          "Em: 0-2-2-0-0-0",
+          "F: 1-3-3-2-1-1 or Fmaj7 (X-X-3-2-1-0)"
+        ],
+        "sequence": [
+          "Affix capo securely to the 2nd fret",
+          "Pinch string 5 (bass) and string 2 on beat 1",
+          "Follow with index on string 3, thumb on string 4, and middle on string 1",
+          "Insert walking bass notes on beats 4-and to connect chords smoothly"
+        ],
+        "tips": [
+          "Keep the tempo steady at 92 BPM — do not speed up during the chorus",
+          "Use Fmaj7 (X-X-3-2-1-0) for a lighter, folkier acoustic texture if barre F is tough",
+          "Listen closely to the subtle bass hammer-on from open 4th string to 2nd fret"
+        ],
+        "chords": [
+          "C",
+          "Am",
+          "G",
+          "F",
+          "Em"
+        ],
+        "progression": "C - Am - G - C"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:15",
+      "technique": "Rolling Folk Alternating Bass Pattern",
+      "key": "C Major",
+      "description": "Paul Simon's clean acoustic fingerpicking establishes the song's rolling momentum.",
+      "chords": [
+        "C"
+      ],
+      "progression": "C - C - C - C",
+      "notes": [
+        "Capo 2nd fret (sounds in key of D)",
+        "Rolling alternating bass on strings 5 and 4",
+        "Subtle hammer-on on the 4th string 2nd fret"
+      ],
+      "alphaTab": ":8 3.5 1.2 2.4 0.3 :8 3.5 0.1 2.4 1.2 | :8 3.5 1.2 2.4 0.3 :8 3.5 0.1 2.4 1.2 |",
+      "exerciseLabel": "Rolling Intro Fingerpicking"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:15-1:10",
+      "technique": "Rolling Folk Alternating Bass Pattern",
+      "key": "C Major",
+      "description": "'I am just a poor boy, though my story's seldom told...' storytelling over steady fingerpicking.",
+      "chords": [
+        "C",
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "C - Am - G - C - Am - G - F - C",
+      "notes": [
+        "Smooth transition from C to Am",
+        "Bass walks down to G on string 6",
+        "Gentle resolution into F and C"
+      ],
+      "alphaTab": ":8 3.5 1.2 2.4 0.3 :8 0.5 1.2 2.4 2.3 | :8 3.6 0.2 0.4 0.3 :8 3.5 1.2 2.4 0.3 | :8 0.5 1.2 2.4 2.3 :8 3.6 0.2 0.4 0.3 | :8 1.6 1.2 3.5 2.3 :8 3.5 1.2 2.4 0.3 |",
+      "exerciseLabel": "Storytelling Verse Pattern"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:10-1:45",
+      "technique": "Rolling Folk Alternating Bass Pattern",
+      "key": "A Minor / C Major",
+      "description": "The unforgettable 'Lie-la-lie' chorus hook with soaring vocal harmonies.",
+      "chords": [
+        "Am",
+        "Em",
+        "G",
+        "C"
+      ],
+      "progression": "Am - Em - Am - G - C",
+      "notes": [
+        "Shift to minor submediant Am and mediant Em",
+        "Dynamic builds to accompany the massive vocal hook",
+        "Resolves back to open C major"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Lie-la-lie Chorus Hook"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "C Major Walking Bass Study",
+      "key": "C Major",
+      "description": "Scale exercise focusing on connecting bass notes (C - B - A - G) between chords.",
+      "chords": [
+        "C",
+        "Am",
+        "G"
+      ],
+      "progression": "I - vi - V - I",
+      "notes": [
+        "Practice walking lines on the 5th and 6th strings",
+        "Keep alternating thumb rhythm steady",
+        "Hear the bass melodies driving the song"
+      ],
+      "alphaTab": ":4 3.5 2.5 0.5 3.6 | :4 1.6 3.6 0.5 2.5 | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Walking Bassline Study"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Guild F-30 or Martin 00-18 Acoustic Guitar",
+      "alternatives": [
+        "Yamaha FS800",
+        "Taylor 214ce",
+        "Gibson LG-2"
+      ],
+      "pickup": "Acoustic condenser microphone (Neumann U87)"
+    },
+    "amp": {
+      "recommended": "Direct to recording console or clean acoustic PA",
+      "alternatives": [
+        "AER Compact 60",
+        "Fishman Loudbox"
+      ],
+      "settings": {
+        "gain": "3 (clean acoustic headroom)",
+        "treble": "6 (bright sparkle on steel strings)",
+        "middle": "5 (warm folk body)",
+        "bass": "5 (clean bass note definition)",
+        "presence": "5 (sweet finger attack)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Large hall reverb on chorus crashes",
+      "other": "High-quality acoustic capo placed on 2nd fret"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the Capo & Open Chords",
+      "steps": [
+        "Place capo on 2nd fret and check string tuning",
+        "Practice open C, Am, G, and Em chord shapes",
+        "Strum through the verse progression at 80 BPM",
+        "Sing along with the 'Lie-la-lie' chorus"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Master the Fingerpicking Pattern",
+      "steps": [
+        "Learn Paul Simon's alternating thumb pattern on C and Am",
+        "Incorporate the walking bass transition from C down to G",
+        "Play the full verse and chorus at 92 BPM"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Performance & Dual Vocal Phrasing",
+      "steps": [
+        "Incorporate the intricate hammer-ons on the D string",
+        "Lead a communal campfire singalong with dynamic build",
+        "Deliver the emotional storytelling nuance of the original recording"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Capo placed crookedly causing fret buzz on strings 1 or 6",
+      "Rushing the fingerpicking pattern during the chorus",
+      "Stopping the alternating thumb when changing chords"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Capo tuning check and finger warm-up",
+      "5 minutes: Isolated alternating thumb drill on C chord",
+      "5 minutes: Walking bassline transition drill",
+      "5 minutes: Chorus singing and playing integration",
+      "5 minutes: Full song playthrough at 92 BPM"
+    ],
+    "focusAreas": [
+      "Precise capo placement behind 2nd fret",
+      "Continuous alternating thumb momentum",
+      "Expressive storytelling vocal delivery"
+    ],
+    "metronomeWork": [
+      "Practice at 75 BPM to master the thumb-finger coordination",
+      "Advance to 92 BPM once transitions are fluid",
+      "Set metronome clicks on beats 2 and 4 for authentic folk sway"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "The Sound of Silence",
+        "difficulty": "Beginner",
+        "similarity": "Iconic acoustic fingerstyle standard in D minor / C major"
+      },
+      {
+        "title": "Homeward Bound",
+        "difficulty": "Intermediate",
+        "similarity": "Rolling folk fingerpicking classic celebrating life on the road"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
+        "difficulty": "Advanced",
+        "similarity": "Travis picking masterwork in C major / A minor"
+      },
+      {
+        "title": "Take Me Home, Country Roads",
+        "artist": "John Denver",
+        "difficulty": "Beginner",
+        "similarity": "Universal singalong folk standard utilizing Capo 2"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Fast Car",
+        "artist": "Tracy Chapman",
+        "difficulty": "Intermediate",
+        "similarity": "Famous Capo 2 acoustic fingerstyle riff with moving intervals"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "fingerpicking",
+      "folk-rock",
+      "acoustic-guitar",
+      "intermediate",
+      "capo",
+      "singalong",
+      "campfire"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

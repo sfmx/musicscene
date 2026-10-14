@@ -1,0 +1,345 @@
+{
+  "songInfo": {
+    "title": "Fire and Rain",
+    "artist": "James Taylor",
+    "album": "Sweet Baby James",
+    "released": "1970",
+    "genre": "Folk",
+    "tempo": "76 BPM",
+    "duration": "3:20",
+    "key": "C Major",
+    "tuning": "Standard (EADGBE) with Capo 3"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C major (A major shapes with Capo 3)",
+      "scalesUsed": [
+        {
+          "scale": "A major (sounds C major with Capo 3)",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "Underpins James Taylor's fingerstyle voicings and suspended embellishments"
+        },
+        {
+          "scale": "A Mixolydian",
+          "notes": "A - B - C# - D - E - F# - G - A",
+          "application": "Provides the bluesy flat-seventh G note used in signature acoustic fills"
+        }
+      ],
+      "modalCharacter": "Soulful acoustic folk utilizing A-shape open embellishments (add9, sus4) over a tender, intimate groove",
+      "keySignature": "3 sharps (relative to capo)",
+      "relativeMinor": "F# minor is the relative minor of A major (sounds A minor)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "Em7",
+          "D",
+          "A"
+        ],
+        "progression": "I - v7 - IV - I",
+        "progressionDescription": "James Taylor's innovative modal folk progression, pairing tonic A major with a melancholic minor v7 (Em7) before resolving warmly through D to A.",
+        "description": "James Taylor's innovative modal folk progression, pairing tonic A major with a melancholic minor v7 (Em7) before resolving warmly through D to A."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Fingerpicking Motif",
+          "progression": "A - Em7 - D - A",
+          "romanNumerals": "I - v7 - IV - I",
+          "description": "Signature fingerstyle intro with delicate hammer-ons and suspended color tones"
+        },
+        {
+          "section": "Verse",
+          "progression": "A - Em7 - D - A - A - Em7 - D - A",
+          "romanNumerals": "I - v7 - IV - I - I - v7 - IV - I",
+          "description": "Intimate autobiographical verses accompanied by warm acoustic clawhammer picking"
+        },
+        {
+          "section": "Chorus",
+          "progression": "D - Bm - A - Em7 - G - D - A",
+          "romanNumerals": "IV - ii - I - v7 - bVII - IV - I",
+          "description": "The timeless chorus: 'I've seen fire and I've seen rain...'"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "I - v7 - IV - I",
+          "romanNumerals": "Scale Practice",
+          "description": "A major and Mixolydian fingerstyle run with hammer-ons on strings 3 and 2"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic chord enriched with open 2nd string (Asus2) and 3rd fret (A7) hammer-ons",
+        "Em7 (v7) - Minor fifth chord creating a haunting, blues-inflected bittersweet emotion",
+        "D (IV) - Subdominant chord providing melodic warmth and redemption",
+        "G (bVII) - Borrowed Mixolydian chord in the chorus adding dramatic emotional weight"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "James Taylor Signature Clawhammer Fingerstyle",
+      "description": "Using the flesh of the thumb for bass notes while curling index and middle fingers upward to pluck treble strings, embellished with rapid hammer-ons from open strings to chord tones",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0 (played with hammer-ons)",
+          "Em7: 0-2-2-0-3-0",
+          "D: X-X-0-2-3-2",
+          "Bm: X-2-4-4-3-2",
+          "G: 3-2-0-0-0-3"
+        ],
+        "sequence": [
+          "Place capo on 3rd fret and check tuning",
+          "Pluck open 5th string bass note with thumb",
+          "Hammer on 2nd finger onto 3rd string 2nd fret and 3rd finger onto 2nd string 2nd fret",
+          "Slide into open Em7 and resolve through ringing D major"
+        ],
+        "tips": [
+          "Use the flesh of your fingers rather than long nails for Taylor's trademark woody, round acoustic tone",
+          "Keep the tempo relaxed at 76 BPM — never rush the conversational timing",
+          "Let open high E and B strings ring as drones throughout transitions"
+        ],
+        "chords": [
+          "A",
+          "Em7",
+          "D",
+          "Bm",
+          "G"
+        ],
+        "progression": "A - Em7 - D - A"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:18",
+      "technique": "James Taylor Signature Clawhammer Fingerstyle",
+      "key": "C Major (Capo 3 A shapes)",
+      "description": "The unmistakable acoustic intro featuring hammer-ons into open A and the haunting Em7 chord.",
+      "chords": [
+        "A",
+        "Em7",
+        "D",
+        "A"
+      ],
+      "progression": "A - Em7 - D - A",
+      "notes": [
+        "Capo 3rd fret (shapes relative to capo)",
+        "Hammer-on onto strings 3 and 2 over the open 5th string bass",
+        "Warm woody fingerstyle touch"
+      ],
+      "alphaTab": ":8 0.5 0.3 2.3 0.2 :8 2.2 0.1 0.6 3.2 | :8 0.4 2.3 3.2 2.1 :8 0.5 2.3 2.2 0.1 |",
+      "exerciseLabel": "Signature Fingerstyle Intro"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:18-0:58",
+      "technique": "James Taylor Signature Clawhammer Fingerstyle",
+      "key": "C Major (Capo 3 A shapes)",
+      "description": "Deeply personal, intimate storytelling supported by subtle fingerpicked acoustic accompaniment.",
+      "chords": [
+        "A",
+        "Em7",
+        "D",
+        "A"
+      ],
+      "progression": "A - Em7 - D - A - A - Em7 - D - A",
+      "notes": [
+        "Gentle thumb brush on the downbeat",
+        "Listen to the subtle minor v7 (Em7) chord color",
+        "Maintain relaxed 76 BPM ballad flow"
+      ],
+      "alphaTab": ":8 0.5 2.3 2.2 0.1 :8 0.6 0.4 0.3 3.2 | :8 0.4 2.3 3.2 2.1 :8 0.5 2.3 2.2 0.1 | :8 0.5 2.3 2.2 0.1 :8 0.6 0.4 0.3 3.2 | :8 0.4 2.3 3.2 2.1 :8 0.5 2.3 2.2 0.1 |",
+      "exerciseLabel": "Intimate Verse Fingerpicking"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:58-1:35",
+      "technique": "James Taylor Signature Clawhammer Fingerstyle",
+      "key": "C Major (Capo 3 A shapes)",
+      "description": "The timeless chorus opens up with rich D to Bm to A movement and soaring vocal warmth.",
+      "chords": [
+        "D",
+        "Bm",
+        "A",
+        "Em7",
+        "G"
+      ],
+      "progression": "D - Bm - A - Em7 - G - D - A",
+      "notes": [
+        "Fuller dynamic touch on the D and Bm chords",
+        "Sing the iconic chorus melody with soulful sincerity",
+        "Clean resolution back to open A"
+      ],
+      "alphaTab": ":2 (0.4 2.3 3.2 2.1) :2 (2.5 4.4 4.3 3.2 2.1) | :2 (0.5 2.3 2.2 0.1) :2 (0.6 2.5 2.4 0.3 3.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.5 2.3 2.2 0.1) |",
+      "exerciseLabel": "Fire and Rain Chorus"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "A Major & Mixolydian Embellishment Run",
+      "key": "C Major (Capo 3 A shapes)",
+      "description": "Scale exercise highlighting the hammer-on embellishments and flat-7th color tones.",
+      "chords": [
+        "A",
+        "Em7",
+        "D"
+      ],
+      "progression": "I - v7 - IV",
+      "notes": [
+        "Practice hammer-on from open G string to 2nd fret",
+        "Notice how the open G note gives the Mixolydian color",
+        "Play with fluid, tender dynamic touch"
+      ],
+      "alphaTab": ":8 0.5 2.5 4.5 0.4 :8 2.4 0.3 2.3 0.2 | :8 2.2 0.1 2.1 3.2 :8 2.2 0.2 2.3 0.3 | :1 (0.5 2.3 2.2 0.1) |",
+      "exerciseLabel": "Hammer-on Scale Embellishments"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Olson SJ or Martin D-28 Acoustic Guitar",
+      "alternatives": [
+        "Gibson J-45",
+        "Taylor 514ce",
+        "Yamaha FG800"
+      ],
+      "pickup": "Acoustic condenser microphone (Neumann KM84 or U87)"
+    },
+    "amp": {
+      "recommended": "Clean studio console or Fishman Loudbox",
+      "alternatives": [
+        "AER Compact 60",
+        "Fender Acoustic 100"
+      ],
+      "settings": {
+        "gain": "3 (warm, round woody tone)",
+        "treble": "5 (smooth top end without harshness)",
+        "middle": "6 (rich vocal acoustic warmth)",
+        "bass": "5 (deep, gentle thumb foundation)",
+        "presence": "4 (soft, organic finger attack)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Warm plate reverb",
+      "other": "High-quality acoustic capo placed at 3rd fret"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master Capo 3 Chords",
+      "steps": [
+        "Place capo on 3rd fret and tune carefully",
+        "Learn open A, Em7, D, and Bm chord shapes",
+        "Strum through the verse progression at 65 BPM",
+        "Bring up to album tempo of 76 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Incorporate James Taylor's Fingerstyle",
+      "steps": [
+        "Practice the signature hammer-on into open A",
+        "Master the clawhammer thumb-and-fingers coordination",
+        "Work on the chorus transition D → Bm → A → Em7"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Authentic Acoustic Interpretation",
+      "steps": [
+        "Nail James Taylor's subtle conversational timing and rubato",
+        "Perform complete vocal and acoustic accompaniment",
+        "Deliver an intimate, deeply moving performance"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing with rigid fingerpicks — Taylor's tone requires bare finger flesh",
+      "Rushing the 76 BPM tempo — ballad spacing gives the lyrics room to breathe",
+      "Barring the A chord flatly instead of using open string hammer-ons"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Capo 3 tuning and finger warm-up",
+      "5 minutes: Signature A chord hammer-on drill",
+      "5 minutes: Verse fingerpicking cycle at 76 BPM",
+      "5 minutes: Chorus chord transitions (D → Bm → A)",
+      "5 minutes: Full song playthrough"
+    ],
+    "focusAreas": [
+      "Bare finger flesh attack for warm woody tone",
+      "Smooth hammer-on coordination",
+      "Expressive, intimate phrasing"
+    ],
+    "metronomeWork": [
+      "Practice at 65 BPM with metronome clicks on all beats",
+      "Advance to 76 BPM once thumb independence is solid",
+      "Practice with clicks on beats 2 and 4 to develop relaxed folk sway"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "You've Got a Friend",
+        "difficulty": "Intermediate",
+        "similarity": "Carole King classic arranged with James Taylor's signature fingerstyle"
+      },
+      {
+        "title": "Carolina in My Mind",
+        "difficulty": "Intermediate",
+        "similarity": "Delicate fingerstyle folk masterpiece in D major"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "The Boxer",
+        "artist": "Simon & Garfunkel",
+        "difficulty": "Intermediate",
+        "similarity": "Essential American folk fingerpicking with moving basslines"
+      },
+      {
+        "title": "Heart of Gold",
+        "artist": "Neil Young",
+        "difficulty": "Beginner",
+        "similarity": "Heartfelt acoustic folk classic driven by open chord strumming"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Tears in Heaven",
+        "artist": "Eric Clapton",
+        "difficulty": "Intermediate",
+        "similarity": "Intricate acoustic ballad featuring nuanced fingerstyle and bass motion"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "fingerpicking",
+      "folk",
+      "acoustic-guitar",
+      "intermediate",
+      "capo",
+      "ballad"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

@@ -144,6 +144,20 @@ import patienceData from '@/data/songs/patience.json';
 import redemptionSongData from '@/data/songs/redemption-song.json';
 import americanPieData from '@/data/songs/american-pie.json';
 import betterBeHomeSoonData from '@/data/songs/better-be-home-soon.json';
+import throwYourArmsAroundMeData from '@/data/songs/throw-your-arms-around-me.json';
+import flameTreesData from '@/data/songs/flame-trees.json';
+import myHappinessData from '@/data/songs/my-happiness.json';
+import solidRockData from '@/data/songs/solid-rock.json';
+import dustInTheWindData from '@/data/songs/dust-in-the-wind.json';
+import theBoxerData from '@/data/songs/the-boxer.json';
+import fireAndRainData from '@/data/songs/fire-and-rain.json';
+import angieData from '@/data/songs/angie.json';
+import driveData from '@/data/songs/drive.json';
+import aboutAGirlData from '@/data/songs/about-a-girl.json';
+import plushData from '@/data/songs/plush.json';
+import yellowData from '@/data/songs/yellow.json';
+import overTheHillsAndFarAwayData from '@/data/songs/over-the-hills-and-far-away.json';
+import spaceOddityData from '@/data/songs/space-oddity.json';
 
 export interface SongData {
   songInfo: {
@@ -500,6 +514,20 @@ const songDatabase: Record<string, SongData> = {
   'redemption-song': redemptionSongData as SongData,
   'american-pie': americanPieData as SongData,
   'better-be-home-soon': betterBeHomeSoonData as SongData,
+  'throw-your-arms-around-me': throwYourArmsAroundMeData as SongData,
+  'flame-trees': flameTreesData as SongData,
+  'my-happiness': myHappinessData as SongData,
+  'solid-rock': solidRockData as SongData,
+  'dust-in-the-wind': dustInTheWindData as SongData,
+  'the-boxer': theBoxerData as SongData,
+  'fire-and-rain': fireAndRainData as SongData,
+  'angie': angieData as SongData,
+  'drive': driveData as SongData,
+  'about-a-girl': aboutAGirlData as SongData,
+  'plush': plushData as SongData,
+  'yellow': yellowData as SongData,
+  'over-the-hills-and-far-away': overTheHillsAndFarAwayData as SongData,
+  'space-oddity': spaceOddityData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

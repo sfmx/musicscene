@@ -1,0 +1,352 @@
+{
+  "songInfo": {
+    "title": "Space Oddity",
+    "artist": "David Bowie",
+    "album": "David Bowie",
+    "released": "1969",
+    "genre": "Psychedelic Rock",
+    "tempo": "68 BPM",
+    "duration": "5:15",
+    "key": "C Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C major",
+      "scalesUsed": [
+        {
+          "scale": "C major",
+          "notes": "C - D - E - F - G - A - B - C",
+          "application": "Underpins the foundational acoustic chords (C, Em, Am, Fmaj7)"
+        },
+        {
+          "scale": "C natural minor / Parallel minor",
+          "notes": "C - D - Eb - F - G - Ab - Bb - C",
+          "application": "Introduces the haunting borrowed Minor iv (F minor) chord creating zero-gravity weightlessness"
+        },
+        {
+          "scale": "E major / Harmonic minor",
+          "notes": "E - F# - G# - A - B - C - D - E",
+          "application": "Provides the leading tone G# in the prominent E7 secondary dominant chord"
+        }
+      ],
+      "modalCharacter": "Masterpiece of harmonic storytelling: contrasting bright diatonic C major with minor iv modal mixture (Fm) and secondary dominants (E7) to evoke cosmic isolation",
+      "keySignature": "No sharps or flats",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C",
+          "E7",
+          "F",
+          "Fm",
+          "C"
+        ],
+        "progression": "I - V7/vi - IV - iv - I",
+        "progressionDescription": "David Bowie's genius harmonic sequence: moving from tonic C through secondary dominant E7 to subdominant F, which collapses into the borrowed Minor iv (Fm) before resolving home.",
+        "description": "David Bowie's genius harmonic sequence: moving from tonic C through secondary dominant E7 to subdominant F, which collapses into the borrowed Minor iv (Fm) before resolving home."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Countdown Motif",
+          "progression": "Fmaj7 - Em - Fmaj7 - Em",
+          "romanNumerals": "IVmaj7 - iii - IVmaj7 - iii",
+          "description": "12-string acoustic strumming oscillating gently between Fmaj7 and Em before the snare drum countdown"
+        },
+        {
+          "section": "Verse",
+          "progression": "C - Em - C - Em - Am - Am/G - D7/F#",
+          "romanNumerals": "I - iii - I - iii - vi - vi/V - V/V",
+          "description": "'Ground Control to Major Tom...' intimate acoustic verses with walking basslines"
+        },
+        {
+          "section": "Liftoff / Chorus Hook",
+          "progression": "C - E7 - F - Fm - C",
+          "romanNumerals": "I - V7/vi - IV - iv - I",
+          "description": "The zero-gravity liftoff: 'And I'm floating in a most peculiar way, and the stars look very different today...'"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "I - IV - iv - I",
+          "romanNumerals": "Scale Practice",
+          "description": "C major and parallel C minor scale run highlighting the A natural to Ab note change"
+        }
+      ],
+      "harmonicFunction": [
+        "C (I) - Tonic chord establishing warmth, humanity, and Earth",
+        "Em (iii) - Mediant minor chord imparting gentle atmospheric vastness",
+        "E7 (V7/vi) - Secondary dominant chord creating tension and ascending anticipation",
+        "F (IV) - Subdominant major chord providing bright emotional lift",
+        "Fm (iv) - Borrowed Minor iv modal interchange chord creating the famous zero-gravity floating sensation"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "12-String Acoustic Strumming & Minor iv Modal Shift",
+      "description": "Rhythmic 12-string or 6-string acoustic strumming with punchy snare-like accents on beats 2 and 4, transitioning smoothly from open Fmaj7 into full barre F minor",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Fmaj7: X-X-3-2-1-0",
+          "Em: 0-2-2-0-0-0",
+          "C: X-3-2-0-1-0",
+          "E7: 0-2-0-1-0-0",
+          "F: 1-3-3-2-1-1",
+          "Fm: 1-3-3-1-1-1",
+          "D7/F#: 2-X-0-2-1-2"
+        ],
+        "sequence": [
+          "Establish slow, measured 68 BPM acoustic tempo",
+          "Strum open Fmaj7 with a gentle brush, then resolve to open Em",
+          "In the chorus, move from open C into E7, then barre F at the 1st fret",
+          "Lift the 2nd finger on fret 2 to transform F into Fm (Minor iv)"
+        ],
+        "tips": [
+          "Ensure the 1st fret barre is clean so the Ab note on string 3 rings clearly on Fm",
+          "Do not rush the 68 BPM tempo — the cosmic drama needs patient spacing",
+          "Let the low open E string ring out on the Em countdown measures"
+        ],
+        "chords": [
+          "Fmaj7",
+          "Em",
+          "C",
+          "E7",
+          "F",
+          "Fm"
+        ],
+        "progression": "C - E7 - F - Fm - C"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "12-String Acoustic Strumming & Minor iv Modal Shift",
+      "key": "C Major",
+      "description": "Bowie's acoustic guitar sets the cosmic scene, alternating quietly between Fmaj7 and Em.",
+      "chords": [
+        "Fmaj7",
+        "Em"
+      ],
+      "progression": "Fmaj7 - Em - Fmaj7 - Em",
+      "notes": [
+        "Slow 68 BPM tempo with spacious feel",
+        "Let the open high E string ring on Fmaj7",
+        "Build dynamics into the military drum roll countdown"
+      ],
+      "alphaTab": ":2 (3.4 2.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.4 2.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Atmospheric Intro Oscillation"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:15",
+      "technique": "12-String Acoustic Strumming & Minor iv Modal Shift",
+      "key": "C Major",
+      "description": "'Ground Control to Major Tom...' intimate acoustic verses featuring descending bass motion.",
+      "chords": [
+        "C",
+        "Em",
+        "Am",
+        "D7/F#"
+      ],
+      "progression": "C - Em - C - Em - Am - Am/G - D7/F#",
+      "notes": [
+        "Clean chord transitions",
+        "Walking bassline on string 6 into D7/F#",
+        "Maintain steady 68 BPM rhythm"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (2.6 0.4 2.3 1.2 2.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Ground Control Storytelling Verse"
+    },
+    {
+      "name": "Liftoff / Chorus Hook",
+      "timeStamp": "1:15-1:55",
+      "technique": "12-String Acoustic Strumming & Minor iv Modal Shift",
+      "key": "C Major (Modal Mixture)",
+      "description": "The zero-gravity liftoff: shifting through E7 to F and the breathtaking borrowed Minor iv chord (Fm).",
+      "chords": [
+        "C",
+        "E7",
+        "F",
+        "Fm"
+      ],
+      "progression": "C - E7 - F - Fm - C",
+      "notes": [
+        "Listen to the dramatic shift from F major to F minor",
+        "The Ab note in Fm creates the zero-gravity sensation",
+        "Warm resolution home to open C major"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.6 2.5 0.4 1.3 0.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (1.6 3.5 3.4 1.3 1.2 1.1) | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Zero-Gravity Minor iv Liftoff"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "C Major & Minor iv Modal Scale Run",
+      "key": "C Major",
+      "description": "Scale exercise highlighting the A natural (F major) to Ab (F minor) modal mixture note.",
+      "chords": [
+        "C",
+        "F",
+        "Fm"
+      ],
+      "progression": "I - IV - iv - I",
+      "notes": [
+        "Notice how changing A to Ab on the 3rd string transforms the emotional color",
+        "Play with deliberate, expressive phrasing",
+        "Connect scale notes directly to open C and barre Fm shapes"
+      ],
+      "alphaTab": ":8 3.5 0.4 2.4 3.4 :8 0.3 2.3 1.3 2.3 | :8 1.2 3.2 0.1 1.1 :2 3.1 | :8 3.1 1.1 0.1 1.2 :8 1.3 0.3 2.4 3.5 | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Minor iv Modal Shift Drill"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Harptone or Gibson 12-String Acoustic Guitar",
+      "alternatives": [
+        "Martin D-28",
+        "Yamaha FG800",
+        "Taylor 150e 12-String"
+      ],
+      "pickup": "Studio condenser microphone (Neumann U67)"
+    },
+    "amp": {
+      "recommended": "Direct to studio mixing console with vintage tube preamp",
+      "alternatives": [
+        "AER Compact 60",
+        "Fender Twin Reverb"
+      ],
+      "settings": {
+        "gain": "3 (pure, uncompressed acoustic clarity)",
+        "treble": "6 (bright sparkle on 12-string octave strings)",
+        "middle": "5 (balanced body)",
+        "bass": "5 (warm acoustic low end)",
+        "presence": "6 (articulate pick definition)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "Tape echo on vocal and acoustic fills",
+      "reverb": "Large cosmic plate reverb",
+      "other": "Stylophone (for original analog lead synth melody)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the Intro & Verse Chords",
+      "steps": [
+        "Learn open Fmaj7 (X-X-3-2-1-0) and open Em",
+        "Practice the C, Em, Am, and D7/F# verse changes",
+        "Strum through the verse at 60 BPM",
+        "Increase tempo to 68 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Master the Chorus Minor iv Barre Chord",
+      "steps": [
+        "Learn 1st-fret F major barre (1-3-3-2-1-1) and F minor (1-3-3-1-1-1)",
+        "Practice the seamless lift of the 2nd finger from F to Fm",
+        "Play the full chorus progression: C → E7 → F → Fm → C"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Complete 12-String Cosmic Performance",
+      "steps": [
+        "Perform on a 12-string acoustic for authentic studio shimmer",
+        "Deliver David Bowie's theatrical, expressive vocal storytelling",
+        "Execute dynamic builds and dramatic countdown stops"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing F major instead of F minor on 'and the stars look very different' (Fm is the entire emotional hook!)",
+      "Rushing the countdown — 68 BPM is slow, theatrical, and atmospheric",
+      "Fretting the F minor barre chord weakly, muting the G string Ab note"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Open chord finger warm-up",
+      "5 minutes: Isolated F to Fm barre chord transition drill",
+      "5 minutes: Intro Fmaj7 to Em oscillation at 68 BPM",
+      "5 minutes: Chorus liftoff progression (C → E7 → F → Fm → C)",
+      "5 minutes: Full song playthrough"
+    ],
+    "focusAreas": [
+      "Clean 1st-fret barre for Fm",
+      "Theatrical 68 BPM ballad pacing",
+      "Dynamic separation between intimate verses and cosmic chorus swell"
+    ],
+    "metronomeWork": [
+      "Practice at 55 BPM while mastering the F to Fm finger lift",
+      "Advance to target 68 BPM once transitions are fluid",
+      "Set metronome on beats 2 and 4 to develop natural acoustic sway"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Heroes",
+        "difficulty": "Beginner",
+        "similarity": "Bowie's soaring rock masterpiece driven by hypnotic rhythm guitars"
+      },
+      {
+        "title": "Starman",
+        "difficulty": "Intermediate",
+        "similarity": "Glam rock classic featuring open acoustic chords and dramatic interval leaps"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "difficulty": "Beginner",
+        "similarity": "Famous rock ballad featuring the iconic Minor iv modal borrowing (C to Cm)"
+      },
+      {
+        "title": "Better Be Home Soon",
+        "artist": "Crowded House",
+        "difficulty": "Beginner",
+        "similarity": "Soulful acoustic classic utilizing modal mixture in the emotional bridge"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "difficulty": "Advanced",
+        "similarity": "Theatrical rock epic featuring sophisticated key modulations and operatic voice leading"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "open-chords",
+      "classic-rock",
+      "acoustic-guitar",
+      "intermediate",
+      "modal-mixture",
+      "ballad"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

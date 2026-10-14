@@ -65,6 +65,20 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'redemption-song',
   'american-pie',
   'better-be-home-soon',
+  'throw-your-arms-around-me',
+  'flame-trees',
+  'my-happiness',
+  'solid-rock',
+  'dust-in-the-wind',
+  'the-boxer',
+  'fire-and-rain',
+  'angie',
+  'drive',
+  'about-a-girl',
+  'plush',
+  'yellow',
+  'over-the-hills-and-far-away',
+  'space-oddity',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

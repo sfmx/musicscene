@@ -1,0 +1,345 @@
+{
+  "songInfo": {
+    "title": "Solid Rock",
+    "artist": "Goanna",
+    "album": "Spirit of Place",
+    "released": "1982",
+    "genre": "Folk Rock",
+    "tempo": "112 BPM",
+    "duration": "4:37",
+    "key": "A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Drives the haunting verse chord changes (Am, G, F)"
+        },
+        {
+          "scale": "A Dorian",
+          "notes": "A - B - C - D - E - F# - G - A",
+          "application": "Provides the uplifting major IV (D major) chord in the famous chorus hook"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G",
+          "application": "Shapes the cutting, rhythmic guitar riffs and vocal melodies"
+        }
+      ],
+      "modalCharacter": "Hypnotic indigenous-inspired rhythmic groove shifting between Aeolian mystery and Dorian political urgency",
+      "keySignature": "No sharps or flats",
+      "relativeMinor": "A minor is the tonic center"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "G"
+        ],
+        "progression": "i - bVII - bVI - bVII",
+        "progressionDescription": "The driving Andalusian-influenced natural minor cadence, played with percussive muted acoustic chops and driving energy.",
+        "description": "The driving Andalusian-influenced natural minor cadence, played with percussive muted acoustic chops and driving energy."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Am - G - F - G - Am - G - F - G",
+          "romanNumerals": "i - bVII - bVI - bVII - i - bVII - bVI - bVII",
+          "description": "Driving, syncopated acoustic rhythm with percussive palm muting"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Am - C - D - Am - Am - C - D - Am",
+          "romanNumerals": "i - bIII - IV - i - i - bIII - IV - i",
+          "description": "The historic chorus hook: 'Standing on solid rock, standing on sacred ground...'"
+        },
+        {
+          "section": "Bridge",
+          "progression": "F - G - Am - F - G - Em",
+          "romanNumerals": "bVI - bVII - i - bVI - bVII - v",
+          "description": "Stirring bridge creating emotional suspension before the didgeridoo/guitar crescendo"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "i - bVII - bVI - bVII",
+          "romanNumerals": "Scale Practice",
+          "description": "A natural minor and Dorian scale exercise connecting open Am, G, and D shapes"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Minor tonic chord establishing dark, urgent momentum",
+        "G (bVII) - Subtonic chord providing open rock propulsion",
+        "F (bVI) - Submediant chord adding poignant emotional weight",
+        "D (IV) - Major IV Dorian chord in the chorus lifting the progression into soaring defiance"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Percussive Tribal Acoustic Groove",
+      "description": "Driving 16th-note acoustic strumming with palm-muted chucks on beats 2 and 4, creating a relentless pulse that mirrors traditional indigenous rhythms",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Am: X-0-2-2-1-0",
+          "G: 3-2-0-0-0-3",
+          "F: 1-3-3-2-1-1",
+          "D: X-X-0-2-3-2",
+          "C: X-3-2-0-1-0"
+        ],
+        "sequence": [
+          "Establish a relentless 112 BPM acoustic drive",
+          "Keep the picking hand moving in continuous down-up strokes",
+          "Drop the fleshy part of your palm lightly onto the strings for percussive slaps",
+          "Emphasize the major D chord in the chorus for the Dorian lift"
+        ],
+        "tips": [
+          "Use a rigid medium-heavy pick (0.80mm) to get a sharp percussive 'crack'",
+          "Accent the open A string on beat 1 for heavy bass foundation",
+          "Listen to how Shane Howard locks with the kick drum and didgeridoo"
+        ],
+        "chords": [
+          "Am",
+          "G",
+          "F",
+          "D"
+        ],
+        "progression": "Am - G - F - G (Verse) / Am - C - D - Am (Chorus)"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:30",
+      "technique": "Percussive Tribal Acoustic Groove",
+      "key": "A Minor",
+      "description": "The didgeridoo drone gives way to Shane Howard's urgent, sharp acoustic rhythm guitar pulse.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Percussive muted chuck on beat 2 and 4",
+        "Steady, hypnotic 112 BPM tempo",
+        "Sharp downstroke accents"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Intro Acoustic Pulse"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:30-1:15",
+      "technique": "Percussive Tribal Acoustic Groove",
+      "key": "A Minor",
+      "description": "Urgent verses recounting colonial Australian history over the relentless Am - G - F - G cadence.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "G"
+      ],
+      "progression": "Am - G - F - G - Am - G - F - G",
+      "notes": [
+        "Palm mute the bass strings slightly for rhythmic bite",
+        "Let the treble strings ring on the upbeat accents",
+        "Maintain unwavering momentum"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Driving Story Verse"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:15-1:45",
+      "technique": "Percussive Tribal Acoustic Groove",
+      "key": "A Minor (Dorian)",
+      "description": "The legendary chorus hook erupts with the triumphant Dorian IV chord (D major).",
+      "chords": [
+        "Am",
+        "C",
+        "D",
+        "Am"
+      ],
+      "progression": "Am - C - D - Am - Am - C - D - Am",
+      "notes": [
+        "Dig into the D major chord for the signature Dorian lift",
+        "Full open acoustic strums",
+        "Sing the anthem at full volume"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.5 2.4 2.3 1.2 0.1) | :4 (0.5 2.4 2.3 1.2 0.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Sacred Ground Chorus"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "A Dorian Scale Run",
+      "key": "A Minor",
+      "description": "A natural minor and Dorian scale exercise demonstrating the F natural vs F# note change.",
+      "chords": [
+        "Am",
+        "G",
+        "F",
+        "D"
+      ],
+      "progression": "i - bVII - bVI - IV",
+      "notes": [
+        "Notice how F# on the 4th string 4th fret transforms natural minor into Dorian",
+        "Alternate pick cleanly across strings 6 to 1",
+        "Connect the scale shapes with open chord fingerings"
+      ],
+      "alphaTab": ":8 0.5 2.5 3.5 0.4 :8 2.4 4.4 0.3 2.3 | :8 0.2 1.2 3.2 0.1 :4 2.1 :4 0.1 | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "A Dorian Scale Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Maton EM325C or Guild D-55 Acoustic Guitar",
+      "alternatives": [
+        "Gibson J-45",
+        "Yamaha FG830",
+        "Takamine Pro Series"
+      ],
+      "pickup": "Under-saddle transducer combined with soundhole magnetic pickup"
+    },
+    "amp": {
+      "recommended": "Clean PA system or AER Compact 60",
+      "alternatives": [
+        "Fender Acoustasonic 150",
+        "Fishman Loudbox"
+      ],
+      "settings": {
+        "gain": "5 (crisp, punchy percussive attack)",
+        "treble": "6 (bright cutting presence)",
+        "middle": "6 (strong midrange punch)",
+        "bass": "5 (tight percussive low end)",
+        "presence": "6 (aggressive pick definition)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Ambient room reverb",
+      "other": "Heavy pick (0.80mm) for strong rhythmic percussion"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the Verse Chord Changes",
+      "steps": [
+        "Learn open Am, G, and C chords",
+        "Practice moving between Am, G, and F at 90 BPM",
+        "Master the chorus progression (Am - C - D - Am)",
+        "Increase tempo to 112 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Develop Tribal Percussive Groove",
+      "steps": [
+        "Incorporate palm-muted chucks on beats 2 and 4",
+        "Clean up the rapid shift into open D major during the chorus",
+        "Lock into the relentless 16th-note strumming momentum"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Authentic Australian Heritage Performance",
+      "steps": [
+        "Deliver Shane Howard's passionate vocal delivery",
+        "Coordinate the rhythm pulse with stompbox or foot-tapping",
+        "Perform complete arrangement with commanding presence"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Dragging the tempo — this song needs steady, relentless 112 BPM drive",
+      "Playing D minor instead of D major in the chorus (the major D gives the essential Dorian lift)",
+      "Strumming too loosely and losing the percussive attack"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Open chord finger warm-up",
+      "5 minutes: Percussive strumming drill on muted strings",
+      "5 minutes: Verse progression (Am - G - F - G) at 112 BPM",
+      "5 minutes: Chorus Dorian transition (Am - C - D - Am)",
+      "5 minutes: Full song playthrough"
+    ],
+    "focusAreas": [
+      "Crisp percussive palm muting",
+      "Clean Dorian D major chord in the chorus",
+      "Relentless rhythmic drive"
+    ],
+    "metronomeWork": [
+      "Practice at 95 BPM with clicks on all four beats",
+      "Advance to target 112 BPM once strumming is solid",
+      "Set metronome on beats 2 and 4 to lock in the backbeat chuck"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Razor's Edge",
+        "difficulty": "Intermediate",
+        "similarity": "Another powerful Goanna folk-rock anthem featuring driving acoustic guitar"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "To Her Door",
+        "artist": "Paul Kelly",
+        "difficulty": "Beginner",
+        "similarity": "Quintessential Australian acoustic storytelling with driving rhythm"
+      },
+      {
+        "title": "Zombie",
+        "artist": "The Cranberries",
+        "difficulty": "Beginner",
+        "similarity": "Driving minor-key rock anthem built on powerful four-chord cycles"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Losing My Religion",
+        "artist": "R.E.M.",
+        "difficulty": "Intermediate",
+        "similarity": "A minor folk-rock classic featuring intricate acoustic and mandolin rhythms"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "open-chords",
+      "folk-rock",
+      "australian",
+      "intermediate",
+      "campfire",
+      "acoustic-guitar",
+      "dorian"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

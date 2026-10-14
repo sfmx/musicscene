@@ -1,0 +1,350 @@
+{
+  "songInfo": {
+    "title": "Angie",
+    "artist": "The Rolling Stones",
+    "album": "Goats Head Soup",
+    "released": "1973",
+    "genre": "Rock",
+    "tempo": "72 BPM",
+    "duration": "4:32",
+    "key": "A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Underpins the somber, reflective verse progression (Am, G, F, C)"
+        },
+        {
+          "scale": "A harmonic minor",
+          "notes": "A - B - C - D - E - F - G# - A",
+          "application": "Provides the leading tone G# for the prominent dominant E7 and E7sus4 chords"
+        }
+      ],
+      "modalCharacter": "Spanish and baroque-inflected A minor acoustic ballad featuring rich suspended ornamentations and descending bass motion",
+      "keySignature": "No sharps or flats",
+      "relativeMinor": "A minor is the tonic center"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "E7",
+          "G",
+          "F",
+          "C"
+        ],
+        "progression": "i - V7 - bVII - bVI - bIII",
+        "progressionDescription": "Keith Richards' iconic acoustic ballad progression: moving from somber Am through harmonic minor V7 (E7) to descending diatonic major chords (G → F → C).",
+        "description": "Keith Richards' iconic acoustic ballad progression: moving from somber Am through harmonic minor V7 (E7) to descending diatonic major chords (G → F → C)."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro / Acoustic Motif",
+          "progression": "Am - E7 - G - F - C - F - G",
+          "romanNumerals": "i - V7 - bVII - bVI - bIII - bVI - bVII",
+          "description": "Keith Richards' legendary acoustic intro filled with hammer-ons, pull-offs, and suspended 4th chords"
+        },
+        {
+          "section": "Verse",
+          "progression": "Am - E7 - G - F - C - F - G",
+          "romanNumerals": "i - V7 - bVII - bVI - bIII - bVI - bVII",
+          "description": "Mick Jagger's fragile vocal delivery backed by delicate acoustic strumming and arpeggiation"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - G - Dm - Am - C - F - G",
+          "romanNumerals": "bIII - bVII - iv - i - bIII - bVI - bVII",
+          "description": "The sweeping chorus hook: 'Angie, Angie, when will those clouds all disappear?'"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "i - V7 - bVII - bVI",
+          "romanNumerals": "Scale Practice",
+          "description": "A harmonic and natural minor scale run highlighting G# leading tone resolution"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Tonic minor chord conveying heartbreak and tragic beauty",
+        "E7 (V7) - Major dominant chord with G# leading tone establishing strong classical minor tension",
+        "G (bVII) - Subtonic major chord softening the mood and opening up harmonic space",
+        "F (bVI) - Submediant major chord providing rich, tragic emotional weight",
+        "C (bIII) - Relative major chord offering brief moments of nostalgic sunlight"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Keith Richards Suspended Acoustic Embellishments",
+      "description": "Dynamic acoustic fingerpicking and strumming decorated with 2nd-fret hammer-ons and suspended 4th ornamentations (`Am - Asus4`, `E7 - E7sus4`), accompanied by percussive hand mutes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Am: X-0-2-2-1-0",
+          "Asus4: X-0-2-2-3-0",
+          "E7: 0-2-0-1-0-0",
+          "E7sus4: 0-2-0-2-0-0",
+          "G: 3-2-0-0-0-3",
+          "F: 1-3-3-2-1-1",
+          "C: X-3-2-0-1-0"
+        ],
+        "sequence": [
+          "Pinch open 5th string and 2nd string on beat 1 for Am",
+          "Hammer pinky onto 2nd string 3rd fret for the Asus4 suspension",
+          "Shift to E7 and hammer 2nd finger onto 3rd string 2nd fret for E7sus4",
+          "Strum smoothly through G, F, and resolve to open C"
+        ],
+        "tips": [
+          "Keep the tempo measured at 72 BPM to let Keith's acoustic flourishes breathe",
+          "Use light palm muting between phrases for rhythmic texture",
+          "Fmaj7 (X-X-3-2-1-0) can be substituted for F if transitioning quickly"
+        ],
+        "chords": [
+          "Am",
+          "E7",
+          "G",
+          "F",
+          "C"
+        ],
+        "progression": "Am - E7 - G - F - C"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "timeStamp": "0:00-0:25",
+      "technique": "Keith Richards Suspended Acoustic Embellishments",
+      "key": "A Minor",
+      "description": "Keith Richards opens with delicate arpeggios and suspended fourth hammer-ons establishing the song's tragic elegance.",
+      "chords": [
+        "Am",
+        "E7",
+        "G",
+        "F",
+        "C"
+      ],
+      "progression": "Am - E7 - G - F - C - F - G",
+      "notes": [
+        "Iconic pinky hammer-on on the 2nd string (Am to Asus4)",
+        "E7sus4 hammer-on on the 3rd string",
+        "Gentle descending chords leading to C major"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 :8 3.2 1.2 0.6 1.3 | :8 2.3 1.3 3.6 0.2 :8 1.6 2.3 3.5 1.2 | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Iconic Acoustic Intro"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:25-1:10",
+      "technique": "Keith Richards Suspended Acoustic Embellishments",
+      "key": "A Minor",
+      "description": "Intimate storytelling verse accompanied by fluid acoustic strumming and dynamic chord accents.",
+      "chords": [
+        "Am",
+        "E7",
+        "G",
+        "F",
+        "C"
+      ],
+      "progression": "Am - E7 - G - F - C - F - G",
+      "notes": [
+        "Keep the right hand loose and relaxed at 72 BPM",
+        "Listen to how the E7 chord creates dramatic tension",
+        "Smooth transition through F into C"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (0.6 2.5 0.4 1.3 0.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Reflective Verse Pattern"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "1:10-1:50",
+      "technique": "Keith Richards Suspended Acoustic Embellishments",
+      "key": "C Major / A Minor",
+      "description": "The soaring chorus hook: 'Angie, Angie, ain't it good to be alive?' with full acoustic strumming.",
+      "chords": [
+        "C",
+        "G",
+        "Dm",
+        "Am",
+        "F"
+      ],
+      "progression": "C - G - Dm - Am - C - F - G",
+      "notes": [
+        "Full strumming dynamic across all six strings",
+        "Clean D minor chord transition",
+        "Dramatic buildup on the final G major measure"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 1.1) :2 (0.5 2.4 2.3 1.2 0.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Sweeping Chorus Hook"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "A Harmonic Minor Scale Run",
+      "key": "A Minor",
+      "description": "Scale exercise highlighting the G# leading tone resolving upward to tonic A.",
+      "chords": [
+        "Am",
+        "E7"
+      ],
+      "progression": "i - V7",
+      "notes": [
+        "Notice the exotic augmented 2nd interval between F and G#",
+        "Hear how G# on the 3rd string 1st fret defines the E7 sound",
+        "Play with fluid alternate picking"
+      ],
+      "alphaTab": ":8 0.5 2.5 3.5 0.4 :8 2.4 3.4 1.3 2.3 | :8 0.2 1.2 3.2 0.1 :4 1.1 :4 0.1 | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "A Harmonic Minor Scale Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Hummingbird or Martin D-28 Acoustic Guitar",
+      "alternatives": [
+        "Epiphone Texan",
+        "Yamaha FG800",
+        "Taylor 314ce"
+      ],
+      "pickup": "Studio condenser microphone (Neumann KM84 or U87)"
+    },
+    "amp": {
+      "recommended": "Clean studio console or acoustic amplifier",
+      "alternatives": [
+        "AER Compact 60",
+        "Fishman Loudbox"
+      ],
+      "settings": {
+        "gain": "3 (pure, uncompressed acoustic tone)",
+        "treble": "6 (bright sparkle on acoustic embellishments)",
+        "middle": "5 (warm body)",
+        "bass": "5 (resonant low end)",
+        "presence": "5 (crisp pick definition)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Warm studio plate reverb",
+      "other": "Thin-to-medium pick (0.60mm) for delicate acoustic strumming"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the Open Chords",
+      "steps": [
+        "Learn open Am, E7, G, F, and C chord shapes",
+        "Practice moving between Am and E7 at 60 BPM",
+        "Strum through the verse progression at 72 BPM",
+        "Sing along with the famous chorus hook"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Master Keith Richards' Embellishments",
+      "steps": [
+        "Practice the pinky hammer-on on the 2nd string (Am to Asus4)",
+        "Work on the E7sus4 hammer-on on the 3rd string",
+        "Integrate the descending intro fills smoothly"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Complete Solo Acoustic Performance",
+      "steps": [
+        "Combine bass notes, strumming, and melody fills into a continuous flow",
+        "Capture the emotional drama of the original Rolling Stones recording",
+        "Perform the full ballad with authentic rock ballad presence"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the 72 BPM tempo — this ballad needs patient spacing and breathing room",
+      "Muting the high open E string when fretting the Asus4 pinky hammer-on",
+      "Stumbling during the quick shift from F to C in the verse"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Open chord finger warm-up",
+      "5 minutes: Isolated Asus4 and E7sus4 hammer-on drill",
+      "5 minutes: Intro arpeggio picking pattern at 72 BPM",
+      "5 minutes: Chorus chord transitions (C → G → Dm → Am)",
+      "5 minutes: Full song playthrough"
+    ],
+    "focusAreas": [
+      "Crisp pinky hammer-ons",
+      "Measured, patient 72 BPM ballad tempo",
+      "Dynamic separation between verse intimacy and chorus swell"
+    ],
+    "metronomeWork": [
+      "Practice at 60 BPM with metronome clicks on all four beats",
+      "Advance to 72 BPM once intro embellishments are clean and fluid",
+      "Set metronome on beats 2 and 4 to develop natural acoustic sway"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Wild Horses",
+        "difficulty": "Intermediate",
+        "similarity": "The definitive Rolling Stones country-rock acoustic ballad"
+      },
+      {
+        "title": "Paint It, Black",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic minor-key guitar riffs driven by Middle Eastern and classical influences"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
+        "difficulty": "Advanced",
+        "similarity": "Intricate acoustic fingerpicking in C major and A minor with suspended chords"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Intermediate",
+        "similarity": "Legendary acoustic 12-string intro and Spanish-inflected minor progressions"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "difficulty": "Intermediate",
+        "similarity": "Monumental acoustic rock epic featuring descending chromatic basslines in A minor"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "open-chords",
+      "acoustic-guitar",
+      "classic-rock",
+      "intermediate",
+      "ballad",
+      "harmonic-minor"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

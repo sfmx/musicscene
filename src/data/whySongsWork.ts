@@ -2449,6 +2449,552 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'throw-your-arms-around-me': {
+    slug: 'throw-your-arms-around-me',
+    songTitle: 'Throw Your Arms Around Me',
+    artist: 'Hunters & Collectors',
+    key: 'E Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Diatonic Major Resonance & Campfire Unity',
+    coreSecret: 'The Unstoppable Communal Power of the Pure Diatonic I - IV - V Cadence with Ringing Drone Treble Strings',
+    emotionalHook: 'Mark Seymour strips away all rock excess to deliver one of Australia\'s greatest anthems using only three basic chords: E, A, and B. By keeping the high B and high E strings ringing open across every change, the guitar creates a shimmering drone ceiling that gives the simple chord changes an almost spiritual singalong resonance.',
+    romanProgression: 'I - IV - V - I',
+    chords: ['E', 'A', 'B'],
+    progressionExplanation: [
+      'E (I): Grounded, resonant home tonic with full 6-string acoustic resonance.',
+      'A (IV): Subdominant lift injecting warm optimism and melodic tenderness.',
+      'B (V): Dominant chord introducing just enough tension to pull the melody home.',
+      'Open String Drones: The open B and high E strings vibrate continuously throughout the progression.',
+    ],
+    voiceLeadingInsights: [
+      'The three foundational primary triads (I, IV, V) contain every single note in the E major scale.',
+      'Ringing high strings create an acoustic bed that accommodates singers of any vocal range.',
+      'The rhythmic dynamic expands from quiet storytelling in the verses to full-throated communal shouting in the chorus.',
+    ],
+    guitarPerspective: 'Play with a relaxed, swinging right wrist at 104 BPM. Lock your strumming into beats 2 and 4 to create a hypnotic backbeat sway that invites crowds to join in.',
+    songwriterTakeaway: 'You do not need complex jazz harmony to write a song that lasts for generations: a pristine three-chord major progression with sincere vocal delivery can move millions.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Major Scale', slug: 'major', description: 'The complete diatonic framework underlying the E, A, and B chords.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Pure major mode storytelling warmth.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open E, A, and B shapes.' },
+      ],
+    },
+  },
+
+  'flame-trees': {
+    slug: 'flame-trees',
+    songTitle: 'Flame Trees',
+    artist: 'Cold Chisel',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Stepwise Descending Basslines & Nostalgia',
+    coreSecret: 'The Bittersweet Stepwise Bass Walkdown (C → B → A) Capturing Australian Rural Longing',
+    emotionalHook: 'Don Walker and Jimmy Barnes evoke the quiet melancholy of returning to a fading hometown through a classic descending bassline: C → C/B → Am → F. By stepping down along the 5th string while keeping the upper notes of the C chord anchored, the music mirrors the narrator\'s reflective sigh before opening into the soaring catharsis of the chorus.',
+    romanProgression: 'I - I/7 - vi - IV',
+    chords: ['C', 'C/B', 'Am', 'F', 'G'],
+    progressionExplanation: [
+      'C (I): Warm, comforting tonic home base.',
+      'C/B (I/7): Inversion passing chord providing the descending bass step on the 5th string 2nd fret.',
+      'Am (vi): Submediant minor chord introducing introspective wistfulness.',
+      'F (IV): Subdominant chord offering hope and resolution.',
+      'G (V) in Chorus: Dominant push propelling the famous chorus hook.',
+    ],
+    voiceLeadingInsights: [
+      'The 5th-string bass walkdown (C fret 3 → B fret 2 → A open) provides irresistible stepwise melodic pull.',
+      'The stationary note C on the 2nd string acts as a common-tone anchor connecting the first three chords.',
+      'The chorus shifts to G → F → C (V - IV - I), replacing introspection with soaring, open-throated rock release.',
+    ],
+    guitarPerspective: 'Keep your right hand light and spacious at 72 BPM. Ensure the B bass note on the 5th string 2nd fret rings clearly without accidentally muting the open G string.',
+    songwriterTakeaway: 'When writing nostalgic or reflective lyrics, use a stepwise descending bassline under anchored upper melody tones to instantly evoke bittersweet memory.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The melodic foundation of the acoustic verses.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Warm major storytelling clarity.' },
+      ],
+      chords: [
+        { name: 'Slash Chords', slug: 'slash-chords', description: 'C/B inversion creating smooth stepwise bass transitions.' },
+      ],
+    },
+  },
+
+  'my-happiness': {
+    slug: 'my-happiness',
+    songTitle: 'My Happiness',
+    artist: 'Powderfinger',
+    key: 'D Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Drop D Resonant Harmony & Melancholic Rock',
+    coreSecret: 'Drop D Low-End Sub-Bass Combined with Melodic Upper Chord Suspensions',
+    emotionalHook: 'Powderfinger takes modern alternative rock guitar into emotional territory by tuning the 6th string down to D. The deep open low D provides an immovable acoustic anchor, allowing sweet suspended chords (Dsus2, Dsus4, Asus4) to shimmer on top with massive low-end weight, balancing the melancholic Bm with uplifting D major optimism.',
+    romanProgression: 'I - IV - vi - V',
+    chords: ['D', 'G', 'Bm', 'A'],
+    progressionExplanation: [
+      'D (I): Resonant tonic chord fortified by the rumbling open 6th string D.',
+      'G (IV): One-finger Drop D barre at fret 5 offering buoyant relief.',
+      'Bm (vi): Relative minor chord introducing melancholic introspection.',
+      'A (V): Dominant chord pulling the cycle smoothly back to tonic D.',
+    ],
+    voiceLeadingInsights: [
+      'Tuning the low E string down to D extends the acoustic guitar\'s frequency range into deep bass register.',
+      'Ringing high E and B strings throughout chord changes create a lush, modern atmospheric wall of sound.',
+      'The syncopated 16th-note rhythm accents give the slow 100 BPM tempo driving forward momentum.',
+    ],
+    guitarPerspective: 'Tune your 6th string down one whole step to D. Use a single index finger to fret the 5th-fret G chord across the bottom three strings, letting treble strings ring open.',
+    songwriterTakeaway: 'Drop D is not just for heavy metal riffs: it adds majestic acoustic body and open-string resonance to emotional pop-rock chord progressions.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Scale', slug: 'major', description: 'The foundation of the chord changes and vocal melody.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The overarching major mode resonance.' },
+      ],
+      chords: [
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Dsus2 and Dsus4 color extensions.' },
+      ],
+    },
+  },
+
+  'solid-rock': {
+    slug: 'solid-rock',
+    songTitle: 'Solid Rock',
+    artist: 'Goanna',
+    key: 'A Minor',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Dorian Modal Mixture & Tribal Rhythm',
+    coreSecret: 'The Modal Shift from Somber Aeolian Natural Minor to Soaring Dorian Major IV (D)',
+    emotionalHook: 'Shane Howard crafts an unforgettable Australian political anthem by driving a percussive, tribal rhythm in A minor. While the verses cycle through somber Aeolian minor chords (Am - G - F), the chorus erupts with a major D chord: the signature Dorian raised 6th (F# note), transforming historical grief into defiant, soaring pride.',
+    romanProgression: 'i - ♭VII - ♭VI - ♭VII (Verse) | i - ♭III - IV - i (Chorus)',
+    chords: ['Am', 'G', 'F', 'C', 'D'],
+    progressionExplanation: [
+      'Am (i): Haunting tonic minor establishing urgent, driving momentum.',
+      'G (♭VII) to F (♭VI): Classic Andalusian folk descent conveying historical tragedy.',
+      'C (♭III): Relative major bridge lifting the vocal register.',
+      'D (IV): The triumph of the chorus — a major IV chord introducing the bright Dorian F# note.',
+    ],
+    voiceLeadingInsights: [
+      'The alternation between F natural in the verse and F# in the chorus is the key harmonic pivot of the song.',
+      'Percussive palm muting on beats 2 and 4 mirrors the rhythmic pulse of indigenous clapping sticks.',
+      'The relentless 112 BPM tempo creates hypnotic urgency that propels the vocal message.',
+    ],
+    guitarPerspective: 'Lock in with a firm right-hand attack at 112 BPM. In the chorus, lean heavily into the open D major chord to let the Dorian color soar over the band.',
+    songwriterTakeaway: 'Use natural minor (Aeolian) to convey darkness or sorrow in the verses, then switch to Dorian (major IV chord) in the chorus to inject triumphant defiance and hope.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Dorian Mode', slug: 'dorian', description: 'Supplies the bright major IV (D) chord.' },
+        { name: 'A Natural Minor', slug: 'minor', description: 'Underpins the haunting verse changes.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The mode of rock defiance and groove.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Open Am and F barre chords.' },
+      ],
+    },
+  },
+
+  'dust-in-the-wind': {
+    slug: 'dust-in-the-wind',
+    songTitle: 'Dust in the Wind',
+    artist: 'Kansas',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Travis Picking & Inner Voice Suspensions',
+    coreSecret: 'Travis-Picked Alternating Basslines Anchoring Shifting Second-String Suspensions',
+    emotionalHook: 'Kerry Livgren turned a fingerpicking warm-up exercise into a worldwide philosophical masterpiece. While the thumb keeps an unwavering alternating bass pulse on strings 5 and 4, the fretting fingers cycle through C → Cmaj7 → Cadd9 → C, creating delicate chromatic and stepwise voice leading on the B string that evokes the fleeting nature of life.',
+    romanProgression: 'I - Imaj7 - Iadd9 - I - vi(sus2) - vi(sus4) - vi',
+    chords: ['C', 'Cmaj7', 'Cadd9', 'Am', 'Asus2', 'Asus4', 'Dm', 'G'],
+    progressionExplanation: [
+      'C to Cmaj7 to Cadd9: Moving 2nd-string voice leading (C → B → D → C) over an anchored C bass note.',
+      'Am to Asus2 to Asus4: Replicating the same voice leading over the relative minor Am shape.',
+      'Dm (ii) to G (V): Classic pre-dominant to dominant turnaround into the chorus.',
+      'Alternating Thumb Bass: Strict fifth-to-fourth string alternating bassline maintaining constant pulse.',
+    ],
+    voiceLeadingInsights: [
+      'The inner voice movement on string 2 creates counter-melodies against the static alternating bass.',
+      'The shift from bright C major suspensions into somber A minor suspensions mirrors the lyrical reflection.',
+      'The chorus opens out of the intricate Travis pattern into sweeping strummed chords for maximum emotional contrast.',
+    ],
+    guitarPerspective: 'Automate your thumb on strings 5 and 4 first. Keep the right wrist arched and relaxed so the index and middle fingers can pluck strings 3 and 2 with absolute dynamic equality.',
+    songwriterTakeaway: 'Keep your bassline steady and simple while moving individual inner chord tones up and down by half steps to create mesmerizing harmonic textures.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The diatonic foundation for the C and Am suspensions.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The serene major mode clarity.' },
+      ],
+      chords: [
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Cmaj7, Cadd9, Asus2, and Asus4 voicings.' },
+      ],
+    },
+  },
+
+  'the-boxer': {
+    slug: 'the-boxer',
+    songTitle: 'The Boxer',
+    artist: 'Simon & Garfunkel',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Folk Alternating Bass & Walking Transitions',
+    coreSecret: 'Rolling Nashville Alternating Bassline Connecting Cyclic Diatonic Chords with Walking Bass Pickups',
+    emotionalHook: 'Paul Simon uses a rolling fingerstyle groove with a capo on fret 2 (sounding in D major) to tell the epic saga of a lonely fighter in New York. The alternating thumb on the 5th and 4th strings provides continuous locomotive forward momentum, while stepwise walking bass notes on strings 5 and 6 smoothly glue together the C, Am, G, and F chords.',
+    romanProgression: 'I - vi - V - I - vi - V - IV - I',
+    chords: ['C', 'Am', 'G', 'F', 'Em'],
+    progressionExplanation: [
+      'C (I): Warm, steady tonic home base with alternating bass.',
+      'Am (vi): Minor submediant introducing lonely urban vulnerability.',
+      'G (V): Dominant chord propelling the narrative forward.',
+      'F (IV): Subdominant chord providing temporary resolution and warmth.',
+      'Em (iii) in Chorus: Haunting mediant minor framing the legendary \'Lie-la-lie\' vocal hook.',
+    ],
+    voiceLeadingInsights: [
+      'Walking bass transitions (C → B → A and A → B → C) connect cowboy chords into an unbroken melodic stream.',
+      'The capo on fret 2 brightens the acoustic timbre, allowing open-string ring to cut through dense studio percussion.',
+      'The chorus introduces massive orchestral snare explosions that dynamically amplify the gentle acoustic foundation.',
+    ],
+    guitarPerspective: 'Capo on the 2nd fret. Maintain relaxed right-hand fingerpicking with thumb alternating between strings 5 and 4. Insert the walking bass notes on beats 4-and with smooth fluidity.',
+    songwriterTakeaway: 'Use walking bass transitions between standard open folk chords to keep an acoustic arrangement moving forward like a traveler on a journey.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'Diatonic framework relative to capo 2.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Traditional American folk ballad resonance.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open C, Am, G, and Em shapes.' },
+      ],
+    },
+  },
+
+  'fire-and-rain': {
+    slug: 'fire-and-rain',
+    songTitle: 'Fire and Rain',
+    artist: 'James Taylor',
+    key: 'C Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Clawhammer Embellishments & Modal Folk',
+    coreSecret: 'A-Shape Open Suspensions and Minor v7 (Em7) Introducing Bluesy Intimacy to Folk Balladry',
+    emotionalHook: 'James Taylor places a capo on the 3rd fret and uses open A major shapes to share profound grief and recovery. Instead of moving to dominant E, Taylor moves to an unexpected minor v7 chord (Em7 relative to capo), injecting a fragile, blues-tinted bittersweetness that captures heartache far more honestly than standard pop progressions.',
+    romanProgression: 'I - v7 - IV - I',
+    chords: ['A', 'Em7', 'D', 'Bm', 'G'],
+    progressionExplanation: [
+      'A (I): Tonic major enriched with open 2nd-string and 3rd-fret hammer-ons.',
+      'Em7 (v7): Minor fifth chord creating a haunting, blues-inflected bittersweet emotion.',
+      'D (IV): Subdominant chord providing melodic warmth and redemption.',
+      'G (♭VII) in Chorus: Borrowed Mixolydian chord adding dramatic weight to \'I\'ve seen fire and I\'ve seen rain\'.',
+    ],
+    voiceLeadingInsights: [
+      'Hammering on from open strings to chord tones allows Taylor to accompany his conversational vocal lines with counter-melodies.',
+      'The minor v7 chord (Em7) avoids classical dominant tension, maintaining an intimate, vulnerable emotional landscape.',
+      'The borrowed flat-seven chord (G) in the chorus opens up the harmonic sky during the climax.',
+    ],
+    guitarPerspective: 'Capo 3rd fret. Pluck with bare finger pads rather than picks for Taylor\'s signature warm, woody acoustic tone. Master the simultaneous hammer-on on strings 3 and 2 on the A chord.',
+    songwriterTakeaway: 'Substituting a minor v chord for the usual major V dominant removes aggressive tension and creates a tender, confessional atmosphere ideal for heartfelt lyrics.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Scale', slug: 'major', description: 'The foundation for the A-shape fingerstyle voicings.' },
+        { name: 'A Mixolydian Mode', slug: 'mixolydian', description: 'Provides the flat-seventh G note for chorus modal borrowing.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The source of bluesy folk vulnerability.' },
+      ],
+      chords: [
+        { name: 'Seventh Chords', slug: 'seventh', description: 'Em7 and suspended fourth shapes.' },
+      ],
+    },
+  },
+
+  'angie': {
+    slug: 'angie',
+    songTitle: 'Angie',
+    artist: 'The Rolling Stones',
+    key: 'A Minor',
+    category: 'secondary-dominants',
+    categoryLabel: 'Harmonic Minor Tension & Suspended Ornaments',
+    coreSecret: 'Classical Harmonic Minor Dominant (E7) Clashing with Suspended Fourth Acoustic Hammer-Ons',
+    emotionalHook: 'Keith Richards crafts the Rolling Stones\' most poignant acoustic ballad by fusing Spanish and Baroque minor harmony. Moving from somber Am through a stark harmonic minor dominant E7 with its sharp leading tone G#, Richards decorates each chord with fluid pinky hammer-ons (Asus4 and E7sus4) that mimic weeping vocal sighs.',
+    romanProgression: 'i - V7 - ♭VII - ♭VI - ♭III',
+    chords: ['Am', 'E7', 'G', 'F', 'C', 'Dm'],
+    progressionExplanation: [
+      'Am (i): Somber tonic minor chord conveying tragic heartbreak.',
+      'E7 (V7): Harmonic minor dominant featuring the G# leading tone for classical tension.',
+      'G (♭VII) to F (♭VI): Descending diatonic chords softening the mood with rock ballad warmth.',
+      'C (♭III): Relative major offering fleeting rays of emotional sunshine.',
+    ],
+    voiceLeadingInsights: [
+      'The G# note on the 3rd string of E7 creates irresistible tension that yearns to resolve up a half step to A.',
+      'The suspended fourth hammer-ons (D note onto Asus4, A note onto E7sus4) introduce momentary dissonance before resolving.',
+      'The descending bass motion (A → G → F → E) creates a weeping harmonic contour throughout the verses.',
+    ],
+    guitarPerspective: 'Keep your 72 BPM tempo steady and measured. Use your pinky finger to execute the quick hammer-on on the 2nd string 3rd fret for Asus4, and let the open strings ring behind it.',
+    songwriterTakeaway: 'Use the major dominant (V7) in a minor key to create dramatic, operatic tension, and soften it with descending natural minor chords to maintain rock intimacy.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Harmonic Minor', slug: 'harmonic-minor', description: 'Supplies the sharp leading tone G# in the dominant E7 chord.' },
+        { name: 'A Natural Minor', slug: 'minor', description: 'The framework for the descending verse progression.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'Somber minor mode emotional depth.' },
+      ],
+      chords: [
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Asus4 and E7sus4 embellishment shapes.' },
+      ],
+    },
+  },
+
+  'drive': {
+    slug: 'drive',
+    songTitle: 'Drive',
+    artist: 'Incubus',
+    key: 'E Minor',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Dorian Funk-Rock & Jazz Chord Extensions',
+    coreSecret: 'E Dorian Modal Color Interacting with Extended Ninth and Seventh Voicings (Em9, Cadd9, A7sus4)',
+    emotionalHook: 'Mike Einziger transformed acoustic rock by incorporating sophisticated jazz voicings and funk syncopation. Instead of plain power chords, \'Drive\' floats between Em9, Cadd9, and A7sus4. The A7sus4 chord introduces a natural C# note — the hallmark of E Dorian — contrasting with the natural C in Cadd9 to create a vibrant, ever-shifting harmonic climate.',
+    romanProgression: 'i9 - ♭VIadd9 - IV7sus4 - ♭VImaj7',
+    chords: ['Em9', 'Cadd9', 'A7sus4', 'Cmaj7'],
+    progressionExplanation: [
+      'Em9 (i9): Minor tonic chord enriched with the major 9th (F#) for a spacious, lush modern texture.',
+      'Cadd9 (♭VIadd9): Submediant chord providing emotional optimism and bright upper harmonics.',
+      'A7sus4 (IV7sus4): Subdominant chord introducing the Dorian raised 6th (C#) for signature jazz-funk sophistication.',
+      'Cmaj7 (♭VImaj7): Major seventh color providing smooth voice leading back into Em9.',
+    ],
+    voiceLeadingInsights: [
+      'The harmonic tension hinges on the oscillation between C natural (in Cadd9 and Cmaj7) and C# (in A7sus4).',
+      'High open strings chime continuously across the chords, acting as stationary drone anchors.',
+      'The 16th-note percussive fret mutes (chucks) give the slow 90 BPM tempo irresistible rhythmic bounce.',
+    ],
+    guitarPerspective: 'Keep your right wrist in continuous 16th-note pendulum motion at 90 BPM. Release fret-hand finger pressure on unaccented beats to create crisp percussive chucks.',
+    songwriterTakeaway: 'Introduce an unexpected Dorian IV chord (like A7sus4 in E minor) into a minor progression to instantly elevate the sound from moody grunge into soulful, sophisticated funk-rock.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Dorian Mode', slug: 'dorian', description: 'Supplies the bright C# color in A7sus4.' },
+        { name: 'E Natural Minor', slug: 'minor', description: 'The tonal foundation for Em9 and Cadd9.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The mode of sophisticated rock and funk.' },
+      ],
+      chords: [
+        { name: 'Ninth Chords', slug: 'extended-chords', description: 'Lush Em9 and Cadd9 voicings.' },
+      ],
+    },
+  },
+
+  'about-a-girl': {
+    slug: 'about-a-girl',
+    songTitle: 'About a Girl',
+    artist: 'Nirvana',
+    key: 'E Minor',
+    category: 'modal-mixture',
+    categoryLabel: 'Beatles-Grunge Fusion & Abrupt Modulation',
+    coreSecret: 'Hypnotic Two-Chord (Em ↔ G) Oscillation Colliding with an Abrupt Chromatic Chorus Modulation',
+    emotionalHook: 'Kurt Cobain famously spent an afternoon listening to \'Meet the Beatles\' on repeat before penning \'About a Girl\'. The song opens with an infectious, minimalist open Em to G acoustic strum, but suddenly detours in the chorus into sharp chromatic barre chords (C#m - G# - F#) before resolving through C and D, proving that raw grunge and Beatles pop melodicism share the exact same DNA.',
+    romanProgression: 'i - ♭III (Verse) | vi - III - II - IV - ♭VI - ♭VII (Chorus)',
+    chords: ['Em', 'G', 'C#m', 'G#', 'F#', 'A', 'C', 'D'],
+    progressionExplanation: [
+      'Em to G (i - ♭III): Effortless open cowboy chord oscillation with bouncy, syncopated strumming.',
+      'C#m to G# (vi - III): Dramatic chromatic modulation in the chorus introducing sudden grunge angst.',
+      'F# to A (II - IV): Rising melodic movement building urgency.',
+      'C to D (♭VI - ♭VII): Classic rock double-plagal cadence resolving triumphantly back to open Em.',
+    ],
+    voiceLeadingInsights: [
+      'Tuning down one half-step (Eb Ab Db Gb Bb Eb) relaxes string tension, giving acoustic strums punchy, dark low-end warmth.',
+      'The verse relies purely on the contrast between the low minor tonic Em and the bright upper ringing strings of open G.',
+      'The chorus chord shift to C#m is unexpected, keeping listeners on the edge of their seats before returning to the friendly verse groove.',
+    ],
+    guitarPerspective: 'Tune down a half-step. Keep your right hand loose in a continuous 130 BPM eighth-note rhythm, emphasizing the heavy bass downstrokes on beat 1 and open treble upstrokes.',
+    songwriterTakeaway: 'You don\'t need a dozen chords to write a great verse: oscillate between two strong open chords (i and ♭III) and save your surprising chord changes for the chorus.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Natural Minor', slug: 'minor', description: 'Underpins the foundational open Em to G verse changes.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode behind the verse.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open Em, G, C, and D shapes.' },
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'Punchy C#m and G# chorus barres.' },
+      ],
+    },
+  },
+
+  'plush': {
+    slug: 'plush',
+    songTitle: 'Plush',
+    artist: 'Stone Temple Pilots',
+    key: 'G Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Bossa-Rock Chromatic Descent & Modal Substitution',
+    coreSecret: 'Dean DeLeo\'s Chromatic Bass Walkdown (G → F# → F → E → Eb) Anchored by High Open String Drones',
+    emotionalHook: 'Dean DeLeo brought bossa-nova and jazz sophistication to 90s grunge. In the acoustic arrangement of \'Plush\', the bassline walks down chromatically one fret at a time (G → F# → F → E) before landing on a sublime borrowed flat-sixth chord: Ebmaj7. Ringing open G and B strings throughout the descent create rich chord extensions that sound simultaneously dark, elegant, and monumental.',
+    romanProgression: 'I - V6 - ♭VII - IV6 - ♭VImaj7',
+    chords: ['G', 'D/F#', 'F', 'C/E', 'Ebmaj7', 'D', 'C'],
+    progressionExplanation: [
+      'G (I): Warm tonic chord anchored by ringing open high strings.',
+      'D/F# (V6): First inversion dominant chord initiating the descending bass step.',
+      'F (♭VII): Borrowed Mixolydian chord continuing the chromatic root descent.',
+      'C/E (IV6): Inverted subdominant chord stepping smoothly toward Eb.',
+      'Ebmaj7 (♭VImaj7): The emotional climax — a lush modal interchange chord adding haunting beauty.',
+    ],
+    voiceLeadingInsights: [
+      'The chromatic root movement across frets 3-2-1-0-6 on strings 6 and 5 creates irresistible downward pull.',
+      'The open 3rd (G) and 2nd (B) strings ring continuously as a static pedal tone, generating natural 7th and 9th chord colors.',
+      'The heavy chorus (D → C → G → Eb → F) replaces delicate walkdowns with full power chord drives.',
+    ],
+    guitarPerspective: 'Play at a measured 72 BPM. Use your thumb over the top of the neck for the low bass notes (G, F#, F) to keep fingers free for ringing upper chord tones.',
+    songwriterTakeaway: 'Try walking your bassline down chromatically under stationary open drone strings, and substitute a major 7th chord on the flat-sixth (♭VImaj7) for breathtaking emotional color.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The foundation of the G and D/F# chords.' },
+        { name: 'G Mixolydian Mode', slug: 'mixolydian', description: 'The source of the flat-seventh F major chord.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Primary major mode foundation.' },
+      ],
+      chords: [
+        { name: 'Slash Chords', slug: 'slash-chords', description: 'D/F# and C/E inversions driving the bassline.' },
+        { name: 'Major Seventh Chords', slug: 'seventh', description: 'The lush Ebmaj7 modal interchange chord.' },
+      ],
+    },
+  },
+
+  'yellow': {
+    slug: 'yellow',
+    songTitle: 'Yellow',
+    artist: 'Coldplay',
+    key: 'B Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Anchored Drone Strings & Expansive Arena Acoustic',
+    coreSecret: 'Permanent High Open String Drones (D and G) Creating an Expansive Acoustic Wall of Sound',
+    emotionalHook: 'Coldplay created a stadium-filling acoustic anthem by utilizing constant drone harmony. With a capo on the 4th fret (playing in G shapes), guitarists lock their 3rd and 4th fingers onto the 3rd frets of strings 1 and 2 throughout every chord change (G, Cadd9, Em7, D). This keeps the same two high ringing notes chiming continuously, evoking boundless open night skies.',
+    romanProgression: 'I - V - IV - I',
+    chords: ['G', 'D', 'Cadd9', 'Em7'],
+    progressionExplanation: [
+      'G (I): Warm, radiant tonic chord grounded by the high drone strings.',
+      'D (V): Dominant chord propelling the phrase forward with bright energy.',
+      'Cadd9 (IV): Subdominant chord introducing sweeping melodic optimism and emotional vulnerability.',
+      'Em7 (vi): Submediant minor chord in the chorus adding wistful, intimate depth.',
+    ],
+    voiceLeadingInsights: [
+      'Anchoring fingers 3 and 4 eliminates chord transition clumsiness and creates an unbroken acoustic sustain bed.',
+      'The continuous high pedal tones (sounding F# and B with Capo 4) unify major, minor, and dominant chords into a single harmonic tapestry.',
+      'The dynamic build from a lone acoustic guitar into full band arena rock creates overwhelming emotional impact.',
+    ],
+    guitarPerspective: 'Capo 4th fret. Never lift your ring and pinky fingers from the 1st and 2nd strings. Keep your right hand sweeping loosely at 88 BPM, letting the acoustic guitar fill the entire room.',
+    songwriterTakeaway: 'Lock two fingers onto the top strings to act as permanent drone anchors while moving your bass fingers through I, IV, vi, and V for an instantly expansive, anthemic sound.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'Diatonic scale relative to Capo 4.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Expansive major mode stadium clarity.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Anchored G, Cadd9, and Em7 shapes.' },
+      ],
+    },
+  },
+
+  'over-the-hills-and-far-away': {
+    slug: 'over-the-hills-and-far-away',
+    songTitle: 'Over the Hills and Far Away',
+    artist: 'Led Zeppelin',
+    key: 'G Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Celtic Folk Hammer-Ons & Explosive Rock Dynamics',
+    coreSecret: 'Open-String Celtic Pull-Off Embellishments Exploding into Heavy Blues-Rock Power',
+    emotionalHook: 'Jimmy Page merges mystical British folk with volcanic hard rock. The song begins with intricate hammer-ons and pull-offs on the low open strings, evoking medieval English minstrels, before John Bonham\'s thunderous drums enter and Page\'s Gibson Les Paul transforms the gentle acoustic motif into an earth-shaking rock anthem.',
+    romanProgression: 'I - V6 - vi7 - IV - V - I (Acoustic) | II - I - V (Heavy Section)',
+    chords: ['G', 'D/F#', 'Em7', 'C', 'D', 'A'],
+    progressionExplanation: [
+      'Open String Riffing: Rapid hammer-ons and pull-offs on strings 4, 3, and 2 revolving around open G.',
+      'G to D/F# to Em7: Stepwise bass descent connecting the folk acoustic verses.',
+      'C (IV) to D (V): Diatonic resolution driving the acoustic phrase home.',
+      'A major (II) in Heavy Section: Secondary dominant adding swagger and raw hard-rock punch.',
+    ],
+    voiceLeadingInsights: [
+      'Pulling off to open strings allows rapid melodic phrasing with natural acoustic chime and sustain.',
+      'The dynamic jump from delicate acoustic fingerstyle to overdriven Les Paul creates one of the most thrilling transitions in rock history.',
+      'The major II chord (A) in the rock section acts as a secondary dominant (V/V), lifting the harmonic energy sky-high.',
+    ],
+    guitarPerspective: 'Keep your pull-offs crisp and decisive at 96 BPM. Ensure the open strings ring out at equal volume to the fretted notes. When the heavy section hits, dig in with aggressive downstrokes.',
+    songwriterTakeaway: 'Contrast a delicate, pastoral acoustic intro with an explosive heavy rock chorus to double the perceived power and emotional scope of your song.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The foundation of the acoustic hammer-on intro.' },
+        { name: 'G Mixolydian Mode', slug: 'mixolydian', description: 'Supplies the Celtic modal flavor in Page\'s acoustic flourishes.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The mode of classic British folk-rock.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open G, C, D, and Em7 shapes.' },
+      ],
+    },
+  },
+
+  'space-oddity': {
+    slug: 'space-oddity',
+    songTitle: 'Space Oddity',
+    artist: 'David Bowie',
+    key: 'C Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Minor iv Modal Borrowing & Cosmic Isolation',
+    coreSecret: 'The Sudden Collapse of Subdominant F into Borrowed Minor iv (Fm) Creating Zero-Gravity Weightlessness',
+    emotionalHook: 'David Bowie paints Major Tom\'s ascent into the cosmos through harmonic storytelling. After launching through bright C and ascending secondary dominant E7 into F major, the music suddenly collapses into an unexpected F minor (iv) chord. By lowering the A natural to an Ab, Bowie removes all harmonic gravity, plunging the listener into the eerie, awe-inspiring silence of deep space.',
+    romanProgression: 'I - V7/vi - IV - iv - I',
+    chords: ['C', 'Em', 'Am', 'D7/F#', 'E7', 'F', 'Fm'],
+    progressionExplanation: [
+      'Fmaj7 to Em: The quiet, hovering intro oscillation establishing cosmic distance.',
+      'C to Em to Am: Earthbound verse storytelling with walking basslines.',
+      'E7 (V7/vi): Secondary dominant chord building ascending liftoff anticipation.',
+      'F (IV) to Fm (iv): The genius modal interchange: major IV collapses into minor iv, inducing weightlessness.',
+      'C (I): Warm return to the home tonic as Major Tom gazes down upon planet Earth.',
+    ],
+    voiceLeadingInsights: [
+      'The chromatic line descent (A in F major → Ab in F minor → G in C major) is the definitive voice leading motif of the song.',
+      'The minor iv chord (Fm) borrows from the parallel C natural minor scale, injecting profound tragic wonder.',
+      'The 12-string acoustic strumming provides wide acoustic presence that complements the analog Mellotron strings.',
+    ],
+    guitarPerspective: 'Keep your tempo measured and theatrical at 68 BPM. On the liftoff sequence (C → E7 → F → Fm → C), lift your 2nd finger cleanly from F to Fm so the Ab note rings with pristine clarity.',
+    songwriterTakeaway: 'When your lyrics describe isolation, wonder, or drifting into the unknown, move from major IV to minor iv (F to Fm in C major) to instantly create a zero-gravity emotional sigh.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The home diatonic framework.' },
+        { name: 'C Natural Minor Scale', slug: 'minor', description: 'The parallel minor scale supplying the borrowed Fm chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The parallel minor mode providing the Ab color note.' },
+      ],
+      chords: [
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'Fretting F major and F minor at the 1st fret.' },
+        { name: 'Secondary Dominants', slug: 'secondary-dominants', description: 'How E7 builds liftoff tension.' },
+      ],
+    },
+  },
 };
 
 /**
