@@ -134,6 +134,11 @@ import hurtsSoGoodData from '@/data/songs/hurts-so-good.json';
 import takeALongLineData from '@/data/songs/take-a-long-line.json';
 import afterTheRainData from '@/data/songs/after-the-rain.json';
 import amIEverGonnaSeeYourFaceAgainData from '@/data/songs/am-i-ever-gonna-see-your-face-again.json';
+import takeMeHomeCountryRoadsData from '@/data/songs/take-me-home-country-roads.json';
+import haveYouEverSeenTheRainData from '@/data/songs/have-you-ever-seen-the-rain.json';
+import heartOfGoldData from '@/data/songs/heart-of-gold.json';
+import fastCarData from '@/data/songs/fast-car.json';
+import toHerDoorData from '@/data/songs/to-her-door.json';
 
 export interface SongData {
   songInfo: {
@@ -480,6 +485,11 @@ const songDatabase: Record<string, SongData> = {
   'take-a-long-line': takeALongLineData as SongData,
   'after-the-rain': afterTheRainData as SongData,
   'am-i-ever-gonna-see-your-face-again': amIEverGonnaSeeYourFaceAgainData as SongData,
+  'take-me-home-country-roads': takeMeHomeCountryRoadsData as SongData,
+  'have-you-ever-seen-the-rain': haveYouEverSeenTheRainData as SongData,
+  'heart-of-gold': heartOfGoldData as SongData,
+  'fast-car': fastCarData as SongData,
+  'to-her-door': toHerDoorData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

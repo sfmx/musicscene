@@ -1,0 +1,389 @@
+{
+  "songInfo": {
+    "title": "Heart of Gold",
+    "artist": "Neil Young",
+    "album": "Harvest",
+    "released": "1972",
+    "genre": "Folk",
+    "tempo": "88 BPM",
+    "duration": "3:07",
+    "key": "G Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G major (E minor relative polarity)",
+      "scalesUsed": [
+        {
+          "scale": "G major",
+          "notes": "G - A - B - C - D - E - F# - G",
+          "application": "Provides the diatonic chord foundation (Em, C, D, G) connecting the minor verse to the major resolution"
+        },
+        {
+          "scale": "E minor pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Shapes the iconic acoustic intro riff and bluesy fills around the Em7 chord"
+        }
+      ],
+      "modalCharacter": "Aeolian / Ionian duality with rugged, melancholic folk-rock resonance",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "C",
+          "D",
+          "G"
+        ],
+        "progression": "vi - IV - V - I",
+        "description": "The classic minor-to-major narrative progression. Starting on the introspective Em (vi) and rising through subdominant C (IV) and dominant D (V) into a warm tonic G (I) resolution."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "Em7 - D - Em",
+          "romanNumerals": "vi7 - V - vi",
+          "description": "Iconic acoustic riff built on Em7 and D with rhythmic percussive mutes and single-note bass walkups"
+        },
+        {
+          "section": "Verse",
+          "progression": "Em - C - D - G",
+          "romanNumerals": "vi - IV - V - I",
+          "description": "Storytelling progression moving from minor introspection to major warmth and back"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Em - G - C - G",
+          "romanNumerals": "vi - I - IV - I",
+          "description": "The memorable sing-along hook balancing minor depth with open G major resolution"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "vi - IV - V - I",
+          "romanNumerals": "Scale Practice",
+          "description": "Open position E minor / G major scale study highlighting hammer-ons and chord-tone embellishments"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (vi) - Relative minor establishing the searching, contemplative atmosphere",
+        "C (IV) - Subdominant chord adding hope and emotional lift",
+        "D (V) - Dominant chord creating natural harmonic resolution pulling toward G",
+        "G (I) - Tonic chord representing the elusive, radiant 'heart of gold'"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Acoustic Hammer-On Embellishments",
+      "description": "Hammering open strings into chord tones (such as hammering the 2nd fret on the D and A strings) to create Neil Young's organic acoustic signature sound",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Em7 chord shape: 0-2-2-0-3-0 or 0-2-0-0-3-0",
+          "Hammer open D string to 2nd fret (E note) on beat 1",
+          "Quick transition to D major with open high E string ringing",
+          "Return cleanly to Em with a strong downward acoustic strum"
+        ],
+        "sequence": [
+          "Fret the low E and open strings for Em",
+          "Hammer index/middle finger onto the 2nd fret of the D string while striking",
+          "Quickly shift to the open D chord shape on beat 3",
+          "Snap back into full Em with a percussive right-hand brush"
+        ],
+        "tips": [
+          "Strike with the fingertip directly behind the fret wire for a crisp hammer-on snap",
+          "Let the open strings continue ringing while hammering for maximum acoustic resonance",
+          "Keep right wrist relaxed and bouncing at 88 BPM"
+        ],
+        "chords": [
+          "Em7",
+          "D",
+          "Em"
+        ],
+        "progression": "Em7 - D - Em"
+      }
+    },
+    {
+      "name": "Walking Basslines & Single-Note Pickups",
+      "description": "Playing single bass notes (such as open E to 2nd fret F# to 3rd fret G) between chord changes to propel the rhythm forward",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Low E string: open E (0) to 2nd fret F# (2) to 3rd fret G (3)",
+          "5th string: open A (0) to 2nd fret B (2) to 3rd fret C (3)",
+          "Seamlessly blend single picked notes into full downward chord strums"
+        ],
+        "sequence": [
+          "End the chord bar with a single bass pickup on beat 4-and",
+          "Land squarely on the root note of the next chord on beat 1",
+          "Brush through the treble strings on beat 2",
+          "Repeat the walking sequence to connect each section"
+        ],
+        "tips": [
+          "Keep the volume of the single notes equal to the full strums",
+          "Use a firm, confident pick attack on the low bass strings",
+          "Do not rush the transition — maintain the leisurely 88 BPM country-rock pulse"
+        ],
+        "chords": [
+          "Em",
+          "C",
+          "D",
+          "G"
+        ],
+        "progression": "Em - C - D - G"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:21",
+      "technique": "Acoustic Hammer-On Embellishments",
+      "key": "G Major / E Minor",
+      "description": "Neil Young starts alone on his Martin dreadnought, strumming the iconic Em7 - D - Em motif with sharp rhythmic accents and hammer-ons.",
+      "chords": [
+        "Em7",
+        "D",
+        "Em"
+      ],
+      "progression": "Em7 - D - Em",
+      "notes": [
+        "Hit the low E bass string firmly on beat 1",
+        "Execute the clean snap onto the Em7 chord",
+        "Switch smoothly into D major, then strike back into Em",
+        "Let the open strings ring with authentic Harvest-era acoustic tone"
+      ],
+      "alphaTab": ":4 (0.6 2.5 0.4 0.3 3.2 0.1) :8 (0.6 2.5 0.4 0.3 3.2 0.1) :8 (0.4 2.3 3.2 2.1) :4 (0.4 2.3 3.2 2.1) :4 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (0.6 2.5 2.4 0.3 0.2 0.1) :4 r.4 :8 0.6 2.6 |",
+      "exerciseLabel": "Neil Young Iconic Em7-D-Em Harvest Riff"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:21-0:45",
+      "technique": "Walking Basslines & Single-Note Pickups",
+      "key": "G Major",
+      "description": "The lyrical verse cycles through Em, C, D, and G, blending open chord strums with single bass note transitions.",
+      "chords": [
+        "Em",
+        "C",
+        "D",
+        "G"
+      ],
+      "progression": "Em - C - D - G",
+      "notes": [
+        "Warm, relaxed strumming on the Em chord",
+        "Transition to C on the 5th string (3rd fret)",
+        "D major creates dominant tension before resolving into full open G",
+        "Walking bass line on string 6 leads back into Em"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) | :2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) | :2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Contemplative Verse vi-IV-V-I Flow"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:45-1:05",
+      "technique": "Open Cowboy Chord Transitions",
+      "key": "G Major",
+      "description": "The chorus elevates the vocal theme with ringing open chords: Em to G, then resolving to C and back to G.",
+      "chords": [
+        "Em",
+        "G",
+        "C"
+      ],
+      "progression": "Em - G - C - G",
+      "notes": [
+        "Increase strumming intensity for the vocal hook",
+        "Let the open high E and B strings ring out continuously",
+        "Seamlessly pivot between Em and G shapes"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Sing-Along Chorus Hook"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "Minor Pentatonic Scale Run",
+      "key": "E Minor",
+      "description": "Open position E minor pentatonic scale run connecting the core notes used in Neil Young's acoustic fills and riffs.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "vi - I - IV - V",
+      "notes": [
+        "Practice alternate picking through the open strings",
+        "Focus on accurate finger placement on 2nd and 3rd frets",
+        "Incorporate subtle vibrato when landing on the low and high E notes"
+      ],
+      "alphaTab": ":8 0.6 3.6 0.5 2.5 :4 0.4 :8 2.4 0.3 | :8 2.3 0.2 3.2 0.1 :2 3.1 | :8 3.1 0.1 3.2 0.2 :4 2.3 :8 0.3 2.4 | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Open E Minor Pentatonic Acoustic Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Martin D-28 or D-45 Dreadnought Acoustic",
+      "alternatives": [
+        "Gibson J-45",
+        "Yamaha FG800",
+        "Guild D-40",
+        "Any solid-spruce top acoustic guitar"
+      ],
+      "pickup": "Natural acoustic microphone capture (Neumann KM84 or Shure SM81 style)"
+    },
+    "amp": {
+      "recommended": "Acoustic amplifier or direct to studio console with analog preamp",
+      "alternatives": [
+        "Fishman Loudbox",
+        "AER Compact 60",
+        "Clean vintage tube amp"
+      ],
+      "settings": {
+        "gain": "3 (uncompressed natural tone)",
+        "treble": "5-6 (warm, woody treble)",
+        "middle": "6 (pronounced acoustic body resonance)",
+        "bass": "6 (deep, authoritative low-end punch)",
+        "presence": "5 (smooth, unhyped highs)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Warm analog plate reverb",
+      "other": "Harmonica in the key of G on a neck rack (optional for authentic Neil Young performance)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the 4 Fundamental Chords (Em, C, D, G)",
+      "steps": [
+        "Learn open Em, C, D, and G chord shapes",
+        "Practice the verse progression (Em - C - D - G) with steady quarter-note strums",
+        "Work on smooth finger placement without muting adjacent open strings",
+        "Play along with the recording at 70 BPM to build confidence"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Nail the Signature Intro Riff & Hammer-Ons",
+      "steps": [
+        "Master the Em7 chord shape (0-2-2-0-3-0 or 0-2-0-0-3-0) with the pinky/ring finger on the B string",
+        "Practice the snap hammer-on from open D string to 2nd fret",
+        "Incorporate the walking bass notes (0-2-3 on the low E string)",
+        "Bring the complete song up to the authentic 88 BPM recording tempo"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Expressive Dynamics & Harmonica Accompaniment",
+      "steps": [
+        "Replicate Neil Young's loose, emotive right-hand strumming dynamics",
+        "Add subtle syncopated upstroke accents on offbeats",
+        "Mount a G harmonica on a neck rack and practice simultaneous acoustic rhythm and harmonica leads",
+        "Perform the entire song with compelling storytelling presence"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing too stiffly — Neil Young's rhythm is loose, expressive, and human",
+      "Muting the open high E string when fretting the D chord",
+      "Rushing the tempo beyond 88 BPM; the song breathes at a laid-back pace",
+      "Over-complicating the hammer-ons instead of keeping them snappy and percussive"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Em, C, D, G open chord finger warm-up",
+      "5 minutes: Intro riff hammer-on mechanics (Em7 - D - Em) with a metronome at 80 BPM",
+      "5 minutes: Walking bass line pickups connecting verse chords",
+      "5 minutes: Chorus flow (Em - G - C - G) with dynamic strumming accents",
+      "5 minutes: Full run-through from intro to outro"
+    ],
+    "focusAreas": [
+      "Crisp hammer-on articulation on the D string",
+      "Accurate bass string targeting on beats 1 and 3",
+      "Loose, rhythmic wrist action at 88 BPM",
+      "Capturing the rugged Harvest acoustic tone"
+    ],
+    "metronomeWork": [
+      "Set metronome to 75 BPM to lock in the Em7 - D intro riff timing",
+      "Advance to 88 BPM once the hammer-ons and chord changes are seamless",
+      "Practice feeling the pulse on beats 2 and 4 to develop organic groove",
+      "Ensure steady tempo during the transition between verse and chorus"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Old Man",
+        "difficulty": "Intermediate",
+        "similarity": "Another masterpiece from Harvest featuring acoustic fingerpicking, open D shapes, and banjitar color"
+      },
+      {
+        "title": "Rockin' in the Free World",
+        "difficulty": "Beginner",
+        "similarity": "Features similar open Em-D-C chord shapes with higher overdrive and rock attitude"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic acoustic 12-string intro with hammer-on embellishments and open G chords"
+      },
+      {
+        "title": "Horse with No Name",
+        "artist": "America",
+        "difficulty": "Beginner",
+        "similarity": "Atmospheric two-chord acoustic folk strumming in open Em"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Knockin' on Heaven's Door",
+        "artist": "Bob Dylan",
+        "difficulty": "Beginner",
+        "similarity": "Foundational open G - D - Am / G - D - C progression with timeless campfire appeal"
+      },
+      {
+        "title": "Landslide",
+        "artist": "Fleetwood Mac",
+        "difficulty": "Intermediate",
+        "similarity": "Next step: intricate Travis picking over open C, G/B, and Am shapes"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "open-chords",
+      "strumming",
+      "acoustic-guitar",
+      "folk",
+      "classic-rock",
+      "beginner",
+      "rhythm-guitar",
+      "song-analysis",
+      "major-key"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}
+

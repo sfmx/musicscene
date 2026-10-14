@@ -55,6 +55,11 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'take-a-long-line',
   'after-the-rain',
   'am-i-ever-gonna-see-your-face-again',
+  'take-me-home-country-roads',
+  'have-you-ever-seen-the-rain',
+  'heart-of-gold',
+  'fast-car',
+  'to-her-door',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

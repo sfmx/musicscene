@@ -2035,6 +2035,212 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'take-me-home-country-roads': {
+    slug: 'take-me-home-country-roads',
+    songTitle: 'Take Me Home, Country Roads',
+    artist: 'John Denver',
+    key: 'A Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Subdominant Plagal Lifts & Folk Cadence',
+    coreSecret: 'The Bittersweet Shift from Pastoral Tonic G to Nostalgic vi (Em), Resolving with a Plagal IV-I Lift',
+    emotionalHook: 'Denver balances the pure optimism of G major with the wistful ache of E minor. When the chorus arrives, it pairs the classic I - V - vi - IV pop-folk cycle with an evocative IV - I (Plagal "Amen") cadence that imprints an irresistible sensation of arriving safely home.',
+    romanProgression: 'I - vi - V - IV - I',
+    chords: ['G', 'Em', 'D', 'C', 'G'],
+    progressionExplanation: [
+      'G (I): The grounded, radiant tonic establishing the pastoral mountain valley.',
+      'Em (vi): The relative minor introducing homesick nostalgia and human warmth.',
+      'D (V): Dominant chord driving harmonic tension toward the horizon.',
+      'C (IV): Subdominant chord creating an expansive emotional swell.',
+      'G (I): Final resolution bringing the traveler back home.',
+    ],
+    voiceLeadingInsights: [
+      'The alternating bass line moves between root and fifth (G on string 6 to D on string 4), creating an unstoppable walking momentum.',
+      'In the chorus, the vocal melody arches up to the high D note over the Em and C chords, magnifying the longing in the lyrics.',
+      'The bridge shifts decisively to Em and climaxes on D7, introducing a bluesy minor-seventh tension before releasing into the final chorus.',
+    ],
+    guitarPerspective: 'Capo on the 2nd fret allows you to use standard open G "cowboy" chords while sounding in John Denver\'s soaring vocal key of A major. Focus on the boom-chick alternating bass technique to capture authentic bluegrass-folk acoustic groove.',
+    songwriterTakeaway: 'To write an unforgettable singalong, anchor your verse in the relative minor (vi) for emotional intimacy, then release into an expansive I - V - vi - IV chorus where every line resolves with a comforting Plagal IV - I cadence.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The diatonic framework connecting all open chords in the progression.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic note pool shaping Denver\'s vocal melodies and acoustic fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright major mode that gives the song its warm, pastoral character.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Foundational open G, C, and D cowboy shapes.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'How the Em relative minor adds warmth and nostalgia.' },
+        { name: 'Seventh Chords', slug: 'seventh', description: 'How D7 provides dominant drive at the climax of the bridge.' },
+      ],
+    },
+  },
+
+  'have-you-ever-seen-the-rain': {
+    slug: 'have-you-ever-seen-the-rain',
+    songTitle: 'Have You Ever Seen the Rain',
+    artist: 'Creedence Clearwater Revival',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Stepwise Basslines',
+    coreSecret: 'The Stepwise Chromatic-Diatonic Bass Walkdown (C → B → A → G) Transforming a Simple Pop Loop into High Drama',
+    emotionalHook: 'While the verse rocks steadily on a two-chord C - G vamp, the chorus unleashes a poignant descending bass line: C → C/B → Am → Am/G. This downward stepwise motion creates an emotional sigh beneath the bittersweet question: "Have you ever seen the rain, comin\' down on a sunny day?"',
+    romanProgression: 'IV - V - I - I/VII - vi - vi/V - IV - V - I',
+    chords: ['F', 'G', 'C', 'C/B', 'Am', 'Am/G', 'F', 'G', 'C'],
+    progressionExplanation: [
+      'F (IV): The chorus opens with an uplifting subdominant leap, raising the emotional stakes.',
+      'G (V): Dominant chord building forward expectation.',
+      'C (I) to C/B (I/VII): The tonic chord drops its bass note by a half-step to B on the 5th string.',
+      'Am (vi) to Am/G (vi/V): The bass continues descending through the open A string down to low G on the 6th string.',
+      'F (IV) to G (V) to C (I): Classic cadence resolving the downward cascade back to stable ground.',
+    ],
+    voiceLeadingInsights: [
+      'The bass line traces an unbroken 4-note downward stair-step: C (fret 3, string 5) → B (fret 2, string 5) → A (open string 5) → G (fret 3, string 6).',
+      'The upper triad voices hold tight common tones (C and E notes ring across both C and Am), making the descending bass note stand out dramatically.',
+      'The verse deliberately suppresses chord movement (vamping solely between C and G) so the chorus bass walkdown lands with maximum emotional impact.',
+    ],
+    guitarPerspective: 'Keep your strumming hand in constant eighth-note motion. When you reach the chorus walkdown, pick the designated bass note squarely on beat 1 and beat 3, letting light brush strums fill the offbeats.',
+    songwriterTakeaway: 'When you have a standard I - vi chord change, never jump abruptly between them. Walk the bass down step-by-step through the 7th degree (I → I/VII → vi). It instantly transforms a generic transition into an unforgettable hook.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The diatonic foundation enabling the seamless stepwise bass descent.' },
+        { name: 'C Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic scale defining Fogerty\'s soulful vocal lines.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Pure major mode clarity without harmonic distortion or dissonance.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Core C, F, and G open triads.' },
+        { name: 'Slash Chords', slug: 'slash', description: 'How C/B and Am/G create elegant voice leading in the lower register.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'The Am chord providing melancholy balance in the chorus.' },
+      ],
+    },
+  },
+
+  'heart-of-gold': {
+    slug: 'heart-of-gold',
+    songTitle: 'Heart of Gold',
+    artist: 'Neil Young',
+    key: 'G Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Minor-to-Major Polarity & Folk-Rock Cadence',
+    coreSecret: 'The Dark-to-Light Polarity Between Introspective E Minor and Radiant G Major',
+    emotionalHook: 'The entire song hinges on the emotional tension between relative keys: E minor (the searching, vulnerable loner) and G major (the warm, elusive heart of gold). Starting on Em and resolving through C and D into G gives the listener the visceral sensation of stepping from shadow into sunlight.',
+    romanProgression: 'vi - IV - V - I',
+    chords: ['Em', 'C', 'D', 'G'],
+    progressionExplanation: [
+      'Em (vi): The introspective minor root capturing the wandering, melancholic narrator.',
+      'C (IV): Subdominant lift adding hope and romantic aspiration.',
+      'D (V): Dominant momentum driving toward resolution.',
+      'G (I): Warm, ringing major resolution representing the elusive golden ideal.',
+    ],
+    voiceLeadingInsights: [
+      'The intro riff on Em7 hammers the 2nd fret of the D string (E note) while keeping the B and high E open, blending minor darkness with bright overtones.',
+      'Single-note bass runs on the 6th string (open E → 2nd fret F# → 3rd fret G) act as physical bridges connecting the minor verse to the major resolution.',
+      'The chorus simplifies the harmonic motion down to Em - G - C - G, locking in a hypnotic circular singalong cadence.',
+    ],
+    guitarPerspective: 'Played on an acoustic dreadnought with relaxed, expressive right-hand dynamics. Hit the low strings hard on the downbeat, snap the hammer-ons crisply, and let the high strings ring unimpeded.',
+    songwriterTakeaway: 'If your song is about searching or longing, do not start your verse on the tonic major (I). Start on the relative minor (vi) and hold back the tonic until the end of the phrase. The release will feel ten times more rewarding.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The overarching diatonic scale housing both the G tonic and Em relative minor.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The rugged acoustic scale shaping Neil Young\'s iconic intro riff and fills.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'Natural minor mode establishing the melancholic mood of the verses.' },
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The radiant major mode providing the satisfying chorus release.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'How Em functions as the emotional engine of the song.' },
+        { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D shapes creating bright acoustic resonance.' },
+      ],
+    },
+  },
+
+  'fast-car': {
+    slug: 'fast-car',
+    songTitle: 'Fast Car',
+    artist: 'Tracy Chapman',
+    key: 'D Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Parallel Harmonies & Intimate Dyads',
+    coreSecret: 'The Unresolved Subdominant IVmaj7 Anchor Combined with High-Neck Parallel 3rds and 6ths',
+    emotionalHook: 'By opening every loop on Cmaj7 (the IV chord relative to capo), the music never settles into a resting tonic. Instead, it feels suspended in mid-air—perfectly capturing the restlessness, hope, and vulnerability of wanting to leave everything behind.',
+    romanProgression: 'IV - I - vi - V',
+    chords: ['Cmaj7', 'G', 'Em', 'D'],
+    progressionExplanation: [
+      'Cmaj7 (IV): Floating subdominant chord starting the loop on an unresolved, hopeful question.',
+      'G (I): Brief tonic grounding before the rhythm ascends the neck.',
+      'Em (vi): Voiced high on frets 7 and 8, introducing delicate minor vulnerability.',
+      'D (V): Voiced on frets 5 and 7, resolving the phrase and cycling immediately back to Cmaj7.',
+    ],
+    voiceLeadingInsights: [
+      'The intro combines an open-position pinch with a sudden slide up to the 7th and 8th frets, creating an octave-spanning dynamic range on a solo acoustic guitar.',
+      'Parallel intervals between the 5th and 2nd strings outline the chord roots and 3rds, stripping away dense clutter to leave pure, evocative counterpoint.',
+      'When the chorus enters, the delicate two-finger dyads vanish, replaced by full, ringing open-chord strumming that unleashes pent-up emotional energy.',
+    ],
+    guitarPerspective: 'Capo on 2nd fret. Use your thumb on the bass strings (5 and 6) and your index/middle fingers on strings 2 and 3. Snap the hammer-on immediately on the 2nd string for Chapman\'s signature rhythmic bounce.',
+    songwriterTakeaway: 'You don\'t need 10 chords to tell an epic story. A single hypnotic two-bar fingerpicked loop can sustain a 5-minute narrative if the voicings have melodic counterpoint and the chorus explodes with dynamic contrast.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Scale', slug: 'major', description: 'The sounding key of the song providing the bright, open harmonic foundation.' },
+        { name: 'C Major Scale', slug: 'major', description: 'The shape-based diatonic scale utilized relative to the 2nd-fret capo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Major mode clarity that supports bittersweet, conversational folk lyrics.' },
+      ],
+      chords: [
+        { name: 'Major Seventh Chords', slug: 'major-seventh', description: 'How Cmaj7 creates the signature wistful, floating atmosphere.' },
+        { name: 'Major Chords', slug: 'major', description: 'Open G and D shapes used in the explosive campfire chorus strum.' },
+      ],
+    },
+  },
+
+  'to-her-door': {
+    slug: 'to-her-door',
+    songTitle: 'To Her Door',
+    artist: 'Paul Kelly',
+    key: 'G Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Diatonic Storytelling Cycles & Folk Cadence',
+    coreSecret: 'The Unflinching I - V - vi - IV Narrative Engine Propelling an Australian Odyssey',
+    emotionalHook: 'Paul Kelly mirrors the relentless hum of tires on the highway by cycling continuously through G - D - Em - C. The circular progression never halts, mirroring the protagonist\'s physical and emotional momentum as he journeys from Queensland down to Sydney seeking redemption.',
+    romanProgression: 'I - V - vi - IV - I - V - I',
+    chords: ['G', 'D', 'Em', 'C', 'G', 'D', 'G'],
+    progressionExplanation: [
+      'G (I): The grounded home base establishing the starting point of the journey.',
+      'D (V): Dominant momentum pulling the traveler down the road.',
+      'Em (vi): The relative minor introducing regret, memory, and sobriety.',
+      'C (IV): Subdominant lift bringing hope and the promise of renewal.',
+      'G - D - G (I - V - I): The crisp two-beat turnaround that snaps each stanza shut like a car door.',
+    ],
+    voiceLeadingInsights: [
+      'Kelly anchors the progression with the high D and G notes (frets 3 on strings 1 and 2), creating an acoustic drone that rings through every single chord change.',
+      'The chorus pivots to the dominant D chord on the downbeat ("He\'s got his daughter on his shoulders..."), shifting the focus from travel to revelation.',
+      'The brief bridge shifts to Em - C - G - D, providing a brief minor pause before the relentless engine resumes.',
+    ],
+    guitarPerspective: 'Keep a driving, relaxed 108 BPM down-up strumming pattern with a solid backbeat accent on beats 2 and 4. Use the 4-finger G chord (3-2-0-0-3-3) to keep your ring and pinky fingers anchored for lightning-fast transitions.',
+    songwriterTakeaway: 'When writing a long narrative ballad, resist the temptation to change chords erratically. A solid, cyclical 4-chord loop gives listeners an anchor so they can focus entirely on the characters and storytelling.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The diatonic foundation connecting all chords in the narrative progression.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic scale shaping Kelly\'s conversational vocal delivery.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Pure major mode storytelling resonance that resonates with generations of listeners.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D cowboy shapes.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'How the Em chord introduces reflective depth to the narrative.' },
+      ],
+    },
+  },
 };
 
 /**
