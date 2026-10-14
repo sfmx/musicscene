@@ -6,6 +6,7 @@ import SongAnalyticsOverview from '@/components/SongAnalysis/SongAnalyticsOvervi
 export const metadata: Metadata = {
   title: 'Song Analysis Analytics',
   description: 'Analytics and statistics for our song analysis collection. Difficulty ratings, genre distribution, and technique coverage.',
+  robots: { index: false, follow: true },
 };
 
 export default function SongAnalyticsPage() {

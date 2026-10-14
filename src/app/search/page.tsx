@@ -3,8 +3,9 @@ import { Suspense } from 'react';
 import SearchBrowsePage from '@/components/Search/SearchBrowsePage';
 
 export const metadata: Metadata = {
-  title: 'Search All Content | Music Scene',
+  title: 'Search All Content',
   description: 'Search and filter guitar lessons, song analyses, theory guides, practice exercises, and gear reviews.',
+  robots: { index: false, follow: true },
 };
 
 export default function SearchPage() {

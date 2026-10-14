@@ -96,13 +96,6 @@ export default function RootLayout({
         {children}
         <CookieConsent />
         <LeadMagnetModal />
-        {REVENUE_CONFIG.adsEnabled && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${REVENUE_CONFIG.adsensePublisherId}`}
-            crossOrigin="anonymous"
-          />
-        )}
       </body>
     </html>
   );

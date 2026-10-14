@@ -21,20 +21,29 @@ const FORMAT_STYLES: Record<AdSlotProps['format'], { minHeight: string; maxWidth
   leaderboard: { minHeight: '90px', maxWidth: '970px' },
 };
 
+/**
+ * AdSense `data-ad-slot` must be the numeric ad unit ID from the AdSense console
+ * (e.g. "1234567890"). Placeholder names such as "content-mid" generate invalid
+ * ad requests, so those slots render nothing and placement is left to Auto ads
+ * until real ad unit IDs are configured.
+ */
+const isValidAdUnitId = (slotId: string) => /^\d{6,}$/.test(slotId);
+
 export default function AdSlot({ slotId, format, className = '' }: AdSlotProps) {
   const adPushed = useRef(false);
+  const enabled = REVENUE_CONFIG.adsEnabled && isValidAdUnitId(slotId);
 
   useEffect(() => {
-    if (!REVENUE_CONFIG.adsEnabled || adPushed.current) return;
+    if (!enabled || adPushed.current) return;
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
       adPushed.current = true;
     } catch {
       // AdSense not loaded yet or ad blocker active
     }
-  }, []);
+  }, [enabled]);
 
-  if (!REVENUE_CONFIG.adsEnabled) {
+  if (!enabled) {
     return null;
   }
 

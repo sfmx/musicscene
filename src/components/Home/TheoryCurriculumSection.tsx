@@ -41,12 +41,6 @@ export default function TheoryCurriculumSection() {
       href: '/lessons/theory/modes',
       description: 'Understand the distinct mood of every mode and how guitar legends swap standard scales for modal swagger.',
       topics: [
-        { label: 'Dorian Mode', href: '/lessons/theory/scales/dorian' },
-        { label: 'Mixolydian Mode', href: '/lessons/theory/scales/mixolydian' },
-        { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },
-        { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },
-        { label: 'Phrygian Mode', href: '/lessons/theory/scales/phrygian' },
-        { label: 'All 7 Modes', href: '/lessons/theory/modes' },
         { label: 'Dorian Mode', href: '/lessons/theory/modes/dorian/' },
         { label: 'Mixolydian Mode', href: '/lessons/theory/modes/mixolydian/' },
         { label: 'Aeolian Mode', href: '/lessons/theory/modes/aeolian/' },

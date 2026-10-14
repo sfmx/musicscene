@@ -28,17 +28,26 @@ import { getScalePageJsonLd } from '@/lib/structuredData';
 interface ScaleAnalysisPageTemplateProps {
   scaleSlug: string;
   displayName?: string;
+  /**
+   * Scale data loaded at build time by the server page component.
+   * When provided, the full lesson is prerendered into the static HTML
+   * (crawlers and no-JS clients see real content, not a loading spinner).
+   */
+  initialScaleData?: ScaleData;
 }
 
 export default function ScaleAnalysisPageTemplate({ 
   scaleSlug, 
-  displayName 
+  displayName,
+  initialScaleData,
 }: ScaleAnalysisPageTemplateProps) {
-  const [scaleData, setScaleData] = useState<ScaleData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [scaleData, setScaleData] = useState<ScaleData | null>(initialScaleData ?? null);
+  const [loading, setLoading] = useState(!initialScaleData);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (initialScaleData) return;
+
     async function loadScaleData() {
       try {
         setLoading(true);
@@ -57,7 +66,7 @@ export default function ScaleAnalysisPageTemplate({
     }
 
     loadScaleData();
-  }, [scaleSlug]);
+  }, [scaleSlug, initialScaleData]);
 
   if (loading) {
     return (
