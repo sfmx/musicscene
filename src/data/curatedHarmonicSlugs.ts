@@ -60,6 +60,11 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'heart-of-gold',
   'fast-car',
   'to-her-door',
+  'wild-world',
+  'patience',
+  'redemption-song',
+  'american-pie',
+  'better-be-home-soon',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

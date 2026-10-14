@@ -1,0 +1,406 @@
+{
+  "songInfo": {
+    "title": "Wild World",
+    "artist": "Cat Stevens",
+    "album": "Tea for the Tillerman",
+    "released": "1970",
+    "genre": "Folk",
+    "tempo": "76 BPM",
+    "duration": "3:20",
+    "key": "C Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C major (A minor relative center)",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Drives the circle of fifths verse progression (Am - D7 - G - Cmaj7 - F - Dm)"
+        },
+        {
+          "scale": "A harmonic minor",
+          "notes": "A - B - C - D - E - F - G# - A",
+          "application": "Enables the major E dominant chord (V of Am) with its G# leading tone"
+        },
+        {
+          "scale": "C major",
+          "notes": "C - D - E - F - G - A - B - C",
+          "application": "Provides the uplifting resolution and descending bass walkdown in the chorus"
+        }
+      ],
+      "modalCharacter": "Aeolian to Ionian oscillation with warm, introspective folk intimacy",
+      "keySignature": "No sharps or flats",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "D7",
+          "G",
+          "Cmaj7",
+          "F",
+          "Dm",
+          "E"
+        ],
+        "progression": "i - IV7 - VII - IIImaj7 - VI - ii - V",
+        "description": "A magnificent classical cycle of fifths descending chain in A minor. Each chord moves by a fourth up / fifth down, visiting every diatonic chord before culminating in the dominant E major turnaround."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Am - D7 - G - Cmaj7 - F - Dm - E",
+          "romanNumerals": "i - IV7 - VII - IIImaj7 - VI - ii - V",
+          "description": "The storytelling verse cycling smoothly through descending fifths with crisp acoustic strumming"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - G - F - C - G - F",
+          "romanNumerals": "I - V - IV - I - V - IV",
+          "description": "The uplifting sing-along chorus punctuated by the iconic single-note bass walkdown"
+        },
+        {
+          "section": "Chorus Turnaround Walk",
+          "progression": "C - C/B - Am - G - C",
+          "romanNumerals": "I - I/VII - vi - V - I",
+          "description": "The famous descending bass transition connecting chorus repetitions"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "i - IV - VII - III",
+          "romanNumerals": "Scale Practice",
+          "description": "Two-octave A minor and C major scale exercise showing the harmonic connection between relative keys"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Minor tonic establishing the introspective, protective mood",
+        "D7 (IV7) - Secondary dominant with sharp edge propelling into G",
+        "G (VII) - Cadence step pulling down into Cmaj7",
+        "Cmaj7 (IIImaj7) - Bittersweet major seventh color",
+        "E (V) - Dominant chord borrowed from A harmonic minor resolving with urgency back to Am"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Circle of Fifths Chord Voice Leading",
+      "description": "Fluidly moving through 7 distinct chord changes in a single verse progression while keeping right-hand strumming relaxed and rhythmically buoyant",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Am: X-0-2-2-1-0",
+          "D7: X-X-0-2-1-2",
+          "G: 3-2-0-0-0-3",
+          "Cmaj7: X-3-2-0-0-0 (leave the B string open for the lush major-seventh chord)",
+          "F: 1-3-3-2-1-1 or Fmaj7 (X-X-3-2-1-0)",
+          "Dm: X-X-0-2-3-1",
+          "E: 0-2-2-1-0-0"
+        ],
+        "sequence": [
+          "Establish steady 4/4 folk strumming at 76 BPM",
+          "Two beats per chord for the Am - D7 and G - Cmaj7 pairs",
+          "Full measure on E major building tension before the chorus"
+        ],
+        "tips": [
+          "Use the common fingerings (index finger stays close to fret 1 across Am, Cmaj7, and F)",
+          "Do not rush the Dm to E change — give the E chord full resonance",
+          "Play with a warm, flexible pick for clear string definition"
+        ],
+        "chords": [
+          "Am",
+          "D7",
+          "G",
+          "Cmaj7",
+          "F",
+          "Dm",
+          "E"
+        ],
+        "progression": "Am - D7 - G - Cmaj7 - F - Dm - E"
+      }
+    },
+    {
+      "name": "Single-Note Descending Bass Walkdown",
+      "description": "The signature Cat Stevens acoustic piano/guitar walkdown: picking individual bass notes (C on 5th string 3rd fret, B on 2nd fret, open A string, and low G on 6th string 3rd fret) into the C chord",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C note: 5th string 3rd fret (3.5)",
+          "B note: 5th string 2nd fret (2.5)",
+          "A note: 5th string open (0.5)",
+          "G note: 6th string 3rd fret (3.6)",
+          "Land on open C chord strum"
+        ],
+        "sequence": [
+          "End the chorus line on F",
+          "Play single quarter-note descending steps: C → B → A → G",
+          "Strum full ringing C major chord on beat 1 of the new bar"
+        ],
+        "tips": [
+          "Fret each bass note cleanly with your fingertips",
+          "Keep the tempo steady — don't speed up through the walkdown",
+          "Accent the low G note before resolving into C"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "F"
+        ],
+        "progression": "C - G - F"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Riff",
+      "timeStamp": "0:00-0:14",
+      "technique": "Circle of Fifths Chord Voice Leading",
+      "key": "C Major / A Minor",
+      "description": "Cat Stevens opens on acoustic guitar with a light percussive strum introducing the Am and D7 progression at 76 BPM.",
+      "chords": [
+        "Am",
+        "D7",
+        "G",
+        "Cmaj7"
+      ],
+      "progression": "Am - D7 - G - Cmaj7",
+      "notes": [
+        "Establish intimate folk tempo at 76 BPM",
+        "Light down-up strumming emphasizing the treble strings",
+        "Let the open Cmaj7 ring with wistful acoustic color"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (0.4 2.3 1.2 2.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 0.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.4 2.3 3.2 1.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Cat Stevens Tea for the Tillerman Intro"
+    },
+    {
+      "name": "Verse",
+      "timeStamp": "0:14-0:44",
+      "technique": "Circle of Fifths Chord Voice Leading",
+      "key": "A Minor / C Major",
+      "description": "The lyrical verse glides through the entire circle of fifths progression, conveying gentle warnings and care.",
+      "chords": [
+        "Am",
+        "D7",
+        "G",
+        "Cmaj7",
+        "F",
+        "Dm",
+        "E"
+      ],
+      "progression": "Am - D7 - G - Cmaj7 - F - Dm - E",
+      "notes": [
+        "Clean, distinct chord transitions every two beats",
+        "Emphasize the major E chord at the end of the stanza",
+        "Build anticipation toward the chorus release"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (0.4 2.3 1.2 2.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 0.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.4 2.3 3.2 1.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Descending Cycle of Fifths Flow"
+    },
+    {
+      "name": "Chorus",
+      "timeStamp": "0:44-1:12",
+      "technique": "Single-Note Descending Bass Walkdown",
+      "key": "C Major",
+      "description": "The iconic singalong chorus opens on C, moving through G and F, punctuated by the unforgettable descending single-note bass walkdown.",
+      "chords": [
+        "C",
+        "G",
+        "F"
+      ],
+      "progression": "C - G - F - C - G - F",
+      "notes": [
+        "Full, warm open strumming on C and G",
+        "Execute the clean quarter-note bass walkdown (3.5 - 2.5 - 0.5 - 3.6)",
+        "Sing the soaring vocal melody along with the acoustic pulse"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) | :4 3.5 :4 2.5 :4 0.5 :4 3.6 | :1 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Singalong Chorus & Bass Walkdown"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "Harmonic Minor & Major Scale Run",
+      "key": "A Minor / C Major",
+      "description": "Scale study highlighting the G# leading tone from A harmonic minor alongside the open C major scale.",
+      "chords": [
+        "Am",
+        "E",
+        "C",
+        "G"
+      ],
+      "progression": "i - V - III - VII",
+      "notes": [
+        "Notice how the G# note on string 3 fret 1 transforms the minor key into dominant E",
+        "Practice alternate picking across strings 5 through 1",
+        "Connect scale positions directly with the Am and C shapes"
+      ],
+      "alphaTab": ":8 0.5 2.5 3.5 0.4 :4 2.4 :8 1.3 2.3 | :8 0.2 1.2 3.2 0.1 :2 1.1 | :8 1.1 0.1 3.2 1.2 :4 0.2 :8 2.3 1.3 | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "A Harmonic Minor & C Major Interlock"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Ovation or Gibson J-180 Acoustic (or Martin 000-28)",
+      "alternatives": [
+        "Yamaha FG800",
+        "Taylor 214ce",
+        "Fender CD-60S",
+        "Any steel-string acoustic guitar"
+      ],
+      "pickup": "Under-saddle transducer or acoustic condenser mic placed at 12th fret"
+    },
+    "amp": {
+      "recommended": "Clean acoustic combo amplifier or direct studio preamp",
+      "alternatives": [
+        "Fishman Loudbox",
+        "AER Compact 60",
+        "Direct to PA via active DI box"
+      ],
+      "settings": {
+        "gain": "3-4 (clean acoustic dynamic range)",
+        "treble": "6 (bright, airy pick attack)",
+        "middle": "5 (warm vocal foundation)",
+        "bass": "5 (rich, balanced low-end resonance)",
+        "presence": "6 (sparkle on open strums)"
+      }
+    },
+    "effects": {
+      "distortion": "None",
+      "delay": "None",
+      "reverb": "Warm analog plate reverb",
+      "other": "Medium pick (0.60mm to 0.73mm) for balanced acoustic strumming"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Master the Chorus & Bass Walkdown",
+      "steps": [
+        "Learn open C, G, and F chord shapes",
+        "Practice the C - G - F chorus progression at 70 BPM",
+        "Practice the descending bass walkdown (C - B - A - G) as single notes with a metronome",
+        "Sing the famous chorus hook along with your rhythm"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Learn the Circle of Fifths Verse Sequence",
+      "steps": [
+        "Practice the chord transitions: Am → D7 → G → Cmaj7 → F → Dm → E",
+        "Notice how Cmaj7 simply lifts your index finger from standard C",
+        "Maintain unbroken down-up strumming across all 7 chord changes",
+        "Bring the complete song up to the 76 BPM recording speed"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Campfire Performance & Rhythmic Chops",
+      "steps": [
+        "Incorporate light percussive hand muting on offbeats",
+        "Deliver the dramatic vocal dynamics from gentle verse to soaring chorus",
+        "Play the entire song from memory with fluid confidence",
+        "Lead a group sing-along around the campfire"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Fumbling the quick Dm to E transition at the end of the verse",
+      "Rushing the bass walkdown between chorus repetitions",
+      "Muting the open B string on Cmaj7 (make sure it rings clearly)",
+      "Strumming too aggressively — keep the groove relaxed and conversational at 76 BPM"
+    ],
+    "practiceRoutine": [
+      "2 minutes: Open chord finger warm-up across Am, D7, G, and Cmaj7",
+      "5 minutes: Isolated drill of the verse cycle of fifths at 65 BPM",
+      "5 minutes: Practicing the chorus walkdown (C → B → A → G) into the C chord",
+      "5 minutes: Full run-through connecting verse into chorus",
+      "5 minutes: Singing along with the rhythm track"
+    ],
+    "focusAreas": [
+      "Clean chord changes through the 7-chord cycle",
+      "Steady quarter-note bass walkdown accuracy",
+      "Dynamic acoustic volume control between verse and chorus",
+      "Relaxed 76 BPM campfire folk groove"
+    ],
+    "metronomeWork": [
+      "Start at 65 BPM to lock in the verse chord transitions",
+      "Advance to 76 BPM once changes are effortless",
+      "Set metronome to clicks on beats 2 and 4 to develop natural groove",
+      "Verify tempo stability during the single-note bass walkdown"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Father and Son",
+        "difficulty": "Beginner",
+        "similarity": "Famous acoustic folk classic utilizing open G, C, D, and Am chord shapes"
+      },
+      {
+        "title": "Peace Train",
+        "difficulty": "Intermediate",
+        "similarity": "Upbeat acoustic folk strumming in open C major with joyful melodic hooks"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Have You Ever Seen the Rain",
+        "artist": "Creedence Clearwater Revival",
+        "difficulty": "Beginner",
+        "similarity": "Iconic acoustic classic rock featuring a similar descending bass walkdown in C major"
+      },
+      {
+        "title": "Heart of Gold",
+        "artist": "Neil Young",
+        "difficulty": "Beginner",
+        "similarity": "Folk-rock standard featuring single-note bass walks and open cowboy chords"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Stand By Me",
+        "artist": "Ben E. King",
+        "difficulty": "Beginner",
+        "similarity": "Foundational open chord progression exploring relative minor and major relationships"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to complex minor-key cycles of fifths and advanced acoustic arpeggios"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-14",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "open-chords",
+      "strumming",
+      "acoustic-guitar",
+      "folk",
+      "classic-rock",
+      "intermediate",
+      "rhythm-guitar",
+      "song-analysis",
+      "major-key"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}
+

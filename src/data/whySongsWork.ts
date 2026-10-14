@@ -2241,6 +2241,214 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'wild-world': {
+    slug: 'wild-world',
+    songTitle: 'Wild World',
+    artist: 'Cat Stevens',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Circle of Fifths & Descending Basslines',
+    coreSecret: 'The Classical Descending Circle of Fifths Chained into an Unforgettable Single-Note Bass Walkdown',
+    emotionalHook: 'The verse sweeps through a full Baroque-style descending circle of fifths (Am → D7 → G → Cmaj7 → F → Dm → E). When the chorus arrives, Stevens anchors the soaring vocal with an iconic quarter-note bass walkdown: C → B → A → G, making every repetition feel like a supportive, protective embrace.',
+    romanProgression: 'i - IV7 - VII - IIImaj7 - VI - ii - V',
+    chords: ['Am', 'D7', 'G', 'Cmaj7', 'F', 'Dm', 'E'],
+    progressionExplanation: [
+      'Am (i): Introspective minor home base.',
+      'D7 (IV7): Secondary dominant pulling down toward G with jazzy color.',
+      'G (VII): Step down relaxing tension into the relative major.',
+      'Cmaj7 (IIImaj7): Bittersweet major seventh shimmer.',
+      'F (VI) to Dm (ii): Gentle stepwise descent leading into the pre-chorus.',
+      'E (V): Dominant major chord borrowed from A harmonic minor, driving urgently back to Am.',
+    ],
+    voiceLeadingInsights: [
+      'Every chord in the verse is related by root movement of descending fifths (A → D → G → C → F → D → E).',
+      'The single-note bass walkdown in the chorus (C fret 3 string 5 → B fret 2 string 5 → A open string 5 → G fret 3 string 6) provides a counter-melody underneath the vocal.',
+      'The Cmaj7 chord adds a nostalgic, dreamy color by leaving the B string open, keeping the chord intimately voiced for acoustic guitar.',
+    ],
+    guitarPerspective: 'Keep your wrist loose and strum with a light, rhythmic bounce at 76 BPM. When you hit the chorus turnaround, dig into the single bass notes with authority so they ring out cleanly beneath the group vocals.',
+    songwriterTakeaway: 'The circle of fifths is the most powerful harmonic progression in western music. Chaining fifths together keeps your listeners completely captivated because each chord feels like a logical, satisfying consequence of the previous one.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The overarching diatonic scale housing the chorus changes and bass walkdown.' },
+        { name: 'A Harmonic Minor', slug: 'harmonic-minor', description: 'Provides the G# note that enables the major dominant E chord in the verse.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode defining the reflective mood of the verses.' },
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright major mode that provides the uplifting chorus release.' },
+      ],
+      chords: [
+        { name: 'Major Seventh Chords', slug: 'major-seventh', description: 'How Cmaj7 introduces sophisticated, dreamy folk color.' },
+        { name: 'Seventh Chords', slug: 'seventh', description: 'How D7 functions as a secondary dominant in the verse.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Am and Dm functioning as the emotional anchors of the progression.' },
+      ],
+    },
+  },
+
+  'patience': {
+    slug: 'patience',
+    songTitle: 'Patience',
+    artist: "Guns N' Roses",
+    key: 'G Major',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Arpeggiated Ballads',
+    coreSecret: 'The Bright Major II Chord (A Major) Acting as a Secondary Dominant to Create Soaring Romance',
+    emotionalHook: 'Standard diatonic G major requires an A minor (ii) chord. By replacing it with a radiant A major (II) chord containing a non-diatonic C# note, GN\'R introduces a secondary dominant (V of V) that pushes with sweet, undeniable urgency into D major, turning a simple folk progression into an epic rock ballad.',
+    romanProgression: 'IV - I - II - V',
+    chords: ['C', 'G', 'A', 'D'],
+    progressionExplanation: [
+      'C (IV): Subdominant chord opening the phrase with hopeful, floating suspension.',
+      'G (I): Warm, grounded tonic chord providing brief reassurance.',
+      'A (II): Major second secondary dominant (V/V) introducing the bright C# leading tone.',
+      'D (V): Dominant chord resolving the romantic tension and cycling back to C.',
+    ],
+    voiceLeadingInsights: [
+      'The chromatic line inside the chords rises from C (in C chord) → B (in G chord) → C# (in A chord) → D (in D chord), creating a hidden ascending line.',
+      'Slash embellishes the D chord with classic folk-rock suspensions: Dsus4 (pinky on fret 3 high E) releasing into standard D, then pulling off to Dsus2 (open high E).',
+      'The anthemic outro shifts into a hypnotic two-chord stomp between D and G, simplifying the harmony to let the vocal chant dominate the room.',
+    ],
+    guitarPerspective: 'Three acoustic guitars interlock on the original track. Tuning down a half-step (Eb Standard) softens string tension, giving acoustic dreadnoughts a deeper, more resonant growl.',
+    songwriterTakeaway: 'When your progression feels too predictable, try changing your minor ii chord into a major II chord. The resulting secondary dominant creates an immediate, romantic lift that listeners instantly fall in love with.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The diatonic framework housing the open cowboy chords.' },
+        { name: 'A Mixolydian Mode', slug: 'mixolydian', description: 'Outlines the secondary dominant A major chord within the key of G.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright major foundation providing sweet acoustic warmth.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open C, G, A, and D shapes creating rich acoustic resonance.' },
+        { name: 'Suspended Chords', slug: 'suspended', description: 'How Dsus4 and Dsus2 create delicate melodic movement over static chords.' },
+      ],
+    },
+  },
+
+  'redemption-song': {
+    slug: 'redemption-song',
+    songTitle: 'Redemption Song',
+    artist: 'Bob Marley & The Wailers',
+    key: 'G Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Folk-Reggae Diatonic Anthems',
+    coreSecret: 'The Unadorned Pentatonic Intro Melody Channeling Century-Old Folk Spirituals into Modern Reggae',
+    emotionalHook: 'Stripping away all electric reggae instrumentation, Marley delivers an intimate acoustic prayer. The solo single-note intro on strings 6, 5, and 4 draws directly from the G major pentatonic scale, evoking traditional Celtic and African folk laments before bursting into the communal anthem of freedom.',
+    romanProgression: 'I - vi - IV - ii - V',
+    chords: ['G', 'Em', 'C', 'Am', 'D'],
+    progressionExplanation: [
+      'G (I): The spiritual tonic anchor grounding the narrator.',
+      'Em (vi): The reflective relative minor carrying the historical weight of captivity.',
+      'C (IV): Subdominant chord representing hope, resilience, and endurance.',
+      'Am (ii): Gentle supertonic chord softening the approach to the dominant.',
+      'D (V): Dominant cadence leading back to the comforting tonic.',
+    ],
+    voiceLeadingInsights: [
+      'The single-note intro outlines the notes G - A - B - D - E, avoiding leading tones to keep the melody timeless, archaic, and deeply resonant.',
+      'The chorus progression incorporates a poignant dip into the relative minor: G - C - D - G - C - D - Em, heightening the emotional impact on the word "freedom".',
+      'The relaxed 74 BPM tempo gives every word and chord room to breathe, creating a reverent, fireside intimacy.',
+    ],
+    guitarPerspective: 'Play the intro with confident alternate picking right behind the frets. When strumming the chords, keep your right hand relaxed and loose, incorporating subtle reggae-style thumb brushes on the bass strings.',
+    songwriterTakeaway: 'The most powerful songs are often the simplest. An acoustic guitar and five basic open chords can deliver a world-changing message when the melody is pure and the lyrics carry raw, unfiltered truth.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The diatonic foundation connecting all open cowboy chords.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'The five-note scale forming the iconic single-note acoustic intro riff.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Pure major mode warmth that elevates the song into a universal spiritual anthem.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D shapes creating bright acoustic resonance.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'How Em and Am add emotional gravity and solemn reflection.' },
+      ],
+    },
+  },
+
+  'american-pie': {
+    slug: 'american-pie',
+    songTitle: 'American Pie',
+    artist: 'Don McLean',
+    key: 'G Major',
+    category: 'secondary-dominants',
+    categoryLabel: 'Storytelling Cycles & Secondary Dominants',
+    coreSecret: 'The Dynamic Tempo Shift Married to a Circular I-IV-I-V Singalong with a Secondary Dominant A7 Turnaround',
+    emotionalHook: 'The song begins as an intimate, free-time acoustic lament over the tragic loss of Buddy Holly. When the chorus suddenly kicks into a brisk 138 BPM gallop, the circular I - IV - I - V changes and urgent A7 turnaround turn personal tragedy into a cathartic, collective celebration of rock and roll history.',
+    romanProgression: 'I - IV - I - V - vi - II7 - V',
+    chords: ['G', 'C', 'G', 'D', 'Em', 'A7', 'D'],
+    progressionExplanation: [
+      'G (I): The buoyant, communal tonic home base.',
+      'C (IV): Subdominant lift rising on the words "American Pie".',
+      'D (V): Dominant momentum propelling the verse forward.',
+      'Em (vi): The relative minor introducing tension during the storytelling verses.',
+      'A7 (II7): Secondary dominant introducing the C# note, driving with urgent expectation into D.',
+    ],
+    voiceLeadingInsights: [
+      'The verses cycle through G - Am - C - Am - Em - D with rapid lyrical delivery, creating an unstoppable rhythmic train.',
+      'The A7 chord in the chorus ("Them good old boys were drinking whiskey and rye") breaks the diatonic major scale to inject bluesy rockabilly drive.',
+      'The dynamic build from rubato folk picking into driving, full-volume strumming commands the attention of any room or campfire circle.',
+    ],
+    guitarPerspective: 'Keep your strumming arm moving in perpetual eighth-note motion from the wrist. At 138 BPM across an 8-minute song, relaxed mechanics are essential to avoid right-hand fatigue.',
+    songwriterTakeaway: 'When writing an epic narrative song, use a fast, predictable chord loop during the verses so listeners can absorb the dense storytelling, then reward them with an irresistible, anthemic chorus turnaround.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major Scale', slug: 'major', description: 'The diatonic foundation housing the open cowboy chords.' },
+        { name: 'G Major Pentatonic', slug: 'major-pentatonic', description: 'The melodic scale driving the unforgettable singalong chorus hook.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Uplifting major mode storytelling clarity.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open G, C, and D shapes forming the core acoustic framework.' },
+        { name: 'Seventh Chords', slug: 'seventh', description: 'How A7 functions as a secondary dominant driving into the cadence.' },
+      ],
+    },
+  },
+
+  'better-be-home-soon': {
+    slug: 'better-be-home-soon',
+    songTitle: 'Better Be Home Soon',
+    artist: 'Crowded House',
+    key: 'C Major',
+    category: 'modal-mixture',
+    categoryLabel: 'Diatonic Voice Leading & Modal Mixture',
+    coreSecret: 'The Stepwise Diatonic Mediant (iii) Flow Culminating in a Dramatic Borrowed Flat-Seventh (Bb) Modal Mixture',
+    emotionalHook: 'Neil Finn subverts the usual I - IV - V folk tropes by moving gently from C into Em (iii), introducing tender domestic vulnerability. Then in the bridge, the song suddenly veers into a borrowed Bb major (bVII) chord, unleashing an expansive emotional swell that makes the final chorus unforgettable.',
+    romanProgression: 'I - iii - IV - V',
+    chords: ['C', 'Em', 'F', 'G'],
+    progressionExplanation: [
+      'C (I): Warm, comforting tonic home base.',
+      'Em (iii): Gentle mediant minor chord softening the melody with deep emotional sincerity.',
+      'F (IV): Subdominant lift bringing hope and forward motion.',
+      'G (V): Dominant cadence resolving cleanly back home to C.',
+      'Bb (bVII): Borrowed Mixolydian flat-seven chord in the bridge creating a powerful, cinematic emotional surge.',
+    ],
+    voiceLeadingInsights: [
+      'Moving from C to Em involves a subtle bass descent: C (5th string fret 3) → B (5th string fret 2) → E (6th string open), creating smooth, elegant voice leading.',
+      'The chorus opens on the relative minor Am ("And it would sort of feel like..."), giving the vocal hook a bittersweet melancholy.',
+      'The bridge chord sequence (Bb → F → C) utilizes a double plagal cadence (bVII → IV → I), a classic rock songwriting tool used by the Beatles and Crowded House.',
+    ],
+    guitarPerspective: 'Keep the strumming tender and intimate at 82 BPM. On the verses, brush lightly across the strings with a soft pick. When you reach the Bb chord in the bridge, strike the barre chord with full emotional commitment.',
+    songwriterTakeaway: 'To elevate a standard major-key ballad into an enduring classic, use the mediant (iii) chord for intimate verses, and introduce the borrowed flat-seventh (bVII) chord in the bridge for an unforgettable emotional peak.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The diatonic foundation connecting the verse and chorus chords.' },
+        { name: 'C Mixolydian Mode', slug: 'mixolydian', description: 'The source of the borrowed Bb flat-seven chord in the bridge.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Pure major mode storytelling resonance.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open C, F, and G chords forming the foundational framework.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'How Em and Am add tender emotional shading.' },
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'Fretting the Bb major barre chord cleanly at the 1st fret.' },
+      ],
+    },
+  },
 };
 
 /**

@@ -139,6 +139,11 @@ import haveYouEverSeenTheRainData from '@/data/songs/have-you-ever-seen-the-rain
 import heartOfGoldData from '@/data/songs/heart-of-gold.json';
 import fastCarData from '@/data/songs/fast-car.json';
 import toHerDoorData from '@/data/songs/to-her-door.json';
+import wildWorldData from '@/data/songs/wild-world.json';
+import patienceData from '@/data/songs/patience.json';
+import redemptionSongData from '@/data/songs/redemption-song.json';
+import americanPieData from '@/data/songs/american-pie.json';
+import betterBeHomeSoonData from '@/data/songs/better-be-home-soon.json';
 
 export interface SongData {
   songInfo: {
@@ -490,6 +495,11 @@ const songDatabase: Record<string, SongData> = {
   'heart-of-gold': heartOfGoldData as SongData,
   'fast-car': fastCarData as SongData,
   'to-her-door': toHerDoorData as SongData,
+  'wild-world': wildWorldData as SongData,
+  'patience': patienceData as SongData,
+  'redemption-song': redemptionSongData as SongData,
+  'american-pie': americanPieData as SongData,
+  'better-be-home-soon': betterBeHomeSoonData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {
