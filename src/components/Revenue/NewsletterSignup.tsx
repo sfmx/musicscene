@@ -20,11 +20,10 @@ export default function NewsletterSignup({
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Clear any legacy permanent lock from previous sessions so the signup form is accessible
   useEffect(() => {
     try {
-      if (localStorage.getItem(STORAGE_KEY) === 'true') {
-        setStatus('success');
-      }
+      localStorage.removeItem(STORAGE_KEY);
     } catch {
       // localStorage unavailable
     }
@@ -48,7 +47,6 @@ export default function NewsletterSignup({
       // No endpoint configured — simulate success
       setTimeout(() => {
         setStatus('success');
-        try { localStorage.setItem(STORAGE_KEY, 'true'); } catch { /* noop */ }
       }, 500);
       return;
     }
@@ -61,21 +59,37 @@ export default function NewsletterSignup({
       });
       if (!res.ok) throw new Error('Subscription failed');
       setStatus('success');
-      try { localStorage.setItem(STORAGE_KEY, 'true'); } catch { /* noop */ }
     } catch {
       setErrorMessage('Something went wrong. Please try again.');
       setStatus('error');
     }
   };
 
+  const handleReset = () => {
+    setStatus('idle');
+    setEmail('');
+    setErrorMessage('');
+  };
+
   if (status === 'success') {
     return (
-      <div className={`text-center ${isFooter ? 'text-white' : 'text-gray-700 dark:text-slate-300'}`}>
-        <p className="text-lg font-medium">
+      <div className={`text-center py-2 ${isFooter ? '' : 'bg-indigo-50 dark:bg-slate-900/90 rounded-2xl p-6 border border-indigo-200 dark:border-slate-800'}`}>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 text-xs font-bold mb-2 border border-emerald-300 dark:border-emerald-800">
+          <span>✓</span>
+          <span>{REVENUE_CONFIG.newsletterEndpoint ? "Subscribed!" : "Received!"}</span>
+        </div>
+        <p className="text-base font-semibold text-slate-900 dark:text-white">
           {REVENUE_CONFIG.newsletterEndpoint
-            ? "You're subscribed!"
+            ? "You're subscribed! Check your inbox for updates."
             : "Thanks! We'll notify you when our newsletter launches."}
         </p>
+        <button
+          type="button"
+          onClick={handleReset}
+          className="mt-3 text-xs text-blue-600 dark:text-blue-400 hover:underline cursor-pointer font-medium"
+        >
+          Subscribe another email
+        </button>
       </div>
     );
   }
