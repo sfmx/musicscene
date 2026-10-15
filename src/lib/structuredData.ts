@@ -452,7 +452,7 @@ export function getSongPageJsonLd(songData: SongData, songSlug: string): object[
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `"${title}" by ${artist} - Complete Guitar Analysis & Breakdown`,
-    description: `Learn how to play and analyze "${title}" by ${artist}. Note-for-note AlphaTab breakdown, chord progressions, scales, techniques, and guitar tone analysis.`,
+    description: `Learn how to play and analyze "${title}" by ${artist}. Comprehensive AlphaTab breakdown, chord progressions, scales, techniques, and guitar tone analysis.`,
     author: {
       '@type': 'Person',
       name: 'Jason Smith',

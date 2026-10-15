@@ -16,7 +16,7 @@ export default function SongInfoSection({ songData, displayName }: SongInfoSecti
         {/* Left 8 Cols: Song Overview & Musical Tags */}
         <div className="lg:col-span-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-3">
-            <span>🎸 Note-for-Note Guitar Analysis</span>
+            <span>🎸 In-Depth Guitar Analysis</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-2">

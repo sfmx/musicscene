@@ -39,7 +39,7 @@ export default function HomeHero() {
               Tabs tell you <strong className="text-slate-900 dark:text-white font-semibold">where</strong> to put your fingers, but never <strong className="text-slate-900 dark:text-white font-semibold">why</strong> it works. Textbooks drown you in abstract notation that never touches your fretboard.
             </p>
             <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 100+ iconic songs note-for-note, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
+              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 160+ iconic songs section-by-section, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
             </p>
 
             {/* Action Buttons */}

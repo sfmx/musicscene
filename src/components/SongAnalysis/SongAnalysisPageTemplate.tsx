@@ -87,7 +87,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
         <Header
           title={`"${displayName}" — Guitar Analysis & Breakdown`}
-          subtitle={`Note-for-note breakdown of ${songData.songInfo.artist}'s "${displayName}" with chords, scales, theory, and tone analysis.`}
+          subtitle={`In-depth breakdown of ${songData.songInfo.artist}'s "${displayName}" with chords, scales, theory, and tone analysis.`}
           category="Song Analysis & Harmonic Breakdown"
           badges={[
             { label: 'Key', value: songData.musicalAnalysis?.keyAndScale?.primaryKey || songData.songInfo.key },

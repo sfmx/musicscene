@@ -104,8 +104,7 @@ export default function HomeSongExplorer() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-3 shadow-xs">
-              <span>🎸 107 Note-for-Note Deconstructions</span>
-              <span>🎸 {allSongs.length} Note-for-Note Deconstructions</span>
+              <span>🎸 {allSongs.length} In-Depth Song Breakdowns</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
               Song Analysis Library

@@ -150,7 +150,7 @@ function generateSongSvg(song: SongJson): string {
 
     <!-- Header Badge -->
     <rect x="730" y="4" width="310" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <text x="885" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="1">NOTE-FOR-NOTE SONG ANALYSIS</text>
+    <text x="885" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="1">IN-DEPTH SONG ANALYSIS</text>
   </g>
 
   <!-- Main Hero Card -->
@@ -192,7 +192,7 @@ function generateSongSvg(song: SongJson): string {
       <!-- Breakdown Badge -->
       <rect x="730" y="0" width="220" height="74" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
       <text x="748" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">TAB &amp; AUDIO</text>
-      <text x="748" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#34d399">100% Note-for-Note</text>
+      <text x="748" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#34d399">Interactive Player</text>
     </g>
 
     <!-- Card Footer -->

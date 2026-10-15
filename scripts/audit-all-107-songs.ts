@@ -57,6 +57,6 @@ if (genericFound.length > 0) {
   genericFound.forEach(g => console.log(`  - ${g}`));
   process.exit(1);
 } else {
-  console.log('\n🎉 ALL 107 CATALOG SONGS ARE 100% AUTHENTIC NOTE-FOR-NOTE ALPHATAB EXERCISES!');
+  console.log('\n🎉 ALL 107 CATALOG SONGS ARE 100% AUTHENTIC IN-DEPTH ALPHATAB EXERCISES!');
 }
 

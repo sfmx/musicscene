@@ -269,7 +269,7 @@ export default function SongDiscoveryHub() {
     <Layout>
       <Header
         title="Guitar Song Analysis & Tab Library"
-        subtitle="128+ complete note-for-note breakdowns with interactive AlphaTab, Roman numeral chord progressions, and tone guides"
+        subtitle="160+ complete guitar breakdowns with interactive AlphaTab, Roman numeral chord progressions, and tone guides"
         category="Song Repertoire & Harmonic Analysis"
       />
       
