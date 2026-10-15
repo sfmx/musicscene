@@ -1,13 +1,15 @@
 import React from 'react';
 import type { SongData } from '@/lib/songData';
 import { getDifficultyColor } from '@/utils/theme';
+import SaveSongAction from '@/components/Practice/SaveSongAction';
 
 interface SongInfoSectionProps {
   songData: SongData;
   displayName: string;
+  songSlug?: string;
 }
 
-export default function SongInfoSection({ songData, displayName }: SongInfoSectionProps) {
+export default function SongInfoSection({ songData, displayName, songSlug }: SongInfoSectionProps) {
   const { songInfo, difficulty } = songData;
 
   return (
@@ -58,6 +60,18 @@ export default function SongInfoSection({ songData, displayName }: SongInfoSecti
               <strong className="text-cyan-700 dark:text-cyan-300 font-mono text-[11px] line-clamp-1">{songInfo.tuning}</strong>
             </div>
           </div>
+
+          {/* Practice Room & Study Actions */}
+          {songSlug && (
+            <SaveSongAction
+              slug={songSlug}
+              title={displayName}
+              artist={songInfo.artist}
+              difficulty={difficulty?.overall || 'Intermediate'}
+              key={songInfo.key}
+              tempo={songInfo.tempo}
+            />
+          )}
         </div>
 
         {/* Right 4 Cols: Difficulty Matrix */}

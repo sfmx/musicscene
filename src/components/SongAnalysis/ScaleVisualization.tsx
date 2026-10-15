@@ -18,6 +18,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 }) => {
   const [selectedScale, setSelectedScale] = useState(0);
   const [numFrets, setNumFrets] = useState(12);
+  const [isLefty, setIsLefty] = useState(false);
   const [activeNoteKey, setActiveNoteKey] = useState<string | null>(null);
 
   if (!scales || scales.length === 0) return null;
@@ -122,9 +123,9 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
     return (
       <div className="bg-slate-950 p-4 rounded-xl border border-slate-800">
         {/* Fret number row */}
-        <div className="flex mb-3">
+        <div className={`flex mb-3 ${isLefty ? 'flex-row-reverse' : ''}`}>
           <div className="w-8"></div> {/* Space for string labels */}
-          <div className="flex flex-1">
+          <div className={`flex flex-1 ${isLefty ? 'flex-row-reverse' : ''}`}>
             {Array.from({ length: numFrets + 1 }, (_, i) => (
               <div key={i} className="flex-1 text-center">
                 {i > 0 && (
@@ -212,7 +213,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
 
           {/* Fretboard content */}
           <div className="relative z-10 p-3">
-            <div className="flex">
+            <div className={`flex ${isLefty ? 'flex-row-reverse' : ''}`}>
               {/* String labels column */}
               <div className="w-8 flex flex-col justify-around">
                 {stringTuning.slice().reverse().map((string, displayIndex) => (
@@ -226,7 +227,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
               <div className="relative flex-1">
                 {/* Nut - thick vertical line at start */}
                 <div
-                  className="absolute left-0 top-0 bottom-0 z-20"
+                  className={`absolute top-0 bottom-0 z-20 ${isLefty ? 'right-0' : 'left-0'}`}
                   style={{
                     width: '4px',
                     background: 'linear-gradient(to right, #3a3a3a, #6a6a6a, #4a4a4a)',
@@ -243,11 +244,11 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                       key={`fret-${fretNum + 1}`}
                       className="absolute top-0 bottom-0 z-10"
                       style={{
-                        left: `${fretWirePercent}%`,
+                        [isLefty ? 'right' : 'left']: `${fretWirePercent}%`,
                         width: '3px',
                         background: 'linear-gradient(to right, #8a8a8a, #c0c0c0, #a0a0a0)',
                         boxShadow: '2px 0 4px rgba(0,0,0,0.6), -1px 0 2px rgba(255,255,255,0.4)',
-                        borderRadius: '0 2px 2px 0'
+                        borderRadius: isLefty ? '2px 0 0 2px' : '0 2px 2px 0'
                       }}
                     ></div>
                   );
@@ -262,7 +263,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                       key={`inlay-${fretNum}`}
                       className="absolute z-5"
                       style={{
-                        left: `${inlayPercent}%`,
+                        [isLefty ? 'right' : 'left']: `${inlayPercent}%`,
                         top: '50%',
                         transform: 'translate(-50%, -50%)',
                         width: '10px',
@@ -284,7 +285,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                       <div
                         className="absolute z-5"
                         style={{
-                          left: `${doubleInlayPercent}%`,
+                          [isLefty ? 'right' : 'left']: `${doubleInlayPercent}%`,
                           top: '30%',
                           transform: 'translate(-50%, -50%)',
                           width: '8px',
@@ -298,7 +299,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                       <div
                         className="absolute z-5"
                         style={{
-                          left: `${doubleInlayPercent}%`,
+                          [isLefty ? 'right' : 'left']: `${doubleInlayPercent}%`,
                           top: '70%',
                           transform: 'translate(-50%, -50%)',
                           width: '8px',
@@ -333,7 +334,7 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
                       ></div>
 
                       {/* Notes on this string */}
-                      <div className="flex relative z-30 w-full">
+                      <div className={`flex relative z-30 w-full ${isLefty ? 'flex-row-reverse' : ''}`}>
                         {Array.from({ length: numFrets + 1 }, (_, fret) => {
                           const noteAtFret = getNoteAtFret(stringIndex, fret);
                           const isInScale = isNoteInScale(noteAtFret, scaleNotes);
@@ -429,8 +430,20 @@ const ScaleVisualization: React.FC<ScaleVisualizationProps> = ({
           ))}
         </div>
 
-        {/* Fret Count Selector */}
-        <div className="flex gap-2 sm:ml-auto">
+        {/* Fret Count and Lefty Controls */}
+        <div className="flex flex-wrap items-center gap-2 sm:ml-auto">
+          <button
+            onClick={() => setIsLefty(!isLefty)}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+              isLefty
+                ? 'bg-purple-600 text-white shadow-md shadow-purple-900/30 ring-1 ring-purple-400'
+                : 'bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-white'
+            }`}
+            title="Mirror fretboard orientation for left-handed players"
+          >
+            <span>🖐️</span>
+            <span>{isLefty ? 'Lefty Mode (On)' : 'Left-Handed'}</span>
+          </button>
           <button
             onClick={() => setNumFrets(12)}
             className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${

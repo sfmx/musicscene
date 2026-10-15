@@ -394,9 +394,14 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [countInRemaining, setCountInRemaining] = useState<number | null>(null);
   const [rhythmPreset, setRhythmPreset] = useState<RhythmPreset>('none');
   const [isLooping, setIsLooping] = useState(false);
+  const [speedTrainerActive, setSpeedTrainerActive] = useState(false);
+  const [trainerBadge, setTrainerBadge] = useState<string | null>(null);
   const [isMuted, setIsMuted] = useState(false);
 
   const isLoopingRef = useRef(false);
+  const speedTrainerRef = useRef(false);
+  const playbackSpeedRef = useRef(1.0);
+  const handleSpeedChangeRef = useRef<((s: number) => void) | null>(null);
   const isDraggingScrubberRef = useRef(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const instanceIdRef = useRef(Math.random().toString(36).slice(2));
@@ -823,6 +828,18 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         api.playerFinished.on(() => {
           if (isMounted && isLoopingRef.current && apiRef.current) {
             try {
+              if (speedTrainerRef.current) {
+                const cur = playbackSpeedRef.current;
+                if (cur < 1.0) {
+                  const nextSpeed = Math.min(1.0, Math.round((cur + 0.05) * 100) / 100);
+                  handleSpeedChangeRef.current?.(nextSpeed);
+                  setTrainerBadge(`⚡ +5% Speed (${Math.round(nextSpeed * 100)}%)`);
+                  setTimeout(() => setTrainerBadge(null), 2500);
+                } else {
+                  setTrainerBadge('🏆 100% Target Tempo Reached!');
+                  setTimeout(() => setTrainerBadge(null), 3000);
+                }
+              }
               apiRef.current.timePosition = 0;
               apiRef.current.play();
               if (rhythmPresetRef.current !== 'none' && !isMutedRef.current) {
@@ -966,6 +983,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setPlaybackSpeed(newSpeed);
+    playbackSpeedRef.current = newSpeed;
     const nextBpm = Math.round(baseTempo * newSpeed);
     currentBpmRef.current = nextBpm;
     rhythmSchedulerRef.current?.setBpm(nextBpm);
@@ -973,6 +991,11 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       apiRef.current.playbackSpeed = newSpeed;
     }
   }, [baseTempo]);
+
+  useEffect(() => {
+    handleSpeedChangeRef.current = handleSpeedChange;
+    playbackSpeedRef.current = playbackSpeed;
+  }, [handleSpeedChange, playbackSpeed]);
 
   const handleBpmStep = useCallback((delta: number) => {
     const nextBpm = Math.max(30, Math.min(260, Math.round(baseTempo * playbackSpeed) + delta));
@@ -1051,6 +1074,34 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       }
     }
   }, [isLooping]);
+
+  const handleSpeedTrainerToggle = useCallback(() => {
+    const next = !speedTrainerActive;
+    setSpeedTrainerActive(next);
+    speedTrainerRef.current = next;
+
+    if (next) {
+      setIsLooping(true);
+      isLoopingRef.current = true;
+      if (apiRef.current) {
+        try {
+          apiRef.current.isLooping = true;
+        } catch {
+          // ignore
+        }
+      }
+      if (playbackSpeedRef.current >= 1.0) {
+        handleSpeedChange(0.7);
+        setTrainerBadge('⚡ Speed Trainer: Starting at 70%');
+        setTimeout(() => setTrainerBadge(null), 2500);
+      } else {
+        setTrainerBadge(`⚡ Speed Trainer Active (${Math.round(playbackSpeedRef.current * 100)}%)`);
+        setTimeout(() => setTrainerBadge(null), 2500);
+      }
+    } else {
+      setTrainerBadge(null);
+    }
+  }, [speedTrainerActive, handleSpeedChange]);
 
   const handleMuteToggle = useCallback(() => {
     const next = !isMuted;
@@ -1265,6 +1316,11 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
       {/* Render Container with Animated Count-In Overlay */}
       <div className="relative w-full max-w-full min-w-0">
+        {trainerBadge && (
+          <div className="absolute top-4 right-4 z-30 pointer-events-none flex items-center gap-1.5 px-4 py-2 rounded-full bg-amber-500 text-slate-950 font-black text-xs sm:text-sm shadow-2xl animate-bounce border-2 border-white dark:border-slate-900 select-none">
+            <span>{trainerBadge}</span>
+          </div>
+        )}
         {isCountingIn && countInRemaining !== null && (
           <div className="absolute top-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 text-slate-950 font-black text-base sm:text-lg shadow-2xl animate-pulse border-2 border-white dark:border-slate-900 select-none">
             <span className="text-xl">⏱️</span>
@@ -1463,7 +1519,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             </div>
           </div>
 
-          {/* Practice Tools: Continuous Loop & Count-in */}
+          {/* Practice Tools: Continuous Loop, Speed Trainer & Count-in */}
           <div className="flex items-center gap-1.5">
             <button
               type="button"
@@ -1477,6 +1533,19 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             >
               <span>🔁</span>
               <span className="hidden sm:inline">Loop</span>
+            </button>
+            <button
+              type="button"
+              onClick={handleSpeedTrainerToggle}
+              className={`text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl border transition-all cursor-pointer font-semibold flex items-center gap-1 ${
+                speedTrainerActive
+                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs ring-1 ring-amber-500/30'
+                  : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Speed Trainer: Automatically increases playback speed by +5% each loop repetition until 100%"
+            >
+              <span>⚡</span>
+              <span className="hidden sm:inline">Trainer</span>
             </button>
             <button
               type="button"

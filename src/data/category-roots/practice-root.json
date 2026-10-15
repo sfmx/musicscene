@@ -77,6 +77,22 @@
     "sectionTitle": "Practice Categories",
     "items": [
       {
+        "title": "My Practice Room",
+        "href": "/lessons/practice/my-practice",
+        "icon": "🎸",
+        "description": "Your private rehearsal studio — track song repertoire, log practice sessions, maintain daily streaks, and conquer targeted routines",
+        "color": "bg-amber-50 border-amber-200 hover:bg-amber-100",
+        "iconColor": "text-amber-600",
+        "concepts": [
+          "Repertoire Management",
+          "Daily Streak Tracking",
+          "Practice Session Logging",
+          "BPM & Speed Goals",
+          "Targeted Routine Checklists",
+          "100% Client-Side Privacy"
+        ]
+      },
+      {
         "title": "Warm-ups",
         "href": "/lessons/practice/warmups",
         "icon": "🤲",
@@ -263,6 +279,11 @@
     "title": "Start Your Practice Journey",
     "description": "Choose a practice category that matches your current goals. Each section provides structured exercises, progressive challenges, and expert guidance to help you improve efficiently and enjoyably.",
     "links": [
+      {
+        "href": "/lessons/practice/my-practice",
+        "label": "🎸 My Practice Room",
+        "color": "bg-amber-600"
+      },
       {
         "href": "/lessons/practice/warmups",
         "label": "Begin with Warm-ups",

@@ -12,6 +12,8 @@ import ChordReferenceBox from './ChordReferenceBox';
 import ScaleVisualization from './ScaleVisualization';
 import SectionNavigation from './SectionNavigation';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
+import PracticeRoutineChecklist from '@/components/Practice/PracticeRoutineChecklist';
+import { getAllSongs } from '@/lib/songList';
 
 import { getDifficultyColor } from '@/utils/theme';
 import { getTechniqueLesson } from '@/lib/techniqueLessons';
@@ -32,6 +34,13 @@ import { getSongPageJsonLd } from '@/lib/structuredData';
 interface SongAnalysisPageTemplateProps {
   songSlug: string;
   displayName: string;
+}
+
+function findSongSlug(title: string): string | null {
+  if (!title) return null;
+  const clean = title.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const match = getAllSongs().find((s) => s.title.toLowerCase().replace(/[^a-z0-9]/g, '') === clean);
+  return match ? match.slug : null;
 }
 
 export default function SongAnalysisPageTemplate({ songSlug, displayName }: SongAnalysisPageTemplateProps) {
@@ -125,6 +134,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             <SongInfoSection
               songData={songData}
               displayName={displayName}
+              songSlug={songSlug}
             />
             <div className="mb-10 -mt-6 px-1">
               <ExternalSongLinks title={songData.songInfo.title} artist={songData.songInfo.artist} />
@@ -532,7 +542,7 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                 <h3 className="text-base font-bold text-amber-700 dark:text-amber-400 mb-2">{songData.learningPath.intermediate.title}</h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-mono mb-4">⏱️ {songData.learningPath.intermediate.timeEstimate}</p>
                 <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-2">
-                  {songData.learningPath.intermediate.steps.map((step: any, index: any) => (
+                  {songData.learningPath.intermediate.steps.map((step: string, index: number) => (
                     <li key={index} className="flex items-start gap-1.5">
                       <span className="text-amber-600 dark:text-amber-400 font-bold">•</span>
                       <span>{step}</span>
@@ -583,19 +593,11 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
               </div>
 
               {/* Practice Routine */}
-              <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-blue-500/40 dark:border-blue-500/30 shadow-xl">
-                <h3 className="text-base font-bold text-blue-700 dark:text-blue-400 mb-4 flex items-center gap-2">
-                  <span>⏱️</span> Targeted Practice Routine
-                </h3>
-                <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-2">
-                  {songData.practiceNotes.practiceRoutine.map((routine, index) => (
-                    <li key={index} className="flex items-start gap-1.5">
-                      <span className="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                      <span>{routine}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <PracticeRoutineChecklist
+                songSlug={songSlug}
+                songTitle={displayName}
+                routines={songData.practiceNotes.practiceRoutine}
+              />
 
               {/* Focus Areas */}
               {songData.practiceNotes.focusAreas && songData.practiceNotes.focusAreas.length > 0 && (
@@ -647,49 +649,122 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
             </div>
             
             {/* Artist Songs */}
-            {songData.relatedSongs.acdc && songData.relatedSongs.acdc.length > 0 && (
-              <div className="mb-8">
-                <h3 className="text-base font-bold text-slate-800 dark:text-slate-300 mb-4">More from this Artist</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {songData.relatedSongs.acdc.map((song, index) => (
-                    <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
-                      <div>
-                        <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors mb-2">{song.title}</h4>
-                        <p className="text-xs text-slate-600 dark:text-slate-400 mb-3">{song.similarity}</p>
-                      </div>
-                      {song.link && (
-                        <Link href={song.link} className="text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 font-bold text-xs inline-flex items-center gap-1 hover:underline">
-                          <span>View Analysis</span>
-                          <span>➔</span>
-                        </Link>
-                      )}
-                    </div>
-                  ))}
+            {(() => {
+              const artistSongs = songData.relatedSongs.sameArtist || (songData.relatedSongs as any).acdc;
+              if (!artistSongs || artistSongs.length === 0) return null;
+              return (
+                <div className="mb-8">
+                  <h3 className="text-base font-bold text-slate-800 dark:text-slate-300 mb-4 flex items-center gap-2">
+                    <span>🎤</span> More from {songData.songInfo.artist}
+                  </h3>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {artistSongs.map((song: any, index: number) => {
+                      const slug = findSongSlug(song.title);
+                      const link = song.link || (slug ? `/lessons/songs/song-analysis/${slug}/` : null);
+                      return (
+                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
+                          <div>
+                            <div className="flex items-center justify-between mb-2">
+                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">{song.title}</h4>
+                              {song.difficulty && (
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                                  {song.difficulty}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-slate-600 dark:text-slate-400 mb-3">{song.similarity}</p>
+                          </div>
+                          {link && (
+                            <Link href={link} className="text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 font-bold text-xs inline-flex items-center gap-1 hover:underline">
+                              <span>View Analysis</span>
+                              <span>➔</span>
+                            </Link>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
+
+            {/* Progression Path */}
+            {(() => {
+              const progressionPath = songData.relatedSongs.progressionPath;
+              if (!progressionPath || progressionPath.length === 0) return null;
+              return (
+                <div className="mb-8">
+                  <h3 className="text-base font-bold text-slate-800 dark:text-slate-300 mb-2 flex items-center gap-2">
+                    <span>🚀</span> Recommended Progression: What to Learn Next
+                  </h3>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
+                    Continue developing your repertoire and technical vocabulary with these hand-picked songs designed to follow this piece:
+                  </p>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {progressionPath.map((song, index) => {
+                      const slug = findSongSlug(song.title);
+                      const link = slug ? `/lessons/songs/song-analysis/${slug}/` : null;
+                      return (
+                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 transition-all flex flex-col justify-between group shadow-md">
+                          <div>
+                            <div className="flex items-center justify-between mb-1">
+                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">{song.title}</h4>
+                              {song.difficulty && (
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                                  {song.difficulty}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-slate-500 dark:text-slate-400 mb-2 font-medium">by {song.artist}</p>
+                            <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">{song.similarity}</p>
+                          </div>
+                          {link && (
+                            <Link href={link} className="text-emerald-600 dark:text-emerald-400 group-hover:text-emerald-700 dark:group-hover:text-emerald-300 font-bold text-xs inline-flex items-center gap-1 hover:underline">
+                              <span>View Analysis</span>
+                              <span>➔</span>
+                            </Link>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Similar Techniques */}
             {songData.relatedSongs.similarTechniques && songData.relatedSongs.similarTechniques.length > 0 && (
               <div>
-                <h3 className="text-base font-bold text-slate-800 dark:text-slate-300 mb-4">Songs With Similar Techniques</h3>
+                <h3 className="text-base font-bold text-slate-800 dark:text-slate-300 mb-4 flex items-center gap-2">
+                  <span>🎸</span> Songs With Similar Techniques
+                </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {songData.relatedSongs.similarTechniques.map((song, index) => (
-                    <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
-                      <div>
-                        <div className="flex items-center justify-between mb-1">
-                          <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">{song.title}</h4>
-                          {song.technique && (
-                            <span className="text-[10px] font-bold bg-blue-50 dark:bg-slate-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-slate-800 px-2 py-0.5 rounded-full">
-                              {song.technique}
-                            </span>
-                          )}
+                  {songData.relatedSongs.similarTechniques.map((song, index) => {
+                    const slug = findSongSlug(song.title);
+                    const link = song.link || (slug ? `/lessons/songs/song-analysis/${slug}/` : null);
+                    return (
+                      <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{song.title}</h4>
+                            {song.technique && (
+                              <span className="text-[10px] font-bold bg-blue-50 dark:bg-slate-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-slate-800 px-2 py-0.5 rounded-full">
+                                {song.technique}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs text-slate-500 mb-2">by {song.artist}</p>
+                          <p className="text-xs text-slate-600 dark:text-slate-400 mb-3">{song.similarity}</p>
                         </div>
-                        <p className="text-xs text-slate-500 mb-2">by {song.artist}</p>
-                        <p className="text-xs text-slate-600 dark:text-slate-400">{song.similarity}</p>
+                        {link && (
+                          <Link href={link} className="text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 font-bold text-xs inline-flex items-center gap-1 hover:underline">
+                            <span>View Analysis</span>
+                            <span>➔</span>
+                          </Link>
+                        )}
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}

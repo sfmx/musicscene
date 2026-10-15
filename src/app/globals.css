@@ -62,3 +62,52 @@ body {
   min-width: 0;
 }
 
+/* Print styles for sheet music, chords & study sheets */
+@media print {
+  /* Hide navigation, footers, ads, fixed bars, and interactive buttons */
+  nav,
+  header,
+  footer,
+  aside,
+  .no-print,
+  .adsbygoogle,
+  [data-ad-slot],
+  button,
+  .alphatab-controls,
+  .fixed,
+  .sticky {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Ensure background colors/borders print properly */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Prevent awkward page breaks in sheet music, chord charts, and key cards */
+  .alphatab-container,
+  section,
+  article,
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove drop shadows to save printer ink */
+  .shadow-sm,
+  .shadow,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: none !important;
+  }
+}
+

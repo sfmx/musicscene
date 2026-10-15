@@ -1,9 +1,11 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { getWhySongWorks } from '@/data/whySongsWork';
 import TheoryContextBadges from './TheoryContextBadges';
+import { getChordShape, getActualFretNumbers } from '@/lib/chordVoicings';
+import { strumChord } from '@/lib/guitarAudio';
 
 interface WhyThisSongWorksSectionProps {
   songSlug: string;
@@ -15,6 +17,68 @@ export default function WhyThisSongWorksSection({
   displayName,
 }: WhyThisSongWorksSectionProps) {
   const secret = getWhySongWorks(songSlug);
+  const [activeChordIdx, setActiveChordIdx] = useState<number | null>(null);
+  const [isPlayingProgression, setIsPlayingProgression] = useState(false);
+  const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+
+  // Cleanup any ongoing playback timers on unmount
+  useEffect(() => {
+    return () => {
+      timersRef.current.forEach(clearTimeout);
+    };
+  }, []);
+
+  const playSingleChord = useCallback((chordName: string, idx: number) => {
+    try {
+      const shape = getChordShape(chordName);
+      const actualFrets = getActualFretNumbers(shape);
+      strumChord(actualFrets, { volume: 0.45, speedMs: 24, duration: 2.2 });
+      setActiveChordIdx(idx);
+      setTimeout(() => {
+        setActiveChordIdx(curr => (curr === idx ? null : curr));
+      }, 700);
+    } catch (err) {
+      console.warn('Could not play chord audio:', err);
+    }
+  }, []);
+
+  const togglePlayProgression = useCallback(() => {
+    if (!secret || !secret.chords || secret.chords.length === 0) return;
+
+    if (isPlayingProgression) {
+      timersRef.current.forEach(clearTimeout);
+      timersRef.current = [];
+      setIsPlayingProgression(false);
+      setActiveChordIdx(null);
+      return;
+    }
+
+    setIsPlayingProgression(true);
+    timersRef.current.forEach(clearTimeout);
+    timersRef.current = [];
+
+    const chordList = secret.chords;
+    const intervalMs = 1200;
+
+    chordList.forEach((chordName, i) => {
+      const t = setTimeout(() => {
+        const shape = getChordShape(chordName);
+        const actualFrets = getActualFretNumbers(shape);
+        strumChord(actualFrets, { volume: 0.45, speedMs: 22, duration: 2.0 });
+        setActiveChordIdx(i);
+
+        if (i === chordList.length - 1) {
+          const finalTimer = setTimeout(() => {
+            setIsPlayingProgression(false);
+            setActiveChordIdx(null);
+          }, 1100);
+          timersRef.current.push(finalTimer);
+        }
+      }, i * intervalMs);
+
+      timersRef.current.push(t);
+    });
+  }, [isPlayingProgression, secret]);
 
   if (!secret) return null;
 
@@ -74,25 +138,55 @@ export default function WhyThisSongWorksSection({
 
           {/* Chord Progression & Roman Numeral Visualizer */}
           <div className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-5 mb-8 shadow-xs dark:shadow-none backdrop-blur-sm">
-            <div className="flex items-center justify-between flex-wrap gap-2 mb-4">
-              <h4 className="text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
-                Harmonic Progression (Roman Numerals)
-              </h4>
-              <span className="font-mono text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-500/30 text-indigo-700 dark:text-indigo-200 rounded border border-indigo-200 dark:border-indigo-400/30">
-                {secret.romanProgression}
-              </span>
+            <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h4 className="text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
+                  Harmonic Progression (Roman Numerals)
+                </h4>
+                <span className="font-mono text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-500/30 text-indigo-700 dark:text-indigo-200 rounded border border-indigo-200 dark:border-indigo-400/30">
+                  {secret.romanProgression}
+                </span>
+              </div>
+
+              {/* Play All Progression Button */}
+              <button
+                type="button"
+                onClick={togglePlayProgression}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer shadow-xs ${
+                  isPlayingProgression
+                    ? 'bg-rose-600 text-white shadow-md animate-pulse'
+                    : 'bg-indigo-600 hover:bg-indigo-700 text-white hover:shadow-md'
+                }`}
+                title="Strum all chords in this harmonic progression via WebAudio"
+              >
+                <span>{isPlayingProgression ? '⏹ Stop Audio' : '▶ Play Progression'}</span>
+              </button>
             </div>
 
+            {/* Click-to-Hear Interactive Chords */}
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
-              {secret.chords.map((chord, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center justify-center min-w-[56px] px-3 py-2 bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-indigo-400/30 rounded-lg shadow-xs"
-                >
-                  <span className="font-mono font-bold text-base text-slate-900 dark:text-white">{chord}</span>
-                  <span className="text-[10px] text-indigo-600 dark:text-indigo-300/70 font-mono">Step {idx + 1}</span>
-                </div>
-              ))}
+              {secret.chords.map((chord, idx) => {
+                const isActive = activeChordIdx === idx;
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => playSingleChord(chord, idx)}
+                    className={`flex flex-col items-center justify-center min-w-[64px] px-3.5 py-2.5 rounded-xl transition-all border shadow-xs cursor-pointer select-none text-left ${
+                      isActive
+                        ? 'bg-amber-400 dark:bg-amber-500 text-slate-950 border-amber-300 scale-105 shadow-md ring-2 ring-amber-400/60'
+                        : 'bg-slate-50 dark:bg-slate-800/90 text-slate-900 dark:text-white border-slate-200 dark:border-indigo-400/30 hover:border-amber-400 hover:bg-amber-50/50 dark:hover:bg-slate-800'
+                    }`}
+                    title={`Click to strum ${chord}`}
+                  >
+                    <span className="font-mono font-bold text-base leading-tight">{chord}</span>
+                    <span className={`text-[10px] font-mono mt-0.5 flex items-center gap-0.5 ${isActive ? 'text-slate-950 font-bold' : 'text-indigo-600 dark:text-indigo-300/70'}`}>
+                      <span>Step {idx + 1}</span>
+                      <span className="text-[9px]">🔊</span>
+                    </span>
+                  </button>
+                );
+              })}
             </div>
 
             <div className="space-y-2">
