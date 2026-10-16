@@ -1,0 +1,305 @@
+{
+  "songInfo": {
+    "title": "Limelight",
+    "artist": "Rush",
+    "album": "Moving Pictures",
+    "released": "1981",
+    "genre": "Progressive Rock / Hard Rock",
+    "tempo": "132 BPM",
+    "duration": "4:20",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Expert",
+    "bass": "Advanced",
+    "drums": "Expert"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E Major (Ionian) & B Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D#",
+          "application": "Harmonic foundation for Alex Lifeson's bright, ringing open chord extensions (Aadd9, Bsus4, E)"
+        },
+        {
+          "scale": "E Minor Pentatonic / Blues Scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "Blues-rock drive integrated into the main riff rhythm and aggressive fills"
+        },
+        {
+          "scale": "E Lydian Mode",
+          "notes": "E - F# - G# - A# - B - C# - D#",
+          "application": "Supplies the raised 4th (A#) introducing dreamlike spatial ambience in the iconic guitar solo"
+        }
+      ],
+      "modalCharacter": "Masterclass in modern progressive rock songwriting, combining shifting time signatures (7/4, 3/4, 4/4), wide-interval ringing suspended chords, and one of the most emotional, expressive whammy bar guitar solos in rock history",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the relative minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "B",
+          "A",
+          "F#"
+        ],
+        "progression": "I - V - IV - II",
+        "description": "Ringing open string chord voicings with shifting time signatures and melodic arpeggios."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Asymmetric Intro & Main Riff",
+          "progression": "Aadd9 - F#7add11 - Bsus4 - E",
+          "romanNumerals": "IVadd9 - II7add11 - Vsus4 - I (in 7/4 and 3/4)",
+          "description": "Alex Lifeson's signature 'Hentor Sportscaster' open string voicings cycling through alternating meters"
+        },
+        {
+          "section": "Verse Groove",
+          "progression": "E - B/D# - C#m - A",
+          "romanNumerals": "I - V6 - vi - IV (in 4/4)",
+          "description": "Smooth descending diatonic bassline supporting Geddy Lee's introspective lyrical delivery"
+        },
+        {
+          "section": "Emotive Whammy Guitar Solo",
+          "progression": "C#m - A - B - E",
+          "romanNumerals": "vi - IV - V - I",
+          "description": "Alex Lifeson's self-professed favorite guitar solo, isolated in the mix with ethereal delay and whammy bar vibrato"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Luminous, triumphant tonic reinforced by ringing open B and high E strings",
+        "Aadd9 (IVadd9) - Subdominant chord enriched with the 9th (B) providing spacious harmonic shimmer",
+        "F#7add11 (II7add11) - Secondary dominant with open string extensions providing forward harmonic pull",
+        "Bsus4 (Vsus4) - Suspended dominant resolving cleanly into the E major tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Asymmetric Meter Shifts & Whammy Bar Expressive Phrasing",
+      "description": "Mastering the seamless transition between 7/4, 3/4, and 4/4 time signatures while picking wide-interval open string extensions, followed by lyrical whammy bar articulation in the solo",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Open string voicings: Keep the open B and high E strings ringing freely across all chord shapes",
+          "7/4 counting: Counted as a bar of 4/4 followed by a bar of 3/4 (1-2-3-4, 1-2-3)",
+          "Whammy bar articulation: Depress the tremolo arm slightly before picking and release it to pitch, creating a vocal sigh"
+        ],
+        "sequence": [
+          "Memorize the signature chord voicings with ringing top strings (Aadd9, F#7add11, Bsus4)",
+          "Count the intro time signature shifts out loud with a metronome at 132 BPM",
+          "Practice alternate picking through the arpeggiated figures to ensure clean string separation",
+          "Incorporate subtle Floyd Rose / synchronized tremolo dips to shape notes in the solo"
+        ],
+        "tips": [
+          "Use your thumb over the top of the neck to fret bass notes while freeing lower fingers for chord extensions",
+          "Do not mute the open top two strings—they are the sonic glue that ties the entire song together",
+          "Apply an analog delay set to approximately 350ms to recreate the spacious studio aura of Le Studio"
+        ],
+        "chords": [
+          "E",
+          "Aadd9",
+          "F#7add11",
+          "Bsus4",
+          "C#m"
+        ],
+        "progression": "Aadd9 - F#7add11 - Bsus4 - E"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Main Riff",
+      "timeStamp": "0:00-0:42",
+      "technique": "Open-String Arpeggiation in Shifting Meters",
+      "key": "E Major",
+      "description": "Alex Lifeson's genius open-chord riff that serves as the dynamic and harmonic anchor of the song",
+      "alphaTab": "\\tempo 132 . \\ts 4 4\n:8 0.5 2.4 2.3 0.2 0.1 0.2 2.3 2.4 | :8 2.6 4.5 4.4 3.3 0.2 0.1 0.2 3.3 | :8 2.5 4.4 4.3 0.2 0.1 0.2 4.3 4.4 | :4 0.6 :8 2.5 2.4 :2 0.6 |",
+      "exerciseLabel": "Open-String Riff Chords",
+      "chords": [
+        "Aadd9",
+        "F#7add11",
+        "Bsus4",
+        "E"
+      ],
+      "progression": "Aadd9 - F#7add11 - Bsus4 - E",
+      "notes": [
+        "E",
+        "B",
+        "A",
+        "F#",
+        "C#",
+        "G#"
+      ]
+    },
+    {
+      "name": "Lyrical Whammy Guitar Solo",
+      "timeStamp": "2:34-3:18",
+      "technique": "Vocal Whammy Bar Articulation & Ethereal Phrasing",
+      "key": "E Major",
+      "description": "One of the most praised guitar solos in rock history, celebrated for its emotional depth and melodic purity",
+      "alphaTab": "\\tempo 132 . \\ts 4 4\n:2 12.1 :4 14.1 12.1 | :1 11.1 | :2 12.2 :4 14.2 12.2 | :1 9.1 |",
+      "exerciseLabel": "Limelight Guitar Solo Theme",
+      "chords": [
+        "C#m",
+        "A",
+        "B",
+        "E"
+      ],
+      "progression": "C#m - A - B - E",
+      "notes": [
+        "E",
+        "F#",
+        "D#",
+        "B",
+        "G#"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "'Hentor Sportscaster' (Modified Stratocaster with Bill Lawrence L-500 humbucker & Floyd Rose tremolo) / Gibson ES-335",
+      "alternatives": [
+        "Fender Stratocaster HSS",
+        "PRS Custom 24 with Tremolo",
+        "Gibson Les Paul Axcess"
+      ],
+      "pickup": "Bridge humbucker with biting output, paired with single-coil chime on rhythm tracks"
+    },
+    "amp": {
+      "recommended": "Marshall JMP 100-watt / Hiwatt Custom 100 through Mesa/Boogie 4x12 cabinet",
+      "alternatives": [
+        "Marshall DSL100HR",
+        "Hughes & Kettner TriAmp",
+        "Friedman Smallbox"
+      ],
+      "settings": {
+        "gain": "7.0",
+        "treble": "7.5",
+        "middle": "6.5",
+        "bass": "5.5",
+        "presence": "7.0"
+      }
+    },
+    "effects": {
+      "distortion": "Marshall tube preamp crunch layered with pristine clean headroom",
+      "reverb": "Large hall reverb simulating the ambient stone acoustics of Le Studio, Morin-Heights",
+      "other": "Floyd Rose / Strat tremolo bridge for subtle pitch modulation",
+      "chorus": "Roland CE-1 / Boss CE-2 for signature lush, wide stereo shimmer",
+      "delay": "Stereo tape delay set to 350ms on the solo"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chord Voicings & Drone Strings",
+      "steps": [
+        "Learn the fingerings for Aadd9, F#7add11, and Bsus4",
+        "Ensure the high B and E strings ring cleanly without fret buzz or finger muting",
+        "Practice strumming the basic verse progression in standard 4/4 time"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Asymmetric Counting & Intro Riff",
+      "steps": [
+        "Count the 7/4 and 3/4 meter shifts smoothly with a metronome",
+        "Alternate pick through the arpeggiated intro pattern at 110 BPM before pushing to 132 BPM",
+        "Lock into Neil Peart's drum accents and Geddy Lee's driving bass line"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Whammy Bar Solo Articulation & Nuance",
+      "steps": [
+        "Learn Alex Lifeson's solo phrasing, paying close attention to micro-tonal pitch bends",
+        "Use the whammy bar to scoop into notes and create smooth, vocal vibrato",
+        "Balance pick dynamics and delay trails to allow sustained notes to bloom naturally"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Tom Sawyer",
+        "link": "/lessons/songs/song-analysis/tom-sawyer",
+        "similarity": "Prog-rock anthem featuring 7/8 metric shifts, punchy power chords, and blistering synthesizer counterpoint"
+      },
+      {
+        "title": "The Spirit of Radio",
+        "link": "/lessons/songs/song-analysis/spirit-of-radio",
+        "similarity": "Virtuosic pull-off intro riff, reggae-rock breakdown, and energetic open-chord drive"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Iconic progressive rock composition written in an asymmetric 7/4 time signature"
+      },
+      {
+        "title": "Comfortably Numb",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Benchmark emotional, soaring melodic guitar solo with massive spatial delay and sustain"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Tom Sawyer",
+        "artist": "Rush",
+        "difficulty": "Advanced",
+        "similarity": "Master complex progressive rock time signatures and tight ensemble synchronization"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting the open B or high E strings while fretting complex chord shapes",
+      "Losing count during the transition from 7/4 into 3/4 and 4/4",
+      "Using excessive whammy bar dips that knock the guitar out of tune instead of subtle musical vibrato"
+    ],
+    "practiceRoutine": [
+      "10 minutes: Open-string chord fingering clarity and arpeggiation drills",
+      "15 minutes: Metronome practice in 7/4 time (divided 4+3) at 100-132 BPM",
+      "15 minutes: Whammy bar scoop and pitch-matching drills over the solo backing track"
+    ],
+    "focusAreas": [
+      "Open string ring and separation",
+      "Asymmetric time signature counting",
+      "Whammy bar pitch control and vibrato width"
+    ],
+    "metronomeWork": [
+      "Count 7/4 as 1-2-3-4 followed by 1-2-3 with accents on beat 1 and beat 5 at 120 BPM"
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "advanced",
+      "arpeggios",
+      "vibrato",
+      "major-key",
+      "lead-guitar",
+      "rhythm-guitar",
+      "chorus",
+      "delay"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "4-6 weeks"
+  }
+}
+

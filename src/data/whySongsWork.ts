@@ -4585,6 +4585,403 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
     },
   },
 
+  'one': {
+    slug: 'one',
+    songTitle: 'One',
+    artist: 'Metallica',
+    key: 'B Minor',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Classical B Minor Harmonic Dominant (F#) Shifting to Rhythmic Thrash Metric Sextuplets',
+    emotionalHook: 'The narrative arc of "One" begins as a classical-influenced dark Aeolian lament cycling Bm - G - Em - F#. The harmonic anchor is the sharp F# major dominant chord (borrowed from B Harmonic Minor): its A# leading tone injects unbearable tragic tension that resolves back to the root Bm. As the psychological horror deepens, the composition strips away lyricism and plunges into low E minor sextuplet thrash machine-gun warfare.',
+    romanProgression: 'i - VI - iv - V (Verse) | i5 - ♭II5 - i5 - ♭III5 (Breakdown)',
+    chords: ['Bm', 'G', 'Em', 'F#', 'E5', 'F5', 'G5'],
+    progressionExplanation: [
+      'Bm (i): Chilling minor tonic evoking solitary confinement and isolation.',
+      'G (VI): Tragic submediant providing brief melodic vulnerability.',
+      'Em (iv): Minor subdominant elevating the harmonic despair.',
+      'F# (V): Major dominant with raised A# leading tone creating dramatic harmonic minor gravity.',
+      'E5 Machine Gun Breakdown: Metric sextuplet rhythmic warfare locking with double kick drums.',
+    ],
+    voiceLeadingInsights: [
+      'Inner-voice melody moves smoothly: D (Bm) → D (G) → E (Em) → C#/A# (F#), creating classical counterpoint.',
+      'Dynamic extremes: delicate Roland JC-120 clean chorus contrasts with quad-tracked Mesa Boogie Mark IIC+ scooped distortion.',
+      'The meter shifts smoothly through 4/4, 3/4, and 2/4 before unleashing the double-time 190 BPM thrash climax.',
+    ],
+    guitarPerspective: 'Play the intro clean arpeggios with relaxed alternate picking. In the breakdown, lock the edge of your right-hand palm over the bridge saddles for machine-gun percussive punch.',
+    songwriterTakeaway: 'Use a formal harmonic progression (like i - VI - iv - V) to establish emotional intimacy before tearing it down with extreme tempo and rhythmic disruption.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'B Natural Minor', slug: 'minor', description: 'The foundation for the melancholy clean intro and verse arpeggios.' },
+        { name: 'B Harmonic Minor', slug: 'harmonic-minor', description: 'Source of the raised A# leading tone in the F# major dominant chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode providing deep emotional pathos.' },
+      ],
+      chords: [
+        { name: 'Barre Chords', slug: 'minor', description: 'Clean arpeggiated minor shapes across the fretboard.' },
+        { name: 'Power Chords', slug: 'power-chords', description: 'Heavy palm-muted downstroke chords in the chorus and breakdown.' },
+      ],
+    },
+  },
+
+  'black-magic-woman': {
+    slug: 'black-magic-woman',
+    songTitle: 'Black Magic Woman',
+    artist: 'Santana',
+    key: 'D Minor',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'D Dorian Modal Sweetness (Natural 6th B) Resolving Over an Authentic Minor Blues Turnaround',
+    emotionalHook: 'Carlos Santana takes Peter Green\'s minor blues and elevates it with Afro-Cuban percussion and D Dorian modal elegance. By continually landing on the natural major 6th (B) over Dm7, Santana removes the dark sadness of natural minor and replaces it with sultry, singing warmth before snapping the harmony into sharp focus with the A7 dominant turnaround.',
+    romanProgression: 'i7 - v7 - i7 - iv7 - i7 - V7 - i7',
+    chords: ['Dm7', 'Am7', 'Gm7', 'A7', 'D7', 'G7'],
+    progressionExplanation: [
+      'Dm7 (i7): Sensual minor tonic defined by the singing Dorian natural 6th.',
+      'Am7 (v7): Gentle modal minor fifth chord avoiding harsh dominant tension in the verse.',
+      'Gm7 (iv7): Minor subdominant deepening the blues emotional gravity.',
+      'A7 (V7): Harmonic minor dominant supplying the sharp C# leading tone turnaround.',
+      'Gypsy Queen Jam: High-speed Gábor Szabó Latin jazz vamp cycling D7 and G7.',
+    ],
+    voiceLeadingInsights: [
+      'The B natural in D Dorian resolves smoothly down to Bb in Gm7 and down to A in the tonic chord.',
+      'The raised C# leading tone in A7 creates magnetic pull back to the D root.',
+      'Call-and-response interplay between guitar lines and Gregg Rolie\'s vocals forms a continuous melodic conversation.',
+    ],
+    guitarPerspective: 'Roll guitar tone back to 6 on the neck pickup for Santana\'s creamy woman tone. Let sustained notes bloom with wide wrist vibrato.',
+    songwriterTakeaway: 'Incorporate the natural 6th in a minor progression to create an exotic, romantic modal atmosphere.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Dorian Mode', slug: 'dorian', description: 'The signature Latin blues-rock mode emphasizing the sweet major 6th (B).' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'Core scale for biting blues-rock double-stops and string bends.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The modal heart of Santana\'s guitar vocabulary.' },
+      ],
+      chords: [
+        { name: 'Minor Seventh Chords', slug: 'minor-seventh', description: 'Dm7, Am7, and Gm7 comping shapes.' },
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'A7 turnaround dominant chord.' },
+      ],
+    },
+  },
+
+  'rooster': {
+    slug: 'rooster',
+    songTitle: 'Rooster',
+    artist: 'Alice in Chains',
+    key: 'F# Minor',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'Two-Chord Hypnotic F# Dorian Arpeggiation Exploding Into Chromatic Grunge Tritone Anguish',
+    emotionalHook: 'Jerry Cantrell crafts one of grunge\'s most haunting soundscapes with just two alternating chords: F#m and A (i - ♭III). Soaked in chorus and flanging in half-step down tuning, the progression feels suspended in memory and trauma. When the chorus detonates, Cantrell adds the major IV (B) and the dissonant flat-five (C), turning modal stillness into a harrowing wall of distorted guitar fury.',
+    romanProgression: 'i - ♭III (Verse) | i5 - ♭III5 - IV5 - ♭V5 (Chorus)',
+    chords: ['F#m', 'A', 'B', 'C', 'F#5', 'A5', 'D5'],
+    progressionExplanation: [
+      'F#m (i) to A (♭III): Hypnotic two-chord movement contrasting heavy minor tonic with warm relative major.',
+      'B (IV): Major subdominant introducing Dorian brightness before the sonic drop.',
+      'C (♭V): Dissonant tritone shock injecting visceral psychological tension.',
+      'Half-step down tuning (Eb): Deepens string slackness and amplifies low-end resonance.',
+    ],
+    voiceLeadingInsights: [
+      'Ringing open A and high E strings create a continuous acoustic drone across chord changes.',
+      'The sudden leap to high-gain distortion mirrors the lyrical explosion from quiet dread to active warfare.',
+      'Jerry Cantrell\'s vocal wah solo matches the expressive contours of Layne Staley\'s vocal screams.',
+    ],
+    guitarPerspective: 'Let the chorus and flanger modulate the clean verse arpeggio. In the chorus, slam heavy downstroke power chords with wide picking hand movement.',
+    songwriterTakeaway: 'You do not need many chords to build immense emotional weight—two cycling chords combined with extreme sonic dynamics can define an entire generational anthem.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F# Natural Minor', slug: 'minor', description: 'Brooding scale framework for verse harmonies.' },
+        { name: 'F# Blues Scale', slug: 'blues-scale', description: 'Supplies the tritone blue note (C) in the heavy chorus.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark minor mode foundation.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Drop-tuned heavy power chords in Eb Standard.' },
+      ],
+    },
+  },
+
+  'life-in-the-fast-lane': {
+    slug: 'life-in-the-fast-lane',
+    songTitle: 'Life in the Fast Lane',
+    artist: 'Eagles',
+    key: 'E Minor',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrids & Minor Pentatonic',
+    coreSecret: 'Syncopated String-Skipping Funk Riffing Combined with Dominant 7th Blues Harmonies',
+    emotionalHook: 'Joe Walsh took an eccentric guitar warm-up exercise and transformed it into a hard-rock freight train. Built on a syncopated 16th-note string-skipping riff in E, the song fuses James Brown funk discipline with blistering blues-rock overdrive. The harmonic engine shifts between funky E7 dominant chords and a surprise borrowed ♭VI7 (C7), supercharging the turnaround with West Coast swagger.',
+    romanProgression: 'I7 - IV7 - I7 - V7 - ♭VI7 - V7',
+    chords: ['E7', 'A7', 'B7', 'C7', 'E5'],
+    progressionExplanation: [
+      'E5 Riff: Low E string pedal point skipping to 4th-string blues accents on the 16th-note offbeats.',
+      'E7 to A7 (I7 - IV7): Soulful funk-blues progression keeping the verses driving forward.',
+      'C7 (♭VI7): Borrowed flat-sixth dominant chord delivering an unexpected harmonic jolt.',
+      'B7 (V7): Authoritative dominant chord snapping the groove back to the tonic.',
+    ],
+    voiceLeadingInsights: [
+      'Chromatic passing tones on fret 6 of the A string connect the 4th and 5th scale degrees with greasy blues authenticism.',
+      'Tight palm muting on the downbeats creates punchy rhythmic contrast against the open-string double-stop accents.',
+      'Joe Walsh and Don Felder trade harmonized lead lines in thirds, creating stereo width and sonic competition.',
+    ],
+    guitarPerspective: 'Lock your picking wrist close to the bridge saddles for instantaneous muting. Accentuate the first sixteenth note of each group to maintain the groove\'s infectious bounce.',
+    songwriterTakeaway: 'Infuse straight rock grooves with syncopated funk rhythm and chromatic passing chords to create unstoppable danceable momentum.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for the iconic string-skipping opening riff.' },
+        { name: 'E Blues Scale', slug: 'blues-scale', description: 'Adds the chromatic passing blue note (Bb).' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Harmonic color for dominant 7th funk chord comping.' },
+      ],
+      chords: [
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'E7, A7, and B7 blues chords.' },
+      ],
+    },
+  },
+
+  'limelight': {
+    slug: 'limelight',
+    songTitle: 'Limelight',
+    artist: 'Rush',
+    key: 'E Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Asymmetric 7/4 and 3/4 Time Signatures Blended with Ringing Suspended Chord Extensions',
+    emotionalHook: 'Alex Lifeson revolutionized progressive rock guitar by abandoning traditional barre chords in favor of wide-interval suspended extensions with ringing open strings (Aadd9, F#7add11, Bsus4). By cycling these shimmering voicings through alternating meters of 7/4 and 3/4 before releasing into straight 4/4, Lifeson creates an exhilarating push-pull between intellectual complexity and anthemic radio accessibility.',
+    romanProgression: 'IVadd9 - II7add11 - Vsus4 - I (in 7/4 & 3/4) | I - V6 - vi - IV (in 4/4)',
+    chords: ['Aadd9', 'F#7add11', 'Bsus4', 'E', 'C#m'],
+    progressionExplanation: [
+      'Aadd9 (IVadd9): Shimmering subdominant with ringing B and E strings.',
+      'F#7add11 (II7add11): Secondary dominant with open-string chime.',
+      'Bsus4 (Vsus4): Suspended fifth chord creating suspended forward pull.',
+      'E (I): Triumphant tonic resolution bursting with open string resonance.',
+      'Isolated Guitar Solo: Lyrical E Lydian/Major phrasing with expressive whammy bar vibrato.',
+    ],
+    voiceLeadingInsights: [
+      'The open B and high E strings remain stationary across every chord change, acting as an inverted harmonic pedal point.',
+      'The 7/4 meter divides as 4 beats + 3 beats, creating an eager rhythmic lurch that refuses to settle.',
+      'Lifeson\'s solo floats in isolated space with 350ms delay, highlighting melodic purity over speed.',
+    ],
+    guitarPerspective: 'Keep your fretting knuckles arched high to let the top two strings chime openly. Use gentle dips of the tremolo bar to give solo notes a singing vocal inflection.',
+    songwriterTakeaway: 'Use open-string drone notes across shifting chord shapes to tie complex modal chord progressions into a unified, radiant sonic identity.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Major Scale', slug: 'major', description: 'The luminous diatonic foundation of the song.' },
+        { name: 'E Lydian Mode', slug: 'lydian', description: 'Supplies the raised 4th (A#) in Lifeson\'s soaring guitar solo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Bright major tonal center.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open ringing chord voicings with drone notes.' },
+      ],
+    },
+  },
+
+  'hold-the-line': {
+    slug: 'hold-the-line',
+    songTitle: 'Hold the Line',
+    artist: 'Toto',
+    key: 'F# Minor',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'Syncopated Triplet Shuffle Locking with a Dramatic Minor Cadence and C#7 Dominant Turnaround',
+    emotionalHook: 'Steve Lukather and David Paich created an arena rock masterclass by locking piano and guitar in a driving eighth-note triplet shuffle. The progression moves through a classic minor cycle (F#m - C#m - D - Bm), but the harmonic climax is the sharp major dominant C#7 (borrowed from F# Harmonic Minor): its E# leading tone demands resolution, catapulting Lukather into a benchmark blues-rock solo packed with stinging pinched harmonics.',
+    romanProgression: 'i - v - VI - iv - V7 (Intro & Chorus) | i - VI - ♭VII - V7 (Solo)',
+    chords: ['F#m', 'C#m', 'D', 'Bm', 'C#7', 'E'],
+    progressionExplanation: [
+      'F#m (i): Driving minor tonic establishing intense rock momentum.',
+      'C#m (v): Natural minor dominant creating smooth stepwise voice leading.',
+      'D (VI): Anthemic submediant opening up the harmonic space.',
+      'Bm (iv): Minor subdominant preparing the cadence.',
+      'C#7 (V7): Harmonic minor dominant with raised E# leading tone delivering explosive resolution.',
+    ],
+    voiceLeadingInsights: [
+      'The triplet rhythm provides continuous forward roll, keeping the minor changes feeling energetic rather than melancholic.',
+      'The chromatic voice leading in the turnaround (D → C# → B → A → G# → E#) anchors the chord progression.',
+      'Lukather\'s guitar fills weave in and out of the vocal line using F# blues scale double-stops and pinched squeals.',
+    ],
+    guitarPerspective: 'Lock your down-up picking with the drummer\'s triplet shuffle. Graze the string with your picking thumb to trigger screaming harmonic overtones on lead notes.',
+    songwriterTakeaway: 'Enrich a standard minor chord progression with a true major V7 chord from harmonic minor to give your chorus an undeniable sense of finality and punch.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F# Natural Minor', slug: 'minor', description: 'The driving Aeolian scale underpinning the verse and chorus.' },
+        { name: 'F# Harmonic Minor', slug: 'harmonic-minor', description: 'Provides the raised E# leading tone in the C#7 dominant chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The rock minor mode foundation.' },
+      ],
+      chords: [
+        { name: 'Dominant Seventh Chords', slug: 'seventh', description: 'C#7 major dominant chord.' },
+      ],
+    },
+  },
+
+  'bow-river': {
+    slug: 'bow-river',
+    songTitle: 'Bow River',
+    artist: 'Cold Chisel',
+    key: 'A Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'A Mixolydian Pub-Rock Shuffle Merging Major Pentatonic Sweetness with Searing Minor Blues Phrasing',
+    emotionalHook: 'Written and sung by Ian Moss, "Bow River" is the holy grail of Australian electric blues. Driven by an unstoppable straight-eighth shuffle in A, the chord progression soars when the borrowed Mixolydian ♭VII chord (G major) hits in the chorus. Moss\'s guitar solo is a masterclass in dynamic storytelling, gliding between sweet A major pentatonic melodies and explosive, screaming minor blues bends.',
+    romanProgression: 'I5 - IV5 - V5 - I5 (Verse) | IV - V - I - IV - ♭VII - IV - I (Chorus)',
+    chords: ['A', 'D', 'E', 'G', 'A5', 'D5', 'E5'],
+    progressionExplanation: [
+      'A5 to D5 to E5: High-energy straight-eighth pub rock shuffle chug.',
+      'G (♭VII): Borrowed Mixolydian flat-seventh chord introducing anthemic Australian rock swagger.',
+      'D (IV) to A (I): Classic plagal cadence grounding the chorus in heartland warmth.',
+      'Solo Section: Masterful blend of A Major Pentatonic sweetness and A Minor Blues bite.',
+    ],
+    voiceLeadingInsights: [
+      'Moss alternates between the major 3rd (C#) on A chords and the blues minor 3rd (C natural) for expressive tension.',
+      'The Stratocaster neck pickup delivers fat, woody transients that preserve touch sensitivity across extreme dynamics.',
+      'Pauses and silence in the solo allow the drums and bass to surge forward before the next guitar climax.',
+    ],
+    guitarPerspective: 'Dial your valve amp right to the edge of breakup so light pick touches stay clean while aggressive digs roar into harmonic overdrive. Use wide, vocal-style finger vibrato on sustained bends.',
+    songwriterTakeaway: 'Insert a borrowed ♭VII chord before your tonic resolution to turn an ordinary blues progression into a stadium-sized anthem.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'Sweet, vocal-style blues phrasing scale.' },
+        { name: 'A Blues Scale', slug: 'blues-scale', description: 'Aggressive minor blues scale with blue note Eb.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Supplies the borrowed flat-seventh (G).' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open A, D, E, and G rock chord shapes.' },
+      ],
+    },
+  },
+
+  'times-like-these': {
+    slug: 'times-like-these',
+    songTitle: 'Times Like These',
+    artist: 'Foo Fighters',
+    key: 'D Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Open D Pedal-Point Ostinato in 7/4 Asymmetric Meter Bursting into Straight 4/4 Mixolydian Joy',
+    emotionalHook: 'Dave Grohl achieved modern rock perfection by taking an irregular 7/4 meter and making it feel effortless and uplifting. By anchoring the intro riff around an unrelenting open 4th-string D pedal tone, moving high dyads create harmonic shimmer without losing rhythmic pulse. When the song transitions into straight 4/4, borrowed Mixolydian chords (Am7 and C) transform personal resilience into an arena-filling communal anthem.',
+    romanProgression: 'I5 - Isus2 (7/4 Intro) | I - v7 - ♭VII - ii - I (4/4 Verse & Chorus)',
+    chords: ['D', 'Am7', 'C', 'Em', 'D5', 'Dsus2'],
+    progressionExplanation: [
+      'D5 / Dsus2 (7/4 Riff): Open D string pedal ostinato with high shifting dyads (F#, E, G).',
+      'Am7 (v7): Borrowed Mixolydian fifth chord introducing bittersweet introspective vulnerability.',
+      'C (♭VII): Classic rock Mixolydian chord delivering hopeful, forward-leaning momentum.',
+      'Em to D (ii - I): Stepwise diatonic cadence providing warm, satisfying emotional closure.',
+    ],
+    voiceLeadingInsights: [
+      'The 7/4 meter flows as 4 beats of main theme + 3 beats of melodic answer, creating perpetual forward motion.',
+      'The open top strings ring across Am7 and C, blurring chord boundaries into a unified acoustic/electric sheen.',
+      'The transition into straight 4/4 feels like taking a deep breath of relief after the tension of odd time.',
+    ],
+    guitarPerspective: 'Keep your fretting index finger arched so the open D string rings freely on eighth-note downstrokes. Dig into full open chord strumming when the chorus explodes.',
+    songwriterTakeaway: 'Odd time signatures do not have to feel jarring or technical; anchor them with a simple open-string drone to create unforgettable melodic hooks.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Scale', slug: 'major', description: 'The bright foundational scale for the intro riff.' },
+        { name: 'D Mixolydian Mode', slug: 'mixolydian', description: 'Supplies the borrowed C natural in Am7 and C major.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Classic rock uplifting modal harmony.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Ringing open chord shapes in D major.' },
+      ],
+    },
+  },
+
+  'cant-find-my-way-home': {
+    slug: 'cant-find-my-way-home',
+    songTitle: 'Can\'t Find My Way Home',
+    artist: 'Blind Faith',
+    key: 'D Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Basslines & Ground Bass',
+    coreSecret: 'Drop D Acoustic Travis Picking with Stepwise Chromatic Bass Descent and Modal Ambiguity',
+    emotionalHook: 'Steve Winwood composed a masterwork of acoustic melancholy by dropping the 6th string to low D. The opening cycles D - F/D - G/D, blending D Major brightness with D Dorian darkness over a deep 73.4 Hz low-end drone. The emotional summit arrives in the refrain, where the bassline steps down chromatically (B → Bb → A → G# → G → D), illustrating the lyric of feeling lost and searching for home through pure musical voice leading.',
+    romanProgression: 'I - ♭III/I - IV/I - I (Verse) | IV6 - iv6 - I64 - V7/V - IV - I (Refrain)',
+    chords: ['D', 'F/D', 'G/D', 'G/B', 'Gm/Bb', 'D/A', 'E7/G#', 'Em', 'A7'],
+    progressionExplanation: [
+      'D to F/D to G/D: Drop-D pedal point progression oscillating between Major and Dorian modal colors.',
+      'G/B to Gm/Bb: Major IV shifting to minor iv with descending bassline (B to Bb).',
+      'D/A to E7/G# (I64 - V7/V): Classical passing chords continuing the chromatic descent down to G#.',
+      'Em to A7 to D (ii - V7 - I): Complete functional turnaround restoring stability.',
+    ],
+    voiceLeadingInsights: [
+      'The chromatic bass walkdown (B → Bb → A → G# → G → D) mirrors 17th-century lament bass traditions.',
+      'The alternating thumb maintains a steady pulse on beats 1 and 3 while treble fingers weave syncopated melodies.',
+      'The low D drone gives a solo acoustic guitar the weight and resonance of a full orchestral section.',
+    ],
+    guitarPerspective: 'Practice the Travis picking pattern slowly, keeping your thumb strictly independent of your plucking fingers. Let the open high E and B strings ring as continuous ambient overtones.',
+    songwriterTakeaway: 'Use a descending chromatic bassline beneath a stationary melody or chord drone to convey longing, loss, and philosophical searching.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Scale', slug: 'major', description: 'Tonal anchor for the folk-rock acoustic guitar picking.' },
+        { name: 'D Dorian Mode', slug: 'dorian', description: 'Supplies the borrowed minor 3rd (F natural) in the F/D chord.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'Haunting modal color for the verse progression.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Drop D acoustic chord shapes.' },
+      ],
+    },
+  },
+
+  'crazy-on-you': {
+    slug: 'crazy-on-you',
+    songTitle: 'Crazy on You',
+    artist: 'Heart',
+    key: 'A Minor',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'Flamenco-Inspired Acoustic Pull-Off Flourishes Exploding into an Aeolian Hard Rock Anthem',
+    emotionalHook: 'Nancy Wilson\'s acoustic prelude "Silver Wheels" is one of the most stunning acoustic entrances in rock history. Utilizing rapid 16th-note pull-offs between fret 1 and open B against ringing drone strings, Wilson fuses Spanish flamenco flair with American folk agility. When the electric band kicks in, the progression snaps into an aggressive Aeolian rock loop (Am - G - F - G), uniting acoustic virtuosity with hard-rock power.',
+    romanProgression: 'i - IV6 - ♭VI - V7 (Acoustic Intro) | i - ♭VII - ♭VI - ♭VII (Electric Verse & Chorus)',
+    chords: ['Am', 'G', 'F', 'E7', 'D/F#', 'A5', 'G5', 'F5'],
+    progressionExplanation: [
+      'Silver Wheels Prelude: Rapid sixteenth-note pull-offs on the B and G strings over shifting bass roots.',
+      'Am (i): Brooding minor tonic establishing urgent, driving emotional energy.',
+      'G (♭VII) to F (♭VI): Classic Aeolian descent maximizing harmonic tension and vocal urgency.',
+      'E7 (V7): Classical harmonic minor dominant resolving the acoustic introduction.',
+    ],
+    voiceLeadingInsights: [
+      'The rapid pull-offs create a shimmering cascade of open-string harmonics that pre-date modern two-hand tapping.',
+      'The dramatic dynamic jump from solo acoustic guitar to crushing electric power chords creates massive theatrical impact.',
+      'Roger Fisher\'s searing electric fills dance around Ann Wilson\'s vocal melodies using biting minor pentatonic bends.',
+    ],
+    guitarPerspective: 'Keep your left-hand index finger curved and firm for the acoustic pull-offs so adjacent open strings ring true. Transition into full downstroke power chords with aggressive palm muting.',
+    songwriterTakeaway: 'Open a heavy electric rock song with an intricate, virtuosic acoustic prelude to captivate the listener\'s ear before hitting them with the full sonic wall.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Natural Minor', slug: 'minor', description: 'Aeolian scale foundation for the driving power chords.' },
+        { name: 'A Dorian Mode', slug: 'dorian', description: 'Supplies the bright major 6th (F#) in the acoustic prelude.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The rock natural minor mode.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Heavy electric rhythm chords in the verse and chorus.' },
+        { name: 'Open Chords', slug: 'major', description: 'Acoustic fingerstyle chord voicings in the prelude.' },
+      ],
+    },
+  },
+
 
 };
 

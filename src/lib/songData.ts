@@ -198,6 +198,16 @@ import babeImGonnaLeaveYouData from '@/data/songs/babe-im-gonna-leave-you.json';
 import workingClassManData from '@/data/songs/working-class-man.json';
 import fellOnBlackDaysData from '@/data/songs/fell-on-black-days.json';
 import moneyData from '@/data/songs/money.json';
+import oneData from '@/data/songs/one.json';
+import blackMagicWomanData from '@/data/songs/black-magic-woman.json';
+import roosterData from '@/data/songs/rooster.json';
+import lifeInTheFastLaneData from '@/data/songs/life-in-the-fast-lane.json';
+import limelightData from '@/data/songs/limelight.json';
+import holdTheLineData from '@/data/songs/hold-the-line.json';
+import bowRiverData from '@/data/songs/bow-river.json';
+import timesLikeTheseData from '@/data/songs/times-like-these.json';
+import cantFindMyWayHomeData from '@/data/songs/cant-find-my-way-home.json';
+import crazyOnYouData from '@/data/songs/crazy-on-you.json';
 
 export interface SongData {
   songInfo: {
@@ -614,6 +624,16 @@ const songDatabase: Record<string, SongData> = {
   'working-class-man': workingClassManData as SongData,
   'fell-on-black-days': fellOnBlackDaysData as SongData,
   'money': moneyData as SongData,
+  'one': oneData as SongData,
+  'black-magic-woman': blackMagicWomanData as SongData,
+  'rooster': roosterData as SongData,
+  'life-in-the-fast-lane': lifeInTheFastLaneData as SongData,
+  'limelight': limelightData as SongData,
+  'hold-the-line': holdTheLineData as SongData,
+  'bow-river': bowRiverData as SongData,
+  'times-like-these': timesLikeTheseData as SongData,
+  'cant-find-my-way-home': cantFindMyWayHomeData as SongData,
+  'crazy-on-you': crazyOnYouData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

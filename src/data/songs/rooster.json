@@ -1,0 +1,300 @@
+{
+  "songInfo": {
+    "title": "Rooster",
+    "artist": "Alice in Chains",
+    "album": "Dirt",
+    "released": "1992",
+    "genre": "Grunge / Alternative Metal",
+    "tempo": "72 BPM",
+    "duration": "6:15",
+    "key": "F# Minor",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# minor",
+      "scalesUsed": [
+        {
+          "scale": "F# Natural Minor (Aeolian)",
+          "notes": "F# - G# - A - B - C# - D - E",
+          "application": "Underpins the brooding verse tonality and vocal harmonies between Layne Staley and Jerry Cantrell"
+        },
+        {
+          "scale": "F# Minor Pentatonic / Blues Scale",
+          "notes": "F# - A - B - C - C# - E",
+          "application": "Jerry Cantrell's vocal-style wah solo phrasing and stinging bent double-stops"
+        },
+        {
+          "scale": "F# Dorian Mode",
+          "notes": "F# - G# - A - B - C# - D# - E",
+          "application": "Supplies the bright major 6th (D#) color in the clean arpeggiated intro fills"
+        }
+      ],
+      "modalCharacter": "Brooding, atmospheric 90s alternative grunge masterpiece built on dramatic soft-loud contrast, modulating chorus/flanger clean verses, and apocalyptic walls of drop-tuned distorted guitars",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "A major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "A",
+          "B",
+          "C"
+        ],
+        "progression": "i - ♭III - IV - ♭V",
+        "description": "Cyclical two-chord verse groove expanding into crushing chromatic grunge power chords in the chorus."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Clean Verse & Intro",
+          "progression": "F#m - A",
+          "romanNumerals": "i - ♭III",
+          "description": "Hypnotic two-chord arpeggiated movement soaked in Electro-Harmonix Electric Mistress flanging"
+        },
+        {
+          "section": "Heavy Pre-Chorus Build",
+          "progression": "F#5 - A5 - B5 - C5",
+          "romanNumerals": "i5 - ♭III5 - IV5 - ♭V5",
+          "description": "Rising chromatic tension with palm-muted power chords exploding into full distortion"
+        },
+        {
+          "section": "Crushing Chorus & Guitar Solo",
+          "progression": "F#5 - A5 - F#5 - A5",
+          "romanNumerals": "i5 - ♭III5 - i5 - ♭III5",
+          "description": "Monolithic grunge power chords underscoring Layne Staley's soaring chorus vocals and Cantrell's wah solo"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m (i) - Heavy, resonant minor tonic tuned down a half-step for deep low-end resonance",
+        "A (♭III) - Relative major submediant providing harmonic warmth and bittersweet contrast",
+        "B (IV) - Major subdominant introducing bright Dorian uplift before the heavy drop",
+        "C (♭V) - Tritone passing chord delivering visceral harmonic angst and dissonance"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Dynamic Soft-Loud Grunge Contrast & Wah Phrasing",
+      "description": "Transitioning seamlessly from delicate, modulated clean finger/pick arpeggios to thunderous Bogner/Marshall high-gain power chords with expressive cry-baby wah soloing",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Tuning: Tune down all 6 strings by one half-step (Eb Ab Db Gb Bb Eb)",
+          "Clean arpeggio: Low F# root (2nd fret low E) alternating with ringing open A string",
+          "Chorus impact: Dig in with aggressive, wide-angle downstrokes across full root-6 and root-5 power chords"
+        ],
+        "sequence": [
+          "Tune guitar to Eb standard tuning",
+          "Dial in a warm clean tone with subtle stereo chorus or flanger modulation",
+          "Master the smooth picking flow of the two-bar F#m - A verse arpeggio",
+          "Engage high-gain overdrive or distortion pedal on beat 1 of the chorus for maximum dynamic shock"
+        ],
+        "tips": [
+          "Allow the open strings to ring over chord transitions to create Jerry Cantrell's signature wide stereo acoustic/electric soundscape",
+          "Use a slow, sweeping motion on your wah pedal during the solo rather than fast funk rocking to mimic vocal singing",
+          "Keep your fretting thumb wrapped over the neck to anchor the low F# note on the 2nd fret"
+        ],
+        "chords": [
+          "F#m",
+          "A",
+          "F#5",
+          "A5",
+          "B5",
+          "C5"
+        ],
+        "progression": "F#m - A"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Clean Intro & Verse Arpeggio",
+      "timeStamp": "0:00-1:10",
+      "technique": "Modulated Clean Arpeggiated Picking",
+      "key": "F# Minor",
+      "description": "Haunting two-chord arpeggio played through an Electro-Harmonix Electric Mistress flanger and chorus",
+      "alphaTab": "\\tempo 72 . \\ts 4 4\n:8 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 | 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 |",
+      "exerciseLabel": "Verse Clean Arpeggio Pattern",
+      "chords": [
+        "F#m",
+        "A"
+      ],
+      "progression": "F#m - A",
+      "notes": [
+        "F#",
+        "C#",
+        "A",
+        "E"
+      ]
+    },
+    {
+      "name": "Heavy Chorus Riff",
+      "timeStamp": "1:35-2:15",
+      "technique": "Heavy Downstroke Power Chording",
+      "key": "F# Minor",
+      "description": "Massive high-gain wall of sound locking with the bass and drums as the song explodes into the chorus",
+      "alphaTab": "\\tempo 72 . \\ts 4 4\n:4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :2 5.5 :4 0.5 2.6 |",
+      "exerciseLabel": "Heavy Chorus Power Groove",
+      "chords": [
+        "F#5",
+        "A5",
+        "D5"
+      ],
+      "progression": "F#5 - A5 - F#5 - A5 - D5",
+      "notes": [
+        "F#",
+        "C#",
+        "A",
+        "E",
+        "D"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "G&L Rampage (Jerry Cantrell Signature) with Seymour Duncan JB humbucker / Gibson Les Paul Standard",
+      "alternatives": [
+        "Gibson Les Paul Studio",
+        "PRS SE Custom 24",
+        "ESP LTD Eclipse"
+      ],
+      "pickup": "Bridge humbucker with high output for tight, saturated low-end crunch"
+    },
+    "amp": {
+      "recommended": "Bogner Fish Preamp through a Mesa Boogie Strategy 500 power amp / Marshall JCM800",
+      "alternatives": [
+        "Friedman BE-100",
+        "EVH 5150 III",
+        "Peavey 6505"
+      ],
+      "settings": {
+        "gain": "8.0",
+        "treble": "6.5",
+        "middle": "6.0",
+        "bass": "7.5",
+        "presence": "5.5"
+      }
+    },
+    "effects": {
+      "distortion": "Cascading Bogner Fish high-gain tube distortion channel",
+      "reverb": "Subtle studio room reverb adding spatial width",
+      "other": "Electro-Harmonix Electric Mistress Flanger / Dunlop Jerry Cantrell Signature Cry Baby Wah",
+      "chorus": "Boss CE-2 chorus on clean verse guitar tracks"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Tuning & Verse Arpeggios",
+      "steps": [
+        "Tune your guitar down a half-step to Eb Standard (Eb Ab Db Gb Bb Eb)",
+        "Practice the clean F#m and A arpeggio patterns at 72 BPM",
+        "Switch smoothly between clean pick strokes and heavy chorus chords"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Dynamic Explosion & Power Grooves",
+      "steps": [
+        "Master the sudden dynamic transition from whisper-quiet clean to crushing overdrive",
+        "Lock heavy downstroke power chords in the chorus with the kick drum",
+        "Learn the rising chromatic pre-chorus progression (F#5 - A5 - B5 - C5)"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Vocal Wah Solo & Sonic Layering",
+      "steps": [
+        "Learn Jerry Cantrell's vocal-style wah guitar solo note-for-note",
+        "Control foot sweeps on the wah pedal to match the vocal inflection and vowel sounds",
+        "Replicate the multi-tracked wall of sound in live or recording settings"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Man in the Box",
+        "link": "/lessons/songs/song-analysis/man-in-the-box",
+        "similarity": "The iconic talk-box grunge anthem featuring heavy drop-D power chords and crushing vocal harmonies"
+      },
+      {
+        "title": "No Excuses",
+        "link": "/lessons/songs/song-analysis/no-excuses",
+        "similarity": "Acoustic-driven Alice in Chains masterclass utilizing open ringing strings and modal chord voicings"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Black Hole Sun",
+        "artist": "Soundgarden",
+        "difficulty": "Advanced",
+        "similarity": "Lush Leslie/chorus clean arpeggios exploding into heavy alternative rock choruses"
+      },
+      {
+        "title": "Plush",
+        "artist": "Stone Temple Pilots",
+        "difficulty": "Intermediate",
+        "similarity": "90s grunge masterclass in open jazz-influenced chord voicings and dynamic power"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Man in the Box",
+        "artist": "Alice in Chains",
+        "difficulty": "Advanced",
+        "similarity": "Take your Jerry Cantrell rhythm power and expressive lead phrasing to the next level"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Forgetting to tune down to Eb Standard, making the song clash with the original recording",
+      "Over-playing during the verse arpeggio rather than letting the modulation effects breathe",
+      "Stomping too aggressively on the wah pedal instead of using slow, vocal-like sweeps"
+    ],
+    "practiceRoutine": [
+      "10 minutes: Slow arpeggio picking drill over F#m and A with chorus/flanger",
+      "15 minutes: Downstroke power chord rhythm tightening with a metronome at 72 BPM",
+      "15 minutes: Wah pedal expression and pitch-bending accuracy over the solo progression"
+    ],
+    "focusAreas": [
+      "Dynamic control between clean verse and high-gain chorus",
+      "Eb Standard tuning accuracy and intonation",
+      "Vocal-style wah phrasing"
+    ],
+    "metronomeWork": [
+      "Set metronome to 72 BPM in 4/4 time and practice landing heavy chorus downstrokes exactly on the downbeat"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "intermediate",
+      "power-chords",
+      "arpeggios",
+      "distortion",
+      "minor-key",
+      "lead-guitar",
+      "rhythm-guitar",
+      "wah"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}
+

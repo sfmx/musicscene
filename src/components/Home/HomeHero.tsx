@@ -39,7 +39,7 @@ export default function HomeHero() {
               Tabs tell you <strong className="text-slate-900 dark:text-white font-semibold">where</strong> to put your fingers, but never <strong className="text-slate-900 dark:text-white font-semibold">why</strong> it works. Textbooks drown you in abstract notation that never touches your fretboard.
             </p>
             <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 200+ iconic songs section-by-section, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
+              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 210+ iconic songs section-by-section, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
             </p>
 
             {/* Action Buttons */}
@@ -49,7 +49,7 @@ export default function HomeHero() {
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-base"
               >
                 <span>🎸</span>
-                <span>Explore 200+ Song Analyses</span>
+                <span>Explore 210+ Song Analyses</span>
               </a>
               <a
                 href="#interactive-tools"
@@ -63,7 +63,7 @@ export default function HomeHero() {
             {/* Trust / Metric Badges */}
             <div className="pt-4 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
               <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-amber-500 dark:text-amber-400">200+</div>
+                <div className="text-2xl font-black text-amber-500 dark:text-amber-400">210+</div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Song Breakdowns</div>
               </div>
               <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">

@@ -1,0 +1,307 @@
+{
+  "songInfo": {
+    "title": "Can't Find My Way Home",
+    "artist": "Blind Faith",
+    "album": "Blind Faith",
+    "released": "1969",
+    "genre": "Folk Rock / Blues Rock",
+    "tempo": "84 BPM",
+    "duration": "3:16",
+    "key": "D Major",
+    "tuning": "Drop D (DADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major",
+      "scalesUsed": [
+        {
+          "scale": "D Mixolydian Mode",
+          "notes": "D - E - F# - G - A - B - C",
+          "application": "Drives the modal mixture between natural C and C# in Steve Winwood's acoustic fingerstyle lines"
+        },
+        {
+          "scale": "D Dorian Mode",
+          "notes": "D - E - F - G - A - B - C",
+          "application": "Supplies the haunting minor 3rd (F natural) in the iconic F/D chord progression"
+        },
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Melodic framework for Eric Clapton's delicate acoustic counterpoint and lead fills"
+        }
+      ],
+      "modalCharacter": "Timeless acoustic folk-rock masterpiece by the supergroup Blind Faith (Steve Winwood, Eric Clapton, Ginger Baker, Ric Grech). Defined by Drop D tuning, a haunting descending bassline beneath a ringing high pedal tone, and sophisticated modal interchange between D Major, D Dorian, and D Mixolydian",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor is the relative minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "F/D",
+          "G/D",
+          "D",
+          "Em",
+          "A7"
+        ],
+        "progression": "I - ♭III/I - IV/I - I - ii - V7",
+        "description": "Rolling Drop-D fingerstyle progression with a haunting chromatic bassline beneath a drone."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Intro & Verse Pattern",
+          "progression": "D - F/D - G/D - D",
+          "romanNumerals": "I - ♭III/I - IV/I - I",
+          "description": "Hypnotic Drop-D Travis picking pattern with bass movement against stationary high ringing strings"
+        },
+        {
+          "section": "Refrain / Pre-Chorus Descent",
+          "progression": "G/B - Gm/Bb - D/A - E7/G# - G - D",
+          "romanNumerals": "IV6 - iv6 - I64 - V7/V - IV - I",
+          "description": "Exquisite chromatic bassline walkdown (B → Bb → A → G# → G → D) showcasing masterclass classical voice leading"
+        },
+        {
+          "section": "Chorus Resolution",
+          "progression": "Em - G - A7sus4 - A7 - D",
+          "romanNumerals": "ii - IV - V7sus4 - V7 - I",
+          "description": "Uplifting modal release moving through the superdominant to the authentic dominant resolution on D"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Warm, resonant Drop-D tonic anchored by the low open 6th string vibrating at 73.4 Hz",
+        "F/D (♭III/I) - Borrowed Dorian minor-third chord introducing vulnerability and introspective melancholy",
+        "G/D (IV/I) - Subdominant chord creating luminous pastoral expansion over the low D pedal point",
+        "E7/G# (V7/V) - Secondary dominant with chromatic bassline leading into the chorus turnaround"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Drop D Acoustic Fingerstyle & Chromatic Voice Leading",
+      "description": "Coordinating continuous Travis picking in Drop D tuning, keeping independent basslines moving against delicate treble string melodies while voicing chromatic descending chords",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Tuning: Drop the 6th string down a full step from E to D (DADGBE)",
+          "Bass-treble independence: The thumb plays low bass notes on beats 1 and 3 while index and middle finger pluck treble strings on offbeats",
+          "Chromatic walkdown: B (fret 2 A) → Bb (fret 1 A) → A (open A) → G# (fret 4 on low D string)"
+        ],
+        "sequence": [
+          "Tune 6th string down to low D matching the 4th string octave",
+          "Practice the basic rolling fingerpicking pattern slowly at 60 BPM",
+          "Master the finger shifts for F/D (fret 3 on 6th string, fret 1 on B string) and G/D",
+          "Integrate the stunning chromatic descending bassline in the refrain"
+        ],
+        "tips": [
+          "Rest your fretting thumb over the top of the neck to anchor bass notes on the low D string when necessary",
+          "Let the open 1st (high E) and 2nd (B) strings ring as sympathetic drones throughout chord changes",
+          "Ginger Baker's complex syncopated percussion requires laying slightly behind the beat on acoustic downstrokes"
+        ],
+        "chords": [
+          "D",
+          "F/D",
+          "G/D",
+          "Em",
+          "G",
+          "A7",
+          "E7/G#"
+        ],
+        "progression": "D - F/D - G/D - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Rolling Fingerstyle Pattern",
+      "timeStamp": "0:00-0:34",
+      "technique": "Drop-D Travis Picking & Pedal Point",
+      "key": "D Major",
+      "description": "Steve Winwood's captivating acoustic guitar intro that immediately sets the introspective, spiritual tone of the song",
+      "alphaTab": "\\tempo 84 . \\ts 4 4\n:8 0.6 0.4 2.3 3.2 0.6 0.4 2.3 3.2 | :8 3.6 0.4 2.3 1.2 3.6 0.4 2.3 1.2 | :8 5.6 0.4 0.3 0.2 5.6 0.4 0.3 0.2 | :8 0.6 0.4 2.3 3.2 :2 0.6 |",
+      "exerciseLabel": "Drop-D Intro Fingerpicking",
+      "chords": [
+        "D",
+        "F/D",
+        "G/D"
+      ],
+      "progression": "D - F/D - G/D - D",
+      "notes": [
+        "D",
+        "F",
+        "G",
+        "A",
+        "C"
+      ]
+    },
+    {
+      "name": "Chromatic Descending Bassline Refrain",
+      "timeStamp": "0:52-1:20",
+      "technique": "Stepwise Chromatic Voice Leading",
+      "key": "D Major",
+      "description": "One of the greatest chord progressions in acoustic rock history, cascading down from G through Bb and G# to D",
+      "alphaTab": "\\tempo 84 . \\ts 4 4\n:4 5.6 3.6 2.6 0.6 | :2 0.5 :4 2.5 0.6 | :4 5.6 3.6 2.6 0.6 | :1 0.6 |",
+      "exerciseLabel": "Chromatic Bass Walkdown",
+      "chords": [
+        "G/B",
+        "Gm/Bb",
+        "D/A",
+        "E7/G#",
+        "D"
+      ],
+      "progression": "G/B - Gm/Bb - D/A - E7/G# - D",
+      "notes": [
+        "B",
+        "Bb",
+        "A",
+        "G#",
+        "G",
+        "D"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Martin D-28 / Gibson J-45 acoustic guitar with medium-gauge phosphor bronze strings",
+      "alternatives": [
+        "Taylor 314ce",
+        "Guild D-55",
+        "Yamaha FG800"
+      ],
+      "pickup": "Microphone recorded: Pair of Neumann U67 / KM84 condenser microphones in stereo XY configuration"
+    },
+    "amp": {
+      "recommended": "Pure acoustic recording through vintage Olympic Sound Studios console preamps / Fender Twin Reverb for electric fills",
+      "alternatives": [
+        "AER Compact 60",
+        "Fishman Loudbox Artist",
+        "Fender Acoustasonic"
+      ],
+      "settings": {
+        "gain": "3.0",
+        "treble": "6.5",
+        "middle": "5.5",
+        "bass": "6.0",
+        "presence": "6.5"
+      }
+    },
+    "effects": {
+      "distortion": "None on acoustic; warm tape console saturation and natural acoustic compression",
+      "reverb": "Olympic Studios natural room ambience layered with subtle plate reverb",
+      "other": "Light studio optical compression to smooth out fingerpicking transients"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Drop D Tuning & Basic Shapes",
+      "steps": [
+        "Tune your low 6th string down a full step to D and verify pitch with the 4th string",
+        "Learn the fingering for D, F/D, and G/D shapes",
+        "Practice simple thumb-and-finger plucking on the beat at 60 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Travis Picking Flow & Rhythm",
+      "steps": [
+        "Build a continuous alternating thumb-index-middle fingerpicking pattern at 84 BPM",
+        "Ensure the bass note rings out on beats 1 and 3 without choking the treble strings",
+        "Learn the chorus chords (Em, G, A7) in Drop D tuning"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Chromatic Voice Leading & Dynamic Touch",
+      "steps": [
+        "Execute the complex chromatic descending bassline walkdown with smooth finger transitions",
+        "Control touch dynamics to emphasize the lyrical top melody over the rhythmic thumb pulse",
+        "Perform the entire acoustic arrangement with seamless timing and emotional expression"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Presence of the Lord",
+        "link": "/lessons/songs/song-analysis/presence-of-the-lord",
+        "similarity": "Blind Faith's spiritual ballad featuring Eric Clapton's singing wah-wah solo and soulful gospel chords"
+      },
+      {
+        "title": "Layla",
+        "link": "/lessons/songs/song-analysis/layla",
+        "similarity": "Eric Clapton and Duane Allman's crowning blues-rock masterpiece with iconic twin-guitar riffs and piano coda"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Babe I'm Gonna Leave You",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Jimmy Page's acoustic fingerstyle benchmark featuring a chromatic descending bassline and dynamic explosion"
+      },
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Paul McCartney's timeless fingerpicking standard featuring tenths counterpoint and open-string drones"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Babe I'm Gonna Leave You",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Expand your acoustic fingerstyle and chromatic voice-leading mastery to epic rock arrangements"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Plucking the bass note too hard, overwhelming the delicate treble voice leading",
+      "Losing the steady eighth-note fingerpicking pulse during the difficult chromatic walkdown",
+      "Failing to retune the 6th string accurately to low D, causing out-of-tune low-end mud"
+    ],
+    "practiceRoutine": [
+      "10 minutes: Drop D finger independence exercises with steady thumb pulse",
+      "15 minutes: Slow practice of the chromatic descending progression (G/B → Gm/Bb → D/A → E7/G#)",
+      "15 minutes: Metronome fingerpicking run-throughs at 70-84 BPM"
+    ],
+    "focusAreas": [
+      "Drop D bass resonance and clarity",
+      "Smooth voice leading across descending bass notes",
+      "Delicate right-hand fingerpicking touch"
+    ],
+    "metronomeWork": [
+      "Set metronome to 84 BPM and practice landing the low D thumb strike squarely on beats 1 and 3"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "folk",
+      "classic-rock",
+      "fingerstyle",
+      "advanced",
+      "fingerpicking",
+      "voice-leading",
+      "major-key",
+      "acoustic-guitar",
+      "open-chords"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "4-6 weeks"
+  }
+}
+

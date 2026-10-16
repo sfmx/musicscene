@@ -1,0 +1,307 @@
+{
+  "songInfo": {
+    "title": "Times Like These",
+    "artist": "Foo Fighters",
+    "album": "One by One",
+    "released": "2002",
+    "genre": "Alternative Rock / Post-Grunge",
+    "tempo": "145 BPM",
+    "duration": "4:26",
+    "key": "D Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D major",
+      "scalesUsed": [
+        {
+          "scale": "D Major (Ionian)",
+          "notes": "D - E - F# - G - A - B - C#",
+          "application": "Luminous tonal foundation for the opening pedal riff and anthemic chorus resolution"
+        },
+        {
+          "scale": "D Mixolydian Mode",
+          "notes": "D - E - F# - G - A - B - C",
+          "application": "Supplies the borrowed flat-seventh (C natural) in the Am7 and C major verse/chorus chords"
+        },
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Framework for Dave Grohl and Chris Shiflett's ringing open-string counter-melodies"
+        }
+      ],
+      "modalCharacter": "Uplifting modern rock anthem famous for its unusual 7/4 time signature intro riff, open D-string pedal tones, borrowed Mixolydian chords, and explosive dynamic chorus explosion into straight 4/4 rock",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "B minor is the relative minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "Am7",
+          "C",
+          "Em",
+          "D"
+        ],
+        "progression": "I - v7 - ♭VII - ii - I",
+        "description": "Anthemic chord sequence incorporating borrowed Mixolydian chords and ringing open strings."
+      },
+      "sectionProgressions": [
+        {
+          "section": "7/4 Open-String Intro Riff",
+          "progression": "D5 - Dsus2 - D",
+          "romanNumerals": "I5 (in 7/4 time: 4/4 + 3/4)",
+          "description": "Dave Grohl's iconic 7/4 arpeggiated riff alternating an open D string pedal point against moving high dyads"
+        },
+        {
+          "section": "Driving Verse Chords",
+          "progression": "D - Am7 - C - Em - D",
+          "romanNumerals": "I - v7 - ♭VII - ii - I (in 4/4 time)",
+          "description": "Dynamic shift into straight 4/4 post-grunge rock with layered acoustic and electric guitars"
+        },
+        {
+          "section": "Anthemic Chorus Release",
+          "progression": "C - Em7 - D - C - Em7 - D",
+          "romanNumerals": "♭VII - ii7 - I - ♭VII - ii7 - I",
+          "description": "Uplifting vocal chorus propelled by ringing open C and Em chords resolving heroically onto D major"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Luminous, ringing major tonic centered around the open D string pedal point",
+        "Am7 (v7) - Borrowed natural minor dominant providing bittersweet, introspective emotion",
+        "C (♭VII) - Mixolydian subtonic delivering classic rock forward momentum and melodic optimism",
+        "Em (ii) - Minor supertonic offering smooth stepwise voice leading before resolving to the tonic"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "7/4 Asymmetric Meter & Open D Pedal Point",
+      "description": "Executing Dave Grohl's famous opening riff in 7/4 time (divided 4 beats + 3 beats) while maintaining a continuous ringing open 4th-string pedal tone with alternating high notes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Pedal note: Open D string (4th string) picked continuously on eighth-note downstrokes",
+          "High melodic notes: Fret 7 on B string (F#) shifting to fret 5 (E) and fret 8 (G)",
+          "7/4 pulse: Count 1-2-3-4 (four beats) followed immediately by 1-2-3 (three beats)"
+        ],
+        "sequence": [
+          "Internalize the 7/4 meter by counting out loud at 100 BPM",
+          "Keep your fretting hand fingers arched high to avoid muting the open D string",
+          "Transition smoothly into straight 4/4 strumming when the drums enter",
+          "Layer aggressive downstroke power chords during the chorus for maximum volume impact"
+        ],
+        "tips": [
+          "Use a medium pick (0.73mm) to balance strumming flexibility on the chords with percussive riff attack",
+          "Let the open top strings ring across the Am7 and C chord shapes to create the signature Foo Fighters wall of sound",
+          "When shifting from 7/4 to 4/4, keep your internal clock steady—the tempo (145 BPM) does not change, only the bar length"
+        ],
+        "chords": [
+          "D",
+          "Am7",
+          "C",
+          "Em",
+          "Em7"
+        ],
+        "progression": "D - Am7 - C - Em - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "7/4 Asymmetric Intro Riff",
+      "timeStamp": "0:00-0:32",
+      "technique": "Pedal-Point Arpeggiation in 7/4 Time",
+      "key": "D Major",
+      "description": "Dave Grohl's celebrated 7/4 intro riff, one of the most famous odd-meter guitar hooks in 2000s rock",
+      "alphaTab": "\\tempo 145 . \\ts 7 4\n:8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 5.2 0.4 5.2 0.4 5.2 | :8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 8.2 0.4 8.2 0.4 8.2 |",
+      "exerciseLabel": "7/4 Intro Pedal Riff",
+      "chords": [
+        "D5",
+        "Dsus2"
+      ],
+      "progression": "D5 - Dsus2",
+      "notes": [
+        "D",
+        "F#",
+        "E",
+        "G"
+      ]
+    },
+    {
+      "name": "Anthemic Chorus Strumming",
+      "timeStamp": "1:08-1:36",
+      "technique": "Open Ringing Chord Strumming in 4/4",
+      "key": "D Major",
+      "description": "High-energy chorus groove in straight 4/4 featuring ringing open-string chord extensions",
+      "alphaTab": "\\tempo 145 . \\ts 4 4\n:4 0.4 4.3 3.2 2.1 | :4 0.5 2.4 2.3 1.2 | :4 3.5 2.4 0.3 1.2 | :4 0.6 2.5 2.4 0.3 |",
+      "exerciseLabel": "Anthemic Chorus Chords",
+      "chords": [
+        "D",
+        "Am7",
+        "C",
+        "Em"
+      ],
+      "progression": "D - Am7 - C - Em",
+      "notes": [
+        "D",
+        "F#",
+        "A",
+        "C",
+        "E",
+        "G"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Trini Lopez / Gibson DG-335 (Dave Grohl Signature) or Gibson Les Paul Custom",
+      "alternatives": [
+        "Fender Telecaster Deluxe",
+        "Epiphone Sheraton II",
+        "PRS SE Custom 24"
+      ],
+      "pickup": "Burstbucker / Gibson Classic 57 humbuckers in bridge position for thick, articulate post-grunge drive"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Road King / Vox AC30 hand-wired layered with a cranked Marshall JCM900",
+      "alternatives": [
+        "Mesa Boogie Dual Rectifier",
+        "Fender Hot Rod Deluxe",
+        "Friedman Runt 50"
+      ],
+      "settings": {
+        "gain": "7.0",
+        "treble": "7.0",
+        "middle": "6.5",
+        "bass": "6.0",
+        "presence": "7.0"
+      }
+    },
+    "effects": {
+      "distortion": "ProCo Rat / Boss DS-1 distortion boosting high-headroom valve amp crunch",
+      "reverb": "Subtle studio room reverb giving drums and guitars a cohesive live feel",
+      "other": "MXR Phase 90 on intro riff layers for subtle movement",
+      "delay": "Memory Man analog delay for ambient lead repeats"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & 4/4 Chorus",
+      "steps": [
+        "Learn open D, Am7, C, and Em chord voicings",
+        "Practice standard 4/4 strumming with energetic down-up motions at 145 BPM",
+        "Master switching cleanly between C, Em7, and D during the chorus"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "7/4 Counting & Intro Pedal Riff",
+      "steps": [
+        "Count the 7/4 meter as a group of 4 followed by a group of 3 with a metronome",
+        "Practice alternate picking the open D pedal note against the fretted B string notes",
+        "Smoothly transition from the 7/4 intro riff into the straight 4/4 verse groove"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Multi-Guitar Layering & Stage Dynamic Control",
+      "steps": [
+        "Coordinate the two distinct guitar parts: Dave Grohl's rhythm and Chris Shiflett's arpeggiated lead fills",
+        "Replicate the full studio dynamic explosion from delicate intro guitar to massive quad-tracked wall of sound",
+        "Sing the lead vocal or vocal harmonies while maintaining the 7/4 intro guitar rhythm"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Everlong",
+        "link": "/lessons/songs/song-analysis/everlong",
+        "similarity": "The quintessential Foo Fighters anthem featuring Drop D tuning, fast 16th-note strumming, and octave riffs"
+      },
+      {
+        "title": "Learn to Fly",
+        "link": "/lessons/songs/song-analysis/learn-to-fly",
+        "similarity": "Uplifting post-grunge power anthem with ringing open chord voicings and three-guitar layered power"
+      },
+      {
+        "title": "My Hero",
+        "link": "/lessons/songs/song-analysis/my-hero",
+        "similarity": "Massive drum-driven groove, heavy open chord voicings, and soaring dynamic choruses"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Rock masterclass in asymmetric 7/4 time signature composition and metric transitions"
+      },
+      {
+        "title": "Limelight",
+        "artist": "Rush",
+        "difficulty": "Advanced",
+        "similarity": "Progressive rock classic transitioning effortlessly between 7/4, 3/4, and 4/4 meters"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Everlong",
+        "artist": "Foo Fighters",
+        "difficulty": "Intermediate",
+        "similarity": "Take your post-grunge stamina and dynamic control to Dave Grohl's definitive masterpiece"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Counting 7/4 as 8 beats and adding an unnecessary eighth note pause at the end of the bar",
+      "Muting the ringing open D string while fretting notes on the adjacent B string",
+      "Rushing the tempo during the transition from the odd-meter intro into the straight 4/4 verse"
+    ],
+    "practiceRoutine": [
+      "10 minutes: 7/4 metronome counting (divided 4+3) at 110-145 BPM",
+      "15 minutes: Open D string pedal point clarity and string separation drills",
+      "15 minutes: Full band play-along practicing the seamless shift between 7/4 and 4/4"
+    ],
+    "focusAreas": [
+      "7/4 metric stability and internal pulse",
+      "Open D string pedal clarity",
+      "Dynamic explosive energy when the chorus hits"
+    ],
+    "metronomeWork": [
+      "Set metronome to 7/4 at 120 BPM, counting '1-2-3-4, 1-2-3' with accents on beats 1 and 5"
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "2000s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "intermediate",
+      "power-chords",
+      "open-chords",
+      "major-key",
+      "modal",
+      "lead-guitar",
+      "rhythm-guitar",
+      "strumming"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}
+

@@ -1,0 +1,308 @@
+{
+  "songInfo": {
+    "title": "Black Magic Woman",
+    "artist": "Santana",
+    "album": "Abraxas",
+    "released": "1970",
+    "genre": "Latin Rock / Blues Rock",
+    "tempo": "126 BPM",
+    "duration": "5:24",
+    "key": "D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D Dorian Mode",
+          "notes": "D - E - F - G - A - B - C",
+          "application": "Carlos Santana's signature sound, emphasizing the sweet natural 6th (B) over Dm7 and G7 chords"
+        },
+        {
+          "scale": "D Minor Pentatonic / Blues Scale",
+          "notes": "D - F - G - Ab - A - C",
+          "application": "Blues-inflected string bends, stinging double stops, and vocal-like emotional phrasing"
+        },
+        {
+          "scale": "D Harmonic Minor",
+          "notes": "D - E - F - G - A - Bb - C#",
+          "application": "Supplies the raised leading tone (C#) to resolve over the A7 dominant turnaround"
+        }
+      ],
+      "modalCharacter": "Sultry Latin blues-rock fusion blending Peter Green's minor blues progression with Afro-Cuban percussion, D Dorian modal tonality, and high-energy Gypsy Queen jazz improvisation",
+      "keySignature": "1 flat (Bb)",
+      "relativeMinor": "F major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "Am",
+          "Dm",
+          "Gm",
+          "Dm",
+          "Am",
+          "Dm"
+        ],
+        "progression": "i - v - i - iv - i - v - i",
+        "description": "Minor blues framework infused with Latin syncopation and Dorian color."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Verse Groove",
+          "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7",
+          "romanNumerals": "i7 - v7 - i7 - iv7 - i7 - v7 - i7",
+          "description": "Smooth Latin rock cha-cha groove punctuated by congas, timbales, and Hammond B3 organ chords"
+        },
+        {
+          "section": "Solo Over Dominant Turnaround",
+          "progression": "Dm - Gm - Dm - A7 - Dm",
+          "romanNumerals": "i - iv - i - V7 - i",
+          "description": "Classic minor blues cadence resolving strongly on the A7 major dominant chord with C# leading tone"
+        },
+        {
+          "section": "Gypsy Queen Outro Jam",
+          "progression": "D7 - G7 - D7 - G7",
+          "romanNumerals": "I7 - IV7 - I7 - IV7 (in D Mixolydian/Dorian)",
+          "description": "High-speed polyrhythmic Latin jazz outro adapted from Hungarian guitarist Gábor Szabó"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm7 (i7) - Dark, alluring minor tonic providing the modal foundation for vocal guitar leads",
+        "Am7 (v7) - Natural minor fifth chord creating gentle modal voice leading without harsh dominant tension",
+        "Gm7 (iv7) - Minor subdominant deepening the blues emotional weight",
+        "A7 (V7) - Harmonic minor dominant providing harmonic urgency and decisive resolution back to Dm"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Dorian Vocal Bending & Singing Sustain",
+      "description": "Carlos Santana's trademark expressive vocal phrasing featuring wide finger vibrato, full-step bends targeting chord tones, and singing feedback sustain",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Target note B (natural 6th): 12th fret on the B string or 9th fret on the D string for signature Dorian sweetness",
+          "Singing vibrato: Slow, wide, circular wrist vibrato that oscillates smoothly above and below the pitch",
+          "Turnaround target C#: 14th fret on the B string or bending the 13th fret C up a half-step over A7"
+        ],
+        "sequence": [
+          "Dial in thick sustain using neck-pickup warmth with singing mid-range saturation",
+          "Internalize the D Dorian scale across the 10th and 12th frets",
+          "Practice vocal call-and-response phrases answering Gregg Rolie's vocal lines",
+          "Shift gears into fast alternate picking and rhythmic staccato double-stops for the Gypsy Queen section"
+        ],
+        "tips": [
+          "Roll back the tone knob slightly on your guitar (around 6-7) to capture Santana's warm 'woman tone'",
+          "Let sustained notes bloom into controlled feedback by positioning the guitar near your amplifier",
+          "Focus on leaving space between phrases to allow the congas and timbales to breathe"
+        ],
+        "chords": [
+          "Dm7",
+          "Am7",
+          "Gm7",
+          "A7"
+        ],
+        "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Melodic Solo",
+      "timeStamp": "0:00-0:45",
+      "technique": "Vocal String Bending & Dorian Lead Phrasing",
+      "key": "D Minor",
+      "description": "One of the most recognizable guitar themes in rock history, featuring Carlos Santana's soaring Gibson Les Paul tone",
+      "alphaTab": "\\tempo 126 . \\ts 4 4\n:2 r :8 r 10.2 12.2 13.2 | :4 12.2 :8 10.2 12.2 :2 10.1 | :4 12.1 :8 10.1 12.1 :4 10.1 8.1 | :1 10.2 |",
+      "exerciseLabel": "Intro Theme Lead Phrasing",
+      "chords": [
+        "Dm",
+        "Am",
+        "Dm"
+      ],
+      "progression": "Dm - Am - Dm",
+      "notes": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "Latin Rhythm Strumming & Chords",
+      "timeStamp": "0:46-1:30",
+      "technique": "Syncopated Latin Barre Chords",
+      "key": "D Minor",
+      "description": "Smooth, syncopated chord comping on Dm7, Am7, and Gm7 locking with Afro-Cuban percussion",
+      "alphaTab": "\\tempo 126 . \\ts 4 4\n:8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 7.6 9.5 9.4 8.3 7.6 9.5 9.4 8.3 | :8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 3.5 5.4 5.3 5.2 3.5 5.4 5.3 5.2 |",
+      "exerciseLabel": "Latin Rock Verse Chords",
+      "chords": [
+        "Dm7",
+        "Am7",
+        "Dm7",
+        "Gm7"
+      ],
+      "progression": "Dm7 - Am7 - Dm7 - Gm7",
+      "notes": [
+        "D",
+        "F",
+        "A",
+        "C",
+        "G",
+        "Bb"
+      ]
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1968 Gibson Les Paul Custom / PRS Santana Signature Model",
+      "alternatives": [
+        "Gibson SG Standard",
+        "PRS Custom 24",
+        "Yamaha SG2000"
+      ],
+      "pickup": "Neck humbucker with tone rolled off slightly for creamy vocal warmth and singing sustain"
+    },
+    "amp": {
+      "recommended": "Fender Princeton Reverb modified by Randall Smith (the prototype Mesa Boogie) / Mesa Boogie Mark I",
+      "alternatives": [
+        "Fender Twin Reverb with overdrive pedal",
+        "Mesa Boogie Lonestar",
+        "Dumble Overdrive Special style amp"
+      ],
+      "settings": {
+        "gain": "7.5",
+        "treble": "5.5",
+        "middle": "8.0",
+        "bass": "6.0",
+        "presence": "4.5"
+      }
+    },
+    "effects": {
+      "distortion": "Smooth cascading tube preamp saturation with singing mid-range sustain",
+      "reverb": "Rich spring reverb giving the lead lines ambient room and depth",
+      "other": "Wah pedal used as a stationary mid-range EQ filter boost on select phrases",
+      "delay": "Subtle tape echo adding warmth and dimension to melodic notes"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Minor Chord Progression & Latin Timing",
+      "steps": [
+        "Learn the root-5 and root-6 barre chord shapes for Dm7, Am7, Gm7, and A7",
+        "Practice syncopated down-up strums locking with a slow 126 BPM Latin percussion track",
+        "Understand the difference between natural minor (v7) and harmonic minor (V7)"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "D Dorian Melody & Expressive Vibrato",
+      "steps": [
+        "Memorize the iconic opening melody notes in 10th position D minor",
+        "Incorporate the natural 6th (B note) to evoke the signature Dorian mood",
+        "Develop a wide, relaxed wrist vibrato that keeps sustained notes singing"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Improvisation & Gypsy Queen High-Speed Phrasing",
+      "steps": [
+        "Solo over the complete chord progression targeting root notes on beat 1 and dominant C# over A7",
+        "Master the high-speed alternate-picked Latin jazz runs in the Gypsy Queen outro",
+        "Control guitar-to-amp acoustic feedback to sustain climactic high notes indefinitely"
+      ],
+      "timeEstimate": "4-5 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Oye Como Va",
+        "link": "/lessons/songs/song-analysis/oye-como-va",
+        "similarity": "Tito Puente's classic cha-cha reimagined with Latin rock groove and iconic A Dorian guitar leads"
+      },
+      {
+        "title": "Europa",
+        "link": "/lessons/songs/song-analysis/europa",
+        "similarity": "Santana's benchmark instrumental ballad demonstrating singing sustain, wide vibrato, and lyrical voice leading"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "The Thrill Is Gone",
+        "artist": "B.B. King",
+        "difficulty": "Intermediate",
+        "similarity": "Mastery of minor blues expression, vocal string bending, and pinpoint vibrato"
+      },
+      {
+        "title": "Light My Fire",
+        "artist": "The Doors",
+        "difficulty": "Intermediate",
+        "similarity": "Dorian modal jazz-rock exploration and syncopated Latin keyboard grooves"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Europa",
+        "artist": "Santana",
+        "difficulty": "Advanced",
+        "similarity": "Advance your Latin blues sustain and sophisticated circle-of-fifths voice leading"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Bending strings sharp or flat instead of hitting exact pitch targets",
+      "Using a stiff, fast vibrato instead of a wide, expressive vocal vibrato",
+      "Rushing the Latin shuffle groove rather than laying slightly behind the beat"
+    ],
+    "practiceRoutine": [
+      "10 minutes: Long tone sustain drills focusing on pitch and wide wrist vibrato",
+      "15 minutes: D Dorian and D Blues scale runs across positions 10 through 15",
+      "15 minutes: Improvising call-and-response phrases over backing tracks"
+    ],
+    "focusAreas": [
+      "Targeting the natural 6th (B) to highlight Dorian character",
+      "Vocal-like phrasing with natural breathing room between lines",
+      "Smooth pickup and tone control settings for warm woman tone"
+    ],
+    "metronomeWork": [
+      "Practice the intro melody at 100 BPM focusing on bend accuracy, slowly moving up to recording tempo of 126 BPM"
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "latin",
+      "blues",
+      "classic-rock",
+      "intermediate",
+      "bending",
+      "vibrato",
+      "modal",
+      "minor-key",
+      "lead-guitar",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}
+

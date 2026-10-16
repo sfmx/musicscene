@@ -119,6 +119,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'working-class-man',
   'fell-on-black-days',
   'money',
+  'one',
+  'black-magic-woman',
+  'rooster',
+  'life-in-the-fast-lane',
+  'limelight',
+  'hold-the-line',
+  'bow-river',
+  'times-like-these',
+  'cant-find-my-way-home',
+  'crazy-on-you',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {
