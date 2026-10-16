@@ -87,8 +87,9 @@ export function getCagedShapeData(shape: CagedShapeLetter, rootNote: string): Ca
 
   switch (shape) {
     case 'C': {
-      // Root on A string (string 1)
+      // Root on A string (string 1); C shape extends 3 frets below root
       primaryRootFret = (rootIdx - 9 + 12) % 12;
+      if (primaryRootFret < 3) primaryRootFret += 12;
       const R = primaryRootFret;
       chordFrets = [-1, R, R - 1, R - 3, R - 2, R - 3];
       fingers = [-1, 3, 2, 0, 1, 0];
@@ -131,8 +132,9 @@ export function getCagedShapeData(shape: CagedShapeLetter, rootNote: string): Ca
       break;
     }
     case 'G': {
-      // Root on Low E string (string 0)
+      // Root on Low E string (string 0); G shape extends 3 frets below root
       primaryRootFret = (rootIdx - 4 + 12) % 12;
+      if (primaryRootFret < 3) primaryRootFret += 12;
       const R = primaryRootFret;
       chordFrets = [R, R - 1, R - 3, R - 3, R - 3, R];
       fingers = [3, 2, 1, 1, 1, 4];
@@ -198,16 +200,28 @@ export function getCagedShapeData(shape: CagedShapeLetter, rootNote: string): Ca
     }
   }
 
-  // Normalize negative frets if shape falls below fret 0 (wrap to 12)
-  const minValidFret = Math.min(...chordFrets.filter(f => f >= 0));
-  const maxValidFret = Math.max(...chordFrets.filter(f => f >= 0));
-
-  let fretSpan: [number, number] = [Math.max(0, minValidFret - 1), maxValidFret + 1];
-  if (minValidFret < 0) {
-    // If wrapped
-    chordFrets = chordFrets.map(f => (f >= 0 ? f : f === -1 ? -1 : f + 12));
-    primaryRootFret += 12;
-    fretSpan = [Math.max(0, primaryRootFret - 3), primaryRootFret + 3];
+  // Compute the exact CAGED box fret span [minFret, maxFret] for each shape
+  let fretSpan: [number, number];
+  switch (shape) {
+    case 'C':
+    case 'G':
+      // C and G shapes extend 3 frets below the root fret up to the root fret
+      fretSpan = [Math.max(0, primaryRootFret - 3), primaryRootFret];
+      break;
+    case 'A':
+      // A shape & Pentatonic Box 1 span from the root fret to 3 frets above
+      fretSpan = [primaryRootFret, primaryRootFret + 3];
+      break;
+    case 'E':
+      // E shape & Pentatonic Box 3 span from 1 fret below root (or 0) to 2 frets above root (or 3 when open)
+      fretSpan = primaryRootFret === 0
+        ? [0, 3]
+        : [Math.max(0, primaryRootFret - 1), primaryRootFret + 2];
+      break;
+    case 'D':
+      // D shape & Pentatonic Box 4 span from 1 fret below root (or 0) to 3 frets above root
+      fretSpan = [Math.max(0, primaryRootFret - 1), primaryRootFret + 3];
+      break;
   }
 
   const baseFret = Math.max(1, fretSpan[0]);
@@ -218,10 +232,10 @@ export function getCagedShapeData(shape: CagedShapeLetter, rootNote: string): Ca
     0: 'R', 2: '2', 4: '3', 5: '4', 7: '5', 9: '6', 11: '7',
   };
 
-  // Build fretboard notes in the shape zone (from baseFret - 1 to baseFret + 4)
+  // Build fretboard notes strictly within the active CAGED shape zone [fretSpan[0], fretSpan[1]]
   const notes: CagedFretboardNote[] = [];
-  const startFret = Math.max(0, baseFret - 1);
-  const endFret = Math.min(17, startFret + 5);
+  const startFret = Math.max(0, fretSpan[0]);
+  const endFret = Math.min(16, fretSpan[1]);
 
   for (let sIdx = 0; sIdx < 6; sIdx++) {
     for (let f = startFret; f <= endFret; f++) {

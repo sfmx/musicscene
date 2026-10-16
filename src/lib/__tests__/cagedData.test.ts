@@ -65,13 +65,27 @@ describe('CAGED System Data Engine', () => {
     expect(aShapeForG.chordFrets).toEqual([-1, 10, 12, 12, 12, 10]);
   });
 
-  it('guarantees valid note intervals across all 5 shapes for all 12 chromatic roots', () => {
-    const roots = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
+  it('guarantees valid note intervals and exact fretSpan alignment across all 5 shapes for all 12 chromatic roots', () => {
+    const roots = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
     roots.forEach(root => {
       CAGED_ORDER.forEach(shape => {
         const data = getCagedShapeData(shape, root);
         expect(data.chordFrets).toHaveLength(6);
         expect(data.notes.length).toBeGreaterThan(0);
+
+        // Every active chord fret must sit within fretSpan
+        data.chordFrets.forEach(f => {
+          if (f !== -1) {
+            expect(f).toBeGreaterThanOrEqual(data.fretSpan[0]);
+            expect(f).toBeLessThanOrEqual(data.fretSpan[1]);
+          }
+        });
+
+        // Every plotted note must sit strictly inside the shaded fretSpan box
+        data.notes.forEach(n => {
+          expect(n.fret).toBeGreaterThanOrEqual(data.fretSpan[0]);
+          expect(n.fret).toBeLessThanOrEqual(data.fretSpan[1]);
+        });
 
         // Every shape must contain root, 3rd, and 5th
         const intervals = new Set(data.notes.map(n => n.interval));

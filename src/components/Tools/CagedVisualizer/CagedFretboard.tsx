@@ -55,12 +55,18 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
       <div className="min-w-[780px] select-none p-6 rounded-3xl bg-slate-950 border border-slate-800 shadow-2xl">
         {/* Fret Markers Top Row */}
         <div className="grid grid-cols-[56px_repeat(16,1fr)] mb-2 text-center text-xs font-mono font-bold text-slate-500">
-          <div>Nut</div>
+          <div
+            className={
+              cagedData.fretSpan[0] === 0 ? 'text-amber-400 font-black' : ''
+            }
+          >
+            Nut
+          </div>
           {Array.from({ length: totalFrets }, (_, i) => i + 1).map((f) => (
             <div
               key={f}
               className={`${
-                f >= cagedData.fretSpan[0] && f <= cagedData.fretSpan[1]
+                f >= Math.max(1, cagedData.fretSpan[0]) && f <= cagedData.fretSpan[1]
                   ? 'text-amber-400 font-black'
                   : ''
               }`}
@@ -72,20 +78,33 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
 
         {/* Fretboard Surface */}
         <div className="relative border-y-4 border-slate-700 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-950 rounded-xl overflow-hidden shadow-inner py-3">
-          {/* Active CAGED Zone Highlight Ribbon */}
+          {/* Active CAGED Zone Highlight Ribbon aligned to the 16-fret grid */}
           {cagedData.fretSpan && (
-            <div
-              className="absolute top-0 bottom-0 bg-amber-500/10 border-x-2 border-amber-500/30 pointer-events-none transition-all duration-300"
-              style={{
-                left: `calc(56px + ${(Math.max(0, cagedData.fretSpan[0] - 1) / totalFrets) * (100 - 8)}%)`,
-                right: `calc(${(Math.max(0, totalFrets - cagedData.fretSpan[1]) / totalFrets) * (100 - 8)}%)`,
-              }}
-            />
+            <div className="absolute inset-y-0 left-14 right-0 pointer-events-none">
+              <div
+                className="absolute top-0 bottom-0 bg-amber-500/10 border-x-2 border-amber-500/30 transition-all duration-300"
+                style={{
+                  left: `${((Math.max(1, cagedData.fretSpan[0]) - 1) / totalFrets) * 100}%`,
+                  width: `${
+                    ((Math.min(totalFrets, cagedData.fretSpan[1]) -
+                      Math.max(1, cagedData.fretSpan[0]) +
+                      1) /
+                      totalFrets) *
+                    100
+                  }%`,
+                }}
+              />
+            </div>
           )}
 
           {/* 6 Guitar Strings (Index 5 High E at top, Index 0 Low E at bottom) */}
           {[5, 4, 3, 2, 1, 0].map((sIdx) => {
             const stringName = STRING_OPEN_NOTES[sIdx];
+            const openNote = cagedData.notes.find(
+              (n) => n.stringIndex === sIdx && n.fret === 0
+            );
+            const showOpenNote = openNote && shouldDisplayNote(openNote);
+            const isOpenPlucked = activePluckedNote === `${sIdx}-0`;
 
             return (
               <div
@@ -99,13 +118,27 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
                 />
 
                 {/* String Open Nut Header */}
-                <div className="w-14 flex items-center justify-center z-10">
+                <div
+                  className={`w-14 h-full flex items-center justify-center z-10 border-r-4 border-slate-500/70 ${
+                    cagedData.fretSpan[0] === 0 ? 'bg-amber-500/10' : ''
+                  }`}
+                >
                   <button
                     onClick={() => handlePluckNote(sIdx, 0)}
-                    className="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-mono font-black text-slate-200 flex items-center justify-center transition cursor-pointer shadow-md"
-                    title={`Open string ${stringName}`}
+                    className={`w-8 h-8 rounded-full text-xs font-mono font-black flex items-center justify-center transition cursor-pointer shadow-md ${
+                      showOpenNote
+                        ? `${getNoteBadgeStyle(openNote)} ${
+                            isOpenPlucked ? 'scale-125 ring-4 ring-white' : 'hover:scale-110'
+                          }`
+                        : 'bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200'
+                    }`}
+                    title={
+                      showOpenNote
+                        ? `Open string ${stringName} (${openNote.note} - ${openNote.interval})`
+                        : `Open string ${stringName}`
+                    }
                   >
-                    {stringName}
+                    {showOpenNote ? openNote.interval : stringName}
                   </button>
                 </div>
 

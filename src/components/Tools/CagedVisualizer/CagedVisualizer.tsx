@@ -89,7 +89,7 @@ export default function CagedVisualizer() {
               </span>
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Primary root located on string {cagedData.rootStringName} ({cagedData.rootStringIndex + 1}th string).
+              Primary root located on string {cagedData.rootStringName} ({6 - cagedData.rootStringIndex}th string).
             </p>
           </div>
 
