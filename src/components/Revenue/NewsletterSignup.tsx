@@ -55,7 +55,11 @@ export default function NewsletterSignup({
       const res = await fetch(REVENUE_CONFIG.newsletterEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          source: isFooter ? 'footer_newsletter' : 'inline_newsletter',
+          page: typeof window !== 'undefined' ? window.location.pathname : '',
+        }),
       });
       if (!res.ok) throw new Error('Subscription failed');
       setStatus('success');

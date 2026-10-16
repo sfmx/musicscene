@@ -39,7 +39,11 @@ export default function LeadMagnetBanner({ className = '' }: LeadMagnetBannerPro
         await fetch(REVENUE_CONFIG.newsletterEndpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, source: 'inline_lead_magnet_banner' }),
+          body: JSON.stringify({
+            email,
+            source: 'inline_lead_magnet_banner',
+            page: typeof window !== 'undefined' ? window.location.pathname : '',
+          }),
         });
       } catch (err) {
         console.warn('Newsletter submission error:', err);
