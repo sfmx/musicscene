@@ -34,11 +34,12 @@ jobs:
         env:
           DIST_ID: ${{ secrets.CLOUDFRONT_DIST_ID }}
         run: |
-          if [ -z "$DIST_ID" ]; then
+          TARGET_DIST="${DIST_ID:-EMEO566RGP4JE}"
+          if [ -z "$TARGET_DIST" ]; then
             echo "❌ No CloudFront distribution ID provided—skipping invalidation"
             exit 0
           fi
 
-          aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths '/*'
-          echo "Invalidated CloudFront cache for distribution ID: $DIST_ID"
+          aws cloudfront create-invalidation --distribution-id "$TARGET_DIST" --paths '/*'
+          echo "Invalidated CloudFront cache for distribution ID: $TARGET_DIST"
           echo "Deployment complete!"		
