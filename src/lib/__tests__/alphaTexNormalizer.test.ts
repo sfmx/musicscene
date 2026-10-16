@@ -110,4 +110,15 @@ describe('alphaTexNormalizer', () => {
       expect(voiceDur).toBe(3840);
     });
   });
+
+  it('should safely normalize tempo declared without dot metadata separator', () => {
+    const raw = '\\tempo 75 \\ts 4 4\n:8 5.1 8.2 5.2 :4 7.3 :8 5.3 7.3 | :4 5.2 r.4 r.2 | :8 7.3 5.3 7.4 5.4 :4 7.4 5.4 | 7.4.1 |';
+    const normalized = normalizeAlphaTex(raw, 75);
+    expect(normalized.startsWith('\\tempo 75 . ')).toBe(true);
+    expect(normalized).not.toContain('\\tempo 75 \\ts');
+
+    const score = alphaTab.importer.ScoreLoader.loadAlphaTex(normalized);
+    score.finish(new alphaTab.Settings());
+    expect(score.masterBars.length).toBe(4);
+  });
 });

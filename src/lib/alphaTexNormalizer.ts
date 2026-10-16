@@ -29,17 +29,15 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
   if (trimmedTex.length === 0) return alphaTex;
 
   // 1. Handle tempo metadata header
-  const hasTempo = trimmedTex.includes('\\tempo');
+  const tempoMatch = trimmedTex.match(/\\tempo\s+(\d+)/);
   const defaultTempo = 80;
   const effectiveTempo = tempo && typeof tempo === 'number' && tempo > 30 && tempo < 300
     ? Math.round(tempo)
-    : defaultTempo;
-  let header = '';
-  if (!hasTempo) {
-    header = `\\tempo ${effectiveTempo} . `;
-  }
+    : (tempoMatch ? parseInt(tempoMatch[1], 10) : defaultTempo);
 
+  let header = `\\tempo ${effectiveTempo} . `;
   let body = trimmedTex;
+
   // If there's already a metadata header dot separator, preserve it
   if (trimmedTex.includes('.')) {
     const metaMatch = trimmedTex.match(/^(\\tempo\s+\d+.*?)\s+\.\s+([\s\S]*)$/);
@@ -47,6 +45,11 @@ export function normalizeAlphaTex(alphaTex: string, tempo?: number): string {
       header = `${metaMatch[1]} . `;
       body = metaMatch[2];
     }
+  }
+
+  // If \tempo was declared without a dot separator, remove it from the score body
+  if (body.includes('\\tempo')) {
+    body = body.replace(/\\tempo\s+\d+(\s*\.)?/g, '').trim();
   }
 
   // Auto-bar unbarred scale runs or single-note sequences
