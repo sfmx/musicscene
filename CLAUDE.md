@@ -114,7 +114,7 @@ The site monetizes product mentions through Amazon Associates affiliate links. T
 |------|---------|
 | `src/lib/affiliateBrands.ts` | ~80 known gear brand names (Fender, Shure, Boss, etc.) |
 | `src/lib/affiliateLinks.ts` | Core logic: `getAffiliateLinkWithFallback()`, `looksLikeProduct()`, `extractProductName()` |
-| `src/lib/revenueConfig.ts` | Amazon Associates tag from `NEXT_PUBLIC_AMAZON_TAG` env var (default: `musicscene202-22`) |
+| `src/lib/revenueConfig.ts` | Amazon Associates tag from `NEXT_PUBLIC_AMAZON_TAG` env var (default: `musicscene-22`) |
 | `src/data/affiliate-products.json` | ~150 curated product entries with optimized Amazon search URLs |
 | `src/components/Revenue/AffiliateLink.tsx` | Client component wrapping product names as affiliate links |
 | `src/components/Revenue/SmartAffiliateText.tsx` | Handles comma-separated product lists (splits and links each) |
