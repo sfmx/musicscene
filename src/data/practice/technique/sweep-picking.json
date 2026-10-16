@@ -2,62 +2,62 @@
   "slug": "sweep-picking",
   "category": "technique",
   "pageInfo": {
-    "pageTitle": "Sweep Picking Technique",
-    "subtitle": "Master the advanced arpeggio technique that creates fluid, cascading runs through coordinated picking and fretting motions.",
+    "pageTitle": "Sweep Picking Masterclass",
+    "subtitle": "Master effortless multi-string economy of motion, finger-rolling mechanics, 3-, 4-, and 5-string arpeggios, and virtuosic speed.",
     "heroGradient": "bg-gradient-to-br from-violet-50 to-purple-100",
-    "heroTitle": "Sweep Picking Mastery",
-    "heroDescription": "Sweep picking is an advanced guitar technique that creates flowing arpeggio passages through coordinated pick strokes across multiple strings. By \"sweeping\" the pick in one continuous motion while precisely timing the fretting hand, guitarists can achieve lightning-fast arpeggios with incredible fluidity and a distinctive cascading sound that's essential for neo-classical, metal, and fusion styles."
+    "heroTitle": "Sweep Picking Masterclass",
+    "heroDescription": "Sweep picking is the ultimate technique for executing lightning-fast, multi-octave arpeggio cascades with crystalline clarity. Rather than picking each string with alternating strokes, your pick glides smoothly across adjacent strings in a single continuous brush stroke—downwards or upwards—while your fretting hand lifts each finger the microsecond after it is played. Championed by Frank Gambale, Yngwie Malmsteen, Jason Becker, and John Petrucci, true sweep picking mastery demands absolute synchronization between pick push and fretting-hand finger rolling."
   },
   "guidelines": {
-    "title": "Fundamental Principles",
+    "title": "The Biomechanics of Economy Sweeping",
     "columns": [
       {
-        "title": "Pick Motion",
+        "title": "Pick Dynamics & Fluid Trajectory",
         "items": [
           {
             "bulletColor": "text-violet-500",
-            "text": "Use smooth, continuous picking motion"
+            "text": "The Continuous Brush Stroke: Move your pick in one unbroken falling or rising line across strings like a paintbrush—never treat a sweep as separate pick strokes."
           },
           {
             "bulletColor": "text-violet-500",
-            "text": "Maintain consistent pick angle and depth"
+            "text": "Directional Pick Angle: Tilt the pick 15–30 degrees in the direction of the sweep (downward slant for down-sweeps, upward slant for up-sweeps) so the blade slices across strings."
           },
           {
             "bulletColor": "text-violet-500",
-            "text": "Keep pick strokes flowing in one direction"
+            "text": "The Barre-Free Finger Roll: When playing consecutive notes on the same fret across adjacent strings, roll a single finger pad smoothly from string to string without barring flat."
           },
           {
             "bulletColor": "text-violet-500",
-            "text": "Use economy of motion - no wasted movement"
+            "text": "Acoustic Note Separation: Lift each fretting finger immediately after striking; notes must never bleed into one another like a strummed chord."
           },
           {
             "bulletColor": "text-violet-500",
-            "text": "Practice both ascending and descending sweeps"
+            "text": "The High-E Turnaround: The highest note of the sweep on string 1 is struck with a downstroke and immediately followed by a pull-off to reverse pick direction smoothly."
           }
         ]
       },
       {
-        "title": "Fretting Hand Coordination",
+        "title": "Arpeggio Geometry & Synchronization",
         "items": [
           {
             "bulletColor": "text-purple-500",
-            "text": "Time finger placement precisely with pick"
+            "text": "Triad Sweeps (3-String Foundation): Master compact 3-string major and minor triad shapes on strings 1, 2, and 3 before attempting wide 5-string sweeps."
           },
           {
             "bulletColor": "text-purple-500",
-            "text": "Release previous notes to avoid muddiness"
+            "text": "5-String Sweep Architecture: Connect low-string roots to high-string 3rds using the classic 5-string CAGED minor and major shapes."
           },
           {
             "bulletColor": "text-purple-500",
-            "text": "Use rolling finger motions for bar chords"
+            "text": "7th Chord Sweep Extensions: Incorporate major 7th, minor 7th, and dominant 7th arpeggios with 2-note-per-string legato extensions."
           },
           {
             "bulletColor": "text-purple-500",
-            "text": "Practice string muting between notes"
+            "text": "Two-Hand Sympathetic Muting: Rest your right-hand palm heel across lower strings while using fretting index finger flesh to mute unplayed higher strings."
           },
           {
             "bulletColor": "text-purple-500",
-            "text": "Maintain light but secure finger pressure"
+            "text": "Metronome Subdivisions: Sweeping sounds messy when players rush ahead of the beat; practice with strict 16th-note or sextuplet metronome clicks."
           }
         ]
       }
@@ -65,325 +65,367 @@
   },
   "sections": [
     {
-      "title": "Foundation Exercises",
+      "title": "3-String Triads, Finger Rolling & Turnarounds",
       "exercises": [
         {
           "number": 1,
-          "title": "Two-String Sweep Exercises",
-          "difficulty": "Foundation",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Start with simple two-string sweeps to develop the basic motion and coordination. Focus on smooth pick movement and precise timing between hands.",
+          "title": "3-String Minor & Major Swept Triads",
+          "difficulty": "Beginner",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "Start with compact 3-string triads on strings 3, 2, and 1. Push your pick through strings 3, 2, and 1 in a single downward motion, strike the high note on string 1, and pull off before sweeping upward back to string 3 across Am, G, F, and E triads.",
           "patternNote": {
-            "colorBg": "bg-green-50",
-            "colorText": "text-green-800",
-            "text": "Motion: Down-down for ascending, up-up for descending"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "Stroke Path: Down-Down-Down ➔ Up-stroke on high note with pull-off ➔ Up-Up return stroke"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" },
+            { "label": "F", "chord": "F" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Simple Two-String Sweeps: 5th and 4th Strings",
-            "alphaTex": ":8 5.5 7.4 5.5 7.4 5.5 7.4 5.5 7.4 | 7.4 5.5 7.4 5.5 7.4 5.5 7.4 5.5 |"
+            "title": "3-String Swept Triad Sequences Across Am - G - F - E",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :16 5.3 5.2 5.1 8.1 :16 5.1 5.2 5.3 7.4 :16 5.3 5.2 5.1 8.1 :4 5.1 | :16 4.3 3.2 3.1 7.1 :16 3.1 3.2 4.3 5.4 :16 4.3 3.2 3.1 7.1 :4 3.1 | :16 2.3 1.2 1.1 5.1 :16 1.1 1.2 2.3 3.4 :16 2.3 1.2 1.1 5.1 :4 1.1 | :16 4.3 5.2 4.1 7.1 :16 4.1 5.2 4.3 6.4 :2 5.1 |",
+            "staveTitle": "Fluid 3-String Swept Triads with High-E Turnarounds"
           },
           "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "Use continuous downstrokes for ascending patterns and continuous upstrokes for descending. The pick should flow smoothly across strings without stopping. Start very slowly.",
-            "tempo": "40 BPM"
+            "text": "Do not strum the notes together like a chord. Lift each fretting finger the instant the pick leaves the string so each pitch speaks with pristine separation.",
+            "tempo": "80 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Three-String Arpeggio Sweeps",
-          "difficulty": "Essential",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "Extend to three-string arpeggios using basic triad shapes. This is where sweep picking really starts to sound musical and distinctive.",
+          "title": "The Barre-Free Finger Roll (Consecutive Frets)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "The finger roll is the biggest technical hurdle in sweep picking. When notes sit on the same fret across adjacent strings, you must roll the finger joint from string to string rather than barring flat. This exercise isolates the roll on fret 7, fret 5, and fret 9.",
           "patternNote": {
-            "colorBg": "bg-blue-50",
-            "colorText": "text-blue-800",
-            "text": "Pattern: A minor triad arpeggio across three strings"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "Finger Rolling: Roll the pad of your ring finger across strings 3, 2, and 1 on fret 7 without barring flat"
           },
           "chordDiagrams": [
-            { "label": "Am Shape", "chord": "Am" }
+            { "label": "Am", "chord": "Am" },
+            { "label": "C", "chord": "C" }
           ],
           "notation": {
-            "title": "A Minor Triad: Three-String Sweep Arpeggios",
-            "alphaTex": ":8 7.4 5.3 5.2 r 5.2 5.3 7.4 r | 7.4 5.3 5.2 r 5.2 5.3 7.4 r |"
+            "title": "Finger-Rolling Mechanics on Consecutive Frets",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :16 7.3 7.2 7.1 10.1 :16 7.1 7.2 7.3 9.4 :16 7.3 7.2 7.1 10.1 :4 7.1 | :16 5.3 5.2 5.1 8.1 :16 5.1 5.2 5.3 7.4 :16 5.3 5.2 5.1 8.1 :4 5.1 | :16 9.3 9.2 9.1 12.1 :16 9.1 9.2 9.3 10.4 :16 9.3 9.2 9.1 12.1 :4 9.1 | :16 7.3 7.2 7.1 10.1 :16 7.1 7.2 7.3 7.4 :2 5.1 |",
+            "staveTitle": "Isolating Clean Finger-Roll Muting Across Adjacent Strings"
           },
           "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "Focus on clean note separation - each note should ring clearly without bleeding into the next. Practice the fretting hand motion separately before adding the pick sweep.",
-            "tempo": "50 BPM (triplets)"
+            "text": "Start on the tip of your finger on string 3, collapse to the middle pad on string 2, and roll to the flat pad on string 1. Every note must be completely muted as soon as the next is played.",
+            "tempo": "82 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Five-String Arpeggio Sweeps",
+          "title": "Descending 3-String Sweep with Hammer Turnaround",
           "difficulty": "Intermediate",
-          "borderColor": "border-purple-200",
-          "difficultyBg": "bg-purple-100",
-          "difficultyText": "text-purple-700",
-          "numberBg": "bg-purple-100",
-          "numberText": "text-purple-600",
-          "description": "Master the classic five-string sweep pattern that forms the foundation of most sweep picking applications. This creates the full, flowing arpeggio sound.",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "Turnaround mechanics require precise timing: down-sweeping through three strings, striking the turnaround note, pulling off, and up-sweeping in reverse. Practice this continuous cycling motion across Am, Dm, and E7 shapes.",
           "patternNote": {
-            "colorBg": "bg-purple-50",
-            "colorText": "text-purple-800",
-            "text": "Pattern: A minor arpeggio across five strings (6th to 2nd)"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "Turnaround Loop: Down-sweep (3 notes) ➔ High pick ➔ Pull-off ➔ Up-sweep return (3 notes)"
           },
           "chordDiagrams": [
-            { "label": "Am Shape", "chord": "Am" }
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "E7", "chord": "E7" }
           ],
           "notation": {
-            "title": "A Minor Five-String Sweep: Ascending and Descending",
-            "alphaTex": ":8 5.6 7.5 7.4 5.3 5.2 5.3 7.4 7.5 | 5.6 7.5 7.4 5.3 5.2 5.3 7.4 7.5 |"
+            "title": "Continuous 3-String Sweep Turnaround Loops",
+            "alphaTex": "\\tempo 84 . \\ts 4 4 :16 9.4 5.3 5.2 5.1 :16 8.1{h} 5.1 5.2 5.3 :16 9.4 5.3 5.2 5.1 :4 8.1 | :16 7.4 7.3 6.2 5.1 :16 10.1{h} 5.1 6.2 7.3 :16 7.4 7.3 6.2 5.1 :4 10.1 | :16 6.4 7.3 5.2 4.1 :16 7.1{h} 4.1 5.2 7.3 :16 6.4 7.3 5.2 4.1 :4 7.1 | :16 7.4 5.3 5.2 5.1 :16 8.1{h} 5.1 5.2 5.3 :2 7.4 |",
+            "staveTitle": "Synchronizing Turnaround Pull-Offs and Reversing Sweep Strokes"
           },
           "practiceNotes": {
-            "colorBg": "bg-purple-50",
-            "colorBorder": "border-purple-200",
-            "colorTitle": "text-purple-900",
-            "colorText": "text-purple-800",
-            "colorAccent": "bg-purple-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "This is the classic sweep picking pattern. Practice the ascending sweep with continuous downstrokes, then the descending with continuous upstrokes. Keep the motion fluid.",
-            "tempo": "60 BPM (16th notes)"
+            "text": "Do not pause at the turnaround. The change of direction should feel like a bouncing tennis ball—elastic, effortless, and rhythmic.",
+            "tempo": "84 BPM"
           }
         }
       ]
     },
     {
-      "title": "Advanced Sweep Techniques",
+      "title": "4- & 5-String Sweeps, Diminished Runs & Master Etude",
       "exercises": [
         {
           "number": 4,
-          "title": "Six-String Full Sweeps",
-          "difficulty": "Advanced",
-          "borderColor": "border-amber-200",
-          "difficultyBg": "bg-amber-100",
-          "difficultyText": "text-amber-700",
-          "numberBg": "bg-amber-100",
-          "numberText": "text-amber-600",
-          "description": "Extend sweep picking across all six strings for maximum dramatic effect. This technique is commonly used in neo-classical and metal genres for impressive arpeggio runs.",
+          "title": "4-String Minor 7th Sweep Arpeggio",
+          "difficulty": "Intermediate",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "Adding the 4th string expands your sweeps into sophisticated jazz-fusion and progressive metal territory. This exercise sweeps through 4-string Dm7, Em7, and Am7 arpeggios, incorporating the root, flat 3rd, 5th, and flat 7th.",
           "patternNote": {
-            "colorBg": "bg-amber-50",
-            "colorText": "text-amber-800",
-            "text": "Challenge: Maintain fluidity across all six strings"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "4-String Sequence: Strings 4 ➔ 3 ➔ 2 ➔ 1 ➔ Turnaround on string 1 ➔ Ascend in reverse"
           },
           "chordDiagrams": [
-            { "label": "Am Shape", "chord": "Am" }
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "Em", "chord": "Em" },
+            { "label": "Am", "chord": "Am" }
           ],
           "notation": {
-            "title": "A Minor Six-String Sweep: Full Range Arpeggio",
-            "alphaTex": ":8 5.6 7.5 7.4 5.3 5.2 5.1 5.2 5.3 | 7.4 7.5 5.6 7.5 7.4 5.3 5.2 5.1 |"
+            "title": "4-String Minor 7th Sweep Arpeggios",
+            "alphaTex": "\\tempo 86 . \\ts 4 4 :16 7.4 7.3 6.2 5.1 :16 8.1 5.1 6.2 7.3 :16 7.4 7.3 6.2 5.1 :4 8.1 | :16 9.4 9.3 8.2 7.1 :16 10.1 7.1 8.2 9.3 :16 9.4 9.3 8.2 7.1 :4 10.1 | :16 7.5 7.4 5.3 5.2 :16 8.2 5.2 5.3 7.4 :16 7.5 7.4 5.3 5.2 :4 8.2 | :16 7.4 7.3 5.2 5.1 :16 8.1 5.1 5.2 7.3 :2 7.4 |",
+            "staveTitle": "Traversing 4-String Minor 7th Arpeggios Across Shifting Positions"
           },
           "practiceNotes": {
-            "colorBg": "bg-amber-50",
-            "colorBorder": "border-amber-200",
-            "colorTitle": "text-amber-900",
-            "colorText": "text-amber-800",
-            "colorAccent": "bg-amber-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "This is the most challenging sweep pattern. Break it down into smaller sections first, then connect them. Pay special attention to the turnaround on the high E string.",
-            "tempo": "40 BPM (16th notes)"
+            "text": "Keep your picking hand's edge resting lightly on the lower unplayed strings to mute sympathetic vibrations as your sweep travels across the strings.",
+            "tempo": "86 BPM"
           }
         },
         {
           "number": 5,
-          "title": "Sweep + Tap Combinations",
-          "difficulty": "Virtuosic",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine sweep picking with tapping techniques to create extended arpeggios that span multiple octaves. This advanced technique creates spectacular musical effects.",
+          "title": "The Classic 5-String Yngwie Minor Sweep",
+          "difficulty": "Advanced",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "This is the legendary 5-string sweep arpeggio pioneered by Yngwie Malmsteen and Jason Becker. Starting on the low A string (fret 12), sweep downward through five strings, hammer up to high A (fret 17), pull off, and sweep all the way back up to the 5th string.",
           "patternNote": {
-            "colorBg": "bg-red-50",
-            "colorText": "text-red-800",
-            "text": "Technique: Sweep followed by two-handed tapping extension"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "5-String Path: Str 5 [12-15] ➔ Str 4 [14] ➔ Str 3 [14] ➔ Str 2 [13] ➔ Str 1 [12-17-12]"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Swept Arpeggio Extended with Tapping",
-            "alphaTex": ":16 5.6 7.5 7.4 5.3 5.2 5.1{h} 8.1{h} 12.1{h} 8.1{h} 5.1 5.2 5.3 7.4 7.5 5.6 r | 5.6 7.5 7.4 5.3 5.2 5.1{h} 8.1{h} 12.1{h} 8.1{h} 5.1 5.2 5.3 7.4 7.5 5.6 r |"
+            "title": "Classic 5-String Neoclassical Sweep Arpeggio",
+            "alphaTex": "\\tempo 88 . \\ts 4 4 :16 12.5 15.5 14.4 14.3 :16 13.2 12.1 17.1 12.1 :16 13.2 14.3 14.4 15.5 :4 12.5 | :16 17.5 20.5 19.4 19.3 :16 18.2 17.1 22.1 17.1 :16 18.2 19.3 19.4 20.5 :4 17.5 | :16 7.5 11.5 9.4 9.3 :16 9.2 7.1 12.1 7.1 :16 9.2 9.3 9.4 11.5 :4 7.5 | :16 12.5 15.5 14.4 14.3 :16 13.2 12.1 13.2 14.3 :2 12.5 |",
+            "staveTitle": "High-Speed 5-String Minor Arpeggios Spanning Over Two Octaves"
           },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "Master the basic sweep first, then add the tapping extension. The transition between swept notes and tapped notes should be seamless and musical.",
-            "tempo": "Focus on smooth transitions"
+            "text": "Notice the 2-string roll on fret 14 (strings 4 and 3). Roll your ring finger smoothly without flattening out into a barre so notes don't ring simultaneously.",
+            "tempo": "88 BPM"
           }
         },
         {
           "number": 6,
-          "title": "Various Chord Types",
-          "difficulty": "Musical",
-          "borderColor": "border-indigo-200",
-          "difficultyBg": "bg-indigo-100",
-          "difficultyText": "text-indigo-700",
-          "numberBg": "bg-indigo-100",
-          "numberText": "text-indigo-600",
-          "description": "Apply sweep picking to different chord qualities - major, minor, diminished, and augmented. This expands your harmonic vocabulary and musical applications.",
+          "title": "Symmetrical Diminished 7th Sweep Cascade",
+          "difficulty": "Advanced",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "Diminished 7th arpeggios are completely symmetrical—every interval is a minor third (3 frets). This means you can shift the exact same sweep picking shape up by 3 frets repeatedly to create blistering neoclassical tension that resolves directly into the tonic.",
           "patternNote": {
-            "colorBg": "bg-indigo-50",
-            "colorText": "text-indigo-800",
-            "text": "Progression: Am - C - F - G sweep arpeggios on strings 4-3-2"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "Symmetry Shift: Same diminished shape shifts up 3 frets: Fret 6 ➔ Fret 9 ➔ Fret 12"
           },
           "chordDiagrams": [
-            { "label": "Am (i)", "chord": "Am" },
-            { "label": "C (III)", "chord": "C_major" },
-            { "label": "F (VI)", "chord": "F_major" },
-            { "label": "G (VII)", "chord": "G_major" }
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
           ],
           "notation": {
-            "title": "Chord Progression: Am - C - F - G Swept Arpeggios",
-            "alphaTex": ":8 7.4 5.3 5.2 r 5.2 5.3 7.4 r | 10.4 9.3 8.2 r 8.2 9.3 10.4 r | 3.4 2.3 1.2 r 1.2 2.3 3.4 r | 5.4 4.3 3.2 r 3.2 4.3 5.4 r |"
+            "title": "Symmetrical Diminished 7th Sweep Shifts",
+            "alphaTex": "\\tempo 90 . \\ts 4 4 :16 6.3 5.2 6.1 9.1 :16 6.1 5.2 6.3 8.4 :16 6.3 5.2 6.1 9.1 :4 6.1 | :16 9.3 8.2 9.1 12.1 :16 9.1 8.2 9.3 11.4 :16 9.3 8.2 9.1 12.1 :4 9.1 | :16 12.3 11.2 12.1 15.1 :16 12.1 11.2 12.3 14.4 :16 12.3 11.2 12.1 15.1 :4 12.1 | :16 14.3 13.2 12.1 17.1 :16 12.1 13.2 14.3 14.4 :2 12.5 |",
+            "staveTitle": "Minor-Third Symmetrical Sweeps Cascading Across the Fretboard"
           },
           "practiceNotes": {
-            "colorBg": "bg-indigo-50",
-            "colorBorder": "border-indigo-200",
-            "colorTitle": "text-indigo-900",
-            "colorText": "text-indigo-800",
-            "colorAccent": "bg-indigo-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "Practice each chord type separately first, then work on smooth transitions between different arpeggio shapes. This creates musical chord progressions with sweep picking.",
-            "tempo": "70 BPM (triplets)"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Advanced Applications",
-      "exercises": [
-        {
-          "number": 7,
-          "title": "Diminished Arpeggio Sweeps",
-          "difficulty": "Neo-Classical",
-          "borderColor": "border-cyan-200",
-          "difficultyBg": "bg-cyan-100",
-          "difficultyText": "text-cyan-700",
-          "numberBg": "bg-cyan-100",
-          "numberText": "text-cyan-600",
-          "description": "Diminished arpeggios are staples of neo-classical guitar and create dramatic, exotic-sounding passages. Their symmetrical nature makes them perfect for sweep picking.",
-          "patternNote": {
-            "colorBg": "bg-cyan-50",
-            "colorText": "text-cyan-800",
-            "text": "Theory: Diminished 7th arpeggio with minor-third intervals"
-          },
-          "chordDiagrams": [
-            { "label": "Dim7 Shape", "chord": "Cdim" }
-          ],
-          "notation": {
-            "title": "Diminished 7th Arpeggio Sweeps",
-            "alphaTex": ":8 8.6 6.5 4.4 2.3 1.2 2.1 1.2 2.3 | 4.4 6.5 8.6 6.5 4.4 2.3 1.2 2.1 |"
-          },
-          "practiceNotes": {
-            "colorBg": "bg-cyan-50",
-            "colorBorder": "border-cyan-200",
-            "colorTitle": "text-cyan-900",
-            "colorText": "text-cyan-800",
-            "colorAccent": "bg-cyan-100",
-            "title": "Practice Notes",
-            "text": "Diminished arpeggios repeat every three frets, so you can play this same pattern starting from frets 6, 9, 12, etc. Great for creating tension in solos.",
-            "tempo": "55 BPM (16th notes)"
+            "text": "Notice how each 3-fret shift retains identical finger geometry. Diminished sweeps are the signature sound of Yngwie Malmsteen, Jason Becker, and Marty Friedman.",
+            "tempo": "90 BPM"
           }
         },
         {
-          "number": 8,
-          "title": "Speed Development Drill",
-          "difficulty": "Performance",
-          "borderColor": "border-orange-200",
-          "difficultyBg": "bg-orange-100",
-          "difficultyText": "text-orange-700",
-          "numberBg": "bg-orange-100",
-          "numberText": "text-orange-600",
-          "description": "Progressive speed building exercise combining multiple sweep patterns for developing the lightning-fast arpeggios heard in professional neo-classical and metal playing.",
+          "number": 7,
+          "title": "The Master Sweep Picking Etude: Neoclassical Velocity",
+          "difficulty": "Advanced",
+          "borderColor": "border-violet-200",
+          "difficultyBg": "bg-violet-100",
+          "difficultyText": "text-violet-700",
+          "numberBg": "bg-violet-100",
+          "numberText": "text-violet-600",
+          "description": "This culminating 4-measure etude synthesizes all sweep picking principles: 5-string multi-octave sweeps over Am, 4-string cascades over Dm, shifting diminished tension over E7, and a soaring high-register resolution. Perform with laser timing and crystal-clear separation.",
           "patternNote": {
-            "colorBg": "bg-orange-50",
-            "colorText": "text-orange-800",
-            "text": "Goal: Continuous sweep patterns at high speed with perfect clarity"
+            "colorBg": "bg-violet-50",
+            "colorText": "text-violet-800",
+            "text": "Complete Sweep Synthesis: 5-String Sweeps + 4-String Arpeggios + Symmetrical Diminished Runs"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Connected Sweep Patterns for Speed Building",
-            "alphaTex": ":16 5.6 7.5 7.4 5.3 5.2 5.1 5.2 5.3 7.4 7.5 5.6 7.5 7.4 5.3 5.2 5.1 | 12.5 14.4 14.3 13.2 12.1 13.2 14.3 14.4 12.5 14.4 14.3 13.2 12.1 13.2 14.3 14.4 |"
+            "title": "Master Neoclassical Sweep Virtuoso Etude",
+            "alphaTex": "\\tempo 94 . \\ts 4 4 :16 12.5 15.5 14.4 14.3 :16 13.2 12.1 17.1 12.1 :16 13.2 14.3 14.4 15.5 :4 12.5 | :16 7.4 7.3 6.2 5.1 :16 10.1 5.1 6.2 7.3 :16 7.4 7.3 6.2 5.1 :4 10.1 | :16 6.3 5.2 6.1 9.1 :16 9.3 8.2 9.1 12.1 :16 12.3 11.2 12.1 15.1 :4 16.1 | :16 17.1 12.1 13.2 14.3 :16 14.4 15.5 12.5 15.5 :2 17.1 |",
+            "staveTitle": "Comprehensive 4-Bar Neoclassical Virtuoso Etude Across Am - Dm - E7"
           },
           "practiceNotes": {
-            "colorBg": "bg-orange-50",
-            "colorBorder": "border-orange-200",
-            "colorTitle": "text-orange-900",
-            "colorText": "text-orange-800",
-            "colorAccent": "bg-orange-100",
+            "colorBg": "bg-violet-50",
+            "colorBorder": "border-violet-200",
+            "colorTitle": "text-violet-900",
+            "colorText": "text-violet-800",
+            "colorAccent": "bg-violet-100",
             "title": "Practice Notes",
-            "text": "Use progressive tempo training: start at 60 BPM, increase by 5 BPM every successful repetition. Focus on maintaining perfect note clarity at all speeds.",
-            "tempo": "Progressive tempo: 60-140+ BPM"
+            "text": "Record your practice runs cleanly with a metronome. If you hear notes clumping together or buzzing, drop the tempo by 10 BPM and focus on relaxing your picking hand.",
+            "tempo": "94 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Practice Strategy & Development",
+    "title": "Sweep Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Technical Development",
-        "colorBg": "bg-gradient-to-br from-violet-50 to-purple-50",
-        "colorBorder": "border-violet-200",
-        "colorTitle": "text-violet-900",
-        "colorText": "text-violet-800",
-        "bulletColor": "text-violet-500",
+        "title": "3 Mistakes That Kill Sweep Picking",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-900",
+        "colorText": "text-red-800",
         "items": [
-          "Always start with two-string sweeps before advancing",
-          "Practice fretting hand motion separately from picking",
-          "Focus on note clarity before attempting speed",
-          "Record yourself to identify timing and coordination issues",
-          "Practice with different pick materials and techniques"
+          "The Strumming Trap: Leaving your fretting fingers down turns your arpeggio into a ringing chord strum. You must release each finger immediately after its note sounds.",
+          "The Stutter Pick: Picking each string with separate micro-strokes instead of one continuous falling or rising brush motion destroys sweep economy and caps your speed.",
+          "Flat-Barring consecutive frets: Flattening a finger across three strings produces muddy ringing. You must roll the finger joint so only one string is pressed at any millisecond."
         ]
       },
       {
-        "title": "Common Challenges",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-indigo-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
-        "challenges": [
-          {
-            "title": "Muddy Sound",
-            "text": "Usually caused by poor muting technique. Practice lifting previous fingers to stop unwanted ringing between notes."
-          },
-          {
-            "title": "Uneven Timing",
-            "text": "Focus on coordinating both hands precisely. Practice with a metronome and isolate difficult transitions."
-          },
-          {
-            "title": "Pick Getting Stuck",
-            "text": "Use lighter pick attack and ensure smooth motion. Practice the picking motion on muted strings first."
-          }
+        "title": "Masters of Sweep Picking",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Frank Gambale: The undisputed father of economy and sweep picking; revolutionized modern fusion by developing complete scalewise and arpeggiated sweep systems.",
+          "Yngwie Malmsteen: Popularized the 5-string and 3-string diminished sweep arpeggio in the rock world, executing blistering cascades with neoclassical swagger.",
+          "Jason Becker: Neoclassical prodigy who wrote some of the most intricate, multi-octave sweep arpeggios in guitar history on 'Perpetual Burn' and Cacophony albums.",
+          "John Petrucci: Dream Theater virtuoso known for surgical 5-string and 6-string sweeps integrated seamlessly into complex progressive metal time signatures."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Sweep Workout",
+        "colorBg": "bg-violet-50",
+        "colorBorder": "border-violet-200",
+        "colorTitle": "text-violet-900",
+        "colorText": "text-violet-800",
+        "items": [
+          "Block 1: 3-String Finger-Roll Isolation (5 min) - Practice clean rolling on fret 7 across strings 3, 2, and 1 at 70 BPM, verifying zero note bleed.",
+          "Block 2: 5-String Yngwie Shape (5 min) - Cycle the 5-string A minor sweep pattern slowly, focusing on clean pick push and turnaround pull-off sync.",
+          "Block 3: Diminished Symmetrical Shifts (5 min) - Practice 3-fret symmetrical diminished shifts at 85 BPM, maintaining relaxed wrist oscillation."
         ]
       }
     ]
   },
+  "journeySection": {
+    "title": "Deepen Your Guitar Technique Journey",
+    "description": "Sweep picking gives you effortless arpeggio velocity. Expand your technical vocabulary with these complementary masterclasses.",
+    "gradientFrom": "from-violet-50",
+    "gradientTo": "to-purple-50",
+    "borderColor": "border-violet-200",
+    "links": [
+      {
+        "href": "/lessons/practice/technique/alternate-picking",
+        "title": "Alternate Picking",
+        "description": "Balance your fluid sweeping arpeggios with machine-gun alternate picking staccato bite.",
+        "linkText": "Master Picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-violet-400",
+        "iconBg": "bg-violet-100",
+        "iconHoverBg": "group-hover:bg-violet-200",
+        "linkColor": "text-violet-600",
+        "linkHoverColor": "group-hover:text-violet-700"
+      },
+      {
+        "href": "/lessons/practice/technique/tapping",
+        "title": "Two-Handed Tapping",
+        "description": "Extend your sweep arpeggios by adding tapped turnaround notes high above the 12th fret.",
+        "linkText": "Master Tapping",
+        "icon": "👆",
+        "hoverBorder": "hover:border-purple-400",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/technique/string-skipping",
+        "title": "String Skipping",
+        "description": "Combine arpeggios with wide intervallic leaps for modern, vocal lead phrasing.",
+        "linkText": "Explore Skipping",
+        "icon": "⏭️",
+        "hoverBorder": "hover:border-indigo-400",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  },
   "gearRecommendations": {
-    "title": "Recommended Gear for Sweep Picking",
+    "title": "Recommended Gear for Surgical Sweeping",
     "items": [
-      { "category": "Guitar", "product": "Ibanez RG Series", "reason": "Fast thin neck and low action make sweep picking arpeggios much easier to execute cleanly" },
-      { "category": "Picks", "product": "Dunlop Jazz III Picks", "reason": "Rigid, pointed picks glide smoothly across strings for clean sweep movements" }
+      {
+        "category": "High-Precision Guitar Pick",
+        "product": "Dunlop Flow 1.5mm / 2.0mm Picks",
+        "reason": "The sculpted bevel and wide angle allow the pick to glide effortlessly across strings with minimal friction and zero snagging."
+      },
+      {
+        "category": "Fret Dampener / Muter",
+        "product": "Gruv Gear FretWraps String Muter",
+        "reason": "Crucial for sweep practice; eliminates open-string sympathetic ringing while you focus on pristine note-to-note separation."
+      }
     ]
   }
 }
