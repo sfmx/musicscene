@@ -2,287 +2,427 @@
   "slug": "slide-techniques",
   "category": "technique",
   "pageInfo": {
-    "pageTitle": "Slide Techniques",
-    "subtitle": "Master slides and glissando to add smooth, expressive transitions between notes.",
+    "pageTitle": "Slide & Glissando Masterclass",
+    "subtitle": "Master expressive finger slides, legato glissando transitions, microtonal vocal scoops, and bottleneck slide mechanics.",
     "heroGradient": "bg-gradient-to-br from-emerald-50 to-green-100",
-    "heroTitle": "Slides & Glissando Techniques",
-    "heroDescription": "Slides are one of the most expressive techniques available to guitarists. From subtle position shifts to dramatic glissando sweeps, mastering slides adds a vocal quality to your playing that connects notes in a way picks alone cannot achieve."
+    "heroTitle": "Slide & Glissando Masterclass",
+    "heroDescription": "Sliding is the most vocal, liquid transition on the guitar fretboard. Whether executing subtle finger slides that connect positions seamlessly like David Gilmour and Larry Carlton, or donning a glass or brass bottleneck slide like Duane Allman, Derek Trucks, and Ry Cooder, slides dissolve the rigid fretted boundaries of the guitar. In this masterclass, you will learn the exact finger pressure required to maintain ringing slide sustain, master ascending and descending glissando targeting, integrate vocal scoop entrances, and explore bottleneck open-tuning slide fundamentals."
   },
   "guidelines": {
-    "title": "Slide Technique Guidelines",
+    "title": "The Physics of Expressive Slides & Glissando",
     "columns": [
       {
-        "title": "Slide Fundamentals",
+        "title": "Fretboard Finger-Slide Biomechanics",
         "items": [
-          { "bulletColor": "text-emerald-500", "text": "Maintain consistent finger pressure while sliding" },
-          { "bulletColor": "text-emerald-500", "text": "Slide on the fingertip, not the pad, for cleaner tone" },
-          { "bulletColor": "text-emerald-500", "text": "Keep the sliding finger close to the fret wire" },
-          { "bulletColor": "text-emerald-500", "text": "Use your ear to judge arrival pitch accuracy" }
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Fingertip Pressure Equilibrium: Press firmly enough that the string stays pressed against the fret crowns as you glide, but lightly enough to avoid friction drag."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Straight-Line Finger Trajectory: Slide directly parallel to the string core; any lateral wobble pulls the string sideways, causing unwanted pitch instability."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The Fret-Wire Landing Zone: Stop your slide precisely behind the target fret wire; landing even 1 mm short or past causes noticeable pitch inaccuracy."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Legato Shift Slides vs Re-Picked Shifts: In a legato slide, you pick only the starting note; in a shift slide, you re-pick the destination note upon arrival for rhythmic punch."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Vocal Micro-Scoops: Sliding into a target chord tone from 1 or 2 frets below without a defined start note mimics a soulful vocal scoop."
+          }
         ]
       },
       {
-        "title": "Practice Approach",
+        "title": "Bottleneck & Advanced Slide Principles",
         "items": [
-          { "bulletColor": "text-green-500", "text": "Start with short slides (1-2 frets) before longer distances" },
-          { "bulletColor": "text-green-500", "text": "Practice both ascending and descending slides equally" },
-          { "bulletColor": "text-green-500", "text": "Work on hitting the target note precisely" },
-          { "bulletColor": "text-green-500", "text": "Combine slides with hammer-ons and pull-offs for legato lines" }
+          {
+            "bulletColor": "text-green-500",
+            "text": "Glass vs Brass Tonality: Glass slides provide smooth, warm acoustic sweetness; heavy brass slides deliver massive sustain, aggressive bite, and raw blues grit."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Over-the-Fret Alignment: Unlike bare-finger playing (which frets behind the wire), a bottleneck slide must align directly on top of the fret wire for true pitch."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Behind-the-Slide Finger Damping: Rest your index and middle fingers lightly across the strings behind the slide to mute harsh microphonic rattling."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Axial Lengthwise Vibrato: Shake the slide parallel to the length of the string (along the neck) rather than across strings to produce sweet vocal steel vibrato."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Targeted String Selection: Touch only the target string; use your picking hand's thumb and fingers to rest on unplayed strings to prevent unwanted ringing."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Basic Slide Exercises",
+      "title": "Foundational Finger Slides & Position Shifts",
       "exercises": [
         {
           "number": 1,
-          "title": "Two-Fret Ascending Slides",
+          "title": "Two-Fret Ascending & Descending Legato Slides",
           "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Pick the starting note, then slide your finger up two frets while maintaining pressure on the string. The second note should ring out clearly from the slide momentum alone. Practice on each string.",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "Start by mastering short, two-fret legato slides. Pick the starting note with confident downstroke attack, then slide your finger up two frets without lifting. The arrival note must ring out clearly with full acoustic volume purely from the slide momentum.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Rule: Pick once per pair ➔ Slide fret 5 to 7 ➔ Reverse fret 7 to 5 on the same string"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" }
+          ],
           "notation": {
-            "title": "Two-Fret Ascending Slides",
-            "alphaTex": "\\ts 4 4\n5.1.4{sl} 7.1.4 r.4 r.4 | 5.2.4{sl} 7.2.4 r.4 r.4 | 5.3.4{sl} 7.3.4 r.4 r.4 | 5.4.4{sl} 7.4.4 r.4 r.4 | 5.5.4{sl} 7.5.4 r.4 r.4 | 5.6.4{sl} 7.6.4 r.4 r.4",
-            "staveTitle": "Ascending Slides - All Strings"
+            "title": "Two-Fret Ascending and Descending Slides Across All Strings",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 :4 5.1{sl} 7.1 :4 7.1{sl} 5.1 :4 5.2{sl} 7.2 :4 7.2{sl} 5.2 | :4 5.3{sl} 7.3 :4 7.3{sl} 5.3 :4 5.4{sl} 7.4 :4 7.4{sl} 5.4 | :4 5.5{sl} 7.5 :4 7.5{sl} 5.5 :4 5.6{sl} 7.6 :4 7.6{sl} 5.6 | :4 5.6{sl} 7.6 :4 7.5 :2 7.4 |",
+            "staveTitle": "Controlled 2-Fret Legato Slides Across Strings 1 through 6"
           },
           "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Pick only the first note. The slide should produce the second note with full volume and sustain. If the second note is quiet, increase finger pressure during the slide.",
-            "tempo": "60 BPM"
+            "text": "Keep your finger curled on its tip, not flattened on the pad. Maintain constant downward pressure against the fret crowns throughout the slide.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Two-Fret Descending Slides",
+          "title": "Four-Fret Position Connector Highway",
           "difficulty": "Beginner",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "The reverse of the previous exercise. Pick the higher note and slide down two frets. Descending slides require slightly more pressure to maintain volume since you're working against string tension.",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "Longer slides allow you to traverse between distant CAGED positions on a single string. This exercise slides across 4-fret and 5-fret intervals on strings 1, 2, and 3, training your eyes and tactile sense to hit the destination fret precisely.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Interval Shift: Slide [5 ➔ 9] on String 1, [5 ➔ 8] on String 2, [5 ➔ 9] on String 3"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "Two-Fret Descending Slides",
-            "alphaTex": "\\ts 4 4\n7.1.4{sl} 5.1.4 r.4 r.4 | 7.2.4{sl} 5.2.4 r.4 r.4 | 7.3.4{sl} 5.3.4 r.4 r.4 | 7.4.4{sl} 5.4.4 r.4 r.4 | 7.5.4{sl} 5.5.4 r.4 r.4 | 7.6.4{sl} 5.6.4 r.4 r.4",
-            "staveTitle": "Descending Slides - All Strings"
+            "title": "Four-Fret Position Shifting Slides",
+            "alphaTex": "\\tempo 78 . \\ts 4 4 :4 5.1{sl} 9.1 :4 9.1{sl} 5.1 :4 7.1{sl} 12.1 :4 12.1{sl} 7.1 | :4 5.2{sl} 8.2 :4 8.2{sl} 10.2 :4 10.2{sl} 13.2 :4 13.2{sl} 10.2 | :4 5.3{sl} 9.3 :4 9.3{sl} 12.3 :4 12.3{sl} 9.3 :4 9.3{sl} 5.3 | :4 7.4{sl} 5.4 :4 7.5 :2 5.6 |",
+            "staveTitle": "Traversing Wide Fretboard Intervals Linearly Along Single Strings"
           },
           "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Descending slides can lose volume easily. Apply slightly more pressure into the fretboard during the downward motion. The arrival note should be as clear as the starting note.",
-            "tempo": "60 BPM"
+            "text": "Look ahead at the destination fret before your finger leaves the starting fret. Guiding your hand with your eyes guarantees dead-center intonation.",
+            "tempo": "78 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Long-Distance Slides",
+          "title": "The Vocal Half-Step Scoop",
           "difficulty": "Intermediate",
-          "borderColor": "border-purple-200",
-          "difficultyBg": "bg-purple-100",
-          "difficultyText": "text-purple-700",
-          "numberBg": "bg-purple-100",
-          "numberText": "text-purple-600",
-          "description": "Slide across larger distances (5+ frets). This requires smooth arm movement and consistent finger pressure throughout the entire slide. Practice landing on the target fret precisely.",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "Vocalists often scoop into a target note from slightly below. On guitar, sliding into target chord tones from a half-step below on the 'and' of beat 4 or beat 1 injects warmth and human expression over Am, Dm, G, and C chords.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Scoop Formula: Rapid 1-fret slide from below directly into the active chord tone"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "Long-Distance Slides",
-            "alphaTex": "\\ts 4 4\n2.1.4{sl} 7.1.4 r.4 r.4 | 7.1.4{sl} 12.1.4 r.4 r.4 | 12.1.4{sl} 7.1.4 r.4 r.4 | 7.1.4{sl} 2.1.4 r.4 r.4",
-            "staveTitle": "Long Position Shifts via Slides"
+            "title": "Vocal Half-Step Scoop Study",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :8 6.4{sl} 7.4 :4 7.4 :8 4.3{sl} 5.3 :4 5.3 | :8 6.3{sl} 7.3 :4 7.3 :8 5.2{sl} 6.2 :4 6.2 | :8 3.3{sl} 4.3 :4 4.3 :8 2.2{sl} 3.2 :4 3.2 | :8 4.2{sl} 5.2 :4 5.2 :2 5.3 |",
+            "staveTitle": "Infusing Melodic Lead Lines with Expressive Half-Step Scoops"
           },
           "practiceNotes": {
-            "colorBg": "bg-purple-50",
-            "colorBorder": "border-purple-200",
-            "colorTitle": "text-purple-900",
-            "colorText": "text-purple-800",
-            "colorAccent": "bg-purple-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "For long slides, move your entire arm, not just the fingers. Keep even pressure throughout. Aim to stop exactly on the target fret, not before or after.",
-            "tempo": "60 BPM"
+            "text": "Do not linger on the lower fret; the scoop should be quick, slick, and immediate, resolving onto the target note with sweet singing vibrato.",
+            "tempo": "80 BPM"
           }
         }
       ]
     },
     {
-      "title": "Applied Slide Techniques",
+      "title": "Multi-Octave Glissando, Bottleneck Touch & Master Solo",
       "exercises": [
         {
           "number": 4,
-          "title": "Slide Into and Out of Notes",
+          "title": "Multi-String Diagonal Shift Slide",
           "difficulty": "Intermediate",
-          "borderColor": "border-amber-200",
-          "difficultyBg": "bg-amber-100",
-          "difficultyText": "text-amber-700",
-          "numberBg": "bg-amber-100",
-          "numberText": "text-amber-600",
-          "description": "Slide into a note from a few frets below (grace note slide) and slide out by releasing pressure as you slide away. This adds a vocal-like quality used extensively in blues, country, and rock.",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "The secret to escaping static box shapes is the diagonal shift slide. In this study, use ring-finger slides on strings 4 and 3 to glide seamlessly between Pentatonic Position 1 (fret 5) and Position 3 (fret 10).",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Shift Points: Slide ring finger [7 ➔ 9 on str 4] ➔ Cross to str 3 ➔ Slide [7 ➔ 9 on str 3]"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" }
+          ],
           "notation": {
-            "title": "Grace Note Slides",
-            "alphaTex": "\\ts 4 4\n3.3.8{sl} 5.3.4 r.8 | 3.2.8{sl} 5.2.4 r.8 | 7.3.8{sl} 5.3.4 r.8 | 7.2.8{sl} 5.2.4 r.8",
-            "staveTitle": "Slide Into Notes from Below & Above"
+            "title": "Diagonal Multi-String Slide Highway",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :8 5.4 7.4 :8 7.4{sl} 9.4 7.3 :8 7.3{sl} 9.3 8.2 | :8 8.2{sl} 10.2 8.1 10.1 :4 12.1 :8 10.1 8.1 | :8 10.2 8.2 :8 8.2{sl} 7.2 9.3 7.3 :4 5.3 | :8 7.4 5.4 7.5 5.5 :2 5.6 |",
+            "staveTitle": "Connecting Pentatonic Zones Across All Six Strings via Shifting Slides"
           },
           "practiceNotes": {
-            "colorBg": "bg-amber-50",
-            "colorBorder": "border-amber-200",
-            "colorTitle": "text-amber-900",
-            "colorText": "text-amber-800",
-            "colorAccent": "bg-amber-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Grace note slides should be quick - the starting pitch is heard briefly before landing on the target note. Blues and rock players use this constantly for expression.",
-            "tempo": "80 BPM"
+            "text": "Notice how the slide creates a silky legato bridge between positions. The transition should sound completely unbroken and fluid.",
+            "tempo": "82 BPM"
           }
         },
         {
           "number": 5,
-          "title": "Pentatonic Slide Licks",
-          "difficulty": "Intermediate",
-          "borderColor": "border-rose-200",
-          "difficultyBg": "bg-rose-100",
-          "difficultyText": "text-rose-700",
-          "numberBg": "bg-rose-100",
-          "numberText": "text-rose-600",
-          "description": "Apply slides within the A minor pentatonic scale. Use slides to shift between positions 1 and 2 of the pentatonic pattern. This creates smooth, connected runs that sound more musical than jumping between notes.",
+          "title": "The Long Glissando Sweep (Dive & Ascend)",
+          "difficulty": "Advanced",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "A glissando sweep spans a dramatic distance—10 to 12 frets—producing an electrifying soaring or diving effect. Popularized by David Gilmour and Jimi Hendrix, this exercise tests your finger sustain across massive fretboard sweeps.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Glissando Rule: Accelerate finger velocity smoothly while maintaining constant fret contact"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Em", "chord": "Em" }
+          ],
           "notation": {
-            "title": "Pentatonic with Slides",
-            "alphaTex": "\\ts 4 4\n5.6.8 8.6.8 5.5.8 7.5.8{sl} 9.5.8 7.4.8 | 5.3.8{sl} 7.3.8 5.2.8 8.2.8{sl} 10.2.8 8.1.8 | 10.1.4{sl} 8.1.4 8.2.8 5.2.8 7.3.8 5.3.8",
-            "staveTitle": "A Minor Pentatonic - Slide Connections"
+            "title": "Dramatic Multi-Fret Glissando Sweeps",
+            "alphaTex": "\\tempo 76 . \\ts 4 4 :4 3.1{sl} 15.1 :2 15.1 :4 15.1{sl} 12.1 | :4 3.2{sl} 15.2 :2 15.2 :4 15.2{sl} 10.2 | :4 2.3{sl} 14.3 :2 14.3 :4 14.3{sl} 9.3 | :4 9.4{sl} 2.4 :2 5.6 :4 r |",
+            "staveTitle": "High-Impact 12-Fret Glissando Ascents and Descending Dives"
           },
           "practiceNotes": {
-            "colorBg": "bg-rose-50",
-            "colorBorder": "border-rose-200",
-            "colorTitle": "text-rose-900",
-            "colorText": "text-rose-800",
-            "colorAccent": "bg-rose-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Use slides as connectors between pentatonic positions rather than lifting and shifting. This is how David Gilmour, BB King, and Eric Clapton achieve their smooth legato sound.",
-            "tempo": "70 BPM"
+            "text": "Do not let the note die out halfway up the neck. Add a subtle overdrive or compressor pedal to keep the string vibrating all the way up to the 15th fret.",
+            "tempo": "76 BPM"
           }
         },
         {
           "number": 6,
-          "title": "Double-Stop Slides",
+          "title": "Bottleneck Slide Intonation & Axial Vibrato",
           "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Slide two notes simultaneously on adjacent strings. This creates rich, harmonized slide sounds. Press down firmly with one finger barred across two strings and slide both together. Common in blues, rock, and country.",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "Playing with a glass or brass bottleneck requires precision: the slide must rest lightly directly over the metal fret wire (not behind it). In this study, navigate frets 5, 7, 10, and 12 with behind-the-slide finger damping and sweet axial steel vibrato.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Bottleneck Law: Slide directly above the fret wire. Dampen trailing strings with index finger behind slide."
+          },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "Double-Stop Slides",
-            "alphaTex": "\\ts 4 4\n(5.2 5.3).4{sl} (7.2 7.3).4 r.4 r.4 | (7.2 7.3).4{sl} (10.2 10.3).4 r.4 r.4 | (10.2 10.3).4{sl} (7.2 7.3).4 r.4 r.4 | (7.2 7.3).4{sl} (5.2 5.3).4 r.4 r.4",
-            "staveTitle": "Double-Stop Slide Pairs"
+            "title": "Bottleneck Slide Intonation Study",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 :4 5.2{sl} 7.2 :2 7.2 :4 7.2{sl} 5.2 | :4 5.3{sl} 7.3 :2 7.3 :4 7.3{sl} 9.3 | :4 10.1{sl} 12.1 :2 12.1 :4 12.1{sl} 10.1 | :4 8.2{sl} 7.2 :4 5.3 :2 5.4 |",
+            "staveTitle": "Over-the-Fret Precision and Lengthwise Axial Slide Vibrato"
           },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Use your ring or pinky finger barred across two strings. Apply even pressure on both strings. Both notes should slide at the same speed and arrive together.",
-            "tempo": "60 BPM"
+            "text": "Never press the bottleneck down against the frets—use zero vertical pressure so the slide glides across the top of the strings without clicking against metal fret wires.",
+            "tempo": "70 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Master Slide Etude: Derek Trucks & Duane Allman Vocal Soul",
+          "difficulty": "Advanced",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "This culminating 4-measure etude synthesizes all slide techniques: soulful half-step scoops, long legato glissando transitions, over-the-fret intonation, and singing vibrato resolutions over G - C - Em - D. Perform with warm dynamics and heartfelt emotion.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Complete Slide Synthesis: Vocal Scoops + Multi-Octave Glissando + Axial Steel Vibrato"
+          },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" },
+            { "label": "Em", "chord": "Em" },
+            { "label": "D", "chord": "D" }
+          ],
+          "notation": {
+            "title": "Master Vocal Slide Solo Etude",
+            "alphaTex": "\\tempo 74 . \\ts 4 4 :8 4.3{sl} 5.3 :4 5.3 :8 6.2{sl} 7.2 :4 8.2 | :8 7.1{sl} 8.1 :4 8.1 :8 8.1{sl} 12.1 :4 12.1 | :8 12.1{sl} 10.1 :4 10.1 :8 10.2{sl} 8.2 :4 7.2 | :8 6.3{sl} 7.3 :4 7.3 :2 5.4 |",
+            "staveTitle": "Comprehensive 4-Bar Vocal Slide Etude Across G - C - Em - D"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
+            "title": "Practice Notes",
+            "text": "Listen to the voice leading: the melody smoothly connects chord tones across changes using slide transitions. Treat each slide as an expressive vocal sigh.",
+            "tempo": "74 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Slide Technique Tips",
+    "title": "Slide Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Perfecting Your Slides",
-        "colorBg": "bg-gradient-to-br from-emerald-50 to-green-50",
-        "colorBorder": "border-emerald-200",
-        "colorTitle": "text-emerald-900",
-        "colorText": "text-emerald-800",
-        "bulletColor": "text-emerald-500",
+        "title": "3 Mistakes That Kill Slide Playing",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-900",
+        "colorText": "text-red-800",
         "items": [
-          "Think of slides as vocal scoops - they should sound musical, not mechanical",
-          "Vary slide speed for different effects: fast for energy, slow for drama",
-          "Use string lubricant if slides feel scratchy on wound strings",
-          "Practice slide accuracy by checking intonation at the arrival fret"
+          "Losing Pressure Mid-Slide: If you ease up on string pressure while sliding, the note dies immediately into a quiet scraping sound. Keep constant downward pressure until the arrival fret.",
+          "Stopping Behind the Wire (Bottleneck): When using a glass or metal slide, stopping behind the fret wire leaves you flat. The slide must sit directly on top of the fret wire for pure intonation.",
+          "Unmuted String Rattling: Without your trailing index finger resting lightly behind the bottleneck, open strings will rattle and buzz aggressively against the glass or metal."
         ]
       },
       {
-        "title": "Musical Applications",
-        "colorBg": "bg-gradient-to-br from-green-50 to-teal-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
-        "bulletColor": "text-green-500",
+        "title": "Masters of Slide & Glissando",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "Blues players use slides to mimic vocal inflections",
-          "Country players use pedal steel-style slides on double stops",
-          "Rock soloists use slides to connect pentatonic positions seamlessly",
-          "Jazz players use chromatic approach slides into target notes"
+          "Derek Trucks: Widely regarded as the greatest slide guitarist of all time; plays with microtonal Indian classical and gospel vocal precision using bare fingers and a Coricidin glass bottle.",
+          "Duane Allman: Pioneer of Southern rock slide; electrified the blues world on 'Layla' and 'Statesboro Blues' with searing brass slide tone and soaring melodies.",
+          "Ry Cooder: Master of acoustic and eclectic slide textures; known for delicate touch, open tunings, and evocative cinematic soundscapes.",
+          "David Gilmour: Renowned for lap steel and electric glissando sweeps with massive delay, volume pedal swells, and crying emotional sustain."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Slide Workout",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Block 1: Two-Fret Precision Shifts (5 min) - Practice clean 2-fret and 3-fret ascending and descending slides on every string, verifying arrival pitch accuracy.",
+          "Block 2: Vocal Half-Step Scoops (5 min) - Improvise short melodic phrases where every downbeat chord tone begins with a rapid half-step slide from below.",
+          "Block 3: Long Glissando Control (5 min) - Practice 12-fret glissando sweeps up to the 15th fret, focusing on sustained ringing tone and smooth deceleration."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Legato Journey",
-    "description": "Combine slides with other legato techniques for complete expressive control.",
+    "title": "Deepen Your Guitar Technique Journey",
+    "description": "Slide techniques connect your notes with liquid, vocal warmth. Expand your technical vocabulary with these complementary masterclasses.",
     "gradientFrom": "from-emerald-50",
     "gradientTo": "to-green-50",
     "borderColor": "border-emerald-200",
     "links": [
       {
-        "href": "/lessons/practice/technique/legato",
-        "title": "Legato Technique",
-        "description": "Master hammer-ons and pull-offs to complete your legato vocabulary.",
-        "linkText": "Learn legato",
-        "icon": "🎵",
-        "hoverBorder": "hover:border-purple-300",
-        "iconBg": "bg-purple-100",
-        "iconHoverBg": "group-hover:bg-purple-200",
-        "linkColor": "text-purple-600",
-        "linkHoverColor": "group-hover:text-purple-700"
-      },
-      {
         "href": "/lessons/practice/technique/bending-vibrato",
         "title": "Bending & Vibrato",
-        "description": "Add bends and vibrato to your slides for maximum expressiveness.",
-        "linkText": "Add expression",
-        "icon": "🎸",
-        "hoverBorder": "hover:border-rose-300",
-        "iconBg": "bg-rose-100",
-        "iconHoverBg": "group-hover:bg-rose-200",
-        "linkColor": "text-rose-600",
-        "linkHoverColor": "group-hover:text-rose-700"
+        "description": "Pair your slide transitions with expressive whole-step bends and singing wrist vibrato.",
+        "linkText": "Master Bending",
+        "icon": "🎶",
+        "hoverBorder": "hover:border-emerald-400",
+        "iconBg": "bg-emerald-100",
+        "iconHoverBg": "group-hover:bg-emerald-200",
+        "linkColor": "text-emerald-600",
+        "linkHoverColor": "group-hover:text-emerald-700"
       },
       {
-        "href": "/lessons/theory/scales/blues",
-        "title": "Blues Scale",
-        "description": "Apply slides in the context of blues scale patterns.",
-        "linkText": "Play blues",
-        "icon": "🎹",
-        "hoverBorder": "hover:border-indigo-300",
-        "iconBg": "bg-indigo-100",
-        "iconHoverBg": "group-hover:bg-indigo-200",
-        "linkColor": "text-indigo-600",
-        "linkHoverColor": "group-hover:text-indigo-700"
+        "href": "/lessons/practice/technique/legato",
+        "title": "Legato Mastery",
+        "description": "Combine slides with silky hammer-ons and pull-offs for effortless multi-string runs.",
+        "linkText": "Master Legato",
+        "icon": "➰",
+        "hoverBorder": "hover:border-green-400",
+        "iconBg": "bg-green-100",
+        "iconHoverBg": "group-hover:bg-green-200",
+        "linkColor": "text-green-600",
+        "linkHoverColor": "group-hover:text-green-700"
+      },
+      {
+        "href": "/lessons/practice/technique/harmonics",
+        "title": "Harmonics Mastery",
+        "description": "Complement singing slide lines with chiming natural harmonics and artificial overtones.",
+        "linkText": "Explore Harmonics",
+        "icon": "🔔",
+        "hoverBorder": "hover:border-teal-400",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
       }
     ]
   },
   "gearRecommendations": {
-    "title": "Recommended Gear for Slide Guitar",
+    "title": "Recommended Gear for Vocal Slide Tone",
     "items": [
-      { "category": "Accessory", "product": "Dunlop 215 Heavy Wall Glass Slide", "reason": "Glass slides produce warm, smooth tones ideal for learning slide technique" },
-      { "category": "Strings", "product": "Ernie Ball Earthwood Medium Light", "reason": "Heavier acoustic strings maintain tension and intonation under slide pressure" },
-      { "category": "Guitar", "product": "Fender American Vintage II Stratocaster", "reason": "Higher action setup works well for slide while remaining playable for standard fretting" }
+      {
+        "category": "Glass Bottleneck Slide",
+        "product": "Dunlop Blues Bottle Heavy Wall Slide",
+        "reason": "Individually hand-blown seamless Pyrex glass provides rich, warm midrange sustain with minimal string friction noise."
+      },
+      {
+        "category": "Compressor Pedal",
+        "product": "Origin Effects Cali76 Compact Deluxe",
+        "reason": "Studio-grade 1176 FET compression provides endless singing slide sustain and transparent leveling for every glissando glide."
+      }
     ]
   }
 }
