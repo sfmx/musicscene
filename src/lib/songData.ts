@@ -158,6 +158,16 @@ import plushData from '@/data/songs/plush.json';
 import yellowData from '@/data/songs/yellow.json';
 import overTheHillsAndFarAwayData from '@/data/songs/over-the-hills-and-far-away.json';
 import spaceOddityData from '@/data/songs/space-oddity.json';
+import kheSanhData from '@/data/songs/khe-sanh.json';
+import bedsAreBurningData from '@/data/songs/beds-are-burning.json';
+import dontDreamItsOverData from '@/data/songs/dont-dream-its-over.json';
+import downUnderData from '@/data/songs/down-under.json';
+import underTheMilkyWayData from '@/data/songs/under-the-milky-way.json';
+import manInTheBoxData from '@/data/songs/man-in-the-box.json';
+import blackData from '@/data/songs/black.json';
+import irisData from '@/data/songs/iris.json';
+import moreThanWordsData from '@/data/songs/more-than-words.json';
+import theNeedleAndTheDamageDoneData from '@/data/songs/the-needle-and-the-damage-done.json';
 
 export interface SongData {
   songInfo: {
@@ -528,6 +538,16 @@ const songDatabase: Record<string, SongData> = {
   'yellow': yellowData as SongData,
   'over-the-hills-and-far-away': overTheHillsAndFarAwayData as SongData,
   'space-oddity': spaceOddityData as SongData,
+  'khe-sanh': kheSanhData as SongData,
+  'beds-are-burning': bedsAreBurningData as SongData,
+  'dont-dream-its-over': dontDreamItsOverData as SongData,
+  'down-under': downUnderData as SongData,
+  'under-the-milky-way': underTheMilkyWayData as SongData,
+  'man-in-the-box': manInTheBoxData as SongData,
+  'black': blackData as SongData,
+  'iris': irisData as SongData,
+  'more-than-words': moreThanWordsData as SongData,
+  'the-needle-and-the-damage-done': theNeedleAndTheDamageDoneData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

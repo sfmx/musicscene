@@ -77,7 +77,7 @@ export default function SongsRootIndexPageTemplate() {
                 <span>The Definitive Guitar Song Library</span>
               </span>
               <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white mb-3">
-                Master 160+ Iconic Songs with In-Depth Breakdowns
+                Master {allSongs.length}+ Iconic Songs with In-Depth Breakdowns
               </h1>
               <p className="text-slate-300 text-xs sm:text-base leading-relaxed mb-6">
                 Connect every riff, chord voicing, and solo to fundamental music theory. Learn faster with synchronized AlphaTab audio playback, Roman numeral chord analysis, and progressive skill pathways.
@@ -87,7 +87,7 @@ export default function SongsRootIndexPageTemplate() {
               <div className="relative mb-6">
                 <input
                   type="text"
-                  placeholder="Search 160+ songs or artists (e.g. Wonderwall, Pink Floyd, Hotel California)..."
+                  placeholder={`Search ${allSongs.length}+ songs or artists (e.g. Wonderwall, Pink Floyd, Hotel California)...`}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full pl-11 pr-10 py-3.5 bg-slate-950 border border-slate-700/80 rounded-2xl text-white placeholder:text-slate-500 outline-none text-xs sm:text-sm font-medium shadow-inner focus:ring-2 focus:ring-amber-500/40 focus:border-amber-400 transition-all"

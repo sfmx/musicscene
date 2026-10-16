@@ -1,0 +1,322 @@
+{
+  "songInfo": {
+    "title": "Khe Sanh",
+    "artist": "Cold Chisel",
+    "album": "Cold Chisel",
+    "released": "1978",
+    "genre": "Rock",
+    "tempo": "100 BPM",
+    "duration": "4:14",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major",
+      "scalesUsed": [
+        {
+          "scale": "A major",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "Underpins the open-highway major chord progression and Don Walker's country-rock piano hooks"
+        },
+        {
+          "scale": "F# natural minor",
+          "notes": "F# - G# - A - B - C# - D - E - F#",
+          "application": "Relative minor shading used when the verse drops into F#m to reflect trauma and disillusionment"
+        }
+      ],
+      "modalCharacter": "Heartland A major Ionian storytelling balanced with poignant F# minor shadows",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "F# minor is the relative minor of A major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "A",
+          "E",
+          "F#m",
+          "D",
+          "A",
+          "E",
+          "A"
+        ],
+        "progression": "I - IV - I - V - vi - IV - I - V - I",
+        "progressionDescription": "Classic Australian pub-rock narrative progression combining bright I-IV-V declarations with a sudden drop into the relative minor (vi) at the emotional turning point of each verse.",
+        "description": "Classic Australian pub-rock narrative progression combining bright I-IV-V declarations with a sudden drop into the relative minor (vi) at the emotional turning point of each verse."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse Part 1",
+          "progression": "A - D - A - E",
+          "romanNumerals": "I - IV - I - V",
+          "description": "Steady rolling acoustic rhythm establishing the narrator's restless post-Vietnam journey"
+        },
+        {
+          "section": "Verse Part 2 (Turnaround)",
+          "progression": "F#m - D - A - E - A",
+          "romanNumerals": "vi - IV - I - V - I",
+          "description": "Pivots to the relative minor F#m before resolving home through the dominant E major"
+        },
+        {
+          "section": "Instrumental Break",
+          "progression": "A - D - A - E - F#m - D - A - E - A",
+          "romanNumerals": "I - IV - I - V - vi - IV - I - V - I",
+          "description": "Full-band double-time country-rock sprint supporting Ian Moss's melodic lead fills"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "I - IV - V - I",
+          "romanNumerals": "Scale Practice",
+          "description": "A major country-rock double-stop and open-position scale run"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Grounded major tonic representing home and survival",
+        "D (IV) - Warm subdominant lift opening up the narrative horizon",
+        "E (V) - Dominant chord building tension at the midpoint of each stanza",
+        "F#m (vi) - Relative minor chord injecting sudden emotional gravity on the third line"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Rolling Country-Rock Acoustic Strumming",
+      "description": "Driving 4/4 acoustic strumming with accented bass-note pick strikes on beats 1 and 3 to translate Don Walker's piano rhythm onto the guitar",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "A: X-0-2-2-2-0",
+          "D: X-X-0-2-3-2",
+          "E: 0-2-2-1-0-0",
+          "F#m: 2-4-4-2-2-2"
+        ],
+        "sequence": [
+          "Pluck the root bass note on beat 1 (open A string for A, open D string for D)",
+          "Follow with Down-Up sixteenth-note strums across the middle and treble strings",
+          "Transition cleanly into the F#m barre chord at the start of the second half of the verse",
+          "Accelerate into a brisk double-time feel during the final instrumental outro"
+        ],
+        "tips": [
+          "Use a single-finger mini-barre or three-finger cluster for the A major chord to allow quick changes to D",
+          "If the full F#m barre chord is tough at first, play F#m7 (2-X-2-2-2-0) with your thumb or index finger on the low E",
+          "Keep your strumming wrist loose so the tempo increase at the end feels natural"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E",
+          "F#m"
+        ],
+        "progression": "A - D - A - E - F#m - D - A - E - A"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Verse Part 1",
+      "timeStamp": "0:00-0:45",
+      "technique": "Rolling Country-Rock Acoustic Strumming",
+      "key": "A Major",
+      "description": "Iconic opening verse lines ('I left my heart to the sappers round Khe Sanh') over open A, D, and E chords.",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - D - A - E",
+      "notes": [
+        "Start with measured, intimate strumming",
+        "Target the root bass notes cleanly on beat 1",
+        "Let the E major chord hang with tension at the end of line 2"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :2 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Opening Chords"
+    },
+    {
+      "name": "Verse Turnaround",
+      "timeStamp": "0:45-1:15",
+      "technique": "Rolling Country-Rock Acoustic Strumming",
+      "key": "A Major",
+      "description": "The progression drops into F#m before climbing back through D and E to resolve on A.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "F#m - D - A - E - A",
+      "notes": [
+        "Plant your index finger firmly across fret 2 for the F#m barre chord",
+        "Emphasize the quick A to E to A cadence on 'the last plane out of Sydney's almost gone'",
+        "Maintain steady 100 BPM pocket"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Minor Pivot & Cadence"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "0:00-0:30",
+      "technique": "A Major Melodic Lead Run",
+      "key": "A Major",
+      "description": "A major country-rock melodic run in the style of Ian Moss's soaring guitar fills.",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "I - IV - V - I",
+      "notes": [
+        "Play cleanly in 2nd position using index, middle, and pinky fingers",
+        "Listen for the bright C# major third interval",
+        "Finish on the root A note on the 3rd string 2nd fret"
+      ],
+      "alphaTab": ":8 0.5 2.5 4.5 0.4 2.4 4.4 1.3 2.3 | :4 2.3 0.4 4.5 2.5 | :1 0.5 |",
+      "exerciseLabel": "Ian Moss Style A Major Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Maton CW80 Acoustic or Fender Stratocaster (for Ian Moss electric fills)",
+      "alternatives": [
+        "Martin D-18",
+        "Gibson J-45",
+        "Yamaha FG830"
+      ],
+      "pickup": "Acoustic dreadnought mic'd at 12th fret or Stratocaster neck/middle position"
+    },
+    "amp": {
+      "recommended": "Fender Twin Reverb or Marshall JMP (clean/edge-of-breakup)",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC30"
+      ],
+      "settings": {
+        "gain": "4 (clean with warm pub-rock compression)",
+        "treble": "6 (crisp acoustic/electric attack)",
+        "middle": "6 (punchy midrange vocal support)",
+        "bass": "5 (tight low end)",
+        "presence": "5 (clear band mix presence)"
+      }
+    },
+    "effects": {
+      "distortion": "Light overdrive for lead guitar solo fills",
+      "delay": "Slapback country-rock echo (110ms)",
+      "reverb": "Natural studio room reverb",
+      "other": "Medium celluloid pick (0.73mm) for balanced strumming"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & F#m Substitution",
+      "steps": [
+        "Master the open A, D, and E major chord shapes",
+        "Practice the first half of the verse (A - D - A - E) at 80 BPM",
+        "Use F#m7 (2-X-2-2-2-0) if full barre F#m is still developing",
+        "Play through the full verse structure at 100 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Full Barre Chords & Bass-Strum Groove",
+      "steps": [
+        "Execute the full 6-string F#m barre chord cleanly without buzz",
+        "Incorporate alternating root-fifth bass plucks before each down-up strum",
+        "Nail the quick A - E - A turnaround timing"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Double-Time Outro & Lead Fills",
+      "steps": [
+        "Weave Ian Moss style A major pentatonic fills between vocal lines",
+        "Drive the double-time outro strumming at high energy without fatiguing",
+        "Lead a full singalong performance with rock-solid dynamics"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Hesitating on the transition from E major to the F#m barre chord",
+      "Rushing the early verses before the song's natural dynamic build",
+      "Strumming the low E string accidentally during the D major chord"
+    ],
+    "practiceRoutine": [
+      "3 minutes: A → D → E open chord transition warm-up",
+      "5 minutes: Isolated E → F#m → D barre chord transition drill",
+      "5 minutes: Bass-note plus strum pattern at 100 BPM",
+      "5 minutes: Full song playthrough including double-time outro"
+    ],
+    "focusAreas": [
+      "Clean F#m barre chord articulation",
+      "Consistent root-note bass picking",
+      "Dynamic storytelling from quiet verse to roaring outro"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM focusing on the E to F#m transition",
+      "Practice at album tempo of 100 BPM with accents on beats 2 and 4",
+      "Practice shifting smoothly into the double-time outro feel"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Flame Trees",
+        "difficulty": "Intermediate",
+        "similarity": "Cold Chisel's nostalgic heartland ballad featuring Don Walker's classic songwriting"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "To Her Door",
+        "artist": "Paul Kelly",
+        "difficulty": "Beginner",
+        "similarity": "Iconic Australian storytelling anthem built on crisp I-IV-V-vi major key changes"
+      },
+      {
+        "title": "Take Me Home, Country Roads",
+        "artist": "John Denver",
+        "difficulty": "Beginner",
+        "similarity": "Shares the exact Key of A major open-chord palette (A, E, F#m, D) and alternating bass strum"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Flame Trees",
+        "artist": "Cold Chisel",
+        "difficulty": "Intermediate",
+        "similarity": "Advances into stepwise slash-chord bass walkdowns and ii-V-I bridge harmony"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": false,
+    "tags": [
+      "open-chords",
+      "barre-chords",
+      "strumming",
+      "acoustic-guitar",
+      "classic-rock",
+      "beginner",
+      "major-key",
+      "chord-progressions"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}
+

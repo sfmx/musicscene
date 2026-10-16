@@ -79,6 +79,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'yellow',
   'over-the-hills-and-far-away',
   'space-oddity',
+  'khe-sanh',
+  'beds-are-burning',
+  'dont-dream-its-over',
+  'down-under',
+  'under-the-milky-way',
+  'man-in-the-box',
+  'black',
+  'iris',
+  'more-than-words',
+  'the-needle-and-the-damage-done',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

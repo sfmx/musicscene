@@ -269,7 +269,7 @@ export default function SongDiscoveryHub() {
     <Layout>
       <Header
         title="Guitar Song Analysis & Tab Library"
-        subtitle="160+ complete guitar breakdowns with interactive AlphaTab, Roman numeral chord progressions, and tone guides"
+        subtitle={`${allSongs.length}+ complete guitar breakdowns with interactive AlphaTab, Roman numeral chord progressions, and tone guides`}
         category="Song Repertoire & Harmonic Analysis"
       />
       
@@ -343,7 +343,7 @@ export default function SongDiscoveryHub() {
                 <div>
                   <h2 className="text-xl font-bold text-slate-900 dark:text-white">Looking for a specific song or technique?</h2>
                   <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-1">
-                    Explore all 128 songs with instant filtering by level, decade, genre, or guitar tuning.
+                    Explore all {allSongs.length} songs with instant filtering by level, decade, genre, or guitar tuning.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2.5 shrink-0">
@@ -356,7 +356,7 @@ export default function SongDiscoveryHub() {
                     }}
                     className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/40 hover:scale-105 transition-all cursor-pointer"
                   >
-                    🟢 Beginner Songs (44)
+                    🟢 Beginner Songs ({difficultyCounts.Beginner || 0})
                   </button>
                   <button
                     type="button"
@@ -367,7 +367,7 @@ export default function SongDiscoveryHub() {
                     }}
                     className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800/40 hover:scale-105 transition-all cursor-pointer"
                   >
-                    🟡 Intermediate (52)
+                    🟡 Intermediate ({difficultyCounts.Intermediate || 0})
                   </button>
                   <button
                     type="button"
@@ -378,14 +378,14 @@ export default function SongDiscoveryHub() {
                     }}
                     className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-800/40 hover:scale-105 transition-all cursor-pointer"
                   >
-                    🎸 Iconic Riffs (82)
+                    🎸 Iconic Riffs ({iconicRiffSongs.length})
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveTab('directory')}
                     className="px-4 py-1.5 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all cursor-pointer shadow-xs"
                   >
-                    Browse All 128 &rarr;
+                    Browse All {allSongs.length} &rarr;
                   </button>
                 </div>
               </div>

@@ -1,0 +1,327 @@
+{
+  "songInfo": {
+    "title": "Man in the Box",
+    "artist": "Alice in Chains",
+    "album": "Facelift",
+    "released": "1990",
+    "genre": "Grunge / Alternative Metal",
+    "tempo": "107 BPM",
+    "duration": "4:46",
+    "key": "Eb Minor",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "Eb minor",
+      "scalesUsed": [
+        {
+          "scale": "Eb minor pentatonic",
+          "notes": "Eb - Gb - Ab - Bb - Db - Eb",
+          "application": "Played in open E minor position on a guitar tuned half-step down (E - G - A - B - D shapes) for the main talk-box riff and Jerry Cantrell's solo"
+        },
+        {
+          "scale": "Eb Blues",
+          "notes": "Eb - Gb - Ab - A - Bb - Db - Eb",
+          "application": "Adds the gritty flat-5th passing tone during the chorus fills and solo bends"
+        }
+      ],
+      "modalCharacter": "Sludgy Seattle grunge minor-pentatonic grind contrasted with a bright bIII - bVII - IV (G - D - A shapes) chorus chord explosion",
+      "keySignature": "6 flats (played as 1 sharp E minor shapes in Eb standard tuning)",
+      "relativeMinor": "Eb minor is the relative minor of Gb major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "G5",
+          "D5",
+          "A5"
+        ],
+        "progression": "i - bIII - bVII - IV",
+        "progressionDescription": "Played in Eb standard tuning using E5, G, D, and A chord shapes: the verse grinds on a hypnotic E minor pentatonic riff while the chorus erupts into a massive bIII - bVII - IV - i cadence.",
+        "description": "Played in Eb standard tuning using E5, G, D, and A chord shapes: the verse grinds on a hypnotic E minor pentatonic riff while the chorus erupts into a massive bIII - bVII - IV - i cadence."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse Riff ('I'm the man in the box')",
+          "progression": "E5 - G5 - E5 - D5 - C#5",
+          "romanNumerals": "i - bIII - i - bVII - vi",
+          "description": "Chugging open low-E pedal riff punctuated by talk-box/wah pentatonic hooks and a brief C#5 pre-chorus dip"
+        },
+        {
+          "section": "Chorus ('Feed my eyes, can you sew them shut?')",
+          "progression": "G5 - D5 - A5 - E5",
+          "romanNumerals": "bIII - bVII - IV - i",
+          "description": "Towering power-chord/open-chord descent supporting Layne Staley's legendary vocal wail"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "E5 - G5 - D5 - A5",
+          "romanNumerals": "i - bIII - bVII - IV",
+          "description": "Jerry Cantrell's fiery E minor pentatonic / blues solo combining wah-inflected bends with rapid legato flurries"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "i - bIII - bVII - i",
+          "romanNumerals": "Scale Practice",
+          "description": "Open-position E minor pentatonic grunge riff and bend drill"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (i) - Heavy low-string pedal tonic (sounding as Eb5 in half-step down tuning)",
+        "G5 (bIII) - Mediant lift that launches the soaring chorus",
+        "D5 (bVII) - Subtonic chord stepping down from G5 with dark grandeur",
+        "A5 (IV) - Dorian-borrowed major IV / power chord creating a stark plagal-style pull back into E5"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Sludgy Low-String Pedal Riffing & Minor Pentatonic Bends",
+      "description": "Alternating palm-muted open 6th-string chugs with bluesy 5th- and 4th-string pentatonic double-stops and quarter-tone bends",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X",
+          "G5: 3-X-0-0-3-3",
+          "D5: X-X-0-2-3-2",
+          "A5: X-0-2-2-X-X"
+        ],
+        "sequence": [
+          "Tune all strings down a half step (Eb Ab Db Gb Bb Eb) so open E5 sounds as concert Eb5",
+          "Anchor the main riff with palm-muted open low-E chugs between fretted notes on the 5th and 4th strings (frets 5 and 7)",
+          "Add a slight microtonal curl on the 3rd fret of the low E string (G note) at the end of the riff cycle",
+          "Open up into full, unmuted G, D, A5, and E5 chords when the chorus hits"
+        ],
+        "tips": [
+          "Don't rush the 107 BPM groove—Alice in Chains' heaviness comes from playing slightly behind the beat",
+          "If you don't own a talk box, a Dunlop Cry Baby wah pedal rocked in sync with the riff gets 90% of the vibe",
+          "Keep unused strings muted with your fretting hand when playing under high-gain distortion"
+        ],
+        "chords": [
+          "E5",
+          "G5",
+          "D5",
+          "A5"
+        ],
+        "progression": "G5 - D5 - A5 - E5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Talk-Box & Pentatonic Riff",
+      "timeStamp": "0:00-1:10",
+      "technique": "Low-String Pedal Riffing",
+      "key": "Eb Minor",
+      "description": "Jerry Cantrell's monolithic E minor pentatonic riff (in Eb tuning) built around the 5th and 7th frets.",
+      "chords": [
+        "E5",
+        "G5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - E5 - D5",
+      "notes": [
+        "Palm-mute the open 6th-string pedal notes between the fretted 5th/4th string notes",
+        "Give the 3rd fret on the 6th string a gritty quarter-step blues bend",
+        "Lock your right hand into the heavy drum groove"
+      ],
+      "alphaTab": ":8 0.6 0.6 7.5 0.6 5.4 7.5 0.6 5.5 | :8 7.5 0.6 3.6 0.6 :2 0.6 |",
+      "exerciseLabel": "Main Grunge Riff"
+    },
+    {
+      "name": "Chorus ('Feed My Eyes')",
+      "timeStamp": "1:10-1:42",
+      "technique": "Heavy Chorus Power Chords",
+      "key": "Eb Minor",
+      "description": "Massive four-chord chorus progression moving through G5, D5, A5, and E5.",
+      "chords": [
+        "G5",
+        "D5",
+        "A5",
+        "E5"
+      ],
+      "progression": "G5 - D5 - A5 - E5",
+      "notes": [
+        "Let G5 and D5 ring out with full sustain for half a bar each",
+        "Hit A5 and resolve into the open E5 riff turnaround",
+        "Add the bluesy 3rd-string 2nd-fret bend fill over the E5 resolution"
+      ],
+      "alphaTab": ":2 (3.6 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3) (0.6 2.5 2.4) | :2 (3.6 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Chorus Chord Progression"
+    },
+    {
+      "name": "Scale Practice Exercise",
+      "timeStamp": "3:08-3:45",
+      "technique": "Cantrell Style Minor Pentatonic Lead",
+      "key": "Eb Minor",
+      "description": "E minor blues/pentatonic lead lick in 12th and open position inspired by Jerry Cantrell's solo.",
+      "chords": [
+        "E5",
+        "G5",
+        "D5",
+        "A5"
+      ],
+      "progression": "i - bIII - bVII - IV",
+      "notes": [
+        "Attack each note firmly with the pick and add wide rock vibrato",
+        "Include the flat-5th blue note (5th string 6th fret / 3rd string 3rd fret) for extra grit",
+        "Sweep your wah pedal forward as you ascend into the high register"
+      ],
+      "alphaTab": ":8 0.6 3.6 5.6 5.5 6.5 7.5 5.4 7.4 | :4 7.3 9.3 7.3 5.4 | :1 7.5 |",
+      "exerciseLabel": "Minor Blues Box Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "G&L Rampage or Gibson Les Paul Studio (tuned down 1/2 step to Eb)",
+      "alternatives": [
+        "Epiphone Les Paul Standard",
+        "PRS SE Custom 24",
+        "ESP LTD EC-256"
+      ],
+      "pickup": "High-output bridge humbucker (Seymour Duncan JB style)"
+    },
+    "amp": {
+      "recommended": "Bogner Fish Preamp / Modified Marshall JCM800",
+      "alternatives": [
+        "Marshall DSL40CR",
+        "Friedman BE-OD Pedal into clean amp",
+        "Boss Katana Brown Channel"
+      ],
+      "settings": {
+        "gain": "8 (thick, saturated Seattle high-gain grind)",
+        "treble": "6 (cutting bite without fizz)",
+        "middle": "7 (throaty, vocal midrange growl)",
+        "bass": "7 (heavy low-end thump)",
+        "presence": "6 (aggressive pick attack)"
+      }
+    },
+    "effects": {
+      "distortion": "High-gain tube amp saturation",
+      "delay": "Short solo delay (300ms)",
+      "reverb": "Dark studio room ambience",
+      "other": "Heil Talk Box (for authentic intro/verse vowel sweep) or Dunlop Cry Baby Wah"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Chords & Simplified Verse Riff",
+      "steps": [
+        "Practice the G5 - D5 - A5 - E5 chorus changes at 85 BPM",
+        "Learn the single-note outline of the main verse riff on the 6th, 5th, and 4th strings",
+        "Play through the verse and chorus structure at 107 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Palm-Muted Pedal Riff & Wah/Talk-Box Inflection",
+      "steps": [
+        "Integrate tight open-E palm muting between the 5th- and 7th-fret riff notes",
+        "Add the C#5 - D5 pre-chorus transition and chorus blues fills",
+        "Coordinate a wah pedal with the main riff and solo phrases"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "advanced": {
+      "title": "Full Jerry Cantrell Solo & Microtonal Bends",
+      "steps": [
+        "Master the complete guitar solo including rapid pentatonic legato bursts and unison bends",
+        "Nail the heavy behind-the-beat pocket throughout the entire track",
+        "Perform in half-step down tuning with zero unwanted string noise"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing the verse riff too fast and losing the heavy, stomping 107 BPM pocket",
+      "Forgetting to mute the open 6th string when switching to the fretted 5th and 4th strings",
+      "Over-bending the 3rd-fret G note on the low E string so it goes out of tune"
+    ],
+    "practiceRoutine": [
+      "3 minutes: Palm-muted open E string to 5th/7th fret string-skipping drill",
+      "4 minutes: Main verse riff loop with quarter-step 3rd-fret bend",
+      "4 minutes: G5 → D5 → A5 → E5 chorus transitions with lead turnaround fill",
+      "4 minutes: Minor blues solo improvisation over the chorus progression"
+    ],
+    "focusAreas": [
+      "Precision string muting under high gain",
+      "Laid-back, heavy groove at 107 BPM",
+      "Expressive blues bends and wah pedal control"
+    ],
+    "metronomeWork": [
+      "Start the main riff at 85 BPM to lock in the syncopated 6th-string pedal notes",
+      "Increase to 96 BPM while adding wah pedal movement",
+      "Play at album tempo of 107 BPM sitting firmly in the back of the pocket"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Rooster",
+        "difficulty": "Beginner",
+        "similarity": "Another cornerstone Alice in Chains anthem in half-step down tuning with massive chorus dynamics"
+      },
+      {
+        "title": "Would?",
+        "difficulty": "Intermediate",
+        "similarity": "Showcases Jerry Cantrell's dark, brooding riff craft and soaring vocal-guitar harmony"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Outshined",
+        "artist": "Soundgarden",
+        "difficulty": "Intermediate",
+        "similarity": "Heavy Seattle grunge riffing built on sludgy low-string grooves and blues-metal attitude"
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "difficulty": "Intermediate",
+        "similarity": "Uses palm-muted open E pedal notes paired with 5th- and 7th-fret riffing and wah-soaked soloing"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Them Bones",
+        "artist": "Alice in Chains",
+        "difficulty": "Intermediate",
+        "similarity": "Advances your Alice in Chains rhythm skills into odd-meter 7/8 chromatic riffing"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "power-chords",
+      "palm-muting",
+      "bending",
+      "vibrato",
+      "pentatonic",
+      "blues-scale",
+      "minor-key",
+      "electric-guitar",
+      "distortion",
+      "wah",
+      "metal",
+      "intermediate"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}
+

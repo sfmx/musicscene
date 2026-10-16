@@ -89,6 +89,26 @@ export default function WhyThisSongWorksSection({
     ...(secret.relatedTheory.progressions || []).map(p => ({ ...p, type: 'progression' as const })),
   ];
 
+  // Extract roman numeral tokens if it's a linear progression (no section labels)
+  const isMultiSection = secret.romanProgression.includes(':') || secret.romanProgression.includes('|');
+  const rawRomanTokens = !isMultiSection
+    ? secret.romanProgression.split(/\s*[-–—→]\s*/).map(s => s.trim()).filter(Boolean)
+    : [];
+
+  const isExactProgressionMatch = rawRomanTokens.length > 0 && rawRomanTokens.length === secret.chords.length;
+
+  // Build mapping from chord -> roman from progressionExplanation
+  const chordToRomanMap: Record<string, string> = {};
+  secret.progressionExplanation.forEach(line => {
+    const regex = /([A-G][b#]?(?:m|maj|dim|aug|sus\d?|\d)*(?:\/[A-G][b#]?)?)\s*\(([^\)]+)\)/g;
+    let match;
+    while ((match = regex.exec(line)) !== null) {
+      const chord = match[1];
+      const roman = match[2].trim();
+      chordToRomanMap[chord] = roman;
+    }
+  });
+
   return (
     <section id="why-it-works" className="mb-12 scroll-mt-20">
       <div className="bg-gradient-to-br from-indigo-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 text-slate-900 dark:text-white rounded-2xl p-6 sm:p-8 border border-indigo-200 dark:border-indigo-500/30 shadow-sm dark:shadow-xl overflow-hidden relative">
@@ -163,28 +183,47 @@ export default function WhyThisSongWorksSection({
               </button>
             </div>
 
-            {/* Click-to-Hear Interactive Chords */}
-            <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
+            {/* Click-to-Hear Interactive Chords & Progression Flow */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
               {secret.chords.map((chord, idx) => {
                 const isActive = activeChordIdx === idx;
+                const romanNumeral = isExactProgressionMatch
+                  ? rawRomanTokens[idx]
+                  : chordToRomanMap[chord];
+
                 return (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => playSingleChord(chord, idx)}
-                    className={`flex flex-col items-center justify-center min-w-[64px] px-3.5 py-2.5 rounded-xl transition-all border shadow-xs cursor-pointer select-none text-left ${
-                      isActive
-                        ? 'bg-amber-400 dark:bg-amber-500 text-slate-950 border-amber-300 scale-105 shadow-md ring-2 ring-amber-400/60'
-                        : 'bg-slate-50 dark:bg-slate-800/90 text-slate-900 dark:text-white border-slate-200 dark:border-indigo-400/30 hover:border-amber-400 hover:bg-amber-50/50 dark:hover:bg-slate-800'
-                    }`}
-                    title={`Click to strum ${chord}`}
-                  >
-                    <span className="font-mono font-bold text-base leading-tight">{chord}</span>
-                    <span className={`text-[10px] font-mono mt-0.5 flex items-center gap-0.5 ${isActive ? 'text-slate-950 font-bold' : 'text-indigo-600 dark:text-indigo-300/70'}`}>
-                      <span>Step {idx + 1}</span>
-                      <span className="text-[9px]">🔊</span>
-                    </span>
-                  </button>
+                  <React.Fragment key={idx}>
+                    <button
+                      type="button"
+                      onClick={() => playSingleChord(chord, idx)}
+                      className={`flex flex-col items-center justify-center min-w-[68px] px-3.5 py-2.5 rounded-xl transition-all border shadow-xs cursor-pointer select-none text-center ${
+                        isActive
+                          ? 'bg-amber-400 dark:bg-amber-500 text-slate-950 border-amber-300 scale-105 shadow-md ring-2 ring-amber-400/60'
+                          : 'bg-slate-50 dark:bg-slate-800/90 text-slate-900 dark:text-white border-slate-200 dark:border-indigo-400/30 hover:border-amber-400 hover:bg-amber-50/50 dark:hover:bg-slate-800'
+                      }`}
+                      title={
+                        isExactProgressionMatch
+                          ? `Step ${idx + 1}: ${romanNumeral} (${chord}) - Click to strum`
+                          : `${chord} ${romanNumeral ? `(${romanNumeral})` : ''} - Click to strum`
+                      }
+                    >
+                      {romanNumeral && (
+                        <span className={`text-[11px] font-mono font-black uppercase tracking-wider mb-0.5 ${isActive ? 'text-slate-950' : 'text-amber-600 dark:text-amber-400'}`}>
+                          {romanNumeral}
+                        </span>
+                      )}
+                      <span className="font-mono font-black text-base leading-tight">
+                        {chord}
+                      </span>
+                      <span className={`text-[9px] font-mono mt-1 flex items-center justify-center gap-0.5 ${isActive ? 'text-slate-950 font-bold' : 'text-slate-500 dark:text-slate-400'}`}>
+                        <span>{isExactProgressionMatch ? `Step ${idx + 1}` : 'Strum'}</span>
+                        <span>🔊</span>
+                      </span>
+                    </button>
+                    {isExactProgressionMatch && idx < secret.chords.length - 1 && (
+                      <span className="text-slate-300 dark:text-slate-700 font-bold text-xs select-none">→</span>
+                    )}
+                  </React.Fragment>
                 );
               })}
             </div>
