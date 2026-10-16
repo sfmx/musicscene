@@ -168,6 +168,16 @@ import blackData from '@/data/songs/black.json';
 import irisData from '@/data/songs/iris.json';
 import moreThanWordsData from '@/data/songs/more-than-words.json';
 import theNeedleAndTheDamageDoneData from '@/data/songs/the-needle-and-the-damage-done.json';
+import scarTissueData from '@/data/songs/scar-tissue.json';
+import aliveData from '@/data/songs/alive.json';
+import simpleManData from '@/data/songs/simple-man.json';
+import roxanneData from '@/data/songs/roxanne.json';
+import noExcusesData from '@/data/songs/no-excuses.json';
+import nineteenSeventyNineData from '@/data/songs/1979.json';
+import aintNoSunshineData from '@/data/songs/aint-no-sunshine.json';
+import theSkyIsCryingData from '@/data/songs/the-sky-is-crying.json';
+import bornUnderABadSignData from '@/data/songs/born-under-a-bad-sign.json';
+import leapsAndBoundsData from '@/data/songs/leaps-and-bounds.json';
 
 export interface SongData {
   songInfo: {
@@ -548,6 +558,16 @@ const songDatabase: Record<string, SongData> = {
   'iris': irisData as SongData,
   'more-than-words': moreThanWordsData as SongData,
   'the-needle-and-the-damage-done': theNeedleAndTheDamageDoneData as SongData,
+  'scar-tissue': scarTissueData as SongData,
+  'alive': aliveData as SongData,
+  'simple-man': simpleManData as SongData,
+  'roxanne': roxanneData as SongData,
+  'no-excuses': noExcusesData as SongData,
+  '1979': nineteenSeventyNineData as SongData,
+  'aint-no-sunshine': aintNoSunshineData as SongData,
+  'the-sky-is-crying': theSkyIsCryingData as SongData,
+  'born-under-a-bad-sign': bornUnderABadSignData as SongData,
+  'leaps-and-bounds': leapsAndBoundsData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

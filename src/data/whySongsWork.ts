@@ -3381,6 +3381,408 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'scar-tissue': {
+    slug: 'scar-tissue',
+    songTitle: 'Scar Tissue',
+    artist: 'Red Hot Chili Peppers',
+    key: 'F Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'Two-Note Dyad Counterpoint and the Relative Minor Tension',
+    emotionalHook: 'John Frusciante strips away full chord blocks, using only root notes and major 10ths (root on 5th/6th string, 10th on 2nd string) with string-skipping. By leaving out the 5th, the harmony achieves a pure, melancholic vocal transparency. The movement between F major (I) and D minor (vi) creates a gentle bittersweet push-pull before resolving.',
+    romanProgression: 'I - V - vi - V - I',
+    chords: ['F', 'C', 'Dm', 'C', 'F'],
+    progressionExplanation: [
+      'F (I): The open, tender tonic established via a low F root and high A (10th) dyad.',
+      'C (V): Gentle stepwise voice leading moving toward the relative minor.',
+      'Dm (vi): The emotional melancholy peak of the verse motif, contrasting the warm F major home base.',
+      'C (V): Passing resolution back to the tonic F.',
+    ],
+    voiceLeadingInsights: [
+      'Frusciante uses string-skipping to play roots on strings 5 or 6 and chord 10ths on string 2, muting the interior strings.',
+      'The sliding dyads on the B string trace an expressive counter-melody against Anthony Kiedis\'s vocal line.',
+      'The slide guitar solos in D minor pentatonic provide an aching blues contrast against the clean major harmony.',
+    ],
+    guitarPerspective: 'Keep the tip of your fretting index finger lightly draped across the unplayed strings (strings 3 and 4) to mute them completely while hybrid-picking or using pick and fingers.',
+    songwriterTakeaway: 'Try stripping your 3-note triads down to 2-note 10th intervals (root + 3rd an octave up). It immediately removes sonic clutter and leaves room for the vocal melody to shine.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F Major Scale', slug: 'major', description: 'Provides the diatonic notes for the verse dyads and melody.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'Used by Frusciante for all three slide guitar solos.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Diatonic major foundation of the song.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Two-note tenth voicings of F and C major.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'D minor dyad providing the melancholic relative minor lift.' },
+      ],
+    },
+  },
+
+  'alive': {
+    slug: 'alive',
+    songTitle: 'Alive',
+    artist: 'Pearl Jam',
+    key: 'A Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The A Dorian Arpeggio Riff Melded with the Resonant ♭VII - IV Cadence',
+    emotionalHook: 'Stone Gossard\'s opening riff lives in A Dorian (featuring the natural 6th F# over an open A string), but erupts into anthemic A major in the chorus. The verse uses the signature rock ♭VII (G) and IV (D) cadence, subverting classical leading tones in favor of open, aggressive grunge momentum.',
+    romanProgression: 'I - ♭VII - IV - I',
+    chords: ['A', 'G', 'D', 'E'],
+    progressionExplanation: [
+      'A (I): The driving tonic root anchored by the open 5th string pedal.',
+      'G (♭VII): The classic Mixolydian/Dorian subtonic chord that delivers rock attitude without classical tension.',
+      'D (IV): The bright plagal subdominant resolving naturally back to A major.',
+      'E (V): Adds powerful dominant drive in the pre-chorus and chorus sections.',
+    ],
+    voiceLeadingInsights: [
+      'The intro riff hinges on a chromatic hammer-on and pull-off on the 4th string (E to G) before catching the open A string.',
+      'The chorus rocks between G, D, and A with ringing open upper strings.',
+      'Mike McCready\'s marathon guitar solo leans on A minor pentatonic and blues scale with heavy wah pedal filtering.',
+    ],
+    guitarPerspective: 'Focus on picking accuracy during Gossard\'s arpeggiated intro. Let the open A string ring continuously as an acoustic pedal tone under the fretted notes.',
+    songwriterTakeaway: 'Combine a Dorian minor riff in the verse with a triumphant major I - ♭VII - IV chorus to create massive emotional contrast and tension release.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Dorian Scale', slug: 'dorian', description: 'Source of the natural 6th (F#) in the opening riff.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for McCready\'s soaring outro solo.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'Creates the moody yet energetic grunge atmosphere.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Punchy 5th chords driving the chorus.' },
+        { name: 'Open Chords', slug: 'open-chords', description: 'Open G and D shapes providing wide dynamic resonance.' },
+      ],
+    },
+  },
+
+  'simple-man': {
+    slug: 'simple-man',
+    songTitle: 'Simple Man',
+    artist: 'Lynyrd Skynyrd',
+    key: 'C Major',
+    category: 'descending-bassline',
+    categoryLabel: 'Chromatic & Descending Basslines',
+    coreSecret: 'The Diatonic Stepwise Bassline (C → B → A) Under Arpeggiated Triads',
+    emotionalHook: 'Gary Rossington\'s iconic fingerpicked intro cycles through C - G/B - Am. The descending bassline (C on 5th fret 3rd string down to B on fret 2, then open A) anchors a progression that feels timeless and grounded. Dropping all guitars down a half-step adds dark southern grit and thickness to the clean Strat tone.',
+    romanProgression: 'I - V/7 - vi - vi',
+    chords: ['C', 'G', 'Am'],
+    progressionExplanation: [
+      'C (I): The grounded major tonic representing maternal wisdom and home.',
+      'G/B (V): First inversion with B in the bass, providing a smooth stepwise bridge.',
+      'Am (vi): The relative minor destination, ringing for two full measures with emotional resonance.',
+    ],
+    voiceLeadingInsights: [
+      'The 5th-string bass steps down cleanly: C (fret 3) → B (fret 2) → A (open 5th string).',
+      'The upper arpeggio notes pick out open G, C, and E strings, maintaining consistent treble chime across all three chords.',
+      'In the chorus, the band punches into heavy overdriven power chords, expanding the intimate arpeggio into an arena rock anthem.',
+    ],
+    guitarPerspective: 'Tuned down a half-step (Eb Ab Db Gb Bb Eb). Use a light touch on the clean arpeggios, accenting the bass notes on beat 1 of each measure.',
+    songwriterTakeaway: 'A 3-chord progression (I - V - vi) never sounds generic when connected by a smooth stepwise bassline. The descending movement creates emotional gravity that hooks the listener.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The parent diatonic scale for the C - G/B - Am progression.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'Scale for the soulful southern rock lead guitar fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The foundation of the major key center.' },
+      ],
+      chords: [
+        { name: 'Slash Chords', slug: 'slash', description: 'G/B first-inversion chord enabling the stepwise descent.' },
+        { name: 'Open Chords', slug: 'open-chords', description: 'Open C and Am shapes supporting the fingerpicked arpeggio.' },
+      ],
+    },
+  },
+
+  'roxanne': {
+    slug: 'roxanne',
+    songTitle: 'Roxanne',
+    artist: 'The Police',
+    key: 'G Minor',
+    category: 'descending-bassline',
+    categoryLabel: 'Chromatic & Descending Basslines',
+    coreSecret: 'Reggae-Punk Syncopation, Jazz Minor Inversions, and the Picardy Third Modulation',
+    emotionalHook: 'Andy Summers avoids standard punk barre chords entirely. The verse walks down through G minor, Dm/F, Ebmaj7, Dm7, and Cm7, creating an urban, jazz-noir mood before slamming into F7sus4 and exploding into the radiant major hook ("Roxanne!") on Gsus4 to G major. The syncopated upstroke stabs give the rhythm irresistible bounce.',
+    romanProgression: 'i - v - ♭VI - v - iv - ♭VII - I',
+    chords: ['Gm', 'Dm', 'Ebmaj7', 'Dm7', 'Cm7', 'F7sus4', 'Gsus4', 'G'],
+    progressionExplanation: [
+      'Gm (i): The shadowy minor tonic establishing the tense nighttime atmosphere.',
+      'Dm/F (v): Inverted minor dominant with F in the bass continuing the downward step.',
+      'Ebmaj7 (♭VI): Sophisticated jazz major 7th chord injecting bittersweet melancholy.',
+      'Dm7 (v) & Cm7 (iv): Stepwise descending minor 7th chords tightening the harmonic tension.',
+      'F7sus4 (♭VII): Tension-building suspended dominant chord pre-chorus launchpad.',
+      'Gsus4 → G (I): The sudden bright major resolution (Picardy third) in the chorus that illuminates the song.',
+    ],
+    voiceLeadingInsights: [
+      'The bass line descends through five distinct scale degrees: G → F → Eb → D → C.',
+      'Summers uses tight 3- and 4-note voicings on strings 2, 3, 4, leaving the low register completely clear for Sting\'s bass.',
+      'The transition from G minor in the verse to G major in the chorus provides instant dynamic and emotional elevation.',
+    ],
+    guitarPerspective: 'Pick only on the upbeats (the "&" of beats 1, 2, 3, 4). Keep the left hand light, releasing pressure immediately after striking to create tight, percussive staccato stabs with an analog chorus/echo pedal.',
+    songwriterTakeaway: 'Switch from minor in the verse to the parallel major in the chorus (the Picardy third effect) to make your hook explode with warmth and emotional relief.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Natural Minor Scale', slug: 'minor', description: 'The Aeolian scale providing the verse harmony.' },
+        { name: 'G Major Scale', slug: 'major', description: 'The parallel major scale that powers the uplifting chorus.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The minor mode governing the verse walkdown.' },
+      ],
+      chords: [
+        { name: 'Major 7th Chords', slug: 'major-7th', description: 'Ebmaj7 providing the sophisticated jazz-rock inflection.' },
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Gsus4 resolving to G major in the anthemic chorus.' },
+      ],
+    },
+  },
+
+  'no-excuses': {
+    slug: 'no-excuses',
+    songTitle: 'No Excuses',
+    artist: 'Alice in Chains',
+    key: 'A Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'The Open B and High E Drone Strings Ringing Over Shifting Triads',
+    emotionalHook: 'Jerry Cantrell transforms standard A major and B major shapes by lifting his fingers off strings 1 and 2, letting the open B and high E strings ring throughout both chords. This creates an ethereal, shimmering drone (Asus2 and Badd4) that gives this acoustic grunge masterpiece its hypnotic, psychedelic quality.',
+    romanProgression: 'I - II - I (Verse) | I - ♭VII - IV - I (Chorus)',
+    chords: ['Asus2', 'Badd4', 'G6', 'Dadd9'],
+    progressionExplanation: [
+      'Asus2 (I): The warm, ringing acoustic tonic with open high B and E strings.',
+      'Badd4 (II): Sliding the shape up two frets while the open strings continue to drone, creating a dreamy Lydian (#4) shimmer.',
+      'G6 (♭VII): Borrowed Mixolydian chord introducing classic grunge swagger in the chorus.',
+      'Dadd9 (IV): Plagal resolution echoing the ringing open high strings back home to Asus2.',
+    ],
+    voiceLeadingInsights: [
+      'The open 1st (E) and 2nd (B) strings act as stationary harmonic drones while the fretted notes move in whole steps from fret 2 to fret 4 on strings 3 and 4.',
+      'The Badd4 chord contains both an F# (5th) and open E (4th/11th), creating a lush major second dissonance.',
+      'The rhythm combines crisp syncopated acoustic strumming with Sean Kinney\'s bouncy bongo-like snare beat.',
+    ],
+    guitarPerspective: 'Tuned down a half-step. Use an open-string acoustic voicing: bar the 3rd and 4th strings at fret 2 for A, then slide that identical shape up to fret 4 for B, leaving the top two strings completely unmuted.',
+    songwriterTakeaway: 'Find two open strings on your guitar and let them ring continuously while you slide simple two-finger chord shapes up and down the neck.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Scale', slug: 'major', description: 'Diatonic framework for the open drone voicings.' },
+        { name: 'A Lydian Mode', slug: 'lydian', description: 'The modal color produced by the #4 (D#) in the Badd4 chord.' },
+      ],
+      modes: [
+        { name: 'Lydian Mode', slug: 'lydian', description: 'Produces the dreamy, buoyant texture of the verse riff.' },
+      ],
+      chords: [
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Asus2 chord geometry.' },
+        { name: 'Add9 Chords', slug: 'add9', description: 'Extended open chords creating the signature acoustic shimmer.' },
+      ],
+    },
+  },
+
+  '1979': {
+    slug: '1979',
+    songTitle: '1979',
+    artist: 'The Smashing Pumpkins',
+    key: 'Eb Major',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Acoustic Pedal Tones & Drones',
+    coreSecret: 'Nostalgic Octave Riffs with Muted Strings and Suspended Dream-Pop Voicings',
+    emotionalHook: 'Billy Corgan crafted an unforgettable coming-of-age anthem using two-note octave grips on the 5th and 3rd strings (or 4th and 2nd strings) with the middle string carefully muted. Tuning down a half step and strumming through Emaj7 and Asus2 (sounding in Eb) produces an airy, melancholic drone that sounds simultaneously retro and modern.',
+    romanProgression: 'Imaj7 - IVsus2 (Verse) | ii11 - Vadd11 - I - vi7 (Chorus)',
+    chords: ['Emaj7', 'Asus2', 'F#m11', 'Badd11', 'E', 'C#m7'],
+    progressionExplanation: [
+      'Emaj7 (Imaj7): The shimmering, bittersweet tonic with major 7th warmth.',
+      'Asus2 (IVsus2): The floating subdominant sustaining the dreamy open treble chime.',
+      'F#m11 (ii11): Lush, modern minor extension initiating the chorus harmonic ascent.',
+      'Badd11 (Vadd11): Dominant chord softened with the suspended 4th/11th to avoid harsh resolution.',
+      'C#m7 (vi7): Relative minor providing deep emotional grounding at the end of the chorus cycle.',
+    ],
+    voiceLeadingInsights: [
+      'Corgan uses the octave shape to trace vocal-like melodies while allowing open strings to bleed into the sound.',
+      'The constant presence of the high B and E notes across every chord provides a unified sonic halo.',
+      'The relaxed, loop-based drum machine feel emphasizes the relaxed, reflective character of the chord changes.',
+    ],
+    guitarPerspective: 'Tune down a half step (Eb Ab Db Gb Bb Eb). Keep your index finger lightly resting on the G string when fretting the D and B string octaves to eliminate unwanted open string noise.',
+    songwriterTakeaway: 'Replace plain major and minor triads with maj7, sus2, and add11 chords to give standard pop-rock progressions a nostalgic, timeless indie aesthetic.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Eb Major Scale', slug: 'major', description: 'The concert pitch major key of the studio recording.' },
+        { name: 'E Major Scale', slug: 'major', description: 'The chord shapes played relative to half-step down tuning.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The foundation for the shimmering major-seventh harmony.' },
+      ],
+      chords: [
+        { name: 'Major 7th Chords', slug: 'major-7th', description: 'Emaj7 defining the dreamy intro progression.' },
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Asus2 and Badd11 voicings that soften harmonic cadences.' },
+      ],
+    },
+  },
+
+  'aint-no-sunshine': {
+    slug: 'aint-no-sunshine',
+    songTitle: "Ain't No Sunshine",
+    artist: 'Bill Withers',
+    key: 'A Minor',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Tritones & Alterations',
+    coreSecret: 'The Cyclical Minor Blues Vamp with Percussive Space and Plagal Minor Turnaround',
+    emotionalHook: 'Bill Withers created one of the most soul-stirring songs in history with just three simple minor-key chords: Am7, Em7, and G. The arrangement strips out standard drum kit backbeats, relying entirely on the acoustic guitar\'s rhythmic thumb slap and Donald "Duck" Dunn\'s pulsing bass line. The contrast between the Am7 - Em7 vamp and the sudden Dm7 in the turnaround creates unforgettable emotional weight.',
+    romanProgression: 'i7 - v7 - ♭VII - i7 | iv7 - v7 - i7',
+    chords: ['Am7', 'Em7', 'G', 'Dm7'],
+    progressionExplanation: [
+      'Am7 (i7): The intimate, melancholy home tonic voiced with open 5th string and sweet 7th color.',
+      'Em7 (v7): The minor dominant providing a natural, modal step without harsh leading-tone pull.',
+      'G (♭VII): Quick passing subtonic chord bouncing the rhythm back into Am7.',
+      'Dm7 (iv7): The minor subdominant introducing a sudden drop in mood during the turnaround ("wonder this time where she\'s gone").',
+    ],
+    voiceLeadingInsights: [
+      'The turnaround moves cleanly down the cycle of fourths: Dm7 (iv7) → Em7 (v7) → Am7 (i7).',
+      'The 26-repetition "I know, I know" section drops all harmonic motion, letting the vocal rhythm become the primary hook over a static groove.',
+      'The fingerstyle guitar alternates bass thumb notes with two-finger upward plucks on strings 3 and 2.',
+    ],
+    guitarPerspective: 'Use your thumb for the bass notes (string 5 for Am, string 6 for Em and G, string 4 for Dm) and index/middle fingers for the upper chord strings. Incorporate a light percussive slap on beats 2 and 4.',
+    songwriterTakeaway: 'Don\'t be afraid to hold back drums or lead instruments. A sparse, looping minor-7th vamp with a percussive acoustic guitar rhythm allows deeply honest vocals to connect with maximum power.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Natural Minor Scale', slug: 'minor', description: 'The Aeolian scale providing the diatonic chords Am7, Em7, and Dm7.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'The blues-soul scale underlying the melody and instrumental fills.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'Natural minor tonality delivering the brooding soul atmosphere.' },
+      ],
+      chords: [
+        { name: 'Minor 7th Chords', slug: 'minor-7th', description: 'Am7, Em7, and Dm7 providing mellow soul-jazz harmony.' },
+        { name: 'Open Chords', slug: 'open-chords', description: 'Open fingerstyle chord grips.' },
+      ],
+    },
+  },
+
+  'the-sky-is-crying': {
+    slug: 'the-sky-is-crying',
+    songTitle: 'The Sky Is Crying',
+    artist: 'Stevie Ray Vaughan',
+    key: 'B Minor',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Tritones & Alterations',
+    coreSecret: 'Slow 12-Bar Minor Blues Dynamics, Microtonal String Bending, and Albert King Turnaround Cadences',
+    emotionalHook: 'Stevie Ray Vaughan\'s slow blues masterwork demonstrates the pinnacle of blues guitar expression. Played over a 12-bar slow blues in B minor (sounding in Bb minor due to half-step down tuning), SRV exploits wide vibrato, deep two-step string bends, and dynamic contrast ranging from whisper-quiet thumb plucks to ferocious tube-screamer overdrive.',
+    romanProgression: 'i7 - iv7 - i7 - i7 | iv7 - iv7 - i7 - i7 | v7 - iv7 - i7 - V7',
+    chords: ['Bm7', 'Em7', 'Bm7', 'F#m7', 'F#7#9'],
+    progressionExplanation: [
+      'Bm7 (i7): The sorrowful minor tonic anchoring the 12-bar form.',
+      'Em7 (iv7): The minor subdominant lifting the harmonic tension in bars 2, 5, and 6.',
+      'F#m7 (v7): The minor dominant providing the slow blues turnaround descent in bar 9.',
+      'F#7#9 (V7#9): The biting "Hendrix chord" dominant turnaround in bar 12 that forcefully pulls back to Bm.',
+    ],
+    voiceLeadingInsights: [
+      'SRV bends the 4th degree (E) up to the blue note (F) and the 5th (F#) with surgical microtonal precision.',
+      'The call-and-response dynamic between the vocal phrases and fiery Stratocaster fills creates an ongoing musical dialogue.',
+      'The turnaround in bar 12 uses a classic chromatic walkdown to set up the stinging V7#9 chord.',
+    ],
+    guitarPerspective: 'Tune down a half step and use heavy strings (.011s or .012s) to get Stevie\'s signature thick tone. Use the neck pickup of a Strat into a cranked tube amp pushed by a Tube Screamer.',
+    songwriterTakeaway: 'In a slow 12-bar blues, space and dynamic control are everything. Let your notes breathe, whisper before you scream, and save your most aggressive vibrato for key emotional climaxes.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'B Blues Scale', slug: 'blues-scale', description: 'The fundamental scale providing the flat-5 blue notes and iconic licks.' },
+        { name: 'B Minor Pentatonic', slug: 'minor-pentatonic', description: 'The backbone of Stevie Ray Vaughan\'s lead guitar vocabulary.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'Occasionally introduced for sweet minor-sixth melodic fills.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'Turnaround tension chords.' },
+        { name: 'Minor 7th Chords', slug: 'minor-7th', description: 'Smooth minor blues rhythm shapes.' },
+      ],
+    },
+  },
+
+  'born-under-a-bad-sign': {
+    slug: 'born-under-a-bad-sign',
+    songTitle: 'Born Under a Bad Sign',
+    artist: 'Albert King',
+    key: 'C# Minor',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Tritones & Alterations',
+    coreSecret: 'The Iconic Dorian Bassline Ostinato and Albert King Unison String Bends',
+    emotionalHook: 'Few riffs in music history are as instantly recognizable as the opening walking groove of "Born Under a Bad Sign". Built around a sinister C# Dorian ostinato (featuring the major 6th A# against the minor 3rd E), Albert King pairs a driving soul-blues rhythm section with sharp, upside-down string bends on his Gibson Flying V ("Lucy") that influenced everyone from Jimi Hendrix to Eric Clapton.',
+    romanProgression: 'i7 - iv7 - i7 - i7 | iv7 - iv7 - i7 - i7 | V7 - iv7 - i7 - V7',
+    chords: ['C#7', 'F#7', 'G#7'],
+    progressionExplanation: [
+      'C#7 (I7): The hypnotic dominant-tonic riff cycling on strings 5 and 6.',
+      'F#7 (IV7): Subdominant blues expansion lifting the groove with horn-like punch.',
+      'G#7 (V7): The turnaround dominant chord providing classic Stax Records soul-blues tension.',
+    ],
+    voiceLeadingInsights: [
+      'The signature riff walks from the minor 3rd (E) to the major 2nd (D#), root (C#), and down to the low 5th (G#) and 6th (A#), outlining the C# Dorian mode.',
+      'Albert King\'s unique left-handed playing style (tuning his guitar down to CFCFAC and pulling strings downward) produced wide two-step bends with ferocious attack.',
+      'The horns and rhythm guitar lock into tight syncopated stabs that punctuate the main riff.',
+    ],
+    guitarPerspective: 'Learn the opening single-note bass riff cleanly with alternate picking. When soloing, focus on Albert King\'s "Box 1" position around the 9th and 12th frets, targeting full-step and step-and-a-half bends on the 2nd string.',
+    songwriterTakeaway: 'Anchor your song with an irresistible repeating bass/guitar riff ostinato that doubles as both the melodic hook and the rhythmic groove.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C# Dorian Scale', slug: 'dorian', description: 'The modal scale containing the signature natural 6th (A#) of the main riff.' },
+        { name: 'C# Blues Scale', slug: 'blues-scale', description: 'The primary scale for Albert King\'s expressive lead bends.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'Gives the blues groove a funkier, more modern edge than pure Aeolian.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'C#7, F#7, and G#7 driving the 12-bar blues progression.' },
+        { name: 'Power Chords', slug: 'power-chords', description: 'Punchy rhythm figures locking with the bassline.' },
+      ],
+    },
+  },
+
+  'leaps-and-bounds': {
+    slug: 'leaps-and-bounds',
+    songTitle: 'Leaps and Bounds',
+    artist: 'Paul Kelly',
+    key: 'A Major',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Driving Australian Pub Rock Cadence with Mixolydian ♭VII and Open Chime Voicings',
+    emotionalHook: 'Paul Kelly\'s love letter to Melbourne is built on an unstoppable straight-eighth rhythm that captures the energy of Australian pub rock. Using bright open chords (A, D, E, F#m) with ringing open strings and a punchy ♭VII (G major) modal injection, the progression propels the vivid storytelling forward without pausing for breath.',
+    romanProgression: 'I - V - IV - I (Verse) | vi - IV - I - V (Chorus)',
+    chords: ['A', 'E', 'D', 'F#m', 'G'],
+    progressionExplanation: [
+      'A (I): The grounded, celebratory open major tonic.',
+      'E (V): The driving dominant pushing the rhythm with classic rock vigor.',
+      'D (IV): The uplifting plagal subdominant bringing warmth and optimism.',
+      'F#m (vi): The relative minor giving the chorus a moment of nostalgic reflection.',
+      'G (♭VII): Borrowed Mixolydian chord injecting raw pub-rock swagger into the transition.',
+    ],
+    voiceLeadingInsights: [
+      'The rhythm guitar alternates between open chord strums and muted eighth-note downstrokes, maintaining tight sync with the snare drum.',
+      'Letting the open B and high E strings ring across the D and A chords creates a shimmering Australian jangly guitar texture.',
+      'The chorus modulates the emotional tone by leading with the minor vi chord before climbing through IV, I, and V.',
+    ],
+    guitarPerspective: 'Keep your strumming wrist relaxed and maintain a steady straight-eighth down-up rhythm. Accent beats 2 and 4 to lock in with the snare drum.',
+    songwriterTakeaway: 'Keep your chord progression direct and melodic when writing narrative story songs. The familiar I - V - IV - vi framework gives the listener instant comfort, allowing the lyrical imagery to take center stage.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Scale', slug: 'major', description: 'The diatonic foundation for the verse and chorus progressions.' },
+        { name: 'A Mixolydian Scale', slug: 'mixolydian', description: 'Introduces the borrowed G major chord for pub-rock drive.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'Major key foundation for the optimistic, anthemic melody.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'open-chords', description: 'Open A, D, E, and G chords providing maximum acoustic resonance.' },
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'F#m barre chord anchoring the chorus.' },
+      ],
+    },
+  },
 };
 
 /**

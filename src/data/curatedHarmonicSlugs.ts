@@ -89,6 +89,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'iris',
   'more-than-words',
   'the-needle-and-the-damage-done',
+  'scar-tissue',
+  'alive',
+  'simple-man',
+  'roxanne',
+  'no-excuses',
+  '1979',
+  'aint-no-sunshine',
+  'the-sky-is-crying',
+  'born-under-a-bad-sign',
+  'leaps-and-bounds',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

@@ -1,0 +1,321 @@
+{
+  "songInfo": {
+    "title": "The Sky Is Crying",
+    "artist": "Stevie Ray Vaughan",
+    "album": "The Sky Is Crying",
+    "released": "1991",
+    "genre": "Texas Blues",
+    "tempo": "52 BPM",
+    "duration": "4:36",
+    "key": "C Major",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C major",
+      "scalesUsed": [
+        {
+          "scale": "C minor pentatonic",
+          "notes": "C - Eb - F - G - Bb - C",
+          "application": "Forms the core of Stevie Ray Vaughan's slow 12/8 blues lead vocabulary in the 8th and 13th fret Albert King boxes (sounding in B due to Eb tuning)"
+        },
+        {
+          "scale": "C major pentatonic",
+          "notes": "C - D - E - G - A - C",
+          "application": "Blended with minor pentatonic by curling the minor third (Eb) up a quarter-step toward the major third (E) over the C7 tonic chord"
+        }
+      ],
+      "modalCharacter": "Deep, weeping 12/8 slow Texas blues combining dominant 7th/9th harmony with ferocious Albert King-inspired minor-over-major string bending",
+      "keySignature": "0 sharps/flats (in fretboard shapes; sounds a half-step lower in B7 due to Eb tuning)",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C7",
+          "F9",
+          "C7",
+          "G9",
+          "F9",
+          "C7",
+          "G7"
+        ],
+        "progression": "I7 - IV9 - I7 - V9 - IV9 - I7 - V7",
+        "progressionDescription": "Classic 12-bar slow blues in 12/8 time with a quick-change IV9 in bar 2 and a chromatic walk-up into the V9 turnaround.",
+        "description": "Classic 12-bar slow blues in 12/8 time with a quick-change IV9 in bar 2 and a chromatic walk-up into the V9 turnaround."
+      },
+      "sectionProgressions": [
+        {
+          "section": "12-Bar Slow Blues Intro & Solo (Bars 1-4)",
+          "progression": "C7 - F9 - C7 - C7",
+          "romanNumerals": "I7 - IV9 - I7 - I7",
+          "description": "Opens with SRV's stinging 13th-fret Albert King Box bends over a slow 12/8 quick-change blues foundation"
+        },
+        {
+          "section": "Subdominant Shift (Bars 5-8)",
+          "progression": "F9 - F9 - C7 - C7",
+          "romanNumerals": "IV9 - IV9 - I7 - I7",
+          "description": "Moves to the 4-chord (F9) for two bars where lead lines target the flat-3rd (Eb) before resolving back to C7"
+        },
+        {
+          "section": "Turnaround (Bars 9-12)",
+          "progression": "G9 - F9 - C7 - G7#9",
+          "romanNumerals": "V9 - IV9 - I7 - V7#9",
+          "description": "Climactic V-IV-I descent finishing on a biting Hendrix/SRV dominant 7#9 turnaround chord"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "I7 - IV9 - V9 - I7",
+          "romanNumerals": "Scale Practice",
+          "description": "C minor pentatonic Box 1 (8th fret) and Albert King Box 2 (13th fret) slow blues phrasing"
+        }
+      ],
+      "harmonicFunction": [
+        "C7 (I7) - Dominant seventh tonic establishing the gritty slow-blues home center",
+        "F9 (IV9) - Lush dominant ninth subdominant chord adding Texas-blues sophistication in bars 2, 5, and 6",
+        "G9 / G7#9 (V9) - Dominant fifth chord driving the emotional peak of bar 9 and the bar 12 turnaround"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
+      "description": "Executing massive 1-to-2-step bends on the B and high E strings in the upper pentatonic extension ('Albert King Box') while riding the guitar volume knob for dramatic dynamic swells",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C7 (8th fret): 8-10-8-9-8-8",
+          "F9: X-8-7-8-8-8",
+          "G9: X-10-9-10-10-10",
+          "Albert King Box (Key of C): Frets 11-13 on B and high E strings"
+        ],
+        "sequence": [
+          "Position your hand at the 11th–13th frets on the G, B, and high E strings (Pentatonic Box 2 / Albert King Box)",
+          "Bend the 13th fret B string (C) up a full step to D, or 1.5 steps to Eb, using three fingers for support",
+          "Release down to the 11th fret B string (Bb) and resolve to the root C on the 13th fret B or 10th fret D string",
+          "Comp behind the vocals using light 9th-chord slides (E9 → F9) and raked triad double-stops"
+        ],
+        "tips": [
+          "Pre-rake the muted D and G strings right before striking a bent high note to get SRV's percussive, explosive attack",
+          "Use your index and middle fingers tightly behind your ring finger to push bends cleanly without fatiguing",
+          "Roll your Stratocaster volume knob down to 6 for the quiet vocal verses, then crank it to 10 for the solos"
+        ],
+        "chords": [
+          "C7",
+          "F9",
+          "G9",
+          "G7"
+        ],
+        "progression": "C7 - F9 - C7 - C7 | F9 - F9 - C7 - C7 | G9 - F9 - C7 - G7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Albert King Box Lead Call",
+      "timeStamp": "0:00-0:58",
+      "technique": "Albert King Box Multi-Step String Bending",
+      "key": "C Major",
+      "description": "SRV's iconic opening slow-blues lead statement in the 11th–13th fret Albert King box over C7 and F9.",
+      "chords": [
+        "C7",
+        "F9"
+      ],
+      "progression": "C7 - F9 - C7",
+      "notes": [
+        "Attack the 13th-fret B string and 11th-fret high E string with a fierce pick rake",
+        "Let every bent note weep with wide, controlled wrist vibrato",
+        "Count the slow 12/8 pulse (1-2-3, 4-5-6, 7-8-9, 10-11-12)"
+      ],
+      "alphaTab": ":4 13.2 11.1 13.2 11.2 | :4 12.3 10.4 10.4 12.3 | :2 13.2 :2 11.2 | :1 13.2 |",
+      "exerciseLabel": "Albert King Box Intro Lick"
+    },
+    {
+      "name": "Slow Blues 9th-Chord Rhythm Comping",
+      "timeStamp": "0:59-2:05",
+      "technique": "Texas Blues 9th-Chord Comping",
+      "key": "C Major",
+      "description": "Warm, spacious 12/8 rhythm guitar comping using C7, F9, and G9 voicings.",
+      "chords": [
+        "C7",
+        "F9",
+        "G9"
+      ],
+      "progression": "C7 - F9 - C7 - G9 - F9 - C7",
+      "notes": [
+        "Slide into F9 from a half-step below (E9 at the 7th fret)",
+        "Keep the rhythm sparse and supportive behind the vocal line",
+        "Accent beats 4, 7, and 10 softly in the 12/8 meter"
+      ],
+      "alphaTab": ":2 (8.6 10.5 8.4 9.3) :2 (8.5 7.4 8.3 8.2) | :1 (8.6 10.5 8.4 9.3) | :2 (10.5 9.4 10.3 10.2) :2 (8.5 7.4 8.3 8.2) | :1 (8.6 10.5 8.4 9.3) |",
+      "exerciseLabel": "12/8 Ninth-Chord Comping"
+    },
+    {
+      "name": "8th-Position C Minor Pentatonic Flurry",
+      "timeStamp": "2:06-3:15",
+      "technique": "Box 1 Pentatonic Cascade",
+      "key": "C Minor",
+      "description": "Classic SRV Box 1 C minor pentatonic run at the 8th fret finishing with a slightly bent minor third.",
+      "chords": [
+        "C7",
+        "F9",
+        "G9"
+      ],
+      "progression": "C7 - F9 - G9 - C7",
+      "notes": [
+        "Keep your index finger anchored as a mini-barre at the 8th fret",
+        "Curl the 11th-fret B string (Eb) up slightly toward the major third (E)",
+        "Resolve decisively to the root C on the 10th fret of the D string"
+      ],
+      "alphaTab": ":8 8.1 11.2 8.2 10.3 8.3 10.4 8.4 10.3 | :8 8.3 11.2 8.2 10.3 8.3 10.4 8.4 10.5 | :1 10.4 |",
+      "exerciseLabel": "SRV 8th-Fret Pentatonic Cascade"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1959/1962 Fender Stratocaster ('Number One') with heavy-gauge strings (.012 or .013 set tuned to Eb)",
+      "alternatives": [
+        "Fender Stevie Ray Vaughan Signature Stratocaster",
+        "Fender Player Stratocaster",
+        "Squier Classic Vibe '60s Stratocaster"
+      ],
+      "pickup": "Neck single-coil pickup (or Neck + Middle position for glassy comping)"
+    },
+    "amp": {
+      "recommended": "1964 Fender Vibroverb (with 15-inch speaker) & Fender Super Reverb",
+      "alternatives": [
+        "Fender '65 Twin Reverb",
+        "Fender Blues Junior IV",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "5 (cranked clean tube amp on the verge of thick power-tube breakup)",
+        "treble": "7 (bell-like Stratocaster snap)",
+        "middle": "7 (fat Texas midrange bark)",
+        "bass": "6 (deep, punchy low end)",
+        "presence": "6 (immediate touch sensitivity)"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez TS9 or TS808 Tube Screamer (Drive low at 9 o'clock, Level high at 3 o'clock)",
+      "delay": "None",
+      "reverb": "Lush Fender tube spring reverb",
+      "other": "Heavy celluloid pick played with the rounded shoulder for fat attack"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "12/8 Slow Blues Count & 9th Chords",
+      "steps": [
+        "Internalize the slow 12/8 blues count (four groups of three eighth notes per bar)",
+        "Learn the movable C7 (8th fret E), F9 (8th fret A), and G9 (10th fret A) chord shapes",
+        "Play through the 12-bar quick-change blues structure at 52 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "8th-Fret Minor Pentatonic & Half-Step Slides",
+      "steps": [
+        "Add half-step approach slides into F9 (from E9) and G9 (from F#9)",
+        "Learn the 8th-position C minor pentatonic Box 1 licks and quarter-step blue-note curls",
+        "Alternate between two bars of rhythm comping and two bars of lead fills"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "advanced": {
+      "title": "Albert King Box Bends & SRV Dynamics",
+      "steps": [
+        "Master the 11th–13th fret Albert King Box multi-step bends with rake attack",
+        "Control solo dynamics from whisper-quiet finger-picked phrases to roaring full-volume bends",
+        "Perform a complete two-chorus slow blues solo with authentic Texas phrasing"
+      ],
+      "timeEstimate": "4-8 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the slow 52 BPM tempo instead of letting the 12/8 triplets breathe",
+      "Under-bending the 13th-fret B string in the Albert King Box so it sounds out of tune",
+      "Using only one finger to bend instead of reinforcing with the index and middle fingers"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Slow 12/8 ninth-chord comping (C7 - F9 - G9) with half-step slides",
+      "5 minutes: Intonation drill matching 13th-fret B-string bends to fretted target notes (15th and 16th frets)",
+      "5 minutes: Rake attack + vibrato control in the 8th-fret C minor pentatonic box",
+      "5 minutes: Full slow-blues improvisation over a 12-bar C7 backing track"
+    ],
+    "focusAreas": [
+      "Multi-finger reinforced string bending accuracy",
+      "Percussive left-hand muting during pick rakes",
+      "Expressive wrist vibrato on sustained bent notes"
+    ],
+    "metronomeWork": [
+      "Set metronome to 156 BPM (clicking every eighth note of the 12/8 bar) to lock in the triplet subdivisions",
+      "Once solid, set metronome to 52 BPM (clicking the four dotted-quarter beats) and feel the triplet swing internally",
+      "Practice starting phrases on beat 2 or beat 3 rather than always on beat 1"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Texas Flood",
+        "difficulty": "Advanced",
+        "similarity": "SRV's other monumental slow 12/8 Texas blues showcase featuring fiery Albert King box phrasing"
+      },
+      {
+        "title": "Pride and Joy",
+        "difficulty": "Advanced",
+        "similarity": "Demonstrates SRV's aggressive shuffle muting and raked pentatonic lead attack"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Born Under a Bad Sign",
+        "artist": "Albert King",
+        "difficulty": "Intermediate",
+        "similarity": "Originator of the signature upper-box string bending vocabulary that inspired SRV"
+      },
+      {
+        "title": "Red House",
+        "artist": "Jimi Hendrix",
+        "difficulty": "Advanced",
+        "similarity": "Archetypal slow 12/8 electric blues masterclass in phrasing, rakes, and 9th chords"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Texas Flood",
+        "artist": "Stevie Ray Vaughan",
+        "difficulty": "Advanced",
+        "similarity": "Takes slow-blues rakes, behind-the-nut bends, and rapid pentatonic cascades to the highest level"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 93,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "blues",
+      "12-bar-blues",
+      "pentatonic",
+      "string-bending",
+      "vibrato",
+      "shuffle",
+      "advanced",
+      "solo"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "4-6 weeks"
+  }
+}

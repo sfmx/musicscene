@@ -1,0 +1,317 @@
+{
+  "songInfo": {
+    "title": "Simple Man",
+    "artist": "Lynyrd Skynyrd",
+    "album": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+    "released": "1973",
+    "genre": "Southern Rock",
+    "tempo": "60 BPM",
+    "duration": "5:57",
+    "key": "C Major",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Forms the foundation of the iconic C - G - Am arpeggiated intro and verse progression (sounding a half-step lower in G#m)"
+        },
+        {
+          "scale": "A minor pentatonic",
+          "notes": "A - C - D - E - G - A",
+          "application": "Used for Gary Rossington's crying, sustain-rich Les Paul lead fills and guitar solo"
+        }
+      ],
+      "modalCharacter": "Reflective, hymn-like C major to A natural minor descending bassline progression with heavy Southern blues-rock weight",
+      "keySignature": "0 sharps/flats (in fretboard shapes; sounds in B major / G# minor due to Eb tuning)",
+      "relativeMinor": "A minor is the relative minor of C major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C",
+          "G",
+          "Am",
+          "Am"
+        ],
+        "progression": "bIII - bVII - i - i",
+        "progressionDescription": "Unchanging, cyclical three-chord Southern rock foundation (C - G - Am) where the bass walks smoothly down from C (3rd fret A) through B (2nd fret A) to the open A minor root.",
+        "description": "Unchanging, cyclical three-chord Southern rock foundation (C - G - Am) where the bass walks smoothly down from C (3rd fret A) through B (2nd fret A) to the open A minor root."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse Arpeggios",
+          "progression": "C - G/B - Am",
+          "romanNumerals": "bIII - bVII6 - i",
+          "description": "Clean sixteenth-note arpeggiated picking pattern with a melodic walk-in on the A string (0-2-3)"
+        },
+        {
+          "section": "Chorus ('Be a simple kind of man')",
+          "progression": "C - G5 - A5",
+          "romanNumerals": "bIII - bVII - i",
+          "description": "Heavy distorted Gibson Les Paul power chords and open voicings locking in with the drums"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "C - G - Am",
+          "romanNumerals": "bIII - bVII - i",
+          "description": "Soaring A minor pentatonic lead solo with expressive whole-step bends and wide Southern rock vibrato"
+        },
+        {
+          "section": "Scale Practice Exercise",
+          "progression": "bIII - bVII - i",
+          "romanNumerals": "Scale Practice",
+          "description": "A minor pentatonic & natural minor melodic lead phrasing"
+        }
+      ],
+      "harmonicFunction": [
+        "C (bIII) - Bright relative major opening chord that sets an uplifting, maternal tone",
+        "G / G/B (bVII) - Passing dominant-function chord creating a smooth stepwise bass descent (C → B → A)",
+        "Am (i) - Soulful minor tonic where each two-bar phrase settles for two full measures"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Cross-Picked Clean Arpeggios & Bass Walk-Ins",
+      "description": "Picking individual notes across open C, G, and Am chord shapes while maintaining a steady sixteenth-note pulse and connecting cycles with an A-string bass walk-up (0-2-3)",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "C: X-3-2-0-1-0",
+          "G: 3-2-0-0-3-3 (or G/B: X-2-0-0-3-X)",
+          "Am: X-0-2-2-1-0"
+        ],
+        "sequence": [
+          "Walk up on the A string (open A → 2nd fret B → 3rd fret C) to launch the C major chord",
+          "Arpeggiate from the bass strings up to the B and G strings and back down",
+          "Shift to G major and repeat the arpeggio pattern",
+          "Land on A minor for two full measures, adding little melodic extensions on the 3rd fret of the B and high E strings"
+        ],
+        "tips": [
+          "Hold the full chord shape down so each plucked note rings into the next like a harp",
+          "Use alternate picking (Down-Up) as you cross between the D, G, and B strings",
+          "In the chorus, kick on your overdrive and hit full, authoritative power chords"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "Am"
+        ],
+        "progression": "C - G - Am"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Verse Arpeggio Pattern",
+      "timeStamp": "0:00-1:18",
+      "technique": "Cross-Picked Clean Arpeggios & Bass Walk-Ins",
+      "key": "A Minor",
+      "description": "The timeless clean arpeggiated intro walking up into C, stepping down through G, and resting on Am.",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Keep all notes ringing together across each chord",
+        "Play the A-string 0-2-3 walk-up cleanly into beat 1",
+        "Maintain a steady 60 BPM sixteenth-note feel"
+      ],
+      "alphaTab": ":8 3.5 2.4 0.3 1.2 0.3 2.4 3.6 2.5 | :8 0.4 0.3 3.2 0.3 0.5 2.4 2.3 1.2 | :2 (0.5 2.4 2.3 1.2 0.1) :4 0.5 2.5 |",
+      "exerciseLabel": "Clean Intro Arpeggio"
+    },
+    {
+      "name": "Heavy Chorus Power Chords",
+      "timeStamp": "1:19-1:48",
+      "technique": "Heavy Overdriven Strumming",
+      "key": "A Minor",
+      "description": "Thick, roaring C, G, and A5 chords driving the chorus ('And be a simple kind of man').",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Switch to your bridge humbucker with rich tube overdrive",
+        "Let the chords sustain for two beats each on C and G, then four beats on Am",
+        "Add rhythmic palm-muted chugs before changing chords"
+      ],
+      "alphaTab": ":2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :1 (0.5 2.4 2.3 1.2) |",
+      "exerciseLabel": "Chorus Riff Chords"
+    },
+    {
+      "name": "A Minor Pentatonic Lead Phrase",
+      "timeStamp": "3:15-4:10",
+      "technique": "Southern Rock String Bending",
+      "key": "A Minor",
+      "description": "Expressive A minor pentatonic solo phrase in 5th position with crying bends and wide vibrato.",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Support your ring-finger bends on the 7th fret G string with your index and middle fingers",
+        "Apply slow, wide vibrato on long sustained notes",
+        "Target the root note A on the 7th fret of the D string"
+      ],
+      "alphaTab": ":8 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 | :4 8.2 5.2 7.3 5.3 | :1 7.4 |",
+      "exerciseLabel": "Rossington Style Solo Run"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster (Ed King clean intro) & 1959 Gibson Les Paul Standard (Gary Rossington)",
+      "alternatives": [
+        "Epiphone Les Paul Standard '50s",
+        "Fender Player Stratocaster",
+        "Gibson SG Standard"
+      ],
+      "pickup": "Stratocaster neck pickup for clean arpeggios; Les Paul bridge PAF humbucker for chorus and solo"
+    },
+    "amp": {
+      "recommended": "Peavey Mace or Marshall 1959SLP Plexi",
+      "alternatives": [
+        "Marshall Origin 50",
+        "Fender Twin Reverb",
+        "Blackstar HT Club 40"
+      ],
+      "settings": {
+        "gain": "3 (intro clean) / 7 (chorus & solo crunch)",
+        "treble": "6 (clear pick definition)",
+        "middle": "7 (warm Southern rock midrange)",
+        "bass": "6 (full low-end body)",
+        "presence": "5 (smooth vintage top end)"
+      }
+    },
+    "effects": {
+      "distortion": "Natural tube amp overdrive or Boss SD-1 Super OverDrive",
+      "delay": "None (dry, direct 70s studio tone)",
+      "reverb": "Subtle plate or spring reverb",
+      "other": "Heavy guitar pick for authoritative arpeggio and power-chord attack"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Three-Chord Cycle & Bass Walk",
+      "steps": [
+        "Master the open C, G, and Am chord shapes",
+        "Practice the A-string 0-2-3 bass walk-up into the C chord",
+        "Strum C (2 beats) → G (2 beats) → Am (4 beats) smoothly at 60 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Note-for-Note Clean Arpeggio Picking",
+      "steps": [
+        "Pick the exact sixteenth-note arpeggio pattern across C, G, and Am without looking at your picking hand",
+        "Add the 3rd-fret high-E and B-string pinky embellishments on the Am chord",
+        "Transition cleanly from delicate verse arpeggios to heavy chorus power chords"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Expressive A Minor Soloing",
+      "steps": [
+        "Learn the A minor pentatonic solo phrases in 5th, 8th, and 12th positions",
+        "Execute multi-step bends and wide, vocal-like vibrato",
+        "Improvise your own Southern rock outro solo over the C - G - Am progression"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Lifting fingers off the chord shape too early, cutting off the arpeggio sustain",
+      "Rushing the slow 60 BPM tempo during the quiet verses",
+      "Using only downstrokes during string-crossing arpeggios instead of efficient alternate picking"
+    ],
+    "practiceRoutine": [
+      "5 minutes: A-string 0-2-3 walk-up into clean C → G → Am chord changes",
+      "5 minutes: Isolated sixteenth-note arpeggio picking pattern at 50 BPM → 60 BPM",
+      "5 minutes: Chorus power chords and dynamic switching",
+      "5 minutes: A minor pentatonic soloing over a backing track"
+    ],
+    "focusAreas": [
+      "Letting all arpeggiated notes ring together",
+      "Accurate string-crossing pick control",
+      "Expressive vibrato and bend intonation in the solo"
+    ],
+    "metronomeWork": [
+      "Set metronome to 60 BPM and feel eighth-note and sixteenth-note subdivisions",
+      "Ensure the 0-2-3 walk-up lands squarely on beat 1 of the C chord",
+      "Keep the heavy chorus strums locked to the slow backbeat"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Sweet Home Alabama",
+        "difficulty": "Intermediate",
+        "similarity": "Signature Lynyrd Skynyrd cross-picked clean intro and Southern rock soloing"
+      },
+      {
+        "title": "Free Bird",
+        "difficulty": "Advanced",
+        "similarity": "Monumental Southern rock ballad that builds from slow chordal verses into fiery lead guitar"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Uses the exact same cross-picking precision over open three-chord shapes"
+      },
+      {
+        "title": "Knockin' on Heaven's Door",
+        "artist": "Bob Dylan",
+        "difficulty": "Beginner",
+        "similarity": "Slow, soulful three-chord rock ballad with spacious room for melodic lead fills"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "difficulty": "Intermediate",
+        "similarity": "Advances your cross-picking speed and adds country-rock pentatonic fills between chords"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "70s-rock",
+      "classic-rock",
+      "arpeggios",
+      "open-chords",
+      "minor-key",
+      "pentatonic",
+      "beginner",
+      "iconic-riff"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-3 weeks"
+  }
+}
