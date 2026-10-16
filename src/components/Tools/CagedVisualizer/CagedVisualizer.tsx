@@ -15,13 +15,32 @@ export default function CagedVisualizer() {
   const [currentShape, setCurrentShape] = useState<CagedShapeLetter>('C');
   const [viewMode, setViewMode] = useState<'chord' | 'pentatonic' | 'major'>('chord');
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [activeHighlightedNotes, setActiveHighlightedNotes] = useState<Set<string>>(new Set());
 
   const cagedData = getCagedShapeData(currentShape, currentRoot);
+
+  function triggerHighlight(keys: string[], durationMs: number = 700) {
+    setActiveHighlightedNotes(new Set(keys));
+    setTimeout(() => {
+      setActiveHighlightedNotes((prev) => {
+        const next = new Set(prev);
+        keys.forEach((k) => next.delete(k));
+        return next;
+      });
+    }, durationMs);
+  }
 
   // Strum the full CAGED chord shape
   function handleStrumChord() {
     if (isPlayingAudio) return;
     setIsPlayingAudio(true);
+
+    const activeKeys: string[] = [];
+    cagedData.chordFrets.forEach((fret, sIdx) => {
+      if (fret >= 0) activeKeys.push(`${sIdx}-${fret}`);
+    });
+
+    triggerHighlight(activeKeys, 900);
     strumChord(cagedData.chordFrets, { speedMs: 18, volume: 0.36 });
     setTimeout(() => setIsPlayingAudio(false), 900);
   }
@@ -39,10 +58,11 @@ export default function CagedVisualizer() {
     activePlucks.forEach((p, idx) => {
       setTimeout(() => {
         playGuitarNote(p.sIdx, p.fret, { duration: 1.6, volume: 0.35 });
+        triggerHighlight([`${p.sIdx}-${p.fret}`], 650);
         if (idx === activePlucks.length - 1) {
           setTimeout(() => setIsPlayingAudio(false), 800);
         }
-      }, idx * 180);
+      }, idx * 200);
     });
   }
 
@@ -59,10 +79,46 @@ export default function CagedVisualizer() {
     activeNotes.forEach((n, idx) => {
       setTimeout(() => {
         playGuitarNote(n.stringIndex, n.fret, { duration: 1.2, volume: 0.32 });
+        triggerHighlight([`${n.stringIndex}-${n.fret}`], 550);
         if (idx === activeNotes.length - 1) {
           setTimeout(() => setIsPlayingAudio(false), 700);
         }
-      }, idx * 160);
+      }, idx * 180);
+    });
+  }
+
+  function handleStrumTriad() {
+    if (isPlayingAudio) return;
+    setIsPlayingAudio(true);
+
+    const triadKeys: string[] = [];
+    cagedData.triad.frets.forEach((fret, sIdx) => {
+      if (fret >= 0) triadKeys.push(`${sIdx}-${fret}`);
+    });
+
+    triggerHighlight(triadKeys, 900);
+    strumChord(cagedData.triad.frets, { speedMs: 18, volume: 0.38 });
+    setTimeout(() => setIsPlayingAudio(false), 900);
+  }
+
+  function handleArpeggiateTriad() {
+    if (isPlayingAudio) return;
+    setIsPlayingAudio(true);
+
+    const activePlucks: { sIdx: number; fret: number }[] = [];
+    [3, 4, 5].forEach((sIdx) => {
+      const f = cagedData.triad.frets[sIdx];
+      if (f >= 0) activePlucks.push({ sIdx, fret: f });
+    });
+
+    activePlucks.forEach((p, idx) => {
+      setTimeout(() => {
+        playGuitarNote(p.sIdx, p.fret, { duration: 1.6, volume: 0.36 });
+        triggerHighlight([`${p.sIdx}-${p.fret}`], 650);
+        if (idx === activePlucks.length - 1) {
+          setTimeout(() => setIsPlayingAudio(false), 800);
+        }
+      }, idx * 220);
     });
   }
 
@@ -120,11 +176,21 @@ export default function CagedVisualizer() {
         </div>
 
         {/* Interactive Fretboard */}
-        <CagedFretboard cagedData={cagedData} viewMode={viewMode} />
+        <CagedFretboard
+          cagedData={cagedData}
+          viewMode={viewMode}
+          activeHighlightedNotes={activeHighlightedNotes}
+          onPluckNote={(sIdx, fret) => triggerHighlight([`${sIdx}-${fret}`], 700)}
+        />
       </div>
 
       {/* Triad Inspector & Practical Application Guide */}
-      <CagedTriadInspector cagedData={cagedData} />
+      <CagedTriadInspector
+        cagedData={cagedData}
+        isPlayingTriad={isPlayingAudio}
+        onStrumTriad={handleStrumTriad}
+        onArpeggiateTriad={handleArpeggiateTriad}
+      />
     </div>
   );
 }

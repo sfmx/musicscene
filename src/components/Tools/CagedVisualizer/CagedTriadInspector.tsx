@@ -6,19 +6,36 @@ import { strumChord, playGuitarNote } from '@/lib/guitarAudio';
 
 interface CagedTriadInspectorProps {
   cagedData: CagedShapeData;
+  isPlayingTriad?: boolean;
+  onStrumTriad?: () => void;
+  onArpeggiateTriad?: () => void;
 }
 
-export default function CagedTriadInspector({ cagedData }: CagedTriadInspectorProps) {
-  const [isPlayingTriad, setIsPlayingTriad] = useState(false);
+export default function CagedTriadInspector({
+  cagedData,
+  isPlayingTriad: externalIsPlaying,
+  onStrumTriad,
+  onArpeggiateTriad,
+}: CagedTriadInspectorProps) {
+  const [internalIsPlaying, setInternalIsPlaying] = useState(false);
+  const isPlaying = externalIsPlaying ?? internalIsPlaying;
 
   function handleStrumTriad() {
-    setIsPlayingTriad(true);
+    if (onStrumTriad) {
+      onStrumTriad();
+      return;
+    }
+    setInternalIsPlaying(true);
     strumChord(cagedData.triad.frets, { speedMs: 18, volume: 0.38 });
-    setTimeout(() => setIsPlayingTriad(false), 900);
+    setTimeout(() => setInternalIsPlaying(false), 900);
   }
 
   function handleArpeggiateTriad() {
-    setIsPlayingTriad(true);
+    if (onArpeggiateTriad) {
+      onArpeggiateTriad();
+      return;
+    }
+    setInternalIsPlaying(true);
     // Strings 3, 4, 5 (G, B, High E)
     const activePlucks: { sIdx: number; fret: number }[] = [];
     [3, 4, 5].forEach((sIdx) => {
@@ -30,7 +47,7 @@ export default function CagedTriadInspector({ cagedData }: CagedTriadInspectorPr
       setTimeout(() => {
         playGuitarNote(p.sIdx, p.fret, { duration: 1.6, volume: 0.36 });
         if (idx === activePlucks.length - 1) {
-          setTimeout(() => setIsPlayingTriad(false), 800);
+          setTimeout(() => setInternalIsPlaying(false), 800);
         }
       }, idx * 220);
     });
@@ -66,14 +83,14 @@ export default function CagedTriadInspector({ cagedData }: CagedTriadInspectorPr
         {/* Triad Audio Actions */}
         <div className="flex gap-2 pt-4 border-t border-slate-800">
           <button
-            disabled={isPlayingTriad}
+            disabled={isPlaying}
             onClick={handleStrumTriad}
             className="flex-1 py-2.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-400 disabled:opacity-50 text-slate-950 text-xs font-black transition cursor-pointer flex items-center justify-center gap-1.5"
           >
             <span>▶ Strum Triad</span>
           </button>
           <button
-            disabled={isPlayingTriad}
+            disabled={isPlaying}
             onClick={handleArpeggiateTriad}
             className="flex-1 py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-white text-xs font-bold border border-slate-700 transition cursor-pointer flex items-center justify-center gap-1.5"
           >

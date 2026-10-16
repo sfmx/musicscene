@@ -7,9 +7,16 @@ import { playGuitarNote } from '@/lib/guitarAudio';
 interface CagedFretboardProps {
   cagedData: CagedShapeData;
   viewMode: 'chord' | 'pentatonic' | 'major';
+  activeHighlightedNotes?: Set<string>;
+  onPluckNote?: (stringIndex: number, fret: number) => void;
 }
 
-export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardProps) {
+export default function CagedFretboard({
+  cagedData,
+  viewMode,
+  activeHighlightedNotes = new Set(),
+  onPluckNote,
+}: CagedFretboardProps) {
   const [activePluckedNote, setActivePluckedNote] = useState<string | null>(null);
   const totalFrets = 16;
   const singleDotFrets = [3, 5, 7, 9, 15];
@@ -21,6 +28,7 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
   function handlePluckNote(stringIndex: number, fret: number) {
     const key = `${stringIndex}-${fret}`;
     setActivePluckedNote(key);
+    onPluckNote?.(stringIndex, fret);
     playGuitarNote(stringIndex, fret, { duration: 1.8, volume: 0.35 });
     setTimeout(() => {
       setActivePluckedNote((prev) => (prev === key ? null : prev));
@@ -104,7 +112,9 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
               (n) => n.stringIndex === sIdx && n.fret === 0
             );
             const showOpenNote = openNote && shouldDisplayNote(openNote);
-            const isOpenPlucked = activePluckedNote === `${sIdx}-0`;
+            const openNoteKey = `${sIdx}-0`;
+            const isOpenActive =
+              activeHighlightedNotes.has(openNoteKey) || activePluckedNote === openNoteKey;
 
             return (
               <div
@@ -119,17 +129,25 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
 
                 {/* String Open Nut Header */}
                 <div
-                  className={`w-14 h-full flex items-center justify-center z-10 border-r-4 border-slate-500/70 ${
-                    cagedData.fretSpan[0] === 0 ? 'bg-amber-500/10' : ''
+                  className={`w-14 h-full flex items-center justify-center z-10 border-r-4 border-slate-500/70 transition-colors ${
+                    isOpenActive
+                      ? 'bg-amber-400/30'
+                      : cagedData.fretSpan[0] === 0
+                      ? 'bg-amber-500/10'
+                      : ''
                   }`}
                 >
                   <button
                     onClick={() => handlePluckNote(sIdx, 0)}
-                    className={`w-8 h-8 rounded-full text-xs font-mono font-black flex items-center justify-center transition cursor-pointer shadow-md ${
+                    className={`w-8 h-8 rounded-full text-xs font-mono font-black flex items-center justify-center transition-all duration-150 cursor-pointer shadow-md ${
                       showOpenNote
                         ? `${getNoteBadgeStyle(openNote)} ${
-                            isOpenPlucked ? 'scale-125 ring-4 ring-white' : 'hover:scale-110'
+                            isOpenActive
+                              ? 'scale-125 ring-4 ring-white shadow-xl shadow-amber-400/90 z-30 animate-pulse'
+                              : 'hover:scale-110'
                           }`
+                        : isOpenActive
+                        ? 'bg-amber-400 text-slate-950 scale-125 ring-4 ring-white shadow-xl shadow-amber-400/90 z-30'
                         : 'bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200'
                     }`}
                     title={
@@ -146,7 +164,8 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
                 <div className="flex-1 grid grid-cols-16 h-full relative">
                   {Array.from({ length: totalFrets }, (_, i) => i + 1).map((fret) => {
                     const noteKey = `${sIdx}-${fret}`;
-                    const isPlucked = activePluckedNote === noteKey;
+                    const isNoteActive =
+                      activeHighlightedNotes.has(noteKey) || activePluckedNote === noteKey;
 
                     // Check if a note exists on this string/fret
                     const note = cagedData.notes.find(
@@ -158,7 +177,9 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
                     return (
                       <div
                         key={fret}
-                        className="relative flex items-center justify-center border-r-2 border-slate-600/80 last:border-r-0 hover:bg-slate-800/30 transition cursor-pointer"
+                        className={`relative flex items-center justify-center border-r-2 border-slate-600/80 last:border-r-0 hover:bg-slate-800/30 transition-all duration-150 cursor-pointer ${
+                          isNoteActive ? 'bg-amber-400/20 shadow-inner' : ''
+                        }`}
                         onClick={() => handlePluckNote(sIdx, fret)}
                       >
                         {/* Position Inlay Dots */}
@@ -181,7 +202,11 @@ export default function CagedFretboard({ cagedData, viewMode }: CagedFretboardPr
                             }}
                             className={`w-7 h-7 rounded-full flex flex-col items-center justify-center text-[10px] z-20 transition-all duration-150 cursor-pointer ${getNoteBadgeStyle(
                               note
-                            )} ${isPlucked ? 'scale-125 ring-4 ring-white' : 'hover:scale-110'}`}
+                            )} ${
+                              isNoteActive
+                                ? 'scale-125 ring-4 ring-white shadow-xl shadow-amber-400/90 z-30 animate-pulse'
+                                : 'hover:scale-110'
+                            }`}
                             title={`${note.note} (${note.interval}) - String ${sIdx + 1}, Fret ${fret}`}
                           >
                             <span>{note.interval}</span>
