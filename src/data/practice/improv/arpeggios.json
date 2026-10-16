@@ -2,386 +2,392 @@
   "slug": "arpeggios",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Improvising with Arpeggios",
-    "subtitle": "Master the art of outlining chords and creating melodic lines with harmonic clarity through arpeggio-based improvisation.",
-    "heroGradient": "bg-gradient-to-br from-orange-50 to-red-100",
-    "heroTitle": "Improvising with Arpeggios",
-    "heroDescription": "Arpeggios are the skeleton of harmony made melodic. Learn to outline chord changes with clarity and sophistication, creating melodic lines that highlight the harmonic structure of your solos."
+    "pageTitle": "Improvising with Arpeggios Masterclass",
+    "subtitle": "Master the art of outlining chord changes, sweep picking fluid shapes, superimposing triads, and weaving arpeggios into singing guitar solos.",
+    "heroGradient": "bg-gradient-to-br from-orange-50 to-amber-100",
+    "heroTitle": "Improvising with Arpeggios Masterclass",
+    "heroDescription": "Arpeggios are the golden skeleton of harmony made melodic. While scale runs can sound ambiguous or float disconnected above changing chords, arpeggios outline the exact notes of the underlying progression with crystalline clarity. From Joe Pass and Django Reinhardt to Frank Gambale and John Petrucci, master improvisers use arpeggios not as mechanical speed drills, but as expressive harmonic roadmaps that make their guitar solos outline changes even without a backing track."
   },
   "guidelines": {
-    "title": "Theory Fundamentals",
+    "title": "The Architecture of Arpeggio Soloing",
     "columns": [
       {
-        "title": "Arpeggios as Harmonic Roadmaps",
+        "title": "The Harmonic Mechanics of Chord Outlines",
         "items": [
-          { "bulletColor": "text-orange-500", "text": "Chord Definition: Arpeggios clearly outline underlying harmony" },
-          { "bulletColor": "text-orange-500", "text": "Strong Foundation: Chord tones are always harmonically safe" },
-          { "bulletColor": "text-orange-500", "text": "Professional Sound: Essential for jazz and sophisticated playing" },
-          { "bulletColor": "text-orange-500", "text": "Melodic Structure: Provides framework for melodic development" }
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Harmonic Crystalline Clarity: Playing chord tones (1, 3, 5, 7) directly mirrors the accompaniment, creating immediate consonance and professional harmonic clarity."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Triads vs 7th Arpeggios: Triads (1-3-5) provide punchy rock, country, and pop clarity; 7th arpeggios (maj7, m7, dom7, m7b5) introduce sophisticated jazz and fusion colors."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Deconstructing Sweep Drills: Don't just sweep up and down identical finger grips; vary your rhythmic subdivisions, reverse direction mid-run, and insert vocal pauses."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Passing Tone Integration: Sandwich scale steps and chromatic approaches between arpeggio chord tones to prevent your lines from sounding like dry exercise patterns."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Triad Superimposition: Playing an Em triad over Cmaj7 outlines the sweet 3rd, 5th, and 7th (E-G-B), creating modern modal color using simple, familiar shapes."
+          }
         ]
       },
       {
-        "title": "When to Use Arpeggios",
+        "title": "Strategic Fretboard Application",
         "items": [
-          { "bulletColor": "text-red-500", "text": "Chord Changes: Outline each chord as harmony changes" },
-          { "bulletColor": "text-red-500", "text": "Complex Harmony: Navigate difficult chord progressions" },
-          { "bulletColor": "text-red-500", "text": "Strong Beats: Land on chord tones on important beats" },
-          { "bulletColor": "text-red-500", "text": "Harmonic Clarity: When you want to highlight the harmony" }
+          {
+            "bulletColor": "text-amber-500",
+            "text": "CAGED Shape Synchronization: Anchor every arpeggio pattern inside a known CAGED chord grip so you instantly recognize fretboard positions under your fingers."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "String Skipping for Wide Leaps: Skipping a string between arpeggio notes breaks up predictable linear motion with vocal, saxophone-like wide intervals."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Smooth Voice Leading Connections: When harmony changes, resolve to the nearest chord tone of the new arpeggio rather than leaping back to the root."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Target Note Launchpads: Use an ascending arpeggio as an accelerating launch vehicle that resolves squarely onto a sustained target note on beat 1."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Right-Hand Economy & Sweeping: Maintain a relaxed right-hand angle so the pick pushes across adjacent strings in a single fluid stroke like a brush."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Arpeggio Types",
+      "title": "Foundational Triads, 7ths & Voice Leading",
       "exercises": [
         {
           "number": 1,
-          "title": "Basic Triads",
+          "title": "CAGED Major & Minor Triad Outlines Over I-vi-IV-V",
           "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Three-note chords that outline fundamental harmonic structures. Includes: Major Triad (1-3-5), Minor Triad (1-\u266d3-5), Diminished Triad (1-\u266d3-\u266d5), Augmented Triad (1-3-\u266f5). Characteristics: Clear harmonic outline, easy to hear chord changes, fundamental building blocks.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Best For",
-            "text": "Country music, Folk, Basic rock, Classical. These triads are the fundamental building blocks of all arpeggio-based improvisation."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Seventh Chords",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Four-note arpeggios that add harmonic sophistication and jazz flavor. Includes: Major 7th (1-3-5-7), Dominant 7th (1-3-5-\u266d7), Minor 7th (1-\u266d3-5-\u266d7), Half-Diminished (1-\u266d3-\u266d5-\u266d7). Characteristics: Rich harmonic color, jazz standard vocabulary, smooth voice leading.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Best For",
-            "text": "Jazz, Blues, R&B, Sophisticated pop. Seventh chord arpeggios are the core vocabulary for jazz and blues improvisation."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Extended Chords",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Complex arpeggios that include 9ths, 11ths, and 13ths for modern sounds. Includes: Major 9th, Minor 9th, Dominant 13th, Minor 11th, Major 7#11. Characteristics: Modern harmonic color, complex but beautiful, professional sound.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Best For",
-            "text": "Jazz fusion, Contemporary jazz, Modern pop, Film music. Extended arpeggios create the sophisticated sounds heard in professional recordings."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Altered Dominants",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Modified dominant arpeggios that create tension and sophisticated resolution. Includes: 7\u266d5, 7\u266f5, 7\u266d9, 7\u266f9, 7alt (\u266d9\u266f9\u266f11\u266d13). Characteristics: Maximum tension, jazz sophistication, strong resolution tendency.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Best For",
-            "text": "Bebop, Modern jazz, Fusion, Advanced improvisation. Altered dominants are the hallmark of advanced jazz improvisation."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Arpeggio Application Techniques",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Chord Outlining",
-          "difficulty": "Intermediate",
           "borderColor": "border-orange-200",
           "difficultyBg": "bg-orange-100",
           "difficultyText": "text-orange-700",
           "numberBg": "bg-orange-100",
           "numberText": "text-orange-600",
-          "description": "Play arpeggio notes to clearly define the underlying harmony. Land on chord tones on strong beats, especially chord changes. Over Cmaj7-Am7-Dm7-G7, play respective arpeggio tones.",
+          "description": "Before playing complex four-note arpeggios, master compact three-note triads. In this 4-measure study over C - Am - F - G, outline the exact notes of each chord across strings 4, 3, 2, and 1: C (C-E-G), Am (A-C-E), F (F-A-C), and G (G-B-D). Notice how clearly the harmony shines through even on solo guitar.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Triad Outlines: C (5.3 ➔ 5.2 ➔ 3.1) | Am (7.4 ➔ 5.3 ➔ 5.2 ➔ 5.1) | F (3.4 ➔ 2.3 ➔ 1.2 ➔ 1.1) | G (5.4 ➔ 4.3 ➔ 3.2 ➔ 3.1)"
+          },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" },
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "CAGED Triad Outlines Over C - Am - F - G",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 :8 5.3 5.2 3.1 5.2 :4 5.3 3.1 | :8 7.4 5.3 5.2 5.1 :4 5.2 5.1 | :8 3.4 2.3 1.2 1.1 :4 1.2 1.1 | :8 5.4 4.3 3.2 3.1 :2 3.1 |",
+            "staveTitle": "Outlining Triads Across the Fretboard on Strings 4-1"
+          },
           "practiceNotes": {
             "colorBg": "bg-orange-50",
             "colorBorder": "border-orange-200",
             "colorTitle": "text-orange-900",
             "colorText": "text-orange-800",
             "colorAccent": "bg-orange-100",
-            "title": "Musical Effect",
-            "text": "Creates harmonic clarity and professional sound. This is the most fundamental arpeggio application technique."
+            "title": "Practice Notes",
+            "text": "Focus on lifting each finger after striking its note to prevent notes from ringing together like a strummed chord. Triads in lead guitar must be clean and distinct.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Connecting Arpeggios",
+          "title": "Two-Octave 7th Arpeggios Over ii-V-I",
           "difficulty": "Intermediate",
           "borderColor": "border-orange-200",
           "difficultyBg": "bg-orange-100",
           "difficultyText": "text-orange-700",
           "numberBg": "bg-orange-100",
           "numberText": "text-orange-600",
-          "description": "Link arpeggios smoothly through chord progressions. Use common tones and stepwise motion between arpeggios. Connect C major to A minor via shared tones (C and E).",
+          "description": "Adding the 7th elevates your playing into authentic jazz, blues, and neo-soul vocabulary. In this study over Dm7 - G7 - Cmaj7, ascend through two complete octaves of Dm7 (D-F-A-C), descend through G7 (G-B-D-F), and sweep up through Cmaj7 (C-E-G-B).",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "7th Chord Formulas: Dm7 (1-b3-5-b7) ➔ G7 (1-3-5-b7) ➔ Cmaj7 (1-3-5-7)"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
+          "notation": {
+            "title": "Two-Octave 7th Arpeggios Across ii-V-I",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :8 5.5 3.4 7.4 5.3 :8 7.3 6.2 5.1 8.1 | :8 7.1 6.2 8.2 7.3 :8 4.3 5.4 3.4 5.5 | :8 3.5 7.5 5.4 9.4 :8 5.3 9.3 8.2 7.1 | :8 8.1 5.2 5.3 5.4 :2 3.5 |",
+            "staveTitle": "Navigating 7th Arpeggio Shapes Across All Six Strings"
+          },
           "practiceNotes": {
             "colorBg": "bg-orange-50",
             "colorBorder": "border-orange-200",
             "colorTitle": "text-orange-900",
             "colorText": "text-orange-800",
             "colorAccent": "bg-orange-100",
-            "title": "Musical Effect",
-            "text": "Smooth voice leading and flowing melodic lines. The key to professional-sounding arpeggio improvisation."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Arpeggio Patterns",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Use recurring patterns within arpeggios for rhythmic interest. Play arpeggios in 3rds, 4ths, or skip patterns. Example patterns: 1-3-5-7-5-3 or 1-5-3-7.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Musical Effect",
-            "text": "Adds structure and memorability to lines. Patterns give your improvisation rhythmic drive and coherence."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Scale-Arpeggio Integration",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine arpeggios with scale passages for variety. Use arpeggios for chord tones, scales for passing tones. Arpeggio on beats 1&3, scalar fills on beats 2&4.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Musical Effect",
-            "text": "Balances harmonic clarity with melodic flow. This is the approach used by most professional improvisers."
-          }
-        },
-        {
-          "number": 5,
-          "title": "Rhythmic Displacement",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Play arpeggios with different rhythmic groupings. Use triplets, quintuplets, or syncopated rhythms. Play 4-note arpeggio as triplet grouping for rhythmic tension.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Musical Effect",
-            "text": "Creates rhythmic sophistication and interest. Rhythmic displacement is a hallmark of advanced arpeggio improvisation."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Practice Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Arpeggio Foundation",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Build solid arpeggio technique across the fretboard. Steps: 1. Practice major and minor triads in multiple positions. 2. Play arpeggios ascending and descending. 3. Use alternate picking for clean articulation. 4. Practice with metronome at various tempos. 5. Memorize arpeggio shapes without looking.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Focus on clean, even notes rather than speed. Start at a comfortable tempo and gradually increase.",
-            "tempo": "60 BPM"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Chord Progression Mapping",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Learn to play appropriate arpeggios over chord changes. Steps: 1. Choose a simple progression (I-vi-IV-V). 2. Identify the correct arpeggio for each chord. 3. Practice each arpeggio separately. 4. Connect arpeggios through the progression. 5. Add scalar passages between chord tones.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Listen for how arpeggios outline the harmony. Focus on smooth transitions between chords.",
+            "text": "Observe how each chord arpeggio has its own unique finger architecture: minor 7th has flat 3 and flat 7, dominant 7 has major 3 and flat 7, major 7 has natural 7.",
             "tempo": "80 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Jazz Standard Application",
+          "title": "Smooth Voice Leading Between Arpeggios",
           "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Apply arpeggios to real jazz standards. Steps: 1. Choose a simple jazz standard (Autumn Leaves). 2. Analyze the chord progression. 3. Practice appropriate arpeggios for each chord. 4. Work on smooth voice leading between chords. 5. Add rhythmic and melodic variations.",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Amateurs jump all the way back down to the root every time a new chord arrives. Master improvisers use voice leading: they connect changing chords by stepping to the closest available note of the new chord. Notice how Dm7's 7th (C) steps down one fret to G7's 3rd (B), and G7's 7th (F) resolves to Cmaj7's 3rd (E).",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Smooth Voice Leading: Dm7 (ends on C, 5.3) ➔ G7 (starts on B, 4.3) ➔ G7 (ends on F, 6.2) ➔ Cmaj7 (starts on E, 5.2)"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" },
+            { "label": "Am7", "chord": "Am7" }
+          ],
+          "notation": {
+            "title": "Voice-Led Arpeggio Connections",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :4 7.3 :8 6.2 5.1 :4 8.1 :4 5.3 | :4 4.3 :8 7.3 8.2 :4 7.1 :4 6.2 | :4 5.2 :8 8.2 7.1 :4 8.1 :4 5.3 | :4 7.4 :8 5.3 5.2 :2 5.1 |",
+            "staveTitle": "Connecting Arpeggios by Stepwise Voice Leading Transitions"
+          },
           "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
             "title": "Practice Notes",
-            "text": "Start slowly and focus on harmonic accuracy. The goal is clean, clear arpeggio movement through changes.",
-            "tempo": "70 BPM"
+            "text": "Listen to how seamlessly the melody glides across the chord changes. Smooth voice leading is what separates disconnected exercises from real music.",
+            "tempo": "82 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sweeps, Passing Tones, Superimposition & Master Etude",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "3-String Swept Triad Cascades",
+          "difficulty": "Intermediate",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Sweep picking allows you to play rapid arpeggio cascades with minimal physical effort. In this study over the Andalusian progression Am - G - F - E, glide across strings 3, 2, and 1 using down-strokes when ascending and an up-stroke with a pull-off when descending.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Sweep Pick Mechanics: Down-down-down push across strings 3-2-1 ➔ Up-stroke on high note with pull-off ➔ Up-up return stroke"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" },
+            { "label": "F", "chord": "F" },
+            { "label": "E", "chord": "E" }
+          ],
+          "notation": {
+            "title": "3-String Swept Triads Over Am - G - F - E",
+            "alphaTex": "\\tempo 84 . \\ts 4 4 :16 5.3 5.2 5.1 8.1 :16 5.1 5.2 5.3 7.4 :4 5.3 :4 5.1 | :16 4.3 3.2 3.1 7.1 :16 3.1 3.2 4.3 5.4 :4 4.3 :4 3.1 | :16 2.3 1.2 1.1 5.1 :16 1.1 1.2 2.3 3.4 :4 2.3 :4 1.1 | :16 4.3 5.2 4.1 7.1 :16 4.1 5.2 4.3 6.4 :2 5.1 |",
+            "staveTitle": "High-Speed 3-String Triad Sweeping Over Descending Chords"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
+            "title": "Practice Notes",
+            "text": "Start slowly at 60 BPM. Synchronize your fret-hand finger release with the pick passing over each string so each note speaks individually without bleeding into the next.",
+            "tempo": "84 BPM"
           }
         },
         {
-          "number": 4,
-          "title": "Advanced Arpeggio Integration",
+          "number": 5,
+          "title": "Bebop Chromatic Approach Arpeggios",
           "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine multiple arpeggio concepts in improvisation. Steps: 1. Practice extended and altered arpeggios. 2. Work on rapid arpeggio sequences. 3. Combine with chromatic approach tones. 4. Practice over complex jazz progressions. 5. Record and analyze harmonic accuracy.",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Pure arpeggios can sometimes sound too sterile or predictable. Master jazz and fusion players inject chromatic approach notes: every chord tone (1, 3, 5, 7) is preceded by a note one half-step below on the offbeat, creating delicious bebop swing.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Approach Formula: Play 1 half-step below on weak eighth note ➔ Resolve onto chord tone on strong eighth note"
+          },
+          "chordDiagrams": [
+            { "label": "Am7", "chord": "Am7" },
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
+          "notation": {
+            "title": "Chromatic Approach Note Arpeggios",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :8 6.4 7.4 4.3 5.3 :8 4.2 5.2 7.2 8.2 | :8 6.3 7.3 5.2 6.2 :8 4.1 5.1 7.1 8.1 | :8 4.4 5.4 3.3 4.3 :8 6.3 7.3 5.2 6.2 | :8 4.3 5.3 4.2 5.2 :2 5.3 |",
+            "staveTitle": "Leading into Every Arpeggio Tone from a Half-Step Below"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
             "title": "Practice Notes",
-            "text": "Advanced arpeggios require significant practice to sound musical. Record yourself and listen back critically.",
-            "tempo": "90 BPM"
+            "text": "Accent the chord tones, not the chromatic approach notes. The approach note acts like a spring that snaps into the harmonic chord tone with swagger.",
+            "tempo": "82 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Triad Superimposition: Outlining Upper Extensions",
+          "difficulty": "Advanced",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Triad superimposition is one of modern improvisation's most closely guarded secrets. Over a static Cmaj7 chord, playing an Em triad (E-G-B) outlines the 3rd, 5th, and 7th; playing a G triad (G-B-D) outlines the 5th, 7th, and 9th; and playing a D triad (D-F#-A) outlines the 9th, #11, and 13th for a glorious Lydian sound.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Over Cmaj7: Em Triad = [3, 5, 7] | G Triad = [5, 7, 9] | D Triad = [9, #11, 13]"
+          },
+          "chordDiagrams": [
+            { "label": "Cmaj7", "chord": "Cmaj7" },
+            { "label": "Em", "chord": "Em" },
+            { "label": "G", "chord": "G" },
+            { "label": "D", "chord": "D" }
+          ],
+          "notation": {
+            "title": "Triad Superimposition Study Over Cmaj7",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :8 5.2 3.1 7.1 3.1 :4 5.2 :4 7.1 | :8 4.3 3.2 3.1 7.1 :4 3.2 :4 7.1 | :8 7.3 7.2 5.1 10.1 :4 7.2 :4 10.1 | :8 8.1 5.2 5.3 5.4 :2 3.5 |",
+            "staveTitle": "Superimposing Em, G, and D Triads Over Cmaj7 Harmony"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
+            "title": "Practice Notes",
+            "text": "Notice how you don't need complex, finger-twisting 6-note chords to sound like a modern jazz/fusion master. Simple triads played over the right bass note create extraordinary color.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Master Arpeggio Etude: Changes in Motion",
+          "difficulty": "Advanced",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "This culminating 4-measure solo etude brings together all arpeggio skills: sweeping triads, chromatic approach notes, 7th chord outlines, and vocal voice leading over Am7 - D7 - Gmaj7 - Cmaj7. Play through with confident dynamics, clear note separation, and singing vibrato on the final resolution.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Complete Arpeggio Integration: Swept Triads + Chromatic Enclosures + Voice Leading"
+          },
+          "chordDiagrams": [
+            { "label": "Am7", "chord": "Am7" },
+            { "label": "D7", "chord": "D7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
+          "notation": {
+            "title": "Master Arpeggio Solo Etude",
+            "alphaTex": "\\tempo 88 . \\ts 4 4 :16 5.3 5.2 5.1 8.1 :8 7.1 5.1 :8 8.2 5.2 :4 7.3 | :8 6.3 7.3 :8 7.2 5.1 :16 8.1 7.1 5.1 8.2 :4 7.2 | :16 4.3 3.2 3.1 7.1 :8 10.1 7.1 :8 8.2 7.2 :4 4.3 | :8 5.3 5.2 8.2 7.1 :2 8.1 |",
+            "staveTitle": "Comprehensive 4-Bar Etude Weaving Arpeggios Across Chord Changes"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
+            "title": "Practice Notes",
+            "text": "Record your chords into a looper pedal and solo this etude over them. Listen to how every phrase clearly announces the arrival of each new chord.",
+            "tempo": "88 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Daily Arpeggio Practice Routine & Inspiration",
+    "title": "Arpeggio Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Phase 1: Technical (10 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Practice basic triads in multiple positions",
-          "Work on clean, even articulation",
-          "Use metronome for steady timing",
-          "Practice ascending and descending"
-        ]
-      },
-      {
-        "title": "Phase 2: Harmonic (15 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Apply arpeggios to chord progressions",
-          "Practice connecting different arpeggios",
-          "Work on voice leading between chords",
-          "Add seventh and extended arpeggios"
-        ]
-      },
-      {
-        "title": "Phase 3: Musical (10 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Improvise using day's arpeggios",
-          "Combine arpeggios with scale passages",
-          "Practice over backing tracks",
-          "Record and analyze harmonic accuracy"
-        ]
-      },
-      {
-        "title": "Famous Arpeggio Masters",
+        "title": "3 Mistakes That Kill Arpeggio Improvisation",
         "colorBg": "bg-red-50",
         "colorBorder": "border-red-200",
         "colorTitle": "text-red-900",
         "colorText": "text-red-800",
         "items": [
-          "Wes Montgomery: Smooth arpeggio lines with octave technique - fluid arpeggios that outline complex jazz harmony",
-          "Pat Metheny: Wide interval arpeggios with modern extensions - uses extended arpeggios for contemporary jazz sounds",
-          "Allan Holdsworth: Rapid legato arpeggios with complex harmony - lightning-fast arpeggios through dense chord changes",
-          "George Benson: R&B influenced arpeggios with strong groove - combines technical arpeggio work with strong rhythmic feel"
+          "Bleeding Notes Together: Letting your fret-hand fingers flatten out and ring together turns your single-note arpeggio line into a messy strummed chord.",
+          "The Mechanical Sweep Robot: Playing identical root-to-root sweep shapes up and down without phrasing, rests, or dynamics sounds like an exercise routine.",
+          "Ignoring Voice Leading: Leaping back to the root of every new chord rather than stepping smoothly to the closest chord tone makes your solos feel jarring and disjointed."
+        ]
+      },
+      {
+        "title": "Masters of Arpeggio Improvisation",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Joe Pass: The titan of solo jazz guitar; outlined complex harmonic changes with breathtaking elegance using broken arpeggios and walking bass lines.",
+          "Frank Gambale: The pioneer of modern sweep picking economy; revolutionized guitar technique by turning arpeggio sweeps into musical jazz/fusion phrasing.",
+          "Django Reinhardt: Gypsy jazz virtuoso who used blistering two-finger arpeggio runs and chromatic enclosures to carve blazing melodies over swing chords.",
+          "John Petrucci: Progressive metal icon known for razor-sharp, multi-octave 7th arpeggios and pristine sweep picking precision."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Arpeggio Workout",
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "items": [
+          "Block 1: Triad Inversion Cycling (5 min) - Pick a 3-string set (e.g. strings 3, 2, 1). Cycle through root, 1st, and 2nd inversions of C, F, and G triads.",
+          "Block 2: 7th Chord Voice Leading (5 min) - Play a ii-V-I progression (Dm7-G7-Cmaj7) using 7th arpeggios, strictly connecting to the nearest chord tone on each change.",
+          "Block 3: 3-String Sweep Speed Bursts (5 min) - Practice 3-string swept triads at 80 BPM, focusing on finger roll muting and perfectly synchronized pick push."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Improvisation Journey",
-    "description": "Arpeggio mastery is essential for sophisticated improvisation. Explore these related topics to deepen your harmonic understanding.",
+    "title": "Deepen Your Improvisation Journey",
+    "description": "Arpeggio mastery is the harmonic foundation of elite guitar soloing. Continue expanding your improvisational toolkit with these complementary masterclasses.",
     "gradientFrom": "from-orange-50",
-    "gradientTo": "to-red-50",
+    "gradientTo": "to-amber-50",
     "borderColor": "border-orange-200",
     "links": [
       {
-        "href": "/lessons/practice/improv/scales",
-        "title": "Scale Integration",
-        "description": "Combine arpeggios with scales for complete harmonic vocabulary",
-        "linkText": "Explore Scales",
-        "icon": "🎵",
+        "href": "/lessons/practice/improv/chord-tone-soloing",
+        "title": "Chord Tone Soloing",
+        "description": "Learn the harmonic hierarchy of roots, 3rds, 5ths, and 7ths across standard chord progressions.",
+        "linkText": "Explore Chord Tones",
+        "icon": "🎯",
         "hoverBorder": "hover:border-orange-400",
         "iconBg": "bg-orange-100",
         "iconHoverBg": "group-hover:bg-orange-200",
@@ -391,26 +397,41 @@
       {
         "href": "/lessons/practice/improv/target-notes",
         "title": "Target Notes",
-        "description": "Use arpeggio tones as strong harmonic destinations",
-        "linkText": "Explore Target Notes",
+        "description": "Master downbeat targeting, guide tones, and chromatic approach notes to anchor your arpeggios.",
+        "linkText": "Target Notes",
         "icon": "🎯",
+        "hoverBorder": "hover:border-amber-400",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      },
+      {
+        "href": "/lessons/practice/improv/scales",
+        "title": "Improvising with Scales",
+        "description": "Connect your arpeggios using single-string runs and fluid scale pathways across the entire fretboard.",
+        "linkText": "Explore Scales",
+        "icon": "🎵",
         "hoverBorder": "hover:border-red-400",
         "iconBg": "bg-red-100",
         "iconHoverBg": "group-hover:bg-red-200",
         "linkColor": "text-red-600",
         "linkHoverColor": "group-hover:text-red-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Arpeggio Articulation",
+    "items": [
+      {
+        "category": "High-Precision Guitar Pick",
+        "product": "Dunlop Jazz III Max-Grip Picks",
+        "reason": "The sharp tip, bevel, and stiff nylon feel provide exceptional control and note separation for sweep picking and arpeggio runs."
       },
       {
-        "href": "/lessons/practice/improv/phrasing",
-        "title": "Musical Phrasing",
-        "description": "Shape your arpeggio lines with expressive phrasing",
-        "linkText": "Explore Phrasing",
-        "icon": "🗣️",
-        "hoverBorder": "hover:border-orange-400",
-        "iconBg": "bg-orange-100",
-        "iconHoverBg": "group-hover:bg-orange-200",
-        "linkColor": "text-orange-600",
-        "linkHoverColor": "group-hover:text-orange-700"
+        "category": "Compressor Pedal",
+        "product": "Keeley Compressor Plus",
+        "reason": "Evens out string-to-string volume variations so swept arpeggio notes across strings speak with balanced, uniform punch."
       }
     ]
   }

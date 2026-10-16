@@ -2,421 +2,389 @@
   "slug": "target-notes",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Target Notes",
-    "subtitle": "Master the art of landing on strong chord tones and melodic destinations to create compelling, harmonically sophisticated solos.",
+    "pageTitle": "Target Notes Masterclass",
+    "subtitle": "Master the art of landing on strong chord tones, guide tones, and melodic destinations using chromatic approaches and enclosures.",
     "heroGradient": "bg-gradient-to-br from-purple-50 to-violet-100",
-    "heroTitle": "Target Notes",
-    "heroDescription": "Target notes are specific pitches that you intentionally aim for during improvisation. They serve as melodic destinations that create tension and resolution, giving your solos direction and harmonic coherence."
+    "heroTitle": "Target Notes Masterclass",
+    "heroDescription": "The defining hallmark of master improvisers—from Charlie Parker and Joe Pass to Larry Carlton and Grant Green—is intentionality. Rather than noodling blindly through scale patterns, elite soloists target specific harmonic destinations before they even pick the first note. In this masterclass, you will learn to navigate chord progressions by targeting 3rds and 7ths on strong beats, voice-lead smoothly across changes, and embellish your landings with chromatic approaches and bebop enclosures."
   },
   "guidelines": {
-    "title": "Theory Fundamentals",
+    "title": "The Architecture of Target Note Soloing",
     "columns": [
       {
-        "title": "What Are Target Notes?",
+        "title": "Core Mechanics of Melodic Targeting",
         "items": [
-          { "bulletColor": "text-purple-500", "text": "Harmonic anchors: Connect melody to chord changes" },
-          { "bulletColor": "text-purple-500", "text": "Melodic destinations: Give phrases clear direction" },
-          { "bulletColor": "text-purple-500", "text": "Tension creators: Build and release musical energy" }
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Downbeat Harmonic Gravity: Landing strong chord tones (especially the 3rd or Root) squarely on beats 1 and 3 instantly locks your solo into the rhythm section."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "The Magnetic 3rd & 7th: Guide tones dictate whether a chord is major, minor, or dominant; targeting them outlines the harmony without needing backing chords."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Chromatic Approaches: Leading into your destination from a half-step below or above generates irresistible forward momentum and release."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Bebop Enclosures: Surrounding a target pitch from above (diatonic) and below (chromatic) creates sophisticated, authentic jazz phrasing."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Rhythmic Anticipation: Striking your target note on the 'and' of beat 4 before the bar line pulls the listener forward into the coming chord change."
+          }
         ]
       },
       {
-        "title": "Why Use Target Notes?",
+        "title": "Strategic Fretboard Application",
         "items": [
-          { "bulletColor": "text-violet-500", "text": "Structure: Organize improvisation logically" },
-          { "bulletColor": "text-violet-500", "text": "Sophistication: Create professional-sounding solos" },
-          { "bulletColor": "text-violet-500", "text": "Harmonic awareness: Connect with chord changes" },
-          { "bulletColor": "text-violet-500", "text": "Melodic flow: Create smooth, logical lines" },
-          { "bulletColor": "text-violet-500", "text": "Jazz language: Essential for jazz improvisation" }
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Reverse Phrase Construction: Choose your landing note and beat first, then work backward to construct the scale or chromatic line leading up to it."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "CAGED Shape Visualization: Anchor every target note inside a familiar chord grip so you instantly recognize its harmonic function (1, 3, 5, or 7)."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Minimal Motion Voice Leading: Connect chord changes by identifying target notes that move by just a half-step or whole-step between adjacent chords."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Tension-Release Dynamics: Spend weak subdivisions on dissonant scale steps or chromatic passing tones so the target arrival feels profoundly satisfying."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Vocal Articulation: Use slides, slurs, and vibrato on target notes to emphasize arrival rather than treating every note with identical mechanical attack."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Musical Examples",
+      "title": "Foundational Target Notes & Voice Leading",
       "exercises": [
         {
           "number": 1,
-          "title": "Guide Tone Line Example",
-          "difficulty": "Intermediate",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "ii-V-I progression showing smooth connection of 3rds and 7ths. Guide tones are the 3rd and 7th of each chord, and they often move by small steps between chords, creating smooth voice leading.",
+          "title": "Downbeat Landing: Targeting 3rds Over ii-V-I",
+          "difficulty": "Beginner",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "The 3rd of each chord carries its fundamental emotional quality. In this 4-measure ii-V-I study in C major, practice landing squarely on the 3rd of each chord on beat 1: F on Dm7, B on G7, and E on Cmaj7. Notice how each chord change is immediately obvious to the listener even without a backing track.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Targets on Beat 1: F (b3 of Dm7, fret 6 string 2) ➔ B (3rd of G7, fret 4 string 3) ➔ E (3rd of Cmaj7, fret 5 string 2)"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
           "notation": {
-            "title": "Guide Tone Line: Dm7(F) - G7(F) - Cmaj7(E)",
-            "alphaTex": "3.1 3.1 3.1 | 3.2 3.2 3.2 | 3.2 3.2 3.2"
+            "title": "Targeting 3rds Across ii-V-I",
+            "alphaTex": "\\tempo 76 . \\ts 4 4 :4 6.2 :8 8.2 6.2 :4 7.3 5.3 | :4 4.3 :8 7.4 5.4 :4 4.4 5.4 | :4 5.2 :8 6.2 5.2 :4 5.3 7.3 | :1 5.3 |",
+            "staveTitle": "Targeting the 3rd on Beat 1 of Each Measure"
           },
           "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "Notice how the guide tones move smoothly between chords. This voice leading is the foundation of jazz improvisation.",
-            "tempo": "60 BPM"
+            "text": "Play along with a metronome at 76 BPM. Emphasize beat 1 with a confident pick stroke and subtle vibrato, letting the target 3rd ring clearly over the change.",
+            "tempo": "76 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Chord Tone Targeting",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Landing chord tones on strong beats (1 and 3) over C major chord. By targeting chord tones on strong beats, you ensure harmonic clarity even with scalar or chromatic passing tones in between.",
+          "title": "Guide Tone Voice Leading (7th Resolving to 3rd)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "In jazz, blues, and neo-soul harmony, the most potent voice leading occurs when the 7th of one chord resolves down by half-step to the 3rd of the next chord. Here, the 7th of Dm7 (C, fret 5 string 3) steps down a half-step to the 3rd of G7 (B, fret 4 string 3), and the 7th of G7 (F, fret 6 string 2) steps down to the 3rd of Cmaj7 (E, fret 5 string 2).",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Smooth Half-Step Connection: Dm7 (7th: C) ➔ G7 (3rd: B) | G7 (7th: F) ➔ Cmaj7 (3rd: E)"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
           "notation": {
-            "title": "Chord Tone Targeting: C(8) - G(8) - E(7) - C(10) over C Major",
-            "alphaTex": "8.6 10.6 8.6 7.5 | 5.6 7.5 8.6 10.6"
+            "title": "7th to 3rd Guide Tone Voice Leading",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :4 5.3 :8 7.3 5.3 :4 7.4 5.4 | :4 4.3 :8 5.3 4.3 :4 5.4 7.4 | :4 6.2 :8 8.2 6.2 :4 7.3 5.3 | :1 5.2 |",
+            "staveTitle": "Tracing the 7th ➔ 3rd Half-Step Voice Leading Path"
           },
           "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "Focus on landing the chord tones (root, 3rd, 5th) on beats 1 and 3. Fill the spaces between with scale tones or passing tones.",
-            "tempo": "70 BPM"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Types of Target Notes",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Chord Tones",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "The most stable and harmonically strong notes. Available notes: Root (1st), 3rd, 5th, 7th. Stability: High. Best usage: land on strong beats for harmonic clarity.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Chord tones are your safest landing spots. Start by targeting roots, then add 3rds, 5ths, and 7ths."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Guide Tones",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "3rd and 7th - the notes that define chord quality. These two notes tell you whether a chord is major, minor, dominant, etc. Available notes: 3rd (major/minor quality), 7th (tension and color). Stability: High. Best usage: create smooth voice leading between chords.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Guide tones create smooth voice leading. The 3rd of one chord often resolves by half-step to the 7th of the next chord."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Extensions",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Added notes that create color and sophistication. Available notes: 9th, 11th, 13th. Stability: Medium. Best usage: add on weaker beats for color and tension.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Extensions add color but should be used carefully. They work best on weaker beats and when they resolve to chord tones."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Approach Notes",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Notes that lead smoothly to target notes. Available notes: chromatic approaches, diatonic approaches, enclosures. Stability: Low. Best usage: create smooth melodic motion to targets.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Approach notes create momentum toward your targets. The tension of approach notes makes the resolution to chord tones more satisfying."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Targeting Techniques",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Strong Beat Landing",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Land chord tones on beats 1 and 3. Example: root on beat 1, 5th on beat 3. Benefits: harmonic clarity, stable foundation, clear structure.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "This is the most fundamental targeting technique. Master this before moving to more advanced approaches."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Guide Tone Lines",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Connect 3rds and 7ths between chords. Example: Dm7(F) to G7(F) to Cmaj7(E). Benefits: smooth voice leading, harmonic sophistication, jazz language.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Think of guide tones as your melodic backbone. They create the essential harmonic motion of your solo."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Enclosure Patterns",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Surround target notes from above and below. Example: target C: D-B-C or Bb-Db-C. Benefits: melodic sophistication, bebop language, smooth approaches.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Enclosures are a hallmark of bebop language. Practice approaching each chord tone from both above and below chromatically."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Delayed Resolution",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Create tension by delaying arrival at target. Example: land non-chord tone on beat 1, resolve on beat 2. Benefits: rhythmic interest, increased tension, modern sound.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Delayed resolution creates tension that makes the eventual resolution even more satisfying. Use sparingly for maximum effect."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Target Note Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Chord Tone Landing",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Practice landing specific chord tones on strong beats. Steps: 1. Choose a simple progression (C-Am-F-G). 2. Improvise freely but land the root on beat 1. 3. Repeat with 3rd, 5th, then 7th on beat 1. 4. Mix different chord tones randomly. 5. Add approach notes between targets.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Start slowly and focus on accuracy over speed. The goal is reliable landing on the target note at the right moment.",
-            "tempo": "60 BPM"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Guide Tone Lines",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Create smooth melodic lines using 3rds and 7ths. Steps: 1. Practice ii-V-I in major keys. 2. Connect 3rds and 7ths with step-wise motion. 3. Add passing tones between guide tones. 4. Apply to longer progressions. 5. Incorporate rhythm and phrasing.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Think of guide tones as your melodic backbone. Once you can play guide tone lines fluently, your jazz improvisation will sound professional.",
-            "tempo": "70 BPM"
-          }
-        },
-        {
-          "number": 3,
-          "title": "Approach Note Patterns",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Master various approaches to target notes. Steps: 1. Choose target notes (chord tones). 2. Practice chromatic approach from below. 3. Practice chromatic approach from above. 4. Use diatonic approaches (scale steps). 5. Create enclosure patterns (both sides).",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Combine different approach types for sophistication. Mix chromatic, diatonic, and enclosure approaches within the same phrase.",
+            "text": "Observe how smoothly the melody glides across the chord changes. Guide tone lines are the foundation of fluent bebop and modern guitar soloing.",
             "tempo": "80 BPM"
           }
         },
         {
-          "number": 4,
-          "title": "Rhythmic Targeting",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Control when and where target notes land rhythmically. Steps: 1. Plan target notes for specific beats. 2. Practice syncopated landings. 3. Use metric displacement. 4. Create rhythmic tension and release. 5. Apply to real musical contexts.",
+          "number": 3,
+          "title": "Chromatic Approach From Below",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Leading into your target note from a half-step below creates tension that releases immediately when you strike the target pitch on beat 1. In this study over Am - Dm - G - C, each measure ends with a chromatic pickup note that slides up one fret into the new chord's target note.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Pickup Formula: Play 1 half-step below on the 'and' of 4 ➔ slide into the target chord tone on beat 1"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
+          ],
+          "notation": {
+            "title": "Chromatic Approach From Below",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :2. 5.3 :8 7.3 4.3 | :2. 6.2 :8 8.2 5.2 | :2. 4.3 :8 5.3 3.3 | :1 5.2 |",
+            "staveTitle": "Half-Step Chromatic Pickup into Strong Beat Targets"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "Rhythm is as important as pitch in targeting. Where you land a target note rhythmically changes its entire effect.",
-            "tempo": "90 BPM"
+            "text": "Focus on the transition between bars. The chromatic note on the last eighth note should sound intentional, leaning into the target downbeat with momentum.",
+            "tempo": "82 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Approaches, Enclosures & Integration",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "Bebop Chromatic Enclosures (Above & Below)",
+          "difficulty": "Advanced",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "An enclosure frames your target note like a bullseye: you play one diatonic scale step above, followed by one chromatic half-step below, before finally resolving squarely onto your target note on the downbeat. This exercise applies enclosures to targets across Dm7, G7, and Cmaj7.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Enclosure Anatomy: Diatonic Above ➔ Chromatic Below ➔ Target Note Resolution"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
+          "notation": {
+            "title": "Bebop Chromatic Enclosure Study",
+            "alphaTex": "\\tempo 84 . \\ts 4 4 :4 5.3 :8 7.3 5.3 :4 8.2 5.2 | :4 6.2 :8 8.2 6.2 :4 5.3 3.3 | :4 4.3 :8 5.3 4.3 :4 6.2 4.2 | :1 5.2 |",
+            "staveTitle": "Framing Target Notes with Diatonic Above and Chromatic Below"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Keep alternate picking relaxed. Do not accent the approach notes—accent the target note when it lands on beat 1 for maximum harmonic punch.",
+            "tempo": "84 BPM"
+          }
+        },
+        {
+          "number": 5,
+          "title": "Double Chromatic Run to the 5th",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Targeting the 5th yields consonant, confident stability. In this exercise over C - F - G - C, two chromatic passing tones lead directly into the 5th of each chord on the downbeat, providing a classic swing and country-blues momentum.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Formula: Two half-steps below ➔ Strong landing on the 5th of the arriving chord"
+          },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Double Chromatic Approach to the 5th",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :4 5.4 :8 7.4 5.4 :4 2.3 3.3 | :4 5.3 :8 7.3 5.3 :4 4.3 6.3 | :4 7.3 :8 9.3 7.3 :4 3.4 4.4 | :1 5.4 |",
+            "staveTitle": "Two-Fret Chromatic Slide into the 5th"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Listen to the swagger of the chromatic passing tones. Because they are on weak beats, they do not clash with the harmony—they propel the listener toward the chord tone.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Rhythmic Anticipation: The '&' of 4 Push",
+          "difficulty": "Advanced",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Hitting your target note precisely on beat 1 is great for clarity, but master improvisers often anticipate the chord change by landing on the target note an eighth note early on the '&' of 4. This creates a syncopated 'push' that makes your lines feel modern and energetic.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Anticipation Rule: Strike the upcoming chord's target note on beat 4-and, holding it through beat 1"
+          },
+          "chordDiagrams": [
+            { "label": "Am7", "chord": "Am7" },
+            { "label": "D7", "chord": "D7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
+          "notation": {
+            "title": "Syncopated Anticipation Target Study",
+            "alphaTex": "\\tempo 86 . \\ts 4 4 :4 5.4 :8 7.4 5.4 :4 7.3 :8 5.3 4.3 | :4 4.3 :8 7.3 5.3 :4 4.3 :8 5.2 3.2 | :4 3.2 :8 5.2 3.2 :4 4.3 :8 6.3 5.3 | :1 5.3 |",
+            "staveTitle": "Anticipating Chord Tones on the '&' of Beat 4"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Lock in with the hi-hat. Anticipating a chord tone pulls the groove forward; practice tapping your foot on quarters while your pick hits the syncopated off-beat.",
+            "tempo": "86 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Master Study: Connecting Targets Across a Progression",
+          "difficulty": "Advanced",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "This culminating 4-measure etude synthesizes all targeting principles: guide tone voice leading, chromatic approach notes, and enclosures over Dm7 - G7 - Cmaj7 - Am7. Play through fluidly, feeling how every single note serves as either an arrival point or a springboard to the next chord.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Complete Synthesis: Guide tone voice leading + chromatic approaches + enclosures"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" },
+            { "label": "Am7", "chord": "Am7" }
+          ],
+          "notation": {
+            "title": "Master Target Note Etude",
+            "alphaTex": "\\tempo 88 . \\ts 4 4 :8 5.4 7.4 5.3 7.3 :4 6.2 :8 8.2 5.2 | :4 4.3 :8 5.3 4.3 :4 5.4 :8 6.2 4.2 | :4 5.2 :8 7.2 5.2 :4 5.3 :8 7.4 6.4 | :1 5.4 |",
+            "staveTitle": "Comprehensive 4-Bar Target Note Soloing Etude"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Record your rhythm chords into a looper pedal and solo this etude over them. Listen for how the chromatic embellishments dissolve into pure harmonic resolution.",
+            "tempo": "88 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Common Mistakes, Daily Practice & Inspiration",
+    "title": "Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Technical Issues to Avoid",
+        "title": "3 Mistakes That Kill Target Note Soloing",
         "colorBg": "bg-red-50",
         "colorBorder": "border-red-200",
         "colorTitle": "text-red-900",
         "colorText": "text-red-800",
         "items": [
-          "Wrong beat landing: Non-chord tones on strong beats",
-          "Ignoring harmony: Not connecting to chord changes",
-          "Mechanical approach: No musical feeling or phrasing",
-          "Same targets: Always using the same chord tones"
+          "Landing Non-Chord Tones on Beat 1: Striking a dissonant 4th or 9th without resolution on the downbeat makes your line sound clumsy rather than harmonically intentional.",
+          "Ignoring the 3rd: Over-relying on the root chord tone strips your phrases of emotional color. Target the 3rd to immediately reflect major or minor chord identity.",
+          "Unprepared Leaps: Jumping to a target note from wide, disconnected intervals without stepwise or chromatic preparation jars the listener's ear."
         ]
       },
       {
-        "title": "Musical Problems to Avoid",
-        "colorBg": "bg-red-50",
-        "colorBorder": "border-red-200",
-        "colorTitle": "text-red-900",
-        "colorText": "text-red-800",
+        "title": "Masters of Target Note Improvisation",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "No approach: Jumping to targets without preparation",
-          "Poor voice leading: Awkward melodic jumps",
-          "Overemphasis: Making every note a target",
-          "Lack of flow: Choppy, disconnected phrases"
+          "Charlie Parker: The pioneer of modern targeting; used chromatic approach notes and enclosures to navigate complex bebop cadences with supersonic precision.",
+          "Joe Pass: The consummate master of voice leading, outlining dense jazz chord progressions on solo guitar purely through 3rds, 7ths, and target resolutions.",
+          "Grant Green: Soulful hard-bop giant who blended blues inflections with laser-accurate guide tone landings on beats 1 and 3.",
+          "Larry Carlton: Steely Dan session legend renowned for hitting the sweet 3rd of every changing chord with glorious vocal sustain and tasteful slides."
         ]
       },
       {
-        "title": "20-Minute Target Note Workout",
+        "title": "The 15-Minute Daily Target Note Workout",
         "colorBg": "bg-purple-50",
         "colorBorder": "border-purple-200",
         "colorTitle": "text-purple-900",
         "colorText": "text-purple-800",
         "items": [
-          "Warm-up (5 min): Chord tone arpeggios, scale with emphasis on 1-3-5, simple target exercises",
-          "Guide Tones (7 min): Practice ii-V-I progressions, connect 3rds and 7ths, add passing tones",
-          "Approaches (5 min): Chromatic approaches, diatonic approaches, enclosure patterns",
-          "Application (3 min): Apply over jazz standards, focus on musical phrasing, record and evaluate"
-        ]
-      },
-      {
-        "title": "Masters of Target Notes",
-        "colorBg": "bg-violet-50",
-        "colorBorder": "border-violet-200",
-        "colorTitle": "text-violet-900",
-        "colorText": "text-violet-800",
-        "items": [
-          "Charlie Parker: Bebop master - chromatic approaches and guide tone lines. Every note has purpose and direction in harmonic context.",
-          "Wes Montgomery: Melodic sophistication - clear chord tone targeting with octave doubling. Simplicity and clarity can be more powerful than complexity.",
-          "Grant Green: Blues-jazz fusion - strong chord tone focus with bluesy inflection. Target notes work in any style when applied musically.",
-          "Pat Metheny: Modern jazz approach - extensions and sophisticated harmonic targeting. Target notes can create contemporary and fresh sounds."
+          "Block 1: Downbeat 3rd Targeting (5 min) - Pick any 2-chord vamp. Improvise freely using scales, but you MUST hit the 3rd of each chord squarely on beat 1.",
+          "Block 2: Half-Step Approaches (5 min) - Lead into each target note by playing one fret below on the eighth note immediately preceding the chord change.",
+          "Block 3: Bebop Enclosure Practice (5 min) - Practice surrounding target chord tones with one diatonic scale step above and one chromatic step below before landing."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Improvisation Journey",
-    "description": "Target note mastery is the key to harmonically sophisticated improvisation. Explore these related topics to deepen your understanding.",
+    "title": "Deepen Your Improvisation Journey",
+    "description": "Target note mastery unlocks professional phrasing and voice leading. Continue expanding your improvisational toolkit with these essential masterclasses.",
     "gradientFrom": "from-purple-50",
     "gradientTo": "to-violet-50",
     "borderColor": "border-purple-200",
     "links": [
       {
-        "href": "/lessons/practice/improv/scales",
-        "title": "Scale Improvisation",
-        "description": "Master scales for melodic freedom",
-        "linkText": "Explore Scales",
-        "icon": "🎵",
+        "href": "/lessons/practice/improv/chord-tone-soloing",
+        "title": "Chord Tone Soloing",
+        "description": "Learn the complete harmonic hierarchy of roots, 3rds, 5ths, and 7ths across standard chord progressions.",
+        "linkText": "Explore Chord Tones",
+        "icon": "🎯",
         "hoverBorder": "hover:border-purple-400",
         "iconBg": "bg-purple-100",
         "iconHoverBg": "group-hover:bg-purple-200",
@@ -424,11 +392,11 @@
         "linkHoverColor": "group-hover:text-purple-700"
       },
       {
-        "href": "/lessons/practice/improv/arpeggios",
-        "title": "Arpeggio Improvisation",
-        "description": "Use broken chords melodically",
-        "linkText": "Explore Arpeggios",
-        "icon": "🎼",
+        "href": "/lessons/practice/improv/phrasing",
+        "title": "Musical Phrasing",
+        "description": "Infuse your targeted lines with breath, rhythmic space, dynamic nuance, and vocal articulation.",
+        "linkText": "Master Phrasing",
+        "icon": "🗣️",
         "hoverBorder": "hover:border-violet-400",
         "iconBg": "bg-violet-100",
         "iconHoverBg": "group-hover:bg-violet-200",
@@ -436,16 +404,31 @@
         "linkHoverColor": "group-hover:text-violet-700"
       },
       {
-        "href": "/lessons/practice/improv/phrasing",
-        "title": "Musical Phrasing",
-        "description": "Shape your musical sentences",
-        "linkText": "Explore Phrasing",
-        "icon": "🗣️",
-        "hoverBorder": "hover:border-purple-400",
-        "iconBg": "bg-purple-100",
-        "iconHoverBg": "group-hover:bg-purple-200",
-        "linkColor": "text-purple-600",
-        "linkHoverColor": "group-hover:text-purple-700"
+        "href": "/lessons/practice/improv/scales",
+        "title": "Improvising with Scales",
+        "description": "Connect your target destinations using horizontal single-string runs and fluid scale pathways.",
+        "linkText": "Explore Scales",
+        "icon": "🎵",
+        "hoverBorder": "hover:border-indigo-400",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Target Note Practice",
+    "items": [
+      {
+        "category": "Looper Pedal",
+        "product": "TC Electronic Ditto+ Looper",
+        "reason": "Recording your own rhythm changes allows you to test target notes in real time and verify that your landings lock into the chord changes."
+      },
+      {
+        "category": "Compressor Pedal",
+        "product": "Keeley Compressor Plus",
+        "reason": "Smooths note dynamics so that soft chromatic approach notes remain clear and audible leading into accented target chord tones."
       }
     ]
   }

@@ -2,134 +2,95 @@
   "slug": "motif-development",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Motif Development",
-    "subtitle": "Build compelling solos from small musical ideas through classical composition techniques and creative transformation.",
-    "heroGradient": "bg-gradient-to-br from-orange-50 to-red-100",
-    "heroTitle": "Motif Development",
-    "heroDescription": "Transform simple musical ideas into compelling solos through classical composition techniques. Learn how great composers and improvisers build entire pieces from tiny musical seeds."
+    "pageTitle": "Motif Development Masterclass",
+    "subtitle": "Transform small 3-note melodic seeds into full-length, unforgettable guitar solos using compositional variation techniques.",
+    "heroGradient": "bg-gradient-to-br from-amber-50 to-orange-100",
+    "heroTitle": "Motif Development Masterclass",
+    "heroDescription": "The greatest guitar solos in history—from Jimmy Page's 'Stairway to Heaven' to David Gilmour's 'Time'—are not random assortments of disconnected licks. They are masterclasses in thematic development. A motif is a short musical DNA strand (often just 3 or 4 notes) that you introduce, repeat, and creatively transform across an entire solo. By mastering variation techniques such as rhythmic displacement, sequence transposition, melodic inversion, and rhythmic fragmentation, you will never run out of ideas on stage and your improvisation will sound composed, cinematic, and profoundly memorable."
   },
   "guidelines": {
-    "title": "Theory Fundamentals",
+    "title": "The Architecture of Thematic Improvisation",
     "columns": [
       {
-        "title": "What is a Motif?",
+        "title": "The DNA of a Great Motif",
         "items": [
-          { "bulletColor": "text-orange-500", "text": "Memorable: Easy to recognize when it returns" },
-          { "bulletColor": "text-orange-500", "text": "Simple: Not too complex to develop effectively" },
-          { "bulletColor": "text-orange-500", "text": "Distinctive: Has unique character or personality" },
-          { "bulletColor": "text-orange-500", "text": "Flexible: Works in different musical contexts" }
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Simplicity is Power: 3 to 5 notes with a clear, hummable contour. If an audience member cannot whistle your motif after one listen, it is too complex."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Distinct Rhythmic Silhouette: A strong syncopated or dotted rhythm ensures your motif remains recognizable even when you change the pitches."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "The Rule of Three: State the motif (Statement), repeat it to confirm familiarity (Reinforcement), and transform it on the third repetition (Climax)."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Harmonic Adaptability: A versatile motif can be transposed to outline different chords across the progression without losing its core identity."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Cure for Fretboard Wandering: Tethers your solo to an emotional anchor, giving your audience a clear narrative thread to follow."
+          }
         ]
       },
       {
-        "title": "Why Use Motif Development?",
+        "title": "Core Transformation Techniques",
         "items": [
-          { "bulletColor": "text-red-500", "text": "Unity: Creates coherence in long solos" },
-          { "bulletColor": "text-red-500", "text": "Recognition: Listeners can follow the musical story" },
-          { "bulletColor": "text-red-500", "text": "Endless Material: One idea = many variations" },
-          { "bulletColor": "text-red-500", "text": "Professional Sound: Compositional approach to improv" }
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Sequence Transposition: Shift the entire motif up or down scale steps while maintaining the exact same rhythmic fingerprint."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Rhythmic Displacement: Start the motif on a different beat (e.g. on beat 2 or the offbeat of 3) to create unexpected syncopated groove."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Melodic Inversion: Flip the pitch direction upside down—intervals that ascended now descend by the same degree."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Fragmentation & Stutter: Take just the first two notes of the motif and loop them rapidly to build dramatic pressure before the release."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Octave Leaps: Restate an intimate low-register motif two octaves higher on the top strings to simulate an explosion of emotion."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Musical Motifs",
+      "title": "Foundational Transformation Studies",
       "exercises": [
         {
           "number": 1,
-          "title": "Rhythmic Motifs",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Short rhythmic patterns that can be repeated and varied. Characteristics: strong rhythmic identity, works with different pitches, groove-oriented. Examples: syncopated rhythm patterns, dotted note rhythms, triplet-based patterns.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Rhythmic motifs are the easiest to start with. Clap or tap a rhythm before adding pitches."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Melodic Motifs",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Short pitch sequences that create melodic identity. Characteristics: memorable pitch contour, usually 2-5 notes, easy to recognize. Examples: scale fragments, interval patterns, chromatic approaches.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Keep melodic motifs short and singable. If you can hum it, it's a good motif."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Intervallic Motifs",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Based on specific interval relationships. Characteristics: consistent interval pattern, transposable, harmonic foundation. Examples: perfect 4ths, major 3rds, minor 7ths, tritones.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Intervallic motifs are highly transposable. Practice moving them through different keys and positions."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Hybrid Motifs",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine rhythmic and melodic elements. Characteristics: both pitch and rhythm identity, more complex to develop, very memorable. Examples: signature licks, famous riffs, classical themes.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Hybrid motifs are the most memorable but also the most challenging to develop. Master simpler types first."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Classical Development Techniques",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Sequence",
+          "title": "The 3-Note Seed & The Rule of Three",
           "difficulty": "Beginner",
           "borderColor": "border-orange-200",
           "difficultyBg": "bg-orange-100",
           "difficultyText": "text-orange-700",
           "numberBg": "bg-orange-100",
           "numberText": "text-orange-600",
-          "description": "Repeat the motif at different pitch levels. Method: move motif up or down by consistent intervals. Example: play motif on different scale degrees. Musical effect: creates momentum and harmonic movement.",
+          "description": "The fundamental law of musical storytelling is 'The Rule of Three': State it once to introduce it (Bar 1), repeat it once to establish memory (Bar 2), and vary it on the third pass to launch into a melodic climax (Bar 3). In this study, the simple 3-note seed C - D - E is repeated and then escalated into a soaring high A.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Formula: Statement (Bar 1) ➔ Reinforcement (Bar 2) ➔ Climactic Transformation (Bars 3-4)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "The Rule of Three: Statement, Echo & Climax",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :8 5.3 7.3 :4 5.2 :2 r.2 | :8 5.3 7.3 :4 8.2 :8 5.2 8.2 :4 5.1 | :1 5.1 |",
+            "staveTitle": "Statement (Bar 1), Echo (Bar 2), Climax (Bars 3-4)"
+          },
           "practiceNotes": {
             "colorBg": "bg-orange-50",
             "colorBorder": "border-orange-200",
@@ -137,268 +98,297 @@
             "colorText": "text-orange-800",
             "colorAccent": "bg-orange-100",
             "title": "Practice Notes",
-            "text": "Sequence is the most common and accessible development technique. Start here."
+            "text": "Count the half-note rests in Bars 1 and 2. Notice how giving the audience time to remember the motif in Bar 2 makes the explosion into Bar 3 ten times more satisfying.",
+            "tempo": "80 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Inversion",
+          "title": "Sequence Transposition (Moving Up the Ladder)",
           "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Flip the melodic direction of intervals. Method: where motif goes up, make it go down (and vice versa). Example: C-E-D becomes C-Ab-Bb. Musical effect: maintains character while adding variety.",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Sequence transposition moves the exact same melodic shape up or down the scale. In this study, the 3-note motif (two eighths + quarter note) begins on C (fret 5, G string), transposes up a step to D (fret 7), steps up again to E (fret 9), and culminates on high A (fret 10, B string).",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Sequence: Motif on C (Bar 1) ➔ Motif on D (Bar 2) ➔ Motif on E (Bar 3) ➔ Peak on A (Bar 4)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Sequence Transposition Ascending the Neck",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :8 7.3 9.3 :4 8.2 :2 r.2 | :8 9.3 7.2 :4 10.2 :2 r.2 | :8 10.2 12.2 :4 10.1 :2 10.1 |",
+            "staveTitle": "Ascending Stepwise Sequence Across 4 Bars"
+          },
           "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
             "title": "Practice Notes",
-            "text": "Inversion maintains the rhythmic identity of your motif while creating a mirror-image melody."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Augmentation",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Make note values longer (usually double). Method: change quarters to halves, eighths to quarters. Example: fast motif becomes slow and stately. Musical effect: changes character from active to reflective.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Augmentation is powerful for creating contrast and building towards climactic moments."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Diminution",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Make note values shorter (usually half). Method: change quarters to eighths, halves to quarters. Example: slow motif becomes quick and energetic. Musical effect: increases intensity and urgency.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Diminution creates excitement and forward motion. Use it to build energy in your solos."
-          }
-        },
-        {
-          "number": 5,
-          "title": "Fragmentation",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Use only part of the original motif. Method: take 1-2 notes from longer motif. Example: use just the first two notes repeatedly. Musical effect: creates focus and builds tension.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Fragmentation is particularly effective for building tension before a climax or resolution."
-          }
-        },
-        {
-          "number": 6,
-          "title": "Extension",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Add notes to the beginning or end. Method: extend motif with scales or arpeggios. Example: add approach tones or passing notes. Musical effect: expands ideas while maintaining core identity.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Extension lets you gradually evolve a motif into longer, more complex phrases."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Practice Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Motif Creation Workshop",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Learn to create simple, memorable motifs. Steps: 1. Choose 3-4 notes from pentatonic scale. 2. Create a simple rhythm (2-4 beats). 3. Play your motif 4 times exactly. 4. Rate it: Is it memorable? Interesting? 5. Refine until you have a strong motif.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "The best motifs are simple but distinctive. Aim for something you can hum after hearing it once.",
-            "tempo": "70 BPM"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Development Technique Practice",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Apply classical development techniques systematically. Steps: 1. Start with one simple motif. 2. Apply sequence: move up by steps. 3. Try inversion: flip melodic direction. 4. Practice augmentation: make notes longer. 5. Combine 2-3 techniques together.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Practice each technique separately before combining. Master one at a time.",
+            "text": "Keep the rhythmic attack identical on each pass. The listener recognizes the familiar rhythmic container as it carries them higher up the fretboard.",
             "tempo": "80 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Complete Solo Construction",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Build entire solos from one motif. Steps: 1. Create one strong 2-3 note motif. 2. Develop 8 variations using different techniques. 3. Arrange variations into 16-32 bar solo. 4. Practice over chord progressions. 5. Record and analyze the coherence.",
+          "title": "Rhythmic Displacement (The Offbeat Groove)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "Rhythmic displacement keeps the notes identical but shifts where the phrase begins relative to the beat. In Bar 1, the motif lands squarely on beat 1. In Bar 2, it is delayed to beat 2. In Bar 3, it enters unexpectedly on the 'and' of beat 2, creating sophisticated syncopation.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Placement Shift: Starts on Beat 1 (Bar 1) ➔ Starts on Beat 2 (Bar 2) ➔ Starts on 'And' of 2 (Bar 3)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "D", "chord": "D" }
+          ],
+          "notation": {
+            "title": "Rhythmic Displacement of a 3-Note Motif",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :4 r.4 :8 5.3 7.3 :4 5.2 :4 r.4 | :2 r.2 :8 r.8 5.3 7.3 5.2 | :1 5.2 |",
+            "staveTitle": "Displacing the Motif Across Different Beats"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
             "title": "Practice Notes",
-            "text": "Great solos tell stories with beginning, middle, and end. Plan your variations for maximum drama.",
+            "text": "Tap your foot firmly on beats 1, 2, 3, and 4. Notice how shifting where the motif enters completely alters the groove and prevents the phrase from feeling predictable.",
+            "tempo": "85 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Thematic Variations & Performance",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Melodic Inversion (Flipping the Contour)",
+          "difficulty": "Advanced",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Inversion is a classical technique where the pitch contour is flipped upside down. If the original motif steps up (C → D → E in Bar 1), the inverted motif steps down by the same interval (E → D → C in Bar 2). This creates instant mirror symmetry that sounds sophisticated and balanced.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Contour: Ascending C-D-E (Bar 1) answered by Descending E-D-C (Bar 2)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Em", "chord": "Em" }
+          ],
+          "notation": {
+            "title": "Melodic Inversion: Upward vs Downward Contour",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :8 5.2 7.3 :4 5.3 :2 r.2 | :8 5.3 7.3 :4 5.2 :8 5.2 7.3 :4 5.3 | :1 7.4 |",
+            "staveTitle": "Ascending Statement (Bar 1) & Inverted Answer (Bar 2)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Observe how Bar 2 sounds like the natural physical answer to Bar 1. Inversion is the secret weapon used by classical masters and sophisticated jazz-rock soloists.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "Fragmentation & Stutter (Building to Climax)",
+          "difficulty": "Advanced",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Fragmentation takes a small sliver of the motif (just the first two notes, C and D) and repeats it with rapid, stuttering rhythmic urgency. This builds intense harmonic tension before releasing into a blazing pentatonic run to the high root.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Tension Build: Full Motif (Bar 1) ➔ 2-Note Stutter Loop (Bar 2) ➔ Climax Run (Bars 3-4)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Motif Fragmentation and Tension Build",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :8 5.3 7.3 5.3 7.3 5.3 7.3 5.3 7.3 | :8 5.3 7.3 5.2 8.2 5.1 8.1 5.1 8.1 | :1 5.1 |",
+            "staveTitle": "Motif Fragment Repeated into Climactic Pentatonic Run"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "During the repeated two-note stutter in Bar 2, gradually increase your pick volume and lean into the beat to make the tension peak feel overwhelming before the release.",
             "tempo": "90 BPM"
           }
         },
         {
-          "number": 4,
-          "title": "Genre-Specific Application",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Adapt motif development to different musical styles. Steps: 1. Choose a specific genre (blues, jazz, rock). 2. Study motif use in that genre. 3. Create genre-appropriate motifs. 4. Apply development techniques stylistically. 5. Practice over typical chord progressions.",
+          "number": 3,
+          "title": "Octave Transposition (Low Growl to High Scream)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Restating an existing motif in a drastically different register changes its emotional temperature completely. In Bar 1, the motif is played down low on the 6th and 5th strings with a dark, throaty bite. In Bar 3, the exact same motif jumps two octaves up to strings 1 and 2, delivering a piercing, triumphant climax.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Contrast: Bass Register (strings 6-5) ➔ Middle Register (strings 3-2) ➔ High Register (strings 2-1)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "Octave Displacement Across Three Registers",
+            "alphaTex": ":8 5.6 7.6 :4 5.5 :2 r.2 | :8 5.3 7.3 :4 5.2 :2 r.2 | :8 10.2 12.2 :4 10.1 :2 r.2 | :1 10.1 |",
+            "staveTitle": "Low Bass Statement ➔ Mid-Range Echo ➔ High-Register Climax"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Each genre has its own motif development conventions. Study your favorite players to understand genre-specific approaches."
+            "text": "Ensure your left-hand position shifts are crisp. Switch from neck pickup on the low statement to bridge pickup on the high scream for maximum sonic impact.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 4,
+          "title": "The Master Motivic Solo Etude",
+          "difficulty": "Advanced",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "A complete, cohesive 4-bar performance solo demonstrating the pinnacle of motif development. The initial 3-note theme is introduced in Bar 1, sequenced up the scale in Bar 2, fragmented into driving repeated jabs in Bar 3, and resolved with majestic singing vibrato on Bar 4.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Full Compositional Solo: Seed ➔ Sequence ➔ Fragmentation ➔ Resolution"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" },
+            { "label": "Am", "chord": "Am" }
+          ],
+          "notation": {
+            "title": "Master Thematic Solo Etude",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :2 r.2 | :8 7.3 9.3 :4 8.2 :2 r.2 | :8 8.2 10.2 8.2 10.2 :4 12.1 10.1 | :1 10.1 |",
+            "staveTitle": "Complete Thematic Development in 4 Measures"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Notice how this 4-bar solo sounds like an authored, classic rock song melody rather than an improvised exercise. That is the transformative superpower of motif development.",
+            "tempo": "80 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Daily Practice Routine & Inspiration",
+    "title": "Critical Pitfalls, Pro Insights & Practice Routines",
     "items": [
       {
-        "title": "Phase 1: Creation (5 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Create 3 simple motifs (2-4 notes each)",
-          "Use different scale patterns",
-          "Include rhythmic and melodic motifs",
-          "Test for memorability"
-        ]
-      },
-      {
-        "title": "Phase 2: Development (10 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Apply 2-3 development techniques",
-          "Try sequence and inversion first",
-          "Practice augmentation/diminution",
-          "Combine techniques creatively"
-        ]
-      },
-      {
-        "title": "Phase 3: Integration (10 mins)",
-        "colorBg": "bg-orange-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "items": [
-          "Build complete 8-16 bar solos",
-          "Use one motif throughout",
-          "Practice over chord progressions",
-          "Record and analyze results"
-        ]
-      },
-      {
-        "title": "Famous Examples in Music",
+        "title": "3 Mistakes That Kill Motif Development",
         "colorBg": "bg-red-50",
         "colorBorder": "border-red-200",
         "colorTitle": "text-red-900",
         "colorText": "text-red-800",
         "items": [
-          "Beethoven - Symphony No. 5: Four-note opening motif (da-da-da-DUM) appears in various forms throughout entire symphony",
-          "Chuck Berry - Johnny B. Goode: Opening guitar riff with variations appearing throughout the song with rhythmic and melodic changes",
-          "John Coltrane - Giant Steps: Descending major third patterns with complex harmonic sequences and rhythmic variations",
-          "Led Zeppelin - Black Dog: Rhythmic riff motif appears in different registers and with different backing harmonies"
+          "The 'Idea Overload' Trap: Introducing a brand new melodic lick every two measures. The audience cannot form an emotional bond with an idea that disappears immediately.",
+          "Exact Carbon-Copy Looping: Repeating a motif four times with zero variation. Repetition without transformation turns a melody into an annoying broken record.",
+          "Losing the Rhythmic Silhouette: Changing both the notes and the rhythm simultaneously, completely severing the listener's recognition of the motif."
+        ]
+      },
+      {
+        "title": "Masters of Motif Development",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Jimmy Page ('Stairway to Heaven', 'Since I've Been Loving You'): Takes simple 3-note pentatonic fragments and sequences them up the neck with relentless emotional escalation.",
+          "David Gilmour ('Time', 'Shine On You Crazy Diamond'): Anchors entire landmark solos around simple four-note themes that return like familiar refrains.",
+          "Sonny Rollins ('St. Thomas'): The historic jazz king of motivic improvisation, spinning ten minutes of brilliant soloing from a single calypso rhythmic seed.",
+          "Ludwig van Beethoven (Symphony No. 5): Built an entire iconic 40-minute orchestral symphony from a single 4-note motif ('da-da-da-dum')."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Motif Workout",
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "items": [
+          "Phase 1: 3-Note Micro-Improv (5 min) - Pick only 3 notes (e.g. A, C, D). Improvise for 5 minutes using only those 3 notes by varying strictly rhythm, dynamics, and articulation.",
+          "Phase 2: Sequence Transposition Mapping (5 min) - Take your 3-note seed and practice sequencing it through the 5 pentatonic box positions up the fretboard.",
+          "Phase 3: The 8-Bar Story Solo (5 min) - State the motif in Bar 1, vary it in Bar 3, fragment it in Bar 5, and resolve it triumphantly in Bar 7."
         ]
       }
     ]
   },
   "journeySection": {
     "title": "Continue Your Improvisation Journey",
-    "description": "Motif development is a cornerstone of sophisticated improvisation. Explore these related topics to deepen your understanding.",
-    "gradientFrom": "from-orange-50",
-    "gradientTo": "to-red-50",
-    "borderColor": "border-orange-200",
+    "description": "Motif development turns soloists into musical composers. Expand your soloing architecture with these companion masterclasses.",
+    "gradientFrom": "from-amber-50",
+    "gradientTo": "to-orange-50",
+    "borderColor": "border-amber-200",
     "links": [
+      {
+        "href": "/lessons/practice/improv/call-response",
+        "title": "Call & Response",
+        "description": "Master musical dialogue, antecedent questions, and authoritative consequent answers.",
+        "linkText": "Master Call & Response",
+        "icon": "🗣️",
+        "hoverBorder": "hover:border-amber-400",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      },
       {
         "href": "/lessons/practice/improv/phrasing",
         "title": "Musical Phrasing",
-        "description": "Shape your motifs with natural, expressive phrasing",
+        "description": "Shape complete musical sentences with vocal cadence, breath, and dynamic contour.",
         "linkText": "Explore Phrasing",
         "icon": "🎵",
         "hoverBorder": "hover:border-orange-400",
@@ -408,28 +398,31 @@
         "linkHoverColor": "group-hover:text-orange-700"
       },
       {
-        "href": "/lessons/practice/improv/call-response",
-        "title": "Call & Response",
-        "description": "Use motifs in conversational musical dialogue",
-        "linkText": "Explore Call & Response",
-        "icon": "🔁",
-        "hoverBorder": "hover:border-red-400",
-        "iconBg": "bg-red-100",
-        "iconHoverBg": "group-hover:bg-red-200",
-        "linkColor": "text-red-600",
-        "linkHoverColor": "group-hover:text-red-700"
+        "href": "/lessons/practice/improv/target-notes",
+        "title": "Target Notes",
+        "description": "Anchor your motivic variations by landing on active chord tones on strong beats.",
+        "linkText": "Hit Target Notes",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-amber-400",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Motif Practice",
+    "items": [
+      {
+        "category": "Loop Station",
+        "product": "Ditto X2 Looper / Boss RC-5",
+        "reason": "Recording a 2-chord rhythm loop lets you test motif variations and transpositions over a steady harmonic canvas."
       },
       {
-        "href": "/lessons/practice/improv/rhythm",
-        "title": "Rhythmic Variation",
-        "description": "Develop rhythmic motifs with sophisticated timing",
-        "linkText": "Explore Rhythm",
-        "icon": "🥁",
-        "hoverBorder": "hover:border-orange-400",
-        "iconBg": "bg-orange-100",
-        "iconHoverBg": "group-hover:bg-orange-200",
-        "linkColor": "text-orange-600",
-        "linkHoverColor": "group-hover:text-orange-700"
+        "category": "Audio Recorder",
+        "product": "Zoom H1n / Smartphone Voice Memos",
+        "reason": "Listening back to your solo recordings is the only reliable way to check whether your motif was clear and memorable."
       }
     ]
   }

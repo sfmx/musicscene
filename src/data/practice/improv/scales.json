@@ -2,239 +2,95 @@
   "slug": "scales",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Improvising with Scales",
-    "subtitle": "Master the art of using scales as melodic foundations and harmonic roadmaps for compelling improvisation.",
+    "pageTitle": "Improvising with Scales Masterclass",
+    "subtitle": "Master the art of breaking out of static box shapes, connecting positions horizontally, and blending major and minor scales for melodic fluency.",
     "heroGradient": "bg-gradient-to-br from-green-50 to-emerald-100",
-    "heroTitle": "Improvising with Scales",
-    "heroDescription": "Scales are the melodic vocabulary of improvisation. Learn to use major, minor, modal, and exotic scales as foundations for creating harmonically rich and emotionally compelling solos."
+    "heroTitle": "Improvising with Scales Masterclass",
+    "heroDescription": "Scales are often taught as rigid fretboard boxes and mechanical finger exercises. But to master improvisers like David Gilmour, B.B. King, Eric Johnson, and Allan Holdsworth, scales are an expressive emotional vocabulary. In this masterclass, you will learn to break free from the 'box trap' by moving horizontally along single strings, playing melodic intervals of 3rds, mastering 3-note-per-string modern legato pathways, and blending sweet Major Pentatonic with gritty Minor Blues."
   },
   "guidelines": {
-    "title": "Theory Fundamentals",
+    "title": "The Architecture of Scale Improvisation",
     "columns": [
       {
-        "title": "Scales as Melodic Vocabulary",
+        "title": "Breaking Free From the Static Box Trap",
         "items": [
-          { "bulletColor": "text-green-500", "text": "Harmonic Foundation: Scales relate to underlying chords" },
-          { "bulletColor": "text-green-500", "text": "Emotional Character: Each scale evokes different feelings" },
-          { "bulletColor": "text-green-500", "text": "Cultural Context: Scales carry geographical and stylistic associations" },
-          { "bulletColor": "text-green-500", "text": "Technical Framework: Scales provide finger patterns and positions" }
+          {
+            "bulletColor": "text-green-500",
+            "text": "Horizontal vs Vertical Phrasing: Playing along a single string unlocks vocal phrasing and forces you to hear intervals rather than rely on muscle-memory fret grips."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Intervals Over Dots: Identify each note in the scale by its harmonic function (Root, b3, 3rd, 4th, b5, 5th, 7th) so every note you choose has an intentional flavor."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Major & Minor Blues Hybridization: Blending sweet Major Pentatonic (1, 2, 3, 5, 6) with gritty Minor Blues (1, b3, 4, b5, 5, b7) creates the iconic Allman Brothers and Clapton sound."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "3-Note-Per-String Modern Fluidity: Standardizing three notes across every string enables rapid economy picking, smooth legato slides, and effortless multi-octave runs."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Melodic Skips & Broken Intervals: Practicing scales in 3rds or 4ths transforms scalar runs into singing melodies that keep the listener constantly engaged."
+          }
         ]
       },
       {
-        "title": "Choosing the Right Scale",
+        "title": "Strategic Fretboard Application",
         "items": [
-          { "bulletColor": "text-emerald-500", "text": "Chord Function: Choose scales that support the harmony" },
-          { "bulletColor": "text-emerald-500", "text": "Genre Style: Different genres favor different scales" },
-          { "bulletColor": "text-emerald-500", "text": "Emotional Goal: Select scales for their expressive qualities" },
-          { "bulletColor": "text-emerald-500", "text": "Technical Comfort: Use scales you can play fluently" }
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The Sliding Diagonal Highway: Use your index and ring fingers to slide between CAGED positions on strings 4, 3, and 2 to traverse the entire fretboard seamlessly."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The B.B. King Box: Anchoring your index finger on the root on string 2 (fret 10 in A) opens up legendary vocal bends and sweet major 6th resolutions."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Chord-Scale Harmony Matching: Play sweet major pentatonic over I chords, and switch to gritty minor pentatonic or Dorian on IV chords for dramatic blues tension."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The Blue Note Pivot: The b5 passing tone creates instant blues tension; always slide or hammer through it to resolve into the 4th or 5th."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Rhythmic & Articulation Variety: Avoid mechanical streams of equal 8th notes; mix staccato pick strokes, wide finger vibrato, slides, and pauses."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Scale Categories",
+      "title": "Horizontal Freedom, Intervals & Position Shifting",
       "exercises": [
         {
           "number": 1,
-          "title": "Major Family",
+          "title": "Single-String Horizontal Freedom: The G Major Highway",
           "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Bright, stable scales perfect for happy and uplifting sounds. Includes: Major Scale (Ionian), Dorian Mode, Phrygian Mode, Lydian Mode, Mixolydian Mode. Characteristics: bright tonality, strong resolution, versatile across genres.",
-          "practiceNotes": {
+          "description": "Playing up and down a single string immediately destroys the habit of mindlessly running up and down box patterns. In this 4-measure study along the B (2nd) string in G major, practice gliding across all scale degrees: B (open), C (fret 1), D (fret 3), E (fret 5), F# (fret 7), G (fret 8), A (fret 10), and B (fret 12).",
+          "patternNote": {
             "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
             "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Best For",
-            "text": "Pop music, Country, Folk, Rock choruses. The major family is the foundation of Western music harmony."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Minor Family",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Darker, more emotional scales for introspective and dramatic music. Includes: Natural Minor, Harmonic Minor, Melodic Minor, Aeolian Mode, Locrian Mode. Characteristics: darker tonality, emotional depth, complex harmonic possibilities.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Best For",
-            "text": "Ballads, Jazz, Progressive rock, Classical. Minor scales add emotional depth and dramatic tension to your playing."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Pentatonic Scales",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Five-note scales that sound great in virtually any musical context. Includes: Major Pentatonic, Minor Pentatonic, Blues Scale, Japanese Pentatonic. Characteristics: always sounds good, easy to memorize, cross-cultural appeal.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Best For",
-            "text": "Blues, Rock solos, Country, World music. Pentatonic scales are the most universally useful scales for improvisation."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Exotic Scales",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Unique scales from world music traditions and modern composition. Includes: Harmonic Major, Hungarian Minor, Arabian Scale, Whole Tone, Diminished. Characteristics: distinctive sound, cultural flavors, modern harmonies.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Best For",
-            "text": "Jazz fusion, World music, Progressive styles, Film scoring. Exotic scales create unique sonic landscapes."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Scale Application Techniques",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Chord-Tone Targeting",
-          "difficulty": "Intermediate",
-          "borderColor": "border-emerald-200",
-          "difficultyBg": "bg-emerald-100",
-          "difficultyText": "text-emerald-700",
-          "numberBg": "bg-emerald-100",
-          "numberText": "text-emerald-600",
-          "description": "Emphasize notes that belong to the underlying chord. Method: land on chord tones (1, 3, 5, 7) on strong beats. Example: over Cmaj7, emphasize C, E, G, B from C major scale. Musical effect: creates harmonic clarity and sophistication.",
-          "practiceNotes": {
-            "colorBg": "bg-emerald-50",
-            "colorBorder": "border-emerald-200",
-            "colorTitle": "text-emerald-900",
-            "colorText": "text-emerald-800",
-            "colorAccent": "bg-emerald-100",
-            "title": "Musical Effect",
-            "text": "Creates harmonic clarity and sophistication. This technique bridges the gap between scales and arpeggios."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Scalar Runs",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Play consecutive scale notes for smooth melodic lines. Method: connect chord tones with stepwise motion. Example: C-D-E-F-G ascending run in C major. Musical effect: provides fluid, connected sound.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Musical Effect",
-            "text": "Provides fluid, connected sound. Be careful not to overuse scalar runs - they can sound mechanical if not phrased musically."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Scale Patterns",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Use recurring patterns within scales for rhythmic interest. Method: play scales in groups (3rds, 4ths, sequences). Example: C-E-D-F-E-G pattern from C major scale. Musical effect: adds structure and memorability.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Musical Effect",
-            "text": "Adds structure and memorability to your lines. Scale patterns give purpose and direction to your improvisation."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Modal Interchange",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Borrow scales from parallel modes for color. Method: use minor scale over major chord (or vice versa). Example: C natural minor scale over C major chord. Musical effect: creates unexpected harmonic color.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Musical Effect",
-            "text": "Creates unexpected harmonic color. Modal interchange is a sophisticated technique used by jazz and progressive players."
-          }
-        },
-        {
-          "number": 5,
-          "title": "Chromatic Approach",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Use non-scale tones to approach scale notes. Method: add chromatic passing tones between scale notes. Example: C-C#-D or C-Db-D approaching D. Musical effect: adds tension and jazz sophistication.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Musical Effect",
-            "text": "Adds tension and jazz sophistication. Chromatic approaches connect scale tones smoothly and add professional polish."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Practice Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Scale Visualization",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Learn to see and hear scales across the fretboard. Steps: 1. Practice one scale in multiple positions. 2. Play scale ascending and descending. 3. Practice in different rhythms (quarters, eighths, triplets). 4. Sing along while playing to internalize sound. 5. Practice with a metronome at various tempos.",
+            "text": "Single-String Scale Route: B (0) ➔ C (1) ➔ D (3) ➔ E (5) ➔ F# (7) ➔ G (8) ➔ A (10) ➔ B (12)"
+          },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
+          ],
+          "notation": {
+            "title": "Horizontal G Major Scale on the B String",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 :4 0.2 1.2 :8 3.2 5.2 :4 7.2 | :8 8.2 10.2 :4 12.2 :4 10.2 :4 8.2 | :4 7.2 :8 8.2 7.2 :4 5.2 :4 3.2 | :2 1.2 :2 0.2 |",
+            "staveTitle": "Traversing the G Major Scale Linearly Along String 2"
+          },
           "practiceNotes": {
             "colorBg": "bg-green-50",
             "colorBorder": "border-green-200",
@@ -242,146 +98,284 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Visualize the scale shapes, don't just memorize finger patterns. Knowing why each note is in the scale matters more than knowing where.",
-            "tempo": "60 BPM"
+            "text": "Use your index and ring fingers to slide between fret positions. Notice how visualizing the distance between frets trains your ear to hear whole-steps and half-steps.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Chord-Scale Relationships",
+          "title": "Scales in 3rds: The Melodic Transformation",
           "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Match appropriate scales to chord progressions. Steps: 1. Choose a simple chord progression (I-vi-IV-V). 2. Identify appropriate scale for each chord. 3. Practice scales over each chord separately. 4. Connect scales smoothly through progression. 5. Create melodic phrases using appropriate scales.",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Stepwise scale runs can sound predictable and academic. Playing scales in 3rds (playing note 1 then note 3, note 2 then note 4) transforms scale practice into singing, lyrical melodies. This study ascends and descends through the G major scale in melodic 3rds.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Interval Sequence: G-B (5.4-4.3) ➔ A-C (7.4-5.3) ➔ B-D (4.3-7.3) ➔ C-E (5.3-9.3) ➔ D-F# (7.3-7.2)"
+          },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
+          ],
+          "notation": {
+            "title": "G Major Scale in Melodic 3rds",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 :8 5.4 4.3 7.4 5.3 4.3 7.3 5.3 9.3 | :8 7.3 7.2 9.3 8.2 7.2 10.2 8.2 7.1 | :8 10.2 7.2 8.2 9.3 7.2 7.3 8.2 5.3 | :8 7.3 4.3 5.3 7.4 :2 5.4 |",
+            "staveTitle": "Ascending and Descending Through Scale Intervals of 3rds"
+          },
           "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Focus on smooth voice leading between scale choices. The transitions between scales should be seamless.",
+            "text": "Keep pick strokes strictly alternate (down-up-down-up). This interval leap technique is used extensively by Eric Johnson and Jerry Garcia to craft memorable solos.",
             "tempo": "80 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Modal Exploration",
+          "title": "Diagonal Pentatonic Highway (Connecting Positions)",
           "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Explore the unique character of each mode. Steps: 1. Choose one mode (Dorian, Phrygian, etc.). 2. Play the mode over its characteristic chord. 3. Identify the unique intervals that define the mode. 4. Create phrases that highlight these intervals. 5. Practice switching between modes.",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "Most guitarists get trapped inside Pentatonic Box 1. The diagonal highway connects Position 1 (fret 5), Position 2 (fret 7-8), and Position 3 (fret 10) in A minor by sliding on the D and G strings. This gives you access to more than two octaves without getting boxed into a single fret zone.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Diagonal Shift Points: Slide on string 4 (fret 7 ➔ 9) ➔ Cross to string 3 ➔ Slide on string 2 (fret 8 ➔ 10)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Am7", "chord": "Am7" }
+          ],
+          "notation": {
+            "title": "Diagonal A Minor Pentatonic Highway",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :8 5.6 8.6 5.5 7.5 :8 5.4 7.4 9.4 7.3 | :8 7.3 9.3 8.2 10.2 10.2 8.2 :4 9.3 | :8 10.1 8.1 10.2 8.2 :8 9.3 7.3 9.4 7.4 | :8 5.4 7.5 5.5 8.6 :2 5.6 |",
+            "staveTitle": "Seamlessly Linking Pentatonic Positions 1, 2, and 3 via Finger Slides"
+          },
           "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Each mode has a distinct emotional character to explore. Focus on the 'characteristic note' that makes each mode unique.",
-            "tempo": "70 BPM"
+            "text": "Notice how the finger slide maintains legato smoothness. Practice connecting these three positions until the boundary lines between the boxes disappear completely.",
+            "tempo": "82 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hybrid Blending, 3NPS Fluidity & Solo Synthesis",
+      "exercises": [
+        {
+          "number": 4,
+          "title": "The B.B. King Box: Sweet 6th vs Gritty b3",
+          "difficulty": "Intermediate",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "The 'B.B. King Box' anchors your index finger on the root note on string 2 (fret 10 in the key of A). From this compact zone, you can reach the sweet Major 6th (F#, fret 11 string 2), the soaring high 5th (E, fret 12 string 1), and execute microtonal bends on the minor 3rd (C, fret 8 string 1) into the major 3rd.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "B.B. Box Geometry: Root A (10.2) ➔ Sweet 6th F# (11.2) ➔ b7 G (8.1) ➔ Root A (10.1) ➔ 5th E (12.1)"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "The Authentic B.B. King Box Study in A",
+            "alphaTex": "\\tempo 78 . \\ts 4 4 :4 10.2 :8 11.2 10.2 :4 8.1 :4 10.1 | :4 12.1 :8 12.1 10.1 :4 8.1 :8 10.2 11.2 | :4 10.2 :8 8.1 10.1 :4 12.1 :4 10.1 | :8 8.1 10.2 11.2 10.2 :2 10.2 |",
+            "staveTitle": "Vocal Phrasing and Sweet Major 6th Accents in the B.B. Box"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Apply B.B.'s signature rapid 'butterfly' vibrato on fret 10 with your index finger. Accent the F# on fret 11 to give your blues solos that unmistakable warm, singing character.",
+            "tempo": "78 BPM"
           }
         },
         {
-          "number": 4,
-          "title": "Scale Integration",
+          "number": 5,
+          "title": "3-Note-Per-String Modern Legato Run",
           "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine multiple scales in single improvisation. Steps: 1. Start with one primary scale. 2. Identify points to introduce secondary scales. 3. Practice smooth transitions between scales. 4. Use chromatic notes to connect different scales. 5. Record and analyze the harmonic result.",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "3-Note-Per-String (3NPS) scale layouts standardize three notes on every string, making high-speed alternate picking and legato runs effortless. This study ascends through A Dorian (A-B-C-D-E-F#-G) across all six strings in 16th notes before cascading down into a singing resolution.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "3NPS A Dorian: String 6 [5-7-8] ➔ String 5 [5-7-9] ➔ String 4 [5-7-9] ➔ String 3 [5-7-9] ➔ String 2 [7-8-10] ➔ String 1 [7-8-10]"
+          },
+          "chordDiagrams": [
+            { "label": "Am7", "chord": "Am7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "3-Note-Per-String A Dorian Legato Run",
+            "alphaTex": "\\tempo 86 . \\ts 4 4 :16 5.6 7.6 8.6 5.5 :16 7.5 9.5 5.4 7.4 :16 9.4 5.3 7.3 9.3 :4 7.2 | :16 7.2 8.2 10.2 7.1 :16 8.1 10.1 12.1 10.1 :8 8.1 7.1 :4 10.2 | :16 10.2 8.2 7.2 9.3 :16 7.3 5.3 9.4 7.4 :16 5.4 9.5 7.5 5.5 :4 8.6 | :8 7.6 5.6 7.5 9.5 :2 7.4 |",
+            "staveTitle": "High-Speed 3-Note-Per-String Multi-Octave Run"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Advanced players seamlessly blend multiple scale sources. The goal is fluid, natural-sounding transitions between scales.",
-            "tempo": "90 BPM"
+            "text": "Use hammer-ons when ascending and pull-offs when descending to keep your lines silky smooth. Keep your left thumb anchored in the middle of the neck for reach.",
+            "tempo": "86 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Major-Minor Blues Hybridization",
+          "difficulty": "Advanced",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "The secret to sophisticated blues-rock soloing (think Duane Allman and Eric Clapton) is knowing when to play sweet Major Pentatonic versus gritty Minor Blues. Over A7 (Bar 1-2), you target the Major 3rd (C#, fret 6 string 3); over D7 (Bar 3), you switch to A Minor Blues, unleashing the b5 blue note (Eb, fret 8 string 3).",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Hybrid Formula: Over I (A7) ➔ Target Major 3rd C# (6.3) | Over IV (D7) ➔ Inject Minor b3 C (5.3) and Blue Note Eb (8.3)"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "Major & Minor Blues Hybrid Study",
+            "alphaTex": "\\tempo 82 . \\ts 4 4 :4 7.4 :8 5.3 6.3 :4 7.4 :8 5.3 7.3 | :4 5.2 :8 7.2 5.2 :4 6.3 :4 7.4 | :8 5.3 7.3 8.3 7.3 :8 5.3 7.4 5.4 7.4 | :8 5.4 7.5 5.5 7.5 :2 7.4 |",
+            "staveTitle": "Switching Between Sweet Major 3rds on A7 and Gritty Blue Notes on D7"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Listen carefully to the contrast: Bar 1-2 sounds joyful and soulful, while Bar 3 sounds raw, greasy, and aggressive. This contrast is what makes great blues solos sing.",
+            "tempo": "82 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Master Scale Etude: Horizontal, Vertical & Hybrid Synthesis",
+          "difficulty": "Advanced",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "This culminating 4-measure etude synthesizes all scale techniques: diagonal position shifts, chromatic blue note inflections, fast 16th-note bursts, melodic interval leaps, and a commanding low tonic landing. Perform this study with confident dynamics and expressive vibrato.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Complete Scale Synthesis: Diagonal Highway + Blue Note Passing Tones + Melodic 3rd Leaps"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" },
+            { "label": "Am7", "chord": "Am7" }
+          ],
+          "notation": {
+            "title": "Master Scale Phrasing Etude",
+            "alphaTex": "\\tempo 86 . \\ts 4 4 :8 5.4 7.4 :16 5.3 6.3 7.3 8.3 :8 7.3 5.3 :4 7.4 | :8 5.2 7.2 :16 8.2 10.2 8.1 10.1 :4 12.1 :8 10.1 8.1 | :8 10.2 8.2 :8 9.3 7.3 :8 8.3 7.3 :4 5.3 | :8 7.4 5.4 7.5 5.5 :2 5.6 |",
+            "staveTitle": "Comprehensive 4-Bar Solo Etude Integrating All Scale Concepts"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Record your rhythm track with a looper pedal and solo this etude over it. Focus on smooth transitions between the high register run in Bar 2 and the descending blues lick in Bar 3.",
+            "tempo": "86 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Daily Scale Practice Routine & Inspiration",
+    "title": "Scale Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Phase 1: Technical (10 mins)",
-        "colorBg": "bg-green-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
+        "title": "3 Mistakes That Kill Scale Improvisation",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-900",
+        "colorText": "text-red-800",
         "items": [
-          "Practice 2-3 scales in multiple positions",
-          "Focus on clean, even articulation",
-          "Use metronome for steady timing",
-          "Practice ascending and descending"
+          "The Endless Scale Run: Playing up and down a scale like an exercise routine without pauses, phrasing, or rhythmic variety bores listeners.",
+          "Ignoring the Harmony: Playing minor blues over major progressions without resolving to the sweet major 3rd causes unresolved harmonic clashes.",
+          "Fretboard Blindness (Box Trapping): Relying solely on one vertical box pattern prevents you from exploring the expressive melodic potential of the full fretboard."
         ]
       },
       {
-        "title": "Phase 2: Musical (15 mins)",
-        "colorBg": "bg-green-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
-        "items": [
-          "Apply scales to chord progressions",
-          "Practice chord-tone targeting",
-          "Create melodic phrases using scales",
-          "Work on scale transitions"
-        ]
-      },
-      {
-        "title": "Phase 3: Creative (10 mins)",
-        "colorBg": "bg-green-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
-        "items": [
-          "Improvise freely using day's scales",
-          "Experiment with different rhythms",
-          "Try modal and exotic scales",
-          "Record and analyze results"
-        ]
-      },
-      {
-        "title": "Famous Scale Masters",
+        "title": "Masters of Scale Improvisation",
         "colorBg": "bg-emerald-50",
         "colorBorder": "border-emerald-200",
         "colorTitle": "text-emerald-900",
         "colorText": "text-emerald-800",
         "items": [
-          "David Gilmour: Melodic pentatonic with blues inflections - emotional bending and space within pentatonic framework",
-          "Joe Satriani: Modal mastery with exotic scale integration - uses modes and exotic scales for otherworldly sounds",
-          "John Coltrane: Rapid scale sequences and complex harmony - lightning-fast scalar runs through complex changes",
-          "Yngwie Malmsteen: Classical harmonic minor and diminished scales - neoclassical approach using harmonic minor extensively"
+          "Eric Johnson: Renowned for playing pentatonics in descending groups of 5 and cascading 3rds with pristine economy picking and violin-like sustain.",
+          "B.B. King: The master of melodic economy; extracted a universe of emotion out of a compact 3-fret box using microtonal bends and vocal vibrato.",
+          "David Gilmour: Uses slow, soaring scale runs with monumental full and multi-step bends that land squarely on harmonic chord tones.",
+          "Allan Holdsworth: Pioneer of modern 4-note-per-string and 3NPS symmetrical scale systems, creating fluid, non-scalar legato soundscapes."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Scale Workout",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Block 1: Single-String Linear Navigation (5 min) - Improvise a solo restricted strictly to the G or B string. Focus on slides, vibrato, and interval jumps.",
+          "Block 2: Scales in 3rds (5 min) - Pick one scale (e.g. A Dorian). Play up and down through the scale exclusively in melodic 3rds at 80 BPM.",
+          "Block 3: Major-Minor Blues Blending (5 min) - Over an A7 vamp, alternate between 2 bars of pure A Major Pentatonic and 2 bars of pure A Minor Blues."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Improvisation Journey",
-    "description": "Scale mastery opens doors to sophisticated improvisation. Explore these related topics to expand your musical vocabulary.",
+    "title": "Deepen Your Improvisation Journey",
+    "description": "Scales provide the raw melodic vocabulary. Continue expanding your improvisational toolkit with these complementary masterclasses.",
     "gradientFrom": "from-green-50",
     "gradientTo": "to-emerald-50",
     "borderColor": "border-green-200",
     "links": [
       {
-        "href": "/lessons/practice/improv/arpeggios",
-        "title": "Arpeggio Integration",
-        "description": "Combine scales with arpeggios for harmonic clarity",
-        "linkText": "Explore Arpeggios",
-        "icon": "🎵",
+        "href": "/lessons/practice/improv/modal-improvisation",
+        "title": "Modal Improvisation",
+        "description": "Unlock the distinctive emotional moods of Dorian, Mixolydian, Lydian, and Phrygian modes.",
+        "linkText": "Explore Modes",
+        "icon": "🎼",
         "hoverBorder": "hover:border-green-400",
         "iconBg": "bg-green-100",
         "iconHoverBg": "group-hover:bg-green-200",
@@ -391,8 +385,8 @@
       {
         "href": "/lessons/practice/improv/target-notes",
         "title": "Target Notes",
-        "description": "Focus your scale work on strong harmonic destinations",
-        "linkText": "Explore Target Notes",
+        "description": "Master downbeat targeting, guide tones, and chromatic approach notes to anchor your scale runs.",
+        "linkText": "Target Notes",
         "icon": "🎯",
         "hoverBorder": "hover:border-emerald-400",
         "iconBg": "bg-emerald-100",
@@ -401,16 +395,31 @@
         "linkHoverColor": "group-hover:text-emerald-700"
       },
       {
-        "href": "/lessons/practice/improv/phrasing",
-        "title": "Musical Phrasing",
-        "description": "Shape your scale-based lines with expressive phrasing",
-        "linkText": "Explore Phrasing",
-        "icon": "🗣️",
-        "hoverBorder": "hover:border-green-400",
-        "iconBg": "bg-green-100",
-        "iconHoverBg": "group-hover:bg-green-200",
-        "linkColor": "text-green-600",
-        "linkHoverColor": "group-hover:text-green-700"
+        "href": "/lessons/practice/improv/arpeggios",
+        "title": "Arpeggio Improvisation",
+        "description": "Learn to outline chord tones with clarity and break up scalar lines with arpeggiated leaps.",
+        "linkText": "Explore Arpeggios",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-teal-400",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Fluid Lead Tone",
+    "items": [
+      {
+        "category": "Overdrive Pedal",
+        "product": "Ibanez TS808 Tube Screamer",
+        "reason": "Tightens low end and boosts vocal midrange, allowing fast scale runs and single-string slides to cut cleanly through the mix."
+      },
+      {
+        "category": "Delay Pedal",
+        "product": "Electro-Harmonix Canyon Delay",
+        "reason": "A subtle tape or analog delay adds dimension, sustain, and smooth ambient bloom to lyrical scale melodies."
       }
     ]
   }

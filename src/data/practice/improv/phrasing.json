@@ -2,53 +2,94 @@
   "slug": "phrasing",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Musical Phrasing",
-    "subtitle": "Master the art of musical sentences and expression - learn to speak fluently with your guitar through natural phrasing concepts.",
-    "heroGradient": "bg-gradient-to-br from-blue-50 to-purple-100",
-    "heroTitle": "Musical Phrasing",
-    "heroDescription": "Great solos aren't just collections of notes - they're musical conversations. Learn to shape your playing with the natural flow of musical speech."
+    "pageTitle": "Musical Phrasing Masterclass",
+    "subtitle": "Master the art of musical speech: breathe life into your guitar solos with vocal cadence, dynamic arcs, and expressive articulation.",
+    "heroGradient": "bg-gradient-to-br from-blue-50 to-indigo-100",
+    "heroTitle": "Musical Phrasing Masterclass",
+    "heroDescription": "Great guitar solos are never just rapid strings of scale notes—they are compelling musical speeches. The finest soloists in history—from B.B. King and David Gilmour to Jeff Beck and Stevie Ray Vaughan—phrase like great singers. They shape sentences, leave dramatic pauses for breath, use commas to tease anticipation, and deliver commanding periods to conclude thoughts. In this masterclass, you will learn to construct melodic sentences, harness dynamic contour, contrast staccato punches with singing legato, and use expressive vibrato to command attention."
   },
   "guidelines": {
-    "title": "Theory Fundamentals",
+    "title": "The Grammar of Musical Speech",
     "columns": [
       {
-        "title": "Speech Parallels",
+        "title": "The Anatomy of a Melodic Sentence",
         "items": [
-          { "bulletColor": "text-blue-500", "text": "Sentences: Complete musical thoughts" },
-          { "bulletColor": "text-blue-500", "text": "Commas: Short pauses within phrases" },
-          { "bulletColor": "text-blue-500", "text": "Questions: Rising tension and expectation" },
-          { "bulletColor": "text-blue-500", "text": "Answers: Resolution and completion" },
-          { "bulletColor": "text-blue-500", "text": "Breathing: Natural pause points" }
+          {
+            "bulletColor": "text-blue-500",
+            "text": "Complete Sentences: A musical sentence has a distinct beginning (the premise), an emotional peak (the climax), and a grounding descent (the resolution)."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The Musical Comma: Pausing for 1 to 2 beats mid-phrase keeps the listener suspended in expectation before you deliver the punchline."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The Question (Antecedent): Ascending melodic lines or phrases ending on unresolved scale degrees (2, 4, or b7) create emotional hunger."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The Answer (Consequent): Descending phrases resolving firmly onto the Root or 3rd provide conclusive emotional satisfaction."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The Breath (Silence as Art): Leaving whole measures of silence allows your delay trails to bloom and gives the listener time to digest your ideas."
+          }
         ]
       },
       {
-        "title": "Musical Elements",
+        "title": "Expressive Articulation & Touch",
         "items": [
-          { "bulletColor": "text-purple-500", "text": "Dynamics: Volume changes for emphasis" },
-          { "bulletColor": "text-purple-500", "text": "Articulation: How notes are attacked" },
-          { "bulletColor": "text-purple-500", "text": "Timing: Rhythmic placement and space" },
-          { "bulletColor": "text-purple-500", "text": "Direction: Melodic rise and fall" }
+          {
+            "bulletColor": "text-indigo-500",
+            "text": "Dynamic Contours: Never pick every note with identical volume. Build from whisper-soft pick touches to aggressive, cutting digs."
+          },
+          {
+            "bulletColor": "text-indigo-500",
+            "text": "Staccato vs. Legato: Alternate between sharp, percussive palm-muted jabs and silky, liquid hammer-ons and slides."
+          },
+          {
+            "bulletColor": "text-indigo-500",
+            "text": "Vocal Vibrato Control: Match vibrato width and speed to the character of the note—slow and wide for epic rock anthems, tight and nervous for blues stings."
+          },
+          {
+            "bulletColor": "text-indigo-500",
+            "text": "The Microtonal 'Blues Curl': Subtle quarter-tone bends on the minor 3rd and flat 5th that inject genuine human crying emotion."
+          },
+          {
+            "bulletColor": "text-indigo-500",
+            "text": "Rhythmic Variation: Interweave quarter notes, eighths, triplets, and syncopated offbeats rather than droning in uniform note lengths."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Musical Examples",
+      "title": "Sentence Structure & Conversational Dynamics",
       "exercises": [
         {
           "number": 1,
-          "title": "Question and Answer Phrasing",
+          "title": "The Complete Musical Sentence (Rising Arc to Resolution)",
           "difficulty": "Beginner",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "Question phrase (ascending, creates tension) followed by answer phrase (descending, resolves). The rising melody creates expectation, while the falling melody provides resolution.",
+          "description": "A great musical sentence begins with a quiet premise, climbs dynamically toward an emotional summit, and then gently cascades back to home base. In this 4-bar study in A minor, Bars 1-2 climb from the 6th string up to the high E string (fret 5), peaking on beat 3 of Bar 2, before cascading down across strings 2, 3, and 4 to land with wide vibrato on the root note A.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Structure: Low Premise (Bars 1) ➔ High Peak (Bar 2) ➔ Descending Cadence (Bar 3) ➔ Root Resolution (Bar 4)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "D", "chord": "D" }
+          ],
           "notation": {
-            "title": "Question and Answer Phrasing: Rising (question) then Falling (answer)",
-            "alphaTex": "5.6{q} 7.5{q} 8.6{q} 10.6{q} | 8.6{w} | 10.6{q} 8.6{q} 7.5{q} 5.6{q} | 5.6{w}"
+            "title": "The 4-Bar Melodic Sentence in A Minor",
+            "alphaTex": ":8 5.6 7.6 :4 5.5 :8 7.5 5.4 :4 7.4 | :4 8.2 :8 5.2 8.2 :2 5.1 | :8 8.2 5.2 :4 7.3 :8 5.3 7.4 :4 5.4 | :1 7.4 |",
+            "staveTitle": "Ascending Statement to Root Resolution"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -57,206 +98,224 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Notice how the ascending phrase creates tension (the question) and the descending phrase resolves it (the answer). Practice this call-and-response pattern at a slow tempo.",
+            "text": "Start quietly in Bar 1. Increase your picking hand attack as you climb into Bar 2, then relax pick velocity during the descent in Bar 3. Give the final root note A on Bar 4 a slow, expressive vibrato.",
+            "tempo": "75 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "The Musical Comma (The Power of Strategic Silence)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Just as a spoken comma lets a thought hang in mid-air, a musical rest creates magnetic drama. In this exercise, you play a crisp melodic phrase in Bar 1, deliberately stop playing for two full beats in Bar 2, and then answer that silence with a confident confirming tag in Bars 3-4.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Formula: 1-Bar Statement ➔ 2-Beat Full Silence (The Comma) ➔ Concluding Tag"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Using Strategic Silence as a Musical Comma",
+            "alphaTex": ":8 5.3 7.3 :4 5.2 :8 8.2 5.2 :4 7.3 | :4 5.2 r.4 r.2 | :8 7.3 5.3 :4 7.4 :8 5.4 7.5 :4 5.5 | :1 7.5 |",
+            "staveTitle": "Statement (Bar 1), Breathing Space (Bar 2), Resolution (Bars 3-4)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Resist the nervous impulse to fill Bar 2. Count the rest beats out loud in your head ('3, 4'). Notice how leaving that space makes your entry in Bar 3 sound ten times more authoritative.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Rhythmic Acceleration within a Single Phrase",
+          "difficulty": "Intermediate",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Great storytellers vary the tempo of their speech—starting slow to draw the listener in, accelerating to convey excitement, and slowing down to land the main point. Here, Bar 1 begins with spacious quarter notes; Bar 2 suddenly bursts into high-velocity 16th notes; Bar 3 relaxes back into smooth eighths before sustaining the final root note.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Rhythmic Progression: Quarter Notes (Slow) ➔ 16th Notes (Burst) ➔ Sustained Target"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Em", "chord": "Em" }
+          ],
+          "notation": {
+            "title": "Rhythmic Acceleration and Release",
+            "alphaTex": ":4 5.4 7.4 5.3 7.3 | :8 5.2 8.2 :16 7.3 5.3 7.4 5.4 :4 7.4 5.4 | :8 7.3 5.3 :4 7.4 :8 5.4 7.5 :4 5.5 | :1 7.5 |",
+            "staveTitle": "Spacious Quarters into 16th Burst and Cadence"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
+            "title": "Practice Notes",
+            "text": "Keep your picking hand completely relaxed during the 16th-note burst in Bar 2. The acceleration should feel like a wave of energy, not a frantic scramble.",
+            "tempo": "80 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Touch, Inflection & Articulation Masterclasses",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Staccato Punch vs. Liquid Legato",
+          "difficulty": "Intermediate",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Contrasting touch creates instant dynamic depth. In Bar 1, you strike each note with sharp, staccato palm muting, creating a percussive rhythmic march. In Bar 2, you suddenly release the muting and execute singing hammer-ons and slides, creating dramatic contrast between machine-gun punch and lyrical flight.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Touch Contrast: Palm-Muted Staccato (Bar 1) vs Open Singing Legato (Bar 2)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" }
+          ],
+          "notation": {
+            "title": "Articulation Contrast: Staccato to Legato",
+            "alphaTex": ":8 5.6 5.6 7.6 7.6 5.5 5.5 7.5 7.5 | :4 5.4 :8 7.4 8.4 :2 7.3 | :8 5.6 5.6 7.6 7.6 5.5 5.5 7.5 7.5 | :1 5.4 |",
+            "staveTitle": "Tight Palm Mutes (Bar 1) & Flowing Legato (Bar 2)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "During Bar 1, rest the fleshy heel of your picking palm directly on the bridge saddles to choke the notes short. In Bar 2, lift your hand entirely and let the notes ring and blend.",
+            "tempo": "85 BPM"
+          }
+        },
+        {
+          "number": 2,
+          "title": "The Microtonal 'Blues Curl' & Singing Vibrato",
+          "difficulty": "Advanced",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "The guitar's greatest superpower is bending between the cracks of the piano keys. A quarter-tone bend (the 'blues curl') on the minor 3rd (C) pulls slightly toward the major 3rd without fully reaching it, delivering raw vocal angst. Follow it with slow, circular wrist vibrato that oscillates smoothly above and below the pitch.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Nuance: 1/4-step microtonal bend on minor 3rd (fret 8, string 2) into humming wrist vibrato"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "Microtonal Blues Curls and Vocal Vibrato",
+            "alphaTex": ":2 7.3 :4 5.2 8.2 | :1 8.2 | :4 7.3 :8 5.3 7.3 :2 5.2 | :1 5.1 |",
+            "staveTitle": "Vocal Microtonal Phrasing in A Blues"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "Do not rush into vibrato the instant you strike a bent note. Let the note sound true for half a second, then let the vibrato slowly bloom like an opera singer's voice.",
             "tempo": "70 BPM"
           }
         },
         {
-          "number": 2,
-          "title": "Musical Sentence Structure",
-          "difficulty": "Intermediate",
-          "borderColor": "border-purple-200",
-          "difficultyBg": "bg-purple-100",
-          "difficultyText": "text-purple-700",
-          "numberBg": "bg-purple-100",
-          "numberText": "text-purple-600",
-          "description": "4-bar phrase demonstrating complete musical sentence: Statement - Development - Climax - Resolution. Each bar serves a specific dramatic purpose in telling a musical story.",
+          "number": 3,
+          "title": "Triplets Against Straight Eighths (The Metric Tug-of-War)",
+          "difficulty": "Advanced",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Switching metric gears within a single solo creates an addictive rhythmic push and pull. In Bar 1, you drive forward with straight, on-the-beat eighth notes. In Bar 2, you suddenly relax into a laid-back, swung triplet cadence before snapping back into straight time.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Metric Shift: Driving Straight 8ths (Bar 1) ➔ Laid-Back Swing Triplets (Bar 2)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "4-Bar Musical Sentence: Statement - Development - Climax - Resolution",
-            "alphaTex": "5.6{q} 7.5{q} 8.6{q} 5.6{q} | 7.5{q} 8.6{e} 7.5{e} 8.6{q} 10.6{q} | 10.6{q} 8.6{e} 10.6{e} 12.6{q} 10.6{q} | 8.6{h} 5.6{h}"
+            "title": "Metric Modulation: Straight vs Triplet Feel",
+            "alphaTex": ":8 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 | :4 5.1 :8 8.2 5.2 :2 7.3 | :8 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 | :1 5.1 |",
+            "staveTitle": "Straight 8ths Driving into Swung Resolution"
           },
           "practiceNotes": {
-            "colorBg": "bg-purple-50",
-            "colorBorder": "border-purple-200",
-            "colorTitle": "text-purple-900",
-            "colorText": "text-purple-800",
-            "colorAccent": "bg-purple-100",
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "Bar 1 introduces the idea, Bar 2 develops it with more activity, Bar 3 reaches the climax (highest notes), and Bar 4 resolves back down. Think of it as a mini-composition.",
-            "tempo": "80 BPM"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Core Phrasing Concepts",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Musical Sentences",
-          "difficulty": "Beginner",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "Like spoken language, music has sentences with beginnings, middles, and endings. Techniques: start with a strong idea, develop through the middle, end with resolution, use pauses for punctuation. Think of B.B. King's vocal-like guitar lines.",
-          "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
-            "title": "Practice Notes",
-            "text": "Every phrase should have a clear beginning, middle, and end - just like a spoken sentence."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Question and Answer",
-          "difficulty": "Beginner",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "Create tension with a question phrase, then resolve with an answer. Techniques: question has rising melody, answer has descending resolution, use call-response within solo, vary question length. Classic blues and jazz phrasing pattern.",
-          "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
-            "title": "Practice Notes",
-            "text": "Listen to how singers naturally phrase question-and-answer patterns, then apply the same approach to guitar."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Breathing Spaces",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Strategic silence makes your notes more powerful and musical. Techniques: don't fill every beat, let notes ring and decay, use space for emphasis, match natural breath rhythm. David Gilmour's spacious solos in Pink Floyd are a masterclass in this concept.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Practice breathing between phrases even though guitar doesn't require it. This creates natural musical phrasing."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Dynamic Expression",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Volume and intensity changes create emotional impact. Techniques: start soft and build intensity, use volume swells, vary attack strength, match phrase dynamics. Classical guitar expression techniques applied to all styles.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "Small changes in dynamics create huge emotional impact. Practice the same phrase at different dynamic levels."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Practice Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Sing Your Lines",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Develop natural phrasing by singing melodies first. Steps: 1. Choose a simple scale (pentatonic). 2. Sing short 2-4 note phrases. 3. Focus on natural breathing. 4. Play what you sang on guitar. 5. Match the vocal phrasing exactly.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "If you can't sing it, you probably can't phrase it musically. Your voice is the best phrasing teacher.",
-            "tempo": "60 BPM"
-          }
-        },
-        {
-          "number": 2,
-          "title": "Copy Vocal Melodies",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Learn phrasing from singers who naturally phrase well. Steps: 1. Choose simple vocal melodies. 2. Learn to play them on guitar. 3. Copy every nuance and pause. 4. Apply same phrasing to original ideas. 5. Study different vocal styles.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Singers are natural phrasers - they need to breathe! Copy their natural phrasing instincts.",
-            "tempo": "Varies"
-          }
-        },
-        {
-          "number": 3,
-          "title": "The 4-Bar Story",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Create complete musical stories in 4-bar phrases. Steps: 1. Bar 1: Introduce your idea. 2. Bar 2: Develop or repeat. 3. Bar 3: Create tension/climax. 4. Bar 4: Resolve and conclude. 5. Practice over different chord progressions.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Think of it as a mini-composition with beginning, middle, end. Each bar has a dramatic purpose.",
+            "text": "Tap your foot steadily at 80 BPM throughout the exercise. Pay close attention to the mental shift between dividing each beat into 2 equal parts versus 3 equal parts.",
             "tempo": "80 BPM"
           }
         },
         {
           "number": 4,
-          "title": "Dynamics and Articulation",
+          "title": "The David Gilmour Melodic Arc (Full Performance Solo)",
           "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Add expression through volume and attack variations. Steps: 1. Play same phrase with different dynamics. 2. Practice volume swells mid-phrase. 3. Vary pick attack intensity. 4. Use hammer-ons/pull-offs for legato. 5. Combine techniques for expression.",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "A complete 4-bar slow blues solo demonstrating the pinnacle of guitar phrasing. Opens with dramatic silence in Bar 1, builds with a vocal call in Bar 2, climbs to a screaming double-stop climax in Bar 3, and descends gracefully to an authoritative root resolution.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Complete Showcase: Breath ➔ Vocal Rise ➔ Emotional Summit ➔ Grounded Cadence"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "D", "chord": "D" },
+            { "label": "F", "chord": "F" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "The David Gilmour Phrasing Masterpiece",
+            "alphaTex": ":2 r.2 :4 r.4 :8 5.2 8.2 | :4 10.2 :8 8.2 10.2 :2 10.1 | :8 12.1 10.1 :4 8.1 :8 10.2 8.2 :4 7.3 | :1 5.2 |",
+            "staveTitle": "Spacious Melodic Phrasing with Vocal Inflections"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "Small changes in dynamics create huge emotional impact. Record yourself to hear the difference.",
+            "text": "Use an analog delay set to 380ms with 3 repeats and a touch of vintage overdrive. Listen to how the silence in Bar 1 builds enormous anticipation before your first note even sounds.",
             "tempo": "70 BPM"
           }
         }
@@ -264,74 +323,60 @@
     }
   ],
   "tips": {
-    "title": "Common Mistakes, Daily Routine & Inspiration",
+    "title": "Critical Pitfalls, Pro Insights & Practice Routines",
     "items": [
       {
-        "title": "Technical Traps to Avoid",
+        "title": "3 Phrasing Mistakes That Kill Solos",
         "colorBg": "bg-red-50",
         "colorBorder": "border-red-200",
         "colorTitle": "text-red-900",
         "colorText": "text-red-800",
         "items": [
-          "Scale Running: Playing scales without musical intent",
-          "Note Cramming: Filling every beat with notes",
-          "Ignoring Rhythm: Only focusing on pitches",
-          "One Dynamic: Playing everything at same volume"
-        ]
-      },
-      {
-        "title": "Musical Problems to Avoid",
-        "colorBg": "bg-red-50",
-        "colorBorder": "border-red-200",
-        "colorTitle": "text-red-900",
-        "colorText": "text-red-800",
-        "items": [
-          "No Breathing: Phrases that never pause",
-          "Weak Endings: Phrases that trail off without resolution",
-          "No Direction: Aimless melodic wandering without purpose",
-          "Mechanical Feel: Robot-like precision without soul"
-        ]
-      },
-      {
-        "title": "15-Minute Daily Phrasing Workout",
-        "colorBg": "bg-purple-50",
-        "colorBorder": "border-purple-200",
-        "colorTitle": "text-purple-900",
-        "colorText": "text-purple-800",
-        "items": [
-          "Warm-up (5 min): Sing simple melodies, play what you sing, focus on breathing, match vocal phrasing",
-          "Development (7 min): Practice 4-bar stories, question-answer phrases, vary dynamics, use strategic silence",
-          "Application (3 min): Improvise over backing track, apply new phrasing concepts, focus on musicality, record and evaluate"
+          "The 'Run-On' Soloist: Playing continuously across measure lines without resting. Without silence, the listener cannot distinguish questions from answers, and your solo becomes white noise.",
+          "Monotonous Note Lengths: Playing exclusively in endless eighth notes or sixteenth notes. Speech has commas, pauses, short syllables, and long vowel holds—your guitar must do the same.",
+          "Static Pick Velocity: Striking every note with the exact same mechanical force, stripping the music of human intimacy, dynamic rise, and emotional release."
         ]
       },
       {
         "title": "Masters of Musical Phrasing",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "David Gilmour ('Comfortably Numb', 'Shine On You Crazy Diamond'): Majestic use of space, patient delay trails, and soaring, singing vocal bends that define stadium rock.",
+          "B.B. King ('The Thrill Is Gone'): The supreme master of vocal-to-guitar conversation, packing more emotional depth into three notes than most shredders fit into three hundred.",
+          "Jeff Beck ('Cause We've Ended as Lovers'): Unrivaled master of microtonal pitch manipulation, volume swells, and vocal nuance using bare fingers and whammy bar.",
+          "Stevie Ray Vaughan ('Texas Flood', 'Tin Pan Alley'): Relentless dynamic push and pull, alternating stinging staccato bites with soaring wide-interval screams."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Phrasing Workout",
         "colorBg": "bg-blue-50",
         "colorBorder": "border-blue-200",
         "colorTitle": "text-blue-900",
         "colorText": "text-blue-800",
         "items": [
-          "B.B. King: Vocal-influenced blues phrasing - short, singing phrases with expressive bends. Every note has meaning.",
-          "David Gilmour: Atmospheric and spacious - long, sustained phrases with strategic silence. Less can be more.",
-          "John Mayer: Modern blues with jazz influence - conversational phrasing with rhythmic sophistication.",
-          "Wes Montgomery: Jazz guitar phrasing master - long, flowing lines with natural breath points."
+          "Phase 1: The Singing Rule (5 min) - Sing every phrase out loud before attempting to play it on your guitar. If you cannot sing the line, you are playing muscle memory, not music.",
+          "Phase 2: Strict Two-Bar Breathing (5 min) - Put on a slow backing track. Play strictly for 2 bars, then force yourself to remain completely silent for 2 bars.",
+          "Phase 3: Dynamic Contrast Practice (5 min) - Play a single 4-note motif three times in a row: whisper-quiet (pianissimo), medium (mezzo-forte), and roaring (fortissimo)."
         ]
       }
     ]
   },
   "journeySection": {
     "title": "Continue Your Improvisation Journey",
-    "description": "Musical phrasing transforms technical playing into expressive art. Explore these related topics to deepen your musical voice.",
+    "description": "Phrasing is the vehicle that delivers all music to the human heart. Expand your improvisational mastery with these companion guides.",
     "gradientFrom": "from-blue-50",
-    "gradientTo": "to-purple-50",
+    "gradientTo": "to-indigo-50",
     "borderColor": "border-blue-200",
     "links": [
       {
         "href": "/lessons/practice/improv/call-response",
         "title": "Call & Response",
-        "description": "Musical conversations and dialogue",
-        "linkText": "Explore Call & Response",
-        "icon": "🔁",
+        "description": "Master conversational dialogue, breathing room, and authoritative melodic answers.",
+        "linkText": "Master Call & Response",
+        "icon": "🗣️",
         "hoverBorder": "hover:border-blue-400",
         "iconBg": "bg-blue-100",
         "iconHoverBg": "group-hover:bg-blue-200",
@@ -341,26 +386,41 @@
       {
         "href": "/lessons/practice/improv/motif-development",
         "title": "Motif Development",
-        "description": "Build solos from small ideas",
+        "description": "Transform tiny 3-note seeds into cohesive, full-length storytelling solos.",
         "linkText": "Explore Motifs",
         "icon": "🎼",
-        "hoverBorder": "hover:border-purple-400",
-        "iconBg": "bg-purple-100",
-        "iconHoverBg": "group-hover:bg-purple-200",
-        "linkColor": "text-purple-600",
-        "linkHoverColor": "group-hover:text-purple-700"
+        "hoverBorder": "hover:border-indigo-400",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
       },
       {
-        "href": "/lessons/practice/improv/rhythm",
-        "title": "Rhythmic Variation",
-        "description": "Add groove to your phrases",
-        "linkText": "Explore Rhythm",
-        "icon": "🥁",
+        "href": "/lessons/practice/improv/chord-tone-soloing",
+        "title": "Chord Tone Soloing",
+        "description": "Target active chord tones to outline progressions with harmonic precision.",
+        "linkText": "Target Chord Tones",
+        "icon": "🎯",
         "hoverBorder": "hover:border-blue-400",
         "iconBg": "bg-blue-100",
         "iconHoverBg": "group-hover:bg-blue-200",
         "linkColor": "text-blue-600",
         "linkHoverColor": "group-hover:text-blue-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Phrasing Practice",
+    "items": [
+      {
+        "category": "Overdrive Pedal",
+        "product": "Ibanez Tube Screamer TS808 / Boss BD-2 Blues Driver",
+        "reason": "Dynamic touch-sensitive overdrive pedals respond immediately to pick attack, allowing you to whisper or scream purely through your hands."
+      },
+      {
+        "category": "Analog Delay Pedal",
+        "product": "MXR Carbon Copy / Way Huge Aqua-Puss",
+        "reason": "Warm analog delay trails fill the breathing space between phrases with ambient resonance without cluttering your phrasing."
       }
     ]
   }
