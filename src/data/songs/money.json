@@ -1,0 +1,306 @@
+{
+  "songInfo": {
+    "title": "Money",
+    "artist": "Pink Floyd",
+    "album": "The Dark Side of the Moon",
+    "released": "1973",
+    "genre": "Progressive Rock / Blues Rock",
+    "tempo": "120 BPM",
+    "duration": "6:22",
+    "key": "B Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B minor",
+      "scalesUsed": [
+        {
+          "scale": "B minor pentatonic / blues scale",
+          "notes": "B - D - E - F - F# - A",
+          "application": "The core vocabulary for David Gilmour's legendary three-stage guitar solo"
+        },
+        {
+          "scale": "B Dorian mode",
+          "notes": "B - C# - D - E - F# - G# - A",
+          "application": "Supplies the bright major sixth (G#) in Roger Waters's iconic walking bass riff and chord stabs"
+        }
+      ],
+      "modalCharacter": "Tour-de-force 7/4 time signature progressive blues rock that unexpectedly shifts into straight 4/4 for one of the greatest guitar solos of all time",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "D major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Bm",
+          "Em",
+          "F#m"
+        ],
+        "progression": "i - iv - v (in 7/4 time)",
+        "progressionDescription": "12-bar minor blues progression played in an asymmetric 7/4 time signature, shifting to 4/4 for the solo.",
+        "description": "12-bar minor blues progression played in an asymmetric 7/4 time signature, shifting to 4/4 for the solo."
+      },
+      "sectionProgressions": [
+        {
+          "section": "7/4 Cash Register & Bass Riff",
+          "progression": "Bm (2 bars) - Em (1 bar) - Bm (1 bar) - F#m/Em (1 bar)",
+          "romanNumerals": "7/4 12-Bar Minor Blues",
+          "description": "The iconic 7-beat walking bass riff accompanied by rhythmic coin jingles and cash register clicks"
+        },
+        {
+          "section": "7/4 Verse Chords",
+          "progression": "Bm7 - Em7 - F#m7",
+          "romanNumerals": "i7 - iv7 - v7",
+          "description": "Tight staccato chord stabs on beats 1, 3, 5, and 7 supporting the cynical vocal lyrics"
+        },
+        {
+          "section": "4/4 Guitar Solo Odyssey",
+          "progression": "12-Bar Minor Blues in 4/4 time",
+          "romanNumerals": "i - iv - i - v - iv - i",
+          "description": "David Gilmour's three-part solo (dry Strat → double-tracked fuzz → soaring wet delay) shifting into straight 4/4 rock"
+        }
+      ],
+      "harmonicFunction": [
+        "Bm (i) - Heavy, swaggering minor tonic anchored by the 7/4 bassline",
+        "Em (iv) - Minor subdominant raising the tension in the 12-bar blues cycle",
+        "F#m (v) - Minor dominant providing dark, brooding turnaround resolution"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "7/4 Asymmetric Meter & Three-Stage Solo Dynamics",
+      "description": "Internalizing the 7/4 time signature (counted as 1-2-3-4-1-2-3) while locking tight with cash register sound effects, followed by a sudden shift to straight 4/4 for epic blues-rock soloing",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bass/guitar riff in 7/4: Fret 2 A (B) → fret 4 A (C#) → fret 4 D (F#) → fret 2 D (E) → fret 4 D (F#) → fret 2 A (B) → fret 2 low E (F#)",
+          "Count: 1-2-3-4 (four quarter notes) followed by 1-2-3 (three quarter notes)",
+          "Solo shifts to standard 4/4 swing feel at 120 BPM in 7th position B minor pentatonic"
+        ],
+        "sequence": [
+          "Lock into the 7-beat tape loop of coins and cash registers",
+          "Play the walking bass riff with clean, percussive finger or pick attack",
+          "Execute the 7/4 staccato chord stabs on Bm7",
+          "Switch seamlessly to straight 4/4 when the guitar solo explodes"
+        ],
+        "tips": [
+          "Gilmour structured the solo in three distinct sonic textures: dry and compressed, double-tracked through a custom fuzz, and wide open with rich reverb/delay",
+          "The shift from 7/4 to 4/4 creates an immense feeling of acceleration and release",
+          "Count 7/4 as two groups: a measure of 4/4 plus a measure of 3/4"
+        ],
+        "chords": [
+          "Bm",
+          "Em",
+          "F#m"
+        ],
+        "progression": "Bm - Em - F#m"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "7/4 Main Bass & Guitar Riff",
+      "timeStamp": "0:00-0:45",
+      "technique": "7/4 Asymmetric Meter",
+      "key": "B Minor",
+      "description": "One of the most famous odd-meter guitar and bass riffs in music history.",
+      "chords": [
+        "Bm"
+      ],
+      "progression": "7/4 Riff in B Minor",
+      "notes": [
+        "Count 1-2-3-4-5-6-7 per measure",
+        "Crisp pick articulation on the single notes",
+        "Lock tightly with the rhythmic cash register sound effects"
+      ],
+      "alphaTab": ":8 2.5 4.5 4.5 2.4 :4 4.4 :8 2.4 4.4 2.5 :4 2.6 | :8 2.5 4.5 4.5 2.4 :4 4.4 :8 2.4 4.4 2.5 :4 2.6 |",
+      "exerciseLabel": "7/4 Walking Riff Hook"
+    },
+    {
+      "name": "7/4 Verse Chord Stabs",
+      "timeStamp": "0:46-1:30",
+      "technique": "Staccato Chord Comping",
+      "key": "B Minor",
+      "description": "Tight staccato chord stabs on Bm7 supporting David Gilmour's vocal lines.",
+      "chords": [
+        "Bm7",
+        "Em7",
+        "F#m7"
+      ],
+      "progression": "7/4 Minor Blues Chords",
+      "notes": [
+        "Kill note duration instantly with fretting fingers",
+        "Hit beats 1, 3, 5, and 7 with precision",
+        "Leave space for the vocal narrative"
+      ],
+      "alphaTab": ":4 (7.6 9.5 9.4 7.3 7.2 7.1) :4 (7.6 9.5 9.4 7.3 7.2 7.1) :4 (7.6 9.5 9.4 7.3 7.2 7.1) :2 (7.6 9.5 9.4 7.3 7.2 7.1) :4 (7.6 9.5 9.4 7.3 7.2 7.1) |",
+      "exerciseLabel": "7/4 Verse Chord Stabs"
+    },
+    {
+      "name": "4/4 Guitar Solo Fire",
+      "timeStamp": "3:05-4:40",
+      "technique": "Three-Stage Solo Mastery",
+      "key": "B Blues",
+      "description": "Gilmour's legendary three-stage guitar solo shifting into driving 4/4 blues-rock.",
+      "chords": [
+        "Bm",
+        "Em",
+        "F#m"
+      ],
+      "progression": "12-Bar Blues in 4/4",
+      "notes": [
+        "Sudden shift to straight 4/4 feel",
+        "Aggressive blues pentatonic bends in 7th position",
+        "Screaming pick harmonics and singing vibrato"
+      ],
+      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 9.3 :4 7.3 | :8 9.4 7.4 9.4 7.4 :2 9.4 | :1 (7.6 9.5 9.4 7.3 7.2 7.1) |",
+      "exerciseLabel": "4/4 Blues Solo Lead"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1969 Fender Stratocaster ('The Black Strat')",
+      "alternatives": [
+        "Fender American Vintage II '57 Stratocaster",
+        "Squier Classic Vibe '50s Strat",
+        "Gibson Les Paul Standard"
+      ],
+      "pickup": "Bridge single-coil for cutting 7/4 riff and searing 4/4 solo lead"
+    },
+    "amp": {
+      "recommended": "Hiwatt Custom 100 DR103 through WEM 4x12 and Fender Twin Reverb",
+      "alternatives": [
+        "Marshall JCM800",
+        "Vox AC30",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "5.5 (clean punch with aggressive pick response)",
+        "treble": "7",
+        "middle": "7",
+        "bass": "6",
+        "presence": "6.5"
+      }
+    },
+    "effects": {
+      "distortion": "Colorsound Power Boost & Dallas Arbiter Fuzz Face (Silicon)",
+      "delay": "Binson Echorec 2 tape echo (for third solo section)",
+      "reverb": "Abbey Road studio chamber reverb",
+      "other": "Dunlop 0.88mm tortex plectrum"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "The 7/4 Riff Notes",
+      "steps": [
+        "Learn the exact note sequence of the walking riff on strings 5, 4, and 6",
+        "Count 1-2-3-4-5-6-7 slowly at 80 BPM",
+        "Lock the riff into continuous loops without hesitating on beat 1"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "7/4 Chords & 4/4 Solo Shift",
+      "steps": [
+        "Master the staccato Bm7 chord stabs in 7/4 time",
+        "Practice the metric transition from 7/4 verse into straight 4/4 rock",
+        "Play along with the studio track at 120 BPM"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "advanced": {
+      "title": "The Complete Three-Stage Solo",
+      "steps": [
+        "Learn all three choruses of Gilmour's 4/4 solo note-for-note",
+        "Replicate the sonic progression: dry compressed clean → double-tracked fuzz → soaring wet delay",
+        "Master Gilmour's aggressive full-step bends, pinch harmonics, and wide vibrato"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Dropping the 7th beat in the 7/4 riff (turning it accidentally into 6/4 or 4/4)",
+      "Getting thrown by the sudden time signature shift from 7/4 to 4/4 at the solo",
+      "Under-bending on the 10th fret high E string in the solo"
+    ],
+    "practiceRoutine": [
+      "5 minutes: 7/4 counting drill out loud (1-2-3-4, 1-2-3)",
+      "10 minutes: 7/4 walking riff at 90 BPM → 120 BPM with metronome",
+      "5 minutes: Metric transition drill (4 bars of 7/4 into 4 bars of 4/4)",
+      "5 minutes: 4/4 solo phrasing and bending practice"
+    ],
+    "focusAreas": [
+      "7/4 time signature stability",
+      "Clean staccato muting on chord stabs",
+      "Pitch precision on high blues bends"
+    ],
+    "metronomeWork": [
+      "Set metronome to 7/4 at 100 BPM, counting 1-2-3-4-5-6-7 with accents on beats 1 and 5"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Shine On You Crazy Diamond",
+        "difficulty": "Advanced",
+        "similarity": "David Gilmour's masterclass in slow blues phrasing, tape delay, and singing Stratocaster sustain"
+      },
+      {
+        "title": "Time",
+        "difficulty": "Advanced",
+        "similarity": "Another monumental Dark Side of the Moon guitar solo featuring explosive fuzz-driven blues phrasing"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Black Dog",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Mastery of complex shifting metric accents and driving blues-rock power"
+      },
+      {
+        "title": "Tom Sawyer",
+        "artist": "Rush",
+        "difficulty": "Advanced",
+        "similarity": "Prog rock classic featuring 7/8 and 4/4 time signature transitions and razor-sharp guitar riffs"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Shine On You Crazy Diamond",
+        "artist": "Pink Floyd",
+        "difficulty": "Advanced",
+        "similarity": "Deepen your David Gilmour phrasing mastery with majestic slow-blues themes and atmospheric delays"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 99,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "advanced",
+      "blues-scale",
+      "bending",
+      "vibrato",
+      "minor-key",
+      "lead-guitar",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "4-6 weeks"
+  }
+}

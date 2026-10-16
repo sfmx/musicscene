@@ -1,0 +1,323 @@
+{
+  "songInfo": {
+    "title": "Karma Police",
+    "artist": "Radiohead",
+    "album": "OK Computer",
+    "released": "1997",
+    "genre": "Alternative Rock / Art Rock",
+    "tempo": "75 BPM",
+    "duration": "4:24",
+    "key": "A Minor / E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor / E minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor / Aeolian",
+          "notes": "A - B - C - D - E - F - G",
+          "application": "Frames Thom Yorke's descending acoustic piano and guitar chords in the verse"
+        },
+        {
+          "scale": "B natural minor",
+          "notes": "B - C# - D - E - F# - G - A",
+          "application": "Dictates the dramatic bridge modulation ('For a minute there, I lost myself')"
+        }
+      ],
+      "modalCharacter": "Haunting, Beatles-esque baroque alternative ballad featuring rich slash chords, descending basslines, and swirling tape echo feedback",
+      "keySignature": "No sharps or flats (verses) / 2 sharps (bridge)",
+      "relativeMinor": "C major is the relative major of A minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "D/F#",
+          "Em",
+          "G",
+          "F",
+          "C",
+          "Bm"
+        ],
+        "progression": "i - IV6 - v - VII - VI - III - ii",
+        "progressionDescription": "Stepwise descending acoustic progression in A minor, resolving into E minor and modulating to B minor in the ethereal bridge.",
+        "description": "Stepwise descending acoustic progression in A minor, resolving into E minor and modulating to B minor in the ethereal bridge."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse",
+          "progression": "Am - D/F# - Em - G - Am - F - Em - G",
+          "romanNumerals": "i - IV6 - v - VII - i - VI - v - VII",
+          "description": "Acoustic strumming with the D/F# thumb bass chord creating smooth descending voice leading"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - D - G - F# - Em",
+          "romanNumerals": "III - IV - VII - VII/3 - v",
+          "description": "Major lift under 'This is what you'll get when you mess with us'"
+        },
+        {
+          "section": "Bridge Outro",
+          "progression": "Bm - D - G - D - C - Bm - D",
+          "romanNumerals": "ii - IV - VII - IV - III - ii - IV (in A Minor)",
+          "description": "Ethereal modulation into B minor supporting the iconic 'For a minute there, I lost myself' vocal hook"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Melancholic tonic establishing the song's reflective mood",
+        "D/F# (IV6) - Major IV chord with inverted F# bass note providing sweet Dorian warmth",
+        "Em (v) - Minor dominant smoothing the descent into G",
+        "F (VI) - Dark submediant chord locking the progression into natural minor",
+        "Bm (Bridge Tonic) - Unexpected key shift that creates the feeling of drifting into dreamlike surrender"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Thumb-Over Bass Inversions & Acoustic Dynamics",
+      "description": "Fretting the low F# bass note on the 2nd fret of the 6th string with the thumb while holding an open D triad, creating smooth stepwise bass descent",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "D/F# chord: 2-X-0-2-3-2 (thumb on 2nd fret low E, mute A string, open D, fretted G/B/E)",
+          "Verse acoustic walkdown: Am → D/F# → Em → G",
+          "Bridge picking pattern: Arpeggiated Bm, D, and C voicings"
+        ],
+        "sequence": [
+          "Strum Am with steady down-up eighth note groove",
+          "Wrap thumb over to catch 2nd fret on the low E string for D/F#",
+          "Transition smoothly to open Em and full G major",
+          "Swell into the chorus with heavier right-hand pick attack"
+        ],
+        "tips": [
+          "Keep your thumb relaxed when wrapping around the neck—don't squeeze the fretboard",
+          "In the bridge, Jonny Greenwood generates the space-age roar using a Roland Space Echo pedal driven into self-oscillation",
+          "Thom Yorke composed this acoustic rhythm bed inspired by The Beatles' 'Sexy Sadie'"
+        ],
+        "chords": [
+          "Am",
+          "D/F#",
+          "Em",
+          "G",
+          "F",
+          "C",
+          "Bm"
+        ],
+        "progression": "Am - D/F# - Em - G"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Intro & Verse",
+      "timeStamp": "0:00-0:45",
+      "technique": "Slash Chord Voice Leading",
+      "key": "A Minor",
+      "description": "Thom Yorke's signature acoustic guitar chords with thumb-over D/F# bass movement.",
+      "chords": [
+        "Am",
+        "D/F#",
+        "Em",
+        "G"
+      ],
+      "progression": "Am - D/F# - Em - G",
+      "notes": [
+        "Wrap thumb over the neck for the F# bass note",
+        "Keep the acoustic strumming steady and percussive",
+        "Mute the 5th (A) string during D/F#"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (2.6 0.4 2.3 3.2) :4 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.5 2.4 2.3 1.2 0.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Intro Acoustic Walkdown"
+    },
+    {
+      "name": "Chorus Lift",
+      "timeStamp": "0:58-1:20",
+      "technique": "Open Strumming Dynamics",
+      "key": "G Major",
+      "description": "The swelling chorus hook moving from C to D, G, F#, and Em.",
+      "chords": [
+        "C",
+        "D",
+        "G",
+        "F#",
+        "Em"
+      ],
+      "progression": "C - D - G - F# - Em",
+      "notes": [
+        "Drive with stronger right-hand strumming",
+        "Catch the quick passing F# bass note from G to Em",
+        "Let the low Em rumble with tube resonance"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (2.6 4.5 4.4 3.3 2.2 2.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Chorus Strummed Hook"
+    },
+    {
+      "name": "Bridge Outro Climax",
+      "timeStamp": "2:33-4:24",
+      "technique": "Ethereal Key Modulation",
+      "key": "B Minor",
+      "description": "The sublime outro section 'For a minute there, I lost myself' with delay feedback swell.",
+      "chords": [
+        "Bm",
+        "D",
+        "G",
+        "C"
+      ],
+      "progression": "Bm - D - G - D - C - Bm - D",
+      "notes": [
+        "Arpeggiate the Bm barre chord cleanly",
+        "Swelling delay repeats into self-oscillation",
+        "Build dynamic intensity with the full rhythm section"
+      ],
+      "alphaTab": ":4 7.3 :4 9.3 :2 7.2 | :4 8.2 :4 7.2 :2 5.2 | :1 7.3 |",
+      "exerciseLabel": "Bridge Outro Melody"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1963 Gibson Hummingbird or Martin 000-18 Acoustic",
+      "alternatives": [
+        "Epiphone Hummingbird",
+        "Fender Telecaster Plus",
+        "Taylor 214ce"
+      ],
+      "pickup": "Under-saddle piezo on acoustic; Lace Sensor Blue/Red on Telecaster Plus"
+    },
+    "amp": {
+      "recommended": "Vox AC30 Top Boost & Fender Twin Reverb",
+      "alternatives": [
+        "Vox AC15",
+        "Fender Blues Junior",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "3.5 (clean acoustic transparency with warm edge)",
+        "treble": "6",
+        "middle": "6.5",
+        "bass": "5.5",
+        "presence": "5"
+      }
+    },
+    "effects": {
+      "distortion": "Marshall ShredMaster (engaged for heavy chorus swells)",
+      "delay": "Roland Space Echo RE-201 (feedback maxed for outro spaceship sounds)",
+      "reverb": "Large room reverb",
+      "other": "Dunlop 0.60mm acoustic plectrum"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Verse Open Chords",
+      "steps": [
+        "Learn the open chord shapes: Am, Em, G, F, and C",
+        "Practice steady down-up eighth note strumming at 75 BPM",
+        "Substitute standard D for D/F# while building finger flexibility"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Thumb-Over D/F# & Bridge",
+      "steps": [
+        "Master wrapping your thumb around the neck to cleanly fret the 2nd fret low E (F#)",
+        "Learn the B minor barre chord progression in the bridge",
+        "Play smoothly through the verse, chorus, and bridge without rhythmic hesitation"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Electric Texture & Ambient Delay",
+      "steps": [
+        "Incorporate Jonny Greenwood's electric arpeggios and delay feedback swells",
+        "Control the dynamic arc from intimate acoustic verse to roaring stadium outro",
+        "Replicate the authentic OK Computer tape-echo ambiance live"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting the high E string accidentally when wrapping the thumb over for D/F#",
+      "Rushing the relaxed, swaying 75 BPM tempo",
+      "Playing too aggressively in the verse instead of saving power for the outro"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Thumb-over D/F# chord isolation drill",
+      "5 minutes: Verse chord transition flow with metronome at 75 BPM",
+      "5 minutes: Bridge Bm to D and G arpeggio picking",
+      "5 minutes: Full track playthrough"
+    ],
+    "focusAreas": [
+      "Thumb-over fretting comfort",
+      "Clean string separation on acoustic strumming",
+      "Dynamic pacing between sections"
+    ],
+    "metronomeWork": [
+      "Set metronome to 75 BPM with eighth-note clicks",
+      "Keep the right hand wrist relaxed in constant pendulum motion"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Creep",
+        "difficulty": "Beginner",
+        "similarity": "Radiohead's breakthrough anthem featuring clean acoustic strums and explosive dead-stop guitar crunches"
+      },
+      {
+        "title": "No Surprises",
+        "difficulty": "Intermediate",
+        "similarity": "Glockenspiel-like high electric arpeggios and poignant British melancholy"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Tears in Heaven",
+        "artist": "Eric Clapton",
+        "difficulty": "Intermediate",
+        "similarity": "Masterful use of thumb-over slash chords (D/F#) in an emotive acoustic ballad"
+      },
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Sophisticated stepwise acoustic voice leading and timeless British songwriting"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "difficulty": "Beginner",
+        "similarity": "Master the classic 4-chord rock progression (I - III - IV - iv) with iconic heavy crunch"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "intermediate",
+      "acoustic-guitar",
+      "open-chords",
+      "voice-leading",
+      "minor-key",
+      "rhythm-guitar",
+      "strumming"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

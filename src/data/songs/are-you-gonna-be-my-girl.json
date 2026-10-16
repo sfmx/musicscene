@@ -1,0 +1,310 @@
+{
+  "songInfo": {
+    "title": "Are You Gonna Be My Girl",
+    "artist": "Jet",
+    "album": "Get Born",
+    "released": "2003",
+    "genre": "Garage Rock / Hard Rock",
+    "tempo": "205 BPM",
+    "duration": "3:34",
+    "key": "A Major / A Mixolydian",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A major / A Mixolydian",
+      "scalesUsed": [
+        {
+          "scale": "A minor pentatonic / blues scale",
+          "notes": "A - C - D - Eb - E - G",
+          "application": "Supplies the driving single-note bass and guitar riff hooks and fiery blues solo fills"
+        },
+        {
+          "scale": "A Mixolydian mode",
+          "notes": "A - B - C# - D - E - F# - G",
+          "application": "Powers the Australian garage rock chord changes featuring the borrowed ♭VII (G) chord"
+        }
+      ],
+      "modalCharacter": "High-octane Australian garage rock revival blending 1960s Motown shuffle energy with AC/DC power-chord swagger",
+      "keySignature": "3 sharps (A major)",
+      "relativeMinor": "F# minor is the relative minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A5",
+          "C5",
+          "D5",
+          "G",
+          "D",
+          "A"
+        ],
+        "progression": "I5 - ♭III5 - IV5 | ♭VII - IV - I",
+        "progressionDescription": "High-tempo garage rock shuffle riff in A, moving into sharp staccato power chords and a driving ♭VII - IV - I chorus.",
+        "description": "High-tempo garage rock shuffle riff in A, moving into sharp staccato power chords and a driving ♭VII - IV - I chorus."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Riff Hook",
+          "progression": "Single-note A walkup into A5 - C5 - D5",
+          "romanNumerals": "Walkup -> I5 - ♭III5 - IV5",
+          "description": "Fast-driving single note walkup answering the tambourine before stabbing into power chords"
+        },
+        {
+          "section": "Verse",
+          "progression": "A5 groove",
+          "romanNumerals": "I5 Pedal",
+          "description": "Muted percussive eighth-note rhythm with sudden dynamic stops"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - D - A",
+          "romanNumerals": "♭VII - IV - I",
+          "description": "The classic rock double-plagal turnaround driving the anthemic vocal hook"
+        }
+      ],
+      "harmonicFunction": [
+        "A5 (I5) - The stomping garage rock home tonic",
+        "C5 (♭III5) - Blues-rock minor third power chord creating gritty push",
+        "D5 (IV5) - Subdominant chord completing the energetic riff cadence",
+        "G (♭VII) - Mixolydian subtonic chord that gives the chorus its triumphant pub rock drive"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "High-Tempo Motown Shuffle & Staccato Power Stabs",
+      "description": "Strumming tight, palm-muted power chords at a blistering 205 BPM tempo, cutting off note decay instantly with fretting-hand mutes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Intro walkup: Open low E → fret 3 (G) → fret 4 (G#) → open A string",
+          "Power chords: A5 (fret 5 low E), C5 (fret 3 A), D5 (fret 5 A)",
+          "Chorus open chords: G (3-2-0-0-3-3), D (X-X-0-2-3-2), A (X-0-2-2-2-0)"
+        ],
+        "sequence": [
+          "Lock into the tambourine and hi-hat beat on beats 2 and 4",
+          "Execute the chromatic walkup on the low strings",
+          "Stab the power chords cleanly with downstrokes",
+          "Choke all strings immediately on beat 4 for dramatic silence"
+        ],
+        "tips": [
+          "Keep your right-hand wrist loose: tense forearms will fatigue quickly at 205 BPM",
+          "Cameron Muncey used a Gibson Flying V through a cranked Marshall JCM800 for maximum Australian pub crunch",
+          "Honor every stop: the tight full-band rests make the song sound huge"
+        ],
+        "chords": [
+          "A5",
+          "C5",
+          "D5",
+          "G",
+          "D",
+          "A"
+        ],
+        "progression": "A5 - C5 - D5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "High-Octane Intro Riff",
+      "timeStamp": "0:00-0:30",
+      "technique": "Fast Walkup & Power Chords",
+      "key": "A Major",
+      "description": "One of the definitive guitar hooks of the 2000s garage rock revival.",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A Walkup -> A5 - C5 - D5",
+      "notes": [
+        "Fast chromatic bass walkup on low E",
+        "Staccato power chord stabs on A5, C5, and D5",
+        "Maintain relentless forward energy at 205 BPM"
+      ],
+      "alphaTab": ":8 0.6 3.6 4.6 :4 0.5 :8 0.5 3.5 4.5 | :4 (5.6 7.5 7.4) :4 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Main Garage Rock Riff"
+    },
+    {
+      "name": "Chorus Anthem",
+      "timeStamp": "0:45-1:05",
+      "technique": "Double-Plagal Turnaround",
+      "key": "A Mixolydian",
+      "description": "The soaring chorus 'So what you got to say? She's with me and I'm with her'.",
+      "chords": [
+        "G",
+        "D",
+        "A"
+      ],
+      "progression": "G - D - A",
+      "notes": [
+        "Full open chord strumming",
+        "Accent the transition from G to D to A",
+        "Let the final A chord ring with stadium power"
+      ],
+      "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Chorus Strummed Progression"
+    },
+    {
+      "name": "Blues Guitar Solo",
+      "timeStamp": "1:55-2:20",
+      "technique": "Fast Minor Pentatonic Fills",
+      "key": "A Blues",
+      "description": "Cameron Muncey's raw, Chuck Berry-inspired blues solo in the 5th position.",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A Blues Riff",
+      "notes": [
+        "5th-position A minor pentatonic box licks",
+        "Aggressive pick attack with natural tube saturation",
+        "Quick double-stops on the high E and B strings"
+      ],
+      "alphaTab": ":8 5.1 8.1 5.1 8.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :1 (5.6 7.5 7.4) |",
+      "exerciseLabel": "Fast Blues Solo Licks"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Flying V or Gibson ES-335",
+      "alternatives": [
+        "Gibson Les Paul Standard",
+        "Epiphone Flying V",
+        "Fender Telecaster"
+      ],
+      "pickup": "Bridge humbucker for biting garage-rock cut and high-mid punch"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 2203 100W Head & 1960A 4x12 cab",
+      "alternatives": [
+        "Marshall DSL40CR",
+        "Vox AC30",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "7.5 (crunchy British tube bite)",
+        "treble": "7",
+        "middle": "7.5",
+        "bass": "6",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez TS9 Tube Screamer (for solo boost)",
+      "reverb": "Short spring reverb",
+      "other": "Heavy celluloid plectrums (1.0mm) for fast downstrokes"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Chords & Rhythm",
+      "steps": [
+        "Learn the open G, D, and A chords",
+        "Practice shifting between them at a comfortable 140 BPM",
+        "Build speed up to the album tempo of 205 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Main Riff & Staccato Mutes",
+      "steps": [
+        "Learn the chromatic intro walkup on the low strings",
+        "Master the A5, C5, and D5 power chord stabs with clean hand mutes",
+        "Lock tightly with the fast drum beat without dragging or rushing"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Solo & Full-Speed Endurance",
+      "steps": [
+        "Learn Cameron Muncey's fast 5th-position blues solo note-for-note",
+        "Build right-hand stamina to play all 3.5 minutes at 205 BPM with zero tension",
+        "Perform live with authentic Australian pub rock swagger"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Tensing up the right forearm during the 205 BPM shuffle rhythm",
+      "Letting open strings ring during the silent stop-time pauses",
+      "Rushing ahead of the drum beat on the intro walkup"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Chromatic walkup at 150 BPM → 180 BPM → 205 BPM",
+      "5 minutes: Power chord staccato muting drill with metronome",
+      "5 minutes: 5th-position blues solo double-stop licks",
+      "5 minutes: Full track play-along"
+    ],
+    "focusAreas": [
+      "Right-hand wrist relaxation at high tempo",
+      "Crisp silence on the stop-time chokes",
+      "Clean power chord transitions"
+    ],
+    "metronomeWork": [
+      "Start metronome at 160 BPM to ensure clean pick placement",
+      "Advance by 10 BPM increments to 205 BPM"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Rollover DJ",
+        "difficulty": "Intermediate",
+        "similarity": "High-octane Australian garage rock riffs, driving basslines, and gritty dual guitar crunch"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Last Nite",
+        "artist": "The Strokes",
+        "difficulty": "Beginner",
+        "similarity": "2000s garage rock revival staple built on Motown rhythms, clean staccato chords, and catchy lead fills"
+      },
+      {
+        "title": "Seven Nation Army",
+        "artist": "The White Stripes",
+        "difficulty": "Beginner",
+        "similarity": "Anthemic modern garage rock driven by an immovable octave riff and raw tube distortion"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Last Nite",
+        "artist": "The Strokes",
+        "difficulty": "Beginner",
+        "similarity": "Sharpen your garage rock rhythm guitar pocket with Nick Valensi's crisp chord comping"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "2000s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "beginner",
+      "power-chords",
+      "blues-scale",
+      "strumming",
+      "rhythm-guitar",
+      "lead-guitar",
+      "electric-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

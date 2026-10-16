@@ -109,6 +109,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'black-dog',
   'never-tear-us-apart',
   'my-hero',
+  'shine-on-you-crazy-diamond',
+  'karma-police',
+  'are-you-gonna-be-my-girl',
+  'snow-hey-oh',
+  'red-house',
+  'learn-to-fly',
+  'babe-im-gonna-leave-you',
+  'working-class-man',
+  'fell-on-black-days',
+  'money',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

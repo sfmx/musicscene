@@ -188,6 +188,16 @@ import whiteRoomData from '@/data/songs/white-room.json';
 import blackDogData from '@/data/songs/black-dog.json';
 import neverTearUsApartData from '@/data/songs/never-tear-us-apart.json';
 import myHeroData from '@/data/songs/my-hero.json';
+import shineOnYouCrazyDiamondData from '@/data/songs/shine-on-you-crazy-diamond.json';
+import karmaPoliceData from '@/data/songs/karma-police.json';
+import areYouGonnaBeMyGirlData from '@/data/songs/are-you-gonna-be-my-girl.json';
+import snowHeyOhData from '@/data/songs/snow-hey-oh.json';
+import redHouseData from '@/data/songs/red-house.json';
+import learnToFlyData from '@/data/songs/learn-to-fly.json';
+import babeImGonnaLeaveYouData from '@/data/songs/babe-im-gonna-leave-you.json';
+import workingClassManData from '@/data/songs/working-class-man.json';
+import fellOnBlackDaysData from '@/data/songs/fell-on-black-days.json';
+import moneyData from '@/data/songs/money.json';
 
 export interface SongData {
   songInfo: {
@@ -594,6 +604,16 @@ const songDatabase: Record<string, SongData> = {
   'black-dog': blackDogData as SongData,
   'never-tear-us-apart': neverTearUsApartData as SongData,
   'my-hero': myHeroData as SongData,
+  'shine-on-you-crazy-diamond': shineOnYouCrazyDiamondData as SongData,
+  'karma-police': karmaPoliceData as SongData,
+  'are-you-gonna-be-my-girl': areYouGonnaBeMyGirlData as SongData,
+  'snow-hey-oh': snowHeyOhData as SongData,
+  'red-house': redHouseData as SongData,
+  'learn-to-fly': learnToFlyData as SongData,
+  'babe-im-gonna-leave-you': babeImGonnaLeaveYouData as SongData,
+  'working-class-man': workingClassManData as SongData,
+  'fell-on-black-days': fellOnBlackDaysData as SongData,
+  'money': moneyData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

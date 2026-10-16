@@ -1,0 +1,293 @@
+{
+  "songInfo": {
+    "title": "Babe I'm Gonna Leave You",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin",
+    "released": "1969",
+    "genre": "Folk Rock / Hard Rock",
+    "tempo": "68 BPM",
+    "duration": "6:42",
+    "key": "A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor / Aeolian",
+          "notes": "A - B - C - D - E - F - G",
+          "application": "Governs the melancholic acoustic folk fingerpicking theme across the verses"
+        },
+        {
+          "scale": "A Dorian mode",
+          "notes": "A - B - C - D - E - F# - G",
+          "application": "Supplies the natural F# bass note in the Am/F# chord during the famous chromatic descent"
+        }
+      ],
+      "modalCharacter": "Dramatic folk-metal dynamic hybrid moving from delicate flamenco-inspired acoustic fingerpicking to colossal distorted hard-rock power chords",
+      "keySignature": "No sharps or flats (A minor)",
+      "relativeMinor": "C major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "Am/G",
+          "Am/F#",
+          "F",
+          "E7",
+          "C",
+          "D"
+        ],
+        "progression": "i - i4/2 - i6 - VI - V7",
+        "progressionDescription": "Classical chromatic descending bassline in A minor (A → G → F# → F → E) alternating with explosive hard-rock power chords.",
+        "description": "Classical chromatic descending bassline in A minor (A → G → F# → F → E) alternating with explosive hard-rock power chords."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Fingerpicked Descent",
+          "progression": "Am - Am/G - Am/F# - F - E7",
+          "romanNumerals": "i - i4/2 - i6 - VI - V7",
+          "description": "Intricate PIMA fingerpicked arpeggios over a chromatic descending bassline"
+        },
+        {
+          "section": "Heavy Electric Chorus Explosion",
+          "progression": "Am - C - D - F - E",
+          "romanNumerals": "i - III - IV - VI - V",
+          "description": "Thunderous distorted full-band crashes under Robert Plant's soaring cries"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Somber acoustic minor tonic",
+        "Am/G (i4/2) - First stepwise bass drop (A → G) maintaining minor suspense",
+        "Am/F# (i6) - Dorian major-sixth chord (F#) creating poignant flamenco-like coloration",
+        "F (VI) - Dark submediant resolving the chromatic descent",
+        "E7 (V7) - Classical major dominant containing the G# leading tone pulling decisively back into Am"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Flamenco-Style Fingerpicking & Dynamic Light/Shade Explosions",
+      "description": "Combining classical thumb-and-finger PIMA arpeggio rolls on steel-string acoustic with sudden explosive transitions into cranked electric power chords",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bass walkdown: Open A string → 3rd fret low E (G) → 2nd fret low E (F#) → 1st fret low E (F) → open low E",
+          "Upper voices: Ringing C, E, and A triad notes on strings 2, 3, and 4",
+          "Flamenco-style rasgueado acoustic strums and rapid pick transitions"
+        ],
+        "sequence": [
+          "Pluck bass note with thumb (P)",
+          "Roll upward through strings 4, 3, and 2 with index (I), middle (M), and ring (A)",
+          "Maintain smooth chromatic bass descent without stopping upper voice arpeggios",
+          "Slam into the heavy electric section with violent downstrokes"
+        ],
+        "tips": [
+          "Jimmy Page played his 1968 Gibson J-200 acoustic, using light and shade dynamics ('dramatically loud and dramatically soft')",
+          "Use thumb over the neck to fret the 1st fret F and 2nd fret F# notes on the low E string",
+          "The electric crunch was a 1959 Telecaster through a cranked Supro amplifier"
+        ],
+        "chords": [
+          "Am",
+          "Am/G",
+          "Am/F#",
+          "F",
+          "E7"
+        ],
+        "progression": "Am - Am/G - Am/F# - F - E7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Fingerpicked Chromatic Descent",
+      "timeStamp": "0:00-1:05",
+      "technique": "PIMA Fingerpicking & Chromatic Bass",
+      "key": "A Minor",
+      "description": "Page's legendary acoustic fingerpicking masterclass opening Led Zeppelin's debut album side one.",
+      "chords": [
+        "Am",
+        "Am/G",
+        "Am/F#",
+        "F",
+        "E7"
+      ],
+      "progression": "Am - Am/G - Am/F# - F - E7",
+      "notes": [
+        "Maintain steady alternating thumb bass",
+        "Let upper chord voices ring continuously",
+        "Accentuate the chromatic bassline (A → G → F# → F → E)"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 3.6 2.4 2.3 1.2 | :8 2.6 2.4 2.3 1.2 1.6 3.4 2.3 1.2 | :1 (0.6 2.5 0.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Fingerpicked Acoustic Walkdown"
+    },
+    {
+      "name": "Heavy Electric Explosion",
+      "timeStamp": "1:45-2:25",
+      "technique": "Light and Shade Dynamics",
+      "key": "A Minor",
+      "description": "The sudden eruption of full-band distorted rock power on 'Baby, baby, I wanna leave you!'.",
+      "chords": [
+        "Am",
+        "C",
+        "D",
+        "F",
+        "E"
+      ],
+      "progression": "Am - C - D - F - E",
+      "notes": [
+        "Massive dynamic jump from delicate acoustic to roaring electric",
+        "Heavy downstroke power chords",
+        "Lock tight with John Bonham's thunderous bass drum"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2) :2 (3.5 2.4 0.3 1.2) | :2 (0.4 2.3 3.2 2.1) :4 (1.6 3.5 3.4 2.3) :4 (0.6 2.5 2.4 1.3) |",
+      "exerciseLabel": "Heavy Electric Stabs"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1968 Gibson J-200 Acoustic & 1959 Fender Telecaster",
+      "alternatives": [
+        "Martin D-28",
+        "Epiphone J-200",
+        "Gibson Les Paul Standard"
+      ],
+      "pickup": "Under-saddle acoustic mic; Bridge single-coil on Telecaster"
+    },
+    "amp": {
+      "recommended": "Supro 1624T Dual Tone 1x12 Tube Combo & Marshall Plexi",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Vox AC15",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "8 (cranked small-combo tube saturation for electric)",
+        "treble": "6.5",
+        "middle": "7",
+        "bass": "6",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Sola Sound Tone Bender MKII Fuzz (for electric explosions)",
+      "reverb": "Olympic Studios natural room ambience",
+      "other": "Natural fingernails for acoustic fingerstyle"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chord Shapes & Chromatic Bass",
+      "steps": [
+        "Learn the five chord shapes: Am, Am/G, Am/F#, F, and E7",
+        "Practice the chromatic bass walkdown on strings 5 and 6 at 50 BPM",
+        "Strum in simple quarter notes"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "PIMA Fingerpicking Arpeggios",
+      "steps": [
+        "Master the thumb-index-middle-ring fingerpicking cycle cleanly",
+        "Execute the chromatic bass shift without interrupting upper chord sustain",
+        "Play along with the studio track at 68 BPM"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "advanced": {
+      "title": "Extreme Dynamic Contrast",
+      "steps": [
+        "Transition seamlessly between delicate folk fingerpicking and violent rock power chords",
+        "Incorporate flamenco-inspired rasgueado strums before the electric drops",
+        "Capture Jimmy Page's definitive 'light and shade' studio production live"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting upper strings mute during the thumb fretting on F and F#",
+      "Rushing the tempo during the acoustic fingerpicking sections",
+      "Failing to make the electric explosion dramatically louder than the acoustic verse"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Chromatic bass walkdown isolation drill",
+      "10 minutes: PIMA fingerpicking pattern at 55 BPM → 68 BPM with metronome",
+      "5 minutes: Heavy electric chord transition timing",
+      "5 minutes: Full track dynamic run-through"
+    ],
+    "focusAreas": [
+      "Thumb-over fretting clarity on strings 5 and 6",
+      "Smooth fingerpicking roll consistency",
+      "Extreme dynamic volume range"
+    ],
+    "metronomeWork": [
+      "Keep metronome at 68 BPM with steady eighth-note subdivision"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Black Dog",
+        "difficulty": "Advanced",
+        "similarity": "Jimmy Page's complex metric syncopation, winding blues riffs, and heavy overdrive"
+      },
+      {
+        "title": "Whole Lotta Love",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic blues-rock low E riffing, swagger, and dynamic rock stops"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Shape of My Heart",
+        "artist": "Sting",
+        "difficulty": "Advanced",
+        "similarity": "Masterclass acoustic fingerpicking built around a descending stepwise bassline"
+      },
+      {
+        "title": "White Room",
+        "artist": "Cream",
+        "difficulty": "Intermediate",
+        "similarity": "Descending Aeolian tetrachord progression and dark dramatic rock arranging"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Black Dog",
+        "artist": "Led Zeppelin",
+        "difficulty": "Advanced",
+        "similarity": "Advance from acoustic folk dynamics to Page's most rhythmically intricate hard-rock riff"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "advanced",
+      "fingerstyle",
+      "acoustic-guitar",
+      "voice-leading",
+      "minor-key",
+      "rhythm-guitar",
+      "lead-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "4-6 weeks"
+  }
+}
