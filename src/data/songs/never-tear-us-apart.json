@@ -1,0 +1,279 @@
+{
+  "songInfo": {
+    "title": "Never Tear Us Apart",
+    "artist": "INXS",
+    "album": "Kick",
+    "released": "1987",
+    "genre": "Rock / Soul / Pop",
+    "tempo": "96 BPM",
+    "duration": "3:05",
+    "key": "A Minor / C Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor / C major",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor / Aeolian",
+          "notes": "A - B - C - D - E - F - G",
+          "application": "Provides the somber, cinematic foundation for the dramatic verse chords (Am - F - Dm - F)"
+        },
+        {
+          "scale": "C major pentatonic",
+          "notes": "C - D - E - G - A",
+          "application": "Frames the hopeful, anthemic chorus progression and guitar fills (C - F - C - F)"
+        }
+      ],
+      "modalCharacter": "Cinematic, dramatic power ballad built around orchestral stop-time pauses and emotional soul-rock dynamics",
+      "keySignature": "No sharps or flats (A minor)",
+      "relativeMinor": "C major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "F",
+          "Dm",
+          "C"
+        ],
+        "progression": "i - VI - iv - III",
+        "progressionDescription": "Stirring ballad progression moving from moody A minor verses into soaring C major choruses with dramatic stop-time rests.",
+        "description": "Stirring ballad progression moving from moody A minor verses into soaring C major choruses with dramatic stop-time rests."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Am - F - Dm - F",
+          "romanNumerals": "i - VI - iv - VI",
+          "description": "Atmospheric acoustic and clean electric chords interrupted by sudden dramatic full-band pauses"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - F - C - F",
+          "romanNumerals": "III - VI - III - VI (in A Minor)",
+          "description": "Uplifting shift into the relative major C supporting Michael Hutchence's iconic vocal climax"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - The melancholic emotional tonic establishing the song's tender vulnerability",
+        "F (VI) - The grand major submediant providing cinematic orchestral weight",
+        "Dm (iv) - Deepens the minor sentiment before resolving back to F",
+        "C (III / Tonic Major) - Triumphant release into the relative major in the chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Dramatic Stop-Time Dynamics & Acoustic/Electric Strumming",
+      "description": "Strumming resonant open chords that cut off dead with absolute silence on dramatic pause cues before re-entering on the downbeat",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Chords: Am (X-0-2-2-1-0), F (1-3-3-2-1-1 or X-X-3-2-1-1), Dm (X-X-0-2-3-1), C (X-3-2-0-1-0)",
+          "Stop-time pauses: Sudden silence on beat 1 during the orchestral string hits",
+          "Subtle clean electric arpeggio fills behind the acoustic strumming"
+        ],
+        "sequence": [
+          "Strum the Am chord with steady, relaxed quarter notes",
+          "Transition to F and allow the open strings to ring",
+          "Execute the sudden stop-time choke: cut all string vibration instantly with your palms",
+          "Swell into the chorus on C major"
+        ],
+        "tips": [
+          "Acoustic guitar provides the warm organic bed; electric guitar adds shimmer with subtle chorus and reverb",
+          "The silence during the stop-time pauses must be 100% quiet—no lingering finger buzz",
+          "Kirk Pengilly played the iconic saxophone solo live, while guitars hold the heavy C - F foundation"
+        ],
+        "chords": [
+          "Am",
+          "F",
+          "Dm",
+          "C"
+        ],
+        "progression": "Am - F - Dm - C"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Dramatic Verse & Stop-Time",
+      "timeStamp": "0:00-0:48",
+      "technique": "Stop-Time Dynamics & Chording",
+      "key": "A Minor",
+      "description": "Atmospheric acoustic strumming with the famous orchestral stop-time silences.",
+      "chords": [
+        "Am",
+        "F",
+        "Dm"
+      ],
+      "progression": "Am - F - Dm - F",
+      "notes": [
+        "Warm, steady acoustic strumming",
+        "Kill all sound instantly on the stop-time cues",
+        "Re-enter firmly on the downbeat"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Verse Chords & Stop-Time"
+    },
+    {
+      "name": "Chorus Anthem",
+      "timeStamp": "0:49-1:15",
+      "technique": "Relative Major Lift",
+      "key": "C Major",
+      "description": "The soaring chorus 'I was standing, you were there' moving between C and F.",
+      "chords": [
+        "C",
+        "F"
+      ],
+      "progression": "C - F - C - F",
+      "notes": [
+        "Broad, resonant open chord strumming",
+        "Accentuate beats 2 and 4",
+        "Let open strings ring naturally"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Chorus Strummed Anthem"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson J-200 Acoustic & 1962 Fender Stratocaster",
+      "alternatives": [
+        "Martin D-28",
+        "Fender Player Stratocaster",
+        "Epiphone J-200"
+      ],
+      "pickup": "Neck/Middle single-coil on Stratocaster; Under-saddle piezo on acoustic"
+    },
+    "amp": {
+      "recommended": "Roland JC-120 Jazz Chorus & DI Studio Acoustic Preamp",
+      "alternatives": [
+        "Fender Twin Reverb",
+        "Fishman Loudbox Mini",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "2.5 (crystal clean)",
+        "treble": "6.5",
+        "middle": "6",
+        "bass": "5",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "None (clean organic acoustic and electric tone)",
+      "chorus": "Roland built-in stereo chorus for electric shimmer",
+      "reverb": "Large studio hall reverb",
+      "other": "Nylon 0.60mm acoustic picks for smooth strumming"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & Strumming",
+      "steps": [
+        "Learn the fundamental chords: Am, Fmaj7 (or barre F), Dm, and C",
+        "Practice smooth transitions in quarter notes at 96 BPM",
+        "Strum the chorus progression (C - F - C - F)"
+      ],
+      "timeEstimate": "1 week"
+    },
+    "intermediate": {
+      "title": "The Stop-Time Choke",
+      "steps": [
+        "Master the sudden palm-mute cutoff on the stop-time pauses",
+        "Coordinate clean acoustic strumming with electric guitar shimmers",
+        "Play seamlessly through the verse and chorus transitions"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "advanced": {
+      "title": "Complete Arrangement & Dynamic Touch",
+      "steps": [
+        "Incorporate subtle electric arpeggios over the acoustic rhythm bed",
+        "Capture the epic emotional dynamics of the studio recording",
+        "Perform live with total control over dramatic silence"
+      ],
+      "timeEstimate": "2-3 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting open strings buzz or sustain during the stop-time pauses",
+      "Rushing through the silent beats",
+      "Fumbling the F major barre chord transition from Am"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Open chord transitions (Am → F → Dm → C)",
+      "5 minutes: Stop-time palm muting drill with metronome",
+      "5 minutes: Chorus dynamic strumming",
+      "5 minutes: Full track play-along"
+    ],
+    "focusAreas": [
+      "Complete silence during pauses",
+      "Smooth F chord fretting",
+      "Steady 96 BPM tempo control"
+    ],
+    "metronomeWork": [
+      "Practice with metronome at 96 BPM, ensuring clean stops on beat 1 and re-entry on beat 1 of the next measure"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Need You Tonight",
+        "difficulty": "Beginner",
+        "similarity": "Kick album rhythm guitar mastery, syncopated clean Strat tones, and dynamic space"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Don't Dream It's Over",
+        "artist": "Crowded House",
+        "difficulty": "Intermediate",
+        "similarity": "Classic Australasian pop balladry with lush clean chords and timeless songwriting"
+      },
+      {
+        "title": "Beds Are Burning",
+        "artist": "Midnight Oil",
+        "difficulty": "Intermediate",
+        "similarity": "Iconic Australian rock anthem driven by clean rhythmic stabs and powerful dynamic stops"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Don't Dream It's Over",
+        "artist": "Crowded House",
+        "difficulty": "Intermediate",
+        "similarity": "Advance to sophisticated suspended chords, slash chords, and Australasian melodic nuance"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": false,
+    "tags": [
+      "classic-rock",
+      "pop",
+      "beginner",
+      "open-chords",
+      "minor-key",
+      "strumming",
+      "rhythm-guitar",
+      "acoustic-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  }
+}

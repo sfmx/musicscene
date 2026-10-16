@@ -1,0 +1,306 @@
+{
+  "songInfo": {
+    "title": "My Hero",
+    "artist": "Foo Fighters",
+    "album": "The Colour and the Shape",
+    "released": "1997",
+    "genre": "Alternative Rock / Post-Grunge",
+    "tempo": "77 BPM",
+    "duration": "4:20",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Beginner",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Beginner",
+    "bass": "Beginner",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major / Ionian",
+          "notes": "E - F# - G# - A - B - C# - D#",
+          "application": "The triumphant framework for Dave Grohl's driving open octaves and ringing power chords"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Supplies the melodic notes for the soaring guitar octaves and chorus hooks"
+        }
+      ],
+      "modalCharacter": "Uplifting, stadium-sized alternative rock built on massive dynamic contrast, open string resonance, and driving octave riffs",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the relative minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E5",
+          "C#m7",
+          "Aadd9",
+          "Bsus4"
+        ],
+        "progression": "I - vi7 - IVadd9 - V",
+        "progressionDescription": "Classic emotional modern rock progression utilizing ringing open high E and B strings across all chord shapes.",
+        "description": "Classic emotional modern rock progression utilizing ringing open high E and B strings across all chord shapes."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Octave Riff",
+          "progression": "E octaves over rolling drums",
+          "romanNumerals": "I Octave Riff",
+          "description": "Driving octave line on the A and G strings (E → D# → C#) creating melodic tension over thunderous drums"
+        },
+        {
+          "section": "Verse",
+          "progression": "E5 - C#m7 - Aadd9",
+          "romanNumerals": "I - vi7 - IVadd9",
+          "description": "Chunky palm-muted power chords allowing open high strings to ring"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E5 - C#m7 - Aadd9 - Bsus4",
+          "romanNumerals": "I - vi7 - IV - V",
+          "description": "Explosive wall of overdriven guitars supporting the anthemic chorus hook"
+        }
+      ],
+      "harmonicFunction": [
+        "E5 (I) - Rock tonic providing huge low-end power and open string chime",
+        "C#m7 (vi7) - Minor submediant adding emotional bittersweet gravity",
+        "Aadd9 (IVadd9) - Subdominant chord with ringing open high B and E strings delivering uplifting dream-rock warmth",
+        "Bsus4 (V) - Suspended dominant chord building energy before resolving home to E"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Melodic Octave Riffing & Open-String Chime",
+      "description": "Fretting octave intervals on the 5th (A) and 3rd (G) strings while muting the middle D string with the pad of your index finger",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Octave shapes: E (7th fret A, 9th fret G), C# (4th fret A, 6th fret G)",
+          "Muted D string: Let your index finger lean lightly against the 4th string to silence it completely",
+          "Open string resonance: Let strings 1 and 2 ring open during chord transitions"
+        ],
+        "sequence": [
+          "Position index finger on fret 7 of A string, pinky on fret 9 of G string",
+          "Rest the underside of your index finger on string 4",
+          "Strum boldly across strings 5, 4, and 3",
+          "Slide smoothly down to fret 4 (C# octave) and into open E power chords"
+        ],
+        "tips": [
+          "Octaves require firm fretting pressure on the active strings but zero tension in the right wrist",
+          "Dave Grohl and Pat Smear layered multiple guitars (Gibson Trini Lopez into Mesa Dual Rectifier and Vox AC30) for thickness",
+          "Lock into the slow, pounding 77 BPM groove—don't rush"
+        ],
+        "chords": [
+          "E5",
+          "C#m7",
+          "Aadd9"
+        ],
+        "progression": "E5 - C#m7 - Aadd9"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Octave Hook",
+      "timeStamp": "0:00-0:35",
+      "technique": "Melodic Octave Riffing",
+      "key": "E Major",
+      "description": "The driving octave hook cutting through Dave Grohl's iconic rolling tom drum intro.",
+      "chords": [
+        "E5",
+        "C#m7"
+      ],
+      "progression": "E Octaves",
+      "notes": [
+        "Keep the middle D string muted cleanly",
+        "Slide smoothly between frets 7 and 4",
+        "Dig in with aggressive pick strokes"
+      ],
+      "alphaTab": ":4 7.5 :4 9.3 :8 7.5 9.3 :4 7.5 | :4 4.5 :4 6.3 :8 4.5 6.3 :4 4.5 | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) |",
+      "exerciseLabel": "Intro Octave Hook"
+    },
+    {
+      "name": "Verse Driving Groove",
+      "timeStamp": "0:36-1:10",
+      "technique": "Palm Muted Power Chords",
+      "key": "E Major",
+      "description": "The verse rhythm under 'Too alarming now to talk about' moving between E5, C#m7, and Aadd9.",
+      "chords": [
+        "E5",
+        "C#m7",
+        "Aadd9"
+      ],
+      "progression": "E5 - C#m7 - Aadd9",
+      "notes": [
+        "Light palm muting on the bass notes",
+        "Let the high open strings breathe",
+        "Maintain the heavy 77 BPM pulse"
+      ],
+      "alphaTab": ":8 0.6 0.6 :4 (0.6 2.5 2.4) :8 0.6 0.6 :4 (0.6 2.5 2.4) | :8 4.5 4.5 :4 (4.5 6.4 6.3) :8 0.5 0.5 :4 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Verse Rhythm Groove"
+    },
+    {
+      "name": "Chorus Power Chords",
+      "timeStamp": "1:11-1:35",
+      "technique": "Full Dynamic Explosion",
+      "key": "E Major",
+      "description": "Massive wall of sound on 'There goes my hero, watch him as he goes'.",
+      "chords": [
+        "E5",
+        "C#m7",
+        "Aadd9",
+        "Bsus4"
+      ],
+      "progression": "E5 - C#m7 - Aadd9 - Bsus4",
+      "notes": [
+        "Open strumming with maximum dynamic energy",
+        "Let high E and B strings ring open across all shapes",
+        "Hit the crash on beat 1"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (4.5 6.4 6.3 0.2 0.1) | :2 (0.5 2.4 2.3 0.2 0.1) :2 (2.5 4.4 4.3 0.2 0.1) |",
+      "exerciseLabel": "Chorus Wall of Sound"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Trini Lopez Standard / Gibson DG-335 (Pelham Blue)",
+      "alternatives": [
+        "Epiphone Dave Grohl DG-335",
+        "Gibson Les Paul Standard",
+        "Fender Telecaster Deluxe"
+      ],
+      "pickup": "Bridge humbucker (Burstbucker / Gibson Dirty Fingers) for maximum crunch"
+    },
+    "amp": {
+      "recommended": "Mesa/Boogie Dual Rectifier blended with Vox AC30",
+      "alternatives": [
+        "Marshall JCM900",
+        "Orange Rockerverb",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "7.5 (thick post-grunge wall)",
+        "treble": "6.5",
+        "middle": "7",
+        "bass": "6.5",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "ProCo Rat distortion or Boss DS-1 (for extra chorus bite)",
+      "delay": "Subtle analog delay on lead lines",
+      "reverb": "Stage room reverb",
+      "other": "Dunlop 0.73mm nylon picks"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Power Chords",
+      "steps": [
+        "Learn the open power chords: E5, C#m7 (fret 4), and Aadd9",
+        "Practice steady eighth-note strumming at 77 BPM",
+        "Focus on the dynamic transition from verse to chorus"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Octave Riffing Technique",
+      "steps": [
+        "Master the A-and-G string octave shape with index and pinky",
+        "Ensure the middle D string is completely muted with no unwanted notes",
+        "Slide smoothly between the 7th and 4th fret octaves in time with the drums"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Dynamic Control & Stadium Energy",
+      "steps": [
+        "Perform the entire song with full dynamic control from delicate verse to roaring chorus",
+        "Lock tightly with the drum roll groove without rushing the 77 BPM tempo",
+        "Replicate the layered dual-amp tone (Mesa crunch + Vox chime)"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the middle D string ring open during octave slides",
+      "Rushing the tempo during the heavy drum intros (stay locked at 77 BPM)",
+      "Over-strumming during the verse instead of maintaining tight palm muting"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Octave muting drill on strings 5, 4, and 3",
+      "5 minutes: Octave slide timing at 65 BPM → 77 BPM",
+      "5 minutes: Chorus open chord dynamic strumming",
+      "5 minutes: Full track playthrough"
+    ],
+    "focusAreas": [
+      "Index-finger string muting on octaves",
+      "Heavy slow-rock tempo stability",
+      "Dynamic contrast between sections"
+    ],
+    "metronomeWork": [
+      "Practice the octave riff with metronome at 77 BPM",
+      "Focus on landing the octave slide down to fret 4 exactly on beat 1"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Everlong",
+        "difficulty": "Intermediate",
+        "similarity": "Drop D tuning masterclass featuring lightning-fast downstrokes, octaves, and emotional grunge dynamics"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "1979",
+        "artist": "The Smashing Pumpkins",
+        "difficulty": "Intermediate",
+        "similarity": "Signature octave riffing on the D and B strings driving a nostalgic alternative rock anthem"
+      },
+      {
+        "title": "Learn to Fly",
+        "artist": "Foo Fighters",
+        "difficulty": "Beginner",
+        "similarity": "Uplifting power chord progressions, melodic lead fills, and soaring stadium choruses"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Everlong",
+        "artist": "Foo Fighters",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to Dave Grohl's Drop D acoustic-electric masterpiece with relentless 16th-note rhythm drive"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "beginner",
+      "power-chords",
+      "open-chords",
+      "strumming",
+      "rhythm-guitar",
+      "lead-guitar",
+      "electric-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

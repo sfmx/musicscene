@@ -178,6 +178,16 @@ import aintNoSunshineData from '@/data/songs/aint-no-sunshine.json';
 import theSkyIsCryingData from '@/data/songs/the-sky-is-crying.json';
 import bornUnderABadSignData from '@/data/songs/born-under-a-bad-sign.json';
 import leapsAndBoundsData from '@/data/songs/leaps-and-bounds.json';
+import californicationData from '@/data/songs/californication.json';
+import interstateLoveSongData from '@/data/songs/interstate-love-song.json';
+import heyJoeData from '@/data/songs/hey-joe.json';
+import needYouTonightData from '@/data/songs/need-you-tonight.json';
+import coldShotData from '@/data/songs/cold-shot.json';
+import shapeOfMyHeartData from '@/data/songs/shape-of-my-heart.json';
+import whiteRoomData from '@/data/songs/white-room.json';
+import blackDogData from '@/data/songs/black-dog.json';
+import neverTearUsApartData from '@/data/songs/never-tear-us-apart.json';
+import myHeroData from '@/data/songs/my-hero.json';
 
 export interface SongData {
   songInfo: {
@@ -266,12 +276,18 @@ export interface SongData {
         middle: string;
         bass: string;
         presence: string;
+        [key: string]: string | undefined;
       };
     };
     effects: {
       distortion: string;
       reverb: string;
       other: string;
+      delay?: string;
+      wah?: string;
+      chorus?: string;
+      compressor?: string;
+      [key: string]: string | undefined;
     };
   };
   learningPath: {
@@ -568,6 +584,16 @@ const songDatabase: Record<string, SongData> = {
   'the-sky-is-crying': theSkyIsCryingData as SongData,
   'born-under-a-bad-sign': bornUnderABadSignData as SongData,
   'leaps-and-bounds': leapsAndBoundsData as SongData,
+  'californication': californicationData as SongData,
+  'interstate-love-song': interstateLoveSongData as SongData,
+  'hey-joe': heyJoeData as SongData,
+  'need-you-tonight': needYouTonightData as SongData,
+  'cold-shot': coldShotData as SongData,
+  'shape-of-my-heart': shapeOfMyHeartData as SongData,
+  'white-room': whiteRoomData as SongData,
+  'black-dog': blackDogData as SongData,
+  'never-tear-us-apart': neverTearUsApartData as SongData,
+  'my-hero': myHeroData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

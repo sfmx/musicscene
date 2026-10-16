@@ -1,0 +1,317 @@
+{
+  "songInfo": {
+    "title": "Californication",
+    "artist": "Red Hot Chili Peppers",
+    "album": "Californication",
+    "released": "1999",
+    "genre": "Alternative Rock",
+    "tempo": "96 BPM",
+    "duration": "5:21",
+    "key": "A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor",
+          "notes": "A - B - C - D - E - F - G",
+          "application": "Defines John Frusciante's sparse, contrapuntal intro and verse progression oscillating between Am and Fmaj7"
+        },
+        {
+          "scale": "F# minor pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "Powers the vocal-like, emotive guitar solo that suddenly modulates a minor third down into F# minor"
+        }
+      ],
+      "modalCharacter": "Melancholic A Aeolian verses with warm Fmaj7 lydian inflections modulating into an austere F# minor solo",
+      "keySignature": "No sharps or flats (verses) / 3 sharps (solo)",
+      "relativeMinor": "C major is the relative major of A minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "Fmaj7",
+          "C",
+          "G",
+          "Dm"
+        ],
+        "progression": "i - VI7 - III - VII - iv",
+        "progressionDescription": "Sparse two-chord loop in the verses (Am - Fmaj7) followed by an uplifting four-chord chorus and sudden F#m modulation.",
+        "description": "Sparse two-chord loop in the verses (Am - Fmaj7) followed by an uplifting four-chord chorus and sudden F#m modulation."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro & Verse",
+          "progression": "Am - Fmaj7",
+          "romanNumerals": "i - VI7",
+          "description": "Alternating bass dyad riff with gentle high single-note pick-throughs"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "C - G - Dm - Am - C - G - Dm",
+          "romanNumerals": "III - VII - iv - i",
+          "description": "Ascending motion building anticipation towards the chorus hook"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - G - Dm - Am",
+          "romanNumerals": "III - VII - iv - i",
+          "description": "Broad strummed open chords underpinning Anthony Kiedis's vocal anthem"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "F#m - D - F#m - D - Bm - D - E",
+          "romanNumerals": "i - VI - i - VI - iv - VI - VII (in F# Minor)",
+          "description": "Sudden key modulation providing a raw, yearning vocal-like lead statement"
+        }
+      ],
+      "harmonicFunction": [
+        "Am (i) - Natural minor tonic anchoring the verse in quiet California melancholy",
+        "Fmaj7 (VI7) - Major seventh submediant providing bittersweet, floating warmth",
+        "C (III) & G (VII) - Lift into the relative major providing broad stadium dynamic contrast",
+        "F#m (Solo i) - Distant minor modulation that delivers the emotional climax of the song"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Contrapuntal Fingerpicking & Dyads",
+      "description": "Alternating bass-line picking on strings 5 and 6 while plucking ringing open and fretted dyads on the higher strings",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Am: Open A string bass note followed by 7th fret D (A) and 5th fret B (E)",
+          "Fmaj7: 1st fret low E string (thumb or index) followed by 7th fret D and 5th fret B"
+        ],
+        "sequence": [
+          "Pick the open A string on beat 1",
+          "Pluck the 7th fret D string and 5th fret B string together",
+          "Transition smoothly to the 1st fret low E string with your thumb"
+        ],
+        "tips": [
+          "Keep unused strings muted lightly with your fretting hand fingers",
+          "Let the high notes sustain across the bar lines for an ambient dream-like texture",
+          "Frusciante used a clean '62 Strat into a Marshall Silver Jubilee on low gain"
+        ],
+        "chords": [
+          "Am",
+          "Fmaj7"
+        ],
+        "progression": "Am - Fmaj7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro & Verse Riff",
+      "timeStamp": "0:00-0:32",
+      "technique": "Contrapuntal Fingerpicking & Dyads",
+      "key": "A Minor",
+      "description": "Frusciante's iconic intro motif alternating between open A bass and 1st-fret F bass notes.",
+      "chords": [
+        "Am",
+        "Fmaj7"
+      ],
+      "progression": "Am - Fmaj7",
+      "notes": [
+        "Keep the alternate bass pick steady",
+        "Let the high E note on the B string ring clearly",
+        "Play with a relaxed, dry vintage Stratocaster tone"
+      ],
+      "alphaTab": ":8 0.5 7.4 :4 5.2 :8 0.5 7.4 :4 5.2 | :8 1.6 7.4 :4 5.2 :8 1.6 7.4 :4 5.2 |",
+      "exerciseLabel": "Intro Contrapuntal Riff"
+    },
+    {
+      "name": "Chorus Chords",
+      "timeStamp": "0:53-1:13",
+      "technique": "Open & Barre Chord Strumming",
+      "key": "C Major",
+      "description": "Full strummed chords on 'Dream of Californication' moving C to G, Dm, and Am.",
+      "chords": [
+        "C",
+        "G",
+        "Dm",
+        "Am"
+      ],
+      "progression": "C - G - Dm - Am",
+      "notes": [
+        "Use full, resonant open chord voicings",
+        "Accent beats 2 and 4 with steady eighth-note strumming",
+        "Smooth transition between Dm and Am"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 1.1) :2 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Chorus Chord Progression"
+    },
+    {
+      "name": "Guitar Solo Motif",
+      "timeStamp": "3:21-3:42",
+      "technique": "Vocal Melodic Phrasing & Bending",
+      "key": "F# Minor",
+      "description": "Frusciante's masterclass in minimalism—modulating to F# minor with soulful vocal-like phrasing.",
+      "chords": [
+        "F#m",
+        "D",
+        "Bm",
+        "E"
+      ],
+      "progression": "F#m - D - Bm - E",
+      "notes": [
+        "Use wide, singing finger vibrato on sustained notes",
+        "Target chord tones (F# on F#m, D on D)",
+        "Emphasize the emotional, vocal pacing"
+      ],
+      "alphaTab": ":4 9.3 :4 10.2 :2 9.2 | :4 7.2 :4 10.2 :2 7.2 | :4 9.3 :4 7.3 :2 6.3 | :1 9.4 |",
+      "exerciseLabel": "Modulated Solo Lead Line"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1962 Fender Stratocaster (Rosewood fretboard)",
+      "alternatives": [
+        "Fender Player II Stratocaster",
+        "Squier Classic Vibe '60s Stratocaster",
+        "Fender Telecaster"
+      ],
+      "pickup": "Neck single-coil pickup for verse; Bridge single-coil for solo"
+    },
+    "amp": {
+      "recommended": "Marshall Major 200W & Marshall Silver Jubilee 2555",
+      "alternatives": [
+        "Marshall Studio Jubilee",
+        "Fender Blues Deluxe",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "3.5 (clean with woody edge)",
+        "treble": "6 (glassy top chime)",
+        "middle": "7 (warm mids)",
+        "bass": "5 (controlled low end)",
+        "presence": "5"
+      }
+    },
+    "effects": {
+      "distortion": "Boss DS-2 Turbo Distortion (engaged for solo lead)",
+      "chorus": "Boss CE-1 Chorus Ensemble (subtle preamp coloration)",
+      "reverb": "Fender spring reverb tank",
+      "other": "Dunlop Tortex 0.60mm picks"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Strumming & Chords",
+      "steps": [
+        "Memorize the open chords for the chorus: C, G, Dm, and Am",
+        "Practice steady down-up eighth note strumming at 80 BPM",
+        "Transition cleanly between Dm and Am without rhythmic pause"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Verse Contrapuntal Riff",
+      "steps": [
+        "Master the alternate bass picking (open A string to 1st fret low E)",
+        "Pluck the 7th fret D and 5th fret B strings cleanly without buzzing",
+        "Play along with the studio track at 96 BPM"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Modulated Solo & Dynamic Phrasing",
+      "steps": [
+        "Learn the F# minor solo note-for-note with accurate vibrato and bends",
+        "Understand the theoretical modulation from A minor to F# minor",
+        "Perform the entire 5-minute song dynamically from quiet verse to roaring climax"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo during the sparse verse riff",
+      "Accidentally muting the ringing 5th fret high B string with your fretting fingers",
+      "Overplaying the guitar solo instead of letting Frusciante's vocal notes breathe"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Isolated verse dyad shifting at 80 BPM → 96 BPM",
+      "5 minutes: Chorus open chord transitions (C → G → Dm → Am)",
+      "5 minutes: F# minor solo phrasing with slow metronome backing",
+      "5 minutes: Full track playthrough"
+    ],
+    "focusAreas": [
+      "Fretting-hand finger economy on the verse dyads",
+      "Vocal vibrato pitch stability during the solo",
+      "Clean string muting between chord changes"
+    ],
+    "metronomeWork": [
+      "Start at 80 BPM to internalize the pocket",
+      "Gradually increase to 96 BPM keeping the quarter note bass solid",
+      "Practice the solo with a drum groove on beats 2 and 4"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Scar Tissue",
+        "difficulty": "Intermediate",
+        "similarity": "Frusciante's signature two-note dyad fingerstyle approach on the Californication album"
+      },
+      {
+        "title": "Under the Bridge",
+        "difficulty": "Intermediate",
+        "similarity": "Contrapuntal basslines, Hendrix-style chord fills, and dynamic section shifts"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Moving two-note dyad fingerstyle across alternating bass strings"
+      },
+      {
+        "title": "Fast Car",
+        "artist": "Tracy Chapman",
+        "difficulty": "Intermediate",
+        "similarity": "Clean two-note fingerpicked acoustic riff establishing an iconic narrative mood"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "difficulty": "Intermediate",
+        "similarity": "Step up to full CAGED chord embellishments, hammer-ons, and multi-section arrangements"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "intermediate",
+      "fingerpicking",
+      "minor-key",
+      "chord-progressions",
+      "lead-guitar",
+      "rhythm-guitar",
+      "vibrato"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

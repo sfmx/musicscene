@@ -99,6 +99,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'the-sky-is-crying',
   'born-under-a-bad-sign',
   'leaps-and-bounds',
+  'californication',
+  'interstate-love-song',
+  'hey-joe',
+  'need-you-tonight',
+  'cold-shot',
+  'shape-of-my-heart',
+  'white-room',
+  'black-dog',
+  'never-tear-us-apart',
+  'my-hero',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

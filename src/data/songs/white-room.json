@@ -1,0 +1,328 @@
+{
+  "songInfo": {
+    "title": "White Room",
+    "artist": "Cream",
+    "album": "Wheels of Fire",
+    "released": "1968",
+    "genre": "Psychedelic Rock / Blues Rock",
+    "tempo": "110 BPM",
+    "duration": "4:58",
+    "key": "D Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D minor",
+      "scalesUsed": [
+        {
+          "scale": "D natural minor / Aeolian",
+          "notes": "D - E - F - G - A - Bb - C",
+          "application": "Dictates the driving descending Aeolian verse progression (Dm - C - G/B - Bb - C)"
+        },
+        {
+          "scale": "D minor pentatonic / blues scale",
+          "notes": "D - F - G - Ab - A - C",
+          "application": "The framework for Eric Clapton's landmark wah-wah lead guitar improvisation throughout the outro"
+        }
+      ],
+      "modalCharacter": "Dramatic psychedelic blues rock featuring a 5/4 meter orchestral intro cadence and relentless descending Aeolian drive",
+      "keySignature": "1 flat (Bb)",
+      "relativeMinor": "F major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Dm",
+          "C",
+          "G/B",
+          "Bb",
+          "C",
+          "F",
+          "G",
+          "A"
+        ],
+        "progression": "i - ♭VII - IV6 - ♭VI - ♭VII",
+        "progressionDescription": "Stepwise descending bass progression in D natural minor, leading into a soaring major-mode chorus (C - G - Bb - A).",
+        "description": "Stepwise descending bass progression in D natural minor, leading into a soaring major-mode chorus (C - G - Bb - A)."
+      },
+      "sectionProgressions": [
+        {
+          "section": "5/4 Meter Intro",
+          "progression": "Gm - F - Dm - C - Dm",
+          "romanNumerals": "5/4 Metric Cadence",
+          "description": "Stately 5/4 timpani and guitar fanfare establishing dark psychedelic grandeur"
+        },
+        {
+          "section": "Verse",
+          "progression": "Dm - C - G/B - Bb - C",
+          "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
+          "description": "Stepwise bass descent (D → C → B → Bb → C) with driving open and barre chords"
+        },
+        {
+          "section": "Chorus",
+          "progression": "C - G - Bb - A",
+          "romanNumerals": "♭VII - IV - ♭VI - V",
+          "description": "Triumphant rock cadence resolving on the powerful major dominant A chord"
+        },
+        {
+          "section": "Wah-Wah Solo",
+          "progression": "Dm - C - G/B - Bb - C",
+          "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
+          "description": "Clapton's legendary continuous wah-wah solo wailing over the verse progression"
+        }
+      ],
+      "harmonicFunction": [
+        "Dm (i) - Heavy, dark minor tonic driving the narrative forward",
+        "C (♭VII) - Subtonic chord maintaining natural minor propulsion",
+        "G/B (IV6) - Inverted Dorian-leaning major IV chord with the B natural bass note providing uplifting contrast",
+        "Bb (♭VI) - Dark submediant chord locking into the natural minor resolution",
+        "A (V) - Major dominant in the chorus providing definitive harmonic tension and resolution back to Dm"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Expressive Vox Wah-Wah Articulation & Descending Chords",
+      "description": "Rhythmically sweeping a wah-wah pedal in tandem with picking dynamics to turn guitar lead lines into crying vocal statements",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Descending bassline: D (open D string) → C (3rd fret A) → B (2nd fret A) → Bb (1st fret A) → C (3rd fret A)",
+          "Solo in 10th-position D minor pentatonic on strings 1, 2, and 3",
+          "Sweeping wah pedal from heel (bass) to toe (treble) on sustained bends"
+        ],
+        "sequence": [
+          "Fret the Dm chord and transition cleanly down the A-string bass walk",
+          "Accent beat 1 of each chord change with authority",
+          "Engage wah pedal with toe forward on the attack, rocking back on the sustain",
+          "Lock into Ginger Baker's driving four-on-the-floor drum groove"
+        ],
+        "tips": [
+          "Don't sweep the wah pedal mechanically—match the sweep to the emotional contour of your phrases",
+          "Clapton used 'The Fool' 1964 Gibson SG into a cranked Marshall 100W Super Lead for thick sustain",
+          "Emphasize the B natural bass note in the G/B chord for authentic voice leading"
+        ],
+        "chords": [
+          "Dm",
+          "C",
+          "G/B",
+          "Bb",
+          "C"
+        ],
+        "progression": "Dm - C - G/B - Bb - C"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "5/4 Meter Fanfare",
+      "timeStamp": "0:00-0:28",
+      "technique": "Odd-Meter Rhythmic Stabs",
+      "key": "D Minor",
+      "description": "The ominous 5/4 intro cadence featuring heavy crash cymbals and stately descending chords.",
+      "chords": [
+        "Gm",
+        "F",
+        "Dm",
+        "C"
+      ],
+      "progression": "5/4 Cadence",
+      "notes": [
+        "Count carefully: 1-2-3-4-5 per measure",
+        "Let the low Dm chord rumble with tube sustain",
+        "Prepare for the tempo surge into the 4/4 verse"
+      ],
+      "alphaTab": ":4 (3.6 5.5 5.4 3.3 3.2 3.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) | :1 (0.4 2.3 3.2 1.1) |",
+      "exerciseLabel": "5/4 Intro Fanfare"
+    },
+    {
+      "name": "Descending Verse Progression",
+      "timeStamp": "0:29-1:04",
+      "technique": "Stepwise Bass Descent",
+      "key": "D Minor",
+      "description": "The driving 4/4 verse chord progression moving Dm to C, G/B, and Bb.",
+      "chords": [
+        "Dm",
+        "C",
+        "G/B",
+        "Bb",
+        "C"
+      ],
+      "progression": "Dm - C - G/B - Bb - C",
+      "notes": [
+        "Highlight the descending bassline on the A string",
+        "Drive with solid eighth-note pick attack",
+        "Smooth transition between G/B and Bb"
+      ],
+      "alphaTab": ":4 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) :4 (2.5 0.4 0.3 3.2) :4 (1.5 3.4 3.3 3.2) | :2 (3.5 2.4 0.3 1.2) :2 (0.4 2.3 3.2 1.1) |",
+      "exerciseLabel": "Verse Chord Walkdown"
+    },
+    {
+      "name": "Wah-Wah Solo Climax",
+      "timeStamp": "3:40-4:58",
+      "technique": "Vocal Wah Improvisation",
+      "key": "D Minor",
+      "description": "Eric Clapton's legendary extended outro solo, the benchmark for rock wah-wah phrasing.",
+      "chords": [
+        "Dm",
+        "C",
+        "G/B",
+        "Bb"
+      ],
+      "progression": "Dm - C - G/B - Bb - C",
+      "notes": [
+        "Rock the wah pedal forward on peak bends",
+        "Use full-step bends on the 13th fret B string to high D",
+        "Sustain notes with wide, singing vibrato"
+      ],
+      "alphaTab": ":8 10.1 13.1 10.1 13.2 :4 12.3 :4 10.3 | :8 12.4 10.4 12.4 10.4 :2 12.4 | :1 10.4 |",
+      "exerciseLabel": "Wah-Wah Solo Outro"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1964 Gibson SG Standard with humbuckers ('The Fool' psychedelic artwork)",
+      "alternatives": [
+        "Gibson SG Standard 61",
+        "Epiphone SG Standard",
+        "Gibson Les Paul Standard"
+      ],
+      "pickup": "Bridge humbucker for cutting wah lead; neck humbucker with tone rolled off for 'woman tone'"
+    },
+    "amp": {
+      "recommended": "Marshall 100W Super Lead Plexi (1968 spec) & 4x12 Basketweave cab",
+      "alternatives": [
+        "Marshall Origin 50",
+        "Marshall Studio Classic",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "8 (cranked Plexi roar)",
+        "treble": "6",
+        "middle": "8",
+        "bass": "6",
+        "presence": "7"
+      }
+    },
+    "effects": {
+      "distortion": "Cranked Marshall 100W Super Lead Plexi power tube saturation",
+      "wah": "Vox Clyde McCoy Wah-Wah (essential for authentic vocal sweep)",
+      "reverb": "Natural room reverb",
+      "other": "Heavy celluloid plectrums"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Verse Chord Progression",
+      "steps": [
+        "Learn the five verse chords: Dm, C, G/B, Bb, and C",
+        "Practice the descending bassline on the A string at 80 BPM",
+        "Strum in steady quarter notes without stopping"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "5/4 Intro & Chorus",
+      "steps": [
+        "Count and perform the 5/4 intro cadence with correct timing",
+        "Master the high-energy chorus progression (C - G - Bb - A)",
+        "Play along with the studio track at 110 BPM"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Wah-Wah Solo Mastery",
+      "steps": [
+        "Coordinate foot movement on the wah pedal with right-hand pick attacks",
+        "Master Clapton's 10th-position D minor pentatonic solo vocabulary",
+        "Improvise over the looping verse progression with authentic 1968 psychedelic tone"
+      ],
+      "timeEstimate": "3-5 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Losing the count in the 5/4 meter intro",
+      "Sweeping the wah pedal out of sync with your musical phrases",
+      "Muting the B-natural bass note in the G/B chord"
+    ],
+    "practiceRoutine": [
+      "5 minutes: 5/4 intro counting and chord timing",
+      "5 minutes: Descending verse walkdown at 90 BPM → 110 BPM",
+      "5 minutes: Wah pedal sweep coordination drill on single notes",
+      "5 minutes: Full solo playthrough"
+    ],
+    "focusAreas": [
+      "Wah-wah foot-hand coordination",
+      "Odd-meter counting stability (5/4)",
+      "Clean A-string bass transitions"
+    ],
+    "metronomeWork": [
+      "Set metronome to 5/4 at 90 BPM for the intro",
+      "Switch to 4/4 at 110 BPM for the verse and solo sections"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Sunshine of Your Love",
+        "difficulty": "Intermediate",
+        "similarity": "Cream's iconic 12-bar blues-rock riff and Clapton's creamy 'woman tone' lead work"
+      },
+      {
+        "title": "Crossroads",
+        "difficulty": "Advanced",
+        "similarity": "Clapton's definitive high-tempo blues soloing with lightning pentatonic runs"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Voodoo Child (Slight Return)",
+        "artist": "The Jimi Hendrix Experience",
+        "difficulty": "Advanced",
+        "similarity": "The benchmark of expressive rock wah-wah pedal mastery and aggressive blues phrasing"
+      },
+      {
+        "title": "21st Century Schizoid Man",
+        "artist": "King Crimson",
+        "difficulty": "Expert",
+        "similarity": "Uncompromising psychedelic rock featuring heavy odd-meter time signatures and blistering unison lines"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Crossroads",
+        "artist": "Cream",
+        "difficulty": "Advanced",
+        "similarity": "Advance from White Room's wah riffs to Eric Clapton's blistering live blues-rock improvisation"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "blues",
+      "intermediate",
+      "wah",
+      "minor-key",
+      "voice-leading",
+      "lead-guitar",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

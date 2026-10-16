@@ -1,0 +1,319 @@
+{
+  "songInfo": {
+    "title": "Hey Joe",
+    "artist": "The Jimi Hendrix Experience",
+    "album": "Are You Experienced",
+    "released": "1966",
+    "genre": "Blues Rock / Psychedelic Rock",
+    "tempo": "84 BPM",
+    "duration": "3:30",
+    "key": "E Major / E Blues",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major / E blues",
+      "scalesUsed": [
+        {
+          "scale": "E minor pentatonic / blues scale",
+          "notes": "E - G - A - Bb - B - D",
+          "application": "The core framework for Hendrix's iconic bluesy solo, double-stops, and intro turnaround lick"
+        },
+        {
+          "scale": "E major pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Blended into Hendrix's rhythm fills for sweet, soulful major-third color"
+        }
+      ],
+      "modalCharacter": "E blues-rock tonality built over the famous reverse Circle of Fifths chord sequence (C - G - D - A - E)",
+      "keySignature": "4 sharps (E major)",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C",
+          "G",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "♭VI - ♭III - ♭VII - IV - I",
+        "progressionDescription": "The reverse Circle of Fifths progression: each chord resolves up a fourth (or down a fifth) until reaching the triumphant E major tonic.",
+        "description": "The reverse Circle of Fifths progression: each chord resolves up a fourth (or down a fifth) until reaching the triumphant E major tonic."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Chromatic Bass Walkup",
+          "progression": "E - F# - G - G# - A - Bb - B - E",
+          "romanNumerals": "Chromatic Walkup",
+          "description": "High string double-stops moving into a low chromatic walking bassline resolving to E7#9"
+        },
+        {
+          "section": "Verse & Chorus",
+          "progression": "C - G - D - A - E",
+          "romanNumerals": "♭VI - ♭III - ♭VII - IV - I",
+          "description": "The cyclical 5-chord progression played with Hendrix-style thumb-over chord embellishments"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "C - G - D - A - E",
+          "romanNumerals": "♭VI - ♭III - ♭VII - IV - I",
+          "description": "Slow-burn E minor pentatonic blues solo targeting roots and minor thirds with heavy vibrato"
+        }
+      ],
+      "harmonicFunction": [
+        "C (♭VI) - Borrowed submediant establishing the starting point of the fifths cascade",
+        "G (♭III) - Resolves down a fifth from C, providing major-pentatonic rock drive",
+        "D (♭VII) - Subtonic chord providing classic rock Mixolydian color",
+        "A (IV) - Subdominant leading directly into the tonic",
+        "E (I) - Satisfying home tonic resolution that sustains with epic rock authority"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Reverse Circle of Fifths & Hendrix Thumb Fretting",
+      "description": "Using the fretting thumb to anchor the low root notes while index and ring fingers decorate the triads with double-stops and hammer-ons",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Chords: C (X-3-2-0-1-0), G (3-2-0-0-3-3), D (X-X-0-2-3-2), A (X-0-2-2-2-0), E (0-2-2-1-0-0)",
+          "Intro double-stop sliding on strings 1 and 2",
+          "Chromatic bass run: 0-1-2-3-4 on low E, moving to A string"
+        ],
+        "sequence": [
+          "Play the sliding high E/B string double stop intro",
+          "Execute the chromatic bass walkup leading into E7#9",
+          "Cycle C → G → D → A → E with rhythmic thumb pulses and hammer-on fills",
+          "Solo in E minor pentatonic in the 12th position"
+        ],
+        "tips": [
+          "Relax your fretting wrist so your thumb can wrap comfortably over the top of the neck",
+          "Use a neck single-coil pickup with volume rolled back slightly for sweet cleans",
+          "Dig in with dynamic pick attack during the solo to push the tube amp into natural overdrive"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "C - G - D - A - E"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Double-Stops & Walkup",
+      "timeStamp": "0:00-0:28",
+      "technique": "Sliding Double-Stops & Chromatic Bass",
+      "key": "E Major",
+      "description": "Hendrix's historic opening statement with high string slides and low chromatic walkup.",
+      "chords": [
+        "E7#9",
+        "E"
+      ],
+      "progression": "Chromatic Walkup into E",
+      "notes": [
+        "Slide high notes with ring and middle fingers",
+        "Clean thumb bass walkup from open E to 4th fret G#",
+        "Stab the final E chord with authority"
+      ],
+      "alphaTab": ":8 0.6 0.1 3.2 0.1 5.2 0.1 3.2 0.1 | :8 0.6 3.6 4.6 :4 2.5 :4 2.4 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Intro Lick & Walkup"
+    },
+    {
+      "name": "Circle of Fifths Progression",
+      "timeStamp": "0:29-1:40",
+      "technique": "Hendrix Chord Embellishments",
+      "key": "E Major",
+      "description": "The famous C - G - D - A - E progression played with rhythmic feel and hammer-on fills.",
+      "chords": [
+        "C",
+        "G",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "C - G - D - A - E",
+      "notes": [
+        "Smooth transitions between all 5 chords",
+        "Accent the root notes on the beat",
+        "Let the final E chord ring for a full measure"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Fifths Progression Cycle"
+    },
+    {
+      "name": "Blues Guitar Solo",
+      "timeStamp": "1:41-2:19",
+      "technique": "12th-Position Pentatonic Bends",
+      "key": "E Blues",
+      "description": "One of the most expressive blues-rock solos in history, full of singing bends and wide vibrato.",
+      "chords": [
+        "C",
+        "G",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "C - G - D - A - E",
+      "notes": [
+        "Target the 15th-fret B string full bend to high E",
+        "Use your index finger to mute non-played strings",
+        "Wring out wide, emotive vibrato at the top of bends"
+      ],
+      "alphaTab": ":8 12.2 15.2 12.1 15.1 :4 15.1 :4 12.1 | :8 15.2 12.2 14.3 12.3 :2 14.3 | :1 12.4 |",
+      "exerciseLabel": "Solo Lead Phrasing"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1965 Fender Stratocaster (Olympic White, Rosewood fretboard)",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "Squier Classic Vibe '60s Stratocaster",
+        "Fender Vintera '60s Strat"
+      ],
+      "pickup": "Neck single-coil pickup for rhythm; Middle/Bridge single-coil for solo"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 / 100W Super Lead Plexi",
+      "alternatives": [
+        "Marshall Origin 50",
+        "Fender Bassman",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "7 (natural power-tube compression)",
+        "treble": "6",
+        "middle": "8",
+        "bass": "6",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Dallas Arbiter Fuzz Face (Germanium or Silicon)",
+      "wah": "Vox Clyde McCoy Wah-Wah",
+      "reverb": "Subtle vintage spring reverb",
+      "other": "Coiled guitar cable for high-frequency roll-off"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "The 5-Chord Sequence",
+      "steps": [
+        "Memorize the order of the five chords: C, G, D, A, and E",
+        "Practice shifting between each chord in half notes at 70 BPM",
+        "Hold the final E major chord for two full bars"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Intro Lick & Bass Walkup",
+      "steps": [
+        "Learn the high sliding double-stop intro",
+        "Master the chromatic low bass walkup into the E chord",
+        "Play the entire song at 84 BPM with steady rhythm"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Solo & Hendrix Embellishments",
+      "steps": [
+        "Master the 12th-position E minor pentatonic solo note-for-note",
+        "Add thumb-over bass fret techniques and hammer-on chord fills",
+        "Control fuzz and volume dynamics using your guitar volume knob"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Bending out of tune on the 15th fret B string in the solo",
+      "Rushing the relaxed, heavy 84 BPM tempo",
+      "Forgetting the chromatic passing notes in the intro walkup"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Fifths chord sequence shifting (C → G → D → A → E)",
+      "5 minutes: Intro lick and chromatic walkup with metronome",
+      "5 minutes: 12th-fret blues solo bending accuracy",
+      "5 minutes: Full song playthrough"
+    ],
+    "focusAreas": [
+      "Bending pitch accuracy (full-step bends)",
+      "Thumb-over fretting comfort",
+      "Deep blues groove pocket"
+    ],
+    "metronomeWork": [
+      "Practice the chord changes at 65 BPM, then increase to 84 BPM",
+      "Work on solo phrasing with metronome clicks on 2 and 4"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Little Wing",
+        "difficulty": "Advanced",
+        "similarity": "The pinnacle of Hendrix's thumb-over CAGED embellishments and chord-melody playing"
+      },
+      {
+        "title": "Purple Haze",
+        "difficulty": "Intermediate",
+        "similarity": "The famous Hendrix chord (E7#9), blues-rock bends, and fuzz tone mastery"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Wind Cries Mary",
+        "artist": "The Jimi Hendrix Experience",
+        "difficulty": "Intermediate",
+        "similarity": "Sliding fourth-interval double stops and delicate clean Stratocaster touch"
+      },
+      {
+        "title": "Pride and Joy",
+        "artist": "Stevie Ray Vaughan",
+        "difficulty": "Advanced",
+        "similarity": "Heavily influenced by Hendrix's thumb-over fretting and aggressive Texas blues touch"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Little Wing",
+        "artist": "The Jimi Hendrix Experience",
+        "difficulty": "Advanced",
+        "similarity": "Graduate from Hey Joe's foundational chord fills to complete chord-melody mastery"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1960s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "blues",
+      "intermediate",
+      "open-chords",
+      "pentatonic",
+      "blues-scale",
+      "bending",
+      "lead-guitar",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

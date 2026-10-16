@@ -1,0 +1,312 @@
+{
+  "songInfo": {
+    "title": "Interstate Love Song",
+    "artist": "Stone Temple Pilots",
+    "album": "Purple",
+    "released": "1994",
+    "genre": "Grunge / Alternative Rock",
+    "tempo": "86 BPM",
+    "duration": "3:14",
+    "key": "C# Minor / E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "C# minor / E major",
+      "scalesUsed": [
+        {
+          "scale": "C# minor pentatonic",
+          "notes": "C# - E - F# - G# - B",
+          "application": "Frames Dean DeLeo's opening bluesy slide motifs and intro chord voicings"
+        },
+        {
+          "scale": "E major / Ionian",
+          "notes": "E - F# - G# - A - B - C# - D#",
+          "application": "Powers the triumphant, open-sky choruses (E - Asus2 - C#m - A)"
+        }
+      ],
+      "modalCharacter": "Soulful country-tinged grunge shifting between bittersweet C# minor verses and expansive E major choruses",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "C#m",
+          "E/B",
+          "A",
+          "G#7",
+          "E",
+          "Asus2"
+        ],
+        "progression": "vi - I6/4 - IV - V7/vi - I - IV",
+        "progressionDescription": "Descending bass walkdown under C#m, resolving via a secondary dominant G#7 into the relative major E choruses.",
+        "description": "Descending bass walkdown under C#m, resolving via a secondary dominant G#7 into the relative major E choruses."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Chromatic Riff",
+          "progression": "C#m7 - E/B - A - G#7",
+          "romanNumerals": "vi7 - I6/4 - IV - V7/vi",
+          "description": "Chromatic bass descent with open string resonance and country-blues slide bends"
+        },
+        {
+          "section": "Verse",
+          "progression": "C#m - E/B - A - G#7",
+          "romanNumerals": "vi - I6/4 - IV - V7/vi",
+          "description": "Smooth stepwise descent resolving on the dramatic major dominant G#7"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E - Asus2 - C#m - A",
+          "romanNumerals": "I - IVsus2 - vi - IV",
+          "description": "Full ringing open chord stadium rock progression"
+        }
+      ],
+      "harmonicFunction": [
+        "C#m (vi) - Moody minor home of the intro and verse with country-jazz sophistication",
+        "E/B (I6/4) - Passing chord maintaining voice leading descent in the bass (C# → B → A → G#)",
+        "G#7 (V7/vi) - Secondary dominant with raised B# leading tone providing intense harmonic tension",
+        "E (I) - Triumphant resolution into the tonic major in the anthemic chorus"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Chromatic Voice-Leading & Country Bending",
+      "description": "Blending rich jazz-inflected chord voicings with country pedal-steel-inspired slides and bends on standard guitar",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Intro riff slides on the 4th, 3rd, and 2nd strings",
+          "Smooth stepwise bass descent: C# (5th fret A string) → B (2nd fret A) → A (open A) → G# (4th fret low E)",
+          "Open high B and E strings ringing as pedal drones"
+        ],
+        "sequence": [
+          "Fret the opening chromatic line starting on fret 4 of the A string",
+          "Slide into the C#m7 voicing and let the open strings ring",
+          "Execute the half-step bass descent to E/B and A",
+          "Barre the G#7 shape and accent beat 4"
+        ],
+        "tips": [
+          "Use a light touch with your fretting hand to avoid sharping the open strings",
+          "Dean DeLeo achieved his wide acoustic-electric stereo spread using a Gibson Les Paul and acoustic in unison",
+          "Emphasize the Major 3rd (B#) on the G#7 chord for maximum harmonic bite"
+        ],
+        "chords": [
+          "C#m",
+          "E/B",
+          "A",
+          "G#7"
+        ],
+        "progression": "C#m - E/B - A - G#7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Chromatic Riff",
+      "timeStamp": "0:00-0:22",
+      "technique": "Chromatic Voice-Leading & Country Bending",
+      "key": "C# Minor",
+      "description": "One of the most recognizable guitar intros in 90s rock, blending country slides and jazz chords.",
+      "chords": [
+        "C#m7",
+        "E/B",
+        "A",
+        "G#7"
+      ],
+      "progression": "C#m7 - E/B - A - G#7",
+      "notes": [
+        "Slide smoothly into the C#m7 chord",
+        "Keep the descending bassline prominent",
+        "Let open strings ring over the chord shapes"
+      ],
+      "alphaTab": ":4 4.5 :4 2.4 :4 1.3 :4 2.2 | :8 4.5 4.5 :4 (4.5 6.4 6.3 5.2) :4 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (4.6 6.5 4.4 5.3 4.2) |",
+      "exerciseLabel": "Signature Intro Riff"
+    },
+    {
+      "name": "Verse Progression",
+      "timeStamp": "0:23-0:53",
+      "technique": "Chord Voice Leading",
+      "key": "C# Minor",
+      "description": "The descending bass progression supporting Scott Weiland's soulful verse melody.",
+      "chords": [
+        "C#m",
+        "E/B",
+        "A",
+        "G#7"
+      ],
+      "progression": "C#m - E/B - A - G#7",
+      "notes": [
+        "Clean pick articulation on the lower strings",
+        "Full sustain on the G#7 dominant chord",
+        "Maintain relaxed 86 BPM pocket"
+      ],
+      "alphaTab": ":2 (4.5 6.4 6.3 5.2) :2 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (4.6 6.5 4.4 5.3 4.2) |",
+      "exerciseLabel": "Verse Chord Walkdown"
+    },
+    {
+      "name": "Chorus Anthem",
+      "timeStamp": "0:54-1:18",
+      "technique": "Open Strumming Dynamics",
+      "key": "E Major",
+      "description": "Massive open chord explosion into E major, Asus2, and C#m.",
+      "chords": [
+        "E",
+        "Asus2",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - Asus2 - C#m - A",
+      "notes": [
+        "Broad open strumming with ring on high E and B strings",
+        "Emphasize the punchy transition to Asus2",
+        "Lock in with the drum kick and snare"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :2 (4.5 6.4 6.3 5.2) :2 (0.5 2.4 2.3 2.2) |",
+      "exerciseLabel": "Chorus Strummed Progression"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1978 Gibson Les Paul Standard (Tobacco Sunburst)",
+      "alternatives": [
+        "Gibson Les Paul Studio",
+        "Epiphone Les Paul Standard 60s",
+        "Fender Telecaster Deluxe"
+      ],
+      "pickup": "Bridge humbucker for dirty crunch; middle position for intro"
+    },
+    "amp": {
+      "recommended": "Demeter TGP-3 Tube Preamp into VHT 2150 Power Amp & Marshall 4x12",
+      "alternatives": [
+        "Marshall JCM800",
+        "Vox AC30",
+        "Mesa Boogie Dual Rectifier"
+      ],
+      "settings": {
+        "gain": "6 (rich saturated tube crunch)",
+        "treble": "6.5",
+        "middle": "7",
+        "bass": "6",
+        "presence": "5"
+      }
+    },
+    "effects": {
+      "distortion": "Amp tube saturation with subtle Boss OD-1 boost",
+      "delay": "Subtle analog delay on chorus sections",
+      "reverb": "Warm hall reverb",
+      "other": "Dunlop Cry Baby wah (used live for filter sweeps)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Open Chords",
+      "steps": [
+        "Learn the E, Asus2, C#m, and A chord shapes",
+        "Strum in steady eighth notes at 86 BPM",
+        "Practice the dynamic shift from verse to chorus"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Intro Slide & Verse Progression",
+      "steps": [
+        "Learn the intro chromatic sliding figure cleanly",
+        "Master the four-chord verse progression with descending bass (C#m → E/B → A → G#7)",
+        "Nail the timing of the G#7 dominant transition"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Full Nuance & Studio Articulation",
+      "steps": [
+        "Incorporate Dean DeLeo's subtle thumb-over bass notes and open string voicings",
+        "Replicate the hybrid acoustic-electric texture",
+        "Perform the complete song with authentic studio tone and touch"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Muting the high open strings during the C#m7 and E/B voicings",
+      "Playing G# minor instead of G#7 (the major third B# is essential)",
+      "Rushing the relaxed, swaying 86 BPM tempo"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Intro slide lick isolated at 70 BPM → 86 BPM",
+      "5 minutes: Stepwise verse chord transitions with focus on bass movement",
+      "5 minutes: Chorus open chord dynamic strumming",
+      "5 minutes: Full playthrough with studio recording"
+    ],
+    "focusAreas": [
+      "Fretting accuracy on the G#7 barre shape",
+      "Descending bass voice leading clarity",
+      "Relaxed 86 BPM groove pocket"
+    ],
+    "metronomeWork": [
+      "Practice the intro slide at 70 BPM to ensure clean pitch placement",
+      "Build to album tempo of 86 BPM with accents on 2 and 4"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Plush",
+        "difficulty": "Intermediate",
+        "similarity": "Dean DeLeo's sophisticated jazz-inflected chord voicings and grunge power"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "No Excuses",
+        "artist": "Alice in Chains",
+        "difficulty": "Intermediate",
+        "similarity": "Unusual chord voicings utilizing ringing open high strings and acoustic-electric blend"
+      },
+      {
+        "title": "Rooster",
+        "artist": "Alice in Chains",
+        "difficulty": "Intermediate",
+        "similarity": "Heavy emotional ballad dynamics and rich chorus guitar textures"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Plush",
+        "artist": "Stone Temple Pilots",
+        "difficulty": "Intermediate",
+        "similarity": "Explore DeLeo's iconic inverted chords, diminished substitutions, and stadium crunch"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "classic-rock",
+      "intermediate",
+      "barre-chords",
+      "open-chords",
+      "voice-leading",
+      "rhythm-guitar",
+      "lead-guitar",
+      "bending"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "2-4 weeks"
+  }
+}

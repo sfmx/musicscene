@@ -1,0 +1,311 @@
+{
+  "songInfo": {
+    "title": "Cold Shot",
+    "artist": "Stevie Ray Vaughan and Double Trouble",
+    "album": "Couldn't Stand the Weather",
+    "released": "1984",
+    "genre": "Texas Blues / Blues Shuffle",
+    "tempo": "105 BPM",
+    "duration": "4:01",
+    "key": "A Minor (Eb Tuning)",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor (played in Eb tuning, concert Ab minor)",
+      "scalesUsed": [
+        {
+          "scale": "A minor blues scale",
+          "notes": "A - C - D - Eb - E - G",
+          "application": "Powers Stevie Ray Vaughan's fiery solo licks, vocal bends, and aggressive double-stops"
+        },
+        {
+          "scale": "A Dorian mode",
+          "notes": "A - B - C - D - E - F# - G",
+          "application": "Injects sophisticated blues-jazz color over the D9 (IV9) and Am7 chords"
+        }
+      ],
+      "modalCharacter": "Greasy, lowdown Texas slow-shuffle blues swirling with a rotating Leslie speaker and crisp muted string rakes",
+      "keySignature": "No sharps or flats (A minor)",
+      "relativeMinor": "C major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am7",
+          "Dm7",
+          "F9",
+          "E7#9"
+        ],
+        "progression": "i7 - iv7 - i7 - ♭VI9 - V7#9 - i7",
+        "progressionDescription": "12-bar minor blues progression featuring punchy Freddie King/Albert King style ninth and altered dominant substitutions.",
+        "description": "12-bar minor blues progression featuring punchy Freddie King/Albert King style ninth and altered dominant substitutions."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Shuffle Riff",
+          "progression": "Am7 - Dm7 - Am7 - F9 - E7#9 - Am7",
+          "romanNumerals": "i7 - iv7 - i7 - ♭VI9 - V7#9 - i7",
+          "description": "12-bar minor shuffle with muted rakes and rotating Leslie chord stabs"
+        },
+        {
+          "section": "Turnaround",
+          "progression": "F9 - E7#9 - Am7",
+          "romanNumerals": "♭VI9 - V7#9 - i7",
+          "description": "Aggressive chromatic chord slide from F9 to E7#9 resolving home to Am7"
+        },
+        {
+          "section": "Guitar Solos",
+          "progression": "12-Bar Minor Blues in A",
+          "romanNumerals": "i7 - iv7 - i7 - ♭VI9 - V7#9 - i7",
+          "description": "Two blistering solo choruses featuring Albert King upside-down bends and ferocious vibrato"
+        }
+      ],
+      "harmonicFunction": [
+        "Am7 (i7) - Heavy, blues-drenched minor tonic anchor with Leslie swirl",
+        "Dm7 (iv7) - Minor subdominant deepening the melancholy blues narrative",
+        "F9 (♭VI9) - Soulful substitute chord building tension before the turnaround",
+        "E7#9 (V7#9) - The iconic Jimi Hendrix/Texas altered dominant injecting maximum tension before the tonic resolution"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Texas Shuffle Muted String Rakes & Vibratone Rotary Swirl",
+      "description": "Raking across multiple muted strings to land on punchy double-stops and triad chords while maintaining a driving shuffle rhythm",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bass shuffle: Open low E to 5th fret A root, followed by 7th-fret D/G string chord stabs",
+          "Turnaround: F9 shape (X-8-7-8-8-X) sliding down to E7#9 (X-7-6-7-8-X)",
+          "Albert King bends: 8th fret high E string bent full step with heavy finger vibrato"
+        ],
+        "sequence": [
+          "Mute non-played strings with left-hand index finger",
+          "Rake downward across muted strings to hit the target chords with percussive attack",
+          "Maintain a deep shuffle pulse (triplet feel) with your right hand",
+          "Slide smoothly between F9 and E7#9 on beat 1 and 2 of the turnaround"
+        ],
+        "tips": [
+          "SRV used heavy guitar strings (.013–.058 gauge) tuned down a half-step for colossal tone",
+          "The rotary swirl came from a vintage Fender Vibratone cabinet (Leslie rotating foam drum)",
+          "Dig in hard with the pick edge—SRV played with incredible physical intensity"
+        ],
+        "chords": [
+          "Am7",
+          "Dm7",
+          "F9",
+          "E7#9"
+        ],
+        "progression": "Am7 - Dm7 - F9 - E7#9"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Leslie Shuffle Riff",
+      "timeStamp": "0:00-0:30",
+      "technique": "Shuffle Raking & Chord Stabs",
+      "key": "A Minor",
+      "description": "Stevie's hypnotic opening rhythm combining low bass shuffle notes with swirling chorused chord stabs.",
+      "chords": [
+        "Am7",
+        "Dm7"
+      ],
+      "progression": "Am7 - Dm7",
+      "notes": [
+        "Tune down half a step (Eb Ab Db Gb Bb Eb)",
+        "Lock in with the triplet shuffle feel",
+        "Rake across muted strings before hitting the chord"
+      ],
+      "alphaTab": ":8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :8 0.5 5.5 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) |",
+      "exerciseLabel": "Main Shuffle Groove"
+    },
+    {
+      "name": "Turnaround Chords",
+      "timeStamp": "0:50-1:05",
+      "technique": "Altered Chord Slides",
+      "key": "A Minor",
+      "description": "The dramatic 9th-chord turnaround sliding from F9 into the biting E7#9.",
+      "chords": [
+        "F9",
+        "E7#9",
+        "Am7"
+      ],
+      "progression": "F9 - E7#9 - Am7",
+      "notes": [
+        "Crisp downward slide from fret 8 to 7",
+        "Accentuate the high G note on the E7#9 shape",
+        "Resolve cleanly back into the low A root"
+      ],
+      "alphaTab": ":4 (8.5 7.4 8.3 8.2) :4 (7.5 6.4 7.3 8.2) :2 (7.4 5.3 5.2) | :4 0.6 :4 3.6 :2 5.6 |",
+      "exerciseLabel": "9th-Chord Turnaround"
+    },
+    {
+      "name": "Blues Solo Lick",
+      "timeStamp": "1:45-2:25",
+      "technique": "Texas Blues Bends & Vibrato",
+      "key": "A Blues",
+      "description": "Stevie's signature slow-blues lead phrasing featuring aggressive string bends and wide vibrato.",
+      "chords": [
+        "Am7",
+        "Dm7",
+        "E7#9"
+      ],
+      "progression": "12-Bar Minor Blues",
+      "notes": [
+        "Support full bends with three fretting fingers",
+        "Apply wide, rhythmic wrist vibrato",
+        "Dig into the pick attack for natural tube breakup"
+      ],
+      "alphaTab": ":8 8.1 5.1 8.2 5.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :1 5.5 |",
+      "exerciseLabel": "Blues Solo Phrasing"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stevie Ray Vaughan Signature Stratocaster (1963 'Number One' spec)",
+      "alternatives": [
+        "Fender American Vintage II '61 Stratocaster",
+        "Squier Classic Vibe '60s Strat",
+        "Fender Road Worn Strat"
+      ],
+      "pickup": "Neck/Middle single-coils for rhythm; Bridge/Middle for biting solo leads"
+    },
+    "amp": {
+      "recommended": "Fender Super Reverb & Fender Vibroverb with Fender Vibratone Leslie cab",
+      "alternatives": [
+        "Fender Blues DeVille",
+        "Marshall Studio Vintage",
+        "Boss Katana-100"
+      ],
+      "settings": {
+        "gain": "7 (cranked tube saturation)",
+        "treble": "7",
+        "middle": "7",
+        "bass": "6",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez TS9 / TS808 Tube Screamer (gain low, level high as clean boost)",
+      "chorus": "Fender Vibratone rotating Leslie speaker (or Neo Instruments Ventilator pedal)",
+      "reverb": "Fender tube spring reverb tank",
+      "other": "Heavy gauge guitar strings (.011–.052 minimum)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Minor Blues Chords",
+      "steps": [
+        "Learn the basic 12-bar minor blues progression: Am7, Dm7, and E7",
+        "Practice counting the triplet shuffle groove (1-trip-let, 2-trip-let)",
+        "Strum in quarter notes at 80 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "The Shuffle Rake & Turnaround",
+      "steps": [
+        "Master the percussive string rake into the Am7 chord stabs",
+        "Learn the F9 and E7#9 turnaround shapes and transitions",
+        "Play along with the studio track at 105 BPM"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Texas Lead & Albert King Bends",
+      "steps": [
+        "Nail the solo note-for-note with authentic Stevie Ray Vaughan bending and vibrato",
+        "Incorporate dynamic muted rakes into every lead lick",
+        "Capture the authentic Leslie speaker rotary feel and aggressive touch"
+      ],
+      "timeEstimate": "3-5 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing straight eighth notes instead of the deep swing triplet shuffle",
+      "Letting adjacent strings buzz during muted string rakes",
+      "Under-bending on the 8th fret B and E strings"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Shuffle rake technique isolated on Am7 at 90 BPM",
+      "5 minutes: Turnaround chord transitions (F9 → E7#9 → Am7)",
+      "5 minutes: String bending intonation drill with tuner",
+      "5 minutes: Full solo playthrough with backing track"
+    ],
+    "focusAreas": [
+      "Triplet shuffle swing accuracy",
+      "Left-hand string muting clarity",
+      "Vocal vibrato pitch control"
+    ],
+    "metronomeWork": [
+      "Set metronome to triplet shuffle feel at 85 BPM, gradually advancing to 105 BPM",
+      "Ensure downbeat bass notes land firmly on the beat"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "The Sky Is Crying",
+        "difficulty": "Advanced",
+        "similarity": "Benchmark slow 12-bar minor blues phrasing with Albert King-style bends and wide vibrato"
+      },
+      {
+        "title": "Pride and Joy",
+        "difficulty": "Advanced",
+        "similarity": "The definitive Texas blues shuffle rhythm, muted rakes, and aggressive thumb bass"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Born Under a Bad Sign",
+        "artist": "Albert King",
+        "difficulty": "Intermediate",
+        "similarity": "The source of SRV's signature string bending technique and minor blues vocabulary"
+      },
+      {
+        "title": "Red House",
+        "artist": "The Jimi Hendrix Experience",
+        "difficulty": "Advanced",
+        "similarity": "Masterclass in slow blues dynamic pacing, chord substitutions, and expressive bends"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "The Sky Is Crying",
+        "artist": "Stevie Ray Vaughan",
+        "difficulty": "Advanced",
+        "similarity": "Deepen your slow blues emotional mastery with extreme dynamic control and wide vibrato"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "blues",
+      "classic-rock",
+      "advanced",
+      "palm-muting",
+      "bending",
+      "vibrato",
+      "lead-guitar",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "songInfo": {
+    "title": "Shape of My Heart",
+    "artist": "Sting",
+    "album": "Ten Summoner's Tales",
+    "released": "1993",
+    "genre": "Fingerstyle / Acoustic Pop",
+    "tempo": "84 BPM",
+    "duration": "4:38",
+    "key": "F# Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# minor",
+      "scalesUsed": [
+        {
+          "scale": "F# natural minor / Aeolian",
+          "notes": "F# - G# - A - B - C# - D - E",
+          "application": "The core melancholic scale governing Dominic Miller's classical nylon-string arpeggios"
+        },
+        {
+          "scale": "F# harmonic minor",
+          "notes": "F# - G# - A - B - C# - D - E#",
+          "application": "Supplies the raised leading tone (E#) in the dramatic C#7 dominant chord that resolves back to F#m"
+        }
+      ],
+      "modalCharacter": "Elegant neo-classical acoustic ballad featuring smooth descending voice-leading, suspended chord tones, and nylon-string warmth",
+      "keySignature": "3 sharps (F#, C#, G#)",
+      "relativeMinor": "A major is the relative major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "E6",
+          "D6",
+          "C#7",
+          "Bm7",
+          "F#m/A",
+          "G#m7b5"
+        ],
+        "progression": "i - VII6 - VI6 - V7 - iv7 - i6 - iiø7 - V7",
+        "progressionDescription": "Classical stepwise bass descent from F# down through E, D, and C#, followed by a cycle through Bm7, F#m/A, and half-diminished iiø7.",
+        "description": "Classical stepwise bass descent from F# down through E, D, and C#, followed by a cycle through Bm7, F#m/A, and half-diminished iiø7."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Main Fingerpicked Arpeggio",
+          "progression": "F#m - E6 - D6 - C#7",
+          "romanNumerals": "i - VII6 - VI6 - V7",
+          "description": "Four-bar classical nylon descending progression with suspended upper chord melody"
+        },
+        {
+          "section": "Second Half Turnaround",
+          "progression": "Bm7 - F#m/A - G#m7b5 - C#7",
+          "romanNumerals": "iv7 - i6 - iiø7 - V7",
+          "description": "Rich circle-of-fifths voice leading with half-diminished ii chord leading to major dominant V7"
+        },
+        {
+          "section": "Chorus",
+          "progression": "F#m - E - D - C#7",
+          "romanNumerals": "i - VII - VI - V7",
+          "description": "Expands into fuller fingerpicked textures supporting Sting's contemplative vocal"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m (i) - Somber minor tonic established with low 2nd-fret bass note",
+        "E6 (VII6) - First stepwise bass drop (F# → E) providing smooth classical continuity",
+        "D6 (VI6) - Second stepwise bass drop (E → D) maintaining harmonic descent",
+        "C#7 (V7) - Classical major dominant containing the E# leading tone pulling decisively back into F#m",
+        "G#m7b5 (iiø7) - Half-diminished chord providing sophisticated jazz/classical transition to V7"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Classical Nylon-String PIMA Arpeggiation",
+      "description": "Using classical thumb-index-middle-ring (PIMA) fingerpicking to cleanly articulate bass notes on the beat while weaving intricate arpeggio patterns on strings 2, 3, and 4",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Bass notes: F# (2nd fret low E), E (open low E), D (5th fret A string), C# (4th fret A string)",
+          "Inner voices: Ringing dyads on strings 4, 3, and 2",
+          "Delicate finger pressure to prevent fret buzz on nylon or acoustic strings"
+        ],
+        "sequence": [
+          "Pluck the low F# bass note with the thumb (P)",
+          "Follow with index (I) on string 4, middle (M) on string 3, and ring (A) on string 2",
+          "Shift bass notes smoothly on beats 1 and 3 without interrupting upper voice sustain",
+          "Nail the stretch on the G#m7b5 chord shape"
+        ],
+        "tips": [
+          "Play near the soundhole (tasto) for a round, warm classical tone",
+          "Keep your right-hand thumb positioned forward of your fingers to prevent collisions",
+          "Dominic Miller composed this on a nylon-string classical guitar—nylon string tension makes the wide stretches easier"
+        ],
+        "chords": [
+          "F#m",
+          "E6",
+          "D6",
+          "C#7"
+        ],
+        "progression": "F#m - E6 - D6 - C#7"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Main Classical Arpeggio",
+      "timeStamp": "0:00-0:40",
+      "technique": "PIMA Fingerpicking & Voice Leading",
+      "key": "F# Minor",
+      "description": "Dominic Miller's legendary nylon-string opening figure, one of the most sampled acoustic riffs in modern music.",
+      "chords": [
+        "F#m",
+        "E6",
+        "D6",
+        "C#7"
+      ],
+      "progression": "F#m - E6 - D6 - C#7",
+      "notes": [
+        "Let the bass notes ring as pedal tones",
+        "Execute the delicate upper-voice voice leading",
+        "Keep an unhurried, expressive 84 BPM tempo"
+      ],
+      "alphaTab": ":8 2.6 4.4 2.3 2.2 0.6 4.4 1.3 2.2 | :8 5.5 4.4 2.3 2.2 4.5 3.4 4.3 2.2 |",
+      "exerciseLabel": "Main Nylon Arpeggio"
+    },
+    {
+      "name": "Turnaround Voice Leading",
+      "timeStamp": "0:41-0:58",
+      "technique": "Half-Diminished Chord Shapes",
+      "key": "F# Minor",
+      "description": "The second half of the main theme introducing Bm7 and the haunting G#m7b5 half-diminished chord.",
+      "chords": [
+        "Bm7",
+        "F#m/A",
+        "G#m7b5",
+        "C#7"
+      ],
+      "progression": "Bm7 - F#m/A - G#m7b5 - C#7",
+      "notes": [
+        "Fret G#m7b5 with index on 4th fret low E and ring on 4th fret D",
+        "Smooth resolution to the C#7 shape",
+        "Maintain pure nylon string tone"
+      ],
+      "alphaTab": ":8 2.5 4.4 2.3 3.2 0.5 4.4 2.3 2.2 | :8 4.6 4.4 4.3 3.2 4.5 3.4 4.3 2.2 |",
+      "exerciseLabel": "Turnaround Voice Leading"
+    },
+    {
+      "name": "Chorus Support",
+      "timeStamp": "1:15-1:40",
+      "technique": "Full Acoustic Arpeggiation",
+      "key": "F# Minor",
+      "description": "The broader chordal framework underpinning the chorus hook 'I know that the spades are the swords of a soldier'.",
+      "chords": [
+        "F#m",
+        "E",
+        "D",
+        "C#7"
+      ],
+      "progression": "F#m - E - D - C#7",
+      "notes": [
+        "Wider dynamic volume during the vocal hook",
+        "Full chord arpeggios spanning 5 strings",
+        "Gentle natural deceleration before returning to the verse"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (5.5 4.4 2.3 2.2) :2 (4.5 3.4 4.3 2.2) |",
+      "exerciseLabel": "Chorus Fingerpicked Triads"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Yairi Classical Nylon-String Guitar or Cordoba C7/C9",
+      "alternatives": [
+        "Yamaha NCX1 Nylon",
+        "Taylor 214ce-N",
+        "Martin 000-15M (steel string alternate)"
+      ],
+      "pickup": "Natural microphone capture (Neumann KM184) or high-end internal condenser"
+    },
+    "amp": {
+      "recommended": "AER Compact 60 Acoustic Amplifier or Direct Studio Console",
+      "alternatives": [
+        "Fishman Loudbox Mini",
+        "Fender Acoustic 100",
+        "Bose S1 Pro"
+      ],
+      "settings": {
+        "gain": "Clean acoustic transparency",
+        "treble": "5 (smooth, non-harsh top end)",
+        "middle": "6 (warm wood resonance)",
+        "bass": "5 (controlled bass response)",
+        "presence": "4"
+      }
+    },
+    "effects": {
+      "distortion": "None (pure acoustic nylon tone)",
+      "reverb": "Lexicon 480L Concert Hall reverb (long decay, lush ambiance)",
+      "delay": "Subtle stereo tape delay on production mix",
+      "other": "Natural fingernails or soft finger pads (no pick)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chord Shapes & Bass Descent",
+      "steps": [
+        "Learn the four fundamental chord shapes: F#m, E, D, and C#7",
+        "Practice the descending bassline on the lower strings (F# → E → D → C#)",
+        "Play simple thumb-and-finger strums at 60 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "PIMA Fingerpicking Pattern",
+      "steps": [
+        "Internalize the exact thumb-index-middle-ring fingerpicking cycle",
+        "Coordinate the shifting bass notes with continuous upper-string arpeggios",
+        "Smoothly execute the transition into the G#m7b5 chord"
+      ],
+      "timeEstimate": "2-4 weeks"
+    },
+    "advanced": {
+      "title": "Concert Fluency & Tone Nuance",
+      "steps": [
+        "Play the entire 4-minute composition with fluid classical touch and zero buzzing",
+        "Control dynamic swell between quiet verses and expressive chorus peaks",
+        "Perform cleanly on nylon strings without relying on heavy compression"
+      ],
+      "timeEstimate": "3-5 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Rushing the tempo (keep it strictly at 84 BPM)",
+      "Collapsing your right-hand wrist causing the fingernails to click against strings",
+      "Muting the high notes during the wide fret stretch on the G#m7b5 chord"
+    ],
+    "practiceRoutine": [
+      "5 minutes: Right-hand PIMA arpeggio drill on open strings",
+      "5 minutes: First 4-bar progression shifting with metronome at 70 BPM",
+      "5 minutes: G#m7b5 turnaround stretch isolated practice",
+      "5 minutes: Complete playthrough with attention to tone warmth"
+    ],
+    "focusAreas": [
+      "Right-hand finger independence (PIMA)",
+      "Clean string separation without fret buzz",
+      "Smooth descending bass voice leading"
+    ],
+    "metronomeWork": [
+      "Practice at 65 BPM with steady 8th-note clicks to build finger coordination",
+      "Advance to 84 BPM ensuring bass notes land precisely on beats 1 and 3"
+    ]
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Fragile",
+        "difficulty": "Intermediate",
+        "similarity": "Sting's beautiful nylon-string Latin-jazz fingerpicking and emotive minor harmonies"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Tears in Heaven",
+        "artist": "Eric Clapton",
+        "difficulty": "Intermediate",
+        "similarity": "Masterclass acoustic fingerpicking with moving basslines and suspended chord voicings"
+      },
+      {
+        "title": "Blackbird",
+        "artist": "The Beatles",
+        "difficulty": "Intermediate",
+        "similarity": "Acoustic fingerstyle utilizing tenth intervals and smooth stepwise fretboard navigation"
+      }
+    ],
+    "progressionPath": [
+      {
+        "title": "Classical Gas",
+        "artist": "Mason Williams",
+        "difficulty": "Advanced",
+        "similarity": "Take your classical fingerstyle mastery to the ultimate level with rapid arpeggios and rhythmic drive"
+      }
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-16",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "fingerstyle",
+      "acoustic-guitar",
+      "advanced",
+      "minor-key",
+      "arpeggios",
+      "voice-leading",
+      "chord-progressions",
+      "rhythm-guitar"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "3-5 weeks"
+  }
+}
