@@ -2,62 +2,62 @@
   "slug": "bending-vibrato",
   "category": "technique",
   "pageInfo": {
-    "pageTitle": "Bending & Vibrato Technique",
-    "subtitle": "Master the expressive techniques that bring emotion and personality to your playing through controlled pitch manipulation and musical vibrato.",
+    "pageTitle": "Bending & Vibrato Masterclass",
+    "subtitle": "Master pinpoint pitch accuracy, finger reinforcement, wrist-pivot vibrato, microtonal blues curls, and vocal phrasing.",
     "heroGradient": "bg-gradient-to-br from-rose-50 to-pink-100",
-    "heroTitle": "Bending & Vibrato Mastery",
-    "heroDescription": "Bending and vibrato are the most expressive techniques in guitar playing, allowing you to add emotion, personality, and vocal-like qualities to your music. These techniques transform static notes into living, breathing musical expressions that can convey everything from subtle sophistication to raw emotional power. Mastering these skills is essential for blues, rock, jazz, and virtually every guitar style."
+    "heroTitle": "Bending & Vibrato Masterclass",
+    "heroDescription": "If notes are the vocabulary of guitar playing, bending and vibrato are its emotional voice. The electric guitar is one of the very few instruments capable of matching the microtonal nuances, cries, and soulful inflections of the human vocal cord. From the soaring, tear-inducing whole-step bends of David Gilmour and the stinging butterfly vibrato of B.B. King to the aggressive wide pulse of Zakk Wylde, mastering pitch control and oscillating vibrato is what transforms sterile fretboard patterns into living, crying music."
   },
   "guidelines": {
-    "title": "Fundamental Principles",
+    "title": "The Biomechanics of Pitch & Vibrato Mastery",
     "columns": [
       {
-        "title": "Bending Technique",
+        "title": "Mechanics of Pitch-Perfect Bending",
         "items": [
           {
             "bulletColor": "text-rose-500",
-            "text": "Use multiple fingers for strength and control"
+            "text": "Multi-Finger Reinforcement: Never bend with an isolated finger; always place the index and middle fingers directly behind your bending ring finger for maximum power and pitch control."
           },
           {
             "bulletColor": "text-rose-500",
-            "text": "Push or pull strings perpendicular to fretboard"
+            "text": "Wrist-Pivot Rotation: Power your bends by rotating the entire wrist and forearm around the thumb pivot like turning a doorknob—never strain isolated finger joints."
           },
           {
             "bulletColor": "text-rose-500",
-            "text": "Maintain consistent finger pressure"
+            "text": "Fretboard Directionality: Push upward toward the ceiling on strings 1, 2, and 3; pull downward toward the floor on strings 4, 5, and 6 to prevent strings from slipping off the fret wire."
           },
           {
             "bulletColor": "text-rose-500",
-            "text": "Develop accurate pitch targeting"
+            "text": "Pre-Hearing the Target Pitch: Always sing or fret the target note unbent first to lock its exact pitch in your mind before executing the bend."
           },
           {
             "bulletColor": "text-rose-500",
-            "text": "Practice smooth bend and release motions"
+            "text": "Pre-Bends & Ghost Releases: Silently bending the string to pitch before picking, then releasing it downward creates heart-wrenching, mournful vocal expression."
           }
         ]
       },
       {
-        "title": "Vibrato Control",
+        "title": "The Art of Expressive Vibrato",
         "items": [
           {
             "bulletColor": "text-pink-500",
-            "text": "Control speed and width of oscillation"
+            "text": "The Rotational Wrist Pivot: Anchor the base of your fretting index finger against the side of the guitar neck and rotate your wrist smoothly like an engine piston."
           },
           {
             "bulletColor": "text-pink-500",
-            "text": "Use wrist and finger motion coordination"
+            "text": "Controlled Pitch Oscillation: True vibrato oscillates smoothly between the target pitch and slightly below, maintaining an unwavering, hypnotic rhythmic pulse."
           },
           {
             "bulletColor": "text-pink-500",
-            "text": "Match vibrato style to musical context"
+            "text": "Delayed Vibrato Timing: Hold the note straight and pure on beat 1 before initiating vibrato on beat 2—this mimics how master vocalists emphasize pitch before adding vibrato."
           },
           {
             "bulletColor": "text-pink-500",
-            "text": "Develop consistent rhythmic pulsing"
+            "text": "Stylistic Width & Speed: Adapt your vibrato character: tight, rapid 'butterfly' vibrato for vintage blues, or wide, majestic slow vibrato for arena rock anthems."
           },
           {
             "bulletColor": "text-pink-500",
-            "text": "Practice delayed vibrato entry"
+            "text": "Adjacent String Muting: Rest your right-hand palm and left-hand index finger lightly against neighboring strings to eliminate clattering string noise during violent bends."
           }
         ]
       }
@@ -65,307 +65,362 @@
   },
   "sections": [
     {
-      "title": "Basic Bending Techniques",
+      "title": "Half-Step, Whole-Step & Unison Pitch Mastery",
       "exercises": [
         {
           "number": 1,
-          "title": "Half-Step Bends",
-          "difficulty": "Foundation",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Start with subtle half-step (semitone) bends to develop control and pitch accuracy. These small bends are essential for blues, jazz, and expressive playing.",
+          "title": "The Pitch Calibration Anchor: Half-Step Bends",
+          "difficulty": "Beginner",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Half-step bends require subtle, delicate muscle control. In this study, you first play the target reference note fretted normally, then bend into it from one fret below using reinforced fingers. Matching the exact pitch trains your ear and muscles to eliminate sharp or flat notes.",
           "patternNote": {
-            "colorBg": "bg-green-50",
-            "colorText": "text-green-800",
-            "text": "Target: Bend up exactly one fret's worth of pitch"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Calibration Routine: Fret Target Note (fret 8) ➔ Bend fret 7 up 1 half-step until pitches match perfectly"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" }
+          ],
           "notation": {
-            "title": "Half-Step Bends: 3rd, 2nd, and 1st Strings",
-            "alphaTex": ":4 7.3 7.3{b (0 2 2)} 7.3 r | 9.2 9.2{b (0 2 2)} 9.2 r | 10.1 10.1{b (0 2 2)} 10.1 r | r r r r |"
+            "title": "Half-Step Pitch Calibration Across Strings 3, 2, and 1",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 :4 8.3 :4 7.3{b (0 2 2)} :4 7.3 :4 r | :4 10.2 :4 9.2{b (0 2 2)} :4 9.2 :4 r | :4 8.1 :4 7.1{b (0 2 2)} :4 7.1 :4 r | :4 5.1 :4 8.2 :2 5.1 |",
+            "staveTitle": "Matching Target Reference Frets with Precise Half-Step Bends"
           },
           "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Use your ring finger supported by middle and index fingers. Bend slowly and listen carefully to match the target pitch. Practice on different strings to feel the varying resistance.",
-            "tempo": "Practice with reference notes first"
+            "text": "Play along with a tuner pedal on your board. Watch the needle lock into center pitch as your bend reaches its peak. Back up your ring finger with your middle and index fingers.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Whole-Step Bends",
-          "difficulty": "Essential",
-          "borderColor": "border-blue-200",
-          "difficultyBg": "bg-blue-100",
-          "difficultyText": "text-blue-700",
-          "numberBg": "bg-blue-100",
-          "numberText": "text-blue-600",
-          "description": "Master the classic whole-step (whole tone) bend - the most common and recognizable bend in blues and rock guitar. This is the foundation of expressive lead playing.",
+          "title": "The Definitive Whole-Step Rock Bend",
+          "difficulty": "Beginner",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "The whole-step bend (two frets' distance in pitch) is the single most common and expressive bend in rock and blues guitar. In this exercise, compare the unbent reference note against the bent pitch across strings 3, 2, and 1 in the key of A minor.",
           "patternNote": {
-            "colorBg": "bg-blue-50",
-            "colorText": "text-blue-800",
-            "text": "Target: Bend up exactly two frets' worth of pitch"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Target Pitch: Bend up 2 frets' worth of pitch (e.g. fret 7 on string 3 bends up to match fret 9)"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" }
+          ],
           "notation": {
-            "title": "Whole-Step Bends: Major Scale Context",
-            "alphaTex": ":4 7.3 7.3{b (0 4 4)} 7.3 r | 8.2 8.2{b (0 4 4)} 8.2 r | 8.1 8.1{b (0 4 4)} 8.1 r | r r r r |"
+            "title": "Whole-Step Bends Across Pentatonic Position 1",
+            "alphaTex": "\\tempo 72 . \\ts 4 4 :4 9.3 :4 7.3{b (0 4 4)} :4 7.3 :4 r | :4 10.2 :4 8.2{b (0 4 4)} :4 8.2 :4 r | :4 10.1 :4 8.1{b (0 4 4)} :4 8.1 :4 r | :4 10.1 :4 8.1 :2 5.1 |",
+            "staveTitle": "Comparing Reference Frets with Full Whole-Step Bends and Releases"
           },
           "practiceNotes": {
-            "colorBg": "bg-blue-50",
-            "colorBorder": "border-blue-200",
-            "colorTitle": "text-blue-900",
-            "colorText": "text-blue-800",
-            "colorAccent": "bg-blue-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Use all three fingers behind the bending finger for maximum strength. This bend should sound exactly like the note two frets higher. Practice bending up and releasing slowly.",
-            "tempo": "The most important bend to master"
+            "text": "Rotate your wrist firmly. The thumb should be hooked over the top of the neck to provide leverage. Hold the bent pitch rock-steady without allowing it to waver or sag.",
+            "tempo": "72 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Pre-Bends and Releases",
+          "title": "Unison Bends: Phasing Pitch Lock",
           "difficulty": "Intermediate",
-          "borderColor": "border-purple-200",
-          "difficultyBg": "bg-purple-100",
-          "difficultyText": "text-purple-700",
-          "numberBg": "bg-purple-100",
-          "numberText": "text-purple-600",
-          "description": "Learn to bend strings before picking (pre-bend) and then release them for a descending pitch effect. This creates unique tonal colors and emotional expression.",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "A unison bend holds a stationary high note with the index finger on one string while the ring finger on the adjacent lower string bends up to match the identical pitch. As the bent note approaches the stationary note, you will hear a rapid pulsing 'chorus' effect that locks into pure acoustic power.",
           "patternNote": {
-            "colorBg": "bg-purple-50",
-            "colorText": "text-purple-800",
-            "text": "Technique: Silent bend up, pick, then release down"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Unison Geometry: Hold String 2 (Fret 8) steady with Index ➔ Bend String 3 (Fret 7) up to match pitch"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "D", "chord": "D" }
+          ],
           "notation": {
-            "title": "Pre-Bends with Releases: Descending Pitch Effects",
-            "alphaTex": ":4 7.3{b (4 4 0)} r 8.2{b (4 4 0)} r | 8.1{b (4 4 0)} r r r | 7.3{b (4 4 0)} 8.2{b (4 4 0)} 7.3 r | r r r r |"
+            "title": "Unison Bends Across Strings 2 & 3 and 1 & 2",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 :4 8.2 :4 7.3{b (0 4 4)} :2 8.2 | :4 5.1 :4 8.2{b (0 4 4)} :2 5.1 | :4 8.1 :4 10.2{b (0 4 4)} :2 8.1 | :4 10.1 :4 8.1 :2 5.1 |",
+            "staveTitle": "Locking Simultaneous Bent and Fretted Notes into Unison Resonance"
           },
           "practiceNotes": {
-            "colorBg": "bg-purple-50",
-            "colorBorder": "border-purple-200",
-            "colorTitle": "text-purple-900",
-            "colorText": "text-purple-800",
-            "colorAccent": "bg-purple-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Bend the string silently to target pitch first, then pick and slowly release. The goal is a smooth descending pitch without any attack on the bent note.",
-            "tempo": "Creates unique \"reverse\" bend sound"
+            "text": "Listen for the acoustic beating effect. When the two pitches are slightly out of tune, you will hear rapid wobble; when they are in perfect unison, the sound becomes thick, singing, and stable.",
+            "tempo": "75 BPM"
           }
         }
       ]
     },
     {
-      "title": "Advanced Bending Techniques",
+      "title": "Pre-Bends, Microtonal Curls, Vibrato & Master Solo",
       "exercises": [
         {
           "number": 4,
-          "title": "Multiple String Bends",
-          "difficulty": "Advanced",
-          "borderColor": "border-amber-200",
-          "difficultyBg": "bg-amber-100",
-          "difficultyText": "text-amber-700",
-          "numberBg": "bg-amber-100",
-          "numberText": "text-amber-600",
-          "description": "Bend multiple strings simultaneously or in sequence to create harmonized bends and complex pitch relationships that add richness to your melodic lines.",
+          "title": "Pre-Bends & Ghost Releases",
+          "difficulty": "Intermediate",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "A pre-bend (or ghost bend) requires you to push the string up to pitch silently before striking it with the pick, then smoothly releasing it downward to its natural fret pitch. This produces a crying, vocal descending sigh favored by David Gilmour and Jeff Beck.",
           "patternNote": {
-            "colorBg": "bg-amber-50",
-            "colorText": "text-amber-800",
-            "text": "Challenge: Controlling multiple strings with different bend amounts"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Ghost Sequence: Push string up silently ➔ Pick at peak pitch ➔ Release downward smoothly"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" }
+          ],
           "notation": {
-            "title": "Unison and Octave Double Bends",
-            "alphaTex": ":4 7.3 7.3{b (0 4 4)} 7.2 7.2{b (0 4 4)} | 8.2 8.2{b (0 4 4)} 8.1 8.1{b (0 4 4)} | 7.3{b (0 4 4)} 7.2{b (0 4 4)} 7.3 r | r r r r |"
+            "title": "Pre-Bend and Release Etude",
+            "alphaTex": "\\tempo 74 . \\ts 4 4 :4 7.3{b (0 4 0)} :4 5.3 :4 7.4 :4 r | :4 8.2{b (0 4 0)} :4 6.2 :4 7.3 :4 r | :4 8.1{b (0 4 0)} :4 5.1 :4 8.2 :4 r | :4 7.3 :4 5.3 :2 7.4 |",
+            "staveTitle": "Descending Pitch Releases from Pre-Bent Peaks"
           },
           "practiceNotes": {
-            "colorBg": "bg-amber-50",
-            "colorBorder": "border-amber-200",
-            "colorTitle": "text-amber-900",
-            "colorText": "text-amber-800",
-            "colorAccent": "bg-amber-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Use one finger per string and coordinate the bending motion. Start with unison bends (same pitch on different strings) before attempting harmony bends.",
-            "tempo": "Creates thick, harmonized lead lines"
+            "text": "Pre-bending requires flawless tactile memory. Fret the unbent note first to establish the pitch in your ear, then push up silently without picking, strike firmly, and release with controlled speed.",
+            "tempo": "74 BPM"
           }
         },
         {
           "number": 5,
-          "title": "Bend and Hold with Vibrato",
-          "difficulty": "Expressive",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine bending with vibrato to create the most expressive technique in guitar playing. This is essential for blues, rock solos, and emotional musical expression.",
+          "title": "The Microtonal Quarter-Step Blues Curl",
+          "difficulty": "Intermediate",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "The soul of the blues lives in the cracks between the piano keys. The quarter-step curl takes the minor 3rd (C on fret 5, string 3) and bends it just slightly sharp—approximately 25–50 cents—toward the major 3rd. This microtonal inflection creates that unmistakable greasy blues swagger.",
           "patternNote": {
-            "colorBg": "bg-red-50",
-            "colorText": "text-red-800",
-            "text": "Technique: Bend to pitch, hold, then apply vibrato"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "The Blue Curl: Bend the minor 3rd just 1/4 step sharp, resolving down to the root with attitude"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "D", "chord": "D" }
+          ],
           "notation": {
-            "title": "Sustained Bends with Vibrato Application",
-            "alphaTex": ":2 7.3{b (0 4 4)} r | 8.2{b (0 4 4)} r | 10.1{b (0 4 4)} r | r r |"
+            "title": "Quarter-Step Microtonal Blues Curls",
+            "alphaTex": "\\tempo 76 . \\ts 4 4 :4 5.3{b (0 1 1)} :4 7.4 :4 5.4 :4 7.4 | :4 8.2{b (0 1 1)} :4 5.1 :4 8.2 :4 5.2 | :4 5.3{b (0 1 1)} :4 7.4 :8 5.3 7.3 :4 5.2 | :8 7.3 5.3 7.4 5.4 :2 7.4 |",
+            "staveTitle": "Microtonal Quarter-Step Curls on Minor 3rds and 7ths"
           },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Bend to the target pitch and hold it steady, then apply gentle vibrato. The vibrato should be controlled and musical, not wild or erratic.",
-            "tempo": "The signature sound of expressive guitar"
+            "text": "Do not bend all the way to a half-step; the magic of the curl is that it stays ambiguous—neither strictly minor nor strictly major. Release quickly into the root with attitude.",
+            "tempo": "76 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Vibrato Techniques",
-      "exercises": [
+        },
         {
           "number": 6,
-          "title": "Basic Vibrato Control",
-          "difficulty": "Essential",
-          "borderColor": "border-indigo-200",
-          "difficultyBg": "bg-indigo-100",
-          "difficultyText": "text-indigo-700",
-          "numberBg": "bg-indigo-100",
-          "numberText": "text-indigo-600",
-          "description": "Develop consistent, controlled vibrato that adds life and emotion to sustained notes. Master different speeds and widths to match various musical contexts.",
+          "title": "Delayed Singing Wrist-Pivot Vibrato",
+          "difficulty": "Advanced",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "Vibrato on a bent string is the crowning hallmark of guitar mastery. In this exercise, execute a whole-step bend, lock into the peak pitch with zero movement for beat 1, and then smoothly engage your wrist pivot to pulse the pitch in rhythmic synchronization with the tempo.",
           "patternNote": {
-            "colorBg": "bg-indigo-50",
-            "colorText": "text-indigo-800",
-            "text": "Focus: Consistent oscillation speed and pitch width"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Two-Phase Phrasing: Phase 1: Pure pitch lock (Beat 1) ➔ Phase 2: Rhythmic wrist vibrato (Beats 2, 3, 4)"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Sustained Notes with Vibrato on Different Strings",
-            "alphaTex": ":1 7.3{v} | 10.2{v} | 12.1{v} | 15.1{v} |"
+            "title": "Delayed Bent-String Vibrato Study",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 :4 7.3{b (0 4 4)} :2. 7.3 | :4 8.2{b (0 4 4)} :2. 8.2 | :4 10.1{b (0 4 4)} :2. 10.1 | :4 8.1 :4 10.2 :2 5.1 |",
+            "staveTitle": "Holding Pure Pitch Bends Before Swelling Wide Vocal Vibrato"
           },
           "practiceNotes": {
-            "colorBg": "bg-indigo-50",
-            "colorBorder": "border-indigo-200",
-            "colorTitle": "text-indigo-900",
-            "colorText": "text-indigo-800",
-            "colorAccent": "bg-indigo-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Start the vibrato motion after the note is clearly established. Use wrist motion primarily, with finger support. Practice both fast and slow vibrato speeds.",
-            "tempo": "Speed: 4-8 oscillations per second"
+            "text": "Never let the string drop below the bent target pitch during the vibrato oscillation. The vibrato should pulse from the bent peak pitch downward slightly and return to the peak.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 7,
-          "title": "Delayed Vibrato Entry",
-          "difficulty": "Sophisticated",
-          "borderColor": "border-cyan-200",
-          "difficultyBg": "bg-cyan-100",
-          "difficultyText": "text-cyan-700",
-          "numberBg": "bg-cyan-100",
-          "numberText": "text-cyan-600",
-          "description": "Master the sophisticated technique of delayed vibrato - letting the note ring clearly before gradually introducing vibrato for maximum emotional impact.",
+          "title": "The Master Expressive Etude: Gilmour & King Touch",
+          "difficulty": "Advanced",
+          "borderColor": "border-rose-200",
+          "difficultyBg": "bg-rose-100",
+          "difficultyText": "text-rose-700",
+          "numberBg": "bg-rose-100",
+          "numberText": "text-rose-600",
+          "description": "This breathtaking 4-measure etude synthesizes all expressive elements: soaring whole-step bends with delayed vibrato over Am, singing unison releases over G, weeping ghost pre-bends over F, and an impassioned blues curl resolving into the low tonic over E7.",
           "patternNote": {
-            "colorBg": "bg-cyan-50",
-            "colorText": "text-cyan-800",
-            "text": "Timing: Note -> Silence -> Gradual vibrato introduction"
+            "colorBg": "bg-rose-50",
+            "colorText": "text-rose-800",
+            "text": "Complete Expression: Whole-Step Bends + Unison Locks + Ghost Pre-Bends + Vocal Vibrato"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" },
+            { "label": "F", "chord": "F" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Progressive Vibrato Introduction",
-            "alphaTex": ":2 12.1 12.1{v} | 15.1 15.1{v} | 10.2 10.2{v} | 12.2 12.2{v} |"
+            "title": "Master Expressive Lead Etude",
+            "alphaTex": "\\tempo 72 . \\ts 4 4 :8 5.3 7.3 :4 7.3{b (0 4 4)} :2 7.3 | :4 8.2 :4 7.3{b (0 4 4)} :8 5.3{b (0 1 1)} 7.4 :4 5.4 | :4 8.1{b (0 4 0)} :4 5.1 :8 8.2 7.2 :4 5.2 | :4 7.3{b (0 4 4)} :4 5.3 :2 5.4 |",
+            "staveTitle": "Comprehensive 4-Bar Expressive Solo Etude Across Am - G - F - E7"
           },
           "practiceNotes": {
-            "colorBg": "bg-cyan-50",
-            "colorBorder": "border-cyan-200",
-            "colorTitle": "text-cyan-900",
-            "colorText": "text-cyan-800",
-            "colorAccent": "bg-cyan-100",
+            "colorBg": "bg-rose-50",
+            "colorBorder": "border-rose-200",
+            "colorTitle": "text-rose-900",
+            "colorText": "text-rose-800",
+            "colorAccent": "bg-rose-100",
             "title": "Practice Notes",
-            "text": "Let the initial note ring cleanly, then gradually introduce vibrato. This creates dramatic tension and is very effective for climactic moments in solos.",
-            "tempo": "Creates maximum emotional impact"
-          }
-        },
-        {
-          "number": 8,
-          "title": "Vibrato Width Control",
-          "difficulty": "Stylistic",
-          "borderColor": "border-orange-200",
-          "difficultyBg": "bg-orange-100",
-          "difficultyText": "text-orange-700",
-          "numberBg": "bg-orange-100",
-          "numberText": "text-orange-600",
-          "description": "Learn to control the width (pitch deviation) of your vibrato to match different musical styles - from subtle jazz vibrato to wide blues/rock expression.",
-          "patternNote": {
-            "colorBg": "bg-orange-50",
-            "colorText": "text-orange-800",
-            "text": "Range: Narrow (quarter-tone) to wide (half-step) vibrato"
-          },
-          "notation": {
-            "title": "Vibrato on Different Strings and Positions",
-            "alphaTex": ":2 12.1{v} 7.1{v} | 10.2{v} 5.2{v} | 7.3{v} 3.3{v} | 5.4{v} r |"
-          },
-          "practiceNotes": {
-            "colorBg": "bg-orange-50",
-            "colorBorder": "border-orange-200",
-            "colorTitle": "text-orange-900",
-            "colorText": "text-orange-800",
-            "colorAccent": "bg-orange-100",
-            "title": "Practice Notes",
-            "text": "Practice the same note with different vibrato widths. Narrow vibrato for jazz/classical, medium for rock, wide for blues. Match the style to the musical context.",
-            "tempo": "Style-appropriate vibrato selection"
+            "text": "Treat your guitar like a vocalist telling an emotionally charged story. Every bend must have intention, every vibrato must breathe, and every note must sing.",
+            "tempo": "72 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Practice Strategy & Development",
+    "title": "Expression Mastery Insights, Pitfalls & Daily Workout",
     "items": [
       {
-        "title": "Technical Development",
-        "colorBg": "bg-gradient-to-br from-rose-50 to-pink-50",
-        "colorBorder": "border-rose-200",
-        "colorTitle": "text-rose-900",
-        "colorText": "text-rose-800",
-        "bulletColor": "text-rose-500",
+        "title": "3 Mistakes That Kill Bending & Vibrato",
+        "colorBg": "bg-red-50",
+        "colorBorder": "border-red-200",
+        "colorTitle": "text-red-900",
+        "colorText": "text-red-800",
         "items": [
-          "Start with reference notes to train pitch accuracy",
-          "Practice bends on all strings to feel resistance differences",
-          "Use multiple fingers for strength and control",
-          "Record yourself to evaluate pitch accuracy",
-          "Practice slow, controlled vibrato before attempting fast"
+          "Pitch Laziness (Under/Over Bending): Stopping a bend 20 cents short of the target pitch sounds painfully out of tune. Always calibrate your ear with an unbent reference note.",
+          "The 'Finger Wiggle' (Nervous Shaking): Spastically shaking your fretting finger creates an erratic, out-of-control sound. Vibrato must come from a smooth, rotating wrist pivot anchored at the index knuckle.",
+          "Premature Vibrato: Shaking a note the instant it is picked hides poor pitch accuracy and deprives the note of pure harmonic presence. Let the note ring clean before initiating vibrato."
         ]
       },
       {
-        "title": "Common Challenges",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-indigo-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
-        "challenges": [
-          {
-            "title": "Inaccurate Pitch",
-            "text": "Practice with a tuner or backing track to verify target pitches. Play the target note first, then bend to match it."
-          },
-          {
-            "title": "Inconsistent Vibrato",
-            "text": "Focus on regular, controlled motion. Practice with a metronome to develop consistent timing and rhythm."
-          },
-          {
-            "title": "Weak Finger Strength",
-            "text": "Build up gradually with easier bends. Use multiple fingers for support and practice finger strengthening exercises."
-          }
+        "title": "Masters of Bending & Vibrato",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "David Gilmour: The undisputed benchmark of pitch-perfect bends; famous for multi-step bends, singing overdriven sustain, and weeping pre-bends.",
+          "B.B. King: The pioneer of the rapid, fluttering 'butterfly' vibrato executed purely from the fretting wrist with no finger movement.",
+          "Stevie Ray Vaughan: Combined powerful Texas whole-step and minor-third bends with aggressive, wide, rhythmic vibrato that pushed heavy string gauges.",
+          "Gary Moore: Legendary for sustained high-register bends with dramatic delayed vibrato that sustained for measures on end with emotional ferocity."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Expression Workout",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
+        "items": [
+          "Block 1: Tuner-Calibrated Whole Steps (5 min) - Bend fret 7 on string 3 up to match fret 9. Use a chromatic tuner pedal to ensure the needle stops dead-center on every repetition.",
+          "Block 2: Ghost Pre-Bends (5 min) - Practice silently pushing strings up a whole step before striking, testing your tactile muscle memory across strings 1, 2, and 3.",
+          "Block 3: The Delayed Vibrato Drill (5 min) - Pick high notes, count '1-2' in straight pure pitch, then engage wide wrist vibrato on '3-4' at 70 BPM."
         ]
       }
     ]
   },
+  "journeySection": {
+    "title": "Deepen Your Guitar Technique Journey",
+    "description": "Bending and vibrato give personality and emotion to your playing. Expand your technical vocabulary with these complementary masterclasses.",
+    "gradientFrom": "from-rose-50",
+    "gradientTo": "to-pink-50",
+    "borderColor": "border-rose-200",
+    "links": [
+      {
+        "href": "/lessons/practice/technique/alternate-picking",
+        "title": "Alternate Picking",
+        "description": "Develop high-speed articulation, precision synchronization, and effortless string crossing.",
+        "linkText": "Master Picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-rose-400",
+        "iconBg": "bg-rose-100",
+        "iconHoverBg": "group-hover:bg-rose-200",
+        "linkColor": "text-rose-600",
+        "linkHoverColor": "group-hover:text-rose-700"
+      },
+      {
+        "href": "/lessons/practice/technique/legato",
+        "title": "Legato Mastery",
+        "description": "Connect your expressive bends with fluid hammer-ons, pull-offs, and multi-string runs.",
+        "linkText": "Master Legato",
+        "icon": "➰",
+        "hoverBorder": "hover:border-pink-400",
+        "iconBg": "bg-pink-100",
+        "iconHoverBg": "group-hover:bg-pink-200",
+        "linkColor": "text-pink-600",
+        "linkHoverColor": "group-hover:text-pink-700"
+      },
+      {
+        "href": "/lessons/practice/technique/slide-techniques",
+        "title": "Slide & Glissando",
+        "description": "Incorporate vocal fretboard slides and microtonal transitions between your bent destinations.",
+        "linkText": "Explore Slides",
+        "icon": "↗️",
+        "hoverBorder": "hover:border-red-400",
+        "iconBg": "bg-red-100",
+        "iconHoverBg": "group-hover:bg-red-200",
+        "linkColor": "text-red-600",
+        "linkHoverColor": "group-hover:text-red-700"
+      }
+    ]
+  },
   "gearRecommendations": {
-    "title": "Recommended Gear for Bending & Vibrato",
+    "title": "Recommended Gear for Singing Sustain & Pitch Control",
     "items": [
-      { "category": "Strings", "product": "Ernie Ball Regular Slinky", "reason": "Light gauge strings (10-46) are easier to bend accurately without excess finger strain" },
-      { "category": "Guitar", "product": "Fender Player Stratocaster", "reason": "Strat-style guitars with curved fretboard radius make string bending feel natural and comfortable" }
+      {
+        "category": "High-Accuracy Tuner Pedal",
+        "product": "TC Electronic PolyTune 3",
+        "reason": "Ultra-precise strobe mode (±0.02 cent accuracy) provides instant visual feedback to verify that your whole-step and half-step bends stop dead-center."
+      },
+      {
+        "category": "Sustain & Compressor Pedal",
+        "product": "Keeley Compressor Plus",
+        "reason": "Maintains note volume long enough to let extended bent notes sustain cleanly into rich, singing delayed vibrato without dying out."
+      }
     ]
   }
 }
