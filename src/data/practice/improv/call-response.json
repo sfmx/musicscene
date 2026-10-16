@@ -2,51 +2,95 @@
   "slug": "call-response",
   "category": "improv",
   "pageInfo": {
-    "pageTitle": "Call & Response",
-    "subtitle": "Master musical conversation and interactive improvisation - learn to listen, react, and create meaningful musical dialogues with natural phrasing.",
+    "pageTitle": "Call & Response Improvisation",
+    "subtitle": "Master musical conversation and interactive guitar improvisation - learn to construct musical questions, leave breathing room, and deliver authoritative melodic answers.",
     "heroGradient": "bg-gradient-to-br from-green-50 to-emerald-100",
-    "heroTitle": "Call & Response",
-    "heroDescription": "Master the art of musical conversation - the foundation of interactive improvisation, jam sessions, and ensemble playing. Learn to listen, react, and create meaningful dialogue."
+    "heroTitle": "Call & Response Masterclass",
+    "heroDescription": "Master the timeless art of musical conversation—the cornerstone of blues, jazz, rock, and soul improvisation. Learn how to construct compelling antecedent 'questions', use silence as a dynamic weapon, and resolve tension with definitive consequent 'answers' across authentic guitar tablature and interactive audio playback."
   },
   "guidelines": {
-    "title": "Call & Response Fundamentals",
+    "title": "The Mechanics of Musical Dialogue",
     "columns": [
       {
-        "title": "Essential Elements",
+        "title": "Anatomy of a Dialogue",
         "items": [
-          { "bulletColor": "text-green-500", "text": "Listening: Really hear what comes before" },
-          { "bulletColor": "text-green-500", "text": "Space: Allow silence between call and response" },
-          { "bulletColor": "text-green-500", "text": "Relationship: Response should relate to call" },
-          { "bulletColor": "text-green-500", "text": "Variety: Mix echoing and contrasting responses" },
-          { "bulletColor": "text-green-500", "text": "Development: Build and evolve musical ideas" }
+          {
+            "bulletColor": "text-green-500",
+            "text": "Antecedent (The Question): Phrases that rise in pitch contour or terminate on unresolved scale degrees (the 4th, b7th, or 2nd) to create harmonic expectancy."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "The Breath (Space & Silence): Leaving 1 to 2 beats or full bars of rest to let the audience digest the statement before offering a reply."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Consequent (The Answer): Phrases that descend or resolve conclusively onto stable chord tones—most notably the tonic Root or Major 3rd."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Rhythmic Echo: Repeating the exact rhythmic pattern of the call while changing the pitch contour to build thematic cohesion."
+          },
+          {
+            "bulletColor": "text-green-500",
+            "text": "Register Contrast: Simulating two distinct voices by jumping between high-register screams and low-register throaty responses."
+          }
         ]
       },
       {
-        "title": "Musical Benefits",
+        "title": "Musical Benefits for Soloists",
         "items": [
-          { "bulletColor": "text-emerald-500", "text": "Develops ears: Improves listening skills" },
-          { "bulletColor": "text-emerald-500", "text": "Creates structure: Organizes improvisation" },
-          { "bulletColor": "text-emerald-500", "text": "Builds interaction: Essential for ensemble playing" },
-          { "bulletColor": "text-emerald-500", "text": "Teaches restraint: Not everything needs filling" },
-          { "bulletColor": "text-emerald-500", "text": "Professional skills: Essential for jamming" }
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Cures Endless Noodling: Replaces aimless continuous scale running with structured, memorable, and story-driven phrases."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Vocal-Like Phrasing: Emulates human breathing and conversational cadence, forging an immediate emotional connection with listeners."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Stage Authority: Instills the confidence to leave dramatic silence between phrases rather than nervously overfilling every bar."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Effortless Jam Trading: Prepares you to trade 2-bar or 4-bar phrases naturally with vocalists, saxophonists, and rhythm sections."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Harmonic Awareness: Naturally trains your ear to target chord changes by tailoring your responses to land on active chord tones."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Call & Response",
+      "title": "Foundational Call & Response Exercises",
       "exercises": [
         {
           "number": 1,
-          "title": "Basic Call & Response",
+          "title": "Antecedent & Consequent Blues (The Question & Answer)",
           "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Simple question and answer between two musical phrases. Structure: Statement, Pause, Response. Examples include blues guitar and vocal interplay, jam session trading, and solo section dialogue.",
+          "description": "The fundamental engine of blues and rock soloing is the relationship between an antecedent phrase (an open-ended 'question') and a consequent phrase (a grounded 'answer'). In this 4-bar study in A Minor Pentatonic, Bars 1-2 introduce a rising motif ending on an unresolved hanging note with two beats of breathing space. Bars 3-4 immediately answer with a descending cascade that resolves conclusively onto the low root note A.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Formula: 2-Bar Question (ends unresolved) ➔ 2-Beat Pause ➔ 2-Bar Answer (resolves to root A)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "The Fundamental Question & Answer in A Minor",
+            "alphaTex": "\\tempo 75 \\ts 4 4\n:8 5.1 8.2 5.2 :4 7.3 :8 5.3 7.3 | :4 5.2 r.4 r.2 | :8 7.3 5.3 7.4 5.4 :4 7.4 5.4 | 7.4.1 |",
+            "staveTitle": "Question (Bars 1-2) & Answer (Bars 3-4)"
+          },
           "practiceNotes": {
             "colorBg": "bg-green-50",
             "colorBorder": "border-green-200",
@@ -54,19 +98,34 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Start with simple 2-bar phrases. The pause between call and response is essential - don't rush into your answer."
+            "text": "Start at 75 BPM with a metronome. In Bar 2, resist the urge to keep playing—count the rests ('3, 4') in your head. Notice how Bar 1 feels like a question hanging in mid-air, while Bar 4 lands firmly with wide vibrato on the root A (fret 7, string 4).",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Echo Response",
-          "difficulty": "Beginner",
+          "title": "The B.B. King Vocal Dialogue (The B.B. Box)",
+          "difficulty": "Intermediate",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Response mimics or echoes the call with variations. Structure: Original phrase followed by modified repeat. Variations include slight rhythmic changes, octave displacement, and dynamic variation.",
+          "description": "B.B. King built his entire career on treating his Gibson guitar 'Lucille' as a vocal duet partner. King famously never sang and played at the same time: he would deliver a vocal line, pause, and immediately let the guitar answer in his signature 'B.B. Box' (centered around fret 10 on the B string in the key of A). This exercise simulates a vocal call followed by an expressive, vocal-style guitar answer featuring a whole-step bend and hummingbird wrist vibrato.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Key Technique: Whole-step bend on fret 12 (B string) up to C#, followed by sting vibrato on the 10th-fret root A"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "B.B. King Vocal-Guitar Dialogue in A7",
+            "alphaTex": "\\tempo 80 \\ts 4 4\nr.1 | :2 r.2 :8 r.8 10.2 12.2 10.2 | :4 12.1 :8 10.1 12.2 :4 10.2 10.2 | :2 10.2 r.2 |",
+            "staveTitle": "Vocal Call Space (Bar 1) & B.B. Box Response (Bars 2-4)"
+          },
           "practiceNotes": {
             "colorBg": "bg-green-50",
             "colorBorder": "border-green-200",
@@ -74,19 +133,74 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Echo responses are the easiest to start with. Try repeating a phrase with just one small change each time."
+            "text": "During Bar 1, speak or sing a vocal phrase out loud (such as 'Nobody loves me, nobody seems to care'). On beat 3 of Bar 2, answer with Lucille. Anchor your index finger at fret 10 of the B string and use your ring finger to bend fret 12 with rapid, light wrist vibrato.",
+            "tempo": "80 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Contrasting Response",
+          "title": "Rhythmic Echo with Embellishment",
+          "difficulty": "Beginner",
+          "borderColor": "border-green-200",
+          "difficultyBg": "bg-green-100",
+          "difficultyText": "text-green-700",
+          "numberBg": "bg-green-100",
+          "numberText": "text-green-600",
+          "description": "In an 'echo response', your answer does not introduce a completely new rhythm; instead, it borrows the exact rhythmic motif from the call, but shifts it higher in pitch or adds an expressive slide. This technique—used masterfully by Carlos Santana and Eric Clapton—creates immediate melodic unity, making your improvisation sound composed and intentional.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Concept: Identical rhythm (two eighths + quarter + two eighths + quarter) shifted up one octave"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Rhythmic Echo: Statement & Embellished Octave Echo",
+            "alphaTex": "\\tempo 80 \\ts 4 4\n:8 5.3 7.3 :4 5.2 :8 5.2 7.3 :4 5.3 | r.1 | :8 7.3 9.3 :4 8.2 :8 8.2 10.2 :4 10.1 | :2 10.1 r.2 |",
+            "staveTitle": "Rhythmic Call (Bar 1) & High Octave Echo (Bar 3)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-green-50",
+            "colorBorder": "border-green-200",
+            "colorTitle": "text-green-900",
+            "colorText": "text-green-800",
+            "colorAccent": "bg-green-100",
+            "title": "Practice Notes",
+            "text": "Tap your foot firmly. Notice how Bar 3 repeats the exact rhythmic skeleton of Bar 1, but shifts up to higher frets on strings 1 and 2. The listener instantly recognizes the rhythm, which makes the melodic escalation feel organic and satisfying.",
+            "tempo": "80 BPM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Dialogue & Contrast Techniques",
+      "exercises": [
+        {
+          "number": 1,
+          "title": "Register Dialogue (High Scream to Low Growl)",
           "difficulty": "Intermediate",
           "borderColor": "border-yellow-200",
           "difficultyBg": "bg-yellow-100",
           "difficultyText": "text-yellow-700",
           "numberBg": "bg-yellow-100",
           "numberText": "text-yellow-600",
-          "description": "Response provides opposite character to the call. Structure: High to Low, Fast to Slow, Loud to Soft. Used extensively in jazz improvisation, rock guitar solos, and classical variations.",
+          "description": "Register contrast simulates two entirely different instruments conversing within a single solo. In this study, you deliver a searing high-register question on the top two strings (frets 12-15), pause for a full measure of silence, and then answer with a dark, guttural, low-register blues riff on strings 5 and 6 (frets 5-7).",
+          "patternNote": {
+            "colorBg": "bg-yellow-50",
+            "colorText": "text-yellow-800",
+            "text": "Contrast: Soprano register (strings 1-2) answered by Bass register (strings 5-6)"
+          },
+          "chordDiagrams": [
+            { "label": "E7", "chord": "E7" },
+            { "label": "A7", "chord": "A7" }
+          ],
+          "notation": {
+            "title": "High-Register Scream to Low-Register Growl",
+            "alphaTex": "\\tempo 80 \\ts 4 4\n:8 12.1 15.1 12.1 15.2 :4 12.1 15.1 | r.1 | :8 5.6 7.6 5.5 7.5 :4 5.4 7.6 | :2 5.6 r.2 |",
+            "staveTitle": "High Call (Bar 1) & Low Bass Response (Bars 3-4)"
+          },
           "practiceNotes": {
             "colorBg": "bg-yellow-50",
             "colorBorder": "border-yellow-200",
@@ -94,19 +208,69 @@
             "colorText": "text-yellow-800",
             "colorAccent": "bg-yellow-100",
             "title": "Practice Notes",
-            "text": "Think in opposites: if the call is high, respond low. If the call is busy, respond with space."
+            "text": "Play Bar 1 with your bridge pickup for sharp bite and presence. In Bar 3, dig in with heavy pick attack on the low E string to get a percussive, throaty growl. Jimi Hendrix and Stevie Ray Vaughan used this wide-interval jump to make their guitar sound like a full ensemble.",
+            "tempo": "80 BPM"
           }
         },
         {
-          "number": 4,
-          "title": "Developmental Response",
+          "number": 2,
+          "title": "Dynamic & Articulation Dialogue (Staccato vs Legato)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-yellow-200",
+          "difficultyBg": "bg-yellow-100",
+          "difficultyText": "text-yellow-700",
+          "numberBg": "bg-yellow-100",
+          "numberText": "text-yellow-600",
+          "description": "Conversation isn't just about what words you say—it's about how you say them. In this exercise, the Call uses sharp, percussive staccato picking with slight palm muting, creating a punchy rhythmic jab. The Response answers with fluid, singing legato, letting the notes ring into each other before sustaining on a long high A.",
+          "patternNote": {
+            "colorBg": "bg-yellow-50",
+            "colorText": "text-yellow-800",
+            "text": "Articulation: Staccato muted picking (Call) vs Open ringing legato (Response)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" }
+          ],
+          "notation": {
+            "title": "Percussive Staccato Call to Fluid Legato Response",
+            "alphaTex": "\\tempo 80 \\ts 4 4\n:8 5.4 5.4 7.4 7.4 :4 5.3 7.3 | r.1 | :8 5.3 7.3 5.2 8.2 :4 8.2 5.1 | 5.1.1 |",
+            "staveTitle": "Staccato Jab (Bar 1) & Legato Flow (Bars 3-4)"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-yellow-50",
+            "colorBorder": "border-yellow-200",
+            "colorTitle": "text-yellow-900",
+            "colorText": "text-yellow-800",
+            "colorAccent": "bg-yellow-100",
+            "title": "Practice Notes",
+            "text": "In Bar 1, rest the fleshy heel of your picking hand on the bridge to choke each note short. In Bar 3, lift your palm entirely off the bridge, pick smoothly, and let the final high A ring with wide finger vibrato for the entire final measure.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 3,
+          "title": "Harmonically Responsive Dialogue (Navigating the I ➔ IV Change)",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Response takes an element from call and develops it further. Structure: Seed idea followed by elaboration and extension. Involves motif expansion, harmonic development, and rhythmic evolution.",
+          "description": "The hallmark of an advanced improviser is tailoring the response to reflect changes in the underlying harmony. In this 4-bar drill over a 12-bar blues progression, the Call is voiced over the I chord (A7). When the rhythm section moves to the IV chord (D7) in Bar 3, the response adapts by targeting the major 3rd of D7 (the note F# at fret 7 on the B string), locking the conversation to the chord progression.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Harmonic Pivot: Landing on F# (fret 7, string 2) to outline the 3rd of D7"
+          },
+          "chordDiagrams": [
+            { "label": "A7", "chord": "A7" },
+            { "label": "D7", "chord": "D7" }
+          ],
+          "notation": {
+            "title": "Harmonic Call & Response: Outlining the I ➔ IV Shift",
+            "alphaTex": "\\tempo 80 \\ts 4 4\n:8 5.3 7.3 :4 5.2 :8 7.3 5.3 :4 7.4 | :2 7.4 r.2 | :8 7.4 5.4 7.3 5.3 :4 7.2 5.2 | :2 7.2 r.2 |",
+            "staveTitle": "Call on A7 (Bars 1-2) & Target Answer on D7 (Bars 3-4)"
+          },
           "practiceNotes": {
             "colorBg": "bg-red-50",
             "colorBorder": "border-red-200",
@@ -114,104 +278,40 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Listen for the most interesting element in the call - a rhythm, a melodic shape, or an interval - and build your response around it."
+            "text": "Listen to the chord change underneath: when moving from A7 to D7, the note C# drops to C natural, and F# becomes the defining major 3rd. Striking fret 7 on the B string (F#) on beat 3 of Bar 3 makes your solo sound harmonically sophisticated and intentional.",
+            "tempo": "80 BPM"
           }
         }
       ]
     },
     {
-      "title": "Musical Elements for Dialogue",
+      "title": "Trading Fours & Real-World Jam Applications",
       "exercises": [
         {
           "number": 1,
-          "title": "Rhythm Dialogue",
-          "difficulty": "Beginner",
-          "borderColor": "border-emerald-200",
-          "difficultyBg": "bg-emerald-100",
-          "difficultyText": "text-emerald-700",
-          "numberBg": "bg-emerald-100",
-          "numberText": "text-emerald-600",
-          "description": "Use rhythmic contrast to create dialogue. Call example: short, staccato notes. Response example: long, sustained notes. Technique: contrast rhythmic density and feel to create conversation between phrases.",
-          "practiceNotes": {
-            "colorBg": "bg-emerald-50",
-            "colorBorder": "border-emerald-200",
-            "colorTitle": "text-emerald-900",
-            "colorText": "text-emerald-800",
-            "colorAccent": "bg-emerald-100",
-            "title": "Practice Notes",
-            "text": "Rhythm is the most immediately impactful element for creating musical conversation."
-          }
-        },
-        {
-          "number": 2,
-          "title": "Pitch Dialogue",
-          "difficulty": "Beginner",
-          "borderColor": "border-emerald-200",
-          "difficultyBg": "bg-emerald-100",
-          "difficultyText": "text-emerald-700",
-          "numberBg": "bg-emerald-100",
-          "numberText": "text-emerald-600",
-          "description": "Use register contrast for dialogue. Call example: high register melody. Response example: low register answer. Technique: use register contrast strategically to create engaging musical dialogue.",
-          "practiceNotes": {
-            "colorBg": "bg-emerald-50",
-            "colorBorder": "border-emerald-200",
-            "colorTitle": "text-emerald-900",
-            "colorText": "text-emerald-800",
-            "colorAccent": "bg-emerald-100",
-            "title": "Practice Notes",
-            "text": "Moving between high and low registers gives the impression of two different voices conversing."
-          }
-        },
-        {
-          "number": 3,
-          "title": "Dynamics Dialogue",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "Use volume changes to create conversation. Call example: loud, aggressive phrase. Response example: soft, gentle phrase. Volume changes naturally create the sense of conversation and interaction.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Dynamic contrast is subtle but powerful. Even small volume changes create dialogue effects."
-          }
-        },
-        {
-          "number": 4,
-          "title": "Articulation Dialogue",
-          "difficulty": "Intermediate",
-          "borderColor": "border-yellow-200",
-          "difficultyBg": "bg-yellow-100",
-          "difficultyText": "text-yellow-700",
-          "numberBg": "bg-yellow-100",
-          "numberText": "text-yellow-600",
-          "description": "How you play notes affects character. Call example: smooth, legato phrasing. Response example: sharp, staccato attack. Varying articulation creates contrasting characters within your dialogue.",
-          "practiceNotes": {
-            "colorBg": "bg-yellow-50",
-            "colorBorder": "border-yellow-200",
-            "colorTitle": "text-yellow-900",
-            "colorText": "text-yellow-800",
-            "colorAccent": "bg-yellow-100",
-            "title": "Practice Notes",
-            "text": "Think of articulation as the 'tone of voice' in your musical conversation."
-          }
-        },
-        {
-          "number": 5,
-          "title": "Harmony Dialogue",
+          "title": "Trading Fours (8-Bar Jam Study)",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Use consonance vs. dissonance for dialogue. Call example: chord tones and stable notes. Response example: tension notes and passing tones. Creating a dialogue between consonance and dissonance adds harmonic sophistication.",
+          "description": "'Trading Fours' is the classic jam session and jazz standard format where two soloists alternate 4-measure statements. Player 1 establishes an initial theme for 4 bars, and Player 2 replies for 4 bars by developing that motif or countering it with fresh energy. Here is a complete 8-bar performance study showcasing a full 4-bar Call followed by an assertive 4-bar Response in A Minor.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Structure: 4-Bar Initial Statement (Call) ➔ 4-Bar Melodic Development (Response)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "Complete 8-Bar Solo Study: Trading Fours in A Minor",
+            "alphaTex": "\\tempo 85 \\ts 4 4\n:8 5.1 8.2 5.2 7.3 :4 5.3 7.4 | :4 5.4 :8 7.4 5.4 :2 7.4 | :8 7.3 5.3 7.3 8.2 :4 10.2 8.2 | :2 5.1 r.2 | :8 12.1 10.1 12.2 10.2 :4 12.2 10.2 | :8 9.3 7.3 9.3 10.2 :2 8.2 | :8 7.3 5.3 7.4 5.4 :4 7.4 5.4 | 7.4.1 |",
+            "staveTitle": "Call Solo (Bars 1-4) & Counter-Solo Response (Bars 5-8)"
+          },
           "practiceNotes": {
             "colorBg": "bg-red-50",
             "colorBorder": "border-red-200",
@@ -219,66 +319,25 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Harmonic dialogue requires strong ear training. Practice identifying chord tones vs. tension tones by ear."
-          }
-        }
-      ]
-    },
-    {
-      "title": "Practice Exercises",
-      "exercises": [
-        {
-          "number": 1,
-          "title": "Solo Call & Response",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Practice call and response within your own playing. Use a simple backing track in one key. Steps: 1. Play a 2-bar 'call' phrase. 2. Rest for 2 beats (important!). 3. Play a 2-bar 'response' phrase. 4. Repeat with new ideas. 5. Focus on making response relate to call.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "Think of it as having a conversation with yourself. The rest between phrases is crucial - don't skip it!",
-            "tempo": "80 BPM"
+            "text": "Play along at 85 BPM. Pay attention to the dynamic transition at Bar 5: after the first soloist leaves space at Bar 4, the second soloist launches high on fret 12, developing the previous motif with greater intensity before concluding on the root A.",
+            "tempo": "85 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Record and Respond",
-          "difficulty": "Beginner",
-          "borderColor": "border-green-200",
-          "difficultyBg": "bg-green-100",
-          "difficultyText": "text-green-700",
-          "numberBg": "bg-green-100",
-          "numberText": "text-green-600",
-          "description": "Use recording to create actual call and response. Setup: recording device or app, backing track. Steps: 1. Record yourself playing 'call' phrases. 2. Play back and respond in real-time. 3. Try different response approaches. 4. Record full conversations. 5. Analyze what worked best.",
-          "practiceNotes": {
-            "colorBg": "bg-green-50",
-            "colorBorder": "border-green-200",
-            "colorTitle": "text-green-900",
-            "colorText": "text-green-800",
-            "colorAccent": "bg-green-100",
-            "title": "Practice Notes",
-            "text": "This simulates playing with another musician. It's one of the best solo practice methods for developing interactive skills.",
-            "tempo": "80 BPM"
-          }
-        },
-        {
-          "number": 3,
-          "title": "Vocal-Guitar Dialogue",
+          "title": "The Vocal-Guitar Ear Translation Drill",
           "difficulty": "Intermediate",
           "borderColor": "border-yellow-200",
           "difficultyBg": "bg-yellow-100",
           "difficultyText": "text-yellow-700",
           "numberBg": "bg-yellow-100",
           "numberText": "text-yellow-600",
-          "description": "Alternate between singing and playing guitar. Steps: 1. Sing a simple melodic phrase. 2. Answer it on guitar. 3. Switch: guitar call, vocal response. 4. Make each response relate to the call. 5. Gradually make phrases more complex.",
+          "description": "The fastest way to eliminate mechanical 'finger memory' and cultivate genuine musical intent is vocalizing your calls before playing them. Step 1: Sing a short 2-bar melody out loud with your voice over a backing track. Step 2: Pause for two beats. Step 3: Find those exact pitches on your fretboard and play them back as your guitar response. Repeating this drill bridges the connection between your musical imagination and your fingers.",
+          "patternNote": {
+            "colorBg": "bg-yellow-50",
+            "colorText": "text-yellow-800",
+            "text": "Golden Rule: If you cannot sing it, you are playing muscle memory, not music."
+          },
           "practiceNotes": {
             "colorBg": "bg-yellow-50",
             "colorBorder": "border-yellow-200",
@@ -286,93 +345,58 @@
             "colorText": "text-yellow-800",
             "colorAccent": "bg-yellow-100",
             "title": "Practice Notes",
-            "text": "This develops natural musical conversation skills. Your voice naturally phrases musically, so use it as a guide.",
+            "text": "Start very simple—even 3-note phrases like 'Root - Minor 3rd - 4th'. Do not worry about vocal quality; the purpose is forcing your inner ear to dictate what your hands play next rather than running up and down familiar scale shapes.",
             "tempo": "70 BPM"
-          }
-        },
-        {
-          "number": 4,
-          "title": "Trading Fours",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Practice the classic jazz technique of trading 4-bar solos. Setup: jazz backing track, metronome. Steps: 1. Play over chord changes for 4 bars. 2. Rest/listen for 4 bars (imagine another player). 3. Respond to your previous phrase. 4. Continue trading back and forth. 5. Make each statement relate to previous.",
-          "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
-            "title": "Practice Notes",
-            "text": "This prepares you for real jam sessions and jazz playing. Counting bars during the rest is essential.",
-            "tempo": "120 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Tips, Mistakes to Avoid & Inspiration",
+    "title": "Critical Pitfalls, Pro Insights & Practice Routines",
     "items": [
       {
-        "title": "Listening Problems to Avoid",
+        "title": "3 Phrasing Mistakes That Kill Dialogue",
         "colorBg": "bg-red-50",
         "colorBorder": "border-red-200",
         "colorTitle": "text-red-900",
         "colorText": "text-red-800",
         "items": [
-          "Not waiting: Jumping in too quickly without hearing the full call",
-          "Not listening: Ignoring what came before and playing unrelated ideas",
-          "Same response: Always responding the same way regardless of the call",
-          "No space: Filling every moment with sound instead of using silence"
+          "The 'Run-On Sentence': Playing continuous 16th notes across measure lines without resting. Without silence, the listener cannot distinguish questions from answers.",
+          "Pitch Amnesia: Launching a response that has zero rhythmic, melodic, or emotional connection to the call, sounding like two unrelated solos mashed together.",
+          "Fearing the Tonic: Wandering aimlessly because you never land on the root or 3rd with conviction to resolve the phrase."
         ]
       },
       {
-        "title": "Musical Issues to Avoid",
-        "colorBg": "bg-red-50",
-        "colorBorder": "border-red-200",
-        "colorTitle": "text-red-900",
-        "colorText": "text-red-800",
-        "items": [
-          "Unrelated responses: No connection to the call phrase",
-          "Overly complex: Showing off instead of conversing musically",
-          "No development: Missing opportunities to build on ideas",
-          "Poor timing: Not matching phrase lengths appropriately"
-        ]
-      },
-      {
-        "title": "15-Minute Daily Workout",
-        "colorBg": "bg-green-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
-        "items": [
-          "Warm-up (5 min): Practice active listening, echo simple phrases, focus on timing, match the style",
-          "Development (7 min): Practice trading fours, respond with variations, build conversations, use different textures",
-          "Application (3 min): Jam with backing tracks, record call-response solos, focus on musical dialogue, evaluate responses"
-        ]
-      },
-      {
-        "title": "Masters of Call & Response",
+        "title": "Masters of the Guitar Dialogue",
         "colorBg": "bg-emerald-50",
         "colorBorder": "border-emerald-200",
         "colorTitle": "text-emerald-900",
         "colorText": "text-emerald-800",
         "items": [
-          "B.B. King: Guitar and vocal interplay - King's guitar would 'answer' his vocal lines, creating musical conversations",
-          "Miles Davis & John Coltrane: Famous for their musical dialogues - contrasting approaches with Miles' space vs. Coltrane's density",
-          "Page & Plant (Led Zeppelin): Jimmy Page's guitar responding to Robert Plant's vocal improvisations in rock/blues context",
-          "Muddy Waters Band: Guitar, harmonica, and vocals trading phrases and ideas in Chicago blues tradition"
+          "B.B. King ('The Thrill Is Gone'): The definitive master of vocal-to-guitar conversation, treating Lucille as an operatic duet partner.",
+          "Duane Allman & Eric Clapton ('Layla'): Dual-guitar counterpoint and trading phrases, weaving two distinct tones into an escalating dialogue.",
+          "David Gilmour ('Comfortably Numb'): Majestic use of space, pausing for entire measures to let delay trails ring before answering with soaring bends.",
+          "Albert King & Stevie Ray Vaughan ('In Session'): An explosive clinic in blues trading, where each guitarist quotes and expands upon the other's licks in real time."
+        ]
+      },
+      {
+        "title": "The 15-Minute Daily Conversational Workout",
+        "colorBg": "bg-green-50",
+        "colorBorder": "border-green-200",
+        "colorTitle": "text-green-900",
+        "colorText": "text-green-800",
+        "items": [
+          "Phase 1: Question & Answer Precision (5 min) - Put on an A Minor slow blues backing track. Play strictly 2 bars on, 2 bars off. Force yourself to land questions on the 4th/b7 and answers on the Root.",
+          "Phase 2: The Vocal-to-Guitar Translation (5 min) - Sing a simple phrase, leave two beats of space, and instantly locate and execute the phrase on guitar.",
+          "Phase 3: High-Low Register Trading (5 min) - Alternate 2-bar phrases strictly between frets 12-15 on strings 1-2 and frets 5-7 on strings 5-6."
         ]
       }
     ]
   },
   "journeySection": {
     "title": "Continue Your Improvisation Journey",
-    "description": "Call & response is the foundation of interactive musicianship. Explore these related topics to develop your conversational playing.",
+    "description": "Call & response is the foundational pillar of interactive musicianship. Expand your soloing vocabulary with these related deep-dive guides.",
     "gradientFrom": "from-green-50",
     "gradientTo": "to-emerald-50",
     "borderColor": "border-green-200",
@@ -380,7 +404,7 @@
       {
         "href": "/lessons/practice/improv/phrasing",
         "title": "Musical Phrasing",
-        "description": "Shape your musical sentences for better dialogue",
+        "description": "Learn how to shape complete musical sentences with dramatic arc",
         "linkText": "Explore Phrasing",
         "icon": "🎵",
         "hoverBorder": "hover:border-green-400",
@@ -392,7 +416,7 @@
       {
         "href": "/lessons/practice/improv/motif-development",
         "title": "Motif Development",
-        "description": "Build solos from small ideas through development",
+        "description": "Transform tiny 3-note seeds into full-length memorable solos",
         "linkText": "Explore Motifs",
         "icon": "🎼",
         "hoverBorder": "hover:border-emerald-400",
@@ -404,7 +428,7 @@
       {
         "href": "/lessons/practice/improv/target-notes",
         "title": "Target Notes",
-        "description": "Strategic note placement for harmonic clarity",
+        "description": "Anchor your phrases by nailing chord tones right on the downbeat",
         "linkText": "Explore Target Notes",
         "icon": "🎯",
         "hoverBorder": "hover:border-green-400",
