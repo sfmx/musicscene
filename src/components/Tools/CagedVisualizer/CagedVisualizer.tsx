@@ -10,6 +10,12 @@ import CagedShapeSelector from './CagedShapeSelector';
 import CagedFretboard from './CagedFretboard';
 import CagedTriadInspector from './CagedTriadInspector';
 
+function getOrdinalSuffix(n: number): string {
+  const suffixes = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return suffixes[(v - 20) % 10] || suffixes[v] || suffixes[0];
+}
+
 export default function CagedVisualizer() {
   const [currentRoot, setCurrentRoot] = useState<string>('C');
   const [currentShape, setCurrentShape] = useState<CagedShapeLetter>('C');
@@ -145,7 +151,7 @@ export default function CagedVisualizer() {
               </span>
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Primary root located on string {cagedData.rootStringName} ({6 - cagedData.rootStringIndex}th string).
+              Primary root located on string {cagedData.rootStringName} ({6 - cagedData.rootStringIndex}{getOrdinalSuffix(6 - cagedData.rootStringIndex)} string).
             </p>
           </div>
 
