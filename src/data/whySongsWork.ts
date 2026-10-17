@@ -4982,7 +4982,162 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
     },
   },
 
+  'gimme-head': {
+    slug: 'gimme-head',
+    songTitle: 'Gimme Head',
+    artist: 'The Radiators',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'High-Velocity Mixolydian Power Chords & Syncopated Upbeat Pub-Rock Drive',
+    emotionalHook: 'The unbridled pub rock energy of "Gimme Head" comes from marrying a furious 154 BPM open A pedal bass with syncopated ♭VII (G5) and IV (D5) chord stabs. By completely sidestepping standard major leading-tone tension, the Mixolydian flat-7th injects raw, unapologetic Australian rock swagger designed for packed, roaring pub crowds.',
+    romanProgression: 'I - ♭VII - IV - I',
+    chords: ['A5', 'G5', 'D5', 'E5'],
+    progressionExplanation: [
+      'A5 (I): Furious open 5th-string pedal bass providing the driving machine-gun rock pulse.',
+      'G5 (♭VII): Injects the raw Mixolydian flat-7th bite, instantly removing classical harmonic stiffness.',
+      'D5 (IV): Punchy subdominant resolution that snaps cleanly back into the tonic home base.',
+      'E5 (V): High-energy dominant turnaround building suspense for the chorus explosion.',
+    ],
+    voiceLeadingInsights: [
+      'The bass guitar and rhythm guitar lock together on rapid eighth-note downstrokes, creating an unbreakable rhythmic spine.',
+      'Sharp staccato muting immediately following the G5 and D5 stabs creates dynamic pockets of silence that make the groove bounce.',
+      'Stephen "Fess" Parker\'s blues-rock solo answers the vocal lines with aggressive A minor pentatonic double-stops.',
+    ],
+    guitarPerspective: 'Keep your picking wrist completely loose and relaxed at 154 BPM. Squeeze the power chords on the upbeats and instantly release left-hand finger pressure to choke the sustain.',
+    songwriterTakeaway: 'When writing high-tempo hard rock, keep your chord vocabulary minimal (I - ♭VII - IV) and focus 100% of your energy on rhythm syncopation, dynamic muting, and crowd shout-along vocal hooks.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Mixolydian', slug: 'mixolydian', description: 'The modal engine behind the ♭VII (G) power chord.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'Provides the biting blues-rock lead solo breaks.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The defining mode of Australian pub rock anthems.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Root-fifth dyad shapes maximizing distortion clarity at high speed.' },
+      ],
+    },
+  },
 
+  'comin-home': {
+    slug: 'comin-home',
+    songTitle: "Comin' Home",
+    artist: 'The Radiators',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Twin-Guitar Pentatonic Chime Colliding with an Emotional Relative Minor Pre-Chorus Lift',
+    emotionalHook: 'While the verse and chorus ride a buoyant, driving E - D - A Mixolydian groove, the genius of "Comin\' Home" lies in its pre-chorus shift to C# minor (vi). Stepping down through B and A before exploding back into the celebratory E major chorus creates a poignant narrative tug—embodying the exhaustion and longing of the touring road resolving into a triumphant homecoming.',
+    romanProgression: 'I - ♭VII - IV - I (Verse/Chorus) | vi - V - IV - V (Pre-Chorus)',
+    chords: ['E', 'D', 'A', 'C#m', 'B'],
+    progressionExplanation: [
+      'E (I): Warm, ringing open-string home base with resonant low-end authority.',
+      'D (♭VII): Whole-step flat-7th step adding rebellious rock attitude and forward motion.',
+      'A (IV): Bright subdominant chord that lifts the harmony back home to E.',
+      'C#m (vi): Melodic minor detour introducing emotional longing and narrative vulnerability.',
+      'B (V): Classic dominant tension builder that propels the arrangement into the chorus.',
+    ],
+    voiceLeadingInsights: [
+      'The pre-chorus bassline descends step-wise from C# → B → A, creating a poignant counterpoint against the ascending vocal line.',
+      'Twin electric guitars layer a singing E major pentatonic melody over punchy Marshall rhythm crunch.',
+      'Open high E and B strings ring continuously across the chorus changes, providing a cohesive harmonic shimmer.',
+    ],
+    guitarPerspective: 'Use light palm muting during the 8th-note verse chugs, then switch to a full 4th-fret barre chord for C#m before opening up into wide strumming sweeps on the chorus.',
+    songwriterTakeaway: 'Insert a relative minor (vi) chord in your pre-chorus before a major-key chorus. The sudden dip into melancholy makes the subsequent major chorus feel twice as massive and uplifting.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Mixolydian', slug: 'mixolydian', description: 'Underpins the I - ♭VII - IV rock progression.' },
+        { name: 'E Major Pentatonic', slug: 'major-pentatonic', description: 'Shapes the soaring twin-guitar intro melodies.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Provides the classic Australian pub rock swagger.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Ringing cowboy chord shapes in the chorus.' },
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'Used for the tight pre-chorus C#m and B shapes.' },
+      ],
+    },
+  },
+
+  '17-i-wish-i-was': {
+    slug: '17-i-wish-i-was',
+    songTitle: '17 (I Wish I Was)',
+    artist: 'The Radiators',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'New-Wave Syncopated Staccato Stabs Powering an Infectious Nostalgic Pub Anthem',
+    emotionalHook: '"17 (I Wish I Was)" captures the euphoric transition from 1970s pub rock into early-80s new wave. The bouncing D - C - G - A progression leverages tight palm-muted pedal points against razor-sharp off-beat chord punches on the "and" of beats 2 and 4, creating an irresistible kinetic drive that lifts the nostalgic lyrics into a timeless Australian party anthem.',
+    romanProgression: 'I - ♭VII - IV - V',
+    chords: ['D', 'C', 'G', 'A'],
+    progressionExplanation: [
+      'D (I): Open 4th-string pedal drone anchoring the tight new-wave rock pulse.',
+      'C (♭VII): Syncopated upbeat stab providing the trademark Mixolydian bounce.',
+      'G (IV): Uplifting step that opens up the harmonic frequency spectrum.',
+      'A (V): Energetic dominant motor driving the progression relentlessly back to D.',
+    ],
+    voiceLeadingInsights: [
+      'The persistent D pedal tone keeps the rhythm section grounded while upper triads bounce syncopatedly across the neck.',
+      'Left-hand muting between downbeats creates crisp percussive pockets that give the song its unmistakable danceability.',
+      'The lead solo explodes into D minor pentatonic at the 10th and 13th frets with crying whole-step blues bends.',
+    ],
+    guitarPerspective: 'Keep your picking hand moving in a steady 16th-note swing pattern so upbeat stabs land with razor-sharp timing precision. Don\'t let the open strings ring during the muted pauses.',
+    songwriterTakeaway: 'Pair syncopated off-beat chord punches with an unyielding pedal bass note. It transforms a standard I - ♭VII - IV - V progression into an infectious, danceable rock groove.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Mixolydian', slug: 'mixolydian', description: 'The modal foundation giving the ♭VII (C) chord its rock bite.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'The blues-rock scale driving the climactic lead solo.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Delivers the bouncy, anti-classical pub rock swagger.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Punchy dyad grips used for the syncopated verse stabs.' },
+        { name: 'Open Chords', slug: 'major', description: 'Full open voicings ringing across the euphoric chorus.' },
+      ],
+    },
+  },
+
+  'run-to-paradise': {
+    slug: 'run-to-paradise',
+    songTitle: 'Run to Paradise',
+    artist: 'Choirboys',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Pedal Tone & Drone Mastery',
+    coreSecret: 'Open D Drone Triads Exploding into an Anthemic Stadium Rock I - IV - vi - V Cadence',
+    emotionalHook: 'The opening of "Run to Paradise" is an acoustic masterclass in pedal-point harmony: letting the open 4th string (D) drone continuously beneath moving D, G/D, and A/D upper triad shapes creates an expansive, shimmering bell-like atmosphere. When the chorus detonates with full-distortion D - G - Bm - A power chords, the emotional release captures the quintessential spirit of Australian suburban escapism.',
+    romanProgression: 'I - IV - V - I (Intro/Verse) | I - IV - vi - V (Chorus)',
+    chords: ['D', 'G', 'Bm', 'A', 'G/D', 'A/D'],
+    progressionExplanation: [
+      'D (I): Resonant home key anchored by the ringing open 4th-string pedal tone.',
+      'G/D (IV/I): Shimmering subdominant triad suspended gracefully over the low D drone.',
+      'A/D (V/I): Dominant triad creating tension while maintaining the continuous bass drone.',
+      'Bm (vi): Heartfelt relative minor in the chorus introducing deep emotional vulnerability.',
+      'A (V): Triumphant dominant turnaround carrying Mark Gable\'s soaring vocal climax.',
+    ],
+    voiceLeadingInsights: [
+      'The open D string acts as an acoustic bridge across the entire intro, unifying changing triad inversions into a coherent sonic landscape.',
+      'The chorus progression (D - G - Bm - A) utilizes the emotional pop-rock "axis of awesome" sequence with cranked Marshall amplification.',
+      'Brad Carr\'s soaring guitar solo targets the major 3rd (F#) and 5th (A) with singing, lyrical vibrato.',
+    ],
+    guitarPerspective: 'Keep your fretting hand fingers arched high so the open 4th string rings unimpeded during the intro triad shifts. Explode into the chorus with full-power downward strumming sweeps.',
+    songwriterTakeaway: 'Use a single ringing open drone string underneath shifting triad shapes to create an instant sense of space, atmosphere, and acoustic grandeur before hitting the listener with your loudest chorus.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major', slug: 'major', description: 'The diatonic foundation for the sparkling pedal-point triads.' },
+        { name: 'D Major Pentatonic', slug: 'major-pentatonic', description: 'Shapes the soaring, lyrical melodic lead guitar solo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The uplifting major modal scale providing the anthemic atmosphere.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Ringing open triad shapes over the D pedal bass.' },
+        { name: 'Barre Chords', slug: 'barre-chords', description: 'Clean 2nd-fret Bm barre chord providing emotional depth in the chorus.' },
+      ],
+    },
+  },
 };
 
 /**

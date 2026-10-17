@@ -1,0 +1,335 @@
+{
+  "songInfo": {
+    "title": "Comin' Home",
+    "artist": "The Radiators",
+    "album": "Feel the Heat",
+    "released": "1979",
+    "genre": "Australian Pub Rock / Classic Rock",
+    "tempo": "136 BPM",
+    "duration": "3:05",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E Major",
+      "modalCharacter": "E Mixolydian with I - ♭VII - IV pub rock drive, shifting to the relative minor C#m for melodic pre-chorus emotion",
+      "keySignature": "4 Sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# Minor",
+      "scalesUsed": [
+        {
+          "scale": "E Mixolydian",
+          "notes": "E - F# - G# - A - B - C# - D",
+          "application": "Drives the main signature riff and driving verse rhythm, utilizing the natural flat-7th (D) for classic Australian rock drive"
+        },
+        {
+          "scale": "E Major Pentatonic",
+          "notes": "E - F# - G# - B - C#",
+          "application": "Shapes the triumphant, singing opening twin-guitar melody that introduces the track"
+        },
+        {
+          "scale": "E Minor Pentatonic",
+          "notes": "E - G - A - B - D",
+          "application": "Adds gritty blues bite and vocal responsive fills during the screaming high-energy guitar solo"
+        }
+      ]
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "D",
+          "A",
+          "B"
+        ],
+        "progression": "E - D - A - E",
+        "description": "The quintessential Australian anthem progression combining open string bass drones with bright ringing triads"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "E - D - A - E",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Soaring twin-guitar harmonized melody soaring above a chugging E5 power chord rhythm foundation"
+        },
+        {
+          "section": "Verse",
+          "progression": "E - D - A - E",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Steady 8th-note driving groove supporting the storytelling narrative of life on the touring road"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "C#m - B - A - B",
+          "romanNumerals": "vi - V - IV - V",
+          "description": "Melodic minor climb that builds longing emotional tension before bursting into the celebratory chorus"
+        },
+        {
+          "section": "Chorus",
+          "progression": "E - D - A - E",
+          "romanNumerals": "I - ♭VII - IV - I",
+          "description": "Full-throttle stadium pub rock chorus with soaring three-part vocal harmonies and roaring open chords"
+        }
+      ],
+      "harmonicFunction": [
+        "E (Tonic I): Welcoming home key established with warm low E open string authority and ringing sustain",
+        "D (Subtonic ♭VII): Injects the signature Mixolydian rock flavor, bypassing classical leading-tone stiffness",
+        "A (Subdominant IV): Uplifting release that resolves smoothly back down to the tonic E",
+        "C#m (Relative Minor vi): Introduces emotional weight and melodic pathos during the pre-chorus transition",
+        "B (Dominant V): Creates the essential tension and suspense that propels the arrangement back into E"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Twin-Guitar Melodic Voicing",
+      "description": "Harmonizing lyrical major pentatonic lead lines in diatonic thirds and sixths over a steady power-chord rhythm",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Lock into the 136 BPM tempo with precise alternate picking",
+          "Let each melodic note ring cleanly without colliding into neighboring strings",
+          "Apply expressive finger vibrato to all sustained whole notes"
+        ]
+      }
+    },
+    {
+      "name": "Dynamic Sectional Transitioning",
+      "description": "Managing the shift between palm-muted verse chugging, tight pre-chorus barre chords, and wide-open chorus strumming",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Keep the right hand anchored lightly for the verse palm muting",
+          "Barre the 4th fret cleanly for the C#m pre-chorus chord",
+          "Open up the picking sweep completely when hitting the chorus"
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Melodic Twin-Guitar Intro Hook",
+      "timeStamp": "0:00-0:20",
+      "technique": "Major Pentatonic Phrasing & Power Chords",
+      "key": "E Major",
+      "description": "One of the most recognizable guitar hooks in Australian rock, pairing a singing E major pentatonic melody with driving rhythm chords",
+      "chords": [
+        "E5",
+        "D5",
+        "A5"
+      ],
+      "progression": "E5 - D5 - A5 - E5",
+      "notes": [
+        "Anchor the open low E string as a continuous rhythmic driver",
+        "Play the melodic lead on the G and B strings at the 9th and 7th frets",
+        "Let the final E power chord ring with warm tube saturation"
+      ],
+      "alphaTab": ":4 (0.6 2.5 2.4) :8 (0.6 2.5 2.4) (0.6 2.5 2.4) :4 (5.5 7.4) :4 (0.5 2.4 2.3) | :2 (0.6 2.5 2.4) :2 (0.6 2.5 2.4) | :4 9.3 :8 7.3 9.3 :4 9.2 :4 7.2 | :2 9.2 :2 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Melodic Intro Riff & Power Chords"
+    },
+    {
+      "name": "Driving 8th-Note Verse",
+      "timeStamp": "0:21-0:46",
+      "technique": "Palm Muting & Rhythmic Pacing",
+      "key": "E Major",
+      "description": "A punchy, unyielding pub rock groove moving steadily through E, D, and A with crisp right-hand muting",
+      "chords": [
+        "E5",
+        "D5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - D5 - A5 - E5",
+      "notes": [
+        "Rest the edge of your palm across the low E and A strings for controlled muting",
+        "Accentuate beats 2 and 4 to lock in with the snare drum backbeat",
+        "Release the mute cleanly on the chord change transitions"
+      ],
+      "alphaTab": ":8 0.6 0.6 (0.6 2.5) 0.6 :4 (5.5 7.4) :4 (0.5 2.4) | :8 0.6 0.6 (0.6 2.5) 0.6 :2 (0.6 2.5) | :8 0.6 0.6 (0.6 2.5) 0.6 :4 (5.5 7.4) :4 (0.5 2.4) | :4 (0.6 2.5) :4 (2.5 4.4) :2 (0.6 2.5) |",
+      "exerciseLabel": "Verse Driving Rhythmic Chug"
+    },
+    {
+      "name": "Minor-Key Pre-Chorus Lift",
+      "timeStamp": "0:47-1:01",
+      "technique": "Barre Chords & Dynamic Build",
+      "key": "C# Minor",
+      "description": "The emotional turning point of the song, stepping through C#m, B, and A to generate dramatic anticipation for the chorus",
+      "chords": [
+        "C#m",
+        "B",
+        "A"
+      ],
+      "progression": "C#m - B - A - B",
+      "notes": [
+        "Form a clean 4th-fret barre chord for the C#m chord shape",
+        "Step down smoothly to the B major barre chord at the 2nd fret",
+        "Crescendo through the final B chord to launch the chorus with explosive impact"
+      ],
+      "alphaTab": ":2 (4.5 6.4 6.3 5.2) :2 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (2.5 4.4 4.3 4.2) | :2 (4.5 6.4 6.3 5.2) :2 (2.5 4.4 4.3 4.2) | :1 (2.5 4.4 4.3 4.2) |",
+      "exerciseLabel": "Pre-Chorus Barre Chord Lift"
+    },
+    {
+      "name": "Anthemic Singalong Chorus",
+      "timeStamp": "1:02-1:24",
+      "technique": "Open Chords & Full Headroom Strumming",
+      "key": "E Major",
+      "description": "The celebratory peak of the track, roaring with full-spectrum open guitar chords and huge crowd-chant energy",
+      "chords": [
+        "E",
+        "D",
+        "A"
+      ],
+      "progression": "E - D - A - E",
+      "notes": [
+        "Strike the open E chord with full downward pick sweeps across all six strings",
+        "Transition cleanly to open D and open A major voicings",
+        "Let the ringing open high E and B strings shimmer over the chord changes"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Anthemic Chorus Open Chord Cadence"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster or Gibson Les Paul Standard",
+      "alternatives": [
+        "Gibson SG Standard",
+        "Fender Telecaster"
+      ],
+      "pickup": "Bridge pickup for crunchy driving rhythm; middle/neck pickup for warm intro lead chime"
+    },
+    "amp": {
+      "recommended": "Marshall JMP 50W Master Volume into 4x12 cabinet with Celestion G12M Greenbacks",
+      "alternatives": [
+        "Vox AC30",
+        "Fender Twin Reverb with overdrive pedal"
+      ],
+      "settings": {
+        "gain": "6",
+        "treble": "7",
+        "middle": "7",
+        "bass": "5",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Organic valve overdrive boosted with an MXR Micro Amp or Ibanez Tube Screamer",
+      "reverb": "Subtle studio spring reverb for depth and spatial spread",
+      "other": "Analog bucket-brigade chorus pedal engaged subtly during the melodic intro hook"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & Main Progression",
+      "steps": [
+        "Learn the open E, D, and A major chord shapes",
+        "Practice smooth 4-beat changes between E, D, and A at 100 BPM",
+        "Strum in steady eighth notes with consistent volume"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Barre Chords & Song Dynamics",
+      "steps": [
+        "Master the C#m and B barre chords in the pre-chorus",
+        "Execute the dynamic transition from palm-muted verse to wide-open chorus",
+        "Perform the full rhythm track at the original 136 BPM tempo"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "Melodic Intro & Lead Fills",
+      "steps": [
+        "Learn the opening melodic hook in E Major Pentatonic at the 9th fret",
+        "Incorporate the vocal responsive fills during the verse transitions",
+        "Perform both rhythm and lead parts seamlessly with authentic pub swagger"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Gimme Head",
+        "link": "/lessons/songs/song-analysis/gimme-head/",
+        "similarity": "The explosive companion track featuring high-speed Australian pub rock downstroke chugging"
+      },
+      {
+        "title": "17 (I Wish I Was)",
+        "link": "/lessons/songs/song-analysis/17-i-wish-i-was/",
+        "similarity": "Classic Radiators anthem driven by syncopated power chords and melodic hooks"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Am I Ever Gonna See Your Face Again",
+        "artist": "The Angels",
+        "technique": "I-♭VII-IV classic Australian pub rock chord structure and roaring singalong chorus",
+        "link": "/lessons/songs/song-analysis/am-i-ever-gonna-see-your-face-again/"
+      },
+      {
+        "title": "Bow River",
+        "artist": "Cold Chisel",
+        "technique": "Driving Australian rock momentum, melodic guitar phrasing, and anthemic release",
+        "link": "/lessons/songs/song-analysis/bow-river/"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the D and A chords bleed into each other during the fast verse changes",
+      "Stumbling on the transition into the 4th-fret C#m barre chord in the pre-chorus",
+      "Rushing the tempo during the open chord chorus strums"
+    ],
+    "practiceRoutine": [
+      "5 mins: Open chord transition warm-up (E - D - A)",
+      "10 mins: Pre-chorus barre chord shifting drill (C#m - B - A) with a metronome at 110 BPM",
+      "10 mins: Melodic intro lead hook precision practice at the 9th fret",
+      "5 mins: Full song playthrough locking into the 136 BPM groove"
+    ],
+    "focusAreas": [
+      "Crisp muting between verse chord stabs",
+      "Clean finger placement on the C#m barre chord to avoid muted high strings",
+      "Singing vibrato on the sustained intro melody notes"
+    ],
+    "metronomeWork": [
+      "Start at 105 BPM to ensure clean barre chord execution in the pre-chorus",
+      "Gradually increase tempo to 120 and 130 BPM",
+      "Lock into 136 BPM focusing on relaxed right-hand strumming mechanics"
+    ]
+  },
+  "metadata": {
+    "popularity": 90,
+    "dateAdded": "2026-10-17",
+    "featured": true,
+    "decade": "1970s",
+    "iconicRiff": true,
+    "learningValue": "HIGH",
+    "tags": [
+      "classic-rock",
+      "open-chords",
+      "barre-chords",
+      "power-chords",
+      "strumming",
+      "palm-muting",
+      "pentatonic",
+      "vibrato",
+      "electric-guitar",
+      "tube-amp",
+      "rhythm-guitar",
+      "lead-guitar",
+      "song-analysis",
+      "intermediate"
+    ]
+  }
+}
+

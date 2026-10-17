@@ -208,6 +208,10 @@ import bowRiverData from '@/data/songs/bow-river.json';
 import timesLikeTheseData from '@/data/songs/times-like-these.json';
 import cantFindMyWayHomeData from '@/data/songs/cant-find-my-way-home.json';
 import crazyOnYouData from '@/data/songs/crazy-on-you.json';
+import gimmeHeadData from '@/data/songs/gimme-head.json';
+import cominHomeData from '@/data/songs/comin-home.json';
+import seventeenIWishIWasData from '@/data/songs/17-i-wish-i-was.json';
+import runToParadiseData from '@/data/songs/run-to-paradise.json';
 
 export interface SongData {
   songInfo: {
@@ -634,6 +638,10 @@ const songDatabase: Record<string, SongData> = {
   'times-like-these': timesLikeTheseData as SongData,
   'cant-find-my-way-home': cantFindMyWayHomeData as SongData,
   'crazy-on-you': crazyOnYouData as SongData,
+  'gimme-head': gimmeHeadData as SongData,
+  'comin-home': cominHomeData as SongData,
+  '17-i-wish-i-was': seventeenIWishIWasData as SongData,
+  'run-to-paradise': runToParadiseData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

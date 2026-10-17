@@ -129,6 +129,10 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'times-like-these',
   'cant-find-my-way-home',
   'crazy-on-you',
+  'gimme-head',
+  'comin-home',
+  '17-i-wish-i-was',
+  'run-to-paradise',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {
