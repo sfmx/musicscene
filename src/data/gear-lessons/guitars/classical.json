@@ -1,330 +1,326 @@
 {
   "slug": "guitars-classical",
   "category": "guitars",
-  "pageTitle": "Classical Guitar: The Art of Finger Mastery",
-  "subtitle": "Master the art of traditional guitar technique and repertoire",
+  "pageTitle": "Classical Guitar: Tone Production, Acoustic Physics & Repertoire",
+  "subtitle": "Master nylon-string mechanics, fan bracing, nail shaping science, and classical & flamenco repertoire",
   "heroGradient": "bg-gradient-to-r from-amber-50 to-yellow-50",
   "backLink": {
     "href": "/lessons/gear/guitars",
     "label": "Back to Guitars"
   },
   "introduction": {
-    "title": "Classical Guitar: The Art of Finger Mastery",
-    "text": "The classical guitar is built around a single constraint that shapes everything else about it: the fingers, not a pick, generate the sound. That's why the neck is wider than a steel-string's, the strings are nylon rather than steel, and centuries of formal technique exist to govern exactly how each finger approaches the string. The result is an instrument capable of playing bass line, harmony, and melody simultaneously with a warmth and dynamic control that a pick simply can't produce.",
-    "quote": "Classical Guitar Hallmarks:",
+    "title": "Classical Guitar: The Intimate Concert Voice",
+    "text": "The classical guitar represents one of the most refined acoustic transducers in musical history. Operating under roughly half the string tension of a steel-string acoustic (75–90 lbs versus 150–180 lbs), its soundboard can be graduated to an ultra-responsive 2.0–2.5 mm thickness. Sound is generated not through the brute percussive impact of a plectrum, but through direct bio-mechanical energy transfer: the fleshy pulp and polished keratin nail of the human fingertip flexing the string, exciting transverse vibrations across the tie-block bridge. The instrument delivers multi-part polyphony—driving independent bass counterpoint, harmonic interior voices, and cantabile melodic lines simultaneously from a single set of six strings.",
+    "quote": "A miniature orchestra where the direct contact of flesh and polished nail commands infinite shades of timbre.",
     "columns": [
       {
-        "title": "Classical Guitar Hallmarks",
-        "text": "Nylon strings exist because they're gentler on bare fingertips and produce a warmer, mellower tone than steel — a direct consequence of fingerstyle-only technique rather than an arbitrary design choice. The wider neck exists for the same reason: it gives four right-hand fingers and a thumb enough room to work independently across six strings, which is what makes the instrument's dense classical and flamenco repertoire playable in the first place."
+        "title": "Acoustic Energy & Soundboard Dynamics",
+        "text": "Because nylon and composite strings possess lower mass and lower mechanical tension than steel, a classical guitar relies on delicate acoustic impedance matching. The bridge transmits energy to the top via a rotational rocking motion rather than the up-and-down pumping motion of ball-end pin bridges. Antonio de Torres revolutionized this in the 1850s with fan bracing, opening the lower bout to resonate freely at the air cavity's Helmholtz frequency (typically around 98–110 Hz, near G2–A2). Modern luthiers have advanced this with aerospace materials, using carbon-fiber lattice bracing and Nomex double-tops to project effortlessly into 2,000-seat symphony halls."
+      },
+      {
+        "title": "Ergonomics & Polyphonic Separation",
+        "text": "The classical guitar's physical architecture is dictated entirely by polyphonic fingerstyle demands. The wide 52 mm (2.05-inch) bone nut and flat, non-radiused ebony fingerboard provide generous 42–43 mm string spacing, preventing sympathetic adjacent string damping during intricate counterpoint. Elevated on a footstool, cushion, or ergonomic A-frame support at a 45-degree angle, the instrument aligns the torso, freeing both hands: the left thumb glides behind the neck center without choking the wrist, while the right hand suspends over the soundhole at a precise 45-degree attack angle to sculpt dark, vocal fundamentals or brilliant, metallic harmonics."
       }
     ]
   },
   "sections": [
     {
-      "title": "Classical vs Steel-String Acoustic",
+      "title": "Classical vs Flamenco vs Steel-String",
       "bgColor": "bg-white",
       "borderColor": "",
-      "layout": "grid-2",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Classical Guitar",
-          "bgColor": "bg-blue-50",
-          "borderColor": "",
-          "description": "Nylon strings under lower tension are what make the classical guitar comfortable to play fingerstyle for hours, and that same lower tension is why it can't project as loudly as a steel-string in a band setting — the trade-off for gentleness on the fingers is a quieter, more intimate voice best suited to solo performance.",
-          "items": [
-            "Strings: Nylon (trebles) and wound nylon/silver (basses)",
-            "Neck: Wide (2\" at nut), flat fretboard",
-            "Sound: Warm, mellow, intimate",
-            "Technique: Fingerstyle only, classical position",
-            "Repertoire: Classical, flamenco, bossa nova",
-            "Volume: Quieter, perfect for solo performance"
+          "title": "Concert Classical Guitar",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "Engineered for lyrical sustain, dynamic headroom, and deep, resonant bass separation across polyphonic repertoire.",
+          "fields": [
+            { "label": "Body Woods", "value": "Solid Spruce or Cedar top; Indian or Brazilian Rosewood back and sides" },
+            { "label": "Body Depth", "value": "95 mm to 102 mm deep resonance cavity" },
+            { "label": "Action at 12th Fret", "value": "3.8–4.2 mm (Low E) / 2.8–3.2 mm (High E) for buzz-free concert dynamics" },
+            { "label": "Bracing System", "value": "Torres 7-fan, Bouchet transversal bar, or modern carbon lattice" },
+            { "label": "Sonic Profile", "value": "Warm, round fundamental bloom, deep low-end resonance, long lyrical decay" }
+          ]
+        },
+        {
+          "title": "Flamenco Guitar (Blanca & Negra)",
+          "bgColor": "bg-red-50",
+          "borderColor": "border-red-200",
+          "description": "Optimized for lightning-fast transient response, percussive bite, and immediate decay that cuts through rhythmic dancing and clapping.",
+          "fields": [
+            { "label": "Body Woods", "value": "Spanish Cypress (Blanca) or Rosewood (Negra); German Spruce top" },
+            { "label": "Body Depth", "value": "Shallow 75 mm to 85 mm depth for snappy air displacement" },
+            { "label": "Action at 12th Fret", "value": "2.2–2.7 mm (Low E) / 1.8–2.2 mm (High E) with deliberate percussive fret sizzle" },
+            { "label": "Protection", "value": "Clear plastic tap plates (golpeadores) protecting soundboard from fingernail strikes" },
+            { "label": "Sonic Profile", "value": "Explosive attack, dry wooden crack, fast decay, crystalline picado separation" }
           ]
         },
         {
           "title": "Steel-String Acoustic",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "description": "Steel strings under much higher tension are what give a steel-string acoustic its brighter, more projective voice, which is why it's the instrument of choice whenever a guitar needs to cut through a mix with other players rather than carry a piece on its own.",
-          "items": [
-            "Strings: Steel core with bronze/phosphor bronze wrap",
-            "Neck: Narrower (1.75\" typical), radiused fretboard",
-            "Sound: Bright, projective, cutting",
-            "Technique: Picks, strumming, various positions",
-            "Repertoire: Folk, country, rock, pop",
-            "Volume: Louder, cuts through band mix"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Construction & Design",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Construction Details",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Every construction choice on a classical guitar traces back to fingerstyle technique: nylon strings are kind to bare fingertips over long practice sessions, the wide flat fretboard gives four fingers room to work independently without a fretboard radius getting in the way, and the traditional tie-block bridge exists because nylon strings can't be anchored with ball-end pins the way steel strings are.",
-          "items": [
-            "Nylon Strings: Gentle on fingers, warm tone, traditional sound",
-            "Wide Neck: Usually 2\" at nut, accommodates fingerstyle technique",
-            "Flat Fretboard: No radius for classical playing position",
-            "Traditional Bridge: Tie-block system for string attachment"
-          ]
-        },
-        {
-          "title": "Wood Selection",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Spruce and cedar dominate classical guitar tops for opposite reasons: spruce is stiffer and slower to open up but rewards a player with clarity and headroom as it ages, while cedar responds immediately with a warmer voice but has less ceiling for projection. Back and side woods add their own character on top of that — rosewood's density produces rich overtones, while cypress, prized in flamenco building, favors a brighter, more percussive attack that supports rhythmic playing over sustain.",
-          "items": [
-            "Spruce Top: Most common, bright and responsive",
-            "Cedar Top: Warmer, immediate response, popular choice",
-            "Rosewood Back/Sides: Rich overtones, traditional choice",
-            "Cypress Back/Sides: Flamenco favorite, bright and percussive"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Classical Playing Position",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Traditional Posture",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "The footstool-and-elevated-leg posture exists to bring the guitar up to a consistent angle and height regardless of the player's body size, which matters because classical technique depends on the right hand approaching the strings at a specific angle every time. Skip the posture and that angle drifts from note to note, which is what causes the inconsistent tone and technique plateaus that formal instruction is designed to prevent.",
-          "fields": [
-            { "label": "Body Position", "value": "Sit on front edge of chair; back straight, relaxed shoulders; left foot elevated on footstool; guitar rests on left thigh; guitar at 45-degree angle" },
-            { "label": "Hand Position", "value": "Left thumb behind neck, not wrapped; right hand curved, fingers approach strings at angle; wrist straight, not bent; fingertips perpendicular to strings; relaxed, natural movement" }
-          ]
-        },
-        {
-          "title": "Modern Alternatives",
-          "description": "Many players now use guitar supports, cushions, or straps to achieve the proper playing angle without a footstool, reducing strain. The traditional footstool tilts the pelvis asymmetrically for long practice sessions, which is exactly the kind of repetitive strain that these newer supports were designed to eliminate while still achieving the same guitar angle.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Ergoplay or A-Frame supports",
-            "Cushions and pillows",
-            "Classical guitar straps",
-            "Adjustable height chairs"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Essential Techniques",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Rest Stroke (Apoyando)",
-          "description": "Finger plucks through the string and rests on the next string, which channels more of the finger's energy directly into the string being played and produces a louder, more focused note than free stroke can. That extra volume and focus is why rest stroke is the default technique for single-note melodies and scales, where each note needs to project clearly above any accompanying texture.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Benefits", "value": "Powerful, focused tone; good for melodies; traditional technique" },
-            { "label": "Best Used For", "value": "Scales, single-note passages, emphasized notes" }
-          ]
-        },
-        {
-          "title": "Free Stroke (Tirando)",
-          "description": "Finger plucks the string without touching adjacent strings, which is what makes it possible to sound multiple strings together rather than one at a time. That freedom to play several notes at once is why free stroke, not rest stroke, is the technique used for chords and arpeggios.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Benefits", "value": "Allows chord playing; lighter touch; more versatile" },
-            { "label": "Best Used For", "value": "Arpeggios, chords, rapid passages" }
-          ]
-        },
-        {
-          "title": "Tremolo",
-          "description": "Rapid repetition of a single note with the a-m-i fingers, interleaved with a bass line played by the thumb, creates the illusion of a sustained melody line over accompaniment even though the guitar can't actually sustain a plucked note that long. That illusion of continuous melody is what makes tremolo pieces sound almost orchestral, which is why it became a signature device in Spanish Romantic repertoire.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Benefits", "value": "Creates sustained melody effect; beautiful classical sound; advanced expression" },
-            { "label": "Best Used For", "value": "Romantic pieces, Spanish repertoire" }
-          ]
-        },
-        {
-          "title": "Rasgueado",
-          "description": "This flamenco strumming technique fans multiple fingers across the strings in rapid succession rather than plucking individually, producing a percussive, drum-like attack that a single-finger stroke can't replicate. That rhythmic drive is central to flamenco, where the guitar often functions as much as a rhythm instrument as a harmonic one.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Benefits", "value": "Percussive rhythm; flamenco authenticity; dynamic expression" },
-            { "label": "Best Used For", "value": "Flamenco music, rhythmic accompaniment" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Classical Guitar Repertoire",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Renaissance & Baroque",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Key Composers", "value": "John Dowland, Gaspar Sanz, Robert de Visee, Sylvius Leopold Weiss" },
-            { "label": "Essential Works", "value": "Dowland Lute Songs; Bach's lute suites BWV 995-1000; Weiss Sonatas" },
-            { "label": "Characteristics", "value": "Lute transcriptions, contrapuntal textures, dance forms" }
-          ]
-        },
-        {
-          "title": "Classical & Romantic",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Key Composers", "value": "Fernando Sor, Mauro Giuliani, Francisco Tarrega, Napoleon Coste" },
-            { "label": "Essential Works", "value": "Sor Studies; Giuliani Concertos; Tarrega Recuerdos de la Alhambra" },
-            { "label": "Characteristics", "value": "Guitar-specific compositions, technical studies, salon pieces" }
-          ]
-        },
-        {
-          "title": "Modern & Contemporary",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Key Composers", "value": "Heitor Villa-Lobos, Leo Brouwer, Joaquin Rodrigo, Roland Dyens" },
-            { "label": "Essential Works", "value": "Villa-Lobos Preludes; Rodrigo Concierto de Aranjuez; Brouwer Etudes" },
-            { "label": "Characteristics", "value": "Extended techniques, world music influences, avant-garde approaches" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Flamenco Guitar",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "The Spanish Tradition",
-          "description": "Flamenco guitar shares the nylon-string construction of classical guitar but emphasizes rhythm, percussion, and passionate expression. Lower action lets the strings buzz slightly against the frets for a rawer, more percussive sound that classical technique deliberately avoids, and tap plates protect the top from the rhythmic finger-tapping (golpe) that would otherwise damage a classical guitar's finish over time.",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Flamenco Differences", "value": "Lower string action for percussive effects; cypress back/sides for brighter tone; tap plates (golpeadores) to protect top; more aggressive playing style; emphasis on rhythm and passion" },
-            { "label": "Key Techniques", "value": "Rasgueado (flamenco strumming); golpe (percussive tapping); alzapua (thumb technique); picado (fast scale passages); tremolo (rapid note repetition)" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recommended Classical Guitars",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "table",
-      "cards": [
-        {
-          "title": "Student ($200-800)",
-          "badge": { "text": "$200-800", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Yamaha", "C40", "$150", "Solid spruce top, perfect starter guitar"],
-            ["Cordoba", "C3M", "$300", "All-mahogany construction, warm tone"],
-            ["Alhambra", "1C", "$600", "Spanish-made, solid cedar top"]
-          ]
-        },
-        {
-          "title": "Intermediate ($800-2500)",
-          "badge": { "text": "$800-2500", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Yamaha", "GC22S", "$1200", "All solid woods, professional tone"],
-            ["Cordoba", "C7 SP", "$900", "Solid spruce top, European spruce"],
-            ["Alhambra", "4P", "$1800", "Cedar top, Indian rosewood, excellent value"]
-          ]
-        },
-        {
-          "title": "Professional ($2500+)",
-          "badge": { "text": "$2500+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Ramirez", "1A", "$8000+", "Legendary Spanish maker, concert quality"],
-            ["Hauser", "III", "$15000+", "German tradition, incredible craftsmanship"],
-            ["Smallman", "Concert", "$20000+", "Australian innovation, lattice bracing"]
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Classical Guitar Learning Path",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Foundation (Months 1-12)",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Technique", "value": "Proper posture and hand position; rest stroke and free stroke; basic scales and arpeggios; simple chord progressions" },
-            { "label": "Repertoire", "value": "Beginner method books (Carcassi, etc.); simple classical pieces; folk song arrangements; basic sight-reading" }
-          ]
-        },
-        {
-          "title": "Development (Years 2-3)",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "borderColor": "border-blue-200",
+          "description": "Built under extreme mechanical tension to maximize acoustic volume, chime, and projection in ensemble acoustic mixes.",
           "fields": [
-            { "label": "Advanced Technique", "value": "Barre chords and advanced fingerings; tremolo technique; advanced arpeggios and scales; dynamic control and expression" },
-            { "label": "Intermediate Repertoire", "value": "Sor studies and sonatinas; Bach lute suites (easier movements); Villa-Lobos Preludes; Spanish pieces (Tarrega)" }
-          ]
-        },
-        {
-          "title": "Mastery (Years 4+)",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Advanced Skills", "value": "Concert-level technique; extended techniques; interpretation and style; performance preparation" },
-            { "label": "Advanced Repertoire", "value": "Major concertos (Rodrigo, etc.); complete Bach lute suites; modern masterworks; personal interpretation development" }
+            { "label": "Strings & Tension", "value": "Steel core with phosphor bronze winding; 160–185 lbs total tension" },
+            { "label": "Neck Architecture", "value": "Narrow 43–44 mm (1.69\"–1.75\") nut, 12\"–16\" radiused fingerboard, adjustable steel truss rod" },
+            { "label": "Bracing System", "value": "Heavy Scalloped X-Bracing or V-Class bracing to prevent soundboard collapse" },
+            { "label": "Bridge Design", "value": "Bridge pins anchoring steel ball-ends under soundboard bridge plate" },
+            { "label": "Sonic Profile", "value": "Piercing top-end brilliance, ringing metallic sustain, aggressive plectrum projection" }
           ]
         }
       ]
     },
     {
-      "title": "Practice Strategy",
+      "title": "Acoustic Engineering & Soundboard Physics",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Effective Practice",
-          "bgColor": "bg-yellow-50",
+          "title": "Internal Bracing Evolutions",
+          "bgColor": "bg-gray-50",
           "borderColor": "",
-          "description": "Practicing slowly isn't a beginner's crutch, it's how the fingers learn the correct movement before speed gets added — practicing a mistake at full tempo just ingrains the mistake more efficiently. A metronome and honest recording serve the same purpose from different angles: both expose timing and tone problems that are nearly impossible to hear accurately while you're the one playing.",
-          "items": [
-            "Slow practice: Build muscle memory correctly",
-            "Metronome use: Develop steady rhythm",
-            "Repetition: Perfect small sections before combining",
-            "Mental practice: Study scores away from guitar",
-            "Recording: Listen to your playing objectively"
+          "description": "The soundboard of a classical guitar acts as an acoustic membrane that converts rotational string rocking into air pressure waves.",
+          "fields": [
+            { "label": "Torres Fan Bracing (1850s)", "value": "Seven radial wooden struts fanning outward from the soundhole across the lower bout. Balances structural strength against flexible membrane displacement, establishing the modern concert guitar benchmark." },
+            { "label": "Bouchet Transverse Bar (1950s)", "value": "Robert Bouchet introduced a transverse wooden bridge bar under the fan struts directly below the saddle, augmenting mid-range projection and string-to-string separation." },
+            { "label": "Greg Smallman Lattice Bracing (1970s)", "value": "Ultra-thin soundboard (under 1 mm) reinforced by a criss-crossed balsa and carbon-fiber lattice. Paired with a heavy, laminated arched back to reflect all acoustic energy forward, championed by John Williams." },
+            { "label": "Double-Top Nomex Sandwich (1980s)", "value": "Gernot Wagner and Matthias Dammann pioneered two micro-thin wood veneers (0.5 mm) sandwiching an aerospace honeycomb Nomex core. Delivers an extraordinary stiffness-to-weight ratio and explosive dynamic response." }
           ]
         },
         {
-          "title": "Physical Wellness",
-          "bgColor": "bg-blue-50",
+          "title": "Tonewood Science: Cedar vs Spruce vs Rosewood",
+          "bgColor": "bg-gray-50",
           "borderColor": "",
-          "description": "Classical technique demands a level of hand independence and sustained posture that builds real physical strain over time, which is why serious players treat warm-ups and posture breaks as non-negotiable rather than optional. Building endurance gradually rather than pushing through fatigue is what prevents the repetitive strain injuries that end up sidelining players who practice hard but ignore their body's signals.",
-          "items": [
-            "Posture breaks: Avoid strain and injury",
-            "Hand exercises: Maintain flexibility",
-            "Gradual increase: Build endurance slowly",
-            "Proper warm-up: Scales and technical exercises",
-            "Relaxation: Stay loose and natural"
+          "description": "Specific acoustic velocity, density, and internal damping dictate how soundboards and resonating cavities color tone.",
+          "fields": [
+            { "label": "Western Red Cedar (Thuja plicata)", "value": "Low density, high sound radiation coefficient, and low internal damping. Delivers an immediate, dark, chocolatey warmth with lush harmonic saturation right out of the case, requiring virtually zero break-in period." },
+            { "label": "European Alpine Spruce (Picea abies)", "value": "High stiffness-to-weight ratio and exceptional headroom. Offers unmatched clarity, crystalline note separation, and dynamic ceiling. Requires 2–5 years of vigorous playing to 'open up' its full overtone spectrum." },
+            { "label": "Indian Rosewood Back & Sides", "value": "High density and acoustic reflectivity. Encloses the resonant chamber to reflect high-velocity vibrations forward while reinforcing rich sub-bass fundamentals (80–150 Hz)." },
+            { "label": "Spanish Cypress Back & Sides", "value": "Lightweight, pale golden wood with minimal internal damping. Displaces internal air quickly with dry, percussive bark, defining traditional flamenco blanca instruments." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nail Mechanics, Tone Production & Right-Hand Physics",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Keratin Ramp: Nail Shaping Science",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "In classical tone production, the fingernail acts as a customized plectrum attached to living flesh. The acoustic transient depends entirely on contact friction and release trajectory.",
+          "fields": [
+            { "label": "Contact Sequence", "value": "Fleshy pulp contacts string first at a 45-degree angle to damp residual string vibration, followed smoothly by the nail ramping across the string as tension builds, releasing cleanly at the nail tip." },
+            { "label": "The Ramp Profile", "value": "File the nail sloping upwards from the left (thumb side) toward the apex on the right. This ramp allows the string to glide across the keratin without catching or hitching." },
+            { "label": "Micro-Mesh Polishing", "value": "Never stop at emery boards. Progressive polishing with 2400, 4000, 6000, 8000, and 12000-grit micro-mesh removes micro-serrations, eliminating harsh scratchy rasp in favor of pure, glass-like fundamental tone." },
+            { "label": "Nail Length Test", "value": "View hand palm-up at eye level: the nail should protrude approximately 1.0–1.5 mm beyond the fleshy tip. Too long causes clicky latency; too short causes thin, weak volume." }
+          ]
+        },
+        {
+          "title": "Apoyando vs Tirando & Timbral Zones",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "Right-hand biomechanics dictate whether a string is excited parallel or perpendicular to the soundboard plane.",
+          "fields": [
+            { "label": "Rest Stroke (Apoyando)", "value": "Finger drives through string towards soundboard and comes to rest against adjacent lower string. Maximizes soundboard displacement for loud, fat, authoritative melodic lines, scales, and cantabile themes." },
+            { "label": "Free Stroke (Tirando)", "value": "Finger curls inwards towards the palm, avoiding adjacent strings. Indispensable for polyphonic arpeggios, Alberti basses, multi-finger chords, and rapid contrapuntal voice crossing." },
+            { "label": "Sul Tasto (Near Neck)", "value": "Plucking directly over the 19th fret excites the fundamental and odd lower harmonics while suppressing upper overtones, yielding a fluty, ethereal, dark timbre (flautando)." },
+            { "label": "Sul Ponticello (Near Bridge)", "value": "Plucking 1–2 cm from the bridge saddle excites dense high-frequency partials, generating a bright, biting, metallic timbre (metallico) rich in cutting presence." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Classical & Flamenco Instruments",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Yamaha C40",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The quintessential benchmark student classical guitar, trusted by conservatories worldwide for rock-solid intonation and durable build quality.",
+          "fields": [
+            { "label": "Top", "value": "Spruce laminate" },
+            { "label": "Back & Sides", "value": "Meranti" },
+            { "label": "Scale & Nut", "value": "650 mm (25.6\") scale, 52 mm (2.05\") nut width" },
+            { "label": "Fingerboard", "value": "Rosewood flat radius" },
+            { "label": "Ideal For", "value": "Beginners developing foundational posture, nail contact, and Carcassi method studies" }
+          ]
+        },
+        {
+          "title": "Córdoba C5",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The gold standard intermediate classical guitar featuring a solid Canadian cedar top and lightweight Spanish fan-bracing.",
+          "fields": [
+            { "label": "Top", "value": "Solid Canadian Western Red Cedar" },
+            { "label": "Back & Sides", "value": "Mahogany" },
+            { "label": "Bracing", "value": "Traditional 5-fan Torres style" },
+            { "label": "Nut & Saddle", "value": "Genuine Bone nut & saddle" },
+            { "label": "Ideal For", "value": "Students seeking warm, immediate bloom, rich overtones, and responsive dynamic touch" }
+          ]
+        },
+        {
+          "title": "Córdoba C7",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Upgraded step-up concert student guitar pairing a solid European spruce or cedar top with resonant rosewood back and sides.",
+          "fields": [
+            { "label": "Top", "value": "Solid European Spruce or Canadian Cedar" },
+            { "label": "Back & Sides", "value": "Rosewood" },
+            { "label": "Binding & Inlay", "value": "Hand-inlaid wooden rosette, pau ferro binding" },
+            { "label": "Truss Rod", "value": "Two-way adjustable truss rod for seasonal neck relief control" },
+            { "label": "Ideal For", "value": "Intermediate players mastering Sor studies, Bach lute movements, and Villa-Lobos preludes" }
+          ]
+        },
+        {
+          "title": "Alhambra 4P",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Handcrafted in Muro de Alcoy, Spain, the 4P is a renowned European conservatory workhorse with unmistakable Spanish projection.",
+          "fields": [
+            { "label": "Top", "value": "Solid Red Cedar top" },
+            { "label": "Back & Sides", "value": "Lam. Indian Rosewood" },
+            { "label": "Neck", "value": "Mahogany with genuine African Ebony fingerboard" },
+            { "label": "Saddle & Nut", "value": "Melamine precision cut" },
+            { "label": "Ideal For", "value": "Serious recitalists demanding projecting Spanish fundamental and robust bass authority" }
+          ]
+        },
+        {
+          "title": "Kremona Rosa Blanca Flamenco",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Authentic handcrafted flamenco blanca guitar crafted in Bulgaria with explosive percussive snap and traditional transparent golpeador tap plates.",
+          "fields": [
+            { "label": "Top", "value": "Solid European Spruce" },
+            { "label": "Back & Sides", "value": "Solid Cypress" },
+            { "label": "Fingerboard", "value": "Indian Rosewood with clear dual tap plates" },
+            { "label": "Action", "value": "Low flamenco setup for effortless alzapúa and picado" },
+            { "label": "Ideal For", "value": "Flamenco players performing bulerías, soleares, rumba, and modern Spanish fingerstyle" }
+          ]
+        },
+        {
+          "title": "Ramirez 1A Concert",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The historic Madrid concert masterwork immortalized by Andrés Segovia, defining the powerful, aristocratic Madrid concert voice.",
+          "fields": [
+            { "label": "Top", "value": "Master-grade Solid Western Red Cedar or Spruce" },
+            { "label": "Back & Sides", "value": "Solid Brazilian or East Indian Rosewood with Cypress lining" },
+            { "label": "Scale Length", "value": "Traditional 664 mm or modern 650 mm concert scale" },
+            { "label": "Finish", "value": "Traditional French Polish shellac applied by hand" },
+            { "label": "Ideal For", "value": "Professional concert soloists performing Rodrigo concertos in major symphony halls" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Chemistry, Tension & Bridge Tie-Block Setup",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Treble & Bass String Construction",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "Modern classical strings pair synthetic chemical polymer trebles with composite silver-plated bass wire cores.",
+          "fields": [
+            { "label": "Rectified Nylon Trebles", "value": "Nylon extruded through precision centerless grinders to create a micro-textured, uniform cylinder. Provides tactile grip and warm, round traditional Spanish voice." },
+            { "label": "Fluorocarbon / Carbon Trebles", "value": "High-density polyvinylidene fluoride polymer. Significantly thinner than nylon for equal pitch, yielding brilliant attack, powerful projection, and razor-sharp pitch stability." },
+            { "label": "Titanium Composite Trebles", "value": "Polyamide blend with high tensile strength. Bridges the gap between carbon brightness and nylon lyrical roundness." },
+            { "label": "Silver-Plated Copper Wound Basses", "value": "Silver-plated copper wire wound tightly over hundreds of high-tenacity nylon or composite multifilament silk fibers, providing deep resonance and warm low-frequency bloom." },
+            { "label": "Tension Choices", "value": "Normal Tension (~80 lbs total): supple left-hand vibrato, expressive dynamic nuance. High Tension (~90 lbs total): punchy projection, firmer attack resistance, higher volume ceiling." }
+          ]
+        },
+        {
+          "title": "The Tie-Block: 3-Hole vs 12-Hole Systems",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "Unlike steel-string guitars with bridge pins, classical strings anchor directly to the wooden bridge tie-block.",
+          "fields": [
+            { "label": "Traditional 3-Hole Tie", "value": "The string feeds through one hole per string, wrapping under itself twice on the back of the tie-block. High E strings require a secure double loop to prevent catastrophic slippage." },
+            { "label": "The 'String Snap' Hazard", "value": "If the treble string knot slips under high tension, the string end whips across the soundboard, creating permanent lacquer scars known as 'string bite'. Always melt a tiny ball at the treble string end with a lighter." },
+            { "label": "Modern 12-Hole Tie-Block", "value": "Features two holes per string course. The string passes through hole 1, loops through hole 2, and anchors securely without wrapping. Ensures an acute, consistent 45-degree string break angle over the saddle, improving acoustic transmission and preventing slippage." },
+            { "label": "Soundboard Protection", "value": "Always place a stiff cardboard or leather bib behind the bridge when re-stringing to protect French polish finish from errant string ends." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comprehensive Repertoire Roadmap: Renaissance to Modern",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "list",
+      "cards": [
+        {
+          "title": "Renaissance & Baroque Eras (1500–1750)",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "Transcriptions of lute, vihuela, and Baroque guitar repertoire featuring polyphonic counterpoint, ornaments, and dance suites.",
+          "fields": [
+            { "label": "Key Composers", "value": "John Dowland, Luys de Narváez, Gaspar Sanz, Robert de Visée, Sylvius Leopold Weiss, Johann Sebastian Bach" },
+            { "label": "Essential Repertoire", "value": "Bach Lute Suites (BWV 995, 996, 997, 1006a); Chaconne in D Minor (BWV 1004); Dowland 'Lachrimae Pavan' & 'Fantasia No. 7'; Narváez 'Canción del Emperador'" },
+            { "label": "Technical Demands", "value": "Two- and three-part contrapuntal voice balancing, strict thumb-and-finger alternation, ornamentation (mordents, trills, appoggiaturas), Drop D tuning" }
+          ]
+        },
+        {
+          "title": "Classical & Romantic Eras (1770–1910)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "The golden age of the six-string guitar in Vienna, Paris, and Madrid, evolving from formal sonata-allegro structures to emotive Spanish romanticism.",
+          "fields": [
+            { "label": "Key Composers", "value": "Fernando Sor, Mauro Giuliani, Matteo Carcassi, Napoleon Coste, Francisco Tárrega, Isaac Albéniz" },
+            { "label": "Essential Repertoire", "value": "Tárrega 'Recuerdos de la Alhambra' (tremolo masterwork), 'Capricho Árabe'; Sor 'Grand Solo Op. 14', 'Variations on a Theme of Mozart Op. 9'; Giuliani 'Guitar Concerto No. 1 in A Major Op. 30'; Albéniz 'Asturias (Leyenda)'" },
+            { "label": "Technical Demands", "value": "Seamless rapid p-a-m-i tremolo, full six-string barre shifts, cantabile lyrical phrasing, dynamic arching, expressive portamento and rubato" }
+          ]
+        },
+        {
+          "title": "Modern, 20th Century & Contemporary Eras (1910–Present)",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "The Segovia, Bream, and Williams Renaissance, expanding harmonic language with Latin American rhythms, impressionism, and extended percussive techniques.",
+          "fields": [
+            { "label": "Key Composers", "value": "Heitor Villa-Lobos, Joaquín Rodrigo, Leo Brouwer, Roland Dyens, Toru Takemitsu, Agustín Barrios Mangoré" },
+            { "label": "Essential Repertoire", "value": "Rodrigo 'Concierto de Aranjuez'; Villa-Lobos '12 Etudes' & '5 Preludes'; Barrios 'La Catedral'; Brouwer 'Estudios Sencillos' & 'El Decamerón Negro'; Dyens 'Tango en Skaï'" },
+            { "label": "Technical Demands", "value": "Polyrhythmic rasgueados, percussive tambora (striking the bridge with right-hand thumb), bartók pizzicato, bi-tonal harmonics, microtonal inflections, lightning-fast cross-string arpeggios" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Physical Ergonomics & Practice Longevity",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Support Systems: Footstool vs Ergonomic Lift",
+          "bgColor": "bg-green-50",
+          "borderColor": "border-green-200",
+          "description": "Holding an asymmetrical classical posture for 3–5 hours daily can lead to spinal twisting, pelvic tilt, and lumbar strain.",
+          "fields": [
+            { "label": "Traditional Footstool", "value": "Elevates left foot 6–10 inches. Simple and ubiquitous, but locks the left hip in flexion and causes spinal torsion over prolonged practice sessions." },
+            { "label": "Ergoplay & A-Frame Supports", "value": "Attaches to lower bout via rubber suction cups, resting on the left thigh while both feet remain flat on the floor. Aligns the pelvis and spine neutrally, eliminating lower back fatigue." },
+            { "label": "Dynarette Cushion", "value": "Contoured foam cushion positioned between thigh and guitar waist. Provides stable height elevation without requiring suction cups that might mar sensitive French polish shellac." }
+          ]
+        },
+        {
+          "title": "Tendon Health & Deliberate Practice Protocol",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "Intricate classical fingerstyle requires hyper-efficient motor control rather than muscle tension.",
+          "fields": [
+            { "label": "Tendon Neutrality", "value": "Keep the left and right wrists in a neutral position (less than 15 degrees deviation). Avoid hyper-flexing the right wrist ('swan neck'), which compresses the carpal tunnel." },
+            { "label": "Preparation & Planting", "value": "Always 'plant' the right-hand finger onto the target string a fraction of a second before plucking. Planting stops uncontrolled flight time, builds rhythmic precision, and guarantees clean dynamic release." },
+            { "label": "The 25/5 Interval Method", "value": "Practice in 25-minute focused blocks followed by 5 minutes of arm drops, shoulder rolls, and tendon stretches to flush lactic acid and sustain neuro-muscular clarity." }
           ]
         }
       ]
@@ -332,15 +328,21 @@
   ],
   "relatedTopics": [
     {
-      "title": "12-String Guitars",
-      "href": "/lessons/gear/guitars/12-string",
-      "description": "Rich, shimmering acoustic sound",
+      "title": "Acoustic Guitars",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Steel-string soundboard physics, tonewoods & bracing",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Magnetic pickups, scale length tension & body resonance",
       "bgColor": "bg-white"
     },
     {
       "title": "Bass Guitars",
       "href": "/lessons/gear/guitars/bass",
-      "description": "The foundation of the rhythm section",
+      "description": "Low-frequency fundamental physics & rhythm section groove",
       "bgColor": "bg-white"
     }
   ]

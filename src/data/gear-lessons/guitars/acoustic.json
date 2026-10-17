@@ -1,264 +1,346 @@
 {
   "slug": "guitars-acoustic",
   "category": "guitars",
-  "pageTitle": "Acoustic Guitars: Pure, Natural Sound",
-  "subtitle": "Master the natural, organic sound of acoustic guitars",
+  "pageTitle": "Acoustic Guitars: Soundboard Physics, Tonewoods & Body Architecture",
+  "subtitle": "The acoustic transducer — spruce diaphragms, scalloped X-bracing, Dreadnought vs OM bodies & legendary flat-tops",
   "heroGradient": "bg-gradient-to-r from-amber-50 to-orange-50",
   "backLink": {
     "href": "/lessons/gear/guitars",
     "label": "Back to Guitars"
   },
   "introduction": {
-    "title": "Acoustic Guitars: Pure, Natural Sound",
-    "text": "An acoustic guitar makes its entire sound from a vibrating string driving a wooden soundboard, with no pickup, amp, or power supply required. That simplicity is precisely why it has stayed central to songwriting and performance for over a century: you can pick one up anywhere, in any room, and it projects on its own. The trade-off is that everything about how it's built — body size, top wood, bracing — has a direct, audible effect on tone, since there's no electronics downstream to compensate for a weak-sounding instrument.",
-    "quote": "What Makes Acoustics Special:",
+    "title": "Acoustic Guitars: Soundboard Physics, Tonewoods & Body Architecture",
+    "text": "An acoustic guitar is a marvel of organic acoustic engineering. Unlike an electric guitar that relies on copper coils, cables, and vacuum tube amplifiers to generate sound, an acoustic guitar is a completely self-contained mechanical amplifier and loudspeaker. The vibrating steel strings themselves displace virtually no air—waving a thin wire through room air makes almost no audible sound. Instead, string tension is transferred through a bone saddle into the wooden bridge, which pumps the thin, quartersawn spruce soundboard up and down like the cone of a high-fidelity loudspeaker, projecting sound waves into the room through the soundhole.\n\nBecause an acoustic guitar relies entirely on mechanical resonance, every microscopic structural detail alters its acoustic personality. The acoustic clash between body shapes—from the booming low-end projection and flatpicking power of C.F. Martin's 1916 Dreadnought to the balanced, intimate fingerstyle articulation of the Orchestra Model (OM) and modern Grand Auditorium—dictates which musical styles an instrument flatters. Furthermore, the selection of tonewoods—pairing a dynamic Sitka Spruce top with the dark, bell-like overtone complexity of East Indian Rosewood or the punchy, woody, direct midrange focus of Genuine Mahogany—creates the sonic foundation of modern folk, bluegrass, country, pop, and fingerstyle guitar.",
+    "quote": "An acoustic guitar does not use electronics to boost its voice; it is a living mechanical transducer. The thin quartersawn spruce top is an acoustic diaphragm vibrating thousands of times per second, converting string tension directly into acoustic air displacement.",
     "columns": [
       {
-        "title": "What Makes Acoustics Special",
-        "text": "An acoustic's sound comes entirely from wood resonating in response to the string, which is why two guitars with identical strings and setup can still sound completely different depending on their top and body. That same self-contained design is what makes the instrument so portable and immediate — no power outlet, no amp, no signal chain between you and the sound, just an instrument that projects on its own wherever you happen to be playing it."
+        "title": "Soundboard Resonance Physics",
+        "text": "How string vibration transfers through the bridge and bone saddle to pump the top soundboard like an acoustic loudspeaker cone.",
+        "icon": "🔊"
+      },
+      {
+        "title": "Tonewood Alchemy",
+        "text": "The acoustic properties of Sitka Spruce vs Cedar tops, paired with Rosewood (complex harmonic overtones) vs Mahogany (dry, punchy midrange).",
+        "icon": "🌲"
+      },
+      {
+        "title": "Body Shapes & Internal Bracing",
+        "text": "Comparing Dreadnought power against Orchestra Model (OM) clarity, and Scalloped X-bracing against Taylor's modern V-Class architecture.",
+        "icon": "🎸"
       }
     ]
   },
   "sections": [
     {
-      "title": "Sound Characteristics",
+      "title": "Soundboard Mechanics & Acoustic Projection",
+      "subtitle": "How wooden tops convert 160 lbs of string tension into room-filling acoustic volume",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Steel-String Acoustics",
-          "bgColor": "bg-green-50",
+          "title": "The Bridge, Saddle & Soundboard Diaphragm",
+          "description": "When you pick a steel guitar string, the string vibrates under approximately 160 to 180 lbs of combined mechanical tension. This vibration rocks the bone saddle back and forth, driving the bridge plate attached to the underside of the top. The guitar's top soundboard (typically sliced to a razor-thin 2.5mm to 3.0mm thickness from quartersawn spruce) flexes rapidly, compressing and rarefying the air molecules inside and outside the body chamber.",
+          "bgColor": "bg-amber-50",
           "borderColor": "",
-          "description": "Steel strings put far more tension and high-frequency energy into the top than nylon does, which is what gives steel-string acoustics their bright, cutting edge and lets them hold their own in a full band mix without amplification. That same tension is why the tone holds up whether you're picking gently or strumming hard, making the steel-string the default choice across most popular genres rather than a specialist instrument for one style.",
+          "fields": [
+            { "label": "Soundboard Function", "value": "Acts as the acoustic loudspeaker cone; accounts for over 80% of an acoustic's audible volume and tone" },
+            { "label": "The Bone Saddle", "value": "Dense, unbleached cattle bone transfers high-frequency harmonic energy with zero acoustic damping" },
+            { "label": "Soundhole Helmholtz Resonance", "value": "The soundhole cavity acts as a tuned Helmholtz resonator, projecting low-frequency bass waves outward" }
+          ],
           "items": [
-            "Bright, crisp tone: Steel strings provide clarity and punch",
-            "Strong projection: Cuts through mix in band settings",
-            "Versatile dynamics: From gentle fingerpicking to aggressive strumming",
-            "Genre flexibility: Folk, country, rock, pop, blues"
+            "Quartersawn spruce exhibits an exceptional strength-to-weight ratio, withstanding 160+ lbs of tension while vibrating freely",
+            "Bookmatched grain ensures symmetrical acoustic response across both treble and bass halves of the top",
+            "Solid tops mature with age: as natural wood resins crystallize over decades, the guitar sounds louder and more resonant"
           ]
         },
         {
-          "title": "Playing Styles",
-          "bgColor": "bg-blue-50",
+          "title": "Bracing Architecture: Scalloped X-Bracing vs. V-Class",
+          "description": "A bare spruce top thin enough to produce rich tone would instantly collapse under the violent mechanical pull of steel strings. Internal wooden bracing glued to the underside of the top provides essential structural reinforcement while tuning the top's vibrational modes.",
+          "bgColor": "bg-yellow-50",
           "borderColor": "",
-          "description": "The same steel-string acoustic can sound like four different instruments depending on how you approach the strings, because strumming, fingerpicking, flatpicking, and percussive tapping each excite the top in a different way. Learning more than one of these techniques is what lets a single guitar cover rhythm accompaniment, intricate solo arrangements, and driving lead lines without ever switching instruments.",
+          "fields": [
+            { "label": "Traditional X-Bracing", "value": "Invented by Martin in the 1840s; two intersecting wooden struts form an 'X' behind the bridge for booming warmth" },
+            { "label": "Scalloped Bracing", "value": "Wood is scooped out of brace centers; increases top flexibility for richer bass response and note bloom" },
+            { "label": "Forward-Shifted X-Bracing", "value": "Moves the X intersection closer to the soundhole, unlocking massive low-end power (pre-war D-28 style)" },
+            { "label": "Taylor V-Class Bracing", "value": "Patented 'V' pattern running along the soundboard; separates stiffness (sustain) from flexibility (volume)" }
+          ],
           "items": [
-            "Strumming: Rhythm guitar for songs and accompaniment",
-            "Fingerpicking: Intricate melodies and complex arrangements",
-            "Flatpicking: Leads and fast bluegrass-style picking",
-            "Percussive: Body tapping and rhythm techniques"
+            "Scalloped X-bracing produces deep, enveloping bass and rich, blooming acoustic overtones",
+            "V-Class bracing improves intonation up the neck, eliminating wavering phase cancellations between notes",
+            "Bracing is voiced by master luthiers who tap-tune the wood by hand to achieve specific frequency responses"
           ]
         }
       ]
     },
     {
-      "title": "Construction & Tonewoods",
+      "title": "Body Shapes: Dreadnought vs. OM vs. Grand Auditorium",
+      "subtitle": "How body geometry and internal cubic volume dictate frequency balance and projection",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Body Shapes",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Body shape changes tone mainly by changing how much air the guitar moves and where its resonant peak sits: a large dreadnought or jumbo has more internal air volume and pushes out strong bass and volume, while a smaller parlor or concert body resonates faster and emphasizes midrange over low end. That's why the same set of strings and the same player can sound noticeably different moving between body shapes — the wood hasn't changed, but the cavity that's amplifying it has.",
+          "title": "The Dreadnought Body Shape",
+          "badge": { "text": "The Bluegrass & Folk Icon", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Created by C.F. Martin in 1916 (named after the giant British HMS Dreadnought battleship). Features wide waists, deep 4.875-inch body depth, and massive internal cubic volume that produces thunderous low-end projection, immense volume, and powerful flatpicking power.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Internal Volume", "value": "Largest standard acoustic body cavity; generates powerful sub-bass projection and high volume ceiling" },
+            { "label": "Acoustic Balance", "value": "Bass-heavy with strong low-mids; holds its own against banjos and fiddles without amplification" },
+            { "label": "Ideal Playing Style", "value": "Heavy plectrum strumming, bluegrass flatpicking, singer-songwriter accompaniment" },
+            { "label": "Benchmark Models", "value": "Martin D-28, Martin D-18, Gibson J-45" }
+          ],
           "items": [
-            "Dreadnought: Largest body, powerful bass response, versatile",
-            "Concert/Auditorium: Balanced tone, comfortable for smaller players",
-            "Grand Auditorium: Great for fingerpicking, balanced across frequencies",
-            "Parlor: Vintage feel, focused midrange, great for recording",
-            "Jumbo: Maximum volume and projection, bold sound"
+            "The undisputed king of acoustic rhythm guitar across folk, rock, country, and bluegrass",
+            "Can slightly overwhelm delicate fingerpicking due to massive low-frequency resonance"
           ]
         },
         {
-          "title": "Wood Types",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "The top wood does most of the tonal work on an acoustic guitar because it's the piece actually driven by string vibration, which is why builders talk about spruce versus cedar tops the way amp builders talk about tube versus solid-state circuits — different material, different response to the same input. Back and sides matter too, but mainly for reflecting and coloring the sound the top has already generated, which is why rosewood's dense, reflective structure produces different overtones than maple's stiffer, more transparent one.",
+          "title": "Orchestra Model (OM) & 000 Bodies",
+          "badge": { "text": "The Fingerstyle Benchmark", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "Developed by Martin in 1929 for dance orchestra banjoists transitioning to guitar. Features a tight, narrow waist, smaller lower bout, and shallower body depth. This smaller soundboard moves with less mechanical energy, delivering lightning-fast transient response and perfect string-to-string balance.",
+          "bgColor": "bg-emerald-50",
+          "fields": [
+            { "label": "Body Geometry", "value": "Curvaceous narrow waist with shallower body depth (4.125 inches); comfortable on the lap" },
+            { "label": "Acoustic Balance", "value": "Extremely balanced; bass, midrange, and treble ring out with equal volume and zero low-end boom" },
+            { "label": "Ideal Playing Style", "value": "Intricate fingerstyle, delicate ragtime, blues fingerpicking, studio session tracking" },
+            { "label": "Benchmark Models", "value": "Martin 000-28, Martin OM-21, Collings OM2H" }
+          ],
           "items": [
-            "Spruce Top: Bright, clear tone with good projection",
-            "Cedar Top: Warm, woody tone with quick response",
-            "Mahogany Top: Focused midrange, vintage character",
-            "Rosewood Back/Sides: Rich overtones, powerful bass",
-            "Maple Back/Sides: Bright, punchy tone with clarity"
+            "Sits perfectly inside a studio microphone mix without requiring aggressive high-pass EQ carving",
+            "Fast acoustic attack: notes jump out instantly under light bare fingertip plucking"
+          ]
+        },
+        {
+          "title": "Grand Auditorium (GA) Shape",
+          "badge": { "text": "The Modern Swiss Army Knife", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Pioneered by Bob Taylor in 1994 with the Taylor 814ce. Bridges the gap between the Dreadnought's booming volume and the OM's articulate fingerstyle balance. Features the width of a Dreadnought with the tighter waist of an Orchestra Model.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Hybrid Geometry", "value": "16-inch lower bout (Dreadnought width) with a tight, contoured waist and Venetian cutaway" },
+            { "label": "Acoustic Versatility", "value": "Responds gracefully to delicate fingerstyle while handling aggressive medium-gauge strumming" },
+            { "label": "Stage Optimization", "value": "Equipped with onboard electronics for plug-and-play performance through modern PA systems" },
+            { "label": "Benchmark Models", "value": "Taylor 814ce, Taylor 314ce, Taylor 214ce" }
+          ],
+          "items": [
+            "The most popular acoustic body shape in modern worship, pop, and contemporary acoustic rock",
+            "Venetian cutaway allows effortless access to frets above the 14th fret body joint"
           ]
         }
       ]
     },
     {
-      "title": "Acoustic vs Acoustic-Electric",
+      "title": "Tonewood Science: Tops, Backs & Sides",
+      "subtitle": "How the density, stiffness, and internal damping of wood species shape the harmonic spectrum",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Pure Acoustic",
-          "bgColor": "bg-orange-50",
+          "title": "Top Soundboard Woods (Spruce vs. Cedar)",
+          "description": "Because the soundboard produces over 80% of an acoustic guitar's volume, top wood selection is paramount. Sitka Spruce is the global gold standard for its immense dynamic headroom, while Western Red Cedar offers warm, dark, immediate response for fingerstyle players.",
+          "bgColor": "bg-amber-50",
           "borderColor": "",
-          "description": "A pure acoustic has one job — resonate — so there's no preamp, battery, or under-saddle pickup to add weight, drain power, or eventually fail. That simplicity keeps the cost down and the tone entirely a function of the wood and construction, which is exactly what most players want for practicing at home or recording with a microphone rather than plugging in.",
           "fields": [
-            { "label": "Pros", "value": "Lower cost, pure natural sound, no electronics to fail, lighter weight" },
-            { "label": "Best for", "value": "Home playing, small venues, recording with mics" }
+            { "label": "Sitka Spruce (Picea sitchensis)", "value": "High stiffness-to-weight ratio; crisp, bright, massive dynamic headroom that never compresses under heavy strumming" },
+            { "label": "Adirondack Spruce (Red Spruce)", "value": "Vintage pre-war benchmark; immense volume ceiling, explosive fundamental punch, crystalline overtones" },
+            { "label": "Western Red Cedar (Thuja plicata)", "value": "Softer density, lower velocity of sound; dark, warm, intimate, produces full volume under light fingertip touches" },
+            { "label": "Solid vs. Laminate Tops", "value": "Solid wood vibrates freely and ages musically; multi-ply laminate tops are durable and weather-resistant but tonally stiff" }
+          ],
+          "items": [
+            "Spruce tops start bright and 'open up' over years of playing as internal wood resins break down",
+            "Cedar tops sound mature and warm right out of the box, but will compress and clip under heavy flatpick strumming"
           ]
         },
         {
-          "title": "Acoustic-Electric",
-          "bgColor": "bg-purple-50",
+          "title": "Back & Side Woods (Rosewood vs. Mahogany)",
+          "description": "While the top acts as the loudspeaker cone, the back and sides act as the acoustic enclosure, reflecting sound waves and coloring the frequency spectrum with harmonic resonance.",
+          "bgColor": "bg-red-50",
           "borderColor": "",
-          "description": "An acoustic-electric adds a pickup and preamp so the guitar's own resonance can be sent straight to a PA or interface, which matters the moment you need consistent volume on a stage where a microphone would also pick up monitor bleed and crowd noise. The onboard EQ is what makes that practical night to night, letting you compensate for a boomy room or thin-sounding venue without needing an outboard tone-shaping rig.",
           "fields": [
-            { "label": "Pros", "value": "Can be amplified, great for live performance, built-in tuners often included, EQ controls" },
-            { "label": "Best for", "value": "Live performance, recording direct, band settings" }
+            { "label": "East Indian Rosewood", "value": "High density, low internal damping; deep subterranean bass, sparkling bell-like highs, scooped midrange, massive overtone wash" },
+            { "label": "Genuine Mahogany", "value": "Medium density, high damping; punchy, woody, direct, focused midrange with fast decay and laser-sharp clarity" },
+            { "label": "Maple", "value": "Extremely dense and reflective; bright, transparent, uncolored tone with fast note decay that resists feedback on stage" },
+            { "label": "Koa", "value": "Hawaiian hardwood; visually stunning, warm midrange with sweet treble sparkle that mellows dramatically with age" }
+          ],
+          "items": [
+            "Rosewood pairs naturally with solo vocalists: its scooped midrange leaves acoustic space for the human singing voice",
+            "Mahogany is the recording engineer's favorite: its focused midrange punches cleanly through dense multi-instrument mixes"
           ]
         }
       ]
     },
     {
-      "title": "Recommended Models by Budget",
+      "title": "Legendary Benchmark Acoustic Guitars",
+      "subtitle": "The industry-standard instruments that defined acoustic recording and performance history",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Martin D-28",
+          "badge": { "text": "The Acoustic Standard", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "First introduced in 1931, the D-28 is the most celebrated and recorded acoustic guitar in history. Constructed with a solid Sitka spruce top, solid East Indian rosewood back and sides, forward-shifted non-scalloped X-bracing, and an ebony fingerboard, it delivers thunderous bass authority and shimmering overtone bloom.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Tonewoods", "value": "Solid Sitka Spruce top, Solid East Indian Rosewood back and sides, Genuine Mahogany neck" },
+            { "label": "Bracing", "value": "Forward-Shifted 5/16\" X-bracing; maximizes low-end power and string-to-string resonance" },
+            { "label": "Scale & Nut", "value": "25.4\" scale length, 1-3/4\" bone nut, modern high-performance neck taper" },
+            { "label": "Famous Users", "value": "Hank Williams, Johnny Cash, Paul McCartney, Bob Dylan, Neil Young, Joni Mitchell" }
+          ],
+          "items": [
+            "The acoustic voice heard on The Beatles' 'Blackbird' and Neil Young's 'Heart of Gold'",
+            "Rosewood overtone complexity provides a luxurious, choir-like acoustic bed behind acoustic singer-songwriters",
+            "Heirloom-grade acoustic construction engineered to last generations and appreciate in musical value"
+          ]
+        },
+        {
+          "title": "Martin D-18",
+          "badge": { "text": "The Flatpicker's Choice", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The quintessential mahogany Dreadnought. Pairing a solid Sitka spruce top with solid genuine mahogany back and sides, forward-shifted scalloped X-bracing, and an ebony bridge, the D-18 delivers dry, woody, punchy midrange clarity with lightning-fast flatpicking snap.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Tonewoods", "value": "Solid Sitka Spruce top, Solid Genuine Mahogany back and sides, select hardwood neck" },
+            { "label": "Bracing Pattern", "value": "Forward-Shifted Scalloped 5/16\" X-bracing for explosive dynamic projection" },
+            { "label": "Tonal Profile", "value": "Direct, punchy, focused woody midrange with clean note separation and fast attack decay" },
+            { "label": "Famous Users", "value": "Elvis Presley, Doc Watson, Clarence White, Kurt Cobain (MTV Unplugged)" }
+          ],
+          "items": [
+            "Kurt Cobain played a modified 1959 Martin D-18E on Nirvana's legendary MTV Unplugged in New York",
+            "The undisputed favorite of bluegrass flatpickers who need single-note lead runs to cut through acoustic banjo mixes",
+            "Tracks cleanly under studio microphones with zero low-frequency mud or boomy buildup"
+          ]
+        },
+        {
+          "title": "Taylor 814ce",
+          "badge": { "text": "The Modern Flagship", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Taylor's flagship acoustic-electric guitar. Featuring the versatile Grand Auditorium body with Venetian cutaway, solid Sitka spruce top, solid Indian rosewood back and sides, patented V-Class bracing, and Expression System 2 (ES2) behind-the-saddle electronics.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Body & Bracing", "value": "Grand Auditorium body with radius-style rosewood armrest; revolutionary V-Class bracing" },
+            { "label": "Electronics", "value": "Expression System 2 (ES2) proprietary behind-the-saddle piezo pickup with active preamp" },
+            { "label": "Radius Armrest", "value": "Beveled rosewood edge softens the contact point for the strumming arm during long sets" },
+            { "label": "Scale & Neck", "value": "25.5\" scale length, ultra-playable tropical mahogany neck, West African Crelicam ebony fretboard" }
+          ],
+          "items": [
+            "V-Class bracing delivers unparalleled pitch accuracy and endless sustain up the entire neck",
+            "The global standard backline acoustic for contemporary worship, pop stadium tours, and television broadcasts",
+            "The ES2 pickup system captures mechanical soundboard movement rather than harsh piezo string 'quack'"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acoustic Workhorses & Travel Innovators",
+      "subtitle": "Accessible best-sellers and portable compact wonders",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Taylor 314ce",
+          "badge": { "text": "All-Solid Pro Workhorse", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The entry point to Taylor's American-made, all-solid tonewood lineup. Pairing a solid Sitka spruce top with solid sapele (African mahogany relative) back and sides, V-Class bracing, and ES2 electronics, it is the most reliable workhorse on the touring circuit.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Tonewoods", "value": "Solid Sitka Spruce top, Solid Sapele back and sides, Neo-Tropical Mahogany neck" },
+            { "label": "Acoustic Voice", "value": "Crisp, balanced, clear, articulate; covers fingerstyle, strumming, and lead work with equal poise" },
+            { "label": "Electronics", "value": "Taylor ES2 onboard pickup and preamp with Volume, Bass, and Treble controls" }
+          ],
+          "items": [
+            "All-solid wood construction delivers rich acoustic resonance that blossoms continuously with age",
+            "Sapele back and sides provide warm mahogany-style punch with extra high-end sparkle",
+            "Built in El Cajon, California, and shipped in a deluxe hardshell case"
+          ]
+        },
+        {
+          "title": "Yamaha FG800",
+          "badge": { "text": "The World's Best Value Acoustic", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "Widely acclaimed by luthiers and educators as the best entry-level acoustic guitar ever manufactured. Features a genuine solid Sitka spruce top, newly developed scalloped bracing, and a traditional Western Dreadnought body that delivers tone that rivals guitars four times its price.",
+          "bgColor": "bg-green-50",
+          "fields": [
+            { "label": "Top Construction", "value": "Genuine Solid Sitka Spruce top (unheard of at this price point); nato/okoume back and sides" },
+            { "label": "Acoustic Bracing", "value": "Yamaha's proprietary scalloped bracing designed via cutting-edge acoustic acoustic simulation" },
+            { "label": "Body Format", "value": "Traditional Western Dreadnought body delivering bold projection and rich bass" }
+          ],
+          "items": [
+            "The #1 recommended acoustic guitar for beginners, students, and budget-conscious songwriters worldwide",
+            "Solid spruce soundboard produces rich, vibrant resonance far superior to all-laminate competitor guitars",
+            "Bulletproof durability and comfortable neck profile ensure effortless learning for new players"
+          ]
+        },
+        {
+          "title": "Taylor GS Mini",
+          "badge": { "text": "The Travel & Couch Legend", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The modern phenomenon that redefined compact acoustic guitars. Scaling down Taylor's Grand Symphony body shape into a 23.5-inch scale length travel guitar with an arched back that requires no back bracing, the GS Mini produces shockingly full, rich, room-filling volume.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Scale Length", "value": "Compact 23.5-inch scale length; ultra-comfortable string fretting and short finger reaches" },
+            { "label": "Arched Back Design", "value": "Pressed arched back acts as an acoustic reflector, projecting volume like a full-size guitar" },
+            { "label": "Available Tops", "value": "Solid Sitka Spruce (bright/punchy), Solid Mahogany (warm/bluesy), or Solid Hawaiian Koa" }
+          ],
+          "items": [
+            "The ultimate couch, songwriting, studio demo, and airline travel companion",
+            "Compact size makes complex barre chords and wide finger stretches effortless for players of all hand sizes",
+            "Optional ES-B pickup system features a built-in digital chromatic tuner and active preamp"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acoustic Guitar Construction Comparison Matrix",
+      "subtitle": "Head-to-head comparison across primary acoustic body formats and top woods",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "table",
-      "cards": [
-        {
-          "title": "Beginner ($100-400)",
-          "badge": { "text": "$100-400", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Yamaha", "FG830", "$200", "Solid spruce top, great value"],
-            ["Fender", "CD-60S", "$180", "Easy playability, balanced tone"],
-            ["Epiphone", "DR-100", "$120", "Classic dreadnought, affordable"]
-          ]
-        },
-        {
-          "title": "Intermediate ($400-1200)",
-          "badge": { "text": "$400-1200", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Taylor", "114ce", "$800", "Electronics, easy action, great for recording"],
-            ["Martin", "D-X2E", "$600", "HPL construction, electronics, Martin tone"],
-            ["Gibson", "J-45 Studio", "$1000", "Solid woods, vintage character"]
-          ]
-        },
-        {
-          "title": "Professional ($1200+)",
-          "badge": { "text": "$1200+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Martin", "D-28", "$3000", "All solid woods, legendary tone"],
-            ["Taylor", "814ce", "$4000", "Premium tonewoods, Expression System"],
-            ["Gibson", "J-45 Standard", "$2500", "Iconic Gibson sound, handcrafted"]
-          ]
-        }
+      "tableHeaders": ["Body & Tonewood Archetype", "Soundboard Wood", "Back & Side Wood", "Internal Volume & Projection", "Acoustic Frequency Balance", "Primary Musical Application"],
+      "tableRows": [
+        ["Martin D-28 (Dreadnought)", "Solid Sitka Spruce", "Solid East Indian Rosewood", "Massive; thunderous low-end projection", "Deep scooped bass, sparkling highs, overtone wash", "Folk, Bluegrass, Country, Singer-Songwriter strumming"],
+        ["Martin D-18 (Dreadnought)", "Solid Sitka Spruce", "Solid Genuine Mahogany", "High; punchy percussive volume", "Woody, focused midrange; fast note decay", "Bluegrass Flatpicking, Country Leads, Rock Rhythm, Studio Tracking"],
+        ["Taylor 814ce (Grand Auditorium)", "Solid Sitka Spruce (V-Class)", "Solid East Indian Rosewood", "Medium-High; versatile projection", "Balanced across all 6 strings; singing sustain", "Modern Pop, Contemporary Worship, Versatile Live Performance"],
+        ["Orchestra Model (OM / 000)", "Solid Sitka / Adirondack", "Solid Rosewood or Mahogany", "Medium; intimate, direct acoustic attack", "Flawless string-to-string separation; zero mud", "Fingerstyle, Ragtime, Acoustic Blues, Microphone Recording"],
+        ["Taylor GS Mini (Compact GA)", "Solid Spruce or Mahogany", "Layered Sapele / Walnut (Arched)", "Shockingly loud for compact dimensions", "Warm, punchy, mid-forward acoustic presence", "Travel, Songwriting on couch, Backstage warmup, Small hands"]
       ]
     },
     {
-      "title": "Care & Maintenance",
+      "title": "Acoustic Care: The 45%–55% Humidity Rule",
+      "subtitle": "Essential environmental preservation protocols to prevent top cracks and fret sprout",
       "bgColor": "bg-white",
       "borderColor": "",
+      "warningText": "HUMIDITY CRACK WARNING: Solid wood acoustic guitars are thin, organic wooden instruments that continuously absorb and release moisture. Low relative humidity (<35%) shrinks the soundboard wood against the rigid internal bracing, causing catastrophic top cracks, sunken soundboards, and sharp protruding fret ends. High humidity (>65%) causes swollen tops, high unplayable action, and dull tone. Never hang an acoustic guitar near heaters, air conditioners, or in dry winter rooms without two-way humidification.",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Daily Care",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "description": "Sweat and skin oil left on the strings after playing accelerates corrosion and dulls tone faster than the strings' own use would, so a quick wipe-down costs seconds but adds real string life. Humidity is the bigger long-term threat: solid wood tops expand and contract with moisture, and letting a guitar sit outside the 45-55% range for extended periods is how tops crack and bridges lift, not just how tone changes.",
-          "items": [
-            "Wipe down strings after playing",
-            "Store in a case or on a stand",
-            "Keep away from extreme temperatures",
-            "Maintain 45-55% humidity",
-            "Loosen strings for long storage"
-          ]
-        },
-        {
-          "title": "Periodic Maintenance",
+          "title": "Diagnosing Dry vs. Over-Humidified Guitars",
+          "description": "Understanding the physical warning signs of humidity damage allows you to take corrective action before a costly luthier repair is required.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
-          "description": "Strings lose brightness gradually enough that most players don't notice the decline until they put on a fresh set and hear the difference, which is why changing them on a schedule rather than waiting for them to feel obviously dead keeps the guitar sounding its best. An annual setup catches the slower-moving problems — neck relief shifting with the seasons, intonation drifting — before they turn into buzzing or notes that won't stay in tune up the neck.",
-          "items": [
-            "Change strings every 3-6 months",
-            "Professional setup annually",
-            "Check neck relief and intonation",
-            "Clean and condition fretboard",
-            "Polish body (avoid getting on strings)"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Acoustic Players",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Fingerstyle Masters",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "These players built entire careers on the idea that a single acoustic guitar, played with the fingers instead of a pick, can carry bass line, chords, and melody all at once — no band required.",
-          "items": [
-            "Tommy Emmanuel",
-            "Chet Atkins",
-            "Andy McKee",
-            "Kaki King"
-          ]
-        },
-        {
-          "title": "Singer-Songwriters",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "For these artists the acoustic guitar is primarily a vehicle for the voice and the song, which is why their playing tends to prioritize steady, supportive rhythm over technical display.",
-          "items": [
-            "Bob Dylan",
-            "Neil Young",
-            "Taylor Swift",
-            "Ed Sheeran"
-          ]
-        },
-        {
-          "title": "Bluegrass/Country",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Bluegrass and country flatpickers use the acoustic guitar as a lead instrument, trading licks with fiddle and banjo, which demands the fast, precise picking and strong projection a good dreadnought is built to deliver.",
-          "items": [
-            "Tony Rice",
-            "Norman Blake",
-            "Brad Paisley",
-            "Keith Whitley"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Buying Guide",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "What to Look For",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "description": "A good acoustic should sound even across every string and up and down the neck — if one note dies faster than its neighbors or a certain fret buzzes only sometimes, that's usually a sign of an uneven fret job or a structural issue rather than something you can fix with technique. Playability matters just as much as tone, since a guitar that fights your fretting hand will quietly discourage practice no matter how good it sounds on its own.",
           "fields": [
-            { "label": "Sound Quality", "value": "Clear, balanced tone across all strings; good sustain and projection; no buzzing or dead spots; harmonics ring clearly" },
-            { "label": "Playability", "value": "Comfortable neck shape and width; appropriate string action height; easy fretting without excessive pressure; good intonation up the neck" }
+            { "label": "Symptoms of a Dry Guitar (<35% RH)", "value": "Sunken, concave soundboard behind bridge; sharp fret ends protruding from fretboard edge ('fret sprout'); low buzzing string action" },
+            { "label": "Symptoms of a Wet Guitar (>65% RH)", "value": "Swollen, bellying top; excessively high action at 12th fret; dull, muffled acoustic volume; glue joints weeping" },
+            { "label": "The Golden Humidity Range", "value": "Maintain 45% to 55% Relative Humidity at 20°C–24°C (68°F–75°F)" }
+          ],
+          "items": [
+            "Keep a calibrated digital hygrometer inside your guitar case to monitor humidity 24/7",
+            "In winter, heating systems dry indoor air down to 15%–20% RH; this is prime season for soundboard cracking",
+            "Never store an acoustic guitar in a hot car trunk; heat liquefies internal luthier hide and aliphatic glues"
           ]
         },
         {
-          "title": "Red Flags to Avoid",
-          "bgColor": "bg-red-50",
+          "title": "Two-Way Case Humidification Systems",
+          "description": "The safest and most reliable way to protect a solid-wood acoustic guitar is case storage with two-way humidity control packets (such as Boveda or D'Addario Humidipak).",
+          "bgColor": "bg-green-50",
           "borderColor": "",
-          "warningText": "Red Flags to Avoid",
-          "description": "Some of these problems are cosmetic and some are structural, and telling them apart matters: a hairline finish crack is usually harmless, but a crack that runs across the grain of the top or back can mean the guitar was exposed to damaging humidity swings and may never sound quite right again. A neck that's visibly warped or twisted when you sight down it from the headstock is a repair job, not a quick setup fix, and is worth walking away from unless the price already reflects it.",
+          "fields": [
+            { "label": "Two-Way Technology", "value": "Specially formulated salt and pure water membrane absorbs moisture when humid, and releases moisture when dry" },
+            { "label": "Self-Regulating", "value": "Maintains an exact 49% relative humidity inside a closed hardshell case automatically" },
+            { "label": "Placement", "value": "Place one packet under the headstock and two packets suspended over the soundhole between strings" }
+          ],
           "items": [
-            "High action that makes playing difficult",
-            "Visible cracks in the top or back",
-            "Buzzing that can't be fixed with setup",
-            "Warped or twisted neck",
-            "Loose or lifting bridge",
-            "Dead spots or notes that don't ring out"
+            "Requires zero maintenance: packets remain soft for 2 to 6 months and harden when depleted",
+            "Storing your acoustic inside a hardshell case cushions against ambient temperature and humidity shocks",
+            "Protects delicate nitrocellulose lacquer and French polish finishes from crazing and clouding"
           ]
         }
       ]
@@ -266,15 +348,31 @@
   ],
   "relatedTopics": [
     {
-      "title": "Electric Guitars",
-      "href": "/lessons/gear/guitars/electric",
-      "description": "Versatile and expressive for rock, blues, and jazz",
+      "title": "Classical Guitars Guide",
+      "href": "/lessons/gear/guitars/classical",
+      "description": "Nylon-string dynamics, fan bracing, wide flat fretboards, and traditional fingerstyle technique",
+      "icon": "🎼",
       "bgColor": "bg-white"
     },
     {
-      "title": "Classical Guitars",
-      "href": "/lessons/gear/guitars/classical",
-      "description": "Nylon strings and traditional techniques",
+      "title": "Electric Guitars Guide",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Electromagnetic induction, scale length tension physics, and solid-body resonance",
+      "icon": "⚡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Capos Guide",
+      "href": "/lessons/gear/accessories/capos",
+      "description": "Spring vs micrometer screw tension, radiused pads, and transposition without retuning",
+      "icon": "🧲",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Stretching & Hand Health",
+      "href": "/lessons/practice/warmups/stretching",
+      "description": "Biomechanical forearm stretches to comfortably manage high-tension steel-string acoustic setups",
+      "icon": "🧘",
       "bgColor": "bg-white"
     }
   ]

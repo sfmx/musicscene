@@ -6,12 +6,13 @@
  * Sorted longest-first within groups to support prefix matching.
  */
 export const AFFILIATE_BRANDS: string[] = [
-  // Guitars
+  // Guitars & Basses
   'Fender', 'Gibson', 'Epiphone', 'Squier', 'PRS', 'Ibanez', 'ESP',
   'Gretsch', 'Yamaha', 'Taylor', 'Martin', 'Jackson', 'Charvel',
   'Schecter', 'Dean', 'Rickenbacker', 'G&L', 'Reverend', 'Washburn',
   'Ovation', 'Takamine', 'Córdoba', 'Alvarez', 'Breedlove', 'Guild',
-  'Danelectro', 'Harmony', 'Airline', 'Supro',
+  'Danelectro', 'Harmony', 'Airline', 'Supro', 'Music Man',
+  'Sterling by Music Man', 'Alhambra', 'Warwick', 'Spector', 'Dingwall', 'Kremona',
 
   // Amps
   'Marshall', 'Vox', 'Orange', 'Mesa Boogie', 'Mesa', 'Peavey',

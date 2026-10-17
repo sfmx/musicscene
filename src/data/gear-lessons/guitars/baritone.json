@@ -1,360 +1,213 @@
 {
   "slug": "guitars-baritone",
   "category": "guitars",
-  "pageTitle": "Baritone Guitars: Go Lower, Go Deeper",
-  "subtitle": "Explore the deep, powerful world of extended-range guitars",
-  "heroGradient": "bg-gradient-to-r from-gray-50 to-slate-50",
+  "pageTitle": "Baritone Guitars: Extended Scale Physics, Low Tunings & Sonic Depth",
+  "subtitle": "Master 27\"–30\" scale tension, B-standard vs A-standard tuning, high-gain clarity, and the legendary Fender Bass VI",
+  "heroGradient": "bg-gradient-to-r from-slate-100 to-stone-100",
   "backLink": {
     "href": "/lessons/gear/guitars",
     "label": "Back to Guitars"
   },
   "introduction": {
-    "title": "Baritone Guitars: Go Lower, Go Deeper",
-    "text": "A baritone guitar reaches its lower range by physically lengthening the neck rather than by loosening standard strings, which is the detail that makes it work at all. Drop a regular guitar's low E down to B and the string goes slack and floppy; put that same B on a longer scale length and the added distance restores enough tension to keep the string taut and in tune. That's the whole appeal of the format — deep, guitar-shaped tones without the wobbly pitch and dead sustain that comes from simply detuning a standard-scale instrument too far.",
-    "quote": "Baritone Advantages:",
+    "title": "Baritone Guitars: The Low-Frequency Frontier",
+    "text": "The baritone guitar bridges the sonic chasm between the standard electric guitar and the bass. Operating primarily in B-standard tuning (B1–E2–A2–D3–F#3–B3, a perfect fourth lower) or A-standard (a perfect fifth lower), its lowest string sounds at 61.74 Hz (B1)—well below the standard guitar's 82.4 Hz (E2). Trying to reach these depths on a standard 24.75\" or 25.5\" scale guitar yields loose, floppy strings, unstable intonation, and muddy transient mush. The baritone solves this through acoustic physics: lengthening the scale to 27\"–30\" restores mechanical string tension, delivering thunderous, piano-like note articulation, razor-sharp pitch tracking, and massive dynamic headroom.",
+    "quote": "Where standard guitars lose definition and bass guitars lack harmonic agility, the baritone reigns supreme.",
     "columns": [
       {
-        "title": "Baritone Advantages",
-        "text": "Because the scale length does the work instead of slack strings, a baritone gets genuinely low pitches while still holding pitch cleanly and ringing with full sustain, something a standard guitar tuned down a fourth or fifth can't manage. That combination of range and stability is why the instrument shows up equally in down-tuned metal, atmospheric film scoring, and country records that need a deep, resonant low end without switching to an actual bass."
+        "title": "Extended Scale Length Physics",
+        "text": "String tension is governed by Mersenne's law: $T = 4 \\cdot m \\cdot f^2 \\cdot L^2$. Because frequency $f$ drops drastically when tuning down to B1 or A1, maintaining playable string tension ($T \\approx 18\\text{--}20\\text{ lbs}$) requires either dramatically increasing string mass $m$ (which makes strings stiff, dull, and unresponsive) or increasing vibrating scale length $L$. By extending the scale from 25.5\" to 27.5\" or 30\", the baritone allows guitarists to use moderate string gauges (.013–.065) that ring with bright, singing harmonic overtones while remaining flexible enough for bends, vibrato, and chordal voicings."
+      },
+      {
+        "title": "Arrangement & Mix Space Architecture",
+        "text": "In a crowded audio mix, standard electric guitars often fight vocals and snare drums in the 1 kHz–3 kHz range, while bass guitars and kick drums battle below 100 Hz. The baritone occupies the warm, authoritative, underutilized frequency pocket between 100 Hz and 500 Hz. It can deliver twangy spaghetti-western lead lines, crushingly heavy modern metal riffs with immediate transient attack, or lush, ambient chord voicings in film scores without ever muddying the rhythm section."
       }
     ]
   },
   "sections": [
     {
-      "title": "What Defines a Baritone Guitar?",
+      "title": "Scale Lengths & Tuning Architectures",
       "bgColor": "bg-white",
       "borderColor": "",
-      "layout": "grid-2",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Scale Length",
-          "description": "The defining characteristic of baritone guitars is their extended scale length, typically 27-30 inches compared to standard guitars' 24.75-25.5 inches. That extra length is what lets a baritone carry lower-tuned strings without them going slack: string tension depends on scale length as well as pitch, so stretching the distance between nut and bridge restores the tautness a standard-scale string would lose if tuned down to the same note.",
+          "title": "27\" to 28\" Scale (B-Standard)",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "borderColor": "border-blue-200",
+          "description": "The modern sweet spot for players transitioning seamlessly from standard guitars.",
           "fields": [
-            { "label": "Standard Guitar", "value": "24.75\" - 25.5\"" },
-            { "label": "Baritone Guitar", "value": "27\" - 30\"" },
-            { "label": "Bass Guitar", "value": "34\"" }
+            { "label": "Default Tuning", "value": "B-E-A-D-F#-B (Tuned down a perfect fourth)" },
+            { "label": "Fret Reach", "value": "Feels natural and familiar; comfortable for wide barre chords and standard pentatonic stretches" },
+            { "label": "String Gauge", "value": "Typically .013–.062 or .014–.068 gauge sets" },
+            { "label": "Best Applications", "value": "Modern rock rhythm, progressive metal, atmospheric alternative, and singer-songwriter chord voicings" },
+            { "label": "Key Models", "value": "PRS SE 277 (27.7\"), Gretsch Electromatic Jet Baritone (29.75\")" }
           ]
         },
         {
-          "title": "Tuning Range",
-          "description": "Baritones are typically tuned a fourth or fifth lower than standard guitars, providing access to much deeper frequencies while maintaining playability. Landing a fourth or fifth down rather than further is a deliberate compromise: go lower still and even the extended scale starts to run out of usable tension, while staying within that range keeps familiar chord shapes and standard technique largely intact.",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Standard Tuning", "value": "E-A-D-G-B-E" },
-            { "label": "Baritone Standard", "value": "B-E-A-D-F#-B" },
-            { "label": "Low Range", "value": "Down to A or even lower" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Construction & Design",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Scale Length Options",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "There's no single 'correct' baritone scale length because the right choice depends on how far down you're tuning: a 27-inch scale feels closer to a standard guitar and suits the more modest B-standard tuning, while a full 30-inch scale is built for tunings that go a fifth or more below standard without the strings turning to rubber. Multi-scale or fanned-fret designs push this further by giving each string its own effective scale length, so the low strings get maximum tension while the high strings stay comfortable to bend.",
-          "items": [
-            "27\" Scale: Shorter baritone scale, closer to standard guitar feel",
-            "28-28.5\" Scale: Most common baritone scale length, balanced tension",
-            "30\" Scale: Extended scale for maximum low-end clarity",
-            "Multi-Scale/Fanned: Different scale lengths per string for optimal tension"
-          ]
-        },
-        {
-          "title": "Construction Differences",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Heavier strings and a longer neck both add real physical load, which is why baritones typically ship with reinforced necks and internal bracing rather than reusing a standard guitar's specifications at a longer scale. The larger bodies common on baritones aren't just for looks either — a bigger cavity moves more air and reinforces the lower frequencies the instrument is built to produce, the same way a dreadnought outperforms a parlor guitar on bass response.",
-          "items": [
-            "Reinforced Neck: Stronger construction to handle increased string tension",
-            "Larger Body: Often bigger than standard guitars for better low-end resonance",
-            "Heavy-Gauge Strings: Typically .013-.072 or heavier for proper tension",
-            "Adjusted Bracing: Internal bracing optimized for lower frequencies"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Popular Tuning Options",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Standard Baritone",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Tuning", "value": "B-E-A-D-F#-B" },
-            { "label": "Description", "value": "Most common baritone tuning. Perfect fourth down from standard guitar." },
-            { "label": "Benefits", "value": "Familiar chord shapes, easy transition from standard guitar" }
-          ]
-        },
-        {
-          "title": "Drop A Baritone",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Tuning", "value": "A-E-A-D-F#-B" },
-            { "label": "Description", "value": "Baritone version of drop D tuning. Lowest string tuned to A." },
-            { "label": "Benefits", "value": "Power chords on lowest two strings, heavy metal applications" }
-          ]
-        },
-        {
-          "title": "Low C Tuning",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Tuning", "value": "C-F-Bb-Eb-G-C" },
-            { "label": "Description", "value": "Extended range tuning for maximum low end." },
-            { "label": "Benefits", "value": "Deep, powerful sound, extended range for composition" }
-          ]
-        },
-        {
-          "title": "Nashville Tuning",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "fields": [
-            { "label": "Tuning", "value": "E-A-D-G-B-E (octaved)" },
-            { "label": "Description", "value": "Standard tuning with thinner strings tuned an octave higher." },
-            { "label": "Benefits", "value": "Chimey, bell-like tones, complements standard guitars" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Acoustic vs Electric Baritones",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Acoustic Baritone",
-          "bgColor": "bg-amber-50",
-          "borderColor": "",
-          "description": "An acoustic baritone channels its lower tuning straight into a bigger top and body rather than an amp, which produces a woody, naturally compressed low end well suited to solo fingerpicking and songwriting. Because there's no pickup shaping the tone, the instrument's low-end character comes entirely from its size and bracing, which is why acoustic baritones tend to run larger than standard-body acoustics.",
-          "fields": [
-            { "label": "Characteristics", "value": "Rich, woody low-end resonance; perfect for fingerpicking and folk; natural compression and sustain; ideal for songwriting and recording" },
-            { "label": "Best for", "value": "Country, folk, Americana, cinematic music, solo performance" },
-            { "label": "Notable models", "value": "Martin Grand J-28LSE Baritone, Taylor Custom Baritone, Santa Cruz Baritone" }
-          ]
-        },
-        {
-          "title": "Electric Baritone",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "description": "An electric baritone pushes its low end through pickups and an amp, which is what lets it stay articulate even under heavy distortion — a gain stage that would turn a down-tuned standard guitar into mud instead tightens up because the extended scale keeps the strings taut. That clarity under distortion is exactly why the format took off in metal and progressive rock, genres that need low pitches without losing note definition.",
-          "fields": [
-            { "label": "Characteristics", "value": "Aggressive attack and definition; perfect for heavy, distorted tones; extended range for lead work; effects processing possibilities" },
-            { "label": "Best for", "value": "Metal, progressive rock, experimental music, film scoring" },
-            { "label": "Notable models", "value": "Fender Bass VI, PRS SE 277, Schecter Hellraiser" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Musical Applications",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Metal & Heavy Rock",
-          "description": "Baritones excel in heavy music genres where low tunings are essential, since the extended scale keeps palm-muted riffs tight and articulate at pitches that would turn to mush on a standard-scale guitar tuned down to match.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Key Techniques", "value": "Down-tuned riffing, extended range solos, heavy rhythm work, djent and progressive styles" },
-            { "label": "Notable Artists", "value": "Meshuggah, Periphery, Animals as Leaders, TesseracT" }
-          ]
-        },
-        {
-          "title": "Alternative & Indie",
-          "description": "Unique tonal character adds depth to alternative and experimental music, where the baritone's darker, more resonant voice works as a texture and atmosphere instrument rather than a lead one.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Key Techniques", "value": "Atmospheric textures, chord voicings, melodic bass lines, ambient soundscapes" },
-            { "label": "Notable Artists", "value": "Cure, My Bloody Valentine, Sonic Youth, Godspeed You! Black Emperor" }
-          ]
-        },
-        {
-          "title": "Country & Americana",
-          "description": "Baritones provide rich, deep accompaniment in country and folk contexts, continuing a tradition that dates back to Duane Eddy's late-1950s recordings, which first brought the instrument's deep, twangy voice into popular music.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Key Techniques", "value": "Fingerpicking patterns, open chord voicings, slide guitar, rhythmic strumming" },
-            { "label": "Notable Artists", "value": "Duane Eddy, Pat Green, Cross Canadian Ragweed, Jason Isbell" }
-          ]
-        },
-        {
-          "title": "Film & Game Scoring",
-          "description": "Perfect for creating atmospheric and cinematic soundscapes, since a baritone's low, resonant sustain fills the same low-mid space an orchestra would otherwise need strings or brass to cover.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Key Techniques", "value": "Ambient textures, drone notes, harmonic intervals, effects processing" },
-            { "label": "Notable Artists", "value": "Hans Zimmer, Trent Reznor, Gustavo Santaolalla, Austin Wintory" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "The Legendary Fender Bass VI",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "A Unique Instrument",
-          "description": "The Fender Bass VI, introduced in 1961, is perhaps the most famous baritone guitar. With its 30-inch scale and unique tuning (an octave below standard guitar), it occupies a special place between guitar and bass — closer to a six-string baritone than a true bass, which is why guitarists rather than bassists have historically been the ones drawn to it.",
-          "bgColor": "bg-teal-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Specifications", "value": "30\" scale length; E-A-D-G-B-E tuning (octave below guitar); three single-coil pickups; Jaguar-style body and electronics; floating bridge with vibrato" },
-            { "label": "Famous Users", "value": "The Beatles (John Lennon played it on 'Back in the U.S.S.R.' and 'The Long and Winding Road'), The Cure (Robert Smith has used one as his primary tone on many tracks since Faith), Cream (Jack Bruce)" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recommended Baritone Guitars",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "table",
-      "cards": [
-        {
-          "title": "Entry Level ($400-1000)",
-          "badge": { "text": "$400-1000", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Schecter", "Hellraiser C-VI", "$600", "6-string baritone, active pickups, 28\" scale"],
-            ["ESP", "LTD H-401B", "$500", "Solid mahogany body, EMG pickups"],
-            ["Gretsch", "G5260", "$400", "Electromatic series, hollow body baritone"]
-          ]
-        },
-        {
-          "title": "Professional ($1000-3000)",
-          "badge": { "text": "$1000-3000", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["PRS", "SE 277", "$900", "7-string baritone, versatile pickups"],
-            ["Fender", "Bass VI", "$1200", "30\" scale, bass/guitar hybrid"],
-            ["Reverend", "Descent H90", "$1100", "P90 pickups, 26.75\" scale"]
-          ]
-        },
-        {
-          "title": "High-End ($3000+)",
-          "badge": { "text": "$3000+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Gibson", "Flying V Baritone", "$3500", "Custom shop quality, 28\" scale"],
-            ["Fender", "Custom Shop Bass VI", "$4000", "Hand-built, vintage specifications"],
-            ["PRS", "Custom 24 Baritone", "$5000", "Core series, premium tonewoods"]
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Baritone Playing Techniques",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Rhythm Techniques",
+          "title": "28.5\" to 30\" Scale (A-Standard & Drop A)",
           "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "A baritone's low tuning and long scale mean power chords and palm-muted riffs come out thicker and more defined than the same shapes played on a detuned standard guitar, since the extra string tension keeps the notes from turning into an indistinct rumble under gain.",
-          "items": [
-            "Power chords: Massive, thick sound in low register",
-            "Open chords: Rich, complex voicings",
-            "Palm muting: Percussive attack for metal styles",
-            "Drone notes: Sustained low notes under melodies",
-            "Chord extensions: Use the extended range for unique voicings"
+          "borderColor": "border-purple-200",
+          "description": "Engineered for maximum low-end tension, aggressive down-tuning, and visceral percussive bite.",
+          "fields": [
+            { "label": "Default Tuning", "value": "A-D-G-C-E-A (down a fifth) or Drop A (A-E-A-D-F#-B)" },
+            { "label": "Tension Stability", "value": "Extra length eliminates pitch drift when digging hard with a heavy plectrum" },
+            { "label": "String Gauge", "value": ".014–.072 up to .020–.080 sets" },
+            { "label": "Best Applications", "value": "Djent, post-metal, deathcore, doom, cinematic drone soundscapes, and Ennio Morricone spaghetti western leads" },
+            { "label": "Key Models", "value": "Schecter Hellraiser C-VI (30\"), Danelectro '56 Baritone (29.75\")" }
           ]
         },
         {
-          "title": "Lead Techniques",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "description": "Soloing on a baritone means working in a register a standard guitar can't reach without an octave pedal, which is why baritone leads tend to sit closer to the vocal or bass range and read as darker and more atmospheric rather than as conventional shred playing.",
-          "items": [
-            "Extended range solos: Access to lower melodic register",
-            "Harmonic intervals: Rich two-note harmonies",
-            "Slide guitar: Excellent for atmospheric textures",
-            "Ambient picking: Spacious, cinematic soundscapes",
-            "Cross-picking: Complex fingerpicking patterns"
+          "title": "The 30\" Fender Bass VI (Octave Down)",
+          "bgColor": "bg-emerald-50",
+          "borderColor": "border-emerald-200",
+          "description": "Introduced in 1961, the Bass VI is a unique hybrid tuned a full octave below a standard guitar.",
+          "fields": [
+            { "label": "Default Tuning", "value": "E1-A1-D2-G2-B2-E3 (Exact bass guitar octave)" },
+            { "label": "String Architecture", "value": "Six thin bass strings (.024–.084) spaced with guitar-like narrow bridge spacing" },
+            { "label": "Switching System", "value": "Three on/off pickup switches plus a fourth 'strangle' switch (passive high-pass filter to cut sub-bass mud)" },
+            { "label": "Iconic Sound", "value": "Robert Smith (The Cure's signature melodic leads), John Lennon ('Helter Skelter'), Jack Bruce (Cream)" }
           ]
         }
       ]
     },
     {
-      "title": "Setup & Maintenance",
+      "title": "Genre Applications & Sonic Profiles",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Setup Considerations",
+          "title": "Modern Heavy Metal, Djent & Post-Rock",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "High-gain distortion accentuates low-end muddiness if string excursion is uncontrolled.",
+          "fields": [
+            { "label": "The High-Gain Problem", "value": "Down-tuned standard guitars produce loose string vibrations that swamp high-gain amplifier preamps in loose, flubby low frequencies." },
+            { "label": "The Baritone Solution", "value": "Extended scale length tightens the initial pick transient. Palm-muted 16th-note riffs sound razor-sharp, percussive, and punchy through high-gain tube amps and digital modelers." },
+            { "label": "Pedal Tightening Trick", "value": "Place an overdrive pedal with a built-in bass cut (like an Ibanez TS9 or Boss SD-1) before the amp with Gain at 0 and Level at 10 to tighten low-end attack before distortion stages." },
+            { "label": "Pioneering Artists", "value": "Meshuggah, Periphery, Loathe, Deftones (Stephen Carpenter), Spiritbox" }
+          ]
+        },
+        {
+          "title": "Spaghetti Western, Country 'Tic-Tac' & Cinematic Scores",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "The clean, twangy, and haunting side of the baritone guitar that defined film and 1960s pop.",
+          "fields": [
+            { "label": "Nashville 'Tic-Tac' Bass", "value": "A classic 1960s recording technique where a muted Danelectro baritone picked with a stiff plectrum doubled the upright double bass line, adding percussive snap and harmonic definition." },
+            { "label": "Spaghetti Western Twang", "value": "Ennio Morricone utilized the baritone with heavy spring reverb and tape tremolo to create lonely, haunting desert melodies in Sergio Leone western classics." },
+            { "label": "Cinematic Scoring", "value": "Composers like Gustavo Santaolalla (The Last of Us) and Trent Reznor use acoustic and electric baritones for organic, emotional, low-register storytelling." },
+            { "label": "Pioneering Artists", "value": "Duane Eddy, The Cure, Ennio Morricone, Phoebe Bridgers, Mark Lettieri" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Baritone Guitars: Electric & Acoustic",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Squier Classic Vibe Bass VI",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The most celebrated reissue of the 1961 classic, offering authentic 30\" scale hybrid guitar/bass magic at an incredible price.",
+          "fields": [
+            { "label": "Scale & Construction", "value": "30\" scale length, poplar body, vintage-tint gloss maple neck, Indian laurel board" },
+            { "label": "Pickups & Electronics", "value": "Three Fender-Designed Alnico single-coils, individual on/off switches, and strangle circuit" },
+            { "label": "Hardware", "value": "Vintage-style floating vibrato tailpiece and non-locking floating bridge" },
+            { "label": "Ideal For", "value": "The Cure post-punk leads, surf rock, spaghetti western twang, and 6-string bass grooves" }
+          ]
+        },
+        {
+          "title": "Gretsch G5260 Electromatic Jet Baritone",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "A stylish, solid mahogany baritone with a 29.75\" scale and dual Gretsch mini-humbuckers that punch through any mix.",
+          "fields": [
+            { "label": "Scale & Body", "value": "29.75\" scale length, solid mahogany body, thin 'U' shaped bolt-on maple neck" },
+            { "label": "Pickups", "value": "Dual Gretsch mini-humbucking pickups engineered for clear low-end articulation" },
+            { "label": "Bridge", "value": "Anchored Adjusto-Matic bridge with V-Stoptail" },
+            { "label": "Tone Profile", "value": "Crisp, jangly top end with massive low-mid grunt, excelling at both surf twang and heavy fuzz" }
+          ]
+        },
+        {
+          "title": "Danelectro '56 Baritone",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The historic tic-tac legend featuring Danelectro's unique Masonite hollow-core body and high-output Lipstick pickups.",
+          "fields": [
+            { "label": "Scale & Body", "value": "29.75\" scale, Masonite/plywood semi-hollow frame, maple neck with pau ferro board" },
+            { "label": "Pickups", "value": "Dual high-output Lipstick tube single-coils wired in series in middle position" },
+            { "label": "Bridge", "value": "Traditional adjustable bridge with die-cast saddles" },
+            { "label": "Tone Profile", "value": "Thumping vintage percussive snap, warm acoustic resonance, and biting spaghetti western jangle" }
+          ]
+        },
+        {
+          "title": "PRS SE 277 Baritone",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "A refined, ultra-versatile 27.7\" modern baritone combining stunning figured maple aesthetics with PRS tone excellence.",
+          "fields": [
+            { "label": "Scale & Tonewoods", "value": "27.7\" scale length, mahogany body with flame maple veneer, Wide Thin maple neck" },
+            { "label": "Pickups & Circuit", "value": "PRS 85/15 'S' humbuckers with push-pull coil-tap for crystalline single-coil tones" },
+            { "label": "Bridge", "value": "PRS plate-style string-through-body bridge for immense resonance and sustain" },
+            { "label": "Ideal For", "value": "Progressive metal, alternative rock, jazz voicings, and versatile studio tracking" }
+          ]
+        },
+        {
+          "title": "Schecter Hellraiser C-VI Baritone",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "An aggressive, high-performance 30\" metal baritone equipped with active EMG pickups and locking hardware.",
+          "fields": [
+            { "label": "Scale & Body", "value": "30\" scale length, mahogany body with quilted maple top, 3-piece mahogany set-neck with Ultra Access" },
+            { "label": "Pickups", "value": "Active EMG 81TW and 89R humbuckers with dual coil-split options" },
+            { "label": "Hardware", "value": "TonePros locking Tune-O-Matic bridge with string-through-body, Schecter locking tuners" },
+            { "label": "Ideal For", "value": "Crushing drop-tuned metal, modern industrial, and high-gain djent riffs" }
+          ]
+        },
+        {
+          "title": "Alvarez ABT60e Baritone Acoustic",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "A commanding acoustic jumbo baritone with a 27.7\" scale and massive internal air cavity that delivers organ-like acoustic resonance.",
+          "fields": [
+            { "label": "Top & Body", "value": "Solid A+ Sitka Spruce top with African Mahogany back and sides in Jumbo body profile" },
+            { "label": "Bracing", "value": "FST2 Forward Shifted scalloped bracing engineered for low B frequency projection" },
+            { "label": "Electronics", "value": "LR Baggs StagePro Bronze pickup and onboard EQ system" },
+            { "label": "Ideal For", "value": "Solo singer-songwriters, Celtic fingerpicking, and cinematic acoustic accompaniment" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setup, String Gauges & Signal Chain Mastery",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Nut Slotting & Intonation Adjustments",
           "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "description": "A baritone's heavier strings and longer scale change the math on setup: nut slots cut for lighter standard-gauge strings will bind or buzz once heavier gauges are installed, and intonation is more sensitive to error because small measurement mistakes get magnified over the longer distance between nut and bridge.",
-          "items": [
-            "String gauge: Heavier strings needed for proper tension",
-            "Intonation: Critical due to extended scale length",
-            "Action height: May need adjustment for comfortable playing",
-            "Nut slots: Must accommodate heavier strings",
-            "Bridge adjustment: Important for tuning stability"
+          "borderColor": "border-yellow-200",
+          "description": "Setting up a baritone requires adjusting critical contact points to accommodate thick string gauges.",
+          "fields": [
+            { "label": "Nut Slot Recutting", "value": "Never force heavy baritone strings (.013–.068) into slots cut for .010 gauge strings. The string will pinch, cause severe tuning slip, or crack the bone nut. Slots must be widened with dedicated gauged nut files." },
+            { "label": "Saddle Travel Requirements", "value": "Heavier wound strings possess stiffer steel cores that require more backward saddle compensation at the bridge to intonate accurately at the 12th fret." },
+            { "label": "Truss Rod Adjustment", "value": "Heavier strings pull approximately 110–130 lbs total tension across a longer neck. Tighten the truss rod clockwise in quarter-turn increments to maintain a proper 0.010\" neck relief." }
           ]
         },
         {
-          "title": "String Recommendations",
+          "title": "Amplification & Gain-Staging Architecture",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "borderColor": "border-blue-200",
+          "description": "A baritone puts demands on both guitar and bass amplification gear.",
           "fields": [
-            { "label": "Standard Baritone (B-B)", "value": ".013-.017-.026-.036-.046-.060" },
-            { "label": "Low A Tuning", "value": ".014-.018-.028-.042-.056-.072" },
-            { "label": "Bass VI Style", "value": ".024-.034-.044-.056-.072-.084" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Getting Started with Baritone",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "For Guitar Players",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "description": "Because a baritone uses the same relative tuning intervals and fretboard patterns as a standard guitar, everything you already know transfers directly — the same chord shapes and scale patterns just sound lower. What takes adjustment is physical: heavier strings under more tension require a firmer fretting hand, and the extended scale spreads frets slightly further apart, so stretches that were comfortable on a standard neck take a little recalibration.",
-          "fields": [
-            { "label": "Familiar Territory", "value": "Same chord shapes, different pitches; standard guitar techniques apply; familiar fretboard patterns; easy transition from 6-string guitar" },
-            { "label": "New Considerations", "value": "Heavier string tension requires adjustment; extended scale affects finger stretches; different tonal palette to explore; may need to adjust playing style" }
-          ]
-        },
-        {
-          "title": "Practice Tips",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Start with familiar songs: Learn songs you know in new tuning",
-            "Explore the low end: Take advantage of the extended range",
-            "Experiment with effects: Reverb and delay sound great on baritones",
-            "Play with others: Baritones complement standard guitars well",
-            "Record your playing: Hear how the baritone sits in a mix"
+            { "label": "Guitar Amp Considerations", "value": "Standard open-back 1x12 guitar combos can struggle with the massive cone excursion of a 61 Hz low B, leading to speaker flub. Closed-back 2x12 or 4x12 cabs with high-power speakers (Celestion V30s, Creambacks) handle low transients cleanly." },
+            { "label": "The Bass Amp / Bi-Amp Trick", "value": "For maximum live power, split your baritone signal: send lows through a clean bass amp with a 1x15 cab, and send highs through an overdriven guitar amp with a 2x12 cab for monstrous sonic weight." },
+            { "label": "Digital Modeling IRs", "value": "When using Line 6 Helix, Quad Cortex, or Kemper, use high-pass filters set between 75 Hz and 90 Hz in the cab block to keep front-of-house subwoofers tight." }
           ]
         }
       ]
@@ -362,15 +215,21 @@
   ],
   "relatedTopics": [
     {
-      "title": "Acoustic Guitars",
-      "href": "/lessons/gear/guitars/acoustic",
-      "description": "Natural, unplugged acoustic sound",
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Pickup mechanics, scale lengths & solidbody tone",
       "bgColor": "bg-white"
     },
     {
-      "title": "12-String Guitars",
-      "href": "/lessons/gear/guitars/12-string",
-      "description": "Rich, shimmering doubled-string sound",
+      "title": "Bass Guitars",
+      "href": "/lessons/gear/guitars/bass",
+      "description": "Low-frequency fundamental physics & rhythm section groove",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Acoustic Guitars",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Soundboard resonance, tonewood science & bracing",
       "bgColor": "bg-white"
     }
   ]

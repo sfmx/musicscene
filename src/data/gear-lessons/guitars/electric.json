@@ -1,382 +1,307 @@
 {
   "slug": "guitars-electric",
   "category": "guitars",
-  "pageTitle": "Electric Guitars: Shape Your Sound",
-  "subtitle": "Harness the power and versatility of electric guitars",
+  "pageTitle": "Electric Guitars: Electromagnetic Induction, Tonewoods & Iconic Designs",
+  "subtitle": "The definitive guide to solid, semi-hollow & hollow-body instruments — pickups, scale length physics, neck carves & legendary models",
   "heroGradient": "bg-gradient-to-r from-blue-50 to-purple-50",
   "backLink": {
     "href": "/lessons/gear/guitars",
     "label": "Back to Guitars"
   },
   "introduction": {
-    "title": "Electric Guitars: Shape Your Sound",
-    "text": "An electric guitar barely makes any sound on its own — pickups convert string vibration into an electrical signal, and everything you actually hear comes from whatever the amp and effects do with that signal afterward. That's what makes the instrument so versatile: the same guitar can sound completely different depending on the amp it's plugged into and what's between the two, which is why an electric guitar is really only half the instrument. The other half, the amp, is not optional gear you add later — it's where most of the tone actually comes from.",
-    "quote": "Electric Guitar Advantages:",
+    "title": "Electric Guitars: Electromagnetic Induction, Tonewoods & Iconic Designs",
+    "text": "The electric guitar is one of the most culturally transformative inventions of the modern era. While an acoustic guitar relies on physical mechanical soundboard resonance to push acoustic sound waves into the room, an electric guitar barely produces any acoustic sound on its own. Instead, it operates on Faraday's Law of Electromagnetic Induction: steel and nickel strings vibrating within the permanent magnetic field of a pickup perturb the magnetic flux, inducing an alternating micro-voltage in thousands of fine copper wire turns. This electrical signal travels downstream through potentiometers, tone capacitors, cable capacitance, pedal circuitry, and vacuum tubes before finally being converted into acoustic energy by a loudspeaker.\n\nBecause the electric guitar is an electro-acoustic system where the instrument and amplifier form an inseparable circuit, design choices alter not just tone, but physical playing mechanics. The battle between the 25.5-inch Fender scale length (higher string tension, bell-like harmonic snap, and percussive low end) and the 24.75-inch Gibson scale length (lower string tension, buttery string bending, and warm midrange bloom) has shaped seven decades of recorded music. Whether you are exploring the crystalline chime of an American Stratocaster, the mid-heavy roar of a solid mahogany Les Paul, or the feedback-resistant acoustic resonance of a semi-hollow 335, mastering electric guitar architecture is essential for finding your signature voice.",
+    "quote": "An electric guitar is only half of the instrument; the amplifier is the other half. Together, they form an interactive electro-acoustic feedback loop where wood density, magnetic pickup inductance, and tube saturation meet the player's fingertips.",
     "columns": [
       {
-        "title": "Electric Guitar Advantages",
-        "text": "Because the amp and effects chain do so much of the tonal work, a single electric guitar can move between glassy clean tones, gritty overdrive, and saturated high-gain distortion without changing instruments — something no acoustic guitar can do. Lower string action and independent volume control add to that flexibility, letting a player switch between delicate, quiet passages and full-volume lead lines without the guitar itself fighting back."
+        "title": "Electromagnetic Pickup Physics",
+        "text": "The electronic principles separating glassy single-coils, hum-cancelling dual-coil humbuckers, punchy P90s, and active 9V preamps.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Scale Length & String Tension",
+        "text": "How the 25.5\" Fender scale vs 24.75\" Gibson scale alters physical string bending resistance, fret spacing, and harmonic overtone brightness.",
+        "icon": "📏"
+      },
+      {
+        "title": "Body Architecture & Resonance",
+        "text": "Comparing feedback-immune solid-body sustain against the warm acoustic resonance of semi-hollow center-blocks and fully hollow jazz boxes.",
+        "icon": "🎸"
       }
     ]
   },
   "sections": [
     {
-      "title": "Sound & Versatility",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Clean Tones",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "description": "A clean tone is what an amp produces when it's not adding distortion, which means every nuance of touch and pickup choice comes through unmasked — there's nowhere for a weak technique or a poorly set up guitar to hide. That transparency is exactly why clean tones dominate genres like jazz and country, where articulation and note choice matter as much as raw sound.",
-          "items": [
-            "Jazz: Warm, smooth hollow-body tones",
-            "Funk: Crisp single-coil attack",
-            "Country: Bright Telecaster twang",
-            "R&B: Smooth Stratocaster cleans"
-          ]
-        },
-        {
-          "title": "Crunch & Overdrive",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "description": "Overdrive occurs when an amp or pedal is pushed just past clean into mild distortion, adding harmonic content and sustain without burying the note's fundamental pitch the way heavier distortion does. That balance of grit and clarity is why overdrive became the backbone of blues and classic rock, genres that need edge and sustain but still rely on individual notes being clearly heard.",
-          "items": [
-            "Blues: Singing sustain and natural compression",
-            "Classic Rock: Warm tube saturation",
-            "Alternative: Modern amp distortion",
-            "Punk: Aggressive, cutting overdrive"
-          ]
-        },
-        {
-          "title": "High Gain",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "description": "High-gain distortion pushes a signal far harder than overdrive, generating enough harmonic saturation that the guitar's raw pickup output is almost secondary to the amp's own character. That heavy processing is what makes tight palm-muted riffs and searing sustained leads possible at the same time, which is why metal and progressive playing rely on it so completely.",
-          "items": [
-            "Metal: Tight, aggressive distortion",
-            "Progressive: Clear, articulate high gain",
-            "Djent: Modern, precise attack",
-            "Shred: Singing leads with endless sustain"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Construction & Electronics",
+      "title": "Electromagnetic Induction & Pickup Architecture",
+      "subtitle": "How magnets, copper wire coils, and pole pieces translate physical vibration into musical electricity",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Pickup Types",
-          "bgColor": "bg-gray-50",
+          "title": "Single-Coil Pickups: Bell-Like Chime & 60-Cycle Hum",
+          "description": "Pioneered by Leo Fender in the early 1950s on the Telecaster and Stratocaster. A single bobbin wound with approximately 7,000 to 8,500 turns of ultra-fine 42 AWG copper wire around individual Alnico rod magnets. Because single coils sample a narrow window of the vibrating string, they produce an exceptionally bright, transparent, articulate tone with percussive low end and sparkling harmonic chime. The trade-off is susceptibility to picking up electromagnetic radiation from power transformers, neon lighting, and computer screens (60-cycle mains hum).",
+          "bgColor": "bg-blue-50",
           "borderColor": "",
-          "description": "A pickup's coil design determines both its tone and its noise floor: a single-coil's simple magnet-and-wire construction produces a bright, detailed signal but also picks up electrical hum, while a humbucker uses two coils wired to cancel that hum out, trading some of the single-coil's sparkle for a warmer, quieter output. Active pickups sidestep the trade-off differently, using a battery-powered preamp to boost output and shape EQ before the signal ever leaves the guitar.",
+          "fields": [
+            { "label": "Magnet Types", "value": "Alnico II (warm/soft), Alnico III (low magnetic pull), Alnico V (bright/punchy/high output)" },
+            { "label": "Frequency Response", "value": "Scooped low-midrange with an articulate high-frequency resonant peak around 6kHz–8kHz" },
+            { "label": "Hallmark Tones", "value": "Fender Stratocaster 'quack' in positions 2 & 4; Telecaster bridge pickup country twang" },
+            { "label": "Famous Users", "value": "Jimi Hendrix, Stevie Ray Vaughan, David Gilmour, Mark Knopfler" }
+          ],
           "items": [
-            "Single-Coil: Bright, crisp tone with some hum. Classic Stratocaster sound.",
-            "Humbucker: Warm, powerful tone with no hum. Great for rock and jazz.",
-            "P90: Single-coil with more output. Punchy midrange character.",
-            "Active: Battery-powered pickups with high output and EQ control."
+            "Reverse-wound, reverse-polarity (RWRP) middle pickups cancel hum in switch positions 2 and 4",
+            "Preserves delicate fingerstyle nuances and dynamic pick attack with razor-sharp note separation",
+            "Cuts through dense band arrangements without competing with bass guitars or vocals"
           ]
         },
         {
-          "title": "Body Styles",
-          "bgColor": "bg-gray-50",
+          "title": "Humbucking Pickups: Dual-Coil Phase Cancellation",
+          "description": "Invented independently by Seth Lover at Gibson (the legendary 'PAF' or Patent Applied For pickup) and Ray Butts at Gretsch in 1955. A humbucker pairs two single-coil bobbins wound with opposing magnetic polarities and reverse electrical wiring. When external 60-cycle electromagnetic noise hits both coils equally, the reverse wiring cancels the noise out (bucks the hum). Furthermore, sampling two adjacent points along the string produces destructive phase interference that cancels ultra-high frequencies, yielding a thick, warm, high-output midrange roar.",
+          "bgColor": "bg-purple-50",
           "borderColor": "",
-          "description": "How much of the body is hollowed out changes how the guitar resonates and how it behaves at volume: a solid body resists feedback and sustains cleanly because there's no internal cavity to vibrate sympathetically with the amp, while a hollow body's open chambers add real acoustic resonance at the cost of being much more prone to feeding back at higher gain and volume. Semi-hollow and chambered designs sit between those two extremes, trading some sustain and feedback resistance for a lighter body and a touch of acoustic character.",
+          "fields": [
+            { "label": "Hum Cancellation", "value": "Common-mode rejection cancels external electromagnetic hum while summing guitar audio" },
+            { "label": "Frequency Profile", "value": "Fat, muscular midrange (1kHz–2kHz), smooth rounded treble, and thick singing sustain" },
+            { "label": "Output Potential", "value": "Roughly double the voltage output of vintage single-coils, driving tube preamps into early breakup" },
+            { "label": "Famous Users", "value": "Jimmy Page (Led Zeppelin), Slash (Guns N' Roses), B.B. King, Eddie Van Halen" }
+          ],
           "items": [
-            "Solid Body: Most common. Sustain and feedback resistance.",
-            "Semi-Hollow: Some acoustic resonance with electric versatility.",
-            "Hollow Body: Maximum acoustic character, prone to feedback.",
-            "Chambered: Weight relief with some acoustic properties."
+            "Immune to noisy stage lighting and high-gain amplifier buzz",
+            "Coil-splitting (coil-tapping) switches allow grounding one coil to access single-coil chime",
+            "The foundational pickup design for hard rock, heavy metal, modern blues, and smooth jazz"
           ]
         }
       ]
     },
     {
-      "title": "Iconic Electric Guitar Models",
+      "title": "Scale Length Physics: Fender 25.5\" vs. Gibson 24.75\"",
+      "subtitle": "The mathematical distance between nut and bridge saddles dictates playability, string tension, and acoustic snap",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Long Scale: 25.5-inch (Fender Standard)",
+          "description": "Standardized by Leo Fender on the Broadcaster/Telecaster (1950) and Stratocaster (1954). According to Mersenne's laws of vibrating strings, increasing scale length while maintaining identical string gauge and pitch requires higher mechanical tension. This higher tension yields a tight, punchy low-end response, percussive piano-like attack, and sparkling upper-harmonic clarity.",
+          "bgColor": "bg-amber-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Scale Distance", "value": "25.5 inches (648 mm) from nut to 12th fret doubled" },
+            { "label": "Physical String Tension", "value": "~10% to 12% higher tension than 24.75\" with identical string gauges" },
+            { "label": "Fret Spacing", "value": "Slightly wider fret spacing; excellent for clean chord finger positioning at high frets" },
+            { "label": "Tonal Signature", "value": "Bell-like treble snap, percussive low E string thump, glassy transparent note separation" }
+          ],
+          "items": [
+            "Drop tunings (Drop D, D standard) hold pitch more securely without string floppiness",
+            "Requires slightly more finger strength to perform multi-step full-step string bends",
+            "Standard on Fender, Ibanez RG/JEM, Charvel, Jackson, and modern shred/superstrat guitars"
+          ]
+        },
+        {
+          "title": "The Short Scale: 24.75-inch (Gibson Standard)",
+          "description": "Standardized by Gibson on the Les Paul, SG, ES-335, and Flying V. The shorter scale length reduces the distance between nut and bridge. To reach standard concert pitch (E-A-D-G-B-E), the strings require noticeably less tension. This produces a slinkier, softer feel under the fretting hand, effortless multi-step string bending, and a warm, compressed, singing midrange with rounded highs.",
+          "bgColor": "bg-red-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Scale Distance", "value": "24.75 inches (628 mm) from nut to bridge saddles" },
+            { "label": "Physical String Tension", "value": "Lower tension; strings yield softly under fretting finger bends and vibrato" },
+            { "label": "Fret Spacing", "value": "Closer fret spacing; easier for small hands to execute wide-interval chord voicings" },
+            { "label": "Tonal Signature", "value": "Chewy, warm midrange compression, singing sustain, and smooth creamy lead bloom" }
+          ],
+          "items": [
+            "Bending whole steps and minor thirds feels effortless compared to long-scale instruments",
+            "The warmth of the shorter scale naturally complements heavy mahogany body construction",
+            "Standard on Gibson, Epiphone, vintage Rickenbacker, and classic British-voiced rock guitars"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Body Architecture: Solid-Body, Semi-Hollow & Hollow-Body",
+      "subtitle": "How internal body wood cavities dictate sustain, feedback resistance, and acoustic resonance",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Fender Stratocaster",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "description": "Three single-coil pickups and a tremolo bridge give the Stratocaster a bright, glassy tone with a wide range of pickup-blend options, plus the ability to add subtle pitch vibrato — features that made it flexible enough to become the default guitar across blues, rock, and funk alike.",
-          "items": [
-            "Three single-coil pickups",
-            "Tremolo bridge system",
-            "Bright, cutting tone",
-            "Legends: Hendrix, Gilmour, Clapton"
-          ]
-        },
-        {
-          "title": "Gibson Les Paul",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "description": "Dual humbuckers and a dense mahogany body with a maple cap give the Les Paul a thick, warm sustain that single-coil guitars can't easily match, which is why it became the guitar of choice for players who need a big, powerful tone at higher gain.",
-          "items": [
-            "Dual humbucker pickups",
-            "Mahogany body, maple cap",
-            "Warm, powerful tone",
-            "Legends: Page, Slash, Bonamassa"
-          ]
-        },
-        {
-          "title": "Fender Telecaster",
+          "title": "Solid-Body Electric Guitars",
+          "badge": { "text": "Feedback Immune", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Constructed from solid slabs of tonewood (alder, ash, mahogany, basswood, maple). With no internal acoustic chamber, the guitar produces virtually zero microphonic acoustic feedback, allowing players to perform directly in front of cranked 100-watt tube amplifiers and high-gain distortion rigs.",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
-          "description": "A simple two-pickup layout and a fixed bridge keep the Telecaster's tone bright and direct with none of the tuning complications a tremolo system introduces, which is exactly why it's stayed the workhorse of country and roots-rock guitarists who need reliability as much as tone.",
+          "fields": [
+            { "label": "Feedback Resistance", "value": "100% immune to acoustic cavity resonance feedback at high stage volume" },
+            { "label": "Sustain Profile", "value": "Long, linear, focused sustain as string energy reflects off dense solid wood" },
+            { "label": "Iconic Benchmarks", "value": "Fender Stratocaster, Fender Telecaster, Gibson Les Paul, Gibson SG" }
+          ],
           "items": [
-            "Two single-coil pickups",
-            "Fixed bridge design",
-            "Bright, twangy character",
-            "Legends: Springsteen, Keith Richards"
+            "The universal choice for hard rock, punk, grunge, heavy metal, and high-energy stadium tours",
+            "Heavier physical weight (typically 3.2 kg to 4.5 kg / 7 lbs to 10 lbs)"
           ]
         },
         {
-          "title": "Gibson SG",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "A lightweight, thin double-cutaway body pairs with dual humbuckers to produce an aggressive, cutting tone with easy upper-fret access, a combination that made the SG a favorite for hard rock players who need speed and attack over sustain.",
+          "title": "Semi-Hollow Body Guitars",
+          "badge": { "text": "The 335 Hybrid", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Invented by Gibson in 1958 with the ES-335. Features a solid maple center-block running the length of the body to anchor pickups and stop feedback, flanked by hollow acoustic wings with violin-style f-holes.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Internal Center-Block", "value": "Solid maple wood block anchors bridge and pickups to prevent howling feedback" },
+            { "label": "Acoustic Resonance", "value": "Hollow side wings add woody acoustic bloom, airy 'breath', and rich low-mids" },
+            { "label": "Iconic Benchmarks", "value": "Gibson ES-335, Epiphone Sheraton, Epiphone Dot, PRS Hollowbody" }
+          ],
           "items": [
-            "Dual humbuckers",
-            "Lightweight, thin body",
-            "Aggressive, cutting tone",
-            "Legends: Angus Young, Tony Iommi"
+            "The favorite versatile tool of blues, jazz, indie rock, and alternative players (B.B. King, Dave Grohl)",
+            "Delivers warm, woody acoustic resonance while handling loud overdrive pedals without runaway feedback"
+          ]
+        },
+        {
+          "title": "Fully Hollow-Body Archtops",
+          "badge": { "text": "Jazz & Rockabilly", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "Deep, fully hollow acoustic bodies constructed with arched spruce or maple tops. Produces warm, round, acoustic-like low-midrange tone with quick note decay, making it the premier choice for traditional jazz and retro rockabilly.",
+          "bgColor": "bg-emerald-50",
+          "fields": [
+            { "label": "Internal Construction", "value": "Completely hollow acoustic cavity with parallel tone bar or trestle bracing" },
+            { "label": "Tonal Profile", "value": "Lush, woody, dark, round jazz comping tone with fast, punchy acoustic attack" },
+            { "label": "Iconic Benchmarks", "value": "Gibson L-5, Gibson ES-175, Gretsch 6120 Nashville, Gretsch White Falcon" }
+          ],
+          "items": [
+            "Prone to howling acoustic feedback under loud stage volume or heavy distortion; best kept on clean amp channels",
+            "Wes Montgomery and Joe Pass sculpted the definitive jazz guitar tone on fully hollow archtops"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Benchmark Electric Guitars",
+      "subtitle": "The industry-defining models that shaped rock, blues, jazz, and modern metal history",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Fender American Professional II Stratocaster",
+          "badge": { "text": "The Universal Standard", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The modern evolution of Leo Fender's 1954 masterpiece. Featuring three V-Mod II single-coil pickups, a sculpted neck heel for effortless upper-fret access, 2-point synchronized tremolo with cold-rolled steel block, and a push-push neck pickup blending switch.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Body & Neck", "value": "Alder body, Deep 'C' maple neck with rolled fingerboard edges, 25.5\" scale length" },
+            { "label": "Pickups & Electronics", "value": "3x V-Mod II Single-Coils, 5-way switch, Treble Bleed circuit, Push-Push neck add switch" },
+            { "label": "Tremolo Bridge", "value": "2-Point Synchronized Tremolo with bent steel saddles and pop-in arm" },
+            { "label": "Famous Users", "value": "Jimi Hendrix, Stevie Ray Vaughan, David Gilmour, Eric Clapton, John Mayer" }
+          ],
+          "items": [
+            "Positions 2 and 4 produce the legendary out-of-phase 'quack' heard on countless funk and blues classics",
+            "Treble bleed circuit ensures sparkling highs are preserved when rolling back the volume knob",
+            "Ergonomic contoured body fits comfortably against the ribs whether sitting or standing"
+          ]
+        },
+        {
+          "title": "Gibson Les Paul Standard",
+          "badge": { "text": "The Heavyweight King", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The quintessential solid-body guitar that defined arena rock and modern blues. Constructed from a solid mahogany body capped with a carved AA figured maple top, set mahogany neck, and Burstbucker dual humbuckers wired with audio-taper pots and orange drop capacitors.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Body & Neck", "value": "Solid mahogany body with carved maple cap, set mahogany neck (50s or 60s carve), 24.75\" scale" },
+            { "label": "Pickups & Hardware", "value": "Burstbucker 61R (neck) & 61T (bridge) Alnico V humbuckers, ABR-1 Tune-o-Matic bridge, stopbar tailpiece" },
+            { "label": "Tone Profile", "value": "Muscular low-end punch, thick singing midrange sustain, warm liquid lead voice" },
+            { "label": "Famous Users", "value": "Jimmy Page (Led Zeppelin), Slash (Guns N' Roses), Gary Moore, Joe Perry" }
+          ],
+          "items": [
+            "Dense mahogany and carved maple cap combine to produce legendary singing sustain that rings for days",
+            "Dual independent Volume and Tone controls allow pre-setting clean and lead channel balances on the toggle switch",
+            "The undisputed tone benchmark for classic rock, heavy metal riffs, and expressive blues leads"
+          ]
+        },
+        {
+          "title": "Squier Classic Vibe '50s Telecaster",
+          "badge": { "text": "The Workhorse Standard", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "A celebration of the 1950s guitar that started the electric revolution. Featuring a pine body, maple neck, vintage-style 3-saddle brass barrel bridge, and custom Fender-designed alnico single-coil pickups, it delivers authentic vintage bite, twang, and bulletproof reliability.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Body & Neck", "value": "Pine body, tinted gloss maple neck with 'C' profile, 9.5\" radius, 25.5\" scale" },
+            { "label": "Bridge Design", "value": "Vintage-style string-through-body bridge with 3 brass barrel saddles for maximum sustain" },
+            { "label": "Tonal Profile", "value": "Cutting bridge pickup twang, warm neck pickup jazz roundness, middle position funk pop" },
+            { "label": "Famous Users", "value": "Keith Richards, Bruce Springsteen, Brad Paisley, Jeff Buckley" }
+          ],
+          "items": [
+            "Brass barrel saddles transfer string vibration deeply into the body for percussive acoustic resonance",
+            "Virtually indestructible bolt-on construction built to withstand decades of rigorous gigging",
+            "Exceptional price-to-performance ratio celebrated by professional touring guitarists as a go-to workhorse"
           ]
         },
         {
           "title": "PRS Custom 24",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "description": "Versatile pickup configurations and a coil-splitting switching system let the Custom 24 cover both single-coil clarity and humbucker warmth from one guitar, reflecting PRS's founding idea of combining the best traits of a Stratocaster and a Les Paul into a single, exceptionally well-built instrument.",
-          "items": [
-            "Versatile pickup configurations",
-            "Modern design philosophy",
-            "Exceptional craftsmanship",
-            "Used by: Tremonti, Santana"
-          ]
-        },
-        {
-          "title": "Ibanez RG Series",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "description": "A thin, fast neck and high-output pickups were designed specifically for speed and comfort during rapid lead playing, which is why the RG series became closely associated with shred and metal guitarists who need the neck to get out of the way of fast technique.",
-          "items": [
-            "Fast, thin necks",
-            "High-output pickups",
-            "Perfect for metal and shred",
-            "Used by: Vai, Satriani, Petrucci"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recommended Electric Guitars",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "table",
-      "cards": [
-        {
-          "title": "Beginner ($150-500)",
-          "badge": { "text": "$150-500", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Squier", "Classic Vibe Stratocaster", "$400", "Quality Fender design, versatile pickups"],
-            ["Epiphone", "Les Paul Studio", "$300", "Humbuckers, classic LP tone"],
-            ["Yamaha", "Pacifica 112V", "$350", "HSS configuration, excellent value"]
-          ]
-        },
-        {
-          "title": "Intermediate ($500-1500)",
-          "badge": { "text": "$500-1500", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Fender", "Player Stratocaster", "$800", "Modern Strat with Player series upgrades"],
-            ["Gibson", "Les Paul Studio", "$1300", "USA-made, classic Gibson tone"],
-            ["PRS", "SE Custom 24", "$900", "Versatile, high-quality Korean construction"]
-          ]
-        },
-        {
-          "title": "Professional ($1500+)",
-          "badge": { "text": "$1500+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Fender", "American Professional II Strat", "$1800", "Top-tier Fender with V-Mod pickups"],
-            ["Gibson", "Les Paul Standard", "$2800", "Premium USA Gibson with BurstBucker pickups"],
-            ["PRS", "Core Custom 24", "$4000", "USA-made PRS with incredible fit and finish"]
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Essential: You Need an Amplifier",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Why Amps Matter",
-          "description": "An electric guitar without an amplifier is like a car without an engine — it has all the components to make music, but nothing to actually do the work. The amp shapes your tone just as much as the guitar itself, and the fundamental split between tube and solid-state designs comes down to how each generates distortion: tube amps clip the signal in a way that responds dynamically to how hard you play, while solid-state circuits clip more abruptly but stay consistent night after night with none of a tube's maintenance needs.",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
+          "badge": { "text": "Modern Boutique Perfection", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Paul Reed Smith's flagship model that bridged the gap between Fender and Gibson. Featuring a 25-inch scale length (the golden compromise), carved figured maple top, 24 frets, patented Gen III tremolo, and 85/15 humbuckers with 5-way blade switching.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Tube Amps", "value": "Warm, natural distortion; touch-sensitive dynamics; classic rock and blues tones; more expensive, need maintenance" },
-            { "label": "Solid State Amps", "value": "Reliable and consistent; clean headroom; lower cost and maintenance; great for beginners" }
+            { "label": "The 25-inch Scale", "value": "The ideal middle ground: slinky bending like a Gibson with articulate treble clarity like a Fender" },
+            { "label": "Pickups & Switching", "value": "PRS 85/15 humbuckers with 5-way blade switch delivering full humbucker roar and single-coil chime" },
+            { "label": "Patented Hardware", "value": "PRS Gen III tremolo and Phase III locking tuners for rock-solid pitch stability" },
+            { "label": "Famous Users", "value": "Carlos Santana, Mark Tremonti (Alter Bridge), John Mayer (pre-Silver Sky), Orianthi" }
+          ],
+          "items": [
+            "Flawless ergonomic balance, deep double-cutaways allowing effortless access to all 24 frets",
+            "Locking tuners and precision-machined brass bridge saddles keep guitar in pitch even during aggressive tremolo use",
+            "Masterpiece of American guitar manufacturing combining luxury aesthetics with studio-grade reliability"
           ]
         }
       ]
     },
     {
-      "title": "Recommended Amplifiers",
+      "title": "Electric Guitar Architecture & Specification Matrix",
+      "subtitle": "Head-to-head comparison across primary electric guitar categories",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "table",
-      "cards": [
-        {
-          "title": "Practice Amps (5-15W)",
-          "tableHeaders": ["Brand", "Model", "Price", "Features"],
-          "tableRows": [
-            ["Fender", "Champion 20", "$100", "Multiple amp models, effects"],
-            ["Boss", "Katana Mini", "$100", "Portable, battery power, great tone"],
-            ["Vox", "Pathfinder 10", "$80", "Classic Vox tone, simple controls"]
-          ]
-        },
-        {
-          "title": "Small Gigs (15-30W)",
-          "tableHeaders": ["Brand", "Model", "Price", "Features"],
-          "tableRows": [
-            ["Fender", "Blues Junior IV", "$400", "Tube amp, spring reverb, classic tone"],
-            ["Vox", "AC15C1", "$600", "British tone, Celestion speaker"],
-            ["Marshall", "DSL20CR", "$500", "Classic Marshall crunch, two channels"]
-          ]
-        }
+      "tableHeaders": ["Guitar Model Archetype", "Scale Length", "Body Architecture", "Pickups", "Bridge System", "Primary Musical Genres"],
+      "tableRows": [
+        ["Stratocaster (e.g. Fender Pro II)", "25.5 inches (648mm)", "Solid Alder / Ash (Contoured)", "3x Single-Coils (S-S-S)", "2-Point Synchronized Tremolo", "Blues, Funk, Rock, Pop, R&B, Country"],
+        ["Les Paul (e.g. Gibson Standard)", "24.75 inches (628mm)", "Solid Mahogany + Maple Cap", "2x Humbuckers (H-H)", "Tune-o-Matic + Stopbar", "Hard Rock, Heavy Metal, Classic Rock, Blues"],
+        ["Telecaster (e.g. Classic Vibe 50s)", "25.5 inches (648mm)", "Solid Pine / Alder / Ash (Slab)", "2x Single-Coils (S-S)", "3-Saddle String-Through Brass", "Country, Indie Rock, Punk, Funk, Americana"],
+        ["Semi-Hollow (e.g. Gibson ES-335)", "24.75 inches (628mm)", "Laminated Maple + Solid Center-Block", "2x Humbuckers (H-H)", "Tune-o-Matic + Stopbar", "Blues, Jazz, Alternative, Indie Rock, Fusion"],
+        ["Modern Superstrat (e.g. Ibanez RG)", "25.5 inches (648mm)", "Solid Basswood / Mahogany (Shred)", "H-S-H / H-H High-Gain", "Double-Locking Floyd Rose Tremolo", "Prog Metal, Shred, Djent, Hard Rock, Fusion"]
       ]
     },
     {
-      "title": "Effects & Tone Shaping",
+      "title": "Essential Guitar Setup & Intonation Guide",
+      "subtitle": "How truss rod relief, action height, and saddle intonation optimize playability",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Essential Effects",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "Each of these effects solves a different problem in the signal chain rather than just adding a generic flavor: overdrive and distortion add gain and sustain the guitar can't produce on its own, reverb and delay recreate the sense of space a dry, direct signal is missing, and chorus thickens a single note into something that sounds like multiple instruments. A tuner belongs in this list for a more basic reason — none of the other effects matter if the guitar isn't in tune to begin with.",
-          "items": [
-            "Overdrive/Distortion: Adds gain and sustain",
-            "Reverb: Spatial ambience and depth",
-            "Delay: Echo effects for atmosphere",
-            "Chorus: Lush, shimmering modulation",
-            "Tuner: Essential for staying in tune"
-          ]
-        },
-        {
-          "title": "Effect Chain Order",
+          "title": "Truss Rod Relief & Action Adjustment",
+          "description": "An electric guitar neck is under approximately 100 to 150 lbs of continuous string tension. The internal steel truss rod counters this tension to maintain a slight, deliberate forward curve (neck relief). Without proper relief, strings will buzz against the frets (too flat) or sit too high off the fretboard, causing hand fatigue (too much bow).",
           "bgColor": "bg-blue-50",
           "borderColor": "",
-          "description": "Guitar -> Tuner -> Overdrive -> Modulation -> Delay -> Reverb -> Amp. This ordering isn't arbitrary: gain-based effects like overdrive are placed early so they distort the raw guitar signal rather than an already-modulated or delayed one, while time-based effects like delay and reverb go last so they repeat and decay the fully-shaped tone rather than a dry, unprocessed one. It's a typical signal chain, though experimentation is encouraged, since some classic tones deliberately break this order."
-        }
-      ]
-    },
-    {
-      "title": "Electric Guitar Techniques",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Power Chords",
-          "description": "Two or three-note chords, built from just a root and fifth with the major or minor third omitted, that form the backbone of rock music. Leaving out the third means the chord stays harmonically ambiguous and sounds equally solid whether the underlying key is major or minor, which is exactly what makes power chords survive heavy distortion without turning muddy the way a full chord would.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
           "fields": [
-            { "label": "Essential for", "value": "Rock, punk, metal" }
-          ]
-        },
-        {
-          "title": "Bending",
-          "description": "Pushing strings to change pitch for expressive, vocal-like effects works because a bend's pitch rises continuously rather than jumping between fixed frets, closely mimicking the way a human voice slides into a note. That vocal quality is exactly why bending is central to blues and rock lead playing, where phrasing often intentionally imitates singing.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Essential for", "value": "Blues, rock, lead guitar" }
-          ]
-        },
-        {
-          "title": "Vibrato",
-          "description": "Rapid, small pitch variations added to a sustained note keep it feeling alive rather than static, which matters because a guitar's sustain naturally decays and a note with no vibrato at all can sound comparatively flat and lifeless by comparison, especially during a held lead note.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Essential for", "value": "All styles, especially leads" }
-          ]
-        },
-        {
-          "title": "Palm Muting",
-          "description": "Resting the picking-hand edge lightly on the strings near the bridge dampens their sustain, turning an open, ringing chord into a tight, percussive chug. That controlled damping is what gives rhythm parts in metal and punk their driving, staccato feel instead of a wash of sustained distortion.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Essential for", "value": "Metal, punk, rhythm guitar" }
-          ]
-        },
-        {
-          "title": "Legato",
-          "description": "Smooth, connected notes using hammer-ons and pull-offs let a player sound multiple notes with only a single pick attack, producing a fluid, slurred phrasing that fast alternate picking can't replicate. That smoothness is why legato is favored in jazz and fusion playing that prizes a singing, connected line over percussive articulation.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Essential for", "value": "Jazz, fusion, shred" }
-          ]
-        },
-        {
-          "title": "Tremolo/Whammy",
-          "description": "Using the tremolo arm to create pitch bends and dives physically loosens or tightens all six strings at once via the floating bridge, producing pitch effects — from subtle wobble to a full dive-bomb — that fretting-hand bends alone can't reach across every string simultaneously.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Essential for", "value": "Rock, metal, surf music" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Maintenance & Setup",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Regular Care",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "description": "Sweat and oil left on strings and hardware after playing accelerate corrosion on frets and pickup poles, which is why a quick wipe-down after each session does more for long-term tone and feel than an occasional deep clean. Quality cables matter for the same reason cheap ones cause problems: poor shielding and worn connectors introduce signal loss and noise that no amount of amp tweaking can fix afterward.",
+            { "label": "Checking Relief", "value": "Capo 1st fret, hold down low E at the body joint (17th fret); measure gap at 8th fret with feeler gauge" },
+            { "label": "Optimal Relief Gap", "value": "0.008\" to 0.012\" (approx. the thickness of a standard business card or high E string)" },
+            { "label": "Truss Rod Rule", "value": "Clockwise tightening straightens neck (lowers action); Counter-clockwise loosens neck (adds bow/relief)" },
+            { "label": "Action Height", "value": "Measure at 12th fret: Bass E ~4/64\" (1.6mm); Treble E ~3/64\" (1.2mm)" }
+          ],
           "items": [
-            "Wipe down after each use",
-            "Keep electronics clean and dry",
-            "Check tuning stability regularly",
-            "Store properly to avoid temperature extremes",
-            "Use quality cables to avoid signal loss"
+            "Never turn a truss rod more than 1/4 turn in a single session; allow wood 20 minutes to settle",
+            "Always adjust truss rod relief BEFORE adjusting individual bridge saddle action height",
+            "Proper neck setup eliminates fret buzz while allowing lightning-fast low-effort fretwork"
           ]
         },
         {
-          "title": "Professional Setup",
+          "title": "Setting Saddle Intonation for Perfect Pitch",
+          "description": "Intonation ensures that your guitar plays in tune across the entire length of the fretboard. When you press a string down against a fret, you stretch it slightly, which raises its pitch. Bridge saddles must be moved forward or backward to compensate for this string stretch so that fretted notes match harmonic octave pitch perfectly.",
           "bgColor": "bg-green-50",
           "borderColor": "",
-          "description": "A professional setup addresses several interconnected adjustments at once, because changing one — action height, for instance — shifts intonation and can expose fret buzz that wasn't there before. Pickup height and fret condition matter just as much as the more obvious action and intonation adjustments, since pickups set too close to the strings can cause the guitar to sound choked or out of tune on bent notes even when everything else is set correctly.",
+          "fields": [
+            { "label": "Step 1: Tune Open String", "value": "Tune the open string precisely with a high-accuracy chromatic or strobe tuner" },
+            { "label": "Step 2: Check 12th Fret Harmonic", "value": "Play the natural harmonic at the 12th fret; tuner should read dead center pitch" },
+            { "label": "Step 3: Check 12th Fret Fretted", "value": "Press string down and play the 12th fret note with normal fretting pressure" },
+            { "label": "Adjustment Rule", "value": "If fretted note is SHARP → move saddle BACKWARD (away from neck). If FLAT → move saddle FORWARD" }
+          ],
           "items": [
-            "Action adjustment for comfort",
-            "Intonation for accurate tuning",
-            "Pickup height optimization",
-            "Fret leveling if needed",
-            "Electronics cleaning and tightening"
+            "Golden Rule: 'Flat Forward, Sharp Back' (remember the double F in Flat/Forward)",
+            "Always perform intonation with brand new guitar strings in your normal playing position (not flat on a table)",
+            "Accurate intonation ensures complex open and barred chords ring sweet and in-tune all the way up the neck"
           ]
         }
       ]
@@ -384,15 +309,31 @@
   ],
   "relatedTopics": [
     {
-      "title": "Bass Guitars",
-      "href": "/lessons/gear/guitars/bass",
-      "description": "The foundation of the rhythm section",
+      "title": "Acoustic Guitars Guide",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Soundboard resonance physics, body shapes (Dreadnought vs Concert), and tonewood selection",
+      "icon": "🎸",
       "bgColor": "bg-white"
     },
     {
-      "title": "Acoustic Guitars",
-      "href": "/lessons/gear/guitars/acoustic",
-      "description": "Natural, unplugged sound",
+      "title": "Tube Amplifiers Guide",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Thermionic valve physics, preamp gain staging, and pairing electric guitars with tube heads",
+      "icon": "🔥",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Overdrive Pedals Guide",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Soft-clipping circuits, mid-hump boosting, and sculpting electric guitar harmonic overdrive",
+      "icon": "⚡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Cables Guide",
+      "href": "/lessons/gear/accessories/cables",
+      "description": "Cable capacitance, high-frequency signal loss, and shielding against stage interference",
+      "icon": "🔌",
       "bgColor": "bg-white"
     }
   ]

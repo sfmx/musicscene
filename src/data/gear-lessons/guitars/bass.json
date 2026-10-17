@@ -1,382 +1,266 @@
 {
   "slug": "guitars-bass",
   "category": "guitars",
-  "pageTitle": "Bass Guitars: The Heartbeat of Music",
-  "subtitle": "Master the foundation of every great band",
-  "heroGradient": "bg-gradient-to-r from-green-50 to-blue-50",
+  "pageTitle": "Bass Guitars: Low-Frequency Physics, Tonality & Rhythm Section Mastery",
+  "subtitle": "Master scale length tension, split-coil vs Jazz pickups, active preamps, slap mechanics, and bass amplification",
+  "heroGradient": "bg-gradient-to-r from-emerald-50 to-teal-50",
   "backLink": {
     "href": "/lessons/gear/guitars",
     "label": "Back to Guitars"
   },
   "introduction": {
-    "title": "Bass Guitars: The Heartbeat of Music",
-    "text": "The bass guitar sits at the intersection of harmony and rhythm: it plays the root notes that anchor a chord progression while also locking in with the drummer to define a song's groove. Most listeners don't consciously notice the bass line the way they notice a guitar riff or a vocal melody, but take it away and a full band mix suddenly feels thin and directionless — the low end is what makes the rest of the arrangement sit together. That combination of being essential and often unnoticed is exactly why session bassists are in constant demand even though they rarely get the spotlight.",
-    "quote": "Why Bass Matters:",
+    "title": "Bass Guitars: The Kinetic Engine of the Mix",
+    "text": "The bass guitar occupies the most physically demanding frequency zone in modern music. Operating from the 41.2 Hz low E1 fundamental (and down to 30.87 Hz on a 5-string low B0), the bass doesn't just provide pitch—it displaces massive volumes of air, delivering visceral physical energy that binds the harmonic structure to the drum kit. A song's harmonic identity is fundamentally determined by the bass note vibrating underneath: play a C major triad on guitar over a C bass note and you hear stable resolution; play that exact same triad over an A bass note and it instantly transforms into an Am7. The bassist commands the harmonic floor and the temporal pulse of the entire ensemble.",
+    "quote": "The bass is the musical bridge where harmonic progression and percussive momentum become one.",
     "columns": [
       {
-        "title": "Why Bass Matters",
-        "text": "A bass line does two jobs simultaneously: it spells out the harmony by outlining root notes and chord tones, and it bridges the rhythm section by locking its timing to the drummer's kick and snare. That dual role is what gives a band its groove and feel, since the same chord progression can sound completely different depending on how the bass phrases around it — which is also why bass is one of the most consistently in-demand skills for working musicians."
+        "title": "Low-Frequency Physics & The Fletcher-Munson Law",
+        "text": "Human hearing sensitivity is non-linear: according to the Fletcher-Munson equal-loudness curves, our ears are far less sensitive to frequencies between 30 Hz and 100 Hz than to mid-range vocal frequencies around 2–4 kHz. To perceive a 41 Hz bass note at the same subjective loudness as a 1 kHz guitar riff, the sound system must supply 4 to 10 times more acoustic energy. This physical reality dictates every aspect of bass guitar engineering: heavy high-gauge steel core strings, extended scale lengths (34\" to 37\"), robust high-mass bridges, and high-headroom Class D or all-tube amplifiers delivering hundreds of watts."
+      },
+      {
+        "title": "The Rhythm Section Pocket & Transients",
+        "text": "In a professional mix, the bassist works in lockstep with the drummer's kick drum. The kick delivers the sub-frequency transient punch (50–80 Hz), while the bass guitar provides the sustaining fundamental body (80–200 Hz) and the harmonic bite (800–2.5 kHz) that cuts through dense walls of distorted guitars or synthesizers. Achieving 'the pocket' is a masterclass in millisecond timing: playing dead center on the beat, pushing ahead of the beat for urgent punk/rock drive, or laying back behind the beat for a deep, lazy funk groove."
       }
     ]
   },
   "sections": [
     {
-      "title": "The Bass Guitar's Role",
+      "title": "Pickup Architectures & Tonality",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Split-Coil Precision Bass (P-Bass)",
+          "bgColor": "bg-red-50",
+          "borderColor": "border-red-200",
+          "description": "Introduced by Leo Fender in 1957, the split-coil humbucking pickup remains the most recorded bass sound in history.",
+          "fields": [
+            { "label": "Circuit Architecture", "value": "Two reverse-wound, reverse-polarity (RWRP) single-coil halves wired in series. Completely cancels 60-cycle hum while preserving passive punch." },
+            { "label": "Placement", "value": "Positioned at the soundboard harmonic node midway between neck and bridge, capturing maximum fundamental excursion." },
+            { "label": "EQ Curve", "value": "Warm, round low-end (100–200 Hz), punchy low-mids (400–800 Hz), rolled-off highs that never clash with vocal or guitar transients." },
+            { "label": "Mix Character", "value": "The ultimate 'sit in the mix' voice. Requires virtually zero EQ in studio desks to anchor Motown, classic rock, punk, and country." },
+            { "label": "Iconic Users", "value": "James Jamerson (Motown), Pino Palladino (D'Angelo/The Who), Carol Kaye, Steve Harris (Iron Maiden)" }
+          ]
+        },
+        {
+          "title": "Dual Single-Coil Jazz Bass (J-Bass)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "Debuted in 1960 with two narrow single-coil pickups, providing distinct tonal blending and surgical articulation.",
+          "fields": [
+            { "label": "Circuit Architecture", "value": "Two independent volume controls (one per pickup) and master tone. Both pickups wide open produce reverse-polarity hum cancellation." },
+            { "label": "Dual-Pickup Scooped Voice", "value": "Running both pickups at 100% introduces slight phase cancellation in the 500 Hz range, producing the definitive scooped, glassy slap-and-pop funk tone." },
+            { "label": "Bridge Pickup Bark", "value": "Soloing the bridge pickup accentuates 800 Hz–1.5 kHz upper-mid harmonic bark with lightning-fast fingerstyle attack, made legendary by Jaco Pastorius." },
+            { "label": "Neck Architecture", "value": "Slim 1.5-inch nut width with narrow string spacing, facilitating rapid melodic runs and chordal counterpoint." },
+            { "label": "Iconic Users", "value": "Jaco Pastorius, Marcus Miller, Geddy Lee (Rush), Flea (early RHCP)" }
+          ]
+        },
+        {
+          "title": "Active Humbucker (Music Man StingRay)",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "Designed by Leo Fender and Tom Walker in 1976, introducing the modern era of active onboard electronics.",
+          "fields": [
+            { "label": "Circuit Architecture", "value": "Massive twin-coil humbucker with eight oversized 3/8\" Alnico or ceramic pole pieces, wired in parallel to an onboard 9V or 18V preamp." },
+            { "label": "Active EQ Flexibility", "value": "Active 3-band EQ with cut/boost capabilities, allowing bassists to dramatically shape low-end slam (40 Hz) and sparkling treble snap (10 kHz) on the fly." },
+            { "label": "Sonic Profile", "value": "Hyper-punchy, aggressive mid-range growl with explosive slap attack and razor-sharp transient clarity that slices through high-gain guitars." },
+            { "label": "Iconic Users", "value": "Flea (Blood Sugar Sex Magik), Louis Johnson (Brothers Johnson), Tim Commerford (Rage Against the Machine)" }
+          ]
+        },
+        {
+          "title": "Modern Dual Soapbars & Extended Range",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "Engineered for 5-string, 6-string, and multiscale basses where wide frequency bandwidth and string-to-string balance are paramount.",
+          "fields": [
+            { "label": "Circuit Architecture", "value": "Dual fully-shielded soapbar enclosures (Aguilar, Bartolini, Nordstrand, EMG) housing split-coils, dual-coils, or stacked humbuckers." },
+            { "label": "Extended Low B Performance", "value": "Even magnetic field across all strings prevents signal drop-out when fretting the thick .130–.135 low B string." },
+            { "label": "Preamp Versatility", "value": "Parametric mid-frequency sweeps (250 Hz to 1 kHz selectable), active/passive bypass switches, and series/parallel coil toggles." },
+            { "label": "Iconic Users", "value": "Victor Wooten (Fodera), John Patitucci (Yamaha), Henrik Linder (Dirty Loops)" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scale Length Mechanics & The Low B Physics",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Scale Length Comparison",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "String tension is governed by Mersenne's law: $T = 4 \\cdot m \\cdot f^2 \\cdot L^2$. Scale length directly dictates low-end tightness and harmonic bloom.",
+          "fields": [
+            { "label": "Short Scale (30 Inches)", "value": "Lower tension creates a warm, pillowy low-end with rapid decay and supple fretting feel. Less harmonic overtone separation, accentuating vintage thump. (Fender Mustang, Hofner 500/1 Beatle Bass)." },
+            { "label": "Standard Long Scale (34 Inches)", "value": "The universal standard established by Leo Fender in 1951. Striking the ideal compromise between comfortable fret hand reach and tight, punchy low-frequency fundamental clarity." },
+            { "label": "Extra Long Scale (35 Inches)", "value": "Common on professional 5-string basses (Lakland, Spector, Ibanez BTB). The extra inch provides the additional tension required to keep the low B string (30.87 Hz) tight, clear, and rattle-free." },
+            { "label": "Multiscale / Fanned Fret (34\" to 37\")", "value": "Dingwall innovation giving each string its optimal scale length: 37 inches on the low B for thunderous piano-like pitch definition, tapering down to 34 inches on the G string for effortless bends." }
+          ]
+        },
+        {
+          "title": "String Metallurgy: Roundwound vs Flatwound vs Tapewound",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "String wrap construction fundamentally changes the harmonic overtone content and physical tactile drag under the fingers.",
+          "fields": [
+            { "label": "Roundwound (Nickel / Stainless Steel)", "value": "Round wire wrapped over a hex core. Bright, aggressive harmonic bite (1 kHz–5 kHz) with long sustain. The standard for rock, metal, slap funk, and modern fusion, though it causes fret wear over time." },
+            { "label": "Flatwound (Ribbon Wound)", "value": "Smooth, flat stainless steel ribbon wound seamlessly over the core. Suppresses high harmonics above 2 kHz, delivering a deep, fundamental-heavy thump with minimal finger squeak. Lasts for years without losing tone (Jamerson never changed strings)." },
+            { "label": "Half-Round / Groundwound", "value": "Roundwound strings ground down smooth on the outer surface. Bridges the gap with punchy low-mids and reduced finger drag." },
+            { "label": "Tapewound (Black Nylon)", "value": "Black nylon ribbon wound over round steel core. Warm, dark, pillowy timbre resembling an acoustic upright double bass with ultra-smooth tactile feel." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Bass Guitars: From Workhorses to Icons",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Harmonic Foundation",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "description": "Every chord a guitarist or keyboardist plays gets its harmonic identity confirmed by whatever note the bass is playing underneath it, which is why a bass line built on root notes and chord tones does more to define the progression than the chords themselves. Walking bass lines take this further, connecting one chord to the next with passing notes so the harmony feels like it's moving somewhere rather than just switching abruptly.",
-          "items": [
-            "Root Notes: Establish chord progressions",
-            "Walking Lines: Connect chord changes smoothly",
-            "Counterpoint: Create independent melodic lines",
-            "Chord Tones: Reinforce harmonic movement"
+          "title": "Squier Classic Vibe '60s Precision Bass",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Unbeatable entry-to-intermediate vintage workhorse delivering authentic 1960s Motown and classic rock punch.",
+          "fields": [
+            { "label": "Body & Neck", "value": "Nyatoh body, vintage-tint gloss maple neck, Indian laurel fingerboard" },
+            { "label": "Pickups", "value": "Fender-Designed Alnico split single-coil pickup" },
+            { "label": "Bridge & Nut", "value": "Vintage-style 4-saddle threaded steel bridge, bone nut" },
+            { "label": "Tone Profile", "value": "Warm, resonant fundamental with punchy vintage growl" }
           ]
         },
         {
-          "title": "Rhythmic Anchor",
-          "bgColor": "bg-blue-50",
-          "borderColor": "",
-          "description": "A bassist's timing has to lock precisely with the drummer's kick drum, because any drift between the two instruments makes the entire rhythm section feel unstable no matter how tight everyone else is playing. That's why 'the pocket' — the exact rhythmic relationship between bass and drums — is treated as the single most important skill in the instrument, more important than speed or note choice.",
-          "items": [
-            "Pocket Playing: Lock in with the drummer",
-            "Groove Creation: Define the feel of songs",
-            "Syncopation: Add rhythmic interest",
-            "Timing: Keep the band together"
+          "title": "Fender Player II Precision Bass",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The quintessential modern professional standard, built for demanding tour stages and studio tracking sessions.",
+          "fields": [
+            { "label": "Body & Neck", "value": "Alder body, Modern 'C' satin maple neck with rolled fingerboard edges" },
+            { "label": "Pickups", "value": "Player Series Alnico V Split-Coil Precision Bass pickup" },
+            { "label": "Hardware", "value": "Standard 4-saddle bridge with barrel saddles, open-gear tuners" },
+            { "label": "Tone Profile", "value": "Authoritative low-end punch, crystal-clear fundamental, sits instantly in any mix" }
           ]
         },
         {
-          "title": "Melodic Voice",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "Beyond holding down the low end, bass lines are often what a listener actually hums back after hearing a song, because a memorable bass hook occupies sonic space no other instrument is using and therefore stands out even at lower volume. In some genres — funk and fusion especially — the bass steps forward entirely, taking solos and carrying melodies the way a guitar or horn normally would.",
-          "items": [
-            "Bass Solos: Featured melodic passages",
-            "Fills: Connect sections and add interest",
-            "Hooks: Memorable bass lines that define songs",
-            "Lead Bass: Melody instrument in some contexts"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bass Guitar Types & Construction",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Bass Types",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "A 4-string in standard EADG tuning remains the default because it covers the range most music actually needs without adding extra strings to manage. Extended-range basses solve a specific problem rather than being simply 'more bass': a 5-string's low B opens up drop-tuned and modern styles without sacrificing the top end, a 6-string adds a high C for players who need guitar-like reach, and fretless basses trade fixed intonation for the smooth, voice-like glides prized in jazz and world music.",
-          "items": [
-            "4-String: Standard EADG tuning. Most common and versatile.",
-            "5-String: Adds low B string. Extended range for modern music.",
-            "6-String: Adds high C string. Guitar-like range for complex music.",
-            "Fretless: Smooth, vocal-like sound. Used in jazz and world music."
+          "title": "Fender Player II Jazz Bass",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Fast-playing, articulate dual-pickup powerhouse offering pristine clarity, punchy bridge bite, and iconic slap tone.",
+          "fields": [
+            { "label": "Body & Neck", "value": "Alder body, slim 1.5\" nut width satin maple neck" },
+            { "label": "Pickups", "value": "Dual Player Series Alnico V Single-Coil Jazz Bass pickups" },
+            { "label": "Controls", "value": "Volume 1 (Neck), Volume 2 (Bridge), Master Tone" },
+            { "label": "Tone Profile", "value": "Scooped funk slap with both pickups on; punchy Jaco mid-range growl on bridge pickup" }
           ]
         },
         {
-          "title": "Scale Length",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Scale length changes both feel and tone because it determines string tension: a short scale's slacker strings are easier to bend and fret but produce a warmer, less defined low end, while the 34-inch long scale has become standard precisely because it balances comfortable tension with a tight, clearly articulated bottom end. Extra-long scales exist mainly for extended-range basses, where the additional length keeps a low B or lower string from feeling floppy.",
-          "items": [
-            "Short Scale (30\"): Easier to play, warmer tone. Great for smaller hands.",
-            "Medium Scale (32\"): Balanced feel and tone. Good compromise.",
-            "Long Scale (34\"): Standard scale. Tight low end, clear articulation.",
-            "Extra Long (35\"+): Extended range basses. Very tight low strings."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Bass Models",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Fender Precision Bass",
-          "description": "The original electric bass guitar, introduced in 1951, effectively invented the instrument category — before it, low end in popular music meant an upright double bass. Its single split-coil pickup produces a thick, punchy fundamental with relatively few overtones, which is exactly why it sits so cleanly under a mix without fighting other instruments for space.",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "items": [
-            "Single split-coil pickup",
-            "Thick, punchy tone",
-            "Used by: James Jamerson, Donald \"Duck\" Dunn"
+          "title": "Sterling by Music Man StingRay RAY4",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The ultimate high-energy active rock and funk bass, bringing the iconic Music Man growl at an accessible price point.",
+          "fields": [
+            { "label": "Body & Neck", "value": "Basswood body, hard maple neck and fingerboard" },
+            { "label": "Pickups", "value": "Sterling by Music Man designed ceramic humbucker" },
+            { "label": "Electronics", "value": "Active 9V 2-band EQ (Bass & Treble cut/boost)" },
+            { "label": "Tone Profile", "value": "Explosive, hyper-percussive transient attack with cutting mid-range bite" }
           ]
         },
         {
-          "title": "Fender Jazz Bass",
-          "description": "More versatile with two single-coil pickups and a thinner neck, the Jazz Bass trades some of the Precision's punch for brighter, more articulate tone and finer control over the sound via its two-pickup blend. That extra clarity and flexibility is why it became the preferred instrument for genres like funk and fusion, where fast, detailed lines need to cut through rather than just sit underneath.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Dual single-coil pickups",
-            "Bright, articulate tone",
-            "Used by: Jaco Pastorius, Marcus Miller"
-          ]
-        },
-        {
-          "title": "Music Man StingRay",
-          "description": "Active electronics and distinctive tone set the StingRay apart from passive designs: an onboard preamp boosts and shapes the signal before it ever reaches an amp, giving the humbucker a punchier, more aggressive attack than a passive pickup can produce on its own. That aggressive front end is exactly what made it the go-to bass for slap playing, where the attack of the pluck needs to cut through as much as the note itself.",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Active humbucker pickup",
-            "Aggressive, modern tone",
-            "Used by: Flea, Louis Johnson"
+          "title": "Ibanez SR300E",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Ultra-fast modern ergonomic bass with ultra-slim neck, lightweight body, and versatile 3-band PowerSpan electronics.",
+          "fields": [
+            { "label": "Body & Neck", "value": "Nyatoh body, 5-piece Jatoba/Walnut ultra-slim neck" },
+            { "label": "Pickups", "value": "PowerSpan Dual Coil exposed pole pickups" },
+            { "label": "Electronics", "value": "Ibanez Custom 3-band EQ with 3-way Power Tap switch (Humbucking, Single, Tap)" },
+            { "label": "Tone Profile", "value": "Modern high-fidelity versatility, deep sub-bass to bright tapping clarity" }
           ]
         },
         {
           "title": "Rickenbacker 4003",
-          "description": "Distinctive look and jangly tone come from a combination of dual single-coil pickups and a bright-voiced maple neck-through-body construction, which gives the 4003 a trebly, cutting character unlike the warmer tone of most other basses. That top-end presence is why it's remained a favorite in rock and progressive music, where the bass often needs to be heard as a distinct voice rather than just felt as low end.",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "items": [
-            "Dual single-coil pickups",
-            "Bright, trebly character",
-            "Used by: Chris Squire, Geddy Lee"
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Legendary neck-through-body icon delivering the unmistakable treble-rich clank and sustain of prog and classic rock.",
+          "fields": [
+            { "label": "Body & Construction", "value": "Solid Maple neck-through-body design with maple wings and bound rosewood board" },
+            { "label": "Pickups & Circuit", "value": "Dual high-output single-coil pickups with Vintage Tone push-pull capacitor selector" },
+            { "label": "Output Options", "value": "Standard mono output plus Rick-O-Sound stereo output (separating neck & bridge)" },
+            { "label": "Tone Profile", "value": "Aggressive, grinding top-end bite, punchy low-mids, infinite singing sustain" }
           ]
         }
       ]
     },
     {
-      "title": "Bass Playing Techniques",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Fingerstyle",
-          "description": "Using the fingers to pluck the string produces a warm, round tone because flesh contacts the string more gently and over a wider area than a rigid pick does, softening the attack transient. That softer attack is what makes fingerstyle the default technique for genres like jazz and R&B, where the bass needs to sit underneath the mix rather than cut sharply through it.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Best Genres", "value": "Jazz, Funk, R&B, Rock" },
-            { "label": "Key Techniques", "value": "Walking bass lines, groove playing, melodic bass lines" }
-          ]
-        },
-        {
-          "title": "Pick Playing",
-          "description": "A plectrum strikes the string with a harder, more consistent edge than a finger can, producing a brighter, more percussive attack that cuts through distorted guitars and loud drums far more easily than fingerstyle does. That extra bite is why pick playing dominates in rock, punk, and metal, where the bass has to compete with guitar amps for sonic space.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Best Genres", "value": "Rock, Punk, Metal, Country" },
-            { "label": "Key Techniques", "value": "Driving eighth notes, aggressive attack, fast passages" }
-          ]
-        },
-        {
-          "title": "Slap & Pop",
-          "description": "Slapping the string with the thumb and popping it with a finger produces a percussive transient closer to a drum hit than a plucked note, which is what lets a bass line function as rhythm and melody at the same time. That dual role is exactly why the technique became inseparable from funk, where the bass often carries as much of the groove as the drum kit itself.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Best Genres", "value": "Funk, Fusion, Hip-Hop, Modern R&B" },
-            { "label": "Key Techniques", "value": "Rhythmic grooves, percussive sounds, complex patterns" }
-          ]
-        },
-        {
-          "title": "Tapping",
-          "description": "Tapping uses both hands directly on the fretboard to hammer notes on rather than plucking them, which makes it possible to play intervals and fast runs a single plucking hand physically can't keep up with. That extended technical reach is why tapping shows up mostly in progressive and fusion playing, where the goal is often to treat the bass like a solo instrument rather than a rhythm section part.",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Best Genres", "value": "Progressive, Jazz Fusion, Metal" },
-            { "label": "Key Techniques", "value": "Fast scales, chord progressions, solo bass pieces" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recommended Bass Guitars",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "table",
-      "cards": [
-        {
-          "title": "Beginner ($200-600)",
-          "badge": { "text": "$200-600", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Yamaha", "TRBX174", "$200", "4-string, lightweight, great starter bass"],
-            ["Squier", "Classic Vibe P-Bass", "$400", "Precision Bass design, vintage vibe"],
-            ["Ibanez", "GSR200", "$250", "Thin neck, modern styling, versatile tone"]
-          ]
-        },
-        {
-          "title": "Intermediate ($600-1500)",
-          "badge": { "text": "$600-1500", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Fender", "Player Precision Bass", "$800", "Classic P-Bass tone, modern playability"],
-            ["Music Man", "SUB StingRay", "$900", "Active electronics, punchy tone"],
-            ["Warwick", "RockBass Corvette", "$700", "German design, distinctive tone"]
-          ]
-        },
-        {
-          "title": "Professional ($1500+)",
-          "badge": { "text": "$1500+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "tableHeaders": ["Brand", "Model", "Price", "Key Features"],
-          "tableRows": [
-            ["Fender", "American Professional II P-Bass", "$1800", "Premium USA Precision Bass"],
-            ["Music Man", "StingRay", "$2400", "Industry standard active bass"],
-            ["Fodera", "Monarch Standard", "$4000+", "Hand-built NYC bass, ultimate quality"]
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bass Amplification",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Why Bass Amps Are Different",
-          "description": "Bass frequencies require more power and larger speakers than guitar amps, because moving air at low frequencies takes significantly more cone displacement and wattage than reproducing the higher frequencies a guitar amp handles. A proper bass amp is essential for good tone and adequate volume — running a bass through a guitar amp typically leaves it sounding thin and causes the speaker to strain or fail under the low-frequency load it wasn't designed for.",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Combo Amps", "value": "All-in-one solution; good for practice and small gigs; 100-500 watts typical; 12\" or 15\" speakers common" },
-            { "label": "Head & Cabinet", "value": "Separate amp head and speaker cab; more power and flexibility; 500-1000+ watts available; multiple speaker configurations" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bass Amp Recommendations",
+      "title": "Right-Hand Biomechanics: Fingerstyle, Slap & Pick",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Practice (15-50W)",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "items": [
-            "Fender Rumble 25",
-            "Ampeg BA-108",
-            "Orange Crush Bass 25"
-          ]
-        },
-        {
-          "title": "Small Gigs (100-300W)",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "items": [
-            "Fender Rumble 200",
-            "Ampeg BA-210",
-            "Markbass CMD 121H"
-          ]
-        },
-        {
-          "title": "Large Venues (500W+)",
-          "bgColor": "bg-white",
-          "borderColor": "border",
-          "items": [
-            "Ampeg SVT-4 Pro",
-            "Gallien-Krueger 1001RB",
-            "Mesa Boogie Strategy Eight:88"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Bass Players",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-4",
-      "cards": [
-        {
-          "title": "Rock Legends",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "These bassists shaped what rock bass could be beyond simply following the guitar's root notes, whether through melodic countermelodies, harmonic complexity, or sheer aggressive drive.",
-          "items": [
-            "John Entwistle (The Who)",
-            "John Paul Jones (Led Zeppelin)",
-            "Paul McCartney (Beatles)",
-            "Geddy Lee (Rush)"
-          ]
-        },
-        {
-          "title": "Funk Masters",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "Funk turned the bass into a rhythm instrument as percussive as the drum kit, and these players are largely responsible for developing and popularizing the slap and pop vocabulary that defines the genre's low end.",
-          "items": [
-            "James Brown (Various)",
-            "Bootsy Collins",
-            "Larry Graham",
-            "Marcus Miller"
-          ]
-        },
-        {
-          "title": "Jazz Virtuosos",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "In jazz the bass frequently steps forward as a solo and melodic voice rather than staying purely in a supporting role, and these players are among the ones most responsible for expanding what the instrument was expected to do.",
-          "items": [
-            "Jaco Pastorius",
-            "Charles Mingus",
-            "Ron Carter",
-            "Stanley Clarke"
-          ]
-        },
-        {
-          "title": "Modern Innovators",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "description": "These players built on the techniques of earlier generations and pushed the instrument further still, whether through extended range, extreme technical facility, or bringing bass to the front of genres where it had traditionally stayed in the background.",
-          "items": [
-            "Flea (Red Hot Chili Peppers)",
-            "Les Claypool (Primus)",
-            "Victor Wooten",
-            "Esperanza Spalding"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Learning Path for Bass",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Beginner (Months 1-6)",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "fields": [
-            { "label": "Technique Basics", "value": "Proper fretting hand position; fingerstyle plucking technique; basic timing and rhythm; simple root note patterns" },
-            { "label": "Music Theory", "value": "Note names on fretboard; major scale patterns; basic chord construction; reading bass clef notation" }
-          ]
-        },
-        {
-          "title": "Intermediate (Months 6-18)",
+          "title": "Rest-Stroke Alternating Fingerstyle",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "borderColor": "border-blue-200",
+          "description": "The primary expressive technique across jazz, funk, R&B, and rock.",
           "fields": [
-            { "label": "Advanced Techniques", "value": "Walking bass lines; slap and pop fundamentals; playing with a pick; two-handed tapping basics" },
-            { "label": "Musical Development", "value": "Groove and pocket playing; song structure awareness; playing with a drummer; genre-specific styles" }
+            { "label": "Mechanism", "value": "Alternating index (i) and middle (m) fingers plucking across the string, landing firmly against the lower adjacent string (rest stroke)." },
+            { "label": "Floating Thumb Technique", "value": "Rest the thumb on the string directly above the one being played. As you move to higher strings, move the thumb down to mute lower strings, preventing sympathetic drone." },
+            { "label": "Plucking Position Nuance", "value": "Plucking over the neck produces a pillowy, upright-like roundness; plucking near the bridge yields sharp, articulate mid-range definition." }
           ]
         },
         {
-          "title": "Advanced (18+ Months)",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
+          "title": "Slap & Pop Mechanics",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "Pioneered by Larry Graham to replace a missing drummer in Sly & the Family Stone.",
           "fields": [
-            { "label": "Mastery Skills", "value": "Advanced slap techniques; jazz improvisation; solo bass arrangements; extended range techniques" },
-            { "label": "Professional Skills", "value": "Session playing; live performance; music production knowledge; teaching and mentoring" }
+            { "label": "The Slap (Thumb)", "value": "Strike the string with the bony side of the thumb knuckle against the final fret, bouncing off immediately like a drumstick rebound to allow the string to ring." },
+            { "label": "The Pop (Finger)", "value": "Hook the index or middle finger under the D or G string, pulling outward and snapping it against the fretwire for a sharp, percussive crack." },
+            { "label": "Left-Hand Muting (Ghost Notes)", "value": "Lightly rest fretting fingers across strings without pressing to fretwire, creating percussive 16th-note ghost hits ('chucks') that establish infectious funk syncopation." }
+          ]
+        },
+        {
+          "title": "Pick / Plectrum Technique",
+          "bgColor": "bg-red-50",
+          "borderColor": "border-red-200",
+          "description": "The secret weapon for fast tempos, aggressive attack, and cutting rock articulation.",
+          "fields": [
+            { "label": "Plectrum Choice", "value": "Heavy to extra-heavy gauge (0.88 mm to 1.14 mm) celluloid or Tortex picks to transmit maximum string displacement without flexing." },
+            { "label": "Palm Muting ('Chugging')", "value": "Rest the fleshy edge of the right-hand palm lightly against the bridge saddles while picking, creating a dry, thumping, punchy attack favored in rock and country." },
+            { "label": "Mix Advantage", "value": "Produces an aggressive 2.5 kHz attack transient that helps the bass lock identically with hard-hitting double-kick drums and heavy guitar riffs." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bass Amplification, Direct Injection & Live Signal Chains",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Tube Muscle vs Class D Portability",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "Bass reproduction requires tremendous power supplies and high damping factors to control large speaker cones.",
+          "fields": [
+            { "label": "All-Tube Power (Ampeg SVT-CL)", "value": "300 watts of all-tube thermionic muscle powered by six 6550 power tubes. Weighing over 80 lbs, it delivers warm tube compression, rich harmonic saturation, and immense low-end authority that defines arena rock." },
+            { "label": "Modern Class D Micro Heads", "value": "Switch-mode power supplies delivering 500 to 800 watts in a 5 lb enclosure (Mesa Subway D-800, Darkglass Microtubes, Markbass). Combines pristine headroom, lightning-fast transient recovery, and road portability." },
+            { "label": "Speaker Configurations", "value": "8x10 (tight, punchy transient sealed response, iconic rock standard); 4x10 + horn (modern high-fidelity punch and crisp slap top-end); 1x15 (deep, blooming sub-bass fundamental)." }
+          ]
+        },
+        {
+          "title": "The Direct Injection (DI) Revolution",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "In 90% of modern venues and studio sessions, the bass connects directly to the mixing console or audio interface via a balanced XLR DI.",
+          "fields": [
+            { "label": "Why Bass DI Dominates", "value": "Low-frequency acoustic waves can cause phase cancellation and stage rumble in live mics. A balanced DI sends clean, phase-coherent sub-bass directly to front-of-house subwoofers." },
+            { "label": "Analog Preamp Pedals", "value": "Tech 21 SansAmp Bass Driver DI and Darkglass Vintage Ultra provide tube emulation, speaker cabinet simulation, and balanced XLR outs, ensuring your tone remains identical on every stage." },
+            { "label": "Studio Tracking Strategy", "value": "Record two tracks simultaneously: Track 1 clean DI for pristine sub-bass fundamental (low-passed at 120 Hz); Track 2 overdriven amp/pedal for mid-range bite and harmonic grit." }
           ]
         }
       ]
@@ -384,15 +268,21 @@
   ],
   "relatedTopics": [
     {
-      "title": "Electric Guitars",
-      "href": "/lessons/gear/guitars/electric",
-      "description": "Versatile and expressive instruments",
+      "title": "Bass Amps",
+      "href": "/lessons/gear/amps/bass",
+      "description": "Low-frequency power, sealed cabs & Class D engineering",
       "bgColor": "bg-white"
     },
     {
-      "title": "Classical Guitars",
-      "href": "/lessons/gear/guitars/classical",
-      "description": "Traditional nylon-string instruments",
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Pickup mechanics, scale lengths & solidbody tone",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Compressor Pedals",
+      "href": "/lessons/gear/effects/compressor",
+      "description": "Dynamic control, peak limiting & transient punch",
       "bgColor": "bg-white"
     }
   ]
