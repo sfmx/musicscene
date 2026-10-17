@@ -2,57 +2,93 @@
   "slug": "chord-changes",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Chord Changes",
-    "subtitle": "Master smooth and musical transitions between chords with precision and timing.",
+    "pageTitle": "Chord Changes Masterclass",
+    "subtitle": "Master lightning-fast chord transitions, anchor finger pivots, common-tone shortcuts, and effortless barre-chord shifting.",
     "heroGradient": "bg-gradient-to-br from-emerald-50 to-teal-100",
-    "heroTitle": "Chord Change Exercises",
-    "heroDescription": "Developing smooth chord transitions is fundamental to rhythm guitar and song accompaniment. These exercises will help you build muscle memory, improve timing, and create seamless chord progressions that sound musical and professional."
+    "heroTitle": "Chord Changes Masterclass",
+    "heroDescription": "Smooth, instantaneous chord transitions are the hallmark of a confident rhythm guitarist. Hesitant chord changes cause rhythmic pauses, drag down the groove, and make accompanying singers or bands frustrating. The secret to effortless chord shifting does not lie in brute speed, but in biomechanical efficiency: identifying stationary anchor fingers, utilizing pivot fingers, clamping all fingers simultaneously as a single geometric shape, and anticipating transitions on the 'and' of beat 4. This masterclass transforms sluggish chord shifts into fluid, second-nature reflexes."
   },
   "guidelines": {
-    "title": "Chord Change Practice Guidelines",
+    "title": "The Biomechanics of Seamless Transitions",
     "columns": [
       {
-        "title": "Movement Efficiency",
+        "title": "Anchor Fingers & Movement Geometry",
         "items": [
-          { "bulletColor": "text-emerald-500", "text": "Keep fingers close to the fretboard" },
-          { "bulletColor": "text-emerald-500", "text": "Minimize unnecessary finger movement" },
-          { "bulletColor": "text-emerald-500", "text": "Look for common finger positions between chords" },
-          { "bulletColor": "text-emerald-500", "text": "Practice the physical motion without strumming first" }
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The Stationary Anchor Principle: Before switching chords, identify which finger shares the exact same fret and string across both shapes—leave that finger glued down as an anchor."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Pivot Finger Sliding: If a finger remains on the same string but changes frets (e.g., C to D), use it as a guide rail, sliding along the string without lifting away."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Simultaneous Unit Clamping: Never place fingers down one at a time (index, then middle, then ring). Form the chord shape in the air and land all fingers onto the frets simultaneously."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Lead with the Root Note: When changing chords, ensure the finger fretting the lowest bass note lands a millisecond first so your pick can strike beat 1 cleanly even as treble fingers finish settling."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Minimal Air-Time Clearance: Lift fingers only 3 to 5 millimeters off the fretboard during transitions; dramatic lifting wastes time and ruins muscle memory accuracy."
+          }
         ]
       },
       {
-        "title": "Timing & Rhythm",
+        "title": "Rhythm Integration & Timing",
         "items": [
-          { "bulletColor": "text-teal-500", "text": "Use a metronome for consistent timing" },
-          { "bulletColor": "text-teal-500", "text": "Start slowly and gradually increase tempo" },
-          { "bulletColor": "text-teal-500", "text": "Maintain steady strumming patterns" },
-          { "bulletColor": "text-teal-500", "text": "Focus on clean chord changes on the beat" }
+          {
+            "bulletColor": "text-teal-500",
+            "text": "The '4-And' Transition Window: Begin releasing the previous chord on the final upbeat ('4-and') of the measure. A percussive muted strum or open-string ring on '4-and' buys transition time while maintaining the groove."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "The Unbroken Strumming Engine: Your strumming right hand must never stop or hesitate for your fretting hand—the right hand is the clock; the left hand must catch up."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Barre Chord Roll Mechanics: When jumping to a full barre chord (F or Bm), roll the side of your index finger slightly towards the nut rather than pressing flat against the fret."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "The 60-Second Blitz Drill: Set a metronome to 60 BPM and count how many clean transitions you can execute between two target chords in 60 seconds without stopping."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Fretting-Hand Pressure Reset: Release clamping pressure the instant you finish strumming; keeping muscles clenched between chord beats creates chronic wrist fatigue."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Chord Changes",
+      "title": "Foundation: Open Chords & Anchor Fingers",
       "exercises": [
         {
           "number": 1,
-          "title": "Two-Chord Changes (G \u2194 C)",
+          "title": "The G to C Anchor Transition (Pivot Finger 1 & 3)",
           "difficulty": "Beginner",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "Start with the fundamental G to C chord change. This is one of the most common progressions and helps develop basic chord transition skills.",
+          "description": "Master the most common chord change in popular music. In standard folk G (3-2-0-0-3-3), fingers 3 and 4 stay anchored on the top strings, or in classic G (3-2-0-0-0-3), fingers 1 and 2 move as a synchronized unit one string down to form C major.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Focus: Moving fingers 1 and 2 as a linked unit between G and C"
+          },
           "chordDiagrams": [
-            { "label": "G Major", "chord": "G_major" },
-            { "label": "C Major", "chord": "C_major" }
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" }
           ],
           "notation": {
-            "title": "G to C Chord Change Exercise",
-            "alphaTex": "\\ts 4 4\n(3.6 2.5 0.4 0.3 3.2 3.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (3.5 2.4 0.3 1.2 0.1).2",
-            "staveTitle": "G - C Changes: Whole Notes then Half Notes"
+            "title": "G to C Chord Transition Drill (Whole & Quarter Notes)",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'G to C Changes' :4 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) | (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) (3.5 2.4 0.3 1.2 0.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -61,29 +97,34 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Focus on keeping your 3rd finger planted on the 3rd fret of the high E string - it stays there for both chords! This common finger serves as an anchor point and makes the transition smoother.",
-            "tempo": "60 BPM"
+            "text": "Watch your fingers 1 and 2: they should jump between the 6th/5th strings (G) and 5th/4th strings (C) as an inseparable pair. Do not let one finger lag behind the other.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Three-Chord Progression (G - D - C)",
-          "difficulty": "Intermediate",
+          "title": "The Folk Highway: G - Em - C - D (The Ring Anchor)",
+          "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Add the D major chord to create a classic three-chord progression. This progression appears in countless songs and is essential for rhythm guitar.",
+          "description": "The four chords that power thousands of songs. Leave your ring finger (finger 3) anchored on the 2nd string (fret 3) throughout the progression to provide an unshakeable spatial guide.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Anchor: Ring finger stays planted on string 2 fret 3 across G, Em7, Cadd9, and D"
+          },
           "chordDiagrams": [
-            { "label": "G Major", "chord": "G_major" },
-            { "label": "D Major", "chord": "D_major" },
-            { "label": "C Major", "chord": "C_major" }
+            { "label": "G", "chord": "G" },
+            { "label": "Em", "chord": "Em" },
+            { "label": "C", "chord": "C" },
+            { "label": "D", "chord": "D" }
           ],
           "notation": {
-            "title": "G-D-C Chord Progression Exercise",
-            "alphaTex": "\\ts 4 4\n(3.6 2.5 0.4 0.3 3.2 3.1).1 | (2.4 3.3 2.2 2.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2 | (3.5 2.4 0.3 1.2 0.1).2 (3.6 2.5 0.4 0.3 3.2 3.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2 | (3.5 2.4 0.3 1.2 0.1).2 (3.6 2.5 0.4 0.3 3.2 3.1).2",
-            "staveTitle": "G - D - C - G: Whole Notes then Half Notes"
+            "title": "Folk Progression: G - Em - C - D with Anchor Finger",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Folk Highway' :4 (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) | (0.6 2.5 2.4 0.3 0.2 0.1) (0.6 2.5 2.4 0.3 0.2 0.1) (0.6 2.5 2.4 0.3 0.2 0.1) (0.6 2.5 2.4 0.3 0.2 0.1) | (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) | (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -92,30 +133,33 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Practice moving smoothly between all three chords. Notice that your 1st finger stays on the 1st fret B string when moving from G to D, and that your 3rd finger can guide transitions.",
-            "tempo": "55 BPM"
+            "text": "Notice how keeping the ring finger glued to the B string eliminates hand disorientation. Your hand instantly knows where it is in physical space, allowing you to transition without looking.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Popular I-V-vi-IV Progression (G-D-Em-C)",
-          "difficulty": "Essential",
+          "title": "The Minor Anchor Loop: Am - Dm - E7",
+          "difficulty": "Intermediate",
           "borderColor": "border-purple-200",
           "difficultyBg": "bg-purple-100",
           "difficultyText": "text-purple-700",
           "numberBg": "bg-purple-100",
           "numberText": "text-purple-600",
-          "description": "Master the most popular chord progression in modern music! This I-V-vi-IV progression appears in thousands of songs across all genres.",
+          "description": "Master index finger pivoting. From Am, finger 1 pivots down one fret to string 1 fret 1 for Dm, while from Dm to E7, finger 1 shifts to string 3 fret 1. These micro-pivots guarantee fast, fatigue-free movement.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Progression: Am (i) -> Dm (iv) -> E7 (V7) with index finger micro-pivots"
+          },
           "chordDiagrams": [
-            { "label": "G (I)", "chord": "G_major" },
-            { "label": "D (V)", "chord": "D_major" },
-            { "label": "Em (vi)", "chord": "E_minor" },
-            { "label": "C (IV)", "chord": "C_major" }
+            { "label": "Am", "chord": "Am" },
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "E7", "chord": "E7" }
           ],
           "notation": {
-            "title": "I-V-vi-IV Chord Progression Exercise",
-            "alphaTex": "\\ts 4 4\n(3.6 2.5 0.4 0.3 3.2 3.1).1 | (2.4 3.3 2.2 2.1).1 | (0.6 2.5 2.4 0.3 0.2 0.1).1 | (3.5 2.4 0.3 1.2 0.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).2 (3.5 2.4 0.3 1.2 0.1).2",
-            "staveTitle": "G - D - Em - C: Whole Notes then Half Notes"
+            "title": "Minor Anchor Loop: Am -> Dm -> E7",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Minor Anchor Loop' :4 (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) | (0.4 2.3 3.2 1.1) (0.4 2.3 3.2 1.1) (0.4 2.3 3.2 1.1) (0.4 2.3 3.2 1.1) | (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-purple-50",
@@ -124,35 +168,34 @@
             "colorText": "text-purple-800",
             "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "This progression is the backbone of countless songs. Focus on smooth transitions and try different strumming patterns once you're comfortable with the chord changes.",
-            "tempo": "50 BPM"
+            "text": "Keep your thumb centered behind the 2nd fret. In the transition from Dm to E7, ensure all open strings (E, B, D) ring clearly without being choked by stray finger edges.",
+            "tempo": "75 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Advanced Chord Changes",
-      "exercises": [
+        },
         {
           "number": 4,
-          "title": "Barre Chord Transitions (F - Am - Dm - G)",
-          "difficulty": "Advanced",
+          "title": "Syncopated Anticipation: The '4-And' Transition Push",
+          "difficulty": "Intermediate",
           "borderColor": "border-amber-200",
           "difficultyBg": "bg-amber-100",
           "difficultyText": "text-amber-700",
           "numberBg": "bg-amber-100",
           "numberText": "text-amber-600",
-          "description": "Practice moving between barre chords and open chords. This exercise challenges your finger strength and coordination while building practical chord vocabulary.",
+          "description": "Learn the pro secret of uninterrupted rhythm: release the chord on the 'and' of beat 4. Strumming the open strings or a percussive muted 'chuck' on beat 4-and gives your hand the half-beat window needed to land beat 1 cleanly.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Rhythm: 8th-note strumming with anticipated left-hand shift on the final upbeat"
+          },
           "chordDiagrams": [
-            { "label": "F Major", "chord": "F_major" },
-            { "label": "Am", "chord": "A_minor" },
-            { "label": "Dm", "chord": "D_minor" },
-            { "label": "G Major", "chord": "G_major" }
+            { "label": "C", "chord": "C" },
+            { "label": "G", "chord": "G" },
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" }
           ],
           "notation": {
-            "title": "Barre Chord Transition Exercise",
-            "alphaTex": "\\ts 4 4\n(1.6 1.5 3.4 3.3 2.2 1.1).1 | (0.5 2.4 2.3 1.2 0.1).1 | (0.4 2.3 3.2 1.1).1 | (3.6 2.5 0.4 0.3 3.2 3.1).1 | (1.6 1.5 3.4 3.3 2.2 1.1).2 (0.5 2.4 2.3 1.2 0.1).2 | (0.4 2.3 3.2 1.1).2 (3.6 2.5 0.4 0.3 3.2 3.1).2 | (1.6 1.5 3.4 3.3 2.2 1.1).2 (0.5 2.4 2.3 1.2 0.1).2 | (0.4 2.3 3.2 1.1).2 (3.6 2.5 0.4 0.3 3.2 3.1).2",
-            "staveTitle": "F - Am - Dm - G: Whole Notes then Half Notes"
+            "title": "The '4-And' Anticipated Chord Transition Strum",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle '4-And Transition Push' :8 (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) (3.6 2.5 0.4 0.3 3.2 3.1) | (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (3.6 2.5 0.4 0.3 3.2 3.1) (0.5 2.4 2.3 1.2 0.1) | (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (0.5 2.4 2.3 1.2 0.1) (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-amber-50",
@@ -161,24 +204,38 @@
             "colorText": "text-amber-800",
             "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Take your time with the F barre chord - it's challenging for beginners. Focus on clean chord tones and smooth transitions. Rest your hand between repetitions if needed.",
-            "tempo": "45 BPM"
+            "text": "Notice how the final 8th note of each measure acts as the transition bridge. Your right hand never stops swinging, creating a continuous acoustic pulse.",
+            "tempo": "80 BPM"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Advanced Fluency: Barre Chords & Jazz Voice Leading",
+      "exercises": [
         {
           "number": 5,
-          "title": "Jazz-Style Chord Movement",
+          "title": "The Barre Chord Jump: Open E to F Major to G Major",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Practice moving between seventh chords and extended harmonies. This exercise introduces jazz-style chord voicings and smooth voice leading.",
+          "description": "The notorious transition that halts beginner guitarists: jumping from open E major into the full 6-string F major barre chord, then sliding up two frets to G major. Focus on forming the E shape with fingers 2, 3, and 4 while the index finger pre-extends in mid-air.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Technique: Pre-forming the barre shape in mid-air and landing all 6 strings together"
+          },
+          "chordDiagrams": [
+            { "label": "E", "chord": "E" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
           "notation": {
-            "title": "Jazz-Style Chord Movement Exercise",
-            "alphaTex": "\\ts 4 4\n(3.6 2.5 0.4 0.3 1.2 0.1).1 | (2.6 0.5 2.4 1.3 2.2 0.1).1 | (0.6 2.5 0.4 2.3 1.2 3.1).1 | (3.6 2.5 0.4 0.3 0.2 1.1).1 | (3.6 2.5 0.4 0.3 1.2 0.1).2 (2.6 0.5 2.4 1.3 2.2 0.1).2 | (0.6 2.5 0.4 2.3 1.2 3.1).2 (3.6 2.5 0.4 0.3 0.2 1.1).2 | (3.6 2.5 0.4 0.3 1.2 0.1).2 (2.6 0.5 2.4 1.3 2.2 0.1).2 | (0.6 2.5 0.4 2.3 1.2 3.1).2 (3.6 2.5 0.4 0.3 0.2 1.1).2",
-            "staveTitle": "CMaj7 - Am7 - Dm7 - G7: Whole Notes then Half Notes"
+            "title": "Open E to Full F and G Barre Chord Shift",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'Barre Chord Shift' :4 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | (1.6 3.5 3.4 2.3 1.2 1.1) (1.6 3.5 3.4 2.3 1.2 1.1) (1.6 3.5 3.4 2.3 1.2 1.1) (1.6 3.5 3.4 2.3 1.2 1.1) | (3.6 5.5 5.4 4.3 3.2 3.1) (3.6 5.5 5.4 4.3 3.2 3.1) (3.6 5.5 5.4 4.3 3.2 3.1) (3.6 5.5 5.4 4.3 3.2 3.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-red-50",
@@ -187,24 +244,33 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Focus on minimal finger movement between chords. Notice how some fingers can stay in place or move to adjacent strings. This creates smooth voice leading typical of jazz harmony.",
-            "tempo": "40 BPM"
+            "text": "Do not lay the index finger down first and then frantically assemble the other 3 fingers. Form the full chord in flight. When shifting from F to G, release 80% of clamping pressure and slide the barre across the fret crowns.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 6,
-          "title": "Rapid Chord Changes Challenge",
-          "difficulty": "Expert",
+          "title": "Jazz Voice Leading Transitions: Dm7 - G7 - Cmaj7",
+          "difficulty": "Jazz",
           "borderColor": "border-indigo-200",
           "difficultyBg": "bg-indigo-100",
           "difficultyText": "text-indigo-700",
           "numberBg": "bg-indigo-100",
           "numberText": "text-indigo-600",
-          "description": "Challenge yourself with rapid chord changes that require quick thinking and precise muscle memory. This exercise simulates demanding song situations.",
+          "description": "Master minimal-motion jazz voice leading. In this classic ii-V-I progression, chords transition with barely 1 fret of motion between individual voices, producing sophisticated harmonic continuity.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Voice Leading: Dm7 -> G7 -> Cmaj7 with half-step guide tone movement"
+          },
+          "chordDiagrams": [
+            { "label": "Dm7", "chord": "Dm7" },
+            { "label": "G7", "chord": "G7" },
+            { "label": "Cmaj7", "chord": "Cmaj7" }
+          ],
           "notation": {
-            "title": "Rapid Chord Changes Exercise",
-            "alphaTex": "\\ts 4 4\n(3.6 2.5 0.4 0.3 3.2 3.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (2.4 3.3 2.2 2.1).2 (0.6 2.5 2.4 0.3 0.2 0.1).2 | (0.5 2.4 2.3 1.2 0.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2 | (0.6 2.5 2.4 0.3 0.2 0.1).2 (3.5 2.4 0.3 1.2 0.1).2 | (3.6 2.5 0.4 0.3 3.2 3.1).2 (2.4 3.3 2.2 2.1).2",
-            "staveTitle": "G-C-D-Em-Am Rapid Changes at Half-Note Speed"
+            "title": "Jazz ii-V-I Smooth Voice Leading Transitions",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Jazz Voice Leading' :4 (5.5 7.4 5.3 6.2) (5.5 7.4 5.3 6.2) (5.5 7.4 5.3 6.2) (5.5 7.4 5.3 6.2) | (3.6 5.5 3.4 4.3) (3.6 5.5 3.4 4.3) (3.6 5.5 3.4 4.3) (3.6 5.5 3.4 4.3) | (3.5 5.4 4.3 5.2) (3.5 5.4 4.3 5.2) (3.5 5.4 4.3 5.2) (3.5 5.4 4.3 5.2) | :1 (3.5 5.4 4.3 5.2) |"
           },
           "practiceNotes": {
             "colorBg": "bg-indigo-50",
@@ -213,41 +279,148 @@
             "colorText": "text-indigo-800",
             "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "Start very slowly and only increase tempo when changes are completely clean. This exercise builds the quick reflexes needed for complex songs and live performance situations.",
-            "tempo": "50 BPM"
+            "text": "Observe the 3rd and 7th guide tones: the 7th of Dm7 (C) resolves down a half-step to the 3rd of G7 (B), which in turn resolves to the 7th of Cmaj7 (B). Listen to how smoothly the harmony flows.",
+            "tempo": "75 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Hendrix Thumb-Over Master Progression (C - Am - F - G)",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "Emulate Jimi Hendrix and John Frusciante. Hook your fretting thumb over the top of the neck to anchor the bass note on string 6, leaving your index, middle, and pinky fingers completely free to execute vocal hammer-ons and chord embellishments during transitions.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Master Style: Thumb-over-neck bass anchoring with free decorative embellishments"
+          },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" },
+            { "label": "Am", "chord": "Am" },
+            { "label": "F", "chord": "F" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "Hendrix-Style Thumb-Over Chord Embellishment Progression",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Hendrix Thumb Chords' :8 (3.5 2.4 0.3 1.2) (3.5 2.4 0.3 1.2) 3.2 1.2 (3.5 2.4 0.3 1.2) (3.5 2.4 0.3 1.2) 3.2 1.2 | (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) 3.2 1.2 (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) 3.2 1.2 | (1.6 3.5 3.4 2.3 1.2) (1.6 3.5 3.4 2.3 1.2) 3.3 2.3 (1.6 3.5 3.4 2.3 1.2) (1.6 3.5 3.4 2.3 1.2) 3.3 2.3 | :1 (3.6 5.5 5.4 4.3 3.2) |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
+            "title": "Practice Notes",
+            "text": "Wrap your thumb over the neck spine to fret the 1st fret (F) and 3rd fret (G) on the low E string. This frees your pinky to decorate chords with 9th and 11th hammer-ons like 'Little Wing' and 'Under the Bridge'.",
+            "tempo": "80 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Essential Chord Change Tips",
+    "title": "Mastering Fluid Chord Transitions",
     "items": [
       {
-        "title": "Physical Technique",
-        "colorBg": "bg-gradient-to-br from-emerald-50 to-teal-50",
+        "title": "3 Mistakes That Kill Your Chord Transitions",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
+        "items": [
+          "The 'One-By-One' Finger Walk: Placing fingers down sequentially (e.g. index first, then middle, then ring). This creates painful rhythmic pauses. You must pre-shape your hand in the air and land all fingers together.",
+          "Waiting Until Beat 1 to Move: Keeping your previous chord clamped right up until the downbeat. You must initiate your shift on the 'and' of beat 4, utilizing open string ring or a muted chuck to bridge the gap.",
+          "Flying Fingers During Transitions: Lifting fingers more than an inch off the strings while switching chords. Excess elevation destroys spatial calibration and wastes precious milliseconds."
+        ]
+      },
+      {
+        "title": "Masters of Rhythm Guitar & Voice Leading",
+        "colorBg": "bg-emerald-50",
         "colorBorder": "border-emerald-200",
         "colorTitle": "text-emerald-900",
         "colorText": "text-emerald-800",
         "items": [
-          "Keep fingers close to the strings and minimize movement",
-          "Practice the physical motion without strumming first",
-          "Use a metronome to maintain consistent timing",
-          "Visualize the next chord shape before switching"
+          "Freddie Green: The rhythm anchor of Count Basie's orchestra for 50 years; perfected three-note 'chunky' chord transitions with silky 4-to-the-bar quarter-note voice leading.",
+          "Jimi Hendrix: Revolutionized rock rhythm playing by using thumb-over chord grips combined with R&B fill embellishments, turning simple transitions into vocal counter-melodies.",
+          "Nile Rodgers: The undisputed king of funk rhythm; uses ultra-light, highly economical chord grabs and ghost mutes to drive massive dance anthems.",
+          "Bob Weir: The Grateful Dead's rhythm pioneer who avoided standard barre shapes, inventing unconventional inversions and counter-melodic chord paths across the entire neck."
         ]
       },
       {
-        "title": "Why Chord Changes Matter",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
+        "title": "The 10-Minute Daily Chord Transition Routine",
+        "colorBg": "bg-teal-50",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-900",
+        "colorText": "text-teal-800",
         "items": [
-          "Smooth chord changes are the foundation of rhythm guitar and song accompaniment",
-          "Clean and timely chord transitions make the difference between sounding amateur and professional",
-          "Whether strumming around a campfire or performing on stage, these skills are essential",
-          "Consistent practice builds the muscle memory needed for confident, musical playing"
+          "Block 1: 60-Second Transition Blitz (3 min) - Pick two target chords (e.g., G to C, or C to F) and execute as many clean shifts as possible in 60 seconds at 70 BPM.",
+          "Block 2: '4-And' Syncopated Strum Engine (4 min) - Run Exercise 4 with an active 8th-note strum, training your left hand to lift on the upbeat without stopping the right hand.",
+          "Block 3: Barre Chord Glide & Hendrix Embellishments (3 min) - Practice sliding from open E to F barre and executing thumb-over embellishments at 75–80 BPM."
         ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Deepen Your Rhythm & Practice Journey",
+    "description": "Smooth chord transitions are the engine of all rhythm playing. Combine them with timing drills and harmonic understanding.",
+    "gradientFrom": "from-emerald-50",
+    "gradientTo": "to-teal-50",
+    "borderColor": "border-emerald-200",
+    "links": [
+      {
+        "href": "/lessons/practice/warmups/rhythm-drills",
+        "title": "Rhythm Drills",
+        "description": "Lock your smooth chord changes into tight grooves, subdivisions, and syncopated strumming patterns.",
+        "linkText": "Master Rhythm",
+        "icon": "🥁",
+        "hoverBorder": "hover:border-emerald-400",
+        "iconBg": "bg-emerald-100",
+        "iconHoverBg": "group-hover:bg-emerald-200",
+        "linkColor": "text-emerald-600",
+        "linkHoverColor": "group-hover:text-emerald-700"
+      },
+      {
+        "href": "/lessons/practice/warmups/finger-exercises",
+        "title": "Finger Exercises",
+        "description": "Strengthen individual finger independence and pinky power to make complex chord clampings effortless.",
+        "linkText": "Explore Fingers",
+        "icon": "🤲",
+        "hoverBorder": "hover:border-teal-400",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
+      },
+      {
+        "href": "/lessons/practice/improv/chord-tone-soloing",
+        "title": "Chord Tone Soloing",
+        "description": "Connect your chord knowledge directly to soloing by targeting the 3rd and 7th over every change.",
+        "linkText": "Explore Chord Tones",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-cyan-400",
+        "iconBg": "bg-cyan-100",
+        "iconHoverBg": "group-hover:bg-cyan-200",
+        "linkColor": "text-cyan-600",
+        "linkHoverColor": "group-hover:text-cyan-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Rhythm & Chord Mastery",
+    "items": [
+      {
+        "category": "Medium Rhythm Strumming Pick",
+        "product": "Dunlop Tortex Standard 0.60mm (Orange) / 0.73mm (Yellow)",
+        "reason": "Provides the ideal amount of flex for smooth, gliding strums across 6 strings without catching or digging into string windings."
+      },
+      {
+        "category": "Quick-Change Guitar Capo",
+        "product": "Kyser Quick-Change / Shubb Deluxe Capo",
+        "reason": "Allows you to transpose open chord shapes across the neck instantly while preserving common-finger anchor relationships."
       }
     ]
   }

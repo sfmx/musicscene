@@ -2,53 +2,89 @@
   "slug": "picking-patterns",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Picking Patterns",
-    "subtitle": "Master alternate picking, economy picking, and hybrid techniques for clean and expressive playing.",
+    "pageTitle": "Picking Patterns Masterclass",
+    "subtitle": "Master pick-grip physics, edge-picking angles, inside/outside string crossing, and effortless tremolo bursts.",
     "heroGradient": "bg-gradient-to-br from-orange-50 to-red-100",
-    "heroTitle": "Picking Patterns for Guitarists",
-    "heroDescription": "Develop precision, speed, and control with your picking hand through these essential exercises. Each pattern focuses on different aspects of picking technique, from strict alternate picking to advanced hybrid and economy picking methods."
+    "heroTitle": "Picking Patterns Masterclass",
+    "heroDescription": "Your picking hand is the motor engine of your guitar playing—it governs rhythmic timing, articulation, dynamic attack, and maximum speed. Before diving into complex solos or intricate rhythm tracks, your picking hand requires systematic calibration. From micro-adjusting pick depth and edge angles to mastering the biomechanical difference between 'inside' and 'outside' string crossing, this warmup routine primes your right wrist and forearm for fluid, relaxed velocity without tension or string snags."
   },
   "guidelines": {
-    "title": "Picking Practice Guidelines",
+    "title": "The Biomechanics of Picking Precision",
     "columns": [
       {
-        "title": "Technique Focus",
+        "title": "Pick Grip & Stroke Mechanics",
         "items": [
-          { "bulletColor": "text-orange-500", "text": "Start with slow, deliberate movements" },
-          { "bulletColor": "text-orange-500", "text": "Keep picking motion small and efficient" },
-          { "bulletColor": "text-orange-500", "text": "Focus on clean attack and consistent timing" },
-          { "bulletColor": "text-orange-500", "text": "Maintain relaxed grip and wrist position" }
+          {
+            "bulletColor": "text-orange-500",
+            "text": "The Index-Thumb Fulcrum: Clamp the pick securely between the fleshy pad of your thumb and the side of your curled index finger's distal joint, exposing only 2–3 millimeters of the tip."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Edge Picking Angle: Tilt the pick 20 to 30 degrees relative to the string plane so the edge slices across the metal rather than slapping flat, eliminating drag and string click."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Minimal Pick Depth: Submerge only the very tip of the pick past the string boundary; digging deep between the strings creates massive mechanical resistance and caps your speed."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Wrist-Driven Oscillation: Initiate picking strokes primarily from rotational wrist deviation (dart-throwing motion) rather than stiff elbow pumping."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Dynamic Grip Pressure: Hold the pick firm enough to prevent shifting, but relaxed enough that a gentle nudge could pull it from your fingers; tense grips paralyze forearm tendons."
+          }
         ]
       },
       {
-        "title": "Practice Strategy",
+        "title": "String Crossing & Rhythmic Mastery",
         "items": [
-          { "bulletColor": "text-red-500", "text": "Use a metronome for consistent tempo" },
-          { "bulletColor": "text-red-500", "text": "Practice each pattern slowly before increasing speed" },
-          { "bulletColor": "text-red-500", "text": "Focus on accuracy over speed initially" },
-          { "bulletColor": "text-red-500", "text": "Record yourself to identify inconsistencies" }
+          {
+            "bulletColor": "text-red-500",
+            "text": "Outside Picking Trajectory: When crossing from a lower string to a higher string, striking with a downstroke on the lower and an upstroke on the higher allows the pick to move outside the string pair."
+          },
+          {
+            "bulletColor": "text-red-500",
+            "text": "Inside Picking Calibration: Striking with an upstroke on the lower string and a downstroke on the higher traps the pick between strings, requiring precise micro-escapes."
+          },
+          {
+            "bulletColor": "text-red-500",
+            "text": "Continuous Rhythmic Subdivision: Count out 16th notes ('1-e-and-a, 2-e-and-a') in unison with every pick cycle so your hand stays locked to the internal pulse."
+          },
+          {
+            "bulletColor": "text-red-500",
+            "text": "Palm Heel Reference Anchor: Rest the fleshy edge of your picking palm lightly on the bass saddles to stabilize your spatial reference without choking string vibration."
+          },
+          {
+            "bulletColor": "text-red-500",
+            "text": "Progressive Speed Bursts: Alternate 4 bars of relaxed, slow 8th notes with 2 bars of explosive 16th-note tremolo bursts to train neuromuscular twitch reflexes safely."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Picking Patterns",
+      "title": "Foundation: Single-String Speed & Adjacent String Crossing",
       "exercises": [
         {
           "number": 1,
-          "title": "Alternate Picking Foundation",
+          "title": "Single-String Alternate Picking Calibration",
           "difficulty": "Essential",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "Practice strict down-up picking on a single string. Every note should alternate between downstroke and upstroke. Keep the picking motion small and close to the strings.",
+          "description": "Establish absolute right-hand symmetry on a single string. Play strict 16th-note down-up alternate strokes on fret 5 of the G string, focusing on identical volume and transient attack between downstrokes and upstrokes.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Focus: Symmetrical down/up stroke velocity and minimal pick displacement"
+          },
           "notation": {
-            "title": "Alternate Picking Foundation Exercise",
-            "alphaTex": "\\ts 4 4\n0.1.8 1.1 2.1 3.1 4.1 3.1 2.1 1.1 | 0.1 1.1 2.1 3.1 4.1 5.1 4.1 3.1 | 2.1 3.1 4.1 5.1 6.1 5.1 4.1 3.1 | 4.1 5.1 6.1 7.1 8.1 7.1 6.1 5.1",
-            "staveTitle": "Strict Down-Up Alternate Picking on Single String"
+            "title": "Single-String 16th-Note Alternate Picking Calibration",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Single-String Calibration' :16 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 | 7.3 7.3 7.3 7.3 7.3 7.3 7.3 7.3 5.3 5.3 5.3 5.3 :4 5.3 :4 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -57,24 +93,28 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Practice strict down-up picking on a single string. Every note should alternate between downstroke and upstroke. Keep the picking motion small and close to the strings. Focus on evenness and clean articulation of each note.",
-            "tempo": "70 BPM"
+            "text": "Use a 20-degree edge picking angle. Listen closely: does the upstroke sound as crisp and full as the downstroke? If not, adjust your pick slant until both strokes sound indistinguishable.",
+            "tempo": "80 BPM (16th notes)"
           }
         },
         {
           "number": 2,
-          "title": "String Crossing Alternate Picking",
-          "difficulty": "Intermediate",
+          "title": "Outside Picking Across Adjacent Strings (Strings 4 & 3)",
+          "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Maintain strict alternate picking while crossing strings. This is crucial for developing coordination between both hands. Keep the picking pattern consistent regardless of string changes.",
+          "description": "Outside picking occurs when the pick strokes wrap around the outside of two adjacent strings: Downstroke on string 4, Upstroke on string 3. This is the natural and most accessible string-crossing motion.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Pattern: Downstroke on lower string (4) -> Upstroke on higher string (3)"
+          },
           "notation": {
-            "title": "String Crossing Alternate Picking Exercise",
-            "alphaTex": "\\ts 4 4\n0.1.8 0.2 0.3 0.4 0.5 0.6 0.5 0.4 | 0.3 0.2 0.1 1.1 1.2 1.3 1.4 1.5 | 1.6 1.5 1.4 1.3 1.2 1.1 0.1 0.2 | 0.3 0.4 0.5 0.6 2.6 2.5 2.4 2.3",
-            "staveTitle": "Alternate Picking Across All Strings"
+            "title": "Outside Picking Across Strings 4 and 3",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Outside Picking' :8 5.4 5.3 5.4 5.3 5.4 5.3 5.4 5.3 | 7.4 7.3 7.4 7.3 7.4 7.3 7.4 7.3 | 8.4 8.3 8.4 8.3 7.4 7.3 5.4 5.3 | :2 5.4 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -83,24 +123,28 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Maintain strict alternate picking while crossing strings. This is crucial for developing coordination between both hands. Keep the picking pattern consistent regardless of string changes.",
-            "tempo": "60 BPM"
+            "text": "Maintain strict down-up alternation throughout. Notice how the pick moves away from the string pair on each stroke, giving maximum clearance.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Economy Picking Pattern",
-          "difficulty": "Advanced",
+          "title": "Inside Picking Across Adjacent Strings (Strings 4 & 3)",
+          "difficulty": "Intermediate",
           "borderColor": "border-purple-200",
           "difficultyBg": "bg-purple-100",
           "difficultyText": "text-purple-700",
           "numberBg": "bg-purple-100",
           "numberText": "text-purple-600",
-          "description": "Use downstrokes when moving to lower (thicker) strings and upstrokes when moving to higher (thinner) strings. This sweeping motion is more efficient for certain passages and scales.",
+          "description": "Reverse the stroke direction: Upstroke on string 4, Downstroke on string 3. The pick is now trapped inside the string channel, requiring micro-clearing wrist trajectories to avoid snagging.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Pattern: Upstroke on lower string (4) -> Downstroke on higher string (3)"
+          },
           "notation": {
-            "title": "Economy Picking Pattern Exercise",
-            "alphaTex": "\\ts 4 4\n1.6.8 2.6 1.5 2.5 1.4 2.4 1.3 2.3 | 1.2 2.2 1.1 2.1 3.1 2.1 1.1 2.2 | 1.3 2.3 1.4 2.4 1.5 2.5 1.6 2.6 | 3.6 4.6 3.5 4.5 3.4 4.4 3.3 4.3",
-            "staveTitle": "Economy Picking - Sweep Motion on String Changes"
+            "title": "Inside Picking Across Strings 4 and 3",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'Inside Picking' :8 5.4 5.3 5.4 5.3 5.4 5.3 5.4 5.3 | 7.4 7.3 7.4 7.3 7.4 7.3 7.4 7.3 | 8.4 8.3 8.4 8.3 7.4 7.3 5.4 5.3 | :2 5.4 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-purple-50",
@@ -109,29 +153,28 @@
             "colorText": "text-purple-800",
             "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "Use downstrokes when moving to lower (thicker) strings and upstrokes when moving to higher (thinner) strings. This \"sweeping\" motion is more efficient for certain passages and scales.",
-            "tempo": "55 BPM"
+            "text": "Most players find inside picking significantly harder than outside picking. Practice this at 70 BPM until your hand feels just as relaxed inside the strings as outside.",
+            "tempo": "70 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Advanced Picking Techniques",
-      "exercises": [
+        },
         {
           "number": 4,
-          "title": "Hybrid Picking Pattern",
-          "difficulty": "Advanced",
+          "title": "Three-String Economy Roll Warmup (Strings 3, 2, 1)",
+          "difficulty": "Intermediate",
           "borderColor": "border-amber-200",
           "difficultyBg": "bg-amber-100",
           "difficultyText": "text-amber-700",
           "numberBg": "bg-amber-100",
           "numberText": "text-amber-600",
-          "description": "Use the pick for bass notes (low E string) and your middle or ring finger for higher strings. This technique allows for rapid arpeggios and complex chord-melody playing.",
+          "description": "Warm up economy picking transitions: sweep downwards across strings 3, 2, and 1 in one fluid motion, turnaround with an upstroke on the high E, and sweep upwards across strings 1, 2, and 3.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Mechanic: Down-Down-Down sweep -> Turnaround -> Up-Up-Up sweep"
+          },
           "notation": {
-            "title": "Hybrid Picking Pattern Exercise",
-            "alphaTex": "\\ts 4 4\n0.6.8 2.4 0.6 2.3 0.6 2.2 0.6 2.1 | 3.6 0.4 3.6 0.3 3.6 0.2 3.6 0.1 | 2.6 0.3 2.6 0.2 2.6 0.1 2.6 0.2 | 0.5 2.3 0.5 2.2 0.5 2.1 0.5 2.2",
-            "staveTitle": "Pick + Fingers Combination"
+            "title": "Three-String Economy Picking Roll Across Strings 3, 2, 1",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Economy Roll' :8 5.3 5.2 5.1 7.1 5.1 5.2 5.3 7.3 | 5.3 5.2 5.1 7.1 5.1 5.2 5.3 7.3 | :2 5.3 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-amber-50",
@@ -140,24 +183,33 @@
             "colorText": "text-amber-800",
             "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Use the pick for bass notes (low E string) and your middle or ring finger for higher strings. This technique allows for rapid arpeggios and complex chord-melody playing.",
-            "tempo": "50 BPM"
+            "text": "Do not treat the down-strokes as 3 separate picks; push the pick smoothly through all 3 strings like a miniature downward brush stroke. Reverse smoothly on the turnaround.",
+            "tempo": "75 BPM"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Advanced Fluency: String Leaps & Tremolo Bursts",
+      "exercises": [
         {
           "number": 5,
-          "title": "Tremolo Picking Exercise",
+          "title": "Two-String Skipping Picking Warmup (Strings 5 & 3, 4 & 2)",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Practice rapid alternate picking on a single note. Start slowly and gradually increase speed while maintaining evenness. This technique is essential for metal and classical guitar styles.",
+          "description": "Calibrate wide right-hand spatial leaps. Leap over the 4th string to pick strings 5 and 3, then leap over the 3rd string to pick strings 4 and 2. Keeps the picking hand nimble and agile across wide intervals.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Mechanic: Micro-arc pick clearance leaping over intermediate strings"
+          },
           "notation": {
-            "title": "Tremolo Picking Exercise",
-            "alphaTex": "\\ts 4 4\n0.1.16 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 | 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 2.1 | 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 | 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1 3.1",
-            "staveTitle": "Rapid Alternate Picking on Single Note"
+            "title": "Two-String Skipping Picking Warmup",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'String-Skipping Warmup' :8 5.5 5.3 7.5 7.3 8.5 8.3 7.5 7.3 | 5.4 5.2 7.4 7.2 8.4 8.2 7.4 7.2 | :2 5.4 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-red-50",
@@ -166,24 +218,28 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Practice rapid alternate picking on a single note. Start slowly and gradually increase speed while maintaining evenness. This technique is essential for metal and classical guitar styles.",
-            "tempo": "80 BPM"
+            "text": "The pick must lift slightly away from the body to vault over the idle string without striking it. Keep the palm heel lightly anchored for spatial accuracy.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 6,
-          "title": "Chromatic Picking Coordination",
-          "difficulty": "Technical",
+          "title": "The Paul Gilbert 6-Note Alternate Picking Loop",
+          "difficulty": "Advanced",
           "borderColor": "border-indigo-200",
           "difficultyBg": "bg-indigo-100",
           "difficultyText": "text-indigo-700",
           "numberBg": "bg-indigo-100",
           "numberText": "text-indigo-600",
-          "description": "Combine chromatic fretting patterns with strict alternate picking. This exercise develops coordination between both hands and is excellent for building speed and accuracy.",
+          "description": "Paul Gilbert's iconic alternate picking loop. Play 5 notes on the B string followed by 1 note on the G string, creating a syncopated 6-against-4 polyrhythmic cycle that challenges picking consistency.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Pattern: 6-note looping sequence crossing strings 2 and 3"
+          },
           "notation": {
-            "title": "Chromatic Picking Coordination Exercise",
-            "alphaTex": "\\ts 4 4\n1.6.16 2.6 3.6 4.6 1.5 2.5 3.5 4.5 1.4 2.4 3.4 4.4 1.3 2.3 3.3 4.3 | 1.2 2.2 3.2 4.2 1.1 2.1 3.1 4.1 4.1 3.1 2.1 1.1 4.2 3.2 2.2 1.2 | 4.3 3.3 2.3 1.3 4.4 3.4 2.4 1.4 4.5 3.5 2.5 1.5 4.6 3.6 2.6 1.6",
-            "staveTitle": "Chromatic Pattern with Strict Alternate Picking"
+            "title": "Paul Gilbert 6-Note Alternate Picking Loop",
+            "alphaTex": "\\tempo 85 . \\ts 4 4 staveTitle 'Gilbert Picking Loop' :16 5.2 7.2 8.2 7.2 5.2 7.3 5.2 7.2 8.2 7.2 5.2 7.3 5.2 7.2 8.2 7.2 | 5.1 7.1 8.1 7.1 5.1 8.2 5.1 7.1 8.1 7.1 5.1 8.2 :4 5.1 :4 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-indigo-50",
@@ -192,40 +248,142 @@
             "colorText": "text-indigo-800",
             "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "Combine chromatic fretting patterns with strict alternate picking. This exercise develops coordination between both hands and is excellent for building speed and accuracy.",
-            "tempo": "65 BPM"
+            "text": "Because it is a 6-note sequence played in 16th notes, the accent shifts across downbeats and upbeats. Maintain strict alternate picking: do not hammer-on or sweep.",
+            "tempo": "85 BPM (16th notes)"
+          }
+        },
+        {
+          "number": 7,
+          "title": "Tremolo Picking Bursts with Dynamic Accents",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-orange-200",
+          "difficultyBg": "bg-orange-100",
+          "difficultyText": "text-orange-700",
+          "numberBg": "bg-orange-100",
+          "numberText": "text-orange-600",
+          "description": "The ultimate test of right-hand stamina and fluid speed. Execute rapid 16th-note tremolo picking while dynamically accenting beats 1, 2, 3, and 4 on the high E string, then shifting up the neck.",
+          "patternNote": {
+            "colorBg": "bg-orange-50",
+            "colorText": "text-orange-800",
+            "text": "Tremolo: Continuous alternate picking with heavy downbeat accents"
+          },
+          "notation": {
+            "title": "High-Speed Tremolo Picking Bursts with Accents",
+            "alphaTex": "\\tempo 110 . \\ts 4 4 staveTitle 'Tremolo Bursts' :16 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 12.1 | 14.1 14.1 14.1 14.1 15.1 15.1 15.1 15.1 17.1 17.1 17.1 17.1 :4 12.1 :4 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-orange-50",
+            "colorBorder": "border-orange-200",
+            "colorTitle": "text-orange-900",
+            "colorText": "text-orange-800",
+            "colorAccent": "bg-orange-100",
+            "title": "Practice Notes",
+            "text": "Keep pick depth strictly minimal—barely skim the top of the string. Emphasize the accented note with a slightly broader wrist flick, then immediately relax back into the rapid flutter.",
+            "tempo": "110 BPM (16th notes)"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Essential Picking Tips",
+    "title": "Mastering the Picking Hand Warmup",
     "items": [
       {
-        "title": "Technical Focus",
-        "colorBg": "bg-gradient-to-br from-orange-50 to-red-50",
+        "title": "3 Mistakes That Kill Your Picking Hand",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
+        "items": [
+          "Digging Too Deep: Allowing more than 3mm of pick tip between strings causes the pick to catch violently on the metal windings, destroying speed and creating forearm fatigue.",
+          "The 'Claw' Grip Forearm Tensing: Clamping down on the pick until your knuckles turn white. Rigid hands cannot oscillate at speed; your grip must remain supple and shock-absorbing.",
+          "Asymmetrical Pick Trajectory: Slicing on the downstroke but hooking flat on the upstroke. Both strokes must maintain identical edge angles to produce consistent volume and timbre."
+        ]
+      },
+      {
+        "title": "Masters of Picking Articulation",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
+        "items": [
+          "Al Di Meola: The undisputed king of muted alternate picking; uses heavy palm damping and razor-precise wrist oscillation to articulate machine-gun Latin fusion runs.",
+          "Paul Gilbert: Master of outside picking and 6-note string loops; revolutionized modern picking pedagogy by dissecting pick angles, escaping strokes, and metronomic practice.",
+          "John McLaughlin: Blazed Indian classical konnakol and jazz-fusion picking at blazing tempos with the Mahavishnu Orchestra using strict alternate picking discipline.",
+          "Steve Morse: Dixie Dregs and Deep Purple legend renowned for his unmatched alternate-picking stamina across complex multi-octave arpeggio sequences."
+        ]
+      },
+      {
+        "title": "The 10-Minute Daily Picking Warmup Routine",
+        "colorBg": "bg-orange-50",
         "colorBorder": "border-orange-200",
         "colorTitle": "text-orange-900",
         "colorText": "text-orange-800",
         "items": [
-          "Keep picking motion small and efficient",
-          "Maintain relaxed grip on the pick",
-          "Focus on consistent attack and tone",
-          "Practice with a metronome for steady timing"
+          "Block 1: Single-String Symmetrical Calibration (3 min) - Cycle Exercise 1 at 80 BPM, focusing on 20-degree edge angle and identical down/up volume.",
+          "Block 2: Outside vs. Inside String Crossing (4 min) - Alternate between Exercises 2 and 3 across strings 4 and 3 at 70–75 BPM, ensuring the pick escapes cleanly.",
+          "Block 3: Gilbert Loop & Tremolo Bursts (3 min) - Run the 6-note Gilbert pattern and tremolo bursts at 85–110 BPM to ignite fast-twitch forearm reflexes."
         ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Deepen Your Picking & Technique Journey",
+    "description": "Combine your calibrated picking hand with advanced fretboard technique and full-speed improvisational freedom.",
+    "gradientFrom": "from-orange-50",
+    "gradientTo": "to-red-50",
+    "borderColor": "border-orange-200",
+    "links": [
+      {
+        "href": "/lessons/practice/technique/alternate-picking",
+        "title": "Alternate Picking",
+        "description": "Take your calibrated right hand into full 3-note-per-string scales and multi-octave shred runs.",
+        "linkText": "Master Picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-orange-400",
+        "iconBg": "bg-orange-100",
+        "iconHoverBg": "group-hover:bg-orange-200",
+        "linkColor": "text-orange-600",
+        "linkHoverColor": "group-hover:text-orange-700"
       },
       {
-        "title": "Why Picking Matters",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
-        "items": [
-          "Consistent picking technique is the foundation for clean, fast, and expressive playing",
-          "Whether playing rhythm guitar, lead lines, or fingerstyle arrangements, proper picking technique improves your tone, speed, and musical expression",
-          "Regular practice builds the muscle memory essential for advanced techniques"
-        ]
+        "href": "/lessons/practice/warmups/finger-exercises",
+        "title": "Finger Exercises",
+        "description": "Synchronize your picking precision with independent, agile fretting fingers across the fretboard.",
+        "linkText": "Explore Fingers",
+        "icon": "🤲",
+        "hoverBorder": "hover:border-red-400",
+        "iconBg": "bg-red-100",
+        "iconHoverBg": "group-hover:bg-red-200",
+        "linkColor": "text-red-600",
+        "linkHoverColor": "group-hover:text-red-700"
+      },
+      {
+        "href": "/lessons/practice/technique/palm-muting",
+        "title": "Palm Muting",
+        "description": "Lock in heavy rhythmic percussive chunk and tight metal gallops with your picking palm.",
+        "linkText": "Master Palm Muting",
+        "icon": "🛡️",
+        "hoverBorder": "hover:border-amber-400",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Precision Picking Practice",
+    "items": [
+      {
+        "category": "High-Definition Guitar Pick",
+        "product": "Dunlop Flow Standard 1.5mm / Dunlop Jazz III XL",
+        "reason": "The beveled edge and rigid gauge minimize pick drag, allowing instantaneous string release during high-speed alternate picking warmups."
+      },
+      {
+        "category": "String Cleaning & Lubricant",
+        "product": "GHS Fast Fret / Dunlop Ultraglide 65",
+        "reason": "Reduces friction between the pick bevel and wound strings, eliminating annoying string scraping and preserving pick tip sharpness."
       }
     ]
   }

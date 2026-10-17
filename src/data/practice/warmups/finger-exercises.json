@@ -2,53 +2,89 @@
   "slug": "finger-exercises",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Finger Exercises",
-    "subtitle": "Build dexterity, independence, and strength with these essential finger exercises.",
-    "heroGradient": "bg-gradient-to-br from-green-50 to-emerald-100",
-    "heroTitle": "Guitar Finger Exercises",
-    "heroDescription": "Developing finger strength, independence, and coordination is fundamental to becoming a proficient guitarist. These exercises will help you build the dexterity needed for complex chord shapes, fast runs, and smooth transitions."
+    "pageTitle": "Finger Exercises Masterclass",
+    "subtitle": "Build razor-sharp finger independence, pinky power, fretting speed, and tendon elasticity with progressive neuro-muscular drills.",
+    "heroGradient": "bg-gradient-to-br from-emerald-50 to-teal-100",
+    "heroTitle": "Finger Exercises Masterclass",
+    "heroDescription": "Finger dexterity and neural independence are the foundation of all expressive guitar performance. Before your hands can execute lightning-fast solos, complex chord transitions, or delicate legato runs, each of your four fretting fingers must learn to move autonomously without sympathetic twitching or excess tension. Championed by virtuosos like Steve Vai, John Petrucci, and Joe Satriani, dedicated finger warmups calibrate fingerpad curvature, banish 'flying fingers,' and awaken dormant motor pathways in your fretting hand within 10 focused minutes."
   },
   "guidelines": {
-    "title": "Finger Exercise Guidelines",
+    "title": "The Biomechanics of Finger Dexterity",
     "columns": [
       {
-        "title": "Proper Technique",
+        "title": "Ergonomics & Finger Geometry",
         "items": [
-          { "bulletColor": "text-green-500", "text": "Keep fingers curved and use fingertips" },
-          { "bulletColor": "text-green-500", "text": "Press just hard enough for clean notes" },
-          { "bulletColor": "text-green-500", "text": "Keep unused fingers close to the fretboard" },
-          { "bulletColor": "text-green-500", "text": "Maintain a relaxed hand and wrist position" }
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Curved Fingerpad Arch: Strike strings directly with the center of your fingerpads, keeping the distal interphalangeal joints bent at nearly 90 degrees to avoid collapsing."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "The 1-Centimeter Fly Rule: Unused fingers must hover no more than 1 centimeter above the fretboard—never let unused fingers curl into your palm or fly wildly into the air."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Minimum Effective Pressure: Press the string just hard enough to produce a clean, buzz-free note right behind the fret wire; excess squeezing creates forearm fatigue."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Neutral Wrist Alignment: Maintain a gentle, natural curve in your fretting wrist; never hyperextend or collapse your wrist against the guitar neck."
+          },
+          {
+            "bulletColor": "text-emerald-500",
+            "text": "Thumb Placement as Dynamic Pivot: Position your thumb on the spine of the neck opposite your middle finger, allowing it to slide vertically as your fingers move across strings."
+          }
         ]
       },
       {
-        "title": "Practice Tips",
+        "title": "Neuromuscular Conditioning & Practice",
         "items": [
-          { "bulletColor": "text-emerald-500", "text": "Start slowly and focus on accuracy" },
-          { "bulletColor": "text-emerald-500", "text": "Use a metronome for consistent timing" },
-          { "bulletColor": "text-emerald-500", "text": "Gradually increase speed over time" },
-          { "bulletColor": "text-emerald-500", "text": "Take breaks if you feel tension or pain" }
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Staircase Anchor Drill: In ascending chromatic runs, leave fingers 1, 2, and 3 anchored on their frets until finger 4 lands, developing isometric finger strength."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "The Pinky Power Priority: Dedicate 40% of warmup focus to fingers 3 (ring) and 4 (pinky)—they share a common extensor tendon and require deliberate training to separate."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Permutation Cycling: Do not just practice 1-2-3-4. Practice broken permutations (1-3-2-4, 1-4-2-3, 4-2-3-1) to force your brain to rewire motor shortcuts."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Synchronized Pick Attack: Every fretting finger placement must synchronize precisely with the pick stroke—rushing the fretting hand creates muddy, muted notes."
+          },
+          {
+            "bulletColor": "text-teal-500",
+            "text": "Relaxation Check-Ins: After every four measures, mentally scan your shoulders, jaw, and forearm, instantly releasing any accumulated tension."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Chromatic Finger Exercises",
+      "title": "Foundation: Chromatics & Finger Independence",
       "exercises": [
         {
           "number": 1,
-          "title": "Basic Chromatic Exercise",
+          "title": "The Foundational Chromatic 1-2-3-4 Across Strings",
           "difficulty": "Beginner",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "The foundational chromatic exercise. Play frets 1-2-3-4 on each string using one finger per fret. This builds basic coordination and finger independence.",
+          "description": "The quintessential warm-up exercise. Play frets 1-2-3-4 ascending across all 6 strings using one finger per fret (Index, Middle, Ring, Pinky). Leave each preceding finger planted on the fret until you move to the next string.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Technique: Strict one-finger-per-fret with staircase finger retention"
+          },
           "notation": {
-            "title": "Basic Chromatic Exercise",
-            "alphaTex": "\\ts 4 4\n1.1.4 2.1.4 3.1.4 4.1.4 | 1.2.4 2.2.4 3.2.4 4.2.4 | 1.3.4 2.3.4 3.3.4 4.3.4 | 1.4.4 2.4.4 3.4.4 4.4.4 | 1.5.4 2.5.4 3.5.4 4.5.4 | 1.6.4 2.6.4 3.6.4 4.6.4",
-            "staveTitle": "1-2-3-4 Pattern Across All Strings"
+            "title": "Ascending Chromatic 1-2-3-4 Pattern Across All Strings",
+            "alphaTex": "\\tempo 60 . \\ts 4 4 staveTitle 'Chromatic 1-2-3-4' :8 1.6 2.6 3.6 4.6 1.5 2.5 3.5 4.5 | 1.4 2.4 3.4 4.4 1.3 2.3 3.3 4.3 | 1.2 2.2 3.2 4.2 1.1 2.1 3.1 4.1 | :2 4.1 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -57,24 +93,28 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Use your index finger for fret 1, middle finger for fret 2, ring finger for fret 3, and pinky for fret 4. Keep each finger down until you need to move it to the next string.",
+            "text": "Strict alternate picking (down-up). Do not lift finger 1 when finger 2 plays; keep all fingers down until the pinky completes the measure, then cleanly transfer the hand to the next string.",
             "tempo": "60 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Reverse Chromatic Exercise",
+          "title": "The Reverse Descent: 4-3-2-1 Controlled Release",
           "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "The reverse of the basic chromatic. Play frets 4-3-2-1 descending on each string. This helps develop control when lifting fingers off the fretboard.",
+          "description": "Descending cleanly is harder than ascending because lifting fingers requires precise extensor tendon control. Start with all 4 fingers pre-planted on frets 1-2-3-4, then peel them off one by one.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Focus: Controlled finger peeling without letting fingers snap away from fretboard"
+          },
           "notation": {
-            "title": "Reverse Chromatic Exercise",
-            "alphaTex": "\\ts 4 4\n4.1.4 3.1.4 2.1.4 1.1.4 | 4.2.4 3.2.4 2.2.4 1.2.4 | 4.3.4 3.3.4 2.3.4 1.3.4 | 4.4.4 3.4.4 2.4.4 1.4.4 | 4.5.4 3.5.4 2.5.4 1.5.4 | 4.6.4 3.6.4 2.6.4 1.6.4",
-            "staveTitle": "4-3-2-1 Pattern Across All Strings"
+            "title": "Descending Reverse Chromatic 4-3-2-1 Across All Strings",
+            "alphaTex": "\\tempo 60 . \\ts 4 4 staveTitle 'Reverse Chromatic 4-3-2-1' :8 4.1 3.1 2.1 1.1 4.2 3.2 2.2 1.2 | 4.3 3.3 2.3 1.3 4.4 3.4 2.4 1.4 | 4.5 3.5 2.5 1.5 4.6 3.6 2.6 1.6 | :2 1.6 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -83,24 +123,28 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Start with all four fingers in position. Lift each finger cleanly and precisely. Focus on keeping the remaining fingers pressed down until they need to move.",
+            "text": "Keep your lifted fingers hovering just millimeters above their respective frets. If your pinky flies out wildly when finger 3 lifts, slow down to 50 BPM until your pinky remains disciplined.",
             "tempo": "60 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Spider Exercise",
+          "title": "The Classic Spider Walk: Diagonal String Crossing",
           "difficulty": "Intermediate",
           "borderColor": "border-purple-200",
           "difficultyBg": "bg-purple-100",
           "difficultyText": "text-purple-700",
           "numberBg": "bg-purple-100",
           "numberText": "text-purple-600",
-          "description": "A challenging exercise that moves diagonally across the fretboard. This develops finger independence and string-crossing coordination.",
+          "description": "Cross diagonally across adjacent strings: Finger 1 on string 6, Finger 2 on string 5, Finger 3 on string 4, and Finger 4 on string 3. This forces each finger to navigate independent string elevations.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Movement: Diagonal stair-step climbing across adjacent strings"
+          },
           "notation": {
-            "title": "Spider Exercise",
-            "alphaTex": "\\ts 4 4\n1.1.8 2.2.8 3.3.8 4.4.8 | 2.1.8 3.2.8 4.3.8 5.4.8 | 3.1.8 4.2.8 5.3.8 6.4.8 | 4.1.8 5.2.8 6.3.8 7.4.8",
-            "staveTitle": "Diagonal Movement Pattern"
+            "title": "Spider Walk Diagonal Movement Pattern",
+            "alphaTex": "\\tempo 65 . \\ts 4 4 staveTitle 'Spider Walk' :8 1.6 2.5 3.4 4.3 2.6 3.5 4.4 5.3 | 3.6 4.5 5.4 6.3 4.6 5.5 6.4 7.3 | :2 7.3 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-purple-50",
@@ -109,29 +153,28 @@
             "colorText": "text-purple-800",
             "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "This exercise challenges your fingers to work independently. Start very slowly and ensure each note rings clearly before moving to the next.",
-            "tempo": "50 BPM"
+            "text": "Ensure no strings buzz or touch adjacent finger edges. Each fingertip must strike perpendicular to the fingerboard to leave adjacent strings free to ring.",
+            "tempo": "65 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Finger Independence Exercises",
-      "exercises": [
+        },
         {
           "number": 4,
-          "title": "Finger Trills",
+          "title": "Isolated Pinky & Ring Finger Trills",
           "difficulty": "Intermediate",
           "borderColor": "border-amber-200",
           "difficultyBg": "bg-amber-100",
           "difficultyText": "text-amber-700",
           "numberBg": "bg-amber-100",
           "numberText": "text-amber-600",
-          "description": "Rapidly alternate between two fingers on the same string. Start with index-middle, then practice all finger combinations: index-ring, index-pinky, middle-ring, middle-pinky, ring-pinky.",
+          "description": "Fingers 3 and 4 are anatomically linked by shared tendons. This targeted trill workout isolates the ring and pinky fingers, rapidly developing independent twitch muscle fibers.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Target: Weak-finger isolation (Fingers 3 & 4 trills, then 2 & 4 trills)"
+          },
           "notation": {
-            "title": "Finger Trills Exercise",
-            "alphaTex": "\\ts 4 4\n5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 5.1.16 7.1.16 | 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 5.1.16 8.1.16 | 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16 5.1.16 9.1.16",
-            "staveTitle": "Index-Middle, Index-Ring, Index-Pinky Trills"
+            "title": "Targeted Ring and Pinky Trill Isolation",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'Pinky Isolation Trills' :16 7.3 8.3 7.3 8.3 7.3 8.3 7.3 8.3 6.3 8.3 6.3 8.3 6.3 8.3 6.3 8.3 | 5.3 8.3 5.3 8.3 5.3 8.3 5.3 8.3 :2 5.3 :4 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-amber-50",
@@ -140,24 +183,33 @@
             "colorText": "text-amber-800",
             "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Keep your hand relaxed and let the fingers do the work. The index-pinky combination is often the most challenging - give it extra attention.",
-            "tempo": "80 BPM (for 16th notes)"
+            "text": "Measure 1 isolates fingers 3 and 4 (frets 7 and 8), followed by fingers 2 and 4 (frets 6 and 8). Measure 2 stretches between fingers 1 and 4. Keep your wrist completely still and generate power purely from the knuckles.",
+            "tempo": "70 BPM (16th notes)"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Advanced Coordination: Permutations & Wide Stretches",
+      "exercises": [
         {
           "number": 5,
-          "title": "Permutation Patterns",
+          "title": "The 24-Permutation Challenge (1-3-2-4 & 1-4-2-3)",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Practice all 24 permutations of fingers 1-2-3-4. This comprehensive exercise builds complete finger independence. Examples: 1-2-3-4, 1-2-4-3, 1-3-2-4, 1-3-4-2, etc.",
+          "description": "Break automated motor loops by forcing non-linear finger sequences. Playing 1-3-2-4 and 1-4-2-3 challenges the brain to uncouple muscle memory and develop true neuromuscular control.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Permutations: 1-3-2-4 (Index-Ring-Middle-Pinky) and 1-4-2-3 (Index-Pinky-Middle-Ring)"
+          },
           "notation": {
-            "title": "Permutation Exercise Examples",
-            "alphaTex": "\\ts 4 4\n1.1.8 2.1.8 4.1.8 3.1.8 | 1.1.8 3.1.8 2.1.8 4.1.8 | 1.1.8 3.1.8 4.1.8 2.1.8 | 1.1.8 4.1.8 2.1.8 3.1.8",
-            "staveTitle": "Sample Permutations: 1-2-4-3, 1-3-2-4, 1-3-4-2, 1-4-2-3"
+            "title": "Non-Linear Permutation Drills: 1-3-2-4 and 1-4-2-3",
+            "alphaTex": "\\tempo 65 . \\ts 4 4 staveTitle 'Permutations' :8 1.6 3.6 2.6 4.6 1.5 3.5 2.5 4.5 | 1.6 4.6 2.6 3.6 1.5 4.5 2.5 3.5 | :2 3.5 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-red-50",
@@ -166,40 +218,172 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Work through each permutation systematically. Some patterns will feel natural while others will be challenging. Focus extra time on the difficult ones.",
+            "text": "Notice how awkward 1-4-2-3 feels compared to 1-2-3-4. That sensation is your brain forging brand-new neural connections. Master these permutations and all guitar solos will immediately feel easier.",
+            "tempo": "65 BPM"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Two-Finger Independence Pivot (Stationary Anchors)",
+          "difficulty": "Advanced",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Anchor Finger 1 firmly on string 6 while fingers 2, 3, and 4 dance across string 5. This exercise prevents sympathetic hand shifting, developing true multi-voice autonomy.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Mechanic: Static anchor on string 6 with dynamic mobility on string 5"
+          },
+          "notation": {
+            "title": "Stationary Finger Anchor & Dynamic Mobility Drill",
+            "alphaTex": "\\tempo 60 . \\ts 4 4 staveTitle 'Stationary Pivot' :8 1.6 2.5 1.6 3.5 1.6 4.5 1.6 3.5 | 2.6 1.5 2.6 3.5 2.6 4.5 2.6 3.5 | :2 2.6 :2 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "Do not let the anchor finger move even a fraction of a millimeter when the mobile fingers stretch across strings. Maintain a light, supple grip with zero thumb tension.",
             "tempo": "60 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Steve Vai Finger Independence & Wide Stretch Master Drill",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "The ultimate test of fretting-hand reach and independence inspired by Steve Vai's 30-hour guitar workout. Covers 4 frets with wide 3NPS diatonic fingerings across strings 6 through 3 with laser-timed alternate picking.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Master Drill: Wide 6-fret span (Frets 5, 7, 8, 10) across adjacent strings"
+          },
+          "notation": {
+            "title": "Steve Vai Wide-Span Finger Independence Master Drill",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Vai Stretch Drill' :16 5.6 7.6 8.6 10.6 5.5 7.5 8.5 10.5 | 5.4 7.4 8.4 10.4 5.3 7.3 8.3 10.3 | :2 10.3 :2 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
+            "title": "Practice Notes",
+            "text": "Use fingers 1 (fret 5), 2 (fret 7), 3 (fret 8), and 4 (fret 10). Drop your fretting wrist slightly and lower your thumb to the bottom half of the neck curve to allow your fingers to fan out naturally without strain.",
+            "tempo": "75 BPM (16th notes)"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Essential Finger Exercise Tips",
+    "title": "Mastering Fretting-Hand Finger Independence",
     "items": [
       {
-        "title": "Building Strength",
-        "colorBg": "bg-gradient-to-br from-green-50 to-emerald-50",
-        "colorBorder": "border-green-200",
-        "colorTitle": "text-green-900",
-        "colorText": "text-green-800",
+        "title": "3 Mistakes That Kill Your Finger Dexterity",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
         "items": [
-          "Practice consistently - daily short sessions beat occasional long ones",
-          "Focus on the pinky - it typically needs the most development",
-          "Use minimum pressure needed for clean notes",
-          "Track your progress with tempo goals"
+          "The Flying Pinky Syndrome: Allowing your 4th finger to flare 2 to 3 inches away from the fretboard when fingers 1, 2, or 3 are playing. This adds massive transit latency and destroys high-speed accuracy.",
+          "Over-Clamping the Thumb: Squeezing the back of the neck like a vice grip. Fretting force should come from arm weight and gentle knuckle flexion, not thumb pinching.",
+          "Collapsing Finger Joints: Letting the first joint of your finger flatten backwards under pressure. Keep every knuckle arched so only the very tip of each fingerpad contacts the string."
         ]
       },
       {
-        "title": "Why Finger Exercises Matter",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
+        "title": "The Science of Finger Independence",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "Strong, independent fingers are the foundation of advanced guitar technique",
-          "Whether you want to play fast solos, complex chord voicings, or intricate fingerpicking patterns, these exercises build the mechanical foundation",
-          "Invest time in these basics and watch your overall playing improve dramatically"
+          "Shared Tendon Anatomy: Fingers 3 (ring) and 4 (pinky) share the extensor digitorum communis tendon. Complete independence is a trained neurological feat, not a natural anatomical default.",
+          "Cortical Remapping: Daily 10-minute permutation practice physically expands the somatosensory cortex map of your fretting fingers in your brain within 4 to 6 weeks.",
+          "Steve Vai's 30-Hour Workout Legacy: Steve Vai codified systematic permutation drills in the late 1980s, proving that deliberate chromatic drills dramatically elevate improvisational fluidness.",
+          "John Petrucci's 'Rock Discipline': Dream Theater's virtuoso emphasizes metronomic chromatic calibration as the non-negotiable warmup before every studio session and stadium concert."
         ]
+      },
+      {
+        "title": "The 10-Minute Daily Finger Warmup Routine",
+        "colorBg": "bg-teal-50",
+        "colorBorder": "border-teal-200",
+        "colorTitle": "text-teal-900",
+        "colorText": "text-teal-800",
+        "items": [
+          "Block 1: Chromatic Staircase & Reverse Descent (3 min) - Run Exercises 1 & 2 at 60 BPM, enforcing the 1-cm fly rule and zero finger joint collapse.",
+          "Block 2: Spider Walk & Pinky Trills (4 min) - Cycle diagonal string crosses and pinky isolation trills at 70 BPM to ignite fast-twitch muscle fibers.",
+          "Block 3: 24-Permutation Challenge & Vai Stretch (3 min) - Drill 1-3-2-4, 1-4-2-3, and the wide-stretch master pattern at 65–75 BPM, keeping wrist and shoulders loose."
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Continue Your Warmup & Technique Journey",
+    "description": "Pair your fretting finger independence with right-hand synchronization and physical flexibility for peak performance.",
+    "gradientFrom": "from-emerald-50",
+    "gradientTo": "to-teal-50",
+    "borderColor": "border-emerald-200",
+    "links": [
+      {
+        "href": "/lessons/practice/warmups/picking-patterns",
+        "title": "Picking Patterns",
+        "description": "Synchronize your nimble fretting fingers with precision right-hand alternate and economy picking.",
+        "linkText": "Master Picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-emerald-400",
+        "iconBg": "bg-emerald-100",
+        "iconHoverBg": "group-hover:bg-emerald-200",
+        "linkColor": "text-emerald-600",
+        "linkHoverColor": "group-hover:text-emerald-700"
+      },
+      {
+        "href": "/lessons/practice/warmups/stretching",
+        "title": "Guitar Stretching",
+        "description": "Protect your tendons and prevent repetitive strain injury with pre- and post-practice stretches.",
+        "linkText": "Explore Stretches",
+        "icon": "🧘",
+        "hoverBorder": "hover:border-teal-400",
+        "iconBg": "bg-teal-100",
+        "iconHoverBg": "group-hover:bg-teal-200",
+        "linkColor": "text-teal-600",
+        "linkHoverColor": "group-hover:text-teal-700"
+      },
+      {
+        "href": "/lessons/practice/technique/legato",
+        "title": "Legato Technique",
+        "description": "Convert finger independence into fluid, multi-note hammer-ons and pull-offs across the fretboard.",
+        "linkText": "Master Legato",
+        "icon": "🌊",
+        "hoverBorder": "hover:border-cyan-400",
+        "iconBg": "bg-cyan-100",
+        "iconHoverBg": "group-hover:bg-cyan-200",
+        "linkColor": "text-cyan-600",
+        "linkHoverColor": "group-hover:text-cyan-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Hand Health & Finger Independence",
+    "items": [
+      {
+        "category": "Individual Finger Exerciser",
+        "product": "D'Addario Varigrip Hand & Finger Exerciser",
+        "reason": "Allows calibrated, spring-loaded resistance training for each individual finger—ideal for isolating the ring and pinky fingers when away from the guitar."
+      },
+      {
+        "category": "Acoustic / Electric Metronome",
+        "product": "Korg TM-60 Tuner & Metronome / Soundbrenner Pulse",
+        "reason": "Rigid rhythmic subdivision is essential for training neuromuscular accuracy during slow chromatic permutation drills."
       }
     ]
   }
