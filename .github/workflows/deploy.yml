@@ -21,6 +21,8 @@ jobs:
           aws-region: ap-southeast-2
 
       - name: Build & Export Next.js
+        env:
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ vars.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-B8JG49MGFD' }}
         run: |
           npm install
           npm install lightningcss-linux-x64-gnu@1.29.2 @tailwindcss/oxide-linux-x64-gnu@4.1.4 @img/sharp-linux-x64@0.34.1 --no-save
