@@ -1,353 +1,327 @@
 {
   "slug": "amps-hybrid",
   "category": "amps",
-  "pageTitle": "Hybrid Amplifiers: Perfect Balance",
-  "subtitle": "Best of both worlds - tube warmth meets solid state reliability",
+  "pageTitle": "Hybrid Amplifiers: Tube Preamp Warmth Meets Solid-State & Class D Muscle",
+  "subtitle": "The ultimate pragmatic engineering blend — real 12AX7 thermionic valve dynamics paired with lightweight, reliable power sections",
   "heroGradient": "bg-gradient-to-r from-green-50 to-teal-50",
   "backLink": {
     "href": "/lessons/gear/amps",
     "label": "Back to Amplifiers"
   },
   "introduction": {
-    "title": "Hybrid Amplifiers: Perfect Balance",
-    "text": "A full tube amp gets its character from every stage in the signal path running through glass, but it's the preamp tubes, not the power section, that do most of the work shaping tone. Hybrid amps exploit that by putting tubes only where they matter most for feel and leaving the power-hungry, wear-prone output stage to solid state circuitry, which keeps a big share of the tube sound at a fraction of the weight, cost, and maintenance of an all-tube head.",
-    "quote": "What You'll Learn:",
+    "title": "Hybrid Amplifiers: Tube Preamp Warmth Meets Solid-State & Class D Muscle",
+    "text": "For decades, guitarists faced an uncompromising trade-off: carry a heavy, fragile, high-maintenance all-tube amplifier to achieve rich touch dynamics and harmonic warmth, or opt for a lightweight, indestructible solid-state amplifier that could feel stiff and clinical when pushed. Hybrid amplifier architecture shatters this false dichotomy through pragmatic audio engineering. By identifying exactly where vacuum tubes contribute the most to musical tone, and where modern semiconductors excel at raw power efficiency, hybrid designs deliver the best of both worlds.\n\nOver 80% of what players perceive as 'tube tone'—the touch-sensitive compression, smooth pick attack, and sweet second-order harmonic overdrive—originates in the high-impedance preamp stages where voltages are shaped. Conversely, power tubes generate massive thermal heat, weigh down the chassis with heavy iron output transformers, and require periodic bias adjustments and tube replacements. By placing a genuine 12AX7 vacuum valve in the preamp to shape tone, and coupling it to a cool-running, ultra-efficient solid-state or Class D power amplifier, hybrid rigs deliver authentic valve feel, featherweight portability, and relentless stage reliability at a fraction of the cost.",
+    "quote": "A hybrid amplifier puts technology where it makes the most musical and physical sense: real thermionic vacuum valves for non-linear analog coloration and pick dynamics, and modern semiconductors for cool, lightweight, bulletproof power delivery that never breaks down on tour.",
     "columns": [
       {
-        "title": "What You'll Learn",
-        "text": "We'll look at how hybrid designs decide which stages get tubes and which get transistors, and why that split affects tone, reliability, and price differently than either pure technology. You'll see the main hybrid configurations in use today, what each is good at, and how to judge whether a hybrid amp actually fits your playing situation better than a full tube head or a modeling amp would."
+        "title": "Thermionic Input Dynamics",
+        "text": "Real 12AX7 vacuum tubes running at high plate voltages deliver genuine pick dynamics, soft-clipping saturation, and volume-pot cleanup.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Solid-State & Class D Muscle",
+        "text": "High-current semiconductor power stages eliminate fragile output transformers, heavy magnetic chokes, and periodic rebiasing.",
+        "icon": "💡"
+      },
+      {
+        "title": "Touring Portability & Value",
+        "text": "Delivering 20W to 500W of stage-ready punch in chassis weighing as little as 1 kg to 4 kg, slashing replacement maintenance costs.",
+        "icon": "🔀"
       }
     ]
   },
   "sections": [
     {
-      "title": "Understanding Hybrid Technology",
+      "title": "Understanding Hybrid Circuit Topologies",
+      "subtitle": "How analog vacuum valves and semiconductor power stages interface inside the chassis",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "The Hybrid Concept",
-          "description": "A hybrid amp puts tubes and transistors where each one is actually good at its job rather than using one technology for the whole signal path. Tubes shape tone through soft, musical compression as they're overdriven, which is a preamp-stage job, while a transistor power section can push a speaker with consistent, reliable output for years without periodic replacement or rebiasing.",
+          "title": "Tube Preamp + Solid-State/Class D Power (The Modern Standard)",
+          "description": "In the overwhelming majority of modern hybrid amplifiers, your guitar signal plugs directly into the high-impedance grid of an analog vacuum tube (usually a 12AX7/ECC83). This tube shapes the initial gain, tone stack, and overdrive harmonics with full analog soft clipping. Once the musical tone has been shaped, the line-level signal is handed over to a linear solid-state or Class D switching power block, which acts as a pristine, high-headroom 'wire with gain' to push the speaker cone without adding harsh transistor clipping.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Preamp Stage", "value": "1x or 2x 12AX7/ECC83 dual-triode tubes operating at high plate voltages (150V–250V)" },
+            { "label": "Power Stage", "value": "Class A/B analog transistor or high-efficiency Class D pulse-width modulation block" },
+            { "label": "Output Transformer", "value": "None required; direct low-impedance coupling directly to 4Ω, 8Ω, or 16Ω speaker loads" },
+            { "label": "Typical Examples", "value": "Orange Micro Terror, Orange Micro Dark, Blackstar HT series, Darkglass Microtubes" }
+          ],
           "items": [
-            "Tubes: Provide warmth and musical compression",
-            "Solid state: Offers reliability and consistent power",
-            "Synergy: Each technology handles what it does best"
+            "Authentic tube response: Digging in with a pick compresses the tube; light fingerpicking stays crystalline and clear",
+            "Zero power tube maintenance: No matched power tube quads to replace, no bias drift, and no microphonic feedback squeal",
+            "Safe operation: Can be run without a speaker cabinet connected for silent headphone practice or direct line recording"
           ]
         },
         {
-          "title": "Design Philosophy",
-          "description": "Most of what a player perceives as \"tube tone\" comes from how the preamp stage reacts to being pushed, not from the power section, so a hybrid design can capture much of that character with only two or three preamp tubes instead of the four to six a full tube head needs. That smaller tube count is also what keeps hybrid amps cheaper to build and cheaper to maintain over their lifetime, since fewer tubes means fewer parts that degrade and need replacing.",
+          "title": "Solid-State Preamp + Valve Power Section (The Heritage Approach)",
+          "description": "A less common but historically significant hybrid topology reverses the order: an ultra-clean, high-headroom solid-state or digital preamp feeds an all-tube power amp stage loaded with 6L6 or EL34 power valves and an iron output transformer. Pioneered by Music Man amplifiers in the 1970s (designed by Leo Fender) and adopted by modern high-end modeling heads, this approach provides immaculate, low-noise clean preamp shaping while retaining the physical power-tube breakup, transformer sag, and loose acoustic resonance of a traditional valve output section.",
           "bgColor": "bg-purple-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Preamp Stage", "value": "Low-noise operational amplifiers (Op-Amps) or digital DSP tone-shaping modules" },
+            { "label": "Power Stage", "value": "Matched pairs or quads of 6L6GC, EL34, or 6550 power tubes driven by a tube phase inverter" },
+            { "label": "Output Transformer", "value": "Heavyweight magnetic transformer matching power tube plate impedance to speaker" },
+            { "label": "Historical Examples", "value": "Music Man HD-130 (used by Eric Clapton and Mark Knopfler), Peavey Heritage" }
+          ],
           "items": [
-            "Cost-effective: Fewer tubes = lower cost",
-            "Reliable: Solid state power section durability",
-            "Musical: Tube preamp character",
-            "Practical: Best of both technologies"
+            "Massive, uncolored clean headroom in the preamp allows complex effects pedals to track without distortion",
+            "Power tubes deliver physical dynamic bloom and speaker cone resonance at high stage volumes",
+            "Heavier weight and higher maintenance than modern Class D hybrid configurations"
           ]
         }
       ]
     },
     {
-      "title": "Hybrid Configurations",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Tube Preamp + Solid State Power",
-          "description": "This is the far more common hybrid layout, because the preamp is where tube saturation and touch response actually happen, while the power section's job is simply to amplify that already-shaped signal cleanly enough to drive a speaker. Putting solid state in the power section instead of the preamp gets you most of the audible tube character at a fraction of the tube count, cost, and maintenance of an all-tube design.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Tone character: Tubes shape the sound",
-            "Power reliability: Solid state amp section",
-            "Cost-effective: Fewer tubes needed",
-            "Examples: Mesa Boogie Express, Peavey Classic series"
-          ]
-        },
-        {
-          "title": "Solid State Preamp + Tube Power",
-          "description": "This configuration flips the usual logic: a solid state preamp gives precise, low-noise tone shaping and easy access to digital features, while tube power amp stages still add their own natural compression and harmonic saturation when driven hard. It's less common because power tubes cost more to run and replace than preamp tubes, so this layout only pays off for designs specifically chasing that power-tube breakup character.",
-          "bgColor": "bg-teal-50",
-          "borderColor": "",
-          "items": [
-            "Precise control: Solid state preamp consistency",
-            "Power tube warmth: Tube output stage character",
-            "Modern features: Digital preamp capabilities",
-            "Examples: Some modern high-gain designs"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Why Choose Hybrid Amplifiers?",
+      "title": "Why Choose a Hybrid Amplifier?",
+      "subtitle": "The tangible performance and lifestyle benefits of hybrid architecture",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Balanced Performance",
-          "description": "A hybrid amp lets you get tube-driven touch sensitivity and harmonic warmth in the preamp without inheriting the failure points of an all-tube power section, so you're not choosing between tone and dependability the way you would with a full tube rig.",
-          "bgColor": "bg-pink-50",
+          "title": "Genuine Valve Touch Dynamics",
+          "description": "Because your pickups connect directly to a real thermionic valve cathode-grid circuit, the dynamic feel under your fingers is identical to an all-tube head. Turning down your guitar's volume knob cleans up the tone effortlessly, retaining sparkling highs and clarity.",
+          "bgColor": "bg-yellow-50",
           "borderColor": "",
           "items": [
-            "Tube warmth and compression",
-            "Solid state reliability",
-            "Reduced maintenance",
-            "Consistent performance"
+            "Natural analog compression under aggressive pick attack",
+            "Musical even-order harmonic distortion (2nd and 4th harmonics)",
+            "Zero digital latency or algorithmic conversion artifacts"
           ]
         },
         {
-          "title": "Cost Effectiveness",
-          "description": "Because only the preamp needs tubes, a hybrid amp needs far fewer of them than a full tube design, and preamp tubes last considerably longer than power tubes since they handle much smaller signal levels, so both the purchase price and the ongoing maintenance cost stay well below a comparable all-tube amp.",
+          "title": "Dramatically Reduced Maintenance",
+          "description": "Preamp tubes operate at low currents and typically last 5 to 10+ years without degrading. Without fragile, high-voltage power tubes, you eliminate expensive annual rebiasing, catastrophic tube blowouts mid-show, and costly transformer repairs.",
+          "bgColor": "bg-pink-50",
+          "borderColor": "",
+          "items": [
+            "No periodic bias adjustments required",
+            "No fragile power tubes to shake loose during transit",
+            "Replacement preamp tube costs a fraction of a matched power quad"
+          ]
+        },
+        {
+          "title": "Featherweight Road Portability",
+          "description": "Eliminating the massive steel chassis and heavy iron transformers required by all-tube power sections cuts amplifier weight by up to 75%. High-power hybrid heads frequently weigh less than 2 kg, sliding easily into a backpack or gig bag.",
           "bgColor": "bg-indigo-50",
           "borderColor": "",
           "items": [
-            "Lower purchase price",
-            "Fewer tubes to replace",
-            "Reduced maintenance costs",
-            "Energy efficient operation"
-          ]
-        },
-        {
-          "title": "Modern Features",
-          "description": "Because the power section is already solid state, a hybrid amp's design doesn't have to work around vacuum tube circuitry to add digital effects, USB recording, or preset memory, so manufacturers can bolt on modern conveniences without giving up the tube-driven preamp tone players build a hybrid amp around in the first place.",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "Digital effects integration",
-            "USB recording interfaces",
-            "Preset memory systems",
-            "MIDI compatibility"
+            "Save your back during load-in and load-out at gigs",
+            "Compact lunchbox enclosures fit easily on bedroom desks",
+            "Universal switch-mode power supplies handle international touring voltages"
           ]
         }
       ]
     },
     {
-      "title": "Notable Hybrid Amplifiers",
+      "title": "Legendary & Modern Hybrid Amplifiers",
+      "subtitle": "The top-rated hybrid guitar heads and combos dominating stages and home studios",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Orange Micro Dark",
+          "badge": { "text": "High-Gain Micro Monster", "bgColor": "bg-orange-100", "textColor": "text-orange-800" },
+          "description": "An ultra-compact 20-watt hybrid powerhouse. Pairing a real 12AX7 valve preamp with a robust solid-state power section, the Micro Dark dishes out ferocious modern high-gain roar, a transparent buffered effects loop, and Orange's intuitive Shape EQ control.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tube", "value": "20W RMS (minimum 8Ω load); 1x 12AX7 preamp tube, solid-state power amp" },
+            { "label": "Controls", "value": "Volume, Gain, and Shape (sweeps midrange from scooped modern metal to mid-forward British rock)" },
+            { "label": "Features", "value": "Fully buffered low-impedance effects loop + CabSim headphone direct out" },
+            { "label": "Dimensions & Weight", "value": "16.5 x 13.5 x 9.5 cm; featherweight 0.78 kg (1.72 lbs)" }
+          ],
+          "items": [
+            "Can drive any standard 8Ω or 16Ω 1x12, 2x12, or 4x12 cabinet with surprising stage authority",
+            "Shape knob allows instant tone morphing without fiddling with multi-knob EQ stacks",
+            "Buffered effects loop accommodates high-end digital delays and reverbs seamlessly"
+          ]
+        },
+        {
+          "title": "Orange Micro Terror",
+          "badge": { "text": "The Lunchbox Pioneer", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The classic micro head that ignited the hybrid revolution. Housing a 12AX7 valve in its preamp, the Micro Terror pumps 20 watts of classic British crunch, warm edge-of-breakup blues, and chiming vintage cleans into real guitar speaker cabinets.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tube", "value": "20W RMS (8–16Ω); 1x 12AX7 valve preamp, solid-state power stage" },
+            { "label": "Controls", "value": "Volume, Tone, and Gain with vintage Orange typography" },
+            { "label": "Connectivity", "value": "1/4\" speaker out, 1/4\" headphone out, 3.5mm Aux input for backing tracks" },
+            { "label": "Chassis", "value": "High-tensile steel white chassis weighing just 0.85 kg (1.87 lbs)" }
+          ],
+          "items": [
+            "Produces authentic vintage British valve chime when Gain is set low and Volume pushed",
+            "Aux-in jack lets you plug in your smartphone to jam along with backing tracks through a 4x12 cab",
+            "Durable metal casing withstands being tossed into a backpack night after night"
+          ]
+        },
+        {
+          "title": "Blackstar HT-5R",
+          "badge": { "text": "Award-Winning Studio Combo", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "A studio and practice masterpiece. Combines an ECC83 (12AX7) valve preamp with a unique push-pull 12BH7 dual-triode valve power stage and solid-state driver circuitry to deliver authentic cranked-valve saturation at manageable 5-watt volumes.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Valves", "value": "5 Watts; 1x ECC83 preamp valve, 1x 12BH7 push-pull valve power amp" },
+            { "label": "Speaker", "value": "1x 12-inch custom-voiced Blackstar 50W speaker" },
+            { "label": "Patented ISF", "value": "Infinite Shape Feature sweeps between American (tight, scooped) and British (warm, woody) EQ" },
+            { "label": "Reverb & I/O", "value": "Digital stereo studio reverb, USB audio direct out, balanced XLR DI out" }
+          ],
+          "items": [
+            "Power reduction switch drops output to 0.5W without sacrificing valve compression or harmonic bloom",
+            "Two foot-switchable channels: pristine American/British clean and fire-breathing overdrive",
+            "Speaker-emulated XLR output features switchable 1x12 and 4x12 voicing for silent recording"
+          ]
+        },
+        {
+          "title": "Blackstar HT-1R",
+          "badge": { "text": "1-Watt Bedroom Master", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "The ultimate 1-watt personal practice combo. Built around a dual-triode ECC83 and ECC82 valve configuration with solid-state driver stages, the HT-1R produces full, screaming valve saturation and rich sustain at whisper bedroom sound levels.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Valves", "value": "1 Watt; 1x ECC83 (12AX7) and 1x ECC82 (12AU7)" },
+            { "label": "Speaker", "value": "1x 8-inch custom-designed Blackstar speaker" },
+            { "label": "Tone Shaping", "value": "Patented ISF control + Voice switch on both Clean and Overdrive channels" }
+          ],
+          "items": [
+            "Delivers singing power-valve distortion at conversational apartment listening volumes",
+            "Studio-quality digital reverb adds depth and spatial dimension to solo rehearsals",
+            "USB-C direct recording output connects directly to your digital audio workstation (DAW)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "High-Power Hybrid Bass & Stage Flagships",
+      "subtitle": "Professional touring powerhouses pairing boutique analog preamps with massive Class D muscle",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Classic Hybrids",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
+          "title": "Mesa Boogie Subway D-800",
+          "badge": { "text": "800W Pro Touring Standard", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "Mesa Boogie's benchmark lightweight bass head. Combines an ultra-musical boutique analog preamp with an authoritative 800-watt Class D power amplifier, active 4-band EQ with sweepable midrange, and an impedance switch stable down to 2 ohms.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power Output", "value": "800 Watts @ 4Ω / 2Ω (400 Watts @ 8Ω); Class D switching power block" },
+            { "label": "Preamp Topology", "value": "All-analog discrete solid-state/FET preamp voiced with classic Mesa warmth" },
+            { "label": "Voicing Control", "value": "Variable Voicing control contours from flat, articulate studio clean to deep vintage scoop" },
+            { "label": "Weight", "value": "Featherweight 2.5 kg (5.5 lbs); fits inside a gig bag accessory pocket" }
+          ],
           "items": [
-            "Peavey Classic 30: Pairs a tube preamp with a solid state power section, which is why it earned a reputation as a dependable, no-fuss workhorse across blues, rock, and country gigs for decades.",
-            "Mesa Boogie Express 5:25: Runs an all-tube preamp and uses a solid state rectifier rather than a tube one, trading a small amount of the sag and compression a full tube rectifier adds for faster, more consistent response and one fewer part that can fail."
+            "2-ohm impedance switch allows powering up to four 8-ohm cabinets simultaneously on festival stages",
+            "Balanced XLR line out features Pre/Post EQ switching, Ground Lift, and Mic/Line level padding",
+            "Ultra-quiet cooling fan and rugged aluminum construction engineered for worldwide tours"
           ]
         },
         {
-          "title": "Modern Innovations",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
+          "title": "Darkglass Microtubes 500v2",
+          "badge": { "text": "Modern High-Gain Bass Authority", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Engineered in Helsinki, Finland, the Microtubes 500v2 pairs Darkglass's world-famous analog Microtubes overdrive engine with a punchy 500-watt Class D power amplifier, studio VCA compressor, 6-band graphic EQ, and dual Impulse Response (IR) cabinet simulation slots.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power Output", "value": "500 Watts RMS @ 4Ω (250 Watts @ 8Ω); ultra-fast Class D output" },
+            { "label": "Dual Overdrive Circuits", "value": "Vintage Microtubes (warm tube compression) and B3K (modern aggressive clank)" },
+            { "label": "Cabinet IR Slots", "value": "Store up to 3 high-resolution speaker cabinet IRs for direct FOH and headphone feeds" },
+            { "label": "Audio Interface", "value": "USB connectivity for loading custom IRs and direct DAW digital tracking" }
+          ],
           "items": [
-            "Orange Rocker 15: Combines a tube preamp with solid state power and a built-in attenuator, so you can drive the tube stage into its natural breakup at a volume that's actually usable in an apartment or small studio.",
-            "Blackstar HT Club 40: Its ISF (Infinite Shape Feature) control lets you dial continuously between a scooped American voicing and a midrange-forward British one, blending tonal territory that would normally require switching amps entirely."
+            "Studio-grade VCA compressor smooths pick transients before hitting the overdrive circuit",
+            "Blend control mixes pure clean bass fundamental underneath saturated overdrive for maximum low-end punch",
+            "The industry-standard amplifier for modern metal, progressive rock, and aggressive slap bass"
           ]
         }
       ]
     },
     {
-      "title": "Hybrid Amp Maintenance",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Reduced Maintenance",
-          "description": "With no power tubes to age, bias, or match, a hybrid amp removes the maintenance task that causes most tube-amp downtime and repair bills, leaving only a small set of preamp tubes that see far less electrical stress and last correspondingly longer.",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Fewer tubes: Only preamp tubes need replacement",
-            "No bias adjustment: Solid state power section",
-            "Longer tube life: Preamp tubes last longer",
-            "No output tube matching: Simplified service"
-          ]
-        },
-        {
-          "title": "Service Schedule",
-          "description": "Because the parts under the most stress in a full tube amp simply aren't tubes here, a hybrid amp can go years between any real service, with most owners only needing to swap preamp tubes occasionally and clean pots when they start to crackle.",
-          "bgColor": "bg-blue-50",
-          "borderColor": "",
-          "items": [
-            "Preamp tubes: Replace every 2-5 years",
-            "Basic cleaning: Annual dust removal",
-            "Control cleaning: As needed for scratchy pots",
-            "Professional service: Every 5-10 years"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Hybrid Tone Characteristics",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Clean Tones",
-          "description": "A tube preamp adds subtle harmonic richness and compression even at clean settings, while a solid state power section keeps that signal clean at volumes a small tube power amp would already be breaking up at, which is why hybrids are often praised specifically for their clean headroom.",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "items": [
-            "Tube preamp warmth: Musical compression and harmonics",
-            "SS power headroom: Clean at high volumes",
-            "Consistent response: Reliable performance night after night",
-            "Dynamic range: Good touch sensitivity"
-          ]
-        },
-        {
-          "title": "Overdriven Tones",
-          "description": "Because a hybrid gets its overdrive almost entirely from the preamp tubes rather than a full tube power section, the breakup tends to be more predictable and less volume-dependent than a full tube amp's, where power tube saturation only kicks in as you turn up. Exactly how that translates to feel depends heavily on which specific stages are tube versus solid state in a given amp.",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "items": [
-            "Preamp saturation: Tube preamp provides musical distortion",
-            "Controlled breakup: More predictable than full tube",
-            "Tight response: Solid state power aids note definition",
-            "Volume independence: Same tone at all volumes"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "When to Choose Hybrid",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Gigging Musicians",
-          "description": "A tube failing mid-set is one of the most common ways a full tube rig ruins a gig, and a hybrid amp removes that risk from the power section entirely while still giving you enough tube character in the preamp that the tone doesn't feel like a compromise.",
-          "bgColor": "bg-teal-50",
-          "borderColor": "",
-          "items": [
-            "Consistent night-to-night performance",
-            "Reduced risk of tube failure",
-            "Lower maintenance between gigs",
-            "Good balance of tone and practicality"
-          ]
-        },
-        {
-          "title": "Home Players",
-          "description": "A hybrid amp lets you hear real tube-driven preamp saturation without committing to the periodic tube replacement, rebiasing, and higher repair costs a full tube amp eventually demands, which makes it an easier long-term choice for someone playing mostly at home.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Lower volume tube tone access",
-            "Minimal maintenance requirements",
-            "Often include headphone outputs",
-            "Good value for money"
-          ]
-        },
-        {
-          "title": "Studio Use",
-          "description": "A solid state power section means no warm-up period and no output drifting as tubes age partway through a session, which matters in a studio setting where you need the same tone take after take, sometimes across sessions recorded weeks apart.",
-          "bgColor": "bg-pink-50",
-          "borderColor": "",
-          "items": [
-            "No warm-up time needed",
-            "Consistent session to session",
-            "Good direct recording capabilities",
-            "Multiple tonal options available"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Hybrid vs. Other Technologies",
+      "title": "Amplifier Architecture Comparison Table",
+      "subtitle": "How hybrid designs compare across key engineering and performance metrics",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "table",
-      "tableHeaders": ["Feature", "Hybrid", "Full Tube", "Solid State", "Modeling"],
+      "tableHeaders": ["Operational Metric", "Hybrid (Tube Pre / Class D Power)", "All-Tube Rig (Valve Pre & Power)", "All-Solid-State (Class A/B)", "Digital Modeler (DSP / Profiling)"],
       "tableRows": [
-        ["Tube Character", "Good", "Excellent", "Limited", "Variable"],
-        ["Reliability", "Very Good", "Good", "Excellent", "Excellent"],
-        ["Maintenance", "Low", "High", "Very Low", "Very Low"],
-        ["Cost", "Medium", "High", "Low", "Medium"],
-        ["Versatility", "Good", "Good", "Good", "Excellent"]
+        ["Tube Feel & Touch Dynamics", "High (100% authentic analog tube preamp compression)", "Maximum (Preamp + power tube + transformer sag)", "Moderate (Crisp, linear; smoothed by JFET circuits)", "High (Algorithmic / neural network simulation)"],
+        ["Weight per 100 Watts", "Ultra-light (1.5 kg – 4 kg)", "Extremely Heavy (25 kg – 45 kg)", "Moderate (12 kg – 20 kg)", "Ultra-light (2 kg – 5 kg)"],
+        ["Maintenance Burden", "Very Low (Preamp tube lasts 5–10 years)", "High (Replace power tubes 1–2 yrs; periodic bias)", "Virtually Zero (Semiconductors do not wear out)", "Virtually Zero (Occasional firmware updates)"],
+        ["Silent Recording / Load Safety", "Safe (Can run without speaker cabinet connected)", "DANGEROUS (Destroys transformer without speaker load)", "Safe (Safe to operate with no speaker connected)", "Safe (Engineered specifically for direct out tracking)"],
+        ["Cost per Watt of Output", "Extremely Low ($1 to $2 per watt)", "High ($10 to $25 per watt)", "Low ($2 to $4 per watt)", "Moderate ($4 to $8 per watt)"],
+        ["Tonal Versatility", "Fixed core character (Modded by tube rolling)", "Single fixed analog sonic signature", "Single fixed analog sonic signature", "Limitless (Hundreds of virtual amps & cabs)"]
       ]
     },
     {
-      "title": "Choosing a Hybrid Amplifier",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Home Practice",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Orange Rocker 15",
-            "Blackstar HT-1R",
-            "Vox AC15C1",
-            "Peavey Classic 20 MH"
-          ]
-        },
-        {
-          "title": "Small Venues",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Peavey Classic 30",
-            "Mesa Express 5:25",
-            "Blackstar HT Club 40",
-            "Orange Rocker 32"
-          ]
-        },
-        {
-          "title": "Professional",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Mesa Express 5:50",
-            "Peavey Classic 50",
-            "Blackstar HT Stage 100",
-            "Orange Rockerverb 50C"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Future of Hybrid Design",
+      "title": "Tube Rolling & Maintenance in Hybrid Amplifiers",
+      "subtitle": "How to safely customize your preamp tube to alter gain structure and headroom",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Digital Integration",
-          "description": "Newer hybrid designs increasingly add digital effects loops and control surfaces around the analog signal path while keeping the actual tone-shaping tube stages untouched, so players get modern conveniences without the amp's core character passing through any digital conversion.",
-          "bgColor": "bg-blue-50",
-          "borderColor": ""
+          "title": "The Art of Tube Rolling: Swapping 12AX7 Variants",
+          "description": "Because a hybrid amplifier typically features only one or two preamp tubes and zero power tubes, you can completely reshape the amplifier's gain structure, treble response, and headroom by 'tube rolling' (swapping different brands or gain variants into the V1 socket). Unlike all-tube heads where power tubes require bias meters, preamp tubes in hybrid amplifiers are 100% plug-and-play self-biasing.",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Tung-Sol 12AX7", "value": "Big, open 3D soundstage, musical highs, punchy low-end; great for blues and classic rock" },
+            { "label": "JJ Electronics ECC83S", "value": "Warm, darker top-end, thick midrange; ideal for taming overly bright or harsh treble" },
+            { "label": "Electro-Harmonix 12AX7", "value": "High gain, aggressive upper-mid bite, articulate crunch; preferred for heavy metal and hard rock" },
+            { "label": "5751 Dual Triode", "value": "Gain factor 70 (compared to 12AX7's 100); dramatically expands clean headroom and smooths breakup" }
+          ],
+          "items": [
+            "Swapping in a 12AT7 (gain 60) or 5751 produces a sweeter, warmer clean channel that breaks up later",
+            "Vintage New Old Stock (NOS) Mullard or RCA tubes add luxurious vintage compression and depth",
+            "An inexpensive $20–$30 tube swap can completely rejuvenate your tone without buying a new amplifier"
+          ]
         },
         {
-          "title": "Improved Efficiency",
-          "description": "Manufacturers continue refining hybrid circuit designs to extend preamp tube life and reduce power draw, chasing more of a full tube amp's harmonic behavior from an even smaller number of tube stages.",
-          "bgColor": "bg-purple-50",
-          "borderColor": ""
+          "title": "Safe Tube Replacement Procedure",
+          "description": "Replacing the preamp tube in a hybrid amplifier is simple and completely safe when following basic safety precautions. Because you do not need to access the power amplifier circuitry, there is zero risk of high-voltage capacitor shock if the amplifier is properly powered down and disconnected.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Step 1: Power Down", "value": "Flip power switch to OFF and disconnect the AC power cord from the wall outlet" },
+            { "label": "Step 2: Allow Cooling", "value": "Wait 5 to 10 minutes for the vacuum tube glass envelope to cool down completely" },
+            { "label": "Step 3: Gentle Extraction", "value": "Grasp tube firmly with a clean cloth; gently rock in tiny circles while pulling straight upward" },
+            { "label": "Step 4: Pin Alignment", "value": "Note the gap in the 9-pin mini circle; align tube pins with socket holes and push gently down" }
+          ],
+          "items": [
+            "NEVER force a tube into the socket; if pins do not slide in smoothly, check alignment gap",
+            "Avoid touching tube glass with oily bare fingers; oils create hot spots on the glass envelope",
+            "Store spare tubes in bubble wrap inside your gig bag for instant emergency roadside replacement"
+          ]
         }
       ]
     }
   ],
   "relatedTopics": [
     {
-      "title": "Modeling Amps",
-      "href": "/lessons/gear/amps/modeling",
-      "description": "Digital versatility and modern features",
+      "title": "Tube Amplifiers",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Thermionic valve physics, harmonic saturation, and all-tube circuit topologies",
+      "icon": "🔥",
       "bgColor": "bg-white"
     },
     {
-      "title": "Bass Amps",
-      "href": "/lessons/gear/amps/bass",
-      "description": "Specialized amplification for bass guitar",
+      "title": "Solid-State Amplifiers",
+      "href": "/lessons/gear/amps/solid-state",
+      "description": "Semiconductor precision, high-headroom clean tone, and Class D power efficiency",
+      "icon": "💡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Mini & Practice Amplifiers",
+      "href": "/lessons/gear/amps/mini",
+      "description": "Compact desktop heads, bedroom-volume practice combos, and headphone rigs",
+      "icon": "🔊",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Overdrive Pedals Guide",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Pushing 12AX7 preamp stages into singing harmonic saturation with boost and drive pedals",
+      "icon": "⚡",
       "bgColor": "bg-white"
     }
   ]

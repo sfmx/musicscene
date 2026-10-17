@@ -1,342 +1,392 @@
 {
   "slug": "amps-modeling",
   "category": "amps",
-  "pageTitle": "Modeling Amplifiers: The Digital Revolution",
-  "subtitle": "Digital versatility - hundreds of amps, effects, and possibilities in one package",
+  "pageTitle": "Modeling Amplifiers: Digital Signal Processing, Profiling & Impulse Responses",
+  "subtitle": "The digital revolution — component-level DSP math, neural network profiling, IR convolution, FRFR rigs & studio integration",
   "heroGradient": "bg-gradient-to-r from-purple-50 to-pink-50",
   "backLink": {
     "href": "/lessons/gear/amps",
     "label": "Back to Amplifiers"
   },
   "introduction": {
-    "title": "Modeling Amplifiers: The Digital Revolution",
-    "text": "A modeling amp doesn't contain a tiny Marshall stack or a miniature Fender circuit inside it; instead it runs digital signal processing that mathematically recreates how those amps' components respond to your playing, down to how a specific transformer sags under load or how a particular speaker rolls off high frequencies. That approach means a single unit can switch between dozens of amp characters instantly, something no analog amp, however versatile, can do.",
-    "quote": "What You'll Learn:",
+    "title": "Modeling Amplifiers: Digital Signal Processing, Profiling & Impulse Responses",
+    "text": "Guitar amplification has undergone an epochal transformation over the past two decades. Early digital modelers in the late 1990s relied on basic wave-shaping lookup tables and static equalizer filters that approximated the general EQ curve of classic tube amps but failed to capture how an amplifier breathes, sags, and reacts to pick attack. Today, modern digital modeling runs on dedicated multi-core floating-point Digital Signal Processors (DSP) calculating the real-time differential equations of non-linear tube grids, transformer core saturation, power supply ripple, and complex speaker impedance curves at 96 kHz with imperceptible round-trip latencies under 2 milliseconds.\n\nFrom modern combo workhorses to floorboard touring supercomputers and neural machine-learning profiling units, digital modeling grants guitarists access to hundreds of priceless vintage amplifiers, rare boutique heads, boutique studio effects chains, and microphoned speaker cabinets in a single road-ready package. Furthermore, digital modeling solves the greatest dilemma of modern gigging and home recording: delivering the roaring harmonic saturation of a cranked 100-watt stack directly into an audio interface or front-of-house PA system at whisper volumes without a single microphone in the room.",
+    "quote": "Digital modeling no longer merely imitates an amplifier's static tone; modern algorithms solve the physical equations of vacuum tube grids, power supply capacitors, and reactive speaker voice coils in real time. You aren't playing a sample; you are playing a virtual analog circuit operating inside a supercomputer.",
     "columns": [
       {
-        "title": "What You'll Learn",
-        "text": "We'll cover how digital modeling actually recreates classic amp behavior rather than just approximating a similar sound, and what that buys you in practice: instant access to many amp characters, recording features analog amps can't offer, and no tube maintenance. You'll also see how to choose between modeling amps at different budgets and how to get a model actually sounding like the amp it's based on rather than a generic digital approximation of one."
+        "title": "Component Modeling vs. Neural Profiling",
+        "text": "The fundamental divide between algorithmic component simulation (calculating physical circuit behavior) and dynamic neural profiling (machine-learning acoustic capture).",
+        "icon": "🖥️"
+      },
+      {
+        "title": "Impulse Response (IR) Convolution",
+        "text": "How mathematical audio convolution captures the exact phase, frequency, and room acoustic signature of legendary speakers, cabinets, and studio microphones.",
+        "icon": "🔊"
+      },
+      {
+        "title": "FRFR Monitoring & Studio Direct",
+        "text": "Mastering Full-Range Flat-Response stage monitoring, Front-of-House direct sends, and USB multi-channel DAW recording workflows.",
+        "icon": "🎛️"
       }
     ]
   },
   "sections": [
     {
-      "title": "How Modeling Technology Works",
+      "title": "How Digital Modeling Works: Inside the DSP Engine",
+      "subtitle": "The mathematics and acoustic physics turning raw digital code into touch-sensitive valve tone",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Digital Signal Processing",
-          "description": "Modern modeling doesn't just apply a filter that sounds vaguely like a Marshall or a Fender; it runs a mathematical simulation of the actual circuit, tracking how a specific tube type saturates, how a transformer behaves under load, and how a particular speaker and cabinet color the sound before it reaches your ears. That component-level approach is why a good modeler can capture the subtle differences between two amps that look similar on paper but feel very different to play.",
+          "title": "Component-Level Circuit Simulation",
+          "description": "Modern component-level modeling software (such as Line 6 HX and Fractal Audio) starts with authentic electrical engineering schematics. Every resistor, capacitor, potentiometer, transformer, and vacuum tube is translated into non-linear mathematical differential equations. The DSP recalculates these equations tens of thousands of times per second, accurately simulating how a V1 preamp tube compresses under heavy pick transients, how negative feedback dampens high frequencies, and how a rectifier tube sags when hit by heavy chords.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "A/D & D/A Converters", "value": "24-bit / 96kHz converters with 120dB+ dynamic range capturing subtle pick nuances" },
+            { "label": "Latency Ceiling", "value": "Under 1.5ms to 2.5ms roundtrip (faster than sound traveling 1 meter through air)" },
+            { "label": "Dynamic Power Sag", "value": "Simulates capacitor discharge and voltage drop under heavy power amp load" },
+            { "label": "Impedance Interaction", "value": "Hardware analog input circuits adapt input impedance to match guitar pickup loading" }
+          ],
           "items": [
-            "Circuit modeling: Simulates tube and transistor behavior",
-            "Speaker simulation: Models cabinet and speaker response",
-            "Room modeling: Recreates acoustic environments"
+            "Responds organically to guitar volume pot roll-off from searing lead to pristine clean",
+            "Models interactive tone stacks where adjusting Bass directly alters Treble and Mid frequency slopes",
+            "Zero component wear or thermal degradation: virtual tubes never age, microphonically squeal, or fail"
           ]
         },
         {
-          "title": "Advanced Algorithms",
-          "description": "Newer modeling processors train neural networks directly on recordings and measurements taken from real amplifiers rather than relying purely on hand-built circuit equations, which lets them capture idiosyncrasies of a specific unit, including the exact tube or transformer quirks of the amp that was profiled, that a general circuit model would smooth over.",
-          "bgColor": "bg-green-50",
+          "title": "Impulse Response (IR) Speaker Convolution",
+          "description": "More than 70% of an electric guitar's audible tone is shaped by the speaker cabinet, the speaker cone frequency response, the microphone model, and its physical placement in the room. An Impulse Response (IR) is a high-resolution mathematical audio recording (typically 2048 to 4096 samples) capturing how a physical cabinet vibrates when struck by a test impulse. Convolving this IR filter against the virtual amp's output delivers the exact tonal resonance of an iconic vintage 4x12 cab recorded through a Shure SM57 or Royer R-121 ribbon mic in a million-dollar studio.",
+          "bgColor": "bg-purple-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Sampling Resolution", "value": "2048 to 8192 sample points capturing detailed phase and low-frequency resonance" },
+            { "label": "Microphone Placement", "value": "Simulates mic distance, off-axis angle, and proximity bass-boost effect" },
+            { "label": "Third-Party IRs", "value": "Load custom cabinet captures from Celestion, OwnHammer, Two Notes, and York Audio" },
+            { "label": "Acoustic Neutrality", "value": "Eliminates room flutter echoes, microphone bleed, and stage volume limitations" }
+          ],
           "items": [
-            "Neural networks: AI-powered tone modeling",
-            "Impulse responses: Precise speaker cabinet modeling",
-            "Non-linear processing: Accurate tube saturation",
-            "Dynamic response: Touch-sensitive playing feel"
+            "Instantly switch between an open-back 1x12 Jensen combo and a closed-back 4x12 Marshall Greenback stack",
+            "Consistent front-of-house tone at every venue regardless of room size or stage acoustics",
+            "Allows silent home recording with authentic acoustic cabinet depth and resonance"
           ]
         }
       ]
     },
     {
-      "title": "Why Choose Modeling Amplifiers?",
+      "title": "The Evolution of Modeling: From Filter Algorithms to AI Neural Networks",
+      "subtitle": "Three distinct technological generations that redefined guitar gear",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Versatility",
-          "description": "Owning even a handful of the classic amps modeled in a typical unit, a vintage Fender, a British stack, a high-gain modern head, would cost many times the price of the modeler and take up a room, which is the practical case for versatility: one box replaces an amp collection for players who need different tones for different songs or sessions.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Multiple amp models",
-            "Built-in effects",
-            "Speaker simulations",
-            "Preset storage"
-          ]
-        },
-        {
-          "title": "Modern Features",
-          "description": "Because the signal is already digital inside the unit, adding USB recording, Bluetooth, or MIDI control doesn't require any extra analog circuitry the way it would in a tube amp, so these features come essentially for free in a way that keeps modeling amps ahead of analog designs on connectivity.",
-          "bgColor": "bg-pink-50",
-          "borderColor": "",
-          "items": [
-            "USB recording interface",
-            "Bluetooth connectivity",
-            "Mobile app control",
-            "MIDI integration"
-          ]
-        },
-        {
-          "title": "Practicality",
-          "description": "A modeling amp has no tubes to age or replace and can go from a bedroom at headphone volume to a stage through a full-range speaker without changing the tone underneath, which is exactly what a gigging or recording musician needs when consistency across very different volumes and rooms matters more than one signature analog sound.",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "items": [
-            "Silent practice with headphones",
-            "No tube maintenance",
-            "Lightweight and portable",
-            "Instant tone access"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Types of Modeling Technology",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Analog Modeling",
-          "description": "Analog modeling uses actual analog circuitry, op-amps and diodes rather than tube stages, arranged to approximate how a tube circuit responds, which keeps latency at zero since nothing is converted to digital audio. It's a simpler, less precise approach than full digital modeling, but that simplicity is also why it reacts instantly and predictably under a player's hands.",
-          "bgColor": "bg-teal-50",
-          "borderColor": "",
-          "items": [
-            "Circuit-based: Analog components mimic tube response",
-            "Real-time: Zero latency processing",
-            "Natural feel: Responds like analog circuits",
-            "Examples: Tech 21 SansAmp, AMT Electronics"
-          ]
-        },
-        {
-          "title": "Digital Modeling",
-          "description": "Digital modeling converts the guitar signal to digital audio and runs it through software algorithms, which trades a small amount of processing latency for the ability to model any amp with far greater precision, and to add or refine models later through a firmware update rather than needing new hardware.",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "DSP-based: Software algorithms process signal",
-            "Precise modeling: Exact component-level simulation",
-            "Updateable: New models via firmware updates",
-            "Examples: Line 6 Helix, Fractal Axe-FX"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Leading Modeling Amplifiers",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Professional Level",
+          "title": "Generation 1: Waveshaping & Static EQ",
+          "badge": { "text": "1998–2009 · The Pioneers", "bgColor": "bg-gray-100", "textColor": "text-gray-800" },
+          "description": "Early digital modelers (Line 6 POD bean, early Roland COSM) used static waveshaping lookup tables combined with basic frequency equalization curves. While revolutionary for home practice and demo recording, they lacked dynamic touch response and often sounded fizzy or compressed.",
           "bgColor": "bg-gray-50",
-          "borderColor": "",
+          "fields": [
+            { "label": "Processing Architecture", "value": "Low-bitrate fixed-point DSPs with limited mathematical headroom" },
+            { "label": "Cabinet Simulation", "value": "Basic static IIR EQ filter curves without time-domain impulse response" },
+            { "label": "Limitations", "value": "Fizzy high-end decay, lack of volume knob cleanup, audible pick latency" }
+          ],
           "items": [
-            "Fractal Audio Axe-FX III: Widely regarded as one of the most accurate amp modelers available, precise enough that touring players including Steve Vai and John Petrucci have incorporated it into their live rigs.",
-            "Line 6 Helix Floor: A comprehensive all-in-one modeling and effects floor unit with extensive I/O, common in both studio setups and touring live rigs where reliability under stage conditions matters as much as tone."
+            "Introduced guitarists to the concept of carrying an entire amp collection in a gig bag",
+            "Pioneered early USB recording and preset memory storage"
           ]
         },
         {
-          "title": "Consumer Favorites",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "items": [
-            "Boss Katana Series: Blends a large library of amp voicings with an analog-feeling power stage, landing a reputation for sounding more like a real amp under your hands than its price would suggest.",
-            "Fender Mustang GTX: Modern modeling housed in classic Fender styling with smartphone app integration, aimed at players who want Fender-family tones plus modern conveniences for home and small-venue use."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Maximizing Your Modeling Amp",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Start with Presets",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "items": [
-            "Explore factory presets first",
-            "Learn what each model excels at",
-            "Use presets as starting points",
-            "Download artist presets online"
-          ]
-        },
-        {
-          "title": "Fine-Tuning",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "items": [
-            "Adjust for your guitar and playing style",
-            "Consider your output device (speakers/headphones)",
-            "Use global EQ to match your room",
-            "Save your tweaked versions"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recording with Modeling Amps",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Direct Recording",
-          "description": "Because cabinet and microphone behavior are already modeled inside the unit, a modeling amp can go straight into a DAW over USB with no real microphone or acoustically treated room needed, which is exactly why they've become a default choice for home recording.",
+          "title": "Generation 2: Component Modeling & High-Res IRs",
+          "badge": { "text": "2010–2019 · Pro Stage Standard", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The era of high-power multi-core DSPs (Line 6 Helix, Fractal Axe-Fx, Boss Tube Logic). Engineers modeled virtual circuits component-by-component, including transformer saturation, tube grid conduction, and full IR convolution. Touring stadium bands adopted digital rigs en masse.",
           "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "fields": [
+            { "label": "Processing Architecture", "value": "Dual SHARC floating-point DSPs running complex non-linear physics algorithms" },
+            { "label": "Cabinet Simulation", "value": "High-resolution 2048-sample IR convolution blocks with dual-mic blending" },
+            { "label": "Breakthrough", "value": "Indistinguishable from real tube amps in blind double-blind listening tests" }
+          ],
           "items": [
-            "USB interface: Direct to DAW recording",
-            "Cabinet simulation: No microphone needed",
-            "Consistent results: Same tone every time",
-            "Silent recording: Perfect for home studios"
+            "Complete integration of complex multi-effects, MIDI routing, and stage switching",
+            "Became the dominant touring backline standard for professional arena and Broadway productions"
           ]
         },
         {
-          "title": "Live Performance",
-          "description": "Running a modeling amp through a full-range, flat-response (FRFR) speaker rather than a traditional guitar cabinet lets the unit's own cabinet modeling do the tone-shaping work, and instant preset switching means a single unit can cover a whole set's worth of different amp tones without anyone touching a knob between songs.",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
+          "title": "Generation 3: Machine Learning & Neural Capturing",
+          "badge": { "text": "2020+ · The AI Frontier", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Modern units (Kemper Profiler, Neural DSP Quad Cortex, open-source Neural Amp Modeler) train deep learning neural networks directly on test signals sent through physical amplifiers. The neural net captures the exact acoustic DNA, quirks, and tube tolerances of a specific physical rig in minutes.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Processing Architecture", "value": "Multi-core DSPs paired with dedicated neural network machine learning inference engines" },
+            { "label": "Capture Methodology", "value": "Sends sine sweeps and complex noise bursts into an amp, training a neural net on output" },
+            { "label": "Accuracy", "value": "Captures micro-tolerances, vintage transformer drift, and boutique modded quirks" }
+          ],
           "items": [
-            "FRFR speakers: Full range, flat response monitoring",
-            "Preset switching: Song-specific tones instantly",
-            "Effects integration: Complete signal processing",
-            "Backup reliability: Multiple amp models available"
+            "Profile your own favorite vintage tube amp at home and take the exact sound on world tours",
+            "Access cloud communities with tens of thousands of verified captures of rare million-dollar rigs"
           ]
         }
       ]
     },
     {
-      "title": "Modeling vs. Traditional Amplifiers",
+      "title": "Industry-Leading Modeling Amplifiers & Combos",
+      "subtitle": "The most acclaimed and versatile digital guitar amplifiers on the global market",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Boss Katana 100 Gen 3",
+          "badge": { "text": "The World's Best-Selling Modeler", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The third generation of Boss's revolutionary Katana series. Powered by refined Tube Logic technology, it delivers 100 watts of stage-ready punch through a custom 12-inch speaker, featuring the newly developed 'Pushed' edge-of-breakup voicing, 6 amp characters, and 60+ studio Boss effects.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Speaker", "value": "100W (attenuated to 50W and 0.5W); 1x 12-inch custom Katana speaker" },
+            { "label": "Amp Characters", "value": "Acoustic, Clean, Pushed, Crunch, Lead, and Brown (each with a selectable variation)" },
+            { "label": "Effects & Software", "value": "5 simultaneous effect sections, 60+ Boss pedal effects via Boss Tone Studio app" },
+            { "label": "Connectivity", "value": "USB-C audio interface, stereo headphone out, line out, power amp in, GA-FC footswitch" }
+          ],
+          "items": [
+            "Power Control scales output to 0.5W for rich, saturated cranked-tube feel at whisper apartment volumes",
+            "Stereo Expand function links two Katana units together for massive 200W stereo stage spread",
+            "Direct recording output features selectable cabinet resonance simulation (Vintage, Modern, Deep)"
+          ]
+        },
+        {
+          "title": "Line 6 Helix Floor",
+          "badge": { "text": "Flagship Touring Supercomputer", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The flagship professional floorboard modeler trusted on stadium tours worldwide. Driven by dual-SHARC DSP processors, Helix delivers over 300 authentic amp, cab, and effects models, 12 touch-sensitive capacitive footswitches with custom LCD scribble strips, and extensive audio I/O.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "DSP Architecture", "value": "Dual SHARC DSPs running Line 6 HX component-level modeling engine" },
+            { "label": "Hardware Interface", "value": "12 touch-capacitive footswitches with customizable color rings and LCD scribble strips" },
+            { "label": "Audio Routing", "value": "4 discrete stereo signal paths, 4 external effects loops, XLR mic preamp with phantom power" },
+            { "label": "Direct Recording", "value": "8-in / 8-out 24-bit/96kHz USB audio interface with hardware re-amping capabilities" }
+          ],
+          "items": [
+            "Snapshots feature allows instant glitch-free switching between 8 tonal scenes within a single preset",
+            "Supports high-resolution third-party custom IR cabinet loading with customizable low/high-pass filters",
+            "Rugged aircraft-grade extruded aluminum chassis built for relentless worldwide touring"
+          ]
+        },
+        {
+          "title": "Fender Mustang GTX50",
+          "badge": { "text": "Connected Smart Combo", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "A modern 50-watt digital combo featuring 40 classic amplifier models (from vintage Tweed Deluxes to modern high-gain stacks), dozens of studio effects, a 12-inch Celestion speaker, and built-in Wi-Fi for wireless firmware updates and cloud preset sharing via the Fender Tone app.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Speaker", "value": "50 Watts; 1x 12-inch Celestion G12F-60 speaker" },
+            { "label": "Models & FX", "value": "40 authentic amplifier models, dozens of classic stompbox and studio delay/reverb effects" },
+            { "label": "Wireless Features", "value": "Onboard Wi-Fi for direct downloads; Bluetooth audio streaming and app editing" }
+          ],
+          "items": [
+            "Full-color LCD display lets you edit complex signal chains right on top of the amplifier without a computer",
+            "Stereo XLR line outputs with cabinet emulation allow effortless direct hookup to venue PA systems",
+            "Optional GTX-7 footswitch provides 60-second looper control and bank up/down preset switching"
+          ]
+        },
+        {
+          "title": "Line 6 Spider V 240",
+          "badge": { "text": "High-Power Full-Range Beast", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "A 240-watt stereo powerhouse engineered with a full-range bi-amped speaker system (two 12-inch woofers plus two high-frequency tweeters). Delivers over 200 classic amp, cab, and effects models with built-in wireless receiver and real drum loop metronomes.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Speakers", "value": "240 Watts Stereo; 2x 12-inch custom woofers + 2x high-frequency tweeters" },
+            { "label": "Bi-Amped Design", "value": "Full-range flat-response speaker system handles electric guitar, acoustic, and backing tracks" },
+            { "label": "Wireless Integration", "value": "Internal wireless receiver compatible with Line 6 Relay G10T transmitters" }
+          ],
+          "items": [
+            "Built-in collection of real acoustic drum loops and metronome patterns for inspiring daily practice",
+            "Stereo XLR direct outputs send pristine cab-emulated audio directly to the soundboard",
+            "Free Spider V Remote app lets you edit presets and craft complex signal paths on iOS and Android"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "High-End Pro Floorboards & Desktop Modelers",
+      "subtitle": "Specialized profiling, practice, and personal headphone digital tools",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Kemper Profiler",
+          "badge": { "text": "The Profiling Pioneer", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The legendary device that invented acoustic profiling. Instead of relying on pre-programmed models, the Kemper sends specialized test signals into any real physical amplifier, microphone, and cabinet, mathematically capturing its exact sonic fingerprint in under two minutes.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Profiling Process", "value": "Automated 2-minute test sweep measuring tube gain, dynamic compression, and cab resonance" },
+            { "label": "Tone Exchange", "value": "Free Rig Exchange cloud database with over 20,000 community and professional profiles" },
+            { "label": "Liquid Profile Tech", "value": "Blends authentic profiles with exact mathematical component tone stack behaviors" }
+          ],
+          "items": [
+            "Used in thousands of world-class recording studios to archive rare, fragile vintage amplifiers",
+            "Uncompromising dynamic feel that satisfies even the most hardened vintage tube purists",
+            "Available in Head, Rackmount, and Stage floorboard configurations"
+          ]
+        },
+        {
+          "title": "Boss Katana 50 Gen 3",
+          "badge": { "text": "Best Value Practice & Gig Combo", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "All the sonic horsepower of the Katana Gen 3 platform in a lightweight, ultra-portable 50-watt package. Featuring a 12-inch custom speaker, newly added Pushed amp voice, 4 tone memory slots, and 0.5W power scaling for late-night apartment rehearsals.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Power & Weight", "value": "50W switchable to 25W and 0.5W; lightweight 11.6 kg (25.6 lbs) chassis" },
+            { "label": "Tone Settings", "value": "4 Tone Setting memories for storing complete amp character and effects configurations" },
+            { "label": "Recording Out", "value": "USB-C audio output with IR-based cabinet simulation for direct DAW tracking" }
+          ],
+          "items": [
+            "Lightweight grab-and-go form factor makes it the ultimate rehearsal and small-gig combo",
+            "Power Amp In jack bypasses preamp, allowing it to function as an active speaker for external modelers",
+            "Supports optional Bluetooth Audio MIDI Dual Adaptor (BT-DUAL) for wireless smartphone editing"
+          ]
+        },
+        {
+          "title": "Fender Mustang Micro",
+          "badge": { "text": "Pocket-Sized Headphone Wonder", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "A complete personal headphone amplifier that plugs directly into your guitar's output jack. Houses 12 iconic Mustang GTX amp models, 12 curated effects parameter combinations, Bluetooth audio streaming for play-along practice, and a rechargeable lithium-ion battery.",
+          "bgColor": "bg-emerald-50",
+          "fields": [
+            { "label": "Battery Life", "value": "Rechargeable internal battery delivering 4+ hours of continuous playing time" },
+            { "label": "Amp Models", "value": "12 models ranging from '65 Twin and '57 Tweed to British crunch and modern high-gain" },
+            { "label": "USB Audio", "value": "USB-C port functions as a direct recording audio interface for Mac, PC, and iPad" }
+          ],
+          "items": [
+            "Rotating 1/4-inch input plug fits virtually any Stratocaster, Telecaster, or Les Paul jack configuration",
+            "Stream backing tracks or YouTube lessons wirelessly from your phone with independent volume blend",
+            "Packs professional, touch-responsive tone into an ultra-compact unit smaller than a pack of strings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modeling vs. Analog Rig Matrix",
+      "subtitle": "Head-to-head comparison between digital modelers, modeling combos, and traditional tube rigs",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "table",
-      "tableHeaders": ["Feature", "Modeling", "Tube", "Solid State"],
+      "tableHeaders": ["Operational Metric", "Digital Floorboard (Helix/Kemper)", "Modeling Combo (Katana Gen 3)", "Traditional All-Tube Rig"],
       "tableRows": [
-        ["Versatility", "Excellent", "Limited", "Limited"],
-        ["Recording Features", "Excellent", "Limited", "Good"],
-        ["Authenticity", "Very Good", "Excellent", "Good"],
-        ["Maintenance", "Low", "High", "Low"],
-        ["Learning Curve", "Medium", "Easy", "Easy"]
+        ["Tonal Versatility", "Infinite (Hundreds of amps, cabs, & studio effects)", "High (6–12 core amp voices + 60 onboard effects)", "Single Voice (Fixed to the physical circuit topology)"],
+        ["Front-of-House Consistency", "100% Identical every show (Direct IR XLR output)", "High (Line out with CabSim or mic'd speaker)", "Variable (Dependent on stage mic placement & room spill)"],
+        ["Stage Volume Flexibility", "Silent stage to arena (Zero mic bleed into vocals)", "Whisper 0.5W to full 100W stage volume", "Loud (Requires high volume for power tube saturation)"],
+        ["Weight & Portability", "Ultra-light (3 kg – 6 kg in a backpack)", "Moderate (11 kg – 15 kg compact combo)", "Back-breaking (25 kg – 45 kg head and cabinet)"],
+        ["Maintenance & Reliability", "Zero tube maintenance (Firmware updates only)", "Zero tube maintenance (Rock-solid solid-state)", "High (Tubes wear, drift, bias required, shock sensitive)"],
+        ["Latency & Dynamic Feel", "Under 2ms (Virtually indistinguishable from analog)", "Analog front-end + DSP (Instant pick attack)", "0ms (True physical speed of light analog electrons)"],
+        ["Backup Strategy", "Easy (Carry identical preset backup on USB stick)", "Simple (Durable solid-state hardware)", "Hard (Requires carrying spare tubes, fuses, or backup head)"]
       ]
     },
     {
-      "title": "Software Integration",
+      "title": "FRFR Speakers vs. Traditional Guitar Cabinets",
+      "subtitle": "How to choose the right acoustic monitoring system for your digital modeler",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Mobile Apps",
-          "description": "A companion app turns tone-editing into something you can do from a phone rather than scrolling through a small onboard screen, which matters most for units with deep parameter control that would otherwise be tedious to navigate on the amp itself.",
-          "bgColor": "bg-indigo-50",
+          "title": "FRFR (Full-Range Flat-Response) Systems",
+          "description": "FRFR monitors are active, powered loudspeaker systems engineered with a flat frequency response (like studio reference monitors or high-end PA speakers). Because they do not impart their own acoustic coloration, your modeler's internal Impulse Response (IR) speaker simulation sounds exactly as intended, delivering identical tone to your ears on stage as what the sound engineer hears at the front-of-house mixing console.",
+          "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Speaker Design", "value": "Bi-amped woofer (8\", 10\", or 12\") paired with high-frequency compression horn driver" },
+            { "label": "Cab Simulation Setting", "value": "Keep Cabinet / IR models ENABLED in your digital modeler's signal chain" },
+            { "label": "Sonic Characteristic", "value": "Sounds like a finished, mastered studio record playback of an amplifier in a room" }
+          ],
           "items": [
-            "Preset creation: Build tones on your phone",
-            "Amp control: Wireless parameter adjustment",
-            "Preset sharing: Download community presets",
-            "Firmware updates: Keep your amp current"
+            "Allows a single rig to switch instantly from an acoustic guitar to a Fender clean and a Mesa metal stack",
+            "Ideal for stage monitoring when using in-ear monitors (IEMs) or direct-to-PA setups",
+            "Top models include Line 6 Powercab, Headrush FRFR-112, and Fender Tone Master FR-12"
           ]
         },
         {
-          "title": "Computer Software",
-          "description": "Desktop editors expose the full depth of parameters a modeling platform supports, which is useful for building and organizing large preset libraries in a way that would be impractical using only the amp's front panel.",
+          "title": "Power Amp into Traditional Guitar Cabinets",
+          "description": "If you miss the physical sensation of a real guitar speaker moving air and vibrating your pant legs on stage, you can run your modeler into a neutral solid-state power amplifier (e.g., Seymour Duncan PowerStage or Orange Pedal Baby) and plug into a traditional 2x12 or 4x12 guitar cabinet. In this setup, you MUST disable the modeler's internal cabinet/IR simulation to prevent 'double-cabbing' (filtering a speaker through a speaker).",
           "bgColor": "bg-teal-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Power Source", "value": "Neutral Class D power stage (e.g., PowerStage 170) or modeler's Power Amp In jack" },
+            { "label": "Cab Simulation Setting", "value": "MUST DISABLE Cabinet / IR models on the output feeding the physical cabinet" },
+            { "label": "Sonic Characteristic", "value": "Authentic 'amp-in-the-room' directional beam and physical mechanical thump" }
+          ],
           "items": [
-            "Advanced editing: Deep parameter control",
-            "Preset library: Organize thousands of presets",
-            "Backup/restore: Protect your custom settings",
-            "Visual feedback: See parameter changes graphically"
+            "Eliminates digital high-end harshness naturally through the physical speaker cone's 5kHz roll-off",
+            "Advanced routing tip: Send Output 1 (with IR) to FOH PA mixer, and Output 2 (no IR) to your stage cabinet",
+            "Provides familiar stage volume and physical feedback when bending sustained notes near the cab"
           ]
         }
       ]
     },
     {
-      "title": "Choosing a Modeling Amp",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Beginner ($100-400)",
-          "badge": { "text": "$100-400", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "Fender Mustang LT25",
-            "Boss Katana Mini",
-            "Yamaha THR5",
-            "Positive Grid Spark"
-          ]
-        },
-        {
-          "title": "Intermediate ($400-1000)",
-          "badge": { "text": "$400-1000", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "Boss Katana 100",
-            "Fender Mustang GTX100",
-            "Line 6 Spider V 240",
-            "Blackstar ID:Core 100"
-          ]
-        },
-        {
-          "title": "Professional ($1000+)",
-          "badge": { "text": "$1000+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "Line 6 Helix Floor",
-            "Fractal Axe-FX III",
-            "Neural DSP Quad Cortex",
-            "Kemper Profiler"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "The Future of Modeling",
+      "title": "Dialing in Studio-Quality Digital Tones (Pro Workflow)",
+      "subtitle": "Essential engineering tips to eliminate digital fizz and sit perfectly in any mix",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "AI and Machine Learning",
-          "description": "Manufacturers are increasingly training models directly on captured recordings of real amps rather than only on hand-derived circuit equations, which tends to produce a more responsive, natural feel that keeps closing the gap with the amps being modeled.",
-          "bgColor": "bg-blue-50",
-          "borderColor": ""
+          "title": "The Golden EQ Rule: High-Cut & Low-Cut Filters",
+          "description": "The number one mistake guitarists make with digital modelers is leaving the frequency spectrum wide open. Real physical guitar speakers (like Celestion Vintage 30s or Greenbacks) cannot reproduce frequencies above 5kHz–6kHz or below 75Hz. Digital modelers, however, operate at full 20Hz–20kHz bandwidth. Without proper filtering, high frequencies produce harsh digital 'fizz', while sub-bass rumbles muddy the kick drum and bass guitar.",
+          "bgColor": "bg-orange-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Low-Cut (High-Pass) Filter", "value": "Set between 80Hz and 100Hz (12dB/octave slope) to eliminate sub-bass rumble" },
+            { "label": "High-Cut (Low-Pass) Filter", "value": "Set between 6.0kHz and 7.5kHz (12dB/octave slope) to eliminate digital harshness" },
+            { "label": "Midrange Focus", "value": "Gently boost 800Hz to 1.5kHz (+1.5dB) to carve out space in dense band arrangements" }
+          ],
+          "items": [
+            "Apply the low-cut and high-cut filters directly on the output block or within your IR cabinet block",
+            "Instantly transforms a harsh, abrasive digital tone into a warm, organic, studio-polished guitar track",
+            "Your sound engineer will thank you: the guitar immediately sits in its proper sonic pocket"
+          ]
         },
         {
-          "title": "Cloud Integration",
-          "description": "Cloud-based preset sharing and remote firmware updates are becoming standard, letting a modeling amp gain new amp models or bug fixes over time the way a full tube or solid state amp never could once it leaves the factory.",
-          "bgColor": "bg-purple-50",
-          "borderColor": ""
+          "title": "Gain Staging & A/D Converter Input Padding",
+          "description": "Unlike analog tube amps where higher input voltage simply drives the V1 tube into sweeter compression, digital modelers feature Analog-to-Digital (A/D) converters with a hard mathematical ceiling at 0 dBFS. If hot active humbuckers or a boost pedal clip the A/D input converter, you produce harsh, unmusical digital clipping before the virtual amplifier simulation even begins.",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Input Level Metering", "value": "Strum your hardest chords on the bridge pickup; input meter should peak around -6 dBFS to -3 dBFS" },
+            { "label": "Input Pad / Sensitivity", "value": "Engage -6dB or -10dB input pad when playing high-output active pickups (EMG, Fishman Fluence)" },
+            { "label": "Re-Amping Setup", "value": "Record a clean unprocessed dry DI track simultaneously alongside your wet modeled tone via USB" }
+          ],
+          "items": [
+            "Never allow input meters to hit red (digital inter-sample peak clipping ruins tone permanently)",
+            "Use the guitar's volume knob to clean up tone just as you would on a physical vintage amplifier",
+            "Having a dry DI track lets you audition different virtual amps and speaker IRs later during final mixdown"
+          ]
         }
       ]
     }
   ],
   "relatedTopics": [
     {
-      "title": "Solid State Amps",
-      "href": "/lessons/gear/amps/solid-state",
-      "description": "Reliable, consistent, and affordable",
+      "title": "Tube Amplifiers",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Vacuum valve physics, harmonic saturation, and classic analog circuit architectures",
+      "icon": "🔥",
       "bgColor": "bg-white"
     },
     {
-      "title": "Hybrid Amps",
-      "href": "/lessons/gear/amps/hybrid",
-      "description": "Combining tube warmth with solid state reliability",
+      "title": "Solid-State Amplifiers",
+      "href": "/lessons/gear/amps/solid-state",
+      "description": "Transistor precision, high-headroom clean tone, and Class D power efficiency",
+      "icon": "💡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Delay Pedals Guide",
+      "href": "/lessons/gear/effects/delay",
+      "description": "Digital DSP delay algorithms, analog bucket-brigade repeats, and stereo ping-pong routing",
+      "icon": "⏱️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Audio Interfaces Guide",
+      "href": "/lessons/gear/recording/interfaces",
+      "description": "Preamps, high-Z instrument inputs, low-latency monitoring, and digital DAW recording",
+      "icon": "🎧",
       "bgColor": "bg-white"
     }
   ]

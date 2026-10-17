@@ -1,374 +1,334 @@
 {
   "slug": "amps-bass",
   "category": "amps",
-  "pageTitle": "Bass Amplifiers: Foundation of the Rhythm Section",
-  "subtitle": "Powerful, focused amplification designed specifically for bass guitar",
+  "pageTitle": "Bass Amplifiers: Low-Frequency Physics, Power Headroom & Cabinet Architecture",
+  "subtitle": "The acoustic foundation of the rhythm section — Fletcher-Munson physics, Class D power blocks, driver arrays & legendary rigs",
   "heroGradient": "bg-gradient-to-r from-red-50 to-orange-50",
   "backLink": {
     "href": "/lessons/gear/amps",
     "label": "Back to Amplifiers"
   },
   "introduction": {
-    "title": "Bass Amplifiers: Foundation of the Rhythm Section",
-    "text": "A guitar amp built for the same job as a bass amp would either fall apart or simply disappear in the mix, because bass frequencies carry far more physical energy per note than the same pitch played an octave up. Moving that much air cleanly takes larger speakers, sturdier cabinets, and a lot more raw wattage than guitar amplification, which is why bass amps are engineered as a distinct category rather than a scaled-up guitar amp. Everything about a bass rig, from cabinet porting to power section design, exists to keep the low end tight and audible instead of letting it turn into an unfocused rumble.",
-    "quote": "What You'll Learn:",
+    "title": "Bass Amplifiers: Low-Frequency Physics, Power Headroom & Cabinet Architecture",
+    "text": "Plugging an electric bass into a guitar amplifier produces either catastrophic speaker cone failure or an impotent, papery sound that vanishes the moment a drummer strikes a snare. This is not an accident of branding; it is an unyielding law of acoustic physics. A standard 4-string bass guitar's lowest fundamental note (open E) vibrates at 41.2 Hz, while a 5-string drops to low B at 30.8 Hz. According to the Fletcher-Munson equal-loudness contours, the human ear is dramatically less sensitive to sub-100Hz frequencies than to the 1kHz–3kHz midrange produced by electric guitars. Moving enough air to make deep bass physically felt and clearly heard requires 3x to 10x the electrical power and dramatically larger loudspeaker excursion.\n\nOver the past two decades, bass amplification has undergone a total technological revolution. For decades, achieving 300 watts of stage-filling clean low end required the legendary, back-breaking 300-watt all-tube Ampeg SVT head (weighing 38 kg / 85 lbs) paired with an 8x10 'refrigerator' cabinet (weighing 63 kg / 140 lbs). Today, modern Class D switching power amplifiers paired with lightweight neodymium speaker drivers deliver 500W to 800W of thunderous, articulate low end in heads weighing less than 3 kg that fit into the accessory pocket of your gig bag. Understanding driver configurations, porting physics, DI stage routing, and kick-drum frequency slotting is the hallmark of every master bassist.",
+    "quote": "Guitar players play for tone; bass players play for the entire room's physical vibration. If your amplifier runs out of clean headroom, the kick drum and bass line turn to indecipherable mud. Clean electrical wattage is not an ego trip; it is your sonic lifeline.",
     "columns": [
       {
-        "title": "What You'll Learn",
-        "text": "We'll cover why bass amplification differs from guitar amps at a fundamental, physics level, and how that translates into the power and speaker choices you actually need for practice, gigging, and full band settings. You'll see how tube and solid state designs trade off warmth against power efficiency in a bass rig specifically, and how to match an amp to your venue size, playing style, and budget."
+        "title": "Acoustic Energy & Equal Loudness",
+        "text": "Why reproducing 41.2Hz fundamental bass waves demands massive power budgets (300W to 800W) and heavy speaker cone displacement.",
+        "icon": "🔊"
+      },
+      {
+        "title": "Cabinet Porting & Driver Physics",
+        "text": "Comparing the punchy transient response of sealed multi-driver arrays (4x10, 8x10) against the deep sub-bass extension of tuned ported enclosures (1x15).",
+        "icon": "⚡"
+      },
+      {
+        "title": "FOH DI Routing & Kick Drum Slotting",
+        "text": "Mastering pre/post EQ balanced DI feeds to front-of-house soundboards and carving out frequency pockets between bass and the kick drum.",
+        "icon": "🎛️"
       }
     ]
   },
   "sections": [
     {
-      "title": "Bass Amplification Fundamentals",
+      "title": "The Science of Bass Amplification: Why Bass Demands Power",
+      "subtitle": "The acoustic physics governing low-frequency sound reproduction and perceived loudness",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Why Bass Amps Are Different",
-          "description": "A bass guitar's fundamental frequencies sit almost an octave below a standard guitar's, and low frequencies require dramatically more power to reproduce at the same perceived loudness as higher ones. That's why a bass amp rated at 100 watts doesn't sound anywhere near as loud as a 100-watt guitar amp; the extra power budget in a bass rig goes into pushing more air through larger drivers rather than making the amp sound louder in an absolute sense.",
+          "title": "The Fletcher-Munson Curve & Air Displacement",
+          "description": "Human auditory perception is non-linear: our ears evolved to be hyper-sensitive to human vocal frequencies (1kHz to 4kHz) and relatively deaf to deep sub-bass. To perceive a 40Hz bass note at the exact same subjective loudness as a 1kHz guitar lead, your loudspeaker must produce approximately 25 to 30 dB more acoustic Sound Pressure Level (SPL). Because every 3dB increase in SPL requires double the electrical power, a bass amplifier requires 300 to 500 watts simply to balance against a 30-watt tube guitar amplifier in a live drum mix.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
-          "items": [
-            "Lower frequencies: 41Hz to 350Hz fundamental range",
-            "More power needed: Bass requires 3-10x more power",
-            "Speaker design: Larger drivers for low frequency response",
-            "Cabinet construction: Ported or sealed for bass response"
-          ]
-        },
-        {
-          "title": "Head vs. Combo",
-          "description": "A combo bundles the amplifier and speaker into one cabinet, which keeps setup simple and transport light, at the cost of being stuck with whatever speaker configuration it shipped with. A separate head and cabinet cost more and weigh more to carry, but let you swap cabinets for the room you're playing, a small 1x12 for a coffee shop or a 4x10 stack for a stage, without buying a new amp every time your gigs change.",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
           "fields": [
-            { "label": "Combo Amps", "value": "All-in-one convenience. Perfect for practice, small venues, and easy transport" },
-            { "label": "Head + Cabinet", "value": "Modular flexibility. Professional choice for larger venues and custom setups" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Power and Volume Requirements",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Practice (15-50W)",
-          "description": "Because bass eats power so quickly, even a modest 15-50 watt combo produces plenty of volume for a bedroom or small rehearsal space, where you're playing solo or working things out before a band rehearsal.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Home practice",
-            "Small rehearsal rooms",
-            "Recording (direct input)",
-            "Apartment-friendly volumes"
-          ]
-        },
-        {
-          "title": "Small Gigs (100-300W)",
-          "description": "Once you're playing alongside a drummer, the power requirement jumps sharply: a drum kit's acoustic volume is loud enough that a bass amp needs several times the wattage of a practice amp just to stay audible underneath it, even in a small room.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Coffee shops, small clubs",
-            "Rehearsal with drums",
-            "Mic'd through PA",
-            "Most common range"
-          ]
-        },
-        {
-          "title": "Large Venues (500W+)",
-          "description": "In a large room, headroom matters more than raw loudness. A 500-watt-plus rig gives you enough reserve power to keep your low end clean and undistorted at stage volume, which is what actually reads as \"big\" from the audience rather than just loud.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
-          "items": [
-            "Concert halls, large clubs",
-            "Stadium backline",
-            "No PA support needed",
-            "Professional touring rigs"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Tube vs. Solid State for Bass",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Tube Bass Amps",
-          "description": "Tube power sections compress naturally as they're pushed, rounding off transients before they turn into harsh digital-sounding clipping, which is why vintage rock and classic tones still lean on tube amps. The trade-off is real: a tube bass head capable of real stage volume is heavy, needs a periodic tube replacement and rebias, and costs significantly more than a solid state amp with comparable output.",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "items": [
-            "Warmth: Musical saturation and compression",
-            "Vintage tone: Classic 60s and 70s bass sounds",
-            "Natural limiting: Prevents harsh clipping",
-            "Drawbacks: Heavy, expensive, maintenance-intensive"
+            { "label": "Low E Fundamental", "value": "41.2 Hz (Requires massive mechanical cone travel to displace air molecules)" },
+            { "label": "Low B (5-String)", "value": "30.8 Hz (Approaches the lower threshold of human hearing; perceived as physical chest thump)" },
+            { "label": "Cone Excursion (Xmax)", "value": "Bass woofers feature deep voice coils and heavy surrounds allowing 5mm–10mm linear travel" },
+            { "label": "Harmonic Content", "value": "Most pitch recognition actually occurs in the 2nd harmonic (82Hz) and 3rd harmonic (123Hz)" }
           ],
-          "fields": [
-            { "label": "Famous Tube Bass Amps", "value": "Ampeg SVT, Orange AD200, Hiwatt DR201" }
+          "items": [
+            "A 50W guitar amp easily keeps up with a drummer, but a bass amp needs a minimum of 200W–300W for band rehearsals",
+            "Under-powering a bass amp leads to catastrophic amplifier clipping, which generates DC voltage that burns out speaker voice coils",
+            "High headroom prevents the dynamic low-end thump of slap bass pops from distorting your clean tone"
           ]
         },
         {
-          "title": "Solid State Bass Amps",
-          "description": "Transistor power sections deliver far more watts per pound than tube designs and don't lose output as components age, which is why most touring and studio bass rigs today are solid state or Class D. That same tight, uncompressed response also means solid state amps track a fast, percussive playing style more accurately, which is part of why they dominate modern funk and metal bass tone.",
-          "bgColor": "bg-teal-50",
+          "title": "Damping Factor & Electromagnetic Voice Coil Braking",
+          "description": "Low-frequency speaker cones are large and heavy. When hit by an aggressive bass pluck, momentum causes the heavy cone to keep moving forward even after the note stops. The amplifier's 'damping factor' (the ratio of speaker impedance to amplifier output impedance) acts as an electromagnetic brake: it absorbs the back-EMF electrical voltage generated by the moving voice coil, instantly pulling the speaker cone back to resting position. High damping factor translates to tight, punchy, articulate bass notes without muddy boom.",
+          "bgColor": "bg-cyan-50",
           "borderColor": "",
-          "items": [
-            "Power efficiency: More watts per pound",
-            "Tight bass: Controlled low-end response",
-            "Reliability: No tube replacement needed",
-            "Modern features: Effects, EQ, compression built-in"
+          "fields": [
+            { "label": "Output Impedance", "value": "Solid-state and Class D amplifiers present near-zero impedance (<0.02Ω) for high damping" },
+            { "label": "Transient Articulation", "value": "Ensures staccato 16th-note funk lines and fast metal double-thump runs stay separated" },
+            { "label": "Acoustic Mud Elimination", "value": "Prevents loose speaker cone wobble that creates uncontrollable stage low-end rumble" }
           ],
-          "fields": [
-            { "label": "Popular SS Bass Amps", "value": "Hartke, SWR, GK, Markbass, TC Electronic" }
+          "items": [
+            "Essential for articulate slap bass, fast walking jazz lines, and modern technical progressive metal",
+            "Tube bass amplifiers (like the Ampeg SVT) have lower damping factor, producing warm, pillowy, blooming low end",
+            "Solid-state and Class D heads deliver laser-focused punch that cuts cleanly through loud cymbal washes"
           ]
         }
       ]
     },
     {
-      "title": "Bass Speaker Configurations",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Common Configurations",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
-          "items": [
-            "1x15\": Deep, warm bass response. Great for blues, jazz, reggae.",
-            "2x10\": Balanced response, lighter weight. Versatile for many styles.",
-            "4x10\": Punchy midrange, excellent for rock and funk. Industry standard.",
-            "2x12\": Modern favorite. Combines deep bass with midrange clarity."
-          ]
-        },
-        {
-          "title": "Choosing Speaker Size",
-          "description": "Bigger speakers move more air per cone excursion, which is why 15\" drivers dig deeper into the sub-bass range, but that same large, heavy cone reacts more slowly to sharp attack than a smaller one. Multiple smaller speakers, like a 4x10 array, trade some of that ultimate depth for faster transient response and a punchier midrange, which is why they became the standard for rock and funk where note definition through a mix matters more than pure low-end weight.",
-          "bgColor": "bg-orange-50",
-          "borderColor": "",
-          "items": [
-            "10\" speakers: Tight, punchy, easier to transport",
-            "12\" speakers: Balanced response, versatile",
-            "15\" speakers: Deep bass, warm tone, heavier",
-            "18\" subwoofers: Ultra-low frequencies for large venues"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Bass Amplifiers",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Classic Models",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "items": [
-            "Ampeg SVT Classic: An all-tube, 300-watt head that was the loudest bass amp available when it launched in 1969, and its combination of tube compression with genuine stage power made it the default choice for arena rock bass tone through the 1970s.",
-            "Fender Bassman: Released in 1952 as the industry's first amplifier designed specifically for electric bass, built because Fender's existing guitar amps couldn't handle the low end of the newly introduced Precision Bass. Its circuit later became the basis for Jim Marshall's early guitar amp designs."
-          ]
-        },
-        {
-          "title": "Modern Standards",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "items": [
-            "Markbass Little Mark Series: A Class D design that packs SVT-scale power into a head light enough to carry in a backpack, which is largely why it became a standard tool for touring bassists who no longer want to haul a tube head and cabinet.",
-            "Gallien-Krueger RB Series: Built around a tight, punchy transistor tone that cuts through a mix without needing extreme volume, which has made it a long-standing favorite among funk and rock bassists; Flea relied almost exclusively on GK 2001RB heads for the Red Hot Chili Peppers' signature tone for the better part of two decades."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bass EQ and Tone Shaping",
+      "title": "Speaker Driver Configurations & Cabinet Acoustics",
+      "subtitle": "Choosing between 1x15, 2x10, 4x10, 8x10, and modern ported enclosure designs",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-4",
       "cards": [
         {
-          "title": "Sub Bass (20-60Hz)",
-          "description": "This range registers more as physical pressure than a musical pitch, and boosting it heavily rarely makes a bass line sound bigger on stage; it mostly eats amplifier headroom and can muddy the mix without adding anything you can actually pick out by ear.",
-          "bgColor": "bg-pink-50",
-          "borderColor": ""
+          "title": "1x15-inch Classic Woofers",
+          "badge": { "text": "Deep & Warm", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The traditional bedrock of vintage bass tone. A single large 15-inch speaker moves a substantial volume of air with relaxed, pillowy fundamental warmth and smooth high-frequency roll-off.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Acoustic Profile", "value": "Deep, round sub-bass response with naturally attenuated treble above 3kHz" },
+            { "label": "Transient Speed", "value": "Slower mechanical acceleration due to heavier cone mass; warm and laid-back" },
+            { "label": "Ideal Genres", "value": "Motown, Soul, Classic Blues, Reggae, Dub, Vintage Rock" }
+          ],
+          "items": [
+            "Warm, supportive low-end cushion that glues the kick drum and bass together effortlessly",
+            "Frequently paired with a 2x10 or 4x10 cabinet for a full-range bi-amped stadium rig"
+          ]
         },
         {
-          "title": "Bass (60-250Hz)",
-          "description": "This is where a bass note's fundamental pitch actually lives, so it's the range that carries the harmonic weight of what you're playing. Scoop it too far and the instrument loses its sense of pitch and power even if the higher harmonics are still present.",
-          "bgColor": "bg-pink-50",
-          "borderColor": ""
+          "title": "2x10 & 4x10 Multi-Driver Arrays",
+          "badge": { "text": "Fast & Punchy", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The most versatile and popular modern bass cabinet format. Multiple smaller 10-inch cones combine massive total surface area with lightweight individual cone mass for lightning-fast transient snap.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Surface Area Advantage", "value": "Four 10\" cones have ~314 sq inches of surface area vs ~176 sq inches on a 15\" woofer" },
+            { "label": "Transient Speed", "value": "Rapid acceleration and stop; razor-sharp snap on thumb slaps and finger plucks" },
+            { "label": "Frequency Response", "value": "Extended high-frequency detail up to 4kHz–5kHz; crisp, cutting upper midrange" }
+          ],
+          "items": [
+            "The undisputed champion for slap bass, modern gospel, pop, funk, and progressive rock",
+            "Often equipped with a defeatable compression horn tweeter for crystalline top-end sheen"
+          ]
         },
         {
-          "title": "Low Mids (250Hz-2kHz)",
-          "description": "This band carries the note-to-note definition that lets a listener follow the actual bass line rather than just feeling a low rumble. It's the first place to boost when a bass part is getting lost under guitars and vocals in a full-band mix.",
-          "bgColor": "bg-pink-50",
-          "borderColor": ""
+          "title": "8x10 The Stadium 'Fridge'",
+          "badge": { "text": "The Stadium Wall", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The legendary Ampeg SVT-810 enclosure. Built with four sealed internal chambers housing eight 10-inch drivers, this towering cabinet delivers unmatched acoustic projection and midrange authority.",
+          "bgColor": "bg-red-50",
+          "fields": [
+            { "label": "Sealed Acoustic Design", "value": "Acoustic suspension design with zero ports; air inside resists cone overshoot" },
+            { "label": "Punchy Midrange Focus", "value": "Naturally rolls off sub-40Hz rumble while boosting punchy 200Hz–1kHz punch" },
+            { "label": "Stage Authority", "value": "Ear-level top speakers allow the bassist to hear articulation clearly on stage" }
+          ],
+          "items": [
+            "The iconic backline sight on rock, punk, and metal festival stages worldwide",
+            "Heavyweight construction (63 kg / 140 lbs) equipped with rear tilt-back wheels and skid rails"
+          ]
         },
         {
-          "title": "High Mids/Treble (2kHz+)",
-          "description": "This range captures pick or finger attack, fret noise, and string harmonics rather than the note's pitch itself, so it adds the sense of presence and articulation that makes a bass part audible even at low playing volumes.",
-          "bgColor": "bg-pink-50",
-          "borderColor": ""
+          "title": "Ported vs. Sealed Enclosures & Neodymium",
+          "badge": { "text": "Modern Tech", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "Modern cabinet engineering utilizes Bass Reflex ports (tuned Helmholtz resonators) that harness backward cone energy to extend low-end response, alongside Neodymium magnets that cut driver weight by 60%.",
+          "bgColor": "bg-emerald-50",
+          "fields": [
+            { "label": "Ported Cabinets", "value": "Extends frequency response down to 35Hz; delivers massive subterranean sub-bass" },
+            { "label": "Sealed Cabinets", "value": "Tighter transient control, punchier midrange, and smooth natural low-end roll-off" },
+            { "label": "Neodymium Drivers", "value": "Replaces heavy ceramic magnets with rare-earth magnets, cutting cab weight to ~15 kg" }
+          ],
+          "items": [
+            "Adjustable horn tweeters with attenuator pads allow tuning top-end sizzle to taste",
+            "Allows modern bassists to load a 500W 2x10 rig into a compact car single-handedly"
+          ]
         }
       ]
     },
     {
-      "title": "Genre-Specific EQ & Common Mistakes",
+      "title": "Legendary Bass Amplifiers & Modern Flagships",
+      "subtitle": "The industry-standard amplifiers that power recording studios and world concert stages",
       "bgColor": "bg-white",
       "borderColor": "",
-      "layout": "grid-2",
+      "layout": "grid-4",
       "cards": [
         {
-          "title": "Genre-Specific EQ Tips",
-          "bgColor": "bg-blue-50",
-          "borderColor": "",
+          "title": "Ampeg SVT-CL",
+          "badge": { "text": "The Undisputed King of Rock", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "Introduced in 1969, the Ampeg Super Vacuum Tube (SVT) is the benchmark against which all bass amps are measured. Delivering 300 all-tube watts powered by six massive 6550 power tubes, the SVT produces thunderous low-end authority, rich harmonic growl, and legendary presence.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "300W RMS @ 4Ω or 2Ω; 6x 6550 power tubes, 2x 12AX7 & 1x 12AU7 preamp, 2x 12AU7 drivers" },
+            { "label": "Tone Stack", "value": "Bass, Treble, and 5-position Mid-frequency selector (220Hz, 450Hz, 800Hz, 1.6kHz, 3kHz)" },
+            { "label": "Weight & Iron", "value": "36.3 kg (80 lbs) of pure steel, massive iron transformers, and glass" },
+            { "label": "Famous Users", "value": "Cliff Burton (Metallica), Geddy Lee (Rush), Krist Novoselic (Nirvana), Bootsy Collins" }
+          ],
           "items": [
-            "Rock/Metal: Boost mids (400Hz-1kHz) for punch, control low end",
-            "Jazz: Emphasize 200-400Hz warmth, gentle high-end",
-            "Funk: Scoop mids, boost highs for slap/pop attack",
-            "Reggae: Deep bass emphasis, rolled-off highs"
+            "The 5-position midrange selector allows precise frequency targeting to punch through dense guitar mixes",
+            "Harmonic power-tube saturation produces the quintessential aggressive rock bass grit",
+            "Standard backline rider requirement on major rock, metal, and punk tours worldwide"
           ]
         },
         {
-          "title": "Common EQ Mistakes",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
+          "title": "Fender Rumble 100",
+          "badge": { "text": "The World's Best-Selling Combo", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The ultimate lightweight, high-performance practice and small-gig combo. Pumping 100 watts of Class D power through a 12-inch Eminence Special Design speaker, the Rumble 100 weighs an astonishingly light 10 kg (22 lbs) while delivering classic Fender bass punch and overdrive.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Speaker", "value": "100 Watts Class D; 1x 12-inch Eminence Special Design speaker with rear port" },
+            { "label": "Voicing Filters", "value": "3 footswitchable voicing buttons: Bright (treble boost), Contour (mid scoop), Vintage (warm tube feel)" },
+            { "label": "Overdrive Circuit", "value": "Foot-switchable analog overdrive with dedicated Drive and Level controls" },
+            { "label": "Weight & Portability", "value": "Ultra-lightweight 10 kg (22 lbs); easily carried with one hand" }
+          ],
           "items": [
-            "Too much bass: Creates muddiness and poor definition",
-            "Scooped mids: Bass disappears in the mix",
-            "Harsh highs: Unpleasant string noise and fret buzz",
-            "Not considering room: EQ must adapt to acoustics",
-            "Ignoring the mix: Bass must complement, not compete"
+            "Balanced XLR line out with ground lift sends clean studio-grade signal directly to FOH mixing consoles",
+            "Headphone jack and 3.5mm Aux in allow silent practice alongside backing tracks at home",
+            "Deep, resonant ported enclosure produces low end that punches far beyond its compact dimensions"
+          ]
+        },
+        {
+          "title": "Mesa Boogie Subway D-800",
+          "badge": { "text": "Pro Touring Lightweight Standard", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "A boutique 800-watt Class D micro-head combining Mesa Boogie's legendary California analog preamp tone shaping with ultra-reliable switching power. Features a sweepable Voicing control, active 4-band EQ, 2-ohm impedance stability, and studio-grade direct out.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power Output", "value": "800 Watts @ 4Ω / 2Ω (400 Watts @ 8Ω); ultra-fast Class D power block" },
+            { "label": "Preamp Section", "value": "All-analog discrete solid-state preamp with active 4-band EQ and Deep switch" },
+            { "label": "Impedance Switch", "value": "Selectable 2Ω / 4Ω–8Ω switch handles multiple speaker cabinets effortlessly" },
+            { "label": "Dimensions & Weight", "value": "Ultra-compact 2.5 kg (5.5 lbs); includes padded gig bag with shoulder strap" }
+          ],
+          "items": [
+            "Voicing knob sweeps seamlessly from flat, analytical studio reference tone to warm, scooped vintage punch",
+            "Balanced XLR line output features Pre/Post EQ switching, Ground Lift, and Mic/Line level selection",
+            "High-current power supply handles rapid slap bass transients without compression or choking"
+          ]
+        },
+        {
+          "title": "Darkglass Microtubes 500v2",
+          "badge": { "text": "Modern Progressive & Metal Benchmark", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The definitive head for modern rock, progressive metal, and punchy fingerstyle bass. Houses Darkglass's world-famous dual analog distortion circuits (Vintage Microtubes and B3K), studio VCA compression, a 6-band graphic EQ, and dual Impulse Response (IR) cabinet simulation slots.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power Output", "value": "500 Watts RMS @ 4Ω (250 Watts @ 8Ω); Class D switching power amplifier" },
+            { "label": "Dual Distortion", "value": "VMT (warm tube-like compression) and B3K (modern aggressive upper-mid clank)" },
+            { "label": "Digital IR Engine", "value": "Stores 3 custom high-resolution speaker IRs for direct FOH and headphone feeds" },
+            { "label": "Studio VCA Compressor", "value": "Integrated one-knob studio compressor with intelligent gain reduction makeup" }
+          ],
+          "items": [
+            "Blend knob mixes pure, clean fundamental low end underneath saturated high-gain distortion",
+            "USB-C port allows connecting to Darkglass Suite software to audition and load custom speaker IRs",
+            "The industry benchmark for punchy, cutting bass tones in modern metal and progressive music"
           ]
         }
       ]
     },
     {
-      "title": "Modern Bass Amp Features",
+      "title": "Stage Combos & Portable Touring Workhorses",
+      "subtitle": "Trusted classics for club gigs, recording sessions, and direct stage feeds",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Built-in Effects",
-          "description": "Building compression, EQ, and drive directly into the amp means you don't need a separate pedalboard to shape your core tone, which matters for bassists who want a reliable sound without carrying and troubleshooting extra gear.",
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
+          "title": "Fender '59 Bassman",
+          "badge": { "text": "Vintage Legend", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The 4x10 tweed combo that started it all. Originally engineered in 1952 for the revolutionary Fender Precision Bass, the '59 Bassman's responsive all-tube 5F6-A circuit, open-back cabinet, and four Jensen speakers became the blueprint for both vintage blues bass and rock guitar amplification.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "45 Watts; 2x 6L6 power tubes, 3x 12AX7 preamp tubes, 1x 5U4GB rectifier" },
+            { "label": "Speakers", "value": "4x 10-inch Jensen P10R alnico speakers" },
+            { "label": "Historical Impact", "value": "Jim Marshall copied this exact circuit to create the original Marshall JTM45" }
+          ],
           "items": [
-            "Compression for even dynamics",
-            "EQ beyond basic tone controls",
-            "Distortion and overdrive",
-            "Chorus and modulation effects"
+            "Delivers the warm, singing, edge-of-breakup low end celebrated on early rock and roll records",
+            "Open-back design fills the stage with dimensional 3D acoustic resonance",
+            "A holy-grail dual-purpose amplifier equally beloved by blues bassists and guitarists"
           ]
         },
         {
-          "title": "Connectivity",
-          "description": "A built-in DI output means a sound engineer can take a clean signal straight from your amp without a separate DI box, and USB or Bluetooth connectivity turns the same amp into a recording interface or practice companion without any extra hardware.",
-          "bgColor": "bg-teal-50",
-          "borderColor": "",
-          "items": [
-            "XLR DI output for live sound",
-            "USB for direct recording",
-            "Bluetooth audio streaming",
-            "Effects loops for pedals"
-          ]
-        },
-        {
-          "title": "Practice Features",
-          "description": "A headphone output and aux input turn a bass combo into a complete silent-practice setup, letting you play along with a track or a metronome late at night without disturbing anyone else in the house.",
+          "title": "Markbass Little Mark IV",
+          "badge": { "text": "Italian Hi-Fi Precision", "bgColor": "bg-yellow-100", "textColor": "text-yellow-800" },
+          "description": "The pioneer of ultra-compact, yellow-and-black lightweight bass amplification. Features Markbass's proprietary Mark Proprietary Technology (MPT) 500-watt power amplifier, a bi-band limiter for ultra-musical peak compression, and an updated 4-band EQ.",
           "bgColor": "bg-yellow-50",
-          "borderColor": "",
+          "fields": [
+            { "label": "Power & Amp Block", "value": "500W RMS @ 4Ω (300W @ 8Ω); proprietary high-transient MPT power stage" },
+            { "label": "Bi-Band Limiter", "value": "Faster, more musical peak control that preserves attack without squashing dynamics" },
+            { "label": "Old School Filter", "value": "High-cut filter rolls off modern high-end for vintage, warm Motown/flatwound tone" }
+          ],
           "items": [
-            "Headphone outputs for silent practice",
-            "Aux inputs for play-along tracks",
-            "Metronome and rhythm patterns",
-            "Recording capabilities"
+            "Weighs only 2.45 kg (5.4 lbs); proven world-tour reliability across jazz, pop, and fusion stages",
+            "Balanced XLR line out features front-panel Pre/Post EQ and ground-lift switching",
+            "Pristine, neutral reproduction lets the natural acoustic character of your bass guitar shine"
+          ]
+        },
+        {
+          "title": "Tech 21 SansAmp Bass Driver DI",
+          "badge": { "text": "The Studio & Gig Bag Essential", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "The single most widely used piece of bass equipment in recorded music history. Found on virtually every touring pedalboard and studio console, the all-analog Bass Driver DI delivers classic tube amp warmth, vintage SVT growl, active EQ, and direct balanced XLR console drive.",
+          "bgColor": "bg-emerald-50",
+          "fields": [
+            { "label": "Analog Circuitry", "value": "100% discrete analog SansAmp tube amplifier and speaker cabinet emulation" },
+            { "label": "Controls", "value": "Blend, Drive, Bass (switchable 40/80Hz), Mid (switchable 500/1000Hz), Treble, Presence" },
+            { "label": "Connectivity", "value": "1/4\" amp output, 1/4\" parallel dry throughput, and balanced XLR direct out" }
+          ],
+          "items": [
+            "Acts as your complete rig: plug straight into the venue PA mixer and sound like an arena tube stack",
+            "The Blend control lets you mix your clean direct bass with overdriven tube harmonics",
+            "Runs on 9V battery, standard pedalboard power supply, or 48V phantom power from the mixing desk"
           ]
         }
       ]
     },
     {
-      "title": "Choosing Your Bass Amplifier",
+      "title": "Bass Amplification Topology Comparison Matrix",
+      "subtitle": "Head-to-head technical comparison across primary bass amplification formats",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "table",
+      "tableHeaders": ["Operational Metric", "All-Tube Rig (Ampeg SVT)", "Class D Micro-Head (Subway/Markbass)", "Solid-State Combo (Rumble)", "Direct Preamp (SansAmp DI)"],
+      "tableRows": [
+        ["Typical Wattage Range", "300W RMS (Massive high-voltage tube power)", "500W – 1000W RMS (Ultra-efficient PWM)", "40W – 200W (Class A/B or Class D combo)", "0W (Line-level preamp output to PA/DAW)"],
+        ["Weight & Portability", "Extremely Heavy (35 kg – 45 kg head alone)", "Ultra-lightweight (2 kg – 3 kg in gig bag)", "Light to Moderate (10 kg – 18 kg)", "Pocket-sized (0.4 kg pedal enclosure)"],
+        ["Harmonic Character", "Thick, warm, natural tube compression & growl", "Pristine, transparent, fast transient attack", "Clean, punchy, articulate solid-state headroom", "Analog tube emulation with adjustable blend"],
+        ["Low-End Damping Control", "Low (Pillowy, resonant, blooming sub-bass)", "Very High (Iron-fisted speaker cone stop)", "High (Tight percussive transient response)", "N/A (Dictated by PA system speakers)"],
+        ["Maintenance Burden", "High (6x power tubes to replace; bias checks)", "Virtually Zero (Solid-state semiconductors)", "Virtually Zero (No tubes to maintain)", "Zero (Indestructible steel stompbox)"],
+        ["Stage Volume vs FOH", "Stage dominant (Massive physical air movement)", "Versatile (Feeds FOH + powers stage cab)", "Club stage volume (Mic or line out to PA)", "FOH / In-Ear Monitor direct (Zero stage spill)"]
+      ]
+    },
+    {
+      "title": "Dialing in Bass EQ & Frequency Slotting with the Kick Drum",
+      "subtitle": "Professional engineering techniques to lock the rhythm section without sonic mud",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Performance Needs",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "items": [
-            "Venue sizes you typically play",
-            "Whether you need portability",
-            "Genre and playing style requirements",
-            "Budget for amp and potential cabinet"
-          ]
-        },
-        {
-          "title": "Technical Considerations",
-          "bgColor": "bg-red-50",
-          "borderColor": "",
-          "items": [
-            "Power requirements for your situations",
-            "Preferred speaker configuration",
-            "Need for built-in effects vs. pedals",
-            "Recording and connectivity needs"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bass Amp Recommendations",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Budget ($200-500)",
-          "badge": { "text": "$200-500", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "title": "The 60Hz vs. 100Hz Frequency Decision",
+          "description": "The number one cause of muddy live mixes is the bass guitar and kick drum fighting for dominance at the exact same frequencies. Professional bassists and front-of-house engineers use 'frequency slotting' to divide the sub-low territory cleanly so each instrument has its own dedicated acoustic window.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
-          "description": "At this price point you're buying a combo sized for practice rooms and small gigs rather than full band volume, but modern budget amps still pack usable EQ and a DI out.",
+          "fields": [
+            { "label": "Scenario A: Sub Kick Drum", "value": "If the kick drum dominates at 50Hz–60Hz (deep modern sub thump), boost bass at 100Hz–120Hz and cut slightly at 60Hz" },
+            { "label": "Scenario B: Punchy Kick Drum", "value": "If the kick drum has a tight 100Hz punch (classic rock/jazz), let the bass guitar own the deep 50Hz–70Hz foundation" },
+            { "label": "High-Pass Filter (HPF)", "value": "Engage an HPF at 30Hz–35Hz to eliminate inaudible sub-sonic speaker cone flutter that steals power" }
+          ],
           "items": [
-            "Fender Rumble 40",
-            "Ampeg BA-108v2",
-            "Orange Crush Bass 50",
-            "Hartke HD25"
+            "Never boost both the kick drum and the bass guitar at 60Hz simultaneously (creates boomy, unintelligible rumble)",
+            "A high-pass filter cleans up muddy low-end and frees up hundreds of watts of amplifier headroom",
+            "Listen to how the bass notes interlock with the drummer's kick pedal: timing and frequency harmony create groove"
           ]
         },
         {
-          "title": "Mid-Range ($500-1200)",
-          "badge": { "text": "$500-1200", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "bgColor": "bg-green-50",
+          "title": "Midrange Articulation & Tweeter Management",
+          "description": "Amateur bassists often scoop the midrange (boosting bass and treble to the max), which sounds deep in solo bedroom practice but renders the bass completely inaudible once guitars and cymbals start playing. Pitch recognition and note articulation live in the midrange.",
+          "bgColor": "bg-orange-50",
           "borderColor": "",
-          "description": "This tier is where most working bassists land: enough power and speaker area to hold up next to a drummer, plus the built-in features that let you skip a separate pedalboard.",
+          "fields": [
+            { "label": "Low-Mid Punch (200Hz–400Hz)", "value": "Adds body and warmth; essential for cutting through small rooms without overwhelming sub-bass" },
+            { "label": "High-Mid Definition (800Hz–1.5kHz)", "value": "Where finger pluck attack, fret articulation, and pitch clarity live in a dense mix" },
+            { "label": "Tweeter Attenuation", "value": "Turn high-frequency horn tweeters down by -6dB to -12dB when using overdrive or playing with a pick" }
+          ],
           "items": [
-            "Fender Rumble 500",
-            "Ampeg BA-210v2",
-            "Markbass CMD 121P",
-            "GK MB212"
-          ]
-        },
-        {
-          "title": "Professional ($1200+)",
-          "badge": { "text": "$1200+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "bgColor": "bg-purple-50",
-          "borderColor": "",
-          "description": "Amps at this level are built for touring reliability as much as tone, with the headroom and component quality to run at full volume night after night without failing.",
-          "items": [
-            "Ampeg SVT Classic",
-            "Markbass Little Mark Tube 800",
-            "Mesa Boogie Subway D-800+",
-            "Aguilar Tone Hammer 700"
+            "If your bass disappears on stage, boost 800Hz before increasing Master Volume",
+            "High-frequency horn tweeters amplify harsh finger noise and pick clatter; attenuating them creates warm organic punch",
+            "Pre/Post EQ DI switch: Set to 'Pre-EQ' when sending signal to the sound engineer so they receive an uncolored direct feed"
           ]
         }
       ]
@@ -376,15 +336,31 @@
   ],
   "relatedTopics": [
     {
-      "title": "Hybrid Amps",
-      "href": "/lessons/gear/amps/hybrid",
-      "description": "Tube warmth meets solid state reliability",
+      "title": "Tube Amplifiers",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Thermionic valve physics, power tube saturation, and classic high-headroom architectures",
+      "icon": "🔥",
       "bgColor": "bg-white"
     },
     {
-      "title": "Mini/Practice Amps",
-      "href": "/lessons/gear/amps/mini",
-      "description": "Portable solutions for home practice",
+      "title": "Solid-State Amplifiers",
+      "href": "/lessons/gear/amps/solid-state",
+      "description": "Transistor precision, high damping factor, and Class D power efficiency",
+      "icon": "💡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Bass Guitars Guide",
+      "href": "/lessons/gear/guitars/bass",
+      "description": "Scale lengths, active vs passive pickups, tone woods, and neck construction",
+      "icon": "🎸",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Compressor Pedals Guide",
+      "href": "/lessons/gear/effects/compressor",
+      "description": "Peak limiting, VCA dynamics control, and evening out slap bass transients",
+      "icon": "🎛️",
       "bgColor": "bg-white"
     }
   ]

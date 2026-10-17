@@ -1,237 +1,416 @@
 {
   "slug": "amps-tube",
   "category": "amps",
-  "pageTitle": "Tube Amplifiers: The Heart of Rock & Roll",
-  "subtitle": "The gold standard of guitar amplification - warmth, dynamics, and vintage tone",
+  "pageTitle": "Tube Amplifiers: Thermionic Valves, Dynamic Touch & Harmonic Saturation",
+  "subtitle": "The gold standard of expressive guitar tone — physics, vacuum tube types, circuit topologies, legendary amps & maintenance",
   "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
   "backLink": {
     "href": "/lessons/gear/amps",
     "label": "Back to Amplifiers"
   },
   "introduction": {
-    "title": "Tube Amplifiers: The Heart of Rock & Roll",
-    "text": "Solid state and digital modeling amps have closed much of the tonal gap over the years, yet tube amps remain the reference point most players and engineers still compare everything else against. That staying power comes down to physics: a vacuum tube overdrives in a way that adds musical, ear-pleasing harmonics rather than harsh clipping, and it responds to how hard and how softly you play in a way that's genuinely difficult to reproduce with any other technology.",
-    "quote": "What You'll Learn:",
+    "title": "Tube Amplifiers: Thermionic Valves, Dynamic Touch & Harmonic Saturation",
+    "text": "Solid-state circuitry and digital signal modeling have closed much of the tonal gap over the decades, yet vacuum tube amplifiers remain the undeniable reference benchmark against which every guitar tone is measured. That staying power is not mere nostalgia; it is rooted in electrical physics. When a thermionic vacuum tube is driven beyond its linear limits, it doesn't abruptly clip off the waveform peaks like a transistor; instead, it compresses smoothly, generating predominantly musical even-order harmonics (octaves and fifths) that the human ear perceives as organic warmth and singing sustain.\n\nBeyond raw frequency content, a tube circuit creates a dynamic, reactive relationship with the player's hands. The power supply filter capacitors momentarily drop voltage under a heavy pick attack—an effect known as power supply 'sag'—producing a tactile compression that blooms as the note rings out. From bedroom low-wattage combos to 100-watt stadium stacks, mastering the tube amplifier requires understanding how tubes generate gain, how different valve types shape tone, and how to dial in their sweet spot safely and effectively.",
+    "quote": "Tube amplifiers aren't merely passive signal boosters; they are non-linear, reactive acoustic instruments. The way a vacuum valve sags under an aggressive pick attack and blooms as the note decays is an analog connection between your fingertips and the speaker cone that digital algorithms spend billions of operations trying to simulate.",
     "columns": [
       {
-        "title": "What You'll Learn",
-        "text": "We'll cover how vacuum tubes actually generate their warm, musical overdrive at a circuit level, and how different tube types shape that character in Fender, Marshall, and other classic designs. You'll see what real maintenance a tube amp needs and why, and get a clearer picture of why, despite decades of digital modeling progress, plenty of professional musicians still build their core tone around real tubes."
+        "title": "Thermionic Physics & Overdrive",
+        "text": "How boiling electrons off a heated cathode across a vacuum to an anode plate produces progressive soft-clipping, natural compression, and rich even-order harmonic saturation.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Valve Taxonomy & Tonality",
+        "text": "The critical sonic differences between American beam tetrodes (6L6, 6V6) and British pentodes (EL34, EL84), plus dual-triode preamp stages (12AX7, 12AT7, 12AU7).",
+        "icon": "🎸"
+      },
+      {
+        "title": "Circuit Topologies & Tone Stacks",
+        "text": "Class A cathode bias vs Class A/B push-pull operation, output transformer saturation, passive interactive tone stacks, and impedance matching rules.",
+        "icon": "🔊"
       }
     ]
   },
   "sections": [
     {
-      "title": "How Tube Amplifiers Work",
+      "title": "Thermionic Valve Physics & Circuit Architecture",
+      "subtitle": "How vacuum tubes convert electrical current into touch-responsive acoustic power",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Vacuum Tube Technology",
-          "description": "A vacuum tube amplifies a signal by controlling the flow of electrons boiled off a heated cathode, through a vacuum, to a positively charged anode, with a grid in between that regulates that flow in proportion to the incoming guitar signal. When that tube is pushed harder than it can cleanly handle, it doesn't clip abruptly the way a transistor does; it compresses and adds even-order harmonics, which is the physical origin of the \"warm\" tube breakup guitarists chase.",
+          "title": "Vacuum Tube Operation & Soft Clipping",
+          "description": "At its heart, a vacuum tube (or thermionic valve) relies on the Edison effect: an electric filament heats a cathode until electrons boil off into a vacuum envelope. A high positive DC voltage on the plate (anode) attracts these electrons, while a control grid positioned between them regulates this electron flow based on your guitar's tiny AC pickup signal. When the grid is driven hard, the tube saturates progressively, gently rounding the waveform peaks into musical, ear-pleasing harmonic overdrive rather than harsh, jagged transistor square waves.",
           "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Filament / Heater", "value": "Heats cathode to ~1000°C to excite electrons into thermal emission" },
+            { "label": "Cathode", "value": "Coated metal element emitting negative electron cloud into the vacuum" },
+            { "label": "Control Grid", "value": "Modulates electron stream in direct proportion to guitar pickup voltage" },
+            { "label": "Plate (Anode)", "value": "High positive potential (150V to 500V DC) collecting accelerated electrons" }
+          ],
           "items": [
-            "Cathode: Heated element that emits electrons",
-            "Anode: Attracts electrons, completing the circuit",
-            "Grid: Controls electron flow, creating amplification"
+            "Soft-knee compression: Peak amplitude compresses gradually before clipping occurs",
+            "Harmonic generation: Produces 2nd, 4th, and subtle 3rd-order harmonics that enrich timbre",
+            "Volume pot cleanup: Rolling guitar volume back cleans up distortion instantly without loss of treble"
           ]
         },
         {
-          "title": "The Tube Amp Signal Chain",
-          "description": "Your guitar signal passes through several preamp tube stages that do most of the tone shaping and initial gain, before reaching the power tubes, which are built to handle much higher voltage and current in order to drive a speaker rather than just shape tone. The output transformer between the power tubes and the speaker matters more than it looks: it matches the tube circuit's high impedance to the speaker's low impedance, and its own core saturation under heavy playing contributes its own subtle compression to the final sound.",
+          "title": "The Tube Amp Signal Chain & Iron Transformers",
+          "description": "Your guitar signal travels through a sequence of specialized stages: high-gain preamp tubes shape EQ and initial crunch, the phase inverter splits the signal into inverted halves, power tubes deliver brute current, and the massive output transformer performs the vital task of converting high-voltage/low-current tube power into the low-voltage/high-current energy required to push magnetic speaker voice coils.",
           "bgColor": "bg-green-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Preamp Section", "value": "12AX7 stages providing up to 60dB gain and tone stack filtering" },
+            { "label": "Phase Inverter", "value": "Splits signal into positive and negative waveforms for push-pull power tubes" },
+            { "label": "Power Section", "value": "Drives high-voltage output stage to produce stage volume and power-tube breakup" },
+            { "label": "Output Transformer", "value": "Matches 3,000Ω-8,000Ω tube impedance to 4Ω/8Ω/16Ω speaker load" }
+          ],
           "items": [
-            "Input: Guitar signal enters the first preamp tube",
-            "Preamp: Multiple tube stages shape and color the tone",
-            "Power tubes: Amplify the signal to drive speakers",
-            "Output transformer: Matches impedance to speakers"
+            "Transformer saturation: Steel laminate core saturates under peak load, adding warm compression",
+            "Power supply sag: Tube rectifiers (e.g., 5U4, GZ34) sag under heavy transients for organic spongey feel",
+            "Presence & resonance: Negative feedback loops inject speaker output back into the phase inverter"
           ]
         }
       ]
     },
     {
-      "title": "Common Tube Types",
+      "title": "Preamp & Power Tube Taxonomy",
+      "subtitle": "The distinct sonic signatures of legendary glass bottles",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "12AX7 / ECC83 Preamp Standard",
+          "badge": { "text": "Gain Factor: 100", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The quintessential dual-triode preamp tube found in nearly every tube guitar amplifier since the 1950s. Known for high gain, rich harmonic overtone generation, and aggressive upper-mid bite when pushed.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "Amplification Factor", "value": "100 (Maximum standard dual-triode gain)" },
+            { "label": "Typical Role", "value": "V1 input stage, tone stack recovery, high-gain cascading overdrive" },
+            { "label": "Sound Signature", "value": "Harmonically dense, focused midrange, crisp high-end definition" }
+          ],
+          "items": [
+            "Universal standard in Fender, Marshall, Vox, and Mesa Boogie preamps",
+            "Can be swapped with lower-gain variants to tame overly harsh or noisy amplifiers"
+          ]
+        },
+        {
+          "title": "12AT7 & 12AU7 Lower-Gain Preamp Tubes",
+          "badge": { "text": "Gain: 60 / 20", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Specialized dual-triodes designed for higher current drive and lower voltage gain. The 12AT7 provides pristine headroom and high transconductance, while the 12AU7 offers ultra-clean, warm buffering.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "12AT7 (ECC81)", "value": "Gain factor 60; ideal for spring reverb drivers and phase inverters" },
+            { "label": "12AU7 (ECC82)", "value": "Gain factor 20; ultra-low gain, high current, hi-fi audio headroom" },
+            { "label": "Tonal Effect", "value": "Expands clean headroom and prevents premature preamp clipping" }
+          ],
+          "items": [
+            "Fender uses a 12AT7 as the phase inverter in Twin and Deluxe Reverb amps",
+            "Commonly used to calm down excessively aggressive high-gain channels"
+          ]
+        },
+        {
+          "title": "6L6 & 6V6 American Beam Tetrodes",
+          "badge": { "text": "American Voice", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Pioneered by RCA in the 1930s, beam power tetrodes use beam-forming plates to maximize efficiency. Known worldwide as the foundation of the sparkling, high-headroom 'American' clean tone.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "6L6GC", "value": "~25W-30W per pair; massive low-end punch, scooped mids, glassy highs" },
+            { "label": "6V6GT", "value": "~12W-14W per pair; lower wattage, sweet early breakup, singing compression" },
+            { "label": "Hallmark Amps", "value": "Fender Twin Reverb, Bassman, Deluxe Reverb, Mesa Dual Rectifier" }
+          ],
+          "items": [
+            "Tight, articulate low end that holds together under heavy dropped tunings",
+            "Sparkling treble harmonics that make single-coil Stratocasters and Telecasters sing"
+          ]
+        },
+        {
+          "title": "EL34 & EL84 British True Pentodes",
+          "badge": { "text": "British Voice", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "European pentodes featuring a physical suppressor grid. Famous for their aggressive, midrange-forward 'British crunch', immediate transient response, and compressed power-stage saturation.",
+          "bgColor": "bg-red-50",
+          "fields": [
+            { "label": "EL34", "value": "~25W per pair; prominent 1kHz-2kHz bark, tight low end, classic rock crunch" },
+            { "label": "EL84 (6BQ5)", "value": "~12W-15W per pair; chiming top-end sparkle, singing midrange sustain" },
+            { "label": "Hallmark Amps", "value": "Marshall JCM800, Super Lead, Vox AC30, Vox AC15" }
+          ],
+          "items": [
+            "Cuts through dense live band mixes with razor-sharp midrange definition",
+            "EL84 tubes provide the legendary 'Class A chime' in vintage Vox circuits"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Class A vs. Class A/B Topologies",
+      "subtitle": "How amplifier bias and operating cycles dictate playing feel, headroom, and touch sensitivity",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Preamp Tubes",
-          "bgColor": "bg-purple-50",
+          "title": "Class A Operation (Continuous Conduction)",
+          "description": "In a true Class A amplifier, the power tubes are biased so that current flows through them continuously throughout the full 360 degrees of the input waveform. Because the tubes never switch off, there is zero crossover distortion, resulting in instant pick attack response, buttery touch sensitivity, and rich harmonic saturation at lower volumes. The trade-off is lower electrical efficiency (~25%), intense heat generation, and reduced clean headroom.",
+          "bgColor": "bg-yellow-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Operating Angle", "value": "360° continuous conduction (tubes operate at idle close to max dissipation)" },
+            { "label": "Biasing Method", "value": "Typically cathode-biased (self-adjusting via cathode resistor/capacitor)" },
+            { "label": "Tonal Character", "value": "Warm, immediate compression, singing sustain, bell-like chime" },
+            { "label": "Classic Examples", "value": "Fender Tweed Champ (single-ended 5W), Vox AC30 (cathode-biased push-pull)" }
+          ],
           "items": [
-            "12AX7 (ECC83): High gain, bright tone. Most common preamp tube.",
-            "12AU7 (ECC82): Lower gain, warmer tone. Often used in reverb circuits.",
-            "12AT7 (ECC81): Medium gain, balanced tone. Good for phase inverters."
+            "Extremely sensitive to player dynamics: picks softly for chime, digs in for thick overdrive",
+            "Tubes run hot and wear faster due to continuous high plate dissipation",
+            "Sweet, musical compression that flatters blues, indie, and vintage rock leads"
           ]
         },
         {
-          "title": "Power Tubes",
-          "bgColor": "bg-teal-50",
+          "title": "Class A/B Push-Pull Operation (High Efficiency)",
+          "description": "In Class A/B push-pull designs, power tubes operate in matched pairs: one tube handles the positive swing of the signal wave while the second handles the negative swing, with each conducting for slightly more than 180 degrees. This shared workload yields dramatically higher electrical efficiency (~60%), cooler idle temperatures, massive dynamic headroom, and punchy, tight bass that remains articulate at thunderous stage volumes.",
+          "bgColor": "bg-indigo-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Operating Angle", "value": "Between 180° and 360° per tube (alternating push-pull cycles)" },
+            { "label": "Biasing Method", "value": "Typically fixed-bias (requires manual bias voltage adjustment when replacing tubes)" },
+            { "label": "Tonal Character", "value": "High clean headroom, tight percussive low end, massive punch and attack" },
+            { "label": "Classic Examples", "value": "Fender Twin Reverb, Marshall JCM800, Mesa Boogie Dual Rectifier" }
+          ],
           "items": [
-            "EL34: British sound, compressed midrange. Used in Marshall amps.",
-            "6L6: American tone, tight bass, clear highs. Fender's choice.",
-            "KT88: High power, excellent headroom. Used in high-end amps."
+            "Maintains crystal-clear note definition at arena and outdoor stage volumes",
+            "Essential for heavy palm-muting, funk rhythm chopping, and high-headroom pedal platforms",
+            "Requires matched pairs or quads of power tubes to eliminate hum and crossover distortion"
           ]
         }
       ]
     },
     {
-      "title": "Why Choose Tube Amplifiers?",
+      "title": "Legendary Tube Amplifiers (Hall of Fame)",
+      "subtitle": "The benchmark amplifiers that sculpted recorded rock, blues, and modern metal history",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Fender Twin Reverb",
+          "badge": { "text": "American Clean Benchmark", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The undisputed king of high-headroom, glassy clean tone. Powered by four 6L6 power tubes pushing 85 watts through twin 12-inch speakers, the Twin Reverb stays clean and articulate at deafening stage volumes, complemented by lush all-tube spring reverb and optical vibrato.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "85W RMS; 4x 6L6GC power tubes, 4x 12AX7 & 2x 12AT7 preamp tubes" },
+            { "label": "Speakers", "value": "2x 12-inch Jensen C12K (or vintage JBL D120F)" },
+            { "label": "Tone Profile", "value": "Deep percussive bass, scooped smooth midrange, sparkling crystalline highs" },
+            { "label": "Legendary Users", "value": "Eric Johnson, Stevie Ray Vaughan (cleans), Mark Knopfler, Jerry Garcia" }
+          ],
+          "items": [
+            "The ultimate transparent pedal platform for overdrive, chorus, and delay",
+            "All-analog tube-driven spring reverb pan and pulsating optical vibrato circuit"
+          ]
+        },
+        {
+          "title": "Marshall JCM800",
+          "badge": { "text": "Hard Rock Definition", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The defining voice of 1980s hard rock, heavy metal, and grunge. Built around a master volume circuit and a fire-breathing EL34 power section, the 2203/2204 JCM800 delivered aggressive, cutting midrange crunch that sliced effortlessly through loud drums and bass.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "100W (2203) / 50W (2204); 4x or 2x EL34 power tubes, 3x 12AX7 preamp" },
+            { "label": "Design Feature", "value": "Cascaded preamp gain stages paired with a Master Volume control" },
+            { "label": "Tone Profile", "value": "Aggressive 1.5kHz-2.5kHz upper-mid bite, tight punchy bass, raw organic roar" },
+            { "label": "Legendary Users", "value": "Slash (Guns N' Roses), Zakk Wylde, Tom Morello, Kerry King (Slayer)" }
+          ],
+          "items": [
+            "Responds dramatically to guitar volume knob cleanup and overdrive pedal boosting",
+            "Foundational tone on seminal albums like Appetite for Destruction and Master of Puppets"
+          ]
+        },
+        {
+          "title": "Vox AC30",
+          "badge": { "text": "British Chime & Crunch", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "Originally engineered to give The Beatles audible stage volume over screaming fans, the AC30 features a cathode-biased quartet of EL84 power tubes operating without negative feedback. The result is glorious top-end chime and warm, singing harmonic compression.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "30W Class A cathode-bias; 4x EL84 power tubes, 3x 12AX7 preamp tubes" },
+            { "label": "Speakers", "value": "2x 12-inch Celestion Alnico Blue or G12M Greenback" },
+            { "label": "Tone Profile", "value": "Bell-like treble chime, complex midrange compression, smooth creamy breakup" },
+            { "label": "Legendary Users", "value": "Brian May (Queen), The Edge (U2), The Beatles, Rory Gallagher" }
+          ],
+          "items": [
+            "Legendary Top Boost channel features interactive Bass and Treble controls that affect midrange",
+            "Running a treble booster (Dallas Rangemaster style) into the Normal channel produces Queen's signature roar"
+          ]
+        },
+        {
+          "title": "Mesa Boogie Dual Rectifier",
+          "badge": { "text": "Modern High-Gain King", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The amplifier that defined modern 1990s and 2000s rock and metal. With its switchable silicon diode vs 5U4 tube rectifier circuits and cascading 12AX7 gain stages, the Dual Rectifier unleashes massive low-end wallop and saturated high-gain harmonic distortion.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "100W Multi-Watt; 4x 6L6 (or EL34), 5x 12AX7, 2x 5U4G rectifier tubes" },
+            { "label": "Rectifier Switch", "value": "Silicon Diode (fast tight punch) vs Vacuum Tube (vintage spongy sag)" },
+            { "label": "Tone Profile", "value": "Thunderous subterranean low end, scooped liquid gain, ferocious palm-mute thump" },
+            { "label": "Legendary Users", "value": "James Hetfield (Metallica), Dave Grohl (Foo Fighters), Adam Jones (Tool)" }
+          ],
+          "items": [
+            "Independent channel voicing: Clean, Raw, Vintage, and Modern high-gain modes",
+            "Multi-watt power switching allows power selection per channel (50W or 100W)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Top Tube Amplifiers for Every Budget",
+      "subtitle": "Carefully selected valve amplifiers from grab-and-go practice combos to pro stage rigs",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Tonal Warmth",
-          "description": "When a tube is driven into saturation it generates predominantly even-order harmonics, which the ear tends to hear as pleasant and musical rather than harsh, unlike the odd-order harmonics that dominate hard transistor clipping. That's the actual mechanism behind the \"warmth\" people describe, not just a vague aesthetic preference but a measurable difference in the harmonic content of the distorted signal.",
-          "bgColor": "bg-yellow-50",
-          "borderColor": "",
+          "title": "Fender Blues Junior",
+          "badge": { "text": "$500–$750 · Grab-and-Go Classic", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "The world's most popular compact tube combo. Pushing 15 watts through a 12-inch speaker, the Blues Junior is lightweight, highly portable, and delivers authentic Fender tube sparkle with a foot-switchable FAT boost circuit for singing blues solos.",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "15 Watts; 2x EL84 power tubes, 3x 12AX7 preamp tubes" },
+            { "label": "Speaker", "value": "1x 12-inch Celestion A-Type" },
+            { "label": "Controls", "value": "Reverb, Master, Middle, Bass, Treble, 'Fat' Switch, Volume" }
+          ],
           "items": [
-            "Natural compression",
-            "Harmonic richness",
-            "Musical saturation"
+            "Lightweight (14.3 kg / 31.5 lbs) and compact for effortless rehearsal transport",
+            "Real spring reverb tank onboard with smooth decay",
+            "Takes overdrive, fuzz, and modulation pedals exceptionally well"
           ]
         },
         {
-          "title": "Dynamic Response",
-          "description": "Because tubes react continuously to input level rather than switching cleanly between states, a tube amp translates a light touch into a cleaner tone and a hard pick attack into more grit within the very same note, giving a player far more expressive range from technique alone, without touching a single knob.",
-          "bgColor": "bg-pink-50",
-          "borderColor": "",
+          "title": "Marshall DSL40CR",
+          "badge": { "text": "$800–$1,100 · Versatile High-Gain", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "A versatile powerhouse capable of moving from sparkling cleans to classic Plexi crunch and modern JCM-style high-gain roar. Features 40W of EL34 power, power reduction to 20W for home practice, dual master volumes, and digital reverb.",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "40W switchable to 20W; 2x EL34, 4x ECC83 / 12AX7" },
+            { "label": "Speaker", "value": "1x 12-inch Celestion V-Type" },
+            { "label": "Channels", "value": "2 channels with 4 footswitchable voices: Classic Clean, Crunch, OD1, OD2" }
+          ],
           "items": [
-            "Touch sensitivity",
-            "Pick attack response",
-            "Volume knob cleanup"
+            "Dual master volume controls allow an instant foot-switchable solo boost",
+            "Built-in Softube-emulated line output for direct recording and silent stage feeds",
+            "Series effects loop with bypass switch for outboard delay and reverb"
           ]
         },
         {
-          "title": "Natural Overdrive",
-          "description": "A tube's soft-clipping behavior keeps the fundamental note's harmonic structure intact even as distortion is added on top, which is why classic rock and blues tones built around tube breakup still sound like a note bending and singing rather than a signal simply being crushed.",
-          "bgColor": "bg-indigo-50",
-          "borderColor": "",
+          "title": "Fender Deluxe Reverb",
+          "badge": { "text": "$1,300–$1,700 · The Studio Benchmark", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The most recorded guitar amplifier in music history. With 22 watts of 6V6 power, the '65 Deluxe Reverb reaches its sweet, harmonically saturated breakup point at club and recording studio volumes without blowing out the room.",
+          "bgColor": "bg-orange-50",
+          "fields": [
+            { "label": "Power & Tubes", "value": "22W RMS; 2x 6V6 power tubes, 4x 12AX7 & 2x 12AT7 preamp tubes, 1x 5U4GB rectifier" },
+            { "label": "Speaker", "value": "1x 12-inch Jensen C12K" },
+            { "label": "Channels", "value": "Normal and Vibrato channels, both with dual inputs" }
+          ],
           "items": [
-            "Smooth saturation",
-            "Musical breakup",
-            "Sustain and bloom"
+            "Tube rectifier provides luxurious dynamic compression and note bloom",
+            "Tube-driven spring reverb and authentic optical vibrato with foot-switchable control",
+            "The industry benchmark standard for session guitarists, country pickers, and blues masters"
           ]
         }
       ]
     },
     {
-      "title": "Legendary Tube Amplifiers",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Classic American Amps",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "items": [
-            "Fender Twin Reverb: Built around 6L6 power tubes for a bright, high-headroom clean tone, which made it a go-to for players who need to stay clean at real volume, Eric Johnson has long run a pair of blackface Twin Reverbs, and Mark Knopfler moved to Twin Reverbs on stage from the late 1970s onward.",
-            "Fender Deluxe Reverb: A smaller, lower-wattage cousin to the Twin that breaks up earlier and more musically at manageable volume, which has made it a favorite among players including John Mayer and Keith Richards for its natural, touch-responsive tube grit."
-          ]
-        },
-        {
-          "title": "British Legends",
-          "bgColor": "bg-gray-50",
-          "borderColor": "",
-          "items": [
-            "Marshall JCM800: Built its reputation on an aggressive, midrange-forward EL34 power section that became the backbone of 80s hard rock and metal guitar tone, and it's the amp Zakk Wylde has built his signature model around; Slash has also counted a JCM800 among the Marshalls central to his tone over the years.",
-            "Vox AC30: Known for a chiming, naturally compressed top end that comes partly from its Class A power section, and it's the amp The Beatles built much of their live and studio sound around; Brian May and The Edge have each relied on the AC30 as the foundation of their signature tones for decades."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Tube Amp Maintenance",
-      "bgColor": "bg-white",
-      "borderColor": "",
-      "warningText": "Tube amplifiers contain high voltages that can be lethal. Always have qualified technicians perform internal maintenance and repairs. Never remove the chassis while plugged in. Capacitors can hold charge even when unplugged. Always use proper safety procedures.",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Routine Maintenance",
-          "bgColor": "bg-green-50",
-          "borderColor": "",
-          "items": [
-            "Tube replacement: Every 1-3 years depending on use",
-            "Bias adjustment: When replacing power tubes",
-            "Cleaning: Keep vents clear of dust and debris",
-            "Transport care: Remove tubes for long moves"
-          ]
-        },
-        {
-          "title": "Signs Your Tubes Need Replacement",
-          "bgColor": "bg-blue-50",
-          "borderColor": "",
-          "items": [
-            "Loss of volume or power",
-            "Increased noise or microphonics",
-            "Distorted or weak tone",
-            "Red plating (visible through tube glass)",
-            "Intermittent cutting out"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Tube vs. Other Technologies",
+      "title": "Tube Amplifier Architecture & Comparison Matrix",
+      "subtitle": "Head-to-head technical comparison across primary tube topologies",
       "bgColor": "bg-white",
       "borderColor": "",
       "layout": "table",
-      "tableHeaders": ["Feature", "Tube Amps", "Solid State", "Modeling"],
+      "tableHeaders": ["Circuit Category", "Power Tubes", "Operating Class", "Clean Headroom", "Breakup Character", "Best Musical Styles"],
       "tableRows": [
-        ["Tone Quality", "Warm, musical", "Clean, accurate", "Versatile, varied"],
-        ["Maintenance", "High", "Low", "Low"],
-        ["Weight", "Heavy", "Light", "Medium"],
-        ["Cost", "High", "Low", "Medium"],
-        ["Reliability", "Good", "Excellent", "Excellent"]
+        ["American Combo (e.g., Deluxe/Twin)", "6V6 / 6L6GC", "Class A/B Fixed Bias", "Very High to Massive", "Glassy, scooped mids, bell-like chime", "Blues, Country, Funk, Jazz, Indie, Classic Rock"],
+        ["British Stack (e.g., JCM800/Plexi)", "EL34 / KT77", "Class A/B Fixed Bias", "Moderate to High", "Punchy 1kHz-2kHz crunch, aggressive bark", "Hard Rock, Heavy Metal, Punk, Grunge, Classic Rock"],
+        ["Class A Chime (e.g., AC30/AC15)", "EL84 / 6BQ5", "Class A Cathode Bias", "Low to Medium", "Singing top-end chime, rich compression", "British Invasion, Alternative, Indie, Pop, Worship"],
+        ["Modern High-Gain (e.g., Rectifier)", "6L6 / 6550", "Class A/B Dual Rectified", "High (Clean) / Infinite Gain", "Cascaded saturation, massive low-end thump", "Modern Metal, Djent, Hardcore, Thrash, Nu-Metal"]
       ]
     },
     {
-      "title": "Buying Your First Tube Amp",
+      "title": "Dialing In Tone Stacks & Master Volume Circuits",
+      "subtitle": "How passive interactive EQ and gain staging control your amplifier's character",
       "bgColor": "bg-white",
       "borderColor": "",
-      "layout": "grid-3",
+      "layout": "grid-2",
       "cards": [
         {
-          "title": "Budget ($300-600)",
-          "badge": { "text": "$300-600", "bgColor": "bg-green-100", "textColor": "text-green-800" },
-          "bgColor": "bg-orange-50",
+          "title": "The Interactive Passive Tone Stack",
+          "description": "Unlike active mixer equalizers where knobs boost frequencies independently, traditional guitar amplifier tone stacks (FMV: Fender, Marshall, Vox circuits) are completely passive filter networks that only cut signal. Furthermore, the controls are deeply interactive: turning down the Treble pot shifts the frequency center of the Middle control, and turning Bass past 12 o'clock can rob power and muddy high-gain distortion.",
+          "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Fender Tone Stack", "value": "Inherent mid-scoop (~500Hz) hardwired into the circuit for glassy sparkle" },
+            { "label": "Marshall Tone Stack", "value": "Forward midrange peak (~1kHz); smaller slope resistor retains cutting crunch" },
+            { "label": "Vox Top Boost", "value": "Treble and Bass interact to create midrange dip; no dedicated Mid knob needed" }
+          ],
           "items": [
-            "Fender Blues Junior",
-            "Vox AC15",
-            "Marshall DSL20CR",
-            "Orange Crush 35RT"
+            "Golden Rule: In high-gain settings, keep Bass below 4 to prevent flubby power-stage blocking distortion",
+            "Midrange is your live volume: if you're buried by the drummer, boost Mids before touching Master Volume",
+            "Presence knob controls high frequencies above the tone stack inside the negative feedback loop"
           ]
         },
         {
-          "title": "Mid-Range ($600-1200)",
-          "badge": { "text": "$600-1200", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
-          "bgColor": "bg-orange-50",
+          "title": "Preamp Gain vs. Master Volume Saturation",
+          "description": "Understanding the difference between preamp overdrive and power amp saturation is essential to dialing in your sound. Preamp gain (Gain knob) produces sharp, harmonically complex, modern distortion at any volume. Power amp saturation (Master Volume maxed) pushes the output tubes and iron transformer into warm, blooming, spongy compression reminiscent of 1960s and 70s rock recordings.",
+          "bgColor": "bg-teal-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Preamp Distortion", "value": "Produced by cascading 12AX7 triodes; tight, bright, articulate, works at low volume" },
+            { "label": "Power Amp Breakup", "value": "Produced by EL34/6L6 saturation + transformer sag; thick, smooth, earth-shaking" },
+            { "label": "Attenuators", "value": "Reactive loadboxes (e.g., Two Notes, Universal Audio Ox) let you crank Master volume safely" }
+          ],
           "items": [
-            "Fender Deluxe Reverb",
-            "Vox AC30",
-            "Marshall JCM800 Studio",
-            "Mesa Boogie Express"
+            "For classic Plexi crunch: Set Gain to 5, Master to 8–10 (use an attenuator or ear protection)",
+            "For modern articulate metal: Set Gain to 6, Master to 3–4, boost with a clean Tube Screamer pedal",
+            "Guitar volume knob trick: Set your amp for rhythm crunch at 7 on the guitar pot; roll to 10 for lead solos"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tube Amp Maintenance, Biasing & Lethal Voltage Safety",
+      "subtitle": "Essential care protocols to keep your amplifier reliable and prevent catastrophic circuit damage",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "warningText": "LETHAL VOLTAGE WARNING: Vacuum tube amplifiers operate with lethal internal DC potentials ranging from 300V to over 550V. Giant power supply filter capacitors can store deadly electrical charges for days or weeks even when the amplifier is unplugged from the wall. NEVER open an amplifier chassis or touch internal electronics unless you are a qualified technician trained in capacitor discharge protocols.",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Routine Maintenance & Tube Replacement Signs",
+          "description": "Vacuum tubes are consumable components that degrade gradually over hundreds of playing hours. Preamp tubes typically last 3,000 to 5,000 hours (often 5 to 10 years), while high-voltage power tubes should be replaced every 1 to 2 years under regular gigging conditions. Knowing how to detect tube failure early prevents costly transformer burnouts.",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Loss of Headroom & Tone", "value": "Dull high end, muddy undefined bass, and premature mushy distortion" },
+            { "label": "Microphonics & Squealing", "value": "Tapping a tube lightly with a wooden pencil produces ringing or squealing through speaker" },
+            { "label": "Red Plating (EMERGENCY)", "value": "Metal plates inside power tube glow cherry red; shut off power immediately to save transformer" },
+            { "label": "Excessive Hiss & Crackle", "value": "Intermittent static pops, hiss, or intermittent volume drops indicate failing tube pins" }
+          ],
+          "items": [
+            "Always let tubes cool down for 5–10 minutes before moving or loading an amplifier into a vehicle",
+            "Keep amp cooling vents clean and unobstructed; heat is the number one killer of internal capacitors",
+            "Clean tube sockets annually with non-residue electrical contact cleaner (DeoxIT) to prevent oxidation"
           ]
         },
         {
-          "title": "Professional ($1200+)",
-          "badge": { "text": "$1200+", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
-          "bgColor": "bg-orange-50",
+          "title": "Biasing & Speaker Impedance Matching Rules",
+          "description": "Biasing is the process of setting the idle resting DC current flowing through your power tubes. Fixed-bias amplifiers must be re-biased by a technician whenever power tubes are swapped to ensure they operate within their optimal dissipation window (typically 60%–70% of max plate wattage). Furthermore, you must never run a tube amp without a matched speaker load connected.",
+          "bgColor": "bg-blue-50",
           "borderColor": "",
+          "fields": [
+            { "label": "Fixed Bias", "value": "Requires technician adjustment with multimeter; optimizes headroom and tube longevity" },
+            { "label": "Cathode Bias (Self-Bias)", "value": "Self-regulating via cathode resistor; plug-and-play tube swaps without bias meter" },
+            { "label": "Speaker Load Rule", "value": "NEVER power on a tube amp without a speaker or reactive load box connected (destroys transformer)" },
+            { "label": "Impedance Matching", "value": "Always match amp output jack (4Ω, 8Ω, 16Ω) exactly to total cabinet impedance" }
+          ],
           "items": [
-            "Fender Twin Reverb",
-            "Marshall Plexi",
-            "Mesa Boogie Mark V",
-            "Dumble-style boutique"
+            "Hot bias (>75% dissipation): Sweeter, earlier breakup and warmth, but drastically reduced tube lifespan",
+            "Cold bias (<50% dissipation): Sterile, harsh crossover distortion and stiff dynamic feel",
+            "Mismatched speaker impedance can reflect back-EMF voltage spikes exceeding 2,000V into output transformer"
           ]
         }
       ]
@@ -239,15 +418,31 @@
   ],
   "relatedTopics": [
     {
-      "title": "Solid State Amps",
+      "title": "Solid-State Amplifiers",
       "href": "/lessons/gear/amps/solid-state",
-      "description": "Reliable, affordable, and low maintenance",
+      "description": "High-headroom transistor technology, Class D efficiency, and ultra-reliable clean platforms",
+      "icon": "💡",
       "bgColor": "bg-white"
     },
     {
-      "title": "Modeling Amps",
+      "title": "Digital Modeling Amplifiers",
       "href": "/lessons/gear/amps/modeling",
-      "description": "Digital versatility and modern features",
+      "description": "DSP convolution, neural capture, and versatile multi-amplifier digital modeling rigs",
+      "icon": "🖥️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Hybrid Amplifiers",
+      "href": "/lessons/gear/amps/hybrid",
+      "description": "Combining real 12AX7 vacuum tube preamps with lightweight, high-power solid-state output sections",
+      "icon": "🔀",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Overdrive Pedals Guide",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Soft-clipping overdrive circuits and pushing tube preamps into singing harmonic saturation",
+      "icon": "⚡",
       "bgColor": "bg-white"
     }
   ]
