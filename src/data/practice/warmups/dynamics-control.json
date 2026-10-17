@@ -2,82 +2,119 @@
   "slug": "dynamics-control",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Dynamics Control",
-    "subtitle": "Master dynamics, accents, and ghost notes to bring expressiveness and musicality to your playing.",
+    "pageTitle": "Dynamics Control Masterclass",
+    "subtitle": "Master touch sensitivity, whisper-quiet pianissimo to explosive fortissimo, funk ghost notes, and vocal guitar dynamics.",
     "heroGradient": "bg-gradient-to-br from-amber-50 to-orange-100",
-    "heroTitle": "Dynamics, Accents & Ghost Notes",
-    "heroDescription": "Musical dynamics are what separate mechanical playing from truly expressive guitar work. These exercises develop your ability to control volume, articulate accents, and incorporate ghost notes - essential skills for all genres from funk to fingerstyle to rock."
+    "heroTitle": "Dynamics Control Masterclass",
+    "heroDescription": "Dynamics are what separate robotic, mechanical guitar playing from deeply emotional, world-class artistry. A guitarist who plays every note at the exact same uniform volume is like a speaker who shouts every sentence at maximum loudness—monotonous, fatiguing, and devoid of emotional nuance. From the pin-drop whisper of Jeff Beck's volume swells to the explosive percussive accents of Stevie Ray Vaughan and the singing, conversational nuances of B.B. King, mastering dynamics transforms your guitar from a piece of wood and wire into a living, breathing human voice."
   },
   "guidelines": {
-    "title": "Dynamics Control Guidelines",
+    "title": "The Biomechanics of Expressive Touch",
     "columns": [
       {
-        "title": "Volume Control",
+        "title": "Volume Modulation & Pick Touch",
         "items": [
-          { "bulletColor": "text-amber-500", "text": "Control comes from pick attack angle and force" },
-          { "bulletColor": "text-amber-500", "text": "Practice at whisper-quiet volume (pianissimo) first" },
-          { "bulletColor": "text-amber-500", "text": "Use fretting hand pressure to shape sustain" },
-          { "bulletColor": "text-amber-500", "text": "Dynamics should serve the music, not show off technique" }
+          {
+            "bulletColor": "text-amber-500",
+            "text": "The Spectrum of Pick Velocity: Volume on the guitar is dictated by pick acceleration through the string, not forearm muscle tension. Accelerate with a loose wrist for loud attacks; glide feather-light for quiet passages."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Pick Angle Timbral Shifts: Striking perpendicular to the string produces a dark, punchy fundamental; slicing at a sharp 45-degree angle produces a delicate, airy whisper."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Pianissimo to Fortissimo Swells: Practice 4-bar dynamic swells: begin at whisper-soft volume (pp), swell continuously over 2 bars to explosive loudness (ff), and decrescendo back to silence."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Fretting-Hand Pressure Dynamics: Firm fretting produces maximum sustain and crisp upper harmonics; light fretting produces warm, rounded, slightly muted notes."
+          },
+          {
+            "bulletColor": "text-amber-500",
+            "text": "Tube Amp Touch Sensitivity: Set your amplifier right on the 'edge of breakup'—soft picking yields sparkling clean tones, while digging in hard triggers rich harmonic overdrive."
+          }
         ]
       },
       {
-        "title": "Accent Technique",
+        "title": "Accents, Ghost Notes & Phrasing",
         "items": [
-          { "bulletColor": "text-orange-500", "text": "Accents come from a slightly wider pick stroke" },
-          { "bulletColor": "text-orange-500", "text": "Ghost notes use minimal fretting pressure and light picking" },
-          { "bulletColor": "text-orange-500", "text": "Practice exaggerating dynamics before making them subtle" },
-          { "bulletColor": "text-orange-500", "text": "Listen critically to how dynamics change the musical feel" }
+          {
+            "bulletColor": "text-orange-500",
+            "text": "The Ghost Note Scratch: Release fretting hand pressure so strings produce a percussive, unpitched 'chuff' when picked, creating high-hat-style dynamic contrast."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Contrasting Accents: In funk, rock, and blues, accent the intended beat (e.g. beat 2 and 4) at double the volume of surrounding unaccented notes."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "The Volume Knob Swell: Strike a note with the guitar's volume pot turned to zero, then smoothly roll the knob up with your pinky to create violin-like, pick-less swells."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Musical Breathing & Space: Dynamics require silence to exist. Intersperse loud, crying solo phrases with whole beats of pin-drop silence to give your notes emotional impact."
+          },
+          {
+            "bulletColor": "text-orange-500",
+            "text": "Micro-Dynamics Within Chords: Strumming with an arc that grazes the bass strings lightly while snapping the treble strings emphasizes melodic top notes in chord melodies."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Volume Control Exercises",
+      "title": "Foundation: Dynamic Range & Accent Calibration",
       "exercises": [
         {
           "number": 1,
-          "title": "Crescendo & Decrescendo",
+          "title": "The 4-Bar Dynamic Swell: Pianissimo to Fortissimo (pp -> ff -> pp)",
           "difficulty": "Beginner",
-          "borderColor": "border-amber-200",
-          "difficultyBg": "bg-amber-100",
-          "difficultyText": "text-amber-700",
-          "numberBg": "bg-amber-100",
-          "numberText": "text-amber-600",
-          "description": "Play a single open string repeatedly with eighth notes for 4 bars. Gradually increase volume (crescendo) over bars 1-2, then gradually decrease (decrescendo) over bars 3-4. Focus on smooth, even volume changes.",
+          "borderColor": "border-blue-200",
+          "difficultyBg": "bg-blue-100",
+          "difficultyText": "text-blue-700",
+          "numberBg": "bg-blue-100",
+          "numberText": "text-blue-600",
+          "description": "Establish control across the entire dynamic spectrum. Pick continuous 8th notes on the high E string, starting at the quietest possible whisper (pianissimo), swelling smoothly over bars 1 and 2 to full volume (fortissimo), and decrescendoing back to silence in bars 3 and 4.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Dynamic Arc: pp (Bars 1-2 Crescendo) -> ff (Peak) -> pp (Bars 3-4 Decrescendo)"
+          },
           "notation": {
-            "title": "Crescendo & Decrescendo on Open E",
-            "alphaTex": "\\ts 4 4\n0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 | 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8 0.1.8",
-            "staveTitle": "pp → ff → pp Dynamic Swell"
+            "title": "Continuous Dynamic Swell on High E",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'Dynamic Swell' :8 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 | 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 | 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 | :2 0.1 :2 r |"
           },
           "practiceNotes": {
-            "colorBg": "bg-amber-50",
-            "colorBorder": "border-amber-200",
-            "colorTitle": "text-amber-900",
-            "colorText": "text-amber-800",
-            "colorAccent": "bg-amber-100",
+            "colorBg": "bg-blue-50",
+            "colorBorder": "border-blue-200",
+            "colorTitle": "text-blue-900",
+            "colorText": "text-blue-800",
+            "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Start at the softest volume you can produce (pianissimo) and grow to the loudest (fortissimo) by the middle, then return. Each note should be slightly different in volume from the last.",
-            "tempo": "80 BPM"
+            "text": "Every single note should be slightly louder (crescendo) or slightly softer (decrescendo) than the one preceding it. Avoid sudden volume jumps; keep the curve smooth and continuous.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Three-Level Dynamics",
+          "title": "Downbeat Accent Calibration (1-and-2-and-3-and-4-and)",
           "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Play an E minor chord pattern at three distinct volume levels: soft (piano), medium (mezzo-forte), and loud (forte). One bar of each, then switch. Your goal is clear, consistent separation between levels.",
-          "chordDiagrams": [
-            { "label": "Em", "chord": "E_minor" }
-          ],
+          "description": "Train your wrist to switch between heavy and light attacks instantly. Strike downbeats (1, 2, 3, 4) with strong, accented fortissimo downstrokes, and play the upbeats ('and') as feather-light pianissimo whispers.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Contrast: Heavy accents on downbeats (1, 2, 3, 4) vs. whisper-soft upbeats"
+          },
           "notation": {
-            "title": "Three-Level Dynamic Exercise",
-            "alphaTex": "\\ts 4 4\n(0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 | (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 | (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4 (0.6 0.5 2.4 2.3 0.2 0.1).4",
-            "staveTitle": "Piano → Mezzo-Forte → Forte"
+            "title": "Downbeat Accent Calibration Exercise",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Downbeat Accents' :8 5.3 5.3 5.3 5.3 5.3 5.3 5.3 5.3 | 7.3 7.3 7.3 7.3 7.3 7.3 7.3 7.3 | :2 5.3 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -86,29 +123,65 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "The hard part is maintaining consistent volume within each level. Record yourself and listen back to check for unwanted volume fluctuations.",
-            "tempo": "70 BPM"
+            "text": "The accented stroke comes from a quick snap of the wrist through the string, while the unaccented upbeat is a relaxed glide. The volume contrast should be unmistakable.",
+            "tempo": "75 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Accent Exercises",
-      "exercises": [
+        },
         {
           "number": 3,
-          "title": "Downbeat Accents",
+          "title": "Off-Beat Upbeat Accents (Funk Pocket)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-amber-200",
+          "difficultyBg": "bg-amber-100",
+          "difficultyText": "text-amber-700",
+          "numberBg": "bg-amber-100",
+          "numberText": "text-amber-600",
+          "description": "Reverse the dynamic polarity: whisper the downbeats and explode with dynamic punch on the upbeats ('and'). This is the rhythmic core of reggae, funk, and modern pop rhythm guitar.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Groove: Whisper on downbeats -> Explode with volume on upbeats ('and')"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
+          "notation": {
+            "title": "Syncopated Upbeat Accent Groove on Am",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Upbeat Accents' :8 (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) (0.5 2.4 2.3 1.2) | :1 (0.5 2.4 2.3 1.2) |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-amber-50",
+            "colorBorder": "border-amber-200",
+            "colorTitle": "text-amber-900",
+            "colorText": "text-amber-800",
+            "colorAccent": "bg-amber-100",
+            "title": "Practice Notes",
+            "text": "Accentuate the upstroke by flicking the wrist upward with snappy speed. Keep your left hand relaxed on the downbeat so the chord sounds warm and muted, then squeeze firmly for the upbeat accent.",
+            "tempo": "80 BPM"
+          }
+        },
+        {
+          "number": 4,
+          "title": "16th-Note Ghost Scratch & Pop (Funk Chank)",
           "difficulty": "Intermediate",
           "borderColor": "border-purple-200",
           "difficultyBg": "bg-purple-100",
           "difficultyText": "text-purple-700",
           "numberBg": "bg-purple-100",
           "numberText": "text-purple-600",
-          "description": "Play eighth notes on the A string, accenting every downbeat (beats 1, 2, 3, 4). The accented notes should be distinctly louder than the unaccented notes between them. This creates a strong rhythmic pulse.",
+          "description": "Combine unpitched percussive ghost scratches with loud, ringing chord pops. Strum continuous 16th notes with relaxed fretting fingers (ghost scratches), clamping down to sound the chord loudly only on beats 2 and 4.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Funk Texture: Whisper ghost scratches on off-beats + fortissimo pop on 2 and 4"
+          },
+          "chordDiagrams": [
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Downbeat Accent Pattern",
-            "alphaTex": "\\ts 4 4\n5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 | 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8",
-            "staveTitle": "Downbeat Accents on A (fret 5)"
+            "title": "Funk Ghost Scratch and Accent Pop Drill",
+            "alphaTex": "\\tempo 90 . \\ts 4 4 staveTitle 'Ghost Pop Drill' :16 (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) (0.6 2.5 0.4 1.3 0.2 0.1) | :1 (0.6 2.5 0.4 1.3 0.2 0.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-purple-50",
@@ -117,24 +190,70 @@
             "colorText": "text-purple-800",
             "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "Think of the accent as a quick snap of the wrist, not a full arm movement. The unaccented notes should still sound clean and even.",
-            "tempo": "80 BPM"
+            "text": "The ghost scratches act like a rhythm drummer's closed hi-hat, while the clamped chord pops act like a cracking snare drum. Keep your right wrist completely relaxed and fluid.",
+            "tempo": "90 BPM (16th notes)"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Fluency: Touch Sensitivity & Expressive Soloing",
+      "exercises": [
+        {
+          "number": 5,
+          "title": "Dynamic Touch Contour in A Minor Pentatonic",
+          "difficulty": "Advanced",
+          "borderColor": "border-red-200",
+          "difficultyBg": "bg-red-100",
+          "difficultyText": "text-red-700",
+          "numberBg": "bg-red-100",
+          "numberText": "text-red-600",
+          "description": "Apply dynamic sculpting to a lead guitar phrase. Start with whisper-soft picking on the lower strings, swell dynamically to aggressive, biting pick attacks at the top of the phrase, and decrescendo back to a gentle whisper on the final root note.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Phrase Arc: pp (soft climb) -> ff (screaming peak) -> pp (whispered resolution)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" }
+          ],
+          "notation": {
+            "title": "Sculpted Dynamic Contour in A Minor Pentatonic",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Dynamic Solo Contour' :16 5.3 7.3 5.2 8.2 5.1 8.1 5.1 8.2 7.3 5.3 7.4 5.4 7.5 5.5 7.6 5.6 | :1 5.6 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-red-50",
+            "colorBorder": "border-red-200",
+            "colorTitle": "text-red-900",
+            "colorText": "text-red-800",
+            "colorAccent": "bg-red-100",
+            "title": "Practice Notes",
+            "text": "Hear how the phrase comes alive like a human vocal performance. When notes change volume dynamically, listener fatigue disappears and your playing sounds professional.",
+            "tempo": "80 BPM (16th notes)"
           }
         },
         {
-          "number": 4,
-          "title": "Off-Beat (Upbeat) Accents",
-          "difficulty": "Intermediate",
+          "number": 6,
+          "title": "The Jeff Beck Volume Knob Swell Emulation",
+          "difficulty": "Advanced",
           "borderColor": "border-indigo-200",
           "difficultyBg": "bg-indigo-100",
           "difficultyText": "text-indigo-700",
           "numberBg": "bg-indigo-100",
           "numberText": "text-indigo-600",
-          "description": "Now reverse it - accent the upbeats ('ands' of each beat). This is essential for reggae, ska, and funk styles. The downbeats should be quiet with strong accents on the 'and' of each beat.",
+          "description": "Emulate Jeff Beck's singing, pick-less violin swells. Wrap your pinky around your guitar's master volume knob. Strike the chord with the volume at zero, then roll the pot from 0 to 10 to create a blooming, vocal chord swell.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Technique: Strike chord silent (Volume 0) -> Smoothly roll knob up to 10"
+          },
+          "chordDiagrams": [
+            { "label": "Em", "chord": "Em" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "Upbeat Accent Pattern",
-            "alphaTex": "\\ts 4 4\n5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} | 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a} 5.5.8 5.5.8{a}",
-            "staveTitle": "Upbeat Accents - Reggae/Funk Style"
+            "title": "Violin-Style Volume Knob Swell Progression",
+            "alphaTex": "\\tempo 65 . \\ts 4 4 staveTitle 'Volume Knob Swell' :2 (0.6 2.5 2.4 0.3 0.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |"
           },
           "practiceNotes": {
             "colorBg": "bg-indigo-50",
@@ -143,104 +262,92 @@
             "colorText": "text-indigo-800",
             "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "This feels unnatural at first because we naturally accent downbeats. Start very slowly. Tap your foot on the downbeat while accenting the upbeats.",
-            "tempo": "60 BPM"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Ghost Note Exercises",
-      "exercises": [
-        {
-          "number": 5,
-          "title": "Basic Ghost Note Pattern",
-          "difficulty": "Intermediate",
-          "borderColor": "border-rose-200",
-          "difficultyBg": "bg-rose-100",
-          "difficultyText": "text-rose-700",
-          "numberBg": "bg-rose-100",
-          "numberText": "text-rose-600",
-          "description": "Ghost notes are muted, percussive notes that add rhythm and groove. Lightly rest your fretting fingers on the strings (not pressing down) and pick. Alternate between full notes on beats 1 and 3, and ghost notes on beats 2 and 4.",
-          "notation": {
-            "title": "Ghost Note Funk Pattern",
-            "alphaTex": "\\ts 4 4\n5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 | x.5.8 5.5.8 x.5.8 x.5.8 5.5.8 x.5.8 x.5.8 5.5.8",
-            "staveTitle": "Funk Ghost Note Groove"
-          },
-          "practiceNotes": {
-            "colorBg": "bg-rose-50",
-            "colorBorder": "border-rose-200",
-            "colorTitle": "text-rose-900",
-            "colorText": "text-rose-800",
-            "colorAccent": "bg-rose-100",
-            "title": "Practice Notes",
-            "text": "Ghost notes should be barely audible - more felt than heard. They provide rhythmic momentum and make your playing groove. Think of them as the heartbeat between notes.",
-            "tempo": "70 BPM"
+            "text": "The pick strike itself should be inaudible. Time the volume swell so the sound blooms on the downbeat like a cathedral organ or violin section. Add a touch of reverb or delay for ethereal depth.",
+            "tempo": "65 BPM"
           }
         },
         {
-          "number": 6,
-          "title": "Funk Strumming with Ghosts",
-          "difficulty": "Advanced",
-          "borderColor": "border-red-200",
-          "difficultyBg": "bg-red-100",
-          "difficultyText": "text-red-700",
-          "numberBg": "bg-red-100",
-          "numberText": "text-red-600",
-          "description": "Combine full E9 chord stabs with ghost note strums. Play accented chord hits on beats 1 and the 'and' of 2, with ghost note strums filling the rest. This is the foundation of funk rhythm guitar.",
+          "number": 7,
+          "title": "The B.B. King Dynamic Solo Masterclass",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "The ultimate test of expressive dynamics: B.B. King's masterclass blues phrasing. Play delicate, conversational whisper notes on the G string, erupt into a screaming whole-step bend with stinging vibrato on the B string, and resolve into absolute silence.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Master Phrasing: Whisper conversation -> Screaming bend -> Sudden dramatic rest"
+          },
           "chordDiagrams": [
-            { "label": "E7", "chord": "E7" }
+            { "label": "A", "chord": "A" },
+            { "label": "D", "chord": "D" }
           ],
+          "notation": {
+            "title": "B.B. King Expressive Dynamic Blues Solo Etude",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'B.B. King Dynamic Solo' :8 7.3 5.3 7.3 5.3 7.3 8.2 10.2 10.2 | 8.2 10.2 8.2 5.2 7.3 5.3 7.4 7.4 | :1 7.3 |"
+          },
           "practiceNotes": {
-            "colorBg": "bg-red-50",
-            "colorBorder": "border-red-200",
-            "colorTitle": "text-red-900",
-            "colorText": "text-red-800",
-            "colorAccent": "bg-red-100",
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
             "title": "Practice Notes",
-            "text": "Keep your strumming hand moving in constant 16th notes (down-up-down-up). Ghost notes happen by simply relaxing fretting hand pressure. The strumming hand never stops.",
-            "tempo": "80 BPM"
+            "text": "Do not treat every note equally. Pluck the opening notes with your finger pad or soft pick stroke; then strike the 10th-fret note with aggressive pick acceleration. Let the silence between phrases breathe.",
+            "tempo": "75 BPM"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Dynamics Mastery Tips",
+    "title": "Mastering Dynamic Touch & Musical Expressiveness",
     "items": [
       {
-        "title": "Developing Dynamic Range",
-        "colorBg": "bg-gradient-to-br from-amber-50 to-orange-50",
-        "colorBorder": "border-amber-200",
-        "colorTitle": "text-amber-900",
-        "colorText": "text-amber-800",
-        "bulletColor": "text-amber-500",
+        "title": "3 Mistakes That Kill Your Dynamics",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
         "items": [
-          "Practice unplugged to develop acoustic dynamic awareness",
-          "The best players use dynamics to tell a story within a song",
-          "Start every session with volume control exercises for 2-3 minutes",
-          "Listen to funk masters like Nile Rodgers and James Brown's guitarists for ghost note inspiration"
+          "The '10-Out-of-10' Wall of Sound: Playing every note at maximum volume with high gain. Heavy distortion compresses dynamics naturally, so you must use pick velocity and guitar volume to restore musical light and shade.",
+          "Using Muscle Clenching for Volume: Tensing your arm to play louder. Loudness comes from snap and velocity of the pick tip, not stiff forearm squeezing.",
+          "Ignoring the Guitar Volume Pot: Leaving the guitar's volume knob parked at 10 forever. Rolling the guitar volume back to 6 or 7 cleans up your tone, giving you a huge reserve of power when you roll up to 10 for solos."
         ]
       },
       {
-        "title": "Common Dynamic Mistakes",
-        "colorBg": "bg-gradient-to-br from-orange-50 to-red-50",
-        "colorBorder": "border-orange-200",
-        "colorTitle": "text-orange-900",
-        "colorText": "text-orange-800",
-        "bulletColor": "text-orange-500",
+        "title": "Masters of Dynamic Touch",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "Playing at a single volume level (the most common mistake)",
-          "Tensing up when trying to play quietly - relaxation is key",
-          "Making ghost notes too loud (they should be barely audible)",
-          "Rushing accents - keep the tempo steady regardless of dynamics"
+          "Jeff Beck: The undisputed wizard of guitar dynamics; eschewed picks to manipulate the strings, whammy bar, and volume knob directly with his fingers for vocal expression.",
+          "B.B. King: King of the blues whose singing, conversational phrasing proved that three dynamic notes played with conviction convey more emotion than a thousand notes played at uniform volume.",
+          "Mark Knopfler: Dire Straits legend whose fingerstyle touch allows instantaneous dynamic transitions from delicate acoustic whispers to biting Stratocaster lead stabs.",
+          "Stevie Ray Vaughan: Combined crushing, heavy-handed Texas blues attack on heavy-gauge strings with sudden, whisper-quiet jazz nuances on tunes like 'Lenny' and 'Riviera Paradise'."
+        ]
+      },
+      {
+        "title": "The 10-Minute Daily Dynamics Routine",
+        "colorBg": "bg-amber-50",
+        "colorBorder": "border-amber-200",
+        "colorTitle": "text-amber-900",
+        "colorText": "text-amber-800",
+        "items": [
+          "Block 1: 4-Bar Dynamic Swells (3 min) - Practice pp -> ff -> pp swells on open strings at 70 BPM, focusing on seamless volume gradations.",
+          "Block 2: Downbeat vs. Upbeat Funk Accents (4 min) - Drill Exercises 2 & 4 at 80–90 BPM, mastering the explosive volume contrast between ghost notes and chord pops.",
+          "Block 3: Pentatonic Solo Contour & Volume Knob Swells (3 min) - Run Exercises 5 & 6 at 75–80 BPM, sculpting expressive emotional phrases with space."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Dynamic Journey",
-    "description": "Apply your dynamics skills across different musical contexts.",
+    "title": "Deepen Your Expressive Guitar Journey",
+    "description": "Dynamic control elevates your technique and improvisation into genuine, vocal musical storytelling.",
     "gradientFrom": "from-amber-50",
     "gradientTo": "to-orange-50",
     "borderColor": "border-amber-200",
@@ -248,47 +355,54 @@
       {
         "href": "/lessons/practice/warmups/rhythm-drills",
         "title": "Rhythm Drills",
-        "description": "Combine your dynamics skills with rhythmic exercises for complete groove mastery.",
-        "linkText": "Add rhythm",
+        "description": "Lock your dynamic accents and ghost strums into unshakeable metronome grooves and subdivisions.",
+        "linkText": "Master Rhythm",
         "icon": "🥁",
-        "hoverBorder": "hover:border-purple-300",
-        "iconBg": "bg-purple-100",
-        "iconHoverBg": "group-hover:bg-purple-200",
-        "linkColor": "text-purple-600",
-        "linkHoverColor": "group-hover:text-purple-700"
+        "hoverBorder": "hover:border-amber-400",
+        "iconBg": "bg-amber-100",
+        "iconHoverBg": "group-hover:bg-amber-200",
+        "linkColor": "text-amber-600",
+        "linkHoverColor": "group-hover:text-amber-700"
       },
       {
-        "href": "/lessons/practice/warmups/picking-patterns",
-        "title": "Picking Patterns",
-        "description": "Apply dynamics to different picking patterns for more expressive playing.",
-        "linkText": "Refine picking",
-        "icon": "🎸",
-        "hoverBorder": "hover:border-green-300",
-        "iconBg": "bg-green-100",
-        "iconHoverBg": "group-hover:bg-green-200",
-        "linkColor": "text-green-600",
-        "linkHoverColor": "group-hover:text-green-700"
-      },
-      {
-        "href": "/lessons/practice/technique/palm-muting",
-        "title": "Palm Muting",
-        "description": "Learn palm muting technique - another way to control dynamics and tone.",
-        "linkText": "Control tone",
-        "icon": "✋",
-        "hoverBorder": "hover:border-orange-300",
+        "href": "/lessons/practice/technique/bending-vibrato",
+        "title": "Bending & Vibrato",
+        "description": "Pair dynamic touch sensitivity with vocal pitch inflection, target pitch accuracy, and wide vibrato.",
+        "linkText": "Master Bending",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-orange-400",
         "iconBg": "bg-orange-100",
         "iconHoverBg": "group-hover:bg-orange-200",
         "linkColor": "text-orange-600",
         "linkHoverColor": "group-hover:text-orange-700"
+      },
+      {
+        "href": "/lessons/practice/improv/phrasing",
+        "title": "Phrasing Masterclass",
+        "description": "Combine dynamic arcs, space, and vocal motifs to make your guitar solos tell a compelling story.",
+        "linkText": "Explore Phrasing",
+        "icon": "🗣️",
+        "hoverBorder": "hover:border-yellow-400",
+        "iconBg": "bg-yellow-100",
+        "iconHoverBg": "group-hover:bg-yellow-200",
+        "linkColor": "text-yellow-600",
+        "linkHoverColor": "group-hover:text-yellow-700"
       }
     ]
   },
   "gearRecommendations": {
-    "title": "Recommended Gear for Dynamics Practice",
+    "title": "Recommended Gear for Dynamic Touch Mastery",
     "items": [
-      { "category": "Pedal", "product": "MXR Dyna Comp Compressor", "reason": "A compressor helps you hear and develop dynamic control by evening out volume differences" },
-      { "category": "Amp", "product": "Fender Blues Junior IV", "reason": "Tube amp responds dynamically to touch, rewarding proper dynamics technique" },
-      { "category": "Picks", "product": "Dunlop Tortex Standard Picks", "reason": "Firm picks with good grip provide consistent attack for practicing accent control" }
+      {
+        "category": "Touch-Sensitive Transparent Overdrive",
+        "product": "JHS Morning Glory / Analogman King of Tone / Keeley Oxblood",
+        "reason": "Responds intimately to pick velocity: produces pristine clean chime when picked softly and blooms into rich harmonic tube saturation when picked hard."
+      },
+      {
+        "category": "Optical Volume Pedal",
+        "product": "Ernie Ball VP Jr. / Morley 20/20 Volume Plus",
+        "reason": "Allows hands-free, violin-like volume swells and ambient chord bloats without compromising pick grip or hand positioning."
+      }
     ]
   }
 }
