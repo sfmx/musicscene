@@ -1,292 +1,233 @@
 {
   "slug": "recording-microphones",
   "category": "recording",
-  "pageTitle": "Recording Microphones",
-  "subtitle": "The first link in your recording chain. Microphones capture acoustic energy and convert it to electrical signals, making the choice of mic crucial to your sound.",
-  "heroGradient": "bg-gradient-to-r from-green-50 to-emerald-50",
+  "pageTitle": "Recording Microphones: Transducer Physics, Polar Patterns & Studio Capture",
+  "subtitle": "Master dynamic moving-coil, condenser electrostatic, and ribbon velocity mechanics, polar pattern mathematics, and stereo arrays",
+  "heroGradient": "bg-gradient-to-r from-emerald-50 to-teal-50",
   "backLink": {
     "href": "/lessons/gear/recording",
     "label": "Back to Recording Gear"
   },
   "introduction": {
-    "title": "How Microphones Work",
-    "text": "Every microphone is a transducer, something that converts one form of energy into another, but the mechanism each type uses to do that conversion directly shapes how it sounds. A dynamic mic's moving coil has real physical mass and inertia, so it naturally smooths over fast transients and extreme highs; a condenser's charged capacitor plate is far lighter and reacts almost instantly to air pressure changes, which is why it captures detail a dynamic mic simply can't. That's the core reason \"which mic\" is never a purely subjective choice: the physics of how a mic hears determines what it's actually good at, before you even get to tone preference.",
+    "title": "The Microphone: Acoustic Energy Transduced into Electrical Voltage",
+    "text": "Every microphone is a precision acoustic transducer operating at the front line of music production. Its physical mechanism determines how air pressure fluctuations—ranging from the delicate flutter of a nylon-string guitar to the violent sound pressure of a cranked tube amplifier—are transformed into microvolt electrical signals. The choice of microphone is never an arbitrary tonal filter: moving-coil dynamics bring mechanical mass and transient smoothing; electrostatic condensers deliver lightning-fast rise times and crystalline overtone resolution; and corrugated aluminum ribbons harness acoustic particle velocity to deliver smooth, unhyped analog warmth. Understanding the transducer physics and polar pattern mathematics is the foundational skill of the recording engineer.",
+    "quote": "A microphone does not just capture sound; its diaphragm mass and acoustic polar geometry define what the listener experiences as space, distance, and intimacy.",
     "columns": [
       {
-        "title": "Transduction Methods",
-        "text": "A dynamic mic's coil sits in a magnetic field and generates voltage as sound moves it, needing no external power and tolerating extremely loud sources because the mechanism itself is simple and robust. A condenser uses two charged plates whose distance changes with sound pressure, which requires phantom power to charge the capacitor but yields far higher sensitivity and a faster, more detailed response. A ribbon mic suspends an ultra-thin corrugated metal ribbon in a magnetic field, a design with almost no mass to resist motion, giving it a naturally smooth high end and a warm character, at the cost of real fragility, since that same thin ribbon can be torn by a strong gust of air or, on older transformerless designs, damaged by phantom power applied by mistake."
+        "title": "Transducer Physics & Diaphragm Mass",
+        "text": "The transient response of any microphone is strictly governed by Newton's second law: $F = m \\cdot a$. A dynamic microphone diaphragm carries a copper wire voice coil glued to its rear, giving it substantial physical mass and inertia. Consequently, it naturally smooths over harsh, spiky transients and withstands immense sound pressure levels exceeding $150\\text{ dB SPL}$. Conversely, a studio condenser diaphragm consists of a micro-thin gold-sputtered Mylar membrane (often only 3 to 5 microns thick) operating without an attached coil. Its near-zero inertia reacts almost instantaneously to ultrasonic frequencies, yielding extraordinary transient fidelity."
       },
       {
-        "title": "Key Specifications",
-        "text": "Frequency response tells you where a mic naturally boosts or cuts, a mic with a presence peak around 5-8kHz will sound brighter and more forward than one with a flatter, more neutral response, and neither is wrong, they're suited to different sources. Sensitivity and self-noise trade off against each other in practice: a highly sensitive mic captures quiet detail well but can also reveal more of its own internal electronic noise on quiet passages, which is why self-noise figures matter most for hushed acoustic recording. SPL handling and polar pattern round out the picture, the first tells you whether a mic will distort in front of a loud amp or drum, the second tells you how much sound arriving from the sides and rear gets rejected versus captured."
+        "title": "Polar Pattern Mathematics & Phase Geometry",
+        "text": "How a microphone hears off-axis sound is a function of acoustic delay and pressure differential. A pure pressure transducer (omnidirectional) seals the rear of the diaphragm, responding purely to atmospheric pressure changes with zero proximity effect. A pressure-gradient transducer exposes both sides of the diaphragm to sound. By combining pressure and pressure-gradient ports in precise acoustic ratios, engineers create the cardioid family ($E = (1 - k) + k \\cos\\theta$), allowing selective rejection of room reflections and adjacent instruments."
       }
     ]
   },
   "sections": [
     {
-      "title": "Dynamic Microphones",
-      "bgColor": "bg-blue-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Characteristics",
-          "description": "A dynamic capsule's simple coil-and-magnet design needs no external power and can absorb the sound pressure of a cranked guitar amp or a snare drum without distorting, which is exactly what makes it so reliable in loud, physically demanding environments. That same simplicity, and the lack of delicate parts like a charged capacitor plate, is why dynamic mics shrug off humidity, temperature swings, and rough handling that would put a condenser at real risk.",
-          "items": [
-            "No external power required",
-            "Excellent for high SPL sources",
-            "Rugged and reliable construction",
-            "Less sensitive to humidity/temperature",
-            "Often more affordable",
-            "Focused frequency response"
-          ]
-        },
-        {
-          "title": "Best Applications",
-          "description": "The combination of high SPL tolerance and rugged build is why dynamic mics dominate anywhere a mic gets shouted into, slammed with drum transients, or handled roughly on tour, live vocals, guitar amps, and drums all fit that description. Their more focused, midrange-forward frequency response also happens to cut through a dense mix well, which is part of why they remain a broadcast and podcasting default even in controlled studio settings.",
-          "items": [
-            "Live vocals and performance",
-            "Guitar amplifier recording",
-            "Drum recording (snare, toms)",
-            "Loud brass instruments",
-            "Broadcast and podcasting",
-            "Budget home recording"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Famous Dynamic Mics",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Industry Standards",
-          "description": "The Shure SM57 and SM58 became ubiquitous less because they're the most detailed mics available and more because they're nearly indestructible and sound predictably good on the sources they're built for, which is exactly why almost every studio and stage has one on hand: an engineer moving between rooms knows what to expect from them regardless of where they end up. The Electro-Voice RE20 and Sennheiser MD421 earned similar reputations in broadcast and studio settings for the same underlying reason, consistent, reliable performance a mixer can count on take after take.",
-          "fields": [
-            { "label": "Shure SM57", "value": "Industry standard for instruments" },
-            { "label": "Shure SM58", "value": "Legendary vocal mic" },
-            { "label": "Electro-Voice RE20", "value": "Broadcast favorite" },
-            { "label": "Sennheiser MD421", "value": "Versatile studio workhorse" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Condenser Microphones",
-      "bgColor": "bg-green-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Characteristics",
-          "description": "The charged capacitor plate at the heart of a condenser mic needs phantom power to hold that charge, and because the plate is so light, it responds to air pressure changes almost instantly, which is what gives condensers their fast transient response and extended high-frequency detail. That same sensitivity is a double-edged sword: it also picks up handling noise, room reflections, and its own electronic self-noise more readily than a dynamic mic would, which is why quality varies so much between budget and high-end condenser models.",
-          "items": [
-            "Requires phantom power (+48V)",
-            "Highly sensitive and detailed",
-            "Wide frequency response",
-            "Low self-noise (quality models)",
-            "Fast transient response",
-            "More fragile than dynamics"
-          ]
-        },
-        {
-          "title": "Best Applications",
-          "description": "That sensitivity and detail is exactly what studio vocal and acoustic instrument recording rewards, a quiet, treated room lets a condenser capture nuance a dynamic mic would simply miss. The same qualities make condensers the default choice for overheads and room mics, where capturing airy detail and natural decay matters more than raw SPL handling.",
-          "items": [
-            "Studio vocal recording",
-            "Acoustic instruments",
-            "Overhead drum mics",
-            "Room ambience capture",
-            "Classical and orchestral recording",
-            "Detailed source capture"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Famous Condenser Mics",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Industry Standards",
-          "description": "The Neumann U87 has stayed a studio default for decades because its large-diaphragm capsule and switchable polar patterns make it flexible enough to sound flattering on almost any voice, which is a bigger reason for its longevity than any single technical spec. The AKG C414 pushes that flexibility further with up to nine selectable polar patterns in one mic, while the Audio-Technica AT2020 earned its reputation simply by delivering a large chunk of that same large-diaphragm condenser sound at a fraction of the price, and the Rode NTK adds a tube stage for a warmer, more colored top end than a solid-state condenser typically has.",
-          "fields": [
-            { "label": "Neumann U87", "value": "Studio legend" },
-            { "label": "AKG C414", "value": "Versatile multi-pattern" },
-            { "label": "Audio-Technica AT2020", "value": "Budget favorite" },
-            { "label": "Rode NTK", "value": "Tube warmth" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Ribbon Microphones",
-      "bgColor": "bg-purple-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Characteristics",
-          "description": "A ribbon's extremely low mass gives it a naturally smooth, gently rolled-off high end rather than the extended, sometimes harsh top end a condenser can have, which reads to most ears as warmth and a kind of natural compression on transients. That same thin ribbon is genuinely fragile, a strong blast of air, physical shock, or (on many older designs) phantom power sent to the mic by mistake can damage or destroy it, so ribbons demand more careful handling than dynamic or even condenser mics.",
-          "items": [
-            "Vintage, warm tone character",
-            "Natural compression and smoothness",
-            "Figure-8 polar pattern typically",
-            "Fragile ribbon element",
-            "Lower output than condensers",
-            "Excellent for harsh sources"
-          ]
-        },
-        {
-          "title": "Best Applications",
-          "description": "That natural high-frequency smoothing is exactly why ribbons excel on sources that can turn harsh under a bright condenser, a cranked guitar amp or a brass instrument, taming edge without needing EQ to do it after the fact. The typical figure-8 pattern also rejects sound from the sides while capturing front and back equally, which is why ribbons work so well as a natural-sounding room or overhead mic in the right space.",
-          "items": [
-            "Guitar amplifiers (mellows harshness)",
-            "Brass instruments",
-            "Vintage vocal sounds",
-            "Drum overheads (smooth cymbals)",
-            "String sections",
-            "Room ambience with character"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Famous Ribbon Mics",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Industry Standards",
-          "description": "The Coles 4038 dates back to a design developed for the BBC, and its reputation for smooth, natural detail on brass and strings has kept it in professional use ever since. The RCA 44 occupies a similar place in broadcast history from decades earlier, while the Royer R-121 modernized the format with a more rugged build that revived ribbon mics as a practical studio option rather than a museum piece, and the AEA R84 extended that revival to a more affordable price point.",
-          "fields": [
-            { "label": "Coles 4038", "value": "BBC vintage classic" },
-            { "label": "Royer R-121", "value": "Modern ribbon standard" },
-            { "label": "RCA 44", "value": "Iconic vintage broadcast" },
-            { "label": "AEA R84", "value": "Affordable vintage tone" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Microphone Polar Patterns",
+      "title": "Transducer Types & Acoustic Mechanics",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Cardioid (Heart-shaped)",
-          "description": "A cardioid capsule is built to reject sound arriving from directly behind it while capturing the front fully, which is what gives it the heart-shaped pickup pattern and makes it the most practical all-purpose choice for isolating one source from everything else nearby. That same design produces the proximity effect, a bass boost that grows as a source gets closer to the capsule, which engineers can use deliberately for warmth or need to correct for with a high-pass filter.",
-          "items": [
-            "Picks up front, rejects rear",
-            "Most common pattern",
-            "Good isolation",
-            "Proximity effect",
-            "Ideal for most sources"
-          ]
-        },
-        {
-          "title": "Omnidirectional",
-          "description": "An omni capsule responds to pure sound pressure rather than the direction sound arrives from, which is why it picks up evenly in every direction and, unlike a cardioid, has essentially no proximity effect. That even pickup makes it the natural choice when you want a source's real room ambience captured along with it, rather than isolated from it.",
-          "items": [
-            "Picks up all directions equally",
-            "Natural room sound",
-            "No proximity effect",
-            "Less handling noise",
-            "Ambient recording"
-          ]
-        },
-        {
-          "title": "Figure-8 (Bidirectional)",
-          "description": "A figure-8 pattern captures front and rear equally while rejecting the sides almost completely, a pattern that falls naturally out of a ribbon mic's velocity-sensing design and doesn't need to be engineered in the way a cardioid pattern does. That makes it ideal for two people facing each other across a single mic, and it carries an even stronger proximity effect than cardioid, since both the front and rear lobes exhibit the same bass boost up close.",
-          "items": [
-            "Picks up front and rear",
-            "Rejects sides completely",
-            "Great for two-person recording",
-            "Strong proximity effect",
-            "Natural for ribbon mics"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Recording Techniques",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Vocal Recording",
-          "bgColor": "bg-orange-50",
-          "description": "Distance to the mic is really a trade-off between intimacy and space: close miking captures a present, detailed vocal but exaggerates proximity effect and plosives, which is exactly why a pop filter and gain staging matter so much closer in, while backing off to a couple of feet lets more of the room's natural sound blend into the take, at the cost of needing a room that actually sounds good.",
-          "fields": [
-            { "label": "Close Miking (6-12 inches)", "value": "Intimate, present sound. Good isolation. Use pop filter. Watch for proximity effect." },
-            { "label": "Distance Miking (2+ feet)", "value": "More natural, roomy sound. Includes room acoustics. Requires good acoustic space." }
-          ]
-        },
-        {
-          "title": "Instrument Recording",
-          "bgColor": "bg-teal-50",
-          "description": "Guitar amp miking follows the same close-vs-room logic as vocals, a mic like an SM57 placed near the speaker's cone edge captures a focused, direct tone, while a condenser set back several feet blends in cabinet resonance and room character; combining both microphones and blending them afterward is a common way to get punch and depth in the same track. Acoustic instruments reward more patience than a fixed rule: moving the mic while listening back is usually faster than guessing at a textbook position, since every instrument's resonance points are slightly different.",
-          "fields": [
-            { "label": "Guitar Amplifiers", "value": "Close: SM57 near speaker cone edge. Room: Condenser 3-6 feet back. Combine close + room for depth." },
-            { "label": "Acoustic Instruments", "value": "Find the sweet spot by listening. Consider instrument resonance. Use room mics for natural sound." }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Microphone Buying Guide",
-      "bgColor": "bg-yellow-50",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "First Microphone ($50-200)",
-          "description": "A single large-diaphragm condenser covers the widest range of home-recording needs at this budget, vocals and acoustic instruments both benefit from its detail, though a dynamic option like the Rode PodMic is worth considering if your room isn't treated, since it's far less sensitive to picking up untreated-room reflections and background noise.",
-          "fields": [
-            { "label": "Recommended Models", "value": "Audio-Technica AT2020, Rode PodMic (dynamic option)" }
-          ]
-        },
-        {
-          "title": "Home Studio Pair ($200-600)",
-          "description": "Pairing a large-diaphragm condenser with a dynamic mic covers most recording needs without overlap, the condenser for detailed vocal and acoustic work, the dynamic for loud sources and anything recorded in a less-than-ideal room, so you're never reaching for a mic that's wrong for the job at hand.",
-          "fields": [
-            { "label": "Recommended Models", "value": "Shure SM57/SM58 + Audio-Technica AT2035" }
-          ]
-        },
-        {
-          "title": "Professional Setup ($600+)",
-          "description": "At this level the goal shifts from covering the basics to having the right specialty tool for each job, a multi-pattern condenser for flexibility, a ribbon or small-diaphragm mic for sources that need that specific character, and matched pairs for accurate stereo recording where two mics need genuinely identical response.",
-          "fields": [
-            { "label": "Recommended Models", "value": "AKG C414, Neumann TLM series, matched small-diaphragm pairs" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Microphone Care & Maintenance",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Storage & Handling",
+          "title": "Dynamic Moving-Coil Microphones",
           "bgColor": "bg-blue-50",
-          "description": "Handling a mic by its grille rather than its body risks denting the mesh into the capsule itself, which can permanently alter its frequency response, so grip the body even though the grille looks like the natural handle. Ribbon mics in particular should stay away from strong magnetic fields, since their output depends on a permanent magnet that can weaken with prolonged exposure, and any mic benefits from a case that absorbs shock during transport rather than relying on a bag alone.",
-          "items": [
-            "Store in protective cases or pouches",
-            "Avoid extreme temperatures and humidity",
-            "Handle by the body, not the grille",
-            "Keep away from magnetic fields",
-            "Transport carefully to prevent shock",
-            "Use shock mounts to reduce vibration"
+          "borderColor": "border-blue-200",
+          "description": "The nearly indestructible workhorses of modern studios and concert stages worldwide.",
+          "fields": [
+            { "label": "Transduction Principle", "value": "Electromagnetic induction (Faraday's Law). Diaphragm motion moves an attached copper coil through a permanent magnetic field, generating audio voltage without external power." },
+            { "label": "SPL Handling", "value": "Virtually immune to internal distortion; handles massive volumes up to 150–160 dB SPL (snare drums, cranked 4x12 guitar cabinets, brass)." },
+            { "label": "Frequency & Transient Profile", "value": "Controlled high-frequency rolloff above 15 kHz with a sculpted presence peak between 3 kHz and 7 kHz that pushes vocals and snares forward in a mix." },
+            { "label": "Best Applications", "value": "Close-miking guitar amps, snare top, kick drum (inside), rock vocals, live broadcast" }
           ]
         },
         {
-          "title": "Cleaning & Service",
-          "bgColor": "bg-green-50",
-          "description": "Solvents and harsh chemicals can damage the fine mesh or foam inside a mic's grille, which is why a soft brush and a barely damp cloth are the safe default for cleaning, anything stronger risks doing more harm than the dust it removes. Condenser capsules can drift in sensitivity over years of use, which is why professional studios periodically send their key mics out for calibration rather than assuming a mic that's always sounded fine still measures the way it did new.",
-          "items": [
-            "Clean grilles gently with soft brush",
-            "Wipe body with slightly damp cloth",
-            "Never use solvents or harsh chemicals",
-            "Service condensers every few years",
-            "Check cables and connectors regularly",
-            "Professional calibration for critical work"
+          "title": "Electrostatic Condenser Microphones",
+          "bgColor": "bg-emerald-50",
+          "borderColor": "border-emerald-200",
+          "description": "Ultra-sensitive, high-fidelity transducers capturing breath, air, and delicate harmonic detail.",
+          "fields": [
+            { "label": "Transduction Principle", "value": "Variable electrostatic capacitance ($\\Delta C = \\frac{\\epsilon A}{d}$). A gold-sputtered Mylar diaphragm sits microns away from a fixed brass backplate, polarized by $+48\\text{V}$ phantom power." },
+            { "label": "Transient Rise Time", "value": "Micro-second transient recovery capturing the strike of acoustic guitar picks, room reverberation tails, and vocal breath nuances." },
+            { "label": "Large vs Small Diaphragm", "value": "Large Diaphragm Condensers (LDC $\\ge 1\"$) provide lower self-noise and warm low-frequency proximity bloom; Small Diaphragm Condensers (SDC $\\le 0.5\"$) offer ruler-flat frequency linearity and superior off-axis coherence." },
+            { "label": "Best Applications", "value": "Lead vocals, acoustic guitars, drum overheads, grand piano, orchestral strings" }
+          ]
+        },
+        {
+          "title": "Ribbon Velocity Microphones",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "Vintage acoustic warmth and velvety high-end response prized by purists and modern producers alike.",
+          "fields": [
+            { "label": "Transduction Principle", "value": "Particle velocity sensing. An ultra-thin (1.5 to 2.5 micron) corrugated pure aluminum ribbon is suspended between powerful neodymium magnets." },
+            { "label": "Tonal Profile", "value": "Naturally smooth, gradual high-frequency rolloff that completely eliminates the harsh 'digital sizzle' of bright cymbals, distorted guitars, and aggressive horns." },
+            { "label": "Polar Characteristic", "value": "Inherent bi-directional (Figure-8) pattern with infinite acoustic nulls at 90° and 270° sides for surgical acoustic isolation." },
+            { "label": "Handling Warning", "value": "The corrugated ribbon can be stretched or torn by direct gusts of air or accidental DC phantom power on vintage transformerless designs. Always use a pop filter." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polar Pattern Mathematics & Proximity Effect",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Polar Pattern Architecture",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "Polar patterns define the three-dimensional directional sensitivity of the microphone capsule.",
+          "fields": [
+            { "label": "Cardioid ($1 + \\cos\\theta$)", "value": "Maximum sensitivity at 0° (front); $-6\\text{ dB}$ at 90°/270° sides; infinite null at 180° (rear). The primary choice for isolating a performer from untreated room reflections and stage monitor feedback." },
+            { "label": "Supercardioid & Hypercardioid", "value": "Narrower front pickup angle than cardioid with sharper side rejection nulls at 120° (supercardioid) or 110° (hypercardioid), at the expense of a small rear sensitivity lobe." },
+            { "label": "Omnidirectional (Pure Pressure)", "value": "Equal sensitivity from all 360° directions. Exhibits zero proximity effect, ruler-flat bass extension down to 10 Hz, and extreme resistance to breath plosives." },
+            { "label": "Figure-8 (Bidirectional)", "value": "Equal sensitivity front (0°) and rear (180°), with total phase cancellation and acoustic silence at the 90° and 270° sides. Indispensable for stereo arrays." }
+          ]
+        },
+        {
+          "title": "The Physics of the Proximity Effect",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "The proximity effect is the dramatic boost in low-frequency response that occurs when a sound source approaches a directional microphone.",
+          "fields": [
+            { "label": "The Physical Cause", "value": "In directional (pressure-gradient) microphones, sound reaches both sides of the diaphragm. At close distances ($< 6\\text{ inches}$), the inverse-square law creates a massive pressure difference between front and rear ports at low frequencies, boosting bass by up to $+12\\text{ dB}$ below 150 Hz." },
+            { "label": "Creative Vocal Power", "value": "Broadcasters and vocalists use proximity effect intentionally to add authoritative, chesty radio warmth and intimate fullness to quiet vocal deliveries." },
+            { "label": "Combating Mud", "value": "When close-miking guitar amps, kick drums, or backing vocalists, engage the microphone's built-in 80 Hz high-pass filter (HPF) to eliminate uncontrolled low-end buildup." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Studio Microphones",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Shure SM57",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The undisputed king of instrument recording, found on every professional drum kit, guitar cabinet, and concert stage on earth.",
+          "fields": [
+            { "label": "Type & Pattern", "value": "Dynamic moving-coil, Cardioid" },
+            { "label": "Frequency Response", "value": "40 Hz to 15,000 Hz with sculpted presence peak at 5 kHz–7 kHz" },
+            { "label": "SPL Handling", "value": ">150 dB SPL without breakup" },
+            { "label": "Signature Sound", "value": "Punchy midrange bite that lets electric guitar cabs and snare drums slice through dense mixes" }
+          ]
+        },
+        {
+          "title": "Shure SM7B",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The legendary large-diaphragm dynamic vocal microphone immortalized on Michael Jackson's Thriller and trusted as the global podcasting gold standard.",
+          "fields": [
+            { "label": "Type & Pattern", "value": "Dynamic moving-coil with internal air suspension, Cardioid" },
+            { "label": "Shielding & Rejection", "value": "Electromagnetic humbucking coil rejects broadband interference from computer monitors and power lines" },
+            { "label": "Output Sensitivity", "value": "Low output ($-59\\text{ dBV/Pa}$); requires a high-gain preamp (60 dB+) or Cloudlifter inline booster" },
+            { "label": "Tone Profile", "value": "Velvety, smooth, unhyped vocal authority with Bass Rolloff and Mid-Range Boost switches" }
+          ]
+        },
+        {
+          "title": "Audio-Technica AT2020",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The benchmark in affordable studio condenser technology, delivering authentic studio-grade transient capture to home producers.",
+          "fields": [
+            { "label": "Type & Capsule", "value": "Fixed-charge back plate permanently polarized condenser (16 mm diaphragm)" },
+            { "label": "Polar Pattern", "value": "Cardioid with excellent off-axis sound rejection" },
+            { "label": "Dynamic Range", "value": "124 dB with low 20 dB SPL self-noise" },
+            { "label": "Best For", "value": "Vocals, acoustic guitar tracking, voiceover, and home studio tracking on a budget" }
+          ]
+        },
+        {
+          "title": "Rode NT1",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "A technological marvel featuring an astonishingly low 4 dBA self-noise floor, pairing pristine HF detail with dual XLR and 32-bit float USB connectivity.",
+          "fields": [
+            { "label": "Capsule", "value": "HF6 1-inch true condenser capsule, gold-sputtered and internally shock-mounted with Lyre suspension" },
+            { "label": "Self-Noise", "value": "4 dBA self-noise floor—one of the quietest studio microphones in the world" },
+            { "label": "Max SPL", "value": "142 dB SPL handling" },
+            { "label": "Ideal For", "value": "Foley, whisper-quiet acoustic instruments, pop vocals, and delicate fingerpicked guitars" }
+          ]
+        },
+        {
+          "title": "AKG C414 XLS",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The ultimate Swiss Army knife multi-pattern studio condenser, delivering pristine acoustic transparency and nine selectable polar patterns.",
+          "fields": [
+            { "label": "Polar Patterns", "value": "9 selectable patterns: Omni, Wide Cardioid, Cardioid, Hypercardioid, Figure-8, plus 4 intermediate settings" },
+            { "label": "Filters & Pads", "value": "3 pre-attenuation pads (0, -6, -12, -18 dB) and 3 bass-cut filters (40, 80, 160 Hz)" },
+            { "label": "Capsule Engineering", "value": "Dual 1-inch edge-terminated gold-sputtered diaphragms providing linear frequency reproduction" },
+            { "label": "Ideal For", "value": "Grand piano, drum overheads, brass, acoustic guitars, and sophisticated stereo arrays" }
+          ]
+        },
+        {
+          "title": "Royer R-121",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The modern ribbon microphone revolution that re-established ribbons as essential studio tools for guitar amps and brass.",
+          "fields": [
+            { "label": "Element", "value": "2.5-micron pure aluminum ribbon with patented offset ribbon transducer architecture" },
+            { "label": "SPL Tolerance", "value": "135 dB SPL handling at 20 Hz, allowing direct close-miking of cranked 100W Marshall stacks" },
+            { "label": "Dual Voice", "value": "Front side delivers warm, natural frequency balance; rear side offers a slightly brighter character" },
+            { "label": "Ideal For", "value": "Electric guitar cabinets, trumpet and trombone, drum room ambient capture, cello" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stereo Miking Arrays & Phase Alignment",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Coincident (XY) vs Near-Coincident (ORTF)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "Capturing a realistic acoustic stereophonic soundstage requires careful management of time and intensity cues.",
+          "fields": [
+            { "label": "Coincident XY Pair", "value": "Two identical directional capsules placed at the same physical point in space, angled 90° to 120° apart. Relies purely on intensity differences between channels with zero time delay ($\\Delta t = 0$), guaranteeing 100% phase-perfect mono summing." },
+            { "label": "ORTF System", "value": "Developed by French broadcasting. Two cardioid capsules angled 110° apart with capsules spaced 17 cm (6.7 inches) apart—replicating the distance between human ears. Combines timing and intensity differences to deliver natural spatial width and holographic depth." },
+            { "label": "Blumlein Pair", "value": "Two Figure-8 microphones crossed at 90° with capsules stacked vertically. Captures a 360° stereo picture with authentic lateral room ambience, ideal for balanced acoustic ensembles." }
+          ]
+        },
+        {
+          "title": "Mid-Side (M/S) Matrixing & The 3:1 Rule",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "Advanced stereo configurations that prevent destructive comb-filtering.",
+          "fields": [
+            { "label": "Mid-Side (M/S) Architecture", "value": "A forward-facing cardioid (Mid) captures the center image, while a sideways-facing figure-8 (Side) captures stereo width. Decoded via phase splitting: $\\text{Left} = \\text{Mid} + \\text{Side}$; $\\text{Right} = \\text{Mid} - \\text{Side}$." },
+            { "label": "Monophonic Safety", "value": "When collapsed to mono, the positive and negative side signals cancel completely ($+S + (-S) = 0$), leaving the pristine Mid signal completely unaffected by phase comb-filtering." },
+            { "label": "The 3:1 Distance Rule", "value": "When using multiple microphones on an instrument or ensemble, the distance between any two microphones should be at least three times the distance from each microphone to its intended sound source ($D_{\\text{mic-to-mic}} \\ge 3 \\cdot D_{\\text{mic-to-source}}$) to avoid audible comb filtering." }
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Audio Interfaces",
+      "href": "/lessons/gear/recording/interfaces",
+      "description": "A/D conversion, Nyquist sampling & low-latency monitoring",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Preamps",
+      "href": "/lessons/gear/recording/preamps",
+      "description": "Tube, solid-state & transformer analog gain stages",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Studio Cables",
+      "href": "/lessons/gear/recording/cables",
+      "description": "Balanced XLR lines, star-quad noise rejection & shielding",
+      "bgColor": "bg-white"
+    }
+  ]
 }
