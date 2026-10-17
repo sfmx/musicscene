@@ -2,58 +2,93 @@
   "slug": "scales-modes",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Scales & Modes",
-    "subtitle": "Master fundamental scales and modal patterns to expand your musical vocabulary and improvisational skills.",
+    "pageTitle": "Scales & Modes Warmup Masterclass",
+    "subtitle": "Master two-octave scale fluency, 3-note-per-string modal shifts, diatonic sequence patterns, and speed warmup routines.",
     "heroGradient": "bg-gradient-to-br from-violet-50 to-purple-100",
-    "heroTitle": "Scales & Modes for Guitarists",
-    "heroDescription": "Scales and modes are the building blocks of music theory and improvisation. These exercises will help you develop fluency with essential scales, understand modal relationships, and build the foundation for melodic playing across all styles of music."
+    "heroTitle": "Scales & Modes Warmup Masterclass",
+    "heroDescription": "Scales and modes are the primary alphabet of musical improvisation, lead guitar phrasing, and harmonic theory. Warming up with scales does far more than warm up your fingers—it calibrates right-hand alternate picking synchronization, trains your ears to recognize modal color tones, and builds instantaneous mental maps across all six strings. This masterclass progresses from foundational two-octave major and natural minor scales to 3-note-per-string modal speed runs, diatonic thirds, and full-neck horizontal shifts."
   },
   "guidelines": {
-    "title": "Scale Practice Guidelines",
+    "title": "The Biomechanics of Scale Mastery",
     "columns": [
       {
-        "title": "Technical Focus",
+        "title": "Fretboard Mechanics & Geometry",
         "items": [
-          { "bulletColor": "text-violet-500", "text": "Practice with proper fingering patterns" },
-          { "bulletColor": "text-violet-500", "text": "Use alternate picking for even articulation" },
-          { "bulletColor": "text-violet-500", "text": "Focus on smooth position shifts" },
-          { "bulletColor": "text-violet-500", "text": "Practice both ascending and descending" }
+          {
+            "bulletColor": "text-violet-500",
+            "text": "The 3-Note-Per-String (3NPS) System: Standardizing scales to exactly three notes per string creates consistent pick-stroke alternation (down-up-down, up-down-up) across every string crossing."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Strict Alternate Picking Discipline: Never fall into lazy hammer-ons during warmups. Every single scale tone must receive a deliberate, articulate pick stroke to build right-hand timing."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Thumb Pivot for Position Shifts: When shifting between modal boxes, slide the thumb along the neck spine smoothly without letting your hand lose its arched finger alignment."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Fingertip Arch for Clear Intonation: Keep the first knuckle of each finger curved at 90 degrees to ensure clean note separation and avoid damping adjacent strings."
+          },
+          {
+            "bulletColor": "text-violet-500",
+            "text": "Ascending & Descending Parity: Descending scales reveal weak finger releases; practice descending first to ensure both directions sound equally fluid."
+          }
         ]
       },
       {
-        "title": "Musical Development",
+        "title": "Modal Ear Training & Sequences",
         "items": [
-          { "bulletColor": "text-purple-500", "text": "Learn scales in different positions" },
-          { "bulletColor": "text-purple-500", "text": "Practice scales in various keys" },
-          { "bulletColor": "text-purple-500", "text": "Apply scales to improvisation" },
-          { "bulletColor": "text-purple-500", "text": "Connect scale patterns across the fretboard" }
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Targeting Modal Character Tones: Emphasize the unique note that defines each mode: the raised 6th in Dorian, the flat 2nd in Phrygian, the sharp 4th in Lydian, and the flat 7th in Mixolydian."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Diatonic Thirds & Fourths: Break out of stepwise scale ruts by sequencing scales in intervals (1-3, 2-4, 3-5, 4-6) to train your brain to hear melodic intervals."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Drone-Note Practicing: Always practice modes over a root drone note (e.g., play D Dorian over an open D string) to train your ear to feel the modal mood and harmonic tension."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Metronome Groupings: Alternate between straight 8th notes, 8th-note triplets, and 16th notes on the same scale to master rhythmic flexibility."
+          },
+          {
+            "bulletColor": "text-purple-500",
+            "text": "Subconscious Fretboard Mapping: Name each note or scale degree (1, 2, ♭3, 4, 5, 6, ♭7) aloud as you play to cement the connection between fret, sound, and theory."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Essential Scales",
+      "title": "Foundation: Major, Minor & Pentatonic Fluency",
       "exercises": [
         {
           "number": 1,
-          "title": "Major Scale (Ionian Mode)",
+          "title": "Two-Octave C Major Scale (Ionian Mode)",
           "difficulty": "Fundamental",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "The major scale is the foundation of Western music theory. Master this pattern in multiple positions to understand the fretboard and develop melodic vocabulary.",
+          "description": "The mother of all Western scales. Ascend and descend across two full octaves of the C major scale starting from the root note on the 5th string (fret 3), focusing on clean tone and precise alternate picking.",
           "patternNote": {
             "colorBg": "bg-blue-50",
             "colorText": "text-blue-800",
-            "text": "Scale Formula: W-W-H-W-W-W-H (Whole-Whole-Half-Whole-Whole-Whole-Half)"
+            "text": "Formula: 1 - 2 - 3 - 4 - 5 - 6 - 7 (W-W-H-W-W-W-H)"
           },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" },
+            { "label": "G", "chord": "G" }
+          ],
           "notation": {
-            "title": "Major Scale Exercise",
-            "alphaTex": "\\ts 4 4\n3.5.8 0.4 2.4 3.4 0.3 2.3 4.3 5.3 | 5.3 4.3 2.3 0.3 3.4 2.4 0.4 3.5 | 0.6 1.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 1.6 0.6",
-            "staveTitle": "C Major Scale - Two Octaves"
+            "title": "Two-Octave C Major Scale (Ascending & Descending)",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'C Major Two Octaves' :8 3.5 0.4 2.4 3.4 0.3 2.3 4.3 0.2 | 1.2 3.2 0.1 1.1 3.1 1.1 0.1 3.2 | 1.2 0.2 4.3 2.3 0.3 3.4 2.4 0.4 | :1 3.5 |"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -62,29 +97,32 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Start with the open position C major scale. Focus on clean fingering and smooth transitions. Practice both ascending and descending. Once comfortable, try this pattern in other keys.",
-            "tempo": "80 BPM"
+            "text": "Ensure each open string rings with the same dynamic power and duration as fretted notes. Use downstroke on downbeats and upstroke on upbeats.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Natural Minor Scale (Aeolian Mode)",
-          "difficulty": "Essential",
+          "title": "A Natural Minor & Harmonic Minor Warmup",
+          "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "The natural minor scale provides the dark, melancholic sound heard in countless songs. It's essential for rock, blues, and many other musical styles.",
+          "description": "Compare A Natural Minor (Aeolian) with A Harmonic Minor. Notice how raising the 7th degree from G to G# creates the exotic augmented second interval that defines neoclassical and flamenco guitar music.",
           "patternNote": {
             "colorBg": "bg-green-50",
             "colorText": "text-green-800",
-            "text": "Scale Formula: W-H-W-W-H-W-W (Relative to A minor from C major)"
+            "text": "Comparison: Natural Minor (♭7) vs. Harmonic Minor (Natural 7 / Leading Tone)"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "E7", "chord": "E7" }
+          ],
           "notation": {
-            "title": "Natural Minor Scale Exercise",
-            "alphaTex": "\\ts 4 4\n0.5.8 2.5 3.5 0.4 2.4 3.4 0.3 2.3 | 2.3 0.3 3.4 2.4 0.4 3.5 2.5 0.5 | 0.6 1.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 1.6 0.6",
-            "staveTitle": "A Natural Minor Scale - Two Octaves"
+            "title": "A Natural Minor into A Harmonic Minor Comparison",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Natural vs Harmonic Minor' :8 5.6 7.6 8.6 5.5 7.5 8.5 5.4 7.4 | 5.4 8.5 7.5 5.5 8.6 7.6 5.6 7.6 | 5.6 7.6 8.6 5.5 7.5 8.5 6.4 7.4 | :1 5.4 |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -93,65 +131,31 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Practice this A minor scale pattern, paying attention to the b3, b6, and b7 intervals that give minor scales their characteristic sound. This pattern is moveable to any key.",
+            "text": "In measure 3, stretch finger 2 to fret 6 (G#) and finger 3 to fret 7 (A) on the D string. Listen carefully to the intense tension-and-resolution pull of the leading tone resolving to the root.",
             "tempo": "75 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Minor Pentatonic Scale",
-          "difficulty": "Rock/Blues",
-          "borderColor": "border-purple-200",
-          "difficultyBg": "bg-purple-100",
-          "difficultyText": "text-purple-700",
-          "numberBg": "bg-purple-100",
-          "numberText": "text-purple-600",
-          "description": "The minor pentatonic scale is the backbone of rock, blues, and pop guitar solos. This five-note scale is incredibly versatile and user-friendly for improvisation.",
-          "patternNote": {
-            "colorBg": "bg-purple-50",
-            "colorText": "text-purple-800",
-            "text": "Scale Formula: 1-b3-4-5-b7 (Five notes removing the 2nd and 6th from natural minor)"
-          },
-          "notation": {
-            "title": "Minor Pentatonic Scale Exercise",
-            "alphaTex": "\\ts 4 4\n0.5.8 3.5 0.4 2.4 0.3 2.3 1.2 3.2 | 3.2 1.2 2.3 0.3 2.4 0.4 3.5 0.5 | 0.1 3.1 0.1 3.2 1.2 2.3 0.3 2.4 | 0.4 3.5 0.5 3.6 0.6 3.6 0.5 3.5",
-            "staveTitle": "A Minor Pentatonic Scale - Extended Range"
-          },
-          "practiceNotes": {
-            "colorBg": "bg-purple-50",
-            "colorBorder": "border-purple-200",
-            "colorTitle": "text-purple-900",
-            "colorText": "text-purple-800",
-            "colorAccent": "bg-purple-100",
-            "title": "Practice Notes",
-            "text": "This is the most important scale for rock and blues guitar. Practice this \"box 1\" pattern thoroughly as it's the foundation for countless guitar solos. Try bending notes for expressive playing.",
-            "tempo": "70 BPM"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Modal Studies",
-      "exercises": [
-        {
-          "number": 4,
-          "title": "Dorian Mode",
-          "difficulty": "Jazz/Fusion",
+          "title": "A Minor Pentatonic & Blues Speed Sequences",
+          "difficulty": "Intermediate",
           "borderColor": "border-amber-200",
           "difficultyBg": "bg-amber-100",
           "difficultyText": "text-amber-700",
           "numberBg": "bg-amber-100",
           "numberText": "text-amber-600",
-          "description": "Dorian mode (the 2nd mode of major) has a minor quality with a raised 6th degree. It's commonly used in jazz, fusion, and progressive rock for its sophisticated sound.",
+          "description": "Warm up your blues chops with a rapid 16th-note descending 4-note sequence through Box 1, incorporating the blue note (♭5 / E♭ on the G string) for biting blues-rock flavor.",
           "patternNote": {
             "colorBg": "bg-amber-50",
             "colorText": "text-amber-800",
-            "text": "Scale Formula: W-H-W-W-W-H-W (Natural minor with raised 6th)"
+            "text": "Scale: A Minor Pentatonic + ♭5 (Blues scale) in descending 4-note groups"
           },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" }
+          ],
           "notation": {
-            "title": "Dorian Mode Exercise",
-            "alphaTex": "\\ts 4 4\n0.5.8 2.5 3.5 0.4 2.4 4.4 0.3 2.3 | 2.3 0.3 4.4 2.4 0.4 3.5 2.5 0.5 | 0.6 2.6 3.6 0.5 2.5 3.5 0.4 2.4 | 2.4 0.4 3.5 2.5 0.5 3.6 2.6 0.6",
-            "staveTitle": "A Dorian Mode - Two Octaves"
+            "title": "A Minor Pentatonic & Blues Scale 16th-Note Speed Sequence",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Blues Scale Sequence' :16 8.1 5.1 8.2 5.2 8.2 5.2 7.3 5.3 | 7.3 6.3 5.3 7.4 5.3 7.4 5.4 7.5 | :8 5.5 7.6 5.6 8.6 :2 5.6 |"
           },
           "practiceNotes": {
             "colorBg": "bg-amber-50",
@@ -160,29 +164,71 @@
             "colorText": "text-amber-800",
             "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Notice the F# (raised 6th) that distinguishes Dorian from natural minor. This note gives Dorian its unique character. Practice emphasizing this note in your playing.",
-            "tempo": "65 BPM"
+            "text": "Strict alternate picking is essential here. Accent the first note of each 4-note group to lock your internal rhythm to the metronome click.",
+            "tempo": "80 BPM (16th notes)"
           }
         },
         {
+          "number": 4,
+          "title": "Dorian Mode 3NPS Sequence (The Santana Groove)",
+          "difficulty": "Intermediate",
+          "borderColor": "border-purple-200",
+          "difficultyBg": "bg-purple-100",
+          "difficultyText": "text-purple-700",
+          "numberBg": "bg-purple-100",
+          "numberText": "text-purple-600",
+          "description": "Dorian is the quintessential mode of jazz-funk and Latin rock. This 3-note-per-string pattern in D Dorian highlights the bright major 6th (B natural), giving it the iconic Carlos Santana and Pink Floyd sound.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Mode: D Dorian (D - E - F - G - A - B - C) emphasizing the natural 6th"
+          },
+          "chordDiagrams": [
+            { "label": "Dm", "chord": "Dm" },
+            { "label": "G", "chord": "G" }
+          ],
+          "notation": {
+            "title": "D Dorian 3NPS Ascending Speed Sequence",
+            "alphaTex": "\\tempo 85 . \\ts 4 4 staveTitle 'Dorian 3NPS' :16 5.5 7.5 8.5 5.4 7.4 9.4 5.3 7.3 | 9.3 7.2 8.2 10.2 7.1 8.1 10.1 8.1 | :8 7.1 10.2 8.2 7.2 :2 7.3 |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-purple-50",
+            "colorBorder": "border-purple-200",
+            "colorTitle": "text-purple-900",
+            "colorText": "text-purple-800",
+            "colorAccent": "bg-purple-100",
+            "title": "Practice Notes",
+            "text": "Every string has exactly 3 notes. Notice the symmetry: index (fret 5/7), middle (fret 7/8), pinky (fret 8/9/10). Keep your pick slant consistent across all string jumps.",
+            "tempo": "85 BPM (16th notes)"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Fluency: Modal Sequences & Full-Neck Runs",
+      "exercises": [
+        {
           "number": 5,
-          "title": "Mixolydian Mode",
-          "difficulty": "Blues/Rock",
+          "title": "Diatonic Thirds Sequence in G Major",
+          "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Mixolydian mode (the 5th mode of major) has a major quality with a lowered 7th. It's the foundation of blues and rock, giving that characteristic \"dominant\" sound.",
+          "description": "Playing in melodic thirds (1-3, 2-4, 3-5, 4-6) breaks scalar linearity and mimics vocal and violin melodies. This pattern covers G major across the lower strings.",
           "patternNote": {
             "colorBg": "bg-red-50",
             "colorText": "text-red-800",
-            "text": "Scale Formula: W-W-H-W-W-H-W (Major scale with lowered 7th)"
+            "text": "Pattern: Melodic 3rds leapfrogging across diatonic degrees"
           },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "Em", "chord": "Em" }
+          ],
           "notation": {
-            "title": "Mixolydian Mode Exercise",
-            "alphaTex": "\\ts 4 4\n3.6.8 0.5 2.5 3.5 0.4 2.4 3.4 0.3 | 0.3 3.4 2.4 0.4 3.5 2.5 0.5 3.6 | 0.3 2.3 0.2 1.2 3.2 0.1 1.1 3.1 | 3.1 1.1 0.1 3.2 1.2 0.2 2.3 0.3",
-            "staveTitle": "G Mixolydian Mode - Two Octaves"
+            "title": "G Major Diatonic Thirds Sequence",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Diatonic Thirds' :8 3.6 2.5 5.6 3.5 2.5 5.5 3.5 2.4 | 5.5 4.4 2.4 5.4 4.4 2.3 5.4 4.3 | :2 2.3 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-red-50",
@@ -191,29 +237,32 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "The F natural (lowered 7th) is what makes this G Mixolydian instead of G major. This mode works perfectly over dominant 7th chords and blues progressions.",
-            "tempo": "70 BPM"
+            "text": "Notice the constant string-crossing requirement. Each third forces your pick to jump back and forth between adjacent strings. Keep the picking motion small and economical.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 6,
-          "title": "Lydian Mode",
-          "difficulty": "Progressive",
+          "title": "Mixolydian Dominant Jam (G Mixolydian 3NPS)",
+          "difficulty": "Jazz",
           "borderColor": "border-indigo-200",
           "difficultyBg": "bg-indigo-100",
           "difficultyText": "text-indigo-700",
           "numberBg": "bg-indigo-100",
           "numberText": "text-indigo-600",
-          "description": "Lydian mode (the 4th mode of major) has a major quality with a raised 4th degree. It creates a dreamy, floating sound often used in film scores and progressive music.",
+          "description": "The definitive scale for blues, southern rock, and dominant 7th chords. G Mixolydian features the bluesy flat 7th (F natural). This 3NPS run ascends across all 6 strings.",
           "patternNote": {
             "colorBg": "bg-indigo-50",
             "colorText": "text-indigo-800",
-            "text": "Scale Formula: W-W-W-H-W-W-H (Major scale with raised 4th)"
+            "text": "Harmony: G7 dominant harmony with natural 3rd and flat 7th"
           },
+          "chordDiagrams": [
+            { "label": "G7", "chord": "G7" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "Lydian Mode Exercise",
-            "alphaTex": "\\ts 4 4\n3.5.8 0.4 2.4 4.4 0.3 2.3 4.3 5.3 | 5.3 4.3 2.3 0.3 4.4 2.4 0.4 3.5 | 0.3 2.3 0.2 1.2 3.2 0.1 2.1 3.1 | 3.1 2.1 0.1 3.2 1.2 0.2 2.3 0.3",
-            "staveTitle": "C Lydian Mode - Two Octaves"
+            "title": "G Mixolydian 3NPS Full-Neck Ascending Run",
+            "alphaTex": "\\tempo 85 . \\ts 4 4 staveTitle 'Mixolydian 3NPS' :16 3.6 5.6 7.6 3.5 5.5 7.5 3.4 5.4 | 7.4 4.3 5.3 7.3 5.2 7.2 8.2 5.1 | :8 7.1 5.1 8.2 7.2 :2 5.3 |"
           },
           "practiceNotes": {
             "colorBg": "bg-indigo-50",
@@ -222,41 +271,146 @@
             "colorText": "text-indigo-800",
             "colorAccent": "bg-indigo-100",
             "title": "Practice Notes",
-            "text": "The F# (raised 4th) gives Lydian its distinctive \"floating\" quality. This mode works well over major chords and creates sophisticated harmonic colors in your playing.",
-            "tempo": "60 BPM"
+            "text": "Play this over a G7 chord or low G drone. Notice how the F natural note gives the line instant bluesy grit compared to the vanilla G major scale.",
+            "tempo": "85 BPM (16th notes)"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Full-Fretboard Modal Connector (E Aeolian to E Lydian)",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "The master warm-up challenge: shift fluidly between the dark, minor melancholy of E Aeolian and the otherworldly, bright dreamscape of E Lydian (with its sharp 4th, A#), traversing 7 frets in a single unbroken 16th-note cascade.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Modal Mastery: Contrast E Aeolian (♭6) directly with E Lydian (♯4)"
+          },
+          "chordDiagrams": [
+            { "label": "Em", "chord": "Em" },
+            { "label": "C", "chord": "C" }
+          ],
+          "notation": {
+            "title": "Full-Fretboard Modal Shift Master Etude",
+            "alphaTex": "\\tempo 90 . \\ts 4 4 staveTitle 'Modal Shift Etude' :16 12.1 10.1 8.1 7.1 10.2 8.2 7.2 9.3 | 7.3 5.3 4.3 6.3 7.3 9.3 11.3 12.3 | :2 12.3 :2 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
+            "title": "Practice Notes",
+            "text": "Notice the position shift in measure 2 where the fretting hand shifts down from the 12th fret to the 4th fret before climbing back up. Let your thumb guide the position slide smoothly without locking against the neck.",
+            "tempo": "90 BPM (16th notes)"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Scale Practice Strategy",
+    "title": "Mastering Scales & Modes in Daily Practice",
     "items": [
       {
-        "title": "Technical Development",
-        "colorBg": "bg-gradient-to-br from-violet-50 to-purple-50",
-        "colorBorder": "border-violet-200",
-        "colorTitle": "text-violet-900",
-        "colorText": "text-violet-800",
+        "title": "3 Mistakes That Kill Your Scale Warmup",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
         "items": [
-          "Practice scales with proper fingering patterns",
-          "Use alternate picking for clean articulation",
-          "Practice in different positions on the fretboard",
-          "Start slowly and gradually increase tempo"
+          "Mindless Robotic Repetition: Running scales up and down like a typewriter without listening to intervals or feeling the root note. Always practice with a musical pulse or drone.",
+          "Inconsistent Pick Strokes: Using random hammer-ons or sweeping when you should be alternate picking. Scale warmups exist to build rock-solid right-hand synchronization.",
+          "Ignoring the Root & Character Tones: Failing to know where the root notes and defining modal notes are located. You must always know what degree your finger is pressing."
         ]
       },
       {
-        "title": "Musical Application",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-cyan-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
+        "title": "Masters of Scale & Modal Mastery",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "Scales and modes are not just technical exercises - they're the vocabulary of music",
-          "Each scale and mode has its own character and emotional quality",
-          "Practice them not just for finger dexterity, but to internalize their unique sounds",
-          "Use backing tracks to practice improvising with each scale, and learn to recognize when and where each mode fits in musical contexts"
+          "Joe Satriani: The undisputed master of the Pitch Axis theory; uses modal shifts over pedal bass notes to create singing, cinematic instrumental anthems like 'Flying in a Blue Dream'.",
+          "Steve Vai: Student of Satriani who expanded modal sequencing into intricate 3NPS patterns, exotic scales (Lydian ♭7), and laser-timed rhythmic subdivisions.",
+          "John Petrucci: Dream Theater guitarist whose technical method 'Rock Discipline' standardized 3-note-per-string modal warmups as the cornerstone of progressive metal speed.",
+          "Frank Gambale: Revolutionized economy picking by restructuring all diatonic modes and arpeggios into sweepable 1- and 2-string geometries."
         ]
+      },
+      {
+        "title": "The 10-Minute Daily Scale & Mode Routine",
+        "colorBg": "bg-purple-50",
+        "colorBorder": "border-purple-200",
+        "colorTitle": "text-purple-900",
+        "colorText": "text-purple-800",
+        "items": [
+          "Block 1: Major & Minor 2-Octave Calibration (3 min) - Run Exercises 1 & 2 at 75 BPM with strict alternate picking, ensuring every note rings pure.",
+          "Block 2: 3NPS Dorian & Mixolydian Sequences (4 min) - Drill 3NPS patterns in D Dorian and G Mixolydian at 85 BPM over a backing drone.",
+          "Block 3: Diatonic Thirds & Full-Neck Shifting (3 min) - Cycle melodic 3rds and the full-neck modal connector at 75–90 BPM to dissolve fretboard boundaries."
+        ]
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "Deepen Your Scale & Theory Journey",
+    "description": "Scales and modes are the bridge between mechanical warmups and high-level improvisational storytelling.",
+    "gradientFrom": "from-violet-50",
+    "gradientTo": "to-purple-50",
+    "borderColor": "border-violet-200",
+    "links": [
+      {
+        "href": "/lessons/practice/improv/modal-improvisation",
+        "title": "Modal Improvisation",
+        "description": "Apply your modal scale warmups to real backing tracks with characteristic color tone targeting.",
+        "linkText": "Explore Modes",
+        "icon": "🎭",
+        "hoverBorder": "hover:border-violet-400",
+        "iconBg": "bg-violet-100",
+        "iconHoverBg": "group-hover:bg-violet-200",
+        "linkColor": "text-violet-600",
+        "linkHoverColor": "group-hover:text-violet-700"
+      },
+      {
+        "href": "/lessons/practice/warmups/fretboard-navigation",
+        "title": "Fretboard Navigation",
+        "description": "Connect your scale shapes seamlessly across all 12 positions of the neck without getting lost.",
+        "linkText": "Master the Neck",
+        "icon": "🗺️",
+        "hoverBorder": "hover:border-purple-400",
+        "iconBg": "bg-purple-100",
+        "iconHoverBg": "group-hover:bg-purple-200",
+        "linkColor": "text-purple-600",
+        "linkHoverColor": "group-hover:text-purple-700"
+      },
+      {
+        "href": "/lessons/practice/technique/alternate-picking",
+        "title": "Alternate Picking",
+        "description": "Elevate your scale speed with edge picking, downward pick slanting, and inside/outside crossings.",
+        "linkText": "Master Picking",
+        "icon": "🎸",
+        "hoverBorder": "hover:border-indigo-400",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
+      }
+    ]
+  },
+  "gearRecommendations": {
+    "title": "Recommended Gear for Scale Practice",
+    "items": [
+      {
+        "category": "Drone App / Synth Pedal",
+        "product": "Electro-Harmonix Freeze / TC Electronic Infinite Sample Sustainer",
+        "reason": "Freezes a root note indefinitely to create a lush harmonic drone, letting you hear the unique mood and emotional tension of every mode."
+      },
+      {
+        "category": "Precision Metronome",
+        "product": "Soundbrenner Pulse / Pro Metronome App",
+        "reason": "Allows programmable subdivisions and tempo ramps, crucial for scaling up 16th-note 3NPS runs progressively."
       }
     ]
   }

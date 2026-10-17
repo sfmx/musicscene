@@ -2,53 +2,89 @@
   "slug": "fretboard-navigation",
   "category": "warmups",
   "pageInfo": {
-    "pageTitle": "Fretboard Navigation",
-    "subtitle": "Master position shifting and fretboard mapping exercises to navigate the entire guitar neck with confidence.",
+    "pageTitle": "Fretboard Navigation Masterclass",
+    "subtitle": "Break out of isolated boxes, master smooth position shifting, guide-finger slides, and connect the entire neck horizontally.",
     "heroGradient": "bg-gradient-to-br from-sky-50 to-blue-100",
-    "heroTitle": "Position Shifting & Fretboard Navigation",
-    "heroDescription": "One of the biggest barriers for intermediate guitarists is being stuck in one position. These exercises systematically develop your ability to navigate the entire fretboard, shift positions smoothly, and mentally map notes across all strings and frets."
+    "heroTitle": "Fretboard Navigation Masterclass",
+    "heroDescription": "The single most common barrier preventing guitarists from reaching true creative freedom is the 'box trap'—getting stuck in isolated, vertical scale shapes and feeling lost when trying to move up or down the neck. The guitar fretboard is not a collection of fragmented boxes, but an interconnected geometric matrix. By mastering guide-finger sliding, octave shortcuts, single-string horizontal highways, and CAGED anchor positions, you learn to navigate all 24 frets with the effortless spatial intuition of a concert pianist."
   },
   "guidelines": {
-    "title": "Fretboard Navigation Guidelines",
+    "title": "The Biomechanics of Fretboard Navigation",
     "columns": [
       {
-        "title": "Position Shifting Basics",
+        "title": "Position Shifting Mechanics",
         "items": [
-          { "bulletColor": "text-sky-500", "text": "Maintain thumb behind the neck as your anchor point" },
-          { "bulletColor": "text-sky-500", "text": "Use guide fingers to slide smoothly between positions" },
-          { "bulletColor": "text-sky-500", "text": "Keep eyes on the fretboard initially, then practice without looking" },
-          { "bulletColor": "text-sky-500", "text": "Start slowly - accuracy before speed" }
+          {
+            "bulletColor": "text-sky-500",
+            "text": "The Sliding Thumb Anchor: Never clamp your thumb in place while the fingers reach for distant frets. The thumb must glide smoothly along the spine of the neck as an integrated unit with the palm."
+          },
+          {
+            "bulletColor": "text-sky-500",
+            "text": "Guide Finger Rails: When shifting positions along a string, keep the fretting finger in light physical contact with the string as a sensory guide rail rather than lifting it completely off into space."
+          },
+          {
+            "bulletColor": "text-sky-500",
+            "text": "The Micro-Release Principle: Release 90% of fretting pressure the millisecond before shifting, allowing your fingers to skate across the fret tops effortlessly without string squeak."
+          },
+          {
+            "bulletColor": "text-sky-500",
+            "text": "Eyes Before Fingers: Train your eyes to target the destination fret marker a split-second before your fretting hand initiates the shift; your hand will land with laser accuracy."
+          },
+          {
+            "bulletColor": "text-sky-500",
+            "text": "Blindfolded Tactile Calibration: Practice shifting between frets 5 and 12 with your eyes closed, relying purely on muscle memory and the tactile sensation of fret spacing."
+          }
         ]
       },
       {
-        "title": "Mental Mapping Tips",
+        "title": "Mental Fretboard Mapping & Octaves",
         "items": [
-          { "bulletColor": "text-blue-500", "text": "Learn note names on strings 6 and 5 first (root notes)" },
-          { "bulletColor": "text-blue-500", "text": "Use octave patterns to find notes on other strings" },
-          { "bulletColor": "text-blue-500", "text": "Practice naming notes while playing scales" },
-          { "bulletColor": "text-blue-500", "text": "Visualize scale shapes connecting across positions" }
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The Octave Matrix: Internalize the universal octave shapes: down 2 frets and up 2 strings (strings 6->4 and 5->3), and down 3 frets and up 2 strings across the B string (strings 4->2 and 3->1)."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "The B-String Tuning Compensation: Because the B string is tuned to a major third instead of a fourth, all octave and chord shapes shift up by one fret when crossing onto string 2."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "Single-String Linear Visualization: Practice playing entire scales along a single string to understand musical intervals (half steps and whole steps) linearly like a piano keyboard."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "Unison Pitch Recognition: Learn where identical pitches exist on adjacent strings (e.g., 5th fret high E is the exact same pitch as 10th fret B string) for tone color variation."
+          },
+          {
+            "bulletColor": "text-blue-500",
+            "text": "CAGED Root Triangulation: Connect every scale and chord back to its root note on strings 6, 5, or 4 to instantly orient yourself in any key across any fret."
+          }
         ]
       }
     ]
   },
   "sections": [
     {
-      "title": "Position Shifting Exercises",
+      "title": "Foundation: Single-String Traversal & Octave Mapping",
       "exercises": [
         {
           "number": 1,
-          "title": "Chromatic Position Shift",
+          "title": "Single-String Chromatic Position Shifting (String 1)",
           "difficulty": "Beginner",
           "borderColor": "border-blue-200",
           "difficultyBg": "bg-blue-100",
           "difficultyText": "text-blue-700",
           "numberBg": "bg-blue-100",
           "numberText": "text-blue-600",
-          "description": "Play a chromatic pattern (1-2-3-4) starting at fret 1, then shift up one fret and repeat. Continue shifting up to fret 9 and back down. Focus on smooth transitions between positions with minimal pause.",
+          "description": "Develop smooth, gliding hand movement. Play a 1-2-3-4 pattern on the high E string, shift up one fret to play 2-3-4-5, and continue ascending the neck. Focus on shifting the hand as a single unified vehicle.",
+          "patternNote": {
+            "colorBg": "bg-blue-50",
+            "colorText": "text-blue-800",
+            "text": "Movement: Horizontal chromatic climbing with unified hand-and-thumb glide"
+          },
           "notation": {
-            "title": "Chromatic Position Shift on String 1",
-            "alphaTex": "\\ts 4 4\n1.1.8 2.1.8 3.1.8 4.1.8 | 2.1.8 3.1.8 4.1.8 5.1.8 | 3.1.8 4.1.8 5.1.8 6.1.8 | 4.1.8 5.1.8 6.1.8 7.1.8 | 5.1.8 6.1.8 7.1.8 8.1.8 | 6.1.8 7.1.8 8.1.8 9.1.8",
-            "staveTitle": "Chromatic Shift - String 1 (Ascending)"
+            "title": "Single-String Chromatic Position Shifting",
+            "alphaTex": "\\tempo 70 . \\ts 4 4 staveTitle 'Chromatic Shift' :8 1.1 2.1 3.1 4.1 2.1 3.1 4.1 5.1 | 3.1 4.1 5.1 6.1 4.1 5.1 6.1 7.1 | 5.1 6.1 7.1 8.1 6.1 7.1 8.1 9.1 | :2 9.1 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-blue-50",
@@ -57,24 +93,33 @@
             "colorText": "text-blue-800",
             "colorAccent": "bg-blue-100",
             "title": "Practice Notes",
-            "text": "Use one-finger-per-fret technique. When shifting, let your hand glide as a unit. The shift should be quick and decisive, not gradual.",
-            "tempo": "60 BPM"
+            "text": "Keep your thumb gliding along the back of the neck in exact synchronization with the fretting hand. The shift should be decisive and smooth without stopping the beat.",
+            "tempo": "70 BPM"
           }
         },
         {
           "number": 2,
-          "title": "Octave Jumping Exercise",
-          "difficulty": "Intermediate",
+          "title": "The Universal Octave Matrix Across All String Pairs",
+          "difficulty": "Beginner",
           "borderColor": "border-green-200",
           "difficultyBg": "bg-green-100",
           "difficultyText": "text-green-700",
           "numberBg": "bg-green-100",
           "numberText": "text-green-600",
-          "description": "Play a note on the low E string, then immediately find the same note one octave higher using the octave shape (2 strings up, 2 frets forward). This builds your octave pattern awareness across the entire fretboard.",
+          "description": "Master the master key of fretboard mapping: octave shapes. Play root-octave pairs between strings 6 & 4, 5 & 3, 4 & 2, and 3 & 1. Notice the shape shift across the B string offset.",
+          "patternNote": {
+            "colorBg": "bg-green-50",
+            "colorText": "text-green-800",
+            "text": "Matrix: Strings 6->4 & 5->3 (+2 frets) vs. Strings 4->2 & 3->1 (+3 frets)"
+          },
+          "chordDiagrams": [
+            { "label": "G", "chord": "G" },
+            { "label": "C", "chord": "C" },
+            { "label": "A", "chord": "A" }
+          ],
           "notation": {
-            "title": "Octave Jumps on Strings 6 and 4",
-            "alphaTex": "\\ts 4 4\n3.6.4 5.4.4 | 5.6.4 7.4.4 | 7.6.4 9.4.4 | 9.6.4 11.4.4 | 7.6.4 9.4.4 | 5.6.4 7.4.4 | 3.6.4 5.4.4",
-            "staveTitle": "Octave Shapes - Strings 6 & 4"
+            "title": "Universal Octave Matrix Across String Pairs",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Octave Matrix' :8 3.6 5.4 3.6 5.4 3.5 5.3 3.5 5.3 | 5.4 8.2 5.4 8.2 5.3 8.1 5.3 8.1 | :2 8.1 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-green-50",
@@ -83,24 +128,31 @@
             "colorText": "text-green-800",
             "colorAccent": "bg-green-100",
             "title": "Practice Notes",
-            "text": "Name each note as you play it. This octave pattern (2 strings up, 2 frets forward) works for strings 6-4 and 5-3. For strings 4-2 and 3-1, the upper note is 3 frets forward.",
-            "tempo": "80 BPM"
+            "text": "Say the note names aloud as you play: 'G, G, C, C, G, G, C, C'. This embeds octave recognition into your subconscious, allowing you to instantly double any solo line in octaves like Wes Montgomery.",
+            "tempo": "75 BPM"
           }
         },
         {
           "number": 3,
-          "title": "Three-Position Scale Run",
+          "title": "Horizontal Single-String Major Scale (C Major on String 2)",
           "difficulty": "Intermediate",
           "borderColor": "border-purple-200",
           "difficultyBg": "bg-purple-100",
           "difficultyText": "text-purple-700",
           "numberBg": "bg-purple-100",
           "numberText": "text-purple-600",
-          "description": "Play the A minor pentatonic scale through three positions: Position 1 (frets 5-8), Position 2 (frets 7-10), Position 3 (frets 10-12). Connect them smoothly with guide finger slides.",
+          "description": "Ditch vertical box thinking by playing the complete C major scale horizontally along the B string from the 1st fret (C) to the 13th fret (high C). This visualizes whole and half steps linearly.",
+          "patternNote": {
+            "colorBg": "bg-purple-50",
+            "colorText": "text-purple-800",
+            "text": "Linear Scale: C (1) - D (3) - E (5) - F (6) - G (8) - A (10) - B (12) - C (13)"
+          },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "A Minor Pentatonic - Three Positions",
-            "alphaTex": "\\ts 4 4\n5.6.8 8.6.8 5.5.8 7.5.8 5.4.8 7.4.8 | 5.3.8 7.3.8 5.2.8 8.2.8 5.1.8 8.1.8 | 8.1.8 10.1.8 7.2.8 10.2.8 7.3.8 9.3.8 | 7.4.8 10.4.8 7.5.8 10.5.8 8.6.8 10.6.8",
-            "staveTitle": "A Minor Pentatonic - Connected Positions"
+            "title": "Horizontal C Major Scale on the B String",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Single-String Scale' :8 1.2 3.2 5.2 6.2 8.2 10.2 12.2 13.2 | 13.2 12.2 10.2 8.2 6.2 5.2 3.2 1.2 | :2 1.2 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-purple-50",
@@ -109,29 +161,31 @@
             "colorText": "text-purple-800",
             "colorAccent": "bg-purple-100",
             "title": "Practice Notes",
-            "text": "The key to connecting positions is finding shared notes between shapes. Use your index or pinky as guide fingers to slide into new positions.",
-            "tempo": "70 BPM"
+            "text": "Use fingers 1 and 3 for whole-step shifts and finger 1 to 2 for half-step shifts. Notice the half steps between E-F (frets 5-6) and B-C (frets 12-13).",
+            "tempo": "75 BPM"
           }
-        }
-      ]
-    },
-    {
-      "title": "Fretboard Mapping Exercises",
-      "exercises": [
+        },
         {
           "number": 4,
-          "title": "Note Name Drill - Low Strings",
-          "difficulty": "Beginner",
+          "title": "Guide-Finger Sliding Drill: Pentatonic Shift Highway",
+          "difficulty": "Intermediate",
           "borderColor": "border-amber-200",
           "difficultyBg": "bg-amber-100",
           "difficultyText": "text-amber-700",
           "numberBg": "bg-amber-100",
           "numberText": "text-amber-600",
-          "description": "Play every natural note on strings 6 and 5, naming each note aloud as you play. Start at the open string and work up to the 12th fret. This builds the foundation for finding chord roots and scale positions anywhere on the neck.",
+          "description": "Connect Pentatonic Box 1 to Box 2 using finger 3 as a guide rail. Slide smoothly from fret 7 to fret 9 on the G string, opening up the entire upper register without missing a beat.",
+          "patternNote": {
+            "colorBg": "bg-amber-50",
+            "colorText": "text-amber-800",
+            "text": "Technique: Guide finger slide on G string connecting Box 1 (fret 5) and Box 2 (fret 8)"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" }
+          ],
           "notation": {
-            "title": "Natural Notes - String 6 (E)",
-            "alphaTex": "\\ts 4 4\n0.6.4 1.6.4 3.6.4 5.6.4 | 7.6.4 8.6.4 10.6.4 12.6.4",
-            "staveTitle": "E F G A B C D E - String 6"
+            "title": "Pentatonic Guide-Finger Position Shift",
+            "alphaTex": "\\tempo 80 . \\ts 4 4 staveTitle 'Guide Finger Shift' :16 5.3 7.3 9.3 7.3 5.3 7.4 5.4 7.4 | 8.2 10.2 12.2 10.2 8.2 9.3 7.3 9.3 | :2 10.2 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-amber-50",
@@ -140,50 +194,37 @@
             "colorText": "text-amber-800",
             "colorAccent": "bg-amber-100",
             "title": "Practice Notes",
-            "text": "Say each note name out loud: E(0) F(1) G(3) A(5) B(7) C(8) D(10) E(12). Once comfortable, try random frets and name the notes.",
-            "tempo": "60 BPM"
+            "text": "In measure 1, slide finger 3 from fret 7 to fret 9. Maintain light contact with the string during the slide—do not lift your finger off and try to hop into position.",
+            "tempo": "80 BPM"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Advanced Fluency: CAGED Highway & Multi-Octave Arpeggios",
+      "exercises": [
         {
           "number": 5,
-          "title": "One-String Scale",
-          "difficulty": "Intermediate",
-          "borderColor": "border-rose-200",
-          "difficultyBg": "bg-rose-100",
-          "difficultyText": "text-rose-700",
-          "numberBg": "bg-rose-100",
-          "numberText": "text-rose-600",
-          "description": "Play the C major scale entirely on string 6 from open position to the 12th fret. This forces you to visualize scale intervals linearly rather than relying on box patterns. Repeat on each string.",
-          "notation": {
-            "title": "C Major Scale on String 6",
-            "alphaTex": "\\ts 4 4\n8.6.4 10.6.4 12.6.4 13.6.4 | 15.6.4 17.6.4 19.6.4 20.6.4 | 20.6.4 19.6.4 17.6.4 15.6.4 | 13.6.4 12.6.4 10.6.4 8.6.4",
-            "staveTitle": "C Major Scale - One String (6th)"
-          },
-          "practiceNotes": {
-            "colorBg": "bg-rose-50",
-            "colorBorder": "border-rose-200",
-            "colorTitle": "text-rose-900",
-            "colorText": "text-rose-800",
-            "colorAccent": "bg-rose-100",
-            "title": "Practice Notes",
-            "text": "Notice the pattern of whole and half steps on a single string: W-W-H-W-W-W-H. This approach reveals the scale structure clearly.",
-            "tempo": "60 BPM"
-          }
-        },
-        {
-          "number": 6,
-          "title": "Diagonal Scale Pattern",
+          "title": "The Diagonal 3-Octave Pentatonic Highway",
           "difficulty": "Advanced",
           "borderColor": "border-red-200",
           "difficultyBg": "bg-red-100",
           "difficultyText": "text-red-700",
           "numberBg": "bg-red-100",
           "numberText": "text-red-600",
-          "description": "Play the G major scale diagonally across the fretboard, using 3 notes per string. This creates a smooth ascending path from the low E string at fret 3 to the high E string at fret 15, training fluid position shifts.",
+          "description": "Traverse the entire fretboard in a single diagonal sprint from fret 5 on the low E string to fret 17 on the high E string. This links three distinct pentatonic boxes into one unified melodic highway.",
+          "patternNote": {
+            "colorBg": "bg-red-50",
+            "colorText": "text-red-800",
+            "text": "Highway: 3-octave A minor pentatonic run climbing diagonally across 12 frets"
+          },
+          "chordDiagrams": [
+            { "label": "Am", "chord": "Am" },
+            { "label": "C", "chord": "C" }
+          ],
           "notation": {
-            "title": "G Major - 3 Notes Per String Diagonal",
-            "alphaTex": "\\ts 4 4\n3.6.8 5.6.8 7.6.8 2.5.8 3.5.8 5.5.8 | 2.4.8 4.4.8 5.4.8 2.3.8 4.3.8 5.3.8 | 3.2.8 5.2.8 7.2.8 3.1.8 5.1.8 7.1.8",
-            "staveTitle": "G Major Diagonal - 3 Notes Per String"
+            "title": "Diagonal 3-Octave Pentatonic Full-Neck Sprint",
+            "alphaTex": "\\tempo 85 . \\ts 4 4 staveTitle 'Diagonal Pentatonic' :16 5.6 8.6 5.5 7.5 7.4 10.4 7.3 9.3 | 10.2 13.2 10.1 12.1 15.1 17.1 15.1 12.1 | :2 17.1 :2 r |"
           },
           "practiceNotes": {
             "colorBg": "bg-red-50",
@@ -192,49 +233,121 @@
             "colorText": "text-red-800",
             "colorAccent": "bg-red-100",
             "title": "Practice Notes",
-            "text": "Three-notes-per-string patterns are excellent for building speed and position shifting simultaneously. Keep your hand relaxed during shifts.",
-            "tempo": "70 BPM"
+            "text": "Shift positions on the string crossings: shift during the move from string 5 to 4, and again from string 3 to 2. The diagonal trajectory creates explosive velocity with minimal finger strain.",
+            "tempo": "85 BPM (16th notes)"
+          }
+        },
+        {
+          "number": 6,
+          "title": "Unison Note Calibration Across Adjacent Strings",
+          "difficulty": "Advanced",
+          "borderColor": "border-indigo-200",
+          "difficultyBg": "bg-indigo-100",
+          "difficultyText": "text-indigo-700",
+          "numberBg": "bg-indigo-100",
+          "numberText": "text-indigo-600",
+          "description": "Every note on the guitar (except the lowest 4 notes) can be played in multiple locations. This exercise drills unison notes across adjacent strings, training you to hear how timbre changes from thick wound strings to bright plain strings.",
+          "patternNote": {
+            "colorBg": "bg-indigo-50",
+            "colorText": "text-indigo-800",
+            "text": "Concept: Identical pitch played on high E (fret 5) and B (fret 10)"
+          },
+          "notation": {
+            "title": "Unison Note Matching Across Adjacent Strings",
+            "alphaTex": "\\tempo 75 . \\ts 4 4 staveTitle 'Unison Calibration' :8 5.1 10.2 5.1 10.2 5.2 9.3 5.2 9.3 | 5.3 10.4 5.3 10.4 5.4 10.5 5.4 10.5 | :2 5.5 :2 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-indigo-50",
+            "colorBorder": "border-indigo-200",
+            "colorTitle": "text-indigo-900",
+            "colorText": "text-indigo-800",
+            "colorAccent": "bg-indigo-100",
+            "title": "Practice Notes",
+            "text": "Notice how the 10th fret on the B string has a warmer, woodier timbre than the 5th fret on the high E string, even though the pitch (A 440Hz) is acoustically identical.",
+            "tempo": "75 BPM"
+          }
+        },
+        {
+          "number": 7,
+          "title": "The Full CAGED Arpeggio Traversal (C Major Across 5 Positions)",
+          "difficulty": "Virtuosic",
+          "borderColor": "border-emerald-200",
+          "difficultyBg": "bg-emerald-100",
+          "difficultyText": "text-emerald-700",
+          "numberBg": "bg-emerald-100",
+          "numberText": "text-emerald-600",
+          "description": "The ultimate test of fretboard vision: outline C major arpeggios seamlessly across all 5 CAGED positions—C-shape (open), A-shape (fret 3), G-shape (fret 5), E-shape (fret 8), and D-shape (fret 10)—in a continuous ascending cascade.",
+          "patternNote": {
+            "colorBg": "bg-emerald-50",
+            "colorText": "text-emerald-800",
+            "text": "Master Run: C major arpeggio connecting all 5 CAGED positions up to fret 12"
+          },
+          "chordDiagrams": [
+            { "label": "C", "chord": "C" }
+          ],
+          "notation": {
+            "title": "Full CAGED C Major Arpeggio Neck Traversal",
+            "alphaTex": "\\tempo 85 . \\ts 4 4 staveTitle 'CAGED Traversal' :16 3.5 2.4 0.3 1.2 5.4 5.3 5.2 3.1 | 8.6 7.5 5.4 5.3 10.5 10.4 9.3 8.2 | :2 12.1 :2 r |"
+          },
+          "practiceNotes": {
+            "colorBg": "bg-emerald-50",
+            "colorBorder": "border-emerald-200",
+            "colorTitle": "text-emerald-900",
+            "colorText": "text-emerald-800",
+            "colorAccent": "bg-emerald-100",
+            "title": "Practice Notes",
+            "text": "Visualize the chord shape before your fingers touch the strings. This exercise permanently unifies the fretboard into one continuous harmonic landscape.",
+            "tempo": "85 BPM (16th notes)"
           }
         }
       ]
     }
   ],
   "tips": {
-    "title": "Fretboard Navigation Tips",
+    "title": "Mastering Full-Neck Fretboard Navigation",
     "items": [
       {
-        "title": "Building a Mental Map",
-        "colorBg": "bg-gradient-to-br from-sky-50 to-blue-50",
-        "colorBorder": "border-sky-200",
-        "colorTitle": "text-sky-900",
-        "colorText": "text-sky-800",
-        "bulletColor": "text-sky-500",
+        "title": "3 Mistakes That Keep You Trapped in Boxes",
+        "colorBg": "bg-rose-50",
+        "colorBorder": "border-rose-200",
+        "colorTitle": "text-rose-900",
+        "colorText": "text-rose-800",
         "items": [
-          "Learn the notes on strings 6 and 5 first - these are your root note references",
-          "Use landmark frets (3, 5, 7, 9, 12) as visual guides",
-          "Practice finding the same note in multiple octaves across the fretboard",
-          "Visualize connecting shapes rather than isolated box patterns"
+          "The 'Box 1' Pentatonic Prison: Only learning vertical scale patterns. If you only move across strings in one 4-fret span, you will never feel comfortable traveling horizontally along the neck.",
+          "Stiff Thumb Anchoring During Shifts: Leaving the thumb glued behind fret 5 while reaching your fingers up to fret 9. The thumb and fretting hand must slide together as an integrated carriage.",
+          "Hopping Instead of Sliding: Lifting fingers entirely off the strings during position shifts. Using guide fingers on string rails keeps your hand oriented and eliminates wrong-fret landings."
         ]
       },
       {
-        "title": "Smooth Position Shifts",
-        "colorBg": "bg-gradient-to-br from-blue-50 to-indigo-50",
-        "colorBorder": "border-blue-200",
-        "colorTitle": "text-blue-900",
-        "colorText": "text-blue-800",
-        "bulletColor": "text-blue-500",
+        "title": "Masters of Fretboard Fluency",
+        "colorBg": "bg-emerald-50",
+        "colorBorder": "border-emerald-200",
+        "colorTitle": "text-emerald-900",
+        "colorText": "text-emerald-800",
         "items": [
-          "Use guide fingers that slide along the string into the new position",
-          "Shift during sustained notes so the transition is hidden",
-          "Practice shifts with a metronome to keep timing consistent",
-          "Look ahead to your target position before you shift"
+          "Pat Metheny: Modern jazz giant who visualizes the fretboard in horizontal intervals, fluidly sliding across positions to create singing, horn-like chromatic runs.",
+          "Guthrie Govan: Modern virtuoso renowned for complete fretboard mastery; can play any scale, mode, or chord inversion anywhere on the neck without pausing.",
+          "Allan Holdsworth: Legendary fusion pioneer who mapped the neck in symmetric 4-note-per-string patterns, bypassing conventional boxes entirely.",
+          "Joe Pass: Bebop solo guitar master who navigated chord melodies across all 12 positions using root octave anchors and chromatic guide tones."
+        ]
+      },
+      {
+        "title": "The 10-Minute Daily Fretboard Navigation Routine",
+        "colorBg": "bg-sky-50",
+        "colorBorder": "border-sky-200",
+        "colorTitle": "text-sky-900",
+        "colorText": "text-sky-800",
+        "items": [
+          "Block 1: Single-String Horizontal Scale & Chromatics (3 min) - Run Exercises 1 & 3 along the B and high E strings at 70–75 BPM, naming scale intervals as you shift.",
+          "Block 2: Universal Octave Matrix (3 min) - Cycle all octave pairs across all 6 strings at 75 BPM, calling note names aloud to cement visual landmarks.",
+          "Block 3: Diagonal Pentatonic Highway & CAGED (4 min) - Sprint through Exercises 5 & 7 at 85 BPM, sliding smoothly through all 5 positions."
         ]
       }
     ]
   },
   "journeySection": {
-    "title": "Continue Your Fretboard Journey",
-    "description": "Build on your fretboard navigation skills with these complementary exercises.",
+    "title": "Deepen Your Fretboard Knowledge Journey",
+    "description": "Unlock total fretboard freedom by connecting navigation warmups with scales, improvisation, and string-skipping techniques.",
     "gradientFrom": "from-sky-50",
     "gradientTo": "to-blue-50",
     "borderColor": "border-sky-200",
@@ -242,46 +355,54 @@
       {
         "href": "/lessons/practice/warmups/scales-modes",
         "title": "Scales & Modes",
-        "description": "Apply your navigation skills to scale patterns across multiple positions.",
-        "linkText": "Practice scales",
-        "icon": "🎵",
-        "hoverBorder": "hover:border-green-300",
-        "iconBg": "bg-green-100",
-        "iconHoverBg": "group-hover:bg-green-200",
-        "linkColor": "text-green-600",
-        "linkHoverColor": "group-hover:text-green-700"
+        "description": "Map diatonic modes and 3NPS speed runs across the positions you just learned to navigate.",
+        "linkText": "Explore Scales",
+        "icon": "🎶",
+        "hoverBorder": "hover:border-sky-400",
+        "iconBg": "bg-sky-100",
+        "iconHoverBg": "group-hover:bg-sky-200",
+        "linkColor": "text-sky-600",
+        "linkHoverColor": "group-hover:text-sky-700"
       },
       {
-        "href": "/lessons/practice/warmups/finger-exercises",
-        "title": "Finger Exercises",
-        "description": "Build the finger strength and independence needed for position shifts.",
-        "linkText": "Build strength",
-        "icon": "💪",
-        "hoverBorder": "hover:border-blue-300",
+        "href": "/lessons/practice/technique/string-skipping",
+        "title": "String Skipping",
+        "description": "Leap over unplayed strings to create wide intervallic jumps and angular modern solos.",
+        "linkText": "Master Skipping",
+        "icon": "⏭️",
+        "hoverBorder": "hover:border-blue-400",
         "iconBg": "bg-blue-100",
         "iconHoverBg": "group-hover:bg-blue-200",
         "linkColor": "text-blue-600",
         "linkHoverColor": "group-hover:text-blue-700"
       },
       {
-        "href": "/lessons/theory/scales/major",
-        "title": "Major Scale Theory",
-        "description": "Understand the theory behind the patterns you're navigating.",
-        "linkText": "Learn theory",
-        "icon": "📖",
-        "hoverBorder": "hover:border-yellow-300",
-        "iconBg": "bg-yellow-100",
-        "iconHoverBg": "group-hover:bg-yellow-200",
-        "linkColor": "text-yellow-600",
-        "linkHoverColor": "group-hover:text-yellow-700"
+        "href": "/lessons/practice/improv/target-notes",
+        "title": "Target Notes Soloing",
+        "description": "Land on chord tones across different fret positions to craft melodic, resolved improvisations.",
+        "linkText": "Explore Target Notes",
+        "icon": "🎯",
+        "hoverBorder": "hover:border-indigo-400",
+        "iconBg": "bg-indigo-100",
+        "iconHoverBg": "group-hover:bg-indigo-200",
+        "linkColor": "text-indigo-600",
+        "linkHoverColor": "group-hover:text-indigo-700"
       }
     ]
   },
   "gearRecommendations": {
-    "title": "Recommended Gear for Fretboard Practice",
+    "title": "Recommended Gear for Fretboard Mastery",
     "items": [
-      { "category": "Metronome", "product": "Korg TM-60 Tuner Metronome", "reason": "Combined tuner and metronome keeps you in tune and in time during position shifting exercises" },
-      { "category": "Picks", "product": "Dunlop Nylon Standard Picks", "reason": "Consistent feel and flexibility help maintain clean picking across all fretboard positions" }
+      {
+        "category": "Fretboard Conditioner / Cleaner",
+        "product": "Dunlop Fretboard 65 Lemon Oil / Music Nomad F-ONE Oil",
+        "reason": "Keeps rosewood and ebony fingerboards slick and hydrated, allowing fingers to glide effortlessly during high-speed horizontal position shifts."
+      },
+      {
+        "category": "Fretboard Note Decals / Learning System",
+        "product": "Fret Daddy Fretboard Note Stickers (for beginners)",
+        "reason": "Temporary removable fretboard markers that accelerate visual note identification across all 12 positions during early study."
+      }
     ]
   }
 }
