@@ -1,201 +1,289 @@
 {
   "slug": "accessories-picks",
   "category": "accessories",
-  "pageTitle": "Guitar Picks",
-  "subtitle": "The smallest tool with the biggest impact on your sound. Guitar picks affect your tone, attack, and playing comfort more than any other accessory.",
+  "pageTitle": "Guitar Picks: Material Science, Bevel Geometry & Kinetic Transfer",
+  "subtitle": "Master pick gauges, materials from Delrin to Vespel, bevel angles, attack physics, and tone shaping",
   "heroGradient": "bg-gradient-to-r from-amber-50 to-yellow-50",
   "backLink": {
     "href": "/lessons/gear/accessories",
     "label": "Back to Accessories"
   },
   "introduction": {
-    "title": "What Makes a Guitar Pick?",
-    "text": "A pick is the last physical thing that touches the string before a note sounds, which is exactly why such a tiny, cheap piece of plastic has an outsized effect on tone. Its thickness governs how much it flexes on contact, its edge shape governs how cleanly it releases the string, and its material governs how bright or warm that release sounds, three variables that together shape attack, volume, and speed far more than most players realize until they switch picks and hear the difference immediately.",
+    "title": "The Guitar Pick: The Primary Acoustic Interface",
+    "text": "The plectrum is the very first physical point of contact in the sound production chain. Long before a vibration reaches tonewoods, magnetic pickups, preamps, or tube amplifiers, the pick excites the string. A guitar pick is a precision acoustic tool: its chemical polymer composition governs friction and scratch noise; its tip radius and edge bevel dictate the release trajectory of the vibrating string; and its gauge dictates kinetic energy transfer. Swapping from a flexible 0.50 mm nylon pick to a rigid 1.5 mm Ultex Jazz III alters the frequency spectrum, harmonic attack transient, and dynamic headroom more drastically than changing guitar cables or tubes.",
+    "quote": "The pick is the needle on the record of your guitar; its material, bevel, and mass sculpt the raw harmonic signature of every note.",
     "columns": [
       {
-        "title": "Pick Anatomy",
-        "text": "The tip is what actually strikes the string, and its bevel, the angle ground or worn into that edge, determines whether the string releases cleanly or catches slightly, which shows up as a difference between a crisp attack and a softer, rounder one. Thickness, usually measured in millimeters, governs how much the whole pick flexes on impact: a thin pick bends away from the string and softens the attack, while a rigid thick pick barely flexes at all and transfers more of your motion directly into the string."
+        "title": "Kinetic Energy Transfer & Diaphragm Mass",
+        "text": "When a plectrum strikes a tensioned guitar string, it displaces the string laterally until the restoring mechanical tension overcomes the frictional coefficient between pick and metal. A flexible thin pick ($< 0.60\\text{ mm}$) absorbs kinetic energy by bending, releasing the string with low kinetic momentum. This acts as an acoustic compressor—ideal for even acoustic strumming. A rigid heavy pick ($> 1.0\\text{ mm}$) does not bend, transferring 100% of muscular kinetic energy directly into the string core, producing a massive fundamental transient, increased acoustic volume, and instantaneous dynamic touch response."
       },
       {
-        "title": "Why Picks Matter",
-        "text": "A pick's rigidity directly shapes how much attack and volume a note has, since a flexible tip absorbs some of the picking motion while a stiff one transfers nearly all of it into the string. That same rigidity also affects how easily you can pick out single notes cleanly at speed, which is why players chasing fast, precise lead lines and players chasing a strummed, textural rhythm sound often gravitate toward opposite ends of the thickness spectrum."
+        "title": "The Physics of Edge Bevels & Attack Angle",
+        "text": "As a pick travels through a string, edge geometry governs resistance. A square, blunt edge catches the string, causing mechanical drag and microphonic 'chirp'. A hand-polished 45-degree 'speed bevel' creates a ramp that allows the string to glide effortlessly off the tip. Striking the string flat (parallel) produces maximum fundamental punch, while angling the pick 20 to 30 degrees (slicing) minimizes string contact time, exciting bright upper partials and unlocking blistering alternate picking speeds."
       }
     ]
   },
   "sections": [
     {
-      "title": "Pick Thickness Guide",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Thin Picks (0.40-0.60mm)",
-          "bgColor": "bg-blue-50",
-          "description": "A thin pick flexes noticeably against the string on every stroke, which softens the attack and adds a bright, slightly percussive scrape as the edge releases, a sound many strummers actually want because it emphasizes rhythm over individual note clarity. That same flex works against you in single-note lead playing, where the pick bending unpredictably makes fast, accurate picking harder to control, and the thin material wears down and develops rough, distorting edges faster than a thicker pick would.",
-          "fields": [
-            { "label": "Best For", "value": "Acoustic strumming, folk and country music, rhythm guitar parts, beginners learning to strum, light and delicate playing, open chord progressions" }
-          ]
-        },
-        {
-          "title": "Medium Picks (0.60-0.80mm)",
-          "bgColor": "bg-green-50",
-          "description": "A medium pick flexes just enough to soften harsh attack without losing the control needed for single-note lines, which is exactly why it's the thickness most players settle on when they can't justify owning separate picks for rhythm and lead. That middle-of-the-road flex is also why it's the default recommendation for beginners, it doesn't fight you in either direction while you're still developing a picking technique.",
-          "fields": [
-            { "label": "Best For", "value": "General purpose playing, rock and pop music, players switching between rhythm/lead, electric guitar, most beginner recommendations, versatile playing styles" }
-          ]
-        },
-        {
-          "title": "Heavy Picks (0.80-1.20mm)",
-          "bgColor": "bg-purple-50",
-          "description": "With almost no flex, a heavy pick transfers picking motion straight into the string instead of absorbing part of it, which is what gives fast alternate picking and single-note runs their precision, every stroke lands the same way instead of varying with how hard you dig in. The trade-off is that same rigidity makes aggressive strumming feel stiff and can sound harsh on open chords, which is why heavy picks show up far more often in lead and jazz playing than in strummed rhythm parts.",
-          "fields": [
-            { "label": "Best For", "value": "Lead guitar and solos, jazz and fusion playing, metal and hard rock, fast technical playing, bass guitar (when applicable), precise articulation" }
-          ]
-        },
-        {
-          "title": "Extra Heavy Picks (1.20mm+)",
-          "bgColor": "bg-red-50",
-          "description": "At this thickness the pick behaves almost like a rigid tool rather than a flexible plectrum, giving maximum precision for demanding technical passages, but that same total lack of give is exactly what makes it feel awkward to players used to a pick that bends slightly with their motion. Most players who switch to extra heavy picks describe an adjustment period of a few weeks before the added control starts to feel natural rather than clumsy.",
-          "fields": [
-            { "label": "Best For", "value": "Advanced lead playing, jazz and classical guitar, speed picking techniques, professional performance, specialized playing styles, players seeking maximum control" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Pick Materials & Their Sounds",
+      "title": "Polymer Material Science & Acoustic Timbre",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Traditional Materials",
-          "bgColor": "bg-orange-50",
+          "title": "Celluloid vs Delrin (Tortex) vs Nylon",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "The foundational polymers of modern guitar playing.",
           "fields": [
-            { "label": "Celluloid", "value": "The original synthetic pick material, dating back to when it replaced tortoiseshell in the early 20th century. Its balanced flex and moderate brightness make it a safe default across all thicknesses, which is why it remains the most common material by volume." },
-            { "label": "Nylon", "value": "Softer and slightly more flexible than celluloid at a given thickness, nylon rounds off the attack a little and tends to grip sweaty fingers better, which is why it shows up often in picks marketed for live, high-energy playing." }
+            { "label": "Celluloid (Traditional)", "value": "Originally developed as a synthetic substitute for endangered tortoiseshell. Offers balanced flexibility, smooth string release, and a warm, organic click on acoustic and vintage electric setups." },
+            { "label": "Delrin / Tortex (Dunlop)", "value": "Engineered acetal polymer with a matte, chalky surface that absorbs fingertip moisture. Highly resistant to edge wear with a crisp, aggressive snap favored in rock, metal, and pop." },
+            { "label": "Nylon (Molded Grip)", "value": "Soft, ductile polymer with high impact resistance. Yields a smooth, warm attack that dampens high-frequency string scratch, featuring raised tactile grip patterns for high-sweat live environments." }
           ]
         },
         {
-          "title": "Premium Materials",
-          "bgColor": "bg-teal-50",
+          "title": "Engineering Polymers: Ultex vs Acrylic vs Vespel",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "High-performance aerospace and industrial plastics designed for speed and longevity.",
           "fields": [
-            { "label": "Tortoiseshell (Tortex)", "value": "Real tortoiseshell was banned from new production once hawksbill turtles became a protected species in the 1970s, which is why Dunlop's Tortex line, a synthetic delrin material with a matte, grippy texture, exists as a substitute. Its color-coded gauges made it a quick visual reference for thickness, a big reason it became a professional standard." },
-            { "label": "Horn & Bone", "value": "Dense natural materials like buffalo horn wear into a smoother, more polished edge the longer they're used, which some players feel produces a warmer, rounder tone than synthetic picks at the same thickness. They're considerably more expensive and less consistent piece-to-piece than molded plastic, which limits them mostly to players who specifically seek out that feel." }
+            { "label": "Ultex / Ultem (Polyetherimide)", "value": "Aerospace polymer with an exceptional stiffness-to-weight ratio. Produces a bright, glassy acoustic chirp, massive dynamic headroom, and virtually zero wear across months of heavy playing." },
+            { "label": "Cast Acrylic (V-Picks, Gravity)", "value": "Thick, crystal-clear acrylic that warms to body temperature and clings to the fingers. Glides across strings with zero drag, delivering huge low-end fundamental weight." },
+            { "label": "Vespel SP-1 Polyimide (BlueChip)", "value": "Ultra-expensive aerospace thermoset plastic ($35+ per pick). Self-lubricating, virtually indestructible, and completely free of pick click, representing the absolute holy grail of bluegrass and acoustic tone." }
           ]
         }
       ]
     },
     {
-      "title": "Pick Shapes & Designs",
+      "title": "Gauge Spectrum & Mechanical Flexibility",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Thin (0.40–0.60 mm)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "description": "Supple flexibility with natural acoustic dynamic leveling.",
+          "items": [
+            "Flexes easily across all six strings",
+            "Natural acoustic compression for open strumming",
+            "Bright, percussive rhythmic wash",
+            "Prevents beginners from digging too deep",
+            "Not suited for fast lead lines or heavy riffs"
+          ]
+        },
+        {
+          "title": "Medium (0.65–0.85 mm)",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "description": "The universal standard balancing rhythm and lead.",
+          "items": [
+            "Slight flex for strumming chords comfortably",
+            "Firm enough for controlled single-note lines",
+            "The classic 0.73 mm (yellow Tortex) studio favorite",
+            "Balanced frequency response across all registers",
+            "The ideal starting gauge for all guitarists"
+          ]
+        },
+        {
+          "title": "Heavy (0.90–1.20 mm)",
+          "bgColor": "bg-purple-50",
+          "borderColor": "",
+          "description": "Rigid kinetic transfer for authoritative articulation.",
+          "items": [
+            "Virtually zero flex under string impact",
+            "Direct transfer of hand dynamics into string core",
+            "Punchy low-end and bold single-note definition",
+            "Essential for heavy rock riffing and alternate picking",
+            "Demands precise right-hand dynamic control"
+          ]
+        },
+        {
+          "title": "Extra Heavy (1.30–3.0+ mm)",
+          "bgColor": "bg-red-50",
+          "borderColor": "",
+          "description": "Maximum technical precision, speed, and jazz warmth.",
+          "items": [
+            "100% rigid mass behaving like an extension of the bone",
+            "Eliminates latency between pick stroke and note sounding",
+            "Dark, fat fundamental tone with zero flimsy slap",
+            "The staple of Jazz, Gypsy Jazz (la pompe), and shred",
+            "Requires contoured speed bevels to release strings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tip Geometry: Standard 351 vs Jazz III vs Triangles",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Standard/Teardrop",
-          "items": [
-            "Most common shape",
-            "Balanced tip and grip area",
-            "Good for all playing styles",
-            "Wide availability",
-            "Comfortable for most players"
+          "title": "Standard 351 Teardrop",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The quintessential guitar pick shape popularized by Fender and Dunlop since the 1950s.",
+          "fields": [
+            { "label": "Geometry", "value": "Curved shoulders, broad grip surface, and a rounded semi-sharp tip." },
+            { "label": "Playing Feel", "value": "Comfortable for all hand sizes; allows easy grip angle shifting between aggressive strumming and picking." },
+            { "label": "Versatility", "value": "The universal standard found in every guitar case and studio desk on earth." }
           ]
         },
         {
-          "title": "Jazz III",
-          "items": [
-            "Small, precise tip",
-            "Excellent for lead playing",
-            "Popular among metal players",
-            "Fast, accurate picking",
-            "Less surface area for grip"
-          ]
-        },
-        {
-          "title": "Shark Fin/Triangle",
-          "items": [
-            "Three usable points",
-            "Different attack angles",
-            "Good for bass guitar",
-            "Longer playing surface",
-            "Unique ergonomics"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Famous Picks & Artist Preferences",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Rock & Metal Legends",
+          "title": "Dunlop Jazz III Needle Tip",
           "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "The modern cult classic for technical precision, speed, and economic picking efficiency.",
           "fields": [
-            { "label": "Eddie Van Halen", "value": "Dunlop Max-Grip .60mm, thin rather than heavy, giving the flex his tapping and rapid strumming needed" },
-            { "label": "James Hetfield", "value": "Custom Dunlop signature picks (\"Black Fang\"/\"White Fang\"), developed after decades of using standard Dunlop Tortex" },
-            { "label": "John Petrucci", "value": "Dunlop signature Jazz III-shaped picks for technical precision" },
-            { "label": "Brian May", "value": "A British sixpence coin, prized for its stiffness and percussive edge" }
+            { "label": "Geometry", "value": "Compact surface area with a razor-sharp, needle-point tip and contoured speed bevels." },
+            { "label": "Mechanical Advantage", "value": "Forces the right hand close to the strings, eliminating wasted stroke travel and maximizing alternate picking speed." },
+            { "label": "Adherents", "value": "John Petrucci, Eric Johnson, Joe Bonamassa, Matt Heafy, Tosin Abasi." }
           ]
         },
         {
-          "title": "Blues & Jazz Masters",
-          "bgColor": "bg-indigo-50",
+          "title": "346 Large Triangle & Sharkfin",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Oversized surface area offering triple longevity and distinct multi-angled attack points.",
           "fields": [
-            { "label": "Eric Clapton", "value": "Heavy-gauge picks, currently a signature Ernie Ball model made to his own specification" },
-            { "label": "B.B. King", "value": "Almost exclusively a stiff medium pick, held between thumb and index finger; he was famously not a fingerstyle player" },
-            { "label": "Joe Pass", "value": "Heavy picks for jazz precision" },
-            { "label": "Billy Gibbons", "value": "A Mexican peso coin, machined and beveled into a pick shape" }
+            { "label": "Geometry", "value": "Equilateral triangle with three identical playable tips." },
+            { "label": "Longevity", "value": "When one corner wears down, simply rotate to a fresh sharp edge mid-song." },
+            { "label": "Bass & Bluegrass", "value": "Massive grip surface preferred by bassists and aggressive acoustic flatpickers for maximum leverage." }
           ]
         }
       ]
     },
     {
-      "title": "Choosing the Right Picks",
-      "bgColor": "bg-yellow-50",
+      "title": "Curated Professional Guitar Picks",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Dunlop Tortex Standard Picks",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The industry standard color-coded pick series that has powered rock, pop, and metal stages for four decades.",
+          "fields": [
+            { "label": "Material", "value": "Acetal Delrin with proprietary powdery grip finish" },
+            { "label": "Gauges", "value": "0.50mm (Red), 0.60mm (Orange), 0.73mm (Yellow), 0.88mm (Green), 1.00mm (Blue), 1.14mm (Purple)" },
+            { "label": "Tone Character", "value": "Bright, punchy snap with predictable string release and exceptional durability" },
+            { "label": "Ideal For", "value": "All musical genres; the definitive first-choice pick for electric and acoustic guitarists" }
+          ]
+        },
+        {
+          "title": "Dunlop Jazz III",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The high-speed precision icon that redefined lead guitar technique and alternate picking efficiency.",
+          "fields": [
+            { "label": "Material", "value": "Red Nylon (warmer, subtle flex) or Black 'Stiffo' (ultra-rigid, aggressive attack)" },
+            { "label": "Tip Profile", "value": "Sharp, pointed tip with quick-release beveled edges" },
+            { "label": "Size", "value": "Compact profile minimizing hand distance from strings" },
+            { "label": "Ideal For", "value": "Sweep picking, lightning alternate picking, jazz chord-melody, and modern metal articulation" }
+          ]
+        },
+        {
+          "title": "Dunlop Max-Grip",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Engineered for high-sweat live performance with a heavily textured molded non-slip grid surface.",
+          "fields": [
+            { "label": "Grip Technology", "value": "Coarse diamond-mesh molded grid preventing rotation in sweaty fingers" },
+            { "label": "Material", "value": "High-impact flexible nylon" },
+            { "label": "Iconic User", "value": "Eddie Van Halen (used 0.60 mm Max-Grip for fluid tremolo picking and tapping)" },
+            { "label": "Ideal For", "value": "High-energy live touring musicians and players struggling with pick slippage" }
+          ]
+        },
+        {
+          "title": "Dunlop Ultex Sharp",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Combines the indestructible rigidity and glassy attack of aerospace Ultex with a sculpted, pointed tip.",
+          "fields": [
+            { "label": "Material", "value": "High-grade Polyetherimide (Ultex)" },
+            { "label": "Tip Geometry", "value": "Elongated, sculpted needle tip for surgical string targeting" },
+            { "label": "Dynamic Range", "value": "Massive acoustic volume ceiling with crystalline harmonic overtone clarity" },
+            { "label": "Ideal For", "value": "Progressive metal, aggressive acoustic flatpicking, and rapid single-note arpeggios" }
+          ]
+        },
+        {
+          "title": "Fender 351 Classic Celluloid",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The timeless vintage tortoise-shell aesthetic and smooth organic feel that defined early rock 'n' roll.",
+          "fields": [
+            { "label": "Material", "value": "Premium celluloid in classic tortoise shell, white, and black" },
+            { "label": "Gauges", "value": "Thin, Medium, Heavy, Extra Heavy" },
+            { "label": "Tone Profile", "value": "Warm, round vintage release with musical acoustic click" },
+            { "label": "Ideal For", "value": "Classic rock, blues, country, and traditional acoustic singer-songwriter strumming" }
+          ]
+        },
+        {
+          "title": "Ernie Ball Prodigy",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "High-performance Delrin picks featuring machined beveled edges and matte non-slip grip technology.",
+          "fields": [
+            { "label": "Material", "value": "Ultra-durable Delrin with sharp beveled perimeter" },
+            { "label": "Gauges", "value": "1.5 mm and 2.0 mm heavy-duty options" },
+            { "label": "Design", "value": "Available in Standard, Mini, Teardrop, and Shield profiles" },
+            { "label": "Ideal For", "value": "Technical metal, aggressive rhythm chugging, and precise lead guitar execution" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Right-Hand Biomechanics & Edge Maintenance",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "For Beginners",
-          "items": [
-            "Start with medium thickness (0.70mm)",
-            "Choose standard teardrop shape",
-            "Try variety packs to experiment",
-            "Celluloid or nylon material",
-            "Buy multiple picks (you'll lose them!)",
-            "Consider textured grip for security"
+          "title": "Grip Pressure & The Slicing Angle",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "Right-hand grip tension directly governs dynamic range and speed.",
+          "fields": [
+            { "label": "The Loose Grip Paradox", "value": "Grip the pick just firmly enough so it does not rotate, but loose enough that it flexes minutely between thumb and index. Squeezing too hard introduces forearm tension that throttles speed and produces harsh, thin tone." },
+            { "label": "The 30-Degree Slicing Attack", "value": "Angle the pick edge approximately 30 degrees to the string rather than slapping flat. Slicing glides across the string with minimal resistance, dramatically accelerating alternate picking runs." },
+            { "label": "Choking Down for Pinch Harmonics", "value": "Expose only 2 to 3 mm of the pick tip. When striking the string, allow the fleshy edge of the right thumb to brush the vibrating string simultaneously, exciting piercing artificial harmonics." }
           ]
         },
         {
-          "title": "Factors to Consider",
-          "items": [
-            "Your primary playing style",
-            "Comfort and grip preference",
-            "Sound and tone goals",
-            "Hand size and finger dexterity",
-            "Budget and durability needs",
-            "Acoustic vs. electric guitar use"
+          "title": "Wear Patterns & Custom Edge Polishing",
+          "bgColor": "bg-green-50",
+          "borderColor": "border-green-200",
+          "description": "A pick's edge wears down rapidly from friction against wound strings.",
+          "fields": [
+            { "label": "The Serration Danger", "value": "Wound steel strings grind jagged micro-grooves into plastic pick edges. These microscopic burs catch on strings, causing harsh scratching noises and broken high E strings." },
+            { "label": "Emery & Leather Polishing", "value": "Restore worn pick bevels by buffing them against 1,000-grit sandpaper followed by a swipe across a leather strap or denim jeans to restore a glass-smooth release." },
+            { "label": "When to Retire", "value": "When a pick's tip has rounded off significantly, throwing off your picking depth perception, discard it. Picks are cheap consumables—never compromise technique for a worn $0.50 pick." }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Pick Care & Organization",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Storage Solutions",
-          "description": "Loose picks in a gig bag pocket tend to migrate, get lost, or end up buried under cables right when you need one between songs. A dedicated holder or your case's built-in compartment keeps a known supply in a known place, which matters more than it sounds like it should the first time you're standing on stage with nothing in your hand."
-        },
-        {
-          "title": "When to Replace",
-          "description": "A pick's edge rounds off gradually with use, and once it does, the same stroke that used to produce a clean, defined attack starts producing a softer, less precise one, since a rounded tip releases the string less cleanly than a sharp one. Chipped or unevenly worn edges are worse still, since they catch the string inconsistently and can introduce an audible scratch or buzz that has nothing to do with your technique."
-        },
-        {
-          "title": "Emergency Picks",
-          "description": "A lost pick mid-set is a solvable problem only if you planned for it beforehand; stashing spares in your case, wallet, and gig bag costs nothing and means a dropped pick never has to become a dead stop in your set."
-        },
-        {
-          "title": "Cleaning Tips",
-          "description": "Skin oils and grime build up on a pick's surface over time and gradually make it feel slicker and harder to grip securely, which is easy to mistake for the pick itself wearing out. A quick wash restores the grip; some players go further and deliberately sand or file a pick's edge to fine-tune exactly how much attack and pick noise they get, effectively customizing the bevel angle by hand."
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Magnetic pickups, scale lengths & solidbody tone",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Acoustic Guitars",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Soundboard resonance, tonewood science & bracing",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Capos",
+      "href": "/lessons/gear/accessories/capos",
+      "description": "Clamping physics, radius matching & pitch stabilization",
+      "bgColor": "bg-white"
+    }
+  ]
 }

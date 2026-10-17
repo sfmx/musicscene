@@ -1,214 +1,234 @@
 {
   "slug": "accessories-tuners",
   "category": "accessories",
-  "pageTitle": "Guitar Tuners",
-  "subtitle": "The foundation of good sound. Whether you're a beginner or professional, accurate tuning is essential for musical expression and ear development.",
+  "pageTitle": "Guitar Tuners: Pitch Detection Physics, Temperaments & Strobe Precision",
+  "subtitle": "Master equal temperament vs harmonic series physics, strobe vs needle detection, sweetened tunings, and stage pedalboards",
   "heroGradient": "bg-gradient-to-r from-blue-50 to-indigo-50",
   "backLink": {
     "href": "/lessons/gear/accessories",
     "label": "Back to Accessories"
   },
   "introduction": {
-    "title": "Why Accurate Tuning Matters",
-    "text": "A chord is a set of specific frequency ratios between notes, and even a few cents of mistuning on one string throws those ratios off enough that the chord starts to beat and shimmer instead of ringing clean, an effect most listeners register as \"off\" even if they couldn't say why. That's the real reason an out-of-tune guitar sounds bad regardless of how well it's played, and why a well-tuned instrument makes even the simplest open chords sound satisfying: the physics of the intervals are actually correct.",
+    "title": "The Tuner: Mathematical Order in an Acoustic Universe",
+    "text": "A guitar is an imperfect acoustic instrument governed by the conflicting laws of mathematics and human hearing. Because the guitar utilizes straight metal frets spaced according to 12-tone Equal Temperament, its intervals are a deliberate compromise: while an octave is mathematically pure (2:1 frequency ratio), an equal-tempered major third is nearly 14 cents sharper than the pure acoustic third found in nature. When two strings mistune by even two or three cents, their overlapping harmonic partials produce constructive and destructive interference—audible as rapid, disorienting acoustic beating ($\\Delta f = |f_1 - f_2|$). A professional guitar tuner is not merely a utility; it is a precision frequency counter that establishes the fundamental harmonic integrity upon which all musical expression rests.",
+    "quote": "Accurate tuning is the difference between an instrument that fights the laws of physics and one that rings with effortless harmonic resonance.",
     "columns": [
       {
-        "title": "Musical Benefits",
-        "text": "Playing in tune is what makes chord intervals sound consonant rather than sour, and it's also the only way ear training actually develops correctly, since you can't learn to recognize what a perfect fifth or a major third sounds like if the reference pitch itself is drifting. It's equally non-negotiable the moment you play with anyone else: two slightly different \"in tune\" guitars clash audibly in a way that a single guitar's mistuning alone doesn't."
+        "title": "The Physics of 12-Tone Equal Temperament",
+        "text": "In 12-Tone Equal Temperament (12-TET), an octave is divided into 12 semitones, each mathematically defined by the twelfth root of two: $f_n = f_0 \\cdot 2^{n/12}$. Each semitone is divided into 100 cents. While this allows a guitarist to play in all twelve musical keys with equal consonance, it deviates noticeably from the natural harmonic overtone series. A pure 'just intonation' major third has a 5:4 frequency ratio (386.3 cents), whereas the fretted 12-TET major third is 400 cents—a jarring $13.7\\text{ cents}$ sharp! Master guitarists use high-resolution tuners and 'sweetened' temperament offsets to tame this inherent acoustic friction."
       },
       {
-        "title": "Practical Advantages",
-        "text": "Recording exposes tuning problems mercilessly, since a pitch that sounds close enough live becomes obviously wrong once it's isolated and looped back on playback. Tuning correctly also protects the instrument itself: strings tuned to the correct tension age and stretch predictably, while strings left flat or sharp for long periods put uneven strain on the neck and can shorten string life."
+        "title": "Transduction & Pitch Detection Technologies",
+        "text": "How a tuner detects pitch dictates its speed and accuracy. Piezoelectric clip-on tuners sense mechanical acoustic vibrations directly through the headstock wood, completely rejecting loud ambient stage noise and drums. Pedal tuners receive clean, uncorrupted electrical voltage directly from guitar pickups, buffering the signal and muting the output for silent tuning. Inside, digital tuners process audio via Fast Fourier Transform (FFT) algorithms, while professional strobe tuners compare incoming frequencies against an analog or virtual spinning pattern, delivering instantaneous real-time precision down to $0.1\\text{ cent}$."
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Guitar Tuners",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Clip-On Tuners",
-          "bgColor": "bg-green-50",
-          "description": "A clip-on tuner reads pitch through a small vibration sensor pressed against the headstock rather than listening through a microphone, which is exactly why it keeps working accurately in a loud room or backstage area where an audio-based tuner would struggle to isolate your guitar from the surrounding noise. Needing no cable or amp connection also makes it the fastest tuner to grab and use, clip it on, glance at the display, done.",
-          "fields": [
-            { "label": "Advantages", "value": "Convenient and always accessible. Works acoustic and electric guitars. Immune to ambient noise. Inexpensive and reliable. Clear visual display. Perfect for practice and lessons." },
-            { "label": "Top Models", "value": "Snark SN-5X (popular and affordable), Boss TU-10 (professional build quality), TC Electronic PolyTune Clip (advanced features), D'Addario NS Micro Headstock (ultra-compact)" }
-          ]
-        },
-        {
-          "title": "Pedal Tuners",
-          "bgColor": "bg-blue-50",
-          "description": "A pedal tuner sits directly in the signal chain and mutes the output the instant you engage it, so you can retune silently between songs instead of an audience hearing you hunt for pitch, a small detail that matters enormously in a live set's pacing. Reading the guitar's actual line-level signal rather than body vibration also makes it typically more accurate than a clip-on, and its large, bright display is built to be readable at a glance under stage lighting rather than squinted at up close.",
-          "fields": [
-            { "label": "Performance Benefits", "value": "Hands-free operation during performance. Always in signal chain when needed. No audience disruption. Multiple instrument compatibility. Reference tone generation. Professional stage appearance." },
-            { "label": "Industry Standard Pedals", "value": "Boss TU-3 (most popular stage tuner), TC Electronic PolyTune 3 (polyphonic tuning), Peterson StroboStomp HD (strobe-precision tuning in pedal form), Korg Pitchblack Pro (bright, ultra-fast display)" }
-          ]
-        },
-        {
-          "title": "Smartphone & App Tuners",
-          "bgColor": "bg-purple-50",
-          "description": "An app tuner listens through the phone's built-in microphone rather than sensing vibration directly, which is convenient since it needs no extra hardware at all, but it also means it's picking up every other sound in the room along with your guitar. That makes it a solid free option for quiet practice at home and a frustrating one in a noisy rehearsal space or backstage area.",
-          "fields": [
-            { "label": "Limitations", "value": "Affected by background noise. Requires quiet environment. Phone microphone quality varies. Battery drain on device. May struggle with electric guitars." },
-            { "label": "Popular Apps", "value": "Guitar Tuna (most downloaded), Fender Tune (official Fender app), PitchLab (professional features), Chromatic Tuner (simple and effective)" }
-          ]
-        },
-        {
-          "title": "Rack & Desktop Tuners",
-          "bgColor": "bg-orange-50",
-          "description": "Rack and desktop tuners are built for a fixed studio signal chain rather than portability, accepting multiple simultaneous input sources and integrating directly into a console or patch bay, which is overkill for a gigging guitarist but exactly what a studio needs when several instruments are being tracked and tuning has to be verified without disrupting the session.",
-          "fields": [
-            { "label": "Features", "value": "Large, clear displays. Multiple tuning temperaments. Instrument-specific modes. MIDI integration. Calibration to different frequencies. Professional studio standard." }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Understanding Tuning Accuracy",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Cents and Precision",
-          "fields": [
-            { "label": "Cent", "value": "1/100th of a semitone" },
-            { "label": "+/-1 cent", "value": "Extremely accurate (studio grade)" },
-            { "label": "+/-3 cents", "value": "Very good accuracy" },
-            { "label": "+/-5 cents", "value": "Acceptable for most uses" },
-            { "label": "+/-10 cents", "value": "Noticeable but usable" },
-            { "label": ">10 cents", "value": "Obviously out of tune" }
-          ]
-        },
-        {
-          "title": "Factors Affecting Accuracy",
-          "items": [
-            "Ambient temperature changes",
-            "String age and condition",
-            "Guitar setup and intonation",
-            "Playing technique and pressure",
-            "Tuner quality and calibration",
-            "Background noise interference"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Tuning Methods & Techniques",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Electronic Tuning",
-          "bgColor": "bg-teal-50",
-          "fields": [
-            { "label": "Chromatic Mode", "value": "Detects any note, most common setting" },
-            { "label": "Guitar Mode", "value": "Only shows standard guitar notes (E-A-D-G-B-E)" },
-            { "label": "Strobe Tuning", "value": "Ultra-precise visual representation" },
-            { "label": "Polyphonic", "value": "Shows all strings at once (strum all strings)" }
-          ]
-        },
-        {
-          "title": "Ear Training Methods",
-          "bgColor": "bg-indigo-50",
-          "fields": [
-            { "label": "Reference Pitch", "value": "Tune low E to reference, then tune relatively" },
-            { "label": "Harmonic Tuning", "value": "Use natural harmonics for precise intervals" },
-            { "label": "Unison Tuning", "value": "Match notes across different strings" },
-            { "label": "Beat Frequency", "value": "Listen for interference between notes" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Alternative Tunings & Tuner Support",
-      "bgColor": "bg-yellow-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Popular Alternatives",
-          "items": [
-            "Drop D: D-A-D-G-B-E (rock/metal)",
-            "Open G: D-G-D-G-B-D (slide guitar)",
-            "Open D: D-A-D-F#-A-D (fingerpicking)",
-            "DADGAD: D-A-D-G-A-D (Celtic/folk)",
-            "Half-step down: Eb-Ab-Db-Gb-Bb-Eb",
-            "Open E: E-B-E-G#-B-E (blues slide)"
-          ]
-        },
-        {
-          "title": "Tuner Considerations",
-          "items": [
-            "Chromatic mode works for all tunings",
-            "Some tuners have preset modes",
-            "Reference tone generators helpful",
-            "Apps often include tuning presets",
-            "Custom tuning creation features",
-            "Temperament adjustments available"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Choosing the Right Tuner",
-      "bgColor": "bg-blue-50",
+      "title": "Tuning Precision: Strobe vs Digital Needle vs Polyphonic",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "For Beginners ($10-25)",
-          "items": [
-            "Snark SN-5X clip-on",
-            "D'Addario NS Micro",
-            "Guitar Tuna app (free)",
-            "Simple operation",
-            "Clear visual display",
-            "Reliable basic tuning"
+          "title": "True Strobe Tuners (±0.1 Cent Accuracy)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "The undisputed gold standard in master lutherie, professional guitar setup, and studio tracking.",
+          "fields": [
+            { "label": "Stroboscopic Principle", "value": "Compares incoming note frequency against a calibrated optical or digital motor pattern spinning at exact reference speed. When in tune, the display motion stops completely." },
+            { "label": "0.1 Cent Resolution", "value": "Thirty times more accurate than standard LED tuners (1/1000th of a semitone). Detects microscopic pitch drift that digital needles round off." },
+            { "label": "Zero Latency", "value": "Analog-speed visual feedback with zero microprocessor calculation delay, responding instantaneously to the initial string attack transient." },
+            { "label": "Benchmark", "value": "Peterson StroboStomp HD, Peterson StroboClip HD" }
           ]
         },
         {
-          "title": "For Players ($25-75)",
-          "items": [
-            "Boss TU-10 clip-on",
-            "TC Electronic PolyTune Clip",
-            "Peterson StroboClip HD",
-            "Enhanced accuracy",
-            "Multiple tuning modes",
-            "Durable construction"
+          "title": "Digital Chromatic Pedals (±1.0 Cent Accuracy)",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "The indestructible live performance standard engineered for high-visibility stage tuning.",
+          "fields": [
+            { "label": "Detection Algorithm", "value": "Microprocessor calculates fundamental period via zero-crossing detection or FFT peak analysis, illuminating LED ladders." },
+            { "label": "Stage Muting & Buffer", "value": "High-current footswitch instantly mutes signal to amplifiers for silent stage tuning, often incorporating low-noise output buffers." },
+            { "label": "Display Legibility", "value": "High-brightness multi-color LED displays engineered to cut through direct sunlight on outdoor festival stages." },
+            { "label": "Benchmark", "value": "Boss TU-3 Chromatic Tuner, Korg Pitchblack X" }
           ]
         },
         {
-          "title": "For Professionals ($75+)",
-          "items": [
-            "Boss TU-3 pedal",
-            "TC Electronic PolyTune 3",
-            "Peterson StroboStomp HD",
-            "Stage-ready reliability",
-            "Advanced features",
-            "Professional accuracy"
+          "title": "Polyphonic Strum Tuning",
+          "bgColor": "bg-emerald-50",
+          "borderColor": "border-emerald-200",
+          "description": "Revolutionary multi-string analysis that inspects all six strings simultaneously in a single strum.",
+          "fields": [
+            { "label": "Polyphonic DSP", "value": "Sophisticated multi-channel polyphonic algorithm isolates and calculates all six vibrating fundamental frequencies simultaneously." },
+            { "label": "Two-Second Check", "value": "Strum all six open strings at once: display reveals instantly which specific string has dropped flat between songs." },
+            { "label": "Monophonic Auto-Switch", "value": "Pluck a single string and the pedal automatically switches to ultra-fast monophonic chromatic or strobe mode." },
+            { "label": "Benchmark", "value": "TC Electronic PolyTune 3, PolyTune Clip" }
           ]
         }
       ]
     },
     {
-      "title": "Professional Tuning Tips",
-      "layout": "list",
+      "title": "Sweetened Tunings & The Intonation Challenge",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
       "cards": [
         {
-          "title": "Tune Up, Not Down",
-          "description": "Tuning machines have a small amount of mechanical slack in the gears, and approaching a note from below takes that slack up in the direction that holds the string firmly under tension, whereas approaching from above can leave a tiny bit of play that lets the string slip flat again as soon as you start playing. If you overshoot the target pitch, the fix is to tune back down past it and come up again, not just nudge downward, so you're always settling into the note from the same direction."
+          "title": "The Sweetened Tuning Concept (Peterson GVT)",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "Why standard mathematically straight 12-TET tuning often sounds sour on open guitar chords.",
+          "fields": [
+            { "label": "The Sour B-String Problem", "value": "In standard EADGBE tuning, the major third between G and B is naturally 14 cents sharp in 12-TET, causing open E and C chords to beat unpleasantly." },
+            { "label": "Sweetened Offsets", "value": "Peterson's proprietary 'Sweetened' presets apply subtle micro-cent offsets (e.g., flattening the B string by -1.5 cents and adjusting the low E) to harmonize chord intervals without throwing off fretted lead notes." },
+            { "label": "Nut Height Compensation", "value": "Fretting at the 1st, 2nd, and 3rd frets pulls strings sharp due to the downward slope from the nut. Sweetened tunings mitigate this low-fret sharpness." }
+          ]
         },
         {
-          "title": "Stretch New Strings",
-          "description": "A brand-new string hasn't fully seated at the tuning post or bridge yet, and the core wire itself is still settling under tension, which is why a freshly strung guitar goes flat repeatedly over its first hour or two even if nothing was played roughly. Gently pulling each string away from the fretboard a few times and retuning after each pull speeds up that settling process so the string reaches a stable pitch much sooner than just waiting it out through normal playing."
+          "title": "12th Fret Saddle Intonation Calibration",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "Using a strobe tuner to set laser-accurate saddle compensation at the bridge.",
+          "fields": [
+            { "label": "Step 1: Tune Open String", "value": "Tune the open string to dead center on a 0.1-cent strobe tuner." },
+            { "label": "Step 2: 12th Fret Harmonic", "value": "Lightly touch string above 12th fret crown and pluck to sound the natural 12th-fret octave harmonic. Verify dead center." },
+            { "label": "Step 3: Fretted 12th Fret Note", "value": "Press the string down cleanly at the 12th fret. If the fretted note reads SHARP, move the bridge saddle BACKWARD (away from neck). If the fretted note reads FLAT, move the saddle FORWARD (toward neck)." },
+            { "label": "Result", "value": "Guarantees the guitar stays in tune across all 22 or 24 frets." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Professional Guitar Tuners",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Peterson StroboStomp HD",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The ultimate pedal tuner in existence, featuring true mechanical 0.1-cent strobe precision, high-def color screen, and 100+ Sweetened tunings.",
+          "fields": [
+            { "label": "Accuracy", "value": "True 0.1 Cent (±0.001 semitone) accuracy" },
+            { "label": "Display", "value": "High-definition multi-color LCD screen with customizable user backlight colors" },
+            { "label": "Buffer Quality", "value": "100% pristine True Bypass or ultra-linear high-impedance Pure Buffer" },
+            { "label": "Sweetened Tunings", "value": "Preloaded with guitar, bass, acoustic, Drop-D, 12-string, and DADGAD presets" }
+          ]
         },
         {
-          "title": "Check Intonation",
-          "description": "If open strings are in tune but fretted notes sound off, your guitar's intonation may need adjustment. Compare 12th fret harmonics to fretted notes."
+          "title": "TC Electronic PolyTune 3",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The modern pedalboard workhorse combining instantaneous polyphonic strum tuning with the acclaimed Bonafide Buffer.",
+          "fields": [
+            { "label": "Tuning Modes", "value": "Polyphonic 6-string strum, Chromatic needle (±0.5 cent), and Strobe (±0.02 cent)" },
+            { "label": "Bonafide Buffer", "value": "Integrated high-end analog buffer (1 M$\\Omega$ in, 100 $\\Omega$ out) that prevents high-frequency cable tone loss across long pedalboards" },
+            { "label": "Display", "value": "109 ultra-bright LEDs with automatic ambient light sensor for blinding outdoor stages" },
+            { "label": "Always-On Mode", "value": "Allows continuous pitch monitoring while playing without muting" }
+          ]
         },
         {
-          "title": "Tune Often",
-          "description": "Check tuning frequently during practice and performance. Temperature changes, string stretching, and playing dynamics all affect tuning stability."
+          "title": "Boss TU-3",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The world's most recorded, road-tested, and ubiquitous stage tuner pedal, encased in indestructible tank-like Boss armor.",
+          "fields": [
+            { "label": "Accuracy", "value": "±1 Cent accuracy with 21-segment LED meter and High-Brightness outdoor mode" },
+            { "label": "Modes", "value": "Chromatic and Guitar/Bass mode with support for 7-string guitars and 6-string basses" },
+            { "label": "Drop Tuning", "value": "Flat tuning up to 6 semitones below standard pitch" },
+            { "label": "Reliability", "value": "Indestructible die-cast steel housing with integrated Boss input buffer and 9V DC daisy-chain power out" }
+          ]
+        },
+        {
+          "title": "Peterson StroboClip HD",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Concert-grade 0.1-cent strobe accuracy in a discrete, carbon-fiber composite clip-on headstock housing.",
+          "fields": [
+            { "label": "Accuracy", "value": "True 0.1 Cent strobe tracking across all octaves down to low B on bass" },
+            { "label": "Display", "value": "High-definition backlit virtual strobe display with wide viewing angles" },
+            { "label": "Clamp Engineering", "value": "Soft rubber-lined jaws that protect delicate vintage nitrocellulose headstock finishes" },
+            { "label": "Ideal For", "value": "Acoustic flatpicking, classical guitar, banjo, mandolin, and backstage warm-ups" }
+          ]
+        },
+        {
+          "title": "D'Addario NS Micro Headstock Tuner",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Ultra-compact, discrete clip-on tuner that hides completely behind the guitar headstock, invisible to audience eyes.",
+          "fields": [
+            { "label": "Design", "value": "Microscopic profile that remains permanently attached inside guitar cases" },
+            { "label": "Sensor", "value": "High-sensitivity piezoelectric transducer detecting wood vibration in loud rooms" },
+            { "label": "Display", "value": "Multi-color reversible, 360-degree rotating backlit display with visual metronome" },
+            { "label": "Ideal For", "value": "Acoustic and electric guitarists seeking invisible, always-ready tuning convenience" }
+          ]
+        },
+        {
+          "title": "Snark ST-2",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The ultra-popular, versatile multi-instrument clip-on tuner with a fast processing chip and 360-degree ball joint.",
+          "fields": [
+            { "label": "Chip Speed", "value": "Upgraded high-speed frequency detection chip for lightning-fast pitch tracking" },
+            { "label": "Dual Sensors", "value": "Internal vibration sensor plus built-in microphone for acoustic instruments" },
+            { "label": "Display", "value": "Bright full-color circular LCD display readable from any angle" },
+            { "label": "Ideal For", "value": "Beginners, home practice, school band students, and multi-instrumentalists" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Tuning Protocol & Reference Pitches",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The 'Tune Up, Never Down' Mechanics",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "Eliminating worm-gear backlash in guitar tuning machines.",
+          "fields": [
+            { "label": "Gear Backlash Physics", "value": "Tuning pegs utilize a worm-gear mechanism with mechanical play. When tuning down, the gears are left in slack contact. As soon as you strike a chord, string tension yanks the gear forward, dropping the string flat." },
+            { "label": "The Rule", "value": "Always tune UP into the target pitch. If you overshoot and go sharp: drop the pitch a half-step flat, tug the string gently to seat the post, and tune up into dead center." },
+            { "label": "Nut Lubrication", "value": "Strings frequently bind in plastic or unlubricated bone nut slots. Apply graphite or Big Bends Nut Sauce in nut slots to ensure smooth, ping-free tuning." }
+          ]
+        },
+        {
+          "title": "A440 vs Historical Reference Standards",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "Understanding master frequency calibration standards.",
+          "fields": [
+            { "label": "A4 = 440 Hz (ISO 16 Standard)", "value": "Adopted internationally in 1955. The universal standard for all modern rock, pop, jazz, and classical ensembles." },
+            { "label": "A4 = 432 Hz ('Verdi Pitch')", "value": "Historical Italian pitch standard favored by Giuseppe Verdi, known for lower string tension and slightly warmer vocal resonance." },
+            { "label": "A4 = 415 Hz (Baroque Pitch)", "value": "Standard for historical performance ensembles playing Bach, Vivaldi, and Handel, sounding exactly one half-step lower than modern pitch." },
+            { "label": "A4 = 442 Hz (European Symphony Standard)", "value": "Utilized by leading European orchestras (e.g., Berlin Philharmonic) to give orchestral strings and brass added brilliance and projection." }
+          ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Capos",
+      "href": "/lessons/gear/accessories/capos",
+      "description": "Clamping physics, radius matching & pitch stabilization",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Picks",
+      "href": "/lessons/gear/accessories/picks",
+      "description": "Polymer science, bevel geometry & kinetic transfer",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Scale length tension, pickups & intonation setup",
+      "bgColor": "bg-white"
+    }
+  ]
 }

@@ -53,4 +53,5 @@ export const AFFILIATE_BRANDS: string[] = [
   'Gator', 'SKB', 'Korg', 'Peterson', 'Hercules',
   'On-Stage', 'Ultimate Support', 'String Swing',
   'Jim Dunlop', 'Fender', 'ChromaCast',
+  'Wittner', 'Soundbrenner', 'Rock Slide', 'Seiko',
 ];

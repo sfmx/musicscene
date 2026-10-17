@@ -1,255 +1,218 @@
 {
   "slug": "accessories-cables",
   "category": "accessories",
-  "pageTitle": "Guitar Cables",
-  "subtitle": "Often overlooked but crucial to your sound, cables are the lifeline of your signal. Learn how to choose quality cables that preserve your tone and last for years.",
+  "pageTitle": "Guitar Cables & Interconnects: Capacitance, Stage Rigs & Tone Preservation",
+  "subtitle": "Master high-Z cable capacitance math, pedalboard patch routing, speaker cable safety, and cable reliability",
   "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
   "backLink": {
     "href": "/lessons/gear/accessories",
     "label": "Back to Accessories"
   },
   "introduction": {
-    "title": "Why Cable Quality Matters",
-    "text": "A cable is a passive part of your rig, but it isn't a neutral one: every foot of it behaves like a small capacitor sitting between your pickups and your amp's input, and a cheap, poorly shielded cable can quietly roll off high frequencies before your tone ever reaches the amp. A failing solder joint or worn plug can also turn into a dead signal at the exact moment you can least afford it, mid-song, on stage. Paying a bit more for decent shielding and connectors isn't about audiophile placebo, it's about avoiding the two most common on-stage failures: lost tone and lost signal.",
+    "title": "Guitar Cables: The Crucial High-Impedance Lifeline",
+    "text": "A guitar cable is not merely an inert copper wire; in a guitar rig, it functions as an active passive electronic filter. Because passive electric guitar and bass pickups generate a weak, high-impedance voltage ($6\\text{ k}\\Omega\\text{ to }15\\text{ k}\\Omega$), they are acutely vulnerable to high-frequency tone loss caused by cable capacitance. Every foot of instrument cable contains an electrical capacitor formed between the central hot copper conductor and the grounded outer shield. Run a cheap, high-capacitance 25-foot cable across a stage, and you inadvertently construct an RC low-pass filter that rolls off sparkling treble overtones, blunts attack transients, and turns a brilliant Stratocaster into a muddy, dull murmur before the signal ever strikes your first pedal.",
+    "quote": "Your pickups can only sound as open and dynamic as the capacitance of the cable carrying their voltage to the amplifier.",
     "columns": [
       {
-        "title": "Signal Integrity",
-        "text": "A guitar's pickups put out a relatively weak, high-impedance signal, which makes it more vulnerable than a line-level signal to both capacitance-related tone loss and electromagnetic interference picked up along the cable's length. A cable's internal capacitance acts like a gentle low-pass filter, shaving off high end as the cable gets longer, while its shielding is what keeps nearby power cables and stage lighting from turning into an audible hum."
+        "title": "Cable Capacitance Mathematics & Treble Attenuation",
+        "text": "The frequency response of an instrument cable is governed by the classic low-pass cutoff formula: $f_c = \\frac{1}{2\\pi R C}$. Here, $R$ is the source impedance of the guitar pickup and $C$ is the total cumulative capacitance of the cable (capacitance per foot multiplied by length). A generic budget cable typically exhibits $45\\text{ to }50\\text{ pF/ft}$. Over a 20-foot run, this creates nearly $1,000\\text{ pF}$ of capacitance, shifting the pickup's resonant frequency peak downward by several octaves. Premium low-capacitance cables ($18\\text{ to }28\\text{ pF/ft}$) preserve the original resonant peak of your pickups, delivering crisp attack, airy harmonics, and transparent volume roll-off."
       },
       {
-        "title": "Reliability & Performance",
-        "text": "Most cable failures happen at the connector rather than in the run itself, since that's where flexing and strain concentrate every time you plug in, coil up, and move the cable again. Cheaper cables tend to use thinner internal wire and lower-quality jacks that fatigue faster, which is why a cable that tests fine at home can start crackling or cutting out after a few months of regular gigging."
+        "title": "The Fatal Mistake: Instrument vs Speaker Cables",
+        "text": "Never confuse an instrument cable with a speaker cable. While both utilize 1/4\" phone jacks, their internal engineering is completely opposite. An instrument cable uses a thin central conductor (20–24 AWG) surrounded by a noise-shielding braid to carry microvolts. A speaker cable uses two heavy unshielded conductors (14–16 AWG) built to carry high current from a power amplifier to a speaker cabinet. Plugging an instrument cable between a tube head and cabinet causes the thin wire to overheat, melt, and short out, instantly blowing the amplifier's multi-hundred-dollar output transformer."
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Guitar Cables",
-      "layout": "list",
+      "title": "Cable Types Across the Guitar Signal Chain",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Standard Instrument Cable",
-          "description": "A standard instrument cable carries an unbalanced TS (tip-sleeve) signal, meaning there is only one signal conductor and a shared ground, which works fine over the short distance between a guitar and an amp but grows more susceptible to noise as the run gets longer. It's the cable nearly every guitarist owns because it's simple, cheap to build well, and matches the high-impedance output of passive pickups without needing any conversion.",
+          "title": "Instrument Cables (Guitar to Board / Amp)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "High-impedance unbalanced TS cables designed for maximum noise rejection and low capacitance.",
           "fields": [
-            { "label": "Type", "value": "TS (Tip-Sleeve), High-Z impedance" },
-            { "label": "Length", "value": "10-20 feet" },
-            { "label": "Price Range", "value": "$15-100+" },
-            { "label": "Best For", "value": "Direct guitar to amplifier connection, pedal connections" }
+            { "label": "Architecture", "value": "Single central copper conductor surrounded by conductive PVC and braided/spiral shielding" },
+            { "label": "Target Length", "value": "10 to 18 feet optimal. Avoid runs over 20 feet without an active buffer pedal to prevent audible treble roll-off" },
+            { "label": "Capacitance Target", "value": "Under 30 pF/ft for pristine clarity; 35–45 pF/ft for darker, vintage Hendrix-style warmth" },
+            { "label": "Best For", "value": "Guitar to pedalboard input, and pedalboard output to amplifier input" }
           ]
         },
         {
-          "title": "Balanced Cable",
-          "description": "A balanced cable uses a TRS (tip-ring-sleeve) connector to send the signal down two conductors that are out of phase with each other, so any noise picked up along the way cancels out when the two are recombined at the far end. That's what lets a balanced line run fifty feet or more without picking up hum, which is why studios and installed sound systems use them by default; a passive guitar can't output a truly balanced signal on its own, so this matters most once a DI box or active pickups are in the chain.",
+          "title": "Pedalboard Patch Cables",
+          "bgColor": "bg-emerald-50",
+          "borderColor": "border-emerald-200",
+          "description": "Ultra-short low-profile interconnects linking pedals with minimal capacitance stacking.",
           "fields": [
-            { "label": "Type", "value": "TRS (Tip-Ring-Sleeve), Low-Z impedance" },
-            { "label": "Length", "value": "6-25 feet" },
-            { "label": "Price Range", "value": "$20-150+" },
-            { "label": "Best For", "value": "Studio recording, long cable runs, professional setups" }
+            { "label": "The Stacking Problem", "value": "Ten 6-inch patch cables equal five feet of cable plus twenty solder junctions. High-capacitance patch cables quickly destroy your high-end sparkle" },
+            { "label": "Pancake & Flat Jacks", "value": "Ultra-thin right-angle jacks (EBS Flat Patch, SquarePlug) that nestle flush between pedals to save pedalboard real estate" },
+            { "label": "Soldered vs Solderless", "value": "Soldered cables provide lifetime permanent reliability; solderless kits allow rapid custom length assembly" }
           ]
         },
         {
-          "title": "Speaker Cable",
-          "description": "Speaker cable carries a much higher-power, low-impedance signal from an amp head's output to a cabinet, and that signal doesn't need shielding the way an instrument-level signal does, it needs low resistance so the amp isn't fighting its own cable to drive the speaker. Swapping an instrument cable in for a speaker cable, or vice versa, can damage a tube amp's output transformer, since the two are built for genuinely different jobs even though the connectors often look identical.",
+          "title": "Speaker Cables (Head to Cabinet)",
+          "bgColor": "bg-red-50",
+          "borderColor": "border-red-200",
+          "description": "Heavy-gauge, unshielded high-current transmission lines linking amplifier heads to cabinets.",
           "fields": [
-            { "label": "Type", "value": "TS Heavy Gauge, low resistance" },
-            { "label": "Length", "value": "4-12 feet" },
-            { "label": "Price Range", "value": "$25-200+" },
-            { "label": "Best For", "value": "Connecting amplifier heads to speaker cabinets" }
-          ]
-        },
-        {
-          "title": "Patch Cable",
-          "description": "Patch cables exist to solve a wiring problem: connecting pedals on a board without wasting space on excess cable length. Keeping them short and often right-angled reduces the total capacitance stacking up when several pedals sit in series, and it keeps the board tidy enough that a dropped drink or a stray boot doesn't yank a connection loose mid-set.",
-          "fields": [
-            { "label": "Type", "value": "TS Short, High-Z impedance" },
-            { "label": "Length", "value": "6 inches - 3 feet" },
-            { "label": "Price Range", "value": "$10-50" },
-            { "label": "Best For", "value": "Connecting effects pedals in pedalboard setups" }
+            { "label": "Wire Gauge", "value": "14 AWG to 16 AWG multi-strand heavy copper conductors minimizing electrical resistance ($< 0.1\\ \\Omega$)" },
+            { "label": "Zero Shielding", "value": "Speaker signals operate at high power (tens to hundreds of watts); electromagnetic interference cannot affect them, so shielding is unnecessary" },
+            { "label": "Safety Mandate", "value": "Always verify that cables connecting heads to cabs are clearly stamped 'SPEAKER CABLE'" }
           ]
         }
       ]
     },
     {
-      "title": "Cable Construction & Specifications",
-      "subtitle": "Wire Gauge & Tone Impact",
-      "bgColor": "bg-blue-50",
-      "layout": "table",
-      "tableHeaders": ["Wire Gauge", "Resistance", "Capacitance", "Best Use", "Tone Effect"],
-      "tableRows": [
-        ["20 AWG", "Higher", "Lower", "Short runs, budget cables", "Brighter, less bass"],
-        ["22 AWG", "Medium", "Medium", "General purpose, most common", "Balanced frequency response"],
-        ["24 AWG", "Lower", "Higher", "High-end cables, longer runs", "Warmer, more bass"]
-      ]
-    },
-    {
-      "title": "Shielding & Connectors",
+      "title": "Capacitance, Wire Gauge & Tone Science",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Shielding Types",
-          "bgColor": "bg-purple-50",
-          "items": [
-            "Braided Shield: Excellent coverage, flexible",
-            "Spiral Shield: Good flexibility, lower coverage",
-            "Foil Shield: 100% coverage, less flexible",
-            "Combination: Foil + braid for best protection"
+          "title": "Cable Capacitance Table",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "How length and capacitance per foot fundamentally alter pickup resonant frequencies.",
+          "fields": [
+            { "label": "Ultra-Low Capacitance (18–25 pF/ft)", "value": "Example: George L's, Sommer, Mogami Gold. Crystalline highs, ultra-fast transient attack, perfect for complex pedalboards and long runs." },
+            { "label": "Standard Professional (28–35 pF/ft)", "value": "Example: Planet Waves American Stage, Canare GS-6. Balanced frequency response, smooth musical highs, road-tested reliability." },
+            { "label": "High Capacitance (45–60+ pF/ft)", "value": "Example: Vintage coiled cables, cheap molded unbranded cables. Noticeably rolls off frequencies above 4 kHz, softening harsh single-coil bridge pickups (the secret to Jimi Hendrix's warm Strat tone)." }
           ]
         },
         {
-          "title": "Connector Quality",
+          "title": "Shielding & Handling Noise Physics",
+          "bgColor": "bg-gray-50",
+          "borderColor": "",
+          "description": "How physical cable movement generates electrical noise.",
+          "fields": [
+            { "label": "The Triboelectric Effect", "value": "When a cable is stepped on or whipped against the stage floor, internal friction between the copper shield and dielectric insulation generates static charges, audible as loud 'thumps' and crackles." },
+            { "label": "Conductive Carbon PVC", "value": "Professional cables incorporate a black semi-conductive carbon-doped thermoplastic layer beneath the copper braid to instantly drain static charges, rendering the cable microphonically silent." },
+            { "label": "95%+ Braided Coverage", "value": "Interwoven copper strands reject broadcast radio frequencies, cellular signals, and fluorescent lighting hum in crowded clubs." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Curated Professional Guitar & Patch Cables",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Mogami Gold Instrument Cable",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The gold standard in studio and stage guitar cables, hand-assembled with high-definition Mogami 2524 cable and gold-contact Neutrik plugs.",
+          "fields": [
+            { "label": "Cable Type", "value": "Mogami 2524 high-definition instrument cable with conductive polymer sub-shield" },
+            { "label": "Capacitance", "value": "Low 39 pF/ft delivering an open, transparent, and uncolored frequency spectrum" },
+            { "label": "Connectors", "value": "Heavy-duty gold-contact Neutrik 1/4\" straight and right-angle plugs with chuck strain relief" },
+            { "label": "Ideal For", "value": "Studio tracking, professional touring rigs, and discerning players seeking absolute clarity" }
+          ]
+        },
+        {
+          "title": "Planet Waves American Stage",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Engineered and manufactured in the USA for extreme touring durability and transparent tone transmission.",
+          "fields": [
+            { "label": "Capacitance", "value": "Low 28 pF/ft capacitance preserving sweet top-end sparkle and pick dynamics" },
+            { "label": "Geo-Tip Plug", "value": "Patented Neutrik-engineered tip geometry providing a secure, rattle-free mechanical grip in any jack" },
+            { "label": "In-Line Solder Joint", "value": "360-degree helicoil solder joints with lifetime replacement guarantee" },
+            { "label": "Ideal For", "value": "Everyday gigging guitarists, road tours, and high-energy stage performances" }
+          ]
+        },
+        {
+          "title": "Ernie Ball Instrument Cable",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "High-quality, flexible, and tangle-resistant instrument cables available in road-ready braided fabric jackets.",
+          "fields": [
+            { "label": "Braided Jacket", "value": "Durable exterior braided cloth jacket that prevents kinks, tangles, and stage snags" },
+            { "label": "Dual Shielding", "value": "99.95% oxygen-free copper conductor with dual-shielded noise rejection" },
+            { "label": "Connectors", "value": "Heavy-duty metal shell jacks with molded strain relief" },
+            { "label": "Ideal For", "value": "Gigging musicians seeking tangle-free stage handling and stylish aesthetics" }
+          ]
+        },
+        {
+          "title": "Hosa Pro Guitar Cable",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Rugged, tour-grade reliability featuring genuine REAN by Neutrik nickel-plated plugs at an exceptional value.",
+          "fields": [
+            { "label": "Conductor", "value": "20 AWG Oxygen-Free Copper center core delivering robust signal strength" },
+            { "label": "Shielding", "value": "90% OFC spiral shield backed by conductive PVC to eliminate handling noise" },
+            { "label": "Connectors", "value": "Heavy-duty REAN by Neutrik metal plugs with rugged internal strain relief" },
+            { "label": "Ideal For", "value": "Reliable everyday rehearsal, home studio tracking, and road backup use" }
+          ]
+        },
+        {
+          "title": "George L's .155 Cable",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The legendary pioneer of custom-length solderless pedalboard patch cables and ultra-low capacitance.",
+          "fields": [
+            { "label": "Capacitance", "value": "Ultra-low 18 pF/ft—one of the brightest, most transparent cables ever engineered" },
+            { "label": "Solderless Assembly", "value": "Cut cable to exact length with scissors, insert into plug, and screw down cap for an instant connection" },
+            { "label": "Footprint", "value": "Tiny right-angle plugs and slim .155\" cable maximizing tight pedalboard layouts" },
+            { "label": "Ideal For", "value": "Pedalboard builders demanding custom routing and pristine high-frequency chime" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cable Reliability, Buffering & Stage Protocol",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Active Buffer Pedal Solution",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "How a dedicated buffer pedal permanently eliminates cable capacitance tone loss.",
+          "fields": [
+            { "label": "The Impedance Conversion", "value": "An active buffer (such as the Bonafide buffer inside a PolyTune 3 or dedicated buffer pedal) converts your guitar's fragile $10\\text{ k}\\Omega$ high-impedance signal into a robust $100\\ \\Omega$ low-impedance line." },
+            { "label": "Zero Treble Loss", "value": "Once buffered to low impedance, cable capacitance has zero audible effect on the frequency spectrum: you can run 50 feet of cable to your amp with zero loss of sparkle or dynamics." },
+            { "label": "Placement", "value": "Place an active buffer first in your pedalboard chain (unless using vintage fuzz pedals like the Fuzz Face, which require direct passive pickup impedance)." }
+          ]
+        },
+        {
+          "title": "Stage Cable Discipline & Maintenance",
           "bgColor": "bg-green-50",
-          "items": [
-            "Neutrik: Professional standard, very reliable",
-            "Switchcraft: USA made, excellent quality",
-            "Amphenol: Military grade, extremely durable",
-            "G&H: Vintage-style, good quality"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Cable Length & Signal Loss",
-      "bgColor": "bg-orange-50",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Short Cables (6-12 ft)",
-          "items": [
-            "Pros: Best tone preservation",
-            "Pros: Lower capacitance",
-            "Cons: Limited movement",
-            "Best for: Studio, seated playing"
-          ]
-        },
-        {
-          "title": "Medium Cables (15-20 ft)",
-          "items": [
-            "Pros: Good balance of tone/mobility",
-            "Pros: Adequate movement range",
-            "Cons: Slight signal loss",
-            "Best for: Most live situations"
-          ]
-        },
-        {
-          "title": "Long Cables (25+ ft)",
-          "items": [
-            "Pros: Maximum stage mobility",
-            "Cons: Noticeable signal loss",
-            "Cons: Higher capacitance",
-            "Best for: Large stages, wireless backup"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Professional Cable Brands",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Monster Cable - Rock Series",
-          "description": "Monster built its reputation in the 1980s on heavy internal insulation and thick conductors, marketed on the idea that thicker construction meant better tone. The build is genuinely rugged and holds up well to touring abuse, though independent listening tests have generally found the audible difference between well-shielded cables of similar gauge to be smaller than the marketing implies."
-        },
-        {
-          "title": "George L's - Custom Cables",
-          "description": "George L's uses a solderless connector system that clamps directly onto bare cable rather than requiring a soldered joint, letting players build and resize their own pedalboard cables in minutes without a soldering iron. The cable itself is intentionally low-capacitance, which helps preserve top end even when a dozen short patch connections are stacked in series across a board, a big reason it became a default choice for touring techs who need to rewire a rig fast."
-        },
-        {
-          "title": "Mogami - 2524",
-          "description": "Mogami's 2524 is one of the most widely used cables in professional studios because its shielding rejects interference in rooms full of computer monitors and lighting dimmers without the stiffness that heavier-shielded cables often have. Its reputation as a studio standard comes less from any single dramatic tone claim and more from decades of consistently quiet performance across countless sessions."
-        },
-        {
-          "title": "Planet Waves - American Stage",
-          "description": "American Stage cables ship with a lifetime warranty and heavier-gauge internal wiring aimed specifically at touring use, where a cable gets coiled, stepped on, and packed into a road case hundreds of times a year. For a working musician, a warranty that holds up to that kind of abuse indefinitely can matter more than any marginal tone difference between comparable cables."
-        }
-      ]
-    },
-    {
-      "title": "Cable Management & Care",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Proper Storage",
-          "bgColor": "bg-teal-50",
-          "items": [
-            "Over-Under Wrapping: Prevents cable memory",
-            "Loose Coiling: Avoid tight wraps",
-            "Cable Bags: Protect from damage",
-            "Separate Storage: Keep power and audio apart",
-            "Label Cables: Identify length and purpose"
-          ]
-        },
-        {
-          "title": "Live Performance Tips",
-          "bgColor": "bg-indigo-50",
-          "items": [
-            "Cable Routing: Away from foot traffic",
-            "Tape Down: Secure at critical points",
-            "Backup Cables: Always have spares",
-            "Quick Check: Test before every show",
-            "Easy Access: Keep backups accessible"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Cable Troubleshooting",
-      "bgColor": "bg-red-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Intermittent Signal",
-          "items": [
-            "Check plug connection quality",
-            "Clean jack contacts",
-            "Test cable with different gear",
-            "Look for internal breaks"
-          ]
-        },
-        {
-          "title": "Noise & Crackling",
-          "items": [
-            "Check for damaged shielding",
-            "Ensure proper grounding",
-            "Keep away from power sources",
-            "Replace if shield is compromised"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Choosing the Right Cable",
-      "bgColor": "bg-yellow-50",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Budget Guidelines",
-          "items": [
-            "$15-30: Basic quality cables",
-            "$30-60: Good performance cables",
-            "$60-100+: Professional grade",
-            "Investment: Buy quality once"
-          ]
-        },
-        {
-          "title": "Length Planning",
-          "items": [
-            "Measure your typical setup",
-            "Add 3-4 feet for movement",
-            "Consider multiple lengths",
-            "Don't buy longer than needed"
-          ]
-        },
-        {
-          "title": "Quality Indicators",
-          "items": [
-            "Lifetime warranty coverage",
-            "Quality connector brands",
-            "Proper shielding specs",
-            "Professional endorsements"
+          "borderColor": "border-green-200",
+          "description": "Preventing accidental disconnects and extending cable lifespan for decades.",
+          "fields": [
+            { "label": "The Strap Loop Trick", "value": "Always thread your guitar cable up between your guitar body and strap before plugging into the guitar jack. If you accidentally step on your cable on stage, the force pulls against the leather strap rather than yanking the plug out of the guitar jack." },
+            { "label": "Cleaning Jack Contacts", "value": "Guitar jacks and cable plugs collect oxidation and grease. Clean plugs and female jacks every few months using DeoxIT D5 contact cleaner to eliminate crackles and dropouts." },
+            { "label": "Over-Under Coiling", "value": "Always coil cables using the over-under method. Never wrap around your elbow, which twists and fractures the copper braided shield." }
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Pickup impedance, scale length tension & tone controls",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Straps",
+      "href": "/lessons/gear/accessories/straps",
+      "description": "Ergonomics, weight distribution & mechanical strap locks",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Tuners",
+      "href": "/lessons/gear/accessories/tuners",
+      "description": "Pedalboard buffers, strobe accuracy & sweetened tuning",
+      "bgColor": "bg-white"
+    }
+  ]
 }

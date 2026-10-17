@@ -1,351 +1,422 @@
 {
   "slug": "accessories-slides",
   "category": "accessories",
-  "pageTitle": "Guitar Slides",
-  "subtitle": "From the Delta blues to modern rock, slides have shaped the voice of guitar for over a century. Discover the materials, techniques, and traditions that make slide guitar so expressive.",
+  "pageTitle": "Guitar Slides: Acoustic Impedance, Material Science & Microtonal Intonation",
+  "subtitle": "Master material resonance across Pyrex, brass, steel, and ceramic, boundary reflection physics, finger selection, action elevation, and muting mechanics",
   "heroGradient": "bg-gradient-to-r from-amber-50 to-orange-50",
   "backLink": {
     "href": "/lessons/gear/accessories",
     "label": "Back to Accessories"
   },
   "introduction": {
-    "title": "The Magic of Slide Guitar",
-    "text": "Slide playing developed in the African-American communities of the early 20th-century South, where guitarists without money for formal instruction or specialized equipment improvised with whatever glass or metal was on hand, a pocketknife, a bottleneck, a length of pipe. What made it stick wasn't necessity alone: sliding a hard object along the string lets a guitarist glide continuously between pitches the way a human voice or a fiddle bends a note, something fretted playing simply can't do, since a fretted note is locked to a fixed pitch the instant your finger lands. That vocal quality is why the technique became the backbone of Delta blues expression and later spread into country, rock, and beyond.",
+    "title": "The Slide: An Unbounded, Continuous Pitch Interface",
+    "text": "The guitar slide transforms a discrete, equal-tempered instrument into a continuous, fretless acoustic resonator. Born from African-American blues innovators in the Mississippi Delta—who adapted pocketknives, medicine bottles, and brass tubing onto the frets—the slide removes physical contact between string and fret wire. Instead of quantizing pitches into 12 semitones per octave, the slide introduces an infinite microtonal frequency continuum. By functioning as a mobile nut with unique acoustic impedance, the slide couples mass directly to string vibrations, shaping harmonic decay, sustain, attack envelope, and vocal timbre.",
+    "quote": "A fretted note is a quantized agreement with equal temperament; a slide is the unfettered human voice, riding the raw acoustic impedance of the string.",
     "columns": [
       {
-        "title": "Expressive Qualities",
-        "text": "Because the slide isn't locked into fret positions, it can move continuously through every pitch between two notes rather than jumping between them, which lets a guitarist bend, moan, and cry in a way that mimics vocal inflection far more directly than fretted bends can. That same freedom opens up microtones and rich, ringing harmonics that don't exist anywhere on the fretted neck, part of why slide playing is often described as the guitar's closest approximation of a human voice."
+        "title": "Acoustic Impedance & Boundary Reflection",
+        "text": "When a vibrating string strikes a slide, the wave reflection coefficient $R = \\frac{Z_2 - Z_1}{Z_2 + Z_1}$ is governed by the boundary acoustic impedance $Z = \\rho \\cdot c$ (density $\\rho$, speed of sound $c$). A heavy bell brass slide ($8.5\\text{ g/cm}^3$) forms an extremely rigid, high-impedance boundary that reflects vibrational energy back into the string, producing massive kinetic sustain and dark fundamental resonance. In contrast, lightweight borosilicate Pyrex glass ($2.23\\text{ g/cm}^3$) yields higher compliance, absorbing subtle high-frequency spikes and producing a smooth, vocal, singing top-end."
       },
       {
-        "title": "Musical Applications",
-        "text": "Slide's vocal, gliding character is what made it the signature sound of Delta and Chicago blues, and it carried directly into country music through the pedal steel guitar, an instrument built entirely around the same sliding principle. Rock guitarists later adopted it for a rawer, more aggressive edge, while its use in Indian classical and Hawaiian music, both traditions with their own much older histories of sliding techniques, shows the same physical idea, a smooth object gliding over a string, arising independently across very different musical cultures."
+        "title": "Fret Crown Alignment & Damping Physics",
+        "text": "Unlike conventional fretting where the finger presses behind the fret wire, a slide must be balanced directly over the center of the fret crown. Because the slide rests lightly on the string without pressing it down to the fretboard, string height ($h_{\\text{action}} \\ge 3.0\\text{ mm}$) and trailing finger damping are vital. Without fleshy trailing fingers muting the rear string segment between the slide and the headstock nut, sympathetic parasitic vibrations produce harsh microtonal dissonance."
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Guitar Slides",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Glass Slides",
-          "description": "Glass is hard and dense enough to sustain a note well but lighter than metal, which gives it a brighter, more transparent tone that lets the guitar's own overtones come through rather than being colored by the slide material itself. That same hardness means a smooth glass surface glides very easily over the string, though it's also the material most likely to chip or shatter if dropped on a hard stage floor.",
-          "fields": [
-            { "label": "Price Range", "value": "$10-50" },
-            { "label": "Pros", "value": "Pure tone, smooth action, durable, no metal taste" },
-            { "label": "Cons", "value": "Can break, less mass, slippery when new, cold feel" },
-            { "label": "Best For", "value": "Recording, clean tones, precise intonation, studio work" }
-          ]
-        },
-        {
-          "title": "Metal Slides",
-          "description": "Metal's extra mass compared to glass drives the string harder and sustains longer, producing the thicker, more aggressive tone that's become standard in electric blues and rock slide playing. That density comes at a cost in feel: a heavier slide is more fatiguing over a long set, and the harder surface picks up more audible clack and noise against the frets than glass does.",
-          "fields": [
-            { "label": "Price Range", "value": "$15-80" },
-            { "label": "Pros", "value": "Great sustain, powerful tone, nearly indestructible, good mass" },
-            { "label": "Cons", "value": "String wear, noise when moving, can sound harsh, temperature sensitive" },
-            { "label": "Best For", "value": "Blues, rock, aggressive playing, live performance" }
-          ]
-        },
-        {
-          "title": "Ceramic Slides",
-          "description": "Fired ceramic sits tonally between glass and metal, dense enough for reasonable sustain but without metal's harder edge, which is why players who find glass too thin and metal too harsh often land on ceramic as a middle ground. Because each one is shaped and fired individually, quality and exact tone vary more piece to piece than with mass-produced glass or metal slides.",
-          "fields": [
-            { "label": "Price Range", "value": "$15-40" },
-            { "label": "Pros", "value": "Unique tone, comfortable, artistic options, good compromise" },
-            { "label": "Cons", "value": "Can chip, limited availability, variable quality, harder to find" },
-            { "label": "Best For", "value": "All-around playing, comfort seekers, unique sound preferences" }
-          ]
-        },
-        {
-          "title": "Vintage Bottles",
-          "description": "Early blues players genuinely used the necks of medicine and Coricidin bottles because that's what was available, not because the glass had any special tonal property, which is why the appeal today is mostly historical rather than sonic: playing a slide cut from an actual old bottle connects directly to that original, improvised tradition. The trade-off is real inconsistency, wall thickness, shape, and weight vary from bottle to bottle in ways a manufactured slide never does.",
-          "fields": [
-            { "label": "Price Range", "value": "$20-100+ (collectible)" },
-            { "label": "Pros", "value": "Authentic vintage sound, historical connection, unique character, cool factor" },
-            { "label": "Cons", "value": "Hard to find, variable quality, may break, inconsistent" },
-            { "label": "Best For", "value": "Blues purists, collectors, vintage tone seekers, recording character" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Slide Sizing & Fit",
-      "bgColor": "bg-yellow-50",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Small (19-22mm)",
-          "description": "Worn on the pinky or ring finger, a small slide leaves the most fingers free to fret and mute simultaneously, which is exactly why players who mix slide licks into otherwise normal fretted playing tend to prefer this size over a larger one.",
-          "fields": [
-            { "label": "Best For", "value": "Fast playing, complex chord work, fingerpicking combinations" }
-          ]
-        },
-        {
-          "title": "Medium (22-25mm)",
-          "description": "A medium slide on the ring or middle finger balances control against reach, covering the strings solidly without sacrificing as much fretting-hand mobility as a slide worn further up toward the palm, which is why it's the size most players reach for by default.",
-          "fields": [
-            { "label": "Best For", "value": "General slide playing, most common choice, versatile use" }
-          ]
-        },
-        {
-          "title": "Large (25-28mm)",
-          "description": "Worn on the middle or index finger, a large slide covers more of the finger and adds mass, which deepens sustain and power on single-note lines but leaves fewer fingers available for fretting behind it, a trade-off suited to players whose slide parts don't need to interweave with fretted notes.",
-          "fields": [
-            { "label": "Best For", "value": "Heavy tone, powerful sound, single-note lines" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Fit & Measurement Tips",
+      "title": "Material Resonance & Acoustic Density",
+      "subtitle": "How molecular density, mass, and hardness dictate high-frequency sparkle, warm low-end grunt, and mechanical drag",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Fit Guidelines",
-          "bgColor": "bg-teal-50",
-          "items": [
-            "Snug but not tight: Should slide on easily",
-            "No finger pinching: Comfortable for extended play",
-            "Secure positioning: Won't slip during playing",
-            "Natural finger curve: Follows finger contour",
-            "Length consideration: Covers string width adequately",
-            "Weight balance: Comfortable for your playing style"
+          "title": "Borosilicate Pyrex & Coricidin Medicine Bottles",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "The quintessential blues and Southern rock standard popularized by Duane Allman and Derek Trucks.",
+          "fields": [
+            { "label": "Density & Mass", "value": "2.23 g/cm³; low-to-medium mass with ultra-smooth surface smoothness." },
+            { "label": "Acoustic Timbre", "value": "Warm, transparent, and singing with rolled-off string scratch and sweet vocal mid-range presence." },
+            { "label": "Dynamic Touch", "value": "Requires delicate hand control to prevent bottoming out against frets; minimal friction drag across nickel and bronze wraps." },
+            { "label": "Iconic Lineage", "value": "Vintage cold medicine bottles (Coricidin) featured a distinctive hollow lip and closed-end design that concentrated mass at the fingertip." }
           ]
         },
         {
-          "title": "Measurement Tips",
-          "bgColor": "bg-indigo-50",
-          "items": [
-            "String method: Wrap string around finger",
-            "Ring sizer: Use jewelry tools",
-            "Try before buying: Test at music stores",
-            "Consider swelling: Fingers change size",
-            "Multiple slides: Different sizes for different uses",
-            "Break-in period: Allow time to adjust"
+          "title": "Bell Brass & Marine Bronze Alloys",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "High-density metallic alloy engineered for authoritative sustain, raw power, and aggressive Delta growl.",
+          "fields": [
+            { "label": "Density & Mass", "value": "8.40–8.75 g/cm³; heavy inertial mass providing maximum acoustic coupling." },
+            { "label": "Acoustic Timbre", "value": "Fat, punchy low-mids with a biting, gritty attack that cuts through dense rock band mixes and acoustic resonator cones." },
+            { "label": "Sustain Physics", "value": "Massive kinetic momentum keeps strings oscillating through long vibrato tails without premature decay." },
+            { "label": "Ideal For", "value": "Electric blues, heavy Southern rock, National steel resonator guitars, and drop-tuned slide riffs." }
+          ]
+        },
+        {
+          "title": "Chrome-Plated Steel & Hardened Stainless Steel",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "Ultra-hard, reflective metal delivering blinding high-frequency attack, modern snap, and industrial resilience.",
+          "fields": [
+            { "label": "Density & Hardness", "value": "7.85 g/cm³; Mohs hardness 6.5–7.0 with mirror-polished industrial chrome plating." },
+            { "label": "Acoustic Timbre", "value": "Piercing, bright high-end transient attack with prominent acoustic zing and immediate string articulation." },
+            { "label": "Wear Characteristics", "value": "Virtually indestructible; will not chip, crack, or corrode when dropped on concrete or soaked in sweat." },
+            { "label": "Ideal For", "value": "Lap steel, country chicken-pickin' slide, hard rock leads, and low-output vintage single-coil pickups." }
+          ]
+        },
+        {
+          "title": "Slip-Cast Ceramic & Glazed Porcelain",
+          "bgColor": "bg-emerald-50",
+          "borderColor": "border-emerald-200",
+          "description": "Advanced fired clay composites combining the warm resonance of glass with the structural density of metal.",
+          "fields": [
+            { "label": "Density & Texture", "value": "2.40–3.00 g/cm³; glazed exterior for frictionless gliding with a porous interior that absorbs finger moisture." },
+            { "label": "Acoustic Timbre", "value": "Rich, multi-layered acoustic voice balancing glassy clarity with rich, woody acoustic midrange overtones." },
+            { "label": "Ergonomics", "value": "Interior unglazed surface creates capillary absorption, eliminating finger slippage during extended, sweaty performances." },
+            { "label": "Ideal For", "value": "Acoustic fingerstyle slide, studio tracking, roots Americana, and players allergic to nickel or brass." }
           ]
         }
       ]
     },
     {
-      "title": "Open Tunings for Slide Guitar",
-      "layout": "list",
+      "title": "Slide Specifications & Performance Matrix",
+      "subtitle": "Comparative analysis of acoustic density, harmonic decay, and mechanical playing properties",
+      "bgColor": "bg-white",
+      "layout": "table",
+      "tableHeaders": [
+        "Slide Material",
+        "Acoustic Density",
+        "Harmonic Character",
+        "Sustain Rating",
+        "Mechanical Drag",
+        "Primary Application"
+      ],
+      "tableRows": [
+        [
+          "Pyrex / Borosilicate Glass",
+          "2.23 g/cm³",
+          "Warm, sweet, vocal mids, smooth top",
+          "Medium (7/10)",
+          "Extremely Low (Silky)",
+          "Electric Blues, Studio Lead, Duane Allman Style"
+        ],
+        [
+          "Heavy Bell Brass",
+          "8.50 g/cm³",
+          "Dense low-mids, punchy fundamental, gritty bite",
+          "Maximum (10/10)",
+          "Low-Medium (Slight bite)",
+          "Delta Acoustic, Resonator, Southern Rock"
+        ],
+        [
+          "Stainless / Chrome Steel",
+          "7.85 g/cm³",
+          "Crystalline attack, bright upper harmonics, cutting snap",
+          "High (9/10)",
+          "Very Low (Slick)",
+          "Lap Steel, Modern Rock, Country, Dark Pickups"
+        ],
+        [
+          "Fired Porcelain Ceramic",
+          "2.60 g/cm³",
+          "Earthy, organic, balanced acoustic chime",
+          "Medium-High (8/10)",
+          "Low (Controlled)",
+          "Acoustic Fingerstyle, Roots Americana, Jazz"
+        ],
+        [
+          "Coricidin Cold Medicine Bottle",
+          "2.25 g/cm³",
+          "Singing, fluty highs, delicate micro-intonation",
+          "Medium (7.5/10)",
+          "Ultra-Low (Seamless lip)",
+          "Vintage Allman Brothers, Derek Trucks Precision"
+        ]
+      ]
+    },
+    {
+      "title": "Finger Selection & Biomechanical Ergonomics",
+      "subtitle": "Choosing the optimal fretting finger to balance slide control against chordal independence",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Open E (E-B-E-G#-B-E)",
-          "description": "Tuning the open strings to a full E major chord means a straight bar across any single fret produces a clean major chord with no fretting hand needed at all, which is exactly why it's the easiest open tuning for a beginner to get musical results from immediately.",
+          "title": "Ring Finger (3rd Finger)",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "The golden standard for dedicated electric slide soloing (Duane Allman, Derek Trucks, Warren Haynes).",
           "fields": [
-            { "label": "Famous Users", "value": "Duane Allman, Derek Trucks" }
-          ],
+            { "label": "Vibrato Leverage", "value": "Provides maximum wrist stability, allowing fluid, vocal microtonal vibrato without forearm strain." },
+            { "label": "Damping Advantage", "value": "Leaves the index and middle fingers completely free behind the slide to execute continuous, fleshy string damping." },
+            { "label": "Chordal Trade-off", "value": "Severely limits complex standard chord fretting; strictly optimized for melodic, singing single-note phrasing." }
+          ]
+        },
+        {
+          "title": "Pinky Finger (4th Finger)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "The versatile hybrid master choice (Sonny Landreth, Robert Johnson, Bonnie Raitt, Rory Gallagher).",
+          "fields": [
+            { "label": "Full Hand Independence", "value": "Frees the 1st, 2nd, and 3rd fingers to fret complete chords, minor 7ths, and bass walking lines ahead of the slide." },
+            { "label": "Sonny Landreth Technique", "value": "Unlocks behind-the-slide chord fretting, pressing strings down behind the slide to create polyphonic chord melodies." },
+            { "label": "Mechanical Challenge", "value": "Demands high pinky tendon strength and precision to control heavy brass slides without knuckle fatigue." }
+          ]
+        },
+        {
+          "title": "Middle Finger (2nd Finger)",
+          "bgColor": "bg-purple-50",
+          "borderColor": "border-purple-200",
+          "description": "The heavyweight acoustic leverage choice (Bonnie Raitt alternate, Gary Clark Jr., Muddy Waters).",
+          "fields": [
+            { "label": "Massive Clamping Force", "value": "Anchors heavy brass or thick ceramic slides effortlessly; perfect for heavy gauge acoustic resonator strings." },
+            { "label": "Index Damping", "value": "Leaves the index finger resting flat across all strings behind the slide for pristine, click-free muting." },
+            { "label": "Playing Feel", "value": "Intuitive pointing sensation that aids intonation targeting on unfamiliar scale lengths and high fretboards." }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Action, String Tension & Guitar Setup for Slide",
+      "subtitle": "Calibrating mechanical clearance, string gauges, and nut height to prevent fret clatter",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Action Height Calibration ($h \\ge 3.0\\text{ mm}$)",
+          "bgColor": "bg-red-50",
+          "borderColor": "border-red-200",
+          "description": "Standard low electric action ($1.5\\text{ mm}$) causes the slide to drive strings into the fret wire, ruining intonation.",
           "items": [
-            "Easy major chords",
-            "Natural fingering",
-            "Great for beginners"
+            "Set 12th-fret action to 3.0–4.0 mm for hybrid slide/fretted playing",
+            "Dedicated slide guitars benefit from 4.0–5.5 mm action height",
+            "Raise bridge saddles to flatten the string radius across middle strings",
+            "Install a taller bone nut or slide extension riser nut for lap playing",
+            "Maintain slight neck relief (0.012–0.015 inch) to prevent lower-fret buzz"
+          ]
+        },
+        {
+          "title": "Heavy String Gauges & String Tension ($T$)",
+          "bgColor": "bg-green-50",
+          "borderColor": "border-green-200",
+          "description": "String tension formula $T = 4 m f^2 L^2$ proves heavier mass ($m$) resists lateral downward deflection under slide weight.",
+          "items": [
+            "Minimum recommended gauge: .011–.050 for electric slide in standard tuning",
+            "Open D/G tunings require .012–.054 or .013–.056 sets to compensate for slacked tension",
+            "A stiff high E string (.012 or .013) prevents the slide from collapsing onto frets 1–5",
+            "Heavier core wire delivers massive acoustic volume and rich fundamental warmth",
+            "Tune slowly and check neck relief when switching to heavy slide gauges"
+          ]
+        },
+        {
+          "title": "Roundwound vs Flatwound & Friction Noise",
+          "bgColor": "bg-cyan-50",
+          "borderColor": "border-cyan-200",
+          "description": "The physical texture of the string wrap directly interacts with the slide perimeter.",
+          "items": [
+            "Roundwound strings deliver bright acoustic harmonics but produce audible 'zipper' scrape",
+            "Flatwound (ribbon-wound) strings eliminate slide friction noise completely",
+            "Flatwounds provide a dark, warm, smoky vintage Chicago blues jazz tone",
+            "Semi-flat / Groundwound strings offer a balanced middle ground with bright chime",
+            "Wipe strings with mineral oil or fast-fret lubricant to reduce surface drag"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Open Tunings & Harmonic Architecture",
+      "subtitle": "Unlocking full chordal triads, pedal bass drones, and signature blues positions across the neck",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
+      "cards": [
+        {
+          "title": "Open D (D-A-D-F#-A-D)",
+          "bgColor": "bg-amber-50",
+          "borderColor": "border-amber-200",
+          "description": "The deep, mournful root-5th-root-3rd-5th-root tuning of the Delta blues.",
+          "fields": [
+            { "label": "Chord Voicing", "value": "Major triad across all 6 strings; full step drop on strings 1, 2, and 6." },
+            { "label": "Acoustic Tone", "value": "Thundering low-end drone resonance with low string tension for expressive vibrato." },
+            { "label": "Famous Practitioners", "value": "Elmore James ('Dust My Broom'), Ry Cooder, Kelly Joe Phelps, Blind Willie Johnson." }
           ]
         },
         {
           "title": "Open G (D-G-D-G-B-D)",
-          "description": "Dropping to open G lowers the overall tension and pitch of a full chord across all six strings, giving it a deeper, looser voice than open E while keeping the same one-finger-bar simplicity, which is why it became the foundation of both Delta blues slide and, later, Keith Richards's five-string rhythm style.",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "The 'Spanish Tuning' foundation of Delta blues and 5-string Rolling Stones rock.",
           "fields": [
-            { "label": "Famous Users", "value": "Keith Richards, Robert Johnson" }
-          ],
-          "items": [
-            "Full, rich sound",
-            "Great for rhythm",
-            "Classic blues tuning"
+            { "label": "Chord Voicing", "value": "Root triad centered on strings 5, 4, 3, 2, 1 (root on 5th string G)." },
+            { "label": "Dobro Heritage", "value": "Standard tuning relative for bluegrass resonator dobro (G-B-D-G-B-D)." },
+            { "label": "Famous Practitioners", "value": "Robert Johnson ('Cross Road Blues'), Muddy Waters, Keith Richards, Bonnie Raitt." }
           ]
         },
         {
-          "title": "Open D (D-A-D-F#-A-D)",
-          "description": "Open D shares its interval structure with open E a whole step lower, which drops the overall tension enough to give the bass strings a noticeably deeper, more resonant growl, a big part of why it's favored for heavier, bass-driven slide parts.",
-          "fields": [
-            { "label": "Famous Users", "value": "Joni Mitchell, Ry Cooder" }
-          ],
-          "items": [
-            "Strong bass response",
-            "Unique voicings",
-            "Powerful sound"
-          ]
-        },
-        {
-          "title": "Standard Tuning",
-          "description": "Playing slide in standard tuning means giving up the free, ringing open chord that alternate tunings hand you, so you have to work out chord voicings and target notes deliberately rather than leaning on the tuning itself, which is why it's considered the hardest approach even though it's the most convenient, no retuning between slide and regular playing.",
-          "fields": [
-            { "label": "Famous Users", "value": "Sonny Landreth, George Harrison" }
-          ],
-          "items": [
-            "No retuning needed",
-            "Mix slide with regular playing",
-            "Familiar fingerings"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Slide Players",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Duane Allman",
-          "description": "Allman famously played an empty Coricidin cold-medicine bottle on his ring finger, a piece of blues-tradition improvisation that stuck even after he could afford a purpose-built slide. Playing in open E, he built melodic, vocal-like lines rather than the rawer rhythmic slide common in Delta blues, which helped bring slide guitar into a mainstream rock context.",
-          "fields": [
-            { "label": "Signature", "value": "Smooth, singing tone with precise intonation" }
-          ]
-        },
-        {
-          "title": "Derek Trucks",
-          "description": "Trucks plays a glass slide in open E and has cited Indian classical music, particularly its use of continuous pitch bending, as a major influence on his phrasing, which shows up as an unusually smooth, vocal quality that avoids the string noise and hard note transitions common in rock slide playing.",
-          "fields": [
-            { "label": "Signature", "value": "Extremely smooth technique, wide, controlled vibrato" }
-          ]
-        },
-        {
-          "title": "Bonnie Raitt",
-          "description": "Raitt plays slide almost entirely in open tunings, most often open A and its close relative open G, wearing her glass slide on her middle finger so her other fingers stay free to fret chords and riffs around it. That combination lets her move fluidly between slide lines and regular fingerstyle playing within the same song, rather than treating slide as a separate, isolated technique.",
-          "fields": [
-            { "label": "Signature", "value": "Blends slide fluidly with fingerstyle chord work" }
-          ]
-        },
-        {
-          "title": "Joe Walsh",
-          "description": "Walsh paired glass-slide playing with a talk box on tracks like \"Rocky Mountain Way,\" stacking two pitch-bending techniques, one mechanical, one vocal-tract-shaped, into a single, distinctively vocal-sounding lead tone that became one of classic rock's signature slide sounds.",
-          "fields": [
-            { "label": "Signature", "value": "Aggressive slide combined with talk-box effects" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Slide Technique Fundamentals",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Basic Technique",
+          "title": "Open E (E-B-E-G#-B-E)",
           "bgColor": "bg-orange-50",
-          "items": [
-            "Light Touch: Barely touch strings, don't press",
-            "Fret Position: Play directly over frets, not between",
-            "Straight Angle: Keep slide perpendicular to strings",
-            "Muting: Use other fingers to stop unwanted noise",
-            "Vibrato: Small movements for expression",
-            "Clean Slides: Smooth transitions between notes"
+          "borderColor": "border-orange-200",
+          "description": "High-tension, explosive Southern rock tuning identical in intervals to Open D raised one whole step.",
+          "fields": [
+            { "label": "Chord Voicing", "value": "High mechanical tension produces blistering acoustic volume and immediate transient bite." },
+            { "label": "Lead Phrasing", "value": "Perfect for high-register scream and singing, violin-like sustain on electric guitars." },
+            { "label": "Famous Practitioners", "value": "Duane Allman ('Statesboro Blues'), Derek Trucks (plays Open E exclusively)." }
           ]
         },
         {
-          "title": "Common Mistakes",
-          "bgColor": "bg-red-50",
-          "items": [
-            "Pressing too hard: Causes fret buzz and poor intonation",
-            "Wrong positioning: Behind frets causes flat notes",
-            "No muting: Allows unwanted string noise",
-            "Rushed slides: Not allowing notes to ring properly",
-            "Poor string action: Too low causes problems",
-            "Wrong finger: Uncomfortable or unstable positioning"
+          "title": "Standard Tuning (E-A-D-G-B-E)",
+          "bgColor": "bg-blue-50",
+          "borderColor": "border-blue-200",
+          "description": "The ultimate versatility approach: integrating slide phrases seamlessly without changing guitars.",
+          "fields": [
+            { "label": "Target Triads", "value": "Strings 2-3-4 form a minor triad; strings 1-2-3 form major 6th/inversions; angle slide for major triads." },
+            { "label": "Technical Demands", "value": "Demands surgical right-hand pick muting to isolate single strings and avoid dissonance." },
+            { "label": "Famous Practitioners", "value": "Jeff Beck, Sonny Landreth, George Harrison, Warren Haynes." }
           ]
         }
       ]
     },
     {
-      "title": "Guitar Setup for Slide Playing",
-      "bgColor": "bg-blue-50",
+      "title": "Curated Professional Guitar Slides",
+      "subtitle": "Industry-standard slides tested for resonance, durability, ergonomic balance, and professional tone",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Action Height",
-          "items": [
-            "Higher than normal action",
-            "Prevents fret buzz",
-            "Allows slide clearance",
-            "3-4mm at 12th fret typical"
+          "title": "Dunlop 222 Brass Slide",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Heavy-wall solid bell brass slide delivering thunderous sustain and warm, aggressive low-mid punch.",
+          "fields": [
+            { "label": "Material & Wall", "value": "Heavy-wall solid bell brass (Medium / Heavy options)" },
+            { "label": "Tone Character", "value": "Rich, resonant low-mids with gritty attack that drives tube preamps hard" },
+            { "label": "Sustain Profile", "value": "Maximum inertia for singing, long-lasting sustain on acoustic and electric" },
+            { "label": "Ideal For", "value": "Delta blues, Southern rock, National steel resonators, and drop tunings" }
           ]
         },
         {
-          "title": "String Gauge",
-          "items": [
-            "Medium to heavy gauge",
-            "Better sustain and tone",
-            "Maintains tuning stability",
-            ".012-.054 or heavier"
+          "title": "Dunlop 202 Pyrex Glass Slide",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "The quintessential lightweight borosilicate glass slide offering warm, vocal highs and effortless glide.",
+          "fields": [
+            { "label": "Material & Wall", "value": "Borosilicate Pyrex glass; medium wall thickness" },
+            { "label": "Tone Character", "value": "Sweet, silky vocal high-end with zero string scratching or metallic rasp" },
+            { "label": "Handling", "value": "Lightweight for lightning-fast position shifts and delicate touch control" },
+            { "label": "Ideal For", "value": "Electric blues soloing, standard action setups, and expressive studio tracking" }
           ]
         },
         {
-          "title": "Nut & Bridge",
-          "items": [
-            "Smooth nut slots",
-            "Proper string spacing",
-            "Quality bridge/saddles",
-            "Good intonation setup"
+          "title": "Dunlop Blues Bottle Heavy Wall Glass",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Individually hand-blown glass slide replicating the weighted closed-end feel of vintage medicine bottles.",
+          "fields": [
+            { "label": "Craftsmanship", "value": "Seamless hand-blown Pyrex with weighted, closed hemispherical tip" },
+            { "label": "Weight Balance", "value": "End-weighted mass provides superior stability and acoustic string coupling" },
+            { "label": "Tone Profile", "value": "Crisp fundamental with warm, rounded treble decay and authentic blues heritage" },
+            { "label": "Ideal For", "value": "Authentic Allman-style electric blues and sweet acoustic slide melodies" }
+          ]
+        },
+        {
+          "title": "Dunlop Derek Trucks Signature Medicine Bottle Slide",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Exact replica of the classic Coricidin cold medicine bottle used by Duane Allman and Derek Trucks.",
+          "fields": [
+            { "label": "Authentic Spec", "value": "Classic Coricidin medicine bottle shape with lip and lightweight wall" },
+            { "label": "Playing Feel", "value": "Worn on the ring finger for rapid, microtonal Indian-classical-influenced phrasing" },
+            { "label": "Sonic Signature", "value": "Fluty, vocal-like chime with crystal-clear intonation and fast transient snap" },
+            { "label": "Ideal For", "value": "Open E blues, vocal emulation, and fluid modern slide virtuosity" }
+          ]
+        },
+        {
+          "title": "Rock Slide Aged Brass Guitar Slide",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Ergonomically contoured brass slide featuring a finger rest, knuckle cutaway, and tapered interior.",
+          "fields": [
+            { "label": "Ergonomic Design", "value": "Dished finger rest, knuckle relief cutaway, and tapered bore matching finger shape" },
+            { "label": "Material Finish", "value": "Individually hand-polished aged brass with dense, weighted wall" },
+            { "label": "Comfort & Grip", "value": "Eliminates finger slippage and knuckle pinch, allowing relaxed hand posture" },
+            { "label": "Ideal For", "value": "Professional touring guitarists needing all-night comfort and monster sustain" }
+          ]
+        },
+        {
+          "title": "Dunlop Moonshine Ceramic Slide",
+          "bgColor": "bg-white",
+          "borderColor": "border-gray-200",
+          "description": "Hand-crafted porcelain ceramic slide with a moisture-absorbing porous interior and slick glazed surface.",
+          "fields": [
+            { "label": "Material Science", "value": "High-fire ceramic porcelain with glassy exterior and raw absorbent interior" },
+            { "label": "Moisture Management", "value": "Absorbs finger sweat during hot live sets, locking securely onto the finger" },
+            { "label": "Tone Profile", "value": "Warm, earthy midrange resonance bridging the chime of glass and sustain of brass" },
+            { "label": "Ideal For", "value": "Acoustic fingerstyle slide, roots music, Americana, and high-sweat live gigs" }
           ]
         }
       ]
     },
     {
-      "title": "Slide Care & Maintenance",
+      "title": "Right-Hand & Left-Hand Damping Mechanics",
+      "subtitle": "The definitive techniques for silencing unwanted string vibrations, rattles, and parasitic overtones",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Cleaning & Storage",
+          "title": "Left-Hand Trailing Finger Muting",
+          "bgColor": "bg-yellow-50",
+          "borderColor": "border-yellow-200",
+          "description": "The mandatory fretting-hand technique that separates amateur slide clatter from professional tone.",
+          "fields": [
+            { "label": "The Parasitic Wave Problem", "value": "When a slide rests on a string, the string vibrates on both sides: between slide and bridge (wanted), and between slide and headstock nut (unwanted screeching dissonances)." },
+            { "label": "Trailing Flesh Placement", "value": "Lay your index and middle fingers lightly across all six strings directly behind the slide. The soft flesh acts as a complete acoustic damper for reverse standing waves." },
+            { "label": "Fret Crown Accuracy", "value": "Always place the slide precisely over the metal fret crown, never behind it in the fret space. A slide 2 mm behind the crown produces a flat, out-of-tune pitch." }
+          ]
+        },
+        {
+          "title": "Right-Hand Palm & Finger Pick Damping",
           "bgColor": "bg-green-50",
-          "items": [
-            "Regular cleaning: Remove oils and debris",
-            "Glass slides: Use glass cleaner or alcohol",
-            "Metal slides: Polish to prevent corrosion",
-            "Ceramic slides: Gentle soap and water",
-            "Safe storage: Padded containers or pouches",
-            "Travel protection: Secure during transport"
-          ]
-        },
-        {
-          "title": "Longevity Tips",
-          "bgColor": "bg-purple-50",
-          "items": [
-            "Avoid drops: Especially important for glass",
-            "Temperature care: Avoid extreme changes",
-            "String maintenance: Clean strings extend slide life",
-            "Multiple slides: Rotate use to extend life",
-            "Proper technique: Reduces wear on strings and slide",
-            "Backup slides: Always have spares available"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Choosing Your First Slide",
-      "bgColor": "bg-amber-50",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Start Simple",
-          "items": [
-            "Glass slide, medium size",
-            "Ring finger placement",
-            "Open E tuning",
-            "Medium-heavy strings",
-            "Professional setup"
-          ]
-        },
-        {
-          "title": "Budget Considerations",
-          "items": [
-            "$15-30 for quality slide",
-            "Setup costs: $50-100",
-            "String upgrade: $10-20",
-            "Total investment: $75-150",
-            "Great return on investment"
-          ]
-        },
-        {
-          "title": "Learning Resources",
-          "items": [
-            "Online tutorials",
-            "Slide guitar books",
-            "Local instructors",
-            "YouTube channels",
-            "Practice backing tracks"
+          "borderColor": "border-green-200",
+          "description": "Right-hand acoustic isolation required to play clean single-note melodies without sympathetic string roar.",
+          "fields": [
+            { "label": "Pick-and-Block Technique", "value": "Use the flesh of thumb, index, and middle fingers rather than a flatpick. Pluck target strings with the thumb or index while resting unused fingers against neighboring strings." },
+            { "label": "Heel of Palm Anchoring", "value": "Rest the fleshy heel of the picking hand lightly across low wound strings (E, A, D) when executing singing lead lines on the treble strings." },
+            { "label": "Dynamic Vocal Vibrato", "value": "Never shake the slide across the fret laterally (like standard fretting). Oscillate the slide parallel to the neck, gliding symmetrically above and below the fret crown." }
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Electric Guitars",
+      "href": "/lessons/gear/guitars/electric",
+      "description": "Solidbody physics, pickup voicing & scale length dynamics",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Acoustic Guitars",
+      "href": "/lessons/gear/guitars/acoustic",
+      "description": "Soundboard resonance, bracing architectures & tonewoods",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Tuners",
+      "href": "/lessons/gear/accessories/tuners",
+      "description": "Equal temperament, strobe precision & sweetened tunings",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Guitar Picks",
+      "href": "/lessons/gear/accessories/picks",
+      "description": "Material science, bevel angles & kinetic string transfer",
+      "bgColor": "bg-white"
+    }
+  ]
 }
