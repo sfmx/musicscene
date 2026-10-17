@@ -1,237 +1,345 @@
 {
   "slug": "effects-distortion",
   "category": "effects",
-  "pageTitle": "Distortion Effects",
-  "subtitle": "Aggressive, heavily clipped signals that form the backbone of metal, punk, and hard rock. From vintage circuits to modern high-gain monsters.",
+  "pageTitle": "Distortion Pedals: Hard Clipping, Aggressive Saturation & Modern High-Gain",
+  "subtitle": "The sonic engine of hard rock, punk & metal — hard-clipping diodes, op-amp slew rates, tone-shaping filters & iconic stompboxes",
   "heroGradient": "bg-gradient-to-r from-red-50 to-pink-50",
   "backLink": {
     "href": "/lessons/gear/effects",
     "label": "Back to Effects Overview"
   },
   "introduction": {
-    "title": "What is Distortion?",
-    "text": "Distortion is a form of audio signal processing that intentionally alters the waveform through aggressive clipping, slicing the tops and bottoms off the signal's peaks rather than just rounding them the way an overdriven amp or overdrive pedal does. That harder clipping generates far more new harmonic content relative to the original note, which is what produces distortion's sustained, saturated character and lets a single note ring out and \"sing\" long after it would have naturally decayed. Because most distortion pedals clip aggressively regardless of exactly how hard you hit the string, they also tend to flatten out a player's touch dynamics far more than an overdrive does, trading some of that expressiveness for raw sustain and consistency.",
+    "title": "Distortion Pedals: Hard Clipping, Aggressive Saturation & Modern High-Gain",
+    "text": "Where overdrive gently nudges an amplifier into warm, touch-sensitive breakup, distortion forcefully seizes the guitar waveform and slices it flat. Unlike soft-clipping circuits that place diodes in an op-amp feedback loop, distortion circuits place clipping diodes directly to ground after an aggressive gain stage. When the boosted voltage swings past the diodes' forward conduction threshold, the waveform peaks are violently shunted to ground, transforming the guitar's natural sinusoidal waves into hard-edged, harmonically saturated trapezoids and square waves.\n\nThis aggressive hard-clipping mechanism generates a dense carpet of odd-order harmonics (3rd, 5th, and 7th harmonics) that delivers the fierce bite, near-infinite sustain, and crushing palm-muted punch demanded by hard rock, punk, grunge, and heavy metal. Furthermore, because a distortion pedal generates its heavy saturation internally regardless of input volume, it acts as an independent high-gain channel in a box—turning any crystal-clean pedal platform amplifier into a fire-breathing rock monster at any volume level.",
+    "quote": "Distortion does not ask permission from your amplifier's preamp; it forcefully shears the waveform into aggressive square waves with punishing sustain, razor-sharp palm-mute definition, and harmonically saturated lead authority.",
     "columns": [
       {
-        "title": "Characteristics",
-        "text": "Distortion pedals clip the signal hard enough that the output waveform looks close to a square wave rather than a gently rounded one, and that harder clipping is what generates the dense harmonic content responsible for a heavier, more saturated tone. Because the clipping ceiling is reached at a fairly consistent point regardless of how hard you pick, the dynamic range gets compressed in the process, notes sustain longer and chords ring with more sustain, but the difference between a soft and hard pick attack becomes far less audible than it would through a clean or lightly overdriven signal."
+        "title": "Hard Clipping to Ground",
+        "text": "How shunting voltage peaks directly to ground chops the waveform flat, generating aggressive odd-order harmonics and near-infinite sustain.",
+        "icon": "⚡"
       },
       {
-        "title": "Musical Applications",
-        "text": "That combination of heavy sustain and consistent gain is exactly why distortion became the backbone of genres built around thick, sustained power chords and long, singing lead lines, metal, hard rock, and punk all lean on a distortion's ability to make a chord ring out with weight regardless of exactly how it was struck. The same compressed dynamics that can work against expressive clean playing are an asset for rhythm parts that need to sound uniformly heavy from the first chord to the last, which is why modern rock production so often reaches for distortion rather than overdrive as the default rhythm guitar tone."
+        "title": "Op-Amp Slew Rate & Filtering",
+        "text": "The physics of slew rate (V/μs) and how chips like the legendary LM308 round off harsh transients into singing, creamy lead sustain.",
+        "icon": "🎛️"
+      },
+      {
+        "title": "Preamp-in-a-Box Rigs",
+        "text": "Turning clean combo amplifiers into 100-watt modified British high-gain stacks using multi-stage cascading JFET/op-amp pedals.",
+        "icon": "🔊"
       }
     ]
   },
   "sections": [
     {
-      "title": "Distortion vs. Overdrive",
-      "bgColor": "bg-blue-50",
+      "title": "The Engineering of Hard Clipping & Waveform Slicing",
+      "subtitle": "How diodes to ground convert clean guitar signals into high-energy harmonically saturated dirt",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Overdrive",
-          "description": "Overdrive clips the signal softly, rounding off peaks the way a tube amp does when it's pushed hard, rather than slicing them flat. Because the clipping only becomes aggressive once the input signal is loud enough to reach it, an overdrive pedal stays touch-sensitive: picking softly keeps the tone closer to clean, and digging in pushes it into breakup, which is why overdrive is usually paired with an amp that's already near its own breakup point rather than a fully clean one.",
+          "title": "Diodes to Ground vs. In-Loop Soft Clipping",
+          "description": "The crucial electronic distinction between overdrive and distortion is the physical placement of the clipping diodes. In a distortion circuit, the guitar signal first passes through a high-gain amplifier stage (op-amp or discrete transistor). The amplified signal is then passed through a pair of back-to-back diodes connected directly to ground. When the signal voltage exceeds the diodes' forward voltage threshold (~0.7V for silicon), the peaks are abruptly shunted to ground, shearing off the tops and bottoms of the wave.",
+          "bgColor": "bg-red-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Circuit Placement", "value": "Clipping diodes located after the gain stage, shunting signal peaks directly to ground" },
+            { "label": "Waveform Geometry", "value": "Hard-clipped trapezoid/square wave with sharp angular shoulders" },
+            { "label": "Harmonic Signature", "value": "Dense odd-order harmonics (3rd, 5th, 7th) creating cutting, aggressive bite" },
+            { "label": "Dynamic Response", "value": "Uniformly saturated; soft picks and hard strums produce consistent, compressed sustain" }
+          ],
           "items": [
-            "Soft, gradual clipping",
-            "Touch-sensitive dynamics",
-            "Preserves fundamental tone",
-            "Natural, amp-like saturation",
-            "Best with clean or edge-of-breakup amps",
-            "Responds to guitar volume"
+            "Provides uniform compression that makes power chords sound massive and lead lines sustain indefinitely",
+            "Operates independently of your amplifier's volume: produces arena-grade crunch at whisper bedroom loudness",
+            "Silicon diodes (like 1N4148 or 1N914) provide sharp, biting crunch; LEDs produce louder, punchier distortion"
           ]
         },
         {
-          "title": "Distortion",
-          "description": "Distortion clips the signal hard enough that the output reaches its ceiling well before the input does, which is why the same pedal sounds almost as saturated whether you're picking softly or aggressively. That consistency is a trade-off: it sacrifices some of the touch-sensitive dynamics an overdrive preserves, but it also means a distortion pedal produces a reliably heavy tone through any amp setting, clean or already breaking up, rather than depending on the amp doing part of the work.",
+          "title": "Op-Amp Slew Rate & The LM308 Magic",
+          "description": "Not all distortion is created by diodes alone; the operational amplifier chip itself profoundly colors the tone. Slew rate measures how fast an op-amp can change its output voltage in response to an instantaneous input change (measured in Volts per microsecond, V/μs). Vintage op-amps like the National Semiconductor LM308 used in early ProCo RAT pedals had an unusually slow slew rate (0.3 V/μs). When hit by rapid guitar pick transients, the chip literally cannot keep up, naturally smoothing off harsh, fizzy high-frequency spikes into creamy, singing lead sustain.",
+          "bgColor": "bg-purple-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "LM308 Slew Rate", "value": "0.3 V/μs; ultra-slow slew rate creates natural analog low-pass filtering and tube-like warmth" },
+            { "label": "Modern Op-Amps (TL071/OP07)", "value": "Faster slew rates (13 V/μs); crisp, articulate, modern high-fidelity note separation" },
+            { "label": "Filter Interaction", "value": "Pairing slow slew rate with a reverse low-pass filter eliminates harsh digital-like fizz" }
+          ],
           "items": [
-            "Hard, aggressive clipping",
-            "More consistent gain",
-            "Colors and transforms tone",
-            "Electronic, processed sound",
-            "Works with any amp setting",
-            "Less responsive to input level"
+            "Why the ProCo RAT can cover everything from subtle dirty boost to thick distortion and crushing fuzz",
+            "Allows distortion pedals to cut through cymbal crashes without sounding piercing or fatiguing to the audience",
+            "Boutique pedal builders obsessively source vintage New Old Stock (NOS) LM308 chips for this exact physical quirk"
           ]
         }
       ]
     },
     {
-      "title": "Types of Distortion Pedals",
-      "layout": "grid-2",
+      "title": "Major Distortion Circuit Archetypes",
+      "subtitle": "The three foundational circuit blueprints that power rock, grunge, and metal guitarists",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Classic Rock Distortion",
-          "description": "These pedals clip hard enough to add real sustain and grit but stop short of the extreme gain levels where individual notes in a chord start to blur together, which keeps chord voicings and single-note runs legible rather than turning into a wall of noise. That restraint is deliberate: classic rock and blues-rock riffs depend on the listener hearing where one note ends and the next begins, something extreme high-gain settings can obscure.",
+          "title": "The Hard-Clipping Op-Amp Standard",
+          "badge": { "text": "1970s Classics", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Pioneered by the MXR Distortion+ and DOD Overdrive Preamp 250 in the 1970s, and perfected by the Boss DS-1 in 1978. Uses a single high-gain op-amp driving back-to-back diodes to ground, followed by a passive tone filter.",
+          "bgColor": "bg-amber-50",
           "fields": [
-            { "label": "Examples", "value": "Boss DS-1, ProCo RAT 2, MXR Distortion+" }
+            { "label": "Circuit Simplicity", "value": "Minimalist parts count; raw, visceral, immediate pick attack" },
+            { "label": "Clipping Diodes", "value": "Germanium (MXR Distortion+) for warm crunch, or Silicon (Boss DS-1) for sharp bite" },
+            { "label": "Key Models", "value": "Boss DS-1, MXR Distortion+, DOD 250" }
+          ],
+          "items": [
+            "The foundational sound of early hard rock, classic punk, and 1990s Pacific Northwest grunge",
+            "Features a signature mid-scoop that lets vocals and bass sit comfortably in the mix"
           ]
         },
         {
-          "title": "High-Gain Distortion",
-          "description": "Running the signal through multiple cascading gain stages, each one clipping what the previous stage already clipped, produces far more compression and harmonic density than a single clipping stage can, which is what lets these pedals sustain a note almost indefinitely. That much gain also amplifies noise and low-end mud along with the signal, which is why high-gain pedals typically pair the extra gain stages with active EQ shaping to carve out the low end and keep the tone tight rather than boomy.",
+          "title": "The Slew-Modulated Filter Workhorse",
+          "badge": { "text": "The Rat Family", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "Engineered in 1978 by Scott Burnham and Steve Kiraly at ProCo. Pairs an LM308 op-amp with hard-clipping silicon diodes and an intuitive reverse low-pass 'Filter' knob that sweeps from cutting treble to woolly fuzz.",
+          "bgColor": "bg-red-50",
           "fields": [
-            { "label": "Examples", "value": "Boss MT-2, Electro-Harmonix Metal Muff, TC Electronic Dark Matter" }
+            { "label": "Filter Knob", "value": "Reverse operation: turning clockwise CUTS high frequencies to eliminate ice-pick harshness" },
+            { "label": "Midrange Presence", "value": "Prominent, muscular midrange push that punches through any live band mix" },
+            { "label": "Key Models", "value": "ProCo RAT 2, Turbo RAT, Deucetone RAT, JHS PackRat" }
+          ],
+          "items": [
+            "The ultimate chameleon dirt pedal: acts as an overdrive at 9 o'clock, distortion at 12 o'clock, and fuzz at 3 o'clock",
+            "Beloved by legends across wildly diverse genres: David Gilmour, James Hetfield, Jeff Beck, and Kurt Cobain"
           ]
         },
         {
-          "title": "Amp-in-a-Box",
-          "description": "Rather than generating a generic distortion sound, these pedals model the specific preamp circuit of a well-known amplifier, matching its particular clipping stages and voicing rather than a one-size-fits-all gain circuit. That means the pedal can put a recognizable amp's breakup character in front of a clean amp on stage or in a small studio setup, without needing to haul around, mic, or crank the original amplifier to get there.",
+          "title": "The Preamp-in-a-Box (Amp Emulator)",
+          "badge": { "text": "Modern High-Gain", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Modern engineering marvels that recreate the multi-stage cascading tube architectures of legendary high-gain amplifiers (like modified Marshall Plexis, Peavey 5150s, or Friedman BE-100s) using cascading JFET or op-amp gain stages.",
+          "bgColor": "bg-purple-50",
           "fields": [
-            { "label": "Examples", "value": "Tech 21 SansAmp, AMT Electronics, Friedman BE-OD" }
-          ]
-        },
-        {
-          "title": "Modern/Digital",
-          "description": "By generating or precisely modeling the clipping in the digital domain, or refining the analog gain-staging design well beyond a decades-old circuit, these pedals can offer far more control over exactly where and how the tone breaks up than a classic three-knob distortion allows. That extra control is the appeal for players who want a tailored, repeatable tone across many songs and settings rather than a single fixed character.",
-          "fields": [
-            { "label": "Examples", "value": "Boss DS-1X, Line 6 Helix distortions, Source Audio LA Lady" }
+            { "label": "Gain Topology", "value": "3 to 5 cascading gain stages with active 3-band EQ, Presence, and Tight controls" },
+            { "label": "Low-End Authority", "value": "Deep, percussive bass chunk that mimics a cranked 4x12 closed-back cabinet" },
+            { "label": "Key Models", "value": "Friedman BE-OD, Marshall ShredMaster, Wampler Sovereign, Revv G3" }
+          ],
+          "items": [
+            "Transforms any humble clean combo amplifier into a fire-breathing, arena-ready high-gain half-stack",
+            "Tight/Bass controls keep drop-tuned 7-string and 8-string palm mutes razor sharp"
           ]
         }
       ]
     },
     {
-      "title": "Legendary Distortion Pedals",
-      "layout": "list",
+      "title": "Legendary Benchmark Distortion Pedals",
+      "subtitle": "The definitive stompboxes that defined classic rock, grunge, and modern heavy metal",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
       "cards": [
         {
           "title": "Boss DS-1 Distortion",
-          "description": "Released in 1978, the DS-1's straightforward two-transistor clipping circuit produces a bright, cutting distortion that has stayed popular precisely because it can be used two very different ways: dimed as a primary distortion voice, or set to a moderate gain and used as a boost to push an already-driven tube amp harder. That flexibility, plus a low price that's barely changed in decades, is why it remains one of the best-selling distortion pedals ever made.",
+          "badge": { "text": "The World's Best-Seller", "bgColor": "bg-orange-100", "textColor": "text-orange-800" },
+          "description": "Released in 1978 in its unmistakable bright orange enclosure, the DS-1 is the most widely sold distortion pedal in history. Delivering razor-sharp hard clipping, singing upper-mid harmonics, and tight bass, it is the defining sonic voice of 1990s grunge and stadium rock solos.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Signature Sound", "value": "Bright, cutting distortion with excellent note definition and moderate gain" },
-            { "label": "Notable Users", "value": "Kurt Cobain (Nirvana, his primary distortion pedal from 1989 onward), Steve Vai and Joe Satriani (both use it as a moderate-gain boost into an already-driven amp rather than as a standalone distortion voice)" }
+            { "label": "Controls", "value": "Tone, Level, and Dist" },
+            { "label": "Circuit Architecture", "value": "Transistor preamp boost feeding a dual op-amp stage with silicon hard-clipping diodes" },
+            { "label": "Famous Users", "value": "Kurt Cobain (Nirvana), Joe Satriani, Steve Vai, John Frusciante (RHCP)" }
+          ],
+          "items": [
+            "The driving force behind Kurt Cobain's explosive chorus drops on Nevermind ('Smells Like Teen Spirit', 'In Bloom')",
+            "Joe Satriani's signature lead trick: running a DS-1 into a clean Marshall head for vocal, liquid solo sustain",
+            "Durable all-metal Boss chassis with buffered bypass that preserves high frequencies across long stage cables"
           ]
         },
         {
           "title": "ProCo RAT 2",
-          "description": "Instead of a standard tone knob, the RAT's Filter control works as a low-pass filter that rolls off high end as you turn it up, which is the opposite behavior from a typical treble knob and gives the pedal a distinctively dark, midrange-forward voice when pushed. That midrange focus is exactly what lets a RAT cut through a dense mix without relying on harsh top-end, which is why it's shown up across genres from hard rock leads to grunge rhythm tones.",
+          "badge": { "text": "The Underground Giant", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The quintessential black stompbox featuring glow-in-the-dark graphics and heavy steel construction. Powered by the slow-slew-rate LM308/OP07 op-amp and symmetric hard-clipping diodes, the RAT delivers a muscular midrange punch that cuts through any mix with authority.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Signature Sound", "value": "Aggressive, midrange-heavy distortion with excellent sustain and note clarity" },
-            { "label": "Notable Users", "value": "Jeff Beck, Dave Grohl (Foo Fighters), Thom Yorke (Radiohead, Turbo RAT), Graham Coxon (Blur), James Hetfield (Metallica, on Kill 'Em All)" }
+            { "label": "Controls", "value": "Distortion, Filter (turn clockwise to cut treble), and Volume" },
+            { "label": "Tonal Spectrum", "value": "Sweeps seamlessly from warm blues overdrive to aggressive metal crunch and fuzzy doom roar" },
+            { "label": "Famous Users", "value": "James Hetfield (Metallica - Kill 'Em All), David Gilmour (Pink Floyd), Jeff Beck, Graham Coxon" }
+          ],
+          "items": [
+            "The secret rhythm weapon behind early thrash metal: James Hetfield used a RAT to boost Marshall heads on Kill 'Em All",
+            "David Gilmour's legendary lead tone on The Wall and Delicate Sound of Thunder paired a RAT with a Big Muff",
+            "Indestructible steel chassis engineered to withstand decades of violent stage stomping"
           ]
         },
         {
-          "title": "Boss MT-2 Metal Zone",
-          "description": "Since its 1991 release, the Metal Zone has been one of the best-selling metal distortion pedals ever made largely on the strength of its semi-parametric midrange control, which lets you notch out or boost a specific frequency band rather than a single fixed mid control. Dialed correctly, that control is what makes the classic scooped, mid-notched metal tone possible from a single affordable pedal, though the same flexibility means it's also easy to set in a way that sounds thin or fizzy, which is why it has a reputation among some players as being harder to dial in well than its low price suggests.",
+          "title": "Friedman BE-OD",
+          "badge": { "text": "Boutique Amp in a Box", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Dave Friedman's legendary Brown Eye 100W boutique tube amplifier distilled into an ultra-compact stompbox. Delivering authentic British high-gain roar, active 6-knob tone shaping, and an internal gain trim pot, the BE-OD produces massive low-end wallop and soaring harmonic sustain.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Signature Sound", "value": "Extremely high gain with scooped mids and extensive tonal shaping capabilities" }
+            { "label": "Controls", "value": "Volume, Gain, Bass, Treble, Presence, and Tight" },
+            { "label": "Tight Knob Function", "value": "Pre-distortion high-pass filter that eliminates muddy flub and sharpens palm-muted staccato riffs" },
+            { "label": "Internal Trim Pot", "value": "Adjusts overall gain range from classic Plexi crunch to modern high-gain metal saturation" }
+          ],
+          "items": [
+            "Captures the visceral punch, harmonic depth, and power-tube thump of a $4,000 boutique tube head",
+            "The Tight control ensures dropped tunings and 7-string guitars stay clear and percussive without flub",
+            "Operates from 9V to 18V: 18V operation yields higher headroom, wider dynamics, and tighter bass response"
+          ]
+        },
+        {
+          "title": "Boss DS-2",
+          "badge": { "text": "Turbo Distortion", "bgColor": "bg-yellow-100", "textColor": "text-yellow-800" },
+          "description": "The evolution of the classic DS-1, introduced in 1987. Features two foot-switchable modes: Mode I delivers classic flat DS-1 hard clipping, while Mode II (Turbo) activates a fierce, mid-frequency boost that pushes solo leads right to the front of any live mix.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Mode I", "value": "Warm, scooped distortion with flat response; identical to vintage DS-1 character" },
+            { "label": "Mode II (Turbo)", "value": "Fierce midrange boost centered around 1kHz for screaming, vocal lead sustain" },
+            { "label": "Remote Jack", "value": "Connect an external footswitch (like the Boss FS-5L) to toggle Turbo mode mid-song" }
+          ],
+          "items": [
+            "John Frusciante's primary solo distortion on seminal Red Hot Chili Peppers albums (Blood Sugar Sex Magik, Californication)",
+            "Used extensively by Kurt Cobain during Nirvana's In Utero world tour for explosive chorus transitions",
+            "Mode II's focused midrange cuts through loud drum kits where standard scooped distortions get buried"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extreme Metal & Heavy Rock Classics",
+      "subtitle": "Specialized high-gain stompboxes for crushing metal riffs and shoegaze walls of sound",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Boss MT-2",
+          "badge": { "text": "The Metal Zone", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Introduced in 1991, the Metal Zone is one of the most famous and misunderstood dirt pedals ever built. Featuring dual-stage high-gain clipping and a powerful semi-parametric 3-band EQ with sweepable midrange (200Hz–5kHz), it delivers monstrous metal chunk when dialed in with precision.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "EQ Architecture", "value": "Dual concentric knobs: Level/Dist, High/Low, and Mid-Frequency/Mid-Level (+/-15dB)" },
+            { "label": "Sweepable Mids", "value": "Target precise frequencies between 200Hz and 5kHz to boost cutting clarity or scoop mud" },
+            { "label": "Modern Pro Secret", "value": "Run the MT-2 directly into your amp's FX Loop Return, using it as a standalone high-gain preamp" }
+          ],
+          "items": [
+            "Never max the Dist knob: setting Gain between 11 and 1 o'clock produces tight, articulate thrash metal rhythm",
+            "Running directly into the power amp (FX Return) bypasses muddy amp preamps for astonishingly heavy, clear metal tone",
+            "Used by Swedish death metal pioneers and modern progressive producers seeking surgical EQ control"
           ]
         },
         {
           "title": "MXR Distortion+",
-          "description": "Released in 1974 and built around an op-amp clipping circuit that predates most of the distortion designs that followed it, the Distortion+ produces a raw, slightly compressed grit rather than the more refined voicing of later, more heavily EQ'd pedals. That simplicity, just Output and Distortion knobs, made it an easy way for guitarists in the 1970s and 80s to get a compact, amp-independent gain boost, which is part of why it turns up across such different eras and genres.",
+          "badge": { "text": "Vintage Germanium Bite", "bgColor": "bg-yellow-100", "textColor": "text-yellow-800" },
+          "description": "The classic 1970s yellow stompbox that powered the birth of heavy metal guitar. Driven by a single op-amp and back-to-back germanium clipping diodes, the Distortion+ delivers fuzzy, vintage crunch, aggressive bite, and raw rock-and-roll attitude.",
+          "bgColor": "bg-yellow-50",
           "fields": [
-            { "label": "Signature Sound", "value": "Raw, uncompressed distortion with a distinctive midrange character" },
-            { "label": "Notable Users", "value": "Randy Rhoads (Ozzy Osbourne), Bob Mould (Husker Du), Jerry Garcia (Grateful Dead)" }
+            { "label": "Controls", "value": "Output (volume) and Distortion (gain)" },
+            { "label": "Germanium Diodes", "value": "Germanium hard clipping produces warm, singing compression with fuzzy edge-of-control grit" },
+            { "label": "Famous Users", "value": "Randy Rhoads (Ozzy Osbourne), Jerry Garcia (Grateful Dead), Dave Murray (Iron Maiden)" }
+          ],
+          "items": [
+            "The foundational secret behind Randy Rhoads' blistering classical-metal solos on 'Crazy Train' and 'Mr. Crowley'",
+            "Simple two-knob design makes dialing in classic late-1970s hard rock crunch effortless",
+            "Pairs exceptionally well with already-cranked British tube heads (Marshall Plexi/JCM800)"
+          ]
+        },
+        {
+          "title": "Marshall ShredMaster",
+          "badge": { "text": "Shoegaze & Alt-Rock Wall", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Originally launched by Marshall in 1991. Famous for its unique 'Contour' control, which sweeps the midrange from forward British bark to extreme American metal scoop, the ShredMaster delivers a crushing wall of saturated distortion.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Controls", "value": "Gain, Bass, Contour, Treble, and Volume" },
+            { "label": "Contour Knob", "value": "Sweeps midrange balance, transforming the pedal from vintage British roar to heavy scooped chunk" },
+            { "label": "Famous Users", "value": "Jonny Greenwood (Radiohead), Kevin Shields (My Bloody Valentine)" }
+          ],
+          "items": [
+            "The iconic explosive distortion heard when the chorus drops on Radiohead's 'Creep'",
+            "The cornerstone of My Bloody Valentine's textured 'glide guitar' shoegaze soundscapes",
+            "Heavyweight vintage enclosure with buffered bypass and ultra-smooth gain pot sweep"
           ]
         }
       ]
     },
     {
-      "title": "EQ and Tone Shaping",
-      "subtitle": "Understanding Distortion EQ",
-      "bgColor": "bg-blue-50",
-      "layout": "grid-3",
-      "cards": [
-        {
-          "title": "Bass/Low Frequencies",
-          "description": "Distortion generates far more harmonic overtones from low frequencies than from high ones, so even a modest bass boost can multiply into a disproportionate amount of low-end mud once it's run through a clipping circuit. That's why distortion tone controls are usually more sensitive at the bass end than a clean EQ would be, a setting that sounds fine bypassed can turn boomy and undefined the moment gain is added.",
-          "items": [
-            "Controls bottom-end thickness",
-            "Too much = muddy tone",
-            "Too little = thin sound",
-            "Adjust for room acoustics",
-            "Consider bass guitar presence"
-          ]
-        },
-        {
-          "title": "Midrange",
-          "description": "Most of the frequency range where a guitar's fundamental pitch and a listener's ear for clarity both live sits in the midrange, which is why boosting or cutting it has an outsized effect on how a distorted tone sits in a mix. Scooping the mids out gives a huge, aggressive-sounding wall on its own, but it's also what makes a guitar hardest to hear once bass, drums, and vocals are competing for the same space, which is the trade-off behind the modern scooped-metal sound versus a boosted, cutting classic-rock tone.",
-          "items": [
-            "Most important for cutting through",
-            "Scooped = modern metal sound",
-            "Boosted = classic rock punch",
-            "Affects harmonic content",
-            "Key for mix presence"
-          ]
-        },
-        {
-          "title": "Treble/High Frequencies",
-          "description": "The treble control shapes the harshest overtones a clipping circuit generates, the same frequencies responsible for both pick-attack definition and an unpleasant fizzy or brittle edge once pushed too far. Because a distorted signal already carries far more high-frequency harmonic content than a clean one, treble on a distortion pedal usually needs to sit lower than intuition suggests to avoid stacking on top of overtones the clipping has already created.",
-          "items": [
-            "Adds brightness and clarity",
-            "Too much = harsh, fizzy",
-            "Too little = dark, muffled",
-            "Affects pick attack definition",
-            "Important for note separation"
-          ]
-        }
+      "title": "Distortion vs. Overdrive vs. Fuzz Comparison Matrix",
+      "subtitle": "Head-to-head technical comparison of the three primary dirt pedal categories",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "table",
+      "tableHeaders": ["Dirt Category", "Clipping Architecture", "Waveform Shape", "Touch Dynamics", "Harmonic Profile", "Primary Application"],
+      "tableRows": [
+        ["Overdrive (e.g. TS9, BD-2)", "Diodes in Op-Amp Feedback Loop", "Soft-knee rounded sinusoidal peaks", "Extremely dynamic (Picks soft for clean, hard for drive)", "2nd & 3rd order harmonics (warm, singing, woody)", "Blues, Classic Rock, Boosting tube amps, edge-of-breakup rhythm"],
+        ["Distortion (e.g. DS-1, RAT, BE-OD)", "Hard-Clipping Diodes to Ground", "Trapezoid / Flat-topped square wave", "Compressed & Uniform (Consistent gain ceiling)", "Dense 3rd, 5th, & 7th odd harmonics (aggressive bite)", "Hard Rock, Heavy Metal, Grunge, Punk, high-gain leads & palm-mutes"],
+        ["Fuzz (e.g. Fuzz Face, Big Muff)", "Extreme Transistor Over-Saturation", "Pure severe square wave with sag", "Volatile (Huge cleanup with guitar volume pot)", "Sub-harmonics, intermodulation fuzz & octave overtones", "Psychedelic Rock, Doom Metal, Stoner Rock, Garage, vintage Hendrix leads"]
       ]
     },
     {
-      "title": "Using Distortion Effectively",
+      "title": "Dialing In Distortion for Maximum Mix Cut",
+      "subtitle": "Professional engineering techniques to prevent your guitar from disappearing in a live band",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Performance Tips",
-          "bgColor": "bg-green-50",
-          "description": "High-gain distortion amplifies whatever the strings are doing, including string noise and unintended overtones from strings you're not trying to play, which is why techniques like palm muting and precise fretting-hand muting matter more here than on a clean tone: a small technique flaw that's inaudible clean becomes an obvious buzz or hum once enough gain is stacked on top of it.",
+          "title": "The 'Mid-Scoop Trap' & Live Band Survival",
+          "description": "The most common mistake guitarists make when dialing in distortion pedals at home is scooping the midrange (cutting Mids to 0 while boosting Bass and Treble to 10). In a bedroom, a mid-scooped distortion sounds thick, thunderous, and modern. On a live stage, however, the bass guitar dominates 60Hz–250Hz, and the cymbals dominate 4kHz–12kHz. A mid-scooped guitar lives in neither frequency pocket and becomes completely inaudible the instant the band starts playing.",
+          "bgColor": "bg-orange-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "The Bedroom Trap", "value": "Scooping 500Hz–1kHz sounds heavy solo, but causes the guitar to disappear under drums and bass" },
+            { "label": "The Live Mix Pocket", "value": "Guitar is fundamentally a MIDRANGE instrument; pitch clarity lives between 800Hz and 2kHz" },
+            { "label": "The Golden Rule", "value": "Keep Mids at 12 to 2 o'clock; cut Bass slightly to leave room for the kick drum and bass player" }
+          ],
           "items": [
-            "Use palm muting for tight rhythm",
-            "Adjust picking technique for attack",
-            "Consider string gauge and tuning",
-            "Use noise gate for clean stops",
-            "Balance gain vs. note clarity",
-            "Practice clean to hear mistakes"
+            "Use the Filter or Tone knob to roll off piercing frequencies above 5kHz so sound engineers don't have to mute your channel",
+            "A slightly mid-boosted tone sounds slightly honky in isolation, but sounds massive, clear, and punchy in a full band mix",
+            "If your guitar is buried in the stage monitors, boost Midrange before touching overall Volume"
           ]
         },
         {
-          "title": "Recording Tips",
-          "bgColor": "bg-purple-50",
-          "description": "A distortion setting that sounds appropriately heavy played alone in a room is usually too much once it's sitting in a full mix with bass, drums, and vocals competing for the same frequency range, which is why recorded rhythm tones are typically dialed in with less gain than the same part would use live. Doubling a rhythm part with two separate takes, rather than relying on stereo-widening a single track, is what actually creates the wide, thick wall of guitar heard on most modern rock and metal records.",
+          "title": "The FX Loop Return Hack (Preamp Bypass)",
+          "description": "If your amplifier's clean channel has a fixed bright cap or dark voicing that doesn't pair well with high-gain distortion pedals, you can plug your distortion pedal directly into the amplifier's 'Effects Loop Return' (or Power Amp In) jack. This completely bypasses the amplifier's internal preamp, tone stack, and gain knobs, feeding the pedal directly into the high-headroom power section.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Cable Routing", "value": "Guitar → Distortion Pedal Out → Amp FX Loop Return / Power Amp In" },
+            { "label": "Amp Controls", "value": "Amp Gain, Bass, Mid, Treble are completely bypassed; Master volume or pedal Level controls loudness" },
+            { "label": "Ideal Pedals", "value": "Preamp-in-a-box pedals like the Friedman BE-OD, Boss MT-2, or Revv G3" }
+          ],
           "items": [
-            "Double-track for thickness",
-            "Use less gain than live settings",
-            "EQ differently for mix context",
-            "Consider amp simulation IR",
-            "Layer different distortion types",
-            "Use high-pass filter to clean up bass"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Distortion Settings Guide",
-      "layout": "grid-3",
-      "warningText": "More gain isn't always better. Find the minimum amount of distortion that gives you the sustain and character you need, while maintaining note clarity and definition.",
-      "cards": [
-        {
-          "title": "Classic Rock",
-          "items": [
-            "Gain: 10-12 o'clock",
-            "Level: Match bypass",
-            "Tone: 12-1 o'clock",
-            "Use: Riffs and solos"
-          ]
-        },
-        {
-          "title": "Modern Metal",
-          "items": [
-            "Gain: 2-4 o'clock",
-            "Level: Slightly above bypass",
-            "EQ: Scooped mids",
-            "Use: Tight rhythm, sustain"
-          ]
-        },
-        {
-          "title": "Punk/Alternative",
-          "items": [
-            "Gain: 11-2 o'clock",
-            "Level: Boost for aggression",
-            "Tone: Bright and cutting",
-            "Use: Raw power chords"
+            "Eliminates preamp coloration and delivers pure, unadulterated high-gain power amp punch",
+            "Breathes incredible high-gain life into sterile or muddy solid-state and practice amplifiers",
+            "Allows touring guitarists to achieve identical high-gain tone regardless of what backline amplifier a venue provides"
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Overdrive Pedals Guide",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Soft-clipping circuits, mid-hump boosting, and dynamic edge-of-breakup tone",
+      "icon": "🔥",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Fuzz Pedals Guide",
+      "href": "/lessons/gear/effects/fuzz",
+      "description": "Germanium vs silicon transistor saturation, square waves, and vintage psychedelic sustain",
+      "icon": "🌪️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Solid-State Amplifiers Guide",
+      "href": "/lessons/gear/amps/solid-state",
+      "description": "High-headroom clean platforms and using distortion pedals as primary preamps",
+      "icon": "💡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Wah Pedals Guide",
+      "href": "/lessons/gear/effects/wah",
+      "description": "Vocal bandpass filter sweeps and driving distortion pedals into screaming lead harmonics",
+      "icon": "👄",
+      "bgColor": "bg-white"
+    }
+  ]
 }

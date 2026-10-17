@@ -1,201 +1,347 @@
 {
   "slug": "effects-overdrive",
   "category": "effects",
-  "pageTitle": "Overdrive Effects",
-  "subtitle": "The most musical and dynamic form of distortion. Overdrive pedals add warmth, sustain, and natural tube-like compression to your guitar tone.",
+  "pageTitle": "Overdrive Pedals: Soft Clipping, Mid-Hump Voicing & Transparent Boost",
+  "subtitle": "The most musical and expressive dirt circuit — diode clipping physics, op-amp saturation, pedal stacking & legendary circuits",
   "heroGradient": "bg-gradient-to-r from-orange-50 to-red-50",
   "backLink": {
     "href": "/lessons/gear/effects",
     "label": "Back to Effects Overview"
   },
   "introduction": {
-    "title": "What is Overdrive?",
-    "text": "Overdrive is a form of audio signal distortion that occurs naturally when an amplifier is driven beyond its clean headroom, and overdrive pedals exist mainly to recreate that same soft, amp-like clipping at any volume rather than only once a tube amp is cranked loud enough to break up on its own. Because the clipping is gradual rather than an abrupt ceiling, an overdrive pedal keeps responding to how hard you pick and how far you turn the guitar's volume knob, which is exactly the touch-sensitivity a harder-clipping distortion circuit gives up in exchange for consistency.",
+    "title": "Overdrive Pedals: Soft Clipping, Mid-Hump Voicing & Transparent Boost",
+    "text": "Overdrive is the undisputed cornerstone of the modern electric guitarist's pedalboard. Unlike harsh, synthetic distortion or chaotic fuzz, overdrive was engineered to emulate the warm, natural, touch-responsive breakup that occurs when a vintage tube amplifier is pushed beyond its clean headroom. Because the clipping onset is gentle and progressive rather than an abrupt electronic ceiling, an overdrive pedal preserves the fundamental character of your instrument, responding directly to pick velocity and the guitar's volume knob.\n\nAt the circuit level, overdrive pedals place clipping diodes—silicon, germanium, or LEDs—inside the negative feedback loop of an operational amplifier (op-amp). As your playing intensity increases, the diodes conduct progressively, rounding off the waveform peaks into smooth, singing sustain rich with musical second- and third-order harmonics. Whether you need a mid-focused boost to slice through a thunderous band mix, a transparent drive that adds grit without coloring your guitar's EQ, or a front-end saturation tool to tighten up a high-gain tube head, mastering overdrive circuits is fundamental to building professional tone.",
+    "quote": "An overdrive pedal is not a blunt distortion tool; it is an interactive extension of your guitar pickups and amplifier preamp. It doesn't replace your core tone; it enriches it with touch-sensitive compression, harmonic bloom, and surgical frequency focus.",
     "columns": [
       {
-        "title": "Characteristics",
-        "text": "An overdrive pedal clips the peaks of the waveform softly, rounding them off rather than flattening them the way a distortion pedal does, and that gentler clipping preserves much more of the original note's fundamental pitch and harmonic makeup. Because the onset of clipping is gradual instead of a fixed ceiling, the effect stays genuinely touch-sensitive: pick softly and the signal stays closer to clean, dig in and the same pedal saturates further, all without touching a single knob."
+        "title": "Negative Feedback Diode Clipping",
+        "text": "How placing clipping diodes inside an op-amp feedback loop produces smooth soft-clipping curves and dynamic touch sensitivity.",
+        "icon": "⚡"
       },
       {
-        "title": "Musical Applications",
-        "text": "That responsiveness to touch is why overdrive, rather than distortion, is the default choice for blues and classic rock rhythm playing, styles built around dynamic variation from note to note rather than a uniformly saturated wall of gain. The same gentle clipping is what makes overdrive the standard way to push an already slightly-driven tube amp further into its own natural breakup, and why stacking a low-gain overdrive in front of a second drive pedal, rather than just turning one pedal's gain up, is a common way to shape tone in stages instead of all at once."
+        "title": "Mid-Hump vs. Transparent EQ",
+        "text": "Comparing the iconic 720Hz Tube Screamer mix-cutting boost against high-headroom, flat-frequency transparent drives (Klon, Bluesbreaker).",
+        "icon": "🎛️"
+      },
+      {
+        "title": "Pedal Stacking & Amp Pushing",
+        "text": "How to stack multiple drive pedals in series and use clean boosts to tighten loose low-end on high-gain tube amplifiers.",
+        "icon": "🔊"
       }
     ]
   },
   "sections": [
     {
-      "title": "How Overdrive Works",
-      "subtitle": "Circuit Design & Signal Processing",
-      "bgColor": "bg-blue-50",
+      "title": "How Overdrive Circuits Work: Diode Physics & Feedback Loops",
+      "subtitle": "The electronic mechanics separating soft-clipping overdrive from hard-clipping distortion",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Tube-Style Circuits",
-          "description": "Rather than using actual vacuum tubes, most overdrive pedals run an op-amp circuit into a pair of diodes, which clip the signal in a way that mimics a tube's soft, gradual saturation far more cheaply and reliably than fitting a real tube into a battery-powered stompbox would. Using two slightly mismatched diodes, an asymmetrical arrangement, produces uneven clipping on the positive and negative halves of the waveform, generating the same even-order harmonics a real tube amp produces and giving the pedal its warmer, more \"tube-like\" character compared to symmetrical clipping.",
-          "items": [
-            "Asymmetrical clipping for warmth",
-            "Mid-range emphasis",
-            "Gradual onset distortion",
-            "Dynamic response to input level"
-          ]
-        },
-        {
-          "title": "Controls & Parameters",
-          "fields": [
-            { "label": "Drive/Gain", "value": "Amount of overdrive saturation" },
-            { "label": "Level/Volume", "value": "Output volume control" },
-            { "label": "Tone", "value": "High-frequency roll-off" },
-            { "label": "Others", "value": "Some include bass, presence, or mid controls" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Types of Overdrive Pedals",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Transparent Overdrive",
-          "description": "A transparent overdrive is designed to add gain and sustain while coloring the underlying tone as little as possible, so a bright guitar stays bright and a dark-sounding amp stays dark rather than the pedal imposing its own EQ signature on top. That neutrality is exactly what makes these pedals effective as a way to push an already-good clean or edge-of-breakup amp tone harder, since the goal is more of what the amp is already doing rather than a new flavor layered over it.",
-          "fields": [
-            { "label": "Examples", "value": "Boss OD-1, Ibanez TS808, Xotic EP Booster" }
-          ]
-        },
-        {
-          "title": "Colored Overdrive",
-          "description": "A colored overdrive is built around a specific voicing rather than staying out of the way of your existing tone, actively shaping the frequency response and clipping character to sound a particular way regardless of what amp it's plugged into. That built-in personality is the point rather than a flaw: it's what lets one of these pedals put a recognizable, consistent character on a rig, rather than the more chameleon-like behavior of a transparent overdrive.",
-          "fields": [
-            { "label": "Examples", "value": "Boss Blues Breaker, ProCo RAT, DOD 250" }
-          ]
-        },
-        {
-          "title": "Tube Screamer Style",
-          "description": "The Tube Screamer circuit rolls off bass frequencies before the clipping stage and boosts the midrange afterward, which is why it tightens up a loose low end and pushes the guitar's midrange forward rather than adding raw thickness. That EQ curve is exactly what a note needs to cut through a dense band mix without turning muddy, which is why this specific topology, rather than overdrive in general, became the default boost pedal for so many working guitarists.",
-          "fields": [
-            { "label": "Examples", "value": "Ibanez TS9, Boss SD-1, Maxon OD808" }
-          ]
-        },
-        {
-          "title": "Vintage-Style",
-          "description": "A vintage-style overdrive is built around the specific circuit of an amp or pedal from the '70s or '80s rather than a modern general-purpose drive design, chasing the particular clipping curve and frequency response of one historical unit instead of aiming for a broadly useful tone. That focus makes them less flexible than a transparent or Tube Screamer-style pedal, but far more convincing at recreating one specific era or amplifier's breakup character than a general-purpose circuit designed to work well with anything.",
-          "fields": [
-            { "label": "Examples", "value": "Marshall Blues Breaker, Boss OD-3, Fulltone OCD" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Legendary Overdrive Pedals",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Ibanez Tube Screamer (TS808/TS9)",
-          "description": "The most influential overdrive pedal ever made. Known for its smooth midrange focus and ability to make any amp sound better. Used by Stevie Ray Vaughan, Gary Moore, and countless blues and rock legends.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Mid-range focused, smooth clipping, tight low end, perfect for blues and lead tones" }
-          ],
-          "items": [
-            "Stevie Ray Vaughan - Texas blues",
-            "Gary Moore - Emotional leads",
-            "John Mayer - Modern blues",
-            "The Edge - U2's signature sound",
-            "Trey Anastasio - Phish jams"
-          ]
-        },
-        {
-          "title": "Boss Blues Breaker (BB-2)",
-          "description": "Based on the Marshall Blues Breaker amplifier, this pedal delivers vintage British overdrive tones. More open and less compressed than Tube Screamers.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Open, transparent overdrive with British character and natural dynamics" }
-          ],
-          "items": [
-            "John Mayer - Clean boost and overdrive",
-            "Eric Johnson - Strat tones",
-            "Many session musicians",
-            "Blues and country artists"
-          ]
-        },
-        {
-          "title": "ProCo RAT 2",
-          "description": "Technically a distortion pedal, but often used as a high-gain overdrive. Known for its aggressive midrange and ability to cut through dense mixes.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Aggressive, midrange-heavy overdrive with great note definition and sustain" }
-          ],
-          "items": [
-            "Jeff Beck - Lead tones",
-            "Dave Grohl - Foo Fighters",
-            "Thom Yorke - Radiohead",
-            "Graham Coxon - Blur"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Using Overdrive Effectively",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Technique Tips",
-          "bgColor": "bg-green-50",
-          "description": "Because overdrive clips gradually rather than at a fixed ceiling, most of its dynamic range lives in your hands rather than on the pedal's dial. Rolling the guitar's volume back cleans up the tone almost like bypassing the pedal, and picking harder pushes further into saturation, which is why players who rely on overdrive tend to touch the guitar's own controls constantly instead of setting the pedal once and leaving it.",
-          "items": [
-            "Use guitar volume knob for dynamics",
-            "Set drive level for touch sensitivity",
-            "Experiment with pick attack intensity",
-            "Try different pickup positions",
-            "Adjust amp EQ with overdrive engaged",
-            "Use moderate gain for best note clarity"
-          ]
-        },
-        {
-          "title": "Stacking & Combinations",
+          "title": "Op-Amp Feedback Loop Soft Clipping",
+          "description": "The defining electronic characteristic of an overdrive pedal is where the clipping occurs. In an overdrive circuit, back-to-back clipping diodes are placed inside the negative feedback loop of an operational amplifier (op-amp, such as the legendary JRC4558D). As the guitar signal increases, the diodes begin conducting current across the feedback loop, progressively limiting the op-amp's gain. This produces a soft-knee compression curve that rounds off waveform peaks gently—closely mimicking the natural saturation of a vacuum tube plate.",
           "bgColor": "bg-blue-50",
-          "description": "Running a low-gain overdrive into a second, higher-gain drive pedal shapes the tone in stages rather than all at once: the first pedal's soft clipping smooths and compresses the signal slightly before it ever reaches the second pedal's own clipping stage, which produces a thicker, more layered saturation than simply turning one pedal's gain all the way up. This is also why a low-gain overdrive works as a clean boost in front of an already-driven amp: set with its own gain low, it acts mostly as a volume and midrange push into the amp's front end rather than adding audible clipping of its own.",
+          "borderColor": "",
+          "fields": [
+            { "label": "Circuit Placement", "value": "Clipping diodes located inside the op-amp negative feedback path" },
+            { "label": "Waveform Shape", "value": "Soft-knee rounded peaks; preserves original fundamental pitch and dynamic nuance" },
+            { "label": "Silicon Diodes (1N4148)", "value": "Forward voltage ~0.6V–0.7V; smooth, compressed, classic Tube Screamer singing sustain" },
+            { "label": "Germanium Diodes (1N34A)", "value": "Forward voltage ~0.2V–0.3V; lower headroom, warm, fuzzy, vintage compression" },
+            { "label": "Light Emitting Diodes (LEDs)", "value": "Forward voltage ~1.5V–2.0V; massive open headroom, punchy crunch, Marshall-like bark" }
+          ],
           "items": [
-            "Stack two overdrives for more gain",
-            "Use lower gain OD to push higher gain OD",
-            "Combine with fuzz for unique textures",
-            "Use as clean boost (drive at minimum)",
-            "Push tube amps into natural saturation",
-            "Layer with compression for sustain"
+            "Picks soft for crystalline cleans; digs in hard with a heavy plectrum for immediate singing overdrive",
+            "Rolling back the guitar's volume knob to 6 or 7 cleans up the tone effortlessly without losing treble sparkle",
+            "Eliminates the abrupt, jagged square waves characteristic of budget solid-state distortion"
+          ]
+        },
+        {
+          "title": "Symmetrical vs. Asymmetrical Clipping",
+          "description": "The orientation and matching of the clipping diodes dictates the harmonic overtone structure of the pedal. Symmetrical clipping uses identical diode pairs on both sides of the feedback loop, clipping the positive and negative swings of the AC waveform identically. Asymmetrical clipping uses an extra diode on one side (pioneered by Boss in the SD-1), creating uneven clipping that generates musical second-order even harmonics.",
+          "bgColor": "bg-amber-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Symmetrical Clipping", "value": "1 diode : 1 diode; generates predominantly 3rd-order odd harmonics (smooth, singing, compressed)" },
+            { "label": "Asymmetrical Clipping", "value": "2 diodes : 1 diode; generates rich 2nd-order even harmonics (chime, tube warmth, dynamic bite)" },
+            { "label": "Tube Emulation", "value": "Vacuum tubes naturally clip asymmetrically; asymmetrical pedals feel remarkably amp-like under fingers" }
+          ],
+          "items": [
+            "Ibanez Tube Screamer uses symmetrical clipping for its legendary liquid, violin-like solo sustain",
+            "Boss SD-1 and Fulltone OCD use asymmetrical clipping for articulate, open rhythm crunch",
+            "Many modern boutique overdrives feature toggle switches to audition both clipping modes on the fly"
           ]
         }
       ]
     },
     {
-      "title": "Overdrive Settings Guide",
-      "layout": "grid-3",
-      "warningText": "Start with all controls at noon, then adjust to taste. Remember that overdrive pedals interact heavily with your amp's preamp, so adjust both together for optimal results.",
+      "title": "The Four Major Overdrive Circuit Families",
+      "subtitle": "Understanding the distinct circuit architectures that define all modern overdrive pedals",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-4",
       "cards": [
         {
-          "title": "Blues/Rock Rhythm",
+          "title": "The Tube Screamer Family",
+          "badge": { "text": "Mid-Hump Standard", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "Pioneered by Ibanez/Maxon with the TS808 and TS9. Characterized by symmetrical silicon clipping and a dedicated high-pass filter that rolls off bass below 720Hz while pushing a focused midrange hump.",
+          "bgColor": "bg-green-50",
+          "fields": [
+            { "label": "EQ Curve", "value": "Prominent mid-hump centered around 720Hz; tight low-end bass roll-off" },
+            { "label": "Op-Amp Chip", "value": "Classic JRC4558D dual op-amp integrated circuit" },
+            { "label": "Key Models", "value": "Ibanez TS9, TS808, Boss SD-1, Way Huge Green Rhino" }
+          ],
           "items": [
-            "Drive: 9-11 o'clock",
-            "Level: Match bypassed volume",
-            "Tone: 12-1 o'clock",
-            "Use: Chord work and rhythm"
+            "Cuts through dense live band mixes by pushing guitars straight into the vocal/solo frequency pocket",
+            "Tights up loose, flubby low end on high-gain American tube amplifiers (Mesa, Fender)"
           ]
         },
         {
-          "title": "Lead Guitar",
+          "title": "The Bluesbreaker Family",
+          "badge": { "text": "Flat & Dynamic", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Originating with the 1991 Marshall Bluesbreaker pedal (designed to mimic Eric Clapton's 1962 combo). Features an uncompressed, open frequency response with minimal midrange coloration.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "EQ Curve", "value": "Essentially flat frequency response; preserves guitar pickups' natural bass and treble" },
+            { "label": "Gain Character", "value": "Low-to-medium gain; woody, chimey edge-of-breakup grit" },
+            { "label": "Key Models", "value": "Marshall Bluesbreaker, Analogman King of Tone, JHS Morning Glory" }
+          ],
           "items": [
-            "Drive: 12-3 o'clock",
-            "Level: Boost above rhythm",
-            "Tone: 1-2 o'clock",
-            "Use: Solo sustain and punch"
+            "The quintessential 'transparent' low-gain overdrive for blues, indie, and country",
+            "Retains sparkling single-coil high-end chime without nasal midrange congestion"
           ]
         },
         {
-          "title": "Clean Boost",
+          "title": "The Klon Centaur Family",
+          "badge": { "text": "Transparent Myth", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Engineered by Bill Finnegan in the 1990s. Employs a dual-gang potentiometer that blends clean buffered signal alongside a soft-clipped germanium diode signal, with an internal charge pump boosting 9V to 18V.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Charge Pump", "value": "Internal MAX1044 IC steps 9V up to 18V for immense dynamic headroom" },
+            { "label": "Clean Blend", "value": "Dual pot blends clean dry signal in at low gain, adding clipping as drive increases" },
+            { "label": "Key Models", "value": "Klon Centaur, Wampler Tumnus, Electro-Harmonix Soul Food" }
+          ],
           "items": [
-            "Drive: Minimum",
-            "Level: 2-4 o'clock",
-            "Tone: Match guitar tone",
-            "Use: Push amp harder"
+            "Adds crystalline three-dimensional sheen and muscular low-mid punch to any clean amp",
+            "Functions as the world's most sought-after solo boost when Gain is set low and Level maxed"
+          ]
+        },
+        {
+          "title": "The Blues Driver Family",
+          "badge": { "text": "Discrete Multi-Stage", "bgColor": "bg-indigo-100", "textColor": "text-indigo-800" },
+          "description": "Created by Boss in 1995 with the BD-2. Utilizes discrete multi-stage FET (field-effect transistor) circuitry rather than standard op-amp feedback clipping, yielding immense dynamic range from clean boost to near-fuzz.",
+          "bgColor": "bg-indigo-50",
+          "fields": [
+            { "label": "Circuit Topology", "value": "Cascaded discrete FET transistors emulating multiple tube amp gain stages" },
+            { "label": "Dynamic Range", "value": "Massive touch sensitivity; transitions from sparkling clean to heavy fuzzy saturation" },
+            { "label": "Key Models", "value": "Boss BD-2, Boss BD-2W Waza Craft, Keeley Super Phat Mod" }
+          ],
+          "items": [
+            "Exceptional volume knob cleanup: roll back guitar volume to 5 for glassy chime, dim to 10 for thick lead",
+            "Popularized on modern rock recordings by John Mayer, Green Day, and Radiohead"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Benchmark Overdrive Pedals",
+      "subtitle": "The industry-defining stompboxes that sculpted decades of recorded guitar solos",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Ibanez TS9 Tube Screamer",
+          "badge": { "text": "The Universal Standard", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "The green stompbox seen on more professional pedalboards than any other dirt pedal in history. Powered by the legendary JRC4558D chip, the TS9 rolls off flubby sub-bass, pushes an articulate 720Hz midrange bump, and compresses into smooth, singing sustain.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Controls", "value": "Drive, Tone (high-frequency cut/boost), and Level" },
+            { "label": "Clipping & Chip", "value": "Symmetrical silicon diode clipping driven by JRC4558D op-amp" },
+            { "label": "Famous Users", "value": "Stevie Ray Vaughan, John Mayer, Trey Anastasio (Phish), Kirk Hammett" }
+          ],
+          "items": [
+            "The secret behind Stevie Ray Vaughan's towering Texas blues tone pushing cranked Fender amps",
+            "Universal metal studio trick: set Drive to 0 and Level to 10 to tighten modern 7-string high-gain amps",
+            "Durable die-cast zinc chassis and silent footswitch built for decades of stomping"
+          ]
+        },
+        {
+          "title": "Boss BD-2 Blues Driver",
+          "badge": { "text": "Touch-Sensitive Powerhouse", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Boss's discrete FET masterpiece. Delivering warm, tube-like overdrive with crisp pick attack, the BD-2 responds instantly to subtle variations in your picking hand, covering everything from warm edge-of-breakup rhythm to soaring lead sustain.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Controls", "value": "Level, Tone, and Gain" },
+            { "label": "Circuit Design", "value": "Discrete multi-stage field-effect transistor (FET) architecture" },
+            { "label": "Famous Users", "value": "Billie Joe Armstrong (Green Day), John Mayer, Mike McCready (Pearl Jam)" }
+          ],
+          "items": [
+            "Retains clarity and note definition even when playing complex extended 7th and 9th chords",
+            "Acts as a transparent boost at low gain settings and enters singing hard-rock territory at max gain",
+            "Indestructible Boss compact enclosure with buffered bypass that preserves high end on long cable runs"
+          ]
+        },
+        {
+          "title": "Wampler Tumnus",
+          "badge": { "text": "The Gold Standard Klone", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Widely acclaimed as the most accurate and musical recreation of the mythical Klon Centaur. Houses a stepped-up internal 18V charge pump, premium buffered bypass, and an articulate 3-band active EQ that delivers legendary transparent boost and harmonic sweetness.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Internal Voltage", "value": "Internal charge pump steps 9V power supply up to 18V for immense clean headroom" },
+            { "label": "Controls", "value": "Volume, Gain, Treble, Middle, and Bass (Deluxe model features full 3-band active EQ)" },
+            { "label": "Bypass Mode", "value": "High-grade buffered bypass modeled after the original Klon's tone-enriching buffer" }
+          ],
+          "items": [
+            "Adds lush, 3D body and sparkle to any amplifier without masking your guitar's natural voice",
+            "Pushes slightly breaking-up tube amps into rich, singing solo sustain with effortless note bloom",
+            "Compact mini enclosure saves valuable real estate on crowded professional pedalboards"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Stompboxes & Mid-Boost Classics",
+      "subtitle": "Essential studio and stage tools for boosting tube amps and stacking dirt",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Boss SD-1 Super OverDrive",
+          "badge": { "text": "Asymmetrical Legend", "bgColor": "bg-yellow-100", "textColor": "text-yellow-800" },
+          "description": "Released in 1981 and continuously in production ever since. The SD-1 introduced Boss's patented asymmetrical clipping circuit, delivering punchy, tube-like second-order harmonics, cutting midrange clarity, and razor-sharp rock rhythm attack.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Clipping Architecture", "value": "Asymmetrical silicon diode configuration (2 diodes one way, 1 diode reverse)" },
+            { "label": "Tonal Profile", "value": "Aggressive, biting midrange punch with tighter low-end roll-off than the TS9" },
+            { "label": "Famous Users", "value": "Zakk Wylde, Eddie Van Halen, The Edge, David Gilmour" }
+          ],
+          "items": [
+            "The premier overdrive for boosting British tube amps (Marshall JCM800 and Plexi circuits)",
+            "Asymmetrical clipping produces authentic tube-like bite and touch sensitivity at half the price of boutique drives",
+            "Incredible value: delivers world-class touring tone at an accessible price point"
+          ]
+        },
+        {
+          "title": "Electro-Harmonix Soul Food",
+          "badge": { "text": "Accessible Transparent Boost", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "Electro-Harmonix's smash-hit transparent overdrive inspired by the Klon Centaur. Utilizes internal boosted power rails for high-headroom transparency, delivering clean boost, touch-sensitive breakup, and lush harmonic presence at an unbeatable value.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Power Circuit", "value": "Internal boosted power rails provide expanded headroom and dynamic touch response" },
+            { "label": "Switchable Bypass", "value": "Internal slide switch toggles between True Bypass and high-quality Buffered Bypass" },
+            { "label": "Controls", "value": "Volume, Drive, and Treble" }
+          ],
+          "items": [
+            "Functions as an exceptional clean boost to drive tube amp front ends into natural harmonic saturation",
+            "Brings dull single-coil pickups to life with crystalline top-end definition and presence",
+            "Compact die-cast enclosure fits effortlessly onto any pedalboard layout"
+          ]
+        },
+        {
+          "title": "Fulltone OCD",
+          "badge": { "text": "MOSFET High-Headroom Beast", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "One of the most acclaimed modern overdrive pedals ever designed. The Obsessive Compulsive Drive utilizes paired MOSFET clipping stages to deliver immense dynamic headroom, thunderous tube-like low-end thump, and switchable HP (High Peak) / LP (Low Peak) voicings.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Clipping Devices", "value": "MOSFET transistors driven into hard-clipping saturation" },
+            { "label": "Voicing Switch", "value": "HP (Marshall-style mid boost & high-gain crunch) vs LP (transparent Fender clean boost)" },
+            { "label": "Voltage Support", "value": "Operates from 9V up to 18V for expanded dynamic range and tighter bass punch" }
+          ],
+          "items": [
+            "Running at 18V delivers staggering clean headroom and thunderous, uncompressed transient punch",
+            "HP mode transforms any clean Fender combo into a roaring, high-gain British half-stack",
+            "Cleans up flawlessly with a subtle twist of your guitar's volume knob"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overdrive Circuit Family Comparison Matrix",
+      "subtitle": "Head-to-head technical comparison across the four major overdrive topologies",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "table",
+      "tableHeaders": ["Circuit Family", "Clipping Architecture", "EQ Characteristic", "Gain Spectrum", "Headroom & Dynamics", "Best Amp Pairing"],
+      "tableRows": [
+        ["Tube Screamer (TS9/TS808)", "Symmetrical Silicon in Feedback Loop", "Prominent 720Hz Mid-Hump; Bass Cut", "Low to Medium Gain", "Moderate Headroom; High Compression", "Fender Blackface & American 6L6 Amps (Balances scooped mids)"],
+        ["Asymmetrical Drive (Boss SD-1)", "Asymmetrical Silicon in Feedback Loop", "Cutting Mid-Hump; Tighter Lows", "Low to Medium-High", "High Headroom; Dynamic Pick Bite", "Marshall EL34 & British Stacks (Tightens crunch channels)"],
+        ["Transparent Klone (Tumnus/Soul Food)", "Germanium Diodes + Clean Blend", "Flat to subtle upper-mid push", "Clean Boost to Medium", "Immense Headroom (18V Charge Pump)", "Any Amp (Adds 3D sheen without altering core amplifier tone)"],
+        ["Bluesbreaker (BB / King of Tone)", "Soft-Clipping Diodes in Loop", "Completely Flat; Natural Highs", "Low to Medium Crunch", "High Headroom; Minimal Compression", "Vox AC30 & Edge-of-Breakup Combos (Woody, chimey drive)"],
+        ["Discrete FET (Boss BD-2)", "Cascaded Multi-Stage FET Transistors", "Full-range; Flat with sparkle top", "Wide (Clean Boost to Near-Fuzz)", "Extreme Dynamic Range", "Clean Pedal Platforms (Acts like a complete multi-gain preamp)"]
+      ]
+    },
+    {
+      "title": "Pedalboard Stacking & Signal Chain Mastery",
+      "subtitle": "How to stack overdrive pedals in series to unlock three-dimensional multi-stage gain",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "Gain Staging: Boosting vs. Overdriving",
+          "description": "Stacking two overdrive pedals in series is the secret weapon used by Nashville session guitarists and stadium touring pros to achieve thick, singing lead tone without digital fizz or muddy low end. The golden rule of stacking is: Pedal 1 dictates the gain character; Pedal 2 dictates the final EQ curve and volume ceiling.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Stacking Configuration A", "value": "Transparent Drive (low gain) → Mid-Hump Drive (TS9): Pushes mids and adds liquid compression for solos" },
+            { "label": "Stacking Configuration B", "value": "Mid-Hump Drive (TS9) → Transparent Drive (Klon): Boosts overall volume and fattens tone without nasal EQ" },
+            { "label": "Golden Gain Rule", "value": "Keep the Gain knob low on both pedals (9 to 11 o'clock); stacking two moderate drives sounds far richer than diming one pedal" }
+          ],
+          "items": [
+            "Gives you four distinct sounds from two pedals: Clean, Drive 1 (Rhythm), Drive 2 (Crunch), and Both (Lead Solo)",
+            "Keeps your tone articulate and punchy instead of turning into an unmanageable muddy squeal",
+            "Experiment with pedal order: swapping pedal sequence can dramatically alter your solo sustain"
+          ]
+        },
+        {
+          "title": "Taming Low-End Flub on High-Gain Tube Amplifiers",
+          "description": "Modern metal and hard rock players frequently place an Ibanez TS9 or Boss SD-1 in front of ultra-high-gain tube heads (like a Peavey 5150, Mesa Dual Rectifier, or Marshall JVM). This technique is not used to add more distortion; it is used as an active signal pre-shaping filter.",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Drive Knob Setting", "value": "Set to ZERO (0): Do not add pedal clipping to an already saturated preamp" },
+            { "label": "Level / Volume Knob Setting", "value": "Set to MAX (8 to 10): Hits the V1 tube with clean, punchy signal voltage" },
+            { "label": "Tone Knob Setting", "value": "Set to 12 to 1 o'clock: Adds cutting upper-mid bite for fast pick tracking" }
+          ],
+          "items": [
+            "The pedal's 720Hz high-pass filter cuts flubby sub-bass before it hits the amp, keeping heavy palm mutes tight and articulate",
+            "Eliminates muddy low-end wobble on 7-string, 8-string, and drop-tuned modern metal riffs",
+            "Increases pick attack definition so lightning-fast alternate picking tracks with surgical precision"
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Distortion Pedals Guide",
+      "href": "/lessons/gear/effects/distortion",
+      "description": "Hard-clipping circuits, op-amp slew rates, and crushing high-gain rock crunch",
+      "icon": "⚡",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Fuzz Pedals Guide",
+      "href": "/lessons/gear/effects/fuzz",
+      "description": "Germanium vs silicon transistor saturation, square waves, and vintage psychedelic sustain",
+      "icon": "🌪️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Tube Amplifiers Guide",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Thermionic valve physics, preamp gain staging, and power tube harmonic saturation",
+      "icon": "🔥",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Compressor Pedals Guide",
+      "href": "/lessons/gear/effects/compressor",
+      "description": "Evening out pick dynamics, extending clean sustain, and boosting front-end drives",
+      "icon": "📏",
+      "bgColor": "bg-white"
+    }
+  ]
 }

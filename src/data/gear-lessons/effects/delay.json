@@ -1,267 +1,337 @@
 {
   "slug": "effects-delay",
   "category": "effects",
-  "pageTitle": "Delay Effects",
-  "subtitle": "Time-based effects that create echoes and rhythmic patterns. From subtle slap-back to ambient washes, delay is one of the most versatile guitar effects.",
+  "pageTitle": "Delay Pedals: Analog BBDs, Tape Saturation, DSP Convolution & Rhythmic Echoes",
+  "subtitle": "From vintage magnetic tape loops and bucket-brigade warmth to pristine 24-bit digital repeats and ambient dotted-eighth patterns",
   "heroGradient": "bg-gradient-to-r from-indigo-50 to-purple-50",
   "backLink": {
     "href": "/lessons/gear/effects",
     "label": "Back to Effects Overview"
   },
   "introduction": {
-    "title": "What is Delay?",
-    "text": "Delay creates echoes of your original signal by storing it and playing it back after a specified time interval, then optionally feeding that repeat back into the effect to generate further, quieter repeats. Because the guitarist controls exactly how long the gap is and how many times it repeats, delay can be tuned to sit anywhere between a barely-noticeable slap and a wash of overlapping echoes, which is why it does double duty as both a rhythmic tool and an ambient texture generator depending entirely on how it's set.",
+    "title": "Delay Pedals: Analog BBDs, Tape Saturation, DSP Convolution & Rhythmic Echoes",
+    "text": "Delay is one of the most transformative tools in modern music production, serving double duty as both an architectural space simulator and an interactive rhythmic instrument. At its most fundamental level, delay captures an incoming guitar signal, stores it in memory for a specified duration, and replays it after a set interval. By feeding a portion of that delayed output back into the circuit (feedback or regeneration), the effect generates decaying echoes that cascade through time.\n\nFrom the warm, mechanical warble and tape saturation of vintage 1960s magnetic tape echoes (such as the Echoplex EP-3 and Roland Space Echo) to the dark, decaying analog bucket-brigade device (BBD) chips of the 1970s and 80s (Boss DM-2, MXR Carbon Copy) and modern 24-bit floating-point digital supercomputers (Strymon Timeline, Boss DD-8), delay bridges the gap between raw guitar riffs and three-dimensional sonic landscapes. Furthermore, when synchronized mathematically to the tempo of a song—such as the famous dotted-eighth note pattern pioneered by The Edge and David Gilmour—delay turns simple picked notes into complex, galloping rhythmic tapestries.",
+    "quote": "Delay is both an architectural space simulator and an interactive rhythmic instrument. Synced to a tempo, a single picked note blooms into an interlocking polyrhythm; set long and dark, it carries a guitar solo into outer space.",
     "columns": [
       {
-        "title": "Key Parameters",
-        "text": "Time sets the gap between the original note and its echo, and it's the parameter that decides whether the effect reads as rhythmic (synced to a musical subdivision) or textural (long enough that it stops sounding like an echo of a specific note at all). Feedback controls how many times that echo repeats by determining how much of the delayed signal gets fed back into the input, so low feedback gives one or two clear repeats while feedback pushed toward maximum can spiral into a nearly endless, self-sustaining wash. Mix balances how loud those repeats are against your dry signal, and tone rolls off some of the delayed signal's high end on each pass, which is what makes repeats sound like they're fading into the distance rather than just getting quieter at the same brightness."
+        "title": "Tape, BBD & DSP Mechanics",
+        "text": "The electronic physics of magnetic tape loops, analog bucket-brigade capacitive charge networks, and high-resolution digital DSP modeling.",
+        "icon": "⏱️"
       },
       {
-        "title": "Musical Applications",
-        "text": "Set to a short, single repeat, delay adds a slap-back thickening that makes a single guitar sound fuller without changing its pitch, the same trick used on vocals and guitar since early rockabilly recordings. Synced to a musical subdivision like a dotted eighth note, delay repeats interleave with the notes you're playing to create a rhythmic pattern that sounds like two guitarists playing interlocking parts, even though only one is. Pushed toward long times and high feedback, the repeats stop tracking individual notes and blur into a continuous wash, which is how the same effect creates lead-guitar sustain, sense of physical space, and fully ambient soundscapes depending only on how far the same two controls are turned."
+        "title": "The Dotted-Eighth Rhythmic Formula",
+        "text": "How mathematical tempo synchronization (Delay ms = 45,000 / BPM) creates galloping, interlocking rhythm patterns from simple picking.",
+        "icon": "🎸"
+      },
+      {
+        "title": "Effects Loop vs. Front of Amp",
+        "text": "Why time-based delays must sit in an amplifier's effects loop (or after dirt pedals) to prevent muddy, distorted repeat tails.",
+        "icon": "🔊"
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Delay",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Analog Delay",
-          "description": "Analog delay pedals pass the signal through a chain of bucket-brigade device (BBD) capacitor stages, and each stage loses a small amount of high end and adds a trace of noise, so every repeat sounds progressively darker and softer than the one before it. That built-in degradation is what gives analog delay its warm, natural character, but it also caps how long a single delay can practically be, since a BBD chain needs more stages, and therefore more signal loss, to produce a longer delay time.",
-          "fields": [
-            { "label": "Characteristics", "value": "Warm, musical degradation, limited delay time" },
-            { "label": "Examples", "value": "Boss DM-2, MXR Carbon Copy, Way Huge Aqua Puss" }
-          ]
-        },
-        {
-          "title": "Digital Delay",
-          "description": "Digital delay stores the signal as sampled data rather than passing it through an analog chain, so a repeat can be recalled with no signal loss no matter how long the delay time or how many repeats stack up. That precision removes the natural darkening of analog delay, which some players miss, but it's also what makes multi-second delay times, tap tempo, and modulation or filtering of individual repeats practical in the first place.",
-          "fields": [
-            { "label": "Characteristics", "value": "Clean repeats, long delay times, precise control" },
-            { "label": "Examples", "value": "Boss DD-7, TC Electronic Flashback, Strymon Timeline" }
-          ]
-        },
-        {
-          "title": "Tape Echo",
-          "description": "A true tape echo generates its delay by physically recording the signal onto a moving loop of magnetic tape and reading it back from a playback head positioned further along the loop, so the delay time is a function of tape speed and head spacing rather than an electronic circuit. Small variations in motor speed and tape tension add natural pitch modulation and wow-and-flutter to each repeat, and the tape itself compresses and saturates the signal slightly, which together account for the format's warm, organic, slightly unstable character that BBD and digital designs deliberately try to emulate.",
-          "fields": [
-            { "label": "Characteristics", "value": "Warm saturation, natural modulation, vintage vibe" },
-            { "label": "Examples", "value": "Echoplex EP-3, Space Echo RE-201, Belle Epoch" }
-          ]
-        },
-        {
-          "title": "Multi-Tap Delay",
-          "description": "Rather than one delay time repeating itself via feedback, a multi-tap delay runs several independent delay lines off the same input, each with its own time, level, and pan setting. That lets a single pedal generate genuinely different rhythmic patterns, like an eighth note repeat panned left and a dotted-quarter repeat panned right, at once, which a single-tap delay can only approximate by chaining multiple pedals together.",
-          "fields": [
-            { "label": "Characteristics", "value": "Multiple echoes, rhythm patterns, complex textures" },
-            { "label": "Examples", "value": "Empress Echosystem, Eventide TimeFactor, rack units" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Understanding Delay Times",
-      "subtitle": "Common Delay Time Ranges",
-      "bgColor": "bg-blue-50",
+      "title": "The Electronic Evolution: Tape, BBD & DSP",
+      "subtitle": "The three foundational technologies that shaped the history of artificial echo",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Short Delays (1-50ms)",
+          "title": "Magnetic Tape Echo",
+          "badge": { "text": "1960s Vintage", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The earliest portable echo units (Echoplex EP-2/EP-3, Roland Space Echo RE-201) used a continuous loop of magnetic recording tape running across a record head and multiple playback heads. Motor speed dictated delay time, while mechanical wow-and-flutter added pitch modulation and tape saturation.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Physical Mechanism", "value": "Continuous magnetic tape loop driven by an electric capstan motor" },
+            { "label": "Tonal Quirks", "value": "Warm tape saturation, subtle harmonic distortion, motor wow-and-flutter chorusing" },
+            { "label": "Famous Models", "value": "Maestro Echoplex EP-3, Roland Space Echo RE-201, Binson Echorec" }
+          ],
           "items": [
-            "Slap-back: 50-120ms",
-            "Doubling: 15-30ms",
-            "Thickening: 20-40ms",
-            "Used in rockabilly, country",
-            "Adds presence and punch"
+            "The EP-3's discrete JFET preamp became legendary for adding punch and sweetness to guitar tone even when echo was bypassed",
+            "High maintenance: requires periodic tape loop replacement, head demagnetization, and capstan cleaning",
+            "Repeats gradually lose high and low frequencies, naturally fading into a warm midrange halo"
           ]
         },
         {
-          "title": "Medium Delays (100-500ms)",
+          "title": "Analog Bucket-Brigade Devices (BBD)",
+          "badge": { "text": "1970s Warmth", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "In the mid-1970s, solid-state Bucket Brigade Device chips (such as the Panasonic MN3005 and MN3205) eliminated moving tape parts. BBD chips pass analog voltage packets along a line of thousands of tiny capacitors on an electronic clock pulse, like a line of firefighters passing buckets of water.",
+          "bgColor": "bg-red-50",
+          "fields": [
+            { "label": "Electronic Mechanism", "value": "Cascaded MOS capacitor arrays clocked to transfer analog voltage charges" },
+            { "label": "Tonal Profile", "value": "High-frequency roll-off; each repeat sounds progressively darker and warmer than the last" },
+            { "label": "Famous Models", "value": "Boss DM-2, Electro-Harmonix Deluxe Memory Man, MXR Carbon Copy" }
+          ],
           "items": [
-            "Rhythmic: 1/8, 1/4 notes",
-            "Melodic: 200-400ms",
-            "Classic rock: 300-500ms",
-            "Creates musical echoes",
-            "Enhances lead playing"
+            "Analog compander circuits and steep low-pass filtering eliminate clock noise, creating dark, moody repeats",
+            "Repeats sit comfortably BEHIND your dry guitar signal without clashing or cluttering the mix",
+            "Turning the delay time knob while playing produces iconic pitch-bending space-ship oscillations"
           ]
         },
         {
-          "title": "Long Delays (500ms+)",
+          "title": "Digital DSP & Dual Delay Engines",
+          "badge": { "text": "Modern Precision", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "Digital delay converts your analog guitar signal into 24-bit floating-point data, writes it to RAM, and recalls it with mathematical precision. This delivers pristine, uncolored repeats, multi-second delay times, tap-tempo synchronization, stereo ping-pong panning, and multi-tap patterns.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "Processing Resolution", "value": "24-bit / 96kHz A/D conversion with 115dB+ dynamic signal-to-noise ratio" },
+            { "label": "Delay Time Capacity", "value": "From 1 millisecond up to multiple minutes of pristine, degradation-free audio" },
+            { "label": "Famous Models", "value": "TC Electronic 2290, Boss DD-3/DD-8, Strymon Timeline, Line 6 DL4" }
+          ],
           "items": [
-            "Ambient: 1-4 seconds",
-            "Looping: Multiple seconds",
-            "Soundscapes: Variable",
-            "Creates atmosphere",
-            "Experimental textures"
+            "Pristine frequency response replicates the exact brightness and bite of your original guitar pickup",
+            "Allows modern DSP algorithms to emulate tape wow, BBD darkness, reverse audio, and pitch-shifted shimmer",
+            "Stereo ping-pong delay bounces repeats across left and right amplifiers for expansive stage dimension"
           ]
         }
       ]
     },
     {
-      "title": "Legendary Delay Units",
-      "layout": "list",
-      "cards": [
-        {
-          "title": "Maestro Echoplex EP-3",
-          "description": "The Echoplex ran signal through a genuine tape loop and preamp rather than emulating one, which is why players who've owned both an original unit and a modern recreation often describe the real thing as sounding thicker and more alive; the tube preamp stage colors the tone even with the delay level turned all the way down. Its combination of natural tape modulation, mild compression, and a warm tonal coloration made it the reference point that most later tape-echo simulations, digital or analog, have aimed to recreate rather than surpass.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Warm tape saturation, natural modulation, musical compression and EQ" },
-            { "label": "Notable Users", "value": "Jimmy Page (Led Zeppelin), Eddie Van Halen (the volume-swell echo on \"Cathedral\"), Andy Summers (The Police), Neal Schon (Journey)" }
-          ]
-        },
-        {
-          "title": "Roland Space Echo RE-201",
-          "description": "The RE-201 combines a tape delay section with three separate playback heads and a built-in spring reverb tank, so a single unit can produce several staggered repeats plus reverb at once, without needing to chain separate pedals together. That multi-head layout, and the fact that its delay time is set by physically varying tape speed rather than an electronic clock, is what gave dub producers of the 1970s the tool to build the deep, disorienting echo trails that became foundational to the genre.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Complex multi-tap patterns, warm tape character, integrated spring reverb" },
-            { "label": "Notable Users", "value": "Lee \"Scratch\" Perry (dub pioneer), Robert Fripp (part of his long-running Space Echo-based rig)" }
-          ]
-        },
-        {
-          "title": "Boss DM-2 Delay",
-          "description": "Released in 1981, the DM-2 was one of the first analog delay pedals built for a normal guitarist's pedalboard rather than a studio rack, condensing the warm, degrading repeats of a BBD circuit into a compact, battery-friendly stompbox. Its short maximum delay time, around 300 milliseconds, limits it to slap-back and short rhythmic echoes rather than long ambient washes, but that same constraint is part of why its repeats stay tight and musical instead of smearing, which has kept original units and Boss's reissue in steady demand from players chasing an authentic analog echo.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Warm analog delays with natural high-frequency roll-off and musical repeats" }
-          ]
-        },
-        {
-          "title": "TC Electronic 2290",
-          "description": "Released in 1985, the 2290 offered up to 32 seconds of delay time along with sampling, looping, and its Dynamic Delay function, which ducks the repeats out of the way while you're playing and lets them swell back up in the gaps, keeping long echo trails from turning to mud under a busy lead line. That combination of studio-grade delay length and a rack-mount MIDI-controllable interface made it the professional standard through the late 80s and 90s, remaining in production for two decades before being retired.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Crystal clear digital delays with precise timing and extensive modulation" },
-            { "label": "Notable Users", "value": "David Gilmour (Pink Floyd, from A Momentary Lapse of Reason onward), The Edge (U2)" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Advanced Delay Techniques",
+      "title": "Delay Parameters & The Dotted-Eighth Rhythmic Formula",
+      "subtitle": "Mastering the knobs and calculating tempo-synchronized delay times",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Rhythmic Techniques",
-          "bgColor": "bg-indigo-50",
-          "description": "Syncing delay time to the song's tempo rather than setting it by ear is what turns an echo into a genuine second rhythmic voice: a dotted-eighth delay lands each repeat exactly between the notes you're playing, filling the rhythmic gaps rather than smearing over them, which only works reliably if the delay time is locked to the song's actual BPM.",
+          "title": "Core Parameters: Time, Feedback & Mix",
+          "description": "Regardless of whether a delay pedal is analog or digital, three fundamental controls dictate its behavior: Delay Time, Feedback (Repeats), and Mix (Level). Mastering the interaction between Feedback and Mix is the key to preventing delay from overwhelming your playing.",
+          "bgColor": "bg-slate-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Delay Time (Speed)", "value": "Sets the time elapsed (in milliseconds or beat divisions) before the first echo is heard" },
+            { "label": "Feedback (Repeats)", "value": "Controls the percentage of delayed signal routed back into the input; 100%+ induces self-oscillation" },
+            { "label": "Mix / Effect Level", "value": "Blends the volume ratio between your 100% analog dry guitar signal and the wet repeats" },
+            { "label": "Tone / Damping", "value": "Rolls off treble frequencies on repeats, mimicking the acoustic damping of sound in air" }
+          ],
           "items": [
-            "Dotted eighth notes: Creates triplet feel",
-            "Quarter note delays: Doubling effect",
-            "Polyrhythms: Multiple delay times",
-            "Tempo sync: Lock to song BPM",
-            "Ping-pong: Stereo bouncing",
-            "Subdivisions: 16th, 8th, quarter notes"
+            "Low Feedback (1–2 repeats) with moderate Mix adds thick, three-dimensional acoustic doubling",
+            "High Feedback (>10 repeats) with low Mix creates an ethereal ambient pad that hovers underneath solos",
+            "Self-oscillation: Pushing feedback past 3 o'clock causes repeats to build in volume into roaring analog feedback"
           ]
         },
         {
-          "title": "Ambient Techniques",
+          "title": "The Dotted-Eighth Note Formula (The Edge / Gilmour Secret)",
+          "description": "The most famous rhythmic delay technique in rock history is the 'dotted-eighth note' pattern (pioneered by The Edge on U2 classics like 'Where the Streets Have No Name' and David Gilmour on Pink Floyd's 'Run Like Hell'). By setting your delay time to exactly 3/16ths of a bar and picking straight eighth notes, the repeats land directly in the spaces between your picks, creating an interlocking, galloping rhythmic cascade.",
           "bgColor": "bg-purple-50",
-          "description": "Most ambient delay techniques work by pushing feedback high enough that the repeats stop decaying to silence and start sustaining or building on themselves, which is also why they need to be used carefully: a delay set to self-oscillate can keep generating sound indefinitely after you stop playing, for better or worse depending on whether that's the intended effect.",
+          "borderColor": "",
+          "fields": [
+            { "label": "Quarter Note Formula", "value": "Quarter Note (ms) = 60,000 / BPM" },
+            { "label": "Dotted-Eighth Formula", "value": "Dotted-Eighth (ms) = (60,000 / BPM) × 0.75  (or simply 45,000 / BPM)" },
+            { "label": "120 BPM Example", "value": "45,000 / 120 = exactly 375 milliseconds" },
+            { "label": "100 BPM Example", "value": "45,000 / 100 = exactly 450 milliseconds" }
+          ],
           "items": [
-            "Infinite repeats: Feedback at maximum",
-            "Volume swells: Slow attack with delay",
-            "Reverse delays: Backwards echoes",
-            "Modulated delays: Pitch shifting",
-            "Layering: Multiple delay units",
-            "Self-oscillation: Feedback loops"
+            "Set Feedback for 2 to 3 repeats and Mix to approximately 40%–50% so repeats match pick volume",
+            "Mute the strings lightly with your palm to keep the attack percussive and defined",
+            "Most modern digital pedals (like the Boss DD-8 and Strymon Timeline) feature tap-tempo with a dedicated dotted-eighth subdivision switch"
           ]
         }
       ]
     },
     {
-      "title": "Iconic Delay in Popular Music",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Classic Examples",
-          "description": "These recordings are useful reference points because the delay isn't just a texture in the mix, it's the part itself: mute the delay and the guitar part as written no longer makes rhythmic sense.",
-          "items": [
-            "U2 - \"Where The Streets Have No Name\": Dotted eighth delays",
-            "Pink Floyd - \"Run Like Hell\": Rhythmic delay patterns",
-            "Van Halen - \"Cathedral\": Volume-swell notes fed through tape echo",
-            "The Police - \"Message In A Bottle\": Bright analog delays",
-            "Led Zeppelin - \"Black Mountain Side\": Echoplex-treated acoustic textures"
-          ]
-        },
-        {
-          "title": "Modern Applications",
-          "description": "Digital delay's ability to run near-infinite repeats, sync tightly to a click, and layer multiple independent delay lines has pushed the effect well past its slap-back and rhythmic-echo roots into a compositional tool in its own right, used to build entire ambient beds and looped arrangements rather than just decorate an existing part.",
-          "items": [
-            "Radiohead: Complex digital delays and loops",
-            "Explosions in the Sky: Ambient post-rock textures",
-            "John Mayer: Blues and pop delay applications",
-            "Hillsong United: Modern worship delay sounds",
-            "Ambient/Post-Rock: Textural soundscapes"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Using Delay Effectively",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Performance Tips",
-          "bgColor": "bg-yellow-50",
-          "description": "A delay time that isn't locked to the song's tempo is one of the fastest ways to make a rhythmic part sound sloppy live, since the repeats will drift audibly out of time with the band even if your own playing is solid. Using tap tempo rather than a fixed knob setting, and accounting for how a room's natural reverberation adds to whatever repeats the pedal is already generating, keeps the effect sitting in the pocket instead of fighting the rest of the mix.",
-          "items": [
-            "Match delay time to song tempo",
-            "Use tap tempo for accuracy",
-            "Consider room acoustics",
-            "Adjust mix for musical context",
-            "Use expression pedal for feedback",
-            "Practice with metronome"
-          ]
-        },
-        {
-          "title": "Recording Tips",
-          "bgColor": "bg-orange-50",
-          "description": "Committing a delay effect to the recorded track the same way you'd hear it live removes your ability to adjust the balance later, so keeping the dry signal available separately, whether by recording it on its own track or using a send rather than an insert, means the delay's timing and mix can still be tweaked or automated after the take rather than being locked in permanently.",
-          "items": [
-            "Record dry signal separately",
-            "Use delay sends for flexibility",
-            "High-pass filter delay returns",
-            "Pan delays for width",
-            "Automate delay parameters",
-            "Layer different delay types"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Delay Settings Guide",
+      "title": "Legendary Benchmark Delay Pedals",
+      "subtitle": "The industry-standard stompboxes dominating professional touring rigs and studio sessions",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
-      "warningText": "Always set your delay time to musical subdivisions that complement the song. Use a tap tempo pedal or calculate delay times: 60,000 / BPM = quarter note delay time in milliseconds.",
       "cards": [
         {
-          "title": "Slap-back Echo",
+          "title": "MXR Carbon Copy",
+          "badge": { "text": "The Modern Analog King", "bgColor": "bg-green-100", "textColor": "text-green-800" },
+          "description": "The world's most popular analog delay pedal. Featuring 100% bucket-brigade technology, the Carbon Copy delivers up to 600ms of rich, dark, warm delay time, with a top-panel Modulation switch that adds lush, tape-like pitch chorusing to the repeats.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Technology", "value": "100% pure analog bucket-brigade device (BBD) circuitry" },
+            { "label": "Delay Time", "value": "Up to 600ms of rich, warm, naturally degrading analog delay" },
+            { "label": "Modulation Switch", "value": "Adds analog chorusing to repeats (internal trim pots adjust Width and Rate)" },
+            { "label": "Controls", "value": "Regen (Feedback), Mix, and Delay (Time)" }
+          ],
           "items": [
-            "Time: 80-120ms",
-            "Feedback: 1-2 repeats",
-            "Mix: 20-30%",
-            "Use: Rockabilly, country"
+            "Dark, pillowy repeats sit effortlessly behind lead solos without stepping on the primary guitar line",
+            "Internal trim pots allow customizing the modulation speed and depth to emulate vintage tape flutter",
+            "Indestructible metallic green enclosure with true hardwire bypass"
           ]
         },
         {
-          "title": "Rhythmic Delay",
+          "title": "Boss DD-8 Digital Delay",
+          "badge": { "text": "The Swiss Army Workhorse", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The most versatile compact delay pedal ever engineered by Boss. Packing 11 versatile modes—including Analog, Tape, Warm, Reverse, Shimmer, Warp, and GLT (glitch)—the DD-8 features stereo inputs and outputs, smart tap tempo, an external footswitch/expression jack, and an onboard 40-second looper.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Modes (11 Types)", "value": "Analog, Standard, Tape, Warm, Reverse, +RV (reverb), Shimmer, Warp, GLT, Loop" },
+            { "label": "Delay Time", "value": "Up to 10 seconds of pristine, high-resolution digital delay" },
+            { "label": "Smart Tap Tempo", "value": "Tap tempo directly via the onboard pedal switch or connect an external Boss FS-5U" },
+            { "label": "Stereo I/O", "value": "True stereo inputs and outputs with selectable Panning, Spatial, and Dual delay routing" }
+          ],
           "items": [
-            "Time: 1/8 or 1/4 notes",
-            "Feedback: 3-5 repeats",
-            "Mix: 25-40%",
-            "Use: U2-style patterns"
+            "Carryover switch allows delay tails to fade out naturally when the pedal is bypassed rather than cutting off abruptly",
+            "Shimmer mode pitch-shifts repeats up an octave for breathtaking ethereal, orchestral soundscapes",
+            "Standard backline staple trusted on stages from club gigs to international stadium tours"
           ]
         },
         {
-          "title": "Ambient Wash",
+          "title": "Strymon Timeline",
+          "badge": { "text": "The Studio Supercomputer", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The flagship delay workstation found on premier professional touring pedalboards. Powered by a high-power SHARC DSP chip, Timeline features 12 studio-grade delay machines (dTape, dBucket, Digital, Dual, Pattern, Reverse, Ice, Duck, Swell, Trem, Filter, Lo-Fi), 200 preset memories, and full MIDI implementation.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "DSP Engine", "value": "Ultra-low-noise 24-bit/96kHz converters with dedicated SHARC DSP processor" },
+            { "label": "12 Delay Machines", "value": "dTape, dBucket, Digital, Dual, Pattern, Reverse, Ice, Duck, Swell, Trem, Filter, Lo-Fi" },
+            { "label": "Preset Storage", "value": "200 presets accessible via front-panel footswitches or MIDI program change" },
+            { "label": "Hardware Features", "value": "Full stereo I/O, MIDI in/out, assignable expression pedal input, 30-second stereo looper" }
+          ],
           "items": [
-            "Time: 500ms-2 seconds",
-            "Feedback: High (8-9)",
-            "Mix: 40-60%",
-            "Use: Soundscapes"
+            "Ice machine slices repeats into granular chunks and shifts them up by musical intervals (octaves, fifths)",
+            "Dual delay machine allows running two independent delay lines in series or parallel with separate time divisions",
+            "The definitive studio benchmark for ambient soundscapes, modern rock, and world-class live performance"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vintage Icons & Creative Echo Workhorses",
+      "subtitle": "Classic tape emulations and innovative modulation delay units",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
+        {
+          "title": "Roland Space Echo",
+          "badge": { "text": "Vintage Tape Legend", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The legendary 1974 RE-201 Space Echo tape and spring reverb machine, celebrated across reggae, dub, post-punk, and alternative rock. Employs three playback heads to create complex rhythmic multi-tap patterns with organic tape saturation and pitch warble.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "Multi-Head Array", "value": "3 playback heads create 12 distinct multi-tap repeat combinations and rhythmic patterns" },
+            { "label": "Preamp Saturation", "value": "Legendary analog input preamp adds warm, harmonically rich compression to guitar signals" },
+            { "label": "Spring Reverb", "value": "Integrated physical spring reverb tank blends lush vintage room acoustics with tape echo" }
+          ],
+          "items": [
+            "The driving force behind dub reggae, Radiohead's OK Computer, and Brian Setzer's rockabilly lead lines",
+            "Modern digital recreations (Boss RE-2 and RE-202) faithfully capture every subtle nuance of the original hardware",
+            "Self-oscillation builds into an iconic, cosmic sci-fi vortex of analog sound when Intensity is cranked"
+          ]
+        },
+        {
+          "title": "Electro-Harmonix Memory Man",
+          "badge": { "text": "Modulated Analog Benchmark", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The Deluxe Memory Man is widely considered the holy grail of analog delay pedals. First released in the late 1970s, it married bucket-brigade analog delay with lush chorus and vibrato modulation, sculpting the sound of alternative rock.",
+          "bgColor": "bg-red-50",
+          "fields": [
+            { "label": "Modulation Controls", "value": "Selectable Chorus and Vibrato modulation applied directly to the analog delay repeats" },
+            { "label": "Preamp Character", "value": "Overload LED indicates input preamp drive; adds gentle, creamy harmonic crunch" },
+            { "label": "Famous Users", "value": "The Edge (U2 - 'Sunday Bloody Sunday', 'I Will Follow'), Ed O'Brien (Radiohead)" }
+          ],
+          "items": [
+            "The secret behind The Edge's crystalline, chiming guitar sound on U2's early Boy and War albums",
+            "Lush vibrato modulation turns decaying repeats into a dreamy, swimming acoustic hall of mirrors",
+            "Analog BBD warmth ensures that even dense, repeating chords never sound harsh or metallic"
+          ]
+        },
+        {
+          "title": "TC Electronic Flashback 2",
+          "badge": { "text": "TonePrint Innovator", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "A feature-packed digital delay pedal featuring TC Electronic's groundbreaking MASH technology. The footswitch acts as a pressure-sensitive expression controller in real time, while TonePrint technology lets you beam custom artist presets wirelessly via your smartphone.",
+          "bgColor": "bg-blue-50",
+          "fields": [
+            { "label": "MASH Technology", "value": "Pressure-sensitive footswitch controls feedback, mix, or modulation depth based on foot pressure" },
+            { "label": "TonePrint Slots", "value": "3 dedicated slots to load custom delay algorithms crafted by world-class guitarists" },
+            { "label": "Algorithms", "value": "Legendary TC 2290 digital delay, Tape, Analog, Crystal, Dynamic ducking, and Reverse" }
+          ],
+          "items": [
+            "Crystal delay algorithm incorporates polyphonic octave-up pitch shifting for shimmering ambient washes",
+            "Stereo I/O and selectable true bypass / buffered bypass with analog-dry-through circuitry",
+            "Audio-tapping tempo feature allows setting delay speed simply by strumming your guitar rhythmically"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Delay Technology Comparison Matrix",
+      "subtitle": "Head-to-head comparison across primary delay topologies and eras",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "table",
+      "tableHeaders": ["Technology Type", "Delay Time Range", "Repeat Degradation", "Modulation Character", "Self-Oscillation Behavior", "Primary Musical Application"],
+      "tableRows": [
+        ["Analog BBD (e.g. Carbon Copy, DM-2)", "20ms – 600ms", "Dark, warm, progressive high-frequency roll-off", "Warm, subtle analog pitch chorusing", "Warm, organic, musical runaway feedback", "Lead solos, country slapback, blues, indie, warm depth"],
+        ["Magnetic Tape (e.g. Echoplex, Space Echo)", "50ms – 1000ms+", "Loss of highs/lows + tape saturation/compression", "Mechanical wow-and-flutter pitch warble", "Chaotic, blooming, vintage psychedelic roar", "Rockabilly, dub reggae, vintage rock, atmospheric leads"],
+        ["Digital Standard (e.g. Boss DD-8, 2290)", "1ms – 10,000ms+", "Pristine (100% faithful copy of input signal)", "Algorithmic / programmable modulation", "Digital runaway loop (can clip without limiter)", "Modern rock, pop, rhythmic dotted-eighth, clean arpeggios"],
+        ["Multi-Engine DSP (e.g. Timeline, TimeFactor)", "1ms – Multi-minute", "Fully customizable (Pristine, Lo-Fi, or Dark)", "Deep multi-parameter LFO modulation", "Musical feedback loop with active soft-clipping", "Ambient worship, post-rock, film scoring, progressive metal"]
+      ]
+    },
+    {
+      "title": "Pedalboard Routing & Live Staging Mastery",
+      "subtitle": "Essential placement rules and dial-in tips for studio and stage performances",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Effects Loop Rule (Pre vs. Post Distortion)",
+          "description": "Where you place your delay pedal in the signal chain dictates whether your echoes sound pristine and lush or harsh and unmanageable. The golden rule of time-based effects: Delay must sit AFTER all distortion and overdrive stages.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Using Pedalboard Dirt", "value": "Place delay AFTER your overdrive, distortion, and fuzz pedals; echoes will repeat the distorted tone cleanly" },
+            { "label": "Using Amplifier Tube Distortion", "value": "Place delay in your amplifier's EFFECTS LOOP (FX Send → Delay → FX Return); delays the preamp crunch cleanly" },
+            { "label": "The Front-of-Amp Mistake", "value": "Plugging delay into the front of a distorted amp causes the amp to heavily compress and distort your echoes into mud" }
+          ],
+          "items": [
+            "Placing delay before distortion causes quiet echoes to get boosted while initial notes get compressed, creating an uncontrollable mess",
+            "Keeping delay after dirt ensures that your initial note retains sharp pick attack while echoes fade gracefully into the background",
+            "If your amplifier lacks an effects loop, run your amplifier clean and generate all distortion from pedals placed before the delay"
+          ]
+        },
+        {
+          "title": "Dialing in Vintage Slapback Echo (Rockabilly & Country)",
+          "description": "Slapback echo is the shortest, punchiest form of delay, engineered in the 1950s at Sun Studios by Sam Phillips for Elvis Presley and Johnny Cash. Instead of creating long ambient repeats, slapback produces a single, tight, percussive reflection that mimics sound bouncing off a brick back wall.",
+          "bgColor": "bg-green-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Delay Time Knob", "value": "Set to between 70ms and 140ms (ultra-short gap between dry note and echo)" },
+            { "label": "Feedback / Repeats Knob", "value": "Set to MINIMUM (exactly ONE single repeat)" },
+            { "label": "Mix / Level Knob", "value": "Set to approximately 40% to 50% (echo should be nearly as loud as the dry pick)" }
+          ],
+          "items": [
+            "Fattens single-note guitar lines and adds percussive 'thump' to hybrid picking and chicken-pickin' country solos",
+            "Instantly delivers the authentic vintage sound of 1950s rockabilly, surf rock, and early blues guitar",
+            "Works exceptionally well with Telecasters and Gretsch hollowbody guitars loaded with single-coil pickups"
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Reverb Pedals Guide",
+      "href": "/lessons/gear/effects/reverb",
+      "description": "Spring tanks, studio plates, DSP algorithms, and crafting dimensional acoustic space",
+      "icon": "🏛️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Chorus Pedals Guide",
+      "href": "/lessons/gear/effects/chorus",
+      "description": "Modulated short delay lines, true spatial stereo, and 1980s bucket-brigade shimmer",
+      "icon": "🌊",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Overdrive Pedals Guide",
+      "href": "/lessons/gear/effects/overdrive",
+      "description": "Soft-clipping circuits, mid-hump boosting, and gain-staging into delay pedals",
+      "icon": "🔥",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Audio Interfaces Guide",
+      "href": "/lessons/gear/recording/interfaces",
+      "description": "Low-latency monitoring, stereo routing, and tracking delay pedals direct into DAWs",
+      "icon": "🎧",
+      "bgColor": "bg-white"
+    }
+  ]
 }

@@ -1,218 +1,334 @@
 {
   "slug": "effects-reverb",
   "category": "effects",
-  "pageTitle": "Reverb Effects",
-  "subtitle": "The most fundamental spatial effect. Reverb simulates acoustic spaces, from intimate rooms to vast cathedrals, adding depth and dimension to your sound.",
-  "heroGradient": "bg-gradient-to-r from-teal-50 to-cyan-50",
+  "pageTitle": "Reverb Pedals: Spring Tanks, Plate Shimmer, Convolution & Acoustic Space",
+  "subtitle": "The acoustic dimension of tone — physical electromechanical spring tanks, studio plates, DSP algorithmic halls & ethereal ambient shimmer",
+  "heroGradient": "bg-gradient-to-r from-blue-50 to-indigo-50",
   "backLink": {
     "href": "/lessons/gear/effects",
     "label": "Back to Effects Overview"
   },
   "introduction": {
-    "title": "What is Reverb?",
-    "text": "Reverb is what's left after the original sound stops: the thousands of reflections a sound wave picks up bouncing off walls, ceilings, and furniture before it decays into silence. A guitar played in an empty stone church sustains and blooms in a way the same note played in a carpeted living room never will, purely because of how long and how densely those reflections pile up. Reverb pedals and studio units exist to recreate that same decaying wash of reflections on demand, whether the goal is a subtle sense of a real room or a completely artificial, physically impossible space.",
+    "title": "Reverb Pedals: Spring Tanks, Plate Shimmer, Convolution & Acoustic Space",
+    "text": "Every sound in nature occurs within a physical space. When you pluck an acoustic guitar in a tiled bathroom or a vaulted cathedral, sound waves radiate outward, bouncing off walls, floors, and ceilings thousands of times per second. These thousands of micro-reflections blend into a smooth, dense, decaying wash of acoustic energy known as reverberation. Without reverb, an electric guitar signal fed directly from a magnetic pickup sounds unnatural, dry, and flat—as if plucked inside an anechoic isolation chamber. Reverb is the acoustic environment your guitar inhabits.\n\nThe history of artificial reverb is a story of ingenious acoustic and electronic engineering. In the 1960s, Leo Fender popularized the electromechanical spring reverb tank—driving physical steel springs with an electromagnetic transducer to create the splashy, drippy, percussive sound of surf rock. In recording studios, German engineers suspended massive 600-pound cold-rolled steel plates (the EMT 140) to produce dense, silky high-frequency decay for vocal and guitar tracks. Today, advanced 32-bit floating-point Digital Signal Processors (DSP) solve complex feedback delay networks (FDNs) in real time, delivering everything from hyper-realistic acoustic concert halls to pitch-shifted ambient 'shimmer' clouds that elevate solo guitars into symphonic orchestral soundscapes.",
+    "quote": "Reverb is the acoustic environment your guitar inhabits. Without reverb, an electric guitar sounds like an anechoic test tone; with reverb, it sits in a sunlit cathedral, a smoky jazz club, or the boundless expanse of outer space.",
     "columns": [
       {
-        "title": "Components of Reverb",
-        "text": "The first sound to arrive back at your ears after the direct signal is the early reflections, the handful of distinct bounces off the nearest surfaces, and how far apart and how loud those are is what tells your brain whether a space is small or huge before the reverb tail even builds up. Everything after that blurs together into the late reflections, the dense, continuous tail that decays over the reverb's set time; pre-delay controls the gap between the dry note and when that tail starts, and diffusion controls how smoothly individual echoes blend into a wash rather than sounding like distinct repeats."
+        "title": "Physical Transducers (Spring & Plate)",
+        "text": "How electromechanical steel spring tanks and vibrating studio steel plates created the defining guitar sounds of surf rock and 1970s studio recordings.",
+        "icon": "🏛️"
       },
       {
-        "title": "Musical Functions",
-        "text": "Reverb's most basic job is convincing your ear that an instrument exists in a physical space, but it does real work beyond that: a short reverb can round off a harsh pick attack without you consciously noticing it, and a longer tail effectively extends a note's sustain well past when the string itself has stopped ringing. It's also one of the main tools for making separately recorded instruments sound like they're in the same room together, since sharing even a little of the same reverb space glues otherwise dry, disconnected parts into one believable performance."
+        "title": "DSP Algorithms & Ambient Shimmer",
+        "text": "Complex feedback delay networks, hall simulations, and routing pitch-shifted octave-up trails through regeneration loops for ethereal pad textures.",
+        "icon": "✨"
+      },
+      {
+        "title": "Pre-Delay & Transient Clarity",
+        "text": "Using pre-delay (20ms to 50ms) to ensure lightning-fast picking transients ring out with pristine clarity before the ambient wash blooms.",
+        "icon": "🎛️"
       }
     ]
   },
   "sections": [
     {
-      "title": "Types of Reverb",
+      "title": "The Physical Mechanics of Reverb: Spring & Plate",
+      "subtitle": "The analog electromechanical transducers that defined vintage guitar tone",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-2",
       "cards": [
         {
-          "title": "Spring Reverb",
-          "description": "A spring reverb sends the signal down a suspended metal spring and picks it back up with a transducer at the other end, and the reflections you hear are the sound wave physically bouncing back and forth along that spring rather than anything simulated. That mechanical origin is exactly why it has such a distinctive, slightly boingy, splashy character compared to other reverb types, and why physically knocking or moving an amp with a spring tank produces the famous crashing \"spring reverb drop.\"",
+          "title": "Electromechanical Spring Reverb Tanks",
+          "description": "Pioneered by the Hammond Organ Company and immortalized by Leo Fender in 1963, a spring reverb tank uses a metal chassis containing two to four counter-wound steel springs. An electromagnetic input transducer converts the guitar signal into mechanical vibrations that travel down the springs. An output transducer at the opposite end converts the mechanical vibrations back into an electrical signal. Because sound waves travel much slower through coiled steel than through air, the reflections produce the signature splashy, boingy, metallic 'drip' that defined surf rock, reggae, and vintage country.",
+          "bgColor": "bg-amber-50",
+          "borderColor": "",
           "fields": [
-            { "label": "Found in", "value": "Fender amps, outboard spring tanks, pedals" }
+            { "label": "Physical Mechanism", "value": "Input coil driving 2 to 4 coiled steel springs picked up by an output induction coil" },
+            { "label": "Tonal Profile", "value": "Bright, splashy, percussive, metallic 'boing' on hard pick attacks; warm decaying resonance" },
+            { "label": "Famous Origin", "value": "Fender '63 Reverb Unit (standalone tube tank) and onboard Fender Blackface combos" },
+            { "label": "The 'Surf Drip'", "value": "Muting a staccato note produces a distinct water-droplet slap that is the hallmark of surf guitar" }
+          ],
+          "items": [
+            "Essential for Dick Dale surf rock, vintage rockabilly, dub reggae, and classic Fender blues tone",
+            "Sensitive to mechanical physical shock: kicking or bumping the amplifier creates thunderous crashing thunderclaps",
+            "Modern digital spring algorithms faithfully model the non-linear dispersion and metallic drip of physical tanks"
           ]
         },
         {
-          "title": "Plate Reverb",
-          "description": "A plate reverb drives a transducer against a large suspended sheet of metal and picks up the resulting vibrations with contact microphones, and because the whole plate resonates at once rather than sound bouncing off distant walls, the reflections build up far denser and smoother than any physical room could produce. That density without the boxy coloration of a real room is exactly why plates became the standard studio reverb from the 1960s through the '80s, before digital units could convincingly match them.",
+          "title": "EMT 140 Suspended Studio Plate Reverb",
+          "description": "Engineered in Germany in 1957 by Elektro-Mess-Technik (EMT), the EMT 140 was the first artificial reverb to conquer high-end recording studios. A massive 1 x 2 meter sheet of cold-rolled steel (weighing nearly 600 lbs) was suspended under extreme tension inside a wooden cabinet. A central voice-coil driver vibrated the plate, and contact microphones picked up the vibrations. Unlike springs, plate reverb produces a dense, immediate, silky smooth diffuse decay with breathtaking high-frequency sparkle.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
           "fields": [
-            { "label": "Famous units", "value": "EMT 140, Ecoplate, modern plate emulations" }
-          ]
-        },
-        {
-          "title": "Hall Reverb",
-          "description": "A hall reverb algorithm models the reflection pattern of a genuinely large space, spacing out early reflections and stretching the decay time far longer than a real room this size could ever fit into a pedal or rack unit. That long, smooth build makes it the natural choice whenever a part needs to feel like it's happening somewhere vast, ambient pads and sustained ballad chords especially, but the same length is exactly why it can swallow fast rhythm parts into mush if it's overused.",
-          "fields": [
-            { "label": "Applications", "value": "Orchestral music, ambient textures, ballads" }
-          ]
-        },
-        {
-          "title": "Room Reverb",
-          "description": "A room reverb models a much smaller, more absorbent space than a hall, which means the reflections decay quickly and never build into a long, obvious tail. That short decay is the whole point: it adds just enough sense of a physical space around an instrument to stop it sounding pasted onto a mix, without drawing attention to the effect itself the way a longer reverb inevitably does.",
-          "fields": [
-            { "label": "Best for", "value": "Adding space without clouding the mix" }
-          ]
-        },
-        {
-          "title": "Chamber Reverb",
-          "description": "Before plates or digital units existed, studios built genuine echo chambers: hard-surfaced rooms with a speaker at one end playing the dry signal and a microphone at the other capturing whatever reflections that specific room produced. Every chamber sounds subtly different because it's a real physical space rather than a manufactured component, which is exactly why the natural chambers built at studios like Abbey Road and Capitol became famous in their own right rather than being interchangeable with any other studio's reverb.",
-          "fields": [
-            { "label": "Famous examples", "value": "Abbey Road chambers, Capitol Studios" }
-          ]
-        },
-        {
-          "title": "Algorithmic Reverb",
-          "description": "Rather than capturing reflections from any physical spring, plate, or room, an algorithmic reverb generates the entire reflection pattern mathematically, which means it isn't limited to recreating spaces that could actually exist. That's what makes shimmer reverbs, reverse reverbs, and other physically-impossible effects possible in the first place, and why a single algorithmic unit can cover everything from a small room to a cathedral to something with no real-world equivalent at all, just by changing parameters rather than swapping hardware.",
-          "fields": [
-            { "label": "Examples", "value": "Lexicon, TC Electronic, Strymon algorithms" }
+            { "label": "Physical Mechanism", "value": "Suspended tensioned steel sheet vibrated by an audio transducer and contact pickups" },
+            { "label": "Decay Character", "value": "Ultra-dense, silky smooth late reflections without the boingy metallic flutter of springs" },
+            { "label": "High-End Sheen", "value": "Naturally flatters vocals, snare drums, and lead guitar solos with shimmering presence" },
+            { "label": "Studio Benchmark", "value": "The foundational reverb heard across Abbey Road (The Beatles, Pink Floyd) and 1970s rock" }
+          ],
+          "items": [
+            "The premier reverb choice for melodic guitar solos: adds luxurious three-dimensional depth without cluttering the bass",
+            "Dampening pads adjusted the decay time mechanically from 0.5 to 5.0 seconds",
+            "Modern pedal DSP algorithms replicate the dense diffusion and sparkling top end of the EMT 140 in a compact box"
           ]
         }
       ]
     },
     {
-      "title": "Legendary Reverb Units",
-      "layout": "list",
+      "title": "Algorithmic & Modern Digital Reverbs",
+      "subtitle": "How microprocessors simulate real-world spaces and craft surreal ambient soundscapes",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
       "cards": [
         {
-          "title": "Lexicon 480L",
-          "description": "Released in 1986, the 480L's algorithms were tuned by ear rather than purely by the underlying math, which is why they still sound more musical than many later, more mathematically \"accurate\" digital reverbs. That reputation made it the default reverb in professional studios through the 1990s and 2000s, to the point that its factory presets are still the reference other reverb plugins get compared against.",
+          "title": "Room, Chamber & Hall Algorithms",
+          "badge": { "text": "Acoustic Simulation", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "Algorithmic digital reverbs use complex feedback delay networks (FDNs) containing dozens of interconnected delay lines with micro-diffusers and low-pass damping filters to recreate real acoustic enclosures.",
+          "bgColor": "bg-emerald-50",
           "fields": [
-            { "label": "Signature Sound", "value": "Lush, musical digital reverbs with excellent diffusion and natural decay" },
-            { "label": "Where It's Heard", "value": "Professional studios and film-score stages worldwide from the late 1980s onward" }
-          ]
-        },
-        {
-          "title": "EMT 140 Plate Reverb",
-          "description": "Introduced in 1957, the EMT 140 was the first commercially available plate reverb, and its roughly 4x8 foot steel sheet became so standard that major studios like Abbey Road and Motown built dedicated rooms just to house them. Because a real EMT 140 is enormous and expensive to maintain, its distinctive bright, dense decay is now one of the most commonly modeled reverb characters in modern plugins and pedals.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Smooth, dense reverb with bright character and musical decay" },
-            { "label": "Where It's Heard", "value": "Standard studio reverb at Abbey Road, Motown, and countless other studios through the 1960s-80s" }
-          ]
-        },
-        {
-          "title": "Fender Spring Reverb",
-          "description": "Fender began building spring tanks directly into amps like the Twin Reverb and Deluxe Reverb in the early 1960s, putting a mechanical reverb within reach of any guitarist who could afford the amp rather than a separate studio unit. That built-in, always-on availability, combined with the spring's bright, splashy \"drip\" character, is exactly what made it the default sound of surf and rockabilly guitar rather than a stylistic choice players had to seek out.",
-          "fields": [
-            { "label": "Signature Sound", "value": "Bright, splashy reverb with distinctive spring crash when amp is moved" }
+            { "label": "Room Mode", "value": "Short decay (0.4s–1.2s) with prominent early reflections; adds realistic studio air and intimate punch" },
+            { "label": "Chamber Mode", "value": "Medium decay (1.5s–2.5s) with high diffusion; smooth, clear, classic 1950s echo chamber warmth" },
+            { "label": "Hall Mode", "value": "Long decay (2.5s–6.0s) simulating symphony concert halls; expansive, lush, majestic depth" }
           ],
           "items": [
-            "Dick Dale - King of surf guitar",
-            "The Ventures - Instrumental surf",
-            "Hank Marvin - The Shadows",
-            "Country and rockabilly players",
-            "Modern surf revival bands"
+            "Room settings make dry electric guitar tracks sound like they were recorded in a world-class studio room",
+            "Hall settings provide luxurious, soaring sustain for slow ballad solos, emotional bends, and clean chord progressions"
           ]
         },
+        {
+          "title": "Shimmer & Pitch-Shifted Cloud Reverb",
+          "badge": { "text": "Ambient Innovation", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "Pioneered in the 1980s by ambient producers Brian Eno and Daniel Lanois (using Lexicon and Eventide rack processors for U2's The Unforgettable Fire). Routes the decaying tail of a reverb back through a +1 octave pitch-shifter inside a feedback loop.",
+          "bgColor": "bg-purple-50",
+          "fields": [
+            { "label": "The Shimmer Loop", "value": "Reverb Tail → Octave-Up Pitch Shifter → Feedback Regeneration → Shimmering Cloud" },
+            { "label": "Sonic Texture", "value": "Transforms single guitar chords into celestial, symphonic strings and angelic vocal pads" },
+            { "label": "Famous Users", "value": "The Edge (U2), modern post-rock bands (Explosions in the Sky), modern worship guitarists" }
+          ],
+          "items": [
+            "Allows a solo guitarist to fill a massive venue with lush, cinematic orchestral harmony",
+            "Pairing shimmer with a volume pedal creates seamless, bowed string swells and ambient film soundtrack textures"
+          ]
+        },
+        {
+          "title": "Gated & Reverse Reverbs",
+          "badge": { "text": "Experimental Textures", "bgColor": "bg-indigo-100", "textColor": "text-indigo-800" },
+          "description": "Specialized non-linear reverbs. Gated reverb cuts off the decaying tail abruptly with an electronic noise gate; Reverse reverb records incoming notes into a buffer and plays the decaying reflections backward in time.",
+          "bgColor": "bg-indigo-50",
+          "fields": [
+            { "label": "Gated Reverb", "value": "Explosive, punchy initial burst that silences instantly; made famous in 1980s pop/rock" },
+            { "label": "Reverse Reverb", "value": "Reflections swell backward from silence into a loud peak before the original note; surreal, dreamy wash" },
+            { "label": "Famous Origin", "value": "Kevin Shields (My Bloody Valentine) using reverse reverb into high-gain fuzz on Loveless" }
+          ],
+          "items": [
+            "Reverse reverb is the foundational acoustic cornerstone of the 1990s shoegaze and dream-pop movements",
+            "Gated reverb adds dramatic percussive impact to rhythm stabs without creating muddy ambient clutter"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legendary Benchmark Reverb Pedals",
+      "subtitle": "The industry-standard stompboxes trusted on international stadium stages and studio consoles",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-3",
+      "cards": [
         {
           "title": "Strymon BigSky",
-          "description": "Released in 2013, the BigSky packs twelve distinct reverb algorithms, spring, plate, hall, and several physically-impossible types, into a single pedal running at a high enough processing quality that it's routinely used in professional studios rather than just live rigs. That combination of studio-grade sound with pedalboard convenience is what closed the gap between a rack reverb unit and a stompbox for a lot of working guitarists.",
+          "badge": { "text": "The Studio Supercomputer", "bgColor": "bg-purple-100", "textColor": "text-purple-800" },
+          "description": "The undisputed benchmark for ambient, studio, and worship guitarists. Powered by a high-performance SHARC DSP chip, BigSky houses 12 studio-grade reverb machines—including the iconic Cloud, Shimmer, Bloom, Plate, and Spring—300 preset memories, and full MIDI control.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Signature Sound", "value": "High-quality digital reverbs with extensive tweakability and pristine sound" }
+            { "label": "12 Reverb Engines", "value": "Room, Hall, Plate, Spring, Swell, Bloom, Cloud, Chorale, Shimmer, Magneto, Nonlinear, Reflections" },
+            { "label": "Cloud Machine", "value": "Radically large, ultra-diffuse ambient cloud that turns simple notes into gorgeous orchestral pads" },
+            { "label": "Infinite / Freeze Hold", "value": "Press and hold the active footswitch to sustain an ambient reverb chord indefinitely while soloing over it" },
+            { "label": "Hardware Features", "value": "Ultra-low-noise 24-bit/96kHz converters, full stereo I/O, MIDI in/out, assignable expression routing" }
           ],
           "items": [
-            "12 reverb algorithms",
-            "Studio-quality processing",
-            "MIDI control capabilities",
-            "Preset storage",
-            "Expression pedal control"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Understanding Reverb Parameters",
-      "subtitle": "Essential Controls",
-      "bgColor": "bg-teal-50",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Basic Parameters",
-          "fields": [
-            { "label": "Decay/Time", "value": "How long reverb lasts" },
-            { "label": "Pre-delay", "value": "Gap before reverb starts" },
-            { "label": "Mix/Level", "value": "Wet/dry balance" },
-            { "label": "Tone/Damping", "value": "High-frequency filtering" }
+            "The industry benchmark standard found on almost every professional touring pedalboard in modern rock and ambient music",
+            "Independent Tone, Param, and Decay controls allow sculpting the exact frequency damping of the reverb tail",
+            "Analog dry-through ensures your original guitar signal never undergoes digital conversion"
           ]
         },
         {
-          "title": "Advanced Parameters",
+          "title": "Boss RV-6 Reverb",
+          "badge": { "text": "The Compact Standard", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The quintessential compact reverb workhorse. Driven by cutting-edge Boss DSP algorithms, the RV-6 features 8 versatile reverb modes—including lush Hall, realistic Spring, pristine Plate, Shimmer, and Dynamic (auto-ducking) reverb—with full stereo inputs and outputs.",
+          "bgColor": "bg-slate-50",
           "fields": [
-            { "label": "Diffusion", "value": "Echo density and smoothness" },
-            { "label": "Size", "value": "Apparent room size" },
-            { "label": "Early/Late Balance", "value": "Reflection mix" },
-            { "label": "Modulation", "value": "Movement in the reverb tail" }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Using Reverb Effectively",
-      "layout": "grid-2",
-      "cards": [
-        {
-          "title": "Musical Guidelines",
-          "bgColor": "bg-cyan-50",
-          "description": "How much reverb a part needs depends entirely on what else is happening in the mix: a solo instrument in a sparse arrangement can carry a long, obvious reverb tail, but the same setting on a rhythm part in a dense mix just turns into mud, since every note's tail overlaps the next note's attack. Pre-delay is the fix for the most common problem this causes, pushing the reverb tail back a few milliseconds so the dry attack of each note stays clear before the wash of reflections arrives.",
+            { "label": "8 Reverb Modes", "value": "Hall, Plate, Room, Spring, Modulate, +Delay, Shimmer, and Dynamic" },
+            { "label": "Dynamic Ducking", "value": "Automatically ducks reverb level while you play fast passages, blooming in full when you hold a note" },
+            { "label": "Expression Jack", "value": "Connect an EV-5 expression pedal to control overall effect level with your foot in real time" },
+            { "label": "Stereo Routing", "value": "True stereo inputs and outputs with auto-sensing mono/stereo switching" }
+          ],
           "items": [
-            "Match reverb to musical style",
-            "Use pre-delay to maintain clarity",
-            "EQ reverb returns appropriately",
-            "Consider the mix context",
-            "Less reverb in busy arrangements",
-            "More reverb for emotional impact"
+            "Modulate mode blends warm spatial chorus into a deep hall reverb for gorgeous 3D clean arpeggios",
+            "Shimmer mode adds pristine, musical octave-up sheen that never sounds shrill or harsh",
+            "Indestructible Boss compact metal enclosure built to survive decades of worldwide stage touring"
           ]
         },
         {
-          "title": "Technical Tips",
-          "bgColor": "bg-teal-50",
-          "description": "Reverb belongs at the end of the signal chain because it's meant to simulate the space the final, fully-shaped tone exists in, not the raw dry signal before distortion or EQ have done their work. High-passing the reverb return around 80-100Hz matters for the same reason a boomy room sounds bad in real life: low frequencies build up disproportionately in any reflective space, so an unfiltered reverb tail muddies the low end far more than it adds to the highs.",
+          "title": "TC Electronic Hall of Fame 2",
+          "badge": { "text": "TonePrint & MASH Innovator", "bgColor": "bg-emerald-100", "textColor": "text-emerald-800" },
+          "description": "A feature-packed digital reverb pedal featuring TC Electronic's groundbreaking MASH technology. The footswitch acts as a pressure-sensitive expression controller in real time, while TonePrint technology lets you beam custom artist presets wirelessly via your smartphone.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "MASH Technology", "value": "Pressure-sensitive footswitch controls decay tail, shimmer intensity, or mix based on foot pressure" },
+            { "label": "10 Reverb Types", "value": "Room, Hall, Spring, Plate, Church, Shimmer, Mod, Lofi, and 3 custom TonePrint slots" },
+            { "label": "Shimmer Algorithm", "value": "Co-developed with TC-Helicon; incorporates polyphonic octave pitch-shifting algorithm" }
+          ],
           "items": [
-            "Place reverb last in signal chain",
-            "Use sends/returns when possible",
-            "High-pass filter reverb at 80-100Hz",
-            "Automate reverb for dynamics",
-            "Layer different reverb types",
-            "Use reverb tails as transitions"
+            "True bypass or buffered bypass with analog dry-through preserves 100% pure guitar tone",
+            "Stereo I/O delivers expansive spatial imaging across two amplifiers or recording interfaces",
+            "TonePrint editor software lets you design your own signature reverbs from your computer or smartphone"
           ]
         }
       ]
     },
     {
-      "title": "Reverb Settings Guide",
+      "title": "Spring & Vintage Specialized Stompboxes",
+      "subtitle": "Dedicated analog and vintage-voiced units for surf, blues, and vintage indie tone",
+      "bgColor": "bg-white",
+      "borderColor": "",
       "layout": "grid-3",
-      "warningText": "The key to great reverb is restraint. Start with less than you think you need, then gradually add more. Reverb should enhance your sound, not dominate it.",
       "cards": [
         {
-          "title": "Subtle Enhancement",
+          "title": "Electro-Harmonix Holy Grail",
+          "badge": { "text": "The Indie Surf Classic", "bgColor": "bg-red-100", "textColor": "text-red-800" },
+          "description": "The simple, beloved compact reverb that helped launch the boutique digital pedal movement. Controlled by a single Reverb knob and a 3-way toggle switch (Spring, Hall, and the bizarre flanged 'Flerb'), it remains a staple on indie, garage, and alternative pedalboards.",
+          "bgColor": "bg-red-50",
+          "fields": [
+            { "label": "Controls", "value": "Single Reverb blend knob + 3-way slide switch (Spring, Hall, Flerb)" },
+            { "label": "Spring Algorithm", "value": "Faithfully emulates the splashy, drippy character of vintage Fender spring reverb tanks" },
+            { "label": "Famous Users", "value": "Jack White, Dan Auerbach (The Black Keys), Kurt Vile" }
+          ],
           "items": [
-            "Type: Room or small hall",
-            "Decay: 0.8-1.5 seconds",
-            "Mix: 15-25%",
-            "Use: Natural space"
+            "Minimalist single-knob design lets you dial in the perfect room space in under two seconds",
+            "The Spring setting produces authentic Dick Dale surf drip when picking hard near the guitar bridge",
+            "Die-cast chassis with true bypass to keep your clean tone completely uncolored when disengaged"
           ]
         },
         {
-          "title": "Classic Rock/Pop",
+          "title": "Strymon Flint",
+          "badge": { "text": "Vintage Tremolo & Reverb Duet", "bgColor": "bg-amber-100", "textColor": "text-amber-800" },
+          "description": "The definitive tribute to the classic pairing of tube tremolo and vintage reverb found on legendary American amplifiers of the 1960s, 70s, and 80s. Houses three distinct historical reverb eras paired with three classic tremolo circuits.",
+          "bgColor": "bg-amber-50",
+          "fields": [
+            { "label": "'60s Spring Reverb", "value": "Faithful recreation of a full-size 2-spring tank with mechanical drip and splash" },
+            { "label": "'70s Electronic Plate", "value": "Smooth, rich, multi-layered plate reverb simulating early studio digital plates" },
+            { "label": "'80s Rack Hall", "value": "Dense, dimensional digital rack reverberator with complex early reflections" },
+            { "label": "Dual Footswitches", "value": "Independent bypass and controls for both Reverb and Tremolo sections" }
+          ],
           "items": [
-            "Type: Plate or hall",
-            "Decay: 1.5-3 seconds",
-            "Mix: 25-40%",
-            "Use: Musical enhancement"
+            "Allows re-ordering the signal path: run Tremolo into Reverb, or Reverb into Tremolo",
+            "The quintessential pedal for vintage soul, blues, surf rock, country twang, and indie pop",
+            "Ultra-low-noise 24-bit/96kHz processing with analog dry-through and full stereo inputs/outputs"
           ]
         },
         {
-          "title": "Ambient/Atmospheric",
+          "title": "Fender '65 Princeton Reverb",
+          "badge": { "text": "The Real Glass & Spring Benchmark", "bgColor": "bg-blue-100", "textColor": "text-blue-800" },
+          "description": "The legendary 12-watt all-tube combo amplifier featuring an authentic, tube-driven long-spring physical reverb tank. Powered by a 12AT7 tube driver and recovery circuit, the Princeton's physical spring reverb delivers the gold standard against which all digital pedals are measured.",
+          "bgColor": "bg-slate-50",
+          "fields": [
+            { "label": "Physical Spring Tank", "value": "Long 2-spring electromechanical tank mounted inside the bottom of the solid pine cabinet" },
+            { "label": "Tube Driver Circuit", "value": "High-voltage 12AT7 tube driver transformer pushing the springs with genuine analog warmth" },
+            { "label": "Acoustic Interaction", "value": "The speaker vibrating inside the pine cabinet acoustically feeds back into the springs, creating organic bloom" }
+          ],
           "items": [
-            "Type: Hall or shimmer",
-            "Decay: 4+ seconds",
-            "Mix: 40-60%",
-            "Use: Soundscapes"
+            "The most recorded small tube combo amplifier in music history, heard on countless blues, country, and pop records",
+            "Physical counter-wound springs produce genuine physical dispersion that digital algorithms strive to simulate",
+            "Integrated tube bias tremolo creates the warm, pulsing vibrato that defined 1960s rock recordings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reverb Algorithm Comparison Matrix",
+      "subtitle": "Head-to-head comparison across primary reverb formats and sonic spaces",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "table",
+      "tableHeaders": ["Reverb Type", "Physical Source / DSP", "Decay Tail Density", "High-Frequency Sparkle", "Dynamic Ducking Ability", "Primary Musical Genre"],
+      "tableRows": [
+        ["Spring Tank (e.g. Fender Reverb)", "Electromechanical coiled steel springs", "Sparse; metallic boing & drip flutter", "Bright & cutting; sharp treble splash", "Low (Reacts heavily to pick transients)", "Surf Rock, Rockabilly, Blues, Garage, Country"],
+        ["Plate Reverb (e.g. EMT 140)", "Suspended cold-rolled steel sheet", "Extremely dense & silky smooth diffusion", "Exceptional high-frequency shimmer", "Moderate (Sits comfortably behind leads)", "Classic Rock Solos, 1970s Stadium Leads, Pop Vocals"],
+        ["Hall / Chamber", "Simulated large concert auditorium", "Gradual diffuse buildup; long decay tails", "Warm, balanced, realistic room damping", "High (Preserves clarity when pre-delay is tuned)", "Ambient, Orchestral, Progressive Rock, Ballads"],
+        ["Shimmer Reverb", "Regenerative octave-up pitch-shift loop", "Expansive, sustained celestial pad wash", "Luminous, angelic, organ-like sheen", "Low (Fills all acoustic spectrum)", "Modern Worship, Cinematic Scoring, Post-Rock, Dream Pop"]
+      ]
+    },
+    {
+      "title": "Dialing In Reverb: Pre-Delay & Frequency Clarity",
+      "subtitle": "Professional engineering techniques to keep your guitar articulate and prevent muddy clutter",
+      "bgColor": "bg-white",
+      "borderColor": "",
+      "layout": "grid-2",
+      "cards": [
+        {
+          "title": "The Pre-Delay Secret: Protecting Your Pick Attack",
+          "description": "The number one cause of muddy, washed-out guitar tone is setting your reverb without sufficient Pre-Delay. Pre-Delay is the intentional gap of silence (in milliseconds) between when your pick strikes the string and when the diffuse reverb cloud begins to bloom. Without pre-delay, the reverb cloud immediately smothers the initial pick transient.",
+          "bgColor": "bg-blue-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Fast Lead Solos", "value": "Set Pre-Delay to 30ms–50ms: Lets every picked note ring out with razor-sharp clarity before the reverb blooms" },
+            { "label": "Rhythm Chords", "value": "Set Pre-Delay to 10ms–20ms: Adds natural acoustic room depth without dragging the rhythm tempo" },
+            { "label": "Ambient Swells", "value": "Set Pre-Delay to 0ms: Dissolves the pick transient entirely for smooth, pad-like string washes" }
+          ],
+          "items": [
+            "Separates the dry, punchy direct guitar note from the ambient space behind it",
+            "Allows you to use large, majestic hall reverbs without losing note articulation on fast blues and rock runs",
+            "Top studio engineers never mix reverb on guitars without fine-tuning pre-delay to match the song's tempo"
+          ]
+        },
+        {
+          "title": "Signal Chain Placement & Effects Loop Mastery",
+          "description": "Because reverb simulates an acoustic room, it must sit at the very end of your pedalboard signal chain. Placing a high-gain distortion or fuzz pedal AFTER a reverb causes the distortion circuit to amplify and violently compress thousands of subtle reverb reflections simultaneously, turning your tone into an indecipherable roar of white noise.",
+          "bgColor": "bg-purple-50",
+          "borderColor": "",
+          "fields": [
+            { "label": "Pedalboard Golden Rule", "value": "Guitar → Tuner → Wah → Overdrive/Distortion → Modulation → Delay → REVERB → Amp" },
+            { "label": "Using Amp Tube Distortion", "value": "Place Reverb in your amplifier's EFFECTS LOOP (FX Send → Delay → Reverb → FX Return)" },
+            { "label": "The Shoegaze Exception", "value": "Placing Reverb BEFORE Fuzz is an intentional experimental technique (pioneered by My Bloody Valentine) to create chaotic, textured walls of noise" }
+          ],
+          "items": [
+            "Keeping Reverb at the end ensures that your delays and reverbs reflect your finished, polished guitar tone cleanly",
+            "In an amplifier's effects loop, reverb operates after the preamp tube distortion stages, keeping reflections crystal-clear",
+            "Always cut sub-100Hz low end on digital reverbs to avoid muddying the bass guitar and kick drum in live mixes"
           ]
         }
       ]
     }
   ],
-  "relatedTopics": []
+  "relatedTopics": [
+    {
+      "title": "Delay Pedals Guide",
+      "href": "/lessons/gear/effects/delay",
+      "description": "Analog bucket-brigade repeats, tape warble, and rhythmic dotted-eighth patterns",
+      "icon": "⏱️",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Chorus Pedals Guide",
+      "href": "/lessons/gear/effects/chorus",
+      "description": "Modulated short delay lines, true spatial stereo, and 1980s bucket-brigade shimmer",
+      "icon": "🌊",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Tube Amplifiers Guide",
+      "href": "/lessons/gear/amps/tube",
+      "description": "Thermionic valve physics, tube-driven spring reverb tanks, and optical vibrato circuits",
+      "icon": "🔥",
+      "bgColor": "bg-white"
+    },
+    {
+      "title": "Studio Monitors & Headphones",
+      "href": "/lessons/gear/recording/monitors-headphones",
+      "description": "Flat-frequency acoustic reference monitoring to evaluate stereo reverb tails and spatial depth",
+      "icon": "🎧",
+      "bgColor": "bg-white"
+    }
+  ]
 }
