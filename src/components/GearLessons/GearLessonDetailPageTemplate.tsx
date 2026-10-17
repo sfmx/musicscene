@@ -19,30 +19,32 @@ function CardComponent({ card }: { card: GearContentCard }) {
   const retailers = getRetailerLinks(card.title);
 
   return (
-    <div className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+    <div className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between overflow-hidden min-w-0">
       <div>
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2">
-            {card.icon && <span className="text-lg">{card.icon}</span>}
+        <div className="mb-3">
+          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2 leading-snug">
+            {card.icon && <span className="text-lg shrink-0">{card.icon}</span>}
             {card.number !== undefined && (
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 font-bold text-xs">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 font-bold text-xs shrink-0">
                 {card.number}
               </span>
             )}
             <AffiliateLink productName={card.title} className="text-slate-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors" />
           </h3>
-          <div className="flex items-center gap-1.5 shrink-0">
-            {card.badge && (
-              <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30">
-                {typeof card.badge === 'string' ? card.badge : card.badge.text}
-              </span>
-            )}
-            {explicitProduct && (
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-500/30">
-                ⭐ Curated Gear
-              </span>
-            )}
-          </div>
+          {(card.badge || explicitProduct) && (
+            <div className="flex flex-wrap items-center gap-1.5 mt-2">
+              {card.badge && (
+                <span className="inline-block px-2 py-0.5 text-[11px] font-semibold rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30">
+                  {typeof card.badge === 'string' ? card.badge : card.badge.text}
+                </span>
+              )}
+              {explicitProduct && (
+                <span className="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-500/30">
+                  ⭐ Curated Gear
+                </span>
+              )}
+            </div>
+          )}
         </div>
         {card.description && <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-3">{card.description}</p>}
         {card.fields && card.fields.length > 0 && (
@@ -113,7 +115,7 @@ function SectionComponent({ section }: { section: GearContentSection }) {
   const layoutClasses: Record<string, string> = {
     'grid-2': 'grid grid-cols-1 md:grid-cols-2 gap-6',
     'grid-3': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6',
-    'grid-4': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6',
+    'grid-4': 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6',
     'list': 'space-y-6',
     'numbered-steps': 'space-y-6',
   };
@@ -181,7 +183,7 @@ export default function GearLessonDetailPageTemplate({ dataKey }: Props) {
         category="🎸 Guitar Gear &amp; Tone Lab"
       />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-20 transition-colors">
-        <main className="max-w-4xl mx-auto px-4 py-8">
+        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Breadcrumbs pathname={pathname} pageTitle={data.pageTitle} />
 
           {/* Introduction */}
@@ -197,7 +199,7 @@ export default function GearLessonDetailPageTemplate({ dataKey }: Props) {
                 </div>
               )}
               {data.introduction.columns && data.introduction.columns.length > 0 && (
-                <div className={'grid md:grid-cols-' + data.introduction.columns.length + ' gap-4 mt-6'}>
+                <div className={`grid grid-cols-1 ${data.introduction.columns.length > 1 ? 'md:grid-cols-2' : ''} gap-4 mt-6`}>
                   {data.introduction.columns.map((col, i) => (
                     <div key={i} className="bg-white/80 dark:bg-slate-950/80 rounded-xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
                       {col.title && (

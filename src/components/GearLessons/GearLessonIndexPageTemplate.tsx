@@ -9,17 +9,19 @@ import { getGearIndexData, GearIndexData, GearContentSection, GearContentCard } 
 
 function CardComponent({ card }: { card: GearContentCard }) {
   return (
-    <div className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+    <div className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between overflow-hidden min-w-0">
       <div>
-        <div className="flex items-start justify-between mb-2">
-          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            {card.icon && <span className="text-lg">{card.icon}</span>}
+        <div className="mb-3">
+          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-1.5 leading-snug">
+            {card.icon && <span className="text-lg shrink-0">{card.icon}</span>}
             {card.title}
           </h3>
           {card.badge && (
-            <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30">
-              {typeof card.badge === 'string' ? card.badge : card.badge.text}
-            </span>
+            <div className="flex flex-wrap items-center gap-1.5 mt-2">
+              <span className="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30">
+                {typeof card.badge === 'string' ? card.badge : card.badge.text}
+              </span>
+            </div>
           )}
         </div>
         {card.description && <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-3">{card.description}</p>}
@@ -52,7 +54,7 @@ function SectionComponent({ section }: { section: GearContentSection }) {
   const layoutClasses: Record<string, string> = {
     'grid-2': 'grid grid-cols-1 md:grid-cols-2 gap-6',
     'grid-3': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6',
-    'grid-4': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6',
+    'grid-4': 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6',
     'list': 'space-y-6',
     'numbered-steps': 'space-y-6',
   };
