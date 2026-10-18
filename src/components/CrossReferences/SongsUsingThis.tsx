@@ -69,7 +69,7 @@ export default function SongsUsingThis({ type, slug }: Props) {
             <Link
               key={song.id}
               href={targetUrl}
-              className={`group rounded-xl p-4 border transition-all duration-200 flex flex-col justify-between ${
+              className={`group rounded-xl p-4 border transition-all duration-200 flex flex-col justify-between overflow-hidden min-w-0 ${
                 hasCuratedBreakdown
                   ? 'bg-amber-50/50 dark:bg-slate-950/90 border-amber-300 dark:border-amber-500/40 hover:border-amber-500 dark:hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-slate-900/90 hover:shadow-md dark:hover:shadow-lg dark:hover:shadow-amber-950/20'
                   : 'bg-slate-50 dark:bg-slate-950/80 border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:bg-white dark:hover:bg-slate-900/80 hover:shadow-md dark:hover:shadow-lg'
@@ -77,7 +77,7 @@ export default function SongsUsingThis({ type, slug }: Props) {
             >
               <div>
                 <div className="flex items-center justify-between gap-1 mb-1">
-                  <h3 className="font-semibold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-300 transition-colors text-sm">{song.title}</h3>
+                  <h3 className="font-semibold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-300 transition-colors text-sm leading-snug">{song.title}</h3>
                 </div>
 
                 {hasCuratedBreakdown && (
@@ -89,9 +89,9 @@ export default function SongsUsingThis({ type, slug }: Props) {
                 )}
               </div>
 
-              <div className="flex items-center justify-between mt-3 pt-2 border-t border-slate-200 dark:border-slate-800">
+              <div className="flex flex-wrap items-center justify-between gap-1.5 mt-3 pt-2 border-t border-slate-200 dark:border-slate-800">
                 {song.difficulty ? (
-                  <span className={`text-[11px] px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                  <span className={`text-[11px] px-2 py-0.5 rounded-full border shrink-0 ${getDifficultyColor(song.difficulty)}`}>
                     {song.difficulty}
                   </span>
                 ) : <span />}

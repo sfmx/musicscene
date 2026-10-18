@@ -224,14 +224,14 @@ export default function SongsRootIndexPageTemplate() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {data.learningPath.steps.map((step, i) => {
               const href = step.href || '/lessons/songs/analysis-method';
               return (
                 <Link
                   key={i}
                   href={href}
-                  className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-400 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between group"
+                  className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-400 hover:shadow-lg dark:hover:shadow-amber-500/5 transition-all flex flex-col justify-between group overflow-hidden min-w-0"
                 >
                   <div>
                     <div className="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-xs flex items-center justify-center border border-amber-300 dark:border-amber-700/50 mb-3 group-hover:scale-110 transition-transform">
@@ -319,12 +319,12 @@ export default function SongsRootIndexPageTemplate() {
               </p>
 
               {/* Pathway Song Steps */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
                 {activePathway.songs.map((song) => (
                   <Link
                     key={song.slug}
                     href={`/lessons/songs/song-analysis/${song.slug}`}
-                    className="bg-white dark:bg-slate-900 rounded-xl p-3.5 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-xs"
+                    className="bg-white dark:bg-slate-900 rounded-xl p-3.5 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-xs overflow-hidden min-w-0"
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1 mb-1.5">

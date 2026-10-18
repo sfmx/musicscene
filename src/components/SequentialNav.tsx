@@ -21,12 +21,12 @@ export default function SequentialNav({ nav, typeLabel }: Props) {
         {nav.prev ? (
           <Link
             href={nav.prev.href}
-            className="group bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 dark:hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center gap-3 shadow-md"
+            className="group bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 dark:hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center gap-3 shadow-md overflow-hidden min-w-0"
           >
-            <span className="text-amber-600 dark:text-amber-400 font-bold text-lg group-hover:-translate-x-1 transition-transform">
+            <span className="text-amber-600 dark:text-amber-400 font-bold text-lg group-hover:-translate-x-1 transition-transform shrink-0">
               ←
             </span>
-            <div className="text-left">
+            <div className="text-left flex-1 min-w-0">
               <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 {prevLabel}
               </div>
@@ -42,9 +42,9 @@ export default function SequentialNav({ nav, typeLabel }: Props) {
         {nav.next ? (
           <Link
             href={nav.next.href}
-            className="group bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 dark:hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center justify-between sm:justify-end gap-3 text-right shadow-md"
+            className="group bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800/90 border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 dark:hover:border-slate-700 rounded-xl p-4 transition-all duration-200 flex items-center justify-between sm:justify-end gap-3 text-right shadow-md overflow-hidden min-w-0"
           >
-            <div className="text-left sm:text-right">
+            <div className="text-left sm:text-right flex-1 min-w-0">
               <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 {nextLabel}
               </div>
@@ -52,7 +52,7 @@ export default function SequentialNav({ nav, typeLabel }: Props) {
                 {nav.next.label}
               </div>
             </div>
-            <span className="text-amber-600 dark:text-amber-400 font-bold text-lg group-hover:translate-x-1 transition-transform">
+            <span className="text-amber-600 dark:text-amber-400 font-bold text-lg group-hover:translate-x-1 transition-transform shrink-0">
               →
             </span>
           </Link>

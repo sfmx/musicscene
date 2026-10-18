@@ -145,15 +145,15 @@ export default function PracticeIndexPageTemplate({ category }: Props) {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="bg-white dark:bg-slate-900/90 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-300 shadow-sm hover:shadow-xl hover:scale-[1.02] group flex flex-col justify-between"
+                  className="bg-white dark:bg-slate-900/90 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-300 shadow-sm hover:shadow-xl hover:scale-[1.02] group flex flex-col justify-between overflow-hidden min-w-0"
                 >
                   <div className="text-center">
                     <div className="mb-4 group-hover:scale-110 transition-transform">
                       <span style={{ fontSize: 32 }}>{item.icon}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors mb-2">{item.name}</h3>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors mb-2 leading-snug">{item.name}</h3>
                     {(item.difficulty || item.duration) && (
-                      <div className="flex justify-center gap-2 mb-3">
+                      <div className="flex flex-wrap justify-center gap-2 mb-3">
                         {item.difficulty && (
                           <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold border ${getDifficultyColor(item.difficulty)}`}>
                             {item.difficulty}

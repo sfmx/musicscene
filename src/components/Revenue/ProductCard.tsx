@@ -49,9 +49,9 @@ export default function ProductCard({
 
   if (compact) {
     return (
-      <div className={`bg-white dark:bg-slate-900/80 rounded-xl p-3 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-all ${className}`}>
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <div className="flex items-center gap-1.5 min-w-0">
+      <div className={`bg-white dark:bg-slate-900/80 rounded-xl p-3 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0 ${className}`}>
+        <div className="flex flex-wrap items-center justify-between gap-1.5 mb-2">
+          <div className="flex items-center gap-1.5 min-w-0 flex-1">
             <span className="text-base flex-shrink-0">{icon}</span>
             <a
               href={product?.url || '#'}
@@ -108,16 +108,16 @@ export default function ProductCard({
   }
 
   return (
-    <div className={`bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-all ${className}`}>
+    <div className={`bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0 ${className}`}>
       <div>
-        <div className="flex items-center justify-between gap-2 mb-2.5">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5">
           <div className="flex items-center gap-2">
             <span className="text-lg">{icon}</span>
             <span className="text-[11px] font-bold uppercase tracking-wider text-purple-700 dark:text-purple-400">
               {label || category}
             </span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex flex-wrap items-center gap-1.5">
             {badge && (
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
                 {badge}

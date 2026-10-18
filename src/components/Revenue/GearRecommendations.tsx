@@ -20,7 +20,7 @@ export default function GearRecommendations({ title = 'Recommended Gear for This
   return (
     <section className="mb-12">
       <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 pb-3 border-b border-slate-200 dark:border-slate-800">{title}</h2>
-      <div className={`grid gap-6 ${items.length === 1 ? 'md:grid-cols-1' : items.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
+      <div className={`grid gap-6 ${items.length === 1 ? 'grid-cols-1' : items.length === 2 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'}`}>
         {items.map((item, i) => (
           <ProductCard
             key={i}

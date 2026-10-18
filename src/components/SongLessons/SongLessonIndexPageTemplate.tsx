@@ -28,7 +28,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
   return (
     <Layout>
       <Header title={data.pageTitle} subtitle={data.subtitle} />
-      <main className="max-w-6xl mx-auto px-4 py-12">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Navigation */}
         <Breadcrumbs pathname={`/lessons/songs/${category}`} pageTitle={data.pageTitle} />
 
@@ -112,14 +112,14 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
             )}
             {data.learningPath.type === 'numbered-steps' && (
               <div className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl">
-                <div className="grid md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   {data.learningPath.steps.map((step, i) => {
                     const stepBg = step.colorBg || (step as any).bgColor;
                     const stepText = step.colorText || (step as any).textColor;
                     return (
                       <div
                         key={i}
-                        className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col items-center text-center"
+                        className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col items-center text-center overflow-hidden min-w-0"
                       >
                         <div
                           className={`w-12 h-12 rounded-full flex items-center justify-center mb-3 border ${getStepColorClasses(
@@ -129,7 +129,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                         >
                           <span className="font-bold text-base">{step.number || i + 1}</span>
                         </div>
-                        <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1.5">{step.title}</h3>
+                        <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1.5 leading-snug">{step.title}</h3>
                         {step.description && (
                           <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">{step.description}</p>
                         )}
@@ -148,7 +148,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
             <Link
               key={topic.href}
               href={topic.href}
-              className="group bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm hover:shadow-xl dark:hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-amber-400/50 dark:hover:border-slate-700 flex flex-col justify-between"
+              className="group bg-white dark:bg-slate-900/90 rounded-2xl shadow-sm hover:shadow-xl dark:hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-amber-400/50 dark:hover:border-slate-700 flex flex-col justify-between min-w-0"
             >
               <div className="p-6">
                 <div className="flex items-center mb-3">
@@ -160,7 +160,7 @@ export default function SongLessonIndexPageTemplate({ category }: Props) {
                 <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mb-4 leading-relaxed">{topic.description}</p>
               </div>
 
-              <div className="px-6 pb-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs">
+              <div className="px-6 pb-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2 flex-wrap text-xs">
                 {topic.difficulty && (
                   <span className={`px-2.5 py-0.5 rounded-full font-semibold border ${getDifficultyColor(topic.difficulty)} font-semibold`}>
                     {topic.difficulty}

@@ -742,13 +742,13 @@ export default function SongDiscoveryHub() {
                       {pathway.songs.map((song) => (
                         <div
                           key={song.slug}
-                          className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-amber-400 dark:hover:border-slate-700 transition-all"
+                          className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-amber-400 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0"
                         >
-                          <div className="flex items-start gap-4 flex-1">
+                          <div className="flex items-start gap-4 flex-1 min-w-0">
                             <div className="shrink-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold flex items-center justify-center text-sm border border-amber-300 dark:border-amber-700/50">
                               {song.stepNumber}
                             </div>
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 flex-wrap mb-1">
                                 <Link
                                   href={`/lessons/songs/song-analysis/${song.slug}`}

@@ -99,15 +99,15 @@ export default function TheoryCurriculumSection() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className={`bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${pillar.borderHover} shadow-sm hover:shadow-xl flex flex-col justify-between group`}
+              className={`bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${pillar.borderHover} shadow-sm hover:shadow-xl flex flex-col justify-between group overflow-hidden min-w-0`}
             >
               <div>
                 {/* Header */}
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                   <span className="text-3xl p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 group-hover:scale-110 transition-transform">
                     {pillar.icon}
                   </span>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shrink-0">
                     {pillar.badge}
                   </span>
                 </div>

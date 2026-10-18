@@ -244,15 +244,15 @@ export default function HomeSongExplorer() {
               return (
                 <div
                   key={song.slug}
-                  className="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-200 shadow-sm hover:shadow-xl flex flex-col justify-between group"
+                  className="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-200 shadow-sm hover:shadow-xl flex flex-col justify-between group overflow-hidden min-w-0"
                 >
                   <div>
                     {/* Top Row: Genre & Difficulty */}
-                    <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="flex flex-wrap items-center justify-between gap-1.5 mb-3">
                       <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 truncate max-w-[160px]">
                         {song.genre}
                       </span>
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border shrink-0 ${getDifficultyColor(song.difficulty)}`}>
                         {song.difficulty}
                       </span>
                     </div>

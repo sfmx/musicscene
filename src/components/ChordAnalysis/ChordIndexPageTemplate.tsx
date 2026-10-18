@@ -198,10 +198,10 @@ export default function ChordIndexPageTemplate() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {data.commonProgressions.map((progression, index) => (
-                  <div key={index} className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-white font-mono">{progression.name}</h3>
-                      <span className="text-xs bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 px-3 py-1 rounded-full font-mono">
+                  <div key={index} className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800 overflow-hidden min-w-0">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                      <h3 className="text-lg font-bold text-slate-900 dark:text-white font-mono leading-snug">{progression.name}</h3>
+                      <span className="text-xs bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 px-3 py-1 rounded-full font-mono shrink-0">
                         {progression.example}
                       </span>
                     </div>

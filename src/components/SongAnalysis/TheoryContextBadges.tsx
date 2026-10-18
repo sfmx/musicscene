@@ -184,14 +184,14 @@ export default function TheoryContextBadges({
           <Link
             key={index}
             href={getTypeUrl(item)}
-            className={`group flex flex-col p-3 rounded-lg border transition-all duration-200 ${getTypeColor(item.type)}`}
+            className={`group flex flex-col p-3 rounded-lg border transition-all duration-200 overflow-hidden min-w-0 ${getTypeColor(item.type)}`}
           >
-            <div className="flex items-center justify-between mb-1">
-              <span className="font-semibold text-sm flex items-center gap-1.5">
-                <span>{getTypeIcon(item.type)}</span>
-                <span className="group-hover:underline">{item.name}</span>
+            <div className="flex items-center justify-between gap-1.5 mb-1">
+              <span className="font-semibold text-sm flex items-center gap-1.5 min-w-0">
+                <span className="shrink-0">{getTypeIcon(item.type)}</span>
+                <span className="group-hover:underline truncate">{item.name}</span>
               </span>
-              <span className="text-xs opacity-75 font-mono group-hover:translate-x-0.5 transition-transform">→</span>
+              <span className="text-xs opacity-75 font-mono group-hover:translate-x-0.5 transition-transform shrink-0">→</span>
             </div>
             {item.description && (
               <p className="text-xs opacity-85 line-clamp-1">{item.description}</p>

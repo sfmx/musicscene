@@ -340,9 +340,9 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                             return (
                               <div
                                 key={index}
-                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2"
+                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-1.5 overflow-hidden min-w-0"
                               >
-                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate">
+                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate min-w-0 flex-1">
                                   <AffiliateLink productName={alt} />
                                 </span>
                                 {retailers && (
@@ -413,9 +413,9 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                             return (
                               <div
                                 key={index}
-                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2"
+                                className="bg-slate-50 dark:bg-slate-950/60 rounded-lg p-2 border border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-1.5 overflow-hidden min-w-0"
                               >
-                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate">
+                                <span className="font-medium text-slate-800 dark:text-slate-200 text-xs truncate min-w-0 flex-1">
                                   <AffiliateLink productName={alt} />
                                 </span>
                                 {retailers && (
@@ -662,12 +662,12 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                       const slug = findSongSlug(song.title);
                       const link = song.link || (slug ? `/lessons/songs/song-analysis/${slug}/` : null);
                       return (
-                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
+                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md overflow-hidden min-w-0">
                           <div>
-                            <div className="flex items-center justify-between mb-2">
-                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">{song.title}</h4>
+                            <div className="flex flex-wrap items-center justify-between gap-1.5 mb-2">
+                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors leading-snug">{song.title}</h4>
                               {song.difficulty && (
-                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border shrink-0 ${getDifficultyColor(song.difficulty)}`}>
                                   {song.difficulty}
                                 </span>
                               )}
@@ -705,12 +705,12 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                       const slug = findSongSlug(song.title);
                       const link = slug ? `/lessons/songs/song-analysis/${slug}/` : null;
                       return (
-                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 transition-all flex flex-col justify-between group shadow-md">
+                        <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-emerald-500/30 dark:border-emerald-500/20 hover:border-emerald-500/60 dark:hover:border-emerald-500/50 transition-all flex flex-col justify-between group shadow-md overflow-hidden min-w-0">
                           <div>
-                            <div className="flex items-center justify-between mb-1">
-                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">{song.title}</h4>
+                            <div className="flex flex-wrap items-center justify-between gap-1.5 mb-1">
+                              <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors leading-snug">{song.title}</h4>
                               {song.difficulty && (
-                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${getDifficultyColor(song.difficulty)}`}>
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border shrink-0 ${getDifficultyColor(song.difficulty)}`}>
                                   {song.difficulty}
                                 </span>
                               )}
@@ -743,12 +743,12 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                     const slug = findSongSlug(song.title);
                     const link = song.link || (slug ? `/lessons/songs/song-analysis/${slug}/` : null);
                     return (
-                      <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md">
+                      <div key={index} className="bg-white dark:bg-slate-900/90 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 dark:hover:border-slate-700 transition-all flex flex-col justify-between group shadow-md overflow-hidden min-w-0">
                         <div>
-                          <div className="flex items-center justify-between mb-1">
-                            <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{song.title}</h4>
+                          <div className="flex flex-wrap items-center justify-between gap-1.5 mb-1">
+                            <h4 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-snug">{song.title}</h4>
                             {song.technique && (
-                              <span className="text-[10px] font-bold bg-blue-50 dark:bg-slate-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-slate-800 px-2 py-0.5 rounded-full">
+                              <span className="text-[10px] font-bold bg-blue-50 dark:bg-slate-950 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-slate-800 px-2 py-0.5 rounded-full shrink-0">
                                 {song.technique}
                               </span>
                             )}

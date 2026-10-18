@@ -33,7 +33,7 @@ export default function SongCard({
   return (
     <Link 
       href={`/lessons/songs/song-analysis/${song.slug}`}
-      className={`${baseClasses} ${variantClasses[variant]} block group flex flex-col justify-between`}
+      className={`${baseClasses} ${variantClasses[variant]} block group flex flex-col justify-between overflow-hidden min-w-0`}
     >
       <div>
         {/* Header Section */}

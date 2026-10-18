@@ -62,7 +62,7 @@ export default function CategoryRootPageTemplate({ category }: Props) {
                 {data.philosophySection.items.map((item, i) => (
                   <div
                     key={i}
-                    className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors flex flex-col justify-between"
+                    className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors flex flex-col justify-between overflow-hidden min-w-0"
                   >
                     <div>
                       <div className="text-3xl mb-3">{item.icon}</div>
@@ -123,12 +123,12 @@ export default function CategoryRootPageTemplate({ category }: Props) {
                       <div className="w-10 h-10 rounded-xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 flex items-center justify-center font-bold text-sm flex-shrink-0">
                         {i + 1}
                       </div>
-                      <div className="flex-1">
-                        <div className="flex justify-between items-center mb-1">
-                          <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
+                          <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
                             {phase.phase}
                           </h3>
-                          <span className="text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-2.5 py-0.5 rounded-full">
+                          <span className="text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-2.5 py-0.5 rounded-full shrink-0">
                             {phase.duration}
                           </span>
                         </div>

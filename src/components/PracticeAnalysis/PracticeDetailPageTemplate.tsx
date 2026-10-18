@@ -38,7 +38,7 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
       <JsonLdScript data={practiceJsonLd} />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 py-8 transition-colors">
-        <main className="max-w-6xl mx-auto px-4">
+        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Breadcrumbs pathname={pathname} pageTitle={data.pageInfo.heroTitle} />
 
           {/* Hero Section */}
@@ -52,7 +52,7 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
             <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">{data.guidelines.title}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {data.guidelines.columns.map((col, i) => (
-                <div key={i} className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
+                <div key={i} className="bg-slate-50 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 overflow-hidden min-w-0">
                   <h3 className="text-lg font-semibold text-amber-600 dark:text-amber-400 mb-3">{col.title}</h3>
                   <ul className="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
                     {col.items.map((item, j) => (
@@ -73,12 +73,12 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 pb-3 border-b border-slate-200 dark:border-slate-800">{section.title}</h2>
               <div className="space-y-8">
                 {section.exercises.map((ex) => (
-                  <div key={ex.number} className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-all">
+                  <div key={ex.number} className="bg-white dark:bg-slate-900/90 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0">
                     <div className="flex items-center gap-3 mb-4 flex-wrap">
-                      <div className="w-8 h-8 bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-full flex items-center justify-center font-bold text-sm">
+                      <div className="w-8 h-8 bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
                         {ex.number}
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{ex.title}</h3>
+                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white leading-snug">{ex.title}</h3>
                       <span className={`px-3 py-0.5 text-xs rounded-full border ${getDifficultyColor(ex.difficulty)}`}>
                         {ex.difficulty}
                       </span>
@@ -188,7 +188,7 @@ export default function PracticeDetailPageTemplate({ practiceSlug }: Props) {
                   <Link
                     key={i}
                     href={link.href}
-                    className="group bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:bg-white dark:hover:bg-slate-900/80 transition-all duration-300 text-center flex flex-col justify-between shadow-sm dark:shadow-none"
+                    className="group bg-slate-50 dark:bg-slate-950/80 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:bg-white dark:hover:bg-slate-900/80 transition-all duration-300 text-center flex flex-col justify-between shadow-sm dark:shadow-none overflow-hidden min-w-0"
                   >
                     <div>
                       <div className="w-12 h-12 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">

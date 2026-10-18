@@ -70,29 +70,31 @@ function CardComponent({
     <div
       className={`bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 ${
         hasAccent ? 'border-l-4 border-l-amber-500' : ''
-      } shadow-xs flex flex-col justify-between hover:border-amber-400/50 dark:hover:border-slate-700 transition-all`}
+      } shadow-xs flex flex-col justify-between hover:border-amber-400/50 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0`}
     >
       <div>
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2">
-            {card.icon && <span className="text-lg">{card.icon}</span>}
+        <div className="mb-3">
+          <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center flex-wrap gap-2 leading-snug">
+            {card.icon && <span className="text-lg shrink-0">{card.icon}</span>}
             {card.number !== undefined && (
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-xs border border-amber-300 dark:border-amber-700/50">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold text-xs border border-amber-300 dark:border-amber-700/50 shrink-0">
                 {card.number}
               </span>
             )}
             <span>{card.title}</span>
           </h3>
           {card.badge && (
-            <span
-              className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border shrink-0 ${
-                typeof card.badge === 'string'
-                  ? getDifficultyColor(card.badge)
-                  : (getBadgeColorClasses(card.badge.color) || getDifficultyColor(card.badge.text))
-              }`}
-            >
-              {typeof card.badge === 'string' ? card.badge : card.badge.text}
-            </span>
+            <div className="flex flex-wrap items-center gap-1.5 mt-2">
+              <span
+                className={`inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
+                  typeof card.badge === 'string'
+                    ? getDifficultyColor(card.badge)
+                    : (getBadgeColorClasses(card.badge.color) || getDifficultyColor(card.badge.text))
+                }`}
+              >
+                {typeof card.badge === 'string' ? card.badge : card.badge.text}
+              </span>
+            </div>
           )}
         </div>
         {card.description && (
@@ -154,7 +156,7 @@ function SectionComponent({
   const layoutClasses: Record<string, string> = {
     'grid-2': 'grid grid-cols-1 md:grid-cols-2 gap-6',
     'grid-3': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6',
-    'grid-4': 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6',
+    'grid-4': 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6',
     'list': 'space-y-6',
     'numbered-steps': 'space-y-4',
   };
@@ -174,17 +176,17 @@ function SectionComponent({
             {(section.cards || []).map((card, i) => (
               <div
                 key={i}
-                className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row items-start gap-4 hover:border-amber-400/50 dark:hover:border-slate-700 transition-all"
+                className="bg-slate-50/80 dark:bg-slate-950/80 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row items-start gap-4 hover:border-amber-400/50 dark:hover:border-slate-700 transition-all overflow-hidden min-w-0"
               >
                 <div className="shrink-0 w-10 h-10 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 font-bold flex items-center justify-center border border-amber-300 dark:border-amber-700/50 shadow-xs text-base">
                   {card.number !== undefined ? card.number : i + 1}
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between gap-2 mb-1.5 flex-wrap">
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white">{card.title}</h3>
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">{card.title}</h3>
                     {card.badge && (
                       <span
-                        className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
+                        className={`inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
                           typeof card.badge === 'string'
                             ? getDifficultyColor(card.badge)
                             : (getBadgeColorClasses(card.badge.color) || getDifficultyColor(card.badge.text))
@@ -274,7 +276,7 @@ export default function SongLessonDetailPageTemplate({ dataKey }: Props) {
   return (
     <Layout>
       <Header title={data.pageTitle} subtitle={data.subtitle} />
-      <main className="max-w-5xl mx-auto px-4 py-12">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs pathname={pathname} pageTitle={data.pageTitle} />
 
         {/* Introduction */}
