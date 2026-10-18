@@ -162,12 +162,12 @@ export default function InteractiveToolsSection() {
           {tools.map((tool) => (
             <div
               key={tool.id}
-              className={`bg-white dark:bg-gradient-to-br dark:${tool.gradient} rounded-2xl p-7 sm:p-8 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${tool.borderHover} shadow-sm hover:shadow-xl dark:hover:shadow-2xl flex flex-col justify-between group`}
+              className={`bg-white dark:bg-gradient-to-br dark:${tool.gradient} rounded-2xl p-7 sm:p-8 border border-slate-200 dark:border-slate-800 transition-all duration-300 ${tool.borderHover} shadow-sm hover:shadow-xl dark:hover:shadow-2xl flex flex-col justify-between group overflow-hidden min-w-0`}
             >
               <div>
                 {/* Header with Badge & Icon */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className={`text-xs font-bold px-3 py-1 rounded-full border ${tool.badgeColor}`}>
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <span className={`text-xs font-bold px-3 py-1 rounded-full border shrink-0 ${tool.badgeColor}`}>
                     {tool.badge}
                   </span>
                   <span className="text-3xl p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 group-hover:scale-110 transition-transform">
@@ -176,7 +176,7 @@ export default function InteractiveToolsSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors leading-snug">
                   {tool.title}
                 </h3>
 
