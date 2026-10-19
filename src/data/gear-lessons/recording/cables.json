@@ -15,11 +15,11 @@
     "columns": [
       {
         "title": "Balanced Differential Signaling & CMRR Physics",
-        "text": "Professional studio gear relies on balanced differential interconnects (XLR and 1/4\" TRS). A balanced cable carries two signal conductors (Hot and Cold) surrounded by a grounded shield. The source sends the audio signal down the Hot wire ($+V$) and an exact phase-inverted copy down the Cold wire ($-V$). Any external electromagnetic hum or RF interference radiating through the shield couples equally into both tightly twisted conductors ($+V_{\\text{noise}}$). At the receiving differential amplifier, the cold signal is inverted and summed: $(+V + V_{\\text{noise}}) - (-V + V_{\\text{noise}}) = 2V_{\\text{signal}}$. The noise mathematically cancels to zero, achieving Common Mode Rejection Ratios (CMRR) exceeding $80\\text{ dB}$."
+        "text": "Professional studio gear relies on balanced differential interconnects (XLR and 1/4\" TRS). A balanced cable carries two signal conductors (Hot and Cold) surrounded by a grounded shield. The source sends the audio signal down the Hot wire (+V) and an exact phase-inverted copy down the Cold wire (-V). Any external electromagnetic hum or RF interference radiating through the shield couples equally into both tightly twisted conductors (+V_noise). At the receiving differential amplifier, the cold signal is inverted and summed: (+V + V_noise) - (-V + V_noise) = 2V_signal. The noise mathematically cancels to zero, achieving Common Mode Rejection Ratios (CMRR) exceeding 80 dB."
       },
       {
         "title": "The High-Impedance RC Low-Pass Filter",
-        "text": "While balanced low-impedance microphone lines can run hundreds of feet without treble loss, passive guitar and bass instrument cables operate under severe physical constraints. A passive guitar pickup has a high output impedance ($R_{\\text{out}} \\approx 6\\text{--}15\\text{ k}\\Omega$). In an unbalanced TS cable, the capacitance between the center conductor and the shield ($C/L$, typically 20 to 45 pF per foot) forms a classic RC low-pass filter with the pickup: $f_c = \\frac{1}{2\\pi R C}$. A cheap 20-foot cable ($900\\text{ pF}$ total capacitance) shifts the pickup's resonant frequency downward by multiple kilohertz, audibly smothering high-end sparkle and transient punch."
+        "text": "While balanced low-impedance microphone lines can run hundreds of feet without treble loss, passive guitar and bass instrument cables operate under severe physical constraints. A passive guitar pickup has a high output impedance (R_out ≈ 6–15 kΩ). In an unbalanced TS cable, the capacitance between the center conductor and the shield (C/L, typically 20 to 45 pF per foot) forms a classic RC low-pass filter with the pickup: f_c = 1 / 2π R C. A cheap 20-foot cable (900 pF total capacitance) shifts the pickup's resonant frequency downward by multiple kilohertz, audibly smothering high-end sparkle and transient punch."
       }
     ]
   },
@@ -36,9 +36,18 @@
           "borderColor": "border-blue-200",
           "description": "Standard balanced cables use two twisted conductors. Star-Quad cables (Canare L-4E6S, Mogami 2534) employ four tightly twisted conductors arranged in opposing pairs.",
           "fields": [
-            { "label": "Geometric Cancellation", "value": "Two opposing conductors are wired in parallel for Hot, and the other two for Cold. This quadrupolar symmetry ensures that external magnetic fields induce identical voltages into both paths regardless of field angle." },
-            { "label": "20 dB Noise Reduction", "value": "Rejects induced electromagnetic hum from nearby lighting dimmers, power transformers, and computer monitors by an additional $20\\text{ dB}$ compared to standard two-conductor cables." },
-            { "label": "Studio Standard", "value": "Indispensable in crowded studio control rooms, broadcast trucks, and mobile stage snakes running adjacent to high-current AC mains." }
+            {
+              "label": "Geometric Cancellation",
+              "value": "Two opposing conductors are wired in parallel for Hot, and the other two for Cold. This quadrupolar symmetry ensures that external magnetic fields induce identical voltages into both paths regardless of field angle."
+            },
+            {
+              "label": "20 dB Noise Reduction",
+              "value": "Rejects induced electromagnetic hum from nearby lighting dimmers, power transformers, and computer monitors by an additional 20 dB compared to standard two-conductor cables."
+            },
+            {
+              "label": "Studio Standard",
+              "value": "Indispensable in crowded studio control rooms, broadcast trucks, and mobile stage snakes running adjacent to high-current AC mains."
+            }
           ]
         },
         {
@@ -47,9 +56,18 @@
           "borderColor": "",
           "description": "The outer shield acts as an electrostatic Faraday cage draining interference to ground.",
           "fields": [
-            { "label": "Braided Copper Shield (95%–98% Coverage)", "value": "Interwoven bare or tinned copper strands. Delivers maximum RF shielding, ultra-low resistance to ground, and superior mechanical tensile strength for heavy studio and stage abuse." },
-            { "label": "Spiral / Serve Shield (90%–95% Coverage)", "value": "Flat copper strands wrapped spirally around the core. Highly flexible and easy to solder, making it the favorite for flexible instrument and patch cables, though it can separate slightly under extreme stretching." },
-            { "label": "Aluminum Mylar Foil + Drain Wire (100% Coverage)", "value": "An aluminum foil wrap providing 100% electrostatic coverage. Extremely compact, but stiff and prone to cracking if flexed repeatedly. The gold standard for permanent studio wall raceways, multi-pair snakes, and rack wiring." }
+            {
+              "label": "Braided Copper Shield (95%–98% Coverage)",
+              "value": "Interwoven bare or tinned copper strands. Delivers maximum RF shielding, ultra-low resistance to ground, and superior mechanical tensile strength for heavy studio and stage abuse."
+            },
+            {
+              "label": "Spiral / Serve Shield (90%–95% Coverage)",
+              "value": "Flat copper strands wrapped spirally around the core. Highly flexible and easy to solder, making it the favorite for flexible instrument and patch cables, though it can separate slightly under extreme stretching."
+            },
+            {
+              "label": "Aluminum Mylar Foil + Drain Wire (100% Coverage)",
+              "value": "An aluminum foil wrap providing 100% electrostatic coverage. Extremely compact, but stiff and prone to cracking if flexed repeatedly. The gold standard for permanent studio wall raceways, multi-pair snakes, and rack wiring."
+            }
           ]
         }
       ]
@@ -66,8 +84,14 @@
           "borderColor": "border-gray-200",
           "description": "Over 90% of cable failures occur at the physical junction between the cable jacket and the connector plug.",
           "fields": [
-            { "label": "The Chuck Mechanism", "value": "Neutrik XX-series connectors use an internal three-jaw plastic chuck that clamps firmly onto the outer jacket as the boot is tightened, isolating the delicate internal solder cups from mechanical pulling force." },
-            { "label": "Zinc Diecast Housing", "value": "All-metal rugged shells provide continuous 360-degree shielding against RF infiltration at the input jack." }
+            {
+              "label": "The Chuck Mechanism",
+              "value": "Neutrik XX-series connectors use an internal three-jaw plastic chuck that clamps firmly onto the outer jacket as the boot is tightened, isolating the delicate internal solder cups from mechanical pulling force."
+            },
+            {
+              "label": "Zinc Diecast Housing",
+              "value": "All-metal rugged shells provide continuous 360-degree shielding against RF infiltration at the input jack."
+            }
           ]
         },
         {
@@ -76,8 +100,14 @@
           "borderColor": "border-amber-200",
           "description": "The chemical and electrical properties of connector contact pins dictate long-term conductivity.",
           "fields": [
-            { "label": "Gold Plating (Au)", "value": "Gold does not oxidize or tarnish in air. Perfect for low-voltage studio interconnects, patchbays, and condenser mic connections that remain plugged in for months or years." },
-            { "label": "Silver Plating (Ag)", "value": "Silver has higher electrical conductivity than gold, but tarnishes (forming silver sulfide). Ideal for stage cables where frequent plug/unplug cycles provide self-cleaning wiping action." }
+            {
+              "label": "Gold Plating (Au)",
+              "value": "Gold does not oxidize or tarnish in air. Perfect for low-voltage studio interconnects, patchbays, and condenser mic connections that remain plugged in for months or years."
+            },
+            {
+              "label": "Silver Plating (Ag)",
+              "value": "Silver has higher electrical conductivity than gold, but tarnishes (forming silver sulfide). Ideal for stage cables where frequent plug/unplug cycles provide self-cleaning wiping action."
+            }
           ]
         },
         {
@@ -86,8 +116,14 @@
           "borderColor": "",
           "description": "High-purity metallurgy ensuring long-term signal clarity.",
           "fields": [
-            { "label": "Electrolytic Tough Pitch vs OFC", "value": "Standard copper contains trace oxygen that forms copper oxide crystals over time. Oxygen-Free Copper (99.99% pure Cu) eliminates internal crystal boundaries." },
-            { "label": "Flexibility & Longevity", "value": "OFC strands withstand hundreds of thousands of flexing cycles without fracturing or developing microphonic handling noise." }
+            {
+              "label": "Electrolytic Tough Pitch vs OFC",
+              "value": "Standard copper contains trace oxygen that forms copper oxide crystals over time. Oxygen-Free Copper (99.99% pure Cu) eliminates internal crystal boundaries."
+            },
+            {
+              "label": "Flexibility & Longevity",
+              "value": "OFC strands withstand hundreds of thousands of flexing cycles without fracturing or developing microphonic handling noise."
+            }
           ]
         }
       ]
@@ -104,10 +140,22 @@
           "borderColor": "border-gray-200",
           "description": "The undisputed reference studio microphone cable, wired with legendary Mogami Neglex 2534 Quad High-Definition cable and black gold-contact Neutrik XLRs.",
           "fields": [
-            { "label": "Conductors", "value": "4-conductor Star-Quad geometry using ultra-pure OFC copper" },
-            { "label": "Noise Rejection", "value": "Eliminates virtually all electromagnetic and RF interference in high-density studio environments" },
-            { "label": "Warranty", "value": "Mogami Lifetime 'No Excuses' warranty trusted by major commercial scoring stages worldwide" },
-            { "label": "Ideal For", "value": "Pristine vocal tracking, ribbon microphones, mastering studio interconnects, and reference monitor lines" }
+            {
+              "label": "Conductors",
+              "value": "4-conductor Star-Quad geometry using ultra-pure OFC copper"
+            },
+            {
+              "label": "Noise Rejection",
+              "value": "Eliminates virtually all electromagnetic and RF interference in high-density studio environments"
+            },
+            {
+              "label": "Warranty",
+              "value": "Mogami Lifetime 'No Excuses' warranty trusted by major commercial scoring stages worldwide"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Pristine vocal tracking, ribbon microphones, mastering studio interconnects, and reference monitor lines"
+            }
           ]
         },
         {
@@ -116,10 +164,22 @@
           "borderColor": "border-gray-200",
           "description": "The Japanese broadcast standard microphone cable, combining bulletproof high-density braided copper shielding with supple, flexible jacketing.",
           "fields": [
-            { "label": "Shielding", "value": "High-density tinned copper braided shield providing >95% physical coverage" },
-            { "label": "Construction", "value": "Special cross-linked PE insulation to reduce capacitance and handle extreme mechanical flexing" },
-            { "label": "Flexibility", "value": "Remains completely supple and tangle-free even in freezing mobile broadcast environments" },
-            { "label": "Ideal For", "value": "Stage snakes, live location recording, touring rigs, and heavy-duty studio patching" }
+            {
+              "label": "Shielding",
+              "value": "High-density tinned copper braided shield providing >95% physical coverage"
+            },
+            {
+              "label": "Construction",
+              "value": "Special cross-linked PE insulation to reduce capacitance and handle extreme mechanical flexing"
+            },
+            {
+              "label": "Flexibility",
+              "value": "Remains completely supple and tangle-free even in freezing mobile broadcast environments"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Stage snakes, live location recording, touring rigs, and heavy-duty studio patching"
+            }
           ]
         },
         {
@@ -128,10 +188,22 @@
           "borderColor": "border-gray-200",
           "description": "Precision-engineered low-capacitance instrument cable manufactured in the USA, optimized for transparent guitar tone preservation.",
           "fields": [
-            { "label": "Capacitance", "value": "Ultra-low 28 pF/ft capacitance to preserve high-frequency sparkle and pickup resonance" },
-            { "label": "Geo-Tip Plug", "value": "Patented plug shape engineered by Neutrik ensuring an airtight, rattle-free fit in any 1/4\" instrument jack" },
-            { "label": "In-Line Soldering", "value": "Helicoil 360-degree strain relief protecting the solder joint from rotational torque" },
-            { "label": "Ideal For", "value": "Passive electric guitars, bass guitars, acoustic-electric instruments, and pedalboard-to-amp runs" }
+            {
+              "label": "Capacitance",
+              "value": "Ultra-low 28 pF/ft capacitance to preserve high-frequency sparkle and pickup resonance"
+            },
+            {
+              "label": "Geo-Tip Plug",
+              "value": "Patented plug shape engineered by Neutrik ensuring an airtight, rattle-free fit in any 1/4\" instrument jack"
+            },
+            {
+              "label": "In-Line Soldering",
+              "value": "Helicoil 360-degree strain relief protecting the solder joint from rotational torque"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Passive electric guitars, bass guitars, acoustic-electric instruments, and pedalboard-to-amp runs"
+            }
           ]
         },
         {
@@ -140,10 +212,22 @@
           "borderColor": "border-gray-200",
           "description": "A high-reliability, stage-ready professional instrument cable combining rugged 20 AWG OFC copper with genuine REAN by Neutrik nickel plugs.",
           "fields": [
-            { "label": "Conductor", "value": "20 AWG Oxygen-Free Copper center core for robust signal transfer" },
-            { "label": "Shielding", "value": "90% OFC spiral shield backed by conductive PVC to eliminate handling noise" },
-            { "label": "Connectors", "value": "REAN by Neutrik heavy-duty metal plugs with molded strain relief" },
-            { "label": "Value", "value": "Exceptional professional durability at an accessible price point" }
+            {
+              "label": "Conductor",
+              "value": "20 AWG Oxygen-Free Copper center core for robust signal transfer"
+            },
+            {
+              "label": "Shielding",
+              "value": "90% OFC spiral shield backed by conductive PVC to eliminate handling noise"
+            },
+            {
+              "label": "Connectors",
+              "value": "REAN by Neutrik heavy-duty metal plugs with molded strain relief"
+            },
+            {
+              "label": "Value",
+              "value": "Exceptional professional durability at an accessible price point"
+            }
           ]
         },
         {
@@ -152,10 +236,22 @@
           "borderColor": "border-gray-200",
           "description": "The studio rack standard power conditioner, protecting sensitive converters and tube preamps from voltage surges and AC mains noise.",
           "fields": [
-            { "label": "RFI/EMI Filtering", "value": "Multi-stage AC noise filter cleans dirty mains electricity from computers, dimmer switches, and refrigerators" },
-            { "label": "Surge Protection", "value": "High-voltage transient surge suppressor absorbs catastrophic voltage spikes up to 15 amps" },
-            { "label": "Outlets", "value": "8 rear-panel filtered outlets with wall-wart spacing plus 1 convenient front-panel outlet" },
-            { "label": "Studio Role", "value": "Acts as the central star-grounding hub for your entire rack, eliminating ground loop hum" }
+            {
+              "label": "RFI/EMI Filtering",
+              "value": "Multi-stage AC noise filter cleans dirty mains electricity from computers, dimmer switches, and refrigerators"
+            },
+            {
+              "label": "Surge Protection",
+              "value": "High-voltage transient surge suppressor absorbs catastrophic voltage spikes up to 15 amps"
+            },
+            {
+              "label": "Outlets",
+              "value": "8 rear-panel filtered outlets with wall-wart spacing plus 1 convenient front-panel outlet"
+            },
+            {
+              "label": "Studio Role",
+              "value": "Acts as the central star-grounding hub for your entire rack, eliminating ground loop hum"
+            }
           ]
         }
       ]
@@ -172,9 +268,18 @@
           "borderColor": "border-yellow-200",
           "description": "Ground loops are the number one cause of 50 Hz/60 Hz mains hum and high-frequency digital computer hash in studio monitors.",
           "fields": [
-            { "label": "The Circulating Current", "value": "When two audio devices are plugged into different AC wall outlets, a small voltage potential difference exists between their ground pins. The audio cable shield connecting them creates a complete loop, allowing 60 Hz current to flow through the audio ground." },
-            { "label": "Star Grounding Topology", "value": "Plug all studio equipment—audio interface, monitors, computer, preamp, and outboard gear—into a single high-quality power conditioner (Furman). A single ground path eliminates potential differences, banishing hum entirely." },
-            { "label": "The Ground Lift Hazard", "value": "Never cut the third ground pin off an AC power plug ('cheater plug'). This creates a catastrophic electrocution hazard if an internal power transformer develops a short to the chassis." }
+            {
+              "label": "The Circulating Current",
+              "value": "When two audio devices are plugged into different AC wall outlets, a small voltage potential difference exists between their ground pins. The audio cable shield connecting them creates a complete loop, allowing 60 Hz current to flow through the audio ground."
+            },
+            {
+              "label": "Star Grounding Topology",
+              "value": "Plug all studio equipment—audio interface, monitors, computer, preamp, and outboard gear—into a single high-quality power conditioner (Furman). A single ground path eliminates potential differences, banishing hum entirely."
+            },
+            {
+              "label": "The Ground Lift Hazard",
+              "value": "Never cut the third ground pin off an AC power plug ('cheater plug'). This creates a catastrophic electrocution hazard if an internal power transformer develops a short to the chassis."
+            }
           ]
         },
         {
@@ -183,9 +288,18 @@
           "borderColor": "border-green-200",
           "description": "How professional roadies and recording studios preserve cable life for decades.",
           "fields": [
-            { "label": "The Over-Under Method", "value": "Alternate coiling one loop forwards (over) and the next loop backwards with a counter-clockwise wrist roll (under). This neutralizes internal torsional twist in the copper conductors, allowing the cable to lie completely flat when thrown." },
-            { "label": "The 'Elbow Wrap' Disaster", "value": "Never wrap a cable around your elbow. Elbow wrapping permanently twists the inner conductors, fractures the braided shield, and results in intermittent crackling connections within months." },
-            { "label": "Velcro Tie Discipline", "value": "Secure every cable with reusable Hook-and-Loop Velcro ties. Never cinch with plastic zip ties, which crush the dielectric insulation and permanently alter cable capacitance." }
+            {
+              "label": "The Over-Under Method",
+              "value": "Alternate coiling one loop forwards (over) and the next loop backwards with a counter-clockwise wrist roll (under). This neutralizes internal torsional twist in the copper conductors, allowing the cable to lie completely flat when thrown."
+            },
+            {
+              "label": "The 'Elbow Wrap' Disaster",
+              "value": "Never wrap a cable around your elbow. Elbow wrapping permanently twists the inner conductors, fractures the braided shield, and results in intermittent crackling connections within months."
+            },
+            {
+              "label": "Velcro Tie Discipline",
+              "value": "Secure every cable with reusable Hook-and-Loop Velcro ties. Never cinch with plastic zip ties, which crush the dielectric insulation and permanently alter cable capacitance."
+            }
           ]
         }
       ]

@@ -15,7 +15,7 @@
     "columns": [
       {
         "title": "Extended Scale Length Physics",
-        "text": "String tension is governed by Mersenne's law: $T = 4 \\cdot m \\cdot f^2 \\cdot L^2$. Because frequency $f$ drops drastically when tuning down to B1 or A1, maintaining playable string tension ($T \\approx 18\\text{--}20\\text{ lbs}$) requires either dramatically increasing string mass $m$ (which makes strings stiff, dull, and unresponsive) or increasing vibrating scale length $L$. By extending the scale from 25.5\" to 27.5\" or 30\", the baritone allows guitarists to use moderate string gauges (.013–.065) that ring with bright, singing harmonic overtones while remaining flexible enough for bends, vibrato, and chordal voicings."
+        "text": "String tension is governed by Mersenne's law: T = 4 · m · f² · L². Because frequency f drops drastically when tuning down to B1 or A1, maintaining playable string tension (T ≈ 18–20 lbs) requires either dramatically increasing string mass m (which makes strings stiff, dull, and unresponsive) or increasing vibrating scale length L. By extending the scale from 25.5\" to 27.5\" or 30\", the baritone allows guitarists to use moderate string gauges (.013–.065) that ring with bright, singing harmonic overtones while remaining flexible enough for bends, vibrato, and chordal voicings."
       },
       {
         "title": "Arrangement & Mix Space Architecture",
@@ -36,11 +36,26 @@
           "borderColor": "border-blue-200",
           "description": "The modern sweet spot for players transitioning seamlessly from standard guitars.",
           "fields": [
-            { "label": "Default Tuning", "value": "B-E-A-D-F#-B (Tuned down a perfect fourth)" },
-            { "label": "Fret Reach", "value": "Feels natural and familiar; comfortable for wide barre chords and standard pentatonic stretches" },
-            { "label": "String Gauge", "value": "Typically .013–.062 or .014–.068 gauge sets" },
-            { "label": "Best Applications", "value": "Modern rock rhythm, progressive metal, atmospheric alternative, and singer-songwriter chord voicings" },
-            { "label": "Key Models", "value": "PRS SE 277 (27.7\"), Gretsch Electromatic Jet Baritone (29.75\")" }
+            {
+              "label": "Default Tuning",
+              "value": "B-E-A-D-F#-B (Tuned down a perfect fourth)"
+            },
+            {
+              "label": "Fret Reach",
+              "value": "Feels natural and familiar; comfortable for wide barre chords and standard pentatonic stretches"
+            },
+            {
+              "label": "String Gauge",
+              "value": "Typically .013–.062 or .014–.068 gauge sets"
+            },
+            {
+              "label": "Best Applications",
+              "value": "Modern rock rhythm, progressive metal, atmospheric alternative, and singer-songwriter chord voicings"
+            },
+            {
+              "label": "Key Models",
+              "value": "PRS SE 277 (27.7\"), Gretsch Electromatic Jet Baritone (29.75\")"
+            }
           ]
         },
         {
@@ -49,11 +64,26 @@
           "borderColor": "border-purple-200",
           "description": "Engineered for maximum low-end tension, aggressive down-tuning, and visceral percussive bite.",
           "fields": [
-            { "label": "Default Tuning", "value": "A-D-G-C-E-A (down a fifth) or Drop A (A-E-A-D-F#-B)" },
-            { "label": "Tension Stability", "value": "Extra length eliminates pitch drift when digging hard with a heavy plectrum" },
-            { "label": "String Gauge", "value": ".014–.072 up to .020–.080 sets" },
-            { "label": "Best Applications", "value": "Djent, post-metal, deathcore, doom, cinematic drone soundscapes, and Ennio Morricone spaghetti western leads" },
-            { "label": "Key Models", "value": "Schecter Hellraiser C-VI (30\"), Danelectro '56 Baritone (29.75\")" }
+            {
+              "label": "Default Tuning",
+              "value": "A-D-G-C-E-A (down a fifth) or Drop A (A-E-A-D-F#-B)"
+            },
+            {
+              "label": "Tension Stability",
+              "value": "Extra length eliminates pitch drift when digging hard with a heavy plectrum"
+            },
+            {
+              "label": "String Gauge",
+              "value": ".014–.072 up to .020–.080 sets"
+            },
+            {
+              "label": "Best Applications",
+              "value": "Djent, post-metal, deathcore, doom, cinematic drone soundscapes, and Ennio Morricone spaghetti western leads"
+            },
+            {
+              "label": "Key Models",
+              "value": "Schecter Hellraiser C-VI (30\"), Danelectro '56 Baritone (29.75\")"
+            }
           ]
         },
         {
@@ -62,10 +92,22 @@
           "borderColor": "border-emerald-200",
           "description": "Introduced in 1961, the Bass VI is a unique hybrid tuned a full octave below a standard guitar.",
           "fields": [
-            { "label": "Default Tuning", "value": "E1-A1-D2-G2-B2-E3 (Exact bass guitar octave)" },
-            { "label": "String Architecture", "value": "Six thin bass strings (.024–.084) spaced with guitar-like narrow bridge spacing" },
-            { "label": "Switching System", "value": "Three on/off pickup switches plus a fourth 'strangle' switch (passive high-pass filter to cut sub-bass mud)" },
-            { "label": "Iconic Sound", "value": "Robert Smith (The Cure's signature melodic leads), John Lennon ('Helter Skelter'), Jack Bruce (Cream)" }
+            {
+              "label": "Default Tuning",
+              "value": "E1-A1-D2-G2-B2-E3 (Exact bass guitar octave)"
+            },
+            {
+              "label": "String Architecture",
+              "value": "Six thin bass strings (.024–.084) spaced with guitar-like narrow bridge spacing"
+            },
+            {
+              "label": "Switching System",
+              "value": "Three on/off pickup switches plus a fourth 'strangle' switch (passive high-pass filter to cut sub-bass mud)"
+            },
+            {
+              "label": "Iconic Sound",
+              "value": "Robert Smith (The Cure's signature melodic leads), John Lennon ('Helter Skelter'), Jack Bruce (Cream)"
+            }
           ]
         }
       ]
@@ -82,10 +124,22 @@
           "borderColor": "",
           "description": "High-gain distortion accentuates low-end muddiness if string excursion is uncontrolled.",
           "fields": [
-            { "label": "The High-Gain Problem", "value": "Down-tuned standard guitars produce loose string vibrations that swamp high-gain amplifier preamps in loose, flubby low frequencies." },
-            { "label": "The Baritone Solution", "value": "Extended scale length tightens the initial pick transient. Palm-muted 16th-note riffs sound razor-sharp, percussive, and punchy through high-gain tube amps and digital modelers." },
-            { "label": "Pedal Tightening Trick", "value": "Place an overdrive pedal with a built-in bass cut (like an Ibanez TS9 or Boss SD-1) before the amp with Gain at 0 and Level at 10 to tighten low-end attack before distortion stages." },
-            { "label": "Pioneering Artists", "value": "Meshuggah, Periphery, Loathe, Deftones (Stephen Carpenter), Spiritbox" }
+            {
+              "label": "The High-Gain Problem",
+              "value": "Down-tuned standard guitars produce loose string vibrations that swamp high-gain amplifier preamps in loose, flubby low frequencies."
+            },
+            {
+              "label": "The Baritone Solution",
+              "value": "Extended scale length tightens the initial pick transient. Palm-muted 16th-note riffs sound razor-sharp, percussive, and punchy through high-gain tube amps and digital modelers."
+            },
+            {
+              "label": "Pedal Tightening Trick",
+              "value": "Place an overdrive pedal with a built-in bass cut (like an Ibanez TS9 or Boss SD-1) before the amp with Gain at 0 and Level at 10 to tighten low-end attack before distortion stages."
+            },
+            {
+              "label": "Pioneering Artists",
+              "value": "Meshuggah, Periphery, Loathe, Deftones (Stephen Carpenter), Spiritbox"
+            }
           ]
         },
         {
@@ -94,10 +148,22 @@
           "borderColor": "",
           "description": "The clean, twangy, and haunting side of the baritone guitar that defined film and 1960s pop.",
           "fields": [
-            { "label": "Nashville 'Tic-Tac' Bass", "value": "A classic 1960s recording technique where a muted Danelectro baritone picked with a stiff plectrum doubled the upright double bass line, adding percussive snap and harmonic definition." },
-            { "label": "Spaghetti Western Twang", "value": "Ennio Morricone utilized the baritone with heavy spring reverb and tape tremolo to create lonely, haunting desert melodies in Sergio Leone western classics." },
-            { "label": "Cinematic Scoring", "value": "Composers like Gustavo Santaolalla (The Last of Us) and Trent Reznor use acoustic and electric baritones for organic, emotional, low-register storytelling." },
-            { "label": "Pioneering Artists", "value": "Duane Eddy, The Cure, Ennio Morricone, Phoebe Bridgers, Mark Lettieri" }
+            {
+              "label": "Nashville 'Tic-Tac' Bass",
+              "value": "A classic 1960s recording technique where a muted Danelectro baritone picked with a stiff plectrum doubled the upright double bass line, adding percussive snap and harmonic definition."
+            },
+            {
+              "label": "Spaghetti Western Twang",
+              "value": "Ennio Morricone utilized the baritone with heavy spring reverb and tape tremolo to create lonely, haunting desert melodies in Sergio Leone western classics."
+            },
+            {
+              "label": "Cinematic Scoring",
+              "value": "Composers like Gustavo Santaolalla (The Last of Us) and Trent Reznor use acoustic and electric baritones for organic, emotional, low-register storytelling."
+            },
+            {
+              "label": "Pioneering Artists",
+              "value": "Duane Eddy, The Cure, Ennio Morricone, Phoebe Bridgers, Mark Lettieri"
+            }
           ]
         }
       ]
@@ -114,10 +180,22 @@
           "borderColor": "border-gray-200",
           "description": "The most celebrated reissue of the 1961 classic, offering authentic 30\" scale hybrid guitar/bass magic at an incredible price.",
           "fields": [
-            { "label": "Scale & Construction", "value": "30\" scale length, poplar body, vintage-tint gloss maple neck, Indian laurel board" },
-            { "label": "Pickups & Electronics", "value": "Three Fender-Designed Alnico single-coils, individual on/off switches, and strangle circuit" },
-            { "label": "Hardware", "value": "Vintage-style floating vibrato tailpiece and non-locking floating bridge" },
-            { "label": "Ideal For", "value": "The Cure post-punk leads, surf rock, spaghetti western twang, and 6-string bass grooves" }
+            {
+              "label": "Scale & Construction",
+              "value": "30\" scale length, poplar body, vintage-tint gloss maple neck, Indian laurel board"
+            },
+            {
+              "label": "Pickups & Electronics",
+              "value": "Three Fender-Designed Alnico single-coils, individual on/off switches, and strangle circuit"
+            },
+            {
+              "label": "Hardware",
+              "value": "Vintage-style floating vibrato tailpiece and non-locking floating bridge"
+            },
+            {
+              "label": "Ideal For",
+              "value": "The Cure post-punk leads, surf rock, spaghetti western twang, and 6-string bass grooves"
+            }
           ]
         },
         {
@@ -126,10 +204,22 @@
           "borderColor": "border-gray-200",
           "description": "A stylish, solid mahogany baritone with a 29.75\" scale and dual Gretsch mini-humbuckers that punch through any mix.",
           "fields": [
-            { "label": "Scale & Body", "value": "29.75\" scale length, solid mahogany body, thin 'U' shaped bolt-on maple neck" },
-            { "label": "Pickups", "value": "Dual Gretsch mini-humbucking pickups engineered for clear low-end articulation" },
-            { "label": "Bridge", "value": "Anchored Adjusto-Matic bridge with V-Stoptail" },
-            { "label": "Tone Profile", "value": "Crisp, jangly top end with massive low-mid grunt, excelling at both surf twang and heavy fuzz" }
+            {
+              "label": "Scale & Body",
+              "value": "29.75\" scale length, solid mahogany body, thin 'U' shaped bolt-on maple neck"
+            },
+            {
+              "label": "Pickups",
+              "value": "Dual Gretsch mini-humbucking pickups engineered for clear low-end articulation"
+            },
+            {
+              "label": "Bridge",
+              "value": "Anchored Adjusto-Matic bridge with V-Stoptail"
+            },
+            {
+              "label": "Tone Profile",
+              "value": "Crisp, jangly top end with massive low-mid grunt, excelling at both surf twang and heavy fuzz"
+            }
           ]
         },
         {
@@ -138,10 +228,22 @@
           "borderColor": "border-gray-200",
           "description": "The historic tic-tac legend featuring Danelectro's unique Masonite hollow-core body and high-output Lipstick pickups.",
           "fields": [
-            { "label": "Scale & Body", "value": "29.75\" scale, Masonite/plywood semi-hollow frame, maple neck with pau ferro board" },
-            { "label": "Pickups", "value": "Dual high-output Lipstick tube single-coils wired in series in middle position" },
-            { "label": "Bridge", "value": "Traditional adjustable bridge with die-cast saddles" },
-            { "label": "Tone Profile", "value": "Thumping vintage percussive snap, warm acoustic resonance, and biting spaghetti western jangle" }
+            {
+              "label": "Scale & Body",
+              "value": "29.75\" scale, Masonite/plywood semi-hollow frame, maple neck with pau ferro board"
+            },
+            {
+              "label": "Pickups",
+              "value": "Dual high-output Lipstick tube single-coils wired in series in middle position"
+            },
+            {
+              "label": "Bridge",
+              "value": "Traditional adjustable bridge with die-cast saddles"
+            },
+            {
+              "label": "Tone Profile",
+              "value": "Thumping vintage percussive snap, warm acoustic resonance, and biting spaghetti western jangle"
+            }
           ]
         },
         {
@@ -150,10 +252,22 @@
           "borderColor": "border-gray-200",
           "description": "A refined, ultra-versatile 27.7\" modern baritone combining stunning figured maple aesthetics with PRS tone excellence.",
           "fields": [
-            { "label": "Scale & Tonewoods", "value": "27.7\" scale length, mahogany body with flame maple veneer, Wide Thin maple neck" },
-            { "label": "Pickups & Circuit", "value": "PRS 85/15 'S' humbuckers with push-pull coil-tap for crystalline single-coil tones" },
-            { "label": "Bridge", "value": "PRS plate-style string-through-body bridge for immense resonance and sustain" },
-            { "label": "Ideal For", "value": "Progressive metal, alternative rock, jazz voicings, and versatile studio tracking" }
+            {
+              "label": "Scale & Tonewoods",
+              "value": "27.7\" scale length, mahogany body with flame maple veneer, Wide Thin maple neck"
+            },
+            {
+              "label": "Pickups & Circuit",
+              "value": "PRS 85/15 'S' humbuckers with push-pull coil-tap for crystalline single-coil tones"
+            },
+            {
+              "label": "Bridge",
+              "value": "PRS plate-style string-through-body bridge for immense resonance and sustain"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Progressive metal, alternative rock, jazz voicings, and versatile studio tracking"
+            }
           ]
         },
         {
@@ -162,10 +276,22 @@
           "borderColor": "border-gray-200",
           "description": "An aggressive, high-performance 30\" metal baritone equipped with active EMG pickups and locking hardware.",
           "fields": [
-            { "label": "Scale & Body", "value": "30\" scale length, mahogany body with quilted maple top, 3-piece mahogany set-neck with Ultra Access" },
-            { "label": "Pickups", "value": "Active EMG 81TW and 89R humbuckers with dual coil-split options" },
-            { "label": "Hardware", "value": "TonePros locking Tune-O-Matic bridge with string-through-body, Schecter locking tuners" },
-            { "label": "Ideal For", "value": "Crushing drop-tuned metal, modern industrial, and high-gain djent riffs" }
+            {
+              "label": "Scale & Body",
+              "value": "30\" scale length, mahogany body with quilted maple top, 3-piece mahogany set-neck with Ultra Access"
+            },
+            {
+              "label": "Pickups",
+              "value": "Active EMG 81TW and 89R humbuckers with dual coil-split options"
+            },
+            {
+              "label": "Hardware",
+              "value": "TonePros locking Tune-O-Matic bridge with string-through-body, Schecter locking tuners"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Crushing drop-tuned metal, modern industrial, and high-gain djent riffs"
+            }
           ]
         },
         {
@@ -174,10 +300,22 @@
           "borderColor": "border-gray-200",
           "description": "A commanding acoustic jumbo baritone with a 27.7\" scale and massive internal air cavity that delivers organ-like acoustic resonance.",
           "fields": [
-            { "label": "Top & Body", "value": "Solid A+ Sitka Spruce top with African Mahogany back and sides in Jumbo body profile" },
-            { "label": "Bracing", "value": "FST2 Forward Shifted scalloped bracing engineered for low B frequency projection" },
-            { "label": "Electronics", "value": "LR Baggs StagePro Bronze pickup and onboard EQ system" },
-            { "label": "Ideal For", "value": "Solo singer-songwriters, Celtic fingerpicking, and cinematic acoustic accompaniment" }
+            {
+              "label": "Top & Body",
+              "value": "Solid A+ Sitka Spruce top with African Mahogany back and sides in Jumbo body profile"
+            },
+            {
+              "label": "Bracing",
+              "value": "FST2 Forward Shifted scalloped bracing engineered for low B frequency projection"
+            },
+            {
+              "label": "Electronics",
+              "value": "LR Baggs StagePro Bronze pickup and onboard EQ system"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Solo singer-songwriters, Celtic fingerpicking, and cinematic acoustic accompaniment"
+            }
           ]
         }
       ]
@@ -194,9 +332,18 @@
           "borderColor": "border-yellow-200",
           "description": "Setting up a baritone requires adjusting critical contact points to accommodate thick string gauges.",
           "fields": [
-            { "label": "Nut Slot Recutting", "value": "Never force heavy baritone strings (.013–.068) into slots cut for .010 gauge strings. The string will pinch, cause severe tuning slip, or crack the bone nut. Slots must be widened with dedicated gauged nut files." },
-            { "label": "Saddle Travel Requirements", "value": "Heavier wound strings possess stiffer steel cores that require more backward saddle compensation at the bridge to intonate accurately at the 12th fret." },
-            { "label": "Truss Rod Adjustment", "value": "Heavier strings pull approximately 110–130 lbs total tension across a longer neck. Tighten the truss rod clockwise in quarter-turn increments to maintain a proper 0.010\" neck relief." }
+            {
+              "label": "Nut Slot Recutting",
+              "value": "Never force heavy baritone strings (.013–.068) into slots cut for .010 gauge strings. The string will pinch, cause severe tuning slip, or crack the bone nut. Slots must be widened with dedicated gauged nut files."
+            },
+            {
+              "label": "Saddle Travel Requirements",
+              "value": "Heavier wound strings possess stiffer steel cores that require more backward saddle compensation at the bridge to intonate accurately at the 12th fret."
+            },
+            {
+              "label": "Truss Rod Adjustment",
+              "value": "Heavier strings pull approximately 110–130 lbs total tension across a longer neck. Tighten the truss rod clockwise in quarter-turn increments to maintain a proper 0.010\" neck relief."
+            }
           ]
         },
         {
@@ -205,9 +352,18 @@
           "borderColor": "border-blue-200",
           "description": "A baritone puts demands on both guitar and bass amplification gear.",
           "fields": [
-            { "label": "Guitar Amp Considerations", "value": "Standard open-back 1x12 guitar combos can struggle with the massive cone excursion of a 61 Hz low B, leading to speaker flub. Closed-back 2x12 or 4x12 cabs with high-power speakers (Celestion V30s, Creambacks) handle low transients cleanly." },
-            { "label": "The Bass Amp / Bi-Amp Trick", "value": "For maximum live power, split your baritone signal: send lows through a clean bass amp with a 1x15 cab, and send highs through an overdriven guitar amp with a 2x12 cab for monstrous sonic weight." },
-            { "label": "Digital Modeling IRs", "value": "When using Line 6 Helix, Quad Cortex, or Kemper, use high-pass filters set between 75 Hz and 90 Hz in the cab block to keep front-of-house subwoofers tight." }
+            {
+              "label": "Guitar Amp Considerations",
+              "value": "Standard open-back 1x12 guitar combos can struggle with the massive cone excursion of a 61 Hz low B, leading to speaker flub. Closed-back 2x12 or 4x12 cabs with high-power speakers (Celestion V30s, Creambacks) handle low transients cleanly."
+            },
+            {
+              "label": "The Bass Amp / Bi-Amp Trick",
+              "value": "For maximum live power, split your baritone signal: send lows through a clean bass amp with a 1x15 cab, and send highs through an overdriven guitar amp with a 2x12 cab for monstrous sonic weight."
+            },
+            {
+              "label": "Digital Modeling IRs",
+              "value": "When using Line 6 Helix, Quad Cortex, or Kemper, use high-pass filters set between 75 Hz and 90 Hz in the cab block to keep front-of-house subwoofers tight."
+            }
           ]
         }
       ]

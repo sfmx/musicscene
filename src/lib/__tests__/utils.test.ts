@@ -1,4 +1,4 @@
-import { getDifficultyColor, getDifficultyBarColor, removeConsecutiveDuplicates, cn } from '../utils';
+import { getDifficultyColor, getDifficultyBarColor, removeConsecutiveDuplicates, cn, cleanLatexMath } from '../utils';
 
 describe('src/lib/utils', () => {
   describe('getDifficultyColor', () => {
@@ -60,6 +60,30 @@ describe('src/lib/utils', () => {
   describe('cn', () => {
     it('merges class names and filters falsy values', () => {
       expect(cn('btn', false && 'btn-active', null, undefined, 'btn-primary')).toBe('btn btn-primary');
+    });
+  });
+
+  describe('cleanLatexMath', () => {
+    it('converts action height formula cleanly', () => {
+      expect(cleanLatexMath('Action Height Calibration ($h \\ge 3.0\\text{ mm}$)')).toBe('Action Height Calibration (h ≥ 3.0 mm)');
+    });
+
+    it('converts tension formula cleanly', () => {
+      expect(cleanLatexMath('String tension formula $T = 4 m f^2 L^2$ proves')).toBe('String tension formula T = 4 m f² L² proves');
+    });
+
+    it('converts fractions and acoustic impedance cleanly', () => {
+      expect(cleanLatexMath('$R = \\frac{Z_2 - Z_1}{Z_2 + Z_1}$')).toBe('R = (Z₂ - Z₁) / (Z₂ + Z₁)');
+      expect(cleanLatexMath('$P = \\frac{F}{A}$')).toBe('P = F / A');
+    });
+
+    it('converts electrical units and ohm symbols cleanly', () => {
+      expect(cleanLatexMath('signal ($6\\text{ k}\\Omega\\text{ to }15\\text{ k}\\Omega$)')).toBe('signal (6 kΩ to 15 kΩ)');
+    });
+
+    it('preserves plain currency strings intact', () => {
+      expect(cleanLatexMath('Picks cost under $5 each')).toBe('Picks cost under $5 each');
+      expect(cleanLatexMath('Starter Studio ($300-800)')).toBe('Starter Studio ($300-800)');
     });
   });
 });

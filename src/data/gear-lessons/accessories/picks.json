@@ -15,7 +15,7 @@
     "columns": [
       {
         "title": "Kinetic Energy Transfer & Diaphragm Mass",
-        "text": "When a plectrum strikes a tensioned guitar string, it displaces the string laterally until the restoring mechanical tension overcomes the frictional coefficient between pick and metal. A flexible thin pick ($< 0.60\\text{ mm}$) absorbs kinetic energy by bending, releasing the string with low kinetic momentum. This acts as an acoustic compressor—ideal for even acoustic strumming. A rigid heavy pick ($> 1.0\\text{ mm}$) does not bend, transferring 100% of muscular kinetic energy directly into the string core, producing a massive fundamental transient, increased acoustic volume, and instantaneous dynamic touch response."
+        "text": "When a plectrum strikes a tensioned guitar string, it displaces the string laterally until the restoring mechanical tension overcomes the frictional coefficient between pick and metal. A flexible thin pick (< 0.60 mm) absorbs kinetic energy by bending, releasing the string with low kinetic momentum. This acts as an acoustic compressor—ideal for even acoustic strumming. A rigid heavy pick (> 1.0 mm) does not bend, transferring 100% of muscular kinetic energy directly into the string core, producing a massive fundamental transient, increased acoustic volume, and instantaneous dynamic touch response."
       },
       {
         "title": "The Physics of Edge Bevels & Attack Angle",
@@ -36,9 +36,18 @@
           "borderColor": "border-amber-200",
           "description": "The foundational polymers of modern guitar playing.",
           "fields": [
-            { "label": "Celluloid (Traditional)", "value": "Originally developed as a synthetic substitute for endangered tortoiseshell. Offers balanced flexibility, smooth string release, and a warm, organic click on acoustic and vintage electric setups." },
-            { "label": "Delrin / Tortex (Dunlop)", "value": "Engineered acetal polymer with a matte, chalky surface that absorbs fingertip moisture. Highly resistant to edge wear with a crisp, aggressive snap favored in rock, metal, and pop." },
-            { "label": "Nylon (Molded Grip)", "value": "Soft, ductile polymer with high impact resistance. Yields a smooth, warm attack that dampens high-frequency string scratch, featuring raised tactile grip patterns for high-sweat live environments." }
+            {
+              "label": "Celluloid (Traditional)",
+              "value": "Originally developed as a synthetic substitute for endangered tortoiseshell. Offers balanced flexibility, smooth string release, and a warm, organic click on acoustic and vintage electric setups."
+            },
+            {
+              "label": "Delrin / Tortex (Dunlop)",
+              "value": "Engineered acetal polymer with a matte, chalky surface that absorbs fingertip moisture. Highly resistant to edge wear with a crisp, aggressive snap favored in rock, metal, and pop."
+            },
+            {
+              "label": "Nylon (Molded Grip)",
+              "value": "Soft, ductile polymer with high impact resistance. Yields a smooth, warm attack that dampens high-frequency string scratch, featuring raised tactile grip patterns for high-sweat live environments."
+            }
           ]
         },
         {
@@ -47,9 +56,18 @@
           "borderColor": "border-blue-200",
           "description": "High-performance aerospace and industrial plastics designed for speed and longevity.",
           "fields": [
-            { "label": "Ultex / Ultem (Polyetherimide)", "value": "Aerospace polymer with an exceptional stiffness-to-weight ratio. Produces a bright, glassy acoustic chirp, massive dynamic headroom, and virtually zero wear across months of heavy playing." },
-            { "label": "Cast Acrylic (V-Picks, Gravity)", "value": "Thick, crystal-clear acrylic that warms to body temperature and clings to the fingers. Glides across strings with zero drag, delivering huge low-end fundamental weight." },
-            { "label": "Vespel SP-1 Polyimide (BlueChip)", "value": "Ultra-expensive aerospace thermoset plastic ($35+ per pick). Self-lubricating, virtually indestructible, and completely free of pick click, representing the absolute holy grail of bluegrass and acoustic tone." }
+            {
+              "label": "Ultex / Ultem (Polyetherimide)",
+              "value": "Aerospace polymer with an exceptional stiffness-to-weight ratio. Produces a bright, glassy acoustic chirp, massive dynamic headroom, and virtually zero wear across months of heavy playing."
+            },
+            {
+              "label": "Cast Acrylic (V-Picks, Gravity)",
+              "value": "Thick, crystal-clear acrylic that warms to body temperature and clings to the fingers. Glides across strings with zero drag, delivering huge low-end fundamental weight."
+            },
+            {
+              "label": "Vespel SP-1 Polyimide (BlueChip)",
+              "value": "Ultra-expensive aerospace thermoset plastic ($35+ per pick). Self-lubricating, virtually indestructible, and completely free of pick click, representing the absolute holy grail of bluegrass and acoustic tone."
+            }
           ]
         }
       ]
@@ -126,9 +144,18 @@
           "borderColor": "border-gray-200",
           "description": "The quintessential guitar pick shape popularized by Fender and Dunlop since the 1950s.",
           "fields": [
-            { "label": "Geometry", "value": "Curved shoulders, broad grip surface, and a rounded semi-sharp tip." },
-            { "label": "Playing Feel", "value": "Comfortable for all hand sizes; allows easy grip angle shifting between aggressive strumming and picking." },
-            { "label": "Versatility", "value": "The universal standard found in every guitar case and studio desk on earth." }
+            {
+              "label": "Geometry",
+              "value": "Curved shoulders, broad grip surface, and a rounded semi-sharp tip."
+            },
+            {
+              "label": "Playing Feel",
+              "value": "Comfortable for all hand sizes; allows easy grip angle shifting between aggressive strumming and picking."
+            },
+            {
+              "label": "Versatility",
+              "value": "The universal standard found in every guitar case and studio desk on earth."
+            }
           ]
         },
         {
@@ -137,9 +164,18 @@
           "borderColor": "border-purple-200",
           "description": "The modern cult classic for technical precision, speed, and economic picking efficiency.",
           "fields": [
-            { "label": "Geometry", "value": "Compact surface area with a razor-sharp, needle-point tip and contoured speed bevels." },
-            { "label": "Mechanical Advantage", "value": "Forces the right hand close to the strings, eliminating wasted stroke travel and maximizing alternate picking speed." },
-            { "label": "Adherents", "value": "John Petrucci, Eric Johnson, Joe Bonamassa, Matt Heafy, Tosin Abasi." }
+            {
+              "label": "Geometry",
+              "value": "Compact surface area with a razor-sharp, needle-point tip and contoured speed bevels."
+            },
+            {
+              "label": "Mechanical Advantage",
+              "value": "Forces the right hand close to the strings, eliminating wasted stroke travel and maximizing alternate picking speed."
+            },
+            {
+              "label": "Adherents",
+              "value": "John Petrucci, Eric Johnson, Joe Bonamassa, Matt Heafy, Tosin Abasi."
+            }
           ]
         },
         {
@@ -148,9 +184,18 @@
           "borderColor": "border-gray-200",
           "description": "Oversized surface area offering triple longevity and distinct multi-angled attack points.",
           "fields": [
-            { "label": "Geometry", "value": "Equilateral triangle with three identical playable tips." },
-            { "label": "Longevity", "value": "When one corner wears down, simply rotate to a fresh sharp edge mid-song." },
-            { "label": "Bass & Bluegrass", "value": "Massive grip surface preferred by bassists and aggressive acoustic flatpickers for maximum leverage." }
+            {
+              "label": "Geometry",
+              "value": "Equilateral triangle with three identical playable tips."
+            },
+            {
+              "label": "Longevity",
+              "value": "When one corner wears down, simply rotate to a fresh sharp edge mid-song."
+            },
+            {
+              "label": "Bass & Bluegrass",
+              "value": "Massive grip surface preferred by bassists and aggressive acoustic flatpickers for maximum leverage."
+            }
           ]
         }
       ]
@@ -167,10 +212,22 @@
           "borderColor": "border-gray-200",
           "description": "The industry standard color-coded pick series that has powered rock, pop, and metal stages for four decades.",
           "fields": [
-            { "label": "Material", "value": "Acetal Delrin with proprietary powdery grip finish" },
-            { "label": "Gauges", "value": "0.50mm (Red), 0.60mm (Orange), 0.73mm (Yellow), 0.88mm (Green), 1.00mm (Blue), 1.14mm (Purple)" },
-            { "label": "Tone Character", "value": "Bright, punchy snap with predictable string release and exceptional durability" },
-            { "label": "Ideal For", "value": "All musical genres; the definitive first-choice pick for electric and acoustic guitarists" }
+            {
+              "label": "Material",
+              "value": "Acetal Delrin with proprietary powdery grip finish"
+            },
+            {
+              "label": "Gauges",
+              "value": "0.50mm (Red), 0.60mm (Orange), 0.73mm (Yellow), 0.88mm (Green), 1.00mm (Blue), 1.14mm (Purple)"
+            },
+            {
+              "label": "Tone Character",
+              "value": "Bright, punchy snap with predictable string release and exceptional durability"
+            },
+            {
+              "label": "Ideal For",
+              "value": "All musical genres; the definitive first-choice pick for electric and acoustic guitarists"
+            }
           ]
         },
         {
@@ -179,10 +236,22 @@
           "borderColor": "border-gray-200",
           "description": "The high-speed precision icon that redefined lead guitar technique and alternate picking efficiency.",
           "fields": [
-            { "label": "Material", "value": "Red Nylon (warmer, subtle flex) or Black 'Stiffo' (ultra-rigid, aggressive attack)" },
-            { "label": "Tip Profile", "value": "Sharp, pointed tip with quick-release beveled edges" },
-            { "label": "Size", "value": "Compact profile minimizing hand distance from strings" },
-            { "label": "Ideal For", "value": "Sweep picking, lightning alternate picking, jazz chord-melody, and modern metal articulation" }
+            {
+              "label": "Material",
+              "value": "Red Nylon (warmer, subtle flex) or Black 'Stiffo' (ultra-rigid, aggressive attack)"
+            },
+            {
+              "label": "Tip Profile",
+              "value": "Sharp, pointed tip with quick-release beveled edges"
+            },
+            {
+              "label": "Size",
+              "value": "Compact profile minimizing hand distance from strings"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Sweep picking, lightning alternate picking, jazz chord-melody, and modern metal articulation"
+            }
           ]
         },
         {
@@ -191,10 +260,22 @@
           "borderColor": "border-gray-200",
           "description": "Engineered for high-sweat live performance with a heavily textured molded non-slip grid surface.",
           "fields": [
-            { "label": "Grip Technology", "value": "Coarse diamond-mesh molded grid preventing rotation in sweaty fingers" },
-            { "label": "Material", "value": "High-impact flexible nylon" },
-            { "label": "Iconic User", "value": "Eddie Van Halen (used 0.60 mm Max-Grip for fluid tremolo picking and tapping)" },
-            { "label": "Ideal For", "value": "High-energy live touring musicians and players struggling with pick slippage" }
+            {
+              "label": "Grip Technology",
+              "value": "Coarse diamond-mesh molded grid preventing rotation in sweaty fingers"
+            },
+            {
+              "label": "Material",
+              "value": "High-impact flexible nylon"
+            },
+            {
+              "label": "Iconic User",
+              "value": "Eddie Van Halen (used 0.60 mm Max-Grip for fluid tremolo picking and tapping)"
+            },
+            {
+              "label": "Ideal For",
+              "value": "High-energy live touring musicians and players struggling with pick slippage"
+            }
           ]
         },
         {
@@ -203,10 +284,22 @@
           "borderColor": "border-gray-200",
           "description": "Combines the indestructible rigidity and glassy attack of aerospace Ultex with a sculpted, pointed tip.",
           "fields": [
-            { "label": "Material", "value": "High-grade Polyetherimide (Ultex)" },
-            { "label": "Tip Geometry", "value": "Elongated, sculpted needle tip for surgical string targeting" },
-            { "label": "Dynamic Range", "value": "Massive acoustic volume ceiling with crystalline harmonic overtone clarity" },
-            { "label": "Ideal For", "value": "Progressive metal, aggressive acoustic flatpicking, and rapid single-note arpeggios" }
+            {
+              "label": "Material",
+              "value": "High-grade Polyetherimide (Ultex)"
+            },
+            {
+              "label": "Tip Geometry",
+              "value": "Elongated, sculpted needle tip for surgical string targeting"
+            },
+            {
+              "label": "Dynamic Range",
+              "value": "Massive acoustic volume ceiling with crystalline harmonic overtone clarity"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Progressive metal, aggressive acoustic flatpicking, and rapid single-note arpeggios"
+            }
           ]
         },
         {
@@ -215,10 +308,22 @@
           "borderColor": "border-gray-200",
           "description": "The timeless vintage tortoise-shell aesthetic and smooth organic feel that defined early rock 'n' roll.",
           "fields": [
-            { "label": "Material", "value": "Premium celluloid in classic tortoise shell, white, and black" },
-            { "label": "Gauges", "value": "Thin, Medium, Heavy, Extra Heavy" },
-            { "label": "Tone Profile", "value": "Warm, round vintage release with musical acoustic click" },
-            { "label": "Ideal For", "value": "Classic rock, blues, country, and traditional acoustic singer-songwriter strumming" }
+            {
+              "label": "Material",
+              "value": "Premium celluloid in classic tortoise shell, white, and black"
+            },
+            {
+              "label": "Gauges",
+              "value": "Thin, Medium, Heavy, Extra Heavy"
+            },
+            {
+              "label": "Tone Profile",
+              "value": "Warm, round vintage release with musical acoustic click"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Classic rock, blues, country, and traditional acoustic singer-songwriter strumming"
+            }
           ]
         },
         {
@@ -227,10 +332,22 @@
           "borderColor": "border-gray-200",
           "description": "High-performance Delrin picks featuring machined beveled edges and matte non-slip grip technology.",
           "fields": [
-            { "label": "Material", "value": "Ultra-durable Delrin with sharp beveled perimeter" },
-            { "label": "Gauges", "value": "1.5 mm and 2.0 mm heavy-duty options" },
-            { "label": "Design", "value": "Available in Standard, Mini, Teardrop, and Shield profiles" },
-            { "label": "Ideal For", "value": "Technical metal, aggressive rhythm chugging, and precise lead guitar execution" }
+            {
+              "label": "Material",
+              "value": "Ultra-durable Delrin with sharp beveled perimeter"
+            },
+            {
+              "label": "Gauges",
+              "value": "1.5 mm and 2.0 mm heavy-duty options"
+            },
+            {
+              "label": "Design",
+              "value": "Available in Standard, Mini, Teardrop, and Shield profiles"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Technical metal, aggressive rhythm chugging, and precise lead guitar execution"
+            }
           ]
         }
       ]
@@ -247,9 +364,18 @@
           "borderColor": "border-yellow-200",
           "description": "Right-hand grip tension directly governs dynamic range and speed.",
           "fields": [
-            { "label": "The Loose Grip Paradox", "value": "Grip the pick just firmly enough so it does not rotate, but loose enough that it flexes minutely between thumb and index. Squeezing too hard introduces forearm tension that throttles speed and produces harsh, thin tone." },
-            { "label": "The 30-Degree Slicing Attack", "value": "Angle the pick edge approximately 30 degrees to the string rather than slapping flat. Slicing glides across the string with minimal resistance, dramatically accelerating alternate picking runs." },
-            { "label": "Choking Down for Pinch Harmonics", "value": "Expose only 2 to 3 mm of the pick tip. When striking the string, allow the fleshy edge of the right thumb to brush the vibrating string simultaneously, exciting piercing artificial harmonics." }
+            {
+              "label": "The Loose Grip Paradox",
+              "value": "Grip the pick just firmly enough so it does not rotate, but loose enough that it flexes minutely between thumb and index. Squeezing too hard introduces forearm tension that throttles speed and produces harsh, thin tone."
+            },
+            {
+              "label": "The 30-Degree Slicing Attack",
+              "value": "Angle the pick edge approximately 30 degrees to the string rather than slapping flat. Slicing glides across the string with minimal resistance, dramatically accelerating alternate picking runs."
+            },
+            {
+              "label": "Choking Down for Pinch Harmonics",
+              "value": "Expose only 2 to 3 mm of the pick tip. When striking the string, allow the fleshy edge of the right thumb to brush the vibrating string simultaneously, exciting piercing artificial harmonics."
+            }
           ]
         },
         {
@@ -258,9 +384,18 @@
           "borderColor": "border-green-200",
           "description": "A pick's edge wears down rapidly from friction against wound strings.",
           "fields": [
-            { "label": "The Serration Danger", "value": "Wound steel strings grind jagged micro-grooves into plastic pick edges. These microscopic burs catch on strings, causing harsh scratching noises and broken high E strings." },
-            { "label": "Emery & Leather Polishing", "value": "Restore worn pick bevels by buffing them against 1,000-grit sandpaper followed by a swipe across a leather strap or denim jeans to restore a glass-smooth release." },
-            { "label": "When to Retire", "value": "When a pick's tip has rounded off significantly, throwing off your picking depth perception, discard it. Picks are cheap consumables—never compromise technique for a worn $0.50 pick." }
+            {
+              "label": "The Serration Danger",
+              "value": "Wound steel strings grind jagged micro-grooves into plastic pick edges. These microscopic burs catch on strings, causing harsh scratching noises and broken high E strings."
+            },
+            {
+              "label": "Emery & Leather Polishing",
+              "value": "Restore worn pick bevels by buffing them against 1,000-grit sandpaper followed by a swipe across a leather strap or denim jeans to restore a glass-smooth release."
+            },
+            {
+              "label": "When to Retire",
+              "value": "When a pick's tip has rounded off significantly, throwing off your picking depth perception, discard it. Picks are cheap consumables—never compromise technique for a worn $0.50 pick."
+            }
           ]
         }
       ]

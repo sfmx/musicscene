@@ -19,7 +19,7 @@
       },
       {
         "title": "Thermal Inertia & The 45%–55% Humidity Standard",
-        "text": "Wood is hygroscopic: in dry winter climates ($< 35\\%\\text{ RH}$), acoustic tops shrink, pulling downward and dropping string action until strings buzz against frets, eventually causing catastrophic top splits behind the bridge. On electric guitars, shrinking fingerboards leave sharp metal fret ends protruding ('fret sprout'). A sealed hardshell case creates an isolated microclimate. Furthermore, when bringing an instrument in from freezing winter weather, keeping the case latched for 2 to 4 hours allows internal temperatures to equalize gradually, preventing violent nitrocellulose finish checking."
+        "text": "Wood is hygroscopic: in dry winter climates (< 35\\% RH), acoustic tops shrink, pulling downward and dropping string action until strings buzz against frets, eventually causing catastrophic top splits behind the bridge. On electric guitars, shrinking fingerboards leave sharp metal fret ends protruding ('fret sprout'). A sealed hardshell case creates an isolated microclimate. Furthermore, when bringing an instrument in from freezing winter weather, keeping the case latched for 2 to 4 hours allows internal temperatures to equalize gradually, preventing violent nitrocellulose finish checking."
       }
     ]
   },
@@ -36,10 +36,22 @@
           "borderColor": "border-blue-200",
           "description": "Engineered to withstand the violent abuses of airline baggage handlers and world tour freight.",
           "fields": [
-            { "label": "ATA 300 Category 1 Spec", "value": "Certified to survive a minimum of 100 round-trip commercial flights and 30-foot drops onto concrete." },
-            { "label": "Shell Construction", "value": "Ultra-high-molecular-weight polyethylene (UHMW) or molded polypropylene with continuous gasketed O-ring seals (waterproof and dustproof IP67)." },
-            { "label": "Pressure Equalization", "value": "Automatic ambient pressure release valve that equalizes internal air pressure during high-altitude aircraft decompression." },
-            { "label": "Security", "value": "Heavy-duty TSA-accepted locking latches allowing airport security inspection without destroying latches." }
+            {
+              "label": "ATA 300 Category 1 Spec",
+              "value": "Certified to survive a minimum of 100 round-trip commercial flights and 30-foot drops onto concrete."
+            },
+            {
+              "label": "Shell Construction",
+              "value": "Ultra-high-molecular-weight polyethylene (UHMW) or molded polypropylene with continuous gasketed O-ring seals (waterproof and dustproof IP67)."
+            },
+            {
+              "label": "Pressure Equalization",
+              "value": "Automatic ambient pressure release valve that equalizes internal air pressure during high-altitude aircraft decompression."
+            },
+            {
+              "label": "Security",
+              "value": "Heavy-duty TSA-accepted locking latches allowing airport security inspection without destroying latches."
+            }
           ]
         },
         {
@@ -48,9 +60,18 @@
           "borderColor": "border-amber-200",
           "description": "The classic studio and road standard pairing rigid protection with vintage elegance.",
           "fields": [
-            { "label": "Archtop Physics", "value": "A curved, arched wooden lid deflects downward crushing loads around the perimeter walls, preventing crushing forces from reaching the guitar soundboard." },
-            { "label": "5-Ply Cross-Lamination", "value": "Cross-grained hardwood plies wrapped in heavy Tolex vinyl resist punctures and provide substantial thermal insulation." },
-            { "label": "Plush Velvet Interior", "value": "Thick plush lining molded to the body shape, preventing internal shifting and eliminating finish scuffing." }
+            {
+              "label": "Archtop Physics",
+              "value": "A curved, arched wooden lid deflects downward crushing loads around the perimeter walls, preventing crushing forces from reaching the guitar soundboard."
+            },
+            {
+              "label": "5-Ply Cross-Lamination",
+              "value": "Cross-grained hardwood plies wrapped in heavy Tolex vinyl resist punctures and provide substantial thermal insulation."
+            },
+            {
+              "label": "Plush Velvet Interior",
+              "value": "Thick plush lining molded to the body shape, preventing internal shifting and eliminating finish scuffing."
+            }
           ]
         },
         {
@@ -59,9 +80,18 @@
           "borderColor": "border-purple-200",
           "description": "The modern urban touring revolution combining gig-bag portability with hard-case armor.",
           "fields": [
-            { "label": "Impact Deflection", "value": "High-density EVA foam core paired with ABS plastic impact panels embedded in the perimeter walls to absorb brutal street drops." },
-            { "label": "Headlock Suspension", "value": "Patented neck cradle suspends the guitar neck and locks the headstock in mid-air, completely immune to backward drop whiplash." },
-            { "label": "Boot Protection", "value": "Molded rubber sneaker-tread sole at the base absorbs vertical drops and protects strap buttons from puncturing the bag." }
+            {
+              "label": "Impact Deflection",
+              "value": "High-density EVA foam core paired with ABS plastic impact panels embedded in the perimeter walls to absorb brutal street drops."
+            },
+            {
+              "label": "Headlock Suspension",
+              "value": "Patented neck cradle suspends the guitar neck and locks the headstock in mid-air, completely immune to backward drop whiplash."
+            },
+            {
+              "label": "Boot Protection",
+              "value": "Molded rubber sneaker-tread sole at the base absorbs vertical drops and protects strap buttons from puncturing the bag."
+            }
           ]
         },
         {
@@ -70,9 +100,18 @@
           "borderColor": "",
           "description": "Lightweight, breathable protection for local rehearsals, subway travel, and lessons.",
           "fields": [
-            { "label": "Padding Depth", "value": "Typically 15 mm to 25 mm high-density foam padding protecting against scratches, minor dings, and dust." },
-            { "label": "Storage Pockets", "value": "Expansive exterior zippered compartments holding sheet music, cables, pedals, tablets, and spare strings." },
-            { "label": "Transport Warning", "value": "Never stack heavy amplifiers or flight cases on top of soft gig bags, and never check them as airline hold luggage." }
+            {
+              "label": "Padding Depth",
+              "value": "Typically 15 mm to 25 mm high-density foam padding protecting against scratches, minor dings, and dust."
+            },
+            {
+              "label": "Storage Pockets",
+              "value": "Expansive exterior zippered compartments holding sheet music, cables, pedals, tablets, and spare strings."
+            },
+            {
+              "label": "Transport Warning",
+              "value": "Never stack heavy amplifiers or flight cases on top of soft gig bags, and never check them as airline hold luggage."
+            }
           ]
         }
       ]
@@ -89,10 +128,22 @@
           "borderColor": "border-yellow-200",
           "description": "Maintaining the critical 45%–55% relative humidity microclimate inside your case.",
           "fields": [
-            { "label": "The Low-Humidity Threat ($< 35\\%$ RH)", "value": "Acoustic soundboards shrink, arching downward until string action collapses. Bridge glue joints fail, and the top splits open along the grain lines." },
-            { "label": "The High-Humidity Threat ($> 65\\%$ RH)", "value": "Wood absorbs water, swelling the soundboard upward into a belly, raising string action to unplayable heights, and deadening acoustic projection." },
-            { "label": "Two-Way Boveda / D'Addario Packs", "value": "Saturated salt-solution membrane packs that automatically absorb moisture when case humidity is high, and release moisture when it drops below 45%." },
-            { "label": "Digital Hygrometer", "value": "Keep a calibrated digital hygrometer inside the case accessory pocket to monitor ambient relative humidity daily." }
+            {
+              "label": "The Low-Humidity Threat (< 35\\% RH)",
+              "value": "Acoustic soundboards shrink, arching downward until string action collapses. Bridge glue joints fail, and the top splits open along the grain lines."
+            },
+            {
+              "label": "The High-Humidity Threat (> 65\\% RH)",
+              "value": "Wood absorbs water, swelling the soundboard upward into a belly, raising string action to unplayable heights, and deadening acoustic projection."
+            },
+            {
+              "label": "Two-Way Boveda / D'Addario Packs",
+              "value": "Saturated salt-solution membrane packs that automatically absorb moisture when case humidity is high, and release moisture when it drops below 45%."
+            },
+            {
+              "label": "Digital Hygrometer",
+              "value": "Keep a calibrated digital hygrometer inside the case accessory pocket to monitor ambient relative humidity daily."
+            }
           ]
         },
         {
@@ -101,8 +152,14 @@
           "borderColor": "border-red-200",
           "description": "Preventing thermal shock from destroying vintage nitrocellulose finishes.",
           "fields": [
-            { "label": "Thermal Expansion Mismatch", "value": "Wood and nitrocellulose lacquer expand and contract at radically different rates. If a frozen guitar ($30^\\circ\\text{F}$) is exposed to a warm room ($72^\\circ\\text{F}$), the wood expands instantly, shattering the brittle lacquer into a spiderweb of permanent cracks ('checking')." },
-            { "label": "The 3-Hour Golden Rule", "value": "When arriving home or at a venue from cold transit: leave the case fully latched for at least 2 to 4 hours. Allow the internal air cavity to warm up to room temperature at a glacial pace before opening the lid." }
+            {
+              "label": "Thermal Expansion Mismatch",
+              "value": "Wood and nitrocellulose lacquer expand and contract at radically different rates. If a frozen guitar (30°F) is exposed to a warm room (72°F), the wood expands instantly, shattering the brittle lacquer into a spiderweb of permanent cracks ('checking')."
+            },
+            {
+              "label": "The 3-Hour Golden Rule",
+              "value": "When arriving home or at a venue from cold transit: leave the case fully latched for at least 2 to 4 hours. Allow the internal air cavity to warm up to room temperature at a glacial pace before opening the lid."
+            }
           ]
         }
       ]
@@ -119,10 +176,22 @@
           "borderColor": "border-gray-200",
           "description": "The ultimate waterproof military-grade ATA airline flight case, injection molded from ultra-high-strength polypropylene copolymer resin.",
           "fields": [
-            { "label": "Protection Rating", "value": "ATA 300 Category 1 certified with submersible IP67 waterproof gasket seal" },
-            { "label": "Pressure Valve", "value": "Automatic ambient pressure equalization valve with trigger-release TSA-approved latches" },
-            { "label": "Interior", "value": "Plush EPS molded interior foam cradle with deep accessory compartment" },
-            { "label": "Ideal For", "value": "Touring musicians, international airline travel, and priceless vintage instruments" }
+            {
+              "label": "Protection Rating",
+              "value": "ATA 300 Category 1 certified with submersible IP67 waterproof gasket seal"
+            },
+            {
+              "label": "Pressure Valve",
+              "value": "Automatic ambient pressure equalization valve with trigger-release TSA-approved latches"
+            },
+            {
+              "label": "Interior",
+              "value": "Plush EPS molded interior foam cradle with deep accessory compartment"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Touring musicians, international airline travel, and priceless vintage instruments"
+            }
           ]
         },
         {
@@ -131,10 +200,22 @@
           "borderColor": "border-gray-200",
           "description": "The industry standard molded ABS hard case for acoustic dreadnought guitars, pairing impact resistance with lightweight mobility.",
           "fields": [
-            { "label": "Shell Material", "value": "Deluxe hard-molded ABS exterior with heavy-duty aluminum valance" },
-            { "label": "Interior Cradle", "value": "Thick EPS foam interior lined with deep, protective plush velvet" },
-            { "label": "Neck Support", "value": "Extended through-neck support block providing full structural stabilization" },
-            { "label": "Ideal For", "value": "Dreadnought acoustic guitars (Martin D-28, Taylor, Yamaha FG series) for everyday gigs" }
+            {
+              "label": "Shell Material",
+              "value": "Deluxe hard-molded ABS exterior with heavy-duty aluminum valance"
+            },
+            {
+              "label": "Interior Cradle",
+              "value": "Thick EPS foam interior lined with deep, protective plush velvet"
+            },
+            {
+              "label": "Neck Support",
+              "value": "Extended through-neck support block providing full structural stabilization"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Dreadnought acoustic guitars (Martin D-28, Taylor, Yamaha FG series) for everyday gigs"
+            }
           ]
         },
         {
@@ -143,10 +224,22 @@
           "borderColor": "border-gray-200",
           "description": "A stylish, weather-resistant hybrid gig bag offering semi-rigid foam protection and urban backpack mobility.",
           "fields": [
-            { "label": "Exterior", "value": "Weather-resistant blended fabric exterior with thick rubberized tread base" },
-            { "label": "Padding", "value": "20 mm thick foam padding lined with soft micro-fleece interior lining" },
-            { "label": "Neck Block", "value": "Removable three-point internal foam padding system with hook-and-loop neck cradle" },
-            { "label": "Ideal For", "value": "Commuting urban musicians, daily rehearsals, and subway transport" }
+            {
+              "label": "Exterior",
+              "value": "Weather-resistant blended fabric exterior with thick rubberized tread base"
+            },
+            {
+              "label": "Padding",
+              "value": "20 mm thick foam padding lined with soft micro-fleece interior lining"
+            },
+            {
+              "label": "Neck Block",
+              "value": "Removable three-point internal foam padding system with hook-and-loop neck cradle"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Commuting urban musicians, daily rehearsals, and subway transport"
+            }
           ]
         },
         {
@@ -155,10 +248,22 @@
           "borderColor": "border-gray-200",
           "description": "Traditional 3-ply cross-laminated wooden hardshell case wrapped in vintage black, tweed, or brown Tolex.",
           "fields": [
-            { "label": "Construction", "value": "Reliable 3-ply wood construction with heavy vinyl-wrapped steel carrying handle" },
-            { "label": "Interior", "value": "Crushed acrylic plush interior with large accessory lid compartment" },
-            { "label": "Hardware", "value": "Vintage-style brass or chrome latches with locking center latch" },
-            { "label": "Ideal For", "value": "Fender Stratocasters and Telecasters seeking classic vintage showroom elegance" }
+            {
+              "label": "Construction",
+              "value": "Reliable 3-ply wood construction with heavy vinyl-wrapped steel carrying handle"
+            },
+            {
+              "label": "Interior",
+              "value": "Crushed acrylic plush interior with large accessory lid compartment"
+            },
+            {
+              "label": "Hardware",
+              "value": "Vintage-style brass or chrome latches with locking center latch"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Fender Stratocasters and Telecasters seeking classic vintage showroom elegance"
+            }
           ]
         },
         {
@@ -167,10 +272,22 @@
           "borderColor": "border-gray-200",
           "description": "The undisputed pioneer of top-loading hybrid gig bags, featuring the patented Headlock neck suspension system.",
           "fields": [
-            { "label": "Top-Loading Design", "value": "Unzips from the top allowing you to slide the guitar out vertically while the case stands upright" },
-            { "label": "Headlock System", "value": "Automatically clamps down on the neck when zipped, suspending the headstock off the ground" },
-            { "label": "The Boot Base", "value": "Custom molded rubber sole inspired by extreme athletic footwear absorbs vertical drops" },
-            { "label": "Ideal For", "value": "Professional touring guitarists demanding maximum protection in an ultra-portable backpack format" }
+            {
+              "label": "Top-Loading Design",
+              "value": "Unzips from the top allowing you to slide the guitar out vertically while the case stands upright"
+            },
+            {
+              "label": "Headlock System",
+              "value": "Automatically clamps down on the neck when zipped, suspending the headstock off the ground"
+            },
+            {
+              "label": "The Boot Base",
+              "value": "Custom molded rubber sole inspired by extreme athletic footwear absorbs vertical drops"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Professional touring guitarists demanding maximum protection in an ultra-portable backpack format"
+            }
           ]
         }
       ]
@@ -187,9 +304,18 @@
           "borderColor": "border-green-200",
           "description": "Know your federal legal rights when boarding aircraft with musical instruments.",
           "fields": [
-            { "label": "The Federal Law", "value": "In the United States, Section 403 of the FAA Modernization and Reform Act of 2012 requires airlines to allow passengers to carry a guitar onboard into the passenger cabin if it can be stowed in an overhead bin or under a seat at the time of boarding, without extra fees." },
-            { "label": "Priority Boarding Strategy", "value": "Purchase early boarding (Group 1 or Priority). If overhead bins fill with other passenger luggage before you board, flight attendants have the legal right to force a gate check." },
-            { "label": "Print the Statute", "value": "Always carry a printed copy of Section 403 and the specific airline's musical instrument carriage policy in your case pocket." }
+            {
+              "label": "The Federal Law",
+              "value": "In the United States, Section 403 of the FAA Modernization and Reform Act of 2012 requires airlines to allow passengers to carry a guitar onboard into the passenger cabin if it can be stowed in an overhead bin or under a seat at the time of boarding, without extra fees."
+            },
+            {
+              "label": "Priority Boarding Strategy",
+              "value": "Purchase early boarding (Group 1 or Priority). If overhead bins fill with other passenger luggage before you board, flight attendants have the legal right to force a gate check."
+            },
+            {
+              "label": "Print the Statute",
+              "value": "Always carry a printed copy of Section 403 and the specific airline's musical instrument carriage policy in your case pocket."
+            }
           ]
         },
         {
@@ -198,9 +324,18 @@
           "borderColor": "border-blue-200",
           "description": "Preparing your guitar for potential cargo hold baggage transit.",
           "fields": [
-            { "label": "Detune Slightly", "value": "Slacken string tension by one whole step (D-G-C-F-A-D) before flying to prevent cargo temperature swings and pressure shifts from snapping the neck." },
-            { "label": "Fill Headstock Voids", "value": "Pack bubble wrap or cotton cloths around and beneath the headstock inside the case so it cannot whip back and forth under sudden impact." },
-            { "label": "Fragile Tag Request", "value": "If forced to gate-check: ensure the gate attendant applies a prominent 'Return to Aircraft Door' tag so you reclaim the guitar at the jet bridge upon arrival rather than on the baggage carousel." }
+            {
+              "label": "Detune Slightly",
+              "value": "Slacken string tension by one whole step (D-G-C-F-A-D) before flying to prevent cargo temperature swings and pressure shifts from snapping the neck."
+            },
+            {
+              "label": "Fill Headstock Voids",
+              "value": "Pack bubble wrap or cotton cloths around and beneath the headstock inside the case so it cannot whip back and forth under sudden impact."
+            },
+            {
+              "label": "Fragile Tag Request",
+              "value": "If forced to gate-check: ensure the gate attendant applies a prominent 'Return to Aircraft Door' tag so you reclaim the guitar at the jet bridge upon arrival rather than on the baggage carousel."
+            }
           ]
         }
       ]

@@ -15,7 +15,7 @@
     "columns": [
       {
         "title": "The Physics of Voltage Amplification & Noise Floors",
-        "text": "Amplifying a microvolt signal by a factor of 1,000x (+60 dB) is an extreme electronic challenge governed by Johnson-Nyquist thermal noise. At room temperature ($290\\text{ K}$), the random thermal agitation of electrons inside a standard $150\\ \\Omega$ microphone coil establishes a physical noise limit of $-131.8\\text{ dBu}$. A masterclass preamplifier operates within fractions of a decibel of this theoretical boundary, achieving an Equivalent Input Noise (EIN) of $-128\\text{ dBu}$ to $-130.5\\text{ dBu}$. A poor preamp adds audible hiss, limits usable dynamic range, and collapses the acoustic depth of quiet performances."
+        "text": "Amplifying a microvolt signal by a factor of 1,000x (+60 dB) is an extreme electronic challenge governed by Johnson-Nyquist thermal noise. At room temperature (290 K), the random thermal agitation of electrons inside a standard 150 Ω microphone coil establishes a physical noise limit of -131.8 dBu. A masterclass preamplifier operates within fractions of a decibel of this theoretical boundary, achieving an Equivalent Input Noise (EIN) of -128 dBu to -130.5 dBu. A poor preamp adds audible hiss, limits usable dynamic range, and collapses the acoustic depth of quiet performances."
       },
       {
         "title": "Harmonic Saturation & Transformer Hysteresis",
@@ -36,10 +36,22 @@
           "borderColor": "border-amber-200",
           "description": "Designed by Rupert Neve in 1970 for Wessex Studios, this topology is the gold standard of analog weight and musical warmth.",
           "fields": [
-            { "label": "Circuit Architecture", "value": "Single-ended Class-A discrete transistor circuitry with step-up input transformer and gapped output transformer." },
-            { "label": "Harmonic Signature", "value": "Rich second-order harmonic coloration and subtle low-mid saturation (200 Hz–400 Hz) that gives vocals, drums, and bass massive three-dimensional body." },
-            { "label": "Transient Response", "value": "Smooth, rounded transient edges that tame harsh vocal sibilance and brittle acoustic pick attacks without dulling presence." },
-            { "label": "Iconic Sound", "value": "The foundational British rock and pop sound heard on countless classic records from Led Zeppelin to Nirvana." }
+            {
+              "label": "Circuit Architecture",
+              "value": "Single-ended Class-A discrete transistor circuitry with step-up input transformer and gapped output transformer."
+            },
+            {
+              "label": "Harmonic Signature",
+              "value": "Rich second-order harmonic coloration and subtle low-mid saturation (200 Hz–400 Hz) that gives vocals, drums, and bass massive three-dimensional body."
+            },
+            {
+              "label": "Transient Response",
+              "value": "Smooth, rounded transient edges that tame harsh vocal sibilance and brittle acoustic pick attacks without dulling presence."
+            },
+            {
+              "label": "Iconic Sound",
+              "value": "The foundational British rock and pop sound heard on countless classic records from Led Zeppelin to Nirvana."
+            }
           ]
         },
         {
@@ -48,10 +60,22 @@
           "borderColor": "border-blue-200",
           "description": "Engineered by Saul Walker in the late 1960s, renowned for explosive transient punch and forward midrange bite.",
           "fields": [
-            { "label": "Circuit Architecture", "value": "Proprietary modular 2520 discrete operational amplifier paired with AP2503 steel-core output transformer." },
-            { "label": "Harmonic Signature", "value": "Aggressive, forward midrange presence (1 kHz–5 kHz) with exceptional high-frequency clarity and tight low-end slam." },
-            { "label": "Transient Response", "value": "Ultra-fast slew rate capturing instantaneous attack transients, making it the undisputed king of snare drums, electric guitars, and punchy pop/rock vocals." },
-            { "label": "Iconic Sound", "value": "The punchy American West Coast console sound that drives classic rock, funk, and modern Nashville productions." }
+            {
+              "label": "Circuit Architecture",
+              "value": "Proprietary modular 2520 discrete operational amplifier paired with AP2503 steel-core output transformer."
+            },
+            {
+              "label": "Harmonic Signature",
+              "value": "Aggressive, forward midrange presence (1 kHz–5 kHz) with exceptional high-frequency clarity and tight low-end slam."
+            },
+            {
+              "label": "Transient Response",
+              "value": "Ultra-fast slew rate capturing instantaneous attack transients, making it the undisputed king of snare drums, electric guitars, and punchy pop/rock vocals."
+            },
+            {
+              "label": "Iconic Sound",
+              "value": "The punchy American West Coast console sound that drives classic rock, funk, and modern Nashville productions."
+            }
           ]
         },
         {
@@ -60,10 +84,22 @@
           "borderColor": "border-red-200",
           "description": "Designed by Bill Putnam Sr. in the 1950s, delivering lush, euphonic warmth and natural dynamic compression.",
           "fields": [
-            { "label": "Circuit Architecture", "value": "12AX7 and 12AT7 dual-triode vacuum tubes operating at high plate voltages (200V–300V DC) with transformer balancing." },
-            { "label": "Harmonic Signature", "value": "Generates predominantly even-order (2nd and 4th) harmonic saturation that the human brain perceives as warmth, intimacy, and three-dimensional bloom." },
-            { "label": "Soft Knee Compression", "value": "As input signals peak, the vacuum tube enters soft saturation, gently compressing dynamic peaks in a natural, musical manner." },
-            { "label": "Iconic Sound", "value": "The lush vocal warmth of Ray Charles, The Beach Boys (Pet Sounds), and classic Motown tracking." }
+            {
+              "label": "Circuit Architecture",
+              "value": "12AX7 and 12AT7 dual-triode vacuum tubes operating at high plate voltages (200V–300V DC) with transformer balancing."
+            },
+            {
+              "label": "Harmonic Signature",
+              "value": "Generates predominantly even-order (2nd and 4th) harmonic saturation that the human brain perceives as warmth, intimacy, and three-dimensional bloom."
+            },
+            {
+              "label": "Soft Knee Compression",
+              "value": "As input signals peak, the vacuum tube enters soft saturation, gently compressing dynamic peaks in a natural, musical manner."
+            },
+            {
+              "label": "Iconic Sound",
+              "value": "The lush vocal warmth of Ray Charles, The Beach Boys (Pet Sounds), and classic Motown tracking."
+            }
           ]
         },
         {
@@ -72,10 +108,22 @@
           "borderColor": "border-emerald-200",
           "description": "Engineered for absolute mathematical transparency, vanishingly low distortion, and extreme frequency linearity.",
           "fields": [
-            { "label": "Circuit Architecture", "value": "High-voltage discrete bipolar or JFET differential input stages without transformers in the signal path." },
-            { "label": "Performance Specs", "value": "Total Harmonic Distortion (THD+N) below 0.0005%, ruler-flat bandwidth from 5 Hz to 200 kHz, and negligible phase drift." },
-            { "label": "Acoustic Integrity", "value": "Adds zero coloration, compression, or harmonic thickening; delivers the unaltered reality of the microphone capsule." },
-            { "label": "Best Applications", "value": "Classical orchestras, solo acoustic instruments, foley, high-resolution scientific capture, and precision acoustic arrays." }
+            {
+              "label": "Circuit Architecture",
+              "value": "High-voltage discrete bipolar or JFET differential input stages without transformers in the signal path."
+            },
+            {
+              "label": "Performance Specs",
+              "value": "Total Harmonic Distortion (THD+N) below 0.0005%, ruler-flat bandwidth from 5 Hz to 200 kHz, and negligible phase drift."
+            },
+            {
+              "label": "Acoustic Integrity",
+              "value": "Adds zero coloration, compression, or harmonic thickening; delivers the unaltered reality of the microphone capsule."
+            },
+            {
+              "label": "Best Applications",
+              "value": "Classical orchestras, solo acoustic instruments, foley, high-resolution scientific capture, and precision acoustic arrays."
+            }
           ]
         }
       ]
@@ -90,11 +138,20 @@
           "title": "Input Impedance Loading Physics",
           "bgColor": "bg-yellow-50",
           "borderColor": "border-yellow-200",
-          "description": "How the preamp input impedance ($Z_{\\text{in}}$) interacts with microphone output impedance ($Z_{\\text{out}}$).",
+          "description": "How the preamp input impedance (Z_in) interacts with microphone output impedance (Z_out).",
           "fields": [
-            { "label": "The Bridging Rule ($Z_{\\text{in}} \\ge 5\\text{--}10 \\times Z_{\\text{out}}$)", "value": "Standard modern microphones feature an output impedance of 150 $\\Omega$–200 $\\Omega$. Standard preamp inputs provide 1,200 $\\Omega$ to 2,500 $\\Omega$ to ensure complete voltage transfer without signal attenuation." },
-            { "label": "Variable Impedance Tone Shaping", "value": "Preamps with variable impedance switches (e.g. 300 $\\Omega$, 600 $\\Omega$, 1200 $\\Omega$) allow engineers to deliberately load dynamic and ribbon microphones. Dropping impedance dampens capsule resonance, rolling off high-frequency sizzle and tightening low-end response." },
-            { "label": "Ribbon Microphone Synergy", "value": "Passive ribbon microphones flourish when connected to ultra-high input impedance preamps (10 k$\\Omega$–20 k$\\Omega$), unlocking extended bass response and open, airy high frequencies." }
+            {
+              "label": "The Bridging Rule (Z_in ≥ 5–10 × Z_out)",
+              "value": "Standard modern microphones feature an output impedance of 150 Ω–200 Ω. Standard preamp inputs provide 1,200 Ω to 2,500 Ω to ensure complete voltage transfer without signal attenuation."
+            },
+            {
+              "label": "Variable Impedance Tone Shaping",
+              "value": "Preamps with variable impedance switches (e.g. 300 Ω, 600 Ω, 1200 Ω) allow engineers to deliberately load dynamic and ribbon microphones. Dropping impedance dampens capsule resonance, rolling off high-frequency sizzle and tightening low-end response."
+            },
+            {
+              "label": "Ribbon Microphone Synergy",
+              "value": "Passive ribbon microphones flourish when connected to ultra-high input impedance preamps (10 kΩ–20 kΩ), unlocking extended bass response and open, airy high frequencies."
+            }
           ]
         },
         {
@@ -103,9 +160,18 @@
           "borderColor": "",
           "description": "Key engineering benchmarks that distinguish professional preamplifiers from mediocre circuits.",
           "fields": [
-            { "label": "Equivalent Input Noise (EIN)", "value": "The absolute noise floor of the preamp referenced to its input. A rating of $-128\\text{ dBu}$ to $-130\\text{ dBu}$ at maximum gain ensures silent operation with low-output dynamic mics (Shure SM7B, Electro-Voice RE20)." },
-            { "label": "Common Mode Rejection Ratio (CMRR)", "value": "The ability of the balanced input stage to reject electromagnetic hum and radio interference induced equally on XLR pins 2 and 3. Pro units deliver $>80\\text{ dB}$ CMRR at 60 Hz." },
-            { "label": "Maximum Output Level & Headroom", "value": "High-voltage discrete preamps output up to $+26\\text{ dBu}$ to $+28\\text{ dBu}$ before clipping, providing massive dynamic headroom for explosive drum transients." }
+            {
+              "label": "Equivalent Input Noise (EIN)",
+              "value": "The absolute noise floor of the preamp referenced to its input. A rating of -128 dBu to -130 dBu at maximum gain ensures silent operation with low-output dynamic mics (Shure SM7B, Electro-Voice RE20)."
+            },
+            {
+              "label": "Common Mode Rejection Ratio (CMRR)",
+              "value": "The ability of the balanced input stage to reject electromagnetic hum and radio interference induced equally on XLR pins 2 and 3. Pro units deliver >80 dB CMRR at 60 Hz."
+            },
+            {
+              "label": "Maximum Output Level & Headroom",
+              "value": "High-voltage discrete preamps output up to +26 dBu to +28 dBu before clipping, providing massive dynamic headroom for explosive drum transients."
+            }
           ]
         }
       ]
@@ -122,10 +188,22 @@
           "borderColor": "border-gray-200",
           "description": "The benchmark in accessible vintage British Class-A tone, faithfully replicating the discrete 1073 circuit topology without integrated circuits.",
           "fields": [
-            { "label": "Circuit Architecture", "value": "All-discrete signal path with transformer-balanced input and output stages" },
-            { "label": "Gain Range", "value": "Up to 80 dB of gain capable of driving demanding passive ribbon and dynamic mics" },
-            { "label": "Tone Features", "value": "Selectable input impedance (300 $\\Omega$ / 1200 $\\Omega$), AIR EQ boost, and output level attenuator for driving transformers into saturation" },
-            { "label": "Ideal For", "value": "Home studio producers demanding classic British transformer weight on vocals, bass, and guitars on a budget" }
+            {
+              "label": "Circuit Architecture",
+              "value": "All-discrete signal path with transformer-balanced input and output stages"
+            },
+            {
+              "label": "Gain Range",
+              "value": "Up to 80 dB of gain capable of driving demanding passive ribbon and dynamic mics"
+            },
+            {
+              "label": "Tone Features",
+              "value": "Selectable input impedance (300 Ω / 1200 Ω), AIR EQ boost, and output level attenuator for driving transformers into saturation"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Home studio producers demanding classic British transformer weight on vocals, bass, and guitars on a budget"
+            }
           ]
         },
         {
@@ -134,10 +212,22 @@
           "borderColor": "border-gray-200",
           "description": "All-tube vintage Putnam console preamp delivering creamy harmonic depth, variable impedance, and direct DI tracking.",
           "fields": [
-            { "label": "Tubes", "value": "Equipped with genuine 12AX7 and 12AT7 dual-triode vacuum tubes" },
-            { "label": "Controls", "value": "Continuous Gain and Level controls allowing precise blending between clean tube headroom and harmonic overdrive" },
-            { "label": "Impedance Options", "value": "Selectable Mic (500 $\\Omega$ / 2 k$\\Omega$) and DI (47 k$\\Omega$ / 2.2 M$\\Omega$) input impedances" },
-            { "label": "Ideal For", "value": "Lead vocal tracking, rich acoustic instruments, and legendary bass guitar direct recording" }
+            {
+              "label": "Tubes",
+              "value": "Equipped with genuine 12AX7 and 12AT7 dual-triode vacuum tubes"
+            },
+            {
+              "label": "Controls",
+              "value": "Continuous Gain and Level controls allowing precise blending between clean tube headroom and harmonic overdrive"
+            },
+            {
+              "label": "Impedance Options",
+              "value": "Selectable Mic (500 Ω / 2 kΩ) and DI (47 kΩ / 2.2 MΩ) input impedances"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Lead vocal tracking, rich acoustic instruments, and legendary bass guitar direct recording"
+            }
           ]
         },
         {
@@ -146,10 +236,22 @@
           "borderColor": "border-gray-200",
           "description": "The classic Lundahl transformer-based preamp designed by Rupert Neve for the legendary Focusrite Forte console.",
           "fields": [
-            { "label": "Input Transformer", "value": "Genuine Lundahl LL1538 input transformer delivering transparent, high-headroom British clarity" },
-            { "label": "Variable Impedance", "value": "4 selectable input impedance settings (Low, ISA 110, Medium, High) to perfectly match any microphone" },
-            { "label": "Metering", "value": "Dual moving-coil VU meters and precision LED peak meters with insert send/return points" },
-            { "label": "Ideal For", "value": "Pristine vocal tracking, acoustic instruments, voiceover, and reference studio capture" }
+            {
+              "label": "Input Transformer",
+              "value": "Genuine Lundahl LL1538 input transformer delivering transparent, high-headroom British clarity"
+            },
+            {
+              "label": "Variable Impedance",
+              "value": "4 selectable input impedance settings (Low, ISA 110, Medium, High) to perfectly match any microphone"
+            },
+            {
+              "label": "Metering",
+              "value": "Dual moving-coil VU meters and precision LED peak meters with insert send/return points"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Pristine vocal tracking, acoustic instruments, voiceover, and reference studio capture"
+            }
           ]
         },
         {
@@ -158,10 +260,22 @@
           "borderColor": "border-gray-200",
           "description": "Boutique, fully discrete hand-wired Class-A recreation of the 1073 preamp featuring custom UK-made Carnhill transformers.",
           "fields": [
-            { "label": "Transformers", "value": "Custom UK-made Carnhill input and output transformers replicating vintage 1970s specs" },
-            { "label": "Gain Stage", "value": "80 dB of stepped discrete rotary gain control with tantalum and polystyrene capacitors" },
-            { "label": "Tone Shaping", "value": "Tone switch alters input transformer impedance for tonal variation; inductor-based high-pass filter (50, 80, 160, 300 Hz)" },
-            { "label": "Ideal For", "value": "Professional project studios seeking authentic vintage Neve punch and transformer saturation" }
+            {
+              "label": "Transformers",
+              "value": "Custom UK-made Carnhill input and output transformers replicating vintage 1970s specs"
+            },
+            {
+              "label": "Gain Stage",
+              "value": "80 dB of stepped discrete rotary gain control with tantalum and polystyrene capacitors"
+            },
+            {
+              "label": "Tone Shaping",
+              "value": "Tone switch alters input transformer impedance for tonal variation; inductor-based high-pass filter (50, 80, 160, 300 Hz)"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Professional project studios seeking authentic vintage Neve punch and transformer saturation"
+            }
           ]
         },
         {
@@ -170,10 +284,22 @@
           "borderColor": "border-gray-200",
           "description": "Versatile all-in-one analog channel strip combining a Class-A vacuum tube preamp with a VCA compressor and 3-band parametric EQ.",
           "fields": [
-            { "label": "Tube Stage", "value": "Class-A 12AX7 vacuum tube gain stage with adjustable Tube Drive control" },
-            { "label": "Dynamics", "value": "Variable VCA compressor (threshold, ratio, attack, release, makeup gain)" },
-            { "label": "EQ Section", "value": "3-band parametric equalizer with custom high/low shelving switches" },
-            { "label": "Ideal For", "value": "Tracking controlled, mix-ready vocals and acoustic instruments straight to your audio interface" }
+            {
+              "label": "Tube Stage",
+              "value": "Class-A 12AX7 vacuum tube gain stage with adjustable Tube Drive control"
+            },
+            {
+              "label": "Dynamics",
+              "value": "Variable VCA compressor (threshold, ratio, attack, release, makeup gain)"
+            },
+            {
+              "label": "EQ Section",
+              "value": "3-band parametric equalizer with custom high/low shelving switches"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Tracking controlled, mix-ready vocals and acoustic instruments straight to your audio interface"
+            }
           ]
         },
         {
@@ -182,10 +308,22 @@
           "borderColor": "border-gray-200",
           "description": "The gold standard in pristine transformerless solid-state transparency, engineered for forensic acoustic capture.",
           "fields": [
-            { "label": "Circuitry", "value": "Fully balanced, transformerless, transimpedance amplifier topology" },
-            { "label": "Frequency Response", "value": "Ruler-flat from 4.5 Hz to 390 kHz with vanishingly low 0.0005% THD" },
-            { "label": "Ribbon Mode", "value": "Dedicated Ribbon Mic mode bypasses input phantom decoupling capacitors and boosts impedance to 20 k$\\Omega$" },
-            { "label": "Ideal For", "value": "Acoustic fingerstyle guitar, orchestral ensembles, grand piano, and reference measurement capture" }
+            {
+              "label": "Circuitry",
+              "value": "Fully balanced, transformerless, transimpedance amplifier topology"
+            },
+            {
+              "label": "Frequency Response",
+              "value": "Ruler-flat from 4.5 Hz to 390 kHz with vanishingly low 0.0005% THD"
+            },
+            {
+              "label": "Ribbon Mode",
+              "value": "Dedicated Ribbon Mic mode bypasses input phantom decoupling capacitors and boosts impedance to 20 kΩ"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Acoustic fingerstyle guitar, orchestral ensembles, grand piano, and reference measurement capture"
+            }
           ]
         }
       ]
@@ -202,9 +340,18 @@
           "borderColor": "border-yellow-200",
           "description": "Calibrating external analog hardware preamps to modern digital converters.",
           "fields": [
-            { "label": "The 0 VU = -18 dBFS Rule", "value": "In analog equipment, $0\\text{ VU}$ ($+4\\text{ dBu}$) represents the nominal operating sweet spot where transformers and tubes saturate musically. In digital converters, calibrate your preamp output so nominal peaks read between $-18\\text{ dBFS}$ and $-12\\text{ dBFS}$." },
-            { "label": "The Input/Output Drive Technique", "value": "To achieve thick analog saturation: crank the preamp's Input Gain knob to push the transformers/tubes hard into saturation, and simultaneously attenuate the preamp's Output Level knob so the signal enters your audio interface safely below $0\\text{ dBFS}$." },
-            { "label": "Bypassing Interface Preamps", "value": "Always connect external preamps to the line-level TRS inputs of your audio interface (or rear line-level switches), never to XLR mic inputs. Feeding an external preamp into an interface's built-in mic preamp doubles the gain stage, causing distortion and elevated noise." }
+            {
+              "label": "The 0 VU = -18 dBFS Rule",
+              "value": "In analog equipment, 0 VU (+4 dBu) represents the nominal operating sweet spot where transformers and tubes saturate musically. In digital converters, calibrate your preamp output so nominal peaks read between -18 dBFS and -12 dBFS."
+            },
+            {
+              "label": "The Input/Output Drive Technique",
+              "value": "To achieve thick analog saturation: crank the preamp's Input Gain knob to push the transformers/tubes hard into saturation, and simultaneously attenuate the preamp's Output Level knob so the signal enters your audio interface safely below 0 dBFS."
+            },
+            {
+              "label": "Bypassing Interface Preamps",
+              "value": "Always connect external preamps to the line-level TRS inputs of your audio interface (or rear line-level switches), never to XLR mic inputs. Feeding an external preamp into an interface's built-in mic preamp doubles the gain stage, causing distortion and elevated noise."
+            }
           ]
         },
         {
@@ -213,9 +360,18 @@
           "borderColor": "border-blue-200",
           "description": "Essential studio operating procedures that protect delicate microphones and circuits.",
           "fields": [
-            { "label": "The 30-Minute Tube Warm-Up", "value": "Vacuum tube preamps require 20 to 30 minutes of powered idle operation before tracking. Tube heater filaments must reach stable thermal equilibrium to stabilize plate voltages and eliminate initial drift in tone and gain." },
-            { "label": "Phantom Power Sequencing", "value": "Never patch or disconnect microphones while $+48\\text{V}$ phantom power is active. Turn phantom power OFF, connect your XLR cable securely, wait 10 seconds, then engage $+48\\text{V}$. When finished, disengage $+48\\text{V}$ and wait for capacitors to discharge before unpatching." },
-            { "label": "Ribbon Microphone Protection", "value": "Never send $+48\\text{V}$ phantom power to a passive ribbon microphone through a patchbay (which momentarily shorts tip and ring during insertion), as the voltage spike will instantly stretch or rupture the fragile aluminum ribbon." }
+            {
+              "label": "The 30-Minute Tube Warm-Up",
+              "value": "Vacuum tube preamps require 20 to 30 minutes of powered idle operation before tracking. Tube heater filaments must reach stable thermal equilibrium to stabilize plate voltages and eliminate initial drift in tone and gain."
+            },
+            {
+              "label": "Phantom Power Sequencing",
+              "value": "Never patch or disconnect microphones while +48V phantom power is active. Turn phantom power OFF, connect your XLR cable securely, wait 10 seconds, then engage +48V. When finished, disengage +48V and wait for capacitors to discharge before unpatching."
+            },
+            {
+              "label": "Ribbon Microphone Protection",
+              "value": "Never send +48V phantom power to a passive ribbon microphone through a patchbay (which momentarily shorts tip and ring during insertion), as the voltage spike will instantly stretch or rupture the fragile aluminum ribbon."
+            }
           ]
         }
       ]

@@ -162,50 +162,84 @@
     ]
   },
   "practiceTools": {
-    "title": "Essential Practice Tools",
+    "title": "Interactive Practice Tools & Utilities",
     "items": [
       {
-        "title": "Metronome Training",
-        "description": "Develop rock-solid timing and rhythmic precision",
-        "icon": "⏰",
+        "title": "Circle of Fifths",
+        "description": "Interactive dual-ring visualizer for key signatures, diatonic chord families, and modal interchange.",
+        "icon": "🔄",
+        "badge": "Audio Enabled",
+        "href": "/lessons/practice/circle-of-fifths",
         "tips": [
-          "Start slow and focus on accuracy",
-          "Practice with different subdivisions",
-          "Use accents to develop groove",
-          "Gradually increase tempo"
+          "Spin the wheel to explore all 12 major & relative minor keys",
+          "Click chords for polyphonic WebAudio playback",
+          "Roman numeral diatonic harmony analysis",
+          "Modal interchange and borrowed chord finder"
         ]
       },
       {
-        "title": "Recording & Analysis",
-        "description": "Record yourself to identify areas for improvement",
-        "icon": "🎙️",
+        "title": "16-Fret CAGED Explorer",
+        "description": "Map all 5 chord forms and triad inversions across 16 frets with interactive root key switching.",
+        "icon": "🗺️",
+        "badge": "Fretboard Map",
+        "href": "/lessons/practice/caged-system",
         "tips": [
-          "Record technical exercises",
-          "Analyze tone and timing",
-          "Compare with reference recordings",
-          "Track progress over time"
+          "Connect chord forms seamlessly up the neck",
+          "Highlight root, 3rd, and 5th intervals clearly",
+          "Explore closed and open triad inversions",
+          "Visual CAGED system positioning guide"
         ]
       },
       {
-        "title": "Practice Journal",
-        "description": "Document your practice sessions and track progress",
-        "icon": "📝",
+        "title": "Fretboard Trainer",
+        "description": "Interactive note-finding game with audio synthesis, streak counters, and target note challenges.",
+        "icon": "⚡",
+        "badge": "Speed Game",
+        "href": "/lessons/practice/fretboard-trainer",
         "tips": [
-          "Set daily practice goals",
-          "Note challenges and breakthroughs",
-          "Track tempo improvements",
-          "Plan next session focus"
+          "Instant audio pitch feedback on fret clicks",
+          "Timed note hunt challenge modes",
+          "Filter by individual guitar strings",
+          "Track accuracy percentages and streaks"
         ]
       },
       {
-        "title": "Mental Practice",
-        "description": "Visualize and study away from the instrument",
-        "icon": "🧠",
+        "title": "Ear Training Quizzer",
+        "description": "Train your musical ear to identify intervals, pitch direction, and chord qualities instantly.",
+        "icon": "👂",
+        "badge": "Quiz Mode",
+        "href": "/lessons/practice/ear-trainer",
         "tips": [
-          "Study music theory concepts",
-          "Visualize fretboard patterns",
-          "Listen to reference recordings",
-          "Plan practice strategies"
+          "Synthesized guitar audio quizzer",
+          "Ascending and descending interval tests",
+          "Major, minor, augmented, and diminished chords",
+          "Real-time scoring and accuracy statistics"
+        ]
+      },
+      {
+        "title": "Progression Jammer",
+        "description": "Polyphonic WebAudio backing tracks with instant key transposition and scale soloing guides.",
+        "icon": "🎸",
+        "badge": "Backing Tracks",
+        "href": "/lessons/practice/progression-player",
+        "tips": [
+          "Dozens of iconic chord progressions",
+          "WebAudio polyphonic playback engine",
+          "One-click key transposition for any song",
+          "Recommended soloing scales for every chord"
+        ]
+      },
+      {
+        "title": "My Practice Room",
+        "description": "Your private rehearsal studio — manage repertoire, track practice time, and build streaks.",
+        "icon": "📓",
+        "badge": "Private Tracker",
+        "href": "/lessons/practice/my-practice",
+        "tips": [
+          "100% private in your browser (LocalStorage)",
+          "BPM goal tracking for every repertoire piece",
+          "Targeted warm-up and routine checklists",
+          "Session time logger and daily streak counter"
         ]
       }
     ]

@@ -47,7 +47,14 @@ export interface CategoryRootData {
   }[];
   practiceTools?: {
     title: string;
-    items: { title: string; description: string; icon: string; tips: string[] }[];
+    items: {
+      title: string;
+      description: string;
+      icon: string;
+      tips: string[];
+      href?: string;
+      badge?: string;
+    }[];
   };
   gettingStarted: {
     title: string;

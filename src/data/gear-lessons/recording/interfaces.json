@@ -10,16 +10,16 @@
   },
   "introduction": {
     "title": "The Audio Interface: The Sonic Gateway of the Modern Studio",
-    "text": "An audio interface is the critical electro-acoustic bridge between continuous analog voltages and discrete binary data. Built-in consumer computer soundcards are engineered for cheap playback with noisy Class-D headphone amps, flimsy 3.5 mm unbalanced jacks, and high-jitter crystal clocks. A professional audio interface combines four essential studio components into an integrated chassis: low-noise microphone preamplifiers (with $+48\\text{V}$ phantom power), high-resolution Analog-to-Digital Converters (ADC) and Digital-to-Analog Converters (DAC), a ultra-low-jitter master word clock, and a direct hardware monitoring router. Its quality establishes the absolute sonic ceiling of your studio: every vocal nuance, guitar transient, and mixing decision is governed by its converter linearity and driver stability.",
+    "text": "An audio interface is the critical electro-acoustic bridge between continuous analog voltages and discrete binary data. Built-in consumer computer soundcards are engineered for cheap playback with noisy Class-D headphone amps, flimsy 3.5 mm unbalanced jacks, and high-jitter crystal clocks. A professional audio interface combines four essential studio components into an integrated chassis: low-noise microphone preamplifiers (with +48V phantom power), high-resolution Analog-to-Digital Converters (ADC) and Digital-to-Analog Converters (DAC), a ultra-low-jitter master word clock, and a direct hardware monitoring router. Its quality establishes the absolute sonic ceiling of your studio: every vocal nuance, guitar transient, and mixing decision is governed by its converter linearity and driver stability.",
     "quote": "The accuracy of your conversion and the latency of your drivers define the boundary between technology and musical inspiration.",
     "columns": [
       {
         "title": "A/D & D/A Conversion & Nyquist Sampling Physics",
-        "text": "Digital audio conversion is governed by the Nyquist-Shannon Sampling Theorem: to capture an analog audio bandwidth without aliasing distortion, the sampling frequency ($f_s$) must be at least twice the highest frequency present ($f_s \\ge 2 f_{\\max}$). A 44.1 kHz sample rate captures frequencies up to 22.05 kHz—safely exceeding the 20 kHz ceiling of human hearing—while steep anti-aliasing reconstruction filters roll off ultrasound. Higher sample rates (88.2 kHz, 96 kHz, 192 kHz) push filter artifacts far beyond the audible band and minimize phase distortion in non-linear DSP plugins, at the expense of doubling CPU overhead and session file size."
+        "text": "Digital audio conversion is governed by the Nyquist-Shannon Sampling Theorem: to capture an analog audio bandwidth without aliasing distortion, the sampling frequency (f_s) must be at least twice the highest frequency present (f_s ≥ 2 f_\\max). A 44.1 kHz sample rate captures frequencies up to 22.05 kHz—safely exceeding the 20 kHz ceiling of human hearing—while steep anti-aliasing reconstruction filters roll off ultrasound. Higher sample rates (88.2 kHz, 96 kHz, 192 kHz) push filter artifacts far beyond the audible band and minimize phase distortion in non-linear DSP plugins, at the expense of doubling CPU overhead and session file size."
       },
       {
         "title": "Quantization, Bit Depth & The 32-Bit Float Revolution",
-        "text": "Bit depth dictates the resolution of the amplitude domain. Each binary bit provides approximately $6.02\\text{ dB}$ of dynamic range ($1.76 + 6.02 \\times N\\text{ dB}$). While 16-bit audio offers $96\\text{ dB}$ of theoretical dynamic range, 24-bit recording expands this to $144\\text{ dB}$—well beyond the physical thermal noise floor of analog microphone preamplifiers (typically $\\sim 120\\text{--}130\\text{ dB}$ Equivalent Input Noise). Modern 32-bit floating-point converters utilize dual ADC stages (one calibrated for ultra-low noise, the other for massive signal peaks) combined mathematically, providing an astonishing $1,528\\text{ dB}$ of dynamic range that makes digital clipping virtually impossible."
+        "text": "Bit depth dictates the resolution of the amplitude domain. Each binary bit provides approximately 6.02 dB of dynamic range (1.76 + 6.02 × N dB). While 16-bit audio offers 96 dB of theoretical dynamic range, 24-bit recording expands this to 144 dB—well beyond the physical thermal noise floor of analog microphone preamplifiers (typically \\sim 120–130 dB Equivalent Input Noise). Modern 32-bit floating-point converters utilize dual ADC stages (one calibrated for ultra-low noise, the other for massive signal peaks) combined mathematically, providing an astonishing 1,528 dB of dynamic range that makes digital clipping virtually impossible."
       }
     ]
   },
@@ -36,10 +36,22 @@
           "borderColor": "border-blue-200",
           "description": "Round-Trip Latency is the total time elapsed from the moment an acoustic wave strikes the mic diaphragm until the processed signal returns to the performer's headphones.",
           "fields": [
-            { "label": "The RTL Formula", "value": "$\\text{RTL} = \\text{A/D Conversion Time} + (\\text{Buffer Size} / f_s) + \\text{Driver Safety Buffers} + \\text{DAW Processing} + (\\text{Buffer Size} / f_s) + \\text{D/A Conversion Time}$." },
-            { "label": "The 10 ms Threshold", "value": "Human auditory perception detects delay above 8–10 ms as a distinct comb-filtering sensation in the skull while singing, and above 12 ms as rhythmic sluggishness that disrupts tight instrumental timing." },
-            { "label": "Buffer Size vs CPU Load", "value": "A 32-sample buffer at 48 kHz yields a tiny 0.67 ms buffer delay but strains CPU cycles. A 1024-sample buffer (21.3 ms) frees CPU for 100+ track mixes but renders real-time software tracking unplayable." },
-            { "label": "Direct Hardware Monitoring", "value": "Routes the analog input signal directly to the headphone DAC before sending it over USB to the computer, providing true sub-1 ms zero-latency monitoring independent of computer buffer size." }
+            {
+              "label": "The RTL Formula",
+              "value": "RTL = A/D Conversion Time + (Buffer Size / f_s) + Driver Safety Buffers + DAW Processing + (Buffer Size / f_s) + D/A Conversion Time."
+            },
+            {
+              "label": "The 10 ms Threshold",
+              "value": "Human auditory perception detects delay above 8–10 ms as a distinct comb-filtering sensation in the skull while singing, and above 12 ms as rhythmic sluggishness that disrupts tight instrumental timing."
+            },
+            {
+              "label": "Buffer Size vs CPU Load",
+              "value": "A 32-sample buffer at 48 kHz yields a tiny 0.67 ms buffer delay but strains CPU cycles. A 1024-sample buffer (21.3 ms) frees CPU for 100+ track mixes but renders real-time software tracking unplayable."
+            },
+            {
+              "label": "Direct Hardware Monitoring",
+              "value": "Routes the analog input signal directly to the headphone DAC before sending it over USB to the computer, providing true sub-1 ms zero-latency monitoring independent of computer buffer size."
+            }
           ]
         },
         {
@@ -48,9 +60,18 @@
           "borderColor": "",
           "description": "Modern studio interfaces employ multi-bit Delta-Sigma oversampling converters operating in the megahertz range with noise-shaping algorithms.",
           "fields": [
-            { "label": "Clock Jitter ($\\Delta t$)", "value": "Microscopic timing deviations in the crystal oscillator clock pulses. Jitter causes amplitude errors during conversion that manifest as low-level sideband distortion, blurred stereo imaging, and loss of top-end air." },
-            { "label": "Preamps & EIN Rating", "value": "Equivalent Input Noise (EIN) measures preamp quietness. Professional preamps achieve $-128\\text{ dBu}$ to $-131\\text{ dBu}$ at 150 $\\Omega$ source impedance, ensuring whisper-quiet gain on low-output dynamic mics." },
-            { "label": "Headroom & Total Harmonic Distortion", "value": "Quality converters offer THD+N below $-105\\text{ dB}$ (0.0005%) across the entire 20 Hz–20 kHz audible spectrum, preserving absolute harmonic transparency." }
+            {
+              "label": "Clock Jitter (Δ t)",
+              "value": "Microscopic timing deviations in the crystal oscillator clock pulses. Jitter causes amplitude errors during conversion that manifest as low-level sideband distortion, blurred stereo imaging, and loss of top-end air."
+            },
+            {
+              "label": "Preamps & EIN Rating",
+              "value": "Equivalent Input Noise (EIN) measures preamp quietness. Professional preamps achieve -128 dBu to -131 dBu at 150 Ω source impedance, ensuring whisper-quiet gain on low-output dynamic mics."
+            },
+            {
+              "label": "Headroom & Total Harmonic Distortion",
+              "value": "Quality converters offer THD+N below -105 dB (0.0005%) across the entire 20 Hz–20 kHz audible spectrum, preserving absolute harmonic transparency."
+            }
           ]
         }
       ]
@@ -67,10 +88,22 @@
           "borderColor": "border-gray-200",
           "description": "The universal standard for personal and home studio setups, offering plug-and-play simplicity across Windows and macOS.",
           "fields": [
-            { "label": "Bandwidth", "value": "480 Mbps (USB 2.0) to 5–10 Gbps (USB 3.2)" },
-            { "label": "Channel Capacity", "value": "USB 2.0 comfortably streams up to 18 inputs and 20 outputs of 24-bit/96 kHz audio simultaneously" },
-            { "label": "Driver Architecture", "value": "Requires custom low-latency ASIO drivers on Windows; Core Audio class-compliant on macOS" },
-            { "label": "Power Delivery", "value": "USB-C provides up to 15W bus power, eliminating bulky wall-warts for mobile laptop recording" }
+            {
+              "label": "Bandwidth",
+              "value": "480 Mbps (USB 2.0) to 5–10 Gbps (USB 3.2)"
+            },
+            {
+              "label": "Channel Capacity",
+              "value": "USB 2.0 comfortably streams up to 18 inputs and 20 outputs of 24-bit/96 kHz audio simultaneously"
+            },
+            {
+              "label": "Driver Architecture",
+              "value": "Requires custom low-latency ASIO drivers on Windows; Core Audio class-compliant on macOS"
+            },
+            {
+              "label": "Power Delivery",
+              "value": "USB-C provides up to 15W bus power, eliminating bulky wall-warts for mobile laptop recording"
+            }
           ]
         },
         {
@@ -79,10 +112,22 @@
           "borderColor": "border-purple-200",
           "description": "Direct external PCIe extension delivering blistering speed and massive channel counts for commercial production facilities.",
           "fields": [
-            { "label": "Bandwidth", "value": "40 Gbps bidirectional throughput" },
-            { "label": "Direct Memory Access (DMA)", "value": "Bypasses CPU protocol conversion, streaming audio samples directly to computer RAM with near-zero latency" },
-            { "label": "Channel Capacity", "value": "Effortlessly handles 64+ simultaneous channels of uncompressed 192 kHz audio" },
-            { "label": "Daisy Chaining", "value": "Allows linking multiple multi-channel interfaces, DSP accelerators, and displays over a single cable" }
+            {
+              "label": "Bandwidth",
+              "value": "40 Gbps bidirectional throughput"
+            },
+            {
+              "label": "Direct Memory Access (DMA)",
+              "value": "Bypasses CPU protocol conversion, streaming audio samples directly to computer RAM with near-zero latency"
+            },
+            {
+              "label": "Channel Capacity",
+              "value": "Effortlessly handles 64+ simultaneous channels of uncompressed 192 kHz audio"
+            },
+            {
+              "label": "Daisy Chaining",
+              "value": "Allows linking multiple multi-channel interfaces, DSP accelerators, and displays over a single cable"
+            }
           ]
         },
         {
@@ -91,10 +136,22 @@
           "borderColor": "",
           "description": "The uncompromising enterprise solution for mastering facilities, film scoring stages, and massive orchestral recording.",
           "fields": [
-            { "label": "Physical Installation", "value": "Installs directly into computer motherboard PCIe slots (e.g., RME HDSPe, Avid Pro Tools HDX)" },
-            { "label": "Driver Stability", "value": "Zero bus latency and rock-solid driver immunity against OS USB controller dropouts" },
-            { "label": "DSP Integration", "value": "Host dedicated FPGA and DSP chips handling hundreds of plugins with hardware-calculated phase alignment" },
-            { "label": "Digital Expansion", "value": "Interfaces with MADI (64 channels on coax/optical) or Dante/AES67 audio-over-IP networks" }
+            {
+              "label": "Physical Installation",
+              "value": "Installs directly into computer motherboard PCIe slots (e.g., RME HDSPe, Avid Pro Tools HDX)"
+            },
+            {
+              "label": "Driver Stability",
+              "value": "Zero bus latency and rock-solid driver immunity against OS USB controller dropouts"
+            },
+            {
+              "label": "DSP Integration",
+              "value": "Host dedicated FPGA and DSP chips handling hundreds of plugins with hardware-calculated phase alignment"
+            },
+            {
+              "label": "Digital Expansion",
+              "value": "Interfaces with MADI (64 channels on coax/optical) or Dante/AES67 audio-over-IP networks"
+            }
           ]
         }
       ]
@@ -111,10 +168,22 @@
           "borderColor": "border-gray-200",
           "description": "The world's most popular 2-in/2-out studio interface, featuring 69 dB of ultra-clean preamp gain, Auto Gain, Clip Safe, and Air Mode.",
           "fields": [
-            { "label": "I/O Configuration", "value": "2 Mic/Line/Inst combo inputs, 2 balanced 1/4\" monitor outputs, independent headphone out" },
-            { "label": "Preamps", "value": "4th Gen preamps delivering 69 dB gain with $-127\\text{ dBu}$ EIN" },
-            { "label": "Analog Air Mode", "value": "Engages an analog circuit emulating the classic Focusrite ISA console transformer frequency boost" },
-            { "label": "Dynamic Range", "value": "120 dB converter dynamic range matching flagship RedNet studio converters" }
+            {
+              "label": "I/O Configuration",
+              "value": "2 Mic/Line/Inst combo inputs, 2 balanced 1/4\" monitor outputs, independent headphone out"
+            },
+            {
+              "label": "Preamps",
+              "value": "4th Gen preamps delivering 69 dB gain with -127 dBu EIN"
+            },
+            {
+              "label": "Analog Air Mode",
+              "value": "Engages an analog circuit emulating the classic Focusrite ISA console transformer frequency boost"
+            },
+            {
+              "label": "Dynamic Range",
+              "value": "120 dB converter dynamic range matching flagship RedNet studio converters"
+            }
           ]
         },
         {
@@ -123,10 +192,22 @@
           "borderColor": "border-gray-200",
           "description": "The elite desktop production centerpiece with onboard real-time UAD DUO/QUAD DSP tracking and Unison preamp modeling.",
           "fields": [
-            { "label": "Unison Technology", "value": "Physically changes preamp input impedance and circuit behavior to match vintage Neve, API, Helios, and Manley hardware" },
-            { "label": "Onboard DSP", "value": "Zero-latency real-time tracking through legendary vintage compressors, EQs, and guitar amps without taxing host CPU" },
-            { "label": "Conversion", "value": "Elite-class 24-bit/192 kHz conversion with 127 dB dynamic range and optical ADAT expansion" },
-            { "label": "Connectivity", "value": "Thunderbolt 3 ultra-low-latency bus connection" }
+            {
+              "label": "Unison Technology",
+              "value": "Physically changes preamp input impedance and circuit behavior to match vintage Neve, API, Helios, and Manley hardware"
+            },
+            {
+              "label": "Onboard DSP",
+              "value": "Zero-latency real-time tracking through legendary vintage compressors, EQs, and guitar amps without taxing host CPU"
+            },
+            {
+              "label": "Conversion",
+              "value": "Elite-class 24-bit/192 kHz conversion with 127 dB dynamic range and optical ADAT expansion"
+            },
+            {
+              "label": "Connectivity",
+              "value": "Thunderbolt 3 ultra-low-latency bus connection"
+            }
           ]
         },
         {
@@ -135,10 +216,22 @@
           "borderColor": "border-gray-200",
           "description": "Rugged, portable USB-C interface featuring PreSonus's acclaimed discrete Class-A XMAX-L preamps and ladder LED metering.",
           "fields": [
-            { "label": "Preamps", "value": "2 XMAX-L solid-state preamps with high headroom and musical clarity" },
-            { "label": "Metering", "value": "Precision front-panel input and output LED ladder meters for visual gain-staging" },
-            { "label": "Conversion", "value": "High-definition 24-bit/192 kHz audio conversion with direct monitor blending" },
-            { "label": "Software Included", "value": "Bundled with Studio One Artist and Studio Magic suite" }
+            {
+              "label": "Preamps",
+              "value": "2 XMAX-L solid-state preamps with high headroom and musical clarity"
+            },
+            {
+              "label": "Metering",
+              "value": "Precision front-panel input and output LED ladder meters for visual gain-staging"
+            },
+            {
+              "label": "Conversion",
+              "value": "High-definition 24-bit/192 kHz audio conversion with direct monitor blending"
+            },
+            {
+              "label": "Software Included",
+              "value": "Bundled with Studio One Artist and Studio Magic suite"
+            }
           ]
         },
         {
@@ -147,10 +240,22 @@
           "borderColor": "border-gray-200",
           "description": "British console heritage in a desktop format, featuring the exact same discrete Class-A preamp circuits found in Audient's 8024-HE recording consoles.",
           "fields": [
-            { "label": "Preamps", "value": "2 Audient Console Mic Preamps delivering 58 dB clean gain with warm analog depth" },
-            { "label": "Instrument Input", "value": "JFET Class-A discrete instrument input recreating the harmonic input stage of a classic tube guitar amp" },
-            { "label": "Converters", "value": "High-performance 32-bit DACs delivering 126 dB dynamic range" },
-            { "label": "Expansion", "value": "Optical ADAT/SPDIF input allowing expansion to 10 simultaneous inputs with external 8-channel preamps" }
+            {
+              "label": "Preamps",
+              "value": "2 Audient Console Mic Preamps delivering 58 dB clean gain with warm analog depth"
+            },
+            {
+              "label": "Instrument Input",
+              "value": "JFET Class-A discrete instrument input recreating the harmonic input stage of a classic tube guitar amp"
+            },
+            {
+              "label": "Converters",
+              "value": "High-performance 32-bit DACs delivering 126 dB dynamic range"
+            },
+            {
+              "label": "Expansion",
+              "value": "Optical ADAT/SPDIF input allowing expansion to 10 simultaneous inputs with external 8-channel preamps"
+            }
           ]
         },
         {
@@ -159,10 +264,22 @@
           "borderColor": "border-gray-200",
           "description": "Class-leading high-fidelity converters and full-color high-resolution LCD metering that redefines the under-$200 interface category.",
           "fields": [
-            { "label": "DAC Architecture", "value": "Equipped with ESS Sabre32 Ultra DAC technology found in multi-thousand dollar luxury converters" },
-            { "label": "Dynamic Range", "value": "120 dB output dynamic range with ultra-low $-129\\text{ dBu}$ preamp EIN" },
-            { "label": "Full-Color LCD", "value": "Real-time, detailed numeric feedback on all inputs and outputs for surgical gain staging" },
-            { "label": "Loopback", "value": "Dedicated hardware loopback channels for effortless podcasting, streaming, and DAW resampling" }
+            {
+              "label": "DAC Architecture",
+              "value": "Equipped with ESS Sabre32 Ultra DAC technology found in multi-thousand dollar luxury converters"
+            },
+            {
+              "label": "Dynamic Range",
+              "value": "120 dB output dynamic range with ultra-low -129 dBu preamp EIN"
+            },
+            {
+              "label": "Full-Color LCD",
+              "value": "Real-time, detailed numeric feedback on all inputs and outputs for surgical gain staging"
+            },
+            {
+              "label": "Loopback",
+              "value": "Dedicated hardware loopback channels for effortless podcasting, streaming, and DAW resampling"
+            }
           ]
         },
         {
@@ -171,10 +288,22 @@
           "borderColor": "border-gray-200",
           "description": "The benchmark in German precision engineering, renowned across professional audio for indestructible drivers and SteadyClock FS precision.",
           "fields": [
-            { "label": "Clock Precision", "value": "SteadyClock FS technology delivering femtosecond-range jitter suppression for absolute converter transparency" },
-            { "label": "Driver Performance", "value": "Handcrafted, proprietary FPGA USB drivers providing unmatched low-latency stability down to 48 samples without dropouts" },
-            { "label": "DSP Mixer", "value": "TotalMix FX hardware DSP provides 288-channel routing matrix with 3-band parametric EQ, reverb, and delay" },
-            { "label": "Durability", "value": "Milled from a solid block of aluminum, engineered for decades of rigorous mobile and studio life" }
+            {
+              "label": "Clock Precision",
+              "value": "SteadyClock FS technology delivering femtosecond-range jitter suppression for absolute converter transparency"
+            },
+            {
+              "label": "Driver Performance",
+              "value": "Handcrafted, proprietary FPGA USB drivers providing unmatched low-latency stability down to 48 samples without dropouts"
+            },
+            {
+              "label": "DSP Mixer",
+              "value": "TotalMix FX hardware DSP provides 288-channel routing matrix with 3-band parametric EQ, reverb, and delay"
+            },
+            {
+              "label": "Durability",
+              "value": "Milled from a solid block of aluminum, engineered for decades of rigorous mobile and studio life"
+            }
           ]
         }
       ]
@@ -189,11 +318,20 @@
           "title": "Digital Gain Staging: The -18 dBFS Rule",
           "bgColor": "bg-yellow-50",
           "borderColor": "border-yellow-200",
-          "description": "In the analog tape era, engineers pushed meters toward $0\\text{ VU}$ ($+4\\text{ dBu}$). In 24-bit digital audio, $0\\text{ dBFS}$ is the absolute ceiling where unrecoverable clipping occurs.",
+          "description": "In the analog tape era, engineers pushed meters toward 0 VU (+4 dBu). In 24-bit digital audio, 0 dBFS is the absolute ceiling where unrecoverable clipping occurs.",
           "fields": [
-            { "label": "Nominal Target Level", "value": "Set input preamp gain so that average musical passages hover between $-18\\text{ dBFS}$ and $-14\\text{ dBFS}$, with transient peaks never exceeding $-6\\text{ dBFS}$." },
-            { "label": "Analog Sweet Spot", "value": "Calibrating to $-18\\text{ dBFS}$ mirrors the $+4\\text{ dBu}$ analog operating level, allowing outboard compressors and analog-modeled plugins to operate in their linear sweet spot without harsh digital oversaturation." },
-            { "label": "Noise Floor Fallacy", "value": "Do not attempt to track as close to $0\\text{ dBFS}$ as possible. With 24-bit audio offering $144\\text{ dB}$ dynamic range, tracking at $-18\\text{ dBFS}$ still leaves over $110\\text{ dB}$ of pristine signal-to-noise ratio." }
+            {
+              "label": "Nominal Target Level",
+              "value": "Set input preamp gain so that average musical passages hover between -18 dBFS and -14 dBFS, with transient peaks never exceeding -6 dBFS."
+            },
+            {
+              "label": "Analog Sweet Spot",
+              "value": "Calibrating to -18 dBFS mirrors the +4 dBu analog operating level, allowing outboard compressors and analog-modeled plugins to operate in their linear sweet spot without harsh digital oversaturation."
+            },
+            {
+              "label": "Noise Floor Fallacy",
+              "value": "Do not attempt to track as close to 0 dBFS as possible. With 24-bit audio offering 144 dB dynamic range, tracking at -18 dBFS still leaves over 110 dB of pristine signal-to-noise ratio."
+            }
           ]
         },
         {
@@ -202,9 +340,18 @@
           "borderColor": "border-red-200",
           "description": "Clicks, pops, and audio dropouts (buffer underruns) occur when the computer CPU fails to process an audio buffer within the allotted time slice.",
           "fields": [
-            { "label": "DPC Latency Management", "value": "On Windows, use LatencyMon to identify background drivers (Wi-Fi, Bluetooth, GPU power throttling) causing Deferred Procedure Call (DPC) spikes that disrupt real-time audio." },
-            { "label": "Dedicated USB Port", "value": "Always plug your audio interface directly into a motherboard root USB port. Never run through unpowered USB hubs or share a controller with external hard drives or webcams." },
-            { "label": "Tracking vs Mixing Buffer", "value": "Adopt a dual-buffer workflow: track vocals and instruments at 64 or 128 samples for sub-5 ms latency; switch to 1024 samples when mixing with heavy reverbs, multi-band compressors, and linear-phase EQs." }
+            {
+              "label": "DPC Latency Management",
+              "value": "On Windows, use LatencyMon to identify background drivers (Wi-Fi, Bluetooth, GPU power throttling) causing Deferred Procedure Call (DPC) spikes that disrupt real-time audio."
+            },
+            {
+              "label": "Dedicated USB Port",
+              "value": "Always plug your audio interface directly into a motherboard root USB port. Never run through unpowered USB hubs or share a controller with external hard drives or webcams."
+            },
+            {
+              "label": "Tracking vs Mixing Buffer",
+              "value": "Adopt a dual-buffer workflow: track vocals and instruments at 64 or 128 samples for sub-5 ms latency; switch to 1024 samples when mixing with heavy reverbs, multi-band compressors, and linear-phase EQs."
+            }
           ]
         }
       ]

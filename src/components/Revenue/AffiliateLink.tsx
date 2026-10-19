@@ -1,6 +1,7 @@
 'use client';
 
 import { getAffiliateLinkWithFallback } from '@/lib/affiliateLinks';
+import { cleanLatexMath } from '@/lib/utils';
 
 interface AffiliateLinkProps {
   productName: string;
@@ -10,9 +11,10 @@ interface AffiliateLinkProps {
 
 export default function AffiliateLink({ productName, children, className = '' }: AffiliateLinkProps) {
   const product = getAffiliateLinkWithFallback(productName);
+  const display = children || cleanLatexMath(productName);
 
   if (!product) {
-    return <>{children || productName}</>;
+    return <>{display}</>;
   }
 
   return (
@@ -23,7 +25,7 @@ export default function AffiliateLink({ productName, children, className = '' }:
       title="Check price on Amazon (affiliate link)"
       className={`inline-flex items-center gap-1 hover:underline ${className}`}
     >
-      {children || productName}
+      {display}
       <svg
         className="inline-block w-3 h-3 flex-shrink-0 opacity-60"
         fill="none"

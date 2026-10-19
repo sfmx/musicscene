@@ -198,34 +198,58 @@ export default function CategoryRootPageTemplate({ category }: Props) {
                 <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">
                   {data.practiceTools.title}
                 </h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {data.practiceTools.items.map((tool, i) => (
-                    <div
-                      key={i}
-                      className="bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-xl p-6"
-                    >
-                      <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-4">{tool.icon}</span>
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                          {tool.title}
-                        </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {data.practiceTools.items.map((tool, i) => {
+                    const cardInner = (
+                      <div className="h-full bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 hover:border-amber-500/60 dark:hover:border-amber-400/60 rounded-xl p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-lg group">
+                        <div>
+                          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <div className="flex items-center gap-3">
+                              <span className="text-3xl group-hover:scale-110 transition-transform">{tool.icon}</span>
+                              <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors">
+                                {tool.title}
+                              </h3>
+                            </div>
+                            {tool.badge && (
+                              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/30 shrink-0">
+                                {tool.badge}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                            {tool.description}
+                          </p>
+                          <ul className="space-y-1.5 mb-4">
+                            {tool.tips.map((tip, j) => (
+                              <li
+                                key={j}
+                                className="text-xs text-slate-600 dark:text-slate-400 flex items-start"
+                              >
+                                <span className="text-amber-500 mr-2 mt-0.5 shrink-0">•</span>
+                                <span>{tip}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        {tool.href && (
+                          <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-amber-600 dark:text-amber-400 font-semibold text-xs group-hover:translate-x-0.5 transition-transform">
+                            <span>Open Interactive Tool</span>
+                            <span>&rarr;</span>
+                          </div>
+                        )}
                       </div>
-                      <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-                        {tool.description}
-                      </p>
-                      <ul className="space-y-2">
-                        {tool.tips.map((tip, j) => (
-                          <li
-                            key={j}
-                            className="text-xs text-slate-600 dark:text-slate-400 flex items-start"
-                          >
-                            <span className="text-amber-500 mr-2 mt-0.5">•</span>
-                            {tip}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                    );
+
+                    return tool.href ? (
+                      <Link key={i} href={tool.href} className="block h-full">
+                        {cardInner}
+                      </Link>
+                    ) : (
+                      <div key={i} className="h-full">
+                        {cardInner}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </section>

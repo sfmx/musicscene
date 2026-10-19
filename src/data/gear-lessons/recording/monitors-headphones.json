@@ -36,10 +36,22 @@
           "borderColor": "border-blue-200",
           "description": "Professional active monitors dedicate separate, matched power amplifier circuits to each driver.",
           "fields": [
-            { "label": "Active Crossovers", "value": "Splits the line-level signal before the power amplifiers, ensuring precise phase alignment and minimal intermodulation distortion between drivers." },
-            { "label": "Low-Frequency Woofers", "value": "Powered by high-damping Class-D or Class-AB amplifiers driving stiff, lightweight cones (polypropylene, woven Kevlar, or aluminum) for tight transient recovery." },
-            { "label": "High-Frequency Tweeters", "value": "Soft textile domes provide smooth natural roll-off; inverted metal domes deliver crystalline transient precision; Air Motion Transformer (AMT) folded ribbons squeeze air 4x faster than conventional pistons." },
-            { "label": "Port Tuning vs Sealed Box", "value": "Bass-reflex ported cabinets extend low-frequency cutoff down to 40 Hz using Helmholtz port resonance, whereas acoustic suspension sealed cabinets offer superior phase linearity and tighter transient decay." }
+            {
+              "label": "Active Crossovers",
+              "value": "Splits the line-level signal before the power amplifiers, ensuring precise phase alignment and minimal intermodulation distortion between drivers."
+            },
+            {
+              "label": "Low-Frequency Woofers",
+              "value": "Powered by high-damping Class-D or Class-AB amplifiers driving stiff, lightweight cones (polypropylene, woven Kevlar, or aluminum) for tight transient recovery."
+            },
+            {
+              "label": "High-Frequency Tweeters",
+              "value": "Soft textile domes provide smooth natural roll-off; inverted metal domes deliver crystalline transient precision; Air Motion Transformer (AMT) folded ribbons squeeze air 4x faster than conventional pistons."
+            },
+            {
+              "label": "Port Tuning vs Sealed Box",
+              "value": "Bass-reflex ported cabinets extend low-frequency cutoff down to 40 Hz using Helmholtz port resonance, whereas acoustic suspension sealed cabinets offer superior phase linearity and tighter transient decay."
+            }
           ]
         },
         {
@@ -48,10 +60,22 @@
           "borderColor": "",
           "description": "Geometric alignment is mandatory for a stable, phantom-center stereo soundstage.",
           "fields": [
-            { "label": "The 60-Degree Triangle", "value": "The distance between the two monitor acoustic axes must exactly equal the distance from each monitor to the engineer's listening position, angled 60 degrees toward the head." },
-            { "label": "Ear-Level Tweeter Alignment", "value": "High frequencies (>2 kHz) are highly directional beam vectors. Tweeters must be aligned precisely at seated ear height to avoid severe high-frequency roll-off." },
-            { "label": "Desktop Decoupling", "value": "Never place monitors directly onto a wooden desk surface. High-density acoustic isolation pads or decoupled stands (IsoAcoustics) prevent vibrational energy from turning your desk into a resonating bass radiator." },
-            { "label": "Wall Clearance & Room Boundary Controls", "value": "Keep rear-ported monitors at least 12–24 inches away from rear walls, and engage the monitor's rear-panel Room Correction EQ switch (-2 dB or -4 dB low-shelf) to offset boundary loading." }
+            {
+              "label": "The 60-Degree Triangle",
+              "value": "The distance between the two monitor acoustic axes must exactly equal the distance from each monitor to the engineer's listening position, angled 60 degrees toward the head."
+            },
+            {
+              "label": "Ear-Level Tweeter Alignment",
+              "value": "High frequencies (>2 kHz) are highly directional beam vectors. Tweeters must be aligned precisely at seated ear height to avoid severe high-frequency roll-off."
+            },
+            {
+              "label": "Desktop Decoupling",
+              "value": "Never place monitors directly onto a wooden desk surface. High-density acoustic isolation pads or decoupled stands (IsoAcoustics) prevent vibrational energy from turning your desk into a resonating bass radiator."
+            },
+            {
+              "label": "Wall Clearance & Room Boundary Controls",
+              "value": "Keep rear-ported monitors at least 12–24 inches away from rear walls, and engage the monitor's rear-panel Room Correction EQ switch (-2 dB or -4 dB low-shelf) to offset boundary loading."
+            }
           ]
         }
       ]
@@ -68,10 +92,22 @@
           "borderColor": "border-indigo-200",
           "description": "The gold standard for critical mixing, surgical EQ decisions, and holographic spatial soundstages.",
           "fields": [
-            { "label": "Acoustic Mechanism", "value": "The exterior earcup consists of an open acoustic mesh, allowing the rear wave of the driver to radiate outward into the room with zero internal acoustic reflection or pressure buildup." },
-            { "label": "Sonic Profile", "value": "Incomparably natural, spacious stereo imaging, pristine mid-range transparency, and fatigue-free listening during marathon 8-hour mixing sessions." },
-            { "label": "Low-Frequency Linearity", "value": "Delivers tight, un-hyped bass extension that reveals muddy sub-frequencies without artificial resonant boom." },
-            { "label": "Limitations", "value": "Zero acoustic isolation: ambient room noise bleeds in, and headphone audio bleeds out into live microphones. Strictly for quiet control room mixing, not tracking." }
+            {
+              "label": "Acoustic Mechanism",
+              "value": "The exterior earcup consists of an open acoustic mesh, allowing the rear wave of the driver to radiate outward into the room with zero internal acoustic reflection or pressure buildup."
+            },
+            {
+              "label": "Sonic Profile",
+              "value": "Incomparably natural, spacious stereo imaging, pristine mid-range transparency, and fatigue-free listening during marathon 8-hour mixing sessions."
+            },
+            {
+              "label": "Low-Frequency Linearity",
+              "value": "Delivers tight, un-hyped bass extension that reveals muddy sub-frequencies without artificial resonant boom."
+            },
+            {
+              "label": "Limitations",
+              "value": "Zero acoustic isolation: ambient room noise bleeds in, and headphone audio bleeds out into live microphones. Strictly for quiet control room mixing, not tracking."
+            }
           ]
         },
         {
@@ -80,10 +116,22 @@
           "borderColor": "border-emerald-200",
           "description": "Indispensable tracking workhorses engineered for maximum acoustic isolation.",
           "fields": [
-            { "label": "Acoustic Mechanism", "value": "The earcups are completely sealed, trapping the acoustic chamber against the listener's head to provide 20–30 dB of passive sound isolation." },
-            { "label": "Zero Mic Bleed", "value": "Prevents high-volume click tracks, guide vocals, and backing tracks from leaking into sensitive condenser vocal microphones during tracking." },
-            { "label": "Punchy Low-End Energy", "value": "Trapped air pressure enhances sub-bass punch and physical bass impact, favored by drummers, bassists, and electronic producers." },
-            { "label": "Trade-offs", "value": "Internal earcup reflections can cause subtle comb-filtering in the 2 kHz–5 kHz range and ear fatigue over extended listening sessions." }
+            {
+              "label": "Acoustic Mechanism",
+              "value": "The earcups are completely sealed, trapping the acoustic chamber against the listener's head to provide 20–30 dB of passive sound isolation."
+            },
+            {
+              "label": "Zero Mic Bleed",
+              "value": "Prevents high-volume click tracks, guide vocals, and backing tracks from leaking into sensitive condenser vocal microphones during tracking."
+            },
+            {
+              "label": "Punchy Low-End Energy",
+              "value": "Trapped air pressure enhances sub-bass punch and physical bass impact, favored by drummers, bassists, and electronic producers."
+            },
+            {
+              "label": "Trade-offs",
+              "value": "Internal earcup reflections can cause subtle comb-filtering in the 2 kHz–5 kHz range and ear fatigue over extended listening sessions."
+            }
           ]
         }
       ]
@@ -100,10 +148,22 @@
           "borderColor": "border-gray-200",
           "description": "The direct descendant of the iconic white-cone NS-10M, legendary for revealing brutal midrange honesty in compact home studios.",
           "fields": [
-            { "label": "Drivers", "value": "5\" cone woofer and 1\" dome tweeter powered by 70W bi-amped Class-AB power" },
-            { "label": "Frequency Range", "value": "54 Hz to 30 kHz" },
-            { "label": "Room Control", "value": "Room Control (0, -2, -4 dB below 500 Hz) and High Trim (+/- 2 dB)" },
-            { "label": "Mixing Advantage", "value": "Ruthlessly exposes harsh vocal frequencies and mid-range clutter; if it sounds balanced on HS5s, it translates anywhere" }
+            {
+              "label": "Drivers",
+              "value": "5\" cone woofer and 1\" dome tweeter powered by 70W bi-amped Class-AB power"
+            },
+            {
+              "label": "Frequency Range",
+              "value": "54 Hz to 30 kHz"
+            },
+            {
+              "label": "Room Control",
+              "value": "Room Control (0, -2, -4 dB below 500 Hz) and High Trim (+/- 2 dB)"
+            },
+            {
+              "label": "Mixing Advantage",
+              "value": "Ruthlessly exposes harsh vocal frequencies and mid-range clutter; if it sounds balanced on HS5s, it translates anywhere"
+            }
           ]
         },
         {
@@ -112,10 +172,22 @@
           "borderColor": "border-gray-200",
           "description": "Full-range 8-inch studio benchmark delivering authoritative sub-bass extension down to 38 Hz without needing a separate subwoofer.",
           "fields": [
-            { "label": "Drivers", "value": "8\" cone woofer and 1\" dome tweeter powered by 120W bi-amplification" },
-            { "label": "Frequency Range", "value": "38 Hz to 30 kHz full-range coverage" },
-            { "label": "Cabinet Design", "value": "Heavy MDF enclosure with three-way mitered joint architecture to eliminate cabinet resonance" },
-            { "label": "Ideal For", "value": "Medium-to-large treated mixing rooms handling hip-hop, EDM, rock, and cinematic scoring" }
+            {
+              "label": "Drivers",
+              "value": "8\" cone woofer and 1\" dome tweeter powered by 120W bi-amplification"
+            },
+            {
+              "label": "Frequency Range",
+              "value": "38 Hz to 30 kHz full-range coverage"
+            },
+            {
+              "label": "Cabinet Design",
+              "value": "Heavy MDF enclosure with three-way mitered joint architecture to eliminate cabinet resonance"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Medium-to-large treated mixing rooms handling hip-hop, EDM, rock, and cinematic scoring"
+            }
           ]
         },
         {
@@ -124,10 +196,22 @@
           "borderColor": "border-gray-200",
           "description": "Class-leading image control waveguide technology delivering a wide, forgiving sweet spot at an accessible price point.",
           "fields": [
-            { "label": "Image Control Waveguide", "value": "Patented design derived from JBL's flagship M2 Master Reference monitors, creating a wide acoustic sweet spot" },
-            { "label": "Drivers & Power", "value": "5\" woofer, 1\" neodymium tweeter, dual 41W Class-D amplifiers" },
-            { "label": "Boundary EQ", "value": "Compensates for low-frequency acoustic loading when placed near walls" },
-            { "label": "Tone Character", "value": "Exceptional stereo depth and balanced, uncolored frequency response for home studios" }
+            {
+              "label": "Image Control Waveguide",
+              "value": "Patented design derived from JBL's flagship M2 Master Reference monitors, creating a wide acoustic sweet spot"
+            },
+            {
+              "label": "Drivers & Power",
+              "value": "5\" woofer, 1\" neodymium tweeter, dual 41W Class-D amplifiers"
+            },
+            {
+              "label": "Boundary EQ",
+              "value": "Compensates for low-frequency acoustic loading when placed near walls"
+            },
+            {
+              "label": "Tone Character",
+              "value": "Exceptional stereo depth and balanced, uncolored frequency response for home studios"
+            }
           ]
         },
         {
@@ -136,10 +220,22 @@
           "borderColor": "border-gray-200",
           "description": "German precision engineering featuring the acclaimed U-ART folded ribbon tweeter for unmatched high-frequency transient resolution.",
           "fields": [
-            { "label": "U-ART Tweeter", "value": "1.9\" accelerated ribbon tweeter operating with HPS waveguide, flat up to 25 kHz" },
-            { "label": "Woofer & DSP", "value": "7\" polypropylene woofer powered by 70W Class-D amplification with DSP-controlled crossover" },
-            { "label": "Frequency Response", "value": "39 Hz to 25 kHz with high dynamic headroom" },
-            { "label": "Ideal For", "value": "Detailed vocal editing, acoustic mastering, and high-frequency reverb tail evaluation" }
+            {
+              "label": "U-ART Tweeter",
+              "value": "1.9\" accelerated ribbon tweeter operating with HPS waveguide, flat up to 25 kHz"
+            },
+            {
+              "label": "Woofer & DSP",
+              "value": "7\" polypropylene woofer powered by 70W Class-D amplification with DSP-controlled crossover"
+            },
+            {
+              "label": "Frequency Response",
+              "value": "39 Hz to 25 kHz with high dynamic headroom"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Detailed vocal editing, acoustic mastering, and high-frequency reverb tail evaluation"
+            }
           ]
         },
         {
@@ -148,10 +244,22 @@
           "borderColor": "border-gray-200",
           "description": "The undisputed global industry standard for closed-back studio tracking, field recording, and DJ monitoring.",
           "fields": [
-            { "label": "Drivers & Magnet", "value": "Proprietary 45 mm large-aperture drivers with rare earth magnets and copper-clad aluminum voice coils" },
-            { "label": "Acoustic Isolation", "value": "Circumaural design contours around the ears for superior passive isolation in noisy environments" },
-            { "label": "Sonic Profile", "value": "Deep, accurate bass response with clear, articulate highs; virtually zero microphone bleed" },
-            { "label": "Durability", "value": "Collapsible 90-degree swiveling earcups with detachable locking cables for rugged tour longevity" }
+            {
+              "label": "Drivers & Magnet",
+              "value": "Proprietary 45 mm large-aperture drivers with rare earth magnets and copper-clad aluminum voice coils"
+            },
+            {
+              "label": "Acoustic Isolation",
+              "value": "Circumaural design contours around the ears for superior passive isolation in noisy environments"
+            },
+            {
+              "label": "Sonic Profile",
+              "value": "Deep, accurate bass response with clear, articulate highs; virtually zero microphone bleed"
+            },
+            {
+              "label": "Durability",
+              "value": "Collapsible 90-degree swiveling earcups with detachable locking cables for rugged tour longevity"
+            }
           ]
         },
         {
@@ -160,10 +268,22 @@
           "borderColor": "border-gray-200",
           "description": "The legendary open-back audiophile and mixing reference benchmark, celebrated for silky, effortless midrange purity.",
           "fields": [
-            { "label": "Design & Driver", "value": "Open-back circumaural headphones with specially developed acoustic silk damping to control THD (<0.05%)" },
-            { "label": "Impedance", "value": "300 $\\Omega$ nominal impedance; requires a dedicated headphone amp or high-headroom interface output" },
-            { "label": "Frequency Response", "value": "10 Hz to 41,000 Hz with ruler-flat vocal and midrange reproduction" },
-            { "label": "Mixing Authority", "value": "The definitive reference for setting vocal balances, checking compression artifacts, and mastering decisions" }
+            {
+              "label": "Design & Driver",
+              "value": "Open-back circumaural headphones with specially developed acoustic silk damping to control THD (<0.05%)"
+            },
+            {
+              "label": "Impedance",
+              "value": "300 Ω nominal impedance; requires a dedicated headphone amp or high-headroom interface output"
+            },
+            {
+              "label": "Frequency Response",
+              "value": "10 Hz to 41,000 Hz with ruler-flat vocal and midrange reproduction"
+            },
+            {
+              "label": "Mixing Authority",
+              "value": "The definitive reference for setting vocal balances, checking compression artifacts, and mastering decisions"
+            }
           ]
         }
       ]
@@ -180,9 +300,18 @@
           "borderColor": "border-yellow-200",
           "description": "Human frequency perception shifts dynamically according to listening volume.",
           "fields": [
-            { "label": "Equal-Loudness Phenomenon", "value": "At low listening levels (60 dB SPL), the human ear is dramatically insensitive to sub-bass (50 Hz) and treble (10 kHz), tricking engineers into boosting bass and treble excessively." },
-            { "label": "The 83 dB Calibration Sweet Spot", "value": "At 83 to 85 dB SPL (C-Weighted, Slow response), the human ear's frequency response curve reaches its flattest equilibrium. (For small home rooms under 150 sq ft, calibrate to 76–79 dB SPL to prevent room overload)." },
-            { "label": "SPL Meter Calibration", "value": "Play band-limited pink noise (-20 dBFS RMS) through one monitor at a time, adjusting monitor gain until an SPL meter at the listening position reads exactly 83 dBC." }
+            {
+              "label": "Equal-Loudness Phenomenon",
+              "value": "At low listening levels (60 dB SPL), the human ear is dramatically insensitive to sub-bass (50 Hz) and treble (10 kHz), tricking engineers into boosting bass and treble excessively."
+            },
+            {
+              "label": "The 83 dB Calibration Sweet Spot",
+              "value": "At 83 to 85 dB SPL (C-Weighted, Slow response), the human ear's frequency response curve reaches its flattest equilibrium. (For small home rooms under 150 sq ft, calibrate to 76–79 dB SPL to prevent room overload)."
+            },
+            {
+              "label": "SPL Meter Calibration",
+              "value": "Play band-limited pink noise (-20 dBFS RMS) through one monitor at a time, adjusting monitor gain until an SPL meter at the listening position reads exactly 83 dBC."
+            }
           ]
         },
         {
@@ -191,10 +320,22 @@
           "borderColor": "border-green-200",
           "description": "Never finalize a commercial release without running the four essential real-world translation checks.",
           "fields": [
-            { "label": "1. The Monophonic Collapse Check", "value": "Sum your master bus to mono. Verify that the lead vocal, kick, and snare maintain solid center punch and that wide stereo guitars/synths do not disappear due to out-of-phase comb filtering." },
-            { "label": "2. The Car Stereo Test", "value": "Car cabins feature asymmetric boundary loading and heavy subwoofers. Test to confirm sub-bass energy is tight, punchy, and devoid of muddy resonant drone." },
-            { "label": "3. The Smartphone Speaker Check", "value": "Tiny phone speakers roll off all audio below 300 Hz. Verify that the bass guitar's upper midrange harmonics (700 Hz–1.5 kHz) remain clearly audible and discernible." },
-            { "label": "4. Ear Fatigue Breaks", "value": "Limit continuous critical listening to 45 minutes followed by a 10-minute period of absolute silence to reset temporary threshold shifts in your auditory cortex." }
+            {
+              "label": "1. The Monophonic Collapse Check",
+              "value": "Sum your master bus to mono. Verify that the lead vocal, kick, and snare maintain solid center punch and that wide stereo guitars/synths do not disappear due to out-of-phase comb filtering."
+            },
+            {
+              "label": "2. The Car Stereo Test",
+              "value": "Car cabins feature asymmetric boundary loading and heavy subwoofers. Test to confirm sub-bass energy is tight, punchy, and devoid of muddy resonant drone."
+            },
+            {
+              "label": "3. The Smartphone Speaker Check",
+              "value": "Tiny phone speakers roll off all audio below 300 Hz. Verify that the bass guitar's upper midrange harmonics (700 Hz–1.5 kHz) remain clearly audible and discernible."
+            },
+            {
+              "label": "4. Ear Fatigue Breaks",
+              "value": "Limit continuous critical listening to 45 minutes followed by a 10-minute period of absolute silence to reset temporary threshold shifts in your auditory cortex."
+            }
           ]
         }
       ]

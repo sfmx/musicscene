@@ -15,11 +15,11 @@
     "columns": [
       {
         "title": "Transducer Physics & Diaphragm Mass",
-        "text": "The transient response of any microphone is strictly governed by Newton's second law: $F = m \\cdot a$. A dynamic microphone diaphragm carries a copper wire voice coil glued to its rear, giving it substantial physical mass and inertia. Consequently, it naturally smooths over harsh, spiky transients and withstands immense sound pressure levels exceeding $150\\text{ dB SPL}$. Conversely, a studio condenser diaphragm consists of a micro-thin gold-sputtered Mylar membrane (often only 3 to 5 microns thick) operating without an attached coil. Its near-zero inertia reacts almost instantaneously to ultrasonic frequencies, yielding extraordinary transient fidelity."
+        "text": "The transient response of any microphone is strictly governed by Newton's second law: F = m · a. A dynamic microphone diaphragm carries a copper wire voice coil glued to its rear, giving it substantial physical mass and inertia. Consequently, it naturally smooths over harsh, spiky transients and withstands immense sound pressure levels exceeding 150 dB SPL. Conversely, a studio condenser diaphragm consists of a micro-thin gold-sputtered Mylar membrane (often only 3 to 5 microns thick) operating without an attached coil. Its near-zero inertia reacts almost instantaneously to ultrasonic frequencies, yielding extraordinary transient fidelity."
       },
       {
         "title": "Polar Pattern Mathematics & Phase Geometry",
-        "text": "How a microphone hears off-axis sound is a function of acoustic delay and pressure differential. A pure pressure transducer (omnidirectional) seals the rear of the diaphragm, responding purely to atmospheric pressure changes with zero proximity effect. A pressure-gradient transducer exposes both sides of the diaphragm to sound. By combining pressure and pressure-gradient ports in precise acoustic ratios, engineers create the cardioid family ($E = (1 - k) + k \\cos\\theta$), allowing selective rejection of room reflections and adjacent instruments."
+        "text": "How a microphone hears off-axis sound is a function of acoustic delay and pressure differential. A pure pressure transducer (omnidirectional) seals the rear of the diaphragm, responding purely to atmospheric pressure changes with zero proximity effect. A pressure-gradient transducer exposes both sides of the diaphragm to sound. By combining pressure and pressure-gradient ports in precise acoustic ratios, engineers create the cardioid family (E = (1 - k) + k \\cosθ), allowing selective rejection of room reflections and adjacent instruments."
       }
     ]
   },
@@ -36,10 +36,22 @@
           "borderColor": "border-blue-200",
           "description": "The nearly indestructible workhorses of modern studios and concert stages worldwide.",
           "fields": [
-            { "label": "Transduction Principle", "value": "Electromagnetic induction (Faraday's Law). Diaphragm motion moves an attached copper coil through a permanent magnetic field, generating audio voltage without external power." },
-            { "label": "SPL Handling", "value": "Virtually immune to internal distortion; handles massive volumes up to 150–160 dB SPL (snare drums, cranked 4x12 guitar cabinets, brass)." },
-            { "label": "Frequency & Transient Profile", "value": "Controlled high-frequency rolloff above 15 kHz with a sculpted presence peak between 3 kHz and 7 kHz that pushes vocals and snares forward in a mix." },
-            { "label": "Best Applications", "value": "Close-miking guitar amps, snare top, kick drum (inside), rock vocals, live broadcast" }
+            {
+              "label": "Transduction Principle",
+              "value": "Electromagnetic induction (Faraday's Law). Diaphragm motion moves an attached copper coil through a permanent magnetic field, generating audio voltage without external power."
+            },
+            {
+              "label": "SPL Handling",
+              "value": "Virtually immune to internal distortion; handles massive volumes up to 150–160 dB SPL (snare drums, cranked 4x12 guitar cabinets, brass)."
+            },
+            {
+              "label": "Frequency & Transient Profile",
+              "value": "Controlled high-frequency rolloff above 15 kHz with a sculpted presence peak between 3 kHz and 7 kHz that pushes vocals and snares forward in a mix."
+            },
+            {
+              "label": "Best Applications",
+              "value": "Close-miking guitar amps, snare top, kick drum (inside), rock vocals, live broadcast"
+            }
           ]
         },
         {
@@ -48,10 +60,22 @@
           "borderColor": "border-emerald-200",
           "description": "Ultra-sensitive, high-fidelity transducers capturing breath, air, and delicate harmonic detail.",
           "fields": [
-            { "label": "Transduction Principle", "value": "Variable electrostatic capacitance ($\\Delta C = \\frac{\\epsilon A}{d}$). A gold-sputtered Mylar diaphragm sits microns away from a fixed brass backplate, polarized by $+48\\text{V}$ phantom power." },
-            { "label": "Transient Rise Time", "value": "Micro-second transient recovery capturing the strike of acoustic guitar picks, room reverberation tails, and vocal breath nuances." },
-            { "label": "Large vs Small Diaphragm", "value": "Large Diaphragm Condensers (LDC $\\ge 1\"$) provide lower self-noise and warm low-frequency proximity bloom; Small Diaphragm Condensers (SDC $\\le 0.5\"$) offer ruler-flat frequency linearity and superior off-axis coherence." },
-            { "label": "Best Applications", "value": "Lead vocals, acoustic guitars, drum overheads, grand piano, orchestral strings" }
+            {
+              "label": "Transduction Principle",
+              "value": "Variable electrostatic capacitance (Δ C = \\epsilon A / d). A gold-sputtered Mylar diaphragm sits microns away from a fixed brass backplate, polarized by +48V phantom power."
+            },
+            {
+              "label": "Transient Rise Time",
+              "value": "Micro-second transient recovery capturing the strike of acoustic guitar picks, room reverberation tails, and vocal breath nuances."
+            },
+            {
+              "label": "Large vs Small Diaphragm",
+              "value": "Large Diaphragm Condensers (LDC ≥ 1\") provide lower self-noise and warm low-frequency proximity bloom; Small Diaphragm Condensers (SDC ≤ 0.5\") offer ruler-flat frequency linearity and superior off-axis coherence."
+            },
+            {
+              "label": "Best Applications",
+              "value": "Lead vocals, acoustic guitars, drum overheads, grand piano, orchestral strings"
+            }
           ]
         },
         {
@@ -60,10 +84,22 @@
           "borderColor": "border-purple-200",
           "description": "Vintage acoustic warmth and velvety high-end response prized by purists and modern producers alike.",
           "fields": [
-            { "label": "Transduction Principle", "value": "Particle velocity sensing. An ultra-thin (1.5 to 2.5 micron) corrugated pure aluminum ribbon is suspended between powerful neodymium magnets." },
-            { "label": "Tonal Profile", "value": "Naturally smooth, gradual high-frequency rolloff that completely eliminates the harsh 'digital sizzle' of bright cymbals, distorted guitars, and aggressive horns." },
-            { "label": "Polar Characteristic", "value": "Inherent bi-directional (Figure-8) pattern with infinite acoustic nulls at 90° and 270° sides for surgical acoustic isolation." },
-            { "label": "Handling Warning", "value": "The corrugated ribbon can be stretched or torn by direct gusts of air or accidental DC phantom power on vintage transformerless designs. Always use a pop filter." }
+            {
+              "label": "Transduction Principle",
+              "value": "Particle velocity sensing. An ultra-thin (1.5 to 2.5 micron) corrugated pure aluminum ribbon is suspended between powerful neodymium magnets."
+            },
+            {
+              "label": "Tonal Profile",
+              "value": "Naturally smooth, gradual high-frequency rolloff that completely eliminates the harsh 'digital sizzle' of bright cymbals, distorted guitars, and aggressive horns."
+            },
+            {
+              "label": "Polar Characteristic",
+              "value": "Inherent bi-directional (Figure-8) pattern with infinite acoustic nulls at 90° and 270° sides for surgical acoustic isolation."
+            },
+            {
+              "label": "Handling Warning",
+              "value": "The corrugated ribbon can be stretched or torn by direct gusts of air or accidental DC phantom power on vintage transformerless designs. Always use a pop filter."
+            }
           ]
         }
       ]
@@ -80,10 +116,22 @@
           "borderColor": "",
           "description": "Polar patterns define the three-dimensional directional sensitivity of the microphone capsule.",
           "fields": [
-            { "label": "Cardioid ($1 + \\cos\\theta$)", "value": "Maximum sensitivity at 0° (front); $-6\\text{ dB}$ at 90°/270° sides; infinite null at 180° (rear). The primary choice for isolating a performer from untreated room reflections and stage monitor feedback." },
-            { "label": "Supercardioid & Hypercardioid", "value": "Narrower front pickup angle than cardioid with sharper side rejection nulls at 120° (supercardioid) or 110° (hypercardioid), at the expense of a small rear sensitivity lobe." },
-            { "label": "Omnidirectional (Pure Pressure)", "value": "Equal sensitivity from all 360° directions. Exhibits zero proximity effect, ruler-flat bass extension down to 10 Hz, and extreme resistance to breath plosives." },
-            { "label": "Figure-8 (Bidirectional)", "value": "Equal sensitivity front (0°) and rear (180°), with total phase cancellation and acoustic silence at the 90° and 270° sides. Indispensable for stereo arrays." }
+            {
+              "label": "Cardioid (1 + \\cosθ)",
+              "value": "Maximum sensitivity at 0° (front); -6 dB at 90°/270° sides; infinite null at 180° (rear). The primary choice for isolating a performer from untreated room reflections and stage monitor feedback."
+            },
+            {
+              "label": "Supercardioid & Hypercardioid",
+              "value": "Narrower front pickup angle than cardioid with sharper side rejection nulls at 120° (supercardioid) or 110° (hypercardioid), at the expense of a small rear sensitivity lobe."
+            },
+            {
+              "label": "Omnidirectional (Pure Pressure)",
+              "value": "Equal sensitivity from all 360° directions. Exhibits zero proximity effect, ruler-flat bass extension down to 10 Hz, and extreme resistance to breath plosives."
+            },
+            {
+              "label": "Figure-8 (Bidirectional)",
+              "value": "Equal sensitivity front (0°) and rear (180°), with total phase cancellation and acoustic silence at the 90° and 270° sides. Indispensable for stereo arrays."
+            }
           ]
         },
         {
@@ -92,9 +140,18 @@
           "borderColor": "",
           "description": "The proximity effect is the dramatic boost in low-frequency response that occurs when a sound source approaches a directional microphone.",
           "fields": [
-            { "label": "The Physical Cause", "value": "In directional (pressure-gradient) microphones, sound reaches both sides of the diaphragm. At close distances ($< 6\\text{ inches}$), the inverse-square law creates a massive pressure difference between front and rear ports at low frequencies, boosting bass by up to $+12\\text{ dB}$ below 150 Hz." },
-            { "label": "Creative Vocal Power", "value": "Broadcasters and vocalists use proximity effect intentionally to add authoritative, chesty radio warmth and intimate fullness to quiet vocal deliveries." },
-            { "label": "Combating Mud", "value": "When close-miking guitar amps, kick drums, or backing vocalists, engage the microphone's built-in 80 Hz high-pass filter (HPF) to eliminate uncontrolled low-end buildup." }
+            {
+              "label": "The Physical Cause",
+              "value": "In directional (pressure-gradient) microphones, sound reaches both sides of the diaphragm. At close distances (< 6 inches), the inverse-square law creates a massive pressure difference between front and rear ports at low frequencies, boosting bass by up to +12 dB below 150 Hz."
+            },
+            {
+              "label": "Creative Vocal Power",
+              "value": "Broadcasters and vocalists use proximity effect intentionally to add authoritative, chesty radio warmth and intimate fullness to quiet vocal deliveries."
+            },
+            {
+              "label": "Combating Mud",
+              "value": "When close-miking guitar amps, kick drums, or backing vocalists, engage the microphone's built-in 80 Hz high-pass filter (HPF) to eliminate uncontrolled low-end buildup."
+            }
           ]
         }
       ]
@@ -111,10 +168,22 @@
           "borderColor": "border-gray-200",
           "description": "The undisputed king of instrument recording, found on every professional drum kit, guitar cabinet, and concert stage on earth.",
           "fields": [
-            { "label": "Type & Pattern", "value": "Dynamic moving-coil, Cardioid" },
-            { "label": "Frequency Response", "value": "40 Hz to 15,000 Hz with sculpted presence peak at 5 kHz–7 kHz" },
-            { "label": "SPL Handling", "value": ">150 dB SPL without breakup" },
-            { "label": "Signature Sound", "value": "Punchy midrange bite that lets electric guitar cabs and snare drums slice through dense mixes" }
+            {
+              "label": "Type & Pattern",
+              "value": "Dynamic moving-coil, Cardioid"
+            },
+            {
+              "label": "Frequency Response",
+              "value": "40 Hz to 15,000 Hz with sculpted presence peak at 5 kHz–7 kHz"
+            },
+            {
+              "label": "SPL Handling",
+              "value": ">150 dB SPL without breakup"
+            },
+            {
+              "label": "Signature Sound",
+              "value": "Punchy midrange bite that lets electric guitar cabs and snare drums slice through dense mixes"
+            }
           ]
         },
         {
@@ -123,10 +192,22 @@
           "borderColor": "border-gray-200",
           "description": "The legendary large-diaphragm dynamic vocal microphone immortalized on Michael Jackson's Thriller and trusted as the global podcasting gold standard.",
           "fields": [
-            { "label": "Type & Pattern", "value": "Dynamic moving-coil with internal air suspension, Cardioid" },
-            { "label": "Shielding & Rejection", "value": "Electromagnetic humbucking coil rejects broadband interference from computer monitors and power lines" },
-            { "label": "Output Sensitivity", "value": "Low output ($-59\\text{ dBV/Pa}$); requires a high-gain preamp (60 dB+) or Cloudlifter inline booster" },
-            { "label": "Tone Profile", "value": "Velvety, smooth, unhyped vocal authority with Bass Rolloff and Mid-Range Boost switches" }
+            {
+              "label": "Type & Pattern",
+              "value": "Dynamic moving-coil with internal air suspension, Cardioid"
+            },
+            {
+              "label": "Shielding & Rejection",
+              "value": "Electromagnetic humbucking coil rejects broadband interference from computer monitors and power lines"
+            },
+            {
+              "label": "Output Sensitivity",
+              "value": "Low output (-59 dBV/Pa); requires a high-gain preamp (60 dB+) or Cloudlifter inline booster"
+            },
+            {
+              "label": "Tone Profile",
+              "value": "Velvety, smooth, unhyped vocal authority with Bass Rolloff and Mid-Range Boost switches"
+            }
           ]
         },
         {
@@ -135,10 +216,22 @@
           "borderColor": "border-gray-200",
           "description": "The benchmark in affordable studio condenser technology, delivering authentic studio-grade transient capture to home producers.",
           "fields": [
-            { "label": "Type & Capsule", "value": "Fixed-charge back plate permanently polarized condenser (16 mm diaphragm)" },
-            { "label": "Polar Pattern", "value": "Cardioid with excellent off-axis sound rejection" },
-            { "label": "Dynamic Range", "value": "124 dB with low 20 dB SPL self-noise" },
-            { "label": "Best For", "value": "Vocals, acoustic guitar tracking, voiceover, and home studio tracking on a budget" }
+            {
+              "label": "Type & Capsule",
+              "value": "Fixed-charge back plate permanently polarized condenser (16 mm diaphragm)"
+            },
+            {
+              "label": "Polar Pattern",
+              "value": "Cardioid with excellent off-axis sound rejection"
+            },
+            {
+              "label": "Dynamic Range",
+              "value": "124 dB with low 20 dB SPL self-noise"
+            },
+            {
+              "label": "Best For",
+              "value": "Vocals, acoustic guitar tracking, voiceover, and home studio tracking on a budget"
+            }
           ]
         },
         {
@@ -147,10 +240,22 @@
           "borderColor": "border-gray-200",
           "description": "A technological marvel featuring an astonishingly low 4 dBA self-noise floor, pairing pristine HF detail with dual XLR and 32-bit float USB connectivity.",
           "fields": [
-            { "label": "Capsule", "value": "HF6 1-inch true condenser capsule, gold-sputtered and internally shock-mounted with Lyre suspension" },
-            { "label": "Self-Noise", "value": "4 dBA self-noise floor—one of the quietest studio microphones in the world" },
-            { "label": "Max SPL", "value": "142 dB SPL handling" },
-            { "label": "Ideal For", "value": "Foley, whisper-quiet acoustic instruments, pop vocals, and delicate fingerpicked guitars" }
+            {
+              "label": "Capsule",
+              "value": "HF6 1-inch true condenser capsule, gold-sputtered and internally shock-mounted with Lyre suspension"
+            },
+            {
+              "label": "Self-Noise",
+              "value": "4 dBA self-noise floor—one of the quietest studio microphones in the world"
+            },
+            {
+              "label": "Max SPL",
+              "value": "142 dB SPL handling"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Foley, whisper-quiet acoustic instruments, pop vocals, and delicate fingerpicked guitars"
+            }
           ]
         },
         {
@@ -159,10 +264,22 @@
           "borderColor": "border-gray-200",
           "description": "The ultimate Swiss Army knife multi-pattern studio condenser, delivering pristine acoustic transparency and nine selectable polar patterns.",
           "fields": [
-            { "label": "Polar Patterns", "value": "9 selectable patterns: Omni, Wide Cardioid, Cardioid, Hypercardioid, Figure-8, plus 4 intermediate settings" },
-            { "label": "Filters & Pads", "value": "3 pre-attenuation pads (0, -6, -12, -18 dB) and 3 bass-cut filters (40, 80, 160 Hz)" },
-            { "label": "Capsule Engineering", "value": "Dual 1-inch edge-terminated gold-sputtered diaphragms providing linear frequency reproduction" },
-            { "label": "Ideal For", "value": "Grand piano, drum overheads, brass, acoustic guitars, and sophisticated stereo arrays" }
+            {
+              "label": "Polar Patterns",
+              "value": "9 selectable patterns: Omni, Wide Cardioid, Cardioid, Hypercardioid, Figure-8, plus 4 intermediate settings"
+            },
+            {
+              "label": "Filters & Pads",
+              "value": "3 pre-attenuation pads (0, -6, -12, -18 dB) and 3 bass-cut filters (40, 80, 160 Hz)"
+            },
+            {
+              "label": "Capsule Engineering",
+              "value": "Dual 1-inch edge-terminated gold-sputtered diaphragms providing linear frequency reproduction"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Grand piano, drum overheads, brass, acoustic guitars, and sophisticated stereo arrays"
+            }
           ]
         },
         {
@@ -171,10 +288,22 @@
           "borderColor": "border-gray-200",
           "description": "The modern ribbon microphone revolution that re-established ribbons as essential studio tools for guitar amps and brass.",
           "fields": [
-            { "label": "Element", "value": "2.5-micron pure aluminum ribbon with patented offset ribbon transducer architecture" },
-            { "label": "SPL Tolerance", "value": "135 dB SPL handling at 20 Hz, allowing direct close-miking of cranked 100W Marshall stacks" },
-            { "label": "Dual Voice", "value": "Front side delivers warm, natural frequency balance; rear side offers a slightly brighter character" },
-            { "label": "Ideal For", "value": "Electric guitar cabinets, trumpet and trombone, drum room ambient capture, cello" }
+            {
+              "label": "Element",
+              "value": "2.5-micron pure aluminum ribbon with patented offset ribbon transducer architecture"
+            },
+            {
+              "label": "SPL Tolerance",
+              "value": "135 dB SPL handling at 20 Hz, allowing direct close-miking of cranked 100W Marshall stacks"
+            },
+            {
+              "label": "Dual Voice",
+              "value": "Front side delivers warm, natural frequency balance; rear side offers a slightly brighter character"
+            },
+            {
+              "label": "Ideal For",
+              "value": "Electric guitar cabinets, trumpet and trombone, drum room ambient capture, cello"
+            }
           ]
         }
       ]
@@ -191,9 +320,18 @@
           "borderColor": "border-blue-200",
           "description": "Capturing a realistic acoustic stereophonic soundstage requires careful management of time and intensity cues.",
           "fields": [
-            { "label": "Coincident XY Pair", "value": "Two identical directional capsules placed at the same physical point in space, angled 90° to 120° apart. Relies purely on intensity differences between channels with zero time delay ($\\Delta t = 0$), guaranteeing 100% phase-perfect mono summing." },
-            { "label": "ORTF System", "value": "Developed by French broadcasting. Two cardioid capsules angled 110° apart with capsules spaced 17 cm (6.7 inches) apart—replicating the distance between human ears. Combines timing and intensity differences to deliver natural spatial width and holographic depth." },
-            { "label": "Blumlein Pair", "value": "Two Figure-8 microphones crossed at 90° with capsules stacked vertically. Captures a 360° stereo picture with authentic lateral room ambience, ideal for balanced acoustic ensembles." }
+            {
+              "label": "Coincident XY Pair",
+              "value": "Two identical directional capsules placed at the same physical point in space, angled 90° to 120° apart. Relies purely on intensity differences between channels with zero time delay (Δ t = 0), guaranteeing 100% phase-perfect mono summing."
+            },
+            {
+              "label": "ORTF System",
+              "value": "Developed by French broadcasting. Two cardioid capsules angled 110° apart with capsules spaced 17 cm (6.7 inches) apart—replicating the distance between human ears. Combines timing and intensity differences to deliver natural spatial width and holographic depth."
+            },
+            {
+              "label": "Blumlein Pair",
+              "value": "Two Figure-8 microphones crossed at 90° with capsules stacked vertically. Captures a 360° stereo picture with authentic lateral room ambience, ideal for balanced acoustic ensembles."
+            }
           ]
         },
         {
@@ -202,9 +340,18 @@
           "borderColor": "border-purple-200",
           "description": "Advanced stereo configurations that prevent destructive comb-filtering.",
           "fields": [
-            { "label": "Mid-Side (M/S) Architecture", "value": "A forward-facing cardioid (Mid) captures the center image, while a sideways-facing figure-8 (Side) captures stereo width. Decoded via phase splitting: $\\text{Left} = \\text{Mid} + \\text{Side}$; $\\text{Right} = \\text{Mid} - \\text{Side}$." },
-            { "label": "Monophonic Safety", "value": "When collapsed to mono, the positive and negative side signals cancel completely ($+S + (-S) = 0$), leaving the pristine Mid signal completely unaffected by phase comb-filtering." },
-            { "label": "The 3:1 Distance Rule", "value": "When using multiple microphones on an instrument or ensemble, the distance between any two microphones should be at least three times the distance from each microphone to its intended sound source ($D_{\\text{mic-to-mic}} \\ge 3 \\cdot D_{\\text{mic-to-source}}$) to avoid audible comb filtering." }
+            {
+              "label": "Mid-Side (M/S) Architecture",
+              "value": "A forward-facing cardioid (Mid) captures the center image, while a sideways-facing figure-8 (Side) captures stereo width. Decoded via phase splitting: Left = Mid + Side; Right = Mid - Side."
+            },
+            {
+              "label": "Monophonic Safety",
+              "value": "When collapsed to mono, the positive and negative side signals cancel completely (+S + (-S) = 0), leaving the pristine Mid signal completely unaffected by phase comb-filtering."
+            },
+            {
+              "label": "The 3:1 Distance Rule",
+              "value": "When using multiple microphones on an instrument or ensemble, the distance between any two microphones should be at least three times the distance from each microphone to its intended sound source (D_mic-to-mic ≥ 3 · D_mic-to-source) to avoid audible comb filtering."
+            }
           ]
         }
       ]

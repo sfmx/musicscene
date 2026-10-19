@@ -3,6 +3,7 @@
 import React from 'react';
 import AffiliateLink from './AffiliateLink';
 import { looksLikeProduct } from '@/lib/affiliateLinks';
+import { cleanLatexMath } from '@/lib/utils';
 
 interface SmartAffiliateTextProps {
   text: string;
@@ -16,7 +17,8 @@ interface SmartAffiliateTextProps {
  * Otherwise renders as plain text.
  */
 export default function SmartAffiliateText({ text, className }: SmartAffiliateTextProps) {
-  const parts = text.split(/,\s*/);
+  const cleanedText = cleanLatexMath(text);
+  const parts = cleanedText.split(/,\s*/);
 
   if (parts.length > 1 && parts.some(part => looksLikeProduct(part.trim()))) {
     return (
@@ -31,5 +33,5 @@ export default function SmartAffiliateText({ text, className }: SmartAffiliateTe
     );
   }
 
-  return <>{text}</>;
+  return <>{cleanedText}</>;
 }

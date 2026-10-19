@@ -60,3 +60,77 @@ export function cn(...classes: (string | undefined | null | false)[]): string {
   return classes.filter(Boolean).join(' ');
 }
 
+/**
+ * Cleans raw LaTeX math notation (e.g. `$T = 4 m f^2 L^2$`, `\text{ mm}`, `\ge`, `\Omega`, `\frac{A}{B}`)
+ * converting it into clean, readable, standard unicode typography for web display.
+ */
+export function cleanLatexMath(text: string): string {
+  if (!text || typeof text !== 'string') return text;
+  if (!text.includes('\\') && !text.includes('$')) return text;
+
+  let cleaned = text;
+
+  // Process math blocks delimited by $...$ (ignoring standalone currency like $5 or $250)
+  cleaned = cleaned.replace(/\$(.+?)\$/g, (_, mathContent) => {
+    let m = mathContent;
+    // Simple fractions: \frac{a}{b} -> a / b (or (a) / (b) if complex)
+    m = m.replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, (_: string, num: string, den: string) => {
+      const cleanNum = num.trim();
+      const cleanDen = den.trim();
+      if (cleanNum.includes('+') || cleanNum.includes('-')) {
+        return `(${cleanNum}) / (${cleanDen})`;
+      }
+      return `${cleanNum} / ${cleanDen}`;
+    });
+
+    // Symbols
+    m = m.replace(/\\ge\b/g, '≥');
+    m = m.replace(/\\le\b/g, '≤');
+    m = m.replace(/\\approx\b/g, '≈');
+    m = m.replace(/\\cdot\b/g, '·');
+    m = m.replace(/\\times\b/g, '×');
+    m = m.replace(/\\Delta\b/g, 'Δ');
+    m = m.replace(/\\rho\b/g, 'ρ');
+    m = m.replace(/\\pi\b/g, 'π');
+    m = m.replace(/\\theta\b/g, 'θ');
+    m = m.replace(/\\Omega\b/g, 'Ω');
+    m = m.replace(/\\mu\b/g, 'μ');
+
+    // Powers and superscripts
+    m = m.replace(/\^2\b/g, '²');
+    m = m.replace(/\^3\b/g, '³');
+    m = m.replace(/\^\\circ\b/g, '°');
+    m = m.replace(/\^\{([^}]+)\}/g, '^($1)');
+
+    // Subscripts
+    m = m.replace(/_0\b/g, '₀');
+    m = m.replace(/_1\b/g, '₁');
+    m = m.replace(/_2\b/g, '₂');
+    m = m.replace(/_n\b/g, 'ₙ');
+    m = m.replace(/_\{?\\text\{([^}]+)\}\}?/g, '_$1');
+    m = m.replace(/_\{([^}]+)\}/g, '_$1');
+
+    // Text formatting
+    m = m.replace(/\\text\{([^}]+)\}/g, '$1');
+    m = m.replace(/\\ /g, ' ');
+    m = m.replace(/\\,/g, ' ');
+    m = m.replace(/--/g, '–');
+
+    return m.trim();
+  });
+
+  // Catch any residual LaTeX commands outside $...$
+  cleaned = cleaned.replace(/\\text\{([^}]+)\}/g, '$1');
+  cleaned = cleaned.replace(/\\ge\b/g, '≥');
+  cleaned = cleaned.replace(/\\le\b/g, '≤');
+  cleaned = cleaned.replace(/\\approx\b/g, '≈');
+  cleaned = cleaned.replace(/\\cdot\b/g, '·');
+  cleaned = cleaned.replace(/\\times\b/g, '×');
+  cleaned = cleaned.replace(/\\Omega\b/g, 'Ω');
+  cleaned = cleaned.replace(/\\Delta\b/g, 'Δ');
+  cleaned = cleaned.replace(/\\ /g, ' ');
+  cleaned = cleaned.replace(/--/g, '–');
+
+  return cleaned;
+}
+

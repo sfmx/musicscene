@@ -15,11 +15,11 @@
     "columns": [
       {
         "title": "Acoustic Impedance & Boundary Reflection",
-        "text": "When a vibrating string strikes a slide, the wave reflection coefficient $R = \\frac{Z_2 - Z_1}{Z_2 + Z_1}$ is governed by the boundary acoustic impedance $Z = \\rho \\cdot c$ (density $\\rho$, speed of sound $c$). A heavy bell brass slide ($8.5\\text{ g/cm}^3$) forms an extremely rigid, high-impedance boundary that reflects vibrational energy back into the string, producing massive kinetic sustain and dark fundamental resonance. In contrast, lightweight borosilicate Pyrex glass ($2.23\\text{ g/cm}^3$) yields higher compliance, absorbing subtle high-frequency spikes and producing a smooth, vocal, singing top-end."
+        "text": "When a vibrating string strikes a slide, the wave reflection coefficient R = (Z₂ - Z₁) / (Z₂ + Z₁) is governed by the boundary acoustic impedance Z = ρ · c (density ρ, speed of sound c). A heavy bell brass slide (8.5 g/cm³) forms an extremely rigid, high-impedance boundary that reflects vibrational energy back into the string, producing massive kinetic sustain and dark fundamental resonance. In contrast, lightweight borosilicate Pyrex glass (2.23 g/cm³) yields higher compliance, absorbing subtle high-frequency spikes and producing a smooth, vocal, singing top-end."
       },
       {
         "title": "Fret Crown Alignment & Damping Physics",
-        "text": "Unlike conventional fretting where the finger presses behind the fret wire, a slide must be balanced directly over the center of the fret crown. Because the slide rests lightly on the string without pressing it down to the fretboard, string height ($h_{\\text{action}} \\ge 3.0\\text{ mm}$) and trailing finger damping are vital. Without fleshy trailing fingers muting the rear string segment between the slide and the headstock nut, sympathetic parasitic vibrations produce harsh microtonal dissonance."
+        "text": "Unlike conventional fretting where the finger presses behind the fret wire, a slide must be balanced directly over the center of the fret crown. Because the slide rests lightly on the string without pressing it down to the fretboard, string height (action height ≥ 3.0 mm) and trailing finger damping are vital. Without fleshy trailing fingers muting the rear string segment between the slide and the headstock nut, sympathetic parasitic vibrations produce harsh microtonal dissonance."
       }
     ]
   },
@@ -187,10 +187,10 @@
       "layout": "grid-3",
       "cards": [
         {
-          "title": "Action Height Calibration ($h \\ge 3.0\\text{ mm}$)",
+          "title": "Action Height Calibration (Action ≥ 3.0 mm)",
           "bgColor": "bg-red-50",
           "borderColor": "border-red-200",
-          "description": "Standard low electric action ($1.5\\text{ mm}$) causes the slide to drive strings into the fret wire, ruining intonation.",
+          "description": "Standard low electric action (1.5 mm) causes the slide to drive strings into the fret wire, ruining intonation.",
           "items": [
             "Set 12th-fret action to 3.0–4.0 mm for hybrid slide/fretted playing",
             "Dedicated slide guitars benefit from 4.0–5.5 mm action height",
@@ -200,10 +200,10 @@
           ]
         },
         {
-          "title": "Heavy String Gauges & String Tension ($T$)",
+          "title": "Heavy String Gauges & String Tension (T)",
           "bgColor": "bg-green-50",
           "borderColor": "border-green-200",
-          "description": "String tension formula $T = 4 m f^2 L^2$ proves heavier mass ($m$) resists lateral downward deflection under slide weight.",
+          "description": "String tension formula T = 4mf²L² proves heavier mass (m) resists lateral downward deflection under slide weight.",
           "items": [
             "Minimum recommended gauge: .011–.050 for electric slide in standard tuning",
             "Open D/G tunings require .012–.054 or .013–.056 sets to compensate for slacked tension",

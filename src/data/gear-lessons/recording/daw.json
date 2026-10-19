@@ -15,7 +15,7 @@
     "columns": [
       {
         "title": "Floating-Point Audio Engines & Internal Headroom",
-        "text": "Unlike fixed-point integer digital formats (16-bit or 24-bit) where exceeding $0\\text{ dBFS}$ results in harsh digital clipping, modern DAWs process audio using 32-bit or 64-bit floating-point summing buses. In a 32-bit float engine, numbers are represented with an 8-bit exponent and 24-bit mantissa, yielding an astonishing $1,528\\text{ dB}$ of internal dynamic range. This means an audio signal can be boosted $+24\\text{ dB}$ over $0\\text{ dBFS}$ across multiple plugin insert stages and aux buses without clipping, provided the master output fader is attenuated before hitting the fixed-point Digital-to-Analog Converter."
+        "text": "Unlike fixed-point integer digital formats (16-bit or 24-bit) where exceeding 0 dBFS results in harsh digital clipping, modern DAWs process audio using 32-bit or 64-bit floating-point summing buses. In a 32-bit float engine, numbers are represented with an 8-bit exponent and 24-bit mantissa, yielding an astonishing 1,528 dB of internal dynamic range. This means an audio signal can be boosted +24 dB over 0 dBFS across multiple plugin insert stages and aux buses without clipping, provided the master output fader is attenuated before hitting the fixed-point Digital-to-Analog Converter."
       },
       {
         "title": "Plugin Delay Compensation (PDC) & Buffer Physics",
@@ -36,9 +36,18 @@
           "borderColor": "border-blue-200",
           "description": "Structured around the historic tape recorder and console layout, ideal for live tracking and band recording.",
           "fields": [
-            { "label": "Workflow Architecture", "value": "Strict horizontal time-axis progression from left to right, accompanied by a vertical mixing console channel strip layout." },
-            { "label": "Editing Strengths", "value": "Exceptional track comping, multi-track drum phase alignment, slip editing, playlist versioning, and sample-accurate crossfading." },
-            { "label": "Industry Domain", "value": "Standard in commercial recording facilities, film scoring stages, voiceover studios, and professional band tracking sessions." }
+            {
+              "label": "Workflow Architecture",
+              "value": "Strict horizontal time-axis progression from left to right, accompanied by a vertical mixing console channel strip layout."
+            },
+            {
+              "label": "Editing Strengths",
+              "value": "Exceptional track comping, multi-track drum phase alignment, slip editing, playlist versioning, and sample-accurate crossfading."
+            },
+            {
+              "label": "Industry Domain",
+              "value": "Standard in commercial recording facilities, film scoring stages, voiceover studios, and professional band tracking sessions."
+            }
           ]
         },
         {
@@ -47,9 +56,18 @@
           "borderColor": "border-purple-200",
           "description": "Engineered for real-time electronic music composition, loop manipulation, and stage performance.",
           "fields": [
-            { "label": "Session View Grid", "value": "Audio and MIDI clips reside in non-linear grid cells that can be launched individually or as scene rows, completely decoupled from timeline playback." },
-            { "label": "Elastic Warping", "value": "State-of-the-art real-time time-stretching algorithms (Beats, Tones, Complex Pro) that sync loops to project tempo on the fly without changing pitch." },
-            { "label": "Stage Integration", "value": "Seamless integration with hardware controllers (Push, Launchpad) for live improvisation and electronic festival sets." }
+            {
+              "label": "Session View Grid",
+              "value": "Audio and MIDI clips reside in non-linear grid cells that can be launched individually or as scene rows, completely decoupled from timeline playback."
+            },
+            {
+              "label": "Elastic Warping",
+              "value": "State-of-the-art real-time time-stretching algorithms (Beats, Tones, Complex Pro) that sync loops to project tempo on the fly without changing pitch."
+            },
+            {
+              "label": "Stage Integration",
+              "value": "Seamless integration with hardware controllers (Push, Launchpad) for live improvisation and electronic festival sets."
+            }
           ]
         },
         {
@@ -58,9 +76,18 @@
           "borderColor": "border-orange-200",
           "description": "The undisputed titan of modern hip-hop, trap, and EDM beat production.",
           "fields": [
-            { "label": "Step Sequencer & Channel Rack", "value": "Built around pattern-based drum machine sequencing, allowing rapid beat programming and 16th-note hi-hat roll manipulation." },
-            { "label": "Piano Roll Supremacy", "value": "Widely regarded as the most fluid, intuitive, and feature-rich MIDI piano roll in digital audio history, featuring built-in chord stampers and arpeggiators." },
-            { "label": "Lifetime Free Updates", "value": "A single license purchase guarantees all future major releases and upgrades for life without subscription fees." }
+            {
+              "label": "Step Sequencer & Channel Rack",
+              "value": "Built around pattern-based drum machine sequencing, allowing rapid beat programming and 16th-note hi-hat roll manipulation."
+            },
+            {
+              "label": "Piano Roll Supremacy",
+              "value": "Widely regarded as the most fluid, intuitive, and feature-rich MIDI piano roll in digital audio history, featuring built-in chord stampers and arpeggiators."
+            },
+            {
+              "label": "Lifetime Free Updates",
+              "value": "A single license purchase guarantees all future major releases and upgrades for life without subscription fees."
+            }
           ]
         },
         {
@@ -69,9 +96,18 @@
           "borderColor": "border-teal-200",
           "description": "Ultra-lightweight, high-performance audio engine with total architectural customization.",
           "fields": [
-            { "label": "Lightweight Footprint", "value": "Tiny 15 MB installer that boots in two seconds and operates with virtually zero background CPU overhead." },
-            { "label": "Universal Track Model", "value": "Any track can function as an audio track, MIDI track, stereo bus, 64-channel surround channel, or folder without mode switching." },
-            { "label": "ReaScript & Customization", "value": "Deep API integration with Python, Lua, and EEL, allowing game audio designers and engineers to script custom automated workflows." }
+            {
+              "label": "Lightweight Footprint",
+              "value": "Tiny 15 MB installer that boots in two seconds and operates with virtually zero background CPU overhead."
+            },
+            {
+              "label": "Universal Track Model",
+              "value": "Any track can function as an audio track, MIDI track, stereo bus, 64-channel surround channel, or folder without mode switching."
+            },
+            {
+              "label": "ReaScript & Customization",
+              "value": "Deep API integration with Python, Lua, and EEL, allowing game audio designers and engineers to script custom automated workflows."
+            }
           ]
         }
       ]
@@ -88,10 +124,22 @@
           "borderColor": "",
           "description": "Understanding digital audio plugin protocols across operating systems.",
           "fields": [
-            { "label": "VST3 (Steinberg)", "value": "Cross-platform industry standard on Windows and macOS. Features smart CPU idling (plugins consume zero CPU when no audio is passing through) and sample-accurate parameter automation." },
-            { "label": "AU (Audio Units - Apple)", "value": "macOS proprietary audio plugin format embedded in the Core Audio architecture. Required for Apple Logic Pro and GarageBand." },
-            { "label": "AAX (Avid Audio eXtension)", "value": "Proprietary format exclusive to Avid Pro Tools. Available in AAX Native (host CPU processing) and AAX DSP (running on dedicated Pro Tools HDX PCIe hardware chips)." },
-            { "label": "CLAP (CLever Audio Plugin)", "value": "Modern open-source, permissive license format offering superior multi-core CPU scheduling and per-note polyphonic modulation." }
+            {
+              "label": "VST3 (Steinberg)",
+              "value": "Cross-platform industry standard on Windows and macOS. Features smart CPU idling (plugins consume zero CPU when no audio is passing through) and sample-accurate parameter automation."
+            },
+            {
+              "label": "AU (Audio Units - Apple)",
+              "value": "macOS proprietary audio plugin format embedded in the Core Audio architecture. Required for Apple Logic Pro and GarageBand."
+            },
+            {
+              "label": "AAX (Avid Audio eXtension)",
+              "value": "Proprietary format exclusive to Avid Pro Tools. Available in AAX Native (host CPU processing) and AAX DSP (running on dedicated Pro Tools HDX PCIe hardware chips)."
+            },
+            {
+              "label": "CLAP (CLever Audio Plugin)",
+              "value": "Modern open-source, permissive license format offering superior multi-core CPU scheduling and per-note polyphonic modulation."
+            }
           ]
         },
         {
@@ -100,9 +148,18 @@
           "borderColor": "",
           "description": "Strategic buffer size management prevents system overloads and latency frustration.",
           "fields": [
-            { "label": "Tracking Phase (Low Buffer)", "value": "Set buffer size to 32, 64, or 128 samples ($1.3\\text{--}2.7\\text{ ms}$). Eliminates audible delay in performers' headphones during vocal, guitar, and MIDI tracking." },
-            { "label": "Mixing Phase (High Buffer)", "value": "Increase buffer size to 512, 1024, or 2048 samples. Maximizes available CPU buffer headroom, preventing audio dropouts when running oversampled linear-phase EQs and heavy convolution reverbs." },
-            { "label": "Track Freezing & Bouncing", "value": "Temporarily renders CPU-intensive software synthesizers and plugin chains to static 32-bit audio files, freeing up CPU processing power while preserving original MIDI data." }
+            {
+              "label": "Tracking Phase (Low Buffer)",
+              "value": "Set buffer size to 32, 64, or 128 samples (1.3–2.7 ms). Eliminates audible delay in performers' headphones during vocal, guitar, and MIDI tracking."
+            },
+            {
+              "label": "Mixing Phase (High Buffer)",
+              "value": "Increase buffer size to 512, 1024, or 2048 samples. Maximizes available CPU buffer headroom, preventing audio dropouts when running oversampled linear-phase EQs and heavy convolution reverbs."
+            },
+            {
+              "label": "Track Freezing & Bouncing",
+              "value": "Temporarily renders CPU-intensive software synthesizers and plugin chains to static 32-bit audio files, freeing up CPU processing power while preserving original MIDI data."
+            }
           ]
         }
       ]
@@ -119,10 +176,22 @@
           "borderColor": "border-gray-200",
           "description": "The worldwide professional recording studio and film post-production standard for tracking, editing, and mixing.",
           "fields": [
-            { "label": "Platform", "value": "macOS & Windows (Subscription and Perpetual options)" },
-            { "label": "Audio Engine", "value": "64-bit floating-point audio engine with advanced automation and Clip Gain" },
-            { "label": "Editing Tools", "value": "Smart Tool, Beat Detective for multi-track drum quantization, Elastic Audio" },
-            { "label": "Industry Standard", "value": "Required for seamless session interchange across commercial recording facilities and mixing stages" }
+            {
+              "label": "Platform",
+              "value": "macOS & Windows (Subscription and Perpetual options)"
+            },
+            {
+              "label": "Audio Engine",
+              "value": "64-bit floating-point audio engine with advanced automation and Clip Gain"
+            },
+            {
+              "label": "Editing Tools",
+              "value": "Smart Tool, Beat Detective for multi-track drum quantization, Elastic Audio"
+            },
+            {
+              "label": "Industry Standard",
+              "value": "Required for seamless session interchange across commercial recording facilities and mixing stages"
+            }
           ]
         },
         {
@@ -131,10 +200,22 @@
           "borderColor": "border-gray-200",
           "description": "The premier macOS production ecosystem, offering unmatched value with massive virtual instrument and sound libraries.",
           "fields": [
-            { "label": "Platform", "value": "macOS exclusive ($199.99 one-time purchase with free lifetime updates)" },
-            { "label": "Included Instruments", "value": "Alchemy synth, Studio Strings, Drummer AI, Vintage Clav/B3/EPs, Sampler" },
-            { "label": "Spatial Audio", "value": "Integrated Dolby Atmos spatial audio mixing workflow with 3D binaural monitoring" },
-            { "label": "Best For", "value": "Mac-based songwriters, composers, indie producers, and electronic creators" }
+            {
+              "label": "Platform",
+              "value": "macOS exclusive ($199.99 one-time purchase with free lifetime updates)"
+            },
+            {
+              "label": "Included Instruments",
+              "value": "Alchemy synth, Studio Strings, Drummer AI, Vintage Clav/B3/EPs, Sampler"
+            },
+            {
+              "label": "Spatial Audio",
+              "value": "Integrated Dolby Atmos spatial audio mixing workflow with 3D binaural monitoring"
+            },
+            {
+              "label": "Best For",
+              "value": "Mac-based songwriters, composers, indie producers, and electronic creators"
+            }
           ]
         },
         {
@@ -143,10 +224,22 @@
           "borderColor": "border-gray-200",
           "description": "The definitive creative powerhouse for electronic production, sound design, live performance, and modular synthesis.",
           "fields": [
-            { "label": "Platform", "value": "macOS & Windows" },
-            { "label": "Max for Live", "value": "Integrated visual programming environment allowing users to build custom synths, MIDI devices, and visual effects" },
-            { "label": "Warping Engine", "value": "Real-time non-destructive audio warping with sophisticated transient detection" },
-            { "label": "Best For", "value": "Electronic dance music, techno, hip-hop, ambient sound design, and stage playback" }
+            {
+              "label": "Platform",
+              "value": "macOS & Windows"
+            },
+            {
+              "label": "Max for Live",
+              "value": "Integrated visual programming environment allowing users to build custom synths, MIDI devices, and visual effects"
+            },
+            {
+              "label": "Warping Engine",
+              "value": "Real-time non-destructive audio warping with sophisticated transient detection"
+            },
+            {
+              "label": "Best For",
+              "value": "Electronic dance music, techno, hip-hop, ambient sound design, and stage playback"
+            }
           ]
         },
         {
@@ -155,10 +248,22 @@
           "borderColor": "border-gray-200",
           "description": "The beatmaker's weapon of choice, celebrated for lightning-fast pattern sequencing and effortless MIDI manipulation.",
           "fields": [
-            { "label": "Platform", "value": "macOS & Windows" },
-            { "label": "Piano Roll", "value": "Industry-benchmark MIDI piano roll with integrated ghost notes and chord stampers" },
-            { "label": "Synergy", "value": "Includes Gross Beat, Sytrus synth, Maximus mastering limiter, and Edison audio editor" },
-            { "label": "License Model", "value": "Legendary Lifetime Free Updates—buy once, update forever" }
+            {
+              "label": "Platform",
+              "value": "macOS & Windows"
+            },
+            {
+              "label": "Piano Roll",
+              "value": "Industry-benchmark MIDI piano roll with integrated ghost notes and chord stampers"
+            },
+            {
+              "label": "Synergy",
+              "value": "Includes Gross Beat, Sytrus synth, Maximus mastering limiter, and Edison audio editor"
+            },
+            {
+              "label": "License Model",
+              "value": "Legendary Lifetime Free Updates—buy once, update forever"
+            }
           ]
         },
         {
@@ -167,10 +272,22 @@
           "borderColor": "border-gray-200",
           "description": "The lean, ultra-fast, and deeply customizable digital audio workstation for power users and audio professionals.",
           "fields": [
-            { "label": "Platform", "value": "macOS, Windows & Linux" },
-            { "label": "Pricing", "value": "$60 personal / discounted license; $225 commercial license" },
-            { "label": "Performance", "value": "Exceptional CPU efficiency capable of running hundreds of tracks on modest hardware" },
-            { "label": "Best For", "value": "Game audio developers, voiceover artists, mobile field recording, and budget-conscious engineers" }
+            {
+              "label": "Platform",
+              "value": "macOS, Windows & Linux"
+            },
+            {
+              "label": "Pricing",
+              "value": "60 personal / discounted license;225 commercial license"
+            },
+            {
+              "label": "Performance",
+              "value": "Exceptional CPU efficiency capable of running hundreds of tracks on modest hardware"
+            },
+            {
+              "label": "Best For",
+              "value": "Game audio developers, voiceover artists, mobile field recording, and budget-conscious engineers"
+            }
           ]
         },
         {
@@ -179,10 +296,22 @@
           "borderColor": "border-gray-200",
           "description": "Modern, sleek workflow combining drag-and-drop intuition with professional project-level mastering integration.",
           "fields": [
-            { "label": "Platform", "value": "macOS & Windows" },
-            { "label": "Workflow", "value": "Pioneering drag-and-drop workflow: drag plugins, audio loops, and routing straight into the mixer" },
-            { "label": "Integrated Mastering", "value": "Dedicated Project Page for mastering albums with integrated DDP export and Red Book CD burning" },
-            { "label": "Smart Features", "value": "Built-in Melodyne pitch correction integration via ARA (Audio Random Access) technology" }
+            {
+              "label": "Platform",
+              "value": "macOS & Windows"
+            },
+            {
+              "label": "Workflow",
+              "value": "Pioneering drag-and-drop workflow: drag plugins, audio loops, and routing straight into the mixer"
+            },
+            {
+              "label": "Integrated Mastering",
+              "value": "Dedicated Project Page for mastering albums with integrated DDP export and Red Book CD burning"
+            },
+            {
+              "label": "Smart Features",
+              "value": "Built-in Melodyne pitch correction integration via ARA (Audio Random Access) technology"
+            }
           ]
         }
       ]
@@ -199,9 +328,18 @@
           "borderColor": "border-green-200",
           "description": "Assembling the definitive lead vocal or solo from multiple recorded takes.",
           "fields": [
-            { "label": "Swipe Comping", "value": "Audition alternate takes in stacked lanes, swiping across the best phrases to create a unified composite track with automated crossfades." },
-            { "label": "Equal-Power vs Equal-Gain Crossfades", "value": "Equal-power crossfades (curved 3 dB boost at midpoint) maintain constant volume between uncorrelated stereo signals. Equal-gain crossfades (linear) are used on in-phase mono signals to prevent an artificial volume swell." },
-            { "label": "Zero-Crossing Editing", "value": "Always place audio edit cuts at zero-crossing points (where the waveform crosses the center horizontal zero amplitude axis) to prevent audible clicks and pops." }
+            {
+              "label": "Swipe Comping",
+              "value": "Audition alternate takes in stacked lanes, swiping across the best phrases to create a unified composite track with automated crossfades."
+            },
+            {
+              "label": "Equal-Power vs Equal-Gain Crossfades",
+              "value": "Equal-power crossfades (curved 3 dB boost at midpoint) maintain constant volume between uncorrelated stereo signals. Equal-gain crossfades (linear) are used on in-phase mono signals to prevent an artificial volume swell."
+            },
+            {
+              "label": "Zero-Crossing Editing",
+              "value": "Always place audio edit cuts at zero-crossing points (where the waveform crosses the center horizontal zero amplitude axis) to prevent audible clicks and pops."
+            }
           ]
         },
         {
@@ -210,9 +348,18 @@
           "borderColor": "border-yellow-200",
           "description": "Essential routing rules that preserve clean headroom across stereo panning.",
           "fields": [
-            { "label": "Pan Law Physics", "value": "When an audio track is panned hard left or right, it sounds through one speaker. When panned center, both speakers reproduce it, boosting perceived volume by up to $+6\\text{ dB}$. The Pan Law automatically attenuates center-panned tracks by $-3\\text{ dB}$ or $-4.5\\text{ dB}$ to keep apparent loudness consistent across the stereo field." },
-            { "label": "Submix Busing (VCA / Aux)", "value": "Route related tracks (e.g., all 12 drum mics) to a single stereo Aux Bus. Apply gentle bus compression (1.5:1 ratio, slow attack, auto release) to 'glue' the elements into a cohesive sonic unit." },
-            { "label": "Aux Sends vs Insert FX", "value": "Use Inserts for serial processing affecting 100% of the signal (EQ, gating, dynamic control). Use Aux Sends for parallel time-based effects (reverbs, delays), allowing multiple tracks to share the same acoustic space." }
+            {
+              "label": "Pan Law Physics",
+              "value": "When an audio track is panned hard left or right, it sounds through one speaker. When panned center, both speakers reproduce it, boosting perceived volume by up to +6 dB. The Pan Law automatically attenuates center-panned tracks by -3 dB or -4.5 dB to keep apparent loudness consistent across the stereo field."
+            },
+            {
+              "label": "Submix Busing (VCA / Aux)",
+              "value": "Route related tracks (e.g., all 12 drum mics) to a single stereo Aux Bus. Apply gentle bus compression (1.5:1 ratio, slow attack, auto release) to 'glue' the elements into a cohesive sonic unit."
+            },
+            {
+              "label": "Aux Sends vs Insert FX",
+              "value": "Use Inserts for serial processing affecting 100% of the signal (EQ, gating, dynamic control). Use Aux Sends for parallel time-based effects (reverbs, delays), allowing multiple tracks to share the same acoustic space."
+            }
           ]
         }
       ]

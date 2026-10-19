@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import SequentialNav from '@/components/SequentialNav';
 import { getSequentialNav } from '@/lib/sequentialNav';
 import { getAffiliateLink, getRetailerLinks } from '@/lib/affiliateLinks';
+import { cleanLatexMath } from '@/lib/utils';
 
 function CardComponent({ card }: { card: GearContentCard }) {
   const explicitProduct = getAffiliateLink(card.title);
@@ -46,7 +47,7 @@ function CardComponent({ card }: { card: GearContentCard }) {
             </div>
           )}
         </div>
-        {card.description && <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-3">{card.description}</p>}
+        {card.description && <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-3">{cleanLatexMath(card.description)}</p>}
         {card.fields && card.fields.length > 0 && (
           <div className="space-y-1.5 text-xs">
             {card.fields.map((f, i) => (
@@ -124,10 +125,10 @@ function SectionComponent({ section }: { section: GearContentSection }) {
     <section className="mb-12">
       <div className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl p-6 sm:p-8">
         <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{section.title}</h2>
-        {section.subtitle && <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">{section.subtitle}</p>}
+        {section.subtitle && <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">{cleanLatexMath(section.subtitle)}</p>}
         {section.warningText && (
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-500/30 rounded-xl p-4 mb-6">
-            <p className="text-amber-800 dark:text-amber-300 text-xs"><strong>⚠️ Note:</strong> {section.warningText}</p>
+            <p className="text-amber-800 dark:text-amber-300 text-xs"><strong>⚠️ Note:</strong> {cleanLatexMath(section.warningText)}</p>
           </div>
         )}
         {section.layout === 'table' && section.tableHeaders && section.tableRows ? (
@@ -136,7 +137,7 @@ function SectionComponent({ section }: { section: GearContentSection }) {
               <thead>
                 <tr className="border-b border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                   {section.tableHeaders.map((h, i) => (
-                    <th key={i} className="text-left p-3 font-semibold">{h}</th>
+                    <th key={i} className="text-left p-3 font-semibold">{cleanLatexMath(h)}</th>
                   ))}
                 </tr>
               </thead>
@@ -189,13 +190,13 @@ export default function GearLessonDetailPageTemplate({ dataKey }: Props) {
           {/* Introduction */}
           <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-100 via-indigo-50/40 to-slate-100 dark:from-slate-900 dark:via-indigo-950/40 dark:to-slate-900 border border-indigo-200 dark:border-indigo-500/30 p-8 mb-12 shadow-sm dark:shadow-2xl">
             <div className="relative z-10">
-              {data.introduction.title && <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">{data.introduction.title}</h2>}
+              {data.introduction.title && <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">{cleanLatexMath(data.introduction.title)}</h2>}
               {data.introduction.text.split('\n\n').map((paragraph, i) => (
-                <p key={i} className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-4">{paragraph}</p>
+                <p key={i} className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-4">{cleanLatexMath(paragraph)}</p>
               ))}
               {data.introduction.quote && (
                 <div className="bg-white dark:bg-slate-950/80 rounded-xl p-4 border-l-4 border-cyan-500 mt-4 shadow-sm dark:shadow-none">
-                  <p className="text-slate-700 dark:text-slate-300 italic text-xs leading-relaxed">{data.introduction.quote}</p>
+                  <p className="text-slate-700 dark:text-slate-300 italic text-xs leading-relaxed">{cleanLatexMath(data.introduction.quote)}</p>
                 </div>
               )}
               {data.introduction.columns && data.introduction.columns.length > 0 && (
@@ -205,10 +206,10 @@ export default function GearLessonDetailPageTemplate({ dataKey }: Props) {
                       {col.title && (
                         <h3 className="font-bold text-slate-900 dark:text-white text-sm mb-1.5 flex items-center gap-1.5">
                           {col.icon && <span>{col.icon}</span>}
-                          {col.title}
+                          {cleanLatexMath(col.title)}
                         </h3>
                       )}
-                      <p className="text-slate-600 dark:text-slate-400 text-xs">{col.text}</p>
+                      <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">{cleanLatexMath(col.text)}</p>
                     </div>
                   ))}
                 </div>
