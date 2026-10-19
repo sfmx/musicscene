@@ -107,47 +107,158 @@
         ],
         "progression": "G - C - Em - D"
       }
+    },
+    {
+      "name": "Simon Binks Weeping Volume Swells & Sliding 6ths",
+      "description": "Evocative, vocal-like sliding 6th intervals across strings 1 and 3 combined with smooth guitar volume knob swells and analog chorus",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Sliding 6ths on strings 3 and 1: 4/3 -> 7/7 -> 9/8 -> 11/10 -> 12/12",
+          "Mute the middle 2nd string with the underside of your index finger",
+          "Pinky volume swells: strike note with volume at 0, then roll up to 10 for violin-like attack"
+        ],
+        "sequence": [
+          "Fret the 6th intervals with fingers 1 (string 1) and 2 or 3 (string 3)",
+          "Slide into each harmony position with gentle fret-hand vibrato",
+          "Let the notes bloom into the stereo analog chorus and plate reverb wash"
+        ],
+        "tips": [
+          "Use a Stratocaster in the neck/middle out-of-phase switch position for warm, liquid chime",
+          "Keep the right hand picking very soft; let the amplifier's headroom provide sustain",
+          "Listen to the Mornington Peninsula seaside atmosphere to internalize the languid, weeping phrasing"
+        ],
+        "chords": [
+          "G",
+          "Cadd9",
+          "Em7",
+          "D"
+        ],
+        "progression": "G - Cadd9 - Em7 - D"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Pendulum",
-      "timeStamp": "0:00-0:50",
+      "name": "Intro Ambient Acoustic-Electric Chime",
+      "timeStamp": "0:00-0:30",
       "technique": "Lush Chorus Arpeggiation & Open-String Ringing",
       "key": "G Major",
-      "description": "Relaxed acoustic and chorus-laden electric guitar establishing the breezy G to C pendulum.",
+      "description": "Breezy coastal acoustic strumming layered with Simon Binks's chiming, chorus-drenched Stratocaster arpeggios.",
       "chords": [
         "G",
         "Cadd9"
       ],
-      "progression": "G - C - G - C",
+      "progression": "G - Cadd9",
+      "notes": [
+        "Keep the high D and G pedal notes ringing continuously on strings 1 and 2",
+        "Pluck the inner strings softly to establish the relaxed pendulum feel",
+        "Engage lush stereo chorus (Boss CE-2) for the authentic 1983 shimmer"
+      ],
+      "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) :8 0.3 3.2 :4 (3.5 2.4 0.3 0.2 3.2 3.1) :8 0.3 3.2 | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :8 0.3 3.2 :2 (3.5 2.4 0.3 0.2 3.2 3.1) |",
+      "exerciseLabel": "Intro Coastal Arpeggio Chime"
+    },
+    {
+      "name": "Verse 1 Coastal Pendulum",
+      "timeStamp": "0:30-0:50",
+      "technique": "Lush Chorus Arpeggiation & Open-String Ringing",
+      "key": "G Major",
+      "description": "James Reyne's unmistakable slurred vocal phrasing begins over the relaxed G to Cadd9 pendulum.",
+      "chords": [
+        "G",
+        "Cadd9"
+      ],
+      "progression": "G - Cadd9 - G - Cadd9",
       "notes": [
         "Keep the high D and G pedal notes ringing continuously",
-        "Strum with light, relaxed downstrokes",
-        "Let the chords breathe under James Reyne's distinct vocal phrasing"
+        "Strum with light, relaxed downstrokes at 108 BPM",
+        "Leave dynamic space under James Reyne's storytelling vocal"
       ],
       "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 0.2 3.2 3.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 0.2 3.2 3.1) |",
       "exerciseLabel": "Verse Pendulum Chords"
     },
     {
-      "name": "Chorus Jetty Anthem",
+      "name": "Chorus 'Down by the Jetty'",
       "timeStamp": "0:50-1:25",
       "technique": "Open Ringing Power Strumming",
       "key": "G Major",
-      "description": "The immortal 'Meet me down by the jetty' chorus progression.",
+      "description": "The immortal 'Meet me down by the jetty' chorus progression, with ringing pedal tones on strings 1 and 2.",
       "chords": [
         "Em7",
         "Cadd9",
         "G",
         "D"
       ],
-      "progression": "Em - C - G - D",
+      "progression": "Em7 - Cadd9 - G - D",
       "notes": [
         "Dig in with slightly fuller strumming dynamics on the Em7 drop",
+        "Keep fingers 3 and 4 anchored at fret 3 for seamless transitions",
         "Clean, crisp open D major resolution on beat 4"
       ],
       "alphaTab": ":2 (0.6 2.5 2.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 0.2 3.2 3.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.4 2.3 3.2 2.1) |",
       "exerciseLabel": "Chorus Progression"
+    },
+    {
+      "name": "Bridge Supertonic Turnaround",
+      "timeStamp": "2:00-2:30",
+      "technique": "Minor Arpeggiation & Dynamic Lift",
+      "key": "G Major",
+      "description": "Reflective bridge detour stepping through Am and C, creating dynamic contrast before launching into Simon Binks's guitar solo.",
+      "chords": [
+        "Am",
+        "C",
+        "D"
+      ],
+      "progression": "Am - C - D",
+      "notes": [
+        "Ease back on pick velocity for an intimate, moody acoustic timbre",
+        "Let the open high E string shimmer over the Am and C shapes",
+        "Sustain the open D chord to set up the solo entrance"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Bridge Minor Turnaround"
+    },
+    {
+      "name": "Simon Binks's Weeping Guitar Solo",
+      "timeStamp": "2:30-3:15",
+      "technique": "Simon Binks Weeping Volume Swells & Sliding 6ths",
+      "key": "G Major Pentatonic",
+      "description": "One of the most expressive guitar solos in Australian music history. Simon Binks plays weeping sliding 6ths on strings 1 and 3, gentle volume swells, and vocal-like G major pentatonic bends that evoke the sound of waves lapping on the Mornington Peninsula jetty.",
+      "chords": [
+        "G",
+        "Cadd9",
+        "Em7",
+        "D"
+      ],
+      "progression": "G - Cadd9 - Em7 - D",
+      "notes": [
+        "Slide gently between the 6th intervals: 4/3 -> 7/7 -> 9/8 on strings 3 and 1",
+        "Ascend into the 11/10 and 12/12 positions with sweet finger vibrato",
+        "Hit the 15th-fret B string note with a crying whole-step bend and slow release",
+        "Resolve back to the warm open G chord as the rhythm section rejoins"
+      ],
+      "alphaTab": ":4 (4.3 3.1) :4 (7.3 7.1) :2 (9.3 8.1) | :4 (11.3 10.1) :4 (12.3 12.1) :2 (14.3 14.1) | :8 15.2 12.2 :4 14.3 :8 12.3 14.3 :4 12.1 | :4 15.2 :8 12.2 15.2 :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Simon Binks Weeping Guitar Solo"
+    },
+    {
+      "name": "Outro Coastal Jam & Fade",
+      "timeStamp": "3:45-5:23",
+      "technique": "Liquid Stratocaster Fills & Ambient Fade",
+      "key": "G Major",
+      "description": "Extended seaside outro jam with Simon Binks weaving delicate, weeping Stratocaster licks around Reyne's fading vocal repetitions.",
+      "chords": [
+        "G",
+        "Cadd9"
+      ],
+      "progression": "G - Cadd9 (repeating to fade)",
+      "notes": [
+        "Keep the G to Cadd9 pendulum strumming with light, relaxed dynamics",
+        "Weave sweet pentatonic fills at the 12th fret between vocal phrases",
+        "Let the analog chorus and delay repeats gently fade out"
+      ],
+      "alphaTab": ":8 12.1 10.1 :4 12.2 :8 10.2 12.3 :4 12.1 | :8 7.3 9.3 :4 8.2 :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Outro Coastal Jam & Fills"
     }
   ],
   "equipment": {

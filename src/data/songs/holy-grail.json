@@ -101,15 +101,45 @@
         ],
         "progression": "C - G - Am - F"
       }
+    },
+    {
+      "name": "Brass-and-Guitar Octave Fanfare & Melodic Fills",
+      "description": "Doubling the iconic French horn and brass fanfare lines with singing electric guitar melodies in C major, cutting through the stadium march",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Target C major scale notes: C (8th fret string 1), D (10th fret), E (12th fret), G (15th fret)",
+          "Step through the fanfare motif: 8th fret B -> 10th fret B -> 8th fret high E -> 10th fret high E -> 12th fret high E",
+          "Apply wide, celebratory finger vibrato on sustained notes"
+        ],
+        "sequence": [
+          "Enter during the instrumental break locking in unison with the horn section",
+          "Ascend the high E string with assertive pick dynamics",
+          "Resolve smoothly to the open C chord on beat 1 of the chorus"
+        ],
+        "tips": [
+          "Use a Telecaster bridge pickup for maximum bite through the dense horn arrangement",
+          "Add a touch of analog boost or overdrive for sustain without harsh fuzz",
+          "Coordinate your dynamic level so the guitar lifts the horns rather than overpowering them"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "Am",
+          "F"
+        ],
+        "progression": "C - G - Am - F"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Verse Dynamic Build",
-      "timeStamp": "0:00-0:45",
+      "name": "Intro Solo Acoustic Whisper",
+      "timeStamp": "0:00-0:25",
       "technique": "Stadium Anthem Strumming & Dynamic Arc",
       "key": "C Major",
-      "description": "Intimate acoustic guitar establishing the legendary C - G - Am - F progression.",
+      "description": "Mark Seymour starts solitary with just a quiet, percussive acoustic guitar rhythm setting up the marching pulse.",
       "chords": [
         "C",
         "G",
@@ -118,19 +148,19 @@
       ],
       "progression": "C - G - Am - F",
       "notes": [
-        "Play with gentle, controlled dynamics",
-        "Clean transitions between open C, G, and Am",
-        "Let the F chord ring out cleanly into the next measure"
+        "Play with gentle, controlled dynamics near the bridge",
+        "Clean transitions between open C, G, Am, and F cowboy shapes",
+        "Establish the steady 120 BPM marching pulse"
       ],
-      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 0.2 3.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
-      "exerciseLabel": "Verse Four-Chord Cycle"
+      "alphaTab": ":4 (3.5 2.4 0.3 1.2 0.1) :4 (3.5 2.4 0.3 1.2 0.1) :4 (3.6 2.5 0.4 0.3 0.2 3.1) :4 (3.6 2.5 0.4 0.3 0.2 3.1) | :4 (0.5 2.4 2.3 1.2 0.1) :4 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Intro Solo Acoustic March"
     },
     {
-      "name": "Chorus Stadium Explosion",
-      "timeStamp": "0:45-1:20",
-      "technique": "Full Stadium Strumming",
+      "name": "Verse 1 Four-Chord March",
+      "timeStamp": "0:25-0:50",
+      "technique": "Stadium Anthem Strumming & Dynamic Arc",
       "key": "C Major",
-      "description": "Huge singalong explosion on 'And if you told me about the places you were goin' to...'.",
+      "description": "The bass and light snare enter ('Woke up this morning from the strangest dream...'), locking into the iconic 120 BPM marching cadence.",
       "chords": [
         "C",
         "G",
@@ -139,11 +169,97 @@
       ],
       "progression": "C - G - Am - F",
       "notes": [
-        "Full-volume down-up stadium strumming",
-        "Lock firmly into the 120 BPM marching tempo"
+        "Keep the strumming even and rhythmic on beats 2 and 4",
+        "Let the F chord ring cleanly into each four-bar turnaround",
+        "Leave space for Mark Seymour's passionate narrative vocal"
       ],
       "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 0.2 3.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
-      "exerciseLabel": "Chorus Stadium Chords"
+      "exerciseLabel": "Verse Four-Chord March"
+    },
+    {
+      "name": "Chorus Stadium Singalong",
+      "timeStamp": "0:50-1:25",
+      "technique": "Full Stadium Strumming",
+      "key": "C Major",
+      "description": "The horns explode into the mix on 'And if you told me about the places you were goin' to...', driving thousands of AFL/NRL fans into a roaring chorus.",
+      "chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+      ],
+      "progression": "C - G - Am - F",
+      "notes": [
+        "Full-volume down-up stadium strumming across all six strings",
+        "Lock firmly into the 120 BPM marching tempo with the kick drum",
+        "Accentuate the transition into the Am chord to highlight the emotional minor color"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 0.2 3.1) | :2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Chorus Stadium Progression"
+    },
+    {
+      "name": "Bridge Reflective Minor Detour",
+      "timeStamp": "1:50-2:20",
+      "technique": "Minor Arpeggiation & Dynamic Build",
+      "key": "C Major",
+      "description": "The triumphant march pauses for a poignant minor breakdown ('I followed you through rain and cold...'), building anticipation for the instrumental fanfare.",
+      "chords": [
+        "Am",
+        "Em",
+        "F",
+        "G"
+      ],
+      "progression": "Am - Em - F - G",
+      "notes": [
+        "Drop dynamic volume slightly on the Am to Em descent",
+        "Crescendo across the F and G chords with heavy downstrokes",
+        "Sets up the explosive return of the horn and guitar fanfare"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.6 2.5 0.4 0.3 0.2 3.1) |",
+      "exerciseLabel": "Bridge Minor Detour"
+    },
+    {
+      "name": "Horn Section Guitar Fanfare & Lead Fills",
+      "timeStamp": "2:20-2:55",
+      "technique": "Brass-and-Guitar Octave Fanfare & Melodic Fills",
+      "key": "C Major",
+      "description": "Barry Palmer's electric guitar links up with the legendary Hunters & Collectors horn section to double the heroic instrumental theme in triumphant singing octaves and soaring major lead fills across the neck.",
+      "chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+      ],
+      "progression": "C - G - Am - F",
+      "notes": [
+        "Start on the B string (8th and 10th frets) and ascend to the high E string (8th, 10th, and 12th frets)",
+        "Lock in tight unison with the brass fanfare melody",
+        "Add rich finger vibrato on sustained high notes",
+        "Resolve cleanly into the ringing open C cowboy chord"
+      ],
+      "alphaTab": ":4 8.2 :4 10.2 :2 8.1 | :4 10.1 :4 12.1 :2 10.1 | :4 8.1 :4 10.1 :2 12.1 | :4 10.1 :4 8.1 :2 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Heroic Horn & Guitar Fanfare"
+    },
+    {
+      "name": "Final Triumphant Chorus & Outro Climax",
+      "timeStamp": "2:55-3:48",
+      "technique": "High-Register Stadium Lead & Anthemic Strumming",
+      "key": "C Major",
+      "description": "Maximum stadium power as the entire ensemble, horns, and roaring crowd vocals deliver the final 'I was searchin' for the Holy Grail!' climax.",
+      "chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+      ],
+      "progression": "C - G - Am - F (repeating to final C)",
+      "notes": [
+        "Deliver full-arm acoustic and electric strums with unstoppable momentum",
+        "Climb up to the 15th-fret high G note for the soaring final fill",
+        "Hit the final sustained C major chord and let the brass and feedback ring"
+      ],
+      "alphaTab": ":8 12.1 10.1 8.1 10.1 :4 12.1 :4 15.1 | :4 (3.5 2.4 0.3) :4 (3.6 2.5 0.4) :2 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Outro Climax & Fanfare"
     }
   ],
   "equipment": {

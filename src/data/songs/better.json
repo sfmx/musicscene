@@ -108,11 +108,41 @@
         ],
         "progression": "Em - G - C - D"
       }
+    },
+    {
+      "name": "Crybaby Wah Pedal Sweeps & Searing Unison Bends",
+      "description": "Aggressive vocal-like wah-wah filter sweeps paired with high-gain whole-step unison bends and rapid pentatonic blues bursts",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Rock the wah heel-to-toe in sync with whole-step bends at the 14th and 15th frets",
+          "Unison bends: fret 12 high E while bending fret 15 B string up a full step",
+          "Climb to fret 17 on the high E string for the solo climax"
+        ],
+        "sequence": [
+          "Engage the wah pedal at the start of the solo break with a toe-down bite",
+          "Sweep from heel (dark low-mid vocal) to toe (screaming treble bite) on sustained bends",
+          "Execute rapid alternate-picked blues cascades down the E minor pentatonic box"
+        ],
+        "tips": [
+          "Keep your heel grounded and rock from the ankle to avoid losing rhythm balance",
+          "Push the amp's midrange to prevent the wah from disappearing into the drum crash cymbals",
+          "Mute adjacent unplayed strings with your fret-hand index finger to prevent unwanted squeals"
+        ],
+        "chords": [
+          "Em",
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "Em - G - C - D"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro Heavy Riff",
+      "name": "Intro Crushing Power Riff",
       "timeStamp": "0:00-0:35",
       "technique": "Palm-Muted Heavy Power Chording & Unison Bends",
       "key": "E Minor",
@@ -125,19 +155,19 @@
       ],
       "progression": "Em - G - C - D",
       "notes": [
-        "Heavy palm-muting on the low E pedal note",
-        "Punch the G5 and C5 accents with authoritative downstrokes",
-        "Let the D chord ring before cycling back to Em"
+        "Heavy palm-muting on the low E pedal note with aggressive downstrokes",
+        "Punch the G5 and C5 accents with authoritative downstroke attack",
+        "Let the D chord ring before cycling back into the main riff"
       ],
-      "alphaTab": ":2 (0.6 2.5 2.4) :2 (3.6 5.5 5.4) | :2 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) |",
+      "alphaTab": ":8 0.6 0.6 :4 (0.6 2.5 2.4) :8 3.6 3.6 :4 (3.6 5.5 5.4) | :8 3.5 3.5 :4 (3.5 5.4 5.3) :8 5.5 5.5 :4 (5.5 7.4 7.3) |",
       "exerciseLabel": "Intro Heavy Power Chords"
     },
     {
-      "name": "Verse Chug",
-      "timeStamp": "0:35-1:15",
+      "name": "Verse 1 Palm-Muted Chug",
+      "timeStamp": "0:35-1:05",
       "technique": "Tight Palm Muted Rhythm",
       "key": "E Minor",
-      "description": "Steady, locked-in groove driving the verse forward beneath the vocals.",
+      "description": "Dave Gleeson begins the narrative ('I am the king of the castle...') over locked-in eighth-note chugs with tight heel muting.",
       "chords": [
         "Em",
         "G",
@@ -146,18 +176,39 @@
       ],
       "progression": "Em - G - C - D",
       "notes": [
-        "Clean eighth-note palm muting",
-        "Keep the pick close to the strings for minimal wasted motion"
+        "Clean eighth-note palm muting across the lower strings",
+        "Keep the pick close to the strings for minimal wasted motion and maximum punch",
+        "Follow the bass drum kicks for an immovable pocket"
       ],
-      "alphaTab": ":8 0.6 0.6 0.6 0.6 :4 (3.6 5.5 5.4) | :8 3.5 3.5 3.5 3.5 :4 (5.5 7.4 7.3) |",
+      "alphaTab": ":8 0.6 0.6 0.6 0.6 :4 (3.6 5.5 5.4) :4 (3.5 5.4 5.3) | :8 0.6 0.6 0.6 0.6 :4 (5.5 7.4 7.3) :4 (0.6 2.5 2.4) |",
       "exerciseLabel": "Verse Rhythm Chug"
     },
     {
-      "name": "Chorus Anthem",
-      "timeStamp": "1:15-1:45",
+      "name": "Pre-Chorus Dorian Ascent",
+      "timeStamp": "1:05-1:20",
+      "technique": "Major IV Dorian Power Ascent",
+      "key": "E Dorian / E Minor",
+      "description": "The song breaks from the Aeolian chug with a bold A major (IV) chord lift, injecting swagger and building tension toward the chorus.",
+      "chords": [
+        "A",
+        "C",
+        "D"
+      ],
+      "progression": "A - C - D",
+      "notes": [
+        "Switch from palm muting to open ringing power chords",
+        "Emphasize the C# note in the A major chord for the characteristic Dorian color",
+        "Crescendo on the D power chord to propel the band into the chorus"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :4 (3.5 5.4 5.3) :4 (5.5 7.4 7.3) | :1 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Pre-Chorus Dorian Lift"
+    },
+    {
+      "name": "Chorus Stadium Hook",
+      "timeStamp": "1:20-1:45",
       "technique": "Stadium Power Strumming",
       "key": "E Minor",
-      "description": "Huge singalong chorus with wide-open power chords and aggressive vocal harmonizing.",
+      "description": "Huge singalong chorus on 'Better, better than you!' with wide-open power chords and aggressive vocal harmonizing.",
       "chords": [
         "Em",
         "G",
@@ -166,11 +217,55 @@
       ],
       "progression": "Em - G - C - D",
       "notes": [
-        "Lift all muting and hit full open power chords",
-        "Strike with aggressive downstrokes on beats 1, 2, 3, and 4"
+        "Lift all muting and hit full open power chords across all strings",
+        "Strike with aggressive downstrokes on beats 1, 2, 3, and 4",
+        "Let the ringing top strings fill out the sonic space"
       ],
       "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
       "exerciseLabel": "Chorus Stadium Chords"
+    },
+    {
+      "name": "Blistering Wah-Wah Guitar Solo",
+      "timeStamp": "2:35-3:15",
+      "technique": "Crybaby Wah Pedal Sweeps & Searing Unison Bends",
+      "key": "E Minor Pentatonic",
+      "description": "Jimi Hocking / Grant Walmsley's blistering, wah-drenched guitar solo. Features aggressive Crybaby sweeps, whole-step unison bends at the 14th/15th frets, rapid 12th-fret pentatonic blues runs, and screaming 17th-fret climax bends.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - C - D",
+      "notes": [
+        "Engage the wah pedal with an aggressive forward sweep into the 12th-fret high E note",
+        "Execute a screaming whole-step bend on the 14th fret G string and 15th fret B string",
+        "Rip through the 12th-position E minor pentatonic box with fast alternate picking",
+        "Climb to the 17th fret of the high E string for the howling whole-step bend climax"
+      ],
+      "alphaTab": ":8 12.1 15.2 :4 14.3 :8 12.3 14.3 :4 15.1 | :8 15.1 17.1 :4 17.1 :8 15.1 12.1 :4 15.2 | :8 12.2 15.2 12.3 14.3 :4 12.3 :8 14.4 12.4 | :4 14.4 :8 12.3 14.3 :2 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Blistering Wah Guitar Solo"
+    },
+    {
+      "name": "Outro Power Jam & Climax",
+      "timeStamp": "3:45-4:38",
+      "technique": "High-Energy Power Chords & Ad-Lib Fills",
+      "key": "E Minor",
+      "description": "The band enters full arena overdrive, with ad-lib screams from Dave Gleeson and howling feedback, ending on a final sustained Em power chord crash.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - C - D (repeating to crashing stop)",
+      "notes": [
+        "Keep the rhythm driving with maximum energy and downstroke punch",
+        "Toss in 15th-to-19th fret bends and wild pick slides over the repeating cycle",
+        "Conclude with a thunderous hit on the open Em chord and let the valve feedback howl"
+      ],
+      "alphaTab": ":8 15.1 17.1 :4 19.1 :8 17.1 15.1 :4 17.1 | :4 (0.6 2.5 2.4) :4 (3.6 5.5 5.4) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Power Jam & Feedback"
     }
   ],
   "equipment": {

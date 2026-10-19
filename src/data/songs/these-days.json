@@ -107,33 +107,83 @@
         ],
         "progression": "D - G - Bm - A"
       }
+    },
+    {
+      "name": "Ian Haug Lyrical Electric Lead & Wide Vibrato",
+      "description": "Singing melodic phrasing on the electric guitar, executing slow whole-step bends and wide vocal-like vibrato over the Bm - G - D - A progression",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Target D major chord tones: F# at fret 14 on string 1, D at fret 10/15 on string 1/2",
+          "Execute full whole-step bends at fret 14 (string 3) and fret 15 (string 2)",
+          "Slow, wide finger vibrato matching Bernard Fanning's vocal inflection"
+        ],
+        "sequence": [
+          "Begin with lyrical melody at the 10th and 14th frets on the high E string",
+          "Sustain the 15th-fret climax note with controlled, singing vibrato",
+          "Descend gracefully through the D major pentatonic scale into the open D chord resolution"
+        ],
+        "tips": [
+          "Support your fretting finger with two additional fingers when executing slow bends",
+          "Use a warm overdrive (Fulltone OCD or Blues Driver) with slight tape delay (350ms)",
+          "Focus on tone and touch rather than speed; every note should sing like a vocal line"
+        ],
+        "chords": [
+          "Bm",
+          "G",
+          "D",
+          "A"
+        ],
+        "progression": "Bm - G - D - A"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Acoustic",
-      "timeStamp": "0:00-1:05",
+      "name": "Intro Acoustic High-Drone Fingerpicking",
+      "timeStamp": "0:00-0:30",
       "technique": "High Drone Pedal Point & Fingerstyle Acoustic",
       "key": "D Major",
-      "description": "Gentle fingerpicked intro setting up the wistful D to G verse pendulum.",
+      "description": "Bernard Fanning's intimate solo acoustic guitar picking the bittersweet D to G progression with ringing open high strings.",
       "chords": [
         "D",
         "G"
       ],
       "progression": "D - G - D - G",
       "notes": [
-        "Let every note sustain with ring",
-        "Focus on smooth bass note voice leading from D (open 4th string) to G (3rd fret 6th string)"
+        "Anchor your fingers on the 3rd fret of strings 1 and 2",
+        "Pluck the alternating bass notes cleanly with the thumb",
+        "Let the high treble strings ring together with warm acoustic sustain"
       ],
-      "alphaTab": ":2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
-      "exerciseLabel": "Verse Fingerpicked Chords"
+      "alphaTab": ":4 0.4 :8 2.3 3.2 :4 2.1 :8 3.2 2.3 | :4 3.6 :8 0.4 0.3 :4 3.2 :8 3.1 3.2 |",
+      "exerciseLabel": "Intro Fingerpicked Chords"
     },
     {
-      "name": "Chorus Singalong",
+      "name": "Verse 1 Bittersweet Pendulum",
+      "timeStamp": "0:30-1:05",
+      "technique": "High Drone Pedal Point & Fingerstyle Acoustic",
+      "key": "D Major",
+      "description": "Gentle acoustic strumming as Bernard Fanning delivers the iconic opening lines ('This life is short, baby that's a fact...').",
+      "chords": [
+        "D",
+        "G"
+      ],
+      "progression": "D - G - D - G",
+      "notes": [
+        "Play with delicate, controlled dynamics at 84 BPM",
+        "Smooth voice leading between open D and G major cowboy shapes",
+        "Keep the rhythm spacious and unhurried"
+      ],
+      "alphaTab": ":2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Verse Pendulum Strumming"
+    },
+    {
+      "name": "Chorus Singalong 'Coming Round Again'",
       "timeStamp": "1:05-1:45",
       "technique": "Emotional Strumming Dynamics",
       "key": "D Major",
-      "description": "Full band burst into the legendary 'It's coming round again' chorus hook.",
+      "description": "Full band burst into the legendary 'It's coming round again' chorus hook, with resonant acoustic and warm electric guitars.",
       "chords": [
         "Bm",
         "G",
@@ -142,11 +192,76 @@
       ],
       "progression": "Bm - G - D - A",
       "notes": [
-        "Open up the strumming with resonant full-chord strokes",
-        "Lock into the slow, powerful 84 BPM pocket"
+        "Open up the strumming with resonant full-chord strokes across all six strings",
+        "Lock into the slow, powerful 84 BPM pocket with John Collins's bass",
+        "Transition cleanly through the Bm barre chord at fret 2"
       ],
       "alphaTab": ":2 (2.5 4.4 4.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
       "exerciseLabel": "Chorus Power Progression"
+    },
+    {
+      "name": "Bridge Minor Build",
+      "timeStamp": "2:15-2:45",
+      "technique": "Minor Arpeggiation & Dynamic Crescendo",
+      "key": "D Major",
+      "description": "Emotional dynamic build ('These days seem to fade so easily...') as the rhythm section swells and Ian Haug's electric guitar prepares the solo break.",
+      "chords": [
+        "Em",
+        "G",
+        "Bm",
+        "A"
+      ],
+      "progression": "Em - G - Bm - A",
+      "notes": [
+        "Build picking intensity gradually over the Em to G transition",
+        "Accent the downbeats on Bm and A",
+        "Crescendo to launch Ian Haug's soaring guitar solo"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (2.5 4.4 4.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Bridge Dynamic Build"
+    },
+    {
+      "name": "Ian Haug's Soaring Electric Guitar Solo",
+      "timeStamp": "2:45-3:30",
+      "technique": "Ian Haug Lyrical Electric Lead & Wide Vibrato",
+      "key": "D Major Pentatonic",
+      "description": "Ian Haug's celebrated electric guitar solo. A masterclass in lyrical melodic phrasing and restraint: crying whole-step bends at the 14th fret of the G string and 15th fret of the B string, slow singing vibrato, and uplifting major pentatonic resolutions that capture the song's bittersweet nostalgia.",
+      "chords": [
+        "Bm",
+        "G",
+        "D",
+        "A"
+      ],
+      "progression": "Bm - G - D - A",
+      "notes": [
+        "Begin on the 10th fret of the high E string with singing melodic phrasing",
+        "Climb smoothly up to the 14th fret and sustain with wide finger vibrato",
+        "Hit the 15th-fret high note with emotional weight and slow, weeping release",
+        "Descend through the D major pentatonic scale to resolve gracefully back to the acoustic strumming"
+      ],
+      "alphaTab": ":4 10.1 :8 12.1 10.1 :4 14.1 :8 12.1 14.1 | :2 15.1 :4 14.1 :8 12.1 10.1 | :4 12.2 :8 10.2 12.2 :4 11.3 :8 12.3 14.3 | :4 12.2 :8 10.2 12.2 :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Ian Haug Soaring Guitar Solo"
+    },
+    {
+      "name": "Final Epic Chorus & Acoustic-Electric Outro",
+      "timeStamp": "3:30-4:58",
+      "technique": "Dual-Guitar Crescendo & Stripped Acoustic Outro",
+      "key": "D Major",
+      "description": "Huge dual-guitar crescendo on the final chorus before stripping back to Bernard Fanning's solitary acoustic guitar ringing to the final chord.",
+      "chords": [
+        "Bm",
+        "G",
+        "D",
+        "A"
+      ],
+      "progression": "Bm - G - D - A (repeating to final D)",
+      "notes": [
+        "Combine heavy electric rhythm chording with acoustic dreadnought strumming",
+        "Ian Haug adds soaring 17th-fret fills over the vocal repetitions",
+        "Strip away the drums and electric guitars for a final tender strum on open D"
+      ],
+      "alphaTab": ":8 14.1 15.1 :4 17.1 :8 15.1 14.1 :4 12.1 | :4 (2.5 4.4 4.3 3.2) :4 (3.6 2.5 0.4 0.3) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Outro Crescendo & Fade"
     }
   ],
   "equipment": {

@@ -13,7 +13,7 @@
   "difficulty": {
     "overall": "Intermediate",
     "rhythmGuitar": "Intermediate",
-    "leadGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
     "bass": "Beginner",
     "drums": "Beginner"
   },
@@ -24,12 +24,12 @@
         {
           "scale": "A major pentatonic / Mixolydian",
           "notes": "A - B - C# - D - E - F# - G - A",
-          "application": "Drives the infectious 1950s boogie-woogie shuffle riffs and vocal harmonies"
+          "application": "Drives the infectious 1950s boogie-woogie shuffle riffs, sliding 6ths, and party vocal harmonies"
         },
         {
           "scale": "A blues scale",
           "notes": "A - C - D - Eb - E - G - A",
-          "application": "Powers Ross Hannaford's stinging Chuck Berry double-stops on strings 1 and 2"
+          "application": "Powers Ross Hannaford's biting Chuck Berry double-stops on strings 1 and 2 and blues curls on string 3"
         }
       ],
       "modalCharacter": "Joyous Australian jump-blues boogie-rock in A major that directly inspired Elton John's 'Crocodile Rock'",
@@ -48,37 +48,55 @@
       },
       "sectionProgressions": [
         {
-          "section": "Intro & Verse Boogie Riff",
+          "section": "Intro Boogie Riff",
+          "progression": "A5 - A6 - A7",
+          "romanNumerals": "I5 - I6 - I7",
+          "description": "Driving boogie-woogie shuffle alternating root-5th, root-6th, and root-7th intervals with percussive muting"
+        },
+        {
+          "section": "Verse 1 & 2 Shuffle",
           "progression": "A - D - A - E - D - A",
           "romanNumerals": "I - IV - I - V - IV - I",
-          "description": "Driving boogie-woogie shuffle alternating root-5th, root-6th, and root-7th intervals with percussive muting"
+          "description": "12-bar blues shuffle with vocal call-and-response and syncopated double-stop punctuation"
         },
         {
           "section": "Chorus Singalong",
           "progression": "A - D - A - E - D - A",
           "romanNumerals": "I - IV - I - V - IV - I",
           "description": "Full-throttle party anthem hook ('Hey, hey, hey good lookin', oh what ya got cookin'') with ringing open chords"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "A - D - A - E - D - A",
+          "romanNumerals": "I - IV - I - V - IV - I",
+          "description": "12-bar solo showcase featuring Chuck Berry double-stops, micro-tonal blues curls, and chromatic turnarounds"
+        },
+        {
+          "section": "Turnaround Lick",
+          "progression": "E7 - D7 - A7 - E7",
+          "romanNumerals": "V7 - IV7 - I7 - V7",
+          "description": "Classic chromatic walking bass and blues turnaround resolving back to the dominant V chord"
         }
       ],
       "harmonicFunction": [
         "A (I) - Driving boogie tonic establishing the relentless Australian rock-and-roll dance groove",
         "D (IV) - Classic blues subdominant providing buoyant harmonic lift on bar 5",
-        "E (V) - Dominant turnaround building maximum dancefloor tension before dropping back to D and A",
+        "E (V) - Dominant turnaround building peak excitement before resolving home",
         "A7 (I7) - Dominant 7th coloration injecting raw 1950s R&B swagger into the shuffle"
       ]
     }
   },
   "techniques": [
     {
-      "name": "Classic Boogie Shuffle & Pinky Stretch",
+      "name": "Classic Boogie Shuffle & Pinky Stretch (A5 - A6 - A7)",
       "description": "Steady swinging shuffle pattern fretting the root note while alternating the 5th, 6th, and minor 7th with the pinky finger",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
         "notes": [
-          "A5 / A6: Open A string + 2nd fret D string (A5), reaching to 4th fret D string with ring/pinky (A6)",
-          "D5 / D6: Open D string + 2nd fret G string (D5), reaching to 4th fret G string (D6)",
-          "E5 / E6: Open E string + 2nd fret A string (E5), reaching to 4th fret A string (E6)"
+          "A5 / A6: Open A string + 2nd fret D string (A5), reaching to 4th fret D string with ring/pinky (A6), and 5th fret (A7)",
+          "D5 / D6: Open D string + 2nd fret G string (D5), reaching to 4th fret G string (D6), and 5th fret (D7)",
+          "E5 / E6: Open E string + 2nd fret A string (E5), reaching to 4th fret A string (E6), and 5th fret (E7)"
         ],
         "sequence": [
           "Establish the swung eighth-note pulse ('DAH-dum, DAH-dum') at 136 BPM",
@@ -97,33 +115,83 @@
         ],
         "progression": "A - D - A - E - D - A"
       }
+    },
+    {
+      "name": "Ross Hannaford's Chuck Berry Double-Stops",
+      "description": "Holding 5th fret on strings 1 and 2 while bending the 7th fret G string, creating authentic rockabilly bite",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Double stop at 5th fret: strings 1 (E) and 2 (E) barred with index finger pad",
+          "Bend at 7th fret string 3 (D to E full step)",
+          "Sliding 6th intervals: 4th fret G + 5th fret high E sliding to 6th fret G + 7th fret high E"
+        ],
+        "sequence": [
+          "Bend string 3 at fret 7 with ring and middle fingers",
+          "Strike strings 2 and 1 at fret 5 together with a downstroke",
+          "Add quarter-tone blues micro-bends on the minor 3rd (string 3, fret 5)"
+        ],
+        "tips": [
+          "Keep your index finger flat across both strings 1 and 2",
+          "Use hybrid picking (pick on string 3, middle finger plucking string 1) for sharper transient attack",
+          "Let the slapback echo create an artificial doubling effect on every pluck"
+        ],
+        "chords": [
+          "A7",
+          "D7",
+          "E7"
+        ],
+        "progression": "A7 - D7 - A7 - E7"
+      }
     }
   ],
   "sections": [
     {
       "name": "Intro Boogie Shuffle Riff",
-      "timeStamp": "0:00-0:30",
+      "timeStamp": "0:00-0:18",
       "technique": "Classic Boogie Shuffle & Pinky Stretch",
       "key": "A Major",
       "description": "Ross Wilson's irresistible opening boogie groove that kicked off the 1970s Australian pub rock revolution.",
       "chords": [
         "A5",
         "A6",
+        "A7",
         "D5",
         "D6"
       ],
-      "progression": "A - D - A - E",
+      "progression": "A5 - A6 - A7 - D5",
       "notes": [
-        "Swing the eighth notes heavily with a bounce feel",
+        "Swing the eighth notes heavily with a triplet bounce feel",
         "Light palm muting on the low strings",
-        "Crisp Chuck Berry double-stop accents on frets 5 and 7"
+        "Keep the index finger firmly anchored on fret 2 of the D string"
       ],
-      "alphaTab": ":8 (0.5 2.4) (0.5 2.4) (0.5 4.4) (0.5 4.4) | :8 (0.4 2.3) (0.4 2.3) (0.4 4.3) (0.4 4.3) |",
+      "alphaTab": ":8 (0.5 2.4) (0.5 2.4) (0.5 4.4) (0.5 4.4) :8 (0.5 5.4) (0.5 5.4) (0.5 4.4) (0.5 4.4) | :8 (0.4 2.3) (0.4 2.3) (0.4 4.3) (0.4 4.3) :8 (0.5 2.4) (0.5 2.4) (0.5 4.4) (0.5 4.4) |",
       "exerciseLabel": "Boogie Shuffle Rhythm"
     },
     {
+      "name": "Verse 1 Shuffle & Vocal Call",
+      "timeStamp": "0:18-0:47",
+      "technique": "Boogie Shuffle with Lead Accents",
+      "key": "A Major",
+      "description": "Opening verse ('Now listen everybody got to tell you 'bout a dance') featuring boogie shuffle and syncopated double-stop stabs.",
+      "chords": [
+        "A5",
+        "D5",
+        "E5"
+      ],
+      "progression": "A - D - A - E - D - A",
+      "notes": [
+        "Lock into the rhythm section's steady walking swing",
+        "Ross Hannaford answers Ross Wilson's vocal phrases with sharp 5th-fret double stops",
+        "Keep the volume controlled to leave room for the lead vocal"
+      ],
+      "alphaTab": ":8 (0.5 2.4) (0.5 2.4) (0.5 4.4) (0.5 4.4) | :8 (0.5 2.4) (0.5 2.4) :4 (5.2 5.1) | :8 (0.4 2.3) (0.4 2.3) (0.4 4.3) (0.4 4.3) | :8 (0.5 2.4) (0.5 2.4) (0.5 4.4) (0.5 4.4) |",
+      "exerciseLabel": "Verse Shuffle & Fills"
+    },
+    {
       "name": "Chorus Singalong",
-      "timeStamp": "0:30-1:05",
+      "timeStamp": "0:47-1:15",
       "technique": "Open Ringing Rhythm Strumming",
       "key": "A Major",
       "description": "The immortal 'Doing the Eagle Rock' chorus with full open chord strums and party vocal energy.",
@@ -138,19 +206,101 @@
         "Accent beats 2 and 4 with sharp snap",
         "Finish with the quick chromatic walkdown turnaround"
       ],
-      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "alphaTab": ":4 (0.5 2.4 2.3 2.2 0.1) :4 (0.4 2.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) | :4 (0.6 2.5 2.4 1.3 0.2 0.1) :4 (0.4 2.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
       "exerciseLabel": "Chorus Singalong Hook"
+    },
+    {
+      "name": "Verse 2 Lead Fills & 6th Intervals",
+      "timeStamp": "1:15-1:44",
+      "technique": "Sliding 6th Intervals & R&B Stabs",
+      "key": "A Major",
+      "description": "Hannaford expands the verse arrangement with sweet sliding 6th intervals across strings 1 and 3.",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - D - A - E - D - A",
+      "notes": [
+        "Slide up into the 6th interval at fret 6 and 7 smoothly",
+        "Dampen strings with fretting fingers immediately after striking for crisp punch",
+        "Listen to the dialogue between the vocal melody and guitar fills"
+      ],
+      "alphaTab": ":8 4.3 5.1 6.3 7.1 | :4 (6.3 7.1) :8 7.3 5.3 :4 7.4 | :8 (0.4 2.3) (0.4 2.3) (0.4 4.3) (0.4 4.3) | :4 (5.2 5.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Sliding 6ths & Verse Fills"
+    },
+    {
+      "name": "Ross Hannaford's Main Guitar Solo",
+      "timeStamp": "1:44-2:15",
+      "technique": "Chuck Berry Double-Stops & Blues Curls",
+      "key": "A Major",
+      "description": "One of the most celebrated guitar solos in Australian rock history: pure Chuck Berry rock-and-roll joy bursting with double stops, micro-tonal blues curls, and chromatic transitions across the 12-bar form.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - A - E - D - A",
+      "notes": [
+        "Bars 1-4: Bend the 7th fret G string while holding the 5th fret on strings 1 and 2",
+        "Bars 5-6 (over D): Shift up to the 10th fret double-stop position on strings 1 and 2",
+        "Bars 9-10 (over E): Hit the 12th fret double-stop and walk down chromatically (12 -> 11 -> 10) into the resolution",
+        "Slapback delay (110ms) creates the signature vintage bouncy slap"
+      ],
+      "alphaTab": ":8 7.3 :4 (5.2 5.1) :8 (5.2 5.1) 7.3 5.3 | :4 7.4 :8 5.3 7.3 :4 (5.2 5.1) | :8 12.3 :4 (10.2 10.1) :8 (10.2 10.1) 12.3 10.3 | :4 12.4 :8 10.3 12.3 :4 (10.2 10.1) | :8 14.3 :4 (12.2 12.1) :8 (12.2 12.1) (11.2 11.1) :4 (10.2 10.1) | :8 7.3 :4 (5.2 5.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Ross Hannaford Iconic Guitar Solo"
+    },
+    {
+      "name": "Chromatic Turnaround Lick",
+      "timeStamp": "2:15-2:45",
+      "technique": "Walking Chromatic Bass & Dominant 7th Chords",
+      "key": "A Major",
+      "description": "The classic 1950s rockabilly chromatic turnaround resolving from E to D to A.",
+      "chords": [
+        "E7",
+        "D7",
+        "A7"
+      ],
+      "progression": "E7 - D7 - A7 - E7",
+      "notes": [
+        "Walk down chromatically on the A string: 7 -> 6 -> 5 -> 4 into open A",
+        "Hit the sharp E7#9 or open E7 dominant turnaround on beat 4",
+        "Sets up the explosive return of the final chorus"
+      ],
+      "alphaTab": ":4 (0.6 2.5 2.4 1.3 0.2 0.1) :4 (0.4 2.3 3.2 2.1) | :8 7.5 6.5 5.5 4.5 :4 0.5 :4 (0.6 2.5 0.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Walking Turnaround Lick"
+    },
+    {
+      "name": "Outro Solo & Boogie Jam Fade",
+      "timeStamp": "2:55-4:09",
+      "technique": "High Register Blues Bends & Vocal Trading",
+      "key": "A Major",
+      "description": "Ross Hannaford takes a fiery second solo climbing into the upper register as the party energy reaches fever pitch.",
+      "chords": [
+        "A",
+        "D",
+        "E"
+      ],
+      "progression": "A - D - A - E - D - A (repeating to fade)",
+      "notes": [
+        "Climb up into 14th and 15th fret bends on strings 1 and 2",
+        "Trade licks rhythmically with Ross Wilson's scat vocal calls",
+        "Maintain relaxed wrist motion through the extended four-minute jam"
+      ],
+      "alphaTab": ":8 12.1 14.1 15.1 14.1 :4 12.1 | :8 14.2 12.2 14.3 12.3 :4 14.4 | :8 7.3 :4 (5.2 5.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Outro Solo & Jam"
     }
   ],
   "equipment": {
     "guitar": {
-      "recommended": "Fender Telecaster or Gibson Les Paul Special with P90s",
+      "recommended": "Fender Telecaster or Gretsch Chet Atkins Country Gentleman (Ross Hannaford setup)",
       "alternatives": [
+        "Gibson Les Paul Special with P90s",
         "Epiphone Casino (hollowbody snap)",
-        "Fender Stratocaster",
-        "Gretsch Electromatic"
+        "Fender Stratocaster"
       ],
-      "pickup": "Bridge pickup for authentic 1950s twang and bite"
+      "pickup": "Bridge pickup for authentic 1950s twang and biting transients"
     },
     "amp": {
       "recommended": "Fender Bassman or Vox AC30 (cranked edge-of-breakup)",
@@ -186,7 +336,7 @@
     "intermediate": {
       "title": "The Boogie-Woogie Pinky Stretch",
       "steps": [
-        "Master the A5 to A6 pinky stretch on strings 5 and 4",
+        "Master the A5 to A6 to A7 pinky stretch on strings 5 and 4",
         "Move the exact same grip to D5/D6 and E5/E6",
         "Build stamina at 136 BPM using our Metronome Speed Trainer"
       ],
@@ -194,36 +344,40 @@
       "goals": "Fluid boogie shuffle without hand fatigue or dropped beats"
     },
     "advanced": {
-      "title": "Chuck Berry Double-Stops & Lead Fills",
+      "title": "Ross Hannaford's Solo & Double-Stops",
       "steps": [
         "Learn Ross Hannaford's sliding double-stops at fret 5 across strings 1 and 2",
-        "Incorporate syncopated percussive rake strokes before chord changes",
-        "Transcribe the roaring guitar solo with bluesy quarter-tone bends"
+        "Master the full-step 7th-fret G string bend held behind the 5th-fret double stop",
+        "Nail the chromatic turnaround walkdown at 2:15 and high-register outro solo"
       ],
-      "timeEstimate": "1-2 weeks",
-      "goals": "Showstopping vintage rock-and-roll guitar showcase"
+      "timeEstimate": "2 weeks",
+      "goals": "Complete stage-ready transcription of one of Australia's greatest guitar solos"
     }
   },
   "practiceNotes": {
     "commonMistakes": [
       "Playing straight eighth notes instead of the essential swung shuffle groove",
       "Letting the unused open strings ring out and muddy the boogie riff",
-      "Collapsing the left-hand wrist against the neck, making the fret 4 stretch difficult"
+      "Collapsing the left-hand wrist against the neck, making the fret 4 stretch difficult",
+      "Rushing through the double-stop bends in the solo without letting the slapback echo breathe"
     ],
     "practiceRoutine": [
-      "Warm up with 5 minutes of pinky independence exercises on fret 2 and 4",
+      "Warm up with 5 minutes of pinky independence exercises on frets 2, 4, and 5",
       "Run the boogie shuffle in A with our Metronome set to 'Shuffle' groove preset",
-      "Practice shifting between A5, D5, and E5 without breaking the swing cadence"
+      "Isolate the main guitar solo (bars 1-12) at 100 BPM before ramping to 136 BPM",
+      "Practice sliding 6th intervals across strings 1 and 3"
     ],
     "focusAreas": [
       "Swung eighth-note groove consistency",
       "Fretting-hand wrist relaxation during pinky stretches",
-      "Percussive right-hand palm muting for punchy low-end punch"
+      "Accurate pitch on the 7th-fret G string bend in the solo",
+      "Clean slapback delay integration"
     ],
     "metronomeWork": [
       "Select the 'Blues Shuffle' sound preset on our Metronome tool",
       "Start at 105 BPM and practice clean shuffle accents",
-      "Work up to the studio tempo of 136 BPM in 5 BPM increments"
+      "Work up to the studio tempo of 136 BPM in 5 BPM increments",
+      "Practice solo double-stops at half tempo to guarantee crisp articulation"
     ]
   },
   "metadata": {

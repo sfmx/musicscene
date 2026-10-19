@@ -107,15 +107,45 @@
         ],
         "progression": "E - A - B - E"
       }
+    },
+    {
+      "name": "Ian Moss Blues-Rock Phrasing & Sweet Major Thirds",
+      "description": "Blending fiery E minor blues aggression with sweet E major 3rd chord tones (G#), crying vocal vibrato, and soaring whole-step bends",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Target sweet E major 3rd (G#) at 13th fret on string 3",
+          "Execute full whole-step bends from 14th fret F# up to G# on string 3, and 15th fret D up to E on string 2",
+          "Apply wide, singing finger vibrato on sustained notes"
+        ],
+        "sequence": [
+          "Establish high-register presence with a singing 12th-to-15th fret line over E major",
+          "Resolve smoothly to the G# sweet note as the chord shifts",
+          "Dig in with pick dynamics for Ian Moss's trademark vocal bite"
+        ],
+        "tips": [
+          "Use your thumb over the neck for leverage when pushing whole-step bends",
+          "Slightly roll off the guitar tone knob to 7 for Ian Moss's warm, singing woman tone",
+          "Add an overdrive pedal (Tube Screamer) to push tube amps into fluid singing compression"
+        ],
+        "chords": [
+          "E",
+          "A",
+          "B",
+          "C#m"
+        ],
+        "progression": "E - A - B - C#m"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Verse Upbeat Groove",
-      "timeStamp": "0:00-0:40",
+      "name": "Intro Wurlitzer & Reggae Upbeat Chops",
+      "timeStamp": "0:00-0:18",
       "technique": "Staccato Reggae Skank & Upbeat Chops",
       "key": "E Major",
-      "description": "Ian Moss's light-fingered reggae groove accompanying Don Walker's Wurlitzer piano.",
+      "description": "Don Walker's mellow Wurlitzer electric piano establishes the Caribbean bounce, joined by Ian Moss's crisp staccato upbeat chops.",
       "chords": [
         "E",
         "A",
@@ -124,19 +154,40 @@
       ],
       "progression": "E - A - B - E",
       "notes": [
-        "Choke the strings immediately after striking",
+        "Wait for the Wurlitzer intro before entering on the upbeat of beat 2",
+        "Choke the high E and B strings with the underside of your fretting fingers",
+        "Keep the rhythm strictly locked to the 118 BPM pocket"
+      ],
+      "alphaTab": ":4 r :8 (1.3 0.2 0.1) r :4 r :8 (2.3 2.2 0.1) r | :4 r :8 (4.3 4.2 2.1) r :4 r :8 (1.3 0.2 0.1) r |",
+      "exerciseLabel": "Intro Upbeat Skank"
+    },
+    {
+      "name": "Verse 1 Reggae Skank Groove",
+      "timeStamp": "0:18-0:40",
+      "technique": "Staccato Reggae Skank & Upbeat Chops",
+      "key": "E Major",
+      "description": "Ian Moss's light-fingered reggae groove accompanying Don Walker's Wurlitzer piano and Steve Prestwich's snare rim click.",
+      "chords": [
+        "E",
+        "A",
+        "B",
+        "E"
+      ],
+      "progression": "E - A - B - E",
+      "notes": [
+        "Choke the strings immediately after striking on beats 2 and 4",
         "Focus on the treble triad on strings 1, 2, and 3",
-        "Lock strictly with Steve Prestwich's snare rim click"
+        "Leave dynamic space for Jimmy Barnes's gritty storytelling verse vocal"
       ],
       "alphaTab": ":4 (0.6 2.5 2.4 1.3 0.2 0.1) :4 (0.5 2.4 2.3 2.2 0.1) | :4 (2.5 4.4 4.3 4.2 2.1) :4 (0.6 2.5 2.4 1.3 0.2 0.1) |",
       "exerciseLabel": "Verse Reggae Skank"
     },
     {
-      "name": "Chorus Anthem",
+      "name": "Chorus 1 Pub-Rock Power Hook",
       "timeStamp": "0:40-1:10",
       "technique": "Driving Pub-Rock Downstrokes",
       "key": "E Major",
-      "description": "Full band explosion into the legendary 'Cheap wine and a three day growth' chorus.",
+      "description": "Full band explosion into the legendary 'Cheap wine and a three day growth' chorus, shifting from staccato chops to wide resonant downstrokes.",
       "chords": [
         "A",
         "B",
@@ -145,11 +196,76 @@
       ],
       "progression": "A - B - E - C#m - A - B - E",
       "notes": [
-        "Switch from staccato skanks to wide, resonant power strums",
-        "Emphasize the clean slide into the C#m barre chord at fret 4"
+        "Switch from staccato skanks to wide, resonant power strums across all strings",
+        "Hit the A to B push with aggressive downstroke attack",
+        "Slide cleanly into the C#m barre chord at fret 4 to emphasize the emotional lift"
       ],
-      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (2.5 4.4 4.3 4.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (4.5 6.4 6.3 5.2 4.1) |",
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (2.5 4.4 4.3 4.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (4.5 6.4 6.3 5.2 4.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (2.5 4.4 4.3 4.2 2.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
       "exerciseLabel": "Chorus Power Hook"
+    },
+    {
+      "name": "Bridge Minor Walkdown",
+      "timeStamp": "1:40-2:10",
+      "technique": "Introspective Minor Barre Arpeggiation",
+      "key": "C# Minor",
+      "description": "An atmospheric minor breakdown ('Sitting on the sofa, listening to the rain') creating emotional tension before the guitar solo.",
+      "chords": [
+        "C#m",
+        "G#m",
+        "A",
+        "B"
+      ],
+      "progression": "C#m - G#m - A - B",
+      "notes": [
+        "Ease back on pick velocity for a reflective, moody dynamic",
+        "Let the 4th-fret C#m and G#m barre chords resonate with warm sustain",
+        "Crescendo across the B major barre chord to launch Ian Moss's guitar solo"
+      ],
+      "alphaTab": ":2 (4.5 6.4 6.3 5.2 4.1) :2 (4.6 6.5 6.4 4.3 4.2 4.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (2.5 4.4 4.3 4.2 2.1) |",
+      "exerciseLabel": "Bridge Minor Walkdown"
+    },
+    {
+      "name": "Ian Moss's Iconic Blues-Rock Guitar Solo",
+      "timeStamp": "2:10-2:45",
+      "technique": "Blues-Rock Hybrid Bends & Vocal Phrasing",
+      "key": "E Major / E Minor Pentatonic",
+      "description": "One of the crowning guitar solos of Australian rock history. Ian Moss combines screaming E minor pentatonic bends with sweet E major 3rds (G# at 13th fret), weeping vibrato, and lightning descending blues runs.",
+      "chords": [
+        "E",
+        "A",
+        "B",
+        "C#m"
+      ],
+      "progression": "E - A - B - E - C#m - A - B",
+      "notes": [
+        "Start on the high E and B strings at the 12th fret with lyrical, vocal-like phrasing",
+        "Hit the 13th fret G string (G#) to outline the E major tonic triad sweetly",
+        "Unleash a wide whole-step bend on the 15th fret B string with sustained vibrato",
+        "Cascade down the E minor blues box (15-12 on B, 14-12 on G, 14 on D) into the 12th-fret double-stop resolution"
+      ],
+      "alphaTab": ":8 12.1 14.1 :4 15.2 :8 12.2 15.2 :4 14.3 | :8 13.3 14.3 12.2 15.2 :4 15.1 :4 12.1 | :8 15.2 12.2 14.3 12.3 :4 14.4 :8 12.4 14.4 | :4 (12.2 12.1) :8 14.3 12.3 :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Ian Moss Iconic Guitar Solo"
+    },
+    {
+      "name": "Final Outro Chorus & Climax",
+      "timeStamp": "2:45-3:24",
+      "technique": "High-Register Lead Fills & Power Strumming",
+      "key": "E Major",
+      "description": "Jimmy Barnes delivers maximum vocal intensity while Ian Moss peppers the driving pub rock rhythm with high-register blues fills as the song fades out.",
+      "chords": [
+        "A",
+        "B",
+        "E",
+        "C#m"
+      ],
+      "progression": "A - B - E - C#m (repeating to fade)",
+      "notes": [
+        "Drive the chorus rhythm with confident, full downstrokes",
+        "Sprinkle 12th and 15th fret blues bends between vocal lines",
+        "Lock tight with Prestwich's crashing ride cymbal through the outro fade"
+      ],
+      "alphaTab": ":8 15.1 14.1 12.1 :4 15.2 :8 12.2 14.3 | :4 12.1 :8 15.2 12.2 :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Chorus & Lead Climax"
     }
   ],
   "equipment": {
