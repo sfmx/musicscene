@@ -71,6 +71,14 @@ AlphaTex strings are rendered in the browser via `@coderline/alphatab`. They mus
 - **Durations**: Standard rhythm values if needed (`:8` for eighth note, `:4` for quarter note, `:16` for sixteenth note).
 - **Validation**: Always run `AlphaTexValidator.validate(alphaTexString)` to ensure zero errors.
 
+### Step 3b: Copyright & Fair Dealing Compliance
+All song analyses must strictly comply with [docs/copyright-and-fair-dealing-guidelines.md](file:///c:/Source/musicscene/docs/copyright-and-fair-dealing-guidelines.md) under the Australian *Copyright Act 1968* (Cth) (s 40 Research/Study, s 41 Criticism/Review):
+- **Excerpts Only (1–4 Measures)**: Transcribe only isolated pedagogical snippets demonstrating the key technique or solo phrasing. Never transcribe full commercial scores end-to-end.
+- **Pedagogical Framing**: Always supply an `exerciseLabel` (e.g., *"Double-Stop Bend Study"*, *"Rhythm Shuffle Exercise"*).
+- **No Master Audio**: Never host or stream copyrighted master recordings (MP3/WAV). Only browser-synthesized audio via the Web Audio API is permitted.
+- **Chords & Theory**: Harmonic progressions (`I - IV - V - vi`), scale charts, and theory explanations are public domain and original MusicScene text.
+- **Attribution**: Always acknowledge the original artist, composer, and album.
+
 ### Step 4: Register the Song in `src/lib/songData.ts`
 1. Add the import at the top:
    ```typescript
