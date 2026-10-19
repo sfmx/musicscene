@@ -1,0 +1,299 @@
+{
+  "songInfo": {
+    "title": "Better",
+    "artist": "The Screaming Jets",
+    "album": "All for One",
+    "released": "1991",
+    "genre": "Rock",
+    "tempo": "124 BPM",
+    "duration": "4:38",
+    "key": "E Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E minor",
+      "scalesUsed": [
+        {
+          "scale": "E natural minor (Aeolian)",
+          "notes": "E - F# - G - A - B - C - D - E",
+          "application": "Shapes the dark, heavy four-chord foundation (i - bIII - bVI - bVII) of the verses and chorus"
+        },
+        {
+          "scale": "E minor pentatonic & blues scale",
+          "notes": "E - G - A - Bb - B - D - E",
+          "application": "Powers Jimi Hocking and Grant Walmsley's searing unison bends and iconic intro riff"
+        }
+      ],
+      "modalCharacter": "Gritty Newcastle hard-rock Aeolian aggression charged with high-octane pub-rock anthemic hooks",
+      "keySignature": "1 sharp (F#)",
+      "relativeMinor": "E minor is the relative minor of G major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Em",
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "i - ♭III - ♭VI - ♭VII",
+        "description": "The quintessential minor-key rock anthem progression: grounding the tonic in Em, lifting through G and C, before hammering the D dominant substitute back home."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Riff & Chorus",
+          "progression": "Em - G - C - D",
+          "romanNumerals": "i - ♭III - ♭VI - ♭VII",
+          "description": "Crushing full-gain power chord sprint with ringing unison bends and stadium roar"
+        },
+        {
+          "section": "Verse",
+          "progression": "Em - G - C - D",
+          "romanNumerals": "i - ♭III - ♭VI - ♭VII",
+          "description": "Palm-muted low-E chugging building steady tension beneath Dave Gleeson's gritty vocal narrative"
+        },
+        {
+          "section": "Bridge",
+          "progression": "A - C - D - Em",
+          "romanNumerals": "IV - ♭VI - ♭VII - i",
+          "description": "Major IV chord lift injecting sudden Dorian swagger before plunging back into the chorus"
+        }
+      ],
+      "harmonicFunction": [
+        "Em (i) - Heavy minor tonic anchoring the dark, rebellious rock attitude",
+        "G (♭III) - Relative major chord providing an explosive momentary burst of light",
+        "C (♭VI) - Submediant chord adding poignant emotional weight to the progression",
+        "D (♭VII) - Subtonic chord providing powerful modal drive and resolution back to Em",
+        "A (IV) - Dorian major subdominant introducing swagger and contrast in the bridge"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Palm-Muted Heavy Power Chording & Unison Bends",
+      "description": "Tight right-hand palm muting on the lower strings contrasted with wide screaming unison bends at frets 12 and 15",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E5: 0-2-2-X-X-X",
+          "G5: 3-5-5-X-X-X",
+          "C5: X-3-5-5-X-X",
+          "D5: X-5-7-7-X-X"
+        ],
+        "sequence": [
+          "Rest the heel of the picking hand lightly across the bridge saddles",
+          "Chug steady eighth notes on the low E string with aggressive downstrokes",
+          "Open up into wide, ringing power chords on the chord changes",
+          "Execute whole-step unison bends on strings 2 and 3 at the end of each riff cycle"
+        ],
+        "tips": [
+          "Keep high gain tight by pulling back the amp bass slightly and pushing midrange to 7",
+          "Support your ring finger with middle and index fingers when pushing unison bends",
+          "Hit the crash cymbal hits in unison with the drummer on beat 1"
+        ],
+        "chords": [
+          "Em",
+          "G",
+          "C",
+          "D"
+        ],
+        "progression": "Em - G - C - D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Heavy Riff",
+      "timeStamp": "0:00-0:35",
+      "technique": "Palm-Muted Heavy Power Chording & Unison Bends",
+      "key": "E Minor",
+      "description": "Screaming opening guitar riff and chugging power chords that define 90s Australian pub rock.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - C - D",
+      "notes": [
+        "Heavy palm-muting on the low E pedal note",
+        "Punch the G5 and C5 accents with authoritative downstrokes",
+        "Let the D chord ring before cycling back to Em"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4) :2 (3.6 5.5 5.4) | :2 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Intro Heavy Power Chords"
+    },
+    {
+      "name": "Verse Chug",
+      "timeStamp": "0:35-1:15",
+      "technique": "Tight Palm Muted Rhythm",
+      "key": "E Minor",
+      "description": "Steady, locked-in groove driving the verse forward beneath the vocals.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - C - D",
+      "notes": [
+        "Clean eighth-note palm muting",
+        "Keep the pick close to the strings for minimal wasted motion"
+      ],
+      "alphaTab": ":8 0.6 0.6 0.6 0.6 :4 (3.6 5.5 5.4) | :8 3.5 3.5 3.5 3.5 :4 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Verse Rhythm Chug"
+    },
+    {
+      "name": "Chorus Anthem",
+      "timeStamp": "1:15-1:45",
+      "technique": "Stadium Power Strumming",
+      "key": "E Minor",
+      "description": "Huge singalong chorus with wide-open power chords and aggressive vocal harmonizing.",
+      "chords": [
+        "Em",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "Em - G - C - D",
+      "notes": [
+        "Lift all muting and hit full open power chords",
+        "Strike with aggressive downstrokes on beats 1, 2, 3, and 4"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Chorus Stadium Chords"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard or Gibson SG (humbucker muscle)",
+      "alternatives": [
+        "Fender Stratocaster with bridge humbucker (HSS)",
+        "PRS SE Custom 24",
+        "ESP LTD Eclipse"
+      ],
+      "pickup": "Bridge humbucker for cutting crunch and sustain"
+    },
+    "amp": {
+      "recommended": "Marshall JCM800 2203 or Peavey 5150",
+      "alternatives": [
+        "Mesa/Boogie Dual Rectifier",
+        "Marshall DSL40CR"
+      ],
+      "settings": {
+        "gain": "7 (heavy British rock crunch)",
+        "treble": "6 (crisp pick definition)",
+        "middle": "7 (roaring pub-rock mids)",
+        "bass": "5 (tight palm-muted chug)",
+        "presence": "7 (aggressive lead bite)"
+      }
+    },
+    "effects": {
+      "distortion": "ProCo Rat or Boss SD-1 Overdrive tightening the front end",
+      "reverb": "Subtle room reverb",
+      "other": "Dunlop Cry Baby Wah for the lead solo sections"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Open Chords & Steady Strumming",
+      "steps": [
+        "Learn open Em, G, C, and D chords",
+        "Practice transitions between the four chords at 90 BPM",
+        "Memorize the i - ♭III - ♭VI - ♭VII progression"
+      ],
+      "timeEstimate": "3-5 days",
+      "goals": "Smooth chord changes without stopping the right hand"
+    },
+    "intermediate": {
+      "title": "Palm Muting & Power Chord Speed",
+      "steps": [
+        "Shift to root-5 and root-6 power chords (E5, G5, C5, D5)",
+        "Master the tight palm-muted chug at 124 BPM using our Metronome",
+        "Practice shifting cleanly between frets 0, 3, 5, and 7"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Crushing rhythm tone with zero unwanted string noise"
+    },
+    "advanced": {
+      "title": "Lead Solo & Unison Bending",
+      "steps": [
+        "Learn the soaring unison bends at frets 12 and 15",
+        "Transcribe the high-energy pentatonic wah-wah solo",
+        "Incorporate pinched harmonics on the low strings"
+      ],
+      "timeEstimate": "2 weeks",
+      "goals": "High-octane pub-rock lead performance with commanding stage presence"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Pressing too hard with the palm on the bridge saddles, causing the pitch to go sharp",
+      "Rushing the transition from C5 to D5 in the chorus",
+      "Using too much amplifier bass which creates muddiness when chugging at high volume"
+    ],
+    "practiceRoutine": [
+      "Warm up with 3 minutes of palm-muted 16th-note alternate picking on the low E string",
+      "Practice the intro riff at 100, 115, and 124 BPM",
+      "Play along with the recording focusing on lock-step kick drum synchronization"
+    ],
+    "focusAreas": [
+      "Consistent right-hand palm muting pressure",
+      "Fast, authoritative power chord shifts up and down the neck",
+      "Intonation accuracy on 2nd and 3rd string unison bends"
+    ],
+    "metronomeWork": [
+      "Set click to 105 BPM and practice palm-muted downstroke chugging",
+      "Use our Metronome Speed Trainer (+3 BPM every 4 bars) up to 124 BPM",
+      "Test accuracy by muting audio click for 2 bars and coming back on beat 1"
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-10-19",
+    "featured": true,
+    "decade": "1990s",
+    "iconicRiff": true,
+    "tags": [
+      "pub-rock",
+      "screaming-jets",
+      "hard-rock",
+      "australian-rock",
+      "power-chords",
+      "minor-key",
+      "intermediate",
+      "classic-rock"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Helping Hand",
+        "similarity": "The Screaming Jets' soulful rock ballad driven by acoustic arpeggios and soaring lead climaxes"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Am I Ever Gonna See Your Face Again",
+        "artist": "The Angels",
+        "similarity": "The foundational Australian pub-rock anthem powered by driving downstroke rhythm guitar"
+      },
+      {
+        "title": "Don't Change",
+        "artist": "INXS",
+        "similarity": "High-energy Australian rock classic with unstoppable rhythm guitar drive"
+      }
+    ]
+  }
+}

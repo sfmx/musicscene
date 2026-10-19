@@ -57,6 +57,66 @@ export function playMetronomeTick(
 }
 
 /**
+ * Synthesizes a resonant acoustic woodblock tick.
+ */
+export function playWoodblockTick(
+  ctx: AudioContext,
+  time: number,
+  isDownbeat: boolean = false,
+  volume: number = 0.45
+): void {
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  const filter = ctx.createBiquadFilter();
+
+  osc.type = 'triangle';
+  const freq = isDownbeat ? 1200 : 820;
+  osc.frequency.setValueAtTime(freq, time);
+  osc.frequency.exponentialRampToValueAtTime(freq * 0.7, time + 0.04);
+
+  filter.type = 'bandpass';
+  filter.frequency.setValueAtTime(freq, time);
+  filter.Q.setValueAtTime(6.0, time);
+
+  gain.gain.setValueAtTime(0.0001, time);
+  gain.gain.linearRampToValueAtTime(volume * (isDownbeat ? 1.0 : 0.75), time + 0.001);
+  gain.gain.exponentialRampToValueAtTime(0.0001, time + 0.045);
+
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(ctx.destination);
+
+  osc.start(time);
+  osc.stop(time + 0.05);
+}
+
+/**
+ * Synthesizes an electronic beep metronome click.
+ */
+export function playElectronicBeep(
+  ctx: AudioContext,
+  time: number,
+  isDownbeat: boolean = false,
+  volume: number = 0.4
+): void {
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  osc.type = 'square';
+  osc.frequency.setValueAtTime(isDownbeat ? 2000 : 1000, time);
+
+  gain.gain.setValueAtTime(0.0001, time);
+  gain.gain.linearRampToValueAtTime(volume * 0.6 * (isDownbeat ? 1.0 : 0.7), time + 0.001);
+  gain.gain.exponentialRampToValueAtTime(0.0001, time + 0.03);
+
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+
+  osc.start(time);
+  osc.stop(time + 0.035);
+}
+
+/**
  * Synthesizes a punchy acoustic kick drum.
  */
 export function playKickDrum(ctx: AudioContext, time: number, volume: number = 0.5): void {

@@ -5138,6 +5138,286 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'dont-change': {
+    slug: 'dont-change',
+    songTitle: "Don't Change",
+    artist: 'INXS',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The 50s Doo-Wop Progression Turbocharged with 160 BPM Post-Punk Momentum',
+    emotionalHook: '"Don\'t Change" takes the timeless I - vi - IV - V progression (A - F#m - D - E) and injects it with blistering 160 BPM eighth-note downstroke velocity. The juxtaposition of Michael Hutchence\'s earnest vocal delivery with Tim Farriss\'s shimmering chorus-laden guitar arpeggios transforms a simple ballad sequence into an unstoppable Australian post-punk anthem.',
+    romanProgression: 'I - vi - IV - V (Intro/Chorus) | I - IV - I - IV (Verse)',
+    chords: ['A', 'F#m', 'D', 'E', 'Bm'],
+    progressionExplanation: [
+      'A (I): Uplifting major tonic providing the bright foundation for the stadium fanfare.',
+      'F#m (vi): Relative minor providing brief emotional shadow without breaking forward velocity.',
+      'D (IV): Warm subdominant chord opening up the melodic landscape.',
+      'E (V): Dominant anchor driving inexorably back to the home A major chord.',
+      'Bm (ii): Darker minor pivot in the bridge introducing tension before the chorus return.',
+    ],
+    voiceLeadingInsights: [
+      'The transition between A and F#m retains the C# and A common tones while the bass drops a minor third from A to F#.',
+      'Tim Farriss\'s octave guitar lines trace the major third (C#) resolving to the root (A), cutting cleanly over the rhythm wall.',
+      'Analog chorus modulation (Boss CE-2) thickens the two-guitar attack into a widescreen sonic panorama.',
+    ],
+    guitarPerspective: 'Maintain light, bouncy right-wrist mechanics to play steady eighth notes at 160 BPM without forearm fatigue. Alternate between open grips and 5th-fret barre chords to replicate the studio track\'s layered density.',
+    songwriterTakeaway: 'Tempo and arrangement completely redefine harmonic emotion: take a classic, sentimental progression and play it with punk-rock speed and sparkling modulation to create an unforgettable anthem.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major', slug: 'major', description: 'The life-affirming major scale driving the vocal hooks and lead melodies.' },
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'Underpins the soaring octave lead lines.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright modal framework supporting the euphoric chorus.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open A, D, and E chords forming the harmonic backbone.' },
+        { name: 'Minor Barre Chords', slug: 'minor', description: 'Clean 2nd-fret F#m barre providing emotional gravity.' },
+      ],
+    },
+  },
+
+  'cheap-wine': {
+    slug: 'cheap-wine',
+    songTitle: 'Cheap Wine',
+    artist: 'Cold Chisel',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrid Scales',
+    coreSecret: 'Caribbean Reggae Upbeat Chops Fused with Driving Pub-Rock Chorus Dynamics',
+    emotionalHook: 'Cold Chisel\'s "Cheap Wine" subverts traditional pub-rock expectations by using staccato reggae-style skanks on the upbeats of beats 2 and 4 during the verse. When the chorus arrives, the band unleashes full-bore Australian pub-rock power chords on IV - V - I - vi (A - B - E - C#m), delivering an irresistible emotional release that captures the gritty glamour of suburban Australian bohemian life.',
+    romanProgression: 'I - IV - V - I (Verse) | IV - V - I - vi - IV - V - I (Chorus)',
+    chords: ['E', 'A', 'B', 'C#m', 'G#m'],
+    progressionExplanation: [
+      'E (I): Relaxed coastal tonic chord establishing the laid-back reggae skank.',
+      'A (IV): Subdominant chord initiating the uplifting chorus ascent.',
+      'B (V): Dominant engine driving relentlessly forward with classic rock energy.',
+      'C#m (vi): Relative minor chord introducing bittersweet nostalgia on "three day growth".',
+      'G#m (iii): Stepping-stone minor harmony deepening the introspective bridge.',
+    ],
+    voiceLeadingInsights: [
+      'Ian Moss plays high triad inversions on strings 1, 2, and 3 during the verses, keeping the sonic space open for Don Walker\'s Wurlitzer electric piano.',
+      'The chorus opens on the subdominant A major rather than the tonic, giving the hook an immediate sense of forward flight.',
+      'Moss\'s guitar solo weaves seamlessly between E minor pentatonic blues bends and bright E major 3rd (G#) chord tones.',
+    ],
+    guitarPerspective: 'Execute clean fret-hand muting by relaxing finger pressure immediately after striking each upbeat chord. Dig in with confident, wide downward strums on the chorus.',
+    songwriterTakeaway: 'Pairing two contrasting genres—a relaxed, syncopated reggae verse with a driving, open-throated rock chorus—creates massive dynamic range and ensures your hook hits twice as hard.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Major', slug: 'major', description: 'The radiant major scale foundation for the anthemic chorus.' },
+        { name: 'E Minor Blues Scale', slug: 'blues', description: 'The source of Ian Moss\'s trademark stinging blues-rock guitar solo inflections.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The bright harmonic system underpinning the main progression.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open E, A, and B chords providing classic rock punch.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'C#m relative minor turnaround adding emotional complexity.' },
+      ],
+    },
+  },
+
+  'better': {
+    slug: 'better',
+    songTitle: 'Better',
+    artist: 'The Screaming Jets',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Aeolian Four-Chord Powerhouse with a Dorian IV Chord Lift',
+    emotionalHook: '"Better" is built on the unstoppable natural minor powerhouse progression: i - ♭III - ♭VI - ♭VII (Em - G - C - D). What elevates the song above standard 90s hard rock is the surprise appearance of a bright major IV chord (A major) in the bridge, which temporarily shifts the tonal center from dark Aeolian into swaggering Dorian before plunging back into the furious singalong chorus.',
+    romanProgression: 'i - ♭III - ♭VI - ♭VII (Verse/Chorus) | IV - ♭VI - ♭VII - i (Bridge)',
+    chords: ['Em', 'G', 'C', 'D', 'A'],
+    progressionExplanation: [
+      'Em (i): Crushing minor tonic establishing the heavy Newcastle pub-rock grit.',
+      'G (♭III): Relative major providing an explosive momentary burst of light.',
+      'C (♭VI): Submediant chord adding poignant emotional weight and urgency.',
+      'D (♭VII): Subtonic chord providing powerful modal drive and clean turnaround back to Em.',
+      'A (IV): Dorian major subdominant introducing unexpected swagger and brightness in the bridge.',
+    ],
+    voiceLeadingInsights: [
+      'The bass notes descend and ascend in powerful whole and half steps (E → G → C → D) locking with aggressive kick drum accents.',
+      'The unison guitar bends at frets 12 and 15 exploit the natural harmonic tension between the minor 3rd and major 2nd.',
+      'Palm-muting the low E string while letting the fifths and octaves ring gives the riff immense low-end weight without muddiness.',
+    ],
+    guitarPerspective: 'Lock your palm muting right against the bridge saddles for a tight, percussive chug. On the chorus, lift your palm and hit full open power chords with aggressive downward pick strokes.',
+    songwriterTakeaway: 'The i - ♭III - ♭VI - ♭VII progression is an infallible vehicle for raw rock emotion. To keep it fresh, introduce a borrowed major IV chord in your bridge to shock the listener\'s ear with modal brightness.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Natural Minor (Aeolian)', slug: 'minor', description: 'The foundational minor scale supplying all four core chords.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'The driving scale for the intro riffs and searing wah-wah solo.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark, dramatic natural minor mode of the verse and chorus.' },
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The source of the major IV (A major) chord lift in the bridge.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Root-5th power chord grips providing high-gain crunch and clarity.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'The dark Em tonic anchoring the track.' },
+      ],
+    },
+  },
+
+  'reckless': {
+    slug: 'reckless',
+    songTitle: 'Reckless',
+    artist: 'Australian Crawl',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Pedal Tone & Drone Mastery',
+    coreSecret: 'Anchored High Drone Strings Transforming Simple Chords into Coastal Atmospheres',
+    emotionalHook: 'The hypnotic coastal beauty of "Reckless" relies on anchoring the 3rd and 4th fingers on the 3rd fret of the high E and B strings (ringing D and G notes). This creates continuous pedal-point drone resonances across G, Cadd9, Em7, and Dsus4, giving James Reyne\'s distinctive vocals an evocative, sun-drenched maritime backdrop before the emotional "jetty" chorus singalong.',
+    romanProgression: 'I - IV - I - IV (Verse) | vi - IV - I - V (Chorus)',
+    chords: ['G', 'Cadd9', 'Em7', 'Dsus4', 'Am'],
+    progressionExplanation: [
+      'G (I): Warm acoustic foundation echoing the Mornington Peninsula coastline.',
+      'Cadd9 (IV): Shimmering subdominant chord rocking gently against the G tonic.',
+      'Em7 (vi): Relative minor chord introducing sudden melancholy in the chorus.',
+      'Dsus4 (V): Suspended dominant resolving cleanly at the end of each chorus phrase.',
+      'Am (ii): Pensive minor chord providing a reflective detour in the bridge.',
+    ],
+    voiceLeadingInsights: [
+      'The high D (3rd fret, string 2) and high G (3rd fret, string 1) remain perfectly static while the bass notes move beneath them (G → C → E → D).',
+      'This stationary upper register acts as an acoustic drone, smoothing out transitions and creating rich add9 and sus2 harmonic colors.',
+      'Simon Binks\'s electric guitar uses lush analog stereo chorus to evoke the shimmer of sunlight off coastal waves.',
+    ],
+    guitarPerspective: 'Keep your ring and pinky fingers glued to the 3rd fret on strings 1 and 2 throughout the entire progression. Strum with a light, flexible pick (0.60mm) to achieve a smooth, airy acoustic wash.',
+    songwriterTakeaway: 'Anchoring static high drone notes across all chords in a progression binds otherwise ordinary changes into a unified, signature atmospheric soundscape.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Major', slug: 'major', description: 'The diatonic source of the warm coastal acoustic chords.' },
+        { name: 'E Minor Pentatonic', slug: 'minor-pentatonic', description: 'Shapes Simon Binks\'s melodic, weeping electric guitar fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The sunny, relaxed major mode defining the song\'s verses.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Ringing open-position chord shapes with anchored pedal points.' },
+        { name: 'Suspended Chords', slug: 'sus4', description: 'Dsus4 and Cadd9 adding lush modern acoustic coloration.' },
+      ],
+    },
+  },
+
+  'eagle-rock': {
+    slug: 'eagle-rock',
+    songTitle: 'Eagle Rock',
+    artist: 'Daddy Cool',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrid Scales',
+    coreSecret: 'The 1950s Jump-Blues Boogie Shuffle with Chuck Berry Double-Stops',
+    emotionalHook: '"Eagle Rock" is the granddaddy of Australian pub rock. Built on a classic swinging 12-bar blues shuffle in A major, Ross Wilson and Ross Hannaford took 1950s jump-blues piano boogie patterns (alternating root-5th, root-6th, and root-7th intervals) and translated them onto electric guitars with driving pick snap, creating a national party anthem so contagious it famously inspired Elton John to write "Crocodile Rock".',
+    romanProgression: 'I - IV - I - V - IV - I (12-Bar Boogie Shuffle)',
+    chords: ['A', 'D', 'E', 'A7', 'D7', 'E7'],
+    progressionExplanation: [
+      'A (I): The driving boogie tonic establishing the irresistible dance groove.',
+      'D (IV): Subdominant blues lift on bar 5 providing buoyant energy.',
+      'E (V): Dominant turnaround building peak excitement before resolving home.',
+      'A7 (I7): Dominant 7th color note (G natural) injecting authentic jump-blues swagger.',
+    ],
+    voiceLeadingInsights: [
+      'The left hand stretches from the 2nd fret to the 4th and 5th frets on the lower strings, mimicking the walking boogie basslines of classic R&B.',
+      'Ross Hannaford\'s guitar fills feature Chuck Berry sliding double-stops across strings 1 and 2 at the 5th fret.',
+      'Slapback tape delay (120ms) creates an acoustic slap that makes the rhythm section sound twice as large.',
+    ],
+    guitarPerspective: 'Lock your wrist into a swinging eighth-note groove with slight palm muting on the lower strings. Keep your thumb centered behind the neck to ease the pinky fret-4 reach.',
+    songwriterTakeaway: 'Great rock-and-roll grooves are eternal: adapt classic boogie-woogie piano patterns onto the electric guitar with authentic swing and a hooky vocal call-and-response.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'Supplies the bright, playful melodies and vocal hooks.' },
+        { name: 'A Blues Scale', slug: 'blues', description: 'Provides the gritty Chuck Berry sliding double-stops.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The dominant-7th major mode underpinning the 12-bar blues progression.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'A7, D7, and E7 chords giving the track its R&B edge.' },
+        { name: 'Power Chords', slug: 'power-chords', description: 'A5 and A6 shuffle grips forming the core boogie engine.' },
+      ],
+    },
+  },
+
+  'these-days': {
+    slug: 'these-days',
+    songTitle: 'These Days',
+    artist: 'Powderfinger',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Pedal Tone & Drone Mastery',
+    coreSecret: 'Sustained High D and A Pedal Drone Tones Over Shifting Bass Roots',
+    emotionalHook: '"These Days" achieves its bittersweet, wistful atmosphere by sustaining high D and A pedal drone notes on the top two strings (3rd fret) while Bernard Fanning\'s fingerpicked acoustic bass line steps between D, G, Bm, and A. The constant drone creates delicate add9 and sus2 colors that keep the music floating, turning an understated acoustic ballad into an iconic generational anthem.',
+    romanProgression: 'I - IV - I - IV (Verse) | vi - IV - I - V (Chorus)',
+    chords: ['D', 'G', 'Bm', 'A', 'Em'],
+    progressionExplanation: [
+      'D (I): Warm, comforting tonic chord providing a sense of home and acceptance.',
+      'G (IV): Subdominant chord creating a gentle, swaying acoustic motion.',
+      'Bm (vi): Relative minor introducing vulnerability and reflection on "It\'s coming round again".',
+      'A (V): Dominant chord resolving the chorus phrase with poignant tenderness.',
+      'Em (ii): Minor stepping-stone in the bridge deepening the emotional reflection.',
+    ],
+    voiceLeadingInsights: [
+      'The high D (string 2, fret 3) rings uninterrupted through the entire verse, serving as the 1st degree in D, the 5th degree in G, and the minor 3rd in Bm.',
+      'This multi-functional pedal tone ties the changing chords together with cinematic continuity.',
+      'Ian Haug\'s soaring electric lead guitar mirrors the vocal phrasing with singing, lyrical vibrato and warm overdrive.',
+    ],
+    guitarPerspective: 'Keep the picking hand relaxed at 84 BPM, letting the thumb handle bass notes cleanly while fingers pluck the upper drone strings. Transition smoothly into full-bodied strumming for the chorus.',
+    songwriterTakeaway: 'A static high pedal note alters the emotional character of every chord beneath it: try holding your top two strings static while moving common bass chords for instant cinematic gravitas.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major', slug: 'major', description: 'The diatonic foundation for the bittersweet acoustic progression.' },
+        { name: 'B Minor Pentatonic', slug: 'minor-pentatonic', description: 'Shapes Ian Haug\'s expressive, vocal-like electric guitar fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The major mode giving the verses their gentle, melancholic warmth.' },
+      ],
+      chords: [
+        { name: 'Open Chords', slug: 'major', description: 'Open D, G, and A chords voiced with high drone extensions.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'The emotional Bm relative minor anchoring the chorus hook.' },
+      ],
+    },
+  },
+
+  'holy-grail': {
+    slug: 'holy-grail',
+    songTitle: 'Holy Grail',
+    artist: 'Hunters & Collectors',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Archetypal Four-Chord Hero\'s Journey Built with Unwavering Sincerity',
+    emotionalHook: '"Holy Grail" uses the universal I - V - vi - IV progression (C - G - Am - F), but Mark Seymour elevates it from a pop cliche into an epic Australian sporting and cultural myth. Starting with an intimate, unadorned acoustic strum, the song steadily builds dynamic momentum until the brass section and distorted guitars erupt in a stadium singalong that embodies the Australian spirit of heroic perseverance against impossible odds.',
+    romanProgression: 'I - V - vi - IV (Verse & Chorus) | ii - IV - I - V (Bridge)',
+    chords: ['C', 'G', 'Am', 'F', 'Dm'],
+    progressionExplanation: [
+      'C (I): The triumphant tonic representing the start of the heroic quest.',
+      'G (V): Dominant chord driving the narrative forward with urgency.',
+      'Am (vi): Relative minor reflecting hardship, loss, and endurance in the battlefield of life.',
+      'F (IV): Majestic subdominant chord delivering the uplifting, triumphant resolution.',
+      'Dm (ii): Supertonic minor introducing contrast during the reflective bridge.',
+    ],
+    voiceLeadingInsights: [
+      'The bass line creates a strong scalar descent and ascent (C → B in G → A in Am → F), outlining the harmonic drama under the vocal line.',
+      'The electric guitars reinforce the brass fanfare with ringing octave melodies and percussive pick attacks.',
+      'The dynamics progress in a clean crescendo from acoustic whisper to roaring full-band anthem.',
+    ],
+    guitarPerspective: 'Control your strumming volume carefully: play the verses softly near the soundhole, then unleash full-arm strumming sweeps across all 6 strings when the chorus detonates.',
+    songwriterTakeaway: 'The simplest four-chord progression can feel earth-shattering if your arrangement commits 100% to a grand narrative arc, building unhurriedly from vulnerability to triumph.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major', slug: 'major', description: 'The pure, unadorned major scale driving the heroic anthemic melodies.' },
+        { name: 'A Natural Minor', slug: 'minor', description: 'Provides the poignant relative minor shading in the verses.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The uplifting major modal scale underpinning the triumphant chorus.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open C, G, and F chords delivering stadium-sized resonance.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Am and Dm chords providing narrative contrast and emotional depth.' },
+      ],
+    },
+  },
 };
 
 /**

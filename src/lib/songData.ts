@@ -212,6 +212,13 @@ import gimmeHeadData from '@/data/songs/gimme-head.json';
 import cominHomeData from '@/data/songs/comin-home.json';
 import seventeenIWishIWasData from '@/data/songs/17-i-wish-i-was.json';
 import runToParadiseData from '@/data/songs/run-to-paradise.json';
+import dontChangeData from '@/data/songs/dont-change.json';
+import cheapWineData from '@/data/songs/cheap-wine.json';
+import betterData from '@/data/songs/better.json';
+import recklessData from '@/data/songs/reckless.json';
+import eagleRockData from '@/data/songs/eagle-rock.json';
+import theseDaysData from '@/data/songs/these-days.json';
+import holyGrailData from '@/data/songs/holy-grail.json';
 
 export interface SongData {
   songInfo: {
@@ -642,6 +649,13 @@ const songDatabase: Record<string, SongData> = {
   'comin-home': cominHomeData as SongData,
   '17-i-wish-i-was': seventeenIWishIWasData as SongData,
   'run-to-paradise': runToParadiseData as SongData,
+  'dont-change': dontChangeData as SongData,
+  'cheap-wine': cheapWineData as SongData,
+  'better': betterData as SongData,
+  'reckless': recklessData as SongData,
+  'eagle-rock': eagleRockData as SongData,
+  'these-days': theseDaysData as SongData,
+  'holy-grail': holyGrailData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

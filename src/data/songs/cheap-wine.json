@@ -1,0 +1,282 @@
+{
+  "songInfo": {
+    "title": "Cheap Wine",
+    "artist": "Cold Chisel",
+    "album": "East",
+    "released": "1980",
+    "genre": "Rock",
+    "tempo": "118 BPM",
+    "duration": "3:24",
+    "key": "E Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "E major",
+      "scalesUsed": [
+        {
+          "scale": "E major (Ionian)",
+          "notes": "E - F# - G# - A - B - C# - D# - E",
+          "application": "Drives the uplifting, sun-drenched coastal chords of the chorus"
+        },
+        {
+          "scale": "E minor blues scale",
+          "notes": "E - G - A - Bb - B - D - E",
+          "application": "Ian Moss's trademark stinging blues-rock grit injected over the E major chords"
+        }
+      ],
+      "modalCharacter": "Aussie pub-rock meets Caribbean reggae skank in E major, punctuated by gritty blues-rock soloing",
+      "keySignature": "4 sharps (F#, C#, G#, D#)",
+      "relativeMinor": "C# minor is the relative minor of E major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "E",
+          "A",
+          "B",
+          "C#m"
+        ],
+        "progression": "I - IV - V - vi",
+        "description": "Bouncy reggae-influenced upbeat stabs during the verse that explode into an irresistible Australian pub-rock singalong chorus."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "E - A - B - E",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Staccato upbeat reggae chops on beats 2 and 4 with tight fret-hand dampening"
+        },
+        {
+          "section": "Chorus",
+          "progression": "A - B - E - C#m - A - B - E",
+          "romanNumerals": "IV - V - I - vi - IV - V - I",
+          "description": "Immortal pub anthem hook ('Cheap wine and a three day growth') shifting from subdominant IV straight to dominant V"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C#m - G#m - A - B",
+          "romanNumerals": "vi - iii - IV - V",
+          "description": "Minor introspective breakdown building tension ahead of the guitar solo"
+        }
+      ],
+      "harmonicFunction": [
+        "E (I) - Warm major tonic providing stability and relaxed coastal groove",
+        "A (IV) - Subdominant chord initiating the uplifting chorus ascent",
+        "B (V) - Driving dominant engine providing relentless forward resolution",
+        "C#m (vi) - Relative minor adding bitter-sweet emotional depth to the chorus turnaround",
+        "G#m (iii) - Mediant minor chord creating a classic stepping-stone in the bridge"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Staccato Reggae Skank & Upbeat Chops",
+      "description": "Crisp upbeat chord stabs on beats 2 and 4 using quick fret-hand release for percussive chop dynamics",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "E: X-7-9-9-9-7 or 0-2-2-1-0-0",
+          "A: 5-7-7-6-5-5 or X-0-2-2-2-0",
+          "B: 7-9-9-8-7-7 or X-2-4-4-4-2",
+          "C#m: X-4-6-6-5-4"
+        ],
+        "sequence": [
+          "Strike the top 3-4 strings cleanly on the upbeat (& of 1, & of 2, etc.)",
+          "Instantly release finger pressure to choke the chord sustain",
+          "Transition into driving downstrokes when Jimmy Barnes enters on the chorus"
+        ],
+        "tips": [
+          "Use a Fender Stratocaster in the middle or neck/middle pickup position for authentic hollow quack",
+          "Keep the right wrist relaxed and bouncing continuously in 16th notes",
+          "Add slight palm muting to the bass strings between chops"
+        ],
+        "chords": [
+          "E",
+          "A",
+          "B",
+          "C#m"
+        ],
+        "progression": "E - A - B - E"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Verse Upbeat Groove",
+      "timeStamp": "0:00-0:40",
+      "technique": "Staccato Reggae Skank & Upbeat Chops",
+      "key": "E Major",
+      "description": "Ian Moss's light-fingered reggae groove accompanying Don Walker's Wurlitzer piano.",
+      "chords": [
+        "E",
+        "A",
+        "B",
+        "E"
+      ],
+      "progression": "E - A - B - E",
+      "notes": [
+        "Choke the strings immediately after striking",
+        "Focus on the treble triad on strings 1, 2, and 3",
+        "Lock strictly with Steve Prestwich's snare rim click"
+      ],
+      "alphaTab": ":4 (0.6 2.5 2.4 1.3 0.2 0.1) :4 (0.5 2.4 2.3 2.2 0.1) | :4 (2.5 4.4 4.3 4.2 2.1) :4 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Reggae Skank"
+    },
+    {
+      "name": "Chorus Anthem",
+      "timeStamp": "0:40-1:10",
+      "technique": "Driving Pub-Rock Downstrokes",
+      "key": "E Major",
+      "description": "Full band explosion into the legendary 'Cheap wine and a three day growth' chorus.",
+      "chords": [
+        "A",
+        "B",
+        "E",
+        "C#m"
+      ],
+      "progression": "A - B - E - C#m - A - B - E",
+      "notes": [
+        "Switch from staccato skanks to wide, resonant power strums",
+        "Emphasize the clean slide into the C#m barre chord at fret 4"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (2.5 4.4 4.3 4.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (4.5 6.4 6.3 5.2 4.1) |",
+      "exerciseLabel": "Chorus Power Hook"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster (Ian Moss signature setup)",
+      "alternatives": [
+        "Fender Telecaster",
+        "Gibson Les Paul Standard",
+        "Maton Mastersound MS500"
+      ],
+      "pickup": "Middle pickup or neck/middle in-between quack position"
+    },
+    "amp": {
+      "recommended": "Marshall JMP 50W or Fender Twin Reverb",
+      "alternatives": [
+        "Fender Bassman",
+        "Vox AC30"
+      ],
+      "settings": {
+        "gain": "5 (edge of breakup crunch)",
+        "treble": "7 (bright reggae skank quack)",
+        "middle": "6 (punchy Stratocaster body)",
+        "bass": "5 (tight rhythmic bass)",
+        "presence": "6 (cutting solo clarity)"
+      }
+    },
+    "effects": {
+      "distortion": "Ibanez TS808 Tube Screamer for transparent mid-hump solo boost",
+      "reverb": "Spring reverb set to moderate wash",
+      "other": "MXR Phase 90 or subtle analog chorus for verse movement"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Mastering the Open Chords",
+      "steps": [
+        "Learn open E, A, and B7 (or B barre) chord changes cleanly",
+        "Practice steady quarter-note strums along with the chorus",
+        "Memorize the IV - V - I - vi chorus sequence"
+      ],
+      "timeEstimate": "3-5 days",
+      "goals": "Seamless transitions between E, A, B, and C#m"
+    },
+    "intermediate": {
+      "title": "Reggae Skank Dynamics & Upbeat Timing",
+      "steps": [
+        "Practice fret-hand muting on the offbeats of beats 2 and 4",
+        "Coordinate with a metronome at 118 BPM using the 8th-note subdivision",
+        "Play full verse-to-chorus dynamic transitions without dropping beats"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Tight, authentic funk-reggae pocket on the verses"
+    },
+    "advanced": {
+      "title": "Ian Moss Lead Fills & Soloing",
+      "steps": [
+        "Transcribe Ian Moss's soaring blues-rock solo in E minor pentatonic",
+        "Master the expressive whole-step bends at the 12th and 14th frets",
+        "Blend major 3rd (G#) sweet notes with minor 3rd (G) blues bends"
+      ],
+      "timeEstimate": "2 weeks",
+      "goals": "Full lead guitar mastery with vocal-like phrasing and sustain"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the verse upbeat chords ring out too long instead of choking them immediately",
+      "Rushing the tempo during the transition from the quiet bridge into the final chorus",
+      "Over-bending the G note on string 2 (15th fret) during the solo fills"
+    ],
+    "practiceRoutine": [
+      "Practice 5 minutes of fret-hand muting with a metronome set to 118 BPM",
+      "Loop the chorus progression (A - B - E - C#m) focusing on smooth barre chord shifts",
+      "Jam over the E major backing track with E minor blues scale double-stops"
+    ],
+    "focusAreas": [
+      "Percussive fret-hand relaxation for clean reggae skank",
+      "Dynamic contrast between low-volume verse and roaring chorus",
+      "Expressive finger vibrato on sustained lead notes"
+    ],
+    "metronomeWork": [
+      "Set click to 90 BPM to nail the upbeat skank pocket cleanly",
+      "Ramp up to 118 BPM using the Speed Trainer tool in +3 BPM steps",
+      "Practice with clicks only on beats 2 and 4 to build authentic reggae feel"
+    ]
+  },
+  "metadata": {
+    "popularity": 97,
+    "dateAdded": "2026-10-19",
+    "featured": true,
+    "decade": "1980s",
+    "iconicRiff": true,
+    "tags": [
+      "pub-rock",
+      "cold-chisel",
+      "australian-rock",
+      "classic-rock",
+      "reggae-rock",
+      "ian-moss",
+      "intermediate",
+      "major-key"
+    ],
+    "learningValue": "High",
+    "estimatedLearningTime": "1-2 weeks"
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Khe Sanh",
+        "similarity": "Cold Chisel's timeless Australian heartland anthem built on rolling country-rock storytelling"
+      },
+      {
+        "title": "Bow River",
+        "similarity": "Ian Moss's epic blues-rock showcase driven by heavy shuffle grooves and soaring solos"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Message in a Bottle",
+        "artist": "The Police",
+        "similarity": "Shares the staccato upbeat reggae-rock rhythm and 9th chord arpeggiations"
+      },
+      {
+        "title": "Eagle Rock",
+        "artist": "Daddy Cool",
+        "similarity": "Classic Australian party rock anthem driven by bouncy syncopated rhythm grooves"
+      }
+    ]
+  }
+}

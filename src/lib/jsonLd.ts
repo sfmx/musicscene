@@ -182,3 +182,29 @@ export function getFAQPageJsonLd(opts: FAQPageOpts) {
   };
 }
 
+export interface WebApplicationOpts {
+  name: string;
+  description: string;
+  url: string;
+  applicationCategory?: string;
+  operatingSystem?: string;
+}
+
+export function getWebApplicationJsonLd(opts: WebApplicationOpts) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: opts.name,
+    url: opts.url.startsWith('http') ? opts.url : `${SITE_CONFIG.baseUrl}${opts.url}`,
+    applicationCategory: opts.applicationCategory || 'MultimediaApplication',
+    operatingSystem: opts.operatingSystem || 'All',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    description: opts.description,
+  };
+}
+
+

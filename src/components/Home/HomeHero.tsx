@@ -39,7 +39,7 @@ export default function HomeHero() {
               Tabs tell you <strong className="text-slate-900 dark:text-white font-semibold">where</strong> to put your fingers, but never <strong className="text-slate-900 dark:text-white font-semibold">why</strong> it works. Textbooks drown you in abstract notation that never touches your fretboard.
             </p>
             <p className="text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 210+ iconic songs section-by-section, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
+              <strong className="text-amber-600 dark:text-amber-400">MusicScene bridges the gap:</strong> We deconstruct 220+ iconic songs section-by-section, reveal the harmonic secrets behind every chord progression, and equip you with interactive tools to master the fretboard.
             </p>
 
             {/* Action Buttons */}
@@ -49,7 +49,7 @@ export default function HomeHero() {
                 className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-base"
               >
                 <span>🎸</span>
-                <span>Explore 210+ Song Analyses</span>
+                <span>Explore 220+ Song Analyses</span>
               </a>
               <a
                 href="#interactive-tools"
@@ -65,10 +65,10 @@ export default function HomeHero() {
               <Link
                 href="/lessons/songs"
                 className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-amber-500/50 dark:hover:border-amber-400/50 hover:bg-amber-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
-                title="Browse all 210+ song breakdowns and harmonic analyses"
+                title="Browse all 220+ song breakdowns and harmonic analyses"
               >
                 <div className="flex items-center justify-between">
-                  <div className="text-2xl font-black text-amber-500 dark:text-amber-400 group-hover:scale-105 transition-transform origin-left">210+</div>
+                  <div className="text-2xl font-black text-amber-500 dark:text-amber-400 group-hover:scale-105 transition-transform origin-left">220+</div>
                   <span className="text-xs text-transparent group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">&rarr;</span>
                 </div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Song Breakdowns</div>
@@ -77,10 +77,10 @@ export default function HomeHero() {
               <Link
                 href="/lessons/practice"
                 className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-blue-500/50 dark:hover:border-blue-400/50 hover:bg-blue-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
-                title="Open interactive audio tools: Circle of Fifths, CAGED, Fretboard Trainer, Ear Trainer, and Jam Player"
+                title="Open interactive audio tools: Metronome & Speed Trainer, Guitar Tuner, Circle of Fifths, CAGED, Fretboard Trainer, Ear Trainer, and Jam Player"
               >
                 <div className="flex items-center justify-between">
-                  <div className="text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:scale-105 transition-transform origin-left">5</div>
+                  <div className="text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:scale-105 transition-transform origin-left">7</div>
                   <span className="text-xs text-transparent group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">&rarr;</span>
                 </div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Interactive Audio Tools</div>

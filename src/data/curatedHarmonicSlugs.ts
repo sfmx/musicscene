@@ -133,6 +133,13 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'comin-home',
   '17-i-wish-i-was',
   'run-to-paradise',
+  'dont-change',
+  'cheap-wine',
+  'better',
+  'reckless',
+  'eagle-rock',
+  'these-days',
+  'holy-grail',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

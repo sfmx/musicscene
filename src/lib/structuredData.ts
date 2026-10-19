@@ -4,6 +4,7 @@ import {
   getHowToJsonLd,
   getFAQPageJsonLd,
   getMusicCompositionJsonLd,
+  getWebApplicationJsonLd,
   HowToStepItem,
   FAQItem,
 } from './jsonLd';
@@ -509,3 +510,16 @@ export function getSongPageJsonLd(songData: SongData, songSlug: string): object[
 
   return [composition, article, faqPage];
 }
+
+// ---------------------------------------------------------------------------
+// 7. Interactive Practice Tool Structured Data (WebApplication)
+// ---------------------------------------------------------------------------
+export function getPracticeToolJsonLd(opts: {
+  name: string;
+  description: string;
+  url: string;
+  applicationCategory?: string;
+}) {
+  return getWebApplicationJsonLd(opts);
+}
+

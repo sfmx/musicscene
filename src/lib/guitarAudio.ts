@@ -47,20 +47,15 @@ export interface PlayNoteOptions {
 }
 
 /**
- * Synthesizes a single plucked guitar string note with realistic body resonance and overtones.
+ * Synthesizes a guitar tone at any custom frequency (Hz) with realistic acoustic body resonance.
  */
-export function playGuitarNote(
-  stringIndex: number,
-  fret: number,
+export function playGuitarFrequency(
+  freq: number,
   options: PlayNoteOptions = {}
 ): void {
-  if (fret < 0) return; // Muted string
-
+  if (freq <= 0) return;
   const ctx = getGuitarAudioContext();
   if (!ctx) return;
-
-  const freq = getGuitarFrequency(stringIndex, fret);
-  if (freq <= 0) return;
 
   const duration = options.duration ?? 1.8;
   const volume = Math.min(1, Math.max(0.01, options.volume ?? 0.3));
@@ -107,9 +102,22 @@ export function playGuitarNote(
 
     harmonicOsc.start(startTime);
     harmonicOsc.stop(startTime + Math.min(duration, 0.75));
-  } catch (e) {
+  } catch {
     // Graceful fallback if audio context has issues
   }
+}
+
+/**
+ * Synthesizes a single plucked guitar string note with realistic body resonance and overtones.
+ */
+export function playGuitarNote(
+  stringIndex: number,
+  fret: number,
+  options: PlayNoteOptions = {}
+): void {
+  if (fret < 0) return; // Muted string
+  const freq = getGuitarFrequency(stringIndex, fret);
+  playGuitarFrequency(freq, options);
 }
 
 export interface StrumOptions {
