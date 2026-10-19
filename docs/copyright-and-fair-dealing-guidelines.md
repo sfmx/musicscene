@@ -67,3 +67,4 @@ Every contributor or automated workflow creating song analyses on MusicScene mus
 5. **Clear Attribution & Terms of Service**:
    - Always credit the composer and artist.
    - Maintain the Fair Dealing disclaimer in the site's [Terms of Service](/terms-of-service).
+

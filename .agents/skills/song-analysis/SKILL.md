@@ -32,7 +32,39 @@ Every song analysis consists of four tightly integrated components:
 
 ---
 
-## 2. Step-by-Step Song Creation Workflow
+## 2. The Gold Standard Quality Criteria
+
+To maintain MusicScene's reputation as the highest-quality guitar analysis platform, **every song analysis must meet the Gold Standard tier**. Sparse 2-to-3 section stubs are strictly prohibited.
+
+### Gold Standard Checklist:
+1. **5 to 7 Comprehensive Song Sections**:
+   - Every song must cover the complete structural arc:
+     - *Intro Riff / Opening Chime / Signature Hook*
+     - *Verse Rhythm & Strumming/Picking Mechanics*
+     - *Pre-Chorus Lift / Tension Build* (where present in the song)
+     - *Chorus Stadium Hook / Main Progression*
+     - *Bridge Detour / Key Shift / Introspective Breakdown*
+     - *Signature Guitar Solo / Instrumental Lead Break / Melodic Fanfare* (mandatory for all lead guitar tracks)
+     - *Outro Climax / Solo Jam / Dynamic Resolution*
+2. **Full Solo & Lead Transcriptions**:
+   - Transcribe the signature guitar solo or lead break in valid, rhythmic AlphaTex notation.
+   - Include note-by-note phrasing, whole-step/half-step bends, double stops, vibrato, scale choices, and pickup selections.
+3. **At Least 2 Distinct Guitar Techniques**:
+   - Minimum of 2 techniques: one rhythm/groove foundation and one signature lead/embellishment.
+   - Each technique must contain actionable `notes`, step-by-step `sequence`, and practical `tips` for pick-hand and fret-hand ergonomics.
+4. **Valid AlphaTex on Every Section with `exerciseLabel`**:
+   - Every section must have a playable, validated AlphaTex (`alphaTab`) snippet (1–4 bars).
+   - Every section must have a descriptive, student-facing `exerciseLabel` (e.g., *"Boogie Shuffle Exercise"*, *"Blistering Wah Solo Study"*).
+5. **Amp Settings Object**:
+   - `amp.settings` must strictly be an object with string keys: `{ "gain": "...", "treble": "...", "middle": "...", "bass": "...", "presence": "..." }`.
+6. **Harmonic Secret Entry (`src/data/whySongsWork.ts`)**:
+   - Curated analysis explaining why the composition works harmonically (modal mixture, Mixolydian drive, descending bassline, etc.).
+7. **Fair Dealing / Copyright Compliance**:
+   - Strictly 1–4 bar instructional excerpts, exercise framing, zero master audio recordings.
+
+---
+
+## 3. Step-by-Step Song Creation Workflow
 
 ### Step 1: Research Musical Specifications
 Before generating content, verify:
@@ -119,7 +151,7 @@ Add an entry in `CURATED_HARMONIC_SECRETS`:
 
 ---
 
-## 3. Verification & Publishing Checklist
+## 4. Verification & Publishing Checklist
 
 Always execute this verification pipeline before committing or deploying:
 
