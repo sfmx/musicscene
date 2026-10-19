@@ -60,24 +60,55 @@ export default function HomeHero() {
               </a>
             </div>
 
-            {/* Trust / Metric Badges */}
+            {/* Trust / Metric Badges (Clickable) */}
             <div className="pt-4 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
-              <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-amber-500 dark:text-amber-400">210+</div>
-                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Song Breakdowns</div>
-              </div>
-              <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-blue-600 dark:text-blue-400">5</div>
-                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Interactive Audio Tools</div>
-              </div>
-              <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-emerald-600 dark:text-emerald-400">100%</div>
-                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Free Fretboard PDF</div>
-              </div>
-              <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-purple-600 dark:text-purple-400">400+</div>
-                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Theory & Gear Guides</div>
-              </div>
+              <Link
+                href="/lessons/songs"
+                className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-amber-500/50 dark:hover:border-amber-400/50 hover:bg-amber-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
+                title="Browse all 210+ song breakdowns and harmonic analyses"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="text-2xl font-black text-amber-500 dark:text-amber-400 group-hover:scale-105 transition-transform origin-left">210+</div>
+                  <span className="text-xs text-transparent group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">&rarr;</span>
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Song Breakdowns</div>
+              </Link>
+
+              <Link
+                href="/lessons/practice"
+                className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-blue-500/50 dark:hover:border-blue-400/50 hover:bg-blue-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
+                title="Open interactive audio tools: Circle of Fifths, CAGED, Fretboard Trainer, Ear Trainer, and Jam Player"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:scale-105 transition-transform origin-left">5</div>
+                  <span className="text-xs text-transparent group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">&rarr;</span>
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Interactive Audio Tools</div>
+              </Link>
+
+              <Link
+                href="/downloads/fretboard-cheat-sheet"
+                className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-emerald-500/50 dark:hover:border-emerald-400/50 hover:bg-emerald-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
+                title="Download free printable 3-page fretboard cheat sheet PDF"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="text-2xl font-black text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform origin-left">100%</div>
+                  <span className="text-xs text-transparent group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">&rarr;</span>
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Free Fretboard PDF</div>
+              </Link>
+
+              <Link
+                href="/lessons"
+                className="group block bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs hover:border-purple-500/50 dark:hover:border-purple-400/50 hover:bg-purple-50/40 dark:hover:bg-slate-800/60 hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 hover:shadow-md cursor-pointer"
+                title="Explore all 400+ guitar theory, technique, and gear masterclasses"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="text-2xl font-black text-purple-600 dark:text-purple-400 group-hover:scale-105 transition-transform origin-left">400+</div>
+                  <span className="text-xs text-transparent group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">&rarr;</span>
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Theory & Gear Guides</div>
+              </Link>
             </div>
           </div>
 
