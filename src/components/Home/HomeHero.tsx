@@ -67,7 +67,7 @@ export default function HomeHero() {
                 <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Song Breakdowns</div>
               </div>
               <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
-                <div className="text-2xl font-black text-blue-600 dark:text-blue-400">3</div>
+                <div className="text-2xl font-black text-blue-600 dark:text-blue-400">5</div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Interactive Audio Tools</div>
               </div>
               <div className="bg-white dark:bg-slate-900/40 p-3 rounded-xl border border-slate-200 dark:border-slate-800/60 shadow-xs">
