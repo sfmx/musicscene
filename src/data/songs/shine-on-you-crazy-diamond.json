@@ -110,12 +110,60 @@
         ],
         "progression": "Gm - Dm - Cm - Eb - D7"
       }
+    },
+    {
+      "name": "Syd's Four-Note Dorian Theme & Tape Echo Texture",
+      "description": "Stating the haunting 4-note motif (Bb - F - G - E) with pristine attack and wide vibrato, blending with synchronized tape repeats and volume swell pads",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Dorian 4-note motif notes: Bb (8th fret D), F (10th fret G), G (12th fret G), E natural (9th fret G)",
+          "The major 6th (E natural) lifts the G Aeolian darkness into bittersweet G Dorian light",
+          "Set Echorec or magnetic delay to ~300ms with moderate feedback for cavernous repeats"
+        ],
+        "sequence": [
+          "Pick the 8th fret D string firmly with a heavy tortex pick",
+          "Shift cleanly to frets 10, 12, and 9 on the G string",
+          "Let the final E natural sing out and decay into the synth pad",
+          "Use a volume pedal or guitar volume knob for ambient swell entries"
+        ],
+        "tips": [
+          "Do not bend the 9th-fret E natural—hold it dead flat with gentle finger vibrato to let the Dorian color shine",
+          "Set the neck pickup for woody warmth during the ambient intro",
+          "Maintain absolute silence in the pauses to dramatize each phrase"
+        ],
+        "chords": [
+          "Gm",
+          "Eb",
+          "D7"
+        ],
+        "progression": "Gm - Gm - Eb - D7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Syd's Four-Note Theme",
-      "timeStamp": "3:55-4:35",
+      "name": "Part I: Ambient Synths & Gilmour Opening Lead",
+      "timeStamp": "0:00-2:10",
+      "technique": "Singing Blues Bends & Ambient Space",
+      "key": "G Minor",
+      "description": "Gilmour's pristine Stratocaster lead enters over the ethereal wine-glass organ drone.",
+      "chords": [
+        "Gm"
+      ],
+      "progression": "Gm Drone Solo",
+      "notes": [
+        "Play with gentle pick dynamics and allow echo to trail off",
+        "Bend the 18th fret B string up a full step to D",
+        "Apply slow, singing finger vibrato"
+      ],
+      "alphaTab": ":8 15.2 18.2 15.1 18.1 :4 18.1 :4 15.1 | :8 18.2 15.2 17.3 15.3 :2 17.3 | :1 (3.6 5.5 5.4 3.3 3.2 3.1) |",
+      "exerciseLabel": "Part I Opening Ambient Lead"
+    },
+    {
+      "name": "Part II: Syd's Four-Note Dorian Motif",
+      "timeStamp": "2:11-4:35",
       "technique": "Dorian Thematic Statement",
       "key": "G Dorian",
       "description": "David Gilmour's immortal four-note Syd Barrett motif ringing out over Wright's Solina string pad.",
@@ -128,13 +176,13 @@
         "Accentuate the final E natural (major 6th)",
         "Allow the delay repeats to wash across the stereo field"
       ],
-      "alphaTab": ":4 8.4 :4 10.3 :4 12.3 :2 9.3 | :1 (3.6 5.5 5.4 3.3 3.2 3.1) |",
+      "alphaTab": ":4 8.4 :4 10.3 :4 12.3 :4 9.3 | :2 9.3 :2 r | :1 (3.6 5.5 5.4 3.3 3.2 3.1) |",
       "exerciseLabel": "Syd's Four-Note Motif"
     },
     {
-      "name": "Slow Blues Solo Lick",
-      "timeStamp": "4:36-5:40",
-      "technique": "Singing Blues Bends",
+      "name": "Part III: Stately Minor Blues Solo (Chorus 1 - Neck Strat Warmth)",
+      "timeStamp": "4:36-6:27",
+      "technique": "Singing Blues Bends & Vibrato",
       "key": "G Minor",
       "description": "Gilmour's masterclass in slow blues phrasing, wide vibrato, and dynamic restraint.",
       "chords": [
@@ -148,29 +196,72 @@
         "Hold notes with wide, vocal finger vibrato",
         "Use neck pickup for woody warmth"
       ],
-      "alphaTab": ":8 15.2 18.2 15.1 18.1 :4 18.1 :4 15.1 | :8 18.2 15.2 17.3 15.3 :2 17.3 | :1 15.4 |",
-      "exerciseLabel": "Slow Blues Solo Lead"
+      "alphaTab": ":8 15.2 18.2 15.1 18.1 :4 18.1 :4 15.1 | :8 18.2 15.2 17.3 15.3 :4 17.3 :4 15.3 | :8 17.4 15.4 17.4 15.4 :2 15.4 |",
+      "exerciseLabel": "Slow Blues Solo Chorus 1"
     },
     {
-      "name": "Minor Blues Cadence",
-      "timeStamp": "6:28-7:10",
-      "technique": "Atmospheric Chord Voicings",
+      "name": "Part III: Minor Blues Solo (Chorus 2 - Bridge Pickup Bite)",
+      "timeStamp": "6:28-8:40",
+      "technique": "Overdriven Bridge Lead & 1.5-Step Bends",
       "key": "G Minor",
-      "description": "The stately chord rhythm section backing Gilmour's lead guitar melodies.",
+      "description": "Switching to the bridge pickup with booster engaged, Gilmour unleashes crying 1.5-step bends and emotional intensity.",
       "chords": [
         "Gm",
         "Dm",
         "Cm",
+        "Eb",
+        "D7"
+      ],
+      "progression": "Gm - Dm - Cm - Eb - D7",
+      "notes": [
+        "Reinforce bends with multiple fingers",
+        "Bite into pick attack for searing upper harmonics",
+        "Let notes sustain into gentle tube feedback"
+      ],
+      "alphaTab": ":8 18.2 15.1 18.1 15.1 :4 18.1 :4 15.1 | :8 18.2 15.2 17.3 15.3 :2 17.3 | :1 (6.5 8.4 8.3 8.2 6.1) |",
+      "exerciseLabel": "Slow Blues Solo Chorus 2"
+    },
+    {
+      "name": "Part IV: Vocal Verse Hook & Chromatic Line-Cliché",
+      "timeStamp": "8:41-11:10",
+      "technique": "Chromatic Line-Cliché Harmony",
+      "key": "G Minor",
+      "description": "The haunting vocal progression descending through a descending inner chromatic voice (G → F# → F → E).",
+      "chords": [
+        "Gm",
+        "F#aug",
+        "Bb/F",
+        "C9",
         "Eb"
       ],
-      "progression": "Gm - Dm - Cm - Eb",
+      "progression": "Gm - F#aug - Bb/F - C9 - Eb",
       "notes": [
-        "Clean barre chord voicings with gentle rhythmic arpeggiation",
-        "Lock tight with Nick Mason's slow, unhurried rimshot groove",
-        "Support the soaring lead guitar without overpowering"
+        "Voicing descending chromatic inner voice smoothly",
+        "Strum with relaxed, spacious dynamic breath",
+        "Support the vocal melody with understated warmth"
       ],
-      "alphaTab": ":2 (3.6 5.5 5.4 3.3 3.2 3.1) :2 (0.4 2.3 3.2 1.1) | :2 (3.5 5.4 5.3 4.2 3.1) :2 (3.6 5.5 5.4 3.3 3.2 3.1) |",
-      "exerciseLabel": "Minor Blues Rhythm Chords"
+      "alphaTab": ":2 (3.6 5.5 5.4 3.3 3.2 3.1) :2 (2.4 3.3 3.2 2.1) | :2 (1.4 3.3 3.2 1.1) :2 (3.5 2.4 3.3 3.2) | :1 (3.6 5.5 5.4 3.3 3.2 3.1) |",
+      "exerciseLabel": "Chromatic Verse Voicings"
+    },
+    {
+      "name": "Part V: Saxophone & Dual Guitar Arpeggiated Coda",
+      "timeStamp": "11:11-13:38",
+      "technique": "Arpeggiated Slow Groove",
+      "key": "G Minor",
+      "description": "Dick Parry's saxophone duel with Gilmour's arpeggiated clean rhythm guitar, leading into the gentle acoustic fade.",
+      "chords": [
+        "Gm",
+        "Dm",
+        "Cm"
+      ],
+      "progression": "Gm - Dm - Cm",
+      "notes": [
+        "Clean, delicate arpeggio picking across Gm and Dm",
+        "Lock tight with Nick Mason's slow, unhurried rimshot groove",
+        "Fade gently into the wind sound effects"
+      ],
+      "alphaTab": ":8 3.6 5.5 5.4 3.3 3.2 3.3 5.4 5.5 | :8 0.4 2.3 3.2 1.1 3.2 2.3 0.4 2.3 | :1 (3.6 5.5 5.4 3.3 3.2 3.1) |",
+      "exerciseLabel": "Part V Outro Arpeggio Groove"
     }
   ],
   "equipment": {
@@ -191,7 +282,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "4 (clean headroom with massive dynamic range)",
+        "gain": "4",
         "treble": "6",
         "middle": "7",
         "bass": "6",

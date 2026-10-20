@@ -110,31 +110,64 @@
         ],
         "progression": "C - G - D - A - E"
       }
+    },
+    {
+      "name": "Chromatic Bass Voice Leading & Unison String Bends",
+      "description": "Connecting the cyclical 5ths progression through stepwise chromatic bass lines while executing screaming unison bends and singing vibrato in the 12th position",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chromatic bass walkup: Low E string open → 1st fret F → 2nd fret F# → 3rd fret G → 4th fret G#",
+          "Unison bends: Fret 15 on B string bent up a whole step to match the high E on fret 12 of the 1st string",
+          "E7#9 'Hendrix chord' punctuation: 0-7-6-7-8-X"
+        ],
+        "sequence": [
+          "Play the low chromatic walkup with the flesh of your thumb or pick downstrokes",
+          "Target the 12th-position Box 1 pentatonic shape for solo statements",
+          "Reinforce full-step bends on the 15th fret B string using index and middle fingers as anchors",
+          "Execute fluid downward chromatic basslines leading into the outro fade"
+        ],
+        "tips": [
+          "Pitch accuracy on the 15th-fret bend is crucial—check that your bend matches the high E pitch exactly",
+          "Keep non-sounding strings damped with your fretting index finger and picking palm edge",
+          "Let the open low E string ring underneath the final chord for maximum acoustic depth"
+        ],
+        "chords": [
+          "E7#9",
+          "C",
+          "G",
+          "D",
+          "A",
+          "E"
+        ],
+        "progression": "Chromatic Walkup into E7#9"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro Double-Stops & Walkup",
+      "name": "Intro Sliding Double-Stops & Chromatic Walkup",
       "timeStamp": "0:00-0:28",
       "technique": "Sliding Double-Stops & Chromatic Bass",
       "key": "E Major",
-      "description": "Hendrix's historic opening statement with high string slides and low chromatic walkup.",
+      "description": "Hendrix's historic opening statement featuring high string slides and a low chromatic walkup into the Hendrix chord.",
       "chords": [
         "E7#9",
         "E"
       ],
-      "progression": "Chromatic Walkup into E",
+      "progression": "Chromatic Walkup into E7#9",
       "notes": [
         "Slide high notes with ring and middle fingers",
-        "Clean thumb bass walkup from open E to 4th fret G#",
-        "Stab the final E chord with authority"
+        "Clean thumb bass walkup from open E through F# and G to G#",
+        "Stab the final E7#9 chord with authoritative dynamic bite"
       ],
-      "alphaTab": ":8 0.6 0.1 3.2 0.1 5.2 0.1 3.2 0.1 | :8 0.6 3.6 4.6 :4 2.5 :4 2.4 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "alphaTab": ":8 0.1 3.2 0.1 5.2 0.1 3.2 0.1 2.2 | :8 0.6 3.6 4.6 2.5 0.5 1.5 2.5 2.4 | :1 (0.6 7.5 6.4 7.3 8.2 0.1) |",
       "exerciseLabel": "Intro Lick & Walkup"
     },
     {
-      "name": "Circle of Fifths Progression",
-      "timeStamp": "0:29-1:40",
+      "name": "Reverse Circle of Fifths Verse Groove",
+      "timeStamp": "0:29-1:10",
       "technique": "Hendrix Chord Embellishments",
       "key": "E Major",
       "description": "The famous C - G - D - A - E progression played with rhythmic feel and hammer-on fills.",
@@ -155,11 +188,33 @@
       "exerciseLabel": "Fifths Progression Cycle"
     },
     {
-      "name": "Blues Guitar Solo",
-      "timeStamp": "1:41-2:19",
-      "technique": "12th-Position Pentatonic Bends",
+      "name": "Verse 2 Vocal Call-and-Response & Thumb Fills",
+      "timeStamp": "1:10-1:40",
+      "technique": "Thumb-Fretted Bass Fills",
+      "key": "E Major",
+      "description": "Hendrix weaves lyrical rhythm fills and thumb bass strikes in between vocal phrases.",
+      "chords": [
+        "C",
+        "G",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "C - G - D - A - E",
+      "notes": [
+        "Wrap the thumb over the neck to hit low roots",
+        "Execute quick hammer-on fills on the G and D strings",
+        "Keep the rhythm pocket loose, bluesy, and swinging"
+      ],
+      "alphaTab": ":4 (3.5 2.4 0.3 1.2) :8 0.3 2.3 :4 (3.6 2.5 0.4 0.3) :8 0.4 2.4 | :4 (0.4 2.3 3.2) :8 2.3 0.3 :4 (0.5 2.4 2.3) :8 2.3 4.3 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Call-and-Response Fills"
+    },
+    {
+      "name": "Main Guitar Solo (Part 1 - 12th-Position Pentatonic Weeps)",
+      "timeStamp": "1:41-2:00",
+      "technique": "12th-Position Blues Phrasing",
       "key": "E Blues",
-      "description": "One of the most expressive blues-rock solos in history, full of singing bends and wide vibrato.",
+      "description": "Hendrix kicks into the solo with soaring 12th-position E minor pentatonic bends and vocal vibrato.",
       "chords": [
         "C",
         "G",
@@ -173,8 +228,49 @@
         "Use your index finger to mute non-played strings",
         "Wring out wide, emotive vibrato at the top of bends"
       ],
-      "alphaTab": ":8 12.2 15.2 12.1 15.1 :4 15.1 :4 12.1 | :8 15.2 12.2 14.3 12.3 :2 14.3 | :1 12.4 |",
-      "exerciseLabel": "Solo Lead Phrasing"
+      "alphaTab": ":8 12.2 15.2 12.1 15.1 :4 15.1 :4 12.1 | :8 15.2 12.2 14.3 12.3 :4 14.3 :4 12.3 | :8 14.4 12.4 14.4 12.4 :2 12.3 |",
+      "exerciseLabel": "Solo Lead Opening Phrasing"
+    },
+    {
+      "name": "Main Guitar Solo (Part 2 - Stinging B-String Bends & Double Stops)",
+      "timeStamp": "2:01-2:19",
+      "technique": "Unison Bends & Double Stops",
+      "key": "E Blues",
+      "description": "The climax of the solo featuring stinging repetitive bends and resonant double-stops across strings 1 and 2.",
+      "chords": [
+        "C",
+        "G",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "C - G - D - A - E",
+      "notes": [
+        "Strike the 15th-fret bend repeatedly with aggressive downstrokes",
+        "Transition into double-stops across the 12th frets of high E and B",
+        "Resolve downward into the home E root with thick sustain"
+      ],
+      "alphaTab": ":8 15.2 15.2 12.1 15.2 :4 12.1 :4 15.2 | :8 14.3 12.3 14.3 12.3 :8 (12.2 12.1) (12.2 12.1) :4 (12.2 12.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Solo Climax & Double Stops"
+    },
+    {
+      "name": "Outro Chromatic Walkdown & Final E7#9 Cadence",
+      "timeStamp": "2:55-3:30",
+      "technique": "Chromatic Bass Walkdown",
+      "key": "E Major",
+      "description": "Descending chromatic bassline mirroring the intro walkup, resolving to a final echoing E chord.",
+      "chords": [
+        "E",
+        "E7#9"
+      ],
+      "progression": "Chromatic Walkdown into E7#9",
+      "notes": [
+        "Walk down chromatically along the A and low E strings",
+        "Maintain clean articulation on each passing fret",
+        "End on the iconic E7#9 Hendrix chord and let it ring"
+      ],
+      "alphaTab": ":8 7.5 6.5 5.5 4.5 3.5 2.5 1.5 0.5 | :8 4.6 3.6 2.6 1.6 :2 0.6 | :1 (0.6 7.5 6.4 7.3 8.2 0.1) |",
+      "exerciseLabel": "Outro Chromatic Walkdown"
     }
   ],
   "equipment": {
@@ -195,7 +291,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "7 (natural power-tube compression)",
+        "gain": "7",
         "treble": "6",
         "middle": "8",
         "bass": "6",

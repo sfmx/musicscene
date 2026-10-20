@@ -111,12 +111,42 @@
         ],
         "progression": "C - G - Am"
       }
+    },
+    {
+      "name": "Southern Rock A Minor Pentatonic Soloing & Screaming Bends",
+      "description": "Gary Rossington's singing Les Paul lead style featuring soulful 5th-position A minor pentatonic phrases, sustained whole-step bends, and wide Southern rock vibrato",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "A minor pentatonic Box 1 (frets 5-8): A, C, D, E, G",
+          "Full-step bend on the 7th fret G string (D up to E)",
+          "Whole-step bend on the 8th fret B string (G up to A)"
+        ],
+        "sequence": [
+          "Target root note A on the 7th fret of the D string or 5th fret of the high E string",
+          "Execute singing whole-step bends supported by two fretting fingers",
+          "Wring out wide, unhurried vibrato at the peak of each bend",
+          "Add rhythmic pinch harmonics over driving overdriven power chords"
+        ],
+        "tips": [
+          "Use a Gibson Les Paul on the bridge humbucker with amp gain set to moderate crunch for creamy sustain",
+          "Tune your entire guitar down one half-step (Eb Ab Db Gb Bb Eb) to match the original studio recording",
+          "Let sustained notes hang over chord transitions to emphasize Southern rock warmth"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "Am"
+        ],
+        "progression": "C - G - Am Solo Cycle"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Arpeggio Pattern",
-      "timeStamp": "0:00-1:18",
+      "name": "Intro Clean Cross-Picked Arpeggios",
+      "timeStamp": "0:00-0:45",
       "technique": "Cross-Picked Clean Arpeggios & Bass Walk-Ins",
       "key": "A Minor",
       "description": "The timeless clean arpeggiated intro walking up into C, stepping down through G, and resting on Am.",
@@ -131,11 +161,31 @@
         "Play the A-string 0-2-3 walk-up cleanly into beat 1",
         "Maintain a steady 60 BPM sixteenth-note feel"
       ],
-      "alphaTab": ":8 3.5 2.4 0.3 1.2 0.3 2.4 3.6 2.5 | :8 0.4 0.3 3.2 0.3 0.5 2.4 2.3 1.2 | :2 (0.5 2.4 2.3 1.2 0.1) :4 0.5 2.5 |",
+      "alphaTab": ":8 3.5 2.4 0.3 1.2 0.3 2.4 3.6 2.5 | :8 0.4 0.3 3.2 0.3 0.5 2.4 2.3 1.2 | :2 (0.5 2.4 2.3 1.2 0.1) :4 0.5 2.5 | :1 (0.5 2.4 2.3 1.2 0.1) |",
       "exerciseLabel": "Clean Intro Arpeggio"
     },
     {
-      "name": "Heavy Chorus Power Chords",
+      "name": "Verse 1 Melodic Bass Walk-In & Arpeggio Groove",
+      "timeStamp": "0:46-1:18",
+      "technique": "Arpeggiated Verse Accompaniment",
+      "key": "A Minor",
+      "description": "Ed King's clean Stratocaster provides delicate arpeggio accompaniment underneath Ronnie Van Zant's iconic storytelling.",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Smooth transitions connecting the 0-2-3 walk-in",
+        "Ring open strings sympathetically",
+        "Gentle, sensitive dynamic touch"
+      ],
+      "alphaTab": ":8 0.5 2.5 3.5 2.4 0.3 1.2 0.3 2.4 | :8 3.6 2.5 0.4 0.3 3.2 0.3 0.5 2.4 | :2 (0.5 2.4 2.3 1.2 0.1) :2 (0.5 2.4 2.3 1.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Verse Arpeggio Groove"
+    },
+    {
+      "name": "Heavy Chorus Power Chords & Dynamic Overdrive",
       "timeStamp": "1:19-1:48",
       "technique": "Heavy Overdriven Strumming",
       "key": "A Minor",
@@ -151,12 +201,12 @@
         "Let the chords sustain for two beats each on C and G, then four beats on Am",
         "Add rhythmic palm-muted chugs before changing chords"
       ],
-      "alphaTab": ":2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :1 (0.5 2.4 2.3 1.2) |",
-      "exerciseLabel": "Chorus Riff Chords"
+      "alphaTab": ":2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :1 (0.5 2.4 2.3 1.2) | :2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :1 (0.5 2.4 2.3 1.2) |",
+      "exerciseLabel": "Chorus Power Chords"
     },
     {
-      "name": "A Minor Pentatonic Lead Phrase",
-      "timeStamp": "3:15-4:10",
+      "name": "Gary Rossington Guitar Solo (Part 1 - 5th-Position Blues Phrases)",
+      "timeStamp": "3:15-3:45",
       "technique": "Southern Rock String Bending",
       "key": "A Minor",
       "description": "Expressive A minor pentatonic solo phrase in 5th position with crying bends and wide vibrato.",
@@ -171,8 +221,48 @@
         "Apply slow, wide vibrato on long sustained notes",
         "Target the root note A on the 7th fret of the D string"
       ],
-      "alphaTab": ":8 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 | :4 8.2 5.2 7.3 5.3 | :1 7.4 |",
-      "exerciseLabel": "Rossington Style Solo Run"
+      "alphaTab": ":8 5.4 7.4 5.3 7.3 5.2 8.2 5.1 8.1 | :4 8.2 5.2 7.3 5.3 | :8 7.3 5.3 7.4 5.4 :2 7.4 |",
+      "exerciseLabel": "Solo Opening Blues Run"
+    },
+    {
+      "name": "Gary Rossington Guitar Solo (Part 2 - Soaring B-String Bends & Climax)",
+      "timeStamp": "3:46-4:15",
+      "technique": "High Register Bends & Sustained Vibrato",
+      "key": "A Minor",
+      "description": "Rossington climbs into higher register bends on the B and high E strings, building the emotional climax.",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Whole-step bend on the 8th fret B string up to A",
+        "Let the Les Paul humbucker sing into natural tube sustain",
+        "Resolve downward into the 7th fret D string root"
+      ],
+      "alphaTab": ":8 8.2 5.1 8.1 5.1 :4 8.1 :4 5.1 | :8 8.2 5.2 7.3 5.3 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 |",
+      "exerciseLabel": "Solo High Climax Bends"
+    },
+    {
+      "name": "Outro Sustained C - G - Am Cadence & Lead Fills",
+      "timeStamp": "4:16-5:57",
+      "technique": "Outro Power Chords & Blues Fills",
+      "key": "A Minor",
+      "description": "Massive three-guitar Southern rock wall of sound alternating between heavy rhythm power chords and bluesy solo fills.",
+      "chords": [
+        "C",
+        "G",
+        "Am"
+      ],
+      "progression": "C - G - Am",
+      "notes": [
+        "Heavy downstrokes locking with the drums",
+        "Intersperse blues flourishes on frets 5-7 between power chord rings",
+        "Let the final A minor chord ring into feedback fade"
+      ],
+      "alphaTab": ":2 (3.5 5.4 5.3) :2 (3.6 5.5 5.4) | :2 (0.5 2.4 2.3 1.2) :4 7.3 5.3 | :1 (0.5 2.4 2.3 1.2) |",
+      "exerciseLabel": "Outro Cadence & Lead Fills"
     }
   ],
   "equipment": {
@@ -193,11 +283,11 @@
         "Blackstar HT Club 40"
       ],
       "settings": {
-        "gain": "3 (intro clean) / 7 (chorus & solo crunch)",
-        "treble": "6 (clear pick definition)",
-        "middle": "7 (warm Southern rock midrange)",
-        "bass": "6 (full low-end body)",
-        "presence": "5 (smooth vintage top end)"
+        "gain": "7",
+        "treble": "6",
+        "middle": "7",
+        "bass": "6",
+        "presence": "5"
       }
     },
     "effects": {

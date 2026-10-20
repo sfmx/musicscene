@@ -109,11 +109,42 @@
         ],
         "progression": "B7 - E7 - F#7"
       }
+    },
+    {
+      "name": "Slow 12/8 Blues Call-and-Response & Behind-the-Nut Bends",
+      "description": "Balancing vocal phrases with immediate guitar answers, incorporating quarter-tone blues curls and expressive microtonal intonation",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Quarter-tone curl on the minor 3rd (8th fret B string or 9th fret G string) pushing toward the major 3rd",
+          "Open string sympathy: letting unpicked bass strings vibrate sympathetically under feedback",
+          "Dynamic attack: feathered thumb plucking contrasting with violent pick stabs"
+        ],
+        "sequence": [
+          "Listen to the vocal cadence at the end of each lyric line",
+          "Answer immediately in the two-beat pause with a descending pentatonic flourish",
+          "Apply microtonal finger vibrato at the crest of each bend",
+          "Transition into dominant ninth chord stabs on the turnaround"
+        ],
+        "tips": [
+          "Slow blues leaves massive space—never feel rushed to fill every beat",
+          "Use the middle finger to brace the ring finger when bending on the high strings",
+          "Keep your palm lightly brushing strings to suppress stray feedback hum"
+        ],
+        "chords": [
+          "B7",
+          "E7",
+          "F#7",
+          "B9"
+        ],
+        "progression": "B7 - E7 - F#7 Turnaround"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro Sliding 9th Turnaround",
+      "name": "Intro Sliding Dominant 9th Turnaround",
       "timeStamp": "0:00-0:28",
       "technique": "Chromatic Ninth Chords",
       "key": "B Blues",
@@ -130,12 +161,12 @@
         "Slam the low B root with authority",
         "Let the notes bloom into natural amplifier feedback"
       ],
-      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 9.3 :4 7.3 | :8 9.4 7.4 9.4 7.4 :2 9.4 | :4 (7.5 6.4 7.3 7.2) :4 (8.5 7.4 8.3 8.2) :2 (9.5 8.4 9.3 9.2) |",
+      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 9.3 :4 7.3 | :4 (7.5 6.4 7.3 7.2) :4 (8.5 7.4 8.3 8.2) :2 (9.5 8.4 9.3 9.2) | :1 (7.6 9.5 7.4 8.3 7.2 7.1) |",
       "exerciseLabel": "Intro Turnaround & 9th Chords"
     },
     {
-      "name": "12-Bar Rhythm Comping",
-      "timeStamp": "0:29-1:40",
+      "name": "Verse 1 Slow 12-Bar Blues Comping",
+      "timeStamp": "0:29-1:15",
       "technique": "Thumb-Over Slow Blues Comping",
       "key": "B Major",
       "description": "The slow 66 BPM 12-bar blues groove supporting Hendrix's raw storytelling vocals.",
@@ -150,15 +181,35 @@
         "Fill vocal pauses with short pentatonic licks",
         "Maintain deep 12/8 slow-blues triplet pulse"
       ],
-      "alphaTab": ":2 (7.6 9.5 7.4 8.3 7.2 7.1) :2 (7.5 6.4 7.3 7.2) | :2 (7.6 9.5 7.4 8.3 7.2 7.1) :2 (9.5 8.4 9.3 9.2) |",
+      "alphaTab": ":2 (7.6 9.5 7.4 8.3 7.2 7.1) :4 (7.6 9.5 7.4 8.3 7.2 7.1) :8 7.6 10.6 | :2 (7.5 6.4 7.3 7.2) :2 (7.6 9.5 7.4 8.3 7.2 7.1) | :1 (9.5 8.4 9.3 9.2) |",
       "exerciseLabel": "12-Bar Blues Comping"
     },
     {
-      "name": "Slow Blues Solo Mastery",
-      "timeStamp": "1:41-3:10",
+      "name": "Verse 2 Vocal Call-and-Response & Fills",
+      "timeStamp": "1:16-1:40",
+      "technique": "Vocal Blues Call-and-Response",
+      "key": "B Blues",
+      "description": "Hendrix converses with his guitar, interjecting stinging blues licks between vocal statements.",
+      "chords": [
+        "B7",
+        "E7",
+        "F#7"
+      ],
+      "progression": "B7 - E7 - B7 - F#7",
+      "notes": [
+        "Leave dynamic space during vocal lines",
+        "Answer with quick blues curl on the 9th fret of the G string",
+        "Slide smoothly into the IV chord (E7)"
+      ],
+      "alphaTab": ":8 7.1 10.1 :4 7.1 :8 9.3 7.3 :4 9.4 | :8 7.4 9.4 7.4 9.4 :2 7.3 | :1 (7.6 9.5 7.4 8.3 7.2 7.1) |",
+      "exerciseLabel": "Verse Call-and-Response Lead"
+    },
+    {
+      "name": "Main Guitar Solo (Chorus 1 - Expressive Vocal Bends)",
+      "timeStamp": "1:41-2:25",
       "technique": "Vocal Blues Lead Phrasing",
       "key": "B Blues",
-      "description": "One of the greatest slow-blues guitar solos ever recorded, full of soaring bends and liquid sustain.",
+      "description": "First chorus of the legendary slow-blues solo featuring singing, vocal-like string bends.",
       "chords": [
         "B7",
         "E7",
@@ -170,8 +221,49 @@
         "Wring out singing, vocal finger vibrato",
         "Dig into the pick attack for dynamic expression"
       ],
-      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 9.3 :4 7.3 | :8 9.4 7.4 9.4 7.4 :2 9.4 | :1 7.5 |",
-      "exerciseLabel": "Slow Blues Lead Phrasing"
+      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 10.2 :4 7.1 | :8 10.2 7.2 9.3 7.3 :4 9.3 :4 7.3 | :8 9.4 7.4 9.4 7.4 :2 9.4 |",
+      "exerciseLabel": "Slow Blues Solo Chorus 1"
+    },
+    {
+      "name": "Main Guitar Solo (Chorus 2 - Screaming High Climax & Double Stops)",
+      "timeStamp": "2:26-3:10",
+      "technique": "High Register Double Stops & Bends",
+      "key": "B Blues",
+      "description": "The solo reaches fever pitch with high-register Albert King-style bends and stinging double stops.",
+      "chords": [
+        "B7",
+        "E7",
+        "F#7"
+      ],
+      "progression": "12-Bar Slow Blues Climax",
+      "notes": [
+        "Push high E up a full step on fret 12",
+        "Hit double stops across strings 1 and 2 at fret 10 and fret 7",
+        "Let the amplifier feedback sing at the top of the phrase"
+      ],
+      "alphaTab": ":8 12.1 10.1 12.1 10.1 :4 12.1 :4 10.1 | :8 (10.2 10.1) (10.2 10.1) (7.2 7.1) (7.2 7.1) :2 9.3 | :1 7.4 |",
+      "exerciseLabel": "Solo Climax & Double Stops"
+    },
+    {
+      "name": "Outro Chromatic Turnaround & Final B9 Chord",
+      "timeStamp": "3:11-3:44",
+      "technique": "Slow Blues Cadence",
+      "key": "B Major",
+      "description": "Descending chromatic ninth turnaround bringing the slow blues epic to a dramatic close.",
+      "chords": [
+        "B9",
+        "C9",
+        "C#9",
+        "B7"
+      ],
+      "progression": "C#9 - C9 - B9 - B7",
+      "notes": [
+        "Slide downward from C#9 to C9 and resolve on B9",
+        "Let the final low B chord ring into rich tube saturation",
+        "Damp strings with palm to kill feedback on the final cutoff"
+      ],
+      "alphaTab": ":8 7.1 10.1 7.1 10.2 :4 9.3 :4 7.3 | :4 (9.5 8.4 9.3 9.2) :4 (8.5 7.4 8.3 8.2) :2 (7.5 6.4 7.3 7.2) | :1 (7.6 9.5 7.4 8.3 7.2 7.1) |",
+      "exerciseLabel": "Outro Chromatic Turnaround"
     }
   ],
   "equipment": {
@@ -192,7 +284,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "7.5 (rich natural tube saturation)",
+        "gain": "7.5",
         "treble": "6",
         "middle": "8",
         "bass": "6",
