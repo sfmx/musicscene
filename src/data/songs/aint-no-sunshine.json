@@ -46,22 +46,21 @@
           "Dm7",
           "Em7"
         ],
-        "progression": "i7 - v7 - bVII - i7 | iv7 - v7 - i7",
-        "progressionDescription": "A compact variation on the 12-bar minor blues: the main vamp rocks between Am7, Em7, and G before stepping up to Em7 (v7) and Dm7 (iv7) for the turnaround.",
+        "progression": "i7 - v7 - ♭VII - i7 | iv7 - v7 - i7",
         "description": "A compact variation on the 12-bar minor blues: the main vamp rocks between Am7, Em7, and G before stepping up to Em7 (v7) and Dm7 (iv7) for the turnaround."
       },
       "sectionProgressions": [
         {
           "section": "Main Verse Vamp ('Ain't no sunshine when she's gone')",
           "progression": "Am7 - Em7 - G - Am7",
-          "romanNumerals": "i7 - v7 - bVII - i7",
-          "description": "Fingerpicked acoustic bass-and-chord pulse that walks chromatically or diatonically from A down to E and G"
+          "romanNumerals": "i7 - v7 - ♭VII - i7",
+          "description": "Fingerpicked acoustic bass-and-chord pulse that walks diatonically from A down to E and G"
         },
         {
           "section": "Verse Turnaround ('Anytime she goes away')",
           "progression": "Em7 - Dm7 - Am7",
           "romanNumerals": "v7 - iv7 - i7",
-          "description": "Classic minor-blues turnaround stepping from the 7th-fret Em7 down to the 5th-fret Dm7 and back to Am7"
+          "description": "Classic minor-blues turnaround stepping from 7th-fret Em7 down to 5th-fret Dm7 and resolving back to Am7"
         },
         {
           "section": "Bridge ('I know, I know, I know...')",
@@ -70,16 +69,16 @@
           "description": "Iconic 26-count spoken/sung 'I know' breakdown where the guitar drops out completely before re-entering on the Dm7/Em7 cadence"
         },
         {
-          "section": "Scale Practice Exercise",
-          "progression": "i7 - v7 - iv7 - i7",
-          "romanNumerals": "Scale Practice",
-          "description": "A minor pentatonic soul-blues double-stops and melodic fills in 5th position"
+          "section": "Outro Vamp & Fade",
+          "progression": "Am7 - Em7 - G - Am7",
+          "romanNumerals": "i7 - v7 - ♭VII - i7",
+          "description": "Hypnotic repetition of the primary minor seventh groove fading into silence"
         }
       ],
       "harmonicFunction": [
         "Am7 (i7) - Warm, mellow minor seventh tonic voiced at the 5th fret or in open position",
         "Em7 (v7) - Passing minor fifth chord that softens the traditional dominant pull",
-        "G (bVII) - Subtonic chord walking the bass back up a whole step into the A minor root",
+        "G (♭VII) - Subtonic chord walking the bass back up a whole step into the A minor root",
         "Dm7 (iv7) - Subdominant minor seventh chord providing the emotional peak before resolving home"
       ]
     }
@@ -116,11 +115,42 @@
         ],
         "progression": "Am7 - Em7 - G - Am7 | Em7 - Dm7 - Am7"
       }
+    },
+    {
+      "name": "Percussive Thumb Slap & 5th-Position Blues Embellishments",
+      "description": "Incorporating light rhythmic thumb taps against the lower strings on beats 2 and 4 to establish a steady soul pocket, while adding tasteful 5th-position A minor pentatonic hammer-ons",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Slap technique: The side of the picking thumb taps the 5th and 6th strings over the soundhole",
+          "Double-stop fill: Barring frets 5 on strings 3 and 4, hammering to fret 7 on string 4",
+          "Pocket timing: Keep the tempo laid-back at 78 BPM without dragging"
+        ],
+        "sequence": [
+          "Establish the rhythmic slap on beats 2 and 4 over a stationary Am7 chord",
+          "Insert short blues fills during the resting Am7 measure of each two-bar cycle",
+          "Maintain steady internal pulse during the 26-count tacet breakdown",
+          "Drop smoothly back into the groove right on beat 1 as Bill sings 'Anytime she goes away'"
+        ],
+        "tips": [
+          "Keep thumb slaps gentle; do not strike hard enough to make the acoustic top rattle",
+          "Use the flesh of the index finger to mute the high E string during double stops",
+          "Listen to Stephen Stills' subtle acoustic guitar nuances on the original recording"
+        ],
+        "chords": [
+          "Am7",
+          "Em7",
+          "G",
+          "Dm7"
+        ],
+        "progression": "Am7 - Em7 - G - Am7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Main Verse Vamp",
+      "name": "Intro & Main Verse Vamp ('Ain't no sunshine when she's gone')",
       "timeStamp": "0:00-0:35",
       "technique": "Fingerstyle Bass-Chord Plucking & Minor 7th Voicings",
       "key": "A Minor",
@@ -140,7 +170,7 @@
       "exerciseLabel": "Main Soul-Blues Vamp"
     },
     {
-      "name": "Minor Blues Turnaround",
+      "name": "Minor Blues Turnaround ('Anytime she goes away')",
       "timeStamp": "0:36-0:55",
       "technique": "A-String Minor 7th Barre Shifts",
       "key": "A Minor",
@@ -160,11 +190,11 @@
       "exerciseLabel": "Em7 to Dm7 Turnaround"
     },
     {
-      "name": "A Minor Pentatonic Soul Fill",
-      "timeStamp": "1:20-2:05",
-      "technique": "5th-Position Minor Pentatonic Double-Stops",
+      "name": "Verse 2 Subtle Dynamics & Walking Bass",
+      "timeStamp": "0:56-1:15",
+      "technique": "Fingerstyle Walking Basslines & Chord Syncopation",
       "key": "A Minor",
-      "description": "Tasty John Mayer / blues-style A minor pentatonic fill to play in the space at the end of bar 2.",
+      "description": "Second verse expanding the intimacy with light bass movement connecting the chords under Bill's narrative vocal.",
       "chords": [
         "Am7",
         "Em7",
@@ -172,12 +202,70 @@
       ],
       "progression": "Am7 - Em7 - G - Am7",
       "notes": [
-        "Play right in the 5th-fret A minor pentatonic box where your hand is already positioned for Am7",
-        "Hammer on from the 5th to 7th fret on the D string while barring the G string",
+        "Subtle bass passing note on the low E string",
+        "Light thumb accents on downbeats",
+        "Keep vocal space wide open"
+      ],
+      "alphaTab": ":4 (5.6 5.4 5.3 5.2) 5.6 :4 (0.6 2.4 0.3 3.2) (3.6 5.4 4.3 3.2) | :2 (5.6 5.4 5.3 5.2) :4 7.6 5.6 |",
+      "exerciseLabel": "Verse 2 Walking Bass Vamp"
+    },
+    {
+      "name": "Bridge Breakdown ('I know, I know' 26-repetition pocket)",
+      "timeStamp": "1:16-1:35",
+      "technique": "Tacet Rhythmic Pocket & Metronome Discipline",
+      "key": "A Minor",
+      "description": "The immortal 26-repetition vocal vamp where the guitar drops out completely while the strings and drums maintain the hypnotic pocket.",
+      "chords": [
+        "Am7"
+      ],
+      "progression": "N.C. (Am7 implied)",
+      "notes": [
+        "Complete tacet on guitar",
+        "Maintain internal subdivision at 78 BPM",
+        "Prepare left hand for re-entry on Em7 turnaround"
+      ],
+      "alphaTab": ":1 r | :1 r | :1 r | :1 r |",
+      "exerciseLabel": "Breakdown Pocket Tacet"
+    },
+    {
+      "name": "Post-Breakdown Re-entry & Emotional Climax",
+      "timeStamp": "1:36-1:50",
+      "technique": "Climactic Minor-Blues Turnaround Plucking",
+      "key": "A Minor",
+      "description": "Explosive emotional release as Withers finishes his vocal flurry and the guitar crashes back in on the Em7 and Dm7 chords.",
+      "chords": [
+        "Em7",
+        "Dm7",
+        "Am7"
+      ],
+      "progression": "Em7 - Dm7 - Am7",
+      "notes": [
+        "Strong thumb attack on the 7th-fret Em7 downbeat",
+        "Full emotional commitment to the descending Dm7",
+        "Resonant resolution back to Am7"
+      ],
+      "alphaTab": ":2 (7.5 9.4 7.3 8.2) (7.5 9.4 7.3 8.2) | :2 (5.5 7.4 5.3 6.2) (5.5 7.4 5.3 6.2) | :1 (5.6 5.4 5.3 5.2) |",
+      "exerciseLabel": "Climactic Re-entry Turnaround"
+    },
+    {
+      "name": "Outro Vamp & Fade ('Anytime she goes away')",
+      "timeStamp": "1:51-2:05",
+      "technique": "5th-Position Minor Pentatonic Double-Stops",
+      "key": "A Minor",
+      "description": "Soulful outro vamp combining the two-bar chord cycle with delicate 5th-position double-stop embellishments as the song gently fades.",
+      "chords": [
+        "Am7",
+        "Em7",
+        "G"
+      ],
+      "progression": "Am7 - Em7 - G - Am7",
+      "notes": [
+        "Hammer-on from 5th to 7th fret on D string while barring G string",
+        "Gradual decrescendo as the track fades",
         "Keep the volume soft and conversational"
       ],
       "alphaTab": ":8 5.6 5.4 7.4 5.3 7.3 5.2 8.2 5.2 | :4 (5.4 5.3) (7.4 7.3) :2 (5.4 5.3) | :1 5.6 |",
-      "exerciseLabel": "5th-Position Soul Double-Stop Fill"
+      "exerciseLabel": "Outro Vamp & Double-Stop Fill"
     }
   ],
   "equipment": {
@@ -197,11 +285,11 @@
         "Fishman Loudbox Mini"
       ],
       "settings": {
-        "gain": "2 (pure, woody clean tone)",
-        "treble": "5 (rolled off slightly for warm R&B mellowness)",
-        "middle": "7 (rich, intimate midrange body)",
-        "bass": "6 (deep thumb-bass warmth)",
-        "presence": "4 (smooth top end)"
+        "gain": "2.0",
+        "treble": "5.0",
+        "middle": "7.0",
+        "bass": "6.0",
+        "presence": "4.0"
       }
     },
     "effects": {
@@ -215,7 +303,7 @@
     "beginner": {
       "title": "Open Chords & Basic Vamp",
       "steps": [
-        "Learn the open-position Am7 (X-0-2-0-1-0), Em7 (0-2-0-0-0-0), G (3-2-0-0-0-3), and Dm7 (X-X-0-2-1-1)",
+        "Learn open-position Am7 (X-0-2-0-1-0), Em7 (0-2-0-0-0-0), G (3-2-0-0-0-3), and Dm7 (X-X-0-2-1-1)",
         "Practice the two-bar vamp: Am7 (beats 1-2), Em7 (beat 3), G (beat 4), Am7 (full bar)",
         "Play through the verse and Em7 → Dm7 turnaround at 78 BPM"
       ],

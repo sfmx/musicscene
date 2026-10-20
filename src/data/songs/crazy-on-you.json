@@ -114,6 +114,39 @@
         ],
         "progression": "Am - G - F - G"
       }
+    },
+    {
+      "name": "Aeolian Power Chord Chugging & Expressive Pentatonic Bending",
+      "description": "Locking into the driving 130 BPM rock groove with palm-muted downstroke power chords (A5 - G5 - F5 - G5), punctuated by Roger Fisher's biting blues-rock double-stops and full-step bends",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chugging pulse: Crisp palm muting on the open low A string alternating with fret-7/8 dyad accents",
+          "Chorus accents: Wide open power chords ringing across the 5th and 6th strings",
+          "Solo phrasing: Aggressive unison bends at the 8th and 10th frets of the B and high E strings"
+        ],
+        "sequence": [
+          "Lock into steady eighth-note downstrokes on the A5 power chord with palm muting",
+          "Open up the right-hand attack on the beat-4 syncopated stabs into G5 and F5",
+          "Execute whole-step bends in the 5th-position A minor pentatonic box with wide vibrato",
+          "Blend rhythm acoustic strumming with electric crunch in the verse arrangements"
+        ],
+        "tips": [
+          "Rest the heel of the picking hand lightly against the bridge saddles for immediate muting control",
+          "Reinforce full-step bends on the G and B strings with index and middle fingers behind the ring finger",
+          "Use the bridge pickup on your electric guitar to cut through the heavy acoustic rhythm layer"
+        ],
+        "chords": [
+          "A5",
+          "G5",
+          "F5",
+          "Am",
+          "G",
+          "F"
+        ],
+        "progression": "A5 - G5 - F5 - G5"
+      }
     }
   ],
   "sections": [
@@ -122,8 +155,8 @@
       "timeStamp": "0:00-0:35",
       "technique": "Flamenco Pull-Offs & Hybrid Picking",
       "key": "A Minor",
-      "description": "Nancy Wilson's immortal acoustic intro, widely considered one of the greatest acoustic rock performances ever recorded",
-      "alphaTab": "\\tempo 130 . \\ts 4 4\n:16 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 | :8 0.5 2.4 2.3 1.2 3.6 0.4 0.3 0.2 | :8 1.6 3.5 3.4 2.3 3.6 0.4 0.3 0.2 | :4 0.5 :8 2.4 2.3 :2 0.5 |",
+      "description": "Nancy Wilson's immortal acoustic intro, widely considered one of the greatest acoustic rock performances ever recorded.",
+      "alphaTab": ":16 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 0.2 1.2 0.2 0.3 | :8 0.5 2.4 2.3 1.2 3.6 0.4 0.3 0.2 | :8 1.6 3.5 3.4 2.3 3.6 0.4 0.3 0.2 | :4 0.5 :8 2.4 2.3 :2 0.5 |",
       "exerciseLabel": "Silver Wheels Acoustic Prelude",
       "chords": [
         "Am",
@@ -132,21 +165,38 @@
       ],
       "progression": "Am - G - F - G",
       "notes": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "G"
+        "Lightning-fast 16th-note pull-offs between fret 1 and open B string",
+        "Hybrid pick-and-finger attack for crisp volume",
+        "Resonant open-string sustain throughout"
       ]
     },
     {
-      "name": "Driving Electric Chorus Riff",
+      "name": "Electric Guitar Riff Explosion & Verse 1",
+      "timeStamp": "0:36-1:04",
+      "technique": "High-Energy Palm-Muted Power Chords",
+      "key": "A Minor",
+      "description": "The explosive band entrance as the delicate acoustic prelude gives way to a crushing wall of electric guitars and driving drums.",
+      "alphaTab": ":8 0.5 0.5 7.4 7.3 0.5 0.5 7.4 7.3 | :8 3.6 3.6 5.5 5.4 1.6 1.6 3.5 3.5 | :8 0.5 0.5 7.4 7.3 0.5 0.5 7.4 7.3 | :4 (3.6 5.5 5.4) :4 (0.5 2.4 2.3) :2 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Electric Verse Riff Explosion",
+      "chords": [
+        "A5",
+        "G5",
+        "F5"
+      ],
+      "progression": "A5 - G5 - F5 - G5",
+      "notes": [
+        "Heavy downstrokes with palm muting on open A string",
+        "Pungent power chord punches locking with kick drum",
+        "Clear dynamic contrast compared to the intro"
+      ]
+    },
+    {
+      "name": "Driving Electric Chorus Riff & Vocal Climax",
       "timeStamp": "1:05-1:40",
       "technique": "High-Energy Power Chording & Dynamic Accents",
       "key": "A Minor",
-      "description": "The heavy rock chorus groove powered by driving power chords and Roger Fisher's searing Les Paul fills",
-      "alphaTab": "\\tempo 130 . \\ts 4 4\n:4 0.5 0.5 :8 2.4 2.4 :4 0.5 | :4 3.6 3.6 :8 0.5 0.5 :4 3.6 | :4 1.6 1.6 :8 3.5 3.5 :4 1.6 | :2 3.6 :2 0.5 |",
+      "description": "The heavy rock chorus groove powered by driving power chords and Roger Fisher's searing Les Paul fills.",
+      "alphaTab": ":4 0.5 0.5 :8 2.4 2.4 :4 0.5 | :4 3.6 3.6 :8 0.5 0.5 :4 3.6 | :4 1.6 1.6 :8 3.5 3.5 :4 1.6 | :2 3.6 :2 0.5 |",
       "exerciseLabel": "Chorus Power Chording",
       "chords": [
         "A5",
@@ -155,11 +205,70 @@
       ],
       "progression": "A5 - G5 - F5 - G5",
       "notes": [
-        "A",
+        "Open strumming without muting to let chords bloom",
+        "Syncopated accents on beats 2 and 4",
+        "Supporting Ann Wilson's soaring vocal hook"
+      ]
+    },
+    {
+      "name": "Verse 2 Dynamic Acoustic-Electric Interplay",
+      "timeStamp": "1:41-2:15",
+      "technique": "Layered Acoustic Rhythm & Electric Lead Stabs",
+      "key": "A Minor",
+      "description": "Intricate multi-guitar texture with Nancy's acoustic strumming meshing tightly with Fisher's biting blues stabs.",
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 0.5 2.4 2.3 1.2 | :8 3.6 2.5 0.4 0.3 1.6 3.5 3.4 2.3 | :4 (0.5 2.4 2.3 1.2) :4 (3.6 2.5 0.4 0.3) | :1 (0.5 2.4 2.3 1.2) |",
+      "exerciseLabel": "Acoustic-Electric Layered Verse",
+      "chords": [
+        "Am",
+        "G",
+        "F"
+      ],
+      "progression": "Am - G - F - G",
+      "notes": [
+        "Keep acoustic strumming percussive and bright",
+        "Electric guitar fills fill the spaces between vocal phrases",
+        "Crisp articulation on chord transitions"
+      ]
+    },
+    {
+      "name": "Searing Blues-Rock Guitar Solo (Roger Fisher)",
+      "timeStamp": "2:16-3:05",
+      "technique": "High-Velocity Pentatonic Bends & Double-Stops",
+      "key": "A Minor",
+      "description": "Roger Fisher's blisteringly aggressive electric guitar solo, channeling classic Gibson Les Paul overdrive, wide vibrato, and screaming bends.",
+      "alphaTab": ":8 5.1 8.2 5.2 :4 7.3 :8 5.3 7.3 | :4 7.3 :8 5.3 7.3 :2 5.4 | :8 5.1 8.2 5.2 8.1 :4 8.1 5.1 | :1 (5.1 5.2) |",
+      "exerciseLabel": "Searing Les Paul Solo",
+      "chords": [
+        "Am",
         "G",
         "F",
-        "C",
-        "E"
+        "E7"
+      ],
+      "progression": "Am - G - F - E7",
+      "notes": [
+        "Full-step bends at the 7th and 8th frets",
+        "Vicious pick attack with aggressive tube compression",
+        "Singing vibrato on sustained notes"
+      ]
+    },
+    {
+      "name": "Outro Flurry & Power Chord Cadence",
+      "timeStamp": "3:06-4:53",
+      "technique": "Acoustic Rasgueado Strumming & Crushing Outro Chords",
+      "key": "A Minor",
+      "description": "The epic finale combining Nancy's relentless acoustic strumming with thunderous electric power chords and soaring vocal screams.",
+      "alphaTab": ":4 (0.5 2.4 2.3) (0.5 2.4 2.3) :4 (3.6 5.5 5.4) (3.6 5.5 5.4) | :4 (1.6 3.5 3.4) (1.6 3.5 3.4) :2 (0.5 2.4 2.3) | :1 (0.5 2.4 2.3) | :1 (0.5 7.4 7.3) |",
+      "exerciseLabel": "Outro Flurry & Power Cadence",
+      "chords": [
+        "A5",
+        "G5",
+        "F5"
+      ],
+      "progression": "A5 - G5 - F5 - G5 - A5",
+      "notes": [
+        "Maximum right-hand strumming intensity",
+        "Final power chord ring-out with amp feedback",
+        "Triumphant minor rock resolution"
       ]
     }
   ],
@@ -254,51 +363,48 @@
       {
         "title": "Barracuda",
         "artist": "Heart",
-        "difficulty": "Advanced",
-        "similarity": "Master high-speed galloping downstrokes and aggressive flanger guitar textures"
+        "difficulty": "Intermediate",
+        "similarity": "Channel your hard-rock rhythm stamina from Crazy on You into Heart's iconic gallop masterclass"
       }
     ]
   },
   "practiceNotes": {
     "commonMistakes": [
-      "Collapsing the left-hand index finger during acoustic pull-offs, muting adjacent ringing strings",
-      "Rushing ahead of the 130 BPM beat during the excitement of the acoustic intro flurry",
-      "Failing to mute the low E string when playing the A5 power chord, causing muddy dissonance"
+      "Stumbling on the open B string pull-offs in the intro by letting the fretting finger mute adjacent strings",
+      "Rushing the tempo during the acoustic prelude before the drums enter",
+      "Playing the verse power chords with too much gain, losing the biting percussive definition"
     ],
     "practiceRoutine": [
-      "10 minutes: Left-hand pull-off stamina drills on the B and G strings at 90-120 BPM",
-      "15 minutes: Nancy Wilson acoustic prelude run-throughs with digital metronome",
-      "15 minutes: Downstroke power chord rhythm tightening over the verse and chorus tracks"
+      "15 minutes: Nancy Wilson's pull-off flurry with metronome starting at 80 BPM and working to 130 BPM",
+      "10 minutes: Palm-muted power chord transitions (A5 - G5 - F5 - G5) with heavy downstrokes",
+      "15 minutes: Roger Fisher solo bends and unison double-stop intonation drills"
     ],
     "focusAreas": [
-      "Acoustic pull-off volume balance and clarity",
-      "Right-hand pick accuracy on the acoustic flurry",
-      "Seamless dynamic explosion into the electric band arrangement"
+      "Acoustic pull-off clarity and volume consistency",
+      "Seamless transition from delicate acoustic intro to aggressive electric rock",
+      "Pitch precision on high-register solo bends"
     ],
     "metronomeWork": [
-      "Set metronome to 130 BPM with sixteenth-note clicks and practice playing 4 clean pull-offs per beat in the intro"
+      "Practice the intro pull-offs at 80, 100, 115, and finally 130 BPM"
     ]
   },
   "metadata": {
-    "popularity": 97,
+    "popularity": 96,
     "dateAdded": "2026-10-16",
     "featured": true,
     "decade": "1970s",
     "iconicRiff": true,
     "tags": [
-      "classic-rock",
-      "folk",
-      "advanced",
-      "fingerstyle",
-      "hammer-on",
-      "pull-off",
-      "minor-key",
+      "hard-rock",
+      "folk-rock",
+      "acoustic-guitar",
+      "fingerpicking",
       "lead-guitar",
-      "rhythm-guitar",
-      "power-chords"
+      "advanced",
+      "classic-rock",
+      "minor-key"
     ],
     "learningValue": "High",
-    "estimatedLearningTime": "4-6 weeks"
+    "estimatedLearningTime": "3-5 weeks"
   }
 }
-

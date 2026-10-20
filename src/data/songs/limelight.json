@@ -112,16 +112,48 @@
         ],
         "progression": "Aadd9 - F#7add11 - Bsus4 - E"
       }
+    },
+    {
+      "name": "Open-String Voicings with Ringing Drone B/E Strings",
+      "description": "Executing Alex Lifeson's trademark wide-interval chords (F#7add11, Aadd9, Bsus4) that leave strings 1 and 2 open as constant ringing drone unisons and fifths",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "F#7add11 voicing: 2-4-4-3-0-0 (thumb over on low F#)",
+          "Aadd9 voicing: X-0-2-2-0-0 (or X-0-7-6-0-0)",
+          "Bsus4 voicing: X-2-4-4-0-0",
+          "Harmonic function: The open B and E provide continuous luminous shimmer regardless of the bass root"
+        ],
+        "sequence": [
+          "Arch fretting fingers carefully so the underside of the index and middle fingers never brush strings 1 and 2",
+          "Practice shifting between F#7add11 and Bsus4 without interrupting the drone resonance",
+          "Strum with a medium-light pick (0.73mm) for balanced acoustic-like chime through cranked Marshall stacks",
+          "Coordinate the dynamic swell when dropping from loud chorus chords into the delicate verse arpeggios"
+        ],
+        "tips": [
+          "Check each string individually to verify that the high open E and B strings ring completely true without buzzing",
+          "Use chorus effect (Roland CE-1 or Boss CE-2) to widen the stereo field across the ringing open intervals",
+          "Allow the open strings to sustain across the bar lines to smooth over the metric transitions"
+        ],
+        "chords": [
+          "E",
+          "Aadd9",
+          "F#7add11",
+          "Bsus4"
+        ],
+        "progression": "Aadd9 - F#7add11 - Bsus4 - E"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Main Riff",
+      "name": "Asymmetric Intro Riff (7/4 & 3/4 Meter Shifts)",
       "timeStamp": "0:00-0:42",
       "technique": "Open-String Arpeggiation in Shifting Meters",
       "key": "E Major",
-      "description": "Alex Lifeson's genius open-chord riff that serves as the dynamic and harmonic anchor of the song",
-      "alphaTab": "\\tempo 132 . \\ts 4 4\n:8 0.5 2.4 2.3 0.2 0.1 0.2 2.3 2.4 | :8 2.6 4.5 4.4 3.3 0.2 0.1 0.2 3.3 | :8 2.5 4.4 4.3 0.2 0.1 0.2 4.3 4.4 | :4 0.6 :8 2.5 2.4 :2 0.6 |",
+      "description": "Alex Lifeson's genius open-chord riff that serves as the dynamic and harmonic anchor of the song.",
+      "alphaTab": ":8 0.5 2.4 2.3 0.2 0.1 0.2 2.3 2.4 | :8 2.6 4.5 4.4 3.3 0.2 0.1 0.2 3.3 | :8 2.5 4.4 4.3 0.2 0.1 0.2 4.3 4.4 | :4 0.6 :8 2.5 2.4 :2 0.6 |",
       "exerciseLabel": "Open-String Riff Chords",
       "chords": [
         "Aadd9",
@@ -131,21 +163,81 @@
       ],
       "progression": "Aadd9 - F#7add11 - Bsus4 - E",
       "notes": [
-        "E",
-        "B",
-        "A",
-        "F#",
-        "C#",
-        "G#"
+        "Count the alternating 7/4 (4+3) and 3/4 bars carefully",
+        "Keep open B and high E strings ringing freely",
+        "Lock tightly with Neil Peart's syncopated ride cymbal bell"
       ]
     },
     {
-      "name": "Lyrical Whammy Guitar Solo",
+      "name": "Verse 1 Diatonic Groove & Introspective Chords (4/4)",
+      "timeStamp": "0:43-1:22",
+      "technique": "Descending Diatonic Voice Leading & Subtle Muting",
+      "key": "E Major",
+      "description": "The song transitions into straight 4/4 time with a delicate descending progression (E - B/D# - C#m - A) underneath Geddy Lee's introspective vocal.",
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (x.6 6.5 4.4 4.3 0.2 0.1) | :2 (x.6 4.5 6.4 6.3 0.2 0.1) :2 (x.6 0.5 2.4 2.3 0.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) | :1 (x.6 2.5 4.4 4.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Descending Progression",
+      "chords": [
+        "E",
+        "B/D#",
+        "C#m",
+        "A"
+      ],
+      "progression": "I - V6 - vi - IV",
+      "notes": [
+        "Smooth transition into straight 4/4 time",
+        "Gentle pick attack to let the vocal dominate",
+        "Descending bass line on strings 5 and 6"
+      ]
+    },
+    {
+      "name": "Anthemic Chorus ('Living in the limelight, the universal dream')",
+      "timeStamp": "1:23-1:55",
+      "technique": "Wide-Interval Open Chording & High-Energy Strumming",
+      "key": "E Major",
+      "description": "The triumphant chorus explosion featuring Lifeson's expansive open chords driven by aggressive downstrokes and soaring bass counter-melodies.",
+      "alphaTab": ":4 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) :4 (x.6 2.5 4.4 4.3 0.2 0.1) (x.6 2.5 4.4 4.3 0.2 0.1) | :2 (x.6 0.5 2.4 2.3 0.2 0.1) :2 (2.6 4.5 4.4 3.3 0.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) | :1 (x.6 2.5 4.4 4.3 0.2 0.1) |",
+      "exerciseLabel": "Anthemic Chorus Chords",
+      "chords": [
+        "E",
+        "Bsus4",
+        "Aadd9",
+        "F#7add11"
+      ],
+      "progression": "I - Vsus4 - IVadd9 - II7add11",
+      "notes": [
+        "Maximum right-hand strumming power",
+        "Open high strings ring above the rhythm section",
+        "Triumphant melodic resolution"
+      ]
+    },
+    {
+      "name": "Verse 2 Layered Guitars & Geddy Lee Counterpoint",
+      "timeStamp": "1:56-2:33",
+      "technique": "Arpeggiated Texture & Dynamic Space",
+      "key": "E Major",
+      "description": "Second verse featuring subtle guitar fills and shimmering chorus pedal textures weaving around Geddy's bass lines.",
+      "alphaTab": ":8 0.6 2.5 2.4 1.3 0.2 1.3 2.4 2.5 | :8 x.6 6.5 4.4 4.3 0.2 4.3 4.4 6.5 | :8 x.6 4.5 6.4 6.3 0.2 6.3 6.4 4.5 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse 2 Arpeggiated Texture",
+      "chords": [
+        "E",
+        "B/D#",
+        "C#m",
+        "A"
+      ],
+      "progression": "I - V6 - vi - IV",
+      "notes": [
+        "Delicate picking across the middle strings",
+        "Leave acoustic space for the bass guitar counterpoint",
+        "Maintain steady 4/4 pulse"
+      ]
+    },
+    {
+      "name": "Alex Lifeson Lyrical Whammy Bar Solo",
       "timeStamp": "2:34-3:18",
       "technique": "Vocal Whammy Bar Articulation & Ethereal Phrasing",
       "key": "E Major",
-      "description": "One of the most praised guitar solos in rock history, celebrated for its emotional depth and melodic purity",
-      "alphaTab": "\\tempo 132 . \\ts 4 4\n:2 12.1 :4 14.1 12.1 | :1 11.1 | :2 12.2 :4 14.2 12.2 | :1 9.1 |",
+      "description": "One of the most praised guitar solos in rock history, celebrated for its emotional depth, Floyd Rose scooping, and melodic purity.",
+      "alphaTab": ":2 12.1 :4 14.1 12.1 | :1 11.1 | :2 12.2 :4 14.2 12.2 | :1 9.1 |",
       "exerciseLabel": "Limelight Guitar Solo Theme",
       "chords": [
         "C#m",
@@ -155,11 +247,30 @@
       ],
       "progression": "C#m - A - B - E",
       "notes": [
+        "Whammy bar scoops on initial note strikes",
+        "Singing vibrato with long analog delay repeats",
+        "E Lydian raised 4th (A#) color note"
+      ]
+    },
+    {
+      "name": "Final Chorus & Ringing Suspended Outro Cadence",
+      "timeStamp": "3:19-4:20",
+      "technique": "Asymmetric Cadence & Ringing E Major Fade",
+      "key": "E Major",
+      "description": "The climatic final chorus returning to the 7/4 and 3/4 asymmetric riff motif, culminating in a ringing suspended chord fadeout.",
+      "alphaTab": ":4 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) :4 (x.6 2.5 4.4 4.3 0.2 0.1) (x.6 2.5 4.4 4.3 0.2 0.1) | :8 0.5 2.4 2.3 0.2 0.1 0.2 2.3 2.4 | :8 2.6 4.5 4.4 3.3 0.2 0.1 0.2 3.3 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Asymmetric Cadence",
+      "chords": [
         "E",
-        "F#",
-        "D#",
-        "B",
-        "G#"
+        "Bsus4",
+        "Aadd9",
+        "F#7add11"
+      ],
+      "progression": "I - Vsus4 - IVadd9 - II7add11 - I",
+      "notes": [
+        "Seamless return from 4/4 chorus to 7/4 intro riff",
+        "Full band intensity through the final cadence",
+        "Let the final E major chord ring with stereo chorus"
       ]
     }
   ],
@@ -246,10 +357,10 @@
         "similarity": "Iconic progressive rock composition written in an asymmetric 7/4 time signature"
       },
       {
-        "title": "Comfortably Numb",
-        "artist": "Pink Floyd",
-        "difficulty": "Advanced",
-        "similarity": "Benchmark emotional, soaring melodic guitar solo with massive spatial delay and sustain"
+        "title": "Times Like These",
+        "artist": "Foo Fighters",
+        "difficulty": "Intermediate",
+        "similarity": "Modern rock anthem shifting between 7/4 intro riff and straight 4/4 verse and chorus"
       }
     ],
     "progressionPath": [
@@ -257,32 +368,32 @@
         "title": "Tom Sawyer",
         "artist": "Rush",
         "difficulty": "Advanced",
-        "similarity": "Master complex progressive rock time signatures and tight ensemble synchronization"
+        "similarity": "Advance from Limelight's open chord textures to the complex odd-meter synthesizer and guitar synchronization of Tom Sawyer"
       }
     ]
   },
   "practiceNotes": {
     "commonMistakes": [
-      "Muting the open B or high E strings while fretting complex chord shapes",
-      "Losing count during the transition from 7/4 into 3/4 and 4/4",
-      "Using excessive whammy bar dips that knock the guitar out of tune instead of subtle musical vibrato"
+      "Muting the high open E and B strings with the fretting fingers on F#7add11 and Bsus4",
+      "Losing track of the beat count during the shift between 7/4 and 3/4 measures",
+      "Over-using the whammy bar in the solo instead of executing subtle, controlled vocal vibrato"
     ],
     "practiceRoutine": [
-      "10 minutes: Open-string chord fingering clarity and arpeggiation drills",
-      "15 minutes: Metronome practice in 7/4 time (divided 4+3) at 100-132 BPM",
-      "15 minutes: Whammy bar scoop and pitch-matching drills over the solo backing track"
+      "15 minutes: Open-string chord transitions with ringing top drone strings",
+      "15 minutes: Metronome practice on the 7/4 and 3/4 asymmetric counting at 110-132 BPM",
+      "10 minutes: Whammy bar pitch control and delayed note sustain in the solo"
     ],
     "focusAreas": [
-      "Open string ring and separation",
-      "Asymmetric time signature counting",
-      "Whammy bar pitch control and vibrato width"
+      "Open B and high E drone string clarity",
+      "Metric stability across time signature shifts",
+      "Subtle whammy bar vocal inflection"
     ],
     "metronomeWork": [
-      "Count 7/4 as 1-2-3-4 followed by 1-2-3 with accents on beat 1 and beat 5 at 120 BPM"
+      "Practice 7/4 as 4 beats + 3 beats at 110, 120, and 132 BPM"
     ]
   },
   "metadata": {
-    "popularity": 96,
+    "popularity": 97,
     "dateAdded": "2026-10-16",
     "featured": true,
     "decade": "1980s",
@@ -290,16 +401,13 @@
     "tags": [
       "classic-rock",
       "advanced",
-      "arpeggios",
-      "vibrato",
-      "major-key",
       "lead-guitar",
       "rhythm-guitar",
-      "chorus",
-      "delay"
+      "syncopation",
+      "bending",
+      "open-chords"
     ],
     "learningValue": "High",
-    "estimatedLearningTime": "4-6 weeks"
+    "estimatedLearningTime": "3-4 weeks"
   }
 }
-

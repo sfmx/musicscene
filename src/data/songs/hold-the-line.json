@@ -115,16 +115,48 @@
         ],
         "progression": "F#m - C#m - D - Bm - C#7"
       }
+    },
+    {
+      "name": "Staccato Fret-Hand Muting & Harmonic Minor Turnaround",
+      "description": "Executing crisp, percussive chord stabs with immediate fretting-hand pressure releases, navigating the harmonic minor E# leading tone over the C#7 turnaround",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Staccato release: Lift fretting fingers just enough to kill string vibration without leaving string contact",
+          "Harmonic minor voice leading: The E# note (6th fret B string) resolves by half-step to F# (7th fret B string)",
+          "Pocket lock: Synchronize exactly with Jeff Porcaro's legendary half-time shuffle snare backbeat"
+        ],
+        "sequence": [
+          "Practice the staccato verse chord stabs on F#m, keeping silence strictly controlled",
+          "Highlight the E# leading tone when transitioning through the C#7 chord shape",
+          "Coordinate the half-time shuffle rhythm with metronome clicking on 2 and 4",
+          "Balance aggressive pick attack with dynamic restraint during quiet vocal lines"
+        ],
+        "tips": [
+          "Do not allow open strings to ring during staccato breaks—use the underside of fretting fingers to mute",
+          "Emphasize the raised leading tone in C#7 to outline the classical harmonic minor pull",
+          "Add subtle chorus modulation to give the rhythm guitar that classic late-1970s studio sheen"
+        ],
+        "chords": [
+          "F#m",
+          "C#7",
+          "D",
+          "Bm",
+          "E"
+        ],
+        "progression": "F#m - D - Bm - C#7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Triplet Intro & Chorus Riff",
+      "name": "Iconic Triplet Piano & Guitar Intro",
       "timeStamp": "0:00-0:35",
       "technique": "Syncopated Triplet Power Chording",
       "key": "F# Minor",
-      "description": "The quintessential late-70s arena rock riff, doubling David Paich's piano with thick guitar crunch",
-      "alphaTab": "\\tempo 97 . \\ts 4 4\n:8 2.6 4.5 4.5 2.6 4.5 4.5 2.6 4.5 | :8 4.5 6.4 6.4 4.5 6.4 6.4 4.5 6.4 | :8 5.5 7.4 7.4 5.5 7.4 7.4 5.5 7.4 | :4 2.5 :8 4.4 4.4 :4 4.5 :4 2.6 |",
+      "description": "The quintessential late-70s arena rock riff, doubling David Paich's piano with thick guitar crunch.",
+      "alphaTab": ":8 2.6 4.5 4.5 2.6 4.5 4.5 2.6 4.5 | :8 4.5 6.4 6.4 4.5 6.4 6.4 4.5 6.4 | :8 5.5 7.4 7.4 5.5 7.4 7.4 5.5 7.4 | :4 2.5 :8 4.4 4.4 :4 4.5 :4 2.6 |",
       "exerciseLabel": "Syncopated Triplet Rhythm",
       "chords": [
         "F#m",
@@ -135,20 +167,80 @@
       ],
       "progression": "F#m - C#m - D - Bm - C#7",
       "notes": [
-        "F#",
-        "C#",
-        "D",
-        "B",
-        "G#"
+        "Heavy palm-muted triplets locking with piano",
+        "Staccato choke on beat 4 of the turnaround",
+        "Aggressive bridge humbucker bite"
       ]
     },
     {
-      "name": "Blistering Blues-Rock Guitar Solo",
+      "name": "Driving Verse Stabs & Pumping Bass",
+      "timeStamp": "0:36-1:05",
+      "technique": "Staccato Verse Comping & Space Control",
+      "key": "F# Minor",
+      "description": "Tight staccato guitar stabs over a pumping bassline providing dynamic breathing room under Bobby Kimball's vocal.",
+      "alphaTab": ":4 (2.6 4.5 4.4) r :4 (2.6 4.5 4.4) r | :4 (0.6 2.5 2.4) r :4 (2.6 4.5 4.4) r | :4 (5.5 7.4 7.3) r :4 (0.6 2.5 2.4) r | :2 (4.5 6.4 6.3) :2 (4.5 6.4 4.3 6.2) |",
+      "exerciseLabel": "Verse Staccato Stabs",
+      "chords": [
+        "F#m",
+        "E/F#",
+        "D",
+        "C#7"
+      ],
+      "progression": "F#m - E/F# - D - C#7",
+      "notes": [
+        "Instant fretting-hand muting to create dry rhythmic silence",
+        "Follow the kick drum downbeats",
+        "Clean leading tone resolution into the chorus"
+      ]
+    },
+    {
+      "name": "Pre-Chorus Build & Dominant Turnaround",
+      "timeStamp": "1:06-1:20",
+      "technique": "Crescendo Power Chords & Leading Tone Tension",
+      "key": "F# Minor",
+      "description": "A driving rhythmic build moving from D major through Bm to a suspended C#7 dominant that explodes into the chorus hook.",
+      "alphaTab": ":4 (5.5 7.4 7.3) (5.5 7.4 7.3) :4 (7.5 9.4 9.3) (7.5 9.4 9.3) | :2 (4.5 6.4 6.3 6.2) :4 (4.5 6.4 6.3 6.2) (4.5 6.4 6.3 6.2) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Pre-Chorus Build & Turnaround",
+      "chords": [
+        "D",
+        "Bm",
+        "C#7"
+      ],
+      "progression": "VI - iv - V7",
+      "notes": [
+        "Gradual crescendo over four bars",
+        "Emphasize the sharp leading tone E# on C#7",
+        "Unison band hit landing on chorus beat 1"
+      ]
+    },
+    {
+      "name": "Pounding Arena Chorus Groove",
+      "timeStamp": "1:21-1:50",
+      "technique": "Full-Throttle Triplet Rhythm & Big Chords",
+      "key": "F# Minor",
+      "description": "The massive chorus hook ('Hold the line, love isn't always on time') uniting piano, guitar, and multi-tracked vocal harmonies.",
+      "alphaTab": ":8 2.6 4.5 4.5 2.6 4.5 4.5 2.6 4.5 | :8 4.5 6.4 6.4 4.5 6.4 6.4 4.5 6.4 | :8 5.5 7.4 7.4 5.5 7.4 7.4 5.5 7.4 | :2 (4.5 6.4 4.3 6.2) :2 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Arena Chorus Groove",
+      "chords": [
+        "F#m",
+        "C#m",
+        "D",
+        "C#7"
+      ],
+      "progression": "i - v - VI - V7",
+      "notes": [
+        "Wide open power chords with ringing overtones",
+        "Triplet accents locking with Paich's piano keys",
+        "Maximum stage presence and pick velocity"
+      ]
+    },
+    {
+      "name": "Steve Lukather Guitar Solo Masterclass",
       "timeStamp": "2:08-2:45",
       "technique": "Pinched Harmonics & High-Velocity Bends",
       "key": "F# Minor",
-      "description": "Steve Lukather's celebrated solo that put him on the map as one of the premier session and rock guitarists of all time",
-      "alphaTab": "\\tempo 97 . \\ts 4 4\n:2 14.1 :4 17.1 14.1 | :2 17.2 :4 14.2 12.2 | :4 14.3 :8 12.3 14.3 :2 14.3 | :1 14.4 |",
+      "description": "Steve Lukather's celebrated solo that put him on the map as one of the premier session and rock guitarists of all time.",
+      "alphaTab": ":2 14.1 :4 17.1 14.1 | :2 17.2 :4 14.2 12.2 | :4 14.3 :8 12.3 14.3 :2 14.3 | :1 14.4 |",
       "exerciseLabel": "Hold the Line Solo Theme",
       "chords": [
         "F#m",
@@ -158,11 +250,30 @@
       ],
       "progression": "F#m - D - E - C#7",
       "notes": [
-        "F#",
-        "A",
-        "B",
-        "C#",
-        "E"
+        "Singing 14th-position F# minor blues bends",
+        "Screaming pinched harmonics grazed with thumb flesh",
+        "Aggressive wide finger vibrato"
+      ]
+    },
+    {
+      "name": "Outro Vamp & Searing Lead Fills",
+      "timeStamp": "2:46-3:57",
+      "technique": "Improvised Blues-Rock Lead Fills & Shuffle Outro",
+      "key": "F# Minor",
+      "description": "High-octane fadeout featuring continuous triplet chugging underpinning Lukather's virtuosic upper-register blues fills.",
+      "alphaTab": ":8 2.6 4.5 4.5 2.6 4.5 4.5 2.6 4.5 | :8 14.1 17.1 14.1 17.2 14.2 12.3 14.3 12.3 | :8 5.5 7.4 7.4 5.5 7.4 7.4 5.5 7.4 | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Outro Triplet Vamp & Fills",
+      "chords": [
+        "F#m",
+        "C#m",
+        "D",
+        "C#7"
+      ],
+      "progression": "i - v - VI - V7",
+      "notes": [
+        "Maintain tireless triplet rhythm underneath",
+        "Freely trade lead fills around the vocal ad-libs",
+        "Smooth studio fadeout"
       ]
     }
   ],
@@ -251,7 +362,7 @@
         "title": "Don't Stop Believin'",
         "artist": "Journey",
         "difficulty": "Intermediate",
-        "similarity": "Driving piano and guitar interplay, anthemic melodic solos, and polished late-70s production"
+        "similarity": "Driving piano-and-guitar power rock anthem featuring syncopated palm muting and singing Neal Schon leads"
       }
     ],
     "progressionPath": [
@@ -259,28 +370,28 @@
         "title": "Rosanna",
         "artist": "Toto",
         "difficulty": "Advanced",
-        "similarity": "Step up to the master level of shuffle grooves and high-velocity pentatonic phrasing"
+        "similarity": "Take your shuffle pocket and Steve Lukather lead phrasing to Toto's crowning Grammy-winning masterpiece"
       }
     ]
   },
   "practiceNotes": {
     "commonMistakes": [
-      "Rushing the triplet shuffle and turning it into straight eighth notes",
-      "Missing the leading tone E# over the C#7 turnaround chord",
-      "Inconsistent thumb contact causing pinched harmonics to sound dull or muffled"
+      "Playing straight eighth notes instead of the driving triplet shuffle feel",
+      "Letting chord stabs ring out over the verse rather than muting sharply on the offbeats",
+      "Over-bending or under-bending the 14th-position solo licks"
     ],
     "practiceRoutine": [
-      "10 minutes: Triplet subdivision alternate picking drills with metronome",
-      "15 minutes: Pinched harmonic accuracy drills on frets 9 through 14",
-      "15 minutes: Solo transcription and bending intonation practice with backing track"
+      "10 minutes: Metronome triplet subdivision drills at 97 BPM",
+      "15 minutes: Staccato verse muting and clean dominant turnaround shifts",
+      "15 minutes: Solo practice focusing on pinched harmonic consistency"
     ],
     "focusAreas": [
-      "Triplet groove tightness",
-      "Pinched harmonic reliability",
-      "Dynamic contrast between rhythm stabs and lead fills"
+      "Strict triplet shuffle groove accuracy",
+      "Pinched harmonic thumb placement",
+      "Crisp dynamic contrast between verse space and chorus power"
     ],
     "metronomeWork": [
-      "Set metronome to 97 BPM with triplet clicks and practice locked rhythm stabs on beats 1, 2, 3, and 4"
+      "Set metronome to 97 BPM with triplet click, practicing clean chord strikes on each beat and offbeat"
     ]
   },
   "metadata": {
@@ -291,17 +402,15 @@
     "iconicRiff": true,
     "tags": [
       "classic-rock",
+      "hard-rock",
       "advanced",
-      "power-chords",
-      "bending",
-      "vibrato",
-      "minor-key",
       "lead-guitar",
       "rhythm-guitar",
-      "syncopation"
+      "power-chords",
+      "minor-key",
+      "bending"
     ],
     "learningValue": "High",
-    "estimatedLearningTime": "3-5 weeks"
+    "estimatedLearningTime": "3-4 weeks"
   }
 }
-

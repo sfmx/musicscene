@@ -46,7 +46,6 @@
           "D"
         ],
         "progression": "I - IVadd9 - ii7 - IV - V",
-        "progressionDescription": "Nuno Bettencourt's masterclass in solo acoustic accompaniment: a shimmering G to Cadd9 to Am7 to C-D loop locked to a hypnotic percussive slap on beats 2 and 4.",
         "description": "Nuno Bettencourt's masterclass in solo acoustic accompaniment: a shimmering G to Cadd9 to Am7 to C-D loop locked to a hypnotic percussive slap on beats 2 and 4."
       },
       "sectionProgressions": [
@@ -67,12 +66,6 @@
           "progression": "Am7 - D7 - G - G7 - C - Cm - G",
           "romanNumerals": "ii7 - V7 - I - V7/IV - IV - iv - I",
           "description": "Features the gorgeous minor-plagal C major to C minor (IV to iv) cadence before resolving home to G"
-        },
-        {
-          "section": "Scale Practice Exercise",
-          "progression": "I - IVadd9 - ii7 - V",
-          "romanNumerals": "Scale Practice",
-          "description": "G major chord-tone arpeggio and percussive slap coordination drill"
         }
       ],
       "harmonicFunction": [
@@ -123,15 +116,50 @@
         ],
         "progression": "G - Cadd9 - Am7 - C - D"
       }
+    },
+    {
+      "name": "Secondary Dominant & Minor Plagal Voice Leading",
+      "description": "Navigating the poignant harmonic transitions of the bridge and chorus, highlighting the chromatic bass moves, the B7 secondary dominant pulling into Em, and the classic C to Cm minor-plagal cadence",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chromatic shift: E natural in C major (1st fret B string) steps down to Eb in C minor (4th fret B string / barre)",
+          "Secondary dominant: B7 (X-2-1-2-0-2) introduces the D# leading tone pulling into E minor",
+          "Bass walkup: Thumb-over D/F# (2-X-0-2-3-2) smoothly connecting G and Em"
+        ],
+        "sequence": [
+          "Practice the bridge transition from G to B7 to Em, emphasizing the leading-tone resolution",
+          "Isolate the C major to C minor shift, feeling the bittersweet emotional descent",
+          "Maintain the percussive slap groove throughout these harmonically rich sections",
+          "Conclude with the gentle open G major chord ringing into silence"
+        ],
+        "tips": [
+          "Use your fretting thumb over the top for the F# bass note in D/F#",
+          "Ensure the Eb note in the Cm chord speaks clearly to bring out the minor plagal character",
+          "Keep dynamic control soft and intimate, supporting Gary Cherone's gentle vocal harmonies"
+        ],
+        "chords": [
+          "G",
+          "B7",
+          "Em",
+          "C",
+          "Cm",
+          "D/F#"
+        ],
+        "progression": "G - B7 - Em - C - Cm - G"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Fingerstyle Groove",
-      "timeStamp": "0:00-1:12",
+      "name": "Intro Fingerstyle Pluck-and-Slap Groove",
+      "timeStamp": "0:00-0:30",
       "technique": "Percussive Fingerstyle Acoustic Slap",
       "key": "G Major",
       "description": "Nuno Bettencourt's iconic G - Cadd9 - Am7 - C - D fingerstyle pattern with backbeat string slaps.",
+      "alphaTab": ":4 3.6 (0.3 3.2 3.1) 3.6 (0.3 3.2 3.1) | :4 3.5 (0.3 3.2 3.1) 3.5 (0.3 3.2 3.1) | :4 0.5 (0.3 1.2 3.1) 0.5 (0.3 1.2 0.1) | :4 3.5 (0.3 1.2 0.1) 0.4 (2.3 3.2 2.1) |",
+      "exerciseLabel": "Main Verse Pluck & Slap Loop",
       "chords": [
         "G",
         "Cadd9",
@@ -144,52 +172,113 @@
         "Keep frets 3 on strings 1 and 2 anchored through G and Cadd9",
         "Land a crisp thumb slap on beats 2 and 4 of every bar",
         "Split the fourth bar between C major (2 beats) and D major (2 beats)"
-      ],
+      ]
+    },
+    {
+      "name": "Verse 1 Acoustic Dialogue ('Saying I love you...')",
+      "timeStamp": "0:31-1:12",
+      "technique": "Intimate Fingerstyle Pocket & Melody Accents",
+      "key": "G Major",
+      "description": "The first verse arrangement featuring Nuno's percussive groove supporting Gary Cherone's heartfelt lead vocal.",
       "alphaTab": ":4 3.6 (0.3 3.2 3.1) 3.6 (0.3 3.2 3.1) | :4 3.5 (0.3 3.2 3.1) 3.5 (0.3 3.2 3.1) | :4 0.5 (0.3 1.2 3.1) 0.5 (0.3 1.2 0.1) | :4 3.5 (0.3 1.2 0.1) 0.4 (2.3 3.2 2.1) |",
-      "exerciseLabel": "Main Verse Pluck & Slap Loop"
-    },
-    {
-      "name": "Bridge & Minor Plagal Cadence",
-      "timeStamp": "1:12-2:05",
-      "technique": "Secondary Dominant & Borrowed Minor Voice Leading",
-      "key": "G Major",
-      "description": "The emotional bridge moving through B7 to Em and resolving via the classic C to Cm minor-plagal cadence.",
-      "chords": [
-        "G",
-        "B7",
-        "Em",
-        "C",
-        "Cm"
-      ],
-      "progression": "G - B7 - Em - C - Cm - G",
-      "notes": [
-        "Let the B7 chord (X-2-1-2-0-2) pull soulfully into Em",
-        "Bring out the chromatic move from E natural (in C major) to Eb (in C minor) before resolving to D (in G major)",
-        "Keep the percussive backbeat steady underneath the richer harmonies"
-      ],
-      "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) (2.5 1.4 2.3 0.2 2.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.5 2.4 0.3 1.2 0.1) (3.5 5.4 5.3 4.2 3.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
-      "exerciseLabel": "Bridge B7 & C-to-Cm Cadence"
-    },
-    {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:00-0:30",
-      "technique": "G Major Upper-Voice Melody Drill",
-      "key": "G Major",
-      "description": "Arpeggio and upper-string voice-leading exercise tracing the high G → E → F# melody notes over the main progression.",
+      "exerciseLabel": "Verse 1 Fingerstyle Dialogue",
       "chords": [
         "G",
         "Cadd9",
         "Am7",
+        "C",
         "D"
       ],
-      "progression": "I - IVadd9 - ii7 - V",
+      "progression": "G - Cadd9 - Am7 - C - D",
       "notes": [
-        "Pluck bass notes with your thumb (p) and treble strings with index (i), middle (m), and ring (a)",
-        "Listen to the top-string melody: 3rd fret (G) → open (E) → 2nd fret (F#)",
-        "Keep your right hand relaxed and close to the strings"
+        "Lift pinky on Am7 from 3rd fret to open high E string on beat 4",
+        "Maintain effortless 92 BPM pocket",
+        "Keep bass notes warm and articulate"
+      ]
+    },
+    {
+      "name": "Bridge Secondary Dominant (B7 to Em Tension)",
+      "timeStamp": "1:13-1:45",
+      "technique": "Secondary Dominant Voice Leading",
+      "key": "G Major",
+      "description": "The emotional bridge ('What would you do if my heart was torn in two?') moving through a dramatic B7 chord that resolves into Em.",
+      "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) (2.5 1.4 2.3 0.2 2.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (0.5 2.4 0.3 1.2 0.1) (x.6 0.4 2.3 1.2 2.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Bridge B7 to Em Progression",
+      "chords": [
+        "G",
+        "B7",
+        "Em",
+        "Am7",
+        "D7"
       ],
-      "alphaTab": ":8 3.6 0.3 3.2 3.1 3.5 0.3 3.2 3.1 | :8 0.5 0.3 1.2 3.1 0.4 2.3 3.2 2.1 |",
-      "exerciseLabel": "Fingerstyle Voice-Leading Drill"
+      "progression": "I - III7 - vi - ii7 - V7",
+      "notes": [
+        "Emphasize the D# note in B7 resolving to E in Em",
+        "Smooth circle-of-fifths voice leading",
+        "Keep the percussive slap steady under the new chords"
+      ]
+    },
+    {
+      "name": "Chorus Minor-Plagal Cadence (C to Cm Resolution)",
+      "timeStamp": "1:46-2:25",
+      "technique": "Minor Plagal Cadence & Chromatic Descent",
+      "key": "G Major",
+      "description": "The unforgettable chorus resolution featuring the poignant shift from C major to borrowed C minor before resolving home to G.",
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) (3.5 5.4 5.3 4.2 3.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (3.5 2.4 0.3 1.2 0.1) (3.5 5.4 5.3 4.2 3.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Chorus C to Cm Cadence",
+      "chords": [
+        "C",
+        "Cm",
+        "G"
+      ],
+      "progression": "IV - iv - I",
+      "notes": [
+        "Listen for the chromatic voice leading: E natural to Eb to D",
+        "Clean barre chord execution on the 3rd-fret Cm",
+        "Let the final G chord resonate warmly"
+      ]
+    },
+    {
+      "name": "Verse 2 Rhythmic Nuances & Bass Walkups",
+      "timeStamp": "2:26-3:10",
+      "technique": "Thumb-Wrapped Bass Movement & Grace Notes",
+      "key": "G Major",
+      "description": "Second verse introducing subtle thumb-over bass notes (D/F#), syncopated hammer-ons, and dynamic vocal interplay.",
+      "alphaTab": ":4 3.6 (0.3 3.2 3.1) 3.6 (0.3 3.2 3.1) | :4 3.5 (0.3 3.2 3.1) 3.5 (0.3 3.2 3.1) | :8 0.5 2.4 0.3 1.2 :4 (0.3 1.2 3.1) (0.3 1.2 0.1) | :4 (2.6 0.4 2.3 3.2) :4 (3.6 2.5 0.4 0.3) |",
+      "exerciseLabel": "Verse 2 Rhythmic Nuances",
+      "chords": [
+        "G",
+        "Cadd9",
+        "Am7",
+        "D/F#"
+      ],
+      "progression": "I - IVadd9 - ii7 - V6",
+      "notes": [
+        "Use fretting hand thumb to fret the low F# note on string 6",
+        "Crisp grace-note hammer-ons on the Am7 chord",
+        "Seamless dynamic balance between accompaniment and vocals"
+      ]
+    },
+    {
+      "name": "Extended Outro Vocal Harmonies & Percussive Vamp",
+      "timeStamp": "3:11-5:34",
+      "technique": "Acoustic Slap Vamp & High Melody Ornaments",
+      "key": "G Major",
+      "description": "The transcendent outro where Nuno and Gary's lush two-part vocal harmonies soar over the hypnotic percussive acoustic loop to the gentle final chord.",
+      "alphaTab": ":4 3.6 (0.3 3.2 3.1) 3.6 (0.3 3.2 3.1) | :4 3.5 (0.3 3.2 3.1) 3.5 (0.3 3.2 3.1) | :4 0.5 (0.3 1.2 3.1) 0.5 (0.3 1.2 0.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Outro Harmonies & Vamp",
+      "chords": [
+        "G",
+        "Cadd9",
+        "Am7",
+        "G"
+      ],
+      "progression": "I - IVadd9 - ii7 - I",
+      "notes": [
+        "Maintain the hypnotic slap groove as the vocals soar",
+        "Add subtle high-register chord embellishments",
+        "Conclude on a soft, resonant open G major chord"
+      ]
     }
   ],
   "equipment": {
@@ -209,11 +298,11 @@
         "Fender Acoustasonic"
       ],
       "settings": {
-        "gain": "3 (pure, uncolored acoustic headroom)",
-        "treble": "6 (crisp string-on-fret percussive click)",
-        "middle": "5 (natural cedar/spruce midrange)",
-        "bass": "5 (controlled low end so thumb slaps don't boom)",
-        "presence": "6 (intimate unplugged detail)"
+        "gain": "3.0",
+        "treble": "6.0",
+        "middle": "5.0",
+        "bass": "5.0",
+        "presence": "6.0"
       }
     },
     "effects": {
@@ -248,81 +337,78 @@
       "steps": [
         "Execute the D7/F# thumb-wrapped bass walkups and rapid grace-note hammer-ons",
         "Nail the staccato stops and passionate strumming climax in the final chorus",
-        "Sing the lead or harmony vocal line while maintaining the syncopated slap groove"
+        "Sing lead or harmony vocals while maintaining the flawless fingerstyle percussive pocket"
       ],
-      "timeEstimate": "4-6 weeks"
+      "timeEstimate": "3-5 weeks"
     }
   },
-  "practiceNotes": {
-    "commonMistakes": [
-      "Lifting all fingers when moving from G to Cadd9 instead of keeping frets 3 on strings 1 and 2 anchored",
-      "Pausing the percussive slap on beats 2 and 4 when changing chords",
-      "Slapping with the flat palm (which sounds thuddy) instead of letting the thumb bounce low strings off the frets"
-    ],
-    "practiceRoutine": [
-      "4 minutes: Right-hand Pluck-Slap-Pluck-Slap groove isolation on a single G chord at 75 BPM",
-      "4 minutes: G → Cadd9 → Am7 → C → D loop with unbroken 2-and-4 backbeat slaps",
-      "4 minutes: Bridge transitions (B7 → Em and C → Cm → G)",
-      "4 minutes: Full song playthrough at 92 BPM"
-    ],
-    "focusAreas": [
-      "Consistent snare-like thumb slap on beats 2 and 4",
-      "Syncopated '&-of-2' chord pluck immediately after the beat-2 slap",
-      "Smooth C major to C minor barre transition"
-    ],
-    "metronomeWork": [
-      "Set metronome to 75 BPM and line up your thumb slaps directly on clicks 2 and 4",
-      "Increase in 5 BPM increments up to 92 BPM",
-      "Practice transitioning from the fingerstyle groove into the strummed bridge sections without rushing"
-    ]
-  },
   "relatedSongs": {
-    "sameArtist": [],
+    "sameArtist": [
+      {
+        "title": "Hole Hearted",
+        "difficulty": "Intermediate",
+        "similarity": "Upbeat 12-string acoustic groove driven by syncopated strumming and infectious pop hooks"
+      }
+    ],
     "similarTechniques": [
       {
         "title": "Tears in Heaven",
         "artist": "Eric Clapton",
         "difficulty": "Intermediate",
-        "similarity": "Essential 1990s unplugged fingerstyle ballad combining bass-note picking with sophisticated voice leading"
+        "similarity": "Acoustic fingerstyle ballad with delicate bass-chord interplay, walking basslines, and emotional vocal delivery"
       },
       {
-        "title": "Blackbird",
-        "artist": "The Beatles",
+        "title": "Dust in the Wind",
+        "artist": "Kansas",
         "difficulty": "Intermediate",
-        "similarity": "Builds right-hand fingerstyle independence and rhythmic brush/pluck coordination in G major"
+        "similarity": "Benchmark Travis picking acoustic classic featuring moving chromatic inner-voice chord extensions"
       }
     ],
     "progressionPath": [
       {
-        "title": "Stop This Train",
-        "artist": "John Mayer",
-        "difficulty": "Advanced",
-        "similarity": "Takes the slap-and-pluck percussive acoustic technique to an advanced level"
+        "title": "Tears in Heaven",
+        "artist": "Eric Clapton",
+        "difficulty": "Intermediate",
+        "similarity": "Advance your fingerstyle acoustic voice leading and bassline movement from More Than Words to Clapton's classic"
       }
     ]
   },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Hitting the guitar top too aggressively on the beats 2 and 4 slaps, producing an unpleasant boom rather than a crisp fret snap",
+      "Losing the ring and pinky finger anchor on the 3rd fret when transitioning from G to Cadd9",
+      "Rushing through the C to Cm chord change during the chorus instead of letting the chromatic voice leading breathe"
+    ],
+    "practiceRoutine": [
+      "10 minutes: Right-hand pluck-and-slap groove on a single G chord at 80-92 BPM",
+      "15 minutes: Four-bar verse chord transitions (G - Cadd9 - Am7 - C - D) with percussive backbeat",
+      "15 minutes: Bridge and chorus secondary dominant (B7) and minor-plagal (Cm) voice leading"
+    ],
+    "focusAreas": [
+      "Controlled, relaxed percussive thumb slap on beats 2 and 4",
+      "Consistent ringing of the 3rd-fret high G and D notes",
+      "Chromatic voice leading clarity in the C to Cm resolution"
+    ],
+    "metronomeWork": [
+      "Set metronome to 92 BPM and feel the clicks on beats 2 and 4 to reinforce the acoustic snare slap"
+    ]
+  },
   "metadata": {
-    "popularity": 96,
+    "popularity": 97,
     "dateAdded": "2026-10-16",
     "featured": true,
     "decade": "1990s",
     "iconicRiff": true,
     "tags": [
-      "open-chords",
-      "barre-chords",
+      "acoustic-guitar",
       "fingerpicking",
       "percussive",
-      "syncopation",
-      "acoustic-guitar",
-      "fingerstyle",
-      "major-key",
-      "chord-progressions",
-      "voice-leading",
-      "pop",
-      "intermediate"
+      "intermediate",
+      "ballad",
+      "classic-rock",
+      "major-key"
     ],
     "learningValue": "High",
     "estimatedLearningTime": "2-4 weeks"
   }
 }
-
