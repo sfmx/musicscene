@@ -116,6 +116,38 @@
         ],
         "progression": "C - Am - G - C"
       }
+    },
+    {
+      "name": "Walking Basslines & Capo Transposition Mechanics",
+      "description": "Using a 2nd-fret capo to transpose C-shapes into concert D major, integrating descending bass walkdowns on strings 5 and 6 to connect C, Am, and G chords seamlessly",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Capo 2nd fret: Open C shape sounds as concert D major; Am sounds as Bm; G sounds as A major",
+          "Bass transition: C (fret 3 string 5) → B (fret 2 string 5) → Am (open string 5) → G (fret 3 string 6)",
+          "Fingerpicking balance: Thumb plays downstrokes on bass strings while fingers 1 and 2 pluck upward"
+        ],
+        "sequence": [
+          "Affix capo to fret 2 and check intonation on all strings",
+          "Walk the bassline cleanly from C down to Am on beats 3 and 4",
+          "Step from Am into open G major, letting the treble strings chime",
+          "Resolve back into the rolling fingerstyle C major intro figure"
+        ],
+        "tips": [
+          "Anchor the right-hand pinky lightly on the guitar top if it helps stabilize your alternating thumb",
+          "Ensure the walking bass notes sound at equal volume to the chords",
+          "Maintain an unhurried, comfortable 92 BPM folk tempo"
+        ],
+        "chords": [
+          "C",
+          "Am",
+          "G",
+          "F",
+          "Em"
+        ],
+        "progression": "C - Am - G - F - C"
+      }
     }
   ],
   "sections": [
@@ -217,11 +249,11 @@
         "Fishman Loudbox"
       ],
       "settings": {
-        "gain": "3 (clean acoustic headroom)",
-        "treble": "6 (bright sparkle on steel strings)",
-        "middle": "5 (warm folk body)",
-        "bass": "5 (clean bass note definition)",
-        "presence": "5 (sweet finger attack)"
+        "gain": "3.0",
+        "treble": "6.0",
+        "middle": "5.0",
+        "bass": "5.0",
+        "presence": "5.0"
       }
     },
     "effects": {
