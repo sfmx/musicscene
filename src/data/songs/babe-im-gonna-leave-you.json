@@ -53,16 +53,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Acoustic Fingerpicked Descent",
+          "section": "Acoustic Fingerpicked Chromatic Descent",
           "progression": "Am - Am/G - Am/F# - F - E7",
           "romanNumerals": "i - i4/2 - i6 - VI - V7",
           "description": "Intricate PIMA fingerpicked arpeggios over a chromatic descending bassline"
         },
         {
-          "section": "Heavy Electric Chorus Explosion",
+          "section": "Verse 1 Vocal Intimacy & Stepwise Voice Leading",
+          "progression": "Am - Am/G - Am/F# - F - E7",
+          "romanNumerals": "i - i4/2 - i6 - VI - V7",
+          "description": "Delicate acoustic counterpoint underpinning Robert Plant's mournful vocal entry"
+        },
+        {
+          "section": "Heavy Electric Explosion ('Baby, Baby, I Wanna Leave You!')",
           "progression": "Am - C - D - F - E",
           "romanNumerals": "i - III - IV - VI - V",
           "description": "Thunderous distorted full-band crashes under Robert Plant's soaring cries"
+        },
+        {
+          "section": "Flamenco Rasgueado Strums & Interlude",
+          "progression": "Am - Am/G - Am/F# - F - E7",
+          "romanNumerals": "i - i4/2 - i6 - VI - V7",
+          "description": "Flamenco-inspired rhythmic finger strumming building intense acoustic kinetic energy"
+        },
+        {
+          "section": "Electric Jam & Dynamic Ascending Crescendo",
+          "progression": "Am - C - D - F - E",
+          "romanNumerals": "i - III - IV - VI - V",
+          "description": "Cranked Telecaster power chords driving relentless rhythm section crescendos"
+        },
+        {
+          "section": "Outro Acoustic Decrescendo & Final Cadence",
+          "progression": "Am - Am/G - Am/F# - F - E7 - Am",
+          "romanNumerals": "i - i4/2 - i6 - VI - V7 - i",
+          "description": "Sudden drop back into intimate solo acoustic fingerpicking fading to silence"
         }
       ],
       "harmonicFunction": [
@@ -106,13 +130,45 @@
         ],
         "progression": "Am - Am/G - Am/F# - F - E7"
       }
+    },
+    {
+      "name": "Stepwise Descending Bass Voice Leading & Thumb-Over Fretting",
+      "description": "Using fret-hand thumb fretting on the 6th string to preserve ringing upper open chord tones during stepwise bass descents",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Wrap the fretting-hand thumb over the top of the neck to anchor the bass notes (F# at fret 2, F at fret 1)",
+          "Keep index, middle, and ring fingers arched high so the open high E and B strings ring freely",
+          "Maintain continuous ringing sustain across all chromatic chord changes"
+        ],
+        "sequence": [
+          "Fret standard Am shape: index on fret 1 (B string), middle on fret 2 (D string), ring on fret 2 (G string)",
+          "For Am/G, lift ring finger and fret 3rd fret of low E with ring finger (or pinky)",
+          "For Am/F#, hook thumb over the top to fret the 2nd fret of low E",
+          "For F, slide thumb down to 1st fret of low E while maintaining the C and A notes on strings 2 and 3"
+        ],
+        "tips": [
+          "A guitar with a comfortable slim neck profile eases thumb-over fretting reach",
+          "Keep the thumb pad flat against the side of the 6th string to avoid muting the 5th string when it needs to ring",
+          "Practice shifting slowly between the Am/F# and F shapes until the transition is silent"
+        ],
+        "chords": [
+          "Am",
+          "Am/G",
+          "Am/F#",
+          "F",
+          "E7"
+        ],
+        "progression": "Chromatic Walkdown"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Fingerpicked Chromatic Descent",
+      "name": "Acoustic Fingerpicked Chromatic Descent",
       "timeStamp": "0:00-1:05",
-      "technique": "PIMA Fingerpicking & Chromatic Bass",
+      "technique": "Flamenco-Style Fingerpicking & Dynamic Light/Shade Explosions",
       "key": "A Minor",
       "description": "Page's legendary acoustic fingerpicking masterclass opening Led Zeppelin's debut album side one.",
       "chords": [
@@ -132,9 +188,31 @@
       "exerciseLabel": "Fingerpicked Acoustic Walkdown"
     },
     {
-      "name": "Heavy Electric Explosion",
+      "name": "Verse 1 Vocal Intimacy & Stepwise Voice Leading",
+      "timeStamp": "1:05-1:45",
+      "technique": "Stepwise Descending Bass Voice Leading & Thumb-Over Fretting",
+      "key": "A Minor",
+      "description": "Gentle fingerpicked verse backing Robert Plant's vulnerable opening narrative.",
+      "chords": [
+        "Am",
+        "Am/G",
+        "Am/F#",
+        "F",
+        "E7"
+      ],
+      "progression": "Am - Am/G - Am/F# - F - E7",
+      "notes": [
+        "Thumb-over fretting on frets 2 and 1 of string 6",
+        "Even right-hand PIMA finger rolls across beats",
+        "Dynamic restraint setting up the impending electric eruption"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 3.6 2.4 2.3 1.2 | :8 2.6 2.4 2.3 1.2 1.6 3.4 2.3 1.2 | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Verse Intimate Walkdown"
+    },
+    {
+      "name": "Heavy Electric Explosion ('Baby, Baby, I Wanna Leave You!')",
       "timeStamp": "1:45-2:25",
-      "technique": "Light and Shade Dynamics",
+      "technique": "Flamenco-Style Fingerpicking & Dynamic Light/Shade Explosions",
       "key": "A Minor",
       "description": "The sudden eruption of full-band distorted rock power on 'Baby, baby, I wanna leave you!'.",
       "chords": [
@@ -150,8 +228,75 @@
         "Heavy downstroke power chords",
         "Lock tight with John Bonham's thunderous bass drum"
       ],
-      "alphaTab": ":2 (0.5 2.4 2.3 1.2) :2 (3.5 2.4 0.3 1.2) | :2 (0.4 2.3 3.2 2.1) :4 (1.6 3.5 3.4 2.3) :4 (0.6 2.5 2.4 1.3) |",
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2) :2 (3.5 2.4 0.3 1.2) | :2 (0.4 2.3 3.2 2.1) :4 (1.6 3.5 3.4 2.3) :4 (0.6 2.5 2.4 1.3) | :1 (0.5 2.4 2.3 1.2) |",
       "exerciseLabel": "Heavy Electric Stabs"
+    },
+    {
+      "name": "Flamenco Rasgueado Strums & Interlude",
+      "timeStamp": "2:25-3:15",
+      "technique": "Flamenco-Style Fingerpicking & Dynamic Light/Shade Explosions",
+      "key": "A Minor",
+      "description": "Flamenco-inspired rhythmic finger rolls and dramatic acoustic strumming accelerating the pace.",
+      "chords": [
+        "Am",
+        "Am/G",
+        "Am/F#",
+        "F",
+        "E7"
+      ],
+      "progression": "Am - Am/G - Am/F# - F - E7",
+      "notes": [
+        "Right-hand fingernail flicking across all six strings",
+        "Dramatic percussive accent on beat 1",
+        "Maintain clean chord definition despite aggressive strumming"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (0.5 2.4 2.3 1.2 0.1) :2 (3.6 2.4 2.3 1.2 0.1) | :4 (2.6 2.4 2.3 1.2 0.1) :4 (1.6 3.4 2.3 1.2 0.1) :2 (0.6 2.5 0.4 1.3 0.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Flamenco Rasgueado Rolls"
+    },
+    {
+      "name": "Electric Jam & Dynamic Ascending Crescendo",
+      "timeStamp": "4:10-5:15",
+      "technique": "Flamenco-Style Fingerpicking & Dynamic Light/Shade Explosions",
+      "key": "A Minor",
+      "description": "Cranked Telecaster power chords driving relentless rhythm section crescendos at maximum volume.",
+      "chords": [
+        "Am",
+        "C",
+        "D",
+        "F",
+        "E"
+      ],
+      "progression": "Am - C - D - F - E",
+      "notes": [
+        "Cranked Supro amplifier saturation with cutting high-mid bite",
+        "Aggressive pick attack on the Am to C to D progression",
+        "Heavy vibrato on sustained power chords"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3) :4 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) | :4 (1.6 3.5 3.4) :4 (0.6 2.5 2.4) :2 (0.5 2.4 2.3) | :1 (0.5 2.4 2.3) |",
+      "exerciseLabel": "Electric Dynamic Crescendo"
+    },
+    {
+      "name": "Outro Acoustic Decrescendo & Final Cadence",
+      "timeStamp": "5:45-6:42",
+      "technique": "Stepwise Descending Bass Voice Leading & Thumb-Over Fretting",
+      "key": "A Minor",
+      "description": "Sudden drop back into intimate solo acoustic fingerpicking fading to silence.",
+      "chords": [
+        "Am",
+        "Am/G",
+        "Am/F#",
+        "F",
+        "E7",
+        "Am"
+      ],
+      "progression": "Am - Am/G - Am/F# - F - E7 - Am",
+      "notes": [
+        "Return to gentle, intimate PIMA fingerpicking",
+        "Gradual decrescendo as the tempo slightly broadens",
+        "Let the final open Am chord sustain into room silence"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 3.6 2.4 2.3 1.2 | :8 2.6 2.4 2.3 1.2 1.6 3.4 2.3 1.2 | :2 (0.6 2.5 0.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 1.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Outro Acoustic Cadence"
     }
   ],
   "equipment": {
@@ -172,7 +317,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "8 (cranked small-combo tube saturation for electric)",
+        "gain": "8",
         "treble": "6.5",
         "middle": "7",
         "bass": "6",

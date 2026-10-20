@@ -54,22 +54,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Clean Intro & Verse Arpeggios",
+          "section": "Clean Intro Arpeggio & Dark Ambiance",
           "progression": "Bm - G - Em - F#",
           "romanNumerals": "i - VI - iv - V",
           "description": "Lyrical classical-influenced clean arpeggiation featuring James Hetfield's signature open-string voice leading"
         },
         {
-          "section": "Heavy Chorus Riff",
+          "section": "Intro Melodic Guitar Solo 1 (Kirk Hammett Clean Lead)",
+          "progression": "Bm - G - Em - F#",
+          "romanNumerals": "i - VI - iv - V",
+          "description": "Kirk Hammett's expressive clean neck-pickup solo floating over the acoustic arpeggios"
+        },
+        {
+          "section": "Heavy Chorus Explosion ('Hold My Breath as I Wish for Death')",
           "progression": "B5 - G5 - E5 - F#5",
           "romanNumerals": "i5 - VI5 - iv5 - V5",
           "description": "Explosive wall of quad-tracked Mesa Boogie distortion locking with Lars Ulrich's double kick accents"
         },
         {
-          "section": "Machine Gun Gallop & Final Solo",
-          "progression": "E5 - F5 - E5 - G5 - E5 - Bb5 - A5",
-          "romanNumerals": "i5 - ♭II5 - i5 - ♭III5 - i5 - ♭V5 - IV5",
-          "description": "Sextuplet synchronized palm-muted thrash breakdown under Kirk Hammett's blistering tapped solo"
+          "section": "Middle Solo 2 & Twin Harmony Guitars",
+          "progression": "Bm - G - Em - F#",
+          "romanNumerals": "i - VI - iv - V",
+          "description": "Dual harmonized leads ascending in diatonic thirds building emotional intensity before the war sounds"
+        },
+        {
+          "section": "Machine-Gun Sextuplet Breakdown Riff",
+          "progression": "E5 - F5 - F#5 - G5",
+          "romanNumerals": "i5 - bII5 - II5 - bIII5",
+          "description": "Sextuplet synchronized palm-muted thrash breakdown locked in unison with double-bass drums"
+        },
+        {
+          "section": "Final Tapped Shred Solo & Unison Triplets (Hammett)",
+          "progression": "E5 - G5 - A5 - B5",
+          "romanNumerals": "i5 - bIII5 - IV5 - V5",
+          "description": "High-velocity right-hand fretboard tapping solo descending into synchronized twin-guitar thrash riffs"
         }
       ],
       "harmonicFunction": [
@@ -82,50 +100,73 @@
   },
   "techniques": [
     {
-      "name": "Machine-Gun Gallop Picking & Two-Hand Tapping",
-      "description": "Tight 16th-note sextuplet palm-muted gallop picking locked in unison with the bass drum, coupled with rapid fretboard tapping in the climatic guitar solo",
+      "name": "Palm-Muted Sextuplet Machine-Gun Gallop",
+      "description": "Tight 16th-note sextuplet palm-muted gallop picking locked in unison with double kick drums at 190 BPM",
       "difficulty": "Expert",
       "primaryTechnique": true,
       "details": {
         "notes": [
-          "Clean arpeggio: Alternate picking with ringing open G and B strings",
-          "Gallop rhythm: Staccato down-up-down palm muting on the low E string: 3 sixteenth notes per burst",
-          "Tapping solo: Right-hand index/middle finger tapping fret 19 while left hand pulls off 15 to 12"
+          "Sixteenth-note triplet (sextuplet) groupings: 6 notes per quarter beat",
+          "Staccato down-up-down-up-down-up palm muting on the low E string",
+          "Locked in razor-sharp rhythmic unison with Lars Ulrich's double bass kicks"
         ],
         "sequence": [
-          "Master the finger independence of the clean intro arpeggio at 108 BPM",
-          "Practice the rhythmic transition from 4/4 to 3/4 and 2/4 meter shifts before the chorus",
-          "Build metronome stamina on sextuplet down-up-down triplets starting at 120 BPM up to 190 BPM",
-          "Synchronize tapping patterns with fret-hand pull-offs cleanly without string noise"
+          "Anchor fleshy heel of pick hand right at the bridge saddles",
+          "Execute 6-note bursts with minimal pick displacement",
+          "Shift crisply from the open low E string to power chord stabs on F5 and F#5",
+          "Build metronome tempo incrementally from 140 BPM to 190 BPM"
         ],
         "tips": [
-          "Use the fleshy edge of your picking palm resting directly over the bridge saddles to keep palm muting ultra-tight and percussive",
-          "Keep fret-hand fingers anchored on the bass strings to prevent sympathetic vibrations during high-speed tapping",
-          "Use a stiff, heavy pick (1.0mm - 1.5mm) for zero pick flex during high-velocity gallops"
+          "Keep the wrist loose and springy; avoid locking the elbow or shoulder",
+          "Use a rigid 1.14mm or 1.5mm pick with a sharp pointed tip for zero drag",
+          "Focus on rhythmic clarity—each burst must start and stop dead on beat"
         ],
         "chords": [
-          "Bm",
-          "G",
-          "Em",
-          "F#",
-          "B5",
-          "G5",
           "E5",
-          "F#5"
+          "F5",
+          "F#5",
+          "G5"
         ],
-        "progression": "Bm - G - Em - F#"
+        "progression": "E5 - F5 - F#5 - G5"
+      }
+    },
+    {
+      "name": "Two-Handed Fretboard Tapping & Fast Pentatonic Shredding",
+      "description": "Rapid right-hand finger tapping combined with left-hand pull-offs and screaming wah pedal vibrato",
+      "difficulty": "Expert",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Right-hand index or middle finger taps fret 19 while fretting hand pulls off from 15 to 12",
+          "Descending diatonic pattern shifting across strings 1, 2, and 3",
+          "Extreme left-hand index finger dampening to silence unused lower strings"
+        ],
+        "sequence": [
+          "Tap fret 19 with firm percussive contact using right-hand index finger",
+          "Pull off sideways to fret 15 (pinky) and subsequently pull off to fret 12 (index)",
+          "Hammer-on back to fret 15 with pinky, then re-tap fret 19",
+          "Maintain even sixteenth-note timing across all string positions"
+        ],
+        "tips": [
+          "Rest the palm of your right hand lightly on the lower strings to prevent excess noise under high gain",
+          "Let the wah pedal rock forward to accentuate high-mid overtone clarity during the tapped cascades",
+          "Practice the left-hand pull-off trill separately to ensure equal volume between tapped and pulled notes"
+        ],
+        "chords": [
+          "E5",
+          "B5"
+        ],
+        "progression": "Tapping Solo Vamp"
       }
     }
   ],
   "sections": [
     {
-      "name": "Intro Clean Arpeggio Riff",
+      "name": "Clean Intro Arpeggio & Dark Ambiance",
       "timeStamp": "0:00-0:38",
-      "technique": "Fingerpicked / Alternate Picked Clean Arpeggios",
+      "technique": "Palm-Muted Sextuplet Machine-Gun Gallop",
       "key": "B Minor",
-      "description": "James Hetfield's haunting opening clean arpeggio played on a Roland JC-120 clean tone with lush stereo chorus",
-      "alphaTab": "\\tempo 108 . \\ts 4 4\n:8 0.5 2.3 0.4 2.3 3.5 2.3 0.4 2.3 | 0.5 2.3 0.4 2.3 2.5 2.3 0.4 2.3 | 3.6 0.4 2.3 0.4 3.6 0.4 2.3 0.4 | 0.6 2.5 2.4 0.3 2.4 2.5 0.6 2.5 |",
-      "exerciseLabel": "Clean Intro Arpeggio",
+      "description": "James Hetfield's haunting opening clean arpeggio played on a Roland JC-120 clean tone with lush stereo chorus.",
       "chords": [
         "Bm",
         "G",
@@ -134,22 +175,82 @@
       ],
       "progression": "Bm - G - Em - F#",
       "notes": [
-        "B",
-        "D",
-        "F#",
-        "G",
-        "E",
-        "A#"
-      ]
+        "Let the open G and B strings ring cleanly across chord changes",
+        "Maintain strict alternate picking across the 5th, 4th, and 3rd strings",
+        "Keep the tempo steady and somber at 108 BPM"
+      ],
+      "alphaTab": ":8 0.5 2.3 0.4 2.3 3.5 2.3 0.4 2.3 | :8 0.5 2.3 0.4 2.3 2.5 2.3 0.4 2.3 | :8 3.6 0.4 2.3 0.4 3.6 0.4 2.3 0.4 | :8 0.6 2.5 2.4 0.3 2.4 2.5 0.6 2.5 |",
+      "exerciseLabel": "Clean Intro Arpeggio"
     },
     {
-      "name": "Machine-Gun Breakdown & Final Solo Riff",
+      "name": "Intro Melodic Guitar Solo 1 (Kirk Hammett Clean Lead)",
+      "timeStamp": "0:38-1:45",
+      "technique": "Two-Handed Fretboard Tapping & Fast Pentatonic Shredding",
+      "key": "B Minor",
+      "description": "Kirk Hammett's expressive clean neck-pickup solo floating over the delicate arpeggio progression.",
+      "chords": [
+        "Bm",
+        "G",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - G - Em - F#",
+      "notes": [
+        "Select neck pickup for rounded, singing clean sustain",
+        "Emphasize wide finger vibrato on sustained whole notes",
+        "Target the B minor chord tones smoothly"
+      ],
+      "alphaTab": ":4 10.2 :8 8.2 7.2 :4 8.2 :8 7.2 5.2 | :2 7.3 :2 9.3 | :4 12.2 :8 10.2 12.2 :4 14.1 :8 12.1 10.1 | :1 12.2 |",
+      "exerciseLabel": "Hammett Clean Intro Solo"
+    },
+    {
+      "name": "Heavy Chorus Explosion ('Hold My Breath as I Wish for Death')",
+      "timeStamp": "1:45-2:20",
+      "technique": "Palm-Muted Sextuplet Machine-Gun Gallop",
+      "key": "B Minor",
+      "description": "Explosive wall of quad-tracked Mesa Boogie distortion locking with Lars Ulrich's double kick accents.",
+      "chords": [
+        "B5",
+        "G5",
+        "E5",
+        "F#5"
+      ],
+      "progression": "B5 - G5 - E5 - F#5",
+      "notes": [
+        "All downstrokes with maximum right-hand impact",
+        "Scooped midrange Mesa Boogie crunch",
+        "Lock into the sudden meter shift going into the chorus"
+      ],
+      "alphaTab": ":2 (2.5 4.4 4.3) :2 (3.6 5.5 5.4) | :2 (0.6 2.5 2.4) :2 (2.6 4.5 4.4) | :2 (2.5 4.4 4.3) :2 (3.6 5.5 5.4) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Heavy Chorus Power Chords"
+    },
+    {
+      "name": "Middle Solo 2 & Twin Harmony Guitars",
+      "timeStamp": "3:55-4:35",
+      "technique": "Two-Handed Fretboard Tapping & Fast Pentatonic Shredding",
+      "key": "B Minor",
+      "description": "Dual harmonized leads ascending in diatonic thirds building emotional intensity before the machine gun battle sounds.",
+      "chords": [
+        "Bm",
+        "G",
+        "Em",
+        "F#"
+      ],
+      "progression": "Bm - G - Em - F#",
+      "notes": [
+        "Synchronized vibrato and pitch bends with the second guitar",
+        "Singing upper register notes on the high E and B strings",
+        "Decisive climactic transition into the gunshot helicopter sounds"
+      ],
+      "alphaTab": ":4 (7.2 10.1) :8 (5.2 8.1) (7.2 10.1) :4 (8.2 12.1) :8 (7.2 10.1) (5.2 8.1) | :2 (7.3 11.2) :2 (9.3 12.2) | :4 (10.2 14.1) :8 (8.2 12.1) (10.2 14.1) :2 (12.2 15.1) | :1 (7.2 10.1) |",
+      "exerciseLabel": "Middle Harmony Solo Lead"
+    },
+    {
+      "name": "Machine-Gun Sextuplet Breakdown Riff",
       "timeStamp": "4:36-5:45",
-      "technique": "Palm-Muted Sextuplet Gallop Picking",
+      "technique": "Palm-Muted Sextuplet Machine-Gun Gallop",
       "key": "E Minor",
-      "description": "The quintessential thrash metal rhythmic breakdown locking with double-bass drums, leading into Kirk Hammett's tapped shred solo",
-      "alphaTab": "\\tempo 190 . \\ts 4 4\n:16 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 | :8 0.6 0.6 0.6 0.6 :4 1.6 2.6 | :16 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 | :8 0.6 0.6 0.6 0.6 :4 3.6 2.6 |",
-      "exerciseLabel": "Machine Gun Gallop Riff",
+      "description": "The quintessential thrash metal rhythmic breakdown locking with double-bass drums, leading into the tapped shred solo.",
       "chords": [
         "E5",
         "F5",
@@ -158,11 +259,33 @@
       ],
       "progression": "E5 - F5 - F#5 - G5",
       "notes": [
-        "E",
-        "F",
-        "F#",
-        "G"
-      ]
+        "Strict 16th-note sextuplet bursts (6 notes per beat)",
+        "Zero forearm tension—derive motion from a relaxed wrist snap",
+        "Slam the F5 and F#5 chord hits dead on time"
+      ],
+      "alphaTab": ":16 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 | :8 0.6 0.6 0.6 0.6 :4 (1.6 3.5) :4 (2.6 4.5) | :16 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 | :8 0.6 0.6 0.6 0.6 :4 (3.6 5.5) :4 (2.6 4.5) |",
+      "exerciseLabel": "Machine Gun Gallop Riff"
+    },
+    {
+      "name": "Final Tapped Shred Solo & Unison Triplets (Hammett)",
+      "timeStamp": "5:45-7:05",
+      "technique": "Two-Handed Fretboard Tapping & Fast Pentatonic Shredding",
+      "key": "E Minor",
+      "description": "High-velocity right-hand fretboard tapping solo descending into synchronized twin-guitar thrash triplets and the final crashing chord.",
+      "chords": [
+        "E5",
+        "G5",
+        "A5",
+        "B5"
+      ],
+      "progression": "E5 - G5 - A5 - B5",
+      "notes": [
+        "Tap fret 19 with right hand, pulling off cleanly to 15 and 12",
+        "Descend across strings 1, 2, and 3 while muting lower strings",
+        "End with unison machine-gun triplets locked with the rhythm section"
+      ],
+      "alphaTab": ":16 19.1 15.1 12.1 15.1 19.1 15.1 12.1 15.1 19.1 15.1 12.1 15.1 19.1 15.1 12.1 15.1 | :16 17.1 14.1 11.1 14.1 17.1 14.1 11.1 14.1 17.1 14.1 11.1 14.1 17.1 14.1 11.1 14.1 | :16 19.2 15.2 12.2 15.2 19.2 15.2 12.2 15.2 19.2 15.2 12.2 15.2 19.2 15.2 12.2 15.2 | :1 19.1 |",
+      "exerciseLabel": "Hammett Final Tapping Shred Solo"
     }
   ],
   "equipment": {

@@ -63,22 +63,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Intro & Verse Riff",
+          "section": "Iconic Chromatic Intro Riff",
           "progression": "E5 - [Chromatic 0-1-2] - C5 - B5",
           "romanNumerals": "i5 - bVI5 - V5",
           "description": "Relentless all-downstroke palm-muted pedal tones on the open E string punctuated by chromatic stabs"
         },
         {
-          "section": "Pre-Chorus",
+          "section": "Main Verse Riff (with 5/8 Turnaround)",
+          "progression": "E5 - F5 - F#5 - G5",
+          "romanNumerals": "i5 - bII5 - II5 - bIII5",
+          "description": "Three bars of 4/4 downpicked thrash chugging truncated by the sharp 5/8 time meter cutoff"
+        },
+        {
+          "section": "Pre-Chorus & Shout Chorus ('Master!')",
           "progression": "E5 - D5 - C5 - B5",
           "romanNumerals": "i5 - bVII5 - bVI5 - V5",
           "description": "Descending natural minor power chord sequence driving toward the climactic shout chorus"
         },
         {
-          "section": "Interlude Harmonized Solo",
+          "section": "Interlude Arpeggios & Melodic Solo (Hetfield)",
           "progression": "Em - D - C - B7",
           "romanNumerals": "i - bVII - bVI - V7",
-          "description": "James Hetfield's neo-classical twin-guitar harmony solo in half-time providing breathtaking melodic contrast"
+          "description": "James Hetfield's slow, soulful neoclassical guitar solo played over gentle arpeggios"
+        },
+        {
+          "section": "Twin-Guitar Harmony Solo & Bridge Riff",
+          "progression": "Em - D - C - B5",
+          "romanNumerals": "i - bVII - bVI - V5",
+          "description": "Dual guitars playing in harmonized 3rds and 6ths across the E natural minor scale into the bridge"
+        },
+        {
+          "section": "Kirk Hammett Fast Shred Solo",
+          "progression": "E5 - F#5 - G5 - A5",
+          "romanNumerals": "i5 - II5 - bIII5 - IV5",
+          "description": "Blistering 212 BPM minor pentatonic shredding with wah and rapid alternate-picked cascades"
         }
       ],
       "harmonicFunction": [
@@ -200,7 +218,7 @@
         "Chromatic run: fret 7 down to fret 1 on the 5th and 6th strings",
         "Mute low E between stabs with pick-hand palm"
       ],
-      "alphaTab": ":8 (0.6 2.5) :8 (0.6 2.5) :4 r | :8 0.6 0.6 7.5 0.6 6.5 0.6 5.5 0.6 | :8 0.6 0.6 4.5 0.6 3.5 0.6 2.5 0.6 | :8 (0.6 2.5) (0.6 2.5) :4 (3.5 5.4) :4 (2.5 4.4) |",
+      "alphaTab": ":8 (0.6 2.5) :8 (0.6 2.5) :4 r :2 r | :8 0.6 0.6 7.5 0.6 6.5 0.6 5.5 0.6 | :8 0.6 0.6 4.5 0.6 3.5 0.6 2.5 0.6 | :8 (0.6 2.5) :8 (0.6 2.5) :4 (3.5 5.4) :2 (2.5 4.4) |",
       "exerciseLabel": "Chromatic Downpick Descent"
     },
     {
@@ -221,15 +239,36 @@
         "Count the 5/8 bar with five eighth notes before looping back",
         "Keep palm mute tight on the bridge for maximum percussive thud"
       ],
-      "alphaTab": ":8 0.6 0.6 12.6 0.6 0.6 11.6 0.6 0.6 | :8 10.6 0.6 9.6 0.6 8.6 0.6 7.6 0.6 | :8 0.6 0.6 1.6 0.6 0.6 2.6 0.6 0.6 | :8 3.6 0.6 2.6 0.6 1.6 |",
+      "alphaTab": ":8 0.6 0.6 12.6 0.6 0.6 11.6 0.6 0.6 | :8 10.6 0.6 9.6 0.6 8.6 0.6 7.6 0.6 | :8 0.6 0.6 1.6 0.6 0.6 2.6 0.6 0.6 | :8 3.6 0.6 2.6 0.6 1.6 :4. r |",
       "exerciseLabel": "Master 5/8 Downpick Riff"
     },
     {
-      "name": "Interlude Harmonized Solo",
+      "name": "Pre-Chorus & Shout Chorus ('Master!')",
+      "timeStamp": "1:30-2:12",
+      "technique": "High-Velocity Downpicking Endurance",
+      "key": "E Minor",
+      "description": "Descending natural minor power chord sequence driving toward the climactic shout chorus.",
+      "chords": [
+        "E5",
+        "D5",
+        "C5",
+        "B5"
+      ],
+      "progression": "E5 - D5 - C5 - B5",
+      "notes": [
+        "Heavy downstrokes locking into the marching drum pattern",
+        "Sudden rest stops before shouting 'Master!'",
+        "Tight palm-muting between chord changes"
+      ],
+      "alphaTab": ":2 (0.6 2.5) :4 (5.5 7.4) :4 (3.5 5.4) | :2 (2.5 4.4) :2 (3.5 5.4) | :2 (0.6 2.5) :4 (5.5 7.4) :4 (3.5 5.4) | :1 (2.5 4.4) |",
+      "exerciseLabel": "Pre-Chorus & Chorus Stabs"
+    },
+    {
+      "name": "Interlude Arpeggios & Melodic Solo (Hetfield)",
       "timeStamp": "3:30-4:15",
       "technique": "Twin-Guitar Diatonic Harmonies",
       "key": "E Minor",
-      "description": "James Hetfield's slow, soulful neoclassical guitar solo played over gentle arpeggios, featuring dual guitar harmony in diatonic 3rds",
+      "description": "James Hetfield's slow, soulful neoclassical guitar solo played over gentle arpeggios, featuring singing tone and expressive vibrato.",
       "chords": [
         "Em",
         "D",
@@ -243,7 +282,49 @@
         "Follows the chord progression closely with target notes on beat 1"
       ],
       "alphaTab": ":4 12.2 :8 10.2 12.2 :4 13.2 :8 12.2 10.2 | :2 12.3 :4 11.3 :4 12.3 | :4 14.3 :8 12.3 14.3 :4 12.2 :8 10.2 8.2 | :1 10.2 |",
-      "exerciseLabel": "Melodic Interlude Solo Lead"
+      "exerciseLabel": "Hetfield Interlude Melodic Solo"
+    },
+    {
+      "name": "Twin-Guitar Harmony Solo & Bridge Riff",
+      "timeStamp": "4:15-5:15",
+      "technique": "Twin-Guitar Diatonic Harmonies",
+      "key": "E Minor",
+      "description": "Dual guitars playing in harmonized 3rds across the E natural minor scale building into the heavy bridge.",
+      "chords": [
+        "Em",
+        "D",
+        "C",
+        "B5"
+      ],
+      "progression": "Em - D - C - B5",
+      "notes": [
+        "Synchronized dual-harmony phrasing on strings 1 and 2",
+        "Maintain identical vibrato speed with the harmony partner",
+        "Transition sharply back into the accelerating high-gain rhythm"
+      ],
+      "alphaTab": ":4 (12.2 15.1) :8 (10.2 14.1) (12.2 15.1) :4 (13.2 17.1) :8 (12.2 15.1) (10.2 14.1) | :2 (12.3 16.2) :4 (11.3 14.2) :4 (12.3 16.2) | :4 (14.3 17.2) :8 (12.3 16.2) (14.3 17.2) :4 (12.2 15.1) :8 (10.2 14.1) (8.2 12.1) | :1 (10.2 14.1) |",
+      "exerciseLabel": "Dual Harmony Lead in 3rds"
+    },
+    {
+      "name": "Kirk Hammett Fast Shred Solo",
+      "timeStamp": "5:45-6:40",
+      "technique": "High-Velocity Downpicking Endurance",
+      "key": "E Minor",
+      "description": "Blistering 212 BPM minor pentatonic shredding with wah pedal, rapid alternate picking, and high-register screaming bends.",
+      "chords": [
+        "E5",
+        "F#5",
+        "G5",
+        "A5"
+      ],
+      "progression": "E5 - F#5 - G5 - A5",
+      "notes": [
+        "Engage Cry Baby wah for sweeping harmonic resonance",
+        "Rapid 12th and 15th fret pentatonic boxes with sixteenth-note alternate picking",
+        "Finish with sustained high E-string bend at the 17th fret"
+      ],
+      "alphaTab": ":16 12.1 15.1 12.1 15.1 12.1 15.1 12.1 15.1 :16 12.2 15.2 12.2 15.2 :8 14.3 12.3 | :8 14.3 12.3 :4 14.3 :2 15.1 | :16 17.1 12.1 15.1 12.1 17.1 12.1 15.1 12.1 :16 17.2 15.2 17.2 15.2 :8 16.3 14.3 | :1 17.1 |",
+      "exerciseLabel": "Hammett Fast Pentatonic Solo"
     }
   ],
   "equipment": {
@@ -263,11 +344,11 @@
         "Boss Katana on Lead/Brown setting"
       ],
       "settings": {
-        "gain": "9/10",
-        "treble": "8/10",
-        "middle": "2/10",
-        "bass": "9/10",
-        "presence": "7/10"
+        "gain": "9",
+        "treble": "8",
+        "middle": "2",
+        "bass": "9",
+        "presence": "7"
       }
     },
     "effects": {

@@ -54,28 +54,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Main Harmonized Riff",
+          "section": "Main Harmonized Lead Theme (Smith & Murray)",
           "progression": "Em - C - D - Em",
-          "romanNumerals": "i - ♭VI - ♭VII - i",
+          "romanNumerals": "i - bVI - bVII - i",
           "description": "Twin guitars harmonize the vocal-like lead line in diatonic thirds over Steve Harris' galloping bass"
         },
         {
-          "section": "Verse",
+          "section": "Verse Cavalry Gallop Rhythm",
           "progression": "Em - D - C - D - Em",
-          "romanNumerals": "i - ♭VII - ♭VI - ♭VII - i",
+          "romanNumerals": "i - bVII - bVI - bVII - i",
           "description": "High-speed galloping rhythm rhythmically mimicking charging cavalry horses ('You'll take my life but I'll take yours too')"
         },
         {
-          "section": "Chorus",
+          "section": "Chorus Power Chords & Battle Cries ('Ooh-ooh')",
           "progression": "Em - C - D - Em",
-          "romanNumerals": "i - ♭VI - ♭VII - i",
+          "romanNumerals": "i - bVI - bVII - i",
           "description": "Triumphant arena refrain sung by tens of thousands of fans worldwide"
         },
         {
-          "section": "Dual Guitar Solos",
-          "progression": "Em - C - D - Em (Adrian Smith) | Em - C - D - Em (Dave Murray)",
-          "romanNumerals": "i - ♭VI - ♭VII - i",
-          "description": "Back-to-back solo masterclasses contrasting blues-rock bends with rapid legato runs"
+          "section": "Adrian Smith Guitar Solo (Blues-Rock Precision)",
+          "progression": "Em - C - D - Em",
+          "romanNumerals": "i - bVI - bVII - i",
+          "description": "Adrian Smith's punchy, melodic solo featuring aggressive full-step bends, blues boxes, and biting bridge pickup tone"
+        },
+        {
+          "section": "Dave Murray Guitar Solo (Fast Legato Cascades)",
+          "progression": "Em - C - D - Em",
+          "romanNumerals": "i - bVI - bVII - i",
+          "description": "Dave Murray's lightning-fast neck-pickup legato hammer-on/pull-off cascades"
+        },
+        {
+          "section": "Outro Harmonized Gallop & Final Hit",
+          "progression": "Em - C - D - Em",
+          "romanNumerals": "i - bVI - bVII - i",
+          "description": "Climactic return of the twin harmony theme over charging gallops ending on a thunderous low E power chord"
         }
       ],
       "harmonicFunction": [
@@ -148,9 +160,9 @@
   ],
   "sections": [
     {
-      "name": "Main Harmonized Lead Theme",
+      "name": "Main Harmonized Lead Theme (Smith & Murray)",
       "timeStamp": "0:00-0:34",
-      "technique": "Twin-Guitar Harmony in Diatonic 3rds",
+      "technique": "Twin-Guitar Diatonic Harmony in 3rds",
       "key": "E Minor",
       "description": "One of the most famous guitar melodies in heavy metal history, harmonized in soaring diatonic thirds.",
       "chords": [
@@ -169,9 +181,9 @@
       "exerciseLabel": "Main Harmonized Theme"
     },
     {
-      "name": "Verse Gallop Rhythm",
+      "name": "Verse Cavalry Gallop Rhythm",
       "timeStamp": "0:34-1:18",
-      "technique": "Gallop Picking & Palm Muting",
+      "technique": "High-Speed Iron Maiden Gallop Picking",
       "key": "E Minor",
       "description": "The breathless cavalry gallop backing Bruce Dickinson's legendary vocals.",
       "chords": [
@@ -186,15 +198,15 @@
         "Punch the power chord accents on the chord changes",
         "Maintain unrelenting speed and precision"
       ],
-      "alphaTab": ":8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 | :4 (5.5 7.4 7.3) (3.5 5.4 5.3) :2 (0.6 2.5 2.4) |",
+      "alphaTab": ":8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 | :4 (5.5 7.4 7.3) :4 (3.5 5.4 5.3) :2 (0.6 2.5 2.4) | :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 | :2 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) |",
       "exerciseLabel": "Gallop Rhythm Engine"
     },
     {
-      "name": "Dual Guitar Solos (Smith & Murray)",
-      "timeStamp": "2:04-2:56",
-      "technique": "Blues-Rock Bends & Rapid Legato Shredding",
+      "name": "Chorus Power Chords & Battle Cries ('Ooh-ooh')",
+      "timeStamp": "1:18-1:45",
+      "technique": "High-Speed Iron Maiden Gallop Picking",
       "key": "E Minor",
-      "description": "Adrian Smith's punchy, melodic solo followed immediately by Dave Murray's lightning-fast neck-pickup legato runs.",
+      "description": "Triumphant arena anthem power chords supporting Dickinson's towering battle cries.",
       "chords": [
         "Em",
         "C",
@@ -203,12 +215,75 @@
       ],
       "progression": "Em - C - D - Em",
       "notes": [
-        "Smith uses bridge pickup with aggressive full-step bends and repetitive blues boxes",
-        "Murray switches to neck pickup for fluid hammer-on/pull-off legato cascades",
-        "Seamless handoff between both soloists"
+        "Let the heavy power chords ring with maximum arena sustain",
+        "Punch the syncopated chord transitions on the offbeat",
+        "Prepare for the rapid solo handoffs"
       ],
-      "alphaTab": ":8 12.1 15.1 :4 17.1 :8 15.1 12.1 | :8 15.2 12.2 15.2 12.2 :4 14.3 :8 12.3 14.3 | :8 12.1 15.1 12.1 15.1 :4 17.1 :8 15.1 12.1 | :2 15.1 :2 r.2 |",
-      "exerciseLabel": "Smith / Murray Solo Showcase"
+      "alphaTab": ":2 (0.6 2.5 2.4) :2 (3.5 5.4 5.3) | :2 (5.5 7.4 7.3) :2 (0.6 2.5 2.4) | :2 (0.6 2.5 2.4) :2 (3.5 5.4 5.3) | :1 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Chorus Arena Anthem"
+    },
+    {
+      "name": "Adrian Smith Guitar Solo (Blues-Rock Precision)",
+      "timeStamp": "2:04-2:30",
+      "technique": "Twin-Guitar Diatonic Harmony in 3rds",
+      "key": "E Minor",
+      "description": "Adrian Smith's punchy, melodic solo featuring aggressive full-step bends, blues boxes, and biting bridge pickup tone.",
+      "chords": [
+        "Em",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "Em - C - D - Em",
+      "notes": [
+        "Smith uses bridge pickup with aggressive full-step bends",
+        "Target the root E at fret 12 on the high E string",
+        "Precise blues scale phrasing with stinging finger vibrato"
+      ],
+      "alphaTab": ":8 12.1 15.1 :4 17.1 :8 15.1 12.1 :4 15.1 | :8 15.2 12.2 15.2 12.2 :4 14.3 :8 12.3 14.3 | :8 12.1 15.1 12.1 15.1 :4 17.1 :8 15.1 12.1 | :1 15.1 |",
+      "exerciseLabel": "Adrian Smith Blues Solo"
+    },
+    {
+      "name": "Dave Murray Guitar Solo (Fast Legato Cascades)",
+      "timeStamp": "2:30-2:56",
+      "technique": "Twin-Guitar Diatonic Harmony in 3rds",
+      "key": "E Minor",
+      "description": "Dave Murray's lightning-fast neck-pickup legato hammer-on/pull-off cascades seamlessly picking up from Smith.",
+      "chords": [
+        "Em",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "Em - C - D - Em",
+      "notes": [
+        "Murray switches to neck pickup for fluid, rounded legato runs",
+        "Continuous 16th-note hammer-ons and pull-offs in the 12th position",
+        "Ascending scale run leading back into the gallop rhythm"
+      ],
+      "alphaTab": ":16 12.1 15.1 12.1 15.1 12.1 15.1 12.1 15.1 :16 12.2 15.2 12.2 15.2 :8 14.3 12.3 | :8 15.2 12.2 :4 14.3 :2 15.1 | :16 17.1 15.1 14.1 15.1 17.1 15.1 14.1 15.1 :16 17.2 15.2 14.2 15.2 :8 14.3 12.3 | :1 15.1 |",
+      "exerciseLabel": "Dave Murray Legato Cascade"
+    },
+    {
+      "name": "Outro Harmonized Gallop & Final Hit",
+      "timeStamp": "3:35-4:12",
+      "technique": "Twin-Guitar Diatonic Harmony in 3rds",
+      "key": "E Minor",
+      "description": "Climactic return of the twin harmony theme over charging gallops ending on a thunderous low E power chord.",
+      "chords": [
+        "Em",
+        "C",
+        "D",
+        "Em"
+      ],
+      "progression": "Em - C - D - Em",
+      "notes": [
+        "Final dual guitar harmony melody at peak energy",
+        "Charging gallop rhythm underneath",
+        "Decisive final unison chord hit on beat 1"
+      ],
+      "alphaTab": ":8 12.1 14.1 15.1 14.1 12.1 10.1 12.1 14.1 | :4 12.1 :8 10.1 8.1 :4 10.1 :8 8.1 7.1 | :8 0.6 :16 0.6 0.6 :8 0.6 :16 0.6 0.6 :4 (3.5 5.4 5.3) :4 (5.5 7.4 7.3) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Outro Harmony Gallop"
     }
   ],
   "equipment": {
@@ -229,11 +304,11 @@
         "Boss Katana 100"
       ],
       "settings": {
-        "gain": "8/10",
-        "treble": "7/10",
-        "middle": "8/10",
-        "bass": "6/10",
-        "presence": "7/10"
+        "gain": "8",
+        "treble": "7",
+        "middle": "8",
+        "bass": "6",
+        "presence": "7"
       }
     },
     "effects": {

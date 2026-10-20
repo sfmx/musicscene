@@ -49,22 +49,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Main Riff Hook",
+          "section": "A Cappella Call & Winding Single-Note Riff",
           "progression": "Single-Note A Blues Riff into A5",
           "romanNumerals": "i Riff -> I5",
           "description": "The winding John Paul Jones-penned single-note riff ending on an authoritative A5 power chord"
         },
         {
-          "section": "Chorus Groove",
+          "section": "Verse Groove & Syncopated Stabs",
+          "progression": "A Blues Riff into A5 Stabs",
+          "romanNumerals": "i Riff -> I5 Stabs",
+          "description": "Call-and-response dynamic interlock between Plant's vocal lines and Page's triple-tracked riff"
+        },
+        {
+          "section": "Chorus Shuffle ('Hey Hey Mama Said the Way You Move')",
           "progression": "A5 - E5 - D5 - A5",
           "romanNumerals": "I5 - V5 - IV5 - I5",
           "description": "Driving rock shuffle under 'Hey, hey baby, said the way you move'"
         },
         {
-          "section": "Outro Solo",
+          "section": "Bridge Meter Shift & Turnaround",
+          "progression": "A5 - B5 - C5 - D5 - E5",
+          "romanNumerals": "I5 - II5 - bIII5 - IV5 - V5",
+          "description": "Ascending power chord turnaround resetting the metric cycle before the next verse"
+        },
+        {
+          "section": "Outro Guitar Solo (Part 1 - 5th Position Pentatonic Fire)",
           "progression": "A5 Groove",
           "romanNumerals": "I5 Pedal",
-          "description": "Page's legendary multi-tracked Les Paul solo over a relentless driving rhythm section"
+          "description": "Jimmy Page's searing direct-to-board Les Paul solo launching across the 5th-position blues box"
+        },
+        {
+          "section": "Outro Guitar Solo (Part 2 - Multi-Tracked Climax & Fade)",
+          "progression": "A5 Groove",
+          "romanNumerals": "I5 Pedal",
+          "description": "Multi-tracked lead guitars layering lightning-fast pentatonic triplets and wild screaming bends into the fade"
         }
       ],
       "harmonicFunction": [
@@ -104,15 +122,43 @@
         ],
         "progression": "A5 - E5 - D5"
       }
+    },
+    {
+      "name": "Expressive Blues-Rock Bending & Rapid Pentatonic Flourishes",
+      "description": "High-velocity A minor pentatonic flourishes, stinging full-step bends, and vocal-like finger vibrato across the 5th and 7th positions",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "5th-position A minor pentatonic box: 5th-8th frets across strings 1 through 6",
+          "Target note bending: bend fret 7 on the G string a full step up to E, then release to D",
+          "Aggressive downstroke pick attack giving direct-injected fuzz bite"
+        ],
+        "sequence": [
+          "Anchor your thumb over the neck for leverage when bending strings 1, 2, and 3",
+          "Execute rapid hammer-on/pull-off pairs between frets 8 and 5 on the high E and B strings",
+          "Apply wide, rapid finger vibrato immediately after catching the bent pitch",
+          "Slide down into lower chord positions to punctuate the groove"
+        ],
+        "tips": [
+          "Reinforce full-step bends using your index and middle fingers behind the ring finger",
+          "Roll off the guitar's tone knob slightly to smooth harsh treble bite under fuzz-compression",
+          "Listen closely to Bonham's snare hits to anchor your solo phrase releases"
+        ],
+        "chords": [
+          "A5"
+        ],
+        "progression": "A5 Solo Vamp"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Main Winding Riff",
+      "name": "A Cappella Call & Winding Single-Note Riff",
       "timeStamp": "0:00-0:45",
-      "technique": "Syncopated Riff Navigation",
+      "technique": "Complex Metric Syncopation & Triple-Tracked Overdrive",
       "key": "A Blues",
-      "description": "One of the most rhythmically intricate and famous guitar riffs in rock history.",
+      "description": "One of the most rhythmically intricate and famous guitar riffs in rock history entering after Plant's a cappella vocal call.",
       "chords": [
         "A5"
       ],
@@ -126,9 +172,27 @@
       "exerciseLabel": "Main Riff Hook"
     },
     {
-      "name": "Chorus Shuffle",
+      "name": "Verse Groove & Syncopated Stabs",
+      "timeStamp": "0:45-1:15",
+      "technique": "Complex Metric Syncopation & Triple-Tracked Overdrive",
+      "key": "A Blues",
+      "description": "The interlocking verse groove with rhythm section stabs supporting Robert Plant's narrative verses.",
+      "chords": [
+        "A5"
+      ],
+      "progression": "A Blues Riff into A5 Stabs",
+      "notes": [
+        "Maintain absolute rhythmic discipline over Bonham's straight 4/4 drums",
+        "Mute the low E string sharply before chord stabs",
+        "Accent the resolving A5 power chord with heavy downstrokes"
+      ],
+      "alphaTab": ":8 5.6 7.6 4.5 7.5 :4 5.5 :8 7.5 4.4 | :8 7.4 5.4 7.4 5.3 :4 7.4 :8 5.4 7.5 | :2 (5.6 7.5 7.4) :2 (5.6 7.5 7.4) |",
+      "exerciseLabel": "Verse Riff Stabs"
+    },
+    {
+      "name": "Chorus Shuffle ('Hey Hey Mama Said the Way You Move')",
       "timeStamp": "1:15-1:40",
-      "technique": "Driving Power Chord Stabs",
+      "technique": "Complex Metric Syncopation & Triple-Tracked Overdrive",
       "key": "A Major",
       "description": "The hard-driving rock shuffle supporting 'Hey hey mama said the way you move'.",
       "chords": [
@@ -142,15 +206,37 @@
         "Palm mute slightly on the low E pedal notes",
         "Accent the chord changes aggressively"
       ],
-      "alphaTab": ":8 0.6 3.6 5.6 0.5 :4 3.5 :8 5.5 0.4 | :4 2.4 :4 2.3 :2 (5.6 7.5 7.4) |",
+      "alphaTab": ":8 0.6 3.6 5.6 0.5 :4 3.5 :8 5.5 0.4 | :4 2.4 :4 2.3 :2 (5.6 7.5 7.4) | :8 0.6 3.6 5.6 0.5 :4 3.5 :8 5.5 0.4 | :2 (7.5 9.4 9.3) :2 (5.6 7.5 7.4) |",
       "exerciseLabel": "Chorus Power Groove"
     },
     {
-      "name": "Outro Solo Extravaganza",
-      "timeStamp": "3:45-4:56",
-      "technique": "Multi-Tracked Pentatonic Fire",
+      "name": "Bridge Meter Shift & Turnaround",
+      "timeStamp": "2:10-2:45",
+      "technique": "Complex Metric Syncopation & Triple-Tracked Overdrive",
+      "key": "A Major",
+      "description": "Ascending power chord sequence modulating the metric pulse before crashing back into the a cappella break.",
+      "chords": [
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5"
+      ],
+      "progression": "A5 - B5 - C5 - D5 - E5",
+      "notes": [
+        "Drive the ascending power chord climb with heavy downstrokes",
+        "Count the metric reset precisely on the turnaround",
+        "Drop to total silence on the sudden break for Plant's vocals"
+      ],
+      "alphaTab": ":4 (5.6 7.5 7.4) :4 (5.6 7.5 7.4) :2 (7.5 9.4 9.3) | :4 (5.5 7.4 7.3) :4 (3.5 5.4 5.3) :2 (5.6 7.5 7.4) | :8 5.6 7.6 4.5 7.5 :4 5.5 :8 7.5 4.4 | :1 (5.6 7.5 7.4) |",
+      "exerciseLabel": "Bridge Turnaround"
+    },
+    {
+      "name": "Outro Guitar Solo (Part 1 - 5th Position Pentatonic Fire)",
+      "timeStamp": "3:45-4:20",
+      "technique": "Expressive Blues-Rock Bending & Rapid Pentatonic Flourishes",
       "key": "A Blues",
-      "description": "Jimmy Page's legendary layered guitar solo over the relentless driving rhythm track.",
+      "description": "Jimmy Page's legendary opening solo statement launched in the 5th position of the A minor pentatonic scale.",
       "chords": [
         "A5"
       ],
@@ -160,8 +246,26 @@
         "Wild string bends with rapid finger vibrato",
         "Direct-injected tube fuzz bite"
       ],
-      "alphaTab": ":8 5.1 8.1 5.1 8.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :1 (5.6 7.5 7.4) |",
-      "exerciseLabel": "Outro Solo Lead"
+      "alphaTab": ":8 5.1 8.1 5.1 8.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :8 5.1 8.1 5.1 8.1 :4 7.3 :4 5.3 | :1 7.4 |",
+      "exerciseLabel": "Outro Solo Statement"
+    },
+    {
+      "name": "Outro Guitar Solo (Part 2 - Multi-Tracked Climax & Fade)",
+      "timeStamp": "4:20-4:56",
+      "technique": "Expressive Blues-Rock Bending & Rapid Pentatonic Flourishes",
+      "key": "A Blues",
+      "description": "Multi-tracked Les Paul leads layering screaming high-register bends and rapid triplets over the relentless groove into the fade.",
+      "chords": [
+        "A5"
+      ],
+      "progression": "A5 Vamp",
+      "notes": [
+        "High-velocity sixteenth-note pull-offs between frets 8 and 5 on the top string",
+        "Wide pitch bends that push the upper register to its limit",
+        "Concludes with sustained A5 root chord into the tape fade"
+      ],
+      "alphaTab": ":16 8.1 5.1 8.1 5.1 8.1 5.1 8.1 5.1 :8 7.3 5.3 :4 7.3 | :8 8.2 5.2 8.2 5.2 :4 7.4 :4 5.4 | :8 5.1 8.1 5.1 8.1 :4 7.3 :4 5.3 | :1 (5.6 7.5 7.4) |",
+      "exerciseLabel": "Outro Solo Climax"
     }
   ],
   "equipment": {
@@ -182,7 +286,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "8.5 (distorted console preamp breakup)",
+        "gain": "8.5",
         "treble": "7",
         "middle": "7",
         "bass": "5",
