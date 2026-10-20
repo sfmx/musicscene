@@ -107,11 +107,42 @@
         ],
         "progression": "Em - G - C - A"
       }
+    },
+    {
+      "name": "Kim Thayil's Microtonal Wah Lead Phrasing & Dissonant Accents",
+      "description": "Kim Thayil's signature avant-garde grunge solo style featuring unhinged Cry Baby wah filter sweeps, quarter-tone microtonal bends, and controlled feedback howling",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "E blues scale in 12th position: frets 12-15 on strings 1, 2, and 3",
+          "Flat-5 blue note (15th fret G string / 14th fret D string) bent slightly sharp for dissonant friction",
+          "Full-step bends on the 15th fret B string matched to 12th fret high E"
+        ],
+        "sequence": [
+          "Rock the wah pedal slowly from heel to toe to highlight vocal harmonics",
+          "Execute singing whole-step and microtonal bends in 12th position",
+          "Incorporate controlled amplifier feedback between lead phrases",
+          "Lock back into the 6/4 rhythm riff on the downbeat"
+        ],
+        "tips": [
+          "Thayil played a vintage Guild S-100 through Peavey VTM-120 and Mesa/Boogie Dual Rectifier amps",
+          "Embrace intentional dissonance—the blue note flat-5 gives Soundgarden their trademark dark tension",
+          "Keep unpicked strings muted with the fretting-hand index finger flesh to prevent unwanted noise"
+        ],
+        "chords": [
+          "B5",
+          "C5",
+          "D5",
+          "Em"
+        ],
+        "progression": "B5 - C5 - D5 - Em Solo Progression"
+      }
     }
   ],
   "sections": [
     {
-      "name": "6/4 Metric Main Riff",
+      "name": "6/4 Metric Main Riff & Palm-Muted Walkdown",
       "timeStamp": "0:00-0:45",
       "technique": "6/4 Odd-Meter Groove",
       "key": "E Minor",
@@ -125,17 +156,37 @@
       "notes": [
         "Count 1-2-3-4-5-6 per measure",
         "Tight palm muting on the low E string notes",
-        "Clean chord stab on beat 5 and 6"
+        "Clean chord stab on beats 5 and 6"
       ],
-      "alphaTab": ":4 0.6 :4 0.6 :4 3.6 :4 2.6 :4 3.5 :4 2.5 | :4 0.6 :4 0.6 :4 3.6 :4 2.6 :2 (0.5 2.4 2.3 1.2) |",
+      "alphaTab": ":4 0.6 :4 0.6 :4 3.6 :4 2.6 | :4 3.5 :4 2.5 :2 (0.6 2.5 2.4 0.3) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
       "exerciseLabel": "6/4 Main Riff Groove"
     },
     {
-      "name": "Chorus Explosion",
-      "timeStamp": "0:58-1:25",
+      "name": "Verse 1 Brooding 6/4 Rhythmic Groove",
+      "timeStamp": "0:46-1:10",
+      "technique": "Low-End Palm Muted Strumming",
+      "key": "E Minor",
+      "description": "Hypnotic verse backing Chris Cornell's somber, searching vocal melody.",
+      "chords": [
+        "Em",
+        "G",
+        "C"
+      ],
+      "progression": "Em - G - C",
+      "notes": [
+        "Maintain sludgy low-end clarity",
+        "Leave space for the vocal narrative",
+        "Accentuate the passing C note on the 5th string"
+      ],
+      "alphaTab": ":4 0.6 :4 0.6 :4 3.6 :4 2.6 | :4 3.5 :4 2.5 :4 (3.6 5.5 5.4) :4 (3.5 5.4 5.3) | :1 (0.6 2.5 2.4 0.3) |",
+      "exerciseLabel": "Verse 6/4 Pocket"
+    },
+    {
+      "name": "Chorus Wall of Sound & Dorian Lift",
+      "timeStamp": "1:11-1:35",
       "technique": "Dorian Chord Lift",
       "key": "E Minor",
-      "description": "Full wall-of-sound chorus 'Just like every day, fell on black days'.",
+      "description": "Full wall-of-sound chorus ('Just like every day, fell on black days') lifting into the major IV chord (A).",
       "chords": [
         "Em",
         "G",
@@ -144,12 +195,74 @@
       ],
       "progression": "Em - G - C - A",
       "notes": [
-        "Massive overdriven strumming",
+        "Massive overdriven strumming across all six strings",
         "Notice the uplifting major A chord at the end of the phrase",
         "Lock tight with the drum cymbals"
       ],
-      "alphaTab": ":4 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (3.6 5.5 5.4 0.3 0.2 0.1) :2 (3.5 5.4 5.3 0.2 0.1) :2 (5.5 7.4 7.3 0.2 0.1) |",
+      "alphaTab": ":4 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (3.6 5.5 5.4 0.3 0.2 0.1) :2 (3.5 5.4 5.3 0.2 0.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
       "exerciseLabel": "Chorus Wall of Sound"
+    },
+    {
+      "name": "Bridge Rising Power Chords",
+      "timeStamp": "2:25-2:48",
+      "technique": "Ascending Power Chord Tension",
+      "key": "E Minor",
+      "description": "Stepwise ascending power chord bridge (B5 - C5 - D5) building tension into the guitar solo.",
+      "chords": [
+        "B5",
+        "C5",
+        "D5",
+        "Em"
+      ],
+      "progression": "B5 - C5 - D5 - Em",
+      "notes": [
+        "Dig into root-5 power chords on frets 2, 3, and 5",
+        "Drive the tempo forward into the solo",
+        "Hit the final open Em chord with maximum authority"
+      ],
+      "alphaTab": ":2 (2.5 4.4 4.3) :2 (3.5 5.4 5.3) | :2 (5.5 7.4 7.3) :2 (0.6 2.5 2.4) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Bridge Ascending Power Chords"
+    },
+    {
+      "name": "Kim Thayil Guitar Solo (Microtonal Wah Bends)",
+      "timeStamp": "2:49-3:25",
+      "technique": "Microtonal Wah Solo Phrasing",
+      "key": "E Blues",
+      "description": "Kim Thayil's wild, expressive solo featuring screaming wah sweeps, flatted fifth dissonance, and howling sustain.",
+      "chords": [
+        "B5",
+        "C5",
+        "D5",
+        "Em"
+      ],
+      "progression": "B5 - C5 - D5 - Em Solo",
+      "notes": [
+        "12th-position E blues pentatonic bends",
+        "Rock wah pedal slowly for sweeping vowel tones",
+        "Wring out aggressive, unhinged finger vibrato"
+      ],
+      "alphaTab": ":8 12.1 15.1 12.1 15.1 :4 15.1 :4 12.1 | :8 15.2 12.2 14.3 12.3 :4 15.3 :4 12.3 | :8 14.4 12.4 14.4 12.4 :2 12.4 |",
+      "exerciseLabel": "Thayil Wah Solo Lead"
+    },
+    {
+      "name": "Outro Hypnotic 6/4 Chug & Vocal Cadence",
+      "timeStamp": "3:55-4:42",
+      "technique": "6/4 Outro Chug",
+      "key": "E Minor",
+      "description": "The hypnotic 6/4 riff cycles out under Cornell's soaring falsetto calls, ending on a sustained low E chord.",
+      "chords": [
+        "Em",
+        "G",
+        "C"
+      ],
+      "progression": "Em - G - C in 6/4",
+      "notes": [
+        "Lock into Matt Cameron's final drum accents",
+        "Gradually loosen palm muting for heavier acoustic weight",
+        "Let the final low E minor chord ring into silence"
+      ],
+      "alphaTab": ":4 0.6 :4 0.6 :4 3.6 :4 2.6 | :4 3.5 :4 2.5 :2 0.6 | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Outro 6/4 Heavy Chug"
     }
   ],
   "equipment": {
@@ -170,7 +283,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "8 (saturated 90s grunge wall)",
+        "gain": "8",
         "treble": "6",
         "middle": "7",
         "bass": "7",

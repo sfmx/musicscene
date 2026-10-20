@@ -114,15 +114,46 @@
         ],
         "progression": "G5 - D5 - A5 - E5"
       }
+    },
+    {
+      "name": "Jerry Cantrell's Wah/Talk-Box Articulation & Minor Blues Soloing",
+      "description": "Voicing aggressive vocal-like vowel sounds with a talk box or Cry Baby wah pedal, blending 12th-position E minor pentatonic bends with biting blues passing tones",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Talk-box vowel sweeps: rocking between 'Oh' (heel down) and 'Ah' (toe down)",
+          "Blue note passing tones: 6th fret on the A string (Bb / Eb concert) and 8th fret on the G string",
+          "Screaming unison bends on the 15th fret B string matched to 12th fret high E"
+        ],
+        "sequence": [
+          "Sweep the wah pedal forward on accented downbeats",
+          "Execute full-step bends on the 14th fret G string and 15th fret B string",
+          "Let the high notes feed back smoothly into the amplifier preamp",
+          "Resolve back into the low palm-muted E5 pedal riff"
+        ],
+        "tips": [
+          "Keep the wah movement slow and expressive rather than rapid rocking to match Layne Staley's vocal melody",
+          "Use your fretting index finger to damp adjacent unplayed strings against high-gain feedback",
+          "Roll off guitar tone slightly if your bridge pickup sounds excessively shrill with the wah open"
+        ],
+        "chords": [
+          "E5",
+          "G5",
+          "D5",
+          "A5"
+        ],
+        "progression": "E5 - G5 - D5 - A5 Solo Cycle"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Main Talk-Box & Pentatonic Riff",
-      "timeStamp": "0:00-1:10",
-      "technique": "Low-String Pedal Riffing",
+      "name": "Intro Talk-Box Hook & Low E Pedal Groove",
+      "timeStamp": "0:00-0:30",
+      "technique": "Talk-Box Modulation & Low-String Pedal",
       "key": "Eb Minor",
-      "description": "Jerry Cantrell's monolithic E minor pentatonic riff (in Eb tuning) built around the 5th and 7th frets.",
+      "description": "Jerry Cantrell's monolithic opening statement pairing a vocal talk-box hook with stomping low E pedal chugs.",
       "chords": [
         "E5",
         "G5",
@@ -130,19 +161,59 @@
       ],
       "progression": "E5 - G5 - E5 - D5",
       "notes": [
-        "Palm-mute the open 6th-string pedal notes between the fretted 5th/4th string notes",
+        "Palm-mute the open 6th-string pedal notes between fretted notes",
         "Give the 3rd fret on the 6th string a gritty quarter-step blues bend",
         "Lock your right hand into the heavy drum groove"
       ],
-      "alphaTab": ":8 0.6 0.6 7.5 0.6 5.4 7.5 0.6 5.5 | :8 7.5 0.6 3.6 0.6 :2 0.6 |",
+      "alphaTab": ":8 0.6 0.6 7.5 0.6 5.4 7.5 0.6 5.5 | :8 7.5 0.6 3.6 0.6 :2 0.6 | :1 (0.6 2.5 2.4) |",
       "exerciseLabel": "Main Grunge Riff"
     },
     {
-      "name": "Chorus ('Feed My Eyes')",
-      "timeStamp": "1:10-1:42",
+      "name": "Verse 1 Stomping Grunge Riff & Vocal Calls",
+      "timeStamp": "0:31-1:10",
+      "technique": "Low-String Pedal Riffing",
+      "key": "Eb Minor",
+      "description": "The heavy verse groove under Layne Staley's legendary 'I'm the man in the box' vocals.",
+      "chords": [
+        "E5",
+        "G5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - E5 - D5",
+      "notes": [
+        "Maintain tight, punchy palm muting on the open low E string",
+        "Accent the 5th and 7th fret double stops",
+        "Sit relaxed in the back of the 107 BPM pocket"
+      ],
+      "alphaTab": ":8 0.6 0.6 7.5 0.6 5.4 7.5 0.6 5.5 | :8 7.5 0.6 3.6 0.6 :4 0.6 :4 (0.6 2.5 2.4) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Verse Stomp Riff"
+    },
+    {
+      "name": "Pre-Chorus Chromatic Dip & Build",
+      "timeStamp": "1:11-1:20",
+      "technique": "Chromatic Power Chord Transition",
+      "key": "Eb Minor",
+      "description": "A brief chromatic dip down to C#5 and D5 building tension right before the chorus explosion.",
+      "chords": [
+        "C#5",
+        "D5",
+        "E5"
+      ],
+      "progression": "C#5 - D5 - E5",
+      "notes": [
+        "Slide firmly from C#5 (fret 4 A string) up to D5 (fret 5)",
+        "Open up palm muting to allow power chords to ring",
+        "Brace for the massive chorus downbeat"
+      ],
+      "alphaTab": ":2 (4.5 6.4 6.3) :2 (5.5 7.4 7.3) | :1 (0.6 2.5 2.4) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Pre-Chorus Power Transition"
+    },
+    {
+      "name": "Chorus Explosive Power Chords ('Feed My Eyes')",
+      "timeStamp": "1:21-1:52",
       "technique": "Heavy Chorus Power Chords",
       "key": "Eb Minor",
-      "description": "Massive four-chord chorus progression moving through G5, D5, A5, and E5.",
+      "description": "Massive four-chord chorus progression moving through G5, D5, A5, and E5 under soaring vocal harmonies.",
       "chords": [
         "G5",
         "D5",
@@ -155,15 +226,15 @@
         "Hit A5 and resolve into the open E5 riff turnaround",
         "Add the bluesy 3rd-string 2nd-fret bend fill over the E5 resolution"
       ],
-      "alphaTab": ":2 (3.6 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3) (0.6 2.5 2.4) | :2 (3.6 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :1 (0.6 2.5 2.4) |",
+      "alphaTab": ":2 (3.6 5.5 5.4) :2 (0.4 2.3 3.2) | :2 (0.5 2.4 2.3) :2 (0.6 2.5 2.4) | :1 (0.6 2.5 2.4) |",
       "exerciseLabel": "Chorus Chord Progression"
     },
     {
-      "name": "Scale Practice Exercise",
+      "name": "Jerry Cantrell Guitar Solo (Wah-Drenched Minor Blues)",
       "timeStamp": "3:08-3:45",
       "technique": "Cantrell Style Minor Pentatonic Lead",
       "key": "Eb Minor",
-      "description": "E minor blues/pentatonic lead lick in 12th and open position inspired by Jerry Cantrell's solo.",
+      "description": "E minor blues/pentatonic lead lick in 12th position with crying wah sweeps and aggressive vibrato.",
       "chords": [
         "E5",
         "G5",
@@ -176,8 +247,28 @@
         "Include the flat-5th blue note (5th string 6th fret / 3rd string 3rd fret) for extra grit",
         "Sweep your wah pedal forward as you ascend into the high register"
       ],
-      "alphaTab": ":8 0.6 3.6 5.6 5.5 6.5 7.5 5.4 7.4 | :4 7.3 9.3 7.3 5.4 | :1 7.5 |",
+      "alphaTab": ":8 0.6 3.6 5.6 5.5 6.5 7.5 5.4 7.4 | :4 7.3 9.3 :4 7.3 :4 5.4 | :1 7.5 |",
       "exerciseLabel": "Minor Blues Box Run"
+    },
+    {
+      "name": "Outro Chugging Grind & Talk-Box Fade",
+      "timeStamp": "4:00-4:46",
+      "technique": "Heavy Outro Pedal Groove",
+      "key": "Eb Minor",
+      "description": "The crushing main riff cycles out with talk-box vocalizations and roaring feedback into the fade.",
+      "chords": [
+        "E5",
+        "G5",
+        "D5"
+      ],
+      "progression": "E5 - G5 - E5 - D5",
+      "notes": [
+        "Lock into the relentless stomping groove",
+        "Dig into the quarter-step blues curl on the 3rd fret",
+        "Allow natural amplifier feedback to bloom between downstrokes"
+      ],
+      "alphaTab": ":8 0.6 0.6 7.5 0.6 5.4 7.5 0.6 5.5 | :8 7.5 0.6 3.6 0.6 :2 0.6 | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Outro Heavy Grind"
     }
   ],
   "equipment": {
@@ -198,11 +289,11 @@
         "Boss Katana Brown Channel"
       ],
       "settings": {
-        "gain": "8 (thick, saturated Seattle high-gain grind)",
-        "treble": "6 (cutting bite without fizz)",
-        "middle": "7 (throaty, vocal midrange growl)",
-        "bass": "7 (heavy low-end thump)",
-        "presence": "6 (aggressive pick attack)"
+        "gain": "8",
+        "treble": "6",
+        "middle": "7",
+        "bass": "7",
+        "presence": "6"
       }
     },
     "effects": {
@@ -324,4 +415,3 @@
     "estimatedLearningTime": "2-4 weeks"
   }
 }
-

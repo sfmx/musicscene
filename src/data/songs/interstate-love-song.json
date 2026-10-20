@@ -109,11 +109,42 @@
         ],
         "progression": "C#m - E/B - A - G#7"
       }
+    },
+    {
+      "name": "Dean DeLeo's B-String Country Pedal Bends & Relative Major Modulation",
+      "description": "Emulating Nashville pedal steel voice leading on a rock guitar by bending the B and G strings behind ringing open high strings, modulating from C# minor verses to E major choruses",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Country bend: 7th fret B string bent a whole step up to C# while holding the 7th fret high E string",
+          "Secondary dominant tension: G#7 (4-6-4-5-4-4) introducing the crucial B# leading tone",
+          "Tonic major lift: E (0-2-2-1-0-0) to Asus2 (X-0-2-2-0-0) with shimmering open B and E drones"
+        ],
+        "sequence": [
+          "Play the intro slide figure with gentle pick dynamics",
+          "Lead the bass down through C# → B → A → G#",
+          "Stab the G#7 chord firmly on beat 4 with crisp palm damping",
+          "Explode into full-strummed open E major on the chorus downbeat"
+        ],
+        "tips": [
+          "Use the middle position (both humbuckers) on a Les Paul to get DeLeo's hollow, bell-like intro tone",
+          "Hold the G#7 barre flat across the 4th fret so the high F# on string 1 rings out",
+          "Switch to the bridge pickup when hitting the heavy chorus strumming"
+        ],
+        "chords": [
+          "C#m",
+          "G#7",
+          "E",
+          "Asus2"
+        ],
+        "progression": "C#m - G#7 - E - Asus2 Modulation"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro Chromatic Riff",
+      "name": "Intro Chromatic Slide Motif & Pedal Drones",
       "timeStamp": "0:00-0:22",
       "technique": "Chromatic Voice-Leading & Country Bending",
       "key": "C# Minor",
@@ -130,11 +161,11 @@
         "Keep the descending bassline prominent",
         "Let open strings ring over the chord shapes"
       ],
-      "alphaTab": ":4 4.5 :4 2.4 :4 1.3 :4 2.2 | :8 4.5 4.5 :4 (4.5 6.4 6.3 5.2) :4 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (4.6 6.5 4.4 5.3 4.2) |",
+      "alphaTab": ":4 4.5 :4 2.4 :4 1.3 :4 2.2 | :4 (4.5 6.4 6.3 5.2) :4 (2.5 4.4 4.3 4.2) :2 (0.5 2.4 2.3 2.2) | :1 (4.6 6.5 4.4 5.3 4.2) |",
       "exerciseLabel": "Signature Intro Riff"
     },
     {
-      "name": "Verse Progression",
+      "name": "Verse 1 Descending Bass Voice-Leading",
       "timeStamp": "0:23-0:53",
       "technique": "Chord Voice Leading",
       "key": "C# Minor",
@@ -151,15 +182,15 @@
         "Full sustain on the G#7 dominant chord",
         "Maintain relaxed 86 BPM pocket"
       ],
-      "alphaTab": ":2 (4.5 6.4 6.3 5.2) :2 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (4.6 6.5 4.4 5.3 4.2) |",
+      "alphaTab": ":2 (4.5 6.4 6.3 5.2) :2 (2.5 4.4 4.3 4.2) | :2 (0.5 2.4 2.3 2.2) :2 (4.6 6.5 4.4 5.3 4.2) | :1 (4.5 6.4 6.3 5.2) |",
       "exerciseLabel": "Verse Chord Walkdown"
     },
     {
-      "name": "Chorus Anthem",
+      "name": "Chorus 1 Triumphant E Major Lift",
       "timeStamp": "0:54-1:18",
       "technique": "Open Strumming Dynamics",
       "key": "E Major",
-      "description": "Massive open chord explosion into E major, Asus2, and C#m.",
+      "description": "Massive open chord explosion into E major, Asus2, and C#m under 'Waiting on a Sunday afternoon'.",
       "chords": [
         "E",
         "Asus2",
@@ -172,8 +203,71 @@
         "Emphasize the punchy transition to Asus2",
         "Lock in with the drum kick and snare"
       ],
-      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :2 (4.5 6.4 6.3 5.2) :2 (0.5 2.4 2.3 2.2) |",
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :2 (4.5 6.4 6.3 5.2) :2 (0.5 2.4 2.3 2.2) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
       "exerciseLabel": "Chorus Strummed Progression"
+    },
+    {
+      "name": "Verse 2 Rhythmic Chug & Passing Tones",
+      "timeStamp": "1:19-1:45",
+      "technique": "Rhythmic Comping & Chord Accents",
+      "key": "C# Minor",
+      "description": "Verse 2 adds subtle rhythmic palm-muting and vocal responses on the G#7 turnaround.",
+      "chords": [
+        "C#m",
+        "E/B",
+        "A",
+        "G#7"
+      ],
+      "progression": "C#m - E/B - A - G#7",
+      "notes": [
+        "Accentuate the bass walkdown notes on beats 1 and 3",
+        "Crisp choke on beat 4 before the G#7 chord",
+        "Warm overdriven tube tone"
+      ],
+      "alphaTab": ":4 (4.5 6.4 6.3 5.2) :4 (2.5 4.4 4.3 4.2) :2 (0.5 2.4 2.3 2.2) | :2 (4.6 6.5 4.4 5.3 4.2) :2 (4.5 6.4 6.3 5.2) | :1 (4.6 6.5 4.4 5.3 4.2) |",
+      "exerciseLabel": "Verse 2 Rhythmic Accents"
+    },
+    {
+      "name": "Mid-Song Instrumental Break & Slide Lead",
+      "timeStamp": "1:46-2:10",
+      "technique": "Country Slide Lead Embellishments",
+      "key": "C# Minor",
+      "description": "DeLeo revisits the opening slide theme with singing sustain and melodic counterpoint.",
+      "chords": [
+        "C#m7",
+        "E/B",
+        "A",
+        "G#7"
+      ],
+      "progression": "C#m7 - E/B - A - G#7",
+      "notes": [
+        "Smooth glissando slides between frets 4, 6, and 7",
+        "Sweet vibrato at the crest of the slide",
+        "Resolve cleanly into the final chorus blast"
+      ],
+      "alphaTab": ":8 4.5 6.5 4.4 6.4 :4 6.3 :4 5.2 | :8 5.2 7.2 :4 7.2 :4 5.2 :4 4.3 | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Instrumental Slide Break"
+    },
+    {
+      "name": "Chorus 2 & Outro Ringing Cadence",
+      "timeStamp": "2:11-3:14",
+      "technique": "Anthemic Chorus Strumming",
+      "key": "E Major",
+      "description": "Final double chorus soaring into the fading acoustic-electric chord cadence.",
+      "chords": [
+        "E",
+        "Asus2",
+        "C#m",
+        "A"
+      ],
+      "progression": "E - Asus2 - C#m - A - E",
+      "notes": [
+        "Wide open acoustic-electric strumming",
+        "Allow the top strings to ring sympathetically",
+        "Resolve on a ringing E major chord to end"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :2 (4.5 6.4 6.3 5.2) :2 (0.5 2.4 2.3 2.2) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Chorus & Ringing Cadence"
     }
   ],
   "equipment": {
@@ -194,7 +288,7 @@
         "Mesa Boogie Dual Rectifier"
       ],
       "settings": {
-        "gain": "6 (rich saturated tube crunch)",
+        "gain": "6",
         "treble": "6.5",
         "middle": "7",
         "bass": "6",

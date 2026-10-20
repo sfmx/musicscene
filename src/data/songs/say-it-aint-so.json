@@ -50,6 +50,7 @@
           "E"
         ],
         "progression": "i - V - VI - III",
+        "progressionDescription": "Iconic 4-chord progression featuring clean reggae upstrokes in verse and crushing fuzz in chorus",
         "description": "Iconic 4-chord progression featuring clean reggae upstrokes in verse and crushing fuzz in chorus"
       },
       "sectionProgressions": [
@@ -112,10 +113,10 @@
       }
     },
     {
-      "name": "High-Impact Dynamic Explosion",
+      "name": "High-Impact Dynamic Explosion & Crushing Fuzz Tone",
       "description": "Transitioning instantly from whispering clean skanks to a crushing wall of high-gain fuzz power chords",
       "difficulty": "Intermediate",
-      "primaryTechnique": true,
+      "primaryTechnique": false,
       "details": {
         "notes": [
           "The defining sonic trademark of 90s alternative rock",
@@ -143,8 +144,8 @@
   ],
   "sections": [
     {
-      "name": "Intro & Verse Riff",
-      "timeStamp": "0:00-1:05",
+      "name": "Intro Clean Offbeat Skanks & Hammer-On Embellishments",
+      "timeStamp": "0:00-0:30",
       "technique": "Clean Offbeat Upstrokes & Hammer-ons",
       "key": "C# Minor",
       "description": "The classic opening clean riff featuring syncopated offbeat chord stabs and fluid melodic fills.",
@@ -160,15 +161,36 @@
         "Clean tone with slight chorus / room reverb",
         "Execute the subtle hammer-on ornament on the A chord cleanly"
       ],
-      "alphaTab": ":8 r.2 (4.5 6.4 6.3 5.2) r.2 (4.6 6.5 6.4 5.3) | r.2 (5.6 7.5 7.4 6.3) r.2 (0.6 2.5 2.4 1.3) |",
+      "alphaTab": ":8 r (4.5 6.4 6.3 5.2) r (4.5 6.4 6.3 5.2) r (4.6 6.5 6.4 5.3) r (4.6 6.5 6.4 5.3) | :8 r (5.6 7.5 7.4 6.3) r (5.6 7.5 7.4 6.3) r (0.6 2.5 2.4 1.3) r (0.6 2.5 2.4 1.3) | :1 (4.5 6.4 6.3 5.2) |",
       "exerciseLabel": "Clean Verse Offbeat Skanks"
     },
     {
-      "name": "Explosive Chorus",
+      "name": "Verse 1 Reggae Rhythms & Melodic Flourishes",
+      "timeStamp": "0:31-1:04",
+      "technique": "Reggae Skanks & Bass Fills",
+      "key": "C# Minor",
+      "description": "Hypnotic verse backing Cuomo's intimate opening lyrics ('Somebody's Heine' is crowdin' my icebox').",
+      "chords": [
+        "C#m",
+        "G#",
+        "A",
+        "E"
+      ],
+      "progression": "C#m - G# - A - E",
+      "notes": [
+        "Choke chords immediately with fretting hand release",
+        "Add subtle hammer-on fill on fret 7 of the D string",
+        "Keep the rhythm crisp and detached"
+      ],
+      "alphaTab": ":8 r (4.5 6.4 6.3 5.2) r (4.6 6.5 6.4 5.3) r (5.6 7.5 7.4 6.3) :8 7.4 9.4 | :8 r (0.6 2.5 2.4 1.3) :2 (0.6 2.5 2.4 1.3) :4 r | :1 (4.5 6.4 6.3 5.2) |",
+      "exerciseLabel": "Verse Reggae Skank Fills"
+    },
+    {
+      "name": "Explosive Chorus Wall of Fuzz ('Say it ain't so!')",
       "timeStamp": "1:05-1:36",
       "technique": "Crushing Fuzz Power Chords",
       "key": "C# Minor",
-      "description": "Massive dynamic explosion as the full distortion kicks in for the anthemic title refrain.",
+      "description": "Massive dynamic explosion as full distortion kicks in for the anthemic title refrain.",
       "chords": [
         "C#5",
         "G#5",
@@ -181,11 +203,53 @@
         "Let strings ring fully with thick fuzz saturation",
         "Tight mute on the transition stops"
       ],
-      "alphaTab": ":4 (4.5 6.4 6.3) (4.6 6.5 6.4) | :4 (5.6 7.5 7.4) (0.6 2.5 2.4) | :4 (4.5 6.4 6.3) (4.6 6.5 6.4) | :2 (5.6 7.5 7.4) :2 (0.6 2.5 2.4) |",
+      "alphaTab": ":2 (4.5 6.4 6.3) :2 (4.6 6.5 6.4) | :2 (5.6 7.5 7.4) :2 (0.6 2.5 2.4) | :1 (4.5 6.4 6.3) |",
       "exerciseLabel": "Chorus Fuzz Power Chords"
     },
     {
-      "name": "Guitar Solo",
+      "name": "Verse 2 Subtle Dynamic Variations",
+      "timeStamp": "1:37-2:08",
+      "technique": "Clean Verse Accompaniment",
+      "key": "C# Minor",
+      "description": "Second verse drops back down into intimate reggae-style offbeat skanks.",
+      "chords": [
+        "C#m",
+        "G#",
+        "A",
+        "E"
+      ],
+      "progression": "C#m - G# - A - E",
+      "notes": [
+        "Precision damping between strokes",
+        "Maintain relaxed 76 BPM tempo",
+        "Support the vocal counter-melodies"
+      ],
+      "alphaTab": ":8 r (4.5 6.4 6.3 5.2) r (4.5 6.4 6.3 5.2) r (4.6 6.5 6.4 5.3) r (4.6 6.5 6.4 5.3) | :8 r (5.6 7.5 7.4 6.3) r (5.6 7.5 7.4 6.3) :2 (0.6 2.5 2.4 1.3) | :1 (4.5 6.4 6.3 5.2) |",
+      "exerciseLabel": "Verse 2 Rhythmic Skanks"
+    },
+    {
+      "name": "Bridge Tension Build ('Dear Daddy, I write you')",
+      "timeStamp": "2:09-2:39",
+      "technique": "Dynamic Tension Strumming",
+      "key": "C# Minor",
+      "description": "Dramatic bridge progression moving through B, B/A, E, and G# building to the solo explosion.",
+      "chords": [
+        "B",
+        "B/A",
+        "E",
+        "G#"
+      ],
+      "progression": "B - B/A - E - G#",
+      "notes": [
+        "Voicing the descending bass note B to A cleanly",
+        "Crescendo pick attack across each measure",
+        "Hold the dramatic G# dominant chord before the solo hits"
+      ],
+      "alphaTab": ":2 (2.5 4.4 4.3 4.2) :2 (0.5 4.4 4.3 4.2) | :2 (0.6 2.5 2.4 1.3) :2 (4.6 6.5 6.4 5.3) | :1 (2.5 4.4 4.3 4.2) |",
+      "exerciseLabel": "Bridge Tension Build"
+    },
+    {
+      "name": "Rivers Cuomo Guitar Solo & Emotional Climax",
       "timeStamp": "2:40-3:12",
       "technique": "Emotional Pentatonic Bends & Harmonics",
       "key": "C# Minor",
@@ -202,7 +266,7 @@
         "Wide, dramatic vibrato on the 12th and 14th fret bends",
         "Let natural feedback bloom between phrases"
       ],
-      "alphaTab": ":8 9.3 11.3 :4 12.2 :8 11.3 9.3 | :4 11.4 :8 9.4 11.4 :4 9.4 | :8 12.1 14.1 :4 16.1 :8 14.1 12.1 | :2 14.2 :2 r.2 |",
+      "alphaTab": ":8 9.3 11.3 :4 12.2 :8 11.3 9.3 :4 11.4 | :8 9.4 11.4 :4 9.4 :2 11.4 | :8 12.1 14.1 :4 16.1 :8 14.1 12.1 :4 14.2 | :1 (4.5 6.4 6.3) |",
       "exerciseLabel": "Cuomo Solo Climax"
     }
   ],
@@ -224,11 +288,11 @@
         "Boss Katana 100"
       ],
       "settings": {
-        "gain": "7/10",
-        "treble": "6/10",
-        "middle": "7/10",
-        "bass": "6/10",
-        "presence": "6/10"
+        "gain": "7",
+        "treble": "6",
+        "middle": "7",
+        "bass": "6",
+        "presence": "6"
       }
     },
     "effects": {
@@ -328,10 +392,9 @@
       "distortion",
       "strumming",
       "phrasing",
-      "song-analysis",
       "rhythm-guitar"
     ],
-    "learningValue": "HIGH",
+    "learningValue": "High",
     "estimatedLearningTime": "2-4 weeks"
   }
 }

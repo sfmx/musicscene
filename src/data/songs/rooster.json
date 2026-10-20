@@ -50,6 +50,7 @@
           "C"
         ],
         "progression": "i - ♭III - IV - ♭V",
+        "progressionDescription": "Cyclical two-chord verse groove expanding into crushing chromatic grunge power chords in the chorus.",
         "description": "Cyclical two-chord verse groove expanding into crushing chromatic grunge power chords in the chorus."
       },
       "sectionProgressions": [
@@ -82,7 +83,7 @@
   },
   "techniques": [
     {
-      "name": "Dynamic Soft-Loud Grunge Contrast & Wah Phrasing",
+      "name": "Dynamic Soft-Loud Grunge Contrast & Clean Modulated Arpeggios",
       "description": "Transitioning seamlessly from delicate, modulated clean finger/pick arpeggios to thunderous Bogner/Marshall high-gain power chords with expressive cry-baby wah soloing",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
@@ -113,50 +114,158 @@
         ],
         "progression": "F#m - A"
       }
+    },
+    {
+      "name": "Cantrell's Vocal-Style Wah Guitar Soloing & Double-Stop Bends",
+      "description": "Expressive soloing using sweeping Cry Baby wah filter sweeps, vocal 14th-position F# minor pentatonic bends, and screaming double-stops over high-gain crunch",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "F# minor pentatonic Box 1 in 14th position: frets 14-17 on strings 1, 2, and 3",
+          "Whole-step bend on the 16th fret G string (B up to C#)",
+          "Double-stop bends on frets 14 and 16 across strings 2 and 3"
+        ],
+        "sequence": [
+          "Rock the wah pedal from heel to toe in time with the emotional crest of each phrase",
+          "Sustain the 16th-fret G-string bend with wide, slow finger vibrato",
+          "Slide into high register double-stops on the 14th and 17th frets",
+          "Damp strings with the palm edge when transitioning back into heavy rhythm power chords"
+        ],
+        "tips": [
+          "Use your foot to shape the tone like a human voice rather than as a fast rhythmic filter",
+          "Keep the bridge humbucker selected with amp gain set high for effortless sustain",
+          "Support string bends with two fingers to ensure rock-solid pitch intonation"
+        ],
+        "chords": [
+          "F#5",
+          "A5",
+          "B5",
+          "C5"
+        ],
+        "progression": "F#5 - A5 - B5 - C5 Solo Progression"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Clean Intro & Verse Arpeggio",
-      "timeStamp": "0:00-1:10",
+      "name": "Clean Modulated Intro Arpeggio",
+      "timeStamp": "0:00-0:45",
       "technique": "Modulated Clean Arpeggiated Picking",
       "key": "F# Minor",
-      "description": "Haunting two-chord arpeggio played through an Electro-Harmonix Electric Mistress flanger and chorus",
-      "alphaTab": "\\tempo 72 . \\ts 4 4\n:8 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 | 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 |",
-      "exerciseLabel": "Verse Clean Arpeggio Pattern",
+      "description": "Haunting two-chord arpeggio played through an Electro-Harmonix Electric Mistress flanger and chorus.",
       "chords": [
         "F#m",
         "A"
       ],
       "progression": "F#m - A",
       "notes": [
-        "F#",
-        "C#",
-        "A",
-        "E"
-      ]
+        "Allow low F# root to anchor the clean picking pattern",
+        "Keep open A string ringing into the next measure",
+        "Let the flanger swirl fill the acoustic space"
+      ],
+      "alphaTab": ":8 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | :8 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 | :1 (2.6 4.4 2.3) |",
+      "exerciseLabel": "Verse Clean Arpeggio Pattern"
     },
     {
-      "name": "Heavy Chorus Riff",
-      "timeStamp": "1:35-2:15",
+      "name": "Verse 1 Flanged Clean Picking & Bass Riff",
+      "timeStamp": "0:46-1:34",
+      "technique": "Quiet Grunge Verse Dynamics",
+      "key": "F# Minor",
+      "description": "Brooding verse progression backing Staley's haunting 'Ain't found a way to kill me yet' vocal.",
+      "chords": [
+        "F#m",
+        "A"
+      ],
+      "progression": "F#m - A",
+      "notes": [
+        "Gentle pick attack to preserve clean headroom",
+        "Lock into Mike Starr's low bass groove",
+        "Build dynamic tension toward the pre-chorus"
+      ],
+      "alphaTab": ":8 2.6 4.4 2.3 4.4 2.6 4.4 2.3 4.4 | :8 0.5 2.4 2.3 4.3 0.5 2.4 2.3 4.3 | :1 (2.6 4.4 2.3) |",
+      "exerciseLabel": "Verse Flanged Picking"
+    },
+    {
+      "name": "Heavy Pre-Chorus Build & Chromatic Ascent",
+      "timeStamp": "1:35-1:55",
+      "technique": "Chromatic Power Chord Build",
+      "key": "F# Minor",
+      "description": "Rising chromatic tension with palm-muted power chords exploding from F#5 through A5 and B5 to C5.",
+      "chords": [
+        "F#5",
+        "A5",
+        "B5",
+        "C5"
+      ],
+      "progression": "F#5 - A5 - B5 - C5",
+      "notes": [
+        "Start with tight palm muting and gradually open up",
+        "Hit the C5 flat-5 tritone chord with maximum bite",
+        "Kick on the distortion pedal for the chorus explosion"
+      ],
+      "alphaTab": ":4 (2.6 4.5 4.4) :4 (0.5 2.4 2.3) :4 (2.5 4.4 4.3) :4 (3.5 5.4 5.3) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Pre-Chorus Chromatic Build"
+    },
+    {
+      "name": "Crushing Chorus Wall of Sound",
+      "timeStamp": "1:56-2:35",
       "technique": "Heavy Downstroke Power Chording",
       "key": "F# Minor",
-      "description": "Massive high-gain wall of sound locking with the bass and drums as the song explodes into the chorus",
-      "alphaTab": "\\tempo 72 . \\ts 4 4\n:4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :4 2.6 2.6 :8 2.6 2.6 :4 0.5 | :2 5.5 :4 0.5 2.6 |",
-      "exerciseLabel": "Heavy Chorus Power Groove",
+      "description": "Massive high-gain wall of sound locking with the bass and drums as the song explodes into 'Yeah, they come to snuff the rooster'.",
+      "chords": [
+        "F#5",
+        "A5"
+      ],
+      "progression": "F#5 - A5 - F#5 - A5",
+      "notes": [
+        "Aggressive downstrokes on every quarter note",
+        "Let the heavy power chords sustain into feedback",
+        "Lock with Sean Kinney's thunderous snare cracks"
+      ],
+      "alphaTab": ":4 (2.6 4.5 4.4) (2.6 4.5 4.4) :8 (2.6 4.5 4.4) (2.6 4.5 4.4) :4 (0.5 2.4 2.3) | :4 (2.6 4.5 4.4) (2.6 4.5 4.4) :8 (2.6 4.5 4.4) (2.6 4.5 4.4) :4 (0.5 2.4 2.3) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Heavy Chorus Power Groove"
+    },
+    {
+      "name": "Jerry Cantrell Guitar Solo (Vocal Wah Phrasing)",
+      "timeStamp": "3:45-4:35",
+      "technique": "Vocal Wah Lead Phrasing",
+      "key": "F# Minor",
+      "description": "Cantrell's signature emotional solo featuring weeping wah sweeps, crying bends, and singing double stops.",
+      "chords": [
+        "F#5",
+        "A5",
+        "B5",
+        "C5"
+      ],
+      "progression": "F#5 - A5 - B5 - C5 Solo Progression",
+      "notes": [
+        "Sweep wah pedal in sync with vocal vowel shapes",
+        "Wring out wide, emotive vibrato on 16th fret bends",
+        "Let high notes bloom into natural amplifier sustain"
+      ],
+      "alphaTab": ":8 14.3 16.3 :4 17.2 :8 16.3 14.3 :4 16.3 | :8 14.2 17.2 :4 17.2 :4 14.1 :4 17.2 | :1 14.3 |",
+      "exerciseLabel": "Cantrell Wah Solo Lead"
+    },
+    {
+      "name": "Outro Heavy Power Groove & Feedback Ring",
+      "timeStamp": "5:15-6:15",
+      "technique": "Heavy Outro Cadence & Feedback",
+      "key": "F# Minor",
+      "description": "Final apocalyptic chorus cycles out into roaring feedback, ringing power chords, and snare crashes.",
       "chords": [
         "F#5",
         "A5",
         "D5"
       ],
-      "progression": "F#5 - A5 - F#5 - A5 - D5",
+      "progression": "F#5 - A5 - D5 - F#5",
       "notes": [
-        "F#",
-        "C#",
-        "A",
-        "E",
-        "D"
-      ]
+        "Slam heavy downstrokes on the F#5 root",
+        "Let the amplifier feed back musically at the end of each measure",
+        "Sustain the final low F#5 chord to natural silence"
+      ],
+      "alphaTab": ":4 (2.6 4.5 4.4) :4 (0.5 2.4 2.3) :2 (2.6 4.5 4.4) | :2 (5.5 7.4 7.3) :2 (2.6 4.5 4.4) | :1 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Outro Heavy Power Cadence"
     }
   ],
   "equipment": {
@@ -224,12 +333,12 @@
     "sameArtist": [
       {
         "title": "Man in the Box",
-        "link": "/lessons/songs/song-analysis/man-in-the-box",
-        "similarity": "The iconic talk-box grunge anthem featuring heavy drop-D power chords and crushing vocal harmonies"
+        "difficulty": "Intermediate",
+        "similarity": "The iconic talk-box grunge anthem featuring heavy power chords and crushing vocal harmonies"
       },
       {
         "title": "No Excuses",
-        "link": "/lessons/songs/song-analysis/no-excuses",
+        "difficulty": "Intermediate",
         "similarity": "Acoustic-driven Alice in Chains masterclass utilizing open ringing strings and modal chord voicings"
       }
     ],
@@ -297,4 +406,3 @@
     "estimatedLearningTime": "3-5 weeks"
   }
 }
-
