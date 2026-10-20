@@ -86,7 +86,7 @@
   "techniques": [
     {
       "name": "Contrapuntal Fingerpicking & Dyads",
-      "description": "Alternating bass-line picking on strings 5 and 6 while plucking ringing open and fretted dyads on the higher strings",
+      "description": "Alternating bass-line picking on strings 5 and 6 while plucking ringing open and fretted dyads on the higher strings.",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
@@ -110,15 +110,47 @@
         ],
         "progression": "Am - Fmaj7"
       }
+    },
+    {
+      "name": "Modulated Vocal-Style Lead Phrasing & Wide Vibrato",
+      "description": "John Frusciante's masterclass in minimalism, modulating suddenly from A minor into F# minor for an austere, yearning solo that mirrors human vocal phrasing.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "F# minor pentatonic notes across frets 7 to 10 on strings 2, 3, and 4",
+          "Targeting chord roots: F# (fret 9 on string 3), D (fret 10 on string 2), and B (fret 7 on string 2)",
+          "Singing, slow finger vibrato and deliberate pauses",
+          "Boss DS-2 Turbo Distortion engaged for rich analog tube clipping"
+        ],
+        "sequence": [
+          "Enter with an unhurried, vocal-like statement on fret 9 of the G string",
+          "Slide up to fret 10 of the B string and apply wide finger vibrato",
+          "Step down smoothly to the 7th fret B string over the D major chord",
+          "Resolve onto the root F# note on the 4th string at fret 9"
+        ],
+        "tips": [
+          "Avoid rushing—the beauty of this solo lies in the generous silence between notes",
+          "Support the fretting fingers with the thumb resting comfortably over the top of the neck",
+          "Switch to the bridge single-coil pickup for cutting lead presence"
+        ],
+        "chords": [
+          "F#m",
+          "D",
+          "Bm",
+          "E"
+        ],
+        "progression": "F#m - D - Bm - E"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Riff",
-      "timeStamp": "0:00-0:32",
+      "name": "Intro Contrapuntal Dyad Motif",
+      "timeStamp": "0:00-0:21",
       "technique": "Contrapuntal Fingerpicking & Dyads",
       "key": "A Minor",
-      "description": "Frusciante's iconic intro motif alternating between open A bass and 1st-fret F bass notes.",
+      "description": "Frusciante's iconic intro motif alternating between open A bass and 1st-fret F bass notes while plucking high dyads.",
       "chords": [
         "Am",
         "Fmaj7"
@@ -133,11 +165,51 @@
       "exerciseLabel": "Intro Contrapuntal Riff"
     },
     {
-      "name": "Chorus Chords",
+      "name": "Verse 1 California Melancholy",
+      "timeStamp": "0:21-0:53",
+      "technique": "Sparse Rhythmic Accompaniment",
+      "key": "A Minor",
+      "description": "Anthony Kiedis's cultural narrative ('Psychic spies from China try to steal your mind's elation...') over sparse, interlocking guitar and Flea's bass.",
+      "chords": [
+        "Am",
+        "Fmaj7"
+      ],
+      "progression": "Am - Fmaj7",
+      "notes": [
+        "Maintain delicate touch with clean pick attack",
+        "Leave space for Flea's melodic bass counterpoint",
+        "Keep the 96 BPM tempo relaxed and contemplative"
+      ],
+      "alphaTab": ":8 0.5 7.4 :4 5.2 :8 1.6 7.4 :4 5.2 | :8 0.5 7.4 :4 5.2 :8 1.6 7.4 :4 5.2 |",
+      "exerciseLabel": "Verse Dyad Groove"
+    },
+    {
+      "name": "Pre-Chorus Harmonic Build",
       "timeStamp": "0:53-1:13",
+      "technique": "Ascending Chord Cadence",
+      "key": "C Major",
+      "description": "Ascending chord motion moving through C, G, Dm, and Am building anticipation towards the chorus hook.",
+      "chords": [
+        "C",
+        "G",
+        "Dm",
+        "Am"
+      ],
+      "progression": "C - G - Dm - Am",
+      "notes": [
+        "Gradually increase strumming dynamics",
+        "Crisp transition into the Dm chord",
+        "Lock into Chad Smith's ghost-note snare groove"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.4 2.3 3.2 1.1) :2 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Pre-Chorus Build"
+    },
+    {
+      "name": "Chorus Stadium Anthem ('Dream of Californication')",
+      "timeStamp": "1:13-1:35",
       "technique": "Open & Barre Chord Strumming",
       "key": "C Major",
-      "description": "Full strummed chords on 'Dream of Californication' moving C to G, Dm, and Am.",
+      "description": "Broad strummed open chords on 'Dream of Californication' lifting the dynamic level with full stadium resonance.",
       "chords": [
         "C",
         "G",
@@ -154,11 +226,11 @@
       "exerciseLabel": "Chorus Chord Progression"
     },
     {
-      "name": "Guitar Solo Motif",
-      "timeStamp": "3:21-3:42",
+      "name": "Modulated F# Minor Guitar Solo",
+      "timeStamp": "3:21-3:45",
       "technique": "Vocal Melodic Phrasing & Bending",
       "key": "F# Minor",
-      "description": "Frusciante's masterclass in minimalism—modulating to F# minor with soulful vocal-like phrasing.",
+      "description": "Frusciante's masterclass in minimalism—modulating suddenly into F# minor with soulful vocal-like phrasing and singing vibrato.",
       "chords": [
         "F#m",
         "D",
@@ -167,12 +239,31 @@
       ],
       "progression": "F#m - D - Bm - E",
       "notes": [
+        "Engage Boss DS-2 Turbo Distortion for singing sustain",
         "Use wide, singing finger vibrato on sustained notes",
-        "Target chord tones (F# on F#m, D on D)",
-        "Emphasize the emotional, vocal pacing"
+        "Target chord tones cleanly (F# on F#m, D on D)"
       ],
       "alphaTab": ":4 9.3 :4 10.2 :2 9.2 | :4 7.2 :4 10.2 :2 7.2 | :4 9.3 :4 7.3 :2 6.3 | :1 9.4 |",
       "exerciseLabel": "Modulated Solo Lead Line"
+    },
+    {
+      "name": "Outro Vocal Interplay & Subtle Fade",
+      "timeStamp": "4:30-5:21",
+      "technique": "Dyad Interlocking Jam & Dynamic Fade",
+      "key": "A Minor",
+      "description": "The hypnotic final moments of the track where Frusciante's dyads weave around Kiedis's vocal rounds as the track fades into silence.",
+      "chords": [
+        "Am",
+        "Fmaj7"
+      ],
+      "progression": "Am - Fmaj7",
+      "notes": [
+        "Gentle, relaxed fingerpicking on the verse dyads",
+        "Add subtle high-register slides and harmonics",
+        "Gradual decrescendo into the studio fadeout"
+      ],
+      "alphaTab": ":8 0.5 7.4 :4 5.2 :8 1.6 7.4 :4 5.2 | :2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Outro Dyad Fade"
     }
   ],
   "equipment": {
@@ -193,10 +284,10 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "3.5 (clean with woody edge)",
-        "treble": "6 (glassy top chime)",
-        "middle": "7 (warm mids)",
-        "bass": "5 (controlled low end)",
+        "gain": "3.5",
+        "treble": "6",
+        "middle": "7",
+        "bass": "5",
         "presence": "5"
       }
     },

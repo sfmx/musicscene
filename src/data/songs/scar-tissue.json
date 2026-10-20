@@ -51,28 +51,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Intro & Verse Riff",
+          "section": "Intro & Verse 10th-Interval Riff",
           "progression": "F - C - Dm",
           "romanNumerals": "I - V - vi",
           "description": "Two-note 10th interval dyads plucked on the 5th and 2nd strings with melodic pull-offs on the high B string"
         },
         {
-          "section": "Chorus",
+          "section": "Verse 1 Vocal Narrative & Harmonic Groove",
+          "progression": "F - C - Dm",
+          "romanNumerals": "I - V - vi",
+          "description": "Subtle dynamic variations in the 10th interval plucking supporting Anthony Kiedis's bittersweet verse melody"
+        },
+        {
+          "section": "Chorus Triads",
           "progression": "F - C - Dm - C",
           "romanNumerals": "I - V - vi - V",
           "description": "Expands into fuller Hendrix-style thumb-over barre chords supporting the harmonized vocal hook"
         },
         {
-          "section": "Slide Guitar Solos (1, 2 & 3)",
+          "section": "Slide Guitar Solo 1 (Melodic Statement)",
           "progression": "F - C - Dm - C",
           "romanNumerals": "I - V - vi - V",
-          "description": "Soaring D minor / F major slide guitar melodies targeting chord tones with smooth glissandos"
+          "description": "First lyrical slide guitar melody gliding between chord tones on the G and B strings"
         },
         {
-          "section": "Scale Practice Exercise",
-          "progression": "I - V - vi",
-          "romanNumerals": "Scale Practice",
-          "description": "F major / D minor pentatonic melodic run in 5th and 10th positions"
+          "section": "Slide Guitar Solo 2 (Harmonic Development)",
+          "progression": "F - C - Dm - C",
+          "romanNumerals": "I - V - vi - V",
+          "description": "Second expressive slide solo moving up into higher fretboard positions with wider vocal intervals"
+        },
+        {
+          "section": "Outro Slide Guitar Solo 3 & Coda",
+          "progression": "F - C - Dm - C",
+          "romanNumerals": "I - V - vi - V",
+          "description": "Climactic final slide solo reaching the upper register of the high B string before the ambient fade"
         }
       ],
       "harmonicFunction": [
@@ -112,6 +124,36 @@
         ],
         "progression": "F - C - Dm"
       }
+    },
+    {
+      "name": "Melodic Slide Guitar Soloing & Microtonal Intonation",
+      "description": "Singing, vocal-like slide phrasing utilizing light pressure, target-fret intonation, and behind-the-slide left-hand muting",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Position the slide directly above the fret wire (not between frets) for accurate pitch intonation",
+          "Rest the fleshy side of your index finger across the strings behind the slide to eliminate dissonant sympathetic string rattling",
+          "Apply horizontal wrist vibrato along the length of the string rather than vertical bending vibrato"
+        ],
+        "sequence": [
+          "Wear a medium-weight glass or brass slide on your pinky or ring finger",
+          "Approach each target note with a smooth glissando from 1 or 2 frets below",
+          "Target root and 3rd chord tones on strong beats, letting notes bloom with sustained vibrato",
+          "Use pick hand palm and finger muting to isolate the solo string"
+        ],
+        "tips": [
+          "Never press the slide down onto the frets; let the weight of the slide float on top of the string",
+          "A slightly higher string action helps prevent buzzing against the frets when using standard tuning",
+          "Roll back the guitar tone knob slightly to smooth out sharp high-end glassiness"
+        ],
+        "chords": [
+          "F",
+          "C",
+          "Dm"
+        ],
+        "progression": "F - C - Dm - C"
+      }
     }
   ],
   "sections": [
@@ -136,8 +178,28 @@
       "exerciseLabel": "Signature 10th Interval Riff"
     },
     {
-      "name": "Chorus Triads",
-      "timeStamp": "0:45-1:06",
+      "name": "Verse 1 Vocal Narrative & Harmonic Groove",
+      "timeStamp": "0:45-1:05",
+      "technique": "Two-Note 10th Interval Dyads & Hybrid Picking",
+      "key": "F Major",
+      "description": "Rhythmic stabilization of the 10th-interval dyad progression beneath Anthony Kiedis's opening lyrics.",
+      "chords": [
+        "F",
+        "C",
+        "Dm"
+      ],
+      "progression": "F - C - Dm",
+      "notes": [
+        "Maintain clean palm damping on the lower strings",
+        "Focus on consistent dynamic balance between the root bass note and the melody on string 2",
+        "Prepare for the transition to full chord shapes in the upcoming chorus"
+      ],
+      "alphaTab": ":8 8.5 10.2 8.5 10.2 8.5 10.2 8.5 10.2 | :8 7.5 8.2 5.5 6.2 5.5 6.2 5.5 6.2 | :4 (8.5 10.2) :4 (8.5 10.2) :2 (5.5 6.2) |",
+      "exerciseLabel": "Verse Dyad Groove"
+    },
+    {
+      "name": "Chorus Triads ('With the Birds I'll Share This Lonely View')",
+      "timeStamp": "1:05-1:27",
       "technique": "Hendrix-Style Thumb Barre Chords",
       "key": "F Major",
       "description": "Full chord strumming on 'With the birds I'll share this lonely view' moving from F to C and Dm.",
@@ -152,13 +214,13 @@
         "Accent the backbeat on beats 2 and 4",
         "Leave space for Flea's melodic bass fills"
       ],
-      "alphaTab": ":2 (1.6 3.4 2.3 1.2) :2 (3.5 2.4 0.3 1.2) | :2 (0.4 2.3 3.2 1.1) :2 (3.5 2.4 0.3 1.2) |",
+      "alphaTab": ":2 (1.6 3.4 2.3 1.2) :2 (3.5 2.4 0.3 1.2) | :2 (0.4 2.3 3.2 1.1) :2 (3.5 2.4 0.3 1.2) | :1 (1.6 3.4 2.3 1.2) |",
       "exerciseLabel": "Chorus Chord Progression"
     },
     {
-      "name": "Slide Guitar Solo Motif",
-      "timeStamp": "1:07-1:27",
-      "technique": "Slide Guitar Phrasing",
+      "name": "Slide Guitar Solo 1 (Melodic Statement)",
+      "timeStamp": "1:27-1:50",
+      "technique": "Melodic Slide Guitar Soloing & Microtonal Intonation",
       "key": "D Minor",
       "description": "Lyrical slide guitar melody gliding between chord tones on the G and B strings.",
       "chords": [
@@ -172,8 +234,48 @@
         "Apply gentle horizontal vibrato once you reach the target pitch",
         "Mute behind the slide with your index finger"
       ],
-      "alphaTab": ":4 10.3 :4 9.3 :2 7.3 | :4 7.3 :4 5.3 :2 7.3 | :4 10.2 :4 8.2 :2 6.2 | :1 10.3 |",
-      "exerciseLabel": "Melodic Slide Solo Line"
+      "alphaTab": ":4 10.3 :4 9.3 :2 7.3 | :4 7.3 :4 5.3 :2 7.3 | :4 10.2 :4 8.2 :2 6.2 | :2 10.3 :2 7.3 |",
+      "exerciseLabel": "Slide Solo 1 Statement"
+    },
+    {
+      "name": "Slide Guitar Solo 2 (Harmonic Development)",
+      "timeStamp": "2:15-2:40",
+      "technique": "Melodic Slide Guitar Soloing & Microtonal Intonation",
+      "key": "D Minor",
+      "description": "Second expressive slide solo climbing higher up the neck on the G and B strings with emotive portamento.",
+      "chords": [
+        "F",
+        "C",
+        "Dm"
+      ],
+      "progression": "F - C - Dm - C",
+      "notes": [
+        "Glissando smoothly up to fret 14 on the G and B strings",
+        "Maintain parallel alignment with the fret wire to prevent buzzing",
+        "Let the sustained target notes ring across chord changes"
+      ],
+      "alphaTab": ":4 12.3 :4 14.3 :2 14.2 | :4 12.2 :4 10.2 :2 13.2 | :4 10.3 :4 12.3 :2 10.3 | :2 7.3 :2 5.3 |",
+      "exerciseLabel": "Slide Solo 2 Development"
+    },
+    {
+      "name": "Outro Slide Guitar Solo 3 & Coda",
+      "timeStamp": "3:05-3:37",
+      "technique": "Melodic Slide Guitar Soloing & Microtonal Intonation",
+      "key": "D Minor",
+      "description": "Climactic final solo reaching up to the 17th fret on the B string before trailing into the ambient fade.",
+      "chords": [
+        "F",
+        "C",
+        "Dm"
+      ],
+      "progression": "F - C - Dm - C",
+      "notes": [
+        "Precision slide placement at the 17th fret high E/B register",
+        "Wide expressive vibrato that decays naturally into the studio reverb",
+        "End on the resonant 10th fret D note on the G string"
+      ],
+      "alphaTab": ":4 14.2 :4 15.2 :2 17.2 | :4 15.2 :4 13.2 :2 15.2 | :4 14.3 :4 12.3 :4 10.3 :4 12.3 | :1 10.3 |",
+      "exerciseLabel": "Outro Slide Solo & Coda"
     }
   ],
   "equipment": {
@@ -194,11 +296,11 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "4 (clean edge-of-breakup warmth)",
-        "treble": "6 (glassy Stratocaster chime)",
-        "middle": "7 (woody midrange punch)",
-        "bass": "5 (tight low-end response)",
-        "presence": "5 (smooth top-end)"
+        "gain": "4",
+        "treble": "6",
+        "middle": "7",
+        "bass": "5",
+        "presence": "5"
       }
     },
     "effects": {

@@ -88,7 +88,7 @@
   "techniques": [
     {
       "name": "Open-String Drone Strumming & Parallel Major-to-Minor Shifts",
-      "description": "Fluid 16th-note acoustic/clean-electric strumming at 77 BPM that keeps the top two strings open across E and A before shifting into heavy, wide-open minor chords",
+      "description": "Fluid 16th-note acoustic/clean-electric strumming at 77 BPM that keeps the top two strings open across E and A before shifting into heavy, wide-open minor chords.",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -119,15 +119,46 @@
         ],
         "progression": "Em - D - C - Em"
       }
+    },
+    {
+      "name": "Mike McCready E Minor Pentatonic Vocal Soloing & Cry Baby Wah Expression",
+      "description": "Mike McCready's deeply expressive lead work in 12th-to-15th position E minor pentatonic, using wide, singing finger vibrato, vocal-like whole-step bends, and Cry Baby wah sweeps.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "12th-position E minor pentatonic box: frets 12 to 15 on strings 1 to 4",
+          "Whole-step bend on fret 15 string 2 (D up to E) with finger vibrato",
+          "Whole-step bend on fret 14 string 3 (A up to B)",
+          "Cry Baby wah pedal for crying emotional swells"
+        ],
+        "sequence": [
+          "Ascend from fret 12 of the G string through fret 15 of the B string",
+          "Bend fret 15 up to root E and hold with wide, singing vibrato",
+          "Sweep the wah pedal forward on bend peaks and rock back on releases",
+          "Resolve down to fret 14 of the D string (root E)"
+        ],
+        "tips": [
+          "Channel Jimi Hendrix and David Gilmour—play with your heart rather than rushing through notes",
+          "Support the 15th-fret ring-finger bend with middle and index fingers behind it",
+          "A subtle analog delay (~340ms) creates the stadium depth of the original recording"
+        ],
+        "chords": [
+          "Em",
+          "D",
+          "C"
+        ],
+        "progression": "Em - D - C - Em"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Oscillation",
-      "timeStamp": "0:00-1:38",
+      "name": "Intro Open Drone Chime",
+      "timeStamp": "0:00-0:38",
       "technique": "Open-String Drone Strumming",
       "key": "E Major",
-      "description": "Tender E major to Asus2/Aadd9 oscillation that sets the reflective canvas of the verse.",
+      "description": "Stone Gossard's tender opening oscillation between E major (0-7-6-4-0-0) and Aadd9 (X-0-7-6-0-0) letting open B and high E ring continuously.",
       "chords": [
         "E",
         "A"
@@ -136,17 +167,76 @@
       "notes": [
         "Let the open 1st and 2nd strings ring continuously across both chords",
         "Use a soft, expressive pick attack in the opening bars",
-        "Try sliding the fretted notes on strings 3 and 4 up to frets 6 and 7 for Stone Gossard's signature color"
+        "Slide the fretted notes on strings 3 and 4 smoothly"
       ],
-      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.5 2.4 2.3 0.2 0.1) (0.5 2.4 2.3 0.2 0.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) (0.5 2.4 2.3 0.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
-      "exerciseLabel": "Verse E to Asus2 Drone"
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) |",
+      "exerciseLabel": "Intro Open Drone Chime"
     },
     {
-      "name": "Chorus & Iconic Outro ('I Know Someday...')",
-      "timeStamp": "2:08-5:43",
+      "name": "Verse 1 Sheets of Empty Canvas",
+      "timeStamp": "0:38-1:38",
+      "technique": "Gentle Dynamic Strumming",
+      "key": "E Major",
+      "description": "Eddie Vedder's poignant opening vocal ('Sheets of empty canvas, untouched sheets of clay...') over the gentle E to Asus2 rhythm bed.",
+      "chords": [
+        "E",
+        "A"
+      ],
+      "progression": "E - A - E - A",
+      "notes": [
+        "Keep strumming relaxed at 77 BPM",
+        "Allow the natural resonance of open chords to support the vocals",
+        "Maintain clean string separation"
+      ],
+      "alphaTab": ":2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 0.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Storytelling Chords"
+    },
+    {
+      "name": "Pre-Chorus Parallel Minor Pivot ('Bitter Hands')",
+      "timeStamp": "1:38-2:08",
+      "technique": "Parallel Minor Voice Leading",
+      "key": "E Minor",
+      "description": "The shocking harmonic plunge into C major (bVI) and E minor (i) building tension toward the chorus release.",
+      "chords": [
+        "C",
+        "Em",
+        "D"
+      ],
+      "progression": "C - Em - C - D",
+      "notes": [
+        "Feel the emotional darkening as C major replaces E major",
+        "Accentuate downbeats with heavier pick attack",
+        "Build toward the drum crescendo into the chorus"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Pre-Chorus Minor Pivot"
+    },
+    {
+      "name": "Chorus Stadium Elevation ('Black Waves')",
+      "timeStamp": "2:08-2:45",
       "technique": "Parallel Minor Power Strumming",
       "key": "E Minor",
-      "description": "The harmony pivots into E minor for the emotional Em - D - C coda.",
+      "description": "Stately C - Em - C - Em - C - D progression supporting Vedder's soaring vocal cries and Mike McCready's melodic fills.",
+      "chords": [
+        "C",
+        "Em",
+        "D"
+      ],
+      "progression": "C - Em - C - D",
+      "notes": [
+        "Full-bodied open chord strumming",
+        "Let the D major chord lead cleanly into the next section",
+        "Lock into Dave Krusen's snare and kick groove"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Chorus Chord Progression"
+    },
+    {
+      "name": "Mike McCready Soaring Outro Solo ('I Know Someday')",
+      "timeStamp": "3:40-4:45",
+      "technique": "12th-Position Pentatonic Solo & Crying Bends",
+      "key": "E Minor",
+      "description": "McCready's soul-stirring E minor solo over the Em - D - C vamp with full-step bends, crying vibrato, and wah pedal swells.",
       "chords": [
         "Em",
         "D",
@@ -154,32 +244,32 @@
       ],
       "progression": "Em - D - C - Em",
       "notes": [
-        "Give D and C two beats each before holding Em for a full bar",
-        "Notice the emotional shock of hearing E minor after two minutes of E major",
-        "Gradually increase your strumming force as the outro builds"
+        "Play in the 12th-fret E minor pentatonic box with deep emotion",
+        "Hold long notes over the C major chord to let the harmonic tension bloom",
+        "Finish with wide, vocal-style vibrato on the root E"
       ],
-      "alphaTab": ":2 (0.4 2.3 3.2 2.1) (3.5 2.4 0.3 1.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (0.4 2.3 3.2 2.1) (3.5 2.4 0.3 1.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
-      "exerciseLabel": "Outro Minor Progression"
+      "alphaTab": ":4 12.3 :8 14.3 12.2 :4 15.2 :4 12.2 | :2 15.1 :4 12.1 :4 15.2 | :8 15.2 12.2 :4 14.3 :8 12.3 14.4 :4 12.4 | :2 14.4 :2 12.4 |",
+      "exerciseLabel": "McCready Outro Solo"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "3:55-5:15",
-      "technique": "Mike McCready Style E Minor Lead",
+      "name": "Devastating Vocal Outro & Ambient Decay",
+      "timeStamp": "4:45-5:43",
+      "technique": "Decrescendo Strumming & Ambient Ringout",
       "key": "E Minor",
-      "description": "Soulful E minor pentatonic lead line in 12th position inspired by Mike McCready's outro solo.",
+      "description": "Vedder's heartbreaking scat cries ('We belong together...'), acoustic chord strums, and ambient piano fading into silence.",
       "chords": [
         "Em",
         "D",
         "C"
       ],
-      "progression": "i - bVII - bVI - i",
+      "progression": "Em - D - C - Em",
       "notes": [
-        "Play in the 12th-fret E minor pentatonic box with Hendrix/Gilmour-inspired passion",
-        "Hold long notes over the C major chord to let the harmonic tension bloom",
-        "Finish with wide, vocal-style vibrato on the root E (4th string 14th fret or 1st string 12th fret)"
+        "Gradually soften strumming dynamics",
+        "Let the final open Em chord ring out into natural room decay",
+        "Keep the tempo steady without dragging"
       ],
-      "alphaTab": ":4 12.3 14.3 12.2 15.2 | :2 15.1 12.1 | :4 15.2 12.2 14.3 12.3 | :1 14.4 |",
-      "exerciseLabel": "McCready Outro Solo Study"
+      "alphaTab": ":2 (0.4 2.3 3.2 2.1) :2 (3.5 2.4 0.3 1.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Ambient Decay"
     }
   ],
   "equipment": {
@@ -199,11 +289,11 @@
         "Boss Katana 50"
       ],
       "settings": {
-        "gain": "4 for rhythm (edge of breakup), 7 for McCready lead",
-        "treble": "6 (warm, bell-like top end)",
-        "middle": "6 (rich midrange sustain)",
-        "bass": "6 (full, resonant low end)",
-        "presence": "5 (natural studio room feel)"
+        "gain": "4",
+        "treble": "6",
+        "middle": "6",
+        "bass": "6",
+        "presence": "5"
       }
     },
     "effects": {
