@@ -45,7 +45,6 @@
           "F#"
         ],
         "progression": "i - VI - III - VII",
-        "progressionDescription": "The iconic four-chord pop/rock cycle (i - VI - III - VII) rendered as rapid arpeggiated hammer-on/pull-off dyads.",
         "description": "The iconic four-chord pop/rock cycle (i - VI - III - VII) rendered as rapid arpeggiated hammer-on/pull-off dyads."
       },
       "sectionProgressions": [
@@ -109,15 +108,48 @@
         ],
         "progression": "G#m - E - B - F#"
       }
+    },
+    {
+      "name": "Dynamic Open-Chord Strumming & Relative Major Voicings",
+      "description": "Switching from intricate high-speed alternate-picked arpeggios to sweeping, resonant open-chord and barre strumming during the anthemic B major chorus",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chorus voicings: G#m (4-6-6-4-4-4), E (0-2-2-1-0-0), B (X-2-4-4-4-2), F# (2-4-4-3-2-2)",
+          "Dynamic release: The chorus opens up into full strummed acoustic/electric power",
+          "Vocal support: Strumming locks tightly with Anthony Kiedis and John Frusciante's two-part harmonies"
+        ],
+        "sequence": [
+          "Anticipate the chorus explosion on beat 1 with an unmuted downstroke on G#m",
+          "Strum continuous eighth notes with accented downstrokes on beats 2 and 4",
+          "Transition smoothly back to the fast alternate-picking hand position without losing momentum",
+          "Engage subtle bridge pickup overdrive or Boss DS-2 boost during the outro"
+        ],
+        "tips": [
+          "Let the open high E and B strings ring over the E major chord for expansive sonic width",
+          "Relax your fretting hand completely during the chorus strums to recover stamina for the verse riff",
+          "Use the volume knob on your guitar to control the gain difference between verse chime and chorus power"
+        ],
+        "chords": [
+          "G#m",
+          "E",
+          "B",
+          "F#"
+        ],
+        "progression": "G#m - E - B - F#"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Main Alternate-Picked Riff",
-      "timeStamp": "0:00-0:45",
+      "name": "Main Alternate-Picked Riff Intro",
+      "timeStamp": "0:00-0:30",
       "technique": "Alternate Picking Endurance",
       "key": "G# Minor",
       "description": "One of the most famous and technically demanding guitar riffs of the 21st century.",
+      "alphaTab": ":16 6.4 4.3 6.3 4.3 :16 6.4 4.3 6.3 4.3 | :16 6.5 4.3 6.3 4.3 :16 6.5 4.3 6.3 4.3 | :16 7.6 4.3 6.3 4.3 :16 7.6 4.3 6.3 4.3 | :16 6.6 4.3 6.3 4.3 :16 6.6 4.3 6.3 4.3 |",
+      "exerciseLabel": "Main Alternate-Picked Riff",
       "chords": [
         "G#m",
         "E",
@@ -129,16 +161,37 @@
         "Strict down-up alternate picking throughout",
         "Crisp hammer-on and pull-off on the 3rd (G) string",
         "Keep the right wrist relaxed and economical"
-      ],
-      "alphaTab": ":16 6.4 4.3 6.3 4.3 :16 6.4 4.3 6.3 4.3 | :16 6.5 4.3 6.3 4.3 :16 6.5 4.3 6.3 4.3 | :16 7.6 4.3 6.3 4.3 :16 7.6 4.3 6.3 4.3 | :16 6.6 4.3 6.3 4.3 :16 6.6 4.3 6.3 4.3 |",
-      "exerciseLabel": "Main Alternate-Picked Riff"
+      ]
     },
     {
-      "name": "Chorus Strumming",
+      "name": "Verse 1 Rapid String-Crossing Groove",
+      "timeStamp": "0:31-0:57",
+      "technique": "Alternate Picking Endurance & Vocal Pocket",
+      "key": "G# Minor",
+      "description": "The vocal verse begins as Frusciante maintains the relentless sixteenth-note alternate-picking engine beneath Anthony Kiedis's vocal.",
+      "alphaTab": ":16 6.4 4.3 6.3 4.3 :16 6.4 4.3 6.3 4.3 | :16 6.5 4.3 6.3 4.3 :16 6.5 4.3 6.3 4.3 | :16 7.6 4.3 6.3 4.3 :16 7.6 4.3 6.3 4.3 | :16 6.6 4.3 6.3 4.3 :16 6.6 4.3 6.3 4.3 |",
+      "exerciseLabel": "Verse 1 Alternate Picking",
+      "chords": [
+        "G#m",
+        "E",
+        "B",
+        "F#"
+      ],
+      "progression": "i - VI - III - VII",
+      "notes": [
+        "Maintain absolute dynamic consistency across string crosses",
+        "Listen to Chad Smith's hi-hat for steady 104 BPM subdivision",
+        "Avoid tension in the picking forearm"
+      ]
+    },
+    {
+      "name": "Chorus 1 Soaring Relative Major Strumming ('The more I see, the less I know')",
       "timeStamp": "0:58-1:20",
       "technique": "Full Chord Strumming",
       "key": "B Major",
-      "description": "Full strummed chords on 'The more I see, the less I know' providing dynamic contrast.",
+      "description": "Full strummed chords providing dynamic contrast and physical relief from the intense picking riff.",
+      "alphaTab": ":2 (4.6 6.5 6.4 4.3 4.2 4.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (2.5 4.4 4.3 4.2) :2 (2.6 4.5 4.4 3.3 2.2 2.1) |",
+      "exerciseLabel": "Chorus Strummed Chords",
       "chords": [
         "G#m",
         "E",
@@ -150,9 +203,70 @@
         "Open, ringing chord voicings",
         "Accentuate beats 2 and 4",
         "Smooth transition between E and B"
+      ]
+    },
+    {
+      "name": "Verse 2 Layered Electric Textures & Flea Interplay",
+      "timeStamp": "1:21-1:45",
+      "technique": "Precision Alternate Picking with Secondary Guitar",
+      "key": "G# Minor",
+      "description": "Second verse featuring layered clean guitar lines and Flea's melodic bass counterpoint dancing beneath the main riff.",
+      "alphaTab": ":16 6.4 4.3 6.3 4.3 :16 6.4 4.3 6.3 4.3 | :16 6.5 4.3 6.3 4.3 :16 6.5 4.3 6.3 4.3 | :16 7.6 4.3 6.3 4.3 :16 7.6 4.3 6.3 4.3 | :16 6.6 4.3 6.3 4.3 :16 6.6 4.3 6.3 4.3 |",
+      "exerciseLabel": "Verse 2 Interplay",
+      "chords": [
+        "G#m",
+        "E",
+        "B",
+        "F#"
       ],
-      "alphaTab": ":2 (4.6 6.5 6.4 4.3 4.2 4.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (2.5 4.4 4.3 4.2) :2 (2.6 4.5 4.4 3.3 2.2 2.1) |",
-      "exerciseLabel": "Chorus Strummed Chords"
+      "progression": "i - VI - III - VII",
+      "notes": [
+        "Keep right-hand pick depth shallow to avoid snagging strings",
+        "Let the hammer-on/pull-off ring with equal velocity to picked notes",
+        "Dynamic breathing room during vocal breaths"
+      ]
+    },
+    {
+      "name": "Bridge Harmonic Lift & Emotional Build",
+      "timeStamp": "2:40-3:15",
+      "technique": "Arpeggiated Minor Bridge & Crescendo",
+      "key": "G# Minor",
+      "description": "Emotional shift to C#m adding dramatic tension before lifting back into the euphoric chorus hook.",
+      "alphaTab": ":2 (x.6 4.5 6.4 6.3 5.2 4.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (4.6 6.5 6.4 4.3 4.2 4.1) :2 (2.6 4.5 4.4 3.3 2.2 2.1) |",
+      "exerciseLabel": "Bridge Harmonic Lift",
+      "chords": [
+        "C#m",
+        "E",
+        "G#m",
+        "F#"
+      ],
+      "progression": "iv - VI - i - VII",
+      "notes": [
+        "Staccato arpeggios opening up into full strumming",
+        "Gradual crescendo over four bars",
+        "Prepare left hand for rapid return to 16th-note alternate picking"
+      ]
+    },
+    {
+      "name": "Outro Climax & Frusciante Wah Embellishments",
+      "timeStamp": "4:15-5:34",
+      "technique": "Endurance Climax & Expressive Fills",
+      "key": "G# Minor",
+      "description": "The transcendent finale where Frusciante plays the relentless alternate-picking riff while layering overdriven wah guitar leads all the way to the final chord.",
+      "alphaTab": ":16 6.4 4.3 6.3 4.3 :16 6.4 4.3 6.3 4.3 | :16 6.5 4.3 6.3 4.3 :16 6.5 4.3 6.3 4.3 | :16 7.6 4.3 6.3 4.3 :16 7.6 4.3 6.3 4.3 | :1 (4.6 6.5 6.4 4.3 4.2 4.1) |",
+      "exerciseLabel": "Outro Endurance Climax",
+      "chords": [
+        "G#m",
+        "E",
+        "B",
+        "F#"
+      ],
+      "progression": "i - VI - III - VII",
+      "notes": [
+        "Peak physical endurance test at 104 BPM",
+        "Overdriven wah lead fills intercut over the riff",
+        "Sustain final G#m barre chord with studio decay"
+      ]
     }
   ],
   "equipment": {
@@ -173,11 +287,11 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "3.5 (clean edge of breakup)",
+        "gain": "3.5",
         "treble": "6.5",
-        "middle": "7",
-        "bass": "5",
-        "presence": "6"
+        "middle": "7.0",
+        "bass": "5.0",
+        "presence": "6.0"
       }
     },
     "effects": {
@@ -241,12 +355,12 @@
     "sameArtist": [
       {
         "title": "Can't Stop",
-        "difficulty": "Intermediate",
+        "link": "/lessons/songs/song-analysis/cant-stop",
         "similarity": "Frusciante's legendary funk string rakes, single-note hooks, and rhythmic pocket"
       },
       {
         "title": "Californication",
-        "difficulty": "Intermediate",
+        "link": "/lessons/songs/song-analysis/californication",
         "similarity": "Clean two-note contrapuntal fingerstyle dyads with singing melodic phrasing"
       }
     ],
@@ -255,13 +369,13 @@
         "title": "Sultans of Swing",
         "artist": "Dire Straits",
         "difficulty": "Advanced",
-        "similarity": "Legendary picking endurance, rapid arpeggios, and sparkling clean Stratocaster tone"
+        "similarity": "Precision fingerpicking, rapid triad arpeggios, and expressive clean Stratocaster tone"
       },
       {
-        "title": "Message in a Bottle",
-        "artist": "The Police",
-        "difficulty": "Advanced",
-        "similarity": "Relentless arpeggio finger-stretch endurance test across add9 chord voicings"
+        "title": "Cliffs of Dover",
+        "artist": "Eric Johnson",
+        "difficulty": "Expert",
+        "similarity": "Virtuosic alternate picking, hybrid string skipping, and immaculate clean-to-overdrive tone"
       }
     ],
     "progressionPath": [
@@ -269,7 +383,7 @@
         "title": "Can't Stop",
         "artist": "Red Hot Chili Peppers",
         "difficulty": "Intermediate",
-        "similarity": "Balance your picking dexterity with Frusciante's masterclass in funk percussive string raking"
+        "similarity": "Channel your Frusciante rhythm speed and precision into Can't Stop's percussive muting groove"
       }
     ]
   },
@@ -280,15 +394,13 @@
     "decade": "2000s",
     "iconicRiff": true,
     "tags": [
-      "classic-rock",
-      "expert",
       "alternate-picking",
-      "arpeggios",
-      "minor-key",
       "hammer-on",
       "pull-off",
+      "minor-key",
       "lead-guitar",
-      "rhythm-guitar"
+      "rhythm-guitar",
+      "expert"
     ],
     "learningValue": "High",
     "estimatedLearningTime": "6-10 weeks"

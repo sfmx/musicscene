@@ -49,7 +49,6 @@
           "A"
         ],
         "progression": "I - bVII - IV - iv - bVII - bIII - II - V",
-        "progressionDescription": "Neil Young's unforgettable line-cliché bass walkdown (D → C → B → Bb) combined with treble-string Dsus4/Dsus2 pick-strums and a bittersweet C - F - E - A cadence.",
         "description": "Neil Young's unforgettable line-cliché bass walkdown (D → C → B → Bb) combined with treble-string Dsus4/Dsus2 pick-strums and a bittersweet C - F - E - A cadence."
       },
       "sectionProgressions": [
@@ -64,12 +63,6 @@
           "progression": "C - F - E - A",
           "romanNumerals": "bVII - bIII - II - V",
           "description": "Unexpected modal shift to C and F major followed by Esus4-to-E and Asus4-to-A resolving back to the D major walkdown"
-        },
-        {
-          "section": "Scale Practice Exercise",
-          "progression": "I - bVII - IV - iv",
-          "romanNumerals": "Scale Practice",
-          "description": "Descending bassline plus treble melody hybrid-picking exercise"
         }
       ],
       "harmonicFunction": [
@@ -122,15 +115,48 @@
         ],
         "progression": "D - Cadd9 - G - Gm - C - F - E - A"
       }
+    },
+    {
+      "name": "Modal Mixture Cadence & Secondary Dominant Voice Leading",
+      "description": "Executing the dramatic folk-rock refrain moving through borrowed flat-side chords (C and F major) and voice-leading suspended cadences (Esus4 to E, Asus4 to A)",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Borrowed harmony: C major (bVII) and F major (bIII) provide startling modal shifts away from D major",
+          "Secondary dominant: E major (II / V-of-V) introduces G# leading tone pushing powerfully into A major",
+          "Suspended voice leading: Esus4 (fret 2 G string) resolves to E major (fret 1 G string)"
+        ],
+        "sequence": [
+          "Strum C major with strong 5th-string bass emphasis on beat 1",
+          "Shift to compact F major (X-X-3-2-1-1), ensuring the 1st fret barre speaks clearly",
+          "Voice Esus4 on the downbeat, releasing index finger to E major on beat 2",
+          "Resolve Asus4 to A major before looping back to the open D bass walkdown"
+        ],
+        "tips": [
+          "Use a fluid down-up wrist motion on the suspended resolutions to highlight the moving inner notes",
+          "Allow the open high E and B strings to ring naturally across the E and A chords",
+          "Match your strumming dynamics to Neil Young's emotional, heartfelt vocal phrasing"
+        ],
+        "chords": [
+          "C",
+          "F",
+          "E",
+          "A"
+        ],
+        "progression": "C - F - E - A"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Signature Descending Bass Riff",
-      "timeStamp": "0:00-0:30",
+      "name": "Signature Descending Bass Riff Intro",
+      "timeStamp": "0:00-0:20",
       "technique": "Acoustic Bass-Walkdown Picking",
       "key": "D Major",
       "description": "One of acoustic guitar's most famous openings: D major embellished with Dsus4/Dsus2 followed by the C → B → Bb bass walkdown.",
+      "alphaTab": ":4 0.4 (2.3 3.2 2.1) (2.3 3.2 3.1) (2.3 3.2 0.1) | :4 3.5 (2.3 3.2 2.1) 2.5 (0.3 3.2 3.1) | :4 1.5 (0.3 3.2 3.1) 0.5 (0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Main Bass Walkdown Riff",
       "chords": [
         "D",
         "Cadd9",
@@ -142,16 +168,37 @@
         "Pluck the bass note cleanly on beat 1 of every measure",
         "Weave the 1st-string melody (2nd fret → 3rd fret → 2nd fret → open) into your strumming",
         "Keep the 2nd-string 3rd fret ringing across C, B, and Bb in the bass"
-      ],
-      "alphaTab": ":4 0.4 (2.3 3.2 2.1) (2.3 3.2 3.1) (2.3 3.2 0.1) | :4 3.5 (2.3 3.2 2.1) 2.5 (0.3 3.2 3.1) | :4 1.5 (0.3 3.2 3.1) 0.5 (0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
-      "exerciseLabel": "Main Bass Walkdown Riff"
+      ]
     },
     {
-      "name": "Verse Refrain ('The Damage Done')",
-      "timeStamp": "0:30-0:50",
+      "name": "Verse 1 Acoustic Walkdown ('I caught you knockin' at my cellar door')",
+      "timeStamp": "0:21-0:40",
+      "technique": "Acoustic Bass-Walkdown Picking",
+      "key": "D Major",
+      "description": "Neil Young's fragile vocal delivery enters over the descending bassline and ringing acoustic chords.",
+      "alphaTab": ":4 0.4 (2.3 3.2 2.1) (2.3 3.2 3.1) (2.3 3.2 0.1) | :4 3.5 (2.3 3.2 2.1) 2.5 (0.3 3.2 3.1) | :4 1.5 (0.3 3.2 3.1) 0.5 (0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Verse 1 Acoustic Walkdown",
+      "chords": [
+        "D",
+        "Cadd9",
+        "G",
+        "Gm"
+      ],
+      "progression": "I - bVII - IV - iv",
+      "notes": [
+        "Quiet, intimate acoustic strumming",
+        "Clear bass note attack on the 5th string (C - B - Bb)",
+        "Allow the borrowed Gm/Bb chord to resonate with somber mood"
+      ]
+    },
+    {
+      "name": "Verse 1 Refrain Cadence ('Ooh, the damage done')",
+      "timeStamp": "0:41-0:55",
       "technique": "Modal Cadence & Sus4 Resolutions",
       "key": "D Major",
       "description": "The poignant refrain stepping down from C to F before resolving through Esus4-E and Asus4-A.",
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) (3.4 2.3 1.2 1.1) | :2 (0.6 2.5 2.4 2.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.5 2.4 2.3 3.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Refrain Cadence",
       "chords": [
         "C",
         "F",
@@ -161,18 +208,18 @@
       "progression": "C - F - E - A",
       "notes": [
         "Walk the bass down from C (5th string 3rd fret) through B (2nd fret) and A (open) into F",
-        "Emphasize the Esus4 (3rd string 2nd fret) to E major (3rd string 1st fret) resolution",
-        "Finish with Asus4 (2nd string 3rd fret) resolving to A major (2nd string 2nd fret)"
-      ],
-      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) (3.4 2.3 1.2 1.1) | :2 (0.6 2.5 2.4 2.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.5 2.4 2.3 3.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
-      "exerciseLabel": "Refrain Cadence"
+        "Emphasize the Esus4 to E major resolution",
+        "Finish with Asus4 resolving to A major"
+      ]
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:00-0:30",
-      "technique": "Chromatic Bass & Treble Counterpoint",
+      "name": "Verse 2 Folk Storytelling ('Hit the city and I lost my band')",
+      "timeStamp": "0:56-1:20",
+      "technique": "Acoustic Bass Separation & Vocal Dynamics",
       "key": "D Major",
-      "description": "Single-note study isolating the descending bass line (D - C - B - Bb - A) and its upper D-major melodic responses.",
+      "description": "Second verse narrating the loss of bandmates, with Young digging in slightly harder with his flatpick on the bass notes.",
+      "alphaTab": ":4 0.4 (2.3 3.2 2.1) (2.3 3.2 3.1) (2.3 3.2 0.1) | :4 3.5 (2.3 3.2 2.1) 2.5 (0.3 3.2 3.1) | :4 1.5 (0.3 3.2 3.1) 0.5 (0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Verse 2 Storytelling",
       "chords": [
         "D",
         "Cadd9",
@@ -181,12 +228,53 @@
       ],
       "progression": "I - bVII - IV - iv",
       "notes": [
-        "Alternate between low 5th-string bass notes and high 1st/2nd-string melody notes",
-        "Focus on clean string skipping with your flatpick",
-        "Let the bass notes sustain as long as possible while plucking the treble response"
-      ],
+        "Emphasize the rhythmic bounce between bass notes and treble strums",
+        "Maintain the anchor on the 2nd string 3rd fret",
+        "Support the emotional weight of the lyrics"
+      ]
+    },
+    {
+      "name": "Instrumental Acoustic Interlude & Bass Embellishments",
+      "timeStamp": "1:21-1:40",
+      "technique": "Solo Acoustic Flatpicking Counterpoint",
+      "key": "D Major",
+      "description": "Short solo instrumental break showcasing Neil's raw flatpicking nuances, connecting bass runs, and treble suspensions.",
       "alphaTab": ":4 0.4 2.1 3.1 0.1 | :4 3.5 2.1 2.5 3.1 | :4 1.5 3.1 0.5 2.2 | :1 0.4 |",
-      "exerciseLabel": "Bass-Treble Counterpoint Drill"
+      "exerciseLabel": "Instrumental Flatpicking Break",
+      "chords": [
+        "D",
+        "Cadd9",
+        "G",
+        "Gm"
+      ],
+      "progression": "I - bVII - IV - iv",
+      "notes": [
+        "Alternate cleanly between low bass notes and high treble strings",
+        "Accentuate the hammer-on embellishments on the D chord",
+        "Let the concert-hall resonance ring through the pauses"
+      ]
+    },
+    {
+      "name": "Final Verse & Resonant D Major Fade ('Milk-blood to keep from running out')",
+      "timeStamp": "1:41-2:03",
+      "technique": "Emotional Cadence & Final Ring-Out",
+      "key": "D Major",
+      "description": "The haunting final verse concluding with the C - F - E - A refrain and a gentle, unresolved open D chord that echoes into audience applause.",
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) (3.4 2.3 1.2 1.1) | :2 (0.6 2.5 2.4 2.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.5 2.4 2.3 3.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Final Verse & Cadence",
+      "chords": [
+        "C",
+        "F",
+        "E",
+        "A",
+        "D"
+      ],
+      "progression": "bVII - bIII - II - V - I",
+      "notes": [
+        "Passionate strumming on the final vocal delivery",
+        "Slow ritardando on the Asus4 to A change",
+        "Final open D chord rings with natural Martin acoustic sustain"
+      ]
     }
   ],
   "equipment": {
@@ -206,11 +294,11 @@
         "Boss Acoustic Singer"
       ],
       "settings": {
-        "gain": "2 (pure acoustic transparency)",
-        "treble": "6 (articulate flatpick detail)",
-        "middle": "6 (woody Martin dreadnought warmth)",
-        "bass": "7 (deep, booming dreadnought bass walkdown)",
-        "presence": "5 (natural concert-hall air)"
+        "gain": "2.0",
+        "treble": "6.0",
+        "middle": "6.0",
+        "bass": "7.0",
+        "presence": "5.0"
       }
     },
     "effects": {
@@ -252,83 +340,76 @@
   },
   "practiceNotes": {
     "commonMistakes": [
-      "Strumming all 6 strings indiscriminately and burying the descending 5th-string bass line",
-      "Lifting the ring finger off the B-string 3rd fret during the D/C, G/B, and Gm/Bb walkdown",
-      "Playing E minor instead of E major (Esus4 to E) in the refrain cadence"
+      "Lifting the ring finger off the B-string 3rd fret during the bass walkdown",
+      "Fumbling the Gm/Bb chord shape (keep index on 5th string 1st fret and open G string ringing)",
+      "Playing too rigidly with a metronome instead of letting the folk pulse breathe naturally"
     ],
     "practiceRoutine": [
-      "3 minutes: Left-hand bass walkdown drill (open D → C on 5th string → B → Bb) with ring finger anchored on B-string fret 3",
-      "4 minutes: Right-hand flatpick target practice (hitting 4th/5th string on beat 1, then brushing strings 1–3)",
-      "4 minutes: C → F → Esus4 → E → Asus4 → A refrain transition loop",
-      "4 minutes: Full song playthrough at 96 BPM"
+      "10 minutes: 5th-string bass walkdown (D → C → B → Bb) with ring-finger anchor",
+      "15 minutes: Dsus4 and Dsus2 melody embellishments within standard D strumming",
+      "15 minutes: Refrain chord transitions (C → F → Esus4/E → Asus4/A)"
     ],
     "focusAreas": [
-      "Pinpoint right-hand pick accuracy on the 4th and 5th strings",
-      "Unbroken D-note anchor on the 2nd string 3rd fret",
-      "Expressive Dsus4/Dsus2 and Esus4/Asus4 voice leading"
+      "Crisp separation between single bass notes and treble chord brushes",
+      "Ring-finger common tone stability on fret 3 B string",
+      "Suspended chord resolution timing in the refrain"
     ],
     "metronomeWork": [
-      "Start at 76 BPM to coordinate the picked bass notes with the upper-string sus4/sus2 movements",
-      "Increase to 88 BPM while adding the two-note bass connectors",
-      "Play at 96 BPM with a relaxed, storytelling acoustic touch"
+      "Practice at 80, 88, and 96 BPM, feeling the downbeats on the low bass strings"
     ]
   },
   "relatedSongs": {
     "sameArtist": [
       {
         "title": "Heart of Gold",
-        "difficulty": "Beginner",
-        "similarity": "Harvest album sibling featuring Neil Young's signature acoustic pick-and-strum rhythm style"
+        "link": "/lessons/songs/song-analysis/heart-of-gold",
+        "similarity": "Neil Young's timeless acoustic anthem featuring driving strumming, harmonica, and open Em-C-D-G chords"
       },
       {
         "title": "Old Man",
-        "difficulty": "Intermediate",
-        "similarity": "Also centers on a rich D-modal acoustic riff with intricate right-hand bass and treble separation"
+        "link": "/lessons/songs/song-analysis/old-man",
+        "similarity": "Acoustic masterpiece featuring banjo-like flatpicking, D-D9-Dsus4 voicings, and sweeping dynamic choruses"
       }
     ],
     "similarTechniques": [
       {
-        "title": "Father and Son",
-        "artist": "Cat Stevens",
-        "difficulty": "Beginner",
-        "similarity": "Uses expressive acoustic bass-note picking and Dsus4/Dsus2 treble embellishments"
-      },
-      {
-        "title": "Norwegian Wood",
+        "title": "Blackbird",
         "artist": "The Beatles",
         "difficulty": "Intermediate",
-        "similarity": "Combines a D Mixolydian melody woven inside acoustic strumming with a poignant modal shift"
+        "similarity": "Paul McCartney's acoustic folk standard built on moving bass notes and drone open G string"
+      },
+      {
+        "title": "Fire and Rain",
+        "artist": "James Taylor",
+        "difficulty": "Intermediate",
+        "similarity": "Capo-driven acoustic folk ballad featuring delicate fingerpicking and melodic embellishments"
       }
     ],
     "progressionPath": [
       {
-        "title": "Blackbird",
-        "artist": "The Beatles",
-        "difficulty": "Intermediate",
-        "similarity": "Develops chromatic bassline contrapuntal motion across the acoustic fretboard"
+        "title": "Heart of Gold",
+        "artist": "Neil Young",
+        "difficulty": "Beginner",
+        "similarity": "Continue your Neil Young acoustic journey with the foundational rhythm strumming of Heart of Gold"
       }
     ]
   },
   "metadata": {
-    "popularity": 94,
+    "popularity": 96,
     "dateAdded": "2026-10-16",
     "featured": true,
     "decade": "1970s",
     "iconicRiff": true,
     "tags": [
+      "classic-rock",
+      "folk",
+      "acoustic-guitar",
       "open-chords",
       "strumming",
-      "alternate-picking",
-      "voice-leading",
-      "chord-progressions",
       "major-key",
-      "modal",
-      "acoustic-guitar",
-      "folk",
       "intermediate"
     ],
     "learningValue": "High",
     "estimatedLearningTime": "2-3 weeks"
   }
 }
-

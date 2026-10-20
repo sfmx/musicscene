@@ -104,16 +104,19 @@
           "Keep the right hand in continuous sixteenth-note pendulum motion"
         ],
         "chords": [
-          "Em Riff"
+          "Em",
+          "D",
+          "Bm",
+          "C"
         ],
-        "progression": "Main Riff"
+        "progression": "Em - D - Bm - C"
       }
     },
     {
       "name": "Funky Thumb-Over Strumming Mechanics",
-      "description": "Hendrix-inspired thumb wrap anchoring low bass notes while fingers dance across upper triads",
+      "description": "Hendrix-inspired thumb wrap anchoring low bass notes while fingers dance across upper triads and open chord shapes",
       "difficulty": "Intermediate",
-      "primaryTechnique": true,
+      "primaryTechnique": false,
       "details": {
         "notes": [
           "Enables lightning-fast transitions between percussive bass stabs and lyrical chord fills",
@@ -135,17 +138,19 @@
           "Bm",
           "C"
         ],
-        "progression": "Chorus"
+        "progression": "G - D - Bm - C"
       }
     }
   ],
   "sections": [
     {
-      "name": "Iconic Intro Riff",
+      "name": "Main Muted Rake Intro Riff",
       "timeStamp": "0:00-0:31",
       "technique": "Single-Note String Raking",
       "key": "E Minor",
       "description": "The world-famous funk-rock opening built on percussive string rakes across E, D, B, and C root positions.",
+      "alphaTab": ":8 7.5 7.5 9.3 7.5 7.5 9.3 7.5 7.5 | :8 5.5 5.5 7.3 5.5 5.5 7.3 5.5 5.5 | :8 7.6 7.6 7.4 7.6 7.6 7.4 7.6 7.6 | :8 8.6 8.6 9.4 8.6 8.6 9.4 8.6 8.6 |",
+      "exerciseLabel": "Main Muted Rake Riff",
       "chords": [
         "Em",
         "D",
@@ -157,16 +162,37 @@
         "Fret only one note at a time while muting all 5 remaining strings",
         "Maintain continuous sixteenth-note right-hand strumming",
         "Accent the target melody notes with pick velocity"
-      ],
-      "alphaTab": ":8 7.5 7.5 9.3 7.5 7.5 9.3 7.5 7.5 | 5.5 5.5 7.3 5.5 5.5 7.3 5.5 5.5 | 7.6 7.6 7.4 7.6 7.6 7.4 7.6 7.6 | 8.6 8.6 9.4 8.6 8.6 9.4 8.6 8.6 |",
-      "exerciseLabel": "Main Muted Rake Riff"
+      ]
     },
     {
-      "name": "Chorus (Can't Stop, Addicted)",
+      "name": "Verse 1 Percussive Funk Pocket",
+      "timeStamp": "0:32-0:51",
+      "technique": "Continuous 16th-Note Pendulum Strumming",
+      "key": "E Minor",
+      "description": "The vocal verse begins as Frusciante locks his raked riff directly into Chad Smith's kick and snare groove.",
+      "alphaTab": ":8 7.5 7.5 9.3 7.5 7.5 9.3 7.5 7.5 | :8 5.5 5.5 7.3 5.5 5.5 7.3 5.5 5.5 | :8 7.6 7.6 7.4 7.6 7.6 7.4 7.6 7.6 | :8 8.6 8.6 9.4 8.6 8.6 9.4 8.6 8.6 |",
+      "exerciseLabel": "Verse 1 Percussive Pocket",
+      "chords": [
+        "Em",
+        "D",
+        "Bm",
+        "C"
+      ],
+      "progression": "i - ♭VII - v - ♭VI",
+      "notes": [
+        "Keep right hand totally relaxed like a pendulum",
+        "Slightly soften attack to give space to Anthony Kiedis's rap-style vocal",
+        "Flawless muting prevents stray open string rings"
+      ]
+    },
+    {
+      "name": "Chorus 1 Anthemic Major Strumming ('Can't stop, addicted to the shindig')",
       "timeStamp": "0:52-1:13",
       "technique": "Melodic Open Chords & Vocal Hook",
       "key": "G Major",
       "description": "Exploding into bright, singing major harmony with full open chord voicings.",
+      "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :4 (2.5 4.4 4.3 3.2 2.1) (3.5 2.4 0.3 1.2 0.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Chorus Strumming Progression",
       "chords": [
         "G",
         "D",
@@ -178,16 +204,37 @@
         "Switch from percussive raking to full open chord strumming",
         "Lock tightly with Flea's punchy bassline",
         "Keep the sixteenth-note strumming wrist loose and rhythmic"
-      ],
-      "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :4 (2.5 4.4 4.3 3.2 2.1) (3.5 2.4 0.3 1.2 0.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) |",
-      "exerciseLabel": "Chorus Strumming Progression"
+      ]
     },
     {
-      "name": "Guitar Solo",
+      "name": "Verse 2 Funk Nuances & Double-Stops",
+      "timeStamp": "1:14-1:45",
+      "technique": "Raked Funk with Melodic Fills",
+      "key": "E Minor",
+      "description": "Second verse introducing subtle double-stop fills and octave inflections on top of the relentless funk rake.",
+      "alphaTab": ":8 7.5 7.5 9.3 7.5 7.5 9.3 7.5 7.5 | :8 5.5 5.5 7.3 5.5 5.5 7.3 5.5 5.5 | :4 (7.4 7.3) :4 (9.4 9.3) | :8 8.6 8.6 9.4 8.6 8.6 9.4 8.6 8.6 |",
+      "exerciseLabel": "Verse 2 Funk Nuances",
+      "chords": [
+        "Em",
+        "D",
+        "Bm",
+        "C"
+      ],
+      "progression": "i - ♭VII - v - ♭VI",
+      "notes": [
+        "Light Hendrix double stops on strings 3 and 4",
+        "Maintain continuous right-hand motion even during fills",
+        "Accents shift to mirror vocal phrasing"
+      ]
+    },
+    {
+      "name": "John Frusciante Searing Wah-Wah Solo",
       "timeStamp": "2:49-3:10",
       "technique": "Wah-Wah Expressive Melodic Lead",
       "key": "E Minor",
       "description": "John Frusciante's soaring, lyrical guitar solo played through an Ibanez WH10 wah and Boss DS-2 distortion.",
+      "alphaTab": ":8 12.1 15.1 :4 17.1 :8 15.1 12.1 | :4 14.2 :8 12.2 14.2 :4 12.2 | :8 12.3 14.3 :4 14.3 :8 12.3 9.3 | :2 12.1 :2 r.2 |",
+      "exerciseLabel": "Frusciante Wah Solo",
       "chords": [
         "Em",
         "D",
@@ -199,9 +246,29 @@
         "Rock wah pedal slowly in time with the emotional contour",
         "Accentuate the sweet major 6th (C#) Dorian color tones",
         "End with wide, singing vibrato on the 12th fret root note"
+      ]
+    },
+    {
+      "name": "Final Chorus & Ringing Outro Jam",
+      "timeStamp": "3:11-4:29",
+      "technique": "Maximum Dynamic Strumming & Outro Energy",
+      "key": "G Major / E Minor",
+      "description": "The energetic finale combining the open-chord chorus with Frusciante's backing vocal harmonies, resolving in a tight funk-rock breakdown.",
+      "alphaTab": ":4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.4 2.3 3.2 2.1) | :4 (2.5 4.4 4.3 3.2 2.1) (3.5 2.4 0.3 1.2 0.1) | :8 7.5 7.5 9.3 7.5 7.5 9.3 7.5 7.5 | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Outro Chorus & Funk Breakdown",
+      "chords": [
+        "G",
+        "D",
+        "Bm",
+        "C",
+        "Em"
       ],
-      "alphaTab": ":8 12.1 15.1 :4 17.1 :8 15.1 12.1 | :4 14.2 :8 12.2 14.2 :4 12.2 | :8 12.3 14.3 :4 14.3 :8 12.3 9.3 | :2 12.1 :2 r.2 |",
-      "exerciseLabel": "Frusciante Wah Solo"
+      "progression": "G - D - Bm - C - Em",
+      "notes": [
+        "High-energy open-chord attack",
+        "Sudden pivot back to the raked Em motif",
+        "Clean, resonant final Em chord ring-out"
+      ]
     }
   ],
   "equipment": {
@@ -222,11 +289,11 @@
         "Boss Katana 100"
       ],
       "settings": {
-        "gain": "5/10",
-        "treble": "7/10",
-        "middle": "6/10",
-        "bass": "5/10",
-        "presence": "7/10"
+        "gain": "5.0",
+        "treble": "7.0",
+        "middle": "6.0",
+        "bass": "5.0",
+        "presence": "7.0"
       }
     },
     "effects": {
@@ -313,6 +380,14 @@
         "difficulty": "Advanced",
         "similarity": "Fingerstyle percussive guitar fills and rapid single-note target phrasing"
       }
+    ],
+    "progressionPath": [
+      {
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "difficulty": "Intermediate",
+        "similarity": "Expand your Frusciante thumb-over chord-melody vocabulary into Hendrix-style double-stops"
+      }
     ]
   },
   "metadata": {
@@ -325,10 +400,10 @@
       "funk",
       "percussive",
       "alternate-picking",
-      "song-analysis",
-      "rhythm-guitar"
+      "rhythm-guitar",
+      "lead-guitar"
     ],
-    "learningValue": "HIGH",
+    "learningValue": "High",
     "estimatedLearningTime": "3-5 weeks"
   }
 }

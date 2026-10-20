@@ -48,7 +48,6 @@
           "Gsus4"
         ],
         "progression": "i - v - bVI - v - iv - bVII7sus4 - Isus4",
-        "progressionDescription": "Masterclass in descending diatonic voice leading: the verse steps down the G natural minor scale one degree at a time before hanging on suspended F7sus4 and Gsus4 chords.",
         "description": "Masterclass in descending diatonic voice leading: the verse steps down the G natural minor scale one degree at a time before hanging on suspended F7sus4 and Gsus4 chords."
       },
       "sectionProgressions": [
@@ -69,12 +68,6 @@
           "progression": "Bb - F - Gm",
           "romanNumerals": "bIII - bVII - i",
           "description": "Full-throttle, downstroked eighth-note punk-rock power chords in the relative major (Bb)"
-        },
-        {
-          "section": "Scale Practice Exercise",
-          "progression": "i - bVI - bVII - i",
-          "romanNumerals": "Scale Practice",
-          "description": "G natural minor / Bb major arpeggio and triad voice-leading exercise"
         }
       ],
       "harmonicFunction": [
@@ -123,38 +116,87 @@
         ],
         "progression": "Gm - Dm - Ebmaj7 - Dm7 - Cm7 - F7sus4 - Gsus4"
       }
+    },
+    {
+      "name": "Relative Major Metric Modulation & Driving Downstroke Chords",
+      "description": "Transitioning instantly from sparse, syncopated reggae-tango stabs in G minor to full-throttle, downstroked punk-rock power chords in the relative major of Bb",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Chorus power chords: Bb5 (6-8-8-X-X-X), F5 (1-3-3-X-X-X), G5 (3-5-5-X-X-X)",
+          "Right-hand attack: Heavy downward pick strokes locking with Stewart Copeland's ride and snare pulse",
+          "Dynamic expansion: Going from pristine Roland Jazz Chorus clean to overdriven tube punch"
+        ],
+        "sequence": [
+          "Anticipate the chorus explosion on beat 1 immediately following the Gsus4 suspension",
+          "Dig into continuous eighth-note downstrokes across the Bb - F - Gm changes",
+          "Mute unplayed strings with the flesh of your fretting index finger",
+          "Drop immediately back to sparse reggae offbeat stabs when the verse returns"
+        ],
+        "tips": [
+          "Keep the right-hand wrist loose during the heavy chorus strumming to avoid forearm cramping at 134 BPM",
+          "Use a bridge single-coil pickup for maximum snap on the reggae chops, boosted with subtle overdrive on the chorus",
+          "Lock directly with the bass drum for that authentic 1978 new-wave punch"
+        ],
+        "chords": [
+          "Bb",
+          "F",
+          "Gm"
+        ],
+        "progression": "Bb - F - Gm"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Verse Staccato Reggae Stabs",
-      "timeStamp": "0:00-0:52",
+      "name": "Verse 1 Descending Reggae Stabs ('Roxanne, you don't have to put on the red light')",
+      "timeStamp": "0:00-0:38",
       "technique": "Reggae Skank Mutings & Suspended Voicings",
       "key": "G Minor",
       "description": "Andy Summers' descending minor-key chord stabs with tight fret-hand muting and suspended cadences.",
+      "alphaTab": ":4 (3.6 5.5 5.4 3.3 3.2 3.1) :4 (5.5 7.4 5.3 6.2) :4 (6.5 8.4 7.3 8.2) :4 (5.5 7.4 5.3 6.2) | :2 (3.5 5.4 3.3 4.2) :2 (1.6 3.5 1.4 3.3 1.2) | :1 (3.6 5.5 5.4 5.3 3.2) |",
+      "exerciseLabel": "Verse Descending Stabs",
       "chords": [
         "Gm",
         "Dm7",
         "Ebmaj7",
-        "Cm7",
+        "Cm7"
+      ],
+      "progression": "Gm - Dm7 - Ebmaj7 - Dm7 - Cm7",
+      "notes": [
+        "Keep the Gm, Dm7, Ebmaj7, and Cm7 stabs ultra-short and percussive",
+        "Immediate left-hand pressure release on each chord chop",
+        "Feel the wide acoustic space between guitar and bass"
+      ]
+    },
+    {
+      "name": "Pre-Chorus Suspended 4th Cadence (F7sus4 & Gsus4 Tension)",
+      "timeStamp": "0:39-0:52",
+      "technique": "Suspended Chord Voicings & Tension Building",
+      "key": "G Minor",
+      "description": "The harmonic tension swells as Summers holds shimmering suspended fourth chords that refuse to resolve before the chorus explodes.",
+      "alphaTab": ":2 (1.6 3.5 1.4 3.3 1.2) (1.6 3.5 1.4 3.3 1.2) | :1 (3.6 5.5 5.4 5.3 3.2) | :1 (3.6 5.5 5.4 5.3 3.2) |",
+      "exerciseLabel": "Pre-Chorus Sus4 Cadence",
+      "chords": [
         "F7sus4",
         "Gsus4"
       ],
-      "progression": "Gm - Dm7 - Ebmaj7 - Dm7 - Cm7 - F7sus4 - Gsus4",
+      "progression": "bVII7sus4 - Isus4",
       "notes": [
-        "Keep the Gm, Dm7, Ebmaj7, and Cm7 stabs ultra-short and percussive",
-        "Open up and let the F7sus4 and Gsus4 chords sustain for a full measure each",
-        "Feel the space between the guitar and bass"
-      ],
-      "alphaTab": ":4 (3.6 5.5 5.4 3.3 3.2 3.1) :4 (5.5 7.4 5.3 6.2) :4 (6.5 8.4 7.3 8.2) :4 (5.5 7.4 5.3 6.2) | :2 (3.5 5.4 3.3 4.2) :2 (1.6 3.5 1.4 3.3 1.2) | :1 (3.6 5.5 5.4 5.3 3.2) |",
-      "exerciseLabel": "Verse Descending Stabs"
+        "Allow the suspended chords to ring out across the measures",
+        "Engage subtle tape echo or chorus modulation",
+        "Crescendo pick attack into beat 1 of the chorus"
+      ]
     },
     {
-      "name": "Explosive Punk-Rock Chorus",
+      "name": "Chorus 1 Explosive Relative Major Rock ('Roxanne!')",
       "timeStamp": "0:53-1:18",
       "technique": "Driving Eighth-Note Power Chords",
       "key": "Bb Major",
       "description": "High-energy chorus shifting to the relative major (Bb - F - Gm) with relentless downstroke drive.",
+      "alphaTab": ":4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) | :4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) |",
+      "exerciseLabel": "Chorus Power Chord Drive",
       "chords": [
         "Bb",
         "F",
@@ -162,19 +204,19 @@
       ],
       "progression": "Bb - F - Gm",
       "notes": [
-        "Drive eighth-note downstrokes on Bb5 (6th fret E) and F5 (1st fret E or 8th fret A)",
-        "Dig in with the pick to create a stark dynamic contrast against the sparse verse",
-        "Lock in tightly with the bass drum"
-      ],
-      "alphaTab": ":4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) |",
-      "exerciseLabel": "Chorus Power Chord Drive"
+        "Drive eighth-note downstrokes on Bb5 and F5",
+        "Dig in with the pick to create stark dynamic contrast",
+        "Lock tightly with Copeland's kick drum"
+      ]
     },
     {
-      "name": "G Minor Triad Arpeggio Exercise",
+      "name": "Verse 2 Subtle Voicing Variations & Police Reggae Groove",
       "timeStamp": "1:19-1:45",
       "technique": "Upper-String Triad Voice Leading",
       "key": "G Minor",
-      "description": "Upper-register triad arpeggios outlining the descending Gm → Ebmaj7 → Dm7 → Cm7 harmony.",
+      "description": "Second verse introducing delicate high-register triad voicings and echo trails weaving through Sting's vocal delivery.",
+      "alphaTab": ":8 5.4 3.3 3.2 3.3 8.4 7.3 8.2 7.3 | :8 7.4 5.3 6.2 5.3 5.4 3.3 4.2 3.3 | :1 (3.6 5.5 5.4 5.3) |",
+      "exerciseLabel": "Summers Voice-Leading Study",
       "chords": [
         "Gm",
         "Ebmaj7",
@@ -183,12 +225,50 @@
       ],
       "progression": "Gm - Ebmaj7 - Dm7 - Cm7",
       "notes": [
-        "Focus on clear note separation across the D, G, and B strings",
-        "Listen to the inner voice moving D → Eb → D → C",
-        "Add subtle chorus or tape delay for authentic Andy Summers shimmer"
+        "Focus on clear note separation across strings 2, 3, and 4",
+        "Listen to the chromatic inner voice descent: D → Eb → D → C",
+        "Keep the staccato offbeat chops razor-clean"
+      ]
+    },
+    {
+      "name": "Chorus 2 Dynamic Punk-Rock Drive",
+      "timeStamp": "1:46-2:15",
+      "technique": "Maximum Velocity Downstrokes",
+      "key": "Bb Major",
+      "description": "Second chorus with enhanced band velocity, backing vocal shouts, and full power-chord saturation.",
+      "alphaTab": ":4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) | :4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) |",
+      "exerciseLabel": "Chorus 2 Power Drive",
+      "chords": [
+        "Bb",
+        "F",
+        "Gm"
       ],
-      "alphaTab": ":8 5.4 3.3 3.2 3.3 8.4 7.3 8.2 7.3 | :8 7.4 5.3 6.2 5.3 5.4 3.3 4.2 3.3 | :1 (3.6 5.5 5.4 5.3) |",
-      "exerciseLabel": "Summers Voice-Leading Study"
+      "progression": "Bb - F - Gm",
+      "notes": [
+        "Full wall-of-sound power chords",
+        "Accent the snare hits on beats 2 and 4",
+        "Sing lead or backing vocal while maintaining downstroke rhythm"
+      ]
+    },
+    {
+      "name": "Outro Extended Vocal Vamp & Rhythmic Fade",
+      "timeStamp": "2:16-3:12",
+      "technique": "Continuous Power Chord Strumming & Fade Nuance",
+      "key": "Bb Major",
+      "description": "The celebratory outro where the driving Bb - F - Gm chorus progression cycles under Sting's ecstatic vocal cries all the way to the fade.",
+      "alphaTab": ":4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :2 (3.6 5.5 5.4) (3.6 5.5 5.4) | :4 (6.6 8.5 8.4) (6.6 8.5 8.4) (1.6 3.5 3.4) (1.6 3.5 3.4) | :1 (3.6 5.5 5.4) |",
+      "exerciseLabel": "Outro Chorus Progression",
+      "chords": [
+        "Bb",
+        "F",
+        "Gm"
+      ],
+      "progression": "Bb - F - Gm",
+      "notes": [
+        "Maintain unwavering 134 BPM tempo",
+        "Subtle pick rake embellishments on chord transitions",
+        "Gradual decrescendo into the studio fadeout"
+      ]
     }
   ],
   "equipment": {
@@ -209,11 +289,11 @@
         "Fender Twin Reverb"
       ],
       "settings": {
-        "gain": "4 (crisp clean with punchy transient attack)",
-        "treble": "7 (bright Telecaster snap)",
-        "middle": "5 (clear, scooped new-wave definition)",
-        "bass": "5 (tight low-end that leaves room for bass)",
-        "presence": "6 (airy top-end sparkle)"
+        "gain": "4.0",
+        "treble": "7.0",
+        "middle": "5.0",
+        "bass": "5.0",
+        "presence": "6.0"
       }
     },
     "effects": {
@@ -249,57 +329,54 @@
         "Add authentic Andy Summers upper-voicing variations and tape-echo rhythmic trails",
         "Maintain pocket precision during the extended vocal-improv outro"
       ],
-      "timeEstimate": "4-5 weeks"
+      "timeEstimate": "3-5 weeks"
     }
   },
   "practiceNotes": {
     "commonMistakes": [
-      "Playing the verse chords on beat 1 instead of waiting for the reggae off-beat",
-      "Letting the verse chords ring too long instead of choking them immediately with the left hand",
-      "Losing time during the quiet vocal break before the chorus erupts"
+      "Holding the verse chord shapes down continuously instead of releasing left-hand pressure immediately",
+      "Dragging the tempo during the transition into the high-energy chorus",
+      "Overplaying on the low strings during the verse, muddying Sting's bassline"
     ],
     "practiceRoutine": [
-      "5 minutes: Movable barre chord transitions (Gm → Dm7 → Ebmaj7 → Dm7 → Cm7)",
-      "5 minutes: Left-hand staccato squeeze-and-release muting drill with metronome",
-      "5 minutes: F7sus4 → Gsus4 to Bb → F → Gm chorus transition",
-      "5 minutes: Full song playthrough at 134 BPM"
+      "10 minutes: Fret-hand squeeze-and-release muting drill on a single Gm chord at 100-134 BPM",
+      "15 minutes: Descending verse chord progression (Gm - Dm7 - Ebmaj7 - Dm7 - Cm7 - F7sus4 - Gsus4)",
+      "15 minutes: Sudden dynamic shift from verse reggae chops into full eighth-note chorus power chords"
     ],
     "focusAreas": [
-      "Crisp fret-hand muting",
-      "Off-beat rhythmic discipline",
-      "Explosive verse-to-chorus dynamic contrast"
+      "Razor-sharp staccato fret-hand muting",
+      "Clean suspended 4th chord fingerings",
+      "Dynamic contrast between clean reggae verses and overdriven rock choruses"
     ],
     "metronomeWork": [
-      "Set metronome to 134 BPM and count '1-2-3-4' aloud while striking chords strictly on the off-beats",
-      "Practice the transition into the straight eighth-note chorus without speeding up",
-      "Use a drum loop to internalize the reggae-tango kick/snare placement"
+      "Set metronome to 134 BPM and practice landing the verse chord chops strictly on the '&' of each beat"
     ]
   },
   "relatedSongs": {
     "sameArtist": [
       {
         "title": "Every Breath You Take",
-        "difficulty": "Intermediate",
-        "similarity": "Showcases Andy Summers' signature clean modulation and stretched add9 voicings"
+        "link": "/lessons/songs/song-analysis/every-breath-you-take",
+        "similarity": "Andy Summers' benchmark add9 palm-muted arpeggios and spacious new-wave guitar orchestration"
       },
       {
         "title": "Message in a Bottle",
-        "difficulty": "Advanced",
-        "similarity": "Another Outlandos/Reggatta-era Police classic blending new-wave energy with sophisticated harmony"
+        "link": "/lessons/songs/song-analysis/message-in-a-bottle",
+        "similarity": "Challenging wide-stretch add9 arpeggios driven by Stewart Copeland's high-energy reggae-rock pulse"
       }
     ],
     "similarTechniques": [
       {
-        "title": "Santeria",
-        "artist": "Sublime",
+        "title": "Could You Be Loved",
+        "artist": "Bob Marley",
         "difficulty": "Intermediate",
-        "similarity": "Built on crisp off-beat reggae-rock skank guitar stabs and melodic transitions"
+        "similarity": "Reggae rhythm guitar standard featuring crisp off-beat skanks and infectious funk-pop syncopation"
       },
       {
-        "title": "Should I Stay or Should I Go",
+        "title": "London Calling",
         "artist": "The Clash",
-        "difficulty": "Beginner",
-        "similarity": "Combines tight, percussive verse muting with explosive punk-rock chorus strumming"
+        "difficulty": "Intermediate",
+        "similarity": "Driving post-punk anthem featuring staccato reggae-influenced downstrokes and raw rock power chords"
       }
     ],
     "progressionPath": [
@@ -307,24 +384,24 @@
         "title": "Message in a Bottle",
         "artist": "The Police",
         "difficulty": "Advanced",
-        "similarity": "Advances into Andy Summers' famous three-string add9 stretch arpeggios"
+        "similarity": "Take your Police rhythm precision and expand into Andy Summers' definitive wide-stretch add9 masterclass"
       }
     ]
   },
   "metadata": {
-    "popularity": 94,
+    "popularity": 97,
     "dateAdded": "2026-10-16",
     "featured": true,
     "decade": "1970s",
     "iconicRiff": true,
     "tags": [
-      "70s-rock",
+      "classic-rock",
+      "reggae",
+      "punk",
+      "lead-guitar",
+      "rhythm-guitar",
       "barre-chords",
-      "syncopation",
-      "palm-muting",
-      "minor-key",
-      "chord-progressions",
-      "intermediate"
+      "minor-key"
     ],
     "learningValue": "High",
     "estimatedLearningTime": "2-4 weeks"
