@@ -113,16 +113,48 @@
         ],
         "progression": "D - Am7 - C - Em - D"
       }
+    },
+    {
+      "name": "Mixolydian Modal Shift & Dynamic 7/4 to 4/4 Metric Modulation",
+      "description": "Navigating the seamless metric transition from 7/4 into straight 4/4, and utilizing the borrowed flat-seventh degree (C natural) over Am7 and C major chords for an uplifting modern rock harmonic texture",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Mixolydian borrowing: Am7 (v7) and C (bVII) replace diatonic A7 and C#dim, creating bittersweet resolution to D",
+          "Metric modulation: The eighth-note pulse remains constant at 145 BPM across the transition from 7/4 to 4/4",
+          "Layered voicing: Voicing open 1st and 2nd strings throughout adds expansive top-end shimmer"
+        ],
+        "sequence": [
+          "Practice counting bars of 7/4 (4 beats + 3 beats) directly into 4/4 time",
+          "Isolate the D to Am7 change, keeping finger 1 anchored near the second fret",
+          "Transition from C to Em with strong downbeat emphasis",
+          "Engage overdrive or bridge humbucker as the groove shifts into straight 4/4"
+        ],
+        "tips": [
+          "Do not slow down or hesitate on beat 7 of the intro bar; drive straight into beat 1",
+          "Leave top E and B strings open across C and Em chords for the classic Dave Grohl ringing chime",
+          "Use the guitar volume knob to clean up verse dynamics before rolling up to 10 for the chorus"
+        ],
+        "chords": [
+          "D",
+          "Am7",
+          "C",
+          "Em",
+          "Em7"
+        ],
+        "progression": "D - Am7 - C - Em - D"
+      }
     }
   ],
   "sections": [
     {
-      "name": "7/4 Asymmetric Intro Riff",
+      "name": "7/4 Asymmetric Intro Pedal Riff",
       "timeStamp": "0:00-0:32",
       "technique": "Pedal-Point Arpeggiation in 7/4 Time",
       "key": "D Major",
-      "description": "Dave Grohl's celebrated 7/4 intro riff, one of the most famous odd-meter guitar hooks in 2000s rock",
-      "alphaTab": "\\tempo 145 . \\ts 7 4\n:8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 5.2 0.4 5.2 0.4 5.2 | :8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 8.2 0.4 8.2 0.4 8.2 |",
+      "description": "Dave Grohl's celebrated 7/4 intro riff, alternating the ringing open 4th string pedal with melodic shifts on the B string (F#, E, G).",
+      "alphaTab": ":8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 5.2 0.4 5.2 0.4 5.2 | :8 0.4 7.2 0.4 7.2 0.4 7.2 0.4 7.2 0.4 8.2 0.4 8.2 0.4 8.2 |",
       "exerciseLabel": "7/4 Intro Pedal Riff",
       "chords": [
         "D5",
@@ -130,34 +162,113 @@
       ],
       "progression": "D5 - Dsus2",
       "notes": [
-        "D",
-        "F#",
-        "E",
-        "G"
+        "Open D pedal sustained throughout",
+        "Fretting B string at 7th, 5th, and 8th frets",
+        "Count 4+3 or 1-2-3-4-5-6-7 evenly"
       ]
     },
     {
-      "name": "Anthemic Chorus Strumming",
-      "timeStamp": "1:08-1:36",
-      "technique": "Open Ringing Chord Strumming in 4/4",
-      "key": "D Major",
-      "description": "High-energy chorus groove in straight 4/4 featuring ringing open-string chord extensions",
-      "alphaTab": "\\tempo 145 . \\ts 4 4\n:4 0.4 4.3 3.2 2.1 | :4 0.5 2.4 2.3 1.2 | :4 3.5 2.4 0.3 1.2 | :4 0.6 2.5 2.4 0.3 |",
-      "exerciseLabel": "Anthemic Chorus Chords",
+      "name": "Verse 1 Driving 4/4 Groove (D - Am7 - C - Em)",
+      "timeStamp": "0:33-1:07",
+      "technique": "Dynamic 4/4 Rock Strumming & Open Chords",
+      "key": "D Major / D Mixolydian",
+      "description": "The band shifts gears into a driving, straight 4/4 post-grunge groove with Dave's acoustic/electric rhythm layer underpinning the vocal.",
+      "alphaTab": ":4 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) :8 (0.5 2.4 0.3 1.2 0.1) (0.5 2.4 0.3 1.2 0.1) :4 (0.5 2.4 0.3 1.2 0.1) | :4 (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) :8 (0.6 2.5 2.4 0.3 0.2 0.1) (0.6 2.5 2.4 0.3 0.2 0.1) :4 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Driving 4/4 Groove",
       "chords": [
         "D",
         "Am7",
         "C",
         "Em"
       ],
-      "progression": "D - Am7 - C - Em",
+      "progression": "I - v7 - ♭VII - ii",
       "notes": [
-        "D",
-        "F#",
-        "A",
+        "Keep down-up strumming fluid at 145 BPM",
+        "Emphasize flat-7th C note in Am7 and C",
+        "Open top strings ring for harmonic air"
+      ]
+    },
+    {
+      "name": "Anthemic Chorus Release ('It's times like these you learn to live again')",
+      "timeStamp": "1:08-1:36",
+      "technique": "Heavy Power Strumming & Resonant Open Extensions",
+      "key": "D Major",
+      "description": "Explosive dynamic shift into the euphoric chorus hook, cycling C, Em7, and resolving triumphantly to D major.",
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :4 (0.6 2.5 0.4 0.3 3.2 0.1) (0.6 2.5 0.4 0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) | :2 (3.5 2.4 0.3 1.2 0.1) :4 (0.6 2.5 0.4 0.3 3.2 0.1) (0.6 2.5 0.4 0.3 3.2 0.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Anthemic Chorus Release",
+      "chords": [
         "C",
-        "E",
-        "G"
+        "Em7",
+        "D"
+      ],
+      "progression": "♭VII - ii7 - I",
+      "notes": [
+        "Aggressive downstrokes on beats 1 and 2",
+        "Let the C chord resolve through Em7 to triumphant D",
+        "Full wall of sound saturation"
+      ]
+    },
+    {
+      "name": "Verse 2 Layered Guitars & Shiflett Arpeggios",
+      "timeStamp": "1:37-2:05",
+      "technique": "Arpeggiated Counterpoint & Upper-Register Texture",
+      "key": "D Major / D Mixolydian",
+      "description": "Chris Shiflett layers high ringing triad arpeggios above Grohl's steady rhythm, weaving Mixolydian lines around the vocal delivery.",
+      "alphaTab": ":8 7.3 7.2 5.1 7.2 5.3 5.2 3.1 5.2 | :8 5.3 5.2 3.1 5.2 0.4 0.3 0.2 0.1 | :8 7.3 7.2 5.1 7.2 5.3 5.2 3.1 5.2 | :2 (0.4 2.3 3.2 2.1) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Upper-Register Verse Arpeggios",
+      "chords": [
+        "D",
+        "Am7",
+        "C",
+        "Em"
+      ],
+      "progression": "I - v7 - ♭VII - ii",
+      "notes": [
+        "Let high string voicings sustain into each other",
+        "Bridge pickup on Chris's guitar for bite and cut",
+        "Dynamic contrast under verse vocal"
+      ]
+    },
+    {
+      "name": "Chris Shiflett Melodic Interlude & Dynamic Build",
+      "timeStamp": "2:30-2:55",
+      "technique": "Melodic Lead Fills & Octave Counter-Melodies",
+      "key": "D Major",
+      "description": "A soaring instrumental bridge combining melodic pentatonic bends, octave intervals, and cascading rhythmic accents that build anticipation for the final chorus.",
+      "alphaTab": ":8 7.3 9.3 10.2 12.2 :4 14.1 12.1 | :8 10.2 12.2 :4 10.2 :2 7.3 | :8 7.3 9.3 10.2 12.2 :4 15.1 14.1 | :1 (10.2 11.3 12.4) |",
+      "exerciseLabel": "Melodic Interlude & Build",
+      "chords": [
+        "D",
+        "Am7",
+        "C",
+        "Em"
+      ],
+      "progression": "I - v7 - ♭VII - ii",
+      "notes": [
+        "Sustained singing lead tone",
+        "Smooth position shifting up the fretboard",
+        "Gradual crescendo into the final chorus drop"
+      ]
+    },
+    {
+      "name": "Final Chorus Explosion & Ringing D Major Outro",
+      "timeStamp": "2:56-4:26",
+      "technique": "Maximum Dynamic Saturation & Ringing Open D Cadence",
+      "key": "D Major",
+      "description": "The emotional peak of the track: Grohl's soaring vocal scream backed by all three guitars at full gain, culminating in a sustained ringing open D chord fade.",
+      "alphaTab": ":4 (3.5 2.4 0.3 1.2 0.1) (3.5 2.4 0.3 1.2 0.1) :4 (0.6 2.5 0.4 0.3 3.2 0.1) (0.6 2.5 0.4 0.3 3.2 0.1) | :2 (0.4 2.3 3.2 2.1) :4 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :1 (0.4 0.3 2.3 3.2 2.1) | :1 (0.4 4.3 3.2 2.1) |",
+      "exerciseLabel": "Final Chorus & Outro Cadence",
+      "chords": [
+        "C",
+        "Em7",
+        "D",
+        "Dsus2"
+      ],
+      "progression": "♭VII - ii7 - I - Isus2 - I",
+      "notes": [
+        "Maximum pick attack on the final chorus repetitions",
+        "Vocal screams supported by overdriven power chords",
+        "Let final D major open chord sustain with amp feedback"
       ]
     }
   ],
@@ -304,4 +415,3 @@
     "estimatedLearningTime": "2-4 weeks"
   }
 }
-

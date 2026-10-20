@@ -114,12 +114,43 @@
         ],
         "progression": "Am - D/F# - Em - G"
       }
+    },
+    {
+      "name": "Ethereal Modulation & Space Echo Self-Oscillation",
+      "description": "Transitioning from the brooding A minor verse to the dreamlike B minor bridge ('For a minute there, I lost myself'), layering arpeggiated acoustic guitar with runaway tape delay feedback",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Modulation: Abrupt key shift from A natural minor to B natural minor",
+          "Bridge arpeggio: Bm (X-2-4-4-3-2), D (X-X-0-2-3-2), G (3-2-0-0-3-3), C (X-3-2-0-1-0)",
+          "Tape echo oscillation: Cranking the repeat rate and intensity on a Roland Space Echo RE-201 to create whistling filter sounds"
+        ],
+        "sequence": [
+          "Lead into the bridge with a sustained E minor chord",
+          "Shift cleanly to the B minor barre chord on beat 1",
+          "Arpeggiate across strings 5, 4, 3, and 2 in eighth notes",
+          "Allow the analog delay repeats to build into a swirling psychedelic climax"
+        ],
+        "tips": [
+          "Barre cleanly across the 2nd fret for Bm to avoid deadening the high F# on string 1",
+          "Gradually increase your picking dynamic from delicate piano to full fortissimo across the bridge cycles",
+          "Let the final D chord sustain as the delay feedback runs wild"
+        ],
+        "chords": [
+          "Bm",
+          "D",
+          "G",
+          "C"
+        ],
+        "progression": "Bm - D - G - D - C - Bm - D Bridge"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Acoustic Intro & Verse",
-      "timeStamp": "0:00-0:45",
+      "name": "Intro Acoustic Piano & Guitar Voice-Leading",
+      "timeStamp": "0:00-0:28",
       "technique": "Slash Chord Voice Leading",
       "key": "A Minor",
       "description": "Thom Yorke's signature acoustic guitar chords with thumb-over D/F# bass movement.",
@@ -135,15 +166,36 @@
         "Keep the acoustic strumming steady and percussive",
         "Mute the 5th (A) string during D/F#"
       ],
-      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (2.6 0.4 2.3 3.2) :4 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.5 2.4 2.3 1.2 0.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (2.6 0.4 2.3 3.2) :4 (0.6 2.5 2.4 0.3 0.2 0.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.5 2.4 2.3 1.2 0.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
       "exerciseLabel": "Intro Acoustic Walkdown"
     },
     {
-      "name": "Chorus Lift",
+      "name": "Verse 1 Descending Bassline & Thumb-Over D/F#",
+      "timeStamp": "0:29-0:57",
+      "technique": "Thumb-Over Bass Inversions",
+      "key": "A Minor",
+      "description": "The melancholic verse progression under 'Karma police, arrest this man, he talks in maths'.",
+      "chords": [
+        "Am",
+        "D/F#",
+        "Em",
+        "G"
+      ],
+      "progression": "Am - D/F# - Em - G - Am - F - Em - G",
+      "notes": [
+        "Relaxed 75 BPM pendulum strumming",
+        "Ensure the low F# and F natural notes ring clearly on downbeats",
+        "Seamless transition into the G major chord"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (2.6 0.4 2.3 3.2) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Verse Bass Walkdown"
+    },
+    {
+      "name": "Chorus 1 Major Lift ('This is what you'll get')",
       "timeStamp": "0:58-1:20",
       "technique": "Open Strumming Dynamics",
       "key": "G Major",
-      "description": "The swelling chorus hook moving from C to D, G, F#, and Em.",
+      "description": "The swelling chorus hook moving from C to D, G, F#, and Em under the soaring vocal line.",
       "chords": [
         "C",
         "D",
@@ -157,15 +209,36 @@
         "Catch the quick passing F# bass note from G to Em",
         "Let the low Em rumble with tube resonance"
       ],
-      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (2.6 4.5 4.4 3.3 2.2 2.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (0.4 2.3 3.2 2.1) | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (2.6 4.5 4.4 3.3 2.2 2.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (3.5 2.4 0.3 1.2 0.1) |",
       "exerciseLabel": "Chorus Strummed Hook"
     },
     {
-      "name": "Bridge Outro Climax",
-      "timeStamp": "2:33-4:24",
+      "name": "Verse 2 Melodic Counterpoint & Dynamic Swell",
+      "timeStamp": "1:21-1:50",
+      "technique": "Acoustic Dynamic Swells",
+      "key": "A Minor",
+      "description": "Second verse featuring acoustic strums locking with Jonny Greenwood's high piano counter-melodies.",
+      "chords": [
+        "Am",
+        "D/F#",
+        "Em",
+        "G"
+      ],
+      "progression": "Am - D/F# - Em - G",
+      "notes": [
+        "Subtle increase in pick velocity",
+        "Support the piano hooks with clean acoustic warmth",
+        "Prepare for the key modulation heading toward the bridge"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 (2.6 0.4 2.3 3.2) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.6 2.5 2.4 0.3 0.2 0.1) | :1 (0.5 2.4 2.3 1.2 0.1) |",
+      "exerciseLabel": "Verse 2 Dynamic Swell"
+    },
+    {
+      "name": "Bridge Modulation ('For a minute there, I lost myself')",
+      "timeStamp": "2:33-3:20",
       "technique": "Ethereal Key Modulation",
       "key": "B Minor",
-      "description": "The sublime outro section 'For a minute there, I lost myself' with delay feedback swell.",
+      "description": "The sublime outro section 'For a minute there, I lost myself' shifting into B minor.",
       "chords": [
         "Bm",
         "D",
@@ -174,12 +247,32 @@
       ],
       "progression": "Bm - D - G - D - C - Bm - D",
       "notes": [
-        "Arpeggiate the Bm barre chord cleanly",
-        "Swelling delay repeats into self-oscillation",
+        "Arpeggiate the Bm barre chord cleanly across strings 5, 4, 3, and 2",
+        "Crescendo pick attack across each two-bar cycle",
         "Build dynamic intensity with the full rhythm section"
       ],
-      "alphaTab": ":4 7.3 :4 9.3 :2 7.2 | :4 8.2 :4 7.2 :2 5.2 | :1 7.3 |",
+      "alphaTab": ":4 (2.5 4.4 4.3 3.2 2.1) :4 (0.4 2.3 3.2 2.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.4 2.3 3.2 2.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (2.5 4.4 4.3 3.2 2.1) | :1 (2.5 4.4 4.3 3.2 2.1) |",
       "exerciseLabel": "Bridge Outro Melody"
+    },
+    {
+      "name": "Outro Tape Echo Feedback & Spaceship Sound",
+      "timeStamp": "3:21-4:24",
+      "technique": "Analog Tape Echo Oscillation",
+      "key": "B Minor",
+      "description": "Jonny Greenwood drives the Roland Space Echo RE-201 into wild self-oscillation, dissolving the track into cosmic noise.",
+      "chords": [
+        "Bm",
+        "D",
+        "G"
+      ],
+      "progression": "Bm - D - G - D",
+      "notes": [
+        "Sustain the high single-note melody notes on frets 7, 8, and 9",
+        "Let analog delay repeats cascade into self-generating feedback",
+        "Slowly fade to silence as the spaceship oscillation dies down"
+      ],
+      "alphaTab": ":4 7.3 :4 9.3 :2 7.2 | :4 8.2 :4 7.2 :2 5.2 | :1 7.3 |",
+      "exerciseLabel": "Outro Ambient Delay Swell"
     }
   ],
   "equipment": {
@@ -200,7 +293,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "3.5 (clean acoustic transparency with warm edge)",
+        "gain": "3.5",
         "treble": "6",
         "middle": "6.5",
         "bass": "5.5",
