@@ -54,28 +54,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "5/4 Meter Intro",
+          "section": "5/4 Meter Fanfare",
           "progression": "Gm - F - Dm - C - Dm",
           "romanNumerals": "5/4 Metric Cadence",
           "description": "Stately 5/4 timpani and guitar fanfare establishing dark psychedelic grandeur"
         },
         {
-          "section": "Verse",
+          "section": "Descending Verse Progression (Dm to Bb)",
           "progression": "Dm - C - G/B - Bb - C",
           "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
           "description": "Stepwise bass descent (D → C → B → Bb → C) with driving open and barre chords"
         },
         {
-          "section": "Chorus",
+          "section": "Chorus Power Cadence (C - G - Bb - A)",
           "progression": "C - G - Bb - A",
           "romanNumerals": "♭VII - IV - ♭VI - V",
           "description": "Triumphant rock cadence resolving on the powerful major dominant A chord"
         },
         {
-          "section": "Wah-Wah Solo",
+          "section": "Wah-Wah Solo Statement (Chorus 1)",
           "progression": "Dm - C - G/B - Bb - C",
           "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
-          "description": "Clapton's legendary continuous wah-wah solo wailing over the verse progression"
+          "description": "Clapton's opening wah-wah lead statement wailing over the verse progression"
+        },
+        {
+          "section": "Wah-Wah Solo Climax & Upper Register (Chorus 2)",
+          "progression": "Dm - C - G/B - Bb - C",
+          "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
+          "description": "Rapid 10th-position pentatonic flourishes and screaming bent notes with full wah pedal sweep"
+        },
+        {
+          "section": "Outro Wah Jam & Polyrhythmic Coda",
+          "progression": "Dm - C - G/B - Bb - C",
+          "romanNumerals": "i - ♭VII - IV6 - ♭VI - ♭VII",
+          "description": "Relentless continuous wah-wah improvisation locking with Ginger Baker's four-on-the-floor beat into the fade"
         }
       ],
       "harmonicFunction": [
@@ -119,13 +131,46 @@
         ],
         "progression": "Dm - C - G/B - Bb - C"
       }
+    },
+    {
+      "name": "Stepwise Bass Voice-Leading & 5/4 Metric Articulation",
+      "description": "Fretting smooth stepwise bass transitions across inverted chords while locking with odd-meter drum and timpani accents",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Count the 5/4 intro precisely: ONE-two-three-FOUR-five",
+          "G/B inverted chord: fret 2 on A string (B bass), open D and G strings, fret 3 on B string (D)",
+          "Bb barre: fret 1 on A string, frets 3 on D, G, and B strings"
+        ],
+        "sequence": [
+          "Strike the low G power chord on beat 1 of the 5/4 fanfare",
+          "Let timpani roll carry the measure into the resolving Dm crash",
+          "Execute the verse bassline without stopping the ringing treble strings",
+          "Drive into the major A dominant chord at the end of the chorus"
+        ],
+        "tips": [
+          "Keep the index finger relaxed when moving from G/B to Bb",
+          "Use a firm downstroke on the bass string before strumming the remainder of each chord",
+          "Listen to Jack Bruce's bass guitar to ensure octave alignment on the descending walkdown"
+        ],
+        "chords": [
+          "Gm",
+          "F",
+          "Dm",
+          "G/B",
+          "Bb",
+          "A"
+        ],
+        "progression": "Verse & Chorus Cadence"
+      }
     }
   ],
   "sections": [
     {
       "name": "5/4 Meter Fanfare",
       "timeStamp": "0:00-0:28",
-      "technique": "Odd-Meter Rhythmic Stabs",
+      "technique": "Stepwise Bass Voice-Leading & 5/4 Metric Articulation",
       "key": "D Minor",
       "description": "The ominous 5/4 intro cadence featuring heavy crash cymbals and stately descending chords.",
       "chords": [
@@ -140,13 +185,13 @@
         "Let the low Dm chord rumble with tube sustain",
         "Prepare for the tempo surge into the 4/4 verse"
       ],
-      "alphaTab": ":4 (3.6 5.5 5.4 3.3 3.2 3.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) | :1 (0.4 2.3 3.2 1.1) |",
+      "alphaTab": ":4 (3.6 5.5 5.4 3.3 3.2 3.1) :4 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) | :1 (0.4 2.3 3.2 1.1) :4 r |",
       "exerciseLabel": "5/4 Intro Fanfare"
     },
     {
-      "name": "Descending Verse Progression",
+      "name": "Descending Verse Progression (Dm to Bb)",
       "timeStamp": "0:29-1:04",
-      "technique": "Stepwise Bass Descent",
+      "technique": "Expressive Vox Wah-Wah Articulation & Descending Chords",
       "key": "D Minor",
       "description": "The driving 4/4 verse chord progression moving Dm to C, G/B, and Bb.",
       "chords": [
@@ -162,15 +207,58 @@
         "Drive with solid eighth-note pick attack",
         "Smooth transition between G/B and Bb"
       ],
-      "alphaTab": ":4 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) :4 (2.5 0.4 0.3 3.2) :4 (1.5 3.4 3.3 3.2) | :2 (3.5 2.4 0.3 1.2) :2 (0.4 2.3 3.2 1.1) |",
+      "alphaTab": ":4 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) :4 (2.5 0.4 0.3 3.2) :4 (1.5 3.4 3.3 3.2) | :2 (3.5 2.4 0.3 1.2) :2 (0.4 2.3 3.2 1.1) | :4 (0.4 2.3 3.2 1.1) :4 (3.5 2.4 0.3 1.2) :2 (1.5 3.4 3.3 3.2) | :1 (0.4 2.3 3.2 1.1) |",
       "exerciseLabel": "Verse Chord Walkdown"
     },
     {
-      "name": "Wah-Wah Solo Climax",
-      "timeStamp": "3:40-4:58",
-      "technique": "Vocal Wah Improvisation",
+      "name": "Chorus Power Cadence (C - G - Bb - A)",
+      "timeStamp": "1:05-1:40",
+      "technique": "Stepwise Bass Voice-Leading & 5/4 Metric Articulation",
       "key": "D Minor",
-      "description": "Eric Clapton's legendary extended outro solo, the benchmark for rock wah-wah phrasing.",
+      "description": "Triumphant rock cadence resolving on the powerful major dominant A chord.",
+      "chords": [
+        "C",
+        "G",
+        "Bb",
+        "A"
+      ],
+      "progression": "C - G - Bb - A",
+      "notes": [
+        "Hit the C and G chords with heavy arena downstrokes",
+        "Let the major A chord ring to create harmonic resolution tension",
+        "Tight snare synchronicity on beats 2 and 4"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2) :2 (3.6 5.5 5.4 4.3 3.2 3.1) | :2 (1.5 3.4 3.3 3.2) :2 (0.5 2.4 2.3 2.2 0.1) | :2 (3.5 2.4 0.3 1.2) :2 (3.6 5.5 5.4 4.3 3.2 3.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Chorus Power Cadence"
+    },
+    {
+      "name": "Wah-Wah Solo Statement (Chorus 1)",
+      "timeStamp": "2:15-2:55",
+      "technique": "Expressive Vox Wah-Wah Articulation & Descending Chords",
+      "key": "D Minor",
+      "description": "Clapton's opening wah-wah lead statement wailing over the verse progression.",
+      "chords": [
+        "Dm",
+        "C",
+        "G/B",
+        "Bb",
+        "C"
+      ],
+      "progression": "Dm - C - G/B - Bb - C",
+      "notes": [
+        "Rock the wah pedal forward on peak bends",
+        "Use full-step bends on the 13th fret B string to high D",
+        "Sustain notes with wide, singing vibrato"
+      ],
+      "alphaTab": ":8 10.1 13.1 10.1 13.2 :4 12.3 :4 10.3 | :8 12.4 10.4 12.4 10.4 :2 12.4 | :8 10.1 13.1 10.1 13.1 :4 12.3 :4 10.3 | :1 12.4 |",
+      "exerciseLabel": "Wah-Wah Solo Opening Statement"
+    },
+    {
+      "name": "Wah-Wah Solo Climax & Upper Register (Chorus 2)",
+      "timeStamp": "3:40-4:20",
+      "technique": "Expressive Vox Wah-Wah Articulation & Descending Chords",
+      "key": "D Minor",
+      "description": "Rapid 10th-position pentatonic flourishes and screaming bent notes with full wah pedal sweep.",
       "chords": [
         "Dm",
         "C",
@@ -179,12 +267,34 @@
       ],
       "progression": "Dm - C - G/B - Bb - C",
       "notes": [
-        "Rock the wah pedal forward on peak bends",
-        "Use full-step bends on the 13th fret B string to high D",
-        "Sustain notes with wide, singing vibrato"
+        "High-velocity sixteenth-note pull-offs between frets 13 and 10",
+        "Full wah sweep emphasizing cutting treble frequencies",
+        "Wide vibrato on the 13th fret high E string"
       ],
-      "alphaTab": ":8 10.1 13.1 10.1 13.2 :4 12.3 :4 10.3 | :8 12.4 10.4 12.4 10.4 :2 12.4 | :1 10.4 |",
-      "exerciseLabel": "Wah-Wah Solo Outro"
+      "alphaTab": ":16 13.1 10.1 13.1 10.1 13.1 10.1 13.1 10.1 :8 12.3 10.3 :4 12.3 | :8 13.2 10.2 13.2 10.2 :2 12.4 | :8 10.1 13.1 10.1 13.1 :4 13.1 :4 10.1 | :1 10.1 |",
+      "exerciseLabel": "Wah-Wah Solo Climax"
+    },
+    {
+      "name": "Outro Wah Jam & Polyrhythmic Coda",
+      "timeStamp": "4:20-4:58",
+      "technique": "Expressive Vox Wah-Wah Articulation & Descending Chords",
+      "key": "D Minor",
+      "description": "Relentless continuous wah-wah improvisation locking with Ginger Baker's four-on-the-floor beat into the fade.",
+      "chords": [
+        "Dm",
+        "C",
+        "G/B",
+        "Bb",
+        "C"
+      ],
+      "progression": "Dm - C - G/B - Bb - C",
+      "notes": [
+        "Maintain continuous rhythmic foot sweep on the wah pedal",
+        "Trade melodic phrases against Baker's polyrhythmic drumming",
+        "Decay into final tape fade"
+      ],
+      "alphaTab": ":8 13.1 10.1 13.2 10.2 :4 12.3 :4 10.3 | :8 12.4 10.4 12.4 10.4 :2 12.4 | :8 10.1 13.1 10.1 13.1 :4 12.3 :4 10.3 | :1 (0.4 2.3 3.2 1.1) |",
+      "exerciseLabel": "Outro Wah Jam & Coda"
     }
   ],
   "equipment": {
@@ -205,7 +315,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "8 (cranked Plexi roar)",
+        "gain": "8",
         "treble": "6",
         "middle": "8",
         "bass": "6",

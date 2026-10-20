@@ -57,22 +57,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Main Verse Groove",
+          "section": "Intro Melodic Solo & Singing Sustain",
+          "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7",
+          "romanNumerals": "i7 - v7 - i7 - iv7 - i7 - v7 - i7",
+          "description": "Carlos Santana's soaring Gibson Les Paul intro theme featuring singing feedback and Dorian sweetness"
+        },
+        {
+          "section": "Latin Rhythm Strumming & Chords (Verse 1)",
           "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7",
           "romanNumerals": "i7 - v7 - i7 - iv7 - i7 - v7 - i7",
           "description": "Smooth Latin rock cha-cha groove punctuated by congas, timbales, and Hammond B3 organ chords"
         },
         {
-          "section": "Solo Over Dominant Turnaround",
+          "section": "Verse 2 Vocal Answers & Dorian Fills",
+          "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7",
+          "romanNumerals": "i7 - v7 - i7 - iv7 - i7 - v7 - i7",
+          "description": "Call-and-response lead phrases answering Gregg Rolie's vocal lines targeting the natural 6th (B)"
+        },
+        {
+          "section": "Middle Blues Solo (Chorus Turnaround)",
           "progression": "Dm - Gm - Dm - A7 - Dm",
           "romanNumerals": "i - iv - i - V7 - i",
           "description": "Classic minor blues cadence resolving strongly on the A7 major dominant chord with C# leading tone"
         },
         {
-          "section": "Gypsy Queen Outro Jam",
+          "section": "Transition to Gypsy Queen (Tempo Modulation)",
           "progression": "D7 - G7 - D7 - G7",
-          "romanNumerals": "I7 - IV7 - I7 - IV7 (in D Mixolydian/Dorian)",
-          "description": "High-speed polyrhythmic Latin jazz outro adapted from Hungarian guitarist Gábor Szabó"
+          "romanNumerals": "I7 - IV7 - I7 - IV7",
+          "description": "Metric modulation accelerating the tempo from 126 BPM cha-cha into a rapid Afro-Cuban jazz jam"
+        },
+        {
+          "section": "Gypsy Queen Latin Jazz Shred Jam & Outro",
+          "progression": "D7 - G7 - D7 - G7",
+          "romanNumerals": "I7 - IV7 - I7 - IV7",
+          "description": "High-speed alternate picking and polyrhythmic Latin jazz outro adapted from Hungarian guitarist Gábor Szabó"
         }
       ],
       "harmonicFunction": [
@@ -114,17 +132,47 @@
         ],
         "progression": "Dm7 - Am7 - Dm7 - Gm7 - Dm7 - Am7 - Dm7"
       }
+    },
+    {
+      "name": "Afro-Cuban Latin Syncopated Rhythm Comping & Cha-Cha Strumming",
+      "description": "Playing tight, syncopated barre chord comping that locks in tandem with timbales, congas, and Latin basslines",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Dm7: 5th fret A string (5-7-5-6-5-5)",
+          "Am7: 5th fret E string (5-7-5-5-5-5)",
+          "Gm7: 3rd fret E string (3-5-3-3-3-3)",
+          "A7: 5th fret E string (5-7-5-6-5-5)"
+        ],
+        "sequence": [
+          "Strum crisp downward accent on beat 1 followed by staccato eighth-note hits on offbeats",
+          "Release fretting-hand pressure immediately after striking each chord to create percussive chucks",
+          "Lock into the 2-3 son clave rhythmic feel with the percussion section",
+          "Transition cleanly between Dm7, Am7, and Gm7 without slowing the groove"
+        ],
+        "tips": [
+          "Keep the right wrist completely relaxed and loose to maintain the fluid Latin swing",
+          "Listen to the timbale cowbell pattern to lock down your offbeat chord stabs",
+          "Avoid heavy open strings; all voicings must be tight, controllable barre chords"
+        ],
+        "chords": [
+          "Dm7",
+          "Am7",
+          "Gm7",
+          "A7"
+        ],
+        "progression": "Latin Rock Cha-Cha"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro Melodic Solo",
+      "name": "Intro Melodic Solo & Singing Sustain",
       "timeStamp": "0:00-0:45",
-      "technique": "Vocal String Bending & Dorian Lead Phrasing",
+      "technique": "Dorian Vocal Bending & Singing Sustain",
       "key": "D Minor",
-      "description": "One of the most recognizable guitar themes in rock history, featuring Carlos Santana's soaring Gibson Les Paul tone",
-      "alphaTab": "\\tempo 126 . \\ts 4 4\n:2 r :8 r 10.2 12.2 13.2 | :4 12.2 :8 10.2 12.2 :2 10.1 | :4 12.1 :8 10.1 12.1 :4 10.1 8.1 | :1 10.2 |",
-      "exerciseLabel": "Intro Theme Lead Phrasing",
+      "description": "One of the most recognizable guitar themes in rock history, featuring Carlos Santana's soaring Gibson Les Paul tone.",
       "chords": [
         "Dm",
         "Am",
@@ -132,23 +180,19 @@
       ],
       "progression": "Dm - Am - Dm",
       "notes": [
-        "D",
-        "E",
-        "F",
-        "G",
-        "A",
-        "B",
-        "C"
-      ]
+        "Select neck humbucker for warm, singing sustain",
+        "Target the natural 6th (B note) at fret 12 of the B string",
+        "Let sustained notes bloom with gentle circular wrist vibrato"
+      ],
+      "alphaTab": ":2 r :8 r 10.2 12.2 13.2 | :4 12.2 :8 10.2 12.2 :2 10.1 | :4 12.1 :8 10.1 12.1 :4 10.1 8.1 | :1 10.2 |",
+      "exerciseLabel": "Intro Theme Lead Phrasing"
     },
     {
-      "name": "Latin Rhythm Strumming & Chords",
+      "name": "Latin Rhythm Strumming & Chords (Verse 1)",
       "timeStamp": "0:46-1:30",
-      "technique": "Syncopated Latin Barre Chords",
+      "technique": "Afro-Cuban Latin Syncopated Rhythm Comping & Cha-Cha Strumming",
       "key": "D Minor",
-      "description": "Smooth, syncopated chord comping on Dm7, Am7, and Gm7 locking with Afro-Cuban percussion",
-      "alphaTab": "\\tempo 126 . \\ts 4 4\n:8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 7.6 9.5 9.4 8.3 7.6 9.5 9.4 8.3 | :8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 3.5 5.4 5.3 5.2 3.5 5.4 5.3 5.2 |",
-      "exerciseLabel": "Latin Rock Verse Chords",
+      "description": "Smooth, syncopated chord comping on Dm7, Am7, and Gm7 locking with Afro-Cuban percussion.",
       "chords": [
         "Dm7",
         "Am7",
@@ -157,13 +201,91 @@
       ],
       "progression": "Dm7 - Am7 - Dm7 - Gm7",
       "notes": [
-        "D",
-        "F",
-        "A",
-        "C",
-        "G",
-        "Bb"
-      ]
+        "Execute staccato chord releases to leave space for congas",
+        "Accent offbeats consistently across the 126 BPM groove",
+        "Smooth position shifts between 5th-fret and 3rd-fret barres"
+      ],
+      "alphaTab": ":8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 7.6 9.5 9.4 8.3 7.6 9.5 9.4 8.3 | :8 5.5 7.4 7.3 6.2 5.5 7.4 7.3 6.2 | :8 3.5 5.4 5.3 5.2 3.5 5.4 5.3 5.2 |",
+      "exerciseLabel": "Latin Rock Verse Chords"
+    },
+    {
+      "name": "Verse 2 Vocal Answers & Dorian Fills",
+      "timeStamp": "1:30-2:15",
+      "technique": "Dorian Vocal Bending & Singing Sustain",
+      "key": "D Minor",
+      "description": "Santana's vocal call-and-response fills weaving around Gregg Rolie's vocal melody.",
+      "chords": [
+        "Dm7",
+        "Am7",
+        "Dm7"
+      ],
+      "progression": "Dm7 - Am7 - Dm7",
+      "notes": [
+        "Fill the dynamic pauses between vocal phrases",
+        "Use expressive half-step and whole-step bends in the 10th position",
+        "Keep the touch light and vocal"
+      ],
+      "alphaTab": ":4 (5.5 7.4 7.3 6.2) :4 12.2 :8 10.2 12.2 :4 10.1 | :2 (7.6 9.5 9.4 8.3) :4 12.1 :4 10.1 | :1 (5.5 7.4 7.3 6.2) |",
+      "exerciseLabel": "Dorian Call-and-Response Fills"
+    },
+    {
+      "name": "Middle Blues Solo (Chorus Turnaround)",
+      "timeStamp": "2:15-3:15",
+      "technique": "Dorian Vocal Bending & Singing Sustain",
+      "key": "D Minor",
+      "description": "Soulful blues solo driving into the A7 turnaround with the raised C# leading tone.",
+      "chords": [
+        "Dm",
+        "Gm",
+        "A7",
+        "Dm"
+      ],
+      "progression": "Dm - Gm - A7 - Dm",
+      "notes": [
+        "Target the C# note at the 14th fret of the B string over A7",
+        "Wide pitch bends that weep into resolution",
+        "Sustain notes with amplifier saturation"
+      ],
+      "alphaTab": ":4 13.2 :8 10.2 13.2 :4 10.1 :8 13.1 10.1 | :8 13.2 10.2 :4 12.3 :2 10.3 | :4 12.1 :8 10.1 12.1 :2 10.1 | :1 (5.5 7.4 7.3 6.2) |",
+      "exerciseLabel": "Middle Solo Turnaround Run"
+    },
+    {
+      "name": "Transition to Gypsy Queen (Tempo Modulation)",
+      "timeStamp": "3:15-3:50",
+      "technique": "Afro-Cuban Latin Syncopated Rhythm Comping & Cha-Cha Strumming",
+      "key": "D Mixolydian",
+      "description": "Dramatic acceleration into high-speed Latin jazz with sharp rhythmic octave stabs.",
+      "chords": [
+        "D7",
+        "G7"
+      ],
+      "progression": "D7 - G7 - D7 - G7",
+      "notes": [
+        "Lock into the accelerating timbale groove",
+        "Crisp staccato double-stops at the 10th fret",
+        "Prepare for rapid alternate-picked solo cascades"
+      ],
+      "alphaTab": ":8 10.1 12.1 10.1 12.1 10.1 12.1 10.1 12.1 | :4 (10.1 10.2) :4 (10.1 10.2) :2 (10.1 10.2) | :8 10.2 12.2 10.2 12.2 :4 (10.1 10.2) :4 (10.1 10.2) | :1 (10.1 10.2) |",
+      "exerciseLabel": "Gypsy Queen Acceleration Riff"
+    },
+    {
+      "name": "Gypsy Queen Latin Jazz Shred Jam & Outro",
+      "timeStamp": "3:50-5:24",
+      "technique": "Dorian Vocal Bending & Singing Sustain",
+      "key": "D Minor / Mixolydian",
+      "description": "High-velocity jazz-rock shredding over the polyrhythmic Latin groove into the final crashing hit.",
+      "chords": [
+        "D7",
+        "G7"
+      ],
+      "progression": "D7 - G7 - D7 - G7",
+      "notes": [
+        "Fast sixteenth-note alternate picking across positions 10 through 13",
+        "Syncopated polyrhythmic accents with the percussion section",
+        "Final unison crescendo hit on the tonic D chord"
+      ],
+      "alphaTab": ":16 10.1 12.1 13.1 12.1 10.1 12.1 13.1 12.1 :8 10.1 13.2 :4 12.2 | :16 10.2 12.2 13.2 12.2 10.2 12.2 13.2 12.2 :8 10.2 12.3 :4 10.3 | :8 10.1 12.1 10.1 12.1 :2 13.1 | :1 10.1 |",
+      "exerciseLabel": "Gypsy Queen Jazz Shred Lead"
     }
   ],
   "equipment": {

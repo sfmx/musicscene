@@ -53,28 +53,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "12-Bar Slow Blues Intro & Solo (Bars 1-4)",
+          "section": "Intro Albert King Box Lead Call",
           "progression": "C7 - F9 - C7 - C7",
           "romanNumerals": "I7 - IV9 - I7 - I7",
           "description": "Opens with SRV's stinging 13th-fret Albert King Box bends over a slow 12/8 quick-change blues foundation"
         },
         {
-          "section": "Subdominant Shift (Bars 5-8)",
+          "section": "Slow Blues 9th-Chord Rhythm Comping",
+          "progression": "C7 - F9 - C7 - G9 - F9 - C7",
+          "romanNumerals": "I7 - IV9 - I7 - V9 - IV9 - I7",
+          "description": "Lush dominant 9th chord comping with half-step approach slides backing the verse"
+        },
+        {
+          "section": "Verse 1 Call-and-Response Vocal Answers",
+          "progression": "C7 - F9 - C7 - C7",
+          "romanNumerals": "I7 - IV9 - I7 - I7",
+          "description": "Vocal delivery interspersed with crying blues fills targeting chord tones"
+        },
+        {
+          "section": "8th-Position C Minor Pentatonic Flurry",
           "progression": "F9 - F9 - C7 - C7",
           "romanNumerals": "IV9 - IV9 - I7 - I7",
-          "description": "Moves to the 4-chord (F9) for two bars where lead lines target the flat-3rd (Eb) before resolving back to C7"
+          "description": "Rapid alternate-picked pentatonic cascade in the 8th position with microtonal blue-note curls"
         },
         {
-          "section": "Turnaround (Bars 9-12)",
+          "section": "Main Solo Chorus (Albert King Bends & Dynamic Swells)",
           "progression": "G9 - F9 - C7 - G7#9",
           "romanNumerals": "V9 - IV9 - I7 - V7#9",
-          "description": "Climactic V-IV-I descent finishing on a biting Hendrix/SRV dominant 7#9 turnaround chord"
+          "description": "Full-volume multi-step bends reaching up to the 15th and 16th fret pitches with wide vibrato"
         },
         {
-          "section": "Scale Practice Exercise",
-          "progression": "I7 - IV9 - V9 - I7",
-          "romanNumerals": "Scale Practice",
-          "description": "C minor pentatonic Box 1 (8th fret) and Albert King Box 2 (13th fret) slow blues phrasing"
+          "section": "Outro Solo & Dominant 7#9 Cadence",
+          "progression": "C7 - F9 - C7 - G7#9 - C7",
+          "romanNumerals": "I7 - IV9 - I7 - V7#9 - I7",
+          "description": "Climactic solo turnaround resolving on the biting Hendrix/SRV dominant 7#9 chord"
         }
       ],
       "harmonicFunction": [
@@ -116,13 +128,44 @@
         ],
         "progression": "C7 - F9 - C7 - C7 | F9 - F9 - C7 - C7 | G9 - F9 - C7 - G7"
       }
+    },
+    {
+      "name": "Texas Slow Blues 9th-Chord Sliding Comping & Thumb Bass",
+      "description": "Smooth dominant 9th chord comping using half-step approach slides and thumb-over bass notes to support slow 12/8 vocal blues",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Slide into F9 from E9 (fret 7 to 8 on the A string)",
+          "Slide into G9 from F#9 (fret 9 to 10 on the A string)",
+          "Hold the 8th fret C root on the low E with fretting-hand thumb while fingers voice the upper triad"
+        ],
+        "sequence": [
+          "Strike the low bass root on beat 1",
+          "Slide into the 9th chord grip on beat 2 with gentle finger rake",
+          "Let chord overtones sustain across the rolling 12/8 triplet subdivisions",
+          "Dampen strings cleanly with pick-hand palm on vocal entry"
+        ],
+        "tips": [
+          "Keep the wrist relaxed when executing the half-step slide",
+          "Blend neck and middle pickups on your Stratocaster for that warm, glassy comping tone",
+          "Leave wide dynamic space so lead fills cut through naturally"
+        ],
+        "chords": [
+          "C7",
+          "F9",
+          "G9",
+          "G7#9"
+        ],
+        "progression": "C7 - F9 - G9 - G7#9"
+      }
     }
   ],
   "sections": [
     {
       "name": "Intro Albert King Box Lead Call",
       "timeStamp": "0:00-0:58",
-      "technique": "Albert King Box Multi-Step String Bending",
+      "technique": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
       "key": "C Major",
       "description": "SRV's iconic opening slow-blues lead statement in the 11th–13th fret Albert King box over C7 and F9.",
       "chords": [
@@ -135,13 +178,13 @@
         "Let every bent note weep with wide, controlled wrist vibrato",
         "Count the slow 12/8 pulse (1-2-3, 4-5-6, 7-8-9, 10-11-12)"
       ],
-      "alphaTab": ":4 13.2 11.1 13.2 11.2 | :4 12.3 10.4 10.4 12.3 | :2 13.2 :2 11.2 | :1 13.2 |",
+      "alphaTab": ":4 13.2 :4 11.1 :4 13.2 :4 11.2 | :4 12.3 :4 10.4 :4 10.4 :4 12.3 | :2 13.2 :2 11.2 | :1 13.2 |",
       "exerciseLabel": "Albert King Box Intro Lick"
     },
     {
       "name": "Slow Blues 9th-Chord Rhythm Comping",
-      "timeStamp": "0:59-2:05",
-      "technique": "Texas Blues 9th-Chord Comping",
+      "timeStamp": "0:59-1:45",
+      "technique": "Texas Slow Blues 9th-Chord Sliding Comping & Thumb Bass",
       "key": "C Major",
       "description": "Warm, spacious 12/8 rhythm guitar comping using C7, F9, and G9 voicings.",
       "chords": [
@@ -159,9 +202,28 @@
       "exerciseLabel": "12/8 Ninth-Chord Comping"
     },
     {
+      "name": "Verse 1 Call-and-Response Vocal Answers",
+      "timeStamp": "1:45-2:25",
+      "technique": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
+      "key": "C Major",
+      "description": "Intimate vocal delivery accompanied by tasteful blues answers between each sung line.",
+      "chords": [
+        "C7",
+        "F9"
+      ],
+      "progression": "C7 - F9 - C7 - C7",
+      "notes": [
+        "Keep volume knob around 6 for warm, woody vocal accompaniment",
+        "Answer each phrase with stinging microtonal curls",
+        "Maintain relaxed behind-the-beat phrasing"
+      ],
+      "alphaTab": ":4 (8.6 10.5 8.4 9.3) :4 11.2 :8 8.2 10.3 :4 8.3 | :2 (8.5 7.4 8.3 8.2) :4 13.2 :4 11.1 | :1 (8.6 10.5 8.4 9.3) |",
+      "exerciseLabel": "Vocal Answer Blues Licks"
+    },
+    {
       "name": "8th-Position C Minor Pentatonic Flurry",
-      "timeStamp": "2:06-3:15",
-      "technique": "Box 1 Pentatonic Cascade",
+      "timeStamp": "2:25-3:15",
+      "technique": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
       "key": "C Minor",
       "description": "Classic SRV Box 1 C minor pentatonic run at the 8th fret finishing with a slightly bent minor third.",
       "chords": [
@@ -175,8 +237,50 @@
         "Curl the 11th-fret B string (Eb) up slightly toward the major third (E)",
         "Resolve decisively to the root C on the 10th fret of the D string"
       ],
-      "alphaTab": ":8 8.1 11.2 8.2 10.3 8.3 10.4 8.4 10.3 | :8 8.3 11.2 8.2 10.3 8.3 10.4 8.4 10.5 | :1 10.4 |",
+      "alphaTab": ":8 8.1 11.2 8.2 10.3 8.3 10.4 8.4 10.3 | :8 8.3 11.2 8.2 10.3 8.3 10.4 8.4 10.5 | :2 10.4 :2 8.4 | :1 10.4 |",
       "exerciseLabel": "SRV 8th-Fret Pentatonic Cascade"
+    },
+    {
+      "name": "Main Solo Chorus (Albert King Bends & Dynamic Swells)",
+      "timeStamp": "3:15-3:55",
+      "technique": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
+      "key": "C Major",
+      "description": "Full-volume multi-step bends reaching up to the 15th and 16th fret pitches with wide singing vibrato.",
+      "chords": [
+        "G9",
+        "F9",
+        "C7",
+        "G7#9"
+      ],
+      "progression": "G9 - F9 - C7 - G7#9",
+      "notes": [
+        "Crank Stratocaster volume to 10 for screaming sustain",
+        "Support 1.5-step bends with three fingers on the B string",
+        "Wide circular vibrato at peak bend pitch"
+      ],
+      "alphaTab": ":4 13.2 :8 11.2 13.2 :4 11.1 :8 13.1 11.1 | :8 13.2 11.2 :4 12.3 :2 13.2 | :4 13.2 :8 11.2 13.2 :2 11.1 | :1 13.2 |",
+      "exerciseLabel": "Albert King Box Solo Chorus"
+    },
+    {
+      "name": "Outro Solo & Dominant 7#9 Cadence",
+      "timeStamp": "3:55-4:36",
+      "technique": "Albert King Box Multi-Step String Bending & 12/8 Slow Blues Phrasing",
+      "key": "C Major",
+      "description": "Climactic solo turnaround resolving on the biting Hendrix/SRV dominant 7#9 chord before the final fade.",
+      "chords": [
+        "C7",
+        "F9",
+        "C7",
+        "G7#9"
+      ],
+      "progression": "C7 - F9 - C7 - G7#9 - C7",
+      "notes": [
+        "Rapid downward pentatonic cascades across strings 1 to 3",
+        "Slam the G7#9 chord on beat 10 of the turnaround bar",
+        "Final raked C7 chord decaying into spring reverb"
+      ],
+      "alphaTab": ":8 13.2 11.2 13.2 11.2 :4 12.3 :4 10.3 | :8 11.1 13.1 11.1 13.1 :2 13.1 | :2 (8.5 7.4 8.3 8.2) :2 (10.5 9.4 10.3 11.2) | :1 (8.6 10.5 8.4 9.3) |",
+      "exerciseLabel": "Outro Solo & Dominant Cadence"
     }
   ],
   "equipment": {
@@ -197,11 +301,11 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "5 (cranked clean tube amp on the verge of thick power-tube breakup)",
-        "treble": "7 (bell-like Stratocaster snap)",
-        "middle": "7 (fat Texas midrange bark)",
-        "bass": "6 (deep, punchy low end)",
-        "presence": "6 (immediate touch sensitivity)"
+        "gain": "5",
+        "treble": "7",
+        "middle": "7",
+        "bass": "6",
+        "presence": "6"
       }
     },
     "effects": {

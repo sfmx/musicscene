@@ -50,28 +50,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Main Unison Riff (Verse Vamp)",
+          "section": "Iconic Unison Blues Riff (Verse Vamp)",
           "progression": "C#7 (Unison Riff)",
           "romanNumerals": "I7",
           "description": "Iconic single-note minor pentatonic riff walking from G# up through B to C# with a B-to-G# pull-off"
         },
         {
-          "section": "Chorus Turnaround ('If it wasn't for bad luck...')",
+          "section": "Verse 1 Vocal Narrative & Bassline Lock",
+          "progression": "C#7 (Unison Riff)",
+          "romanNumerals": "I7",
+          "description": "Tight call-and-response backing Albert King's weary vocals in deep Stax soul pocket"
+        },
+        {
+          "section": "Chorus Turnaround ('If It Wasn't for Bad Luck')",
           "progression": "G#7 - F#7 - C#7",
           "romanNumerals": "V7 - IV7 - I7",
           "description": "Sustained dominant seventh chords on the V and IV degrees answered by stinging Albert King bends"
         },
         {
-          "section": "Lead Guitar Solo / Fills",
+          "section": "Albert King 9th-Position Call-and-Response",
           "progression": "C#7 - G#7 - F#7 - C#7",
           "romanNumerals": "I7 - V7 - IV7 - I7",
-          "description": "Call-and-response blues soloing in 9th position (C# minor pentatonic Box 1) and 11th position"
+          "description": "Signature Albert King stinging lead phrase in the 9th-fret C# minor pentatonic box"
         },
         {
-          "section": "Scale Practice Exercise",
-          "progression": "I7 - V7 - IV7 - I7",
-          "romanNumerals": "Scale Practice",
-          "description": "C# minor pentatonic Box 1 (9th fret) and lower-register riff phrasing"
+          "section": "Main Blues Solo (Upper-Box Flying V Bends)",
+          "progression": "C#7 - G#7 - F#7 - C#7",
+          "romanNumerals": "I7 - V7 - IV7 - I7",
+          "description": "High-register multi-step bends executed with bare-thumb attack on Lucy (Gibson Flying V)"
+        },
+        {
+          "section": "Outro Horn Stabs & Fading Blues Licks",
+          "progression": "C#7 - G#7 - F#7 - C#7",
+          "romanNumerals": "I7 - V7 - IV7 - I7",
+          "description": "Climactic vamp trading between the iconic unison riff, Stax horn lines, and Albert's fading fills"
         }
       ],
       "harmonicFunction": [
@@ -112,13 +124,43 @@
         ],
         "progression": "C#7 | G#7 - F#7 - C#7"
       }
+    },
+    {
+      "name": "Stax Horn-Style Dominant 7th Stabs & Microtonal Blue-Note Curls",
+      "description": "Percussive dominant 7th chord stabs punctuated by subtle quarter-tone upward string bends on blue notes",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "G#7 (4th fret barre): 4-6-4-5-4-4",
+          "F#7 (2nd fret barre): 2-4-2-3-2-2",
+          "Microtonal curl: 2nd fret D string (E) curled up ~25-50 cents toward E#"
+        ],
+        "sequence": [
+          "Fret dominant 7th shapes cleanly across all six strings",
+          "Strike with sharp downward pick attack on beat 1",
+          "Choke the chord sustain with pick-hand palm on the offbeat to create horn-like stabs",
+          "Resolve smoothly back into the low register unison riff"
+        ],
+        "tips": [
+          "Use a firm pick grip near the bridge saddles for immediate Stax-style punch",
+          "Do not bend the blue note a full half-step; keep it in the expressive microtonal crack between minor and major",
+          "Let Steve Cropper and Donald 'Duck' Dunn's groove guide your rhythmic breathing"
+        ],
+        "chords": [
+          "C#7",
+          "G#7",
+          "F#7"
+        ],
+        "progression": "G#7 - F#7 - C#7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Iconic Unison Blues Riff",
+      "name": "Iconic Unison Blues Riff (Verse Vamp)",
       "timeStamp": "0:00-0:38",
-      "technique": "Syncopated Minor Pentatonic Riffing",
+      "technique": "Syncopated Minor Pentatonic Riffing & Call-and-Response Bending",
       "key": "C# Minor",
       "description": "Booker T. Jones and Steve Cropper's immortal Stax unison riff played with Donald 'Duck' Dunn and Albert King.",
       "chords": [
@@ -130,13 +172,31 @@
         "Apply a subtle quarter-step curl on the 2.4 (E) note",
         "Keep the eighth and sixteenth notes tight and funky"
       ],
-      "alphaTab": ":8 4.6 2.5 :4 4.5 :8 4.6 2.4 4.4 2.4 | :4 4.5 :8 4.5 2.5 4.6 2.5 :4 4.5 |",
+      "alphaTab": ":8 4.6 2.5 :4 4.5 :8 4.6 2.4 4.4 2.4 | :4 4.5 :8 4.5 2.5 4.6 2.5 :4 4.5 | :8 4.6 2.5 :4 4.5 :8 4.6 2.4 4.4 2.4 | :1 4.5 |",
       "exerciseLabel": "Main Unison Riff"
     },
     {
+      "name": "Verse 1 Vocal Narrative & Bassline Lock",
+      "timeStamp": "0:38-0:58",
+      "technique": "Syncopated Minor Pentatonic Riffing & Call-and-Response Bending",
+      "key": "C# Minor",
+      "description": "Rhythm section locking together under Albert King's weary vocals.",
+      "chords": [
+        "C#7"
+      ],
+      "progression": "C#7",
+      "notes": [
+        "Maintain absolute dynamic lock with the bass and drums",
+        "Keep the rest stops dead silent between phrases",
+        "Let the 4th fret A string ring with heavy acoustic authority"
+      ],
+      "alphaTab": ":8 4.6 2.5 :4 4.5 :8 4.6 2.4 4.4 2.4 | :4 4.5 :8 4.5 2.5 4.6 2.5 :4 4.5 | :1 4.5 |",
+      "exerciseLabel": "Verse Groove Interlock"
+    },
+    {
       "name": "Chorus Turnaround ('If It Wasn't for Bad Luck')",
-      "timeStamp": "0:39-0:58",
-      "technique": "Dominant 7th Barre Chords & Stop-Time",
+      "timeStamp": "0:58-1:18",
+      "technique": "Stax Horn-Style Dominant 7th Stabs & Microtonal Blue-Note Curls",
       "key": "C# Minor",
       "description": "The V7 to IV7 turnaround (G#7 to F#7) resolving back into the C#7 unison riff.",
       "chords": [
@@ -155,8 +215,8 @@
     },
     {
       "name": "Albert King 9th-Position Call-and-Response",
-      "timeStamp": "0:59-1:45",
-      "technique": "9th-Position C# Minor Pentatonic Bending",
+      "timeStamp": "1:18-1:45",
+      "technique": "Syncopated Minor Pentatonic Riffing & Call-and-Response Bending",
       "key": "C# Minor",
       "description": "Signature Albert King stinging lead phrase in the 9th-fret C# minor pentatonic box.",
       "chords": [
@@ -170,8 +230,50 @@
         "Let the high C# root (9th fret high E string) ring crisp and bright",
         "Finish on the 11th-fret D string root C# with wide vibrato"
       ],
-      "alphaTab": ":8 9.1 12.2 9.2 11.3 9.3 11.4 9.3 11.3 | :4 12.2 9.2 11.3 9.3 | :1 11.4 |",
+      "alphaTab": ":8 9.1 12.2 9.2 11.3 9.3 11.4 9.3 11.3 | :4 12.2 :4 9.2 :4 11.3 :4 9.3 | :1 11.4 |",
       "exerciseLabel": "9th-Fret Blues Lead Response"
+    },
+    {
+      "name": "Main Blues Solo (Upper-Box Flying V Bends)",
+      "timeStamp": "1:45-2:15",
+      "technique": "Syncopated Minor Pentatonic Riffing & Call-and-Response Bending",
+      "key": "C# Minor",
+      "description": "Albert King's full solo chorus showcasing screaming bends pulled down with the bare thumb on his left-handed Flying V.",
+      "chords": [
+        "C#7",
+        "G#7",
+        "F#7",
+        "C#7"
+      ],
+      "progression": "C#7 - G#7 - F#7 - C#7",
+      "notes": [
+        "Attack the strings with bare thumb or firm pick for stinging percussive bite",
+        "Full-step and 1.5-step bends on the 12th fret of the high E string",
+        "Wide vocal vibrato that sustain over chord transitions"
+      ],
+      "alphaTab": ":4 12.1 :8 9.1 12.1 :4 9.1 :8 12.2 9.2 | :8 11.3 9.3 :4 11.3 :2 9.3 | :4 12.1 :8 9.1 12.1 :2 9.1 | :1 11.4 |",
+      "exerciseLabel": "Main Solo Upper-Box Bends"
+    },
+    {
+      "name": "Outro Horn Stabs & Fading Blues Licks",
+      "timeStamp": "2:15-2:47",
+      "technique": "Stax Horn-Style Dominant 7th Stabs & Microtonal Blue-Note Curls",
+      "key": "C# Minor",
+      "description": "The interlocking finale trading the unison riff against horn section stabs and Albert's parting blues licks.",
+      "chords": [
+        "C#7",
+        "G#7",
+        "F#7",
+        "C#7"
+      ],
+      "progression": "C#7 - G#7 - F#7 - C#7",
+      "notes": [
+        "Snap into the low register unison riff with maximum swing",
+        "Punctuate vocal lines with stinging high-register curls",
+        "Fade into silence with sustained C# root chord"
+      ],
+      "alphaTab": ":8 4.6 2.5 :4 4.5 :8 4.6 2.4 4.4 2.4 | :4 12.2 :8 9.2 11.3 :2 9.1 | :8 4.6 2.5 :4 4.5 :2 4.5 | :1 4.5 |",
+      "exerciseLabel": "Outro Riff & Lead Fade"
     }
   ],
   "equipment": {
@@ -192,11 +294,11 @@
         "Roland JC-40"
       ],
       "settings": {
-        "gain": "4 (loud, punchy clean-to-gritty edge)",
-        "treble": "7 (sharp, stinging pick/thumb attack)",
-        "middle": "5 (slightly scooped, vocal midrange)",
-        "bass": "6 (fat low-string riff authority)",
-        "presence": "6 (cutting top end)"
+        "gain": "4",
+        "treble": "7",
+        "middle": "5",
+        "bass": "6",
+        "presence": "6"
       }
     },
     "effects": {

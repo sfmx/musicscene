@@ -50,22 +50,40 @@
       },
       "sectionProgressions": [
         {
-          "section": "Main Shuffle Riff",
+          "section": "Leslie Shuffle Riff (Verse Vamp)",
           "progression": "Am7 - Dm7 - Am7 - F9 - E7#9 - Am7",
-          "romanNumerals": "i7 - iv7 - i7 - ♭VI9 - V7#9 - i7",
+          "romanNumerals": "i7 - iv7 - i7 - bVI9 - V7#9 - i7",
           "description": "12-bar minor shuffle with muted rakes and rotating Leslie chord stabs"
         },
         {
-          "section": "Turnaround",
+          "section": "Turnaround Chords (F9 to E7#9)",
           "progression": "F9 - E7#9 - Am7",
-          "romanNumerals": "♭VI9 - V7#9 - i7",
+          "romanNumerals": "bVI9 - V7#9 - i7",
           "description": "Aggressive chromatic chord slide from F9 to E7#9 resolving home to Am7"
         },
         {
-          "section": "Guitar Solos",
-          "progression": "12-Bar Minor Blues in A",
-          "romanNumerals": "i7 - iv7 - i7 - ♭VI9 - V7#9 - i7",
-          "description": "Two blistering solo choruses featuring Albert King upside-down bends and ferocious vibrato"
+          "section": "Verse 1 Vocal Shuffle & Muted Rakes",
+          "progression": "Am7 - Dm7 - Am7 - F9 - E7#9",
+          "romanNumerals": "i7 - iv7 - i7 - bVI9 - V7#9",
+          "description": "Greasy rhythm comping backing SRV's vocals with percussive muted downstrokes"
+        },
+        {
+          "section": "Main Blues Solo (Chorus 1 - Albert King Bends)",
+          "progression": "Am7 - Dm7 - Am7 - F9 - E7#9 - Am7",
+          "romanNumerals": "i7 - iv7 - i7 - bVI9 - V7#9 - i7",
+          "description": "Stevie's first solo chorus featuring Albert King upside-down bends and singing finger vibrato"
+        },
+        {
+          "section": "Main Blues Solo (Chorus 2 - Rotary Swirl & Double Stops)",
+          "progression": "Am7 - Dm7 - Am7 - F9 - E7#9 - Am7",
+          "romanNumerals": "i7 - iv7 - i7 - bVI9 - V7#9 - i7",
+          "description": "High-energy second solo chorus with rotary Leslie speaker swirl and stinging 5th-position double stops"
+        },
+        {
+          "section": "Outro Shuffle Groove & Decrescendo",
+          "progression": "Am7 - Dm7 - F9 - E7#9 - Am7",
+          "romanNumerals": "i7 - iv7 - bVI9 - V7#9 - i7",
+          "description": "Hypnotic repetition of the main Leslie shuffle riff decaying into the room fade"
         }
       ],
       "harmonicFunction": [
@@ -107,13 +125,43 @@
         ],
         "progression": "Am7 - Dm7 - F9 - E7#9"
       }
+    },
+    {
+      "name": "Albert King Upside-Down Bending & Minor Blues Turnaround Shifts",
+      "description": "Albert King-inspired string bending targeting minor and major 3rd blue notes combined with altered dominant chord substitutions",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Bend 8th fret on high E (C) full step to D with 3-finger reinforcement",
+          "Target note F# (natural 6th in Dorian): 7th fret B string or 4th fret D string",
+          "Slide from F9 (X-8-7-8-8-X) to E7#9 (X-7-6-7-8-X) on beats 1 and 2 of bar 9"
+        ],
+        "sequence": [
+          "Fret high E at fret 8 and push upward toward the ceiling with index, middle, and ring fingers",
+          "Apply wide, circular wrist vibrato at the crest of the bend",
+          "Release cleanly down to fret 5 without unwanted open-string noise",
+          "Hit the altered E7#9 chord hard with a downward pick sweep"
+        ],
+        "tips": [
+          "Keep the underside of your fretting hand fingers muting the adjacent G and B strings",
+          "Use a stiff, heavy pick for zero deflection during aggressive downstroke rakes",
+          "Blend the neck and middle pickups on your Stratocaster to capture SRV's woody woman tone"
+        ],
+        "chords": [
+          "Am7",
+          "Dm7",
+          "E7#9"
+        ],
+        "progression": "12-Bar Minor Blues"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Leslie Shuffle Riff",
+      "name": "Leslie Shuffle Riff (Verse Vamp)",
       "timeStamp": "0:00-0:30",
-      "technique": "Shuffle Raking & Chord Stabs",
+      "technique": "Texas Shuffle Muted String Rakes & Vibratone Rotary Swirl",
       "key": "A Minor",
       "description": "Stevie's hypnotic opening rhythm combining low bass shuffle notes with swirling chorused chord stabs.",
       "chords": [
@@ -126,13 +174,13 @@
         "Lock in with the triplet shuffle feel",
         "Rake across muted strings before hitting the chord"
       ],
-      "alphaTab": ":8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :8 0.5 5.5 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) |",
+      "alphaTab": ":8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :8 0.5 5.5 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :1 (7.4 5.3 5.2) |",
       "exerciseLabel": "Main Shuffle Groove"
     },
     {
-      "name": "Turnaround Chords",
+      "name": "Turnaround Chords (F9 to E7#9)",
       "timeStamp": "0:50-1:05",
-      "technique": "Altered Chord Slides",
+      "technique": "Albert King Upside-Down Bending & Minor Blues Turnaround Shifts",
       "key": "A Minor",
       "description": "The dramatic 9th-chord turnaround sliding from F9 into the biting E7#9.",
       "chords": [
@@ -146,13 +194,34 @@
         "Accentuate the high G note on the E7#9 shape",
         "Resolve cleanly back into the low A root"
       ],
-      "alphaTab": ":4 (8.5 7.4 8.3 8.2) :4 (7.5 6.4 7.3 8.2) :2 (7.4 5.3 5.2) | :4 0.6 :4 3.6 :2 5.6 |",
+      "alphaTab": ":4 (8.5 7.4 8.3 8.2) :4 (7.5 6.4 7.3 8.2) :2 (7.4 5.3 5.2) | :4 0.6 :4 3.6 :2 5.6 | :1 (7.4 5.3 5.2) |",
       "exerciseLabel": "9th-Chord Turnaround"
     },
     {
-      "name": "Blues Solo Lick",
+      "name": "Verse 1 Vocal Shuffle & Muted Rakes",
+      "timeStamp": "1:05-1:45",
+      "technique": "Texas Shuffle Muted String Rakes & Vibratone Rotary Swirl",
+      "key": "A Minor",
+      "description": "Subtle dynamic comping backing the vocals with percussive string damping.",
+      "chords": [
+        "Am7",
+        "Dm7",
+        "F9",
+        "E7#9"
+      ],
+      "progression": "Am7 - Dm7 - Am7 - F9 - E7#9",
+      "notes": [
+        "Keep the rhythm loose and conversational",
+        "Mute strings sharply with the fretting hand on offbeats",
+        "Prepare for the upcoming solo explosion"
+      ],
+      "alphaTab": ":8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :8 0.5 5.5 :4 (5.5 7.4 7.3) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :2 (8.5 7.4 8.3 8.2) :2 (7.5 6.4 7.3 8.2) | :1 (7.4 5.3 5.2) |",
+      "exerciseLabel": "Verse Vocal Shuffle Comping"
+    },
+    {
+      "name": "Main Blues Solo (Chorus 1 - Albert King Bends)",
       "timeStamp": "1:45-2:25",
-      "technique": "Texas Blues Bends & Vibrato",
+      "technique": "Albert King Upside-Down Bending & Minor Blues Turnaround Shifts",
       "key": "A Blues",
       "description": "Stevie's signature slow-blues lead phrasing featuring aggressive string bends and wide vibrato.",
       "chords": [
@@ -166,8 +235,50 @@
         "Apply wide, rhythmic wrist vibrato",
         "Dig into the pick attack for natural tube breakup"
       ],
-      "alphaTab": ":8 8.1 5.1 8.2 5.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :1 5.5 |",
+      "alphaTab": ":8 8.1 5.1 8.2 5.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :8 8.1 5.1 8.1 5.1 :4 7.3 :4 5.3 | :1 5.5 |",
       "exerciseLabel": "Blues Solo Phrasing"
+    },
+    {
+      "name": "Main Blues Solo (Chorus 2 - Rotary Swirl & Double Stops)",
+      "timeStamp": "2:25-3:10",
+      "technique": "Albert King Upside-Down Bending & Minor Blues Turnaround Shifts",
+      "key": "A Blues",
+      "description": "High-energy second solo chorus with rotary Leslie speaker swirl and stinging 5th-position double stops.",
+      "chords": [
+        "Am7",
+        "Dm7",
+        "F9",
+        "E7#9"
+      ],
+      "progression": "Am7 - Dm7 - Am7 - F9 - E7#9 - Am7",
+      "notes": [
+        "Engage Tube Screamer to boost the rotating speaker sound",
+        "Strike 5th-fret double stops across strings 1 and 2 with an aggressive downward rake",
+        "Curl the minor third slightly sharp before resolving to root A"
+      ],
+      "alphaTab": ":8 (5.1 5.2) (8.1 8.2) (5.1 5.2) (8.1 8.2) :4 (7.3 7.2) :4 (5.3 5.2) | :8 7.3 5.3 7.3 5.3 :2 7.4 | :8 8.2 5.2 8.2 5.2 :4 7.3 :4 5.3 | :1 5.5 |",
+      "exerciseLabel": "Rotary Swirl Double-Stops"
+    },
+    {
+      "name": "Outro Shuffle Groove & Decrescendo",
+      "timeStamp": "3:10-4:01",
+      "technique": "Texas Shuffle Muted String Rakes & Vibratone Rotary Swirl",
+      "key": "A Minor",
+      "description": "Hypnotic repetition of the main Leslie shuffle riff decaying into the room fade.",
+      "chords": [
+        "Am7",
+        "Dm7",
+        "F9",
+        "E7#9"
+      ],
+      "progression": "Am7 - Dm7 - F9 - E7#9 - Am7",
+      "notes": [
+        "Return to the steady, unhurried bass-and-rake engine",
+        "Gradual volume decay as the rhythm section locks into the final groove",
+        "Final raked Am7 chord sustaining with Leslie swirl"
+      ],
+      "alphaTab": ":8 0.6 5.6 :4 (7.4 5.3 5.2) :8 0.6 5.6 :4 (7.4 5.3 5.2) | :4 (8.5 7.4 8.3 8.2) :4 (7.5 6.4 7.3 8.2) :2 (7.4 5.3 5.2) | :1 (7.4 5.3 5.2) |",
+      "exerciseLabel": "Outro Shuffle Groove"
     }
   ],
   "equipment": {
@@ -188,7 +299,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "7 (cranked tube saturation)",
+        "gain": "7",
         "treble": "7",
         "middle": "7",
         "bass": "6",
