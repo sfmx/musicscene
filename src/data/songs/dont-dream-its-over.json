@@ -86,7 +86,7 @@
   "techniques": [
     {
       "name": "Embellished Barre Chords & Jangle-Pop Voice Leading",
-      "description": "Neil Finn's hallmark technique of holding barre chord shapes around the 3rd to 6th frets while lifting and adding fingers to create shimmering sus2, sus4, and 7th extensions",
+      "description": "Neil Finn's hallmark technique of holding barre chord shapes around the 3rd to 6th frets while lifting and adding fingers to create shimmering sus2, sus4, and 7th extensions.",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
@@ -117,15 +117,67 @@
         ],
         "progression": "Eb - Cm - Ab - G7"
       }
+    },
+    {
+      "name": "Melodic Chord-Tone Phrasing & Chromatic Secondary Resolutions",
+      "description": "Weaving singing single-note phrases around Mitchell Froom's Hammond organ solo, targeting the B-natural leading tone of G7 (V/vi) and connecting chord tones across the 3rd to 8th fret positions.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Eb major triad tones (Eb, G, Bb) at frets 6 and 8",
+          "Targeting the chromatic B-natural (3rd string, 4th fret) over G7 to pull into Cm",
+          "Smooth finger vibrato and subtle pickup dynamics",
+          "Compressed clean tone with lush stereo chorus"
+        ],
+        "sequence": [
+          "Outline the Eb major triad on strings 1, 2, and 3",
+          "Shift to 8th position for the Cm chord tone response",
+          "Drop down to string 2 fret 6 over Ab",
+          "Land definitively on the B-natural on the 3rd string over the G7 secondary dominant"
+        ],
+        "tips": [
+          "Producer Mitchell Froom recorded his iconic Hammond solo alongside Neil's delicate guitar fills",
+          "Keep the touch feather-light with a thin-to-medium pick (0.60–0.73mm)",
+          "Use a subtle analog chorus like a Boss CE-2 to create the floating, liquid texture"
+        ],
+        "chords": [
+          "Eb",
+          "Cm",
+          "Ab",
+          "G7"
+        ],
+        "progression": "Eb - Cm - Ab - G7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Progression",
-      "timeStamp": "0:00-0:55",
-      "technique": "Embellished Barre Chords",
+      "name": "Intro Shimmer & Sus2 Hook",
+      "timeStamp": "0:00-0:18",
+      "technique": "Suspended Chord Voicing & Lazy Swing",
       "key": "Eb Major",
-      "description": "Neil Finn's unmistakable opening guitar figure drifting through Eb, Cm, Ab, and G7.",
+      "description": "Neil Finn's iconic opening motif toggling between Ebsus2 and Eb before setting the 82 BPM swung pop groove.",
+      "chords": [
+        "Eb",
+        "Cm",
+        "Ab"
+      ],
+      "progression": "Eb - Cm - Ab",
+      "notes": [
+        "Toggle pinky finger on the 2nd string between 6th (sus2) and 8th (major 3rd) frets",
+        "Keep right wrist loose with gentle 16th-note swing",
+        "Let the open, chimey high notes sustain"
+      ],
+      "alphaTab": ":4 (6.5 8.4 8.3 6.2 6.1) :4 (6.5 8.4 8.3 8.2 6.1) :2 (6.5 8.4 8.3 8.2 6.1) | :2 (3.5 5.4 5.3 4.2 3.1) :2 (4.6 6.5 6.4 5.3 4.2 4.1) |",
+      "exerciseLabel": "Intro Shimmer & Sus2 Hook"
+    },
+    {
+      "name": "Verse 1 Introspective Sway",
+      "timeStamp": "0:18-0:55",
+      "technique": "Embellished Barre Chords & Secondary Dominant",
+      "key": "Eb Major",
+      "description": "Neil Finn's introspective narrative ('There is freedom within, there is freedom without...') cycling through Eb, Cm, Ab, and G7.",
       "chords": [
         "Eb",
         "Cm",
@@ -136,17 +188,38 @@
       "notes": [
         "Toggle between Ebsus2 (X-6-8-8-6-6) and Eb (X-6-8-8-8-6) on the opening chord",
         "Slide smoothly from Ab at the 4th fret to G7 at the 3rd fret",
-        "Let the B natural on G7 (3rd string 4th fret) sing clearly"
+        "Let the B natural on G7 (3rd string 4th fret) sing clearly as the secondary dominant"
       ],
       "alphaTab": ":2 (6.5 8.4 8.3 6.2 6.1) (6.5 8.4 8.3 8.2 6.1) | :1 (3.5 5.4 5.3 4.2 3.1) | :1 (4.6 6.5 6.4 5.3 4.2 4.1) | :1 (3.6 5.5 3.4 4.3 3.2 3.1) |",
       "exerciseLabel": "Verse Barre & Sus2 Flow"
     },
     {
-      "name": "Chorus ('Hey Now, Hey Now')",
-      "timeStamp": "0:55-1:25",
+      "name": "Pre-Chorus Tension & Build",
+      "timeStamp": "0:55-1:06",
+      "technique": "Rhythmic Push & Voice Leading",
+      "key": "Eb Major",
+      "description": "The harmonic lift building anticipation into the chorus hook, shifting energy from the melancholy verse into the soaring subdominant.",
+      "chords": [
+        "Ab",
+        "Bb",
+        "Cm",
+        "G7"
+      ],
+      "progression": "Ab - Bb - Cm - G7",
+      "notes": [
+        "Ascend cleanly from the 4th fret Ab to the 6th fret Bb",
+        "Hit the syncopated push into the Cm chord",
+        "Hold the final G7 chord before the chorus explosion"
+      ],
+      "alphaTab": ":2 (4.6 6.5 6.4 5.3 4.2 4.1) :2 (6.6 8.5 8.4 7.3 6.2 6.1) | :2 (3.5 5.4 5.3 4.2 3.1) :2 (3.6 5.5 3.4 4.3 3.2 3.1) |",
+      "exerciseLabel": "Pre-Chorus Build"
+    },
+    {
+      "name": "Chorus Stadium Anthem ('Hey Now, Hey Now')",
+      "timeStamp": "1:06-1:36",
       "technique": "Secondary Dominant Voice Leading",
       "key": "Eb Major",
-      "description": "The anthemic chorus starting on Ab and Bb before G7 redirects the resolution into C minor.",
+      "description": "The anthemic chorus starting on Ab and Bb before G7 redirects the resolution poignantly into C minor on 'they come, they come'.",
       "chords": [
         "Ab",
         "Bb",
@@ -158,31 +231,52 @@
       "notes": [
         "Climb from Ab (4th fret) to Bb (6th fret) to launch the chorus",
         "Use the second half's G7 chord to create a poignant pull into Cm",
-        "Maintain warm, legato chord transitions"
+        "Maintain warm, legato chord transitions with open top-string chime"
       ],
       "alphaTab": ":2 (4.6 6.5 6.4 5.3 4.2 4.1) (6.6 8.5 8.4 7.3 6.2 6.1) | :2 (6.5 8.4 8.3 8.2 6.1) (3.5 5.4 5.3 4.2 3.1) | :2 (4.6 6.5 6.4 5.3 4.2 4.1) (6.6 8.5 8.4 7.3 6.2 6.1) | :2 (3.6 5.5 3.4 4.3 3.2 3.1) (3.5 5.4 5.3 4.2 3.1) |",
       "exerciseLabel": "Chorus Secondary Dominant Turn"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:00-0:30",
-      "technique": "Eb Major & Chromatic G7 Resolution",
+      "name": "Melodic Guitar & Organ Interlude Solo",
+      "timeStamp": "2:05-2:35",
+      "technique": "Melodic Chord-Tone Soloing & B-Natural Targeting",
       "key": "Eb Major",
-      "description": "Melodic phrase in Eb major highlighting the chromatic B-natural to C resolution over G7 to Cm.",
+      "description": "The unforgettable instrumental interlude pairing Mitchell Froom's swirling Hammond organ with Neil Finn's lyrical, chord-conscious guitar lead.",
       "chords": [
         "Eb",
         "Cm",
         "Ab",
         "G7"
       ],
-      "progression": "I - vi - IV - III7",
+      "progression": "Eb - Cm - Ab - G7",
       "notes": [
-        "Play in 3rd to 6th position",
-        "Listen for the 3rd-string 4th fret (B natural) resolving up a half step to 5th fret (C)",
-        "Add gentle vibrato on sustained notes"
+        "Play with a warm, singing tone and compressed clean sustain",
+        "Accentuate the high G (8th fret 1st string) over the Eb tonic",
+        "Target the B natural (3rd string, 4th fret) to outline the G7 turnaround perfectly"
       ],
-      "alphaTab": ":8 6.5 5.4 6.4 8.4 3.3 5.3 4.3 5.3 | :2 6.5 3.5 |",
-      "exerciseLabel": "Eb Major & V/vi Resolution"
+      "alphaTab": ":8 6.2 8.2 :4 8.1 :8 6.1 8.2 :4 8.3 | :8 8.4 10.4 :4 8.3 :8 10.3 8.2 :4 8.2 | :8 6.2 8.2 :4 9.2 :8 8.2 6.2 :4 5.3 | :8 4.3 5.3 :4 4.3 :2 3.3 |",
+      "exerciseLabel": "Melodic Guitar & Organ Solo"
+    },
+    {
+      "name": "Outro Chorus & Delicate Fade",
+      "timeStamp": "3:15-3:58",
+      "technique": "Arpeggiated Fills & Dynamic Fade",
+      "key": "Eb Major",
+      "description": "The delicate outro where the chorus cycles hypnotically while subtle arpeggiated guitar embellishments drift across the stereo panorama.",
+      "chords": [
+        "Ab",
+        "Bb",
+        "G7",
+        "Cm"
+      ],
+      "progression": "Ab - Bb - G7 - Cm",
+      "notes": [
+        "Light arpeggio picking across the high triad strings",
+        "Dynamic decrescendo towards the final studio fade",
+        "Slight vibrato on high note sustains"
+      ],
+      "alphaTab": ":8 6.5 8.4 8.3 8.2 :8 6.5 8.4 8.3 8.2 | :8 4.6 6.5 6.4 5.3 :4 (3.6 5.5 3.4 4.3 3.2 3.1) :4 (3.5 5.4 5.3 4.2 3.1) |",
+      "exerciseLabel": "Outro Chorus & Delicate Fade"
     }
   ],
   "equipment": {
@@ -202,11 +296,11 @@
         "Boss Katana Clean Channel"
       ],
       "settings": {
-        "gain": "3 (pristine studio clean with slight compression)",
-        "treble": "7 (shimmering top-end chime)",
-        "middle": "5 (balanced warmth)",
-        "bass": "5 (rounded low end)",
-        "presence": "6 (airy stereo spread)"
+        "gain": "3",
+        "treble": "7",
+        "middle": "5",
+        "bass": "5",
+        "presence": "6"
       }
     },
     "effects": {

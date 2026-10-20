@@ -86,7 +86,7 @@
   "techniques": [
     {
       "name": "Reggae-Pop Offbeat Skank & Relative Major Chorus Lift",
-      "description": "Tight, staccato offbeat barre-chord chops in the verse paired with open, ringing power/open chords in the chorus",
+      "description": "Tight, staccato offbeat barre-chord chops in the verse paired with open, ringing power/open chords in the chorus.",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -115,15 +115,67 @@
         ],
         "progression": "Bm - A - Bm - G - A"
       }
+    },
+    {
+      "name": "Ron Strykert Strat Stabs & 7th-Position Flute Doubling",
+      "description": "Playing lead guitarist Ron Strykert's funky, rhythmic Strat fills and transcribing Greg Ham's famous B Aeolian hook into 7th-position lead guitar lines with crisp single-coil quack.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "7th position B minor pentatonic and Aeolian notes (strings 1-4, frets 7-10)",
+          "Crisp staccato picking on beat subdivisions",
+          "Out-of-phase pickup cluck (Strat position 2 or 4)",
+          "Subtle quarter-note delay and light compression"
+        ],
+        "sequence": [
+          "Anchor your fretting hand in 7th position across strings 1 to 4",
+          "Double the flute riff with punchy downstrokes on the 9th fret D and 7th fret B",
+          "Add syncopated double-stop stabs between vocal lines",
+          "Accentuate the dynamic drop into the verse after the flute hook"
+        ],
+        "tips": [
+          "Ron Strykert used a Fender Stratocaster in the in-between pickup position into a Roland Jazz Chorus for razor-sharp clarity",
+          "Keep notes strictly staccato—do not let open strings ring into the single-note lines",
+          "Slight palm muting on the 4th string adds punch to the low B notes"
+        ],
+        "chords": [
+          "Bm",
+          "A",
+          "G",
+          "D"
+        ],
+        "progression": "Bm - A - Bm - G - A"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Verse Reggae Skank",
-      "timeStamp": "0:00-0:44",
+      "name": "Intro Flute Hook & Atmospheric Skank",
+      "timeStamp": "0:00-0:20",
+      "technique": "7th-Position Single-Note Hook & Skank Entry",
+      "key": "B Minor",
+      "description": "The immortal opening hook featuring Greg Ham's iconic flute theme transcribed for 7th-position electric guitar over the subtle reggae skank.",
+      "chords": [
+        "Bm",
+        "A",
+        "G"
+      ],
+      "progression": "Bm - A - Bm - G - A",
+      "notes": [
+        "Play in 7th position with index finger barring frets 7 on strings 1 to 3",
+        "Use crisp staccato articulation to emulate the wooden flute attack",
+        "Target root B on string 4 fret 9 and string 1 fret 7"
+      ],
+      "alphaTab": ":8 9.4 9.4 7.3 9.4 7.4 9.4 7.3 6.3 | :4 7.3 :4 9.4 :4 5.3 :4 7.3 | :1 9.4 |",
+      "exerciseLabel": "Intro Flute Hook on Guitar"
+    },
+    {
+      "name": "Verse 1 Reggae Storytelling Skank",
+      "timeStamp": "0:20-0:44",
       "technique": "Reggae-Pop Offbeat Skank",
       "key": "B Minor",
-      "description": "Clipped, bouncy offbeat chords over the two-bar Bm - A - Bm - G - A groove.",
+      "description": "Clipped, bouncy offbeat chords over the two-bar Bm - A - Bm - G - A groove supporting Colin Hay's legendary lyrics.",
       "chords": [
         "Bm",
         "A",
@@ -133,17 +185,37 @@
       "notes": [
         "Focus on the upper four strings for a bright, reggae-influenced chop",
         "Release finger pressure right after striking to stop the chord from ringing",
-        "Nail the quick G to A change in the second bar"
+        "Nail the quick G to A change in the second bar on beats 3 and 4"
       ],
       "alphaTab": ":2 (2.5 4.4 4.3 3.2 2.1) (0.5 2.4 2.3 2.2 0.1) | :2 (2.5 4.4 4.3 3.2 2.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) (0.5 2.4 2.3 2.2 0.1) |",
-      "exerciseLabel": "Verse Groove Loop"
+      "exerciseLabel": "Verse Reggae Skank"
     },
     {
-      "name": "Chorus ('Land Down Under')",
-      "timeStamp": "0:44-1:02",
+      "name": "Pre-Chorus Build & Percussive Chops",
+      "timeStamp": "0:44-0:53",
+      "technique": "Dynamic Stabs & Rhythmic Transition",
+      "key": "B Minor",
+      "description": "The quick two-bar transition ('He just smiled and gave me a Vegemite sandwich') building toward the major-key explosion.",
+      "chords": [
+        "Bm",
+        "A",
+        "G"
+      ],
+      "progression": "Bm - A - G - A",
+      "notes": [
+        "Keep the stabs tight and synchronized with Jerry Speiser's hi-hat",
+        "Emphasize the punch on the G major chord",
+        "Leave a micro-beat of silence before striking the chorus D major downbeat"
+      ],
+      "alphaTab": ":4 (2.5 4.4 4.3 3.2 2.1) :4 (0.5 2.4 2.3 2.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Pre-Chorus Build"
+    },
+    {
+      "name": "Chorus Stadium Lift ('Land Down Under')",
+      "timeStamp": "0:53-1:15",
       "technique": "Relative Major Chorus Lift",
       "key": "B Minor",
-      "description": "Substituting D major for the first Bm chord transforms the minor verse loop into an unforgettable major-key anthem.",
+      "description": "Substituting D major for the first Bm chord transforms the minor verse loop into an unforgettable major-key anthem singalong.",
       "chords": [
         "D",
         "A",
@@ -160,24 +232,45 @@
       "exerciseLabel": "Chorus Relative Major Shift"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:08-0:18",
-      "technique": "B Minor Flute Hook on Guitar",
+      "name": "Ron Strykert Guitar Break & Instrumental Solo",
+      "timeStamp": "1:45-2:08",
+      "technique": "7th-Position Lead Bends & Syncopated Bites",
       "key": "B Minor",
-      "description": "Greg Ham's iconic B minor flute riff transcribed for single-note lead guitar in 7th position.",
+      "description": "Ron Strykert's sharp Stratocaster lead lines dancing over the Bm - A - Bm - G - A progression in the instrumental interlude.",
       "chords": [
         "Bm",
         "A",
         "G"
       ],
-      "progression": "i - bVII - bVI - bVII",
+      "progression": "Bm - A - Bm - G - A",
       "notes": [
-        "Play in 7th position (index finger on fret 7)",
-        "Use crisp staccato articulation to mimic the flute phrasing",
-        "Target the root B on the 4th string 9th fret and 1st string 7th fret"
+        "Crisp 7th position phrasing blending B minor pentatonic with natural minor color",
+        "Short, biting pick attack on single-coil bridge/middle pickup",
+        "Target the tonic B (7th fret high E) on strong beat accents"
       ],
-      "alphaTab": ":8 9.4 9.4 7.3 9.4 7.4 9.4 7.3 6.3 | :4 7.3 9.4 5.3 7.3 | :1 9.4 |",
-      "exerciseLabel": "Flute Hook Guitar Transcription"
+      "alphaTab": ":8 7.1 10.2 :4 7.1 :8 10.2 7.2 :4 9.3 | :8 7.3 9.3 :4 7.2 :8 10.2 7.1 :4 10.1 | :8 12.1 10.1 :4 7.1 :8 10.2 7.2 :4 9.3 | :8 7.3 9.3 :4 7.3 :2 9.4 |",
+      "exerciseLabel": "Instrumental Guitar Break"
+    },
+    {
+      "name": "Outro Chorus & Reggae Jam Fade",
+      "timeStamp": "3:00-3:42",
+      "technique": "Layered Chops & Dynamic Fadeout",
+      "key": "B Minor",
+      "description": "The exuberant outro where the band jams on the chorus progression with improvising vocal shouts, flute counter-melodies, and driving guitar chops.",
+      "chords": [
+        "D",
+        "A",
+        "Bm",
+        "G"
+      ],
+      "progression": "D - A - Bm - G - A",
+      "notes": [
+        "Alternate between ringing D power chords and punchy upstroke skanks",
+        "Lock into John Rees's bouncing bass groove",
+        "Gradually soften dynamics into the final studio fade"
+      ],
+      "alphaTab": ":2 (0.4 2.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) | :2 (2.5 4.4 4.3 3.2 2.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Outro Chorus & Reggae Jam"
     }
   ],
   "equipment": {
@@ -197,11 +290,11 @@
         "Fender Champion 40"
       ],
       "settings": {
-        "gain": "3 (tight, punchy clean tone)",
-        "treble": "7 (crisp reggae skank definition)",
-        "middle": "5 (clean midrange)",
-        "bass": "4 (low cut so bass guitar dominates the bottom end)",
-        "presence": "6 (snappy transient response)"
+        "gain": "3",
+        "treble": "7",
+        "middle": "5",
+        "bass": "4",
+        "presence": "6"
       }
     },
     "effects": {

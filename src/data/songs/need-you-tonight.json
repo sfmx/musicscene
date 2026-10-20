@@ -70,8 +70,8 @@
   },
   "techniques": [
     {
-      "name": "16th-Note Funk Chucking & Rhythmic Rest",
-      "description": "Precise right-hand continuous 16th-note pendulum picking combined with fretting-hand mutes to create a laser-tight groove with deliberate silences",
+      "name": "16th-Note Funk Chucking & Rhythmic Rest Control",
+      "description": "Precise right-hand continuous 16th-note pendulum picking combined with fretting-hand mutes to create a laser-tight groove with deliberate silences.",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
@@ -97,15 +97,46 @@
         ],
         "progression": "Cm7 - Bb - F"
       }
+    },
+    {
+      "name": "Interlocking Minimalist Dual-Guitar Layering",
+      "description": "The production signature of Kick, where Tim Farriss's syncopated single-note baseline interacts with Kirk Pengilly's upper-register triad chops, leaving massive sonic space for Michael Hutchence's vocals and Garry Gary Beers's bass.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "C Dorian scale tones: C - D - Eb - F - G - A - Bb",
+          "Fret 8 upper triad stabs (Eb, G, C) on strings 2, 3, and 4",
+          "Strict separation between the single-note groove and chord accents",
+          "Dry gate reverb and sharp pickup dynamics"
+        ],
+        "sequence": [
+          "Establish the steady single-note syncopation on string 4",
+          "Layer the staccato triad stab precisely on the syncopated offbeats",
+          "Drop out completely during vocal breaths to intensify dynamics",
+          "Dig in on the F major triad to accentuate the Dorian major 6th (A natural)"
+        ],
+        "tips": [
+          "Recorded directly into the desk and through a Roland JC-120 by producer Chris Thomas",
+          "Do not play full 6-string barres—the essence of this track is ruthless minimalism",
+          "Keep your picking wrist loose but your fretting-hand muting razor-sharp"
+        ],
+        "chords": [
+          "Cm7",
+          "Bb",
+          "F"
+        ],
+        "progression": "Cm7 - Bb - F"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Main Riff Hook",
+      "name": "Intro Drum Loop & Single-Note Riff Hook",
       "timeStamp": "0:00-0:28",
-      "technique": "Syncopated Single-Note Funk",
+      "technique": "Syncopated Single-Note Funk & Palm Damping",
       "key": "C Dorian",
-      "description": "Tim Farriss and Kirk Pengilly's world-famous single-note hook that opens the track.",
+      "description": "Andrew Farriss and Tim Farriss's world-famous syncopated single-note guitar hook that opens the track.",
       "chords": [
         "Cm7"
       ],
@@ -115,15 +146,15 @@
         "Do not rush the syncopated offbeats",
         "Leave wide open silence on the downbeats"
       ],
-      "alphaTab": ":8 0.4 10.4 8.4 :4 10.4 :8 8.4 10.4 | :8 0.4 10.4 8.4 :4 10.4 :4 8.4 |",
+      "alphaTab": ":8 10.4 10.4 :8 8.4 10.4 :4 10.4 :8 8.4 10.4 | :8 10.4 10.4 :8 8.4 10.4 :4 10.4 :4 8.4 |",
       "exerciseLabel": "Single-Note Riff Hook"
     },
     {
-      "name": "Funk Chord Stabs",
-      "timeStamp": "0:45-1:15",
-      "technique": "16th-Note Chucking",
+      "name": "Verse 1 Minimalist Funk Stabs",
+      "timeStamp": "0:28-0:58",
+      "technique": "16th-Note Chucking & Staccato Triads",
       "key": "C Dorian",
-      "description": "Upper-register chord stabs entering behind Michael Hutchence's vocal.",
+      "description": "Upper-register chord stabs entering behind Michael Hutchence's seductive, whisper-close vocal delivery.",
       "chords": [
         "Cm7",
         "Bb",
@@ -132,11 +163,91 @@
       "progression": "Cm7 - Bb - F",
       "notes": [
         "Use compact 3-string triads on the D, G, and B strings",
-        "Kill the sound instantly after each stab",
-        "Keep the right hand wrist relaxed"
+        "Kill the sound instantly after each stab with fretting hand release",
+        "Keep the right-hand wrist relaxed in steady 16th motion"
       ],
-      "alphaTab": ":16 (8.4 8.3 8.2) (8.4 8.3 8.2) :8 0.6 :8 (6.4 6.3 6.2) :8 (10.4 10.3 10.2) | :16 (8.4 8.3 8.2) (8.4 8.3 8.2) :4 (8.4 8.3 8.2) :2 (6.4 6.3 6.2) |",
-      "exerciseLabel": "Funk Triad Stabs"
+      "alphaTab": ":4 (8.4 8.3 8.2) :4 (8.4 8.3 8.2) :4 (6.4 6.3 6.2) :4 (10.4 10.3 10.2) | :4 (8.4 8.3 8.2) :4 (8.4 8.3 8.2) :2 (6.4 6.3 6.2) |",
+      "exerciseLabel": "Verse Funk Triad Stabs"
+    },
+    {
+      "name": "Pre-Chorus Build & Rhythmic Tension",
+      "timeStamp": "0:58-1:12",
+      "technique": "Dynamic Accents & Sonic Space",
+      "key": "C Dorian",
+      "description": "The building pre-chorus ('All you got is this moment, the twenty-first century's yesterday...') increasing rhythmic pressure.",
+      "chords": [
+        "Cm7",
+        "Bb",
+        "F"
+      ],
+      "progression": "Cm7 - Bb - F - Cm7",
+      "notes": [
+        "Lock into Garry Gary Beers's walking bassline",
+        "Let the chord stabs ring slightly longer before clamping down",
+        "Prepare for the explosive entrance of the chorus hook"
+      ],
+      "alphaTab": ":2 (8.4 8.3 8.2) :2 (6.4 6.3 6.2) | :2 (10.4 10.3 10.2) :2 (8.4 8.3 8.2) |",
+      "exerciseLabel": "Pre-Chorus Build"
+    },
+    {
+      "name": "Chorus Groove ('I Need You Tonight')",
+      "timeStamp": "1:12-1:42",
+      "technique": "Full Interlocking Funk Groove",
+      "key": "C Dorian",
+      "description": "The global #1 chorus hook combining the driving single-note syncopation with upper triad Dorian stabs.",
+      "chords": [
+        "Cm7",
+        "Bb",
+        "F"
+      ],
+      "progression": "Cm7 - Bb - F",
+      "notes": [
+        "Accentuate beat 1 on the Cm7 stab",
+        "Highlight the bright A natural note in the F major triad (10th fret strings 2-4)",
+        "Maintain laser-sharp dance pocket at 109 BPM"
+      ],
+      "alphaTab": ":4 (8.4 8.3 8.2) :4 (8.4 8.3 8.2) :4 (6.4 6.3 6.2) :4 (10.4 10.3 10.2) | :4 (8.4 8.3 8.2) :4 (6.4 6.3 6.2) :2 (8.4 8.3 8.2) |",
+      "exerciseLabel": "Chorus Interlocking Groove"
+    },
+    {
+      "name": "Instrumental Guitar Break & Funk Lead",
+      "timeStamp": "1:55-2:25",
+      "technique": "C Dorian Single-Note Funk Lead & Biting Attack",
+      "key": "C Dorian",
+      "description": "Kirk Pengilly and Tim Farriss's syncopated guitar break cutting through the mix with funky single-coil snap and Dorian fills.",
+      "chords": [
+        "Cm7",
+        "Bb",
+        "F"
+      ],
+      "progression": "Cm7 - Bb - F",
+      "notes": [
+        "Staccato single-note phrasing across frets 8 to 12",
+        "Emphasize the syncopated 16th-note pickups",
+        "Crisp pick attack using the bridge single-coil"
+      ],
+      "alphaTab": ":8 10.4 10.4 :8 8.4 10.4 :4 10.3 :4 8.3 | :8 10.3 8.3 :8 10.4 8.4 :4 10.4 :4 10.4 | :8 10.3 12.3 :4 10.2 :8 8.2 10.2 :4 11.2 | :8 10.2 8.2 :8 10.3 8.3 :2 10.4 |",
+      "exerciseLabel": "Funk Instrumental Lead Break"
+    },
+    {
+      "name": "Outro Dance Climax & Transition to Mediate",
+      "timeStamp": "2:25-3:01",
+      "technique": "Layered Rhythm Jam & Seamless Segue",
+      "key": "C Dorian",
+      "description": "The hypnotic final groove where the guitars lock in with saxophone jabs before seamlessly transitioning into 'Mediate'.",
+      "chords": [
+        "Cm7",
+        "Bb",
+        "F"
+      ],
+      "progression": "Cm7 - Bb - F",
+      "notes": [
+        "Interlock the single-note root motif with staccato chords",
+        "Hold the unwavering 109 BPM tempo right to the final drum hit",
+        "Keep muting crystal clean with no extraneous string vibrations"
+      ],
+      "alphaTab": ":8 10.4 10.4 :8 8.4 10.4 :4 (8.4 8.3 8.2) :4 (6.4 6.3 6.2) | :8 10.4 10.4 :8 8.4 10.4 :2 (8.4 8.3 8.2) |",
+      "exerciseLabel": "Outro Dance Climax"
     }
   ],
   "equipment": {
@@ -157,10 +268,10 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "2 (ultra-clean headroom)",
-        "treble": "7 (bright 80s snap)",
+        "gain": "2",
+        "treble": "7",
         "middle": "5",
-        "bass": "4 (tight punchy low end)",
+        "bass": "4",
         "presence": "7"
       }
     },

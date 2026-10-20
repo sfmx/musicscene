@@ -89,8 +89,8 @@
   },
   "techniques": [
     {
-      "name": "Jangle-Rock Eighth-Note Strumming & Chiming Triad Hooks",
-      "description": "Maintaining a propulsive 120 BPM acoustic rhythm with accented backbeats while weaving bright, upper-register electric triad melodies on the G, B, and high E strings",
+      "name": "Jangle-Rock Eighth-Note Strumming & Open Chords",
+      "description": "Maintaining a propulsive 120 BPM acoustic rhythm with accented backbeats while weaving bright, open voicings and smooth transitions to Bm and F#m barre chords.",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -105,7 +105,7 @@
           "Drive the verse with crisp Down-Up eighth-note strumming across A, E, D, and A",
           "Climb through the Bm → D → E pre-chorus with increasing dynamic intensity",
           "Open up into full, ringing strums on the F#m → D → A → E chorus",
-          "For the electric guitar part, pick the 9th/10th fret A-major and E-major triad shapes on the top three strings"
+          "Keep the right-hand wrist loose and bouncy at 120 BPM"
         ],
         "tips": [
           "Keep your strumming motion compact and wrist-driven so the 120 BPM pace feels effortless and brisk",
@@ -121,15 +121,46 @@
         ],
         "progression": "A - E - D - A | F#m - D - A - E"
       }
+    },
+    {
+      "name": "Steve Connolly Chiming Upper-Triad Arpeggios & Telecaster Soloing",
+      "description": "Steve Connolly's brilliant Australian jangle-guitar signature, using 9th-and-10th-fret upper triad inversions on strings 1, 2, and 3, coupled with ringing A major pentatonic melodic bends.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "9th-position D-shape A major triad (9.3, 10.2, 9.1)",
+          "Step down to E major triad (9.3, 9.2, 7.1) and D major triad (7.3, 7.2, 5.1)",
+          "A major pentatonic target tones: A, B, C#, E, F#",
+          "Crisp Telecaster bridge pickup with light compressor sustain"
+        ],
+        "sequence": [
+          "Fret the 9th-fret D-shape A chord across strings 1, 2, and 3",
+          "Arpeggiate with clean alternate picking, allowing notes to ring into one another",
+          "Step down symmetrically to the E and D triad voicings",
+          "In the solo, add melodic bends on the high E string (fret 12 up to C#) before resolving smoothly"
+        ],
+        "tips": [
+          "Steve Connolly used a 1960s Fender Telecaster into a clean Fender Twin Reverb for bell-like clarity",
+          "Avoid resting your palm on the bridge—let all three triad strings chime continuously",
+          "Add a compressor pedal like an MXR Dyna Comp or Boss CS-3 to ensure every picked note rings at equal volume"
+        ],
+        "chords": [
+          "A",
+          "E",
+          "D"
+        ],
+        "progression": "A - E - D - A"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Jangle Progression",
-      "timeStamp": "0:00-0:52",
-      "technique": "Jangle-Rock Eighth-Note Strumming",
+      "name": "Intro Chiming Jangle Hook",
+      "timeStamp": "0:00-0:16",
+      "technique": "Upper-Register Triad Arpeggio Hook",
       "key": "A Major",
-      "description": "Brisk, walking-tempo A - E - D - A progression capturing the crisp air of Melbourne in autumn.",
+      "description": "Steve Connolly's immortal opening jangle hook at the 9th fret over Paul Kelly's crisp acoustic rhythm strumming.",
       "chords": [
         "A",
         "E",
@@ -137,19 +168,59 @@
       ],
       "progression": "A - E - D - A",
       "notes": [
-        "Accent beats 2 and 4 with a crisp snare-like strum",
+        "Fret the D-shape A major triad at the 9th and 10th frets (9.3, 10.2, 9.1)",
+        "Let the notes ring together like a 12-string Rickenbacker or Telecaster",
+        "Step down cleanly through the E and D triad notes"
+      ],
+      "alphaTab": ":8 9.3 10.2 9.1 10.2 :8 9.3 9.2 7.1 9.2 | :8 7.3 7.2 5.1 7.2 :2 (6.3 5.2 5.1) |",
+      "exerciseLabel": "Intro Connolly Jangle Hook"
+    },
+    {
+      "name": "Verse 1 Melbourne Autumn Storytelling",
+      "timeStamp": "0:16-0:44",
+      "technique": "Jangle-Rock Eighth-Note Strumming",
+      "key": "A Major",
+      "description": "Brisk, walking-tempo A - E - D - A progression capturing the crisp autumn air of Melbourne ('I'm freezing my hands, I'm waiting on the corner...').",
+      "chords": [
+        "A",
+        "E",
+        "D"
+      ],
+      "progression": "A - E - D - A",
+      "notes": [
+        "Accent beats 2 and 4 with a crisp snare-like acoustic strum",
         "Keep the E-to-D transition tight and clean",
-        "Maintain steady 120 BPM forward motion"
+        "Maintain steady 120 BPM forward walking motion"
       ],
       "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
       "exerciseLabel": "Verse Rhythm Progression"
     },
     {
-      "name": "Chorus ('High on the Hill')",
+      "name": "Pre-Chorus Dynamic Build ('Head Is Spinning')",
+      "timeStamp": "0:44-0:53",
+      "technique": "Climbing ii - IV - V Barre Cadence",
+      "key": "A Major",
+      "description": "The climbing ii - IV - V progression (Bm - D - E) building anticipation for the panoramic chorus release.",
+      "chords": [
+        "Bm",
+        "D",
+        "E"
+      ],
+      "progression": "Bm - D - E",
+      "notes": [
+        "Clean 2nd-fret barre on Bm",
+        "Increase strumming velocity into the E major chord",
+        "Prepare for the immediate drop into the F#m chorus downbeat"
+      ],
+      "alphaTab": ":2 (2.5 4.4 4.3 3.2 2.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Pre-Chorus Build"
+    },
+    {
+      "name": "Chorus Panoramic Anthem ('High on the Hill')",
       "timeStamp": "0:53-1:25",
       "technique": "Anthemic Open & Barre Chord Strumming",
       "key": "A Major",
-      "description": "Soaring F#m - D - A - E chorus progression looking out over Punt Road and the MCG.",
+      "description": "Soaring F#m - D - A - E chorus looking out over Punt Road, Richmond, and the Melbourne Cricket Ground.",
       "chords": [
         "F#m",
         "D",
@@ -166,11 +237,11 @@
       "exerciseLabel": "Chorus Chord Progression"
     },
     {
-      "name": "Steve Connolly Chiming Lead Hook",
-      "timeStamp": "1:26-1:50",
-      "technique": "Upper-Register Triad Arpeggio Hook",
+      "name": "Steve Connolly Guitar Solo & Jangle Break",
+      "timeStamp": "1:50-2:15",
+      "technique": "A Major Pentatonic Lead & Triad Bends",
       "key": "A Major",
-      "description": "Bright, chiming A major melodic lead hook played on the G, B, and high E strings.",
+      "description": "Steve Connolly's melodic Telecaster guitar solo weaving upper triads, singing A major pentatonic bends, and double stops over the A - E - D - A progression.",
       "chords": [
         "A",
         "E",
@@ -178,12 +249,33 @@
       ],
       "progression": "A - E - D - A",
       "notes": [
-        "Fret the D-shape A major triad at the 9th and 10th frets (9.3, 10.2, 9.1)",
-        "Let the notes ring together like a 12-string Rickenbacker or Telecaster",
-        "Step down smoothly through the E and D triad notes"
+        "Chiming Telecaster tone with light compression and subtle plate reverb",
+        "Whole-step bend on fret 12 of the high E string up to C#",
+        "Smooth descent resolving onto the root A triad at the 5th fret"
       ],
-      "alphaTab": ":8 9.3 10.2 9.1 10.2 9.3 9.2 7.1 9.2 | :8 7.3 7.2 5.1 7.2 :2 (6.3 5.2 5.1) |",
-      "exerciseLabel": "Connolly Style Jangle Lead Hook"
+      "alphaTab": ":8 9.3 10.2 :4 9.1 :8 12.1 9.1 :4 10.2 | :8 9.2 7.1 :4 9.2 :8 7.2 9.2 :4 9.3 | :8 7.3 7.2 :4 5.1 :8 7.2 5.2 :4 6.3 | :8 7.3 6.3 :4 7.4 :2 (6.3 5.2 5.1) |",
+      "exerciseLabel": "Steve Connolly Guitar Solo"
+    },
+    {
+      "name": "Outro MCG Climax & Chiming Fade",
+      "timeStamp": "2:45-3:24",
+      "technique": "Layered Rhythm Jam & Shimmering Arpeggios",
+      "key": "A Major",
+      "description": "The emotional finish where the band cycles through the chorus progression while Connolly's high 9th-fret arpeggios ring across the stereo field into the fade.",
+      "chords": [
+        "F#m",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "F#m - D - A - E",
+      "notes": [
+        "Combine the F#m chorus rhythm with the high triad arpeggio hook",
+        "Maintain the buoyant 120 BPM tempo with no drag",
+        "Let the final chords ring out into natural studio decay"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :8 9.3 10.2 9.1 10.2 :2 (6.3 5.2 5.1) |",
+      "exerciseLabel": "Outro Chorus & Chiming Fade"
     }
   ],
   "equipment": {
@@ -204,11 +296,11 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "3 (sparkling clean with light studio compression)",
-        "treble": "7 (bright, bell-like jangle)",
-        "middle": "6 (clear vocal-supporting midrange)",
-        "bass": "5 (tight, uncluttered low end)",
-        "presence": "6 (crisp top-end air)"
+        "gain": "3",
+        "treble": "7",
+        "middle": "6",
+        "bass": "5",
+        "presence": "6"
       }
     },
     "effects": {

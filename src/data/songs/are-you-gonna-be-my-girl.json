@@ -81,7 +81,7 @@
   "techniques": [
     {
       "name": "High-Tempo Motown Shuffle & Staccato Power Stabs",
-      "description": "Strumming tight, palm-muted power chords at a blistering 205 BPM tempo, cutting off note decay instantly with fretting-hand mutes",
+      "description": "Strumming tight, palm-muted power chords at a blistering 205 BPM tempo, cutting off note decay instantly with fretting-hand mutes.",
       "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
@@ -111,15 +111,46 @@
         ],
         "progression": "A5 - C5 - D5"
       }
+    },
+    {
+      "name": "Chuck Berry Double-Stops & Pub-Rock Lead Attack",
+      "description": "Playing Cameron Muncey's raw, high-voltage garage-rock soloing in the 5th-position A blues scale, using simultaneous index-finger barre double stops on the high E and B strings, aggressive pick digging, and snappy bent thirds.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "5th-position A minor pentatonic / blues box (frets 5 to 8)",
+          "Dual-string double stops at the 5th fret across strings 1 and 2",
+          "Bent 7th-fret G string (D up toward E) pushed with ring and middle fingers",
+          "Aggressive down-up alternate picking locked with Chris Cester's driving drums"
+        ],
+        "sequence": [
+          "Flatten your index finger across strings 1 and 2 at fret 5",
+          "Dig hard into the 7th fret of the G string and bend a whole step",
+          "Strike the double stop cleanly with a sharp downward brush",
+          "Descend aggressively through frets 7 and 5 on the D and A strings to resolve on the root A"
+        ],
+        "tips": [
+          "Channel Chuck Berry and Angus Young—keep the pick attack savage and dynamic",
+          "Use a heavy pick (1.0mm+) so it doesn't flex against the heavy strings at 205 BPM",
+          "Set the Marshall amp gain just high enough for natural bite without muddying note definition"
+        ],
+        "chords": [
+          "A5",
+          "C5",
+          "D5"
+        ],
+        "progression": "A5 - C5 - D5"
+      }
     }
   ],
   "sections": [
     {
-      "name": "High-Octane Intro Riff",
-      "timeStamp": "0:00-0:30",
-      "technique": "Fast Walkup & Power Chords",
+      "name": "Tambourine Count-In & Chromatic Intro Riff",
+      "timeStamp": "0:00-0:25",
+      "technique": "Fast Chromatic Walkup & Power Chords",
       "key": "A Major",
-      "description": "One of the definitive guitar hooks of the 2000s garage rock revival.",
+      "description": "One of the definitive guitar hooks of the 2000s garage rock revival, entering after Chris Cester's famous tambourine count-in.",
       "chords": [
         "A5",
         "C5",
@@ -127,7 +158,7 @@
       ],
       "progression": "A Walkup -> A5 - C5 - D5",
       "notes": [
-        "Fast chromatic bass walkup on low E",
+        "Fast chromatic bass walkup on low E and A strings",
         "Staccato power chord stabs on A5, C5, and D5",
         "Maintain relentless forward energy at 205 BPM"
       ],
@@ -135,11 +166,30 @@
       "exerciseLabel": "Main Garage Rock Riff"
     },
     {
-      "name": "Chorus Anthem",
+      "name": "Verse 1 Staccato Groove & Dynamic Drop",
+      "timeStamp": "0:25-0:45",
+      "technique": "Tight Palm Muting & Stop-Time Chokes",
+      "key": "A Major",
+      "description": "Nic Cester's swaggering vocals ('1, 2, 3, take my hand and come with me...') over tight, chugged A5 power chords with abrupt full-band stops.",
+      "chords": [
+        "A5",
+        "C5"
+      ],
+      "progression": "A5 Pedal",
+      "notes": [
+        "Chug muted A5 on the low strings",
+        "Cut sound dead on the full-band stops",
+        "Keep right hand loose to avoid forearm cramping at 205 BPM"
+      ],
+      "alphaTab": ":8 (5.6 7.5) (5.6 7.5) (5.6 7.5) (5.6 7.5) :2 0.6 | :8 (5.6 7.5) (5.6 7.5) :4 (5.6 7.5) :2 (3.5 5.4) |",
+      "exerciseLabel": "Verse Staccato Groove"
+    },
+    {
+      "name": "Chorus 1 Double-Plagal Singalong ('Be My Girl')",
       "timeStamp": "0:45-1:05",
       "technique": "Double-Plagal Turnaround",
       "key": "A Mixolydian",
-      "description": "The soaring chorus 'So what you got to say? She's with me and I'm with her'.",
+      "description": "The soaring chorus 'So what you got to say? She's with me and I'm with her' built on the classic G - D - A rock turnaround.",
       "chords": [
         "G",
         "D",
@@ -147,32 +197,74 @@
       ],
       "progression": "G - D - A",
       "notes": [
-        "Full open chord strumming",
-        "Accent the transition from G to D to A",
-        "Let the final A chord ring with stadium power"
+        "Full open chord strumming with maximum stadium power",
+        "Accent the rapid transition from G to D to A",
+        "Let the final A chord ring out before slamming back into the verse"
       ],
       "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.4 2.3 3.2 2.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
       "exerciseLabel": "Chorus Strummed Progression"
     },
     {
-      "name": "Blues Guitar Solo",
-      "timeStamp": "1:55-2:20",
-      "technique": "Fast Minor Pentatonic Fills",
-      "key": "A Blues",
-      "description": "Cameron Muncey's raw, Chuck Berry-inspired blues solo in the 5th position.",
+      "name": "Verse 2 Rhythmic Build & Tambourine Drive",
+      "timeStamp": "1:05-1:28",
+      "technique": "Accelerating Pick Attack & Harmonic Fills",
+      "key": "A Major",
+      "description": "The second verse intensifying the groove with driving eighth-note downstrokes and pick scrapes leading toward the explosive second chorus.",
       "chords": [
         "A5",
         "C5",
         "D5"
       ],
-      "progression": "A Blues Riff",
+      "progression": "A5 - C5 - D5",
       "notes": [
-        "5th-position A minor pentatonic box licks",
-        "Aggressive pick attack with natural tube saturation",
-        "Quick double-stops on the high E and B strings"
+        "Dig in with firmer pick velocity as the verse builds",
+        "Lock tight with Mark Wilson's driving bassline",
+        "Clean slide down into the chorus downbeat"
       ],
-      "alphaTab": ":8 5.1 8.1 5.1 8.2 :4 7.3 :4 5.3 | :8 7.4 5.4 7.4 5.4 :2 7.4 | :1 (5.6 7.5 7.4) |",
-      "exerciseLabel": "Fast Blues Solo Licks"
+      "alphaTab": ":8 (5.6 7.5) (5.6 7.5) (5.6 7.5) (5.6 7.5) :8 (5.6 7.5) (5.6 7.5) (5.6 7.5) (5.6 7.5) | :4 (5.6 7.5) :4 (3.5 5.4) :2 (5.5 7.4) |",
+      "exerciseLabel": "Verse 2 Rhythmic Build"
+    },
+    {
+      "name": "Cameron Muncey Fiery Blues-Rock Guitar Solo",
+      "timeStamp": "1:55-2:22",
+      "technique": "Fast Chuck Berry Double-Stops & Minor Pentatonic Bends",
+      "key": "A Blues",
+      "description": "Cameron Muncey's raw, Chuck Berry-inspired blues-rock guitar solo in the 5th position, filled with howling bends and biting double-stops.",
+      "chords": [
+        "A5",
+        "C5",
+        "D5"
+      ],
+      "progression": "A5 - C5 - D5",
+      "notes": [
+        "5th-position A minor pentatonic and blues box licks",
+        "Aggressive pick attack with natural tube saturation",
+        "Quick double-stops barred across the high E and B strings at fret 5"
+      ],
+      "alphaTab": ":8 5.1 8.1 5.1 8.2 :4 7.3 :4 5.3 | :8 7.3 5.3 :8 7.4 5.4 :4 7.4 :4 7.4 | :8 5.1 5.2 :8 5.1 5.2 :4 7.3 :8 7.3 5.3 | :8 7.4 5.4 :4 7.4 :2 (5.6 7.5 7.4) |",
+      "exerciseLabel": "Cameron Muncey Guitar Solo"
+    },
+    {
+      "name": "Outro Frantic Jam & Stutter Stop Finish",
+      "timeStamp": "2:55-3:34",
+      "technique": "High-Energy Riff Jam & Sudden Final Choke",
+      "key": "A Major",
+      "description": "The breathless garage-rock finale where the riff cycles at maximum adrenaline before cutting dead on the legendary stutter-stop.",
+      "chords": [
+        "A5",
+        "C5",
+        "D5",
+        "G",
+        "A"
+      ],
+      "progression": "A5 - C5 - D5 | G - A",
+      "notes": [
+        "Give every ounce of right-hand energy to the final riff cycles",
+        "Clean power chord transitions at 205 BPM",
+        "Execute the final stop instantly with zero string hangover"
+      ],
+      "alphaTab": ":4 (5.6 7.5 7.4) :4 (3.5 5.4 5.3) :2 (5.5 7.4 7.3) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Outro Jam & Stutter Stop"
     }
   ],
   "equipment": {
@@ -193,7 +285,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "7.5 (crunchy British tube bite)",
+        "gain": "7.5",
         "treble": "7",
         "middle": "7.5",
         "bass": "6",

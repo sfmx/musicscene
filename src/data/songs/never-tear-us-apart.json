@@ -73,7 +73,7 @@
   "techniques": [
     {
       "name": "Dramatic Stop-Time Dynamics & Acoustic/Electric Strumming",
-      "description": "Strumming resonant open chords that cut off dead with absolute silence on dramatic pause cues before re-entering on the downbeat",
+      "description": "Strumming resonant open chords that cut off dead with absolute silence on dramatic pause cues before re-entering powerfully on the downbeat.",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -101,15 +101,65 @@
         ],
         "progression": "Am - F - Dm - C"
       }
+    },
+    {
+      "name": "Soulful Vocal-Range Lead Phrasing & Wide Vibrato",
+      "description": "Transcribing Kirk Pengilly's legendary, soaring alto saxophone solo for electric guitar, using 8th-to-12th position C major pentatonic target tones, vocal-like whole-step bends, and sustained wide vibrato.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "C major pentatonic / A minor pentatonic positions across frets 8 to 13",
+          "Whole-step bend on fret 10 string 1 (D up to E)",
+          "Slow, singing vibrato emulating human vocal and saxophone breath control",
+          "Warm overdriven tube tone with long sustain and large hall reverb"
+        ],
+        "sequence": [
+          "Ascend from fret 8 on the B string through fret 10 and 12 on the high E",
+          "Bend fret 10 up to E, holding pitch steadily before a controlled release",
+          "Arc into fret 13 (high F) landing right on the chord shift to F major",
+          "Conclude on the tonic C note at the 8th fret of the B string with shimmering vibrato"
+        ],
+        "tips": [
+          "Use the neck pickup on a Stratocaster or Les Paul for that round, woody, saxophone-like warmth",
+          "Support your fretting fingers for precise pitch control on the 10th-fret whole-step bends",
+          "Add generous plate or hall reverb and subtle tape echo to recreate the cinematic Vienna video vibe"
+        ],
+        "chords": [
+          "C",
+          "F"
+        ],
+        "progression": "C - F - C - F"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Dramatic Verse & Stop-Time",
-      "timeStamp": "0:00-0:48",
-      "technique": "Stop-Time Dynamics & Chording",
+      "name": "Intro Orchestral Swell & Acoustic Entry",
+      "timeStamp": "0:00-0:20",
+      "technique": "Acoustic Chord Entry & Harmonic Setup",
       "key": "A Minor",
-      "description": "Atmospheric acoustic strumming with the famous orchestral stop-time silences.",
+      "description": "The haunting cinematic opening where synthesized orchestral strings give way to the warm, solemn acoustic strumming of Am and F.",
+      "chords": [
+        "Am",
+        "F",
+        "Dm"
+      ],
+      "progression": "Am - F - Dm - F",
+      "notes": [
+        "Warm acoustic strumming with light pick attack",
+        "Let the bass notes ring clearly on downbeats",
+        "Establish the solemn 96 BPM tempo"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (0.4 2.3 3.2 1.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Intro Chords & Acoustic Entry"
+    },
+    {
+      "name": "Verse 1 Cinematic Storytelling & Stop-Time",
+      "timeStamp": "0:20-0:48",
+      "technique": "Dramatic Stop-Time Dynamics & Chording",
+      "key": "A Minor",
+      "description": "Michael Hutchence's intimate narrative delivery punctuated by sudden, dramatic full-band silences on the orchestral hits.",
       "chords": [
         "Am",
         "F",
@@ -118,30 +168,88 @@
       "progression": "Am - F - Dm - F",
       "notes": [
         "Warm, steady acoustic strumming",
-        "Kill all sound instantly on the stop-time cues",
-        "Re-enter firmly on the downbeat"
+        "Kill all string sound instantly with fretting and pick palms on the stop cues",
+        "Re-enter firmly on the downbeat with zero hesitation"
       ],
-      "alphaTab": ":2 (0.5 2.4 2.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
-      "exerciseLabel": "Verse Chords & Stop-Time"
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2 0.1) :4 0.6 :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :4 (0.4 2.3 3.2 1.1) :4 0.6 :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Verse Stop-Time Chording"
     },
     {
-      "name": "Chorus Anthem",
-      "timeStamp": "0:49-1:15",
-      "technique": "Relative Major Lift",
+      "name": "Chorus 1 Soulful Anthem ('I Was Standing')",
+      "timeStamp": "0:48-1:15",
+      "technique": "Relative Major Dynamic Strumming",
       "key": "C Major",
-      "description": "The soaring chorus 'I was standing, you were there' moving between C and F.",
+      "description": "The uplifting shift into the relative major C supporting Michael Hutchence's iconic vocal climax 'I was standing, you were there'.",
       "chords": [
         "C",
         "F"
       ],
       "progression": "C - F - C - F",
       "notes": [
-        "Broad, resonant open chord strumming",
+        "Broad, resonant open chord strumming with maximum projection",
         "Accentuate beats 2 and 4",
-        "Let open strings ring naturally"
+        "Let open strings ring naturally between C and F voicings"
       ],
       "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
       "exerciseLabel": "Chorus Strummed Anthem"
+    },
+    {
+      "name": "Verse 2 Stratocaster Arpeggio Layering",
+      "timeStamp": "1:15-1:45",
+      "technique": "Clean Electric Arpeggios & Chorus Shimmer",
+      "key": "A Minor",
+      "description": "Deepening the arrangement behind the second verse with delicate, chorused Stratocaster arpeggio picking over the acoustic rhythm bed.",
+      "chords": [
+        "Am",
+        "F",
+        "Dm"
+      ],
+      "progression": "Am - F - Dm - F",
+      "notes": [
+        "Clean single-coil neck pickup with stereo chorus",
+        "Pick cleanly across strings 2, 3, 4, and 5",
+        "Mute cleanly on the stop-time pauses"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 :8 1.6 3.5 3.4 2.3 | :8 0.4 2.3 3.2 1.1 :8 1.6 3.5 3.4 2.3 |",
+      "exerciseLabel": "Stratocaster Arpeggio Fills"
+    },
+    {
+      "name": "Kirk Pengilly Saxophone Solo (Guitar Arrangement)",
+      "timeStamp": "1:45-2:15",
+      "technique": "Vocal-Range Lead Phrasing & Wide Vibrato",
+      "key": "C Major",
+      "description": "The unforgettable, soaring saxophone solo arranged note-for-note for electric guitar in 8th-to-12th position with crying bends and rich vibrato.",
+      "chords": [
+        "C",
+        "F"
+      ],
+      "progression": "C - F - C - F",
+      "notes": [
+        "Warm neck pickup tone with singing overdrive",
+        "Careful whole-step bends on fret 10 of string 1 up to E",
+        "Expressive vibrato mimicking saxophone breath control"
+      ],
+      "alphaTab": ":8 8.2 10.2 :4 10.1 :8 8.1 10.1 :4 12.1 | :8 12.1 10.1 :4 8.1 :8 10.2 8.2 :4 9.3 | :8 8.1 10.1 :4 12.1 :8 13.1 12.1 :4 10.1 | :8 12.1 10.1 :4 8.1 :2 8.2 |",
+      "exerciseLabel": "Iconic Solo Guitar Arrangement"
+    },
+    {
+      "name": "Outro Chorus Climax & Orchestral Finale",
+      "timeStamp": "2:15-3:05",
+      "technique": "Anthemic Open Strumming & Dramatic Ring",
+      "key": "C Major",
+      "description": "The emotional climax of the song where the chorus repeats endlessly beneath Hutchence's passionate vocal cries, leading to the grand final orchestral chord.",
+      "chords": [
+        "C",
+        "F"
+      ],
+      "progression": "C - F - C - F",
+      "notes": [
+        "Strum with maximum emotional intensity",
+        "Lock into John Farriss's heavy snare backbeat",
+        "Let the final chord ring until natural decay"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Outro Chorus Climax"
     }
   ],
   "equipment": {
@@ -162,7 +270,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "2.5 (crystal clean)",
+        "gain": "2.5",
         "treble": "6.5",
         "middle": "6",
         "bass": "5",
