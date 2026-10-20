@@ -89,8 +89,8 @@
   },
   "techniques": [
     {
-      "name": "Rolling Country-Rock Acoustic Strumming",
-      "description": "Driving 4/4 acoustic strumming with accented bass-note pick strikes on beats 1 and 3 to translate Don Walker's piano rhythm onto the guitar",
+      "name": "Rolling Country-Rock Acoustic Strumming & Bass Strikes",
+      "description": "Driving 4/4 acoustic strumming with accented root bass-note pick strikes on beats 1 and 3 translating Don Walker's rolling piano rhythm onto the guitar",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -102,8 +102,8 @@
         ],
         "sequence": [
           "Pluck the root bass note on beat 1 (open A string for A, open D string for D)",
-          "Follow with Down-Up sixteenth-note strums across the middle and treble strings",
-          "Transition cleanly into the F#m barre chord at the start of the second half of the verse",
+          "Follow with down-up sixteenth-note strums across the middle and treble strings",
+          "Transition cleanly into the F#m barre chord at the midpoint of each stanza",
           "Accelerate into a brisk double-time feel during the final instrumental outro"
         ],
         "tips": [
@@ -119,69 +119,171 @@
         ],
         "progression": "A - D - A - E - F#m - D - A - E - A"
       }
+    },
+    {
+      "name": "Ian Moss Country-Blues Hybrid Double-Stops & 6ths",
+      "description": "Sweet sliding 6th intervals across strings 1 and 3, combined with pedal-steel bends and vocal vibrato in A major pentatonic",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Sliding 6ths on strings 3 and 1: 6/7 -> 7/8 -> 9/10",
+          "Pedal steel bend: Hold fret 5 on B & high E while bending fret 7 G string up a full step",
+          "Target sweet C# major 3rd note at fret 6 on string 3"
+        ],
+        "sequence": [
+          "Fret the 5th-fret double stop with a flat index finger pad",
+          "Push the 7th fret G string with middle and ring fingers",
+          "Slide into 6th intervals on upbeats for singing country-rock bounce"
+        ],
+        "tips": [
+          "Use a Stratocaster in position 4 (neck + middle) for classic warm quack",
+          "Apply gentle compression to smooth out the dynamics between acoustic strums and electric fills",
+          "Keep bends strictly in pitch to maintain authentic pedal-steel sweetness"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E",
+          "F#m"
+        ],
+        "progression": "A - D - E - F#m - D - A - E - A"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Part 1",
-      "timeStamp": "0:00-0:45",
-      "technique": "Rolling Country-Rock Acoustic Strumming",
+      "name": "Intro Don Walker Piano Hook & Acoustic Entry",
+      "timeStamp": "0:00-0:20",
+      "technique": "Rolling Country-Rock Acoustic Strumming & Bass Strikes",
+      "key": "A Major",
+      "description": "Don Walker's rolling barrelhouse piano is joined by the acoustic guitar establishing the jaunty A to D country-rock pulse.",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "A - D - A - E",
+      "notes": [
+        "Pick the open A bass note cleanly on beat 1 before brushing the upper strings",
+        "Follow the bouncing sixteenth-note rhythm without rushing",
+        "Let the open E chord ring into Jimmy Barnes's opening lyric"
+      ],
+      "alphaTab": ":4 0.5 :8 (2.4 2.3 2.2) (2.4 2.3 2.2) :4 0.4 :8 (2.3 3.2 2.1) (2.3 3.2 2.1) | :4 0.5 :8 (2.4 2.3 2.2) (2.4 2.3 2.2) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Intro Acoustic Strum & Bass Strikes"
+    },
+    {
+      "name": "Verse 1 Post-Vietnam Narrative",
+      "timeStamp": "0:20-0:55",
+      "technique": "Rolling Country-Rock Acoustic Strumming & Bass Strikes",
       "key": "A Major",
       "description": "Iconic opening verse lines ('I left my heart to the sappers round Khe Sanh') over open A, D, and E chords.",
       "chords": [
         "A",
         "D",
+        "A",
         "E"
       ],
       "progression": "A - D - A - E",
       "notes": [
-        "Start with measured, intimate strumming",
-        "Target the root bass notes cleanly on beat 1",
-        "Let the E major chord hang with tension at the end of line 2"
+        "Maintain measured, intimate acoustic dynamics under Barnes's reflective storytelling",
+        "Target the root bass notes on beats 1 and 3",
+        "Let the E major chord hang with suspense at the end of line 2"
       ],
-      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :2 (0.4 2.3 3.2 2.1) (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) (0.5 2.4 2.3 2.2 0.1) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
-      "exerciseLabel": "Verse Opening Chords"
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Narrative Progression"
     },
     {
-      "name": "Verse Turnaround",
-      "timeStamp": "0:45-1:15",
-      "technique": "Rolling Country-Rock Acoustic Strumming",
+      "name": "Verse Turnaround 'Last Plane Out of Sydney'",
+      "timeStamp": "0:55-1:25",
+      "technique": "Minor Pivot & Cadence",
       "key": "A Major",
-      "description": "The progression drops into F#m before climbing back through D and E to resolve on A.",
+      "description": "The progression drops into F#m before climbing back through D and E to resolve on the legendary 'Last plane out of Sydney's almost gone'.",
       "chords": [
         "F#m",
         "D",
         "A",
-        "E"
+        "E",
+        "A"
       ],
       "progression": "F#m - D - A - E - A",
       "notes": [
         "Plant your index finger firmly across fret 2 for the F#m barre chord",
-        "Emphasize the quick A to E to A cadence on 'the last plane out of Sydney's almost gone'",
-        "Maintain steady 100 BPM pocket"
+        "Emphasize the quick A to E to A cadence on the punchline",
+        "Maintain the steady 100 BPM rolling pocket"
       ],
-      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.5 2.4 2.3 2.2 0.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) | :1 (0.5 2.4 2.3 2.2 0.1) |",
-      "exerciseLabel": "Minor Pivot & Cadence"
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :4 (0.5 2.4 2.3 2.2 0.1) :4 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Minor Turnaround & Resolution"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:00-0:30",
-      "technique": "A Major Melodic Lead Run",
+      "name": "Mid-Song Dynamic Lift & Ian Moss Lead Fills",
+      "timeStamp": "1:55-2:35",
+      "technique": "Ian Moss Country-Blues Hybrid Double-Stops & 6ths",
       "key": "A Major",
-      "description": "A major country-rock melodic run in the style of Ian Moss's soaring guitar fills.",
+      "description": "Ian Moss begins peppering the narrative with sweet A major pentatonic double stops and singing fill licks between Barnes's vocal phrases.",
       "chords": [
         "A",
         "D",
+        "A",
         "E"
       ],
-      "progression": "I - IV - V - I",
+      "progression": "A - D - A - E",
       "notes": [
-        "Play cleanly in 2nd position using index, middle, and pinky fingers",
-        "Listen for the bright C# major third interval",
-        "Finish on the root A note on the 3rd string 2nd fret"
+        "Blend the 5th-fret double stops on strings 1 & 2 with quick hammer-ons",
+        "Slide smoothly into the 7th-fret D note on string 3",
+        "Keep the touch light and vocal-like"
       ],
-      "alphaTab": ":8 0.5 2.5 4.5 0.4 2.4 4.4 1.3 2.3 | :4 2.3 0.4 4.5 2.5 | :1 0.5 |",
-      "exerciseLabel": "Ian Moss Style A Major Run"
+      "alphaTab": ":4 0.5 :8 2.3 4.3 :4 (5.2 5.1) :8 7.3 5.3 | :4 7.4 :8 5.3 7.3 :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Country-Rock Lead Fills"
+    },
+    {
+      "name": "Ian Moss's Country-Rock Guitar Solo",
+      "timeStamp": "2:35-3:15",
+      "technique": "Ian Moss Country-Blues Hybrid Double-Stops & 6ths",
+      "key": "A Major",
+      "description": "Ian Moss's melodic country-rock guitar solo. Weaves singing sliding 6ths on strings 1 & 3, pedal steel whole-step bends at the 7th fret of the G string while holding the 5th fret B string, and swift chromatic passing tones into the A tonic resolution.",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "E",
+        "F#m",
+        "D",
+        "A",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - A - E - F#m - D - A - E - A",
+      "notes": [
+        "Bend the 7th fret G string while holding the 5th fret on strings 1 and 2",
+        "Slide up into the 6th intervals at frets 6/7 and 9/10 on strings 3 and 1",
+        "Execute rapid country-blues pull-offs down the A major pentatonic box",
+        "Resolve cleanly into the ringing open A chord as the verse returns"
+      ],
+      "alphaTab": ":8 7.3 :4 (5.2 5.1) :8 (5.2 5.1) 7.3 5.3 :4 7.4 | :4 (6.3 7.1) :4 (7.3 8.1) :2 (9.3 10.1) | :8 7.3 5.3 :4 7.4 :8 5.3 7.3 :4 (5.2 5.1) | :4 (0.6 2.5 2.4 1.3) :2 (0.5 2.4 2.3 2.2 0.1) :4 r |",
+      "exerciseLabel": "Ian Moss Iconic Country-Rock Solo"
+    },
+    {
+      "name": "Accelerating Outro Sprint & Double-Time Jam",
+      "timeStamp": "3:35-4:10",
+      "technique": "Double-Time Country-Rock Strumming",
+      "key": "A Major",
+      "description": "The band accelerates into a double-time country-rock sprint, with Don Walker's boogie piano and Ian Moss's ringing chords propelling the track to its celebratory climax.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A (repeating to final crash)",
+      "notes": [
+        "Lock into the accelerating double-time rhythm without losing tempo discipline",
+        "Accentuate beats 2 and 4 to sync with Prestwich's snare roll",
+        "Conclude with a sharp, triumphant hit on the open A major chord"
+      ],
+      "alphaTab": ":8 0.5 0.5 (0.5 2.4) 0.5 :8 0.4 0.4 (0.4 2.3) 0.4 | :8 0.6 0.6 (0.6 2.5) 0.6 :4 (0.5 2.4 2.3 2.2) :4 (0.5 2.4 2.3 2.2) |",
+      "exerciseLabel": "Accelerating Outro Double-Time Jam"
     }
   ],
   "equipment": {

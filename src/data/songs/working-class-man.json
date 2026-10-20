@@ -78,8 +78,8 @@
   },
   "techniques": [
     {
-      "name": "Straight-Eighth Heartland Strumming & Arena Pentatonic Bends",
-      "description": "Locking into an immovable straight-eighth rhythm strum with tight right-hand palm muting on the verses before opening into soaring stadium leads",
+      "name": "Straight-Eighth Heartland Strumming & Steady Rhythm Drive",
+      "description": "Locking into an immovable straight-eighth rhythm strum with tight right-hand palm muting on the verses before opening into soaring stadium chords on the chorus.",
       "difficulty": "Beginner",
       "primaryTechnique": true,
       "details": {
@@ -92,12 +92,12 @@
           "Strum C in steady eighth notes with gentle palm muting",
           "Transition to F and G with firm rhythmic consistency",
           "Open up right-hand strumming into the soaring chorus (F → C → G → Am)",
-          "Solo in 8th-position C major pentatonic with melodic vocal bends"
+          "Maintain absolute metronomic timing at 132 BPM"
         ],
         "tips": [
           "Written by Journey keyboardist Jonathan Cain specifically for Jimmy Barnes",
           "The rhythm guitar must be as steady as a diesel engine—no rushing or dragging",
-          "Use a Stratocaster or Les Paul into a cranked Marshall JCM800 for authentic Australian arena crunch"
+          "Use a Stratocaster bridge pickup or Les Paul into a cranked Marshall JCM800 for authentic Australian arena crunch"
         ],
         "chords": [
           "C",
@@ -107,15 +107,47 @@
         ],
         "progression": "C - F - C - G"
       }
+    },
+    {
+      "name": "Dave Amato Arena Melodic Lead Phrasing & Wide Vocal Vibrato",
+      "description": "Emulating the expressive American arena-rock lead style recorded by guitarist Dave Amato, featuring soaring C major pentatonic target notes, full-step bends on the B string, and wide throat-like vibrato.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Box 1 and Box 2 C major pentatonic positions (frets 7-12)",
+          "Whole-step bend on fret 10 B string (A up to B) resolving straight to high C (8th fret E string)",
+          "Wide, singing vibrato matching Barnesy's vocal phrasing",
+          "Overdriven tube saturation with long sustain"
+        ],
+        "sequence": [
+          "Establish melodic anchor on the 8th and 10th frets of strings 1 and 2",
+          "Bend fret 10 B string up a full tone to the major 7th / octave root",
+          "Release smoothly into sweet 3rd intervals across the G and B strings",
+          "Lock into the rhythm section's downbeat hits during transitional phrases"
+        ],
+        "tips": [
+          "Dave Amato (later of REO Speedwagon) laid down the soaring session leads in Los Angeles under producer Bob Clearmountain",
+          "Support the 10th fret ring-finger bend with your index and middle fingers on frets 8 and 9",
+          "Add an overdrive pedal like a Boss SD-1 or Tube Screamer into the front of the Marshall to push creamy upper harmonics"
+        ],
+        "chords": [
+          "F",
+          "C",
+          "G",
+          "Am"
+        ],
+        "progression": "F - C - G - Am - F - C - G"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Driving Verse Rhythm",
-      "timeStamp": "0:00-0:45",
-      "technique": "Palm Muted Eighth-Note Drive",
+      "name": "Intro Synth Hook & Driving Entry",
+      "timeStamp": "0:00-0:20",
+      "technique": "Driving Power Chord Accents",
       "key": "C Major",
-      "description": "The honest, driving rhythm guitar bed supporting Jimmy Barnes's legendary vocal narrative.",
+      "description": "The song opens with Jonathan Cain's iconic synthesizer ostinato before the full band explodes into a driving straight-eighth groove.",
       "chords": [
         "C",
         "F",
@@ -123,19 +155,59 @@
       ],
       "progression": "C - F - C - G",
       "notes": [
-        "Steady straight-eighth rhythm strumming",
-        "Subtle palm muting during the verses",
-        "Accent downbeats cleanly"
+        "Chugged straight-eighth rhythm locked with the bass drum",
+        "Accented downstrokes hitting the 1 of each bar",
+        "Crisp palm mute damping on the bridge saddles"
       ],
-      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
-      "exerciseLabel": "Driving Verse Rhythm"
+      "alphaTab": ":8 3.5 3.5 3.5 3.5 3.5 3.5 3.5 3.5 | :4 (1.6 3.5 3.4 2.3 1.2 1.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Intro Synth Hook & Driving Entry"
+    },
+    {
+      "name": "Verse 1 Heartfelt Narrative Chug",
+      "timeStamp": "0:20-0:46",
+      "technique": "Palm Muted Eighth-Note Drive",
+      "key": "C Major",
+      "description": "The honest, driving rhythm guitar bed supporting Jimmy Barnes's legendary vocal storytelling of Australian blue-collar life.",
+      "chords": [
+        "C",
+        "F",
+        "G"
+      ],
+      "progression": "C - F - C - G",
+      "notes": [
+        "Steady straight-eighth rhythm strumming with subtle heel damping",
+        "Keep the pick stroke depth shallow to prevent fret buzz",
+        "Clean transitions between root notes and chords"
+      ],
+      "alphaTab": ":8 3.5 3.5 3.5 3.5 :8 1.6 1.6 1.6 1.6 | :8 3.5 3.5 3.5 3.5 :8 3.6 3.6 3.6 3.6 |",
+      "exerciseLabel": "Verse Narrative Groove"
+    },
+    {
+      "name": "Pre-Chorus Dynamic Lift",
+      "timeStamp": "0:46-1:05",
+      "technique": "Dynamic Strum Velocity & Harmonic Build",
+      "key": "C Major",
+      "description": "Building the tension under 'He's got a simple life, and a heart of gold...', releasing the palm muting into open ring.",
+      "chords": [
+        "F",
+        "G",
+        "Am"
+      ],
+      "progression": "F - G - Am - F - G",
+      "notes": [
+        "Gradually lift palm muting across the four bars",
+        "Accentuate the emotional vi chord (Am)",
+        "Build pick velocity toward the climactic downbeat of the chorus"
+      ],
+      "alphaTab": ":4 (1.6 3.5 3.4 2.3 1.2 1.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.5 2.4 2.3 1.2 0.1) | :4 (1.6 3.5 3.4 2.3 1.2 1.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Pre-Chorus Dynamic Lift"
     },
     {
       "name": "Chorus Arena Anthem",
-      "timeStamp": "0:46-1:15",
+      "timeStamp": "1:05-1:35",
       "technique": "Anthemic Open Strumming",
       "key": "C Major",
-      "description": "The monumental Australian rock chorus 'He's a working class man'.",
+      "description": "The monumental Australian rock chorus 'He's a working class man' featuring massive open voicings and driving quarter-note accents.",
       "chords": [
         "F",
         "C",
@@ -144,33 +216,53 @@
       ],
       "progression": "F - C - G - Am - F - C - G",
       "notes": [
-        "Open, resonant chord downstrokes",
+        "Open, resonant chord downstrokes with maximum projection",
         "Accent the emotional turn to Am",
-        "Lock tight with the driving drum kick and snare"
+        "Lock tight with the driving drum kick and snare on 2 and 4"
       ],
-      "alphaTab": ":2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.5 2.4 0.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.5 2.4 2.3 1.2 0.1) |",
+      "alphaTab": ":2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.5 2.4 0.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.5 2.4 2.3 1.2 0.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :4 (3.5 2.4 0.3 1.2 0.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :1 (3.5 2.4 0.3 1.2 0.1) |",
       "exerciseLabel": "Chorus Arena Anthem"
     },
     {
-      "name": "Soaring Guitar Solo",
-      "timeStamp": "2:30-3:00",
-      "technique": "Major Pentatonic Vocal Bends",
+      "name": "Soaring Arena Lead Guitar Solo",
+      "timeStamp": "2:30-3:05",
+      "technique": "Major Pentatonic Vocal Bends & Wide Vibrato",
       "key": "C Major",
-      "description": "The soaring arena rock guitar solo in 8th-position C major pentatonic.",
+      "description": "Dave Amato's soaring arena rock guitar solo in 8th-position C major pentatonic with sweet vocal bends and sustained crying notes.",
       "chords": [
         "F",
         "C",
         "G",
         "Am"
       ],
-      "progression": "Chorus Progression",
+      "progression": "F - C - G - Am - F - C - G",
       "notes": [
-        "Full-step bends on fret 10 of the B string up to C root",
-        "Wide, singing vibrato with warm overdrive",
-        "Target chord tones on every change"
+        "Reinforced 3-finger bend on fret 10 B string up to pitch",
+        "Singing vibrato with warm tube overdrive and studio plate reverb",
+        "Smooth diatonic descent landing squarely on the tonic C note"
       ],
-      "alphaTab": ":8 8.2 10.2 8.1 10.1 :4 10.1 :4 8.1 | :8 10.2 8.2 9.3 7.3 :2 9.3 | :1 10.4 |",
-      "exerciseLabel": "Soaring Lead Guitar Solo"
+      "alphaTab": ":8 8.2 10.2 :4 10.1 :4 8.1 :8 10.2 8.2 | :8 9.3 7.3 :4 9.3 :8 10.2 8.2 :4 10.2 | :8 8.1 10.1 :4 12.1 :8 10.1 8.1 :4 10.2 | :8 8.2 10.2 :4 8.1 :2 8.2 |",
+      "exerciseLabel": "Soaring Arena Guitar Solo"
+    },
+    {
+      "name": "Outro Anthem & Driving Climax",
+      "timeStamp": "3:30-4:11",
+      "technique": "Outro Lead Fills & Dynamic Power Chords",
+      "key": "C Major",
+      "description": "The emotional climax of the song where the chorus repeats endlessly behind Barnes's iconic raw screams and screaming lead fills.",
+      "chords": [
+        "F",
+        "C",
+        "G"
+      ],
+      "progression": "F - C - G - C",
+      "notes": [
+        "Mix full open power chords with high melodic lead fills",
+        "Maintain fierce 132 BPM momentum all the way to the final fade",
+        "Keep pick hand relaxed despite the extreme high energy"
+      ],
+      "alphaTab": ":4 (1.6 3.5 3.4 2.3 1.2 1.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :8 12.1 10.1 :4 8.1 :2 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Outro Anthem & Driving Climax"
     }
   ],
   "equipment": {
@@ -191,7 +283,7 @@
         "Boss Katana-100"
       ],
       "settings": {
-        "gain": "7 (classic Aussie pub rock crunch)",
+        "gain": "7",
         "treble": "6.5",
         "middle": "7.5",
         "bass": "6",

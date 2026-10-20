@@ -89,7 +89,7 @@
   },
   "techniques": [
     {
-      "name": "Syncopated Staccato Rock Strumming & Parallel Minor Shifts",
+      "name": "Syncopated Staccato Rock Strumming & Choked Stabs",
       "description": "Punchy, militant rhythm guitar work combining palm-muted verse hits with wide-open acoustic and electric chorus strumming",
       "difficulty": "Beginner",
       "primaryTechnique": true,
@@ -123,35 +123,105 @@
         ],
         "progression": "Em - C - G - Em - C - D - B"
       }
+    },
+    {
+      "name": "Martin Rotsey & Jim Moginie Angular Horn-Doubling & Leading Tones",
+      "description": "Biting single-coil lead phrasing doubling the iconic horn fanfare, combined with sharp octave punches and the dramatic D# leading tone over the dominant B major turnaround",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "High horn melody: 12th fret high E -> 10th fret -> 7th fret -> 8th fret B",
+          "Leading tone: D# at 4th fret G string (or 1st fret D string) resolving upward to E",
+          "Sharp percussive pick attack on Stratocaster bridge/middle pickup"
+        ],
+        "sequence": [
+          "Punch the brass-line melody in tight unison with Rob Hirst's snare accents",
+          "Sustain the high notes with crisp, rapid finger vibrato",
+          "Dig in hard on the B major turnaround to emphasize the dramatic tension"
+        ],
+        "tips": [
+          "Use a Stratocaster in the middle or bridge pickup position with slight compression",
+          "Keep pick strokes short, precise, and detached (staccato) to match brass articulation",
+          "Do not allow open strings to bleed over the sharp rhythmic rests"
+        ],
+        "chords": [
+          "Em",
+          "G",
+          "A",
+          "B"
+        ],
+        "progression": "Em - G - A - B"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Stabs",
-      "timeStamp": "0:00-0:58",
-      "technique": "Syncopated Staccato Rock Strumming",
+      "name": "Intro Bass Riff & Staccato Guitar Punches",
+      "timeStamp": "0:00-0:30",
+      "technique": "Syncopated Staccato Rock Strumming & Choked Stabs",
       "key": "E Minor",
-      "description": "Peter Gifford's iconic bassline answered by sharp E, G, and A guitar punches.",
+      "description": "Peter Gifford's iconic pulsing bassline answered by sharp, syncopated E, G, and A power chord punches.",
       "chords": [
-        "E",
-        "G",
-        "A"
+        "E5",
+        "G5",
+        "A5"
       ],
-      "progression": "E - G - A - E",
+      "progression": "E5 - G5 - A5 - E5",
       "notes": [
-        "Leave plenty of air and silence in the first two bars",
-        "Strike G and A decisively on the syncopated accents",
-        "Mute strings cleanly after each hit"
+        "Leave dynamic space and silence during the initial bass pedal",
+        "Snap sharply into the G5 and A5 hits with immediate fret-hand muting",
+        "Let the silence breathe between the hits"
       ],
-      "alphaTab": ":1 (0.6 2.5 2.4) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) (0.5 2.4 2.3 2.2) | :1 (0.6 2.5 2.4 1.3 0.2 0.1) |",
-      "exerciseLabel": "Verse Syncopated Stabs"
+      "alphaTab": ":1 (0.6 2.5 2.4) | :2 (3.6 5.5 5.4) :2 (0.5 2.4 2.3) | :1 (0.6 2.5 2.4) |",
+      "exerciseLabel": "Intro Staccato Punches"
     },
     {
-      "name": "Chorus ('How Can We Dance')",
+      "name": "Verse 1 Outback Storytelling & Choked Hits",
+      "timeStamp": "0:30-0:58",
+      "technique": "Syncopated Staccato Rock Strumming & Choked Stabs",
+      "key": "E Minor",
+      "description": "Peter Garrett delivers the urgent environmental narrative ('Out where the river broke...') over sparse, rhythmic guitar chugs.",
+      "chords": [
+        "Em",
+        "G",
+        "A",
+        "Em"
+      ],
+      "progression": "Em - G - A - Em",
+      "notes": [
+        "Keep the rhythm taut and dry with palm muting",
+        "Strike the G and A chords on the upbeats of beats 2 and 4",
+        "Leave maximum headroom for the vocal delivery"
+      ],
+      "alphaTab": ":1 (0.6 2.5 2.4 0.3 0.2 0.1) | :2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.5 2.4 2.3 2.2 0.1) | :1 (0.6 2.5 2.4 0.3 0.2 0.1) |",
+      "exerciseLabel": "Verse Choked Stabs"
+    },
+    {
+      "name": "Pre-Chorus Eighth-Note March ('The Time Has Come')",
+      "timeStamp": "0:58-1:14",
+      "technique": "Driving Downstroke March",
+      "key": "E Minor",
+      "description": "The rhythm section locks into relentless eighth-note downstrokes on A and G, marching with increasing tension toward the chorus.",
+      "chords": [
+        "A",
+        "G"
+      ],
+      "progression": "A - G - A - G",
+      "notes": [
+        "Drive the tempo with steady eighth-note downstrokes at 125 BPM",
+        "Crescendo gradually over the four measures",
+        "Prepare for the explosive dynamic burst into the chorus"
+      ],
+      "alphaTab": ":8 (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :8 (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) (0.5 2.4 2.3 2.2) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Pre-Chorus Driving Downstrokes"
+    },
+    {
+      "name": "Chorus Explosion ('How Can We Dance')",
       "timeStamp": "1:14-1:45",
       "technique": "Anthemic Open-Chord Strumming",
       "key": "E Minor",
-      "description": "The song explodes into E minor with full acoustic and electric strumming before the dramatic D to B turnaround.",
+      "description": "The song explodes into full stadium power on 'How can we dance when our earth is turning?', resolving through Em, C, G, D, and B.",
       "chords": [
         "Em",
         "C",
@@ -161,33 +231,56 @@
       ],
       "progression": "Em - C - G - Em - C - D - B",
       "notes": [
-        "Let all 6 strings ring out on Em and G for maximum size",
-        "Give C major two beats before resolving to G major for a full bar",
-        "Build intensity on D major and hold the B major dominant chord"
+        "Unleash full-arm strums across all six strings on Em and G",
+        "Clean change into the C major cowboy chord",
+        "Hit the dominant B major barre chord with decisive tension on beat 3"
       ],
-      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.6 2.5 2.4 0.3 0.2 0.1) (3.5 2.4 0.3 1.2 0.1) | :2 (0.4 2.3 3.2 2.1) (2.5 4.4 4.3 4.2 2.1) |",
-      "exerciseLabel": "Chorus Progression"
+      "alphaTab": ":2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) | :1 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (0.6 2.5 2.4 0.3 0.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) | :2 (0.4 2.3 3.2 2.1) :2 (2.5 4.4 4.3 4.2 2.1) |",
+      "exerciseLabel": "Chorus Power Progression"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "0:00-0:30",
-      "technique": "E Minor to Harmonic Dominant Lead Line",
+      "name": "Horn Section Doubling & Lead Guitar Break",
+      "timeStamp": "2:30-3:00",
+      "technique": "Martin Rotsey & Jim Moginie Angular Horn-Doubling & Leading Tones",
       "key": "E Minor",
-      "description": "Melodic E minor scale exercise highlighting the D# leading tone over the B major turnaround chord.",
+      "description": "Martin Rotsey and Jim Moginie double the iconic brass fanfare riff with biting Stratocaster single-coil cut, weaving punchy octaves and resolving on the dramatic D# leading tone of the B major chord.",
+      "chords": [
+        "Em",
+        "G",
+        "A",
+        "B"
+      ],
+      "progression": "Em - G - A - B",
+      "notes": [
+        "Play the horn melody cleanly at the 12th and 10th frets of the high E string",
+        "Keep note attacks detached and punchy like brass stabs",
+        "Hit the D# leading tone on the 4th fret G string to outline the major V chord B",
+        "Sustain into the crashing return of the chorus"
+      ],
+      "alphaTab": ":4 12.1 :8 10.1 12.1 :4 7.1 :4 8.2 | :4 7.2 :8 5.2 7.2 :2 4.3 | :4 12.1 :8 10.1 12.1 :4 14.1 :4 15.1 | :2 14.1 :2 (2.5 4.4 4.3 4.2 2.1) |",
+      "exerciseLabel": "Brass & Lead Guitar Fanfare"
+    },
+    {
+      "name": "Final Stadium Chorus & Marching Outro",
+      "timeStamp": "3:00-4:16",
+      "technique": "High-Energy Anthem Strumming & Sudden Stop",
+      "key": "E Minor",
+      "description": "Maximum stadium energy as the horns, guitars, and Garrett's impassioned vocals chant the chorus, culminating in sudden dramatic halts.",
       "chords": [
         "Em",
         "C",
         "G",
+        "D",
         "B"
       ],
-      "progression": "i - bVI - bIII - V",
+      "progression": "Em - C - G - D - B (repeating to sudden stop)",
       "notes": [
-        "Play open E minor notes smoothly in first position",
-        "Notice how the 4th-string 1st fret (D#) creates dominant pull back to E",
-        "Use alternate picking throughout"
+        "Maintain fierce 125 BPM downstroke intensity",
+        "Accentuate the high 12th and 15th fret lead fills",
+        "Stop dead on the final B chord hit with absolute silence"
       ],
-      "alphaTab": ":8 0.6 2.6 3.6 0.5 2.5 3.5 0.4 2.4 | :4 2.4 1.4 2.4 0.4 | :1 0.6 |",
-      "exerciseLabel": "E Minor & Leading Tone Run"
+      "alphaTab": ":8 12.1 12.1 :4 15.1 :8 14.1 12.1 :4 14.2 | :4 (0.6 2.5 2.4) :4 (3.5 5.4) :2 (2.5 4.4 4.3 4.2) |",
+      "exerciseLabel": "Outro Climax & Sudden Stop"
     }
   ],
   "equipment": {

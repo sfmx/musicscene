@@ -82,35 +82,61 @@
   },
   "techniques": [
     {
-      "name": "Soulful Blues-Rock Strat Phrasing & Dynamic Push-Pull",
-      "description": "Ian Moss's masterclass in combining A major and minor pentatonic scales, singing Stratocaster neck-pickup tone, aggressive right-hand attack, and expressive vocal string bending",
-      "difficulty": "Advanced",
+      "name": "Driving Blues Shuffle Chug & Palm Muting",
+      "description": "High-energy straight-eighth boogie shuffle groove driven by root-fifth and root-sixth power chord stretches with percussive right-hand palm muting",
+      "difficulty": "Intermediate",
       "primaryTechnique": true,
       "details": {
         "notes": [
-          "Scale switching: Moving fluidly between A major pentatonic (sweet 3rd C#) and A minor pentatonic (gritty b3rd C)",
-          "Over-bends: Bending the 7th fret G string (D) up a full step to E with wide, slow vibrato",
-          "Double stops: Striking the 5th fret B and high E strings simultaneously to punch through the mix"
+          "A5/A6: 0-2-X-X-X-X alternating with 0-4-X-X-X-X",
+          "D5/D6: X-0-2-X-X-X alternating with X-0-4-X-X-X",
+          "E5/E6: 0-2-X-X-X-X on low E alternating with 0-4-X-X-X-X"
         ],
         "sequence": [
-          "Lock into the driving 128 BPM straight-eighth shuffle groove",
-          "Dial in a responsive tube overdrive that cleans up when rolling off guitar volume",
-          "Practice major-to-minor pentatonic blending over the A-D-E progression",
-          "Build tension during the solo climax by shifting into high 17th-position minor blues box runs"
+          "Rest the palm heel lightly across the bridge saddles for tight low-end chug",
+          "Drive continuous eighth notes at 128 BPM locking with the bass and drums",
+          "Unmute sharply on the G major chord accents to give the shuffle dramatic push"
         ],
         "tips": [
-          "Select the neck pickup on a Fender Stratocaster for warm, round, vocal sustain on lead fills",
-          "Dig in hard with a medium pick to make the initial transient pop like a horn stab",
-          "Do not rush the solo—Ian Moss leaves deliberate pauses that allow the rhythm section to surge forward"
+          "Keep the fret hand thumb hooked over the top of the neck for fretboard anchor stability",
+          "Use a Stratocaster bridge pickup or bridge/middle for punchy rhythm cut",
+          "Don't drag the tempo; maintain aggressive Australian pub rock forward drive"
+        ],
+        "chords": [
+          "A5",
+          "D5",
+          "E5",
+          "G"
+        ],
+        "progression": "A5 - D5 - E5 - A5"
+      }
+    },
+    {
+      "name": "Ian Moss Soulful Vocal Bends & Pentatonic Blending",
+      "description": "Ian Moss's signature lead guitar approach: seamlessly blending A major pentatonic (sweet C# 3rd) with A minor pentatonic (gritty C natural), weeping whole-step overbends, and singing vocal sustain",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Target sweet C# major 3rd at 14th fret G string and 11th fret D string",
+          "Full whole-step bends at 7th fret G string (D up to E) and 17th fret high E string",
+          "Punchy double stops at 5th fret strings 1 & 2, and 14th fret strings 2 & 3"
+        ],
+        "sequence": [
+          "Establish high presence on the neck pickup of a cranked valve amplifier",
+          "Begin with sparse vocal-like phrasing before exploding into high-register blues runs",
+          "Apply wide, slow, singing finger vibrato to every sustained note"
+        ],
+        "tips": [
+          "Select the Stratocaster neck single-coil for warm, woody, singing sustain",
+          "Dig in hard with the pick edge to make the initial transient pop like a horn stab",
+          "Leave dynamic breathing space between phrases to let the rhythm section surge"
         ],
         "chords": [
           "A",
           "D",
           "E",
-          "G",
-          "A5",
-          "D5",
-          "E5"
+          "G"
         ],
         "progression": "A - D - E - G"
       }
@@ -118,34 +144,11 @@
   ],
   "sections": [
     {
-      "name": "Driving Rhythm Shuffle",
-      "timeStamp": "0:00-0:45",
-      "technique": "Blues Shuffle Chug & Palm Muting",
+      "name": "Intro Slow-Burn Electric Piano & Guitar Chime",
+      "timeStamp": "0:00-0:30",
+      "technique": "Open Ringing Chords & Subtle Lead Fills",
       "key": "A Major",
-      "description": "High-energy driving rhythm guitar chug laying the foundation for Ian Moss's passionate lead vocal",
-      "alphaTab": "\\tempo 128 . \\ts 4 4\n:8 0.5 0.5 2.4 2.4 0.5 0.5 2.4 2.4 | :8 0.4 0.4 2.3 2.3 0.4 0.4 2.3 2.3 | :8 0.6 0.6 2.5 2.5 0.6 0.6 2.5 2.5 | :8 0.5 0.5 2.4 2.4 :2 0.5 |",
-      "exerciseLabel": "Driving Pub Rock Shuffle",
-      "chords": [
-        "A5",
-        "D5",
-        "E5"
-      ],
-      "progression": "A5 - D5 - E5 - A5",
-      "notes": [
-        "A",
-        "E",
-        "D",
-        "B"
-      ]
-    },
-    {
-      "name": "Legendary Stratocaster Blues Solo",
-      "timeStamp": "2:30-3:35",
-      "technique": "Vocal String Bending & Pentatonic Blending",
-      "key": "A Major",
-      "description": "Ian Moss's crowning guitar achievement, revered as one of the finest blues-rock solos ever put to tape",
-      "alphaTab": "\\tempo 128 . \\ts 4 4\n:2 7.3 :4 5.2 8.2 | :1 8.2 | :4 7.3 :8 5.3 7.3 :2 5.2 | :1 5.1 |",
-      "exerciseLabel": "Bow River Solo Opening Phrasing",
+      "description": "Don Walker's electric piano sets the moody Australian heartland scene, answered by Ian Moss's warm ringing open chords.",
       "chords": [
         "A",
         "D",
@@ -154,13 +157,118 @@
       ],
       "progression": "A - D - E - G",
       "notes": [
+        "Play with gentle, ringing dynamics as the band builds atmosphere",
+        "Let the open high E and B strings shimmer across the A and D shapes",
+        "Hit the G major chord decisively on the turnaround"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Intro Atmospheric Chords"
+    },
+    {
+      "name": "Driving Rhythm Shuffle & Verse 1",
+      "timeStamp": "0:30-1:15",
+      "technique": "Driving Blues Shuffle Chug & Palm Muting",
+      "key": "A Major",
+      "description": "The band locks into the unmistakable 128 BPM pub rock shuffle underneath Ian Moss's passionate lead vocal.",
+      "chords": [
+        "A5",
+        "D5",
+        "E5",
+        "A5"
+      ],
+      "progression": "A5 - D5 - E5 - A5",
+      "notes": [
+        "Tight palm muting on the root-fifth and root-sixth power chord stretches",
+        "Keep the eighth-note picking steady and unyielding",
+        "Open up the muting on the chord changes"
+      ],
+      "alphaTab": ":8 0.5 0.5 2.4 2.4 0.5 0.5 2.4 2.4 | :8 0.4 0.4 2.3 2.3 0.4 0.4 2.3 2.3 | :8 0.6 0.6 2.5 2.5 0.6 0.6 2.5 2.5 | :8 0.5 0.5 2.4 2.4 :2 (0.5 2.4) |",
+      "exerciseLabel": "Driving Pub Rock Shuffle"
+    },
+    {
+      "name": "Chorus Anthem 'Money in My Pocket'",
+      "timeStamp": "1:15-1:45",
+      "technique": "Stadium Power Strumming",
+      "key": "A Major",
+      "description": "Explosive singalong chorus ('I got the money in my pocket, I got the need to get away') with ringing open chords.",
+      "chords": [
         "A",
-        "C",
-        "C#",
         "D",
         "E",
         "G"
-      ]
+      ],
+      "progression": "A - D - E - G",
+      "notes": [
+        "Lift all muting and strike full open chords across all six strings",
+        "Drive the A to D transition with maximum downstroke punch",
+        "Accent the G major subtonic lift into the turnaround"
+      ],
+      "alphaTab": ":2 (0.5 2.4 2.3 2.2 0.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Chorus Power Progression"
+    },
+    {
+      "name": "Bridge Minor Descent & Tension Build",
+      "timeStamp": "1:45-2:25",
+      "technique": "Minor Barre Arpeggiation & Dynamic Build",
+      "key": "F# Minor / A Major",
+      "description": "Introspective minor detour ('Any other day I would have held you...') stepping through F#m, D, E, and C before launching the solo.",
+      "chords": [
+        "F#m",
+        "D",
+        "E",
+        "C"
+      ],
+      "progression": "F#m - D - E - C",
+      "notes": [
+        "Barre the 2nd fret cleanly for the F#m chord",
+        "Crescendo on the C major borrowed flat-III chord",
+        "Set up the explosive entrance of Ian Moss's guitar solo"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4 2.3 2.2 2.1) :2 (0.4 2.3 3.2 2.1) | :2 (0.6 2.5 2.4 1.3 0.2 0.1) :2 (3.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Bridge Minor Descent"
+    },
+    {
+      "name": "Ian Moss's Legendary Stratocaster Guitar Solo",
+      "timeStamp": "2:25-3:35",
+      "technique": "Ian Moss Soulful Vocal Bends & Pentatonic Blending",
+      "key": "A Major / A Minor Pentatonic",
+      "description": "Widely hailed as one of the greatest Australian rock solos of all time. Moss blends stinging A minor blues aggression with sweet A major pentatonic chord tones, weeping whole-step bends at the 7th fret of the G string and 17th fret of the high E, and soulful phrasing that sings with unmatched vocal expression.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "G"
+      ],
+      "progression": "A - D - E - G",
+      "notes": [
+        "Start on the high E string at fret 5 with vocal-like blues phrasing",
+        "Execute a crying whole-step bend on the 7th fret G string with slow vibrato",
+        "Ascend into the high 14th/17th fret register over the E-to-G chords",
+        "Climax with a screaming 17th-fret whole-step bend and fluid double-stop resolution"
+      ],
+      "alphaTab": ":4 5.1 :8 8.2 5.2 :4 7.3 :8 5.3 7.3 | :4 7.3 :8 5.3 7.3 :4 5.4 :4 7.4 | :8 14.3 12.3 :4 14.4 :8 12.2 15.2 :4 17.1 | :2 17.1 :4 (5.2 5.1) :4 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Ian Moss Legendary Guitar Solo"
+    },
+    {
+      "name": "Outro Jam & Dual-Guitar Power Climax",
+      "timeStamp": "3:35-4:23",
+      "technique": "High-Register Blues Ripping & Outro Jam",
+      "key": "A Major",
+      "description": "The band enters full arena overdrive, with Ian Moss delivering furious high-register blues licks as the rhythm section gallops to the final crashing chord.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "G"
+      ],
+      "progression": "A - D - E - G (repeating to final crash)",
+      "notes": [
+        "Maintain maximum downstroke power on the repeating A - D - E - G cadence",
+        "Weave screaming bends at the 17th and 19th frets of the high E string",
+        "Hit the final sustained A chord with roaring Marshall power-tube overdrive"
+      ],
+      "alphaTab": ":8 17.1 15.1 14.1 15.1 :4 17.1 :4 19.1 | :4 (0.5 2.4 2.3) :4 (0.4 2.3 3.2) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Outro Climax & Solo Jam"
     }
   ],
   "equipment": {

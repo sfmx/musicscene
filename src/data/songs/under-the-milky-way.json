@@ -115,15 +115,45 @@
         ],
         "progression": "Am7 - Fmaj7 - G6 - Em7"
       }
+    },
+    {
+      "name": "Marty Willson-Piper & Peter Koppes Melodic EBow / Synth-Guitar Phrasing",
+      "description": "Infinite-sustain melodic phrasing using an EBow or volume swells, navigating the A natural minor (Aeolian) scale with weeping slides and bagpipe-like Celtic inflections",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Target evocative 9th (B) and 4th (D) degrees on strings 2 and 3",
+          "Slide smoothly along the G string: 5 -> 7 -> 9, and B string: 8 -> 10 -> 12 -> 13",
+          "Continuous infinite sustain mimicking the Synclavier-processed bagpipe effect"
+        ],
+        "sequence": [
+          "Position the EBow directly over the G string for continuous string vibration",
+          "Slide between notes without picking to preserve the unbroken, vocal-like glide",
+          "Apply gentle, slow fret-hand vibrato to bloom each sustained note into the reverb wash"
+        ],
+        "tips": [
+          "Use an analog delay set to around 380ms with 4 repeats to float behind the lead line",
+          "If playing without an EBow, use a compressor/sustainer pedal and pick very softly near the neck",
+          "Emphasize the mournful Celtic mood by taking your time on the transitions"
+        ],
+        "chords": [
+          "C",
+          "G",
+          "Fmaj7",
+          "Am7"
+        ],
+        "progression": "C - G - Fmaj7 - Am7"
+      }
     }
   ],
   "sections": [
     {
-      "name": "Intro & Verse Shimmer",
-      "timeStamp": "0:00-1:08",
-      "technique": "12-String Style Open-Drone Strumming",
+      "name": "Intro 12-String Shimmer & Ambient Drone",
+      "timeStamp": "0:00-0:25",
+      "technique": "12-String Style Open-Drone Strumming & Arpeggiated Extensions",
       "key": "A Minor",
-      "description": "Hypnotic nocturnal progression floating through Am7, Fmaj7, G6, and Em7 with ringing open treble strings.",
+      "description": "Karin Jansson and Steve Kilbey's iconic opening progression floating through Am7, Fmaj7, G6, and Em7 with ringing open treble strings.",
       "chords": [
         "Am7",
         "Fmaj7",
@@ -132,19 +162,40 @@
       ],
       "progression": "Am7 - Fmaj7 - G6 - Em7",
       "notes": [
-        "Let the open high E string ring continuously across all four chords",
+        "Let the open high E and B strings ring continuously across all four chords",
         "Keep your strumming hand flowing in a relaxed 126 BPM 16th-note wave",
         "Emphasize the dreamy major-7th color of Fmaj7"
       ],
-      "alphaTab": ":2 (0.5 2.4 0.3 1.2 0.1) (0.5 2.4 0.3 1.2 0.1) | :2 (3.5 3.4 2.3 1.2 0.1) (3.5 3.4 2.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 0.2 0.1) (0.6 2.5 2.4 0.3 3.2 0.1) | :1 (0.5 2.4 0.3 1.2 0.1) |",
-      "exerciseLabel": "Verse Open-String Voicings"
+      "alphaTab": ":2 (0.5 2.4 0.3 1.2 0.1) :2 (3.5 3.4 2.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 0.2 0.1) :2 (0.6 2.5 2.4 0.3 3.2 0.1) |",
+      "exerciseLabel": "Intro Open-Drone Shimmer"
     },
     {
-      "name": "Chorus ('Wish I Knew')",
-      "timeStamp": "1:08-1:38",
-      "technique": "Stepwise Aeolian Descent",
+      "name": "Verse 1 Nocturnal Strumming",
+      "timeStamp": "0:25-1:08",
+      "technique": "12-String Style Open-Drone Strumming & Arpeggiated Extensions",
       "key": "A Minor",
-      "description": "The chorus descends stepwise down the A natural minor scale (G - Fmaj7 - Em7) before settling back into Am7.",
+      "description": "Steve Kilbey delivers the immortal opening lines ('Sometimes when this place gets kind of empty...') over shimmering acoustic drones.",
+      "chords": [
+        "Am7",
+        "Fmaj7",
+        "G6",
+        "Em7"
+      ],
+      "progression": "Am7 - Fmaj7 - G6 - Em7",
+      "notes": [
+        "Play with gentle, hypnotic dynamics",
+        "Ensure the open high E string sounds clearly across the Fmaj7 mini-barre",
+        "Lock smoothly with the low bass pulses on beats 1 and 3"
+      ],
+      "alphaTab": ":2 (0.5 2.4 0.3 1.2 0.1) :2 (3.5 3.4 2.3 1.2 0.1) | :2 (3.6 2.5 0.4 0.3 0.2 0.1) :2 (0.6 2.5 2.4 0.3 3.2 0.1) |",
+      "exerciseLabel": "Verse Aeolian Progression"
+    },
+    {
+      "name": "Chorus 'Wish I Knew'",
+      "timeStamp": "1:08-1:38",
+      "technique": "Stepwise Aeolian Walkdown",
+      "key": "A Minor",
+      "description": "The chorus descends stepwise down the A natural minor scale ('Wish I knew what you were looking for...') through G, Fmaj7, and Em7 to Am7.",
       "chords": [
         "G",
         "Fmaj7",
@@ -157,29 +208,72 @@
         "Notice how resolving Em7 to Am7 creates a wistful, unresolved pull",
         "Repeat the four-chord cycle twice per chorus"
       ],
-      "alphaTab": ":2 (3.6 2.5 0.4 0.3 0.2 3.1) (1.6 3.5 3.4 2.3 1.2 0.1) | :2 (0.6 2.5 2.4 0.3 3.2 0.1) (0.5 2.4 0.3 1.2 0.1) |",
+      "alphaTab": ":2 (3.6 2.5 0.4 0.3 0.2 3.1) :2 (1.6 3.5 3.4 2.3 1.2 0.1) | :2 (0.6 2.5 2.4 0.3 3.2 0.1) :2 (0.5 2.4 0.3 1.2 0.1) |",
       "exerciseLabel": "Chorus Descending Walkdown"
     },
     {
-      "name": "Scale Practice Exercise",
-      "timeStamp": "2:48-3:30",
-      "technique": "EBow-Style Sustained A Minor Lead",
+      "name": "Verse 2 Interlocking Electric Arpeggios",
+      "timeStamp": "1:38-2:20",
+      "technique": "Interlocking Clean Electric Arpeggios",
       "key": "A Minor",
-      "description": "Legato single-note melody on the G and B strings capturing the ambient, bagpipe-like solo section.",
+      "description": "Marty Willson-Piper and Peter Koppes layer delicate Rickenbacker clean arpeggios that interlock seamlessly with the acoustic rhythm bed.",
+      "chords": [
+        "Am7",
+        "Fmaj7",
+        "G6",
+        "Em7"
+      ],
+      "progression": "Am7 - Fmaj7 - G6 - Em7",
+      "notes": [
+        "Pick cleanly through the inner strings with alternate picking",
+        "Let each note ring and overlap like a celestial harp",
+        "Use subtle chorus and analog delay for stereo width"
+      ],
+      "alphaTab": ":4 0.5 :8 2.4 0.3 :4 1.2 :8 0.1 1.2 | :4 3.5 :8 3.4 2.3 :4 1.2 :8 0.1 1.2 | :4 3.6 :8 0.4 0.3 :4 0.2 :8 0.1 0.2 | :2 (0.6 2.5 2.4 0.3 3.2 0.1) :2 (0.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Interlocking Electric Arpeggios"
+    },
+    {
+      "name": "Iconic EBow / Synth-Guitar Solo",
+      "timeStamp": "2:48-3:30",
+      "technique": "Marty Willson-Piper & Peter Koppes Melodic EBow / Synth-Guitar Phrasing",
+      "key": "A Minor",
+      "description": "One of the most haunting instrumental solos in rock history. Created using an EBow on an electric guitar processed through a Synclavier to simulate Celtic bagpipes, soaring through A natural minor with infinite sustain, slow weeping slides, and poignant Aeolian melodies.",
       "chords": [
         "C",
         "G",
         "Fmaj7",
         "Am7"
       ],
-      "progression": "bIII - bVII - bVImaj7 - i7",
+      "progression": "C - G - Fmaj7 - Am7",
       "notes": [
-        "Use slides and hammer-ons along the 2nd and 3rd strings to mimic infinite sustain",
-        "Emphasize the 9th (B) and 4th (D) scale degrees over the A minor drone",
-        "Add wide, slow vibrato on the long notes"
+        "Slide up the G string (frets 5 -> 7 -> 9) with sustained, unbroken tone",
+        "Ascend the B string through the poignant 9th (12th fret B) and minor 3rd (13th fret C)",
+        "Let the note weep into the plate reverb before descending gracefully",
+        "Resolve softly onto the A minor tonic triad"
       ],
-      "alphaTab": ":4 5.3 7.3 5.2 8.2 | :2 5.2 7.3 | :4 5.3 4.3 2.3 4.3 | :1 2.3 |",
-      "exerciseLabel": "Ambient Legato Solo Line"
+      "alphaTab": ":4 5.3 :8 7.3 9.3 :2 9.3 | :4 10.2 :8 8.2 10.2 :2 12.2 | :4 13.2 :8 12.2 10.2 :4 8.2 :4 10.2 | :2 9.3 :2 (0.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Iconic EBow Celtic Solo"
+    },
+    {
+      "name": "Final Chorus & Fading Starlight Outro",
+      "timeStamp": "3:30-4:57",
+      "technique": "Ambient Lead Echoes & 12-String Fade",
+      "key": "A Minor",
+      "description": "The song glides toward infinity as Kilbey's vocals echo into the distance and Koppes weaves shimmering high-octave lead phrases above the cyclical strumming.",
+      "chords": [
+        "G",
+        "Fmaj7",
+        "Em7",
+        "Am7"
+      ],
+      "progression": "G - Fmaj7 - Em7 - Am7 (repeating to ambient fade)",
+      "notes": [
+        "Maintain the hypnotic, steady 16th-note strumming flow",
+        "Add high 12th-fret single-note ornaments on the top strings",
+        "Let the final Am7 chord ring out into quiet silence"
+      ],
+      "alphaTab": ":8 12.1 10.1 8.1 10.1 :4 12.1 :4 8.2 | :2 (0.6 2.5 2.4 0.3 3.2 0.1) :2 (0.5 2.4 0.3 1.2 0.1) |",
+      "exerciseLabel": "Outro Chorus & Ambient Fade"
     }
   ],
   "equipment": {
