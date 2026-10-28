@@ -219,6 +219,11 @@ import recklessData from '@/data/songs/reckless.json';
 import eagleRockData from '@/data/songs/eagle-rock.json';
 import theseDaysData from '@/data/songs/these-days.json';
 import holyGrailData from '@/data/songs/holy-grail.json';
+import whileMyGuitarGentlyWeepsData from '@/data/songs/while-my-guitar-gently-weeps.json';
+import dontLookBackInAngerData from '@/data/songs/dont-look-back-in-anger.json';
+import whatsMySceneData from '@/data/songs/whats-my-scene.json';
+import theWindCriesMaryData from '@/data/songs/the-wind-cries-mary.json';
+import plugInBabyData from '@/data/songs/plug-in-baby.json';
 
 export interface SongData {
   songInfo: {
@@ -656,6 +661,11 @@ const songDatabase: Record<string, SongData> = {
   'eagle-rock': eagleRockData as SongData,
   'these-days': theseDaysData as SongData,
   'holy-grail': holyGrailData as SongData,
+  'while-my-guitar-gently-weeps': whileMyGuitarGentlyWeepsData as SongData,
+  'dont-look-back-in-anger': dontLookBackInAngerData as SongData,
+  'whats-my-scene': whatsMySceneData as SongData,
+  'the-wind-cries-mary': theWindCriesMaryData as SongData,
+  'plug-in-baby': plugInBabyData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

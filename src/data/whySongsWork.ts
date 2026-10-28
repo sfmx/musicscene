@@ -5418,6 +5418,165 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'dont-look-back-in-anger': {
+    slug: 'dont-look-back-in-anger',
+    songTitle: "Don't Look Back in Anger",
+    artist: 'Oasis',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Surprise',
+    coreSecret: 'The Major E7 Secondary Dominant (V of vi) and Borrowed Minor iv (Fm)',
+    emotionalHook: 'In the key of C major, diatonic theory prescribes an Em chord (iii). Replacing it with a dominant E7 introduces a chromatic G# leading tone that forcefully pulls into Am and F. In the pre-chorus, Noel shifts from F major to borrowed F minor (iv), introducing the poignant Ab note from C Aeolian that gives the ballad its bittersweet stadium tear-jerker status.',
+    romanProgression: 'I - V - vi - V/vi - IV - V - I - vi - V',
+    chords: ['C', 'G', 'Am', 'E7', 'F', 'G', 'C', 'Am', 'G'],
+    progressionExplanation: [
+      'C (I) to G (V): Strong, optimistic diatonic opening establishing universal pop-rock warmth.',
+      'Am (vi): Relative minor stepping stone providing brief lyrical contemplation.',
+      'E7 (V/vi): Secondary dominant with sharp G# leading tone pushing dramatically forward.',
+      'F (IV) to G (V): Subdominant to dominant lift driving into the next vocal phrase.',
+      'Fm (iv in pre-chorus): Borrowed minor subdominant introducing chromatic pathos.',
+    ],
+    voiceLeadingInsights: [
+      'The E7 chord contains G#, which creates a half-step chromatic climb between G (in C/G) and A (in Am/F).',
+      'The pre-chorus walkdown F → Fm → C features a descending chromatic inner voice: A (in F) → Ab (in Fm) → G (in C).',
+      'Noel Gallagher’s guitar solo intentionally lands on Ab when the progression moves to Fm, perfectly highlighting the borrowed chord.',
+    ],
+    guitarPerspective: 'Use open chord fingerings throughout. For the pre-chorus, lifting your 2nd finger turns the full F barre chord into F minor with zero fuss.',
+    songwriterTakeaway: 'Two secret chords can elevate a standard pop progression into immortality: use a secondary dominant (III7 or V/vi) to propel the verse forward, and a minor iv chord to break hearts in the pre-chorus.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Major Scale', slug: 'major', description: 'The diatonic foundation for the verse and singalong chorus.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'The scale used for Noel Gallagher’s soaring stadium guitar solo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The uplifting major modal scale providing universal stadium anthemic power.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open C, G, and F chords providing massive acoustic resonance.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Am and Fm chords delivering harmonic surprise and emotional depth.' },
+      ],
+    },
+  },
+
+  'whats-my-scene': {
+    slug: 'whats-my-scene',
+    songTitle: "What's My Scene",
+    artist: 'Hoodoo Gurus',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock & Power-Pop Fusion',
+    coreSecret: 'Jangly Diatonic I - V - IV Power Pop Hook with a Relative Minor Pre-Chorus Launchpad',
+    emotionalHook: 'The euphoric rush of the chorus (E - B - A - B) relies on open-string guitar resonance and crisp diatonic simplicity. What elevates the song is the pre-chorus detour into the relative minor (C#m - A - C#m - A) followed by an urgent drum-and-guitar crescendo on B, propelling the singalong chorus with maximum contrast and momentum.',
+    romanProgression: 'I - V - IV - V',
+    chords: ['E', 'B', 'A', 'B'],
+    progressionExplanation: [
+      'E (I): The muscular, ringing open guitar tonic providing pure power-pop punch.',
+      'B (V): Dominant pillar maintaining driving forward propulsion.',
+      'A (IV): Subdominant breath providing warm, relaxed vocal space.',
+      'B (V): Turnaround dominant launching the cycle repeatedly.',
+      'C#m (vi in pre-chorus): Relative minor detour adding melodic urgency.',
+    ],
+    voiceLeadingInsights: [
+      'Brad Shepherd’s intro riff plays high double stops at frets 9 and 7 while letting the open high E string ring out continuously as an unshifting pedal point.',
+      'The pre-chorus switches to a minor feel (C#m - A) to lower the energy before an ascending build on B explodes into the chorus.',
+      'The guitar solo features an ascending scalar walkup (F#m → G#m → A → B), physically climbing up the neck to raise adrenaline.',
+    ],
+    guitarPerspective: 'Keep your fret-hand fingers arched in the intro so the high E string rings open. In the verses, use tight right-hand palm muting across the lower strings to make the unmuted chorus sound colossal.',
+    songwriterTakeaway: 'A timeless power-pop anthem doesn’t require complex jazz harmony—it requires unforgettable melodic double stops, ringing open strings, and an explosive dynamic drop into the pre-chorus.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Major Scale', slug: 'major', description: 'The diatonic foundation for the vocal hooks and driving rhythm.' },
+        { name: 'E Major Pentatonic', slug: 'major', description: 'The bright scale driving the intro double-stop riff and melodic fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The primary mode delivering the energetic Australian pub-rock swagger.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Open E, B, and A chords delivering maximum ringing power-pop sustain.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'C#m and F#m chords providing narrative contrast in the pre-chorus.' },
+      ],
+    },
+  },
+
+  'the-wind-cries-mary': {
+    slug: 'the-wind-cries-mary',
+    songTitle: 'The Wind Cries Mary',
+    artist: 'Jimi Hendrix',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Parallel Harmony',
+    coreSecret: 'Chromatic Sliding Major Triads and Soulful Curtis Mayfield-Style Embellishments',
+    emotionalHook: 'Hendrix establishes effortless poetic cool by sliding parallel major triads up by half steps (Eb -> E -> F) directly into the home key. The verse layers sweet R&B hammer-on fills over gentle thumb-fretted chords, then resolves into the hook via borrowed modal chords (Db and Eb), proving that electric guitar can whisper with the nuance of sung poetry.',
+    romanProgression: 'bVII - VII - I - V - IV - I',
+    chords: ['Eb', 'E', 'F', 'C', 'Bb', 'F', 'G', 'Bb', 'Db', 'Eb', 'F'],
+    progressionExplanation: [
+      'Eb - E - F (bVII - VII - I): Parallel chromatic sliding triads launching the song with irresistible cool.',
+      'C (V) to Bb (IV) to F (I): Sweet R&B cadence embellished with delicate hammer-ons.',
+      'G (II): Major II chord providing a subtle secondary dominant lift (V of V).',
+      'Db (bVI) to Eb (bVII) to F (I): Borrowed minor-mode chords resolving with cinematic warmth.',
+    ],
+    voiceLeadingInsights: [
+      'The sliding triads maintain rigid parallel voicing on strings 2, 3, and 4, creating pure sonic color rather than classical functional voice leading.',
+      'Hendrix wraps his thumb over the neck to fret bass notes, freeing his remaining fingers to hammer on major seconds and fourths into chord tones.',
+      'The turnaround chord climb (Db → Eb → F) is a classic Mario/Aeolian cadence that brings a tender, contemplative mood.',
+    ],
+    guitarPerspective: 'Play with a relaxed thumb-over grip on the Stratocaster neck pickup with your volume pot at 7.5. Let your pick-hand stroke be gentle and feather-light.',
+    songwriterTakeaway: 'You can break standard diatonic rules by sliding entire triads chromatically into your tonic, and use thumb-over chord embellishments to turn simple rhythm accompaniment into a singing second voice.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F Major Scale', slug: 'major', description: 'The diatonic foundation for the vocal melody and sweet major third fills.' },
+        { name: 'F Major Pentatonic', slug: 'major', description: 'The lyrical scale used for Hendrix’s sweet R&B embellishments.' },
+        { name: 'F Minor Blues Scale', slug: 'blues', description: 'Provides expressive microtonal grit during the guitar solo.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The warm, melodic major mode framing the ballad’s poetic lyricism.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Parallel sliding triads and open grips creating timeless R&B warmth.' },
+      ],
+    },
+  },
+
+  'plug-in-baby': {
+    slug: 'plug-in-baby',
+    songTitle: 'Plug In Baby',
+    artist: 'Muse',
+    category: 'key-modulation',
+    categoryLabel: 'Harmonic Minor & Neoclassical Energy',
+    coreSecret: 'B Harmonic Minor Neoclassical Arpeggio Cycles Starting on the Dominant F#',
+    emotionalHook: 'Rather than starting on the home chord (Bm), Bellamy kicks off the immortal riff on the dominant F# major, highlighting the exotic A# leading tone from B Harmonic Minor. The arpeggio sweeps through F# -> G -> D -> A -> Bm, combining Bach-like counterpoint and Phrygian Dominant tension with screaming fuzz-pedal alternative rock power.',
+    romanProgression: 'V - VI - III - VII - i - V - VI - III',
+    chords: ['F#', 'G', 'D', 'A', 'Bm', 'F#', 'G', 'D'],
+    progressionExplanation: [
+      'F# (V): Dominant major chord derived from B Harmonic Minor featuring the exotic A# leading tone.',
+      'G (VI): Half-step step-up to the submediant, creating classic Spanish/Phrygian tension.',
+      'D (III): Step down to the relative major, providing a brief soaring lift.',
+      'A (VII) to Bm (i): Subtonic to tonic cadence resolving the circular phrase.',
+      'G - D - F# - Bm (Chorus): Crushing power-chord progression delivering explosive operatic release.',
+    ],
+    voiceLeadingInsights: [
+      'The introductory arpeggio riff continuously weaves across the high E, B, and G strings, pivoting around the 6th fret A# note.',
+      'Beginning on the dominant chord (F#) keeps the listener in suspense for three full measures before finally landing on the home tonic B minor.',
+      'The gated fuzz tone compresses the note attacks, making rapid alternate-picked arpeggios sound laser-tight like a synthesizer.',
+    ],
+    guitarPerspective: 'Engage a tightly gated Germanium fuzz pedal and use strict alternate picking across strings 1, 2, and 3 at 136 BPM. Anchor your picking wrist lightly for maximum speed.',
+    songwriterTakeaway: 'To write an unforgettable guitar hook, step outside natural minor and introduce the raised 7th of Harmonic Minor, then delay resolving to your home chord by opening your progression on the dominant V.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'B Harmonic Minor', slug: 'harmonic-minor', description: 'The neoclassical scale providing the exotic A# leading tone in the riff.' },
+        { name: 'B Natural Minor', slug: 'minor', description: 'The Aeolian foundation powering the driving bass and verse groove.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode that anchors the dark alternative rock mood.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Bm and Em chords providing dark tension and rock weight.' },
+        { name: 'Major Chords', slug: 'major', description: 'F#, G, and D chords delivering explosive anthemic contrast.' },
+      ],
+    },
+  },
 };
 
 /**

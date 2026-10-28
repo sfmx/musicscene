@@ -1,0 +1,400 @@
+{
+  "songInfo": {
+    "title": "The Wind Cries Mary",
+    "artist": "Jimi Hendrix",
+    "album": "Are You Experienced",
+    "released": "1967",
+    "genre": "Blues Rock",
+    "tempo": "80 BPM",
+    "duration": "3:20",
+    "key": "F Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F major",
+      "scalesUsed": [
+        {
+          "scale": "F Major Scale (Ionian)",
+          "notes": "F - G - A - Bb - C - D - E - F",
+          "application": "Diatonic chord foundation and sweet Curtis Mayfield-inspired major thirds"
+        },
+        {
+          "scale": "F Major Pentatonic",
+          "notes": "F - G - A - C - D",
+          "application": "Vocal melodic fills, hammer-ons, and delicate chord embellishments"
+        },
+        {
+          "scale": "F Minor Pentatonic / Blues Scale",
+          "notes": "F - Ab - Bb - B - C - Eb",
+          "application": "Bluesy string bends, expressive microtones, and gritty solo inflections"
+        }
+      ],
+      "modalCharacter": "Major (Ionian) infused with rich R&B and electric blues embellishments",
+      "keySignature": "1 flat (Bb)",
+      "relativeMinor": "D Minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Eb",
+          "E",
+          "F",
+          "C",
+          "Bb",
+          "F",
+          "G",
+          "Bb",
+          "Db",
+          "Eb",
+          "F"
+        ],
+        "progression": "bVII - VII - I - V - IV - I",
+        "description": "Iconic chromatic sliding chord triads moving into a tender R&B ballad groove"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "Eb - E - F - Eb - E - F",
+          "romanNumerals": "bVII - VII - I - bVII - VII - I",
+          "description": "Chromatic parallel sliding triads moving up a half step into the home key of F"
+        },
+        {
+          "section": "Verse",
+          "progression": "C - Bb - F - C - Bb - F - G - Bb - Db - Eb - F",
+          "romanNumerals": "V - IV - I - V - IV - I - II - IV - bVI - bVII - I",
+          "description": "Classic R&B ballad progression with Hendrix thumb-over grips and hammer-on embellishments"
+        },
+        {
+          "section": "Turnaround",
+          "progression": "G - Bb - Db - Eb - F",
+          "romanNumerals": "II - IV - bVI - bVII - I",
+          "description": "Ascending chromatic and modal cadence resolving into the iconic hook phrase"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "F - Eb - Bb - Ab - F - Eb - Bb - Ab - G - Bb - Db - Eb - F",
+          "romanNumerals": "I - bVII - IV - bIII - I - bVII - IV - bIII - II - IV - bVI - bVII - I",
+          "description": "Soulful solo progression cycling through flattened modal chords before the turnaround"
+        }
+      ],
+      "harmonicFunction": [
+        "F major establishes a warm, intimate tonal center with Curtis Mayfield-style double stops",
+        "Chromatic sliding triads (Eb -> E -> F) build tension and release with effortless swagger",
+        "C to Bb to F provides a comforting V - IV - I plagal-dominant cadence",
+        "Db and Eb borrowed chords (bVI and bVII) introduce haunting modal depth in the turnaround"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Hendrix Thumb-Fretted Chords & Hammer-On Embellishments",
+      "description": "Using the left-hand thumb over the top of the neck to anchor root notes on the low E string, freeing fingers 1, 2, and 4 to execute hammer-on/pull-off fills.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Wrap the thumb around to fret the 1st fret low E string (F) and 3rd fret (G)",
+          "Index finger bars the B and high E strings",
+          "Ring and pinky fingers hammer on 2nd and 4th scale degrees into major triads",
+          "Blend rhythm and lead into a seamless, conversational flow"
+        ],
+        "sequence": [
+          "Fret C chord with bass note on 3rd fret A string, hammering 5th fret D string",
+          "Slide down to Bb, executing a 3rd-to-5th fret hammer-on on the G string",
+          "Land on F major with thumb over the neck, hammering from open to 2nd fret G string",
+          "Add delicate pick-hand grace notes across the treble strings"
+        ],
+        "tips": [
+          "Lower your thumb slightly behind the neck only when playing wide chord stretches",
+          "Relax the fret-hand wrist to allow fingers 2, 3, and 4 to arc freely",
+          "Use a light touch with the pick—Hendrix's ballads depend on nuanced dynamic shading"
+        ],
+        "chords": ["C", "Bb", "F", "G"],
+        "progression": "V - IV - I - II"
+      }
+    },
+    {
+      "name": "Hybrid Major/Minor Pentatonic Expressive Soloing",
+      "description": "Jimi Hendrix's lyrical soloing approach, weaving between sweet F major pentatonic vocal lines and stinging F minor blues bends.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Target the major 3rd (A) on the 10th fret B string for sweet melodic resolution",
+          "Incorporate microtonal 'blues curls' between the minor 3rd (Ab) and major 3rd",
+          "Execute double-stops across the G and B strings for thick R&B harmonic texture",
+          "Control vibrato with gentle finger oscillations rather than wide aggressive wobbles"
+        ],
+        "sequence": [
+          "Begin with an octave slide into the 10th fret D string (C note)",
+          "Play sweet F major pentatonic thirds on strings 2 and 3 at frets 8 and 10",
+          "Bend 10th fret G string up a half-step into the major 3rd with delicate vibrato",
+          "Cascade down the scale into the chromatic turnaround chords (Db -> Eb -> F)"
+        ],
+        "tips": [
+          "Switch to the neck pickup on a Stratocaster for warm, hollow, bell-like tone",
+          "Roll guitar volume back to 7 or 8 to clean up amp gain into edge-of-breakup",
+          "Listen to vocal melodies—Hendrix conceived his solo phrases like sung words"
+        ],
+        "chords": ["F", "Eb", "Bb", "Ab", "Db"],
+        "progression": "I - bVII - IV - bIII - bVI"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Chromatic Sliding Triad Intro",
+      "timeStamp": "0:00-0:12",
+      "technique": "Parallel Sliding Triads",
+      "key": "F Major",
+      "description": "The immortal introductory riff, sliding whole triads up by half steps from Eb through E to F.",
+      "chords": ["Eb", "E", "F"],
+      "progression": "Eb - E - F - Eb - E - F",
+      "notes": [
+        "Play partial 3-string triad shapes on strings 2, 3, and 4",
+        "Slide crisply from 5th/6th fret (Eb) through 6th/7th fret (E) to 7th/8th fret (F)",
+        "Let the final F chord ring with a gentle low F bass strike"
+      ],
+      "alphaTab": ":8 (5.4 5.3 4.2) (6.4 6.3 5.2) :4 (7.4 7.3 6.2) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :8 (5.4 5.3 4.2) (6.4 6.3 5.2) :4 (7.4 7.3 6.2) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Chromatic Triad Slide Intro"
+    },
+    {
+      "name": "Hendrix Thumb-Over Verse & Embellishments",
+      "timeStamp": "0:12-0:48",
+      "technique": "Thumb-Fretted R&B Rhythm & Fills",
+      "key": "F Major",
+      "description": "Hendrix's rhythm guitar mastery on display—thumb-anchored bass notes with graceful hammer-on fills decorating C, Bb, and F.",
+      "chords": ["C", "Bb", "F"],
+      "progression": "C - Bb - F - C - Bb - F",
+      "notes": [
+        "Play C with thumb muting low E, adding a quick hammer-on on the D string",
+        "Slide down to Bb with a smooth hammer-on on the G string",
+        "Arrive at F with the thumb fretting fret 1 on the low E string"
+      ],
+      "alphaTab": ":4 (3.5 5.4 5.3 5.2) :8 3.5 5.4 :4 (1.5 3.4 3.3 3.2) :8 1.5 3.4 | :4 (1.6 3.5 3.4 2.3 1.2 1.1) :8 2.3 0.3 :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :4 (3.5 5.4 5.3 5.2) :8 3.5 5.4 :4 (1.5 3.4 3.3 3.2) :8 1.5 3.4 | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Thumb-Over Ballad Groove"
+    },
+    {
+      "name": "Tender Minor Subdominant Verse Resolution",
+      "timeStamp": "0:48-1:08",
+      "technique": "Modal Interchange & Ascending Walkup",
+      "key": "F Major",
+      "description": "The progression moves through G and Bb before stepping through Db and Eb to resolve back home on F as the vocal sings 'The wind cries Mary'.",
+      "chords": ["G", "Bb", "Db", "Eb", "F"],
+      "progression": "G - Bb - Db - Eb - F",
+      "notes": [
+        "G major provides an unexpected secondary dominant lift (V of V)",
+        "Bb steps up through borrowed bVI (Db) and bVII (Eb)",
+        "Staccato triad strikes into the gentle F resolution"
+      ],
+      "alphaTab": ":4 (3.6 5.5 5.4 4.3 3.2 3.1) (1.5 3.4 3.3 3.2 1.1) | :4 (4.5 6.4 6.3 6.2 4.1) (6.5 8.4 8.3 8.2 6.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Modal Turnaround Walkup"
+    },
+    {
+      "name": "Chromatic Riff Re-Entry",
+      "timeStamp": "1:08-1:20",
+      "technique": "Parallel Sliding Cadence",
+      "key": "F Major",
+      "description": "The signature Eb - E - F sliding triads return between verses, acting as a structural anchor and musical breath.",
+      "chords": ["Eb", "E", "F"],
+      "progression": "Eb - E - F - Eb - E - F",
+      "notes": [
+        "Light pick attack with snappy wrist flick",
+        "Ensure all three strings in each triad slide in perfect synchronization",
+        "Sets up the intimate second verse with quiet dynamic control"
+      ],
+      "alphaTab": ":8 (5.4 5.3 4.2) (6.4 6.3 5.2) :4 (7.4 7.3 6.2) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :8 (5.4 5.3 4.2) (6.4 6.3 5.2) :4 (7.4 7.3 6.2) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Sliding Triad Interlude"
+    },
+    {
+      "name": "Expressive Major/Minor Blues Solo",
+      "timeStamp": "1:50-2:25",
+      "technique": "Lyrical Blues Phrasing & Vocal Bends",
+      "key": "F Major",
+      "description": "One of the most tasteful and expressive guitar solos in classic rock—warm neck pickup tone, singing whole-step bends, and Curtis Mayfield double stops.",
+      "chords": ["F", "Eb", "Bb", "Ab", "G", "Bb", "Db", "Eb", "F"],
+      "progression": "F - Eb - Bb - Ab - F - Eb - Bb - Ab - G - Bb - Db - Eb - F",
+      "notes": [
+        "Solo played over descending chords F -> Eb -> Bb -> Ab",
+        "Gentle, vocal vibrato oscillating at the peak of bent notes",
+        "Blend of F major pentatonic sweetness and F minor blues grit",
+        "Tonal warmth achieved through the Stratocaster neck pickup with slight tube compression"
+      ],
+      "alphaTab": ":8 8.2 10.2 :4 10.2 :8 8.2 10.3 :4 10.3 | :8 8.3 10.4 8.4 :4 10.4 :2 8.3 | :8 10.3 :4 10.3 :8 8.2 10.2 :4 10.1 | :8 8.1 10.1 :4 10.1 :2 8.1 |",
+      "exerciseLabel": "Iconic Hendrix Lyric Solo"
+    },
+    {
+      "name": "Final Verse & Floating Outro Chord",
+      "timeStamp": "2:45-3:20",
+      "technique": "Rubato Outro Arpeggio & Harmonic Resolution",
+      "key": "F Major",
+      "description": "The song draws to a close with a quiet, poetic final verse, culminating in delicate sliding triads and a shimmering, floating F major chord.",
+      "chords": ["G", "Bb", "Db", "Eb", "F"],
+      "progression": "G - Bb - Db - Eb - F (fade out)",
+      "notes": [
+        "Let the final notes ring with natural room ambience",
+        "Gentle pick-hand rake across the strings on the final chord",
+        "Concludes with an open, wistful sustain that embodies the poem's lyricism"
+      ],
+      "alphaTab": ":4 (3.6 5.5 5.4 4.3 3.2 3.1) (1.5 3.4 3.3 3.2 1.1) | :4 (4.5 6.4 6.3 6.2 4.1) (6.5 8.4 8.3 8.2 6.1) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :8 (5.4 5.3 4.2) (6.4 6.3 5.2) :4 (7.4 7.3 6.2) :2 (1.6 3.5 3.4 2.3 1.2 1.1) | :1 (1.6 3.5 3.4 2.3 1.2 1.1) |",
+      "exerciseLabel": "Poetic Outro Cadence"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Fender Stratocaster (1965 Reissue or American Vintage)",
+      "alternatives": [
+        "Fender Player Stratocaster",
+        "Fender Telecaster",
+        "Gibson Les Paul (neck pickup)"
+      ],
+      "pickup": "Neck single-coil pickup for sweet, glassy, bell-like R&B warmth"
+    },
+    "amp": {
+      "recommended": "Marshall Super Lead 100W or Fender Twin Reverb",
+      "alternatives": [
+        "Fender Deluxe Reverb",
+        "Marshall JTM45",
+        "Vox AC30"
+      ],
+      "settings": {
+        "gain": "5.5",
+        "treble": "6.5",
+        "middle": "6.0",
+        "bass": "5.0",
+        "presence": "6.0"
+      }
+    },
+    "effects": {
+      "distortion": "Clean edge-of-breakup tube tone (guitar volume rolled back to 7.5)",
+      "reverb": "Subtle vintage studio plate reverb",
+      "other": "Dallas Arbiter Fuzz Face (used very subtly on the solo with rolled-off volume)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Sliding Triads & Open Position Chords",
+      "steps": [
+        "Learn the 3-string triad shapes on strings 2, 3, and 4",
+        "Practice the chromatic slide (Eb -> E -> F) cleanly at 80 BPM",
+        "Master the basic C, Bb, and F chord changes without hesitations",
+        "Strum gently on quarter notes matching the 80 BPM tempo"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Thumb-Over Technique & R&B Fills",
+      "steps": [
+        "Work on wrapping the left thumb over to fret the low E string notes",
+        "Execute hammer-on embellishments on the D and G strings while chords ring",
+        "Practice the Db and Eb modal turnaround walkup cleanly",
+        "Control right-hand dynamics for sweet, vocal expression"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "The Full Hendrix Ballad Solo & Touch Control",
+      "steps": [
+        "Learn the note-for-note solo combining major pentatonic and blues bends",
+        "Master microtonal pitch bends and singing finger vibrato",
+        "Dial in authentic Strat neck-pickup tone with guitar volume control",
+        "Perform the entire piece seamlessly blending rhythm and lead"
+      ],
+      "timeEstimate": "2-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Little Wing",
+        "link": "/lessons/songs/song-analysis/little-wing",
+        "similarity": "The pinnacle of Hendrix's thumb-over R&B chord-melody ballad style"
+      },
+      {
+        "title": "Purple Haze",
+        "link": "/lessons/songs/song-analysis/purple-haze",
+        "similarity": "Hendrix's explosive psychedelic rock anthem featuring the sharp 9 chord"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Under the Bridge",
+        "artist": "Red Hot Chili Peppers",
+        "technique": "Hendrix-inspired thumb-over barre chords and melodic hammer-ons",
+        "link": "/lessons/songs/song-analysis/under-the-bridge"
+      },
+      {
+        "title": "Yellow",
+        "artist": "Coldplay",
+        "technique": "Lush open acoustic and electric chord resonance in a pop-rock ballad",
+        "link": "/lessons/songs/song-analysis/yellow"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Strumming too aggressively—this is an intimate ballad that requires dynamic delicacy",
+      "Muting adjacent strings when executing hammer-on embellishments",
+      "Playing the solo too fast or with overly sharp blues bends instead of vocal vibrato",
+      "Struggling with the thumb-over grip—adjust guitar strap height to let the thumb wrap naturally"
+    ],
+    "practiceRoutine": [
+      "5 mins: Thumb-over fret-hand flexibility and stretching exercises",
+      "10 mins: Slow precision practice of the Eb -> E -> F sliding triads",
+      "10 mins: Practicing hammer-ons over the C, Bb, and F chord shapes",
+      "15 mins: Isolating phrases from the guitar solo with pitch-accurate vibrato",
+      "10 mins: Playing through the full track with gentle, conversational dynamics"
+    ],
+    "focusAreas": [
+      "Left-hand thumb position and finger independence",
+      "Synchronization across strings during parallel triad slides",
+      "Vocal-style microtonal blues bending and delicate vibrato",
+      "Touch sensitivity on pick attack and guitar volume control"
+    ],
+    "metronomeWork": [
+      "Set click to 80 BPM on beats 2 and 4 to internalize the relaxed groove",
+      "Practice sliding triads at 60 BPM ensuring clean pitch transitions",
+      "Drill solo double-stops at half speed before playing at performance tempo"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-10-28",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1960s",
+    "subGenre": "Blues Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums"
+    ],
+    "tags": [
+      "classic-rock",
+      "blues",
+      "major-key",
+      "hammer-on",
+      "pull-off",
+      "bending",
+      "vibrato",
+      "arpeggios",
+      "intermediate",
+      "lead-guitar",
+      "rhythm-guitar",
+      "song-analysis"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}
+

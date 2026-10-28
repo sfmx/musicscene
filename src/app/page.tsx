@@ -4,16 +4,17 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import HomeHero from '@/components/Home/HomeHero';
 import InteractiveToolsSection from '@/components/Home/InteractiveToolsSection';
+import WhatsNewSection from '@/components/Home/WhatsNewSection';
 import HomeSongExplorer from '@/components/Home/HomeSongExplorer';
 import WhySongsWorkSpotlight from '@/components/Home/WhySongsWorkSpotlight';
 import TheoryCurriculumSection from '@/components/Home/TheoryCurriculumSection';
 
 export const metadata: Metadata = {
   title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-  description: 'Bridge the gap between mechanical guitar tabs and abstract theory. 128+ iconic song analyses, interactive fretboard trainer & note hunt, progression jam player, and free printable fretboard cheat sheet.',
+  description: 'Bridge the gap between mechanical guitar tabs and abstract theory. 226+ iconic song analyses, interactive fretboard trainer & note hunt, progression jam player, and free printable fretboard cheat sheet.',
   openGraph: {
     title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-    description: 'Bridge the gap between guitar tabs and music theory. 128+ song breakdowns, interactive fretboard tools, and free cheat sheet.',
+    description: 'Bridge the gap between guitar tabs and music theory. 226+ song breakdowns, interactive fretboard tools, and free cheat sheet.',
     url: 'https://musicscene.com.au',
     siteName: 'MusicScene',
     images: [
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-    description: '128+ song breakdowns, interactive fretboard note hunt game, progression jam player, and free cheat sheet.',
+    description: '226+ song breakdowns, interactive fretboard note hunt game, progression jam player, and free cheat sheet.',
     images: ['https://musicscene.com.au/images/og-default.png'],
   },
 };
@@ -44,7 +45,10 @@ export default function HomePage() {
         {/* 2. Interactive Practice Tools Suite Showcase */}
         <InteractiveToolsSection />
 
-        {/* 3. Direct Song Analysis Library & Interactive Search/Filter Engine */}
+        {/* 3. What's New: Fresh Masterclasses & Queued Up Newsletter */}
+        <WhatsNewSection />
+
+        {/* 4. Direct Song Analysis Library & Interactive Search/Filter Engine */}
         <HomeSongExplorer />
 
         {/* 4. "Why Songs Work" Curated Harmonic Secrets Spotlight */}
@@ -85,7 +89,7 @@ export default function HomePage() {
                 href="/lessons/songs/song-analysis"
                 className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-200/60 dark:hover:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold rounded-xl border border-slate-300 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-700 transition-all duration-200 text-base inline-flex items-center justify-center gap-2"
               >
-                <span>Browse All 128 Songs ➔</span>
+                <span>Browse All 226 Songs ➔</span>
               </Link>
             </div>
           </div>

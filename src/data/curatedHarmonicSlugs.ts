@@ -140,6 +140,11 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'eagle-rock',
   'these-days',
   'holy-grail',
+  'while-my-guitar-gently-weeps',
+  'dont-look-back-in-anger',
+  'whats-my-scene',
+  'the-wind-cries-mary',
+  'plug-in-baby',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

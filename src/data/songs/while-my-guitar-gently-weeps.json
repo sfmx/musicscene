@@ -1,0 +1,390 @@
+{
+  "songInfo": {
+    "title": "While My Guitar Gently Weeps",
+    "artist": "The Beatles",
+    "album": "The Beatles (The White Album)",
+    "released": "1968",
+    "genre": "Classic Rock",
+    "tempo": "66 BPM",
+    "duration": "4:45",
+    "key": "A Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A minor",
+      "scalesUsed": [
+        {
+          "scale": "A natural minor (Aeolian)",
+          "notes": "A - B - C - D - E - F - G - A",
+          "application": "Diatonic foundation for the descending line cliché verse progression"
+        },
+        {
+          "scale": "A minor pentatonic / blues scale",
+          "notes": "A - C - D - Eb - E - G",
+          "application": "Eric Clapton's soulful crying lead guitar fills and signature solos"
+        },
+        {
+          "scale": "A major scale (Parallel Major)",
+          "notes": "A - B - C# - D - E - F# - G# - A",
+          "application": "Uplifting modal shift during the bridge section (A - C#m - F#m - Bm - E)"
+        }
+      ],
+      "modalCharacter": "Aeolian shifting to Parallel Ionian in the bridge",
+      "keySignature": "No sharps or flats (A minor) / 3 sharps (A major bridge)",
+      "relativeMinor": "C Major (relative major)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Am",
+          "Am/G",
+          "Am/F#",
+          "Fmaj7",
+          "Am",
+          "G",
+          "D",
+          "E"
+        ],
+        "progression": "i - i7/b7 - i6/6 - VI7 - i - VII - IV - V",
+        "description": "Legendary descending chromatic bassline cliché moving from A down through G, F#, and F to E"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Verse",
+          "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E",
+          "romanNumerals": "i - i7 - i6 - VImaj7 - i - VII - IV - V",
+          "description": "Descending line cliché followed by a classic rock VII-IV-V turnaround"
+        },
+        {
+          "section": "Bridge",
+          "progression": "A - C#m - F#m - C#m - Bm - E - Bm - E",
+          "romanNumerals": "I - iii - vi - iii - ii - V - ii - V",
+          "description": "Direct modulation to parallel A Major creating a poignant, radiant contrast"
+        },
+        {
+          "section": "Solo",
+          "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E",
+          "romanNumerals": "i - i7 - i6 - VImaj7 - i - VII - IV - V",
+          "description": "Clapton's crying lead guitar over the descending verse progression"
+        }
+      ],
+      "harmonicFunction": [
+        "Am creates the mournful, introspective tonal center",
+        "Chromatic descent A -> G -> F# -> F provides an inevitable weeping gravity",
+        "The major IV chord (D) introduces a subtle Dorian color before resolving to the dominant E",
+        "Modulation to A major in the bridge provides emotional catharsis and light"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Descending Line Cliché & Bassline Movement",
+      "description": "Holding an Am chord grip while stepping the bass note down chromatically (A -> G -> F# -> F) using pinky and thumb fret-hand positioning.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Anchor your index and middle fingers on strings 2 and 4 of the Am shape",
+          "Use open A for bar 1, ring/pinky for G on string 6, and thumb or index for F# and F",
+          "Ensure top strings continue ringing cleanly to sustain the chordal harmony",
+          "Maintain a steady folk-rock eighth-note fingerpicking or arpeggiated strum"
+        ],
+        "sequence": [
+          "Strike open A string root, followed by treble pluck across strings 3, 2, 1",
+          "Fret 3rd fret low E string (G) for Am/G while keeping upper chord voicing",
+          "Shift to 2nd fret low E string (F#) for Am/F#",
+          "Land on 1st fret low E string (F) for Fmaj7 before turning around through G, D, and E"
+        ],
+        "tips": [
+          "Keep fret-hand fingers arched so open strings do not get muted",
+          "Emphasize the lowest note on beat 1 of each measure to highlight the descending bass motion",
+          "Practice the transition from Am/F# to Fmaj7 slowly to build fret-hand dexterity"
+        ],
+        "chords": ["Am", "Am/G", "Am/F#", "Fmaj7"],
+        "progression": "i - i7/b7 - i6/6 - VImaj7"
+      }
+    },
+    {
+      "name": "Soulful Blues Bending & Vocal Vibrato",
+      "description": "Eric Clapton's legendary guest solo performance, featuring wide whole-step bends on the G string, finger vibrato, and Leslie rotating speaker tone simulation.",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Support string bends with 2nd and 1st fingers behind the 3rd finger for maximum pitch stability",
+          "Apply wide, singing finger vibrato at the peak of sustained bends",
+          "Incorporate slight rake strokes into target notes for aggressive attack",
+          "Balance major and minor pentatonic notes across the 5th and 7th fret positions"
+        ],
+        "sequence": [
+          "Bend 7th fret G string up a full step to E with crying vibrato",
+          "Release cleanly down to D and pull off to C (5th fret)",
+          "Resolve down to root note A on 7th fret D string",
+          "Execute double-stop bends on frets 5 and 7 of the high B and E strings"
+        ],
+        "tips": [
+          "Match pitch precisely against target frets before bending",
+          "Let the vibrato oscillate from the wrist rather than fingers alone",
+          "Use a warm overdrive with slight Leslie modulation or chorus to match the White Album track"
+        ],
+        "chords": ["Am", "G", "D", "E"],
+        "progression": "i - VII - IV - V"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Line Cliché & Piano Hook",
+      "timeStamp": "0:00-0:23",
+      "technique": "Descending Chromatic Bassline",
+      "key": "A Minor",
+      "description": "The haunting opening progression establishing the descending bass movement underneath an evocative A minor harmony.",
+      "chords": ["Am", "Am/G", "Am/F#", "Fmaj7"],
+      "progression": "Am - Am/G - Am/F# - Fmaj7",
+      "notes": [
+        "Play open A string root, then step down to G, F#, and F on the low E string",
+        "Keep the upper notes of the Am triad ringing continuously",
+        "Sets the melancholic, reflective mood of George Harrison's masterpiece"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 1.2) :8 2.3 1.2 :4 (3.6 2.4 2.3 1.2) | :4 (2.6 2.4 2.3 1.2) :8 2.3 1.2 :4 (1.6 3.5 2.4 2.3 1.2) | :4 (0.5 2.4 2.3 1.2) (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.4 2.3 3.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Descending Bassline Cliché Study"
+    },
+    {
+      "name": "Verse Rhythm & Strumming Mechanics",
+      "timeStamp": "0:23-0:53",
+      "technique": "Folk-Rock Arpeggiated Strumming",
+      "key": "A Minor",
+      "description": "Harrison's vocal entry supported by acoustic strumming and subtle electric guitar fills accenting the harmony.",
+      "chords": ["Am", "Am/G", "Am/F#", "Fmaj7", "Am", "G", "D", "E"],
+      "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E",
+      "notes": [
+        "Light down-up acoustic strumming with emphasis on downbeats",
+        "The D major chord provides a fleeting Dorian brightness before the dominant E pulls back to minor",
+        "Dynamic control is crucial—keep the acoustic rhythm steady under the vocal"
+      ],
+      "alphaTab": ":8 0.5 2.4 2.3 1.2 3.6 2.4 2.3 1.2 | :8 2.6 2.4 2.3 1.2 1.6 3.5 2.4 2.3 | :4 (0.5 2.4 2.3 1.2) (3.6 2.5 0.4 0.3 3.2 3.1) | :4 (0.4 2.3 3.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Acoustic Verse Progression Pattern"
+    },
+    {
+      "name": "Bridge Parallel Major Shift",
+      "timeStamp": "0:53-1:15",
+      "technique": "Parallel Key Modulation & Chord Transitions",
+      "key": "A Major",
+      "description": "The mood lifts radiantly as the song modulates to A Major, cycling through diatonic chords in a sweeping emotional release.",
+      "chords": ["A", "C#m", "F#m", "C#m", "Bm", "E"],
+      "progression": "A - C#m - F#m - C#m - Bm - E - Bm - E",
+      "notes": [
+        "Shift from A minor to bright open A Major chord",
+        "Barre chords C#m (4th fret) and F#m (2nd fret) require clean finger posture",
+        "The turnaround through Bm and E creates a strong cadence returning to the verse"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 2.2 0.1) (4.5 6.4 6.3 5.2 4.1) | :4 (2.6 4.5 4.4 2.3 2.2 2.1) (4.5 6.4 6.3 5.2 4.1) | :4 (2.5 4.4 4.3 3.2 2.1) (0.6 2.5 2.4 1.3 0.2 0.1) | :2 (2.5 4.4 4.3 3.2 2.1) :2 (0.6 2.5 2.4 1.3 0.2 0.1) |",
+      "exerciseLabel": "Parallel Major Bridge Modulation"
+    },
+    {
+      "name": "Main Verse & Crying Guitar Fills",
+      "timeStamp": "1:15-1:53",
+      "technique": "Vocal Counter-Melody Fills",
+      "key": "A Minor",
+      "description": "Eric Clapton's electric guitar begins entering between vocal phrases with weeping bends and expressive vibrato.",
+      "chords": ["Am", "Am/G", "Am/F#", "Fmaj7", "Am", "G", "D", "E"],
+      "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E",
+      "notes": [
+        "Tasteful fills nestled in vocal pauses",
+        "G string whole-step bend at the 7th fret mimicking a human sob",
+        "Subtle pick-hand palm muting for articulate dynamic response"
+      ],
+      "alphaTab": ":8 7.3 :4 7.3 :8 5.3 :4 7.4 | :8 5.3 7.3 :4 5.2 :2 5.1 | :8 7.3 5.3 7.4 5.4 :2 7.4 | :8 5.3 7.3 :4 7.3 :2 5.3 |",
+      "exerciseLabel": "Clapton Crying Vocal Fill Study"
+    },
+    {
+      "name": "Eric Clapton Signature Guitar Solo",
+      "timeStamp": "1:53-2:32",
+      "technique": "Blues-Rock Lead Masterclass & Leslie Tone",
+      "key": "A Minor",
+      "description": "One of the most famous guest guitar solos in rock history—flawless blues phrasing, singing bends, and exquisite note selection.",
+      "chords": ["Am", "Am/G", "Am/F#", "Fmaj7", "Am", "G", "D", "E"],
+      "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E",
+      "notes": [
+        "Position 1 A minor pentatonic centered at the 5th-8th frets",
+        "Climbs dynamically into the octave box at the 12th-15th frets",
+        "Wide pitch vibrato created by pivoting the entire fret-hand wrist",
+        "Recorded with Clapton's 1957 Gibson Les Paul ('Lucy') run through a flanged Leslie speaker"
+      ],
+      "alphaTab": ":8 5.1 8.1 :4 8.1 :8 5.1 8.2 | :8 5.2 7.3 5.3 :4 7.4 :4 5.3 | :8 7.3 :4 7.3 :8 5.2 8.2 :4 8.1 | :8 5.1 8.1 5.1 :4 8.2 :2 5.1 |",
+      "exerciseLabel": "Iconic Clapton Blues Solo Licks"
+    },
+    {
+      "name": "Outro Climax & Solo Jam",
+      "timeStamp": "3:15-4:45",
+      "technique": "High-Register Solo Improvisation & Double Bends",
+      "key": "A Minor",
+      "description": "Clapton unleashes an extended blues-rock masterclass as the track builds to a roaring climax and fades out.",
+      "chords": ["Am", "Am/G", "Am/F#", "Fmaj7", "Am", "G", "D", "E"],
+      "progression": "Am - Am/G - Am/F# - Fmaj7 - Am - G - D - E (fade out)",
+      "notes": [
+        "Rapid blues pentatonic runs in the 17th-20th fret upper register",
+        "Unison bends on strings 1 and 2 adding intensity",
+        "Seamless interplay between rhythm acoustic and screaming lead guitar"
+      ],
+      "alphaTab": ":8 17.1 20.1 :4 20.1 :8 17.1 20.2 | :8 17.2 19.3 17.3 :4 19.4 :4 17.3 | :8 19.3 :4 19.3 :8 17.2 20.2 :4 20.1 | :8 17.1 20.1 17.1 :4 20.2 :2 17.1 |",
+      "exerciseLabel": "High-Register Outro Climax Lick"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson Les Paul Standard (1957 'Lucy')",
+      "alternatives": [
+        "Gibson Les Paul Studio",
+        "Epiphone Les Paul Standard",
+        "Fender Stratocaster (for rhythm acoustic/electric)"
+      ],
+      "pickup": "Bridge PAF humbucker for cutting, singing lead sustain"
+    },
+    "amp": {
+      "recommended": "Marshall JTM45 or Fender Twin Reverb",
+      "alternatives": [
+        "Marshall Bluesbreaker",
+        "Vox AC30",
+        "Fender Deluxe Reverb"
+      ],
+      "settings": {
+        "gain": "6.5",
+        "treble": "6.5",
+        "middle": "7.0",
+        "bass": "5.0",
+        "presence": "6.0"
+      }
+    },
+    "effects": {
+      "distortion": "Natural cranked tube overdrive with subtle Germanium boost",
+      "reverb": "Vintage spring reverb (level 4.0)",
+      "other": "Leslie 147 Rotating Speaker Cabinet / Chorus modulation for iconic White Album warble"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Mastering the Descending Line Cliché",
+      "steps": [
+        "Learn standard open Am, G, D, and E chords cleanly",
+        "Practice shifting the bass note from open A to G, F#, and F",
+        "Play through the verse progression at 50 BPM with a metronome",
+        "Strum steadily on quarter notes without muting adjacent strings"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Bridge Modulation & Soulful Fills",
+      "steps": [
+        "Master the transition from A minor to the A major bridge",
+        "Clean up C#m and F#m barre chord transitions",
+        "Practice Clapton's signature vocal fills in position 1 pentatonic",
+        "Focus on accurate whole-step pitch bends on the G string"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "The Full Clapton Solo & Outro Improvisation",
+      "steps": [
+        "Execute Clapton's studio solo with authentic vocal vibrato",
+        "Incorporate double-stop bends and rapid blues runs at 66 BPM",
+        "Tackle the high-register 17th-20th fret outro lead lines",
+        "Dial in authentic Leslie rotating speaker modulation and tube breakup"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Blackbird",
+        "link": "/lessons/songs/song-analysis/blackbird",
+        "similarity": "Paul McCartney's acoustic fingerpicking masterpiece from the White Album"
+      },
+      {
+        "title": "Norwegian Wood",
+        "link": "/lessons/songs/song-analysis/norwegian-wood",
+        "similarity": "George Harrison's modal folk composition featuring sitar and D acoustic tuning"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Babe I'm Gonna Leave You",
+        "artist": "Led Zeppelin",
+        "technique": "Descending line cliché chord progression",
+        "link": "/lessons/songs/song-analysis/babe-im-gonna-leave-you"
+      },
+      {
+        "title": "Layla",
+        "artist": "Derek and the Dominos",
+        "technique": "Eric Clapton's signature blues-rock lead phrasing and singing vibrato",
+        "link": "/lessons/songs/song-analysis/layla"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Letting the open B and high E strings get muted during the descending bassline shifts",
+      "Under-bending the 7th fret G string in Clapton's signature crying lick",
+      "Rushing the tempo—the song has a laid-back, heavy 66 BPM groove that requires patience",
+      "Over-saturating the distortion—Clapton's tone comes from volume, touch, and the Leslie speaker"
+    ],
+    "practiceRoutine": [
+      "5 mins: Chromatic finger independence warm-up on lower strings",
+      "10 mins: Slow practice of the Am -> Am/G -> Am/F# -> Fmaj7 chord changes",
+      "10 mins: Pitch-accuracy bend training on the 7th fret G string and 8th fret B string",
+      "15 mins: Playing along with Clapton's primary solo phrases at half speed",
+      "10 mins: Running through the complete song structure with metronome at 66 BPM"
+    ],
+    "focusAreas": [
+      "Fret-hand thumb and pinky bassline positioning",
+      "Pitch accuracy on whole-step string bends",
+      "Vocal-style hand vibrato control",
+      "Dynamic sensitivity between rhythm acoustic and lead electric"
+    ],
+    "metronomeWork": [
+      "Practice verse descending progression at 50 BPM with click on beats 2 and 4",
+      "Increase gradually to recording tempo of 66 BPM",
+      "Practice sixteenth-note blues solo flourishes cleanly with no rushing"
+    ]
+  },
+  "metadata": {
+    "popularity": 98,
+    "dateAdded": "2026-10-28",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1960s",
+    "subGenre": "Classic Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Piano"
+    ],
+    "tags": [
+      "classic-rock",
+      "minor-key",
+      "chord-progressions",
+      "voice-leading",
+      "bending",
+      "vibrato",
+      "intermediate",
+      "lead-guitar",
+      "rhythm-guitar",
+      "song-analysis"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}
+

@@ -118,7 +118,6 @@ export default function HomeSongExplorer() {
             href="/lessons/songs/song-analysis"
             className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors whitespace-nowrap self-start md:self-end hover:underline"
           >
-            <span>View Complete Directory (107 Songs)</span>
             <span>View Complete Directory ({allSongs.length} Songs)</span>
             <span>➔</span>
           </Link>

@@ -1,0 +1,399 @@
+{
+  "songInfo": {
+    "title": "Plug In Baby",
+    "artist": "Muse",
+    "album": "Origin of Symmetry",
+    "released": "2001",
+    "genre": "Alternative Rock",
+    "tempo": "136 BPM",
+    "duration": "3:39",
+    "key": "B Minor",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Advanced",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "B minor",
+      "scalesUsed": [
+        {
+          "scale": "B Harmonic Minor",
+          "notes": "B - C# - D - E - F# - G - A# - B",
+          "application": "Source of the raised 7th degree (A#) in the signature neoclassical intro riff"
+        },
+        {
+          "scale": "B Natural Minor (Aeolian)",
+          "notes": "B - C# - D - E - F# - G - A - B",
+          "application": "Diatonic foundation for the chorus and verse progressions"
+        },
+        {
+          "scale": "F# Phrygian Dominant (5th mode of B Harmonic Minor)",
+          "notes": "F# - G - A# - B - C# - D - E - F#",
+          "application": "Harmonic framework for the opening arpeggios pivoting around F# major"
+        }
+      ],
+      "modalCharacter": "Harmonic Minor / Phrygian Dominant fusion with alternative rock energy",
+      "keySignature": "2 sharps (F#, C#)",
+      "relativeMinor": "D Major (relative major)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#",
+          "G",
+          "D",
+          "A",
+          "Bm",
+          "F#",
+          "G",
+          "D"
+        ],
+        "progression": "V - VI - III - VII - i - V - VI - III",
+        "description": "Bold classical-inspired rock progression starting on the dominant V (F#) and cycling through Andalusian colors"
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro",
+          "progression": "F# - G - D - A - Bm - F# - G - D",
+          "romanNumerals": "V - VI - III - VII - i - V - VI - III",
+          "description": "Neoclassical arpeggio riff outlining major and minor triads across the upper neck"
+        },
+        {
+          "section": "Verse",
+          "progression": "Bm - F# - G - D",
+          "romanNumerals": "i - V - VI - III",
+          "description": "Minimalist, bass-driven groove with light guitar texturing and harmonic feedback"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "Em - F# - Em - F#",
+          "romanNumerals": "iv - V - iv - V",
+          "description": "Tension-building alternation between the subdominant and dominant chords"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - D - F# - Bm - G - D - F# - Bm",
+          "romanNumerals": "VI - III - V - i - VI - III - V - i",
+          "description": "Explosive wall-of-sound power chords supporting Bellamy's soaring operatic vocals"
+        },
+        {
+          "section": "Outro",
+          "progression": "F# - G - D - Bm",
+          "romanNumerals": "V - VI - III - i",
+          "description": "Violent oscillating fuzz feedback resolving on a crushing final B minor power chord"
+        }
+      ],
+      "harmonicFunction": [
+        "Starting on the dominant V (F#) immediately establishes classical tension before resolving to B minor",
+        "The A# note in F# major (derived from B Harmonic Minor) acts as an exotic leading tone",
+        "G (VI) to D (III) steps smoothly into the relative major sphere, providing anthemic lift",
+        "The chorus resolves triumphantly into Bm (i) on the third bar of each phrase"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Neoclassical Triad Arpeggio Picking Across Strings 1-3",
+      "description": "Matthew Bellamy's iconic introductory riff, demanding rapid, fluid alternate picking across the high E, B, and G strings with frequent position shifts.",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Use strict alternate picking (down-up-down-up) or light sweeping for string changes",
+          "Fret-hand fingers must maintain precise independence without collapsing",
+          "Shift positions cleanly between the 6th fret (A#), 7th fret (B), and 9th fret (C#)",
+          "Accent the highest note of each arpeggiated shape on the high E string"
+        ],
+        "sequence": [
+          "Ascend through F# major arpeggio: 6th fret high E, 7th fret B, 6th fret G",
+          "Shift to G major arpeggio at the 7th and 8th frets",
+          "Sweep down through D major arpeggio at the 10th and 11th frets",
+          "Descend through A and B minor shapes to complete the circular phrase"
+        ],
+        "tips": [
+          "Practice with a clean tone initially to expose any sloppy string muting or timing drift",
+          "Anchor the picking hand wrist gently on the bridge pins for maximum picking speed",
+          "Keep the pick angle slightly slanted to slice across the strings effortlessly"
+        ],
+        "chords": ["F#", "G", "D", "A", "Bm"],
+        "progression": "V - VI - III - VII - i"
+      }
+    },
+    {
+      "name": "High-Gain Fuzz Articulation & Pitch Feedback Control",
+      "description": "Utilizing an aggressive Germanium fuzz pedal (ZVex Fuzz Factory) to create velcro-like gating, searing harmonic sustain, and controlled pitch oscillation.",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Set fuzz gate tight enough to eliminate string hiss between staccato hits",
+          "Use guitar volume control to tame oscillation during rhythm passages",
+          "Manipulate guitar proximity to amplifier speakers for musical feedback singing",
+          "Execute staccato power chord mutes for crisp modern rock impact"
+        ],
+        "sequence": [
+          "Strike high-register opening notes with full fuzz saturation",
+          "Mute all strings with both hands on beat 4 for an immediate silence gate",
+          "Open up power chords during the chorus with sustained fuzz rumble",
+          "Tilt guitar toward amplifier during the outro to generate screaming harmonic sirens"
+        ],
+        "tips": [
+          "Ensure fresh batteries or clean isolated power for the Fuzz Factory",
+          "Use the bridge humbucker for maximum bite and feedback harmonic sensitivity",
+          "Keep left-hand muting vigilant to prevent unwanted runaway screeching"
+        ],
+        "chords": ["G5", "D5", "F#5", "B5"],
+        "progression": "VI - III - V - i"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Sweeping B Harmonic Minor Arpeggio Riff",
+      "timeStamp": "0:00-0:28",
+      "technique": "Classical Arpeggiation & High-Speed Alternate Picking",
+      "key": "B Minor",
+      "description": "Ranked among the greatest guitar riffs of the 21st century—a tour-de-force of neoclassical arpeggio sweeps, Bach-like counterpoint, and searing fuzz tone.",
+      "chords": ["F#", "G", "D", "A", "Bm"],
+      "progression": "F# - G - D - A - Bm",
+      "notes": [
+        "Play across strings 1, 2, and 3 using strict alternate picking at 136 BPM",
+        "Outlines F# major with the exotic A# leading tone on the 6th fret of string 1",
+        "Transitions seamlessly into G major and D major shapes across the neck",
+        "Recorded through a custom Manson guitar with an integrated ZVex Fuzz Factory"
+      ],
+      "alphaTab": ":8 6.1 7.2 6.3 7.2 6.1 7.2 6.3 7.2 | :8 7.1 8.2 7.3 8.2 7.1 8.2 7.3 8.2 | :8 10.1 10.2 11.3 10.2 10.1 10.2 11.3 10.2 | :8 7.1 7.2 7.3 7.2 :4 (7.6 9.5 9.4) :4 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Iconic Harmonic Minor Opening Riff"
+    },
+    {
+      "name": "Driving Bass-Driven Rhythm Verse",
+      "timeStamp": "0:28-0:57",
+      "technique": "Minimalist Texture & Space",
+      "key": "B Minor",
+      "description": "Chris Wolstenholme's thunderous fuzz bass carries the groove, allowing Bellamy's guitar to interject with subtle feedback swells and harmonic accents.",
+      "chords": ["Bm", "F#", "G", "D"],
+      "progression": "Bm - F# - G - D",
+      "notes": [
+        "Guitar plays tasteful clean or volume-swelled stabs on offbeats",
+        "Let the bass drive the momentum while saving guitar energy for the chorus",
+        "Control guitar volume to suppress fuzz oscillation between vocal phrases"
+      ],
+      "alphaTab": ":1 r | :2 r :4 r :8 (7.4 7.3 7.2) (7.4 7.3 7.2) | :1 r | :2 r :4 r :8 (7.4 7.3 7.2) (7.4 7.3 7.2) |",
+      "exerciseLabel": "Atmospheric Verse Texturing"
+    },
+    {
+      "name": "Pre-Chorus Chromatic Lift",
+      "timeStamp": "0:57-1:11",
+      "technique": "Pumping Staccato Power Chords",
+      "key": "B Minor",
+      "description": "Tension builds as the guitars enter with driving staccato power chords cycling between Em and F#.",
+      "chords": ["Em", "F#"],
+      "progression": "Em - F# - Em - F#",
+      "notes": [
+        "Tight palm-muted eighth notes building in volume and intensity",
+        "The F# chord introduces sharp harmonic minor tension right before the chorus explosion",
+        "Unmute completely on the final measure with an open pick slide"
+      ],
+      "alphaTab": ":8 0.6 0.6 2.5 2.5 :4 (0.6 2.5 2.4) :8 2.6 2.6 | :8 4.5 4.5 :4 (2.6 4.5 4.4) :8 0.6 0.6 2.5 2.5 | :8 0.6 0.6 2.5 2.5 :4 (0.6 2.5 2.4) :8 2.6 2.6 | :4 (2.6 4.5 4.4) (2.6 4.5 4.4) :2 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Pre-Chorus Tension Escalation"
+    },
+    {
+      "name": "Explosive Stadium Chorus",
+      "timeStamp": "1:11-1:39",
+      "technique": "Roaring Fuzz Power Chords",
+      "key": "B Minor",
+      "description": "The song erupts with crushing wall-of-sound power chords supporting Bellamy's soaring operatic vocals: 'My plug in baby, crucifies my enemies...'",
+      "chords": ["G5", "D5", "F#5", "B5"],
+      "progression": "G5 - D5 - F#5 - B5 - G5 - D5 - F#5 - B5",
+      "notes": [
+        "Massive fuzz distortion across root-5th power chords",
+        "G5 (3rd fret low E) to D5 (5th fret A string) provides anthemic major lift",
+        "F#5 pulls into B5 with heavy classical authority",
+        "Keep right hand loose and powerful with full arm strumming motions"
+      ],
+      "alphaTab": ":4 (3.6 5.5 5.4) :8 (3.6 5.5 5.4) (3.6 5.5 5.4) :4 (5.5 7.4 7.3) | :4 (2.6 4.5 4.4) :8 (2.6 4.5 4.4) (2.6 4.5 4.4) :4 (7.6 9.5 9.4) | :4 (3.6 5.5 5.4) :8 (3.6 5.5 5.4) (3.6 5.5 5.4) :4 (5.5 7.4 7.3) | :2 (2.6 4.5 4.4) :2 (7.6 9.5 9.4) |",
+      "exerciseLabel": "Stadium Fuzz Chorus Strumming"
+    },
+    {
+      "name": "Riff Recapitulation & Extended Solo Flourish",
+      "timeStamp": "2:20-2:48",
+      "technique": "Upper-Register Neoclassical Soloing",
+      "key": "B Minor",
+      "description": "The signature intro riff returns with additional improvisational embellishments, octave jumps, and whammy pitch manipulation.",
+      "chords": ["F#", "G", "D", "A", "Bm"],
+      "progression": "F# - G - D - A - Bm",
+      "notes": [
+        "Execute the arpeggio riff with even greater velocity and swagger",
+        "Dig in with the pick to induce harmonic squeals on the high notes",
+        "Climb into the 14th-17th fret register on the final turnaround"
+      ],
+      "alphaTab": ":8 6.1 7.2 6.3 7.2 6.1 7.2 6.3 7.2 | :8 7.1 8.2 7.3 8.2 7.1 8.2 7.3 8.2 | :8 14.1 15.2 14.3 15.2 14.1 15.2 14.3 15.2 | :8 12.1 14.2 12.3 14.2 :2 14.1 |",
+      "exerciseLabel": "Extended Solo Arpeggio Study"
+    },
+    {
+      "name": "Feedback Siren Outro Climax",
+      "timeStamp": "3:05-3:39",
+      "technique": "Controlled Fuzz Oscillation & Climax",
+      "key": "B Minor",
+      "description": "Bellamy lets his guitar scream with self-oscillating pitch feedback, sliding up the neck before slamming into a final, ringing B5 power chord.",
+      "chords": ["F#5", "G5", "D5", "B5"],
+      "progression": "F#5 - G5 - D5 - B5 (final hit)",
+      "notes": [
+        "Manipulate guitar volume and proximity to the amp for wild sirens",
+        "Pick scrapes and whammy dives adding explosive chaos",
+        "Concludes on a decisive, heavily gated B5 power chord ring-out"
+      ],
+      "alphaTab": ":4 (2.6 4.5 4.4) (3.6 5.5 5.4) (5.5 7.4 7.3) :4 (7.6 9.5 9.4) | :2 (7.6 9.5 9.4) :2 (7.6 9.5 9.4) | :1 (7.6 9.5 9.4) | :1 (7.6 9.5 9.4) |",
+      "exerciseLabel": "Fuzz Feedback Outro Cadence"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Manson Custom Electric with built-in ZVex Fuzz Factory",
+      "alternatives": [
+        "Fender Stratocaster with humbucker",
+        "Gibson Les Paul Standard",
+        "Ibanez RG Series"
+      ],
+      "pickup": "Hot bridge humbucker (Seymour Duncan JB or Manson MBK-2) for aggressive punch"
+    },
+    "amp": {
+      "recommended": "Marshall JCM2000 DSL100 or Marshall JCM800",
+      "alternatives": [
+        "Vox AC30",
+        "Peavey 5150",
+        "EVH 5150III"
+      ],
+      "settings": {
+        "gain": "8.5",
+        "treble": "7.5",
+        "middle": "6.0",
+        "bass": "6.0",
+        "presence": "7.5"
+      }
+    },
+    "effects": {
+      "distortion": "ZVex Fuzz Factory (Gate 7.0, Comp 5.0, Drive 8.0, Stab 8.0) for gated velcro fuzz",
+      "reverb": "Short plate reverb (level 3.0)",
+      "other": "DigiTech Whammy 4 for octave shifts and pitch glides"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Chorus Power Chords & 136 BPM Rhythm",
+      "steps": [
+        "Master the G5, D5, F#5, and B5 root-5th power chord fingerings",
+        "Practice shifting cleanly between frets 2, 3, 5, and 7 on the lower strings",
+        "Work with a metronome at 100 BPM playing steady eighth-note downstrokes",
+        "Gradually build stamina up to the recording tempo of 136 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Arpeggio Shape Navigation at Half Speed",
+      "steps": [
+        "Isolate the F# and G major arpeggio fingerings on strings 1, 2, and 3",
+        "Practice strict alternate picking (down-up-down-up) at 80 BPM",
+        "Coordinate the fret-hand position shifts between frets 6, 7, and 10",
+        "Incorporate the pre-chorus staccato power chord dynamics"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "The Full 136 BPM Intro Riff & Fuzz Control",
+      "steps": [
+        "Play the complete introductory arpeggio riff up to full speed with zero hesitation",
+        "Dial in an aggressive, gated fuzz tone stack without unwanted screeching",
+        "Execute the high-register solo flourishes in the recapitulation section",
+        "Perform the entire song with authentic alternative rock power and swagger"
+      ],
+      "timeEstimate": "3-4 weeks"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Hysteria",
+        "link": "/lessons/songs/song-analysis/hysteria",
+        "similarity": "Muse's driving bass-driven rock masterpiece with blistering melodic riffing"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Crazy Train",
+        "artist": "Ozzy Osbourne",
+        "technique": "Classical minor scale pedal point riffing and alternate picking speed",
+        "link": "/lessons/songs/song-analysis/crazy-train"
+      },
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "technique": "High-velocity single-string arpeggios and relentless pick stamina",
+        "link": "/lessons/songs/song-analysis/thunderstruck"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Collapsing into hammer-ons and pull-offs instead of cleanly alternate-picking the intro arpeggios",
+      "Rushing the tempo during the F# to G arpeggio position shift",
+      "Letting the Fuzz Factory oscillate out of control during quiet verse passages",
+      "Hitting unmuted adjacent strings during high-speed picking on strings 1, 2, and 3"
+    ],
+    "practiceRoutine": [
+      "5 mins: Right-hand alternate picking synchronization warm-up with metronome",
+      "10 mins: Slow, isolated practice on the F# major arpeggio shape at 90 BPM",
+      "10 mins: Drilling the position shift between G major (7th fret) and D major (10th fret)",
+      "15 mins: Playing the full intro riff incrementally from 100 BPM to 136 BPM",
+      "10 mins: Power chord chorus stamina drills with heavy pick attack"
+    ],
+    "focusAreas": [
+      "Strict alternate picking mechanics on high strings",
+      "Fret-hand finger independence and arched fingertips",
+      "Fuzz pedal gate and noise control with guitar volume knob",
+      "Endurance and rhythmic pocket at 136 BPM"
+    ],
+    "metronomeWork": [
+      "Start intro riff at 80 BPM, increasing in 5 BPM increments only after 3 flawless runs",
+      "Practice chorus downstrokes at 140 BPM (slightly faster than record) to build reserve stamina",
+      "Drill pre-chorus staccato stops with click on beats 2 and 4"
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-10-28",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "2000s",
+    "subGenre": "Alternative Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums"
+    ],
+    "tags": [
+      "metal",
+      "classic-rock",
+      "harmonic-minor",
+      "minor-key",
+      "alternate-picking",
+      "arpeggios",
+      "distortion",
+      "fuzz",
+      "advanced",
+      "lead-guitar",
+      "rhythm-guitar",
+      "song-analysis"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}
+
