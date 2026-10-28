@@ -83,7 +83,7 @@ const LATEST_SONGS: NewSongSpotlight[] = [
 
 export default function WhatsNewSection() {
   return (
-    <section id="whats-new" className="py-20 bg-slate-100/70 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <section id="whats-new" className="py-20 bg-slate-100/70 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800 transition-colors snap-start scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -8,6 +8,7 @@ import WhatsNewSection from '@/components/Home/WhatsNewSection';
 import HomeSongExplorer from '@/components/Home/HomeSongExplorer';
 import WhySongsWorkSpotlight from '@/components/Home/WhySongsWorkSpotlight';
 import TheoryCurriculumSection from '@/components/Home/TheoryCurriculumSection';
+import HomeStageNavigator from '@/components/Home/HomeStageNavigator';
 
 export const metadata: Metadata = {
   title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
@@ -38,7 +39,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <Layout>
-      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
+      <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors snap-y snap-proximity scroll-smooth">
+        {/* Subtle Floating Page Stage Navigator (Desktop) */}
+        <HomeStageNavigator />
+
         {/* 1. Hero Section: The Tab vs. Theory Bridge & Above-the-Fold Content Showcase */}
         <HomeHero />
 

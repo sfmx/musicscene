@@ -647,7 +647,7 @@ export default function HomeHero() {
   };
 
   return (
-    <section className="relative bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white pt-4 pb-8 sm:pt-5 sm:pb-10 border-b border-slate-200 dark:border-slate-800 transition-colors overflow-hidden">
+    <section id="hero" className="relative bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white pt-4 pb-4 sm:pt-5 sm:pb-6 border-b border-slate-200 dark:border-slate-800 transition-colors overflow-hidden snap-start scroll-mt-16">
       {/* Subtle Ambient Radial Glow */}
       <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_50%_10%,_var(--tw-gradient-stops))] from-amber-500/25 via-blue-600/10 dark:via-purple-950 to-transparent" />
       <div className="absolute -top-24 -left-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1116,6 +1116,24 @@ export default function HomeHero() {
 
           </div>
 
+        </div>
+
+        {/* Subtle Ambient Scroll Cue (Non-Explicit Horizon Hint) */}
+        <div className="pt-3 pb-0.5 flex justify-center">
+          <button
+            onClick={() => {
+              document.getElementById('whats-new')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            aria-label="Explore more content below"
+            className="group flex flex-col items-center gap-1 text-slate-400 dark:text-slate-600 hover:text-amber-500 transition-colors cursor-pointer"
+          >
+            <div className="w-4 h-7 rounded-full border border-slate-300 dark:border-slate-700 group-hover:border-amber-500/80 flex items-start justify-center p-1 transition-colors shadow-2xs">
+              <div className="w-1 h-1.5 rounded-full bg-slate-400 dark:bg-slate-500 group-hover:bg-amber-500 animate-bounce" />
+            </div>
+            <span className="text-[9px] font-bold text-slate-400 dark:text-slate-600 group-hover:text-amber-500 transition-colors leading-none">
+              ⌄
+            </span>
+          </button>
         </div>
 
       </div>
