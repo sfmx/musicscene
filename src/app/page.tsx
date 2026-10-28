@@ -45,7 +45,7 @@ export default function HomePage() {
         {/* 2. Interactive Practice Tools Suite Showcase */}
         <InteractiveToolsSection />
 
-        {/* 3. What's New: Fresh Masterclasses & Queued Up Newsletter */}
+        {/* 3. What's New: Fresh Masterclasses & Scheduled Newsletter */}
         <WhatsNewSection />
 
         {/* 4. Direct Song Analysis Library & Interactive Search/Filter Engine */}

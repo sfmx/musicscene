@@ -1,22 +1,22 @@
-# Queued Up — Issue #1 (October 2026)
-**The Weekly MusicScene Guitarist & Theory Digest**
+# The MusicScene Digest — Issue #1 (October 2026)
+**Weekly Guitar Masterclasses, Theory Secrets & Tone Stack Dials**
 
-* **Subject Line:** [Queued Up #1] 5 New Masterclasses: Beatles, Oasis, Hendrix, Muse & Hoodoo Gurus + Tone Dials
+* **Subject Line:** [MusicScene Digest #1] 5 New Masterclasses: Beatles, Oasis, Hendrix, Muse & Hoodoo Gurus + Tone Dials
 * **Preview Text:** Unlock the line cliché, secondary dominants, and harmonic minor arpeggios in our newest song analyses.
 
 ---
 
 Hey guitarist,
 
-Welcome to the very first edition of **Queued Up**! 
+Welcome to the inaugural edition of the **MusicScene Digest**! 
 
-Every week, we bring you newly released song masterclasses from the MusicScene practice room, decode the music theory secrets behind timeless riffs, and share actionable drills and gear dials you can plug straight into your rig.
+Rather than filling your inbox every time a song is added, we queue up our newest trans-notated masterclasses, music theory breakdowns, and practical gear dials into a single high-value edition published on a weekly schedule.
 
-Here is what is hot in the practice room this week:
+Here is what was queued up for you in the practice room this week:
 
 ---
 
-## 🎸 5 Fresh Song Masterclasses
+## 🎸 5 Newly Queued Masterclasses
 
 ### 1. While My Guitar Gently Weeps — The Beatles (feat. Eric Clapton)
 * **Key & Tempo:** A Minor • 66 BPM
@@ -77,4 +77,3 @@ Keep practicing, stay curious, and see you next week!
 
 **— The MusicScene Team**  
 [Explore All 226+ Song Breakdowns](https://musicscene.com.au/lessons/songs/song-analysis)
-

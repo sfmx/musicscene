@@ -13,7 +13,7 @@ const STORAGE_KEY = 'musicscene_newsletter_subscribed';
 
 export default function NewsletterSignup({
   variant,
-  heading = 'Join Queued Up',
+  heading = 'Stay in Tune',
   subtext = 'New song breakdowns, harmonic secrets, and tone dials straight to your inbox.',
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState('');

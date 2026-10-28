@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="max-w-md mx-auto text-center py-8">
           <NewsletterSignup
             variant="footer"
-            heading="Join Queued Up"
-            subtext="The free weekly guitarist digest with fresh song breakdowns, tone dials, and harmonic secrets."
+            heading="Stay in Tune"
+            subtext="The free scheduled guitarist digest with fresh song breakdowns, tone dials, and harmonic secrets."
           />
         </div>
       </div>

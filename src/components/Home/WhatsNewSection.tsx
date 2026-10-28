@@ -177,27 +177,27 @@ export default function WhatsNewSection() {
             );
           })}
 
-          {/* 6th Card: Queued Up Newsletter CTA Card */}
+          {/* 6th Card: Scheduled Newsletter CTA Card */}
           <div className="relative flex flex-col justify-between bg-gradient-to-br from-amber-500/10 via-slate-900 to-slate-950 text-white rounded-2xl p-6 border-2 border-amber-500/30 shadow-xl overflow-hidden">
             <div className="absolute top-0 right-0 -mr-6 -mt-6 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
             
             <div className="relative z-10">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 font-bold text-xs uppercase tracking-wider mb-4 border border-amber-500/30">
                 <span>📬</span>
-                <span>Queued Up Newsletter</span>
+                <span>Weekly Newsletter</span>
               </div>
               <h3 className="text-2xl font-black text-white tracking-tight mb-2">
                 Get Every New Song & Tone Dial Free
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed mb-6">
-                Join our free weekly newsletter. We curate new masterclasses, harmonic secret breakdowns, tone stack dial settings, and printable exercises directly to your inbox.
+                Join our free weekly digest. We queue up new masterclasses, harmonic secret breakdowns, tone stack dial settings, and printable exercises so you receive a single high-value issue every week.
               </p>
             </div>
 
             <div className="relative z-10">
               <NewsletterSignup
                 variant="inline"
-                heading="Subscribe to Queued Up"
+                heading="Stay in Tune"
                 subtext="Zero spam. Unsubscribe anytime."
               />
             </div>
