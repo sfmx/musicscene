@@ -35,6 +35,9 @@ export interface HeroToolCard {
   buttonColor: string;
 }
 
+export type VibeTabType = 'favorites' | 'new' | 'beginner' | 'hardrock' | 'blues' | 'aussie' | 'tools';
+
+// 1. ALL-TIME FAN FAVORITES (8 Songs)
 const FAN_FAVORITE_SONGS: HeroSongCard[] = [
   {
     slug: 'hotel-california',
@@ -158,6 +161,7 @@ const FAN_FAVORITE_SONGS: HeroSongCard[] = [
   },
 ];
 
+// 2. FRESH JUST ADDED (5 Songs)
 const NEW_ADDITIONS_SONGS: HeroSongCard[] = [
   {
     slug: 'while-my-guitar-gently-weeps',
@@ -236,6 +240,199 @@ const NEW_ADDITIONS_SONGS: HeroSongCard[] = [
   },
 ];
 
+// 3. BEGINNER FRIENDLY FIRST SONGS (4 Songs)
+const BEGINNER_SONGS: HeroSongCard[] = [
+  {
+    slug: 'knockin-on-heavens-door',
+    title: "Knockin' on Heaven's Door",
+    artist: 'Bob Dylan',
+    year: '1973',
+    key: 'G Major',
+    tempo: '68 BPM',
+    difficulty: 'Beginner',
+    genre: 'Folk Rock',
+    badge: '🌱 EASY START',
+    badgeColor: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30',
+    technique: 'Relaxed Cowboy Chords & Steady Strumming',
+    secretHook: 'Simple cyclic alternating cadence (G - D - Am7 then G - D - C) that feels endlessly resolving.',
+    tabDisplay: 'G ➔ D ➔ Am7 | G ➔ D ➔ C',
+  },
+  {
+    slug: 'wish-you-were-here',
+    title: 'Wish You Were Here',
+    artist: 'Pink Floyd',
+    year: '1975',
+    key: 'G Major',
+    tempo: '60 BPM',
+    difficulty: 'Beginner',
+    genre: 'Classic Rock',
+    badge: '🌱 EASY START',
+    badgeColor: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30',
+    technique: 'Anchor Fingers on High E & B Strings',
+    secretHook: 'Rhythm guitar locks fingers 3 and 4 at the 3rd fret while the bass notes outline folk movement.',
+    tabDisplay: 'Em7 ➔ G ➔ Em7 ➔ G ➔ Em7 ➔ A7sus4',
+  },
+  {
+    slug: 'wonderwall',
+    title: 'Wonderwall',
+    artist: 'Oasis',
+    year: '1995',
+    key: 'Em / G Major',
+    tempo: '87 BPM',
+    difficulty: 'Beginner',
+    genre: 'Britpop',
+    badge: '🌱 EASY START',
+    badgeColor: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30',
+    technique: 'Fixed High D & G Pedals With 16th Strum',
+    secretHook: 'Permanent ringing pedal tones on strings 1 & 2 transform basic cowboy chords into shimmering anthems.',
+    tabDisplay: 'Em7 ➔ G ➔ Dsus4 ➔ A7sus4',
+  },
+  {
+    slug: 'to-her-door',
+    title: 'To Her Door',
+    artist: 'Paul Kelly',
+    year: '1987',
+    key: 'G Major',
+    tempo: '108 BPM',
+    difficulty: 'Beginner',
+    genre: 'Folk Rock',
+    badge: '🌱 EASY START',
+    badgeColor: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-amber-500/30',
+    technique: 'Open Cowboy Chords & Storytelling Pulse',
+    secretHook: 'The definitive demonstration of standard diatonic I-IV-V chord movements supporting narrative lyrics.',
+    tabDisplay: 'G ➔ C ➔ D ➔ Em',
+  },
+];
+
+// 4. HARD ROCK & METAL RIFFS (4 Songs)
+const HARD_ROCK_SONGS: HeroSongCard[] = [
+  {
+    slug: 'enter-sandman',
+    title: 'Enter Sandman',
+    artist: 'Metallica',
+    year: '1991',
+    key: 'E Minor',
+    tempo: '123 BPM',
+    difficulty: 'Intermediate',
+    genre: 'Heavy Metal',
+    badge: '⚡ RIFF HEAVY',
+    badgeColor: 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30',
+    technique: 'Tritone Flatted 5th & Palm-Muted Chug',
+    secretHook: 'Dissonant flatted 5th (B♭) creates ominous tension before detonating into driving open E5 chords.',
+    tabDisplay: 'E5 ➔ F5 ➔ Bb5 (Tritone Riff)',
+  },
+  {
+    slug: 'crazy-train',
+    title: 'Crazy Train',
+    artist: 'Ozzy Osbourne (Randy Rhoads)',
+    year: '1980',
+    key: 'F# Minor',
+    tempo: '138 BPM',
+    difficulty: 'Advanced',
+    genre: 'Heavy Metal',
+    badge: '⚡ RIFF HEAVY',
+    badgeColor: 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30',
+    technique: 'F# Natural Minor Alternate Picking Riff',
+    secretHook: 'Neoclassical pedal-point riffing alternating between root F# and ascending diatonic scalar notes.',
+    tabDisplay: 'F#m ➔ D ➔ E (Pedal Point Riff)',
+  },
+  {
+    slug: 'sweet-child-o-mine',
+    title: "Sweet Child O' Mine",
+    artist: "Guns N' Roses",
+    year: '1987',
+    key: 'D Mixolydian',
+    tempo: '128 BPM',
+    difficulty: 'Advanced',
+    genre: 'Hard Rock',
+    badge: '⚡ RIFF HEAVY',
+    badgeColor: 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30',
+    technique: 'String-Skipping Arpeggios & Wah Bends',
+    secretHook: 'Flattened 7th (C Major) eliminates classical leading tension in favor of blues-rock strut.',
+    tabDisplay: 'D ➔ C (♭VII) ➔ G (IV) ➔ D',
+  },
+  {
+    slug: 'plug-in-baby',
+    title: 'Plug In Baby',
+    artist: 'Muse',
+    year: '2001',
+    key: 'B Minor',
+    tempo: '136 BPM',
+    difficulty: 'Advanced',
+    genre: 'Alt Rock',
+    badge: '⚡ RIFF HEAVY',
+    badgeColor: 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30',
+    technique: 'B Harmonic Minor Arpeggio Sweeps',
+    secretHook: 'Riff opens on dominant F# with exotic A# leading tone before detonating into gated fuzz power chords.',
+    tabDisplay: 'F# ➔ G ➔ D ➔ A ➔ Bm',
+  },
+];
+
+// 5. HENDRIX & BLUES MASTERY (4 Songs)
+const BLUES_SONGS: HeroSongCard[] = [
+  {
+    slug: 'little-wing',
+    title: 'Little Wing',
+    artist: 'Jimi Hendrix',
+    year: '1967',
+    key: 'G Major / Em',
+    tempo: '71 BPM',
+    difficulty: 'Advanced',
+    genre: 'Blues Rock',
+    badge: '🎸 BLUES & HENDRIX',
+    badgeColor: 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30',
+    technique: 'Thumb-Fretted Chords & Double-Stop Fills',
+    secretHook: 'Continuous rhythm embellishments and hybrid modal chord substitution over walking bass.',
+    tabDisplay: 'Em ➔ G ➔ Am ➔ Em ➔ Bm ➔ Am',
+  },
+  {
+    slug: 'the-wind-cries-mary',
+    title: 'The Wind Cries Mary',
+    artist: 'Jimi Hendrix',
+    year: '1967',
+    key: 'F Major',
+    tempo: '80 BPM',
+    difficulty: 'Intermediate',
+    genre: 'Blues Rock',
+    badge: '🎸 BLUES & HENDRIX',
+    badgeColor: 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30',
+    technique: 'Thumb-Fretted Chords & Sliding Triads',
+    secretHook: 'Parallel chromatic sliding triads (Eb -> E -> F) and delicate Curtis Mayfield R&B fills.',
+    tabDisplay: 'Eb ➔ E ➔ F ➔ C ➔ Bb',
+  },
+  {
+    slug: 'pride-and-joy',
+    title: 'Pride and Joy',
+    artist: 'Stevie Ray Vaughan',
+    year: '1983',
+    key: 'Eb Blues',
+    tempo: '126 BPM',
+    difficulty: 'Advanced',
+    genre: 'Texas Blues',
+    badge: '🎸 BLUES & HENDRIX',
+    badgeColor: 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30',
+    technique: 'Texas Shuffle Muted Strum & Rake Bends',
+    secretHook: 'Percussive constant-motion pick strokes muting unwanted strings while punching explosive accent notes.',
+    tabDisplay: 'E7 ➔ A7 ➔ B7 (Texas Shuffle)',
+  },
+  {
+    slug: 'crossroads',
+    title: 'Crossroads',
+    artist: 'Cream (Eric Clapton)',
+    year: '1968',
+    key: 'A Blues',
+    tempo: '132 BPM',
+    difficulty: 'Advanced',
+    genre: 'Blues Rock',
+    badge: '🎸 BLUES & HENDRIX',
+    badgeColor: 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30',
+    technique: 'Delta Blues Riffing in 12-Bar Rock Shuffle',
+    secretHook: 'Robert Johnson’s Mississippi Delta blues reimagined with aggressive Marshall tube saturation and pentatonic speed.',
+    tabDisplay: 'A7 ➔ D7 ➔ E7 (Rockin’ 12-Bar)',
+  },
+];
+
+// 6. AUSSIE CLASSICS (4 Songs)
 const AUSSIE_CLASSICS_SONGS: HeroSongCard[] = [
   {
     slug: 'whats-my-scene',
@@ -299,6 +496,7 @@ const AUSSIE_CLASSICS_SONGS: HeroSongCard[] = [
   },
 ];
 
+// 7. AUDIO PRACTICE TOOLS (4 Interactive Suites)
 const AUDIO_PRACTICE_TOOLS: HeroToolCard[] = [
   {
     id: 'fretboard-trainer',
@@ -350,6 +548,55 @@ const AUDIO_PRACTICE_TOOLS: HeroToolCard[] = [
   },
 ];
 
+// OPTION 1: QUICK JUMP HUB TILES DATA
+const QUICK_JUMP_TILES = [
+  {
+    title: 'Song Masterclasses',
+    count: '226 Songs',
+    icon: '🎸',
+    tag: 'Tabs + Theory',
+    description: 'Deconstruct iconic songs with interactive AlphaTab and harmonic secrets.',
+    href: '/lessons/songs/song-analysis',
+    accent: 'hover:border-amber-500/60 hover:shadow-amber-500/10',
+  },
+  {
+    title: 'Fretboard Note Hunt',
+    count: 'Audio Game',
+    icon: '🎯',
+    tag: '15 Frets',
+    description: 'Playable WebAudio game to locate any note across the neck with speed scoring.',
+    href: '/lessons/practice/fretboard-trainer',
+    accent: 'hover:border-emerald-500/60 hover:shadow-emerald-500/10',
+  },
+  {
+    title: 'Circle of Fifths',
+    count: 'Chord Strums',
+    icon: '🔄',
+    tag: 'Diatonic Audio',
+    description: 'Interactive SVG wheel to audition chord families, relative minors, and key modulations.',
+    href: '/lessons/practice/circle-of-fifths',
+    accent: 'hover:border-amber-500/60 hover:shadow-amber-500/10',
+  },
+  {
+    title: 'CAGED Visualizer',
+    count: '5 Shapes',
+    icon: '🎸',
+    tag: 'Full Neck',
+    description: 'Link open chord grips to movable pentatonic boxes and triad inversions.',
+    href: '/lessons/practice/caged-system',
+    accent: 'hover:border-rose-500/60 hover:shadow-rose-500/10',
+  },
+  {
+    title: 'Fretboard PDF',
+    count: '3-Page Desk Ref',
+    icon: '📄',
+    tag: 'Free Download',
+    description: 'Printable 300 DPI cheat sheet with notes, chord formulas, and scale diagrams.',
+    href: '/downloads/fretboard-cheat-sheet',
+    accent: 'hover:border-blue-500/60 hover:shadow-blue-500/10',
+  },
+];
+
 const QUICK_SEARCH_PILLS = [
   { label: "Don't Look Back in Anger", query: "Don't Look Back in Anger" },
   { label: 'Hotel California', query: 'Hotel California' },
@@ -382,7 +629,7 @@ const ICONIC_ARTISTS = [
 
 export default function HomeHero() {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState<'favorites' | 'new' | 'tools' | 'aussie'>('favorites');
+  const [activeTab, setActiveTab] = useState<VibeTabType>('favorites');
   const [pageIndex, setPageIndex] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -418,16 +665,28 @@ export default function HomeHero() {
 
   // Get active items and pagination
   const currentSongDataset = useMemo(() => {
-    if (activeTab === 'favorites') return FAN_FAVORITE_SONGS;
-    if (activeTab === 'new') return NEW_ADDITIONS_SONGS;
-    if (activeTab === 'aussie') return AUSSIE_CLASSICS_SONGS;
-    return [];
+    switch (activeTab) {
+      case 'favorites':
+        return FAN_FAVORITE_SONGS;
+      case 'new':
+        return NEW_ADDITIONS_SONGS;
+      case 'beginner':
+        return BEGINNER_SONGS;
+      case 'hardrock':
+        return HARD_ROCK_SONGS;
+      case 'blues':
+        return BLUES_SONGS;
+      case 'aussie':
+        return AUSSIE_CLASSICS_SONGS;
+      default:
+        return [];
+    }
   }, [activeTab]);
 
   const totalPages = Math.ceil(currentSongDataset.length / 4);
   const displayedSongs = currentSongDataset.slice(pageIndex * 4, pageIndex * 4 + 4);
 
-  const handleTabChange = (tab: 'favorites' | 'new' | 'tools' | 'aussie') => {
+  const handleTabChange = (tab: VibeTabType) => {
     setActiveTab(tab);
     setPageIndex(0);
   };
@@ -441,7 +700,7 @@ export default function HomeHero() {
   };
 
   return (
-    <section className="relative bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white pt-4 pb-8 sm:pt-6 sm:pb-10 border-b border-slate-200 dark:border-slate-800 transition-colors overflow-hidden">
+    <section className="relative bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white pt-4 pb-10 sm:pt-6 sm:pb-12 border-b border-slate-200 dark:border-slate-800 transition-colors overflow-hidden">
       {/* Subtle Ambient Radial Glow */}
       <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_50%_10%,_var(--tw-gradient-stops))] from-amber-500/25 via-blue-600/10 dark:via-purple-950 to-transparent" />
       <div className="absolute -top-24 -left-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -449,7 +708,7 @@ export default function HomeHero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* COMPACT HERO HEADER: High-impact, minimal vertical footprint */}
+        {/* COMPACT HERO HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-4">
           
           {/* Catalog Status Badge */}
@@ -469,7 +728,7 @@ export default function HomeHero() {
           </h1>
 
           {/* 1-Line Value Proposition */}
-          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1.5 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-2xl mx-auto leading-relaxed">
             Deconstruct 226+ iconic songs with interactive audio tabs, uncover harmonic secrets behind legendary riffs, and train your ears with gamified practice tools.
           </p>
 
@@ -558,68 +817,191 @@ export default function HomeHero() {
 
         </div>
 
-        {/* ABOVE-THE-FOLD CONTENT SHOWCASE MATRIX */}
-        <div className="mt-4">
-          
-          {/* Tab Filter & Shelf Controls */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 pb-3 border-b border-slate-200 dark:border-slate-800">
-            
-            {/* Segmented Category Buttons */}
-            <div className="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold w-full sm:w-auto overflow-x-auto">
+        {/* ========================================================================= */}
+        {/* PATTERN 3: "NEW HERE? CHOOSE YOUR LEARNING PATHWAY" ONBOARDING DOCK       */}
+        {/* ========================================================================= */}
+        <div className="mt-4 mb-4 bg-white/70 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 sm:p-3.5 backdrop-blur-md shadow-2xs">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2.5">
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="text-xs font-black uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+                <span>🎯</span>
+                <span>New Here? Choose Your Learning Goal:</span>
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-full lg:w-auto">
+              <button
+                onClick={() => handleTabChange('tools')}
+                className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 text-slate-800 dark:text-slate-200 hover:text-emerald-600 dark:hover:text-emerald-400 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <span>🎮</span>
+                <span className="truncate">Memorize Fretboard</span>
+              </button>
+
               <button
                 onClick={() => handleTabChange('favorites')}
-                className={`py-1.5 px-3 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 hover:border-amber-500 text-slate-800 dark:text-slate-200 hover:text-amber-600 dark:hover:text-amber-400 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <span>💡</span>
+                <span className="truncate">Unlock Song Theory</span>
+              </button>
+
+              <button
+                onClick={() => handleTabChange('beginner')}
+                className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 hover:border-blue-500 text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <span>🌱</span>
+                <span className="truncate">Play Easy Songs</span>
+              </button>
+
+              <Link
+                href="/downloads/fretboard-cheat-sheet"
+                className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 hover:border-purple-500 text-slate-800 dark:text-slate-200 hover:text-purple-600 dark:hover:text-purple-400 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <span>📄</span>
+                <span className="truncate">Free Desk PDF</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* PATTERN 1: "QUICK JUMP HUB" 5-TILE CORE DESTINATION DOCK                 */}
+        {/* ========================================================================= */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3 mb-5">
+          {QUICK_JUMP_TILES.map((tile) => (
+            <Link
+              key={tile.title}
+              href={tile.href}
+              className={`group flex flex-col justify-between p-3 rounded-2xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-2xs hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 ${tile.accent}`}
+            >
+              <div>
+                <div className="flex items-center justify-between gap-1 mb-1.5">
+                  <span className="text-xl sm:text-2xl">{tile.icon}</span>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider px-1.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
+                    {tile.tag}
+                  </span>
+                </div>
+                <h3 className="font-black text-xs sm:text-sm text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-1">
+                  {tile.title}
+                </h3>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-2 leading-snug">
+                  {tile.description}
+                </p>
+              </div>
+
+              <div className="pt-2 mt-1 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-[11px] font-bold text-amber-600 dark:text-amber-400">
+                <span>{tile.count}</span>
+                <span className="group-hover:translate-x-1 transition-transform">➔</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* ========================================================================= */}
+        {/* PATTERN 2: "EXPLORE BY VIBE & LEVEL" PILLS + 4-CARD LIVE CONTENT MATRIX   */}
+        {/* ========================================================================= */}
+        <div className="mt-2">
+          
+          {/* Filter Pills Bar & Shelf Navigation */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 pb-3 border-b border-slate-200 dark:border-slate-800">
+            
+            {/* Filter Pills */}
+            <div className="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold w-full sm:w-auto overflow-x-auto">
+              
+              <button
+                onClick={() => handleTabChange('favorites')}
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
                   activeTab === 'favorites'
                     ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 <span>🔥</span>
-                <span>Fan Favorites</span>
+                <span>All-Time Hits</span>
                 <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10 dark:bg-white/10">8</span>
               </button>
 
               <button
                 onClick={() => handleTabChange('new')}
-                className={`py-1.5 px-3 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
                   activeTab === 'new'
                     ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 <span>✨</span>
-                <span>Just Added</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 font-black">5 New</span>
+                <span>5 Just Added</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 font-black">New</span>
               </button>
 
               <button
-                onClick={() => handleTabChange('tools')}
-                className={`py-1.5 px-3 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
-                  activeTab === 'tools'
-                    ? 'bg-blue-600 text-white shadow-xs font-black'
+                onClick={() => handleTabChange('beginner')}
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                  activeTab === 'beginner'
+                    ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
-                <span>🎯</span>
-                <span>Audio Practice Tools</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20">4</span>
+                <span>🌱</span>
+                <span>Beginner Friendly</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10 dark:bg-white/10">4</span>
+              </button>
+
+              <button
+                onClick={() => handleTabChange('hardrock')}
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                  activeTab === 'hardrock'
+                    ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>⚡</span>
+                <span>Hard Rock & Metal</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10 dark:bg-white/10">4</span>
+              </button>
+
+              <button
+                onClick={() => handleTabChange('blues')}
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                  activeTab === 'blues'
+                    ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>🎸</span>
+                <span>Hendrix & Blues</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10 dark:bg-white/10">4</span>
               </button>
 
               <button
                 onClick={() => handleTabChange('aussie')}
-                className={`py-1.5 px-3 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
                   activeTab === 'aussie'
                     ? 'bg-amber-500 text-slate-950 shadow-xs font-black'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 <span>🇦🇺</span>
-                <span>Aussie Classics</span>
+                <span>Aussie Rock</span>
                 <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10 dark:bg-white/10">4</span>
+              </button>
+
+              <button
+                onClick={() => handleTabChange('tools')}
+                className={`py-1.5 px-2.5 rounded-lg transition-all text-xs font-bold whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                  activeTab === 'tools'
+                    ? 'bg-blue-600 text-white shadow-xs font-black'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>🎯</span>
+                <span>Audio Tools</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20">4</span>
               </button>
             </div>
 
-            {/* Pagination & Catalog Links */}
+            {/* Pagination Controls & Catalog Link */}
             <div className="flex items-center gap-3 shrink-0 text-xs">
               {activeTab !== 'tools' && totalPages > 1 && (
                 <div className="flex items-center gap-1.5">
@@ -656,10 +1038,10 @@ export default function HomeHero() {
 
           </div>
 
-          {/* 4-CARD SIDE-BY-SIDE VISUAL GRID: In Full View Above The Fold */}
+          {/* 4-CARD SIDE-BY-SIDE VISUAL GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
             
-            {/* VIEW 1: SONG CARDS (Favorites, Just Added, Aussie Classics) */}
+            {/* VIEW 1: SONG MASTERCLASS CARDS */}
             {activeTab !== 'tools' &&
               displayedSongs.map((song) => {
                 const diffColor = getDifficultyColor(song.difficulty);
@@ -731,7 +1113,7 @@ export default function HomeHero() {
                 );
               })}
 
-            {/* VIEW 2: AUDIO PRACTICE TOOLS (4 Interactive Suites) */}
+            {/* VIEW 2: AUDIO PRACTICE TOOLS CARDS */}
             {activeTab === 'tools' &&
               AUDIO_PRACTICE_TOOLS.map((tool) => (
                 <div
@@ -786,8 +1168,10 @@ export default function HomeHero() {
 
         </div>
 
-        {/* ABOVE-THE-FOLD ARTIST DIRECTORY RIBBON */}
-        <div className="mt-5 pt-3.5 border-t border-slate-200 dark:border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-2">
+        {/* ========================================================================= */}
+        {/* ARTIST QUICK-ACCESS MARQUEE RIBBON                                       */}
+        {/* ========================================================================= */}
+        <div className="mt-6 pt-3.5 border-t border-slate-200 dark:border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-2">
           <div className="flex items-center gap-2 shrink-0">
             <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               ⚡ Iconic Song Breakdowns by:
