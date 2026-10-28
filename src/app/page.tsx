@@ -39,14 +39,14 @@ export default function HomePage() {
   return (
     <Layout>
       <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-slate-100 transition-colors">
-        {/* 1. Hero Section: The Tab vs. Theory Bridge */}
+        {/* 1. Hero Section: The Tab vs. Theory Bridge & Above-the-Fold Content Showcase */}
         <HomeHero />
 
-        {/* 2. Interactive Practice Tools Suite Showcase */}
-        <InteractiveToolsSection />
-
-        {/* 3. What's New: Fresh Masterclasses & Scheduled Newsletter */}
+        {/* 2. What's New: Fresh Masterclasses & Scheduled Newsletter */}
         <WhatsNewSection />
+
+        {/* 3. Interactive Practice Tools Suite Showcase */}
+        <InteractiveToolsSection />
 
         {/* 4. Direct Song Analysis Library & Interactive Search/Filter Engine */}
         <HomeSongExplorer />
