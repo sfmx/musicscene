@@ -6,7 +6,7 @@ This playbook outlines the exact, battle-tested strategy for generating organic 
 
 ## 1. Account Profile Details
 
-* **Username:** `u/musicscene`
+* **Username:** `u/JasonFromMusicScene`
 * **Display Name:** `Jason | MusicScene` (Setting this gives the account an immediate personal human identity on your profile and hover card!)
 * **About / Bio:** `Hey, I'm Jason! I build free interactive guitar masterclasses, WebAudio practice tools & 226 song breakdowns. Built by a guitarist, for guitarists. https://musicscene.com.au`
 * **Profile Social Link:** `https://musicscene.com.au`
