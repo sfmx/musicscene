@@ -1,0 +1,70 @@
+{
+  "name": "MusicScene — Guitar Masterclasses & Practice Tools",
+  "short_name": "MusicScene",
+  "description": "Deconstruct 226+ iconic songs with interactive tabs, harmonic secrets, and gamified fretboard practice tools.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "lang": "en-US",
+  "categories": ["music", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fretboard Note Hunt",
+      "short_name": "Note Hunt",
+      "description": "Gamified 15-fret note recognition audio game",
+      "url": "/lessons/practice/fretboard-trainer/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Circle of Fifths",
+      "short_name": "Circle 5ths",
+      "description": "Interactive SVG wheel with diatonic chord strums",
+      "url": "/lessons/practice/circle-of-fifths/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Song Library",
+      "short_name": "226 Songs",
+      "description": "Complete directory of 226 song breakdowns",
+      "url": "/lessons/songs/song-analysis/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "CAGED Visualizer",
+      "short_name": "CAGED",
+      "description": "5 movable chord shapes and pentatonic boxes",
+      "url": "/lessons/practice/caged-system/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
+

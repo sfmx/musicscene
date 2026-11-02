@@ -4,6 +4,7 @@ import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import LeadMagnetModal from "@/components/Revenue/LeadMagnetModal";
 import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
+import InstallPwaPrompt from "@/components/PWA/InstallPwaPrompt";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 import { REVENUE_CONFIG } from "@/lib/revenueConfig";
 
@@ -55,7 +56,22 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
-  icons: { icon: "/favicon.svg" },
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "MusicScene",
+  },
   other: {
     "google-adsense-account": REVENUE_CONFIG.adsensePublisherId,
   },
@@ -98,6 +114,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <CookieConsent />
         <LeadMagnetModal />
+        <InstallPwaPrompt />
       </body>
     </html>
   );
