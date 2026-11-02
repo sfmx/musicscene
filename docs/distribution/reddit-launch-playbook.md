@@ -4,19 +4,12 @@ This playbook outlines the exact, battle-tested strategy for generating organic 
 
 ---
 
-## 1. Account Setup (Manual Step)
+## 1. Account Profile Details
 
-Because Reddit requires human CAPTCHA verification, password creation, and email confirmation, the account must be created manually:
-
-1. Go to [https://www.reddit.com/register](https://www.reddit.com/register).
-2. **Suggested Usernames:**
-   - `MusicSceneGuitar` (Recommended)
-   - `MusicSceneAU`
-   - `MusicSceneApp`
-3. **Profile Settings:**
-   - **Display Name:** `MusicScene Guitar`
-   - **About / Bio:** `Free interactive guitar masterclasses, WebAudio practice tools & 226 song breakdowns. Built by a guitarist, for guitarists. musicscene.com.au`
-   - **Profile Link:** `https://musicscene.com.au`
+* **Username:** `u/musicscene`
+* **Display Name:** `Jason | MusicScene` (Setting this gives the account an immediate personal human identity on your profile and hover card!)
+* **About / Bio:** `Hey, I'm Jason! I build free interactive guitar masterclasses, WebAudio practice tools & 226 song breakdowns. Built by a guitarist, for guitarists. https://musicscene.com.au`
+* **Profile Social Link:** `https://musicscene.com.au`
 
 ---
 
@@ -100,3 +93,4 @@ Designed to be printed on standard A4 or Letter at 300 DPI and kept on your musi
 * **Reply to every comment within the first 4 hours:** Reddit's ranking algorithm strongly favors threads with a high ratio of comments and discussions.
 * **Thank people for constructive criticism:** If someone says *"The soundfont is a bit quiet on Firefox"*, reply: *"Thanks for testing that! Looking into the audio gain level for Firefox now."*
 * **Never be defensive:** Even if a user leaves a cynical comment, respond with polite professionalism. Other readers will upvote your poise and downvote the troll.
+

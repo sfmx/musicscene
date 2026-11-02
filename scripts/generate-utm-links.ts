@@ -118,3 +118,4 @@ for (const [channel, list] of Object.entries(grouped)) {
 console.log('='.repeat(70));
 console.log('All visits through these URLs will log specifically in Google Analytics 4!');
 console.log('='.repeat(70));
+

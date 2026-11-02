@@ -32,3 +32,4 @@ This checklist guarantees that your personal Facebook friends, family, and colle
 5. **Rule #5: Audience Geofencing (Optional Extra Layer)**
    * In your Facebook Page Settings -> General -> **Country / Age Restrictions**, you can restrict visibility to specific regions or set age minimums if desired.
    * If you ever test $5 boosted posts or ads, Meta's targeting allows you to target specific interests (e.g., *Guitar*, *Fender*, *Music Theory*) without touching your personal friend graph.
+
