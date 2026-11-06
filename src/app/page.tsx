@@ -12,10 +12,10 @@ import HomeStageNavigator from '@/components/Home/HomeStageNavigator';
 
 export const metadata: Metadata = {
   title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-  description: 'Bridge the gap between mechanical guitar tabs and abstract theory. 226+ iconic song analyses, interactive fretboard trainer & note hunt, progression jam player, and free printable fretboard cheat sheet.',
+  description: 'Bridge the gap between mechanical guitar tabs and abstract theory. 230+ iconic song analyses, interactive fretboard trainer & note hunt, progression jam player, and free printable fretboard cheat sheet.',
   openGraph: {
     title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-    description: 'Bridge the gap between guitar tabs and music theory. 226+ song breakdowns, interactive fretboard tools, and free cheat sheet.',
+    description: 'Bridge the gap between guitar tabs and music theory. 230+ song breakdowns, interactive fretboard tools, and free cheat sheet.',
     url: 'https://musicscene.com.au',
     siteName: 'MusicScene',
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MusicScene — Stop Memorizing Tabs. Start Understanding Music.',
-    description: '226+ song breakdowns, interactive fretboard note hunt game, progression jam player, and free cheat sheet.',
+    description: '230+ song breakdowns, interactive fretboard note hunt game, progression jam player, and free cheat sheet.',
     images: ['https://musicscene.com.au/images/og-default.png'],
   },
 };
@@ -93,7 +93,7 @@ export default function HomePage() {
                 href="/lessons/songs/song-analysis"
                 className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-200/60 dark:hover:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold rounded-xl border border-slate-300 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-700 transition-all duration-200 text-base inline-flex items-center justify-center gap-2"
               >
-                <span>Browse All 226 Songs ➔</span>
+                <span>Browse All Songs ➔</span>
               </Link>
             </div>
           </div>

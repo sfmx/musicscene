@@ -669,7 +669,7 @@ export default function HomeHero() {
               {/* Status Badge */}
               <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-[11px] font-semibold text-amber-600 dark:text-amber-300 shadow-2xs">
                 <span className="flex h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
-                <span>226 Breakdowns & Audio Tools</span>
+                <span>{allSongs.length} Breakdowns & Audio Tools</span>
               </div>
 
               {/* Punchy Headline */}
@@ -695,7 +695,7 @@ export default function HomeHero() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onFocus={() => setIsSearchFocused(true)}
-                    placeholder="Search 226+ songs, artists, or tools..."
+                    placeholder={`Search ${allSongs.length}+ songs, artists, or tools...`}
                     className="w-full pl-8 pr-7 py-2 bg-white dark:bg-slate-900 border-2 border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 text-xs font-medium shadow-2xs focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all"
                   />
                   {searchQuery && (
@@ -841,7 +841,7 @@ export default function HomeHero() {
                 href="/lessons/songs/song-analysis"
                 className="w-full py-2 px-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-500 text-slate-800 dark:text-slate-200 hover:text-amber-600 text-xs font-bold rounded-xl text-center shadow-2xs transition-all flex items-center justify-center gap-1.5"
               >
-                <span>🎸 Browse All 226 Song Lessons</span>
+                <span>🎸 Browse All {allSongs.length} Song Lessons</span>
                 <span>➔</span>
               </Link>
             </div>

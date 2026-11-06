@@ -12,7 +12,7 @@ const STAGES: StageItem[] = [
   { id: 'hero', label: 'Masterclass Hub', icon: '🎸' },
   { id: 'whats-new', label: 'Fresh Additions', icon: '✨' },
   { id: 'interactive-tools', label: 'Practice Tools', icon: '🎯' },
-  { id: 'song-library', label: '226 Song Library', icon: '📚' },
+  { id: 'song-library', label: 'Song Library', icon: '📚' },
   { id: 'why-songs-work', label: 'Harmonic Secrets', icon: '💡' },
   { id: 'theory-curriculum', label: 'Theory Curriculum', icon: '🎼' },
 ];

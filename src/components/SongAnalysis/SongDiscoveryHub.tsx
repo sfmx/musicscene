@@ -395,7 +395,7 @@ export default function SongDiscoveryHub() {
             </div>
           )}
 
-          {/* TAB 2: ALL 128 SONGS DIRECTORY */}
+          {/* TAB 2: ALL SONGS DIRECTORY */}
           {activeTab === 'directory' && (
             <div className="space-y-6">
               {/* Search & Filter Header Bar */}
@@ -404,7 +404,7 @@ export default function SongDiscoveryHub() {
                 <div className="relative">
                   <input
                     type="text"
-                    placeholder="Search 128 songs by title, artist (e.g. Led Zeppelin, Pink Floyd), technique, or tag..."
+                    placeholder={`Search ${allSongs.length} songs by title, artist (e.g. Dire Straits, Pink Floyd), technique, or tag...`}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full pl-11 pr-10 py-3.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none text-sm transition-all shadow-inner"
