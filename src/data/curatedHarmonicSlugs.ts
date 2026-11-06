@@ -145,6 +145,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'whats-my-scene',
   'the-wind-cries-mary',
   'plug-in-baby',
+  'money-for-nothing',
+  'all-right-now',
+  'where-the-streets-have-no-name',
+  'crazy-little-thing-called-love',
+  'stray-cat-strut',
+  'romeo-and-juliet',
+  'tunnel-of-love',
+  'down-to-the-waterline',
+  'telegraph-road',
+  'your-latest-trick',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

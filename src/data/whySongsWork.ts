@@ -5577,6 +5577,408 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'money-for-nothing': {
+    slug: 'money-for-nothing',
+    songTitle: 'Money for Nothing',
+    artist: 'Dire Straits',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Dorian Natural 6th (E) and Syncopated Fourth-Interval Double Stops',
+    emotionalHook: 'The monster guitar riff avoids plain minor gloom by highlighting the natural 6th degree (E) of G Dorian alongside heavy fourth-interval double stops. Voicing the chords without full barre grips leaves vast sonic space for the kick drum and bass, while the bare-fingered claw-hammer attack gives each note an explosive percussive snap.',
+    romanProgression: 'i - bVII - bVI - V',
+    chords: ['Gm', 'F', 'Eb', 'D'],
+    progressionExplanation: [
+      'Gm (i): Dark tonic minor establishing the driving, swaggering rock center.',
+      'F (bVII): Subtonic chord providing momentum and blues-rock drive.',
+      'Eb (bVI): Submediant chord adding poignant harmonic weight in verse and chorus.',
+      'D (V): Dominant major delivering the strong harmonic pull back to the tonic Gm.',
+    ],
+    voiceLeadingInsights: [
+      'Mark Knopfler plays fourth intervals on the D and G strings (G-C and F-Bb) rather than heavy barre chords.',
+      'A stationary cocked-wah pedal boosts 800Hz-1.2kHz midrange frequencies, making double stops slice through the mix with vocal sustain.',
+      'The bass line anchors the low G while the fingers pop the upper syncopated fourths on the sixteenth-note upbeats.',
+    ],
+    guitarPerspective: 'Ditch the flatpick completely. Use the thumb on low bass notes and snap the index and middle fingers upward under strings 4 and 3. Mute with the palm heel on bridge saddles for staccato punch.',
+    songwriterTakeaway: 'Simplify your chord voicings down to two-note double stops or fourths when writing heavy riffs. It leaves cavernous room for drums and bass while giving your guitar unmistakable clarity.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Dorian Mode', slug: 'dorian', description: 'The modal scale providing the natural 6th (E) that brightens the minor riff.' },
+        { name: 'G Minor Pentatonic', slug: 'minor-pentatonic', description: 'The blues-rock framework for Knopfler’s expressive lead fills.' },
+      ],
+      modes: [
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The brighter minor mode with a raised 6th degree.' },
+      ],
+      chords: [
+        { name: 'Power Chords & Double Stops', slug: 'power-chord', description: 'Two-note fourth voicings that streamline rock riffs.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Foundational minor shapes anchoring the tonic groove.' },
+      ],
+    },
+  },
+
+  'all-right-now': {
+    slug: 'all-right-now',
+    songTitle: 'All Right Now',
+    artist: 'Free',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Inverted Upper Triads Over an Unbroken Open A Pedal Tone and Cavernous Silence',
+    emotionalHook: 'The power of this classic riff lies in what Paul Kossoff doesn’t play. By pedaling an open 5th string (A) under second-inversion D/A and G/A triads, the guitar creates a massive orchestral presence with tiny fret shifts, while the strict silence between chord chops lets the rhythm section hit like a sledgehammer.',
+    romanProgression: 'I - IV/I - bVII/I',
+    chords: ['A', 'D/A', 'G/A'],
+    progressionExplanation: [
+      'A (I): Foundational tonic chord establishing authoritative classic rock power.',
+      'D/A (IV/I): Second inversion subdominant triad providing radiant lift while the bass note remains anchored on A.',
+      'G/A (bVII/I): Mixolydian subtonic triad adding swagger and blues grit without requiring a formal resolution.',
+    ],
+    voiceLeadingInsights: [
+      'The open 5th string (A) drones continuously, acting as the harmonic anchor for all three chords.',
+      'The upper voices move in smooth parallel motion: C#-E to D-F# to B-D on strings 3, 2, and 1.',
+      'The rests between chord hits are absolute, creating extreme dynamic contrast between explosive sound and complete silence.',
+    ],
+    guitarPerspective: 'Barre the A5 with your index finger at fret 2, and pivot fingers 2 and 3 into the D/A and G/A triads. Keep the low E string strictly muted with your index fingertip.',
+    songwriterTakeaway: 'Keep your bass note static while shifting simple triads over the top. It instantly creates an unforgettable stadium riff without harmonic clutter.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Mixolydian', slug: 'mixolydian', description: 'The classic rock scale with a flattened 7th (G natural).' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'The scale fueling Paul Kossoff’s soaring blues solo.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The definitive sound of 1970s hard rock swagger.' },
+      ],
+      chords: [
+        { name: 'Slash Chords & Inversions', slug: 'triads', description: 'Playing triads over foreign bass notes for rich texture.' },
+        { name: 'Major Chords', slug: 'major', description: 'Bright diatonic triad grips across the top strings.' },
+      ],
+    },
+  },
+
+  'where-the-streets-have-no-name': {
+    slug: 'where-the-streets-have-no-name',
+    songTitle: 'Where the Streets Have No Name',
+    artist: 'U2',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Pedal Tones & Ambient Drone',
+    coreSecret: 'Dotted-Eighth Rhythmic Delay Interlocking with Open String Drone Chords',
+    emotionalHook: 'The Edge’s guitar sounds like an entire symphony of chiming guitars through mathematical rhythmic delay. By playing straight eighth notes with a digital delay set strictly to a dotted eighth note (357 ms at 126 BPM), each picked note generates an echo on the sixteenth-note subdivision, producing a galloping, sparkling halo of light.',
+    romanProgression: 'I - IV/I - vi - V',
+    chords: ['D', 'G/D', 'Bm', 'A'],
+    progressionExplanation: [
+      'D (I): Tonic major chord providing transcendent warmth and spiritual release.',
+      'G/D (IV/I): Subdominant triad retaining the open D pedal note for uninterrupted chime.',
+      'Bm (vi): Relative minor introducing a fleeting touch of melancholy in the chorus.',
+      'A (V): Dominant major propelling the progression forward toward subsequent cycles.',
+    ],
+    voiceLeadingInsights: [
+      'The high D note (fret 10, high E string) rings continuously across D, G/D, and Bm chord shapes.',
+      'The dotted-eighth delay repeats bounce twice at 70% volume, filling the gaps between eighth notes with galloping energy.',
+      'The bridge features a sudden modal shift to C major (bVII), injecting earthbound grit before returning to D.',
+    ],
+    guitarPerspective: 'Use a Stratocaster in pickup position 2 (bridge + middle) into a chiming Vox AC30. Set your digital delay strictly to 357 ms and pick steady, un-syncopated down-up eighth notes.',
+    songwriterTakeaway: 'Use time-based effects as an organic songwriting instrument rather than an afterthought. A simple two-chord vamp becomes legendary when synced to a rhythmic delay pattern.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major (Ionian)', slug: 'major', description: 'The primary scale radiating optimistic anthemic atmosphere.' },
+        { name: 'D Mixolydian', slug: 'mixolydian', description: 'The modal color introduced in the bridge via the C major chord.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The pure major scale foundation of arena rock anthems.' },
+      ],
+      chords: [
+        { name: 'Triads & Inversions', slug: 'triads', description: 'High-register three-string chord grips that cut through delays.' },
+        { name: 'Major Chords', slug: 'major', description: 'D and G open voicings with shimmering treble attack.' },
+      ],
+    },
+  },
+
+  'crazy-little-thing-called-love': {
+    slug: 'crazy-little-thing-called-love',
+    songTitle: 'Crazy Little Thing Called Love',
+    artist: 'Queen',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Secondary Dominant (E7) and Rhythmic Dsus4 Pinky Hammer Shuffle',
+    emotionalHook: 'Freddie Mercury channeled Elvis Presley with a timeless rockabilly acoustic swing. The infectious bounce comes from alternating open D with Dsus4 on the upbeats, while the chorus introduces an E7 chord (the secondary dominant V/V) that pulls with undeniable harmonic urgency into the dominant A chord before the band drops out completely.',
+    romanProgression: 'I - Isus4 - IV - bVII - V/V - V',
+    chords: ['D', 'Dsus4', 'G', 'C', 'Bb', 'E7', 'A'],
+    progressionExplanation: [
+      'D to Dsus4 (I to Isus4): Foundational acoustic shuffle alternating between major 3rd (F#) and suspended 4th (G).',
+      'G to C (IV to bVII): Bluesy subdominant move borrowed from Mixolydian.',
+      'Bb (bVI): Chromatic borrowed chord from minor providing dramatic anticipation.',
+      'E7 (V/V): Secondary dominant chord acting as the dominant of A, creating high harmonic tension.',
+      'A (V): Dominant major chord delivering the triumphant turnaround back to the home key D.',
+    ],
+    voiceLeadingInsights: [
+      'The pinky hammer-on on the 3rd fret high E string creates an active melodic hook inside a basic open chord.',
+      'The chromatic bassline walks from Bb to C to D, mirroring 1950s rockabilly upright bass patterns.',
+      'Brian May’s Telecaster solo uses oblique double stops where the B string is held stationary while the G string bends a whole step.',
+    ],
+    guitarPerspective: 'Keep your acoustic strumming hand relaxed for a loose, bouncing swing shuffle at 154 BPM. For lead work, grab a Telecaster bridge pickup with vintage slapback tape echo.',
+    songwriterTakeaway: 'Add secondary dominants (like E7 before A in the key of D) to give your choruses that classic, irresistible momentum that makes audiences sing along.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major Pentatonic', slug: 'major-pentatonic', description: 'The uplifting country-blues scale powering the vocal hook.' },
+        { name: 'D Blues Scale', slug: 'blues', description: 'Brian May’s foundation for snappy double-stop bends.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'The rockabilly scale with a flattened 7th degree (C natural).' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'E7 and A7 providing secondary dominant tension.' },
+        { name: 'Suspended Chords', slug: 'suspended', description: 'Dsus4 adding rhythmic melody over the tonic chord.' },
+      ],
+    },
+  },
+
+  'stray-cat-strut': {
+    slug: 'stray-cat-strut',
+    songTitle: 'Stray Cat Strut',
+    artist: 'Stray Cats',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Basslines & Andalusian Cadences',
+    coreSecret: 'The Minor Andalusian Cadence with Chromatic Enclosures and Altered Dominants',
+    emotionalHook: 'Brian Setzer fused 1950s rockabilly with 1940s jump-blues jazz sophistication. The descending Andalusian cadence (Cm - Bb - Ab - G7) evokes the stealthy prowl of an alley cat, dressed up with Cm6, Bb9, Abmaj7, and G7#9 chords, while the guitar solo weaves between blues bends and diminished 7th sweeps over the dominant chord.',
+    romanProgression: 'i - bVII - bVI - V7',
+    chords: ['Cm', 'Bb', 'Ab', 'G7'],
+    progressionExplanation: [
+      'Cm (i): Dark, moody tonic minor establishing the cool nocturnal swing.',
+      'Bb (bVII): Subtonic chord providing effortless downward voice leading.',
+      'Ab (bVI): Submediant chord creating dramatic weight in the descending bassline.',
+      'G7 (V7): Altered dominant chord featuring the leading tone B natural that pulls forcefully back to Cm.',
+    ],
+    voiceLeadingInsights: [
+      'The bassline walks down chromatically or diatonically: C → Bb → Ab → G, forming an unbroken descending foundation.',
+      'Setzer uses jazz chord extensions (Cm6, Bb9, Abmaj7, G7#9) to give the simple 4-chord loop rich harmonic coloration.',
+      'Over the G7 chord, Setzer plays Ab diminished 7th arpeggios, which spell out the 3rd, 5th, b7, and b9 of G7alt.',
+    ],
+    guitarPerspective: 'Play on a hollowbody Gretsch with Filter’Tron pickups into a blonde Fender Bassman. Use a plastic thumb pick to slap alternating bass notes while popping chords with bare fingers.',
+    songwriterTakeaway: 'Elevate a standard minor progression by swapping basic barre chords for jazz voicings (add 6ths, 9ths, and #9s) and walking your bassline chromatically into each chord.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'C Minor (Aeolian)', slug: 'minor', description: 'The natural minor scale providing the primary chord tones.' },
+        { name: 'C Dorian Mode', slug: 'dorian', description: 'The jazzy minor scale featuring the natural 6th (A natural).' },
+        { name: 'C Blues Scale', slug: 'blues', description: 'The gritty scale used for rockabilly bends and double stops.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark minor mode driving the Andalusian descent.' },
+        { name: 'Dorian Mode', slug: 'dorian', description: 'The jazz-blues minor mode with bright 6th degree color.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'G7 and G7#9 creating intense harmonic tension.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Cm and Cm6 anchoring the nocturnal mood.' },
+      ],
+    },
+  },
+
+  'romeo-and-juliet': {
+    slug: 'romeo-and-juliet',
+    songTitle: 'Romeo and Juliet',
+    artist: 'Dire Straits',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Basslines & Andalusian Cadences',
+    coreSecret: 'The Stepwise Folk-Ballad Descent in Open G Tuning with Capo 3 and Sympathetic Drones',
+    emotionalHook: 'The bittersweet vulnerability of this ballad is unlocked by Mark Knopfler’s open tuning. By playing a 1937 National Style O steel resonator in Open G (D-G-D-G-B-D) with a capo at the 3rd fret, the descending bassline (F → E → D → C → Bb) moves effortlessly while the open treble strings ring out like sympathetic harp drones, creating an intimate, timeless folk-poetry texture.',
+    romanProgression: 'I - V6 - vi - V - IV',
+    chords: ['F', 'C/E', 'Dm', 'C', 'Bb'],
+    progressionExplanation: [
+      'F (I): The warm tonic major foundation delivering tenderness and nostalgic light.',
+      'C/E (V6): First-inversion dominant chord that steps the bass smoothly down from F to D.',
+      'Dm (vi): Relative minor providing bittersweet melancholy that mirrors the heartbreak narrative.',
+      'C (V): Dominant chord offering a brief pause before descending to the subdominant.',
+      'Bb (IV): Subdominant chord creating lyrical warmth and emotional release in the chorus.',
+    ],
+    voiceLeadingInsights: [
+      'The bass line creates a smooth scalar descent: F (fret 3, string 4) → E (fret 2) → D (open string 4) → C (fret 3, string 5) → Bb (fret 1).',
+      'The open D and G strings ring sympathetically throughout, acting as unbroken acoustic drone anchors.',
+      'Delicate hammer-on suspensions on the 2nd fret of string 3 inject vocal-like inflection directly into the fingerpicked chords.',
+    ],
+    guitarPerspective: 'Tune to Open G (DGDGBD) and capo at fret 3. Use bare fingers (flesh and nail) to pluck rolling three-finger arpeggios, keeping the thumb dedicated to the descending bassline.',
+    songwriterTakeaway: 'Use an open tuning with a capo to turn a standard descending major progression into a shimmering, distinctive sonic world with effortless voice leading.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F Major (Ionian)', slug: 'major', description: 'The diatonic scale shaping the tender melody and fingerpicked rolls.' },
+        { name: 'F Major Pentatonic', slug: 'major-pentatonic', description: 'The lyrical scale used for Knopfler’s expressive acoustic fills.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The pure major mode foundation providing warmth and romantic resolution.' },
+      ],
+      chords: [
+        { name: 'Triads & Inversions', slug: 'triads', description: 'Smooth first-inversion slash chords like C/E for bass walking.' },
+        { name: 'Major Chords', slug: 'major', description: 'F and Bb open-tuning voicings ringing with sympathetic harmonics.' },
+      ],
+    },
+  },
+
+  'tunnel-of-love': {
+    slug: 'tunnel-of-love',
+    songTitle: 'Tunnel of Love',
+    artist: 'Dire Straits',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Carousel Rock Epic with Relative Major Pre-Chorus and Continuous Fingerstyle Solo',
+    emotionalHook: 'The drama moves between gritty seaside carnival rock in D minor (Dm - C - Bb - C) and an expansive romantic ascent in the relative major (F major). Knopfler caps the 8-minute epic with a 3-minute continuous fingerstyle solo, using alternating index and middle flutter picking to achieve vocal sustain and blazing pull-off cascades impossible with a flatpick.',
+    romanProgression: 'i - bVII - bVI - bVII',
+    chords: ['Dm', 'C', 'Bb', 'F'],
+    progressionExplanation: [
+      'Dm (i): Nocturnal tonic minor establishing the Spanish City fairground drama.',
+      'C (bVII): Subtonic chord providing driving rock momentum and forward propulsion.',
+      'Bb (bVI): Submediant chord adding poignant emotional weight and romantic yearning.',
+      'F (III): Relative major tonic delivering glorious daylight during the pre-chorus and chorus hooks.',
+    ],
+    voiceLeadingInsights: [
+      'The verse rocks between Dm, C, and Bb, stepping down and bouncing back to C to create unresolved harmonic motion.',
+      'The pre-chorus pivots dramatically to F major, expanding the vocal range and guitar strumming dynamics.',
+      'Knopfler’s outro solo weaves through D minor pentatonic, blues scale, and Dorian natural 6th passing tones over the repeating Dm-Bb-C vamp.',
+    ],
+    guitarPerspective: 'Use a Stratocaster bridge pickup into a clean tube amp with a subtle chorus and compressor. Alternate index and middle fingers in a relaxed flutter motion for the fast outro triplet cascades.',
+    songwriterTakeaway: 'Structure an extended rock epic by alternating a minor-key driving groove with a radiant relative major chorus, then give your lead instrument an open vamp to build emotional intensity to the fade.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Natural Minor', slug: 'minor', description: 'The Aeolian scale anchoring the driving rock vamp.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'The framework for Knopfler’s historic extended outro guitar solo.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark minor mode driving the verse progression.' },
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The relative major mode providing anthemic release in the chorus.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Dm barre shapes anchoring the nocturnal seaside mood.' },
+        { name: 'Major Chords', slug: 'major', description: 'F, C, and Bb chords powering the stadium rock chorus.' },
+      ],
+    },
+  },
+
+  'down-to-the-waterline': {
+    slug: 'down-to-the-waterline',
+    songTitle: 'Down to the Waterline',
+    artist: 'Dire Straits',
+    category: 'descending-bassline',
+    categoryLabel: 'Descending Basslines & Andalusian Cadences',
+    coreSecret: 'The Newcastle River Tyne Maritime Shuffle with Stratocaster Chicken-Picking Snap',
+    emotionalHook: 'The track emerges from an atmospheric foghorn volume swell into a ferocious 136 BPM shuffle. Knopfler pairs the Andalusian cadence (Bm - A - G - F#7) with his iconic out-of-phase Stratocaster position 2 tone, using fleshy palm muting and upward finger snaps to create a biting percussive snap that defined Dire Straits’ debut sound.',
+    romanProgression: 'i - bVII - bVI - V7',
+    chords: ['Bm', 'A', 'G', 'F#7'],
+    progressionExplanation: [
+      'Bm (i): Gritty, nocturnal tonic minor evoking the Newcastle quayside in the fog.',
+      'A (bVII): Subtonic chord providing rapid descending voice leading.',
+      'G (bVI): Submediant chord adding poignant weight to the downward motion.',
+      'F#7 (V7): Dominant seventh chord borrowed from B Harmonic Minor with the sharp leading tone A# that demands resolution to Bm.',
+    ],
+    voiceLeadingInsights: [
+      'The bassline descends in whole steps and half steps: B → A → G → F#.',
+      'The dominant F#7 chord contains A# (the leading tone), creating authentic minor-key harmonic tension.',
+      'Knopfler snaps double stops at the 7th fret cleanly, muting immediately with his palm heel for maximum staccato definition.',
+    ],
+    guitarPerspective: 'Set a Stratocaster 5-way switch to position 2 (bridge + middle) into a pristine clean Fender Twin. Pick the low root notes with your thumb and pop the upper strings with your index and middle fingers.',
+    songwriterTakeaway: 'Take a classic minor descending cadence and turbocharge it with an urgent tempo, staccato palm muting, and an evocative atmospheric intro that sets the scene before the beat drops.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'B Natural Minor', slug: 'minor', description: 'The Aeolian scale providing the primary harmonic tones.' },
+        { name: 'B Harmonic Minor', slug: 'harmonic-minor', description: 'The scale supplying the raised leading tone A# for the F#7 chord.' },
+        { name: 'B Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for Knopfler’s blistering chicken-picking lead breaks.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark minor mode driving the verse progression.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'F#7 delivering powerful resolution back to Bm.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Bm chord grips anchoring the driving riverbank groove.' },
+      ],
+    },
+  },
+
+  'telegraph-road': {
+    slug: 'telegraph-road',
+    songTitle: 'Telegraph Road',
+    artist: 'Dire Straits',
+    category: 'key-modulation',
+    categoryLabel: 'Key Modulation & Harmonic Journeys',
+    coreSecret: 'The 14-Minute Frontier Accelerando from Acoustic Dawn to 142 BPM Outro Tempest',
+    emotionalHook: 'This progressive rock masterpiece mirrors the historical rise of an industrial empire through tempo and harmony. Starting as a delicate, pastoral 62 BPM acoustic folk ballad in D minor, the narrative steps into radiant F major in the choruses, pauses for a reflective steel resonator interlude, and then unleashes a thunderstorm accelerando that surges to 142 BPM for a legendary 5-minute fingerstyle solo.',
+    romanProgression: 'i - bVII - bVI - bVII',
+    chords: ['Dm', 'C', 'Bb', 'F', 'A7'],
+    progressionExplanation: [
+      'Dm (i): Foundational tonic minor capturing the rugged wilderness and passage of time.',
+      'C (bVII): Subtonic chord providing restless forward momentum along the trail.',
+      'Bb (bVI): Submediant chord adding deep emotional gravity to the frontier struggle.',
+      'F (III): Relative major tonic delivering glorious expansion and daylight in the chorus.',
+      'A7 (V7): Dominant seventh chord borrowed from D Harmonic Minor with C# leading tone that injects urgent resolution back to Dm.',
+    ],
+    voiceLeadingInsights: [
+      'The verse harmony walks down through F to C/E to Dm, creating seamless bass counterpoint underneath Knopfler’s spoken narrative.',
+      'The chorus builds through Bb and C before stepping into F major, expanding the vocal reach before resolving via the dominant A7.',
+      'During the climactic 5-minute outro, Knopfler alternates rapid three-note triplet pull-offs in D minor pentatonic with snappy double stops on strings 2 and 3.',
+    ],
+    guitarPerspective: 'Begin on a National steel or acoustic guitar with gentle rolling arpeggios. Switch to a Schecter Stratocaster on the bridge pickup into an overdriven Marshall/Twin, using two-finger flutter picking for the blistering 142 BPM outro.',
+    songwriterTakeaway: 'Mirror your lyrical narrative through tempo and arrangement architecture. Starting sparse and quiet at half-tempo gives your climactic outro ten times the emotional impact when the storm finally breaks.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Natural Minor', slug: 'minor', description: 'The Aeolian scale anchoring the grand historical progression.' },
+        { name: 'D Minor Pentatonic', slug: 'minor-pentatonic', description: 'The foundation for Knopfler’s marathon outro guitar solo.' },
+        { name: 'D Harmonic Minor', slug: 'harmonic-minor', description: 'Supplies the leading tone C# for the dramatic A7 turnaround.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The minor mode foundation providing dark, cinematic gravity.' },
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The relative major mode providing anthemic expansion in the chorus.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'A7 providing climactic turnaround tension.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Dm and Gm voicings anchoring the historical weight.' },
+      ],
+    },
+  },
+
+  'your-latest-trick': {
+    slug: 'your-latest-trick',
+    songTitle: 'Your Latest Trick',
+    artist: 'Dire Straits',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Midnight Sophisti-Pop Circle of Fifths with Drop-2 Voicings and Altered C7#9 Cadence',
+    emotionalHook: 'Beneath the world-famous saxophone melody lies one of the most sophisticated jazz-pop progressions ever written. Moving through a complete circle-of-fifths cycle in the relative major (Bbm7 → Eb9 → Abmaj7 → Dbmaj7), the song resolves through a textbook minor ii-V turnaround (Gm7b5 → C7#9) where the biting #9 alteration creates exquisite tension before dissolving back into the velvety Fm9 tonic.',
+    romanProgression: 'i9 - iv7 - bVII9 - bIIImaj7 - bVImaj7 - iiø7 - V7#9',
+    chords: ['Fm9', 'Bbm7', 'Eb9', 'Abmaj7', 'Dbmaj7', 'Gm7b5', 'C7#9'],
+    progressionExplanation: [
+      'Fm9 (i9): Velvety tonic minor with the added 9th (G) delivering sophisticated noir warmth.',
+      'Bbm7 (iv7): Minor subdominant kicking off the circle-of-fifths progression.',
+      'Eb9 (bVII9): Dominant ninth functioning as the secondary dominant of Ab major.',
+      'Abmaj7 (bIIImaj7): Relative major tonic offering radiant, fleeting elegance.',
+      'Dbmaj7 (bVImaj7): Submediant major seventh chord continuing the smooth downward bass step.',
+      'Gm7b5 (iiø7): Half-diminished chord introducing authentic jazz-noir tension.',
+      'C7#9 (V7#9): Altered dominant chord featuring the raised leading tone E natural and sharp 9th (D#) that pulls urgently into Fm9.',
+    ],
+    voiceLeadingInsights: [
+      'The bassline follows the circle of fifths down in 4ths and 5ths: Bb → Eb → Ab → Db → G → C → F.',
+      'The upper voices move in smooth half-step voice leading: the major 7th of Abmaj7 (G) drops a half step to the 7th of Dbmaj7 (C).',
+      'Knopfler plays delicate drop-2 chord voicings with his fingers, completely avoiding flatpick drag to let the saxophone soar.',
+    ],
+    guitarPerspective: 'Use a Stratocaster neck pickup or Gibson ES-175 into a Roland JC-120 clean amp with lush stereo chorus. Pluck all four voices simultaneously with your thumb and fingers for instantaneous chord attack.',
+    songwriterTakeaway: 'Elevate a pop ballad by borrowing the circle of fifths from jazz. Using extended chords (9ths, major 7ths, half-diminished) turns a simple love song into a timeless, cinematic experience.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F Natural Minor', slug: 'minor', description: 'The Aeolian scale providing the diatonic foundation for the ballad.' },
+        { name: 'Ab Major (Ionian)', slug: 'major', description: 'The relative major scale powering the circle-of-fifths sequence.' },
+        { name: 'F Harmonic Minor', slug: 'harmonic-minor', description: 'Supplies the leading tone E natural for the C7#9 altered chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The dark, velvety minor mode anchoring the nocturnal atmosphere.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'C7#9 altered dominant providing maximum tension.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Fm9 and Bbm7 drop-2 chord voicings with lush color.' },
+      ],
+    },
+  },
 };
 
 /**

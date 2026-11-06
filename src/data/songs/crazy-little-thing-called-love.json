@@ -1,0 +1,423 @@
+{
+  "songInfo": {
+    "title": "Crazy Little Thing Called Love",
+    "artist": "Queen",
+    "album": "The Game",
+    "released": "1979",
+    "genre": "Rockabilly",
+    "tempo": "154 BPM",
+    "duration": "2:42",
+    "key": "D Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Beginner",
+    "leadGuitar": "Intermediate",
+    "bass": "Intermediate",
+    "drums": "Beginner"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D Major",
+      "scalesUsed": [
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Drives the buoyant country-rockabilly vocal melody and Brian May's melodic lead fills"
+        },
+        {
+          "scale": "D Blues Scale",
+          "notes": "D - F - G - Ab - A - C",
+          "application": "Source of Brian May's snappy rockabilly Telecaster guitar solo, emphasizing double stops and blues curls"
+        },
+        {
+          "scale": "D Mixolydian",
+          "notes": "D - E - F# - G - A - B - C - D",
+          "application": "Governs the verse turnaround where the progression visits C major (the flattened 7th chord)"
+        }
+      ],
+      "modalCharacter": "Rockabilly Shuffle with Mixolydian ♭VII",
+      "keySignature": "Two sharps (F#, C#) for D major, with natural C accidentals providing rockabilly edge",
+      "relativeMinor": "B minor (featured in the verse turnaround)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "Dsus4",
+          "G",
+          "C"
+        ],
+        "progression": "I - Isus4 - IV - bVII",
+        "description": "A throwback 1950s rockabilly shuffle written by Freddie Mercury in just 10 minutes while lounging in a bath. The percussive acoustic D to Dsus4 hammer-on rhythm anchors the entire groove before stepping out to G and the bluesy C major chord."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Acoustic Intro",
+          "progression": "D - Dsus4 - D - Dsus4 - D - G - C - G",
+          "romanNumerals": "I - Isus4 - I - Isus4 - I - IV - bVII - IV",
+          "description": "Snappy acoustic strumming featuring rapid pinky hammer-ons and pull-offs on the high E string"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - G - C - G - D - Bb - C - D",
+          "romanNumerals": "I - IV - bVII - IV - I - bVI - bVII - I",
+          "description": "Rockabilly swing shuffle featuring walking bass movement and a dramatic chromatic climb through Bb and C"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - C - G - Bb - E7 - A",
+          "romanNumerals": "IV - bVII - IV - bVI - V/V - V",
+          "description": "Handclap stomp progression using a secondary dominant (E7) to drive into the dominant turnaround chord (A)"
+        },
+        {
+          "section": "Guitar Solo",
+          "progression": "D - G - D - G - Bb - C - D",
+          "romanNumerals": "I - IV - I - IV - bVI - bVII - I",
+          "description": "Vintage rockabilly twang solo over a driving swing groove featuring double-stop bends and rapid blues licks"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Tonic major chord delivering bright, optimistic 1950s rockabilly drive",
+        "Dsus4 (Isus4) - Suspended embellishment created by hammering the pinky on the 3rd fret high E string",
+        "G (IV) - Subdominant chord adding buoyant bounce on the backbeat",
+        "C (bVII) - Flattened seventh providing classic rockabilly swagger and blues color",
+        "Bb (bVI) - Chromatic modal interchange borrowed from minor, building dramatic tension before the turnaround",
+        "E7 (V/V) - Secondary dominant leading with harmonic urgency into the dominant A chord"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Rockabilly Acoustic Dsus4 Shuffle",
+      "description": "Freddie Mercury's percussive acoustic rhythm style. Holding a standard open D major chord while rhythmically hammering and pulling off the pinky finger on the 3rd fret high E string to alternate between D and Dsus4 on the upbeats",
+      "difficulty": "Beginner",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Form open D chord with index (fret 2, string 3), ring (fret 3, string 2), and middle (fret 2, string 1)",
+          "Hammer down the pinky firmly onto the 3rd fret high E string to sound Dsus4",
+          "Pull off cleanly back to the 2nd fret (F#) to resolve to D major",
+          "Maintain a crisp swing shuffle feel (long-short eighth-note subdivisions)",
+          "Keep strings 6 and 5 muted with the thumb hooked over the neck"
+        ],
+        "sequence": [
+          "Downstroke the open D chord on beat 1",
+          "Hammer on the pinky on the upbeat of beat 1 to sound Dsus4",
+          "Pull off to D on beat 2 with a percussive pick-hand brush",
+          "Repeat the syncopated hammer-pull cycle in steady shuffle tempo at 154 BPM"
+        ],
+        "tips": [
+          "Use a thin or medium nylon plectrum to get a bright, snappy acoustic strumming sound",
+          "Keep your wrist loose and bouncy; the groove comes from wrist swing, not stiff forearm movement",
+          "Let the open 4th string (D) ring loud and proud as the foundational bass note"
+        ],
+        "chords": [
+          "D",
+          "Dsus4",
+          "G",
+          "C"
+        ],
+        "progression": "D - Dsus4 - D - G - C - G"
+      }
+    },
+    {
+      "name": "Vintage Telecaster Double-Stop Bends",
+      "description": "Brian May's departure from his usual Red Special guitar. Playing a 1967 Fender Telecaster through a cranked tube amp to deliver authentic 1950s rockabilly twang, featuring oblique double-stop bends and country-style snap",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Switch to the bridge pickup of a single-coil guitar for piercing vintage bite",
+          "Hold down the note on string 2 while bending the note on string 3 a full step upward",
+          "Apply snappy hybrid picking (pick on lower string, middle finger popping the higher string)",
+          "Incorporate a tight 120 ms slapback tape echo with a single repeat"
+        ],
+        "sequence": [
+          "Fret string 2 at fret 10 with index finger",
+          "Bend string 3 at fret 12 up a full step to pitch with ring and middle fingers",
+          "Strike both strings together for a crying country-rockabilly unison dissonance",
+          "Release into rapid descending pentatonic pull-offs"
+        ],
+        "tips": [
+          "Keep your bend strictly in tune; an under-bent double stop sounds sour",
+          "Roll off amp bass frequencies slightly to prevent low-end flub on fast runs",
+          "Add subtle fret-hand slap on the guitar body during the drum breaks"
+        ],
+        "chords": [],
+        "progression": "Solo over D - G - Bb - C progression"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Acoustic Strum & Dsus4 Snapping Intro",
+      "timeStamp": "0:00-0:14",
+      "technique": "Rockabilly Acoustic Dsus4 Shuffle",
+      "key": "D Major",
+      "description": "Freddie Mercury's solo acoustic guitar establishes the relentless rockabilly swing shuffle, snapping between D and Dsus4 before hitting the punchy G-C-G cadence.",
+      "chords": [
+        "D",
+        "Dsus4",
+        "G",
+        "C"
+      ],
+      "progression": "D - Dsus4 - D - G - C - G",
+      "notes": [
+        "Lock into the 154 BPM swing eighth-note shuffle feel",
+        "Snap pinky hammer-ons on the high E string with crisp definition",
+        "Hit the C major chord with authoritative downbeat punch",
+        "Mute strings 6 and 5 cleanly throughout"
+      ],
+      "alphaTab": ":8 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 3.1) :8 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 3.1) :4 (0.4 2.3 3.2 2.1) :4 r.4 | :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) |",
+      "exerciseLabel": "Acoustic D-Dsus4 Rockabilly Intro"
+    },
+    {
+      "name": "Verse Rockabilly Shuffle & Walking Bass",
+      "timeStamp": "0:15-0:42",
+      "technique": "Rockabilly Acoustic Dsus4 Shuffle",
+      "key": "D Major",
+      "description": "John Deacon's upright-style walking bass enters alongside Roger Taylor's crisp snare brushes. Freddie's acoustic comping drives the storytelling vocal delivery.",
+      "chords": [
+        "D",
+        "G",
+        "C",
+        "Bb",
+        "E7",
+        "A"
+      ],
+      "progression": "D - G - C - G - D - Bb - C - D",
+      "notes": [
+        "Keep the strumming hand bouncy and light to complement the walking bass",
+        "Accent the backbeat snare cracks on beats 2 and 4",
+        "Execute the clean chromatic shift from Bb to C with quick barre shifts",
+        "Resolve cleanly to the open D chord ringout"
+      ],
+      "alphaTab": ":4 (0.4 2.3 3.2 2.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) :4 (3.5 2.4 0.3 1.2 0.1) :4 (3.6 2.5 0.4 0.3 3.2 3.1) | :2 (1.5 3.4 3.3 3.2) :2 (3.5 5.4 5.3 5.2) |",
+      "exerciseLabel": "Verse Shuffle & Chromatic Shift"
+    },
+    {
+      "name": "Chorus Handclap Stomp & Turnaround",
+      "timeStamp": "0:43-1:02",
+      "technique": "Full Chord Articulation",
+      "key": "D Major",
+      "description": "The band locks into infectious handclaps and stomps. The harmony maneuvers through G, C, and Bb before resolving through E7 to the dominant A turnaround.",
+      "chords": [
+        "G",
+        "C",
+        "Bb",
+        "E7",
+        "A"
+      ],
+      "progression": "G - C - G - Bb - E7 - A",
+      "notes": [
+        "Strum with open, celebratory energy matching the handclaps",
+        "Accentuate the secondary dominant E7 chord to build harmonic tension",
+        "Deliver the four descending eighth-note walking notes into A",
+        "Leave a dramatic pause right before Freddie's vocal re-entry"
+      ],
+      "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (3.5 2.4 0.3 1.2 0.1) | :4 (1.5 3.4 3.3) :4 (0.6 2.5 0.4 1.3 0.2 0.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Handclap Chorus Stomp & E7-A Turnaround"
+    },
+    {
+      "name": "Brian May Rockabilly Twang Solo",
+      "timeStamp": "1:18-1:36",
+      "technique": "Vintage Telecaster Double-Stop Bends",
+      "key": "D Major",
+      "description": "Brian May delivers a legendary, authentic rockabilly lead guitar clinic on a vintage Telecaster, executing double-stop bends, blues curls, and rapid country-style pull-offs.",
+      "chords": [
+        "D",
+        "G",
+        "D",
+        "G",
+        "Bb",
+        "C",
+        "D"
+      ],
+      "progression": "D - G - D - G - Bb - C - D",
+      "notes": [
+        "Bend the G string at fret 12 while holding the B string at fret 10 steady",
+        "Dig into the pick attack for the biting bridge single-coil twang",
+        "Let the slapback echo bounce once per phrase",
+        "Execute rapid descending blues pull-offs cleanly without fret buzzing"
+      ],
+      "alphaTab": ":8 10.2 12.3b14 :4 (10.2 12.3) :8 10.2 :4 12.1 :4 10.1 | :8 12.2b14 :4 10.2 :8 11.3 :4 12.4 :2 10.4 |",
+      "exerciseLabel": "Brian May Telecaster Rockabilly Solo"
+    },
+    {
+      "name": "A Cappella Breakdown & Finger Snaps",
+      "timeStamp": "1:37-1:58",
+      "technique": "Percussive Rest & Timing",
+      "key": "D Major",
+      "description": "Instruments cut out completely for Queen's breathtaking multi-tracked vocal harmonies, finger snaps, and foot stomps, highlighting the pristine songwriting craft.",
+      "chords": [],
+      "progression": "Vocal harmonies over finger snaps",
+      "notes": [
+        "Mute strings entirely; do not allow incidental string noise",
+        "Count the swing pulse internally to prepare for the explosive band re-entry",
+        "Listen to Freddie's vocal pitch cues for the incoming D chord attack"
+      ],
+      "alphaTab": ":1 r.1 | :1 r.1 |",
+      "exerciseLabel": "A Cappella Break & Silent Pulse Count"
+    },
+    {
+      "name": "Outro Rhythm Drive & Walking Turnaround",
+      "timeStamp": "1:59-2:42",
+      "technique": "Rockabilly Acoustic Dsus4 Shuffle",
+      "key": "D Major",
+      "description": "The full band charges back in for the grand finale. Acoustic shuffle strumming and twangy Telecaster fills interweave until the triumphant final guitar chord ringout.",
+      "chords": [
+        "D",
+        "G",
+        "C",
+        "D"
+      ],
+      "progression": "D - G - C - D",
+      "notes": [
+        "Strum with maximum joyous swing energy",
+        "Add subtle high-register fills between acoustic strums",
+        "Follow the tempo slightly accelerating into the final hit",
+        "Conclude with a sharp, crisp D major staccato chord choke"
+      ],
+      "alphaTab": ":8 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 3.1) :8 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 3.1) :4 (3.6 2.5 0.4 0.3) :4 (3.5 2.4 0.3 1.2) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Outro Shuffle Climax & Final Hit"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Rhythm: 1970s Martin D-18 acoustic; Lead: 1967 Fender Telecaster",
+      "alternatives": [
+        "Fender Classic Vibe 50s Telecaster",
+        "Gretsch G5420T Electromatic",
+        "Epiphone Casino"
+      ],
+      "pickup": "Bridge single-coil pickup for lead solo; acoustic guitar miked with large-diaphragm condenser"
+    },
+    "amp": {
+      "recommended": "1960s Vox AC30 Top Boost / Mesa Boogie Mark I combo",
+      "alternatives": [
+        "Fender 65 Princeton Reverb",
+        "Vox AC10C1",
+        "Fender Blues Junior"
+      ],
+      "settings": {
+        "gain": "4.5",
+        "treble": "8.5",
+        "middle": "6.5",
+        "bass": "4.0",
+        "presence": "7.0"
+      }
+    },
+    "effects": {
+      "distortion": "Mild tube amplifier breakup with bright treble bite",
+      "reverb": "Vintage spring reverb setting on amp",
+      "other": "Analog tape slapback delay (approx. 110-130 ms with single repeat) for authentic rockabilly slap"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Mastering the Open D-Dsus4 Shuffle",
+      "steps": [
+        "Learn open D, G, C, and A chords with clean fingertip placement",
+        "Practice hammering the pinky on the 3rd fret high E string while holding the D chord",
+        "Strum along with a metronome set to a swing shuffle at 100 BPM"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the foundational verse rhythm pattern smoothly with rockabilly swing feel"
+    },
+    "intermediate": {
+      "title": "Full Song Structure & Walking Transitions",
+      "steps": [
+        "Master the quick chromatic barre chord shifts from Bb to C in the verse",
+        "Coordinate the chorus handclap stops and re-entry timing at 154 BPM",
+        "Play through the entire song rhythm track from intro to outro without hesitation"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Perform the complete rhythm guitar track at album tempo with authentic bounce"
+    },
+    "advanced": {
+      "title": "Brian May's Telecaster Twang Solo",
+      "steps": [
+        "Dial in authentic single-coil bridge tone with slapback tape echo",
+        "Master oblique double-stop bends on strings 2 and 3 with precise pitch control",
+        "Execute rapid descending blues pull-off runs and country hybrid picking"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Play Brian May's guitar solo with impeccable rockabilly phrasing, pitch, and attitude"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Bohemian Rhapsody",
+        "link": "/lessons/songs/song-analysis/bohemian-rhapsody",
+        "similarity": "Showcases Brian May's harmonic genius, operatic phrasing, and multi-layered orchestration"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Johnny B. Goode",
+        "artist": "Chuck Berry",
+        "technique": "Classic Rockabilly Double Stops",
+        "link": "/lessons/songs/song-analysis/johnny-b-goode"
+      },
+      {
+        "title": "Hound Dog",
+        "artist": "Big Mama Thornton / Elvis Presley",
+        "technique": "1950s Blues Shuffle Comping",
+        "link": "/lessons/songs/song-analysis/hound-dog"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Playing straight eighth notes instead of the essential swing/shuffle feel",
+      "Letting the pinky drag or mute the adjacent B string during Dsus4 hammer-ons",
+      "Under-bending the double stop in the solo, resulting in sour, jarring dissonance",
+      "Strumming strings 6 and 5 during the open D chord, muddying the acoustic clarity"
+    ],
+    "practiceRoutine": [
+      "5 mins: D to Dsus4 pinky hammer and pull-off dexterity drill with metronome",
+      "10 mins: Swing shuffle strumming practice on D, G, and C chords at 110, 130, and 154 BPM",
+      "10 mins: Brian May double-stop pitch accuracy drills on strings 2 and 3",
+      "10 mins: Solo playthrough with slapback delay against a swing drum loop"
+    ],
+    "focusAreas": [
+      "Relaxed wrist bounce for authentic rockabilly swing rhythm",
+      "Clean pinky articulation on high E string fret 3",
+      "Accurate whole-step double-stop bending with supporting fingers"
+    ],
+    "metronomeWork": [
+      "Set metronome to 154 BPM with swing eighth-note mode engaged",
+      "Practice muting all strings and strumming the swing shuffle pattern until the right wrist is fully relaxed",
+      "Incorporate the chord progression one bar at a time, keeping strict tempo through the stops"
+    ]
+  },
+  "metadata": {
+    "popularity": 93,
+    "dateAdded": "2026-11-04",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1970s",
+    "subGenre": "Rockabilly",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals"
+    ],
+    "tags": [
+      "classic-rock",
+      "country",
+      "strumming",
+      "blues-scale",
+      "electric-guitar",
+      "acoustic-guitar"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

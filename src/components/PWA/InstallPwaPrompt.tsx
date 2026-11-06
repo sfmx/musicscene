@@ -14,6 +14,7 @@ export default function InstallPwaPrompt() {
   const [isIos, setIsIos] = useState(false);
   const [showIosGuide, setShowIosGuide] = useState(false);
   const [dismissed, setDismissed] = useState(true);
+  const [justInstalled, setJustInstalled] = useState(false);
 
   useEffect(() => {
     // 1. Check if already installed & running in standalone app mode
@@ -26,16 +27,35 @@ export default function InstallPwaPrompt() {
       return;
     }
 
+    // Listen for the official browser appinstalled event
+    const handleAppInstalled = () => {
+      setJustInstalled(true);
+      setDeferredPrompt(null);
+    };
+    window.addEventListener('appinstalled', handleAppInstalled);
+
     // 2. Check if dismissed recently (7 days)
     const dismissedTime = localStorage.getItem('musicscene_pwa_dismissed');
     if (dismissedTime && Date.now() - parseInt(dismissedTime, 10) < 7 * 24 * 60 * 60 * 1000) {
-      return;
+      return () => {
+        window.removeEventListener('appinstalled', handleAppInstalled);
+      };
     }
 
     setDismissed(false);
 
-    // 3. Detect iOS device in Safari
+    // 3. Detect mobile device
     const userAgent = window.navigator.userAgent.toLowerCase();
+    const isMobile = /android|iphone|ipad|ipod|mobile/i.test(userAgent) || window.innerWidth < 1024;
+    
+    // Only show install prompts on mobile phones and tablets
+    if (!isMobile) {
+      return () => {
+        window.removeEventListener('appinstalled', handleAppInstalled);
+      };
+    }
+
+    // Detect iOS device in Safari
     const isAppleDevice = /iphone|ipad|ipod/.test(userAgent);
     const isSafari = /safari/.test(userAgent) && !/chrome|crios|fxios/.test(userAgent);
     if (isAppleDevice && isSafari) {
@@ -52,6 +72,7 @@ export default function InstallPwaPrompt() {
 
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
+      window.removeEventListener('appinstalled', handleAppInstalled);
     };
   }, []);
 
@@ -61,7 +82,7 @@ export default function InstallPwaPrompt() {
       const choiceResult = await deferredPrompt.userChoice;
       if (choiceResult.outcome === 'accepted') {
         setDeferredPrompt(null);
-        setDismissed(true);
+        setJustInstalled(true);
       }
     } else if (isIos) {
       setShowIosGuide((prev) => !prev);
@@ -72,6 +93,40 @@ export default function InstallPwaPrompt() {
     setDismissed(true);
     localStorage.setItem('musicscene_pwa_dismissed', Date.now().toString());
   };
+
+  // If just installed, show clear instructions on where to find the app
+  if (justInstalled) {
+    return (
+      <aside aria-label="App Installed" className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:w-96 z-50 animate-in slide-in-from-bottom duration-300">
+        <div className="bg-slate-900/95 border-2 border-emerald-500/50 text-white rounded-2xl p-4 shadow-2xl backdrop-blur-md relative overflow-hidden">
+          <div className="absolute top-0 right-0 -mr-6 -mt-6 w-24 h-24 bg-emerald-500/20 rounded-full blur-xl pointer-events-none" />
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center p-1.5 shrink-0 shadow-md">
+                <span className="text-xl">🎉</span>
+              </div>
+              <div>
+                <span className="text-sm font-black text-emerald-400">Added to Home Screen!</span>
+                <p className="text-xs text-slate-200 leading-snug mt-0.5">
+                  Tap the new <strong>MusicScene</strong> icon on your phone&apos;s home screen or app drawer to open full screen.
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => {
+                setJustInstalled(false);
+                setDismissed(true);
+              }}
+              aria-label="Close notification"
+              className="text-slate-400 hover:text-white p-1 text-sm cursor-pointer"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      </aside>
+    );
+  }
 
   // Do not show if running as installed app or dismissed or desktop without prompt
   if (isStandalone || dismissed) {

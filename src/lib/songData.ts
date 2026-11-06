@@ -224,6 +224,16 @@ import dontLookBackInAngerData from '@/data/songs/dont-look-back-in-anger.json';
 import whatsMySceneData from '@/data/songs/whats-my-scene.json';
 import theWindCriesMaryData from '@/data/songs/the-wind-cries-mary.json';
 import plugInBabyData from '@/data/songs/plug-in-baby.json';
+import moneyForNothingData from '@/data/songs/money-for-nothing.json';
+import allRightNowData from '@/data/songs/all-right-now.json';
+import whereTheStreetsHaveNoNameData from '@/data/songs/where-the-streets-have-no-name.json';
+import crazyLittleThingCalledLoveData from '@/data/songs/crazy-little-thing-called-love.json';
+import strayCatStrutData from '@/data/songs/stray-cat-strut.json';
+import romeoAndJulietData from '@/data/songs/romeo-and-juliet.json';
+import tunnelOfLoveData from '@/data/songs/tunnel-of-love.json';
+import downToTheWaterlineData from '@/data/songs/down-to-the-waterline.json';
+import telegraphRoadData from '@/data/songs/telegraph-road.json';
+import yourLatestTrickData from '@/data/songs/your-latest-trick.json';
 
 export interface SongData {
   songInfo: {
@@ -666,6 +676,16 @@ const songDatabase: Record<string, SongData> = {
   'whats-my-scene': whatsMySceneData as SongData,
   'the-wind-cries-mary': theWindCriesMaryData as SongData,
   'plug-in-baby': plugInBabyData as SongData,
+  'money-for-nothing': moneyForNothingData as SongData,
+  'all-right-now': allRightNowData as SongData,
+  'where-the-streets-have-no-name': whereTheStreetsHaveNoNameData as SongData,
+  'crazy-little-thing-called-love': crazyLittleThingCalledLoveData as SongData,
+  'stray-cat-strut': strayCatStrutData as SongData,
+  'romeo-and-juliet': romeoAndJulietData as SongData,
+  'tunnel-of-love': tunnelOfLoveData as SongData,
+  'down-to-the-waterline': downToTheWaterlineData as SongData,
+  'telegraph-road': telegraphRoadData as SongData,
+  'your-latest-trick': yourLatestTrickData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

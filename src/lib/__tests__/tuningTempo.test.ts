@@ -13,6 +13,7 @@ const CANONICAL_TUNING_PATTERNS = [
   /^Drop D \(DADGBE\) with Capo \d+$/,
   /^D Standard \(DGCFAD\)$/,
   /^Open D \(DADF#AD\) or Standard with slide$/,
+  /^Open G \(DGDGBD\)( with Capo \d+)?$/,
   /^DADGAD \(DADGAD\)$/
 ];
 

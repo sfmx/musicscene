@@ -1,0 +1,430 @@
+{
+  "songInfo": {
+    "title": "Money for Nothing",
+    "artist": "Dire Straits",
+    "album": "Brothers in Arms",
+    "released": "1985",
+    "genre": "Classic Rock",
+    "tempo": "134 BPM",
+    "duration": "8:26",
+    "key": "G Minor (Dorian)",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Advanced",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "G Dorian",
+      "scalesUsed": [
+        {
+          "scale": "G Dorian mode",
+          "notes": "G - A - Bb - C - D - E - F - G",
+          "application": "Underpins the main riff and verse progressions; the natural 6th degree (E) gives the riff its distinctive funk-rock drive without the somber weight of natural minor"
+        },
+        {
+          "scale": "G minor pentatonic",
+          "notes": "G - Bb - C - D - F",
+          "application": "Foundation for Mark Knopfler's aggressive double-stop fills and signature blues bends"
+        },
+        {
+          "scale": "G blues scale",
+          "notes": "G - Bb - C - Db - D - F",
+          "application": "The flatted 5th (Db) provides gritty chromatic tension during transitions and fill licks"
+        }
+      ],
+      "modalCharacter": "Dorian",
+      "keySignature": "Two flats (Bb, Eb) in G natural minor, but the prominent natural E note consistently shifts the tonal color to G Dorian",
+      "relativeMinor": "G minor is the relative minor of Bb major; G Dorian borrows its pitch collection from F major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "Gm",
+          "F",
+          "Eb",
+          "D"
+        ],
+        "progression": "i - bVII - bVI - V",
+        "description": "A high-octane rock progression anchored around G minor. Knopfler voices the chords using two-note double stops on the D and G strings rather than full barre chords, leaving maximum room for percussion and bass."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Signature Riff / Intro",
+          "progression": "Gm - F - Gm - Bb - C - Gm",
+          "romanNumerals": "i - bVII - i - bIII - IV - i",
+          "description": "Syncopated fingerstyle rock riff bouncing between low G pedal notes and snappy fourth-interval double stops"
+        },
+        {
+          "section": "Verse",
+          "progression": "Gm - F - Eb - D",
+          "romanNumerals": "i - bVII - bVI - V",
+          "description": "Descending minor progression driven by tight palm muting and ghost note pops"
+        },
+        {
+          "section": "Pre-Chorus",
+          "progression": "Bb - C - D",
+          "romanNumerals": "bIII - IV - V",
+          "description": "Ascending major lift building dynamic harmonic pressure before resolving to the chorus hook"
+        },
+        {
+          "section": "Chorus",
+          "progression": "Gm - Eb - F - Gm",
+          "romanNumerals": "i - bVI - bVII - i",
+          "description": "Powerhouse stadium cadence featuring punchy downbeat accents and soaring vocal unison"
+        }
+      ],
+      "harmonicFunction": [
+        "Gm (i) - Tonic minor chord anchoring the dark, driving tonal center",
+        "F (bVII) - Subtonic chord providing classic rock momentum and avoiding classical leading-tone stiffness",
+        "Eb (bVI) - Submediant chord adding poignant harmonic weight in the verse and chorus turnarounds",
+        "D (V) - Dominant major chord delivering strong tension that pulls naturally back to Gm",
+        "C (IV) - Major IV chord highlighting the Dorian natural 6th (E) in the pre-chorus climb"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Bare-Finger Claw-Hammer Picking",
+      "description": "Mark Knopfler's signature fingerstyle attack using the thumb on bass strings while snapping double stops with the index and middle fingers, producing an aggressive percussive bite impossible with a flatpick",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Rest the fleshy heel of your pick hand against the bridge saddles for selective palm muting",
+          "Use the thumb exclusively for root notes on strings 6 and 5",
+          "Snap the index and middle fingers upward under strings 4 and 3 to create the snappy double-stop pop",
+          "Incorporate ghost notes by slapping strings against fretwires with relaxed fret-hand fingers",
+          "Keep the wrist supple to maintain the syncopated 134 BPM boogie pulse"
+        ],
+        "sequence": [
+          "Strike the low G root on fret 3 with the thumb",
+          "Pluck the double stop at fret 5 (strings 4 and 3) simultaneously with index and middle fingers",
+          "Release fret-hand pressure immediately for a staccato percussive snap",
+          "Execute the quick hammer-on slide from fret 3 to fret 5 with fingers 1 and 3"
+        ],
+        "tips": [
+          "Do not use a flatpick; skin-on-string contact is essential for the round bottom and biting pop",
+          "Practice the thumb-to-fingers coordination slowly at 90 BPM before pushing to full tempo",
+          "Focus on silencing unplayed strings with your fret-hand index finger pad"
+        ],
+        "chords": [
+          "G5",
+          "F5",
+          "Bb5",
+          "C5"
+        ],
+        "progression": "Gm - F - Gm - Bb - C - Gm"
+      }
+    },
+    {
+      "name": "Cocked-Wah Mid-Range Phrasing",
+      "description": "Utilizing a wah-wah pedal parked stationary at roughly 60% of its travel to create a sharp resonant peak in the mid frequencies, giving notes singing vocal presence and immediate cut",
+      "difficulty": "Intermediate",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Engage a standard wah pedal and sweep forward until you hear the nasal, vocal sweet spot",
+          "Leave the pedal rocker stationary throughout the phrase",
+          "Combine with bridge humbucker and moderate tube overdrive to generate singing harmonics",
+          "Control note sustain by applying wide, relaxed horizontal wrist vibrato"
+        ],
+        "sequence": [
+          "Set your overdrive amp to moderate crunch",
+          "Rock the wah to find the 800Hz-1.2kHz resonant boost",
+          "Pick firmly over the bridge pickup to excite rich upper-harmonic overtones",
+          "Let sustained notes feed back subtly into the amplifier"
+        ],
+        "tips": [
+          "If you do not own a wah pedal, use an EQ pedal with a steep +6dB bell boost centered at 1 kHz",
+          "A humbucker-equipped guitar (Les Paul or Strat with bridge humbucker) yields the thickest tone",
+          "Keep your guitar volume rolled back slightly to 8 for rhythm, then dial to 10 for lead fills"
+        ],
+        "chords": [],
+        "progression": "Lead fills over Gm vamp"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Ambient Build & Monster Riff Entrance",
+      "timeStamp": "0:00-1:36",
+      "technique": "Bare-Finger Claw-Hammer Picking",
+      "key": "G Dorian",
+      "description": "Atmospheric synth pad and Sting's haunting 'I want my MTV' falsetto culminate in a thunderous drum roll, launching into the most famous fingerstyle rock riff in history.",
+      "chords": [
+        "Gm",
+        "F",
+        "Gm",
+        "Bb",
+        "C"
+      ],
+      "progression": "Gm - F - Gm - Bb - C - Gm",
+      "notes": [
+        "Thumb snaps low G root while fingers pop the upper fourths on D and G strings",
+        "Keep the rhythm strictly syncopated on sixteenth-note upbeats",
+        "Mute immediately after each chord pop for crisp percussive definition",
+        "Let the cocked-wah midrange cut through the drum groove"
+      ],
+      "alphaTab": ":8 r.8 3.6 :8 (5.4 5.3) :8 (3.4 3.3) :4 (5.4 5.3) :8 r.8 | :8 r.8 3.6 :8 (3.4 3.3) :8 (1.4 1.3) :4 (3.4 3.3) :8 r.8 |",
+      "exerciseLabel": "Monster Fingerstyle Claw-Hammer Riff"
+    },
+    {
+      "name": "Verse 1 Fingerstyle Comping & Ghost Pops",
+      "timeStamp": "1:37-2:18",
+      "technique": "Bare-Finger Claw-Hammer Picking",
+      "key": "G Minor",
+      "description": "Rhythm drops into a sparse, percussive groove under the narrative vocals. Knopfler peppers the space with muted string slaps and subtle double-stop stabs.",
+      "chords": [
+        "Gm",
+        "F",
+        "Eb",
+        "D"
+      ],
+      "progression": "Gm - F - Eb - D",
+      "notes": [
+        "Keep chord stabs short and snappy on the backbeat",
+        "Use fret-hand dampening to stop string resonance instantly",
+        "Listen to the snare and kick to lock into the pocket",
+        "Leave space for the storytelling vocal delivery"
+      ],
+      "alphaTab": ":4 (5.4 5.3) :8 r.8 :8 (5.4 5.3) :4 (3.4 3.3) :8 r.8 :8 (3.4 3.3) | :4 (1.4 1.3) :8 r.8 :8 (1.4 1.3) :2 (0.4 2.3 3.2) |",
+      "exerciseLabel": "Syncopated Backbeat Comping Study"
+    },
+    {
+      "name": "Pre-Chorus Modulated Lift",
+      "timeStamp": "2:19-2:34",
+      "technique": "Dynamic Power Strumming",
+      "key": "Bb Major",
+      "description": "Harmonic tension builds rapidly as the progression steps up through Bb, C, and D, expanding the sonic canvas ahead of the explosive chorus.",
+      "chords": [
+        "Bb",
+        "C",
+        "D"
+      ],
+      "progression": "Bb - C - D",
+      "notes": [
+        "Open up the dynamic envelope from quiet comping to ringing drive",
+        "Accent the syncopated chord transitions on the upbeats",
+        "Allow the major thirds to ring out clearly to signal the tonal lift",
+        "Drive through the D major chord to set up the Gm return"
+      ],
+      "alphaTab": ":2 (1.5 3.4 3.3) :2 (3.5 5.4 5.3) | :1 (5.5 7.4 7.3) |",
+      "exerciseLabel": "Ascending Triad Tension Builder"
+    },
+    {
+      "name": "Chorus Stadium Groove",
+      "timeStamp": "2:35-3:04",
+      "technique": "Full Chord Articulation",
+      "key": "G Minor",
+      "description": "The full band locks into a heavy stadium rock cadence with punchy Gm, Eb, and F chords supporting the iconic vocal anthem.",
+      "chords": [
+        "Gm",
+        "Eb",
+        "F",
+        "Gm"
+      ],
+      "progression": "Gm - Eb - F - Gm",
+      "notes": [
+        "Deliver bold, resolute downstrokes on chord changes",
+        "Emphasize the low Eb bass note for harmonic weight",
+        "Blend fingerstyle attack with authoritative wrist snap",
+        "Lock directly into the cymbal crashes and snare accents"
+      ],
+      "alphaTab": ":2 (3.6 5.5 5.4 3.3 3.2 3.1) :2 (6.5 8.4 8.3) | :2 (1.6 3.5 3.4 2.3 1.2 1.1) :2 (3.6 5.5 5.4 3.3 3.2 3.1) |",
+      "exerciseLabel": "Anthem Stadium Chorus Progression"
+    },
+    {
+      "name": "Knopfler Signature Fill Solo",
+      "timeStamp": "3:05-4:12",
+      "technique": "Cocked-Wah Mid-Range Phrasing",
+      "key": "G Dorian",
+      "description": "Knopfler unleashes a blistering array of fingerpicked blues-rock phrases, blending whole-step bends on the B string with ringing fourth-interval double stops.",
+      "chords": [
+        "Gm",
+        "F",
+        "Gm",
+        "Bb",
+        "C"
+      ],
+      "progression": "Gm - F - Gm - Bb - C - Gm",
+      "notes": [
+        "Execute the signature 8th fret whole-step bend on string 2 up to D",
+        "Pluck descending pentatonic runs with index and middle finger alternate picking",
+        "Add biting vibrato using the weight of the forearm rather than thumb squeeze",
+        "Emphasize the Dorian natural 6th (E on 9th fret G string)"
+      ],
+      "alphaTab": ":8 8.2b10 :8 6.1 :8 8.2 :8 6.2 :4 7.3 :4 5.4 | :8 3.3 5.3 :8 3.3 :4 5.4 :2 3.6 |",
+      "exerciseLabel": "Expressive Dorian Blues Lead Break"
+    },
+    {
+      "name": "Outro Extended Jam & Fadeout Licks",
+      "timeStamp": "4:13-8:26",
+      "technique": "Bare-Finger Claw-Hammer Picking",
+      "key": "G Dorian",
+      "description": "A celebrated 4-minute masterclass in rhythmic variation. Knopfler continuously reinterprets the main riff with syncopated blues ornaments as the track fades.",
+      "chords": [
+        "Gm",
+        "F",
+        "Eb",
+        "F"
+      ],
+      "progression": "Gm - F - Eb - F",
+      "notes": [
+        "Vary the attack from whispered thumb pulses to snapping double stops",
+        "Incorporate microtonal blues curls on the minor 3rd (Bb)",
+        "Maintain seamless tempo consistency across extended playing",
+        "Keep the groove relaxed yet rhythmically razor sharp"
+      ],
+      "alphaTab": ":8 3.6 :8 (5.4 5.3) :8 (3.4 3.3) :4 (5.4 5.3) :8 3.6 :8 (3.4 3.3) | :8 (1.4 1.3) :4 (3.4 3.3) :2 (5.4 5.3) |",
+      "exerciseLabel": "Extended Riff Variation & Groove Study"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "Gibson 1980 Les Paul Standard (58 Reissue) or Schecter Custom Strat with humbuckers",
+      "alternatives": [
+        "PRS McCarty 594",
+        "Fender Stratocaster with bridge humbucker",
+        "Epiphone Les Paul Standard"
+      ],
+      "pickup": "Bridge humbucker (PAF style) with volume rolled back slightly to 8.5 for touch-sensitive dynamics"
+    },
+    "amp": {
+      "recommended": "Laney 100W Supergroup / Marshall JCM800 combo into 4x12 Celestion cabinet",
+      "alternatives": [
+        "Marshall Studio Vintage SV20C",
+        "Fender Blues Deluxe with overdrive pedal",
+        "Boss Katana 100 on Lead channel"
+      ],
+      "settings": {
+        "gain": "6.5",
+        "treble": "7.0",
+        "middle": "8.5",
+        "bass": "5.0",
+        "presence": "6.0"
+      }
+    },
+    "effects": {
+      "distortion": "Amp overdrive supplemented by smooth preamp drive",
+      "reverb": "Subtle plate reverb with 1.5s decay to simulate studio room ambiance",
+      "other": "Dunlop CryBaby or Morley Wah left stationary in middle position (cocked wah)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Mastering the Core Riff Shapes",
+      "steps": [
+        "Learn the two-note fourth voicings at fret 5 and fret 3 on the D and G strings",
+        "Practice alternating between the thumb on low G (fret 3) and the upper chord stabs",
+        "Work with a metronome at 80 BPM until the chord transitions feel seamless"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the foundational 2-bar riff cleanly with steady timing"
+    },
+    "intermediate": {
+      "title": "Fingerstyle Snap & Palm Muting",
+      "steps": [
+        "Adopt bare-finger claw-hammer technique without using a flatpick",
+        "Master the fleshy palm mute on the bridge saddle to control string ringing",
+        "Incorporate ghost slaps and upbeat accents at full 134 BPM tempo"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Execute the complete verse and chorus rhythm tracks with authentic feel"
+    },
+    "advanced": {
+      "title": "Cocked-Wah Phrasing & Lead Fills",
+      "steps": [
+        "Dial in cocked-wah resonant frequencies and bridge humbucker response",
+        "Transcribe and perform Knopfler's expressive whole-step bends and double-stop fills",
+        "Improvise over the G Dorian vamp using natural 6th targeting and vocal vibrato"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Perform the entire 8-minute album track with professional phrasing and dynamics"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Sultans of Swing",
+        "link": "/lessons/songs/song-analysis/sultans-of-swing",
+        "similarity": "Showcases Mark Knopfler's clean fingerstyle picking, triad embellishments, and fast arpeggios"
+      },
+      {
+        "title": "Brothers in Arms",
+        "link": "/lessons/songs/song-analysis/brothers-in-arms",
+        "similarity": "Legendary Les Paul singing sustain, volume swells, and emotional Dorian/Aeolian phrasing"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Layla",
+        "artist": "Derek and the Dominos",
+        "technique": "Blues-Rock Double Stops",
+        "link": "/lessons/songs/song-analysis/layla"
+      },
+      {
+        "title": "Back in Black",
+        "artist": "AC/DC",
+        "technique": "Punchy Riff Syncopation",
+        "link": "/lessons/songs/song-analysis/back-in-black"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using a flatpick instead of bare fingers, which robs the riff of its snappy percussive bite",
+      "Letting unplayed strings ring out rather than dampening with the palm and fret-hand fingers",
+      "Rushing the syncopated upbeats instead of laying back into the pocket at 134 BPM",
+      "Setting the wah pedal too high, resulting in harsh, piercing treble rather than warm vocal mids"
+    ],
+    "practiceRoutine": [
+      "5 mins: Thumb and finger independence drill on strings 6, 4, and 3",
+      "10 mins: Slow metronome practice of the main 2-bar riff at 90, 110, and 134 BPM",
+      "10 mins: Verse palm-muting and ghost-pop timing work against a drum loop",
+      "10 mins: Lead fill practice focusing on whole-step pitch accuracy and wide wrist vibrato"
+    ],
+    "focusAreas": [
+      "Pick-hand fingerstyle ergonomics and thumb-finger separation",
+      "Precise staccato muting on fourth-interval double stops",
+      "Dynamic contrast between whispering verses and thunderous choruses"
+    ],
+    "metronomeWork": [
+      "Start practicing the signature intro riff at 80 BPM to lock in thumb-finger coordination",
+      "Increase by 6 BPM increments once 4 consecutive clean repetitions are achieved",
+      "Set the metronome clicks strictly to beats 2 and 4 to develop authentic rock backbeat groove"
+    ]
+  },
+  "metadata": {
+    "popularity": 96,
+    "dateAdded": "2026-11-04",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1980s",
+    "subGenre": "Classic Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals",
+      "Synthesizer"
+    ],
+    "tags": [
+      "classic-rock",
+      "riff",
+      "fingerstyle",
+      "dorian",
+      "double-stops",
+      "iconic-riff"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "3-4 weeks"
+  }
+}
+

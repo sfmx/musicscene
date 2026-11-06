@@ -1,0 +1,411 @@
+{
+  "songInfo": {
+    "title": "Where the Streets Have No Name",
+    "artist": "U2",
+    "album": "The Joshua Tree",
+    "released": "1987",
+    "genre": "Alternative Rock",
+    "tempo": "126 BPM",
+    "duration": "5:37",
+    "key": "D Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Intermediate",
+    "bass": "Beginner",
+    "drums": "Intermediate"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "D Major",
+      "scalesUsed": [
+        {
+          "scale": "D Major (Ionian)",
+          "notes": "D - E - F# - G - A - B - C# - D",
+          "application": "Shapes the soaring, euphoric melody and the arpeggiated chime triads that define the song's signature atmosphere"
+        },
+        {
+          "scale": "D Mixolydian",
+          "notes": "D - E - F# - G - A - B - C - D",
+          "application": "Introduced dramatically in the bridge when the song pivots to the flattened 7th degree (C major chord)"
+        },
+        {
+          "scale": "D Major Pentatonic",
+          "notes": "D - E - F# - A - B",
+          "application": "Provides clean, uplifting melodic phrases and upper-register guitar swells"
+        }
+      ],
+      "modalCharacter": "Ionian with Mixolydian Bridge",
+      "keySignature": "Two sharps (F#, C#) for D major, with an occasional accidental C natural in the bridge",
+      "relativeMinor": "B minor (featured prominently in the chorus progression)"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "D",
+          "G/D",
+          "Bm",
+          "A"
+        ],
+        "progression": "I - IV/I - vi - V",
+        "description": "An uplifting, anthemic arena-rock progression. The Edge maintains the open D string (or high D note) across chord shifts, providing an unbroken shimmering anchor as the harmonies move underneath."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Signature Arpeggio Riff",
+          "progression": "D - G/D - D - G/D",
+          "romanNumerals": "I - IV/I - I - IV/I",
+          "description": "Continuous straight eighth-note triad arpeggios that interlock with dotted-eighth digital delay to produce a galloping sixteenth-note wall of chime"
+        },
+        {
+          "section": "Verse",
+          "progression": "D - D - G - G - D - D - A - A",
+          "romanNumerals": "I - I - IV - IV - I - I - V - V",
+          "description": "Expansive diatonic changes propelled by driving bass pulses and chiming treble guitar textures"
+        },
+        {
+          "section": "Chorus",
+          "progression": "G - D - Bm - A - G - D",
+          "romanNumerals": "IV - I - vi - V - IV - I",
+          "description": "Emotional climax introducing the relative minor (Bm) before cascading triumphantly back to the tonic D"
+        },
+        {
+          "section": "Bridge",
+          "progression": "C - C - G - G - D - D",
+          "romanNumerals": "bVII - bVII - IV - IV - I - I",
+          "description": "A dramatic modal shift to C major (bVII) that injects raw rock tension and urgency before resolving to D"
+        }
+      ],
+      "harmonicFunction": [
+        "D (I) - Tonic chord delivering an open, spiritual sense of resolution and light",
+        "G/D (IV/I) - Subdominant chord retaining the D pedal note for seamless modal continuity",
+        "Bm (vi) - Relative minor providing momentary melancholy within an otherwise triumphant landscape",
+        "A (V) - Dominant major building forward momentum into subsequent sections",
+        "C (bVII) - Flattened seventh in the bridge providing powerful Mixolydian release"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Dotted-Eighth Rhythmic Delay Sync",
+      "description": "The Edge's definitive sonic signature. Playing straight eighth notes with a digital delay set strictly to a dotted eighth note (3/16 note, or 357 ms at 126 BPM) so that the echoes interlock perfectly between the picked notes, generating a driving sixteenth-note gallop",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Set delay time strictly to 357 ms (or sync to 126 BPM tempo clock via tap tempo)",
+          "Set delay feedback to 2-3 audible repeats and mix level to roughly 65-70%",
+          "Pick straight, steady eighth notes without syncopating your pick hand",
+          "Hold the pick with the textured grip edge striking the string for the iconic Herdim chiming scrape",
+          "Keep every note cleanly articulated on strings 1, 2, and 3"
+        ],
+        "sequence": [
+          "Form the D major triad at fret 10/11 on strings 1, 2, and 3",
+          "Pick straight down-up eighth notes: string 3, string 2, string 1, string 2",
+          "Listen to how the delay repeats fill in the spaces to create a galloping train effect",
+          "Shift middle and pinky fingers to fret 12 for the G/D chord while maintaining the identical picking rhythm"
+        ],
+        "tips": [
+          "Do not try to play sixteenth notes with your pick; let the delay do the work",
+          "Timing accuracy is paramount: if you drift off tempo, the echoes will clash into rhythmic mud",
+          "Use the bridge and middle pickup position on a Stratocaster into a slightly driven Vox AC30"
+        ],
+        "chords": [
+          "D",
+          "G/D",
+          "Bm",
+          "A"
+        ],
+        "progression": "D - G/D - D - G/D"
+      }
+    },
+    {
+      "name": "Open-String Drone Chording",
+      "description": "Voicing upper-register triads while allowing the open D (4th string) or high E string to ring continuously, creating an ambient harmonic halo across chord changes",
+      "difficulty": "Beginner",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Let the open 4th string (D) drone beneath shifting chord shapes",
+          "Avoid muting adjacent strings with fret-hand fingertips",
+          "Use light pick attack to prevent over-driving the input of the delay processor",
+          "Roll back guitar volume slightly to clean up lower-mid frequencies"
+        ],
+        "sequence": [
+          "Strike open D string firmly on beat 1",
+          "Finger upper triad shapes at frets 7, 9, and 10",
+          "Allow the resonance of the open string to bridge the gap between chord finger shifts"
+        ],
+        "tips": [
+          "Keep your fret-hand fingers arched high on their tips",
+          "Use a compressor pedal before the delay to even out the attack of picked and open strings"
+        ],
+        "chords": [
+          "D",
+          "G/D",
+          "A/D"
+        ],
+        "progression": "D - G/D - A/D"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Ambient Organ & Chime Intro",
+      "timeStamp": "0:00-1:10",
+      "technique": "Open-String Drone Chording",
+      "key": "D Major",
+      "description": "Brian Eno's warm church-organ synthesizer chords wash over the track before The Edge's chiming Stratocaster guitar quietly emerges from the mist with dotted-eighth echoes.",
+      "chords": [
+        "D",
+        "G/D"
+      ],
+      "progression": "D - G/D - D - G/D",
+      "notes": [
+        "Play gentle single-note swells as the synthesizer chords build",
+        "Let the delay repeats blend into the ambient synthesizer bed",
+        "Gradually roll up your guitar volume knob from 4 to 8",
+        "Prepare pick hand for the rhythmic entrance on beat 1"
+      ],
+      "alphaTab": ":1 (11.3 10.2 10.1) | :1 (12.3 12.2 10.1) |",
+      "exerciseLabel": "Ambient Volume Swell & Chime Entry"
+    },
+    {
+      "name": "Galloping 3/16 Delay Arpeggio Entrance",
+      "timeStamp": "1:11-1:45",
+      "technique": "Dotted-Eighth Rhythmic Delay Sync",
+      "key": "D Major",
+      "description": "Larry Mullen Jr.'s hi-hat counts in, and the iconic galloping guitar riff bursts through the mix with crystalline clarity, driving the track forward with unstoppable momentum.",
+      "chords": [
+        "D",
+        "G/D"
+      ],
+      "progression": "D - G/D - D - G/D",
+      "notes": [
+        "Pick steady straight eighth notes; do not rush or drag against the tempo",
+        "Ensure string 1 (10th fret) rings clearly against strings 2 and 3",
+        "Let the 357 ms delay repeats create the galloping sixteenth-note pattern",
+        "Keep pick depth shallow so the plectrum glides across the strings"
+      ],
+      "alphaTab": ":8 11.3 10.2 10.1 10.2 :8 11.3 10.2 10.1 10.2 | :8 12.3 12.2 10.1 12.2 :8 12.3 12.2 10.1 12.2 |",
+      "exerciseLabel": "Iconic Dotted-Eighth Arpeggio Gallop"
+    },
+    {
+      "name": "Verse Driving Rhythm & Drone Strings",
+      "timeStamp": "1:46-2:28",
+      "technique": "Dotted-Eighth Rhythmic Delay Sync",
+      "key": "D Major",
+      "description": "Bono delivers the iconic lyrics over a locked-in rhythm section. The Edge shifts between upper-register arpeggios and full open-voiced chords with ringing delay trails.",
+      "chords": [
+        "D",
+        "G",
+        "A"
+      ],
+      "progression": "D - D - G - G - D - D - A - A",
+      "notes": [
+        "Maintain unwavering pick-hand eighth-note pulse",
+        "Transition smoothly to open G chord voicings at fret 3",
+        "Let the delay tails bridge the gap during chord changes",
+        "Support the vocal narrative without overpowering the lyrical space"
+      ],
+      "alphaTab": ":8 (0.4 2.3 3.2) :8 (0.4 2.3 3.2) :4 (0.4 2.3 3.2) :8 (3.6 2.5 0.3 3.2) :8 (3.6 2.5 0.3 3.2) :4 (3.6 2.5 0.3 3.2) | :8 (0.4 2.3 3.2) :8 (0.4 2.3 3.2) :4 (0.4 2.3 3.2) :2 (0.5 2.4 2.3 2.2) |",
+      "exerciseLabel": "Verse Rhythm & Open Chord Pulse"
+    },
+    {
+      "name": "Chorus Stadium Ascent",
+      "timeStamp": "2:29-3:08",
+      "technique": "Dotted-Eighth Rhythmic Delay Sync",
+      "key": "D Major",
+      "description": "The song expands into a massive stadium anthem. The progression steps through G, D, Bm, and A as ringing open chords wash over the drums.",
+      "chords": [
+        "G",
+        "D",
+        "Bm",
+        "A"
+      ],
+      "progression": "G - D - Bm - A - G - D",
+      "notes": [
+        "Dig in with firmer pick attack for stadium-sized dynamic projection",
+        "Voice the Bm chord cleanly across strings 5 through 1",
+        "Let every chord ring for its full duration before chopping into the next",
+        "Feel the emotional release as the harmony returns to D"
+      ],
+      "alphaTab": ":2 (3.6 2.5 0.4 0.3 3.2 3.1) :2 (0.4 2.3 3.2 2.1) | :2 (2.5 4.4 4.3 3.2 2.1) :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Stadium Anthem Chorus Strumming"
+    },
+    {
+      "name": "Bridge Modal Shift (bVII C Major Lift)",
+      "timeStamp": "3:09-3:48",
+      "technique": "Full Chord Articulation",
+      "key": "D Mixolydian",
+      "description": "The harmonic landscape pivots unexpectedly to C major (bVII). The flattened seventh introduces raw urgency and gritty rock bite before returning to G and D.",
+      "chords": [
+        "C",
+        "G",
+        "D"
+      ],
+      "progression": "C - G - D",
+      "notes": [
+        "Emphasize the low C root note on the 5th string (fret 3)",
+        "Strum with aggressive syncopation to highlight the dramatic modal shift",
+        "Feel the transition from heavenly D major to earthbound C Mixolydian",
+        "Build dynamic volume to maximum intensity before the final chorus"
+      ],
+      "alphaTab": ":2 (3.5 2.4 0.3 1.2 0.1) :2 (3.6 2.5 0.4 0.3 3.2 3.1) | :1 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "bVII Modal Mixture Bridge Exercise"
+    },
+    {
+      "name": "Outro Climax & Fading Echo Cascades",
+      "timeStamp": "3:49-5:37",
+      "technique": "Dotted-Eighth Rhythmic Delay Sync",
+      "key": "D Major",
+      "description": "The signature galloping arpeggio returns at peak intensity before slowly disintegrating into lingering delay repeats and organ pads as the track fades.",
+      "chords": [
+        "D",
+        "G/D"
+      ],
+      "progression": "D - G/D - D - G/D",
+      "notes": [
+        "Resume high-register triad picking on strings 1, 2, and 3",
+        "Gradually reduce pick velocity to facilitate a smooth, natural fade",
+        "Allow the delay repeats to oscillate naturally into the room sound",
+        "Conclude with a single ringing D major harmonic at fret 12"
+      ],
+      "alphaTab": ":8 11.3 10.2 10.1 10.2 :8 11.3 10.2 10.1 10.2 | :4 (11.3 10.2 10.1) :2.4 r.2 :4 12.1 |",
+      "exerciseLabel": "Echo Decay & Outro Arpeggio Resolution"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1976 Fender Stratocaster (Black finish, maple neck, pickup position 2: bridge + middle)",
+      "alternatives": [
+        "Fender Player Plus Stratocaster",
+        "G&L Tribute Legacy",
+        "Squier Classic Vibe 70s Stratocaster"
+      ],
+      "pickup": "Bridge and middle single-coils combined (Position 2 / in-between) for maximum glass and quack"
+    },
+    "amp": {
+      "recommended": "1964 Vox AC30 Top Boost combo with Celestion Alnico Blue speakers",
+      "alternatives": [
+        "Vox AC15C1",
+        "Fender 65 Deluxe Reverb with treble boost",
+        "Boss Katana 100 on Crunch setting"
+      ],
+      "settings": {
+        "gain": "5.5",
+        "treble": "8.0",
+        "middle": "6.0",
+        "bass": "4.5",
+        "presence": "7.5"
+      }
+    },
+    "effects": {
+      "distortion": "Preamp overdrive from Korg SDD-3000 rack unit pushing the front of the Vox AC30",
+      "reverb": "Subtle spring reverb with 2s decay",
+      "other": "Digital delay set to dotted eighth (357 ms, 3 repeats, 65% mix), dimpled nylon pick (Herdim)"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Learning the D Major Triad Shapes",
+      "steps": [
+        "Master the D major triad at frets 10 and 11 on strings 1, 2, and 3",
+        "Learn the G/D chord shape at fret 12 and practice switching between them",
+        "Practice picking straight eighth notes evenly without rushing"
+      ],
+      "timeEstimate": "1-2 weeks",
+      "goals": "Play the fundamental chord shapes smoothly with steady pick-hand timing"
+    },
+    "intermediate": {
+      "title": "Dialing In Dotted-Eighth Delay",
+      "steps": [
+        "Set your delay pedal to 357 ms (or use tap tempo synced to 126 BPM)",
+        "Lock straight eighth-note picking against the sixteenth-note delay feedback",
+        "Play through the verse and chorus chord progressions with continuous delay"
+      ],
+      "timeEstimate": "2-3 weeks",
+      "goals": "Execute the signature galloping delay rhythm with flawless tempo synchronization"
+    },
+    "advanced": {
+      "title": "Pick Dynamics & Tone Sculpting",
+      "steps": [
+        "Use a textured nylon pick (Herdim style) striking with the gripped edge for chime",
+        "Balance guitar volume knob adjustments to manage amplifier saturation",
+        "Perform the complete 5:37 album arrangement with studio-accurate dynamics and touch"
+      ],
+      "timeEstimate": "3-4 weeks",
+      "goals": "Master The Edge's signature arena-rock sound, timing precision, and ambient control"
+    }
+  },
+  "relatedSongs": {
+    "sameArtist": [],
+    "similarTechniques": [
+      {
+        "title": "Pride (In the Name of Love)",
+        "artist": "U2",
+        "technique": "Rhythmic Digital Delay Chime",
+        "link": "/lessons/songs/song-analysis/pride-and-joy"
+      },
+      {
+        "title": "Run to Paradise",
+        "artist": "Chocolate Starfish",
+        "technique": "Arena Rock Open Chording",
+        "link": "/lessons/songs/song-analysis/run-to-paradise"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Trying to pick sixteenth notes instead of playing steady eighth notes and letting the delay create the gallop",
+      "Setting delay tempo incorrectly; even a 5 ms error will cause the repeats to clash violently with the beat",
+      "Picking with too heavy a touch, which causes the delay repeats to distort and lose their sparkling chime",
+      "Failing to mute unplayed lower strings, allowing muddy rumble to overtake the shimmering delay lines"
+    ],
+    "practiceRoutine": [
+      "5 mins: Steady eighth-note alternate picking drill on a single string with a metronome at 126 BPM",
+      "10 mins: Slow delay calibration: play 1 beat of eighth notes, pause, and verify repeats fall on 16ths",
+      "10 mins: D and G/D triad arpeggio transition work at frets 10-12",
+      "10 mins: Full playthrough of verse, chorus, and bridge transitions with backing track"
+    ],
+    "focusAreas": [
+      "Exact millisecond or tap-tempo delay synchronization",
+      "Consistent pick attack velocity across strings 3, 2, and 1",
+      "Clean transition between high-register arpeggios and full open-chord strumming"
+    ],
+    "metronomeWork": [
+      "Set metronome to 126 BPM and play straight eighth notes without delay to verify your internal clock",
+      "Engage delay with 1 repeat; ensure each delay echo lands exactly between the metronome clicks",
+      "Increase delay repeats to 3 and practice maintaining strict eighth-note attack for 5 minutes continuously"
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-11-04",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1980s",
+    "subGenre": "Alternative Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals",
+      "Synthesizer"
+    ],
+    "tags": [
+      "classic-rock",
+      "pop",
+      "delay",
+      "arpeggios",
+      "strumming",
+      "major-key"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "2-3 weeks"
+  }
+}

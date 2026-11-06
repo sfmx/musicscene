@@ -27,6 +27,7 @@
     "og:generate": "tsx scripts/generate-og-images.ts",
     "newsletter:queue": "tsx scripts/queue-newsletter.ts",
     "marketing:utm": "tsx scripts/generate-utm-links.ts",
+    "banner:generate": "tsx scripts/generate-facebook-banner.ts",
     "aws:stats": "node scripts/aws-report.js",
     "aws:stats:30": "node scripts/aws-report.js --days 30"
   },
