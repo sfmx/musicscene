@@ -165,6 +165,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'highway-star',
   'the-boys-are-back-in-town',
   'prisoner-of-society',
+  'when-i-come-around',
+  'american-idiot',
+  'push',
+  '3am',
+  'bent',
+  'animals',
+  'how-you-remind-me',
+  'rockstar',
+  'kryptonite',
+  'self-esteem',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

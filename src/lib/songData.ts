@@ -244,6 +244,16 @@ import wouldData from '@/data/songs/would.json';
 import highwayStarData from '@/data/songs/highway-star.json';
 import theBoysAreBackInTownData from '@/data/songs/the-boys-are-back-in-town.json';
 import prisonerOfSocietyData from '@/data/songs/prisoner-of-society.json';
+import whenIComeAroundData from '@/data/songs/when-i-come-around.json';
+import americanIdiotData from '@/data/songs/american-idiot.json';
+import pushData from '@/data/songs/push.json';
+import threeAmData from '@/data/songs/3am.json';
+import bentData from '@/data/songs/bent.json';
+import animalsData from '@/data/songs/animals.json';
+import howYouRemindMeData from '@/data/songs/how-you-remind-me.json';
+import rockstarData from '@/data/songs/rockstar.json';
+import kryptoniteData from '@/data/songs/kryptonite.json';
+import selfEsteemData from '@/data/songs/self-esteem.json';
 
 export interface SongData {
   songInfo: {
@@ -706,6 +716,16 @@ const songDatabase: Record<string, SongData> = {
   'highway-star': highwayStarData as SongData,
   'the-boys-are-back-in-town': theBoysAreBackInTownData as SongData,
   'prisoner-of-society': prisonerOfSocietyData as SongData,
+  'when-i-come-around': whenIComeAroundData as SongData,
+  'american-idiot': americanIdiotData as SongData,
+  'push': pushData as SongData,
+  '3am': threeAmData as SongData,
+  'bent': bentData as SongData,
+  'animals': animalsData as SongData,
+  'how-you-remind-me': howYouRemindMeData as SongData,
+  'rockstar': rockstarData as SongData,
+  'kryptonite': kryptoniteData as SongData,
+  'self-esteem': selfEsteemData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {
