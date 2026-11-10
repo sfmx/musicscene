@@ -5979,6 +5979,396 @@ const CURATED_SECRETS: Record<string, HarmonicSecret> = {
       ],
     },
   },
+
+  'rebel-rebel': {
+    slug: 'rebel-rebel',
+    songTitle: 'Rebel Rebel',
+    artist: 'David Bowie',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'The Secondary Major II Chord and Ringing Open Pedal Strings Delivering Glam-Rock Defiance',
+    emotionalHook: 'Rather than following standard diatonic harmony in D major (which would call for an Em chord as the ii), Bowie and guitarist Alan Parker introduce an audacious E major triad (II). The G# in the E major chord introduces a sharp-4 Lydian tension that sparkles against ringing open D and high E pedal strings before swinging through G and A.',
+    romanProgression: 'I - II - IV - V',
+    chords: ['D', 'E', 'G', 'A'],
+    progressionExplanation: [
+      'D (I): Radiant tonic major home base anchored by open strings.',
+      'E (II): Major second chord injecting unexpected harmonic lift and glam swagger.',
+      'G (IV): Subdominant chord providing grounded classic rock warmth.',
+      'A (V): Dominant chord delivering the turnaround energy back to the open D riff.',
+    ],
+    voiceLeadingInsights: [
+      'The open high E and B strings remain unmuted throughout the signature riff, acting as a high drone.',
+      'The inner voice steps up chromatically: F# (in D) moves to G# (in E), creating immediate dynamic brightness.',
+      'The bridge introduces a borrowed C major chord (bVII), cementing the 1970s rock rebellion.',
+    ],
+    guitarPerspective: 'Keep the fret-hand finger arches high so the high open E string never gets choked. Use a light 0.73mm pick to accentuate the syncopated upbeats at 126 BPM.',
+    songwriterTakeaway: 'Try substituting a major II chord in place of your standard minor ii chord in a major key. It provides an energetic, unexpected harmonic lift without clashing with the tonic.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'D Major (Ionian)', slug: 'major', description: 'The primary scale providing the buoyant chord voicings.' },
+        { name: 'D Mixolydian Mode', slug: 'mixolydian', description: 'Underpins the gritty bridge detour and subtonic C chord.' },
+      ],
+      modes: [
+        { name: 'Mixolydian Mode', slug: 'mixolydian', description: 'Provides the classic rock flattened 7th swagger.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'D, E, G, and A cowboy chord shapes.' },
+      ],
+    },
+  },
+
+  'jessica': {
+    slug: 'jessica',
+    songTitle: 'Jessica',
+    artist: 'The Allman Brothers Band',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Two-Finger Django Lyrical Slides and Diatonic Third Harmonization Across Shifting Major Centers',
+    emotionalHook: 'Dickey Betts composed the main theme using only two fingers (index and middle) as an homage to Gypsy jazz legend Django Reinhardt. Moving between A major and D major with sweet major-third harmonizations, the song periodically shifts to a G major chord (bVII), injecting signature Southern modal warmth before ascending through stepwise major transpositions.',
+    romanProgression: 'I - IV - V - bVII',
+    chords: ['A', 'D', 'E', 'G'],
+    progressionExplanation: [
+      'A (I): Euphoric tonic major chord establishing the uplifting Southern rock groove.',
+      'D (IV): Subdominant chord delivering open plagal warmth and melodic lift.',
+      'E (V): Dominant chord providing structural stability and turnaround drive.',
+      'G (bVII): Borrowed Mixolydian chord introducing signature Allman Brothers modal sweetness.',
+    ],
+    voiceLeadingInsights: [
+      'The twin guitars harmonize in diatonic thirds and sixths, moving in parallel motion up the neck.',
+      'Slides into target chord tones from a half step below give the guitar a singing, fiddle-like inflection.',
+      'The organ and piano rhythm comping weaves seamless counter-melodies underneath the twin guitars.',
+    ],
+    guitarPerspective: 'Position your fret hand so that fingers 1 and 2 guide the sliding major melodies across frets 5 through 14. Keep your neck humbucker tone rolled back slightly to 7 for Dickey Betts warm flute-like sustain.',
+    songwriterTakeaway: 'Diatonic third harmonies turn a simple major melody into a triumphant celebration. When arranging dual guitars, synchronize pick attacks and vibrato rates to the exact millisecond.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Major (Ionian)', slug: 'major', description: 'The foundation for the joyful, singing main melody.' },
+        { name: 'A Major Pentatonic', slug: 'major-pentatonic', description: 'Underpins the bluesy Southern solo licks.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The major mode creating the triumphant, soaring atmosphere.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'A, D, E, and G major chord triads.' },
+      ],
+    },
+  },
+
+  'carry-on-wayward-son': {
+    slug: 'carry-on-wayward-son',
+    songTitle: 'Carry On Wayward Son',
+    artist: 'Kansas',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Pre-Chorus Dominant E Major Tension and Unison Minor Pentatonic Drive',
+    emotionalHook: 'Following the chilling a cappella vocal intro, Kansas unleashes a thunderous unison riff in A minor. The progressive brilliance lies in the pre-chorus climb: moving through F and G, the band hits an authoritative E major triad (V). The G# leading tone borrowed from A Harmonic Minor creates immense tension that resolves explosively into the chorus.',
+    romanProgression: 'i - bVII - bVI - V',
+    chords: ['Am', 'G', 'F', 'E', 'C', 'D'],
+    progressionExplanation: [
+      'Am (i): Dark, driving tonic anchor setting the historical and emotional weight.',
+      'G (bVII): Subtonic chord providing forward momentum and classic rock release.',
+      'F (bVI): Submediant chord adding poignant melodic pathos to the verse and chorus climbs.',
+      'E (V): Dominant major chord delivering irresistible tension that resolves home to Am.',
+      'D (IV): Major IV chord introducing Dorian brightness during the riff turnaround.',
+    ],
+    voiceLeadingInsights: [
+      'The unison intro riff locks guitars and bass in absolute octave synchronization.',
+      'The verse drops from heavy rock crunch to delicate acoustic fingerpicking, expanding the dynamic headroom.',
+      'The pre-chorus bassline walks up stepwise: F → G → A, then drops down to E for the dominant climax.',
+    ],
+    guitarPerspective: 'Alternate picking is mandatory on the opening riff. Keep pick strokes small and driven by relaxed wrist rotation to maintain precision at 126 BPM.',
+    songwriterTakeaway: 'Create dynamic contrast by juxtaposing heavy electric unison riffs against delicate acoustic fingerpicking. Use a major V chord in a minor key when you need maximum dramatic resolution.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'Foundation for the iconic unison opening riff.' },
+        { name: 'A Harmonic Minor', slug: 'harmonic-minor', description: 'Supplies the raised leading tone G# for the dominant E major chord.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode defining the verse atmosphere.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'High-gain downstroke chord stabs in the chorus.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Am acoustic fingerpicking shapes.' },
+      ],
+    },
+  },
+
+  'aint-talkin-bout-love': {
+    slug: 'aint-talkin-bout-love',
+    songTitle: "Ain't Talkin' 'bout Love",
+    artist: 'Van Halen',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Aeolian i - bVI - bVII Arpeggiated Drive with Precision Bridge Saddle Palm Muting',
+    emotionalHook: 'Eddie Van Halen turns a minimalist three-chord minor progression (Am - F - G) into a volcanic hard-rock anthem. By palm-muting individual arpeggiated string crosses and feeding the signal through an MXR Flanger and Echoplex tape delay, every note pops with percussive attack before the chorus explodes into unmuted arena power chords.',
+    romanProgression: 'i - bVI - bVII',
+    chords: ['Am', 'F', 'G'],
+    progressionExplanation: [
+      'Am (i): Heavy, percussive tonic minor chord anchoring the punk-rock drive.',
+      'F (bVI): Submediant chord introducing somber emotional weight and modal tension.',
+      'G (bVII): Subtonic chord providing high-velocity forward momentum back to tonic Am.',
+    ],
+    voiceLeadingInsights: [
+      'Eddie voices the F chord using a thumb-over grip on fret 1 of the low E string, allowing rapid transitions.',
+      'The open A 5th string serves as a low pedal anchor, grounding the arpeggiated cells.',
+      'The chorus opens up the palm muting, doubling the apparent acoustic volume of the amplifier.',
+    ],
+    guitarPerspective: 'Tuning is half-step down (Eb Ab Db Gb Bb Eb). Apply firm yet light palm pressure directly over the bridge saddles. A stiff 1.0mm pick produces the signature percussive snap on the string crosses.',
+    songwriterTakeaway: 'You do not need complex jazz chords to write an immortal riff. Combining strict palm muting with a simple three-chord minor progression and distinct analog modulation can define an entire musical era.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'A Natural Minor (Aeolian)', slug: 'minor', description: 'The dark minor scale underpinning the entire composition.' },
+        { name: 'A Minor Pentatonic', slug: 'minor-pentatonic', description: 'The scale used for the lyrical guitar solo and blues fills.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode that creates the gritty Sunset Strip feel.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Am arpeggio voicings with open string pedal points.' },
+        { name: 'Power Chords', slug: 'power-chords', description: 'Unmuted arena rock chorus chords.' },
+      ],
+    },
+  },
+
+  'every-breath-you-take': {
+    slug: 'every-breath-you-take',
+    songTitle: 'Every Breath You Take',
+    artist: 'The Police',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Five-Fret Add9 Chord Finger Stretch and Chromatic Bridge Modulation',
+    emotionalHook: 'Andy Summers elevated a standard 1950s doo-wop progression by adding major 9th intervals to every chord, creating demanding five-fret stretches across strings 6, 5, 4, and 3. In the bridge, the song modulates unexpectedly to E major before an altered Eb dominant chord snaps the harmony back to Ab major, matching the obsessive narrative tone.',
+    romanProgression: 'Iadd9 - viadd9 - IVadd9 - Vadd9',
+    chords: ['Abadd9', 'Fmadd9', 'Dbadd9', 'Ebadd9', 'E', 'F#', 'Eb'],
+    progressionExplanation: [
+      'Abadd9 (Iadd9): Luminous tonic chord made bittersweet by the ringing Bb major 9th.',
+      'Fmadd9 (viadd9): Submediant chord adding poignant melancholy with its G natural 9th.',
+      'Dbadd9 (IVadd9): Subdominant chord expanding the harmonic space with an Eb major 9th.',
+      'Ebadd9 (Vadd9): Dominant chord providing disciplined turnaround momentum.',
+      'E (bVI): Chromatic modulation in the bridge creating claustrophobic emotional tension.',
+    ],
+    voiceLeadingInsights: [
+      'The major 9th degree rings as an upper pedal voice throughout the chord sequence.',
+      'Strict bridge palm muting isolates each sixteenth note into a clean, clockwork acoustic pulse.',
+      'The bridge modulation moves stepwise down from E to F# to B before resolving through dominant Eb.',
+    ],
+    guitarPerspective: 'Keep your fret-hand thumb centered on the back of the neck to allow your fingers to arch cleanly across the five-fret stretch. Use a compressor and analog chorus for crystalline 1980s tone.',
+    songwriterTakeaway: 'Transform familiar progressions by adding consistent color extensions (like add9) across every chord. A dramatic chromatic bridge modulation creates powerful emotional relief when returning to the home key.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Ab Major (Ionian)', slug: 'major', description: 'The primary scale providing the add9 color tones.' },
+        { name: 'F Natural Minor', slug: 'minor', description: 'Relative minor scale shaping the Fmadd9 verse.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The major mode defining the shimmering new wave atmosphere.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Ab and Db major add9 chord grips.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'Fmadd9 dark minor shapes.' },
+      ],
+    },
+  },
+
+  'sunday-bloody-sunday': {
+    slug: 'sunday-bloody-sunday',
+    songTitle: 'Sunday Bloody Sunday',
+    artist: 'U2',
+    category: 'pedal-tone-drone',
+    categoryLabel: 'Pedal Tones & Drones',
+    coreSecret: 'Dotted-Eighth Delay Echo Interplay with Open High E and B Drone Strings',
+    emotionalHook: 'The Edge creates an expansive rhythmic wall of sound by synchronizing a digital delay pedal to a dotted-eighth note value (364ms at 103 BPM). Playing simple ascending eighth-note arpeggios while leaving open B and high E strings ringing, the repeats slot into the sixteenth-note spaces to generate a galloping military cadence.',
+    romanProgression: 'i - bIII - bVI',
+    chords: ['Bm', 'D', 'G6'],
+    progressionExplanation: [
+      'Bm (i): Dark, brooding tonic minor chord setting the solemn political gravity.',
+      'D (bIII): Relative major chord injecting defiance, hope, and anthemic brightness.',
+      'G6 (bVI): Submediant chord made expansive by open ringing B and high E strings.',
+    ],
+    voiceLeadingInsights: [
+      'The open B (string 2) and high E (string 1) ring continuously across Bm, D, and G6, acting as a high drone.',
+      'The lower voices trace a gentle stepwise ascent: B → D → G, creating rolling forward drive.',
+      'The bridge breakdown introduces crystalline natural harmonics on frets 7 and 12 over a descending bassline.',
+    ],
+    guitarPerspective: 'Tuning is half-step down (Eb Ab Db Gb Bb Eb). Set delay to 364ms with 3-4 repeats at 50% mix. Use the Stratocaster position 2 (bridge + middle) and strike strings with the dimpled edge of a Herdim pick for signature chime.',
+    songwriterTakeaway: 'Pairing open-string drones with rhythmic delay effects multiplies the perceived size of a three-piece band, transforming simple triadic shapes into cinematic arena rock anthems.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'B Natural Minor', slug: 'minor', description: 'The somber minor scale defining the verse arpeggio.' },
+        { name: 'D Major (Ionian)', slug: 'major', description: 'Relative major key providing the triumphant chorus lift.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The minor mode underpinning the solemn historical narrative.' },
+      ],
+      chords: [
+        { name: 'Minor Chords', slug: 'minor', description: 'Bm triadic arpeggios with open high strings.' },
+      ],
+    },
+  },
+
+  'would': {
+    slug: 'would',
+    songTitle: 'Would?',
+    artist: 'Alice in Chains',
+    category: 'modal-mixture',
+    categoryLabel: 'Modal Mixture & Borrowed Chords',
+    coreSecret: 'The Haunting Neapolitan bII Chord (G Major) Clashing Against the F# Minor Tonic',
+    emotionalHook: 'Jerry Cantrell crafts one of grunge rock most haunting progressions by pitting an unexpected G major triad (bII) directly against the F# minor tonic. In the verse, dark open-string dyads hover ambiguously over Mike Starr bassline, before the chorus erupts into crushing downstroke power chords driven by the visceral Neapolitan half-step resolution.',
+    romanProgression: 'i - bVI - bII - i',
+    chords: ['F#m', 'D', 'G', 'Bm', 'E'],
+    progressionExplanation: [
+      'F#m (i): Heavy, somber tonic minor chord establishing the dark emotional atmosphere.',
+      'D (bVI): Submediant chord providing expansive melodic lift in the chorus climb.',
+      'G (bII): Neapolitan chord creating visceral chromatic friction that resolves down into tonic F#m.',
+      'Bm (iv): Subdominant minor chord deepening the melancholic bridge texture.',
+      'E (VII): Subtonic chord driving the triumphant turnaround into the chorus climax.',
+    ],
+    voiceLeadingInsights: [
+      'The open B and high E strings ring continuously against fretted F# and G dyads, creating eerie minor second clashes.',
+      'The chorus bassline and rhythm guitars move in heavy chromatic steps: F# → D → G → F#.',
+      'The bridge features Layne Staley soaring vocal harmonies climbing over ascending power chords.',
+    ],
+    guitarPerspective: 'Tune down one half-step (Eb Ab Db Gb Bb Eb). Arch fret-hand fingers high during the verse to keep open strings ringing. Dig in with heavy downstrokes during the chorus for maximum speaker excursion.',
+    songwriterTakeaway: 'The Neapolitan chord (bII major resolving to i minor) creates an intense, visceral pull. Use it when you want your rock progression to sound menacing, emotional, and unpredictable.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'F# Natural Minor', slug: 'minor', description: 'The dark minor scale providing the core harmonic foundation.' },
+        { name: 'F# Minor Pentatonic', slug: 'minor-pentatonic', description: 'Foundation for Cantrell crying wah-pedal solo.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The natural minor mode that anchors the Seattle grunge sound.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'High-gain downstroke chord assault in the chorus.' },
+        { name: 'Minor Chords', slug: 'minor', description: 'F#m open string dyad voicings.' },
+      ],
+    },
+  },
+
+  'highway-star': {
+    slug: 'highway-star',
+    songTitle: 'Highway Star',
+    artist: 'Deep Purple',
+    category: 'secondary-dominants',
+    categoryLabel: 'Secondary Dominants & Harmonic Minor',
+    coreSecret: 'The Neoclassical D Harmonic Minor Bach-Inspired Circle of Fifths Arpeggio Sequence',
+    emotionalHook: 'Ritchie Blackmore revolutionized rock guitar by bringing J.S. Bach architectural harmony into a blistering 173 BPM hard-rock track. Modulating from G minor to D minor for the solo, Blackmore cycles through Dm - A7 - Dm - Gm with strict alternate-picked arpeggios, where the C# leading tone from D Harmonic Minor creates soaring neoclassical drama.',
+    romanProgression: 'i - bVII - IV - V',
+    chords: ['G5', 'F5', 'C5', 'D5', 'Dm', 'A7', 'Gm'],
+    progressionExplanation: [
+      'G5 (i): High-velocity tonic engine chugging relentlessly on the low G string.',
+      'F5 (bVII): Subtonic chord providing classic rock release and driving momentum.',
+      'C5 (IV): Major IV chord introducing Dorian brightness into the verse climb.',
+      'D5 (V): Dominant chord delivering immense tension pulling back to G5.',
+      'A7 (V7 of Dm): Dominant seventh chord in the solo section defining the Bach harmonic minor flair.',
+    ],
+    voiceLeadingInsights: [
+      'The intro pedal point keeps low G chugging while harmony guitars and organ add chromatic layers.',
+      'The solo arpeggios trace clean third and fifth chord tones across strings 4, 3, 2, and 1.',
+      'The leading tone C# in A7 resolves upwards to D, demonstrating textbook classical voice leading at 173 BPM.',
+    ],
+    guitarPerspective: 'Keep pick strokes minimal and driven by relaxed wrist oscillation. Use a Stratocaster bridge single-coil through a cranked Marshall Major with treble and presence dialed high.',
+    songwriterTakeaway: 'Classical chord progressions (circle of fifths with dominant 7th chords) sound electrifying when played at high-speed rock tempos. Modulating to the minor dominant key for a solo section provides immense compositional freshness.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'G Natural Minor', slug: 'minor', description: 'The core scale driving the verse and driving rock riffs.' },
+        { name: 'D Harmonic Minor', slug: 'harmonic-minor', description: 'Supplies the leading tone C# for the Bach neoclassical solo arpeggios.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The minor mode providing high-speed rock momentum.' },
+      ],
+      chords: [
+        { name: 'Power Chords', slug: 'power-chords', description: 'Downstroke chugging power chord foundation.' },
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'A7 secondary dominant enabling the neoclassical modulation.' },
+      ],
+    },
+  },
+
+  'the-boys-are-back-in-town': {
+    slug: 'the-boys-are-back-in-town',
+    songTitle: 'The Boys Are Back in Town',
+    artist: 'Thin Lizzy',
+    category: 'mixolydian-dorian',
+    categoryLabel: 'Mixolydian & Dorian Anthems',
+    coreSecret: 'Twin-Lead Les Paul Diatonic Third Harmonies Over a Swinging Irish Soul Rock Shuffle',
+    emotionalHook: 'Phil Lynott, Scott Gorham, and Brian Robertson created the definitive twin-lead guitar anthem. Moving through a soulful Ab - Gb - Db progression (played in A major shapes on half-step downtuned guitars), the two Les Pauls harmonize in sweet diatonic thirds, perfectly capturing the swagger, camaraderie, and nostalgic euphoria of old friends reuniting.',
+    romanProgression: 'I - bVII - IV - I',
+    chords: ['Ab', 'Gb', 'Db', 'Cm', 'Fm', 'Bbm', 'Eb'],
+    progressionExplanation: [
+      'Ab (I): Warm, triumphant tonic major chord establishing the joyful Irish rock groove.',
+      'Gb (bVII): Subtonic Mixolydian chord injecting classic rock grit and forward momentum.',
+      'Db (IV): Subdominant chord providing uplifting resolution in the chorus climb.',
+      'Cm (iii): Mediant chord introducing soulful, melancholic inner-voice motion in the verse.',
+      'Eb (V): Dominant chord delivering structural turnaround tension back to tonic Ab.',
+    ],
+    voiceLeadingInsights: [
+      'The twin guitars harmonize strictly in diatonic thirds, matching pick attacks, vibrato, and cutoffs.',
+      'The verse rhythm guitar plays bouncy syncopated offbeat upstrokes over Phil Lynott swinging bass.',
+      'The bridge shifts into F minor (vi), providing dramatic storytelling depth before the twin solo erupts.',
+    ],
+    guitarPerspective: 'Tune down half-step (Eb Ab Db Gb Bb Eb). Lock into the 120 BPM swing shuffle feel. Dial in vintage Marshall crunch with Les Paul bridge humbuckers for singing dual-guitar sustain.',
+    songwriterTakeaway: 'A swinging shuffle rhythm paired with twin-guitar diatonic harmonies gives rock anthems irresistible soul and warmth. Ensure both lead lines have distinct space in the stereo mix.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'Ab Major (Ionian)', slug: 'major', description: 'The scale providing the sweet diatonic third harmonies.' },
+        { name: 'Ab Major Pentatonic', slug: 'major-pentatonic', description: 'Melodic foundation for Gorham and Robertson lyrical leads.' },
+      ],
+      modes: [
+        { name: 'Ionian Mode', slug: 'ionian', description: 'The major mode creating the warm, celebratory atmosphere.' },
+      ],
+      chords: [
+        { name: 'Major Chords', slug: 'major', description: 'Ab, Gb, and Db major chord triads.' },
+      ],
+    },
+  },
+
+  'prisoner-of-society': {
+    slug: 'prisoner-of-society',
+    songTitle: 'Prisoner of Society',
+    artist: 'The Living End',
+    category: 'blues-rock-hybrid',
+    categoryLabel: 'Blues-Rock Hybrid & Dominant Grooves',
+    coreSecret: 'Furious Rockabilly Hybrid Picking and B7 Dominant Turnarounds at 168 BPM',
+    emotionalHook: 'Chris Cheney fused 1950s rockabilly twang with ferocious 1990s punk energy. Moving through an Em - C - G - D progression at 168 BPM over Scott Owen upright slap-bass, Cheney utilizes hybrid picking (flatpick plus fingers) to snap biting high double stops, turning the progression around with a classic rockabilly B7 dominant chord.',
+    romanProgression: 'i - bVI - bIII - bVII',
+    chords: ['Em', 'C', 'G', 'D', 'B7'],
+    progressionExplanation: [
+      'Em (i): Rebellious, energetic tonic minor chord driving the furious Australian punk tempo.',
+      'C (bVI): Submediant chord providing anthemic emotional lift in the chorus climb.',
+      'G (bIII): Relative major chord providing melodic optimism and crowd-chant resonance.',
+      'D (bVII): Subtonic chord maintaining unstoppable forward momentum.',
+      'B7 (V7): Dominant seventh chord with major leading tone (D#) injecting classic 1950s rockabilly snap.',
+    ],
+    voiceLeadingInsights: [
+      'The hybrid-picked intro riff combines low E bass notes with snapping double stops on strings 2 and 1.',
+      'The B7 chord introduces D# natural, pulling the energetic punk cadence back into the minor tonic.',
+      'The guitar solo incorporates high-speed single-string tremolo picking and chromatic walking runs.',
+    ],
+    guitarPerspective: 'Use a Gretsch hollowbody with TV Jones FilterTron pickups and an analog slapback delay (120ms with 1 repeat). Snap your middle and ring fingers under the top strings for authentic rockabilly bite.',
+    songwriterTakeaway: 'Fusing genres (punk rock energy with rockabilly hybrid picking and dominant 7th turnarounds) creates an unmistakable signature sound that stands out from standard three-chord punk.',
+    isCurated: true,
+    relatedTheory: {
+      scales: [
+        { name: 'E Natural Minor', slug: 'minor', description: 'The minor scale driving the furious punk chord progressions.' },
+        { name: 'E Blues Scale', slug: 'blues', description: 'Supplies the flatted 5th (Bb) for Cheney chromatic rockabilly runs.' },
+      ],
+      modes: [
+        { name: 'Aeolian Mode', slug: 'aeolian', description: 'The minor mode providing the punk rebellion and urgency.' },
+      ],
+      chords: [
+        { name: 'Dominant 7th Chords', slug: 'dominant-7th', description: 'B7 rockabilly turnaround chord shape.' },
+        { name: 'Power Chords', slug: 'power-chords', description: 'High-speed downstroke punk chords.' },
+      ],
+    },
+  },
 };
 
 /**

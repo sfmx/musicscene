@@ -155,6 +155,16 @@ export const CURATED_HARMONIC_SLUGS: ReadonlySet<string> = new Set([
   'down-to-the-waterline',
   'telegraph-road',
   'your-latest-trick',
+  'rebel-rebel',
+  'jessica',
+  'carry-on-wayward-son',
+  'aint-talkin-bout-love',
+  'every-breath-you-take',
+  'sunday-bloody-sunday',
+  'would',
+  'highway-star',
+  'the-boys-are-back-in-town',
+  'prisoner-of-society',
 ]);
 
 export function hasCuratedHarmonicBreakdown(slug: string): boolean {

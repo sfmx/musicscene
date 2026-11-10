@@ -234,6 +234,16 @@ import tunnelOfLoveData from '@/data/songs/tunnel-of-love.json';
 import downToTheWaterlineData from '@/data/songs/down-to-the-waterline.json';
 import telegraphRoadData from '@/data/songs/telegraph-road.json';
 import yourLatestTrickData from '@/data/songs/your-latest-trick.json';
+import rebelRebelData from '@/data/songs/rebel-rebel.json';
+import jessicaData from '@/data/songs/jessica.json';
+import carryOnWaywardSonData from '@/data/songs/carry-on-wayward-son.json';
+import aintTalkinBoutLoveData from '@/data/songs/aint-talkin-bout-love.json';
+import everyBreathYouTakeData from '@/data/songs/every-breath-you-take.json';
+import sundayBloodySundayData from '@/data/songs/sunday-bloody-sunday.json';
+import wouldData from '@/data/songs/would.json';
+import highwayStarData from '@/data/songs/highway-star.json';
+import theBoysAreBackInTownData from '@/data/songs/the-boys-are-back-in-town.json';
+import prisonerOfSocietyData from '@/data/songs/prisoner-of-society.json';
 
 export interface SongData {
   songInfo: {
@@ -686,6 +696,16 @@ const songDatabase: Record<string, SongData> = {
   'down-to-the-waterline': downToTheWaterlineData as SongData,
   'telegraph-road': telegraphRoadData as SongData,
   'your-latest-trick': yourLatestTrickData as SongData,
+  'rebel-rebel': rebelRebelData as SongData,
+  'jessica': jessicaData as SongData,
+  'carry-on-wayward-son': carryOnWaywardSonData as SongData,
+  'aint-talkin-bout-love': aintTalkinBoutLoveData as SongData,
+  'every-breath-you-take': everyBreathYouTakeData as SongData,
+  'sunday-bloody-sunday': sundayBloodySundayData as SongData,
+  'would': wouldData as SongData,
+  'highway-star': highwayStarData as SongData,
+  'the-boys-are-back-in-town': theBoysAreBackInTownData as SongData,
+  'prisoner-of-society': prisonerOfSocietyData as SongData,
 };
 
 export function getSongData(songSlug: string): SongData | null {

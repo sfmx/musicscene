@@ -1,0 +1,411 @@
+{
+  "songInfo": {
+    "title": "Jessica",
+    "artist": "The Allman Brothers Band",
+    "album": "Brothers and Sisters",
+    "released": "1973",
+    "genre": "Classic Rock",
+    "tempo": "105 BPM",
+    "duration": "7:30",
+    "key": "A Major",
+    "tuning": "Standard (EADGBE)"
+  },
+  "difficulty": {
+    "overall": "Advanced",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Advanced",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "A Major",
+      "scalesUsed": [
+        {
+          "scale": "A Major (Ionian)",
+          "notes": "A - B - C# - D - E - F# - G#",
+          "application": "Drives the joyous, uplifting main themes and the harmonized twin-guitar fanfares"
+        },
+        {
+          "scale": "A Mixolydian mode",
+          "notes": "A - B - C# - D - E - F# - G",
+          "application": "Shapes the rolling southern rock vamp sections over the G major chord"
+        },
+        {
+          "scale": "A Major Pentatonic",
+          "notes": "A - B - C# - E - F#",
+          "application": "Foundation for Dickey Betts' singing, lyrical solo phrasing and Django-inspired two-finger slides"
+        }
+      ],
+      "modalCharacter": "Major with Mixolydian modal interchange",
+      "keySignature": "Three sharps (F#, C#, G#)",
+      "relativeMinor": "F# Minor"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "A",
+          "D",
+          "E",
+          "G"
+        ],
+        "progression": "I - IV - V - bVII",
+        "description": "An exuberantly optimistic Southern rock masterpiece. The main theme rests on an A to D major turnaround, periodically modulating to G major (bVII) before ascending through step-wise major modulations."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Acoustic & Organ Motif",
+          "progression": "A - D - A - D",
+          "romanNumerals": "I - IV - I - IV",
+          "description": "Gentle strummed acoustic and piano arpeggios introducing the pastoral melodic cadence"
+        },
+        {
+          "section": "Main Theme (Guitar Riff A)",
+          "progression": "A - D - E - A",
+          "romanNumerals": "I - IV - V - I",
+          "description": "Dickey Betts' joyful singing guitar theme articulated with lyrical bends, slides, and vocal vibrato"
+        },
+        {
+          "section": "Harmonized Twin Lead B-Section",
+          "progression": "G - D - A - E",
+          "romanNumerals": "bVII - IV - I - V",
+          "description": "Famous diatonic third and sixth twin-guitar harmonies rolling effortlessly over the Southern groove"
+        },
+        {
+          "section": "Modulating Bridge",
+          "progression": "G - C - D - G - A",
+          "romanNumerals": "bVII - bIII - IV - bVII - I",
+          "description": "Bright stepwise key transposition lifting the dynamic excitement before returning triumphantly to A major"
+        }
+      ],
+      "harmonicFunction": [
+        "A (I) - Tonic chord establishing the buoyant, open Southern rock tonal center",
+        "D (IV) - Subdominant chord creating fluid plagal motion and melodic lift",
+        "E (V) - Dominant chord providing structural stability and turnaround tension",
+        "G (bVII) - Borrowed Mixolydian chord introducing signature Allman Brothers modal warmth"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Two-Finger Diatonic Slide & Shift",
+      "description": "Dickey Betts wrote the main melody to be played primarily with the index and middle fingers as an homage to Django Reinhardt, using smooth position shifts and glissando slides rather than standard four-finger box playing",
+      "difficulty": "Advanced",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Position your fret hand so that fingers 1 and 2 guide the ascending major 3rd and 6th intervals",
+          "Slide into chord tones from a half-step below to achieve singing vocal inflection",
+          "Keep thumb relaxed behind the guitar neck to allow smooth horizontal navigation across frets 5 through 14",
+          "Apply wide, singing finger vibrato from the wrist rather than tension in the knuckles"
+        ],
+        "sequence": [
+          "Slide index finger from fret 5 to 7 on the D string",
+          "Drop middle finger onto fret 6 of the G string (C#)",
+          "Slide up to fret 9 with index finger, immediately following with middle finger on fret 10 of B string",
+          "Resolve onto the high A tonic on fret 9 of the G string or fret 10 of B string"
+        ],
+        "tips": [
+          "Think like a fiddle or horn player: prioritize melody, breath, and legato continuity over shred speed",
+          "Use the neck pickup with guitar tone rolled back slightly to 7 for Dickey Betts' flute-like sweetness",
+          "Practice the slides slowly with a metronome to avoid overshooting target frets"
+        ],
+        "chords": [
+          "A",
+          "D",
+          "E"
+        ],
+        "progression": "A - D - E - A"
+      }
+    },
+    {
+      "name": "Twin-Guitar Diatonic Third Harmonization",
+      "description": "Arranging and performing dual-guitar melodic lines locked in precise thirds and sixths, demanding impeccable synchronization of vibrato, picking attack, and pitch bends",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "The upper guitar voice traces the main melody while the lower harmony plays a diatonic third below in A major",
+          "Both players must align their pick attack down to the millisecond",
+          "Vibrato must be matched in both speed and depth to avoid dissonant acoustic beating",
+          "Control note durations so endings of phrases cut off in perfect unison"
+        ],
+        "sequence": [
+          "Lead guitar picks fret 9 on G string while harmony guitar picks fret 7 on D string",
+          "Both slide simultaneously two frets higher",
+          "Bend notes in unison: full step on lead, whole or half step according to scale degree on harmony",
+          "Sustain together with synchronized vibrato"
+        ],
+        "tips": [
+          "When practicing alone, record the rhythm or lower harmony first on a looper pedal, then play the lead over top",
+          "Pay close attention to whether the diatonic third is major (4 semitones) or minor (3 semitones)",
+          "Keep tone slightly clean of extreme gain to preserve clear harmonic definition between both guitars"
+        ],
+        "chords": [],
+        "progression": "G - D - A - E"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Acoustic Sparkle & Theme Setup",
+      "timeStamp": "0:00-0:40",
+      "technique": "Two-Finger Diatonic Slide & Shift",
+      "key": "A Major",
+      "description": "Delicate strummed acoustic guitars, piano flourishes, and subtle percussion establish the joyful 105 BPM groove.",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "D"
+      ],
+      "progression": "A - D - A - D",
+      "notes": [
+        "Crisp acoustic down-up strumming pattern",
+        "Electric guitar enters with gentle ambient volume swells",
+        "Establish steady, swinging 105 BPM pocket",
+        "Dynamic build toward the full band entrance"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 2.2 0.1) :8 (0.5 2.4 2.3 2.2 0.1) :4 (0.4 2.3 3.2 2.1) :8 (0.4 2.3 3.2 2.1) | :4 (0.5 2.4 2.3 2.2 0.1) :8 (0.5 2.4 2.3 2.2 0.1) :4 (0.4 2.3 3.2 2.1) :4 r.4 |",
+      "exerciseLabel": "Acoustic Intro Groove & Strumming Study"
+    },
+    {
+      "name": "Main Theme (Theme 1)",
+      "timeStamp": "0:41-1:45",
+      "technique": "Two-Finger Diatonic Slide & Shift",
+      "key": "A Major",
+      "description": "One of the most famous guitar melodies ever recorded: Dickey Betts' Les Paul sings with golden Southern tone, sliding smoothly between major chord tones.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A",
+      "notes": [
+        "Use fingers 1 and 2 exclusively for the sliding motifs",
+        "Emphasize the major 3rd (C#) on fret 6 of the G string",
+        "Keep the vibrato relaxed, wide, and expressive",
+        "Let the final tonic A ring into the following phrase"
+      ],
+      "alphaTab": ":8 7.4 9.4 :8 6.3 7.3 :4 9.3 :8 7.3 6.3 | :8 7.4 9.4 :8 6.3 7.3 :2 9.3 |",
+      "exerciseLabel": "Iconic Southern Singing Melody Exercise"
+    },
+    {
+      "name": "Twin-Lead Harmonized B-Section",
+      "timeStamp": "1:46-2:35",
+      "technique": "Twin-Guitar Diatonic Third Harmonization",
+      "key": "A Major / G Mixolydian",
+      "description": "Dual electric guitars lock into majestic harmony over the shifting G - D - A progression, highlighting brilliant counterpoint and unified vibrato.",
+      "chords": [
+        "G",
+        "D",
+        "A",
+        "E"
+      ],
+      "progression": "G - D - A - E",
+      "notes": [
+        "Impeccable synchronization between upper melody and lower third",
+        "Slide into the G major harmony together on beat 1",
+        "Match note releases cleanly at the ends of phrases",
+        "Listen closely to the room acoustics and guitar separation"
+      ],
+      "alphaTab": ":8 (10.2 12.1) (10.2 12.1) :4 (8.2 10.1) :4 (7.2 9.1) :8 (5.2 7.1) | :4 (7.3 9.2) :4 (7.4 9.3) :2 (9.3 10.2) |",
+      "exerciseLabel": "Twin Guitar Diatonic Harmony Study"
+    },
+    {
+      "name": "Organ Solo & Guitar Comping Vamp",
+      "timeStamp": "2:36-4:15",
+      "technique": "Two-Finger Diatonic Slide & Shift",
+      "key": "A Major",
+      "description": "Chuck Leavell delivers an iconic, rolling piano and Hammond organ solo while the guitars provide soulful, syncopated rhythm comping underneath.",
+      "chords": [
+        "A",
+        "D",
+        "A",
+        "D"
+      ],
+      "progression": "A - D - A - D",
+      "notes": [
+        "Keep the rhythm guitar tone clean and dynamic",
+        "Accentuate upbeats with subtle thumb-finger plucks",
+        "Leave acoustic space for the piano arpeggios",
+        "Slowly build volume and drive as the solo intensifies"
+      ],
+      "alphaTab": ":4 (0.5 2.4 2.3 2.2) :8 r.8 :8 (0.5 2.4 2.3 2.2) :4 (0.4 2.3 3.2 2.1) :8 r.8 | :4 (0.5 2.4 2.3 2.2) :8 r.8 :8 (0.5 2.4 2.3 2.2) :2 (0.4 2.3 3.2 2.1) |",
+      "exerciseLabel": "Southern Rock Rhythm Comping Exercise"
+    },
+    {
+      "name": "Guitar Solo & Climactic Peak",
+      "timeStamp": "4:16-6:10",
+      "technique": "Two-Finger Diatonic Slide & Shift",
+      "key": "A Major",
+      "description": "Dickey Betts takes flight with an expansive, masterclass solo featuring rapid major pentatonic runs, vocal string bends, and blues-infused Southern double stops.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A",
+      "notes": [
+        "Dig into whole-step bends on fret 9 of the G string and fret 10 of the B string",
+        "Use hybrid picking or aggressive finger attack for biting presence",
+        "Execute rapid descending pentatonic cascades cleanly",
+        "Climax with sustained high A on fret 17 of the high E string"
+      ],
+      "alphaTab": ":8 12.2 14.1 :8 12.1 10.1 :4 12.1 :8 10.1 9.1 | :8 10.2 12.2 :8 9.3 11.3 :4 9.3 :4 r.4 |",
+      "exerciseLabel": "Dickey Betts Masterclass Solo Study"
+    },
+    {
+      "name": "Outro Theme Recapitulation & Grand Resolution",
+      "timeStamp": "6:11-7:30",
+      "technique": "Twin-Guitar Diatonic Third Harmonization",
+      "key": "A Major",
+      "description": "Full band re-enters with the soaring twin-lead theme at maximum emotional intensity, resolving on a glorious, ringing A major chord cadence.",
+      "chords": [
+        "A",
+        "D",
+        "E",
+        "A"
+      ],
+      "progression": "A - D - E - A",
+      "notes": [
+        "Maximum dynamic drive and unified band groove",
+        "Both guitars execute the final ascending fanfare in flawless lockstep",
+        "Hold final chord with natural tube amp sustain and soft shimmer",
+        "Clean drum and cymbal resolution"
+      ],
+      "alphaTab": ":8 7.4 9.4 :8 6.3 7.3 :4 9.3 :8 7.3 6.3 | :4 7.4 :4 9.4 :2 (0.5 2.4 2.3 2.2 0.1) |",
+      "exerciseLabel": "Grand Theme Recapitulation & Outro Cadence"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "1957 Gibson Les Paul Goldtop or Standard with PAF humbuckers",
+      "alternatives": [
+        "Gibson SG Standard",
+        "PRS McCarty 594",
+        "Epiphone 1959 Les Paul Standard"
+      ],
+      "pickup": "Neck humbucker for warm, woody flute-like leads; middle position for rhythmic comping"
+    },
+    "amp": {
+      "recommended": "100W Marshall Super Lead or Marshall 1987 Plexi with JBL D120F speakers",
+      "alternatives": [
+        "Fender Bassman '59",
+        "Marshall SV20H Studio Vintage",
+        "Boss Katana 100"
+      ],
+      "settings": {
+        "gain": "6",
+        "treble": "7",
+        "middle": "8",
+        "bass": "4",
+        "presence": "6"
+      }
+    },
+    "effects": {
+      "distortion": "Natural tube saturation from cranked Marshall power amp",
+      "reverb": "Warm studio spring or plate reverb",
+      "other": "Light analog tape echo or rotary speaker simulation"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Acoustic Chords & Fundamental Strumming",
+      "steps": [
+        "Master open A, D, E, and G major chord shapes",
+        "Practice transitioning in tempo at 105 BPM",
+        "Count the 4/4 swing rhythm steadily"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "Main Theme Melody & Two-Finger Slides",
+      "steps": [
+        "Memorize the signature Theme 1 melody using index and middle fingers",
+        "Practice accurate fret slides into target chord tones",
+        "Develop smooth horizontal neck navigation between frets 5 and 12"
+      ],
+      "timeEstimate": "3-4 weeks"
+    },
+    "advanced": {
+      "title": "Twin Harmonies, Full Solo & Improvisation",
+      "steps": [
+        "Master both upper and lower voices of the harmonized B-section",
+        "Transcribe and perform Dickey Betts' complete melodic solo",
+        "Play along with the full 7:30 track maintaining pitch and stamina"
+      ],
+      "timeEstimate": "4-6 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Using all four fingers on the main theme instead of embracing Betts' expressive two-finger sliding phrasing",
+      "Over-bending or missing target pitches in the major scale melody",
+      "Rushing the relaxed, breezy 105 BPM Southern pocket",
+      "Playing the twin harmony with unequal volume or mismatched vibrato"
+    ],
+    "practiceRoutine": [
+      "10 mins: A major and A major pentatonic scale drills in multiple positions",
+      "10 mins: Slow metronome practice of Theme 1 at 75, 90, and 105 BPM",
+      "10 mins: Harmonized third drills with a recorded backing or looper",
+      "10 mins: Solo transcription study focusing on micro-tone bends and vocal vibrato"
+    ],
+    "focusAreas": [
+      "Fret-hand finger slides and position shifts",
+      "Intonation and pitch accuracy on major 3rd bends",
+      "Singing, vocal-style wrist vibrato"
+    ],
+    "metronomeWork": [
+      "Start practicing the main theme at 75 BPM to ensure absolute accuracy of all slides",
+      "Increase by 5 BPM once 4 consecutive flawless takes are performed",
+      "Emphasize the swing feel on eighth notes to capture the Allman Brothers signature groove"
+    ]
+  },
+  "metadata": {
+    "popularity": 94,
+    "dateAdded": "2026-11-10",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1970s",
+    "subGenre": "Classic Rock",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Piano",
+      "Organ"
+    ],
+    "tags": [
+      "classic-rock",
+      "major-key",
+      "bending",
+      "vibrato",
+      "alternate-picking",
+      "electric-guitar"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "4-6 weeks"
+  },
+  "relatedSongs": {
+    "sameArtist": [],
+    "similarTechniques": [
+      {
+        "title": "Sweet Home Alabama",
+        "artist": "Lynyrd Skynyrd",
+        "technique": "Southern Rock Major Pentatonic Phrasing",
+        "link": "/lessons/songs/song-analysis/sweet-home-alabama"
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "technique": "Twin-Guitar Harmonized Leads",
+        "link": "/lessons/songs/song-analysis/hotel-california"
+      }
+    ]
+  }
+}

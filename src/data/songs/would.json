@@ -1,0 +1,415 @@
+{
+  "songInfo": {
+    "title": "Would?",
+    "artist": "Alice in Chains",
+    "album": "Dirt",
+    "released": "1992",
+    "genre": "Metal",
+    "tempo": "116 BPM",
+    "duration": "3:27",
+    "key": "F# Minor",
+    "tuning": "Half-Step Down (Eb Ab Db Gb Bb Eb)"
+  },
+  "difficulty": {
+    "overall": "Intermediate",
+    "rhythmGuitar": "Intermediate",
+    "leadGuitar": "Advanced",
+    "bass": "Intermediate",
+    "drums": "Advanced"
+  },
+  "musicalAnalysis": {
+    "keyAndScale": {
+      "primaryKey": "F# Minor",
+      "scalesUsed": [
+        {
+          "scale": "F# Natural Minor (Aeolian)",
+          "notes": "F# - G# - A - B - C# - D - E",
+          "application": "Drives the haunting, brooding verses and the dark descending harmonic movement"
+        },
+        {
+          "scale": "F# Minor Pentatonic",
+          "notes": "F# - A - B - C# - E",
+          "application": "Bedrock for Jerry Cantrell's expressive vocal unisons, wah-wah lead fills, and soaring guitar solo"
+        },
+        {
+          "scale": "F# Blues Scale",
+          "notes": "F# - A - B - C - C# - E",
+          "application": "The flatted 5th (C natural) adds visceral tension to the chromatic chorus passing chords"
+        }
+      ],
+      "modalCharacter": "Aeolian with chromatic passing motion",
+      "keySignature": "Three sharps (F#, C#, G#) (concert F minor due to half-step down tuning)",
+      "relativeMinor": "F# Minor is the relative minor of A Major"
+    },
+    "chordProgressions": {
+      "mainProgression": {
+        "chords": [
+          "F#m",
+          "D",
+          "G",
+          "F#m"
+        ],
+        "progression": "i - bVI - bII - i",
+        "description": "Jerry Cantrell's signature Seattle grunge progression. The verse features eerie open-string arpeggios over Mike Starr's hypnotic bassline, before exploding into a devastating chorus featuring a dark Neapolitan bII chord (G major) resolving down to F#m."
+      },
+      "sectionProgressions": [
+        {
+          "section": "Intro Hypnotic Bass & Guitar Entry",
+          "progression": "F#m - G - F#m - G",
+          "romanNumerals": "i - bII - i - bII",
+          "description": "Iconic opening bass riff answered by Cantrell's chiming, chorus-drenched arpeggiated dyads"
+        },
+        {
+          "section": "Verse",
+          "progression": "F#m7 - Gadd9",
+          "romanNumerals": "i7 - bIIadd9",
+          "description": "Brooding two-chord vamp allowing open B and high E strings to ring as dissonant pedal points"
+        },
+        {
+          "section": "Chorus Explosion",
+          "progression": "F#m - D - G - F#m",
+          "romanNumerals": "i - bVI - bII - i",
+          "description": "'Into the flood again, same old trip it was back then...' - colossal wall of layered Bogner and Marshall tube distortion"
+        },
+        {
+          "section": "Bridge / Interlude",
+          "progression": "D - Bm - D - E",
+          "romanNumerals": "bVI - iv - bVI - VII",
+          "description": "Ascending harmonic release introducing Layne Staley's soaring vocal crescendo before the guitar solo"
+        }
+      ],
+      "harmonicFunction": [
+        "F#m (i) - Heavy, resonant tonic minor chord establishing the visceral emotional weight",
+        "D (bVI) - Submediant chord providing emotional lift and harmonic expansiveness",
+        "G (bII) - Neapolitan chord providing intense chromatic friction that snaps back into the tonic F#m",
+        "Bm (iv) - Subdominant minor chord deepening the melancholic bridge texture",
+        "E (VII) - Subtonic major chord driving the triumphant turnaround into the chorus climax"
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "name": "Open-String Grunge Arpeggiation",
+      "description": "Fretting dark, inverted minor dyad shapes on strings 4 and 3 while letting open strings 2 and 1 ring out, generating eerie dissonance and expansive stereo width",
+      "difficulty": "Intermediate",
+      "primaryTechnique": true,
+      "details": {
+        "notes": [
+          "Fret the F# note on fret 4 of the D string and A on fret 2 of the G string",
+          "Keep fret-hand fingers arched high so the open B and high E strings ring continuously",
+          "Use a smooth down-up picking motion across strings 4, 3, 2, and 1",
+          "Slide fret-hand shape up one fret to fret 5 and 4 for the chilling Gadd9 coloration"
+        ],
+        "sequence": [
+          "Pick string 4 downbeat",
+          "Pick string 3, string 2, and string 1 in fluid arpeggiation",
+          "Slide up to fret 5 with fingers 3 and 1 intact",
+          "Dampen strings slightly on the turnaround with fret-hand pressure release"
+        ],
+        "tips": [
+          "Engage an analog chorus or flanger pedal with slow rate to give the open strings a swirling, underwater texture",
+          "Use the neck pickup on clean and verse passages for warm, woody resonance",
+          "Tune carefully: half-step down tuning makes open strings looser and prone to going sharp if fretted too hard"
+        ],
+        "chords": [
+          "F#m7",
+          "Gadd9"
+        ],
+        "progression": "F#m7 - Gadd9"
+      }
+    },
+    {
+      "name": "Heavy Downstroke Chunking & Cocked Wah Soloing",
+      "description": "Crushing, synchronized downstroke power chord picking in the chorus, transitioning to expressive, vocal wah-wah solo sweeps in the higher register",
+      "difficulty": "Advanced",
+      "primaryTechnique": false,
+      "details": {
+        "notes": [
+          "Deliver heavy, deliberate downstrokes across root, fifth, and octave notes of power chords",
+          "Lock precisely with the drum kick and snare on every eighth-note subdivision",
+          "For the solo, rock the wah pedal in sync with your vocal phrasing rather than frantic pumping",
+          "Dig deep into whole-step blues bends at frets 14 and 16 on the G and B strings"
+        ],
+        "sequence": [
+          "Smash F#5 power chord downbeat with unmuted sustain",
+          "Shift to D5 on the 5th string, then G5 on low E",
+          "Engage wah pedal for lead fills at the 14th fret",
+          "Execute singing vibrato at the peak of each bend"
+        ],
+        "tips": [
+          "Jerry Cantrell used a combination of Bogner Fish preamp, Marshall JCM800, and a Dunlop Cry Baby wah",
+          "A heavy guitar pick (1.14mm Dunlop Tortex) gives the requisite percussive thump on low power chords",
+          "Scoop a little 500Hz from your EQ to leave room for the booming bass tone"
+        ],
+        "chords": [
+          "F#5",
+          "D5",
+          "G5"
+        ],
+        "progression": "F#5 - D5 - G5 - F#5"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Intro Hypnotic Bass & Dyad Entry",
+      "timeStamp": "0:00-0:32",
+      "technique": "Open-String Grunge Arpeggiation",
+      "key": "F# Minor",
+      "description": "Mike Starr's iconic driving bassline sets the dark mood before Cantrell's chorus-laden guitar dyads chime across the stereo spectrum at 116 BPM.",
+      "chords": [
+        "F#m",
+        "G"
+      ],
+      "progression": "F#m - G",
+      "notes": [
+        "Let the open high E and B strings ring freely",
+        "Light pick attack with subtle chorusing effect",
+        "Smooth fret-hand slide from fret 4 to fret 5 on the D string",
+        "Lock seamlessly into the 116 BPM pocket"
+      ],
+      "alphaTab": ":8 4.4 2.3 :8 0.2 0.1 :8 4.4 2.3 :4 (0.2 0.1) | :8 5.4 4.3 :8 0.2 0.1 :8 5.4 4.3 :4 (0.2 0.1) |",
+      "exerciseLabel": "Grunge Open-String Intro Dyad Study"
+    },
+    {
+      "name": "Verse 1 Brooding Arpeggios",
+      "timeStamp": "0:33-1:04",
+      "technique": "Open-String Grunge Arpeggiation",
+      "key": "F# Minor",
+      "description": "'Into the flood again, same old trip it was back then...' - haunting guitar arpeggios accompany Layne Staley's commanding vocal.",
+      "chords": [
+        "F#m7",
+        "Gadd9"
+      ],
+      "progression": "F#m7 - Gadd9",
+      "notes": [
+        "Keep fingers arched so fretted notes don't mute open strings",
+        "Maintain delicate dynamic balance under the vocal",
+        "Accentuate the chromatic lift on the G chord",
+        "Prepare pick hand for the massive chorus explosion"
+      ],
+      "alphaTab": ":8 4.4 2.3 :8 0.2 0.1 :8 4.4 2.3 :8 0.2 0.1 | :8 5.4 4.3 :8 0.2 0.1 :8 5.4 4.3 :8 0.2 0.1 |",
+      "exerciseLabel": "Verse Arpeggio Dynamics & Open String Resonance"
+    },
+    {
+      "name": "Chorus Stadium Heavy Distortion",
+      "timeStamp": "1:05-1:36",
+      "technique": "Heavy Downstroke Chunking & Cocked Wah Soloing",
+      "key": "F# Minor",
+      "description": "'Am I wrong? Have I run too far to get home?' - devastating wall-of-sound power chords explode through high-gain tube amplifiers.",
+      "chords": [
+        "F#m",
+        "D",
+        "G",
+        "F#m"
+      ],
+      "progression": "F#m - D - G - F#m",
+      "notes": [
+        "All downstrokes with maximum pick attack",
+        "Hit the G5 chord hard to emphasize the Neapolitan chromatic pull",
+        "Lock tight with Sean Kinney's explosive snare hits",
+        "Sharp mute on the turnaround back to verse"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4) :2 (5.5 7.4 7.3) | :2 (3.6 5.5 5.4) :2 (2.6 4.5 4.4) |",
+      "exerciseLabel": "Chorus Power Chord Wall-of-Sound Study"
+    },
+    {
+      "name": "Bridge Ascending Release",
+      "timeStamp": "2:08-2:32",
+      "technique": "Heavy Downstroke Chunking & Cocked Wah Soloing",
+      "key": "D Major / E Major",
+      "description": "Harmonic departure sweeping through D, Bm, and E power chords, setting up the dramatic vocal climax.",
+      "chords": [
+        "D",
+        "Bm",
+        "D",
+        "E"
+      ],
+      "progression": "D - Bm - D - E",
+      "notes": [
+        "Dynamic crescendo across four bars",
+        "Slide power chord shapes smoothly along the 5th string",
+        "Hold the E5 chord with full sustaining tube feedback",
+        "Seamless release into the guitar solo"
+      ],
+      "alphaTab": ":2 (5.5 7.4 7.3) :2 (2.5 4.4 4.3) | :2 (5.5 7.4 7.3) :2 (7.5 9.4 9.3) |",
+      "exerciseLabel": "Bridge Ascending Cadence Exercise"
+    },
+    {
+      "name": "Guitar Solo & Cry Baby Wah Phrasing",
+      "timeStamp": "2:33-3:00",
+      "technique": "Heavy Downstroke Chunking & Cocked Wah Soloing",
+      "key": "F# Minor",
+      "description": "Jerry Cantrell delivers a dark, singing guitar solo using an expressive wah-wah sweep over crying minor pentatonic bends.",
+      "chords": [
+        "F#m",
+        "D",
+        "G",
+        "F#m"
+      ],
+      "progression": "F#m - D - G - F#m",
+      "notes": [
+        "Full-step bend on fret 16 of the G string up to F#",
+        "Sweep the wah forward on the ascent and pull back on the resolution",
+        "Wide vibrato applied with the whole wrist",
+        "Soulful blue note on fret 15 of the B string"
+      ],
+      "alphaTab": ":4 16.3 :8 14.3 16.4 :4 14.4 :8 16.4 14.3 | :4 16.3 :8 14.3 16.3 :2 17.2 |",
+      "exerciseLabel": "Jerry Cantrell Wah-Pedal Solo Study"
+    },
+    {
+      "name": "Outro Climax & 'If I Would, Could You?'",
+      "timeStamp": "3:01-3:27",
+      "technique": "Heavy Downstroke Chunking & Cocked Wah Soloing",
+      "key": "F# Minor",
+      "description": "'If I would, could you?' - thunderous final chorus repetition concluding with an abrupt, monumental unison stop.",
+      "chords": [
+        "F#m",
+        "D",
+        "G",
+        "F#m"
+      ],
+      "progression": "F#m - D - G - F#m",
+      "notes": [
+        "Maximum heavy rock energy and pick assault",
+        "Full band locks onto the final syncopated hit",
+        "Instant silence on the final chord cut-off",
+        "Zero decaying trail: punchy, stark finish"
+      ],
+      "alphaTab": ":2 (2.6 4.5 4.4) :4 (5.5 7.4 7.3) :4 (3.6 5.5 5.4) | :4 (2.6 4.5 4.4) :4 r.4 :2 r.2 |",
+      "exerciseLabel": "Dramatic Outro Cadence & Unison Stop"
+    }
+  ],
+  "equipment": {
+    "guitar": {
+      "recommended": "G&L Rampage or Gibson Les Paul Custom with Seymour Duncan JB bridge humbucker",
+      "alternatives": [
+        "ESP LTD EC-1000",
+        "Fender Stratocaster with bridge humbucker",
+        "Epiphone Les Paul Custom"
+      ],
+      "pickup": "High-output bridge humbucker (Seymour Duncan JB) for biting attack and thick harmonic crunch"
+    },
+    "amp": {
+      "recommended": "Bogner Fish Preamp through a Mesa/Boogie 2:90 power amp, paired with a Marshall JCM800",
+      "alternatives": [
+        "Friedman BE-50 Deluxe",
+        "EVH 5150 III",
+        "Boss Katana 100 (Brown Channel with Boost)"
+      ],
+      "settings": {
+        "gain": "8",
+        "treble": "6",
+        "middle": "7",
+        "bass": "6",
+        "presence": "5"
+      }
+    },
+    "effects": {
+      "distortion": "Thick tube distortion combining Bogner preamps and Marshall power sections",
+      "reverb": "Subtle studio room reverb (1.2s decay)",
+      "other": "Dunlop JC95 Jerry Cantrell Signature Cry Baby Wah and Boss CH-1 Super Chorus"
+    }
+  },
+  "learningPath": {
+    "beginner": {
+      "title": "Half-Step Down Tuning & Power Chords",
+      "steps": [
+        "Tune your guitar half-step down (Eb Ab Db Gb Bb Eb)",
+        "Learn F#5, D5, and G5 power chord voicings",
+        "Practice transitioning with steady downstrokes at 116 BPM"
+      ],
+      "timeEstimate": "1-2 weeks"
+    },
+    "intermediate": {
+      "title": "The Open-String Verse Dyads",
+      "steps": [
+        "Fret the F#m and G dyad shapes while letting open B and high E strings ring",
+        "Maintain clean string separation without choking adjacent open strings",
+        "Execute the dynamic transition from clean verse to roaring chorus"
+      ],
+      "timeEstimate": "2-3 weeks"
+    },
+    "advanced": {
+      "title": "The Wah-Wah Solo & Complete Performance",
+      "steps": [
+        "Transcribe and perform Cantrell's vocal wah-pedal guitar solo",
+        "Master the expressive whole-step bends and singing vibrato",
+        "Perform the entire track locked with the rhythm section"
+      ],
+      "timeEstimate": "3-5 weeks"
+    }
+  },
+  "practiceNotes": {
+    "commonMistakes": [
+      "Failing to tune down a half step, causing dissonance with the studio recording",
+      "Accidentally muting the ringing open B and high E strings during verse arpeggios",
+      "Pumping the wah pedal too fast during the solo instead of matching vocal inflections",
+      "Rushing the Neapolitan G chord transition in the chorus"
+    ],
+    "practiceRoutine": [
+      "5 mins: Half-step down tuning check and finger warm-up",
+      "10 mins: Slow verse dyad practice ensuring open strings ring cleanly",
+      "10 mins: Chorus downstroke power chord syncopation with metronome at 116 BPM",
+      "10 mins: Wah-pedal foot coordination and solo bend accuracy drills"
+    ],
+    "focusAreas": [
+      "Fret-hand arching to preserve open ringing high strings",
+      "Heavy, synchronized downstroke pick attack on power chords",
+      "Vocal wah-pedal coordination and expressive wrist vibrato"
+    ],
+    "metronomeWork": [
+      "Practice the verse arpeggio at 85 BPM with a metronome to guarantee clean note separation",
+      "Advance to full tempo of 116 BPM once 4 consecutive flawless cycles are played",
+      "Emphasize the heavy downbeat accents on beats 1 and 3 during chorus drills"
+    ]
+  },
+  "metadata": {
+    "popularity": 95,
+    "dateAdded": "2026-11-10",
+    "viewCount": 0,
+    "featured": true,
+    "decade": "1990s",
+    "subGenre": "Metal",
+    "instruments": [
+      "Lead Guitar",
+      "Rhythm Guitar",
+      "Bass",
+      "Drums",
+      "Vocals"
+    ],
+    "tags": [
+      "metal",
+      "classic-rock",
+      "minor-key",
+      "modal-interchange",
+      "distortion",
+      "power-chords"
+    ],
+    "learningValue": "HIGH",
+    "iconicRiff": true,
+    "estimatedLearningTime": "3-4 weeks"
+  },
+  "relatedSongs": {
+    "sameArtist": [
+      {
+        "title": "Rooster",
+        "link": "/lessons/songs/song-analysis/rooster",
+        "similarity": "Half-step down tuning, expressive chorused verse arpeggios, and explosive heavy chorus"
+      },
+      {
+        "title": "Man in the Box",
+        "link": "/lessons/songs/song-analysis/man-in-the-box",
+        "similarity": "Iconic talk-box/wah-wah riffs and crushing drop-tuned grunge power chords"
+      }
+    ],
+    "similarTechniques": [
+      {
+        "title": "Alive",
+        "artist": "Pearl Jam",
+        "technique": "Classic Grunge Power Chords & Wah Soloing",
+        "link": "/lessons/songs/song-analysis/alive"
+      }
+    ]
+  }
+}
