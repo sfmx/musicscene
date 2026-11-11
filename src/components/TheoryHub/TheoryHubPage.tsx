@@ -337,6 +337,36 @@ export default function TheoryHubPage() {
             </div>
           </section>
 
+          {/* New Spotlight: Reading Sheet Music on Guitar */}
+          <section className="mb-14">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-600/5 border border-amber-500/30 p-6 sm:p-8 shadow-xl">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div className="space-y-2 max-w-2xl">
+                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 text-xs font-bold border border-amber-500/30">
+                    <span>🎼 NEW MASTER GUIDE</span>
+                    <span>•</span>
+                    <span>Staff &amp; Fretboard Literacy</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                    Bridge Tab to Real Music: How to Read Sheet Music on Guitar
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Stop guessing fret numbers. Learn the 5 lines, 4 spaces, the guitar octave secret, Open Position mapping, and exact rhythm note values with our interactive Staff-to-Fretboard Explorer.
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 shrink-0">
+                  <Link
+                    href="/lessons/theory/reading-sheet-music"
+                    className="px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm transition-all shadow-lg hover:shadow-amber-500/20 hover:scale-[1.02] flex items-center gap-2 whitespace-nowrap cursor-pointer"
+                  >
+                    <span>Read Sheet Music Guide</span>
+                    <span>→</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* 3. The 5 Core Theory Pillars */}
           <section id="theory-pillars" className="mb-20">
             <div className="text-center max-w-3xl mx-auto mb-12">

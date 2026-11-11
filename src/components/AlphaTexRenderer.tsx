@@ -240,6 +240,23 @@ const STORAGE_KEY = 'alphatab_preferred_instrument';
 const THEME_STORAGE_KEY = 'alphatab_score_theme';
 const INSTRUMENT_CHANGE_EVENT = 'alphatab-instrument-change';
 
+export type StaveProfileMode = 'tab' | 'score-tab' | 'score';
+const STAVE_PROFILE_STORAGE_KEY = 'alphatab_stave_profile';
+const STAVE_PROFILE_CHANGE_EVENT = 'alphatab-stave-profile-change';
+
+const getAlphaTabStaveProfile = (mode: StaveProfileMode, at: any) => {
+  if (!at?.StaveProfile) return mode === 'score' ? 2 : (mode === 'score-tab' ? 1 : 3);
+  switch (mode) {
+    case 'score-tab':
+      return at.StaveProfile.ScoreTab;
+    case 'score':
+      return at.StaveProfile.Score;
+    case 'tab':
+    default:
+      return at.StaveProfile.Tab;
+  }
+};
+
 /**
  * Updates track playbackInfo program and all beat automations (type 2)
  * so that MIDI generation uses the desired instrument.
@@ -457,6 +474,25 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
   const scoreThemeRef = useRef<'dark' | 'light'>('light');
 
+  // Stave Profile Mode: 'tab' (Tablature Only), 'score-tab' (Dual Staff + Tab), 'score' (Standard Staff Only)
+  const [staveProfile, setStaveProfile] = useState<StaveProfileMode>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem(STAVE_PROFILE_STORAGE_KEY);
+        if (saved === 'tab' || saved === 'score-tab' || saved === 'score') {
+          return saved as StaveProfileMode;
+        }
+      } catch {
+        // ignore
+      }
+    }
+    return 'tab';
+  });
+  const staveProfileRef = useRef<StaveProfileMode>(staveProfile);
+  useEffect(() => {
+    staveProfileRef.current = staveProfile;
+  }, [staveProfile]);
+
   // Initialize selected instrument from localStorage or default to Steel Acoustic (25)
   const [selectedInstrument, setSelectedInstrument] = useState<number>(() => {
     if (typeof window !== 'undefined') {
@@ -562,6 +598,59 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
       return () => window.removeEventListener('theme-change', handleGlobalThemeChange);
     }
   }, [updateScoreTheme]);
+
+  // Dynamic Stave Profile (Tab / Staff / Dual) updater
+  const updateStaveProfile = useCallback((nextProfile: StaveProfileMode) => {
+    setStaveProfile(nextProfile);
+    staveProfileRef.current = nextProfile;
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(STAVE_PROFILE_STORAGE_KEY, nextProfile);
+        window.dispatchEvent(new CustomEvent(STAVE_PROFILE_CHANGE_EVENT, { detail: { profile: nextProfile } }));
+      } catch {
+        // ignore
+      }
+    }
+    if (apiRef.current) {
+      const at = (window as any).alphaTab;
+      if (apiRef.current.settings?.display) {
+        apiRef.current.settings.display.staveProfile = getAlphaTabStaveProfile(nextProfile, at);
+        try {
+          apiRef.current.updateSettings();
+          apiRef.current.render();
+        } catch (e) {
+          console.warn('AlphaTab staveProfile re-render notice:', e);
+        }
+      }
+    }
+  }, []);
+
+  // Synchronize stave profile across all AlphaTexRenderer instances on the page
+  useEffect(() => {
+    const handleStaveProfileSync = (e: Event) => {
+      const customEvent = e as CustomEvent<{ profile: StaveProfileMode }>;
+      const nextProfile = customEvent.detail?.profile;
+      if (nextProfile && nextProfile !== staveProfileRef.current) {
+        setStaveProfile(nextProfile);
+        staveProfileRef.current = nextProfile;
+        if (apiRef.current) {
+          const at = (window as any).alphaTab;
+          if (apiRef.current.settings?.display) {
+            apiRef.current.settings.display.staveProfile = getAlphaTabStaveProfile(nextProfile, at);
+            try {
+              apiRef.current.updateSettings();
+              apiRef.current.render();
+            } catch (err) {
+              console.warn('AlphaTab staveProfile sync notice:', err);
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener(STAVE_PROFILE_CHANGE_EVENT, handleStaveProfileSync);
+    return () => window.removeEventListener(STAVE_PROFILE_CHANGE_EVENT, handleStaveProfileSync);
+  }, []);
 
   useEffect(() => {
     if (!alphaTex || !alphaTex.trim()) {
@@ -679,7 +768,8 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
             barsPerRow: initialLayout.barsPerRow,
             justifyLastSystem: initialLayout.justifyLastSystem,
             padding: [16, 16],
-            resources: themeRes
+            resources: themeRes,
+            staveProfile: getAlphaTabStaveProfile(staveProfileRef.current, alphaTab)
           },
           notation: {
             rhythmMode: 'hidden', // Hide rhythm stems for clean tablature
@@ -1258,19 +1348,63 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
           </h4>
         ) : <div />}
 
-        {/* Studio Paper vs Dark Stage View Toggle */}
-        <button
-          type="button"
-          onClick={toggleScoreTheme}
-          className={`text-xs px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 font-medium cursor-pointer shadow-xs ${
-            scoreTheme === 'light'
-              ? 'bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/30'
-              : 'bg-slate-900 hover:bg-slate-800 text-slate-200 border-slate-700 hover:border-slate-600'
-          }`}
-          title={scoreTheme === 'light' ? 'Switch to Dark Stage notation' : 'Switch to Clean Studio Paper notation'}
-        >
-          <span>{scoreTheme === 'light' ? '🌙 Dark Stage' : '📄 Studio Paper'}</span>
-        </button>
+        {/* Stave Profile and Theme Controls */}
+        <div className="flex items-center gap-2 flex-wrap justify-end">
+          {/* Stave Profile Selector: Tab | Dual | Staff */}
+          <div className="flex items-center gap-0.5 bg-slate-200/80 dark:bg-slate-900/80 p-0.5 rounded-lg border border-slate-300/80 dark:border-slate-800 text-xs shadow-xs">
+            <button
+              type="button"
+              onClick={() => updateStaveProfile('tab')}
+              className={`px-2 py-1 rounded-md font-medium transition-all cursor-pointer ${
+                staveProfile === 'tab'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Show Guitar Tablature only"
+            >
+              Tab
+            </button>
+            <button
+              type="button"
+              onClick={() => updateStaveProfile('score-tab')}
+              className={`px-2 py-1 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1 ${
+                staveProfile === 'score-tab'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Show Standard Music Staff and Guitar Tab together (Dual View)"
+            >
+              <span>Dual</span>
+              <span className="text-[10px] opacity-75 font-normal hidden sm:inline">(Staff+Tab)</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => updateStaveProfile('score')}
+              className={`px-2 py-1 rounded-md font-medium transition-all cursor-pointer ${
+                staveProfile === 'score'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Show Standard Music Staff only"
+            >
+              Staff
+            </button>
+          </div>
+
+          {/* Studio Paper vs Dark Stage View Toggle */}
+          <button
+            type="button"
+            onClick={toggleScoreTheme}
+            className={`text-xs px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 font-medium cursor-pointer shadow-xs ${
+              scoreTheme === 'light'
+                ? 'bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/30'
+                : 'bg-slate-900 hover:bg-slate-800 text-slate-200 border-slate-700 hover:border-slate-600'
+            }`}
+            title={scoreTheme === 'light' ? 'Switch to Dark Stage notation' : 'Switch to Clean Studio Paper notation'}
+          >
+            <span>{scoreTheme === 'light' ? '🌙 Dark Stage' : '📄 Studio Paper'}</span>
+          </button>
+        </div>
       </div>
 
       {/* Validation Results (hidden unless showValidation=true) */}
@@ -1334,7 +1468,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               ? 'bg-[#fcfbf9] border border-stone-300 score-theme-light shadow-md'
               : 'bg-slate-950/95 border border-slate-800 text-slate-100'
           }`}
-          style={{ minHeight: '140px', width: '100%', maxWidth: '100%' }}
+          style={{ minHeight: staveProfile === 'score-tab' ? '190px' : '140px', width: '100%', maxWidth: '100%' }}
         />
       </div>
 

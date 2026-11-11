@@ -1022,6 +1022,7 @@ function generateNavigationData(params: {
       {
         heading: 'More Theory',
         items: [
+          { label: 'How to Read Sheet Music', href: '/lessons/theory/reading-sheet-music', icon: '🎼' },
           { label: `Intervals (${intervals.length})`, href: '/lessons/theory/intervals', icon: '🎵' },
           { label: `Modes (${modes.length})`, href: '/lessons/theory/modes', icon: '🎭' },
           { label: `Chord Progressions (${progressions.length})`, href: '/lessons/theory/progressions', icon: '🔄' },
@@ -1032,6 +1033,7 @@ function generateNavigationData(params: {
     ],
     featured: [
       { label: 'All Theory Topics', href: '/lessons/theory' },
+      { label: 'How to Read Sheet Music for Guitar', href: '/lessons/theory/reading-sheet-music' },
       { label: 'Circle of Fifths Wheel', href: '/lessons/practice/circle-of-fifths' },
       { label: 'Scale & Mode Visualizer', href: '/lessons/theory/scales' },
     ],
@@ -1119,6 +1121,7 @@ function generateNavigationData(params: {
     ],
     featured: [
       { label: 'Play the Fretboard Note Hunt Game', href: '/lessons/practice/fretboard-trainer' },
+      { label: 'Interactive Sight-Reading Trainer', href: '/lessons/practice/sight-reading' },
       { label: 'Circle of Fifths Studio', href: '/lessons/practice/circle-of-fifths' },
       { label: 'Master CAGED Fretboard', href: '/lessons/practice/caged-system' },
       { label: 'Interactive Ear Trainer', href: '/lessons/practice/ear-trainer' },
