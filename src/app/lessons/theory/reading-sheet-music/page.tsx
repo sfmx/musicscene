@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import StaffFretboardExplorer from '@/components/Theory/StaffFretboardExplorer';
+import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 
 export const metadata: Metadata = {
   title: 'How to Read Sheet Music for Guitar | Standard Notation Guide | MusicScene',
@@ -285,7 +286,7 @@ export default function ReadingSheetMusicPage() {
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="border-b border-slate-300 dark:border-slate-700 bg-slate-100/70 dark:bg-slate-900/70 text-slate-800 dark:text-slate-200">
-                  <th className="p-3 font-bold">Note Symbol</th>
+                  <th className="p-3 font-bold">Note Symbol (AlphaTab)</th>
                   <th className="p-3 font-bold">Name (US / UK)</th>
                   <th className="p-3 font-bold">Duration (in 4/4 time)</th>
                   <th className="p-3 font-bold">Counting Syllable</th>
@@ -294,42 +295,143 @@ export default function ReadingSheetMusicPage() {
               </thead>
               <tbody className="divide-y divide-slate-200 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
                 <tr>
-                  <td className="p-3 text-lg font-bold">𝅝</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl sm:text-3xl text-amber-500 font-normal leading-none inline-block w-8 text-center select-none" aria-label="Whole Note">&#xE1D2;</span>
+                    </div>
+                  </td>
                   <td className="p-3 font-semibold">Whole Note (Semibreve)</td>
                   <td className="p-3">4 full beats</td>
                   <td className="p-3 font-mono">&quot;1 - 2 - 3 - 4&quot;</td>
-                  <td className="p-3">Box hanging under Line 4</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl text-emerald-500 font-normal leading-none select-none">&#xE4E3;</span>
+                      <span>Whole rest (hangs below Line 4)</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td className="p-3 text-lg font-bold">𝅗𝅥</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl sm:text-3xl text-amber-500 font-normal leading-none inline-block w-8 text-center select-none" aria-label="Half Note">&#xE1D3;</span>
+                    </div>
+                  </td>
                   <td className="p-3 font-semibold">Half Note (Minim)</td>
                   <td className="p-3">2 beats</td>
                   <td className="p-3 font-mono">&quot;1 - 2&quot; or &quot;3 - 4&quot;</td>
-                  <td className="p-3">Box sitting on Line 3</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl text-emerald-500 font-normal leading-none select-none">&#xE4E4;</span>
+                      <span>Half rest (sits above Line 3)</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td className="p-3 text-lg font-bold">𝅘𝅥</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl sm:text-3xl text-amber-500 font-normal leading-none inline-block w-8 text-center select-none" aria-label="Quarter Note">&#xE1D5;</span>
+                    </div>
+                  </td>
                   <td className="p-3 font-semibold">Quarter Note (Crotchet)</td>
                   <td className="p-3">1 beat</td>
                   <td className="p-3 font-mono">&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;</td>
-                  <td className="p-3">Squiggly lightning bolt symbol</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl text-emerald-500 font-normal leading-none select-none">&#xE4E5;</span>
+                      <span>Quarter rest (crotchet squiggle)</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td className="p-3 text-lg font-bold">𝅘𝅥𝅮</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl sm:text-3xl text-amber-500 font-normal leading-none inline-block w-8 text-center select-none" aria-label="Eighth Note">&#xE1D7;</span>
+                    </div>
+                  </td>
                   <td className="p-3 font-semibold">Eighth Note (Quaver)</td>
                   <td className="p-3">1/2 beat</td>
                   <td className="p-3 font-mono">&quot;1 &amp; 2 &amp; 3 &amp; 4 &amp;&quot;</td>
-                  <td className="p-3">Single flag rest (looks like a 7)</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl text-emerald-500 font-normal leading-none select-none">&#xE4E6;</span>
+                      <span>Eighth rest (single flag)</span>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td className="p-3 text-lg font-bold">𝅘𝅥𝅯</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl sm:text-3xl text-amber-500 font-normal leading-none inline-block w-8 text-center select-none" aria-label="Sixteenth Note">&#xE1D9;</span>
+                    </div>
+                  </td>
                   <td className="p-3 font-semibold">Sixteenth Note (Semiquaver)</td>
                   <td className="p-3">1/4 beat</td>
                   <td className="p-3 font-mono">&quot;1 e &amp; a 2 e &amp; a&quot;</td>
-                  <td className="p-3">Double flag rest</td>
+                  <td className="p-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bravura text-2xl text-emerald-500 font-normal leading-none select-none">&#xE4E7;</span>
+                      <span>Sixteenth rest (double flag)</span>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          {/* Interactive AlphaTab Rhythm & Rest Demonstrations */}
+          <div className="space-y-6 pt-2">
+            <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+                  <span className="font-bravura text-amber-500 text-xl leading-none">&#xE1D5;</span>
+                  <span>Interactive AlphaTab Notation: Note Durations in Action</span>
+                </h3>
+                <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/20 w-fit">
+                  60 BPM • Dual (Staff + Tab)
+                </span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Press <strong>Play</strong> below to hear each rhythm value counted with the metronome. Notice how 1 whole note (bar 1, 4 beats) subdivides into 2 half notes (bar 2, 2 beats each), 4 quarter notes (bar 3, 1 beat each), 8 eighth notes (bar 4, 1/2 beat each), and 16 sixteenth notes (bar 5, 1/4 beat each).
+              </p>
+              <AlphaTexRenderer
+                title="Rhythm Pyramid: Whole, Half, Quarter, 8th & 16th Notes"
+                tempo={60}
+                alphaTex={`\\tempo 60
+.
+0.3.1 |
+0.3.2 0.3.2 |
+0.3.4 0.3.4 0.3.4 0.3.4 |
+0.3.8 0.3.8 0.3.8 0.3.8 0.3.8 0.3.8 0.3.8 0.3.8 |
+0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 0.3.16 |
+`}
+              />
+            </div>
+
+            <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+                  <span className="font-bravura text-emerald-500 text-xl leading-none">&#xE4E5;</span>
+                  <span>Interactive AlphaTab Notation: Rests &amp; Silence in Action</span>
+                </h3>
+                <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/20 w-fit">
+                  Visual Rests on Standard 5-Line Staff
+                </span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Rests specify silence. Press <strong>Play</strong> to hear the metronome click during rests while notes pause. Observe how quarter rests, half rests, whole rests, and eighth rests render on the 5-line standard staff.
+              </p>
+              <AlphaTexRenderer
+                title="Rest Values: Quarter, Half, Whole & 8th Rests"
+                tempo={60}
+                alphaTex={`\\tempo 60
+.
+0.3.4 r.4 0.3.4 r.4 |
+0.3.2 r.2 |
+r.1 |
+0.3.8 r.8 0.3.8 r.8 0.3.8 r.8 0.3.8 r.8 |
+`}
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

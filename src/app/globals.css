@@ -54,6 +54,20 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* SMuFL Music Font (Bravura - standard music notation font used by AlphaTab) */
+@font-face {
+  font-family: 'Bravura';
+  src: url('/alphatab/font/Bravura.woff2') format('woff2'),
+       url('/alphatab/font/Bravura.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bravura {
+  font-family: 'Bravura', serif;
+}
+
 /* Ensure AlphaTab notation never causes parent grid/flex blowout */
 .alphatab-container {
   max-width: 100% !important;
