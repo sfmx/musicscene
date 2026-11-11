@@ -2,3 +2,4 @@ import SightReadingTrainerPage, { metadata } from '@/app/lessons/practice/sight-
 
 export { metadata };
 export default SightReadingTrainerPage;
+

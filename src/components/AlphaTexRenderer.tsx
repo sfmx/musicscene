@@ -245,15 +245,15 @@ const STAVE_PROFILE_STORAGE_KEY = 'alphatab_stave_profile';
 const STAVE_PROFILE_CHANGE_EVENT = 'alphatab-stave-profile-change';
 
 const getAlphaTabStaveProfile = (mode: StaveProfileMode, at: any) => {
-  if (!at?.StaveProfile) return mode === 'score' ? 2 : (mode === 'score-tab' ? 1 : 3);
+  if (!at?.StaveProfile) return mode === 'score' ? 2 : (mode === 'tab' ? 3 : 1);
   switch (mode) {
-    case 'score-tab':
-      return at.StaveProfile.ScoreTab;
+    case 'tab':
+      return at.StaveProfile.Tab;
     case 'score':
       return at.StaveProfile.Score;
-    case 'tab':
+    case 'score-tab':
     default:
-      return at.StaveProfile.Tab;
+      return at.StaveProfile.ScoreTab;
   }
 };
 
@@ -474,7 +474,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
   const [scoreTheme, setScoreTheme] = useState<'dark' | 'light'>('light');
   const scoreThemeRef = useRef<'dark' | 'light'>('light');
 
-  // Stave Profile Mode: 'tab' (Tablature Only), 'score-tab' (Dual Staff + Tab), 'score' (Standard Staff Only)
+  // Stave Profile Mode: 'score-tab' (Dual Staff + Tab - Default), 'tab' (Tablature Only), 'score' (Standard Staff Only)
   const [staveProfile, setStaveProfile] = useState<StaveProfileMode>(() => {
     if (typeof window !== 'undefined') {
       try {
@@ -486,7 +486,7 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
         // ignore
       }
     }
-    return 'tab';
+    return 'score-tab';
   });
   const staveProfileRef = useRef<StaveProfileMode>(staveProfile);
   useEffect(() => {
@@ -1350,8 +1350,21 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
 
         {/* Stave Profile and Theme Controls */}
         <div className="flex items-center gap-2 flex-wrap justify-end">
-          {/* Stave Profile Selector: Tab | Dual | Staff */}
+          {/* Stave Profile Selector: Dual (Default) | Tab | Staff */}
           <div className="flex items-center gap-0.5 bg-slate-200/80 dark:bg-slate-900/80 p-0.5 rounded-lg border border-slate-300/80 dark:border-slate-800 text-xs shadow-xs">
+            <button
+              type="button"
+              onClick={() => updateStaveProfile('score-tab')}
+              className={`px-2 py-1 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1 ${
+                staveProfile === 'score-tab'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+              }`}
+              title="Show Standard Music Staff and Guitar Tab together (Default Dual View)"
+            >
+              <span>Dual</span>
+              <span className="text-[10px] opacity-75 font-normal hidden sm:inline">(Staff+Tab)</span>
+            </button>
             <button
               type="button"
               onClick={() => updateStaveProfile('tab')}
@@ -1363,19 +1376,6 @@ const AlphaTexRenderer: React.FC<AlphaTexRendererProps> = ({
               title="Show Guitar Tablature only"
             >
               Tab
-            </button>
-            <button
-              type="button"
-              onClick={() => updateStaveProfile('score-tab')}
-              className={`px-2 py-1 rounded-md font-medium transition-all cursor-pointer flex items-center gap-1 ${
-                staveProfile === 'score-tab'
-                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-xs'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
-              }`}
-              title="Show Standard Music Staff and Guitar Tab together (Dual View)"
-            >
-              <span>Dual</span>
-              <span className="text-[10px] opacity-75 font-normal hidden sm:inline">(Staff+Tab)</span>
             </button>
             <button
               type="button"
