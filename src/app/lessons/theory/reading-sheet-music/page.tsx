@@ -58,16 +58,17 @@ export default function ReadingSheetMusicPage() {
         </section>
 
         {/* Quick Navigation Anchor Links */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {[
             { label: '1. Staff & Clef Anatomy', href: '#module-1-anatomy' },
             { label: '2. The Octave Secret', href: '#module-2-transposition' },
             { label: '3. Open Position Map', href: '#module-3-open-position' },
-            { label: '4. Rhythm & Note Values', href: '#module-4-rhythm' },
-            { label: '5. Key Signatures', href: '#module-5-key-signatures' },
-            { label: '6. Shape & Interval Reading', href: '#module-6-intervals' },
-            { label: '7. The 3 Golden Rules', href: '#module-7-golden-rules' },
-            { label: '8. Sight-Reading Trainer', href: '/practice/sight-reading' },
+            { label: '4. Notes Below Staff', href: '#module-4-ledger-lines' },
+            { label: '5. Rhythm & Note Values', href: '#module-5-rhythm' },
+            { label: '6. Key Signatures', href: '#module-6-key-signatures' },
+            { label: '7. Shape & Interval Reading', href: '#module-6-intervals' },
+            { label: '8. The 3 Golden Rules', href: '#module-7-golden-rules' },
+            { label: '9. Sight-Reading Trainer', href: '/practice/sight-reading' },
           ].map((item, idx) => (
             <a
               key={idx}
@@ -257,25 +258,259 @@ export default function ReadingSheetMusicPage() {
               <div className="space-y-2 text-xs border-t border-slate-100 dark:border-slate-800 pt-2">
                 <div className="font-semibold text-slate-800 dark:text-slate-200">5th String (A):</div>
                 <div className="pl-2 space-y-1 text-slate-600 dark:text-slate-400">
-                  <div>• <strong>Open A:</strong> 2nd ledger line below</div>
+                  <div>• <strong>Open A:</strong> 2nd ledger line below (line strikes through note)</div>
                   <div>• <strong>Fret 2 (B):</strong> Space below 1st ledger line</div>
                   <div>• <strong>Fret 3 (C):</strong> 1st ledger line (Middle C)</div>
                 </div>
                 <div className="font-semibold text-slate-800 dark:text-slate-200 pt-2">6th String (Low E):</div>
                 <div className="pl-2 space-y-1 text-slate-600 dark:text-slate-400">
-                  <div>• <strong>Open Low E:</strong> 3rd ledger line below</div>
-                  <div>• <strong>Fret 1 (F):</strong> Space below 2nd ledger line</div>
-                  <div>• <strong>Fret 3 (G):</strong> 2nd ledger line below</div>
+                  <div>• <strong>Open Low E:</strong> Space below 3rd ledger line (The Basement Note)</div>
+                  <div>• <strong>Fret 1 (F):</strong> 3rd ledger line below (line strikes through note)</div>
+                  <div>• <strong>Fret 3 (G):</strong> Space below 2nd ledger line</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Module 4: Rhythm & Note Values (Where Tab Fails) */}
-        <section id="module-4-rhythm" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+        {/* Module 4: Conquering Notes Below the Staff (The Sub-Staff Bass Ledger Realm) */}
+        <section id="module-4-ledger-lines" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
-            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 4</span>
+            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 4 • The Guitarist&apos;s #1 Hurdle</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            Notes Below the Staff (The Sub-Staff Bass Ledger Realm)
+          </h2>
+          <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+            Why do so many guitarists find reading standard notation difficult when looking at the bass strings? On piano, low notes are handed off to the left hand in bass clef. But guitar music keeps everything in treble clef. Because the guitar is tuned in fourths descending from E4 down to Low E2, <strong>Strings 4, 5, and 6 fall almost entirely below the 5 lines of the staff</strong>.
+          </p>
+
+          <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-xs sm:text-sm text-slate-700 dark:text-amber-200 space-y-2">
+            <span className="font-bold text-amber-500 flex items-center gap-1.5">
+              <span>⚠️ The Trap:</span>
+              <span>Never Count Downward Note by Note</span>
+            </span>
+            <p className="leading-relaxed">
+              When beginners see a note with two or three horizontal ledger lines under the staff, they instinctively freeze and count backward: <em>&quot;Line 1 is E... then D... then C... then B... then A&quot;</em>. Counting 5 notes in reverse takes several seconds, which completely derails your playing. Professional readers use <strong>Instant Anchors</strong> instead.
+            </p>
+          </div>
+
+          {/* The 3 Open String Anchors */}
+          <div className="space-y-3">
+            <h3 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+              <span className="text-amber-500 font-black">⚓</span>
+              <span>The 3 Open String Anchors (Your Sub-Staff GPS)</span>
+            </h3>
+            <p className="text-xs text-slate-600 dark:text-slate-400">
+              Commit these three landmark notes to memory immediately. Every other note below the staff is just one neighbor step away from an anchor:
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Anchor 0: Open D */}
+              <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-2 text-xs">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-sm text-slate-900 dark:text-white">Anchor 0: Open D</span>
+                  <span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono font-bold">0 Lines</span>
+                </div>
+                <div className="text-2xl font-bravura text-amber-500 leading-none py-1">&#xE1D5;</div>
+                <p className="text-slate-600 dark:text-slate-300">
+                  <strong>Appearance:</strong> Hangs directly underneath Line 1 of the staff like an apple under a branch. Zero ledger lines.
+                </p>
+                <div className="text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-1.5">
+                  Fretboard: <strong>4th String Open (D4)</strong>
+                </div>
+              </div>
+
+              {/* Anchor 2: Open A */}
+              <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-2 text-xs">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-sm text-slate-900 dark:text-white">Anchor 2: Open A</span>
+                  <span className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono font-bold">2 Lines</span>
+                </div>
+                <div className="text-2xl font-bravura text-emerald-500 leading-none py-1">&#xE1D5;</div>
+                <p className="text-slate-600 dark:text-slate-300">
+                  <strong>Appearance:</strong> Exactly two ledger lines. The second ledger line strikes directly through the notehead: <em>&quot;Double-Bar A&quot;</em>.
+                </p>
+                <div className="text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-1.5">
+                  Fretboard: <strong>5th String Open (A3)</strong>
+                </div>
+              </div>
+
+              {/* Anchor 3: Low E */}
+              <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-2 text-xs">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-sm text-slate-900 dark:text-white">Anchor 3: Low E</span>
+                  <span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-mono font-bold">3 Lines</span>
+                </div>
+                <div className="text-2xl font-bravura text-blue-500 leading-none py-1">&#xE1D5;</div>
+                <p className="text-slate-600 dark:text-slate-300">
+                  <strong>Appearance:</strong> Three ledger lines. The notehead hangs right underneath the third line: <em>&quot;The Basement Note&quot;</em>.
+                </p>
+                <div className="text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-1.5">
+                  Fretboard: <strong>6th String Open (E3)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* The Neighbor Reading Trick & Mnemonic Formulas */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-2 text-xs">
+              <span className="font-bold text-amber-500 text-sm">Line Notes Below the Staff: C - A - F</span>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                When a note below the staff has a line passing directly through its center:
+              </p>
+              <ul className="space-y-1.5 text-slate-700 dark:text-slate-200">
+                <li>• <strong>1 Line Strike:</strong> Middle C (5th string, fret 3)</li>
+                <li>• <strong>2 Lines Strike:</strong> Open A (5th string open)</li>
+                <li>• <strong>3 Lines Strike:</strong> Low F (6th string, fret 1)</li>
+              </ul>
+              <div className="p-2 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-300 font-semibold">
+                Mnemonic: <strong>C - A - F</strong> (&quot;<strong>C</strong>an <strong>A</strong>lways <strong>F</strong>ret&quot; or &quot;<strong>C</strong>afé&quot;)
+              </div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-2 text-xs">
+              <span className="font-bold text-cyan-500 text-sm">Space Notes Below the Staff: D - B - G - E</span>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                When a note below the staff hangs in the space beneath a line:
+              </p>
+              <ul className="space-y-1.5 text-slate-700 dark:text-slate-200">
+                <li>• <strong>Under Staff:</strong> Open D (4th string open, 0 lines)</li>
+                <li>• <strong>Under 1 Line:</strong> B (5th string, fret 2)</li>
+                <li>• <strong>Under 2 Lines:</strong> Low G (6th string, fret 3)</li>
+                <li>• <strong>Under 3 Lines:</strong> Low E (6th string open, the bottom note)</li>
+              </ul>
+              <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 font-semibold">
+                Mnemonic: <strong>D - B - G - E</strong> (&quot;<strong>D</strong>own <strong>B</strong>elow <strong>G</strong>uitar <strong>E</strong>nds&quot;)
+              </div>
+            </div>
+          </div>
+
+          {/* Sub-Staff Tab-to-Notation Reference Table */}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr className="border-b border-slate-300 dark:border-slate-700 bg-slate-100/70 dark:bg-slate-900/70 text-slate-800 dark:text-slate-200">
+                  <th className="p-3 font-bold">Guitar Tab</th>
+                  <th className="p-3 font-bold">Pitch Name</th>
+                  <th className="p-3 font-bold">Staff Position &amp; Ledger Lines</th>
+                  <th className="p-3 font-bold">Line vs Space</th>
+                  <th className="p-3 font-bold">Instant Recognition Rule</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-800 text-slate-700 dark:text-slate-300 font-sans">
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 6 • Fret 0</td>
+                  <td className="p-3 font-bold">Low E (E3)</td>
+                  <td className="p-3">Hangs below 3rd ledger line</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold">Space</span></td>
+                  <td className="p-3 font-medium">Anchor: The Basement Note (Lowest open string)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 6 • Fret 1</td>
+                  <td className="p-3 font-bold">Low F (F3)</td>
+                  <td className="p-3">3rd ledger line passes through note</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold">Line</span></td>
+                  <td className="p-3 font-medium">1 half-step above Low E (3rd line strike in C-A-F)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 6 • Fret 3</td>
+                  <td className="p-3 font-bold">Low G (G3)</td>
+                  <td className="p-3">Hangs below 2nd ledger line</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold">Space</span></td>
+                  <td className="p-3 font-medium">1 whole-step below Open A (space under 2 lines)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 5 • Fret 0</td>
+                  <td className="p-3 font-bold">Open A (A3)</td>
+                  <td className="p-3">2nd ledger line passes through note</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold">Line</span></td>
+                  <td className="p-3 font-medium">Anchor: Double-Line A (Center of 2 ledger lines)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 5 • Fret 2</td>
+                  <td className="p-3 font-bold">B (B3)</td>
+                  <td className="p-3">Hangs below 1st ledger line</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold">Space</span></td>
+                  <td className="p-3 font-medium">1 whole-step above Open A (hugs underneath Middle C)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 5 • Fret 3</td>
+                  <td className="p-3 font-bold">Middle C (C4)</td>
+                  <td className="p-3">1st ledger line passes through note</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold">Line</span></td>
+                  <td className="p-3 font-medium">Anchor: The Single Strike Line (Guitar Middle C)</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-mono font-bold text-amber-600 dark:text-amber-400">String 4 • Fret 0</td>
+                  <td className="p-3 font-bold">Open D (D4)</td>
+                  <td className="p-3">Hangs directly underneath Line 1</td>
+                  <td className="p-3"><span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold">Space</span></td>
+                  <td className="p-3 font-medium">Anchor: 0 Ledger Lines (Hangs below main staff)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Interactive AlphaTab Practice Scores for Sub-Staff Notes */}
+          <div className="space-y-6 pt-2">
+            <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+                  <span className="text-amber-500 font-black">▶</span>
+                  <span>Interactive Sub-Staff Walk: Climb from Low E to the Staff</span>
+                </h3>
+                <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/20 w-fit">
+                  60 BPM • Dual (Staff + Tab)
+                </span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Press <strong>Play</strong> to hear the notes walk up from 3 ledger lines below the staff (Low E, F, G, A, B, C, D) into Line 1 (E). Notice how the tablature frets on strings 6, 5, and 4 line up with the ledger lines.
+              </p>
+              <AlphaTexRenderer
+                title="Sub-Staff Scale Walk (Low E3 to Staff Line 1 E4)"
+                tempo={60}
+                alphaTex={`\\tempo 60
+.
+0.6.2 1.6.2 |
+3.6.2 0.5.2 |
+2.5.2 3.5.2 |
+0.4.2 2.4.2 |
+`}
+              />
+            </div>
+
+            <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white flex items-center gap-2">
+                  <span className="text-amber-500 font-black">🎸</span>
+                  <span>Sub-Staff Riff: Heavy Groove on Strings 5 &amp; 6</span>
+                </h3>
+                <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/20 w-fit">
+                  Real Musical Riff • Low Strings
+                </span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Connect the fret numbers to the ledger lines with real music. This rock groove plays entirely on Strings 5 &amp; 6, using Low E (0.6), G (3.6), A (0.5), and C (3.5).
+              </p>
+              <AlphaTexRenderer
+                title="Sub-Staff Rock Riff on Strings 5 & 6"
+                tempo={80}
+                alphaTex={`\\tempo 80
+.
+0.6.4 0.6.8 3.6.8 0.6.4 3.5.4 |
+0.6.4 0.6.8 3.6.8 5.6.4 3.6.4 |
+`}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Module 5: Rhythm & Note Values (Where Tab Fails) */}
+        <section id="module-5-rhythm" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex items-center gap-2">
+            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 5</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">Rhythm &amp; Note Values (Where Tab Completely Fails)</h2>
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -450,10 +685,10 @@ r.1 |
           </div>
         </section>
 
-        {/* Module 5: Key Signatures & Accidentals */}
-        <section id="module-5-key-signatures" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+        {/* Module 6: Key Signatures & Accidentals */}
+        <section id="module-6-key-signatures" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
-            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 5</span>
+            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 6</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">Key Signatures &amp; Accidentals</h2>
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -491,10 +726,10 @@ r.1 |
           </div>
         </section>
 
-        {/* Module 6: Reading Intervals & Shapes (Fluent Sight-Reading) */}
-        <section id="module-6-intervals" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+        {/* Module 7: Reading Intervals & Shapes (Fluent Sight-Reading) */}
+        <section id="module-7-intervals" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
-            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 6</span>
+            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 7</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">How Fluent Musicians Actually Read (Shape &amp; Interval Recognition)</h2>
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -534,10 +769,10 @@ r.1 |
           </div>
         </section>
 
-        {/* Module 7: The 3 Golden Rules of Guitar Sight-Reading */}
-        <section id="module-7-golden-rules" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+        {/* Module 8: The 3 Golden Rules of Guitar Sight-Reading */}
+        <section id="module-8-golden-rules" className="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-800">
           <div className="flex items-center gap-2">
-            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 7</span>
+            <span className="text-amber-500 font-bold text-sm tracking-wider uppercase">Module 8</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">The 3 Golden Rules of Guitar Sight-Reading</h2>
 

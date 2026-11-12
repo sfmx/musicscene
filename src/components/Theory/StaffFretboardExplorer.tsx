@@ -27,13 +27,13 @@ const DIATONIC_STEPS: Record<string, number> = {
 
 // Standard reference notes in guitar written register (sounding 1 octave lower)
 export const LANDMARK_NOTES: StaffNote[] = [
-  { name: 'E3', naturalName: 'E', accidental: 'natural', octave: 3, step: -7, soundingMidi: 40, description: '3rd Ledger Line Below (String 6 Open - Lowest Guitar Note)', mnemonic: 'Guitar Low E Baseline' },
-  { name: 'F3', naturalName: 'F', accidental: 'natural', octave: 3, step: -6, soundingMidi: 41, description: 'Space Below 2nd Ledger Line (String 6, Fret 1)', mnemonic: 'Bass Register' },
-  { name: 'G3', naturalName: 'G', accidental: 'natural', octave: 3, step: -5, soundingMidi: 43, description: '2nd Ledger Line Below (String 6, Fret 3)', mnemonic: 'Bass Register' },
-  { name: 'A3', naturalName: 'A', accidental: 'natural', octave: 3, step: -4, soundingMidi: 45, description: '2nd Ledger Line Below (String 5 Open)', mnemonic: 'Bass Register' },
-  { name: 'B3', naturalName: 'B', accidental: 'natural', octave: 3, step: -3, soundingMidi: 47, description: 'Space Below 1st Ledger Line (String 5, Fret 2)', mnemonic: 'Bass Register' },
-  { name: 'C4', naturalName: 'C', accidental: 'natural', octave: 4, step: -2, soundingMidi: 48, description: '1st Ledger Line Below Staff (Middle C on Guitar)', mnemonic: 'The Middle C Anchor' },
-  { name: 'D4', naturalName: 'D', accidental: 'natural', octave: 4, step: -1, soundingMidi: 50, description: 'Space Hanging Below Line 1 (String 4 Open)', mnemonic: 'Below Line 1' },
+  { name: 'E3', naturalName: 'E', accidental: 'natural', octave: 3, step: -7, soundingMidi: 40, description: 'Space Below 3rd Ledger Line (String 6 Open - Lowest Guitar Note)', mnemonic: 'Anchor 3: Low E (Hangs Below 3 Lines)' },
+  { name: 'F3', naturalName: 'F', accidental: 'natural', octave: 3, step: -6, soundingMidi: 41, description: '3rd Ledger Line Below (String 6, Fret 1)', mnemonic: 'Line Note: 3rd Ledger Line (C-A-F)' },
+  { name: 'G3', naturalName: 'G', accidental: 'natural', octave: 3, step: -5, soundingMidi: 43, description: 'Space Below 2nd Ledger Line (String 6, Fret 3)', mnemonic: 'Space Note: Below 2nd Ledger Line' },
+  { name: 'A3', naturalName: 'A', accidental: 'natural', octave: 3, step: -4, soundingMidi: 45, description: '2nd Ledger Line Below (String 5 Open)', mnemonic: 'Anchor 2: Double-Line A (Open 5th String)' },
+  { name: 'B3', naturalName: 'B', accidental: 'natural', octave: 3, step: -3, soundingMidi: 47, description: 'Space Below 1st Ledger Line (String 5, Fret 2)', mnemonic: 'Space Note: Below 1st Ledger Line' },
+  { name: 'C4', naturalName: 'C', accidental: 'natural', octave: 4, step: -2, soundingMidi: 48, description: '1st Ledger Line Below Staff (Middle C on Guitar)', mnemonic: 'Anchor 1: Middle C (1 Line Strike)' },
+  { name: 'D4', naturalName: 'D', accidental: 'natural', octave: 4, step: -1, soundingMidi: 50, description: 'Space Hanging Below Line 1 (String 4 Open)', mnemonic: 'Anchor 0: Open D (0 Lines, Under Staff)' },
   { name: 'E4', naturalName: 'E', accidental: 'natural', octave: 4, step: 0, soundingMidi: 52, description: 'Line 1: Bottom Line of Staff (String 4, Fret 2)', mnemonic: 'Every (Line 1)' },
   { name: 'F4', naturalName: 'F', accidental: 'natural', octave: 4, step: 1, soundingMidi: 53, description: 'Space 1: Bottom Space (String 4, Fret 3)', mnemonic: 'F (in FACE)' },
   { name: 'G4', naturalName: 'G', accidental: 'natural', octave: 4, step: 2, soundingMidi: 55, description: 'Line 2: Treble Clef Target Line (String 3 Open)', mnemonic: 'Good (Line 2 - G Clef)' },
@@ -155,14 +155,17 @@ export default function StaffFretboardExplorer() {
   // Determine ledger lines needed
   const ledgerLines: number[] = [];
   if (currentNote.step <= -2) {
-    // Below staff: step -2 (C4), step -4 (A3), step -6 (F3), step -8
-    for (let s = -2; s >= currentNote.step - 1; s -= 2) {
+    // Below staff: line notes at -2 (C4), -4 (A3), -6 (F3).
+    // Space notes hang directly below their parent line (-3 = B3 under -2, -5 = G3 under -4, -7 = E3 under -6).
+    const targetLine = currentNote.step % 2 === 0 ? currentNote.step : currentNote.step + 1;
+    for (let s = -2; s >= targetLine; s -= 2) {
       ledgerLines.push(line1Y - (s * (lineSpacing / 2)));
     }
   } else if (currentNote.step >= 10) {
-    // Above staff: step 10 (A5), step 12 (C6)
-    const line5Y = line1Y - (8 * (lineSpacing / 2));
-    for (let s = 10; s <= currentNote.step + 1; s += 2) {
+    // Above staff: line notes at 10 (A5), 12 (C6).
+    // Space notes sit directly on top of their parent line (11 = B5 sits on 10).
+    const targetLineAbove = currentNote.step % 2 === 0 ? currentNote.step : currentNote.step - 1;
+    for (let s = 10; s <= targetLineAbove; s += 2) {
       ledgerLines.push(line1Y - (s * (lineSpacing / 2)));
     }
   }
@@ -214,8 +217,70 @@ export default function StaffFretboardExplorer() {
           >
             Open Position Guide
           </button>
+          <button
+            type="button"
+            onClick={() => {
+              setActiveTab('strings-5-6');
+              setSelectedNoteIndex(0); // E3 Low E
+              setActiveAccidental('natural');
+              playGuitarNote(0, LANDMARK_NOTES[0].soundingMidi - GUITAR_OPEN_STRINGS_MIDI[0], { volume: 0.45, duration: 1.5 });
+            }}
+            className={`px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer ${
+              activeTab === 'strings-5-6'
+                ? 'bg-amber-500 text-slate-950 font-bold shadow-xs'
+                : 'text-slate-300 hover:text-white'
+            }`}
+          >
+            Bass Ledger Lines (Strings 4-6)
+          </button>
         </div>
       </div>
+
+      {/* Bass Ledger Lines Anchor Banner (Shown when activeTab === 'strings-5-6') */}
+      {activeTab === 'strings-5-6' && (
+        <div className="mb-4 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-xs space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="font-bold text-amber-300 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span>Sub-Staff Ledger Realm: The 3 Open String Anchors</span>
+            </div>
+            <span className="text-[11px] text-amber-200/80">
+              Rule: 0 Lines = Open D | 2 Lines = Open A | 3 Lines = Low E
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2">
+            {[
+              { idx: 0, label: 'Low E (E3)', sub: '3 Lines (Hangs)', anchor: true },
+              { idx: 1, label: 'F3', sub: '3rd Line Strike', anchor: false },
+              { idx: 2, label: 'G3', sub: 'Below 2nd Line', anchor: false },
+              { idx: 3, label: 'Open A (A3)', sub: '2 Lines Strike', anchor: true },
+              { idx: 4, label: 'B3', sub: 'Below 1st Line', anchor: false },
+              { idx: 5, label: 'Middle C (C4)', sub: '1 Line Strike', anchor: true },
+              { idx: 6, label: 'Open D (D4)', sub: '0 Lines (Under Staff)', anchor: true },
+            ].map(item => (
+              <button
+                key={item.idx}
+                type="button"
+                onClick={() => {
+                  setSelectedNoteIndex(item.idx);
+                  setActiveAccidental('natural');
+                  playGuitarNote(0, LANDMARK_NOTES[item.idx].soundingMidi - GUITAR_OPEN_STRINGS_MIDI[0], { volume: 0.45, duration: 1.5 });
+                }}
+                className={`p-2 rounded-xl text-center border transition-all cursor-pointer ${
+                  selectedNoteIndex === item.idx
+                    ? 'bg-amber-500 text-slate-950 font-bold border-amber-400 shadow-md scale-102'
+                    : item.anchor
+                      ? 'bg-slate-800/90 text-amber-300 border-amber-500/40 hover:bg-slate-800'
+                      : 'bg-slate-900/60 text-slate-300 border-slate-700/80 hover:bg-slate-800'
+                }`}
+              >
+                <div className="font-bold text-xs">{item.label}</div>
+                <div className="text-[10px] opacity-80">{item.sub}</div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Main Grid: Staff Display (Left) + Note Intel & Fretboard (Right) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">

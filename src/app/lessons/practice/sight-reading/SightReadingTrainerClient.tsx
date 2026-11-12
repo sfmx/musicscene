@@ -53,8 +53,8 @@ export default function SightReadingTrainerClient() {
         // Notes on strings 3 & 4 in open pos: D4, E4, F4, G4, A4
         return LANDMARK_NOTES.filter(n => n.step >= -1 && n.step <= 3);
       case 'strings-5-6':
-        // Notes on strings 5 & 6 (ledger lines): E3, F3, G3, A3, B3, C4
-        return LANDMARK_NOTES.filter(n => n.step >= -7 && n.step <= -2);
+        // Notes on strings 4, 5 & 6 (Sub-staff ledger lines): E3, F3, G3, A3, B3, C4, D4
+        return LANDMARK_NOTES.filter(n => n.step >= -7 && n.step <= -1);
       case 'accidentals':
         return ACCIDENTAL_NOTES;
       case 'full-neck':
@@ -181,11 +181,13 @@ export default function SightReadingTrainerClient() {
   // Ledger lines
   const ledgerLines: number[] = [];
   if (targetNote.step <= -2) {
-    for (let s = -2; s >= targetNote.step - 1; s -= 2) {
+    const targetLine = targetNote.step % 2 === 0 ? targetNote.step : targetNote.step + 1;
+    for (let s = -2; s >= targetLine; s -= 2) {
       ledgerLines.push(line1Y - (s * (lineSpacing / 2)));
     }
   } else if (targetNote.step >= 10) {
-    for (let s = 10; s <= targetNote.step + 1; s += 2) {
+    const targetLineAbove = targetNote.step % 2 === 0 ? targetNote.step : targetNote.step - 1;
+    for (let s = 10; s <= targetLineAbove; s += 2) {
       ledgerLines.push(line1Y - (s * (lineSpacing / 2)));
     }
   }
@@ -257,7 +259,7 @@ export default function SightReadingTrainerClient() {
             { id: 'open-position', label: '1. Open Position (Frets 0-3)', badge: 'Core' },
             { id: 'strings-1-2', label: '2. Strings 1 & 2 (High E & B)', badge: 'Treble' },
             { id: 'strings-3-4', label: '3. Strings 3 & 4 (G & D)', badge: 'Mid' },
-            { id: 'strings-5-6', label: '4. Strings 5 & 6 (A & Low E)', badge: 'Ledger Lines' },
+            { id: 'strings-5-6', label: '4. Sub-Staff Ledger Lines (Strings 4-6)', badge: 'Bass Focus' },
             { id: 'accidentals', label: '5. Sharps & Flats', badge: 'Accidentals' },
             { id: 'full-neck', label: '6. Full Fretboard (Frets 0-12)', badge: 'Master' },
           ].map(lvl => (
@@ -385,6 +387,24 @@ export default function SightReadingTrainerClient() {
             )}
           </svg>
         </div>
+
+        {/* Sub-Staff Ledger Clue (When testing notes below the staff) */}
+        {targetNote.step <= -1 && (
+          <div className="flex items-center justify-center -mt-2">
+            <span className="px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-xs font-semibold flex items-center gap-1.5 shadow-xs">
+              <span>💡 Ledger Clue:</span>
+              <span className="font-normal text-slate-700 dark:text-slate-300">
+                {targetNote.step === -1 && 'Hangs directly below Staff Line 1 (0 Ledger Lines = Open D)'}
+                {targetNote.step === -2 && '1 Ledger Line Strike (Middle C • String 5, Fret 3)'}
+                {targetNote.step === -3 && 'Hangs below 1st Ledger Line (B • String 5, Fret 2)'}
+                {targetNote.step === -4 && '2 Ledger Lines Strike (Open 5th String A)'}
+                {targetNote.step === -5 && 'Hangs below 2nd Ledger Line (G • String 6, Fret 3)'}
+                {targetNote.step === -6 && '3rd Ledger Line Strike (F • String 6, Fret 1)'}
+                {targetNote.step === -7 && 'Hangs below 3rd Ledger Line (Lowest Guitar Note = Low E, String 6 Open)'}
+              </span>
+            </span>
+          </div>
+        )}
 
         {/* Input Option 1: Note Letter Buttons (A to G) */}
         {inputMode === 'letters' && (
