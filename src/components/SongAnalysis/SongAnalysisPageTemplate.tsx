@@ -13,6 +13,7 @@ import ScaleVisualization from './ScaleVisualization';
 import SectionNavigation from './SectionNavigation';
 import AlphaTexRenderer from '@/components/AlphaTexRenderer';
 import PracticeRoutineChecklist from '@/components/Practice/PracticeRoutineChecklist';
+import SaveRiffButton from '@/components/Practice/SaveRiffButton';
 import { getAllSongs } from '@/lib/songList';
 
 import { getDifficultyColor } from '@/utils/theme';
@@ -277,7 +278,18 @@ export default function SongAnalysisPageTemplate({ songSlug, displayName }: Song
                           <p className="text-xs font-bold text-amber-600 dark:text-amber-400 mt-0.5">{section.exerciseLabel}</p>
                         )}
                       </div>
-                      <span className="text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-950 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-800">{section.timeStamp}</span>
+                      <div className="flex items-center gap-2">
+                        <SaveRiffButton
+                          songSlug={songSlug}
+                          songTitle={displayName}
+                          artist={songData.songInfo?.artist || ''}
+                          difficulty={songData.difficulty?.overall || 'Intermediate'}
+                          key={songData.songInfo?.key || ''}
+                          tempo={songData.songInfo?.tempo}
+                          riffName={section.name}
+                        />
+                        <span className="text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-950 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-800">{section.timeStamp}</span>
+                      </div>
                     </div>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mb-4">{section.description}</p>
                     <AlphaTexRenderer

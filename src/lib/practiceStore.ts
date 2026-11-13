@@ -101,6 +101,7 @@ export const practiceStore = {
     key: string;
     tempo?: string;
     targetBpm?: number;
+    notes?: string;
   }): void {
     const songs = this.getSongs();
     const existingIndex = songs.findIndex(s => s.slug === song.slug);
@@ -295,6 +296,7 @@ export function usePracticeStore() {
     songs,
     stats,
     isSaved: useCallback((slug: string) => (mounted ? songs.some(s => s.slug === slug) : false), [mounted, songs]),
+    saveSong: practiceStore.saveSong.bind(practiceStore),
     toggleSaveSong: practiceStore.toggleSaveSong.bind(practiceStore),
     updateSongStatus: practiceStore.updateSongStatus.bind(practiceStore),
     removeSong: practiceStore.removeSong.bind(practiceStore),
