@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { getGuitarAudioContext, playGuitarFrequency } from '@/lib/guitarAudio';
+import { autoCorrelate, NOTE_NAMES } from '@/lib/pitchDetection';
 
 export interface TunedString {
   stringNumber: number; // 6 to 1 (6 = lowest string)
@@ -119,86 +120,6 @@ export const GUITAR_TUNINGS: GuitarTuning[] = [
     ],
   },
 ];
-
-const NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-
-/**
- * Autocorrelation algorithm with quadratic interpolation
- * Estimates fundamental frequency (f0) of audio signal in buffer.
- */
-function autoCorrelate(buffer: Float32Array, sampleRate: number): number {
-  const size = buffer.length;
-  let rms = 0;
-
-  for (let i = 0; i < size; i++) {
-    const val = buffer[i];
-    rms += val * val;
-  }
-  rms = Math.sqrt(rms / size);
-
-  // Signal is too quiet
-  if (rms < 0.012) {
-    return -1;
-  }
-
-  // Clip buffer to focus on main signal
-  let r1 = 0;
-  let r2 = size - 1;
-  const thres = 0.2;
-  for (let i = 0; i < size / 2; i++) {
-    if (Math.abs(buffer[i]) < thres) {
-      r1 = i;
-      break;
-    }
-  }
-  for (let i = 1; i < size / 2; i++) {
-    if (Math.abs(buffer[size - i]) < thres) {
-      r2 = size - i;
-      break;
-    }
-  }
-
-  const trimmed = buffer.subarray(r1, r2);
-  const trimmedSize = trimmed.length;
-
-  // Correlation buffer
-  const c = new Float32Array(trimmedSize);
-  for (let i = 0; i < trimmedSize; i++) {
-    for (let j = 0; j < trimmedSize - i; j++) {
-      c[i] += trimmed[j] * trimmed[j + i];
-    }
-  }
-
-  // Find first peak after first trough
-  let d = 0;
-  while (c[d] > c[d + 1]) {
-    d++;
-    if (d >= trimmedSize - 1) return -1;
-  }
-
-  let maxval = -1;
-  let maxpos = -1;
-  for (let i = d; i < trimmedSize; i++) {
-    if (c[i] > maxval) {
-      maxval = c[i];
-      maxpos = i;
-    }
-  }
-
-  let T0 = maxpos;
-
-  // Parabolic interpolation for sub-sample accuracy
-  const x1 = c[T0 - 1];
-  const x2 = c[T0];
-  const x3 = c[T0 + 1];
-  const a = (x1 + x3 - 2 * x2) / 2;
-  const b = (x3 - x1) / 2;
-  if (a) {
-    T0 = T0 - b / (2 * a);
-  }
-
-  return sampleRate / T0;
-}
 
 export default function GuitarTuner() {
   const [isListening, setIsListening] = useState<boolean>(false);

@@ -4,6 +4,14 @@ import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import Link from 'next/link';
 import { playGuitarNote, GUITAR_OPEN_STRINGS_MIDI } from '@/lib/guitarAudio';
 import { LANDMARK_NOTES, StaffNote } from '@/components/Theory/StaffFretboardExplorer';
+import {
+  autoCorrelate,
+  frequencyToPitch,
+  midiToPitch,
+  pitchClassMatch,
+  exactPitchMatch,
+  PitchResult,
+} from '@/lib/pitchDetection';
 
 export type TrainerLevel =
   | 'open-position'
@@ -41,7 +49,41 @@ export default function SightReadingTrainerClient() {
   const [lastResult, setLastResult] = useState<'correct' | 'wrong' | null>(null);
   const [revealedHint, setRevealedHint] = useState<string | null>(null);
   const [soundEnabled, setSoundEnabled] = useState(true);
-  const [inputMode, setInputMode] = useState<'letters' | 'fretboard'>('letters');
+  const [inputMode, setInputMode] = useState<'letters' | 'fretboard' | 'mic'>('letters');
+
+  // Microphone real-instrument practice state
+  const [isMicListening, setIsMicListening] = useState(false);
+  const [micPermissionError, setMicPermissionError] = useState<string | null>(null);
+  const [micLevel, setMicLevel] = useState(0); // 0 to 100 for VU meter
+  const [detectedPitch, setDetectedPitch] = useState<PitchResult | null>(null);
+  const [octaveMode, setOctaveMode] = useState<'strict' | 'any'>('strict');
+  const [micSensitivity, setMicSensitivity] = useState<'normal' | 'sensitive' | 'quiet'>('normal');
+  const [holdProgress, setHoldProgress] = useState(0); // 0 to 100% confirmation bar
+  const [micFeedbackMsg, setMicFeedbackMsg] = useState<string | null>(null);
+
+  // Audio stream refs
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+  const mediaStreamRef = useRef<MediaStream | null>(null);
+  const rafIdRef = useRef<number | null>(null);
+  const consecutiveMatchesRef = useRef<number>(0);
+  const cooldownUntilRef = useRef<number>(0);
+  const targetNoteRef = useRef<StaffNote>(targetNote);
+  const octaveModeRef = useRef<'strict' | 'any'>(octaveMode);
+  const micSensitivityRef = useRef<'normal' | 'sensitive' | 'quiet'>(micSensitivity);
+
+  // Keep refs in sync with state for requestAnimationFrame loop
+  useEffect(() => {
+    targetNoteRef.current = targetNote;
+  }, [targetNote]);
+
+  useEffect(() => {
+    octaveModeRef.current = octaveMode;
+  }, [octaveMode]);
+
+  useEffect(() => {
+    micSensitivityRef.current = micSensitivity;
+  }, [micSensitivity]);
 
   // Filter available target notes by selected level
   const activePool = useMemo<StaffNote[]>(() => {
@@ -78,6 +120,11 @@ export default function SightReadingTrainerClient() {
     setTargetNote(next);
     setLastResult(null);
     setRevealedHint(null);
+    setHoldProgress(0);
+    setMicFeedbackMsg(null);
+    consecutiveMatchesRef.current = 0;
+    // Set a 600ms cooldown so the ringing guitar note doesn't instantly match the new note
+    cooldownUntilRef.current = Date.now() + 650;
   }, [activePool, targetNote.name]);
 
   // Handle Level Change
@@ -87,6 +134,9 @@ export default function SightReadingTrainerClient() {
     setScore({ correct: 0, total: 0 });
     setLastResult(null);
     setRevealedHint(null);
+    setHoldProgress(0);
+    setMicFeedbackMsg(null);
+    consecutiveMatchesRef.current = 0;
   };
 
   // Pick first note when level changes
@@ -107,21 +157,28 @@ export default function SightReadingTrainerClient() {
     }
   }, [soundEnabled]);
 
+  // Trigger correct answer flow
+  const handleSuccess = useCallback((note: StaffNote) => {
+    playTargetSound(note);
+    setLastResult('correct');
+    setScore(prev => ({ correct: prev.correct + 1, total: prev.total + 1 }));
+    setCurrentStreak(prev => {
+      const next = prev + 1;
+      setBestStreak(b => Math.max(b, next));
+      return next;
+    });
+
+    setTimeout(() => {
+      pickNewTarget();
+    }, 700);
+  }, [playTargetSound, pickNewTarget]);
+
   // Check Letter Answer (A, B, C, D, E, F, G)
   const handleLetterGuess = (letter: string) => {
     const isCorrect = targetNote.naturalName.toUpperCase() === letter.toUpperCase();
 
     if (isCorrect) {
-      playTargetSound(targetNote);
-      setLastResult('correct');
-      setScore(prev => ({ correct: prev.correct + 1, total: prev.total + 1 }));
-      const newStreak = currentStreak + 1;
-      setCurrentStreak(newStreak);
-      if (newStreak > bestStreak) setBestStreak(newStreak);
-
-      setTimeout(() => {
-        pickNewTarget();
-      }, 700);
+      handleSuccess(targetNote);
     } else {
       setLastResult('wrong');
       setScore(prev => ({ ...prev, total: prev.total + 1 }));
@@ -139,21 +196,172 @@ export default function SightReadingTrainerClient() {
     }
 
     if (isCorrect) {
-      setLastResult('correct');
-      setScore(prev => ({ correct: prev.correct + 1, total: prev.total + 1 }));
-      const newStreak = currentStreak + 1;
-      setCurrentStreak(newStreak);
-      if (newStreak > bestStreak) setBestStreak(newStreak);
-
-      setTimeout(() => {
-        pickNewTarget();
-      }, 700);
+      handleSuccess(targetNote);
     } else {
       setLastResult('wrong');
       setScore(prev => ({ ...prev, total: prev.total + 1 }));
       setCurrentStreak(0);
     }
   };
+
+  // Stop microphone stream safely
+  const stopMicrophone = useCallback(() => {
+    if (rafIdRef.current) {
+      cancelAnimationFrame(rafIdRef.current);
+      rafIdRef.current = null;
+    }
+    if (mediaStreamRef.current) {
+      mediaStreamRef.current.getTracks().forEach(track => track.stop());
+      mediaStreamRef.current = null;
+    }
+    if (audioContextRef.current) {
+      audioContextRef.current.close().catch(() => {});
+      audioContextRef.current = null;
+    }
+    analyserRef.current = null;
+    setIsMicListening(false);
+    setDetectedPitch(null);
+    setMicLevel(0);
+    setHoldProgress(0);
+    consecutiveMatchesRef.current = 0;
+  }, []);
+
+  // Continuous microphone pitch detection loop
+  const runMicPitchLoop = useCallback(() => {
+    const analyser = analyserRef.current;
+    const ctx = audioContextRef.current;
+    if (!analyser || !ctx) return;
+
+    const buffer = new Float32Array(analyser.fftSize);
+
+    const updateFrame = () => {
+      if (!analyserRef.current || !audioContextRef.current) return;
+
+      analyserRef.current.getFloatTimeDomainData(buffer);
+
+      // 1. Calculate RMS volume for live VU meter
+      let sumSq = 0;
+      for (let i = 0; i < buffer.length; i++) {
+        sumSq += buffer[i] * buffer[i];
+      }
+      const rms = Math.sqrt(sumSq / buffer.length);
+      const normalizedLevel = Math.min(100, Math.round(rms * 450));
+      setMicLevel(normalizedLevel);
+
+      // Sensitivity threshold
+      let minRms = 0.012;
+      if (micSensitivityRef.current === 'sensitive') minRms = 0.007;
+      if (micSensitivityRef.current === 'quiet') minRms = 0.022;
+
+      const freq = autoCorrelate(buffer, ctx.sampleRate, minRms);
+
+      // Guitar frequencies typically range from 60 Hz to 1200 Hz
+      if (freq > 60 && freq < 1200) {
+        const pitch = frequencyToPitch(freq);
+        setDetectedPitch(pitch);
+
+        const currentTarget = targetNoteRef.current;
+        const now = Date.now();
+
+        // Check if during cooldown window
+        if (now >= cooldownUntilRef.current) {
+          const isExact = exactPitchMatch(pitch.roundedMidi, currentTarget.soundingMidi);
+          const isPitchClass = pitchClassMatch(pitch.roundedMidi, currentTarget.soundingMidi);
+
+          const matches = octaveModeRef.current === 'strict' ? isExact : isPitchClass;
+
+          if (matches) {
+            consecutiveMatchesRef.current += 1;
+            // Fill hold progress bar (reaches 100% after ~8 stable frames, roughly 130-200ms)
+            const progress = Math.min(100, Math.round((consecutiveMatchesRef.current / 8) * 100));
+            setHoldProgress(progress);
+
+            if (consecutiveMatchesRef.current >= 8) {
+              // Confirmed pitch strike!
+              setHoldProgress(100);
+              setMicFeedbackMsg(`✓ Perfect Note! Recognized ${pitch.scientificName}`);
+              handleSuccess(currentTarget);
+              consecutiveMatchesRef.current = 0;
+            }
+          } else {
+            // Decay match progress if player hits wrong note or pitch wanders
+            consecutiveMatchesRef.current = Math.max(0, consecutiveMatchesRef.current - 1);
+            setHoldProgress(Math.min(100, Math.round((consecutiveMatchesRef.current / 8) * 100)));
+
+            // Provide octave coaching if same note but wrong register
+            if (isPitchClass && !isExact && octaveModeRef.current === 'strict') {
+              const targetPitchInfo = midiToPitch(currentTarget.soundingMidi);
+              if (pitch.roundedMidi > currentTarget.soundingMidi) {
+                setMicFeedbackMsg(`Played ${pitch.scientificName} (Higher octave) - play lower note on guitar (${targetPitchInfo.scientificName})`);
+              } else {
+                setMicFeedbackMsg(`Played ${pitch.scientificName} (Lower octave) - play higher note on guitar (${targetPitchInfo.scientificName})`);
+              }
+            } else {
+              setMicFeedbackMsg(null);
+            }
+          }
+        }
+      } else {
+        // No clear periodic guitar note in this frame
+        if (Date.now() >= cooldownUntilRef.current) {
+          consecutiveMatchesRef.current = Math.max(0, consecutiveMatchesRef.current - 0.5);
+          setHoldProgress(Math.min(100, Math.round((consecutiveMatchesRef.current / 8) * 100)));
+        }
+      }
+
+      rafIdRef.current = requestAnimationFrame(updateFrame);
+    };
+
+    rafIdRef.current = requestAnimationFrame(updateFrame);
+  }, [handleSuccess]);
+
+  // Start microphone stream
+  const startMicrophone = async () => {
+    setMicPermissionError(null);
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: {
+          echoCancellation: false,
+          autoGainControl: false,
+          noiseSuppression: false,
+        },
+      });
+
+      mediaStreamRef.current = stream;
+
+      const AudioCtxClass =
+        window.AudioContext ||
+        (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      const ctx = new AudioCtxClass();
+      audioContextRef.current = ctx;
+
+      const source = ctx.createMediaStreamSource(stream);
+      const analyser = ctx.createAnalyser();
+      analyser.fftSize = 2048;
+      source.connect(analyser);
+      analyserRef.current = analyser;
+
+      setIsMicListening(true);
+      runMicPitchLoop();
+    } catch (err: unknown) {
+      const errorMsg =
+        err instanceof Error ? err.message : 'Microphone access denied or not available.';
+      setMicPermissionError(
+        `Microphone permission required: ${errorMsg}. Ensure your microphone is plugged in and allowed in browser site settings.`
+      );
+      setIsMicListening(false);
+    }
+  };
+
+  // Clean up microphone when leaving mic mode or unmounting
+  useEffect(() => {
+    if (inputMode !== 'mic' && isMicListening) {
+      stopMicrophone();
+    }
+    return () => {
+      stopMicrophone();
+    };
+  }, [inputMode, isMicListening, stopMicrophone]);
 
   // Listen to physical keyboard shortcuts (A, B, C, D, E, F, G)
   useEffect(() => {
@@ -187,13 +395,18 @@ export default function SightReadingTrainerClient() {
     }
   } else if (targetNote.step >= 10) {
     const targetLineAbove = targetNote.step % 2 === 0 ? targetNote.step : targetNote.step - 1;
-    for (let s = 10; s <= targetLineAbove; s += 2) {
+    for (let s = 10; s <= targetLineAbove; s -= 2) {
       ledgerLines.push(line1Y - (s * (lineSpacing / 2)));
     }
   }
 
   // Accuracy percentage
   const accuracy = score.total > 0 ? Math.round((score.correct / score.total) * 100) : 100;
+
+  // Target note pitch information for display in mic mode
+  const targetPitchDetails = useMemo(() => {
+    return midiToPitch(targetNote.soundingMidi);
+  }, [targetNote.soundingMidi]);
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-6">
@@ -213,7 +426,7 @@ export default function SightReadingTrainerClient() {
           </div>
 
           {/* Sound & Mode Switchers */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={() => setSoundEnabled(!soundEnabled)}
@@ -223,9 +436,10 @@ export default function SightReadingTrainerClient() {
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border-slate-300 dark:border-slate-700'
               }`}
             >
-              <span>{soundEnabled ? '🔊 Sound On' : '🔇 Muted'}</span>
+              <span>{soundEnabled ? '🔊 Audio On' : '🔇 Audio Muted'}</span>
             </button>
 
+            {/* Input Modes: Letters, Fretboard, Mic In */}
             <div className="flex items-center gap-0.5 bg-slate-100 dark:bg-slate-800 p-0.5 rounded-xl border border-slate-200 dark:border-slate-700 text-xs">
               <button
                 type="button"
@@ -248,6 +462,18 @@ export default function SightReadingTrainerClient() {
                 }`}
               >
                 Fretboard
+              </button>
+              <button
+                type="button"
+                onClick={() => setInputMode('mic')}
+                className={`px-2.5 py-1 rounded-lg font-bold transition-all cursor-pointer flex items-center gap-1 ${
+                  inputMode === 'mic'
+                    ? 'bg-amber-500 text-slate-950 shadow-xs'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>🎤</span>
+                <span>Guitar Mic</span>
               </button>
             </div>
           </div>
@@ -333,6 +559,7 @@ export default function SightReadingTrainerClient() {
           </div>
         )}
 
+        {/* Staff SVG Display */}
         <div className="w-full max-w-[340px] aspect-[16/9] flex items-center justify-center bg-[#faf9f5] rounded-2xl border border-stone-300 p-2 shadow-inner overflow-hidden select-none mb-6">
           <svg viewBox={`0 0 ${staffWidth} ${staffHeight}`} className="w-full h-full">
             {/* 5 Staff Lines */}
@@ -390,7 +617,7 @@ export default function SightReadingTrainerClient() {
 
         {/* Sub-Staff Ledger Clue (When testing notes below the staff) */}
         {targetNote.step <= -1 && (
-          <div className="flex items-center justify-center -mt-2">
+          <div className="flex items-center justify-center -mt-2 mb-4">
             <span className="px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-xs font-semibold flex items-center gap-1.5 shadow-xs">
               <span>💡 Ledger Clue:</span>
               <span className="font-normal text-slate-700 dark:text-slate-300">
@@ -475,6 +702,180 @@ export default function SightReadingTrainerClient() {
           </div>
         )}
 
+        {/* Input Option 3: Real Guitar Microphone Pitch Detection */}
+        {inputMode === 'mic' && (
+          <div className="w-full max-w-xl mx-auto space-y-4">
+            {/* Permission Alert if Denied */}
+            {micPermissionError && (
+              <div className="p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-700 dark:text-red-300 text-xs">
+                {micPermissionError}
+              </div>
+            )}
+
+            {!isMicListening ? (
+              <div className="text-center p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70 space-y-3">
+                <div className="inline-flex p-3 rounded-2xl bg-amber-500/10 text-amber-500 text-2xl">
+                  🎸
+                </div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  Play with Your Real Guitar
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
+                  Position your guitar near your laptop or phone microphone (or connect through an audio interface). Pluck each note on your guitar to answer.
+                </p>
+
+                <button
+                  type="button"
+                  onClick={startMicrophone}
+                  className="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg hover:shadow-amber-500/20 active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2"
+                >
+                  <span>🎙️</span>
+                  <span>Start Microphone Listening</span>
+                </button>
+              </div>
+            ) : (
+              <div className="p-5 rounded-3xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-4">
+                {/* Listening Status & Stop Button */}
+                <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-700">
+                  <div className="flex items-center gap-2">
+                    <span className="relative flex h-3 w-3">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                      Listening to Guitar...
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={stopMicrophone}
+                    className="px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-red-500 hover:text-white text-xs font-bold transition-all cursor-pointer"
+                  >
+                    ⏹️ Stop Mic
+                  </button>
+                </div>
+
+                {/* Target Pitch Note Card */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="p-3 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 text-center">
+                    <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                      Target Note
+                    </span>
+                    <span className="text-2xl font-black text-slate-900 dark:text-white">
+                      {targetNote.name}
+                    </span>
+                    <span className="block text-[11px] text-amber-500 font-semibold mt-0.5">
+                      Sounding {targetPitchDetails.scientificName}
+                    </span>
+                  </div>
+
+                  <div className="p-3 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 text-center">
+                    <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                      Detected Pitch
+                    </span>
+                    <span className={`text-2xl font-black ${
+                      detectedPitch
+                        ? exactPitchMatch(detectedPitch.roundedMidi, targetNote.soundingMidi)
+                          ? 'text-emerald-500'
+                          : 'text-amber-500'
+                        : 'text-slate-400'
+                    }`}>
+                      {detectedPitch ? detectedPitch.scientificName : '--'}
+                    </span>
+                    <span className="block text-[11px] text-slate-500 font-medium mt-0.5">
+                      {detectedPitch ? `${detectedPitch.freq} Hz (${detectedPitch.cents > 0 ? '+' : ''}${detectedPitch.cents}¢)` : 'Pluck string...'}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Note Stability Hold Confirmation Progress */}
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="text-slate-500 dark:text-slate-400 font-medium">Pitch Recognition Hold</span>
+                    <span className="font-bold text-emerald-600 dark:text-emerald-400">{holdProgress}%</span>
+                  </div>
+                  <div className="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-amber-500 to-emerald-500 transition-all duration-75 rounded-full"
+                      style={{ width: `${holdProgress}%` }}
+                    />
+                  </div>
+                </div>
+
+                {/* Real-Time Input VU Level Meter */}
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between text-[10px] text-slate-400">
+                    <span>Microphone Input Level</span>
+                    <span>{micLevel}%</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full transition-all duration-75 rounded-full ${
+                        micLevel > 65 ? 'bg-red-500' : micLevel > 20 ? 'bg-emerald-500' : 'bg-slate-400'
+                      }`}
+                      style={{ width: `${micLevel}%` }}
+                    />
+                  </div>
+                </div>
+
+                {/* Dynamic Pitch Feedback Message */}
+                {micFeedbackMsg && (
+                  <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-300 text-xs text-center font-medium">
+                    {micFeedbackMsg}
+                  </div>
+                )}
+
+                {/* Mic Configuration Options */}
+                <div className="pt-2 border-t border-slate-200 dark:border-slate-700/60 flex flex-wrap items-center justify-between gap-2 text-xs">
+                  {/* Octave Mode Switcher */}
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-slate-500 font-medium">Register:</span>
+                    <div className="flex items-center gap-0.5 bg-slate-200 dark:bg-slate-700 p-0.5 rounded-lg">
+                      <button
+                        type="button"
+                        onClick={() => setOctaveMode('strict')}
+                        className={`px-2 py-0.5 rounded-md font-bold text-[11px] transition-all cursor-pointer ${
+                          octaveMode === 'strict'
+                            ? 'bg-amber-500 text-slate-950 shadow-xs'
+                            : 'text-slate-600 dark:text-slate-300'
+                        }`}
+                      >
+                        Strict Octave
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setOctaveMode('any')}
+                        className={`px-2 py-0.5 rounded-md font-bold text-[11px] transition-all cursor-pointer ${
+                          octaveMode === 'any'
+                            ? 'bg-amber-500 text-slate-950 shadow-xs'
+                            : 'text-slate-600 dark:text-slate-300'
+                        }`}
+                      >
+                        Any Octave
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Sensitivity Switcher */}
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-slate-500 font-medium">Mic Sensitivity:</span>
+                    <select
+                      value={micSensitivity}
+                      onChange={(e) => setMicSensitivity(e.target.value as 'normal' | 'sensitive' | 'quiet')}
+                      className="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 px-2 py-0.5 rounded-lg text-[11px] font-semibold border-none cursor-pointer outline-none"
+                    >
+                      <option value="normal">Normal</option>
+                      <option value="sensitive">High Gain (Quiet Pick)</option>
+                      <option value="quiet">Noisy Room Filter</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Hint & Skip Buttons */}
         <div className="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 w-full justify-between">
           <button
@@ -519,4 +920,3 @@ export default function SightReadingTrainerClient() {
     </div>
   );
 }
-
