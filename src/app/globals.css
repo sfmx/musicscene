@@ -127,5 +127,28 @@ body {
   .shadow-2xl {
     box-shadow: none !important;
   }
+
+  /* Print specific display utility */
+  .print-only {
+    display: block !important;
+  }
+
+  .print-sheet {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .print-page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+}
+
+.print-only {
+  display: none !important;
 }
 
