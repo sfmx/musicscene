@@ -21,15 +21,6 @@ export type TrainerLevel =
   | 'accidentals'
   | 'full-neck';
 
-interface LevelConfig {
-  id: TrainerLevel;
-  name: string;
-  badge: string;
-  description: string;
-  notes: StaffNote[];
-  includeAccidentals?: boolean;
-}
-
 // Generate sharp and flat variants of natural notes for the accidentals level
 const ACCIDENTAL_NOTES: StaffNote[] = [
   { name: 'F#4', naturalName: 'F', accidental: 'sharp', octave: 4, step: 1, soundingMidi: 54, description: 'Line 1 Space (F#) - String 4, Fret 4' },

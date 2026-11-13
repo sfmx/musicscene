@@ -2,11 +2,10 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import Link from 'next/link';
-import { getGuitarAudioContext, playGuitarFrequency } from '@/lib/guitarAudio';
+import { getGuitarAudioContext } from '@/lib/guitarAudio';
 import { playMetronomeTick, playWoodblockTick } from '@/lib/rhythmAudio';
 import {
   RHYTHM_PATTERNS,
-  RhythmPattern,
   RhythmNote,
   evaluateRhythmTap,
   HitRating,
@@ -38,8 +37,6 @@ export default function RhythmTrainerClient() {
 
   // Audio Engine Refs
   const rafIdRef = useRef<number | null>(null);
-  const startTimeRef = useRef<number>(0);
-  const nextScheduledBeatRef = useRef<number>(0);
   const currentMeasureStartAudioTimeRef = useRef<number>(0);
   const tappedNotesRef = useRef<Set<string>>(new Set());
   const isPlayingRef = useRef<boolean>(false);

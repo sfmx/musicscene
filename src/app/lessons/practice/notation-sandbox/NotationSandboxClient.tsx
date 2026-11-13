@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { playGuitarNote, GUITAR_OPEN_STRINGS_MIDI } from '@/lib/guitarAudio';
-import { LANDMARK_NOTES, StaffNote } from '@/components/Theory/StaffFretboardExplorer';
+import { LANDMARK_NOTES } from '@/components/Theory/StaffFretboardExplorer';
 import { frequencyToPitch } from '@/lib/pitchDetection';
 
 interface FretMatch {
@@ -18,7 +18,6 @@ export default function NotationSandboxClient() {
   const [selectedNoteIndex, setSelectedNoteIndex] = useState<number>(5); // default C4 (Middle C)
   const [activeAccidental, setActiveAccidental] = useState<'natural' | 'sharp' | 'flat'>('natural');
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
-  const [hoveredFret, setHoveredFret] = useState<{ strIdx: number; fret: number } | null>(null);
 
   const baseNote = LANDMARK_NOTES[selectedNoteIndex] || LANDMARK_NOTES[5];
 
@@ -440,8 +439,6 @@ export default function NotationSandboxClient() {
                           key={fret}
                           type="button"
                           onClick={() => handleFretClick(strIdx, fret)}
-                          onMouseEnter={() => setHoveredFret({ strIdx, fret })}
-                          onMouseLeave={() => setHoveredFret(null)}
                           className={`h-full border-r border-stone-700/50 flex items-center justify-center transition-all cursor-pointer hover:bg-amber-500/20 relative ${
                             fret === 0 ? 'border-r-4 border-amber-600/80 bg-stone-900/60' : ''
                           }`}
