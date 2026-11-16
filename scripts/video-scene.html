@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MusicScene - Real Guitar Sight-Reading Trainer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #020617;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      position: relative;
+    }
+
+    /* Ambient glow background */
+    .glow-orb-1 {
+      position: absolute;
+      top: -150px;
+      left: -150px;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0) 70%);
+      pointer-events: none;
+    }
+    .glow-orb-2 {
+      position: absolute;
+      bottom: -200px;
+      right: -200px;
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.10) 0%, rgba(16, 185, 129, 0) 70%);
+      pointer-events: none;
+    }
+
+    /* Scene Containers */
+    .scene {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      pointer-events: none;
+    }
+    .scene.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Top Nav Bar on Trainer Scene */
+    .nav-bar {
+      width: 100%;
+      max-width: 1360px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    /* Card Styling */
+    .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(51, 65, 85, 0.7);
+      border-radius: 28px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Trainer Container */
+    .trainer-wrapper {
+      width: 100%;
+      max-width: 1360px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Top Header Bar */
+    .trainer-header {
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Mode Pill Buttons */
+    .mode-pill {
+      padding: 10px 20px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+    .mode-pill.inactive {
+      background: #1e293b;
+      color: #94a3b8;
+      border-color: #334155;
+    }
+    .mode-pill.active {
+      background: #f59e0b;
+      color: #020617;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+    }
+
+    /* Stats Grid */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding: 0 32px 24px 32px;
+    }
+    .stat-box {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(51, 65, 85, 0.6);
+      border-radius: 18px;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-val {
+      font-size: 26px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    /* Main Stage */
+    .stage-card {
+      padding: 36px 44px;
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Staff Display */
+    .staff-box {
+      width: 100%;
+      height: 310px;
+      background: #faf9f5;
+      border-radius: 24px;
+      border: 2px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.06);
+      position: relative;
+    }
+
+    /* Clue Banner */
+    .clue-pill {
+      margin-top: 14px;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #f59e0b;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Mic Interface Panel */
+    .mic-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mic-status-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 12px #10b981;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1.15); box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* Pitch Comparison Grid */
+    .pitch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .pitch-box {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 18px 24px;
+      text-align: center;
+    }
+    .pitch-box-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+    .pitch-box-val {
+      font-size: 44px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .pitch-box-sub {
+      font-size: 14px;
+      font-weight: 600;
+      color: #f59e0b;
+      margin-top: 4px;
+    }
+
+    /* Hold Progress Bar */
+    .progress-track {
+      width: 100%;
+      height: 14px;
+      background: #1e293b;
+      border-radius: 9999px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #f59e0b, #10b981);
+      border-radius: 9999px;
+      transition: width 0.15s ease-out;
+    }
+
+    /* VU Meter */
+    .vu-track {
+      width: 100%;
+      height: 8px;
+      background: #1e293b;
+      border-radius: 9999px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+    .vu-fill {
+      height: 100%;
+      width: 15%;
+      background: #10b981;
+      border-radius: 9999px;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Success Toast */
+    .success-toast {
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-20px);
+      padding: 12px 28px;
+      border-radius: 9999px;
+      background: #10b981;
+      color: #020617;
+      font-size: 16px;
+      font-weight: 900;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .success-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Coaching Banner */
+    .coach-toast {
+      padding: 12px 20px;
+      border-radius: 16px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fcd34d;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      display: none;
+    }
+    .coach-toast.show {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    /* Intro & Outro Typography */
+    .intro-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #f59e0b;
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+    .intro-title {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.1;
+      text-align: center;
+      max-width: 1200px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 70%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .intro-subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-align: center;
+      max-width: 900px;
+      line-height: 1.5;
+      margin-bottom: 36px;
+    }
+    .feature-tags {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .feature-tag {
+      padding: 10px 22px;
+      border-radius: 16px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #334155;
+      color: #e2e8f0;
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Outro CTA */
+    .url-pill {
+      margin-top: 36px;
+      padding: 18px 44px;
+      border-radius: 24px;
+      background: #f59e0b;
+      color: #020617;
+      font-size: 28px;
+      font-weight: 900;
+      box-shadow: 0 12px 35px rgba(245, 158, 11, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-orb-1"></div>
+  <div class="glow-orb-2"></div>
+
+  <!-- SCENE 1: Intro Splash (0s - 4s) -->
+  <div id="scene-intro" class="scene active">
+    <div class="intro-badge">
+      <span>🎸 Brand New Release</span>
+    </div>
+    <h1 class="intro-title">
+      Learn Sheet Music with Your Real Guitar
+    </h1>
+    <p class="intro-subtitle">
+      Zero mouse clicks. Connect your guitar via microphone or audio interface and sight-read notes directly on the musical staff.
+    </p>
+    <div class="feature-tags">
+      <div class="feature-tag"><span>🎙️</span> Real-Time Pitch Detection</div>
+      <div class="feature-tag"><span>⚓</span> Sub-Staff Ledger Lines</div>
+      <div class="feature-tag"><span>💡</span> Smart Octave Guidance</div>
+      <div class="feature-tag"><span>⚡</span> 100% Free in Browser</div>
+    </div>
+  </div>
+
+  <!-- SCENE 2: The Interactive Trainer (4s - 29.5s) -->
+  <div id="scene-trainer" class="scene">
+    <!-- Brand Bar -->
+    <div class="nav-bar">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-size:28px;">🎸</span>
+        <span style="font-size:22px; font-weight:900; color:#ffffff;">MusicScene<span style="color:#f59e0b;">.com.au</span></span>
+        <span style="background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.3); color:#f59e0b; font-size:11px; font-weight:800; padding:4px 10px; border-radius:999px; text-transform:uppercase;">
+          Live Studio
+        </span>
+      </div>
+      <div style="color:#94a3b8; font-size:14px; font-weight:600;">
+        Sight-Reading Practice Studio
+      </div>
+    </div>
+
+    <div class="trainer-wrapper">
+      <!-- Header Card -->
+      <div class="glass-card">
+        <div class="trainer-header">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+              <span style="background:rgba(245,158,11,0.2); color:#f59e0b; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;">PRACTICE TRAINER</span>
+              <span style="color:#94a3b8; font-size:13px; font-weight:600;">Standard Treble Staff (Guitar 8vb)</span>
+            </div>
+            <h2 style="font-size:28px; font-weight:900; color:#ffffff;">Interactive Sight-Reading Trainer</h2>
+          </div>
+
+          <!-- Mode Switcher -->
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div id="mode-letters" class="mode-pill inactive">Letters (A-G)</div>
+            <div id="mode-fretboard" class="mode-pill inactive">Fretboard</div>
+            <div id="mode-mic" class="mode-pill active">
+              <span>🎤</span>
+              <span>Guitar Mic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="stat-label">Score</span>
+            <span id="stat-score" class="stat-val">0 <span style="font-size:16px; color:#64748b;">/ 0</span></span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Streak</span>
+            <span id="stat-streak" class="stat-val" style="color:#f59e0b;">🔥 0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Accuracy</span>
+            <span id="stat-accuracy" class="stat-val" style="color:#06b6d4;">100%</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Audio Engine</span>
+            <span class="stat-val" style="color:#10b981; font-size:20px;">Autocorrelate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Stage Flashcard -->
+      <div class="glass-card stage-card" style="position:relative;">
+        <!-- Success Banner -->
+        <div id="success-toast" class="success-toast">
+          <span>✓ CORRECT!</span>
+          <span id="toast-note-name">E3</span>
+        </div>
+
+        <!-- Left: Staff Visualizer -->
+        <div>
+          <div class="staff-box">
+            <svg id="staff-svg" viewBox="0 0 460 260" width="460" height="260">
+              <!-- Staff Lines (5 lines, spacing 18px) -->
+              <!-- Line 5: 74, Line 4: 92, Line 3: 110, Line 2: 128, Line 1: 146 -->
+              <line x1="30" y1="74" x2="430" y2="74" stroke="#1e293b" stroke-width="2"/>
+              <line x1="30" y1="92" x2="430" y2="92" stroke="#1e293b" stroke-width="2"/>
+              <line x1="30" y1="110" x2="430" y2="110" stroke="#1e293b" stroke-width="2"/>
+              <line x1="30" y1="128" x2="430" y2="128" stroke="#1e293b" stroke-width="2"/>
+              <line x1="30" y1="146" x2="430" y2="146" stroke="#1e293b" stroke-width="2"/>
+
+              <!-- Treble Clef -->
+              <text x="45" y="136" font-size="78" font-family="serif" fill="#0f172a" font-weight="normal">𝄞</text>
+              <text x="70" y="165" font-size="12" font-weight="900" font-family="sans-serif" fill="#475569">8vb</text>
+
+              <!-- Dynamic Ledgers Group -->
+              <g id="ledger-lines-group"></g>
+
+              <!-- Note Head & Stem -->
+              <g id="note-group">
+                <ellipse id="note-head" cx="240" cy="209" rx="12" ry="8.5" fill="#0f172a" transform="rotate(-22 240 209)"/>
+                <line id="note-stem" x1="251" y1="207" x2="251" y2="145" stroke="#0f172a" stroke-width="2.2"/>
+              </g>
+            </svg>
+          </div>
+
+          <div id="clue-container" style="text-align:center;">
+            <div id="clue-text" class="clue-pill">
+              <span>💡 Ledger Clue:</span>
+              <span id="clue-desc">Hangs below 3rd Ledger Line (Lowest Guitar Note = Low E, String 6 Open)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Mic Status & Live Detection Panel -->
+        <div class="mic-panel">
+          <div class="mic-status-header">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span class="pulse-dot"></span>
+              <span style="font-size:15px; font-weight:800; color:#10b981;">Listening to Guitar...</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size:12px; font-weight:700; color:#94a3b8;">Register:</span>
+              <span style="background:#1e293b; color:#f59e0b; font-size:12px; font-weight:800; padding:4px 10px; border-radius:8px;">
+                Strict Octave
+              </span>
+            </div>
+          </div>
+
+          <!-- Pitch Target vs Detected -->
+          <div class="pitch-grid">
+            <div class="pitch-box">
+              <div class="pitch-box-title">Target Note</div>
+              <div id="target-note-display" class="pitch-box-val">E3</div>
+              <div id="target-sounding-display" class="pitch-box-sub">Sounding E2 (82.4 Hz)</div>
+            </div>
+
+            <div class="pitch-box">
+              <div class="pitch-box-title">Detected Pitch</div>
+              <div id="detected-note-display" class="pitch-box-val" style="color:#64748b;">--</div>
+              <div id="detected-sub-display" class="pitch-box-sub" style="color:#94a3b8;">Pluck string...</div>
+            </div>
+          </div>
+
+          <!-- Pitch Recognition Hold Bar -->
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+              <span style="color:#94a3b8; font-weight:600;">Pitch Recognition Hold</span>
+              <span id="hold-pct-text" style="color:#10b981; font-weight:800;">0%</span>
+            </div>
+            <div class="progress-track">
+              <div id="hold-bar-fill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <!-- Real-Time Microphone Input VU Level -->
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:11px; color:#64748b; margin-bottom:4px;">
+              <span>Microphone Input Level</span>
+              <span id="vu-pct-text">20%</span>
+            </div>
+            <div class="vu-track">
+              <div id="vu-bar-fill" class="vu-fill"></div>
+            </div>
+          </div>
+
+          <!-- Octave Coaching Toast -->
+          <div id="coach-banner" class="coach-toast">
+            ⚠️ Played E4 (Higher octave) - play lower note on guitar (E2 String 6)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 3: Outro Screen & CTA (29.5s - 35s) -->
+  <div id="scene-outro" class="scene">
+    <div class="intro-badge">
+      <span>🚀 Available Right Now</span>
+    </div>
+    <h1 class="intro-title">
+      Bridge the Gap Between Tab &amp; Sheet Music
+    </h1>
+    <p class="intro-subtitle">
+      No sign-up or app download required. Plug in your guitar or use your phone mic to build effortless note recognition.
+    </p>
+
+    <div class="url-pill">
+      <span>musicscene.com.au/practice/sight-reading</span>
+      <span>→</span>
+    </div>
+  </div>
+
+  <script>
+    // Animation Controller
+    const sceneIntro = document.getElementById('scene-intro');
+    const sceneTrainer = document.getElementById('scene-trainer');
+    const sceneOutro = document.getElementById('scene-outro');
+
+    const statScore = document.getElementById('stat-score');
+    const statStreak = document.getElementById('stat-streak');
+    const statAccuracy = document.getElementById('stat-accuracy');
+
+    const targetNoteDisplay = document.getElementById('target-note-display');
+    const targetSoundingDisplay = document.getElementById('target-sounding-display');
+    const detectedNoteDisplay = document.getElementById('detected-note-display');
+    const detectedSubDisplay = document.getElementById('detected-sub-display');
+    const holdBarFill = document.getElementById('hold-bar-fill');
+    const holdPctText = document.getElementById('hold-pct-text');
+    const vuBarFill = document.getElementById('vu-bar-fill');
+    const vuPctText = document.getElementById('vu-pct-text');
+    const coachBanner = document.getElementById('coach-banner');
+
+    const successToast = document.getElementById('success-toast');
+    const toastNoteName = document.getElementById('toast-note-name');
+    const clueText = document.getElementById('clue-desc');
+
+    const noteHead = document.getElementById('note-head');
+    const noteStem = document.getElementById('note-stem');
+    const ledgerLinesGroup = document.getElementById('ledger-lines-group');
+
+    // Note Configuration Data
+    // Line 1 is Y=146. Each step (line or space) is 9px.
+    const NOTES = {
+      'E3': {
+        name: 'E3',
+        sounding: 'Sounding E2 (82.4 Hz)',
+        freqText: '82.5 Hz (0¢)',
+        cy: 209, // -7 steps below Line 1
+        stemUp: true,
+        ledgers: [164, 182, 200], // 3 ledger lines
+        clue: 'Hangs below 3rd Ledger Line (Lowest Guitar Note = Low E, String 6 Open)',
+      },
+      'C4': {
+        name: 'C4',
+        sounding: 'Sounding C3 (130.8 Hz)',
+        freqText: '130.8 Hz (+1¢)',
+        cy: 164, // -2 steps below Line 1 (1st ledger line)
+        stemUp: true,
+        ledgers: [164], // 1 ledger line
+        clue: '1 Ledger Line Strike (Middle C • String 5, Fret 3)',
+      },
+      'G4': {
+        name: 'G4',
+        sounding: 'Sounding G3 (196.0 Hz)',
+        freqText: '196.0 Hz (0¢)',
+        cy: 128, // Line 2
+        stemUp: true,
+        ledgers: [],
+        clue: 'Treble Clef Anchor Line 2 (String 3 Open)',
+      },
+      'E4': {
+        name: 'E4',
+        sounding: 'Sounding E3 (164.8 Hz)',
+        freqText: '164.8 Hz (0¢)',
+        cy: 146, // Line 1
+        stemUp: true,
+        ledgers: [],
+        clue: 'Bottom Staff Line 1 (String 4, Fret 2)',
+      }
+    };
+
+    function setNoteDisplay(key) {
+      const n = NOTES[key];
+      targetNoteDisplay.textContent = n.name;
+      targetSoundingDisplay.textContent = n.sounding;
+      clueText.textContent = n.clue;
+
+      noteHead.setAttribute('cy', n.cy);
+      noteHead.setAttribute('transform', `rotate(-22 240 ${n.cy})`);
+
+      if (n.stemUp) {
+        noteStem.setAttribute('x1', '251');
+        noteStem.setAttribute('y1', n.cy - 2);
+        noteStem.setAttribute('x2', '251');
+        noteStem.setAttribute('y2', n.cy - 60);
+      } else {
+        noteStem.setAttribute('x1', '229');
+        noteStem.setAttribute('y1', n.cy + 2);
+        noteStem.setAttribute('x2', '229');
+        noteStem.setAttribute('y2', n.cy + 60);
+      }
+
+      // Draw ledger lines
+      ledgerLinesGroup.innerHTML = '';
+      n.ledgers.forEach(ly => {
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', '216');
+        line.setAttribute('y1', ly);
+        line.setAttribute('x2', '264');
+        line.setAttribute('y2', ly);
+        line.setAttribute('stroke', '#0f172a');
+        line.setAttribute('stroke-width', '2.2');
+        ledgerLinesGroup.appendChild(line);
+      });
+    }
+
+    // Set initial note
+    setNoteDisplay('E3');
+
+    // Global Time Animation Driver
+    let startTime = null;
+
+    function renderFrame(time) {
+      if (!startTime) startTime = time;
+      const elapsed = (time - startTime) / 1000; // elapsed in seconds
+
+      // Subtle VU meter jitter when listening
+      if (elapsed > 4.0 && elapsed < 29.5) {
+        const jitter = Math.sin(elapsed * 12) * 8 + Math.cos(elapsed * 20) * 6;
+        const baseLevel = (elapsed >= 9.0 && elapsed <= 11.0) ||
+                          (elapsed >= 15.0 && elapsed <= 17.0) ||
+                          (elapsed >= 20.0 && elapsed <= 22.0) ||
+                          (elapsed >= 25.0 && elapsed <= 28.5) ? 65 : 18;
+        const currentVu = Math.min(95, Math.max(10, Math.round(baseLevel + jitter)));
+        vuBarFill.style.width = currentVu + '%';
+        vuPctText.textContent = currentVu + '%';
+      }
+
+      // Timeline Sequence
+      if (elapsed < 4.0) {
+        // Scene 1: Intro
+        sceneIntro.classList.add('active');
+        sceneTrainer.classList.remove('active');
+        sceneOutro.classList.remove('active');
+      } else if (elapsed < 29.5) {
+        // Scene 2: Trainer In Action
+        sceneIntro.classList.remove('active');
+        sceneTrainer.classList.add('active');
+        sceneOutro.classList.remove('active');
+
+        // Note 1: E3 (4.0s - 14.0s)
+        if (elapsed < 14.0) {
+          setNoteDisplay('E3');
+
+          if (elapsed < 9.5) {
+            detectedNoteDisplay.textContent = '--';
+            detectedNoteDisplay.style.color = '#64748b';
+            detectedSubDisplay.textContent = 'Pluck 6th String...';
+            holdBarFill.style.width = '0%';
+            holdPctText.textContent = '0%';
+            successToast.classList.remove('show');
+          } else if (elapsed < 10.7) {
+            // Pluck active, hold filling
+            detectedNoteDisplay.textContent = 'E2';
+            detectedNoteDisplay.style.color = '#10b981';
+            detectedSubDisplay.textContent = '82.5 Hz (0¢)';
+            const progress = Math.min(100, Math.round(((elapsed - 9.5) / 1.1) * 100));
+            holdBarFill.style.width = progress + '%';
+            holdPctText.textContent = progress + '%';
+          } else if (elapsed < 13.0) {
+            // Success
+            holdBarFill.style.width = '100%';
+            holdPctText.textContent = '100%';
+            toastNoteName.textContent = 'E3';
+            successToast.classList.add('show');
+            statScore.innerHTML = '1 <span style="font-size:16px; color:#64748b;">/ 1</span>';
+            statStreak.textContent = '🔥 1';
+          } else {
+            successToast.classList.remove('show');
+            holdBarFill.style.width = '0%';
+          }
+        }
+        // Note 2: C4 (14.0s - 19.5s)
+        else if (elapsed < 19.5) {
+          setNoteDisplay('C4');
+
+          if (elapsed < 15.2) {
+            detectedNoteDisplay.textContent = '--';
+            detectedNoteDisplay.style.color = '#64748b';
+            detectedSubDisplay.textContent = 'Pluck 5th String Fret 3...';
+            holdBarFill.style.width = '0%';
+            holdPctText.textContent = '0%';
+            successToast.classList.remove('show');
+          } else if (elapsed < 16.4) {
+            detectedNoteDisplay.textContent = 'C3';
+            detectedNoteDisplay.style.color = '#10b981';
+            detectedSubDisplay.textContent = '130.8 Hz (+1¢)';
+            const progress = Math.min(100, Math.round(((elapsed - 15.2) / 1.1) * 100));
+            holdBarFill.style.width = progress + '%';
+            holdPctText.textContent = progress + '%';
+          } else if (elapsed < 18.5) {
+            holdBarFill.style.width = '100%';
+            holdPctText.textContent = '100%';
+            toastNoteName.textContent = 'C4';
+            successToast.classList.add('show');
+            statScore.innerHTML = '2 <span style="font-size:16px; color:#64748b;">/ 2</span>';
+            statStreak.textContent = '🔥 2';
+          } else {
+            successToast.classList.remove('show');
+            holdBarFill.style.width = '0%';
+          }
+        }
+        // Note 3: G4 (19.5s - 24.5s)
+        else if (elapsed < 24.5) {
+          setNoteDisplay('G4');
+
+          if (elapsed < 20.5) {
+            detectedNoteDisplay.textContent = '--';
+            detectedNoteDisplay.style.color = '#64748b';
+            detectedSubDisplay.textContent = 'Pluck 3rd String Open...';
+            holdBarFill.style.width = '0%';
+            holdPctText.textContent = '0%';
+            successToast.classList.remove('show');
+          } else if (elapsed < 21.6) {
+            detectedNoteDisplay.textContent = 'G3';
+            detectedNoteDisplay.style.color = '#10b981';
+            detectedSubDisplay.textContent = '196.0 Hz (0¢)';
+            const progress = Math.min(100, Math.round(((elapsed - 20.5) / 1.0) * 100));
+            holdBarFill.style.width = progress + '%';
+            holdPctText.textContent = progress + '%';
+          } else if (elapsed < 23.8) {
+            holdBarFill.style.width = '100%';
+            holdPctText.textContent = '100%';
+            toastNoteName.textContent = 'G4';
+            successToast.classList.add('show');
+            statScore.innerHTML = '3 <span style="font-size:16px; color:#64748b;">/ 3</span>';
+            statStreak.textContent = '🔥 3';
+          } else {
+            successToast.classList.remove('show');
+            holdBarFill.style.width = '0%';
+          }
+        }
+        // Note 4 + Octave Coach (24.5s - 29.5s)
+        else {
+          setNoteDisplay('E4');
+
+          if (elapsed < 25.4) {
+            detectedNoteDisplay.textContent = '--';
+            detectedNoteDisplay.style.color = '#64748b';
+            detectedSubDisplay.textContent = 'Pluck 4th String Fret 2...';
+            coachBanner.classList.remove('show');
+          } else if (elapsed < 27.0) {
+            // Wrong octave played first
+            detectedNoteDisplay.textContent = 'E4';
+            detectedNoteDisplay.style.color = '#f59e0b';
+            detectedSubDisplay.textContent = '329.6 Hz (High E)';
+            coachBanner.classList.add('show');
+            coachBanner.textContent = '⚠️ Played E4 (Higher octave) - play lower note on guitar (E3, String 4)';
+            holdBarFill.style.width = '20%';
+          } else if (elapsed < 28.2) {
+            // Corrected!
+            coachBanner.classList.remove('show');
+            detectedNoteDisplay.textContent = 'E3';
+            detectedNoteDisplay.style.color = '#10b981';
+            detectedSubDisplay.textContent = '164.8 Hz (String 4)';
+            const progress = Math.min(100, Math.round(((elapsed - 27.0) / 1.1) * 100));
+            holdBarFill.style.width = progress + '%';
+            holdPctText.textContent = progress + '%';
+          } else {
+            toastNoteName.textContent = 'E4';
+            successToast.classList.add('show');
+            statScore.innerHTML = '4 <span style="font-size:16px; color:#64748b;">/ 4</span>';
+            statStreak.textContent = '🔥 4';
+          }
+        }
+      } else {
+        // Scene 3: Outro
+        sceneIntro.classList.remove('active');
+        sceneTrainer.classList.remove('active');
+        sceneOutro.classList.add('active');
+      }
+
+      requestAnimationFrame(renderFrame);
+    }
+
+    requestAnimationFrame(renderFrame);
+  </script>
+</body>
+</html>
