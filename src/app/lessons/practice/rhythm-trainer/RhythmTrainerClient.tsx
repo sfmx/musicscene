@@ -11,6 +11,9 @@ import {
   HitRating,
   HitEvaluation,
 } from '@/lib/rhythmTrainerData';
+import { isMilestoneStreak } from '@/lib/shareStreak';
+import ShareStreakButton from '@/components/Practice/ShareStreakButton';
+import ShareStreakModal from '@/components/Practice/ShareStreakModal';
 
 interface NoteFeedback {
   noteId: string;
@@ -33,6 +36,8 @@ export default function RhythmTrainerClient() {
   const [lastTapResult, setLastTapResult] = useState<HitEvaluation | null>(null);
   const [streak, setStreak] = useState<number>(0);
   const [bestStreak, setBestStreak] = useState<number>(0);
+  const [showMilestoneModal, setShowMilestoneModal] = useState<boolean>(false);
+  const [milestoneStreak, setMilestoneStreak] = useState<number>(0);
   const [roundComplete, setRoundComplete] = useState<boolean>(false);
 
   // Audio Engine Refs
@@ -153,6 +158,10 @@ export default function RhythmTrainerClient() {
         setStreak(prev => {
           const next = prev + 1;
           setBestStreak(b => Math.max(b, next));
+          if (isMilestoneStreak(next)) {
+            setMilestoneStreak(next);
+            setShowMilestoneModal(true);
+          }
           return next;
         });
       } else {
@@ -455,6 +464,32 @@ export default function RhythmTrainerClient() {
             </span>
           </div>
         </div>
+
+        {/* Quick Social Share / Invite Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-3 mt-3 border-t border-slate-200/70 dark:border-slate-800">
+          <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/20 text-amber-500 font-bold text-[11px]">
+              🥁
+            </span>
+            <span>
+              {streak >= 3
+                ? `Groove locked! ${streak}-note streak active.`
+                : bestStreak >= 3
+                ? `Best streak: ${bestStreak} notes. Challenge a friend to beat your rhythm!`
+                : 'Challenge friends to test their rhythm and timing!'}
+            </span>
+          </div>
+
+          <ShareStreakButton
+            variant="badge"
+            options={{
+              tool: 'rhythm-trainer',
+              streak: streak > 0 ? streak : bestStreak,
+              bestStreak,
+              accuracy: accuracyPercent,
+            }}
+          />
+        </div>
       </div>
 
       {/* Main Rhythm Score Stage */}
@@ -723,7 +758,7 @@ export default function RhythmTrainerClient() {
 
           {/* Performance Summary Banner */}
           {roundComplete && (
-            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-2 animate-fade-in">
+            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3 animate-fade-in">
               <div className="flex items-center justify-between text-xs">
                 <span className="font-bold text-slate-900 dark:text-white">Pattern Complete!</span>
                 <span className="font-black text-emerald-500">{accuracyPercent}% Accuracy</span>
@@ -733,6 +768,19 @@ export default function RhythmTrainerClient() {
                 <span className="text-teal-500 font-bold">{goodCount} Good</span>
                 <span className="text-amber-500 font-bold">{earlyCount + lateCount} Early/Late</span>
                 <span className="text-red-500 font-bold">{missCount} Missed</span>
+              </div>
+
+              {/* One-Click Quick Share & Challenge */}
+              <div className="pt-2 border-t border-slate-200 dark:border-slate-700/60 flex justify-center">
+                <ShareStreakButton
+                  variant="badge"
+                  options={{
+                    tool: 'rhythm-trainer',
+                    streak: streak > 0 ? streak : bestStreak,
+                    bestStreak,
+                    accuracy: accuracyPercent,
+                  }}
+                />
               </div>
             </div>
           )}
@@ -752,6 +800,19 @@ export default function RhythmTrainerClient() {
           <span>→</span>
         </Link>
       </div>
+
+      {/* Milestone Streak Celebration & Share Modal */}
+      <ShareStreakModal
+        isOpen={showMilestoneModal}
+        onClose={() => setShowMilestoneModal(false)}
+        isMilestone={true}
+        options={{
+          tool: 'rhythm-trainer',
+          streak: milestoneStreak || streak,
+          bestStreak,
+          accuracy: accuracyPercent,
+        }}
+      />
     </div>
   );
 }

@@ -12,6 +12,9 @@ import {
   exactPitchMatch,
   PitchResult,
 } from '@/lib/pitchDetection';
+import { isMilestoneStreak } from '@/lib/shareStreak';
+import ShareStreakButton from '@/components/Practice/ShareStreakButton';
+import ShareStreakModal from '@/components/Practice/ShareStreakModal';
 
 export type TrainerLevel =
   | 'open-position'
@@ -37,6 +40,8 @@ export default function SightReadingTrainerClient() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const [currentStreak, setCurrentStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
+  const [showMilestoneModal, setShowMilestoneModal] = useState(false);
+  const [milestoneStreak, setMilestoneStreak] = useState<number>(0);
   const [lastResult, setLastResult] = useState<'correct' | 'wrong' | null>(null);
   const [revealedHint, setRevealedHint] = useState<string | null>(null);
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -156,6 +161,10 @@ export default function SightReadingTrainerClient() {
     setCurrentStreak(prev => {
       const next = prev + 1;
       setBestStreak(b => Math.max(b, next));
+      if (isMilestoneStreak(next)) {
+        setMilestoneStreak(next);
+        setShowMilestoneModal(true);
+      }
       return next;
     });
 
@@ -525,6 +534,32 @@ export default function SightReadingTrainerClient() {
               {accuracy}%
             </span>
           </div>
+        </div>
+
+        {/* Quick Social Share / Invite Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-3 mt-3 border-t border-slate-200/70 dark:border-slate-800">
+          <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-500/20 text-amber-500 font-bold text-[11px]">
+              🔥
+            </span>
+            <span>
+              {currentStreak >= 3
+                ? `You're on fire! ${currentStreak}-note streak active.`
+                : bestStreak >= 3
+                ? `Best streak: ${bestStreak} notes. Challenge a friend to beat it!`
+                : 'Challenge friends to test their guitar sight-reading!'}
+            </span>
+          </div>
+
+          <ShareStreakButton
+            variant="badge"
+            options={{
+              tool: 'sight-reading',
+              streak: currentStreak > 0 ? currentStreak : bestStreak,
+              bestStreak,
+              accuracy,
+            }}
+          />
         </div>
       </div>
 
@@ -908,6 +943,19 @@ export default function SightReadingTrainerClient() {
           <span>→</span>
         </Link>
       </div>
+
+      {/* Milestone Streak Celebration & Share Modal */}
+      <ShareStreakModal
+        isOpen={showMilestoneModal}
+        onClose={() => setShowMilestoneModal(false)}
+        isMilestone={true}
+        options={{
+          tool: 'sight-reading',
+          streak: milestoneStreak || currentStreak,
+          bestStreak,
+          accuracy,
+        }}
+      />
     </div>
   );
 }
