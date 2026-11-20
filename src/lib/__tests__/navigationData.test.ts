@@ -22,6 +22,9 @@ describe('Navigation Data Generation', () => {
       expect(interactiveCol).toBeDefined();
 
       const hrefs = interactiveCol!.items.map(item => item.href);
+      expect(hrefs).toContain('/lessons/practice/tuner');
+      expect(hrefs).toContain('/lessons/practice/sight-reading');
+      expect(hrefs).toContain('/lessons/practice/rhythm-trainer');
       expect(hrefs).toContain('/lessons/practice/fretboard-trainer');
       expect(hrefs).toContain('/lessons/practice/circle-of-fifths');
       expect(hrefs).toContain('/lessons/practice/caged-system');

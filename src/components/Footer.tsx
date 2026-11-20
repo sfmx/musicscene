@@ -18,15 +18,28 @@ export default function Footer() {
 
       {/* Footer Links */}
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Lessons */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4">Lessons</h3>
             <ul className="space-y-2">
               <li><Link href="/lessons/songs/song-analysis" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Song Analysis</Link></li>
               <li><Link href="/lessons/theory" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Music Theory</Link></li>
-              <li><Link href="/lessons/practice" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Practice</Link></li>
+              <li><Link href="/lessons/practice" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Practice Room</Link></li>
               <li><Link href="/lessons/gear" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Gear Guides</Link></li>
+              <li><Link href="/lessons/theory/cheat-sheets" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Cheat Sheets</Link></li>
+            </ul>
+          </div>
+
+          {/* Tools */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4">Tools</h3>
+            <ul className="space-y-2">
+              <li><Link href="/lessons/practice/tuner" className="text-emerald-600 dark:text-emerald-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors text-sm flex items-center gap-1.5"><span>🎸</span><span>Guitar Tuner</span></Link></li>
+              <li><Link href="/lessons/practice/sight-reading" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Sight-Reading Trainer</Link></li>
+              <li><Link href="/lessons/practice/rhythm-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Rhythm Trainer</Link></li>
+              <li><Link href="/lessons/practice/circle-of-fifths" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Circle of Fifths</Link></li>
+              <li><Link href="/lessons/practice/fretboard-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Fretboard Note Hunt</Link></li>
             </ul>
           </div>
 
@@ -38,6 +51,7 @@ export default function Footer() {
               <li><Link href="/lessons/theory/chords" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Chords</Link></li>
               <li><Link href="/lessons/theory/progressions" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Progressions</Link></li>
               <li><Link href="/lessons/theory/intervals" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Intervals</Link></li>
+              <li><Link href="/lessons/practice/caged-system" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">CAGED System</Link></li>
             </ul>
           </div>
 

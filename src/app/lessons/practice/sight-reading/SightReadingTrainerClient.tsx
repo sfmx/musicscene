@@ -750,14 +750,26 @@ export default function SightReadingTrainerClient() {
                   Position your guitar near your laptop or phone microphone (or connect through an audio interface). Pluck each note on your guitar to answer.
                 </p>
 
-                <button
-                  type="button"
-                  onClick={startMicrophone}
-                  className="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg hover:shadow-amber-500/20 active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2"
-                >
-                  <span>🎙️</span>
-                  <span>Start Microphone Listening</span>
-                </button>
+                <div className="pt-1 flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <button
+                    type="button"
+                    onClick={startMicrophone}
+                    className="px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg hover:shadow-amber-500/20 active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2"
+                  >
+                    <span>🎙️</span>
+                    <span>Start Microphone Listening</span>
+                  </button>
+
+                  <Link
+                    href="/lessons/practice/tuner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 text-xs font-bold transition-all inline-flex items-center gap-1.5 shadow-xs"
+                  >
+                    <span>🎸</span>
+                    <span>Open Guitar Tuner ↗</span>
+                  </Link>
+                </div>
               </div>
             ) : (
               <div className="p-5 rounded-3xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-4">
@@ -773,13 +785,26 @@ export default function SightReadingTrainerClient() {
                     </span>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={stopMicrophone}
-                    className="px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-red-500 hover:text-white text-xs font-bold transition-all cursor-pointer"
-                  >
-                    ⏹️ Stop Mic
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <Link
+                      href="/lessons/practice/tuner"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:text-emerald-500 text-xs font-bold transition-all inline-flex items-center gap-1"
+                      title="Open Guitar Tuner in new tab"
+                    >
+                      <span>🎸</span>
+                      <span>Tuner ↗</span>
+                    </Link>
+
+                    <button
+                      type="button"
+                      onClick={stopMicrophone}
+                      className="px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-red-500 hover:text-white text-xs font-bold transition-all cursor-pointer"
+                    >
+                      ⏹️ Stop Mic
+                    </button>
+                  </div>
                 </div>
 
                 {/* Target Pitch Note Card */}
