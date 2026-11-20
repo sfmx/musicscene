@@ -22,14 +22,15 @@ describe('Navigation Data Generation', () => {
       expect(interactiveCol).toBeDefined();
 
       const hrefs = interactiveCol!.items.map(item => item.href);
-      expect(hrefs).toContain('/lessons/practice/tuner');
-      expect(hrefs).toContain('/lessons/practice/sight-reading');
-      expect(hrefs).toContain('/lessons/practice/rhythm-trainer');
-      expect(hrefs).toContain('/lessons/practice/fretboard-trainer');
-      expect(hrefs).toContain('/lessons/practice/circle-of-fifths');
-      expect(hrefs).toContain('/lessons/practice/caged-system');
-      expect(hrefs).toContain('/lessons/practice/ear-trainer');
-      expect(hrefs).toContain('/lessons/practice/progression-player');
+      expect(hrefs).toContain('/tuner');
+      expect(hrefs).toContain('/sight-reading');
+      expect(hrefs).toContain('/rhythm-trainer');
+      expect(hrefs).toContain('/fretboard-trainer');
+      expect(hrefs).toContain('/circle-of-fifths');
+      expect(hrefs).toContain('/caged-system');
+      expect(hrefs).toContain('/ear-trainer');
+      expect(hrefs).toContain('/progression-player');
+      expect(hrefs).toContain('/metronome');
       expect(hrefs).toContain('/lessons/songs/why-songs-work');
     });
 
@@ -42,10 +43,10 @@ describe('Navigation Data Generation', () => {
     it('contains featured tool links including Circle of Fifths, Ear Trainer, and CAGED', () => {
       expect(toolsCategory.featured).toBeDefined();
       const featuredHrefs = toolsCategory.featured!.map(f => f.href);
-      expect(featuredHrefs).toContain('/lessons/practice/circle-of-fifths');
-      expect(featuredHrefs).toContain('/lessons/practice/caged-system');
-      expect(featuredHrefs).toContain('/lessons/practice/ear-trainer');
-      expect(featuredHrefs).toContain('/lessons/practice/fretboard-trainer');
+      expect(featuredHrefs).toContain('/circle-of-fifths');
+      expect(featuredHrefs).toContain('/caged-system');
+      expect(featuredHrefs).toContain('/ear-trainer');
+      expect(featuredHrefs).toContain('/fretboard-trainer');
       expect(featuredHrefs).toContain('/downloads/fretboard-cheat-sheet');
     });
   });
@@ -91,7 +92,7 @@ describe('Navigation Data Generation', () => {
       expect(hrefs).toContain('/lessons/theory/intervals');
       expect(hrefs).toContain('/lessons/theory/modes');
       expect(hrefs).toContain('/lessons/theory/progressions');
-      expect(hrefs).toContain('/lessons/practice/circle-of-fifths');
+      expect(hrefs).toContain('/circle-of-fifths');
       expect(hrefs).toContain('/lessons/theory/scales/harmonic-minor');
     });
   });

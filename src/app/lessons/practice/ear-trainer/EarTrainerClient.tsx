@@ -10,7 +10,7 @@ import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import AdSlot from '@/components/Revenue/AdSlot';
 
 export default function EarTrainerClient() {
-  const pathname = '/lessons/practice/ear-trainer';
+  const pathname = '/ear-trainer';
 
   return (
     <Layout>

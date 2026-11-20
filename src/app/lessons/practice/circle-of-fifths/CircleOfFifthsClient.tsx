@@ -10,7 +10,7 @@ import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import AdSlot from '@/components/Revenue/AdSlot';
 
 export default function CircleOfFifthsClient() {
-  const pathname = '/lessons/practice/circle-of-fifths';
+  const pathname = '/circle-of-fifths';
 
   return (
     <Layout>

@@ -28,7 +28,7 @@ const practiceGearItems = [
 ];
 
 export default function FretboardTrainerClient() {
-  const pathname = '/lessons/practice/fretboard-trainer';
+  const pathname = '/fretboard-trainer';
 
   return (
     <Layout>

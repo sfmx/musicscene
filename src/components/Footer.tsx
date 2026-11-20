@@ -35,11 +35,11 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4">Tools</h3>
             <ul className="space-y-2">
-              <li><Link href="/lessons/practice/tuner" className="text-emerald-600 dark:text-emerald-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors text-sm flex items-center gap-1.5"><span>🎸</span><span>Guitar Tuner</span></Link></li>
-              <li><Link href="/lessons/practice/sight-reading" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Sight-Reading Trainer</Link></li>
-              <li><Link href="/lessons/practice/rhythm-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Rhythm Trainer</Link></li>
-              <li><Link href="/lessons/practice/circle-of-fifths" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Circle of Fifths</Link></li>
-              <li><Link href="/lessons/practice/fretboard-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Fretboard Note Hunt</Link></li>
+              <li><Link href="/tuner" className="text-emerald-600 dark:text-emerald-400 font-medium hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors text-sm flex items-center gap-1.5"><span>🎸</span><span>Guitar Tuner</span></Link></li>
+              <li><Link href="/sight-reading" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Sight-Reading Trainer</Link></li>
+              <li><Link href="/rhythm-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Rhythm Trainer</Link></li>
+              <li><Link href="/circle-of-fifths" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Circle of Fifths</Link></li>
+              <li><Link href="/fretboard-trainer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm">Fretboard Note Hunt</Link></li>
             </ul>
           </div>
 

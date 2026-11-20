@@ -46,7 +46,7 @@ describe('shareStreak utility', () => {
       expect(data.title).toContain('10-Note');
       expect(data.text).toContain('10-note sight-reading streak');
       expect(data.text).toContain('on Treble Clef');
-      expect(data.url).toContain('https://musicscene.com.au/lessons/practice/sight-reading');
+      expect(data.url).toContain('https://musicscene.com.au/sight-reading');
       expect(data.url).toContain('utm_campaign=sight-reading_streak_10');
       expect(data.twitterUrl).toContain('https://twitter.com/intent/tweet');
       expect(data.facebookUrl).toContain('https://www.facebook.com/sharer/sharer.php');

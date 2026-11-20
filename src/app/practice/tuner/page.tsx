@@ -1,4 +1,16 @@
-import GuitarTunerPage, { metadata } from '@/app/lessons/practice/tuner/page';
+import type { Metadata } from 'next';
+import ClientRedirect from '@/components/Navigation/ClientRedirect';
+import { SITE_CONFIG } from '@/lib/siteConfig';
 
-export { metadata };
-export default GuitarTunerPage;
+export const metadata: Metadata = {
+  title: 'Free Online Guitar Tuner | MusicScene',
+  description: 'Redirecting to the online guitar tuner...',
+  robots: { index: false, follow: true },
+  alternates: {
+    canonical: `${SITE_CONFIG.baseUrl}/tuner/`,
+  },
+};
+
+export default function PracticeTunerRedirectPage() {
+  return <ClientRedirect to="/tuner" />;
+}

@@ -29,6 +29,11 @@ const SEGMENT_LABELS: Record<string, string> = {
   'circle-of-fifths': 'Circle of Fifths',
   'caged-system': 'CAGED System',
   'ear-trainer': 'Ear Trainer',
+  tuner: 'Guitar Tuner',
+  'sight-reading': 'Sight-Reading Trainer',
+  'rhythm-trainer': 'Rhythm Trainer',
+  'notation-sandbox': 'Notation Sandbox',
+  metronome: 'Metronome',
 
   // Gear
   gear: 'Gear',

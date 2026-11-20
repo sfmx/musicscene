@@ -1026,7 +1026,7 @@ function generateNavigationData(params: {
           { label: `Intervals (${intervals.length})`, href: '/lessons/theory/intervals', icon: '🎵' },
           { label: `Modes (${modes.length})`, href: '/lessons/theory/modes', icon: '🎭' },
           { label: `Chord Progressions (${progressions.length})`, href: '/lessons/theory/progressions', icon: '🔄' },
-          { label: 'Circle of Fifths Explorer', href: '/lessons/practice/circle-of-fifths', icon: '⭕' },
+          { label: 'Circle of Fifths Explorer', href: '/circle-of-fifths', icon: '⭕' },
           { label: 'Harmonic Minor Scale', href: '/lessons/theory/scales/harmonic-minor', icon: '🎼' },
         ],
       },
@@ -1034,7 +1034,7 @@ function generateNavigationData(params: {
     featured: [
       { label: 'All Theory Topics', href: '/lessons/theory' },
       { label: 'How to Read Sheet Music for Guitar', href: '/lessons/theory/reading-sheet-music' },
-      { label: 'Circle of Fifths Wheel', href: '/lessons/practice/circle-of-fifths' },
+      { label: 'Circle of Fifths Wheel', href: '/circle-of-fifths' },
       { label: 'Scale & Mode Visualizer', href: '/lessons/theory/scales' },
     ],
   };
@@ -1089,11 +1089,11 @@ function generateNavigationData(params: {
 
   const toolsNav: NavCategory = {
     label: 'Tools',
-    href: '/lessons/practice/fretboard-trainer',
+    href: '/fretboard-trainer',
     columns: [
       {
         heading: 'Interactive Utilities',
-        headingHref: '/lessons/practice/fretboard-trainer',
+        headingHref: '/fretboard-trainer',
         items: interactive.map(t => ({
           label: t.shortTitle,
           href: t.href,
@@ -1120,11 +1120,12 @@ function generateNavigationData(params: {
       },
     ],
     featured: [
-      { label: 'Play the Fretboard Note Hunt Game', href: '/lessons/practice/fretboard-trainer' },
-      { label: 'Interactive Sight-Reading Trainer', href: '/lessons/practice/sight-reading' },
-      { label: 'Circle of Fifths Studio', href: '/lessons/practice/circle-of-fifths' },
-      { label: 'Master CAGED Fretboard', href: '/lessons/practice/caged-system' },
-      { label: 'Interactive Ear Trainer', href: '/lessons/practice/ear-trainer' },
+      { label: 'Guitar Tuner', href: '/tuner' },
+      { label: 'Play the Fretboard Note Hunt Game', href: '/fretboard-trainer' },
+      { label: 'Interactive Sight-Reading Trainer', href: '/sight-reading' },
+      { label: 'Circle of Fifths Studio', href: '/circle-of-fifths' },
+      { label: 'Master CAGED Fretboard', href: '/caged-system' },
+      { label: 'Interactive Ear Trainer', href: '/ear-trainer' },
       { label: 'Download Free 3-Page Fretboard PDF', href: '/downloads/fretboard-cheat-sheet' },
     ],
   };
@@ -1165,11 +1166,12 @@ function generateNavigationData(params: {
     ],
     featured: [
       { label: 'All Practice Topics', href: '/lessons/practice' },
-      { label: 'Fretboard Trainer', href: '/lessons/practice/fretboard-trainer' },
-      { label: 'Circle of Fifths Explorer', href: '/lessons/practice/circle-of-fifths' },
-      { label: 'CAGED System Visualizer', href: '/lessons/practice/caged-system' },
-      { label: 'Ear Trainer', href: '/lessons/practice/ear-trainer' },
-      { label: 'Progression Jammer', href: '/lessons/practice/progression-player' },
+      { label: 'Guitar Tuner', href: '/tuner' },
+      { label: 'Fretboard Trainer', href: '/fretboard-trainer' },
+      { label: 'Circle of Fifths Explorer', href: '/circle-of-fifths' },
+      { label: 'CAGED System Visualizer', href: '/caged-system' },
+      { label: 'Ear Trainer', href: '/ear-trainer' },
+      { label: 'Progression Jammer', href: '/progression-player' },
     ],
   };
 

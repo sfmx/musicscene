@@ -28,7 +28,7 @@ const tunerGearItems = [
 ];
 
 export default function GuitarTunerClient() {
-  const pathname = '/lessons/practice/tuner';
+  const pathname = '/tuner';
 
   return (
     <Layout>

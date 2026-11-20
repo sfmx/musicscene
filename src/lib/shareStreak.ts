@@ -33,7 +33,7 @@ export function buildStreakShareData(options: ShareStreakOptions): ShareStreakDa
   const { tool, streak, mode } = options;
   const isSightReading = tool === 'sight-reading';
 
-  const baseUrl = `https://musicscene.com.au/lessons/practice/${tool}`;
+  const baseUrl = `https://musicscene.com.au/${tool}`;
   const campaign = streak > 0 ? `${tool}_streak_${streak}` : `${tool}_invite`;
   const url = `${baseUrl}?utm_source=user_share&utm_medium=social&utm_campaign=${campaign}`;
 

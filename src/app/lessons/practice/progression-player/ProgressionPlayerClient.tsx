@@ -28,7 +28,7 @@ const jammerGearItems = [
 ];
 
 export default function ProgressionPlayerClient() {
-  const pathname = '/lessons/practice/progression-player';
+  const pathname = '/progression-player';
 
   return (
     <Layout>

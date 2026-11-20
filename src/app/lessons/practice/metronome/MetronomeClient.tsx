@@ -28,7 +28,7 @@ const metronomeGearItems = [
 ];
 
 export default function MetronomeClient() {
-  const pathname = '/lessons/practice/metronome';
+  const pathname = '/metronome';
 
   return (
     <Layout>

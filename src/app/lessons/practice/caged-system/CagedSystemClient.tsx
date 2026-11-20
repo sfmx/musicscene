@@ -10,7 +10,7 @@ import LeadMagnetBanner from '@/components/Revenue/LeadMagnetBanner';
 import AdSlot from '@/components/Revenue/AdSlot';
 
 export default function CagedSystemClient() {
-  const pathname = '/lessons/practice/caged-system';
+  const pathname = '/caged-system';
 
   return (
     <Layout>
